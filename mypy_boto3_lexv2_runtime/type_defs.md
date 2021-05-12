@@ -3,7 +3,7 @@
 > [Index](..) > [LexRuntimeV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
 [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
@@ -97,7 +97,7 @@ from mypy_boto3_lexv2_runtime.type_defs import DialogActionTypeDef
 
 Required fields:
 
-- `type`: [DialogActionType](./literals.md#dialogactiontype)
+- `type`: [DialogActionTypeType](./literals.md#dialogactiontypetype)
 
 Optional fields:
 
@@ -146,8 +146,9 @@ Required fields:
 Optional fields:
 
 - `slots`: `Dict`\[`str`, [SlotTypeDef](./type_defs.md#slottypedef)\]
-- `state`: [IntentState](./literals.md#intentstate)
-- `confirmationState`: [ConfirmationState](./literals.md#confirmationstate)
+- `state`: [IntentStateType](./literals.md#intentstatetype)
+- `confirmationState`:
+  [ConfirmationStateType](./literals.md#confirmationstatetype)
 
 ## InterpretationTypeDef
 
@@ -172,7 +173,7 @@ from mypy_boto3_lexv2_runtime.type_defs import MessageTypeDef
 Optional fields:
 
 - `content`: `str`
-- `contentType`: [MessageContentType](./literals.md#messagecontenttype)
+- `contentType`: [MessageContentTypeType](./literals.md#messagecontenttypetype)
 - `imageResponseCard`:
   [ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef)
 
@@ -232,8 +233,9 @@ from mypy_boto3_lexv2_runtime.type_defs import SentimentResponseTypeDef
 
 Optional fields:
 
-- `sentiment`: [SentimentType](./literals.md#sentimenttype)
-- `sentimentScore`: [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
+- `sentiment`: [SentimentTypeType](./literals.md#sentimenttypetype)
+- `sentimentScore`:
+  [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
 
 ## SentimentScoreTypeDef
 

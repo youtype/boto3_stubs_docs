@@ -3,29 +3,29 @@
 > [Index](..) > [CodeArtifact](.) > Literals
 
 Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
 [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 - [Literals for boto3 CodeArtifact module](#literals-for-boto3-codeartifact-module)
-  - [DomainStatus](#domainstatus)
-  - [ExternalConnectionStatus](#externalconnectionstatus)
-  - [HashAlgorithm](#hashalgorithm)
+  - [DomainStatusType](#domainstatustype)
+  - [ExternalConnectionStatusType](#externalconnectionstatustype)
+  - [HashAlgorithmType](#hashalgorithmtype)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [ListPackageVersionAssetsPaginatorName](#listpackageversionassetspaginatorname)
   - [ListPackageVersionsPaginatorName](#listpackageversionspaginatorname)
   - [ListPackagesPaginatorName](#listpackagespaginatorname)
   - [ListRepositoriesInDomainPaginatorName](#listrepositoriesindomainpaginatorname)
   - [ListRepositoriesPaginatorName](#listrepositoriespaginatorname)
-  - [PackageFormat](#packageformat)
-  - [PackageVersionErrorCode](#packageversionerrorcode)
-  - [PackageVersionSortType](#packageversionsorttype)
-  - [PackageVersionStatus](#packageversionstatus)
+  - [PackageFormatType](#packageformattype)
+  - [PackageVersionErrorCodeType](#packageversionerrorcodetype)
+  - [PackageVersionSortTypeType](#packageversionsorttypetype)
+  - [PackageVersionStatusType](#packageversionstatustype)
 
-## DomainStatus
+## DomainStatusType
 
 ```python
-from mypy_boto3_codeartifact.literals import DomainStatus
+from mypy_boto3_codeartifact.literals import DomainStatusType
 ```
 
 Values:
@@ -33,20 +33,20 @@ Values:
 - `Active`
 - `Deleted`
 
-## ExternalConnectionStatus
+## ExternalConnectionStatusType
 
 ```python
-from mypy_boto3_codeartifact.literals import ExternalConnectionStatus
+from mypy_boto3_codeartifact.literals import ExternalConnectionStatusType
 ```
 
 Values:
 
 - `Available`
 
-## HashAlgorithm
+## HashAlgorithmType
 
 ```python
-from mypy_boto3_codeartifact.literals import HashAlgorithm
+from mypy_boto3_codeartifact.literals import HashAlgorithmType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 
 - `list_repositories`
 
-## PackageFormat
+## PackageFormatType
 
 ```python
-from mypy_boto3_codeartifact.literals import PackageFormat
+from mypy_boto3_codeartifact.literals import PackageFormatType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 - `nuget`
 - `pypi`
 
-## PackageVersionErrorCode
+## PackageVersionErrorCodeType
 
 ```python
-from mypy_boto3_codeartifact.literals import PackageVersionErrorCode
+from mypy_boto3_codeartifact.literals import PackageVersionErrorCodeType
 ```
 
 Values:
@@ -144,20 +144,20 @@ Values:
 - `NOT_FOUND`
 - `SKIPPED`
 
-## PackageVersionSortType
+## PackageVersionSortTypeType
 
 ```python
-from mypy_boto3_codeartifact.literals import PackageVersionSortType
+from mypy_boto3_codeartifact.literals import PackageVersionSortTypeType
 ```
 
 Values:
 
 - `PUBLISHED_TIME`
 
-## PackageVersionStatus
+## PackageVersionStatusType
 
 ```python
-from mypy_boto3_codeartifact.literals import PackageVersionStatus
+from mypy_boto3_codeartifact.literals import PackageVersionStatusType
 ```
 
 Values:

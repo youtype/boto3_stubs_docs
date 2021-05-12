@@ -3,7 +3,7 @@
 > [Index](..) > [Honeycode](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
 [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
@@ -128,7 +128,7 @@ from mypy_boto3_honeycode.type_defs import CellTypeDef
 Optional fields:
 
 - `formula`: `str`
-- `format`: [Format](./literals.md#format)
+- `format`: [FormatType](./literals.md#formattype)
 - `rawValue`: `str`
 - `formattedValue`: `str`
 
@@ -141,7 +141,7 @@ from mypy_boto3_honeycode.type_defs import ColumnMetadataTypeDef
 Required fields:
 
 - `name`: `str`
-- `format`: [Format](./literals.md#format)
+- `format`: [FormatType](./literals.md#formattype)
 
 ## CreateRowDataTypeDef
 
@@ -163,7 +163,7 @@ from mypy_boto3_honeycode.type_defs import DataItemTypeDef
 
 Optional fields:
 
-- `overrideFormat`: [Format](./literals.md#format)
+- `overrideFormat`: [FormatType](./literals.md#formattype)
 - `rawValue`: `str`
 - `formattedValue`: `str`
 
@@ -182,7 +182,7 @@ Optional fields:
 - `hasHeaderRow`: `bool`
 - `ignoreEmptyRows`: `bool`
 - `dataCharacterEncoding`:
-  [ImportDataCharacterEncoding](./literals.md#importdatacharacterencoding)
+  [ImportDataCharacterEncodingType](./literals.md#importdatacharacterencodingtype)
 
 ## DescribeTableDataImportJobResultTypeDef
 
@@ -192,7 +192,8 @@ from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobResultTypeD
 
 Required fields:
 
-- `jobStatus`: [TableDataImportJobStatus](./literals.md#tabledataimportjobstatus)
+- `jobStatus`:
+  [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
 - `message`: `str`
 - `jobMetadata`:
   [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
@@ -241,7 +242,8 @@ from mypy_boto3_honeycode.type_defs import GetScreenDataResultTypeDef
 
 Required fields:
 
-- `results`: `Dict`\[`str`, [ResultSetTypeDef](./type_defs.md#resultsettypedef)\]
+- `results`: `Dict`\[`str`,
+  [ResultSetTypeDef](./type_defs.md#resultsettypedef)\]
 - `workbookCursor`: `int`
 
 Optional fields:
@@ -424,7 +426,8 @@ from mypy_boto3_honeycode.type_defs import StartTableDataImportJobResultTypeDef
 Required fields:
 
 - `jobId`: `str`
-- `jobStatus`: [TableDataImportJobStatus](./literals.md#tabledataimportjobstatus)
+- `jobStatus`:
+  [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
 
 ## TableColumnTypeDef
 
@@ -436,7 +439,7 @@ Optional fields:
 
 - `tableColumnId`: `str`
 - `tableColumnName`: `str`
-- `format`: [Format](./literals.md#format)
+- `format`: [FormatType](./literals.md#formattype)
 
 ## TableDataImportJobMetadataTypeDef
 
@@ -450,7 +453,8 @@ Required fields:
   [ImportJobSubmitterTypeDef](./type_defs.md#importjobsubmittertypedef)
 - `submitTime`: `datetime`
 - `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
-- `dataSource`: [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
+- `dataSource`:
+  [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
 
 ## TableRowTypeDef
 
@@ -508,7 +512,7 @@ from mypy_boto3_honeycode.type_defs import UpsertRowsResultTypeDef
 Required fields:
 
 - `rowIds`: `List`\[`str`\]
-- `upsertAction`: [UpsertAction](./literals.md#upsertaction)
+- `upsertAction`: [UpsertActionType](./literals.md#upsertactiontype)
 
 ## VariableValueTypeDef
 

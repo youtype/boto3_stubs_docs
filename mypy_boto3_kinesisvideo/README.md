@@ -3,7 +3,7 @@
 > [Index](..) > KinesisVideo
 
 Auto-generated documentation for
-[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
+[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
 [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
@@ -30,49 +30,49 @@ Can be used directly:
 from mypy_boto3_kinesisvideo.client import KinesisVideoClient
 ```
 
-KinesisVideoClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_signaling_channel](./client.md#create-signaling-channel)
-- [create_stream](./client.md#create-stream)
-- [delete_signaling_channel](./client.md#delete-signaling-channel)
-- [delete_stream](./client.md#delete-stream)
-- [describe_signaling_channel](./client.md#describe-signaling-channel)
-- [describe_stream](./client.md#describe-stream)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_data_endpoint](./client.md#get-data-endpoint)
-- [get_paginator](./client.md#get-paginator)
-- [get_signaling_channel_endpoint](./client.md#get-signaling-channel-endpoint)
-- [list_signaling_channels](./client.md#list-signaling-channels)
-- [list_streams](./client.md#list-streams)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_tags_for_stream](./client.md#list-tags-for-stream)
-- [tag_resource](./client.md#tag-resource)
-- [tag_stream](./client.md#tag-stream)
-- [untag_resource](./client.md#untag-resource)
-- [untag_stream](./client.md#untag-stream)
-- [update_data_retention](./client.md#update-data-retention)
-- [update_signaling_channel](./client.md#update-signaling-channel)
-- [update_stream](./client.md#update-stream)
+- [can_paginate](./client.md#can_paginate)
+- [create_signaling_channel](./client.md#create_signaling_channel)
+- [create_stream](./client.md#create_stream)
+- [delete_signaling_channel](./client.md#delete_signaling_channel)
+- [delete_stream](./client.md#delete_stream)
+- [describe_signaling_channel](./client.md#describe_signaling_channel)
+- [describe_stream](./client.md#describe_stream)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_data_endpoint](./client.md#get_data_endpoint)
+- [get_paginator](./client.md#get_paginator)
+- [get_signaling_channel_endpoint](./client.md#get_signaling_channel_endpoint)
+- [list_signaling_channels](./client.md#list_signaling_channels)
+- [list_streams](./client.md#list_streams)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_tags_for_stream](./client.md#list_tags_for_stream)
+- [tag_resource](./client.md#tag_resource)
+- [tag_stream](./client.md#tag_stream)
+- [untag_resource](./client.md#untag_resource)
+- [untag_stream](./client.md#untag_stream)
+- [update_data_retention](./client.md#update_data_retention)
+- [update_signaling_channel](./client.md#update_signaling_channel)
+- [update_stream](./client.md#update_stream)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AccountChannelLimitExceededException](./client.md#accountchannellimitexceededexception)
-- [AccountStreamLimitExceededException](./client.md#accountstreamlimitexceededexception)
-- [ClientError](./client.md#clienterror)
-- [ClientLimitExceededException](./client.md#clientlimitexceededexception)
-- [DeviceStreamLimitExceededException](./client.md#devicestreamlimitexceededexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidDeviceException](./client.md#invaliddeviceexception)
-- [InvalidResourceFormatException](./client.md#invalidresourceformatexception)
-- [NotAuthorizedException](./client.md#notauthorizedexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TagsPerResourceExceededLimitException](./client.md#tagsperresourceexceededlimitexception)
-- [VersionMismatchException](./client.md#versionmismatchexception)
+KinesisVideoClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AccountChannelLimitExceededException
+- AccountStreamLimitExceededException
+- ClientError
+- ClientLimitExceededException
+- DeviceStreamLimitExceededException
+- InvalidArgumentException
+- InvalidDeviceException
+- InvalidResourceFormatException
+- NotAuthorizedException
+- ResourceInUseException
+- ResourceNotFoundException
+- TagsPerResourceExceededLimitException
+- VersionMismatchException
 
 ## Paginators
 
@@ -95,18 +95,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisvideo.literals import APIName, ...
+from mypy_boto3_kinesisvideo.literals import APINameType, ...
 ```
 
-- [APIName](./literals.md#apiname)
-- [ChannelProtocol](./literals.md#channelprotocol)
-- [ChannelRole](./literals.md#channelrole)
-- [ChannelType](./literals.md#channeltype)
-- [ComparisonOperator](./literals.md#comparisonoperator)
+- [APINameType](./literals.md#apinametype)
+- [ChannelProtocolType](./literals.md#channelprotocoltype)
+- [ChannelRoleType](./literals.md#channelroletype)
+- [ChannelTypeType](./literals.md#channeltypetype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - [ListSignalingChannelsPaginatorName](./literals.md#listsignalingchannelspaginatorname)
 - [ListStreamsPaginatorName](./literals.md#liststreamspaginatorname)
-- [Status](./literals.md#status)
-- [UpdateDataRetentionOperation](./literals.md#updatedataretentionoperation)
+- [StatusType](./literals.md#statustype)
+- [UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [DLM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+[DLM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM)
 type annotations stubs module
 [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
@@ -60,10 +60,10 @@ from mypy_boto3_dlm.type_defs import CreateRuleTypeDef
 
 Optional fields:
 
-- `Location`: [LocationValues](./literals.md#locationvalues)
+- `Location`: [LocationValuesType](./literals.md#locationvaluestype)
 - `Interval`: `int`
 - `IntervalUnit`: `Literal['HOURS']` (see
-  [IntervalUnitValues](./literals.md#intervalunitvalues))
+  [IntervalUnitValuesType](./literals.md#intervalunitvaluestype))
 - `Times`: `List`\[`str`\]
 - `CronExpression`: `str`
 
@@ -94,7 +94,7 @@ Optional fields:
 
 - `Interval`: `int`
 - `IntervalUnit`:
-  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
+  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
 ## CrossRegionCopyRuleTypeDef
 
@@ -138,7 +138,7 @@ from mypy_boto3_dlm.type_defs import EventParametersTypeDef
 Required fields:
 
 - `EventType`: `Literal['shareSnapshot']` (see
-  [EventTypeValues](./literals.md#eventtypevalues))
+  [EventTypeValuesType](./literals.md#eventtypevaluestype))
 - `SnapshotOwner`: `List`\[`str`\]
 - `DescriptionRegex`: `str`
 
@@ -151,7 +151,7 @@ from mypy_boto3_dlm.type_defs import EventSourceTypeDef
 Required fields:
 
 - `Type`: `Literal['MANAGED_CWE']` (see
-  [EventSourceValues](./literals.md#eventsourcevalues))
+  [EventSourceValuesType](./literals.md#eventsourcevaluestype))
 
 Optional fields:
 
@@ -172,7 +172,7 @@ Optional fields:
 - `Count`: `int`
 - `Interval`: `int`
 - `IntervalUnit`:
-  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
+  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
 ## GetLifecyclePoliciesResponseTypeDef
 
@@ -205,9 +205,10 @@ Optional fields:
 
 - `PolicyId`: `str`
 - `Description`: `str`
-- `State`: [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
+- `State`:
+  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
 - `Tags`: `Dict`\[`str`, `str`\]
-- `PolicyType`: [PolicyTypeValues](./literals.md#policytypevalues)
+- `PolicyType`: [PolicyTypeValuesType](./literals.md#policytypevaluestype)
 
 ## LifecyclePolicyTypeDef
 
@@ -219,7 +220,8 @@ Optional fields:
 
 - `PolicyId`: `str`
 - `Description`: `str`
-- `State`: [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
+- `State`:
+  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
 - `StatusMessage`: `str`
 - `ExecutionRoleArn`: `str`
 - `DateCreated`: `datetime`
@@ -257,11 +259,11 @@ from mypy_boto3_dlm.type_defs import PolicyDetailsTypeDef
 
 Optional fields:
 
-- `PolicyType`: [PolicyTypeValues](./literals.md#policytypevalues)
+- `PolicyType`: [PolicyTypeValuesType](./literals.md#policytypevaluestype)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValues](./literals.md#resourcetypevalues)\]
+  `List`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
 - `ResourceLocations`:
-  `List`\[[ResourceLocationValues](./literals.md#resourcelocationvalues)\]
+  `List`\[[ResourceLocationValuesType](./literals.md#resourcelocationvaluestype)\]
 - `TargetTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Schedules`: `List`\[[ScheduleTypeDef](./type_defs.md#scheduletypedef)\]
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
@@ -279,7 +281,7 @@ Optional fields:
 - `Count`: `int`
 - `Interval`: `int`
 - `IntervalUnit`:
-  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
+  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
 ## ScheduleTypeDef
 
@@ -315,7 +317,7 @@ Optional fields:
 
 - `UnshareInterval`: `int`
 - `UnshareIntervalUnit`:
-  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
+  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
 ## TagTypeDef
 

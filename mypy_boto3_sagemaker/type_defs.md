@@ -3,7 +3,7 @@
 > [Index](..) > [SageMaker](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
 [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
@@ -542,7 +542,7 @@ Optional fields:
 - `ActionName`: `str`
 - `Source`: [ActionSourceTypeDef](./type_defs.md#actionsourcetypedef)
 - `ActionType`: `str`
-- `Status`: [ActionStatus](./literals.md#actionstatus)
+- `Status`: [ActionStatusType](./literals.md#actionstatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -598,7 +598,8 @@ from mypy_boto3_sagemaker.type_defs import AlgorithmSpecificationTypeDef
 
 Required fields:
 
-- `TrainingInputMode`: [TrainingInputMode](./literals.md#traininginputmode)
+- `TrainingInputMode`:
+  [TrainingInputModeType](./literals.md#traininginputmodetype)
 
 Optional fields:
 
@@ -630,7 +631,8 @@ from mypy_boto3_sagemaker.type_defs import AlgorithmStatusItemTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Status`: [DetailedAlgorithmStatus](./literals.md#detailedalgorithmstatus)
+- `Status`:
+  [DetailedAlgorithmStatusType](./literals.md#detailedalgorithmstatustype)
 
 Optional fields:
 
@@ -647,7 +649,7 @@ Required fields:
 - `AlgorithmName`: `str`
 - `AlgorithmArn`: `str`
 - `CreationTime`: `datetime`
-- `AlgorithmStatus`: [AlgorithmStatus](./literals.md#algorithmstatus)
+- `AlgorithmStatus`: [AlgorithmStatusType](./literals.md#algorithmstatustype)
 
 Optional fields:
 
@@ -702,9 +704,9 @@ Optional fields:
 
 - `DomainId`: `str`
 - `UserProfileName`: `str`
-- `AppType`: [AppType](./literals.md#apptype)
+- `AppType`: [AppTypeType](./literals.md#apptypetype)
 - `AppName`: `str`
-- `Status`: [AppStatus](./literals.md#appstatus)
+- `Status`: [AppStatusType](./literals.md#appstatustype)
 - `CreationTime`: `datetime`
 
 ## AppImageConfigDetailsTypeDef
@@ -760,7 +762,8 @@ from mypy_boto3_sagemaker.type_defs import ArtifactSourceTypeTypeDef
 
 Required fields:
 
-- `SourceIdType`: [ArtifactSourceIdType](./literals.md#artifactsourceidtype)
+- `SourceIdType`:
+  [ArtifactSourceIdTypeType](./literals.md#artifactsourceidtypetype)
 - `Value`: `str`
 
 ## ArtifactSummaryTypeDef
@@ -801,7 +804,8 @@ Optional fields:
 - `DestinationArn`: `str`
 - `SourceType`: `str`
 - `DestinationType`: `str`
-- `AssociationType`: [AssociationEdgeType](./literals.md#associationedgetype)
+- `AssociationType`:
+  [AssociationEdgeTypeType](./literals.md#associationedgetypetype)
 - `SourceName`: `str`
 - `DestinationName`: `str`
 - `CreationTime`: `datetime`
@@ -819,14 +823,15 @@ Required fields:
 - `Database`: `str`
 - `QueryString`: `str`
 - `OutputS3Uri`: `str`
-- `OutputFormat`: [AthenaResultFormat](./literals.md#athenaresultformat)
+- `OutputFormat`:
+  [AthenaResultFormatType](./literals.md#athenaresultformattype)
 
 Optional fields:
 
 - `WorkGroup`: `str`
 - `KmsKeyId`: `str`
 - `OutputCompression`:
-  [AthenaResultCompressionType](./literals.md#athenaresultcompressiontype)
+  [AthenaResultCompressionTypeType](./literals.md#athenaresultcompressiontypetype)
 
 ## AutoMLCandidateStepTypeDef
 
@@ -836,7 +841,8 @@ from mypy_boto3_sagemaker.type_defs import AutoMLCandidateStepTypeDef
 
 Required fields:
 
-- `CandidateStepType`: [CandidateStepType](./literals.md#candidatesteptype)
+- `CandidateStepType`:
+  [CandidateStepTypeType](./literals.md#candidatesteptypetype)
 - `CandidateStepArn`: `str`
 - `CandidateStepName`: `str`
 
@@ -849,10 +855,10 @@ from mypy_boto3_sagemaker.type_defs import AutoMLCandidateTypeDef
 Required fields:
 
 - `CandidateName`: `str`
-- `ObjectiveStatus`: [ObjectiveStatus](./literals.md#objectivestatus)
+- `ObjectiveStatus`: [ObjectiveStatusType](./literals.md#objectivestatustype)
 - `CandidateSteps`:
   `List`\[[AutoMLCandidateStepTypeDef](./type_defs.md#automlcandidatesteptypedef)\]
-- `CandidateStatus`: [CandidateStatus](./literals.md#candidatestatus)
+- `CandidateStatus`: [CandidateStatusType](./literals.md#candidatestatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -875,12 +881,13 @@ from mypy_boto3_sagemaker.type_defs import AutoMLChannelTypeDef
 
 Required fields:
 
-- `DataSource`: [AutoMLDataSourceTypeDef](./type_defs.md#automldatasourcetypedef)
+- `DataSource`:
+  [AutoMLDataSourceTypeDef](./type_defs.md#automldatasourcetypedef)
 - `TargetAttributeName`: `str`
 
 Optional fields:
 
-- `CompressionType`: [CompressionType](./literals.md#compressiontype)
+- `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
 
 ## AutoMLContainerDefinitionTypeDef
 
@@ -952,7 +959,7 @@ from mypy_boto3_sagemaker.type_defs import AutoMLJobObjectiveTypeDef
 
 Required fields:
 
-- `MetricName`: [AutoMLMetricEnum](./literals.md#automlmetricenum)
+- `MetricName`: [AutoMLMetricEnumType](./literals.md#automlmetricenumtype)
 
 ## AutoMLJobSummaryTypeDef
 
@@ -964,9 +971,9 @@ Required fields:
 
 - `AutoMLJobName`: `str`
 - `AutoMLJobArn`: `str`
-- `AutoMLJobStatus`: [AutoMLJobStatus](./literals.md#automljobstatus)
+- `AutoMLJobStatus`: [AutoMLJobStatusType](./literals.md#automljobstatustype)
 - `AutoMLJobSecondaryStatus`:
-  [AutoMLJobSecondaryStatus](./literals.md#automljobsecondarystatus)
+  [AutoMLJobSecondaryStatusType](./literals.md#automljobsecondarystatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -1009,7 +1016,7 @@ from mypy_boto3_sagemaker.type_defs import AutoMLS3DataSourceTypeDef
 
 Required fields:
 
-- `S3DataType`: [AutoMLS3DataType](./literals.md#automls3datatype)
+- `S3DataType`: [AutoMLS3DataTypeType](./literals.md#automls3datatypetype)
 - `S3Uri`: `str`
 
 ## AutoMLSecurityConfigTypeDef
@@ -1099,7 +1106,7 @@ from mypy_boto3_sagemaker.type_defs import CapacitySizeTypeDef
 
 Required fields:
 
-- `Type`: [CapacitySizeType](./literals.md#capacitysizetype)
+- `Type`: [CapacitySizeTypeType](./literals.md#capacitysizetypetype)
 - `Value`: `int`
 
 ## CaptureContentTypeHeaderTypeDef
@@ -1121,7 +1128,7 @@ from mypy_boto3_sagemaker.type_defs import CaptureOptionTypeDef
 
 Required fields:
 
-- `CaptureMode`: [CaptureMode](./literals.md#capturemode)
+- `CaptureMode`: [CaptureModeType](./literals.md#capturemodetype)
 
 ## CategoricalParameterRangeSpecificationTypeDef
 
@@ -1155,14 +1162,14 @@ Required fields:
 - `Name`: `str`
 - `SupportedContentTypes`: `List`\[`str`\]
 - `SupportedInputModes`:
-  `List`\[[TrainingInputMode](./literals.md#traininginputmode)\]
+  `List`\[[TrainingInputModeType](./literals.md#traininginputmodetype)\]
 
 Optional fields:
 
 - `Description`: `str`
 - `IsRequired`: `bool`
 - `SupportedCompressionTypes`:
-  `List`\[[CompressionType](./literals.md#compressiontype)\]
+  `List`\[[CompressionTypeType](./literals.md#compressiontypetype)\]
 
 ## ChannelTypeDef
 
@@ -1178,9 +1185,9 @@ Required fields:
 Optional fields:
 
 - `ContentType`: `str`
-- `CompressionType`: [CompressionType](./literals.md#compressiontype)
-- `RecordWrapperType`: [RecordWrapper](./literals.md#recordwrapper)
-- `InputMode`: [TrainingInputMode](./literals.md#traininginputmode)
+- `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
+- `RecordWrapperType`: [RecordWrapperType](./literals.md#recordwrappertype)
+- `InputMode`: [TrainingInputModeType](./literals.md#traininginputmodetype)
 - `ShuffleConfig`: [ShuffleConfigTypeDef](./type_defs.md#shuffleconfigtypedef)
 
 ## CheckpointConfigTypeDef
@@ -1260,19 +1267,19 @@ Required fields:
 - `CompilationJobArn`: `str`
 - `CreationTime`: `datetime`
 - `CompilationJobStatus`:
-  [CompilationJobStatus](./literals.md#compilationjobstatus)
+  [CompilationJobStatusType](./literals.md#compilationjobstatustype)
 
 Optional fields:
 
 - `CompilationStartTime`: `datetime`
 - `CompilationEndTime`: `datetime`
-- `CompilationTargetDevice`: [TargetDevice](./literals.md#targetdevice)
+- `CompilationTargetDevice`: [TargetDeviceType](./literals.md#targetdevicetype)
 - `CompilationTargetPlatformOs`:
-  [TargetPlatformOs](./literals.md#targetplatformos)
+  [TargetPlatformOsType](./literals.md#targetplatformostype)
 - `CompilationTargetPlatformArch`:
-  [TargetPlatformArch](./literals.md#targetplatformarch)
+  [TargetPlatformArchType](./literals.md#targetplatformarchtype)
 - `CompilationTargetPlatformAccelerator`:
-  [TargetPlatformAccelerator](./literals.md#targetplatformaccelerator)
+  [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype)
 - `LastModifiedTime`: `datetime`
 
 ## ConditionStepMetadataTypeDef
@@ -1283,7 +1290,7 @@ from mypy_boto3_sagemaker.type_defs import ConditionStepMetadataTypeDef
 
 Optional fields:
 
-- `Outcome`: [ConditionOutcome](./literals.md#conditionoutcome)
+- `Outcome`: [ConditionOutcomeType](./literals.md#conditionoutcometype)
 
 ## ContainerDefinitionTypeDef
 
@@ -1296,7 +1303,7 @@ Optional fields:
 - `ContainerHostname`: `str`
 - `Image`: `str`
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
-- `Mode`: [ContainerMode](./literals.md#containermode)
+- `Mode`: [ContainerModeType](./literals.md#containermodetype)
 - `ModelDataUrl`: `str`
 - `Environment`: `Dict`\[`str`, `str`\]
 - `ModelPackageName`: `str`
@@ -1359,7 +1366,7 @@ Required fields:
 Optional fields:
 
 - `ScalingType`:
-  [HyperParameterScalingType](./literals.md#hyperparameterscalingtype)
+  [HyperParameterScalingTypeType](./literals.md#hyperparameterscalingtypetype)
 
 ## CreateActionResponseTypeDef
 
@@ -1829,7 +1836,7 @@ from mypy_boto3_sagemaker.type_defs import DataCaptureConfigSummaryTypeDef
 Required fields:
 
 - `EnableCapture`: `bool`
-- `CaptureStatus`: [CaptureStatus](./literals.md#capturestatus)
+- `CaptureStatus`: [CaptureStatusType](./literals.md#capturestatustype)
 - `CurrentSamplingPercentage`: `int`
 - `DestinationS3Uri`: `str`
 - `KmsKeyId`: `str`
@@ -1876,7 +1883,7 @@ Optional fields:
 
 - `InputFilter`: `str`
 - `OutputFilter`: `str`
-- `JoinSource`: [JoinSource](./literals.md#joinsource)
+- `JoinSource`: [JoinSourceType](./literals.md#joinsourcetype)
 
 ## DataQualityAppSpecificationTypeDef
 
@@ -1946,8 +1953,8 @@ Optional fields:
   [RedshiftDatasetDefinitionTypeDef](./type_defs.md#redshiftdatasetdefinitiontypedef)
 - `LocalPath`: `str`
 - `DataDistributionType`:
-  [DataDistributionType](./literals.md#datadistributiontype)
-- `InputMode`: [InputMode](./literals.md#inputmode)
+  [DataDistributionTypeType](./literals.md#datadistributiontypetype)
+- `InputMode`: [InputModeType](./literals.md#inputmodetype)
 
 ## DebugHookConfigTypeDef
 
@@ -1981,7 +1988,8 @@ Optional fields:
 
 - `LocalPath`: `str`
 - `S3OutputPath`: `str`
-- `InstanceType`: [ProcessingInstanceType](./literals.md#processinginstancetype)
+- `InstanceType`:
+  [ProcessingInstanceTypeType](./literals.md#processinginstancetypetype)
 - `VolumeSizeInGB`: `int`
 - `RuleParameters`: `Dict`\[`str`, `str`\]
 
@@ -1996,7 +2004,7 @@ Optional fields:
 - `RuleConfigurationName`: `str`
 - `RuleEvaluationJobArn`: `str`
 - `RuleEvaluationStatus`:
-  [RuleEvaluationStatus](./literals.md#ruleevaluationstatus)
+  [RuleEvaluationStatusType](./literals.md#ruleevaluationstatustype)
 - `StatusDetails`: `str`
 - `LastModifiedTime`: `datetime`
 
@@ -2132,7 +2140,7 @@ Optional fields:
 - `Source`: [ActionSourceTypeDef](./type_defs.md#actionsourcetypedef)
 - `ActionType`: `str`
 - `Description`: `str`
-- `Status`: [ActionStatus](./literals.md#actionstatus)
+- `Status`: [ActionStatusType](./literals.md#actionstatustype)
 - `Properties`: `Dict`\[`str`, `str`\]
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
@@ -2159,7 +2167,7 @@ Required fields:
   [InferenceSpecificationTypeDef](./type_defs.md#inferencespecificationtypedef)
 - `ValidationSpecification`:
   [AlgorithmValidationSpecificationTypeDef](./type_defs.md#algorithmvalidationspecificationtypedef)
-- `AlgorithmStatus`: [AlgorithmStatus](./literals.md#algorithmstatus)
+- `AlgorithmStatus`: [AlgorithmStatusType](./literals.md#algorithmstatustype)
 - `AlgorithmStatusDetails`:
   [AlgorithmStatusDetailsTypeDef](./type_defs.md#algorithmstatusdetailstypedef)
 - `ProductId`: `str`
@@ -2191,11 +2199,11 @@ from mypy_boto3_sagemaker.type_defs import DescribeAppResponseTypeDef
 Optional fields:
 
 - `AppArn`: `str`
-- `AppType`: [AppType](./literals.md#apptype)
+- `AppType`: [AppTypeType](./literals.md#apptypetype)
 - `AppName`: `str`
 - `DomainId`: `str`
 - `UserProfileName`: `str`
-- `Status`: [AppStatus](./literals.md#appstatus)
+- `Status`: [AppStatusType](./literals.md#appstatustype)
 - `LastHealthCheckTimestamp`: `datetime`
 - `LastUserActivityTimestamp`: `datetime`
 - `CreationTime`: `datetime`
@@ -2239,15 +2247,15 @@ Required fields:
 - `RoleArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `AutoMLJobStatus`: [AutoMLJobStatus](./literals.md#automljobstatus)
+- `AutoMLJobStatus`: [AutoMLJobStatusType](./literals.md#automljobstatustype)
 - `AutoMLJobSecondaryStatus`:
-  [AutoMLJobSecondaryStatus](./literals.md#automljobsecondarystatus)
+  [AutoMLJobSecondaryStatusType](./literals.md#automljobsecondarystatustype)
 
 Optional fields:
 
 - `AutoMLJobObjective`:
   [AutoMLJobObjectiveTypeDef](./type_defs.md#automljobobjectivetypedef)
-- `ProblemType`: [ProblemType](./literals.md#problemtype)
+- `ProblemType`: [ProblemTypeType](./literals.md#problemtypetype)
 - `AutoMLJobConfig`:
   [AutoMLJobConfigTypeDef](./type_defs.md#automljobconfigtypedef)
 - `EndTime`: `datetime`
@@ -2293,13 +2301,14 @@ Required fields:
 - `CompilationJobName`: `str`
 - `CompilationJobArn`: `str`
 - `CompilationJobStatus`:
-  [CompilationJobStatus](./literals.md#compilationjobstatus)
+  [CompilationJobStatusType](./literals.md#compilationjobstatustype)
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
-- `ModelArtifacts`: [ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef)
+- `ModelArtifacts`:
+  [ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef)
 - `RoleArn`: `str`
 - `InputConfig`: [InputConfigTypeDef](./type_defs.md#inputconfigtypedef)
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
@@ -2415,15 +2424,15 @@ Optional fields:
 - `DomainName`: `str`
 - `HomeEfsFileSystemId`: `str`
 - `SingleSignOnManagedApplicationInstanceId`: `str`
-- `Status`: [DomainStatus](./literals.md#domainstatus)
+- `Status`: [DomainStatusType](./literals.md#domainstatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
-- `AuthMode`: [AuthMode](./literals.md#authmode)
+- `AuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 - `AppNetworkAccessType`:
-  [AppNetworkAccessType](./literals.md#appnetworkaccesstype)
+  [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `Url`: `str`
@@ -2441,7 +2450,7 @@ Required fields:
 - `EdgePackagingJobArn`: `str`
 - `EdgePackagingJobName`: `str`
 - `EdgePackagingJobStatus`:
-  [EdgePackagingJobStatus](./literals.md#edgepackagingjobstatus)
+  [EdgePackagingJobStatusType](./literals.md#edgepackagingjobstatustype)
 
 Optional fields:
 
@@ -2492,7 +2501,7 @@ Required fields:
   `List`\[[ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef)\]
 - `DataCaptureConfig`:
   [DataCaptureConfigSummaryTypeDef](./type_defs.md#datacaptureconfigsummarytypedef)
-- `EndpointStatus`: [EndpointStatus](./literals.md#endpointstatus)
+- `EndpointStatus`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `FailureReason`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -2543,7 +2552,8 @@ Optional fields:
 - `OfflineStoreConfig`:
   [OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
-- `FeatureGroupStatus`: [FeatureGroupStatus](./literals.md#featuregroupstatus)
+- `FeatureGroupStatus`:
+  [FeatureGroupStatusType](./literals.md#featuregroupstatustype)
 - `OfflineStoreStatus`:
   [OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef)
 - `FailureReason`: `str`
@@ -2560,7 +2570,7 @@ Required fields:
 - `FlowDefinitionArn`: `str`
 - `FlowDefinitionName`: `str`
 - `FlowDefinitionStatus`:
-  [FlowDefinitionStatus](./literals.md#flowdefinitionstatus)
+  [FlowDefinitionStatusType](./literals.md#flowdefinitionstatustype)
 - `CreationTime`: `datetime`
 - `HumanLoopConfig`:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
@@ -2591,7 +2601,8 @@ Required fields:
 
 Optional fields:
 
-- `HumanTaskUiStatus`: [HumanTaskUiStatus](./literals.md#humantaskuistatus)
+- `HumanTaskUiStatus`:
+  [HumanTaskUiStatusType](./literals.md#humantaskuistatustype)
 
 ## DescribeHyperParameterTuningJobResponseTypeDef
 
@@ -2606,7 +2617,7 @@ Required fields:
 - `HyperParameterTuningJobConfig`:
   [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
 - `HyperParameterTuningJobStatus`:
-  [HyperParameterTuningJobStatus](./literals.md#hyperparametertuningjobstatus)
+  [HyperParameterTuningJobStatusType](./literals.md#hyperparametertuningjobstatustype)
 - `CreationTime`: `datetime`
 - `TrainingJobStatusCounters`:
   [TrainingJobStatusCountersTypeDef](./type_defs.md#trainingjobstatuscounterstypedef)
@@ -2643,7 +2654,7 @@ Optional fields:
 - `FailureReason`: `str`
 - `ImageArn`: `str`
 - `ImageName`: `str`
-- `ImageStatus`: [ImageStatus](./literals.md#imagestatus)
+- `ImageStatus`: [ImageStatusType](./literals.md#imagestatustype)
 - `LastModifiedTime`: `datetime`
 - `RoleArn`: `str`
 
@@ -2661,7 +2672,8 @@ Optional fields:
 - `FailureReason`: `str`
 - `ImageArn`: `str`
 - `ImageVersionArn`: `str`
-- `ImageVersionStatus`: [ImageVersionStatus](./literals.md#imageversionstatus)
+- `ImageVersionStatus`:
+  [ImageVersionStatusType](./literals.md#imageversionstatustype)
 - `LastModifiedTime`: `datetime`
 - `Version`: `int`
 
@@ -2673,7 +2685,8 @@ from mypy_boto3_sagemaker.type_defs import DescribeLabelingJobResponseTypeDef
 
 Required fields:
 
-- `LabelingJobStatus`: [LabelingJobStatus](./literals.md#labelingjobstatus)
+- `LabelingJobStatus`:
+  [LabelingJobStatusType](./literals.md#labelingjobstatustype)
 - `LabelCounters`: [LabelCountersTypeDef](./type_defs.md#labelcounterstypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -2798,7 +2811,7 @@ Required fields:
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ModelPackageGroupStatus`:
-  [ModelPackageGroupStatus](./literals.md#modelpackagegroupstatus)
+  [ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2822,11 +2835,13 @@ Required fields:
   [SourceAlgorithmSpecificationTypeDef](./type_defs.md#sourcealgorithmspecificationtypedef)
 - `ValidationSpecification`:
   [ModelPackageValidationSpecificationTypeDef](./type_defs.md#modelpackagevalidationspecificationtypedef)
-- `ModelPackageStatus`: [ModelPackageStatus](./literals.md#modelpackagestatus)
+- `ModelPackageStatus`:
+  [ModelPackageStatusType](./literals.md#modelpackagestatustype)
 - `ModelPackageStatusDetails`:
   [ModelPackageStatusDetailsTypeDef](./type_defs.md#modelpackagestatusdetailstypedef)
 - `CertifyForMarketplace`: `bool`
-- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
@@ -2877,7 +2892,8 @@ Required fields:
 
 - `MonitoringScheduleArn`: `str`
 - `MonitoringScheduleName`: `str`
-- `MonitoringScheduleStatus`: [ScheduleStatus](./literals.md#schedulestatus)
+- `MonitoringScheduleStatus`:
+  [ScheduleStatusType](./literals.md#schedulestatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `MonitoringScheduleConfig`:
@@ -2885,7 +2901,7 @@ Required fields:
 
 Optional fields:
 
-- `MonitoringType`: [MonitoringType](./literals.md#monitoringtype)
+- `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
 - `FailureReason`: `str`
 - `EndpointName`: `str`
 - `LastMonitoringExecutionSummary`:
@@ -2921,10 +2937,10 @@ Required fields:
 - `NotebookInstanceArn`: `str`
 - `NotebookInstanceName`: `str`
 - `NotebookInstanceStatus`:
-  [NotebookInstanceStatus](./literals.md#notebookinstancestatus)
+  [NotebookInstanceStatusType](./literals.md#notebookinstancestatustype)
 - `FailureReason`: `str`
 - `Url`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `SubnetId`: `str`
 - `SecurityGroups`: `List`\[`str`\]
 - `RoleArn`: `str`
@@ -2934,13 +2950,13 @@ Required fields:
 - `CreationTime`: `datetime`
 - `NotebookInstanceLifecycleConfigName`: `str`
 - `DirectInternetAccess`:
-  [DirectInternetAccess](./literals.md#directinternetaccess)
+  [DirectInternetAccessType](./literals.md#directinternetaccesstype)
 - `VolumeSizeInGB`: `int`
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorType](./literals.md#notebookinstanceacceleratortype)\]
+  `List`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
-- `RootAccess`: [RootAccess](./literals.md#rootaccess)
+- `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2967,7 +2983,7 @@ Optional fields:
 - `PipelineExecutionArn`: `str`
 - `PipelineExecutionDisplayName`: `str`
 - `PipelineExecutionStatus`:
-  [PipelineExecutionStatus](./literals.md#pipelineexecutionstatus)
+  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `PipelineExecutionDescription`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -2989,7 +3005,7 @@ Optional fields:
 - `PipelineDescription`: `str`
 - `RoleArn`: `str`
 - `PipelineStatus`: `Literal['Active']` (see
-  [PipelineStatus](./literals.md#pipelinestatus))
+  [PipelineStatusType](./literals.md#pipelinestatustype))
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastRunTime`: `datetime`
@@ -3010,7 +3026,8 @@ Required fields:
 - `AppSpecification`:
   [AppSpecificationTypeDef](./type_defs.md#appspecificationtypedef)
 - `ProcessingJobArn`: `str`
-- `ProcessingJobStatus`: [ProcessingJobStatus](./literals.md#processingjobstatus)
+- `ProcessingJobStatus`:
+  [ProcessingJobStatusType](./literals.md#processingjobstatustype)
 - `CreationTime`: `datetime`
 
 Optional fields:
@@ -3051,7 +3068,7 @@ Required fields:
   [ServiceCatalogProvisioningDetailsTypeDef](./type_defs.md#servicecatalogprovisioningdetailstypedef)
 - `ServiceCatalogProvisionedProductDetails`:
   [ServiceCatalogProvisionedProductDetailsTypeDef](./type_defs.md#servicecatalogprovisionedproductdetailstypedef)
-- `ProjectStatus`: [ProjectStatus](./literals.md#projectstatus)
+- `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `CreationTime`: `datetime`
 - `ResponseMetadata`:
@@ -3078,12 +3095,15 @@ Required fields:
 
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
-- `ModelArtifacts`: [ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef)
-- `TrainingJobStatus`: [TrainingJobStatus](./literals.md#trainingjobstatus)
-- `SecondaryStatus`: [SecondaryStatus](./literals.md#secondarystatus)
+- `ModelArtifacts`:
+  [ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef)
+- `TrainingJobStatus`:
+  [TrainingJobStatusType](./literals.md#trainingjobstatustype)
+- `SecondaryStatus`: [SecondaryStatusType](./literals.md#secondarystatustype)
 - `AlgorithmSpecification`:
   [AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef)
-- `ResourceConfig`: [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
 - `CreationTime`: `datetime`
@@ -3124,12 +3144,13 @@ Optional fields:
   [TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef)
 - `DebugRuleEvaluationStatuses`:
   `List`\[[DebugRuleEvaluationStatusTypeDef](./type_defs.md#debugruleevaluationstatustypedef)\]
-- `ProfilerConfig`: [ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef)
+- `ProfilerConfig`:
+  [ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef)
 - `ProfilerRuleConfigurations`:
   `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 - `ProfilerRuleEvaluationStatuses`:
   `List`\[[ProfilerRuleEvaluationStatusTypeDef](./type_defs.md#profilerruleevaluationstatustypedef)\]
-- `ProfilingStatus`: [ProfilingStatus](./literals.md#profilingstatus)
+- `ProfilingStatus`: [ProfilingStatusType](./literals.md#profilingstatustype)
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `Environment`: `Dict`\[`str`, `str`\]
 
@@ -3143,9 +3164,11 @@ Required fields:
 
 - `TransformJobName`: `str`
 - `TransformJobArn`: `str`
-- `TransformJobStatus`: [TransformJobStatus](./literals.md#transformjobstatus)
+- `TransformJobStatus`:
+  [TransformJobStatusType](./literals.md#transformjobstatustype)
 - `ModelName`: `str`
-- `TransformInput`: [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
+- `TransformInput`:
+  [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
 - `TransformResources`:
   [TransformResourcesTypeDef](./type_defs.md#transformresourcestypedef)
 - `CreationTime`: `datetime`
@@ -3157,7 +3180,7 @@ Optional fields:
 - `ModelClientConfig`:
   [ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`: [BatchStrategy](./literals.md#batchstrategy)
+- `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
 - `Environment`: `Dict`\[`str`, `str`\]
 - `TransformOutput`:
   [TransformOutputTypeDef](./type_defs.md#transformoutputtypedef)
@@ -3165,7 +3188,8 @@ Optional fields:
 - `TransformEndTime`: `datetime`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
-- `DataProcessing`: [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
+- `DataProcessing`:
+  [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
@@ -3233,7 +3257,7 @@ Optional fields:
 - `UserProfileArn`: `str`
 - `UserProfileName`: `str`
 - `HomeEfsFileSystemUid`: `str`
-- `Status`: [UserProfileStatus](./literals.md#userprofilestatus)
+- `Status`: [UserProfileStatusType](./literals.md#userprofilestatustype)
 - `LastModifiedTime`: `datetime`
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
@@ -3361,7 +3385,7 @@ Optional fields:
 - `DomainArn`: `str`
 - `DomainId`: `str`
 - `DomainName`: `str`
-- `Status`: [DomainStatus](./literals.md#domainstatus)
+- `Status`: [DomainStatusType](./literals.md#domainstatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Url`: `str`
@@ -3433,7 +3457,7 @@ Required fields:
 - `EdgePackagingJobArn`: `str`
 - `EdgePackagingJobName`: `str`
 - `EdgePackagingJobStatus`:
-  [EdgePackagingJobStatus](./literals.md#edgepackagingjobstatus)
+  [EdgePackagingJobStatusType](./literals.md#edgepackagingjobstatustype)
 
 Optional fields:
 
@@ -3468,9 +3492,10 @@ Required fields:
 
 Optional fields:
 
-- `S3InputMode`: [ProcessingS3InputMode](./literals.md#processings3inputmode)
+- `S3InputMode`:
+  [ProcessingS3InputModeType](./literals.md#processings3inputmodetype)
 - `S3DataDistributionType`:
-  [ProcessingS3DataDistributionType](./literals.md#processings3datadistributiontype)
+  [ProcessingS3DataDistributionTypeType](./literals.md#processings3datadistributiontypetype)
 - `FeaturesAttribute`: `str`
 - `InferenceAttribute`: `str`
 - `ProbabilityAttribute`: `str`
@@ -3490,7 +3515,7 @@ Required fields:
 - `EndpointArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `EndpointStatus`: [EndpointStatus](./literals.md#endpointstatus)
+- `EndpointStatus`: [EndpointStatusType](./literals.md#endpointstatustype)
 
 ## EndpointTypeDef
 
@@ -3503,7 +3528,7 @@ Required fields:
 - `EndpointName`: `str`
 - `EndpointArn`: `str`
 - `EndpointConfigName`: `str`
-- `EndpointStatus`: [EndpointStatus](./literals.md#endpointstatus)
+- `EndpointStatus`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -3598,7 +3623,7 @@ from mypy_boto3_sagemaker.type_defs import FeatureDefinitionTypeDef
 Optional fields:
 
 - `FeatureName`: `str`
-- `FeatureType`: [FeatureType](./literals.md#featuretype)
+- `FeatureType`: [FeatureTypeType](./literals.md#featuretypetype)
 
 ## FeatureGroupSummaryTypeDef
 
@@ -3614,7 +3639,8 @@ Required fields:
 
 Optional fields:
 
-- `FeatureGroupStatus`: [FeatureGroupStatus](./literals.md#featuregroupstatus)
+- `FeatureGroupStatus`:
+  [FeatureGroupStatusType](./literals.md#featuregroupstatustype)
 - `OfflineStoreStatus`:
   [OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef)
 
@@ -3638,7 +3664,8 @@ Optional fields:
 - `OfflineStoreConfig`:
   [OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
-- `FeatureGroupStatus`: [FeatureGroupStatus](./literals.md#featuregroupstatus)
+- `FeatureGroupStatus`:
+  [FeatureGroupStatusType](./literals.md#featuregroupstatustype)
 - `OfflineStoreStatus`:
   [OfflineStoreStatusTypeDef](./type_defs.md#offlinestorestatustypedef)
 - `FailureReason`: `str`
@@ -3667,8 +3694,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 - `FileSystemAccessMode`:
-  [FileSystemAccessMode](./literals.md#filesystemaccessmode)
-- `FileSystemType`: [FileSystemType](./literals.md#filesystemtype)
+  [FileSystemAccessModeType](./literals.md#filesystemaccessmodetype)
+- `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
 - `DirectoryPath`: `str`
 
 ## FilterTypeDef
@@ -3683,7 +3710,7 @@ Required fields:
 
 Optional fields:
 
-- `Operator`: [Operator](./literals.md#operator)
+- `Operator`: [OperatorType](./literals.md#operatortype)
 - `Value`: `str`
 
 ## FinalAutoMLJobObjectiveMetricTypeDef
@@ -3694,12 +3721,13 @@ from mypy_boto3_sagemaker.type_defs import FinalAutoMLJobObjectiveMetricTypeDef
 
 Required fields:
 
-- `MetricName`: [AutoMLMetricEnum](./literals.md#automlmetricenum)
+- `MetricName`: [AutoMLMetricEnumType](./literals.md#automlmetricenumtype)
 - `Value`: `float`
 
 Optional fields:
 
-- `Type`: [AutoMLJobObjectiveType](./literals.md#automljobobjectivetype)
+- `Type`:
+  [AutoMLJobObjectiveTypeType](./literals.md#automljobobjectivetypetype)
 
 ## FinalHyperParameterTuningJobObjectiveMetricTypeDef
 
@@ -3715,7 +3743,7 @@ Required fields:
 Optional fields:
 
 - `Type`:
-  [HyperParameterTuningJobObjectiveType](./literals.md#hyperparametertuningjobobjectivetype)
+  [HyperParameterTuningJobObjectiveTypeType](./literals.md#hyperparametertuningjobobjectivetypetype)
 
 ## FlowDefinitionOutputConfigTypeDef
 
@@ -3742,7 +3770,7 @@ Required fields:
 - `FlowDefinitionName`: `str`
 - `FlowDefinitionArn`: `str`
 - `FlowDefinitionStatus`:
-  [FlowDefinitionStatus](./literals.md#flowdefinitionstatus)
+  [FlowDefinitionStatusType](./literals.md#flowdefinitionstatustype)
 - `CreationTime`: `datetime`
 
 Optional fields:
@@ -3793,7 +3821,7 @@ from mypy_boto3_sagemaker.type_defs import GetSagemakerServicecatalogPortfolioSt
 Required fields:
 
 - `Status`:
-  [SagemakerServicecatalogStatus](./literals.md#sagemakerservicecatalogstatus)
+  [SagemakerServicecatalogStatusType](./literals.md#sagemakerservicecatalogstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3885,7 +3913,7 @@ from mypy_boto3_sagemaker.type_defs import HumanLoopRequestSourceTypeDef
 Required fields:
 
 - `AwsManagedHumanLoopRequestSource`:
-  [AwsManagedHumanLoopRequestSource](./literals.md#awsmanagedhumanlooprequestsource)
+  [AwsManagedHumanLoopRequestSourceType](./literals.md#awsmanagedhumanlooprequestsourcetype)
 
 ## HumanTaskConfigTypeDef
 
@@ -3933,7 +3961,8 @@ from mypy_boto3_sagemaker.type_defs import HyperParameterAlgorithmSpecificationT
 
 Required fields:
 
-- `TrainingInputMode`: [TrainingInputMode](./literals.md#traininginputmode)
+- `TrainingInputMode`:
+  [TrainingInputModeType](./literals.md#traininginputmodetype)
 
 Optional fields:
 
@@ -3951,7 +3980,7 @@ from mypy_boto3_sagemaker.type_defs import HyperParameterSpecificationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [ParameterType](./literals.md#parametertype)
+- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
 
 Optional fields:
 
@@ -3974,7 +4003,8 @@ Required fields:
 - `RoleArn`: `str`
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `ResourceConfig`: [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
 
@@ -4006,7 +4036,8 @@ Required fields:
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
 - `CreationTime`: `datetime`
-- `TrainingJobStatus`: [TrainingJobStatus](./literals.md#trainingjobstatus)
+- `TrainingJobStatus`:
+  [TrainingJobStatusType](./literals.md#trainingjobstatustype)
 - `TunedHyperParameters`: `Dict`\[`str`, `str`\]
 
 Optional fields:
@@ -4018,7 +4049,7 @@ Optional fields:
 - `FailureReason`: `str`
 - `FinalHyperParameterTuningJobObjectiveMetric`:
   [FinalHyperParameterTuningJobObjectiveMetricTypeDef](./type_defs.md#finalhyperparametertuningjobobjectivemetrictypedef)
-- `ObjectiveStatus`: [ObjectiveStatus](./literals.md#objectivestatus)
+- `ObjectiveStatus`: [ObjectiveStatusType](./literals.md#objectivestatustype)
 
 ## HyperParameterTuningJobConfigTypeDef
 
@@ -4029,8 +4060,9 @@ from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobConfigTypeDef
 Required fields:
 
 - `Strategy`:
-  [HyperParameterTuningJobStrategyType](./literals.md#hyperparametertuningjobstrategytype)
-- `ResourceLimits`: [ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef)
+  [HyperParameterTuningJobStrategyTypeType](./literals.md#hyperparametertuningjobstrategytypetype)
+- `ResourceLimits`:
+  [ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef)
 
 Optional fields:
 
@@ -4039,7 +4071,7 @@ Optional fields:
 - `ParameterRanges`:
   [ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef)
 - `TrainingJobEarlyStoppingType`:
-  [TrainingJobEarlyStoppingType](./literals.md#trainingjobearlystoppingtype)
+  [TrainingJobEarlyStoppingTypeType](./literals.md#trainingjobearlystoppingtypetype)
 - `TuningJobCompletionCriteria`:
   [TuningJobCompletionCriteriaTypeDef](./type_defs.md#tuningjobcompletioncriteriatypedef)
 
@@ -4052,7 +4084,7 @@ from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobObjectiveTypeD
 Required fields:
 
 - `Type`:
-  [HyperParameterTuningJobObjectiveType](./literals.md#hyperparametertuningjobobjectivetype)
+  [HyperParameterTuningJobObjectiveTypeType](./literals.md#hyperparametertuningjobobjectivetypetype)
 - `MetricName`: `str`
 
 ## HyperParameterTuningJobSummaryTypeDef
@@ -4066,9 +4098,9 @@ Required fields:
 - `HyperParameterTuningJobName`: `str`
 - `HyperParameterTuningJobArn`: `str`
 - `HyperParameterTuningJobStatus`:
-  [HyperParameterTuningJobStatus](./literals.md#hyperparametertuningjobstatus)
+  [HyperParameterTuningJobStatusType](./literals.md#hyperparametertuningjobstatustype)
 - `Strategy`:
-  [HyperParameterTuningJobStrategyType](./literals.md#hyperparametertuningjobstrategytype)
+  [HyperParameterTuningJobStrategyTypeType](./literals.md#hyperparametertuningjobstrategytypetype)
 - `CreationTime`: `datetime`
 - `TrainingJobStatusCounters`:
   [TrainingJobStatusCountersTypeDef](./type_defs.md#trainingjobstatuscounterstypedef)
@@ -4079,7 +4111,8 @@ Optional fields:
 
 - `HyperParameterTuningEndTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `ResourceLimits`: [ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef)
+- `ResourceLimits`:
+  [ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef)
 
 ## HyperParameterTuningJobWarmStartConfigTypeDef
 
@@ -4092,7 +4125,7 @@ Required fields:
 - `ParentHyperParameterTuningJobs`:
   `List`\[[ParentHyperParameterTuningJobTypeDef](./type_defs.md#parenthyperparametertuningjobtypedef)\]
 - `WarmStartType`:
-  [HyperParameterTuningJobWarmStartType](./literals.md#hyperparametertuningjobwarmstarttype)
+  [HyperParameterTuningJobWarmStartTypeType](./literals.md#hyperparametertuningjobwarmstarttypetype)
 
 ## ImageConfigTypeDef
 
@@ -4103,7 +4136,7 @@ from mypy_boto3_sagemaker.type_defs import ImageConfigTypeDef
 Required fields:
 
 - `RepositoryAccessMode`:
-  [RepositoryAccessMode](./literals.md#repositoryaccessmode)
+  [RepositoryAccessModeType](./literals.md#repositoryaccessmodetype)
 
 Optional fields:
 
@@ -4121,7 +4154,7 @@ Required fields:
 - `CreationTime`: `datetime`
 - `ImageArn`: `str`
 - `ImageName`: `str`
-- `ImageStatus`: [ImageStatus](./literals.md#imagestatus)
+- `ImageStatus`: [ImageStatusType](./literals.md#imagestatustype)
 - `LastModifiedTime`: `datetime`
 
 Optional fields:
@@ -4141,7 +4174,8 @@ Required fields:
 - `CreationTime`: `datetime`
 - `ImageArn`: `str`
 - `ImageVersionArn`: `str`
-- `ImageVersionStatus`: [ImageVersionStatus](./literals.md#imageversionstatus)
+- `ImageVersionStatus`:
+  [ImageVersionStatusType](./literals.md#imageversionstatustype)
 - `LastModifiedTime`: `datetime`
 - `Version`: `int`
 
@@ -4157,7 +4191,8 @@ from mypy_boto3_sagemaker.type_defs import InferenceExecutionConfigTypeDef
 
 Required fields:
 
-- `Mode`: [InferenceExecutionMode](./literals.md#inferenceexecutionmode)
+- `Mode`:
+  [InferenceExecutionModeType](./literals.md#inferenceexecutionmodetype)
 
 ## InferenceSpecificationTypeDef
 
@@ -4175,9 +4210,9 @@ Required fields:
 Optional fields:
 
 - `SupportedTransformInstanceTypes`:
-  `List`\[[TransformInstanceType](./literals.md#transforminstancetype)\]
+  `List`\[[TransformInstanceTypeType](./literals.md#transforminstancetypetype)\]
 - `SupportedRealtimeInferenceInstanceTypes`:
-  `List`\[[ProductionVariantInstanceType](./literals.md#productionvariantinstancetype)\]
+  `List`\[[ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)\]
 
 ## InputConfigTypeDef
 
@@ -4189,7 +4224,7 @@ Required fields:
 
 - `S3Uri`: `str`
 - `DataInputConfig`: `str`
-- `Framework`: [Framework](./literals.md#framework)
+- `Framework`: [FrameworkType](./literals.md#frameworktype)
 
 Optional fields:
 
@@ -4221,7 +4256,7 @@ Required fields:
 Optional fields:
 
 - `ScalingType`:
-  [HyperParameterScalingType](./literals.md#hyperparameterscalingtype)
+  [HyperParameterScalingTypeType](./literals.md#hyperparameterscalingtypetype)
 
 ## JupyterServerAppSettingsTypeDef
 
@@ -4255,7 +4290,8 @@ from mypy_boto3_sagemaker.type_defs import KernelGatewayImageConfigTypeDef
 
 Required fields:
 
-- `KernelSpecs`: `List`\[[KernelSpecTypeDef](./type_defs.md#kernelspectypedef)\]
+- `KernelSpecs`:
+  `List`\[[KernelSpecTypeDef](./type_defs.md#kernelspectypedef)\]
 
 Optional fields:
 
@@ -4327,7 +4363,7 @@ from mypy_boto3_sagemaker.type_defs import LabelingJobDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifier](./literals.md#contentclassifier)\]
+  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## LabelingJobDataSourceTypeDef
 
@@ -4458,7 +4494,8 @@ Required fields:
 - `LabelingJobArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `LabelingJobStatus`: [LabelingJobStatus](./literals.md#labelingjobstatus)
+- `LabelingJobStatus`:
+  [LabelingJobStatusType](./literals.md#labelingjobstatustype)
 - `LabelCounters`: [LabelCountersTypeDef](./type_defs.md#labelcounterstypedef)
 - `WorkteamArn`: `str`
 - `PreHumanTaskLambdaArn`: `str`
@@ -5408,7 +5445,8 @@ Optional fields:
 - `ModelDataQuality`:
   [ModelDataQualityTypeDef](./type_defs.md#modeldataqualitytypedef)
 - `Bias`: [BiasTypeDef](./type_defs.md#biastypedef)
-- `Explainability`: [ExplainabilityTypeDef](./type_defs.md#explainabilitytypedef)
+- `Explainability`:
+  [ExplainabilityTypeDef](./type_defs.md#explainabilitytypedef)
 
 ## ModelPackageContainerDefinitionTypeDef
 
@@ -5439,7 +5477,7 @@ Required fields:
 - `ModelPackageGroupArn`: `str`
 - `CreationTime`: `datetime`
 - `ModelPackageGroupStatus`:
-  [ModelPackageGroupStatus](./literals.md#modelpackagegroupstatus)
+  [ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype)
 
 Optional fields:
 
@@ -5459,7 +5497,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `ModelPackageGroupStatus`:
-  [ModelPackageGroupStatus](./literals.md#modelpackagegroupstatus)
+  [ModelPackageGroupStatusType](./literals.md#modelpackagegroupstatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ModelPackageStatusDetailsTypeDef
@@ -5488,7 +5526,7 @@ Required fields:
 
 - `Name`: `str`
 - `Status`:
-  [DetailedModelPackageStatus](./literals.md#detailedmodelpackagestatus)
+  [DetailedModelPackageStatusType](./literals.md#detailedmodelpackagestatustype)
 
 Optional fields:
 
@@ -5505,14 +5543,16 @@ Required fields:
 - `ModelPackageName`: `str`
 - `ModelPackageArn`: `str`
 - `CreationTime`: `datetime`
-- `ModelPackageStatus`: [ModelPackageStatus](./literals.md#modelpackagestatus)
+- `ModelPackageStatus`:
+  [ModelPackageStatusType](./literals.md#modelpackagestatustype)
 
 Optional fields:
 
 - `ModelPackageGroupName`: `str`
 - `ModelPackageVersion`: `int`
 - `ModelPackageDescription`: `str`
-- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 
 ## ModelPackageTypeDef
 
@@ -5534,11 +5574,13 @@ Optional fields:
   [SourceAlgorithmSpecificationTypeDef](./type_defs.md#sourcealgorithmspecificationtypedef)
 - `ValidationSpecification`:
   [ModelPackageValidationSpecificationTypeDef](./type_defs.md#modelpackagevalidationspecificationtypedef)
-- `ModelPackageStatus`: [ModelPackageStatus](./literals.md#modelpackagestatus)
+- `ModelPackageStatus`:
+  [ModelPackageStatusType](./literals.md#modelpackagestatustype)
 - `ModelPackageStatusDetails`:
   [ModelPackageStatusDetailsTypeDef](./type_defs.md#modelpackagestatusdetailstypedef)
 - `CertifyForMarketplace`: `bool`
-- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
+- `ModelApprovalStatus`:
+  [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
@@ -5588,7 +5630,8 @@ Optional fields:
 - `ContainerArguments`: `List`\[`str`\]
 - `RecordPreprocessorSourceUri`: `str`
 - `PostAnalyticsProcessorSourceUri`: `str`
-- `ProblemType`: [MonitoringProblemType](./literals.md#monitoringproblemtype)
+- `ProblemType`:
+  [MonitoringProblemTypeType](./literals.md#monitoringproblemtypetype)
 - `Environment`: `Dict`\[`str`, `str`\]
 
 ## ModelQualityBaselineConfigTypeDef
@@ -5688,7 +5731,8 @@ from mypy_boto3_sagemaker.type_defs import MonitoringClusterConfigTypeDef
 Required fields:
 
 - `InstanceCount`: `int`
-- `InstanceType`: [ProcessingInstanceType](./literals.md#processinginstancetype)
+- `InstanceType`:
+  [ProcessingInstanceTypeType](./literals.md#processinginstancetypetype)
 - `VolumeSizeInGB`: `int`
 
 Optional fields:
@@ -5717,7 +5761,8 @@ Required fields:
 - `ScheduledTime`: `datetime`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `MonitoringExecutionStatus`: [ExecutionStatus](./literals.md#executionstatus)
+- `MonitoringExecutionStatus`:
+  [ExecutionStatusType](./literals.md#executionstatustype)
 
 Optional fields:
 
@@ -5725,7 +5770,7 @@ Optional fields:
 - `EndpointName`: `str`
 - `FailureReason`: `str`
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringType`: [MonitoringType](./literals.md#monitoringtype)
+- `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
 
 ## MonitoringGroundTruthS3InputTypeDef
 
@@ -5848,7 +5893,8 @@ Required fields:
 
 - `S3Uri`: `str`
 - `LocalPath`: `str`
-- `S3UploadMode`: [ProcessingS3UploadMode](./literals.md#processings3uploadmode)
+- `S3UploadMode`:
+  [ProcessingS3UploadModeType](./literals.md#processings3uploadmodetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5860,11 +5906,12 @@ from mypy_boto3_sagemaker.type_defs import MonitoringScheduleConfigTypeDef
 
 Optional fields:
 
-- `ScheduleConfig`: [ScheduleConfigTypeDef](./type_defs.md#scheduleconfigtypedef)
+- `ScheduleConfig`:
+  [ScheduleConfigTypeDef](./type_defs.md#scheduleconfigtypedef)
 - `MonitoringJobDefinition`:
   [MonitoringJobDefinitionTypeDef](./type_defs.md#monitoringjobdefinitiontypedef)
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringType`: [MonitoringType](./literals.md#monitoringtype)
+- `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
 
 ## MonitoringScheduleSummaryTypeDef
 
@@ -5878,13 +5925,14 @@ Required fields:
 - `MonitoringScheduleArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `MonitoringScheduleStatus`: [ScheduleStatus](./literals.md#schedulestatus)
+- `MonitoringScheduleStatus`:
+  [ScheduleStatusType](./literals.md#schedulestatustype)
 
 Optional fields:
 
 - `EndpointName`: `str`
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringType`: [MonitoringType](./literals.md#monitoringtype)
+- `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
 
 ## MonitoringScheduleTypeDef
 
@@ -5896,8 +5944,9 @@ Optional fields:
 
 - `MonitoringScheduleArn`: `str`
 - `MonitoringScheduleName`: `str`
-- `MonitoringScheduleStatus`: [ScheduleStatus](./literals.md#schedulestatus)
-- `MonitoringType`: [MonitoringType](./literals.md#monitoringtype)
+- `MonitoringScheduleStatus`:
+  [ScheduleStatusType](./literals.md#schedulestatustype)
+- `MonitoringType`: [MonitoringTypeType](./literals.md#monitoringtypetype)
 - `FailureReason`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -5936,7 +5985,8 @@ from mypy_boto3_sagemaker.type_defs import MultiModelConfigTypeDef
 
 Optional fields:
 
-- `ModelCacheSetting`: [ModelCacheSetting](./literals.md#modelcachesetting)
+- `ModelCacheSetting`:
+  [ModelCacheSettingType](./literals.md#modelcachesettingtype)
 
 ## NestedFiltersTypeDef
 
@@ -6001,9 +6051,9 @@ Required fields:
 Optional fields:
 
 - `NotebookInstanceStatus`:
-  [NotebookInstanceStatus](./literals.md#notebookinstancestatus)
+  [NotebookInstanceStatusType](./literals.md#notebookinstancestatustype)
 - `Url`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `NotebookInstanceLifecycleConfigName`: `str`
@@ -6057,7 +6107,8 @@ from mypy_boto3_sagemaker.type_defs import OfflineStoreStatusTypeDef
 
 Required fields:
 
-- `Status`: [OfflineStoreStatusValue](./literals.md#offlinestorestatusvalue)
+- `Status`:
+  [OfflineStoreStatusValueType](./literals.md#offlinestorestatusvaluetype)
 
 Optional fields:
 
@@ -6140,8 +6191,9 @@ Required fields:
 
 Optional fields:
 
-- `TargetDevice`: [TargetDevice](./literals.md#targetdevice)
-- `TargetPlatform`: [TargetPlatformTypeDef](./type_defs.md#targetplatformtypedef)
+- `TargetDevice`: [TargetDeviceType](./literals.md#targetdevicetype)
+- `TargetPlatform`:
+  [TargetPlatformTypeDef](./type_defs.md#targetplatformtypedef)
 - `CompilerOptions`: `str`
 - `KmsKeyId`: `str`
 
@@ -6264,8 +6316,9 @@ Optional fields:
 - `StepName`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `StepStatus`: [StepStatus](./literals.md#stepstatus)
-- `CacheHitResult`: [CacheHitResultTypeDef](./type_defs.md#cachehitresulttypedef)
+- `StepStatus`: [StepStatusType](./literals.md#stepstatustype)
+- `CacheHitResult`:
+  [CacheHitResultTypeDef](./type_defs.md#cachehitresulttypedef)
 - `FailureReason`: `str`
 - `Metadata`:
   [PipelineExecutionStepMetadataTypeDef](./type_defs.md#pipelineexecutionstepmetadatatypedef)
@@ -6281,7 +6334,7 @@ Optional fields:
 - `PipelineExecutionArn`: `str`
 - `StartTime`: `datetime`
 - `PipelineExecutionStatus`:
-  [PipelineExecutionStatus](./literals.md#pipelineexecutionstatus)
+  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `PipelineExecutionDescription`: `str`
 - `PipelineExecutionDisplayName`: `str`
 
@@ -6297,7 +6350,7 @@ Optional fields:
 - `PipelineExecutionArn`: `str`
 - `PipelineExecutionDisplayName`: `str`
 - `PipelineExecutionStatus`:
-  [PipelineExecutionStatus](./literals.md#pipelineexecutionstatus)
+  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `PipelineExecutionDescription`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -6337,7 +6390,7 @@ Optional fields:
 - `PipelineDescription`: `str`
 - `RoleArn`: `str`
 - `PipelineStatus`: `Literal['Active']` (see
-  [PipelineStatus](./literals.md#pipelinestatus))
+  [PipelineStatusType](./literals.md#pipelinestatustype))
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastRunTime`: `datetime`
@@ -6354,7 +6407,8 @@ from mypy_boto3_sagemaker.type_defs import ProcessingClusterConfigTypeDef
 Required fields:
 
 - `InstanceCount`: `int`
-- `InstanceType`: [ProcessingInstanceType](./literals.md#processinginstancetype)
+- `InstanceType`:
+  [ProcessingInstanceTypeType](./literals.md#processinginstancetypetype)
 - `VolumeSizeInGB`: `int`
 
 Optional fields:
@@ -6386,7 +6440,8 @@ Required fields:
 Optional fields:
 
 - `AppManaged`: `bool`
-- `S3Input`: [ProcessingS3InputTypeDef](./type_defs.md#processings3inputtypedef)
+- `S3Input`:
+  [ProcessingS3InputTypeDef](./type_defs.md#processings3inputtypedef)
 - `DatasetDefinition`:
   [DatasetDefinitionTypeDef](./type_defs.md#datasetdefinitiontypedef)
 
@@ -6411,7 +6466,8 @@ Required fields:
 - `ProcessingJobName`: `str`
 - `ProcessingJobArn`: `str`
 - `CreationTime`: `datetime`
-- `ProcessingJobStatus`: [ProcessingJobStatus](./literals.md#processingjobstatus)
+- `ProcessingJobStatus`:
+  [ProcessingJobStatusType](./literals.md#processingjobstatustype)
 
 Optional fields:
 
@@ -6445,7 +6501,8 @@ Optional fields:
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 - `ProcessingJobArn`: `str`
-- `ProcessingJobStatus`: [ProcessingJobStatus](./literals.md#processingjobstatus)
+- `ProcessingJobStatus`:
+  [ProcessingJobStatusType](./literals.md#processingjobstatustype)
 - `ExitMessage`: `str`
 - `FailureReason`: `str`
 - `ProcessingEndTime`: `datetime`
@@ -6509,16 +6566,18 @@ from mypy_boto3_sagemaker.type_defs import ProcessingS3InputTypeDef
 Required fields:
 
 - `S3Uri`: `str`
-- `S3DataType`: [ProcessingS3DataType](./literals.md#processings3datatype)
+- `S3DataType`:
+  [ProcessingS3DataTypeType](./literals.md#processings3datatypetype)
 
 Optional fields:
 
 - `LocalPath`: `str`
-- `S3InputMode`: [ProcessingS3InputMode](./literals.md#processings3inputmode)
+- `S3InputMode`:
+  [ProcessingS3InputModeType](./literals.md#processings3inputmodetype)
 - `S3DataDistributionType`:
-  [ProcessingS3DataDistributionType](./literals.md#processings3datadistributiontype)
+  [ProcessingS3DataDistributionTypeType](./literals.md#processings3datadistributiontypetype)
 - `S3CompressionType`:
-  [ProcessingS3CompressionType](./literals.md#processings3compressiontype)
+  [ProcessingS3CompressionTypeType](./literals.md#processings3compressiontypetype)
 
 ## ProcessingS3OutputTypeDef
 
@@ -6530,7 +6589,8 @@ Required fields:
 
 - `S3Uri`: `str`
 - `LocalPath`: `str`
-- `S3UploadMode`: [ProcessingS3UploadMode](./literals.md#processings3uploadmode)
+- `S3UploadMode`:
+  [ProcessingS3UploadModeType](./literals.md#processings3uploadmodetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -6589,13 +6649,13 @@ Required fields:
 - `ModelName`: `str`
 - `InitialInstanceCount`: `int`
 - `InstanceType`:
-  [ProductionVariantInstanceType](./literals.md#productionvariantinstancetype)
+  [ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype)
 
 Optional fields:
 
 - `InitialVariantWeight`: `float`
 - `AcceleratorType`:
-  [ProductionVariantAcceleratorType](./literals.md#productionvariantacceleratortype)
+  [ProductionVariantAcceleratorTypeType](./literals.md#productionvariantacceleratortypetype)
 - `CoreDumpConfig`:
   [ProductionVariantCoreDumpConfigTypeDef](./type_defs.md#productionvariantcoredumpconfigtypedef)
 
@@ -6642,7 +6702,8 @@ Optional fields:
 
 - `LocalPath`: `str`
 - `S3OutputPath`: `str`
-- `InstanceType`: [ProcessingInstanceType](./literals.md#processinginstancetype)
+- `InstanceType`:
+  [ProcessingInstanceTypeType](./literals.md#processinginstancetypetype)
 - `VolumeSizeInGB`: `int`
 - `RuleParameters`: `Dict`\[`str`, `str`\]
 
@@ -6657,7 +6718,7 @@ Optional fields:
 - `RuleConfigurationName`: `str`
 - `RuleEvaluationJobArn`: `str`
 - `RuleEvaluationStatus`:
-  [RuleEvaluationStatus](./literals.md#ruleevaluationstatus)
+  [RuleEvaluationStatusType](./literals.md#ruleevaluationstatustype)
 - `StatusDetails`: `str`
 - `LastModifiedTime`: `datetime`
 
@@ -6673,7 +6734,7 @@ Required fields:
 - `ProjectArn`: `str`
 - `ProjectId`: `str`
 - `CreationTime`: `datetime`
-- `ProjectStatus`: [ProjectStatus](./literals.md#projectstatus)
+- `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
 
 Optional fields:
 
@@ -6746,13 +6807,14 @@ Required fields:
 - `QueryString`: `str`
 - `ClusterRoleArn`: `str`
 - `OutputS3Uri`: `str`
-- `OutputFormat`: [RedshiftResultFormat](./literals.md#redshiftresultformat)
+- `OutputFormat`:
+  [RedshiftResultFormatType](./literals.md#redshiftresultformattype)
 
 Optional fields:
 
 - `KmsKeyId`: `str`
 - `OutputCompression`:
-  [RedshiftResultCompressionType](./literals.md#redshiftresultcompressiontype)
+  [RedshiftResultCompressionTypeType](./literals.md#redshiftresultcompressiontypetype)
 
 ## RegisterModelStepMetadataTypeDef
 
@@ -6817,7 +6879,7 @@ Optional fields:
 
 - `AutoMLJobObjective`:
   [AutoMLJobObjectiveTypeDef](./type_defs.md#automljobobjectivetypedef)
-- `ProblemType`: [ProblemType](./literals.md#problemtype)
+- `ProblemType`: [ProblemTypeType](./literals.md#problemtypetype)
 - `CompletionCriteria`:
   [AutoMLJobCompletionCriteriaTypeDef](./type_defs.md#automljobcompletioncriteriatypedef)
 
@@ -6829,7 +6891,8 @@ from mypy_boto3_sagemaker.type_defs import ResourceConfigTypeDef
 
 Required fields:
 
-- `InstanceType`: [TrainingInstanceType](./literals.md#traininginstancetype)
+- `InstanceType`:
+  [TrainingInstanceTypeType](./literals.md#traininginstancetypetype)
 - `InstanceCount`: `int`
 - `VolumeSizeInGB`: `int`
 
@@ -6858,7 +6921,7 @@ Optional fields:
 
 - `SageMakerImageArn`: `str`
 - `SageMakerImageVersionArn`: `str`
-- `InstanceType`: [AppInstanceType](./literals.md#appinstancetype)
+- `InstanceType`: [AppInstanceTypeType](./literals.md#appinstancetypetype)
 
 ## ResponseMetadataTypeDef
 
@@ -6882,7 +6945,7 @@ from mypy_boto3_sagemaker.type_defs import RetentionPolicyTypeDef
 
 Optional fields:
 
-- `HomeEfsFileSystem`: [RetentionType](./literals.md#retentiontype)
+- `HomeEfsFileSystem`: [RetentionTypeType](./literals.md#retentiontypetype)
 
 ## RetryStrategyTypeDef
 
@@ -6902,13 +6965,13 @@ from mypy_boto3_sagemaker.type_defs import S3DataSourceTypeDef
 
 Required fields:
 
-- `S3DataType`: [S3DataType](./literals.md#s3datatype)
+- `S3DataType`: [S3DataTypeType](./literals.md#s3datatypetype)
 - `S3Uri`: `str`
 
 Optional fields:
 
 - `S3DataDistributionType`:
-  [S3DataDistribution](./literals.md#s3datadistribution)
+  [S3DataDistributionType](./literals.md#s3datadistributiontype)
 - `AttributeNames`: `List`\[`str`\]
 
 ## S3StorageConfigTypeDef
@@ -6949,7 +7012,7 @@ Optional fields:
   `List`\[[NestedFiltersTypeDef](./type_defs.md#nestedfilterstypedef)\]
 - `SubExpressions`:
   `List`\[[SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)\]
-- `Operator`: [BooleanOperator](./literals.md#booleanoperator)
+- `Operator`: [BooleanOperatorType](./literals.md#booleanoperatortype)
 
 ## SearchRecordTypeDef
 
@@ -6962,7 +7025,8 @@ Optional fields:
 - `TrainingJob`: [TrainingJobTypeDef](./type_defs.md#trainingjobtypedef)
 - `Experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
 - `Trial`: [TrialTypeDef](./type_defs.md#trialtypedef)
-- `TrialComponent`: [TrialComponentTypeDef](./type_defs.md#trialcomponenttypedef)
+- `TrialComponent`:
+  [TrialComponentTypeDef](./type_defs.md#trialcomponenttypedef)
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `ModelPackage`: [ModelPackageTypeDef](./type_defs.md#modelpackagetypedef)
 - `ModelPackageGroup`:
@@ -6980,7 +7044,8 @@ from mypy_boto3_sagemaker.type_defs import SearchResponseTypeDef
 
 Optional fields:
 
-- `Results`: `List`\[[SearchRecordTypeDef](./type_defs.md#searchrecordtypedef)\]
+- `Results`:
+  `List`\[[SearchRecordTypeDef](./type_defs.md#searchrecordtypedef)\]
 - `NextToken`: `str`
 
 ## SecondaryStatusTransitionTypeDef
@@ -6991,7 +7056,7 @@ from mypy_boto3_sagemaker.type_defs import SecondaryStatusTransitionTypeDef
 
 Required fields:
 
-- `Status`: [SecondaryStatus](./literals.md#secondarystatus)
+- `Status`: [SecondaryStatusType](./literals.md#secondarystatustype)
 - `StartTime`: `datetime`
 
 Optional fields:
@@ -7036,7 +7101,7 @@ from mypy_boto3_sagemaker.type_defs import SharingSettingsTypeDef
 Optional fields:
 
 - `NotebookOutputOption`:
-  [NotebookOutputOption](./literals.md#notebookoutputoption)
+  [NotebookOutputOptionType](./literals.md#notebookoutputoptiontype)
 - `S3OutputPath`: `str`
 - `S3KmsKeyId`: `str`
 
@@ -7163,13 +7228,13 @@ from mypy_boto3_sagemaker.type_defs import TargetPlatformTypeDef
 
 Required fields:
 
-- `Os`: [TargetPlatformOs](./literals.md#targetplatformos)
-- `Arch`: [TargetPlatformArch](./literals.md#targetplatformarch)
+- `Os`: [TargetPlatformOsType](./literals.md#targetplatformostype)
+- `Arch`: [TargetPlatformArchType](./literals.md#targetplatformarchtype)
 
 Optional fields:
 
 - `Accelerator`:
-  [TargetPlatformAccelerator](./literals.md#targetplatformaccelerator)
+  [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype)
 
 ## TensorBoardAppSettingsTypeDef
 
@@ -7204,7 +7269,8 @@ from mypy_boto3_sagemaker.type_defs import TrafficRoutingConfigTypeDef
 
 Required fields:
 
-- `Type`: [TrafficRoutingConfigType](./literals.md#trafficroutingconfigtype)
+- `Type`:
+  [TrafficRoutingConfigTypeType](./literals.md#trafficroutingconfigtypetype)
 - `WaitIntervalInSeconds`: `int`
 
 Optional fields:
@@ -7219,11 +7285,13 @@ from mypy_boto3_sagemaker.type_defs import TrainingJobDefinitionTypeDef
 
 Required fields:
 
-- `TrainingInputMode`: [TrainingInputMode](./literals.md#traininginputmode)
+- `TrainingInputMode`:
+  [TrainingInputModeType](./literals.md#traininginputmodetype)
 - `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `ResourceConfig`: [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
 
@@ -7266,7 +7334,8 @@ Required fields:
 - `TrainingJobName`: `str`
 - `TrainingJobArn`: `str`
 - `CreationTime`: `datetime`
-- `TrainingJobStatus`: [TrainingJobStatus](./literals.md#trainingjobstatus)
+- `TrainingJobStatus`:
+  [TrainingJobStatusType](./literals.md#trainingjobstatustype)
 
 Optional fields:
 
@@ -7286,9 +7355,11 @@ Optional fields:
 - `TuningJobArn`: `str`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
-- `ModelArtifacts`: [ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef)
-- `TrainingJobStatus`: [TrainingJobStatus](./literals.md#trainingjobstatus)
-- `SecondaryStatus`: [SecondaryStatus](./literals.md#secondarystatus)
+- `ModelArtifacts`:
+  [ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef)
+- `TrainingJobStatus`:
+  [TrainingJobStatusType](./literals.md#trainingjobstatustype)
+- `SecondaryStatus`: [SecondaryStatusType](./literals.md#secondarystatustype)
 - `FailureReason`: `str`
 - `HyperParameters`: `Dict`\[`str`, `str`\]
 - `AlgorithmSpecification`:
@@ -7297,7 +7368,8 @@ Optional fields:
 - `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `ResourceConfig`: [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
+- `ResourceConfig`:
+  [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
@@ -7340,7 +7412,7 @@ Required fields:
 
 - `TrainingImage`: `str`
 - `SupportedTrainingInstanceTypes`:
-  `List`\[[TrainingInstanceType](./literals.md#traininginstancetype)\]
+  `List`\[[TrainingInstanceTypeType](./literals.md#traininginstancetypetype)\]
 - `TrainingChannels`:
   `List`\[[ChannelSpecificationTypeDef](./type_defs.md#channelspecificationtypedef)\]
 
@@ -7380,8 +7452,8 @@ Required fields:
 Optional fields:
 
 - `ContentType`: `str`
-- `CompressionType`: [CompressionType](./literals.md#compressiontype)
-- `SplitType`: [SplitType](./literals.md#splittype)
+- `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
+- `SplitType`: [SplitTypeType](./literals.md#splittypetype)
 
 ## TransformJobDefinitionTypeDef
 
@@ -7391,7 +7463,8 @@ from mypy_boto3_sagemaker.type_defs import TransformJobDefinitionTypeDef
 
 Required fields:
 
-- `TransformInput`: [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
+- `TransformInput`:
+  [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
 - `TransformOutput`:
   [TransformOutputTypeDef](./type_defs.md#transformoutputtypedef)
 - `TransformResources`:
@@ -7401,7 +7474,7 @@ Optional fields:
 
 - `MaxConcurrentTransforms`: `int`
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`: [BatchStrategy](./literals.md#batchstrategy)
+- `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
 - `Environment`: `Dict`\[`str`, `str`\]
 
 ## TransformJobStepMetadataTypeDef
@@ -7425,7 +7498,8 @@ Required fields:
 - `TransformJobName`: `str`
 - `TransformJobArn`: `str`
 - `CreationTime`: `datetime`
-- `TransformJobStatus`: [TransformJobStatus](./literals.md#transformjobstatus)
+- `TransformJobStatus`:
+  [TransformJobStatusType](./literals.md#transformjobstatustype)
 
 Optional fields:
 
@@ -7443,16 +7517,18 @@ Optional fields:
 
 - `TransformJobName`: `str`
 - `TransformJobArn`: `str`
-- `TransformJobStatus`: [TransformJobStatus](./literals.md#transformjobstatus)
+- `TransformJobStatus`:
+  [TransformJobStatusType](./literals.md#transformjobstatustype)
 - `FailureReason`: `str`
 - `ModelName`: `str`
 - `MaxConcurrentTransforms`: `int`
 - `ModelClientConfig`:
   [ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`: [BatchStrategy](./literals.md#batchstrategy)
+- `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
 - `Environment`: `Dict`\[`str`, `str`\]
-- `TransformInput`: [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
+- `TransformInput`:
+  [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
 - `TransformOutput`:
   [TransformOutputTypeDef](./type_defs.md#transformoutputtypedef)
 - `TransformResources`:
@@ -7462,7 +7538,8 @@ Optional fields:
 - `TransformEndTime`: `datetime`
 - `LabelingJobArn`: `str`
 - `AutoMLJobArn`: `str`
-- `DataProcessing`: [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
+- `DataProcessing`:
+  [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -7477,7 +7554,7 @@ Required fields:
 
 - `S3OutputPath`: `str`
 - `Accept`: `str`
-- `AssembleWith`: [AssemblyType](./literals.md#assemblytype)
+- `AssembleWith`: [AssemblyTypeType](./literals.md#assemblytypetype)
 - `KmsKeyId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -7490,7 +7567,8 @@ from mypy_boto3_sagemaker.type_defs import TransformResourcesTypeDef
 
 Required fields:
 
-- `InstanceType`: [TransformInstanceType](./literals.md#transforminstancetype)
+- `InstanceType`:
+  [TransformInstanceTypeType](./literals.md#transforminstancetypetype)
 - `InstanceCount`: `int`
 
 Optional fields:
@@ -7505,7 +7583,7 @@ from mypy_boto3_sagemaker.type_defs import TransformS3DataSourceTypeDef
 
 Required fields:
 
-- `S3DataType`: [S3DataType](./literals.md#s3datatype)
+- `S3DataType`: [S3DataTypeType](./literals.md#s3datatypetype)
 - `S3Uri`: `str`
 
 ## TrialComponentArtifactTypeDef
@@ -7602,7 +7680,7 @@ from mypy_boto3_sagemaker.type_defs import TrialComponentStatusTypeDef
 Optional fields:
 
 - `PrimaryStatus`:
-  [TrialComponentPrimaryStatus](./literals.md#trialcomponentprimarystatus)
+  [TrialComponentPrimaryStatusType](./literals.md#trialcomponentprimarystatustype)
 - `Message`: `str`
 
 ## TrialComponentSummaryTypeDef
@@ -7999,7 +8077,7 @@ Optional fields:
 
 - `DomainId`: `str`
 - `UserProfileName`: `str`
-- `Status`: [UserProfileStatus](./literals.md#userprofilestatus)
+- `Status`: [UserProfileStatusType](./literals.md#userprofilestatustype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -8030,7 +8108,8 @@ from mypy_boto3_sagemaker.type_defs import VariantPropertyTypeDef
 
 Required fields:
 
-- `VariantPropertyType`: [VariantPropertyType](./literals.md#variantpropertytype)
+- `VariantPropertyType`:
+  [VariantPropertyTypeType](./literals.md#variantpropertytypetype)
 
 ## VpcConfigTypeDef
 
@@ -8068,7 +8147,8 @@ Required fields:
 Optional fields:
 
 - `LastUpdatedDate`: `datetime`
-- `SourceIpConfig`: [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
+- `SourceIpConfig`:
+  [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
 - `SubDomain`: `str`
 - `CognitoConfig`: [CognitoConfigTypeDef](./type_defs.md#cognitoconfigtypedef)
 - `OidcConfig`:

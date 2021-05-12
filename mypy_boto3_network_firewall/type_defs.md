@@ -3,7 +3,7 @@
 > [Index](..) > [NetworkFirewall](.) > Typed dictionaries
 
 Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
 [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
@@ -130,7 +130,7 @@ Optional fields:
 
 - `SubnetId`: `str`
 - `EndpointId`: `str`
-- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
+- `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 
 ## CreateFirewallPolicyResponseTypeDef
 
@@ -153,7 +153,8 @@ from mypy_boto3_network_firewall.type_defs import CreateFirewallResponseTypeDef
 Optional fields:
 
 - `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
-- `FirewallStatus`: [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
+- `FirewallStatus`:
+  [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 
 ## CreateRuleGroupResponseTypeDef
 
@@ -199,7 +200,8 @@ from mypy_boto3_network_firewall.type_defs import DeleteFirewallResponseTypeDef
 Optional fields:
 
 - `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
-- `FirewallStatus`: [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
+- `FirewallStatus`:
+  [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 
 ## DeleteRuleGroupResponseTypeDef
 
@@ -226,7 +228,8 @@ Required fields:
 
 Optional fields:
 
-- `FirewallPolicy`: [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
 
 ## DescribeFirewallResponseTypeDef
 
@@ -238,7 +241,8 @@ Optional fields:
 
 - `UpdateToken`: `str`
 - `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
-- `FirewallStatus`: [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
+- `FirewallStatus`:
+  [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 
 ## DescribeLoggingConfigurationResponseTypeDef
 
@@ -339,7 +343,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `FirewallPolicyStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `FirewallPolicyStatus`:
+  [ResourceStatusType](./literals.md#resourcestatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## FirewallPolicyTypeDef
@@ -370,9 +375,9 @@ from mypy_boto3_network_firewall.type_defs import FirewallStatusTypeDef
 
 Required fields:
 
-- `Status`: [FirewallStatusValue](./literals.md#firewallstatusvalue)
+- `Status`: [FirewallStatusValueType](./literals.md#firewallstatusvaluetype)
 - `ConfigurationSyncStateSummary`:
-  [ConfigurationSyncState](./literals.md#configurationsyncstate)
+  [ConfigurationSyncStateType](./literals.md#configurationsyncstatetype)
 
 Optional fields:
 
@@ -411,10 +416,12 @@ from mypy_boto3_network_firewall.type_defs import HeaderTypeDef
 
 Required fields:
 
-- `Protocol`: [StatefulRuleProtocol](./literals.md#statefulruleprotocol)
+- `Protocol`:
+  [StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype)
 - `Source`: `str`
 - `SourcePort`: `str`
-- `Direction`: [StatefulRuleDirection](./literals.md#statefulruledirection)
+- `Direction`:
+  [StatefulRuleDirectionType](./literals.md#statefulruledirectiontype)
 - `Destination`: `str`
 - `DestinationPort`: `str`
 
@@ -483,8 +490,9 @@ from mypy_boto3_network_firewall.type_defs import LogDestinationConfigTypeDef
 
 Required fields:
 
-- `LogType`: [LogType](./literals.md#logtype)
-- `LogDestinationType`: [LogDestinationType](./literals.md#logdestinationtype)
+- `LogType`: [LogTypeType](./literals.md#logtypetype)
+- `LogDestinationType`:
+  [LogDestinationTypeType](./literals.md#logdestinationtypetype)
 - `LogDestination`: `Dict`\[`str`, `str`\]
 
 ## LoggingConfigurationTypeDef
@@ -512,7 +520,8 @@ Optional fields:
 - `DestinationPorts`:
   `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocols`: `List`\[`int`\]
-- `TCPFlags`: `List`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
+- `TCPFlags`:
+  `List`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -534,7 +543,8 @@ from mypy_boto3_network_firewall.type_defs import PerObjectStatusTypeDef
 
 Optional fields:
 
-- `SyncStatus`: [PerObjectSyncStatus](./literals.md#perobjectsyncstatus)
+- `SyncStatus`:
+  [PerObjectSyncStatusType](./literals.md#perobjectsyncstatustype)
 - `UpdateToken`: `str`
 
 ## PortRangeTypeDef
@@ -606,9 +616,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Type`: [RuleGroupType](./literals.md#rulegrouptype)
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 - `Capacity`: `int`
-- `RuleGroupStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `RuleGroupStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RuleGroupTypeDef
@@ -659,8 +669,9 @@ from mypy_boto3_network_firewall.type_defs import RulesSourceListTypeDef
 Required fields:
 
 - `Targets`: `List`\[`str`\]
-- `TargetTypes`: `List`\[[TargetType](./literals.md#targettype)\]
-- `GeneratedRulesType`: [GeneratedRulesType](./literals.md#generatedrulestype)
+- `TargetTypes`: `List`\[[TargetTypeType](./literals.md#targettypetype)\]
+- `GeneratedRulesType`:
+  [GeneratedRulesTypeType](./literals.md#generatedrulestypetype)
 
 ## RulesSourceTypeDef
 
@@ -696,9 +707,10 @@ from mypy_boto3_network_firewall.type_defs import StatefulRuleTypeDef
 
 Required fields:
 
-- `Action`: [StatefulAction](./literals.md#statefulaction)
+- `Action`: [StatefulActionType](./literals.md#statefulactiontype)
 - `Header`: [HeaderTypeDef](./type_defs.md#headertypedef)
-- `RuleOptions`: `List`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
+- `RuleOptions`:
+  `List`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
 
 ## StatelessRuleGroupReferenceTypeDef
 
@@ -719,7 +731,8 @@ from mypy_boto3_network_firewall.type_defs import StatelessRuleTypeDef
 
 Required fields:
 
-- `RuleDefinition`: [RuleDefinitionTypeDef](./type_defs.md#ruledefinitiontypedef)
+- `RuleDefinition`:
+  [RuleDefinitionTypeDef](./type_defs.md#ruledefinitiontypedef)
 - `Priority`: `int`
 
 ## StatelessRulesAndCustomActionsTypeDef
@@ -768,11 +781,11 @@ from mypy_boto3_network_firewall.type_defs import TCPFlagFieldTypeDef
 
 Required fields:
 
-- `Flags`: `List`\[[TCPFlag](./literals.md#tcpflag)\]
+- `Flags`: `List`\[[TCPFlagType](./literals.md#tcpflagtype)\]
 
 Optional fields:
 
-- `Masks`: `List`\[[TCPFlag](./literals.md#tcpflag)\]
+- `Masks`: `List`\[[TCPFlagType](./literals.md#tcpflagtype)\]
 
 ## TagTypeDef
 

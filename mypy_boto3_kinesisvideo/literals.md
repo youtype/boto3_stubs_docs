@@ -3,25 +3,25 @@
 > [Index](..) > [KinesisVideo](.) > Literals
 
 Auto-generated documentation for
-[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
+[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
 [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 - [Literals for boto3 KinesisVideo module](#literals-for-boto3-kinesisvideo-module)
-  - [APIName](#apiname)
-  - [ChannelProtocol](#channelprotocol)
-  - [ChannelRole](#channelrole)
-  - [ChannelType](#channeltype)
-  - [ComparisonOperator](#comparisonoperator)
+  - [APINameType](#apinametype)
+  - [ChannelProtocolType](#channelprotocoltype)
+  - [ChannelRoleType](#channelroletype)
+  - [ChannelTypeType](#channeltypetype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
   - [ListSignalingChannelsPaginatorName](#listsignalingchannelspaginatorname)
   - [ListStreamsPaginatorName](#liststreamspaginatorname)
-  - [Status](#status)
-  - [UpdateDataRetentionOperation](#updatedataretentionoperation)
+  - [StatusType](#statustype)
+  - [UpdateDataRetentionOperationType](#updatedataretentionoperationtype)
 
-## APIName
+## APINameType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import APIName
+from mypy_boto3_kinesisvideo.literals import APINameType
 ```
 
 Values:
@@ -34,10 +34,10 @@ Values:
 - `LIST_FRAGMENTS`
 - `PUT_MEDIA`
 
-## ChannelProtocol
+## ChannelProtocolType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import ChannelProtocol
+from mypy_boto3_kinesisvideo.literals import ChannelProtocolType
 ```
 
 Values:
@@ -45,10 +45,10 @@ Values:
 - `HTTPS`
 - `WSS`
 
-## ChannelRole
+## ChannelRoleType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import ChannelRole
+from mypy_boto3_kinesisvideo.literals import ChannelRoleType
 ```
 
 Values:
@@ -56,20 +56,20 @@ Values:
 - `MASTER`
 - `VIEWER`
 
-## ChannelType
+## ChannelTypeType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import ChannelType
+from mypy_boto3_kinesisvideo.literals import ChannelTypeType
 ```
 
 Values:
 
 - `SINGLE_MASTER`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import ComparisonOperator
+from mypy_boto3_kinesisvideo.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -96,10 +96,10 @@ Values:
 
 - `list_streams`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import Status
+from mypy_boto3_kinesisvideo.literals import StatusType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## UpdateDataRetentionOperation
+## UpdateDataRetentionOperationType
 
 ```python
-from mypy_boto3_kinesisvideo.literals import UpdateDataRetentionOperation
+from mypy_boto3_kinesisvideo.literals import UpdateDataRetentionOperationType
 ```
 
 Values:

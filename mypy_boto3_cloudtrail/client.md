@@ -3,7 +3,7 @@
 > [Index](..) > [CloudTrail](.) > CloudTrailClient
 
 Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
 [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
@@ -47,7 +47,7 @@ def get_cloudtrail_client() -> CloudTrailClient:
 ```
 
 Boto3 documentation:
-[CloudTrail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
+[CloudTrail.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client)
 
 ## Exceptions
 
@@ -116,7 +116,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudtrail").add_tags` method.
 
 Boto3 documentation:
-[CloudTrail.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
+[CloudTrail.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
 
 Arguments:
 
@@ -130,7 +130,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudtrail").can_paginate` method.
 
 Boto3 documentation:
-[CloudTrail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate)
+[CloudTrail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cloudtrail").create_trail` method.
 
 Boto3 documentation:
-[CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
+[CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").delete_trail` method.
 
 Boto3 documentation:
-[CloudTrail.Client.delete_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
+[CloudTrail.Client.delete_trail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudtrail").describe_trails` method.
 
 Boto3 documentation:
-[CloudTrail.Client.describe_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
+[CloudTrail.Client.describe_trails](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("cloudtrail").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudTrail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url)
+[CloudTrail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudtrail").get_event_selectors` method.
 
 Boto3 documentation:
-[CloudTrail.Client.get_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
+[CloudTrail.Client.get_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").get_insight_selectors` method.
 
 Boto3 documentation:
-[CloudTrail.Client.get_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
+[CloudTrail.Client.get_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").get_trail` method.
 
 Boto3 documentation:
-[CloudTrail.Client.get_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
+[CloudTrail.Client.get_trail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
 Type annotations for `boto3.client("cloudtrail").get_trail_status` method.
 
 Boto3 documentation:
-[CloudTrail.Client.get_trail_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
+[CloudTrail.Client.get_trail_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").list_public_keys` method.
 
 Boto3 documentation:
-[CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
+[CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").list_tags` method.
 
 Boto3 documentation:
-[CloudTrail.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
+[CloudTrail.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 Type annotations for `boto3.client("cloudtrail").list_trails` method.
 
 Boto3 documentation:
-[CloudTrail.Client.list_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
+[CloudTrail.Client.list_trails](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
 
 Arguments:
 
@@ -311,7 +311,7 @@ Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
 Type annotations for `boto3.client("cloudtrail").lookup_events` method.
 
 Boto3 documentation:
-[CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
+[CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Arguments:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `EventCategory`: `Literal['insight']` (see
-  [EventCategory](./literals.md#eventcategory))
+  [EventCategoryType](./literals.md#eventcategorytype))
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -332,7 +332,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").put_event_selectors` method.
 
 Boto3 documentation:
-[CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
+[CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").put_insight_selectors` method.
 
 Boto3 documentation:
-[CloudTrail.Client.put_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
+[CloudTrail.Client.put_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns
 Type annotations for `boto3.client("cloudtrail").remove_tags` method.
 
 Boto3 documentation:
-[CloudTrail.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
+[CloudTrail.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudtrail").start_logging` method.
 
 Boto3 documentation:
-[CloudTrail.Client.start_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
+[CloudTrail.Client.start_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudtrail").stop_logging` method.
 
 Boto3 documentation:
-[CloudTrail.Client.stop_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
+[CloudTrail.Client.stop_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
 
 Arguments:
 
@@ -407,7 +407,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudtrail").update_trail` method.
 
 Boto3 documentation:
-[CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
+[CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
 
 Arguments:
 

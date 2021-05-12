@@ -3,7 +3,7 @@
 > [Index](..) > [SESV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
+[SESV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sesv2.html#SESV2)
 type annotations stubs module
 [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
@@ -120,9 +120,9 @@ from mypy_boto3_sesv2.type_defs import AccountDetailsTypeDef
 
 Optional fields:
 
-- `MailType`: [MailType](./literals.md#mailtype)
+- `MailType`: [MailTypeType](./literals.md#mailtypetype)
 - `WebsiteURL`: `str`
-- `ContactLanguage`: [ContactLanguage](./literals.md#contactlanguage)
+- `ContactLanguage`: [ContactLanguageType](./literals.md#contactlanguagetype)
 - `UseCaseDescription`: `str`
 - `AdditionalContactEmailAddresses`: `List`\[`str`\]
 - `ReviewDetails`: [ReviewDetailsTypeDef](./type_defs.md#reviewdetailstypedef)
@@ -168,7 +168,7 @@ from mypy_boto3_sesv2.type_defs import BulkEmailEntryResultTypeDef
 
 Optional fields:
 
-- `Status`: [BulkEmailStatus](./literals.md#bulkemailstatus)
+- `Status`: [BulkEmailStatusType](./literals.md#bulkemailstatustype)
 - `Error`: `str`
 - `MessageId`: `str`
 
@@ -210,7 +210,7 @@ Required fields:
 
 - `DimensionName`: `str`
 - `DimensionValueSource`:
-  [DimensionValueSource](./literals.md#dimensionvaluesource)
+  [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
 - `DefaultDimensionValue`: `str`
 
 ## ContactListDestinationTypeDef
@@ -223,7 +223,7 @@ Required fields:
 
 - `ContactListName`: `str`
 - `ContactListImportAction`:
-  [ContactListImportAction](./literals.md#contactlistimportaction)
+  [ContactListImportActionType](./literals.md#contactlistimportactiontype)
 
 ## ContactListTypeDef
 
@@ -276,7 +276,7 @@ Required fields:
 
 - `ReportId`: `str`
 - `DeliverabilityTestStatus`:
-  [DeliverabilityTestStatus](./literals.md#deliverabilityteststatus)
+  [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
 
 ## CreateEmailIdentityResponseTypeDef
 
@@ -286,9 +286,10 @@ from mypy_boto3_sesv2.type_defs import CreateEmailIdentityResponseTypeDef
 
 Optional fields:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`: [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
+- `DkimAttributes`:
+  [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
 
 ## CreateImportJobResponseTypeDef
 
@@ -337,7 +338,7 @@ from mypy_boto3_sesv2.type_defs import DedicatedIpTypeDef
 Required fields:
 
 - `Ip`: `str`
-- `WarmupStatus`: [WarmupStatus](./literals.md#warmupstatus)
+- `WarmupStatus`: [WarmupStatusType](./literals.md#warmupstatustype)
 - `WarmupPercentage`: `int`
 
 Optional fields:
@@ -358,7 +359,7 @@ Optional fields:
 - `FromEmailAddress`: `str`
 - `CreateDate`: `datetime`
 - `DeliverabilityTestStatus`:
-  [DeliverabilityTestStatus](./literals.md#deliverabilityteststatus)
+  [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
 
 ## DeliveryOptionsTypeDef
 
@@ -368,7 +369,7 @@ from mypy_boto3_sesv2.type_defs import DeliveryOptionsTypeDef
 
 Optional fields:
 
-- `TlsPolicy`: [TlsPolicy](./literals.md#tlspolicy)
+- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 - `SendingPoolName`: `str`
 
 ## DestinationTypeDef
@@ -392,10 +393,10 @@ from mypy_boto3_sesv2.type_defs import DkimAttributesTypeDef
 Optional fields:
 
 - `SigningEnabled`: `bool`
-- `Status`: [DkimStatus](./literals.md#dkimstatus)
+- `Status`: [DkimStatusType](./literals.md#dkimstatustype)
 - `Tokens`: `List`\[`str`\]
 - `SigningAttributesOrigin`:
-  [DkimSigningAttributesOrigin](./literals.md#dkimsigningattributesorigin)
+  [DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype)
 
 ## DkimSigningAttributesTypeDef
 
@@ -502,12 +503,13 @@ from mypy_boto3_sesv2.type_defs import EventDestinationDefinitionTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
   [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 - `PinpointDestination`:
   [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
 
@@ -520,7 +522,7 @@ from mypy_boto3_sesv2.type_defs import EventDestinationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 Optional fields:
 
@@ -529,7 +531,8 @@ Optional fields:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
   [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 - `PinpointDestination`:
   [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
 
@@ -598,7 +601,8 @@ Optional fields:
   [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
 - `ReputationOptions`:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
-- `SendingOptions`: [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
+- `SendingOptions`:
+  [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SuppressionOptions`:
   [SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef)
@@ -688,7 +692,7 @@ Optional fields:
 
 - `SubscriptionExpiryDate`: `datetime`
 - `AccountStatus`:
-  [DeliverabilityDashboardAccountStatus](./literals.md#deliverabilitydashboardaccountstatus)
+  [DeliverabilityDashboardAccountStatusType](./literals.md#deliverabilitydashboardaccountstatustype)
 - `ActiveSubscribedDomains`:
   `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 - `PendingExpirationSubscribedDomains`:
@@ -755,10 +759,11 @@ from mypy_boto3_sesv2.type_defs import GetEmailIdentityResponseTypeDef
 
 Optional fields:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `FeedbackForwardingStatus`: `bool`
 - `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`: [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
+- `DkimAttributes`:
+  [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
 - `MailFromAttributes`:
   [MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef)
 - `Policies`: `Dict`\[`str`, `str`\]
@@ -791,7 +796,7 @@ Optional fields:
 - `ImportDataSource`:
   [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
 - `FailureInfo`: [FailureInfoTypeDef](./type_defs.md#failureinfotypedef)
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `CreatedTimestamp`: `datetime`
 - `CompletedTimestamp`: `datetime`
 - `ProcessedRecordsCount`: `int`
@@ -816,7 +821,7 @@ from mypy_boto3_sesv2.type_defs import IdentityInfoTypeDef
 
 Optional fields:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `IdentityName`: `str`
 - `SendingEnabled`: `bool`
 
@@ -829,7 +834,7 @@ from mypy_boto3_sesv2.type_defs import ImportDataSourceTypeDef
 Required fields:
 
 - `S3Url`: `str`
-- `DataFormat`: [DataFormat](./literals.md#dataformat)
+- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
 
 ## ImportDestinationTypeDef
 
@@ -855,7 +860,7 @@ Optional fields:
 - `JobId`: `str`
 - `ImportDestination`:
   [ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef)
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `CreatedTimestamp`: `datetime`
 
 ## InboxPlacementTrackingOptionTypeDef
@@ -923,7 +928,8 @@ from mypy_boto3_sesv2.type_defs import ListContactsFilterTypeDef
 
 Optional fields:
 
-- `FilteredStatus`: [SubscriptionStatus](./literals.md#subscriptionstatus)
+- `FilteredStatus`:
+  [SubscriptionStatusType](./literals.md#subscriptionstatustype)
 - `TopicFilter`: [TopicFilterTypeDef](./type_defs.md#topicfiltertypedef)
 
 ## ListContactsResponseTypeDef
@@ -1072,8 +1078,9 @@ Required fields:
 
 - `MailFromDomain`: `str`
 - `MailFromDomainStatus`:
-  [MailFromDomainStatus](./literals.md#mailfromdomainstatus)
-- `BehaviorOnMxFailure`: [BehaviorOnMxFailure](./literals.md#behavioronmxfailure)
+  [MailFromDomainStatusType](./literals.md#mailfromdomainstatustype)
+- `BehaviorOnMxFailure`:
+  [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
 
 ## MessageTagTypeDef
 
@@ -1143,7 +1150,7 @@ from mypy_boto3_sesv2.type_defs import PutEmailIdentityDkimSigningAttributesResp
 
 Optional fields:
 
-- `DkimStatus`: [DkimStatus](./literals.md#dkimstatus)
+- `DkimStatus`: [DkimStatusType](./literals.md#dkimstatustype)
 - `DkimTokens`: `List`\[`str`\]
 
 ## RawMessageTypeDef
@@ -1196,7 +1203,7 @@ from mypy_boto3_sesv2.type_defs import ReviewDetailsTypeDef
 
 Optional fields:
 
-- `Status`: [ReviewStatus](./literals.md#reviewstatus)
+- `Status`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `CaseId`: `str`
 
 ## SendBulkEmailResponseTypeDef
@@ -1282,7 +1289,8 @@ from mypy_boto3_sesv2.type_defs import SuppressedDestinationSummaryTypeDef
 Required fields:
 
 - `EmailAddress`: `str`
-- `Reason`: [SuppressionListReason](./literals.md#suppressionlistreason)
+- `Reason`:
+  [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
 - `LastUpdateTime`: `datetime`
 
 ## SuppressedDestinationTypeDef
@@ -1294,7 +1302,8 @@ from mypy_boto3_sesv2.type_defs import SuppressedDestinationTypeDef
 Required fields:
 
 - `EmailAddress`: `str`
-- `Reason`: [SuppressionListReason](./literals.md#suppressionlistreason)
+- `Reason`:
+  [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
 - `LastUpdateTime`: `datetime`
 
 Optional fields:
@@ -1311,7 +1320,7 @@ from mypy_boto3_sesv2.type_defs import SuppressionAttributesTypeDef
 Optional fields:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReason](./literals.md#suppressionlistreason)\]
+  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 ## SuppressionListDestinationTypeDef
 
@@ -1322,7 +1331,7 @@ from mypy_boto3_sesv2.type_defs import SuppressionListDestinationTypeDef
 Required fields:
 
 - `SuppressionListImportAction`:
-  [SuppressionListImportAction](./literals.md#suppressionlistimportaction)
+  [SuppressionListImportActionType](./literals.md#suppressionlistimportactiontype)
 
 ## SuppressionOptionsTypeDef
 
@@ -1333,7 +1342,7 @@ from mypy_boto3_sesv2.type_defs import SuppressionOptionsTypeDef
 Optional fields:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReason](./literals.md#suppressionlistreason)\]
+  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 ## TagTypeDef
 
@@ -1388,7 +1397,8 @@ from mypy_boto3_sesv2.type_defs import TopicPreferenceTypeDef
 Required fields:
 
 - `TopicName`: `str`
-- `SubscriptionStatus`: [SubscriptionStatus](./literals.md#subscriptionstatus)
+- `SubscriptionStatus`:
+  [SubscriptionStatusType](./literals.md#subscriptionstatustype)
 
 ## TopicTypeDef
 
@@ -1401,7 +1411,7 @@ Required fields:
 - `TopicName`: `str`
 - `DisplayName`: `str`
 - `DefaultSubscriptionStatus`:
-  [SubscriptionStatus](./literals.md#subscriptionstatus)
+  [SubscriptionStatusType](./literals.md#subscriptionstatustype)
 
 Optional fields:
 

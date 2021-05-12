@@ -3,7 +3,7 @@
 > [Index](..) > [RAM](.) > Paginators
 
 Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM)
 type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
@@ -30,7 +30,7 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
+[RAM.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
 
 Arguments for `GetResourcePoliciesPaginator.paginate` method:
 
@@ -57,18 +57,18 @@ def get_get_resource_share_associations_paginator() -> GetResourceShareAssociati
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourceShareAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
+[RAM.Paginator.GetResourceShareAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
 
 Arguments for `GetResourceShareAssociationsPaginator.paginate` method:
 
 - `associationType`:
-  [ResourceShareAssociationType](./literals.md#resourceshareassociationtype)
+  [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
   *(required)*
 - `resourceShareArns`: `List`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
-  [ResourceShareAssociationStatus](./literals.md#resourceshareassociationstatus)
+  [ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -90,7 +90,7 @@ def get_get_resource_share_invitations_paginator() -> GetResourceShareInvitation
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourceShareInvitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
+[RAM.Paginator.GetResourceShareInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
 
 Arguments for `GetResourceShareInvitationsPaginator.paginate` method:
 
@@ -117,13 +117,15 @@ def get_get_resource_shares_paginator() -> GetResourceSharesPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourceShares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShares)
+[RAM.Paginator.GetResourceShares](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM.Paginator.GetResourceShares)
 
 Arguments for `GetResourceSharesPaginator.paginate` method:
 
-- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
+- `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
+  *(required)*
 - `resourceShareArns`: `List`\[`str`\]
-- `resourceShareStatus`: [ResourceShareStatus](./literals.md#resourcesharestatus)
+- `resourceShareStatus`:
+  [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `name`: `str`
 - `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
@@ -146,11 +148,12 @@ def get_list_principals_paginator() -> ListPrincipalsPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.ListPrincipals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListPrincipals)
+[RAM.Paginator.ListPrincipals](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM.Paginator.ListPrincipals)
 
 Arguments for `ListPrincipalsPaginator.paginate` method:
 
-- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
+- `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
+  *(required)*
 - `resourceArn`: `str`
 - `principals`: `List`\[`str`\]
 - `resourceType`: `str`
@@ -175,11 +178,12 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListResources)
+[RAM.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM.Paginator.ListResources)
 
 Arguments for `ListResourcesPaginator.paginate` method:
 
-- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
+- `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
+  *(required)*
 - `principal`: `str`
 - `resourceType`: `str`
 - `resourceArns`: `List`\[`str`\]

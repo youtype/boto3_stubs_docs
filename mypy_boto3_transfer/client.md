@@ -3,7 +3,7 @@
 > [Index](..) > [Transfer](.) > TransferClient
 
 Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer)
 type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
@@ -49,7 +49,7 @@ def get_transfer_client() -> TransferClient:
 ```
 
 Boto3 documentation:
-[Transfer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
+[Transfer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client)
 
 ## Exceptions
 
@@ -83,7 +83,7 @@ Exceptions:
 Type annotations for `boto3.client("transfer").can_paginate` method.
 
 Boto3 documentation:
-[Transfer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate)
+[Transfer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.can_paginate)
 
 Arguments:
 
@@ -96,20 +96,20 @@ Returns `bool`.
 Type annotations for `boto3.client("transfer").create_server` method.
 
 Boto3 documentation:
-[Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
+[Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.create_server)
 
 Arguments:
 
 - `Certificate`: `str`
-- `Domain`: [Domain](./literals.md#domain)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `EndpointDetails`:
   [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
-- `EndpointType`: [EndpointType](./literals.md#endpointtype)
+- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `HostKey`: `str`
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `IdentityProviderType`:
-  [IdentityProviderType](./literals.md#identityprovidertype)
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
@@ -123,7 +123,7 @@ Returns
 Type annotations for `boto3.client("transfer").create_user` method.
 
 Boto3 documentation:
-[Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
+[Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.create_user)
 
 Arguments:
 
@@ -131,7 +131,8 @@ Arguments:
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
 - `HomeDirectory`: `str`
-- `HomeDirectoryType`: [HomeDirectoryType](./literals.md#homedirectorytype)
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
   `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
@@ -146,7 +147,7 @@ Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 Type annotations for `boto3.client("transfer").delete_server` method.
 
 Boto3 documentation:
-[Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
+[Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.delete_server)
 
 Arguments:
 
@@ -157,7 +158,7 @@ Arguments:
 Type annotations for `boto3.client("transfer").delete_ssh_public_key` method.
 
 Boto3 documentation:
-[Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
+[Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
 
 Arguments:
 
@@ -170,7 +171,7 @@ Arguments:
 Type annotations for `boto3.client("transfer").delete_user` method.
 
 Boto3 documentation:
-[Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
+[Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.delete_user)
 
 Arguments:
 
@@ -183,7 +184,7 @@ Type annotations for `boto3.client("transfer").describe_security_policy`
 method.
 
 Boto3 documentation:
-[Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
+[Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.describe_security_policy)
 
 Arguments:
 
@@ -197,7 +198,7 @@ Returns
 Type annotations for `boto3.client("transfer").describe_server` method.
 
 Boto3 documentation:
-[Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
+[Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.describe_server)
 
 Arguments:
 
@@ -211,7 +212,7 @@ Returns
 Type annotations for `boto3.client("transfer").describe_user` method.
 
 Boto3 documentation:
-[Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
+[Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.describe_user)
 
 Arguments:
 
@@ -226,7 +227,7 @@ Returns
 Type annotations for `boto3.client("transfer").generate_presigned_url` method.
 
 Boto3 documentation:
-[Transfer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url)
+[Transfer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.generate_presigned_url)
 
 Arguments:
 
@@ -242,7 +243,7 @@ Returns `str`.
 Type annotations for `boto3.client("transfer").import_ssh_public_key` method.
 
 Boto3 documentation:
-[Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
+[Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
 
 Arguments:
 
@@ -258,7 +259,7 @@ Returns
 Type annotations for `boto3.client("transfer").list_security_policies` method.
 
 Boto3 documentation:
-[Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
+[Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.list_security_policies)
 
 Arguments:
 
@@ -273,7 +274,7 @@ Returns
 Type annotations for `boto3.client("transfer").list_servers` method.
 
 Boto3 documentation:
-[Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
+[Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.list_servers)
 
 Arguments:
 
@@ -288,7 +289,7 @@ Returns
 Type annotations for `boto3.client("transfer").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
+[Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -304,7 +305,7 @@ Returns
 Type annotations for `boto3.client("transfer").list_users` method.
 
 Boto3 documentation:
-[Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
+[Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.list_users)
 
 Arguments:
 
@@ -319,7 +320,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 Type annotations for `boto3.client("transfer").start_server` method.
 
 Boto3 documentation:
-[Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
+[Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.start_server)
 
 Arguments:
 
@@ -330,7 +331,7 @@ Arguments:
 Type annotations for `boto3.client("transfer").stop_server` method.
 
 Boto3 documentation:
-[Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
+[Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.stop_server)
 
 Arguments:
 
@@ -341,7 +342,7 @@ Arguments:
 Type annotations for `boto3.client("transfer").tag_resource` method.
 
 Boto3 documentation:
-[Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
+[Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.tag_resource)
 
 Arguments:
 
@@ -353,7 +354,7 @@ Arguments:
 Type annotations for `boto3.client("transfer").test_identity_provider` method.
 
 Boto3 documentation:
-[Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
+[Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.test_identity_provider)
 
 Arguments:
 
@@ -371,7 +372,7 @@ Returns
 Type annotations for `boto3.client("transfer").untag_resource` method.
 
 Boto3 documentation:
-[Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
+[Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.untag_resource)
 
 Arguments:
 
@@ -383,7 +384,7 @@ Arguments:
 Type annotations for `boto3.client("transfer").update_server` method.
 
 Boto3 documentation:
-[Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
+[Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.update_server)
 
 Arguments:
 
@@ -391,7 +392,7 @@ Arguments:
 - `Certificate`: `str`
 - `EndpointDetails`:
   [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
-- `EndpointType`: [EndpointType](./literals.md#endpointtype)
+- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `HostKey`: `str`
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
@@ -407,14 +408,15 @@ Returns
 Type annotations for `boto3.client("transfer").update_user` method.
 
 Boto3 documentation:
-[Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
+[Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer.Client.update_user)
 
 Arguments:
 
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
 - `HomeDirectory`: `str`
-- `HomeDirectoryType`: [HomeDirectoryType](./literals.md#homedirectorytype)
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
   `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`

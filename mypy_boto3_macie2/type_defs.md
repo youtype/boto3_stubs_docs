@@ -3,7 +3,7 @@
 > [Index](..) > [Macie2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
@@ -187,7 +187,7 @@ from mypy_boto3_macie2.type_defs import AdminAccountTypeDef
 Optional fields:
 
 - `accountId`: `str`
-- `status`: [AdminStatus](./literals.md#adminstatus)
+- `status`: [AdminStatusType](./literals.md#adminstatustype)
 
 ## ApiCallDetailsTypeDef
 
@@ -214,7 +214,8 @@ Optional fields:
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
-- `sessionContext`: [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
+- `sessionContext`:
+  [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
 
 ## AwsAccountTypeDef
 
@@ -368,7 +369,7 @@ Optional fields:
 
 - `accountId`: `str`
 - `allowsUnencryptedObjectUploads`:
-  [AllowsUnencryptedObjectUploads](./literals.md#allowsunencryptedobjectuploads)
+  [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
 - `bucketArn`: `str`
 - `bucketCreatedAt`: `datetime`
 - `bucketName`: `str`
@@ -386,7 +387,7 @@ Optional fields:
   [ReplicationDetailsTypeDef](./type_defs.md#replicationdetailstypedef)
 - `serverSideEncryption`:
   [BucketServerSideEncryptionTypeDef](./type_defs.md#bucketserversideencryptiontypedef)
-- `sharedAccess`: [SharedAccess](./literals.md#sharedaccess)
+- `sharedAccess`: [SharedAccessType](./literals.md#sharedaccesstype)
 - `sizeInBytes`: `int`
 - `sizeInBytesCompressed`: `int`
 - `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
@@ -428,7 +429,8 @@ from mypy_boto3_macie2.type_defs import BucketPublicAccessTypeDef
 
 Optional fields:
 
-- `effectivePermission`: [EffectivePermission](./literals.md#effectivepermission)
+- `effectivePermission`:
+  [EffectivePermissionType](./literals.md#effectivepermissiontype)
 - `permissionConfiguration`:
   [BucketPermissionConfigurationTypeDef](./type_defs.md#bucketpermissionconfigurationtypedef)
 
@@ -452,7 +454,7 @@ from mypy_boto3_macie2.type_defs import BucketSortCriteriaTypeDef
 Optional fields:
 
 - `attributeName`: `str`
-- `orderBy`: [OrderBy](./literals.md#orderby)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## CellTypeDef
 
@@ -689,8 +691,8 @@ Optional fields:
 - `initialRun`: `bool`
 - `jobArn`: `str`
 - `jobId`: `str`
-- `jobStatus`: [JobStatus](./literals.md#jobstatus)
-- `jobType`: [JobType](./literals.md#jobtype)
+- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `jobType`: [JobTypeType](./literals.md#jobtypetype)
 - `lastRunErrorStatus`:
   [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
 - `lastRunTime`: `datetime`
@@ -738,7 +740,8 @@ Optional fields:
 - `accountId`: `str`
 - `arn`: `str`
 - `principalId`: `str`
-- `sessionContext`: [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
+- `sessionContext`:
+  [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
 
 ## FindingActionTypeDef
 
@@ -749,8 +752,9 @@ from mypy_boto3_macie2.type_defs import FindingActionTypeDef
 Optional fields:
 
 - `actionType`: `Literal['AWS_API_CALL']` (see
-  [FindingActionType](./literals.md#findingactiontype))
-- `apiCallDetails`: [ApiCallDetailsTypeDef](./type_defs.md#apicalldetailstypedef)
+  [FindingActionTypeType](./literals.md#findingactiontypetype))
+- `apiCallDetails`:
+  [ApiCallDetailsTypeDef](./type_defs.md#apicalldetailstypedef)
 
 ## FindingActorTypeDef
 
@@ -785,8 +789,8 @@ from mypy_boto3_macie2.type_defs import FindingStatisticsSortCriteriaTypeDef
 Optional fields:
 
 - `attributeName`:
-  [FindingStatisticsSortAttributeName](./literals.md#findingstatisticssortattributename)
-- `orderBy`: [OrderBy](./literals.md#orderby)
+  [FindingStatisticsSortAttributeNameType](./literals.md#findingstatisticssortattributenametype)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## FindingTypeDef
 
@@ -798,7 +802,7 @@ Optional fields:
 
 - `accountId`: `str`
 - `archived`: `bool`
-- `category`: [FindingCategory](./literals.md#findingcategory)
+- `category`: [FindingCategoryType](./literals.md#findingcategorytype)
 - `classificationDetails`:
   [ClassificationDetailsTypeDef](./type_defs.md#classificationdetailstypedef)
 - `count`: `int`
@@ -814,7 +818,7 @@ Optional fields:
 - `schemaVersion`: `str`
 - `severity`: [SeverityTypeDef](./type_defs.md#severitytypedef)
 - `title`: `str`
-- `type`: [FindingType](./literals.md#findingtype)
+- `type`: [FindingTypeType](./literals.md#findingtypetype)
 - `updatedAt`: `datetime`
 
 ## FindingsFilterListItemTypeDef
@@ -825,7 +829,7 @@ from mypy_boto3_macie2.type_defs import FindingsFilterListItemTypeDef
 
 Optional fields:
 
-- `action`: [FindingsFilterAction](./literals.md#findingsfilteraction)
+- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
 - `arn`: `str`
 - `id`: `str`
 - `name`: `str`
@@ -919,7 +923,7 @@ from mypy_boto3_macie2.type_defs import GetFindingsFilterResponseTypeDef
 
 Optional fields:
 
-- `action`: [FindingsFilterAction](./literals.md#findingsfilteraction)
+- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
 - `arn`: `str`
 - `description`: `str`
 - `findingCriteria`:
@@ -970,9 +974,9 @@ Optional fields:
 
 - `createdAt`: `datetime`
 - `findingPublishingFrequency`:
-  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
+  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `serviceRole`: `str`
-- `status`: [MacieStatus](./literals.md#maciestatus)
+- `status`: [MacieStatusType](./literals.md#maciestatustype)
 - `updatedAt`: `datetime`
 
 ## GetMasterAccountResponseTypeDef
@@ -999,7 +1003,8 @@ Optional fields:
 - `email`: `str`
 - `invitedAt`: `datetime`
 - `masterAccountId`: `str`
-- `relationshipStatus`: [RelationshipStatus](./literals.md#relationshipstatus)
+- `relationshipStatus`:
+  [RelationshipStatusType](./literals.md#relationshipstatustype)
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 
@@ -1013,7 +1018,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `records`: `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
-- `timeRange`: [TimeRange](./literals.md#timerange)
+- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
 
 ## GetUsageTotalsResponseTypeDef
 
@@ -1023,8 +1028,9 @@ from mypy_boto3_macie2.type_defs import GetUsageTotalsResponseTypeDef
 
 Optional fields:
 
-- `timeRange`: [TimeRange](./literals.md#timerange)
-- `usageTotals`: `List`\[[UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)\]
+- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
+- `usageTotals`:
+  `List`\[[UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)\]
 
 ## GroupCountTypeDef
 
@@ -1061,7 +1067,8 @@ Optional fields:
 - `accountId`: `str`
 - `invitationId`: `str`
 - `invitedAt`: `datetime`
-- `relationshipStatus`: [RelationshipStatus](./literals.md#relationshipstatus)
+- `relationshipStatus`:
+  [RelationshipStatusType](./literals.md#relationshipstatustype)
 
 ## IpAddressDetailsTypeDef
 
@@ -1130,8 +1137,9 @@ from mypy_boto3_macie2.type_defs import JobDetailsTypeDef
 
 Optional fields:
 
-- `isDefinedInJob`: [IsDefinedInJob](./literals.md#isdefinedinjob)
-- `isMonitoredByJob`: [IsMonitoredByJob](./literals.md#ismonitoredbyjob)
+- `isDefinedInJob`: [IsDefinedInJobType](./literals.md#isdefinedinjobtype)
+- `isMonitoredByJob`:
+  [IsMonitoredByJobType](./literals.md#ismonitoredbyjobtype)
 - `lastJobId`: `str`
 - `lastJobRunTime`: `datetime`
 
@@ -1146,7 +1154,8 @@ Optional fields:
 - `dailySchedule`: `Dict`\[`str`, `Any`\]
 - `monthlySchedule`:
   [MonthlyScheduleTypeDef](./type_defs.md#monthlyscheduletypedef)
-- `weeklySchedule`: [WeeklyScheduleTypeDef](./type_defs.md#weeklyscheduletypedef)
+- `weeklySchedule`:
+  [WeeklyScheduleTypeDef](./type_defs.md#weeklyscheduletypedef)
 
 ## JobScopeTermTypeDef
 
@@ -1182,8 +1191,8 @@ Optional fields:
   `List`\[[S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)\]
 - `createdAt`: `datetime`
 - `jobId`: `str`
-- `jobStatus`: [JobStatus](./literals.md#jobstatus)
-- `jobType`: [JobType](./literals.md#jobtype)
+- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `jobType`: [JobTypeType](./literals.md#jobtypetype)
 - `lastRunErrorStatus`:
   [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
 - `name`: `str`
@@ -1209,7 +1218,8 @@ from mypy_boto3_macie2.type_defs import LastRunErrorStatusTypeDef
 
 Optional fields:
 
-- `code`: [LastRunErrorStatusCode](./literals.md#lastrunerrorstatuscode)
+- `code`:
+  [LastRunErrorStatusCodeType](./literals.md#lastrunerrorstatuscodetype)
 
 ## ListClassificationJobsResponseTypeDef
 
@@ -1265,7 +1275,8 @@ from mypy_boto3_macie2.type_defs import ListInvitationsResponseTypeDef
 
 Optional fields:
 
-- `invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
+- `invitations`:
+  `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `nextToken`: `str`
 
 ## ListJobsFilterCriteriaTypeDef
@@ -1289,8 +1300,8 @@ from mypy_boto3_macie2.type_defs import ListJobsFilterTermTypeDef
 
 Optional fields:
 
-- `comparator`: [JobComparator](./literals.md#jobcomparator)
-- `key`: [ListJobsFilterKey](./literals.md#listjobsfilterkey)
+- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
+- `key`: [ListJobsFilterKeyType](./literals.md#listjobsfilterkeytype)
 - `values`: `List`\[`str`\]
 
 ## ListJobsSortCriteriaTypeDef
@@ -1302,8 +1313,8 @@ from mypy_boto3_macie2.type_defs import ListJobsSortCriteriaTypeDef
 Optional fields:
 
 - `attributeName`:
-  [ListJobsSortAttributeName](./literals.md#listjobssortattributename)
-- `orderBy`: [OrderBy](./literals.md#orderby)
+  [ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## ListMembersResponseTypeDef
 
@@ -1352,7 +1363,8 @@ Optional fields:
 - `email`: `str`
 - `invitedAt`: `datetime`
 - `masterAccountId`: `str`
-- `relationshipStatus`: [RelationshipStatus](./literals.md#relationshipstatus)
+- `relationshipStatus`:
+  [RelationshipStatusType](./literals.md#relationshipstatustype)
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 
@@ -1529,7 +1541,7 @@ from mypy_boto3_macie2.type_defs import S3BucketTypeDef
 Optional fields:
 
 - `allowsUnencryptedObjectUploads`:
-  [AllowsUnencryptedObjectUploads](./literals.md#allowsunencryptedobjectuploads)
+  [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `defaultServerSideEncryption`:
@@ -1585,7 +1597,7 @@ Optional fields:
 - `serverSideEncryption`:
   [ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef)
 - `size`: `int`
-- `storageClass`: [StorageClass](./literals.md#storageclass)
+- `storageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 - `versionId`: `str`
 
@@ -1620,7 +1632,7 @@ from mypy_boto3_macie2.type_defs import SensitiveDataItemTypeDef
 Optional fields:
 
 - `category`:
-  [SensitiveDataItemCategory](./literals.md#sensitivedataitemcategory)
+  [SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype)
 - `detections`:
   `List`\[[DefaultDetectionTypeDef](./type_defs.md#defaultdetectiontypedef)\]
 - `totalCount`: `int`
@@ -1633,7 +1645,7 @@ from mypy_boto3_macie2.type_defs import ServerSideEncryptionTypeDef
 
 Optional fields:
 
-- `encryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `kmsMasterKeyId`: `str`
 
 ## ServiceLimitTypeDef
@@ -1645,7 +1657,7 @@ from mypy_boto3_macie2.type_defs import ServiceLimitTypeDef
 Optional fields:
 
 - `isServiceLimited`: `bool`
-- `unit`: `Literal['TERABYTES']` (see [Unit](./literals.md#unit))
+- `unit`: `Literal['TERABYTES']` (see [UnitType](./literals.md#unittype))
 - `value`: `int`
 
 ## SessionContextAttributesTypeDef
@@ -1693,7 +1705,8 @@ from mypy_boto3_macie2.type_defs import SeverityTypeDef
 
 Optional fields:
 
-- `description`: [SeverityDescription](./literals.md#severitydescription)
+- `description`:
+  [SeverityDescriptionType](./literals.md#severitydescriptiontype)
 - `score`: `int`
 
 ## SimpleScopeTermTypeDef
@@ -1704,8 +1717,8 @@ from mypy_boto3_macie2.type_defs import SimpleScopeTermTypeDef
 
 Optional fields:
 
-- `comparator`: [JobComparator](./literals.md#jobcomparator)
-- `key`: [ScopeFilterKey](./literals.md#scopefilterkey)
+- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
+- `key`: [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
 - `values`: `List`\[`str`\]
 
 ## SortCriteriaTypeDef
@@ -1717,7 +1730,7 @@ from mypy_boto3_macie2.type_defs import SortCriteriaTypeDef
 Optional fields:
 
 - `attributeName`: `str`
-- `orderBy`: [OrderBy](./literals.md#orderby)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## StatisticsTypeDef
 
@@ -1738,11 +1751,12 @@ from mypy_boto3_macie2.type_defs import TagScopeTermTypeDef
 
 Optional fields:
 
-- `comparator`: [JobComparator](./literals.md#jobcomparator)
+- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `key`: `str`
 - `tagValues`:
   `List`\[[TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef)\]
-- `target`: `Literal['S3_OBJECT']` (see [TagTarget](./literals.md#tagtarget))
+- `target`: `Literal['S3_OBJECT']` (see
+  [TagTargetType](./literals.md#tagtargettype))
 
 ## TagValuePairTypeDef
 
@@ -1774,7 +1788,7 @@ from mypy_boto3_macie2.type_defs import UnprocessedAccountTypeDef
 Optional fields:
 
 - `accountId`: `str`
-- `errorCode`: [ErrorCode](./literals.md#errorcode)
+- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
 ## UpdateFindingsFilterResponseTypeDef
@@ -1796,10 +1810,10 @@ from mypy_boto3_macie2.type_defs import UsageByAccountTypeDef
 
 Optional fields:
 
-- `currency`: `Literal['USD']` (see [Currency](./literals.md#currency))
+- `currency`: `Literal['USD']` (see [CurrencyType](./literals.md#currencytype))
 - `estimatedCost`: `str`
 - `serviceLimit`: [ServiceLimitTypeDef](./type_defs.md#servicelimittypedef)
-- `type`: [UsageType](./literals.md#usagetype)
+- `type`: [UsageTypeType](./literals.md#usagetypetype)
 
 ## UsageRecordTypeDef
 
@@ -1823,8 +1837,9 @@ from mypy_boto3_macie2.type_defs import UsageStatisticsFilterTypeDef
 Optional fields:
 
 - `comparator`:
-  [UsageStatisticsFilterComparator](./literals.md#usagestatisticsfiltercomparator)
-- `key`: [UsageStatisticsFilterKey](./literals.md#usagestatisticsfilterkey)
+  [UsageStatisticsFilterComparatorType](./literals.md#usagestatisticsfiltercomparatortype)
+- `key`:
+  [UsageStatisticsFilterKeyType](./literals.md#usagestatisticsfilterkeytype)
 - `values`: `List`\[`str`\]
 
 ## UsageStatisticsSortByTypeDef
@@ -1835,8 +1850,8 @@ from mypy_boto3_macie2.type_defs import UsageStatisticsSortByTypeDef
 
 Optional fields:
 
-- `key`: [UsageStatisticsSortKey](./literals.md#usagestatisticssortkey)
-- `orderBy`: [OrderBy](./literals.md#orderby)
+- `key`: [UsageStatisticsSortKeyType](./literals.md#usagestatisticssortkeytype)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## UsageTotalTypeDef
 
@@ -1846,9 +1861,9 @@ from mypy_boto3_macie2.type_defs import UsageTotalTypeDef
 
 Optional fields:
 
-- `currency`: `Literal['USD']` (see [Currency](./literals.md#currency))
+- `currency`: `Literal['USD']` (see [CurrencyType](./literals.md#currencytype))
 - `estimatedCost`: `str`
-- `type`: [UsageType](./literals.md#usagetype)
+- `type`: [UsageTypeType](./literals.md#usagetypetype)
 
 ## UserIdentityRootTypeDef
 
@@ -1876,7 +1891,7 @@ Optional fields:
 - `federatedUser`: [FederatedUserTypeDef](./type_defs.md#federatedusertypedef)
 - `iamUser`: [IamUserTypeDef](./type_defs.md#iamusertypedef)
 - `root`: [UserIdentityRootTypeDef](./type_defs.md#useridentityroottypedef)
-- `type`: [UserIdentityType](./literals.md#useridentitytype)
+- `type`: [UserIdentityTypeType](./literals.md#useridentitytypetype)
 
 ## UserPausedDetailsTypeDef
 
@@ -1898,4 +1913,4 @@ from mypy_boto3_macie2.type_defs import WeeklyScheduleTypeDef
 
 Optional fields:
 
-- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
+- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)

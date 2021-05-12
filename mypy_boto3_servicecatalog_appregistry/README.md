@@ -3,7 +3,7 @@
 > [Index](..) > AppRegistry
 
 Auto-generated documentation for
-[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
 [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
@@ -30,42 +30,42 @@ Can be used directly:
 from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
 ```
 
-AppRegistryClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_attribute_group](./client.md#associate-attribute-group)
-- [associate_resource](./client.md#associate-resource)
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [create_attribute_group](./client.md#create-attribute-group)
-- [delete_application](./client.md#delete-application)
-- [delete_attribute_group](./client.md#delete-attribute-group)
-- [disassociate_attribute_group](./client.md#disassociate-attribute-group)
-- [disassociate_resource](./client.md#disassociate-resource)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_application](./client.md#get-application)
-- [get_attribute_group](./client.md#get-attribute-group)
-- [get_paginator](./client.md#get-paginator)
-- [list_applications](./client.md#list-applications)
-- [list_associated_attribute_groups](./client.md#list-associated-attribute-groups)
-- [list_associated_resources](./client.md#list-associated-resources)
-- [list_attribute_groups](./client.md#list-attribute-groups)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [sync_resource](./client.md#sync-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_application](./client.md#update-application)
-- [update_attribute_group](./client.md#update-attribute-group)
+- [associate_attribute_group](./client.md#associate_attribute_group)
+- [associate_resource](./client.md#associate_resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [create_attribute_group](./client.md#create_attribute_group)
+- [delete_application](./client.md#delete_application)
+- [delete_attribute_group](./client.md#delete_attribute_group)
+- [disassociate_attribute_group](./client.md#disassociate_attribute_group)
+- [disassociate_resource](./client.md#disassociate_resource)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_application](./client.md#get_application)
+- [get_attribute_group](./client.md#get_attribute_group)
+- [get_paginator](./client.md#get_paginator)
+- [list_applications](./client.md#list_applications)
+- [list_associated_attribute_groups](./client.md#list_associated_attribute_groups)
+- [list_associated_resources](./client.md#list_associated_resources)
+- [list_attribute_groups](./client.md#list_attribute_groups)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [sync_resource](./client.md#sync_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_application](./client.md#update_application)
+- [update_attribute_group](./client.md#update_attribute_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+AppRegistryClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Paginators
 
@@ -97,8 +97,8 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 - [ListAssociatedAttributeGroupsPaginatorName](./literals.md#listassociatedattributegroupspaginatorname)
 - [ListAssociatedResourcesPaginatorName](./literals.md#listassociatedresourcespaginatorname)
 - [ListAttributeGroupsPaginatorName](./literals.md#listattributegroupspaginatorname)
-- [ResourceType](./literals.md#resourcetype)
-- [SyncAction](./literals.md#syncaction)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [SyncActionType](./literals.md#syncactiontype)
 
 ## Typed dictionaries
 

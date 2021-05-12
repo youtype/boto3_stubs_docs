@@ -3,7 +3,7 @@
 > [Index](..) > [GlueDataBrew](.) > Typed dictionaries
 
 Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
@@ -229,7 +229,7 @@ from mypy_boto3_databrew.type_defs import DatasetParameterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [ParameterType](./literals.md#parametertype)
+- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
 
 Optional fields:
 
@@ -254,11 +254,11 @@ Optional fields:
 - `AccountId`: `str`
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
-- `Format`: [InputFormat](./literals.md#inputformat)
+- `Format`: [InputFormatType](./literals.md#inputformattype)
 - `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
 - `LastModifiedDate`: `datetime`
 - `LastModifiedBy`: `str`
-- `Source`: [Source](./literals.md#source)
+- `Source`: [SourceType](./literals.md#sourcetype)
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResourceArn`: `str`
@@ -344,11 +344,11 @@ Optional fields:
 
 - `CreatedBy`: `str`
 - `CreateDate`: `datetime`
-- `Format`: [InputFormat](./literals.md#inputformat)
+- `Format`: [InputFormatType](./literals.md#inputformattype)
 - `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
 - `LastModifiedDate`: `datetime`
 - `LastModifiedBy`: `str`
-- `Source`: [Source](./literals.md#source)
+- `Source`: [SourceType](./literals.md#sourcetype)
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResourceArn`: `str`
@@ -369,11 +369,11 @@ Optional fields:
 - `CreatedBy`: `str`
 - `DatasetName`: `str`
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`: [EncryptionMode](./literals.md#encryptionmode)
-- `Type`: [JobType](./literals.md#jobtype)
+- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
+- `Type`: [JobTypeType](./literals.md#jobtypetype)
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `datetime`
-- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
+- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
@@ -404,8 +404,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `ExecutionTime`: `int`
 - `RunId`: `str`
-- `State`: [JobRunState](./literals.md#jobrunstate)
-- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
+- `State`: [JobRunStateType](./literals.md#jobrunstatetype)
+- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `LogGroupName`: `str`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `RecipeReference`:
@@ -436,7 +436,7 @@ Optional fields:
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 - `RoleArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `SessionStatus`: [SessionStatus](./literals.md#sessionstatus)
+- `SessionStatus`: [SessionStatusType](./literals.md#sessionstatustype)
 - `OpenedBy`: `str`
 - `OpenDate`: `datetime`
 
@@ -511,8 +511,8 @@ Required fields:
 Optional fields:
 
 - `OrderedBy`: `Literal['LAST_MODIFIED_DATE']` (see
-  [OrderedBy](./literals.md#orderedby))
-- `Order`: [Order](./literals.md#order)
+  [OrderedByType](./literals.md#orderedbytype))
+- `Order`: [OrderType](./literals.md#ordertype)
 
 ## FilterExpressionTypeDef
 
@@ -566,8 +566,8 @@ Optional fields:
 - `ExecutionTime`: `int`
 - `JobName`: `str`
 - `RunId`: `str`
-- `State`: [JobRunState](./literals.md#jobrunstate)
-- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
+- `State`: [JobRunStateType](./literals.md#jobrunstatetype)
+- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `LogGroupName`: `str`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `RecipeReference`:
@@ -584,7 +584,7 @@ from mypy_boto3_databrew.type_defs import JobSampleTypeDef
 
 Optional fields:
 
-- `Mode`: [SampleMode](./literals.md#samplemode)
+- `Mode`: [SampleModeType](./literals.md#samplemodetype)
 - `Size`: `int`
 
 ## JobTypeDef
@@ -604,11 +604,11 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `DatasetName`: `str`
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`: [EncryptionMode](./literals.md#encryptionmode)
-- `Type`: [JobType](./literals.md#jobtype)
+- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
+- `Type`: [JobTypeType](./literals.md#jobtypetype)
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `datetime`
-- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
+- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
@@ -757,8 +757,9 @@ from mypy_boto3_databrew.type_defs import OutputTypeDef
 
 Required fields:
 
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
-- `Format`: [OutputFormat](./literals.md#outputformat)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
+- `Format`: [OutputFormatType](./literals.md#outputformattype)
 - `PartitionColumns`: `List`\[`str`\]
 - `Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `Overwrite`: `bool`
@@ -945,7 +946,7 @@ from mypy_boto3_databrew.type_defs import SampleTypeDef
 
 Required fields:
 
-- `Type`: [SampleType](./literals.md#sampletype)
+- `Type`: [SampleTypeType](./literals.md#sampletypetype)
 
 Optional fields:
 

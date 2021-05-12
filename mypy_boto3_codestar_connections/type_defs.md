@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStarconnections](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
 [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
@@ -31,9 +31,10 @@ Optional fields:
 
 - `ConnectionName`: `str`
 - `ConnectionArn`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
 - `OwnerAccountId`: `str`
-- `ConnectionStatus`: [ConnectionStatus](./literals.md#connectionstatus)
+- `ConnectionStatus`:
+  [ConnectionStatusType](./literals.md#connectionstatustype)
 - `HostArn`: `str`
 
 ## CreateConnectionOutputTypeDef
@@ -84,7 +85,7 @@ Required fields:
 
 - `Name`: `str`
 - `Status`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
@@ -101,7 +102,7 @@ Optional fields:
 
 - `Name`: `str`
 - `HostArn`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
@@ -116,7 +117,8 @@ from mypy_boto3_codestar_connections.type_defs import ListConnectionsOutputTypeD
 
 Required fields:
 
-- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `Connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

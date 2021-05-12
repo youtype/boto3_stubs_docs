@@ -3,7 +3,7 @@
 > [Index](..) > CloudHSMV2
 
 Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
 [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
@@ -30,38 +30,38 @@ Can be used directly:
 from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
 ```
 
-CloudHSMV2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [copy_backup_to_region](./client.md#copy-backup-to-region)
-- [create_cluster](./client.md#create-cluster)
-- [create_hsm](./client.md#create-hsm)
-- [delete_backup](./client.md#delete-backup)
-- [delete_cluster](./client.md#delete-cluster)
-- [delete_hsm](./client.md#delete-hsm)
-- [describe_backups](./client.md#describe-backups)
-- [describe_clusters](./client.md#describe-clusters)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [initialize_cluster](./client.md#initialize-cluster)
-- [list_tags](./client.md#list-tags)
-- [modify_backup_attributes](./client.md#modify-backup-attributes)
-- [modify_cluster](./client.md#modify-cluster)
-- [restore_backup](./client.md#restore-backup)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [copy_backup_to_region](./client.md#copy_backup_to_region)
+- [create_cluster](./client.md#create_cluster)
+- [create_hsm](./client.md#create_hsm)
+- [delete_backup](./client.md#delete_backup)
+- [delete_cluster](./client.md#delete_cluster)
+- [delete_hsm](./client.md#delete_hsm)
+- [describe_backups](./client.md#describe_backups)
+- [describe_clusters](./client.md#describe_clusters)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [initialize_cluster](./client.md#initialize_cluster)
+- [list_tags](./client.md#list_tags)
+- [modify_backup_attributes](./client.md#modify_backup_attributes)
+- [modify_cluster](./client.md#modify_cluster)
+- [restore_backup](./client.md#restore_backup)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CloudHsmAccessDeniedException](./client.md#cloudhsmaccessdeniedexception)
-- [CloudHsmInternalFailureException](./client.md#cloudhsminternalfailureexception)
-- [CloudHsmInvalidRequestException](./client.md#cloudhsminvalidrequestexception)
-- [CloudHsmResourceNotFoundException](./client.md#cloudhsmresourcenotfoundexception)
-- [CloudHsmServiceException](./client.md#cloudhsmserviceexception)
-- [CloudHsmTagException](./client.md#cloudhsmtagexception)
+CloudHSMV2Client [exceptions](./client.md#exceptions)
+
+- ClientError
+- CloudHsmAccessDeniedException
+- CloudHsmInternalFailureException
+- CloudHsmInvalidRequestException
+- CloudHsmResourceNotFoundException
+- CloudHsmServiceException
+- CloudHsmTagException
 
 ## Paginators
 
@@ -85,16 +85,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsmv2.literals import BackupPolicy, ...
+from mypy_boto3_cloudhsmv2.literals import BackupPolicyType, ...
 ```
 
-- [BackupPolicy](./literals.md#backuppolicy)
-- [BackupRetentionType](./literals.md#backupretentiontype)
-- [BackupState](./literals.md#backupstate)
-- [ClusterState](./literals.md#clusterstate)
+- [BackupPolicyType](./literals.md#backuppolicytype)
+- [BackupRetentionTypeType](./literals.md#backupretentiontypetype)
+- [BackupStateType](./literals.md#backupstatetype)
+- [ClusterStateType](./literals.md#clusterstatetype)
 - [DescribeBackupsPaginatorName](./literals.md#describebackupspaginatorname)
 - [DescribeClustersPaginatorName](./literals.md#describeclusterspaginatorname)
-- [HsmState](./literals.md#hsmstate)
+- [HsmStateType](./literals.md#hsmstatetype)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
 
 ## Typed dictionaries

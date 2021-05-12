@@ -3,7 +3,7 @@
 > [Index](..) > [Inspector](.) > InspectorClient
 
 Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector)
 type annotations stubs module
 [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
@@ -66,7 +66,7 @@ def get_inspector_client() -> InspectorClient:
 ```
 
 Boto3 documentation:
-[Inspector.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
+[Inspector.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client)
 
 ## Exceptions
 
@@ -103,7 +103,7 @@ Type annotations for `boto3.client("inspector").add_attributes_to_findings`
 method.
 
 Boto3 documentation:
-[Inspector.Client.add_attributes_to_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
+[Inspector.Client.add_attributes_to_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Returns
 Type annotations for `boto3.client("inspector").can_paginate` method.
 
 Boto3 documentation:
-[Inspector.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate)
+[Inspector.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.can_paginate)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("inspector").create_assessment_target`
 method.
 
 Boto3 documentation:
-[Inspector.Client.create_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
+[Inspector.Client.create_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.create_assessment_target)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("inspector").create_assessment_template`
 method.
 
 Boto3 documentation:
-[Inspector.Client.create_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
+[Inspector.Client.create_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.create_assessment_template)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("inspector").create_exclusions_preview`
 method.
 
 Boto3 documentation:
-[Inspector.Client.create_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
+[Inspector.Client.create_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("inspector").create_resource_group` method.
 
 Boto3 documentation:
-[Inspector.Client.create_resource_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
+[Inspector.Client.create_resource_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.create_resource_group)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("inspector").delete_assessment_run` method.
 
 Boto3 documentation:
-[Inspector.Client.delete_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
+[Inspector.Client.delete_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("inspector").delete_assessment_target`
 method.
 
 Boto3 documentation:
-[Inspector.Client.delete_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
+[Inspector.Client.delete_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("inspector").delete_assessment_template`
 method.
 
 Boto3 documentation:
-[Inspector.Client.delete_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
+[Inspector.Client.delete_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Type annotations for `boto3.client("inspector").describe_assessment_runs`
 method.
 
 Boto3 documentation:
-[Inspector.Client.describe_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
+[Inspector.Client.describe_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("inspector").describe_assessment_targets`
 method.
 
 Boto3 documentation:
-[Inspector.Client.describe_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
+[Inspector.Client.describe_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("inspector").describe_assessment_templates`
 method.
 
 Boto3 documentation:
-[Inspector.Client.describe_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
+[Inspector.Client.describe_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Type annotations for
 `boto3.client("inspector").describe_cross_account_access_role` method.
 
 Boto3 documentation:
-[Inspector.Client.describe_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
+[Inspector.Client.describe_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
 
 Returns
 [DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef).
@@ -290,12 +290,12 @@ Returns
 Type annotations for `boto3.client("inspector").describe_exclusions` method.
 
 Boto3 documentation:
-[Inspector.Client.describe_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
+[Inspector.Client.describe_exclusions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_exclusions)
 
 Arguments:
 
 - `exclusionArns`: `List`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
+- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
 [DescribeExclusionsResponseTypeDef](./type_defs.md#describeexclusionsresponsetypedef).
@@ -305,12 +305,12 @@ Returns
 Type annotations for `boto3.client("inspector").describe_findings` method.
 
 Boto3 documentation:
-[Inspector.Client.describe_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
+[Inspector.Client.describe_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_findings)
 
 Arguments:
 
 - `findingArns`: `List`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
+- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
 [DescribeFindingsResponseTypeDef](./type_defs.md#describefindingsresponsetypedef).
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("inspector").describe_resource_groups`
 method.
 
 Boto3 documentation:
-[Inspector.Client.describe_resource_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
+[Inspector.Client.describe_resource_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
 
 Arguments:
 
@@ -336,12 +336,12 @@ Type annotations for `boto3.client("inspector").describe_rules_packages`
 method.
 
 Boto3 documentation:
-[Inspector.Client.describe_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
+[Inspector.Client.describe_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
 
 Arguments:
 
 - `rulesPackageArns`: `List`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
+- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
 [DescribeRulesPackagesResponseTypeDef](./type_defs.md#describerulespackagesresponsetypedef).
@@ -351,7 +351,7 @@ Returns
 Type annotations for `boto3.client("inspector").generate_presigned_url` method.
 
 Boto3 documentation:
-[Inspector.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url)
+[Inspector.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.generate_presigned_url)
 
 Arguments:
 
@@ -367,14 +367,14 @@ Returns `str`.
 Type annotations for `boto3.client("inspector").get_assessment_report` method.
 
 Boto3 documentation:
-[Inspector.Client.get_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
+[Inspector.Client.get_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.get_assessment_report)
 
 Arguments:
 
 - `assessmentRunArn`: `str` *(required)*
-- `reportFileFormat`: [ReportFileFormat](./literals.md#reportfileformat)
-  *(required)*
-- `reportType`: [ReportType](./literals.md#reporttype) *(required)*
+- `reportFileFormat`:
+  [ReportFileFormatType](./literals.md#reportfileformattype) *(required)*
+- `reportType`: [ReportTypeType](./literals.md#reporttypetype) *(required)*
 
 Returns
 [GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef).
@@ -384,7 +384,7 @@ Returns
 Type annotations for `boto3.client("inspector").get_exclusions_preview` method.
 
 Boto3 documentation:
-[Inspector.Client.get_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
+[Inspector.Client.get_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Arguments:
 - `previewToken`: `str` *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
+- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
 [GetExclusionsPreviewResponseTypeDef](./type_defs.md#getexclusionspreviewresponsetypedef).
@@ -402,7 +402,7 @@ Returns
 Type annotations for `boto3.client("inspector").get_telemetry_metadata` method.
 
 Boto3 documentation:
-[Inspector.Client.get_telemetry_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
+[Inspector.Client.get_telemetry_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
 
 Arguments:
 
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("inspector").list_assessment_run_agents`
 method.
 
 Boto3 documentation:
-[Inspector.Client.list_assessment_run_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
+[Inspector.Client.list_assessment_run_agents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Returns
 Type annotations for `boto3.client("inspector").list_assessment_runs` method.
 
 Boto3 documentation:
-[Inspector.Client.list_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
+[Inspector.Client.list_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("inspector").list_assessment_targets`
 method.
 
 Boto3 documentation:
-[Inspector.Client.list_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
+[Inspector.Client.list_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
 
 Arguments:
 
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("inspector").list_assessment_templates`
 method.
 
 Boto3 documentation:
-[Inspector.Client.list_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
+[Inspector.Client.list_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Type annotations for `boto3.client("inspector").list_event_subscriptions`
 method.
 
 Boto3 documentation:
-[Inspector.Client.list_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
+[Inspector.Client.list_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Returns
 Type annotations for `boto3.client("inspector").list_exclusions` method.
 
 Boto3 documentation:
-[Inspector.Client.list_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
+[Inspector.Client.list_exclusions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_exclusions)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Returns
 Type annotations for `boto3.client("inspector").list_findings` method.
 
 Boto3 documentation:
-[Inspector.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
+[Inspector.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_findings)
 
 Arguments:
 
@@ -539,7 +539,7 @@ Returns
 Type annotations for `boto3.client("inspector").list_rules_packages` method.
 
 Boto3 documentation:
-[Inspector.Client.list_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
+[Inspector.Client.list_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_rules_packages)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns
 Type annotations for `boto3.client("inspector").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Inspector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
+[Inspector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -568,7 +568,7 @@ Returns
 Type annotations for `boto3.client("inspector").preview_agents` method.
 
 Boto3 documentation:
-[Inspector.Client.preview_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
+[Inspector.Client.preview_agents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.preview_agents)
 
 Arguments:
 
@@ -585,7 +585,7 @@ Type annotations for
 `boto3.client("inspector").register_cross_account_access_role` method.
 
 Boto3 documentation:
-[Inspector.Client.register_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
+[Inspector.Client.register_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
 
 Arguments:
 
@@ -597,7 +597,7 @@ Type annotations for
 `boto3.client("inspector").remove_attributes_from_findings` method.
 
 Boto3 documentation:
-[Inspector.Client.remove_attributes_from_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
+[Inspector.Client.remove_attributes_from_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
 
 Arguments:
 
@@ -612,7 +612,7 @@ Returns
 Type annotations for `boto3.client("inspector").set_tags_for_resource` method.
 
 Boto3 documentation:
-[Inspector.Client.set_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
+[Inspector.Client.set_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
 
 Arguments:
 
@@ -624,7 +624,7 @@ Arguments:
 Type annotations for `boto3.client("inspector").start_assessment_run` method.
 
 Boto3 documentation:
-[Inspector.Client.start_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
+[Inspector.Client.start_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.start_assessment_run)
 
 Arguments:
 
@@ -639,24 +639,24 @@ Returns
 Type annotations for `boto3.client("inspector").stop_assessment_run` method.
 
 Boto3 documentation:
-[Inspector.Client.stop_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
+[Inspector.Client.stop_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
 
 Arguments:
 
 - `assessmentRunArn`: `str` *(required)*
-- `stopAction`: [StopAction](./literals.md#stopaction)
+- `stopAction`: [StopActionType](./literals.md#stopactiontype)
 
 ### subscribe_to_event
 
 Type annotations for `boto3.client("inspector").subscribe_to_event` method.
 
 Boto3 documentation:
-[Inspector.Client.subscribe_to_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
+[Inspector.Client.subscribe_to_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
 
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `event`: [InspectorEvent](./literals.md#inspectorevent) *(required)*
+- `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
 - `topicArn`: `str` *(required)*
 
 ### unsubscribe_from_event
@@ -664,12 +664,12 @@ Arguments:
 Type annotations for `boto3.client("inspector").unsubscribe_from_event` method.
 
 Boto3 documentation:
-[Inspector.Client.unsubscribe_from_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
+[Inspector.Client.unsubscribe_from_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
 
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `event`: [InspectorEvent](./literals.md#inspectorevent) *(required)*
+- `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
 - `topicArn`: `str` *(required)*
 
 ### update_assessment_target
@@ -678,7 +678,7 @@ Type annotations for `boto3.client("inspector").update_assessment_target`
 method.
 
 Boto3 documentation:
-[Inspector.Client.update_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
+[Inspector.Client.update_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector.Client.update_assessment_target)
 
 Arguments:
 

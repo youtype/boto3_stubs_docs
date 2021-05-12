@@ -3,7 +3,7 @@
 > [Index](..) > [PrometheusService](.) > Paginators
 
 Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amp.html#PrometheusService)
 type annotations stubs module
 [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
@@ -24,7 +24,7 @@ def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
 ```
 
 Boto3 documentation:
-[PrometheusService.Paginator.ListWorkspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
+[PrometheusService.Paginator.ListWorkspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
 
 Arguments for `ListWorkspacesPaginator.paginate` method:
 

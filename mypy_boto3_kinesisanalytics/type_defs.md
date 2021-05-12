@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisAnalytics](.) > Typed dictionaries
 
 Auto-generated documentation for
-[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
+[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
 [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
@@ -78,7 +78,8 @@ Required fields:
 
 - `ApplicationName`: `str`
 - `ApplicationARN`: `str`
-- `ApplicationStatus`: [ApplicationStatus](./literals.md#applicationstatus)
+- `ApplicationStatus`:
+  [ApplicationStatusType](./literals.md#applicationstatustype)
 - `ApplicationVersionId`: `int`
 
 Optional fields:
@@ -106,7 +107,8 @@ Required fields:
 
 - `ApplicationName`: `str`
 - `ApplicationARN`: `str`
-- `ApplicationStatus`: [ApplicationStatus](./literals.md#applicationstatus)
+- `ApplicationStatus`:
+  [ApplicationStatusType](./literals.md#applicationstatustype)
 
 ## ApplicationUpdateTypeDef
 
@@ -208,7 +210,8 @@ from mypy_boto3_kinesisanalytics.type_defs import DestinationSchemaTypeDef
 
 Required fields:
 
-- `RecordFormatType`: [RecordFormatType](./literals.md#recordformattype)
+- `RecordFormatType`:
+  [RecordFormatTypeType](./literals.md#recordformattypetype)
 
 ## DiscoverInputSchemaResponseTypeDef
 
@@ -352,7 +355,8 @@ from mypy_boto3_kinesisanalytics.type_defs import InputSchemaUpdateTypeDef
 
 Optional fields:
 
-- `RecordFormatUpdate`: [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
+- `RecordFormatUpdate`:
+  [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
 - `RecordEncodingUpdate`: `str`
 - `RecordColumnUpdates`:
   `List`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
@@ -366,7 +370,7 @@ from mypy_boto3_kinesisanalytics.type_defs import InputStartingPositionConfigura
 Optional fields:
 
 - `InputStartingPosition`:
-  [InputStartingPosition](./literals.md#inputstartingposition)
+  [InputStartingPositionType](./literals.md#inputstartingpositiontype)
 
 ## InputTypeDef
 
@@ -713,7 +717,8 @@ from mypy_boto3_kinesisanalytics.type_defs import RecordFormatTypeDef
 
 Required fields:
 
-- `RecordFormatType`: [RecordFormatType](./literals.md#recordformattype)
+- `RecordFormatType`:
+  [RecordFormatTypeType](./literals.md#recordformattypetype)
 
 Optional fields:
 

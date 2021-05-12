@@ -3,7 +3,7 @@
 > [Index](..) > [EMR](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr.html#EMR)
 type annotations stubs module
 [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
@@ -205,7 +205,7 @@ from mypy_boto3_emr.type_defs import AutoScalingPolicyStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [AutoScalingPolicyStateChangeReasonCode](./literals.md#autoscalingpolicystatechangereasoncode)
+  [AutoScalingPolicyStateChangeReasonCodeType](./literals.md#autoscalingpolicystatechangereasoncodetype)
 - `Message`: `str`
 
 ## AutoScalingPolicyStatusTypeDef
@@ -216,7 +216,8 @@ from mypy_boto3_emr.type_defs import AutoScalingPolicyStatusTypeDef
 
 Optional fields:
 
-- `State`: [AutoScalingPolicyState](./literals.md#autoscalingpolicystate)
+- `State`:
+  [AutoScalingPolicyStateType](./literals.md#autoscalingpolicystatetype)
 - `StateChangeReason`:
   [AutoScalingPolicyStateChangeReasonTypeDef](./type_defs.md#autoscalingpolicystatechangereasontypedef)
 
@@ -290,7 +291,8 @@ from mypy_boto3_emr.type_defs import CancelStepsInfoTypeDef
 Optional fields:
 
 - `StepId`: `str`
-- `Status`: [CancelStepsRequestStatus](./literals.md#cancelstepsrequeststatus)
+- `Status`:
+  [CancelStepsRequestStatusType](./literals.md#cancelstepsrequeststatustype)
 - `Reason`: `str`
 
 ## CancelStepsOutputTypeDef
@@ -314,7 +316,8 @@ from mypy_boto3_emr.type_defs import CloudWatchAlarmDefinitionTypeDef
 
 Required fields:
 
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `MetricName`: `str`
 - `Period`: `int`
 - `Threshold`: `float`
@@ -323,8 +326,8 @@ Optional fields:
 
 - `EvaluationPeriods`: `int`
 - `Namespace`: `str`
-- `Statistic`: [Statistic](./literals.md#statistic)
-- `Unit`: [Unit](./literals.md#unit)
+- `Statistic`: [StatisticType](./literals.md#statistictype)
+- `Unit`: [UnitType](./literals.md#unittype)
 - `Dimensions`:
   `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
@@ -337,7 +340,7 @@ from mypy_boto3_emr.type_defs import ClusterStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [ClusterStateChangeReasonCode](./literals.md#clusterstatechangereasoncode)
+  [ClusterStateChangeReasonCodeType](./literals.md#clusterstatechangereasoncodetype)
 - `Message`: `str`
 
 ## ClusterStatusTypeDef
@@ -348,7 +351,7 @@ from mypy_boto3_emr.type_defs import ClusterStatusTypeDef
 
 Optional fields:
 
-- `State`: [ClusterState](./literals.md#clusterstate)
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
 - `StateChangeReason`:
   [ClusterStateChangeReasonTypeDef](./type_defs.md#clusterstatechangereasontypedef)
 - `Timeline`: [ClusterTimelineTypeDef](./type_defs.md#clustertimelinetypedef)
@@ -394,7 +397,7 @@ Optional fields:
 - `Ec2InstanceAttributes`:
   [Ec2InstanceAttributesTypeDef](./type_defs.md#ec2instanceattributestypedef)
 - `InstanceCollectionType`:
-  [InstanceCollectionType](./literals.md#instancecollectiontype)
+  [InstanceCollectionTypeType](./literals.md#instancecollectiontypetype)
 - `LogUri`: `str`
 - `LogEncryptionKmsKeyId`: `str`
 - `RequestedAmiVersion`: `str`
@@ -413,10 +416,12 @@ Optional fields:
   `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
-- `ScaleDownBehavior`: [ScaleDownBehavior](./literals.md#scaledownbehavior)
+- `ScaleDownBehavior`:
+  [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
 - `CustomAmiId`: `str`
 - `EbsRootVolumeSize`: `int`
-- `RepoUpgradeOnBoot`: [RepoUpgradeOnBoot](./literals.md#repoupgradeonboot)
+- `RepoUpgradeOnBoot`:
+  [RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype)
 - `KerberosAttributes`:
   [KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef)
 - `ClusterArn`: `str`
@@ -445,7 +450,8 @@ from mypy_boto3_emr.type_defs import ComputeLimitsTypeDef
 
 Required fields:
 
-- `UnitType`: [ComputeLimitsUnitType](./literals.md#computelimitsunittype)
+- `UnitType`:
+  [ComputeLimitsUnitTypeType](./literals.md#computelimitsunittypetype)
 - `MinimumCapacityUnits`: `int`
 - `MaximumCapacityUnits`: `int`
 
@@ -652,7 +658,7 @@ Required fields:
 Optional fields:
 
 - `Type`: `Literal['EMR']` (see
-  [ExecutionEngineType](./literals.md#executionenginetype))
+  [ExecutionEngineTypeType](./literals.md#executionenginetypetype))
 - `MasterInstanceSecurityGroupId`: `str`
 
 ## FailureDetailsTypeDef
@@ -745,7 +751,8 @@ from mypy_boto3_emr.type_defs import InstanceFleetConfigTypeDef
 
 Required fields:
 
-- `InstanceFleetType`: [InstanceFleetType](./literals.md#instancefleettype)
+- `InstanceFleetType`:
+  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
 
 Optional fields:
 
@@ -794,7 +801,7 @@ from mypy_boto3_emr.type_defs import InstanceFleetStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [InstanceFleetStateChangeReasonCode](./literals.md#instancefleetstatechangereasoncode)
+  [InstanceFleetStateChangeReasonCodeType](./literals.md#instancefleetstatechangereasoncodetype)
 - `Message`: `str`
 
 ## InstanceFleetStatusTypeDef
@@ -805,7 +812,7 @@ from mypy_boto3_emr.type_defs import InstanceFleetStatusTypeDef
 
 Optional fields:
 
-- `State`: [InstanceFleetState](./literals.md#instancefleetstate)
+- `State`: [InstanceFleetStateType](./literals.md#instancefleetstatetype)
 - `StateChangeReason`:
   [InstanceFleetStateChangeReasonTypeDef](./type_defs.md#instancefleetstatechangereasontypedef)
 - `Timeline`:
@@ -835,7 +842,8 @@ Optional fields:
 - `Name`: `str`
 - `Status`:
   [InstanceFleetStatusTypeDef](./type_defs.md#instancefleetstatustypedef)
-- `InstanceFleetType`: [InstanceFleetType](./literals.md#instancefleettype)
+- `InstanceFleetType`:
+  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
 - `TargetOnDemandCapacity`: `int`
 - `TargetSpotCapacity`: `int`
 - `ProvisionedOnDemandCapacity`: `int`
@@ -853,14 +861,14 @@ from mypy_boto3_emr.type_defs import InstanceGroupConfigTypeDef
 
 Required fields:
 
-- `InstanceRole`: [InstanceRoleType](./literals.md#instanceroletype)
+- `InstanceRole`: [InstanceRoleTypeType](./literals.md#instanceroletypetype)
 - `InstanceType`: `str`
 - `InstanceCount`: `int`
 
 Optional fields:
 
 - `Name`: `str`
-- `Market`: [MarketType](./literals.md#markettype)
+- `Market`: [MarketTypeType](./literals.md#markettypetype)
 - `BidPrice`: `str`
 - `Configurations`:
   `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
@@ -877,12 +885,12 @@ from mypy_boto3_emr.type_defs import InstanceGroupDetailTypeDef
 
 Required fields:
 
-- `Market`: [MarketType](./literals.md#markettype)
-- `InstanceRole`: [InstanceRoleType](./literals.md#instanceroletype)
+- `Market`: [MarketTypeType](./literals.md#markettypetype)
+- `InstanceRole`: [InstanceRoleTypeType](./literals.md#instanceroletypetype)
 - `InstanceType`: `str`
 - `InstanceRequestCount`: `int`
 - `InstanceRunningCount`: `int`
-- `State`: [InstanceGroupState](./literals.md#instancegroupstate)
+- `State`: [InstanceGroupStateType](./literals.md#instancegroupstatetype)
 - `CreationDateTime`: `datetime`
 
 Optional fields:
@@ -922,7 +930,7 @@ from mypy_boto3_emr.type_defs import InstanceGroupStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [InstanceGroupStateChangeReasonCode](./literals.md#instancegroupstatechangereasoncode)
+  [InstanceGroupStateChangeReasonCodeType](./literals.md#instancegroupstatechangereasoncodetype)
 - `Message`: `str`
 
 ## InstanceGroupStatusTypeDef
@@ -933,7 +941,7 @@ from mypy_boto3_emr.type_defs import InstanceGroupStatusTypeDef
 
 Optional fields:
 
-- `State`: [InstanceGroupState](./literals.md#instancegroupstate)
+- `State`: [InstanceGroupStateType](./literals.md#instancegroupstatetype)
 - `StateChangeReason`:
   [InstanceGroupStateChangeReasonTypeDef](./type_defs.md#instancegroupstatechangereasontypedef)
 - `Timeline`:
@@ -961,8 +969,9 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Market`: [MarketType](./literals.md#markettype)
-- `InstanceGroupType`: [InstanceGroupType](./literals.md#instancegrouptype)
+- `Market`: [MarketTypeType](./literals.md#markettypetype)
+- `InstanceGroupType`:
+  [InstanceGroupTypeType](./literals.md#instancegrouptypetype)
 - `BidPrice`: `str`
 - `InstanceType`: `str`
 - `RequestedInstanceCount`: `int`
@@ -1003,7 +1012,7 @@ from mypy_boto3_emr.type_defs import InstanceStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [InstanceStateChangeReasonCode](./literals.md#instancestatechangereasoncode)
+  [InstanceStateChangeReasonCodeType](./literals.md#instancestatechangereasoncodetype)
 - `Message`: `str`
 
 ## InstanceStatusTypeDef
@@ -1014,7 +1023,7 @@ from mypy_boto3_emr.type_defs import InstanceStatusTypeDef
 
 Optional fields:
 
-- `State`: [InstanceState](./literals.md#instancestate)
+- `State`: [InstanceStateType](./literals.md#instancestatetype)
 - `StateChangeReason`:
   [InstanceStateChangeReasonTypeDef](./type_defs.md#instancestatechangereasontypedef)
 - `Timeline`: [InstanceTimelineTypeDef](./type_defs.md#instancetimelinetypedef)
@@ -1068,7 +1077,7 @@ Optional fields:
 - `Status`: [InstanceStatusTypeDef](./type_defs.md#instancestatustypedef)
 - `InstanceGroupId`: `str`
 - `InstanceFleetId`: `str`
-- `Market`: [MarketType](./literals.md#markettype)
+- `Market`: [MarketTypeType](./literals.md#markettypetype)
 - `InstanceType`: `str`
 - `EbsVolumes`: `List`\[[EbsVolumeTypeDef](./type_defs.md#ebsvolumetypedef)\]
 
@@ -1118,7 +1127,8 @@ Optional fields:
 - `JobFlowRole`: `str`
 - `ServiceRole`: `str`
 - `AutoScalingRole`: `str`
-- `ScaleDownBehavior`: [ScaleDownBehavior](./literals.md#scaledownbehavior)
+- `ScaleDownBehavior`:
+  [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
 
 ## JobFlowExecutionStatusDetailTypeDef
 
@@ -1128,7 +1138,7 @@ from mypy_boto3_emr.type_defs import JobFlowExecutionStatusDetailTypeDef
 
 Required fields:
 
-- `State`: [JobFlowExecutionState](./literals.md#jobflowexecutionstate)
+- `State`: [JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)
 - `CreationDateTime`: `datetime`
 
 Optional fields:
@@ -1401,7 +1411,8 @@ Optional fields:
 - `NotebookExecutionId`: `str`
 - `EditorId`: `str`
 - `NotebookExecutionName`: `str`
-- `Status`: [NotebookExecutionStatus](./literals.md#notebookexecutionstatus)
+- `Status`:
+  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
@@ -1419,7 +1430,8 @@ Optional fields:
   [ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef)
 - `NotebookExecutionName`: `str`
 - `NotebookParams`: `str`
-- `Status`: [NotebookExecutionStatus](./literals.md#notebookexecutionstatus)
+- `Status`:
+  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Arn`: `str`
@@ -1437,9 +1449,9 @@ from mypy_boto3_emr.type_defs import OnDemandCapacityReservationOptionsTypeDef
 Optional fields:
 
 - `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
-  [OnDemandCapacityReservationUsageStrategy](./literals.md#ondemandcapacityreservationusagestrategy))
+  [OnDemandCapacityReservationUsageStrategyType](./literals.md#ondemandcapacityreservationusagestrategytype))
 - `CapacityReservationPreference`:
-  [OnDemandCapacityReservationPreference](./literals.md#ondemandcapacityreservationpreference)
+  [OnDemandCapacityReservationPreferenceType](./literals.md#ondemandcapacityreservationpreferencetype)
 - `CapacityReservationResourceGroupArn`: `str`
 
 ## OnDemandProvisioningSpecificationTypeDef
@@ -1451,7 +1463,7 @@ from mypy_boto3_emr.type_defs import OnDemandProvisioningSpecificationTypeDef
 Required fields:
 
 - `AllocationStrategy`: `Literal['lowest-price']` (see
-  [OnDemandProvisioningAllocationStrategy](./literals.md#ondemandprovisioningallocationstrategy))
+  [OnDemandProvisioningAllocationStrategyType](./literals.md#ondemandprovisioningallocationstrategytype))
 
 Optional fields:
 
@@ -1478,12 +1490,12 @@ from mypy_boto3_emr.type_defs import PlacementGroupConfigTypeDef
 
 Required fields:
 
-- `InstanceRole`: [InstanceRoleType](./literals.md#instanceroletype)
+- `InstanceRole`: [InstanceRoleTypeType](./literals.md#instanceroletypetype)
 
 Optional fields:
 
 - `PlacementStrategy`:
-  [PlacementGroupStrategy](./literals.md#placementgroupstrategy)
+  [PlacementGroupStrategyType](./literals.md#placementgroupstrategytype)
 
 ## PlacementTypeTypeDef
 
@@ -1566,7 +1578,7 @@ Required fields:
 
 Optional fields:
 
-- `Market`: [MarketType](./literals.md#markettype)
+- `Market`: [MarketTypeType](./literals.md#markettypetype)
 
 ## ScalingConstraintsTypeDef
 
@@ -1642,7 +1654,7 @@ Optional fields:
 - `StudioId`: `str`
 - `IdentityId`: `str`
 - `IdentityName`: `str`
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `SessionPolicyArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -1658,7 +1670,7 @@ Optional fields:
 - `StudioId`: `str`
 - `IdentityId`: `str`
 - `IdentityName`: `str`
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `SessionPolicyArn`: `str`
 - `CreationTime`: `datetime`
 
@@ -1686,7 +1698,7 @@ Required fields:
 
 Optional fields:
 
-- `AdjustmentType`: [AdjustmentType](./literals.md#adjustmenttype)
+- `AdjustmentType`: [AdjustmentTypeType](./literals.md#adjustmenttypetype)
 - `CoolDown`: `int`
 
 ## SpotProvisioningSpecificationTypeDef
@@ -1699,13 +1711,13 @@ Required fields:
 
 - `TimeoutDurationMinutes`: `int`
 - `TimeoutAction`:
-  [SpotProvisioningTimeoutAction](./literals.md#spotprovisioningtimeoutaction)
+  [SpotProvisioningTimeoutActionType](./literals.md#spotprovisioningtimeoutactiontype)
 
 Optional fields:
 
 - `BlockDurationMinutes`: `int`
 - `AllocationStrategy`: `Literal['capacity-optimized']` (see
-  [SpotProvisioningAllocationStrategy](./literals.md#spotprovisioningallocationstrategy))
+  [SpotProvisioningAllocationStrategyType](./literals.md#spotprovisioningallocationstrategytype))
 
 ## StartNotebookExecutionOutputTypeDef
 
@@ -1733,7 +1745,7 @@ Required fields:
 
 Optional fields:
 
-- `ActionOnFailure`: [ActionOnFailure](./literals.md#actiononfailure)
+- `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 
 ## StepDetailTypeDef
 
@@ -1755,7 +1767,7 @@ from mypy_boto3_emr.type_defs import StepExecutionStatusDetailTypeDef
 
 Required fields:
 
-- `State`: [StepExecutionState](./literals.md#stepexecutionstate)
+- `State`: [StepExecutionStateType](./literals.md#stepexecutionstatetype)
 - `CreationDateTime`: `datetime`
 
 Optional fields:
@@ -1773,7 +1785,7 @@ from mypy_boto3_emr.type_defs import StepStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`: `Literal['NONE']` (see
-  [StepStateChangeReasonCode](./literals.md#stepstatechangereasoncode))
+  [StepStateChangeReasonCodeType](./literals.md#stepstatechangereasoncodetype))
 - `Message`: `str`
 
 ## StepStatusTypeDef
@@ -1784,10 +1796,11 @@ from mypy_boto3_emr.type_defs import StepStatusTypeDef
 
 Optional fields:
 
-- `State`: [StepState](./literals.md#stepstate)
+- `State`: [StepStateType](./literals.md#stepstatetype)
 - `StateChangeReason`:
   [StepStateChangeReasonTypeDef](./type_defs.md#stepstatechangereasontypedef)
-- `FailureDetails`: [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
+- `FailureDetails`:
+  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
 - `Timeline`: [StepTimelineTypeDef](./type_defs.md#steptimelinetypedef)
 
 ## StepSummaryTypeDef
@@ -1801,7 +1814,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Config`: [HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef)
-- `ActionOnFailure`: [ActionOnFailure](./literals.md#actiononfailure)
+- `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 - `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
 
 ## StepTimelineTypeDef
@@ -1827,7 +1840,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Config`: [HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef)
-- `ActionOnFailure`: [ActionOnFailure](./literals.md#actiononfailure)
+- `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 - `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
 
 ## StudioSummaryTypeDef
@@ -1857,7 +1870,7 @@ Optional fields:
 - `StudioArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `AuthMode`: [AuthMode](./literals.md#authmode)
+- `AuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `VpcId`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `ServiceRole`: `str`

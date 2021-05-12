@@ -3,7 +3,7 @@
 > [Index](..) > [WorkSpaces](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
 [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
@@ -81,9 +81,9 @@ from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef
 Optional fields:
 
 - `ModificationState`:
-  [DedicatedTenancyModificationStateEnum](./literals.md#dedicatedtenancymodificationstateenum)
+  [DedicatedTenancyModificationStateEnumType](./literals.md#dedicatedtenancymodificationstateenumtype)
 - `DedicatedTenancySupport`:
-  [DedicatedTenancySupportResultEnum](./literals.md#dedicatedtenancysupportresultenum)
+  [DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype)
 - `DedicatedTenancyManagementCidrRange`: `str`
 - `StartTime`: `datetime`
 - `ErrorCode`: `str`
@@ -119,7 +119,7 @@ from mypy_boto3_workspaces.type_defs import ClientPropertiesTypeDef
 
 Optional fields:
 
-- `ReconnectEnabled`: [ReconnectEnum](./literals.md#reconnectenum)
+- `ReconnectEnabled`: [ReconnectEnumType](./literals.md#reconnectenumtype)
 
 ## ComputeTypeTypeDef
 
@@ -129,7 +129,7 @@ from mypy_boto3_workspaces.type_defs import ComputeTypeTypeDef
 
 Optional fields:
 
-- `Name`: [Compute](./literals.md#compute)
+- `Name`: [ComputeType](./literals.md#computetype)
 
 ## ConnectionAliasAssociationTypeDef
 
@@ -139,7 +139,8 @@ from mypy_boto3_workspaces.type_defs import ConnectionAliasAssociationTypeDef
 
 Optional fields:
 
-- `AssociationStatus`: [AssociationStatus](./literals.md#associationstatus)
+- `AssociationStatus`:
+  [AssociationStatusType](./literals.md#associationstatustype)
 - `AssociatedAccountId`: `str`
 - `ResourceId`: `str`
 - `ConnectionIdentifier`: `str`
@@ -165,7 +166,7 @@ Optional fields:
 
 - `ConnectionString`: `str`
 - `AliasId`: `str`
-- `State`: [ConnectionAliasState](./literals.md#connectionaliasstate)
+- `State`: [ConnectionAliasStateType](./literals.md#connectionaliasstatetype)
 - `OwnerAccountId`: `str`
 - `Associations`:
   `List`\[[ConnectionAliasAssociationTypeDef](./type_defs.md#connectionaliasassociationtypedef)\]
@@ -260,7 +261,7 @@ from mypy_boto3_workspaces.type_defs import DescribeAccountResultTypeDef
 Optional fields:
 
 - `DedicatedTenancySupport`:
-  [DedicatedTenancySupportResultEnum](./literals.md#dedicatedtenancysupportresultenum)
+  [DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype)
 - `DedicatedTenancyManagementCidrRange`: `str`
 
 ## DescribeClientPropertiesResultTypeDef
@@ -378,8 +379,10 @@ from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsResultType
 
 Optional fields:
 
-- `RebuildSnapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
-- `RestoreSnapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
+- `RebuildSnapshots`:
+  `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
+- `RestoreSnapshots`:
+  `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 
 ## DescribeWorkspacesConnectionStatusResultTypeDef
 
@@ -490,8 +493,9 @@ from mypy_boto3_workspaces.type_defs import ModificationStateTypeDef
 
 Optional fields:
 
-- `Resource`: [ModificationResourceEnum](./literals.md#modificationresourceenum)
-- `State`: [ModificationStateEnum](./literals.md#modificationstateenum)
+- `Resource`:
+  [ModificationResourceEnumType](./literals.md#modificationresourceenumtype)
+- `State`: [ModificationStateEnumType](./literals.md#modificationstateenumtype)
 
 ## OperatingSystemTypeDef
 
@@ -501,7 +505,7 @@ from mypy_boto3_workspaces.type_defs import OperatingSystemTypeDef
 
 Optional fields:
 
-- `Type`: [OperatingSystemType](./literals.md#operatingsystemtype)
+- `Type`: [OperatingSystemTypeType](./literals.md#operatingsystemtypetype)
 
 ## PaginatorConfigTypeDef
 
@@ -575,11 +579,11 @@ from mypy_boto3_workspaces.type_defs import SelfservicePermissionsTypeDef
 
 Optional fields:
 
-- `RestartWorkspace`: [ReconnectEnum](./literals.md#reconnectenum)
-- `IncreaseVolumeSize`: [ReconnectEnum](./literals.md#reconnectenum)
-- `ChangeComputeType`: [ReconnectEnum](./literals.md#reconnectenum)
-- `SwitchRunningMode`: [ReconnectEnum](./literals.md#reconnectenum)
-- `RebuildWorkspace`: [ReconnectEnum](./literals.md#reconnectenum)
+- `RestartWorkspace`: [ReconnectEnumType](./literals.md#reconnectenumtype)
+- `IncreaseVolumeSize`: [ReconnectEnumType](./literals.md#reconnectenumtype)
+- `ChangeComputeType`: [ReconnectEnumType](./literals.md#reconnectenumtype)
+- `SwitchRunningMode`: [ReconnectEnumType](./literals.md#reconnectenumtype)
+- `RebuildWorkspace`: [ReconnectEnumType](./literals.md#reconnectenumtype)
 
 ## SnapshotTypeDef
 
@@ -686,14 +690,20 @@ from mypy_boto3_workspaces.type_defs import WorkspaceAccessPropertiesTypeDef
 
 Optional fields:
 
-- `DeviceTypeWindows`: [AccessPropertyValue](./literals.md#accesspropertyvalue)
-- `DeviceTypeOsx`: [AccessPropertyValue](./literals.md#accesspropertyvalue)
-- `DeviceTypeWeb`: [AccessPropertyValue](./literals.md#accesspropertyvalue)
-- `DeviceTypeIos`: [AccessPropertyValue](./literals.md#accesspropertyvalue)
-- `DeviceTypeAndroid`: [AccessPropertyValue](./literals.md#accesspropertyvalue)
-- `DeviceTypeChromeOs`: [AccessPropertyValue](./literals.md#accesspropertyvalue)
+- `DeviceTypeWindows`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- `DeviceTypeOsx`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- `DeviceTypeWeb`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- `DeviceTypeIos`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- `DeviceTypeAndroid`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- `DeviceTypeChromeOs`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
 - `DeviceTypeZeroClient`:
-  [AccessPropertyValue](./literals.md#accesspropertyvalue)
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
 
 ## WorkspaceBundleTypeDef
 
@@ -723,7 +733,7 @@ from mypy_boto3_workspaces.type_defs import WorkspaceConnectionStatusTypeDef
 Optional fields:
 
 - `WorkspaceId`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `ConnectionStateCheckTimestamp`: `datetime`
 - `LastKnownUserConnectionTimestamp`: `datetime`
 
@@ -758,15 +768,17 @@ Optional fields:
 - `DnsIpAddresses`: `List`\[`str`\]
 - `CustomerUserName`: `str`
 - `IamRoleId`: `str`
-- `DirectoryType`: [WorkspaceDirectoryType](./literals.md#workspacedirectorytype)
+- `DirectoryType`:
+  [WorkspaceDirectoryTypeType](./literals.md#workspacedirectorytypetype)
 - `WorkspaceSecurityGroupId`: `str`
-- `State`: [WorkspaceDirectoryState](./literals.md#workspacedirectorystate)
+- `State`:
+  [WorkspaceDirectoryStateType](./literals.md#workspacedirectorystatetype)
 - `WorkspaceCreationProperties`:
   [DefaultWorkspaceCreationPropertiesTypeDef](./type_defs.md#defaultworkspacecreationpropertiestypedef)
 - `ipGroupIds`: `List`\[`str`\]
 - `WorkspaceAccessProperties`:
   [WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef)
-- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
 - `SelfservicePermissions`:
   [SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef)
 
@@ -783,9 +795,9 @@ Optional fields:
 - `Description`: `str`
 - `OperatingSystem`:
   [OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef)
-- `State`: [WorkspaceImageState](./literals.md#workspaceimagestate)
+- `State`: [WorkspaceImageStateType](./literals.md#workspaceimagestatetype)
 - `RequiredTenancy`:
-  [WorkspaceImageRequiredTenancy](./literals.md#workspaceimagerequiredtenancy)
+  [WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `Created`: `datetime`
@@ -799,11 +811,11 @@ from mypy_boto3_workspaces.type_defs import WorkspacePropertiesTypeDef
 
 Optional fields:
 
-- `RunningMode`: [RunningMode](./literals.md#runningmode)
+- `RunningMode`: [RunningModeType](./literals.md#runningmodetype)
 - `RunningModeAutoStopTimeoutInMinutes`: `int`
 - `RootVolumeSizeGib`: `int`
 - `UserVolumeSizeGib`: `int`
-- `ComputeTypeName`: [Compute](./literals.md#compute)
+- `ComputeTypeName`: [ComputeType](./literals.md#computetype)
 
 ## WorkspaceRequestTypeDef
 
@@ -838,7 +850,7 @@ Optional fields:
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `IpAddress`: `str`
-- `State`: [WorkspaceState](./literals.md#workspacestate)
+- `State`: [WorkspaceStateType](./literals.md#workspacestatetype)
 - `BundleId`: `str`
 - `SubnetId`: `str`
 - `ErrorMessage`: `str`

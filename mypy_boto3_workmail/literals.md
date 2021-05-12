@@ -3,14 +3,14 @@
 > [Index](..) > [WorkMail](.) > Literals
 
 Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmail.html#WorkMail)
 type annotations stubs module
 [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 - [Literals for boto3 WorkMail module](#literals-for-boto3-workmail-module)
-  - [AccessControlRuleEffect](#accesscontrolruleeffect)
-  - [EntityState](#entitystate)
-  - [FolderName](#foldername)
+  - [AccessControlRuleEffectType](#accesscontrolruleeffecttype)
+  - [EntityStateType](#entitystatetype)
+  - [FolderNameType](#foldernametype)
   - [ListAliasesPaginatorName](#listaliasespaginatorname)
   - [ListGroupMembersPaginatorName](#listgroupmemberspaginatorname)
   - [ListGroupsPaginatorName](#listgroupspaginatorname)
@@ -19,18 +19,18 @@ type annotations stubs module
   - [ListResourceDelegatesPaginatorName](#listresourcedelegatespaginatorname)
   - [ListResourcesPaginatorName](#listresourcespaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [MailboxExportJobState](#mailboxexportjobstate)
-  - [MemberType](#membertype)
-  - [MobileDeviceAccessRuleEffect](#mobiledeviceaccessruleeffect)
-  - [PermissionType](#permissiontype)
-  - [ResourceType](#resourcetype)
-  - [RetentionAction](#retentionaction)
-  - [UserRole](#userrole)
+  - [MailboxExportJobStateType](#mailboxexportjobstatetype)
+  - [MemberTypeType](#membertypetype)
+  - [MobileDeviceAccessRuleEffectType](#mobiledeviceaccessruleeffecttype)
+  - [PermissionTypeType](#permissiontypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [RetentionActionType](#retentionactiontype)
+  - [UserRoleType](#userroletype)
 
-## AccessControlRuleEffect
+## AccessControlRuleEffectType
 
 ```python
-from mypy_boto3_workmail.literals import AccessControlRuleEffect
+from mypy_boto3_workmail.literals import AccessControlRuleEffectType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## EntityState
+## EntityStateType
 
 ```python
-from mypy_boto3_workmail.literals import EntityState
+from mypy_boto3_workmail.literals import EntityStateType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## FolderName
+## FolderNameType
 
 ```python
-from mypy_boto3_workmail.literals import FolderName
+from mypy_boto3_workmail.literals import FolderNameType
 ```
 
 Values:
@@ -144,10 +144,10 @@ Values:
 
 - `list_users`
 
-## MailboxExportJobState
+## MailboxExportJobStateType
 
 ```python
-from mypy_boto3_workmail.literals import MailboxExportJobState
+from mypy_boto3_workmail.literals import MailboxExportJobStateType
 ```
 
 Values:
@@ -157,10 +157,10 @@ Values:
 - `FAILED`
 - `RUNNING`
 
-## MemberType
+## MemberTypeType
 
 ```python
-from mypy_boto3_workmail.literals import MemberType
+from mypy_boto3_workmail.literals import MemberTypeType
 ```
 
 Values:
@@ -168,10 +168,10 @@ Values:
 - `GROUP`
 - `USER`
 
-## MobileDeviceAccessRuleEffect
+## MobileDeviceAccessRuleEffectType
 
 ```python
-from mypy_boto3_workmail.literals import MobileDeviceAccessRuleEffect
+from mypy_boto3_workmail.literals import MobileDeviceAccessRuleEffectType
 ```
 
 Values:
@@ -179,10 +179,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## PermissionType
+## PermissionTypeType
 
 ```python
-from mypy_boto3_workmail.literals import PermissionType
+from mypy_boto3_workmail.literals import PermissionTypeType
 ```
 
 Values:
@@ -191,10 +191,10 @@ Values:
 - `SEND_AS`
 - `SEND_ON_BEHALF`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_workmail.literals import ResourceType
+from mypy_boto3_workmail.literals import ResourceTypeType
 ```
 
 Values:
@@ -202,10 +202,10 @@ Values:
 - `EQUIPMENT`
 - `ROOM`
 
-## RetentionAction
+## RetentionActionType
 
 ```python
-from mypy_boto3_workmail.literals import RetentionAction
+from mypy_boto3_workmail.literals import RetentionActionType
 ```
 
 Values:
@@ -214,10 +214,10 @@ Values:
 - `NONE`
 - `PERMANENTLY_DELETE`
 
-## UserRole
+## UserRoleType
 
 ```python
-from mypy_boto3_workmail.literals import UserRole
+from mypy_boto3_workmail.literals import UserRoleType
 ```
 
 Values:

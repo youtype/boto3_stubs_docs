@@ -3,7 +3,7 @@
 > [Index](..) > [MediaPackage](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
 [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
@@ -177,7 +177,7 @@ Optional fields:
 - `OriginEndpointId`: `str`
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## CreateOriginEndpointResponseTypeDef
 
@@ -197,7 +197,7 @@ Optional fields:
 - `Id`: `str`
 - `ManifestName`: `str`
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [Origination](./literals.md#origination)
+- `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -228,24 +228,24 @@ from mypy_boto3_mediapackage.type_defs import DashPackageTypeDef
 Optional fields:
 
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElement](./literals.md#--adtriggerselement)\]
+  `List`\[[\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)\]
 - `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictions](./literals.md#adsondeliveryrestrictions)
+  [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `Encryption`: [DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef)
-- `ManifestLayout`: [ManifestLayout](./literals.md#manifestlayout)
+- `ManifestLayout`: [ManifestLayoutType](./literals.md#manifestlayouttype)
 - `ManifestWindowSeconds`: `int`
 - `MinBufferTimeSeconds`: `int`
 - `MinUpdatePeriodSeconds`: `int`
 - `PeriodTriggers`: `List`\[`Literal['ADS']` (see
-  [\_\_PeriodTriggersElement](./literals.md#--periodtriggerselement))\]
-- `Profile`: [Profile](./literals.md#profile)
+  [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype))\]
+- `Profile`: [ProfileType](./literals.md#profiletype)
 - `SegmentDurationSeconds`: `int`
 - `SegmentTemplateFormat`:
-  [SegmentTemplateFormat](./literals.md#segmenttemplateformat)
+  [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 - `SuggestedPresentationDelaySeconds`: `int`
-- `UtcTiming`: [UtcTiming](./literals.md#utctiming)
+- `UtcTiming`: [UtcTimingType](./literals.md#utctimingtype)
 - `UtcTimingUri`: `str`
 
 ## DescribeChannelResponseTypeDef
@@ -282,7 +282,7 @@ Optional fields:
 - `OriginEndpointId`: `str`
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## DescribeOriginEndpointResponseTypeDef
 
@@ -302,7 +302,7 @@ Optional fields:
 - `Id`: `str`
 - `ManifestName`: `str`
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [Origination](./literals.md#origination)
+- `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -328,9 +328,9 @@ from mypy_boto3_mediapackage.type_defs import EncryptionContractConfigurationTyp
 Required fields:
 
 - `PresetSpeke20Audio`: `Literal['PRESET-AUDIO-1']` (see
-  [PresetSpeke20Audio](./literals.md#presetspeke20audio))
+  [PresetSpeke20AudioType](./literals.md#presetspeke20audiotype))
 - `PresetSpeke20Video`: `Literal['PRESET-VIDEO-1']` (see
-  [PresetSpeke20Video](./literals.md#presetspeke20video))
+  [PresetSpeke20VideoType](./literals.md#presetspeke20videotype))
 
 ## HarvestJobTypeDef
 
@@ -348,7 +348,7 @@ Optional fields:
 - `OriginEndpointId`: `str`
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## HlsEncryptionTypeDef
 
@@ -364,7 +364,8 @@ Required fields:
 Optional fields:
 
 - `ConstantInitializationVector`: `str`
-- `EncryptionMethod`: [EncryptionMethod](./literals.md#encryptionmethod)
+- `EncryptionMethod`:
+  [EncryptionMethodType](./literals.md#encryptionmethodtype)
 - `KeyRotationIntervalSeconds`: `int`
 - `RepeatExtXKey`: `bool`
 
@@ -391,14 +392,14 @@ Required fields:
 
 Optional fields:
 
-- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
+- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElement](./literals.md#--adtriggerselement)\]
+  `List`\[[\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)\]
 - `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictions](./literals.md#adsondeliveryrestrictions)
+  [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `IncludeIframeOnlyStream`: `bool`
 - `ManifestName`: `str`
-- `PlaylistType`: [PlaylistType](./literals.md#playlisttype)
+- `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 
@@ -414,10 +415,10 @@ Required fields:
 
 Optional fields:
 
-- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
+- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
 - `IncludeIframeOnlyStream`: `bool`
 - `ManifestName`: `str`
-- `PlaylistType`: [PlaylistType](./literals.md#playlisttype)
+- `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 - `Url`: `str`
@@ -430,14 +431,14 @@ from mypy_boto3_mediapackage.type_defs import HlsPackageTypeDef
 
 Optional fields:
 
-- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
+- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElement](./literals.md#--adtriggerselement)\]
+  `List`\[[\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)\]
 - `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictions](./literals.md#adsondeliveryrestrictions)
+  [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
 - `IncludeIframeOnlyStream`: `bool`
-- `PlaylistType`: [PlaylistType](./literals.md#playlisttype)
+- `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 - `SegmentDurationSeconds`: `int`
@@ -487,7 +488,8 @@ from mypy_boto3_mediapackage.type_defs import ListHarvestJobsResponseTypeDef
 
 Optional fields:
 
-- `HarvestJobs`: `List`\[[HarvestJobTypeDef](./type_defs.md#harvestjobtypedef)\]
+- `HarvestJobs`:
+  `List`\[[HarvestJobTypeDef](./type_defs.md#harvestjobtypedef)\]
 - `NextToken`: `str`
 
 ## ListOriginEndpointsResponseTypeDef
@@ -555,7 +557,7 @@ Optional fields:
 - `Id`: `str`
 - `ManifestName`: `str`
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [Origination](./literals.md#origination)
+- `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -651,7 +653,7 @@ Optional fields:
 
 - `MaxVideoBitsPerSecond`: `int`
 - `MinVideoBitsPerSecond`: `int`
-- `StreamOrder`: [StreamOrder](./literals.md#streamorder)
+- `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
 
 ## UpdateChannelResponseTypeDef
 
@@ -689,7 +691,7 @@ Optional fields:
 - `Id`: `str`
 - `ManifestName`: `str`
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [Origination](./literals.md#origination)
+- `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`

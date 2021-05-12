@@ -3,7 +3,7 @@
 > [Index](..) > [LocationService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/location.html#LocationService)
 type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
@@ -140,7 +140,7 @@ from mypy_boto3_location.type_defs import BatchItemErrorTypeDef
 
 Optional fields:
 
-- `Code`: [BatchItemErrorCode](./literals.md#batchitemerrorcode)
+- `Code`: [BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype)
 - `Message`: `str`
 
 ## BatchPutGeofenceErrorTypeDef
@@ -269,7 +269,7 @@ from mypy_boto3_location.type_defs import DataSourceConfigurationTypeDef
 
 Optional fields:
 
-- `IntendedUse`: [IntendedUse](./literals.md#intendeduse)
+- `IntendedUse`: [IntendedUseType](./literals.md#intendedusetype)
 
 ## DescribeGeofenceCollectionResponseTypeDef
 
@@ -283,7 +283,7 @@ Required fields:
 - `CollectionName`: `str`
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 Optional fields:
@@ -305,7 +305,7 @@ Required fields:
 - `Description`: `str`
 - `MapArn`: `str`
 - `MapName`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 ## DescribePlaceIndexResponseTypeDef
@@ -323,7 +323,7 @@ Required fields:
 - `Description`: `str`
 - `IndexArn`: `str`
 - `IndexName`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 ## DescribeTrackerResponseTypeDef
@@ -336,7 +336,7 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `TrackerArn`: `str`
 - `TrackerName`: `str`
 - `UpdateTime`: `datetime`
@@ -483,7 +483,7 @@ Required fields:
 - `CollectionName`: `str`
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 Optional fields:
@@ -546,7 +546,7 @@ Required fields:
 - `DataSource`: `str`
 - `Description`: `str`
 - `MapName`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 ## ListMapsResponseTypeDef
@@ -576,7 +576,7 @@ Required fields:
 - `DataSource`: `str`
 - `Description`: `str`
 - `IndexName`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 ## ListPlaceIndexesResponseTypeDef
@@ -618,7 +618,7 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `TrackerName`: `str`
 - `UpdateTime`: `datetime`
 

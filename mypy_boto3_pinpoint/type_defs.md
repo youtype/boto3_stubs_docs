@@ -3,7 +3,7 @@
 > [Index](..) > [Pinpoint](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
 [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
@@ -343,7 +343,7 @@ from mypy_boto3_pinpoint.type_defs import ADMMessageTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `ConsolidationKey`: `str`
 - `Data`: `Dict`\[`str`, `str`\]
@@ -410,7 +410,7 @@ from mypy_boto3_pinpoint.type_defs import APNSMessageTypeDef
 Optional fields:
 
 - `APNSPushType`: `str`
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Badge`: `int`
 - `Body`: `str`
 - `Category`: `str`
@@ -436,7 +436,7 @@ from mypy_boto3_pinpoint.type_defs import APNSPushNotificationTemplateTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `MediaUrl`: `str`
 - `RawContent`: `str`
@@ -625,7 +625,8 @@ Optional fields:
 - `Holdout`: [HoldoutActivityTypeDef](./type_defs.md#holdoutactivitytypedef)
 - `MultiCondition`:
   [MultiConditionalSplitActivityTypeDef](./type_defs.md#multiconditionalsplitactivitytypedef)
-- `PUSH`: [PushMessageActivityTypeDef](./type_defs.md#pushmessageactivitytypedef)
+- `PUSH`:
+  [PushMessageActivityTypeDef](./type_defs.md#pushmessageactivitytypedef)
 - `RandomSplit`:
   [RandomSplitActivityTypeDef](./type_defs.md#randomsplitactivitytypedef)
 - `SMS`: [SMSMessageActivityTypeDef](./type_defs.md#smsmessageactivitytypedef)
@@ -640,7 +641,7 @@ from mypy_boto3_pinpoint.type_defs import AddressConfigurationTypeDef
 Optional fields:
 
 - `BodyOverride`: `str`
-- `ChannelType`: [ChannelType](./literals.md#channeltype)
+- `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Context`: `Dict`\[`str`, `str`\]
 - `RawContent`: `str`
 - `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
@@ -654,7 +655,7 @@ from mypy_boto3_pinpoint.type_defs import AndroidPushNotificationTemplateTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `ImageIconUrl`: `str`
 - `ImageUrl`: `str`
@@ -739,7 +740,7 @@ Required fields:
 
 Optional fields:
 
-- `AttributeType`: [AttributeType](./literals.md#attributetype)
+- `AttributeType`: [AttributeTypeType](./literals.md#attributetypetype)
 
 ## AttributesResourceTypeDef
 
@@ -802,7 +803,7 @@ from mypy_boto3_pinpoint.type_defs import BaiduMessageTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `Data`: `Dict`\[`str`, `str`\]
 - `IconReference`: `str`
@@ -878,7 +879,7 @@ from mypy_boto3_pinpoint.type_defs import CampaignEventFilterTypeDef
 Required fields:
 
 - `Dimensions`: [EventDimensionsTypeDef](./type_defs.md#eventdimensionstypedef)
-- `FilterType`: [FilterType](./literals.md#filtertype)
+- `FilterType`: [FilterTypeType](./literals.md#filtertypetype)
 
 ## CampaignHookTypeDef
 
@@ -889,7 +890,7 @@ from mypy_boto3_pinpoint.type_defs import CampaignHookTypeDef
 Optional fields:
 
 - `LambdaFunctionName`: `str`
-- `Mode`: [Mode](./literals.md#mode)
+- `Mode`: [ModeType](./literals.md#modetype)
 - `WebUrl`: `str`
 
 ## CampaignLimitsTypeDef
@@ -954,7 +955,7 @@ from mypy_boto3_pinpoint.type_defs import CampaignSmsMessageTypeDef
 Optional fields:
 
 - `Body`: `str`
-- `MessageType`: [MessageType](./literals.md#messagetype)
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
 - `EntityId`: `str`
@@ -968,7 +969,7 @@ from mypy_boto3_pinpoint.type_defs import CampaignStateTypeDef
 
 Optional fields:
 
-- `CampaignStatus`: [CampaignStatus](./literals.md#campaignstatus)
+- `CampaignStatus`: [CampaignStatusType](./literals.md#campaignstatustype)
 
 ## CampaignsResponseTypeDef
 
@@ -1024,7 +1025,7 @@ Optional fields:
 
 - `Conditions`:
   `List`\[[SimpleConditionTypeDef](./type_defs.md#simpleconditiontypedef)\]
-- `Operator`: [Operator](./literals.md#operator)
+- `Operator`: [OperatorType](./literals.md#operatortype)
 
 ## ConditionalSplitActivityTypeDef
 
@@ -1220,7 +1221,7 @@ Required fields:
 Optional fields:
 
 - `EndpointTypes`:
-  `List`\[[\_\_EndpointTypesElement](./literals.md#--endpointtypeselement)\]
+  `List`\[[\_\_EndpointTypesElementType](./literals.md#__endpointtypeselementtype)\]
 
 ## CustomMessageActivityTypeDef
 
@@ -1232,7 +1233,7 @@ Optional fields:
 
 - `DeliveryUri`: `str`
 - `EndpointTypes`:
-  `List`\[[\_\_EndpointTypesElement](./literals.md#--endpointtypeselement)\]
+  `List`\[[\_\_EndpointTypesElementType](./literals.md#__endpointtypeselementtype)\]
 - `MessageConfig`:
   [JourneyCustomMessageTypeDef](./type_defs.md#journeycustommessagetypedef)
 - `NextActivity`: `str`
@@ -1258,7 +1259,7 @@ from mypy_boto3_pinpoint.type_defs import DefaultPushNotificationMessageTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `Data`: `Dict`\[`str`, `str`\]
 - `SilentPush`: `bool`
@@ -1274,7 +1275,7 @@ from mypy_boto3_pinpoint.type_defs import DefaultPushNotificationTemplateTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `Sound`: `str`
 - `Title`: `str`
@@ -1528,7 +1529,8 @@ Optional fields:
 - `ADMMessage`: [ADMMessageTypeDef](./type_defs.md#admmessagetypedef)
 - `APNSMessage`: [APNSMessageTypeDef](./type_defs.md#apnsmessagetypedef)
 - `BaiduMessage`: [BaiduMessageTypeDef](./type_defs.md#baidumessagetypedef)
-- `DefaultMessage`: [DefaultMessageTypeDef](./type_defs.md#defaultmessagetypedef)
+- `DefaultMessage`:
+  [DefaultMessageTypeDef](./type_defs.md#defaultmessagetypedef)
 - `DefaultPushNotificationMessage`:
   [DefaultPushNotificationMessageTypeDef](./type_defs.md#defaultpushnotificationmessagetypedef)
 - `EmailMessage`: [EmailMessageTypeDef](./type_defs.md#emailmessagetypedef)
@@ -1637,7 +1639,7 @@ Required fields:
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: [TemplateType](./literals.md#templatetype)
+- `TemplateType`: [TemplateTypeType](./literals.md#templatetypetype)
 
 Optional fields:
 
@@ -1661,7 +1663,7 @@ Optional fields:
 
 - `Address`: `str`
 - `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
-- `ChannelType`: [ChannelType](./literals.md#channeltype)
+- `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Demographic`:
   [EndpointDemographicTypeDef](./type_defs.md#endpointdemographictypedef)
 - `EffectiveDate`: `str`
@@ -1735,7 +1737,7 @@ from mypy_boto3_pinpoint.type_defs import EndpointMessageResultTypeDef
 
 Required fields:
 
-- `DeliveryStatus`: [DeliveryStatus](./literals.md#deliverystatus)
+- `DeliveryStatus`: [DeliveryStatusType](./literals.md#deliverystatustype)
 - `StatusCode`: `int`
 
 Optional fields:
@@ -1755,7 +1757,7 @@ Optional fields:
 
 - `Address`: `str`
 - `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
-- `ChannelType`: [ChannelType](./literals.md#channeltype)
+- `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Demographic`:
   [EndpointDemographicTypeDef](./type_defs.md#endpointdemographictypedef)
 - `EffectiveDate`: `str`
@@ -1777,7 +1779,7 @@ Optional fields:
 - `Address`: `str`
 - `ApplicationId`: `str`
 - `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
-- `ChannelType`: [ChannelType](./literals.md#channeltype)
+- `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `CohortId`: `str`
 - `CreationDate`: `str`
 - `Demographic`:
@@ -1861,7 +1863,7 @@ from mypy_boto3_pinpoint.type_defs import EventFilterTypeDef
 Required fields:
 
 - `Dimensions`: [EventDimensionsTypeDef](./type_defs.md#eventdimensionstypedef)
-- `FilterType`: [FilterType](./literals.md#filtertype)
+- `FilterType`: [FilterTypeType](./literals.md#filtertypetype)
 
 ## EventItemResponseTypeDef
 
@@ -2003,7 +2005,7 @@ Required fields:
 - `Definition`:
   [ExportJobResourceTypeDef](./type_defs.md#exportjobresourcetypedef)
 - `Id`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Type`: `str`
 
 Optional fields:
@@ -2076,7 +2078,7 @@ from mypy_boto3_pinpoint.type_defs import GCMMessageTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `CollapseKey`: `str`
 - `Data`: `Dict`\[`str`, `str`\]
@@ -2624,7 +2626,7 @@ from mypy_boto3_pinpoint.type_defs import ImportJobRequestTypeDef
 
 Required fields:
 
-- `Format`: [Format](./literals.md#format)
+- `Format`: [FormatType](./literals.md#formattype)
 - `RoleArn`: `str`
 - `S3Url`: `str`
 
@@ -2644,7 +2646,7 @@ from mypy_boto3_pinpoint.type_defs import ImportJobResourceTypeDef
 
 Required fields:
 
-- `Format`: [Format](./literals.md#format)
+- `Format`: [FormatType](./literals.md#formattype)
 - `RoleArn`: `str`
 - `S3Url`: `str`
 
@@ -2669,7 +2671,7 @@ Required fields:
 - `Definition`:
   [ImportJobResourceTypeDef](./type_defs.md#importjobresourcetypedef)
 - `Id`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Type`: `str`
 
 Optional fields:
@@ -2824,8 +2826,9 @@ Optional fields:
 - `RefreshFrequency`: `str`
 - `Schedule`: [JourneyScheduleTypeDef](./type_defs.md#journeyscheduletypedef)
 - `StartActivity`: `str`
-- `StartCondition`: [StartConditionTypeDef](./type_defs.md#startconditiontypedef)
-- `State`: [State](./literals.md#state)
+- `StartCondition`:
+  [StartConditionTypeDef](./type_defs.md#startconditiontypedef)
+- `State`: [StateType](./literals.md#statetype)
 - `tags`: `Dict`\[`str`, `str`\]
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
@@ -2838,7 +2841,7 @@ from mypy_boto3_pinpoint.type_defs import JourneySMSMessageTypeDef
 
 Optional fields:
 
-- `MessageType`: [MessageType](./literals.md#messagetype)
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
 - `EntityId`: `str`
@@ -2864,7 +2867,7 @@ from mypy_boto3_pinpoint.type_defs import JourneyStateRequestTypeDef
 
 Optional fields:
 
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 
 ## JourneysResponseTypeDef
 
@@ -3018,7 +3021,7 @@ from mypy_boto3_pinpoint.type_defs import MessageResultTypeDef
 
 Required fields:
 
-- `DeliveryStatus`: [DeliveryStatus](./literals.md#deliverystatus)
+- `DeliveryStatus`: [DeliveryStatusType](./literals.md#deliverystatustype)
 - `StatusCode`: `int`
 
 Optional fields:
@@ -3035,7 +3038,7 @@ from mypy_boto3_pinpoint.type_defs import MessageTypeDef
 
 Optional fields:
 
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Body`: `str`
 - `ImageIconUrl`: `str`
 - `ImageSmallIconUrl`: `str`
@@ -3138,7 +3141,7 @@ Optional fields:
 
 - `Address`: `str`
 - `Attributes`: `Dict`\[`str`, `List`\[`str`\]\]
-- `ChannelType`: [ChannelType](./literals.md#channeltype)
+- `ChannelType`: [ChannelTypeType](./literals.md#channeltypetype)
 - `Demographic`:
   [EndpointDemographicTypeDef](./type_defs.md#endpointdemographictypedef)
 - `EffectiveDate`: `str`
@@ -3197,7 +3200,7 @@ Required fields:
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: [TemplateType](./literals.md#templatetype)
+- `TemplateType`: [TemplateTypeType](./literals.md#templatetypetype)
 
 Optional fields:
 
@@ -3236,7 +3239,8 @@ from mypy_boto3_pinpoint.type_defs import PutEventsResponseTypeDef
 
 Required fields:
 
-- `EventsResponse`: [EventsResponseTypeDef](./type_defs.md#eventsresponsetypedef)
+- `EventsResponse`:
+  [EventsResponseTypeDef](./type_defs.md#eventsresponsetypedef)
 
 ## QuietTimeTypeDef
 
@@ -3289,8 +3293,8 @@ from mypy_boto3_pinpoint.type_defs import RecencyDimensionTypeDef
 
 Required fields:
 
-- `Duration`: [Duration](./literals.md#duration)
-- `RecencyType`: [RecencyType](./literals.md#recencytype)
+- `Duration`: [DurationType](./literals.md#durationtype)
+- `RecencyType`: [RecencyTypeType](./literals.md#recencytypetype)
 
 ## RecommenderConfigurationResponseTypeDef
 
@@ -3415,7 +3419,7 @@ Optional fields:
 - `Body`: `str`
 - `Keyword`: `str`
 - `MediaUrl`: `str`
-- `MessageType`: [MessageType](./literals.md#messagetype)
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `OriginationNumber`: `str`
 - `SenderId`: `str`
 - `Substitutions`: `Dict`\[`str`, `List`\[`str`\]\]
@@ -3447,7 +3451,7 @@ Required fields:
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: [TemplateType](./literals.md#templatetype)
+- `TemplateType`: [TemplateTypeType](./literals.md#templatetypetype)
 
 Optional fields:
 
@@ -3474,7 +3478,7 @@ Optional fields:
 - `EndTime`: `str`
 - `EventFilter`:
   [CampaignEventFilterTypeDef](./type_defs.md#campaigneventfiltertypedef)
-- `Frequency`: [Frequency](./literals.md#frequency)
+- `Frequency`: [FrequencyType](./literals.md#frequencytype)
 - `IsLocalTime`: `bool`
 - `QuietTime`: [QuietTimeTypeDef](./type_defs.md#quiettimetypedef)
 - `Timezone`: `str`
@@ -3542,7 +3546,7 @@ from mypy_boto3_pinpoint.type_defs import SegmentGroupListTypeDef
 Optional fields:
 
 - `Groups`: `List`\[[SegmentGroupTypeDef](./type_defs.md#segmentgrouptypedef)\]
-- `Include`: [Include](./literals.md#include)
+- `Include`: [IncludeType](./literals.md#includetype)
 
 ## SegmentGroupTypeDef
 
@@ -3556,7 +3560,7 @@ Optional fields:
   `List`\[[SegmentDimensionsTypeDef](./type_defs.md#segmentdimensionstypedef)\]
 - `SourceSegments`:
   `List`\[[SegmentReferenceTypeDef](./type_defs.md#segmentreferencetypedef)\]
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Type`: [TypeType](./literals.md#typetype)
 
 ## SegmentImportResourceTypeDef
@@ -3568,7 +3572,7 @@ from mypy_boto3_pinpoint.type_defs import SegmentImportResourceTypeDef
 Required fields:
 
 - `ExternalId`: `str`
-- `Format`: [Format](./literals.md#format)
+- `Format`: [FormatType](./literals.md#formattype)
 - `RoleArn`: `str`
 - `S3Url`: `str`
 - `Size`: `int`
@@ -3586,7 +3590,8 @@ from mypy_boto3_pinpoint.type_defs import SegmentLocationTypeDef
 Optional fields:
 
 - `Country`: [SetDimensionTypeDef](./type_defs.md#setdimensiontypedef)
-- `GPSPoint`: [GPSPointDimensionTypeDef](./type_defs.md#gpspointdimensiontypedef)
+- `GPSPoint`:
+  [GPSPointDimensionTypeDef](./type_defs.md#gpspointdimensiontypedef)
 
 ## SegmentReferenceTypeDef
 
@@ -3614,7 +3619,7 @@ Required fields:
 - `Arn`: `str`
 - `CreationDate`: `str`
 - `Id`: `str`
-- `SegmentType`: [SegmentType](./literals.md#segmenttype)
+- `SegmentType`: [SegmentTypeType](./literals.md#segmenttypetype)
 
 Optional fields:
 
@@ -3730,7 +3735,7 @@ Required fields:
 
 Optional fields:
 
-- `DimensionType`: [DimensionType](./literals.md#dimensiontype)
+- `DimensionType`: [DimensionTypeType](./literals.md#dimensiontypetype)
 
 ## SimpleConditionTypeDef
 
@@ -3740,7 +3745,8 @@ from mypy_boto3_pinpoint.type_defs import SimpleConditionTypeDef
 
 Optional fields:
 
-- `EventCondition`: [EventConditionTypeDef](./type_defs.md#eventconditiontypedef)
+- `EventCondition`:
+  [EventConditionTypeDef](./type_defs.md#eventconditiontypedef)
 - `SegmentCondition`:
   [SegmentConditionTypeDef](./type_defs.md#segmentconditiontypedef)
 - `SegmentDimensions`:
@@ -3827,7 +3833,7 @@ Required fields:
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: [TemplateType](./literals.md#templatetype)
+- `TemplateType`: [TemplateTypeType](./literals.md#templatetypetype)
 
 Optional fields:
 
@@ -4272,7 +4278,7 @@ Required fields:
 - `CreationDate`: `str`
 - `LastModifiedDate`: `str`
 - `TemplateName`: `str`
-- `TemplateType`: [TemplateType](./literals.md#templatetype)
+- `TemplateType`: [TemplateTypeType](./literals.md#templatetypetype)
 
 Optional fields:
 
@@ -4383,8 +4389,9 @@ Optional fields:
 - `RefreshFrequency`: `str`
 - `Schedule`: [JourneyScheduleTypeDef](./type_defs.md#journeyscheduletypedef)
 - `StartActivity`: `str`
-- `StartCondition`: [StartConditionTypeDef](./type_defs.md#startconditiontypedef)
-- `State`: [State](./literals.md#state)
+- `StartCondition`:
+  [StartConditionTypeDef](./type_defs.md#startconditiontypedef)
+- `State`: [StateType](./literals.md#statetype)
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
 

@@ -3,23 +3,23 @@
 > [Index](..) > [IoTEvents](.) > Literals
 
 Auto-generated documentation for
-[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
 [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [Literals for boto3 IoTEvents module](#literals-for-boto3-iotevents-module)
-  - [AnalysisResultLevel](#analysisresultlevel)
-  - [AnalysisStatus](#analysisstatus)
-  - [DetectorModelVersionStatus](#detectormodelversionstatus)
-  - [EvaluationMethod](#evaluationmethod)
-  - [InputStatus](#inputstatus)
-  - [LoggingLevel](#logginglevel)
-  - [PayloadType](#payloadtype)
+  - [AnalysisResultLevelType](#analysisresultleveltype)
+  - [AnalysisStatusType](#analysisstatustype)
+  - [DetectorModelVersionStatusType](#detectormodelversionstatustype)
+  - [EvaluationMethodType](#evaluationmethodtype)
+  - [InputStatusType](#inputstatustype)
+  - [LoggingLevelType](#loggingleveltype)
+  - [PayloadTypeType](#payloadtypetype)
 
-## AnalysisResultLevel
+## AnalysisResultLevelType
 
 ```python
-from mypy_boto3_iotevents.literals import AnalysisResultLevel
+from mypy_boto3_iotevents.literals import AnalysisResultLevelType
 ```
 
 Values:
@@ -28,10 +28,10 @@ Values:
 - `INFO`
 - `WARNING`
 
-## AnalysisStatus
+## AnalysisStatusType
 
 ```python
-from mypy_boto3_iotevents.literals import AnalysisStatus
+from mypy_boto3_iotevents.literals import AnalysisStatusType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `FAILED`
 - `RUNNING`
 
-## DetectorModelVersionStatus
+## DetectorModelVersionStatusType
 
 ```python
-from mypy_boto3_iotevents.literals import DetectorModelVersionStatus
+from mypy_boto3_iotevents.literals import DetectorModelVersionStatusType
 ```
 
 Values:
@@ -56,10 +56,10 @@ Values:
 - `INACTIVE`
 - `PAUSED`
 
-## EvaluationMethod
+## EvaluationMethodType
 
 ```python
-from mypy_boto3_iotevents.literals import EvaluationMethod
+from mypy_boto3_iotevents.literals import EvaluationMethodType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 - `BATCH`
 - `SERIAL`
 
-## InputStatus
+## InputStatusType
 
 ```python
-from mypy_boto3_iotevents.literals import InputStatus
+from mypy_boto3_iotevents.literals import InputStatusType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## LoggingLevel
+## LoggingLevelType
 
 ```python
-from mypy_boto3_iotevents.literals import LoggingLevel
+from mypy_boto3_iotevents.literals import LoggingLevelType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `ERROR`
 - `INFO`
 
-## PayloadType
+## PayloadTypeType
 
 ```python
-from mypy_boto3_iotevents.literals import PayloadType
+from mypy_boto3_iotevents.literals import PayloadTypeType
 ```
 
 Values:

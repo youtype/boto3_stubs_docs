@@ -3,25 +3,25 @@
 > [Index](..) > [WellArchitected](.) > Literals
 
 Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
 [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [Literals for boto3 WellArchitected module](#literals-for-boto3-wellarchitected-module)
-  - [DifferenceStatus](#differencestatus)
-  - [LensStatus](#lensstatus)
-  - [NotificationType](#notificationtype)
-  - [PermissionType](#permissiontype)
-  - [Risk](#risk)
-  - [ShareInvitationAction](#shareinvitationaction)
-  - [ShareStatus](#sharestatus)
-  - [WorkloadEnvironment](#workloadenvironment)
-  - [WorkloadImprovementStatus](#workloadimprovementstatus)
+  - [DifferenceStatusType](#differencestatustype)
+  - [LensStatusType](#lensstatustype)
+  - [NotificationTypeType](#notificationtypetype)
+  - [PermissionTypeType](#permissiontypetype)
+  - [RiskType](#risktype)
+  - [ShareInvitationActionType](#shareinvitationactiontype)
+  - [ShareStatusType](#sharestatustype)
+  - [WorkloadEnvironmentType](#workloadenvironmenttype)
+  - [WorkloadImprovementStatusType](#workloadimprovementstatustype)
 
-## DifferenceStatus
+## DifferenceStatusType
 
 ```python
-from mypy_boto3_wellarchitected.literals import DifferenceStatus
+from mypy_boto3_wellarchitected.literals import DifferenceStatusType
 ```
 
 Values:
@@ -30,10 +30,10 @@ Values:
 - `NEW`
 - `UPDATED`
 
-## LensStatus
+## LensStatusType
 
 ```python
-from mypy_boto3_wellarchitected.literals import LensStatus
+from mypy_boto3_wellarchitected.literals import LensStatusType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `DEPRECATED`
 - `NOT_CURRENT`
 
-## NotificationType
+## NotificationTypeType
 
 ```python
-from mypy_boto3_wellarchitected.literals import NotificationType
+from mypy_boto3_wellarchitected.literals import NotificationTypeType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `LENS_VERSION_DEPRECATED`
 - `LENS_VERSION_UPGRADED`
 
-## PermissionType
+## PermissionTypeType
 
 ```python
-from mypy_boto3_wellarchitected.literals import PermissionType
+from mypy_boto3_wellarchitected.literals import PermissionTypeType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 - `CONTRIBUTOR`
 - `READONLY`
 
-## Risk
+## RiskType
 
 ```python
-from mypy_boto3_wellarchitected.literals import Risk
+from mypy_boto3_wellarchitected.literals import RiskType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 - `NOT_APPLICABLE`
 - `UNANSWERED`
 
-## ShareInvitationAction
+## ShareInvitationActionType
 
 ```python
-from mypy_boto3_wellarchitected.literals import ShareInvitationAction
+from mypy_boto3_wellarchitected.literals import ShareInvitationActionType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `ACCEPT`
 - `REJECT`
 
-## ShareStatus
+## ShareStatusType
 
 ```python
-from mypy_boto3_wellarchitected.literals import ShareStatus
+from mypy_boto3_wellarchitected.literals import ShareStatusType
 ```
 
 Values:
@@ -103,10 +103,10 @@ Values:
 - `REJECTED`
 - `REVOKED`
 
-## WorkloadEnvironment
+## WorkloadEnvironmentType
 
 ```python
-from mypy_boto3_wellarchitected.literals import WorkloadEnvironment
+from mypy_boto3_wellarchitected.literals import WorkloadEnvironmentType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `PREPRODUCTION`
 - `PRODUCTION`
 
-## WorkloadImprovementStatus
+## WorkloadImprovementStatusType
 
 ```python
-from mypy_boto3_wellarchitected.literals import WorkloadImprovementStatus
+from mypy_boto3_wellarchitected.literals import WorkloadImprovementStatusType
 ```
 
 Values:

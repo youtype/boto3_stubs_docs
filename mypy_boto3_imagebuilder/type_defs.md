@@ -3,7 +3,7 @@
 > [Index](..) > [Imagebuilder](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
+[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/imagebuilder.html#Imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
@@ -155,9 +155,9 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `version`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
-- `type`: [ComponentType](./literals.md#componenttype)
+- `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `owner`: `str`
 - `description`: `str`
 - `changeDescription`: `str`
@@ -177,8 +177,8 @@ Optional fields:
 - `version`: `str`
 - `description`: `str`
 - `changeDescription`: `str`
-- `type`: [ComponentType](./literals.md#componenttype)
-- `platform`: [Platform](./literals.md#platform)
+- `type`: [ComponentTypeType](./literals.md#componenttypetype)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
 - `owner`: `str`
 - `data`: `str`
@@ -199,9 +199,9 @@ Optional fields:
 - `name`: `str`
 - `version`: `str`
 - `description`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
-- `type`: [ComponentType](./literals.md#componenttype)
+- `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `owner`: `str`
 - `dateCreated`: `str`
 
@@ -231,9 +231,9 @@ Optional fields:
 
 - `arn`: `str`
 - `containerType`: `Literal['DOCKER']` (see
-  [ContainerType](./literals.md#containertype))
+  [ContainerTypeType](./literals.md#containertypetype))
 - `name`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `owner`: `str`
 - `parentImage`: `str`
 - `dateCreated`: `str`
@@ -249,10 +249,10 @@ Optional fields:
 
 - `arn`: `str`
 - `containerType`: `Literal['DOCKER']` (see
-  [ContainerType](./literals.md#containertype))
+  [ContainerTypeType](./literals.md#containertypetype))
 - `name`: `str`
 - `description`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `owner`: `str`
 - `version`: `str`
 - `components`:
@@ -512,7 +512,7 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `snapshotId`: `str`
 - `volumeSize`: `int`
-- `volumeType`: [EbsVolumeType](./literals.md#ebsvolumetype)
+- `volumeType`: [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
 
 ## FilterTypeDef
 
@@ -671,7 +671,7 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `enhancedImageMetadataEnabled`: `bool`
 - `imageRecipeArn`: `str`
 - `containerRecipeArn`: `str`
@@ -680,7 +680,7 @@ Optional fields:
 - `imageTestsConfiguration`:
   [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
-- `status`: [PipelineStatus](./literals.md#pipelinestatus)
+- `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
 - `dateCreated`: `str`
 - `dateUpdated`: `str`
 - `dateLastRun`: `str`
@@ -697,7 +697,7 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `owner`: `str`
 - `parentImage`: `str`
 - `dateCreated`: `str`
@@ -712,10 +712,10 @@ from mypy_boto3_imagebuilder.type_defs import ImageRecipeTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `type`: [ImageType](./literals.md#imagetype)
+- `type`: [ImageTypeType](./literals.md#imagetypetype)
 - `name`: `str`
 - `description`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `owner`: `str`
 - `version`: `str`
 - `components`:
@@ -735,7 +735,7 @@ from mypy_boto3_imagebuilder.type_defs import ImageStateTypeDef
 
 Optional fields:
 
-- `status`: [ImageStatus](./literals.md#imagestatus)
+- `status`: [ImageStatusType](./literals.md#imagestatustype)
 - `reason`: `str`
 
 ## ImageSummaryTypeDef
@@ -748,9 +748,9 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [ImageType](./literals.md#imagetype)
+- `type`: [ImageTypeType](./literals.md#imagetypetype)
 - `version`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `osVersion`: `str`
 - `state`: [ImageStateTypeDef](./type_defs.md#imagestatetypedef)
 - `owner`: `str`
@@ -779,10 +779,10 @@ from mypy_boto3_imagebuilder.type_defs import ImageTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `type`: [ImageType](./literals.md#imagetype)
+- `type`: [ImageTypeType](./literals.md#imagetypetype)
 - `name`: `str`
 - `version`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `enhancedImageMetadataEnabled`: `bool`
 - `osVersion`: `str`
 - `state`: [ImageStateTypeDef](./type_defs.md#imagestatetypedef)
@@ -812,9 +812,9 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [ImageType](./literals.md#imagetype)
+- `type`: [ImageTypeType](./literals.md#imagetypetype)
 - `version`: `str`
-- `platform`: [Platform](./literals.md#platform)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `osVersion`: `str`
 - `owner`: `str`
 - `dateCreated`: `str`
@@ -1165,7 +1165,7 @@ Optional fields:
 - `scheduleExpression`: `str`
 - `timezone`: `str`
 - `pipelineExecutionStartCondition`:
-  [PipelineExecutionStartCondition](./literals.md#pipelineexecutionstartcondition)
+  [PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype)
 
 ## StartImagePipelineExecutionResponseTypeDef
 
@@ -1188,7 +1188,7 @@ from mypy_boto3_imagebuilder.type_defs import TargetContainerRepositoryTypeDef
 Required fields:
 
 - `service`: `Literal['ECR']` (see
-  [ContainerRepositoryService](./literals.md#containerrepositoryservice))
+  [ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype))
 - `repositoryName`: `str`
 
 ## UpdateDistributionConfigurationResponseTypeDef

@@ -3,30 +3,30 @@
 > [Index](..) > [Snowball](.) > Literals
 
 Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball)
 type annotations stubs module
 [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 - [Literals for boto3 Snowball module](#literals-for-boto3-snowball-module)
-  - [ClusterState](#clusterstate)
+  - [ClusterStateType](#clusterstatetype)
   - [DescribeAddressesPaginatorName](#describeaddressespaginatorname)
-  - [JobState](#jobstate)
-  - [JobType](#jobtype)
+  - [JobStateType](#jobstatetype)
+  - [JobTypeType](#jobtypetype)
   - [ListClusterJobsPaginatorName](#listclusterjobspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListCompatibleImagesPaginatorName](#listcompatibleimagespaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
-  - [LongTermPricingType](#longtermpricingtype)
-  - [ShipmentState](#shipmentstate)
-  - [ShippingLabelStatus](#shippinglabelstatus)
-  - [ShippingOption](#shippingoption)
-  - [SnowballCapacity](#snowballcapacity)
-  - [SnowballType](#snowballtype)
+  - [LongTermPricingTypeType](#longtermpricingtypetype)
+  - [ShipmentStateType](#shipmentstatetype)
+  - [ShippingLabelStatusType](#shippinglabelstatustype)
+  - [ShippingOptionType](#shippingoptiontype)
+  - [SnowballCapacityType](#snowballcapacitytype)
+  - [SnowballTypeType](#snowballtypetype)
 
-## ClusterState
+## ClusterStateType
 
 ```python
-from mypy_boto3_snowball.literals import ClusterState
+from mypy_boto3_snowball.literals import ClusterStateType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 
 - `describe_addresses`
 
-## JobState
+## JobStateType
 
 ```python
-from mypy_boto3_snowball.literals import JobState
+from mypy_boto3_snowball.literals import JobStateType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `WithAWSSortingFacility`
 - `WithCustomer`
 
-## JobType
+## JobTypeType
 
 ```python
-from mypy_boto3_snowball.literals import JobType
+from mypy_boto3_snowball.literals import JobTypeType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 
 - `list_jobs`
 
-## LongTermPricingType
+## LongTermPricingTypeType
 
 ```python
-from mypy_boto3_snowball.literals import LongTermPricingType
+from mypy_boto3_snowball.literals import LongTermPricingTypeType
 ```
 
 Values:
@@ -132,10 +132,10 @@ Values:
 - `OneYear`
 - `ThreeYear`
 
-## ShipmentState
+## ShipmentStateType
 
 ```python
-from mypy_boto3_snowball.literals import ShipmentState
+from mypy_boto3_snowball.literals import ShipmentStateType
 ```
 
 Values:
@@ -143,10 +143,10 @@ Values:
 - `RECEIVED`
 - `RETURNED`
 
-## ShippingLabelStatus
+## ShippingLabelStatusType
 
 ```python
-from mypy_boto3_snowball.literals import ShippingLabelStatus
+from mypy_boto3_snowball.literals import ShippingLabelStatusType
 ```
 
 Values:
@@ -156,10 +156,10 @@ Values:
 - `Succeeded`
 - `TimedOut`
 
-## ShippingOption
+## ShippingOptionType
 
 ```python
-from mypy_boto3_snowball.literals import ShippingOption
+from mypy_boto3_snowball.literals import ShippingOptionType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 - `SECOND_DAY`
 - `STANDARD`
 
-## SnowballCapacity
+## SnowballCapacityType
 
 ```python
-from mypy_boto3_snowball.literals import SnowballCapacity
+from mypy_boto3_snowball.literals import SnowballCapacityType
 ```
 
 Values:
@@ -186,10 +186,10 @@ Values:
 - `T80`
 - `T98`
 
-## SnowballType
+## SnowballTypeType
 
 ```python
-from mypy_boto3_snowball.literals import SnowballType
+from mypy_boto3_snowball.literals import SnowballTypeType
 ```
 
 Values:

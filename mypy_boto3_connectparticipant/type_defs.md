@@ -3,7 +3,7 @@
 > [Index](..) > [ConnectParticipant](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
 [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
@@ -32,7 +32,7 @@ Optional fields:
 - `ContentType`: `str`
 - `AttachmentId`: `str`
 - `AttachmentName`: `str`
-- `Status`: [ArtifactStatus](./literals.md#artifactstatus)
+- `Status`: [ArtifactStatusType](./literals.md#artifactstatustype)
 
 ## ConnectionCredentialsTypeDef
 
@@ -92,10 +92,10 @@ Optional fields:
 - `Content`: `str`
 - `ContentType`: `str`
 - `Id`: `str`
-- `Type`: [ChatItemType](./literals.md#chatitemtype)
+- `Type`: [ChatItemTypeType](./literals.md#chatitemtypetype)
 - `ParticipantId`: `str`
 - `DisplayName`: `str`
-- `ParticipantRole`: [ParticipantRole](./literals.md#participantrole)
+- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
 - `Attachments`:
   `List`\[[AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef)\]
 
@@ -130,7 +130,8 @@ from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadRespons
 Optional fields:
 
 - `AttachmentId`: `str`
-- `UploadMetadata`: [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
+- `UploadMetadata`:
+  [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
 
 ## StartPositionTypeDef
 

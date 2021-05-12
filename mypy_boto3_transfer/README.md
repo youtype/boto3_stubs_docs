@@ -3,7 +3,7 @@
 > [Index](..) > Transfer
 
 Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer)
 type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
@@ -30,46 +30,46 @@ Can be used directly:
 from mypy_boto3_transfer.client import TransferClient
 ```
 
-TransferClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_server](./client.md#create-server)
-- [create_user](./client.md#create-user)
-- [delete_server](./client.md#delete-server)
-- [delete_ssh_public_key](./client.md#delete-ssh-public-key)
-- [delete_user](./client.md#delete-user)
-- [describe_security_policy](./client.md#describe-security-policy)
-- [describe_server](./client.md#describe-server)
-- [describe_user](./client.md#describe-user)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [import_ssh_public_key](./client.md#import-ssh-public-key)
-- [list_security_policies](./client.md#list-security-policies)
-- [list_servers](./client.md#list-servers)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_users](./client.md#list-users)
-- [start_server](./client.md#start-server)
-- [stop_server](./client.md#stop-server)
-- [tag_resource](./client.md#tag-resource)
-- [test_identity_provider](./client.md#test-identity-provider)
-- [untag_resource](./client.md#untag-resource)
-- [update_server](./client.md#update-server)
-- [update_user](./client.md#update-user)
+- [can_paginate](./client.md#can_paginate)
+- [create_server](./client.md#create_server)
+- [create_user](./client.md#create_user)
+- [delete_server](./client.md#delete_server)
+- [delete_ssh_public_key](./client.md#delete_ssh_public_key)
+- [delete_user](./client.md#delete_user)
+- [describe_security_policy](./client.md#describe_security_policy)
+- [describe_server](./client.md#describe_server)
+- [describe_user](./client.md#describe_user)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [import_ssh_public_key](./client.md#import_ssh_public_key)
+- [list_security_policies](./client.md#list_security_policies)
+- [list_servers](./client.md#list_servers)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_users](./client.md#list_users)
+- [start_server](./client.md#start_server)
+- [stop_server](./client.md#stop_server)
+- [tag_resource](./client.md#tag_resource)
+- [test_identity_provider](./client.md#test_identity_provider)
+- [untag_resource](./client.md#untag_resource)
+- [update_server](./client.md#update_server)
+- [update_user](./client.md#update_user)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServiceError](./client.md#internalserviceerror)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceExistsException](./client.md#resourceexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
+TransferClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServiceError
+- InvalidNextTokenException
+- InvalidRequestException
+- ResourceExistsException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
 
 ## Paginators
 
@@ -91,16 +91,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_transfer.literals import Domain, ...
+from mypy_boto3_transfer.literals import DomainType, ...
 ```
 
-- [Domain](./literals.md#domain)
-- [EndpointType](./literals.md#endpointtype)
-- [HomeDirectoryType](./literals.md#homedirectorytype)
-- [IdentityProviderType](./literals.md#identityprovidertype)
+- [DomainType](./literals.md#domaintype)
+- [EndpointTypeType](./literals.md#endpointtypetype)
+- [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
+- [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - [ListServersPaginatorName](./literals.md#listserverspaginatorname)
 - [ProtocolType](./literals.md#protocoltype)
-- [State](./literals.md#state)
+- [StateType](./literals.md#statetype)
 
 ## Typed dictionaries
 

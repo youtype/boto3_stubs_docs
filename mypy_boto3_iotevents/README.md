@@ -3,7 +3,7 @@
 > [Index](..) > IoTEvents
 
 Auto-generated documentation for
-[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
 [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
@@ -29,44 +29,44 @@ Can be used directly:
 from mypy_boto3_iotevents.client import IoTEventsClient
 ```
 
-IoTEventsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_detector_model](./client.md#create-detector-model)
-- [create_input](./client.md#create-input)
-- [delete_detector_model](./client.md#delete-detector-model)
-- [delete_input](./client.md#delete-input)
-- [describe_detector_model](./client.md#describe-detector-model)
-- [describe_detector_model_analysis](./client.md#describe-detector-model-analysis)
-- [describe_input](./client.md#describe-input)
-- [describe_logging_options](./client.md#describe-logging-options)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_detector_model_analysis_results](./client.md#get-detector-model-analysis-results)
-- [list_detector_model_versions](./client.md#list-detector-model-versions)
-- [list_detector_models](./client.md#list-detector-models)
-- [list_inputs](./client.md#list-inputs)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_logging_options](./client.md#put-logging-options)
-- [start_detector_model_analysis](./client.md#start-detector-model-analysis)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_detector_model](./client.md#update-detector-model)
-- [update_input](./client.md#update-input)
+- [can_paginate](./client.md#can_paginate)
+- [create_detector_model](./client.md#create_detector_model)
+- [create_input](./client.md#create_input)
+- [delete_detector_model](./client.md#delete_detector_model)
+- [delete_input](./client.md#delete_input)
+- [describe_detector_model](./client.md#describe_detector_model)
+- [describe_detector_model_analysis](./client.md#describe_detector_model_analysis)
+- [describe_input](./client.md#describe_input)
+- [describe_logging_options](./client.md#describe_logging_options)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_detector_model_analysis_results](./client.md#get_detector_model_analysis_results)
+- [list_detector_model_versions](./client.md#list_detector_model_versions)
+- [list_detector_models](./client.md#list_detector_models)
+- [list_inputs](./client.md#list_inputs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_logging_options](./client.md#put_logging_options)
+- [start_detector_model_analysis](./client.md#start_detector_model_analysis)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_detector_model](./client.md#update_detector_model)
+- [update_input](./client.md#update_input)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+IoTEventsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalFailureException
+- InvalidRequestException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
+- UnsupportedOperationException
 
 ## Literals
 
@@ -75,16 +75,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotevents.literals import AnalysisResultLevel, ...
+from mypy_boto3_iotevents.literals import AnalysisResultLevelType, ...
 ```
 
-- [AnalysisResultLevel](./literals.md#analysisresultlevel)
-- [AnalysisStatus](./literals.md#analysisstatus)
-- [DetectorModelVersionStatus](./literals.md#detectormodelversionstatus)
-- [EvaluationMethod](./literals.md#evaluationmethod)
-- [InputStatus](./literals.md#inputstatus)
-- [LoggingLevel](./literals.md#logginglevel)
-- [PayloadType](./literals.md#payloadtype)
+- [AnalysisResultLevelType](./literals.md#analysisresultleveltype)
+- [AnalysisStatusType](./literals.md#analysisstatustype)
+- [DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype)
+- [EvaluationMethodType](./literals.md#evaluationmethodtype)
+- [InputStatusType](./literals.md#inputstatustype)
+- [LoggingLevelType](./literals.md#loggingleveltype)
+- [PayloadTypeType](./literals.md#payloadtypetype)
 
 ## Typed dictionaries
 

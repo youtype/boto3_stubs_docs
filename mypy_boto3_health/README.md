@@ -3,7 +3,7 @@
 > [Index](..) > Health
 
 Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/health.html#Health)
 type annotations stubs module
 [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
@@ -29,33 +29,33 @@ Can be used directly:
 from mypy_boto3_health.client import HealthClient
 ```
 
-HealthClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_affected_accounts_for_organization](./client.md#describe-affected-accounts-for-organization)
-- [describe_affected_entities](./client.md#describe-affected-entities)
-- [describe_affected_entities_for_organization](./client.md#describe-affected-entities-for-organization)
-- [describe_entity_aggregates](./client.md#describe-entity-aggregates)
-- [describe_event_aggregates](./client.md#describe-event-aggregates)
-- [describe_event_details](./client.md#describe-event-details)
-- [describe_event_details_for_organization](./client.md#describe-event-details-for-organization)
-- [describe_event_types](./client.md#describe-event-types)
-- [describe_events](./client.md#describe-events)
-- [describe_events_for_organization](./client.md#describe-events-for-organization)
-- [describe_health_service_status_for_organization](./client.md#describe-health-service-status-for-organization)
-- [disable_health_service_access_for_organization](./client.md#disable-health-service-access-for-organization)
-- [enable_health_service_access_for_organization](./client.md#enable-health-service-access-for-organization)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
+- [can_paginate](./client.md#can_paginate)
+- [describe_affected_accounts_for_organization](./client.md#describe_affected_accounts_for_organization)
+- [describe_affected_entities](./client.md#describe_affected_entities)
+- [describe_affected_entities_for_organization](./client.md#describe_affected_entities_for_organization)
+- [describe_entity_aggregates](./client.md#describe_entity_aggregates)
+- [describe_event_aggregates](./client.md#describe_event_aggregates)
+- [describe_event_details](./client.md#describe_event_details)
+- [describe_event_details_for_organization](./client.md#describe_event_details_for_organization)
+- [describe_event_types](./client.md#describe_event_types)
+- [describe_events](./client.md#describe_events)
+- [describe_events_for_organization](./client.md#describe_events_for_organization)
+- [describe_health_service_status_for_organization](./client.md#describe_health_service_status_for_organization)
+- [disable_health_service_access_for_organization](./client.md#disable_health_service_access_for_organization)
+- [enable_health_service_access_for_organization](./client.md#enable_health_service_access_for_organization)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InvalidPaginationToken](./client.md#invalidpaginationtoken)
-- [UnsupportedLocale](./client.md#unsupportedlocale)
+HealthClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- InvalidPaginationToken
+- UnsupportedLocale
 
 ## Paginators
 
@@ -93,11 +93,11 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 - [DescribeEventTypesPaginatorName](./literals.md#describeeventtypespaginatorname)
 - [DescribeEventsForOrganizationPaginatorName](./literals.md#describeeventsfororganizationpaginatorname)
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
-- [entityStatusCode](./literals.md#entitystatuscode)
-- [eventAggregateField](./literals.md#eventaggregatefield)
-- [eventScopeCode](./literals.md#eventscopecode)
-- [eventStatusCode](./literals.md#eventstatuscode)
-- [eventTypeCategory](./literals.md#eventtypecategory)
+- [entityStatusCodeType](./literals.md#entitystatuscodetype)
+- [eventAggregateFieldType](./literals.md#eventaggregatefieldtype)
+- [eventScopeCodeType](./literals.md#eventscopecodetype)
+- [eventStatusCodeType](./literals.md#eventstatuscodetype)
+- [eventTypeCategoryType](./literals.md#eventtypecategorytype)
 
 ## Typed dictionaries
 

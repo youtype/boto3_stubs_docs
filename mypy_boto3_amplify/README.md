@@ -3,7 +3,7 @@
 > [Index](..) > Amplify
 
 Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify)
 type annotations stubs module
 [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
@@ -29,61 +29,61 @@ Can be used directly:
 from mypy_boto3_amplify.client import AmplifyClient
 ```
 
-AmplifyClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_app](./client.md#create-app)
-- [create_backend_environment](./client.md#create-backend-environment)
-- [create_branch](./client.md#create-branch)
-- [create_deployment](./client.md#create-deployment)
-- [create_domain_association](./client.md#create-domain-association)
-- [create_webhook](./client.md#create-webhook)
-- [delete_app](./client.md#delete-app)
-- [delete_backend_environment](./client.md#delete-backend-environment)
-- [delete_branch](./client.md#delete-branch)
-- [delete_domain_association](./client.md#delete-domain-association)
-- [delete_job](./client.md#delete-job)
-- [delete_webhook](./client.md#delete-webhook)
-- [generate_access_logs](./client.md#generate-access-logs)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_app](./client.md#get-app)
-- [get_artifact_url](./client.md#get-artifact-url)
-- [get_backend_environment](./client.md#get-backend-environment)
-- [get_branch](./client.md#get-branch)
-- [get_domain_association](./client.md#get-domain-association)
-- [get_job](./client.md#get-job)
-- [get_paginator](./client.md#get-paginator)
-- [get_webhook](./client.md#get-webhook)
-- [list_apps](./client.md#list-apps)
-- [list_artifacts](./client.md#list-artifacts)
-- [list_backend_environments](./client.md#list-backend-environments)
-- [list_branches](./client.md#list-branches)
-- [list_domain_associations](./client.md#list-domain-associations)
-- [list_jobs](./client.md#list-jobs)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_webhooks](./client.md#list-webhooks)
-- [start_deployment](./client.md#start-deployment)
-- [start_job](./client.md#start-job)
-- [stop_job](./client.md#stop-job)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_app](./client.md#update-app)
-- [update_branch](./client.md#update-branch)
-- [update_domain_association](./client.md#update-domain-association)
-- [update_webhook](./client.md#update-webhook)
+- [can_paginate](./client.md#can_paginate)
+- [create_app](./client.md#create_app)
+- [create_backend_environment](./client.md#create_backend_environment)
+- [create_branch](./client.md#create_branch)
+- [create_deployment](./client.md#create_deployment)
+- [create_domain_association](./client.md#create_domain_association)
+- [create_webhook](./client.md#create_webhook)
+- [delete_app](./client.md#delete_app)
+- [delete_backend_environment](./client.md#delete_backend_environment)
+- [delete_branch](./client.md#delete_branch)
+- [delete_domain_association](./client.md#delete_domain_association)
+- [delete_job](./client.md#delete_job)
+- [delete_webhook](./client.md#delete_webhook)
+- [generate_access_logs](./client.md#generate_access_logs)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_app](./client.md#get_app)
+- [get_artifact_url](./client.md#get_artifact_url)
+- [get_backend_environment](./client.md#get_backend_environment)
+- [get_branch](./client.md#get_branch)
+- [get_domain_association](./client.md#get_domain_association)
+- [get_job](./client.md#get_job)
+- [get_paginator](./client.md#get_paginator)
+- [get_webhook](./client.md#get_webhook)
+- [list_apps](./client.md#list_apps)
+- [list_artifacts](./client.md#list_artifacts)
+- [list_backend_environments](./client.md#list_backend_environments)
+- [list_branches](./client.md#list_branches)
+- [list_domain_associations](./client.md#list_domain_associations)
+- [list_jobs](./client.md#list_jobs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_webhooks](./client.md#list_webhooks)
+- [start_deployment](./client.md#start_deployment)
+- [start_job](./client.md#start_job)
+- [stop_job](./client.md#stop_job)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_app](./client.md#update_app)
+- [update_branch](./client.md#update_branch)
+- [update_domain_association](./client.md#update_domain_association)
+- [update_webhook](./client.md#update_webhook)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [DependentServiceFailureException](./client.md#dependentservicefailureexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+AmplifyClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- DependentServiceFailureException
+- InternalFailureException
+- LimitExceededException
+- NotFoundException
+- ResourceNotFoundException
+- UnauthorizedException
 
 ## Paginators
 
@@ -108,18 +108,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplify.literals import DomainStatus, ...
+from mypy_boto3_amplify.literals import DomainStatusType, ...
 ```
 
-- [DomainStatus](./literals.md#domainstatus)
-- [JobStatus](./literals.md#jobstatus)
-- [JobType](./literals.md#jobtype)
+- [DomainStatusType](./literals.md#domainstatustype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [JobTypeType](./literals.md#jobtypetype)
 - [ListAppsPaginatorName](./literals.md#listappspaginatorname)
 - [ListBranchesPaginatorName](./literals.md#listbranchespaginatorname)
 - [ListDomainAssociationsPaginatorName](./literals.md#listdomainassociationspaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
-- [Platform](./literals.md#platform)
-- [Stage](./literals.md#stage)
+- [PlatformType](./literals.md#platformtype)
+- [StageType](./literals.md#stagetype)
 
 ## Typed dictionaries
 

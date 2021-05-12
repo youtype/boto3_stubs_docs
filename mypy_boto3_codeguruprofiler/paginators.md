@@ -3,7 +3,7 @@
 > [Index](..) > [CodeGuruProfiler](.) > Paginators
 
 Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
 [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
@@ -25,15 +25,16 @@ def get_list_profile_times_paginator() -> ListProfileTimesPaginator:
 ```
 
 Boto3 documentation:
-[CodeGuruProfiler.Paginator.ListProfileTimes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Paginator.ListProfileTimes)
+[CodeGuruProfiler.Paginator.ListProfileTimes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Paginator.ListProfileTimes)
 
 Arguments for `ListProfileTimesPaginator.paginate` method:
 
 - `endTime`: `datetime` *(required)*
-- `period`: [AggregationPeriod](./literals.md#aggregationperiod) *(required)*
+- `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
+  *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `startTime`: `datetime` *(required)*
-- `orderBy`: [OrderBy](./literals.md#orderby)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

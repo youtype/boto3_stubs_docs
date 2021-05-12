@@ -3,7 +3,7 @@
 > [Index](..) > [Glacier](.) > Waiters
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
@@ -25,7 +25,7 @@ def get_vault_exists_waiter() -> VaultExistsWaiter:
 ```
 
 Boto3 documentation:
-[Glacier.Waiter.vault_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.vault_exists)
+[Glacier.Waiter.vault_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glacier.html#Glacier.Waiter.vault_exists)
 
 Arguments for `VaultExistsWaiter.wait` method:
 
@@ -47,7 +47,7 @@ def get_vault_not_exists_waiter() -> VaultNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[Glacier.Waiter.vault_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.vault_not_exists)
+[Glacier.Waiter.vault_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glacier.html#Glacier.Waiter.vault_not_exists)
 
 Arguments for `VaultNotExistsWaiter.wait` method:
 

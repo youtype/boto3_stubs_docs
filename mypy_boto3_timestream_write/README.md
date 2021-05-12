@@ -3,7 +3,7 @@
 > [Index](..) > TimestreamWrite
 
 Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
 [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
@@ -29,40 +29,40 @@ Can be used directly:
 from mypy_boto3_timestream_write.client import TimestreamWriteClient
 ```
 
-TimestreamWriteClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_database](./client.md#create-database)
-- [create_table](./client.md#create-table)
-- [delete_database](./client.md#delete-database)
-- [delete_table](./client.md#delete-table)
-- [describe_database](./client.md#describe-database)
-- [describe_endpoints](./client.md#describe-endpoints)
-- [describe_table](./client.md#describe-table)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_databases](./client.md#list-databases)
-- [list_tables](./client.md#list-tables)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_database](./client.md#update-database)
-- [update_table](./client.md#update-table)
-- [write_records](./client.md#write-records)
+- [can_paginate](./client.md#can_paginate)
+- [create_database](./client.md#create_database)
+- [create_table](./client.md#create_table)
+- [delete_database](./client.md#delete_database)
+- [delete_table](./client.md#delete_table)
+- [describe_database](./client.md#describe_database)
+- [describe_endpoints](./client.md#describe_endpoints)
+- [describe_table](./client.md#describe_table)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_databases](./client.md#list_databases)
+- [list_tables](./client.md#list_tables)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_database](./client.md#update_database)
+- [update_table](./client.md#update_table)
+- [write_records](./client.md#write_records)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidEndpointException](./client.md#invalidendpointexception)
-- [RejectedRecordsException](./client.md#rejectedrecordsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+TimestreamWriteClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- InvalidEndpointException
+- RejectedRecordsException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -71,13 +71,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_timestream_write.literals import DimensionValueType, ...
+from mypy_boto3_timestream_write.literals import DimensionValueTypeType, ...
 ```
 
-- [DimensionValueType](./literals.md#dimensionvaluetype)
-- [MeasureValueType](./literals.md#measurevaluetype)
-- [TableStatus](./literals.md#tablestatus)
-- [TimeUnit](./literals.md#timeunit)
+- [DimensionValueTypeType](./literals.md#dimensionvaluetypetype)
+- [MeasureValueTypeType](./literals.md#measurevaluetypetype)
+- [TableStatusType](./literals.md#tablestatustype)
+- [TimeUnitType](./literals.md#timeunittype)
 
 ## Typed dictionaries
 

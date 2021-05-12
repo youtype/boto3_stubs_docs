@@ -3,7 +3,7 @@
 > [Index](..) > Inspector
 
 Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector)
 type annotations stubs module
 [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
@@ -30,65 +30,65 @@ Can be used directly:
 from mypy_boto3_inspector.client import InspectorClient
 ```
 
-InspectorClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_attributes_to_findings](./client.md#add-attributes-to-findings)
-- [can_paginate](./client.md#can-paginate)
-- [create_assessment_target](./client.md#create-assessment-target)
-- [create_assessment_template](./client.md#create-assessment-template)
-- [create_exclusions_preview](./client.md#create-exclusions-preview)
-- [create_resource_group](./client.md#create-resource-group)
-- [delete_assessment_run](./client.md#delete-assessment-run)
-- [delete_assessment_target](./client.md#delete-assessment-target)
-- [delete_assessment_template](./client.md#delete-assessment-template)
-- [describe_assessment_runs](./client.md#describe-assessment-runs)
-- [describe_assessment_targets](./client.md#describe-assessment-targets)
-- [describe_assessment_templates](./client.md#describe-assessment-templates)
-- [describe_cross_account_access_role](./client.md#describe-cross-account-access-role)
-- [describe_exclusions](./client.md#describe-exclusions)
-- [describe_findings](./client.md#describe-findings)
-- [describe_resource_groups](./client.md#describe-resource-groups)
-- [describe_rules_packages](./client.md#describe-rules-packages)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_assessment_report](./client.md#get-assessment-report)
-- [get_exclusions_preview](./client.md#get-exclusions-preview)
-- [get_paginator](./client.md#get-paginator)
-- [get_telemetry_metadata](./client.md#get-telemetry-metadata)
-- [list_assessment_run_agents](./client.md#list-assessment-run-agents)
-- [list_assessment_runs](./client.md#list-assessment-runs)
-- [list_assessment_targets](./client.md#list-assessment-targets)
-- [list_assessment_templates](./client.md#list-assessment-templates)
-- [list_event_subscriptions](./client.md#list-event-subscriptions)
-- [list_exclusions](./client.md#list-exclusions)
-- [list_findings](./client.md#list-findings)
-- [list_rules_packages](./client.md#list-rules-packages)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [preview_agents](./client.md#preview-agents)
-- [register_cross_account_access_role](./client.md#register-cross-account-access-role)
-- [remove_attributes_from_findings](./client.md#remove-attributes-from-findings)
-- [set_tags_for_resource](./client.md#set-tags-for-resource)
-- [start_assessment_run](./client.md#start-assessment-run)
-- [stop_assessment_run](./client.md#stop-assessment-run)
-- [subscribe_to_event](./client.md#subscribe-to-event)
-- [unsubscribe_from_event](./client.md#unsubscribe-from-event)
-- [update_assessment_target](./client.md#update-assessment-target)
+- [add_attributes_to_findings](./client.md#add_attributes_to_findings)
+- [can_paginate](./client.md#can_paginate)
+- [create_assessment_target](./client.md#create_assessment_target)
+- [create_assessment_template](./client.md#create_assessment_template)
+- [create_exclusions_preview](./client.md#create_exclusions_preview)
+- [create_resource_group](./client.md#create_resource_group)
+- [delete_assessment_run](./client.md#delete_assessment_run)
+- [delete_assessment_target](./client.md#delete_assessment_target)
+- [delete_assessment_template](./client.md#delete_assessment_template)
+- [describe_assessment_runs](./client.md#describe_assessment_runs)
+- [describe_assessment_targets](./client.md#describe_assessment_targets)
+- [describe_assessment_templates](./client.md#describe_assessment_templates)
+- [describe_cross_account_access_role](./client.md#describe_cross_account_access_role)
+- [describe_exclusions](./client.md#describe_exclusions)
+- [describe_findings](./client.md#describe_findings)
+- [describe_resource_groups](./client.md#describe_resource_groups)
+- [describe_rules_packages](./client.md#describe_rules_packages)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_assessment_report](./client.md#get_assessment_report)
+- [get_exclusions_preview](./client.md#get_exclusions_preview)
+- [get_paginator](./client.md#get_paginator)
+- [get_telemetry_metadata](./client.md#get_telemetry_metadata)
+- [list_assessment_run_agents](./client.md#list_assessment_run_agents)
+- [list_assessment_runs](./client.md#list_assessment_runs)
+- [list_assessment_targets](./client.md#list_assessment_targets)
+- [list_assessment_templates](./client.md#list_assessment_templates)
+- [list_event_subscriptions](./client.md#list_event_subscriptions)
+- [list_exclusions](./client.md#list_exclusions)
+- [list_findings](./client.md#list_findings)
+- [list_rules_packages](./client.md#list_rules_packages)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [preview_agents](./client.md#preview_agents)
+- [register_cross_account_access_role](./client.md#register_cross_account_access_role)
+- [remove_attributes_from_findings](./client.md#remove_attributes_from_findings)
+- [set_tags_for_resource](./client.md#set_tags_for_resource)
+- [start_assessment_run](./client.md#start_assessment_run)
+- [stop_assessment_run](./client.md#stop_assessment_run)
+- [subscribe_to_event](./client.md#subscribe_to_event)
+- [unsubscribe_from_event](./client.md#unsubscribe_from_event)
+- [update_assessment_target](./client.md#update_assessment_target)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AgentsAlreadyRunningAssessmentException](./client.md#agentsalreadyrunningassessmentexception)
-- [AssessmentRunInProgressException](./client.md#assessmentruninprogressexception)
-- [ClientError](./client.md#clienterror)
-- [InternalException](./client.md#internalexception)
-- [InvalidCrossAccountRoleException](./client.md#invalidcrossaccountroleexception)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NoSuchEntityException](./client.md#nosuchentityexception)
-- [PreviewGenerationInProgressException](./client.md#previewgenerationinprogressexception)
-- [ServiceTemporarilyUnavailableException](./client.md#servicetemporarilyunavailableexception)
-- [UnsupportedFeatureException](./client.md#unsupportedfeatureexception)
+InspectorClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AgentsAlreadyRunningAssessmentException
+- AssessmentRunInProgressException
+- ClientError
+- InternalException
+- InvalidCrossAccountRoleException
+- InvalidInputException
+- LimitExceededException
+- NoSuchEntityException
+- PreviewGenerationInProgressException
+- ServiceTemporarilyUnavailableException
+- UnsupportedFeatureException
 
 ## Paginators
 
@@ -118,16 +118,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_inspector.literals import AgentHealth, ...
+from mypy_boto3_inspector.literals import AgentHealthCodeType, ...
 ```
 
-- [AgentHealth](./literals.md#agenthealth)
-- [AgentHealthCode](./literals.md#agenthealthcode)
-- [AssessmentRunNotificationSnsStatusCode](./literals.md#assessmentrunnotificationsnsstatuscode)
-- [AssessmentRunState](./literals.md#assessmentrunstate)
-- [AssetType](./literals.md#assettype)
-- [FailedItemErrorCode](./literals.md#faileditemerrorcode)
-- [InspectorEvent](./literals.md#inspectorevent)
+- [AgentHealthCodeType](./literals.md#agenthealthcodetype)
+- [AgentHealthType](./literals.md#agenthealthtype)
+- [AssessmentRunNotificationSnsStatusCodeType](./literals.md#assessmentrunnotificationsnsstatuscodetype)
+- [AssessmentRunStateType](./literals.md#assessmentrunstatetype)
+- [AssetTypeType](./literals.md#assettypetype)
+- [FailedItemErrorCodeType](./literals.md#faileditemerrorcodetype)
+- [InspectorEventType](./literals.md#inspectoreventtype)
 - [ListAssessmentRunAgentsPaginatorName](./literals.md#listassessmentrunagentspaginatorname)
 - [ListAssessmentRunsPaginatorName](./literals.md#listassessmentrunspaginatorname)
 - [ListAssessmentTargetsPaginatorName](./literals.md#listassessmenttargetspaginatorname)
@@ -136,15 +136,15 @@ from mypy_boto3_inspector.literals import AgentHealth, ...
 - [ListExclusionsPaginatorName](./literals.md#listexclusionspaginatorname)
 - [ListFindingsPaginatorName](./literals.md#listfindingspaginatorname)
 - [ListRulesPackagesPaginatorName](./literals.md#listrulespackagespaginatorname)
-- [Locale](./literals.md#locale)
+- [LocaleType](./literals.md#localetype)
 - [PreviewAgentsPaginatorName](./literals.md#previewagentspaginatorname)
-- [PreviewStatus](./literals.md#previewstatus)
-- [ReportFileFormat](./literals.md#reportfileformat)
-- [ReportStatus](./literals.md#reportstatus)
-- [ReportType](./literals.md#reporttype)
-- [ScopeType](./literals.md#scopetype)
-- [Severity](./literals.md#severity)
-- [StopAction](./literals.md#stopaction)
+- [PreviewStatusType](./literals.md#previewstatustype)
+- [ReportFileFormatType](./literals.md#reportfileformattype)
+- [ReportStatusType](./literals.md#reportstatustype)
+- [ReportTypeType](./literals.md#reporttypetype)
+- [ScopeTypeType](./literals.md#scopetypetype)
+- [SeverityType](./literals.md#severitytype)
+- [StopActionType](./literals.md#stopactiontype)
 
 ## Typed dictionaries
 

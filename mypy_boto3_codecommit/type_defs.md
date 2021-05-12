@@ -3,7 +3,7 @@
 > [Index](..) > [CodeCommit](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
 [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
@@ -154,7 +154,7 @@ from mypy_boto3_codecommit.type_defs import ApprovalRuleOverriddenEventMetadataT
 Optional fields:
 
 - `revisionId`: `str`
-- `overrideStatus`: [OverrideStatus](./literals.md#overridestatus)
+- `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
 
 ## ApprovalRuleTemplateTypeDef
 
@@ -200,7 +200,7 @@ from mypy_boto3_codecommit.type_defs import ApprovalStateChangedEventMetadataTyp
 Optional fields:
 
 - `revisionId`: `str`
-- `approvalStatus`: [ApprovalState](./literals.md#approvalstate)
+- `approvalStatus`: [ApprovalStateType](./literals.md#approvalstatetype)
 
 ## ApprovalTypeDef
 
@@ -211,7 +211,7 @@ from mypy_boto3_codecommit.type_defs import ApprovalTypeDef
 Optional fields:
 
 - `userArn`: `str`
-- `approvalState`: [ApprovalState](./literals.md#approvalstate)
+- `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
 
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef
 
@@ -682,7 +682,7 @@ Optional fields:
 
 - `beforeBlob`: [BlobMetadataTypeDef](./type_defs.md#blobmetadatatypedef)
 - `afterBlob`: [BlobMetadataTypeDef](./type_defs.md#blobmetadatatypedef)
-- `changeType`: [ChangeTypeEnum](./literals.md#changetypeenum)
+- `changeType`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 
 ## EvaluatePullRequestApprovalRulesOutputTypeDef
 
@@ -719,7 +719,7 @@ Optional fields:
 
 - `absolutePath`: `str`
 - `blobId`: `str`
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## FileModesTypeDef
 
@@ -729,9 +729,9 @@ from mypy_boto3_codecommit.type_defs import FileModesTypeDef
 
 Optional fields:
 
-- `source`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
-- `destination`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
-- `base`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `source`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
+- `destination`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
+- `base`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## FileSizesTypeDef
 
@@ -756,7 +756,7 @@ Optional fields:
 - `blobId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## FolderTypeDef
 
@@ -881,7 +881,8 @@ from mypy_boto3_codecommit.type_defs import GetDifferencesOutputTypeDef
 
 Required fields:
 
-- `differences`: `List`\[[DifferenceTypeDef](./type_defs.md#differencetypedef)\]
+- `differences`:
+  `List`\[[DifferenceTypeDef](./type_defs.md#differencetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -897,7 +898,7 @@ Required fields:
 - `commitId`: `str`
 - `blobId`: `str`
 - `filePath`: `str`
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `fileSize`: `int`
 - `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ResponseMetadata`:
@@ -964,7 +965,7 @@ from mypy_boto3_codecommit.type_defs import GetMergeOptionsOutputTypeDef
 Required fields:
 
 - `mergeOptions`:
-  `List`\[[MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)\]
+  `List`\[[MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)\]
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `baseCommitId`: `str`
@@ -1150,7 +1151,7 @@ Optional fields:
 - `filePath`: `str`
 - `filePosition`: `int`
 - `relativeFileVersion`:
-  [RelativeFileVersionEnum](./literals.md#relativefileversionenum)
+  [RelativeFileVersionEnumType](./literals.md#relativefileversionenumtype)
 
 ## MergeBranchesByFastForwardOutputTypeDef
 
@@ -1213,7 +1214,8 @@ Optional fields:
 
 - `isConflict`: `bool`
 - `source`: [MergeHunkDetailTypeDef](./type_defs.md#mergehunkdetailtypedef)
-- `destination`: [MergeHunkDetailTypeDef](./type_defs.md#mergehunkdetailtypedef)
+- `destination`:
+  [MergeHunkDetailTypeDef](./type_defs.md#mergehunkdetailtypedef)
 - `base`: [MergeHunkDetailTypeDef](./type_defs.md#mergehunkdetailtypedef)
 
 ## MergeMetadataTypeDef
@@ -1227,7 +1229,8 @@ Optional fields:
 - `isMerged`: `bool`
 - `mergedBy`: `str`
 - `mergeCommitId`: `str`
-- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)
 
 ## MergeOperationsTypeDef
 
@@ -1237,8 +1240,8 @@ from mypy_boto3_codecommit.type_defs import MergeOperationsTypeDef
 
 Optional fields:
 
-- `source`: [ChangeTypeEnum](./literals.md#changetypeenum)
-- `destination`: [ChangeTypeEnum](./literals.md#changetypeenum)
+- `source`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
+- `destination`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 
 ## MergePullRequestByFastForwardOutputTypeDef
 
@@ -1284,9 +1287,9 @@ from mypy_boto3_codecommit.type_defs import ObjectTypesTypeDef
 
 Optional fields:
 
-- `source`: [ObjectTypeEnum](./literals.md#objecttypeenum)
-- `destination`: [ObjectTypeEnum](./literals.md#objecttypeenum)
-- `base`: [ObjectTypeEnum](./literals.md#objecttypeenum)
+- `source`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
+- `destination`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
+- `base`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
 
 ## OriginApprovalRuleTemplateTypeDef
 
@@ -1384,7 +1387,7 @@ Optional fields:
 - `pullRequestId`: `str`
 - `eventDate`: `datetime`
 - `pullRequestEventType`:
-  [PullRequestEventType](./literals.md#pullrequesteventtype)
+  [PullRequestEventTypeType](./literals.md#pullrequesteventtypetype)
 - `actorArn`: `str`
 - `pullRequestCreatedEventMetadata`:
   [PullRequestCreatedEventMetadataTypeDef](./type_defs.md#pullrequestcreatedeventmetadatatypedef)
@@ -1435,7 +1438,7 @@ from mypy_boto3_codecommit.type_defs import PullRequestStatusChangedEventMetadat
 Optional fields:
 
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum)
+  [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
 
 ## PullRequestTargetTypeDef
 
@@ -1467,7 +1470,7 @@ Optional fields:
 - `lastActivityDate`: `datetime`
 - `creationDate`: `datetime`
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum)
+  [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
 - `authorArn`: `str`
 - `pullRequestTargets`:
   `List`\[[PullRequestTargetTypeDef](./type_defs.md#pullrequesttargettypedef)\]
@@ -1488,7 +1491,7 @@ Required fields:
 
 Optional fields:
 
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `sourceFile`:
   [SourceFileSpecifierTypeDef](./type_defs.md#sourcefilespecifiertypedef)
@@ -1553,12 +1556,13 @@ from mypy_boto3_codecommit.type_defs import ReplaceContentEntryTypeDef
 Required fields:
 
 - `filePath`: `str`
-- `replacementType`: [ReplacementTypeEnum](./literals.md#replacementtypeenum)
+- `replacementType`:
+  [ReplacementTypeEnumType](./literals.md#replacementtypeenumtype)
 
 Optional fields:
 
 - `content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## RepositoryMetadataTypeDef
 
@@ -1612,7 +1616,7 @@ Required fields:
 - `name`: `str`
 - `destinationArn`: `str`
 - `events`:
-  `List`\[[RepositoryTriggerEventEnum](./literals.md#repositorytriggereventenum)\]
+  `List`\[[RepositoryTriggerEventEnumType](./literals.md#repositorytriggereventenumtype)\]
 
 Optional fields:
 
@@ -1642,7 +1646,7 @@ from mypy_boto3_codecommit.type_defs import SetFileModeEntryTypeDef
 Required fields:
 
 - `filePath`: `str`
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## SourceFileSpecifierTypeDef
 
@@ -1681,7 +1685,7 @@ Optional fields:
 - `blobId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## TargetTypeDef
 

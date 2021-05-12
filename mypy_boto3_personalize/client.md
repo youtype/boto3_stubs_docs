@@ -3,7 +3,7 @@
 > [Index](..) > [Personalize](.) > PersonalizeClient
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -75,7 +75,7 @@ def get_personalize_client() -> PersonalizeClient:
 ```
 
 Boto3 documentation:
-[Personalize.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
+[Personalize.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client)
 
 ## Exceptions
 
@@ -106,7 +106,7 @@ Exceptions:
 Type annotations for `boto3.client("personalize").can_paginate` method.
 
 Boto3 documentation:
-[Personalize.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate)
+[Personalize.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.can_paginate)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Type annotations for `boto3.client("personalize").create_batch_inference_job`
 method.
 
 Boto3 documentation:
-[Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
+[Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
 
 Arguments:
 
@@ -146,14 +146,15 @@ Returns
 Type annotations for `boto3.client("personalize").create_campaign` method.
 
 Boto3 documentation:
-[Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
+[Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_campaign)
 
 Arguments:
 
 - `name`: `str` *(required)*
 - `solutionVersionArn`: `str` *(required)*
 - `minProvisionedTPS`: `int` *(required)*
-- `campaignConfig`: [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+- `campaignConfig`:
+  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
 Returns
 [CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
@@ -163,7 +164,7 @@ Returns
 Type annotations for `boto3.client("personalize").create_dataset` method.
 
 Boto3 documentation:
-[Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
+[Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_dataset)
 
 Arguments:
 
@@ -181,7 +182,7 @@ Type annotations for `boto3.client("personalize").create_dataset_export_job`
 method.
 
 Boto3 documentation:
-[Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
+[Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
 
 Arguments:
 
@@ -191,7 +192,7 @@ Arguments:
 - `jobOutput`:
   [DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef)
   *(required)*
-- `ingestionMode`: [IngestionMode](./literals.md#ingestionmode)
+- `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
 
 Returns
 [CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef).
@@ -201,7 +202,7 @@ Returns
 Type annotations for `boto3.client("personalize").create_dataset_group` method.
 
 Boto3 documentation:
-[Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
+[Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_dataset_group)
 
 Arguments:
 
@@ -218,7 +219,7 @@ Type annotations for `boto3.client("personalize").create_dataset_import_job`
 method.
 
 Boto3 documentation:
-[Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
+[Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
 
 Arguments:
 
@@ -236,7 +237,7 @@ Returns
 Type annotations for `boto3.client("personalize").create_event_tracker` method.
 
 Boto3 documentation:
-[Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
+[Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_event_tracker)
 
 Arguments:
 
@@ -251,7 +252,7 @@ Returns
 Type annotations for `boto3.client("personalize").create_filter` method.
 
 Boto3 documentation:
-[Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
+[Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_filter)
 
 Arguments:
 
@@ -267,7 +268,7 @@ Returns
 Type annotations for `boto3.client("personalize").create_schema` method.
 
 Boto3 documentation:
-[Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
+[Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_schema)
 
 Arguments:
 
@@ -282,7 +283,7 @@ Returns
 Type annotations for `boto3.client("personalize").create_solution` method.
 
 Boto3 documentation:
-[Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
+[Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_solution)
 
 Arguments:
 
@@ -292,7 +293,8 @@ Arguments:
 - `performAutoML`: `bool`
 - `recipeArn`: `str`
 - `eventType`: `str`
-- `solutionConfig`: [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
+- `solutionConfig`:
+  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 
 Returns
 [CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef).
@@ -303,12 +305,12 @@ Type annotations for `boto3.client("personalize").create_solution_version`
 method.
 
 Boto3 documentation:
-[Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
+[Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.create_solution_version)
 
 Arguments:
 
 - `solutionArn`: `str` *(required)*
-- `trainingMode`: [TrainingMode](./literals.md#trainingmode)
+- `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
 
 Returns
 [CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef).
@@ -318,7 +320,7 @@ Returns
 Type annotations for `boto3.client("personalize").delete_campaign` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
+[Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_campaign)
 
 Arguments:
 
@@ -329,7 +331,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").delete_dataset` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
+[Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_dataset)
 
 Arguments:
 
@@ -340,7 +342,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").delete_dataset_group` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
+[Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
 
 Arguments:
 
@@ -351,7 +353,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").delete_event_tracker` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
+[Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
 
 Arguments:
 
@@ -362,7 +364,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").delete_filter` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
+[Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_filter)
 
 Arguments:
 
@@ -373,7 +375,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").delete_schema` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
+[Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_schema)
 
 Arguments:
 
@@ -384,7 +386,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").delete_solution` method.
 
 Boto3 documentation:
-[Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
+[Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.delete_solution)
 
 Arguments:
 
@@ -395,7 +397,7 @@ Arguments:
 Type annotations for `boto3.client("personalize").describe_algorithm` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
+[Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_algorithm)
 
 Arguments:
 
@@ -410,7 +412,7 @@ Type annotations for `boto3.client("personalize").describe_batch_inference_job`
 method.
 
 Boto3 documentation:
-[Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
+[Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
 
 Arguments:
 
@@ -424,7 +426,7 @@ Returns
 Type annotations for `boto3.client("personalize").describe_campaign` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
+[Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_campaign)
 
 Arguments:
 
@@ -438,7 +440,7 @@ Returns
 Type annotations for `boto3.client("personalize").describe_dataset` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
+[Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_dataset)
 
 Arguments:
 
@@ -453,7 +455,7 @@ Type annotations for `boto3.client("personalize").describe_dataset_export_job`
 method.
 
 Boto3 documentation:
-[Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
+[Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
 
 Arguments:
 
@@ -468,7 +470,7 @@ Type annotations for `boto3.client("personalize").describe_dataset_group`
 method.
 
 Boto3 documentation:
-[Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
+[Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
 
 Arguments:
 
@@ -483,7 +485,7 @@ Type annotations for `boto3.client("personalize").describe_dataset_import_job`
 method.
 
 Boto3 documentation:
-[Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
+[Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
 
 Arguments:
 
@@ -498,7 +500,7 @@ Type annotations for `boto3.client("personalize").describe_event_tracker`
 method.
 
 Boto3 documentation:
-[Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
+[Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
 
 Arguments:
 
@@ -513,7 +515,7 @@ Type annotations for
 `boto3.client("personalize").describe_feature_transformation` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
+[Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
 
 Arguments:
 
@@ -527,7 +529,7 @@ Returns
 Type annotations for `boto3.client("personalize").describe_filter` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
+[Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_filter)
 
 Arguments:
 
@@ -541,7 +543,7 @@ Returns
 Type annotations for `boto3.client("personalize").describe_recipe` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
+[Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_recipe)
 
 Arguments:
 
@@ -555,7 +557,7 @@ Returns
 Type annotations for `boto3.client("personalize").describe_schema` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
+[Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_schema)
 
 Arguments:
 
@@ -569,7 +571,7 @@ Returns
 Type annotations for `boto3.client("personalize").describe_solution` method.
 
 Boto3 documentation:
-[Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
+[Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_solution)
 
 Arguments:
 
@@ -584,7 +586,7 @@ Type annotations for `boto3.client("personalize").describe_solution_version`
 method.
 
 Boto3 documentation:
-[Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
+[Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.describe_solution_version)
 
 Arguments:
 
@@ -599,7 +601,7 @@ Type annotations for `boto3.client("personalize").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[Personalize.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url)
+[Personalize.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.generate_presigned_url)
 
 Arguments:
 
@@ -615,7 +617,7 @@ Returns `str`.
 Type annotations for `boto3.client("personalize").get_solution_metrics` method.
 
 Boto3 documentation:
-[Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
+[Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
 
 Arguments:
 
@@ -630,7 +632,7 @@ Type annotations for `boto3.client("personalize").list_batch_inference_jobs`
 method.
 
 Boto3 documentation:
-[Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
+[Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
 
 Arguments:
 
@@ -646,7 +648,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_campaigns` method.
 
 Boto3 documentation:
-[Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
+[Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_campaigns)
 
 Arguments:
 
@@ -663,7 +665,7 @@ Type annotations for `boto3.client("personalize").list_dataset_export_jobs`
 method.
 
 Boto3 documentation:
-[Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
+[Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
 
 Arguments:
 
@@ -679,7 +681,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_dataset_groups` method.
 
 Boto3 documentation:
-[Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
+[Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
 
 Arguments:
 
@@ -695,7 +697,7 @@ Type annotations for `boto3.client("personalize").list_dataset_import_jobs`
 method.
 
 Boto3 documentation:
-[Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
+[Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
 
 Arguments:
 
@@ -711,7 +713,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_datasets` method.
 
 Boto3 documentation:
-[Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
+[Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_datasets)
 
 Arguments:
 
@@ -727,7 +729,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_event_trackers` method.
 
 Boto3 documentation:
-[Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
+[Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_event_trackers)
 
 Arguments:
 
@@ -743,7 +745,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_filters` method.
 
 Boto3 documentation:
-[Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
+[Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_filters)
 
 Arguments:
 
@@ -759,12 +761,12 @@ Returns
 Type annotations for `boto3.client("personalize").list_recipes` method.
 
 Boto3 documentation:
-[Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
+[Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_recipes)
 
 Arguments:
 
 - `recipeProvider`: `Literal['SERVICE']` (see
-  [RecipeProvider](./literals.md#recipeprovider))
+  [RecipeProviderType](./literals.md#recipeprovidertype))
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -776,7 +778,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_schemas` method.
 
 Boto3 documentation:
-[Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
+[Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_schemas)
 
 Arguments:
 
@@ -792,7 +794,7 @@ Type annotations for `boto3.client("personalize").list_solution_versions`
 method.
 
 Boto3 documentation:
-[Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
+[Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_solution_versions)
 
 Arguments:
 
@@ -808,7 +810,7 @@ Returns
 Type annotations for `boto3.client("personalize").list_solutions` method.
 
 Boto3 documentation:
-[Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
+[Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.list_solutions)
 
 Arguments:
 
@@ -824,14 +826,15 @@ Returns
 Type annotations for `boto3.client("personalize").update_campaign` method.
 
 Boto3 documentation:
-[Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
+[Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize.Client.update_campaign)
 
 Arguments:
 
 - `campaignArn`: `str` *(required)*
 - `solutionVersionArn`: `str`
 - `minProvisionedTPS`: `int`
-- `campaignConfig`: [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+- `campaignConfig`:
+  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
 Returns
 [UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).

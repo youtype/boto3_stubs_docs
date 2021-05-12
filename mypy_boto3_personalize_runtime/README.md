@@ -3,7 +3,7 @@
 > [Index](..) > PersonalizeRuntime
 
 Auto-generated documentation for
-[PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
+[PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module
 [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
@@ -28,20 +28,20 @@ Can be used directly:
 from mypy_boto3_personalize_runtime.client import PersonalizeRuntimeClient
 ```
 
-PersonalizeRuntimeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_personalized_ranking](./client.md#get-personalized-ranking)
-- [get_recommendations](./client.md#get-recommendations)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_personalized_ranking](./client.md#get_personalized_ranking)
+- [get_recommendations](./client.md#get_recommendations)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+PersonalizeRuntimeClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidInputException
+- ResourceNotFoundException
 
 ## Typed dictionaries
 

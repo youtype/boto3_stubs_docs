@@ -3,61 +3,61 @@
 > [Index](..) > [Kendra](.) > Literals
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 - [Literals for boto3 Kendra module](#literals-for-boto3-kendra-module)
-  - [AdditionalResultAttributeValueType](#additionalresultattributevaluetype)
-  - [ConfluenceAttachmentFieldName](#confluenceattachmentfieldname)
-  - [ConfluenceBlogFieldName](#confluenceblogfieldname)
-  - [ConfluencePageFieldName](#confluencepagefieldname)
-  - [ConfluenceSpaceFieldName](#confluencespacefieldname)
-  - [ConfluenceVersion](#confluenceversion)
-  - [ContentType](#contenttype)
-  - [DataSourceStatus](#datasourcestatus)
-  - [DataSourceSyncJobStatus](#datasourcesyncjobstatus)
-  - [DataSourceType](#datasourcetype)
-  - [DatabaseEngineType](#databaseenginetype)
-  - [DocumentAttributeValueType](#documentattributevaluetype)
-  - [ErrorCode](#errorcode)
-  - [FaqFileFormat](#faqfileformat)
-  - [FaqStatus](#faqstatus)
-  - [HighlightType](#highlighttype)
-  - [IndexEdition](#indexedition)
-  - [IndexStatus](#indexstatus)
-  - [KeyLocation](#keylocation)
-  - [Order](#order)
-  - [PrincipalType](#principaltype)
-  - [QueryIdentifiersEnclosingOption](#queryidentifiersenclosingoption)
-  - [QueryResultType](#queryresulttype)
-  - [ReadAccessType](#readaccesstype)
-  - [RelevanceType](#relevancetype)
-  - [SalesforceChatterFeedIncludeFilterType](#salesforcechatterfeedincludefiltertype)
-  - [SalesforceKnowledgeArticleState](#salesforceknowledgearticlestate)
-  - [SalesforceStandardObjectName](#salesforcestandardobjectname)
-  - [ScoreConfidence](#scoreconfidence)
-  - [ServiceNowAuthenticationType](#servicenowauthenticationtype)
-  - [ServiceNowBuildVersionType](#servicenowbuildversiontype)
-  - [SharePointVersion](#sharepointversion)
-  - [SortOrder](#sortorder)
-  - [ThesaurusStatus](#thesaurusstatus)
-  - [UserContextPolicy](#usercontextpolicy)
+  - [AdditionalResultAttributeValueTypeType](#additionalresultattributevaluetypetype)
+  - [ConfluenceAttachmentFieldNameType](#confluenceattachmentfieldnametype)
+  - [ConfluenceBlogFieldNameType](#confluenceblogfieldnametype)
+  - [ConfluencePageFieldNameType](#confluencepagefieldnametype)
+  - [ConfluenceSpaceFieldNameType](#confluencespacefieldnametype)
+  - [ConfluenceVersionType](#confluenceversiontype)
+  - [ContentTypeType](#contenttypetype)
+  - [DataSourceStatusType](#datasourcestatustype)
+  - [DataSourceSyncJobStatusType](#datasourcesyncjobstatustype)
+  - [DataSourceTypeType](#datasourcetypetype)
+  - [DatabaseEngineTypeType](#databaseenginetypetype)
+  - [DocumentAttributeValueTypeType](#documentattributevaluetypetype)
+  - [ErrorCodeType](#errorcodetype)
+  - [FaqFileFormatType](#faqfileformattype)
+  - [FaqStatusType](#faqstatustype)
+  - [HighlightTypeType](#highlighttypetype)
+  - [IndexEditionType](#indexeditiontype)
+  - [IndexStatusType](#indexstatustype)
+  - [KeyLocationType](#keylocationtype)
+  - [OrderType](#ordertype)
+  - [PrincipalTypeType](#principaltypetype)
+  - [QueryIdentifiersEnclosingOptionType](#queryidentifiersenclosingoptiontype)
+  - [QueryResultTypeType](#queryresulttypetype)
+  - [ReadAccessTypeType](#readaccesstypetype)
+  - [RelevanceTypeType](#relevancetypetype)
+  - [SalesforceChatterFeedIncludeFilterTypeType](#salesforcechatterfeedincludefiltertypetype)
+  - [SalesforceKnowledgeArticleStateType](#salesforceknowledgearticlestatetype)
+  - [SalesforceStandardObjectNameType](#salesforcestandardobjectnametype)
+  - [ScoreConfidenceType](#scoreconfidencetype)
+  - [ServiceNowAuthenticationTypeType](#servicenowauthenticationtypetype)
+  - [ServiceNowBuildVersionTypeType](#servicenowbuildversiontypetype)
+  - [SharePointVersionType](#sharepointversiontype)
+  - [SortOrderType](#sortordertype)
+  - [ThesaurusStatusType](#thesaurusstatustype)
+  - [UserContextPolicyType](#usercontextpolicytype)
 
-## AdditionalResultAttributeValueType
+## AdditionalResultAttributeValueTypeType
 
 ```python
-from mypy_boto3_kendra.literals import AdditionalResultAttributeValueType
+from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType
 ```
 
 Values:
 
 - `TEXT_WITH_HIGHLIGHTS_VALUE`
 
-## ConfluenceAttachmentFieldName
+## ConfluenceAttachmentFieldNameType
 
 ```python
-from mypy_boto3_kendra.literals import ConfluenceAttachmentFieldName
+from mypy_boto3_kendra.literals import ConfluenceAttachmentFieldNameType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `URL`
 - `VERSION`
 
-## ConfluenceBlogFieldName
+## ConfluenceBlogFieldNameType
 
 ```python
-from mypy_boto3_kendra.literals import ConfluenceBlogFieldName
+from mypy_boto3_kendra.literals import ConfluenceBlogFieldNameType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `URL`
 - `VERSION`
 
-## ConfluencePageFieldName
+## ConfluencePageFieldNameType
 
 ```python
-from mypy_boto3_kendra.literals import ConfluencePageFieldName
+from mypy_boto3_kendra.literals import ConfluencePageFieldNameType
 ```
 
 Values:
@@ -113,10 +113,10 @@ Values:
 - `URL`
 - `VERSION`
 
-## ConfluenceSpaceFieldName
+## ConfluenceSpaceFieldNameType
 
 ```python
-from mypy_boto3_kendra.literals import ConfluenceSpaceFieldName
+from mypy_boto3_kendra.literals import ConfluenceSpaceFieldNameType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `SPACE_KEY`
 - `URL`
 
-## ConfluenceVersion
+## ConfluenceVersionType
 
 ```python
-from mypy_boto3_kendra.literals import ConfluenceVersion
+from mypy_boto3_kendra.literals import ConfluenceVersionType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 - `CLOUD`
 - `SERVER`
 
-## ContentType
+## ContentTypeType
 
 ```python
-from mypy_boto3_kendra.literals import ContentType
+from mypy_boto3_kendra.literals import ContentTypeType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `PLAIN_TEXT`
 - `PPT`
 
-## DataSourceStatus
+## DataSourceStatusType
 
 ```python
-from mypy_boto3_kendra.literals import DataSourceStatus
+from mypy_boto3_kendra.literals import DataSourceStatusType
 ```
 
 Values:
@@ -165,10 +165,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## DataSourceSyncJobStatus
+## DataSourceSyncJobStatusType
 
 ```python
-from mypy_boto3_kendra.literals import DataSourceSyncJobStatus
+from mypy_boto3_kendra.literals import DataSourceSyncJobStatusType
 ```
 
 Values:
@@ -181,10 +181,10 @@ Values:
 - `SYNCING`
 - `SYNCING_INDEXING`
 
-## DataSourceType
+## DataSourceTypeType
 
 ```python
-from mypy_boto3_kendra.literals import DataSourceType
+from mypy_boto3_kendra.literals import DataSourceTypeType
 ```
 
 Values:
@@ -199,10 +199,10 @@ Values:
 - `SERVICENOW`
 - `SHAREPOINT`
 
-## DatabaseEngineType
+## DatabaseEngineTypeType
 
 ```python
-from mypy_boto3_kendra.literals import DatabaseEngineType
+from mypy_boto3_kendra.literals import DatabaseEngineTypeType
 ```
 
 Values:
@@ -212,10 +212,10 @@ Values:
 - `RDS_MYSQL`
 - `RDS_POSTGRESQL`
 
-## DocumentAttributeValueType
+## DocumentAttributeValueTypeType
 
 ```python
-from mypy_boto3_kendra.literals import DocumentAttributeValueType
+from mypy_boto3_kendra.literals import DocumentAttributeValueTypeType
 ```
 
 Values:
@@ -225,10 +225,10 @@ Values:
 - `STRING_LIST_VALUE`
 - `STRING_VALUE`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_kendra.literals import ErrorCode
+from mypy_boto3_kendra.literals import ErrorCodeType
 ```
 
 Values:
@@ -236,10 +236,10 @@ Values:
 - `InternalError`
 - `InvalidRequest`
 
-## FaqFileFormat
+## FaqFileFormatType
 
 ```python
-from mypy_boto3_kendra.literals import FaqFileFormat
+from mypy_boto3_kendra.literals import FaqFileFormatType
 ```
 
 Values:
@@ -248,10 +248,10 @@ Values:
 - `CSV_WITH_HEADER`
 - `JSON`
 
-## FaqStatus
+## FaqStatusType
 
 ```python
-from mypy_boto3_kendra.literals import FaqStatus
+from mypy_boto3_kendra.literals import FaqStatusType
 ```
 
 Values:
@@ -262,10 +262,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## HighlightType
+## HighlightTypeType
 
 ```python
-from mypy_boto3_kendra.literals import HighlightType
+from mypy_boto3_kendra.literals import HighlightTypeType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `STANDARD`
 - `THESAURUS_SYNONYM`
 
-## IndexEdition
+## IndexEditionType
 
 ```python
-from mypy_boto3_kendra.literals import IndexEdition
+from mypy_boto3_kendra.literals import IndexEditionType
 ```
 
 Values:
@@ -284,10 +284,10 @@ Values:
 - `DEVELOPER_EDITION`
 - `ENTERPRISE_EDITION`
 
-## IndexStatus
+## IndexStatusType
 
 ```python
-from mypy_boto3_kendra.literals import IndexStatus
+from mypy_boto3_kendra.literals import IndexStatusType
 ```
 
 Values:
@@ -299,10 +299,10 @@ Values:
 - `SYSTEM_UPDATING`
 - `UPDATING`
 
-## KeyLocation
+## KeyLocationType
 
 ```python
-from mypy_boto3_kendra.literals import KeyLocation
+from mypy_boto3_kendra.literals import KeyLocationType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 - `SECRET_MANAGER`
 - `URL`
 
-## Order
+## OrderType
 
 ```python
-from mypy_boto3_kendra.literals import Order
+from mypy_boto3_kendra.literals import OrderType
 ```
 
 Values:
@@ -321,10 +321,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## PrincipalType
+## PrincipalTypeType
 
 ```python
-from mypy_boto3_kendra.literals import PrincipalType
+from mypy_boto3_kendra.literals import PrincipalTypeType
 ```
 
 Values:
@@ -332,10 +332,10 @@ Values:
 - `GROUP`
 - `USER`
 
-## QueryIdentifiersEnclosingOption
+## QueryIdentifiersEnclosingOptionType
 
 ```python
-from mypy_boto3_kendra.literals import QueryIdentifiersEnclosingOption
+from mypy_boto3_kendra.literals import QueryIdentifiersEnclosingOptionType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `DOUBLE_QUOTES`
 - `NONE`
 
-## QueryResultType
+## QueryResultTypeType
 
 ```python
-from mypy_boto3_kendra.literals import QueryResultType
+from mypy_boto3_kendra.literals import QueryResultTypeType
 ```
 
 Values:
@@ -355,10 +355,10 @@ Values:
 - `DOCUMENT`
 - `QUESTION_ANSWER`
 
-## ReadAccessType
+## ReadAccessTypeType
 
 ```python
-from mypy_boto3_kendra.literals import ReadAccessType
+from mypy_boto3_kendra.literals import ReadAccessTypeType
 ```
 
 Values:
@@ -366,10 +366,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## RelevanceType
+## RelevanceTypeType
 
 ```python
-from mypy_boto3_kendra.literals import RelevanceType
+from mypy_boto3_kendra.literals import RelevanceTypeType
 ```
 
 Values:
@@ -377,10 +377,10 @@ Values:
 - `NOT_RELEVANT`
 - `RELEVANT`
 
-## SalesforceChatterFeedIncludeFilterType
+## SalesforceChatterFeedIncludeFilterTypeType
 
 ```python
-from mypy_boto3_kendra.literals import SalesforceChatterFeedIncludeFilterType
+from mypy_boto3_kendra.literals import SalesforceChatterFeedIncludeFilterTypeType
 ```
 
 Values:
@@ -388,10 +388,10 @@ Values:
 - `ACTIVE_USER`
 - `STANDARD_USER`
 
-## SalesforceKnowledgeArticleState
+## SalesforceKnowledgeArticleStateType
 
 ```python
-from mypy_boto3_kendra.literals import SalesforceKnowledgeArticleState
+from mypy_boto3_kendra.literals import SalesforceKnowledgeArticleStateType
 ```
 
 Values:
@@ -400,10 +400,10 @@ Values:
 - `DRAFT`
 - `PUBLISHED`
 
-## SalesforceStandardObjectName
+## SalesforceStandardObjectNameType
 
 ```python
-from mypy_boto3_kendra.literals import SalesforceStandardObjectName
+from mypy_boto3_kendra.literals import SalesforceStandardObjectNameType
 ```
 
 Values:
@@ -426,10 +426,10 @@ Values:
 - `TASK`
 - `USER`
 
-## ScoreConfidence
+## ScoreConfidenceType
 
 ```python
-from mypy_boto3_kendra.literals import ScoreConfidence
+from mypy_boto3_kendra.literals import ScoreConfidenceType
 ```
 
 Values:
@@ -439,10 +439,10 @@ Values:
 - `MEDIUM`
 - `VERY_HIGH`
 
-## ServiceNowAuthenticationType
+## ServiceNowAuthenticationTypeType
 
 ```python
-from mypy_boto3_kendra.literals import ServiceNowAuthenticationType
+from mypy_boto3_kendra.literals import ServiceNowAuthenticationTypeType
 ```
 
 Values:
@@ -450,10 +450,10 @@ Values:
 - `HTTP_BASIC`
 - `OAUTH2`
 
-## ServiceNowBuildVersionType
+## ServiceNowBuildVersionTypeType
 
 ```python
-from mypy_boto3_kendra.literals import ServiceNowBuildVersionType
+from mypy_boto3_kendra.literals import ServiceNowBuildVersionTypeType
 ```
 
 Values:
@@ -461,20 +461,20 @@ Values:
 - `LONDON`
 - `OTHERS`
 
-## SharePointVersion
+## SharePointVersionType
 
 ```python
-from mypy_boto3_kendra.literals import SharePointVersion
+from mypy_boto3_kendra.literals import SharePointVersionType
 ```
 
 Values:
 
 - `SHAREPOINT_ONLINE`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_kendra.literals import SortOrder
+from mypy_boto3_kendra.literals import SortOrderType
 ```
 
 Values:
@@ -482,10 +482,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## ThesaurusStatus
+## ThesaurusStatusType
 
 ```python
-from mypy_boto3_kendra.literals import ThesaurusStatus
+from mypy_boto3_kendra.literals import ThesaurusStatusType
 ```
 
 Values:
@@ -497,10 +497,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## UserContextPolicy
+## UserContextPolicyType
 
 ```python
-from mypy_boto3_kendra.literals import UserContextPolicy
+from mypy_boto3_kendra.literals import UserContextPolicyType
 ```
 
 Values:

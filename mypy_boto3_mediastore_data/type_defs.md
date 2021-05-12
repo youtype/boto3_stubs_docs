@@ -3,7 +3,7 @@
 > [Index](..) > [MediaStoreData](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
 [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
@@ -58,7 +58,7 @@ from mypy_boto3_mediastore_data.type_defs import ItemTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`: [ItemType](./literals.md#itemtype)
+- `Type`: [ItemTypeType](./literals.md#itemtypetype)
 - `ETag`: `str`
 - `LastModified`: `datetime`
 - `ContentType`: `str`
@@ -98,4 +98,4 @@ Optional fields:
 - `ContentSHA256`: `str`
 - `ETag`: `str`
 - `StorageClass`: `Literal['TEMPORAL']` (see
-  [StorageClass](./literals.md#storageclass))
+  [StorageClassType](./literals.md#storageclasstype))

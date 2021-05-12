@@ -3,7 +3,7 @@
 > [Index](..) > [S3](.) > Typed dictionaries
 
 Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3)
 type annotations stubs module
 [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
@@ -218,7 +218,7 @@ from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputTypeDef
 Required fields:
 
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -230,7 +230,8 @@ from mypy_boto3_s3.type_defs import AccelerateConfigurationTypeDef
 
 Optional fields:
 
-- `Status`: [BucketAccelerateStatus](./literals.md#bucketacceleratestatus)
+- `Status`:
+  [BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype)
 
 ## AccessControlPolicyTypeDef
 
@@ -252,7 +253,7 @@ from mypy_boto3_s3.type_defs import AccessControlTranslationTypeDef
 Required fields:
 
 - `Owner`: `Literal['Destination']` (see
-  [OwnerOverride](./literals.md#owneroverride))
+  [OwnerOverrideType](./literals.md#owneroverridetype))
 
 ## AnalyticsAndOperatorTypeDef
 
@@ -314,7 +315,7 @@ from mypy_boto3_s3.type_defs import AnalyticsS3BucketDestinationTypeDef
 Required fields:
 
 - `Format`: `Literal['CSV']` (see
-  [AnalyticsS3ExportFileFormat](./literals.md#analyticss3exportfileformat))
+  [AnalyticsS3ExportFileFormatType](./literals.md#analyticss3exportfileformattype))
 - `Bucket`: `str`
 
 Optional fields:
@@ -330,7 +331,8 @@ from mypy_boto3_s3.type_defs import BucketLifecycleConfigurationTypeDef
 
 Required fields:
 
-- `Rules`: `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+- `Rules`:
+  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 
 ## BucketLoggingStatusTypeDef
 
@@ -340,7 +342,8 @@ from mypy_boto3_s3.type_defs import BucketLoggingStatusTypeDef
 
 Optional fields:
 
-- `LoggingEnabled`: [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
+- `LoggingEnabled`:
+  [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 
 ## BucketTypeDef
 
@@ -389,7 +392,7 @@ from mypy_boto3_s3.type_defs import CSVInputTypeDef
 
 Optional fields:
 
-- `FileHeaderInfo`: [FileHeaderInfo](./literals.md#fileheaderinfo)
+- `FileHeaderInfo`: [FileHeaderInfoType](./literals.md#fileheaderinfotype)
 - `Comments`: `str`
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
@@ -405,7 +408,7 @@ from mypy_boto3_s3.type_defs import CSVOutputTypeDef
 
 Required fields:
 
-- `QuoteFields`: [QuoteFields](./literals.md#quotefields)
+- `QuoteFields`: [QuoteFieldsType](./literals.md#quotefieldstype)
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
@@ -422,8 +425,8 @@ from mypy_boto3_s3.type_defs import CloudFunctionConfigurationTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Event`: [Event](./literals.md#event)
-- `Events`: `List`\[[Event](./literals.md#event)\]
+- `Event`: [EventType](./literals.md#eventtype)
+- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 - `CloudFunction`: `str`
 - `InvocationRole`: `str`
 
@@ -451,12 +454,12 @@ Required fields:
 - `Expiration`: `str`
 - `ETag`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `VersionId`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -468,7 +471,8 @@ from mypy_boto3_s3.type_defs import CompletedMultipartUploadTypeDef
 
 Optional fields:
 
-- `Parts`: `List`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
+- `Parts`:
+  `List`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
 
 ## CompletedPartTypeDef
 
@@ -506,14 +510,14 @@ Required fields:
 - `CopySourceVersionId`: `str`
 - `VersionId`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -563,7 +567,7 @@ from mypy_boto3_s3.type_defs import CreateBucketConfigurationTypeDef
 Optional fields:
 
 - `LocationConstraint`:
-  [BucketLocationConstraint](./literals.md#bucketlocationconstraint)
+  [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 
 ## CreateBucketOutputTypeDef
 
@@ -591,14 +595,14 @@ Required fields:
 - `Key`: `str`
 - `UploadId`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -610,7 +614,8 @@ from mypy_boto3_s3.type_defs import DefaultRetentionTypeDef
 
 Optional fields:
 
-- `Mode`: [ObjectLockRetentionMode](./literals.md#objectlockretentionmode)
+- `Mode`:
+  [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
 - `Days`: `int`
 - `Years`: `int`
 
@@ -637,7 +642,7 @@ from mypy_boto3_s3.type_defs import DeleteMarkerReplicationTypeDef
 Optional fields:
 
 - `Status`:
-  [DeleteMarkerReplicationStatus](./literals.md#deletemarkerreplicationstatus)
+  [DeleteMarkerReplicationStatusType](./literals.md#deletemarkerreplicationstatustype)
 
 ## DeleteObjectOutputTypeDef
 
@@ -650,7 +655,7 @@ Required fields:
 - `DeleteMarker`: `bool`
 - `VersionId`: `str`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -677,7 +682,7 @@ Required fields:
 - `Deleted`:
   `List`\[[DeletedObjectTypeDef](./type_defs.md#deletedobjecttypedef)\]
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `Errors`: `List`\[[ErrorTypeDef](./type_defs.md#errortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -723,7 +728,7 @@ Required fields:
 Optional fields:
 
 - `Account`: `str`
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `AccessControlTranslation`:
   [AccessControlTranslationTypeDef](./type_defs.md#accesscontroltranslationtypedef)
 - `EncryptionConfiguration`:
@@ -750,7 +755,8 @@ from mypy_boto3_s3.type_defs import EncryptionTypeDef
 
 Required fields:
 
-- `EncryptionType`: [ServerSideEncryption](./literals.md#serversideencryption)
+- `EncryptionType`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 
 Optional fields:
 
@@ -789,7 +795,7 @@ from mypy_boto3_s3.type_defs import ExistingObjectReplicationTypeDef
 Required fields:
 
 - `Status`:
-  [ExistingObjectReplicationStatus](./literals.md#existingobjectreplicationstatus)
+  [ExistingObjectReplicationStatusType](./literals.md#existingobjectreplicationstatustype)
 
 ## FilterRuleTypeDef
 
@@ -799,7 +805,7 @@ from mypy_boto3_s3.type_defs import FilterRuleTypeDef
 
 Optional fields:
 
-- `Name`: [FilterRuleName](./literals.md#filterrulename)
+- `Name`: [FilterRuleNameType](./literals.md#filterrulenametype)
 - `Value`: `str`
 
 ## GetBucketAccelerateConfigurationOutputTypeDef
@@ -810,7 +816,8 @@ from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputTypeDe
 
 Required fields:
 
-- `Status`: [BucketAccelerateStatus](./literals.md#bucketacceleratestatus)
+- `Status`:
+  [BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -899,7 +906,8 @@ from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputTypeDef
 
 Required fields:
 
-- `Rules`: `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+- `Rules`:
+  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -924,7 +932,7 @@ from mypy_boto3_s3.type_defs import GetBucketLocationOutputTypeDef
 Required fields:
 
 - `LocationConstraint`:
-  [BucketLocationConstraint](./literals.md#bucketlocationconstraint)
+  [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -936,7 +944,8 @@ from mypy_boto3_s3.type_defs import GetBucketLoggingOutputTypeDef
 
 Required fields:
 
-- `LoggingEnabled`: [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
+- `LoggingEnabled`:
+  [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1011,7 +1020,7 @@ from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputTypeDef
 
 Required fields:
 
-- `Payer`: [Payer](./literals.md#payer)
+- `Payer`: [PayerType](./literals.md#payertype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1035,8 +1044,9 @@ from mypy_boto3_s3.type_defs import GetBucketVersioningOutputTypeDef
 
 Required fields:
 
-- `Status`: [BucketVersioningStatus](./literals.md#bucketversioningstatus)
-- `MFADelete`: [MFADeleteStatus](./literals.md#mfadeletestatus)
+- `Status`:
+  [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
+- `MFADelete`: [MFADeleteStatusType](./literals.md#mfadeletestatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1068,7 +1078,7 @@ Required fields:
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1125,22 +1135,23 @@ Required fields:
 - `Expires`: `datetime`
 - `WebsiteRedirectLocation`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
-- `ReplicationStatus`: [ReplicationStatus](./literals.md#replicationstatus)
+  [RequestChargedType](./literals.md#requestchargedtype))
+- `ReplicationStatus`:
+  [ReplicationStatusType](./literals.md#replicationstatustype)
 - `PartsCount`: `int`
 - `TagCount`: `int`
-- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1180,7 +1191,7 @@ Required fields:
 
 - `Body`: `StreamingBody`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1205,7 +1216,7 @@ from mypy_boto3_s3.type_defs import GlacierJobParametersTypeDef
 
 Required fields:
 
-- `Tier`: [Tier](./literals.md#tier)
+- `Tier`: [TierType](./literals.md#tiertype)
 
 ## GrantTypeDef
 
@@ -1216,7 +1227,7 @@ from mypy_boto3_s3.type_defs import GrantTypeDef
 Optional fields:
 
 - `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
-- `Permission`: [Permission](./literals.md#permission)
+- `Permission`: [PermissionType](./literals.md#permissiontype)
 
 ## GranteeTypeDef
 
@@ -1247,7 +1258,7 @@ Required fields:
 - `AcceptRanges`: `str`
 - `Expiration`: `str`
 - `Restore`: `str`
-- `ArchiveStatus`: [ArchiveStatus](./literals.md#archivestatus)
+- `ArchiveStatus`: [ArchiveStatusType](./literals.md#archivestatustype)
 - `LastModified`: `datetime`
 - `ContentLength`: `int`
 - `ETag`: `str`
@@ -1261,21 +1272,22 @@ Required fields:
 - `Expires`: `datetime`
 - `WebsiteRedirectLocation`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
-- `ReplicationStatus`: [ReplicationStatus](./literals.md#replicationstatus)
+  [RequestChargedType](./literals.md#requestchargedtype))
+- `ReplicationStatus`:
+  [ReplicationStatusType](./literals.md#replicationstatustype)
 - `PartsCount`: `int`
-- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1309,7 +1321,7 @@ from mypy_boto3_s3.type_defs import InputSerializationTypeDef
 Optional fields:
 
 - `CSV`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
-- `CompressionType`: [CompressionType](./literals.md#compressiontype)
+- `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
 - `JSON`: [JSONInputTypeDef](./type_defs.md#jsoninputtypedef)
 - `Parquet`: `Dict`\[`str`, `Any`\]
 
@@ -1333,7 +1345,8 @@ from mypy_boto3_s3.type_defs import IntelligentTieringConfigurationTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Status`: [IntelligentTieringStatus](./literals.md#intelligenttieringstatus)
+- `Status`:
+  [IntelligentTieringStatusType](./literals.md#intelligenttieringstatustype)
 - `Tierings`: `List`\[[TieringTypeDef](./type_defs.md#tieringtypedef)\]
 
 Optional fields:
@@ -1367,14 +1380,15 @@ Required fields:
 - `IsEnabled`: `bool`
 - `Id`: `str`
 - `IncludedObjectVersions`:
-  [InventoryIncludedObjectVersions](./literals.md#inventoryincludedobjectversions)
-- `Schedule`: [InventoryScheduleTypeDef](./type_defs.md#inventoryscheduletypedef)
+  [InventoryIncludedObjectVersionsType](./literals.md#inventoryincludedobjectversionstype)
+- `Schedule`:
+  [InventoryScheduleTypeDef](./type_defs.md#inventoryscheduletypedef)
 
 Optional fields:
 
 - `Filter`: [InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)
 - `OptionalFields`:
-  `List`\[[InventoryOptionalField](./literals.md#inventoryoptionalfield)\]
+  `List`\[[InventoryOptionalFieldType](./literals.md#inventoryoptionalfieldtype)\]
 
 ## InventoryDestinationTypeDef
 
@@ -1417,7 +1431,7 @@ from mypy_boto3_s3.type_defs import InventoryS3BucketDestinationTypeDef
 Required fields:
 
 - `Bucket`: `str`
-- `Format`: [InventoryFormat](./literals.md#inventoryformat)
+- `Format`: [InventoryFormatType](./literals.md#inventoryformattype)
 
 Optional fields:
 
@@ -1434,7 +1448,7 @@ from mypy_boto3_s3.type_defs import InventoryScheduleTypeDef
 
 Required fields:
 
-- `Frequency`: [InventoryFrequency](./literals.md#inventoryfrequency)
+- `Frequency`: [InventoryFrequencyType](./literals.md#inventoryfrequencytype)
 
 ## JSONInputTypeDef
 
@@ -1444,7 +1458,7 @@ from mypy_boto3_s3.type_defs import JSONInputTypeDef
 
 Optional fields:
 
-- `Type`: [JSONType](./literals.md#jsontype)
+- `Type`: [JSONTypeType](./literals.md#jsontypetype)
 
 ## JSONOutputTypeDef
 
@@ -1467,7 +1481,7 @@ from mypy_boto3_s3.type_defs import LambdaFunctionConfigurationTypeDef
 Required fields:
 
 - `LambdaFunctionArn`: `str`
-- `Events`: `List`\[[Event](./literals.md#event)\]
+- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 
 Optional fields:
 
@@ -1529,7 +1543,7 @@ from mypy_boto3_s3.type_defs import LifecycleRuleTypeDef
 
 Required fields:
 
-- `Status`: [ExpirationStatus](./literals.md#expirationstatus)
+- `Status`: [ExpirationStatusType](./literals.md#expirationstatustype)
 
 Optional fields:
 
@@ -1539,7 +1553,8 @@ Optional fields:
 - `Prefix`: `str`
 - `Filter`:
   [LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef)
-- `Transitions`: `List`\[[TransitionTypeDef](./type_defs.md#transitiontypedef)\]
+- `Transitions`:
+  `List`\[[TransitionTypeDef](./type_defs.md#transitiontypedef)\]
 - `NoncurrentVersionTransitions`:
   `List`\[[NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef)\]
 - `NoncurrentVersionExpiration`:
@@ -1646,7 +1661,7 @@ Required fields:
 - `CommonPrefixes`:
   `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1674,7 +1689,7 @@ Required fields:
 - `CommonPrefixes`:
   `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1697,7 +1712,7 @@ Required fields:
 - `CommonPrefixes`:
   `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1718,7 +1733,7 @@ Required fields:
 - `CommonPrefixes`:
   `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `KeyCount`: `int`
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
@@ -1746,9 +1761,9 @@ Required fields:
 - `Parts`: `List`\[[PartTypeDef](./type_defs.md#parttypedef)\]
 - `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1824,7 +1839,7 @@ from mypy_boto3_s3.type_defs import MetricsTypeDef
 
 Required fields:
 
-- `Status`: [MetricsStatus](./literals.md#metricsstatus)
+- `Status`: [MetricsStatusType](./literals.md#metricsstatustype)
 
 Optional fields:
 
@@ -1842,7 +1857,7 @@ Optional fields:
 - `UploadId`: `str`
 - `Key`: `str`
 - `Initiated`: `datetime`
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
 
@@ -1865,7 +1880,8 @@ from mypy_boto3_s3.type_defs import NoncurrentVersionTransitionTypeDef
 Optional fields:
 
 - `NoncurrentDays`: `int`
-- `StorageClass`: [TransitionStorageClass](./literals.md#transitionstorageclass)
+- `StorageClass`:
+  [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
 ## NotificationConfigurationDeprecatedTypeDef
 
@@ -1930,7 +1946,7 @@ from mypy_boto3_s3.type_defs import ObjectLockConfigurationTypeDef
 Optional fields:
 
 - `ObjectLockEnabled`: `Literal['Enabled']` (see
-  [ObjectLockEnabled](./literals.md#objectlockenabled))
+  [ObjectLockEnabledType](./literals.md#objectlockenabledtype))
 - `Rule`: [ObjectLockRuleTypeDef](./type_defs.md#objectlockruletypedef)
 
 ## ObjectLockLegalHoldTypeDef
@@ -1941,7 +1957,8 @@ from mypy_boto3_s3.type_defs import ObjectLockLegalHoldTypeDef
 
 Optional fields:
 
-- `Status`: [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+- `Status`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 
 ## ObjectLockRetentionTypeDef
 
@@ -1951,7 +1968,8 @@ from mypy_boto3_s3.type_defs import ObjectLockRetentionTypeDef
 
 Optional fields:
 
-- `Mode`: [ObjectLockRetentionMode](./literals.md#objectlockretentionmode)
+- `Mode`:
+  [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
 - `RetainUntilDate`: `datetime`
 
 ## ObjectLockRuleTypeDef
@@ -1977,7 +1995,8 @@ Optional fields:
 - `LastModified`: `datetime`
 - `ETag`: `str`
 - `Size`: `int`
-- `StorageClass`: [ObjectStorageClass](./literals.md#objectstorageclass)
+- `StorageClass`:
+  [ObjectStorageClassType](./literals.md#objectstorageclasstype)
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
 ## ObjectVersionTypeDef
@@ -1991,7 +2010,7 @@ Optional fields:
 - `ETag`: `str`
 - `Size`: `int`
 - `StorageClass`: `Literal['STANDARD']` (see
-  [ObjectVersionStorageClass](./literals.md#objectversionstorageclass))
+  [ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype))
 - `Key`: `str`
 - `VersionId`: `str`
 - `IsLatest`: `bool`
@@ -2038,7 +2057,7 @@ from mypy_boto3_s3.type_defs import OwnershipControlsRuleTypeDef
 
 Required fields:
 
-- `ObjectOwnership`: [ObjectOwnership](./literals.md#objectownership)
+- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 ## OwnershipControlsTypeDef
 
@@ -2130,7 +2149,7 @@ from mypy_boto3_s3.type_defs import PutObjectAclOutputTypeDef
 Required fields:
 
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2143,7 +2162,7 @@ from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputTypeDef
 Required fields:
 
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2156,7 +2175,7 @@ from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputTypeDef
 Required fields:
 
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2171,7 +2190,7 @@ Required fields:
 - `Expiration`: `str`
 - `ETag`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `VersionId`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
@@ -2179,7 +2198,7 @@ Required fields:
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2192,7 +2211,7 @@ from mypy_boto3_s3.type_defs import PutObjectRetentionOutputTypeDef
 Required fields:
 
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2217,8 +2236,8 @@ from mypy_boto3_s3.type_defs import QueueConfigurationDeprecatedTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Event`: [Event](./literals.md#event)
-- `Events`: `List`\[[Event](./literals.md#event)\]
+- `Event`: [EventType](./literals.md#eventtype)
+- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 - `Queue`: `str`
 
 ## QueueConfigurationTypeDef
@@ -2230,7 +2249,7 @@ from mypy_boto3_s3.type_defs import QueueConfigurationTypeDef
 Required fields:
 
 - `QueueArn`: `str`
-- `Events`: `List`\[[Event](./literals.md#event)\]
+- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 
 Optional fields:
 
@@ -2285,7 +2304,7 @@ from mypy_boto3_s3.type_defs import ReplicaModificationsTypeDef
 Required fields:
 
 - `Status`:
-  [ReplicaModificationsStatus](./literals.md#replicamodificationsstatus)
+  [ReplicaModificationsStatusType](./literals.md#replicamodificationsstatustype)
 
 ## ReplicationConfigurationTypeDef
 
@@ -2331,7 +2350,8 @@ from mypy_boto3_s3.type_defs import ReplicationRuleTypeDef
 
 Required fields:
 
-- `Status`: [ReplicationRuleStatus](./literals.md#replicationrulestatus)
+- `Status`:
+  [ReplicationRuleStatusType](./literals.md#replicationrulestatustype)
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
 
 Optional fields:
@@ -2356,7 +2376,8 @@ from mypy_boto3_s3.type_defs import ReplicationTimeTypeDef
 
 Required fields:
 
-- `Status`: [ReplicationTimeStatus](./literals.md#replicationtimestatus)
+- `Status`:
+  [ReplicationTimeStatusType](./literals.md#replicationtimestatustype)
 - `Time`:
   [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 
@@ -2378,7 +2399,7 @@ from mypy_boto3_s3.type_defs import RequestPaymentConfigurationTypeDef
 
 Required fields:
 
-- `Payer`: [Payer](./literals.md#payer)
+- `Payer`: [PayerType](./literals.md#payertype)
 
 ## RequestProgressTypeDef
 
@@ -2413,7 +2434,7 @@ from mypy_boto3_s3.type_defs import RestoreObjectOutputTypeDef
 Required fields:
 
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `RestoreOutputPath`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2430,12 +2451,13 @@ Optional fields:
 - `GlacierJobParameters`:
   [GlacierJobParametersTypeDef](./type_defs.md#glacierjobparameterstypedef)
 - `Type`: `Literal['SELECT']` (see
-  [RestoreRequestType](./literals.md#restorerequesttype))
-- `Tier`: [Tier](./literals.md#tier)
+  [RestoreRequestTypeType](./literals.md#restorerequesttypetype))
+- `Tier`: [TierType](./literals.md#tiertype)
 - `Description`: `str`
 - `SelectParameters`:
   [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `OutputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
 ## RoutingRuleTypeDef
 
@@ -2460,7 +2482,7 @@ from mypy_boto3_s3.type_defs import RuleTypeDef
 Required fields:
 
 - `Prefix`: `str`
-- `Status`: [ExpirationStatus](./literals.md#expirationstatus)
+- `Status`: [ExpirationStatusType](./literals.md#expirationstatustype)
 
 Optional fields:
 
@@ -2483,7 +2505,8 @@ from mypy_boto3_s3.type_defs import S3KeyFilterTypeDef
 
 Optional fields:
 
-- `FilterRules`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `FilterRules`:
+  `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 ## S3LocationTypeDef
 
@@ -2499,12 +2522,12 @@ Required fields:
 Optional fields:
 
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `CannedACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
+- `CannedACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `AccessControlList`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
 - `UserMetadata`:
   `List`\[[MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef)\]
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 
 ## SSEKMSTypeDef
 
@@ -2565,7 +2588,7 @@ Required fields:
 - `InputSerialization`:
   [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
 - `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionType](./literals.md#expressiontype))
+  [ExpressionTypeType](./literals.md#expressiontypetype))
 - `Expression`: `str`
 - `OutputSerialization`:
   [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
@@ -2578,7 +2601,8 @@ from mypy_boto3_s3.type_defs import ServerSideEncryptionByDefaultTypeDef
 
 Required fields:
 
-- `SSEAlgorithm`: [ServerSideEncryption](./literals.md#serversideencryption)
+- `SSEAlgorithm`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 
 Optional fields:
 
@@ -2629,7 +2653,7 @@ from mypy_boto3_s3.type_defs import SseKmsEncryptedObjectsTypeDef
 Required fields:
 
 - `Status`:
-  [SseKmsEncryptedObjectsStatus](./literals.md#ssekmsencryptedobjectsstatus)
+  [SseKmsEncryptedObjectsStatusType](./literals.md#ssekmsencryptedobjectsstatustype)
 
 ## StatsEventTypeDef
 
@@ -2662,7 +2686,7 @@ from mypy_boto3_s3.type_defs import StorageClassAnalysisDataExportTypeDef
 Required fields:
 
 - `OutputSchemaVersion`: `Literal['V_1']` (see
-  [StorageClassAnalysisSchemaVersion](./literals.md#storageclassanalysisschemaversion))
+  [StorageClassAnalysisSchemaVersionType](./literals.md#storageclassanalysisschemaversiontype))
 - `Destination`:
   [AnalyticsExportDestinationTypeDef](./type_defs.md#analyticsexportdestinationtypedef)
 
@@ -2707,7 +2731,8 @@ from mypy_boto3_s3.type_defs import TargetGrantTypeDef
 Optional fields:
 
 - `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
-- `Permission`: [BucketLogsPermission](./literals.md#bucketlogspermission)
+- `Permission`:
+  [BucketLogsPermissionType](./literals.md#bucketlogspermissiontype)
 
 ## TieringTypeDef
 
@@ -2719,7 +2744,7 @@ Required fields:
 
 - `Days`: `int`
 - `AccessTier`:
-  [IntelligentTieringAccessTier](./literals.md#intelligenttieringaccesstier)
+  [IntelligentTieringAccessTierType](./literals.md#intelligenttieringaccesstiertype)
 
 ## TopicConfigurationDeprecatedTypeDef
 
@@ -2730,8 +2755,8 @@ from mypy_boto3_s3.type_defs import TopicConfigurationDeprecatedTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Events`: `List`\[[Event](./literals.md#event)\]
-- `Event`: [Event](./literals.md#event)
+- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
+- `Event`: [EventType](./literals.md#eventtype)
 - `Topic`: `str`
 
 ## TopicConfigurationTypeDef
@@ -2743,7 +2768,7 @@ from mypy_boto3_s3.type_defs import TopicConfigurationTypeDef
 Required fields:
 
 - `TopicArn`: `str`
-- `Events`: `List`\[[Event](./literals.md#event)\]
+- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 
 Optional fields:
 
@@ -2761,7 +2786,8 @@ Optional fields:
 
 - `Date`: `datetime`
 - `Days`: `int`
-- `StorageClass`: [TransitionStorageClass](./literals.md#transitionstorageclass)
+- `StorageClass`:
+  [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
 ## UploadPartCopyOutputTypeDef
 
@@ -2772,15 +2798,16 @@ from mypy_boto3_s3.type_defs import UploadPartCopyOutputTypeDef
 Required fields:
 
 - `CopySourceVersionId`: `str`
-- `CopyPartResult`: [CopyPartResultTypeDef](./type_defs.md#copypartresulttypedef)
+- `CopyPartResult`:
+  [CopyPartResultTypeDef](./type_defs.md#copypartresulttypedef)
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2793,14 +2820,14 @@ from mypy_boto3_s3.type_defs import UploadPartOutputTypeDef
 Required fields:
 
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `ETag`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2812,8 +2839,9 @@ from mypy_boto3_s3.type_defs import VersioningConfigurationTypeDef
 
 Optional fields:
 
-- `MFADelete`: [MFADelete](./literals.md#mfadelete)
-- `Status`: [BucketVersioningStatus](./literals.md#bucketversioningstatus)
+- `MFADelete`: [MFADeleteType](./literals.md#mfadeletetype)
+- `Status`:
+  [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
 
 ## WaiterConfigTypeDef
 

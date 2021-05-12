@@ -3,15 +3,15 @@
 > [Index](..) > [Mobile](.) > Literals
 
 Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mobile.html#Mobile)
 type annotations stubs module
 [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 - [Literals for boto3 Mobile module](#literals-for-boto3-mobile-module)
   - [ListBundlesPaginatorName](#listbundlespaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
-  - [Platform](#platform)
-  - [ProjectState](#projectstate)
+  - [PlatformType](#platformtype)
+  - [ProjectStateType](#projectstatetype)
 
 ## ListBundlesPaginatorName
 
@@ -33,10 +33,10 @@ Values:
 
 - `list_projects`
 
-## Platform
+## PlatformType
 
 ```python
-from mypy_boto3_mobile.literals import Platform
+from mypy_boto3_mobile.literals import PlatformType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `SWIFT`
 - `WINDOWS`
 
-## ProjectState
+## ProjectStateType
 
 ```python
-from mypy_boto3_mobile.literals import ProjectState
+from mypy_boto3_mobile.literals import ProjectStateType
 ```
 
 Values:

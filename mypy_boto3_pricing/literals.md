@@ -3,13 +3,13 @@
 > [Index](..) > [Pricing](.) > Literals
 
 Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pricing.html#Pricing)
 type annotations stubs module
 [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [Literals for boto3 Pricing module](#literals-for-boto3-pricing-module)
   - [DescribeServicesPaginatorName](#describeservicespaginatorname)
-  - [FilterType](#filtertype)
+  - [FilterTypeType](#filtertypetype)
   - [GetAttributeValuesPaginatorName](#getattributevaluespaginatorname)
   - [GetProductsPaginatorName](#getproductspaginatorname)
 
@@ -23,10 +23,10 @@ Values:
 
 - `describe_services`
 
-## FilterType
+## FilterTypeType
 
 ```python
-from mypy_boto3_pricing.literals import FilterType
+from mypy_boto3_pricing.literals import FilterTypeType
 ```
 
 Values:

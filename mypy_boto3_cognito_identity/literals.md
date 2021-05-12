@@ -3,21 +3,21 @@
 > [Index](..) > [CognitoIdentity](.) > Literals
 
 Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
 [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 - [Literals for boto3 CognitoIdentity module](#literals-for-boto3-cognitoidentity-module)
-  - [AmbiguousRoleResolutionType](#ambiguousroleresolutiontype)
-  - [ErrorCode](#errorcode)
+  - [AmbiguousRoleResolutionTypeType](#ambiguousroleresolutiontypetype)
+  - [ErrorCodeType](#errorcodetype)
   - [ListIdentityPoolsPaginatorName](#listidentitypoolspaginatorname)
-  - [MappingRuleMatchType](#mappingrulematchtype)
-  - [RoleMappingType](#rolemappingtype)
+  - [MappingRuleMatchTypeType](#mappingrulematchtypetype)
+  - [RoleMappingTypeType](#rolemappingtypetype)
 
-## AmbiguousRoleResolutionType
+## AmbiguousRoleResolutionTypeType
 
 ```python
-from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionType
+from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType
 ```
 
 Values:
@@ -25,10 +25,10 @@ Values:
 - `AuthenticatedRole`
 - `Deny`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_cognito_identity.literals import ErrorCode
+from mypy_boto3_cognito_identity.literals import ErrorCodeType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 
 - `list_identity_pools`
 
-## MappingRuleMatchType
+## MappingRuleMatchTypeType
 
 ```python
-from mypy_boto3_cognito_identity.literals import MappingRuleMatchType
+from mypy_boto3_cognito_identity.literals import MappingRuleMatchTypeType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `NotEqual`
 - `StartsWith`
 
-## RoleMappingType
+## RoleMappingTypeType
 
 ```python
-from mypy_boto3_cognito_identity.literals import RoleMappingType
+from mypy_boto3_cognito_identity.literals import RoleMappingTypeType
 ```
 
 Values:

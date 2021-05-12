@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScaling](.) > Literals
 
 Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
@@ -18,16 +18,16 @@ type annotations stubs module
   - [DescribeScalingActivitiesPaginatorName](#describescalingactivitiespaginatorname)
   - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
-  - [InstanceMetadataEndpointState](#instancemetadataendpointstate)
-  - [InstanceMetadataHttpTokensState](#instancemetadatahttptokensstate)
-  - [InstanceRefreshStatus](#instancerefreshstatus)
-  - [LifecycleState](#lifecyclestate)
-  - [MetricStatistic](#metricstatistic)
-  - [MetricType](#metrictype)
-  - [RefreshStrategy](#refreshstrategy)
-  - [ScalingActivityStatusCode](#scalingactivitystatuscode)
-  - [WarmPoolState](#warmpoolstate)
-  - [WarmPoolStatus](#warmpoolstatus)
+  - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
+  - [InstanceMetadataHttpTokensStateType](#instancemetadatahttptokensstatetype)
+  - [InstanceRefreshStatusType](#instancerefreshstatustype)
+  - [LifecycleStateType](#lifecyclestatetype)
+  - [MetricStatisticType](#metricstatistictype)
+  - [MetricTypeType](#metrictypetype)
+  - [RefreshStrategyType](#refreshstrategytype)
+  - [ScalingActivityStatusCodeType](#scalingactivitystatuscodetype)
+  - [WarmPoolStateType](#warmpoolstatetype)
+  - [WarmPoolStatusType](#warmpoolstatustype)
 
 ## DescribeAutoScalingGroupsPaginatorName
 
@@ -129,10 +129,10 @@ Values:
 
 - `describe_tags`
 
-## InstanceMetadataEndpointState
+## InstanceMetadataEndpointStateType
 
 ```python
-from mypy_boto3_autoscaling.literals import InstanceMetadataEndpointState
+from mypy_boto3_autoscaling.literals import InstanceMetadataEndpointStateType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## InstanceMetadataHttpTokensState
+## InstanceMetadataHttpTokensStateType
 
 ```python
-from mypy_boto3_autoscaling.literals import InstanceMetadataHttpTokensState
+from mypy_boto3_autoscaling.literals import InstanceMetadataHttpTokensStateType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `optional`
 - `required`
 
-## InstanceRefreshStatus
+## InstanceRefreshStatusType
 
 ```python
-from mypy_boto3_autoscaling.literals import InstanceRefreshStatus
+from mypy_boto3_autoscaling.literals import InstanceRefreshStatusType
 ```
 
 Values:
@@ -166,10 +166,10 @@ Values:
 - `Pending`
 - `Successful`
 
-## LifecycleState
+## LifecycleStateType
 
 ```python
-from mypy_boto3_autoscaling.literals import LifecycleState
+from mypy_boto3_autoscaling.literals import LifecycleStateType
 ```
 
 Values:
@@ -197,10 +197,10 @@ Values:
 - `Warmed:Terminating:Proceed`
 - `Warmed:Terminating:Wait`
 
-## MetricStatistic
+## MetricStatisticType
 
 ```python
-from mypy_boto3_autoscaling.literals import MetricStatistic
+from mypy_boto3_autoscaling.literals import MetricStatisticType
 ```
 
 Values:
@@ -211,10 +211,10 @@ Values:
 - `SampleCount`
 - `Sum`
 
-## MetricType
+## MetricTypeType
 
 ```python
-from mypy_boto3_autoscaling.literals import MetricType
+from mypy_boto3_autoscaling.literals import MetricTypeType
 ```
 
 Values:
@@ -224,20 +224,20 @@ Values:
 - `ASGAverageNetworkIn`
 - `ASGAverageNetworkOut`
 
-## RefreshStrategy
+## RefreshStrategyType
 
 ```python
-from mypy_boto3_autoscaling.literals import RefreshStrategy
+from mypy_boto3_autoscaling.literals import RefreshStrategyType
 ```
 
 Values:
 
 - `Rolling`
 
-## ScalingActivityStatusCode
+## ScalingActivityStatusCodeType
 
 ```python
-from mypy_boto3_autoscaling.literals import ScalingActivityStatusCode
+from mypy_boto3_autoscaling.literals import ScalingActivityStatusCodeType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 - `WaitingForSpotInstanceId`
 - `WaitingForSpotInstanceRequestId`
 
-## WarmPoolState
+## WarmPoolStateType
 
 ```python
-from mypy_boto3_autoscaling.literals import WarmPoolState
+from mypy_boto3_autoscaling.literals import WarmPoolStateType
 ```
 
 Values:
@@ -266,10 +266,10 @@ Values:
 - `Running`
 - `Stopped`
 
-## WarmPoolStatus
+## WarmPoolStatusType
 
 ```python
-from mypy_boto3_autoscaling.literals import WarmPoolStatus
+from mypy_boto3_autoscaling.literals import WarmPoolStatusType
 ```
 
 Values:

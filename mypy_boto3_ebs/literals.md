@@ -3,39 +3,39 @@
 > [Index](..) > [EBS](.) > Literals
 
 Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ebs.html#EBS)
 type annotations stubs module
 [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 - [Literals for boto3 EBS module](#literals-for-boto3-ebs-module)
-  - [ChecksumAggregationMethod](#checksumaggregationmethod)
-  - [ChecksumAlgorithm](#checksumalgorithm)
-  - [Status](#status)
+  - [ChecksumAggregationMethodType](#checksumaggregationmethodtype)
+  - [ChecksumAlgorithmType](#checksumalgorithmtype)
+  - [StatusType](#statustype)
 
-## ChecksumAggregationMethod
+## ChecksumAggregationMethodType
 
 ```python
-from mypy_boto3_ebs.literals import ChecksumAggregationMethod
+from mypy_boto3_ebs.literals import ChecksumAggregationMethodType
 ```
 
 Values:
 
 - `LINEAR`
 
-## ChecksumAlgorithm
+## ChecksumAlgorithmType
 
 ```python
-from mypy_boto3_ebs.literals import ChecksumAlgorithm
+from mypy_boto3_ebs.literals import ChecksumAlgorithmType
 ```
 
 Values:
 
 - `SHA256`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_ebs.literals import Status
+from mypy_boto3_ebs.literals import StatusType
 ```
 
 Values:

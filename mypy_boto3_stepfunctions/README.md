@@ -3,7 +3,7 @@
 > [Index](..) > SFN
 
 Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
 [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
@@ -30,64 +30,64 @@ Can be used directly:
 from mypy_boto3_stepfunctions.client import SFNClient
 ```
 
-SFNClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_activity](./client.md#create-activity)
-- [create_state_machine](./client.md#create-state-machine)
-- [delete_activity](./client.md#delete-activity)
-- [delete_state_machine](./client.md#delete-state-machine)
-- [describe_activity](./client.md#describe-activity)
-- [describe_execution](./client.md#describe-execution)
-- [describe_state_machine](./client.md#describe-state-machine)
-- [describe_state_machine_for_execution](./client.md#describe-state-machine-for-execution)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_activity_task](./client.md#get-activity-task)
-- [get_execution_history](./client.md#get-execution-history)
-- [get_paginator](./client.md#get-paginator)
-- [list_activities](./client.md#list-activities)
-- [list_executions](./client.md#list-executions)
-- [list_state_machines](./client.md#list-state-machines)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [send_task_failure](./client.md#send-task-failure)
-- [send_task_heartbeat](./client.md#send-task-heartbeat)
-- [send_task_success](./client.md#send-task-success)
-- [start_execution](./client.md#start-execution)
-- [start_sync_execution](./client.md#start-sync-execution)
-- [stop_execution](./client.md#stop-execution)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_state_machine](./client.md#update-state-machine)
+- [can_paginate](./client.md#can_paginate)
+- [create_activity](./client.md#create_activity)
+- [create_state_machine](./client.md#create_state_machine)
+- [delete_activity](./client.md#delete_activity)
+- [delete_state_machine](./client.md#delete_state_machine)
+- [describe_activity](./client.md#describe_activity)
+- [describe_execution](./client.md#describe_execution)
+- [describe_state_machine](./client.md#describe_state_machine)
+- [describe_state_machine_for_execution](./client.md#describe_state_machine_for_execution)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_activity_task](./client.md#get_activity_task)
+- [get_execution_history](./client.md#get_execution_history)
+- [get_paginator](./client.md#get_paginator)
+- [list_activities](./client.md#list_activities)
+- [list_executions](./client.md#list_executions)
+- [list_state_machines](./client.md#list_state_machines)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [send_task_failure](./client.md#send_task_failure)
+- [send_task_heartbeat](./client.md#send_task_heartbeat)
+- [send_task_success](./client.md#send_task_success)
+- [start_execution](./client.md#start_execution)
+- [start_sync_execution](./client.md#start_sync_execution)
+- [stop_execution](./client.md#stop_execution)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_state_machine](./client.md#update_state_machine)
 
 ### Exceptions
 
-- [ActivityDoesNotExist](./client.md#activitydoesnotexist)
-- [ActivityLimitExceeded](./client.md#activitylimitexceeded)
-- [ActivityWorkerLimitExceeded](./client.md#activityworkerlimitexceeded)
-- [ClientError](./client.md#clienterror)
-- [ExecutionAlreadyExists](./client.md#executionalreadyexists)
-- [ExecutionDoesNotExist](./client.md#executiondoesnotexist)
-- [ExecutionLimitExceeded](./client.md#executionlimitexceeded)
-- [InvalidArn](./client.md#invalidarn)
-- [InvalidDefinition](./client.md#invaliddefinition)
-- [InvalidExecutionInput](./client.md#invalidexecutioninput)
-- [InvalidLoggingConfiguration](./client.md#invalidloggingconfiguration)
-- [InvalidName](./client.md#invalidname)
-- [InvalidOutput](./client.md#invalidoutput)
-- [InvalidToken](./client.md#invalidtoken)
-- [InvalidTracingConfiguration](./client.md#invalidtracingconfiguration)
-- [MissingRequiredParameter](./client.md#missingrequiredparameter)
-- [ResourceNotFound](./client.md#resourcenotfound)
-- [StateMachineAlreadyExists](./client.md#statemachinealreadyexists)
-- [StateMachineDeleting](./client.md#statemachinedeleting)
-- [StateMachineDoesNotExist](./client.md#statemachinedoesnotexist)
-- [StateMachineLimitExceeded](./client.md#statemachinelimitexceeded)
-- [StateMachineTypeNotSupported](./client.md#statemachinetypenotsupported)
-- [TaskDoesNotExist](./client.md#taskdoesnotexist)
-- [TaskTimedOut](./client.md#tasktimedout)
-- [TooManyTags](./client.md#toomanytags)
+SFNClient [exceptions](./client.md#exceptions)
+
+- ActivityDoesNotExist
+- ActivityLimitExceeded
+- ActivityWorkerLimitExceeded
+- ClientError
+- ExecutionAlreadyExists
+- ExecutionDoesNotExist
+- ExecutionLimitExceeded
+- InvalidArn
+- InvalidDefinition
+- InvalidExecutionInput
+- InvalidLoggingConfiguration
+- InvalidName
+- InvalidOutput
+- InvalidToken
+- InvalidTracingConfiguration
+- MissingRequiredParameter
+- ResourceNotFound
+- StateMachineAlreadyExists
+- StateMachineDeleting
+- StateMachineDoesNotExist
+- StateMachineLimitExceeded
+- StateMachineTypeNotSupported
+- TaskDoesNotExist
+- TaskTimedOut
+- TooManyTags
 
 ## Paginators
 
@@ -112,19 +112,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_stepfunctions.literals import ExecutionStatus, ...
+from mypy_boto3_stepfunctions.literals import ExecutionStatusType, ...
 ```
 
-- [ExecutionStatus](./literals.md#executionstatus)
+- [ExecutionStatusType](./literals.md#executionstatustype)
 - [GetExecutionHistoryPaginatorName](./literals.md#getexecutionhistorypaginatorname)
-- [HistoryEventType](./literals.md#historyeventtype)
+- [HistoryEventTypeType](./literals.md#historyeventtypetype)
 - [ListActivitiesPaginatorName](./literals.md#listactivitiespaginatorname)
 - [ListExecutionsPaginatorName](./literals.md#listexecutionspaginatorname)
 - [ListStateMachinesPaginatorName](./literals.md#liststatemachinespaginatorname)
-- [LogLevel](./literals.md#loglevel)
-- [StateMachineStatus](./literals.md#statemachinestatus)
-- [StateMachineType](./literals.md#statemachinetype)
-- [SyncExecutionStatus](./literals.md#syncexecutionstatus)
+- [LogLevelType](./literals.md#logleveltype)
+- [StateMachineStatusType](./literals.md#statemachinestatustype)
+- [StateMachineTypeType](./literals.md#statemachinetypetype)
+- [SyncExecutionStatusType](./literals.md#syncexecutionstatustype)
 
 ## Typed dictionaries
 

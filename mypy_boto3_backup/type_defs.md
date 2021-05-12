@@ -3,7 +3,7 @@
 > [Index](..) > [Backup](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+[Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/backup.html#Backup)
 type annotations stubs module
 [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 
@@ -96,7 +96,7 @@ Optional fields:
 - `ResourceArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `State`: [BackupJobState](./literals.md#backupjobstate)
+- `State`: [BackupJobStateType](./literals.md#backupjobstatetype)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
@@ -191,7 +191,8 @@ Optional fields:
 - `CompletionWindowMinutes`: `int`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `RecoveryPointTags`: `Dict`\[`str`, `str`\]
-- `CopyActions`: `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
+- `CopyActions`:
+  `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
 
 ## BackupRuleTypeDef
@@ -213,7 +214,8 @@ Optional fields:
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `RecoveryPointTags`: `Dict`\[`str`, `str`\]
 - `RuleId`: `str`
-- `CopyActions`: `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
+- `CopyActions`:
+  `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
 
 ## BackupSelectionTypeDef
@@ -282,7 +284,7 @@ from mypy_boto3_backup.type_defs import ConditionTypeDef
 Required fields:
 
 - `ConditionType`: `Literal['STRINGEQUALS']` (see
-  [ConditionType](./literals.md#conditiontype))
+  [ConditionTypeType](./literals.md#conditiontypetype))
 - `ConditionKey`: `str`
 - `ConditionValue`: `str`
 
@@ -317,7 +319,7 @@ Optional fields:
 - `ResourceArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `State`: [CopyJobState](./literals.md#copyjobstate)
+- `State`: [CopyJobStateType](./literals.md#copyjobstatetype)
 - `StatusMessage`: `str`
 - `BackupSizeInBytes`: `int`
 - `IamRoleArn`: `str`
@@ -401,7 +403,7 @@ Required fields:
 - `ResourceArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `State`: [BackupJobState](./literals.md#backupjobstate)
+- `State`: [BackupJobStateType](./literals.md#backupjobstatetype)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
@@ -490,7 +492,7 @@ Required fields:
 - `CreatedBy`:
   [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `IamRoleArn`: `str`
-- `Status`: [RecoveryPointStatus](./literals.md#recoverypointstatus)
+- `Status`: [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
 - `BackupSizeInBytes`: `int`
@@ -499,7 +501,7 @@ Required fields:
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `EncryptionKeyArn`: `str`
 - `IsEncrypted`: `bool`
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `LastRestoreTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -529,7 +531,7 @@ Required fields:
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `Status`: [RestoreJobStatus](./literals.md#restorejobstatus)
+- `Status`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
@@ -640,7 +642,7 @@ Required fields:
 - `BackupVaultArn`: `str`
 - `SNSTopicArn`: `str`
 - `BackupVaultEvents`:
-  `List`\[[BackupVaultEvent](./literals.md#backupvaultevent)\]
+  `List`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -875,7 +877,7 @@ Optional fields:
 - `CreatedBy`:
   [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `IamRoleArn`: `str`
-- `Status`: [RecoveryPointStatus](./literals.md#recoverypointstatus)
+- `Status`: [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
 - `BackupSizeInBytes`: `int`
@@ -896,7 +898,7 @@ Optional fields:
 
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
-- `Status`: [RecoveryPointStatus](./literals.md#recoverypointstatus)
+- `Status`: [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
 - `EncryptionKeyArn`: `str`
 - `BackupSizeBytes`: `int`
 - `BackupVaultName`: `str`
@@ -941,7 +943,7 @@ Optional fields:
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `Status`: [RestoreJobStatus](./literals.md#restorejobstatus)
+- `Status`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`

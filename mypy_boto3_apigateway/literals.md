@@ -3,22 +3,22 @@
 > [Index](..) > [APIGateway](.) > Literals
 
 Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
 [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 - [Literals for boto3 APIGateway module](#literals-for-boto3-apigateway-module)
-  - [ApiKeySourceType](#apikeysourcetype)
-  - [ApiKeysFormat](#apikeysformat)
-  - [AuthorizerType](#authorizertype)
-  - [CacheClusterSize](#cacheclustersize)
-  - [CacheClusterStatus](#cacheclusterstatus)
-  - [ConnectionType](#connectiontype)
-  - [ContentHandlingStrategy](#contenthandlingstrategy)
-  - [DocumentationPartType](#documentationparttype)
-  - [DomainNameStatus](#domainnamestatus)
-  - [EndpointType](#endpointtype)
-  - [GatewayResponseType](#gatewayresponsetype)
+  - [ApiKeySourceTypeType](#apikeysourcetypetype)
+  - [ApiKeysFormatType](#apikeysformattype)
+  - [AuthorizerTypeType](#authorizertypetype)
+  - [CacheClusterSizeType](#cacheclustersizetype)
+  - [CacheClusterStatusType](#cacheclusterstatustype)
+  - [ConnectionTypeType](#connectiontypetype)
+  - [ContentHandlingStrategyType](#contenthandlingstrategytype)
+  - [DocumentationPartTypeType](#documentationparttypetype)
+  - [DomainNameStatusType](#domainnamestatustype)
+  - [EndpointTypeType](#endpointtypetype)
+  - [GatewayResponseTypeType](#gatewayresponsetypetype)
   - [GetApiKeysPaginatorName](#getapikeyspaginatorname)
   - [GetAuthorizersPaginatorName](#getauthorizerspaginatorname)
   - [GetBasePathMappingsPaginatorName](#getbasepathmappingspaginatorname)
@@ -37,19 +37,19 @@ type annotations stubs module
   - [GetUsagePlanKeysPaginatorName](#getusageplankeyspaginatorname)
   - [GetUsagePlansPaginatorName](#getusageplanspaginatorname)
   - [GetVpcLinksPaginatorName](#getvpclinkspaginatorname)
-  - [IntegrationType](#integrationtype)
-  - [LocationStatusType](#locationstatustype)
-  - [Op](#op)
-  - [PutMode](#putmode)
-  - [QuotaPeriodType](#quotaperiodtype)
-  - [SecurityPolicy](#securitypolicy)
-  - [UnauthorizedCacheControlHeaderStrategy](#unauthorizedcachecontrolheaderstrategy)
-  - [VpcLinkStatus](#vpclinkstatus)
+  - [IntegrationTypeType](#integrationtypetype)
+  - [LocationStatusTypeType](#locationstatustypetype)
+  - [OpType](#optype)
+  - [PutModeType](#putmodetype)
+  - [QuotaPeriodTypeType](#quotaperiodtypetype)
+  - [SecurityPolicyType](#securitypolicytype)
+  - [UnauthorizedCacheControlHeaderStrategyType](#unauthorizedcachecontrolheaderstrategytype)
+  - [VpcLinkStatusType](#vpclinkstatustype)
 
-## ApiKeySourceType
+## ApiKeySourceTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import ApiKeySourceType
+from mypy_boto3_apigateway.literals import ApiKeySourceTypeType
 ```
 
 Values:
@@ -57,20 +57,20 @@ Values:
 - `AUTHORIZER`
 - `HEADER`
 
-## ApiKeysFormat
+## ApiKeysFormatType
 
 ```python
-from mypy_boto3_apigateway.literals import ApiKeysFormat
+from mypy_boto3_apigateway.literals import ApiKeysFormatType
 ```
 
 Values:
 
 - `csv`
 
-## AuthorizerType
+## AuthorizerTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import AuthorizerType
+from mypy_boto3_apigateway.literals import AuthorizerTypeType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `REQUEST`
 - `TOKEN`
 
-## CacheClusterSize
+## CacheClusterSizeType
 
 ```python
-from mypy_boto3_apigateway.literals import CacheClusterSize
+from mypy_boto3_apigateway.literals import CacheClusterSizeType
 ```
 
 Values:
@@ -96,10 +96,10 @@ Values:
 - `58.2`
 - `6.1`
 
-## CacheClusterStatus
+## CacheClusterStatusType
 
 ```python
-from mypy_boto3_apigateway.literals import CacheClusterStatus
+from mypy_boto3_apigateway.literals import CacheClusterStatusType
 ```
 
 Values:
@@ -110,10 +110,10 @@ Values:
 - `FLUSH_IN_PROGRESS`
 - `NOT_AVAILABLE`
 
-## ConnectionType
+## ConnectionTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import ConnectionType
+from mypy_boto3_apigateway.literals import ConnectionTypeType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `INTERNET`
 - `VPC_LINK`
 
-## ContentHandlingStrategy
+## ContentHandlingStrategyType
 
 ```python
-from mypy_boto3_apigateway.literals import ContentHandlingStrategy
+from mypy_boto3_apigateway.literals import ContentHandlingStrategyType
 ```
 
 Values:
@@ -132,10 +132,10 @@ Values:
 - `CONVERT_TO_BINARY`
 - `CONVERT_TO_TEXT`
 
-## DocumentationPartType
+## DocumentationPartTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import DocumentationPartType
+from mypy_boto3_apigateway.literals import DocumentationPartTypeType
 ```
 
 Values:
@@ -153,10 +153,10 @@ Values:
 - `RESPONSE_BODY`
 - `RESPONSE_HEADER`
 
-## DomainNameStatus
+## DomainNameStatusType
 
 ```python
-from mypy_boto3_apigateway.literals import DomainNameStatus
+from mypy_boto3_apigateway.literals import DomainNameStatusType
 ```
 
 Values:
@@ -165,10 +165,10 @@ Values:
 - `PENDING`
 - `UPDATING`
 
-## EndpointType
+## EndpointTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import EndpointType
+from mypy_boto3_apigateway.literals import EndpointTypeType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `PRIVATE`
 - `REGIONAL`
 
-## GatewayResponseType
+## GatewayResponseTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import GatewayResponseType
+from mypy_boto3_apigateway.literals import GatewayResponseTypeType
 ```
 
 Values:
@@ -386,10 +386,10 @@ Values:
 
 - `get_vpc_links`
 
-## IntegrationType
+## IntegrationTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import IntegrationType
+from mypy_boto3_apigateway.literals import IntegrationTypeType
 ```
 
 Values:
@@ -400,10 +400,10 @@ Values:
 - `HTTP_PROXY`
 - `MOCK`
 
-## LocationStatusType
+## LocationStatusTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import LocationStatusType
+from mypy_boto3_apigateway.literals import LocationStatusTypeType
 ```
 
 Values:
@@ -411,10 +411,10 @@ Values:
 - `DOCUMENTED`
 - `UNDOCUMENTED`
 
-## Op
+## OpType
 
 ```python
-from mypy_boto3_apigateway.literals import Op
+from mypy_boto3_apigateway.literals import OpType
 ```
 
 Values:
@@ -426,10 +426,10 @@ Values:
 - `replace`
 - `test`
 
-## PutMode
+## PutModeType
 
 ```python
-from mypy_boto3_apigateway.literals import PutMode
+from mypy_boto3_apigateway.literals import PutModeType
 ```
 
 Values:
@@ -437,10 +437,10 @@ Values:
 - `merge`
 - `overwrite`
 
-## QuotaPeriodType
+## QuotaPeriodTypeType
 
 ```python
-from mypy_boto3_apigateway.literals import QuotaPeriodType
+from mypy_boto3_apigateway.literals import QuotaPeriodTypeType
 ```
 
 Values:
@@ -449,10 +449,10 @@ Values:
 - `MONTH`
 - `WEEK`
 
-## SecurityPolicy
+## SecurityPolicyType
 
 ```python
-from mypy_boto3_apigateway.literals import SecurityPolicy
+from mypy_boto3_apigateway.literals import SecurityPolicyType
 ```
 
 Values:
@@ -460,10 +460,10 @@ Values:
 - `TLS_1_0`
 - `TLS_1_2`
 
-## UnauthorizedCacheControlHeaderStrategy
+## UnauthorizedCacheControlHeaderStrategyType
 
 ```python
-from mypy_boto3_apigateway.literals import UnauthorizedCacheControlHeaderStrategy
+from mypy_boto3_apigateway.literals import UnauthorizedCacheControlHeaderStrategyType
 ```
 
 Values:
@@ -472,10 +472,10 @@ Values:
 - `SUCCEED_WITH_RESPONSE_HEADER`
 - `SUCCEED_WITHOUT_RESPONSE_HEADER`
 
-## VpcLinkStatus
+## VpcLinkStatusType
 
 ```python
-from mypy_boto3_apigateway.literals import VpcLinkStatus
+from mypy_boto3_apigateway.literals import VpcLinkStatusType
 ```
 
 Values:

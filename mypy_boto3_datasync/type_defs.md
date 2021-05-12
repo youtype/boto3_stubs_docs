@@ -3,7 +3,7 @@
 > [Index](..) > [DataSync](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datasync.html#DataSync)
 type annotations stubs module
 [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
@@ -60,7 +60,7 @@ Optional fields:
 
 - `AgentArn`: `str`
 - `Name`: `str`
-- `Status`: [AgentStatus](./literals.md#agentstatus)
+- `Status`: [AgentStatusType](./literals.md#agentstatustype)
 
 ## CreateAgentResponseTypeDef
 
@@ -152,10 +152,10 @@ Optional fields:
 
 - `AgentArn`: `str`
 - `Name`: `str`
-- `Status`: [AgentStatus](./literals.md#agentstatus)
+- `Status`: [AgentStatusType](./literals.md#agentstatustype)
 - `LastConnectionTime`: `datetime`
 - `CreationTime`: `datetime`
-- `EndpointType`: [EndpointType](./literals.md#endpointtype)
+- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `PrivateLinkConfig`:
   [PrivateLinkConfigTypeDef](./type_defs.md#privatelinkconfigtypedef)
 
@@ -198,7 +198,8 @@ Optional fields:
 - `LocationArn`: `str`
 - `LocationUri`: `str`
 - `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
-- `MountOptions`: [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
+- `MountOptions`:
+  [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
 - `CreationTime`: `datetime`
 
 ## DescribeLocationObjectStorageResponseTypeDef
@@ -214,7 +215,7 @@ Optional fields:
 - `AccessKey`: `str`
 - `ServerPort`: `int`
 - `ServerProtocol`:
-  [ObjectStorageServerProtocol](./literals.md#objectstorageserverprotocol)
+  [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
 - `AgentArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
 
@@ -228,7 +229,7 @@ Optional fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
-- `S3StorageClass`: [S3StorageClass](./literals.md#s3storageclass)
+- `S3StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
 - `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
 - `AgentArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
@@ -246,7 +247,8 @@ Optional fields:
 - `AgentArns`: `List`\[`str`\]
 - `User`: `str`
 - `Domain`: `str`
-- `MountOptions`: [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
+- `MountOptions`:
+  [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 - `CreationTime`: `datetime`
 
 ## DescribeTaskExecutionResponseTypeDef
@@ -258,7 +260,7 @@ from mypy_boto3_datasync.type_defs import DescribeTaskExecutionResponseTypeDef
 Optional fields:
 
 - `TaskExecutionArn`: `str`
-- `Status`: [TaskExecutionStatus](./literals.md#taskexecutionstatus)
+- `Status`: [TaskExecutionStatusType](./literals.md#taskexecutionstatustype)
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
 - `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
@@ -280,7 +282,7 @@ from mypy_boto3_datasync.type_defs import DescribeTaskResponseTypeDef
 Optional fields:
 
 - `TaskArn`: `str`
-- `Status`: [TaskStatus](./literals.md#taskstatus)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 - `Name`: `str`
 - `CurrentTaskExecutionArn`: `str`
 - `SourceLocationArn`: `str`
@@ -315,7 +317,7 @@ from mypy_boto3_datasync.type_defs import FilterRuleTypeDef
 Optional fields:
 
 - `FilterType`: `Literal['SIMPLE_PATTERN']` (see
-  [FilterType](./literals.md#filtertype))
+  [FilterTypeType](./literals.md#filtertypetype))
 - `Value`: `str`
 
 ## ListAgentsResponseTypeDef
@@ -373,7 +375,8 @@ from mypy_boto3_datasync.type_defs import ListTasksResponseTypeDef
 
 Optional fields:
 
-- `Tasks`: `List`\[[TaskListEntryTypeDef](./type_defs.md#tasklistentrytypedef)\]
+- `Tasks`:
+  `List`\[[TaskListEntryTypeDef](./type_defs.md#tasklistentrytypedef)\]
 - `NextToken`: `str`
 
 ## LocationFilterTypeDef
@@ -384,9 +387,9 @@ from mypy_boto3_datasync.type_defs import LocationFilterTypeDef
 
 Required fields:
 
-- `Name`: [LocationFilterName](./literals.md#locationfiltername)
+- `Name`: [LocationFilterNameType](./literals.md#locationfilternametype)
 - `Values`: `List`\[`str`\]
-- `Operator`: [Operator](./literals.md#operator)
+- `Operator`: [OperatorType](./literals.md#operatortype)
 
 ## LocationListEntryTypeDef
 
@@ -407,7 +410,7 @@ from mypy_boto3_datasync.type_defs import NfsMountOptionsTypeDef
 
 Optional fields:
 
-- `Version`: [NfsVersion](./literals.md#nfsversion)
+- `Version`: [NfsVersionType](./literals.md#nfsversiontype)
 
 ## OnPremConfigTypeDef
 
@@ -427,20 +430,21 @@ from mypy_boto3_datasync.type_defs import OptionsTypeDef
 
 Optional fields:
 
-- `VerifyMode`: [VerifyMode](./literals.md#verifymode)
-- `OverwriteMode`: [OverwriteMode](./literals.md#overwritemode)
-- `Atime`: [Atime](./literals.md#atime)
-- `Mtime`: [Mtime](./literals.md#mtime)
-- `Uid`: [Uid](./literals.md#uid)
-- `Gid`: [Gid](./literals.md#gid)
+- `VerifyMode`: [VerifyModeType](./literals.md#verifymodetype)
+- `OverwriteMode`: [OverwriteModeType](./literals.md#overwritemodetype)
+- `Atime`: [AtimeType](./literals.md#atimetype)
+- `Mtime`: [MtimeType](./literals.md#mtimetype)
+- `Uid`: [UidType](./literals.md#uidtype)
+- `Gid`: [GidType](./literals.md#gidtype)
 - `PreserveDeletedFiles`:
-  [PreserveDeletedFiles](./literals.md#preservedeletedfiles)
-- `PreserveDevices`: [PreserveDevices](./literals.md#preservedevices)
-- `PosixPermissions`: [PosixPermissions](./literals.md#posixpermissions)
+  [PreserveDeletedFilesType](./literals.md#preservedeletedfilestype)
+- `PreserveDevices`: [PreserveDevicesType](./literals.md#preservedevicestype)
+- `PosixPermissions`:
+  [PosixPermissionsType](./literals.md#posixpermissionstype)
 - `BytesPerSecond`: `int`
-- `TaskQueueing`: [TaskQueueing](./literals.md#taskqueueing)
-- `LogLevel`: [LogLevel](./literals.md#loglevel)
-- `TransferMode`: [TransferMode](./literals.md#transfermode)
+- `TaskQueueing`: [TaskQueueingType](./literals.md#taskqueueingtype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+- `TransferMode`: [TransferModeType](./literals.md#transfermodetype)
 
 ## PaginatorConfigTypeDef
 
@@ -485,7 +489,7 @@ from mypy_boto3_datasync.type_defs import SmbMountOptionsTypeDef
 
 Optional fields:
 
-- `Version`: [SmbVersion](./literals.md#smbversion)
+- `Version`: [SmbVersionType](./literals.md#smbversiontype)
 
 ## StartTaskExecutionResponseTypeDef
 
@@ -520,7 +524,7 @@ from mypy_boto3_datasync.type_defs import TaskExecutionListEntryTypeDef
 Optional fields:
 
 - `TaskExecutionArn`: `str`
-- `Status`: [TaskExecutionStatus](./literals.md#taskexecutionstatus)
+- `Status`: [TaskExecutionStatusType](./literals.md#taskexecutionstatustype)
 
 ## TaskExecutionResultDetailTypeDef
 
@@ -531,12 +535,12 @@ from mypy_boto3_datasync.type_defs import TaskExecutionResultDetailTypeDef
 Optional fields:
 
 - `PrepareDuration`: `int`
-- `PrepareStatus`: [PhaseStatus](./literals.md#phasestatus)
+- `PrepareStatus`: [PhaseStatusType](./literals.md#phasestatustype)
 - `TotalDuration`: `int`
 - `TransferDuration`: `int`
-- `TransferStatus`: [PhaseStatus](./literals.md#phasestatus)
+- `TransferStatus`: [PhaseStatusType](./literals.md#phasestatustype)
 - `VerifyDuration`: `int`
-- `VerifyStatus`: [PhaseStatus](./literals.md#phasestatus)
+- `VerifyStatus`: [PhaseStatusType](./literals.md#phasestatustype)
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
 
@@ -548,9 +552,9 @@ from mypy_boto3_datasync.type_defs import TaskFilterTypeDef
 
 Required fields:
 
-- `Name`: [TaskFilterName](./literals.md#taskfiltername)
+- `Name`: [TaskFilterNameType](./literals.md#taskfilternametype)
 - `Values`: `List`\[`str`\]
-- `Operator`: [Operator](./literals.md#operator)
+- `Operator`: [OperatorType](./literals.md#operatortype)
 
 ## TaskListEntryTypeDef
 
@@ -561,7 +565,7 @@ from mypy_boto3_datasync.type_defs import TaskListEntryTypeDef
 Optional fields:
 
 - `TaskArn`: `str`
-- `Status`: [TaskStatus](./literals.md#taskstatus)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 - `Name`: `str`
 
 ## TaskScheduleTypeDef

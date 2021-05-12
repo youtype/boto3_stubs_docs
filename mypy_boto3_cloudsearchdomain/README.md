@@ -3,7 +3,7 @@
 > [Index](..) > CloudSearchDomain
 
 Auto-generated documentation for
-[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
+[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module
 [mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
@@ -29,21 +29,21 @@ Can be used directly:
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 ```
 
-CloudSearchDomainClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
 - [search](./client.md#search)
 - [suggest](./client.md#suggest)
-- [upload_documents](./client.md#upload-documents)
+- [upload_documents](./client.md#upload_documents)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DocumentServiceException](./client.md#documentserviceexception)
-- [SearchException](./client.md#searchexception)
+CloudSearchDomainClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DocumentServiceException
+- SearchException
 
 ## Literals
 
@@ -52,11 +52,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudsearchdomain.literals import ContentType, ...
+from mypy_boto3_cloudsearchdomain.literals import ContentTypeType, ...
 ```
 
-- [ContentType](./literals.md#contenttype)
-- [QueryParser](./literals.md#queryparser)
+- [ContentTypeType](./literals.md#contenttypetype)
+- [QueryParserType](./literals.md#queryparsertype)
 
 ## Typed dictionaries
 

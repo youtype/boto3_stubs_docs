@@ -3,7 +3,7 @@
 > [Index](..) > Cloud9
 
 Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
 [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
@@ -29,38 +29,38 @@ Can be used directly:
 from mypy_boto3_cloud9.client import Cloud9Client
 ```
 
-Cloud9Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_environment_ec2](./client.md#create-environment-ec2)
-- [create_environment_membership](./client.md#create-environment-membership)
-- [delete_environment](./client.md#delete-environment)
-- [delete_environment_membership](./client.md#delete-environment-membership)
-- [describe_environment_memberships](./client.md#describe-environment-memberships)
-- [describe_environment_status](./client.md#describe-environment-status)
-- [describe_environments](./client.md#describe-environments)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_environments](./client.md#list-environments)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_environment](./client.md#update-environment)
-- [update_environment_membership](./client.md#update-environment-membership)
+- [can_paginate](./client.md#can_paginate)
+- [create_environment_ec2](./client.md#create_environment_ec2)
+- [create_environment_membership](./client.md#create_environment_membership)
+- [delete_environment](./client.md#delete_environment)
+- [delete_environment_membership](./client.md#delete_environment_membership)
+- [describe_environment_memberships](./client.md#describe_environment_memberships)
+- [describe_environment_status](./client.md#describe_environment_status)
+- [describe_environments](./client.md#describe_environments)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_environments](./client.md#list_environments)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_environment](./client.md#update_environment)
+- [update_environment_membership](./client.md#update_environment_membership)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentAccessException](./client.md#concurrentaccessexception)
-- [ConflictException](./client.md#conflictexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+Cloud9Client [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConcurrentAccessException
+- ConflictException
+- ForbiddenException
+- InternalServerErrorException
+- LimitExceededException
+- NotFoundException
+- TooManyRequestsException
 
 ## Paginators
 
@@ -83,18 +83,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloud9.literals import ConnectionType, ...
+from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 ```
 
-- [ConnectionType](./literals.md#connectiontype)
+- [ConnectionTypeType](./literals.md#connectiontypetype)
 - [DescribeEnvironmentMembershipsPaginatorName](./literals.md#describeenvironmentmembershipspaginatorname)
-- [EnvironmentLifecycleStatus](./literals.md#environmentlifecyclestatus)
-- [EnvironmentStatus](./literals.md#environmentstatus)
-- [EnvironmentType](./literals.md#environmenttype)
+- [EnvironmentLifecycleStatusType](./literals.md#environmentlifecyclestatustype)
+- [EnvironmentStatusType](./literals.md#environmentstatustype)
+- [EnvironmentTypeType](./literals.md#environmenttypetype)
 - [ListEnvironmentsPaginatorName](./literals.md#listenvironmentspaginatorname)
-- [ManagedCredentialsStatus](./literals.md#managedcredentialsstatus)
-- [MemberPermissions](./literals.md#memberpermissions)
-- [Permissions](./literals.md#permissions)
+- [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
+- [MemberPermissionsType](./literals.md#memberpermissionstype)
+- [PermissionsType](./literals.md#permissionstype)
 
 ## Typed dictionaries
 

@@ -3,29 +3,29 @@
 > [Index](..) > [SavingsPlans](.) > Literals
 
 Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
 [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [Literals for boto3 SavingsPlans module](#literals-for-boto3-savingsplans-module)
-  - [CurrencyCode](#currencycode)
-  - [SavingsPlanOfferingFilterAttribute](#savingsplanofferingfilterattribute)
-  - [SavingsPlanOfferingPropertyKey](#savingsplanofferingpropertykey)
-  - [SavingsPlanPaymentOption](#savingsplanpaymentoption)
-  - [SavingsPlanProductType](#savingsplanproducttype)
-  - [SavingsPlanRateFilterAttribute](#savingsplanratefilterattribute)
-  - [SavingsPlanRateFilterName](#savingsplanratefiltername)
-  - [SavingsPlanRatePropertyKey](#savingsplanratepropertykey)
-  - [SavingsPlanRateServiceCode](#savingsplanrateservicecode)
-  - [SavingsPlanRateUnit](#savingsplanrateunit)
-  - [SavingsPlanState](#savingsplanstate)
-  - [SavingsPlanType](#savingsplantype)
-  - [SavingsPlansFilterName](#savingsplansfiltername)
+  - [CurrencyCodeType](#currencycodetype)
+  - [SavingsPlanOfferingFilterAttributeType](#savingsplanofferingfilterattributetype)
+  - [SavingsPlanOfferingPropertyKeyType](#savingsplanofferingpropertykeytype)
+  - [SavingsPlanPaymentOptionType](#savingsplanpaymentoptiontype)
+  - [SavingsPlanProductTypeType](#savingsplanproducttypetype)
+  - [SavingsPlanRateFilterAttributeType](#savingsplanratefilterattributetype)
+  - [SavingsPlanRateFilterNameType](#savingsplanratefilternametype)
+  - [SavingsPlanRatePropertyKeyType](#savingsplanratepropertykeytype)
+  - [SavingsPlanRateServiceCodeType](#savingsplanrateservicecodetype)
+  - [SavingsPlanRateUnitType](#savingsplanrateunittype)
+  - [SavingsPlanStateType](#savingsplanstatetype)
+  - [SavingsPlanTypeType](#savingsplantypetype)
+  - [SavingsPlansFilterNameType](#savingsplansfilternametype)
 
-## CurrencyCode
+## CurrencyCodeType
 
 ```python
-from mypy_boto3_savingsplans.literals import CurrencyCode
+from mypy_boto3_savingsplans.literals import CurrencyCodeType
 ```
 
 Values:
@@ -33,10 +33,10 @@ Values:
 - `CNY`
 - `USD`
 
-## SavingsPlanOfferingFilterAttribute
+## SavingsPlanOfferingFilterAttributeType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanOfferingFilterAttribute
+from mypy_boto3_savingsplans.literals import SavingsPlanOfferingFilterAttributeType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 - `instanceFamily`
 - `region`
 
-## SavingsPlanOfferingPropertyKey
+## SavingsPlanOfferingPropertyKeyType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanOfferingPropertyKey
+from mypy_boto3_savingsplans.literals import SavingsPlanOfferingPropertyKeyType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `instanceFamily`
 - `region`
 
-## SavingsPlanPaymentOption
+## SavingsPlanPaymentOptionType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanPaymentOption
+from mypy_boto3_savingsplans.literals import SavingsPlanPaymentOptionType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 - `No Upfront`
 - `Partial Upfront`
 
-## SavingsPlanProductType
+## SavingsPlanProductTypeType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanProductType
+from mypy_boto3_savingsplans.literals import SavingsPlanProductTypeType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `Lambda`
 - `SageMaker`
 
-## SavingsPlanRateFilterAttribute
+## SavingsPlanRateFilterAttributeType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanRateFilterAttribute
+from mypy_boto3_savingsplans.literals import SavingsPlanRateFilterAttributeType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `region`
 - `tenancy`
 
-## SavingsPlanRateFilterName
+## SavingsPlanRateFilterNameType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanRateFilterName
+from mypy_boto3_savingsplans.literals import SavingsPlanRateFilterNameType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 - `tenancy`
 - `usageType`
 
-## SavingsPlanRatePropertyKey
+## SavingsPlanRatePropertyKeyType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanRatePropertyKey
+from mypy_boto3_savingsplans.literals import SavingsPlanRatePropertyKeyType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `region`
 - `tenancy`
 
-## SavingsPlanRateServiceCode
+## SavingsPlanRateServiceCodeType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanRateServiceCode
+from mypy_boto3_savingsplans.literals import SavingsPlanRateServiceCodeType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `AmazonSageMaker`
 - `AWSLambda`
 
-## SavingsPlanRateUnit
+## SavingsPlanRateUnitType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanRateUnit
+from mypy_boto3_savingsplans.literals import SavingsPlanRateUnitType
 ```
 
 Values:
@@ -152,10 +152,10 @@ Values:
 - `Lambda-GB-Second`
 - `Request`
 
-## SavingsPlanState
+## SavingsPlanStateType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanState
+from mypy_boto3_savingsplans.literals import SavingsPlanStateType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 - `queued-deleted`
 - `retired`
 
-## SavingsPlanType
+## SavingsPlanTypeType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlanType
+from mypy_boto3_savingsplans.literals import SavingsPlanTypeType
 ```
 
 Values:
@@ -179,10 +179,10 @@ Values:
 - `EC2Instance`
 - `SageMaker`
 
-## SavingsPlansFilterName
+## SavingsPlansFilterNameType
 
 ```python
-from mypy_boto3_savingsplans.literals import SavingsPlansFilterName
+from mypy_boto3_savingsplans.literals import SavingsPlansFilterNameType
 ```
 
 Values:

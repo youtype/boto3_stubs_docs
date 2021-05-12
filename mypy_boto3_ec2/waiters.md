@@ -3,7 +3,7 @@
 > [Index](..) > [EC2](.) > Waiters
 
 Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2)
 type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
@@ -55,7 +55,7 @@ def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.bundle_task_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.bundle_task_complete)
+[EC2.Waiter.bundle_task_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.bundle_task_complete)
 
 Arguments for `BundleTaskCompleteWaiter.wait` method:
 
@@ -79,7 +79,7 @@ def get_conversion_task_cancelled_waiter() -> ConversionTaskCancelledWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.conversion_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_cancelled)
+[EC2.Waiter.conversion_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.conversion_task_cancelled)
 
 Arguments for `ConversionTaskCancelledWaiter.wait` method:
 
@@ -102,7 +102,7 @@ def get_conversion_task_completed_waiter() -> ConversionTaskCompletedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.conversion_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_completed)
+[EC2.Waiter.conversion_task_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.conversion_task_completed)
 
 Arguments for `ConversionTaskCompletedWaiter.wait` method:
 
@@ -125,7 +125,7 @@ def get_conversion_task_deleted_waiter() -> ConversionTaskDeletedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.conversion_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_deleted)
+[EC2.Waiter.conversion_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.conversion_task_deleted)
 
 Arguments for `ConversionTaskDeletedWaiter.wait` method:
 
@@ -148,7 +148,7 @@ def get_customer_gateway_available_waiter() -> CustomerGatewayAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.customer_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.customer_gateway_available)
+[EC2.Waiter.customer_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.customer_gateway_available)
 
 Arguments for `CustomerGatewayAvailableWaiter.wait` method:
 
@@ -171,7 +171,7 @@ def get_export_task_cancelled_waiter() -> ExportTaskCancelledWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.export_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_cancelled)
+[EC2.Waiter.export_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.export_task_cancelled)
 
 Arguments for `ExportTaskCancelledWaiter.wait` method:
 
@@ -193,7 +193,7 @@ def get_export_task_completed_waiter() -> ExportTaskCompletedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.export_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_completed)
+[EC2.Waiter.export_task_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.export_task_completed)
 
 Arguments for `ExportTaskCompletedWaiter.wait` method:
 
@@ -215,7 +215,7 @@ def get_image_available_waiter() -> ImageAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.image_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_available)
+[EC2.Waiter.image_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.image_available)
 
 Arguments for `ImageAvailableWaiter.wait` method:
 
@@ -240,7 +240,7 @@ def get_image_exists_waiter() -> ImageExistsWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.image_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_exists)
+[EC2.Waiter.image_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.image_exists)
 
 Arguments for `ImageExistsWaiter.wait` method:
 
@@ -265,7 +265,7 @@ def get_instance_exists_waiter() -> InstanceExistsWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.instance_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_exists)
+[EC2.Waiter.instance_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.instance_exists)
 
 Arguments for `InstanceExistsWaiter.wait` method:
 
@@ -290,7 +290,7 @@ def get_instance_running_waiter() -> InstanceRunningWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.instance_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_running)
+[EC2.Waiter.instance_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.instance_running)
 
 Arguments for `InstanceRunningWaiter.wait` method:
 
@@ -315,7 +315,7 @@ def get_instance_status_ok_waiter() -> InstanceStatusOkWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.instance_status_ok](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_status_ok)
+[EC2.Waiter.instance_status_ok](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.instance_status_ok)
 
 Arguments for `InstanceStatusOkWaiter.wait` method:
 
@@ -341,7 +341,7 @@ def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_stopped)
+[EC2.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.instance_stopped)
 
 Arguments for `InstanceStoppedWaiter.wait` method:
 
@@ -366,7 +366,7 @@ def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_terminated)
+[EC2.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.instance_terminated)
 
 Arguments for `InstanceTerminatedWaiter.wait` method:
 
@@ -391,7 +391,7 @@ def get_key_pair_exists_waiter() -> KeyPairExistsWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.key_pair_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.key_pair_exists)
+[EC2.Waiter.key_pair_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.key_pair_exists)
 
 Arguments for `KeyPairExistsWaiter.wait` method:
 
@@ -415,7 +415,7 @@ def get_nat_gateway_available_waiter() -> NatGatewayAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.nat_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.nat_gateway_available)
+[EC2.Waiter.nat_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.nat_gateway_available)
 
 Arguments for `NatGatewayAvailableWaiter.wait` method:
 
@@ -441,7 +441,7 @@ def get_network_interface_available_waiter() -> NetworkInterfaceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.network_interface_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.network_interface_available)
+[EC2.Waiter.network_interface_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.network_interface_available)
 
 Arguments for `NetworkInterfaceAvailableWaiter.wait` method:
 
@@ -467,7 +467,7 @@ def get_password_data_available_waiter() -> PasswordDataAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.password_data_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.password_data_available)
+[EC2.Waiter.password_data_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.password_data_available)
 
 Arguments for `PasswordDataAvailableWaiter.wait` method:
 
@@ -489,7 +489,7 @@ def get_security_group_exists_waiter() -> SecurityGroupExistsWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.security_group_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.security_group_exists)
+[EC2.Waiter.security_group_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.security_group_exists)
 
 Arguments for `SecurityGroupExistsWaiter.wait` method:
 
@@ -515,7 +515,7 @@ def get_snapshot_completed_waiter() -> SnapshotCompletedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.snapshot_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.snapshot_completed)
+[EC2.Waiter.snapshot_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.snapshot_completed)
 
 Arguments for `SnapshotCompletedWaiter.wait` method:
 
@@ -543,7 +543,7 @@ def get_spot_instance_request_fulfilled_waiter() -> SpotInstanceRequestFulfilled
 ```
 
 Boto3 documentation:
-[EC2.Waiter.spot_instance_request_fulfilled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.spot_instance_request_fulfilled)
+[EC2.Waiter.spot_instance_request_fulfilled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.spot_instance_request_fulfilled)
 
 Arguments for `SpotInstanceRequestFulfilledWaiter.wait` method:
 
@@ -568,7 +568,7 @@ def get_subnet_available_waiter() -> SubnetAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.subnet_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.subnet_available)
+[EC2.Waiter.subnet_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.subnet_available)
 
 Arguments for `SubnetAvailableWaiter.wait` method:
 
@@ -593,7 +593,7 @@ def get_system_status_ok_waiter() -> SystemStatusOkWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.system_status_ok](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.system_status_ok)
+[EC2.Waiter.system_status_ok](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.system_status_ok)
 
 Arguments for `SystemStatusOkWaiter.wait` method:
 
@@ -619,7 +619,7 @@ def get_volume_available_waiter() -> VolumeAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.volume_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_available)
+[EC2.Waiter.volume_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.volume_available)
 
 Arguments for `VolumeAvailableWaiter.wait` method:
 
@@ -644,7 +644,7 @@ def get_volume_deleted_waiter() -> VolumeDeletedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.volume_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_deleted)
+[EC2.Waiter.volume_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.volume_deleted)
 
 Arguments for `VolumeDeletedWaiter.wait` method:
 
@@ -669,7 +669,7 @@ def get_volume_in_use_waiter() -> VolumeInUseWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.volume_in_use](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_in_use)
+[EC2.Waiter.volume_in_use](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.volume_in_use)
 
 Arguments for `VolumeInUseWaiter.wait` method:
 
@@ -694,7 +694,7 @@ def get_vpc_available_waiter() -> VpcAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.vpc_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_available)
+[EC2.Waiter.vpc_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.vpc_available)
 
 Arguments for `VpcAvailableWaiter.wait` method:
 
@@ -719,7 +719,7 @@ def get_vpc_exists_waiter() -> VpcExistsWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.vpc_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_exists)
+[EC2.Waiter.vpc_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.vpc_exists)
 
 Arguments for `VpcExistsWaiter.wait` method:
 
@@ -745,7 +745,7 @@ def get_vpc_peering_connection_deleted_waiter() -> VpcPeeringConnectionDeletedWa
 ```
 
 Boto3 documentation:
-[EC2.Waiter.vpc_peering_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_deleted)
+[EC2.Waiter.vpc_peering_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_deleted)
 
 Arguments for `VpcPeeringConnectionDeletedWaiter.wait` method:
 
@@ -771,7 +771,7 @@ def get_vpc_peering_connection_exists_waiter() -> VpcPeeringConnectionExistsWait
 ```
 
 Boto3 documentation:
-[EC2.Waiter.vpc_peering_connection_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_exists)
+[EC2.Waiter.vpc_peering_connection_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_exists)
 
 Arguments for `VpcPeeringConnectionExistsWaiter.wait` method:
 
@@ -797,7 +797,7 @@ def get_vpn_connection_available_waiter() -> VpnConnectionAvailableWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.vpn_connection_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_available)
+[EC2.Waiter.vpn_connection_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.vpn_connection_available)
 
 Arguments for `VpnConnectionAvailableWaiter.wait` method:
 
@@ -821,7 +821,7 @@ def get_vpn_connection_deleted_waiter() -> VpnConnectionDeletedWaiter:
 ```
 
 Boto3 documentation:
-[EC2.Waiter.vpn_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_deleted)
+[EC2.Waiter.vpn_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2.Waiter.vpn_connection_deleted)
 
 Arguments for `VpnConnectionDeletedWaiter.wait` method:
 

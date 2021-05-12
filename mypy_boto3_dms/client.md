@@ -3,7 +3,7 @@
 > [Index](..) > [DatabaseMigrationService](.) > DatabaseMigrationServiceClient
 
 Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
 [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
@@ -85,7 +85,7 @@ def get_dms_client() -> DatabaseMigrationServiceClient:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
+[DatabaseMigrationService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client)
 
 ## Exceptions
 
@@ -133,7 +133,7 @@ Exceptions:
 Type annotations for `boto3.client("dms").add_tags_to_resource` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
+[DatabaseMigrationService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("dms").apply_pending_maintenance_action`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
+[DatabaseMigrationService.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
 
 Arguments:
 
@@ -164,7 +164,7 @@ Returns
 Type annotations for `boto3.client("dms").can_paginate` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate)
+[DatabaseMigrationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate)
 
 Arguments:
 
@@ -178,7 +178,7 @@ Type annotations for
 `boto3.client("dms").cancel_replication_task_assessment_run` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.cancel_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
+[DatabaseMigrationService.Client.cancel_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
 
 Arguments:
 
@@ -192,13 +192,13 @@ Returns
 Type annotations for `boto3.client("dms").create_endpoint` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
+[DatabaseMigrationService.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
 
 Arguments:
 
 - `EndpointIdentifier`: `str` *(required)*
 - `EndpointType`:
-  [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
+  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
   *(required)*
 - `EngineName`: `str` *(required)*
 - `Username`: `str`
@@ -210,7 +210,7 @@ Arguments:
 - `KmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CertificateArn`: `str`
-- `SslMode`: [DmsSslModeValue](./literals.md#dmssslmodevalue)
+- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
 - `ServiceAccessRoleArn`: `str`
 - `ExternalTableDefinition`: `str`
 - `DynamoDbSettings`:
@@ -232,11 +232,14 @@ Arguments:
 - `PostgreSQLSettings`:
   [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
 - `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
-- `OracleSettings`: [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
-- `SybaseSettings`: [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
 - `MicrosoftSQLServerSettings`:
   [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
-- `IBMDb2Settings`: [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 
@@ -248,7 +251,7 @@ Returns
 Type annotations for `boto3.client("dms").create_event_subscription` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
+[DatabaseMigrationService.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
 
 Arguments:
 
@@ -268,7 +271,7 @@ Returns
 Type annotations for `boto3.client("dms").create_replication_instance` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.create_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
+[DatabaseMigrationService.Client.create_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
 
 Arguments:
 
@@ -297,7 +300,7 @@ Type annotations for `boto3.client("dms").create_replication_subnet_group`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.create_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
+[DatabaseMigrationService.Client.create_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
 
 Arguments:
 
@@ -314,7 +317,7 @@ Returns
 Type annotations for `boto3.client("dms").create_replication_task` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.create_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
+[DatabaseMigrationService.Client.create_replication_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
 
 Arguments:
 
@@ -322,8 +325,8 @@ Arguments:
 - `SourceEndpointArn`: `str` *(required)*
 - `TargetEndpointArn`: `str` *(required)*
 - `ReplicationInstanceArn`: `str` *(required)*
-- `MigrationType`: [MigrationTypeValue](./literals.md#migrationtypevalue)
-  *(required)*
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype) *(required)*
 - `TableMappings`: `str` *(required)*
 - `ReplicationTaskSettings`: `str`
 - `CdcStartTime`: `datetime`
@@ -341,7 +344,7 @@ Returns
 Type annotations for `boto3.client("dms").delete_certificate` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
+[DatabaseMigrationService.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
 
 Arguments:
 
@@ -355,7 +358,7 @@ Returns
 Type annotations for `boto3.client("dms").delete_connection` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
+[DatabaseMigrationService.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
 
 Arguments:
 
@@ -370,7 +373,7 @@ Returns
 Type annotations for `boto3.client("dms").delete_endpoint` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
+[DatabaseMigrationService.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
 
 Arguments:
 
@@ -384,7 +387,7 @@ Returns
 Type annotations for `boto3.client("dms").delete_event_subscription` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
+[DatabaseMigrationService.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
 
 Arguments:
 
@@ -398,7 +401,7 @@ Returns
 Type annotations for `boto3.client("dms").delete_replication_instance` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
+[DatabaseMigrationService.Client.delete_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
 
 Arguments:
 
@@ -413,7 +416,7 @@ Type annotations for `boto3.client("dms").delete_replication_subnet_group`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
+[DatabaseMigrationService.Client.delete_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
 
 Arguments:
 
@@ -426,7 +429,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("dms").delete_replication_task` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
+[DatabaseMigrationService.Client.delete_replication_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
 
 Arguments:
 
@@ -441,7 +444,7 @@ Type annotations for
 `boto3.client("dms").delete_replication_task_assessment_run` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
+[DatabaseMigrationService.Client.delete_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
 
 Arguments:
 
@@ -455,7 +458,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_account_attributes` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
+[DatabaseMigrationService.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
 
 Returns
 [DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
@@ -466,7 +469,7 @@ Type annotations for
 `boto3.client("dms").describe_applicable_individual_assessments` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_applicable_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
+[DatabaseMigrationService.Client.describe_applicable_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
 
 Arguments:
 
@@ -474,7 +477,8 @@ Arguments:
 - `ReplicationInstanceArn`: `str`
 - `SourceEngineName`: `str`
 - `TargetEngineName`: `str`
-- `MigrationType`: [MigrationTypeValue](./literals.md#migrationtypevalue)
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -486,7 +490,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_certificates` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
+[DatabaseMigrationService.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
 
 Arguments:
 
@@ -502,7 +506,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_connections` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
+[DatabaseMigrationService.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
 
 Arguments:
 
@@ -518,7 +522,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_endpoint_settings` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_endpoint_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
+[DatabaseMigrationService.Client.describe_endpoint_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
 
 Arguments:
 
@@ -534,7 +538,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_endpoint_types` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_endpoint_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
+[DatabaseMigrationService.Client.describe_endpoint_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
 
 Arguments:
 
@@ -550,7 +554,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_endpoints` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
+[DatabaseMigrationService.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
 
 Arguments:
 
@@ -566,7 +570,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_event_categories` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
+[DatabaseMigrationService.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
 
 Arguments:
 
@@ -581,7 +585,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_event_subscriptions` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
+[DatabaseMigrationService.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
 
 Arguments:
 
@@ -598,13 +602,13 @@ Returns
 Type annotations for `boto3.client("dms").describe_events` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
+[DatabaseMigrationService.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
 
 Arguments:
 
 - `SourceIdentifier`: `str`
 - `SourceType`: `Literal['replication-instance']` (see
-  [SourceType](./literals.md#sourcetype))
+  [SourceTypeType](./literals.md#sourcetypetype))
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
@@ -622,7 +626,7 @@ Type annotations for
 `boto3.client("dms").describe_orderable_replication_instances` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_orderable_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
+[DatabaseMigrationService.Client.describe_orderable_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
 
 Arguments:
 
@@ -638,7 +642,7 @@ Type annotations for `boto3.client("dms").describe_pending_maintenance_actions`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
+[DatabaseMigrationService.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
 
 Arguments:
 
@@ -656,7 +660,7 @@ Type annotations for `boto3.client("dms").describe_refresh_schemas_status`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_refresh_schemas_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
+[DatabaseMigrationService.Client.describe_refresh_schemas_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
 
 Arguments:
 
@@ -671,7 +675,7 @@ Type annotations for
 `boto3.client("dms").describe_replication_instance_task_logs` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_instance_task_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
+[DatabaseMigrationService.Client.describe_replication_instance_task_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
 
 Arguments:
 
@@ -688,7 +692,7 @@ Type annotations for `boto3.client("dms").describe_replication_instances`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
+[DatabaseMigrationService.Client.describe_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
 
 Arguments:
 
@@ -705,7 +709,7 @@ Type annotations for `boto3.client("dms").describe_replication_subnet_groups`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
+[DatabaseMigrationService.Client.describe_replication_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
 
 Arguments:
 
@@ -722,7 +726,7 @@ Type annotations for
 `boto3.client("dms").describe_replication_task_assessment_results` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_task_assessment_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
+[DatabaseMigrationService.Client.describe_replication_task_assessment_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
 
 Arguments:
 
@@ -739,7 +743,7 @@ Type annotations for
 `boto3.client("dms").describe_replication_task_assessment_runs` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_task_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
+[DatabaseMigrationService.Client.describe_replication_task_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
 
 Arguments:
 
@@ -756,7 +760,7 @@ Type annotations for
 `boto3.client("dms").describe_replication_task_individual_assessments` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_task_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
+[DatabaseMigrationService.Client.describe_replication_task_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
 
 Arguments:
 
@@ -772,7 +776,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_replication_tasks` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
+[DatabaseMigrationService.Client.describe_replication_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
 
 Arguments:
 
@@ -789,7 +793,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_schemas` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
+[DatabaseMigrationService.Client.describe_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
 
 Arguments:
 
@@ -805,7 +809,7 @@ Returns
 Type annotations for `boto3.client("dms").describe_table_statistics` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.describe_table_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
+[DatabaseMigrationService.Client.describe_table_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
 
 Arguments:
 
@@ -822,7 +826,7 @@ Returns
 Type annotations for `boto3.client("dms").generate_presigned_url` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url)
+[DatabaseMigrationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -838,7 +842,7 @@ Returns `str`.
 Type annotations for `boto3.client("dms").import_certificate` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
+[DatabaseMigrationService.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
 
 Arguments:
 
@@ -855,7 +859,7 @@ Returns
 Type annotations for `boto3.client("dms").list_tags_for_resource` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
+[DatabaseMigrationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -869,14 +873,14 @@ Returns
 Type annotations for `boto3.client("dms").modify_endpoint` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.modify_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
+[DatabaseMigrationService.Client.modify_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
 
 Arguments:
 
 - `EndpointArn`: `str` *(required)*
 - `EndpointIdentifier`: `str`
 - `EndpointType`:
-  [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
+  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
 - `EngineName`: `str`
 - `Username`: `str`
 - `Password`: `str`
@@ -885,7 +889,7 @@ Arguments:
 - `DatabaseName`: `str`
 - `ExtraConnectionAttributes`: `str`
 - `CertificateArn`: `str`
-- `SslMode`: [DmsSslModeValue](./literals.md#dmssslmodevalue)
+- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
 - `ServiceAccessRoleArn`: `str`
 - `ExternalTableDefinition`: `str`
 - `DynamoDbSettings`:
@@ -907,11 +911,14 @@ Arguments:
 - `PostgreSQLSettings`:
   [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
 - `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
-- `OracleSettings`: [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
-- `SybaseSettings`: [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
 - `MicrosoftSQLServerSettings`:
   [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
-- `IBMDb2Settings`: [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 
 Returns
@@ -922,7 +929,7 @@ Returns
 Type annotations for `boto3.client("dms").modify_event_subscription` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
+[DatabaseMigrationService.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
 
 Arguments:
 
@@ -940,7 +947,7 @@ Returns
 Type annotations for `boto3.client("dms").modify_replication_instance` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.modify_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
+[DatabaseMigrationService.Client.modify_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
 
 Arguments:
 
@@ -965,7 +972,7 @@ Type annotations for `boto3.client("dms").modify_replication_subnet_group`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.modify_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
+[DatabaseMigrationService.Client.modify_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
 
 Arguments:
 
@@ -981,13 +988,14 @@ Returns
 Type annotations for `boto3.client("dms").modify_replication_task` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.modify_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
+[DatabaseMigrationService.Client.modify_replication_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
 
 Arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 - `ReplicationTaskIdentifier`: `str`
-- `MigrationType`: [MigrationTypeValue](./literals.md#migrationtypevalue)
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
 - `TableMappings`: `str`
 - `ReplicationTaskSettings`: `str`
 - `CdcStartTime`: `datetime`
@@ -1003,7 +1011,7 @@ Returns
 Type annotations for `boto3.client("dms").move_replication_task` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.move_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
+[DatabaseMigrationService.Client.move_replication_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
 
 Arguments:
 
@@ -1018,7 +1026,7 @@ Returns
 Type annotations for `boto3.client("dms").reboot_replication_instance` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.reboot_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
+[DatabaseMigrationService.Client.reboot_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
 
 Arguments:
 
@@ -1033,7 +1041,7 @@ Returns
 Type annotations for `boto3.client("dms").refresh_schemas` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.refresh_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
+[DatabaseMigrationService.Client.refresh_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
 
 Arguments:
 
@@ -1048,7 +1056,7 @@ Returns
 Type annotations for `boto3.client("dms").reload_tables` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.reload_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
+[DatabaseMigrationService.Client.reload_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
 
 Arguments:
 
@@ -1056,7 +1064,7 @@ Arguments:
 - `TablesToReload`:
   `List`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
   *(required)*
-- `ReloadOption`: [ReloadOptionValue](./literals.md#reloadoptionvalue)
+- `ReloadOption`: [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
 
 Returns
 [ReloadTablesResponseTypeDef](./type_defs.md#reloadtablesresponsetypedef).
@@ -1066,7 +1074,7 @@ Returns
 Type annotations for `boto3.client("dms").remove_tags_from_resource` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
+[DatabaseMigrationService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
 
 Arguments:
 
@@ -1080,13 +1088,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("dms").start_replication_task` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.start_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
+[DatabaseMigrationService.Client.start_replication_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
 
 Arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 - `StartReplicationTaskType`:
-  [StartReplicationTaskTypeValue](./literals.md#startreplicationtasktypevalue)
+  [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
   *(required)*
 - `CdcStartTime`: `datetime`
 - `CdcStartPosition`: `str`
@@ -1101,7 +1109,7 @@ Type annotations for `boto3.client("dms").start_replication_task_assessment`
 method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.start_replication_task_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
+[DatabaseMigrationService.Client.start_replication_task_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
 
 Arguments:
 
@@ -1116,7 +1124,7 @@ Type annotations for
 `boto3.client("dms").start_replication_task_assessment_run` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.start_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
+[DatabaseMigrationService.Client.start_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
 
 Arguments:
 
@@ -1138,7 +1146,7 @@ Returns
 Type annotations for `boto3.client("dms").stop_replication_task` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.stop_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
+[DatabaseMigrationService.Client.stop_replication_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
 
 Arguments:
 
@@ -1152,7 +1160,7 @@ Returns
 Type annotations for `boto3.client("dms").test_connection` method.
 
 Boto3 documentation:
-[DatabaseMigrationService.Client.test_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
+[DatabaseMigrationService.Client.test_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
 
 Arguments:
 

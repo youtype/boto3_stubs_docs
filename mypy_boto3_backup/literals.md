@@ -3,23 +3,23 @@
 > [Index](..) > [Backup](.) > Literals
 
 Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+[Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/backup.html#Backup)
 type annotations stubs module
 [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 
 - [Literals for boto3 Backup module](#literals-for-boto3-backup-module)
-  - [BackupJobState](#backupjobstate)
-  - [BackupVaultEvent](#backupvaultevent)
-  - [ConditionType](#conditiontype)
-  - [CopyJobState](#copyjobstate)
-  - [RecoveryPointStatus](#recoverypointstatus)
-  - [RestoreJobStatus](#restorejobstatus)
-  - [StorageClass](#storageclass)
+  - [BackupJobStateType](#backupjobstatetype)
+  - [BackupVaultEventType](#backupvaulteventtype)
+  - [ConditionTypeType](#conditiontypetype)
+  - [CopyJobStateType](#copyjobstatetype)
+  - [RecoveryPointStatusType](#recoverypointstatustype)
+  - [RestoreJobStatusType](#restorejobstatustype)
+  - [StorageClassType](#storageclasstype)
 
-## BackupJobState
+## BackupJobStateType
 
 ```python
-from mypy_boto3_backup.literals import BackupJobState
+from mypy_boto3_backup.literals import BackupJobStateType
 ```
 
 Values:
@@ -33,10 +33,10 @@ Values:
 - `PENDING`
 - `RUNNING`
 
-## BackupVaultEvent
+## BackupVaultEventType
 
 ```python
-from mypy_boto3_backup.literals import BackupVaultEvent
+from mypy_boto3_backup.literals import BackupVaultEventType
 ```
 
 Values:
@@ -57,20 +57,20 @@ Values:
 - `RESTORE_JOB_STARTED`
 - `RESTORE_JOB_SUCCESSFUL`
 
-## ConditionType
+## ConditionTypeType
 
 ```python
-from mypy_boto3_backup.literals import ConditionType
+from mypy_boto3_backup.literals import ConditionTypeType
 ```
 
 Values:
 
 - `STRINGEQUALS`
 
-## CopyJobState
+## CopyJobStateType
 
 ```python
-from mypy_boto3_backup.literals import CopyJobState
+from mypy_boto3_backup.literals import CopyJobStateType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `FAILED`
 - `RUNNING`
 
-## RecoveryPointStatus
+## RecoveryPointStatusType
 
 ```python
-from mypy_boto3_backup.literals import RecoveryPointStatus
+from mypy_boto3_backup.literals import RecoveryPointStatusType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `EXPIRED`
 - `PARTIAL`
 
-## RestoreJobStatus
+## RestoreJobStatusType
 
 ```python
-from mypy_boto3_backup.literals import RestoreJobStatus
+from mypy_boto3_backup.literals import RestoreJobStatusType
 ```
 
 Values:
@@ -107,10 +107,10 @@ Values:
 - `PENDING`
 - `RUNNING`
 
-## StorageClass
+## StorageClassType
 
 ```python
-from mypy_boto3_backup.literals import StorageClass
+from mypy_boto3_backup.literals import StorageClassType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScaling](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
@@ -110,7 +110,7 @@ Required fields:
 - `Cause`: `str`
 - `StartTime`: `datetime`
 - `StatusCode`:
-  [ScalingActivityStatusCode](./literals.md#scalingactivitystatuscode)
+  [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
 
 Optional fields:
 
@@ -189,7 +189,8 @@ Optional fields:
 - `EnabledMetrics`:
   `List`\[[EnabledMetricTypeDef](./type_defs.md#enabledmetrictypedef)\]
 - `Status`: `str`
-- `Tags`: `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
+- `Tags`:
+  `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
 - `TerminationPolicies`: `List`\[`str`\]
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `ServiceLinkedRoleARN`: `str`
@@ -307,7 +308,7 @@ Required fields:
 
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `Statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 
 Optional fields:
 
@@ -548,10 +549,10 @@ from mypy_boto3_autoscaling.type_defs import InstanceMetadataOptionsTypeDef
 Optional fields:
 
 - `HttpTokens`:
-  [InstanceMetadataHttpTokensState](./literals.md#instancemetadatahttptokensstate)
+  [InstanceMetadataHttpTokensStateType](./literals.md#instancemetadatahttptokensstatetype)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [InstanceMetadataEndpointState](./literals.md#instancemetadataendpointstate)
+  [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 
 ## InstanceMonitoringTypeDef
 
@@ -597,7 +598,8 @@ Optional fields:
 
 - `InstanceRefreshId`: `str`
 - `AutoScalingGroupName`: `str`
-- `Status`: [InstanceRefreshStatus](./literals.md#instancerefreshstatus)
+- `Status`:
+  [InstanceRefreshStatusType](./literals.md#instancerefreshstatustype)
 - `StatusReason`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -627,7 +629,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `AvailabilityZone`: `str`
-- `LifecycleState`: [LifecycleState](./literals.md#lifecyclestate)
+- `LifecycleState`: [LifecycleStateType](./literals.md#lifecyclestatetype)
 - `HealthStatus`: `str`
 - `ProtectedFromScaleIn`: `bool`
 
@@ -840,7 +842,8 @@ from mypy_boto3_autoscaling.type_defs import MixedInstancesPolicyTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `LaunchTemplate`:
+  [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 - `InstancesDistribution`:
   [InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef)
 
@@ -899,7 +902,7 @@ from mypy_boto3_autoscaling.type_defs import PredefinedMetricSpecificationTypeDe
 
 Required fields:
 
-- `PredefinedMetricType`: [MetricType](./literals.md#metrictype)
+- `PredefinedMetricType`: [MetricTypeType](./literals.md#metrictypetype)
 
 Optional fields:
 
@@ -923,7 +926,8 @@ from mypy_boto3_autoscaling.type_defs import ProcessesTypeTypeDef
 
 Optional fields:
 
-- `Processes`: `List`\[[ProcessTypeTypeDef](./type_defs.md#processtypetypedef)\]
+- `Processes`:
+  `List`\[[ProcessTypeTypeDef](./type_defs.md#processtypetypedef)\]
 
 ## RefreshPreferencesTypeDef
 
@@ -1091,7 +1095,8 @@ from mypy_boto3_autoscaling.type_defs import TagsTypeTypeDef
 
 Optional fields:
 
-- `Tags`: `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
+- `Tags`:
+  `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## TargetTrackingConfigurationTypeDef
@@ -1122,6 +1127,6 @@ Optional fields:
 
 - `MaxGroupPreparedCapacity`: `int`
 - `MinSize`: `int`
-- `PoolState`: [WarmPoolState](./literals.md#warmpoolstate)
+- `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
 - `Status`: `Literal['PendingDelete']` (see
-  [WarmPoolStatus](./literals.md#warmpoolstatus))
+  [WarmPoolStatusType](./literals.md#warmpoolstatustype))

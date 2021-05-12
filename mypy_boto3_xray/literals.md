@@ -3,14 +3,14 @@
 > [Index](..) > [XRay](.) > Literals
 
 Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay)
 type annotations stubs module
 [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
 - [Literals for boto3 XRay module](#literals-for-boto3-xray-module)
   - [BatchGetTracesPaginatorName](#batchgettracespaginatorname)
-  - [EncryptionStatus](#encryptionstatus)
-  - [EncryptionType](#encryptiontype)
+  - [EncryptionStatusType](#encryptionstatustype)
+  - [EncryptionTypeType](#encryptiontypetype)
   - [GetGroupsPaginatorName](#getgroupspaginatorname)
   - [GetSamplingRulesPaginatorName](#getsamplingrulespaginatorname)
   - [GetSamplingStatisticSummariesPaginatorName](#getsamplingstatisticsummariespaginatorname)
@@ -18,10 +18,10 @@ type annotations stubs module
   - [GetTimeSeriesServiceStatisticsPaginatorName](#gettimeseriesservicestatisticspaginatorname)
   - [GetTraceGraphPaginatorName](#gettracegraphpaginatorname)
   - [GetTraceSummariesPaginatorName](#gettracesummariespaginatorname)
-  - [InsightCategory](#insightcategory)
-  - [InsightState](#insightstate)
-  - [SamplingStrategyName](#samplingstrategyname)
-  - [TimeRangeType](#timerangetype)
+  - [InsightCategoryType](#insightcategorytype)
+  - [InsightStateType](#insightstatetype)
+  - [SamplingStrategyNameType](#samplingstrategynametype)
+  - [TimeRangeTypeType](#timerangetypetype)
 
 ## BatchGetTracesPaginatorName
 
@@ -33,10 +33,10 @@ Values:
 
 - `batch_get_traces`
 
-## EncryptionStatus
+## EncryptionStatusType
 
 ```python
-from mypy_boto3_xray.literals import EncryptionStatus
+from mypy_boto3_xray.literals import EncryptionStatusType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 - `ACTIVE`
 - `UPDATING`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_xray.literals import EncryptionType
+from mypy_boto3_xray.literals import EncryptionTypeType
 ```
 
 Values:
@@ -125,20 +125,20 @@ Values:
 
 - `get_trace_summaries`
 
-## InsightCategory
+## InsightCategoryType
 
 ```python
-from mypy_boto3_xray.literals import InsightCategory
+from mypy_boto3_xray.literals import InsightCategoryType
 ```
 
 Values:
 
 - `FAULT`
 
-## InsightState
+## InsightStateType
 
 ```python
-from mypy_boto3_xray.literals import InsightState
+from mypy_boto3_xray.literals import InsightStateType
 ```
 
 Values:
@@ -146,10 +146,10 @@ Values:
 - `ACTIVE`
 - `CLOSED`
 
-## SamplingStrategyName
+## SamplingStrategyNameType
 
 ```python
-from mypy_boto3_xray.literals import SamplingStrategyName
+from mypy_boto3_xray.literals import SamplingStrategyNameType
 ```
 
 Values:
@@ -157,10 +157,10 @@ Values:
 - `FixedRate`
 - `PartialScan`
 
-## TimeRangeType
+## TimeRangeTypeType
 
 ```python
-from mypy_boto3_xray.literals import TimeRangeType
+from mypy_boto3_xray.literals import TimeRangeTypeType
 ```
 
 Values:

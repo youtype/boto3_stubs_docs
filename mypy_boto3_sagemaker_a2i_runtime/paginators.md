@@ -3,7 +3,7 @@
 > [Index](..) > [AugmentedAIRuntime](.) > Paginators
 
 Auto-generated documentation for
-[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
@@ -25,14 +25,14 @@ def get_list_human_loops_paginator() -> ListHumanLoopsPaginator:
 ```
 
 Boto3 documentation:
-[AugmentedAIRuntime.Paginator.ListHumanLoops](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Paginator.ListHumanLoops)
+[AugmentedAIRuntime.Paginator.ListHumanLoops](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Paginator.ListHumanLoops)
 
 Arguments for `ListHumanLoopsPaginator.paginate` method:
 
 - `FlowDefinitionArn`: `str` *(required)*
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Translate](.) > TranslateClient
 
 Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate)
 type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
@@ -43,7 +43,7 @@ def get_translate_client() -> TranslateClient:
 ```
 
 Boto3 documentation:
-[Translate.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
+[Translate.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 Type annotations for `boto3.client("translate").can_paginate` method.
 
 Boto3 documentation:
-[Translate.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.can_paginate)
+[Translate.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.can_paginate)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns `bool`.
 Type annotations for `boto3.client("translate").create_parallel_data` method.
 
 Boto3 documentation:
-[Translate.Client.create_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data)
+[Translate.Client.create_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.create_parallel_data)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns
 Type annotations for `boto3.client("translate").delete_parallel_data` method.
 
 Boto3 documentation:
-[Translate.Client.delete_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data)
+[Translate.Client.delete_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.delete_parallel_data)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Returns
 Type annotations for `boto3.client("translate").delete_terminology` method.
 
 Boto3 documentation:
-[Translate.Client.delete_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology)
+[Translate.Client.delete_terminology](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.delete_terminology)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("translate").describe_text_translation_job`
 method.
 
 Boto3 documentation:
-[Translate.Client.describe_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job)
+[Translate.Client.describe_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.describe_text_translation_job)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("translate").generate_presigned_url` method.
 
 Boto3 documentation:
-[Translate.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.generate_presigned_url)
+[Translate.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.generate_presigned_url)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns `str`.
 Type annotations for `boto3.client("translate").get_parallel_data` method.
 
 Boto3 documentation:
-[Translate.Client.get_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data)
+[Translate.Client.get_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.get_parallel_data)
 
 Arguments:
 
@@ -184,13 +184,14 @@ Returns
 Type annotations for `boto3.client("translate").get_terminology` method.
 
 Boto3 documentation:
-[Translate.Client.get_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology)
+[Translate.Client.get_terminology](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.get_terminology)
 
 Arguments:
 
 - `Name`: `str` *(required)*
 - `TerminologyDataFormat`:
-  [TerminologyDataFormat](./literals.md#terminologydataformat) *(required)*
+  [TerminologyDataFormatType](./literals.md#terminologydataformattype)
+  *(required)*
 
 Returns
 [GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
@@ -200,13 +201,13 @@ Returns
 Type annotations for `boto3.client("translate").import_terminology` method.
 
 Boto3 documentation:
-[Translate.Client.import_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
+[Translate.Client.import_terminology](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.import_terminology)
 
 Arguments:
 
 - `Name`: `str` *(required)*
 - `MergeStrategy`: `Literal['OVERWRITE']` (see
-  [MergeStrategy](./literals.md#mergestrategy)) *(required)*
+  [MergeStrategyType](./literals.md#mergestrategytype)) *(required)*
 - `TerminologyData`:
   [TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) *(required)*
 - `Description`: `str`
@@ -220,7 +221,7 @@ Returns
 Type annotations for `boto3.client("translate").list_parallel_data` method.
 
 Boto3 documentation:
-[Translate.Client.list_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data)
+[Translate.Client.list_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.list_parallel_data)
 
 Arguments:
 
@@ -235,7 +236,7 @@ Returns
 Type annotations for `boto3.client("translate").list_terminologies` method.
 
 Boto3 documentation:
-[Translate.Client.list_terminologies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies)
+[Translate.Client.list_terminologies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.list_terminologies)
 
 Arguments:
 
@@ -251,7 +252,7 @@ Type annotations for `boto3.client("translate").list_text_translation_jobs`
 method.
 
 Boto3 documentation:
-[Translate.Client.list_text_translation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
+[Translate.Client.list_text_translation_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
 
 Arguments:
 
@@ -269,14 +270,15 @@ Type annotations for `boto3.client("translate").start_text_translation_job`
 method.
 
 Boto3 documentation:
-[Translate.Client.start_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job)
+[Translate.Client.start_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.start_text_translation_job)
 
 Arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+  *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
 - `SourceLanguageCode`: `str` *(required)*
 - `TargetLanguageCodes`: `List`\[`str`\] *(required)*
@@ -294,7 +296,7 @@ Type annotations for `boto3.client("translate").stop_text_translation_job`
 method.
 
 Boto3 documentation:
-[Translate.Client.stop_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job)
+[Translate.Client.stop_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.stop_text_translation_job)
 
 Arguments:
 
@@ -308,7 +310,7 @@ Returns
 Type annotations for `boto3.client("translate").translate_text` method.
 
 Boto3 documentation:
-[Translate.Client.translate_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text)
+[Translate.Client.translate_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.translate_text)
 
 Arguments:
 
@@ -325,7 +327,7 @@ Returns
 Type annotations for `boto3.client("translate").update_parallel_data` method.
 
 Boto3 documentation:
-[Translate.Client.update_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data)
+[Translate.Client.update_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate.Client.update_parallel_data)
 
 Arguments:
 

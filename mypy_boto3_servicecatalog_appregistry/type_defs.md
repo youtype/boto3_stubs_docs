@@ -3,7 +3,7 @@
 > [Index](..) > [AppRegistry](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
 [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
@@ -135,7 +135,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroup
 
 Optional fields:
 
-- `attributeGroup`: [AttributeGroupTypeDef](./type_defs.md#attributegrouptypedef)
+- `attributeGroup`:
+  [AttributeGroupTypeDef](./type_defs.md#attributegrouptypedef)
 
 ## DeleteApplicationResponseTypeDef
 
@@ -305,7 +306,7 @@ Optional fields:
 
 - `applicationArn`: `str`
 - `resourceArn`: `str`
-- `actionTaken`: [SyncAction](./literals.md#syncaction)
+- `actionTaken`: [SyncActionType](./literals.md#syncactiontype)
 
 ## UpdateApplicationResponseTypeDef
 
@@ -325,4 +326,5 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroup
 
 Optional fields:
 
-- `attributeGroup`: [AttributeGroupTypeDef](./type_defs.md#attributegrouptypedef)
+- `attributeGroup`:
+  [AttributeGroupTypeDef](./type_defs.md#attributegrouptypedef)

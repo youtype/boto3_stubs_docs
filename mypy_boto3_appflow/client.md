@@ -3,7 +3,7 @@
 > [Index](..) > [Appflow](.) > AppflowClient
 
 Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow)
 type annotations stubs module
 [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
@@ -46,7 +46,7 @@ def get_appflow_client() -> AppflowClient:
 ```
 
 Boto3 documentation:
-[Appflow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
+[Appflow.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client)
 
 ## Exceptions
 
@@ -79,7 +79,7 @@ Exceptions:
 Type annotations for `boto3.client("appflow").can_paginate` method.
 
 Boto3 documentation:
-[Appflow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate)
+[Appflow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.can_paginate)
 
 Arguments:
 
@@ -92,13 +92,15 @@ Returns `bool`.
 Type annotations for `boto3.client("appflow").create_connector_profile` method.
 
 Boto3 documentation:
-[Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
+[Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.create_connector_profile)
 
 Arguments:
 
 - `connectorProfileName`: `str` *(required)*
-- `connectorType`: [ConnectorType](./literals.md#connectortype) *(required)*
-- `connectionMode`: [ConnectionMode](./literals.md#connectionmode) *(required)*
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+  *(required)*
+- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
+  *(required)*
 - `connectorProfileConfig`:
   [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
   *(required)*
@@ -112,7 +114,7 @@ Returns
 Type annotations for `boto3.client("appflow").create_flow` method.
 
 Boto3 documentation:
-[Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
+[Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.create_flow)
 
 Arguments:
 
@@ -120,7 +122,8 @@ Arguments:
 - `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
   *(required)*
 - `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) *(required)*
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
+  *(required)*
 - `destinationFlowConfigList`:
   `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
   *(required)*
@@ -136,7 +139,7 @@ Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 Type annotations for `boto3.client("appflow").delete_connector_profile` method.
 
 Boto3 documentation:
-[Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
+[Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
 
 Arguments:
 
@@ -150,7 +153,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appflow").delete_flow` method.
 
 Boto3 documentation:
-[Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
+[Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.delete_flow)
 
 Arguments:
 
@@ -165,12 +168,12 @@ Type annotations for `boto3.client("appflow").describe_connector_entity`
 method.
 
 Boto3 documentation:
-[Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
+[Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
 
 Arguments:
 
 - `connectorEntityName`: `str` *(required)*
-- `connectorType`: [ConnectorType](./literals.md#connectortype)
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `connectorProfileName`: `str`
 
 Returns
@@ -182,12 +185,12 @@ Type annotations for `boto3.client("appflow").describe_connector_profiles`
 method.
 
 Boto3 documentation:
-[Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
+[Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
 
 Arguments:
 
 - `connectorProfileNames`: `List`\[`str`\]
-- `connectorType`: [ConnectorType](./literals.md#connectortype)
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -199,11 +202,12 @@ Returns
 Type annotations for `boto3.client("appflow").describe_connectors` method.
 
 Boto3 documentation:
-[Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
+[Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.describe_connectors)
 
 Arguments:
 
-- `connectorTypes`: `List`\[[ConnectorType](./literals.md#connectortype)\]
+- `connectorTypes`:
+  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
 - `nextToken`: `str`
 
 Returns
@@ -214,7 +218,7 @@ Returns
 Type annotations for `boto3.client("appflow").describe_flow` method.
 
 Boto3 documentation:
-[Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
+[Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.describe_flow)
 
 Arguments:
 
@@ -229,7 +233,7 @@ Type annotations for `boto3.client("appflow").describe_flow_execution_records`
 method.
 
 Boto3 documentation:
-[Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
+[Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
 
 Arguments:
 
@@ -245,7 +249,7 @@ Returns
 Type annotations for `boto3.client("appflow").generate_presigned_url` method.
 
 Boto3 documentation:
-[Appflow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url)
+[Appflow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.generate_presigned_url)
 
 Arguments:
 
@@ -261,12 +265,12 @@ Returns `str`.
 Type annotations for `boto3.client("appflow").list_connector_entities` method.
 
 Boto3 documentation:
-[Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
+[Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.list_connector_entities)
 
 Arguments:
 
 - `connectorProfileName`: `str`
-- `connectorType`: [ConnectorType](./literals.md#connectortype)
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `entitiesPath`: `str`
 
 Returns
@@ -277,7 +281,7 @@ Returns
 Type annotations for `boto3.client("appflow").list_flows` method.
 
 Boto3 documentation:
-[Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
+[Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.list_flows)
 
 Arguments:
 
@@ -291,7 +295,7 @@ Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 Type annotations for `boto3.client("appflow").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
+[Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -305,7 +309,7 @@ Returns
 Type annotations for `boto3.client("appflow").start_flow` method.
 
 Boto3 documentation:
-[Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
+[Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.start_flow)
 
 Arguments:
 
@@ -318,7 +322,7 @@ Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
 Type annotations for `boto3.client("appflow").stop_flow` method.
 
 Boto3 documentation:
-[Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
+[Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.stop_flow)
 
 Arguments:
 
@@ -331,7 +335,7 @@ Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 Type annotations for `boto3.client("appflow").tag_resource` method.
 
 Boto3 documentation:
-[Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
+[Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.tag_resource)
 
 Arguments:
 
@@ -345,7 +349,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appflow").untag_resource` method.
 
 Boto3 documentation:
-[Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
+[Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.untag_resource)
 
 Arguments:
 
@@ -359,12 +363,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appflow").update_connector_profile` method.
 
 Boto3 documentation:
-[Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
+[Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.update_connector_profile)
 
 Arguments:
 
 - `connectorProfileName`: `str` *(required)*
-- `connectionMode`: [ConnectionMode](./literals.md#connectionmode) *(required)*
+- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
+  *(required)*
 - `connectorProfileConfig`:
   [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
   *(required)*
@@ -377,7 +382,7 @@ Returns
 Type annotations for `boto3.client("appflow").update_flow` method.
 
 Boto3 documentation:
-[Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
+[Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow.Client.update_flow)
 
 Arguments:
 

@@ -3,12 +3,12 @@
 > [Index](..) > [SSOAdmin](.) > Literals
 
 Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
 [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 - [Literals for boto3 SSOAdmin module](#literals-for-boto3-ssoadmin-module)
-  - [InstanceAccessControlAttributeConfigurationStatus](#instanceaccesscontrolattributeconfigurationstatus)
+  - [InstanceAccessControlAttributeConfigurationStatusType](#instanceaccesscontrolattributeconfigurationstatustype)
   - [ListAccountAssignmentCreationStatusPaginatorName](#listaccountassignmentcreationstatuspaginatorname)
   - [ListAccountAssignmentDeletionStatusPaginatorName](#listaccountassignmentdeletionstatuspaginatorname)
   - [ListAccountAssignmentsPaginatorName](#listaccountassignmentspaginatorname)
@@ -19,16 +19,16 @@ type annotations stubs module
   - [ListPermissionSetsPaginatorName](#listpermissionsetspaginatorname)
   - [ListPermissionSetsProvisionedToAccountPaginatorName](#listpermissionsetsprovisionedtoaccountpaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [PrincipalType](#principaltype)
-  - [ProvisionTargetType](#provisiontargettype)
-  - [ProvisioningStatus](#provisioningstatus)
-  - [StatusValues](#statusvalues)
-  - [TargetType](#targettype)
+  - [PrincipalTypeType](#principaltypetype)
+  - [ProvisionTargetTypeType](#provisiontargettypetype)
+  - [ProvisioningStatusType](#provisioningstatustype)
+  - [StatusValuesType](#statusvaluestype)
+  - [TargetTypeType](#targettypetype)
 
-## InstanceAccessControlAttributeConfigurationStatus
+## InstanceAccessControlAttributeConfigurationStatusType
 
 ```python
-from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigurationStatus
+from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigurationStatusType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## PrincipalType
+## PrincipalTypeType
 
 ```python
-from mypy_boto3_sso_admin.literals import PrincipalType
+from mypy_boto3_sso_admin.literals import PrincipalTypeType
 ```
 
 Values:
@@ -148,10 +148,10 @@ Values:
 - `GROUP`
 - `USER`
 
-## ProvisionTargetType
+## ProvisionTargetTypeType
 
 ```python
-from mypy_boto3_sso_admin.literals import ProvisionTargetType
+from mypy_boto3_sso_admin.literals import ProvisionTargetTypeType
 ```
 
 Values:
@@ -159,10 +159,10 @@ Values:
 - `ALL_PROVISIONED_ACCOUNTS`
 - `AWS_ACCOUNT`
 
-## ProvisioningStatus
+## ProvisioningStatusType
 
 ```python
-from mypy_boto3_sso_admin.literals import ProvisioningStatus
+from mypy_boto3_sso_admin.literals import ProvisioningStatusType
 ```
 
 Values:
@@ -170,10 +170,10 @@ Values:
 - `LATEST_PERMISSION_SET_NOT_PROVISIONED`
 - `LATEST_PERMISSION_SET_PROVISIONED`
 
-## StatusValues
+## StatusValuesType
 
 ```python
-from mypy_boto3_sso_admin.literals import StatusValues
+from mypy_boto3_sso_admin.literals import StatusValuesType
 ```
 
 Values:
@@ -182,10 +182,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
-## TargetType
+## TargetTypeType
 
 ```python
-from mypy_boto3_sso_admin.literals import TargetType
+from mypy_boto3_sso_admin.literals import TargetTypeType
 ```
 
 Values:

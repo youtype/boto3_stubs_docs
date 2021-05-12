@@ -3,7 +3,7 @@
 > [Index](..) > [EventBridge](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/events.html#EventBridge)
 type annotations stubs module
 [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
@@ -113,11 +113,12 @@ Optional fields:
 
 - `ApiDestinationArn`: `str`
 - `Name`: `str`
-- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
+- `ApiDestinationState`:
+  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
 - `ConnectionArn`: `str`
 - `InvocationEndpoint`: `str`
 - `HttpMethod`:
-  [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod)
+  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
 - `InvocationRateLimitPerSecond`: `int`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -132,7 +133,7 @@ Optional fields:
 
 - `ArchiveName`: `str`
 - `EventSourceArn`: `str`
-- `State`: [ArchiveState](./literals.md#archivestate)
+- `State`: [ArchiveStateType](./literals.md#archivestatetype)
 - `StateReason`: `str`
 - `RetentionDays`: `int`
 - `SizeBytes`: `int`
@@ -152,7 +153,7 @@ Required fields:
 Optional fields:
 
 - `SecurityGroups`: `List`\[`str`\]
-- `AssignPublicIp`: [AssignPublicIp](./literals.md#assignpublicip)
+- `AssignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
 
 ## BatchArrayPropertiesTypeDef
 
@@ -201,7 +202,7 @@ from mypy_boto3_events.type_defs import CancelReplayResponseTypeDef
 Optional fields:
 
 - `ReplayArn`: `str`
-- `State`: [ReplayState](./literals.md#replaystate)
+- `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
 
 ## ConditionTypeDef
@@ -314,7 +315,7 @@ Optional fields:
   [ConnectionOAuthClientResponseParametersTypeDef](./type_defs.md#connectionoauthclientresponseparameterstypedef)
 - `AuthorizationEndpoint`: `str`
 - `HttpMethod`:
-  [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
+  [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
@@ -340,10 +341,10 @@ Optional fields:
 
 - `ConnectionArn`: `str`
 - `Name`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `StateReason`: `str`
 - `AuthorizationType`:
-  [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
+  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -357,7 +358,8 @@ from mypy_boto3_events.type_defs import CreateApiDestinationResponseTypeDef
 Optional fields:
 
 - `ApiDestinationArn`: `str`
-- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
+- `ApiDestinationState`:
+  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -370,7 +372,7 @@ from mypy_boto3_events.type_defs import CreateArchiveResponseTypeDef
 Optional fields:
 
 - `ArchiveArn`: `str`
-- `State`: [ArchiveState](./literals.md#archivestate)
+- `State`: [ArchiveStateType](./literals.md#archivestatetype)
 - `StateReason`: `str`
 - `CreationTime`: `datetime`
 
@@ -436,7 +438,7 @@ Required fields:
   [CreateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#createconnectionoauthclientrequestparameterstypedef)
 - `AuthorizationEndpoint`: `str`
 - `HttpMethod`:
-  [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
+  [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
 
 Optional fields:
 
@@ -452,7 +454,7 @@ from mypy_boto3_events.type_defs import CreateConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -495,7 +497,7 @@ from mypy_boto3_events.type_defs import DeauthorizeConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -509,7 +511,7 @@ from mypy_boto3_events.type_defs import DeleteConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -525,11 +527,12 @@ Optional fields:
 - `ApiDestinationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
+- `ApiDestinationState`:
+  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
 - `ConnectionArn`: `str`
 - `InvocationEndpoint`: `str`
 - `HttpMethod`:
-  [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod)
+  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
 - `InvocationRateLimitPerSecond`: `int`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -547,7 +550,7 @@ Optional fields:
 - `EventSourceArn`: `str`
 - `Description`: `str`
 - `EventPattern`: `str`
-- `State`: [ArchiveState](./literals.md#archivestate)
+- `State`: [ArchiveStateType](./literals.md#archivestatetype)
 - `StateReason`: `str`
 - `RetentionDays`: `int`
 - `SizeBytes`: `int`
@@ -565,10 +568,10 @@ Optional fields:
 - `ConnectionArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `StateReason`: `str`
 - `AuthorizationType`:
-  [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
+  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
 - `SecretArn`: `str`
 - `AuthParameters`:
   [ConnectionAuthResponseParametersTypeDef](./type_defs.md#connectionauthresponseparameterstypedef)
@@ -601,7 +604,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
 - `Name`: `str`
-- `State`: [EventSourceState](./literals.md#eventsourcestate)
+- `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
 
 ## DescribePartnerEventSourceResponseTypeDef
 
@@ -625,7 +628,7 @@ Optional fields:
 - `ReplayName`: `str`
 - `ReplayArn`: `str`
 - `Description`: `str`
-- `State`: [ReplayState](./literals.md#replaystate)
+- `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
 - `EventSourceArn`: `str`
 - `Destination`:
@@ -648,7 +651,7 @@ Optional fields:
 - `Arn`: `str`
 - `EventPattern`: `str`
 - `ScheduleExpression`: `str`
-- `State`: [RuleState](./literals.md#rulestate)
+- `State`: [RuleStateType](./literals.md#rulestatetype)
 - `Description`: `str`
 - `RoleArn`: `str`
 - `ManagedBy`: `str`
@@ -668,7 +671,7 @@ Required fields:
 Optional fields:
 
 - `TaskCount`: `int`
-- `LaunchType`: [LaunchType](./literals.md#launchtype)
+- `LaunchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `NetworkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `PlatformVersion`: `str`
@@ -699,7 +702,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
 - `Name`: `str`
-- `State`: [EventSourceState](./literals.md#eventsourcestate)
+- `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
 
 ## HttpParametersTypeDef
 
@@ -768,7 +771,8 @@ from mypy_boto3_events.type_defs import ListConnectionsResponseTypeDef
 
 Optional fields:
 
-- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `Connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 
 ## ListEventBusesResponseTypeDef
@@ -906,7 +910,7 @@ Optional fields:
 - `Account`: `str`
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
-- `State`: [EventSourceState](./literals.md#eventsourcestate)
+- `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
 
 ## PartnerEventSourceTypeDef
 
@@ -1097,7 +1101,7 @@ Optional fields:
 
 - `ReplayName`: `str`
 - `EventSourceArn`: `str`
-- `State`: [ReplayState](./literals.md#replaystate)
+- `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
 - `EventStartTime`: `datetime`
 - `EventEndTime`: `datetime`
@@ -1127,7 +1131,7 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `EventPattern`: `str`
-- `State`: [RuleState](./literals.md#rulestate)
+- `State`: [RuleStateType](./literals.md#rulestatetype)
 - `Description`: `str`
 - `ScheduleExpression`: `str`
 - `RoleArn`: `str`
@@ -1197,7 +1201,7 @@ from mypy_boto3_events.type_defs import StartReplayResponseTypeDef
 Optional fields:
 
 - `ReplayArn`: `str`
-- `State`: [ReplayState](./literals.md#replaystate)
+- `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
 - `ReplayStartTime`: `datetime`
 
@@ -1238,7 +1242,8 @@ Optional fields:
 - `BatchParameters`:
   [BatchParametersTypeDef](./type_defs.md#batchparameterstypedef)
 - `SqsParameters`: [SqsParametersTypeDef](./type_defs.md#sqsparameterstypedef)
-- `HttpParameters`: [HttpParametersTypeDef](./type_defs.md#httpparameterstypedef)
+- `HttpParameters`:
+  [HttpParametersTypeDef](./type_defs.md#httpparameterstypedef)
 - `RedshiftDataParameters`:
   [RedshiftDataParametersTypeDef](./type_defs.md#redshiftdataparameterstypedef)
 - `SageMakerPipelineParameters`:
@@ -1266,7 +1271,8 @@ from mypy_boto3_events.type_defs import UpdateApiDestinationResponseTypeDef
 Optional fields:
 
 - `ApiDestinationArn`: `str`
-- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
+- `ApiDestinationState`:
+  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -1279,7 +1285,7 @@ from mypy_boto3_events.type_defs import UpdateArchiveResponseTypeDef
 Optional fields:
 
 - `ArchiveArn`: `str`
-- `State`: [ArchiveState](./literals.md#archivestate)
+- `State`: [ArchiveStateType](./literals.md#archivestatetype)
 - `StateReason`: `str`
 - `CreationTime`: `datetime`
 
@@ -1345,7 +1351,7 @@ Optional fields:
   [UpdateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#updateconnectionoauthclientrequestparameterstypedef)
 - `AuthorizationEndpoint`: `str`
 - `HttpMethod`:
-  [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
+  [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
@@ -1358,7 +1364,7 @@ from mypy_boto3_events.type_defs import UpdateConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`

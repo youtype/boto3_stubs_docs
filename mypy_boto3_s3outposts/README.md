@@ -3,7 +3,7 @@
 > [Index](..) > S3Outposts
 
 Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
+[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
@@ -30,25 +30,25 @@ Can be used directly:
 from mypy_boto3_s3outposts.client import S3OutpostsClient
 ```
 
-S3OutpostsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_endpoint](./client.md#create-endpoint)
-- [delete_endpoint](./client.md#delete-endpoint)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_endpoints](./client.md#list-endpoints)
+- [can_paginate](./client.md#can_paginate)
+- [create_endpoint](./client.md#create_endpoint)
+- [delete_endpoint](./client.md#delete_endpoint)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_endpoints](./client.md#list_endpoints)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+S3OutpostsClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -70,10 +70,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3outposts.literals import EndpointStatus, ...
+from mypy_boto3_s3outposts.literals import EndpointStatusType, ...
 ```
 
-- [EndpointStatus](./literals.md#endpointstatus)
+- [EndpointStatusType](./literals.md#endpointstatustype)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
 
 ## Typed dictionaries

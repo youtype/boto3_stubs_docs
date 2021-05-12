@@ -3,7 +3,7 @@
 > [Index](..) > [MediaPackage](.) > MediaPackageClient
 
 Auto-generated documentation for
-[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
 [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
@@ -48,7 +48,7 @@ def get_mediapackage_client() -> MediaPackageClient:
 ```
 
 Boto3 documentation:
-[MediaPackage.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client)
+[MediaPackage.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client)
 
 ## Exceptions
 
@@ -79,7 +79,7 @@ Exceptions:
 Type annotations for `boto3.client("mediapackage").can_paginate` method.
 
 Boto3 documentation:
-[MediaPackage.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.can_paginate)
+[MediaPackage.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.can_paginate)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediapackage").configure_logs` method.
 
 Boto3 documentation:
-[MediaPackage.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.configure_logs)
+[MediaPackage.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.configure_logs)
 
 Arguments:
 
@@ -110,7 +110,7 @@ Returns
 Type annotations for `boto3.client("mediapackage").create_channel` method.
 
 Boto3 documentation:
-[MediaPackage.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_channel)
+[MediaPackage.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.create_channel)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns
 Type annotations for `boto3.client("mediapackage").create_harvest_job` method.
 
 Boto3 documentation:
-[MediaPackage.Client.create_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job)
+[MediaPackage.Client.create_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("mediapackage").create_origin_endpoint`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.create_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint)
+[MediaPackage.Client.create_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Arguments:
 - `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `ManifestName`: `str`
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [Origination](./literals.md#origination)
+- `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -174,7 +174,7 @@ Returns
 Type annotations for `boto3.client("mediapackage").delete_channel` method.
 
 Boto3 documentation:
-[MediaPackage.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_channel)
+[MediaPackage.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.delete_channel)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Type annotations for `boto3.client("mediapackage").delete_origin_endpoint`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.delete_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint)
+[MediaPackage.Client.delete_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediapackage").describe_channel` method.
 
 Boto3 documentation:
-[MediaPackage.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_channel)
+[MediaPackage.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.describe_channel)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("mediapackage").describe_harvest_job`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.describe_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job)
+[MediaPackage.Client.describe_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("mediapackage").describe_origin_endpoint`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.describe_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint)
+[MediaPackage.Client.describe_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Type annotations for `boto3.client("mediapackage").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.generate_presigned_url)
+[MediaPackage.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.generate_presigned_url)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns `str`.
 Type annotations for `boto3.client("mediapackage").list_channels` method.
 
 Boto3 documentation:
-[MediaPackage.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_channels)
+[MediaPackage.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.list_channels)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Returns
 Type annotations for `boto3.client("mediapackage").list_harvest_jobs` method.
 
 Boto3 documentation:
-[MediaPackage.Client.list_harvest_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs)
+[MediaPackage.Client.list_harvest_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("mediapackage").list_origin_endpoints`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.list_origin_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints)
+[MediaPackage.Client.list_origin_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("mediapackage").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource)
+[MediaPackage.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Type annotations for `boto3.client("mediapackage").rotate_channel_credentials`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.rotate_channel_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials)
+[MediaPackage.Client.rotate_channel_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Type annotations for
 `boto3.client("mediapackage").rotate_ingest_endpoint_credentials` method.
 
 Boto3 documentation:
-[MediaPackage.Client.rotate_ingest_endpoint_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials)
+[MediaPackage.Client.rotate_ingest_endpoint_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Returns
 Type annotations for `boto3.client("mediapackage").tag_resource` method.
 
 Boto3 documentation:
-[MediaPackage.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.tag_resource)
+[MediaPackage.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.tag_resource)
 
 Arguments:
 
@@ -369,7 +369,7 @@ Arguments:
 Type annotations for `boto3.client("mediapackage").untag_resource` method.
 
 Boto3 documentation:
-[MediaPackage.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.untag_resource)
+[MediaPackage.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.untag_resource)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Arguments:
 Type annotations for `boto3.client("mediapackage").update_channel` method.
 
 Boto3 documentation:
-[MediaPackage.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_channel)
+[MediaPackage.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.update_channel)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Type annotations for `boto3.client("mediapackage").update_origin_endpoint`
 method.
 
 Boto3 documentation:
-[MediaPackage.Client.update_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint)
+[MediaPackage.Client.update_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Arguments:
 - `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `ManifestName`: `str`
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [Origination](./literals.md#origination)
+- `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `TimeDelaySeconds`: `int`
 - `Whitelist`: `List`\[`str`\]

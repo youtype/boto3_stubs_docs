@@ -3,7 +3,7 @@
 > [Index](..) > IoTDeviceAdvisor
 
 Auto-generated documentation for
-[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
 [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
@@ -29,33 +29,33 @@ Can be used directly:
 from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 ```
 
-IoTDeviceAdvisorClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_suite_definition](./client.md#create-suite-definition)
-- [delete_suite_definition](./client.md#delete-suite-definition)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_suite_definition](./client.md#get-suite-definition)
-- [get_suite_run](./client.md#get-suite-run)
-- [get_suite_run_report](./client.md#get-suite-run-report)
-- [list_suite_definitions](./client.md#list-suite-definitions)
-- [list_suite_runs](./client.md#list-suite-runs)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_test_cases](./client.md#list-test-cases)
-- [start_suite_run](./client.md#start-suite-run)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_suite_definition](./client.md#update-suite-definition)
+- [can_paginate](./client.md#can_paginate)
+- [create_suite_definition](./client.md#create_suite_definition)
+- [delete_suite_definition](./client.md#delete_suite_definition)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_suite_definition](./client.md#get_suite_definition)
+- [get_suite_run](./client.md#get_suite_run)
+- [get_suite_run_report](./client.md#get_suite_run_report)
+- [list_suite_definitions](./client.md#list_suite_definitions)
+- [list_suite_runs](./client.md#list_suite_runs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_test_cases](./client.md#list_test_cases)
+- [start_suite_run](./client.md#start_suite_run)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_suite_definition](./client.md#update_suite_definition)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+IoTDeviceAdvisorClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Literals
 
@@ -64,11 +64,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotdeviceadvisor.literals import Status, ...
+from mypy_boto3_iotdeviceadvisor.literals import StatusType, ...
 ```
 
-- [Status](./literals.md#status)
-- [SuiteRunStatus](./literals.md#suiterunstatus)
+- [StatusType](./literals.md#statustype)
+- [SuiteRunStatusType](./literals.md#suiterunstatustype)
 
 ## Typed dictionaries
 

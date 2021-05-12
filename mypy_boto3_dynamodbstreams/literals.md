@@ -3,21 +3,21 @@
 > [Index](..) > [DynamoDBStreams](.) > Literals
 
 Auto-generated documentation for
-[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
 [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 - [Literals for boto3 DynamoDBStreams module](#literals-for-boto3-dynamodbstreams-module)
-  - [KeyType](#keytype)
-  - [OperationType](#operationtype)
-  - [ShardIteratorType](#sharditeratortype)
-  - [StreamStatus](#streamstatus)
-  - [StreamViewType](#streamviewtype)
+  - [KeyTypeType](#keytypetype)
+  - [OperationTypeType](#operationtypetype)
+  - [ShardIteratorTypeType](#sharditeratortypetype)
+  - [StreamStatusType](#streamstatustype)
+  - [StreamViewTypeType](#streamviewtypetype)
 
-## KeyType
+## KeyTypeType
 
 ```python
-from mypy_boto3_dynamodbstreams.literals import KeyType
+from mypy_boto3_dynamodbstreams.literals import KeyTypeType
 ```
 
 Values:
@@ -25,10 +25,10 @@ Values:
 - `HASH`
 - `RANGE`
 
-## OperationType
+## OperationTypeType
 
 ```python
-from mypy_boto3_dynamodbstreams.literals import OperationType
+from mypy_boto3_dynamodbstreams.literals import OperationTypeType
 ```
 
 Values:
@@ -37,10 +37,10 @@ Values:
 - `MODIFY`
 - `REMOVE`
 
-## ShardIteratorType
+## ShardIteratorTypeType
 
 ```python
-from mypy_boto3_dynamodbstreams.literals import ShardIteratorType
+from mypy_boto3_dynamodbstreams.literals import ShardIteratorTypeType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `LATEST`
 - `TRIM_HORIZON`
 
-## StreamStatus
+## StreamStatusType
 
 ```python
-from mypy_boto3_dynamodbstreams.literals import StreamStatus
+from mypy_boto3_dynamodbstreams.literals import StreamStatusType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
-## StreamViewType
+## StreamViewTypeType
 
 ```python
-from mypy_boto3_dynamodbstreams.literals import StreamViewType
+from mypy_boto3_dynamodbstreams.literals import StreamViewTypeType
 ```
 
 Values:

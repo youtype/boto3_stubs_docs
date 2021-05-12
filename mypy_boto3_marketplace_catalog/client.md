@@ -3,7 +3,7 @@
 > [Index](..) > [MarketplaceCatalog](.) > MarketplaceCatalogClient
 
 Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
 [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
@@ -34,7 +34,7 @@ def get_marketplace-catalog_client() -> MarketplaceCatalogClient:
 ```
 
 Boto3 documentation:
-[MarketplaceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
+[MarketplaceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
 
 ## Exceptions
 
@@ -67,7 +67,7 @@ Exceptions:
 Type annotations for `boto3.client("marketplace-catalog").can_paginate` method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.can_paginate)
+[MarketplaceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Type annotations for `boto3.client("marketplace-catalog").cancel_change_set`
 method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.cancel_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set)
+[MarketplaceCatalog.Client.cancel_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Type annotations for `boto3.client("marketplace-catalog").describe_change_set`
 method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set)
+[MarketplaceCatalog.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("marketplace-catalog").describe_entity`
 method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.describe_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity)
+[MarketplaceCatalog.Client.describe_entity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Type annotations for
 `boto3.client("marketplace-catalog").generate_presigned_url` method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.generate_presigned_url)
+[MarketplaceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.generate_presigned_url)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("marketplace-catalog").list_change_sets`
 method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets)
+[MarketplaceCatalog.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("marketplace-catalog").list_entities`
 method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.list_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities)
+[MarketplaceCatalog.Client.list_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("marketplace-catalog").start_change_set`
 method.
 
 Boto3 documentation:
-[MarketplaceCatalog.Client.start_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
+[MarketplaceCatalog.Client.start_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
 
 Arguments:
 

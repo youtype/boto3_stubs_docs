@@ -3,7 +3,7 @@
 > [Index](..) > [S3](.) > S3Client
 
 Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3)
 type annotations stubs module
 [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
@@ -132,7 +132,7 @@ def get_s3_client() -> S3Client:
 ```
 
 Boto3 documentation:
-[S3.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client)
+[S3.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client)
 
 ## Exceptions
 
@@ -165,7 +165,7 @@ Exceptions:
 Type annotations for `boto3.client("s3").abort_multipart_upload` method.
 
 Boto3 documentation:
-[S3.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.abort_multipart_upload)
+[S3.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.abort_multipart_upload)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Arguments:
 - `Key`: `str` *(required)*
 - `UploadId`: `str` *(required)*
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("s3").can_paginate` method.
 
 Boto3 documentation:
-[S3.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.can_paginate)
+[S3.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.can_paginate)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns `bool`.
 Type annotations for `boto3.client("s3").complete_multipart_upload` method.
 
 Boto3 documentation:
-[S3.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.complete_multipart_upload)
+[S3.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.complete_multipart_upload)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Arguments:
 - `MultipartUpload`:
   [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -218,7 +218,7 @@ Returns
 Type annotations for `boto3.client("s3").copy` method.
 
 Boto3 documentation:
-[S3.Client.copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy)
+[S3.Client.copy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.copy)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Arguments:
 Type annotations for `boto3.client("s3").copy_object` method.
 
 Boto3 documentation:
-[S3.Client.copy_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy_object)
+[S3.Client.copy_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.copy_object)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Arguments:
 - `CopySource`: `Union`\[`str`,
   [CopySourceTypeDef](./type_defs.md#copysourcetypedef)\] *(required)*
 - `Key`: `str` *(required)*
-- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -260,11 +260,13 @@ Arguments:
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
-- `MetadataDirective`: [MetadataDirective](./literals.md#metadatadirective)
-- `TaggingDirective`: [TaggingDirective](./literals.md#taggingdirective)
+- `MetadataDirective`:
+  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
+- `TaggingDirective`:
+  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -276,12 +278,12 @@ Arguments:
 - `CopySourceSSECustomerKey`: `str`
 - `CopySourceSSECustomerKeyMD5`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
@@ -292,12 +294,12 @@ Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 Type annotations for `boto3.client("s3").create_bucket` method.
 
 Boto3 documentation:
-[S3.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_bucket)
+[S3.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.create_bucket)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
-- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `CreateBucketConfiguration`:
   [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
 - `GrantFullControl`: `str`
@@ -314,13 +316,13 @@ Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
 Type annotations for `boto3.client("s3").create_multipart_upload` method.
 
 Boto3 documentation:
-[S3.Client.create_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_multipart_upload)
+[S3.Client.create_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.create_multipart_upload)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
-- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -333,8 +335,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -343,12 +345,12 @@ Arguments:
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -359,7 +361,7 @@ Returns
 Type annotations for `boto3.client("s3").delete_bucket` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket)
+[S3.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket)
 
 Arguments:
 
@@ -372,7 +374,7 @@ Type annotations for `boto3.client("s3").delete_bucket_analytics_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_analytics_configuration)
+[S3.Client.delete_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_analytics_configuration)
 
 Arguments:
 
@@ -385,7 +387,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_cors` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_cors)
+[S3.Client.delete_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_cors)
 
 Arguments:
 
@@ -397,7 +399,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_encryption` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_encryption)
+[S3.Client.delete_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_encryption)
 
 Arguments:
 
@@ -410,7 +412,7 @@ Type annotations for
 `boto3.client("s3").delete_bucket_intelligent_tiering_configuration` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration)
+[S3.Client.delete_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration)
 
 Arguments:
 
@@ -423,7 +425,7 @@ Type annotations for `boto3.client("s3").delete_bucket_inventory_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_inventory_configuration)
+[S3.Client.delete_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_inventory_configuration)
 
 Arguments:
 
@@ -436,7 +438,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_lifecycle` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_lifecycle)
+[S3.Client.delete_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_lifecycle)
 
 Arguments:
 
@@ -449,7 +451,7 @@ Type annotations for `boto3.client("s3").delete_bucket_metrics_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_metrics_configuration)
+[S3.Client.delete_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_metrics_configuration)
 
 Arguments:
 
@@ -463,7 +465,7 @@ Type annotations for `boto3.client("s3").delete_bucket_ownership_controls`
 method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls)
+[S3.Client.delete_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls)
 
 Arguments:
 
@@ -475,7 +477,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_policy` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_policy)
+[S3.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_policy)
 
 Arguments:
 
@@ -487,7 +489,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_replication` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_replication)
+[S3.Client.delete_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_replication)
 
 Arguments:
 
@@ -499,7 +501,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_tagging` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_tagging)
+[S3.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_tagging)
 
 Arguments:
 
@@ -511,7 +513,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_bucket_website` method.
 
 Boto3 documentation:
-[S3.Client.delete_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_website)
+[S3.Client.delete_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_bucket_website)
 
 Arguments:
 
@@ -523,7 +525,7 @@ Arguments:
 Type annotations for `boto3.client("s3").delete_object` method.
 
 Boto3 documentation:
-[S3.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object)
+[S3.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_object)
 
 Arguments:
 
@@ -532,7 +534,7 @@ Arguments:
 - `MFA`: `str`
 - `VersionId`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
@@ -543,7 +545,7 @@ Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 Type annotations for `boto3.client("s3").delete_object_tagging` method.
 
 Boto3 documentation:
-[S3.Client.delete_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object_tagging)
+[S3.Client.delete_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_object_tagging)
 
 Arguments:
 
@@ -560,7 +562,7 @@ Returns
 Type annotations for `boto3.client("s3").delete_objects` method.
 
 Boto3 documentation:
-[S3.Client.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_objects)
+[S3.Client.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_objects)
 
 Arguments:
 
@@ -568,7 +570,7 @@ Arguments:
 - `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef) *(required)*
 - `MFA`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
@@ -580,7 +582,7 @@ Returns
 Type annotations for `boto3.client("s3").delete_public_access_block` method.
 
 Boto3 documentation:
-[S3.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_public_access_block)
+[S3.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.delete_public_access_block)
 
 Arguments:
 
@@ -592,7 +594,7 @@ Arguments:
 Type annotations for `boto3.client("s3").download_file` method.
 
 Boto3 documentation:
-[S3.Client.download_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_file)
+[S3.Client.download_file](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.download_file)
 
 Arguments:
 
@@ -608,7 +610,7 @@ Arguments:
 Type annotations for `boto3.client("s3").download_fileobj` method.
 
 Boto3 documentation:
-[S3.Client.download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_fileobj)
+[S3.Client.download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.download_fileobj)
 
 Arguments:
 
@@ -624,7 +626,7 @@ Arguments:
 Type annotations for `boto3.client("s3").generate_presigned_post` method.
 
 Boto3 documentation:
-[S3.Client.generate_presigned_post](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_post)
+[S3.Client.generate_presigned_post](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.generate_presigned_post)
 
 Arguments:
 
@@ -641,7 +643,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("s3").generate_presigned_url` method.
 
 Boto3 documentation:
-[S3.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_url)
+[S3.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.generate_presigned_url)
 
 Arguments:
 
@@ -658,7 +660,7 @@ Type annotations for `boto3.client("s3").get_bucket_accelerate_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration)
+[S3.Client.get_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration)
 
 Arguments:
 
@@ -673,7 +675,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_acl` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_acl)
+[S3.Client.get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_acl)
 
 Arguments:
 
@@ -688,7 +690,7 @@ Type annotations for `boto3.client("s3").get_bucket_analytics_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_analytics_configuration)
+[S3.Client.get_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_analytics_configuration)
 
 Arguments:
 
@@ -704,7 +706,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_cors` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_cors)
+[S3.Client.get_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_cors)
 
 Arguments:
 
@@ -719,7 +721,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_encryption` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_encryption)
+[S3.Client.get_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_encryption)
 
 Arguments:
 
@@ -735,7 +737,7 @@ Type annotations for
 `boto3.client("s3").get_bucket_intelligent_tiering_configuration` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration)
+[S3.Client.get_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration)
 
 Arguments:
 
@@ -751,7 +753,7 @@ Type annotations for `boto3.client("s3").get_bucket_inventory_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_inventory_configuration)
+[S3.Client.get_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_inventory_configuration)
 
 Arguments:
 
@@ -767,7 +769,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_lifecycle` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle)
+[S3.Client.get_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_lifecycle)
 
 Arguments:
 
@@ -783,7 +785,7 @@ Type annotations for `boto3.client("s3").get_bucket_lifecycle_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration)
+[S3.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration)
 
 Arguments:
 
@@ -798,7 +800,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_location` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_location)
+[S3.Client.get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_location)
 
 Arguments:
 
@@ -813,7 +815,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_logging` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_logging)
+[S3.Client.get_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_logging)
 
 Arguments:
 
@@ -829,7 +831,7 @@ Type annotations for `boto3.client("s3").get_bucket_metrics_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_metrics_configuration)
+[S3.Client.get_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_metrics_configuration)
 
 Arguments:
 
@@ -845,7 +847,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_notification` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification)
+[S3.Client.get_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_notification)
 
 Arguments:
 
@@ -861,7 +863,7 @@ Type annotations for `boto3.client("s3").get_bucket_notification_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification_configuration)
+[S3.Client.get_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_notification_configuration)
 
 Arguments:
 
@@ -876,7 +878,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_ownership_controls` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_ownership_controls)
+[S3.Client.get_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_ownership_controls)
 
 Arguments:
 
@@ -891,7 +893,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_policy` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy)
+[S3.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_policy)
 
 Arguments:
 
@@ -906,7 +908,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_policy_status` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy_status)
+[S3.Client.get_bucket_policy_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_policy_status)
 
 Arguments:
 
@@ -921,7 +923,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_replication` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_replication)
+[S3.Client.get_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_replication)
 
 Arguments:
 
@@ -936,7 +938,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_request_payment` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_request_payment)
+[S3.Client.get_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_request_payment)
 
 Arguments:
 
@@ -951,7 +953,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_tagging` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_tagging)
+[S3.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_tagging)
 
 Arguments:
 
@@ -966,7 +968,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_versioning` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_versioning)
+[S3.Client.get_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_versioning)
 
 Arguments:
 
@@ -981,7 +983,7 @@ Returns
 Type annotations for `boto3.client("s3").get_bucket_website` method.
 
 Boto3 documentation:
-[S3.Client.get_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_website)
+[S3.Client.get_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_bucket_website)
 
 Arguments:
 
@@ -996,7 +998,7 @@ Returns
 Type annotations for `boto3.client("s3").get_object` method.
 
 Boto3 documentation:
-[S3.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object)
+[S3.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object)
 
 Arguments:
 
@@ -1018,7 +1020,7 @@ Arguments:
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
@@ -1029,7 +1031,7 @@ Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 Type annotations for `boto3.client("s3").get_object_acl` method.
 
 Boto3 documentation:
-[S3.Client.get_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_acl)
+[S3.Client.get_object_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object_acl)
 
 Arguments:
 
@@ -1037,7 +1039,7 @@ Arguments:
 - `Key`: `str` *(required)*
 - `VersionId`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns [GetObjectAclOutputTypeDef](./type_defs.md#getobjectacloutputtypedef).
@@ -1047,7 +1049,7 @@ Returns [GetObjectAclOutputTypeDef](./type_defs.md#getobjectacloutputtypedef).
 Type annotations for `boto3.client("s3").get_object_legal_hold` method.
 
 Boto3 documentation:
-[S3.Client.get_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_legal_hold)
+[S3.Client.get_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object_legal_hold)
 
 Arguments:
 
@@ -1055,7 +1057,7 @@ Arguments:
 - `Key`: `str` *(required)*
 - `VersionId`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -1066,7 +1068,7 @@ Returns
 Type annotations for `boto3.client("s3").get_object_lock_configuration` method.
 
 Boto3 documentation:
-[S3.Client.get_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_lock_configuration)
+[S3.Client.get_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object_lock_configuration)
 
 Arguments:
 
@@ -1081,7 +1083,7 @@ Returns
 Type annotations for `boto3.client("s3").get_object_retention` method.
 
 Boto3 documentation:
-[S3.Client.get_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_retention)
+[S3.Client.get_object_retention](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object_retention)
 
 Arguments:
 
@@ -1089,7 +1091,7 @@ Arguments:
 - `Key`: `str` *(required)*
 - `VersionId`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -1100,7 +1102,7 @@ Returns
 Type annotations for `boto3.client("s3").get_object_tagging` method.
 
 Boto3 documentation:
-[S3.Client.get_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_tagging)
+[S3.Client.get_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object_tagging)
 
 Arguments:
 
@@ -1109,7 +1111,7 @@ Arguments:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 
 Returns
 [GetObjectTaggingOutputTypeDef](./type_defs.md#getobjecttaggingoutputtypedef).
@@ -1119,14 +1121,14 @@ Returns
 Type annotations for `boto3.client("s3").get_object_torrent` method.
 
 Boto3 documentation:
-[S3.Client.get_object_torrent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_torrent)
+[S3.Client.get_object_torrent](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_object_torrent)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -1137,7 +1139,7 @@ Returns
 Type annotations for `boto3.client("s3").get_public_access_block` method.
 
 Boto3 documentation:
-[S3.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_public_access_block)
+[S3.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.get_public_access_block)
 
 Arguments:
 
@@ -1152,7 +1154,7 @@ Returns
 Type annotations for `boto3.client("s3").head_bucket` method.
 
 Boto3 documentation:
-[S3.Client.head_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_bucket)
+[S3.Client.head_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.head_bucket)
 
 Arguments:
 
@@ -1164,7 +1166,7 @@ Arguments:
 Type annotations for `boto3.client("s3").head_object` method.
 
 Boto3 documentation:
-[S3.Client.head_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_object)
+[S3.Client.head_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.head_object)
 
 Arguments:
 
@@ -1180,7 +1182,7 @@ Arguments:
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
@@ -1192,7 +1194,7 @@ Type annotations for `boto3.client("s3").list_bucket_analytics_configurations`
 method.
 
 Boto3 documentation:
-[S3.Client.list_bucket_analytics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_analytics_configurations)
+[S3.Client.list_bucket_analytics_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_bucket_analytics_configurations)
 
 Arguments:
 
@@ -1209,7 +1211,7 @@ Type annotations for
 `boto3.client("s3").list_bucket_intelligent_tiering_configurations` method.
 
 Boto3 documentation:
-[S3.Client.list_bucket_intelligent_tiering_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations)
+[S3.Client.list_bucket_intelligent_tiering_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations)
 
 Arguments:
 
@@ -1225,7 +1227,7 @@ Type annotations for `boto3.client("s3").list_bucket_inventory_configurations`
 method.
 
 Boto3 documentation:
-[S3.Client.list_bucket_inventory_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_inventory_configurations)
+[S3.Client.list_bucket_inventory_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_bucket_inventory_configurations)
 
 Arguments:
 
@@ -1242,7 +1244,7 @@ Type annotations for `boto3.client("s3").list_bucket_metrics_configurations`
 method.
 
 Boto3 documentation:
-[S3.Client.list_bucket_metrics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_metrics_configurations)
+[S3.Client.list_bucket_metrics_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_bucket_metrics_configurations)
 
 Arguments:
 
@@ -1258,7 +1260,7 @@ Returns
 Type annotations for `boto3.client("s3").list_buckets` method.
 
 Boto3 documentation:
-[S3.Client.list_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets)
+[S3.Client.list_buckets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_buckets)
 
 Returns [ListBucketsOutputTypeDef](./type_defs.md#listbucketsoutputtypedef).
 
@@ -1267,14 +1269,14 @@ Returns [ListBucketsOutputTypeDef](./type_defs.md#listbucketsoutputtypedef).
 Type annotations for `boto3.client("s3").list_multipart_uploads` method.
 
 Boto3 documentation:
-[S3.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_multipart_uploads)
+[S3.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_multipart_uploads)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `KeyMarker`: `str`
 - `MaxUploads`: `int`
 - `Prefix`: `str`
@@ -1289,14 +1291,14 @@ Returns
 Type annotations for `boto3.client("s3").list_object_versions` method.
 
 Boto3 documentation:
-[S3.Client.list_object_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_object_versions)
+[S3.Client.list_object_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_object_versions)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `KeyMarker`: `str`
 - `MaxKeys`: `int`
 - `Prefix`: `str`
@@ -1311,19 +1313,19 @@ Returns
 Type annotations for `boto3.client("s3").list_objects` method.
 
 Boto3 documentation:
-[S3.Client.list_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects)
+[S3.Client.list_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_objects)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `Marker`: `str`
 - `MaxKeys`: `int`
 - `Prefix`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns [ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef).
@@ -1333,21 +1335,21 @@ Returns [ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef).
 Type annotations for `boto3.client("s3").list_objects_v2` method.
 
 Boto3 documentation:
-[S3.Client.list_objects_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects_v2)
+[S3.Client.list_objects_v2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_objects_v2)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `MaxKeys`: `int`
 - `Prefix`: `str`
 - `ContinuationToken`: `str`
 - `FetchOwner`: `bool`
 - `StartAfter`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -1358,7 +1360,7 @@ Returns
 Type annotations for `boto3.client("s3").list_parts` method.
 
 Boto3 documentation:
-[S3.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_parts)
+[S3.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.list_parts)
 
 Arguments:
 
@@ -1368,7 +1370,7 @@ Arguments:
 - `MaxParts`: `int`
 - `PartNumberMarker`: `int`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
@@ -1379,7 +1381,7 @@ Type annotations for `boto3.client("s3").put_bucket_accelerate_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_accelerate_configuration)
+[S3.Client.put_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_accelerate_configuration)
 
 Arguments:
 
@@ -1394,12 +1396,12 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_acl` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_acl)
+[S3.Client.put_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_acl)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
-- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
 - `GrantFullControl`: `str`
@@ -1415,7 +1417,7 @@ Type annotations for `boto3.client("s3").put_bucket_analytics_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_analytics_configuration)
+[S3.Client.put_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_analytics_configuration)
 
 Arguments:
 
@@ -1431,7 +1433,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_cors` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_cors)
+[S3.Client.put_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_cors)
 
 Arguments:
 
@@ -1446,7 +1448,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_encryption` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_encryption)
+[S3.Client.put_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_encryption)
 
 Arguments:
 
@@ -1463,7 +1465,7 @@ Type annotations for
 `boto3.client("s3").put_bucket_intelligent_tiering_configuration` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_intelligent_tiering_configuration)
+[S3.Client.put_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_intelligent_tiering_configuration)
 
 Arguments:
 
@@ -1479,7 +1481,7 @@ Type annotations for `boto3.client("s3").put_bucket_inventory_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_inventory_configuration)
+[S3.Client.put_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_inventory_configuration)
 
 Arguments:
 
@@ -1495,7 +1497,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_lifecycle` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle)
+[S3.Client.put_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_lifecycle)
 
 Arguments:
 
@@ -1510,7 +1512,7 @@ Type annotations for `boto3.client("s3").put_bucket_lifecycle_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle_configuration)
+[S3.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_lifecycle_configuration)
 
 Arguments:
 
@@ -1524,7 +1526,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_logging` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_logging)
+[S3.Client.put_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_logging)
 
 Arguments:
 
@@ -1540,7 +1542,7 @@ Type annotations for `boto3.client("s3").put_bucket_metrics_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_metrics_configuration)
+[S3.Client.put_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_metrics_configuration)
 
 Arguments:
 
@@ -1556,7 +1558,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_notification` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification)
+[S3.Client.put_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_notification)
 
 Arguments:
 
@@ -1572,7 +1574,7 @@ Type annotations for `boto3.client("s3").put_bucket_notification_configuration`
 method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification_configuration)
+[S3.Client.put_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_notification_configuration)
 
 Arguments:
 
@@ -1587,7 +1589,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_ownership_controls` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_ownership_controls)
+[S3.Client.put_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_ownership_controls)
 
 Arguments:
 
@@ -1603,7 +1605,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_policy` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_policy)
+[S3.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_policy)
 
 Arguments:
 
@@ -1617,7 +1619,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_replication` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_replication)
+[S3.Client.put_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_replication)
 
 Arguments:
 
@@ -1633,7 +1635,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_request_payment` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_request_payment)
+[S3.Client.put_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_request_payment)
 
 Arguments:
 
@@ -1648,7 +1650,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_tagging` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_tagging)
+[S3.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_tagging)
 
 Arguments:
 
@@ -1661,7 +1663,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_versioning` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_versioning)
+[S3.Client.put_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_versioning)
 
 Arguments:
 
@@ -1677,7 +1679,7 @@ Arguments:
 Type annotations for `boto3.client("s3").put_bucket_website` method.
 
 Boto3 documentation:
-[S3.Client.put_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_website)
+[S3.Client.put_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_bucket_website)
 
 Arguments:
 
@@ -1692,13 +1694,13 @@ Arguments:
 Type annotations for `boto3.client("s3").put_object` method.
 
 Boto3 documentation:
-[S3.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object)
+[S3.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_object)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
-- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
@@ -1714,8 +1716,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -1724,12 +1726,12 @@ Arguments:
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
 Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
@@ -1739,13 +1741,13 @@ Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 Type annotations for `boto3.client("s3").put_object_acl` method.
 
 Boto3 documentation:
-[S3.Client.put_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_acl)
+[S3.Client.put_object_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_object_acl)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
-- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
 - `GrantFullControl`: `str`
@@ -1754,7 +1756,7 @@ Arguments:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
@@ -1765,7 +1767,7 @@ Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
 Type annotations for `boto3.client("s3").put_object_legal_hold` method.
 
 Boto3 documentation:
-[S3.Client.put_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_legal_hold)
+[S3.Client.put_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_object_legal_hold)
 
 Arguments:
 
@@ -1774,7 +1776,7 @@ Arguments:
 - `LegalHold`:
   [ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef)
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `VersionId`: `str`
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
@@ -1787,7 +1789,7 @@ Returns
 Type annotations for `boto3.client("s3").put_object_lock_configuration` method.
 
 Boto3 documentation:
-[S3.Client.put_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_lock_configuration)
+[S3.Client.put_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_object_lock_configuration)
 
 Arguments:
 
@@ -1795,7 +1797,7 @@ Arguments:
 - `ObjectLockConfiguration`:
   [ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef)
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `Token`: `str`
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
@@ -1808,7 +1810,7 @@ Returns
 Type annotations for `boto3.client("s3").put_object_retention` method.
 
 Boto3 documentation:
-[S3.Client.put_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_retention)
+[S3.Client.put_object_retention](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_object_retention)
 
 Arguments:
 
@@ -1817,7 +1819,7 @@ Arguments:
 - `Retention`:
   [ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef)
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `VersionId`: `str`
 - `BypassGovernanceRetention`: `bool`
 - `ContentMD5`: `str`
@@ -1831,7 +1833,7 @@ Returns
 Type annotations for `boto3.client("s3").put_object_tagging` method.
 
 Boto3 documentation:
-[S3.Client.put_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_tagging)
+[S3.Client.put_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_object_tagging)
 
 Arguments:
 
@@ -1842,7 +1844,7 @@ Arguments:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 
 Returns
 [PutObjectTaggingOutputTypeDef](./type_defs.md#putobjecttaggingoutputtypedef).
@@ -1852,7 +1854,7 @@ Returns
 Type annotations for `boto3.client("s3").put_public_access_block` method.
 
 Boto3 documentation:
-[S3.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_public_access_block)
+[S3.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.put_public_access_block)
 
 Arguments:
 
@@ -1868,16 +1870,17 @@ Arguments:
 Type annotations for `boto3.client("s3").restore_object` method.
 
 Boto3 documentation:
-[S3.Client.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.restore_object)
+[S3.Client.restore_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.restore_object)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `VersionId`: `str`
-- `RestoreRequest`: [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
+- `RestoreRequest`:
+  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -1888,7 +1891,7 @@ Returns
 Type annotations for `boto3.client("s3").select_object_content` method.
 
 Boto3 documentation:
-[S3.Client.select_object_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.select_object_content)
+[S3.Client.select_object_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.select_object_content)
 
 Arguments:
 
@@ -1896,7 +1899,7 @@ Arguments:
 - `Key`: `str` *(required)*
 - `Expression`: `str` *(required)*
 - `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionType](./literals.md#expressiontype)) *(required)*
+  [ExpressionTypeType](./literals.md#expressiontypetype)) *(required)*
 - `InputSerialization`:
   [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
   *(required)*
@@ -1919,7 +1922,7 @@ Returns
 Type annotations for `boto3.client("s3").upload_file` method.
 
 Boto3 documentation:
-[S3.Client.upload_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_file)
+[S3.Client.upload_file](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.upload_file)
 
 Arguments:
 
@@ -1935,7 +1938,7 @@ Arguments:
 Type annotations for `boto3.client("s3").upload_fileobj` method.
 
 Boto3 documentation:
-[S3.Client.upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_fileobj)
+[S3.Client.upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.upload_fileobj)
 
 Arguments:
 
@@ -1951,7 +1954,7 @@ Arguments:
 Type annotations for `boto3.client("s3").upload_part` method.
 
 Boto3 documentation:
-[S3.Client.upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part)
+[S3.Client.upload_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.upload_part)
 
 Arguments:
 
@@ -1966,7 +1969,7 @@ Arguments:
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
 Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
@@ -1976,7 +1979,7 @@ Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
 Type annotations for `boto3.client("s3").upload_part_copy` method.
 
 Boto3 documentation:
-[S3.Client.upload_part_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part_copy)
+[S3.Client.upload_part_copy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.upload_part_copy)
 
 Arguments:
 
@@ -1998,7 +2001,7 @@ Arguments:
 - `CopySourceSSECustomerKey`: `str`
 - `CopySourceSSECustomerKeyMD5`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
@@ -2010,7 +2013,7 @@ Returns
 Type annotations for `boto3.client("s3").write_get_object_response` method.
 
 Boto3 documentation:
-[S3.Client.write_get_object_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.write_get_object_response)
+[S3.Client.write_get_object_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Client.write_get_object_response)
 
 Arguments:
 
@@ -2035,21 +2038,22 @@ Arguments:
 - `LastModified`: `datetime`
 - `MissingMeta`: `int`
 - `Metadata`: `Dict`\[`str`, `str`\]
-- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `PartsCount`: `int`
-- `ReplicationStatus`: [ReplicationStatus](./literals.md#replicationstatus)
+- `ReplicationStatus`:
+  [ReplicationStatusType](./literals.md#replicationstatustype)
 - `RequestCharged`: `Literal['requester']` (see
-  [RequestCharged](./literals.md#requestcharged))
+  [RequestChargedType](./literals.md#requestchargedtype))
 - `Restore`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](./literals.md#serversideencryption)
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `SSECustomerAlgorithm`: `str`
 - `SSEKMSKeyId`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `TagCount`: `int`
 - `VersionId`: `str`
 - `BucketKeyEnabled`: `bool`

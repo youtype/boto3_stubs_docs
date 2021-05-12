@@ -3,7 +3,7 @@
 > [Index](..) > [WellArchitected](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
 [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
@@ -70,7 +70,7 @@ Optional fields:
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
 - `IsApplicable`: `bool`
-- `Risk`: [Risk](./literals.md#risk)
+- `Risk`: [RiskType](./literals.md#risktype)
 
 ## AnswerTypeDef
 
@@ -89,7 +89,7 @@ Optional fields:
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
 - `IsApplicable`: `bool`
-- `Risk`: [Risk](./literals.md#risk)
+- `Risk`: [RiskType](./literals.md#risktype)
 - `Notes`: `str`
 
 ## ChoiceTypeDef
@@ -239,7 +239,7 @@ Optional fields:
 - `QuestionId`: `str`
 - `PillarId`: `str`
 - `QuestionTitle`: `str`
-- `Risk`: [Risk](./literals.md#risk)
+- `Risk`: [RiskType](./literals.md#risktype)
 - `ImprovementPlanUrl`: `str`
 
 ## LensReviewReportTypeDef
@@ -264,9 +264,9 @@ Optional fields:
 - `LensAlias`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
-- `LensStatus`: [LensStatus](./literals.md#lensstatus)
+- `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
 - `UpdatedAt`: `datetime`
-- `RiskCounts`: `Dict`\[[Risk](./literals.md#risk), `int`\]
+- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 
 ## LensReviewTypeDef
 
@@ -279,12 +279,12 @@ Optional fields:
 - `LensAlias`: `str`
 - `LensVersion`: `str`
 - `LensName`: `str`
-- `LensStatus`: [LensStatus](./literals.md#lensstatus)
+- `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
 - `PillarReviewSummaries`:
   `List`\[[PillarReviewSummaryTypeDef](./type_defs.md#pillarreviewsummarytypedef)\]
 - `UpdatedAt`: `datetime`
 - `Notes`: `str`
-- `RiskCounts`: `Dict`\[[Risk](./literals.md#risk), `int`\]
+- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 - `NextToken`: `str`
 
 ## LensSummaryTypeDef
@@ -497,7 +497,7 @@ from mypy_boto3_wellarchitected.type_defs import NotificationSummaryTypeDef
 
 Optional fields:
 
-- `Type`: [NotificationType](./literals.md#notificationtype)
+- `Type`: [NotificationTypeType](./literals.md#notificationtypetype)
 - `LensUpgradeSummary`:
   [LensUpgradeSummaryTypeDef](./type_defs.md#lensupgradesummarytypedef)
 
@@ -510,7 +510,8 @@ from mypy_boto3_wellarchitected.type_defs import PillarDifferenceTypeDef
 Optional fields:
 
 - `PillarId`: `str`
-- `DifferenceStatus`: [DifferenceStatus](./literals.md#differencestatus)
+- `DifferenceStatus`:
+  [DifferenceStatusType](./literals.md#differencestatustype)
 - `QuestionDifferences`:
   `List`\[[QuestionDifferenceTypeDef](./type_defs.md#questiondifferencetypedef)\]
 
@@ -525,7 +526,7 @@ Optional fields:
 - `PillarId`: `str`
 - `PillarName`: `str`
 - `Notes`: `str`
-- `RiskCounts`: `Dict`\[[Risk](./literals.md#risk), `int`\]
+- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 
 ## QuestionDifferenceTypeDef
 
@@ -537,7 +538,8 @@ Optional fields:
 
 - `QuestionId`: `str`
 - `QuestionTitle`: `str`
-- `DifferenceStatus`: [DifferenceStatus](./literals.md#differencestatus)
+- `DifferenceStatus`:
+  [DifferenceStatusType](./literals.md#differencestatustype)
 
 ## ResponseMetadataTypeDef
 
@@ -564,7 +566,7 @@ Optional fields:
 - `ShareInvitationId`: `str`
 - `SharedBy`: `str`
 - `SharedWith`: `str`
-- `PermissionType`: [PermissionType](./literals.md#permissiontype)
+- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
 - `WorkloadName`: `str`
 - `WorkloadId`: `str`
 
@@ -665,8 +667,8 @@ Optional fields:
 
 - `ShareId`: `str`
 - `SharedWith`: `str`
-- `PermissionType`: [PermissionType](./literals.md#permissiontype)
-- `Status`: [ShareStatus](./literals.md#sharestatus)
+- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
+- `Status`: [ShareStatusType](./literals.md#sharestatustype)
 
 ## WorkloadShareTypeDef
 
@@ -679,8 +681,8 @@ Optional fields:
 - `ShareId`: `str`
 - `SharedBy`: `str`
 - `SharedWith`: `str`
-- `PermissionType`: [PermissionType](./literals.md#permissiontype)
-- `Status`: [ShareStatus](./literals.md#sharestatus)
+- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
+- `Status`: [ShareStatusType](./literals.md#sharestatustype)
 - `WorkloadName`: `str`
 - `WorkloadId`: `str`
 
@@ -698,9 +700,9 @@ Optional fields:
 - `Owner`: `str`
 - `UpdatedAt`: `datetime`
 - `Lenses`: `List`\[`str`\]
-- `RiskCounts`: `Dict`\[[Risk](./literals.md#risk), `int`\]
+- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 - `ImprovementStatus`:
-  [WorkloadImprovementStatus](./literals.md#workloadimprovementstatus)
+  [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
 
 ## WorkloadTypeDef
 
@@ -714,7 +716,8 @@ Optional fields:
 - `WorkloadArn`: `str`
 - `WorkloadName`: `str`
 - `Description`: `str`
-- `Environment`: [WorkloadEnvironment](./literals.md#workloadenvironment)
+- `Environment`:
+  [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
 - `UpdatedAt`: `datetime`
 - `AccountIds`: `List`\[`str`\]
 - `AwsRegions`: `List`\[`str`\]
@@ -727,8 +730,8 @@ Optional fields:
 - `Industry`: `str`
 - `Notes`: `str`
 - `ImprovementStatus`:
-  [WorkloadImprovementStatus](./literals.md#workloadimprovementstatus)
-- `RiskCounts`: `Dict`\[[Risk](./literals.md#risk), `int`\]
+  [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
+- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 - `PillarPriorities`: `List`\[`str`\]
 - `Lenses`: `List`\[`str`\]
 - `Owner`: `str`

@@ -3,7 +3,7 @@
 > [Index](..) > ACMPCA
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
@@ -30,60 +30,60 @@ Can be used directly:
 from mypy_boto3_acm_pca.client import ACMPCAClient
 ```
 
-ACMPCAClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_certificate_authority](./client.md#create-certificate-authority)
-- [create_certificate_authority_audit_report](./client.md#create-certificate-authority-audit-report)
-- [create_permission](./client.md#create-permission)
-- [delete_certificate_authority](./client.md#delete-certificate-authority)
-- [delete_permission](./client.md#delete-permission)
-- [delete_policy](./client.md#delete-policy)
-- [describe_certificate_authority](./client.md#describe-certificate-authority)
-- [describe_certificate_authority_audit_report](./client.md#describe-certificate-authority-audit-report)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_certificate](./client.md#get-certificate)
-- [get_certificate_authority_certificate](./client.md#get-certificate-authority-certificate)
-- [get_certificate_authority_csr](./client.md#get-certificate-authority-csr)
-- [get_paginator](./client.md#get-paginator)
-- [get_policy](./client.md#get-policy)
-- [get_waiter](./client.md#get-waiter)
-- [import_certificate_authority_certificate](./client.md#import-certificate-authority-certificate)
-- [issue_certificate](./client.md#issue-certificate)
-- [list_certificate_authorities](./client.md#list-certificate-authorities)
-- [list_permissions](./client.md#list-permissions)
-- [list_tags](./client.md#list-tags)
-- [put_policy](./client.md#put-policy)
-- [restore_certificate_authority](./client.md#restore-certificate-authority)
-- [revoke_certificate](./client.md#revoke-certificate)
-- [tag_certificate_authority](./client.md#tag-certificate-authority)
-- [untag_certificate_authority](./client.md#untag-certificate-authority)
-- [update_certificate_authority](./client.md#update-certificate-authority)
+- [can_paginate](./client.md#can_paginate)
+- [create_certificate_authority](./client.md#create_certificate_authority)
+- [create_certificate_authority_audit_report](./client.md#create_certificate_authority_audit_report)
+- [create_permission](./client.md#create_permission)
+- [delete_certificate_authority](./client.md#delete_certificate_authority)
+- [delete_permission](./client.md#delete_permission)
+- [delete_policy](./client.md#delete_policy)
+- [describe_certificate_authority](./client.md#describe_certificate_authority)
+- [describe_certificate_authority_audit_report](./client.md#describe_certificate_authority_audit_report)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_certificate](./client.md#get_certificate)
+- [get_certificate_authority_certificate](./client.md#get_certificate_authority_certificate)
+- [get_certificate_authority_csr](./client.md#get_certificate_authority_csr)
+- [get_paginator](./client.md#get_paginator)
+- [get_policy](./client.md#get_policy)
+- [get_waiter](./client.md#get_waiter)
+- [import_certificate_authority_certificate](./client.md#import_certificate_authority_certificate)
+- [issue_certificate](./client.md#issue_certificate)
+- [list_certificate_authorities](./client.md#list_certificate_authorities)
+- [list_permissions](./client.md#list_permissions)
+- [list_tags](./client.md#list_tags)
+- [put_policy](./client.md#put_policy)
+- [restore_certificate_authority](./client.md#restore_certificate_authority)
+- [revoke_certificate](./client.md#revoke_certificate)
+- [tag_certificate_authority](./client.md#tag_certificate_authority)
+- [untag_certificate_authority](./client.md#untag_certificate_authority)
+- [update_certificate_authority](./client.md#update_certificate_authority)
 
 ### Exceptions
 
-- [CertificateMismatchException](./client.md#certificatemismatchexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InvalidArgsException](./client.md#invalidargsexception)
-- [InvalidArnException](./client.md#invalidarnexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidPolicyException](./client.md#invalidpolicyexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [InvalidStateException](./client.md#invalidstateexception)
-- [InvalidTagException](./client.md#invalidtagexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [LockoutPreventedException](./client.md#lockoutpreventedexception)
-- [MalformedCSRException](./client.md#malformedcsrexception)
-- [MalformedCertificateException](./client.md#malformedcertificateexception)
-- [PermissionAlreadyExistsException](./client.md#permissionalreadyexistsexception)
-- [RequestAlreadyProcessedException](./client.md#requestalreadyprocessedexception)
-- [RequestFailedException](./client.md#requestfailedexception)
-- [RequestInProgressException](./client.md#requestinprogressexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+ACMPCAClient [exceptions](./client.md#exceptions)
+
+- CertificateMismatchException
+- ClientError
+- ConcurrentModificationException
+- InvalidArgsException
+- InvalidArnException
+- InvalidNextTokenException
+- InvalidPolicyException
+- InvalidRequestException
+- InvalidStateException
+- InvalidTagException
+- LimitExceededException
+- LockoutPreventedException
+- MalformedCSRException
+- MalformedCertificateException
+- PermissionAlreadyExistsException
+- RequestAlreadyProcessedException
+- RequestFailedException
+- RequestInProgressException
+- ResourceNotFoundException
+- TooManyTagsException
 
 ## Paginators
 
@@ -122,30 +122,30 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.literals import AccessMethodType, ...
+from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 ```
 
-- [AccessMethodType](./literals.md#accessmethodtype)
-- [ActionType](./literals.md#actiontype)
+- [AccessMethodTypeType](./literals.md#accessmethodtypetype)
+- [ActionTypeType](./literals.md#actiontypetype)
 - [AuditReportCreatedWaiterName](./literals.md#auditreportcreatedwaitername)
-- [AuditReportResponseFormat](./literals.md#auditreportresponseformat)
-- [AuditReportStatus](./literals.md#auditreportstatus)
+- [AuditReportResponseFormatType](./literals.md#auditreportresponseformattype)
+- [AuditReportStatusType](./literals.md#auditreportstatustype)
 - [CertificateAuthorityCSRCreatedWaiterName](./literals.md#certificateauthoritycsrcreatedwaitername)
-- [CertificateAuthorityStatus](./literals.md#certificateauthoritystatus)
-- [CertificateAuthorityType](./literals.md#certificateauthoritytype)
+- [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
+- [CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype)
 - [CertificateIssuedWaiterName](./literals.md#certificateissuedwaitername)
-- [ExtendedKeyUsageType](./literals.md#extendedkeyusagetype)
-- [FailureReason](./literals.md#failurereason)
-- [KeyAlgorithm](./literals.md#keyalgorithm)
-- [KeyStorageSecurityStandard](./literals.md#keystoragesecuritystandard)
+- [ExtendedKeyUsageTypeType](./literals.md#extendedkeyusagetypetype)
+- [FailureReasonType](./literals.md#failurereasontype)
+- [KeyAlgorithmType](./literals.md#keyalgorithmtype)
+- [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
 - [ListCertificateAuthoritiesPaginatorName](./literals.md#listcertificateauthoritiespaginatorname)
 - [ListPermissionsPaginatorName](./literals.md#listpermissionspaginatorname)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
-- [PolicyQualifierId](./literals.md#policyqualifierid)
-- [ResourceOwner](./literals.md#resourceowner)
-- [RevocationReason](./literals.md#revocationreason)
-- [SigningAlgorithm](./literals.md#signingalgorithm)
-- [ValidityPeriodType](./literals.md#validityperiodtype)
+- [PolicyQualifierIdType](./literals.md#policyqualifieridtype)
+- [ResourceOwnerType](./literals.md#resourceownertype)
+- [RevocationReasonType](./literals.md#revocationreasontype)
+- [SigningAlgorithmType](./literals.md#signingalgorithmtype)
+- [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
 
 ## Typed dictionaries
 

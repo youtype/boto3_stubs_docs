@@ -3,7 +3,7 @@
 > [Index](..) > IoTThingsGraph
 
 Auto-generated documentation for
-[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
 [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
@@ -30,59 +30,59 @@ Can be used directly:
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 ```
 
-IoTThingsGraphClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_entity_to_thing](./client.md#associate-entity-to-thing)
-- [can_paginate](./client.md#can-paginate)
-- [create_flow_template](./client.md#create-flow-template)
-- [create_system_instance](./client.md#create-system-instance)
-- [create_system_template](./client.md#create-system-template)
-- [delete_flow_template](./client.md#delete-flow-template)
-- [delete_namespace](./client.md#delete-namespace)
-- [delete_system_instance](./client.md#delete-system-instance)
-- [delete_system_template](./client.md#delete-system-template)
-- [deploy_system_instance](./client.md#deploy-system-instance)
-- [deprecate_flow_template](./client.md#deprecate-flow-template)
-- [deprecate_system_template](./client.md#deprecate-system-template)
-- [describe_namespace](./client.md#describe-namespace)
-- [dissociate_entity_from_thing](./client.md#dissociate-entity-from-thing)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_entities](./client.md#get-entities)
-- [get_flow_template](./client.md#get-flow-template)
-- [get_flow_template_revisions](./client.md#get-flow-template-revisions)
-- [get_namespace_deletion_status](./client.md#get-namespace-deletion-status)
-- [get_paginator](./client.md#get-paginator)
-- [get_system_instance](./client.md#get-system-instance)
-- [get_system_template](./client.md#get-system-template)
-- [get_system_template_revisions](./client.md#get-system-template-revisions)
-- [get_upload_status](./client.md#get-upload-status)
-- [list_flow_execution_messages](./client.md#list-flow-execution-messages)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [search_entities](./client.md#search-entities)
-- [search_flow_executions](./client.md#search-flow-executions)
-- [search_flow_templates](./client.md#search-flow-templates)
-- [search_system_instances](./client.md#search-system-instances)
-- [search_system_templates](./client.md#search-system-templates)
-- [search_things](./client.md#search-things)
-- [tag_resource](./client.md#tag-resource)
-- [undeploy_system_instance](./client.md#undeploy-system-instance)
-- [untag_resource](./client.md#untag-resource)
-- [update_flow_template](./client.md#update-flow-template)
-- [update_system_template](./client.md#update-system-template)
-- [upload_entity_definitions](./client.md#upload-entity-definitions)
+- [associate_entity_to_thing](./client.md#associate_entity_to_thing)
+- [can_paginate](./client.md#can_paginate)
+- [create_flow_template](./client.md#create_flow_template)
+- [create_system_instance](./client.md#create_system_instance)
+- [create_system_template](./client.md#create_system_template)
+- [delete_flow_template](./client.md#delete_flow_template)
+- [delete_namespace](./client.md#delete_namespace)
+- [delete_system_instance](./client.md#delete_system_instance)
+- [delete_system_template](./client.md#delete_system_template)
+- [deploy_system_instance](./client.md#deploy_system_instance)
+- [deprecate_flow_template](./client.md#deprecate_flow_template)
+- [deprecate_system_template](./client.md#deprecate_system_template)
+- [describe_namespace](./client.md#describe_namespace)
+- [dissociate_entity_from_thing](./client.md#dissociate_entity_from_thing)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_entities](./client.md#get_entities)
+- [get_flow_template](./client.md#get_flow_template)
+- [get_flow_template_revisions](./client.md#get_flow_template_revisions)
+- [get_namespace_deletion_status](./client.md#get_namespace_deletion_status)
+- [get_paginator](./client.md#get_paginator)
+- [get_system_instance](./client.md#get_system_instance)
+- [get_system_template](./client.md#get_system_template)
+- [get_system_template_revisions](./client.md#get_system_template_revisions)
+- [get_upload_status](./client.md#get_upload_status)
+- [list_flow_execution_messages](./client.md#list_flow_execution_messages)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [search_entities](./client.md#search_entities)
+- [search_flow_executions](./client.md#search_flow_executions)
+- [search_flow_templates](./client.md#search_flow_templates)
+- [search_system_instances](./client.md#search_system_instances)
+- [search_system_templates](./client.md#search_system_templates)
+- [search_things](./client.md#search_things)
+- [tag_resource](./client.md#tag_resource)
+- [undeploy_system_instance](./client.md#undeploy_system_instance)
+- [untag_resource](./client.md#untag_resource)
+- [update_flow_template](./client.md#update_flow_template)
+- [update_system_template](./client.md#update_system_template)
+- [upload_entity_definitions](./client.md#upload_entity_definitions)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
+IoTThingsGraphClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalFailureException
+- InvalidRequestException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotFoundException
+- ThrottlingException
 
 ## Paginators
 
@@ -113,32 +113,32 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import DefinitionLanguage, ...
+from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType, ...
 ```
 
-- [DefinitionLanguage](./literals.md#definitionlanguage)
-- [DeploymentTarget](./literals.md#deploymenttarget)
-- [EntityFilterName](./literals.md#entityfiltername)
-- [EntityType](./literals.md#entitytype)
-- [FlowExecutionEventType](./literals.md#flowexecutioneventtype)
-- [FlowExecutionStatus](./literals.md#flowexecutionstatus)
-- [FlowTemplateFilterName](./literals.md#flowtemplatefiltername)
+- [DefinitionLanguageType](./literals.md#definitionlanguagetype)
+- [DeploymentTargetType](./literals.md#deploymenttargettype)
+- [EntityFilterNameType](./literals.md#entityfilternametype)
+- [EntityTypeType](./literals.md#entitytypetype)
+- [FlowExecutionEventTypeType](./literals.md#flowexecutioneventtypetype)
+- [FlowExecutionStatusType](./literals.md#flowexecutionstatustype)
+- [FlowTemplateFilterNameType](./literals.md#flowtemplatefilternametype)
 - [GetFlowTemplateRevisionsPaginatorName](./literals.md#getflowtemplaterevisionspaginatorname)
 - [GetSystemTemplateRevisionsPaginatorName](./literals.md#getsystemtemplaterevisionspaginatorname)
 - [ListFlowExecutionMessagesPaginatorName](./literals.md#listflowexecutionmessagespaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [NamespaceDeletionStatus](./literals.md#namespacedeletionstatus)
-- [NamespaceDeletionStatusErrorCodes](./literals.md#namespacedeletionstatuserrorcodes)
+- [NamespaceDeletionStatusErrorCodesType](./literals.md#namespacedeletionstatuserrorcodestype)
+- [NamespaceDeletionStatusType](./literals.md#namespacedeletionstatustype)
 - [SearchEntitiesPaginatorName](./literals.md#searchentitiespaginatorname)
 - [SearchFlowExecutionsPaginatorName](./literals.md#searchflowexecutionspaginatorname)
 - [SearchFlowTemplatesPaginatorName](./literals.md#searchflowtemplatespaginatorname)
 - [SearchSystemInstancesPaginatorName](./literals.md#searchsysteminstancespaginatorname)
 - [SearchSystemTemplatesPaginatorName](./literals.md#searchsystemtemplatespaginatorname)
 - [SearchThingsPaginatorName](./literals.md#searchthingspaginatorname)
-- [SystemInstanceDeploymentStatus](./literals.md#systeminstancedeploymentstatus)
-- [SystemInstanceFilterName](./literals.md#systeminstancefiltername)
-- [SystemTemplateFilterName](./literals.md#systemtemplatefiltername)
-- [UploadStatus](./literals.md#uploadstatus)
+- [SystemInstanceDeploymentStatusType](./literals.md#systeminstancedeploymentstatustype)
+- [SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype)
+- [SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype)
+- [UploadStatusType](./literals.md#uploadstatustype)
 
 ## Typed dictionaries
 

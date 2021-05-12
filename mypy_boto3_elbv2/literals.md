@@ -3,14 +3,14 @@
 > [Index](..) > [ElasticLoadBalancingv2](.) > Literals
 
 Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
 [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 - [Literals for boto3 ElasticLoadBalancingv2 module](#literals-for-boto3-elasticloadbalancingv2-module)
-  - [ActionTypeEnum](#actiontypeenum)
-  - [AuthenticateCognitoActionConditionalBehaviorEnum](#authenticatecognitoactionconditionalbehaviorenum)
-  - [AuthenticateOidcActionConditionalBehaviorEnum](#authenticateoidcactionconditionalbehaviorenum)
+  - [ActionTypeEnumType](#actiontypeenumtype)
+  - [AuthenticateCognitoActionConditionalBehaviorEnumType](#authenticatecognitoactionconditionalbehaviorenumtype)
+  - [AuthenticateOidcActionConditionalBehaviorEnumType](#authenticateoidcactionconditionalbehaviorenumtype)
   - [DescribeAccountLimitsPaginatorName](#describeaccountlimitspaginatorname)
   - [DescribeListenerCertificatesPaginatorName](#describelistenercertificatespaginatorname)
   - [DescribeListenersPaginatorName](#describelistenerspaginatorname)
@@ -18,25 +18,25 @@ type annotations stubs module
   - [DescribeRulesPaginatorName](#describerulespaginatorname)
   - [DescribeSSLPoliciesPaginatorName](#describesslpoliciespaginatorname)
   - [DescribeTargetGroupsPaginatorName](#describetargetgroupspaginatorname)
-  - [IpAddressType](#ipaddresstype)
+  - [IpAddressTypeType](#ipaddresstypetype)
   - [LoadBalancerAvailableWaiterName](#loadbalanceravailablewaitername)
   - [LoadBalancerExistsWaiterName](#loadbalancerexistswaitername)
-  - [LoadBalancerSchemeEnum](#loadbalancerschemeenum)
-  - [LoadBalancerStateEnum](#loadbalancerstateenum)
-  - [LoadBalancerTypeEnum](#loadbalancertypeenum)
+  - [LoadBalancerSchemeEnumType](#loadbalancerschemeenumtype)
+  - [LoadBalancerStateEnumType](#loadbalancerstateenumtype)
+  - [LoadBalancerTypeEnumType](#loadbalancertypeenumtype)
   - [LoadBalancersDeletedWaiterName](#loadbalancersdeletedwaitername)
-  - [ProtocolEnum](#protocolenum)
-  - [RedirectActionStatusCodeEnum](#redirectactionstatuscodeenum)
+  - [ProtocolEnumType](#protocolenumtype)
+  - [RedirectActionStatusCodeEnumType](#redirectactionstatuscodeenumtype)
   - [TargetDeregisteredWaiterName](#targetderegisteredwaitername)
-  - [TargetHealthReasonEnum](#targethealthreasonenum)
-  - [TargetHealthStateEnum](#targethealthstateenum)
+  - [TargetHealthReasonEnumType](#targethealthreasonenumtype)
+  - [TargetHealthStateEnumType](#targethealthstateenumtype)
   - [TargetInServiceWaiterName](#targetinservicewaitername)
-  - [TargetTypeEnum](#targettypeenum)
+  - [TargetTypeEnumType](#targettypeenumtype)
 
-## ActionTypeEnum
+## ActionTypeEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import ActionTypeEnum
+from mypy_boto3_elbv2.literals import ActionTypeEnumType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `forward`
 - `redirect`
 
-## AuthenticateCognitoActionConditionalBehaviorEnum
+## AuthenticateCognitoActionConditionalBehaviorEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import AuthenticateCognitoActionConditionalBehaviorEnum
+from mypy_boto3_elbv2.literals import AuthenticateCognitoActionConditionalBehaviorEnumType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `authenticate`
 - `deny`
 
-## AuthenticateOidcActionConditionalBehaviorEnum
+## AuthenticateOidcActionConditionalBehaviorEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import AuthenticateOidcActionConditionalBehaviorEnum
+from mypy_boto3_elbv2.literals import AuthenticateOidcActionConditionalBehaviorEnumType
 ```
 
 Values:
@@ -141,10 +141,10 @@ Values:
 
 - `describe_target_groups`
 
-## IpAddressType
+## IpAddressTypeType
 
 ```python
-from mypy_boto3_elbv2.literals import IpAddressType
+from mypy_boto3_elbv2.literals import IpAddressTypeType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 
 - `load_balancer_exists`
 
-## LoadBalancerSchemeEnum
+## LoadBalancerSchemeEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import LoadBalancerSchemeEnum
+from mypy_boto3_elbv2.literals import LoadBalancerSchemeEnumType
 ```
 
 Values:
@@ -183,10 +183,10 @@ Values:
 - `internal`
 - `internet-facing`
 
-## LoadBalancerStateEnum
+## LoadBalancerStateEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import LoadBalancerStateEnum
+from mypy_boto3_elbv2.literals import LoadBalancerStateEnumType
 ```
 
 Values:
@@ -196,10 +196,10 @@ Values:
 - `failed`
 - `provisioning`
 
-## LoadBalancerTypeEnum
+## LoadBalancerTypeEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import LoadBalancerTypeEnum
+from mypy_boto3_elbv2.literals import LoadBalancerTypeEnumType
 ```
 
 Values:
@@ -218,10 +218,10 @@ Values:
 
 - `load_balancers_deleted`
 
-## ProtocolEnum
+## ProtocolEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import ProtocolEnum
+from mypy_boto3_elbv2.literals import ProtocolEnumType
 ```
 
 Values:
@@ -234,10 +234,10 @@ Values:
 - `TLS`
 - `UDP`
 
-## RedirectActionStatusCodeEnum
+## RedirectActionStatusCodeEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import RedirectActionStatusCodeEnum
+from mypy_boto3_elbv2.literals import RedirectActionStatusCodeEnumType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 
 - `target_deregistered`
 
-## TargetHealthReasonEnum
+## TargetHealthReasonEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import TargetHealthReasonEnum
+from mypy_boto3_elbv2.literals import TargetHealthReasonEnumType
 ```
 
 Values:
@@ -276,10 +276,10 @@ Values:
 - `Target.ResponseCodeMismatch`
 - `Target.Timeout`
 
-## TargetHealthStateEnum
+## TargetHealthStateEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import TargetHealthStateEnum
+from mypy_boto3_elbv2.literals import TargetHealthStateEnumType
 ```
 
 Values:
@@ -301,10 +301,10 @@ Values:
 
 - `target_in_service`
 
-## TargetTypeEnum
+## TargetTypeEnumType
 
 ```python
-from mypy_boto3_elbv2.literals import TargetTypeEnum
+from mypy_boto3_elbv2.literals import TargetTypeEnumType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > RedshiftDataAPIService
 
 Auto-generated documentation for
-[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
+[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
 [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
@@ -30,31 +30,31 @@ Can be used directly:
 from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 ```
 
-RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_statement](./client.md#cancel-statement)
-- [describe_statement](./client.md#describe-statement)
-- [describe_table](./client.md#describe-table)
-- [execute_statement](./client.md#execute-statement)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_statement_result](./client.md#get-statement-result)
-- [list_databases](./client.md#list-databases)
-- [list_schemas](./client.md#list-schemas)
-- [list_statements](./client.md#list-statements)
-- [list_tables](./client.md#list-tables)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_statement](./client.md#cancel_statement)
+- [describe_statement](./client.md#describe_statement)
+- [describe_table](./client.md#describe_table)
+- [execute_statement](./client.md#execute_statement)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_statement_result](./client.md#get_statement_result)
+- [list_databases](./client.md#list_databases)
+- [list_schemas](./client.md#list_schemas)
+- [list_statements](./client.md#list_statements)
+- [list_tables](./client.md#list_tables)
 
 ### Exceptions
 
-- [ActiveStatementsExceededException](./client.md#activestatementsexceededexception)
-- [ClientError](./client.md#clienterror)
-- [ExecuteStatementException](./client.md#executestatementexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+RedshiftDataAPIServiceClient [exceptions](./client.md#exceptions)
+
+- ActiveStatementsExceededException
+- ClientError
+- ExecuteStatementException
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -90,7 +90,7 @@ from mypy_boto3_redshift_data.literals import DescribeTablePaginatorName, ...
 - [ListSchemasPaginatorName](./literals.md#listschemaspaginatorname)
 - [ListStatementsPaginatorName](./literals.md#liststatementspaginatorname)
 - [ListTablesPaginatorName](./literals.md#listtablespaginatorname)
-- [StatusString](./literals.md#statusstring)
+- [StatusStringType](./literals.md#statusstringtype)
 
 ## Typed dictionaries
 

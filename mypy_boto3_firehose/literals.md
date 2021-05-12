@@ -3,37 +3,37 @@
 > [Index](..) > [Firehose](.) > Literals
 
 Auto-generated documentation for
-[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose)
 type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Literals for boto3 Firehose module](#literals-for-boto3-firehose-module)
-  - [CompressionFormat](#compressionformat)
-  - [ContentEncoding](#contentencoding)
-  - [DeliveryStreamEncryptionStatus](#deliverystreamencryptionstatus)
-  - [DeliveryStreamFailureType](#deliverystreamfailuretype)
-  - [DeliveryStreamStatus](#deliverystreamstatus)
-  - [DeliveryStreamType](#deliverystreamtype)
-  - [ElasticsearchIndexRotationPeriod](#elasticsearchindexrotationperiod)
-  - [ElasticsearchS3BackupMode](#elasticsearchs3backupmode)
-  - [HECEndpointType](#hecendpointtype)
-  - [HttpEndpointS3BackupMode](#httpendpoints3backupmode)
-  - [KeyType](#keytype)
-  - [NoEncryptionConfig](#noencryptionconfig)
-  - [OrcCompression](#orccompression)
-  - [OrcFormatVersion](#orcformatversion)
-  - [ParquetCompression](#parquetcompression)
-  - [ParquetWriterVersion](#parquetwriterversion)
-  - [ProcessorParameterName](#processorparametername)
-  - [ProcessorType](#processortype)
-  - [RedshiftS3BackupMode](#redshifts3backupmode)
-  - [S3BackupMode](#s3backupmode)
-  - [SplunkS3BackupMode](#splunks3backupmode)
+  - [CompressionFormatType](#compressionformattype)
+  - [ContentEncodingType](#contentencodingtype)
+  - [DeliveryStreamEncryptionStatusType](#deliverystreamencryptionstatustype)
+  - [DeliveryStreamFailureTypeType](#deliverystreamfailuretypetype)
+  - [DeliveryStreamStatusType](#deliverystreamstatustype)
+  - [DeliveryStreamTypeType](#deliverystreamtypetype)
+  - [ElasticsearchIndexRotationPeriodType](#elasticsearchindexrotationperiodtype)
+  - [ElasticsearchS3BackupModeType](#elasticsearchs3backupmodetype)
+  - [HECEndpointTypeType](#hecendpointtypetype)
+  - [HttpEndpointS3BackupModeType](#httpendpoints3backupmodetype)
+  - [KeyTypeType](#keytypetype)
+  - [NoEncryptionConfigType](#noencryptionconfigtype)
+  - [OrcCompressionType](#orccompressiontype)
+  - [OrcFormatVersionType](#orcformatversiontype)
+  - [ParquetCompressionType](#parquetcompressiontype)
+  - [ParquetWriterVersionType](#parquetwriterversiontype)
+  - [ProcessorParameterNameType](#processorparameternametype)
+  - [ProcessorTypeType](#processortypetype)
+  - [RedshiftS3BackupModeType](#redshifts3backupmodetype)
+  - [S3BackupModeType](#s3backupmodetype)
+  - [SplunkS3BackupModeType](#splunks3backupmodetype)
 
-## CompressionFormat
+## CompressionFormatType
 
 ```python
-from mypy_boto3_firehose.literals import CompressionFormat
+from mypy_boto3_firehose.literals import CompressionFormatType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 - `UNCOMPRESSED`
 - `ZIP`
 
-## ContentEncoding
+## ContentEncodingType
 
 ```python
-from mypy_boto3_firehose.literals import ContentEncoding
+from mypy_boto3_firehose.literals import ContentEncodingType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `GZIP`
 - `NONE`
 
-## DeliveryStreamEncryptionStatus
+## DeliveryStreamEncryptionStatusType
 
 ```python
-from mypy_boto3_firehose.literals import DeliveryStreamEncryptionStatus
+from mypy_boto3_firehose.literals import DeliveryStreamEncryptionStatusType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `ENABLING`
 - `ENABLING_FAILED`
 
-## DeliveryStreamFailureType
+## DeliveryStreamFailureTypeType
 
 ```python
-from mypy_boto3_firehose.literals import DeliveryStreamFailureType
+from mypy_boto3_firehose.literals import DeliveryStreamFailureTypeType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 - `SUBNET_NOT_FOUND`
 - `UNKNOWN_ERROR`
 
-## DeliveryStreamStatus
+## DeliveryStreamStatusType
 
 ```python
-from mypy_boto3_firehose.literals import DeliveryStreamStatus
+from mypy_boto3_firehose.literals import DeliveryStreamStatusType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `DELETING`
 - `DELETING_FAILED`
 
-## DeliveryStreamType
+## DeliveryStreamTypeType
 
 ```python
-from mypy_boto3_firehose.literals import DeliveryStreamType
+from mypy_boto3_firehose.literals import DeliveryStreamTypeType
 ```
 
 Values:
@@ -119,10 +119,10 @@ Values:
 - `DirectPut`
 - `KinesisStreamAsSource`
 
-## ElasticsearchIndexRotationPeriod
+## ElasticsearchIndexRotationPeriodType
 
 ```python
-from mypy_boto3_firehose.literals import ElasticsearchIndexRotationPeriod
+from mypy_boto3_firehose.literals import ElasticsearchIndexRotationPeriodType
 ```
 
 Values:
@@ -133,10 +133,10 @@ Values:
 - `OneMonth`
 - `OneWeek`
 
-## ElasticsearchS3BackupMode
+## ElasticsearchS3BackupModeType
 
 ```python
-from mypy_boto3_firehose.literals import ElasticsearchS3BackupMode
+from mypy_boto3_firehose.literals import ElasticsearchS3BackupModeType
 ```
 
 Values:
@@ -144,10 +144,10 @@ Values:
 - `AllDocuments`
 - `FailedDocumentsOnly`
 
-## HECEndpointType
+## HECEndpointTypeType
 
 ```python
-from mypy_boto3_firehose.literals import HECEndpointType
+from mypy_boto3_firehose.literals import HECEndpointTypeType
 ```
 
 Values:
@@ -155,10 +155,10 @@ Values:
 - `Event`
 - `Raw`
 
-## HttpEndpointS3BackupMode
+## HttpEndpointS3BackupModeType
 
 ```python
-from mypy_boto3_firehose.literals import HttpEndpointS3BackupMode
+from mypy_boto3_firehose.literals import HttpEndpointS3BackupModeType
 ```
 
 Values:
@@ -166,10 +166,10 @@ Values:
 - `AllData`
 - `FailedDataOnly`
 
-## KeyType
+## KeyTypeType
 
 ```python
-from mypy_boto3_firehose.literals import KeyType
+from mypy_boto3_firehose.literals import KeyTypeType
 ```
 
 Values:
@@ -177,20 +177,20 @@ Values:
 - `AWS_OWNED_CMK`
 - `CUSTOMER_MANAGED_CMK`
 
-## NoEncryptionConfig
+## NoEncryptionConfigType
 
 ```python
-from mypy_boto3_firehose.literals import NoEncryptionConfig
+from mypy_boto3_firehose.literals import NoEncryptionConfigType
 ```
 
 Values:
 
 - `NoEncryption`
 
-## OrcCompression
+## OrcCompressionType
 
 ```python
-from mypy_boto3_firehose.literals import OrcCompression
+from mypy_boto3_firehose.literals import OrcCompressionType
 ```
 
 Values:
@@ -199,10 +199,10 @@ Values:
 - `SNAPPY`
 - `ZLIB`
 
-## OrcFormatVersion
+## OrcFormatVersionType
 
 ```python
-from mypy_boto3_firehose.literals import OrcFormatVersion
+from mypy_boto3_firehose.literals import OrcFormatVersionType
 ```
 
 Values:
@@ -210,10 +210,10 @@ Values:
 - `V0_11`
 - `V0_12`
 
-## ParquetCompression
+## ParquetCompressionType
 
 ```python
-from mypy_boto3_firehose.literals import ParquetCompression
+from mypy_boto3_firehose.literals import ParquetCompressionType
 ```
 
 Values:
@@ -222,10 +222,10 @@ Values:
 - `SNAPPY`
 - `UNCOMPRESSED`
 
-## ParquetWriterVersion
+## ParquetWriterVersionType
 
 ```python
-from mypy_boto3_firehose.literals import ParquetWriterVersion
+from mypy_boto3_firehose.literals import ParquetWriterVersionType
 ```
 
 Values:
@@ -233,10 +233,10 @@ Values:
 - `V1`
 - `V2`
 
-## ProcessorParameterName
+## ProcessorParameterNameType
 
 ```python
-from mypy_boto3_firehose.literals import ProcessorParameterName
+from mypy_boto3_firehose.literals import ProcessorParameterNameType
 ```
 
 Values:
@@ -247,20 +247,20 @@ Values:
 - `NumberOfRetries`
 - `RoleArn`
 
-## ProcessorType
+## ProcessorTypeType
 
 ```python
-from mypy_boto3_firehose.literals import ProcessorType
+from mypy_boto3_firehose.literals import ProcessorTypeType
 ```
 
 Values:
 
 - `Lambda`
 
-## RedshiftS3BackupMode
+## RedshiftS3BackupModeType
 
 ```python
-from mypy_boto3_firehose.literals import RedshiftS3BackupMode
+from mypy_boto3_firehose.literals import RedshiftS3BackupModeType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## S3BackupMode
+## S3BackupModeType
 
 ```python
-from mypy_boto3_firehose.literals import S3BackupMode
+from mypy_boto3_firehose.literals import S3BackupModeType
 ```
 
 Values:
@@ -279,10 +279,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## SplunkS3BackupMode
+## SplunkS3BackupModeType
 
 ```python
-from mypy_boto3_firehose.literals import SplunkS3BackupMode
+from mypy_boto3_firehose.literals import SplunkS3BackupModeType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > Honeycode
 
 Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
 [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
@@ -30,39 +30,39 @@ Can be used directly:
 from mypy_boto3_honeycode.client import HoneycodeClient
 ```
 
-HoneycodeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_create_table_rows](./client.md#batch-create-table-rows)
-- [batch_delete_table_rows](./client.md#batch-delete-table-rows)
-- [batch_update_table_rows](./client.md#batch-update-table-rows)
-- [batch_upsert_table_rows](./client.md#batch-upsert-table-rows)
-- [can_paginate](./client.md#can-paginate)
-- [describe_table_data_import_job](./client.md#describe-table-data-import-job)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_screen_data](./client.md#get-screen-data)
-- [invoke_screen_automation](./client.md#invoke-screen-automation)
-- [list_table_columns](./client.md#list-table-columns)
-- [list_table_rows](./client.md#list-table-rows)
-- [list_tables](./client.md#list-tables)
-- [query_table_rows](./client.md#query-table-rows)
-- [start_table_data_import_job](./client.md#start-table-data-import-job)
+- [batch_create_table_rows](./client.md#batch_create_table_rows)
+- [batch_delete_table_rows](./client.md#batch_delete_table_rows)
+- [batch_update_table_rows](./client.md#batch_update_table_rows)
+- [batch_upsert_table_rows](./client.md#batch_upsert_table_rows)
+- [can_paginate](./client.md#can_paginate)
+- [describe_table_data_import_job](./client.md#describe_table_data_import_job)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_screen_data](./client.md#get_screen_data)
+- [invoke_screen_automation](./client.md#invoke_screen_automation)
+- [list_table_columns](./client.md#list_table_columns)
+- [list_table_rows](./client.md#list_table_rows)
+- [list_tables](./client.md#list_tables)
+- [query_table_rows](./client.md#query_table_rows)
+- [start_table_data_import_job](./client.md#start_table_data_import_job)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AutomationExecutionException](./client.md#automationexecutionexception)
-- [AutomationExecutionTimeoutException](./client.md#automationexecutiontimeoutexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [RequestTimeoutException](./client.md#requesttimeoutexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+HoneycodeClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AutomationExecutionException
+- AutomationExecutionTimeoutException
+- ClientError
+- InternalServerException
+- RequestTimeoutException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ServiceUnavailableException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -87,18 +87,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.literals import Format, ...
+from mypy_boto3_honeycode.literals import FormatType, ...
 ```
 
-- [Format](./literals.md#format)
-- [ImportDataCharacterEncoding](./literals.md#importdatacharacterencoding)
-- [ImportSourceDataFormat](./literals.md#importsourcedataformat)
+- [FormatType](./literals.md#formattype)
+- [ImportDataCharacterEncodingType](./literals.md#importdatacharacterencodingtype)
+- [ImportSourceDataFormatType](./literals.md#importsourcedataformattype)
 - [ListTableColumnsPaginatorName](./literals.md#listtablecolumnspaginatorname)
 - [ListTableRowsPaginatorName](./literals.md#listtablerowspaginatorname)
 - [ListTablesPaginatorName](./literals.md#listtablespaginatorname)
 - [QueryTableRowsPaginatorName](./literals.md#querytablerowspaginatorname)
-- [TableDataImportJobStatus](./literals.md#tabledataimportjobstatus)
-- [UpsertAction](./literals.md#upsertaction)
+- [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
+- [UpsertActionType](./literals.md#upsertactiontype)
 
 ## Typed dictionaries
 

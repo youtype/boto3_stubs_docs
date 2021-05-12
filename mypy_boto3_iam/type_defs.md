@@ -3,7 +3,7 @@
 > [Index](..) > [IAM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iam.html#IAM)
 type annotations stubs module
 [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
@@ -184,7 +184,7 @@ Optional fields:
 
 - `UserName`: `str`
 - `AccessKeyId`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 - `CreateDate`: `datetime`
 
 ## AccessKeyTypeDef
@@ -197,7 +197,7 @@ Required fields:
 
 - `UserName`: `str`
 - `AccessKeyId`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 - `SecretAccessKey`: `str`
 
 Optional fields:
@@ -213,7 +213,7 @@ from mypy_boto3_iam.type_defs import AttachedPermissionsBoundaryTypeDef
 Optional fields:
 
 - `PermissionsBoundaryType`: `Literal['PermissionsBoundaryPolicy']` (see
-  [PermissionsBoundaryAttachmentType](./literals.md#permissionsboundaryattachmenttype))
+  [PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype))
 - `PermissionsBoundaryArn`: `str`
 
 ## AttachedPolicyTypeDef
@@ -237,7 +237,8 @@ Optional fields:
 
 - `ContextKeyName`: `str`
 - `ContextKeyValues`: `List`\[`str`\]
-- `ContextKeyType`: [ContextKeyTypeEnum](./literals.md#contextkeytypeenum)
+- `ContextKeyType`:
+  [ContextKeyTypeEnumType](./literals.md#contextkeytypeenumtype)
 
 ## CreateAccessKeyResponseTypeDef
 
@@ -420,7 +421,7 @@ Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`: [policyOwnerEntityType](./literals.md#policyownerentitytype)
+- `Type`: [policyOwnerEntityTypeType](./literals.md#policyownerentitytypetype)
 - `Id`: `str`
 
 Optional fields:
@@ -448,7 +449,7 @@ Required fields:
 
 - `EvalActionName`: `str`
 - `EvalDecision`:
-  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)
+  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)
 
 Optional fields:
 
@@ -461,7 +462,7 @@ Optional fields:
 - `PermissionsBoundaryDecisionDetail`:
   [PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef)
 - `EvalDecisionDetails`: `Dict`\[`str`,
-  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)\]
+  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)\]
 - `ResourceSpecificResults`:
   `List`\[[ResourceSpecificResultTypeDef](./type_defs.md#resourcespecificresulttypedef)\]
 
@@ -473,7 +474,7 @@ from mypy_boto3_iam.type_defs import GenerateCredentialReportResponseTypeDef
 
 Optional fields:
 
-- `State`: [ReportStateType](./literals.md#reportstatetype)
+- `State`: [ReportStateTypeType](./literals.md#reportstatetypetype)
 - `Description`: `str`
 
 ## GenerateOrganizationsAccessReportResponseTypeDef
@@ -535,7 +536,8 @@ from mypy_boto3_iam.type_defs import GetAccountPasswordPolicyResponseTypeDef
 
 Required fields:
 
-- `PasswordPolicy`: [PasswordPolicyTypeDef](./type_defs.md#passwordpolicytypedef)
+- `PasswordPolicy`:
+  [PasswordPolicyTypeDef](./type_defs.md#passwordpolicytypedef)
 
 ## GetAccountSummaryResponseTypeDef
 
@@ -545,7 +547,8 @@ from mypy_boto3_iam.type_defs import GetAccountSummaryResponseTypeDef
 
 Optional fields:
 
-- `SummaryMap`: `Dict`\[[summaryKeyType](./literals.md#summarykeytype), `int`\]
+- `SummaryMap`: `Dict`\[[summaryKeyTypeType](./literals.md#summarykeytypetype),
+  `int`\]
 
 ## GetContextKeysForPolicyResponseTypeDef
 
@@ -567,7 +570,7 @@ Optional fields:
 
 - `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ReportFormat`: `Literal['text/csv']` (see
-  [ReportFormatType](./literals.md#reportformattype))
+  [ReportFormatTypeType](./literals.md#reportformattypetype))
 - `GeneratedTime`: `datetime`
 
 ## GetGroupPolicyResponseTypeDef
@@ -641,7 +644,7 @@ from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportResponseTypeDef
 
 Required fields:
 
-- `JobStatus`: [jobStatusType](./literals.md#jobstatustype)
+- `JobStatus`: [jobStatusTypeType](./literals.md#jobstatustypetype)
 - `JobCreationDate`: `datetime`
 
 Optional fields:
@@ -739,7 +742,7 @@ from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsResponseTypeDe
 
 Required fields:
 
-- `JobStatus`: [jobStatusType](./literals.md#jobstatustype)
+- `JobStatus`: [jobStatusTypeType](./literals.md#jobstatustypetype)
 - `JobCreationDate`: `datetime`
 - `ServicesLastAccessed`:
   `List`\[[ServiceLastAccessedTypeDef](./type_defs.md#servicelastaccessedtypedef)\]
@@ -748,7 +751,7 @@ Required fields:
 Optional fields:
 
 - `JobType`:
-  [AccessAdvisorUsageGranularityType](./literals.md#accessadvisorusagegranularitytype)
+  [AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype)
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 - `Error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
@@ -761,7 +764,7 @@ from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesRe
 
 Required fields:
 
-- `JobStatus`: [jobStatusType](./literals.md#jobstatustype)
+- `JobStatus`: [jobStatusTypeType](./literals.md#jobstatustypetype)
 - `JobCreationDate`: `datetime`
 - `JobCompletionDate`: `datetime`
 - `EntityDetailsList`:
@@ -781,7 +784,8 @@ from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusResponseT
 
 Required fields:
 
-- `Status`: [DeletionTaskStatusType](./literals.md#deletiontaskstatustype)
+- `Status`:
+  [DeletionTaskStatusTypeType](./literals.md#deletiontaskstatustypetype)
 
 Optional fields:
 
@@ -941,8 +945,10 @@ Optional fields:
 
 - `PolicyGroups`:
   `List`\[[PolicyGroupTypeDef](./type_defs.md#policygrouptypedef)\]
-- `PolicyUsers`: `List`\[[PolicyUserTypeDef](./type_defs.md#policyusertypedef)\]
-- `PolicyRoles`: `List`\[[PolicyRoleTypeDef](./type_defs.md#policyroletypedef)\]
+- `PolicyUsers`:
+  `List`\[[PolicyUserTypeDef](./type_defs.md#policyusertypedef)\]
+- `PolicyRoles`:
+  `List`\[[PolicyRoleTypeDef](./type_defs.md#policyroletypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -1495,12 +1501,13 @@ from mypy_boto3_iam.type_defs import PolicyGrantingServiceAccessTypeDef
 Required fields:
 
 - `PolicyName`: `str`
-- `PolicyType`: [policyType](./literals.md#policytype)
+- `PolicyType`: [policyTypeType](./literals.md#policytypetype)
 
 Optional fields:
 
 - `PolicyArn`: `str`
-- `EntityType`: [policyOwnerEntityType](./literals.md#policyownerentitytype)
+- `EntityType`:
+  [policyOwnerEntityTypeType](./literals.md#policyownerentitytypetype)
 - `EntityName`: `str`
 
 ## PolicyGroupTypeDef
@@ -1602,7 +1609,7 @@ Required fields:
 
 - `EvalResourceName`: `str`
 - `EvalResourceDecision`:
-  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)
+  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)
 
 Optional fields:
 
@@ -1610,7 +1617,7 @@ Optional fields:
   `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 - `MissingContextValues`: `List`\[`str`\]
 - `EvalDecisionDetails`: `Dict`\[`str`,
-  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)\]
+  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)\]
 - `PermissionsBoundaryDecisionDetail`:
   [PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef)
 
@@ -1707,7 +1714,7 @@ Required fields:
 
 - `UserName`: `str`
 - `SSHPublicKeyId`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 - `UploadDate`: `datetime`
 
 ## SSHPublicKeyTypeDef
@@ -1722,7 +1729,7 @@ Required fields:
 - `SSHPublicKeyId`: `str`
 - `Fingerprint`: `str`
 - `SSHPublicKeyBody`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 
 Optional fields:
 
@@ -1792,7 +1799,7 @@ from mypy_boto3_iam.type_defs import ServiceSpecificCredentialMetadataTypeDef
 Required fields:
 
 - `UserName`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 - `ServiceUserName`: `str`
 - `CreateDate`: `datetime`
 - `ServiceSpecificCredentialId`: `str`
@@ -1812,7 +1819,7 @@ Required fields:
 - `ServicePassword`: `str`
 - `ServiceSpecificCredentialId`: `str`
 - `UserName`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 
 ## SigningCertificateTypeDef
 
@@ -1825,7 +1832,7 @@ Required fields:
 - `UserName`: `str`
 - `CertificateId`: `str`
 - `CertificateBody`: `str`
-- `Status`: [statusType](./literals.md#statustype)
+- `Status`: [statusTypeType](./literals.md#statustypetype)
 
 Optional fields:
 
@@ -1853,7 +1860,8 @@ from mypy_boto3_iam.type_defs import StatementTypeDef
 Optional fields:
 
 - `SourcePolicyId`: `str`
-- `SourcePolicyType`: [PolicySourceType](./literals.md#policysourcetype)
+- `SourcePolicyType`:
+  [PolicySourceTypeType](./literals.md#policysourcetypetype)
 - `StartPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
 - `EndPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > MarketplaceMetering
 
 Auto-generated documentation for
-[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
+[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
 [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
@@ -29,37 +29,37 @@ Can be used directly:
 from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
 ```
 
-MarketplaceMeteringClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_meter_usage](./client.md#batch-meter-usage)
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [meter_usage](./client.md#meter-usage)
-- [register_usage](./client.md#register-usage)
-- [resolve_customer](./client.md#resolve-customer)
+- [batch_meter_usage](./client.md#batch_meter_usage)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [meter_usage](./client.md#meter_usage)
+- [register_usage](./client.md#register_usage)
+- [resolve_customer](./client.md#resolve_customer)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CustomerNotEntitledException](./client.md#customernotentitledexception)
-- [DisabledApiException](./client.md#disabledapiexception)
-- [DuplicateRequestException](./client.md#duplicaterequestexception)
-- [ExpiredTokenException](./client.md#expiredtokenexception)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [InvalidCustomerIdentifierException](./client.md#invalidcustomeridentifierexception)
-- [InvalidEndpointRegionException](./client.md#invalidendpointregionexception)
-- [InvalidProductCodeException](./client.md#invalidproductcodeexception)
-- [InvalidPublicKeyVersionException](./client.md#invalidpublickeyversionexception)
-- [InvalidRegionException](./client.md#invalidregionexception)
-- [InvalidTagException](./client.md#invalidtagexception)
-- [InvalidTokenException](./client.md#invalidtokenexception)
-- [InvalidUsageAllocationsException](./client.md#invalidusageallocationsexception)
-- [InvalidUsageDimensionException](./client.md#invalidusagedimensionexception)
-- [PlatformNotSupportedException](./client.md#platformnotsupportedexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [TimestampOutOfBoundsException](./client.md#timestampoutofboundsexception)
+MarketplaceMeteringClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CustomerNotEntitledException
+- DisabledApiException
+- DuplicateRequestException
+- ExpiredTokenException
+- InternalServiceErrorException
+- InvalidCustomerIdentifierException
+- InvalidEndpointRegionException
+- InvalidProductCodeException
+- InvalidPublicKeyVersionException
+- InvalidRegionException
+- InvalidTagException
+- InvalidTokenException
+- InvalidUsageAllocationsException
+- InvalidUsageDimensionException
+- PlatformNotSupportedException
+- ThrottlingException
+- TimestampOutOfBoundsException
 
 ## Literals
 
@@ -68,10 +68,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatus, ...
+from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatusType, ...
 ```
 
-- [UsageRecordResultStatus](./literals.md#usagerecordresultstatus)
+- [UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype)
 
 ## Typed dictionaries
 

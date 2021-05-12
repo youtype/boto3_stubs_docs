@@ -3,34 +3,34 @@
 > [Index](..) > [AuditManager](.) > Literals
 
 Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
 [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 - [Literals for boto3 AuditManager module](#literals-for-boto3-auditmanager-module)
-  - [AccountStatus](#accountstatus)
-  - [ActionEnum](#actionenum)
-  - [AssessmentReportDestinationType](#assessmentreportdestinationtype)
-  - [AssessmentReportStatus](#assessmentreportstatus)
-  - [AssessmentStatus](#assessmentstatus)
-  - [ControlResponse](#controlresponse)
-  - [ControlSetStatus](#controlsetstatus)
-  - [ControlStatus](#controlstatus)
-  - [ControlType](#controltype)
-  - [DelegationStatus](#delegationstatus)
-  - [FrameworkType](#frameworktype)
-  - [KeywordInputType](#keywordinputtype)
-  - [ObjectTypeEnum](#objecttypeenum)
-  - [RoleType](#roletype)
-  - [SettingAttribute](#settingattribute)
-  - [SourceFrequency](#sourcefrequency)
-  - [SourceSetUpOption](#sourcesetupoption)
-  - [SourceType](#sourcetype)
+  - [AccountStatusType](#accountstatustype)
+  - [ActionEnumType](#actionenumtype)
+  - [AssessmentReportDestinationTypeType](#assessmentreportdestinationtypetype)
+  - [AssessmentReportStatusType](#assessmentreportstatustype)
+  - [AssessmentStatusType](#assessmentstatustype)
+  - [ControlResponseType](#controlresponsetype)
+  - [ControlSetStatusType](#controlsetstatustype)
+  - [ControlStatusType](#controlstatustype)
+  - [ControlTypeType](#controltypetype)
+  - [DelegationStatusType](#delegationstatustype)
+  - [FrameworkTypeType](#frameworktypetype)
+  - [KeywordInputTypeType](#keywordinputtypetype)
+  - [ObjectTypeEnumType](#objecttypeenumtype)
+  - [RoleTypeType](#roletypetype)
+  - [SettingAttributeType](#settingattributetype)
+  - [SourceFrequencyType](#sourcefrequencytype)
+  - [SourceSetUpOptionType](#sourcesetupoptiontype)
+  - [SourceTypeType](#sourcetypetype)
 
-## AccountStatus
+## AccountStatusType
 
 ```python
-from mypy_boto3_auditmanager.literals import AccountStatus
+from mypy_boto3_auditmanager.literals import AccountStatusType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 - `INACTIVE`
 - `PENDING_ACTIVATION`
 
-## ActionEnum
+## ActionEnumType
 
 ```python
-from mypy_boto3_auditmanager.literals import ActionEnum
+from mypy_boto3_auditmanager.literals import ActionEnumType
 ```
 
 Values:
@@ -56,20 +56,20 @@ Values:
 - `UNDER_REVIEW`
 - `UPDATE_METADATA`
 
-## AssessmentReportDestinationType
+## AssessmentReportDestinationTypeType
 
 ```python
-from mypy_boto3_auditmanager.literals import AssessmentReportDestinationType
+from mypy_boto3_auditmanager.literals import AssessmentReportDestinationTypeType
 ```
 
 Values:
 
 - `S3`
 
-## AssessmentReportStatus
+## AssessmentReportStatusType
 
 ```python
-from mypy_boto3_auditmanager.literals import AssessmentReportStatus
+from mypy_boto3_auditmanager.literals import AssessmentReportStatusType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## AssessmentStatus
+## AssessmentStatusType
 
 ```python
-from mypy_boto3_auditmanager.literals import AssessmentStatus
+from mypy_boto3_auditmanager.literals import AssessmentStatusType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## ControlResponse
+## ControlResponseType
 
 ```python
-from mypy_boto3_auditmanager.literals import ControlResponse
+from mypy_boto3_auditmanager.literals import ControlResponseType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `IGNORE`
 - `MANUAL`
 
-## ControlSetStatus
+## ControlSetStatusType
 
 ```python
-from mypy_boto3_auditmanager.literals import ControlSetStatus
+from mypy_boto3_auditmanager.literals import ControlSetStatusType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `REVIEWED`
 - `UNDER_REVIEW`
 
-## ControlStatus
+## ControlStatusType
 
 ```python
-from mypy_boto3_auditmanager.literals import ControlStatus
+from mypy_boto3_auditmanager.literals import ControlStatusType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `REVIEWED`
 - `UNDER_REVIEW`
 
-## ControlType
+## ControlTypeType
 
 ```python
-from mypy_boto3_auditmanager.literals import ControlType
+from mypy_boto3_auditmanager.literals import ControlTypeType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 - `Custom`
 - `Standard`
 
-## DelegationStatus
+## DelegationStatusType
 
 ```python
-from mypy_boto3_auditmanager.literals import DelegationStatus
+from mypy_boto3_auditmanager.literals import DelegationStatusType
 ```
 
 Values:
@@ -149,10 +149,10 @@ Values:
 - `IN_PROGRESS`
 - `UNDER_REVIEW`
 
-## FrameworkType
+## FrameworkTypeType
 
 ```python
-from mypy_boto3_auditmanager.literals import FrameworkType
+from mypy_boto3_auditmanager.literals import FrameworkTypeType
 ```
 
 Values:
@@ -160,20 +160,20 @@ Values:
 - `Custom`
 - `Standard`
 
-## KeywordInputType
+## KeywordInputTypeType
 
 ```python
-from mypy_boto3_auditmanager.literals import KeywordInputType
+from mypy_boto3_auditmanager.literals import KeywordInputTypeType
 ```
 
 Values:
 
 - `SELECT_FROM_LIST`
 
-## ObjectTypeEnum
+## ObjectTypeEnumType
 
 ```python
-from mypy_boto3_auditmanager.literals import ObjectTypeEnum
+from mypy_boto3_auditmanager.literals import ObjectTypeEnumType
 ```
 
 Values:
@@ -184,10 +184,10 @@ Values:
 - `CONTROL_SET`
 - `DELEGATION`
 
-## RoleType
+## RoleTypeType
 
 ```python
-from mypy_boto3_auditmanager.literals import RoleType
+from mypy_boto3_auditmanager.literals import RoleTypeType
 ```
 
 Values:
@@ -195,10 +195,10 @@ Values:
 - `PROCESS_OWNER`
 - `RESOURCE_OWNER`
 
-## SettingAttribute
+## SettingAttributeType
 
 ```python
-from mypy_boto3_auditmanager.literals import SettingAttribute
+from mypy_boto3_auditmanager.literals import SettingAttributeType
 ```
 
 Values:
@@ -209,10 +209,10 @@ Values:
 - `IS_AWS_ORG_ENABLED`
 - `SNS_TOPIC`
 
-## SourceFrequency
+## SourceFrequencyType
 
 ```python
-from mypy_boto3_auditmanager.literals import SourceFrequency
+from mypy_boto3_auditmanager.literals import SourceFrequencyType
 ```
 
 Values:
@@ -221,10 +221,10 @@ Values:
 - `MONTHLY`
 - `WEEKLY`
 
-## SourceSetUpOption
+## SourceSetUpOptionType
 
 ```python
-from mypy_boto3_auditmanager.literals import SourceSetUpOption
+from mypy_boto3_auditmanager.literals import SourceSetUpOptionType
 ```
 
 Values:
@@ -232,10 +232,10 @@ Values:
 - `Procedural_Controls_Mapping`
 - `System_Controls_Mapping`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_auditmanager.literals import SourceType
+from mypy_boto3_auditmanager.literals import SourceTypeType
 ```
 
 Values:

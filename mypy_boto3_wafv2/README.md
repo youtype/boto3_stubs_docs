@@ -3,7 +3,7 @@
 > [Index](..) > WAFV2
 
 Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
 [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
@@ -28,71 +28,71 @@ Can be used directly:
 from mypy_boto3_wafv2.client import WAFV2Client
 ```
 
-WAFV2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_web_acl](./client.md#associate-web-acl)
-- [can_paginate](./client.md#can-paginate)
-- [check_capacity](./client.md#check-capacity)
-- [create_ip_set](./client.md#create-ip-set)
-- [create_regex_pattern_set](./client.md#create-regex-pattern-set)
-- [create_rule_group](./client.md#create-rule-group)
-- [create_web_acl](./client.md#create-web-acl)
-- [delete_firewall_manager_rule_groups](./client.md#delete-firewall-manager-rule-groups)
-- [delete_ip_set](./client.md#delete-ip-set)
-- [delete_logging_configuration](./client.md#delete-logging-configuration)
-- [delete_permission_policy](./client.md#delete-permission-policy)
-- [delete_regex_pattern_set](./client.md#delete-regex-pattern-set)
-- [delete_rule_group](./client.md#delete-rule-group)
-- [delete_web_acl](./client.md#delete-web-acl)
-- [describe_managed_rule_group](./client.md#describe-managed-rule-group)
-- [disassociate_web_acl](./client.md#disassociate-web-acl)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_ip_set](./client.md#get-ip-set)
-- [get_logging_configuration](./client.md#get-logging-configuration)
-- [get_permission_policy](./client.md#get-permission-policy)
-- [get_rate_based_statement_managed_keys](./client.md#get-rate-based-statement-managed-keys)
-- [get_regex_pattern_set](./client.md#get-regex-pattern-set)
-- [get_rule_group](./client.md#get-rule-group)
-- [get_sampled_requests](./client.md#get-sampled-requests)
-- [get_web_acl](./client.md#get-web-acl)
-- [get_web_acl_for_resource](./client.md#get-web-acl-for-resource)
-- [list_available_managed_rule_groups](./client.md#list-available-managed-rule-groups)
-- [list_ip_sets](./client.md#list-ip-sets)
-- [list_logging_configurations](./client.md#list-logging-configurations)
-- [list_regex_pattern_sets](./client.md#list-regex-pattern-sets)
-- [list_resources_for_web_acl](./client.md#list-resources-for-web-acl)
-- [list_rule_groups](./client.md#list-rule-groups)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_web_acls](./client.md#list-web-acls)
-- [put_logging_configuration](./client.md#put-logging-configuration)
-- [put_permission_policy](./client.md#put-permission-policy)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_ip_set](./client.md#update-ip-set)
-- [update_regex_pattern_set](./client.md#update-regex-pattern-set)
-- [update_rule_group](./client.md#update-rule-group)
-- [update_web_acl](./client.md#update-web-acl)
+- [associate_web_acl](./client.md#associate_web_acl)
+- [can_paginate](./client.md#can_paginate)
+- [check_capacity](./client.md#check_capacity)
+- [create_ip_set](./client.md#create_ip_set)
+- [create_regex_pattern_set](./client.md#create_regex_pattern_set)
+- [create_rule_group](./client.md#create_rule_group)
+- [create_web_acl](./client.md#create_web_acl)
+- [delete_firewall_manager_rule_groups](./client.md#delete_firewall_manager_rule_groups)
+- [delete_ip_set](./client.md#delete_ip_set)
+- [delete_logging_configuration](./client.md#delete_logging_configuration)
+- [delete_permission_policy](./client.md#delete_permission_policy)
+- [delete_regex_pattern_set](./client.md#delete_regex_pattern_set)
+- [delete_rule_group](./client.md#delete_rule_group)
+- [delete_web_acl](./client.md#delete_web_acl)
+- [describe_managed_rule_group](./client.md#describe_managed_rule_group)
+- [disassociate_web_acl](./client.md#disassociate_web_acl)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_ip_set](./client.md#get_ip_set)
+- [get_logging_configuration](./client.md#get_logging_configuration)
+- [get_permission_policy](./client.md#get_permission_policy)
+- [get_rate_based_statement_managed_keys](./client.md#get_rate_based_statement_managed_keys)
+- [get_regex_pattern_set](./client.md#get_regex_pattern_set)
+- [get_rule_group](./client.md#get_rule_group)
+- [get_sampled_requests](./client.md#get_sampled_requests)
+- [get_web_acl](./client.md#get_web_acl)
+- [get_web_acl_for_resource](./client.md#get_web_acl_for_resource)
+- [list_available_managed_rule_groups](./client.md#list_available_managed_rule_groups)
+- [list_ip_sets](./client.md#list_ip_sets)
+- [list_logging_configurations](./client.md#list_logging_configurations)
+- [list_regex_pattern_sets](./client.md#list_regex_pattern_sets)
+- [list_resources_for_web_acl](./client.md#list_resources_for_web_acl)
+- [list_rule_groups](./client.md#list_rule_groups)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_web_acls](./client.md#list_web_acls)
+- [put_logging_configuration](./client.md#put_logging_configuration)
+- [put_permission_policy](./client.md#put_permission_policy)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_ip_set](./client.md#update_ip_set)
+- [update_regex_pattern_set](./client.md#update_regex_pattern_set)
+- [update_rule_group](./client.md#update_rule_group)
+- [update_web_acl](./client.md#update_web_acl)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [WAFAssociatedItemException](./client.md#wafassociateditemexception)
-- [WAFDuplicateItemException](./client.md#wafduplicateitemexception)
-- [WAFInternalErrorException](./client.md#wafinternalerrorexception)
-- [WAFInvalidOperationException](./client.md#wafinvalidoperationexception)
-- [WAFInvalidParameterException](./client.md#wafinvalidparameterexception)
-- [WAFInvalidPermissionPolicyException](./client.md#wafinvalidpermissionpolicyexception)
-- [WAFInvalidResourceException](./client.md#wafinvalidresourceexception)
-- [WAFLimitsExceededException](./client.md#waflimitsexceededexception)
-- [WAFNonexistentItemException](./client.md#wafnonexistentitemexception)
-- [WAFOptimisticLockException](./client.md#wafoptimisticlockexception)
-- [WAFServiceLinkedRoleErrorException](./client.md#wafservicelinkedroleerrorexception)
-- [WAFSubscriptionNotFoundException](./client.md#wafsubscriptionnotfoundexception)
-- [WAFTagOperationException](./client.md#waftagoperationexception)
-- [WAFTagOperationInternalErrorException](./client.md#waftagoperationinternalerrorexception)
-- [WAFUnavailableEntityException](./client.md#wafunavailableentityexception)
+WAFV2Client [exceptions](./client.md#exceptions)
+
+- ClientError
+- WAFAssociatedItemException
+- WAFDuplicateItemException
+- WAFInternalErrorException
+- WAFInvalidOperationException
+- WAFInvalidParameterException
+- WAFInvalidPermissionPolicyException
+- WAFInvalidResourceException
+- WAFLimitsExceededException
+- WAFNonexistentItemException
+- WAFOptimisticLockException
+- WAFServiceLinkedRoleErrorException
+- WAFSubscriptionNotFoundException
+- WAFTagOperationException
+- WAFTagOperationInternalErrorException
+- WAFUnavailableEntityException
 
 ## Literals
 
@@ -101,26 +101,26 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_wafv2.literals import ActionValue, ...
+from mypy_boto3_wafv2.literals import ActionValueType, ...
 ```
 
-- [ActionValue](./literals.md#actionvalue)
-- [BodyParsingFallbackBehavior](./literals.md#bodyparsingfallbackbehavior)
-- [ComparisonOperator](./literals.md#comparisonoperator)
-- [CountryCode](./literals.md#countrycode)
-- [FallbackBehavior](./literals.md#fallbackbehavior)
-- [FilterBehavior](./literals.md#filterbehavior)
-- [FilterRequirement](./literals.md#filterrequirement)
-- [ForwardedIPPosition](./literals.md#forwardedipposition)
-- [IPAddressVersion](./literals.md#ipaddressversion)
-- [JsonMatchScope](./literals.md#jsonmatchscope)
-- [LabelMatchScope](./literals.md#labelmatchscope)
-- [PositionalConstraint](./literals.md#positionalconstraint)
-- [RateBasedStatementAggregateKeyType](./literals.md#ratebasedstatementaggregatekeytype)
-- [ResourceType](./literals.md#resourcetype)
-- [ResponseContentType](./literals.md#responsecontenttype)
-- [Scope](./literals.md#scope)
-- [TextTransformationType](./literals.md#texttransformationtype)
+- [ActionValueType](./literals.md#actionvaluetype)
+- [BodyParsingFallbackBehaviorType](./literals.md#bodyparsingfallbackbehaviortype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
+- [CountryCodeType](./literals.md#countrycodetype)
+- [FallbackBehaviorType](./literals.md#fallbackbehaviortype)
+- [FilterBehaviorType](./literals.md#filterbehaviortype)
+- [FilterRequirementType](./literals.md#filterrequirementtype)
+- [ForwardedIPPositionType](./literals.md#forwardedippositiontype)
+- [IPAddressVersionType](./literals.md#ipaddressversiontype)
+- [JsonMatchScopeType](./literals.md#jsonmatchscopetype)
+- [LabelMatchScopeType](./literals.md#labelmatchscopetype)
+- [PositionalConstraintType](./literals.md#positionalconstrainttype)
+- [RateBasedStatementAggregateKeyTypeType](./literals.md#ratebasedstatementaggregatekeytypetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [ResponseContentTypeType](./literals.md#responsecontenttypetype)
+- [ScopeType](./literals.md#scopetype)
+- [TextTransformationTypeType](./literals.md#texttransformationtypetype)
 
 ## Typed dictionaries
 

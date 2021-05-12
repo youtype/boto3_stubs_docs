@@ -3,7 +3,7 @@
 > [Index](..) > [ConfigService](.) > ConfigServiceClient
 
 Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService)
 type annotations stubs module
 [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
@@ -115,7 +115,7 @@ def get_config_client() -> ConfigServiceClient:
 ```
 
 Boto3 documentation:
-[ConfigService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client)
+[ConfigService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client)
 
 ## Exceptions
 
@@ -194,7 +194,7 @@ Type annotations for
 `boto3.client("config").batch_get_aggregate_resource_config` method.
 
 Boto3 documentation:
-[ConfigService.Client.batch_get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
+[ConfigService.Client.batch_get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
 
 Arguments:
 
@@ -211,12 +211,13 @@ Returns
 Type annotations for `boto3.client("config").batch_get_resource_config` method.
 
 Boto3 documentation:
-[ConfigService.Client.batch_get_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
+[ConfigService.Client.batch_get_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
 
 Arguments:
 
 - `resourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\] *(required)*
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  *(required)*
 
 Returns
 [BatchGetResourceConfigResponseTypeDef](./type_defs.md#batchgetresourceconfigresponsetypedef).
@@ -226,7 +227,7 @@ Returns
 Type annotations for `boto3.client("config").can_paginate` method.
 
 Boto3 documentation:
-[ConfigService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.can_paginate)
+[ConfigService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.can_paginate)
 
 Arguments:
 
@@ -240,7 +241,7 @@ Type annotations for `boto3.client("config").delete_aggregation_authorization`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
+[ConfigService.Client.delete_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
 
 Arguments:
 
@@ -252,7 +253,7 @@ Arguments:
 Type annotations for `boto3.client("config").delete_config_rule` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule)
+[ConfigService.Client.delete_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_config_rule)
 
 Arguments:
 
@@ -264,7 +265,7 @@ Type annotations for `boto3.client("config").delete_configuration_aggregator`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
+[ConfigService.Client.delete_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
 
 Arguments:
 
@@ -276,7 +277,7 @@ Type annotations for `boto3.client("config").delete_configuration_recorder`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
+[ConfigService.Client.delete_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
 
 Arguments:
 
@@ -287,7 +288,7 @@ Arguments:
 Type annotations for `boto3.client("config").delete_conformance_pack` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
+[ConfigService.Client.delete_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
 
 Arguments:
 
@@ -298,7 +299,7 @@ Arguments:
 Type annotations for `boto3.client("config").delete_delivery_channel` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
+[ConfigService.Client.delete_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
 
 Arguments:
 
@@ -309,7 +310,7 @@ Arguments:
 Type annotations for `boto3.client("config").delete_evaluation_results` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_evaluation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
+[ConfigService.Client.delete_evaluation_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
 
 Arguments:
 
@@ -323,7 +324,7 @@ Type annotations for `boto3.client("config").delete_organization_config_rule`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
+[ConfigService.Client.delete_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
 
 Arguments:
 
@@ -335,7 +336,7 @@ Type annotations for
 `boto3.client("config").delete_organization_conformance_pack` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
+[ConfigService.Client.delete_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
 
 Arguments:
 
@@ -347,7 +348,7 @@ Type annotations for
 `boto3.client("config").delete_pending_aggregation_request` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_pending_aggregation_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
+[ConfigService.Client.delete_pending_aggregation_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
 
 Arguments:
 
@@ -360,7 +361,7 @@ Type annotations for `boto3.client("config").delete_remediation_configuration`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_remediation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
+[ConfigService.Client.delete_remediation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
 
 Arguments:
 
@@ -375,7 +376,7 @@ Type annotations for `boto3.client("config").delete_remediation_exceptions`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
+[ConfigService.Client.delete_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
 
 Arguments:
 
@@ -392,7 +393,7 @@ Returns
 Type annotations for `boto3.client("config").delete_resource_config` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config)
+[ConfigService.Client.delete_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_resource_config)
 
 Arguments:
 
@@ -405,7 +406,7 @@ Type annotations for `boto3.client("config").delete_retention_configuration`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
+[ConfigService.Client.delete_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
 
 Arguments:
 
@@ -416,7 +417,7 @@ Arguments:
 Type annotations for `boto3.client("config").delete_stored_query` method.
 
 Boto3 documentation:
-[ConfigService.Client.delete_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query)
+[ConfigService.Client.delete_stored_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.delete_stored_query)
 
 Arguments:
 
@@ -429,7 +430,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("config").deliver_config_snapshot` method.
 
 Boto3 documentation:
-[ConfigService.Client.deliver_config_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
+[ConfigService.Client.deliver_config_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
 
 Arguments:
 
@@ -444,7 +445,7 @@ Type annotations for
 `boto3.client("config").describe_aggregate_compliance_by_config_rules` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_aggregate_compliance_by_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
+[ConfigService.Client.describe_aggregate_compliance_by_config_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
 
 Arguments:
 
@@ -464,7 +465,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_aggregate_compliance_by_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
+[ConfigService.Client.describe_aggregate_compliance_by_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
 
 Arguments:
 
@@ -483,7 +484,7 @@ Type annotations for
 `boto3.client("config").describe_aggregation_authorizations` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_aggregation_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
+[ConfigService.Client.describe_aggregation_authorizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
 
 Arguments:
 
@@ -499,12 +500,13 @@ Type annotations for
 `boto3.client("config").describe_compliance_by_config_rule` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_compliance_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
+[ConfigService.Client.describe_compliance_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
 
 Arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\]
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -516,13 +518,14 @@ Type annotations for `boto3.client("config").describe_compliance_by_resource`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_compliance_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
+[ConfigService.Client.describe_compliance_by_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
 
 Arguments:
 
 - `ResourceType`: `str`
 - `ResourceId`: `str`
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -535,7 +538,7 @@ Type annotations for
 `boto3.client("config").describe_config_rule_evaluation_status` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_config_rule_evaluation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
+[ConfigService.Client.describe_config_rule_evaluation_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
 
 Arguments:
 
@@ -551,7 +554,7 @@ Returns
 Type annotations for `boto3.client("config").describe_config_rules` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules)
+[ConfigService.Client.describe_config_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_config_rules)
 
 Arguments:
 
@@ -568,13 +571,13 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_configuration_aggregator_sources_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
+[ConfigService.Client.describe_configuration_aggregator_sources_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
 
 Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusType](./literals.md#aggregatedsourcestatustype)\]
+  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -587,7 +590,7 @@ Type annotations for
 `boto3.client("config").describe_configuration_aggregators` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_configuration_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
+[ConfigService.Client.describe_configuration_aggregators](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
 
 Arguments:
 
@@ -604,7 +607,7 @@ Type annotations for
 `boto3.client("config").describe_configuration_recorder_status` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_configuration_recorder_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
+[ConfigService.Client.describe_configuration_recorder_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
 
 Arguments:
 
@@ -619,7 +622,7 @@ Type annotations for `boto3.client("config").describe_configuration_recorders`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_configuration_recorders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
+[ConfigService.Client.describe_configuration_recorders](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
 
 Arguments:
 
@@ -634,7 +637,7 @@ Type annotations for
 `boto3.client("config").describe_conformance_pack_compliance` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_conformance_pack_compliance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
+[ConfigService.Client.describe_conformance_pack_compliance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
 
 Arguments:
 
@@ -653,7 +656,7 @@ Type annotations for `boto3.client("config").describe_conformance_pack_status`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_conformance_pack_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
+[ConfigService.Client.describe_conformance_pack_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
 
 Arguments:
 
@@ -670,7 +673,7 @@ Type annotations for `boto3.client("config").describe_conformance_packs`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
+[ConfigService.Client.describe_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
 
 Arguments:
 
@@ -687,7 +690,7 @@ Type annotations for `boto3.client("config").describe_delivery_channel_status`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_delivery_channel_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
+[ConfigService.Client.describe_delivery_channel_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
 
 Arguments:
 
@@ -702,7 +705,7 @@ Type annotations for `boto3.client("config").describe_delivery_channels`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_delivery_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
+[ConfigService.Client.describe_delivery_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
 
 Arguments:
 
@@ -717,7 +720,7 @@ Type annotations for
 `boto3.client("config").describe_organization_config_rule_statuses` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_organization_config_rule_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
+[ConfigService.Client.describe_organization_config_rule_statuses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
 
 Arguments:
 
@@ -734,7 +737,7 @@ Type annotations for
 `boto3.client("config").describe_organization_config_rules` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_organization_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
+[ConfigService.Client.describe_organization_config_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
 
 Arguments:
 
@@ -752,7 +755,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_organization_conformance_pack_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
+[ConfigService.Client.describe_organization_conformance_pack_statuses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
 
 Arguments:
 
@@ -769,7 +772,7 @@ Type annotations for
 `boto3.client("config").describe_organization_conformance_packs` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_organization_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
+[ConfigService.Client.describe_organization_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
 
 Arguments:
 
@@ -786,7 +789,7 @@ Type annotations for
 `boto3.client("config").describe_pending_aggregation_requests` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_pending_aggregation_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
+[ConfigService.Client.describe_pending_aggregation_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
 
 Arguments:
 
@@ -802,7 +805,7 @@ Type annotations for
 `boto3.client("config").describe_remediation_configurations` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
+[ConfigService.Client.describe_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
 
 Arguments:
 
@@ -817,7 +820,7 @@ Type annotations for `boto3.client("config").describe_remediation_exceptions`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
+[ConfigService.Client.describe_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
 
 Arguments:
 
@@ -836,7 +839,7 @@ Type annotations for
 `boto3.client("config").describe_remediation_execution_status` method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_remediation_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
+[ConfigService.Client.describe_remediation_execution_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
 
 Arguments:
 
@@ -855,7 +858,7 @@ Type annotations for `boto3.client("config").describe_retention_configurations`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.describe_retention_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
+[ConfigService.Client.describe_retention_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
 
 Arguments:
 
@@ -870,7 +873,7 @@ Returns
 Type annotations for `boto3.client("config").generate_presigned_url` method.
 
 Boto3 documentation:
-[ConfigService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.generate_presigned_url)
+[ConfigService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -888,7 +891,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConfigService.Client.get_aggregate_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
+[ConfigService.Client.get_aggregate_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
 
 Arguments:
 
@@ -896,7 +899,7 @@ Arguments:
 - `ConfigRuleName`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 - `AwsRegion`: `str` *(required)*
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -909,7 +912,7 @@ Type annotations for
 `boto3.client("config").get_aggregate_config_rule_compliance_summary` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_aggregate_config_rule_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
+[ConfigService.Client.get_aggregate_config_rule_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
 
 Arguments:
 
@@ -917,7 +920,7 @@ Arguments:
 - `Filters`:
   [ConfigRuleComplianceSummaryFiltersTypeDef](./type_defs.md#configrulecompliancesummaryfilterstypedef)
 - `GroupByKey`:
-  [ConfigRuleComplianceSummaryGroupKey](./literals.md#configrulecompliancesummarygroupkey)
+  [ConfigRuleComplianceSummaryGroupKeyType](./literals.md#configrulecompliancesummarygroupkeytype)
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -931,7 +934,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConfigService.Client.get_aggregate_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
+[ConfigService.Client.get_aggregate_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
 
 Arguments:
 
@@ -939,7 +942,7 @@ Arguments:
 - `Filters`:
   [AggregateConformancePackComplianceSummaryFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancesummaryfilterstypedef)
 - `GroupByKey`:
-  [AggregateConformancePackComplianceSummaryGroupKey](./literals.md#aggregateconformancepackcompliancesummarygroupkey)
+  [AggregateConformancePackComplianceSummaryGroupKeyType](./literals.md#aggregateconformancepackcompliancesummarygroupkeytype)
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -952,14 +955,15 @@ Type annotations for
 `boto3.client("config").get_aggregate_discovered_resource_counts` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_aggregate_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
+[ConfigService.Client.get_aggregate_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
 
 Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
   [ResourceCountFiltersTypeDef](./type_defs.md#resourcecountfilterstypedef)
-- `GroupByKey`: [ResourceCountGroupKey](./literals.md#resourcecountgroupkey)
+- `GroupByKey`:
+  [ResourceCountGroupKeyType](./literals.md#resourcecountgroupkeytype)
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -972,7 +976,7 @@ Type annotations for `boto3.client("config").get_aggregate_resource_config`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
+[ConfigService.Client.get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
 
 Arguments:
 
@@ -990,12 +994,13 @@ Type annotations for
 `boto3.client("config").get_compliance_details_by_config_rule` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
+[ConfigService.Client.get_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
 
 Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1008,13 +1013,14 @@ Type annotations for
 `boto3.client("config").get_compliance_details_by_resource` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_compliance_details_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
+[ConfigService.Client.get_compliance_details_by_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
 
 Arguments:
 
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -1026,7 +1032,7 @@ Type annotations for
 `boto3.client("config").get_compliance_summary_by_config_rule` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_compliance_summary_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
+[ConfigService.Client.get_compliance_summary_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
 
 Returns
 [GetComplianceSummaryByConfigRuleResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponsetypedef).
@@ -1037,7 +1043,7 @@ Type annotations for
 `boto3.client("config").get_compliance_summary_by_resource_type` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_compliance_summary_by_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
+[ConfigService.Client.get_compliance_summary_by_resource_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
 
 Arguments:
 
@@ -1052,7 +1058,7 @@ Type annotations for
 `boto3.client("config").get_conformance_pack_compliance_details` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_conformance_pack_compliance_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
+[ConfigService.Client.get_conformance_pack_compliance_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
 
 Arguments:
 
@@ -1071,7 +1077,7 @@ Type annotations for
 `boto3.client("config").get_conformance_pack_compliance_summary` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
+[ConfigService.Client.get_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
 
 Arguments:
 
@@ -1088,7 +1094,7 @@ Type annotations for `boto3.client("config").get_discovered_resource_counts`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.get_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
+[ConfigService.Client.get_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
 
 Arguments:
 
@@ -1105,7 +1111,7 @@ Type annotations for
 `boto3.client("config").get_organization_config_rule_detailed_status` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_organization_config_rule_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
+[ConfigService.Client.get_organization_config_rule_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
 
 Arguments:
 
@@ -1125,7 +1131,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConfigService.Client.get_organization_conformance_pack_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
+[ConfigService.Client.get_organization_conformance_pack_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
 
 Arguments:
 
@@ -1144,15 +1150,17 @@ Type annotations for `boto3.client("config").get_resource_config_history`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.get_resource_config_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history)
+[ConfigService.Client.get_resource_config_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_resource_config_history)
 
 Arguments:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `resourceId`: `str` *(required)*
 - `laterTime`: `datetime`
 - `earlierTime`: `datetime`
-- `chronologicalOrder`: [ChronologicalOrder](./literals.md#chronologicalorder)
+- `chronologicalOrder`:
+  [ChronologicalOrderType](./literals.md#chronologicalordertype)
 - `limit`: `int`
 - `nextToken`: `str`
 
@@ -1164,7 +1172,7 @@ Returns
 Type annotations for `boto3.client("config").get_stored_query` method.
 
 Boto3 documentation:
-[ConfigService.Client.get_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query)
+[ConfigService.Client.get_stored_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.get_stored_query)
 
 Arguments:
 
@@ -1179,12 +1187,13 @@ Type annotations for
 `boto3.client("config").list_aggregate_discovered_resources` method.
 
 Boto3 documentation:
-[ConfigService.Client.list_aggregate_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
+[ConfigService.Client.list_aggregate_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
 
 Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
-- `ResourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -1197,11 +1206,12 @@ Returns
 Type annotations for `boto3.client("config").list_discovered_resources` method.
 
 Boto3 documentation:
-[ConfigService.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources)
+[ConfigService.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.list_discovered_resources)
 
 Arguments:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `resourceIds`: `List`\[`str`\]
 - `resourceName`: `str`
 - `limit`: `int`
@@ -1216,7 +1226,7 @@ Returns
 Type annotations for `boto3.client("config").list_stored_queries` method.
 
 Boto3 documentation:
-[ConfigService.Client.list_stored_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries)
+[ConfigService.Client.list_stored_queries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.list_stored_queries)
 
 Arguments:
 
@@ -1231,7 +1241,7 @@ Returns
 Type annotations for `boto3.client("config").list_tags_for_resource` method.
 
 Boto3 documentation:
-[ConfigService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
+[ConfigService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1248,7 +1258,7 @@ Type annotations for `boto3.client("config").put_aggregation_authorization`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
+[ConfigService.Client.put_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
 
 Arguments:
 
@@ -1264,7 +1274,7 @@ Returns
 Type annotations for `boto3.client("config").put_config_rule` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
+[ConfigService.Client.put_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_config_rule)
 
 Arguments:
 
@@ -1278,7 +1288,7 @@ Type annotations for `boto3.client("config").put_configuration_aggregator`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
+[ConfigService.Client.put_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
 
 Arguments:
 
@@ -1298,7 +1308,7 @@ Type annotations for `boto3.client("config").put_configuration_recorder`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
+[ConfigService.Client.put_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
 
 Arguments:
 
@@ -1311,7 +1321,7 @@ Arguments:
 Type annotations for `boto3.client("config").put_conformance_pack` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
+[ConfigService.Client.put_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_conformance_pack)
 
 Arguments:
 
@@ -1331,7 +1341,7 @@ Returns
 Type annotations for `boto3.client("config").put_delivery_channel` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel)
+[ConfigService.Client.put_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_delivery_channel)
 
 Arguments:
 
@@ -1343,12 +1353,13 @@ Arguments:
 Type annotations for `boto3.client("config").put_evaluations` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations)
+[ConfigService.Client.put_evaluations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_evaluations)
 
 Arguments:
 
 - `ResultToken`: `str` *(required)*
-- `Evaluations`: `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
+- `Evaluations`:
+  `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `TestMode`: `bool`
 
 Returns
@@ -1359,7 +1370,7 @@ Returns
 Type annotations for `boto3.client("config").put_external_evaluation` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_external_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation)
+[ConfigService.Client.put_external_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_external_evaluation)
 
 Arguments:
 
@@ -1376,7 +1387,7 @@ Type annotations for `boto3.client("config").put_organization_config_rule`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
+[ConfigService.Client.put_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
 
 Arguments:
 
@@ -1396,7 +1407,7 @@ Type annotations for `boto3.client("config").put_organization_conformance_pack`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
+[ConfigService.Client.put_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
 
 Arguments:
 
@@ -1418,7 +1429,7 @@ Type annotations for `boto3.client("config").put_remediation_configurations`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
+[ConfigService.Client.put_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
 
 Arguments:
 
@@ -1435,7 +1446,7 @@ Type annotations for `boto3.client("config").put_remediation_exceptions`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
+[ConfigService.Client.put_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
 
 Arguments:
 
@@ -1454,7 +1465,7 @@ Returns
 Type annotations for `boto3.client("config").put_resource_config` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config)
+[ConfigService.Client.put_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_resource_config)
 
 Arguments:
 
@@ -1471,7 +1482,7 @@ Type annotations for `boto3.client("config").put_retention_configuration`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.put_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration)
+[ConfigService.Client.put_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_retention_configuration)
 
 Arguments:
 
@@ -1485,7 +1496,7 @@ Returns
 Type annotations for `boto3.client("config").put_stored_query` method.
 
 Boto3 documentation:
-[ConfigService.Client.put_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query)
+[ConfigService.Client.put_stored_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.put_stored_query)
 
 Arguments:
 
@@ -1502,7 +1513,7 @@ Type annotations for `boto3.client("config").select_aggregate_resource_config`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.select_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
+[ConfigService.Client.select_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
 
 Arguments:
 
@@ -1520,7 +1531,7 @@ Returns
 Type annotations for `boto3.client("config").select_resource_config` method.
 
 Boto3 documentation:
-[ConfigService.Client.select_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)
+[ConfigService.Client.select_resource_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.select_resource_config)
 
 Arguments:
 
@@ -1537,7 +1548,7 @@ Type annotations for `boto3.client("config").start_config_rules_evaluation`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.start_config_rules_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
+[ConfigService.Client.start_config_rules_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
 
 Arguments:
 
@@ -1551,7 +1562,7 @@ Type annotations for `boto3.client("config").start_configuration_recorder`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.start_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
+[ConfigService.Client.start_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
 
 Arguments:
 
@@ -1563,13 +1574,14 @@ Type annotations for `boto3.client("config").start_remediation_execution`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.start_remediation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution)
+[ConfigService.Client.start_remediation_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.start_remediation_execution)
 
 Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\] *(required)*
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  *(required)*
 
 Returns
 [StartRemediationExecutionResponseTypeDef](./type_defs.md#startremediationexecutionresponsetypedef).
@@ -1580,7 +1592,7 @@ Type annotations for `boto3.client("config").stop_configuration_recorder`
 method.
 
 Boto3 documentation:
-[ConfigService.Client.stop_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
+[ConfigService.Client.stop_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
 
 Arguments:
 
@@ -1591,7 +1603,7 @@ Arguments:
 Type annotations for `boto3.client("config").tag_resource` method.
 
 Boto3 documentation:
-[ConfigService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource)
+[ConfigService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.tag_resource)
 
 Arguments:
 
@@ -1603,7 +1615,7 @@ Arguments:
 Type annotations for `boto3.client("config").untag_resource` method.
 
 Boto3 documentation:
-[ConfigService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource)
+[ConfigService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Client.untag_resource)
 
 Arguments:
 
@@ -1617,7 +1629,8 @@ overloads.
 
 - `client.get_paginator("describe_aggregate_compliance_by_config_rules")` ->
   [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
-- `client.get_paginator("describe_aggregate_compliance_by_conformance_packs")` ->
+- `client.get_paginator("describe_aggregate_compliance_by_conformance_packs")`
+  ->
   [DescribeAggregateComplianceByConformancePacksPaginator](./paginators.md#describeaggregatecompliancebyconformancepackspaginator)
 - `client.get_paginator("describe_aggregation_authorizations")` ->
   [DescribeAggregationAuthorizationsPaginator](./paginators.md#describeaggregationauthorizationspaginator)
@@ -1661,7 +1674,8 @@ overloads.
   [GetConformancePackComplianceSummaryPaginator](./paginators.md#getconformancepackcompliancesummarypaginator)
 - `client.get_paginator("get_organization_config_rule_detailed_status")` ->
   [GetOrganizationConfigRuleDetailedStatusPaginator](./paginators.md#getorganizationconfigruledetailedstatuspaginator)
-- `client.get_paginator("get_organization_conformance_pack_detailed_status")` ->
+- `client.get_paginator("get_organization_conformance_pack_detailed_status")`
+  ->
   [GetOrganizationConformancePackDetailedStatusPaginator](./paginators.md#getorganizationconformancepackdetailedstatuspaginator)
 - `client.get_paginator("get_resource_config_history")` ->
   [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)

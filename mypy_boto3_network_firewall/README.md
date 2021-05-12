@@ -3,7 +3,7 @@
 > [Index](..) > NetworkFirewall
 
 Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
 [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
@@ -30,58 +30,58 @@ Can be used directly:
 from mypy_boto3_network_firewall.client import NetworkFirewallClient
 ```
 
-NetworkFirewallClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_firewall_policy](./client.md#associate-firewall-policy)
-- [associate_subnets](./client.md#associate-subnets)
-- [can_paginate](./client.md#can-paginate)
-- [create_firewall](./client.md#create-firewall)
-- [create_firewall_policy](./client.md#create-firewall-policy)
-- [create_rule_group](./client.md#create-rule-group)
-- [delete_firewall](./client.md#delete-firewall)
-- [delete_firewall_policy](./client.md#delete-firewall-policy)
-- [delete_resource_policy](./client.md#delete-resource-policy)
-- [delete_rule_group](./client.md#delete-rule-group)
-- [describe_firewall](./client.md#describe-firewall)
-- [describe_firewall_policy](./client.md#describe-firewall-policy)
-- [describe_logging_configuration](./client.md#describe-logging-configuration)
-- [describe_resource_policy](./client.md#describe-resource-policy)
-- [describe_rule_group](./client.md#describe-rule-group)
-- [disassociate_subnets](./client.md#disassociate-subnets)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_firewall_policies](./client.md#list-firewall-policies)
-- [list_firewalls](./client.md#list-firewalls)
-- [list_rule_groups](./client.md#list-rule-groups)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_resource_policy](./client.md#put-resource-policy)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_firewall_delete_protection](./client.md#update-firewall-delete-protection)
-- [update_firewall_description](./client.md#update-firewall-description)
-- [update_firewall_policy](./client.md#update-firewall-policy)
-- [update_firewall_policy_change_protection](./client.md#update-firewall-policy-change-protection)
-- [update_logging_configuration](./client.md#update-logging-configuration)
-- [update_rule_group](./client.md#update-rule-group)
-- [update_subnet_change_protection](./client.md#update-subnet-change-protection)
+- [associate_firewall_policy](./client.md#associate_firewall_policy)
+- [associate_subnets](./client.md#associate_subnets)
+- [can_paginate](./client.md#can_paginate)
+- [create_firewall](./client.md#create_firewall)
+- [create_firewall_policy](./client.md#create_firewall_policy)
+- [create_rule_group](./client.md#create_rule_group)
+- [delete_firewall](./client.md#delete_firewall)
+- [delete_firewall_policy](./client.md#delete_firewall_policy)
+- [delete_resource_policy](./client.md#delete_resource_policy)
+- [delete_rule_group](./client.md#delete_rule_group)
+- [describe_firewall](./client.md#describe_firewall)
+- [describe_firewall_policy](./client.md#describe_firewall_policy)
+- [describe_logging_configuration](./client.md#describe_logging_configuration)
+- [describe_resource_policy](./client.md#describe_resource_policy)
+- [describe_rule_group](./client.md#describe_rule_group)
+- [disassociate_subnets](./client.md#disassociate_subnets)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_firewall_policies](./client.md#list_firewall_policies)
+- [list_firewalls](./client.md#list_firewalls)
+- [list_rule_groups](./client.md#list_rule_groups)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_resource_policy](./client.md#put_resource_policy)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_firewall_delete_protection](./client.md#update_firewall_delete_protection)
+- [update_firewall_description](./client.md#update_firewall_description)
+- [update_firewall_policy](./client.md#update_firewall_policy)
+- [update_firewall_policy_change_protection](./client.md#update_firewall_policy_change_protection)
+- [update_logging_configuration](./client.md#update_logging_configuration)
+- [update_rule_group](./client.md#update_rule_group)
+- [update_subnet_change_protection](./client.md#update_subnet_change_protection)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InsufficientCapacityException](./client.md#insufficientcapacityexception)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidOperationException](./client.md#invalidoperationexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [InvalidResourcePolicyException](./client.md#invalidresourcepolicyexception)
-- [InvalidTokenException](./client.md#invalidtokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [LogDestinationPermissionException](./client.md#logdestinationpermissionexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceOwnerCheckException](./client.md#resourceownercheckexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+NetworkFirewallClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InsufficientCapacityException
+- InternalServerError
+- InvalidOperationException
+- InvalidRequestException
+- InvalidResourcePolicyException
+- InvalidTokenException
+- LimitExceededException
+- LogDestinationPermissionException
+- ResourceNotFoundException
+- ResourceOwnerCheckException
+- ThrottlingException
+- UnsupportedOperationException
 
 ## Paginators
 
@@ -106,27 +106,27 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_network_firewall.literals import AttachmentStatus, ...
+from mypy_boto3_network_firewall.literals import AttachmentStatusType, ...
 ```
 
-- [AttachmentStatus](./literals.md#attachmentstatus)
-- [ConfigurationSyncState](./literals.md#configurationsyncstate)
-- [FirewallStatusValue](./literals.md#firewallstatusvalue)
-- [GeneratedRulesType](./literals.md#generatedrulestype)
+- [AttachmentStatusType](./literals.md#attachmentstatustype)
+- [ConfigurationSyncStateType](./literals.md#configurationsyncstatetype)
+- [FirewallStatusValueType](./literals.md#firewallstatusvaluetype)
+- [GeneratedRulesTypeType](./literals.md#generatedrulestypetype)
 - [ListFirewallPoliciesPaginatorName](./literals.md#listfirewallpoliciespaginatorname)
 - [ListFirewallsPaginatorName](./literals.md#listfirewallspaginatorname)
 - [ListRuleGroupsPaginatorName](./literals.md#listrulegroupspaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [LogDestinationType](./literals.md#logdestinationtype)
-- [LogType](./literals.md#logtype)
-- [PerObjectSyncStatus](./literals.md#perobjectsyncstatus)
-- [ResourceStatus](./literals.md#resourcestatus)
-- [RuleGroupType](./literals.md#rulegrouptype)
-- [StatefulAction](./literals.md#statefulaction)
-- [StatefulRuleDirection](./literals.md#statefulruledirection)
-- [StatefulRuleProtocol](./literals.md#statefulruleprotocol)
-- [TCPFlag](./literals.md#tcpflag)
-- [TargetType](./literals.md#targettype)
+- [LogDestinationTypeType](./literals.md#logdestinationtypetype)
+- [LogTypeType](./literals.md#logtypetype)
+- [PerObjectSyncStatusType](./literals.md#perobjectsyncstatustype)
+- [ResourceStatusType](./literals.md#resourcestatustype)
+- [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+- [StatefulActionType](./literals.md#statefulactiontype)
+- [StatefulRuleDirectionType](./literals.md#statefulruledirectiontype)
+- [StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype)
+- [TCPFlagType](./literals.md#tcpflagtype)
+- [TargetTypeType](./literals.md#targettypetype)
 
 ## Typed dictionaries
 

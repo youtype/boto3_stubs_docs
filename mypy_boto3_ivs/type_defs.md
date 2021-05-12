@@ -3,7 +3,7 @@
 > [Index](..) > [IVS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ivs.html#IVS)
 type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
@@ -85,7 +85,7 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `latencyMode`: [ChannelLatencyMode](./literals.md#channellatencymode)
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
 - `authorized`: `bool`
 - `recordingConfigurationArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -100,8 +100,8 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `latencyMode`: [ChannelLatencyMode](./literals.md#channellatencymode)
-- `type`: [ChannelType](./literals.md#channeltype)
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `recordingConfigurationArn`: `str`
 - `ingestEndpoint`: `str`
 - `playbackUrl`: `str`
@@ -350,7 +350,7 @@ Required fields:
 - `destinationConfiguration`:
   [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
 - `state`:
-  [RecordingConfigurationState](./literals.md#recordingconfigurationstate)
+  [RecordingConfigurationStateType](./literals.md#recordingconfigurationstatetype)
 
 Optional fields:
 
@@ -369,7 +369,7 @@ Required fields:
 - `destinationConfiguration`:
   [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
 - `state`:
-  [RecordingConfigurationState](./literals.md#recordingconfigurationstate)
+  [RecordingConfigurationStateType](./literals.md#recordingconfigurationstatetype)
 
 Optional fields:
 
@@ -420,8 +420,8 @@ from mypy_boto3_ivs.type_defs import StreamSummaryTypeDef
 Optional fields:
 
 - `channelArn`: `str`
-- `state`: [StreamState](./literals.md#streamstate)
-- `health`: [StreamHealth](./literals.md#streamhealth)
+- `state`: [StreamStateType](./literals.md#streamstatetype)
+- `health`: [StreamHealthType](./literals.md#streamhealthtype)
 - `viewerCount`: `int`
 - `startTime`: `datetime`
 
@@ -436,8 +436,8 @@ Optional fields:
 - `channelArn`: `str`
 - `playbackUrl`: `str`
 - `startTime`: `datetime`
-- `state`: [StreamState](./literals.md#streamstate)
-- `health`: [StreamHealth](./literals.md#streamhealth)
+- `state`: [StreamStateType](./literals.md#streamstatetype)
+- `health`: [StreamHealthType](./literals.md#streamhealthtype)
 - `viewerCount`: `int`
 
 ## UpdateChannelResponseTypeDef

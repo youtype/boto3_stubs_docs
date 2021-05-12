@@ -3,34 +3,34 @@
 > [Index](..) > [NetworkFirewall](.) > Literals
 
 Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
 [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [Literals for boto3 NetworkFirewall module](#literals-for-boto3-networkfirewall-module)
-  - [AttachmentStatus](#attachmentstatus)
-  - [ConfigurationSyncState](#configurationsyncstate)
-  - [FirewallStatusValue](#firewallstatusvalue)
-  - [GeneratedRulesType](#generatedrulestype)
+  - [AttachmentStatusType](#attachmentstatustype)
+  - [ConfigurationSyncStateType](#configurationsyncstatetype)
+  - [FirewallStatusValueType](#firewallstatusvaluetype)
+  - [GeneratedRulesTypeType](#generatedrulestypetype)
   - [ListFirewallPoliciesPaginatorName](#listfirewallpoliciespaginatorname)
   - [ListFirewallsPaginatorName](#listfirewallspaginatorname)
   - [ListRuleGroupsPaginatorName](#listrulegroupspaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [LogDestinationType](#logdestinationtype)
-  - [LogType](#logtype)
-  - [PerObjectSyncStatus](#perobjectsyncstatus)
-  - [ResourceStatus](#resourcestatus)
-  - [RuleGroupType](#rulegrouptype)
-  - [StatefulAction](#statefulaction)
-  - [StatefulRuleDirection](#statefulruledirection)
-  - [StatefulRuleProtocol](#statefulruleprotocol)
-  - [TCPFlag](#tcpflag)
-  - [TargetType](#targettype)
+  - [LogDestinationTypeType](#logdestinationtypetype)
+  - [LogTypeType](#logtypetype)
+  - [PerObjectSyncStatusType](#perobjectsyncstatustype)
+  - [ResourceStatusType](#resourcestatustype)
+  - [RuleGroupTypeType](#rulegrouptypetype)
+  - [StatefulActionType](#statefulactiontype)
+  - [StatefulRuleDirectionType](#statefulruledirectiontype)
+  - [StatefulRuleProtocolType](#statefulruleprotocoltype)
+  - [TCPFlagType](#tcpflagtype)
+  - [TargetTypeType](#targettypetype)
 
-## AttachmentStatus
+## AttachmentStatusType
 
 ```python
-from mypy_boto3_network_firewall.literals import AttachmentStatus
+from mypy_boto3_network_firewall.literals import AttachmentStatusType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `READY`
 - `SCALING`
 
-## ConfigurationSyncState
+## ConfigurationSyncStateType
 
 ```python
-from mypy_boto3_network_firewall.literals import ConfigurationSyncState
+from mypy_boto3_network_firewall.literals import ConfigurationSyncStateType
 ```
 
 Values:
@@ -51,10 +51,10 @@ Values:
 - `IN_SYNC`
 - `PENDING`
 
-## FirewallStatusValue
+## FirewallStatusValueType
 
 ```python
-from mypy_boto3_network_firewall.literals import FirewallStatusValue
+from mypy_boto3_network_firewall.literals import FirewallStatusValueType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 - `PROVISIONING`
 - `READY`
 
-## GeneratedRulesType
+## GeneratedRulesTypeType
 
 ```python
-from mypy_boto3_network_firewall.literals import GeneratedRulesType
+from mypy_boto3_network_firewall.literals import GeneratedRulesTypeType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## LogDestinationType
+## LogDestinationTypeType
 
 ```python
-from mypy_boto3_network_firewall.literals import LogDestinationType
+from mypy_boto3_network_firewall.literals import LogDestinationTypeType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `KinesisDataFirehose`
 - `S3`
 
-## LogType
+## LogTypeType
 
 ```python
-from mypy_boto3_network_firewall.literals import LogType
+from mypy_boto3_network_firewall.literals import LogTypeType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 - `ALERT`
 - `FLOW`
 
-## PerObjectSyncStatus
+## PerObjectSyncStatusType
 
 ```python
-from mypy_boto3_network_firewall.literals import PerObjectSyncStatus
+from mypy_boto3_network_firewall.literals import PerObjectSyncStatusType
 ```
 
 Values:
@@ -148,10 +148,10 @@ Values:
 - `IN_SYNC`
 - `PENDING`
 
-## ResourceStatus
+## ResourceStatusType
 
 ```python
-from mypy_boto3_network_firewall.literals import ResourceStatus
+from mypy_boto3_network_firewall.literals import ResourceStatusType
 ```
 
 Values:
@@ -159,10 +159,10 @@ Values:
 - `ACTIVE`
 - `DELETING`
 
-## RuleGroupType
+## RuleGroupTypeType
 
 ```python
-from mypy_boto3_network_firewall.literals import RuleGroupType
+from mypy_boto3_network_firewall.literals import RuleGroupTypeType
 ```
 
 Values:
@@ -170,10 +170,10 @@ Values:
 - `STATEFUL`
 - `STATELESS`
 
-## StatefulAction
+## StatefulActionType
 
 ```python
-from mypy_boto3_network_firewall.literals import StatefulAction
+from mypy_boto3_network_firewall.literals import StatefulActionType
 ```
 
 Values:
@@ -182,10 +182,10 @@ Values:
 - `DROP`
 - `PASS`
 
-## StatefulRuleDirection
+## StatefulRuleDirectionType
 
 ```python
-from mypy_boto3_network_firewall.literals import StatefulRuleDirection
+from mypy_boto3_network_firewall.literals import StatefulRuleDirectionType
 ```
 
 Values:
@@ -193,10 +193,10 @@ Values:
 - `ANY`
 - `FORWARD`
 
-## StatefulRuleProtocol
+## StatefulRuleProtocolType
 
 ```python
-from mypy_boto3_network_firewall.literals import StatefulRuleProtocol
+from mypy_boto3_network_firewall.literals import StatefulRuleProtocolType
 ```
 
 Values:
@@ -221,10 +221,10 @@ Values:
 - `TLS`
 - `UDP`
 
-## TCPFlag
+## TCPFlagType
 
 ```python
-from mypy_boto3_network_firewall.literals import TCPFlag
+from mypy_boto3_network_firewall.literals import TCPFlagType
 ```
 
 Values:
@@ -238,10 +238,10 @@ Values:
 - `SYN`
 - `URG`
 
-## TargetType
+## TargetTypeType
 
 ```python
-from mypy_boto3_network_firewall.literals import TargetType
+from mypy_boto3_network_firewall.literals import TargetTypeType
 ```
 
 Values:

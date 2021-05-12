@@ -3,7 +3,7 @@
 > [Index](..) > SavingsPlans
 
 Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
 [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
@@ -29,29 +29,29 @@ Can be used directly:
 from mypy_boto3_savingsplans.client import SavingsPlansClient
 ```
 
-SavingsPlansClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_savings_plan](./client.md#create-savings-plan)
-- [delete_queued_savings_plan](./client.md#delete-queued-savings-plan)
-- [describe_savings_plan_rates](./client.md#describe-savings-plan-rates)
-- [describe_savings_plans](./client.md#describe-savings-plans)
-- [describe_savings_plans_offering_rates](./client.md#describe-savings-plans-offering-rates)
-- [describe_savings_plans_offerings](./client.md#describe-savings-plans-offerings)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_savings_plan](./client.md#create_savings_plan)
+- [delete_queued_savings_plan](./client.md#delete_queued_savings_plan)
+- [describe_savings_plan_rates](./client.md#describe_savings_plan_rates)
+- [describe_savings_plans](./client.md#describe_savings_plans)
+- [describe_savings_plans_offering_rates](./client.md#describe_savings_plans_offering_rates)
+- [describe_savings_plans_offerings](./client.md#describe_savings_plans_offerings)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+SavingsPlansClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Literals
 
@@ -60,22 +60,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_savingsplans.literals import CurrencyCode, ...
+from mypy_boto3_savingsplans.literals import CurrencyCodeType, ...
 ```
 
-- [CurrencyCode](./literals.md#currencycode)
-- [SavingsPlanOfferingFilterAttribute](./literals.md#savingsplanofferingfilterattribute)
-- [SavingsPlanOfferingPropertyKey](./literals.md#savingsplanofferingpropertykey)
-- [SavingsPlanPaymentOption](./literals.md#savingsplanpaymentoption)
-- [SavingsPlanProductType](./literals.md#savingsplanproducttype)
-- [SavingsPlanRateFilterAttribute](./literals.md#savingsplanratefilterattribute)
-- [SavingsPlanRateFilterName](./literals.md#savingsplanratefiltername)
-- [SavingsPlanRatePropertyKey](./literals.md#savingsplanratepropertykey)
-- [SavingsPlanRateServiceCode](./literals.md#savingsplanrateservicecode)
-- [SavingsPlanRateUnit](./literals.md#savingsplanrateunit)
-- [SavingsPlanState](./literals.md#savingsplanstate)
-- [SavingsPlanType](./literals.md#savingsplantype)
-- [SavingsPlansFilterName](./literals.md#savingsplansfiltername)
+- [CurrencyCodeType](./literals.md#currencycodetype)
+- [SavingsPlanOfferingFilterAttributeType](./literals.md#savingsplanofferingfilterattributetype)
+- [SavingsPlanOfferingPropertyKeyType](./literals.md#savingsplanofferingpropertykeytype)
+- [SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)
+- [SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)
+- [SavingsPlanRateFilterAttributeType](./literals.md#savingsplanratefilterattributetype)
+- [SavingsPlanRateFilterNameType](./literals.md#savingsplanratefilternametype)
+- [SavingsPlanRatePropertyKeyType](./literals.md#savingsplanratepropertykeytype)
+- [SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)
+- [SavingsPlanRateUnitType](./literals.md#savingsplanrateunittype)
+- [SavingsPlanStateType](./literals.md#savingsplanstatetype)
+- [SavingsPlanTypeType](./literals.md#savingsplantypetype)
+- [SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype)
 
 ## Typed dictionaries
 

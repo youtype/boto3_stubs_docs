@@ -3,7 +3,7 @@
 > [Index](..) > [QLDB](.) > Typed dictionaries
 
 Auto-generated documentation for
-[QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
+[QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB)
 type annotations stubs module
 [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
@@ -52,7 +52,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
-- `State`: [LedgerState](./literals.md#ledgerstate)
+- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
 
@@ -88,7 +88,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
-- `State`: [LedgerState](./literals.md#ledgerstate)
+- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
 
@@ -152,7 +152,7 @@ Required fields:
 - `LedgerName`: `str`
 - `RoleArn`: `str`
 - `StreamId`: `str`
-- `Status`: [StreamStatus](./literals.md#streamstatus)
+- `Status`: [StreamStatusType](./literals.md#streamstatustype)
 - `KinesisConfiguration`:
   [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
 - `StreamName`: `str`
@@ -163,7 +163,7 @@ Optional fields:
 - `InclusiveStartTime`: `datetime`
 - `ExclusiveEndTime`: `datetime`
 - `Arn`: `str`
-- `ErrorCause`: [ErrorCause](./literals.md#errorcause)
+- `ErrorCause`: [ErrorCauseType](./literals.md#errorcausetype)
 
 ## JournalS3ExportDescriptionTypeDef
 
@@ -176,7 +176,7 @@ Required fields:
 - `LedgerName`: `str`
 - `ExportId`: `str`
 - `ExportCreationTime`: `datetime`
-- `Status`: [ExportStatus](./literals.md#exportstatus)
+- `Status`: [ExportStatusType](./literals.md#exportstatustype)
 - `InclusiveStartTime`: `datetime`
 - `ExclusiveEndTime`: `datetime`
 - `S3ExportConfiguration`:
@@ -206,7 +206,7 @@ from mypy_boto3_qldb.type_defs import LedgerSummaryTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `State`: [LedgerState](./literals.md#ledgerstate)
+- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
 
 ## ListJournalKinesisStreamsForLedgerResponseTypeDef
@@ -276,7 +276,7 @@ from mypy_boto3_qldb.type_defs import S3EncryptionConfigurationTypeDef
 Required fields:
 
 - `ObjectEncryptionType`:
-  [S3ObjectEncryptionType](./literals.md#s3objectencryptiontype)
+  [S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype)
 
 Optional fields:
 
@@ -315,7 +315,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
-- `State`: [LedgerState](./literals.md#ledgerstate)
+- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
 

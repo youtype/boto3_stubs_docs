@@ -3,7 +3,7 @@
 > [Index](..) > [SES](.) > SESClient
 
 Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES)
 type annotations stubs module
 [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
@@ -101,7 +101,7 @@ def get_ses_client() -> SESClient:
 ```
 
 Boto3 documentation:
-[SES.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client)
+[SES.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client)
 
 ## Exceptions
 
@@ -160,7 +160,7 @@ Exceptions:
 Type annotations for `boto3.client("ses").can_paginate` method.
 
 Boto3 documentation:
-[SES.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.can_paginate)
+[SES.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.can_paginate)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ses").clone_receipt_rule_set` method.
 
 Boto3 documentation:
-[SES.Client.clone_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.clone_receipt_rule_set)
+[SES.Client.clone_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.clone_receipt_rule_set)
 
 Arguments:
 
@@ -187,12 +187,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").create_configuration_set` method.
 
 Boto3 documentation:
-[SES.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set)
+[SES.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_configuration_set)
 
 Arguments:
 
 - `ConfigurationSet`:
-  [ConfigurationSetTypeDef](./type_defs.md#configurationsettypedef) *(required)*
+  [ConfigurationSetTypeDef](./type_defs.md#configurationsettypedef)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -202,13 +203,14 @@ Type annotations for
 `boto3.client("ses").create_configuration_set_event_destination` method.
 
 Boto3 documentation:
-[SES.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_event_destination)
+[SES.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_configuration_set_event_destination)
 
 Arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestination`:
-  [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef) *(required)*
+  [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -218,7 +220,7 @@ Type annotations for
 `boto3.client("ses").create_configuration_set_tracking_options` method.
 
 Boto3 documentation:
-[SES.Client.create_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options)
+[SES.Client.create_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options)
 
 Arguments:
 
@@ -234,7 +236,7 @@ Type annotations for
 `boto3.client("ses").create_custom_verification_email_template` method.
 
 Boto3 documentation:
-[SES.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template)
+[SES.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_custom_verification_email_template)
 
 Arguments:
 
@@ -250,7 +252,7 @@ Arguments:
 Type annotations for `boto3.client("ses").create_receipt_filter` method.
 
 Boto3 documentation:
-[SES.Client.create_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_filter)
+[SES.Client.create_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_receipt_filter)
 
 Arguments:
 
@@ -264,7 +266,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").create_receipt_rule` method.
 
 Boto3 documentation:
-[SES.Client.create_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule)
+[SES.Client.create_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_receipt_rule)
 
 Arguments:
 
@@ -279,7 +281,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").create_receipt_rule_set` method.
 
 Boto3 documentation:
-[SES.Client.create_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule_set)
+[SES.Client.create_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_receipt_rule_set)
 
 Arguments:
 
@@ -292,7 +294,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").create_template` method.
 
 Boto3 documentation:
-[SES.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_template)
+[SES.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.create_template)
 
 Arguments:
 
@@ -305,7 +307,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").delete_configuration_set` method.
 
 Boto3 documentation:
-[SES.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set)
+[SES.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_configuration_set)
 
 Arguments:
 
@@ -319,7 +321,7 @@ Type annotations for
 `boto3.client("ses").delete_configuration_set_event_destination` method.
 
 Boto3 documentation:
-[SES.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination)
+[SES.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination)
 
 Arguments:
 
@@ -334,7 +336,7 @@ Type annotations for
 `boto3.client("ses").delete_configuration_set_tracking_options` method.
 
 Boto3 documentation:
-[SES.Client.delete_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options)
+[SES.Client.delete_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options)
 
 Arguments:
 
@@ -348,7 +350,7 @@ Type annotations for
 `boto3.client("ses").delete_custom_verification_email_template` method.
 
 Boto3 documentation:
-[SES.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_custom_verification_email_template)
+[SES.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_custom_verification_email_template)
 
 Arguments:
 
@@ -359,7 +361,7 @@ Arguments:
 Type annotations for `boto3.client("ses").delete_identity` method.
 
 Boto3 documentation:
-[SES.Client.delete_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity)
+[SES.Client.delete_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_identity)
 
 Arguments:
 
@@ -372,7 +374,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").delete_identity_policy` method.
 
 Boto3 documentation:
-[SES.Client.delete_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity_policy)
+[SES.Client.delete_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_identity_policy)
 
 Arguments:
 
@@ -386,7 +388,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").delete_receipt_filter` method.
 
 Boto3 documentation:
-[SES.Client.delete_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_filter)
+[SES.Client.delete_receipt_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_receipt_filter)
 
 Arguments:
 
@@ -399,7 +401,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").delete_receipt_rule` method.
 
 Boto3 documentation:
-[SES.Client.delete_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule)
+[SES.Client.delete_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_receipt_rule)
 
 Arguments:
 
@@ -413,7 +415,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").delete_receipt_rule_set` method.
 
 Boto3 documentation:
-[SES.Client.delete_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule_set)
+[SES.Client.delete_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_receipt_rule_set)
 
 Arguments:
 
@@ -426,7 +428,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").delete_template` method.
 
 Boto3 documentation:
-[SES.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_template)
+[SES.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_template)
 
 Arguments:
 
@@ -440,7 +442,7 @@ Type annotations for `boto3.client("ses").delete_verified_email_address`
 method.
 
 Boto3 documentation:
-[SES.Client.delete_verified_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_verified_email_address)
+[SES.Client.delete_verified_email_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.delete_verified_email_address)
 
 Arguments:
 
@@ -452,7 +454,7 @@ Type annotations for `boto3.client("ses").describe_active_receipt_rule_set`
 method.
 
 Boto3 documentation:
-[SES.Client.describe_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set)
+[SES.Client.describe_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set)
 
 Returns
 [DescribeActiveReceiptRuleSetResponseTypeDef](./type_defs.md#describeactivereceiptrulesetresponsetypedef).
@@ -462,13 +464,13 @@ Returns
 Type annotations for `boto3.client("ses").describe_configuration_set` method.
 
 Boto3 documentation:
-[SES.Client.describe_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_configuration_set)
+[SES.Client.describe_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.describe_configuration_set)
 
 Arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `ConfigurationSetAttributeNames`:
-  `List`\[[ConfigurationSetAttribute](./literals.md#configurationsetattribute)\]
+  `List`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
 
 Returns
 [DescribeConfigurationSetResponseTypeDef](./type_defs.md#describeconfigurationsetresponsetypedef).
@@ -478,7 +480,7 @@ Returns
 Type annotations for `boto3.client("ses").describe_receipt_rule` method.
 
 Boto3 documentation:
-[SES.Client.describe_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule)
+[SES.Client.describe_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.describe_receipt_rule)
 
 Arguments:
 
@@ -493,7 +495,7 @@ Returns
 Type annotations for `boto3.client("ses").describe_receipt_rule_set` method.
 
 Boto3 documentation:
-[SES.Client.describe_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule_set)
+[SES.Client.describe_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.describe_receipt_rule_set)
 
 Arguments:
 
@@ -507,7 +509,7 @@ Returns
 Type annotations for `boto3.client("ses").generate_presigned_url` method.
 
 Boto3 documentation:
-[SES.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.generate_presigned_url)
+[SES.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.generate_presigned_url)
 
 Arguments:
 
@@ -523,7 +525,7 @@ Returns `str`.
 Type annotations for `boto3.client("ses").get_account_sending_enabled` method.
 
 Boto3 documentation:
-[SES.Client.get_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_account_sending_enabled)
+[SES.Client.get_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_account_sending_enabled)
 
 Returns
 [GetAccountSendingEnabledResponseTypeDef](./type_defs.md#getaccountsendingenabledresponsetypedef).
@@ -534,7 +536,7 @@ Type annotations for
 `boto3.client("ses").get_custom_verification_email_template` method.
 
 Boto3 documentation:
-[SES.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_custom_verification_email_template)
+[SES.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_custom_verification_email_template)
 
 Arguments:
 
@@ -548,7 +550,7 @@ Returns
 Type annotations for `boto3.client("ses").get_identity_dkim_attributes` method.
 
 Boto3 documentation:
-[SES.Client.get_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_dkim_attributes)
+[SES.Client.get_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_identity_dkim_attributes)
 
 Arguments:
 
@@ -563,7 +565,7 @@ Type annotations for
 `boto3.client("ses").get_identity_mail_from_domain_attributes` method.
 
 Boto3 documentation:
-[SES.Client.get_identity_mail_from_domain_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes)
+[SES.Client.get_identity_mail_from_domain_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes)
 
 Arguments:
 
@@ -578,7 +580,7 @@ Type annotations for `boto3.client("ses").get_identity_notification_attributes`
 method.
 
 Boto3 documentation:
-[SES.Client.get_identity_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_notification_attributes)
+[SES.Client.get_identity_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_identity_notification_attributes)
 
 Arguments:
 
@@ -592,7 +594,7 @@ Returns
 Type annotations for `boto3.client("ses").get_identity_policies` method.
 
 Boto3 documentation:
-[SES.Client.get_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_policies)
+[SES.Client.get_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_identity_policies)
 
 Arguments:
 
@@ -608,7 +610,7 @@ Type annotations for `boto3.client("ses").get_identity_verification_attributes`
 method.
 
 Boto3 documentation:
-[SES.Client.get_identity_verification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_verification_attributes)
+[SES.Client.get_identity_verification_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_identity_verification_attributes)
 
 Arguments:
 
@@ -622,7 +624,7 @@ Returns
 Type annotations for `boto3.client("ses").get_send_quota` method.
 
 Boto3 documentation:
-[SES.Client.get_send_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_quota)
+[SES.Client.get_send_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_send_quota)
 
 Returns
 [GetSendQuotaResponseTypeDef](./type_defs.md#getsendquotaresponsetypedef).
@@ -632,7 +634,7 @@ Returns
 Type annotations for `boto3.client("ses").get_send_statistics` method.
 
 Boto3 documentation:
-[SES.Client.get_send_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_statistics)
+[SES.Client.get_send_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_send_statistics)
 
 Returns
 [GetSendStatisticsResponseTypeDef](./type_defs.md#getsendstatisticsresponsetypedef).
@@ -642,7 +644,7 @@ Returns
 Type annotations for `boto3.client("ses").get_template` method.
 
 Boto3 documentation:
-[SES.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_template)
+[SES.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.get_template)
 
 Arguments:
 
@@ -656,7 +658,7 @@ Returns
 Type annotations for `boto3.client("ses").list_configuration_sets` method.
 
 Boto3 documentation:
-[SES.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_configuration_sets)
+[SES.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_configuration_sets)
 
 Arguments:
 
@@ -672,7 +674,7 @@ Type annotations for
 `boto3.client("ses").list_custom_verification_email_templates` method.
 
 Boto3 documentation:
-[SES.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_custom_verification_email_templates)
+[SES.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_custom_verification_email_templates)
 
 Arguments:
 
@@ -687,11 +689,11 @@ Returns
 Type annotations for `boto3.client("ses").list_identities` method.
 
 Boto3 documentation:
-[SES.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities)
+[SES.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_identities)
 
 Arguments:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
@@ -703,7 +705,7 @@ Returns
 Type annotations for `boto3.client("ses").list_identity_policies` method.
 
 Boto3 documentation:
-[SES.Client.list_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identity_policies)
+[SES.Client.list_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_identity_policies)
 
 Arguments:
 
@@ -717,7 +719,7 @@ Returns
 Type annotations for `boto3.client("ses").list_receipt_filters` method.
 
 Boto3 documentation:
-[SES.Client.list_receipt_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_filters)
+[SES.Client.list_receipt_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_receipt_filters)
 
 Returns
 [ListReceiptFiltersResponseTypeDef](./type_defs.md#listreceiptfiltersresponsetypedef).
@@ -727,7 +729,7 @@ Returns
 Type annotations for `boto3.client("ses").list_receipt_rule_sets` method.
 
 Boto3 documentation:
-[SES.Client.list_receipt_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_rule_sets)
+[SES.Client.list_receipt_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_receipt_rule_sets)
 
 Arguments:
 
@@ -741,7 +743,7 @@ Returns
 Type annotations for `boto3.client("ses").list_templates` method.
 
 Boto3 documentation:
-[SES.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_templates)
+[SES.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_templates)
 
 Arguments:
 
@@ -757,7 +759,7 @@ Type annotations for `boto3.client("ses").list_verified_email_addresses`
 method.
 
 Boto3 documentation:
-[SES.Client.list_verified_email_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_verified_email_addresses)
+[SES.Client.list_verified_email_addresses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.list_verified_email_addresses)
 
 Returns
 [ListVerifiedEmailAddressesResponseTypeDef](./type_defs.md#listverifiedemailaddressesresponsetypedef).
@@ -768,7 +770,7 @@ Type annotations for
 `boto3.client("ses").put_configuration_set_delivery_options` method.
 
 Boto3 documentation:
-[SES.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options)
+[SES.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options)
 
 Arguments:
 
@@ -783,7 +785,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").put_identity_policy` method.
 
 Boto3 documentation:
-[SES.Client.put_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy)
+[SES.Client.put_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.put_identity_policy)
 
 Arguments:
 
@@ -798,7 +800,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").reorder_receipt_rule_set` method.
 
 Boto3 documentation:
-[SES.Client.reorder_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.reorder_receipt_rule_set)
+[SES.Client.reorder_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.reorder_receipt_rule_set)
 
 Arguments:
 
@@ -812,7 +814,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").send_bounce` method.
 
 Boto3 documentation:
-[SES.Client.send_bounce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce)
+[SES.Client.send_bounce](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.send_bounce)
 
 Arguments:
 
@@ -832,7 +834,7 @@ Returns [SendBounceResponseTypeDef](./type_defs.md#sendbounceresponsetypedef).
 Type annotations for `boto3.client("ses").send_bulk_templated_email` method.
 
 Boto3 documentation:
-[SES.Client.send_bulk_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email)
+[SES.Client.send_bulk_templated_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.send_bulk_templated_email)
 
 Arguments:
 
@@ -846,7 +848,8 @@ Arguments:
 - `ReturnPath`: `str`
 - `ReturnPathArn`: `str`
 - `ConfigurationSetName`: `str`
-- `DefaultTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `DefaultTags`:
+  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `TemplateArn`: `str`
 - `DefaultTemplateData`: `str`
 
@@ -859,7 +862,7 @@ Type annotations for `boto3.client("ses").send_custom_verification_email`
 method.
 
 Boto3 documentation:
-[SES.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email)
+[SES.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.send_custom_verification_email)
 
 Arguments:
 
@@ -875,7 +878,7 @@ Returns
 Type annotations for `boto3.client("ses").send_email` method.
 
 Boto3 documentation:
-[SES.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email)
+[SES.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.send_email)
 
 Arguments:
 
@@ -897,7 +900,7 @@ Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 Type annotations for `boto3.client("ses").send_raw_email` method.
 
 Boto3 documentation:
-[SES.Client.send_raw_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email)
+[SES.Client.send_raw_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.send_raw_email)
 
 Arguments:
 
@@ -919,7 +922,7 @@ Returns
 Type annotations for `boto3.client("ses").send_templated_email` method.
 
 Boto3 documentation:
-[SES.Client.send_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email)
+[SES.Client.send_templated_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.send_templated_email)
 
 Arguments:
 
@@ -944,7 +947,7 @@ Returns
 Type annotations for `boto3.client("ses").set_active_receipt_rule_set` method.
 
 Boto3 documentation:
-[SES.Client.set_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_active_receipt_rule_set)
+[SES.Client.set_active_receipt_rule_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_active_receipt_rule_set)
 
 Arguments:
 
@@ -957,7 +960,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").set_identity_dkim_enabled` method.
 
 Boto3 documentation:
-[SES.Client.set_identity_dkim_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_dkim_enabled)
+[SES.Client.set_identity_dkim_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_identity_dkim_enabled)
 
 Arguments:
 
@@ -972,7 +975,7 @@ Type annotations for
 `boto3.client("ses").set_identity_feedback_forwarding_enabled` method.
 
 Boto3 documentation:
-[SES.Client.set_identity_feedback_forwarding_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled)
+[SES.Client.set_identity_feedback_forwarding_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled)
 
 Arguments:
 
@@ -987,13 +990,13 @@ Type annotations for
 `boto3.client("ses").set_identity_headers_in_notifications_enabled` method.
 
 Boto3 documentation:
-[SES.Client.set_identity_headers_in_notifications_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled)
+[SES.Client.set_identity_headers_in_notifications_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled)
 
 Arguments:
 
 - `Identity`: `str` *(required)*
-- `NotificationType`: [NotificationType](./literals.md#notificationtype)
-  *(required)*
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype) *(required)*
 - `Enabled`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1004,13 +1007,14 @@ Type annotations for `boto3.client("ses").set_identity_mail_from_domain`
 method.
 
 Boto3 documentation:
-[SES.Client.set_identity_mail_from_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain)
+[SES.Client.set_identity_mail_from_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_identity_mail_from_domain)
 
 Arguments:
 
 - `Identity`: `str` *(required)*
 - `MailFromDomain`: `str`
-- `BehaviorOnMXFailure`: [BehaviorOnMXFailure](./literals.md#behavioronmxfailure)
+- `BehaviorOnMXFailure`:
+  [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1020,13 +1024,13 @@ Type annotations for `boto3.client("ses").set_identity_notification_topic`
 method.
 
 Boto3 documentation:
-[SES.Client.set_identity_notification_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic)
+[SES.Client.set_identity_notification_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_identity_notification_topic)
 
 Arguments:
 
 - `Identity`: `str` *(required)*
-- `NotificationType`: [NotificationType](./literals.md#notificationtype)
-  *(required)*
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype) *(required)*
 - `SnsTopic`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1036,7 +1040,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").set_receipt_rule_position` method.
 
 Boto3 documentation:
-[SES.Client.set_receipt_rule_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position)
+[SES.Client.set_receipt_rule_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.set_receipt_rule_position)
 
 Arguments:
 
@@ -1051,7 +1055,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").test_render_template` method.
 
 Boto3 documentation:
-[SES.Client.test_render_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.test_render_template)
+[SES.Client.test_render_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.test_render_template)
 
 Arguments:
 
@@ -1067,7 +1071,7 @@ Type annotations for `boto3.client("ses").update_account_sending_enabled`
 method.
 
 Boto3 documentation:
-[SES.Client.update_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_account_sending_enabled)
+[SES.Client.update_account_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_account_sending_enabled)
 
 Arguments:
 
@@ -1079,13 +1083,14 @@ Type annotations for
 `boto3.client("ses").update_configuration_set_event_destination` method.
 
 Boto3 documentation:
-[SES.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_event_destination)
+[SES.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_configuration_set_event_destination)
 
 Arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestination`:
-  [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef) *(required)*
+  [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1096,7 +1101,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[SES.Client.update_configuration_set_reputation_metrics_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled)
+[SES.Client.update_configuration_set_reputation_metrics_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled)
 
 Arguments:
 
@@ -1109,7 +1114,7 @@ Type annotations for
 `boto3.client("ses").update_configuration_set_sending_enabled` method.
 
 Boto3 documentation:
-[SES.Client.update_configuration_set_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled)
+[SES.Client.update_configuration_set_sending_enabled](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled)
 
 Arguments:
 
@@ -1122,7 +1127,7 @@ Type annotations for
 `boto3.client("ses").update_configuration_set_tracking_options` method.
 
 Boto3 documentation:
-[SES.Client.update_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options)
+[SES.Client.update_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options)
 
 Arguments:
 
@@ -1138,7 +1143,7 @@ Type annotations for
 `boto3.client("ses").update_custom_verification_email_template` method.
 
 Boto3 documentation:
-[SES.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template)
+[SES.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_custom_verification_email_template)
 
 Arguments:
 
@@ -1154,7 +1159,7 @@ Arguments:
 Type annotations for `boto3.client("ses").update_receipt_rule` method.
 
 Boto3 documentation:
-[SES.Client.update_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_receipt_rule)
+[SES.Client.update_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_receipt_rule)
 
 Arguments:
 
@@ -1168,7 +1173,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").update_template` method.
 
 Boto3 documentation:
-[SES.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_template)
+[SES.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.update_template)
 
 Arguments:
 
@@ -1181,7 +1186,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ses").verify_domain_dkim` method.
 
 Boto3 documentation:
-[SES.Client.verify_domain_dkim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_dkim)
+[SES.Client.verify_domain_dkim](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.verify_domain_dkim)
 
 Arguments:
 
@@ -1195,7 +1200,7 @@ Returns
 Type annotations for `boto3.client("ses").verify_domain_identity` method.
 
 Boto3 documentation:
-[SES.Client.verify_domain_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_identity)
+[SES.Client.verify_domain_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.verify_domain_identity)
 
 Arguments:
 
@@ -1209,7 +1214,7 @@ Returns
 Type annotations for `boto3.client("ses").verify_email_address` method.
 
 Boto3 documentation:
-[SES.Client.verify_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_address)
+[SES.Client.verify_email_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.verify_email_address)
 
 Arguments:
 
@@ -1220,7 +1225,7 @@ Arguments:
 Type annotations for `boto3.client("ses").verify_email_identity` method.
 
 Boto3 documentation:
-[SES.Client.verify_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_identity)
+[SES.Client.verify_email_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES.Client.verify_email_identity)
 
 Arguments:
 

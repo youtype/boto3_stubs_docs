@@ -3,7 +3,7 @@
 > [Index](..) > [IoTThingsGraph](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
 [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
@@ -96,7 +96,7 @@ from mypy_boto3_iotthingsgraph.type_defs import DefinitionDocumentTypeDef
 Required fields:
 
 - `language`: `Literal['GRAPHQL']` (see
-  [DefinitionLanguage](./literals.md#definitionlanguage))
+  [DefinitionLanguageType](./literals.md#definitionlanguagetype))
 - `text`: `str`
 
 ## DeleteNamespaceResponseTypeDef
@@ -160,7 +160,7 @@ Optional fields:
 
 - `id`: `str`
 - `arn`: `str`
-- `type`: [EntityType](./literals.md#entitytype)
+- `type`: [EntityTypeType](./literals.md#entitytypetype)
 - `createdAt`: `datetime`
 - `definition`:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
@@ -173,7 +173,7 @@ from mypy_boto3_iotthingsgraph.type_defs import EntityFilterTypeDef
 
 Optional fields:
 
-- `name`: [EntityFilterName](./literals.md#entityfiltername)
+- `name`: [EntityFilterNameType](./literals.md#entityfilternametype)
 - `value`: `List`\[`str`\]
 
 ## FlowExecutionMessageTypeDef
@@ -185,7 +185,8 @@ from mypy_boto3_iotthingsgraph.type_defs import FlowExecutionMessageTypeDef
 Optional fields:
 
 - `messageId`: `str`
-- `eventType`: [FlowExecutionEventType](./literals.md#flowexecutioneventtype)
+- `eventType`:
+  [FlowExecutionEventTypeType](./literals.md#flowexecutioneventtypetype)
 - `timestamp`: `datetime`
 - `payload`: `str`
 
@@ -198,7 +199,7 @@ from mypy_boto3_iotthingsgraph.type_defs import FlowExecutionSummaryTypeDef
 Optional fields:
 
 - `flowExecutionId`: `str`
-- `status`: [FlowExecutionStatus](./literals.md#flowexecutionstatus)
+- `status`: [FlowExecutionStatusType](./literals.md#flowexecutionstatustype)
 - `systemInstanceId`: `str`
 - `flowTemplateId`: `str`
 - `createdAt`: `datetime`
@@ -227,7 +228,7 @@ from mypy_boto3_iotthingsgraph.type_defs import FlowTemplateFilterTypeDef
 Required fields:
 
 - `name`: `Literal['DEVICE_MODEL_ID']` (see
-  [FlowTemplateFilterName](./literals.md#flowtemplatefiltername))
+  [FlowTemplateFilterNameType](./literals.md#flowtemplatefilternametype))
 - `value`: `List`\[`str`\]
 
 ## FlowTemplateSummaryTypeDef
@@ -287,9 +288,10 @@ Optional fields:
 
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
-- `status`: [NamespaceDeletionStatus](./literals.md#namespacedeletionstatus)
+- `status`:
+  [NamespaceDeletionStatusType](./literals.md#namespacedeletionstatustype)
 - `errorCode`: `Literal['VALIDATION_FAILED']` (see
-  [NamespaceDeletionStatusErrorCodes](./literals.md#namespacedeletionstatuserrorcodes))
+  [NamespaceDeletionStatusErrorCodesType](./literals.md#namespacedeletionstatuserrorcodestype))
 - `errorMessage`: `str`
 
 ## GetSystemInstanceResponseTypeDef
@@ -335,7 +337,7 @@ from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusResponseTypeDef
 Required fields:
 
 - `uploadId`: `str`
-- `uploadStatus`: [UploadStatus](./literals.md#uploadstatus)
+- `uploadStatus`: [UploadStatusType](./literals.md#uploadstatustype)
 - `createdDate`: `datetime`
 
 Optional fields:
@@ -490,7 +492,8 @@ from mypy_boto3_iotthingsgraph.type_defs import SystemInstanceFilterTypeDef
 
 Optional fields:
 
-- `name`: [SystemInstanceFilterName](./literals.md#systeminstancefiltername)
+- `name`:
+  [SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype)
 - `value`: `List`\[`str`\]
 
 ## SystemInstanceSummaryTypeDef
@@ -504,8 +507,8 @@ Optional fields:
 - `id`: `str`
 - `arn`: `str`
 - `status`:
-  [SystemInstanceDeploymentStatus](./literals.md#systeminstancedeploymentstatus)
-- `target`: [DeploymentTarget](./literals.md#deploymenttarget)
+  [SystemInstanceDeploymentStatusType](./literals.md#systeminstancedeploymentstatustype)
+- `target`: [DeploymentTargetType](./literals.md#deploymenttargettype)
 - `greengrassGroupName`: `str`
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
@@ -535,7 +538,7 @@ from mypy_boto3_iotthingsgraph.type_defs import SystemTemplateFilterTypeDef
 Required fields:
 
 - `name`: `Literal['FLOW_TEMPLATE_ID']` (see
-  [SystemTemplateFilterName](./literals.md#systemtemplatefiltername))
+  [SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype))
 - `value`: `List`\[`str`\]
 
 ## SystemTemplateSummaryTypeDef

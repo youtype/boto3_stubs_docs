@@ -3,7 +3,7 @@
 > [Index](..) > [WorkMailMessageFlow](.) > WorkMailMessageFlowClient
 
 Auto-generated documentation for
-[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module
 [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
@@ -30,7 +30,7 @@ def get_workmailmessageflow_client() -> WorkMailMessageFlowClient:
 ```
 
 Boto3 documentation:
-[WorkMailMessageFlow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client)
+[WorkMailMessageFlow.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client)
 
 ## Exceptions
 
@@ -59,7 +59,7 @@ Exceptions:
 Type annotations for `boto3.client("workmailmessageflow").can_paginate` method.
 
 Boto3 documentation:
-[WorkMailMessageFlow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.can_paginate)
+[WorkMailMessageFlow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.can_paginate)
 
 Arguments:
 
@@ -73,7 +73,7 @@ Type annotations for
 `boto3.client("workmailmessageflow").generate_presigned_url` method.
 
 Boto3 documentation:
-[WorkMailMessageFlow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.generate_presigned_url)
+[WorkMailMessageFlow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.generate_presigned_url)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Type annotations for
 `boto3.client("workmailmessageflow").get_raw_message_content` method.
 
 Boto3 documentation:
-[WorkMailMessageFlow.Client.get_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
+[WorkMailMessageFlow.Client.get_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
 
 Arguments:
 
@@ -105,12 +105,13 @@ Type annotations for
 `boto3.client("workmailmessageflow").put_raw_message_content` method.
 
 Boto3 documentation:
-[WorkMailMessageFlow.Client.put_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
+[WorkMailMessageFlow.Client.put_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
 
 Arguments:
 
 - `messageId`: `str` *(required)*
-- `content`: [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
+- `content`:
+  [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

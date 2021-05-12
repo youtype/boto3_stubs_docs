@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScalingPlans](.) > AutoScalingPlansClient
 
 Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
 [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
@@ -35,7 +35,7 @@ def get_autoscaling-plans_client() -> AutoScalingPlansClient:
 ```
 
 Boto3 documentation:
-[AutoScalingPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
+[AutoScalingPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 Type annotations for `boto3.client("autoscaling-plans").can_paginate` method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate)
+[AutoScalingPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate)
 
 Arguments:
 
@@ -80,7 +80,7 @@ Type annotations for `boto3.client("autoscaling-plans").create_scaling_plan`
 method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.create_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
+[AutoScalingPlans.Client.create_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Type annotations for `boto3.client("autoscaling-plans").delete_scaling_plan`
 method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.delete_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
+[AutoScalingPlans.Client.delete_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Type annotations for
 `boto3.client("autoscaling-plans").describe_scaling_plan_resources` method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.describe_scaling_plan_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
+[AutoScalingPlans.Client.describe_scaling_plan_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plans`
 method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.describe_scaling_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
+[AutoScalingPlans.Client.describe_scaling_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("autoscaling-plans").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url)
+[AutoScalingPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url)
 
 Arguments:
 
@@ -172,19 +172,19 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
+[AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
 
 Arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
-- `ForecastDataType`: [ForecastDataType](./literals.md#forecastdatatype)
-  *(required)*
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
+- `ForecastDataType`:
+  [ForecastDataTypeType](./literals.md#forecastdatatypetype) *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
 
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("autoscaling-plans").update_scaling_plan`
 method.
 
 Boto3 documentation:
-[AutoScalingPlans.Client.update_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
+[AutoScalingPlans.Client.update_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
 
 Arguments:
 

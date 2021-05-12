@@ -3,25 +3,25 @@
 > [Index](..) > [Connect](.) > Literals
 
 Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connect.html#Connect)
 type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Literals for boto3 Connect module](#literals-for-boto3-connect-module)
-  - [Channel](#channel)
-  - [Comparison](#comparison)
-  - [ContactFlowType](#contactflowtype)
-  - [CurrentMetricName](#currentmetricname)
-  - [DirectoryType](#directorytype)
-  - [EncryptionType](#encryptiontype)
+  - [ChannelType](#channeltype)
+  - [ComparisonType](#comparisontype)
+  - [ContactFlowTypeType](#contactflowtypetype)
+  - [CurrentMetricNameType](#currentmetricnametype)
+  - [DirectoryTypeType](#directorytypetype)
+  - [EncryptionTypeType](#encryptiontypetype)
   - [GetMetricDataPaginatorName](#getmetricdatapaginatorname)
-  - [Grouping](#grouping)
-  - [HistoricalMetricName](#historicalmetricname)
-  - [HoursOfOperationDays](#hoursofoperationdays)
-  - [InstanceAttributeType](#instanceattributetype)
-  - [InstanceStatus](#instancestatus)
-  - [InstanceStorageResourceType](#instancestorageresourcetype)
-  - [IntegrationType](#integrationtype)
+  - [GroupingType](#groupingtype)
+  - [HistoricalMetricNameType](#historicalmetricnametype)
+  - [HoursOfOperationDaysType](#hoursofoperationdaystype)
+  - [InstanceAttributeTypeType](#instanceattributetypetype)
+  - [InstanceStatusType](#instancestatustype)
+  - [InstanceStorageResourceTypeType](#instancestorageresourcetypetype)
+  - [IntegrationTypeType](#integrationtypetype)
   - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
   - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
@@ -43,24 +43,24 @@ type annotations stubs module
   - [ListUseCasesPaginatorName](#listusecasespaginatorname)
   - [ListUserHierarchyGroupsPaginatorName](#listuserhierarchygroupspaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [PhoneNumberCountryCode](#phonenumbercountrycode)
-  - [PhoneNumberType](#phonenumbertype)
-  - [PhoneType](#phonetype)
-  - [QueueStatus](#queuestatus)
-  - [QueueType](#queuetype)
-  - [QuickConnectType](#quickconnecttype)
-  - [ReferenceType](#referencetype)
-  - [SourceType](#sourcetype)
-  - [Statistic](#statistic)
-  - [StorageType](#storagetype)
-  - [Unit](#unit)
-  - [UseCaseType](#usecasetype)
-  - [VoiceRecordingTrack](#voicerecordingtrack)
+  - [PhoneNumberCountryCodeType](#phonenumbercountrycodetype)
+  - [PhoneNumberTypeType](#phonenumbertypetype)
+  - [PhoneTypeType](#phonetypetype)
+  - [QueueStatusType](#queuestatustype)
+  - [QueueTypeType](#queuetypetype)
+  - [QuickConnectTypeType](#quickconnecttypetype)
+  - [ReferenceTypeType](#referencetypetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [StatisticType](#statistictype)
+  - [StorageTypeType](#storagetypetype)
+  - [UnitType](#unittype)
+  - [UseCaseTypeType](#usecasetypetype)
+  - [VoiceRecordingTrackType](#voicerecordingtracktype)
 
-## Channel
+## ChannelType
 
 ```python
-from mypy_boto3_connect.literals import Channel
+from mypy_boto3_connect.literals import ChannelType
 ```
 
 Values:
@@ -69,20 +69,20 @@ Values:
 - `TASK`
 - `VOICE`
 
-## Comparison
+## ComparisonType
 
 ```python
-from mypy_boto3_connect.literals import Comparison
+from mypy_boto3_connect.literals import ComparisonType
 ```
 
 Values:
 
 - `LT`
 
-## ContactFlowType
+## ContactFlowTypeType
 
 ```python
-from mypy_boto3_connect.literals import ContactFlowType
+from mypy_boto3_connect.literals import ContactFlowTypeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `OUTBOUND_WHISPER`
 - `QUEUE_TRANSFER`
 
-## CurrentMetricName
+## CurrentMetricNameType
 
 ```python
-from mypy_boto3_connect.literals import CurrentMetricName
+from mypy_boto3_connect.literals import CurrentMetricNameType
 ```
 
 Values:
@@ -119,10 +119,10 @@ Values:
 - `SLOTS_ACTIVE`
 - `SLOTS_AVAILABLE`
 
-## DirectoryType
+## DirectoryTypeType
 
 ```python
-from mypy_boto3_connect.literals import DirectoryType
+from mypy_boto3_connect.literals import DirectoryTypeType
 ```
 
 Values:
@@ -131,10 +131,10 @@ Values:
 - `EXISTING_DIRECTORY`
 - `SAML`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_connect.literals import EncryptionType
+from mypy_boto3_connect.literals import EncryptionTypeType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 
 - `get_metric_data`
 
-## Grouping
+## GroupingType
 
 ```python
-from mypy_boto3_connect.literals import Grouping
+from mypy_boto3_connect.literals import GroupingType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `CHANNEL`
 - `QUEUE`
 
-## HistoricalMetricName
+## HistoricalMetricNameType
 
 ```python
-from mypy_boto3_connect.literals import HistoricalMetricName
+from mypy_boto3_connect.literals import HistoricalMetricNameType
 ```
 
 Values:
@@ -196,10 +196,10 @@ Values:
 - `QUEUED_TIME`
 - `SERVICE_LEVEL`
 
-## HoursOfOperationDays
+## HoursOfOperationDaysType
 
 ```python
-from mypy_boto3_connect.literals import HoursOfOperationDays
+from mypy_boto3_connect.literals import HoursOfOperationDaysType
 ```
 
 Values:
@@ -212,10 +212,10 @@ Values:
 - `TUESDAY`
 - `WEDNESDAY`
 
-## InstanceAttributeType
+## InstanceAttributeTypeType
 
 ```python
-from mypy_boto3_connect.literals import InstanceAttributeType
+from mypy_boto3_connect.literals import InstanceAttributeTypeType
 ```
 
 Values:
@@ -228,10 +228,10 @@ Values:
 - `OUTBOUND_CALLS`
 - `USE_CUSTOM_TTS_VOICES`
 
-## InstanceStatus
+## InstanceStatusType
 
 ```python
-from mypy_boto3_connect.literals import InstanceStatus
+from mypy_boto3_connect.literals import InstanceStatusType
 ```
 
 Values:
@@ -240,10 +240,10 @@ Values:
 - `CREATION_FAILED`
 - `CREATION_IN_PROGRESS`
 
-## InstanceStorageResourceType
+## InstanceStorageResourceTypeType
 
 ```python
-from mypy_boto3_connect.literals import InstanceStorageResourceType
+from mypy_boto3_connect.literals import InstanceStorageResourceTypeType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 - `MEDIA_STREAMS`
 - `SCHEDULED_REPORTS`
 
-## IntegrationType
+## IntegrationTypeType
 
 ```python
-from mypy_boto3_connect.literals import IntegrationType
+from mypy_boto3_connect.literals import IntegrationTypeType
 ```
 
 Values:
@@ -475,10 +475,10 @@ Values:
 
 - `list_users`
 
-## PhoneNumberCountryCode
+## PhoneNumberCountryCodeType
 
 ```python
-from mypy_boto3_connect.literals import PhoneNumberCountryCode
+from mypy_boto3_connect.literals import PhoneNumberCountryCodeType
 ```
 
 Values:
@@ -721,10 +721,10 @@ Values:
 - `ZM`
 - `ZW`
 
-## PhoneNumberType
+## PhoneNumberTypeType
 
 ```python
-from mypy_boto3_connect.literals import PhoneNumberType
+from mypy_boto3_connect.literals import PhoneNumberTypeType
 ```
 
 Values:
@@ -732,10 +732,10 @@ Values:
 - `DID`
 - `TOLL_FREE`
 
-## PhoneType
+## PhoneTypeType
 
 ```python
-from mypy_boto3_connect.literals import PhoneType
+from mypy_boto3_connect.literals import PhoneTypeType
 ```
 
 Values:
@@ -743,10 +743,10 @@ Values:
 - `DESK_PHONE`
 - `SOFT_PHONE`
 
-## QueueStatus
+## QueueStatusType
 
 ```python
-from mypy_boto3_connect.literals import QueueStatus
+from mypy_boto3_connect.literals import QueueStatusType
 ```
 
 Values:
@@ -754,10 +754,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## QueueType
+## QueueTypeType
 
 ```python
-from mypy_boto3_connect.literals import QueueType
+from mypy_boto3_connect.literals import QueueTypeType
 ```
 
 Values:
@@ -765,10 +765,10 @@ Values:
 - `AGENT`
 - `STANDARD`
 
-## QuickConnectType
+## QuickConnectTypeType
 
 ```python
-from mypy_boto3_connect.literals import QuickConnectType
+from mypy_boto3_connect.literals import QuickConnectTypeType
 ```
 
 Values:
@@ -777,20 +777,20 @@ Values:
 - `QUEUE`
 - `USER`
 
-## ReferenceType
+## ReferenceTypeType
 
 ```python
-from mypy_boto3_connect.literals import ReferenceType
+from mypy_boto3_connect.literals import ReferenceTypeType
 ```
 
 Values:
 
 - `URL`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_connect.literals import SourceType
+from mypy_boto3_connect.literals import SourceTypeType
 ```
 
 Values:
@@ -798,10 +798,10 @@ Values:
 - `SALESFORCE`
 - `ZENDESK`
 
-## Statistic
+## StatisticType
 
 ```python
-from mypy_boto3_connect.literals import Statistic
+from mypy_boto3_connect.literals import StatisticType
 ```
 
 Values:
@@ -810,10 +810,10 @@ Values:
 - `MAX`
 - `SUM`
 
-## StorageType
+## StorageTypeType
 
 ```python
-from mypy_boto3_connect.literals import StorageType
+from mypy_boto3_connect.literals import StorageTypeType
 ```
 
 Values:
@@ -823,10 +823,10 @@ Values:
 - `KINESIS_VIDEO_STREAM`
 - `S3`
 
-## Unit
+## UnitType
 
 ```python
-from mypy_boto3_connect.literals import Unit
+from mypy_boto3_connect.literals import UnitType
 ```
 
 Values:
@@ -835,20 +835,20 @@ Values:
 - `PERCENT`
 - `SECONDS`
 
-## UseCaseType
+## UseCaseTypeType
 
 ```python
-from mypy_boto3_connect.literals import UseCaseType
+from mypy_boto3_connect.literals import UseCaseTypeType
 ```
 
 Values:
 
 - `RULES_EVALUATION`
 
-## VoiceRecordingTrack
+## VoiceRecordingTrackType
 
 ```python
-from mypy_boto3_connect.literals import VoiceRecordingTrack
+from mypy_boto3_connect.literals import VoiceRecordingTrackType
 ```
 
 Values:

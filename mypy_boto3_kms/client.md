@@ -3,7 +3,7 @@
 > [Index](..) > [KMS](.) > KMSClient
 
 Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS)
 type annotations stubs module
 [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
@@ -75,7 +75,7 @@ def get_kms_client() -> KMSClient:
 ```
 
 Boto3 documentation:
-[KMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
+[KMS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client)
 
 ## Exceptions
 
@@ -133,7 +133,7 @@ Exceptions:
 Type annotations for `boto3.client("kms").can_paginate` method.
 
 Boto3 documentation:
-[KMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.can_paginate)
+[KMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.can_paginate)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Returns `bool`.
 Type annotations for `boto3.client("kms").cancel_key_deletion` method.
 
 Boto3 documentation:
-[KMS.Client.cancel_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion)
+[KMS.Client.cancel_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.cancel_key_deletion)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns
 Type annotations for `boto3.client("kms").connect_custom_key_store` method.
 
 Boto3 documentation:
-[KMS.Client.connect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store)
+[KMS.Client.connect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.connect_custom_key_store)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kms").create_alias` method.
 
 Boto3 documentation:
-[KMS.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias)
+[KMS.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.create_alias)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Arguments:
 Type annotations for `boto3.client("kms").create_custom_key_store` method.
 
 Boto3 documentation:
-[KMS.Client.create_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store)
+[KMS.Client.create_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.create_custom_key_store)
 
 Arguments:
 
@@ -202,14 +202,14 @@ Returns
 Type annotations for `boto3.client("kms").create_grant` method.
 
 Boto3 documentation:
-[KMS.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_grant)
+[KMS.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.create_grant)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
 - `GranteePrincipal`: `str` *(required)*
-- `Operations`: `List`\[[GrantOperation](./literals.md#grantoperation)\]
-  *(required)*
+- `Operations`:
+  `List`\[[GrantOperationType](./literals.md#grantoperationtype)\] *(required)*
 - `RetiringPrincipal`: `str`
 - `Constraints`:
   [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
@@ -224,16 +224,16 @@ Returns
 Type annotations for `boto3.client("kms").create_key` method.
 
 Boto3 documentation:
-[KMS.Client.create_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_key)
+[KMS.Client.create_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.create_key)
 
 Arguments:
 
 - `Policy`: `str`
 - `Description`: `str`
-- `KeyUsage`: [KeyUsageType](./literals.md#keyusagetype)
+- `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - `CustomerMasterKeySpec`:
-  [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
-- `Origin`: [OriginType](./literals.md#origintype)
+  [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- `Origin`: [OriginTypeType](./literals.md#origintypetype)
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -245,7 +245,7 @@ Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
 Type annotations for `boto3.client("kms").decrypt` method.
 
 Boto3 documentation:
-[KMS.Client.decrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.decrypt)
+[KMS.Client.decrypt](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.decrypt)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Arguments:
 - `GrantTokens`: `List`\[`str`\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
 Returns [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef).
 
@@ -263,7 +263,7 @@ Returns [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef).
 Type annotations for `boto3.client("kms").delete_alias` method.
 
 Boto3 documentation:
-[KMS.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias)
+[KMS.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.delete_alias)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Arguments:
 Type annotations for `boto3.client("kms").delete_custom_key_store` method.
 
 Boto3 documentation:
-[KMS.Client.delete_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store)
+[KMS.Client.delete_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.delete_custom_key_store)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kms").delete_imported_key_material` method.
 
 Boto3 documentation:
-[KMS.Client.delete_imported_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material)
+[KMS.Client.delete_imported_key_material](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.delete_imported_key_material)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Arguments:
 Type annotations for `boto3.client("kms").describe_custom_key_stores` method.
 
 Boto3 documentation:
-[KMS.Client.describe_custom_key_stores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_custom_key_stores)
+[KMS.Client.describe_custom_key_stores](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.describe_custom_key_stores)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("kms").describe_key` method.
 
 Boto3 documentation:
-[KMS.Client.describe_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key)
+[KMS.Client.describe_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.describe_key)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns
 Type annotations for `boto3.client("kms").disable_key` method.
 
 Boto3 documentation:
-[KMS.Client.disable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key)
+[KMS.Client.disable_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.disable_key)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Arguments:
 Type annotations for `boto3.client("kms").disable_key_rotation` method.
 
 Boto3 documentation:
-[KMS.Client.disable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation)
+[KMS.Client.disable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.disable_key_rotation)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Arguments:
 Type annotations for `boto3.client("kms").disconnect_custom_key_store` method.
 
 Boto3 documentation:
-[KMS.Client.disconnect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store)
+[KMS.Client.disconnect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.disconnect_custom_key_store)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kms").enable_key` method.
 
 Boto3 documentation:
-[KMS.Client.enable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key)
+[KMS.Client.enable_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.enable_key)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Arguments:
 Type annotations for `boto3.client("kms").enable_key_rotation` method.
 
 Boto3 documentation:
-[KMS.Client.enable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation)
+[KMS.Client.enable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.enable_key_rotation)
 
 Arguments:
 
@@ -387,7 +387,7 @@ Arguments:
 Type annotations for `boto3.client("kms").encrypt` method.
 
 Boto3 documentation:
-[KMS.Client.encrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt)
+[KMS.Client.encrypt](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.encrypt)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Arguments:
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
 Returns [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef).
 
@@ -405,14 +405,14 @@ Returns [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef).
 Type annotations for `boto3.client("kms").generate_data_key` method.
 
 Boto3 documentation:
-[KMS.Client.generate_data_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key)
+[KMS.Client.generate_data_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.generate_data_key)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `NumberOfBytes`: `int`
-- `KeySpec`: [DataKeySpec](./literals.md#datakeyspec)
+- `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
@@ -423,12 +423,13 @@ Returns
 Type annotations for `boto3.client("kms").generate_data_key_pair` method.
 
 Boto3 documentation:
-[KMS.Client.generate_data_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair)
+[KMS.Client.generate_data_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.generate_data_key_pair)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec) *(required)*
+- `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
+  *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 
@@ -441,12 +442,13 @@ Type annotations for
 `boto3.client("kms").generate_data_key_pair_without_plaintext` method.
 
 Boto3 documentation:
-[KMS.Client.generate_data_key_pair_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext)
+[KMS.Client.generate_data_key_pair_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec) *(required)*
+- `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
+  *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 
@@ -459,13 +461,13 @@ Type annotations for `boto3.client("kms").generate_data_key_without_plaintext`
 method.
 
 Boto3 documentation:
-[KMS.Client.generate_data_key_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext)
+[KMS.Client.generate_data_key_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `KeySpec`: [DataKeySpec](./literals.md#datakeyspec)
+- `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
 - `NumberOfBytes`: `int`
 - `GrantTokens`: `List`\[`str`\]
 
@@ -477,7 +479,7 @@ Returns
 Type annotations for `boto3.client("kms").generate_presigned_url` method.
 
 Boto3 documentation:
-[KMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_presigned_url)
+[KMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -493,7 +495,7 @@ Returns `str`.
 Type annotations for `boto3.client("kms").generate_random` method.
 
 Boto3 documentation:
-[KMS.Client.generate_random](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random)
+[KMS.Client.generate_random](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.generate_random)
 
 Arguments:
 
@@ -508,7 +510,7 @@ Returns
 Type annotations for `boto3.client("kms").get_key_policy` method.
 
 Boto3 documentation:
-[KMS.Client.get_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy)
+[KMS.Client.get_key_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.get_key_policy)
 
 Arguments:
 
@@ -523,7 +525,7 @@ Returns
 Type annotations for `boto3.client("kms").get_key_rotation_status` method.
 
 Boto3 documentation:
-[KMS.Client.get_key_rotation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status)
+[KMS.Client.get_key_rotation_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.get_key_rotation_status)
 
 Arguments:
 
@@ -537,14 +539,15 @@ Returns
 Type annotations for `boto3.client("kms").get_parameters_for_import` method.
 
 Boto3 documentation:
-[KMS.Client.get_parameters_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_parameters_for_import)
+[KMS.Client.get_parameters_for_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.get_parameters_for_import)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `WrappingAlgorithm`: [AlgorithmSpec](./literals.md#algorithmspec) *(required)*
+- `WrappingAlgorithm`: [AlgorithmSpecType](./literals.md#algorithmspectype)
+  *(required)*
 - `WrappingKeySpec`: `Literal['RSA_2048']` (see
-  [WrappingKeySpec](./literals.md#wrappingkeyspec)) *(required)*
+  [WrappingKeySpecType](./literals.md#wrappingkeyspectype)) *(required)*
 
 Returns
 [GetParametersForImportResponseTypeDef](./type_defs.md#getparametersforimportresponsetypedef).
@@ -554,7 +557,7 @@ Returns
 Type annotations for `boto3.client("kms").get_public_key` method.
 
 Boto3 documentation:
-[KMS.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key)
+[KMS.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.get_public_key)
 
 Arguments:
 
@@ -569,7 +572,7 @@ Returns
 Type annotations for `boto3.client("kms").import_key_material` method.
 
 Boto3 documentation:
-[KMS.Client.import_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.import_key_material)
+[KMS.Client.import_key_material](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.import_key_material)
 
 Arguments:
 
@@ -577,7 +580,8 @@ Arguments:
 - `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `EncryptedKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `ValidTo`: `datetime`
-- `ExpirationModel`: [ExpirationModelType](./literals.md#expirationmodeltype)
+- `ExpirationModel`:
+  [ExpirationModelTypeType](./literals.md#expirationmodeltypetype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -586,7 +590,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kms").list_aliases` method.
 
 Boto3 documentation:
-[KMS.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_aliases)
+[KMS.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.list_aliases)
 
 Arguments:
 
@@ -602,7 +606,7 @@ Returns
 Type annotations for `boto3.client("kms").list_grants` method.
 
 Boto3 documentation:
-[KMS.Client.list_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_grants)
+[KMS.Client.list_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.list_grants)
 
 Arguments:
 
@@ -619,7 +623,7 @@ Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 Type annotations for `boto3.client("kms").list_key_policies` method.
 
 Boto3 documentation:
-[KMS.Client.list_key_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_key_policies)
+[KMS.Client.list_key_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.list_key_policies)
 
 Arguments:
 
@@ -635,7 +639,7 @@ Returns
 Type annotations for `boto3.client("kms").list_keys` method.
 
 Boto3 documentation:
-[KMS.Client.list_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys)
+[KMS.Client.list_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.list_keys)
 
 Arguments:
 
@@ -649,7 +653,7 @@ Returns [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef).
 Type annotations for `boto3.client("kms").list_resource_tags` method.
 
 Boto3 documentation:
-[KMS.Client.list_resource_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_resource_tags)
+[KMS.Client.list_resource_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.list_resource_tags)
 
 Arguments:
 
@@ -665,7 +669,7 @@ Returns
 Type annotations for `boto3.client("kms").list_retirable_grants` method.
 
 Boto3 documentation:
-[KMS.Client.list_retirable_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_retirable_grants)
+[KMS.Client.list_retirable_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.list_retirable_grants)
 
 Arguments:
 
@@ -680,7 +684,7 @@ Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 Type annotations for `boto3.client("kms").put_key_policy` method.
 
 Boto3 documentation:
-[KMS.Client.put_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.put_key_policy)
+[KMS.Client.put_key_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.put_key_policy)
 
 Arguments:
 
@@ -694,7 +698,7 @@ Arguments:
 Type annotations for `boto3.client("kms").re_encrypt` method.
 
 Boto3 documentation:
-[KMS.Client.re_encrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.re_encrypt)
+[KMS.Client.re_encrypt](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.re_encrypt)
 
 Arguments:
 
@@ -704,9 +708,9 @@ Arguments:
 - `SourceKeyId`: `str`
 - `DestinationEncryptionContext`: `Dict`\[`str`, `str`\]
 - `SourceEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `DestinationEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `GrantTokens`: `List`\[`str`\]
 
 Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
@@ -716,7 +720,7 @@ Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 Type annotations for `boto3.client("kms").retire_grant` method.
 
 Boto3 documentation:
-[KMS.Client.retire_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.retire_grant)
+[KMS.Client.retire_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.retire_grant)
 
 Arguments:
 
@@ -729,7 +733,7 @@ Arguments:
 Type annotations for `boto3.client("kms").revoke_grant` method.
 
 Boto3 documentation:
-[KMS.Client.revoke_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant)
+[KMS.Client.revoke_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.revoke_grant)
 
 Arguments:
 
@@ -741,7 +745,7 @@ Arguments:
 Type annotations for `boto3.client("kms").schedule_key_deletion` method.
 
 Boto3 documentation:
-[KMS.Client.schedule_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion)
+[KMS.Client.schedule_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.schedule_key_deletion)
 
 Arguments:
 
@@ -756,15 +760,16 @@ Returns
 Type annotations for `boto3.client("kms").sign` method.
 
 Boto3 documentation:
-[KMS.Client.sign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.sign)
+[KMS.Client.sign](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.sign)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
 - `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
+- `SigningAlgorithm`:
+  [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
   *(required)*
-- `MessageType`: [MessageType](./literals.md#messagetype)
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `GrantTokens`: `List`\[`str`\]
 
 Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
@@ -774,7 +779,7 @@ Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 Type annotations for `boto3.client("kms").tag_resource` method.
 
 Boto3 documentation:
-[KMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource)
+[KMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.tag_resource)
 
 Arguments:
 
@@ -786,7 +791,7 @@ Arguments:
 Type annotations for `boto3.client("kms").untag_resource` method.
 
 Boto3 documentation:
-[KMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource)
+[KMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.untag_resource)
 
 Arguments:
 
@@ -798,7 +803,7 @@ Arguments:
 Type annotations for `boto3.client("kms").update_alias` method.
 
 Boto3 documentation:
-[KMS.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias)
+[KMS.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.update_alias)
 
 Arguments:
 
@@ -810,7 +815,7 @@ Arguments:
 Type annotations for `boto3.client("kms").update_custom_key_store` method.
 
 Boto3 documentation:
-[KMS.Client.update_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_custom_key_store)
+[KMS.Client.update_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.update_custom_key_store)
 
 Arguments:
 
@@ -826,7 +831,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kms").update_key_description` method.
 
 Boto3 documentation:
-[KMS.Client.update_key_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description)
+[KMS.Client.update_key_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.update_key_description)
 
 Arguments:
 
@@ -838,16 +843,17 @@ Arguments:
 Type annotations for `boto3.client("kms").verify` method.
 
 Boto3 documentation:
-[KMS.Client.verify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.verify)
+[KMS.Client.verify](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS.Client.verify)
 
 Arguments:
 
 - `KeyId`: `str` *(required)*
 - `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
+- `SigningAlgorithm`:
+  [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
   *(required)*
-- `MessageType`: [MessageType](./literals.md#messagetype)
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `GrantTokens`: `List`\[`str`\]
 
 Returns [VerifyResponseTypeDef](./type_defs.md#verifyresponsetypedef).

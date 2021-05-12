@@ -3,7 +3,7 @@
 > [Index](..) > FMS
 
 Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS)
 type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
@@ -29,49 +29,49 @@ Can be used directly:
 from mypy_boto3_fms.client import FMSClient
 ```
 
-FMSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_admin_account](./client.md#associate-admin-account)
-- [can_paginate](./client.md#can-paginate)
-- [delete_apps_list](./client.md#delete-apps-list)
-- [delete_notification_channel](./client.md#delete-notification-channel)
-- [delete_policy](./client.md#delete-policy)
-- [delete_protocols_list](./client.md#delete-protocols-list)
-- [disassociate_admin_account](./client.md#disassociate-admin-account)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_admin_account](./client.md#get-admin-account)
-- [get_apps_list](./client.md#get-apps-list)
-- [get_compliance_detail](./client.md#get-compliance-detail)
-- [get_notification_channel](./client.md#get-notification-channel)
-- [get_paginator](./client.md#get-paginator)
-- [get_policy](./client.md#get-policy)
-- [get_protection_status](./client.md#get-protection-status)
-- [get_protocols_list](./client.md#get-protocols-list)
-- [get_violation_details](./client.md#get-violation-details)
-- [list_apps_lists](./client.md#list-apps-lists)
-- [list_compliance_status](./client.md#list-compliance-status)
-- [list_member_accounts](./client.md#list-member-accounts)
-- [list_policies](./client.md#list-policies)
-- [list_protocols_lists](./client.md#list-protocols-lists)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_apps_list](./client.md#put-apps-list)
-- [put_notification_channel](./client.md#put-notification-channel)
-- [put_policy](./client.md#put-policy)
-- [put_protocols_list](./client.md#put-protocols-list)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [associate_admin_account](./client.md#associate_admin_account)
+- [can_paginate](./client.md#can_paginate)
+- [delete_apps_list](./client.md#delete_apps_list)
+- [delete_notification_channel](./client.md#delete_notification_channel)
+- [delete_policy](./client.md#delete_policy)
+- [delete_protocols_list](./client.md#delete_protocols_list)
+- [disassociate_admin_account](./client.md#disassociate_admin_account)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_admin_account](./client.md#get_admin_account)
+- [get_apps_list](./client.md#get_apps_list)
+- [get_compliance_detail](./client.md#get_compliance_detail)
+- [get_notification_channel](./client.md#get_notification_channel)
+- [get_paginator](./client.md#get_paginator)
+- [get_policy](./client.md#get_policy)
+- [get_protection_status](./client.md#get_protection_status)
+- [get_protocols_list](./client.md#get_protocols_list)
+- [get_violation_details](./client.md#get_violation_details)
+- [list_apps_lists](./client.md#list_apps_lists)
+- [list_compliance_status](./client.md#list_compliance_status)
+- [list_member_accounts](./client.md#list_member_accounts)
+- [list_policies](./client.md#list_policies)
+- [list_protocols_lists](./client.md#list_protocols_lists)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_apps_list](./client.md#put_apps_list)
+- [put_notification_channel](./client.md#put_notification_channel)
+- [put_policy](./client.md#put_policy)
+- [put_protocols_list](./client.md#put_protocols_list)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [InvalidOperationException](./client.md#invalidoperationexception)
-- [InvalidTypeException](./client.md#invalidtypeexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+FMSClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalErrorException
+- InvalidInputException
+- InvalidOperationException
+- InvalidTypeException
+- LimitExceededException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -95,19 +95,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_fms.literals import AccountRoleStatus, ...
+from mypy_boto3_fms.literals import AccountRoleStatusType, ...
 ```
 
-- [AccountRoleStatus](./literals.md#accountrolestatus)
-- [CustomerPolicyScopeIdType](./literals.md#customerpolicyscopeidtype)
-- [DependentServiceName](./literals.md#dependentservicename)
+- [AccountRoleStatusType](./literals.md#accountrolestatustype)
+- [CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype)
+- [DependentServiceNameType](./literals.md#dependentservicenametype)
 - [ListComplianceStatusPaginatorName](./literals.md#listcompliancestatuspaginatorname)
 - [ListMemberAccountsPaginatorName](./literals.md#listmemberaccountspaginatorname)
 - [ListPoliciesPaginatorName](./literals.md#listpoliciespaginatorname)
-- [PolicyComplianceStatusType](./literals.md#policycompliancestatustype)
-- [RemediationActionType](./literals.md#remediationactiontype)
-- [SecurityServiceType](./literals.md#securityservicetype)
-- [ViolationReason](./literals.md#violationreason)
+- [PolicyComplianceStatusTypeType](./literals.md#policycompliancestatustypetype)
+- [RemediationActionTypeType](./literals.md#remediationactiontypetype)
+- [SecurityServiceTypeType](./literals.md#securityservicetypetype)
+- [ViolationReasonType](./literals.md#violationreasontype)
 
 ## Typed dictionaries
 

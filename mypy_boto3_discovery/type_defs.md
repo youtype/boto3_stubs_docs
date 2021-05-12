@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationDiscoveryService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
 [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
@@ -72,7 +72,7 @@ Optional fields:
   `List`\[[AgentNetworkInfoTypeDef](./type_defs.md#agentnetworkinfotypedef)\]
 - `connectorId`: `str`
 - `version`: `str`
-- `health`: [AgentStatus](./literals.md#agentstatus)
+- `health`: [AgentStatusType](./literals.md#agentstatustype)
 - `lastHealthPingTime`: `str`
 - `collectionStatus`: `str`
 - `agentType`: `str`
@@ -99,7 +99,7 @@ Optional fields:
 
 - `importTaskId`: `str`
 - `errorCode`:
-  [BatchDeleteImportDataErrorCode](./literals.md#batchdeleteimportdataerrorcode)
+  [BatchDeleteImportDataErrorCodeType](./literals.md#batchdeleteimportdataerrorcodetype)
 - `errorDescription`: `str`
 
 ## BatchDeleteImportDataResponseTypeDef
@@ -122,7 +122,7 @@ from mypy_boto3_discovery.type_defs import ConfigurationTagTypeDef
 Optional fields:
 
 - `configurationType`:
-  [ConfigurationItemType](./literals.md#configurationitemtype)
+  [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
 - `configurationId`: `str`
 - `key`: `str`
 - `value`: `str`
@@ -137,12 +137,14 @@ from mypy_boto3_discovery.type_defs import ContinuousExportDescriptionTypeDef
 Optional fields:
 
 - `exportId`: `str`
-- `status`: [ContinuousExportStatus](./literals.md#continuousexportstatus)
+- `status`:
+  [ContinuousExportStatusType](./literals.md#continuousexportstatustype)
 - `statusDetail`: `str`
 - `s3Bucket`: `str`
 - `startTime`: `datetime`
 - `stopTime`: `datetime`
-- `dataSource`: `Literal['AGENT']` (see [DataSource](./literals.md#datasource))
+- `dataSource`: `Literal['AGENT']` (see
+  [DataSourceType](./literals.md#datasourcetype))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
 
 ## CreateApplicationResponseTypeDef
@@ -228,7 +230,8 @@ from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsResponseT
 
 Optional fields:
 
-- `exportsInfo`: `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
+- `exportsInfo`:
+  `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
 - `nextToken`: `str`
 
 ## DescribeExportTasksResponseTypeDef
@@ -239,7 +242,8 @@ from mypy_boto3_discovery.type_defs import DescribeExportTasksResponseTypeDef
 
 Optional fields:
 
-- `exportsInfo`: `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
+- `exportsInfo`:
+  `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
 - `nextToken`: `str`
 
 ## DescribeImportTasksResponseTypeDef
@@ -296,7 +300,7 @@ from mypy_boto3_discovery.type_defs import ExportInfoTypeDef
 Required fields:
 
 - `exportId`: `str`
-- `exportStatus`: [ExportStatus](./literals.md#exportstatus)
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `statusMessage`: `str`
 - `exportRequestTime`: `datetime`
 
@@ -344,7 +348,7 @@ from mypy_boto3_discovery.type_defs import ImportTaskFilterTypeDef
 
 Optional fields:
 
-- `name`: [ImportTaskFilterName](./literals.md#importtaskfiltername)
+- `name`: [ImportTaskFilterNameType](./literals.md#importtaskfilternametype)
 - `values`: `List`\[`str`\]
 
 ## ImportTaskTypeDef
@@ -359,7 +363,7 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `name`: `str`
 - `importUrl`: `str`
-- `status`: [ImportStatus](./literals.md#importstatus)
+- `status`: [ImportStatusType](./literals.md#importstatustype)
 - `importRequestTime`: `datetime`
 - `importCompletionTime`: `datetime`
 - `importDeletedTime`: `datetime`
@@ -425,7 +429,7 @@ Required fields:
 
 Optional fields:
 
-- `sortOrder`: [orderString](./literals.md#orderstring)
+- `sortOrder`: [orderStringType](./literals.md#orderstringtype)
 
 ## PaginatorConfigTypeDef
 
@@ -450,7 +454,8 @@ Optional fields:
 - `exportId`: `str`
 - `s3Bucket`: `str`
 - `startTime`: `datetime`
-- `dataSource`: `Literal['AGENT']` (see [DataSource](./literals.md#datasource))
+- `dataSource`: `Literal['AGENT']` (see
+  [DataSourceType](./literals.md#datasourcetype))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
 
 ## StartDataCollectionByAgentIdsResponseTypeDef

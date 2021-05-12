@@ -3,7 +3,7 @@
 > [Index](..) > SimpleDB
 
 Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
 [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
@@ -29,44 +29,44 @@ Can be used directly:
 from mypy_boto3_sdb.client import SimpleDBClient
 ```
 
-SimpleDBClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_delete_attributes](./client.md#batch-delete-attributes)
-- [batch_put_attributes](./client.md#batch-put-attributes)
-- [can_paginate](./client.md#can-paginate)
-- [create_domain](./client.md#create-domain)
-- [delete_attributes](./client.md#delete-attributes)
-- [delete_domain](./client.md#delete-domain)
-- [domain_metadata](./client.md#domain-metadata)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_attributes](./client.md#get-attributes)
-- [get_paginator](./client.md#get-paginator)
-- [list_domains](./client.md#list-domains)
-- [put_attributes](./client.md#put-attributes)
+- [batch_delete_attributes](./client.md#batch_delete_attributes)
+- [batch_put_attributes](./client.md#batch_put_attributes)
+- [can_paginate](./client.md#can_paginate)
+- [create_domain](./client.md#create_domain)
+- [delete_attributes](./client.md#delete_attributes)
+- [delete_domain](./client.md#delete_domain)
+- [domain_metadata](./client.md#domain_metadata)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_attributes](./client.md#get_attributes)
+- [get_paginator](./client.md#get_paginator)
+- [list_domains](./client.md#list_domains)
+- [put_attributes](./client.md#put_attributes)
 - [select](./client.md#select)
 
 ### Exceptions
 
-- [AttributeDoesNotExist](./client.md#attributedoesnotexist)
-- [ClientError](./client.md#clienterror)
-- [DuplicateItemName](./client.md#duplicateitemname)
-- [InvalidNextToken](./client.md#invalidnexttoken)
-- [InvalidNumberPredicates](./client.md#invalidnumberpredicates)
-- [InvalidNumberValueTests](./client.md#invalidnumbervaluetests)
-- [InvalidParameterValue](./client.md#invalidparametervalue)
-- [InvalidQueryExpression](./client.md#invalidqueryexpression)
-- [MissingParameter](./client.md#missingparameter)
-- [NoSuchDomain](./client.md#nosuchdomain)
-- [NumberDomainAttributesExceeded](./client.md#numberdomainattributesexceeded)
-- [NumberDomainBytesExceeded](./client.md#numberdomainbytesexceeded)
-- [NumberDomainsExceeded](./client.md#numberdomainsexceeded)
-- [NumberItemAttributesExceeded](./client.md#numberitemattributesexceeded)
-- [NumberSubmittedAttributesExceeded](./client.md#numbersubmittedattributesexceeded)
-- [NumberSubmittedItemsExceeded](./client.md#numbersubmitteditemsexceeded)
-- [RequestTimeout](./client.md#requesttimeout)
-- [TooManyRequestedAttributes](./client.md#toomanyrequestedattributes)
+SimpleDBClient [exceptions](./client.md#exceptions)
+
+- AttributeDoesNotExist
+- ClientError
+- DuplicateItemName
+- InvalidNextToken
+- InvalidNumberPredicates
+- InvalidNumberValueTests
+- InvalidParameterValue
+- InvalidQueryExpression
+- MissingParameter
+- NoSuchDomain
+- NumberDomainAttributesExceeded
+- NumberDomainBytesExceeded
+- NumberDomainsExceeded
+- NumberItemAttributesExceeded
+- NumberSubmittedAttributesExceeded
+- NumberSubmittedItemsExceeded
+- RequestTimeout
+- TooManyRequestedAttributes
 
 ## Paginators
 

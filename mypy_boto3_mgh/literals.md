@@ -3,24 +3,24 @@
 > [Index](..) > [MigrationHub](.) > Literals
 
 Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
 [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [Literals for boto3 MigrationHub module](#literals-for-boto3-migrationhub-module)
-  - [ApplicationStatus](#applicationstatus)
+  - [ApplicationStatusType](#applicationstatustype)
   - [ListApplicationStatesPaginatorName](#listapplicationstatespaginatorname)
   - [ListCreatedArtifactsPaginatorName](#listcreatedartifactspaginatorname)
   - [ListDiscoveredResourcesPaginatorName](#listdiscoveredresourcespaginatorname)
   - [ListMigrationTasksPaginatorName](#listmigrationtaskspaginatorname)
   - [ListProgressUpdateStreamsPaginatorName](#listprogressupdatestreamspaginatorname)
-  - [ResourceAttributeType](#resourceattributetype)
-  - [Status](#status)
+  - [ResourceAttributeTypeType](#resourceattributetypetype)
+  - [StatusType](#statustype)
 
-## ApplicationStatus
+## ApplicationStatusType
 
 ```python
-from mypy_boto3_mgh.literals import ApplicationStatus
+from mypy_boto3_mgh.literals import ApplicationStatusType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 
 - `list_progress_update_streams`
 
-## ResourceAttributeType
+## ResourceAttributeTypeType
 
 ```python
-from mypy_boto3_mgh.literals import ResourceAttributeType
+from mypy_boto3_mgh.literals import ResourceAttributeTypeType
 ```
 
 Values:
@@ -98,10 +98,10 @@ Values:
 - `VM_NAME`
 - `VM_PATH`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_mgh.literals import Status
+from mypy_boto3_mgh.literals import StatusType
 ```
 
 Values:

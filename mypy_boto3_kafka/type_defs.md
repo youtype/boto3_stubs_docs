@@ -3,7 +3,7 @@
 > [Index](..) > [Kafka](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kafka.html#Kafka)
 type annotations stubs module
 [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
@@ -123,7 +123,8 @@ from mypy_boto3_kafka.type_defs import BrokerLogsTypeDef
 
 Optional fields:
 
-- `CloudWatchLogs`: [CloudWatchLogsTypeDef](./type_defs.md#cloudwatchlogstypedef)
+- `CloudWatchLogs`:
+  [CloudWatchLogsTypeDef](./type_defs.md#cloudwatchlogstypedef)
 - `Firehose`: [FirehoseTypeDef](./type_defs.md#firehosetypedef)
 - `S3`: [S3TypeDef](./type_defs.md#s3typedef)
 
@@ -141,7 +142,7 @@ Required fields:
 Optional fields:
 
 - `BrokerAZDistribution`: `Literal['DEFAULT']` (see
-  [BrokerAZDistribution](./literals.md#brokerazdistribution))
+  [BrokerAZDistributionType](./literals.md#brokerazdistributiontype))
 - `SecurityGroups`: `List`\[`str`\]
 - `StorageInfo`: [StorageInfoTypeDef](./type_defs.md#storageinfotypedef)
 
@@ -217,12 +218,15 @@ Optional fields:
 - `CurrentBrokerSoftwareInfo`:
   [BrokerSoftwareInfoTypeDef](./type_defs.md#brokersoftwareinfotypedef)
 - `CurrentVersion`: `str`
-- `EncryptionInfo`: [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
-- `EnhancedMonitoring`: [EnhancedMonitoring](./literals.md#enhancedmonitoring)
-- `OpenMonitoring`: [OpenMonitoringTypeDef](./type_defs.md#openmonitoringtypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+- `EnhancedMonitoring`:
+  [EnhancedMonitoringType](./literals.md#enhancedmonitoringtype)
+- `OpenMonitoring`:
+  [OpenMonitoringTypeDef](./type_defs.md#openmonitoringtypedef)
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `NumberOfBrokerNodes`: `int`
-- `State`: [ClusterState](./literals.md#clusterstate)
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
 - `StateInfo`: [StateInfoTypeDef](./type_defs.md#stateinfotypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ZookeeperConnectString`: `str`
@@ -325,7 +329,7 @@ Required fields:
 - `LatestRevision`:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
 - `Name`: `str`
-- `State`: [ConfigurationState](./literals.md#configurationstate)
+- `State`: [ConfigurationStateType](./literals.md#configurationstatetype)
 
 ## CreateClusterResponseTypeDef
 
@@ -337,7 +341,7 @@ Optional fields:
 
 - `ClusterArn`: `str`
 - `ClusterName`: `str`
-- `State`: [ClusterState](./literals.md#clusterstate)
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
 
 ## CreateConfigurationResponseTypeDef
 
@@ -352,7 +356,7 @@ Optional fields:
 - `LatestRevision`:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
 - `Name`: `str`
-- `State`: [ConfigurationState](./literals.md#configurationstate)
+- `State`: [ConfigurationStateType](./literals.md#configurationstatetype)
 
 ## DeleteClusterResponseTypeDef
 
@@ -363,7 +367,7 @@ from mypy_boto3_kafka.type_defs import DeleteClusterResponseTypeDef
 Optional fields:
 
 - `ClusterArn`: `str`
-- `State`: [ClusterState](./literals.md#clusterstate)
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
 
 ## DeleteConfigurationResponseTypeDef
 
@@ -374,7 +378,7 @@ from mypy_boto3_kafka.type_defs import DeleteConfigurationResponseTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `State`: [ConfigurationState](./literals.md#configurationstate)
+- `State`: [ConfigurationStateType](./literals.md#configurationstatetype)
 
 ## DescribeClusterOperationResponseTypeDef
 
@@ -412,7 +416,7 @@ Optional fields:
 - `LatestRevision`:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
 - `Name`: `str`
-- `State`: [ConfigurationState](./literals.md#configurationstate)
+- `State`: [ConfigurationStateType](./literals.md#configurationstatetype)
 
 ## DescribeConfigurationRevisionResponseTypeDef
 
@@ -456,7 +460,7 @@ from mypy_boto3_kafka.type_defs import EncryptionInTransitTypeDef
 
 Optional fields:
 
-- `ClientBroker`: [ClientBroker](./literals.md#clientbroker)
+- `ClientBroker`: [ClientBrokerType](./literals.md#clientbrokertype)
 - `InCluster`: `bool`
 
 ## EncryptionInfoTypeDef
@@ -560,7 +564,7 @@ from mypy_boto3_kafka.type_defs import KafkaVersionTypeDef
 Optional fields:
 
 - `Version`: `str`
-- `Status`: [KafkaVersionStatus](./literals.md#kafkaversionstatus)
+- `Status`: [KafkaVersionStatusType](./literals.md#kafkaversionstatustype)
 
 ## ListClusterOperationsResponseTypeDef
 
@@ -677,8 +681,10 @@ Optional fields:
 - `ConfigurationInfo`:
   [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
 - `NumberOfBrokerNodes`: `int`
-- `EnhancedMonitoring`: [EnhancedMonitoring](./literals.md#enhancedmonitoring)
-- `OpenMonitoring`: [OpenMonitoringTypeDef](./type_defs.md#openmonitoringtypedef)
+- `EnhancedMonitoring`:
+  [EnhancedMonitoringType](./literals.md#enhancedmonitoringtype)
+- `OpenMonitoring`:
+  [OpenMonitoringTypeDef](./type_defs.md#openmonitoringtypedef)
 - `KafkaVersion`: `str`
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `InstanceType`: `str`
@@ -712,10 +718,12 @@ from mypy_boto3_kafka.type_defs import NodeInfoTypeDef
 Optional fields:
 
 - `AddedToClusterTime`: `str`
-- `BrokerNodeInfo`: [BrokerNodeInfoTypeDef](./type_defs.md#brokernodeinfotypedef)
+- `BrokerNodeInfo`:
+  [BrokerNodeInfoTypeDef](./type_defs.md#brokernodeinfotypedef)
 - `InstanceType`: `str`
 - `NodeARN`: `str`
-- `NodeType`: `Literal['BROKER']` (see [NodeType](./literals.md#nodetype))
+- `NodeType`: `Literal['BROKER']` (see
+  [NodeTypeType](./literals.md#nodetypetype))
 - `ZookeeperNodeInfo`:
   [ZookeeperNodeInfoTypeDef](./type_defs.md#zookeepernodeinfotypedef)
 
@@ -759,7 +767,8 @@ from mypy_boto3_kafka.type_defs import PrometheusInfoTypeDef
 
 Optional fields:
 
-- `JmxExporter`: [JmxExporterInfoTypeDef](./type_defs.md#jmxexporterinfotypedef)
+- `JmxExporter`:
+  [JmxExporterInfoTypeDef](./type_defs.md#jmxexporterinfotypedef)
 - `NodeExporter`:
   [NodeExporterInfoTypeDef](./type_defs.md#nodeexporterinfotypedef)
 
@@ -840,7 +849,8 @@ from mypy_boto3_kafka.type_defs import StorageInfoTypeDef
 
 Optional fields:
 
-- `EbsStorageInfo`: [EBSStorageInfoTypeDef](./type_defs.md#ebsstorageinfotypedef)
+- `EbsStorageInfo`:
+  [EBSStorageInfoTypeDef](./type_defs.md#ebsstorageinfotypedef)
 
 ## TlsTypeDef
 

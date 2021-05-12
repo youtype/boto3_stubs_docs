@@ -3,7 +3,7 @@
 > [Index](..) > IoTFleetHub
 
 Auto-generated documentation for
-[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
+[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
 [mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
@@ -30,31 +30,31 @@ Can be used directly:
 from mypy_boto3_iotfleethub.client import IoTFleetHubClient
 ```
 
-IoTFleetHubClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [delete_application](./client.md#delete-application)
-- [describe_application](./client.md#describe-application)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_applications](./client.md#list-applications)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_application](./client.md#update-application)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [delete_application](./client.md#delete_application)
+- [describe_application](./client.md#describe_application)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_applications](./client.md#list_applications)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_application](./client.md#update_application)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
+IoTFleetHubClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalFailureException
+- InvalidRequestException
+- LimitExceededException
+- ResourceNotFoundException
+- ThrottlingException
 
 ## Paginators
 
@@ -76,10 +76,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotfleethub.literals import ApplicationState, ...
+from mypy_boto3_iotfleethub.literals import ApplicationStateType, ...
 ```
 
-- [ApplicationState](./literals.md#applicationstate)
+- [ApplicationStateType](./literals.md#applicationstatetype)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 
 ## Typed dictionaries

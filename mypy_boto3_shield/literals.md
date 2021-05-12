@@ -3,28 +3,28 @@
 > [Index](..) > [Shield](.) > Literals
 
 Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/shield.html#Shield)
 type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Literals for boto3 Shield module](#literals-for-boto3-shield-module)
-  - [AttackLayer](#attacklayer)
-  - [AttackPropertyIdentifier](#attackpropertyidentifier)
-  - [AutoRenew](#autorenew)
+  - [AttackLayerType](#attacklayertype)
+  - [AttackPropertyIdentifierType](#attackpropertyidentifiertype)
+  - [AutoRenewType](#autorenewtype)
   - [ListAttacksPaginatorName](#listattackspaginatorname)
   - [ListProtectionsPaginatorName](#listprotectionspaginatorname)
-  - [ProactiveEngagementStatus](#proactiveengagementstatus)
-  - [ProtectedResourceType](#protectedresourcetype)
-  - [ProtectionGroupAggregation](#protectiongroupaggregation)
-  - [ProtectionGroupPattern](#protectiongrouppattern)
-  - [SubResourceType](#subresourcetype)
-  - [SubscriptionState](#subscriptionstate)
-  - [Unit](#unit)
+  - [ProactiveEngagementStatusType](#proactiveengagementstatustype)
+  - [ProtectedResourceTypeType](#protectedresourcetypetype)
+  - [ProtectionGroupAggregationType](#protectiongroupaggregationtype)
+  - [ProtectionGroupPatternType](#protectiongrouppatterntype)
+  - [SubResourceTypeType](#subresourcetypetype)
+  - [SubscriptionStateType](#subscriptionstatetype)
+  - [UnitType](#unittype)
 
-## AttackLayer
+## AttackLayerType
 
 ```python
-from mypy_boto3_shield.literals import AttackLayer
+from mypy_boto3_shield.literals import AttackLayerType
 ```
 
 Values:
@@ -32,10 +32,10 @@ Values:
 - `APPLICATION`
 - `NETWORK`
 
-## AttackPropertyIdentifier
+## AttackPropertyIdentifierType
 
 ```python
-from mypy_boto3_shield.literals import AttackPropertyIdentifier
+from mypy_boto3_shield.literals import AttackPropertyIdentifierType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `WORDPRESS_PINGBACK_REFLECTOR`
 - `WORDPRESS_PINGBACK_SOURCE`
 
-## AutoRenew
+## AutoRenewType
 
 ```python
-from mypy_boto3_shield.literals import AutoRenew
+from mypy_boto3_shield.literals import AutoRenewType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 
 - `list_protections`
 
-## ProactiveEngagementStatus
+## ProactiveEngagementStatusType
 
 ```python
-from mypy_boto3_shield.literals import ProactiveEngagementStatus
+from mypy_boto3_shield.literals import ProactiveEngagementStatusType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `ENABLED`
 - `PENDING`
 
-## ProtectedResourceType
+## ProtectedResourceTypeType
 
 ```python
-from mypy_boto3_shield.literals import ProtectedResourceType
+from mypy_boto3_shield.literals import ProtectedResourceTypeType
 ```
 
 Values:
@@ -107,10 +107,10 @@ Values:
 - `GLOBAL_ACCELERATOR`
 - `ROUTE_53_HOSTED_ZONE`
 
-## ProtectionGroupAggregation
+## ProtectionGroupAggregationType
 
 ```python
-from mypy_boto3_shield.literals import ProtectionGroupAggregation
+from mypy_boto3_shield.literals import ProtectionGroupAggregationType
 ```
 
 Values:
@@ -119,10 +119,10 @@ Values:
 - `MEAN`
 - `SUM`
 
-## ProtectionGroupPattern
+## ProtectionGroupPatternType
 
 ```python
-from mypy_boto3_shield.literals import ProtectionGroupPattern
+from mypy_boto3_shield.literals import ProtectionGroupPatternType
 ```
 
 Values:
@@ -131,10 +131,10 @@ Values:
 - `ARBITRARY`
 - `BY_RESOURCE_TYPE`
 
-## SubResourceType
+## SubResourceTypeType
 
 ```python
-from mypy_boto3_shield.literals import SubResourceType
+from mypy_boto3_shield.literals import SubResourceTypeType
 ```
 
 Values:
@@ -142,10 +142,10 @@ Values:
 - `IP`
 - `URL`
 
-## SubscriptionState
+## SubscriptionStateType
 
 ```python
-from mypy_boto3_shield.literals import SubscriptionState
+from mypy_boto3_shield.literals import SubscriptionStateType
 ```
 
 Values:
@@ -153,10 +153,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## Unit
+## UnitType
 
 ```python
-from mypy_boto3_shield.literals import Unit
+from mypy_boto3_shield.literals import UnitType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > Lambda
 
 Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+[Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda)
 type annotations stubs module
 [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
@@ -30,110 +30,110 @@ Can be used directly:
 from mypy_boto3_lambda.client import LambdaClient
 ```
 
-LambdaClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_layer_version_permission](./client.md#add-layer-version-permission)
-- [add_permission](./client.md#add-permission)
-- [can_paginate](./client.md#can-paginate)
-- [create_alias](./client.md#create-alias)
-- [create_code_signing_config](./client.md#create-code-signing-config)
-- [create_event_source_mapping](./client.md#create-event-source-mapping)
-- [create_function](./client.md#create-function)
-- [delete_alias](./client.md#delete-alias)
-- [delete_code_signing_config](./client.md#delete-code-signing-config)
-- [delete_event_source_mapping](./client.md#delete-event-source-mapping)
-- [delete_function](./client.md#delete-function)
-- [delete_function_code_signing_config](./client.md#delete-function-code-signing-config)
-- [delete_function_concurrency](./client.md#delete-function-concurrency)
-- [delete_function_event_invoke_config](./client.md#delete-function-event-invoke-config)
-- [delete_layer_version](./client.md#delete-layer-version)
-- [delete_provisioned_concurrency_config](./client.md#delete-provisioned-concurrency-config)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_account_settings](./client.md#get-account-settings)
-- [get_alias](./client.md#get-alias)
-- [get_code_signing_config](./client.md#get-code-signing-config)
-- [get_event_source_mapping](./client.md#get-event-source-mapping)
-- [get_function](./client.md#get-function)
-- [get_function_code_signing_config](./client.md#get-function-code-signing-config)
-- [get_function_concurrency](./client.md#get-function-concurrency)
-- [get_function_configuration](./client.md#get-function-configuration)
-- [get_function_event_invoke_config](./client.md#get-function-event-invoke-config)
-- [get_layer_version](./client.md#get-layer-version)
-- [get_layer_version_by_arn](./client.md#get-layer-version-by-arn)
-- [get_layer_version_policy](./client.md#get-layer-version-policy)
-- [get_paginator](./client.md#get-paginator)
-- [get_policy](./client.md#get-policy)
-- [get_provisioned_concurrency_config](./client.md#get-provisioned-concurrency-config)
-- [get_waiter](./client.md#get-waiter)
+- [add_layer_version_permission](./client.md#add_layer_version_permission)
+- [add_permission](./client.md#add_permission)
+- [can_paginate](./client.md#can_paginate)
+- [create_alias](./client.md#create_alias)
+- [create_code_signing_config](./client.md#create_code_signing_config)
+- [create_event_source_mapping](./client.md#create_event_source_mapping)
+- [create_function](./client.md#create_function)
+- [delete_alias](./client.md#delete_alias)
+- [delete_code_signing_config](./client.md#delete_code_signing_config)
+- [delete_event_source_mapping](./client.md#delete_event_source_mapping)
+- [delete_function](./client.md#delete_function)
+- [delete_function_code_signing_config](./client.md#delete_function_code_signing_config)
+- [delete_function_concurrency](./client.md#delete_function_concurrency)
+- [delete_function_event_invoke_config](./client.md#delete_function_event_invoke_config)
+- [delete_layer_version](./client.md#delete_layer_version)
+- [delete_provisioned_concurrency_config](./client.md#delete_provisioned_concurrency_config)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_account_settings](./client.md#get_account_settings)
+- [get_alias](./client.md#get_alias)
+- [get_code_signing_config](./client.md#get_code_signing_config)
+- [get_event_source_mapping](./client.md#get_event_source_mapping)
+- [get_function](./client.md#get_function)
+- [get_function_code_signing_config](./client.md#get_function_code_signing_config)
+- [get_function_concurrency](./client.md#get_function_concurrency)
+- [get_function_configuration](./client.md#get_function_configuration)
+- [get_function_event_invoke_config](./client.md#get_function_event_invoke_config)
+- [get_layer_version](./client.md#get_layer_version)
+- [get_layer_version_by_arn](./client.md#get_layer_version_by_arn)
+- [get_layer_version_policy](./client.md#get_layer_version_policy)
+- [get_paginator](./client.md#get_paginator)
+- [get_policy](./client.md#get_policy)
+- [get_provisioned_concurrency_config](./client.md#get_provisioned_concurrency_config)
+- [get_waiter](./client.md#get_waiter)
 - [invoke](./client.md#invoke)
-- [invoke_async](./client.md#invoke-async)
-- [list_aliases](./client.md#list-aliases)
-- [list_code_signing_configs](./client.md#list-code-signing-configs)
-- [list_event_source_mappings](./client.md#list-event-source-mappings)
-- [list_function_event_invoke_configs](./client.md#list-function-event-invoke-configs)
-- [list_functions](./client.md#list-functions)
-- [list_functions_by_code_signing_config](./client.md#list-functions-by-code-signing-config)
-- [list_layer_versions](./client.md#list-layer-versions)
-- [list_layers](./client.md#list-layers)
-- [list_provisioned_concurrency_configs](./client.md#list-provisioned-concurrency-configs)
-- [list_tags](./client.md#list-tags)
-- [list_versions_by_function](./client.md#list-versions-by-function)
-- [publish_layer_version](./client.md#publish-layer-version)
-- [publish_version](./client.md#publish-version)
-- [put_function_code_signing_config](./client.md#put-function-code-signing-config)
-- [put_function_concurrency](./client.md#put-function-concurrency)
-- [put_function_event_invoke_config](./client.md#put-function-event-invoke-config)
-- [put_provisioned_concurrency_config](./client.md#put-provisioned-concurrency-config)
-- [remove_layer_version_permission](./client.md#remove-layer-version-permission)
-- [remove_permission](./client.md#remove-permission)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_alias](./client.md#update-alias)
-- [update_code_signing_config](./client.md#update-code-signing-config)
-- [update_event_source_mapping](./client.md#update-event-source-mapping)
-- [update_function_code](./client.md#update-function-code)
-- [update_function_configuration](./client.md#update-function-configuration)
-- [update_function_event_invoke_config](./client.md#update-function-event-invoke-config)
+- [invoke_async](./client.md#invoke_async)
+- [list_aliases](./client.md#list_aliases)
+- [list_code_signing_configs](./client.md#list_code_signing_configs)
+- [list_event_source_mappings](./client.md#list_event_source_mappings)
+- [list_function_event_invoke_configs](./client.md#list_function_event_invoke_configs)
+- [list_functions](./client.md#list_functions)
+- [list_functions_by_code_signing_config](./client.md#list_functions_by_code_signing_config)
+- [list_layer_versions](./client.md#list_layer_versions)
+- [list_layers](./client.md#list_layers)
+- [list_provisioned_concurrency_configs](./client.md#list_provisioned_concurrency_configs)
+- [list_tags](./client.md#list_tags)
+- [list_versions_by_function](./client.md#list_versions_by_function)
+- [publish_layer_version](./client.md#publish_layer_version)
+- [publish_version](./client.md#publish_version)
+- [put_function_code_signing_config](./client.md#put_function_code_signing_config)
+- [put_function_concurrency](./client.md#put_function_concurrency)
+- [put_function_event_invoke_config](./client.md#put_function_event_invoke_config)
+- [put_provisioned_concurrency_config](./client.md#put_provisioned_concurrency_config)
+- [remove_layer_version_permission](./client.md#remove_layer_version_permission)
+- [remove_permission](./client.md#remove_permission)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_alias](./client.md#update_alias)
+- [update_code_signing_config](./client.md#update_code_signing_config)
+- [update_event_source_mapping](./client.md#update_event_source_mapping)
+- [update_function_code](./client.md#update_function_code)
+- [update_function_configuration](./client.md#update_function_configuration)
+- [update_function_event_invoke_config](./client.md#update_function_event_invoke_config)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CodeSigningConfigNotFoundException](./client.md#codesigningconfignotfoundexception)
-- [CodeStorageExceededException](./client.md#codestorageexceededexception)
-- [CodeVerificationFailedException](./client.md#codeverificationfailedexception)
-- [EC2AccessDeniedException](./client.md#ec2accessdeniedexception)
-- [EC2ThrottledException](./client.md#ec2throttledexception)
-- [EC2UnexpectedException](./client.md#ec2unexpectedexception)
-- [EFSIOException](./client.md#efsioexception)
-- [EFSMountConnectivityException](./client.md#efsmountconnectivityexception)
-- [EFSMountFailureException](./client.md#efsmountfailureexception)
-- [EFSMountTimeoutException](./client.md#efsmounttimeoutexception)
-- [ENILimitReachedException](./client.md#enilimitreachedexception)
-- [InvalidCodeSignatureException](./client.md#invalidcodesignatureexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [InvalidRequestContentException](./client.md#invalidrequestcontentexception)
-- [InvalidRuntimeException](./client.md#invalidruntimeexception)
-- [InvalidSecurityGroupIDException](./client.md#invalidsecuritygroupidexception)
-- [InvalidSubnetIDException](./client.md#invalidsubnetidexception)
-- [InvalidZipFileException](./client.md#invalidzipfileexception)
-- [KMSAccessDeniedException](./client.md#kmsaccessdeniedexception)
-- [KMSDisabledException](./client.md#kmsdisabledexception)
-- [KMSInvalidStateException](./client.md#kmsinvalidstateexception)
-- [KMSNotFoundException](./client.md#kmsnotfoundexception)
-- [PolicyLengthExceededException](./client.md#policylengthexceededexception)
-- [PreconditionFailedException](./client.md#preconditionfailedexception)
-- [ProvisionedConcurrencyConfigNotFoundException](./client.md#provisionedconcurrencyconfignotfoundexception)
-- [RequestTooLargeException](./client.md#requesttoolargeexception)
-- [ResourceConflictException](./client.md#resourceconflictexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceNotReadyException](./client.md#resourcenotreadyexception)
-- [ServiceException](./client.md#serviceexception)
-- [SubnetIPAddressLimitReachedException](./client.md#subnetipaddresslimitreachedexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnsupportedMediaTypeException](./client.md#unsupportedmediatypeexception)
+LambdaClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CodeSigningConfigNotFoundException
+- CodeStorageExceededException
+- CodeVerificationFailedException
+- EC2AccessDeniedException
+- EC2ThrottledException
+- EC2UnexpectedException
+- EFSIOException
+- EFSMountConnectivityException
+- EFSMountFailureException
+- EFSMountTimeoutException
+- ENILimitReachedException
+- InvalidCodeSignatureException
+- InvalidParameterValueException
+- InvalidRequestContentException
+- InvalidRuntimeException
+- InvalidSecurityGroupIDException
+- InvalidSubnetIDException
+- InvalidZipFileException
+- KMSAccessDeniedException
+- KMSDisabledException
+- KMSInvalidStateException
+- KMSNotFoundException
+- PolicyLengthExceededException
+- PreconditionFailedException
+- ProvisionedConcurrencyConfigNotFoundException
+- RequestTooLargeException
+- ResourceConflictException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceNotReadyException
+- ServiceException
+- SubnetIPAddressLimitReachedException
+- TooManyRequestsException
+- UnsupportedMediaTypeException
 
 ## Paginators
 
@@ -179,20 +179,20 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.literals import CodeSigningPolicy, ...
+from mypy_boto3_lambda.literals import CodeSigningPolicyType, ...
 ```
 
-- [CodeSigningPolicy](./literals.md#codesigningpolicy)
-- [EndPointType](./literals.md#endpointtype)
-- [EventSourcePosition](./literals.md#eventsourceposition)
+- [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
+- [EndPointTypeType](./literals.md#endpointtypetype)
+- [EventSourcePositionType](./literals.md#eventsourcepositiontype)
 - [FunctionActiveWaiterName](./literals.md#functionactivewaitername)
 - [FunctionExistsWaiterName](./literals.md#functionexistswaitername)
-- [FunctionResponseType](./literals.md#functionresponsetype)
+- [FunctionResponseTypeType](./literals.md#functionresponsetypetype)
 - [FunctionUpdatedWaiterName](./literals.md#functionupdatedwaitername)
-- [FunctionVersion](./literals.md#functionversion)
-- [InvocationType](./literals.md#invocationtype)
-- [LastUpdateStatus](./literals.md#lastupdatestatus)
-- [LastUpdateStatusReasonCode](./literals.md#lastupdatestatusreasoncode)
+- [FunctionVersionType](./literals.md#functionversiontype)
+- [InvocationTypeType](./literals.md#invocationtypetype)
+- [LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype)
+- [LastUpdateStatusType](./literals.md#lastupdatestatustype)
 - [ListAliasesPaginatorName](./literals.md#listaliasespaginatorname)
 - [ListCodeSigningConfigsPaginatorName](./literals.md#listcodesigningconfigspaginatorname)
 - [ListEventSourceMappingsPaginatorName](./literals.md#listeventsourcemappingspaginatorname)
@@ -203,14 +203,14 @@ from mypy_boto3_lambda.literals import CodeSigningPolicy, ...
 - [ListLayersPaginatorName](./literals.md#listlayerspaginatorname)
 - [ListProvisionedConcurrencyConfigsPaginatorName](./literals.md#listprovisionedconcurrencyconfigspaginatorname)
 - [ListVersionsByFunctionPaginatorName](./literals.md#listversionsbyfunctionpaginatorname)
-- [LogType](./literals.md#logtype)
-- [PackageType](./literals.md#packagetype)
-- [ProvisionedConcurrencyStatusEnum](./literals.md#provisionedconcurrencystatusenum)
-- [Runtime](./literals.md#runtime)
-- [SourceAccessType](./literals.md#sourceaccesstype)
-- [State](./literals.md#state)
-- [StateReasonCode](./literals.md#statereasoncode)
-- [TracingMode](./literals.md#tracingmode)
+- [LogTypeType](./literals.md#logtypetype)
+- [PackageTypeType](./literals.md#packagetypetype)
+- [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
+- [RuntimeType](./literals.md#runtimetype)
+- [SourceAccessTypeType](./literals.md#sourceaccesstypetype)
+- [StateReasonCodeType](./literals.md#statereasoncodetype)
+- [StateType](./literals.md#statetype)
+- [TracingModeType](./literals.md#tracingmodetype)
 
 ## Typed dictionaries
 

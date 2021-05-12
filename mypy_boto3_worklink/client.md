@@ -3,7 +3,7 @@
 > [Index](..) > [WorkLink](.) > WorkLinkClient
 
 Auto-generated documentation for
-[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
+[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink)
 type annotations stubs module
 [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
@@ -61,7 +61,7 @@ def get_worklink_client() -> WorkLinkClient:
 ```
 
 Boto3 documentation:
-[WorkLink.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client)
+[WorkLink.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client)
 
 ## Exceptions
 
@@ -92,7 +92,7 @@ Exceptions:
 Type annotations for `boto3.client("worklink").associate_domain` method.
 
 Boto3 documentation:
-[WorkLink.Client.associate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_domain)
+[WorkLink.Client.associate_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.associate_domain)
 
 Arguments:
 
@@ -109,13 +109,13 @@ Type annotations for
 `boto3.client("worklink").associate_website_authorization_provider` method.
 
 Boto3 documentation:
-[WorkLink.Client.associate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_authorization_provider)
+[WorkLink.Client.associate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.associate_website_authorization_provider)
 
 Arguments:
 
 - `FleetArn`: `str` *(required)*
 - `AuthorizationProviderType`: `Literal['SAML']` (see
-  [AuthorizationProviderType](./literals.md#authorizationprovidertype))
+  [AuthorizationProviderTypeType](./literals.md#authorizationprovidertypetype))
   *(required)*
 - `DomainName`: `str`
 
@@ -128,7 +128,7 @@ Type annotations for
 `boto3.client("worklink").associate_website_certificate_authority` method.
 
 Boto3 documentation:
-[WorkLink.Client.associate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_certificate_authority)
+[WorkLink.Client.associate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.associate_website_certificate_authority)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns
 Type annotations for `boto3.client("worklink").can_paginate` method.
 
 Boto3 documentation:
-[WorkLink.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.can_paginate)
+[WorkLink.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.can_paginate)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Returns `bool`.
 Type annotations for `boto3.client("worklink").create_fleet` method.
 
 Boto3 documentation:
-[WorkLink.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.create_fleet)
+[WorkLink.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.create_fleet)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Returns
 Type annotations for `boto3.client("worklink").delete_fleet` method.
 
 Boto3 documentation:
-[WorkLink.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.delete_fleet)
+[WorkLink.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.delete_fleet)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Type annotations for
 `boto3.client("worklink").describe_audit_stream_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_audit_stream_configuration)
+[WorkLink.Client.describe_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_audit_stream_configuration)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Type annotations for
 `boto3.client("worklink").describe_company_network_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_company_network_configuration)
+[WorkLink.Client.describe_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_company_network_configuration)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns
 Type annotations for `boto3.client("worklink").describe_device` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device)
+[WorkLink.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_device)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Type annotations for
 `boto3.client("worklink").describe_device_policy_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device_policy_configuration)
+[WorkLink.Client.describe_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_device_policy_configuration)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns
 Type annotations for `boto3.client("worklink").describe_domain` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_domain)
+[WorkLink.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_domain)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns
 Type annotations for `boto3.client("worklink").describe_fleet_metadata` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_fleet_metadata)
+[WorkLink.Client.describe_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_fleet_metadata)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Type annotations for
 `boto3.client("worklink").describe_identity_provider_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_identity_provider_configuration)
+[WorkLink.Client.describe_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_identity_provider_configuration)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Type annotations for
 `boto3.client("worklink").describe_website_certificate_authority` method.
 
 Boto3 documentation:
-[WorkLink.Client.describe_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_website_certificate_authority)
+[WorkLink.Client.describe_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.describe_website_certificate_authority)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Returns
 Type annotations for `boto3.client("worklink").disassociate_domain` method.
 
 Boto3 documentation:
-[WorkLink.Client.disassociate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_domain)
+[WorkLink.Client.disassociate_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.disassociate_domain)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Type annotations for
 `boto3.client("worklink").disassociate_website_authorization_provider` method.
 
 Boto3 documentation:
-[WorkLink.Client.disassociate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_authorization_provider)
+[WorkLink.Client.disassociate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.disassociate_website_authorization_provider)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Type annotations for
 `boto3.client("worklink").disassociate_website_certificate_authority` method.
 
 Boto3 documentation:
-[WorkLink.Client.disassociate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_certificate_authority)
+[WorkLink.Client.disassociate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.disassociate_website_certificate_authority)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").generate_presigned_url` method.
 
 Boto3 documentation:
-[WorkLink.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.generate_presigned_url)
+[WorkLink.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.generate_presigned_url)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns `str`.
 Type annotations for `boto3.client("worklink").list_devices` method.
 
 Boto3 documentation:
-[WorkLink.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_devices)
+[WorkLink.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.list_devices)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Returns
 Type annotations for `boto3.client("worklink").list_domains` method.
 
 Boto3 documentation:
-[WorkLink.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_domains)
+[WorkLink.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.list_domains)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("worklink").list_fleets` method.
 
 Boto3 documentation:
-[WorkLink.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_fleets)
+[WorkLink.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.list_fleets)
 
 Arguments:
 
@@ -413,7 +413,7 @@ Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 Type annotations for `boto3.client("worklink").list_tags_for_resource` method.
 
 Boto3 documentation:
-[WorkLink.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_tags_for_resource)
+[WorkLink.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -428,7 +428,7 @@ Type annotations for
 `boto3.client("worklink").list_website_authorization_providers` method.
 
 Boto3 documentation:
-[WorkLink.Client.list_website_authorization_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_authorization_providers)
+[WorkLink.Client.list_website_authorization_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.list_website_authorization_providers)
 
 Arguments:
 
@@ -445,7 +445,7 @@ Type annotations for
 `boto3.client("worklink").list_website_certificate_authorities` method.
 
 Boto3 documentation:
-[WorkLink.Client.list_website_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_certificate_authorities)
+[WorkLink.Client.list_website_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.list_website_certificate_authorities)
 
 Arguments:
 
@@ -461,7 +461,7 @@ Returns
 Type annotations for `boto3.client("worklink").restore_domain_access` method.
 
 Boto3 documentation:
-[WorkLink.Client.restore_domain_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.restore_domain_access)
+[WorkLink.Client.restore_domain_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.restore_domain_access)
 
 Arguments:
 
@@ -475,7 +475,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").revoke_domain_access` method.
 
 Boto3 documentation:
-[WorkLink.Client.revoke_domain_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.revoke_domain_access)
+[WorkLink.Client.revoke_domain_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.revoke_domain_access)
 
 Arguments:
 
@@ -489,7 +489,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").sign_out_user` method.
 
 Boto3 documentation:
-[WorkLink.Client.sign_out_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.sign_out_user)
+[WorkLink.Client.sign_out_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.sign_out_user)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").tag_resource` method.
 
 Boto3 documentation:
-[WorkLink.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.tag_resource)
+[WorkLink.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.tag_resource)
 
 Arguments:
 
@@ -517,7 +517,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").untag_resource` method.
 
 Boto3 documentation:
-[WorkLink.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.untag_resource)
+[WorkLink.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.untag_resource)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Type annotations for
 `boto3.client("worklink").update_audit_stream_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.update_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_audit_stream_configuration)
+[WorkLink.Client.update_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.update_audit_stream_configuration)
 
 Arguments:
 
@@ -547,7 +547,7 @@ Type annotations for
 `boto3.client("worklink").update_company_network_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.update_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_company_network_configuration)
+[WorkLink.Client.update_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.update_company_network_configuration)
 
 Arguments:
 
@@ -564,7 +564,7 @@ Type annotations for
 `boto3.client("worklink").update_device_policy_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.update_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_device_policy_configuration)
+[WorkLink.Client.update_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.update_device_policy_configuration)
 
 Arguments:
 
@@ -578,7 +578,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").update_domain_metadata` method.
 
 Boto3 documentation:
-[WorkLink.Client.update_domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_domain_metadata)
+[WorkLink.Client.update_domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.update_domain_metadata)
 
 Arguments:
 
@@ -593,7 +593,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("worklink").update_fleet_metadata` method.
 
 Boto3 documentation:
-[WorkLink.Client.update_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_fleet_metadata)
+[WorkLink.Client.update_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.update_fleet_metadata)
 
 Arguments:
 
@@ -609,13 +609,14 @@ Type annotations for
 `boto3.client("worklink").update_identity_provider_configuration` method.
 
 Boto3 documentation:
-[WorkLink.Client.update_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_identity_provider_configuration)
+[WorkLink.Client.update_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink.Client.update_identity_provider_configuration)
 
 Arguments:
 
 - `FleetArn`: `str` *(required)*
 - `IdentityProviderType`: `Literal['SAML']` (see
-  [IdentityProviderType](./literals.md#identityprovidertype)) *(required)*
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype))
+  *(required)*
 - `IdentityProviderSamlMetadata`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

@@ -3,7 +3,7 @@
 > [Index](..) > [PI](.) > PIClient
 
 Auto-generated documentation for
-[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+[PI](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pi.html#PI)
 type annotations stubs module
 [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 
@@ -30,7 +30,7 @@ def get_pi_client() -> PIClient:
 ```
 
 Boto3 documentation:
-[PI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
+[PI.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pi.html#PI.Client)
 
 ## Exceptions
 
@@ -58,7 +58,7 @@ Exceptions:
 Type annotations for `boto3.client("pi").can_paginate` method.
 
 Boto3 documentation:
-[PI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate)
+[PI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pi.html#PI.Client.can_paginate)
 
 Arguments:
 
@@ -71,12 +71,12 @@ Returns `bool`.
 Type annotations for `boto3.client("pi").describe_dimension_keys` method.
 
 Boto3 documentation:
-[PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
+[PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pi.html#PI.Client.describe_dimension_keys)
 
 Arguments:
 
-- `ServiceType`: `Literal['RDS']` (see [ServiceType](./literals.md#servicetype))
-  *(required)*
+- `ServiceType`: `Literal['RDS']` (see
+  [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
 - `Identifier`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
@@ -97,7 +97,7 @@ Returns
 Type annotations for `boto3.client("pi").generate_presigned_url` method.
 
 Boto3 documentation:
-[PI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url)
+[PI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pi.html#PI.Client.generate_presigned_url)
 
 Arguments:
 
@@ -113,15 +113,16 @@ Returns `str`.
 Type annotations for `boto3.client("pi").get_resource_metrics` method.
 
 Boto3 documentation:
-[PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
+[PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pi.html#PI.Client.get_resource_metrics)
 
 Arguments:
 
-- `ServiceType`: `Literal['RDS']` (see [ServiceType](./literals.md#servicetype))
-  *(required)*
+- `ServiceType`: `Literal['RDS']` (see
+  [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
 - `Identifier`: `str` *(required)*
 - `MetricQueries`:
-  `List`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\] *(required)*
+  `List`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
+  *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
 - `PeriodInSeconds`: `int`

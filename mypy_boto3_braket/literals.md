@@ -3,23 +3,23 @@
 > [Index](..) > [Braket](.) > Literals
 
 Auto-generated documentation for
-[Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/braket.html#Braket)
 type annotations stubs module
 [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [Literals for boto3 Braket module](#literals-for-boto3-braket-module)
-  - [CancellationStatus](#cancellationstatus)
-  - [DeviceStatus](#devicestatus)
-  - [DeviceType](#devicetype)
-  - [QuantumTaskStatus](#quantumtaskstatus)
+  - [CancellationStatusType](#cancellationstatustype)
+  - [DeviceStatusType](#devicestatustype)
+  - [DeviceTypeType](#devicetypetype)
+  - [QuantumTaskStatusType](#quantumtaskstatustype)
   - [SearchDevicesPaginatorName](#searchdevicespaginatorname)
-  - [SearchQuantumTasksFilterOperator](#searchquantumtasksfilteroperator)
+  - [SearchQuantumTasksFilterOperatorType](#searchquantumtasksfilteroperatortype)
   - [SearchQuantumTasksPaginatorName](#searchquantumtaskspaginatorname)
 
-## CancellationStatus
+## CancellationStatusType
 
 ```python
-from mypy_boto3_braket.literals import CancellationStatus
+from mypy_boto3_braket.literals import CancellationStatusType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `CANCELLED`
 - `CANCELLING`
 
-## DeviceStatus
+## DeviceStatusType
 
 ```python
-from mypy_boto3_braket.literals import DeviceStatus
+from mypy_boto3_braket.literals import DeviceStatusType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 - `OFFLINE`
 - `ONLINE`
 
-## DeviceType
+## DeviceTypeType
 
 ```python
-from mypy_boto3_braket.literals import DeviceType
+from mypy_boto3_braket.literals import DeviceTypeType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `QPU`
 - `SIMULATOR`
 
-## QuantumTaskStatus
+## QuantumTaskStatusType
 
 ```python
-from mypy_boto3_braket.literals import QuantumTaskStatus
+from mypy_boto3_braket.literals import QuantumTaskStatusType
 ```
 
 Values:
@@ -75,10 +75,10 @@ Values:
 
 - `search_devices`
 
-## SearchQuantumTasksFilterOperator
+## SearchQuantumTasksFilterOperatorType
 
 ```python
-from mypy_boto3_braket.literals import SearchQuantumTasksFilterOperator
+from mypy_boto3_braket.literals import SearchQuantumTasksFilterOperatorType
 ```
 
 Values:

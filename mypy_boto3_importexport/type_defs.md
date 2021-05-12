@@ -3,7 +3,7 @@
 > [Index](..) > [ImportExport](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/importexport.html#ImportExport)
 type annotations stubs module
 [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
@@ -51,7 +51,7 @@ from mypy_boto3_importexport.type_defs import CreateJobOutputTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobType`: [JobType](./literals.md#jobtype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
 - `Signature`: `str`
 - `SignatureFileContents`: `str`
 - `WarningMessage`: `str`
@@ -81,7 +81,7 @@ from mypy_boto3_importexport.type_defs import GetStatusOutputTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobType`: [JobType](./literals.md#jobtype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
 - `LocationCode`: `str`
 - `LocationMessage`: `str`
 - `ProgressCode`: `str`
@@ -110,7 +110,7 @@ Optional fields:
 - `JobId`: `str`
 - `CreationDate`: `datetime`
 - `IsCanceled`: `bool`
-- `JobType`: [JobType](./literals.md#jobtype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
 
 ## ListJobsOutputTypeDef
 

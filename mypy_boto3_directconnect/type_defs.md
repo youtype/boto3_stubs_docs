@@ -3,7 +3,7 @@
 > [Index](..) > [DirectConnect](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
 [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
@@ -113,7 +113,7 @@ from mypy_boto3_directconnect.type_defs import AssociatedGatewayTypeDef
 Optional fields:
 
 - `id`: `str`
-- `type`: [GatewayType](./literals.md#gatewaytype)
+- `type`: [GatewayTypeType](./literals.md#gatewaytypetype)
 - `ownerAccount`: `str`
 - `region`: `str`
 
@@ -128,11 +128,11 @@ Optional fields:
 - `bgpPeerId`: `str`
 - `asn`: `int`
 - `authKey`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `bgpPeerState`: [BGPPeerState](./literals.md#bgppeerstate)
-- `bgpStatus`: [BGPStatus](./literals.md#bgpstatus)
+- `bgpPeerState`: [BGPPeerStateType](./literals.md#bgppeerstatetype)
+- `bgpStatus`: [BGPStatusType](./literals.md#bgpstatustype)
 - `awsDeviceV2`: `str`
 
 ## ConfirmConnectionResponseTypeDef
@@ -143,7 +143,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmConnectionResponseTypeDef
 
 Optional fields:
 
-- `connectionState`: [ConnectionState](./literals.md#connectionstate)
+- `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 
 ## ConfirmPrivateVirtualInterfaceResponseTypeDef
 
@@ -154,7 +154,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceRes
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
+  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 
 ## ConfirmPublicVirtualInterfaceResponseTypeDef
 
@@ -165,7 +165,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceResp
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
+  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 
 ## ConfirmTransitVirtualInterfaceResponseTypeDef
 
@@ -176,7 +176,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceRes
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
+  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 
 ## ConnectionTypeDef
 
@@ -189,7 +189,7 @@ Optional fields:
 - `ownerAccount`: `str`
 - `connectionId`: `str`
 - `connectionName`: `str`
-- `connectionState`: [ConnectionState](./literals.md#connectionstate)
+- `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `region`: `str`
 - `location`: `str`
 - `bandwidth`: `str`
@@ -201,7 +201,7 @@ Optional fields:
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
 - `hasLogicalRedundancy`:
-  [HasLogicalRedundancy](./literals.md#haslogicalredundancy)
+  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `macSecCapable`: `bool`
@@ -217,7 +217,8 @@ from mypy_boto3_directconnect.type_defs import ConnectionsTypeDef
 
 Optional fields:
 
-- `connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 
 ## CreateBGPPeerResponseTypeDef
 
@@ -326,7 +327,8 @@ from mypy_boto3_directconnect.type_defs import DeleteInterconnectResponseTypeDef
 
 Optional fields:
 
-- `interconnectState`: [InterconnectState](./literals.md#interconnectstate)
+- `interconnectState`:
+  [InterconnectStateType](./literals.md#interconnectstatetype)
 
 ## DeleteVirtualInterfaceResponseTypeDef
 
@@ -337,7 +339,7 @@ from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceResponseTyp
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
+  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 
 ## DescribeConnectionLoaResponseTypeDef
 
@@ -430,7 +432,7 @@ Optional fields:
 - `directConnectGatewayId`: `str`
 - `directConnectGatewayOwnerAccount`: `str`
 - `proposalState`:
-  [DirectConnectGatewayAssociationProposalState](./literals.md#directconnectgatewayassociationproposalstate)
+  [DirectConnectGatewayAssociationProposalStateType](./literals.md#directconnectgatewayassociationproposalstatetype)
 - `associatedGateway`:
   [AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef)
 - `existingAllowedPrefixesToDirectConnectGateway`:
@@ -449,7 +451,7 @@ Optional fields:
 - `directConnectGatewayId`: `str`
 - `directConnectGatewayOwnerAccount`: `str`
 - `associationState`:
-  [DirectConnectGatewayAssociationState](./literals.md#directconnectgatewayassociationstate)
+  [DirectConnectGatewayAssociationStateType](./literals.md#directconnectgatewayassociationstatetype)
 - `stateChangeError`: `str`
 - `associatedGateway`:
   [AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef)
@@ -473,9 +475,9 @@ Optional fields:
 - `virtualInterfaceRegion`: `str`
 - `virtualInterfaceOwnerAccount`: `str`
 - `attachmentState`:
-  [DirectConnectGatewayAttachmentState](./literals.md#directconnectgatewayattachmentstate)
+  [DirectConnectGatewayAttachmentStateType](./literals.md#directconnectgatewayattachmentstatetype)
 - `attachmentType`:
-  [DirectConnectGatewayAttachmentType](./literals.md#directconnectgatewayattachmenttype)
+  [DirectConnectGatewayAttachmentTypeType](./literals.md#directconnectgatewayattachmenttypetype)
 - `stateChangeError`: `str`
 
 ## DirectConnectGatewayTypeDef
@@ -491,7 +493,7 @@ Optional fields:
 - `amazonSideAsn`: `int`
 - `ownerAccount`: `str`
 - `directConnectGatewayState`:
-  [DirectConnectGatewayState](./literals.md#directconnectgatewaystate)
+  [DirectConnectGatewayStateType](./literals.md#directconnectgatewaystatetype)
 - `stateChangeError`: `str`
 
 ## DisassociateMacSecKeyResponseTypeDef
@@ -515,7 +517,8 @@ Optional fields:
 
 - `interconnectId`: `str`
 - `interconnectName`: `str`
-- `interconnectState`: [InterconnectState](./literals.md#interconnectstate)
+- `interconnectState`:
+  [InterconnectStateType](./literals.md#interconnectstatetype)
 - `region`: `str`
 - `location`: `str`
 - `bandwidth`: `str`
@@ -525,7 +528,7 @@ Optional fields:
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
 - `hasLogicalRedundancy`:
-  [HasLogicalRedundancy](./literals.md#haslogicalredundancy)
+  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
@@ -553,17 +556,18 @@ Optional fields:
 - `lagId`: `str`
 - `ownerAccount`: `str`
 - `lagName`: `str`
-- `lagState`: [LagState](./literals.md#lagstate)
+- `lagState`: [LagStateType](./literals.md#lagstatetype)
 - `location`: `str`
 - `region`: `str`
 - `minimumLinks`: `int`
 - `awsDevice`: `str`
 - `awsDeviceV2`: `str`
-- `connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `allowsHostedConnections`: `bool`
 - `jumboFrameCapable`: `bool`
 - `hasLogicalRedundancy`:
-  [HasLogicalRedundancy](./literals.md#haslogicalredundancy)
+  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `macSecCapable`: `bool`
@@ -602,7 +606,7 @@ Optional fields:
 
 - `loaContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `loaContentType`: `Literal['application/pdf']` (see
-  [LoaContentType](./literals.md#loacontenttype))
+  [LoaContentTypeType](./literals.md#loacontenttypetype))
 
 ## LocationTypeDef
 
@@ -652,7 +656,7 @@ Optional fields:
 
 - `asn`: `int`
 - `authKey`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
 
@@ -673,7 +677,7 @@ Optional fields:
 - `mtu`: `int`
 - `authKey`: `str`
 - `amazonAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `customerAddress`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -695,7 +699,7 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -717,7 +721,7 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `routeFilterPrefixes`:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -739,7 +743,7 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `routeFilterPrefixes`:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -759,7 +763,7 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceTypeDef
@@ -777,7 +781,7 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `directConnectGatewayId`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -920,9 +924,9 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
+  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 - `customerRouterConfig`: `str`
 - `mtu`: `int`
 - `jumboFrameCapable`: `bool`

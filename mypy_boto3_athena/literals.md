@@ -3,14 +3,14 @@
 > [Index](..) > [Athena](.) > Literals
 
 Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/athena.html#Athena)
 type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Literals for boto3 Athena module](#literals-for-boto3-athena-module)
-  - [ColumnNullable](#columnnullable)
-  - [DataCatalogType](#datacatalogtype)
-  - [EncryptionOption](#encryptionoption)
+  - [ColumnNullableType](#columnnullabletype)
+  - [DataCatalogTypeType](#datacatalogtypetype)
+  - [EncryptionOptionType](#encryptionoptiontype)
   - [GetQueryResultsPaginatorName](#getqueryresultspaginatorname)
   - [ListDataCatalogsPaginatorName](#listdatacatalogspaginatorname)
   - [ListDatabasesPaginatorName](#listdatabasespaginatorname)
@@ -18,14 +18,14 @@ type annotations stubs module
   - [ListQueryExecutionsPaginatorName](#listqueryexecutionspaginatorname)
   - [ListTableMetadataPaginatorName](#listtablemetadatapaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [QueryExecutionState](#queryexecutionstate)
-  - [StatementType](#statementtype)
-  - [WorkGroupState](#workgroupstate)
+  - [QueryExecutionStateType](#queryexecutionstatetype)
+  - [StatementTypeType](#statementtypetype)
+  - [WorkGroupStateType](#workgroupstatetype)
 
-## ColumnNullable
+## ColumnNullableType
 
 ```python
-from mypy_boto3_athena.literals import ColumnNullable
+from mypy_boto3_athena.literals import ColumnNullableType
 ```
 
 Values:
@@ -34,10 +34,10 @@ Values:
 - `NULLABLE`
 - `UNKNOWN`
 
-## DataCatalogType
+## DataCatalogTypeType
 
 ```python
-from mypy_boto3_athena.literals import DataCatalogType
+from mypy_boto3_athena.literals import DataCatalogTypeType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `HIVE`
 - `LAMBDA`
 
-## EncryptionOption
+## EncryptionOptionType
 
 ```python
-from mypy_boto3_athena.literals import EncryptionOption
+from mypy_boto3_athena.literals import EncryptionOptionType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## QueryExecutionState
+## QueryExecutionStateType
 
 ```python
-from mypy_boto3_athena.literals import QueryExecutionState
+from mypy_boto3_athena.literals import QueryExecutionStateType
 ```
 
 Values:
@@ -142,10 +142,10 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
-## StatementType
+## StatementTypeType
 
 ```python
-from mypy_boto3_athena.literals import StatementType
+from mypy_boto3_athena.literals import StatementTypeType
 ```
 
 Values:
@@ -154,10 +154,10 @@ Values:
 - `DML`
 - `UTILITY`
 
-## WorkGroupState
+## WorkGroupStateType
 
 ```python
-from mypy_boto3_athena.literals import WorkGroupState
+from mypy_boto3_athena.literals import WorkGroupStateType
 ```
 
 Values:

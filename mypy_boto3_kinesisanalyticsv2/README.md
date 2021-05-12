@@ -3,7 +3,7 @@
 > [Index](..) > KinesisAnalyticsV2
 
 Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
@@ -30,61 +30,61 @@ Can be used directly:
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
 ```
 
-KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_application_cloud_watch_logging_option](./client.md#add-application-cloud-watch-logging-option)
-- [add_application_input](./client.md#add-application-input)
-- [add_application_input_processing_configuration](./client.md#add-application-input-processing-configuration)
-- [add_application_output](./client.md#add-application-output)
-- [add_application_reference_data_source](./client.md#add-application-reference-data-source)
-- [add_application_vpc_configuration](./client.md#add-application-vpc-configuration)
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [create_application_presigned_url](./client.md#create-application-presigned-url)
-- [create_application_snapshot](./client.md#create-application-snapshot)
-- [delete_application](./client.md#delete-application)
-- [delete_application_cloud_watch_logging_option](./client.md#delete-application-cloud-watch-logging-option)
-- [delete_application_input_processing_configuration](./client.md#delete-application-input-processing-configuration)
-- [delete_application_output](./client.md#delete-application-output)
-- [delete_application_reference_data_source](./client.md#delete-application-reference-data-source)
-- [delete_application_snapshot](./client.md#delete-application-snapshot)
-- [delete_application_vpc_configuration](./client.md#delete-application-vpc-configuration)
-- [describe_application](./client.md#describe-application)
-- [describe_application_snapshot](./client.md#describe-application-snapshot)
-- [describe_application_version](./client.md#describe-application-version)
-- [discover_input_schema](./client.md#discover-input-schema)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_application_snapshots](./client.md#list-application-snapshots)
-- [list_application_versions](./client.md#list-application-versions)
-- [list_applications](./client.md#list-applications)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [rollback_application](./client.md#rollback-application)
-- [start_application](./client.md#start-application)
-- [stop_application](./client.md#stop-application)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_application](./client.md#update-application)
-- [update_application_maintenance_configuration](./client.md#update-application-maintenance-configuration)
+- [add_application_cloud_watch_logging_option](./client.md#add_application_cloud_watch_logging_option)
+- [add_application_input](./client.md#add_application_input)
+- [add_application_input_processing_configuration](./client.md#add_application_input_processing_configuration)
+- [add_application_output](./client.md#add_application_output)
+- [add_application_reference_data_source](./client.md#add_application_reference_data_source)
+- [add_application_vpc_configuration](./client.md#add_application_vpc_configuration)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [create_application_presigned_url](./client.md#create_application_presigned_url)
+- [create_application_snapshot](./client.md#create_application_snapshot)
+- [delete_application](./client.md#delete_application)
+- [delete_application_cloud_watch_logging_option](./client.md#delete_application_cloud_watch_logging_option)
+- [delete_application_input_processing_configuration](./client.md#delete_application_input_processing_configuration)
+- [delete_application_output](./client.md#delete_application_output)
+- [delete_application_reference_data_source](./client.md#delete_application_reference_data_source)
+- [delete_application_snapshot](./client.md#delete_application_snapshot)
+- [delete_application_vpc_configuration](./client.md#delete_application_vpc_configuration)
+- [describe_application](./client.md#describe_application)
+- [describe_application_snapshot](./client.md#describe_application_snapshot)
+- [describe_application_version](./client.md#describe_application_version)
+- [discover_input_schema](./client.md#discover_input_schema)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_application_snapshots](./client.md#list_application_snapshots)
+- [list_application_versions](./client.md#list_application_versions)
+- [list_applications](./client.md#list_applications)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [rollback_application](./client.md#rollback_application)
+- [start_application](./client.md#start_application)
+- [stop_application](./client.md#stop_application)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_application](./client.md#update_application)
+- [update_application_maintenance_configuration](./client.md#update_application_maintenance_configuration)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CodeValidationException](./client.md#codevalidationexception)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InvalidApplicationConfigurationException](./client.md#invalidapplicationconfigurationexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceProvisionedThroughputExceededException](./client.md#resourceprovisionedthroughputexceededexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [UnableToDetectSchemaException](./client.md#unabletodetectschemaexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
+
+- ClientError
+- CodeValidationException
+- ConcurrentModificationException
+- InvalidApplicationConfigurationException
+- InvalidArgumentException
+- InvalidRequestException
+- LimitExceededException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceProvisionedThroughputExceededException
+- ServiceUnavailableException
+- TooManyTagsException
+- UnableToDetectSchemaException
+- UnsupportedOperationException
 
 ## Paginators
 
@@ -107,22 +107,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreType, ...
+from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreTypeType, ...
 ```
 
-- [ApplicationRestoreType](./literals.md#applicationrestoretype)
-- [ApplicationStatus](./literals.md#applicationstatus)
-- [CodeContentType](./literals.md#codecontenttype)
-- [ConfigurationType](./literals.md#configurationtype)
-- [InputStartingPosition](./literals.md#inputstartingposition)
+- [ApplicationRestoreTypeType](./literals.md#applicationrestoretypetype)
+- [ApplicationStatusType](./literals.md#applicationstatustype)
+- [CodeContentTypeType](./literals.md#codecontenttypetype)
+- [ConfigurationTypeType](./literals.md#configurationtypetype)
+- [InputStartingPositionType](./literals.md#inputstartingpositiontype)
 - [ListApplicationSnapshotsPaginatorName](./literals.md#listapplicationsnapshotspaginatorname)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
-- [LogLevel](./literals.md#loglevel)
-- [MetricsLevel](./literals.md#metricslevel)
-- [RecordFormatType](./literals.md#recordformattype)
-- [RuntimeEnvironment](./literals.md#runtimeenvironment)
-- [SnapshotStatus](./literals.md#snapshotstatus)
-- [UrlType](./literals.md#urltype)
+- [LogLevelType](./literals.md#logleveltype)
+- [MetricsLevelType](./literals.md#metricsleveltype)
+- [RecordFormatTypeType](./literals.md#recordformattypetype)
+- [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
+- [SnapshotStatusType](./literals.md#snapshotstatustype)
+- [UrlTypeType](./literals.md#urltypetype)
 
 ## Typed dictionaries
 

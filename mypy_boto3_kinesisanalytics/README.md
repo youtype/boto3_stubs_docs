@@ -3,7 +3,7 @@
 > [Index](..) > KinesisAnalytics
 
 Auto-generated documentation for
-[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
+[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
 [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
@@ -29,48 +29,48 @@ Can be used directly:
 from mypy_boto3_kinesisanalytics.client import KinesisAnalyticsClient
 ```
 
-KinesisAnalyticsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_application_cloud_watch_logging_option](./client.md#add-application-cloud-watch-logging-option)
-- [add_application_input](./client.md#add-application-input)
-- [add_application_input_processing_configuration](./client.md#add-application-input-processing-configuration)
-- [add_application_output](./client.md#add-application-output)
-- [add_application_reference_data_source](./client.md#add-application-reference-data-source)
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [delete_application](./client.md#delete-application)
-- [delete_application_cloud_watch_logging_option](./client.md#delete-application-cloud-watch-logging-option)
-- [delete_application_input_processing_configuration](./client.md#delete-application-input-processing-configuration)
-- [delete_application_output](./client.md#delete-application-output)
-- [delete_application_reference_data_source](./client.md#delete-application-reference-data-source)
-- [describe_application](./client.md#describe-application)
-- [discover_input_schema](./client.md#discover-input-schema)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_applications](./client.md#list-applications)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_application](./client.md#start-application)
-- [stop_application](./client.md#stop-application)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_application](./client.md#update-application)
+- [add_application_cloud_watch_logging_option](./client.md#add_application_cloud_watch_logging_option)
+- [add_application_input](./client.md#add_application_input)
+- [add_application_input_processing_configuration](./client.md#add_application_input_processing_configuration)
+- [add_application_output](./client.md#add_application_output)
+- [add_application_reference_data_source](./client.md#add_application_reference_data_source)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [delete_application](./client.md#delete_application)
+- [delete_application_cloud_watch_logging_option](./client.md#delete_application_cloud_watch_logging_option)
+- [delete_application_input_processing_configuration](./client.md#delete_application_input_processing_configuration)
+- [delete_application_output](./client.md#delete_application_output)
+- [delete_application_reference_data_source](./client.md#delete_application_reference_data_source)
+- [describe_application](./client.md#describe_application)
+- [discover_input_schema](./client.md#discover_input_schema)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_applications](./client.md#list_applications)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_application](./client.md#start_application)
+- [stop_application](./client.md#stop_application)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_application](./client.md#update_application)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CodeValidationException](./client.md#codevalidationexception)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InvalidApplicationConfigurationException](./client.md#invalidapplicationconfigurationexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceProvisionedThroughputExceededException](./client.md#resourceprovisionedthroughputexceededexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [UnableToDetectSchemaException](./client.md#unabletodetectschemaexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+KinesisAnalyticsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CodeValidationException
+- ConcurrentModificationException
+- InvalidApplicationConfigurationException
+- InvalidArgumentException
+- LimitExceededException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceProvisionedThroughputExceededException
+- ServiceUnavailableException
+- TooManyTagsException
+- UnableToDetectSchemaException
+- UnsupportedOperationException
 
 ## Literals
 
@@ -79,12 +79,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisanalytics.literals import ApplicationStatus, ...
+from mypy_boto3_kinesisanalytics.literals import ApplicationStatusType, ...
 ```
 
-- [ApplicationStatus](./literals.md#applicationstatus)
-- [InputStartingPosition](./literals.md#inputstartingposition)
-- [RecordFormatType](./literals.md#recordformattype)
+- [ApplicationStatusType](./literals.md#applicationstatustype)
+- [InputStartingPositionType](./literals.md#inputstartingpositiontype)
+- [RecordFormatTypeType](./literals.md#recordformattypetype)
 
 ## Typed dictionaries
 

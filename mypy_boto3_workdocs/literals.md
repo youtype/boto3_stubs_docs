@@ -3,15 +3,15 @@
 > [Index](..) > [WorkDocs](.) > Literals
 
 Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [Literals for boto3 WorkDocs module](#literals-for-boto3-workdocs-module)
-  - [ActivityType](#activitytype)
-  - [BooleanEnumType](#booleanenumtype)
-  - [CommentStatusType](#commentstatustype)
-  - [CommentVisibilityType](#commentvisibilitytype)
+  - [ActivityTypeType](#activitytypetype)
+  - [BooleanEnumTypeType](#booleanenumtypetype)
+  - [CommentStatusTypeType](#commentstatustypetype)
+  - [CommentVisibilityTypeType](#commentvisibilitytypetype)
   - [DescribeActivitiesPaginatorName](#describeactivitiespaginatorname)
   - [DescribeCommentsPaginatorName](#describecommentspaginatorname)
   - [DescribeDocumentVersionsPaginatorName](#describedocumentversionspaginatorname)
@@ -21,33 +21,33 @@ type annotations stubs module
   - [DescribeResourcePermissionsPaginatorName](#describeresourcepermissionspaginatorname)
   - [DescribeRootFoldersPaginatorName](#describerootfolderspaginatorname)
   - [DescribeUsersPaginatorName](#describeuserspaginatorname)
-  - [DocumentSourceType](#documentsourcetype)
-  - [DocumentStatusType](#documentstatustype)
-  - [DocumentThumbnailType](#documentthumbnailtype)
-  - [DocumentVersionStatus](#documentversionstatus)
-  - [FolderContentType](#foldercontenttype)
-  - [LocaleType](#localetype)
-  - [OrderType](#ordertype)
-  - [PrincipalType](#principaltype)
-  - [ResourceCollectionType](#resourcecollectiontype)
-  - [ResourceSortType](#resourcesorttype)
-  - [ResourceStateType](#resourcestatetype)
-  - [ResourceType](#resourcetype)
-  - [RolePermissionType](#rolepermissiontype)
-  - [RoleType](#roletype)
-  - [ShareStatusType](#sharestatustype)
-  - [StorageType](#storagetype)
-  - [SubscriptionProtocolType](#subscriptionprotocoltype)
-  - [SubscriptionType](#subscriptiontype)
-  - [UserFilterType](#userfiltertype)
-  - [UserSortType](#usersorttype)
-  - [UserStatusType](#userstatustype)
-  - [UserType](#usertype)
+  - [DocumentSourceTypeType](#documentsourcetypetype)
+  - [DocumentStatusTypeType](#documentstatustypetype)
+  - [DocumentThumbnailTypeType](#documentthumbnailtypetype)
+  - [DocumentVersionStatusType](#documentversionstatustype)
+  - [FolderContentTypeType](#foldercontenttypetype)
+  - [LocaleTypeType](#localetypetype)
+  - [OrderTypeType](#ordertypetype)
+  - [PrincipalTypeType](#principaltypetype)
+  - [ResourceCollectionTypeType](#resourcecollectiontypetype)
+  - [ResourceSortTypeType](#resourcesorttypetype)
+  - [ResourceStateTypeType](#resourcestatetypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [RolePermissionTypeType](#rolepermissiontypetype)
+  - [RoleTypeType](#roletypetype)
+  - [ShareStatusTypeType](#sharestatustypetype)
+  - [StorageTypeType](#storagetypetype)
+  - [SubscriptionProtocolTypeType](#subscriptionprotocoltypetype)
+  - [SubscriptionTypeType](#subscriptiontypetype)
+  - [UserFilterTypeType](#userfiltertypetype)
+  - [UserSortTypeType](#usersorttypetype)
+  - [UserStatusTypeType](#userstatustypetype)
+  - [UserTypeType](#usertypetype)
 
-## ActivityType
+## ActivityTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import ActivityType
+from mypy_boto3_workdocs.literals import ActivityTypeType
 ```
 
 Values:
@@ -86,10 +86,10 @@ Values:
 - `FOLDER_SHARED`
 - `FOLDER_UNSHARED`
 
-## BooleanEnumType
+## BooleanEnumTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import BooleanEnumType
+from mypy_boto3_workdocs.literals import BooleanEnumTypeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `FALSE`
 - `TRUE`
 
-## CommentStatusType
+## CommentStatusTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import CommentStatusType
+from mypy_boto3_workdocs.literals import CommentStatusTypeType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 - `DRAFT`
 - `PUBLISHED`
 
-## CommentVisibilityType
+## CommentVisibilityTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import CommentVisibilityType
+from mypy_boto3_workdocs.literals import CommentVisibilityTypeType
 ```
 
 Values:
@@ -210,10 +210,10 @@ Values:
 
 - `describe_users`
 
-## DocumentSourceType
+## DocumentSourceTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import DocumentSourceType
+from mypy_boto3_workdocs.literals import DocumentSourceTypeType
 ```
 
 Values:
@@ -221,10 +221,10 @@ Values:
 - `ORIGINAL`
 - `WITH_COMMENTS`
 
-## DocumentStatusType
+## DocumentStatusTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import DocumentStatusType
+from mypy_boto3_workdocs.literals import DocumentStatusTypeType
 ```
 
 Values:
@@ -232,10 +232,10 @@ Values:
 - `ACTIVE`
 - `INITIALIZED`
 
-## DocumentThumbnailType
+## DocumentThumbnailTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import DocumentThumbnailType
+from mypy_boto3_workdocs.literals import DocumentThumbnailTypeType
 ```
 
 Values:
@@ -244,20 +244,20 @@ Values:
 - `SMALL`
 - `SMALL_HQ`
 
-## DocumentVersionStatus
+## DocumentVersionStatusType
 
 ```python
-from mypy_boto3_workdocs.literals import DocumentVersionStatus
+from mypy_boto3_workdocs.literals import DocumentVersionStatusType
 ```
 
 Values:
 
 - `ACTIVE`
 
-## FolderContentType
+## FolderContentTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import FolderContentType
+from mypy_boto3_workdocs.literals import FolderContentTypeType
 ```
 
 Values:
@@ -266,10 +266,10 @@ Values:
 - `DOCUMENT`
 - `FOLDER`
 
-## LocaleType
+## LocaleTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import LocaleType
+from mypy_boto3_workdocs.literals import LocaleTypeType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `zh_CN`
 - `zh_TW`
 
-## OrderType
+## OrderTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import OrderType
+from mypy_boto3_workdocs.literals import OrderTypeType
 ```
 
 Values:
@@ -297,10 +297,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## PrincipalType
+## PrincipalTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import PrincipalType
+from mypy_boto3_workdocs.literals import PrincipalTypeType
 ```
 
 Values:
@@ -311,20 +311,20 @@ Values:
 - `ORGANIZATION`
 - `USER`
 
-## ResourceCollectionType
+## ResourceCollectionTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import ResourceCollectionType
+from mypy_boto3_workdocs.literals import ResourceCollectionTypeType
 ```
 
 Values:
 
 - `SHARED_WITH_ME`
 
-## ResourceSortType
+## ResourceSortTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import ResourceSortType
+from mypy_boto3_workdocs.literals import ResourceSortTypeType
 ```
 
 Values:
@@ -332,10 +332,10 @@ Values:
 - `DATE`
 - `NAME`
 
-## ResourceStateType
+## ResourceStateTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import ResourceStateType
+from mypy_boto3_workdocs.literals import ResourceStateTypeType
 ```
 
 Values:
@@ -345,10 +345,10 @@ Values:
 - `RECYCLING`
 - `RESTORING`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import ResourceType
+from mypy_boto3_workdocs.literals import ResourceTypeType
 ```
 
 Values:
@@ -356,10 +356,10 @@ Values:
 - `DOCUMENT`
 - `FOLDER`
 
-## RolePermissionType
+## RolePermissionTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import RolePermissionType
+from mypy_boto3_workdocs.literals import RolePermissionTypeType
 ```
 
 Values:
@@ -367,10 +367,10 @@ Values:
 - `DIRECT`
 - `INHERITED`
 
-## RoleType
+## RoleTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import RoleType
+from mypy_boto3_workdocs.literals import RoleTypeType
 ```
 
 Values:
@@ -380,10 +380,10 @@ Values:
 - `OWNER`
 - `VIEWER`
 
-## ShareStatusType
+## ShareStatusTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import ShareStatusType
+from mypy_boto3_workdocs.literals import ShareStatusTypeType
 ```
 
 Values:
@@ -391,10 +391,10 @@ Values:
 - `FAILURE`
 - `SUCCESS`
 
-## StorageType
+## StorageTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import StorageType
+from mypy_boto3_workdocs.literals import StorageTypeType
 ```
 
 Values:
@@ -402,30 +402,30 @@ Values:
 - `QUOTA`
 - `UNLIMITED`
 
-## SubscriptionProtocolType
+## SubscriptionProtocolTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import SubscriptionProtocolType
+from mypy_boto3_workdocs.literals import SubscriptionProtocolTypeType
 ```
 
 Values:
 
 - `HTTPS`
 
-## SubscriptionType
+## SubscriptionTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import SubscriptionType
+from mypy_boto3_workdocs.literals import SubscriptionTypeType
 ```
 
 Values:
 
 - `ALL`
 
-## UserFilterType
+## UserFilterTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import UserFilterType
+from mypy_boto3_workdocs.literals import UserFilterTypeType
 ```
 
 Values:
@@ -433,10 +433,10 @@ Values:
 - `ACTIVE_PENDING`
 - `ALL`
 
-## UserSortType
+## UserSortTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import UserSortType
+from mypy_boto3_workdocs.literals import UserSortTypeType
 ```
 
 Values:
@@ -447,10 +447,10 @@ Values:
 - `USER_NAME`
 - `USER_STATUS`
 
-## UserStatusType
+## UserStatusTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import UserStatusType
+from mypy_boto3_workdocs.literals import UserStatusTypeType
 ```
 
 Values:
@@ -459,10 +459,10 @@ Values:
 - `INACTIVE`
 - `PENDING`
 
-## UserType
+## UserTypeType
 
 ```python
-from mypy_boto3_workdocs.literals import UserType
+from mypy_boto3_workdocs.literals import UserTypeType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [MQ](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mq.html#MQ)
 type annotations stubs module
 [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
@@ -66,7 +66,7 @@ from mypy_boto3_mq.type_defs import BrokerEngineTypeTypeDef
 
 Optional fields:
 
-- `EngineType`: [EngineType](./literals.md#enginetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `EngineVersions`:
   `List`\[[EngineVersionTypeDef](./type_defs.md#engineversiontypedef)\]
 
@@ -80,11 +80,11 @@ Optional fields:
 
 - `AvailabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
-- `EngineType`: [EngineType](./literals.md#enginetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `HostInstanceType`: `str`
-- `StorageType`: [BrokerStorageType](./literals.md#brokerstoragetype)
+- `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
 - `SupportedDeploymentModes`:
-  `List`\[[DeploymentMode](./literals.md#deploymentmode)\]
+  `List`\[[DeploymentModeType](./literals.md#deploymentmodetype)\]
 - `SupportedEngineVersions`: `List`\[`str`\]
 
 ## BrokerInstanceTypeDef
@@ -110,10 +110,10 @@ Optional fields:
 - `BrokerArn`: `str`
 - `BrokerId`: `str`
 - `BrokerName`: `str`
-- `BrokerState`: [BrokerState](./literals.md#brokerstate)
+- `BrokerState`: [BrokerStateType](./literals.md#brokerstatetype)
 - `Created`: `datetime`
-- `DeploymentMode`: [DeploymentMode](./literals.md#deploymentmode)
-- `EngineType`: [EngineType](./literals.md#enginetype)
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `HostInstanceType`: `str`
 
 ## ConfigurationIdTypeDef
@@ -149,10 +149,10 @@ Optional fields:
 
 - `Arn`: `str`
 - `AuthenticationStrategy`:
-  [AuthenticationStrategy](./literals.md#authenticationstrategy)
+  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `Created`: `datetime`
 - `Description`: `str`
-- `EngineType`: [EngineType](./literals.md#enginetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `EngineVersion`: `str`
 - `Id`: `str`
 - `LatestRevision`:
@@ -194,7 +194,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `AuthenticationStrategy`:
-  [AuthenticationStrategy](./literals.md#authenticationstrategy)
+  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `Created`: `datetime`
 - `Id`: `str`
 - `LatestRevision`:
@@ -246,20 +246,21 @@ from mypy_boto3_mq.type_defs import DescribeBrokerResponseTypeDef
 Optional fields:
 
 - `AuthenticationStrategy`:
-  [AuthenticationStrategy](./literals.md#authenticationstrategy)
+  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `AutoMinorVersionUpgrade`: `bool`
 - `BrokerArn`: `str`
 - `BrokerId`: `str`
 - `BrokerInstances`:
   `List`\[[BrokerInstanceTypeDef](./type_defs.md#brokerinstancetypedef)\]
 - `BrokerName`: `str`
-- `BrokerState`: [BrokerState](./literals.md#brokerstate)
-- `Configurations`: [ConfigurationsTypeDef](./type_defs.md#configurationstypedef)
+- `BrokerState`: [BrokerStateType](./literals.md#brokerstatetype)
+- `Configurations`:
+  [ConfigurationsTypeDef](./type_defs.md#configurationstypedef)
 - `Created`: `datetime`
-- `DeploymentMode`: [DeploymentMode](./literals.md#deploymentmode)
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
 - `EncryptionOptions`:
   [EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef)
-- `EngineType`: [EngineType](./literals.md#enginetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `EngineVersion`: `str`
 - `HostInstanceType`: `str`
 - `LdapServerMetadata`:
@@ -268,7 +269,7 @@ Optional fields:
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
 - `PendingAuthenticationStrategy`:
-  [AuthenticationStrategy](./literals.md#authenticationstrategy)
+  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `PendingEngineVersion`: `str`
 - `PendingHostInstanceType`: `str`
 - `PendingLdapServerMetadata`:
@@ -276,7 +277,7 @@ Optional fields:
 - `PendingSecurityGroups`: `List`\[`str`\]
 - `PubliclyAccessible`: `bool`
 - `SecurityGroups`: `List`\[`str`\]
-- `StorageType`: [BrokerStorageType](./literals.md#brokerstoragetype)
+- `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Users`: `List`\[[UserSummaryTypeDef](./type_defs.md#usersummarytypedef)\]
@@ -291,10 +292,10 @@ Optional fields:
 
 - `Arn`: `str`
 - `AuthenticationStrategy`:
-  [AuthenticationStrategy](./literals.md#authenticationstrategy)
+  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `Created`: `datetime`
 - `Description`: `str`
-- `EngineType`: [EngineType](./literals.md#enginetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `EngineVersion`: `str`
 - `Id`: `str`
 - `LatestRevision`:
@@ -529,7 +530,8 @@ Optional fields:
 
 - `AttributeName`: `str`
 - `ElementName`: `str`
-- `Reason`: [SanitizationWarningReason](./literals.md#sanitizationwarningreason)
+- `Reason`:
+  [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
 
 ## UpdateBrokerResponseTypeDef
 
@@ -540,7 +542,7 @@ from mypy_boto3_mq.type_defs import UpdateBrokerResponseTypeDef
 Optional fields:
 
 - `AuthenticationStrategy`:
-  [AuthenticationStrategy](./literals.md#authenticationstrategy)
+  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
 - `AutoMinorVersionUpgrade`: `bool`
 - `BrokerId`: `str`
 - `Configuration`:
@@ -579,7 +581,7 @@ Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `PendingChange`: [ChangeType](./literals.md#changetype)
+- `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
 
 ## UserSummaryTypeDef
 
@@ -589,7 +591,7 @@ from mypy_boto3_mq.type_defs import UserSummaryTypeDef
 
 Optional fields:
 
-- `PendingChange`: [ChangeType](./literals.md#changetype)
+- `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
 - `Username`: `str`
 
 ## UserTypeDef
@@ -613,6 +615,6 @@ from mypy_boto3_mq.type_defs import WeeklyStartTimeTypeDef
 
 Optional fields:
 
-- `DayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
+- `DayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `TimeOfDay`: `str`
 - `TimeZone`: `str`

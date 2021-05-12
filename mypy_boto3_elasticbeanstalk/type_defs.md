@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticBeanstalk](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
@@ -199,7 +199,8 @@ Optional fields:
 - `SourceBundle`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
-- `Status`: [ApplicationVersionStatus](./literals.md#applicationversionstatus)
+- `Status`:
+  [ApplicationVersionStatusType](./literals.md#applicationversionstatustype)
 
 ## ApplicationVersionDescriptionsMessageTypeDef
 
@@ -234,7 +235,7 @@ Optional fields:
 
 - `ActionId`: `str`
 - `ActionDescription`: `str`
-- `ActionType`: [ActionType](./literals.md#actiontype)
+- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
 - `Status`: `str`
 
 ## AutoScalingGroupTypeDef
@@ -261,7 +262,7 @@ Required fields:
 Optional fields:
 
 - `ArtifactName`: `str`
-- `ComputeType`: [ComputeType](./literals.md#computetype)
+- `ComputeType`: [ComputeTypeType](./literals.md#computetypetype)
 - `TimeoutInMinutes`: `int`
 
 ## BuilderTypeDef
@@ -316,7 +317,7 @@ Optional fields:
 - `ChangeSeverity`: `str`
 - `UserDefined`: `bool`
 - `ValueType`:
-  [ConfigurationOptionValueType](./literals.md#configurationoptionvaluetype)
+  [ConfigurationOptionValueTypeType](./literals.md#configurationoptionvaluetypetype)
 - `ValueOptions`: `List`\[`str`\]
 - `MinValue`: `int`
 - `MaxValue`: `int`
@@ -365,7 +366,7 @@ Optional fields:
 - `Description`: `str`
 - `EnvironmentName`: `str`
 - `DeploymentStatus`:
-  [ConfigurationDeploymentStatus](./literals.md#configurationdeploymentstatus)
+  [ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype)
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
 - `OptionSettings`:
@@ -458,7 +459,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import DescribeAccountAttributesResul
 
 Optional fields:
 
-- `ResourceQuotas`: [ResourceQuotasTypeDef](./type_defs.md#resourcequotastypedef)
+- `ResourceQuotas`:
+  [ResourceQuotasTypeDef](./type_defs.md#resourcequotastypedef)
 
 ## DescribeEnvironmentHealthResultTypeDef
 
@@ -470,7 +472,7 @@ Optional fields:
 
 - `EnvironmentName`: `str`
 - `HealthStatus`: `str`
-- `Status`: [EnvironmentHealth](./literals.md#environmenthealth)
+- `Status`: [EnvironmentHealthType](./literals.md#environmenthealthtype)
 - `Color`: `str`
 - `Causes`: `List`\[`str`\]
 - `ApplicationMetrics`:
@@ -546,11 +548,11 @@ Optional fields:
 - `CNAME`: `str`
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
-- `Status`: [EnvironmentStatus](./literals.md#environmentstatus)
+- `Status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
 - `AbortableOperationInProgress`: `bool`
-- `Health`: [EnvironmentHealth](./literals.md#environmenthealth)
+- `Health`: [EnvironmentHealthType](./literals.md#environmenthealthtype)
 - `HealthStatus`:
-  [EnvironmentHealthStatus](./literals.md#environmenthealthstatus)
+  [EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype)
 - `Resources`:
   [EnvironmentResourcesDescriptionTypeDef](./type_defs.md#environmentresourcesdescriptiontypedef)
 - `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
@@ -579,7 +581,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentInfoDescriptionType
 
 Optional fields:
 
-- `InfoType`: [EnvironmentInfoType](./literals.md#environmentinfotype)
+- `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
 - `Ec2InstanceId`: `str`
 - `SampleTimestamp`: `datetime`
 - `Message`: `str`
@@ -666,7 +668,7 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `PlatformArn`: `str`
 - `RequestId`: `str`
-- `Severity`: [EventSeverity](./literals.md#eventseverity)
+- `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
 
 ## EventDescriptionsMessageTypeDef
 
@@ -822,10 +824,10 @@ from mypy_boto3_elasticbeanstalk.type_defs import ManagedActionHistoryItemTypeDe
 Optional fields:
 
 - `ActionId`: `str`
-- `ActionType`: [ActionType](./literals.md#actiontype)
+- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
 - `ActionDescription`: `str`
-- `FailureType`: [FailureType](./literals.md#failuretype)
-- `Status`: [ActionHistoryStatus](./literals.md#actionhistorystatus)
+- `FailureType`: [FailureTypeType](./literals.md#failuretypetype)
+- `Status`: [ActionHistoryStatusType](./literals.md#actionhistorystatustype)
 - `FailureDescription`: `str`
 - `ExecutedTime`: `datetime`
 - `FinishedTime`: `datetime`
@@ -840,8 +842,8 @@ Optional fields:
 
 - `ActionId`: `str`
 - `ActionDescription`: `str`
-- `ActionType`: [ActionType](./literals.md#actiontype)
-- `Status`: [ActionStatus](./literals.md#actionstatus)
+- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
+- `Status`: [ActionStatusType](./literals.md#actionstatustype)
 - `WindowStartTime`: `datetime`
 
 ## MaxAgeRuleTypeDef
@@ -936,7 +938,7 @@ Optional fields:
 - `PlatformName`: `str`
 - `PlatformVersion`: `str`
 - `SolutionStackName`: `str`
-- `PlatformStatus`: [PlatformStatus](./literals.md#platformstatus)
+- `PlatformStatus`: [PlatformStatusType](./literals.md#platformstatustype)
 - `DateCreated`: `datetime`
 - `DateUpdated`: `datetime`
 - `PlatformCategory`: `str`
@@ -948,7 +950,8 @@ Optional fields:
   `List`\[[PlatformProgrammingLanguageTypeDef](./type_defs.md#platformprogramminglanguagetypedef)\]
 - `Frameworks`:
   `List`\[[PlatformFrameworkTypeDef](./type_defs.md#platformframeworktypedef)\]
-- `CustomAmiList`: `List`\[[CustomAmiTypeDef](./type_defs.md#customamitypedef)\]
+- `CustomAmiList`:
+  `List`\[[CustomAmiTypeDef](./type_defs.md#customamitypedef)\]
 - `SupportedTierList`: `List`\[`str`\]
 - `SupportedAddonList`: `List`\[`str`\]
 - `PlatformLifecycleState`: `str`
@@ -999,7 +1002,7 @@ Optional fields:
 
 - `PlatformArn`: `str`
 - `PlatformOwner`: `str`
-- `PlatformStatus`: [PlatformStatus](./literals.md#platformstatus)
+- `PlatformStatus`: [PlatformStatusType](./literals.md#platformstatustype)
 - `PlatformCategory`: `str`
 - `OperatingSystemName`: `str`
 - `OperatingSystemVersion`: `str`
@@ -1039,10 +1042,12 @@ from mypy_boto3_elasticbeanstalk.type_defs import ResourceQuotasTypeDef
 
 Optional fields:
 
-- `ApplicationQuota`: [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
+- `ApplicationQuota`:
+  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
 - `ApplicationVersionQuota`:
   [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
-- `EnvironmentQuota`: [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
+- `EnvironmentQuota`:
+  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
 - `ConfigurationTemplateQuota`:
   [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
 - `CustomPlatformQuota`:
@@ -1132,8 +1137,9 @@ from mypy_boto3_elasticbeanstalk.type_defs import SourceBuildInformationTypeDef
 
 Required fields:
 
-- `SourceType`: [SourceType](./literals.md#sourcetype)
-- `SourceRepository`: [SourceRepository](./literals.md#sourcerepository)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
+- `SourceRepository`:
+  [SourceRepositoryType](./literals.md#sourcerepositorytype)
 - `SourceLocation`: `str`
 
 ## SourceConfigurationTypeDef
@@ -1168,7 +1174,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import SystemStatusTypeDef
 
 Optional fields:
 
-- `CPUUtilization`: [CPUUtilizationTypeDef](./type_defs.md#cpuutilizationtypedef)
+- `CPUUtilization`:
+  [CPUUtilizationTypeDef](./type_defs.md#cpuutilizationtypedef)
 - `LoadAverage`: `List`\[`float`\]
 
 ## TagTypeDef
@@ -1201,7 +1208,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import ValidationMessageTypeDef
 Optional fields:
 
 - `Message`: `str`
-- `Severity`: [ValidationSeverity](./literals.md#validationseverity)
+- `Severity`: [ValidationSeverityType](./literals.md#validationseveritytype)
 - `Namespace`: `str`
 - `OptionName`: `str`
 

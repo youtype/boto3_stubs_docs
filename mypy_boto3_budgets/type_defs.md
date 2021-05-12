@@ -3,7 +3,7 @@
 > [Index](..) > [Budgets](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/budgets.html#Budgets)
 type annotations stubs module
 [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
@@ -61,8 +61,8 @@ from mypy_boto3_budgets.type_defs import ActionHistoryTypeDef
 Required fields:
 
 - `Timestamp`: `datetime`
-- `Status`: [ActionStatus](./literals.md#actionstatus)
-- `EventType`: [EventType](./literals.md#eventtype)
+- `Status`: [ActionStatusType](./literals.md#actionstatustype)
+- `EventType`: [EventTypeType](./literals.md#eventtypetype)
 - `ActionHistoryDetails`:
   [ActionHistoryDetailsTypeDef](./type_defs.md#actionhistorydetailstypedef)
 
@@ -75,7 +75,7 @@ from mypy_boto3_budgets.type_defs import ActionThresholdTypeDef
 Required fields:
 
 - `ActionThresholdValue`: `float`
-- `ActionThresholdType`: [ThresholdType](./literals.md#thresholdtype)
+- `ActionThresholdType`: [ThresholdTypeType](./literals.md#thresholdtypetype)
 
 ## ActionTypeDef
 
@@ -87,15 +87,17 @@ Required fields:
 
 - `ActionId`: `str`
 - `BudgetName`: `str`
-- `NotificationType`: [NotificationType](./literals.md#notificationtype)
-- `ActionType`: [ActionType](./literals.md#actiontype)
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype)
+- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
 - `ActionThreshold`:
   [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
 - `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
 - `ExecutionRoleArn`: `str`
-- `ApprovalModel`: [ApprovalModel](./literals.md#approvalmodel)
-- `Status`: [ActionStatus](./literals.md#actionstatus)
-- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
+- `Status`: [ActionStatusType](./literals.md#actionstatustype)
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## BudgetPerformanceHistoryTypeDef
 
@@ -106,10 +108,10 @@ from mypy_boto3_budgets.type_defs import BudgetPerformanceHistoryTypeDef
 Optional fields:
 
 - `BudgetName`: `str`
-- `BudgetType`: [BudgetType](./literals.md#budgettype)
+- `BudgetType`: [BudgetTypeType](./literals.md#budgettypetype)
 - `CostFilters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `CostTypes`: [CostTypesTypeDef](./type_defs.md#costtypestypedef)
-- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
+- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
 - `BudgetedAndActualAmountsList`:
   `List`\[[BudgetedAndActualAmountsTypeDef](./type_defs.md#budgetedandactualamountstypedef)\]
 
@@ -122,8 +124,8 @@ from mypy_boto3_budgets.type_defs import BudgetTypeDef
 Required fields:
 
 - `BudgetName`: `str`
-- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
-- `BudgetType`: [BudgetType](./literals.md#budgettype)
+- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
+- `BudgetType`: [BudgetTypeType](./literals.md#budgettypetype)
 
 Optional fields:
 
@@ -330,7 +332,8 @@ from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationRespo
 
 Optional fields:
 
-- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `NextToken`: `str`
 
 ## ExecuteBudgetActionResponseTypeDef
@@ -344,7 +347,7 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `ActionId`: `str`
-- `ExecutionType`: [ExecutionType](./literals.md#executiontype)
+- `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
 
 ## IamActionDefinitionTypeDef
 
@@ -370,14 +373,17 @@ from mypy_boto3_budgets.type_defs import NotificationTypeDef
 
 Required fields:
 
-- `NotificationType`: [NotificationType](./literals.md#notificationtype)
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Threshold`: `float`
 
 Optional fields:
 
-- `ThresholdType`: [ThresholdType](./literals.md#thresholdtype)
-- `NotificationState`: [NotificationState](./literals.md#notificationstate)
+- `ThresholdType`: [ThresholdTypeType](./literals.md#thresholdtypetype)
+- `NotificationState`:
+  [NotificationStateType](./literals.md#notificationstatetype)
 
 ## NotificationWithSubscribersTypeDef
 
@@ -388,7 +394,8 @@ from mypy_boto3_budgets.type_defs import NotificationWithSubscribersTypeDef
 Required fields:
 
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -432,7 +439,7 @@ from mypy_boto3_budgets.type_defs import SsmActionDefinitionTypeDef
 
 Required fields:
 
-- `ActionSubType`: [ActionSubType](./literals.md#actionsubtype)
+- `ActionSubType`: [ActionSubTypeType](./literals.md#actionsubtypetype)
 - `Region`: `str`
 - `InstanceIds`: `List`\[`str`\]
 
@@ -444,7 +451,8 @@ from mypy_boto3_budgets.type_defs import SubscriberTypeDef
 
 Required fields:
 
-- `SubscriptionType`: [SubscriptionType](./literals.md#subscriptiontype)
+- `SubscriptionType`:
+  [SubscriptionTypeType](./literals.md#subscriptiontypetype)
 - `Address`: `str`
 
 ## TimePeriodTypeDef

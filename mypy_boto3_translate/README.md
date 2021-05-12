@@ -3,7 +3,7 @@
 > [Index](..) > Translate
 
 Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate)
 type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
@@ -30,44 +30,44 @@ Can be used directly:
 from mypy_boto3_translate.client import TranslateClient
 ```
 
-TranslateClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_parallel_data](./client.md#create-parallel-data)
-- [delete_parallel_data](./client.md#delete-parallel-data)
-- [delete_terminology](./client.md#delete-terminology)
-- [describe_text_translation_job](./client.md#describe-text-translation-job)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_parallel_data](./client.md#get-parallel-data)
-- [get_terminology](./client.md#get-terminology)
-- [import_terminology](./client.md#import-terminology)
-- [list_parallel_data](./client.md#list-parallel-data)
-- [list_terminologies](./client.md#list-terminologies)
-- [list_text_translation_jobs](./client.md#list-text-translation-jobs)
-- [start_text_translation_job](./client.md#start-text-translation-job)
-- [stop_text_translation_job](./client.md#stop-text-translation-job)
-- [translate_text](./client.md#translate-text)
-- [update_parallel_data](./client.md#update-parallel-data)
+- [can_paginate](./client.md#can_paginate)
+- [create_parallel_data](./client.md#create_parallel_data)
+- [delete_parallel_data](./client.md#delete_parallel_data)
+- [delete_terminology](./client.md#delete_terminology)
+- [describe_text_translation_job](./client.md#describe_text_translation_job)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_parallel_data](./client.md#get_parallel_data)
+- [get_terminology](./client.md#get_terminology)
+- [import_terminology](./client.md#import_terminology)
+- [list_parallel_data](./client.md#list_parallel_data)
+- [list_terminologies](./client.md#list_terminologies)
+- [list_text_translation_jobs](./client.md#list_text_translation_jobs)
+- [start_text_translation_job](./client.md#start_text_translation_job)
+- [stop_text_translation_job](./client.md#stop_text_translation_job)
+- [translate_text](./client.md#translate_text)
+- [update_parallel_data](./client.md#update_parallel_data)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [ConflictException](./client.md#conflictexception)
-- [DetectedLanguageLowConfidenceException](./client.md#detectedlanguagelowconfidenceexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidFilterException](./client.md#invalidfilterexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TextSizeLimitExceededException](./client.md#textsizelimitexceededexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnsupportedLanguagePairException](./client.md#unsupportedlanguagepairexception)
+TranslateClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- ConflictException
+- DetectedLanguageLowConfidenceException
+- InternalServerException
+- InvalidFilterException
+- InvalidParameterValueException
+- InvalidRequestException
+- LimitExceededException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- TextSizeLimitExceededException
+- TooManyRequestsException
+- UnsupportedLanguagePairException
 
 ## Paginators
 
@@ -89,16 +89,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_translate.literals import EncryptionKeyType, ...
+from mypy_boto3_translate.literals import EncryptionKeyTypeType, ...
 ```
 
-- [EncryptionKeyType](./literals.md#encryptionkeytype)
-- [JobStatus](./literals.md#jobstatus)
+- [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype)
+- [JobStatusType](./literals.md#jobstatustype)
 - [ListTerminologiesPaginatorName](./literals.md#listterminologiespaginatorname)
-- [MergeStrategy](./literals.md#mergestrategy)
-- [ParallelDataFormat](./literals.md#paralleldataformat)
-- [ParallelDataStatus](./literals.md#paralleldatastatus)
-- [TerminologyDataFormat](./literals.md#terminologydataformat)
+- [MergeStrategyType](./literals.md#mergestrategytype)
+- [ParallelDataFormatType](./literals.md#paralleldataformattype)
+- [ParallelDataStatusType](./literals.md#paralleldatastatustype)
+- [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudDirectory](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
 [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
@@ -866,7 +866,8 @@ from mypy_boto3_clouddirectory.type_defs import BatchReadExceptionTypeDef
 
 Optional fields:
 
-- `Type`: [BatchReadExceptionType](./literals.md#batchreadexceptiontype)
+- `Type`:
+  [BatchReadExceptionTypeType](./literals.md#batchreadexceptiontypetype)
 - `Message`: `str`
 
 ## BatchReadOperationResponseTypeDef
@@ -1189,7 +1190,7 @@ Optional fields:
 
 - `Name`: `str`
 - `DirectoryArn`: `str`
-- `State`: [DirectoryState](./literals.md#directorystate)
+- `State`: [DirectoryStateType](./literals.md#directorystatetype)
 - `CreationDateTime`: `datetime`
 
 ## DisableDirectoryResponseTypeDef
@@ -1220,7 +1221,7 @@ from mypy_boto3_clouddirectory.type_defs import FacetAttributeDefinitionTypeDef
 
 Required fields:
 
-- `Type`: [FacetAttributeType](./literals.md#facetattributetype)
+- `Type`: [FacetAttributeTypeType](./literals.md#facetattributetypetype)
 
 Optional fields:
 
@@ -1257,7 +1258,7 @@ Optional fields:
 - `AttributeReference`:
   [FacetAttributeReferenceTypeDef](./type_defs.md#facetattributereferencetypedef)
 - `RequiredBehavior`:
-  [RequiredAttributeBehavior](./literals.md#requiredattributebehavior)
+  [RequiredAttributeBehaviorType](./literals.md#requiredattributebehaviortype)
 
 ## FacetAttributeUpdateTypeDef
 
@@ -1268,7 +1269,7 @@ from mypy_boto3_clouddirectory.type_defs import FacetAttributeUpdateTypeDef
 Optional fields:
 
 - `Attribute`: [FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)
-- `Action`: [UpdateActionType](./literals.md#updateactiontype)
+- `Action`: [UpdateActionTypeType](./literals.md#updateactiontypetype)
 
 ## FacetTypeDef
 
@@ -1279,8 +1280,8 @@ from mypy_boto3_clouddirectory.type_defs import FacetTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `ObjectType`: [ObjectType](./literals.md#objecttype)
-- `FacetStyle`: [FacetStyle](./literals.md#facetstyle)
+- `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
+- `FacetStyle`: [FacetStyleType](./literals.md#facetstyletype)
 
 ## GetAppliedSchemaVersionResponseTypeDef
 
@@ -1387,7 +1388,8 @@ from mypy_boto3_clouddirectory.type_defs import LinkAttributeActionTypeDef
 
 Optional fields:
 
-- `AttributeActionType`: [UpdateActionType](./literals.md#updateactiontype)
+- `AttributeActionType`:
+  [UpdateActionTypeType](./literals.md#updateactiontypetype)
 - `AttributeUpdateValue`:
   [TypedAttributeValueTypeDef](./type_defs.md#typedattributevaluetypedef)
 
@@ -1656,7 +1658,8 @@ from mypy_boto3_clouddirectory.type_defs import ObjectAttributeActionTypeDef
 
 Optional fields:
 
-- `ObjectAttributeActionType`: [UpdateActionType](./literals.md#updateactiontype)
+- `ObjectAttributeActionType`:
+  [UpdateActionTypeType](./literals.md#updateactiontypetype)
 - `ObjectAttributeUpdateValue`:
   [TypedAttributeValueTypeDef](./type_defs.md#typedattributevaluetypedef)
 
@@ -1680,7 +1683,8 @@ from mypy_boto3_clouddirectory.type_defs import ObjectAttributeUpdateTypeDef
 
 Optional fields:
 
-- `ObjectAttributeKey`: [AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)
+- `ObjectAttributeKey`:
+  [AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)
 - `ObjectAttributeAction`:
   [ObjectAttributeActionTypeDef](./type_defs.md#objectattributeactiontypedef)
 
@@ -1780,7 +1784,7 @@ from mypy_boto3_clouddirectory.type_defs import RuleTypeDef
 
 Optional fields:
 
-- `Type`: [RuleType](./literals.md#ruletype)
+- `Type`: [RuleTypeType](./literals.md#ruletypetype)
 - `Parameters`: `Dict`\[`str`, `str`\]
 
 ## SchemaFacetTypeDef
@@ -1813,8 +1817,8 @@ from mypy_boto3_clouddirectory.type_defs import TypedAttributeValueRangeTypeDef
 
 Required fields:
 
-- `StartMode`: [RangeMode](./literals.md#rangemode)
-- `EndMode`: [RangeMode](./literals.md#rangemode)
+- `StartMode`: [RangeModeType](./literals.md#rangemodetype)
+- `EndMode`: [RangeModeType](./literals.md#rangemodetype)
 
 Optional fields:
 
@@ -1846,9 +1850,9 @@ from mypy_boto3_clouddirectory.type_defs import TypedLinkAttributeDefinitionType
 Required fields:
 
 - `Name`: `str`
-- `Type`: [FacetAttributeType](./literals.md#facetattributetype)
+- `Type`: [FacetAttributeTypeType](./literals.md#facetattributetypetype)
 - `RequiredBehavior`:
-  [RequiredAttributeBehavior](./literals.md#requiredattributebehavior)
+  [RequiredAttributeBehaviorType](./literals.md#requiredattributebehaviortype)
 
 Optional fields:
 
@@ -1882,7 +1886,7 @@ Required fields:
 
 - `Attribute`:
   [TypedLinkAttributeDefinitionTypeDef](./type_defs.md#typedlinkattributedefinitiontypedef)
-- `Action`: [UpdateActionType](./literals.md#updateactiontype)
+- `Action`: [UpdateActionTypeType](./literals.md#updateactiontypetype)
 
 ## TypedLinkFacetTypeDef
 

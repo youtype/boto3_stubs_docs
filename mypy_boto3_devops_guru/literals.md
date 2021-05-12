@@ -3,41 +3,41 @@
 > [Index](..) > [DevopsGuru](.) > Literals
 
 Auto-generated documentation for
-[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Literals for boto3 DevopsGuru module](#literals-for-boto3-devopsguru-module)
-  - [AnomalySeverity](#anomalyseverity)
-  - [AnomalyStatus](#anomalystatus)
-  - [CloudWatchMetricsStat](#cloudwatchmetricsstat)
-  - [CostEstimationServiceResourceState](#costestimationserviceresourcestate)
-  - [CostEstimationStatus](#costestimationstatus)
+  - [AnomalySeverityType](#anomalyseveritytype)
+  - [AnomalyStatusType](#anomalystatustype)
+  - [CloudWatchMetricsStatType](#cloudwatchmetricsstattype)
+  - [CostEstimationServiceResourceStateType](#costestimationserviceresourcestatetype)
+  - [CostEstimationStatusType](#costestimationstatustype)
   - [DescribeResourceCollectionHealthPaginatorName](#describeresourcecollectionhealthpaginatorname)
-  - [EventClass](#eventclass)
-  - [EventDataSource](#eventdatasource)
+  - [EventClassType](#eventclasstype)
+  - [EventDataSourceType](#eventdatasourcetype)
   - [GetCostEstimationPaginatorName](#getcostestimationpaginatorname)
   - [GetResourceCollectionPaginatorName](#getresourcecollectionpaginatorname)
-  - [InsightFeedbackOption](#insightfeedbackoption)
-  - [InsightSeverity](#insightseverity)
-  - [InsightStatus](#insightstatus)
-  - [InsightType](#insighttype)
+  - [InsightFeedbackOptionType](#insightfeedbackoptiontype)
+  - [InsightSeverityType](#insightseveritytype)
+  - [InsightStatusType](#insightstatustype)
+  - [InsightTypeType](#insighttypetype)
   - [ListAnomaliesForInsightPaginatorName](#listanomaliesforinsightpaginatorname)
   - [ListEventsPaginatorName](#listeventspaginatorname)
   - [ListInsightsPaginatorName](#listinsightspaginatorname)
   - [ListNotificationChannelsPaginatorName](#listnotificationchannelspaginatorname)
   - [ListRecommendationsPaginatorName](#listrecommendationspaginatorname)
-  - [Locale](#locale)
-  - [OptInStatus](#optinstatus)
-  - [ResourceCollectionType](#resourcecollectiontype)
+  - [LocaleType](#localetype)
+  - [OptInStatusType](#optinstatustype)
+  - [ResourceCollectionTypeType](#resourcecollectiontypetype)
   - [SearchInsightsPaginatorName](#searchinsightspaginatorname)
-  - [ServiceName](#servicename)
-  - [UpdateResourceCollectionAction](#updateresourcecollectionaction)
+  - [ServiceNameType](#servicenametype)
+  - [UpdateResourceCollectionActionType](#updateresourcecollectionactiontype)
 
-## AnomalySeverity
+## AnomalySeverityType
 
 ```python
-from mypy_boto3_devops_guru.literals import AnomalySeverity
+from mypy_boto3_devops_guru.literals import AnomalySeverityType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## AnomalyStatus
+## AnomalyStatusType
 
 ```python
-from mypy_boto3_devops_guru.literals import AnomalyStatus
+from mypy_boto3_devops_guru.literals import AnomalyStatusType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 - `CLOSED`
 - `ONGOING`
 
-## CloudWatchMetricsStat
+## CloudWatchMetricsStatType
 
 ```python
-from mypy_boto3_devops_guru.literals import CloudWatchMetricsStat
+from mypy_boto3_devops_guru.literals import CloudWatchMetricsStatType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `SampleCount`
 - `Sum`
 
-## CostEstimationServiceResourceState
+## CostEstimationServiceResourceStateType
 
 ```python
-from mypy_boto3_devops_guru.literals import CostEstimationServiceResourceState
+from mypy_boto3_devops_guru.literals import CostEstimationServiceResourceStateType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## CostEstimationStatus
+## CostEstimationStatusType
 
 ```python
-from mypy_boto3_devops_guru.literals import CostEstimationStatus
+from mypy_boto3_devops_guru.literals import CostEstimationStatusType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 
 - `describe_resource_collection_health`
 
-## EventClass
+## EventClassType
 
 ```python
-from mypy_boto3_devops_guru.literals import EventClass
+from mypy_boto3_devops_guru.literals import EventClassType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `SCHEMA_CHANGE`
 - `SECURITY_CHANGE`
 
-## EventDataSource
+## EventDataSourceType
 
 ```python
-from mypy_boto3_devops_guru.literals import EventDataSource
+from mypy_boto3_devops_guru.literals import EventDataSourceType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 
 - `get_resource_collection`
 
-## InsightFeedbackOption
+## InsightFeedbackOptionType
 
 ```python
-from mypy_boto3_devops_guru.literals import InsightFeedbackOption
+from mypy_boto3_devops_guru.literals import InsightFeedbackOptionType
 ```
 
 Values:
@@ -165,10 +165,10 @@ Values:
 - `RECOMMENDATION_USEFUL`
 - `VALID_COLLECTION`
 
-## InsightSeverity
+## InsightSeverityType
 
 ```python
-from mypy_boto3_devops_guru.literals import InsightSeverity
+from mypy_boto3_devops_guru.literals import InsightSeverityType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## InsightStatus
+## InsightStatusType
 
 ```python
-from mypy_boto3_devops_guru.literals import InsightStatus
+from mypy_boto3_devops_guru.literals import InsightStatusType
 ```
 
 Values:
@@ -188,10 +188,10 @@ Values:
 - `CLOSED`
 - `ONGOING`
 
-## InsightType
+## InsightTypeType
 
 ```python
-from mypy_boto3_devops_guru.literals import InsightType
+from mypy_boto3_devops_guru.literals import InsightTypeType
 ```
 
 Values:
@@ -249,10 +249,10 @@ Values:
 
 - `list_recommendations`
 
-## Locale
+## LocaleType
 
 ```python
-from mypy_boto3_devops_guru.literals import Locale
+from mypy_boto3_devops_guru.literals import LocaleType
 ```
 
 Values:
@@ -269,10 +269,10 @@ Values:
 - `ZH_CN`
 - `ZH_TW`
 
-## OptInStatus
+## OptInStatusType
 
 ```python
-from mypy_boto3_devops_guru.literals import OptInStatus
+from mypy_boto3_devops_guru.literals import OptInStatusType
 ```
 
 Values:
@@ -280,10 +280,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ResourceCollectionType
+## ResourceCollectionTypeType
 
 ```python
-from mypy_boto3_devops_guru.literals import ResourceCollectionType
+from mypy_boto3_devops_guru.literals import ResourceCollectionTypeType
 ```
 
 Values:
@@ -301,10 +301,10 @@ Values:
 
 - `search_insights`
 
-## ServiceName
+## ServiceNameType
 
 ```python
-from mypy_boto3_devops_guru.literals import ServiceName
+from mypy_boto3_devops_guru.literals import ServiceNameType
 ```
 
 Values:
@@ -335,10 +335,10 @@ Values:
 - `STEP_FUNCTIONS`
 - `SWF`
 
-## UpdateResourceCollectionAction
+## UpdateResourceCollectionActionType
 
 ```python
-from mypy_boto3_devops_guru.literals import UpdateResourceCollectionAction
+from mypy_boto3_devops_guru.literals import UpdateResourceCollectionActionType
 ```
 
 Values:

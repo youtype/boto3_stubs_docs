@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisAnalyticsV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
@@ -220,7 +220,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfiguration
 
 Required fields:
 
-- `CodeContentType`: [CodeContentType](./literals.md#codecontenttype)
+- `CodeContentType`: [CodeContentTypeType](./literals.md#codecontenttypetype)
 
 Optional fields:
 
@@ -235,7 +235,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfiguration
 
 Required fields:
 
-- `CodeContentType`: [CodeContentType](./literals.md#codecontenttype)
+- `CodeContentType`: [CodeContentTypeType](./literals.md#codecontenttypetype)
 
 Optional fields:
 
@@ -249,7 +249,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfiguration
 
 Optional fields:
 
-- `CodeContentTypeUpdate`: [CodeContentType](./literals.md#codecontenttype)
+- `CodeContentTypeUpdate`:
+  [CodeContentTypeType](./literals.md#codecontenttypetype)
 - `CodeContentUpdate`:
   [CodeContentUpdateTypeDef](./type_defs.md#codecontentupdatetypedef)
 
@@ -331,8 +332,10 @@ Required fields:
 
 - `ApplicationARN`: `str`
 - `ApplicationName`: `str`
-- `RuntimeEnvironment`: [RuntimeEnvironment](./literals.md#runtimeenvironment)
-- `ApplicationStatus`: [ApplicationStatus](./literals.md#applicationstatus)
+- `RuntimeEnvironment`:
+  [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
+- `ApplicationStatus`:
+  [ApplicationStatusType](./literals.md#applicationstatustype)
 - `ApplicationVersionId`: `int`
 
 Optional fields:
@@ -382,7 +385,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationRestoreConfigurat
 Required fields:
 
 - `ApplicationRestoreType`:
-  [ApplicationRestoreType](./literals.md#applicationrestoretype)
+  [ApplicationRestoreTypeType](./literals.md#applicationrestoretypetype)
 
 Optional fields:
 
@@ -428,9 +431,11 @@ Required fields:
 
 - `ApplicationName`: `str`
 - `ApplicationARN`: `str`
-- `ApplicationStatus`: [ApplicationStatus](./literals.md#applicationstatus)
+- `ApplicationStatus`:
+  [ApplicationStatusType](./literals.md#applicationstatustype)
 - `ApplicationVersionId`: `int`
-- `RuntimeEnvironment`: [RuntimeEnvironment](./literals.md#runtimeenvironment)
+- `RuntimeEnvironment`:
+  [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
 
 ## ApplicationVersionSummaryTypeDef
 
@@ -441,7 +446,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationVersionSummaryTyp
 Required fields:
 
 - `ApplicationVersionId`: `int`
-- `ApplicationStatus`: [ApplicationStatus](./literals.md#applicationstatus)
+- `ApplicationStatus`:
+  [ApplicationStatusType](./literals.md#applicationstatustype)
 
 ## CSVMappingParametersTypeDef
 
@@ -462,7 +468,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationDescr
 
 Optional fields:
 
-- `ConfigurationType`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationType`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 - `CheckpointingEnabled`: `bool`
 - `CheckpointInterval`: `int`
 - `MinPauseBetweenCheckpoints`: `int`
@@ -475,7 +482,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationTypeD
 
 Required fields:
 
-- `ConfigurationType`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationType`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 
 Optional fields:
 
@@ -491,7 +499,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationUpdat
 
 Optional fields:
 
-- `ConfigurationTypeUpdate`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationTypeUpdate`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 - `CheckpointingEnabledUpdate`: `bool`
 - `CheckpointIntervalUpdate`: `int`
 - `MinPauseBetweenCheckpointsUpdate`: `int`
@@ -694,7 +703,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import DestinationSchemaTypeDef
 
 Required fields:
 
-- `RecordFormatType`: [RecordFormatType](./literals.md#recordformattype)
+- `RecordFormatType`:
+  [RecordFormatTypeType](./literals.md#recordformattypetype)
 
 ## DiscoverInputSchemaResponseTypeDef
 
@@ -916,7 +926,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import InputSchemaUpdateTypeDef
 
 Optional fields:
 
-- `RecordFormatUpdate`: [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
+- `RecordFormatUpdate`:
+  [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
 - `RecordEncodingUpdate`: `str`
 - `RecordColumnUpdates`:
   `List`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
@@ -930,7 +941,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import InputStartingPositionConfigu
 Optional fields:
 
 - `InputStartingPosition`:
-  [InputStartingPosition](./literals.md#inputstartingposition)
+  [InputStartingPositionType](./literals.md#inputstartingpositiontype)
 
 ## InputTypeDef
 
@@ -1234,9 +1245,10 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationDescr
 
 Optional fields:
 
-- `ConfigurationType`: [ConfigurationType](./literals.md#configurationtype)
-- `MetricsLevel`: [MetricsLevel](./literals.md#metricslevel)
-- `LogLevel`: [LogLevel](./literals.md#loglevel)
+- `ConfigurationType`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
+- `MetricsLevel`: [MetricsLevelType](./literals.md#metricsleveltype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## MonitoringConfigurationTypeDef
 
@@ -1246,12 +1258,13 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationTypeD
 
 Required fields:
 
-- `ConfigurationType`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationType`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 
 Optional fields:
 
-- `MetricsLevel`: [MetricsLevel](./literals.md#metricslevel)
-- `LogLevel`: [LogLevel](./literals.md#loglevel)
+- `MetricsLevel`: [MetricsLevelType](./literals.md#metricsleveltype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## MonitoringConfigurationUpdateTypeDef
 
@@ -1261,9 +1274,10 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationUpdat
 
 Optional fields:
 
-- `ConfigurationTypeUpdate`: [ConfigurationType](./literals.md#configurationtype)
-- `MetricsLevelUpdate`: [MetricsLevel](./literals.md#metricslevel)
-- `LogLevelUpdate`: [LogLevel](./literals.md#loglevel)
+- `ConfigurationTypeUpdate`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
+- `MetricsLevelUpdate`: [MetricsLevelType](./literals.md#metricsleveltype)
+- `LogLevelUpdate`: [LogLevelType](./literals.md#logleveltype)
 
 ## OutputDescriptionTypeDef
 
@@ -1345,7 +1359,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationDesc
 
 Optional fields:
 
-- `ConfigurationType`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationType`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 - `Parallelism`: `int`
 - `ParallelismPerKPU`: `int`
 - `CurrentParallelism`: `int`
@@ -1359,7 +1374,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationType
 
 Required fields:
 
-- `ConfigurationType`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationType`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 
 Optional fields:
 
@@ -1375,7 +1391,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationUpda
 
 Optional fields:
 
-- `ConfigurationTypeUpdate`: [ConfigurationType](./literals.md#configurationtype)
+- `ConfigurationTypeUpdate`:
+  [ConfigurationTypeType](./literals.md#configurationtypetype)
 - `ParallelismUpdate`: `int`
 - `ParallelismPerKPUUpdate`: `int`
 - `AutoScalingEnabledUpdate`: `bool`
@@ -1414,7 +1431,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import RecordFormatTypeDef
 
 Required fields:
 
-- `RecordFormatType`: [RecordFormatType](./literals.md#recordformattype)
+- `RecordFormatType`:
+  [RecordFormatTypeType](./literals.md#recordformattypetype)
 
 Optional fields:
 
@@ -1637,7 +1655,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import SnapshotDetailsTypeDef
 Required fields:
 
 - `SnapshotName`: `str`
-- `SnapshotStatus`: [SnapshotStatus](./literals.md#snapshotstatus)
+- `SnapshotStatus`: [SnapshotStatusType](./literals.md#snapshotstatustype)
 - `ApplicationVersionId`: `int`
 
 Optional fields:

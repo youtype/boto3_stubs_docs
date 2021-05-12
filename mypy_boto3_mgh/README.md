@@ -3,7 +3,7 @@
 > [Index](..) > MigrationHub
 
 Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
 [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
@@ -29,44 +29,44 @@ Can be used directly:
 from mypy_boto3_mgh.client import MigrationHubClient
 ```
 
-MigrationHubClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_created_artifact](./client.md#associate-created-artifact)
-- [associate_discovered_resource](./client.md#associate-discovered-resource)
-- [can_paginate](./client.md#can-paginate)
-- [create_progress_update_stream](./client.md#create-progress-update-stream)
-- [delete_progress_update_stream](./client.md#delete-progress-update-stream)
-- [describe_application_state](./client.md#describe-application-state)
-- [describe_migration_task](./client.md#describe-migration-task)
-- [disassociate_created_artifact](./client.md#disassociate-created-artifact)
-- [disassociate_discovered_resource](./client.md#disassociate-discovered-resource)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [import_migration_task](./client.md#import-migration-task)
-- [list_application_states](./client.md#list-application-states)
-- [list_created_artifacts](./client.md#list-created-artifacts)
-- [list_discovered_resources](./client.md#list-discovered-resources)
-- [list_migration_tasks](./client.md#list-migration-tasks)
-- [list_progress_update_streams](./client.md#list-progress-update-streams)
-- [notify_application_state](./client.md#notify-application-state)
-- [notify_migration_task_state](./client.md#notify-migration-task-state)
-- [put_resource_attributes](./client.md#put-resource-attributes)
+- [associate_created_artifact](./client.md#associate_created_artifact)
+- [associate_discovered_resource](./client.md#associate_discovered_resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_progress_update_stream](./client.md#create_progress_update_stream)
+- [delete_progress_update_stream](./client.md#delete_progress_update_stream)
+- [describe_application_state](./client.md#describe_application_state)
+- [describe_migration_task](./client.md#describe_migration_task)
+- [disassociate_created_artifact](./client.md#disassociate_created_artifact)
+- [disassociate_discovered_resource](./client.md#disassociate_discovered_resource)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [import_migration_task](./client.md#import_migration_task)
+- [list_application_states](./client.md#list_application_states)
+- [list_created_artifacts](./client.md#list_created_artifacts)
+- [list_discovered_resources](./client.md#list_discovered_resources)
+- [list_migration_tasks](./client.md#list_migration_tasks)
+- [list_progress_update_streams](./client.md#list_progress_update_streams)
+- [notify_application_state](./client.md#notify_application_state)
+- [notify_migration_task_state](./client.md#notify_migration_task_state)
+- [put_resource_attributes](./client.md#put_resource_attributes)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [DryRunOperation](./client.md#dryrunoperation)
-- [HomeRegionNotSetException](./client.md#homeregionnotsetexception)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [PolicyErrorException](./client.md#policyerrorexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UnauthorizedOperation](./client.md#unauthorizedoperation)
+MigrationHubClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- DryRunOperation
+- HomeRegionNotSetException
+- InternalServerError
+- InvalidInputException
+- PolicyErrorException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
+- UnauthorizedOperation
 
 ## Paginators
 
@@ -92,17 +92,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.literals import ApplicationStatus, ...
+from mypy_boto3_mgh.literals import ApplicationStatusType, ...
 ```
 
-- [ApplicationStatus](./literals.md#applicationstatus)
+- [ApplicationStatusType](./literals.md#applicationstatustype)
 - [ListApplicationStatesPaginatorName](./literals.md#listapplicationstatespaginatorname)
 - [ListCreatedArtifactsPaginatorName](./literals.md#listcreatedartifactspaginatorname)
 - [ListDiscoveredResourcesPaginatorName](./literals.md#listdiscoveredresourcespaginatorname)
 - [ListMigrationTasksPaginatorName](./literals.md#listmigrationtaskspaginatorname)
 - [ListProgressUpdateStreamsPaginatorName](./literals.md#listprogressupdatestreamspaginatorname)
-- [ResourceAttributeType](./literals.md#resourceattributetype)
-- [Status](./literals.md#status)
+- [ResourceAttributeTypeType](./literals.md#resourceattributetypetype)
+- [StatusType](./literals.md#statustype)
 
 ## Typed dictionaries
 

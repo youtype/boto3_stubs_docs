@@ -3,7 +3,7 @@
 > [Index](..) > [MarketplaceMetering](.) > MarketplaceMeteringClient
 
 Auto-generated documentation for
-[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
+[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
 [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
@@ -32,7 +32,7 @@ def get_meteringmarketplace_client() -> MarketplaceMeteringClient:
 ```
 
 Boto3 documentation:
-[MarketplaceMetering.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
+[MarketplaceMetering.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
 
 ## Exceptions
 
@@ -75,12 +75,13 @@ Type annotations for `boto3.client("meteringmarketplace").batch_meter_usage`
 method.
 
 Boto3 documentation:
-[MarketplaceMetering.Client.batch_meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage)
+[MarketplaceMetering.Client.batch_meter_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage)
 
 Arguments:
 
 - `UsageRecords`:
-  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\] *(required)*
+  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
+  *(required)*
 - `ProductCode`: `str` *(required)*
 
 Returns
@@ -91,7 +92,7 @@ Returns
 Type annotations for `boto3.client("meteringmarketplace").can_paginate` method.
 
 Boto3 documentation:
-[MarketplaceMetering.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.can_paginate)
+[MarketplaceMetering.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.can_paginate)
 
 Arguments:
 
@@ -105,7 +106,7 @@ Type annotations for
 `boto3.client("meteringmarketplace").generate_presigned_url` method.
 
 Boto3 documentation:
-[MarketplaceMetering.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.generate_presigned_url)
+[MarketplaceMetering.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.generate_presigned_url)
 
 Arguments:
 
@@ -121,7 +122,7 @@ Returns `str`.
 Type annotations for `boto3.client("meteringmarketplace").meter_usage` method.
 
 Boto3 documentation:
-[MarketplaceMetering.Client.meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage)
+[MarketplaceMetering.Client.meter_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage)
 
 Arguments:
 
@@ -141,7 +142,7 @@ Type annotations for `boto3.client("meteringmarketplace").register_usage`
 method.
 
 Boto3 documentation:
-[MarketplaceMetering.Client.register_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage)
+[MarketplaceMetering.Client.register_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage)
 
 Arguments:
 
@@ -158,7 +159,7 @@ Type annotations for `boto3.client("meteringmarketplace").resolve_customer`
 method.
 
 Boto3 documentation:
-[MarketplaceMetering.Client.resolve_customer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer)
+[MarketplaceMetering.Client.resolve_customer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer)
 
 Arguments:
 

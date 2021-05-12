@@ -3,7 +3,7 @@
 > [Index](..) > [CodeGuruProfiler](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
 [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
@@ -72,7 +72,8 @@ Required fields:
 Optional fields:
 
 - `agentParameters`:
-  `Dict`\[[AgentParameterField](./literals.md#agentparameterfield), `str`\]
+  `Dict`\[[AgentParameterFieldType](./literals.md#agentparameterfieldtype),
+  `str`\]
 
 ## AgentOrchestrationConfigTypeDef
 
@@ -92,7 +93,7 @@ from mypy_boto3_codeguruprofiler.type_defs import AggregatedProfileTimeTypeDef
 
 Optional fields:
 
-- `period`: [AggregationPeriod](./literals.md#aggregationperiod)
+- `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
 - `start`: `datetime`
 
 ## AnomalyInstanceTypeDef
@@ -137,7 +138,7 @@ Required fields:
   `List`\[[TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef)\]
 - `frameMetricData`:
   `List`\[[FrameMetricDatumTypeDef](./type_defs.md#framemetricdatumtypedef)\]
-- `resolution`: [AggregationPeriod](./literals.md#aggregationperiod)
+- `resolution`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
 - `startTime`: `datetime`
 - `unprocessedEndTimes`: `Dict`\[`str`,
   `List`\[[TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef)\]\]
@@ -151,7 +152,7 @@ from mypy_boto3_codeguruprofiler.type_defs import ChannelTypeDef
 Required fields:
 
 - `eventPublishers`: `List`\[`Literal['AnomalyDetection']` (see
-  [EventPublisher](./literals.md#eventpublisher))\]
+  [EventPublisherType](./literals.md#eventpublishertype))\]
 - `uri`: `str`
 
 Optional fields:
@@ -227,7 +228,7 @@ Required fields:
 - `frameName`: `str`
 - `threadStates`: `List`\[`str`\]
 - `type`: `Literal['AggregatedRelativeTotalTime']` (see
-  [MetricType](./literals.md#metrictype))
+  [MetricTypeType](./literals.md#metrictypetype))
 
 ## GetFindingsReportAccountSummaryResponseTypeDef
 
@@ -375,7 +376,7 @@ Required fields:
 - `frameName`: `str`
 - `threadStates`: `List`\[`str`\]
 - `type`: `Literal['AggregatedRelativeTotalTime']` (see
-  [MetricType](./literals.md#metrictype))
+  [MetricTypeType](./literals.md#metrictypetype))
 
 ## NotificationConfigurationTypeDef
 
@@ -436,7 +437,7 @@ Optional fields:
 - `agentOrchestrationConfig`:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
 - `arn`: `str`
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `createdAt`: `datetime`
 - `name`: `str`
 - `profilingStatus`:
@@ -534,4 +535,4 @@ from mypy_boto3_codeguruprofiler.type_defs import UserFeedbackTypeDef
 
 Required fields:
 
-- `type`: [FeedbackType](./literals.md#feedbacktype)
+- `type`: [FeedbackTypeType](./literals.md#feedbacktypetype)

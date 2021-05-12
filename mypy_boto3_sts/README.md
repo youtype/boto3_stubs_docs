@@ -3,7 +3,7 @@
 > [Index](..) > STS
 
 Auto-generated documentation for
-[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+[STS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sts.html#STS)
 type annotations stubs module
 [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
@@ -27,32 +27,32 @@ Can be used directly:
 from mypy_boto3_sts.client import STSClient
 ```
 
-STSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [assume_role](./client.md#assume-role)
-- [assume_role_with_saml](./client.md#assume-role-with-saml)
-- [assume_role_with_web_identity](./client.md#assume-role-with-web-identity)
-- [can_paginate](./client.md#can-paginate)
-- [decode_authorization_message](./client.md#decode-authorization-message)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_access_key_info](./client.md#get-access-key-info)
-- [get_caller_identity](./client.md#get-caller-identity)
-- [get_federation_token](./client.md#get-federation-token)
-- [get_session_token](./client.md#get-session-token)
+- [assume_role](./client.md#assume_role)
+- [assume_role_with_saml](./client.md#assume_role_with_saml)
+- [assume_role_with_web_identity](./client.md#assume_role_with_web_identity)
+- [can_paginate](./client.md#can_paginate)
+- [decode_authorization_message](./client.md#decode_authorization_message)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_access_key_info](./client.md#get_access_key_info)
+- [get_caller_identity](./client.md#get_caller_identity)
+- [get_federation_token](./client.md#get_federation_token)
+- [get_session_token](./client.md#get_session_token)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ExpiredTokenException](./client.md#expiredtokenexception)
-- [IDPCommunicationErrorException](./client.md#idpcommunicationerrorexception)
-- [IDPRejectedClaimException](./client.md#idprejectedclaimexception)
-- [InvalidAuthorizationMessageException](./client.md#invalidauthorizationmessageexception)
-- [InvalidIdentityTokenException](./client.md#invalididentitytokenexception)
-- [MalformedPolicyDocumentException](./client.md#malformedpolicydocumentexception)
-- [PackedPolicyTooLargeException](./client.md#packedpolicytoolargeexception)
-- [RegionDisabledException](./client.md#regiondisabledexception)
+STSClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ExpiredTokenException
+- IDPCommunicationErrorException
+- IDPRejectedClaimException
+- InvalidAuthorizationMessageException
+- InvalidIdentityTokenException
+- MalformedPolicyDocumentException
+- PackedPolicyTooLargeException
+- RegionDisabledException
 
 ## Typed dictionaries
 

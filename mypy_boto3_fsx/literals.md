@@ -3,39 +3,39 @@
 > [Index](..) > [FSx](.) > Literals
 
 Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx)
 type annotations stubs module
 [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [Literals for boto3 FSx module](#literals-for-boto3-fsx-module)
-  - [AdministrativeActionType](#administrativeactiontype)
-  - [AliasLifecycle](#aliaslifecycle)
-  - [AutoImportPolicyType](#autoimportpolicytype)
-  - [BackupLifecycle](#backuplifecycle)
-  - [BackupType](#backuptype)
-  - [DataRepositoryLifecycle](#datarepositorylifecycle)
-  - [DataRepositoryTaskFilterName](#datarepositorytaskfiltername)
-  - [DataRepositoryTaskLifecycle](#datarepositorytasklifecycle)
-  - [DataRepositoryTaskType](#datarepositorytasktype)
+  - [AdministrativeActionTypeType](#administrativeactiontypetype)
+  - [AliasLifecycleType](#aliaslifecycletype)
+  - [AutoImportPolicyTypeType](#autoimportpolicytypetype)
+  - [BackupLifecycleType](#backuplifecycletype)
+  - [BackupTypeType](#backuptypetype)
+  - [DataRepositoryLifecycleType](#datarepositorylifecycletype)
+  - [DataRepositoryTaskFilterNameType](#datarepositorytaskfilternametype)
+  - [DataRepositoryTaskLifecycleType](#datarepositorytasklifecycletype)
+  - [DataRepositoryTaskTypeType](#datarepositorytasktypetype)
   - [DescribeBackupsPaginatorName](#describebackupspaginatorname)
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
-  - [DriveCacheType](#drivecachetype)
-  - [FileSystemLifecycle](#filesystemlifecycle)
-  - [FileSystemMaintenanceOperation](#filesystemmaintenanceoperation)
-  - [FileSystemType](#filesystemtype)
-  - [FilterName](#filtername)
+  - [DriveCacheTypeType](#drivecachetypetype)
+  - [FileSystemLifecycleType](#filesystemlifecycletype)
+  - [FileSystemMaintenanceOperationType](#filesystemmaintenanceoperationtype)
+  - [FileSystemTypeType](#filesystemtypetype)
+  - [FilterNameType](#filternametype)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [LustreDeploymentType](#lustredeploymenttype)
-  - [ReportFormat](#reportformat)
-  - [ReportScope](#reportscope)
-  - [Status](#status)
-  - [StorageType](#storagetype)
-  - [WindowsDeploymentType](#windowsdeploymenttype)
+  - [LustreDeploymentTypeType](#lustredeploymenttypetype)
+  - [ReportFormatType](#reportformattype)
+  - [ReportScopeType](#reportscopetype)
+  - [StatusType](#statustype)
+  - [StorageTypeType](#storagetypetype)
+  - [WindowsDeploymentTypeType](#windowsdeploymenttypetype)
 
-## AdministrativeActionType
+## AdministrativeActionTypeType
 
 ```python
-from mypy_boto3_fsx.literals import AdministrativeActionType
+from mypy_boto3_fsx.literals import AdministrativeActionTypeType
 ```
 
 Values:
@@ -45,10 +45,10 @@ Values:
 - `FILE_SYSTEM_UPDATE`
 - `STORAGE_OPTIMIZATION`
 
-## AliasLifecycle
+## AliasLifecycleType
 
 ```python
-from mypy_boto3_fsx.literals import AliasLifecycle
+from mypy_boto3_fsx.literals import AliasLifecycleType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
-## AutoImportPolicyType
+## AutoImportPolicyTypeType
 
 ```python
-from mypy_boto3_fsx.literals import AutoImportPolicyType
+from mypy_boto3_fsx.literals import AutoImportPolicyTypeType
 ```
 
 Values:
@@ -71,10 +71,10 @@ Values:
 - `NEW_CHANGED`
 - `NONE`
 
-## BackupLifecycle
+## BackupLifecycleType
 
 ```python
-from mypy_boto3_fsx.literals import BackupLifecycle
+from mypy_boto3_fsx.literals import BackupLifecycleType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 - `PENDING`
 - `TRANSFERRING`
 
-## BackupType
+## BackupTypeType
 
 ```python
-from mypy_boto3_fsx.literals import BackupType
+from mypy_boto3_fsx.literals import BackupTypeType
 ```
 
 Values:
@@ -99,10 +99,10 @@ Values:
 - `AWS_BACKUP`
 - `USER_INITIATED`
 
-## DataRepositoryLifecycle
+## DataRepositoryLifecycleType
 
 ```python
-from mypy_boto3_fsx.literals import DataRepositoryLifecycle
+from mypy_boto3_fsx.literals import DataRepositoryLifecycleType
 ```
 
 Values:
@@ -113,10 +113,10 @@ Values:
 - `MISCONFIGURED`
 - `UPDATING`
 
-## DataRepositoryTaskFilterName
+## DataRepositoryTaskFilterNameType
 
 ```python
-from mypy_boto3_fsx.literals import DataRepositoryTaskFilterName
+from mypy_boto3_fsx.literals import DataRepositoryTaskFilterNameType
 ```
 
 Values:
@@ -124,10 +124,10 @@ Values:
 - `file-system-id`
 - `task-lifecycle`
 
-## DataRepositoryTaskLifecycle
+## DataRepositoryTaskLifecycleType
 
 ```python
-from mypy_boto3_fsx.literals import DataRepositoryTaskLifecycle
+from mypy_boto3_fsx.literals import DataRepositoryTaskLifecycleType
 ```
 
 Values:
@@ -139,10 +139,10 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
-## DataRepositoryTaskType
+## DataRepositoryTaskTypeType
 
 ```python
-from mypy_boto3_fsx.literals import DataRepositoryTaskType
+from mypy_boto3_fsx.literals import DataRepositoryTaskTypeType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 
 - `describe_file_systems`
 
-## DriveCacheType
+## DriveCacheTypeType
 
 ```python
-from mypy_boto3_fsx.literals import DriveCacheType
+from mypy_boto3_fsx.literals import DriveCacheTypeType
 ```
 
 Values:
@@ -180,10 +180,10 @@ Values:
 - `NONE`
 - `READ`
 
-## FileSystemLifecycle
+## FileSystemLifecycleType
 
 ```python
-from mypy_boto3_fsx.literals import FileSystemLifecycle
+from mypy_boto3_fsx.literals import FileSystemLifecycleType
 ```
 
 Values:
@@ -195,10 +195,10 @@ Values:
 - `MISCONFIGURED`
 - `UPDATING`
 
-## FileSystemMaintenanceOperation
+## FileSystemMaintenanceOperationType
 
 ```python
-from mypy_boto3_fsx.literals import FileSystemMaintenanceOperation
+from mypy_boto3_fsx.literals import FileSystemMaintenanceOperationType
 ```
 
 Values:
@@ -206,10 +206,10 @@ Values:
 - `BACKING_UP`
 - `PATCHING`
 
-## FileSystemType
+## FileSystemTypeType
 
 ```python
-from mypy_boto3_fsx.literals import FileSystemType
+from mypy_boto3_fsx.literals import FileSystemTypeType
 ```
 
 Values:
@@ -217,10 +217,10 @@ Values:
 - `LUSTRE`
 - `WINDOWS`
 
-## FilterName
+## FilterNameType
 
 ```python
-from mypy_boto3_fsx.literals import FilterName
+from mypy_boto3_fsx.literals import FilterNameType
 ```
 
 Values:
@@ -239,10 +239,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## LustreDeploymentType
+## LustreDeploymentTypeType
 
 ```python
-from mypy_boto3_fsx.literals import LustreDeploymentType
+from mypy_boto3_fsx.literals import LustreDeploymentTypeType
 ```
 
 Values:
@@ -251,30 +251,30 @@ Values:
 - `SCRATCH_1`
 - `SCRATCH_2`
 
-## ReportFormat
+## ReportFormatType
 
 ```python
-from mypy_boto3_fsx.literals import ReportFormat
+from mypy_boto3_fsx.literals import ReportFormatType
 ```
 
 Values:
 
 - `REPORT_CSV_20191124`
 
-## ReportScope
+## ReportScopeType
 
 ```python
-from mypy_boto3_fsx.literals import ReportScope
+from mypy_boto3_fsx.literals import ReportScopeType
 ```
 
 Values:
 
 - `FAILED_FILES_ONLY`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_fsx.literals import Status
+from mypy_boto3_fsx.literals import StatusType
 ```
 
 Values:
@@ -285,10 +285,10 @@ Values:
 - `PENDING`
 - `UPDATED_OPTIMIZING`
 
-## StorageType
+## StorageTypeType
 
 ```python
-from mypy_boto3_fsx.literals import StorageType
+from mypy_boto3_fsx.literals import StorageTypeType
 ```
 
 Values:
@@ -296,10 +296,10 @@ Values:
 - `HDD`
 - `SSD`
 
-## WindowsDeploymentType
+## WindowsDeploymentTypeType
 
 ```python
-from mypy_boto3_fsx.literals import WindowsDeploymentType
+from mypy_boto3_fsx.literals import WindowsDeploymentTypeType
 ```
 
 Values:

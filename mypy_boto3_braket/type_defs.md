@@ -3,7 +3,7 @@
 > [Index](..) > [Braket](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/braket.html#Braket)
 type annotations stubs module
 [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
@@ -29,7 +29,8 @@ from mypy_boto3_braket.type_defs import CancelQuantumTaskResponseTypeDef
 
 Required fields:
 
-- `cancellationStatus`: [CancellationStatus](./literals.md#cancellationstatus)
+- `cancellationStatus`:
+  [CancellationStatusType](./literals.md#cancellationstatustype)
 - `quantumTaskArn`: `str`
 
 ## CreateQuantumTaskResponseTypeDef
@@ -52,8 +53,8 @@ Required fields:
 
 - `deviceArn`: `str`
 - `deviceName`: `str`
-- `deviceStatus`: [DeviceStatus](./literals.md#devicestatus)
-- `deviceType`: [DeviceType](./literals.md#devicetype)
+- `deviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
+- `deviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `providerName`: `str`
 
 ## GetDeviceResponseTypeDef
@@ -67,8 +68,8 @@ Required fields:
 - `deviceArn`: `str`
 - `deviceCapabilities`: `str`
 - `deviceName`: `str`
-- `deviceStatus`: [DeviceStatus](./literals.md#devicestatus)
-- `deviceType`: [DeviceType](./literals.md#devicetype)
+- `deviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
+- `deviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `providerName`: `str`
 
 ## GetQuantumTaskResponseTypeDef
@@ -86,7 +87,7 @@ Required fields:
 - `outputS3Directory`: `str`
 - `quantumTaskArn`: `str`
 - `shots`: `int`
-- `status`: [QuantumTaskStatus](./literals.md#quantumtaskstatus)
+- `status`: [QuantumTaskStatusType](./literals.md#quantumtaskstatustype)
 
 Optional fields:
 
@@ -130,7 +131,7 @@ Required fields:
 - `outputS3Directory`: `str`
 - `quantumTaskArn`: `str`
 - `shots`: `int`
-- `status`: [QuantumTaskStatus](./literals.md#quantumtaskstatus)
+- `status`: [QuantumTaskStatusType](./literals.md#quantumtaskstatustype)
 
 Optional fields:
 
@@ -173,7 +174,7 @@ Required fields:
 
 - `name`: `str`
 - `operator`:
-  [SearchQuantumTasksFilterOperator](./literals.md#searchquantumtasksfilteroperator)
+  [SearchQuantumTasksFilterOperatorType](./literals.md#searchquantumtasksfilteroperatortype)
 - `values`: `List`\[`str`\]
 
 ## SearchQuantumTasksResponseTypeDef

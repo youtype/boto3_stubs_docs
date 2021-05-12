@@ -3,18 +3,18 @@
 > [Index](..) > [ServiceCatalog](.) > Literals
 
 Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
 [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [Literals for boto3 ServiceCatalog module](#literals-for-boto3-servicecatalog-module)
-  - [AccessLevelFilterKey](#accesslevelfilterkey)
-  - [AccessStatus](#accessstatus)
-  - [ChangeAction](#changeaction)
-  - [CopyOption](#copyoption)
-  - [CopyProductStatus](#copyproductstatus)
-  - [DescribePortfolioShareType](#describeportfoliosharetype)
-  - [EvaluationType](#evaluationtype)
+  - [AccessLevelFilterKeyType](#accesslevelfilterkeytype)
+  - [AccessStatusType](#accessstatustype)
+  - [ChangeActionType](#changeactiontype)
+  - [CopyOptionType](#copyoptiontype)
+  - [CopyProductStatusType](#copyproductstatustype)
+  - [DescribePortfolioShareTypeType](#describeportfoliosharetypetype)
+  - [EvaluationTypeType](#evaluationtypetype)
   - [ListAcceptedPortfolioSharesPaginatorName](#listacceptedportfoliosharespaginatorname)
   - [ListConstraintsForPortfolioPaginatorName](#listconstraintsforportfoliopaginatorname)
   - [ListLaunchPathsPaginatorName](#listlaunchpathspaginatorname)
@@ -29,40 +29,40 @@ type annotations stubs module
   - [ListServiceActionsForProvisioningArtifactPaginatorName](#listserviceactionsforprovisioningartifactpaginatorname)
   - [ListServiceActionsPaginatorName](#listserviceactionspaginatorname)
   - [ListTagOptionsPaginatorName](#listtagoptionspaginatorname)
-  - [OrganizationNodeType](#organizationnodetype)
-  - [PortfolioShareType](#portfoliosharetype)
-  - [PrincipalType](#principaltype)
-  - [ProductSource](#productsource)
-  - [ProductType](#producttype)
-  - [ProductViewFilterBy](#productviewfilterby)
-  - [ProductViewSortBy](#productviewsortby)
-  - [PropertyKey](#propertykey)
-  - [ProvisionedProductPlanStatus](#provisionedproductplanstatus)
-  - [ProvisionedProductPlanType](#provisionedproductplantype)
-  - [ProvisionedProductStatus](#provisionedproductstatus)
-  - [ProvisionedProductViewFilterBy](#provisionedproductviewfilterby)
-  - [ProvisioningArtifactGuidance](#provisioningartifactguidance)
-  - [ProvisioningArtifactPropertyName](#provisioningartifactpropertyname)
-  - [ProvisioningArtifactType](#provisioningartifacttype)
-  - [RecordStatus](#recordstatus)
-  - [Replacement](#replacement)
-  - [RequiresRecreation](#requiresrecreation)
-  - [ResourceAttribute](#resourceattribute)
+  - [OrganizationNodeTypeType](#organizationnodetypetype)
+  - [PortfolioShareTypeType](#portfoliosharetypetype)
+  - [PrincipalTypeType](#principaltypetype)
+  - [ProductSourceType](#productsourcetype)
+  - [ProductTypeType](#producttypetype)
+  - [ProductViewFilterByType](#productviewfilterbytype)
+  - [ProductViewSortByType](#productviewsortbytype)
+  - [PropertyKeyType](#propertykeytype)
+  - [ProvisionedProductPlanStatusType](#provisionedproductplanstatustype)
+  - [ProvisionedProductPlanTypeType](#provisionedproductplantypetype)
+  - [ProvisionedProductStatusType](#provisionedproductstatustype)
+  - [ProvisionedProductViewFilterByType](#provisionedproductviewfilterbytype)
+  - [ProvisioningArtifactGuidanceType](#provisioningartifactguidancetype)
+  - [ProvisioningArtifactPropertyNameType](#provisioningartifactpropertynametype)
+  - [ProvisioningArtifactTypeType](#provisioningartifacttypetype)
+  - [RecordStatusType](#recordstatustype)
+  - [ReplacementType](#replacementtype)
+  - [RequiresRecreationType](#requiresrecreationtype)
+  - [ResourceAttributeType](#resourceattributetype)
   - [ScanProvisionedProductsPaginatorName](#scanprovisionedproductspaginatorname)
   - [SearchProductsAsAdminPaginatorName](#searchproductsasadminpaginatorname)
-  - [ServiceActionAssociationErrorCode](#serviceactionassociationerrorcode)
-  - [ServiceActionDefinitionKey](#serviceactiondefinitionkey)
-  - [ServiceActionDefinitionType](#serviceactiondefinitiontype)
-  - [ShareStatus](#sharestatus)
-  - [SortOrder](#sortorder)
-  - [StackInstanceStatus](#stackinstancestatus)
-  - [StackSetOperationType](#stacksetoperationtype)
-  - [Status](#status)
+  - [ServiceActionAssociationErrorCodeType](#serviceactionassociationerrorcodetype)
+  - [ServiceActionDefinitionKeyType](#serviceactiondefinitionkeytype)
+  - [ServiceActionDefinitionTypeType](#serviceactiondefinitiontypetype)
+  - [ShareStatusType](#sharestatustype)
+  - [SortOrderType](#sortordertype)
+  - [StackInstanceStatusType](#stackinstancestatustype)
+  - [StackSetOperationTypeType](#stacksetoperationtypetype)
+  - [StatusType](#statustype)
 
-## AccessLevelFilterKey
+## AccessLevelFilterKeyType
 
 ```python
-from mypy_boto3_servicecatalog.literals import AccessLevelFilterKey
+from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType
 ```
 
 Values:
@@ -71,10 +71,10 @@ Values:
 - `Role`
 - `User`
 
-## AccessStatus
+## AccessStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import AccessStatus
+from mypy_boto3_servicecatalog.literals import AccessStatusType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 - `ENABLED`
 - `UNDER_CHANGE`
 
-## ChangeAction
+## ChangeActionType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ChangeAction
+from mypy_boto3_servicecatalog.literals import ChangeActionType
 ```
 
 Values:
@@ -95,20 +95,20 @@ Values:
 - `MODIFY`
 - `REMOVE`
 
-## CopyOption
+## CopyOptionType
 
 ```python
-from mypy_boto3_servicecatalog.literals import CopyOption
+from mypy_boto3_servicecatalog.literals import CopyOptionType
 ```
 
 Values:
 
 - `CopyTags`
 
-## CopyProductStatus
+## CopyProductStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import CopyProductStatus
+from mypy_boto3_servicecatalog.literals import CopyProductStatusType
 ```
 
 Values:
@@ -117,10 +117,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
-## DescribePortfolioShareType
+## DescribePortfolioShareTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import DescribePortfolioShareType
+from mypy_boto3_servicecatalog.literals import DescribePortfolioShareTypeType
 ```
 
 Values:
@@ -130,10 +130,10 @@ Values:
 - `ORGANIZATION_MEMBER_ACCOUNT`
 - `ORGANIZATIONAL_UNIT`
 
-## EvaluationType
+## EvaluationTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import EvaluationType
+from mypy_boto3_servicecatalog.literals import EvaluationTypeType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 
 - `list_tag_options`
 
-## OrganizationNodeType
+## OrganizationNodeTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import OrganizationNodeType
+from mypy_boto3_servicecatalog.literals import OrganizationNodeTypeType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 - `ORGANIZATION`
 - `ORGANIZATIONAL_UNIT`
 
-## PortfolioShareType
+## PortfolioShareTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import PortfolioShareType
+from mypy_boto3_servicecatalog.literals import PortfolioShareTypeType
 ```
 
 Values:
@@ -305,30 +305,30 @@ Values:
 - `AWS_SERVICECATALOG`
 - `IMPORTED`
 
-## PrincipalType
+## PrincipalTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import PrincipalType
+from mypy_boto3_servicecatalog.literals import PrincipalTypeType
 ```
 
 Values:
 
 - `IAM`
 
-## ProductSource
+## ProductSourceType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProductSource
+from mypy_boto3_servicecatalog.literals import ProductSourceType
 ```
 
 Values:
 
 - `ACCOUNT`
 
-## ProductType
+## ProductTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProductType
+from mypy_boto3_servicecatalog.literals import ProductTypeType
 ```
 
 Values:
@@ -336,10 +336,10 @@ Values:
 - `CLOUD_FORMATION_TEMPLATE`
 - `MARKETPLACE`
 
-## ProductViewFilterBy
+## ProductViewFilterByType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProductViewFilterBy
+from mypy_boto3_servicecatalog.literals import ProductViewFilterByType
 ```
 
 Values:
@@ -349,10 +349,10 @@ Values:
 - `ProductType`
 - `SourceProductId`
 
-## ProductViewSortBy
+## ProductViewSortByType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProductViewSortBy
+from mypy_boto3_servicecatalog.literals import ProductViewSortByType
 ```
 
 Values:
@@ -361,10 +361,10 @@ Values:
 - `Title`
 - `VersionCount`
 
-## PropertyKey
+## PropertyKeyType
 
 ```python
-from mypy_boto3_servicecatalog.literals import PropertyKey
+from mypy_boto3_servicecatalog.literals import PropertyKeyType
 ```
 
 Values:
@@ -372,10 +372,10 @@ Values:
 - `LAUNCH_ROLE`
 - `OWNER`
 
-## ProvisionedProductPlanStatus
+## ProvisionedProductPlanStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisionedProductPlanStatus
+from mypy_boto3_servicecatalog.literals import ProvisionedProductPlanStatusType
 ```
 
 Values:
@@ -387,20 +387,20 @@ Values:
 - `EXECUTE_IN_PROGRESS`
 - `EXECUTE_SUCCESS`
 
-## ProvisionedProductPlanType
+## ProvisionedProductPlanTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisionedProductPlanType
+from mypy_boto3_servicecatalog.literals import ProvisionedProductPlanTypeType
 ```
 
 Values:
 
 - `CLOUDFORMATION`
 
-## ProvisionedProductStatus
+## ProvisionedProductStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisionedProductStatus
+from mypy_boto3_servicecatalog.literals import ProvisionedProductStatusType
 ```
 
 Values:
@@ -411,20 +411,20 @@ Values:
 - `TAINTED`
 - `UNDER_CHANGE`
 
-## ProvisionedProductViewFilterBy
+## ProvisionedProductViewFilterByType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisionedProductViewFilterBy
+from mypy_boto3_servicecatalog.literals import ProvisionedProductViewFilterByType
 ```
 
 Values:
 
 - `SearchQuery`
 
-## ProvisioningArtifactGuidance
+## ProvisioningArtifactGuidanceType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisioningArtifactGuidance
+from mypy_boto3_servicecatalog.literals import ProvisioningArtifactGuidanceType
 ```
 
 Values:
@@ -432,20 +432,20 @@ Values:
 - `DEFAULT`
 - `DEPRECATED`
 
-## ProvisioningArtifactPropertyName
+## ProvisioningArtifactPropertyNameType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisioningArtifactPropertyName
+from mypy_boto3_servicecatalog.literals import ProvisioningArtifactPropertyNameType
 ```
 
 Values:
 
 - `Id`
 
-## ProvisioningArtifactType
+## ProvisioningArtifactTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ProvisioningArtifactType
+from mypy_boto3_servicecatalog.literals import ProvisioningArtifactTypeType
 ```
 
 Values:
@@ -454,10 +454,10 @@ Values:
 - `MARKETPLACE_AMI`
 - `MARKETPLACE_CAR`
 
-## RecordStatus
+## RecordStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import RecordStatus
+from mypy_boto3_servicecatalog.literals import RecordStatusType
 ```
 
 Values:
@@ -468,10 +468,10 @@ Values:
 - `IN_PROGRESS_IN_ERROR`
 - `SUCCEEDED`
 
-## Replacement
+## ReplacementType
 
 ```python
-from mypy_boto3_servicecatalog.literals import Replacement
+from mypy_boto3_servicecatalog.literals import ReplacementType
 ```
 
 Values:
@@ -480,10 +480,10 @@ Values:
 - `FALSE`
 - `TRUE`
 
-## RequiresRecreation
+## RequiresRecreationType
 
 ```python
-from mypy_boto3_servicecatalog.literals import RequiresRecreation
+from mypy_boto3_servicecatalog.literals import RequiresRecreationType
 ```
 
 Values:
@@ -492,10 +492,10 @@ Values:
 - `CONDITIONALLY`
 - `NEVER`
 
-## ResourceAttribute
+## ResourceAttributeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ResourceAttribute
+from mypy_boto3_servicecatalog.literals import ResourceAttributeType
 ```
 
 Values:
@@ -527,10 +527,10 @@ Values:
 
 - `search_products_as_admin`
 
-## ServiceActionAssociationErrorCode
+## ServiceActionAssociationErrorCodeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ServiceActionAssociationErrorCode
+from mypy_boto3_servicecatalog.literals import ServiceActionAssociationErrorCodeType
 ```
 
 Values:
@@ -541,10 +541,10 @@ Values:
 - `RESOURCE_NOT_FOUND`
 - `THROTTLING`
 
-## ServiceActionDefinitionKey
+## ServiceActionDefinitionKeyType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ServiceActionDefinitionKey
+from mypy_boto3_servicecatalog.literals import ServiceActionDefinitionKeyType
 ```
 
 Values:
@@ -554,20 +554,20 @@ Values:
 - `Parameters`
 - `Version`
 
-## ServiceActionDefinitionType
+## ServiceActionDefinitionTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ServiceActionDefinitionType
+from mypy_boto3_servicecatalog.literals import ServiceActionDefinitionTypeType
 ```
 
 Values:
 
 - `SSM_AUTOMATION`
 
-## ShareStatus
+## ShareStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import ShareStatus
+from mypy_boto3_servicecatalog.literals import ShareStatusType
 ```
 
 Values:
@@ -578,10 +578,10 @@ Values:
 - `IN_PROGRESS`
 - `NOT_STARTED`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_servicecatalog.literals import SortOrder
+from mypy_boto3_servicecatalog.literals import SortOrderType
 ```
 
 Values:
@@ -589,10 +589,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## StackInstanceStatus
+## StackInstanceStatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import StackInstanceStatus
+from mypy_boto3_servicecatalog.literals import StackInstanceStatusType
 ```
 
 Values:
@@ -601,10 +601,10 @@ Values:
 - `INOPERABLE`
 - `OUTDATED`
 
-## StackSetOperationType
+## StackSetOperationTypeType
 
 ```python
-from mypy_boto3_servicecatalog.literals import StackSetOperationType
+from mypy_boto3_servicecatalog.literals import StackSetOperationTypeType
 ```
 
 Values:
@@ -613,10 +613,10 @@ Values:
 - `DELETE`
 - `UPDATE`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_servicecatalog.literals import Status
+from mypy_boto3_servicecatalog.literals import StatusType
 ```
 
 Values:

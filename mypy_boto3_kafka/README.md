@@ -3,7 +3,7 @@
 > [Index](..) > Kafka
 
 Auto-generated documentation for
-[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kafka.html#Kafka)
 type annotations stubs module
 [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
@@ -29,55 +29,55 @@ Can be used directly:
 from mypy_boto3_kafka.client import KafkaClient
 ```
 
-KafkaClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_associate_scram_secret](./client.md#batch-associate-scram-secret)
-- [batch_disassociate_scram_secret](./client.md#batch-disassociate-scram-secret)
-- [can_paginate](./client.md#can-paginate)
-- [create_cluster](./client.md#create-cluster)
-- [create_configuration](./client.md#create-configuration)
-- [delete_cluster](./client.md#delete-cluster)
-- [delete_configuration](./client.md#delete-configuration)
-- [describe_cluster](./client.md#describe-cluster)
-- [describe_cluster_operation](./client.md#describe-cluster-operation)
-- [describe_configuration](./client.md#describe-configuration)
-- [describe_configuration_revision](./client.md#describe-configuration-revision)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_bootstrap_brokers](./client.md#get-bootstrap-brokers)
-- [get_compatible_kafka_versions](./client.md#get-compatible-kafka-versions)
-- [get_paginator](./client.md#get-paginator)
-- [list_cluster_operations](./client.md#list-cluster-operations)
-- [list_clusters](./client.md#list-clusters)
-- [list_configuration_revisions](./client.md#list-configuration-revisions)
-- [list_configurations](./client.md#list-configurations)
-- [list_kafka_versions](./client.md#list-kafka-versions)
-- [list_nodes](./client.md#list-nodes)
-- [list_scram_secrets](./client.md#list-scram-secrets)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [reboot_broker](./client.md#reboot-broker)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_broker_count](./client.md#update-broker-count)
-- [update_broker_storage](./client.md#update-broker-storage)
-- [update_broker_type](./client.md#update-broker-type)
-- [update_cluster_configuration](./client.md#update-cluster-configuration)
-- [update_cluster_kafka_version](./client.md#update-cluster-kafka-version)
-- [update_configuration](./client.md#update-configuration)
-- [update_monitoring](./client.md#update-monitoring)
+- [batch_associate_scram_secret](./client.md#batch_associate_scram_secret)
+- [batch_disassociate_scram_secret](./client.md#batch_disassociate_scram_secret)
+- [can_paginate](./client.md#can_paginate)
+- [create_cluster](./client.md#create_cluster)
+- [create_configuration](./client.md#create_configuration)
+- [delete_cluster](./client.md#delete_cluster)
+- [delete_configuration](./client.md#delete_configuration)
+- [describe_cluster](./client.md#describe_cluster)
+- [describe_cluster_operation](./client.md#describe_cluster_operation)
+- [describe_configuration](./client.md#describe_configuration)
+- [describe_configuration_revision](./client.md#describe_configuration_revision)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_bootstrap_brokers](./client.md#get_bootstrap_brokers)
+- [get_compatible_kafka_versions](./client.md#get_compatible_kafka_versions)
+- [get_paginator](./client.md#get_paginator)
+- [list_cluster_operations](./client.md#list_cluster_operations)
+- [list_clusters](./client.md#list_clusters)
+- [list_configuration_revisions](./client.md#list_configuration_revisions)
+- [list_configurations](./client.md#list_configurations)
+- [list_kafka_versions](./client.md#list_kafka_versions)
+- [list_nodes](./client.md#list_nodes)
+- [list_scram_secrets](./client.md#list_scram_secrets)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [reboot_broker](./client.md#reboot_broker)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_broker_count](./client.md#update_broker_count)
+- [update_broker_storage](./client.md#update_broker_storage)
+- [update_broker_type](./client.md#update_broker_type)
+- [update_cluster_configuration](./client.md#update_cluster_configuration)
+- [update_cluster_kafka_version](./client.md#update_cluster_kafka_version)
+- [update_configuration](./client.md#update_configuration)
+- [update_monitoring](./client.md#update_monitoring)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+KafkaClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- ForbiddenException
+- InternalServerErrorException
+- NotFoundException
+- ServiceUnavailableException
+- TooManyRequestsException
+- UnauthorizedException
 
 ## Paginators
 
@@ -105,15 +105,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.literals import BrokerAZDistribution, ...
+from mypy_boto3_kafka.literals import BrokerAZDistributionType, ...
 ```
 
-- [BrokerAZDistribution](./literals.md#brokerazdistribution)
-- [ClientBroker](./literals.md#clientbroker)
-- [ClusterState](./literals.md#clusterstate)
-- [ConfigurationState](./literals.md#configurationstate)
-- [EnhancedMonitoring](./literals.md#enhancedmonitoring)
-- [KafkaVersionStatus](./literals.md#kafkaversionstatus)
+- [BrokerAZDistributionType](./literals.md#brokerazdistributiontype)
+- [ClientBrokerType](./literals.md#clientbrokertype)
+- [ClusterStateType](./literals.md#clusterstatetype)
+- [ConfigurationStateType](./literals.md#configurationstatetype)
+- [EnhancedMonitoringType](./literals.md#enhancedmonitoringtype)
+- [KafkaVersionStatusType](./literals.md#kafkaversionstatustype)
 - [ListClusterOperationsPaginatorName](./literals.md#listclusteroperationspaginatorname)
 - [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
 - [ListConfigurationRevisionsPaginatorName](./literals.md#listconfigurationrevisionspaginatorname)
@@ -121,7 +121,7 @@ from mypy_boto3_kafka.literals import BrokerAZDistribution, ...
 - [ListKafkaVersionsPaginatorName](./literals.md#listkafkaversionspaginatorname)
 - [ListNodesPaginatorName](./literals.md#listnodespaginatorname)
 - [ListScramSecretsPaginatorName](./literals.md#listscramsecretspaginatorname)
-- [NodeType](./literals.md#nodetype)
+- [NodeTypeType](./literals.md#nodetypetype)
 
 ## Typed dictionaries
 

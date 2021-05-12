@@ -3,7 +3,7 @@
 > [Index](..) > [FinSpaceData](.) > Typed dictionaries
 
 Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
 [mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
@@ -26,13 +26,14 @@ Optional fields:
 - `id`: `str`
 - `changesetArn`: `str`
 - `datasetId`: `str`
-- `changeType`: [ChangeType](./literals.md#changetype)
-- `sourceType`: `Literal['S3']` (see [SourceType](./literals.md#sourcetype))
+- `changeType`: [ChangeTypeType](./literals.md#changetypetype)
+- `sourceType`: `Literal['S3']` (see
+  [SourceTypeType](./literals.md#sourcetypetype))
 - `sourceParams`: `Dict`\[`str`, `str`\]
-- `formatType`: [FormatType](./literals.md#formattype)
+- `formatType`: [FormatTypeType](./literals.md#formattypetype)
 - `formatParams`: `Dict`\[`str`, `str`\]
 - `createTimestamp`: `datetime`
-- `status`: [ChangesetStatus](./literals.md#changesetstatus)
+- `status`: [ChangesetStatusType](./literals.md#changesetstatustype)
 - `errorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
 - `changesetLabels`: `Dict`\[`str`, `str`\]
 - `updatesChangesetId`: `str`
@@ -69,7 +70,7 @@ from mypy_boto3_finspace_data.type_defs import ErrorInfoTypeDef
 Optional fields:
 
 - `errorMessage`: `str`
-- `errorCategory`: [ErrorCategory](./literals.md#errorcategory)
+- `errorCategory`: [ErrorCategoryType](./literals.md#errorcategorytype)
 
 ## GetProgrammaticAccessCredentialsResponseTypeDef
 

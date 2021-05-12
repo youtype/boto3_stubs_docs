@@ -3,22 +3,22 @@
 > [Index](..) > [AccessAnalyzer](.) > Literals
 
 Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
 [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 - [Literals for boto3 AccessAnalyzer module](#literals-for-boto3-accessanalyzer-module)
-  - [AccessPreviewStatus](#accesspreviewstatus)
-  - [AccessPreviewStatusReasonCode](#accesspreviewstatusreasoncode)
-  - [AclPermission](#aclpermission)
-  - [AnalyzerStatus](#analyzerstatus)
-  - [FindingChangeType](#findingchangetype)
-  - [FindingSourceType](#findingsourcetype)
-  - [FindingStatus](#findingstatus)
-  - [FindingStatusUpdate](#findingstatusupdate)
-  - [JobErrorCode](#joberrorcode)
-  - [JobStatus](#jobstatus)
-  - [KmsGrantOperation](#kmsgrantoperation)
+  - [AccessPreviewStatusReasonCodeType](#accesspreviewstatusreasoncodetype)
+  - [AccessPreviewStatusType](#accesspreviewstatustype)
+  - [AclPermissionType](#aclpermissiontype)
+  - [AnalyzerStatusType](#analyzerstatustype)
+  - [FindingChangeTypeType](#findingchangetypetype)
+  - [FindingSourceTypeType](#findingsourcetypetype)
+  - [FindingStatusType](#findingstatustype)
+  - [FindingStatusUpdateType](#findingstatusupdatetype)
+  - [JobErrorCodeType](#joberrorcodetype)
+  - [JobStatusType](#jobstatustype)
+  - [KmsGrantOperationType](#kmsgrantoperationtype)
   - [ListAccessPreviewFindingsPaginatorName](#listaccesspreviewfindingspaginatorname)
   - [ListAccessPreviewsPaginatorName](#listaccesspreviewspaginatorname)
   - [ListAnalyzedResourcesPaginatorName](#listanalyzedresourcespaginatorname)
@@ -26,19 +26,30 @@ type annotations stubs module
   - [ListArchiveRulesPaginatorName](#listarchiverulespaginatorname)
   - [ListFindingsPaginatorName](#listfindingspaginatorname)
   - [ListPolicyGenerationsPaginatorName](#listpolicygenerationspaginatorname)
-  - [Locale](#locale)
-  - [OrderBy](#orderby)
-  - [PolicyType](#policytype)
-  - [ReasonCode](#reasoncode)
-  - [ResourceType](#resourcetype)
+  - [LocaleType](#localetype)
+  - [OrderByType](#orderbytype)
+  - [PolicyTypeType](#policytypetype)
+  - [ReasonCodeType](#reasoncodetype)
+  - [ResourceTypeType](#resourcetypetype)
   - [TypeType](#typetype)
-  - [ValidatePolicyFindingType](#validatepolicyfindingtype)
+  - [ValidatePolicyFindingTypeType](#validatepolicyfindingtypetype)
   - [ValidatePolicyPaginatorName](#validatepolicypaginatorname)
 
-## AccessPreviewStatus
+## AccessPreviewStatusReasonCodeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import AccessPreviewStatus
+from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
+```
+
+Values:
+
+- `INTERNAL_ERROR`
+- `INVALID_CONFIGURATION`
+
+## AccessPreviewStatusType
+
+```python
+from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusType
 ```
 
 Values:
@@ -47,21 +58,10 @@ Values:
 - `CREATING`
 - `FAILED`
 
-## AccessPreviewStatusReasonCode
+## AclPermissionType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCode
-```
-
-Values:
-
-- `INTERNAL_ERROR`
-- `INVALID_CONFIGURATION`
-
-## AclPermission
-
-```python
-from mypy_boto3_accessanalyzer.literals import AclPermission
+from mypy_boto3_accessanalyzer.literals import AclPermissionType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 - `WRITE`
 - `WRITE_ACP`
 
-## AnalyzerStatus
+## AnalyzerStatusType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import AnalyzerStatus
+from mypy_boto3_accessanalyzer.literals import AnalyzerStatusType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `DISABLED`
 - `FAILED`
 
-## FindingChangeType
+## FindingChangeTypeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import FindingChangeType
+from mypy_boto3_accessanalyzer.literals import FindingChangeTypeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `NEW`
 - `UNCHANGED`
 
-## FindingSourceType
+## FindingSourceTypeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import FindingSourceType
+from mypy_boto3_accessanalyzer.literals import FindingSourceTypeType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 - `POLICY`
 - `S3_ACCESS_POINT`
 
-## FindingStatus
+## FindingStatusType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import FindingStatus
+from mypy_boto3_accessanalyzer.literals import FindingStatusType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `ARCHIVED`
 - `RESOLVED`
 
-## FindingStatusUpdate
+## FindingStatusUpdateType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import FindingStatusUpdate
+from mypy_boto3_accessanalyzer.literals import FindingStatusUpdateType
 ```
 
 Values:
@@ -132,10 +132,10 @@ Values:
 - `ACTIVE`
 - `ARCHIVED`
 
-## JobErrorCode
+## JobErrorCodeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import JobErrorCode
+from mypy_boto3_accessanalyzer.literals import JobErrorCodeType
 ```
 
 Values:
@@ -145,10 +145,10 @@ Values:
 - `SERVICE_ERROR`
 - `SERVICE_QUOTA_EXCEEDED_ERROR`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import JobStatus
+from mypy_boto3_accessanalyzer.literals import JobStatusType
 ```
 
 Values:
@@ -158,10 +158,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
-## KmsGrantOperation
+## KmsGrantOperationType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import KmsGrantOperation
+from mypy_boto3_accessanalyzer.literals import KmsGrantOperationType
 ```
 
 Values:
@@ -251,10 +251,10 @@ Values:
 
 - `list_policy_generations`
 
-## Locale
+## LocaleType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import Locale
+from mypy_boto3_accessanalyzer.literals import LocaleType
 ```
 
 Values:
@@ -270,10 +270,10 @@ Values:
 - `ZH_CN`
 - `ZH_TW`
 
-## OrderBy
+## OrderByType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import OrderBy
+from mypy_boto3_accessanalyzer.literals import OrderByType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## PolicyType
+## PolicyTypeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import PolicyType
+from mypy_boto3_accessanalyzer.literals import PolicyTypeType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 - `RESOURCE_POLICY`
 - `SERVICE_CONTROL_POLICY`
 
-## ReasonCode
+## ReasonCodeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import ReasonCode
+from mypy_boto3_accessanalyzer.literals import ReasonCodeType
 ```
 
 Values:
@@ -306,10 +306,10 @@ Values:
 - `ORGANIZATION_DELETED`
 - `SERVICE_LINKED_ROLE_CREATION_FAILED`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import ResourceType
+from mypy_boto3_accessanalyzer.literals import ResourceTypeType
 ```
 
 Values:
@@ -333,10 +333,10 @@ Values:
 - `ACCOUNT`
 - `ORGANIZATION`
 
-## ValidatePolicyFindingType
+## ValidatePolicyFindingTypeType
 
 ```python
-from mypy_boto3_accessanalyzer.literals import ValidatePolicyFindingType
+from mypy_boto3_accessanalyzer.literals import ValidatePolicyFindingTypeType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [ECS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecs.html#ECS)
 type annotations stubs module
 [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
@@ -160,7 +160,8 @@ Optional fields:
 - `id`: `str`
 - `type`: `str`
 - `status`: `str`
-- `details`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
+- `details`:
+  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 
 ## AttributeTypeDef
 
@@ -176,7 +177,7 @@ Optional fields:
 
 - `value`: `str`
 - `targetType`: `Literal['container-instance']` (see
-  [TargetType](./literals.md#targettype))
+  [TargetTypeType](./literals.md#targettypetype))
 - `targetId`: `str`
 
 ## AutoScalingGroupProviderTypeDef
@@ -191,9 +192,10 @@ Required fields:
 
 Optional fields:
 
-- `managedScaling`: [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
+- `managedScaling`:
+  [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
 - `managedTerminationProtection`:
-  [ManagedTerminationProtection](./literals.md#managedterminationprotection)
+  [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
 
 ## AutoScalingGroupProviderUpdateTypeDef
 
@@ -203,9 +205,10 @@ from mypy_boto3_ecs.type_defs import AutoScalingGroupProviderUpdateTypeDef
 
 Optional fields:
 
-- `managedScaling`: [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
+- `managedScaling`:
+  [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
 - `managedTerminationProtection`:
-  [ManagedTerminationProtection](./literals.md#managedterminationprotection)
+  [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
 
 ## AwsVpcConfigurationTypeDef
 
@@ -220,7 +223,7 @@ Required fields:
 Optional fields:
 
 - `securityGroups`: `List`\[`str`\]
-- `assignPublicIp`: [AssignPublicIp](./literals.md#assignpublicip)
+- `assignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
 
 ## CapacityProviderStrategyItemTypeDef
 
@@ -247,11 +250,12 @@ Optional fields:
 
 - `capacityProviderArn`: `str`
 - `name`: `str`
-- `status`: [CapacityProviderStatus](./literals.md#capacityproviderstatus)
+- `status`:
+  [CapacityProviderStatusType](./literals.md#capacityproviderstatustype)
 - `autoScalingGroupProvider`:
   [AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef)
 - `updateStatus`:
-  [CapacityProviderUpdateStatus](./literals.md#capacityproviderupdatestatus)
+  [CapacityProviderUpdateStatusType](./literals.md#capacityproviderupdatestatustype)
 - `updateStatusReason`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -275,7 +279,7 @@ from mypy_boto3_ecs.type_defs import ClusterSettingTypeDef
 Optional fields:
 
 - `name`: `Literal['containerInsights']` (see
-  [ClusterSettingName](./literals.md#clustersettingname))
+  [ClusterSettingNameType](./literals.md#clustersettingnametype))
 - `value`: `str`
 
 ## ClusterTypeDef
@@ -303,7 +307,8 @@ Optional fields:
 - `capacityProviders`: `List`\[`str`\]
 - `defaultCapacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `attachments`: `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
+- `attachments`:
+  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 - `attachmentsStatus`: `str`
 
 ## ContainerDefinitionTypeDef
@@ -331,8 +336,10 @@ Optional fields:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 - `environmentFiles`:
   `List`\[[EnvironmentFileTypeDef](./type_defs.md#environmentfiletypedef)\]
-- `mountPoints`: `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
-- `volumesFrom`: `List`\[[VolumeFromTypeDef](./type_defs.md#volumefromtypedef)\]
+- `mountPoints`:
+  `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
+- `volumesFrom`:
+  `List`\[[VolumeFromTypeDef](./type_defs.md#volumefromtypedef)\]
 - `linuxParameters`:
   [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
 - `secrets`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
@@ -373,7 +380,7 @@ from mypy_boto3_ecs.type_defs import ContainerDependencyTypeDef
 Required fields:
 
 - `containerName`: `str`
-- `condition`: [ContainerCondition](./literals.md#containercondition)
+- `condition`: [ContainerConditionType](./literals.md#containerconditiontype)
 
 ## ContainerInstanceTypeDef
 
@@ -397,10 +404,12 @@ Optional fields:
 - `agentConnected`: `bool`
 - `runningTasksCount`: `int`
 - `pendingTasksCount`: `int`
-- `agentUpdateStatus`: [AgentUpdateStatus](./literals.md#agentupdatestatus)
+- `agentUpdateStatus`:
+  [AgentUpdateStatusType](./literals.md#agentupdatestatustype)
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `registeredAt`: `datetime`
-- `attachments`: `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
+- `attachments`:
+  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ContainerOverrideTypeDef
@@ -461,7 +470,7 @@ Optional fields:
   `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 - `networkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
-- `healthStatus`: [HealthStatus](./literals.md#healthstatus)
+- `healthStatus`: [HealthStatusType](./literals.md#healthstatustype)
 - `managedAgents`:
   `List`\[[ManagedAgentTypeDef](./type_defs.md#managedagenttypedef)\]
 - `cpu`: `str`
@@ -603,7 +612,8 @@ from mypy_boto3_ecs.type_defs import DeploymentControllerTypeDef
 
 Required fields:
 
-- `type`: [DeploymentControllerType](./literals.md#deploymentcontrollertype)
+- `type`:
+  [DeploymentControllerTypeType](./literals.md#deploymentcontrollertypetype)
 
 ## DeploymentTypeDef
 
@@ -624,11 +634,12 @@ Optional fields:
 - `updatedAt`: `datetime`
 - `capacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `launchType`: [LaunchType](./literals.md#launchtype)
+- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `platformVersion`: `str`
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `rolloutState`: [DeploymentRolloutState](./literals.md#deploymentrolloutstate)
+- `rolloutState`:
+  [DeploymentRolloutStateType](./literals.md#deploymentrolloutstatetype)
 - `rolloutStateReason`: `str`
 
 ## DeregisterContainerInstanceResponseTypeDef
@@ -650,7 +661,8 @@ from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionResponseTypeDef
 
 Optional fields:
 
-- `taskDefinition`: [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
+- `taskDefinition`:
+  [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
 
 ## DescribeCapacityProvidersResponseTypeDef
 
@@ -707,7 +719,8 @@ from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionResponseTypeDef
 
 Optional fields:
 
-- `taskDefinition`: [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
+- `taskDefinition`:
+  [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DescribeTaskSetsResponseTypeDef
@@ -746,7 +759,7 @@ Optional fields:
 
 - `containerPath`: `str`
 - `permissions`:
-  `List`\[[DeviceCgroupPermission](./literals.md#devicecgrouppermission)\]
+  `List`\[[DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)\]
 
 ## DiscoverPollEndpointResponseTypeDef
 
@@ -767,7 +780,7 @@ from mypy_boto3_ecs.type_defs import DockerVolumeConfigurationTypeDef
 
 Optional fields:
 
-- `scope`: [Scope](./literals.md#scope)
+- `scope`: [ScopeType](./literals.md#scopetype)
 - `autoprovision`: `bool`
 - `driver`: `str`
 - `driverOpts`: `Dict`\[`str`, `str`\]
@@ -782,7 +795,8 @@ from mypy_boto3_ecs.type_defs import EFSAuthorizationConfigTypeDef
 Optional fields:
 
 - `accessPointId`: `str`
-- `iam`: [EFSAuthorizationConfigIAM](./literals.md#efsauthorizationconfigiam)
+- `iam`:
+  [EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype)
 
 ## EFSVolumeConfigurationTypeDef
 
@@ -797,7 +811,8 @@ Required fields:
 Optional fields:
 
 - `rootDirectory`: `str`
-- `transitEncryption`: [EFSTransitEncryption](./literals.md#efstransitencryption)
+- `transitEncryption`:
+  [EFSTransitEncryptionType](./literals.md#efstransitencryptiontype)
 - `transitEncryptionPort`: `int`
 - `authorizationConfig`:
   [EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef)
@@ -812,7 +827,7 @@ Required fields:
 
 - `value`: `str`
 - `type`: `Literal['s3']` (see
-  [EnvironmentFileType](./literals.md#environmentfiletype))
+  [EnvironmentFileTypeType](./literals.md#environmentfiletypetype))
 
 ## EphemeralStorageTypeDef
 
@@ -833,7 +848,8 @@ from mypy_boto3_ecs.type_defs import ExecuteCommandConfigurationTypeDef
 Optional fields:
 
 - `kmsKeyId`: `str`
-- `logging`: [ExecuteCommandLogging](./literals.md#executecommandlogging)
+- `logging`:
+  [ExecuteCommandLoggingType](./literals.md#executecommandloggingtype)
 - `logConfiguration`:
   [ExecuteCommandLogConfigurationTypeDef](./type_defs.md#executecommandlogconfigurationtypedef)
 
@@ -910,7 +926,8 @@ from mypy_boto3_ecs.type_defs import FirelensConfigurationTypeDef
 
 Required fields:
 
-- `type`: [FirelensConfigurationType](./literals.md#firelensconfigurationtype)
+- `type`:
+  [FirelensConfigurationTypeType](./literals.md#firelensconfigurationtypetype)
 
 Optional fields:
 
@@ -1134,7 +1151,7 @@ from mypy_boto3_ecs.type_defs import LogConfigurationTypeDef
 
 Required fields:
 
-- `logDriver`: [LogDriver](./literals.md#logdriver)
+- `logDriver`: [LogDriverType](./literals.md#logdrivertype)
 
 Optional fields:
 
@@ -1151,7 +1168,7 @@ Required fields:
 
 - `containerName`: `str`
 - `managedAgentName`: `Literal['ExecuteCommandAgent']` (see
-  [ManagedAgentName](./literals.md#managedagentname))
+  [ManagedAgentNameType](./literals.md#managedagentnametype))
 - `status`: `str`
 
 Optional fields:
@@ -1168,7 +1185,7 @@ Optional fields:
 
 - `lastStartedAt`: `datetime`
 - `name`: `Literal['ExecuteCommandAgent']` (see
-  [ManagedAgentName](./literals.md#managedagentname))
+  [ManagedAgentNameType](./literals.md#managedagentnametype))
 - `reason`: `str`
 - `lastStatus`: `str`
 
@@ -1180,7 +1197,7 @@ from mypy_boto3_ecs.type_defs import ManagedScalingTypeDef
 
 Optional fields:
 
-- `status`: [ManagedScalingStatus](./literals.md#managedscalingstatus)
+- `status`: [ManagedScalingStatusType](./literals.md#managedscalingstatustype)
 - `targetCapacity`: `int`
 - `minimumScalingStepSize`: `int`
 - `maximumScalingStepSize`: `int`
@@ -1209,7 +1226,7 @@ Optional fields:
 - `bindIP`: `str`
 - `containerPort`: `int`
 - `hostPort`: `int`
-- `protocol`: [TransportProtocol](./literals.md#transportprotocol)
+- `protocol`: [TransportProtocolType](./literals.md#transportprotocoltype)
 
 ## NetworkConfigurationTypeDef
 
@@ -1254,7 +1271,8 @@ from mypy_boto3_ecs.type_defs import PlacementConstraintTypeDef
 
 Optional fields:
 
-- `type`: [PlacementConstraintType](./literals.md#placementconstrainttype)
+- `type`:
+  [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
 - `expression`: `str`
 
 ## PlacementStrategyTypeDef
@@ -1265,7 +1283,7 @@ from mypy_boto3_ecs.type_defs import PlacementStrategyTypeDef
 
 Optional fields:
 
-- `type`: [PlacementStrategyType](./literals.md#placementstrategytype)
+- `type`: [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
 - `field`: `str`
 
 ## PlatformDeviceTypeDef
@@ -1278,7 +1296,7 @@ Required fields:
 
 - `id`: `str`
 - `type`: `Literal['GPU']` (see
-  [PlatformDeviceType](./literals.md#platformdevicetype))
+  [PlatformDeviceTypeType](./literals.md#platformdevicetypetype))
 
 ## PortMappingTypeDef
 
@@ -1290,7 +1308,7 @@ Optional fields:
 
 - `containerPort`: `int`
 - `hostPort`: `int`
-- `protocol`: [TransportProtocol](./literals.md#transportprotocol)
+- `protocol`: [TransportProtocolType](./literals.md#transportprotocoltype)
 
 ## ProxyConfigurationTypeDef
 
@@ -1305,7 +1323,7 @@ Required fields:
 Optional fields:
 
 - `type`: `Literal['APPMESH']` (see
-  [ProxyConfigurationType](./literals.md#proxyconfigurationtype))
+  [ProxyConfigurationTypeType](./literals.md#proxyconfigurationtypetype))
 - `properties`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 
@@ -1368,7 +1386,8 @@ from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionResponseTypeDef
 
 Optional fields:
 
-- `taskDefinition`: [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
+- `taskDefinition`:
+  [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RepositoryCredentialsTypeDef
@@ -1390,7 +1409,7 @@ from mypy_boto3_ecs.type_defs import ResourceRequirementTypeDef
 Required fields:
 
 - `value`: `str`
-- `type`: [ResourceType](./literals.md#resourcetype)
+- `type`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 ## ResourceTypeDef
 
@@ -1427,7 +1446,8 @@ from mypy_boto3_ecs.type_defs import ScaleTypeDef
 Optional fields:
 
 - `value`: `float`
-- `unit`: `Literal['PERCENT']` (see [ScaleUnit](./literals.md#scaleunit))
+- `unit`: `Literal['PERCENT']` (see
+  [ScaleUnitType](./literals.md#scaleunittype))
 
 ## SecretTypeDef
 
@@ -1484,7 +1504,7 @@ Optional fields:
 - `desiredCount`: `int`
 - `runningCount`: `int`
 - `pendingCount`: `int`
-- `launchType`: [LaunchType](./literals.md#launchtype)
+- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `capacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `platformVersion`: `str`
@@ -1492,7 +1512,8 @@ Optional fields:
 - `deploymentConfiguration`:
   [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
 - `taskSets`: `List`\[[TaskSetTypeDef](./type_defs.md#tasksettypedef)\]
-- `deployments`: `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
+- `deployments`:
+  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 - `roleArn`: `str`
 - `events`: `List`\[[ServiceEventTypeDef](./type_defs.md#serviceeventtypedef)\]
 - `createdAt`: `datetime`
@@ -1503,13 +1524,14 @@ Optional fields:
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `healthCheckGracePeriodSeconds`: `int`
-- `schedulingStrategy`: [SchedulingStrategy](./literals.md#schedulingstrategy)
+- `schedulingStrategy`:
+  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
 - `deploymentController`:
   [DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `createdBy`: `str`
 - `enableECSManagedTags`: `bool`
-- `propagateTags`: [PropagateTags](./literals.md#propagatetags)
+- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `enableExecuteCommand`: `bool`
 
 ## SessionTypeDef
@@ -1532,7 +1554,7 @@ from mypy_boto3_ecs.type_defs import SettingTypeDef
 
 Optional fields:
 
-- `name`: [SettingName](./literals.md#settingname)
+- `name`: [SettingNameType](./literals.md#settingnametype)
 - `value`: `str`
 - `principalArn`: `str`
 
@@ -1618,7 +1640,7 @@ from mypy_boto3_ecs.type_defs import TaskDefinitionPlacementConstraintTypeDef
 Optional fields:
 
 - `type`: `Literal['memberOf']` (see
-  [TaskDefinitionPlacementConstraintType](./literals.md#taskdefinitionplacementconstrainttype))
+  [TaskDefinitionPlacementConstraintTypeType](./literals.md#taskdefinitionplacementconstrainttypetype))
 - `expression`: `str`
 
 ## TaskDefinitionTypeDef
@@ -1635,23 +1657,24 @@ Optional fields:
 - `family`: `str`
 - `taskRoleArn`: `str`
 - `executionRoleArn`: `str`
-- `networkMode`: [NetworkMode](./literals.md#networkmode)
+- `networkMode`: [NetworkModeType](./literals.md#networkmodetype)
 - `revision`: `int`
 - `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
-- `status`: [TaskDefinitionStatus](./literals.md#taskdefinitionstatus)
+- `status`: [TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype)
 - `requiresAttributes`:
   `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `placementConstraints`:
   `List`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
-- `compatibilities`: `List`\[[Compatibility](./literals.md#compatibility)\]
+- `compatibilities`:
+  `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
 - `requiresCompatibilities`:
-  `List`\[[Compatibility](./literals.md#compatibility)\]
+  `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
 - `cpu`: `str`
 - `memory`: `str`
 - `inferenceAccelerators`:
   `List`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
-- `pidMode`: [PidMode](./literals.md#pidmode)
-- `ipcMode`: [IpcMode](./literals.md#ipcmode)
+- `pidMode`: [PidModeType](./literals.md#pidmodetype)
+- `ipcMode`: [IpcModeType](./literals.md#ipcmodetype)
 - `proxyConfiguration`:
   [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
 - `registeredAt`: `datetime`
@@ -1700,7 +1723,7 @@ Optional fields:
 - `runningCount`: `int`
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
-- `launchType`: [LaunchType](./literals.md#launchtype)
+- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `capacityProviderStrategy`:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `platformVersion`: `str`
@@ -1711,7 +1734,7 @@ Optional fields:
 - `serviceRegistries`:
   `List`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
 - `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
-- `stabilityStatus`: [StabilityStatus](./literals.md#stabilitystatus)
+- `stabilityStatus`: [StabilityStatusType](./literals.md#stabilitystatustype)
 - `stabilityStatusAt`: `datetime`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -1723,12 +1746,13 @@ from mypy_boto3_ecs.type_defs import TaskTypeDef
 
 Optional fields:
 
-- `attachments`: `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
+- `attachments`:
+  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `availabilityZone`: `str`
 - `capacityProviderName`: `str`
 - `clusterArn`: `str`
-- `connectivity`: [Connectivity](./literals.md#connectivity)
+- `connectivity`: [ConnectivityType](./literals.md#connectivitytype)
 - `connectivityAt`: `datetime`
 - `containerInstanceArn`: `str`
 - `containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
@@ -1738,11 +1762,11 @@ Optional fields:
 - `enableExecuteCommand`: `bool`
 - `executionStoppedAt`: `datetime`
 - `group`: `str`
-- `healthStatus`: [HealthStatus](./literals.md#healthstatus)
+- `healthStatus`: [HealthStatusType](./literals.md#healthstatustype)
 - `inferenceAccelerators`:
   `List`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
 - `lastStatus`: `str`
-- `launchType`: [LaunchType](./literals.md#launchtype)
+- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `memory`: `str`
 - `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
 - `platformVersion`: `str`
@@ -1750,7 +1774,7 @@ Optional fields:
 - `pullStoppedAt`: `datetime`
 - `startedAt`: `datetime`
 - `startedBy`: `str`
-- `stopCode`: [TaskStopCode](./literals.md#taskstopcode)
+- `stopCode`: [TaskStopCodeType](./literals.md#taskstopcodetype)
 - `stoppedAt`: `datetime`
 - `stoppedReason`: `str`
 - `stoppingAt`: `datetime`
@@ -1784,7 +1808,7 @@ from mypy_boto3_ecs.type_defs import UlimitTypeDef
 
 Required fields:
 
-- `name`: [UlimitName](./literals.md#ulimitname)
+- `name`: [UlimitNameType](./literals.md#ulimitnametype)
 - `softLimit`: `int`
 - `hardLimit`: `int`
 

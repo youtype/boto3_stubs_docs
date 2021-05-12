@@ -3,26 +3,26 @@
 > [Index](..) > [IVS](.) > Literals
 
 Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ivs.html#IVS)
 type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [Literals for boto3 IVS module](#literals-for-boto3-ivs-module)
-  - [ChannelLatencyMode](#channellatencymode)
-  - [ChannelType](#channeltype)
+  - [ChannelLatencyModeType](#channellatencymodetype)
+  - [ChannelTypeType](#channeltypetype)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
   - [ListPlaybackKeyPairsPaginatorName](#listplaybackkeypairspaginatorname)
   - [ListRecordingConfigurationsPaginatorName](#listrecordingconfigurationspaginatorname)
   - [ListStreamKeysPaginatorName](#liststreamkeyspaginatorname)
   - [ListStreamsPaginatorName](#liststreamspaginatorname)
-  - [RecordingConfigurationState](#recordingconfigurationstate)
-  - [StreamHealth](#streamhealth)
-  - [StreamState](#streamstate)
+  - [RecordingConfigurationStateType](#recordingconfigurationstatetype)
+  - [StreamHealthType](#streamhealthtype)
+  - [StreamStateType](#streamstatetype)
 
-## ChannelLatencyMode
+## ChannelLatencyModeType
 
 ```python
-from mypy_boto3_ivs.literals import ChannelLatencyMode
+from mypy_boto3_ivs.literals import ChannelLatencyModeType
 ```
 
 Values:
@@ -30,10 +30,10 @@ Values:
 - `LOW`
 - `NORMAL`
 
-## ChannelType
+## ChannelTypeType
 
 ```python
-from mypy_boto3_ivs.literals import ChannelType
+from mypy_boto3_ivs.literals import ChannelTypeType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 
 - `list_streams`
 
-## RecordingConfigurationState
+## RecordingConfigurationStateType
 
 ```python
-from mypy_boto3_ivs.literals import RecordingConfigurationState
+from mypy_boto3_ivs.literals import RecordingConfigurationStateType
 ```
 
 Values:
@@ -103,10 +103,10 @@ Values:
 - `CREATE_FAILED`
 - `CREATING`
 
-## StreamHealth
+## StreamHealthType
 
 ```python
-from mypy_boto3_ivs.literals import StreamHealth
+from mypy_boto3_ivs.literals import StreamHealthType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 - `STARVING`
 - `UNKNOWN`
 
-## StreamState
+## StreamStateType
 
 ```python
-from mypy_boto3_ivs.literals import StreamState
+from mypy_boto3_ivs.literals import StreamStateType
 ```
 
 Values:

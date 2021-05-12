@@ -3,33 +3,33 @@
 > [Index](..) > [Translate](.) > Literals
 
 Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate)
 type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
 - [Literals for boto3 Translate module](#literals-for-boto3-translate-module)
-  - [EncryptionKeyType](#encryptionkeytype)
-  - [JobStatus](#jobstatus)
+  - [EncryptionKeyTypeType](#encryptionkeytypetype)
+  - [JobStatusType](#jobstatustype)
   - [ListTerminologiesPaginatorName](#listterminologiespaginatorname)
-  - [MergeStrategy](#mergestrategy)
-  - [ParallelDataFormat](#paralleldataformat)
-  - [ParallelDataStatus](#paralleldatastatus)
-  - [TerminologyDataFormat](#terminologydataformat)
+  - [MergeStrategyType](#mergestrategytype)
+  - [ParallelDataFormatType](#paralleldataformattype)
+  - [ParallelDataStatusType](#paralleldatastatustype)
+  - [TerminologyDataFormatType](#terminologydataformattype)
 
-## EncryptionKeyType
+## EncryptionKeyTypeType
 
 ```python
-from mypy_boto3_translate.literals import EncryptionKeyType
+from mypy_boto3_translate.literals import EncryptionKeyTypeType
 ```
 
 Values:
 
 - `KMS`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_translate.literals import JobStatus
+from mypy_boto3_translate.literals import JobStatusType
 ```
 
 Values:
@@ -52,20 +52,20 @@ Values:
 
 - `list_terminologies`
 
-## MergeStrategy
+## MergeStrategyType
 
 ```python
-from mypy_boto3_translate.literals import MergeStrategy
+from mypy_boto3_translate.literals import MergeStrategyType
 ```
 
 Values:
 
 - `OVERWRITE`
 
-## ParallelDataFormat
+## ParallelDataFormatType
 
 ```python
-from mypy_boto3_translate.literals import ParallelDataFormat
+from mypy_boto3_translate.literals import ParallelDataFormatType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `TMX`
 - `TSV`
 
-## ParallelDataStatus
+## ParallelDataStatusType
 
 ```python
-from mypy_boto3_translate.literals import ParallelDataStatus
+from mypy_boto3_translate.literals import ParallelDataStatusType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## TerminologyDataFormat
+## TerminologyDataFormatType
 
 ```python
-from mypy_boto3_translate.literals import TerminologyDataFormat
+from mypy_boto3_translate.literals import TerminologyDataFormatType
 ```
 
 Values:

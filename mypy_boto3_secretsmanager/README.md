@@ -3,7 +3,7 @@
 > [Index](..) > SecretsManager
 
 Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
 [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
@@ -30,51 +30,51 @@ Can be used directly:
 from mypy_boto3_secretsmanager.client import SecretsManagerClient
 ```
 
-SecretsManagerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_rotate_secret](./client.md#cancel-rotate-secret)
-- [create_secret](./client.md#create-secret)
-- [delete_resource_policy](./client.md#delete-resource-policy)
-- [delete_secret](./client.md#delete-secret)
-- [describe_secret](./client.md#describe-secret)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_random_password](./client.md#get-random-password)
-- [get_resource_policy](./client.md#get-resource-policy)
-- [get_secret_value](./client.md#get-secret-value)
-- [list_secret_version_ids](./client.md#list-secret-version-ids)
-- [list_secrets](./client.md#list-secrets)
-- [put_resource_policy](./client.md#put-resource-policy)
-- [put_secret_value](./client.md#put-secret-value)
-- [remove_regions_from_replication](./client.md#remove-regions-from-replication)
-- [replicate_secret_to_regions](./client.md#replicate-secret-to-regions)
-- [restore_secret](./client.md#restore-secret)
-- [rotate_secret](./client.md#rotate-secret)
-- [stop_replication_to_replica](./client.md#stop-replication-to-replica)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_secret](./client.md#update-secret)
-- [update_secret_version_stage](./client.md#update-secret-version-stage)
-- [validate_resource_policy](./client.md#validate-resource-policy)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_rotate_secret](./client.md#cancel_rotate_secret)
+- [create_secret](./client.md#create_secret)
+- [delete_resource_policy](./client.md#delete_resource_policy)
+- [delete_secret](./client.md#delete_secret)
+- [describe_secret](./client.md#describe_secret)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_random_password](./client.md#get_random_password)
+- [get_resource_policy](./client.md#get_resource_policy)
+- [get_secret_value](./client.md#get_secret_value)
+- [list_secret_version_ids](./client.md#list_secret_version_ids)
+- [list_secrets](./client.md#list_secrets)
+- [put_resource_policy](./client.md#put_resource_policy)
+- [put_secret_value](./client.md#put_secret_value)
+- [remove_regions_from_replication](./client.md#remove_regions_from_replication)
+- [replicate_secret_to_regions](./client.md#replicate_secret_to_regions)
+- [restore_secret](./client.md#restore_secret)
+- [rotate_secret](./client.md#rotate_secret)
+- [stop_replication_to_replica](./client.md#stop_replication_to_replica)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_secret](./client.md#update_secret)
+- [update_secret_version_stage](./client.md#update_secret_version_stage)
+- [validate_resource_policy](./client.md#validate_resource_policy)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DecryptionFailure](./client.md#decryptionfailure)
-- [EncryptionFailure](./client.md#encryptionfailure)
-- [InternalServiceError](./client.md#internalserviceerror)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [MalformedPolicyDocumentException](./client.md#malformedpolicydocumentexception)
-- [PreconditionNotMetException](./client.md#preconditionnotmetexception)
-- [PublicPolicyException](./client.md#publicpolicyexception)
-- [ResourceExistsException](./client.md#resourceexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+SecretsManagerClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DecryptionFailure
+- EncryptionFailure
+- InternalServiceError
+- InvalidNextTokenException
+- InvalidParameterException
+- InvalidRequestException
+- LimitExceededException
+- MalformedPolicyDocumentException
+- PreconditionNotMetException
+- PublicPolicyException
+- ResourceExistsException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -96,13 +96,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_secretsmanager.literals import FilterNameStringType, ...
+from mypy_boto3_secretsmanager.literals import FilterNameStringTypeType, ...
 ```
 
-- [FilterNameStringType](./literals.md#filternamestringtype)
+- [FilterNameStringTypeType](./literals.md#filternamestringtypetype)
 - [ListSecretsPaginatorName](./literals.md#listsecretspaginatorname)
-- [SortOrderType](./literals.md#sortordertype)
-- [StatusType](./literals.md#statustype)
+- [SortOrderTypeType](./literals.md#sortordertypetype)
+- [StatusTypeType](./literals.md#statustypetype)
 
 ## Typed dictionaries
 

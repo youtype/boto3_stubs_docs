@@ -3,28 +3,28 @@
 > [Index](..) > [AlexaForBusiness](.) > Literals
 
 Auto-generated documentation for
-[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
 [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 - [Literals for boto3 AlexaForBusiness module](#literals-for-boto3-alexaforbusiness-module)
-  - [BusinessReportFailureCode](#businessreportfailurecode)
-  - [BusinessReportFormat](#businessreportformat)
-  - [BusinessReportInterval](#businessreportinterval)
-  - [BusinessReportStatus](#businessreportstatus)
-  - [CommsProtocol](#commsprotocol)
-  - [ConferenceProviderType](#conferenceprovidertype)
-  - [ConnectionStatus](#connectionstatus)
-  - [DeviceEventType](#deviceeventtype)
-  - [DeviceStatus](#devicestatus)
-  - [DeviceStatusDetailCode](#devicestatusdetailcode)
-  - [DeviceUsageType](#deviceusagetype)
-  - [DistanceUnit](#distanceunit)
-  - [EnablementType](#enablementtype)
-  - [EnablementTypeFilter](#enablementtypefilter)
-  - [EndOfMeetingReminderType](#endofmeetingremindertype)
-  - [EnrollmentStatus](#enrollmentstatus)
-  - [Feature](#feature)
+  - [BusinessReportFailureCodeType](#businessreportfailurecodetype)
+  - [BusinessReportFormatType](#businessreportformattype)
+  - [BusinessReportIntervalType](#businessreportintervaltype)
+  - [BusinessReportStatusType](#businessreportstatustype)
+  - [CommsProtocolType](#commsprotocoltype)
+  - [ConferenceProviderTypeType](#conferenceprovidertypetype)
+  - [ConnectionStatusType](#connectionstatustype)
+  - [DeviceEventTypeType](#deviceeventtypetype)
+  - [DeviceStatusDetailCodeType](#devicestatusdetailcodetype)
+  - [DeviceStatusType](#devicestatustype)
+  - [DeviceUsageTypeType](#deviceusagetypetype)
+  - [DistanceUnitType](#distanceunittype)
+  - [EnablementTypeFilterType](#enablementtypefiltertype)
+  - [EnablementTypeType](#enablementtypetype)
+  - [EndOfMeetingReminderTypeType](#endofmeetingremindertypetype)
+  - [EnrollmentStatusType](#enrollmentstatustype)
+  - [FeatureType](#featuretype)
   - [ListBusinessReportSchedulesPaginatorName](#listbusinessreportschedulespaginatorname)
   - [ListConferenceProvidersPaginatorName](#listconferenceproviderspaginatorname)
   - [ListDeviceEventsPaginatorName](#listdeviceeventspaginatorname)
@@ -33,27 +33,27 @@ type annotations stubs module
   - [ListSkillsStoreSkillsByCategoryPaginatorName](#listskillsstoreskillsbycategorypaginatorname)
   - [ListSmartHomeAppliancesPaginatorName](#listsmarthomeappliancespaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
-  - [Locale](#locale)
-  - [NetworkEapMethod](#networkeapmethod)
-  - [NetworkSecurityType](#networksecuritytype)
-  - [PhoneNumberType](#phonenumbertype)
-  - [RequirePin](#requirepin)
+  - [LocaleType](#localetype)
+  - [NetworkEapMethodType](#networkeapmethodtype)
+  - [NetworkSecurityTypeType](#networksecuritytypetype)
+  - [PhoneNumberTypeType](#phonenumbertypetype)
+  - [RequirePinType](#requirepintype)
   - [SearchDevicesPaginatorName](#searchdevicespaginatorname)
   - [SearchProfilesPaginatorName](#searchprofilespaginatorname)
   - [SearchRoomsPaginatorName](#searchroomspaginatorname)
   - [SearchSkillGroupsPaginatorName](#searchskillgroupspaginatorname)
   - [SearchUsersPaginatorName](#searchuserspaginatorname)
-  - [SipType](#siptype)
-  - [SkillType](#skilltype)
-  - [SkillTypeFilter](#skilltypefilter)
-  - [SortValue](#sortvalue)
-  - [TemperatureUnit](#temperatureunit)
-  - [WakeWord](#wakeword)
+  - [SipTypeType](#siptypetype)
+  - [SkillTypeFilterType](#skilltypefiltertype)
+  - [SkillTypeType](#skilltypetype)
+  - [SortValueType](#sortvaluetype)
+  - [TemperatureUnitType](#temperatureunittype)
+  - [WakeWordType](#wakewordtype)
 
-## BusinessReportFailureCode
+## BusinessReportFailureCodeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import BusinessReportFailureCode
+from mypy_boto3_alexaforbusiness.literals import BusinessReportFailureCodeType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `INTERNAL_FAILURE`
 - `NO_SUCH_BUCKET`
 
-## BusinessReportFormat
+## BusinessReportFormatType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import BusinessReportFormat
+from mypy_boto3_alexaforbusiness.literals import BusinessReportFormatType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `CSV`
 - `CSV_ZIP`
 
-## BusinessReportInterval
+## BusinessReportIntervalType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import BusinessReportInterval
+from mypy_boto3_alexaforbusiness.literals import BusinessReportIntervalType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `ONE_WEEK`
 - `THIRTY_DAYS`
 
-## BusinessReportStatus
+## BusinessReportStatusType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import BusinessReportStatus
+from mypy_boto3_alexaforbusiness.literals import BusinessReportStatusType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
-## CommsProtocol
+## CommsProtocolType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import CommsProtocol
+from mypy_boto3_alexaforbusiness.literals import CommsProtocolType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 - `SIP`
 - `SIPS`
 
-## ConferenceProviderType
+## ConferenceProviderTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import ConferenceProviderType
+from mypy_boto3_alexaforbusiness.literals import ConferenceProviderTypeType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 - `WEBEX`
 - `ZOOM`
 
-## ConnectionStatus
+## ConnectionStatusType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import ConnectionStatus
+from mypy_boto3_alexaforbusiness.literals import ConnectionStatusType
 ```
 
 Values:
@@ -139,10 +139,10 @@ Values:
 - `OFFLINE`
 - `ONLINE`
 
-## DeviceEventType
+## DeviceEventTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import DeviceEventType
+from mypy_boto3_alexaforbusiness.literals import DeviceEventTypeType
 ```
 
 Values:
@@ -150,24 +150,10 @@ Values:
 - `CONNECTION_STATUS`
 - `DEVICE_STATUS`
 
-## DeviceStatus
+## DeviceStatusDetailCodeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import DeviceStatus
-```
-
-Values:
-
-- `DEREGISTERED`
-- `FAILED`
-- `PENDING`
-- `READY`
-- `WAS_OFFLINE`
-
-## DeviceStatusDetailCode
-
-```python
-from mypy_boto3_alexaforbusiness.literals import DeviceStatusDetailCode
+from mypy_boto3_alexaforbusiness.literals import DeviceStatusDetailCodeType
 ```
 
 Values:
@@ -190,20 +176,34 @@ Values:
 - `TLS_VERSION_MISMATCH`
 - `UNKNOWN_FAILURE`
 
-## DeviceUsageType
+## DeviceStatusType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import DeviceUsageType
+from mypy_boto3_alexaforbusiness.literals import DeviceStatusType
+```
+
+Values:
+
+- `DEREGISTERED`
+- `FAILED`
+- `PENDING`
+- `READY`
+- `WAS_OFFLINE`
+
+## DeviceUsageTypeType
+
+```python
+from mypy_boto3_alexaforbusiness.literals import DeviceUsageTypeType
 ```
 
 Values:
 
 - `VOICE`
 
-## DistanceUnit
+## DistanceUnitType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import DistanceUnit
+from mypy_boto3_alexaforbusiness.literals import DistanceUnitType
 ```
 
 Values:
@@ -211,10 +211,10 @@ Values:
 - `IMPERIAL`
 - `METRIC`
 
-## EnablementType
+## EnablementTypeFilterType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import EnablementType
+from mypy_boto3_alexaforbusiness.literals import EnablementTypeFilterType
 ```
 
 Values:
@@ -222,10 +222,10 @@ Values:
 - `ENABLED`
 - `PENDING`
 
-## EnablementTypeFilter
+## EnablementTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import EnablementTypeFilter
+from mypy_boto3_alexaforbusiness.literals import EnablementTypeType
 ```
 
 Values:
@@ -233,10 +233,10 @@ Values:
 - `ENABLED`
 - `PENDING`
 
-## EndOfMeetingReminderType
+## EndOfMeetingReminderTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import EndOfMeetingReminderType
+from mypy_boto3_alexaforbusiness.literals import EndOfMeetingReminderTypeType
 ```
 
 Values:
@@ -246,10 +246,10 @@ Values:
 - `CHIME`
 - `KNOCK`
 
-## EnrollmentStatus
+## EnrollmentStatusType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import EnrollmentStatus
+from mypy_boto3_alexaforbusiness.literals import EnrollmentStatusType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `PENDING`
 - `REGISTERED`
 
-## Feature
+## FeatureType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import Feature
+from mypy_boto3_alexaforbusiness.literals import FeatureType
 ```
 
 Values:
@@ -357,30 +357,30 @@ Values:
 
 - `list_tags`
 
-## Locale
+## LocaleType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import Locale
+from mypy_boto3_alexaforbusiness.literals import LocaleType
 ```
 
 Values:
 
 - `en-US`
 
-## NetworkEapMethod
+## NetworkEapMethodType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import NetworkEapMethod
+from mypy_boto3_alexaforbusiness.literals import NetworkEapMethodType
 ```
 
 Values:
 
 - `EAP_TLS`
 
-## NetworkSecurityType
+## NetworkSecurityTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import NetworkSecurityType
+from mypy_boto3_alexaforbusiness.literals import NetworkSecurityTypeType
 ```
 
 Values:
@@ -391,10 +391,10 @@ Values:
 - `WPA2_PSK`
 - `WPA_PSK`
 
-## PhoneNumberType
+## PhoneNumberTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import PhoneNumberType
+from mypy_boto3_alexaforbusiness.literals import PhoneNumberTypeType
 ```
 
 Values:
@@ -403,10 +403,10 @@ Values:
 - `MOBILE`
 - `WORK`
 
-## RequirePin
+## RequirePinType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import RequirePin
+from mypy_boto3_alexaforbusiness.literals import RequirePinType
 ```
 
 Values:
@@ -465,31 +465,20 @@ Values:
 
 - `search_users`
 
-## SipType
+## SipTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import SipType
+from mypy_boto3_alexaforbusiness.literals import SipTypeType
 ```
 
 Values:
 
 - `WORK`
 
-## SkillType
+## SkillTypeFilterType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import SkillType
-```
-
-Values:
-
-- `PRIVATE`
-- `PUBLIC`
-
-## SkillTypeFilter
-
-```python
-from mypy_boto3_alexaforbusiness.literals import SkillTypeFilter
+from mypy_boto3_alexaforbusiness.literals import SkillTypeFilterType
 ```
 
 Values:
@@ -498,10 +487,21 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
-## SortValue
+## SkillTypeType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import SortValue
+from mypy_boto3_alexaforbusiness.literals import SkillTypeType
+```
+
+Values:
+
+- `PRIVATE`
+- `PUBLIC`
+
+## SortValueType
+
+```python
+from mypy_boto3_alexaforbusiness.literals import SortValueType
 ```
 
 Values:
@@ -509,10 +509,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## TemperatureUnit
+## TemperatureUnitType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import TemperatureUnit
+from mypy_boto3_alexaforbusiness.literals import TemperatureUnitType
 ```
 
 Values:
@@ -520,10 +520,10 @@ Values:
 - `CELSIUS`
 - `FAHRENHEIT`
 
-## WakeWord
+## WakeWordType
 
 ```python
-from mypy_boto3_alexaforbusiness.literals import WakeWord
+from mypy_boto3_alexaforbusiness.literals import WakeWordType
 ```
 
 Values:

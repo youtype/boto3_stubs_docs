@@ -3,39 +3,39 @@
 > [Index](..) > [MediaTailor](.) > Literals
 
 Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
 [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 - [Literals for boto3 MediaTailor module](#literals-for-boto3-mediatailor-module)
-  - [AccessType](#accesstype)
-  - [ChannelState](#channelstate)
+  - [AccessTypeType](#accesstypetype)
+  - [ChannelStateType](#channelstatetype)
   - [GetChannelSchedulePaginatorName](#getchannelschedulepaginatorname)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
   - [ListPlaybackConfigurationsPaginatorName](#listplaybackconfigurationspaginatorname)
   - [ListSourceLocationsPaginatorName](#listsourcelocationspaginatorname)
   - [ListVodSourcesPaginatorName](#listvodsourcespaginatorname)
-  - [MessageType](#messagetype)
-  - [Mode](#mode)
-  - [OriginManifestType](#originmanifesttype)
-  - [PlaybackMode](#playbackmode)
-  - [RelativePosition](#relativeposition)
+  - [MessageTypeType](#messagetypetype)
+  - [ModeType](#modetype)
+  - [OriginManifestTypeType](#originmanifesttypetype)
+  - [PlaybackModeType](#playbackmodetype)
+  - [RelativePositionType](#relativepositiontype)
   - [TypeType](#typetype)
 
-## AccessType
+## AccessTypeType
 
 ```python
-from mypy_boto3_mediatailor.literals import AccessType
+from mypy_boto3_mediatailor.literals import AccessTypeType
 ```
 
 Values:
 
 - `S3_SIGV4`
 
-## ChannelState
+## ChannelStateType
 
 ```python
-from mypy_boto3_mediatailor.literals import ChannelState
+from mypy_boto3_mediatailor.literals import ChannelStateType
 ```
 
 Values:
@@ -93,20 +93,20 @@ Values:
 
 - `list_vod_sources`
 
-## MessageType
+## MessageTypeType
 
 ```python
-from mypy_boto3_mediatailor.literals import MessageType
+from mypy_boto3_mediatailor.literals import MessageTypeType
 ```
 
 Values:
 
 - `SPLICE_INSERT`
 
-## Mode
+## ModeType
 
 ```python
-from mypy_boto3_mediatailor.literals import Mode
+from mypy_boto3_mediatailor.literals import ModeType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `BEHIND_LIVE_EDGE`
 - `OFF`
 
-## OriginManifestType
+## OriginManifestTypeType
 
 ```python
-from mypy_boto3_mediatailor.literals import OriginManifestType
+from mypy_boto3_mediatailor.literals import OriginManifestTypeType
 ```
 
 Values:
@@ -125,20 +125,20 @@ Values:
 - `MULTI_PERIOD`
 - `SINGLE_PERIOD`
 
-## PlaybackMode
+## PlaybackModeType
 
 ```python
-from mypy_boto3_mediatailor.literals import PlaybackMode
+from mypy_boto3_mediatailor.literals import PlaybackModeType
 ```
 
 Values:
 
 - `LOOP`
 
-## RelativePosition
+## RelativePositionType
 
 ```python
-from mypy_boto3_mediatailor.literals import RelativePosition
+from mypy_boto3_mediatailor.literals import RelativePositionType
 ```
 
 Values:

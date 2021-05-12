@@ -3,7 +3,7 @@
 > [Index](..) > ServiceDiscovery
 
 Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
 [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
@@ -30,54 +30,54 @@ Can be used directly:
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 ```
 
-ServiceDiscoveryClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_http_namespace](./client.md#create-http-namespace)
-- [create_private_dns_namespace](./client.md#create-private-dns-namespace)
-- [create_public_dns_namespace](./client.md#create-public-dns-namespace)
-- [create_service](./client.md#create-service)
-- [delete_namespace](./client.md#delete-namespace)
-- [delete_service](./client.md#delete-service)
-- [deregister_instance](./client.md#deregister-instance)
-- [discover_instances](./client.md#discover-instances)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_instance](./client.md#get-instance)
-- [get_instances_health_status](./client.md#get-instances-health-status)
-- [get_namespace](./client.md#get-namespace)
-- [get_operation](./client.md#get-operation)
-- [get_paginator](./client.md#get-paginator)
-- [get_service](./client.md#get-service)
-- [list_instances](./client.md#list-instances)
-- [list_namespaces](./client.md#list-namespaces)
-- [list_operations](./client.md#list-operations)
-- [list_services](./client.md#list-services)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [register_instance](./client.md#register-instance)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_instance_custom_health_status](./client.md#update-instance-custom-health-status)
-- [update_service](./client.md#update-service)
+- [can_paginate](./client.md#can_paginate)
+- [create_http_namespace](./client.md#create_http_namespace)
+- [create_private_dns_namespace](./client.md#create_private_dns_namespace)
+- [create_public_dns_namespace](./client.md#create_public_dns_namespace)
+- [create_service](./client.md#create_service)
+- [delete_namespace](./client.md#delete_namespace)
+- [delete_service](./client.md#delete_service)
+- [deregister_instance](./client.md#deregister_instance)
+- [discover_instances](./client.md#discover_instances)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_instance](./client.md#get_instance)
+- [get_instances_health_status](./client.md#get_instances_health_status)
+- [get_namespace](./client.md#get_namespace)
+- [get_operation](./client.md#get_operation)
+- [get_paginator](./client.md#get_paginator)
+- [get_service](./client.md#get_service)
+- [list_instances](./client.md#list_instances)
+- [list_namespaces](./client.md#list_namespaces)
+- [list_operations](./client.md#list_operations)
+- [list_services](./client.md#list_services)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [register_instance](./client.md#register_instance)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_instance_custom_health_status](./client.md#update_instance_custom_health_status)
+- [update_service](./client.md#update_service)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CustomHealthNotFound](./client.md#customhealthnotfound)
-- [DuplicateRequest](./client.md#duplicaterequest)
-- [InstanceNotFound](./client.md#instancenotfound)
-- [InvalidInput](./client.md#invalidinput)
-- [NamespaceAlreadyExists](./client.md#namespacealreadyexists)
-- [NamespaceNotFound](./client.md#namespacenotfound)
-- [OperationNotFound](./client.md#operationnotfound)
-- [RequestLimitExceeded](./client.md#requestlimitexceeded)
-- [ResourceInUse](./client.md#resourceinuse)
-- [ResourceLimitExceeded](./client.md#resourcelimitexceeded)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceAlreadyExists](./client.md#servicealreadyexists)
-- [ServiceNotFound](./client.md#servicenotfound)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+ServiceDiscoveryClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CustomHealthNotFound
+- DuplicateRequest
+- InstanceNotFound
+- InvalidInput
+- NamespaceAlreadyExists
+- NamespaceNotFound
+- OperationNotFound
+- RequestLimitExceeded
+- ResourceInUse
+- ResourceLimitExceeded
+- ResourceNotFoundException
+- ServiceAlreadyExists
+- ServiceNotFound
+- TooManyTagsException
 
 ## Paginators
 
@@ -102,29 +102,29 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_servicediscovery.literals import CustomHealthStatus, ...
+from mypy_boto3_servicediscovery.literals import CustomHealthStatusType, ...
 ```
 
-- [CustomHealthStatus](./literals.md#customhealthstatus)
-- [FilterCondition](./literals.md#filtercondition)
-- [HealthCheckType](./literals.md#healthchecktype)
-- [HealthStatus](./literals.md#healthstatus)
-- [HealthStatusFilter](./literals.md#healthstatusfilter)
+- [CustomHealthStatusType](./literals.md#customhealthstatustype)
+- [FilterConditionType](./literals.md#filterconditiontype)
+- [HealthCheckTypeType](./literals.md#healthchecktypetype)
+- [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
+- [HealthStatusType](./literals.md#healthstatustype)
 - [ListInstancesPaginatorName](./literals.md#listinstancespaginatorname)
 - [ListNamespacesPaginatorName](./literals.md#listnamespacespaginatorname)
 - [ListOperationsPaginatorName](./literals.md#listoperationspaginatorname)
 - [ListServicesPaginatorName](./literals.md#listservicespaginatorname)
-- [NamespaceFilterName](./literals.md#namespacefiltername)
-- [NamespaceType](./literals.md#namespacetype)
-- [OperationFilterName](./literals.md#operationfiltername)
-- [OperationStatus](./literals.md#operationstatus)
-- [OperationTargetType](./literals.md#operationtargettype)
-- [OperationType](./literals.md#operationtype)
-- [RecordType](./literals.md#recordtype)
-- [RoutingPolicy](./literals.md#routingpolicy)
-- [ServiceFilterName](./literals.md#servicefiltername)
-- [ServiceType](./literals.md#servicetype)
-- [ServiceTypeOption](./literals.md#servicetypeoption)
+- [NamespaceFilterNameType](./literals.md#namespacefilternametype)
+- [NamespaceTypeType](./literals.md#namespacetypetype)
+- [OperationFilterNameType](./literals.md#operationfilternametype)
+- [OperationStatusType](./literals.md#operationstatustype)
+- [OperationTargetTypeType](./literals.md#operationtargettypetype)
+- [OperationTypeType](./literals.md#operationtypetype)
+- [RecordTypeType](./literals.md#recordtypetype)
+- [RoutingPolicyType](./literals.md#routingpolicytype)
+- [ServiceFilterNameType](./literals.md#servicefilternametype)
+- [ServiceTypeOptionType](./literals.md#servicetypeoptiontype)
+- [ServiceTypeType](./literals.md#servicetypetype)
 
 ## Typed dictionaries
 

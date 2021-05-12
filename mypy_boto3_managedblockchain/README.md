@@ -3,7 +3,7 @@
 > [Index](..) > ManagedBlockchain
 
 Auto-generated documentation for
-[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
 [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
@@ -29,49 +29,49 @@ Can be used directly:
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 ```
 
-ManagedBlockchainClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_member](./client.md#create-member)
-- [create_network](./client.md#create-network)
-- [create_node](./client.md#create-node)
-- [create_proposal](./client.md#create-proposal)
-- [delete_member](./client.md#delete-member)
-- [delete_node](./client.md#delete-node)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_member](./client.md#get-member)
-- [get_network](./client.md#get-network)
-- [get_node](./client.md#get-node)
-- [get_proposal](./client.md#get-proposal)
-- [list_invitations](./client.md#list-invitations)
-- [list_members](./client.md#list-members)
-- [list_networks](./client.md#list-networks)
-- [list_nodes](./client.md#list-nodes)
-- [list_proposal_votes](./client.md#list-proposal-votes)
-- [list_proposals](./client.md#list-proposals)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [reject_invitation](./client.md#reject-invitation)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_member](./client.md#update-member)
-- [update_node](./client.md#update-node)
-- [vote_on_proposal](./client.md#vote-on-proposal)
+- [can_paginate](./client.md#can_paginate)
+- [create_member](./client.md#create_member)
+- [create_network](./client.md#create_network)
+- [create_node](./client.md#create_node)
+- [create_proposal](./client.md#create_proposal)
+- [delete_member](./client.md#delete_member)
+- [delete_node](./client.md#delete_node)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_member](./client.md#get_member)
+- [get_network](./client.md#get_network)
+- [get_node](./client.md#get_node)
+- [get_proposal](./client.md#get_proposal)
+- [list_invitations](./client.md#list_invitations)
+- [list_members](./client.md#list_members)
+- [list_networks](./client.md#list_networks)
+- [list_nodes](./client.md#list_nodes)
+- [list_proposal_votes](./client.md#list_proposal_votes)
+- [list_proposals](./client.md#list_proposals)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [reject_invitation](./client.md#reject_invitation)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_member](./client.md#update_member)
+- [update_node](./client.md#update_node)
+- [vote_on_proposal](./client.md#vote_on_proposal)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [IllegalActionException](./client.md#illegalactionexception)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceLimitExceededException](./client.md#resourcelimitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceNotReadyException](./client.md#resourcenotreadyexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+ManagedBlockchainClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- IllegalActionException
+- InternalServiceErrorException
+- InvalidRequestException
+- ResourceAlreadyExistsException
+- ResourceLimitExceededException
+- ResourceNotFoundException
+- ResourceNotReadyException
+- ThrottlingException
+- TooManyTagsException
 
 ## Literals
 
@@ -80,19 +80,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_managedblockchain.literals import Edition, ...
+from mypy_boto3_managedblockchain.literals import EditionType, ...
 ```
 
-- [Edition](./literals.md#edition)
-- [Framework](./literals.md#framework)
-- [InvitationStatus](./literals.md#invitationstatus)
-- [MemberStatus](./literals.md#memberstatus)
-- [NetworkStatus](./literals.md#networkstatus)
-- [NodeStatus](./literals.md#nodestatus)
-- [ProposalStatus](./literals.md#proposalstatus)
-- [StateDBType](./literals.md#statedbtype)
-- [ThresholdComparator](./literals.md#thresholdcomparator)
-- [VoteValue](./literals.md#votevalue)
+- [EditionType](./literals.md#editiontype)
+- [FrameworkType](./literals.md#frameworktype)
+- [InvitationStatusType](./literals.md#invitationstatustype)
+- [MemberStatusType](./literals.md#memberstatustype)
+- [NetworkStatusType](./literals.md#networkstatustype)
+- [NodeStatusType](./literals.md#nodestatustype)
+- [ProposalStatusType](./literals.md#proposalstatustype)
+- [StateDBTypeType](./literals.md#statedbtypetype)
+- [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
+- [VoteValueType](./literals.md#votevaluetype)
 
 ## Typed dictionaries
 

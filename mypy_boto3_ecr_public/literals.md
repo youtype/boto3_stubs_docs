@@ -3,7 +3,7 @@
 > [Index](..) > [ECRPublic](.) > Literals
 
 Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
 [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
@@ -12,10 +12,10 @@ type annotations stubs module
   - [DescribeImagesPaginatorName](#describeimagespaginatorname)
   - [DescribeRegistriesPaginatorName](#describeregistriespaginatorname)
   - [DescribeRepositoriesPaginatorName](#describerepositoriespaginatorname)
-  - [ImageFailureCode](#imagefailurecode)
-  - [LayerAvailability](#layeravailability)
-  - [LayerFailureCode](#layerfailurecode)
-  - [RegistryAliasStatus](#registryaliasstatus)
+  - [ImageFailureCodeType](#imagefailurecodetype)
+  - [LayerAvailabilityType](#layeravailabilitytype)
+  - [LayerFailureCodeType](#layerfailurecodetype)
+  - [RegistryAliasStatusType](#registryaliasstatustype)
 
 ## DescribeImageTagsPaginatorName
 
@@ -57,10 +57,10 @@ Values:
 
 - `describe_repositories`
 
-## ImageFailureCode
+## ImageFailureCodeType
 
 ```python
-from mypy_boto3_ecr_public.literals import ImageFailureCode
+from mypy_boto3_ecr_public.literals import ImageFailureCodeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `KmsError`
 - `MissingDigestAndTag`
 
-## LayerAvailability
+## LayerAvailabilityType
 
 ```python
-from mypy_boto3_ecr_public.literals import LayerAvailability
+from mypy_boto3_ecr_public.literals import LayerAvailabilityType
 ```
 
 Values:
@@ -84,10 +84,10 @@ Values:
 - `AVAILABLE`
 - `UNAVAILABLE`
 
-## LayerFailureCode
+## LayerFailureCodeType
 
 ```python
-from mypy_boto3_ecr_public.literals import LayerFailureCode
+from mypy_boto3_ecr_public.literals import LayerFailureCodeType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `InvalidLayerDigest`
 - `MissingLayerDigest`
 
-## RegistryAliasStatus
+## RegistryAliasStatusType
 
 ```python
-from mypy_boto3_ecr_public.literals import RegistryAliasStatus
+from mypy_boto3_ecr_public.literals import RegistryAliasStatusType
 ```
 
 Values:

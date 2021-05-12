@@ -3,7 +3,7 @@
 > [Index](..) > [RDSDataService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
 [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
@@ -35,7 +35,8 @@ from mypy_boto3_rds_data.type_defs import ArrayValueTypeDef
 
 Optional fields:
 
-- `arrayValues`: `List`\[[ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef)\]
+- `arrayValues`:
+  `List`\[[ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef)\]
 - `booleanValues`: `List`\[`bool`\]
 - `doubleValues`: `List`\[`float`\]
 - `longValues`: `List`\[`int`\]
@@ -178,7 +179,8 @@ from mypy_boto3_rds_data.type_defs import ResultSetOptionsTypeDef
 
 Optional fields:
 
-- `decimalReturnType`: [DecimalReturnType](./literals.md#decimalreturntype)
+- `decimalReturnType`:
+  [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
 
 ## RollbackTransactionResponseTypeDef
 
@@ -199,7 +201,7 @@ from mypy_boto3_rds_data.type_defs import SqlParameterTypeDef
 Optional fields:
 
 - `name`: `str`
-- `typeHint`: [TypeHint](./literals.md#typehint)
+- `typeHint`: [TypeHintType](./literals.md#typehinttype)
 - `value`: [FieldTypeDef](./type_defs.md#fieldtypedef)
 
 ## SqlStatementResultTypeDef

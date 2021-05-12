@@ -3,31 +3,31 @@
 > [Index](..) > [WAFRegional](.) > Literals
 
 Auto-generated documentation for
-[WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
+[WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module
 [mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 - [Literals for boto3 WAFRegional module](#literals-for-boto3-wafregional-module)
-  - [ChangeAction](#changeaction)
-  - [ChangeTokenStatus](#changetokenstatus)
-  - [ComparisonOperator](#comparisonoperator)
-  - [GeoMatchConstraintType](#geomatchconstrainttype)
-  - [GeoMatchConstraintValue](#geomatchconstraintvalue)
-  - [IPSetDescriptorType](#ipsetdescriptortype)
-  - [MatchFieldType](#matchfieldtype)
-  - [PositionalConstraint](#positionalconstraint)
-  - [PredicateType](#predicatetype)
-  - [RateKey](#ratekey)
-  - [ResourceType](#resourcetype)
-  - [TextTransformation](#texttransformation)
-  - [WafActionType](#wafactiontype)
-  - [WafOverrideActionType](#wafoverrideactiontype)
-  - [WafRuleType](#wafruletype)
+  - [ChangeActionType](#changeactiontype)
+  - [ChangeTokenStatusType](#changetokenstatustype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [GeoMatchConstraintTypeType](#geomatchconstrainttypetype)
+  - [GeoMatchConstraintValueType](#geomatchconstraintvaluetype)
+  - [IPSetDescriptorTypeType](#ipsetdescriptortypetype)
+  - [MatchFieldTypeType](#matchfieldtypetype)
+  - [PositionalConstraintType](#positionalconstrainttype)
+  - [PredicateTypeType](#predicatetypetype)
+  - [RateKeyType](#ratekeytype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [TextTransformationType](#texttransformationtype)
+  - [WafActionTypeType](#wafactiontypetype)
+  - [WafOverrideActionTypeType](#wafoverrideactiontypetype)
+  - [WafRuleTypeType](#wafruletypetype)
 
-## ChangeAction
+## ChangeActionType
 
 ```python
-from mypy_boto3_waf_regional.literals import ChangeAction
+from mypy_boto3_waf_regional.literals import ChangeActionType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `DELETE`
 - `INSERT`
 
-## ChangeTokenStatus
+## ChangeTokenStatusType
 
 ```python
-from mypy_boto3_waf_regional.literals import ChangeTokenStatus
+from mypy_boto3_waf_regional.literals import ChangeTokenStatusType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `PENDING`
 - `PROVISIONED`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_waf_regional.literals import ComparisonOperator
+from mypy_boto3_waf_regional.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -62,20 +62,20 @@ Values:
 - `LT`
 - `NE`
 
-## GeoMatchConstraintType
+## GeoMatchConstraintTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import GeoMatchConstraintType
+from mypy_boto3_waf_regional.literals import GeoMatchConstraintTypeType
 ```
 
 Values:
 
 - `Country`
 
-## GeoMatchConstraintValue
+## GeoMatchConstraintValueType
 
 ```python
-from mypy_boto3_waf_regional.literals import GeoMatchConstraintValue
+from mypy_boto3_waf_regional.literals import GeoMatchConstraintValueType
 ```
 
 Values:
@@ -330,10 +330,10 @@ Values:
 - `ZM`
 - `ZW`
 
-## IPSetDescriptorType
+## IPSetDescriptorTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import IPSetDescriptorType
+from mypy_boto3_waf_regional.literals import IPSetDescriptorTypeType
 ```
 
 Values:
@@ -341,10 +341,10 @@ Values:
 - `IPV4`
 - `IPV6`
 
-## MatchFieldType
+## MatchFieldTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import MatchFieldType
+from mypy_boto3_waf_regional.literals import MatchFieldTypeType
 ```
 
 Values:
@@ -357,10 +357,10 @@ Values:
 - `SINGLE_QUERY_ARG`
 - `URI`
 
-## PositionalConstraint
+## PositionalConstraintType
 
 ```python
-from mypy_boto3_waf_regional.literals import PositionalConstraint
+from mypy_boto3_waf_regional.literals import PositionalConstraintType
 ```
 
 Values:
@@ -371,10 +371,10 @@ Values:
 - `EXACTLY`
 - `STARTS_WITH`
 
-## PredicateType
+## PredicateTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import PredicateType
+from mypy_boto3_waf_regional.literals import PredicateTypeType
 ```
 
 Values:
@@ -387,20 +387,20 @@ Values:
 - `SqlInjectionMatch`
 - `XssMatch`
 
-## RateKey
+## RateKeyType
 
 ```python
-from mypy_boto3_waf_regional.literals import RateKey
+from mypy_boto3_waf_regional.literals import RateKeyType
 ```
 
 Values:
 
 - `IP`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import ResourceType
+from mypy_boto3_waf_regional.literals import ResourceTypeType
 ```
 
 Values:
@@ -408,10 +408,10 @@ Values:
 - `API_GATEWAY`
 - `APPLICATION_LOAD_BALANCER`
 
-## TextTransformation
+## TextTransformationType
 
 ```python
-from mypy_boto3_waf_regional.literals import TextTransformation
+from mypy_boto3_waf_regional.literals import TextTransformationType
 ```
 
 Values:
@@ -423,10 +423,10 @@ Values:
 - `NONE`
 - `URL_DECODE`
 
-## WafActionType
+## WafActionTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import WafActionType
+from mypy_boto3_waf_regional.literals import WafActionTypeType
 ```
 
 Values:
@@ -435,10 +435,10 @@ Values:
 - `BLOCK`
 - `COUNT`
 
-## WafOverrideActionType
+## WafOverrideActionTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import WafOverrideActionType
+from mypy_boto3_waf_regional.literals import WafOverrideActionTypeType
 ```
 
 Values:
@@ -446,10 +446,10 @@ Values:
 - `COUNT`
 - `NONE`
 
-## WafRuleType
+## WafRuleTypeType
 
 ```python
-from mypy_boto3_waf_regional.literals import WafRuleType
+from mypy_boto3_waf_regional.literals import WafRuleTypeType
 ```
 
 Values:

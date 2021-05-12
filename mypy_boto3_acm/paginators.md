@@ -3,7 +3,7 @@
 > [Index](..) > [ACM](.) > Paginators
 
 Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM)
 type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
@@ -24,12 +24,12 @@ def get_list_certificates_paginator() -> ListCertificatesPaginator:
 ```
 
 Boto3 documentation:
-[ACM.Paginator.ListCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Paginator.ListCertificates)
+[ACM.Paginator.ListCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Paginator.ListCertificates)
 
 Arguments for `ListCertificatesPaginator.paginate` method:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatus](./literals.md#certificatestatus)\]
+  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

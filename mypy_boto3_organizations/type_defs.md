@@ -3,7 +3,7 @@
 > [Index](..) > [Organizations](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations)
 type annotations stubs module
 [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
@@ -89,8 +89,9 @@ Optional fields:
 - `Arn`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Status`: [AccountStatus](./literals.md#accountstatus)
-- `JoinedMethod`: [AccountJoinedMethod](./literals.md#accountjoinedmethod)
+- `Status`: [AccountStatusType](./literals.md#accountstatustype)
+- `JoinedMethod`:
+  [AccountJoinedMethodType](./literals.md#accountjoinedmethodtype)
 - `JoinedTimestamp`: `datetime`
 
 ## CancelHandshakeResponseTypeDef
@@ -112,7 +113,7 @@ from mypy_boto3_organizations.type_defs import ChildTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`: [ChildType](./literals.md#childtype)
+- `Type`: [ChildTypeType](./literals.md#childtypetype)
 
 ## CreateAccountResponseTypeDef
 
@@ -135,13 +136,13 @@ Optional fields:
 
 - `Id`: `str`
 - `AccountName`: `str`
-- `State`: [CreateAccountState](./literals.md#createaccountstate)
+- `State`: [CreateAccountStateType](./literals.md#createaccountstatetype)
 - `RequestedTimestamp`: `datetime`
 - `CompletedTimestamp`: `datetime`
 - `AccountId`: `str`
 - `GovCloudAccountId`: `str`
 - `FailureReason`:
-  [CreateAccountFailureReason](./literals.md#createaccountfailurereason)
+  [CreateAccountFailureReasonType](./literals.md#createaccountfailurereasontype)
 
 ## CreateGovCloudAccountResponseTypeDef
 
@@ -207,8 +208,9 @@ Optional fields:
 - `Arn`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Status`: [AccountStatus](./literals.md#accountstatus)
-- `JoinedMethod`: [AccountJoinedMethod](./literals.md#accountjoinedmethod)
+- `Status`: [AccountStatusType](./literals.md#accountstatustype)
+- `JoinedMethod`:
+  [AccountJoinedMethodType](./literals.md#accountjoinedmethodtype)
 - `JoinedTimestamp`: `datetime`
 - `DelegationEnabledDate`: `datetime`
 
@@ -317,7 +319,8 @@ Optional fields:
 - `PolicyContent`: `str`
 - `LastUpdatedTimestamp`: `datetime`
 - `TargetId`: `str`
-- `PolicyType`: [EffectivePolicyType](./literals.md#effectivepolicytype)
+- `PolicyType`:
+  [EffectivePolicyTypeType](./literals.md#effectivepolicytypetype)
 
 ## EnableAllFeaturesResponseTypeDef
 
@@ -358,7 +361,7 @@ from mypy_boto3_organizations.type_defs import HandshakeFilterTypeDef
 
 Optional fields:
 
-- `ActionType`: [ActionType](./literals.md#actiontype)
+- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
 - `ParentHandshakeId`: `str`
 
 ## HandshakePartyTypeDef
@@ -370,7 +373,7 @@ from mypy_boto3_organizations.type_defs import HandshakePartyTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`: [HandshakePartyType](./literals.md#handshakepartytype)
+- `Type`: [HandshakePartyTypeType](./literals.md#handshakepartytypetype)
 
 ## HandshakeResourceTypeDef
 
@@ -381,7 +384,7 @@ from mypy_boto3_organizations.type_defs import HandshakeResourceTypeDef
 Optional fields:
 
 - `Value`: `str`
-- `Type`: [HandshakeResourceType](./literals.md#handshakeresourcetype)
+- `Type`: [HandshakeResourceTypeType](./literals.md#handshakeresourcetypetype)
 - `Resources`:
   `List`\[[HandshakeResourceTypeDef](./type_defs.md#handshakeresourcetypedef)\]
 
@@ -397,10 +400,10 @@ Optional fields:
 - `Arn`: `str`
 - `Parties`:
   `List`\[[HandshakePartyTypeDef](./type_defs.md#handshakepartytypedef)\]
-- `State`: [HandshakeState](./literals.md#handshakestate)
+- `State`: [HandshakeStateType](./literals.md#handshakestatetype)
 - `RequestedTimestamp`: `datetime`
 - `ExpirationTimestamp`: `datetime`
-- `Action`: [ActionType](./literals.md#actiontype)
+- `Action`: [ActionTypeType](./literals.md#actiontypetype)
 - `Resources`:
   `List`\[[HandshakeResourceTypeDef](./type_defs.md#handshakeresourcetypedef)\]
 
@@ -608,7 +611,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
-- `FeatureSet`: [OrganizationFeatureSet](./literals.md#organizationfeatureset)
+- `FeatureSet`:
+  [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
 - `MasterAccountArn`: `str`
 - `MasterAccountId`: `str`
 - `MasterAccountEmail`: `str`
@@ -648,7 +652,7 @@ from mypy_boto3_organizations.type_defs import ParentTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`: [ParentType](./literals.md#parenttype)
+- `Type`: [ParentTypeType](./literals.md#parenttypetype)
 
 ## PolicySummaryTypeDef
 
@@ -662,7 +666,7 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Type`: [PolicyType](./literals.md#policytype)
+- `Type`: [PolicyTypeType](./literals.md#policytypetype)
 - `AwsManaged`: `bool`
 
 ## PolicyTargetSummaryTypeDef
@@ -676,7 +680,7 @@ Optional fields:
 - `TargetId`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`: [TargetType](./literals.md#targettype)
+- `Type`: [TargetTypeType](./literals.md#targettypetype)
 
 ## PolicyTypeDef
 
@@ -697,8 +701,8 @@ from mypy_boto3_organizations.type_defs import PolicyTypeSummaryTypeDef
 
 Optional fields:
 
-- `Type`: [PolicyType](./literals.md#policytype)
-- `Status`: [PolicyTypeStatus](./literals.md#policytypestatus)
+- `Type`: [PolicyTypeType](./literals.md#policytypetype)
+- `Status`: [PolicyTypeStatusType](./literals.md#policytypestatustype)
 
 ## RootTypeDef
 

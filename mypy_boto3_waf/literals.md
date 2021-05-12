@@ -3,18 +3,18 @@
 > [Index](..) > [WAF](.) > Literals
 
 Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+[WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF)
 type annotations stubs module
 [mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
 
 - [Literals for boto3 WAF module](#literals-for-boto3-waf-module)
-  - [ChangeAction](#changeaction)
-  - [ChangeTokenStatus](#changetokenstatus)
-  - [ComparisonOperator](#comparisonoperator)
-  - [GeoMatchConstraintType](#geomatchconstrainttype)
-  - [GeoMatchConstraintValue](#geomatchconstraintvalue)
+  - [ChangeActionType](#changeactiontype)
+  - [ChangeTokenStatusType](#changetokenstatustype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [GeoMatchConstraintTypeType](#geomatchconstrainttypetype)
+  - [GeoMatchConstraintValueType](#geomatchconstraintvaluetype)
   - [GetRateBasedRuleManagedKeysPaginatorName](#getratebasedrulemanagedkeyspaginatorname)
-  - [IPSetDescriptorType](#ipsetdescriptortype)
+  - [IPSetDescriptorTypeType](#ipsetdescriptortypetype)
   - [ListActivatedRulesInRuleGroupPaginatorName](#listactivatedrulesinrulegrouppaginatorname)
   - [ListByteMatchSetsPaginatorName](#listbytematchsetspaginatorname)
   - [ListGeoMatchSetsPaginatorName](#listgeomatchsetspaginatorname)
@@ -30,19 +30,19 @@ type annotations stubs module
   - [ListSubscribedRuleGroupsPaginatorName](#listsubscribedrulegroupspaginatorname)
   - [ListWebACLsPaginatorName](#listwebaclspaginatorname)
   - [ListXssMatchSetsPaginatorName](#listxssmatchsetspaginatorname)
-  - [MatchFieldType](#matchfieldtype)
-  - [PositionalConstraint](#positionalconstraint)
-  - [PredicateType](#predicatetype)
-  - [RateKey](#ratekey)
-  - [TextTransformation](#texttransformation)
-  - [WafActionType](#wafactiontype)
-  - [WafOverrideActionType](#wafoverrideactiontype)
-  - [WafRuleType](#wafruletype)
+  - [MatchFieldTypeType](#matchfieldtypetype)
+  - [PositionalConstraintType](#positionalconstrainttype)
+  - [PredicateTypeType](#predicatetypetype)
+  - [RateKeyType](#ratekeytype)
+  - [TextTransformationType](#texttransformationtype)
+  - [WafActionTypeType](#wafactiontypetype)
+  - [WafOverrideActionTypeType](#wafoverrideactiontypetype)
+  - [WafRuleTypeType](#wafruletypetype)
 
-## ChangeAction
+## ChangeActionType
 
 ```python
-from mypy_boto3_waf.literals import ChangeAction
+from mypy_boto3_waf.literals import ChangeActionType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `DELETE`
 - `INSERT`
 
-## ChangeTokenStatus
+## ChangeTokenStatusType
 
 ```python
-from mypy_boto3_waf.literals import ChangeTokenStatus
+from mypy_boto3_waf.literals import ChangeTokenStatusType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `PENDING`
 - `PROVISIONED`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_waf.literals import ComparisonOperator
+from mypy_boto3_waf.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -77,20 +77,20 @@ Values:
 - `LT`
 - `NE`
 
-## GeoMatchConstraintType
+## GeoMatchConstraintTypeType
 
 ```python
-from mypy_boto3_waf.literals import GeoMatchConstraintType
+from mypy_boto3_waf.literals import GeoMatchConstraintTypeType
 ```
 
 Values:
 
 - `Country`
 
-## GeoMatchConstraintValue
+## GeoMatchConstraintValueType
 
 ```python
-from mypy_boto3_waf.literals import GeoMatchConstraintValue
+from mypy_boto3_waf.literals import GeoMatchConstraintValueType
 ```
 
 Values:
@@ -355,10 +355,10 @@ Values:
 
 - `get_rate_based_rule_managed_keys`
 
-## IPSetDescriptorType
+## IPSetDescriptorTypeType
 
 ```python
-from mypy_boto3_waf.literals import IPSetDescriptorType
+from mypy_boto3_waf.literals import IPSetDescriptorTypeType
 ```
 
 Values:
@@ -516,10 +516,10 @@ Values:
 
 - `list_xss_match_sets`
 
-## MatchFieldType
+## MatchFieldTypeType
 
 ```python
-from mypy_boto3_waf.literals import MatchFieldType
+from mypy_boto3_waf.literals import MatchFieldTypeType
 ```
 
 Values:
@@ -532,10 +532,10 @@ Values:
 - `SINGLE_QUERY_ARG`
 - `URI`
 
-## PositionalConstraint
+## PositionalConstraintType
 
 ```python
-from mypy_boto3_waf.literals import PositionalConstraint
+from mypy_boto3_waf.literals import PositionalConstraintType
 ```
 
 Values:
@@ -546,10 +546,10 @@ Values:
 - `EXACTLY`
 - `STARTS_WITH`
 
-## PredicateType
+## PredicateTypeType
 
 ```python
-from mypy_boto3_waf.literals import PredicateType
+from mypy_boto3_waf.literals import PredicateTypeType
 ```
 
 Values:
@@ -562,20 +562,20 @@ Values:
 - `SqlInjectionMatch`
 - `XssMatch`
 
-## RateKey
+## RateKeyType
 
 ```python
-from mypy_boto3_waf.literals import RateKey
+from mypy_boto3_waf.literals import RateKeyType
 ```
 
 Values:
 
 - `IP`
 
-## TextTransformation
+## TextTransformationType
 
 ```python
-from mypy_boto3_waf.literals import TextTransformation
+from mypy_boto3_waf.literals import TextTransformationType
 ```
 
 Values:
@@ -587,10 +587,10 @@ Values:
 - `NONE`
 - `URL_DECODE`
 
-## WafActionType
+## WafActionTypeType
 
 ```python
-from mypy_boto3_waf.literals import WafActionType
+from mypy_boto3_waf.literals import WafActionTypeType
 ```
 
 Values:
@@ -599,10 +599,10 @@ Values:
 - `BLOCK`
 - `COUNT`
 
-## WafOverrideActionType
+## WafOverrideActionTypeType
 
 ```python
-from mypy_boto3_waf.literals import WafOverrideActionType
+from mypy_boto3_waf.literals import WafOverrideActionTypeType
 ```
 
 Values:
@@ -610,10 +610,10 @@ Values:
 - `COUNT`
 - `NONE`
 
-## WafRuleType
+## WafRuleTypeType
 
 ```python
-from mypy_boto3_waf.literals import WafRuleType
+from mypy_boto3_waf.literals import WafRuleTypeType
 ```
 
 Values:

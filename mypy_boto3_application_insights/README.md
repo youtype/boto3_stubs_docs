@@ -3,7 +3,7 @@
 > [Index](..) > ApplicationInsights
 
 Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
 [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
@@ -29,51 +29,51 @@ Can be used directly:
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
 ```
 
-ApplicationInsightsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [create_component](./client.md#create-component)
-- [create_log_pattern](./client.md#create-log-pattern)
-- [delete_application](./client.md#delete-application)
-- [delete_component](./client.md#delete-component)
-- [delete_log_pattern](./client.md#delete-log-pattern)
-- [describe_application](./client.md#describe-application)
-- [describe_component](./client.md#describe-component)
-- [describe_component_configuration](./client.md#describe-component-configuration)
-- [describe_component_configuration_recommendation](./client.md#describe-component-configuration-recommendation)
-- [describe_log_pattern](./client.md#describe-log-pattern)
-- [describe_observation](./client.md#describe-observation)
-- [describe_problem](./client.md#describe-problem)
-- [describe_problem_observations](./client.md#describe-problem-observations)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_applications](./client.md#list-applications)
-- [list_components](./client.md#list-components)
-- [list_configuration_history](./client.md#list-configuration-history)
-- [list_log_pattern_sets](./client.md#list-log-pattern-sets)
-- [list_log_patterns](./client.md#list-log-patterns)
-- [list_problems](./client.md#list-problems)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_application](./client.md#update-application)
-- [update_component](./client.md#update-component)
-- [update_component_configuration](./client.md#update-component-configuration)
-- [update_log_pattern](./client.md#update-log-pattern)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [create_component](./client.md#create_component)
+- [create_log_pattern](./client.md#create_log_pattern)
+- [delete_application](./client.md#delete_application)
+- [delete_component](./client.md#delete_component)
+- [delete_log_pattern](./client.md#delete_log_pattern)
+- [describe_application](./client.md#describe_application)
+- [describe_component](./client.md#describe_component)
+- [describe_component_configuration](./client.md#describe_component_configuration)
+- [describe_component_configuration_recommendation](./client.md#describe_component_configuration_recommendation)
+- [describe_log_pattern](./client.md#describe_log_pattern)
+- [describe_observation](./client.md#describe_observation)
+- [describe_problem](./client.md#describe_problem)
+- [describe_problem_observations](./client.md#describe_problem_observations)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_applications](./client.md#list_applications)
+- [list_components](./client.md#list_components)
+- [list_configuration_history](./client.md#list_configuration_history)
+- [list_log_pattern_sets](./client.md#list_log_pattern_sets)
+- [list_log_patterns](./client.md#list_log_patterns)
+- [list_problems](./client.md#list_problems)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_application](./client.md#update_application)
+- [update_component](./client.md#update_component)
+- [update_component_configuration](./client.md#update_component_configuration)
+- [update_log_pattern](./client.md#update_log_pattern)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TagsAlreadyExistException](./client.md#tagsalreadyexistexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [ValidationException](./client.md#validationexception)
+ApplicationInsightsClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BadRequestException
+- ClientError
+- InternalServerException
+- ResourceInUseException
+- ResourceNotFoundException
+- TagsAlreadyExistException
+- TooManyTagsException
+- ValidationException
 
 ## Literals
 
@@ -82,19 +82,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_application_insights.literals import CloudWatchEventSource, ...
+from mypy_boto3_application_insights.literals import CloudWatchEventSourceType, ...
 ```
 
-- [CloudWatchEventSource](./literals.md#cloudwatcheventsource)
-- [ConfigurationEventResourceType](./literals.md#configurationeventresourcetype)
-- [ConfigurationEventStatus](./literals.md#configurationeventstatus)
-- [FeedbackKey](./literals.md#feedbackkey)
-- [FeedbackValue](./literals.md#feedbackvalue)
-- [LogFilter](./literals.md#logfilter)
-- [OsType](./literals.md#ostype)
-- [SeverityLevel](./literals.md#severitylevel)
-- [Status](./literals.md#status)
-- [Tier](./literals.md#tier)
+- [CloudWatchEventSourceType](./literals.md#cloudwatcheventsourcetype)
+- [ConfigurationEventResourceTypeType](./literals.md#configurationeventresourcetypetype)
+- [ConfigurationEventStatusType](./literals.md#configurationeventstatustype)
+- [FeedbackKeyType](./literals.md#feedbackkeytype)
+- [FeedbackValueType](./literals.md#feedbackvaluetype)
+- [LogFilterType](./literals.md#logfiltertype)
+- [OsTypeType](./literals.md#ostypetype)
+- [SeverityLevelType](./literals.md#severityleveltype)
+- [StatusType](./literals.md#statustype)
+- [TierType](./literals.md#tiertype)
 
 ## Typed dictionaries
 

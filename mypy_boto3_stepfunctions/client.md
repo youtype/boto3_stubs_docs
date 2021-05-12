@@ -3,7 +3,7 @@
 > [Index](..) > [SFN](.) > SFNClient
 
 Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
 [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
@@ -52,7 +52,7 @@ def get_stepfunctions_client() -> SFNClient:
 ```
 
 Boto3 documentation:
-[SFN.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
+[SFN.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client)
 
 ## Exceptions
 
@@ -101,7 +101,7 @@ Exceptions:
 Type annotations for `boto3.client("stepfunctions").can_paginate` method.
 
 Boto3 documentation:
-[SFN.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate)
+[SFN.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.can_paginate)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns `bool`.
 Type annotations for `boto3.client("stepfunctions").create_activity` method.
 
 Boto3 documentation:
-[SFN.Client.create_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
+[SFN.Client.create_activity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.create_activity)
 
 Arguments:
 
@@ -130,14 +130,14 @@ Type annotations for `boto3.client("stepfunctions").create_state_machine`
 method.
 
 Boto3 documentation:
-[SFN.Client.create_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
+[SFN.Client.create_state_machine](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
 
 Arguments:
 
 - `name`: `str` *(required)*
 - `definition`: `str` *(required)*
 - `roleArn`: `str` *(required)*
-- `type`: [StateMachineType](./literals.md#statemachinetype)
+- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
 - `loggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -152,7 +152,7 @@ Returns
 Type annotations for `boto3.client("stepfunctions").delete_activity` method.
 
 Boto3 documentation:
-[SFN.Client.delete_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
+[SFN.Client.delete_activity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.delete_activity)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Type annotations for `boto3.client("stepfunctions").delete_state_machine`
 method.
 
 Boto3 documentation:
-[SFN.Client.delete_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
+[SFN.Client.delete_state_machine](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("stepfunctions").describe_activity` method.
 
 Boto3 documentation:
-[SFN.Client.describe_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
+[SFN.Client.describe_activity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.describe_activity)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns
 Type annotations for `boto3.client("stepfunctions").describe_execution` method.
 
 Boto3 documentation:
-[SFN.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
+[SFN.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.describe_execution)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("stepfunctions").describe_state_machine`
 method.
 
 Boto3 documentation:
-[SFN.Client.describe_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
+[SFN.Client.describe_state_machine](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Type annotations for
 `boto3.client("stepfunctions").describe_state_machine_for_execution` method.
 
 Boto3 documentation:
-[SFN.Client.describe_state_machine_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
+[SFN.Client.describe_state_machine_for_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("stepfunctions").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SFN.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url)
+[SFN.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns `str`.
 Type annotations for `boto3.client("stepfunctions").get_activity_task` method.
 
 Boto3 documentation:
-[SFN.Client.get_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
+[SFN.Client.get_activity_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Type annotations for `boto3.client("stepfunctions").get_execution_history`
 method.
 
 Boto3 documentation:
-[SFN.Client.get_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
+[SFN.Client.get_execution_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns
 Type annotations for `boto3.client("stepfunctions").list_activities` method.
 
 Boto3 documentation:
-[SFN.Client.list_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
+[SFN.Client.list_activities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.list_activities)
 
 Arguments:
 
@@ -303,12 +303,12 @@ Returns
 Type annotations for `boto3.client("stepfunctions").list_executions` method.
 
 Boto3 documentation:
-[SFN.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
+[SFN.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.list_executions)
 
 Arguments:
 
 - `stateMachineArn`: `str` *(required)*
-- `statusFilter`: [ExecutionStatus](./literals.md#executionstatus)
+- `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("stepfunctions").list_state_machines`
 method.
 
 Boto3 documentation:
-[SFN.Client.list_state_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
+[SFN.Client.list_state_machines](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("stepfunctions").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[SFN.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
+[SFN.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns
 Type annotations for `boto3.client("stepfunctions").send_task_failure` method.
 
 Boto3 documentation:
-[SFN.Client.send_task_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
+[SFN.Client.send_task_failure](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("stepfunctions").send_task_heartbeat`
 method.
 
 Boto3 documentation:
-[SFN.Client.send_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
+[SFN.Client.send_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("stepfunctions").send_task_success` method.
 
 Boto3 documentation:
-[SFN.Client.send_task_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
+[SFN.Client.send_task_success](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.send_task_success)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("stepfunctions").start_execution` method.
 
 Boto3 documentation:
-[SFN.Client.start_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
+[SFN.Client.start_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.start_execution)
 
 Arguments:
 
@@ -412,7 +412,7 @@ Type annotations for `boto3.client("stepfunctions").start_sync_execution`
 method.
 
 Boto3 documentation:
-[SFN.Client.start_sync_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
+[SFN.Client.start_sync_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
 
 Arguments:
 
@@ -429,7 +429,7 @@ Returns
 Type annotations for `boto3.client("stepfunctions").stop_execution` method.
 
 Boto3 documentation:
-[SFN.Client.stop_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
+[SFN.Client.stop_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.stop_execution)
 
 Arguments:
 
@@ -445,7 +445,7 @@ Returns
 Type annotations for `boto3.client("stepfunctions").tag_resource` method.
 
 Boto3 documentation:
-[SFN.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
+[SFN.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.tag_resource)
 
 Arguments:
 
@@ -459,7 +459,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("stepfunctions").untag_resource` method.
 
 Boto3 documentation:
-[SFN.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
+[SFN.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.untag_resource)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Type annotations for `boto3.client("stepfunctions").update_state_machine`
 method.
 
 Boto3 documentation:
-[SFN.Client.update_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
+[SFN.Client.update_state_machine](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
 
 Arguments:
 

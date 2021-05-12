@@ -3,40 +3,40 @@
 > [Index](..) > [CodePipeline](.) > Literals
 
 Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
 [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 - [Literals for boto3 CodePipeline module](#literals-for-boto3-codepipeline-module)
-  - [ActionCategory](#actioncategory)
-  - [ActionConfigurationPropertyType](#actionconfigurationpropertytype)
-  - [ActionExecutionStatus](#actionexecutionstatus)
-  - [ActionOwner](#actionowner)
-  - [ApprovalStatus](#approvalstatus)
-  - [ArtifactLocationType](#artifactlocationtype)
-  - [ArtifactStoreType](#artifactstoretype)
-  - [BlockerType](#blockertype)
-  - [EncryptionKeyType](#encryptionkeytype)
-  - [ExecutorType](#executortype)
-  - [FailureType](#failuretype)
-  - [JobStatus](#jobstatus)
+  - [ActionCategoryType](#actioncategorytype)
+  - [ActionConfigurationPropertyTypeType](#actionconfigurationpropertytypetype)
+  - [ActionExecutionStatusType](#actionexecutionstatustype)
+  - [ActionOwnerType](#actionownertype)
+  - [ApprovalStatusType](#approvalstatustype)
+  - [ArtifactLocationTypeType](#artifactlocationtypetype)
+  - [ArtifactStoreTypeType](#artifactstoretypetype)
+  - [BlockerTypeType](#blockertypetype)
+  - [EncryptionKeyTypeType](#encryptionkeytypetype)
+  - [ExecutorTypeType](#executortypetype)
+  - [FailureTypeType](#failuretypetype)
+  - [JobStatusType](#jobstatustype)
   - [ListActionExecutionsPaginatorName](#listactionexecutionspaginatorname)
   - [ListActionTypesPaginatorName](#listactiontypespaginatorname)
   - [ListPipelineExecutionsPaginatorName](#listpipelineexecutionspaginatorname)
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [ListWebhooksPaginatorName](#listwebhookspaginatorname)
-  - [PipelineExecutionStatus](#pipelineexecutionstatus)
-  - [StageExecutionStatus](#stageexecutionstatus)
-  - [StageRetryMode](#stageretrymode)
-  - [StageTransitionType](#stagetransitiontype)
-  - [TriggerType](#triggertype)
-  - [WebhookAuthenticationType](#webhookauthenticationtype)
+  - [PipelineExecutionStatusType](#pipelineexecutionstatustype)
+  - [StageExecutionStatusType](#stageexecutionstatustype)
+  - [StageRetryModeType](#stageretrymodetype)
+  - [StageTransitionTypeType](#stagetransitiontypetype)
+  - [TriggerTypeType](#triggertypetype)
+  - [WebhookAuthenticationTypeType](#webhookauthenticationtypetype)
 
-## ActionCategory
+## ActionCategoryType
 
 ```python
-from mypy_boto3_codepipeline.literals import ActionCategory
+from mypy_boto3_codepipeline.literals import ActionCategoryType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `Source`
 - `Test`
 
-## ActionConfigurationPropertyType
+## ActionConfigurationPropertyTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import ActionConfigurationPropertyType
+from mypy_boto3_codepipeline.literals import ActionConfigurationPropertyTypeType
 ```
 
 Values:
@@ -60,10 +60,10 @@ Values:
 - `Number`
 - `String`
 
-## ActionExecutionStatus
+## ActionExecutionStatusType
 
 ```python
-from mypy_boto3_codepipeline.literals import ActionExecutionStatus
+from mypy_boto3_codepipeline.literals import ActionExecutionStatusType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `InProgress`
 - `Succeeded`
 
-## ActionOwner
+## ActionOwnerType
 
 ```python
-from mypy_boto3_codepipeline.literals import ActionOwner
+from mypy_boto3_codepipeline.literals import ActionOwnerType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `Custom`
 - `ThirdParty`
 
-## ApprovalStatus
+## ApprovalStatusType
 
 ```python
-from mypy_boto3_codepipeline.literals import ApprovalStatus
+from mypy_boto3_codepipeline.literals import ApprovalStatusType
 ```
 
 Values:
@@ -96,50 +96,50 @@ Values:
 - `Approved`
 - `Rejected`
 
-## ArtifactLocationType
+## ArtifactLocationTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import ArtifactLocationType
+from mypy_boto3_codepipeline.literals import ArtifactLocationTypeType
 ```
 
 Values:
 
 - `S3`
 
-## ArtifactStoreType
+## ArtifactStoreTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import ArtifactStoreType
+from mypy_boto3_codepipeline.literals import ArtifactStoreTypeType
 ```
 
 Values:
 
 - `S3`
 
-## BlockerType
+## BlockerTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import BlockerType
+from mypy_boto3_codepipeline.literals import BlockerTypeType
 ```
 
 Values:
 
 - `Schedule`
 
-## EncryptionKeyType
+## EncryptionKeyTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import EncryptionKeyType
+from mypy_boto3_codepipeline.literals import EncryptionKeyTypeType
 ```
 
 Values:
 
 - `KMS`
 
-## ExecutorType
+## ExecutorTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import ExecutorType
+from mypy_boto3_codepipeline.literals import ExecutorTypeType
 ```
 
 Values:
@@ -147,10 +147,10 @@ Values:
 - `JobWorker`
 - `Lambda`
 
-## FailureType
+## FailureTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import FailureType
+from mypy_boto3_codepipeline.literals import FailureTypeType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `RevisionUnavailable`
 - `SystemUnavailable`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_codepipeline.literals import JobStatus
+from mypy_boto3_codepipeline.literals import JobStatusType
 ```
 
 Values:
@@ -238,10 +238,10 @@ Values:
 
 - `list_webhooks`
 
-## PipelineExecutionStatus
+## PipelineExecutionStatusType
 
 ```python
-from mypy_boto3_codepipeline.literals import PipelineExecutionStatus
+from mypy_boto3_codepipeline.literals import PipelineExecutionStatusType
 ```
 
 Values:
@@ -254,10 +254,10 @@ Values:
 - `Succeeded`
 - `Superseded`
 
-## StageExecutionStatus
+## StageExecutionStatusType
 
 ```python
-from mypy_boto3_codepipeline.literals import StageExecutionStatus
+from mypy_boto3_codepipeline.literals import StageExecutionStatusType
 ```
 
 Values:
@@ -269,20 +269,20 @@ Values:
 - `Stopping`
 - `Succeeded`
 
-## StageRetryMode
+## StageRetryModeType
 
 ```python
-from mypy_boto3_codepipeline.literals import StageRetryMode
+from mypy_boto3_codepipeline.literals import StageRetryModeType
 ```
 
 Values:
 
 - `FAILED_ACTIONS`
 
-## StageTransitionType
+## StageTransitionTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import StageTransitionType
+from mypy_boto3_codepipeline.literals import StageTransitionTypeType
 ```
 
 Values:
@@ -290,10 +290,10 @@ Values:
 - `Inbound`
 - `Outbound`
 
-## TriggerType
+## TriggerTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import TriggerType
+from mypy_boto3_codepipeline.literals import TriggerTypeType
 ```
 
 Values:
@@ -305,10 +305,10 @@ Values:
 - `StartPipelineExecution`
 - `Webhook`
 
-## WebhookAuthenticationType
+## WebhookAuthenticationTypeType
 
 ```python
-from mypy_boto3_codepipeline.literals import WebhookAuthenticationType
+from mypy_boto3_codepipeline.literals import WebhookAuthenticationTypeType
 ```
 
 Values:

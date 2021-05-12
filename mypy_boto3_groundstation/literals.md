@@ -3,31 +3,31 @@
 > [Index](..) > [GroundStation](.) > Literals
 
 Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
 [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Literals for boto3 GroundStation module](#literals-for-boto3-groundstation-module)
-  - [AngleUnits](#angleunits)
-  - [BandwidthUnits](#bandwidthunits)
-  - [ConfigCapabilityType](#configcapabilitytype)
-  - [ContactStatus](#contactstatus)
-  - [Criticality](#criticality)
-  - [EirpUnits](#eirpunits)
-  - [EndpointStatus](#endpointstatus)
-  - [FrequencyUnits](#frequencyunits)
+  - [AngleUnitsType](#angleunitstype)
+  - [BandwidthUnitsType](#bandwidthunitstype)
+  - [ConfigCapabilityTypeType](#configcapabilitytypetype)
+  - [ContactStatusType](#contactstatustype)
+  - [CriticalityType](#criticalitytype)
+  - [EirpUnitsType](#eirpunitstype)
+  - [EndpointStatusType](#endpointstatustype)
+  - [FrequencyUnitsType](#frequencyunitstype)
   - [ListConfigsPaginatorName](#listconfigspaginatorname)
   - [ListContactsPaginatorName](#listcontactspaginatorname)
   - [ListDataflowEndpointGroupsPaginatorName](#listdataflowendpointgroupspaginatorname)
   - [ListGroundStationsPaginatorName](#listgroundstationspaginatorname)
   - [ListMissionProfilesPaginatorName](#listmissionprofilespaginatorname)
   - [ListSatellitesPaginatorName](#listsatellitespaginatorname)
-  - [Polarization](#polarization)
+  - [PolarizationType](#polarizationtype)
 
-## AngleUnits
+## AngleUnitsType
 
 ```python
-from mypy_boto3_groundstation.literals import AngleUnits
+from mypy_boto3_groundstation.literals import AngleUnitsType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `DEGREE_ANGLE`
 - `RADIAN`
 
-## BandwidthUnits
+## BandwidthUnitsType
 
 ```python
-from mypy_boto3_groundstation.literals import BandwidthUnits
+from mypy_boto3_groundstation.literals import BandwidthUnitsType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `kHz`
 - `MHz`
 
-## ConfigCapabilityType
+## ConfigCapabilityTypeType
 
 ```python
-from mypy_boto3_groundstation.literals import ConfigCapabilityType
+from mypy_boto3_groundstation.literals import ConfigCapabilityTypeType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 - `tracking`
 - `uplink-echo`
 
-## ContactStatus
+## ContactStatusType
 
 ```python
-from mypy_boto3_groundstation.literals import ContactStatus
+from mypy_boto3_groundstation.literals import ContactStatusType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `SCHEDULED`
 - `SCHEDULING`
 
-## Criticality
+## CriticalityType
 
 ```python
-from mypy_boto3_groundstation.literals import Criticality
+from mypy_boto3_groundstation.literals import CriticalityType
 ```
 
 Values:
@@ -97,20 +97,20 @@ Values:
 - `REMOVED`
 - `REQUIRED`
 
-## EirpUnits
+## EirpUnitsType
 
 ```python
-from mypy_boto3_groundstation.literals import EirpUnits
+from mypy_boto3_groundstation.literals import EirpUnitsType
 ```
 
 Values:
 
 - `dBW`
 
-## EndpointStatus
+## EndpointStatusType
 
 ```python
-from mypy_boto3_groundstation.literals import EndpointStatus
+from mypy_boto3_groundstation.literals import EndpointStatusType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `deleting`
 - `failed`
 
-## FrequencyUnits
+## FrequencyUnitsType
 
 ```python
-from mypy_boto3_groundstation.literals import FrequencyUnits
+from mypy_boto3_groundstation.literals import FrequencyUnitsType
 ```
 
 Values:
@@ -193,10 +193,10 @@ Values:
 
 - `list_satellites`
 
-## Polarization
+## PolarizationType
 
 ```python
-from mypy_boto3_groundstation.literals import Polarization
+from mypy_boto3_groundstation.literals import PolarizationType
 ```
 
 Values:

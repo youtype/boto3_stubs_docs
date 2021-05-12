@@ -3,7 +3,7 @@
 > [Index](..) > [RDS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS)
 type annotations stubs module
 [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
@@ -913,9 +913,10 @@ Optional fields:
   [ScalingConfigurationInfoTypeDef](./type_defs.md#scalingconfigurationinfotypedef)
 - `DeletionProtection`: `bool`
 - `HttpEndpointEnabled`: `bool`
-- `ActivityStreamMode`: [ActivityStreamMode](./literals.md#activitystreammode)
+- `ActivityStreamMode`:
+  [ActivityStreamModeType](./literals.md#activitystreammodetype)
 - `ActivityStreamStatus`:
-  [ActivityStreamStatus](./literals.md#activitystreamstatus)
+  [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
 - `ActivityStreamKmsKeyId`: `str`
 - `ActivityStreamKinesisStreamName`: `str`
 - `CopyTagsToSnapshot`: `bool`
@@ -924,7 +925,7 @@ Optional fields:
   `List`\[[DomainMembershipTypeDef](./type_defs.md#domainmembershiptypedef)\]
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `GlobalWriteForwardingStatus`:
-  [WriteForwardingStatus](./literals.md#writeforwardingstatus)
+  [WriteForwardingStatusType](./literals.md#writeforwardingstatustype)
 - `GlobalWriteForwardingRequested`: `bool`
 - `PendingModifiedValues`:
   [ClusterPendingModifiedValuesTypeDef](./type_defs.md#clusterpendingmodifiedvaluestypedef)
@@ -1040,7 +1041,8 @@ from mypy_boto3_rds.type_defs import DBInstanceMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `DBInstances`: `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
+- `DBInstances`:
+  `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
 
 ## DBInstanceRoleTypeDef
 
@@ -1104,7 +1106,7 @@ Optional fields:
 - `ReadReplicaSourceDBInstanceIdentifier`: `str`
 - `ReadReplicaDBInstanceIdentifiers`: `List`\[`str`\]
 - `ReadReplicaDBClusterIdentifiers`: `List`\[`str`\]
-- `ReplicaMode`: [ReplicaMode](./literals.md#replicamode)
+- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `LicenseModel`: `str`
 - `Iops`: `int`
 - `OptionGroupMemberships`:
@@ -1218,14 +1220,15 @@ Optional fields:
 - `DBProxyEndpointName`: `str`
 - `DBProxyEndpointArn`: `str`
 - `DBProxyName`: `str`
-- `Status`: [DBProxyEndpointStatus](./literals.md#dbproxyendpointstatus)
+- `Status`:
+  [DBProxyEndpointStatusType](./literals.md#dbproxyendpointstatustype)
 - `VpcId`: `str`
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 - `VpcSubnetIds`: `List`\[`str`\]
 - `Endpoint`: `str`
 - `CreatedDate`: `datetime`
 - `TargetRole`:
-  [DBProxyEndpointTargetRole](./literals.md#dbproxyendpointtargetrole)
+  [DBProxyEndpointTargetRoleType](./literals.md#dbproxyendpointtargetroletype)
 - `IsDefault`: `bool`
 
 ## DBProxyTargetGroupTypeDef
@@ -1259,8 +1262,8 @@ Optional fields:
 - `TrackedClusterId`: `str`
 - `RdsResourceId`: `str`
 - `Port`: `int`
-- `Type`: [TargetType](./literals.md#targettype)
-- `Role`: [TargetRole](./literals.md#targetrole)
+- `Type`: [TargetTypeType](./literals.md#targettypetype)
+- `Role`: [TargetRoleType](./literals.md#targetroletype)
 - `TargetHealth`: [TargetHealthTypeDef](./type_defs.md#targethealthtypedef)
 
 ## DBProxyTypeDef
@@ -1273,7 +1276,7 @@ Optional fields:
 
 - `DBProxyName`: `str`
 - `DBProxyArn`: `str`
-- `Status`: [DBProxyStatus](./literals.md#dbproxystatus)
+- `Status`: [DBProxyStatusType](./literals.md#dbproxystatustype)
 - `EngineFamily`: `str`
 - `VpcId`: `str`
 - `VpcSecurityGroupIds`: `List`\[`str`\]
@@ -1360,7 +1363,8 @@ from mypy_boto3_rds.type_defs import DBSnapshotMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `DBSnapshots`: `List`\[[DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)\]
+- `DBSnapshots`:
+  `List`\[[DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)\]
 
 ## DBSnapshotTypeDef
 
@@ -1634,7 +1638,8 @@ from mypy_boto3_rds.type_defs import DescribeEngineDefaultClusterParametersResul
 
 Optional fields:
 
-- `EngineDefaults`: [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 
 ## DescribeEngineDefaultParametersResultTypeDef
 
@@ -1644,7 +1649,8 @@ from mypy_boto3_rds.type_defs import DescribeEngineDefaultParametersResultTypeDe
 
 Optional fields:
 
-- `EngineDefaults`: [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 
 ## DescribeValidDBInstanceModificationsResultTypeDef
 
@@ -1792,7 +1798,7 @@ from mypy_boto3_rds.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
@@ -1842,7 +1848,8 @@ from mypy_boto3_rds.type_defs import ExportTasksMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `ExportTasks`: `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
+- `ExportTasks`:
+  `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
 
 ## FailoverDBClusterResultTypeDef
 
@@ -1872,7 +1879,7 @@ from mypy_boto3_rds.type_defs import FailoverStateTypeDef
 
 Optional fields:
 
-- `Status`: [FailoverStatus](./literals.md#failoverstatus)
+- `Status`: [FailoverStatusType](./literals.md#failoverstatustype)
 - `FromDbClusterArn`: `str`
 - `ToDbClusterArn`: `str`
 
@@ -1899,7 +1906,7 @@ Optional fields:
 - `Readers`: `List`\[`str`\]
 - `IsWriter`: `bool`
 - `GlobalWriteForwardingStatus`:
-  [WriteForwardingStatus](./literals.md#writeforwardingstatus)
+  [WriteForwardingStatusType](./literals.md#writeforwardingstatustype)
 
 ## GlobalClusterTypeDef
 
@@ -2386,7 +2393,7 @@ Optional fields:
 - `AllowedValues`: `str`
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
-- `ApplyMethod`: [ApplyMethod](./literals.md#applymethod)
+- `ApplyMethod`: [ApplyMethodType](./literals.md#applymethodtype)
 - `SupportedEngineModes`: `List`\[`str`\]
 
 ## PendingCloudwatchLogsExportsTypeDef
@@ -2788,8 +2795,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 - `KinesisStreamName`: `str`
-- `Status`: [ActivityStreamStatus](./literals.md#activitystreamstatus)
-- `Mode`: [ActivityStreamMode](./literals.md#activitystreammode)
+- `Status`: [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
+- `Mode`: [ActivityStreamModeType](./literals.md#activitystreammodetype)
 - `ApplyImmediately`: `bool`
 
 ## StartDBClusterResultTypeDef
@@ -2833,7 +2840,7 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 - `KinesisStreamName`: `str`
-- `Status`: [ActivityStreamStatus](./literals.md#activitystreamstatus)
+- `Status`: [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
 
 ## StopDBClusterResultTypeDef
 
@@ -2909,8 +2916,8 @@ from mypy_boto3_rds.type_defs import TargetHealthTypeDef
 
 Optional fields:
 
-- `State`: [TargetState](./literals.md#targetstate)
-- `Reason`: [TargetHealthReason](./literals.md#targethealthreason)
+- `State`: [TargetStateType](./literals.md#targetstatetype)
+- `Reason`: [TargetHealthReasonType](./literals.md#targethealthreasontype)
 - `Description`: `str`
 
 ## TimezoneTypeDef
@@ -2950,9 +2957,10 @@ Optional fields:
 
 - `Description`: `str`
 - `UserName`: `str`
-- `AuthScheme`: `Literal['SECRETS']` (see [AuthScheme](./literals.md#authscheme))
+- `AuthScheme`: `Literal['SECRETS']` (see
+  [AuthSchemeType](./literals.md#authschemetype))
 - `SecretArn`: `str`
-- `IAMAuth`: [IAMAuthMode](./literals.md#iamauthmode)
+- `IAMAuth`: [IAMAuthModeType](./literals.md#iamauthmodetype)
 
 ## UserAuthConfigTypeDef
 
@@ -2964,9 +2972,10 @@ Optional fields:
 
 - `Description`: `str`
 - `UserName`: `str`
-- `AuthScheme`: `Literal['SECRETS']` (see [AuthScheme](./literals.md#authscheme))
+- `AuthScheme`: `Literal['SECRETS']` (see
+  [AuthSchemeType](./literals.md#authschemetype))
 - `SecretArn`: `str`
-- `IAMAuth`: [IAMAuthMode](./literals.md#iamauthmode)
+- `IAMAuth`: [IAMAuthModeType](./literals.md#iamauthmodetype)
 
 ## ValidDBInstanceModificationsMessageTypeDef
 

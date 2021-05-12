@@ -3,7 +3,7 @@
 > [Index](..) > [Textract](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/textract.html#Textract)
 type annotations stubs module
 [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
@@ -54,10 +54,10 @@ from mypy_boto3_textract.type_defs import BlockTypeDef
 
 Optional fields:
 
-- `BlockType`: [BlockType](./literals.md#blocktype)
+- `BlockType`: [BlockTypeType](./literals.md#blocktypetype)
 - `Confidence`: `float`
 - `Text`: `str`
-- `TextType`: [TextType](./literals.md#texttype)
+- `TextType`: [TextTypeType](./literals.md#texttypetype)
 - `RowIndex`: `int`
 - `ColumnIndex`: `int`
 - `RowSpan`: `int`
@@ -66,8 +66,8 @@ Optional fields:
 - `Id`: `str`
 - `Relationships`:
   `List`\[[RelationshipTypeDef](./type_defs.md#relationshiptypedef)\]
-- `EntityTypes`: `List`\[[EntityType](./literals.md#entitytype)\]
-- `SelectionStatus`: [SelectionStatus](./literals.md#selectionstatus)
+- `EntityTypes`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `SelectionStatus`: [SelectionStatusType](./literals.md#selectionstatustype)
 - `Page`: `int`
 
 ## BoundingBoxTypeDef
@@ -148,7 +148,7 @@ Optional fields:
 
 - `DocumentMetadata`:
   [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `NextToken`: `str`
 - `Blocks`: `List`\[[BlockTypeDef](./type_defs.md#blocktypedef)\]
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
@@ -165,7 +165,7 @@ Optional fields:
 
 - `DocumentMetadata`:
   [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `NextToken`: `str`
 - `Blocks`: `List`\[[BlockTypeDef](./type_defs.md#blocktypedef)\]
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
@@ -211,7 +211,7 @@ from mypy_boto3_textract.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifier](./literals.md#contentclassifier)\]
+  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## NotificationChannelTypeDef
 
@@ -257,7 +257,7 @@ from mypy_boto3_textract.type_defs import RelationshipTypeDef
 
 Optional fields:
 
-- `Type`: [RelationshipType](./literals.md#relationshiptype)
+- `Type`: [RelationshipTypeType](./literals.md#relationshiptypetype)
 - `Ids`: `List`\[`str`\]
 
 ## ResponseMetadataTypeDef

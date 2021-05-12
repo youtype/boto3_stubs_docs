@@ -3,7 +3,7 @@
 > [Index](..) > IoTEventsData
 
 Auto-generated documentation for
-[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
+[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module
 [mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
@@ -29,25 +29,25 @@ Can be used directly:
 from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 ```
 
-IoTEventsDataClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_put_message](./client.md#batch-put-message)
-- [batch_update_detector](./client.md#batch-update-detector)
-- [can_paginate](./client.md#can-paginate)
-- [describe_detector](./client.md#describe-detector)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_detectors](./client.md#list-detectors)
+- [batch_put_message](./client.md#batch_put_message)
+- [batch_update_detector](./client.md#batch_update_detector)
+- [can_paginate](./client.md#can_paginate)
+- [describe_detector](./client.md#describe_detector)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_detectors](./client.md#list_detectors)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
+IoTEventsDataClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalFailureException
+- InvalidRequestException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
 
 ## Literals
 
@@ -56,10 +56,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotevents_data.literals import ErrorCode, ...
+from mypy_boto3_iotevents_data.literals import ErrorCodeType, ...
 ```
 
-- [ErrorCode](./literals.md#errorcode)
+- [ErrorCodeType](./literals.md#errorcodetype)
 
 ## Typed dictionaries
 

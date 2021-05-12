@@ -3,36 +3,36 @@
 > [Index](..) > [ServiceDiscovery](.) > Literals
 
 Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
 [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 - [Literals for boto3 ServiceDiscovery module](#literals-for-boto3-servicediscovery-module)
-  - [CustomHealthStatus](#customhealthstatus)
-  - [FilterCondition](#filtercondition)
-  - [HealthCheckType](#healthchecktype)
-  - [HealthStatus](#healthstatus)
-  - [HealthStatusFilter](#healthstatusfilter)
+  - [CustomHealthStatusType](#customhealthstatustype)
+  - [FilterConditionType](#filterconditiontype)
+  - [HealthCheckTypeType](#healthchecktypetype)
+  - [HealthStatusFilterType](#healthstatusfiltertype)
+  - [HealthStatusType](#healthstatustype)
   - [ListInstancesPaginatorName](#listinstancespaginatorname)
   - [ListNamespacesPaginatorName](#listnamespacespaginatorname)
   - [ListOperationsPaginatorName](#listoperationspaginatorname)
   - [ListServicesPaginatorName](#listservicespaginatorname)
-  - [NamespaceFilterName](#namespacefiltername)
-  - [NamespaceType](#namespacetype)
-  - [OperationFilterName](#operationfiltername)
-  - [OperationStatus](#operationstatus)
-  - [OperationTargetType](#operationtargettype)
-  - [OperationType](#operationtype)
-  - [RecordType](#recordtype)
-  - [RoutingPolicy](#routingpolicy)
-  - [ServiceFilterName](#servicefiltername)
-  - [ServiceType](#servicetype)
-  - [ServiceTypeOption](#servicetypeoption)
+  - [NamespaceFilterNameType](#namespacefilternametype)
+  - [NamespaceTypeType](#namespacetypetype)
+  - [OperationFilterNameType](#operationfilternametype)
+  - [OperationStatusType](#operationstatustype)
+  - [OperationTargetTypeType](#operationtargettypetype)
+  - [OperationTypeType](#operationtypetype)
+  - [RecordTypeType](#recordtypetype)
+  - [RoutingPolicyType](#routingpolicytype)
+  - [ServiceFilterNameType](#servicefilternametype)
+  - [ServiceTypeOptionType](#servicetypeoptiontype)
+  - [ServiceTypeType](#servicetypetype)
 
-## CustomHealthStatus
+## CustomHealthStatusType
 
 ```python
-from mypy_boto3_servicediscovery.literals import CustomHealthStatus
+from mypy_boto3_servicediscovery.literals import CustomHealthStatusType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `HEALTHY`
 - `UNHEALTHY`
 
-## FilterCondition
+## FilterConditionType
 
 ```python
-from mypy_boto3_servicediscovery.literals import FilterCondition
+from mypy_boto3_servicediscovery.literals import FilterConditionType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `EQ`
 - `IN`
 
-## HealthCheckType
+## HealthCheckTypeType
 
 ```python
-from mypy_boto3_servicediscovery.literals import HealthCheckType
+from mypy_boto3_servicediscovery.literals import HealthCheckTypeType
 ```
 
 Values:
@@ -64,22 +64,10 @@ Values:
 - `HTTPS`
 - `TCP`
 
-## HealthStatus
+## HealthStatusFilterType
 
 ```python
-from mypy_boto3_servicediscovery.literals import HealthStatus
-```
-
-Values:
-
-- `HEALTHY`
-- `UNHEALTHY`
-- `UNKNOWN`
-
-## HealthStatusFilter
-
-```python
-from mypy_boto3_servicediscovery.literals import HealthStatusFilter
+from mypy_boto3_servicediscovery.literals import HealthStatusFilterType
 ```
 
 Values:
@@ -87,6 +75,18 @@ Values:
 - `ALL`
 - `HEALTHY`
 - `UNHEALTHY`
+
+## HealthStatusType
+
+```python
+from mypy_boto3_servicediscovery.literals import HealthStatusType
+```
+
+Values:
+
+- `HEALTHY`
+- `UNHEALTHY`
+- `UNKNOWN`
 
 ## ListInstancesPaginatorName
 
@@ -128,20 +128,20 @@ Values:
 
 - `list_services`
 
-## NamespaceFilterName
+## NamespaceFilterNameType
 
 ```python
-from mypy_boto3_servicediscovery.literals import NamespaceFilterName
+from mypy_boto3_servicediscovery.literals import NamespaceFilterNameType
 ```
 
 Values:
 
 - `TYPE`
 
-## NamespaceType
+## NamespaceTypeType
 
 ```python
-from mypy_boto3_servicediscovery.literals import NamespaceType
+from mypy_boto3_servicediscovery.literals import NamespaceTypeType
 ```
 
 Values:
@@ -150,10 +150,10 @@ Values:
 - `DNS_PUBLIC`
 - `HTTP`
 
-## OperationFilterName
+## OperationFilterNameType
 
 ```python
-from mypy_boto3_servicediscovery.literals import OperationFilterName
+from mypy_boto3_servicediscovery.literals import OperationFilterNameType
 ```
 
 Values:
@@ -164,10 +164,10 @@ Values:
 - `TYPE`
 - `UPDATE_DATE`
 
-## OperationStatus
+## OperationStatusType
 
 ```python
-from mypy_boto3_servicediscovery.literals import OperationStatus
+from mypy_boto3_servicediscovery.literals import OperationStatusType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `SUBMITTED`
 - `SUCCESS`
 
-## OperationTargetType
+## OperationTargetTypeType
 
 ```python
-from mypy_boto3_servicediscovery.literals import OperationTargetType
+from mypy_boto3_servicediscovery.literals import OperationTargetTypeType
 ```
 
 Values:
@@ -189,10 +189,10 @@ Values:
 - `NAMESPACE`
 - `SERVICE`
 
-## OperationType
+## OperationTypeType
 
 ```python
-from mypy_boto3_servicediscovery.literals import OperationType
+from mypy_boto3_servicediscovery.literals import OperationTypeType
 ```
 
 Values:
@@ -203,10 +203,10 @@ Values:
 - `REGISTER_INSTANCE`
 - `UPDATE_SERVICE`
 
-## RecordType
+## RecordTypeType
 
 ```python
-from mypy_boto3_servicediscovery.literals import RecordType
+from mypy_boto3_servicediscovery.literals import RecordTypeType
 ```
 
 Values:
@@ -216,10 +216,10 @@ Values:
 - `CNAME`
 - `SRV`
 
-## RoutingPolicy
+## RoutingPolicyType
 
 ```python
-from mypy_boto3_servicediscovery.literals import RoutingPolicy
+from mypy_boto3_servicediscovery.literals import RoutingPolicyType
 ```
 
 Values:
@@ -227,34 +227,34 @@ Values:
 - `MULTIVALUE`
 - `WEIGHTED`
 
-## ServiceFilterName
+## ServiceFilterNameType
 
 ```python
-from mypy_boto3_servicediscovery.literals import ServiceFilterName
+from mypy_boto3_servicediscovery.literals import ServiceFilterNameType
 ```
 
 Values:
 
 - `NAMESPACE_ID`
 
-## ServiceType
+## ServiceTypeOptionType
 
 ```python
-from mypy_boto3_servicediscovery.literals import ServiceType
+from mypy_boto3_servicediscovery.literals import ServiceTypeOptionType
+```
+
+Values:
+
+- `HTTP`
+
+## ServiceTypeType
+
+```python
+from mypy_boto3_servicediscovery.literals import ServiceTypeType
 ```
 
 Values:
 
 - `DNS`
 - `DNS_HTTP`
-- `HTTP`
-
-## ServiceTypeOption
-
-```python
-from mypy_boto3_servicediscovery.literals import ServiceTypeOption
-```
-
-Values:
-
 - `HTTP`

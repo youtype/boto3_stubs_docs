@@ -3,7 +3,7 @@
 > [Index](..) > [RDS](.) > RDSClient
 
 Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS)
 type annotations stubs module
 [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
@@ -168,7 +168,7 @@ def get_rds_client() -> RDSClient:
 ```
 
 Boto3 documentation:
-[RDS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client)
+[RDS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client)
 
 ## Exceptions
 
@@ -310,7 +310,7 @@ Exceptions:
 Type annotations for `boto3.client("rds").add_role_to_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.add_role_to_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_cluster)
+[RDS.Client.add_role_to_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.add_role_to_db_cluster)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Arguments:
 Type annotations for `boto3.client("rds").add_role_to_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.add_role_to_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_instance)
+[RDS.Client.add_role_to_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.add_role_to_db_instance)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Type annotations for
 `boto3.client("rds").add_source_identifier_to_subscription` method.
 
 Boto3 documentation:
-[RDS.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
+[RDS.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns
 Type annotations for `boto3.client("rds").add_tags_to_resource` method.
 
 Boto3 documentation:
-[RDS.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource)
+[RDS.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.add_tags_to_resource)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("rds").apply_pending_maintenance_action`
 method.
 
 Boto3 documentation:
-[RDS.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action)
+[RDS.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("rds").authorize_db_security_group_ingress`
 method.
 
 Boto3 documentation:
-[RDS.Client.authorize_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress)
+[RDS.Client.authorize_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Returns
 Type annotations for `boto3.client("rds").backtrack_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.backtrack_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.backtrack_db_cluster)
+[RDS.Client.backtrack_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.backtrack_db_cluster)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns [DBClusterBacktrackTypeDef](./type_defs.md#dbclusterbacktracktypedef).
 Type annotations for `boto3.client("rds").can_paginate` method.
 
 Boto3 documentation:
-[RDS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.can_paginate)
+[RDS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.can_paginate)
 
 Arguments:
 
@@ -429,7 +429,7 @@ Returns `bool`.
 Type annotations for `boto3.client("rds").cancel_export_task` method.
 
 Boto3 documentation:
-[RDS.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
+[RDS.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.cancel_export_task)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("rds").copy_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[RDS.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group)
+[RDS.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Returns
 Type annotations for `boto3.client("rds").copy_db_cluster_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot)
+[RDS.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Returns
 Type annotations for `boto3.client("rds").copy_db_parameter_group` method.
 
 Boto3 documentation:
-[RDS.Client.copy_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_parameter_group)
+[RDS.Client.copy_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.copy_db_parameter_group)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Returns
 Type annotations for `boto3.client("rds").copy_db_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.copy_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_snapshot)
+[RDS.Client.copy_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.copy_db_snapshot)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Returns
 Type annotations for `boto3.client("rds").copy_option_group` method.
 
 Boto3 documentation:
-[RDS.Client.copy_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_option_group)
+[RDS.Client.copy_option_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.copy_option_group)
 
 Arguments:
 
@@ -537,7 +537,7 @@ Type annotations for `boto3.client("rds").create_custom_availability_zone`
 method.
 
 Boto3 documentation:
-[RDS.Client.create_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
+[RDS.Client.create_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster)
+[RDS.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_cluster)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_cluster_endpoint` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint)
+[RDS.Client.create_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint)
 
 Arguments:
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("rds").create_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[RDS.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group)
+[RDS.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_cluster_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot)
+[RDS.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot)
 
 Arguments:
 
@@ -654,7 +654,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance)
+[RDS.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_instance)
 
 Arguments:
 
@@ -717,7 +717,7 @@ Type annotations for `boto3.client("rds").create_db_instance_read_replica`
 method.
 
 Boto3 documentation:
-[RDS.Client.create_db_instance_read_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance_read_replica)
+[RDS.Client.create_db_instance_read_replica](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_instance_read_replica)
 
 Arguments:
 
@@ -752,7 +752,7 @@ Arguments:
 - `DeletionProtection`: `bool`
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
-- `ReplicaMode`: [ReplicaMode](./literals.md#replicamode)
+- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `MaxAllocatedStorage`: `int`
 - `SourceRegion`: `str`
 
@@ -764,7 +764,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_parameter_group` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_parameter_group)
+[RDS.Client.create_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_parameter_group)
 
 Arguments:
 
@@ -781,13 +781,15 @@ Returns
 Type annotations for `boto3.client("rds").create_db_proxy` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy)
+[RDS.Client.create_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_proxy)
 
 Arguments:
 
 - `DBProxyName`: `str` *(required)*
-- `EngineFamily`: [EngineFamily](./literals.md#enginefamily) *(required)*
-- `Auth`: `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
+- `EngineFamily`: [EngineFamilyType](./literals.md#enginefamilytype)
+  *(required)*
+- `Auth`:
+  `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `VpcSubnetIds`: `List`\[`str`\] *(required)*
@@ -805,7 +807,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_proxy_endpoint` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint)
+[RDS.Client.create_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint)
 
 Arguments:
 
@@ -814,7 +816,7 @@ Arguments:
 - `VpcSubnetIds`: `List`\[`str`\] *(required)*
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 - `TargetRole`:
-  [DBProxyEndpointTargetRole](./literals.md#dbproxyendpointtargetrole)
+  [DBProxyEndpointTargetRoleType](./literals.md#dbproxyendpointtargetroletype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -825,7 +827,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_security_group` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_security_group)
+[RDS.Client.create_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_security_group)
 
 Arguments:
 
@@ -841,7 +843,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_snapshot)
+[RDS.Client.create_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_snapshot)
 
 Arguments:
 
@@ -857,7 +859,7 @@ Returns
 Type annotations for `boto3.client("rds").create_db_subnet_group` method.
 
 Boto3 documentation:
-[RDS.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_subnet_group)
+[RDS.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_db_subnet_group)
 
 Arguments:
 
@@ -874,7 +876,7 @@ Returns
 Type annotations for `boto3.client("rds").create_event_subscription` method.
 
 Boto3 documentation:
-[RDS.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription)
+[RDS.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_event_subscription)
 
 Arguments:
 
@@ -894,7 +896,7 @@ Returns
 Type annotations for `boto3.client("rds").create_global_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_global_cluster)
+[RDS.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_global_cluster)
 
 Arguments:
 
@@ -914,7 +916,7 @@ Returns
 Type annotations for `boto3.client("rds").create_option_group` method.
 
 Boto3 documentation:
-[RDS.Client.create_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_option_group)
+[RDS.Client.create_option_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.create_option_group)
 
 Arguments:
 
@@ -933,7 +935,7 @@ Type annotations for `boto3.client("rds").delete_custom_availability_zone`
 method.
 
 Boto3 documentation:
-[RDS.Client.delete_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
+[RDS.Client.delete_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
 
 Arguments:
 
@@ -947,7 +949,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster)
+[RDS.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_cluster)
 
 Arguments:
 
@@ -963,7 +965,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_cluster_endpoint` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
+[RDS.Client.delete_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
 
 Arguments:
 
@@ -977,7 +979,7 @@ Type annotations for `boto3.client("rds").delete_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
+[RDS.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
 
 Arguments:
 
@@ -988,7 +990,7 @@ Arguments:
 Type annotations for `boto3.client("rds").delete_db_cluster_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
+[RDS.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
 
 Arguments:
 
@@ -1002,7 +1004,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance)
+[RDS.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_instance)
 
 Arguments:
 
@@ -1020,7 +1022,7 @@ Type annotations for `boto3.client("rds").delete_db_instance_automated_backup`
 method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_instance_automated_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
+[RDS.Client.delete_db_instance_automated_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
 
 Arguments:
 
@@ -1035,7 +1037,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_parameter_group` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
+[RDS.Client.delete_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
 
 Arguments:
 
@@ -1046,7 +1048,7 @@ Arguments:
 Type annotations for `boto3.client("rds").delete_db_proxy` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy)
+[RDS.Client.delete_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_proxy)
 
 Arguments:
 
@@ -1060,7 +1062,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_proxy_endpoint` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
+[RDS.Client.delete_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
 
 Arguments:
 
@@ -1074,7 +1076,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_security_group` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group)
+[RDS.Client.delete_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_security_group)
 
 Arguments:
 
@@ -1085,7 +1087,7 @@ Arguments:
 Type annotations for `boto3.client("rds").delete_db_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)
+[RDS.Client.delete_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_snapshot)
 
 Arguments:
 
@@ -1099,7 +1101,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_db_subnet_group` method.
 
 Boto3 documentation:
-[RDS.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
+[RDS.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
 
 Arguments:
 
@@ -1110,7 +1112,7 @@ Arguments:
 Type annotations for `boto3.client("rds").delete_event_subscription` method.
 
 Boto3 documentation:
-[RDS.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription)
+[RDS.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_event_subscription)
 
 Arguments:
 
@@ -1124,7 +1126,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_global_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster)
+[RDS.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_global_cluster)
 
 Arguments:
 
@@ -1138,7 +1140,7 @@ Returns
 Type annotations for `boto3.client("rds").delete_installation_media` method.
 
 Boto3 documentation:
-[RDS.Client.delete_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
+[RDS.Client.delete_installation_media](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_installation_media)
 
 Arguments:
 
@@ -1151,7 +1153,7 @@ Returns [InstallationMediaTypeDef](./type_defs.md#installationmediatypedef).
 Type annotations for `boto3.client("rds").delete_option_group` method.
 
 Boto3 documentation:
-[RDS.Client.delete_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group)
+[RDS.Client.delete_option_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.delete_option_group)
 
 Arguments:
 
@@ -1162,7 +1164,7 @@ Arguments:
 Type annotations for `boto3.client("rds").deregister_db_proxy_targets` method.
 
 Boto3 documentation:
-[RDS.Client.deregister_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets)
+[RDS.Client.deregister_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets)
 
 Arguments:
 
@@ -1178,7 +1180,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("rds").describe_account_attributes` method.
 
 Boto3 documentation:
-[RDS.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes)
+[RDS.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_account_attributes)
 
 Returns
 [AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef).
@@ -1188,7 +1190,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_certificates` method.
 
 Boto3 documentation:
-[RDS.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_certificates)
+[RDS.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_certificates)
 
 Arguments:
 
@@ -1205,7 +1207,7 @@ Type annotations for `boto3.client("rds").describe_custom_availability_zones`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_custom_availability_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
+[RDS.Client.describe_custom_availability_zones](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
 
 Arguments:
 
@@ -1223,7 +1225,7 @@ Type annotations for `boto3.client("rds").describe_db_cluster_backtracks`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_cluster_backtracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks)
+[RDS.Client.describe_db_cluster_backtracks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks)
 
 Arguments:
 
@@ -1242,7 +1244,7 @@ Type annotations for `boto3.client("rds").describe_db_cluster_endpoints`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_cluster_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints)
+[RDS.Client.describe_db_cluster_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints)
 
 Arguments:
 
@@ -1261,7 +1263,7 @@ Type annotations for `boto3.client("rds").describe_db_cluster_parameter_groups`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups)
+[RDS.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups)
 
 Arguments:
 
@@ -1279,7 +1281,7 @@ Type annotations for `boto3.client("rds").describe_db_cluster_parameters`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters)
+[RDS.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters)
 
 Arguments:
 
@@ -1298,7 +1300,7 @@ Type annotations for
 `boto3.client("rds").describe_db_cluster_snapshot_attributes` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
+[RDS.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
 
 Arguments:
 
@@ -1313,7 +1315,7 @@ Type annotations for `boto3.client("rds").describe_db_cluster_snapshots`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots)
+[RDS.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots)
 
 Arguments:
 
@@ -1334,7 +1336,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_clusters` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_clusters)
+[RDS.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_clusters)
 
 Arguments:
 
@@ -1351,7 +1353,7 @@ Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
 Type annotations for `boto3.client("rds").describe_db_engine_versions` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_engine_versions)
+[RDS.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_engine_versions)
 
 Arguments:
 
@@ -1375,7 +1377,7 @@ Type annotations for
 `boto3.client("rds").describe_db_instance_automated_backups` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_instance_automated_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups)
+[RDS.Client.describe_db_instance_automated_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups)
 
 Arguments:
 
@@ -1394,7 +1396,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_instances` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances)
+[RDS.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_instances)
 
 Arguments:
 
@@ -1410,7 +1412,7 @@ Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
 Type annotations for `boto3.client("rds").describe_db_log_files` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_log_files](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_log_files)
+[RDS.Client.describe_db_log_files](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_log_files)
 
 Arguments:
 
@@ -1430,7 +1432,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_parameter_groups` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameter_groups)
+[RDS.Client.describe_db_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_parameter_groups)
 
 Arguments:
 
@@ -1447,7 +1449,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_parameters` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameters)
+[RDS.Client.describe_db_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_parameters)
 
 Arguments:
 
@@ -1465,7 +1467,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_proxies` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_proxies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxies)
+[RDS.Client.describe_db_proxies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_proxies)
 
 Arguments:
 
@@ -1482,7 +1484,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_proxy_endpoints` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_proxy_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints)
+[RDS.Client.describe_db_proxy_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints)
 
 Arguments:
 
@@ -1501,7 +1503,7 @@ Type annotations for `boto3.client("rds").describe_db_proxy_target_groups`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_proxy_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups)
+[RDS.Client.describe_db_proxy_target_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups)
 
 Arguments:
 
@@ -1519,7 +1521,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_proxy_targets` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_targets)
+[RDS.Client.describe_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_proxy_targets)
 
 Arguments:
 
@@ -1537,7 +1539,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_security_groups` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_security_groups)
+[RDS.Client.describe_db_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_security_groups)
 
 Arguments:
 
@@ -1555,7 +1557,7 @@ Type annotations for `boto3.client("rds").describe_db_snapshot_attributes`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
+[RDS.Client.describe_db_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
 
 Arguments:
 
@@ -1569,7 +1571,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_db_snapshots` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots)
+[RDS.Client.describe_db_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_snapshots)
 
 Arguments:
 
@@ -1590,7 +1592,7 @@ Returns [DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef).
 Type annotations for `boto3.client("rds").describe_db_subnet_groups` method.
 
 Boto3 documentation:
-[RDS.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_subnet_groups)
+[RDS.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_db_subnet_groups)
 
 Arguments:
 
@@ -1608,7 +1610,7 @@ Type annotations for
 `boto3.client("rds").describe_engine_default_cluster_parameters` method.
 
 Boto3 documentation:
-[RDS.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters)
+[RDS.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters)
 
 Arguments:
 
@@ -1626,7 +1628,7 @@ Type annotations for `boto3.client("rds").describe_engine_default_parameters`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_parameters)
+[RDS.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_engine_default_parameters)
 
 Arguments:
 
@@ -1643,7 +1645,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_event_categories` method.
 
 Boto3 documentation:
-[RDS.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
+[RDS.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_event_categories)
 
 Arguments:
 
@@ -1658,7 +1660,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_event_subscriptions` method.
 
 Boto3 documentation:
-[RDS.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_subscriptions)
+[RDS.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_event_subscriptions)
 
 Arguments:
 
@@ -1675,12 +1677,12 @@ Returns
 Type annotations for `boto3.client("rds").describe_events` method.
 
 Boto3 documentation:
-[RDS.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_events)
+[RDS.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_events)
 
 Arguments:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
@@ -1696,7 +1698,7 @@ Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 Type annotations for `boto3.client("rds").describe_export_tasks` method.
 
 Boto3 documentation:
-[RDS.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks)
+[RDS.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_export_tasks)
 
 Arguments:
 
@@ -1713,7 +1715,7 @@ Returns [ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef).
 Type annotations for `boto3.client("rds").describe_global_clusters` method.
 
 Boto3 documentation:
-[RDS.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_global_clusters)
+[RDS.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_global_clusters)
 
 Arguments:
 
@@ -1730,7 +1732,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_installation_media` method.
 
 Boto3 documentation:
-[RDS.Client.describe_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media)
+[RDS.Client.describe_installation_media](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_installation_media)
 
 Arguments:
 
@@ -1748,7 +1750,7 @@ Type annotations for `boto3.client("rds").describe_option_group_options`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_option_group_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_group_options)
+[RDS.Client.describe_option_group_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_option_group_options)
 
 Arguments:
 
@@ -1766,7 +1768,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_option_groups` method.
 
 Boto3 documentation:
-[RDS.Client.describe_option_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_groups)
+[RDS.Client.describe_option_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_option_groups)
 
 Arguments:
 
@@ -1785,7 +1787,7 @@ Type annotations for
 `boto3.client("rds").describe_orderable_db_instance_options` method.
 
 Boto3 documentation:
-[RDS.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options)
+[RDS.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options)
 
 Arguments:
 
@@ -1808,7 +1810,7 @@ Type annotations for `boto3.client("rds").describe_pending_maintenance_actions`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions)
+[RDS.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions)
 
 Arguments:
 
@@ -1826,7 +1828,7 @@ Type annotations for `boto3.client("rds").describe_reserved_db_instances`
 method.
 
 Boto3 documentation:
-[RDS.Client.describe_reserved_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances)
+[RDS.Client.describe_reserved_db_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_reserved_db_instances)
 
 Arguments:
 
@@ -1851,7 +1853,7 @@ Type annotations for
 `boto3.client("rds").describe_reserved_db_instances_offerings` method.
 
 Boto3 documentation:
-[RDS.Client.describe_reserved_db_instances_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings)
+[RDS.Client.describe_reserved_db_instances_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings)
 
 Arguments:
 
@@ -1873,7 +1875,7 @@ Returns
 Type annotations for `boto3.client("rds").describe_source_regions` method.
 
 Boto3 documentation:
-[RDS.Client.describe_source_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_source_regions)
+[RDS.Client.describe_source_regions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_source_regions)
 
 Arguments:
 
@@ -1891,7 +1893,7 @@ Type annotations for
 `boto3.client("rds").describe_valid_db_instance_modifications` method.
 
 Boto3 documentation:
-[RDS.Client.describe_valid_db_instance_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
+[RDS.Client.describe_valid_db_instance_modifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
 
 Arguments:
 
@@ -1905,7 +1907,7 @@ Returns
 Type annotations for `boto3.client("rds").download_db_log_file_portion` method.
 
 Boto3 documentation:
-[RDS.Client.download_db_log_file_portion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.download_db_log_file_portion)
+[RDS.Client.download_db_log_file_portion](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.download_db_log_file_portion)
 
 Arguments:
 
@@ -1922,7 +1924,7 @@ Returns
 Type annotations for `boto3.client("rds").failover_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster)
+[RDS.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.failover_db_cluster)
 
 Arguments:
 
@@ -1937,7 +1939,7 @@ Returns
 Type annotations for `boto3.client("rds").failover_global_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.failover_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)
+[RDS.Client.failover_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.failover_global_cluster)
 
 Arguments:
 
@@ -1952,7 +1954,7 @@ Returns
 Type annotations for `boto3.client("rds").generate_db_auth_token` method.
 
 Boto3 documentation:
-[RDS.Client.generate_db_auth_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_db_auth_token)
+[RDS.Client.generate_db_auth_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.generate_db_auth_token)
 
 Arguments:
 
@@ -1968,7 +1970,7 @@ Returns `str`.
 Type annotations for `boto3.client("rds").generate_presigned_url` method.
 
 Boto3 documentation:
-[RDS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_presigned_url)
+[RDS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1984,7 +1986,7 @@ Returns `str`.
 Type annotations for `boto3.client("rds").import_installation_media` method.
 
 Boto3 documentation:
-[RDS.Client.import_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media)
+[RDS.Client.import_installation_media](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.import_installation_media)
 
 Arguments:
 
@@ -2001,7 +2003,7 @@ Returns [InstallationMediaTypeDef](./type_defs.md#installationmediatypedef).
 Type annotations for `boto3.client("rds").list_tags_for_resource` method.
 
 Boto3 documentation:
-[RDS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource)
+[RDS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -2015,7 +2017,7 @@ Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 Type annotations for `boto3.client("rds").modify_certificates` method.
 
 Boto3 documentation:
-[RDS.Client.modify_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
+[RDS.Client.modify_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_certificates)
 
 Arguments:
 
@@ -2031,7 +2033,7 @@ Type annotations for `boto3.client("rds").modify_current_db_cluster_capacity`
 method.
 
 Boto3 documentation:
-[RDS.Client.modify_current_db_cluster_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity)
+[RDS.Client.modify_current_db_cluster_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity)
 
 Arguments:
 
@@ -2048,7 +2050,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster)
+[RDS.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_cluster)
 
 Arguments:
 
@@ -2087,7 +2089,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_cluster_endpoint` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint)
+[RDS.Client.modify_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint)
 
 Arguments:
 
@@ -2104,7 +2106,7 @@ Type annotations for `boto3.client("rds").modify_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
+[RDS.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
 
 Arguments:
 
@@ -2121,7 +2123,7 @@ Type annotations for `boto3.client("rds").modify_db_cluster_snapshot_attribute`
 method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute)
+[RDS.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute)
 
 Arguments:
 
@@ -2138,7 +2140,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_instance)
+[RDS.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_instance)
 
 Arguments:
 
@@ -2186,7 +2188,7 @@ Arguments:
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 - `CertificateRotationRestart`: `bool`
-- `ReplicaMode`: [ReplicaMode](./literals.md#replicamode)
+- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
 - `EnableCustomerOwnedIp`: `bool`
 - `AwsBackupRecoveryPointArn`: `str`
 
@@ -2198,7 +2200,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_parameter_group` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
+[RDS.Client.modify_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
 
 Arguments:
 
@@ -2214,13 +2216,14 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_proxy` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy)
+[RDS.Client.modify_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_proxy)
 
 Arguments:
 
 - `DBProxyName`: `str` *(required)*
 - `NewDBProxyName`: `str`
-- `Auth`: `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
+- `Auth`:
+  `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
 - `RequireTLS`: `bool`
 - `IdleClientTimeout`: `int`
 - `DebugLogging`: `bool`
@@ -2235,7 +2238,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_proxy_endpoint` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint)
+[RDS.Client.modify_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint)
 
 Arguments:
 
@@ -2251,7 +2254,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_proxy_target_group` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_proxy_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group)
+[RDS.Client.modify_db_proxy_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group)
 
 Arguments:
 
@@ -2269,7 +2272,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_snapshot` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot)
+[RDS.Client.modify_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_snapshot)
 
 Arguments:
 
@@ -2285,7 +2288,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_snapshot_attribute` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute)
+[RDS.Client.modify_db_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute)
 
 Arguments:
 
@@ -2302,7 +2305,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_db_subnet_group` method.
 
 Boto3 documentation:
-[RDS.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_subnet_group)
+[RDS.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_db_subnet_group)
 
 Arguments:
 
@@ -2318,7 +2321,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_event_subscription` method.
 
 Boto3 documentation:
-[RDS.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_event_subscription)
+[RDS.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_event_subscription)
 
 Arguments:
 
@@ -2336,7 +2339,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_global_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_global_cluster)
+[RDS.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_global_cluster)
 
 Arguments:
 
@@ -2354,7 +2357,7 @@ Returns
 Type annotations for `boto3.client("rds").modify_option_group` method.
 
 Boto3 documentation:
-[RDS.Client.modify_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_option_group)
+[RDS.Client.modify_option_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.modify_option_group)
 
 Arguments:
 
@@ -2372,7 +2375,7 @@ Returns
 Type annotations for `boto3.client("rds").promote_read_replica` method.
 
 Boto3 documentation:
-[RDS.Client.promote_read_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica)
+[RDS.Client.promote_read_replica](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.promote_read_replica)
 
 Arguments:
 
@@ -2389,7 +2392,7 @@ Type annotations for `boto3.client("rds").promote_read_replica_db_cluster`
 method.
 
 Boto3 documentation:
-[RDS.Client.promote_read_replica_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
+[RDS.Client.promote_read_replica_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
 
 Arguments:
 
@@ -2404,7 +2407,7 @@ Type annotations for
 `boto3.client("rds").purchase_reserved_db_instances_offering` method.
 
 Boto3 documentation:
-[RDS.Client.purchase_reserved_db_instances_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering)
+[RDS.Client.purchase_reserved_db_instances_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering)
 
 Arguments:
 
@@ -2421,7 +2424,7 @@ Returns
 Type annotations for `boto3.client("rds").reboot_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance)
+[RDS.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.reboot_db_instance)
 
 Arguments:
 
@@ -2436,7 +2439,7 @@ Returns
 Type annotations for `boto3.client("rds").register_db_proxy_targets` method.
 
 Boto3 documentation:
-[RDS.Client.register_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.register_db_proxy_targets)
+[RDS.Client.register_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.register_db_proxy_targets)
 
 Arguments:
 
@@ -2453,7 +2456,7 @@ Returns
 Type annotations for `boto3.client("rds").remove_from_global_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
+[RDS.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
 
 Arguments:
 
@@ -2468,7 +2471,7 @@ Returns
 Type annotations for `boto3.client("rds").remove_role_from_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.remove_role_from_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster)
+[RDS.Client.remove_role_from_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster)
 
 Arguments:
 
@@ -2481,7 +2484,7 @@ Arguments:
 Type annotations for `boto3.client("rds").remove_role_from_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.remove_role_from_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_instance)
+[RDS.Client.remove_role_from_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.remove_role_from_db_instance)
 
 Arguments:
 
@@ -2495,7 +2498,7 @@ Type annotations for
 `boto3.client("rds").remove_source_identifier_from_subscription` method.
 
 Boto3 documentation:
-[RDS.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
+[RDS.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
 
 Arguments:
 
@@ -2510,7 +2513,7 @@ Returns
 Type annotations for `boto3.client("rds").remove_tags_from_resource` method.
 
 Boto3 documentation:
-[RDS.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
+[RDS.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
 
 Arguments:
 
@@ -2523,7 +2526,7 @@ Type annotations for `boto3.client("rds").reset_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[RDS.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group)
+[RDS.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group)
 
 Arguments:
 
@@ -2539,7 +2542,7 @@ Returns
 Type annotations for `boto3.client("rds").reset_db_parameter_group` method.
 
 Boto3 documentation:
-[RDS.Client.reset_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_parameter_group)
+[RDS.Client.reset_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.reset_db_parameter_group)
 
 Arguments:
 
@@ -2555,7 +2558,7 @@ Returns
 Type annotations for `boto3.client("rds").restore_db_cluster_from_s3` method.
 
 Boto3 documentation:
-[RDS.Client.restore_db_cluster_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3)
+[RDS.Client.restore_db_cluster_from_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3)
 
 Arguments:
 
@@ -2600,7 +2603,7 @@ Type annotations for `boto3.client("rds").restore_db_cluster_from_snapshot`
 method.
 
 Boto3 documentation:
-[RDS.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot)
+[RDS.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot)
 
 Arguments:
 
@@ -2637,7 +2640,7 @@ Type annotations for `boto3.client("rds").restore_db_cluster_to_point_in_time`
 method.
 
 Boto3 documentation:
-[RDS.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time)
+[RDS.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time)
 
 Arguments:
 
@@ -2670,7 +2673,7 @@ Type annotations for `boto3.client("rds").restore_db_instance_from_db_snapshot`
 method.
 
 Boto3 documentation:
-[RDS.Client.restore_db_instance_from_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)
+[RDS.Client.restore_db_instance_from_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)
 
 Arguments:
 
@@ -2713,7 +2716,7 @@ Returns
 Type annotations for `boto3.client("rds").restore_db_instance_from_s3` method.
 
 Boto3 documentation:
-[RDS.Client.restore_db_instance_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3)
+[RDS.Client.restore_db_instance_from_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3)
 
 Arguments:
 
@@ -2772,7 +2775,7 @@ Type annotations for `boto3.client("rds").restore_db_instance_to_point_in_time`
 method.
 
 Boto3 documentation:
-[RDS.Client.restore_db_instance_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time)
+[RDS.Client.restore_db_instance_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time)
 
 Arguments:
 
@@ -2821,7 +2824,7 @@ Type annotations for `boto3.client("rds").revoke_db_security_group_ingress`
 method.
 
 Boto3 documentation:
-[RDS.Client.revoke_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress)
+[RDS.Client.revoke_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress)
 
 Arguments:
 
@@ -2839,12 +2842,13 @@ Returns
 Type annotations for `boto3.client("rds").start_activity_stream` method.
 
 Boto3 documentation:
-[RDS.Client.start_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_activity_stream)
+[RDS.Client.start_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.start_activity_stream)
 
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Mode`: [ActivityStreamMode](./literals.md#activitystreammode) *(required)*
+- `Mode`: [ActivityStreamModeType](./literals.md#activitystreammodetype)
+  *(required)*
 - `KmsKeyId`: `str` *(required)*
 - `ApplyImmediately`: `bool`
 
@@ -2856,7 +2860,7 @@ Returns
 Type annotations for `boto3.client("rds").start_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster)
+[RDS.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.start_db_cluster)
 
 Arguments:
 
@@ -2870,7 +2874,7 @@ Returns
 Type annotations for `boto3.client("rds").start_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.start_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance)
+[RDS.Client.start_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.start_db_instance)
 
 Arguments:
 
@@ -2885,7 +2889,7 @@ Type annotations for
 `boto3.client("rds").start_db_instance_automated_backups_replication` method.
 
 Boto3 documentation:
-[RDS.Client.start_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication)
+[RDS.Client.start_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication)
 
 Arguments:
 
@@ -2903,7 +2907,7 @@ Returns
 Type annotations for `boto3.client("rds").start_export_task` method.
 
 Boto3 documentation:
-[RDS.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task)
+[RDS.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.start_export_task)
 
 Arguments:
 
@@ -2922,7 +2926,7 @@ Returns [ExportTaskTypeDef](./type_defs.md#exporttasktypedef).
 Type annotations for `boto3.client("rds").stop_activity_stream` method.
 
 Boto3 documentation:
-[RDS.Client.stop_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream)
+[RDS.Client.stop_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.stop_activity_stream)
 
 Arguments:
 
@@ -2937,7 +2941,7 @@ Returns
 Type annotations for `boto3.client("rds").stop_db_cluster` method.
 
 Boto3 documentation:
-[RDS.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster)
+[RDS.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.stop_db_cluster)
 
 Arguments:
 
@@ -2951,7 +2955,7 @@ Returns
 Type annotations for `boto3.client("rds").stop_db_instance` method.
 
 Boto3 documentation:
-[RDS.Client.stop_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance)
+[RDS.Client.stop_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.stop_db_instance)
 
 Arguments:
 
@@ -2967,7 +2971,7 @@ Type annotations for
 `boto3.client("rds").stop_db_instance_automated_backups_replication` method.
 
 Boto3 documentation:
-[RDS.Client.stop_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
+[RDS.Client.stop_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
 
 Arguments:
 

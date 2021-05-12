@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationInsights](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
 [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
@@ -47,11 +47,11 @@ Optional fields:
 - `ComponentName`: `str`
 - `ComponentRemarks`: `str`
 - `ResourceType`: `str`
-- `OsType`: [OsType](./literals.md#ostype)
-- `Tier`: [Tier](./literals.md#tier)
+- `OsType`: [OsTypeType](./literals.md#ostypetype)
+- `Tier`: [TierType](./literals.md#tiertype)
 - `Monitor`: `bool`
-- `DetectedWorkload`: `Dict`\[[Tier](./literals.md#tier), `Dict`\[`str`,
-  `str`\]\]
+- `DetectedWorkload`: `Dict`\[[TierType](./literals.md#tiertype),
+  `Dict`\[`str`, `str`\]\]
 
 ## ApplicationInfoTypeDef
 
@@ -78,9 +78,9 @@ Optional fields:
 
 - `MonitoredResourceARN`: `str`
 - `EventStatus`:
-  [ConfigurationEventStatus](./literals.md#configurationeventstatus)
+  [ConfigurationEventStatusType](./literals.md#configurationeventstatustype)
 - `EventResourceType`:
-  [ConfigurationEventResourceType](./literals.md#configurationeventresourcetype)
+  [ConfigurationEventResourceTypeType](./literals.md#configurationeventresourcetypetype)
 - `EventTime`: `datetime`
 - `EventDetail`: `str`
 - `EventResourceName`: `str`
@@ -137,7 +137,7 @@ from mypy_boto3_application_insights.type_defs import DescribeComponentConfigura
 Optional fields:
 
 - `Monitor`: `bool`
-- `Tier`: [Tier](./literals.md#tier)
+- `Tier`: [TierType](./literals.md#tiertype)
 - `ComponentConfiguration`: `str`
 
 ## DescribeComponentResponseTypeDef
@@ -251,7 +251,8 @@ from mypy_boto3_application_insights.type_defs import ListLogPatternsResponseTyp
 Optional fields:
 
 - `ResourceGroupName`: `str`
-- `LogPatterns`: `List`\[[LogPatternTypeDef](./type_defs.md#logpatterntypedef)\]
+- `LogPatterns`:
+  `List`\[[LogPatternTypeDef](./type_defs.md#logpatterntypedef)\]
 - `NextToken`: `str`
 
 ## ListProblemsResponseTypeDef
@@ -304,14 +305,14 @@ Optional fields:
 - `LogGroup`: `str`
 - `LineTime`: `datetime`
 - `LogText`: `str`
-- `LogFilter`: [LogFilter](./literals.md#logfilter)
+- `LogFilter`: [LogFilterType](./literals.md#logfiltertype)
 - `MetricNamespace`: `str`
 - `MetricName`: `str`
 - `Unit`: `str`
 - `Value`: `float`
 - `CloudWatchEventId`: `str`
 - `CloudWatchEventSource`:
-  [CloudWatchEventSource](./literals.md#cloudwatcheventsource)
+  [CloudWatchEventSourceType](./literals.md#cloudwatcheventsourcetype)
 - `CloudWatchEventDetailType`: `str`
 - `HealthEventArn`: `str`
 - `HealthService`: `str`
@@ -354,15 +355,15 @@ Optional fields:
 - `Id`: `str`
 - `Title`: `str`
 - `Insights`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `AffectedResource`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `SeverityLevel`: [SeverityLevel](./literals.md#severitylevel)
+- `SeverityLevel`: [SeverityLevelType](./literals.md#severityleveltype)
 - `ResourceGroupName`: `str`
 - `Feedback`: `Dict`\[`Literal['INSIGHTS_FEEDBACK']` (see
-  [FeedbackKey](./literals.md#feedbackkey)),
-  [FeedbackValue](./literals.md#feedbackvalue)\]
+  [FeedbackKeyType](./literals.md#feedbackkeytype)),
+  [FeedbackValueType](./literals.md#feedbackvaluetype)\]
 
 ## RelatedObservationsTypeDef
 

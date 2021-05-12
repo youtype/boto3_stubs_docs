@@ -3,7 +3,7 @@
 > [Index](..) > [CodeDeploy](.) > Paginators
 
 Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
 [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
@@ -33,16 +33,18 @@ def get_list_application_revisions_paginator() -> ListApplicationRevisionsPagina
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListApplicationRevisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplicationRevisions)
+[CodeDeploy.Paginator.ListApplicationRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplicationRevisions)
 
 Arguments for `ListApplicationRevisionsPaginator.paginate` method:
 
 - `applicationName`: `str` *(required)*
-- `sortBy`: [ApplicationRevisionSortBy](./literals.md#applicationrevisionsortby)
-- `sortOrder`: [SortOrder](./literals.md#sortorder)
+- `sortBy`:
+  [ApplicationRevisionSortByType](./literals.md#applicationrevisionsortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `s3Bucket`: `str`
 - `s3KeyPrefix`: `str`
-- `deployed`: [ListStateFilterAction](./literals.md#liststatefilteraction)
+- `deployed`:
+  [ListStateFilterActionType](./literals.md#liststatefilteractiontype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -64,7 +66,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplications)
+[CodeDeploy.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplications)
 
 Arguments for `ListApplicationsPaginator.paginate` method:
 
@@ -89,7 +91,7 @@ def get_list_deployment_configs_paginator() -> ListDeploymentConfigsPaginator:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListDeploymentConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentConfigs)
+[CodeDeploy.Paginator.ListDeploymentConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentConfigs)
 
 Arguments for `ListDeploymentConfigsPaginator.paginate` method:
 
@@ -114,7 +116,7 @@ def get_list_deployment_groups_paginator() -> ListDeploymentGroupsPaginator:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListDeploymentGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentGroups)
+[CodeDeploy.Paginator.ListDeploymentGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentGroups)
 
 Arguments for `ListDeploymentGroupsPaginator.paginate` method:
 
@@ -140,14 +142,15 @@ def get_list_deployment_instances_paginator() -> ListDeploymentInstancesPaginato
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListDeploymentInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentInstances)
+[CodeDeploy.Paginator.ListDeploymentInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentInstances)
 
 Arguments for `ListDeploymentInstancesPaginator.paginate` method:
 
 - `deploymentId`: `str` *(required)*
 - `instanceStatusFilter`:
-  `List`\[[InstanceStatus](./literals.md#instancestatus)\]
-- `instanceTypeFilter`: `List`\[[InstanceType](./literals.md#instancetype)\]
+  `List`\[[InstanceStatusType](./literals.md#instancestatustype)\]
+- `instanceTypeFilter`:
+  `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -169,12 +172,13 @@ def get_list_deployment_targets_paginator() -> ListDeploymentTargetsPaginator:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListDeploymentTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentTargets)
+[CodeDeploy.Paginator.ListDeploymentTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentTargets)
 
 Arguments for `ListDeploymentTargetsPaginator.paginate` method:
 
 - `deploymentId`: `str`
-- `targetFilters`: `Dict`\[[TargetFilterName](./literals.md#targetfiltername),
+- `targetFilters`:
+  `Dict`\[[TargetFilterNameType](./literals.md#targetfilternametype),
   `List`\[`str`\]\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -197,7 +201,7 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeployments)
+[CodeDeploy.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeployments)
 
 Arguments for `ListDeploymentsPaginator.paginate` method:
 
@@ -205,7 +209,7 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 - `deploymentGroupName`: `str`
 - `externalId`: `str`
 - `includeOnlyStatuses`:
-  `List`\[[DeploymentStatus](./literals.md#deploymentstatus)\]
+  `List`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
 - `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -228,7 +232,7 @@ def get_list_git_hub_account_token_names_paginator() -> ListGitHubAccountTokenNa
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListGitHubAccountTokenNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListGitHubAccountTokenNames)
+[CodeDeploy.Paginator.ListGitHubAccountTokenNames](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListGitHubAccountTokenNames)
 
 Arguments for `ListGitHubAccountTokenNamesPaginator.paginate` method:
 
@@ -253,11 +257,12 @@ def get_list_on_premises_instances_paginator() -> ListOnPremisesInstancesPaginat
 ```
 
 Boto3 documentation:
-[CodeDeploy.Paginator.ListOnPremisesInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListOnPremisesInstances)
+[CodeDeploy.Paginator.ListOnPremisesInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Paginator.ListOnPremisesInstances)
 
 Arguments for `ListOnPremisesInstancesPaginator.paginate` method:
 
-- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
+- `registrationStatus`:
+  [RegistrationStatusType](./literals.md#registrationstatustype)
 - `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

@@ -3,38 +3,38 @@
 > [Index](..) > [DataExchange](.) > Literals
 
 Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
 [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [Literals for boto3 DataExchange module](#literals-for-boto3-dataexchange-module)
-  - [AssetType](#assettype)
-  - [Code](#code)
-  - [JobErrorLimitName](#joberrorlimitname)
-  - [JobErrorResourceTypes](#joberrorresourcetypes)
+  - [AssetTypeType](#assettypetype)
+  - [CodeType](#codetype)
+  - [JobErrorLimitNameType](#joberrorlimitnametype)
+  - [JobErrorResourceTypesType](#joberrorresourcetypestype)
   - [ListDataSetRevisionsPaginatorName](#listdatasetrevisionspaginatorname)
   - [ListDataSetsPaginatorName](#listdatasetspaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ListRevisionAssetsPaginatorName](#listrevisionassetspaginatorname)
-  - [Origin](#origin)
-  - [ServerSideEncryptionTypes](#serversideencryptiontypes)
-  - [State](#state)
+  - [OriginType](#origintype)
+  - [ServerSideEncryptionTypesType](#serversideencryptiontypestype)
+  - [StateType](#statetype)
   - [TypeType](#typetype)
 
-## AssetType
+## AssetTypeType
 
 ```python
-from mypy_boto3_dataexchange.literals import AssetType
+from mypy_boto3_dataexchange.literals import AssetTypeType
 ```
 
 Values:
 
 - `S3_SNAPSHOT`
 
-## Code
+## CodeType
 
 ```python
-from mypy_boto3_dataexchange.literals import Code
+from mypy_boto3_dataexchange.literals import CodeType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `SERVICE_QUOTA_EXCEEDED_EXCEPTION`
 - `VALIDATION_EXCEPTION`
 
-## JobErrorLimitName
+## JobErrorLimitNameType
 
 ```python
-from mypy_boto3_dataexchange.literals import JobErrorLimitName
+from mypy_boto3_dataexchange.literals import JobErrorLimitNameType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 - `Asset size in GB`
 - `Assets per revision`
 
-## JobErrorResourceTypes
+## JobErrorResourceTypesType
 
 ```python
-from mypy_boto3_dataexchange.literals import JobErrorResourceTypes
+from mypy_boto3_dataexchange.literals import JobErrorResourceTypesType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 
 - `list_revision_assets`
 
-## Origin
+## OriginType
 
 ```python
-from mypy_boto3_dataexchange.literals import Origin
+from mypy_boto3_dataexchange.literals import OriginType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `ENTITLED`
 - `OWNED`
 
-## ServerSideEncryptionTypes
+## ServerSideEncryptionTypesType
 
 ```python
-from mypy_boto3_dataexchange.literals import ServerSideEncryptionTypes
+from mypy_boto3_dataexchange.literals import ServerSideEncryptionTypesType
 ```
 
 Values:
@@ -131,10 +131,10 @@ Values:
 - `AES256`
 - `aws:kms`
 
-## State
+## StateType
 
 ```python
-from mypy_boto3_dataexchange.literals import State
+from mypy_boto3_dataexchange.literals import StateType
 ```
 
 Values:

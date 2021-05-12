@@ -3,7 +3,7 @@
 > [Index](..) > SQS
 
 Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sqs.html#SQS)
 type annotations stubs module
 [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
@@ -32,53 +32,53 @@ Can be used directly:
 from mypy_boto3_sqs.client import SQSClient
 ```
 
-SQSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_permission](./client.md#add-permission)
-- [can_paginate](./client.md#can-paginate)
-- [change_message_visibility](./client.md#change-message-visibility)
-- [change_message_visibility_batch](./client.md#change-message-visibility-batch)
-- [create_queue](./client.md#create-queue)
-- [delete_message](./client.md#delete-message)
-- [delete_message_batch](./client.md#delete-message-batch)
-- [delete_queue](./client.md#delete-queue)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_queue_attributes](./client.md#get-queue-attributes)
-- [get_queue_url](./client.md#get-queue-url)
-- [list_dead_letter_source_queues](./client.md#list-dead-letter-source-queues)
-- [list_queue_tags](./client.md#list-queue-tags)
-- [list_queues](./client.md#list-queues)
-- [purge_queue](./client.md#purge-queue)
-- [receive_message](./client.md#receive-message)
-- [remove_permission](./client.md#remove-permission)
-- [send_message](./client.md#send-message)
-- [send_message_batch](./client.md#send-message-batch)
-- [set_queue_attributes](./client.md#set-queue-attributes)
-- [tag_queue](./client.md#tag-queue)
-- [untag_queue](./client.md#untag-queue)
+- [add_permission](./client.md#add_permission)
+- [can_paginate](./client.md#can_paginate)
+- [change_message_visibility](./client.md#change_message_visibility)
+- [change_message_visibility_batch](./client.md#change_message_visibility_batch)
+- [create_queue](./client.md#create_queue)
+- [delete_message](./client.md#delete_message)
+- [delete_message_batch](./client.md#delete_message_batch)
+- [delete_queue](./client.md#delete_queue)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_queue_attributes](./client.md#get_queue_attributes)
+- [get_queue_url](./client.md#get_queue_url)
+- [list_dead_letter_source_queues](./client.md#list_dead_letter_source_queues)
+- [list_queue_tags](./client.md#list_queue_tags)
+- [list_queues](./client.md#list_queues)
+- [purge_queue](./client.md#purge_queue)
+- [receive_message](./client.md#receive_message)
+- [remove_permission](./client.md#remove_permission)
+- [send_message](./client.md#send_message)
+- [send_message_batch](./client.md#send_message_batch)
+- [set_queue_attributes](./client.md#set_queue_attributes)
+- [tag_queue](./client.md#tag_queue)
+- [untag_queue](./client.md#untag_queue)
 
 ### Exceptions
 
-- [BatchEntryIdsNotDistinct](./client.md#batchentryidsnotdistinct)
-- [BatchRequestTooLong](./client.md#batchrequesttoolong)
-- [ClientError](./client.md#clienterror)
-- [EmptyBatchRequest](./client.md#emptybatchrequest)
-- [InvalidAttributeName](./client.md#invalidattributename)
-- [InvalidBatchEntryId](./client.md#invalidbatchentryid)
-- [InvalidIdFormat](./client.md#invalididformat)
-- [InvalidMessageContents](./client.md#invalidmessagecontents)
-- [MessageNotInflight](./client.md#messagenotinflight)
-- [OverLimit](./client.md#overlimit)
-- [PurgeQueueInProgress](./client.md#purgequeueinprogress)
-- [QueueDeletedRecently](./client.md#queuedeletedrecently)
-- [QueueDoesNotExist](./client.md#queuedoesnotexist)
-- [QueueNameExists](./client.md#queuenameexists)
-- [ReceiptHandleIsInvalid](./client.md#receipthandleisinvalid)
-- [TooManyEntriesInBatchRequest](./client.md#toomanyentriesinbatchrequest)
-- [UnsupportedOperation](./client.md#unsupportedoperation)
+SQSClient [exceptions](./client.md#exceptions)
+
+- BatchEntryIdsNotDistinct
+- BatchRequestTooLong
+- ClientError
+- EmptyBatchRequest
+- InvalidAttributeName
+- InvalidBatchEntryId
+- InvalidIdFormat
+- InvalidMessageContents
+- MessageNotInflight
+- OverLimit
+- PurgeQueueInProgress
+- QueueDeletedRecently
+- QueueDoesNotExist
+- QueueNameExists
+- ReceiptHandleIsInvalid
+- TooManyEntriesInBatchRequest
+- UnsupportedOperation
 
 ## SQSServiceResource
 
@@ -142,9 +142,9 @@ from mypy_boto3_sqs.literals import ListDeadLetterSourceQueuesPaginatorName, ...
 
 - [ListDeadLetterSourceQueuesPaginatorName](./literals.md#listdeadlettersourcequeuespaginatorname)
 - [ListQueuesPaginatorName](./literals.md#listqueuespaginatorname)
-- [MessageSystemAttributeName](./literals.md#messagesystemattributename)
-- [MessageSystemAttributeNameForSends](./literals.md#messagesystemattributenameforsends)
-- [QueueAttributeName](./literals.md#queueattributename)
+- [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)
+- [MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype)
+- [QueueAttributeNameType](./literals.md#queueattributenametype)
 
 ## Typed dictionaries
 

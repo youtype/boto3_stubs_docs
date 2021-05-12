@@ -3,7 +3,7 @@
 > [Index](..) > [LakeFormation](.) > LakeFormationClient
 
 Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
 [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
@@ -51,7 +51,7 @@ def get_lakeformation_client() -> LakeFormationClient:
 ```
 
 Boto3 documentation:
-[LakeFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
+[LakeFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Type annotations for `boto3.client("lakeformation").add_lf_tags_to_resource`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
+[LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Type annotations for `boto3.client("lakeformation").batch_grant_permissions`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.batch_grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
+[LakeFormation.Client.batch_grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("lakeformation").batch_revoke_permissions`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.batch_revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
+[LakeFormation.Client.batch_revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns
 Type annotations for `boto3.client("lakeformation").can_paginate` method.
 
 Boto3 documentation:
-[LakeFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate)
+[LakeFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.can_paginate)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lakeformation").create_lf_tag` method.
 
 Boto3 documentation:
-[LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
+[LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lakeformation").delete_lf_tag` method.
 
 Boto3 documentation:
-[LakeFormation.Client.delete_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
+[LakeFormation.Client.delete_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("lakeformation").deregister_resource`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.deregister_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
+[LakeFormation.Client.deregister_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lakeformation").describe_resource` method.
 
 Boto3 documentation:
-[LakeFormation.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
+[LakeFormation.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Type annotations for `boto3.client("lakeformation").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url)
+[LakeFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("lakeformation").get_data_lake_settings`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.get_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
+[LakeFormation.Client.get_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Type annotations for
 `boto3.client("lakeformation").get_effective_permissions_for_path` method.
 
 Boto3 documentation:
-[LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
+[LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Returns
 Type annotations for `boto3.client("lakeformation").get_lf_tag` method.
 
 Boto3 documentation:
-[LakeFormation.Client.get_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
+[LakeFormation.Client.get_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("lakeformation").get_resource_lf_tags`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
+[LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Returns
 Type annotations for `boto3.client("lakeformation").grant_permissions` method.
 
 Boto3 documentation:
-[LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
+[LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
 
 Arguments:
 
@@ -298,9 +298,11 @@ Arguments:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
   *(required)*
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `Permissions`: `List`\[[Permission](./literals.md#permission)\] *(required)*
+- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+  *(required)*
 - `CatalogId`: `str`
-- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
+- `PermissionsWithGrantOption`:
+  `List`\[[PermissionType](./literals.md#permissiontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -309,12 +311,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lakeformation").list_lf_tags` method.
 
 Boto3 documentation:
-[LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
+[LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
 
 Arguments:
 
 - `CatalogId`: `str`
-- `ResourceShareType`: [ResourceShareType](./literals.md#resourcesharetype)
+- `ResourceShareType`:
+  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -325,14 +328,15 @@ Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
 Type annotations for `boto3.client("lakeformation").list_permissions` method.
 
 Boto3 documentation:
-[LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
+[LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
 
 Arguments:
 
 - `CatalogId`: `str`
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `ResourceType`: [DataLakeResourceType](./literals.md#datalakeresourcetype)
+- `ResourceType`:
+  [DataLakeResourceTypeType](./literals.md#datalakeresourcetypetype)
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -345,7 +349,7 @@ Returns
 Type annotations for `boto3.client("lakeformation").list_resources` method.
 
 Boto3 documentation:
-[LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
+[LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
 
 Arguments:
 
@@ -363,12 +367,13 @@ Type annotations for `boto3.client("lakeformation").put_data_lake_settings`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.put_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
+[LakeFormation.Client.put_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
 
 Arguments:
 
 - `DataLakeSettings`:
-  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef) *(required)*
+  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef)
+  *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -378,7 +383,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lakeformation").register_resource` method.
 
 Boto3 documentation:
-[LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
+[LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
 
 Arguments:
 
@@ -394,7 +399,7 @@ Type annotations for
 `boto3.client("lakeformation").remove_lf_tags_from_resource` method.
 
 Boto3 documentation:
-[LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
+[LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
 
 Arguments:
 
@@ -411,7 +416,7 @@ Returns
 Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
 
 Boto3 documentation:
-[LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
+[LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
 
 Arguments:
 
@@ -419,9 +424,11 @@ Arguments:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
   *(required)*
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `Permissions`: `List`\[[Permission](./literals.md#permission)\] *(required)*
+- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+  *(required)*
 - `CatalogId`: `str`
-- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
+- `PermissionsWithGrantOption`:
+  `List`\[[PermissionType](./literals.md#permissiontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -431,7 +438,7 @@ Type annotations for
 `boto3.client("lakeformation").search_databases_by_lf_tags` method.
 
 Boto3 documentation:
-[LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
+[LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
 
 Arguments:
 
@@ -450,7 +457,7 @@ Type annotations for `boto3.client("lakeformation").search_tables_by_lf_tags`
 method.
 
 Boto3 documentation:
-[LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
+[LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
 
 Arguments:
 
@@ -468,7 +475,7 @@ Returns
 Type annotations for `boto3.client("lakeformation").update_lf_tag` method.
 
 Boto3 documentation:
-[LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
+[LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
 
 Arguments:
 
@@ -484,7 +491,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lakeformation").update_resource` method.
 
 Boto3 documentation:
-[LakeFormation.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
+[LakeFormation.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
 
 Arguments:
 

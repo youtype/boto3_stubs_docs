@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisVideoArchivedMedia](.) > Typed dictionaries
 
 Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
 [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
@@ -34,7 +34,7 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelect
 Required fields:
 
 - `FragmentSelectorType`:
-  [ClipFragmentSelectorType](./literals.md#clipfragmentselectortype)
+  [ClipFragmentSelectorTypeType](./literals.md#clipfragmentselectortypetype)
 - `TimestampRange`:
   [ClipTimestampRangeTypeDef](./type_defs.md#cliptimestamprangetypedef)
 
@@ -58,7 +58,7 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import DASHFragmentSelect
 Optional fields:
 
 - `FragmentSelectorType`:
-  [DASHFragmentSelectorType](./literals.md#dashfragmentselectortype)
+  [DASHFragmentSelectorTypeType](./literals.md#dashfragmentselectortypetype)
 - `TimestampRange`:
   [DASHTimestampRangeTypeDef](./type_defs.md#dashtimestamprangetypedef)
 
@@ -82,8 +82,9 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import FragmentSelectorTy
 Required fields:
 
 - `FragmentSelectorType`:
-  [FragmentSelectorType](./literals.md#fragmentselectortype)
-- `TimestampRange`: [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
+  [FragmentSelectorTypeType](./literals.md#fragmentselectortypetype)
+- `TimestampRange`:
+  [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
 ## FragmentTypeDef
 
@@ -158,7 +159,7 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import HLSFragmentSelecto
 Optional fields:
 
 - `FragmentSelectorType`:
-  [HLSFragmentSelectorType](./literals.md#hlsfragmentselectortype)
+  [HLSFragmentSelectorTypeType](./literals.md#hlsfragmentselectortypetype)
 - `TimestampRange`:
   [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
 

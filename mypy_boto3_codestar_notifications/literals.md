@@ -3,25 +3,25 @@
 > [Index](..) > [CodeStarNotifications](.) > Literals
 
 Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
 [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 - [Literals for boto3 CodeStarNotifications module](#literals-for-boto3-codestarnotifications-module)
-  - [DetailType](#detailtype)
-  - [ListEventTypesFilterName](#listeventtypesfiltername)
+  - [DetailTypeType](#detailtypetype)
+  - [ListEventTypesFilterNameType](#listeventtypesfilternametype)
   - [ListEventTypesPaginatorName](#listeventtypespaginatorname)
-  - [ListNotificationRulesFilterName](#listnotificationrulesfiltername)
+  - [ListNotificationRulesFilterNameType](#listnotificationrulesfilternametype)
   - [ListNotificationRulesPaginatorName](#listnotificationrulespaginatorname)
-  - [ListTargetsFilterName](#listtargetsfiltername)
+  - [ListTargetsFilterNameType](#listtargetsfilternametype)
   - [ListTargetsPaginatorName](#listtargetspaginatorname)
-  - [NotificationRuleStatus](#notificationrulestatus)
-  - [TargetStatus](#targetstatus)
+  - [NotificationRuleStatusType](#notificationrulestatustype)
+  - [TargetStatusType](#targetstatustype)
 
-## DetailType
+## DetailTypeType
 
 ```python
-from mypy_boto3_codestar_notifications.literals import DetailType
+from mypy_boto3_codestar_notifications.literals import DetailTypeType
 ```
 
 Values:
@@ -29,10 +29,10 @@ Values:
 - `BASIC`
 - `FULL`
 
-## ListEventTypesFilterName
+## ListEventTypesFilterNameType
 
 ```python
-from mypy_boto3_codestar_notifications.literals import ListEventTypesFilterName
+from mypy_boto3_codestar_notifications.literals import ListEventTypesFilterNameType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 
 - `list_event_types`
 
-## ListNotificationRulesFilterName
+## ListNotificationRulesFilterNameType
 
 ```python
-from mypy_boto3_codestar_notifications.literals import ListNotificationRulesFilterName
+from mypy_boto3_codestar_notifications.literals import ListNotificationRulesFilterNameType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 
 - `list_notification_rules`
 
-## ListTargetsFilterName
+## ListTargetsFilterNameType
 
 ```python
-from mypy_boto3_codestar_notifications.literals import ListTargetsFilterName
+from mypy_boto3_codestar_notifications.literals import ListTargetsFilterNameType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 
 - `list_targets`
 
-## NotificationRuleStatus
+## NotificationRuleStatusType
 
 ```python
-from mypy_boto3_codestar_notifications.literals import NotificationRuleStatus
+from mypy_boto3_codestar_notifications.literals import NotificationRuleStatusType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## TargetStatus
+## TargetStatusType
 
 ```python
-from mypy_boto3_codestar_notifications.literals import TargetStatus
+from mypy_boto3_codestar_notifications.literals import TargetStatusType
 ```
 
 Values:

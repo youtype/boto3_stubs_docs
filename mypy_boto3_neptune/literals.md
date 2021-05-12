@@ -3,12 +3,12 @@
 > [Index](..) > [Neptune](.) > Literals
 
 Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+[Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/neptune.html#Neptune)
 type annotations stubs module
 [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 - [Literals for boto3 Neptune module](#literals-for-boto3-neptune-module)
-  - [ApplyMethod](#applymethod)
+  - [ApplyMethodType](#applymethodtype)
   - [DBInstanceAvailableWaiterName](#dbinstanceavailablewaitername)
   - [DBInstanceDeletedWaiterName](#dbinstancedeletedwaitername)
   - [DescribeDBClusterEndpointsPaginatorName](#describedbclusterendpointspaginatorname)
@@ -26,12 +26,12 @@ type annotations stubs module
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
   - [DescribeOrderableDBInstanceOptionsPaginatorName](#describeorderabledbinstanceoptionspaginatorname)
   - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
-  - [SourceType](#sourcetype)
+  - [SourceTypeType](#sourcetypetype)
 
-## ApplyMethod
+## ApplyMethodType
 
 ```python
-from mypy_boto3_neptune.literals import ApplyMethod
+from mypy_boto3_neptune.literals import ApplyMethodType
 ```
 
 Values:
@@ -209,10 +209,10 @@ Values:
 
 - `describe_pending_maintenance_actions`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_neptune.literals import SourceType
+from mypy_boto3_neptune.literals import SourceTypeType
 ```
 
 Values:

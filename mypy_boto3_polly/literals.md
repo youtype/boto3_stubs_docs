@@ -3,22 +3,22 @@
 > [Index](..) > [Polly](.) > Literals
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [Literals for boto3 Polly module](#literals-for-boto3-polly-module)
   - [DescribeVoicesPaginatorName](#describevoicespaginatorname)
-  - [Engine](#engine)
-  - [Gender](#gender)
-  - [LanguageCode](#languagecode)
+  - [EngineType](#enginetype)
+  - [GenderType](#gendertype)
+  - [LanguageCodeType](#languagecodetype)
   - [ListLexiconsPaginatorName](#listlexiconspaginatorname)
   - [ListSpeechSynthesisTasksPaginatorName](#listspeechsynthesistaskspaginatorname)
-  - [OutputFormat](#outputformat)
-  - [SpeechMarkType](#speechmarktype)
-  - [TaskStatus](#taskstatus)
-  - [TextType](#texttype)
-  - [VoiceId](#voiceid)
+  - [OutputFormatType](#outputformattype)
+  - [SpeechMarkTypeType](#speechmarktypetype)
+  - [TaskStatusType](#taskstatustype)
+  - [TextTypeType](#texttypetype)
+  - [VoiceIdType](#voiceidtype)
 
 ## DescribeVoicesPaginatorName
 
@@ -30,10 +30,10 @@ Values:
 
 - `describe_voices`
 
-## Engine
+## EngineType
 
 ```python
-from mypy_boto3_polly.literals import Engine
+from mypy_boto3_polly.literals import EngineType
 ```
 
 Values:
@@ -41,10 +41,10 @@ Values:
 - `neural`
 - `standard`
 
-## Gender
+## GenderType
 
 ```python
-from mypy_boto3_polly.literals import Gender
+from mypy_boto3_polly.literals import GenderType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `Female`
 - `Male`
 
-## LanguageCode
+## LanguageCodeType
 
 ```python
-from mypy_boto3_polly.literals import LanguageCode
+from mypy_boto3_polly.literals import LanguageCodeType
 ```
 
 Values:
@@ -110,10 +110,10 @@ Values:
 
 - `list_speech_synthesis_tasks`
 
-## OutputFormat
+## OutputFormatType
 
 ```python
-from mypy_boto3_polly.literals import OutputFormat
+from mypy_boto3_polly.literals import OutputFormatType
 ```
 
 Values:
@@ -123,10 +123,10 @@ Values:
 - `ogg_vorbis`
 - `pcm`
 
-## SpeechMarkType
+## SpeechMarkTypeType
 
 ```python
-from mypy_boto3_polly.literals import SpeechMarkType
+from mypy_boto3_polly.literals import SpeechMarkTypeType
 ```
 
 Values:
@@ -136,10 +136,10 @@ Values:
 - `viseme`
 - `word`
 
-## TaskStatus
+## TaskStatusType
 
 ```python
-from mypy_boto3_polly.literals import TaskStatus
+from mypy_boto3_polly.literals import TaskStatusType
 ```
 
 Values:
@@ -149,10 +149,10 @@ Values:
 - `inProgress`
 - `scheduled`
 
-## TextType
+## TextTypeType
 
 ```python
-from mypy_boto3_polly.literals import TextType
+from mypy_boto3_polly.literals import TextTypeType
 ```
 
 Values:
@@ -160,10 +160,10 @@ Values:
 - `ssml`
 - `text`
 
-## VoiceId
+## VoiceIdType
 
 ```python
-from mypy_boto3_polly.literals import VoiceId
+from mypy_boto3_polly.literals import VoiceIdType
 ```
 
 Values:

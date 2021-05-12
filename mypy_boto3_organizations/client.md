@@ -3,7 +3,7 @@
 > [Index](..) > [Organizations](.) > OrganizationsClient
 
 Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations)
 type annotations stubs module
 [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
@@ -80,7 +80,7 @@ def get_organizations_client() -> OrganizationsClient:
 ```
 
 Boto3 documentation:
-[Organizations.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
+[Organizations.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client)
 
 ## Exceptions
 
@@ -149,7 +149,7 @@ Exceptions:
 Type annotations for `boto3.client("organizations").accept_handshake` method.
 
 Boto3 documentation:
-[Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
+[Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.accept_handshake)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns
 Type annotations for `boto3.client("organizations").attach_policy` method.
 
 Boto3 documentation:
-[Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
+[Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.attach_policy)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Arguments:
 Type annotations for `boto3.client("organizations").can_paginate` method.
 
 Boto3 documentation:
-[Organizations.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate)
+[Organizations.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.can_paginate)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Returns `bool`.
 Type annotations for `boto3.client("organizations").cancel_handshake` method.
 
 Boto3 documentation:
-[Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
+[Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.cancel_handshake)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Returns
 Type annotations for `boto3.client("organizations").create_account` method.
 
 Boto3 documentation:
-[Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
+[Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.create_account)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Arguments:
 - `AccountName`: `str` *(required)*
 - `RoleName`: `str`
 - `IamUserAccessToBilling`:
-  [IAMUserAccessToBilling](./literals.md#iamuseraccesstobilling)
+  [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("organizations").create_gov_cloud_account`
 method.
 
 Boto3 documentation:
-[Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
+[Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Arguments:
 - `AccountName`: `str` *(required)*
 - `RoleName`: `str`
 - `IamUserAccessToBilling`:
-  [IAMUserAccessToBilling](./literals.md#iamuseraccesstobilling)
+  [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -242,11 +242,12 @@ Type annotations for `boto3.client("organizations").create_organization`
 method.
 
 Boto3 documentation:
-[Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
+[Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.create_organization)
 
 Arguments:
 
-- `FeatureSet`: [OrganizationFeatureSet](./literals.md#organizationfeatureset)
+- `FeatureSet`:
+  [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
 
 Returns
 [CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
@@ -257,7 +258,7 @@ Type annotations for `boto3.client("organizations").create_organizational_unit`
 method.
 
 Boto3 documentation:
-[Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
+[Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
 
 Arguments:
 
@@ -273,14 +274,14 @@ Returns
 Type annotations for `boto3.client("organizations").create_policy` method.
 
 Boto3 documentation:
-[Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
+[Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.create_policy)
 
 Arguments:
 
 - `Content`: `str` *(required)*
 - `Description`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Type`: [PolicyType](./literals.md#policytype) *(required)*
+- `Type`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -291,7 +292,7 @@ Returns
 Type annotations for `boto3.client("organizations").decline_handshake` method.
 
 Boto3 documentation:
-[Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
+[Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.decline_handshake)
 
 Arguments:
 
@@ -306,7 +307,7 @@ Type annotations for `boto3.client("organizations").delete_organization`
 method.
 
 Boto3 documentation:
-[Organizations.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization)
+[Organizations.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.delete_organization)
 
 ### delete_organizational_unit
 
@@ -314,7 +315,7 @@ Type annotations for `boto3.client("organizations").delete_organizational_unit`
 method.
 
 Boto3 documentation:
-[Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
+[Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
 
 Arguments:
 
@@ -325,7 +326,7 @@ Arguments:
 Type annotations for `boto3.client("organizations").delete_policy` method.
 
 Boto3 documentation:
-[Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
+[Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.delete_policy)
 
 Arguments:
 
@@ -337,7 +338,7 @@ Type annotations for
 `boto3.client("organizations").deregister_delegated_administrator` method.
 
 Boto3 documentation:
-[Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
+[Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
 
 Arguments:
 
@@ -349,7 +350,7 @@ Arguments:
 Type annotations for `boto3.client("organizations").describe_account` method.
 
 Boto3 documentation:
-[Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
+[Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_account)
 
 Arguments:
 
@@ -364,7 +365,7 @@ Type annotations for
 `boto3.client("organizations").describe_create_account_status` method.
 
 Boto3 documentation:
-[Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
+[Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
 
 Arguments:
 
@@ -379,12 +380,12 @@ Type annotations for `boto3.client("organizations").describe_effective_policy`
 method.
 
 Boto3 documentation:
-[Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
+[Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
 
 Arguments:
 
-- `PolicyType`: [EffectivePolicyType](./literals.md#effectivepolicytype)
-  *(required)*
+- `PolicyType`:
+  [EffectivePolicyTypeType](./literals.md#effectivepolicytypetype) *(required)*
 - `TargetId`: `str`
 
 Returns
@@ -395,7 +396,7 @@ Returns
 Type annotations for `boto3.client("organizations").describe_handshake` method.
 
 Boto3 documentation:
-[Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
+[Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_handshake)
 
 Arguments:
 
@@ -410,7 +411,7 @@ Type annotations for `boto3.client("organizations").describe_organization`
 method.
 
 Boto3 documentation:
-[Organizations.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
+[Organizations.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_organization)
 
 Returns
 [DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
@@ -421,7 +422,7 @@ Type annotations for
 `boto3.client("organizations").describe_organizational_unit` method.
 
 Boto3 documentation:
-[Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
+[Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
 
 Arguments:
 
@@ -435,7 +436,7 @@ Returns
 Type annotations for `boto3.client("organizations").describe_policy` method.
 
 Boto3 documentation:
-[Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
+[Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.describe_policy)
 
 Arguments:
 
@@ -449,7 +450,7 @@ Returns
 Type annotations for `boto3.client("organizations").detach_policy` method.
 
 Boto3 documentation:
-[Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
+[Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.detach_policy)
 
 Arguments:
 
@@ -462,7 +463,7 @@ Type annotations for `boto3.client("organizations").disable_aws_service_access`
 method.
 
 Boto3 documentation:
-[Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
+[Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
 
 Arguments:
 
@@ -474,12 +475,12 @@ Type annotations for `boto3.client("organizations").disable_policy_type`
 method.
 
 Boto3 documentation:
-[Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
+[Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.disable_policy_type)
 
 Arguments:
 
 - `RootId`: `str` *(required)*
-- `PolicyType`: [PolicyType](./literals.md#policytype) *(required)*
+- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 
 Returns
 [DisablePolicyTypeResponseTypeDef](./type_defs.md#disablepolicytyperesponsetypedef).
@@ -490,7 +491,7 @@ Type annotations for `boto3.client("organizations").enable_all_features`
 method.
 
 Boto3 documentation:
-[Organizations.Client.enable_all_features](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
+[Organizations.Client.enable_all_features](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.enable_all_features)
 
 Returns
 [EnableAllFeaturesResponseTypeDef](./type_defs.md#enableallfeaturesresponsetypedef).
@@ -501,7 +502,7 @@ Type annotations for `boto3.client("organizations").enable_aws_service_access`
 method.
 
 Boto3 documentation:
-[Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
+[Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
 
 Arguments:
 
@@ -512,12 +513,12 @@ Arguments:
 Type annotations for `boto3.client("organizations").enable_policy_type` method.
 
 Boto3 documentation:
-[Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
+[Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.enable_policy_type)
 
 Arguments:
 
 - `RootId`: `str` *(required)*
-- `PolicyType`: [PolicyType](./literals.md#policytype) *(required)*
+- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 
 Returns
 [EnablePolicyTypeResponseTypeDef](./type_defs.md#enablepolicytyperesponsetypedef).
@@ -528,7 +529,7 @@ Type annotations for `boto3.client("organizations").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[Organizations.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url)
+[Organizations.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.generate_presigned_url)
 
 Arguments:
 
@@ -545,7 +546,7 @@ Type annotations for
 `boto3.client("organizations").invite_account_to_organization` method.
 
 Boto3 documentation:
-[Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
+[Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
 
 Arguments:
 
@@ -562,14 +563,14 @@ Returns
 Type annotations for `boto3.client("organizations").leave_organization` method.
 
 Boto3 documentation:
-[Organizations.Client.leave_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization)
+[Organizations.Client.leave_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.leave_organization)
 
 ### list_accounts
 
 Type annotations for `boto3.client("organizations").list_accounts` method.
 
 Boto3 documentation:
-[Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
+[Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_accounts)
 
 Arguments:
 
@@ -585,7 +586,7 @@ Type annotations for `boto3.client("organizations").list_accounts_for_parent`
 method.
 
 Boto3 documentation:
-[Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
+[Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
 
 Arguments:
 
@@ -603,7 +604,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
+[Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
 
 Arguments:
 
@@ -618,12 +619,12 @@ Returns
 Type annotations for `boto3.client("organizations").list_children` method.
 
 Boto3 documentation:
-[Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
+[Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_children)
 
 Arguments:
 
 - `ParentId`: `str` *(required)*
-- `ChildType`: [ChildType](./literals.md#childtype) *(required)*
+- `ChildType`: [ChildTypeType](./literals.md#childtypetype) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -636,11 +637,12 @@ Type annotations for `boto3.client("organizations").list_create_account_status`
 method.
 
 Boto3 documentation:
-[Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
+[Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_create_account_status)
 
 Arguments:
 
-- `States`: `List`\[[CreateAccountState](./literals.md#createaccountstate)\]
+- `States`:
+  `List`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -653,7 +655,7 @@ Type annotations for
 `boto3.client("organizations").list_delegated_administrators` method.
 
 Boto3 documentation:
-[Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
+[Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
 
 Arguments:
 
@@ -670,7 +672,7 @@ Type annotations for
 `boto3.client("organizations").list_delegated_services_for_account` method.
 
 Boto3 documentation:
-[Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
+[Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
 
 Arguments:
 
@@ -687,7 +689,7 @@ Type annotations for
 `boto3.client("organizations").list_handshakes_for_account` method.
 
 Boto3 documentation:
-[Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
+[Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
 
 Arguments:
 
@@ -704,7 +706,7 @@ Type annotations for
 `boto3.client("organizations").list_handshakes_for_organization` method.
 
 Boto3 documentation:
-[Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
+[Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
 
 Arguments:
 
@@ -721,7 +723,7 @@ Type annotations for
 `boto3.client("organizations").list_organizational_units_for_parent` method.
 
 Boto3 documentation:
-[Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
+[Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
 
 Arguments:
 
@@ -737,7 +739,7 @@ Returns
 Type annotations for `boto3.client("organizations").list_parents` method.
 
 Boto3 documentation:
-[Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
+[Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_parents)
 
 Arguments:
 
@@ -753,11 +755,11 @@ Returns
 Type annotations for `boto3.client("organizations").list_policies` method.
 
 Boto3 documentation:
-[Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
+[Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_policies)
 
 Arguments:
 
-- `Filter`: [PolicyType](./literals.md#policytype) *(required)*
+- `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -770,12 +772,12 @@ Type annotations for `boto3.client("organizations").list_policies_for_target`
 method.
 
 Boto3 documentation:
-[Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
+[Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
 
 Arguments:
 
 - `TargetId`: `str` *(required)*
-- `Filter`: [PolicyType](./literals.md#policytype) *(required)*
+- `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -787,7 +789,7 @@ Returns
 Type annotations for `boto3.client("organizations").list_roots` method.
 
 Boto3 documentation:
-[Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
+[Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_roots)
 
 Arguments:
 
@@ -802,7 +804,7 @@ Type annotations for `boto3.client("organizations").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
+[Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -818,7 +820,7 @@ Type annotations for `boto3.client("organizations").list_targets_for_policy`
 method.
 
 Boto3 documentation:
-[Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
+[Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
 
 Arguments:
 
@@ -834,7 +836,7 @@ Returns
 Type annotations for `boto3.client("organizations").move_account` method.
 
 Boto3 documentation:
-[Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
+[Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.move_account)
 
 Arguments:
 
@@ -848,7 +850,7 @@ Type annotations for
 `boto3.client("organizations").register_delegated_administrator` method.
 
 Boto3 documentation:
-[Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
+[Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
 
 Arguments:
 
@@ -861,7 +863,7 @@ Type annotations for
 `boto3.client("organizations").remove_account_from_organization` method.
 
 Boto3 documentation:
-[Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
+[Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
 
 Arguments:
 
@@ -872,7 +874,7 @@ Arguments:
 Type annotations for `boto3.client("organizations").tag_resource` method.
 
 Boto3 documentation:
-[Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
+[Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.tag_resource)
 
 Arguments:
 
@@ -884,7 +886,7 @@ Arguments:
 Type annotations for `boto3.client("organizations").untag_resource` method.
 
 Boto3 documentation:
-[Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
+[Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.untag_resource)
 
 Arguments:
 
@@ -897,7 +899,7 @@ Type annotations for `boto3.client("organizations").update_organizational_unit`
 method.
 
 Boto3 documentation:
-[Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
+[Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
 
 Arguments:
 
@@ -912,7 +914,7 @@ Returns
 Type annotations for `boto3.client("organizations").update_policy` method.
 
 Boto3 documentation:
-[Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
+[Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations.Client.update_policy)
 
 Arguments:
 

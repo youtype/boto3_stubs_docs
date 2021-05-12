@@ -3,35 +3,35 @@
 > [Index](..) > [MachineLearning](.) > Literals
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [Literals for boto3 MachineLearning module](#literals-for-boto3-machinelearning-module)
-  - [Algorithm](#algorithm)
+  - [AlgorithmType](#algorithmtype)
   - [BatchPredictionAvailableWaiterName](#batchpredictionavailablewaitername)
-  - [BatchPredictionFilterVariable](#batchpredictionfiltervariable)
+  - [BatchPredictionFilterVariableType](#batchpredictionfiltervariabletype)
   - [DataSourceAvailableWaiterName](#datasourceavailablewaitername)
-  - [DataSourceFilterVariable](#datasourcefiltervariable)
+  - [DataSourceFilterVariableType](#datasourcefiltervariabletype)
   - [DescribeBatchPredictionsPaginatorName](#describebatchpredictionspaginatorname)
   - [DescribeDataSourcesPaginatorName](#describedatasourcespaginatorname)
   - [DescribeEvaluationsPaginatorName](#describeevaluationspaginatorname)
   - [DescribeMLModelsPaginatorName](#describemlmodelspaginatorname)
-  - [DetailsAttributes](#detailsattributes)
-  - [EntityStatus](#entitystatus)
+  - [DetailsAttributesType](#detailsattributestype)
+  - [EntityStatusType](#entitystatustype)
   - [EvaluationAvailableWaiterName](#evaluationavailablewaitername)
-  - [EvaluationFilterVariable](#evaluationfiltervariable)
+  - [EvaluationFilterVariableType](#evaluationfiltervariabletype)
   - [MLModelAvailableWaiterName](#mlmodelavailablewaitername)
-  - [MLModelFilterVariable](#mlmodelfiltervariable)
-  - [MLModelType](#mlmodeltype)
-  - [RealtimeEndpointStatus](#realtimeendpointstatus)
-  - [SortOrder](#sortorder)
-  - [TaggableResourceType](#taggableresourcetype)
+  - [MLModelFilterVariableType](#mlmodelfiltervariabletype)
+  - [MLModelTypeType](#mlmodeltypetype)
+  - [RealtimeEndpointStatusType](#realtimeendpointstatustype)
+  - [SortOrderType](#sortordertype)
+  - [TaggableResourceTypeType](#taggableresourcetypetype)
 
-## Algorithm
+## AlgorithmType
 
 ```python
-from mypy_boto3_machinelearning.literals import Algorithm
+from mypy_boto3_machinelearning.literals import AlgorithmType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 
 - `batch_prediction_available`
 
-## BatchPredictionFilterVariable
+## BatchPredictionFilterVariableType
 
 ```python
-from mypy_boto3_machinelearning.literals import BatchPredictionFilterVariable
+from mypy_boto3_machinelearning.literals import BatchPredictionFilterVariableType
 ```
 
 Values:
@@ -75,10 +75,10 @@ Values:
 
 - `data_source_available`
 
-## DataSourceFilterVariable
+## DataSourceFilterVariableType
 
 ```python
-from mypy_boto3_machinelearning.literals import DataSourceFilterVariable
+from mypy_boto3_machinelearning.literals import DataSourceFilterVariableType
 ```
 
 Values:
@@ -130,10 +130,10 @@ Values:
 
 - `describe_ml_models`
 
-## DetailsAttributes
+## DetailsAttributesType
 
 ```python
-from mypy_boto3_machinelearning.literals import DetailsAttributes
+from mypy_boto3_machinelearning.literals import DetailsAttributesType
 ```
 
 Values:
@@ -141,10 +141,10 @@ Values:
 - `Algorithm`
 - `PredictiveModelType`
 
-## EntityStatus
+## EntityStatusType
 
 ```python
-from mypy_boto3_machinelearning.literals import EntityStatus
+from mypy_boto3_machinelearning.literals import EntityStatusType
 ```
 
 Values:
@@ -165,10 +165,10 @@ Values:
 
 - `evaluation_available`
 
-## EvaluationFilterVariable
+## EvaluationFilterVariableType
 
 ```python
-from mypy_boto3_machinelearning.literals import EvaluationFilterVariable
+from mypy_boto3_machinelearning.literals import EvaluationFilterVariableType
 ```
 
 Values:
@@ -192,10 +192,10 @@ Values:
 
 - `ml_model_available`
 
-## MLModelFilterVariable
+## MLModelFilterVariableType
 
 ```python
-from mypy_boto3_machinelearning.literals import MLModelFilterVariable
+from mypy_boto3_machinelearning.literals import MLModelFilterVariableType
 ```
 
 Values:
@@ -211,10 +211,10 @@ Values:
 - `TrainingDataSourceId`
 - `TrainingDataURI`
 
-## MLModelType
+## MLModelTypeType
 
 ```python
-from mypy_boto3_machinelearning.literals import MLModelType
+from mypy_boto3_machinelearning.literals import MLModelTypeType
 ```
 
 Values:
@@ -223,10 +223,10 @@ Values:
 - `MULTICLASS`
 - `REGRESSION`
 
-## RealtimeEndpointStatus
+## RealtimeEndpointStatusType
 
 ```python
-from mypy_boto3_machinelearning.literals import RealtimeEndpointStatus
+from mypy_boto3_machinelearning.literals import RealtimeEndpointStatusType
 ```
 
 Values:
@@ -236,10 +236,10 @@ Values:
 - `READY`
 - `UPDATING`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_machinelearning.literals import SortOrder
+from mypy_boto3_machinelearning.literals import SortOrderType
 ```
 
 Values:
@@ -247,10 +247,10 @@ Values:
 - `asc`
 - `dsc`
 
-## TaggableResourceType
+## TaggableResourceTypeType
 
 ```python
-from mypy_boto3_machinelearning.literals import TaggableResourceType
+from mypy_boto3_machinelearning.literals import TaggableResourceTypeType
 ```
 
 Values:

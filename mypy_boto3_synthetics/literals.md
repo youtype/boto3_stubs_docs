@@ -3,20 +3,31 @@
 > [Index](..) > [Synthetics](.) > Literals
 
 Auto-generated documentation for
-[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
 [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Literals for boto3 Synthetics module](#literals-for-boto3-synthetics-module)
-  - [CanaryRunState](#canaryrunstate)
-  - [CanaryRunStateReasonCode](#canaryrunstatereasoncode)
-  - [CanaryState](#canarystate)
-  - [CanaryStateReasonCode](#canarystatereasoncode)
+  - [CanaryRunStateReasonCodeType](#canaryrunstatereasoncodetype)
+  - [CanaryRunStateType](#canaryrunstatetype)
+  - [CanaryStateReasonCodeType](#canarystatereasoncodetype)
+  - [CanaryStateType](#canarystatetype)
 
-## CanaryRunState
+## CanaryRunStateReasonCodeType
 
 ```python
-from mypy_boto3_synthetics.literals import CanaryRunState
+from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType
+```
+
+Values:
+
+- `CANARY_FAILURE`
+- `EXECUTION_FAILURE`
+
+## CanaryRunStateType
+
+```python
+from mypy_boto3_synthetics.literals import CanaryRunStateType
 ```
 
 Values:
@@ -25,21 +36,20 @@ Values:
 - `PASSED`
 - `RUNNING`
 
-## CanaryRunStateReasonCode
+## CanaryStateReasonCodeType
 
 ```python
-from mypy_boto3_synthetics.literals import CanaryRunStateReasonCode
+from mypy_boto3_synthetics.literals import CanaryStateReasonCodeType
 ```
 
 Values:
 
-- `CANARY_FAILURE`
-- `EXECUTION_FAILURE`
+- `INVALID_PERMISSIONS`
 
-## CanaryState
+## CanaryStateType
 
 ```python
-from mypy_boto3_synthetics.literals import CanaryState
+from mypy_boto3_synthetics.literals import CanaryStateType
 ```
 
 Values:
@@ -53,13 +63,3 @@ Values:
 - `STOPPED`
 - `STOPPING`
 - `UPDATING`
-
-## CanaryStateReasonCode
-
-```python
-from mypy_boto3_synthetics.literals import CanaryStateReasonCode
-```
-
-Values:
-
-- `INVALID_PERMISSIONS`

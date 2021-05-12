@@ -3,20 +3,20 @@
 > [Index](..) > [MediaStoreData](.) > Literals
 
 Auto-generated documentation for
-[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
 [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Literals for boto3 MediaStoreData module](#literals-for-boto3-mediastoredata-module)
-  - [ItemType](#itemtype)
+  - [ItemTypeType](#itemtypetype)
   - [ListItemsPaginatorName](#listitemspaginatorname)
-  - [StorageClass](#storageclass)
-  - [UploadAvailability](#uploadavailability)
+  - [StorageClassType](#storageclasstype)
+  - [UploadAvailabilityType](#uploadavailabilitytype)
 
-## ItemType
+## ItemTypeType
 
 ```python
-from mypy_boto3_mediastore_data.literals import ItemType
+from mypy_boto3_mediastore_data.literals import ItemTypeType
 ```
 
 Values:
@@ -34,20 +34,20 @@ Values:
 
 - `list_items`
 
-## StorageClass
+## StorageClassType
 
 ```python
-from mypy_boto3_mediastore_data.literals import StorageClass
+from mypy_boto3_mediastore_data.literals import StorageClassType
 ```
 
 Values:
 
 - `TEMPORAL`
 
-## UploadAvailability
+## UploadAvailabilityType
 
 ```python
-from mypy_boto3_mediastore_data.literals import UploadAvailability
+from mypy_boto3_mediastore_data.literals import UploadAvailabilityType
 ```
 
 Values:

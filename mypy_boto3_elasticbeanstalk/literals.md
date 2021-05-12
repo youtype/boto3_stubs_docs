@@ -3,43 +3,43 @@
 > [Index](..) > [ElasticBeanstalk](.) > Literals
 
 Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Literals for boto3 ElasticBeanstalk module](#literals-for-boto3-elasticbeanstalk-module)
-  - [ActionHistoryStatus](#actionhistorystatus)
-  - [ActionStatus](#actionstatus)
-  - [ActionType](#actiontype)
-  - [ApplicationVersionStatus](#applicationversionstatus)
-  - [ComputeType](#computetype)
-  - [ConfigurationDeploymentStatus](#configurationdeploymentstatus)
-  - [ConfigurationOptionValueType](#configurationoptionvaluetype)
+  - [ActionHistoryStatusType](#actionhistorystatustype)
+  - [ActionStatusType](#actionstatustype)
+  - [ActionTypeType](#actiontypetype)
+  - [ApplicationVersionStatusType](#applicationversionstatustype)
+  - [ComputeTypeType](#computetypetype)
+  - [ConfigurationDeploymentStatusType](#configurationdeploymentstatustype)
+  - [ConfigurationOptionValueTypeType](#configurationoptionvaluetypetype)
   - [DescribeApplicationVersionsPaginatorName](#describeapplicationversionspaginatorname)
   - [DescribeEnvironmentManagedActionHistoryPaginatorName](#describeenvironmentmanagedactionhistorypaginatorname)
   - [DescribeEnvironmentsPaginatorName](#describeenvironmentspaginatorname)
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
   - [EnvironmentExistsWaiterName](#environmentexistswaitername)
-  - [EnvironmentHealth](#environmenthealth)
-  - [EnvironmentHealthAttribute](#environmenthealthattribute)
-  - [EnvironmentHealthStatus](#environmenthealthstatus)
-  - [EnvironmentInfoType](#environmentinfotype)
-  - [EnvironmentStatus](#environmentstatus)
+  - [EnvironmentHealthAttributeType](#environmenthealthattributetype)
+  - [EnvironmentHealthStatusType](#environmenthealthstatustype)
+  - [EnvironmentHealthType](#environmenthealthtype)
+  - [EnvironmentInfoTypeType](#environmentinfotypetype)
+  - [EnvironmentStatusType](#environmentstatustype)
   - [EnvironmentTerminatedWaiterName](#environmentterminatedwaitername)
   - [EnvironmentUpdatedWaiterName](#environmentupdatedwaitername)
-  - [EventSeverity](#eventseverity)
-  - [FailureType](#failuretype)
-  - [InstancesHealthAttribute](#instanceshealthattribute)
+  - [EventSeverityType](#eventseveritytype)
+  - [FailureTypeType](#failuretypetype)
+  - [InstancesHealthAttributeType](#instanceshealthattributetype)
   - [ListPlatformVersionsPaginatorName](#listplatformversionspaginatorname)
-  - [PlatformStatus](#platformstatus)
-  - [SourceRepository](#sourcerepository)
-  - [SourceType](#sourcetype)
-  - [ValidationSeverity](#validationseverity)
+  - [PlatformStatusType](#platformstatustype)
+  - [SourceRepositoryType](#sourcerepositorytype)
+  - [SourceTypeType](#sourcetypetype)
+  - [ValidationSeverityType](#validationseveritytype)
 
-## ActionHistoryStatus
+## ActionHistoryStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatus
+from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `Failed`
 - `Unknown`
 
-## ActionStatus
+## ActionStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ActionStatus
+from mypy_boto3_elasticbeanstalk.literals import ActionStatusType
 ```
 
 Values:
@@ -61,10 +61,10 @@ Values:
 - `Scheduled`
 - `Unknown`
 
-## ActionType
+## ActionTypeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ActionType
+from mypy_boto3_elasticbeanstalk.literals import ActionTypeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `PlatformUpdate`
 - `Unknown`
 
-## ApplicationVersionStatus
+## ApplicationVersionStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ApplicationVersionStatus
+from mypy_boto3_elasticbeanstalk.literals import ApplicationVersionStatusType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 - `Processing`
 - `Unprocessed`
 
-## ComputeType
+## ComputeTypeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ComputeType
+from mypy_boto3_elasticbeanstalk.literals import ComputeTypeType
 ```
 
 Values:
@@ -99,10 +99,10 @@ Values:
 - `BUILD_GENERAL1_MEDIUM`
 - `BUILD_GENERAL1_SMALL`
 
-## ConfigurationDeploymentStatus
+## ConfigurationDeploymentStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ConfigurationDeploymentStatus
+from mypy_boto3_elasticbeanstalk.literals import ConfigurationDeploymentStatusType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `failed`
 - `pending`
 
-## ConfigurationOptionValueType
+## ConfigurationOptionValueTypeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ConfigurationOptionValueType
+from mypy_boto3_elasticbeanstalk.literals import ConfigurationOptionValueTypeType
 ```
 
 Values:
@@ -172,23 +172,10 @@ Values:
 
 - `environment_exists`
 
-## EnvironmentHealth
+## EnvironmentHealthAttributeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealth
-```
-
-Values:
-
-- `Green`
-- `Grey`
-- `Red`
-- `Yellow`
-
-## EnvironmentHealthAttribute
-
-```python
-from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthAttribute
+from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthAttributeType
 ```
 
 Values:
@@ -202,10 +189,10 @@ Values:
 - `RefreshedAt`
 - `Status`
 
-## EnvironmentHealthStatus
+## EnvironmentHealthStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthStatus
+from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthStatusType
 ```
 
 Values:
@@ -220,10 +207,23 @@ Values:
 - `Unknown`
 - `Warning`
 
-## EnvironmentInfoType
+## EnvironmentHealthType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import EnvironmentInfoType
+from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthType
+```
+
+Values:
+
+- `Green`
+- `Grey`
+- `Red`
+- `Yellow`
+
+## EnvironmentInfoTypeType
+
+```python
+from mypy_boto3_elasticbeanstalk.literals import EnvironmentInfoTypeType
 ```
 
 Values:
@@ -231,10 +231,10 @@ Values:
 - `bundle`
 - `tail`
 
-## EnvironmentStatus
+## EnvironmentStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import EnvironmentStatus
+from mypy_boto3_elasticbeanstalk.literals import EnvironmentStatusType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 
 - `environment_updated`
 
-## EventSeverity
+## EventSeverityType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import EventSeverity
+from mypy_boto3_elasticbeanstalk.literals import EventSeverityType
 ```
 
 Values:
@@ -283,10 +283,10 @@ Values:
 - `TRACE`
 - `WARN`
 
-## FailureType
+## FailureTypeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import FailureType
+from mypy_boto3_elasticbeanstalk.literals import FailureTypeType
 ```
 
 Values:
@@ -299,10 +299,10 @@ Values:
 - `RollbackSuccessful`
 - `UpdateCancelled`
 
-## InstancesHealthAttribute
+## InstancesHealthAttributeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import InstancesHealthAttribute
+from mypy_boto3_elasticbeanstalk.literals import InstancesHealthAttributeType
 ```
 
 Values:
@@ -329,10 +329,10 @@ Values:
 
 - `list_platform_versions`
 
-## PlatformStatus
+## PlatformStatusType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import PlatformStatus
+from mypy_boto3_elasticbeanstalk.literals import PlatformStatusType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `Failed`
 - `Ready`
 
-## SourceRepository
+## SourceRepositoryType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import SourceRepository
+from mypy_boto3_elasticbeanstalk.literals import SourceRepositoryType
 ```
 
 Values:
@@ -354,10 +354,10 @@ Values:
 - `CodeCommit`
 - `S3`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import SourceType
+from mypy_boto3_elasticbeanstalk.literals import SourceTypeType
 ```
 
 Values:
@@ -365,10 +365,10 @@ Values:
 - `Git`
 - `Zip`
 
-## ValidationSeverity
+## ValidationSeverityType
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ValidationSeverity
+from mypy_boto3_elasticbeanstalk.literals import ValidationSeverityType
 ```
 
 Values:

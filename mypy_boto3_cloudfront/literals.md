@@ -3,48 +3,48 @@
 > [Index](..) > [CloudFront](.) > Literals
 
 Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
 [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 - [Literals for boto3 CloudFront module](#literals-for-boto3-cloudfront-module)
-  - [CachePolicyCookieBehavior](#cachepolicycookiebehavior)
-  - [CachePolicyHeaderBehavior](#cachepolicyheaderbehavior)
-  - [CachePolicyQueryStringBehavior](#cachepolicyquerystringbehavior)
-  - [CachePolicyType](#cachepolicytype)
-  - [CertificateSource](#certificatesource)
+  - [CachePolicyCookieBehaviorType](#cachepolicycookiebehaviortype)
+  - [CachePolicyHeaderBehaviorType](#cachepolicyheaderbehaviortype)
+  - [CachePolicyQueryStringBehaviorType](#cachepolicyquerystringbehaviortype)
+  - [CachePolicyTypeType](#cachepolicytypetype)
+  - [CertificateSourceType](#certificatesourcetype)
   - [DistributionDeployedWaiterName](#distributiondeployedwaitername)
-  - [EventType](#eventtype)
-  - [Format](#format)
-  - [FunctionRuntime](#functionruntime)
-  - [FunctionStage](#functionstage)
-  - [GeoRestrictionType](#georestrictiontype)
-  - [HttpVersion](#httpversion)
-  - [ICPRecordalStatus](#icprecordalstatus)
+  - [EventTypeType](#eventtypetype)
+  - [FormatType](#formattype)
+  - [FunctionRuntimeType](#functionruntimetype)
+  - [FunctionStageType](#functionstagetype)
+  - [GeoRestrictionTypeType](#georestrictiontypetype)
+  - [HttpVersionType](#httpversiontype)
+  - [ICPRecordalStatusType](#icprecordalstatustype)
   - [InvalidationCompletedWaiterName](#invalidationcompletedwaitername)
-  - [ItemSelection](#itemselection)
+  - [ItemSelectionType](#itemselectiontype)
   - [ListCloudFrontOriginAccessIdentitiesPaginatorName](#listcloudfrontoriginaccessidentitiespaginatorname)
   - [ListDistributionsPaginatorName](#listdistributionspaginatorname)
   - [ListInvalidationsPaginatorName](#listinvalidationspaginatorname)
   - [ListStreamingDistributionsPaginatorName](#liststreamingdistributionspaginatorname)
-  - [Method](#method)
-  - [MinimumProtocolVersion](#minimumprotocolversion)
-  - [OriginProtocolPolicy](#originprotocolpolicy)
-  - [OriginRequestPolicyCookieBehavior](#originrequestpolicycookiebehavior)
-  - [OriginRequestPolicyHeaderBehavior](#originrequestpolicyheaderbehavior)
-  - [OriginRequestPolicyQueryStringBehavior](#originrequestpolicyquerystringbehavior)
-  - [OriginRequestPolicyType](#originrequestpolicytype)
-  - [PriceClass](#priceclass)
-  - [RealtimeMetricsSubscriptionStatus](#realtimemetricssubscriptionstatus)
-  - [SSLSupportMethod](#sslsupportmethod)
-  - [SslProtocol](#sslprotocol)
+  - [MethodType](#methodtype)
+  - [MinimumProtocolVersionType](#minimumprotocolversiontype)
+  - [OriginProtocolPolicyType](#originprotocolpolicytype)
+  - [OriginRequestPolicyCookieBehaviorType](#originrequestpolicycookiebehaviortype)
+  - [OriginRequestPolicyHeaderBehaviorType](#originrequestpolicyheaderbehaviortype)
+  - [OriginRequestPolicyQueryStringBehaviorType](#originrequestpolicyquerystringbehaviortype)
+  - [OriginRequestPolicyTypeType](#originrequestpolicytypetype)
+  - [PriceClassType](#priceclasstype)
+  - [RealtimeMetricsSubscriptionStatusType](#realtimemetricssubscriptionstatustype)
+  - [SSLSupportMethodType](#sslsupportmethodtype)
+  - [SslProtocolType](#sslprotocoltype)
   - [StreamingDistributionDeployedWaiterName](#streamingdistributiondeployedwaitername)
-  - [ViewerProtocolPolicy](#viewerprotocolpolicy)
+  - [ViewerProtocolPolicyType](#viewerprotocolpolicytype)
 
-## CachePolicyCookieBehavior
+## CachePolicyCookieBehaviorType
 
 ```python
-from mypy_boto3_cloudfront.literals import CachePolicyCookieBehavior
+from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `none`
 - `whitelist`
 
-## CachePolicyHeaderBehavior
+## CachePolicyHeaderBehaviorType
 
 ```python
-from mypy_boto3_cloudfront.literals import CachePolicyHeaderBehavior
+from mypy_boto3_cloudfront.literals import CachePolicyHeaderBehaviorType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `none`
 - `whitelist`
 
-## CachePolicyQueryStringBehavior
+## CachePolicyQueryStringBehaviorType
 
 ```python
-from mypy_boto3_cloudfront.literals import CachePolicyQueryStringBehavior
+from mypy_boto3_cloudfront.literals import CachePolicyQueryStringBehaviorType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 - `none`
 - `whitelist`
 
-## CachePolicyType
+## CachePolicyTypeType
 
 ```python
-from mypy_boto3_cloudfront.literals import CachePolicyType
+from mypy_boto3_cloudfront.literals import CachePolicyTypeType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `custom`
 - `managed`
 
-## CertificateSource
+## CertificateSourceType
 
 ```python
-from mypy_boto3_cloudfront.literals import CertificateSource
+from mypy_boto3_cloudfront.literals import CertificateSourceType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 
 - `distribution_deployed`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_cloudfront.literals import EventType
+from mypy_boto3_cloudfront.literals import EventTypeType
 ```
 
 Values:
@@ -124,30 +124,30 @@ Values:
 - `viewer-request`
 - `viewer-response`
 
-## Format
+## FormatType
 
 ```python
-from mypy_boto3_cloudfront.literals import Format
+from mypy_boto3_cloudfront.literals import FormatType
 ```
 
 Values:
 
 - `URLEncoded`
 
-## FunctionRuntime
+## FunctionRuntimeType
 
 ```python
-from mypy_boto3_cloudfront.literals import FunctionRuntime
+from mypy_boto3_cloudfront.literals import FunctionRuntimeType
 ```
 
 Values:
 
 - `cloudfront-js-1.0`
 
-## FunctionStage
+## FunctionStageType
 
 ```python
-from mypy_boto3_cloudfront.literals import FunctionStage
+from mypy_boto3_cloudfront.literals import FunctionStageType
 ```
 
 Values:
@@ -155,10 +155,10 @@ Values:
 - `DEVELOPMENT`
 - `LIVE`
 
-## GeoRestrictionType
+## GeoRestrictionTypeType
 
 ```python
-from mypy_boto3_cloudfront.literals import GeoRestrictionType
+from mypy_boto3_cloudfront.literals import GeoRestrictionTypeType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 - `none`
 - `whitelist`
 
-## HttpVersion
+## HttpVersionType
 
 ```python
-from mypy_boto3_cloudfront.literals import HttpVersion
+from mypy_boto3_cloudfront.literals import HttpVersionType
 ```
 
 Values:
@@ -178,10 +178,10 @@ Values:
 - `http1.1`
 - `http2`
 
-## ICPRecordalStatus
+## ICPRecordalStatusType
 
 ```python
-from mypy_boto3_cloudfront.literals import ICPRecordalStatus
+from mypy_boto3_cloudfront.literals import ICPRecordalStatusType
 ```
 
 Values:
@@ -200,10 +200,10 @@ Values:
 
 - `invalidation_completed`
 
-## ItemSelection
+## ItemSelectionType
 
 ```python
-from mypy_boto3_cloudfront.literals import ItemSelection
+from mypy_boto3_cloudfront.literals import ItemSelectionType
 ```
 
 Values:
@@ -252,10 +252,10 @@ Values:
 
 - `list_streaming_distributions`
 
-## Method
+## MethodType
 
 ```python
-from mypy_boto3_cloudfront.literals import Method
+from mypy_boto3_cloudfront.literals import MethodType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 - `POST`
 - `PUT`
 
-## MinimumProtocolVersion
+## MinimumProtocolVersionType
 
 ```python
-from mypy_boto3_cloudfront.literals import MinimumProtocolVersion
+from mypy_boto3_cloudfront.literals import MinimumProtocolVersionType
 ```
 
 Values:
@@ -283,10 +283,10 @@ Values:
 - `TLSv1.2_2019`
 - `TLSv1_2016`
 
-## OriginProtocolPolicy
+## OriginProtocolPolicyType
 
 ```python
-from mypy_boto3_cloudfront.literals import OriginProtocolPolicy
+from mypy_boto3_cloudfront.literals import OriginProtocolPolicyType
 ```
 
 Values:
@@ -295,10 +295,10 @@ Values:
 - `https-only`
 - `match-viewer`
 
-## OriginRequestPolicyCookieBehavior
+## OriginRequestPolicyCookieBehaviorType
 
 ```python
-from mypy_boto3_cloudfront.literals import OriginRequestPolicyCookieBehavior
+from mypy_boto3_cloudfront.literals import OriginRequestPolicyCookieBehaviorType
 ```
 
 Values:
@@ -307,10 +307,10 @@ Values:
 - `none`
 - `whitelist`
 
-## OriginRequestPolicyHeaderBehavior
+## OriginRequestPolicyHeaderBehaviorType
 
 ```python
-from mypy_boto3_cloudfront.literals import OriginRequestPolicyHeaderBehavior
+from mypy_boto3_cloudfront.literals import OriginRequestPolicyHeaderBehaviorType
 ```
 
 Values:
@@ -320,10 +320,10 @@ Values:
 - `none`
 - `whitelist`
 
-## OriginRequestPolicyQueryStringBehavior
+## OriginRequestPolicyQueryStringBehaviorType
 
 ```python
-from mypy_boto3_cloudfront.literals import OriginRequestPolicyQueryStringBehavior
+from mypy_boto3_cloudfront.literals import OriginRequestPolicyQueryStringBehaviorType
 ```
 
 Values:
@@ -332,10 +332,10 @@ Values:
 - `none`
 - `whitelist`
 
-## OriginRequestPolicyType
+## OriginRequestPolicyTypeType
 
 ```python
-from mypy_boto3_cloudfront.literals import OriginRequestPolicyType
+from mypy_boto3_cloudfront.literals import OriginRequestPolicyTypeType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `custom`
 - `managed`
 
-## PriceClass
+## PriceClassType
 
 ```python
-from mypy_boto3_cloudfront.literals import PriceClass
+from mypy_boto3_cloudfront.literals import PriceClassType
 ```
 
 Values:
@@ -355,10 +355,10 @@ Values:
 - `PriceClass_200`
 - `PriceClass_All`
 
-## RealtimeMetricsSubscriptionStatus
+## RealtimeMetricsSubscriptionStatusType
 
 ```python
-from mypy_boto3_cloudfront.literals import RealtimeMetricsSubscriptionStatus
+from mypy_boto3_cloudfront.literals import RealtimeMetricsSubscriptionStatusType
 ```
 
 Values:
@@ -366,10 +366,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## SSLSupportMethod
+## SSLSupportMethodType
 
 ```python
-from mypy_boto3_cloudfront.literals import SSLSupportMethod
+from mypy_boto3_cloudfront.literals import SSLSupportMethodType
 ```
 
 Values:
@@ -378,10 +378,10 @@ Values:
 - `static-ip`
 - `vip`
 
-## SslProtocol
+## SslProtocolType
 
 ```python
-from mypy_boto3_cloudfront.literals import SslProtocol
+from mypy_boto3_cloudfront.literals import SslProtocolType
 ```
 
 Values:
@@ -401,10 +401,10 @@ Values:
 
 - `streaming_distribution_deployed`
 
-## ViewerProtocolPolicy
+## ViewerProtocolPolicyType
 
 ```python
-from mypy_boto3_cloudfront.literals import ViewerProtocolPolicy
+from mypy_boto3_cloudfront.literals import ViewerProtocolPolicyType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [IoTWireless](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module
 [mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
@@ -88,7 +88,7 @@ Optional fields:
 
 - `DevAddr`: `str`
 - `SessionKeys`:
-  [SessionKeysAbpV1_0_xTypeDef](./type_defs.md#sessionkeysabpv1-0-xtypedef)
+  [SessionKeysAbpV1_0_xTypeDef](./type_defs.md#sessionkeysabpv1_0_xtypedef)
 
 ## AbpV1_1TypeDef
 
@@ -100,7 +100,7 @@ Optional fields:
 
 - `DevAddr`: `str`
 - `SessionKeys`:
-  [SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1-1typedef)
+  [SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1_1typedef)
 
 ## AssociateAwsAccountWithPartnerAccountResponseTypeDef
 
@@ -132,7 +132,7 @@ from mypy_boto3_iotwireless.type_defs import CertificateListTypeDef
 
 Required fields:
 
-- `SigningAlg`: [SigningAlg](./literals.md#signingalg)
+- `SigningAlg`: [SigningAlgType](./literals.md#signingalgtype)
 - `Value`: `str`
 
 ## CreateDestinationResponseTypeDef
@@ -210,7 +210,8 @@ from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskResponseTy
 Optional fields:
 
 - `WirelessGatewayTaskDefinitionId`: `str`
-- `Status`: [WirelessGatewayTaskStatus](./literals.md#wirelessgatewaytaskstatus)
+- `Status`:
+  [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
 
 ## DestinationsTypeDef
 
@@ -222,7 +223,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `ExpressionType`: [ExpressionType](./literals.md#expressiontype)
+- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
 - `Expression`: `str`
 - `Description`: `str`
 - `RoleArn`: `str`
@@ -250,7 +251,7 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `Expression`: `str`
-- `ExpressionType`: [ExpressionType](./literals.md#expressiontype)
+- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
 - `Description`: `str`
 - `RoleArn`: `str`
 
@@ -289,7 +290,7 @@ from mypy_boto3_iotwireless.type_defs import GetServiceEndpointResponseTypeDef
 Optional fields:
 
 - `ServiceType`:
-  [WirelessGatewayServiceType](./literals.md#wirelessgatewayservicetype)
+  [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
 - `ServiceEndpoint`: `str`
 - `ServerTrust`: `str`
 
@@ -315,7 +316,7 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceResponseTypeDef
 
 Optional fields:
 
-- `Type`: [WirelessDeviceType](./literals.md#wirelessdevicetype)
+- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 - `Name`: `str`
 - `Description`: `str`
 - `DestinationName`: `str`
@@ -389,7 +390,8 @@ Optional fields:
 
 - `WirelessGatewayId`: `str`
 - `LastUplinkReceivedAt`: `str`
-- `ConnectionStatus`: [ConnectionStatus](./literals.md#connectionstatus)
+- `ConnectionStatus`:
+  [ConnectionStatusType](./literals.md#connectionstatustype)
 
 ## GetWirelessGatewayTaskDefinitionResponseTypeDef
 
@@ -417,7 +419,8 @@ Optional fields:
 - `WirelessGatewayTaskDefinitionId`: `str`
 - `LastUplinkReceivedAt`: `str`
 - `TaskCreatedAt`: `str`
-- `Status`: [WirelessGatewayTaskStatus](./literals.md#wirelessgatewaytaskstatus)
+- `Status`:
+  [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
 
 ## ListDestinationsResponseTypeDef
 
@@ -568,10 +571,10 @@ Optional fields:
 - `DevEui`: `str`
 - `DeviceProfileId`: `str`
 - `ServiceProfileId`: `str`
-- `OtaaV1_1`: [OtaaV1_1TypeDef](./type_defs.md#otaav1-1typedef)
-- `OtaaV1_0_x`: [OtaaV1_0_xTypeDef](./type_defs.md#otaav1-0-xtypedef)
-- `AbpV1_1`: [AbpV1_1TypeDef](./type_defs.md#abpv1-1typedef)
-- `AbpV1_0_x`: [AbpV1_0_xTypeDef](./type_defs.md#abpv1-0-xtypedef)
+- `OtaaV1_1`: [OtaaV1_1TypeDef](./type_defs.md#otaav1_1typedef)
+- `OtaaV1_0_x`: [OtaaV1_0_xTypeDef](./type_defs.md#otaav1_0_xtypedef)
+- `AbpV1_1`: [AbpV1_1TypeDef](./type_defs.md#abpv1_1typedef)
+- `AbpV1_0_x`: [AbpV1_0_xTypeDef](./type_defs.md#abpv1_0_xtypedef)
 
 ## LoRaWANGatewayCurrentVersionTypeDef
 
@@ -820,9 +823,9 @@ from mypy_boto3_iotwireless.type_defs import SidewalkDeviceMetadataTypeDef
 Optional fields:
 
 - `Rssi`: `int`
-- `BatteryLevel`: [BatteryLevel](./literals.md#batterylevel)
-- `Event`: [Event](./literals.md#event)
-- `DeviceState`: [DeviceState](./literals.md#devicestate)
+- `BatteryLevel`: [BatteryLevelType](./literals.md#batteryleveltype)
+- `Event`: [EventType](./literals.md#eventtype)
+- `DeviceState`: [DeviceStateType](./literals.md#devicestatetype)
 
 ## SidewalkDeviceTypeDef
 
@@ -860,7 +863,7 @@ from mypy_boto3_iotwireless.type_defs import SidewalkSendDataToDeviceTypeDef
 Optional fields:
 
 - `Seq`: `int`
-- `MessageType`: [MessageType](./literals.md#messagetype)
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 
 ## SidewalkUpdateAccountTypeDef
 
@@ -929,11 +932,12 @@ Optional fields:
 
 - `Arn`: `str`
 - `Id`: `str`
-- `Type`: [WirelessDeviceType](./literals.md#wirelessdevicetype)
+- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 - `Name`: `str`
 - `DestinationName`: `str`
 - `LastUplinkReceivedAt`: `str`
-- `LoRaWAN`: [LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef)
+- `LoRaWAN`:
+  [LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef)
 - `Sidewalk`:
   [SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > ApplicationDiscoveryService
 
 Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
 [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
@@ -30,51 +30,51 @@ Can be used directly:
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
 ```
 
-ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_configuration_items_to_application](./client.md#associate-configuration-items-to-application)
-- [batch_delete_import_data](./client.md#batch-delete-import-data)
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [create_tags](./client.md#create-tags)
-- [delete_applications](./client.md#delete-applications)
-- [delete_tags](./client.md#delete-tags)
-- [describe_agents](./client.md#describe-agents)
-- [describe_configurations](./client.md#describe-configurations)
-- [describe_continuous_exports](./client.md#describe-continuous-exports)
-- [describe_export_configurations](./client.md#describe-export-configurations)
-- [describe_export_tasks](./client.md#describe-export-tasks)
-- [describe_import_tasks](./client.md#describe-import-tasks)
-- [describe_tags](./client.md#describe-tags)
-- [disassociate_configuration_items_from_application](./client.md#disassociate-configuration-items-from-application)
-- [export_configurations](./client.md#export-configurations)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_discovery_summary](./client.md#get-discovery-summary)
-- [get_paginator](./client.md#get-paginator)
-- [list_configurations](./client.md#list-configurations)
-- [list_server_neighbors](./client.md#list-server-neighbors)
-- [start_continuous_export](./client.md#start-continuous-export)
-- [start_data_collection_by_agent_ids](./client.md#start-data-collection-by-agent-ids)
-- [start_export_task](./client.md#start-export-task)
-- [start_import_task](./client.md#start-import-task)
-- [stop_continuous_export](./client.md#stop-continuous-export)
-- [stop_data_collection_by_agent_ids](./client.md#stop-data-collection-by-agent-ids)
-- [update_application](./client.md#update-application)
+- [associate_configuration_items_to_application](./client.md#associate_configuration_items_to_application)
+- [batch_delete_import_data](./client.md#batch_delete_import_data)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [create_tags](./client.md#create_tags)
+- [delete_applications](./client.md#delete_applications)
+- [delete_tags](./client.md#delete_tags)
+- [describe_agents](./client.md#describe_agents)
+- [describe_configurations](./client.md#describe_configurations)
+- [describe_continuous_exports](./client.md#describe_continuous_exports)
+- [describe_export_configurations](./client.md#describe_export_configurations)
+- [describe_export_tasks](./client.md#describe_export_tasks)
+- [describe_import_tasks](./client.md#describe_import_tasks)
+- [describe_tags](./client.md#describe_tags)
+- [disassociate_configuration_items_from_application](./client.md#disassociate_configuration_items_from_application)
+- [export_configurations](./client.md#export_configurations)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_discovery_summary](./client.md#get_discovery_summary)
+- [get_paginator](./client.md#get_paginator)
+- [list_configurations](./client.md#list_configurations)
+- [list_server_neighbors](./client.md#list_server_neighbors)
+- [start_continuous_export](./client.md#start_continuous_export)
+- [start_data_collection_by_agent_ids](./client.md#start_data_collection_by_agent_ids)
+- [start_export_task](./client.md#start_export_task)
+- [start_import_task](./client.md#start_import_task)
+- [stop_continuous_export](./client.md#stop_continuous_export)
+- [stop_data_collection_by_agent_ids](./client.md#stop_data_collection_by_agent_ids)
+- [update_application](./client.md#update_application)
 
 ### Exceptions
 
-- [AuthorizationErrorException](./client.md#authorizationerrorexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictErrorException](./client.md#conflicterrorexception)
-- [HomeRegionNotSetException](./client.md#homeregionnotsetexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServerInternalErrorException](./client.md#serverinternalerrorexception)
+ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
+
+- AuthorizationErrorException
+- ClientError
+- ConflictErrorException
+- HomeRegionNotSetException
+- InvalidParameterException
+- InvalidParameterValueException
+- OperationNotPermittedException
+- ResourceInUseException
+- ResourceNotFoundException
+- ServerInternalErrorException
 
 ## Paginators
 
@@ -101,25 +101,25 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.literals import AgentStatus, ...
+from mypy_boto3_discovery.literals import AgentStatusType, ...
 ```
 
-- [AgentStatus](./literals.md#agentstatus)
-- [BatchDeleteImportDataErrorCode](./literals.md#batchdeleteimportdataerrorcode)
-- [ConfigurationItemType](./literals.md#configurationitemtype)
-- [ContinuousExportStatus](./literals.md#continuousexportstatus)
-- [DataSource](./literals.md#datasource)
+- [AgentStatusType](./literals.md#agentstatustype)
+- [BatchDeleteImportDataErrorCodeType](./literals.md#batchdeleteimportdataerrorcodetype)
+- [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
+- [ContinuousExportStatusType](./literals.md#continuousexportstatustype)
+- [DataSourceType](./literals.md#datasourcetype)
 - [DescribeAgentsPaginatorName](./literals.md#describeagentspaginatorname)
 - [DescribeContinuousExportsPaginatorName](./literals.md#describecontinuousexportspaginatorname)
 - [DescribeExportConfigurationsPaginatorName](./literals.md#describeexportconfigurationspaginatorname)
 - [DescribeExportTasksPaginatorName](./literals.md#describeexporttaskspaginatorname)
 - [DescribeTagsPaginatorName](./literals.md#describetagspaginatorname)
-- [ExportDataFormat](./literals.md#exportdataformat)
-- [ExportStatus](./literals.md#exportstatus)
-- [ImportStatus](./literals.md#importstatus)
-- [ImportTaskFilterName](./literals.md#importtaskfiltername)
+- [ExportDataFormatType](./literals.md#exportdataformattype)
+- [ExportStatusType](./literals.md#exportstatustype)
+- [ImportStatusType](./literals.md#importstatustype)
+- [ImportTaskFilterNameType](./literals.md#importtaskfilternametype)
 - [ListConfigurationsPaginatorName](./literals.md#listconfigurationspaginatorname)
-- [orderString](./literals.md#orderstring)
+- [orderStringType](./literals.md#orderstringtype)
 
 ## Typed dictionaries
 

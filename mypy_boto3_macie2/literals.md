@@ -3,64 +3,64 @@
 > [Index](..) > [Macie2](.) > Literals
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Literals for boto3 Macie2 module](#literals-for-boto3-macie2-module)
-  - [AdminStatus](#adminstatus)
-  - [AllowsUnencryptedObjectUploads](#allowsunencryptedobjectuploads)
-  - [Currency](#currency)
-  - [DayOfWeek](#dayofweek)
+  - [AdminStatusType](#adminstatustype)
+  - [AllowsUnencryptedObjectUploadsType](#allowsunencryptedobjectuploadstype)
+  - [CurrencyType](#currencytype)
+  - [DayOfWeekType](#dayofweektype)
   - [DescribeBucketsPaginatorName](#describebucketspaginatorname)
-  - [EffectivePermission](#effectivepermission)
-  - [EncryptionType](#encryptiontype)
-  - [ErrorCode](#errorcode)
-  - [FindingActionType](#findingactiontype)
-  - [FindingCategory](#findingcategory)
-  - [FindingPublishingFrequency](#findingpublishingfrequency)
-  - [FindingStatisticsSortAttributeName](#findingstatisticssortattributename)
-  - [FindingType](#findingtype)
-  - [FindingsFilterAction](#findingsfilteraction)
+  - [EffectivePermissionType](#effectivepermissiontype)
+  - [EncryptionTypeType](#encryptiontypetype)
+  - [ErrorCodeType](#errorcodetype)
+  - [FindingActionTypeType](#findingactiontypetype)
+  - [FindingCategoryType](#findingcategorytype)
+  - [FindingPublishingFrequencyType](#findingpublishingfrequencytype)
+  - [FindingStatisticsSortAttributeNameType](#findingstatisticssortattributenametype)
+  - [FindingTypeType](#findingtypetype)
+  - [FindingsFilterActionType](#findingsfilteractiontype)
   - [GetUsageStatisticsPaginatorName](#getusagestatisticspaginatorname)
-  - [GroupBy](#groupby)
-  - [IsDefinedInJob](#isdefinedinjob)
-  - [IsMonitoredByJob](#ismonitoredbyjob)
-  - [JobComparator](#jobcomparator)
-  - [JobStatus](#jobstatus)
-  - [JobType](#jobtype)
-  - [LastRunErrorStatusCode](#lastrunerrorstatuscode)
+  - [GroupByType](#groupbytype)
+  - [IsDefinedInJobType](#isdefinedinjobtype)
+  - [IsMonitoredByJobType](#ismonitoredbyjobtype)
+  - [JobComparatorType](#jobcomparatortype)
+  - [JobStatusType](#jobstatustype)
+  - [JobTypeType](#jobtypetype)
+  - [LastRunErrorStatusCodeType](#lastrunerrorstatuscodetype)
   - [ListClassificationJobsPaginatorName](#listclassificationjobspaginatorname)
   - [ListCustomDataIdentifiersPaginatorName](#listcustomdataidentifierspaginatorname)
   - [ListFindingsFiltersPaginatorName](#listfindingsfilterspaginatorname)
   - [ListFindingsPaginatorName](#listfindingspaginatorname)
   - [ListInvitationsPaginatorName](#listinvitationspaginatorname)
-  - [ListJobsFilterKey](#listjobsfilterkey)
-  - [ListJobsSortAttributeName](#listjobssortattributename)
+  - [ListJobsFilterKeyType](#listjobsfilterkeytype)
+  - [ListJobsSortAttributeNameType](#listjobssortattributenametype)
   - [ListMembersPaginatorName](#listmemberspaginatorname)
   - [ListOrganizationAdminAccountsPaginatorName](#listorganizationadminaccountspaginatorname)
-  - [MacieStatus](#maciestatus)
-  - [OrderBy](#orderby)
-  - [RelationshipStatus](#relationshipstatus)
-  - [ScopeFilterKey](#scopefilterkey)
-  - [SensitiveDataItemCategory](#sensitivedataitemcategory)
-  - [SeverityDescription](#severitydescription)
-  - [SharedAccess](#sharedaccess)
-  - [StorageClass](#storageclass)
-  - [TagTarget](#tagtarget)
-  - [TimeRange](#timerange)
+  - [MacieStatusType](#maciestatustype)
+  - [OrderByType](#orderbytype)
+  - [RelationshipStatusType](#relationshipstatustype)
+  - [ScopeFilterKeyType](#scopefilterkeytype)
+  - [SensitiveDataItemCategoryType](#sensitivedataitemcategorytype)
+  - [SeverityDescriptionType](#severitydescriptiontype)
+  - [SharedAccessType](#sharedaccesstype)
+  - [StorageClassType](#storageclasstype)
+  - [TagTargetType](#tagtargettype)
+  - [TimeRangeType](#timerangetype)
   - [TypeType](#typetype)
-  - [Unit](#unit)
-  - [UsageStatisticsFilterComparator](#usagestatisticsfiltercomparator)
-  - [UsageStatisticsFilterKey](#usagestatisticsfilterkey)
-  - [UsageStatisticsSortKey](#usagestatisticssortkey)
-  - [UsageType](#usagetype)
-  - [UserIdentityType](#useridentitytype)
+  - [UnitType](#unittype)
+  - [UsageStatisticsFilterComparatorType](#usagestatisticsfiltercomparatortype)
+  - [UsageStatisticsFilterKeyType](#usagestatisticsfilterkeytype)
+  - [UsageStatisticsSortKeyType](#usagestatisticssortkeytype)
+  - [UsageTypeType](#usagetypetype)
+  - [UserIdentityTypeType](#useridentitytypetype)
 
-## AdminStatus
+## AdminStatusType
 
 ```python
-from mypy_boto3_macie2.literals import AdminStatus
+from mypy_boto3_macie2.literals import AdminStatusType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `DISABLING_IN_PROGRESS`
 - `ENABLED`
 
-## AllowsUnencryptedObjectUploads
+## AllowsUnencryptedObjectUploadsType
 
 ```python
-from mypy_boto3_macie2.literals import AllowsUnencryptedObjectUploads
+from mypy_boto3_macie2.literals import AllowsUnencryptedObjectUploadsType
 ```
 
 Values:
@@ -80,20 +80,20 @@ Values:
 - `TRUE`
 - `UNKNOWN`
 
-## Currency
+## CurrencyType
 
 ```python
-from mypy_boto3_macie2.literals import Currency
+from mypy_boto3_macie2.literals import CurrencyType
 ```
 
 Values:
 
 - `USD`
 
-## DayOfWeek
+## DayOfWeekType
 
 ```python
-from mypy_boto3_macie2.literals import DayOfWeek
+from mypy_boto3_macie2.literals import DayOfWeekType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 
 - `describe_buckets`
 
-## EffectivePermission
+## EffectivePermissionType
 
 ```python
-from mypy_boto3_macie2.literals import EffectivePermission
+from mypy_boto3_macie2.literals import EffectivePermissionType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 - `PUBLIC`
 - `UNKNOWN`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_macie2.literals import EncryptionType
+from mypy_boto3_macie2.literals import EncryptionTypeType
 ```
 
 Values:
@@ -141,10 +141,10 @@ Values:
 - `NONE`
 - `UNKNOWN`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_macie2.literals import ErrorCode
+from mypy_boto3_macie2.literals import ErrorCodeType
 ```
 
 Values:
@@ -152,20 +152,20 @@ Values:
 - `ClientError`
 - `InternalError`
 
-## FindingActionType
+## FindingActionTypeType
 
 ```python
-from mypy_boto3_macie2.literals import FindingActionType
+from mypy_boto3_macie2.literals import FindingActionTypeType
 ```
 
 Values:
 
 - `AWS_API_CALL`
 
-## FindingCategory
+## FindingCategoryType
 
 ```python
-from mypy_boto3_macie2.literals import FindingCategory
+from mypy_boto3_macie2.literals import FindingCategoryType
 ```
 
 Values:
@@ -173,10 +173,10 @@ Values:
 - `CLASSIFICATION`
 - `POLICY`
 
-## FindingPublishingFrequency
+## FindingPublishingFrequencyType
 
 ```python
-from mypy_boto3_macie2.literals import FindingPublishingFrequency
+from mypy_boto3_macie2.literals import FindingPublishingFrequencyType
 ```
 
 Values:
@@ -185,10 +185,10 @@ Values:
 - `ONE_HOUR`
 - `SIX_HOURS`
 
-## FindingStatisticsSortAttributeName
+## FindingStatisticsSortAttributeNameType
 
 ```python
-from mypy_boto3_macie2.literals import FindingStatisticsSortAttributeName
+from mypy_boto3_macie2.literals import FindingStatisticsSortAttributeNameType
 ```
 
 Values:
@@ -196,10 +196,10 @@ Values:
 - `count`
 - `groupKey`
 
-## FindingType
+## FindingTypeType
 
 ```python
-from mypy_boto3_macie2.literals import FindingType
+from mypy_boto3_macie2.literals import FindingTypeType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 - `SensitiveData:S3Object/Multiple`
 - `SensitiveData:S3Object/Personal`
 
-## FindingsFilterAction
+## FindingsFilterActionType
 
 ```python
-from mypy_boto3_macie2.literals import FindingsFilterAction
+from mypy_boto3_macie2.literals import FindingsFilterActionType
 ```
 
 Values:
@@ -236,10 +236,10 @@ Values:
 
 - `get_usage_statistics`
 
-## GroupBy
+## GroupByType
 
 ```python
-from mypy_boto3_macie2.literals import GroupBy
+from mypy_boto3_macie2.literals import GroupByType
 ```
 
 Values:
@@ -249,10 +249,10 @@ Values:
 - `severity.description`
 - `type`
 
-## IsDefinedInJob
+## IsDefinedInJobType
 
 ```python
-from mypy_boto3_macie2.literals import IsDefinedInJob
+from mypy_boto3_macie2.literals import IsDefinedInJobType
 ```
 
 Values:
@@ -261,10 +261,10 @@ Values:
 - `TRUE`
 - `UNKNOWN`
 
-## IsMonitoredByJob
+## IsMonitoredByJobType
 
 ```python
-from mypy_boto3_macie2.literals import IsMonitoredByJob
+from mypy_boto3_macie2.literals import IsMonitoredByJobType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `TRUE`
 - `UNKNOWN`
 
-## JobComparator
+## JobComparatorType
 
 ```python
-from mypy_boto3_macie2.literals import JobComparator
+from mypy_boto3_macie2.literals import JobComparatorType
 ```
 
 Values:
@@ -290,10 +290,10 @@ Values:
 - `NE`
 - `STARTS_WITH`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_macie2.literals import JobStatus
+from mypy_boto3_macie2.literals import JobStatusType
 ```
 
 Values:
@@ -305,10 +305,10 @@ Values:
 - `RUNNING`
 - `USER_PAUSED`
 
-## JobType
+## JobTypeType
 
 ```python
-from mypy_boto3_macie2.literals import JobType
+from mypy_boto3_macie2.literals import JobTypeType
 ```
 
 Values:
@@ -316,10 +316,10 @@ Values:
 - `ONE_TIME`
 - `SCHEDULED`
 
-## LastRunErrorStatusCode
+## LastRunErrorStatusCodeType
 
 ```python
-from mypy_boto3_macie2.literals import LastRunErrorStatusCode
+from mypy_boto3_macie2.literals import LastRunErrorStatusCodeType
 ```
 
 Values:
@@ -377,10 +377,10 @@ Values:
 
 - `list_invitations`
 
-## ListJobsFilterKey
+## ListJobsFilterKeyType
 
 ```python
-from mypy_boto3_macie2.literals import ListJobsFilterKey
+from mypy_boto3_macie2.literals import ListJobsFilterKeyType
 ```
 
 Values:
@@ -390,10 +390,10 @@ Values:
 - `jobType`
 - `name`
 
-## ListJobsSortAttributeName
+## ListJobsSortAttributeNameType
 
 ```python
-from mypy_boto3_macie2.literals import ListJobsSortAttributeName
+from mypy_boto3_macie2.literals import ListJobsSortAttributeNameType
 ```
 
 Values:
@@ -423,10 +423,10 @@ Values:
 
 - `list_organization_admin_accounts`
 
-## MacieStatus
+## MacieStatusType
 
 ```python
-from mypy_boto3_macie2.literals import MacieStatus
+from mypy_boto3_macie2.literals import MacieStatusType
 ```
 
 Values:
@@ -434,10 +434,10 @@ Values:
 - `ENABLED`
 - `PAUSED`
 
-## OrderBy
+## OrderByType
 
 ```python
-from mypy_boto3_macie2.literals import OrderBy
+from mypy_boto3_macie2.literals import OrderByType
 ```
 
 Values:
@@ -445,10 +445,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## RelationshipStatus
+## RelationshipStatusType
 
 ```python
-from mypy_boto3_macie2.literals import RelationshipStatus
+from mypy_boto3_macie2.literals import RelationshipStatusType
 ```
 
 Values:
@@ -464,10 +464,10 @@ Values:
 - `Removed`
 - `Resigned`
 
-## ScopeFilterKey
+## ScopeFilterKeyType
 
 ```python
-from mypy_boto3_macie2.literals import ScopeFilterKey
+from mypy_boto3_macie2.literals import ScopeFilterKeyType
 ```
 
 Values:
@@ -479,10 +479,10 @@ Values:
 - `OBJECT_SIZE`
 - `TAG`
 
-## SensitiveDataItemCategory
+## SensitiveDataItemCategoryType
 
 ```python
-from mypy_boto3_macie2.literals import SensitiveDataItemCategory
+from mypy_boto3_macie2.literals import SensitiveDataItemCategoryType
 ```
 
 Values:
@@ -492,10 +492,10 @@ Values:
 - `FINANCIAL_INFORMATION`
 - `PERSONAL_INFORMATION`
 
-## SeverityDescription
+## SeverityDescriptionType
 
 ```python
-from mypy_boto3_macie2.literals import SeverityDescription
+from mypy_boto3_macie2.literals import SeverityDescriptionType
 ```
 
 Values:
@@ -504,10 +504,10 @@ Values:
 - `Low`
 - `Medium`
 
-## SharedAccess
+## SharedAccessType
 
 ```python
-from mypy_boto3_macie2.literals import SharedAccess
+from mypy_boto3_macie2.literals import SharedAccessType
 ```
 
 Values:
@@ -517,10 +517,10 @@ Values:
 - `NOT_SHARED`
 - `UNKNOWN`
 
-## StorageClass
+## StorageClassType
 
 ```python
-from mypy_boto3_macie2.literals import StorageClass
+from mypy_boto3_macie2.literals import StorageClassType
 ```
 
 Values:
@@ -533,20 +533,20 @@ Values:
 - `STANDARD`
 - `STANDARD_IA`
 
-## TagTarget
+## TagTargetType
 
 ```python
-from mypy_boto3_macie2.literals import TagTarget
+from mypy_boto3_macie2.literals import TagTargetType
 ```
 
 Values:
 
 - `S3_OBJECT`
 
-## TimeRange
+## TimeRangeType
 
 ```python
-from mypy_boto3_macie2.literals import TimeRange
+from mypy_boto3_macie2.literals import TimeRangeType
 ```
 
 Values:
@@ -566,20 +566,20 @@ Values:
 - `aws:kms`
 - `NONE`
 
-## Unit
+## UnitType
 
 ```python
-from mypy_boto3_macie2.literals import Unit
+from mypy_boto3_macie2.literals import UnitType
 ```
 
 Values:
 
 - `TERABYTES`
 
-## UsageStatisticsFilterComparator
+## UsageStatisticsFilterComparatorType
 
 ```python
-from mypy_boto3_macie2.literals import UsageStatisticsFilterComparator
+from mypy_boto3_macie2.literals import UsageStatisticsFilterComparatorType
 ```
 
 Values:
@@ -592,10 +592,10 @@ Values:
 - `LTE`
 - `NE`
 
-## UsageStatisticsFilterKey
+## UsageStatisticsFilterKeyType
 
 ```python
-from mypy_boto3_macie2.literals import UsageStatisticsFilterKey
+from mypy_boto3_macie2.literals import UsageStatisticsFilterKeyType
 ```
 
 Values:
@@ -605,10 +605,10 @@ Values:
 - `serviceLimit`
 - `total`
 
-## UsageStatisticsSortKey
+## UsageStatisticsSortKeyType
 
 ```python
-from mypy_boto3_macie2.literals import UsageStatisticsSortKey
+from mypy_boto3_macie2.literals import UsageStatisticsSortKeyType
 ```
 
 Values:
@@ -618,10 +618,10 @@ Values:
 - `serviceLimitValue`
 - `total`
 
-## UsageType
+## UsageTypeType
 
 ```python
-from mypy_boto3_macie2.literals import UsageType
+from mypy_boto3_macie2.literals import UsageTypeType
 ```
 
 Values:
@@ -629,10 +629,10 @@ Values:
 - `DATA_INVENTORY_EVALUATION`
 - `SENSITIVE_DATA_DISCOVERY`
 
-## UserIdentityType
+## UserIdentityTypeType
 
 ```python
-from mypy_boto3_macie2.literals import UserIdentityType
+from mypy_boto3_macie2.literals import UserIdentityTypeType
 ```
 
 Values:

@@ -3,36 +3,36 @@
 > [Index](..) > [QuickSight](.) > Literals
 
 Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
 [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 - [Literals for boto3 QuickSight module](#literals-for-boto3-quicksight-module)
-  - [AnalysisErrorType](#analysiserrortype)
-  - [AnalysisFilterAttribute](#analysisfilterattribute)
-  - [AssignmentStatus](#assignmentstatus)
-  - [ColumnDataType](#columndatatype)
-  - [DashboardBehavior](#dashboardbehavior)
-  - [DashboardErrorType](#dashboarderrortype)
-  - [DashboardFilterAttribute](#dashboardfilterattribute)
-  - [DashboardUIState](#dashboarduistate)
-  - [DataSetImportMode](#datasetimportmode)
-  - [DataSourceErrorInfoType](#datasourceerrorinfotype)
-  - [DataSourceType](#datasourcetype)
-  - [Edition](#edition)
-  - [EmbeddingIdentityType](#embeddingidentitytype)
-  - [FileFormat](#fileformat)
-  - [FilterOperator](#filteroperator)
-  - [GeoSpatialCountryCode](#geospatialcountrycode)
-  - [GeoSpatialDataRole](#geospatialdatarole)
-  - [IdentityStore](#identitystore)
-  - [IdentityType](#identitytype)
-  - [IngestionErrorType](#ingestionerrortype)
-  - [IngestionRequestSource](#ingestionrequestsource)
-  - [IngestionRequestType](#ingestionrequesttype)
-  - [IngestionStatus](#ingestionstatus)
-  - [InputColumnDataType](#inputcolumndatatype)
-  - [JoinType](#jointype)
+  - [AnalysisErrorTypeType](#analysiserrortypetype)
+  - [AnalysisFilterAttributeType](#analysisfilterattributetype)
+  - [AssignmentStatusType](#assignmentstatustype)
+  - [ColumnDataTypeType](#columndatatypetype)
+  - [DashboardBehaviorType](#dashboardbehaviortype)
+  - [DashboardErrorTypeType](#dashboarderrortypetype)
+  - [DashboardFilterAttributeType](#dashboardfilterattributetype)
+  - [DashboardUIStateType](#dashboarduistatetype)
+  - [DataSetImportModeType](#datasetimportmodetype)
+  - [DataSourceErrorInfoTypeType](#datasourceerrorinfotypetype)
+  - [DataSourceTypeType](#datasourcetypetype)
+  - [EditionType](#editiontype)
+  - [EmbeddingIdentityTypeType](#embeddingidentitytypetype)
+  - [FileFormatType](#fileformattype)
+  - [FilterOperatorType](#filteroperatortype)
+  - [GeoSpatialCountryCodeType](#geospatialcountrycodetype)
+  - [GeoSpatialDataRoleType](#geospatialdataroletype)
+  - [IdentityStoreType](#identitystoretype)
+  - [IdentityTypeType](#identitytypetype)
+  - [IngestionErrorTypeType](#ingestionerrortypetype)
+  - [IngestionRequestSourceType](#ingestionrequestsourcetype)
+  - [IngestionRequestTypeType](#ingestionrequesttypetype)
+  - [IngestionStatusType](#ingestionstatustype)
+  - [InputColumnDataTypeType](#inputcolumndatatypetype)
+  - [JoinTypeType](#jointypetype)
   - [ListAnalysesPaginatorName](#listanalysespaginatorname)
   - [ListDashboardVersionsPaginatorName](#listdashboardversionspaginatorname)
   - [ListDashboardsPaginatorName](#listdashboardspaginatorname)
@@ -45,22 +45,22 @@ type annotations stubs module
   - [ListTemplatesPaginatorName](#listtemplatespaginatorname)
   - [ListThemeVersionsPaginatorName](#listthemeversionspaginatorname)
   - [ListThemesPaginatorName](#listthemespaginatorname)
-  - [NamespaceErrorType](#namespaceerrortype)
-  - [NamespaceStatus](#namespacestatus)
-  - [ResourceStatus](#resourcestatus)
-  - [RowLevelPermissionPolicy](#rowlevelpermissionpolicy)
+  - [NamespaceErrorTypeType](#namespaceerrortypetype)
+  - [NamespaceStatusType](#namespacestatustype)
+  - [ResourceStatusType](#resourcestatustype)
+  - [RowLevelPermissionPolicyType](#rowlevelpermissionpolicytype)
   - [SearchAnalysesPaginatorName](#searchanalysespaginatorname)
   - [SearchDashboardsPaginatorName](#searchdashboardspaginatorname)
-  - [TemplateErrorType](#templateerrortype)
-  - [TextQualifier](#textqualifier)
-  - [ThemeErrorType](#themeerrortype)
-  - [ThemeType](#themetype)
-  - [UserRole](#userrole)
+  - [TemplateErrorTypeType](#templateerrortypetype)
+  - [TextQualifierType](#textqualifiertype)
+  - [ThemeErrorTypeType](#themeerrortypetype)
+  - [ThemeTypeType](#themetypetype)
+  - [UserRoleType](#userroletype)
 
-## AnalysisErrorType
+## AnalysisErrorTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import AnalysisErrorType
+from mypy_boto3_quicksight.literals import AnalysisErrorTypeType
 ```
 
 Values:
@@ -76,20 +76,20 @@ Values:
 - `PARAMETER_VALUE_INCOMPATIBLE`
 - `SOURCE_NOT_FOUND`
 
-## AnalysisFilterAttribute
+## AnalysisFilterAttributeType
 
 ```python
-from mypy_boto3_quicksight.literals import AnalysisFilterAttribute
+from mypy_boto3_quicksight.literals import AnalysisFilterAttributeType
 ```
 
 Values:
 
 - `QUICKSIGHT_USER`
 
-## AssignmentStatus
+## AssignmentStatusType
 
 ```python
-from mypy_boto3_quicksight.literals import AssignmentStatus
+from mypy_boto3_quicksight.literals import AssignmentStatusType
 ```
 
 Values:
@@ -98,10 +98,10 @@ Values:
 - `DRAFT`
 - `ENABLED`
 
-## ColumnDataType
+## ColumnDataTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import ColumnDataType
+from mypy_boto3_quicksight.literals import ColumnDataTypeType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `INTEGER`
 - `STRING`
 
-## DashboardBehavior
+## DashboardBehaviorType
 
 ```python
-from mypy_boto3_quicksight.literals import DashboardBehavior
+from mypy_boto3_quicksight.literals import DashboardBehaviorType
 ```
 
 Values:
@@ -122,10 +122,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## DashboardErrorType
+## DashboardErrorTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import DashboardErrorType
+from mypy_boto3_quicksight.literals import DashboardErrorTypeType
 ```
 
 Values:
@@ -141,20 +141,20 @@ Values:
 - `PARAMETER_VALUE_INCOMPATIBLE`
 - `SOURCE_NOT_FOUND`
 
-## DashboardFilterAttribute
+## DashboardFilterAttributeType
 
 ```python
-from mypy_boto3_quicksight.literals import DashboardFilterAttribute
+from mypy_boto3_quicksight.literals import DashboardFilterAttributeType
 ```
 
 Values:
 
 - `QUICKSIGHT_USER`
 
-## DashboardUIState
+## DashboardUIStateType
 
 ```python
-from mypy_boto3_quicksight.literals import DashboardUIState
+from mypy_boto3_quicksight.literals import DashboardUIStateType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `COLLAPSED`
 - `EXPANDED`
 
-## DataSetImportMode
+## DataSetImportModeType
 
 ```python
-from mypy_boto3_quicksight.literals import DataSetImportMode
+from mypy_boto3_quicksight.literals import DataSetImportModeType
 ```
 
 Values:
@@ -173,10 +173,10 @@ Values:
 - `DIRECT_QUERY`
 - `SPICE`
 
-## DataSourceErrorInfoType
+## DataSourceErrorInfoTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import DataSourceErrorInfoType
+from mypy_boto3_quicksight.literals import DataSourceErrorInfoTypeType
 ```
 
 Values:
@@ -190,10 +190,10 @@ Values:
 - `UNKNOWN`
 - `UNKNOWN_HOST`
 
-## DataSourceType
+## DataSourceTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import DataSourceType
+from mypy_boto3_quicksight.literals import DataSourceTypeType
 ```
 
 Values:
@@ -222,10 +222,10 @@ Values:
 - `TIMESTREAM`
 - `TWITTER`
 
-## Edition
+## EditionType
 
 ```python
-from mypy_boto3_quicksight.literals import Edition
+from mypy_boto3_quicksight.literals import EditionType
 ```
 
 Values:
@@ -233,10 +233,10 @@ Values:
 - `ENTERPRISE`
 - `STANDARD`
 
-## EmbeddingIdentityType
+## EmbeddingIdentityTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import EmbeddingIdentityType
+from mypy_boto3_quicksight.literals import EmbeddingIdentityTypeType
 ```
 
 Values:
@@ -245,10 +245,10 @@ Values:
 - `IAM`
 - `QUICKSIGHT`
 
-## FileFormat
+## FileFormatType
 
 ```python
-from mypy_boto3_quicksight.literals import FileFormat
+from mypy_boto3_quicksight.literals import FileFormatType
 ```
 
 Values:
@@ -260,30 +260,30 @@ Values:
 - `TSV`
 - `XLSX`
 
-## FilterOperator
+## FilterOperatorType
 
 ```python
-from mypy_boto3_quicksight.literals import FilterOperator
+from mypy_boto3_quicksight.literals import FilterOperatorType
 ```
 
 Values:
 
 - `StringEquals`
 
-## GeoSpatialCountryCode
+## GeoSpatialCountryCodeType
 
 ```python
-from mypy_boto3_quicksight.literals import GeoSpatialCountryCode
+from mypy_boto3_quicksight.literals import GeoSpatialCountryCodeType
 ```
 
 Values:
 
 - `US`
 
-## GeoSpatialDataRole
+## GeoSpatialDataRoleType
 
 ```python
-from mypy_boto3_quicksight.literals import GeoSpatialDataRole
+from mypy_boto3_quicksight.literals import GeoSpatialDataRoleType
 ```
 
 Values:
@@ -296,20 +296,20 @@ Values:
 - `POSTCODE`
 - `STATE`
 
-## IdentityStore
+## IdentityStoreType
 
 ```python
-from mypy_boto3_quicksight.literals import IdentityStore
+from mypy_boto3_quicksight.literals import IdentityStoreType
 ```
 
 Values:
 
 - `QUICKSIGHT`
 
-## IdentityType
+## IdentityTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import IdentityType
+from mypy_boto3_quicksight.literals import IdentityTypeType
 ```
 
 Values:
@@ -317,10 +317,10 @@ Values:
 - `IAM`
 - `QUICKSIGHT`
 
-## IngestionErrorType
+## IngestionErrorTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import IngestionErrorType
+from mypy_boto3_quicksight.literals import IngestionErrorTypeType
 ```
 
 Values:
@@ -366,10 +366,10 @@ Values:
 - `UNRESOLVABLE_HOST`
 - `UNROUTABLE_HOST`
 
-## IngestionRequestSource
+## IngestionRequestSourceType
 
 ```python
-from mypy_boto3_quicksight.literals import IngestionRequestSource
+from mypy_boto3_quicksight.literals import IngestionRequestSourceType
 ```
 
 Values:
@@ -377,10 +377,10 @@ Values:
 - `MANUAL`
 - `SCHEDULED`
 
-## IngestionRequestType
+## IngestionRequestTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import IngestionRequestType
+from mypy_boto3_quicksight.literals import IngestionRequestTypeType
 ```
 
 Values:
@@ -390,10 +390,10 @@ Values:
 - `INCREMENTAL_REFRESH`
 - `INITIAL_INGESTION`
 
-## IngestionStatus
+## IngestionStatusType
 
 ```python
-from mypy_boto3_quicksight.literals import IngestionStatus
+from mypy_boto3_quicksight.literals import IngestionStatusType
 ```
 
 Values:
@@ -405,10 +405,10 @@ Values:
 - `QUEUED`
 - `RUNNING`
 
-## InputColumnDataType
+## InputColumnDataTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import InputColumnDataType
+from mypy_boto3_quicksight.literals import InputColumnDataTypeType
 ```
 
 Values:
@@ -421,10 +421,10 @@ Values:
 - `JSON`
 - `STRING`
 
-## JoinType
+## JoinTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import JoinType
+from mypy_boto3_quicksight.literals import JoinTypeType
 ```
 
 Values:
@@ -554,10 +554,10 @@ Values:
 
 - `list_themes`
 
-## NamespaceErrorType
+## NamespaceErrorTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import NamespaceErrorType
+from mypy_boto3_quicksight.literals import NamespaceErrorTypeType
 ```
 
 Values:
@@ -565,10 +565,10 @@ Values:
 - `INTERNAL_SERVICE_ERROR`
 - `PERMISSION_DENIED`
 
-## NamespaceStatus
+## NamespaceStatusType
 
 ```python
-from mypy_boto3_quicksight.literals import NamespaceStatus
+from mypy_boto3_quicksight.literals import NamespaceStatusType
 ```
 
 Values:
@@ -579,10 +579,10 @@ Values:
 - `NON_RETRYABLE_FAILURE`
 - `RETRYABLE_FAILURE`
 
-## ResourceStatus
+## ResourceStatusType
 
 ```python
-from mypy_boto3_quicksight.literals import ResourceStatus
+from mypy_boto3_quicksight.literals import ResourceStatusType
 ```
 
 Values:
@@ -595,10 +595,10 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
-## RowLevelPermissionPolicy
+## RowLevelPermissionPolicyType
 
 ```python
-from mypy_boto3_quicksight.literals import RowLevelPermissionPolicy
+from mypy_boto3_quicksight.literals import RowLevelPermissionPolicyType
 ```
 
 Values:
@@ -626,10 +626,10 @@ Values:
 
 - `search_dashboards`
 
-## TemplateErrorType
+## TemplateErrorTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import TemplateErrorType
+from mypy_boto3_quicksight.literals import TemplateErrorTypeType
 ```
 
 Values:
@@ -639,10 +639,10 @@ Values:
 - `INTERNAL_FAILURE`
 - `SOURCE_NOT_FOUND`
 
-## TextQualifier
+## TextQualifierType
 
 ```python
-from mypy_boto3_quicksight.literals import TextQualifier
+from mypy_boto3_quicksight.literals import TextQualifierType
 ```
 
 Values:
@@ -650,20 +650,20 @@ Values:
 - `DOUBLE_QUOTE`
 - `SINGLE_QUOTE`
 
-## ThemeErrorType
+## ThemeErrorTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import ThemeErrorType
+from mypy_boto3_quicksight.literals import ThemeErrorTypeType
 ```
 
 Values:
 
 - `INTERNAL_FAILURE`
 
-## ThemeType
+## ThemeTypeType
 
 ```python
-from mypy_boto3_quicksight.literals import ThemeType
+from mypy_boto3_quicksight.literals import ThemeTypeType
 ```
 
 Values:
@@ -672,10 +672,10 @@ Values:
 - `CUSTOM`
 - `QUICKSIGHT`
 
-## UserRole
+## UserRoleType
 
 ```python
-from mypy_boto3_quicksight.literals import UserRole
+from mypy_boto3_quicksight.literals import UserRoleType
 ```
 
 Values:

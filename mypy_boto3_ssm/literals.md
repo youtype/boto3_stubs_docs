@@ -3,36 +3,36 @@
 > [Index](..) > [SSM](.) > Literals
 
 Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM)
 type annotations stubs module
 [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [Literals for boto3 SSM module](#literals-for-boto3-ssm-module)
-  - [AssociationComplianceSeverity](#associationcomplianceseverity)
-  - [AssociationExecutionFilterKey](#associationexecutionfilterkey)
-  - [AssociationExecutionTargetsFilterKey](#associationexecutiontargetsfilterkey)
-  - [AssociationFilterKey](#associationfilterkey)
-  - [AssociationFilterOperatorType](#associationfilteroperatortype)
-  - [AssociationStatusName](#associationstatusname)
-  - [AssociationSyncCompliance](#associationsynccompliance)
-  - [AttachmentHashType](#attachmenthashtype)
-  - [AttachmentsSourceKey](#attachmentssourcekey)
-  - [AutomationExecutionFilterKey](#automationexecutionfilterkey)
-  - [AutomationExecutionStatus](#automationexecutionstatus)
-  - [AutomationSubtype](#automationsubtype)
-  - [AutomationType](#automationtype)
-  - [CalendarState](#calendarstate)
+  - [AssociationComplianceSeverityType](#associationcomplianceseveritytype)
+  - [AssociationExecutionFilterKeyType](#associationexecutionfilterkeytype)
+  - [AssociationExecutionTargetsFilterKeyType](#associationexecutiontargetsfilterkeytype)
+  - [AssociationFilterKeyType](#associationfilterkeytype)
+  - [AssociationFilterOperatorTypeType](#associationfilteroperatortypetype)
+  - [AssociationStatusNameType](#associationstatusnametype)
+  - [AssociationSyncComplianceType](#associationsynccompliancetype)
+  - [AttachmentHashTypeType](#attachmenthashtypetype)
+  - [AttachmentsSourceKeyType](#attachmentssourcekeytype)
+  - [AutomationExecutionFilterKeyType](#automationexecutionfilterkeytype)
+  - [AutomationExecutionStatusType](#automationexecutionstatustype)
+  - [AutomationSubtypeType](#automationsubtypetype)
+  - [AutomationTypeType](#automationtypetype)
+  - [CalendarStateType](#calendarstatetype)
   - [CommandExecutedWaiterName](#commandexecutedwaitername)
-  - [CommandFilterKey](#commandfilterkey)
-  - [CommandInvocationStatus](#commandinvocationstatus)
-  - [CommandPluginStatus](#commandpluginstatus)
-  - [CommandStatus](#commandstatus)
-  - [ComplianceQueryOperatorType](#compliancequeryoperatortype)
-  - [ComplianceSeverity](#complianceseverity)
-  - [ComplianceStatus](#compliancestatus)
-  - [ComplianceUploadType](#complianceuploadtype)
-  - [ConnectionStatus](#connectionstatus)
-  - [DescribeActivationsFilterKeys](#describeactivationsfilterkeys)
+  - [CommandFilterKeyType](#commandfilterkeytype)
+  - [CommandInvocationStatusType](#commandinvocationstatustype)
+  - [CommandPluginStatusType](#commandpluginstatustype)
+  - [CommandStatusType](#commandstatustype)
+  - [ComplianceQueryOperatorTypeType](#compliancequeryoperatortypetype)
+  - [ComplianceSeverityType](#complianceseveritytype)
+  - [ComplianceStatusType](#compliancestatustype)
+  - [ComplianceUploadTypeType](#complianceuploadtypetype)
+  - [ConnectionStatusType](#connectionstatustype)
+  - [DescribeActivationsFilterKeysType](#describeactivationsfilterkeystype)
   - [DescribeActivationsPaginatorName](#describeactivationspaginatorname)
   - [DescribeAssociationExecutionTargetsPaginatorName](#describeassociationexecutiontargetspaginatorname)
   - [DescribeAssociationExecutionsPaginatorName](#describeassociationexecutionspaginatorname)
@@ -61,30 +61,30 @@ type annotations stubs module
   - [DescribePatchGroupsPaginatorName](#describepatchgroupspaginatorname)
   - [DescribePatchPropertiesPaginatorName](#describepatchpropertiespaginatorname)
   - [DescribeSessionsPaginatorName](#describesessionspaginatorname)
-  - [DocumentFilterKey](#documentfilterkey)
-  - [DocumentFormat](#documentformat)
-  - [DocumentHashType](#documenthashtype)
-  - [DocumentMetadataEnum](#documentmetadataenum)
-  - [DocumentParameterType](#documentparametertype)
-  - [DocumentPermissionType](#documentpermissiontype)
-  - [DocumentReviewAction](#documentreviewaction)
-  - [DocumentReviewCommentType](#documentreviewcommenttype)
-  - [DocumentStatus](#documentstatus)
-  - [DocumentType](#documenttype)
-  - [ExecutionMode](#executionmode)
-  - [Fault](#fault)
+  - [DocumentFilterKeyType](#documentfilterkeytype)
+  - [DocumentFormatType](#documentformattype)
+  - [DocumentHashTypeType](#documenthashtypetype)
+  - [DocumentMetadataEnumType](#documentmetadataenumtype)
+  - [DocumentParameterTypeType](#documentparametertypetype)
+  - [DocumentPermissionTypeType](#documentpermissiontypetype)
+  - [DocumentReviewActionType](#documentreviewactiontype)
+  - [DocumentReviewCommentTypeType](#documentreviewcommenttypetype)
+  - [DocumentStatusType](#documentstatustype)
+  - [DocumentTypeType](#documenttypetype)
+  - [ExecutionModeType](#executionmodetype)
+  - [FaultType](#faulttype)
   - [GetInventoryPaginatorName](#getinventorypaginatorname)
   - [GetInventorySchemaPaginatorName](#getinventoryschemapaginatorname)
   - [GetOpsSummaryPaginatorName](#getopssummarypaginatorname)
   - [GetParameterHistoryPaginatorName](#getparameterhistorypaginatorname)
   - [GetParametersByPathPaginatorName](#getparametersbypathpaginatorname)
-  - [InstanceInformationFilterKey](#instanceinformationfilterkey)
-  - [InstancePatchStateOperatorType](#instancepatchstateoperatortype)
-  - [InventoryAttributeDataType](#inventoryattributedatatype)
-  - [InventoryDeletionStatus](#inventorydeletionstatus)
-  - [InventoryQueryOperatorType](#inventoryqueryoperatortype)
-  - [InventorySchemaDeleteOption](#inventoryschemadeleteoption)
-  - [LastResourceDataSyncStatus](#lastresourcedatasyncstatus)
+  - [InstanceInformationFilterKeyType](#instanceinformationfilterkeytype)
+  - [InstancePatchStateOperatorTypeType](#instancepatchstateoperatortypetype)
+  - [InventoryAttributeDataTypeType](#inventoryattributedatatypetype)
+  - [InventoryDeletionStatusType](#inventorydeletionstatustype)
+  - [InventoryQueryOperatorTypeType](#inventoryqueryoperatortypetype)
+  - [InventorySchemaDeleteOptionType](#inventoryschemadeleteoptiontype)
+  - [LastResourceDataSyncStatusType](#lastresourcedatasyncstatustype)
   - [ListAssociationVersionsPaginatorName](#listassociationversionspaginatorname)
   - [ListAssociationsPaginatorName](#listassociationspaginatorname)
   - [ListCommandInvocationsPaginatorName](#listcommandinvocationspaginatorname)
@@ -98,50 +98,50 @@ type annotations stubs module
   - [ListOpsMetadataPaginatorName](#listopsmetadatapaginatorname)
   - [ListResourceComplianceSummariesPaginatorName](#listresourcecompliancesummariespaginatorname)
   - [ListResourceDataSyncPaginatorName](#listresourcedatasyncpaginatorname)
-  - [MaintenanceWindowExecutionStatus](#maintenancewindowexecutionstatus)
-  - [MaintenanceWindowResourceType](#maintenancewindowresourcetype)
-  - [MaintenanceWindowTaskType](#maintenancewindowtasktype)
-  - [NotificationEvent](#notificationevent)
-  - [NotificationType](#notificationtype)
-  - [OperatingSystem](#operatingsystem)
-  - [OpsFilterOperatorType](#opsfilteroperatortype)
-  - [OpsItemDataType](#opsitemdatatype)
-  - [OpsItemEventFilterKey](#opsitemeventfilterkey)
-  - [OpsItemEventFilterOperator](#opsitemeventfilteroperator)
-  - [OpsItemFilterKey](#opsitemfilterkey)
-  - [OpsItemFilterOperator](#opsitemfilteroperator)
-  - [OpsItemRelatedItemsFilterKey](#opsitemrelateditemsfilterkey)
-  - [OpsItemRelatedItemsFilterOperator](#opsitemrelateditemsfilteroperator)
-  - [OpsItemStatus](#opsitemstatus)
-  - [ParameterTier](#parametertier)
-  - [ParameterType](#parametertype)
-  - [ParametersFilterKey](#parametersfilterkey)
-  - [PatchAction](#patchaction)
-  - [PatchComplianceDataState](#patchcompliancedatastate)
-  - [PatchComplianceLevel](#patchcompliancelevel)
-  - [PatchDeploymentStatus](#patchdeploymentstatus)
-  - [PatchFilterKey](#patchfilterkey)
-  - [PatchOperationType](#patchoperationtype)
-  - [PatchProperty](#patchproperty)
-  - [PatchSet](#patchset)
-  - [PingStatus](#pingstatus)
-  - [PlatformType](#platformtype)
-  - [RebootOption](#rebootoption)
-  - [ResourceDataSyncS3Format](#resourcedatasyncs3format)
-  - [ResourceType](#resourcetype)
-  - [ResourceTypeForTagging](#resourcetypefortagging)
-  - [ReviewStatus](#reviewstatus)
-  - [SessionFilterKey](#sessionfilterkey)
-  - [SessionState](#sessionstate)
-  - [SessionStatus](#sessionstatus)
-  - [SignalType](#signaltype)
-  - [StepExecutionFilterKey](#stepexecutionfilterkey)
-  - [StopType](#stoptype)
+  - [MaintenanceWindowExecutionStatusType](#maintenancewindowexecutionstatustype)
+  - [MaintenanceWindowResourceTypeType](#maintenancewindowresourcetypetype)
+  - [MaintenanceWindowTaskTypeType](#maintenancewindowtasktypetype)
+  - [NotificationEventType](#notificationeventtype)
+  - [NotificationTypeType](#notificationtypetype)
+  - [OperatingSystemType](#operatingsystemtype)
+  - [OpsFilterOperatorTypeType](#opsfilteroperatortypetype)
+  - [OpsItemDataTypeType](#opsitemdatatypetype)
+  - [OpsItemEventFilterKeyType](#opsitemeventfilterkeytype)
+  - [OpsItemEventFilterOperatorType](#opsitemeventfilteroperatortype)
+  - [OpsItemFilterKeyType](#opsitemfilterkeytype)
+  - [OpsItemFilterOperatorType](#opsitemfilteroperatortype)
+  - [OpsItemRelatedItemsFilterKeyType](#opsitemrelateditemsfilterkeytype)
+  - [OpsItemRelatedItemsFilterOperatorType](#opsitemrelateditemsfilteroperatortype)
+  - [OpsItemStatusType](#opsitemstatustype)
+  - [ParameterTierType](#parametertiertype)
+  - [ParameterTypeType](#parametertypetype)
+  - [ParametersFilterKeyType](#parametersfilterkeytype)
+  - [PatchActionType](#patchactiontype)
+  - [PatchComplianceDataStateType](#patchcompliancedatastatetype)
+  - [PatchComplianceLevelType](#patchcomplianceleveltype)
+  - [PatchDeploymentStatusType](#patchdeploymentstatustype)
+  - [PatchFilterKeyType](#patchfilterkeytype)
+  - [PatchOperationTypeType](#patchoperationtypetype)
+  - [PatchPropertyType](#patchpropertytype)
+  - [PatchSetType](#patchsettype)
+  - [PingStatusType](#pingstatustype)
+  - [PlatformTypeType](#platformtypetype)
+  - [RebootOptionType](#rebootoptiontype)
+  - [ResourceDataSyncS3FormatType](#resourcedatasyncs3formattype)
+  - [ResourceTypeForTaggingType](#resourcetypefortaggingtype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [ReviewStatusType](#reviewstatustype)
+  - [SessionFilterKeyType](#sessionfilterkeytype)
+  - [SessionStateType](#sessionstatetype)
+  - [SessionStatusType](#sessionstatustype)
+  - [SignalTypeType](#signaltypetype)
+  - [StepExecutionFilterKeyType](#stepexecutionfilterkeytype)
+  - [StopTypeType](#stoptypetype)
 
-## AssociationComplianceSeverity
+## AssociationComplianceSeverityType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationComplianceSeverity
+from mypy_boto3_ssm.literals import AssociationComplianceSeverityType
 ```
 
 Values:
@@ -152,10 +152,10 @@ Values:
 - `MEDIUM`
 - `UNSPECIFIED`
 
-## AssociationExecutionFilterKey
+## AssociationExecutionFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationExecutionFilterKey
+from mypy_boto3_ssm.literals import AssociationExecutionFilterKeyType
 ```
 
 Values:
@@ -164,10 +164,10 @@ Values:
 - `ExecutionId`
 - `Status`
 
-## AssociationExecutionTargetsFilterKey
+## AssociationExecutionTargetsFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationExecutionTargetsFilterKey
+from mypy_boto3_ssm.literals import AssociationExecutionTargetsFilterKeyType
 ```
 
 Values:
@@ -176,10 +176,10 @@ Values:
 - `ResourceType`
 - `Status`
 
-## AssociationFilterKey
+## AssociationFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationFilterKey
+from mypy_boto3_ssm.literals import AssociationFilterKeyType
 ```
 
 Values:
@@ -193,10 +193,10 @@ Values:
 - `Name`
 - `ResourceGroupName`
 
-## AssociationFilterOperatorType
+## AssociationFilterOperatorTypeType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationFilterOperatorType
+from mypy_boto3_ssm.literals import AssociationFilterOperatorTypeType
 ```
 
 Values:
@@ -205,10 +205,10 @@ Values:
 - `GREATER_THAN`
 - `LESS_THAN`
 
-## AssociationStatusName
+## AssociationStatusNameType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationStatusName
+from mypy_boto3_ssm.literals import AssociationStatusNameType
 ```
 
 Values:
@@ -217,10 +217,10 @@ Values:
 - `Pending`
 - `Success`
 
-## AssociationSyncCompliance
+## AssociationSyncComplianceType
 
 ```python
-from mypy_boto3_ssm.literals import AssociationSyncCompliance
+from mypy_boto3_ssm.literals import AssociationSyncComplianceType
 ```
 
 Values:
@@ -228,20 +228,20 @@ Values:
 - `AUTO`
 - `MANUAL`
 
-## AttachmentHashType
+## AttachmentHashTypeType
 
 ```python
-from mypy_boto3_ssm.literals import AttachmentHashType
+from mypy_boto3_ssm.literals import AttachmentHashTypeType
 ```
 
 Values:
 
 - `Sha256`
 
-## AttachmentsSourceKey
+## AttachmentsSourceKeyType
 
 ```python
-from mypy_boto3_ssm.literals import AttachmentsSourceKey
+from mypy_boto3_ssm.literals import AttachmentsSourceKeyType
 ```
 
 Values:
@@ -250,10 +250,10 @@ Values:
 - `S3FileUrl`
 - `SourceUrl`
 
-## AutomationExecutionFilterKey
+## AutomationExecutionFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import AutomationExecutionFilterKey
+from mypy_boto3_ssm.literals import AutomationExecutionFilterKeyType
 ```
 
 Values:
@@ -271,10 +271,10 @@ Values:
 - `TagKey`
 - `TargetResourceGroup`
 
-## AutomationExecutionStatus
+## AutomationExecutionStatusType
 
 ```python
-from mypy_boto3_ssm.literals import AutomationExecutionStatus
+from mypy_boto3_ssm.literals import AutomationExecutionStatusType
 ```
 
 Values:
@@ -298,20 +298,20 @@ Values:
 - `TimedOut`
 - `Waiting`
 
-## AutomationSubtype
+## AutomationSubtypeType
 
 ```python
-from mypy_boto3_ssm.literals import AutomationSubtype
+from mypy_boto3_ssm.literals import AutomationSubtypeType
 ```
 
 Values:
 
 - `ChangeRequest`
 
-## AutomationType
+## AutomationTypeType
 
 ```python
-from mypy_boto3_ssm.literals import AutomationType
+from mypy_boto3_ssm.literals import AutomationTypeType
 ```
 
 Values:
@@ -319,10 +319,10 @@ Values:
 - `CrossAccount`
 - `Local`
 
-## CalendarState
+## CalendarStateType
 
 ```python
-from mypy_boto3_ssm.literals import CalendarState
+from mypy_boto3_ssm.literals import CalendarStateType
 ```
 
 Values:
@@ -340,10 +340,10 @@ Values:
 
 - `command_executed`
 
-## CommandFilterKey
+## CommandFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import CommandFilterKey
+from mypy_boto3_ssm.literals import CommandFilterKeyType
 ```
 
 Values:
@@ -354,10 +354,10 @@ Values:
 - `InvokedBefore`
 - `Status`
 
-## CommandInvocationStatus
+## CommandInvocationStatusType
 
 ```python
-from mypy_boto3_ssm.literals import CommandInvocationStatus
+from mypy_boto3_ssm.literals import CommandInvocationStatusType
 ```
 
 Values:
@@ -371,10 +371,10 @@ Values:
 - `Success`
 - `TimedOut`
 
-## CommandPluginStatus
+## CommandPluginStatusType
 
 ```python
-from mypy_boto3_ssm.literals import CommandPluginStatus
+from mypy_boto3_ssm.literals import CommandPluginStatusType
 ```
 
 Values:
@@ -386,10 +386,10 @@ Values:
 - `Success`
 - `TimedOut`
 
-## CommandStatus
+## CommandStatusType
 
 ```python
-from mypy_boto3_ssm.literals import CommandStatus
+from mypy_boto3_ssm.literals import CommandStatusType
 ```
 
 Values:
@@ -402,10 +402,10 @@ Values:
 - `Success`
 - `TimedOut`
 
-## ComplianceQueryOperatorType
+## ComplianceQueryOperatorTypeType
 
 ```python
-from mypy_boto3_ssm.literals import ComplianceQueryOperatorType
+from mypy_boto3_ssm.literals import ComplianceQueryOperatorTypeType
 ```
 
 Values:
@@ -416,10 +416,10 @@ Values:
 - `LESS_THAN`
 - `NOT_EQUAL`
 
-## ComplianceSeverity
+## ComplianceSeverityType
 
 ```python
-from mypy_boto3_ssm.literals import ComplianceSeverity
+from mypy_boto3_ssm.literals import ComplianceSeverityType
 ```
 
 Values:
@@ -431,10 +431,10 @@ Values:
 - `MEDIUM`
 - `UNSPECIFIED`
 
-## ComplianceStatus
+## ComplianceStatusType
 
 ```python
-from mypy_boto3_ssm.literals import ComplianceStatus
+from mypy_boto3_ssm.literals import ComplianceStatusType
 ```
 
 Values:
@@ -442,10 +442,10 @@ Values:
 - `COMPLIANT`
 - `NON_COMPLIANT`
 
-## ComplianceUploadType
+## ComplianceUploadTypeType
 
 ```python
-from mypy_boto3_ssm.literals import ComplianceUploadType
+from mypy_boto3_ssm.literals import ComplianceUploadTypeType
 ```
 
 Values:
@@ -453,10 +453,10 @@ Values:
 - `COMPLETE`
 - `PARTIAL`
 
-## ConnectionStatus
+## ConnectionStatusType
 
 ```python
-from mypy_boto3_ssm.literals import ConnectionStatus
+from mypy_boto3_ssm.literals import ConnectionStatusType
 ```
 
 Values:
@@ -464,10 +464,10 @@ Values:
 - `Connected`
 - `NotConnected`
 
-## DescribeActivationsFilterKeys
+## DescribeActivationsFilterKeysType
 
 ```python
-from mypy_boto3_ssm.literals import DescribeActivationsFilterKeys
+from mypy_boto3_ssm.literals import DescribeActivationsFilterKeysType
 ```
 
 Values:
@@ -756,10 +756,10 @@ Values:
 
 - `describe_sessions`
 
-## DocumentFilterKey
+## DocumentFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentFilterKey
+from mypy_boto3_ssm.literals import DocumentFilterKeyType
 ```
 
 Values:
@@ -769,10 +769,10 @@ Values:
 - `Owner`
 - `PlatformTypes`
 
-## DocumentFormat
+## DocumentFormatType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentFormat
+from mypy_boto3_ssm.literals import DocumentFormatType
 ```
 
 Values:
@@ -781,10 +781,10 @@ Values:
 - `TEXT`
 - `YAML`
 
-## DocumentHashType
+## DocumentHashTypeType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentHashType
+from mypy_boto3_ssm.literals import DocumentHashTypeType
 ```
 
 Values:
@@ -792,20 +792,20 @@ Values:
 - `Sha1`
 - `Sha256`
 
-## DocumentMetadataEnum
+## DocumentMetadataEnumType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentMetadataEnum
+from mypy_boto3_ssm.literals import DocumentMetadataEnumType
 ```
 
 Values:
 
 - `DocumentReviews`
 
-## DocumentParameterType
+## DocumentParameterTypeType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentParameterType
+from mypy_boto3_ssm.literals import DocumentParameterTypeType
 ```
 
 Values:
@@ -813,20 +813,20 @@ Values:
 - `String`
 - `StringList`
 
-## DocumentPermissionType
+## DocumentPermissionTypeType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentPermissionType
+from mypy_boto3_ssm.literals import DocumentPermissionTypeType
 ```
 
 Values:
 
 - `Share`
 
-## DocumentReviewAction
+## DocumentReviewActionType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentReviewAction
+from mypy_boto3_ssm.literals import DocumentReviewActionType
 ```
 
 Values:
@@ -836,20 +836,20 @@ Values:
 - `SendForReview`
 - `UpdateReview`
 
-## DocumentReviewCommentType
+## DocumentReviewCommentTypeType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentReviewCommentType
+from mypy_boto3_ssm.literals import DocumentReviewCommentTypeType
 ```
 
 Values:
 
 - `Comment`
 
-## DocumentStatus
+## DocumentStatusType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentStatus
+from mypy_boto3_ssm.literals import DocumentStatusType
 ```
 
 Values:
@@ -860,10 +860,10 @@ Values:
 - `Failed`
 - `Updating`
 
-## DocumentType
+## DocumentTypeType
 
 ```python
-from mypy_boto3_ssm.literals import DocumentType
+from mypy_boto3_ssm.literals import DocumentTypeType
 ```
 
 Values:
@@ -881,10 +881,10 @@ Values:
 - `ProblemAnalysisTemplate`
 - `Session`
 
-## ExecutionMode
+## ExecutionModeType
 
 ```python
-from mypy_boto3_ssm.literals import ExecutionMode
+from mypy_boto3_ssm.literals import ExecutionModeType
 ```
 
 Values:
@@ -892,10 +892,10 @@ Values:
 - `Auto`
 - `Interactive`
 
-## Fault
+## FaultType
 
 ```python
-from mypy_boto3_ssm.literals import Fault
+from mypy_boto3_ssm.literals import FaultType
 ```
 
 Values:
@@ -954,10 +954,10 @@ Values:
 
 - `get_parameters_by_path`
 
-## InstanceInformationFilterKey
+## InstanceInformationFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import InstanceInformationFilterKey
+from mypy_boto3_ssm.literals import InstanceInformationFilterKeyType
 ```
 
 Values:
@@ -971,10 +971,10 @@ Values:
 - `PlatformTypes`
 - `ResourceType`
 
-## InstancePatchStateOperatorType
+## InstancePatchStateOperatorTypeType
 
 ```python
-from mypy_boto3_ssm.literals import InstancePatchStateOperatorType
+from mypy_boto3_ssm.literals import InstancePatchStateOperatorTypeType
 ```
 
 Values:
@@ -984,10 +984,10 @@ Values:
 - `LessThan`
 - `NotEqual`
 
-## InventoryAttributeDataType
+## InventoryAttributeDataTypeType
 
 ```python
-from mypy_boto3_ssm.literals import InventoryAttributeDataType
+from mypy_boto3_ssm.literals import InventoryAttributeDataTypeType
 ```
 
 Values:
@@ -995,10 +995,10 @@ Values:
 - `number`
 - `string`
 
-## InventoryDeletionStatus
+## InventoryDeletionStatusType
 
 ```python
-from mypy_boto3_ssm.literals import InventoryDeletionStatus
+from mypy_boto3_ssm.literals import InventoryDeletionStatusType
 ```
 
 Values:
@@ -1006,10 +1006,10 @@ Values:
 - `Complete`
 - `InProgress`
 
-## InventoryQueryOperatorType
+## InventoryQueryOperatorTypeType
 
 ```python
-from mypy_boto3_ssm.literals import InventoryQueryOperatorType
+from mypy_boto3_ssm.literals import InventoryQueryOperatorTypeType
 ```
 
 Values:
@@ -1021,10 +1021,10 @@ Values:
 - `LessThan`
 - `NotEqual`
 
-## InventorySchemaDeleteOption
+## InventorySchemaDeleteOptionType
 
 ```python
-from mypy_boto3_ssm.literals import InventorySchemaDeleteOption
+from mypy_boto3_ssm.literals import InventorySchemaDeleteOptionType
 ```
 
 Values:
@@ -1032,10 +1032,10 @@ Values:
 - `DeleteSchema`
 - `DisableSchema`
 
-## LastResourceDataSyncStatus
+## LastResourceDataSyncStatusType
 
 ```python
-from mypy_boto3_ssm.literals import LastResourceDataSyncStatus
+from mypy_boto3_ssm.literals import LastResourceDataSyncStatusType
 ```
 
 Values:
@@ -1174,10 +1174,10 @@ Values:
 
 - `list_resource_data_sync`
 
-## MaintenanceWindowExecutionStatus
+## MaintenanceWindowExecutionStatusType
 
 ```python
-from mypy_boto3_ssm.literals import MaintenanceWindowExecutionStatus
+from mypy_boto3_ssm.literals import MaintenanceWindowExecutionStatusType
 ```
 
 Values:
@@ -1191,10 +1191,10 @@ Values:
 - `SUCCESS`
 - `TIMED_OUT`
 
-## MaintenanceWindowResourceType
+## MaintenanceWindowResourceTypeType
 
 ```python
-from mypy_boto3_ssm.literals import MaintenanceWindowResourceType
+from mypy_boto3_ssm.literals import MaintenanceWindowResourceTypeType
 ```
 
 Values:
@@ -1202,10 +1202,10 @@ Values:
 - `INSTANCE`
 - `RESOURCE_GROUP`
 
-## MaintenanceWindowTaskType
+## MaintenanceWindowTaskTypeType
 
 ```python
-from mypy_boto3_ssm.literals import MaintenanceWindowTaskType
+from mypy_boto3_ssm.literals import MaintenanceWindowTaskTypeType
 ```
 
 Values:
@@ -1215,10 +1215,10 @@ Values:
 - `RUN_COMMAND`
 - `STEP_FUNCTIONS`
 
-## NotificationEvent
+## NotificationEventType
 
 ```python
-from mypy_boto3_ssm.literals import NotificationEvent
+from mypy_boto3_ssm.literals import NotificationEventType
 ```
 
 Values:
@@ -1230,10 +1230,10 @@ Values:
 - `Success`
 - `TimedOut`
 
-## NotificationType
+## NotificationTypeType
 
 ```python
-from mypy_boto3_ssm.literals import NotificationType
+from mypy_boto3_ssm.literals import NotificationTypeType
 ```
 
 Values:
@@ -1241,10 +1241,10 @@ Values:
 - `Command`
 - `Invocation`
 
-## OperatingSystem
+## OperatingSystemType
 
 ```python
-from mypy_boto3_ssm.literals import OperatingSystem
+from mypy_boto3_ssm.literals import OperatingSystemType
 ```
 
 Values:
@@ -1260,10 +1260,10 @@ Values:
 - `UBUNTU`
 - `WINDOWS`
 
-## OpsFilterOperatorType
+## OpsFilterOperatorTypeType
 
 ```python
-from mypy_boto3_ssm.literals import OpsFilterOperatorType
+from mypy_boto3_ssm.literals import OpsFilterOperatorTypeType
 ```
 
 Values:
@@ -1275,10 +1275,10 @@ Values:
 - `LessThan`
 - `NotEqual`
 
-## OpsItemDataType
+## OpsItemDataTypeType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemDataType
+from mypy_boto3_ssm.literals import OpsItemDataTypeType
 ```
 
 Values:
@@ -1286,30 +1286,30 @@ Values:
 - `SearchableString`
 - `String`
 
-## OpsItemEventFilterKey
+## OpsItemEventFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemEventFilterKey
+from mypy_boto3_ssm.literals import OpsItemEventFilterKeyType
 ```
 
 Values:
 
 - `OpsItemId`
 
-## OpsItemEventFilterOperator
+## OpsItemEventFilterOperatorType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemEventFilterOperator
+from mypy_boto3_ssm.literals import OpsItemEventFilterOperatorType
 ```
 
 Values:
 
 - `Equal`
 
-## OpsItemFilterKey
+## OpsItemFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemFilterKey
+from mypy_boto3_ssm.literals import OpsItemFilterKeyType
 ```
 
 Values:
@@ -1341,10 +1341,10 @@ Values:
 - `Status`
 - `Title`
 
-## OpsItemFilterOperator
+## OpsItemFilterOperatorType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemFilterOperator
+from mypy_boto3_ssm.literals import OpsItemFilterOperatorType
 ```
 
 Values:
@@ -1354,10 +1354,10 @@ Values:
 - `GreaterThan`
 - `LessThan`
 
-## OpsItemRelatedItemsFilterKey
+## OpsItemRelatedItemsFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterKey
+from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterKeyType
 ```
 
 Values:
@@ -1366,20 +1366,20 @@ Values:
 - `ResourceType`
 - `ResourceUri`
 
-## OpsItemRelatedItemsFilterOperator
+## OpsItemRelatedItemsFilterOperatorType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterOperator
+from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterOperatorType
 ```
 
 Values:
 
 - `Equal`
 
-## OpsItemStatus
+## OpsItemStatusType
 
 ```python
-from mypy_boto3_ssm.literals import OpsItemStatus
+from mypy_boto3_ssm.literals import OpsItemStatusType
 ```
 
 Values:
@@ -1403,10 +1403,10 @@ Values:
 - `Scheduled`
 - `TimedOut`
 
-## ParameterTier
+## ParameterTierType
 
 ```python
-from mypy_boto3_ssm.literals import ParameterTier
+from mypy_boto3_ssm.literals import ParameterTierType
 ```
 
 Values:
@@ -1415,10 +1415,10 @@ Values:
 - `Intelligent-Tiering`
 - `Standard`
 
-## ParameterType
+## ParameterTypeType
 
 ```python
-from mypy_boto3_ssm.literals import ParameterType
+from mypy_boto3_ssm.literals import ParameterTypeType
 ```
 
 Values:
@@ -1427,10 +1427,10 @@ Values:
 - `String`
 - `StringList`
 
-## ParametersFilterKey
+## ParametersFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import ParametersFilterKey
+from mypy_boto3_ssm.literals import ParametersFilterKeyType
 ```
 
 Values:
@@ -1439,10 +1439,10 @@ Values:
 - `Name`
 - `Type`
 
-## PatchAction
+## PatchActionType
 
 ```python
-from mypy_boto3_ssm.literals import PatchAction
+from mypy_boto3_ssm.literals import PatchActionType
 ```
 
 Values:
@@ -1450,10 +1450,10 @@ Values:
 - `ALLOW_AS_DEPENDENCY`
 - `BLOCK`
 
-## PatchComplianceDataState
+## PatchComplianceDataStateType
 
 ```python
-from mypy_boto3_ssm.literals import PatchComplianceDataState
+from mypy_boto3_ssm.literals import PatchComplianceDataStateType
 ```
 
 Values:
@@ -1466,10 +1466,10 @@ Values:
 - `MISSING`
 - `NOT_APPLICABLE`
 
-## PatchComplianceLevel
+## PatchComplianceLevelType
 
 ```python
-from mypy_boto3_ssm.literals import PatchComplianceLevel
+from mypy_boto3_ssm.literals import PatchComplianceLevelType
 ```
 
 Values:
@@ -1481,10 +1481,10 @@ Values:
 - `MEDIUM`
 - `UNSPECIFIED`
 
-## PatchDeploymentStatus
+## PatchDeploymentStatusType
 
 ```python
-from mypy_boto3_ssm.literals import PatchDeploymentStatus
+from mypy_boto3_ssm.literals import PatchDeploymentStatusType
 ```
 
 Values:
@@ -1494,10 +1494,10 @@ Values:
 - `EXPLICIT_REJECTED`
 - `PENDING_APPROVAL`
 
-## PatchFilterKey
+## PatchFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import PatchFilterKey
+from mypy_boto3_ssm.literals import PatchFilterKeyType
 ```
 
 Values:
@@ -1522,10 +1522,10 @@ Values:
 - `SEVERITY`
 - `VERSION`
 
-## PatchOperationType
+## PatchOperationTypeType
 
 ```python
-from mypy_boto3_ssm.literals import PatchOperationType
+from mypy_boto3_ssm.literals import PatchOperationTypeType
 ```
 
 Values:
@@ -1533,10 +1533,10 @@ Values:
 - `Install`
 - `Scan`
 
-## PatchProperty
+## PatchPropertyType
 
 ```python
-from mypy_boto3_ssm.literals import PatchProperty
+from mypy_boto3_ssm.literals import PatchPropertyType
 ```
 
 Values:
@@ -1548,10 +1548,10 @@ Values:
 - `PRODUCT_FAMILY`
 - `SEVERITY`
 
-## PatchSet
+## PatchSetType
 
 ```python
-from mypy_boto3_ssm.literals import PatchSet
+from mypy_boto3_ssm.literals import PatchSetType
 ```
 
 Values:
@@ -1559,10 +1559,10 @@ Values:
 - `APPLICATION`
 - `OS`
 
-## PingStatus
+## PingStatusType
 
 ```python
-from mypy_boto3_ssm.literals import PingStatus
+from mypy_boto3_ssm.literals import PingStatusType
 ```
 
 Values:
@@ -1571,10 +1571,10 @@ Values:
 - `Inactive`
 - `Online`
 
-## PlatformType
+## PlatformTypeType
 
 ```python
-from mypy_boto3_ssm.literals import PlatformType
+from mypy_boto3_ssm.literals import PlatformTypeType
 ```
 
 Values:
@@ -1582,10 +1582,10 @@ Values:
 - `Linux`
 - `Windows`
 
-## RebootOption
+## RebootOptionType
 
 ```python
-from mypy_boto3_ssm.literals import RebootOption
+from mypy_boto3_ssm.literals import RebootOptionType
 ```
 
 Values:
@@ -1593,32 +1593,20 @@ Values:
 - `NoReboot`
 - `RebootIfNeeded`
 
-## ResourceDataSyncS3Format
+## ResourceDataSyncS3FormatType
 
 ```python
-from mypy_boto3_ssm.literals import ResourceDataSyncS3Format
+from mypy_boto3_ssm.literals import ResourceDataSyncS3FormatType
 ```
 
 Values:
 
 - `JsonSerDe`
 
-## ResourceType
+## ResourceTypeForTaggingType
 
 ```python
-from mypy_boto3_ssm.literals import ResourceType
-```
-
-Values:
-
-- `Document`
-- `EC2Instance`
-- `ManagedInstance`
-
-## ResourceTypeForTagging
-
-```python
-from mypy_boto3_ssm.literals import ResourceTypeForTagging
+from mypy_boto3_ssm.literals import ResourceTypeForTaggingType
 ```
 
 Values:
@@ -1631,10 +1619,22 @@ Values:
 - `Parameter`
 - `PatchBaseline`
 
-## ReviewStatus
+## ResourceTypeType
 
 ```python
-from mypy_boto3_ssm.literals import ReviewStatus
+from mypy_boto3_ssm.literals import ResourceTypeType
+```
+
+Values:
+
+- `Document`
+- `EC2Instance`
+- `ManagedInstance`
+
+## ReviewStatusType
+
+```python
+from mypy_boto3_ssm.literals import ReviewStatusType
 ```
 
 Values:
@@ -1644,10 +1644,10 @@ Values:
 - `PENDING`
 - `REJECTED`
 
-## SessionFilterKey
+## SessionFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import SessionFilterKey
+from mypy_boto3_ssm.literals import SessionFilterKeyType
 ```
 
 Values:
@@ -1659,10 +1659,10 @@ Values:
 - `Status`
 - `Target`
 
-## SessionState
+## SessionStateType
 
 ```python
-from mypy_boto3_ssm.literals import SessionState
+from mypy_boto3_ssm.literals import SessionStateType
 ```
 
 Values:
@@ -1670,10 +1670,10 @@ Values:
 - `Active`
 - `History`
 
-## SessionStatus
+## SessionStatusType
 
 ```python
-from mypy_boto3_ssm.literals import SessionStatus
+from mypy_boto3_ssm.literals import SessionStatusType
 ```
 
 Values:
@@ -1685,10 +1685,10 @@ Values:
 - `Terminated`
 - `Terminating`
 
-## SignalType
+## SignalTypeType
 
 ```python
-from mypy_boto3_ssm.literals import SignalType
+from mypy_boto3_ssm.literals import SignalTypeType
 ```
 
 Values:
@@ -1699,10 +1699,10 @@ Values:
 - `StartStep`
 - `StopStep`
 
-## StepExecutionFilterKey
+## StepExecutionFilterKeyType
 
 ```python
-from mypy_boto3_ssm.literals import StepExecutionFilterKey
+from mypy_boto3_ssm.literals import StepExecutionFilterKeyType
 ```
 
 Values:
@@ -1714,10 +1714,10 @@ Values:
 - `StepExecutionStatus`
 - `StepName`
 
-## StopType
+## StopTypeType
 
 ```python
-from mypy_boto3_ssm.literals import StopType
+from mypy_boto3_ssm.literals import StopTypeType
 ```
 
 Values:

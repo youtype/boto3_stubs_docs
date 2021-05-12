@@ -3,7 +3,7 @@
 > [Index](..) > [CostandUsageReportService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
@@ -56,19 +56,20 @@ from mypy_boto3_cur.type_defs import ReportDefinitionTypeDef
 Required fields:
 
 - `ReportName`: `str`
-- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
-- `Format`: [ReportFormat](./literals.md#reportformat)
-- `Compression`: [CompressionFormat](./literals.md#compressionformat)
+- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
+- `Format`: [ReportFormatType](./literals.md#reportformattype)
+- `Compression`: [CompressionFormatType](./literals.md#compressionformattype)
 - `AdditionalSchemaElements`: `List`\[`Literal['RESOURCES']` (see
-  [SchemaElement](./literals.md#schemaelement))\]
+  [SchemaElementType](./literals.md#schemaelementtype))\]
 - `S3Bucket`: `str`
 - `S3Prefix`: `str`
-- `S3Region`: [AWSRegion](./literals.md#awsregion)
+- `S3Region`: [AWSRegionType](./literals.md#awsregiontype)
 
 Optional fields:
 
 - `AdditionalArtifacts`:
-  `List`\[[AdditionalArtifact](./literals.md#additionalartifact)\]
+  `List`\[[AdditionalArtifactType](./literals.md#additionalartifacttype)\]
 - `RefreshClosedReports`: `bool`
-- `ReportVersioning`: [ReportVersioning](./literals.md#reportversioning)
+- `ReportVersioning`:
+  [ReportVersioningType](./literals.md#reportversioningtype)
 - `BillingViewArn`: `str`

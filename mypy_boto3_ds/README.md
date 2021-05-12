@@ -3,7 +3,7 @@
 > [Index](..) > DirectoryService
 
 Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService)
 type annotations stubs module
 [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
@@ -30,113 +30,113 @@ Can be used directly:
 from mypy_boto3_ds.client import DirectoryServiceClient
 ```
 
-DirectoryServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_shared_directory](./client.md#accept-shared-directory)
-- [add_ip_routes](./client.md#add-ip-routes)
-- [add_region](./client.md#add-region)
-- [add_tags_to_resource](./client.md#add-tags-to-resource)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_schema_extension](./client.md#cancel-schema-extension)
-- [connect_directory](./client.md#connect-directory)
-- [create_alias](./client.md#create-alias)
-- [create_computer](./client.md#create-computer)
-- [create_conditional_forwarder](./client.md#create-conditional-forwarder)
-- [create_directory](./client.md#create-directory)
-- [create_log_subscription](./client.md#create-log-subscription)
-- [create_microsoft_ad](./client.md#create-microsoft-ad)
-- [create_snapshot](./client.md#create-snapshot)
-- [create_trust](./client.md#create-trust)
-- [delete_conditional_forwarder](./client.md#delete-conditional-forwarder)
-- [delete_directory](./client.md#delete-directory)
-- [delete_log_subscription](./client.md#delete-log-subscription)
-- [delete_snapshot](./client.md#delete-snapshot)
-- [delete_trust](./client.md#delete-trust)
-- [deregister_certificate](./client.md#deregister-certificate)
-- [deregister_event_topic](./client.md#deregister-event-topic)
-- [describe_certificate](./client.md#describe-certificate)
-- [describe_conditional_forwarders](./client.md#describe-conditional-forwarders)
-- [describe_directories](./client.md#describe-directories)
-- [describe_domain_controllers](./client.md#describe-domain-controllers)
-- [describe_event_topics](./client.md#describe-event-topics)
-- [describe_ldaps_settings](./client.md#describe-ldaps-settings)
-- [describe_regions](./client.md#describe-regions)
-- [describe_shared_directories](./client.md#describe-shared-directories)
-- [describe_snapshots](./client.md#describe-snapshots)
-- [describe_trusts](./client.md#describe-trusts)
-- [disable_client_authentication](./client.md#disable-client-authentication)
-- [disable_ldaps](./client.md#disable-ldaps)
-- [disable_radius](./client.md#disable-radius)
-- [disable_sso](./client.md#disable-sso)
-- [enable_client_authentication](./client.md#enable-client-authentication)
-- [enable_ldaps](./client.md#enable-ldaps)
-- [enable_radius](./client.md#enable-radius)
-- [enable_sso](./client.md#enable-sso)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_directory_limits](./client.md#get-directory-limits)
-- [get_paginator](./client.md#get-paginator)
-- [get_snapshot_limits](./client.md#get-snapshot-limits)
-- [list_certificates](./client.md#list-certificates)
-- [list_ip_routes](./client.md#list-ip-routes)
-- [list_log_subscriptions](./client.md#list-log-subscriptions)
-- [list_schema_extensions](./client.md#list-schema-extensions)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [register_certificate](./client.md#register-certificate)
-- [register_event_topic](./client.md#register-event-topic)
-- [reject_shared_directory](./client.md#reject-shared-directory)
-- [remove_ip_routes](./client.md#remove-ip-routes)
-- [remove_region](./client.md#remove-region)
-- [remove_tags_from_resource](./client.md#remove-tags-from-resource)
-- [reset_user_password](./client.md#reset-user-password)
-- [restore_from_snapshot](./client.md#restore-from-snapshot)
-- [share_directory](./client.md#share-directory)
-- [start_schema_extension](./client.md#start-schema-extension)
-- [unshare_directory](./client.md#unshare-directory)
-- [update_conditional_forwarder](./client.md#update-conditional-forwarder)
-- [update_number_of_domain_controllers](./client.md#update-number-of-domain-controllers)
-- [update_radius](./client.md#update-radius)
-- [update_trust](./client.md#update-trust)
-- [verify_trust](./client.md#verify-trust)
+- [accept_shared_directory](./client.md#accept_shared_directory)
+- [add_ip_routes](./client.md#add_ip_routes)
+- [add_region](./client.md#add_region)
+- [add_tags_to_resource](./client.md#add_tags_to_resource)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_schema_extension](./client.md#cancel_schema_extension)
+- [connect_directory](./client.md#connect_directory)
+- [create_alias](./client.md#create_alias)
+- [create_computer](./client.md#create_computer)
+- [create_conditional_forwarder](./client.md#create_conditional_forwarder)
+- [create_directory](./client.md#create_directory)
+- [create_log_subscription](./client.md#create_log_subscription)
+- [create_microsoft_ad](./client.md#create_microsoft_ad)
+- [create_snapshot](./client.md#create_snapshot)
+- [create_trust](./client.md#create_trust)
+- [delete_conditional_forwarder](./client.md#delete_conditional_forwarder)
+- [delete_directory](./client.md#delete_directory)
+- [delete_log_subscription](./client.md#delete_log_subscription)
+- [delete_snapshot](./client.md#delete_snapshot)
+- [delete_trust](./client.md#delete_trust)
+- [deregister_certificate](./client.md#deregister_certificate)
+- [deregister_event_topic](./client.md#deregister_event_topic)
+- [describe_certificate](./client.md#describe_certificate)
+- [describe_conditional_forwarders](./client.md#describe_conditional_forwarders)
+- [describe_directories](./client.md#describe_directories)
+- [describe_domain_controllers](./client.md#describe_domain_controllers)
+- [describe_event_topics](./client.md#describe_event_topics)
+- [describe_ldaps_settings](./client.md#describe_ldaps_settings)
+- [describe_regions](./client.md#describe_regions)
+- [describe_shared_directories](./client.md#describe_shared_directories)
+- [describe_snapshots](./client.md#describe_snapshots)
+- [describe_trusts](./client.md#describe_trusts)
+- [disable_client_authentication](./client.md#disable_client_authentication)
+- [disable_ldaps](./client.md#disable_ldaps)
+- [disable_radius](./client.md#disable_radius)
+- [disable_sso](./client.md#disable_sso)
+- [enable_client_authentication](./client.md#enable_client_authentication)
+- [enable_ldaps](./client.md#enable_ldaps)
+- [enable_radius](./client.md#enable_radius)
+- [enable_sso](./client.md#enable_sso)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_directory_limits](./client.md#get_directory_limits)
+- [get_paginator](./client.md#get_paginator)
+- [get_snapshot_limits](./client.md#get_snapshot_limits)
+- [list_certificates](./client.md#list_certificates)
+- [list_ip_routes](./client.md#list_ip_routes)
+- [list_log_subscriptions](./client.md#list_log_subscriptions)
+- [list_schema_extensions](./client.md#list_schema_extensions)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [register_certificate](./client.md#register_certificate)
+- [register_event_topic](./client.md#register_event_topic)
+- [reject_shared_directory](./client.md#reject_shared_directory)
+- [remove_ip_routes](./client.md#remove_ip_routes)
+- [remove_region](./client.md#remove_region)
+- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
+- [reset_user_password](./client.md#reset_user_password)
+- [restore_from_snapshot](./client.md#restore_from_snapshot)
+- [share_directory](./client.md#share_directory)
+- [start_schema_extension](./client.md#start_schema_extension)
+- [unshare_directory](./client.md#unshare_directory)
+- [update_conditional_forwarder](./client.md#update_conditional_forwarder)
+- [update_number_of_domain_controllers](./client.md#update_number_of_domain_controllers)
+- [update_radius](./client.md#update_radius)
+- [update_trust](./client.md#update_trust)
+- [verify_trust](./client.md#verify_trust)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AuthenticationFailedException](./client.md#authenticationfailedexception)
-- [CertificateAlreadyExistsException](./client.md#certificatealreadyexistsexception)
-- [CertificateDoesNotExistException](./client.md#certificatedoesnotexistexception)
-- [CertificateInUseException](./client.md#certificateinuseexception)
-- [CertificateLimitExceededException](./client.md#certificatelimitexceededexception)
-- [ClientError](./client.md#clienterror)
-- [ClientException](./client.md#clientexception)
-- [DirectoryAlreadyInRegionException](./client.md#directoryalreadyinregionexception)
-- [DirectoryAlreadySharedException](./client.md#directoryalreadysharedexception)
-- [DirectoryDoesNotExistException](./client.md#directorydoesnotexistexception)
-- [DirectoryLimitExceededException](./client.md#directorylimitexceededexception)
-- [DirectoryNotSharedException](./client.md#directorynotsharedexception)
-- [DirectoryUnavailableException](./client.md#directoryunavailableexception)
-- [DomainControllerLimitExceededException](./client.md#domaincontrollerlimitexceededexception)
-- [EntityAlreadyExistsException](./client.md#entityalreadyexistsexception)
-- [EntityDoesNotExistException](./client.md#entitydoesnotexistexception)
-- [InsufficientPermissionsException](./client.md#insufficientpermissionsexception)
-- [InvalidCertificateException](./client.md#invalidcertificateexception)
-- [InvalidClientAuthStatusException](./client.md#invalidclientauthstatusexception)
-- [InvalidLDAPSStatusException](./client.md#invalidldapsstatusexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidPasswordException](./client.md#invalidpasswordexception)
-- [InvalidTargetException](./client.md#invalidtargetexception)
-- [IpRouteLimitExceededException](./client.md#iproutelimitexceededexception)
-- [NoAvailableCertificateException](./client.md#noavailablecertificateexception)
-- [OrganizationsException](./client.md#organizationsexception)
-- [RegionLimitExceededException](./client.md#regionlimitexceededexception)
-- [ServiceException](./client.md#serviceexception)
-- [ShareLimitExceededException](./client.md#sharelimitexceededexception)
-- [SnapshotLimitExceededException](./client.md#snapshotlimitexceededexception)
-- [TagLimitExceededException](./client.md#taglimitexceededexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
-- [UserDoesNotExistException](./client.md#userdoesnotexistexception)
+DirectoryServiceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AuthenticationFailedException
+- CertificateAlreadyExistsException
+- CertificateDoesNotExistException
+- CertificateInUseException
+- CertificateLimitExceededException
+- ClientError
+- ClientException
+- DirectoryAlreadyInRegionException
+- DirectoryAlreadySharedException
+- DirectoryDoesNotExistException
+- DirectoryLimitExceededException
+- DirectoryNotSharedException
+- DirectoryUnavailableException
+- DomainControllerLimitExceededException
+- EntityAlreadyExistsException
+- EntityDoesNotExistException
+- InsufficientPermissionsException
+- InvalidCertificateException
+- InvalidClientAuthStatusException
+- InvalidLDAPSStatusException
+- InvalidNextTokenException
+- InvalidParameterException
+- InvalidPasswordException
+- InvalidTargetException
+- IpRouteLimitExceededException
+- NoAvailableCertificateException
+- OrganizationsException
+- RegionLimitExceededException
+- ServiceException
+- ShareLimitExceededException
+- SnapshotLimitExceededException
+- TagLimitExceededException
+- UnsupportedOperationException
+- UserDoesNotExistException
 
 ## Paginators
 
@@ -166,44 +166,44 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ds.literals import CertificateState, ...
+from mypy_boto3_ds.literals import CertificateStateType, ...
 ```
 
-- [CertificateState](./literals.md#certificatestate)
-- [CertificateType](./literals.md#certificatetype)
-- [ClientAuthenticationType](./literals.md#clientauthenticationtype)
+- [CertificateStateType](./literals.md#certificatestatetype)
+- [CertificateTypeType](./literals.md#certificatetypetype)
+- [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype)
 - [DescribeDirectoriesPaginatorName](./literals.md#describedirectoriespaginatorname)
 - [DescribeDomainControllersPaginatorName](./literals.md#describedomaincontrollerspaginatorname)
 - [DescribeSharedDirectoriesPaginatorName](./literals.md#describeshareddirectoriespaginatorname)
 - [DescribeSnapshotsPaginatorName](./literals.md#describesnapshotspaginatorname)
 - [DescribeTrustsPaginatorName](./literals.md#describetrustspaginatorname)
-- [DirectoryEdition](./literals.md#directoryedition)
-- [DirectorySize](./literals.md#directorysize)
-- [DirectoryStage](./literals.md#directorystage)
-- [DirectoryType](./literals.md#directorytype)
-- [DomainControllerStatus](./literals.md#domaincontrollerstatus)
-- [IpRouteStatusMsg](./literals.md#iproutestatusmsg)
-- [LDAPSStatus](./literals.md#ldapsstatus)
-- [LDAPSType](./literals.md#ldapstype)
+- [DirectoryEditionType](./literals.md#directoryeditiontype)
+- [DirectorySizeType](./literals.md#directorysizetype)
+- [DirectoryStageType](./literals.md#directorystagetype)
+- [DirectoryTypeType](./literals.md#directorytypetype)
+- [DomainControllerStatusType](./literals.md#domaincontrollerstatustype)
+- [IpRouteStatusMsgType](./literals.md#iproutestatusmsgtype)
+- [LDAPSStatusType](./literals.md#ldapsstatustype)
+- [LDAPSTypeType](./literals.md#ldapstypetype)
 - [ListIpRoutesPaginatorName](./literals.md#listiproutespaginatorname)
 - [ListLogSubscriptionsPaginatorName](./literals.md#listlogsubscriptionspaginatorname)
 - [ListSchemaExtensionsPaginatorName](./literals.md#listschemaextensionspaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [RadiusAuthenticationProtocol](./literals.md#radiusauthenticationprotocol)
-- [RadiusStatus](./literals.md#radiusstatus)
-- [RegionType](./literals.md#regiontype)
-- [ReplicationScope](./literals.md#replicationscope)
-- [SchemaExtensionStatus](./literals.md#schemaextensionstatus)
-- [SelectiveAuth](./literals.md#selectiveauth)
-- [ShareMethod](./literals.md#sharemethod)
-- [ShareStatus](./literals.md#sharestatus)
-- [SnapshotStatus](./literals.md#snapshotstatus)
-- [SnapshotType](./literals.md#snapshottype)
-- [TargetType](./literals.md#targettype)
-- [TopicStatus](./literals.md#topicstatus)
-- [TrustDirection](./literals.md#trustdirection)
-- [TrustState](./literals.md#truststate)
-- [TrustType](./literals.md#trusttype)
+- [RadiusAuthenticationProtocolType](./literals.md#radiusauthenticationprotocoltype)
+- [RadiusStatusType](./literals.md#radiusstatustype)
+- [RegionTypeType](./literals.md#regiontypetype)
+- [ReplicationScopeType](./literals.md#replicationscopetype)
+- [SchemaExtensionStatusType](./literals.md#schemaextensionstatustype)
+- [SelectiveAuthType](./literals.md#selectiveauthtype)
+- [ShareMethodType](./literals.md#sharemethodtype)
+- [ShareStatusType](./literals.md#sharestatustype)
+- [SnapshotStatusType](./literals.md#snapshotstatustype)
+- [SnapshotTypeType](./literals.md#snapshottypetype)
+- [TargetTypeType](./literals.md#targettypetype)
+- [TopicStatusType](./literals.md#topicstatustype)
+- [TrustDirectionType](./literals.md#trustdirectiontype)
+- [TrustStateType](./literals.md#truststatetype)
+- [TrustTypeType](./literals.md#trusttypetype)
 
 ## Typed dictionaries
 

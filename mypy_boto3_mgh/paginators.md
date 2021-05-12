@@ -3,7 +3,7 @@
 > [Index](..) > [MigrationHub](.) > Paginators
 
 Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
 [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
@@ -29,7 +29,7 @@ def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
 ```
 
 Boto3 documentation:
-[MigrationHub.Paginator.ListApplicationStates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
+[MigrationHub.Paginator.ListApplicationStates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
 
 Arguments for `ListApplicationStatesPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
 ```
 
 Boto3 documentation:
-[MigrationHub.Paginator.ListCreatedArtifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
+[MigrationHub.Paginator.ListCreatedArtifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
 
 Arguments for `ListCreatedArtifactsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
 ```
 
 Boto3 documentation:
-[MigrationHub.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
+[MigrationHub.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
 
 Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
 ```
 
 Boto3 documentation:
-[MigrationHub.Paginator.ListMigrationTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
+[MigrationHub.Paginator.ListMigrationTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
 
 Arguments for `ListMigrationTasksPaginator.paginate` method:
 
@@ -135,7 +135,7 @@ def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPag
 ```
 
 Boto3 documentation:
-[MigrationHub.Paginator.ListProgressUpdateStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
+[MigrationHub.Paginator.ListProgressUpdateStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
 
 Arguments for `ListProgressUpdateStreamsPaginator.paginate` method:
 

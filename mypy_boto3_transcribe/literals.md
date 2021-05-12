@@ -3,29 +3,29 @@
 > [Index](..) > [TranscribeService](.) > Literals
 
 Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
 [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 - [Literals for boto3 TranscribeService module](#literals-for-boto3-transcribeservice-module)
-  - [BaseModelName](#basemodelname)
-  - [CLMLanguageCode](#clmlanguagecode)
-  - [LanguageCode](#languagecode)
-  - [MediaFormat](#mediaformat)
-  - [ModelStatus](#modelstatus)
-  - [OutputLocationType](#outputlocationtype)
-  - [RedactionOutput](#redactionoutput)
-  - [RedactionType](#redactiontype)
-  - [Specialty](#specialty)
-  - [TranscriptionJobStatus](#transcriptionjobstatus)
+  - [BaseModelNameType](#basemodelnametype)
+  - [CLMLanguageCodeType](#clmlanguagecodetype)
+  - [LanguageCodeType](#languagecodetype)
+  - [MediaFormatType](#mediaformattype)
+  - [ModelStatusType](#modelstatustype)
+  - [OutputLocationTypeType](#outputlocationtypetype)
+  - [RedactionOutputType](#redactionoutputtype)
+  - [RedactionTypeType](#redactiontypetype)
+  - [SpecialtyType](#specialtytype)
+  - [TranscriptionJobStatusType](#transcriptionjobstatustype)
   - [TypeType](#typetype)
-  - [VocabularyFilterMethod](#vocabularyfiltermethod)
-  - [VocabularyState](#vocabularystate)
+  - [VocabularyFilterMethodType](#vocabularyfiltermethodtype)
+  - [VocabularyStateType](#vocabularystatetype)
 
-## BaseModelName
+## BaseModelNameType
 
 ```python
-from mypy_boto3_transcribe.literals import BaseModelName
+from mypy_boto3_transcribe.literals import BaseModelNameType
 ```
 
 Values:
@@ -33,10 +33,10 @@ Values:
 - `NarrowBand`
 - `WideBand`
 
-## CLMLanguageCode
+## CLMLanguageCodeType
 
 ```python
-from mypy_boto3_transcribe.literals import CLMLanguageCode
+from mypy_boto3_transcribe.literals import CLMLanguageCodeType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `es-US`
 - `hi-IN`
 
-## LanguageCode
+## LanguageCodeType
 
 ```python
-from mypy_boto3_transcribe.literals import LanguageCode
+from mypy_boto3_transcribe.literals import LanguageCodeType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `tr-TR`
 - `zh-CN`
 
-## MediaFormat
+## MediaFormatType
 
 ```python
-from mypy_boto3_transcribe.literals import MediaFormat
+from mypy_boto3_transcribe.literals import MediaFormatType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `wav`
 - `webm`
 
-## ModelStatus
+## ModelStatusType
 
 ```python
-from mypy_boto3_transcribe.literals import ModelStatus
+from mypy_boto3_transcribe.literals import ModelStatusType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## OutputLocationType
+## OutputLocationTypeType
 
 ```python
-from mypy_boto3_transcribe.literals import OutputLocationType
+from mypy_boto3_transcribe.literals import OutputLocationTypeType
 ```
 
 Values:
@@ -131,10 +131,10 @@ Values:
 - `CUSTOMER_BUCKET`
 - `SERVICE_BUCKET`
 
-## RedactionOutput
+## RedactionOutputType
 
 ```python
-from mypy_boto3_transcribe.literals import RedactionOutput
+from mypy_boto3_transcribe.literals import RedactionOutputType
 ```
 
 Values:
@@ -142,30 +142,30 @@ Values:
 - `redacted`
 - `redacted_and_unredacted`
 
-## RedactionType
+## RedactionTypeType
 
 ```python
-from mypy_boto3_transcribe.literals import RedactionType
+from mypy_boto3_transcribe.literals import RedactionTypeType
 ```
 
 Values:
 
 - `PII`
 
-## Specialty
+## SpecialtyType
 
 ```python
-from mypy_boto3_transcribe.literals import Specialty
+from mypy_boto3_transcribe.literals import SpecialtyType
 ```
 
 Values:
 
 - `PRIMARYCARE`
 
-## TranscriptionJobStatus
+## TranscriptionJobStatusType
 
 ```python
-from mypy_boto3_transcribe.literals import TranscriptionJobStatus
+from mypy_boto3_transcribe.literals import TranscriptionJobStatusType
 ```
 
 Values:
@@ -186,10 +186,10 @@ Values:
 - `CONVERSATION`
 - `DICTATION`
 
-## VocabularyFilterMethod
+## VocabularyFilterMethodType
 
 ```python
-from mypy_boto3_transcribe.literals import VocabularyFilterMethod
+from mypy_boto3_transcribe.literals import VocabularyFilterMethodType
 ```
 
 Values:
@@ -198,10 +198,10 @@ Values:
 - `remove`
 - `tag`
 
-## VocabularyState
+## VocabularyStateType
 
 ```python
-from mypy_boto3_transcribe.literals import VocabularyState
+from mypy_boto3_transcribe.literals import VocabularyStateType
 ```
 
 Values:

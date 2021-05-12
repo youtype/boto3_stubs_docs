@@ -3,25 +3,25 @@
 > [Index](..) > [MQ](.) > Literals
 
 Auto-generated documentation for
-[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mq.html#MQ)
 type annotations stubs module
 [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
 - [Literals for boto3 MQ module](#literals-for-boto3-mq-module)
-  - [AuthenticationStrategy](#authenticationstrategy)
-  - [BrokerState](#brokerstate)
-  - [BrokerStorageType](#brokerstoragetype)
-  - [ChangeType](#changetype)
-  - [DayOfWeek](#dayofweek)
-  - [DeploymentMode](#deploymentmode)
-  - [EngineType](#enginetype)
+  - [AuthenticationStrategyType](#authenticationstrategytype)
+  - [BrokerStateType](#brokerstatetype)
+  - [BrokerStorageTypeType](#brokerstoragetypetype)
+  - [ChangeTypeType](#changetypetype)
+  - [DayOfWeekType](#dayofweektype)
+  - [DeploymentModeType](#deploymentmodetype)
+  - [EngineTypeType](#enginetypetype)
   - [ListBrokersPaginatorName](#listbrokerspaginatorname)
-  - [SanitizationWarningReason](#sanitizationwarningreason)
+  - [SanitizationWarningReasonType](#sanitizationwarningreasontype)
 
-## AuthenticationStrategy
+## AuthenticationStrategyType
 
 ```python
-from mypy_boto3_mq.literals import AuthenticationStrategy
+from mypy_boto3_mq.literals import AuthenticationStrategyType
 ```
 
 Values:
@@ -29,10 +29,10 @@ Values:
 - `LDAP`
 - `SIMPLE`
 
-## BrokerState
+## BrokerStateType
 
 ```python
-from mypy_boto3_mq.literals import BrokerState
+from mypy_boto3_mq.literals import BrokerStateType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `REBOOT_IN_PROGRESS`
 - `RUNNING`
 
-## BrokerStorageType
+## BrokerStorageTypeType
 
 ```python
-from mypy_boto3_mq.literals import BrokerStorageType
+from mypy_boto3_mq.literals import BrokerStorageTypeType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `EBS`
 - `EFS`
 
-## ChangeType
+## ChangeTypeType
 
 ```python
-from mypy_boto3_mq.literals import ChangeType
+from mypy_boto3_mq.literals import ChangeTypeType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `DELETE`
 - `UPDATE`
 
-## DayOfWeek
+## DayOfWeekType
 
 ```python
-from mypy_boto3_mq.literals import DayOfWeek
+from mypy_boto3_mq.literals import DayOfWeekType
 ```
 
 Values:
@@ -82,10 +82,10 @@ Values:
 - `TUESDAY`
 - `WEDNESDAY`
 
-## DeploymentMode
+## DeploymentModeType
 
 ```python
-from mypy_boto3_mq.literals import DeploymentMode
+from mypy_boto3_mq.literals import DeploymentModeType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 - `CLUSTER_MULTI_AZ`
 - `SINGLE_INSTANCE`
 
-## EngineType
+## EngineTypeType
 
 ```python
-from mypy_boto3_mq.literals import EngineType
+from mypy_boto3_mq.literals import EngineTypeType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 
 - `list_brokers`
 
-## SanitizationWarningReason
+## SanitizationWarningReasonType
 
 ```python
-from mypy_boto3_mq.literals import SanitizationWarningReason
+from mypy_boto3_mq.literals import SanitizationWarningReasonType
 ```
 
 Values:

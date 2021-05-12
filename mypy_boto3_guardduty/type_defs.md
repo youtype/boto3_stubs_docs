@@ -3,7 +3,7 @@
 > [Index](..) > [GuardDuty](.) > Typed dictionaries
 
 Auto-generated documentation for
-[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
 [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
@@ -189,7 +189,7 @@ from mypy_boto3_guardduty.type_defs import AdminAccountTypeDef
 Optional fields:
 
 - `AdminAccountId`: `str`
-- `AdminStatus`: [AdminStatus](./literals.md#adminstatus)
+- `AdminStatus`: [AdminStatusType](./literals.md#adminstatustype)
 
 ## AwsApiCallActionTypeDef
 
@@ -263,7 +263,7 @@ from mypy_boto3_guardduty.type_defs import CloudTrailConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 
 ## ConditionTypeDef
 
@@ -366,7 +366,7 @@ from mypy_boto3_guardduty.type_defs import DNSLogsConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 
 ## DataSourceConfigurationsResultTypeDef
 
@@ -466,8 +466,8 @@ Required fields:
 
 - `DestinationId`: `str`
 - `DestinationType`: `Literal['S3']` (see
-  [DestinationType](./literals.md#destinationtype))
-- `Status`: [PublishingStatus](./literals.md#publishingstatus)
+  [DestinationTypeType](./literals.md#destinationtypetype))
+- `Status`: [PublishingStatusType](./literals.md#publishingstatustype)
 - `PublishingFailureStartTimestamp`: `int`
 - `DestinationProperties`:
   [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
@@ -493,8 +493,8 @@ Required fields:
 
 - `DestinationId`: `str`
 - `DestinationType`: `Literal['S3']` (see
-  [DestinationType](./literals.md#destinationtype))
-- `Status`: [PublishingStatus](./literals.md#publishingstatus)
+  [DestinationTypeType](./literals.md#destinationtypetype))
+- `Status`: [PublishingStatusType](./literals.md#publishingstatustype)
 
 ## DisassociateMembersResponseTypeDef
 
@@ -594,7 +594,7 @@ from mypy_boto3_guardduty.type_defs import FlowLogsConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 
 ## GeoLocationTypeDef
 
@@ -616,13 +616,13 @@ from mypy_boto3_guardduty.type_defs import GetDetectorResponseTypeDef
 Required fields:
 
 - `ServiceRole`: `str`
-- `Status`: [DetectorStatus](./literals.md#detectorstatus)
+- `Status`: [DetectorStatusType](./literals.md#detectorstatustype)
 
 Optional fields:
 
 - `CreatedAt`: `str`
 - `FindingPublishingFrequency`:
-  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
+  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `UpdatedAt`: `str`
 - `DataSources`:
   [DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef)
@@ -637,7 +637,7 @@ from mypy_boto3_guardduty.type_defs import GetFilterResponseTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Action`: [FilterAction](./literals.md#filteraction)
+- `Action`: [FilterActionType](./literals.md#filteractiontype)
 - `FindingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
@@ -677,9 +677,9 @@ from mypy_boto3_guardduty.type_defs import GetIPSetResponseTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Format`: [IpSetFormat](./literals.md#ipsetformat)
+- `Format`: [IpSetFormatType](./literals.md#ipsetformattype)
 - `Location`: `str`
-- `Status`: [IpSetStatus](./literals.md#ipsetstatus)
+- `Status`: [IpSetStatusType](./literals.md#ipsetstatustype)
 
 Optional fields:
 
@@ -739,9 +739,9 @@ from mypy_boto3_guardduty.type_defs import GetThreatIntelSetResponseTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Format`: [ThreatIntelSetFormat](./literals.md#threatintelsetformat)
+- `Format`: [ThreatIntelSetFormatType](./literals.md#threatintelsetformattype)
 - `Location`: `str`
-- `Status`: [ThreatIntelSetStatus](./literals.md#threatintelsetstatus)
+- `Status`: [ThreatIntelSetStatusType](./literals.md#threatintelsetstatustype)
 
 Optional fields:
 
@@ -883,7 +883,8 @@ from mypy_boto3_guardduty.type_defs import ListInvitationsResponseTypeDef
 
 Optional fields:
 
-- `Invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
+- `Invitations`:
+  `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `NextToken`: `str`
 
 ## ListMembersResponseTypeDef
@@ -1026,7 +1027,8 @@ Optional fields:
 - `LocalPortDetails`:
   [LocalPortDetailsTypeDef](./type_defs.md#localportdetailstypedef)
 - `Protocol`: `str`
-- `LocalIpDetails`: [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
+- `LocalIpDetails`:
+  [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
 - `RemoteIpDetails`:
   [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - `RemotePortDetails`:
@@ -1165,7 +1167,8 @@ Optional fields:
 
 - `LocalPortDetails`:
   [LocalPortDetailsTypeDef](./type_defs.md#localportdetailstypedef)
-- `LocalIpDetails`: [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
+- `LocalIpDetails`:
+  [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
 - `RemoteIpDetails`:
   [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 
@@ -1270,7 +1273,7 @@ from mypy_boto3_guardduty.type_defs import S3LogsConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 
 ## S3LogsConfigurationTypeDef
 
@@ -1321,7 +1324,7 @@ from mypy_boto3_guardduty.type_defs import SortCriteriaTypeDef
 Optional fields:
 
 - `AttributeName`: `str`
-- `OrderBy`: [OrderBy](./literals.md#orderby)
+- `OrderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## StartMonitoringMembersResponseTypeDef
 
@@ -1429,7 +1432,7 @@ from mypy_boto3_guardduty.type_defs import UsageCriteriaTypeDef
 
 Required fields:
 
-- `DataSources`: `List`\[[DataSource](./literals.md#datasource)\]
+- `DataSources`: `List`\[[DataSourceType](./literals.md#datasourcetype)\]
 
 Optional fields:
 
@@ -1444,7 +1447,7 @@ from mypy_boto3_guardduty.type_defs import UsageDataSourceResultTypeDef
 
 Optional fields:
 
-- `DataSource`: [DataSource](./literals.md#datasource)
+- `DataSource`: [DataSourceType](./literals.md#datasourcetype)
 - `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
 
 ## UsageResourceResultTypeDef

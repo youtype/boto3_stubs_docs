@@ -3,7 +3,7 @@
 > [Index](..) > KMS
 
 Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS)
 type annotations stubs module
 [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
@@ -29,96 +29,96 @@ Can be used directly:
 from mypy_boto3_kms.client import KMSClient
 ```
 
-KMSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_key_deletion](./client.md#cancel-key-deletion)
-- [connect_custom_key_store](./client.md#connect-custom-key-store)
-- [create_alias](./client.md#create-alias)
-- [create_custom_key_store](./client.md#create-custom-key-store)
-- [create_grant](./client.md#create-grant)
-- [create_key](./client.md#create-key)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_key_deletion](./client.md#cancel_key_deletion)
+- [connect_custom_key_store](./client.md#connect_custom_key_store)
+- [create_alias](./client.md#create_alias)
+- [create_custom_key_store](./client.md#create_custom_key_store)
+- [create_grant](./client.md#create_grant)
+- [create_key](./client.md#create_key)
 - [decrypt](./client.md#decrypt)
-- [delete_alias](./client.md#delete-alias)
-- [delete_custom_key_store](./client.md#delete-custom-key-store)
-- [delete_imported_key_material](./client.md#delete-imported-key-material)
-- [describe_custom_key_stores](./client.md#describe-custom-key-stores)
-- [describe_key](./client.md#describe-key)
-- [disable_key](./client.md#disable-key)
-- [disable_key_rotation](./client.md#disable-key-rotation)
-- [disconnect_custom_key_store](./client.md#disconnect-custom-key-store)
-- [enable_key](./client.md#enable-key)
-- [enable_key_rotation](./client.md#enable-key-rotation)
+- [delete_alias](./client.md#delete_alias)
+- [delete_custom_key_store](./client.md#delete_custom_key_store)
+- [delete_imported_key_material](./client.md#delete_imported_key_material)
+- [describe_custom_key_stores](./client.md#describe_custom_key_stores)
+- [describe_key](./client.md#describe_key)
+- [disable_key](./client.md#disable_key)
+- [disable_key_rotation](./client.md#disable_key_rotation)
+- [disconnect_custom_key_store](./client.md#disconnect_custom_key_store)
+- [enable_key](./client.md#enable_key)
+- [enable_key_rotation](./client.md#enable_key_rotation)
 - [encrypt](./client.md#encrypt)
-- [generate_data_key](./client.md#generate-data-key)
-- [generate_data_key_pair](./client.md#generate-data-key-pair)
-- [generate_data_key_pair_without_plaintext](./client.md#generate-data-key-pair-without-plaintext)
-- [generate_data_key_without_plaintext](./client.md#generate-data-key-without-plaintext)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [generate_random](./client.md#generate-random)
-- [get_key_policy](./client.md#get-key-policy)
-- [get_key_rotation_status](./client.md#get-key-rotation-status)
-- [get_paginator](./client.md#get-paginator)
-- [get_parameters_for_import](./client.md#get-parameters-for-import)
-- [get_public_key](./client.md#get-public-key)
-- [import_key_material](./client.md#import-key-material)
-- [list_aliases](./client.md#list-aliases)
-- [list_grants](./client.md#list-grants)
-- [list_key_policies](./client.md#list-key-policies)
-- [list_keys](./client.md#list-keys)
-- [list_resource_tags](./client.md#list-resource-tags)
-- [list_retirable_grants](./client.md#list-retirable-grants)
-- [put_key_policy](./client.md#put-key-policy)
-- [re_encrypt](./client.md#re-encrypt)
-- [retire_grant](./client.md#retire-grant)
-- [revoke_grant](./client.md#revoke-grant)
-- [schedule_key_deletion](./client.md#schedule-key-deletion)
+- [generate_data_key](./client.md#generate_data_key)
+- [generate_data_key_pair](./client.md#generate_data_key_pair)
+- [generate_data_key_pair_without_plaintext](./client.md#generate_data_key_pair_without_plaintext)
+- [generate_data_key_without_plaintext](./client.md#generate_data_key_without_plaintext)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [generate_random](./client.md#generate_random)
+- [get_key_policy](./client.md#get_key_policy)
+- [get_key_rotation_status](./client.md#get_key_rotation_status)
+- [get_paginator](./client.md#get_paginator)
+- [get_parameters_for_import](./client.md#get_parameters_for_import)
+- [get_public_key](./client.md#get_public_key)
+- [import_key_material](./client.md#import_key_material)
+- [list_aliases](./client.md#list_aliases)
+- [list_grants](./client.md#list_grants)
+- [list_key_policies](./client.md#list_key_policies)
+- [list_keys](./client.md#list_keys)
+- [list_resource_tags](./client.md#list_resource_tags)
+- [list_retirable_grants](./client.md#list_retirable_grants)
+- [put_key_policy](./client.md#put_key_policy)
+- [re_encrypt](./client.md#re_encrypt)
+- [retire_grant](./client.md#retire_grant)
+- [revoke_grant](./client.md#revoke_grant)
+- [schedule_key_deletion](./client.md#schedule_key_deletion)
 - [sign](./client.md#sign)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_alias](./client.md#update-alias)
-- [update_custom_key_store](./client.md#update-custom-key-store)
-- [update_key_description](./client.md#update-key-description)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_alias](./client.md#update_alias)
+- [update_custom_key_store](./client.md#update_custom_key_store)
+- [update_key_description](./client.md#update_key_description)
 - [verify](./client.md#verify)
 
 ### Exceptions
 
-- [AlreadyExistsException](./client.md#alreadyexistsexception)
-- [ClientError](./client.md#clienterror)
-- [CloudHsmClusterInUseException](./client.md#cloudhsmclusterinuseexception)
-- [CloudHsmClusterInvalidConfigurationException](./client.md#cloudhsmclusterinvalidconfigurationexception)
-- [CloudHsmClusterNotActiveException](./client.md#cloudhsmclusternotactiveexception)
-- [CloudHsmClusterNotFoundException](./client.md#cloudhsmclusternotfoundexception)
-- [CloudHsmClusterNotRelatedException](./client.md#cloudhsmclusternotrelatedexception)
-- [CustomKeyStoreHasCMKsException](./client.md#customkeystorehascmksexception)
-- [CustomKeyStoreInvalidStateException](./client.md#customkeystoreinvalidstateexception)
-- [CustomKeyStoreNameInUseException](./client.md#customkeystorenameinuseexception)
-- [CustomKeyStoreNotFoundException](./client.md#customkeystorenotfoundexception)
-- [DependencyTimeoutException](./client.md#dependencytimeoutexception)
-- [DisabledException](./client.md#disabledexception)
-- [ExpiredImportTokenException](./client.md#expiredimporttokenexception)
-- [IncorrectKeyException](./client.md#incorrectkeyexception)
-- [IncorrectKeyMaterialException](./client.md#incorrectkeymaterialexception)
-- [IncorrectTrustAnchorException](./client.md#incorrecttrustanchorexception)
-- [InvalidAliasNameException](./client.md#invalidaliasnameexception)
-- [InvalidArnException](./client.md#invalidarnexception)
-- [InvalidCiphertextException](./client.md#invalidciphertextexception)
-- [InvalidGrantIdException](./client.md#invalidgrantidexception)
-- [InvalidGrantTokenException](./client.md#invalidgranttokenexception)
-- [InvalidImportTokenException](./client.md#invalidimporttokenexception)
-- [InvalidKeyUsageException](./client.md#invalidkeyusageexception)
-- [InvalidMarkerException](./client.md#invalidmarkerexception)
-- [KMSInternalException](./client.md#kmsinternalexception)
-- [KMSInvalidSignatureException](./client.md#kmsinvalidsignatureexception)
-- [KMSInvalidStateException](./client.md#kmsinvalidstateexception)
-- [KeyUnavailableException](./client.md#keyunavailableexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [MalformedPolicyDocumentException](./client.md#malformedpolicydocumentexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [TagException](./client.md#tagexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+KMSClient [exceptions](./client.md#exceptions)
+
+- AlreadyExistsException
+- ClientError
+- CloudHsmClusterInUseException
+- CloudHsmClusterInvalidConfigurationException
+- CloudHsmClusterNotActiveException
+- CloudHsmClusterNotFoundException
+- CloudHsmClusterNotRelatedException
+- CustomKeyStoreHasCMKsException
+- CustomKeyStoreInvalidStateException
+- CustomKeyStoreNameInUseException
+- CustomKeyStoreNotFoundException
+- DependencyTimeoutException
+- DisabledException
+- ExpiredImportTokenException
+- IncorrectKeyException
+- IncorrectKeyMaterialException
+- IncorrectTrustAnchorException
+- InvalidAliasNameException
+- InvalidArnException
+- InvalidCiphertextException
+- InvalidGrantIdException
+- InvalidGrantTokenException
+- InvalidImportTokenException
+- InvalidKeyUsageException
+- InvalidMarkerException
+- KMSInternalException
+- KMSInvalidSignatureException
+- KMSInvalidStateException
+- KeyUnavailableException
+- LimitExceededException
+- MalformedPolicyDocumentException
+- NotFoundException
+- TagException
+- UnsupportedOperationException
 
 ## Paginators
 
@@ -143,29 +143,29 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kms.literals import AlgorithmSpec, ...
+from mypy_boto3_kms.literals import AlgorithmSpecType, ...
 ```
 
-- [AlgorithmSpec](./literals.md#algorithmspec)
-- [ConnectionErrorCodeType](./literals.md#connectionerrorcodetype)
-- [ConnectionStateType](./literals.md#connectionstatetype)
-- [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
-- [DataKeyPairSpec](./literals.md#datakeypairspec)
-- [DataKeySpec](./literals.md#datakeyspec)
-- [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
-- [ExpirationModelType](./literals.md#expirationmodeltype)
-- [GrantOperation](./literals.md#grantoperation)
-- [KeyManagerType](./literals.md#keymanagertype)
-- [KeyState](./literals.md#keystate)
-- [KeyUsageType](./literals.md#keyusagetype)
+- [AlgorithmSpecType](./literals.md#algorithmspectype)
+- [ConnectionErrorCodeTypeType](./literals.md#connectionerrorcodetypetype)
+- [ConnectionStateTypeType](./literals.md#connectionstatetypetype)
+- [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- [DataKeyPairSpecType](./literals.md#datakeypairspectype)
+- [DataKeySpecType](./literals.md#datakeyspectype)
+- [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
+- [ExpirationModelTypeType](./literals.md#expirationmodeltypetype)
+- [GrantOperationType](./literals.md#grantoperationtype)
+- [KeyManagerTypeType](./literals.md#keymanagertypetype)
+- [KeyStateType](./literals.md#keystatetype)
+- [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - [ListAliasesPaginatorName](./literals.md#listaliasespaginatorname)
 - [ListGrantsPaginatorName](./literals.md#listgrantspaginatorname)
 - [ListKeyPoliciesPaginatorName](./literals.md#listkeypoliciespaginatorname)
 - [ListKeysPaginatorName](./literals.md#listkeyspaginatorname)
-- [MessageType](./literals.md#messagetype)
-- [OriginType](./literals.md#origintype)
-- [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
-- [WrappingKeySpec](./literals.md#wrappingkeyspec)
+- [MessageTypeType](./literals.md#messagetypetype)
+- [OriginTypeType](./literals.md#origintypetype)
+- [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
+- [WrappingKeySpecType](./literals.md#wrappingkeyspectype)
 
 ## Typed dictionaries
 

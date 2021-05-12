@@ -3,7 +3,7 @@
 > [Index](..) > [LakeFormation](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
 [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
@@ -95,8 +95,9 @@ Optional fields:
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
-- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
+- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `PermissionsWithGrantOption`:
+  `List`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## BatchRevokePermissionsResponseTypeDef
 
@@ -223,8 +224,9 @@ from mypy_boto3_lakeformation.type_defs import FilterConditionTypeDef
 
 Optional fields:
 
-- `Field`: [FieldNameString](./literals.md#fieldnamestring)
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `Field`: [FieldNameStringType](./literals.md#fieldnamestringtype)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `StringValueList`: `List`\[`str`\]
 
 ## GetDataLakeSettingsResponseTypeDef
@@ -272,7 +274,8 @@ Optional fields:
 
 - `LFTagOnDatabase`:
   `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `LFTagsOnTable`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTagsOnTable`:
+  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 - `LFTagsOnColumns`:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
 
@@ -325,7 +328,7 @@ from mypy_boto3_lakeformation.type_defs import LFTagPolicyResourceTypeDef
 
 Required fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
 
 Optional fields:
@@ -388,7 +391,7 @@ Optional fields:
 
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
+- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## PrincipalResourcePermissionsTypeDef
 
@@ -401,8 +404,9 @@ Optional fields:
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
-- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
+- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `PermissionsWithGrantOption`:
+  `List`\[[PermissionType](./literals.md#permissiontype)\]
 - `AdditionalDetails`: [DetailsMapTypeDef](./type_defs.md#detailsmaptypedef)
 
 ## RemoveLFTagsFromResourceResponseTypeDef
@@ -467,7 +471,8 @@ from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsResponseTypeD
 Optional fields:
 
 - `NextToken`: `str`
-- `TableList`: `List`\[[TaggedTableTypeDef](./type_defs.md#taggedtabletypedef)\]
+- `TableList`:
+  `List`\[[TaggedTableTypeDef](./type_defs.md#taggedtabletypedef)\]
 
 ## TableResourceTypeDef
 
@@ -500,7 +505,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `ColumnNames`: `List`\[`str`\]
-- `ColumnWildcard`: [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
+- `ColumnWildcard`:
+  [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
 
 ## TaggedDatabaseTypeDef
 
@@ -524,6 +530,7 @@ Optional fields:
 - `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
 - `LFTagOnDatabase`:
   `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `LFTagsOnTable`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTagsOnTable`:
+  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 - `LFTagsOnColumns`:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]

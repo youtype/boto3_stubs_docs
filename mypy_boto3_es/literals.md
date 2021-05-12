@@ -3,44 +3,44 @@
 > [Index](..) > [ElasticsearchService](.) > Literals
 
 Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
 - [Literals for boto3 ElasticsearchService module](#literals-for-boto3-elasticsearchservice-module)
-  - [AutoTuneDesiredState](#autotunedesiredstate)
-  - [AutoTuneState](#autotunestate)
-  - [AutoTuneType](#autotunetype)
-  - [DeploymentStatus](#deploymentstatus)
-  - [DescribePackagesFilterName](#describepackagesfiltername)
+  - [AutoTuneDesiredStateType](#autotunedesiredstatetype)
+  - [AutoTuneStateType](#autotunestatetype)
+  - [AutoTuneTypeType](#autotunetypetype)
+  - [DeploymentStatusType](#deploymentstatustype)
+  - [DescribePackagesFilterNameType](#describepackagesfilternametype)
   - [DescribeReservedElasticsearchInstanceOfferingsPaginatorName](#describereservedelasticsearchinstanceofferingspaginatorname)
   - [DescribeReservedElasticsearchInstancesPaginatorName](#describereservedelasticsearchinstancespaginatorname)
-  - [DomainPackageStatus](#domainpackagestatus)
-  - [ESPartitionInstanceType](#espartitioninstancetype)
-  - [ESWarmPartitionInstanceType](#eswarmpartitioninstancetype)
+  - [DomainPackageStatusType](#domainpackagestatustype)
+  - [ESPartitionInstanceTypeType](#espartitioninstancetypetype)
+  - [ESWarmPartitionInstanceTypeType](#eswarmpartitioninstancetypetype)
   - [GetUpgradeHistoryPaginatorName](#getupgradehistorypaginatorname)
-  - [InboundCrossClusterSearchConnectionStatusCode](#inboundcrossclustersearchconnectionstatuscode)
+  - [InboundCrossClusterSearchConnectionStatusCodeType](#inboundcrossclustersearchconnectionstatuscodetype)
   - [ListElasticsearchInstanceTypesPaginatorName](#listelasticsearchinstancetypespaginatorname)
   - [ListElasticsearchVersionsPaginatorName](#listelasticsearchversionspaginatorname)
-  - [LogType](#logtype)
-  - [OptionState](#optionstate)
-  - [OutboundCrossClusterSearchConnectionStatusCode](#outboundcrossclustersearchconnectionstatuscode)
-  - [PackageStatus](#packagestatus)
-  - [PackageType](#packagetype)
-  - [ReservedElasticsearchInstancePaymentOption](#reservedelasticsearchinstancepaymentoption)
-  - [RollbackOnDisable](#rollbackondisable)
-  - [ScheduledAutoTuneActionType](#scheduledautotuneactiontype)
-  - [ScheduledAutoTuneSeverityType](#scheduledautotuneseveritytype)
-  - [TLSSecurityPolicy](#tlssecuritypolicy)
-  - [TimeUnit](#timeunit)
-  - [UpgradeStatus](#upgradestatus)
-  - [UpgradeStep](#upgradestep)
-  - [VolumeType](#volumetype)
+  - [LogTypeType](#logtypetype)
+  - [OptionStateType](#optionstatetype)
+  - [OutboundCrossClusterSearchConnectionStatusCodeType](#outboundcrossclustersearchconnectionstatuscodetype)
+  - [PackageStatusType](#packagestatustype)
+  - [PackageTypeType](#packagetypetype)
+  - [ReservedElasticsearchInstancePaymentOptionType](#reservedelasticsearchinstancepaymentoptiontype)
+  - [RollbackOnDisableType](#rollbackondisabletype)
+  - [ScheduledAutoTuneActionTypeType](#scheduledautotuneactiontypetype)
+  - [ScheduledAutoTuneSeverityTypeType](#scheduledautotuneseveritytypetype)
+  - [TLSSecurityPolicyType](#tlssecuritypolicytype)
+  - [TimeUnitType](#timeunittype)
+  - [UpgradeStatusType](#upgradestatustype)
+  - [UpgradeStepType](#upgradesteptype)
+  - [VolumeTypeType](#volumetypetype)
 
-## AutoTuneDesiredState
+## AutoTuneDesiredStateType
 
 ```python
-from mypy_boto3_es.literals import AutoTuneDesiredState
+from mypy_boto3_es.literals import AutoTuneDesiredStateType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## AutoTuneState
+## AutoTuneStateType
 
 ```python
-from mypy_boto3_es.literals import AutoTuneState
+from mypy_boto3_es.literals import AutoTuneStateType
 ```
 
 Values:
@@ -66,20 +66,20 @@ Values:
 - `ENABLED`
 - `ERROR`
 
-## AutoTuneType
+## AutoTuneTypeType
 
 ```python
-from mypy_boto3_es.literals import AutoTuneType
+from mypy_boto3_es.literals import AutoTuneTypeType
 ```
 
 Values:
 
 - `SCHEDULED_ACTION`
 
-## DeploymentStatus
+## DeploymentStatusType
 
 ```python
-from mypy_boto3_es.literals import DeploymentStatus
+from mypy_boto3_es.literals import DeploymentStatusType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `NOT_ELIGIBLE`
 - `PENDING_UPDATE`
 
-## DescribePackagesFilterName
+## DescribePackagesFilterNameType
 
 ```python
-from mypy_boto3_es.literals import DescribePackagesFilterName
+from mypy_boto3_es.literals import DescribePackagesFilterNameType
 ```
 
 Values:
@@ -122,10 +122,10 @@ Values:
 
 - `describe_reserved_elasticsearch_instances`
 
-## DomainPackageStatus
+## DomainPackageStatusType
 
 ```python
-from mypy_boto3_es.literals import DomainPackageStatus
+from mypy_boto3_es.literals import DomainPackageStatusType
 ```
 
 Values:
@@ -136,10 +136,10 @@ Values:
 - `DISSOCIATING`
 - `DISSOCIATION_FAILED`
 
-## ESPartitionInstanceType
+## ESPartitionInstanceTypeType
 
 ```python
-from mypy_boto3_es.literals import ESPartitionInstanceType
+from mypy_boto3_es.literals import ESPartitionInstanceTypeType
 ```
 
 Values:
@@ -203,10 +203,10 @@ Values:
 - `ultrawarm1.large.elasticsearch`
 - `ultrawarm1.medium.elasticsearch`
 
-## ESWarmPartitionInstanceType
+## ESWarmPartitionInstanceTypeType
 
 ```python
-from mypy_boto3_es.literals import ESWarmPartitionInstanceType
+from mypy_boto3_es.literals import ESWarmPartitionInstanceTypeType
 ```
 
 Values:
@@ -224,10 +224,10 @@ Values:
 
 - `get_upgrade_history`
 
-## InboundCrossClusterSearchConnectionStatusCode
+## InboundCrossClusterSearchConnectionStatusCodeType
 
 ```python
-from mypy_boto3_es.literals import InboundCrossClusterSearchConnectionStatusCode
+from mypy_boto3_es.literals import InboundCrossClusterSearchConnectionStatusCodeType
 ```
 
 Values:
@@ -259,10 +259,10 @@ Values:
 
 - `list_elasticsearch_versions`
 
-## LogType
+## LogTypeType
 
 ```python
-from mypy_boto3_es.literals import LogType
+from mypy_boto3_es.literals import LogTypeType
 ```
 
 Values:
@@ -272,10 +272,10 @@ Values:
 - `INDEX_SLOW_LOGS`
 - `SEARCH_SLOW_LOGS`
 
-## OptionState
+## OptionStateType
 
 ```python
-from mypy_boto3_es.literals import OptionState
+from mypy_boto3_es.literals import OptionStateType
 ```
 
 Values:
@@ -284,10 +284,10 @@ Values:
 - `Processing`
 - `RequiresIndexDocuments`
 
-## OutboundCrossClusterSearchConnectionStatusCode
+## OutboundCrossClusterSearchConnectionStatusCodeType
 
 ```python
-from mypy_boto3_es.literals import OutboundCrossClusterSearchConnectionStatusCode
+from mypy_boto3_es.literals import OutboundCrossClusterSearchConnectionStatusCodeType
 ```
 
 Values:
@@ -301,10 +301,10 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
-## PackageStatus
+## PackageStatusType
 
 ```python
-from mypy_boto3_es.literals import PackageStatus
+from mypy_boto3_es.literals import PackageStatusType
 ```
 
 Values:
@@ -318,20 +318,20 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
-## PackageType
+## PackageTypeType
 
 ```python
-from mypy_boto3_es.literals import PackageType
+from mypy_boto3_es.literals import PackageTypeType
 ```
 
 Values:
 
 - `TXT-DICTIONARY`
 
-## ReservedElasticsearchInstancePaymentOption
+## ReservedElasticsearchInstancePaymentOptionType
 
 ```python
-from mypy_boto3_es.literals import ReservedElasticsearchInstancePaymentOption
+from mypy_boto3_es.literals import ReservedElasticsearchInstancePaymentOptionType
 ```
 
 Values:
@@ -340,10 +340,10 @@ Values:
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
 
-## RollbackOnDisable
+## RollbackOnDisableType
 
 ```python
-from mypy_boto3_es.literals import RollbackOnDisable
+from mypy_boto3_es.literals import RollbackOnDisableType
 ```
 
 Values:
@@ -351,10 +351,10 @@ Values:
 - `DEFAULT_ROLLBACK`
 - `NO_ROLLBACK`
 
-## ScheduledAutoTuneActionType
+## ScheduledAutoTuneActionTypeType
 
 ```python
-from mypy_boto3_es.literals import ScheduledAutoTuneActionType
+from mypy_boto3_es.literals import ScheduledAutoTuneActionTypeType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `JVM_HEAP_SIZE_TUNING`
 - `JVM_YOUNG_GEN_TUNING`
 
-## ScheduledAutoTuneSeverityType
+## ScheduledAutoTuneSeverityTypeType
 
 ```python
-from mypy_boto3_es.literals import ScheduledAutoTuneSeverityType
+from mypy_boto3_es.literals import ScheduledAutoTuneSeverityTypeType
 ```
 
 Values:
@@ -374,10 +374,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## TLSSecurityPolicy
+## TLSSecurityPolicyType
 
 ```python
-from mypy_boto3_es.literals import TLSSecurityPolicy
+from mypy_boto3_es.literals import TLSSecurityPolicyType
 ```
 
 Values:
@@ -385,20 +385,20 @@ Values:
 - `Policy-Min-TLS-1-0-2019-07`
 - `Policy-Min-TLS-1-2-2019-07`
 
-## TimeUnit
+## TimeUnitType
 
 ```python
-from mypy_boto3_es.literals import TimeUnit
+from mypy_boto3_es.literals import TimeUnitType
 ```
 
 Values:
 
 - `HOURS`
 
-## UpgradeStatus
+## UpgradeStatusType
 
 ```python
-from mypy_boto3_es.literals import UpgradeStatus
+from mypy_boto3_es.literals import UpgradeStatusType
 ```
 
 Values:
@@ -408,10 +408,10 @@ Values:
 - `SUCCEEDED`
 - `SUCCEEDED_WITH_ISSUES`
 
-## UpgradeStep
+## UpgradeStepType
 
 ```python
-from mypy_boto3_es.literals import UpgradeStep
+from mypy_boto3_es.literals import UpgradeStepType
 ```
 
 Values:
@@ -420,10 +420,10 @@ Values:
 - `SNAPSHOT`
 - `UPGRADE`
 
-## VolumeType
+## VolumeTypeType
 
 ```python
-from mypy_boto3_es.literals import VolumeType
+from mypy_boto3_es.literals import VolumeTypeType
 ```
 
 Values:

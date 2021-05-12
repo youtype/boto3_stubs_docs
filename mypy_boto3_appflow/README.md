@@ -3,7 +3,7 @@
 > [Index](..) > Appflow
 
 Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow)
 type annotations stubs module
 [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
@@ -28,42 +28,42 @@ Can be used directly:
 from mypy_boto3_appflow.client import AppflowClient
 ```
 
-AppflowClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_connector_profile](./client.md#create-connector-profile)
-- [create_flow](./client.md#create-flow)
-- [delete_connector_profile](./client.md#delete-connector-profile)
-- [delete_flow](./client.md#delete-flow)
-- [describe_connector_entity](./client.md#describe-connector-entity)
-- [describe_connector_profiles](./client.md#describe-connector-profiles)
-- [describe_connectors](./client.md#describe-connectors)
-- [describe_flow](./client.md#describe-flow)
-- [describe_flow_execution_records](./client.md#describe-flow-execution-records)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_connector_entities](./client.md#list-connector-entities)
-- [list_flows](./client.md#list-flows)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_flow](./client.md#start-flow)
-- [stop_flow](./client.md#stop-flow)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_connector_profile](./client.md#update-connector-profile)
-- [update_flow](./client.md#update-flow)
+- [can_paginate](./client.md#can_paginate)
+- [create_connector_profile](./client.md#create_connector_profile)
+- [create_flow](./client.md#create_flow)
+- [delete_connector_profile](./client.md#delete_connector_profile)
+- [delete_flow](./client.md#delete_flow)
+- [describe_connector_entity](./client.md#describe_connector_entity)
+- [describe_connector_profiles](./client.md#describe_connector_profiles)
+- [describe_connectors](./client.md#describe_connectors)
+- [describe_flow](./client.md#describe_flow)
+- [describe_flow_execution_records](./client.md#describe_flow_execution_records)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_connector_entities](./client.md#list_connector_entities)
+- [list_flows](./client.md#list_flows)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_flow](./client.md#start_flow)
+- [stop_flow](./client.md#stop_flow)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_connector_profile](./client.md#update_connector_profile)
+- [update_flow](./client.md#update_flow)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ConnectorAuthenticationException](./client.md#connectorauthenticationexception)
-- [ConnectorServerException](./client.md#connectorserverexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
-- [ValidationException](./client.md#validationexception)
+AppflowClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- ConnectorAuthenticationException
+- ConnectorServerException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- UnsupportedOperationException
+- ValidationException
 
 ## Literals
 
@@ -72,38 +72,38 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appflow.literals import AggregationType, ...
+from mypy_boto3_appflow.literals import AggregationTypeType, ...
 ```
 
-- [AggregationType](./literals.md#aggregationtype)
-- [AmplitudeConnectorOperator](./literals.md#amplitudeconnectoroperator)
-- [ConnectionMode](./literals.md#connectionmode)
-- [ConnectorType](./literals.md#connectortype)
-- [DataPullMode](./literals.md#datapullmode)
-- [DatadogConnectorOperator](./literals.md#datadogconnectoroperator)
-- [DynatraceConnectorOperator](./literals.md#dynatraceconnectoroperator)
-- [ExecutionStatus](./literals.md#executionstatus)
-- [FileType](./literals.md#filetype)
-- [FlowStatus](./literals.md#flowstatus)
-- [GoogleAnalyticsConnectorOperator](./literals.md#googleanalyticsconnectoroperator)
-- [InforNexusConnectorOperator](./literals.md#infornexusconnectoroperator)
-- [MarketoConnectorOperator](./literals.md#marketoconnectoroperator)
-- [Operator](./literals.md#operator)
-- [OperatorPropertiesKeys](./literals.md#operatorpropertieskeys)
-- [PrefixFormat](./literals.md#prefixformat)
-- [PrefixType](./literals.md#prefixtype)
-- [S3ConnectorOperator](./literals.md#s3connectoroperator)
-- [SalesforceConnectorOperator](./literals.md#salesforceconnectoroperator)
-- [ScheduleFrequencyType](./literals.md#schedulefrequencytype)
-- [ServiceNowConnectorOperator](./literals.md#servicenowconnectoroperator)
-- [SingularConnectorOperator](./literals.md#singularconnectoroperator)
-- [SlackConnectorOperator](./literals.md#slackconnectoroperator)
-- [TaskType](./literals.md#tasktype)
-- [TrendmicroConnectorOperator](./literals.md#trendmicroconnectoroperator)
-- [TriggerType](./literals.md#triggertype)
-- [VeevaConnectorOperator](./literals.md#veevaconnectoroperator)
-- [WriteOperationType](./literals.md#writeoperationtype)
-- [ZendeskConnectorOperator](./literals.md#zendeskconnectoroperator)
+- [AggregationTypeType](./literals.md#aggregationtypetype)
+- [AmplitudeConnectorOperatorType](./literals.md#amplitudeconnectoroperatortype)
+- [ConnectionModeType](./literals.md#connectionmodetype)
+- [ConnectorTypeType](./literals.md#connectortypetype)
+- [DataPullModeType](./literals.md#datapullmodetype)
+- [DatadogConnectorOperatorType](./literals.md#datadogconnectoroperatortype)
+- [DynatraceConnectorOperatorType](./literals.md#dynatraceconnectoroperatortype)
+- [ExecutionStatusType](./literals.md#executionstatustype)
+- [FileTypeType](./literals.md#filetypetype)
+- [FlowStatusType](./literals.md#flowstatustype)
+- [GoogleAnalyticsConnectorOperatorType](./literals.md#googleanalyticsconnectoroperatortype)
+- [InforNexusConnectorOperatorType](./literals.md#infornexusconnectoroperatortype)
+- [MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype)
+- [OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype)
+- [OperatorType](./literals.md#operatortype)
+- [PrefixFormatType](./literals.md#prefixformattype)
+- [PrefixTypeType](./literals.md#prefixtypetype)
+- [S3ConnectorOperatorType](./literals.md#s3connectoroperatortype)
+- [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
+- [ScheduleFrequencyTypeType](./literals.md#schedulefrequencytypetype)
+- [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
+- [SingularConnectorOperatorType](./literals.md#singularconnectoroperatortype)
+- [SlackConnectorOperatorType](./literals.md#slackconnectoroperatortype)
+- [TaskTypeType](./literals.md#tasktypetype)
+- [TrendmicroConnectorOperatorType](./literals.md#trendmicroconnectoroperatortype)
+- [TriggerTypeType](./literals.md#triggertypetype)
+- [VeevaConnectorOperatorType](./literals.md#veevaconnectoroperatortype)
+- [WriteOperationTypeType](./literals.md#writeoperationtypetype)
+- [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 
 ## Typed dictionaries
 

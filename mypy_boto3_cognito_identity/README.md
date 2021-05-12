@@ -3,7 +3,7 @@
 > [Index](..) > CognitoIdentity
 
 Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
 [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
@@ -30,51 +30,51 @@ Can be used directly:
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 ```
 
-CognitoIdentityClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_identity_pool](./client.md#create-identity-pool)
-- [delete_identities](./client.md#delete-identities)
-- [delete_identity_pool](./client.md#delete-identity-pool)
-- [describe_identity](./client.md#describe-identity)
-- [describe_identity_pool](./client.md#describe-identity-pool)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_credentials_for_identity](./client.md#get-credentials-for-identity)
-- [get_id](./client.md#get-id)
-- [get_identity_pool_roles](./client.md#get-identity-pool-roles)
-- [get_open_id_token](./client.md#get-open-id-token)
-- [get_open_id_token_for_developer_identity](./client.md#get-open-id-token-for-developer-identity)
-- [get_paginator](./client.md#get-paginator)
-- [get_principal_tag_attribute_map](./client.md#get-principal-tag-attribute-map)
-- [list_identities](./client.md#list-identities)
-- [list_identity_pools](./client.md#list-identity-pools)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [lookup_developer_identity](./client.md#lookup-developer-identity)
-- [merge_developer_identities](./client.md#merge-developer-identities)
-- [set_identity_pool_roles](./client.md#set-identity-pool-roles)
-- [set_principal_tag_attribute_map](./client.md#set-principal-tag-attribute-map)
-- [tag_resource](./client.md#tag-resource)
-- [unlink_developer_identity](./client.md#unlink-developer-identity)
-- [unlink_identity](./client.md#unlink-identity)
-- [untag_resource](./client.md#untag-resource)
-- [update_identity_pool](./client.md#update-identity-pool)
+- [can_paginate](./client.md#can_paginate)
+- [create_identity_pool](./client.md#create_identity_pool)
+- [delete_identities](./client.md#delete_identities)
+- [delete_identity_pool](./client.md#delete_identity_pool)
+- [describe_identity](./client.md#describe_identity)
+- [describe_identity_pool](./client.md#describe_identity_pool)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_credentials_for_identity](./client.md#get_credentials_for_identity)
+- [get_id](./client.md#get_id)
+- [get_identity_pool_roles](./client.md#get_identity_pool_roles)
+- [get_open_id_token](./client.md#get_open_id_token)
+- [get_open_id_token_for_developer_identity](./client.md#get_open_id_token_for_developer_identity)
+- [get_paginator](./client.md#get_paginator)
+- [get_principal_tag_attribute_map](./client.md#get_principal_tag_attribute_map)
+- [list_identities](./client.md#list_identities)
+- [list_identity_pools](./client.md#list_identity_pools)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [lookup_developer_identity](./client.md#lookup_developer_identity)
+- [merge_developer_identities](./client.md#merge_developer_identities)
+- [set_identity_pool_roles](./client.md#set_identity_pool_roles)
+- [set_principal_tag_attribute_map](./client.md#set_principal_tag_attribute_map)
+- [tag_resource](./client.md#tag_resource)
+- [unlink_developer_identity](./client.md#unlink_developer_identity)
+- [unlink_identity](./client.md#unlink_identity)
+- [untag_resource](./client.md#untag_resource)
+- [update_identity_pool](./client.md#update_identity_pool)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [DeveloperUserAlreadyRegisteredException](./client.md#developeruseralreadyregisteredexception)
-- [ExternalServiceException](./client.md#externalserviceexception)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [InvalidIdentityPoolConfigurationException](./client.md#invalididentitypoolconfigurationexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotAuthorizedException](./client.md#notauthorizedexception)
-- [ResourceConflictException](./client.md#resourceconflictexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+CognitoIdentityClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- DeveloperUserAlreadyRegisteredException
+- ExternalServiceException
+- InternalErrorException
+- InvalidIdentityPoolConfigurationException
+- InvalidParameterException
+- LimitExceededException
+- NotAuthorizedException
+- ResourceConflictException
+- ResourceNotFoundException
+- TooManyRequestsException
 
 ## Paginators
 
@@ -96,14 +96,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionType, ...
+from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType, ...
 ```
 
-- [AmbiguousRoleResolutionType](./literals.md#ambiguousroleresolutiontype)
-- [ErrorCode](./literals.md#errorcode)
+- [AmbiguousRoleResolutionTypeType](./literals.md#ambiguousroleresolutiontypetype)
+- [ErrorCodeType](./literals.md#errorcodetype)
 - [ListIdentityPoolsPaginatorName](./literals.md#listidentitypoolspaginatorname)
-- [MappingRuleMatchType](./literals.md#mappingrulematchtype)
-- [RoleMappingType](./literals.md#rolemappingtype)
+- [MappingRuleMatchTypeType](./literals.md#mappingrulematchtypetype)
+- [RoleMappingTypeType](./literals.md#rolemappingtypetype)
 
 ## Typed dictionaries
 

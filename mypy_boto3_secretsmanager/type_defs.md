@@ -3,7 +3,7 @@
 > [Index](..) > [SecretsManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
 [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
@@ -123,7 +123,7 @@ from mypy_boto3_secretsmanager.type_defs import FilterTypeDef
 
 Optional fields:
 
-- `Key`: [FilterNameStringType](./literals.md#filternamestringtype)
+- `Key`: [FilterNameStringTypeType](./literals.md#filternamestringtypetype)
 - `Values`: `List`\[`str`\]
 
 ## GetRandomPasswordResponseTypeDef
@@ -271,7 +271,7 @@ Optional fields:
 
 - `Region`: `str`
 - `KmsKeyId`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
+- `Status`: [StatusTypeType](./literals.md#statustypetype)
 - `StatusMessage`: `str`
 - `LastAccessedDate`: `datetime`
 

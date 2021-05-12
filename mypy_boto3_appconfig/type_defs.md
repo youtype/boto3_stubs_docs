@@ -3,7 +3,7 @@
 > [Index](..) > [AppConfig](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
 [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
@@ -64,7 +64,8 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `LocationUri`: `str`
-- `ValidatorTypes`: `List`\[[ValidatorType](./literals.md#validatortype)\]
+- `ValidatorTypes`:
+  `List`\[[ValidatorTypeType](./literals.md#validatortypetype)\]
 
 ## ConfigurationProfileTypeDef
 
@@ -114,8 +115,8 @@ from mypy_boto3_appconfig.type_defs import DeploymentEventTypeDef
 
 Optional fields:
 
-- `EventType`: [DeploymentEventType](./literals.md#deploymenteventtype)
-- `TriggeredBy`: [TriggeredBy](./literals.md#triggeredby)
+- `EventType`: [DeploymentEventTypeType](./literals.md#deploymenteventtypetype)
+- `TriggeredBy`: [TriggeredByType](./literals.md#triggeredbytype)
 - `Description`: `str`
 - `OccurredAt`: `datetime`
 
@@ -143,10 +144,10 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthType](./literals.md#growthtype)
+- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
-- `ReplicateTo`: [ReplicateTo](./literals.md#replicateto)
+- `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype)
 
 ## DeploymentSummaryTypeDef
 
@@ -160,10 +161,10 @@ Optional fields:
 - `ConfigurationName`: `str`
 - `ConfigurationVersion`: `str`
 - `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthType](./literals.md#growthtype)
+- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
-- `State`: [DeploymentState](./literals.md#deploymentstate)
+- `State`: [DeploymentStateType](./literals.md#deploymentstatetype)
 - `PercentageComplete`: `float`
 - `StartedAt`: `datetime`
 - `CompletedAt`: `datetime`
@@ -186,10 +187,10 @@ Optional fields:
 - `ConfigurationVersion`: `str`
 - `Description`: `str`
 - `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthType](./literals.md#growthtype)
+- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
-- `State`: [DeploymentState](./literals.md#deploymentstate)
+- `State`: [DeploymentStateType](./literals.md#deploymentstatetype)
 - `EventLog`:
   `List`\[[DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef)\]
 - `PercentageComplete`: `float`
@@ -220,7 +221,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `State`: [EnvironmentState](./literals.md#environmentstate)
+- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
 - `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
 
 ## EnvironmentsTypeDef
@@ -304,5 +305,5 @@ from mypy_boto3_appconfig.type_defs import ValidatorTypeDef
 
 Required fields:
 
-- `Type`: [ValidatorType](./literals.md#validatortype)
+- `Type`: [ValidatorTypeType](./literals.md#validatortypetype)
 - `Content`: `str`

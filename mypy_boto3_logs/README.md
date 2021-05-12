@@ -3,7 +3,7 @@
 > [Index](..) > CloudWatchLogs
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -30,70 +30,70 @@ Can be used directly:
 from mypy_boto3_logs.client import CloudWatchLogsClient
 ```
 
-CloudWatchLogsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_kms_key](./client.md#associate-kms-key)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_export_task](./client.md#cancel-export-task)
-- [create_export_task](./client.md#create-export-task)
-- [create_log_group](./client.md#create-log-group)
-- [create_log_stream](./client.md#create-log-stream)
-- [delete_destination](./client.md#delete-destination)
-- [delete_log_group](./client.md#delete-log-group)
-- [delete_log_stream](./client.md#delete-log-stream)
-- [delete_metric_filter](./client.md#delete-metric-filter)
-- [delete_query_definition](./client.md#delete-query-definition)
-- [delete_resource_policy](./client.md#delete-resource-policy)
-- [delete_retention_policy](./client.md#delete-retention-policy)
-- [delete_subscription_filter](./client.md#delete-subscription-filter)
-- [describe_destinations](./client.md#describe-destinations)
-- [describe_export_tasks](./client.md#describe-export-tasks)
-- [describe_log_groups](./client.md#describe-log-groups)
-- [describe_log_streams](./client.md#describe-log-streams)
-- [describe_metric_filters](./client.md#describe-metric-filters)
-- [describe_queries](./client.md#describe-queries)
-- [describe_query_definitions](./client.md#describe-query-definitions)
-- [describe_resource_policies](./client.md#describe-resource-policies)
-- [describe_subscription_filters](./client.md#describe-subscription-filters)
-- [disassociate_kms_key](./client.md#disassociate-kms-key)
-- [filter_log_events](./client.md#filter-log-events)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_log_events](./client.md#get-log-events)
-- [get_log_group_fields](./client.md#get-log-group-fields)
-- [get_log_record](./client.md#get-log-record)
-- [get_paginator](./client.md#get-paginator)
-- [get_query_results](./client.md#get-query-results)
-- [list_tags_log_group](./client.md#list-tags-log-group)
-- [put_destination](./client.md#put-destination)
-- [put_destination_policy](./client.md#put-destination-policy)
-- [put_log_events](./client.md#put-log-events)
-- [put_metric_filter](./client.md#put-metric-filter)
-- [put_query_definition](./client.md#put-query-definition)
-- [put_resource_policy](./client.md#put-resource-policy)
-- [put_retention_policy](./client.md#put-retention-policy)
-- [put_subscription_filter](./client.md#put-subscription-filter)
-- [start_query](./client.md#start-query)
-- [stop_query](./client.md#stop-query)
-- [tag_log_group](./client.md#tag-log-group)
-- [test_metric_filter](./client.md#test-metric-filter)
-- [untag_log_group](./client.md#untag-log-group)
+- [associate_kms_key](./client.md#associate_kms_key)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_export_task](./client.md#cancel_export_task)
+- [create_export_task](./client.md#create_export_task)
+- [create_log_group](./client.md#create_log_group)
+- [create_log_stream](./client.md#create_log_stream)
+- [delete_destination](./client.md#delete_destination)
+- [delete_log_group](./client.md#delete_log_group)
+- [delete_log_stream](./client.md#delete_log_stream)
+- [delete_metric_filter](./client.md#delete_metric_filter)
+- [delete_query_definition](./client.md#delete_query_definition)
+- [delete_resource_policy](./client.md#delete_resource_policy)
+- [delete_retention_policy](./client.md#delete_retention_policy)
+- [delete_subscription_filter](./client.md#delete_subscription_filter)
+- [describe_destinations](./client.md#describe_destinations)
+- [describe_export_tasks](./client.md#describe_export_tasks)
+- [describe_log_groups](./client.md#describe_log_groups)
+- [describe_log_streams](./client.md#describe_log_streams)
+- [describe_metric_filters](./client.md#describe_metric_filters)
+- [describe_queries](./client.md#describe_queries)
+- [describe_query_definitions](./client.md#describe_query_definitions)
+- [describe_resource_policies](./client.md#describe_resource_policies)
+- [describe_subscription_filters](./client.md#describe_subscription_filters)
+- [disassociate_kms_key](./client.md#disassociate_kms_key)
+- [filter_log_events](./client.md#filter_log_events)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_log_events](./client.md#get_log_events)
+- [get_log_group_fields](./client.md#get_log_group_fields)
+- [get_log_record](./client.md#get_log_record)
+- [get_paginator](./client.md#get_paginator)
+- [get_query_results](./client.md#get_query_results)
+- [list_tags_log_group](./client.md#list_tags_log_group)
+- [put_destination](./client.md#put_destination)
+- [put_destination_policy](./client.md#put_destination_policy)
+- [put_log_events](./client.md#put_log_events)
+- [put_metric_filter](./client.md#put_metric_filter)
+- [put_query_definition](./client.md#put_query_definition)
+- [put_resource_policy](./client.md#put_resource_policy)
+- [put_retention_policy](./client.md#put_retention_policy)
+- [put_subscription_filter](./client.md#put_subscription_filter)
+- [start_query](./client.md#start_query)
+- [stop_query](./client.md#stop_query)
+- [tag_log_group](./client.md#tag_log_group)
+- [test_metric_filter](./client.md#test_metric_filter)
+- [untag_log_group](./client.md#untag_log_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DataAlreadyAcceptedException](./client.md#dataalreadyacceptedexception)
-- [InvalidOperationException](./client.md#invalidoperationexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidSequenceTokenException](./client.md#invalidsequencetokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [MalformedQueryException](./client.md#malformedqueryexception)
-- [OperationAbortedException](./client.md#operationabortedexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [UnrecognizedClientException](./client.md#unrecognizedclientexception)
+CloudWatchLogsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DataAlreadyAcceptedException
+- InvalidOperationException
+- InvalidParameterException
+- InvalidSequenceTokenException
+- LimitExceededException
+- MalformedQueryException
+- OperationAbortedException
+- ResourceAlreadyExistsException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- UnrecognizedClientException
 
 ## Paginators
 
@@ -134,11 +134,11 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [DescribeQueriesPaginatorName](./literals.md#describequeriespaginatorname)
 - [DescribeResourcePoliciesPaginatorName](./literals.md#describeresourcepoliciespaginatorname)
 - [DescribeSubscriptionFiltersPaginatorName](./literals.md#describesubscriptionfilterspaginatorname)
-- [Distribution](./literals.md#distribution)
-- [ExportTaskStatusCode](./literals.md#exporttaskstatuscode)
+- [DistributionType](./literals.md#distributiontype)
+- [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
 - [FilterLogEventsPaginatorName](./literals.md#filterlogeventspaginatorname)
-- [OrderBy](./literals.md#orderby)
-- [QueryStatus](./literals.md#querystatus)
+- [OrderByType](./literals.md#orderbytype)
+- [QueryStatusType](./literals.md#querystatustype)
 
 ## Typed dictionaries
 

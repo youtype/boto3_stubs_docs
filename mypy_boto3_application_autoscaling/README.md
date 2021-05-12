@@ -3,7 +3,7 @@
 > [Index](..) > ApplicationAutoScaling
 
 Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
 [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
@@ -30,34 +30,34 @@ Can be used directly:
 from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClient
 ```
 
-ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_scaling_policy](./client.md#delete-scaling-policy)
-- [delete_scheduled_action](./client.md#delete-scheduled-action)
-- [deregister_scalable_target](./client.md#deregister-scalable-target)
-- [describe_scalable_targets](./client.md#describe-scalable-targets)
-- [describe_scaling_activities](./client.md#describe-scaling-activities)
-- [describe_scaling_policies](./client.md#describe-scaling-policies)
-- [describe_scheduled_actions](./client.md#describe-scheduled-actions)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [put_scaling_policy](./client.md#put-scaling-policy)
-- [put_scheduled_action](./client.md#put-scheduled-action)
-- [register_scalable_target](./client.md#register-scalable-target)
+- [can_paginate](./client.md#can_paginate)
+- [delete_scaling_policy](./client.md#delete_scaling_policy)
+- [delete_scheduled_action](./client.md#delete_scheduled_action)
+- [deregister_scalable_target](./client.md#deregister_scalable_target)
+- [describe_scalable_targets](./client.md#describe_scalable_targets)
+- [describe_scaling_activities](./client.md#describe_scaling_activities)
+- [describe_scaling_policies](./client.md#describe_scaling_policies)
+- [describe_scheduled_actions](./client.md#describe_scheduled_actions)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [put_scaling_policy](./client.md#put_scaling_policy)
+- [put_scheduled_action](./client.md#put_scheduled_action)
+- [register_scalable_target](./client.md#register_scalable_target)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentUpdateException](./client.md#concurrentupdateexception)
-- [FailedResourceAccessException](./client.md#failedresourceaccessexception)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ObjectNotFoundException](./client.md#objectnotfoundexception)
-- [ValidationException](./client.md#validationexception)
+ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentUpdateException
+- FailedResourceAccessException
+- InternalServiceException
+- InvalidNextTokenException
+- LimitExceededException
+- ObjectNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -82,21 +82,21 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_application_autoscaling.literals import AdjustmentType, ...
+from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType, ...
 ```
 
-- [AdjustmentType](./literals.md#adjustmenttype)
+- [AdjustmentTypeType](./literals.md#adjustmenttypetype)
 - [DescribeScalableTargetsPaginatorName](./literals.md#describescalabletargetspaginatorname)
 - [DescribeScalingActivitiesPaginatorName](./literals.md#describescalingactivitiespaginatorname)
 - [DescribeScalingPoliciesPaginatorName](./literals.md#describescalingpoliciespaginatorname)
 - [DescribeScheduledActionsPaginatorName](./literals.md#describescheduledactionspaginatorname)
-- [MetricAggregationType](./literals.md#metricaggregationtype)
-- [MetricStatistic](./literals.md#metricstatistic)
-- [MetricType](./literals.md#metrictype)
-- [PolicyType](./literals.md#policytype)
-- [ScalableDimension](./literals.md#scalabledimension)
-- [ScalingActivityStatusCode](./literals.md#scalingactivitystatuscode)
-- [ServiceNamespace](./literals.md#servicenamespace)
+- [MetricAggregationTypeType](./literals.md#metricaggregationtypetype)
+- [MetricStatisticType](./literals.md#metricstatistictype)
+- [MetricTypeType](./literals.md#metrictypetype)
+- [PolicyTypeType](./literals.md#policytypetype)
+- [ScalableDimensionType](./literals.md#scalabledimensiontype)
+- [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
+- [ServiceNamespaceType](./literals.md#servicenamespacetype)
 
 ## Typed dictionaries
 

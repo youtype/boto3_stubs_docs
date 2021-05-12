@@ -3,7 +3,7 @@
 > [Index](..) > [Kendra](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
@@ -133,7 +133,7 @@ Required fields:
 
 - `Key`: `str`
 - `ValueType`: `Literal['TEXT_WITH_HIGHLIGHTS_VALUE']` (see
-  [AdditionalResultAttributeValueType](./literals.md#additionalresultattributevaluetype))
+  [AdditionalResultAttributeValueTypeType](./literals.md#additionalresultattributevaluetypetype))
 - `Value`:
   [AdditionalResultAttributeValueTypeDef](./type_defs.md#additionalresultattributevaluetypedef)
 
@@ -161,7 +161,8 @@ Optional fields:
 - `OrAllFilters`:
   `List`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
 - `NotFilter`: [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
-- `EqualsTo`: [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
+- `EqualsTo`:
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `ContainsAll`:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `ContainsAny`:
@@ -170,7 +171,8 @@ Optional fields:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `GreaterThanOrEquals`:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
-- `LessThan`: [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
+- `LessThan`:
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `LessThanOrEquals`:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 
@@ -183,7 +185,7 @@ from mypy_boto3_kendra.type_defs import BatchDeleteDocumentResponseFailedDocumen
 Optional fields:
 
 - `Id`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## BatchDeleteDocumentResponseTypeDef
@@ -206,7 +208,7 @@ from mypy_boto3_kendra.type_defs import BatchPutDocumentResponseFailedDocumentTy
 Optional fields:
 
 - `Id`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## BatchPutDocumentResponseTypeDef
@@ -281,7 +283,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceAttachmentToIndexFieldMappingT
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluenceAttachmentFieldName](./literals.md#confluenceattachmentfieldname)
+  [ConfluenceAttachmentFieldNameType](./literals.md#confluenceattachmentfieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -305,7 +307,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceBlogToIndexFieldMappingTypeDef
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluenceBlogFieldName](./literals.md#confluenceblogfieldname)
+  [ConfluenceBlogFieldNameType](./literals.md#confluenceblogfieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -319,7 +321,7 @@ Required fields:
 
 - `ServerUrl`: `str`
 - `SecretArn`: `str`
-- `Version`: [ConfluenceVersion](./literals.md#confluenceversion)
+- `Version`: [ConfluenceVersionType](./literals.md#confluenceversiontype)
 
 Optional fields:
 
@@ -356,7 +358,7 @@ from mypy_boto3_kendra.type_defs import ConfluencePageToIndexFieldMappingTypeDef
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluencePageFieldName](./literals.md#confluencepagefieldname)
+  [ConfluencePageFieldNameType](./literals.md#confluencepagefieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -384,7 +386,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceSpaceToIndexFieldMappingTypeDe
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluenceSpaceFieldName](./literals.md#confluencespacefieldname)
+  [ConfluenceSpaceFieldNameType](./literals.md#confluencespacefieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -477,10 +479,10 @@ Optional fields:
 
 - `Name`: `str`
 - `Id`: `str`
-- `Type`: [DataSourceType](./literals.md#datasourcetype)
+- `Type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 
 ## DataSourceSyncJobMetricTargetTypeDef
 
@@ -518,9 +520,10 @@ Optional fields:
 - `ExecutionId`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `Status`: [DataSourceSyncJobStatus](./literals.md#datasourcesyncjobstatus)
+- `Status`:
+  [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
 - `ErrorMessage`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `DataSourceErrorCode`: `str`
 - `Metrics`:
   [DataSourceSyncJobMetricsTypeDef](./type_defs.md#datasourcesyncjobmetricstypedef)
@@ -559,7 +562,8 @@ from mypy_boto3_kendra.type_defs import DatabaseConfigurationTypeDef
 
 Required fields:
 
-- `DatabaseEngineType`: [DatabaseEngineType](./literals.md#databaseenginetype)
+- `DatabaseEngineType`:
+  [DatabaseEngineTypeType](./literals.md#databaseenginetypetype)
 - `ConnectionConfiguration`:
   [ConnectionConfigurationTypeDef](./type_defs.md#connectionconfigurationtypedef)
 - `ColumnConfiguration`:
@@ -585,13 +589,13 @@ Optional fields:
 - `Id`: `str`
 - `IndexId`: `str`
 - `Name`: `str`
-- `Type`: [DataSourceType](./literals.md#datasourcetype)
+- `Type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
 - `Configuration`:
   [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `Description`: `str`
-- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 - `Schedule`: `str`
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
@@ -611,10 +615,10 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
-- `Status`: [FaqStatus](./literals.md#faqstatus)
+- `Status`: [FaqStatusType](./literals.md#faqstatustype)
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
-- `FileFormat`: [FaqFileFormat](./literals.md#faqfileformat)
+- `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 
 ## DescribeIndexResponseTypeDef
 
@@ -626,11 +630,11 @@ Optional fields:
 
 - `Name`: `str`
 - `Id`: `str`
-- `Edition`: [IndexEdition](./literals.md#indexedition)
+- `Edition`: [IndexEditionType](./literals.md#indexeditiontype)
 - `RoleArn`: `str`
 - `ServerSideEncryptionConfiguration`:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `Status`: [IndexStatus](./literals.md#indexstatus)
+- `Status`: [IndexStatusType](./literals.md#indexstatustype)
 - `Description`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
@@ -643,7 +647,8 @@ Optional fields:
   [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - `UserTokenConfigurations`:
   `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
-- `UserContextPolicy`: [UserContextPolicy](./literals.md#usercontextpolicy)
+- `UserContextPolicy`:
+  [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
 ## DescribeThesaurusResponseTypeDef
 
@@ -657,7 +662,7 @@ Optional fields:
 - `IndexId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`: [ThesaurusStatus](./literals.md#thesaurusstatus)
+- `Status`: [ThesaurusStatusType](./literals.md#thesaurusstatustype)
 - `ErrorMessage`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
@@ -713,7 +718,8 @@ from mypy_boto3_kendra.type_defs import DocumentMetadataConfigurationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [DocumentAttributeValueType](./literals.md#documentattributevaluetype)
+- `Type`:
+  [DocumentAttributeValueTypeType](./literals.md#documentattributevaluetypetype)
 
 Optional fields:
 
@@ -750,7 +756,7 @@ Optional fields:
   `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 - `AccessControlList`:
   `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
-- `ContentType`: [ContentType](./literals.md#contenttype)
+- `ContentType`: [ContentTypeType](./literals.md#contenttypetype)
 
 ## DocumentsMetadataConfigurationTypeDef
 
@@ -772,7 +778,7 @@ Optional fields:
 
 - `DocumentAttributeKey`: `str`
 - `DocumentAttributeValueType`:
-  [DocumentAttributeValueType](./literals.md#documentattributevaluetype)
+  [DocumentAttributeValueTypeType](./literals.md#documentattributevaluetypetype)
 - `DocumentAttributeValueCountPairs`:
   `List`\[[DocumentAttributeValueCountPairTypeDef](./type_defs.md#documentattributevaluecountpairtypedef)\]
 
@@ -806,10 +812,10 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: [FaqStatus](./literals.md#faqstatus)
+- `Status`: [FaqStatusType](./literals.md#faqstatustype)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `FileFormat`: [FaqFileFormat](./literals.md#faqfileformat)
+- `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 
 ## GoogleDriveConfigurationTypeDef
 
@@ -845,7 +851,7 @@ Required fields:
 Optional fields:
 
 - `TopAnswer`: `bool`
-- `Type`: [HighlightType](./literals.md#highlighttype)
+- `Type`: [HighlightTypeType](./literals.md#highlighttypetype)
 
 ## IndexConfigurationSummaryTypeDef
 
@@ -857,13 +863,13 @@ Required fields:
 
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `Status`: [IndexStatus](./literals.md#indexstatus)
+- `Status`: [IndexStatusType](./literals.md#indexstatustype)
 
 Optional fields:
 
 - `Name`: `str`
 - `Id`: `str`
-- `Edition`: [IndexEdition](./literals.md#indexedition)
+- `Edition`: [IndexEditionType](./literals.md#indexeditiontype)
 
 ## IndexStatisticsTypeDef
 
@@ -896,7 +902,7 @@ from mypy_boto3_kendra.type_defs import JwtTokenTypeConfigurationTypeDef
 
 Required fields:
 
-- `KeyLocation`: [KeyLocation](./literals.md#keylocation)
+- `KeyLocation`: [KeyLocationType](./literals.md#keylocationtype)
 
 Optional fields:
 
@@ -1017,8 +1023,8 @@ from mypy_boto3_kendra.type_defs import PrincipalTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [PrincipalType](./literals.md#principaltype)
-- `Access`: [ReadAccessType](./literals.md#readaccesstype)
+- `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
+- `Access`: [ReadAccessTypeType](./literals.md#readaccesstypetype)
 
 ## QueryResultItemTypeDef
 
@@ -1029,7 +1035,7 @@ from mypy_boto3_kendra.type_defs import QueryResultItemTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`: [QueryResultType](./literals.md#queryresulttype)
+- `Type`: [QueryResultTypeType](./literals.md#queryresulttypetype)
 - `AdditionalAttributes`:
   `List`\[[AdditionalResultAttributeTypeDef](./type_defs.md#additionalresultattributetypedef)\]
 - `DocumentId`: `str`
@@ -1068,7 +1074,7 @@ from mypy_boto3_kendra.type_defs import RelevanceFeedbackTypeDef
 Required fields:
 
 - `ResultId`: `str`
-- `RelevanceValue`: [RelevanceType](./literals.md#relevancetype)
+- `RelevanceValue`: [RelevanceTypeType](./literals.md#relevancetypetype)
 
 ## RelevanceTypeDef
 
@@ -1081,7 +1087,7 @@ Optional fields:
 - `Freshness`: `bool`
 - `Importance`: `int`
 - `Duration`: `str`
-- `RankOrder`: [Order](./literals.md#order)
+- `RankOrder`: [OrderType](./literals.md#ordertype)
 - `ValueImportanceMap`: `Dict`\[`str`, `int`\]
 
 ## S3DataSourceConfigurationTypeDef
@@ -1131,7 +1137,7 @@ Optional fields:
 - `FieldMappings`:
   `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `IncludeFilterTypes`:
-  `List`\[[SalesforceChatterFeedIncludeFilterType](./literals.md#salesforcechatterfeedincludefiltertype)\]
+  `List`\[[SalesforceChatterFeedIncludeFilterTypeType](./literals.md#salesforcechatterfeedincludefiltertypetype)\]
 
 ## SalesforceConfigurationTypeDef
 
@@ -1184,7 +1190,7 @@ from mypy_boto3_kendra.type_defs import SalesforceKnowledgeArticleConfigurationT
 Required fields:
 
 - `IncludedStates`:
-  `List`\[[SalesforceKnowledgeArticleState](./literals.md#salesforceknowledgearticlestate)\]
+  `List`\[[SalesforceKnowledgeArticleStateType](./literals.md#salesforceknowledgearticlestatetype)\]
 
 Optional fields:
 
@@ -1230,7 +1236,7 @@ from mypy_boto3_kendra.type_defs import SalesforceStandardObjectConfigurationTyp
 Required fields:
 
 - `Name`:
-  [SalesforceStandardObjectName](./literals.md#salesforcestandardobjectname)
+  [SalesforceStandardObjectNameType](./literals.md#salesforcestandardobjectnametype)
 - `DocumentDataFieldName`: `str`
 
 Optional fields:
@@ -1247,7 +1253,7 @@ from mypy_boto3_kendra.type_defs import ScoreAttributesTypeDef
 
 Optional fields:
 
-- `ScoreConfidence`: [ScoreConfidence](./literals.md#scoreconfidence)
+- `ScoreConfidence`: [ScoreConfidenceType](./literals.md#scoreconfidencetype)
 
 ## SearchTypeDef
 
@@ -1283,7 +1289,7 @@ Required fields:
 - `HostUrl`: `str`
 - `SecretArn`: `str`
 - `ServiceNowBuildVersion`:
-  [ServiceNowBuildVersionType](./literals.md#servicenowbuildversiontype)
+  [ServiceNowBuildVersionTypeType](./literals.md#servicenowbuildversiontypetype)
 
 Optional fields:
 
@@ -1292,7 +1298,7 @@ Optional fields:
 - `ServiceCatalogConfiguration`:
   [ServiceNowServiceCatalogConfigurationTypeDef](./type_defs.md#servicenowservicecatalogconfigurationtypedef)
 - `AuthenticationType`:
-  [ServiceNowAuthenticationType](./literals.md#servicenowauthenticationtype)
+  [ServiceNowAuthenticationTypeType](./literals.md#servicenowauthenticationtypetype)
 
 ## ServiceNowKnowledgeArticleConfigurationTypeDef
 
@@ -1342,7 +1348,7 @@ from mypy_boto3_kendra.type_defs import SharePointConfigurationTypeDef
 Required fields:
 
 - `SharePointVersion`: `Literal['SHAREPOINT_ONLINE']` (see
-  [SharePointVersion](./literals.md#sharepointversion))
+  [SharePointVersionType](./literals.md#sharepointversiontype))
 - `Urls`: `List`\[`str`\]
 - `SecretArn`: `str`
 
@@ -1368,7 +1374,7 @@ from mypy_boto3_kendra.type_defs import SortingConfigurationTypeDef
 Required fields:
 
 - `DocumentAttributeKey`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 ## SqlConfigurationTypeDef
 
@@ -1379,7 +1385,7 @@ from mypy_boto3_kendra.type_defs import SqlConfigurationTypeDef
 Optional fields:
 
 - `QueryIdentifiersEnclosingOption`:
-  [QueryIdentifiersEnclosingOption](./literals.md#queryidentifiersenclosingoption)
+  [QueryIdentifiersEnclosingOptionType](./literals.md#queryidentifiersenclosingoptiontype)
 
 ## StartDataSourceSyncJobResponseTypeDef
 
@@ -1434,7 +1440,7 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: [ThesaurusStatus](./literals.md#thesaurusstatus)
+- `Status`: [ThesaurusStatusType](./literals.md#thesaurusstatustype)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 

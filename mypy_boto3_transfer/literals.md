@@ -3,23 +3,23 @@
 > [Index](..) > [Transfer](.) > Literals
 
 Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer)
 type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Literals for boto3 Transfer module](#literals-for-boto3-transfer-module)
-  - [Domain](#domain)
-  - [EndpointType](#endpointtype)
-  - [HomeDirectoryType](#homedirectorytype)
-  - [IdentityProviderType](#identityprovidertype)
+  - [DomainType](#domaintype)
+  - [EndpointTypeType](#endpointtypetype)
+  - [HomeDirectoryTypeType](#homedirectorytypetype)
+  - [IdentityProviderTypeType](#identityprovidertypetype)
   - [ListServersPaginatorName](#listserverspaginatorname)
   - [ProtocolType](#protocoltype)
-  - [State](#state)
+  - [StateType](#statetype)
 
-## Domain
+## DomainType
 
 ```python
-from mypy_boto3_transfer.literals import Domain
+from mypy_boto3_transfer.literals import DomainType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `EFS`
 - `S3`
 
-## EndpointType
+## EndpointTypeType
 
 ```python
-from mypy_boto3_transfer.literals import EndpointType
+from mypy_boto3_transfer.literals import EndpointTypeType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 - `VPC`
 - `VPC_ENDPOINT`
 
-## HomeDirectoryType
+## HomeDirectoryTypeType
 
 ```python
-from mypy_boto3_transfer.literals import HomeDirectoryType
+from mypy_boto3_transfer.literals import HomeDirectoryTypeType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `LOGICAL`
 - `PATH`
 
-## IdentityProviderType
+## IdentityProviderTypeType
 
 ```python
-from mypy_boto3_transfer.literals import IdentityProviderType
+from mypy_boto3_transfer.literals import IdentityProviderTypeType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 - `FTPS`
 - `SFTP`
 
-## State
+## StateType
 
 ```python
-from mypy_boto3_transfer.literals import State
+from mypy_boto3_transfer.literals import StateType
 ```
 
 Values:

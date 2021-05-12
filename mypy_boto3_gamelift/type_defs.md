@@ -3,7 +3,7 @@
 > [Index](..) > [GameLift](.) > Typed dictionaries
 
 Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/gamelift.html#GameLift)
 type annotations stubs module
 [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
@@ -200,9 +200,9 @@ Optional fields:
 - `BuildArn`: `str`
 - `Name`: `str`
 - `Version`: `str`
-- `Status`: [BuildStatus](./literals.md#buildstatus)
+- `Status`: [BuildStatusType](./literals.md#buildstatustype)
 - `SizeOnDisk`: `int`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `CreationTime`: `datetime`
 
 ## CertificateConfigurationTypeDef
@@ -213,7 +213,7 @@ from mypy_boto3_gamelift.type_defs import CertificateConfigurationTypeDef
 
 Required fields:
 
-- `CertificateType`: [CertificateType](./literals.md#certificatetype)
+- `CertificateType`: [CertificateTypeType](./literals.md#certificatetypetype)
 
 ## ClaimGameServerOutputTypeDef
 
@@ -558,7 +558,7 @@ Required fields:
 - `InboundPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `UpdateStatus`: `Literal['PENDING_UPDATE']` (see
-  [LocationUpdateStatus](./literals.md#locationupdatestatus))
+  [LocationUpdateStatusType](./literals.md#locationupdatestatustype))
 - `Location`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -839,7 +839,7 @@ from mypy_boto3_gamelift.type_defs import EC2InstanceLimitTypeDef
 
 Optional fields:
 
-- `EC2InstanceType`: [EC2InstanceType](./literals.md#ec2instancetype)
+- `EC2InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
 - `CurrentInstances`: `int`
 - `InstanceLimit`: `int`
 - `Location`: `str`
@@ -854,7 +854,7 @@ Optional fields:
 
 - `EventId`: `str`
 - `ResourceId`: `str`
-- `EventCode`: [EventCode](./literals.md#eventcode)
+- `EventCode`: [EventCodeType](./literals.md#eventcodetype)
 - `Message`: `str`
 - `EventTime`: `datetime`
 - `PreSignedLogUrl`: `str`
@@ -879,13 +879,13 @@ Optional fields:
 
 - `FleetId`: `str`
 - `FleetArn`: `str`
-- `FleetType`: [FleetType](./literals.md#fleettype)
-- `InstanceType`: [EC2InstanceType](./literals.md#ec2instancetype)
+- `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
+- `InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
 - `Description`: `str`
 - `Name`: `str`
 - `CreationTime`: `datetime`
 - `TerminationTime`: `datetime`
-- `Status`: [FleetStatus](./literals.md#fleetstatus)
+- `Status`: [FleetStatusType](./literals.md#fleetstatustype)
 - `BuildId`: `str`
 - `BuildArn`: `str`
 - `ScriptId`: `str`
@@ -894,13 +894,13 @@ Optional fields:
 - `ServerLaunchParameters`: `str`
 - `LogPaths`: `List`\[`str`\]
 - `NewGameSessionProtectionPolicy`:
-  [ProtectionPolicy](./literals.md#protectionpolicy)
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+  [ProtectionPolicyType](./literals.md#protectionpolicytype)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `ResourceCreationLimitPolicy`:
   [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
 - `MetricGroups`: `List`\[`str`\]
 - `StoppedActions`: `List`\[`Literal['AUTO_SCALING']` (see
-  [FleetAction](./literals.md#fleetaction))\]
+  [FleetActionType](./literals.md#fleetactiontype))\]
 - `InstanceRoleArn`: `str`
 - `CertificateConfiguration`:
   [CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef)
@@ -915,7 +915,7 @@ Optional fields:
 
 - `FleetId`: `str`
 - `FleetArn`: `str`
-- `InstanceType`: [EC2InstanceType](./literals.md#ec2instancetype)
+- `InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
 - `InstanceCounts`:
   [EC2InstanceCountsTypeDef](./type_defs.md#ec2instancecountstypedef)
 - `Location`: `str`
@@ -975,14 +975,16 @@ Optional fields:
 - `RoleArn`: `str`
 - `InstanceDefinitions`:
   `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
-- `BalancingStrategy`: [BalancingStrategy](./literals.md#balancingstrategy)
+- `BalancingStrategy`:
+  [BalancingStrategyType](./literals.md#balancingstrategytype)
 - `GameServerProtectionPolicy`:
-  [GameServerProtectionPolicy](./literals.md#gameserverprotectionpolicy)
+  [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
 - `AutoScalingGroupArn`: `str`
-- `Status`: [GameServerGroupStatus](./literals.md#gameservergroupstatus)
+- `Status`:
+  [GameServerGroupStatusType](./literals.md#gameservergroupstatustype)
 - `StatusReason`: `str`
 - `SuspendedActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
-  [GameServerGroupAction](./literals.md#gameservergroupaction))\]
+  [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
@@ -998,7 +1000,7 @@ Optional fields:
 - `GameServerGroupArn`: `str`
 - `InstanceId`: `str`
 - `InstanceStatus`:
-  [GameServerInstanceStatus](./literals.md#gameserverinstancestatus)
+  [GameServerInstanceStatusType](./literals.md#gameserverinstancestatustype)
 
 ## GameServerTypeDef
 
@@ -1015,9 +1017,9 @@ Optional fields:
 - `ConnectionInfo`: `str`
 - `GameServerData`: `str`
 - `ClaimStatus`: `Literal['CLAIMED']` (see
-  [GameServerClaimStatus](./literals.md#gameserverclaimstatus))
+  [GameServerClaimStatusType](./literals.md#gameserverclaimstatustype))
 - `UtilizationStatus`:
-  [GameServerUtilizationStatus](./literals.md#gameserverutilizationstatus)
+  [GameServerUtilizationStatusType](./literals.md#gameserverutilizationstatustype)
 - `RegistrationTime`: `datetime`
 - `LastClaimTime`: `datetime`
 - `LastHealthCheckTime`: `datetime`
@@ -1046,7 +1048,8 @@ from mypy_boto3_gamelift.type_defs import GameSessionDetailTypeDef
 Optional fields:
 
 - `GameSession`: [GameSessionTypeDef](./type_defs.md#gamesessiontypedef)
-- `ProtectionPolicy`: [ProtectionPolicy](./literals.md#protectionpolicy)
+- `ProtectionPolicy`:
+  [ProtectionPolicyType](./literals.md#protectionpolicytype)
 
 ## GameSessionPlacementTypeDef
 
@@ -1058,7 +1061,8 @@ Optional fields:
 
 - `PlacementId`: `str`
 - `GameSessionQueueName`: `str`
-- `Status`: [GameSessionPlacementState](./literals.md#gamesessionplacementstate)
+- `Status`:
+  [GameSessionPlacementStateType](./literals.md#gamesessionplacementstatetype)
 - `GameProperties`:
   `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `MaximumPlayerSessionCount`: `int`
@@ -1126,16 +1130,16 @@ Optional fields:
 - `TerminationTime`: `datetime`
 - `CurrentPlayerSessionCount`: `int`
 - `MaximumPlayerSessionCount`: `int`
-- `Status`: [GameSessionStatus](./literals.md#gamesessionstatus)
+- `Status`: [GameSessionStatusType](./literals.md#gamesessionstatustype)
 - `StatusReason`: `Literal['INTERRUPTED']` (see
-  [GameSessionStatusReason](./literals.md#gamesessionstatusreason))
+  [GameSessionStatusReasonType](./literals.md#gamesessionstatusreasontype))
 - `GameProperties`:
   `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `IpAddress`: `str`
 - `DnsName`: `str`
 - `Port`: `int`
 - `PlayerSessionCreationPolicy`:
-  [PlayerSessionCreationPolicy](./literals.md#playersessioncreationpolicy)
+  [PlayerSessionCreationPolicyType](./literals.md#playersessioncreationpolicytype)
 - `CreatorId`: `str`
 - `GameSessionData`: `str`
 - `MatchmakerData`: `str`
@@ -1161,7 +1165,8 @@ from mypy_boto3_gamelift.type_defs import GetInstanceAccessOutputTypeDef
 
 Required fields:
 
-- `InstanceAccess`: [InstanceAccessTypeDef](./type_defs.md#instanceaccesstypedef)
+- `InstanceAccess`:
+  [InstanceAccessTypeDef](./type_defs.md#instanceaccesstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1176,7 +1181,7 @@ Optional fields:
 - `FleetId`: `str`
 - `InstanceId`: `str`
 - `IpAddress`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `Credentials`:
   [InstanceCredentialsTypeDef](./type_defs.md#instancecredentialstypedef)
 
@@ -1200,7 +1205,7 @@ from mypy_boto3_gamelift.type_defs import InstanceDefinitionTypeDef
 Required fields:
 
 - `InstanceType`:
-  [GameServerGroupInstanceType](./literals.md#gameservergroupinstancetype)
+  [GameServerGroupInstanceTypeType](./literals.md#gameservergroupinstancetypetype)
 
 Optional fields:
 
@@ -1219,9 +1224,9 @@ Optional fields:
 - `InstanceId`: `str`
 - `IpAddress`: `str`
 - `DnsName`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
-- `Type`: [EC2InstanceType](./literals.md#ec2instancetype)
-- `Status`: [InstanceStatus](./literals.md#instancestatus)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+- `Type`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
+- `Status`: [InstanceStatusType](./literals.md#instancestatustype)
 - `CreationTime`: `datetime`
 - `Location`: `str`
 
@@ -1236,7 +1241,7 @@ Required fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 - `IpRange`: `str`
-- `Protocol`: [IpProtocol](./literals.md#ipprotocol)
+- `Protocol`: [IpProtocolType](./literals.md#ipprotocoltype)
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -1311,7 +1316,8 @@ from mypy_boto3_gamelift.type_defs import ListGameServersOutputTypeDef
 
 Required fields:
 
-- `GameServers`: `List`\[[GameServerTypeDef](./type_defs.md#gameservertypedef)\]
+- `GameServers`:
+  `List`\[[GameServerTypeDef](./type_defs.md#gameservertypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1349,9 +1355,9 @@ Optional fields:
 
 - `LocationState`: [LocationStateTypeDef](./type_defs.md#locationstatetypedef)
 - `StoppedActions`: `List`\[`Literal['AUTO_SCALING']` (see
-  [FleetAction](./literals.md#fleetaction))\]
+  [FleetActionType](./literals.md#fleetactiontype))\]
 - `UpdateStatus`: `Literal['PENDING_UPDATE']` (see
-  [LocationUpdateStatus](./literals.md#locationupdatestatus))
+  [LocationUpdateStatusType](./literals.md#locationupdatestatustype))
 
 ## LocationConfigurationTypeDef
 
@@ -1372,7 +1378,7 @@ from mypy_boto3_gamelift.type_defs import LocationStateTypeDef
 Optional fields:
 
 - `Location`: `str`
-- `Status`: [FleetStatus](./literals.md#fleetstatus)
+- `Status`: [FleetStatusType](./literals.md#fleetstatustype)
 
 ## MatchedPlayerSessionTypeDef
 
@@ -1409,8 +1415,8 @@ Optional fields:
 - `GameProperties`:
   `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
-- `BackfillMode`: [BackfillMode](./literals.md#backfillmode)
-- `FlexMatchMode`: [FlexMatchMode](./literals.md#flexmatchmode)
+- `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
+- `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 
 ## MatchmakingRuleSetTypeDef
 
@@ -1440,7 +1446,7 @@ Optional fields:
 - `ConfigurationName`: `str`
 - `ConfigurationArn`: `str`
 - `Status`:
-  [MatchmakingConfigurationStatus](./literals.md#matchmakingconfigurationstatus)
+  [MatchmakingConfigurationStatusType](./literals.md#matchmakingconfigurationstatustype)
 - `StatusReason`: `str`
 - `StatusMessage`: `str`
 - `StartTime`: `datetime`
@@ -1511,7 +1517,7 @@ Optional fields:
 - `FleetArn`: `str`
 - `CreationTime`: `datetime`
 - `TerminationTime`: `datetime`
-- `Status`: [PlayerSessionStatus](./literals.md#playersessionstatus)
+- `Status`: [PlayerSessionStatusType](./literals.md#playersessionstatustype)
 - `IpAddress`: `str`
 - `DnsName`: `str`
 - `Port`: `int`
@@ -1539,7 +1545,7 @@ from mypy_boto3_gamelift.type_defs import PriorityConfigurationTypeDef
 
 Optional fields:
 
-- `PriorityOrder`: `List`\[[PriorityType](./literals.md#prioritytype)\]
+- `PriorityOrder`: `List`\[[PriorityTypeType](./literals.md#prioritytypetype)\]
 - `LocationOrder`: `List`\[`str`\]
 
 ## PutScalingPolicyOutputTypeDef
@@ -1639,7 +1645,7 @@ from mypy_boto3_gamelift.type_defs import RoutingStrategyTypeDef
 
 Optional fields:
 
-- `Type`: [RoutingStrategyType](./literals.md#routingstrategytype)
+- `Type`: [RoutingStrategyTypeType](./literals.md#routingstrategytypetype)
 - `FleetId`: `str`
 - `Message`: `str`
 
@@ -1680,20 +1686,20 @@ Optional fields:
 - `FleetId`: `str`
 - `FleetArn`: `str`
 - `Name`: `str`
-- `Status`: [ScalingStatusType](./literals.md#scalingstatustype)
+- `Status`: [ScalingStatusTypeType](./literals.md#scalingstatustypetype)
 - `ScalingAdjustment`: `int`
 - `ScalingAdjustmentType`:
-  [ScalingAdjustmentType](./literals.md#scalingadjustmenttype)
+  [ScalingAdjustmentTypeType](./literals.md#scalingadjustmenttypetype)
 - `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
+  [ComparisonOperatorTypeType](./literals.md#comparisonoperatortypetype)
 - `Threshold`: `float`
 - `EvaluationPeriods`: `int`
-- `MetricName`: [MetricName](./literals.md#metricname)
-- `PolicyType`: [PolicyType](./literals.md#policytype)
+- `MetricName`: [MetricNameType](./literals.md#metricnametype)
+- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
 - `TargetConfiguration`:
   [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 - `UpdateStatus`: `Literal['PENDING_UPDATE']` (see
-  [LocationUpdateStatus](./literals.md#locationupdatestatus))
+  [LocationUpdateStatusType](./literals.md#locationupdatestatustype))
 - `Location`: `str`
 
 ## ScriptTypeDef

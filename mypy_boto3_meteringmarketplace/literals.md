@@ -3,17 +3,17 @@
 > [Index](..) > [MarketplaceMetering](.) > Literals
 
 Auto-generated documentation for
-[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
+[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
 [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [Literals for boto3 MarketplaceMetering module](#literals-for-boto3-marketplacemetering-module)
-  - [UsageRecordResultStatus](#usagerecordresultstatus)
+  - [UsageRecordResultStatusType](#usagerecordresultstatustype)
 
-## UsageRecordResultStatus
+## UsageRecordResultStatusType
 
 ```python
-from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatus
+from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatusType
 ```
 
 Values:

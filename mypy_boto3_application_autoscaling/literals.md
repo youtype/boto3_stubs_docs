@@ -3,28 +3,28 @@
 > [Index](..) > [ApplicationAutoScaling](.) > Literals
 
 Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
 [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 - [Literals for boto3 ApplicationAutoScaling module](#literals-for-boto3-applicationautoscaling-module)
-  - [AdjustmentType](#adjustmenttype)
+  - [AdjustmentTypeType](#adjustmenttypetype)
   - [DescribeScalableTargetsPaginatorName](#describescalabletargetspaginatorname)
   - [DescribeScalingActivitiesPaginatorName](#describescalingactivitiespaginatorname)
   - [DescribeScalingPoliciesPaginatorName](#describescalingpoliciespaginatorname)
   - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
-  - [MetricAggregationType](#metricaggregationtype)
-  - [MetricStatistic](#metricstatistic)
-  - [MetricType](#metrictype)
-  - [PolicyType](#policytype)
-  - [ScalableDimension](#scalabledimension)
-  - [ScalingActivityStatusCode](#scalingactivitystatuscode)
-  - [ServiceNamespace](#servicenamespace)
+  - [MetricAggregationTypeType](#metricaggregationtypetype)
+  - [MetricStatisticType](#metricstatistictype)
+  - [MetricTypeType](#metrictypetype)
+  - [PolicyTypeType](#policytypetype)
+  - [ScalableDimensionType](#scalabledimensiontype)
+  - [ScalingActivityStatusCodeType](#scalingactivitystatuscodetype)
+  - [ServiceNamespaceType](#servicenamespacetype)
 
-## AdjustmentType
+## AdjustmentTypeType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import AdjustmentType
+from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 
 - `describe_scheduled_actions`
 
-## MetricAggregationType
+## MetricAggregationTypeType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import MetricAggregationType
+from mypy_boto3_application_autoscaling.literals import MetricAggregationTypeType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `Maximum`
 - `Minimum`
 
-## MetricStatistic
+## MetricStatisticType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import MetricStatistic
+from mypy_boto3_application_autoscaling.literals import MetricStatisticType
 ```
 
 Values:
@@ -99,10 +99,10 @@ Values:
 - `SampleCount`
 - `Sum`
 
-## MetricType
+## MetricTypeType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import MetricType
+from mypy_boto3_application_autoscaling.literals import MetricTypeType
 ```
 
 Values:
@@ -125,10 +125,10 @@ Values:
 - `RDSReaderAverageDatabaseConnections`
 - `SageMakerVariantInvocationsPerInstance`
 
-## PolicyType
+## PolicyTypeType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import PolicyType
+from mypy_boto3_application_autoscaling.literals import PolicyTypeType
 ```
 
 Values:
@@ -136,10 +136,10 @@ Values:
 - `StepScaling`
 - `TargetTrackingScaling`
 
-## ScalableDimension
+## ScalableDimensionType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import ScalableDimension
+from mypy_boto3_application_autoscaling.literals import ScalableDimensionType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `rds:cluster:ReadReplicaCount`
 - `sagemaker:variant:DesiredInstanceCount`
 
-## ScalingActivityStatusCode
+## ScalingActivityStatusCodeType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import ScalingActivityStatusCode
+from mypy_boto3_application_autoscaling.literals import ScalingActivityStatusCodeType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `Successful`
 - `Unfulfilled`
 
-## ServiceNamespace
+## ServiceNamespaceType
 
 ```python
-from mypy_boto3_application_autoscaling.literals import ServiceNamespace
+from mypy_boto3_application_autoscaling.literals import ServiceNamespaceType
 ```
 
 Values:

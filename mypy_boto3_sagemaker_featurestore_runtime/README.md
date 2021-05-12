@@ -3,7 +3,7 @@
 > [Index](..) > SagemakerFeatureStoreRuntime
 
 Auto-generated documentation for
-[SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
+[SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
@@ -28,24 +28,24 @@ Can be used directly:
 from mypy_boto3_sagemaker_featurestore_runtime.client import SagemakerFeatureStoreRuntimeClient
 ```
 
-SagemakerFeatureStoreRuntimeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_record](./client.md#delete-record)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_record](./client.md#get-record)
-- [put_record](./client.md#put-record)
+- [can_paginate](./client.md#can_paginate)
+- [delete_record](./client.md#delete_record)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_record](./client.md#get_record)
+- [put_record](./client.md#put_record)
 
 ### Exceptions
 
-- [AccessForbidden](./client.md#accessforbidden)
-- [ClientError](./client.md#clienterror)
-- [InternalFailure](./client.md#internalfailure)
-- [ResourceNotFound](./client.md#resourcenotfound)
-- [ServiceUnavailable](./client.md#serviceunavailable)
-- [ValidationError](./client.md#validationerror)
+SagemakerFeatureStoreRuntimeClient [exceptions](./client.md#exceptions)
+
+- AccessForbidden
+- ClientError
+- InternalFailure
+- ResourceNotFound
+- ServiceUnavailable
+- ValidationError
 
 ## Typed dictionaries
 

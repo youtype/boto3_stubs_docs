@@ -3,20 +3,20 @@
 > [Index](..) > [WorkSpaces](.) > Literals
 
 Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
 [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 - [Literals for boto3 WorkSpaces module](#literals-for-boto3-workspaces-module)
-  - [AccessPropertyValue](#accesspropertyvalue)
-  - [Application](#application)
-  - [AssociationStatus](#associationstatus)
-  - [Compute](#compute)
-  - [ConnectionAliasState](#connectionaliasstate)
-  - [ConnectionState](#connectionstate)
-  - [DedicatedTenancyModificationStateEnum](#dedicatedtenancymodificationstateenum)
-  - [DedicatedTenancySupportEnum](#dedicatedtenancysupportenum)
-  - [DedicatedTenancySupportResultEnum](#dedicatedtenancysupportresultenum)
+  - [AccessPropertyValueType](#accesspropertyvaluetype)
+  - [ApplicationType](#applicationtype)
+  - [AssociationStatusType](#associationstatustype)
+  - [ComputeType](#computetype)
+  - [ConnectionAliasStateType](#connectionaliasstatetype)
+  - [ConnectionStateType](#connectionstatetype)
+  - [DedicatedTenancyModificationStateEnumType](#dedicatedtenancymodificationstateenumtype)
+  - [DedicatedTenancySupportEnumType](#dedicatedtenancysupportenumtype)
+  - [DedicatedTenancySupportResultEnumType](#dedicatedtenancysupportresultenumtype)
   - [DescribeAccountModificationsPaginatorName](#describeaccountmodificationspaginatorname)
   - [DescribeIpGroupsPaginatorName](#describeipgroupspaginatorname)
   - [DescribeWorkspaceBundlesPaginatorName](#describeworkspacebundlespaginatorname)
@@ -24,26 +24,26 @@ type annotations stubs module
   - [DescribeWorkspaceImagesPaginatorName](#describeworkspaceimagespaginatorname)
   - [DescribeWorkspacesConnectionStatusPaginatorName](#describeworkspacesconnectionstatuspaginatorname)
   - [DescribeWorkspacesPaginatorName](#describeworkspacespaginatorname)
-  - [ImageType](#imagetype)
+  - [ImageTypeType](#imagetypetype)
   - [ListAvailableManagementCidrRangesPaginatorName](#listavailablemanagementcidrrangespaginatorname)
-  - [ModificationResourceEnum](#modificationresourceenum)
-  - [ModificationStateEnum](#modificationstateenum)
-  - [OperatingSystemType](#operatingsystemtype)
-  - [ReconnectEnum](#reconnectenum)
-  - [RunningMode](#runningmode)
-  - [TargetWorkspaceState](#targetworkspacestate)
-  - [Tenancy](#tenancy)
-  - [WorkspaceDirectoryState](#workspacedirectorystate)
-  - [WorkspaceDirectoryType](#workspacedirectorytype)
-  - [WorkspaceImageIngestionProcess](#workspaceimageingestionprocess)
-  - [WorkspaceImageRequiredTenancy](#workspaceimagerequiredtenancy)
-  - [WorkspaceImageState](#workspaceimagestate)
-  - [WorkspaceState](#workspacestate)
+  - [ModificationResourceEnumType](#modificationresourceenumtype)
+  - [ModificationStateEnumType](#modificationstateenumtype)
+  - [OperatingSystemTypeType](#operatingsystemtypetype)
+  - [ReconnectEnumType](#reconnectenumtype)
+  - [RunningModeType](#runningmodetype)
+  - [TargetWorkspaceStateType](#targetworkspacestatetype)
+  - [TenancyType](#tenancytype)
+  - [WorkspaceDirectoryStateType](#workspacedirectorystatetype)
+  - [WorkspaceDirectoryTypeType](#workspacedirectorytypetype)
+  - [WorkspaceImageIngestionProcessType](#workspaceimageingestionprocesstype)
+  - [WorkspaceImageRequiredTenancyType](#workspaceimagerequiredtenancytype)
+  - [WorkspaceImageStateType](#workspaceimagestatetype)
+  - [WorkspaceStateType](#workspacestatetype)
 
-## AccessPropertyValue
+## AccessPropertyValueType
 
 ```python
-from mypy_boto3_workspaces.literals import AccessPropertyValue
+from mypy_boto3_workspaces.literals import AccessPropertyValueType
 ```
 
 Values:
@@ -51,10 +51,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## Application
+## ApplicationType
 
 ```python
-from mypy_boto3_workspaces.literals import Application
+from mypy_boto3_workspaces.literals import ApplicationType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `Microsoft_Office_2016`
 - `Microsoft_Office_2019`
 
-## AssociationStatus
+## AssociationStatusType
 
 ```python
-from mypy_boto3_workspaces.literals import AssociationStatus
+from mypy_boto3_workspaces.literals import AssociationStatusType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `PENDING_ASSOCIATION`
 - `PENDING_DISASSOCIATION`
 
-## Compute
+## ComputeType
 
 ```python
-from mypy_boto3_workspaces.literals import Compute
+from mypy_boto3_workspaces.literals import ComputeType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `STANDARD`
 - `VALUE`
 
-## ConnectionAliasState
+## ConnectionAliasStateType
 
 ```python
-from mypy_boto3_workspaces.literals import ConnectionAliasState
+from mypy_boto3_workspaces.literals import ConnectionAliasStateType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `CREATING`
 - `DELETING`
 
-## ConnectionState
+## ConnectionStateType
 
 ```python
-from mypy_boto3_workspaces.literals import ConnectionState
+from mypy_boto3_workspaces.literals import ConnectionStateType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `DISCONNECTED`
 - `UNKNOWN`
 
-## DedicatedTenancyModificationStateEnum
+## DedicatedTenancyModificationStateEnumType
 
 ```python
-from mypy_boto3_workspaces.literals import DedicatedTenancyModificationStateEnum
+from mypy_boto3_workspaces.literals import DedicatedTenancyModificationStateEnumType
 ```
 
 Values:
@@ -128,20 +128,20 @@ Values:
 - `FAILED`
 - `PENDING`
 
-## DedicatedTenancySupportEnum
+## DedicatedTenancySupportEnumType
 
 ```python
-from mypy_boto3_workspaces.literals import DedicatedTenancySupportEnum
+from mypy_boto3_workspaces.literals import DedicatedTenancySupportEnumType
 ```
 
 Values:
 
 - `ENABLED`
 
-## DedicatedTenancySupportResultEnum
+## DedicatedTenancySupportResultEnumType
 
 ```python
-from mypy_boto3_workspaces.literals import DedicatedTenancySupportResultEnum
+from mypy_boto3_workspaces.literals import DedicatedTenancySupportResultEnumType
 ```
 
 Values:
@@ -219,10 +219,10 @@ Values:
 
 - `describe_workspaces`
 
-## ImageType
+## ImageTypeType
 
 ```python
-from mypy_boto3_workspaces.literals import ImageType
+from mypy_boto3_workspaces.literals import ImageTypeType
 ```
 
 Values:
@@ -240,10 +240,10 @@ Values:
 
 - `list_available_management_cidr_ranges`
 
-## ModificationResourceEnum
+## ModificationResourceEnumType
 
 ```python
-from mypy_boto3_workspaces.literals import ModificationResourceEnum
+from mypy_boto3_workspaces.literals import ModificationResourceEnumType
 ```
 
 Values:
@@ -252,10 +252,10 @@ Values:
 - `ROOT_VOLUME`
 - `USER_VOLUME`
 
-## ModificationStateEnum
+## ModificationStateEnumType
 
 ```python
-from mypy_boto3_workspaces.literals import ModificationStateEnum
+from mypy_boto3_workspaces.literals import ModificationStateEnumType
 ```
 
 Values:
@@ -263,10 +263,10 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_INITIATED`
 
-## OperatingSystemType
+## OperatingSystemTypeType
 
 ```python
-from mypy_boto3_workspaces.literals import OperatingSystemType
+from mypy_boto3_workspaces.literals import OperatingSystemTypeType
 ```
 
 Values:
@@ -274,10 +274,10 @@ Values:
 - `LINUX`
 - `WINDOWS`
 
-## ReconnectEnum
+## ReconnectEnumType
 
 ```python
-from mypy_boto3_workspaces.literals import ReconnectEnum
+from mypy_boto3_workspaces.literals import ReconnectEnumType
 ```
 
 Values:
@@ -285,10 +285,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## RunningMode
+## RunningModeType
 
 ```python
-from mypy_boto3_workspaces.literals import RunningMode
+from mypy_boto3_workspaces.literals import RunningModeType
 ```
 
 Values:
@@ -296,10 +296,10 @@ Values:
 - `ALWAYS_ON`
 - `AUTO_STOP`
 
-## TargetWorkspaceState
+## TargetWorkspaceStateType
 
 ```python
-from mypy_boto3_workspaces.literals import TargetWorkspaceState
+from mypy_boto3_workspaces.literals import TargetWorkspaceStateType
 ```
 
 Values:
@@ -307,10 +307,10 @@ Values:
 - `ADMIN_MAINTENANCE`
 - `AVAILABLE`
 
-## Tenancy
+## TenancyType
 
 ```python
-from mypy_boto3_workspaces.literals import Tenancy
+from mypy_boto3_workspaces.literals import TenancyType
 ```
 
 Values:
@@ -318,10 +318,10 @@ Values:
 - `DEDICATED`
 - `SHARED`
 
-## WorkspaceDirectoryState
+## WorkspaceDirectoryStateType
 
 ```python
-from mypy_boto3_workspaces.literals import WorkspaceDirectoryState
+from mypy_boto3_workspaces.literals import WorkspaceDirectoryStateType
 ```
 
 Values:
@@ -332,10 +332,10 @@ Values:
 - `REGISTERED`
 - `REGISTERING`
 
-## WorkspaceDirectoryType
+## WorkspaceDirectoryTypeType
 
 ```python
-from mypy_boto3_workspaces.literals import WorkspaceDirectoryType
+from mypy_boto3_workspaces.literals import WorkspaceDirectoryTypeType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `AD_CONNECTOR`
 - `SIMPLE_AD`
 
-## WorkspaceImageIngestionProcess
+## WorkspaceImageIngestionProcessType
 
 ```python
-from mypy_boto3_workspaces.literals import WorkspaceImageIngestionProcess
+from mypy_boto3_workspaces.literals import WorkspaceImageIngestionProcessType
 ```
 
 Values:
@@ -356,10 +356,10 @@ Values:
 - `BYOL_REGULAR`
 - `BYOL_REGULAR_WSP`
 
-## WorkspaceImageRequiredTenancy
+## WorkspaceImageRequiredTenancyType
 
 ```python
-from mypy_boto3_workspaces.literals import WorkspaceImageRequiredTenancy
+from mypy_boto3_workspaces.literals import WorkspaceImageRequiredTenancyType
 ```
 
 Values:
@@ -367,10 +367,10 @@ Values:
 - `DEDICATED`
 - `DEFAULT`
 
-## WorkspaceImageState
+## WorkspaceImageStateType
 
 ```python
-from mypy_boto3_workspaces.literals import WorkspaceImageState
+from mypy_boto3_workspaces.literals import WorkspaceImageStateType
 ```
 
 Values:
@@ -379,10 +379,10 @@ Values:
 - `ERROR`
 - `PENDING`
 
-## WorkspaceState
+## WorkspaceStateType
 
 ```python
-from mypy_boto3_workspaces.literals import WorkspaceState
+from mypy_boto3_workspaces.literals import WorkspaceStateType
 ```
 
 Values:

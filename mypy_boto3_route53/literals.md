@@ -3,39 +3,39 @@
 > [Index](..) > [Route53](.) > Literals
 
 Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53.html#Route53)
 type annotations stubs module
 [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Literals for boto3 Route53 module](#literals-for-boto3-route53-module)
-  - [AccountLimitType](#accountlimittype)
-  - [ChangeAction](#changeaction)
-  - [ChangeStatus](#changestatus)
-  - [CloudWatchRegion](#cloudwatchregion)
-  - [ComparisonOperator](#comparisonoperator)
-  - [HealthCheckRegion](#healthcheckregion)
-  - [HealthCheckType](#healthchecktype)
-  - [HostedZoneLimitType](#hostedzonelimittype)
-  - [InsufficientDataHealthStatus](#insufficientdatahealthstatus)
+  - [AccountLimitTypeType](#accountlimittypetype)
+  - [ChangeActionType](#changeactiontype)
+  - [ChangeStatusType](#changestatustype)
+  - [CloudWatchRegionType](#cloudwatchregiontype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [HealthCheckRegionType](#healthcheckregiontype)
+  - [HealthCheckTypeType](#healthchecktypetype)
+  - [HostedZoneLimitTypeType](#hostedzonelimittypetype)
+  - [InsufficientDataHealthStatusType](#insufficientdatahealthstatustype)
   - [ListHealthChecksPaginatorName](#listhealthcheckspaginatorname)
   - [ListHostedZonesPaginatorName](#listhostedzonespaginatorname)
   - [ListQueryLoggingConfigsPaginatorName](#listqueryloggingconfigspaginatorname)
   - [ListResourceRecordSetsPaginatorName](#listresourcerecordsetspaginatorname)
   - [ListVPCAssociationAuthorizationsPaginatorName](#listvpcassociationauthorizationspaginatorname)
-  - [RRType](#rrtype)
-  - [ResettableElementName](#resettableelementname)
-  - [ResourceRecordSetFailover](#resourcerecordsetfailover)
-  - [ResourceRecordSetRegion](#resourcerecordsetregion)
+  - [RRTypeType](#rrtypetype)
+  - [ResettableElementNameType](#resettableelementnametype)
+  - [ResourceRecordSetFailoverType](#resourcerecordsetfailovertype)
+  - [ResourceRecordSetRegionType](#resourcerecordsetregiontype)
   - [ResourceRecordSetsChangedWaiterName](#resourcerecordsetschangedwaitername)
-  - [ReusableDelegationSetLimitType](#reusabledelegationsetlimittype)
-  - [Statistic](#statistic)
-  - [TagResourceType](#tagresourcetype)
-  - [VPCRegion](#vpcregion)
+  - [ReusableDelegationSetLimitTypeType](#reusabledelegationsetlimittypetype)
+  - [StatisticType](#statistictype)
+  - [TagResourceTypeType](#tagresourcetypetype)
+  - [VPCRegionType](#vpcregiontype)
 
-## AccountLimitType
+## AccountLimitTypeType
 
 ```python
-from mypy_boto3_route53.literals import AccountLimitType
+from mypy_boto3_route53.literals import AccountLimitTypeType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `MAX_TRAFFIC_POLICIES_BY_OWNER`
 - `MAX_TRAFFIC_POLICY_INSTANCES_BY_OWNER`
 
-## ChangeAction
+## ChangeActionType
 
 ```python
-from mypy_boto3_route53.literals import ChangeAction
+from mypy_boto3_route53.literals import ChangeActionType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 - `DELETE`
 - `UPSERT`
 
-## ChangeStatus
+## ChangeStatusType
 
 ```python
-from mypy_boto3_route53.literals import ChangeStatus
+from mypy_boto3_route53.literals import ChangeStatusType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `INSYNC`
 - `PENDING`
 
-## CloudWatchRegion
+## CloudWatchRegionType
 
 ```python
-from mypy_boto3_route53.literals import CloudWatchRegion
+from mypy_boto3_route53.literals import CloudWatchRegionType
 ```
 
 Values:
@@ -105,10 +105,10 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_route53.literals import ComparisonOperator
+from mypy_boto3_route53.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -118,10 +118,10 @@ Values:
 - `LessThanOrEqualToThreshold`
 - `LessThanThreshold`
 
-## HealthCheckRegion
+## HealthCheckRegionType
 
 ```python
-from mypy_boto3_route53.literals import HealthCheckRegion
+from mypy_boto3_route53.literals import HealthCheckRegionType
 ```
 
 Values:
@@ -135,10 +135,10 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
-## HealthCheckType
+## HealthCheckTypeType
 
 ```python
-from mypy_boto3_route53.literals import HealthCheckType
+from mypy_boto3_route53.literals import HealthCheckTypeType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `HTTPS_STR_MATCH`
 - `TCP`
 
-## HostedZoneLimitType
+## HostedZoneLimitTypeType
 
 ```python
-from mypy_boto3_route53.literals import HostedZoneLimitType
+from mypy_boto3_route53.literals import HostedZoneLimitTypeType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `MAX_RRSETS_BY_ZONE`
 - `MAX_VPCS_ASSOCIATED_BY_ZONE`
 
-## InsufficientDataHealthStatus
+## InsufficientDataHealthStatusType
 
 ```python
-from mypy_boto3_route53.literals import InsufficientDataHealthStatus
+from mypy_boto3_route53.literals import InsufficientDataHealthStatusType
 ```
 
 Values:
@@ -224,10 +224,10 @@ Values:
 
 - `list_vpc_association_authorizations`
 
-## RRType
+## RRTypeType
 
 ```python
-from mypy_boto3_route53.literals import RRType
+from mypy_boto3_route53.literals import RRTypeType
 ```
 
 Values:
@@ -246,10 +246,10 @@ Values:
 - `SRV`
 - `TXT`
 
-## ResettableElementName
+## ResettableElementNameType
 
 ```python
-from mypy_boto3_route53.literals import ResettableElementName
+from mypy_boto3_route53.literals import ResettableElementNameType
 ```
 
 Values:
@@ -259,10 +259,10 @@ Values:
 - `Regions`
 - `ResourcePath`
 
-## ResourceRecordSetFailover
+## ResourceRecordSetFailoverType
 
 ```python
-from mypy_boto3_route53.literals import ResourceRecordSetFailover
+from mypy_boto3_route53.literals import ResourceRecordSetFailoverType
 ```
 
 Values:
@@ -270,10 +270,10 @@ Values:
 - `PRIMARY`
 - `SECONDARY`
 
-## ResourceRecordSetRegion
+## ResourceRecordSetRegionType
 
 ```python
-from mypy_boto3_route53.literals import ResourceRecordSetRegion
+from mypy_boto3_route53.literals import ResourceRecordSetRegionType
 ```
 
 Values:
@@ -312,20 +312,20 @@ Values:
 
 - `resource_record_sets_changed`
 
-## ReusableDelegationSetLimitType
+## ReusableDelegationSetLimitTypeType
 
 ```python
-from mypy_boto3_route53.literals import ReusableDelegationSetLimitType
+from mypy_boto3_route53.literals import ReusableDelegationSetLimitTypeType
 ```
 
 Values:
 
 - `MAX_ZONES_BY_REUSABLE_DELEGATION_SET`
 
-## Statistic
+## StatisticType
 
 ```python
-from mypy_boto3_route53.literals import Statistic
+from mypy_boto3_route53.literals import StatisticType
 ```
 
 Values:
@@ -336,10 +336,10 @@ Values:
 - `SampleCount`
 - `Sum`
 
-## TagResourceType
+## TagResourceTypeType
 
 ```python
-from mypy_boto3_route53.literals import TagResourceType
+from mypy_boto3_route53.literals import TagResourceTypeType
 ```
 
 Values:
@@ -347,10 +347,10 @@ Values:
 - `healthcheck`
 - `hostedzone`
 
-## VPCRegion
+## VPCRegionType
 
 ```python
-from mypy_boto3_route53.literals import VPCRegion
+from mypy_boto3_route53.literals import VPCRegionType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > RDSDataService
 
 Auto-generated documentation for
-[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
 [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
@@ -29,28 +29,28 @@ Can be used directly:
 from mypy_boto3_rds_data.client import RDSDataServiceClient
 ```
 
-RDSDataServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_execute_statement](./client.md#batch-execute-statement)
-- [begin_transaction](./client.md#begin-transaction)
-- [can_paginate](./client.md#can-paginate)
-- [commit_transaction](./client.md#commit-transaction)
-- [execute_sql](./client.md#execute-sql)
-- [execute_statement](./client.md#execute-statement)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [rollback_transaction](./client.md#rollback-transaction)
+- [batch_execute_statement](./client.md#batch_execute_statement)
+- [begin_transaction](./client.md#begin_transaction)
+- [can_paginate](./client.md#can_paginate)
+- [commit_transaction](./client.md#commit_transaction)
+- [execute_sql](./client.md#execute_sql)
+- [execute_statement](./client.md#execute_statement)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [rollback_transaction](./client.md#rollback_transaction)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ServiceUnavailableError](./client.md#serviceunavailableerror)
-- [StatementTimeoutException](./client.md#statementtimeoutexception)
+RDSDataServiceClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ForbiddenException
+- InternalServerErrorException
+- NotFoundException
+- ServiceUnavailableError
+- StatementTimeoutException
 
 ## Literals
 
@@ -59,11 +59,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds_data.literals import DecimalReturnType, ...
+from mypy_boto3_rds_data.literals import DecimalReturnTypeType, ...
 ```
 
-- [DecimalReturnType](./literals.md#decimalreturntype)
-- [TypeHint](./literals.md#typehint)
+- [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
+- [TypeHintType](./literals.md#typehinttype)
 
 ## Typed dictionaries
 

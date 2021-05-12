@@ -3,7 +3,7 @@
 > [Index](..) > [LexRuntimeService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
+[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
 [mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
@@ -80,16 +80,17 @@ from mypy_boto3_lex_runtime.type_defs import DialogActionTypeDef
 
 Required fields:
 
-- `type`: [DialogActionType](./literals.md#dialogactiontype)
+- `type`: [DialogActionTypeType](./literals.md#dialogactiontypetype)
 
 Optional fields:
 
 - `intentName`: `str`
 - `slots`: `Dict`\[`str`, `str`\]
 - `slotToElicit`: `str`
-- `fulfillmentState`: [FulfillmentState](./literals.md#fulfillmentstate)
+- `fulfillmentState`:
+  [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - `message`: `str`
-- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
+- `messageFormat`: [MessageFormatTypeType](./literals.md#messageformattypetype)
 
 ## GenericAttachmentTypeDef
 
@@ -139,15 +140,18 @@ from mypy_boto3_lex_runtime.type_defs import IntentSummaryTypeDef
 
 Required fields:
 
-- `dialogActionType`: [DialogActionType](./literals.md#dialogactiontype)
+- `dialogActionType`:
+  [DialogActionTypeType](./literals.md#dialogactiontypetype)
 
 Optional fields:
 
 - `intentName`: `str`
 - `checkpointLabel`: `str`
 - `slots`: `Dict`\[`str`, `str`\]
-- `confirmationStatus`: [ConfirmationStatus](./literals.md#confirmationstatus)
-- `fulfillmentState`: [FulfillmentState](./literals.md#fulfillmentstate)
+- `confirmationStatus`:
+  [ConfirmationStatusType](./literals.md#confirmationstatustype)
+- `fulfillmentState`:
+  [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - `slotToElicit`: `str`
 
 ## PostContentResponseTypeDef
@@ -167,8 +171,8 @@ Optional fields:
 - `sentimentResponse`: `str`
 - `message`: `str`
 - `encodedMessage`: `str`
-- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
-- `dialogState`: [DialogState](./literals.md#dialogstate)
+- `messageFormat`: [MessageFormatTypeType](./literals.md#messageformattypetype)
+- `dialogState`: [DialogStateType](./literals.md#dialogstatetype)
 - `slotToElicit`: `str`
 - `inputTranscript`: `str`
 - `encodedInputTranscript`: `str`
@@ -195,8 +199,8 @@ Optional fields:
 - `message`: `str`
 - `sentimentResponse`:
   [SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef)
-- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
-- `dialogState`: [DialogState](./literals.md#dialogstate)
+- `messageFormat`: [MessageFormatTypeType](./literals.md#messageformattypetype)
+- `dialogState`: [DialogStateType](./literals.md#dialogstatetype)
 - `slotToElicit`: `str`
 - `responseCard`: [ResponseCardTypeDef](./type_defs.md#responsecardtypedef)
 - `sessionId`: `str`
@@ -231,8 +235,8 @@ Optional fields:
 - `sessionAttributes`: `str`
 - `message`: `str`
 - `encodedMessage`: `str`
-- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
-- `dialogState`: [DialogState](./literals.md#dialogstate)
+- `messageFormat`: [MessageFormatTypeType](./literals.md#messageformattypetype)
+- `dialogState`: [DialogStateType](./literals.md#dialogstatetype)
 - `slotToElicit`: `str`
 - `audioStream`: `StreamingBody`
 - `sessionId`: `str`
@@ -248,7 +252,7 @@ Optional fields:
 
 - `version`: `str`
 - `contentType`: `Literal['application/vnd.amazonaws.card.generic']` (see
-  [ContentType](./literals.md#contenttype))
+  [ContentTypeType](./literals.md#contenttypetype))
 - `genericAttachments`:
   `List`\[[GenericAttachmentTypeDef](./type_defs.md#genericattachmenttypedef)\]
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Lambda](.) > LambdaClient
 
 Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+[Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda)
 type annotations stubs module
 [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
@@ -88,7 +88,7 @@ def get_lambda_client() -> LambdaClient:
 ```
 
 Boto3 documentation:
-[Lambda.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
+[Lambda.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client)
 
 ## Exceptions
 
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("lambda").add_layer_version_permission`
 method.
 
 Boto3 documentation:
-[Lambda.Client.add_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
+[Lambda.Client.add_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns
 Type annotations for `boto3.client("lambda").add_permission` method.
 
 Boto3 documentation:
-[Lambda.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
+[Lambda.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.add_permission)
 
 Arguments:
 
@@ -190,7 +190,7 @@ Returns
 Type annotations for `boto3.client("lambda").can_paginate` method.
 
 Boto3 documentation:
-[Lambda.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate)
+[Lambda.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.can_paginate)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lambda").create_alias` method.
 
 Boto3 documentation:
-[Lambda.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
+[Lambda.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.create_alias)
 
 Arguments:
 
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("lambda").create_code_signing_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.create_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
+[Lambda.Client.create_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Type annotations for `boto3.client("lambda").create_event_source_mapping`
 method.
 
 Boto3 documentation:
-[Lambda.Client.create_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
+[Lambda.Client.create_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
 
 Arguments:
 
@@ -252,7 +252,8 @@ Arguments:
 - `BatchSize`: `int`
 - `MaximumBatchingWindowInSeconds`: `int`
 - `ParallelizationFactor`: `int`
-- `StartingPosition`: [EventSourcePosition](./literals.md#eventsourceposition)
+- `StartingPosition`:
+  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
 - `StartingPositionTimestamp`: `datetime`
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
@@ -267,7 +268,7 @@ Arguments:
 - `SelfManagedEventSource`:
   [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
 - `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseType](./literals.md#functionresponsetype))\]
+  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
 [EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef).
@@ -277,21 +278,22 @@ Returns
 Type annotations for `boto3.client("lambda").create_function` method.
 
 Boto3 documentation:
-[Lambda.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
+[Lambda.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.create_function)
 
 Arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Role`: `str` *(required)*
-- `Code`: [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef) *(required)*
-- `Runtime`: [Runtime](./literals.md#runtime)
+- `Code`: [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef)
+  *(required)*
+- `Runtime`: [RuntimeType](./literals.md#runtimetype)
 - `Handler`: `str`
 - `Description`: `str`
 - `Timeout`: `int`
 - `MemorySize`: `int`
 - `Publish`: `bool`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `PackageType`: [PackageType](./literals.md#packagetype)
+- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
 - `DeadLetterConfig`:
   [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
 - `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
@@ -312,7 +314,7 @@ Returns
 Type annotations for `boto3.client("lambda").delete_alias` method.
 
 Boto3 documentation:
-[Lambda.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
+[Lambda.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_alias)
 
 Arguments:
 
@@ -325,7 +327,7 @@ Type annotations for `boto3.client("lambda").delete_code_signing_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.delete_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
+[Lambda.Client.delete_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
 
 Arguments:
 
@@ -339,7 +341,7 @@ Type annotations for `boto3.client("lambda").delete_event_source_mapping`
 method.
 
 Boto3 documentation:
-[Lambda.Client.delete_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
+[Lambda.Client.delete_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
 
 Arguments:
 
@@ -353,7 +355,7 @@ Returns
 Type annotations for `boto3.client("lambda").delete_function` method.
 
 Boto3 documentation:
-[Lambda.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
+[Lambda.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_function)
 
 Arguments:
 
@@ -366,7 +368,7 @@ Type annotations for
 `boto3.client("lambda").delete_function_code_signing_config` method.
 
 Boto3 documentation:
-[Lambda.Client.delete_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
+[Lambda.Client.delete_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
 
 Arguments:
 
@@ -378,7 +380,7 @@ Type annotations for `boto3.client("lambda").delete_function_concurrency`
 method.
 
 Boto3 documentation:
-[Lambda.Client.delete_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
+[Lambda.Client.delete_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
 
 Arguments:
 
@@ -390,7 +392,7 @@ Type annotations for
 `boto3.client("lambda").delete_function_event_invoke_config` method.
 
 Boto3 documentation:
-[Lambda.Client.delete_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
+[Lambda.Client.delete_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
 
 Arguments:
 
@@ -402,7 +404,7 @@ Arguments:
 Type annotations for `boto3.client("lambda").delete_layer_version` method.
 
 Boto3 documentation:
-[Lambda.Client.delete_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
+[Lambda.Client.delete_layer_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_layer_version)
 
 Arguments:
 
@@ -415,7 +417,7 @@ Type annotations for
 `boto3.client("lambda").delete_provisioned_concurrency_config` method.
 
 Boto3 documentation:
-[Lambda.Client.delete_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
+[Lambda.Client.delete_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
 
 Arguments:
 
@@ -427,7 +429,7 @@ Arguments:
 Type annotations for `boto3.client("lambda").generate_presigned_url` method.
 
 Boto3 documentation:
-[Lambda.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url)
+[Lambda.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.generate_presigned_url)
 
 Arguments:
 
@@ -443,7 +445,7 @@ Returns `str`.
 Type annotations for `boto3.client("lambda").get_account_settings` method.
 
 Boto3 documentation:
-[Lambda.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
+[Lambda.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_account_settings)
 
 Returns
 [GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
@@ -453,7 +455,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_alias` method.
 
 Boto3 documentation:
-[Lambda.Client.get_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
+[Lambda.Client.get_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_alias)
 
 Arguments:
 
@@ -467,7 +469,7 @@ Returns [AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef).
 Type annotations for `boto3.client("lambda").get_code_signing_config` method.
 
 Boto3 documentation:
-[Lambda.Client.get_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
+[Lambda.Client.get_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
 
 Arguments:
 
@@ -481,7 +483,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_event_source_mapping` method.
 
 Boto3 documentation:
-[Lambda.Client.get_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
+[Lambda.Client.get_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
 
 Arguments:
 
@@ -495,7 +497,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_function` method.
 
 Boto3 documentation:
-[Lambda.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
+[Lambda.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_function)
 
 Arguments:
 
@@ -511,7 +513,7 @@ Type annotations for `boto3.client("lambda").get_function_code_signing_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.get_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
+[Lambda.Client.get_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
 
 Arguments:
 
@@ -525,7 +527,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_function_concurrency` method.
 
 Boto3 documentation:
-[Lambda.Client.get_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
+[Lambda.Client.get_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
 
 Arguments:
 
@@ -540,7 +542,7 @@ Type annotations for `boto3.client("lambda").get_function_configuration`
 method.
 
 Boto3 documentation:
-[Lambda.Client.get_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
+[Lambda.Client.get_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_function_configuration)
 
 Arguments:
 
@@ -556,7 +558,7 @@ Type annotations for `boto3.client("lambda").get_function_event_invoke_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.get_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
+[Lambda.Client.get_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
 
 Arguments:
 
@@ -571,7 +573,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_layer_version` method.
 
 Boto3 documentation:
-[Lambda.Client.get_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
+[Lambda.Client.get_layer_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_layer_version)
 
 Arguments:
 
@@ -586,7 +588,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
 
 Boto3 documentation:
-[Lambda.Client.get_layer_version_by_arn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
+[Lambda.Client.get_layer_version_by_arn](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
 
 Arguments:
 
@@ -600,7 +602,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 
 Boto3 documentation:
-[Lambda.Client.get_layer_version_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
+[Lambda.Client.get_layer_version_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
 
 Arguments:
 
@@ -615,7 +617,7 @@ Returns
 Type annotations for `boto3.client("lambda").get_policy` method.
 
 Boto3 documentation:
-[Lambda.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
+[Lambda.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_policy)
 
 Arguments:
 
@@ -630,7 +632,7 @@ Type annotations for
 `boto3.client("lambda").get_provisioned_concurrency_config` method.
 
 Boto3 documentation:
-[Lambda.Client.get_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
+[Lambda.Client.get_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
 
 Arguments:
 
@@ -645,13 +647,13 @@ Returns
 Type annotations for `boto3.client("lambda").invoke` method.
 
 Boto3 documentation:
-[Lambda.Client.invoke](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
+[Lambda.Client.invoke](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.invoke)
 
 Arguments:
 
 - `FunctionName`: `str` *(required)*
-- `InvocationType`: [InvocationType](./literals.md#invocationtype)
-- `LogType`: [LogType](./literals.md#logtype)
+- `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
+- `LogType`: [LogTypeType](./literals.md#logtypetype)
 - `ClientContext`: `str`
 - `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `Qualifier`: `str`
@@ -663,7 +665,7 @@ Returns [InvocationResponseTypeDef](./type_defs.md#invocationresponsetypedef).
 Type annotations for `boto3.client("lambda").invoke_async` method.
 
 Boto3 documentation:
-[Lambda.Client.invoke_async](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
+[Lambda.Client.invoke_async](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.invoke_async)
 
 Arguments:
 
@@ -678,7 +680,7 @@ Returns
 Type annotations for `boto3.client("lambda").list_aliases` method.
 
 Boto3 documentation:
-[Lambda.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
+[Lambda.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_aliases)
 
 Arguments:
 
@@ -695,7 +697,7 @@ Returns
 Type annotations for `boto3.client("lambda").list_code_signing_configs` method.
 
 Boto3 documentation:
-[Lambda.Client.list_code_signing_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
+[Lambda.Client.list_code_signing_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
 
 Arguments:
 
@@ -711,7 +713,7 @@ Type annotations for `boto3.client("lambda").list_event_source_mappings`
 method.
 
 Boto3 documentation:
-[Lambda.Client.list_event_source_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
+[Lambda.Client.list_event_source_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
 
 Arguments:
 
@@ -729,7 +731,7 @@ Type annotations for
 `boto3.client("lambda").list_function_event_invoke_configs` method.
 
 Boto3 documentation:
-[Lambda.Client.list_function_event_invoke_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
+[Lambda.Client.list_function_event_invoke_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
 
 Arguments:
 
@@ -745,13 +747,13 @@ Returns
 Type annotations for `boto3.client("lambda").list_functions` method.
 
 Boto3 documentation:
-[Lambda.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
+[Lambda.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_functions)
 
 Arguments:
 
 - `MasterRegion`: `str`
 - `FunctionVersion`: `Literal['ALL']` (see
-  [FunctionVersion](./literals.md#functionversion))
+  [FunctionVersionType](./literals.md#functionversiontype))
 - `Marker`: `str`
 - `MaxItems`: `int`
 
@@ -764,7 +766,7 @@ Type annotations for
 `boto3.client("lambda").list_functions_by_code_signing_config` method.
 
 Boto3 documentation:
-[Lambda.Client.list_functions_by_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
+[Lambda.Client.list_functions_by_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
 
 Arguments:
 
@@ -780,12 +782,12 @@ Returns
 Type annotations for `boto3.client("lambda").list_layer_versions` method.
 
 Boto3 documentation:
-[Lambda.Client.list_layer_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
+[Lambda.Client.list_layer_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_layer_versions)
 
 Arguments:
 
 - `LayerName`: `str` *(required)*
-- `CompatibleRuntime`: [Runtime](./literals.md#runtime)
+- `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
@@ -797,11 +799,11 @@ Returns
 Type annotations for `boto3.client("lambda").list_layers` method.
 
 Boto3 documentation:
-[Lambda.Client.list_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
+[Lambda.Client.list_layers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_layers)
 
 Arguments:
 
-- `CompatibleRuntime`: [Runtime](./literals.md#runtime)
+- `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
@@ -813,7 +815,7 @@ Type annotations for
 `boto3.client("lambda").list_provisioned_concurrency_configs` method.
 
 Boto3 documentation:
-[Lambda.Client.list_provisioned_concurrency_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
+[Lambda.Client.list_provisioned_concurrency_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
 
 Arguments:
 
@@ -829,7 +831,7 @@ Returns
 Type annotations for `boto3.client("lambda").list_tags` method.
 
 Boto3 documentation:
-[Lambda.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
+[Lambda.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_tags)
 
 Arguments:
 
@@ -842,7 +844,7 @@ Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 Type annotations for `boto3.client("lambda").list_versions_by_function` method.
 
 Boto3 documentation:
-[Lambda.Client.list_versions_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
+[Lambda.Client.list_versions_by_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
 
 Arguments:
 
@@ -858,7 +860,7 @@ Returns
 Type annotations for `boto3.client("lambda").publish_layer_version` method.
 
 Boto3 documentation:
-[Lambda.Client.publish_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
+[Lambda.Client.publish_layer_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.publish_layer_version)
 
 Arguments:
 
@@ -867,7 +869,7 @@ Arguments:
   [LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef)
   *(required)*
 - `Description`: `str`
-- `CompatibleRuntimes`: `List`\[[Runtime](./literals.md#runtime)\]
+- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
 Returns
@@ -878,7 +880,7 @@ Returns
 Type annotations for `boto3.client("lambda").publish_version` method.
 
 Boto3 documentation:
-[Lambda.Client.publish_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
+[Lambda.Client.publish_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.publish_version)
 
 Arguments:
 
@@ -896,7 +898,7 @@ Type annotations for `boto3.client("lambda").put_function_code_signing_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.put_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
+[Lambda.Client.put_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
 
 Arguments:
 
@@ -911,7 +913,7 @@ Returns
 Type annotations for `boto3.client("lambda").put_function_concurrency` method.
 
 Boto3 documentation:
-[Lambda.Client.put_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
+[Lambda.Client.put_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
 
 Arguments:
 
@@ -926,7 +928,7 @@ Type annotations for `boto3.client("lambda").put_function_event_invoke_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.put_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
+[Lambda.Client.put_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
 
 Arguments:
 
@@ -946,7 +948,7 @@ Type annotations for
 `boto3.client("lambda").put_provisioned_concurrency_config` method.
 
 Boto3 documentation:
-[Lambda.Client.put_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
+[Lambda.Client.put_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
 
 Arguments:
 
@@ -963,7 +965,7 @@ Type annotations for `boto3.client("lambda").remove_layer_version_permission`
 method.
 
 Boto3 documentation:
-[Lambda.Client.remove_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
+[Lambda.Client.remove_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
 
 Arguments:
 
@@ -977,7 +979,7 @@ Arguments:
 Type annotations for `boto3.client("lambda").remove_permission` method.
 
 Boto3 documentation:
-[Lambda.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
+[Lambda.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.remove_permission)
 
 Arguments:
 
@@ -991,7 +993,7 @@ Arguments:
 Type annotations for `boto3.client("lambda").tag_resource` method.
 
 Boto3 documentation:
-[Lambda.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
+[Lambda.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.tag_resource)
 
 Arguments:
 
@@ -1003,7 +1005,7 @@ Arguments:
 Type annotations for `boto3.client("lambda").untag_resource` method.
 
 Boto3 documentation:
-[Lambda.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
+[Lambda.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.untag_resource)
 
 Arguments:
 
@@ -1015,7 +1017,7 @@ Arguments:
 Type annotations for `boto3.client("lambda").update_alias` method.
 
 Boto3 documentation:
-[Lambda.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
+[Lambda.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.update_alias)
 
 Arguments:
 
@@ -1035,7 +1037,7 @@ Type annotations for `boto3.client("lambda").update_code_signing_config`
 method.
 
 Boto3 documentation:
-[Lambda.Client.update_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
+[Lambda.Client.update_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
 
 Arguments:
 
@@ -1055,7 +1057,7 @@ Type annotations for `boto3.client("lambda").update_event_source_mapping`
 method.
 
 Boto3 documentation:
-[Lambda.Client.update_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
+[Lambda.Client.update_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
 
 Arguments:
 
@@ -1074,7 +1076,7 @@ Arguments:
   `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `TumblingWindowInSeconds`: `int`
 - `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseType](./literals.md#functionresponsetype))\]
+  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
 [EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef).
@@ -1084,7 +1086,7 @@ Returns
 Type annotations for `boto3.client("lambda").update_function_code` method.
 
 Boto3 documentation:
-[Lambda.Client.update_function_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
+[Lambda.Client.update_function_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.update_function_code)
 
 Arguments:
 
@@ -1107,7 +1109,7 @@ Type annotations for `boto3.client("lambda").update_function_configuration`
 method.
 
 Boto3 documentation:
-[Lambda.Client.update_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
+[Lambda.Client.update_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.update_function_configuration)
 
 Arguments:
 
@@ -1119,7 +1121,7 @@ Arguments:
 - `MemorySize`: `int`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `Runtime`: [Runtime](./literals.md#runtime)
+- `Runtime`: [RuntimeType](./literals.md#runtimetype)
 - `DeadLetterConfig`:
   [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
 - `KMSKeyArn`: `str`
@@ -1139,7 +1141,7 @@ Type annotations for
 `boto3.client("lambda").update_function_event_invoke_config` method.
 
 Boto3 documentation:
-[Lambda.Client.update_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
+[Lambda.Client.update_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
 
 Arguments:
 

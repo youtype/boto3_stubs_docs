@@ -3,7 +3,7 @@
 > [Index](..) > NetworkManager
 
 Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
 [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
@@ -30,59 +30,59 @@ Can be used directly:
 from mypy_boto3_networkmanager.client import NetworkManagerClient
 ```
 
-NetworkManagerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_customer_gateway](./client.md#associate-customer-gateway)
-- [associate_link](./client.md#associate-link)
-- [associate_transit_gateway_connect_peer](./client.md#associate-transit-gateway-connect-peer)
-- [can_paginate](./client.md#can-paginate)
-- [create_connection](./client.md#create-connection)
-- [create_device](./client.md#create-device)
-- [create_global_network](./client.md#create-global-network)
-- [create_link](./client.md#create-link)
-- [create_site](./client.md#create-site)
-- [delete_connection](./client.md#delete-connection)
-- [delete_device](./client.md#delete-device)
-- [delete_global_network](./client.md#delete-global-network)
-- [delete_link](./client.md#delete-link)
-- [delete_site](./client.md#delete-site)
-- [deregister_transit_gateway](./client.md#deregister-transit-gateway)
-- [describe_global_networks](./client.md#describe-global-networks)
-- [disassociate_customer_gateway](./client.md#disassociate-customer-gateway)
-- [disassociate_link](./client.md#disassociate-link)
-- [disassociate_transit_gateway_connect_peer](./client.md#disassociate-transit-gateway-connect-peer)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_connections](./client.md#get-connections)
-- [get_customer_gateway_associations](./client.md#get-customer-gateway-associations)
-- [get_devices](./client.md#get-devices)
-- [get_link_associations](./client.md#get-link-associations)
-- [get_links](./client.md#get-links)
-- [get_paginator](./client.md#get-paginator)
-- [get_sites](./client.md#get-sites)
-- [get_transit_gateway_connect_peer_associations](./client.md#get-transit-gateway-connect-peer-associations)
-- [get_transit_gateway_registrations](./client.md#get-transit-gateway-registrations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [register_transit_gateway](./client.md#register-transit-gateway)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_connection](./client.md#update-connection)
-- [update_device](./client.md#update-device)
-- [update_global_network](./client.md#update-global-network)
-- [update_link](./client.md#update-link)
-- [update_site](./client.md#update-site)
+- [associate_customer_gateway](./client.md#associate_customer_gateway)
+- [associate_link](./client.md#associate_link)
+- [associate_transit_gateway_connect_peer](./client.md#associate_transit_gateway_connect_peer)
+- [can_paginate](./client.md#can_paginate)
+- [create_connection](./client.md#create_connection)
+- [create_device](./client.md#create_device)
+- [create_global_network](./client.md#create_global_network)
+- [create_link](./client.md#create_link)
+- [create_site](./client.md#create_site)
+- [delete_connection](./client.md#delete_connection)
+- [delete_device](./client.md#delete_device)
+- [delete_global_network](./client.md#delete_global_network)
+- [delete_link](./client.md#delete_link)
+- [delete_site](./client.md#delete_site)
+- [deregister_transit_gateway](./client.md#deregister_transit_gateway)
+- [describe_global_networks](./client.md#describe_global_networks)
+- [disassociate_customer_gateway](./client.md#disassociate_customer_gateway)
+- [disassociate_link](./client.md#disassociate_link)
+- [disassociate_transit_gateway_connect_peer](./client.md#disassociate_transit_gateway_connect_peer)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_connections](./client.md#get_connections)
+- [get_customer_gateway_associations](./client.md#get_customer_gateway_associations)
+- [get_devices](./client.md#get_devices)
+- [get_link_associations](./client.md#get_link_associations)
+- [get_links](./client.md#get_links)
+- [get_paginator](./client.md#get_paginator)
+- [get_sites](./client.md#get_sites)
+- [get_transit_gateway_connect_peer_associations](./client.md#get_transit_gateway_connect_peer_associations)
+- [get_transit_gateway_registrations](./client.md#get_transit_gateway_registrations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [register_transit_gateway](./client.md#register_transit_gateway)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_connection](./client.md#update_connection)
+- [update_device](./client.md#update_device)
+- [update_global_network](./client.md#update_global_network)
+- [update_link](./client.md#update_link)
+- [update_site](./client.md#update_site)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+NetworkManagerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -112,13 +112,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.literals import ConnectionState, ...
+from mypy_boto3_networkmanager.literals import ConnectionStateType, ...
 ```
 
-- [ConnectionState](./literals.md#connectionstate)
-- [CustomerGatewayAssociationState](./literals.md#customergatewayassociationstate)
+- [ConnectionStateType](./literals.md#connectionstatetype)
+- [CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype)
 - [DescribeGlobalNetworksPaginatorName](./literals.md#describeglobalnetworkspaginatorname)
-- [DeviceState](./literals.md#devicestate)
+- [DeviceStateType](./literals.md#devicestatetype)
 - [GetConnectionsPaginatorName](./literals.md#getconnectionspaginatorname)
 - [GetCustomerGatewayAssociationsPaginatorName](./literals.md#getcustomergatewayassociationspaginatorname)
 - [GetDevicesPaginatorName](./literals.md#getdevicespaginatorname)
@@ -127,12 +127,12 @@ from mypy_boto3_networkmanager.literals import ConnectionState, ...
 - [GetSitesPaginatorName](./literals.md#getsitespaginatorname)
 - [GetTransitGatewayConnectPeerAssociationsPaginatorName](./literals.md#gettransitgatewayconnectpeerassociationspaginatorname)
 - [GetTransitGatewayRegistrationsPaginatorName](./literals.md#gettransitgatewayregistrationspaginatorname)
-- [GlobalNetworkState](./literals.md#globalnetworkstate)
-- [LinkAssociationState](./literals.md#linkassociationstate)
-- [LinkState](./literals.md#linkstate)
-- [SiteState](./literals.md#sitestate)
-- [TransitGatewayConnectPeerAssociationState](./literals.md#transitgatewayconnectpeerassociationstate)
-- [TransitGatewayRegistrationState](./literals.md#transitgatewayregistrationstate)
+- [GlobalNetworkStateType](./literals.md#globalnetworkstatetype)
+- [LinkAssociationStateType](./literals.md#linkassociationstatetype)
+- [LinkStateType](./literals.md#linkstatetype)
+- [SiteStateType](./literals.md#sitestatetype)
+- [TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype)
+- [TransitGatewayRegistrationStateType](./literals.md#transitgatewayregistrationstatetype)
 
 ## Typed dictionaries
 

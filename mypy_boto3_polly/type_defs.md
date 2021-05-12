@@ -3,7 +3,7 @@
 > [Index](..) > [Polly](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
@@ -71,7 +71,7 @@ from mypy_boto3_polly.type_defs import LexiconAttributesTypeDef
 Optional fields:
 
 - `Alphabet`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModified`: `datetime`
 - `LexiconArn`: `str`
 - `LexemesCount`: `int`
@@ -174,21 +174,22 @@ from mypy_boto3_polly.type_defs import SynthesisTaskTypeDef
 
 Optional fields:
 
-- `Engine`: [Engine](./literals.md#engine)
+- `Engine`: [EngineType](./literals.md#enginetype)
 - `TaskId`: `str`
-- `TaskStatus`: [TaskStatus](./literals.md#taskstatus)
+- `TaskStatus`: [TaskStatusType](./literals.md#taskstatustype)
 - `TaskStatusReason`: `str`
 - `OutputUri`: `str`
 - `CreationTime`: `datetime`
 - `RequestCharacters`: `int`
 - `SnsTopicArn`: `str`
 - `LexiconNames`: `List`\[`str`\]
-- `OutputFormat`: [OutputFormat](./literals.md#outputformat)
+- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
 - `SampleRate`: `str`
-- `SpeechMarkTypes`: `List`\[[SpeechMarkType](./literals.md#speechmarktype)\]
-- `TextType`: [TextType](./literals.md#texttype)
-- `VoiceId`: [VoiceId](./literals.md#voiceid)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `SpeechMarkTypes`:
+  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+- `TextType`: [TextTypeType](./literals.md#texttypetype)
+- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 ## SynthesizeSpeechOutputTypeDef
 
@@ -212,10 +213,11 @@ from mypy_boto3_polly.type_defs import VoiceTypeDef
 
 Optional fields:
 
-- `Gender`: [Gender](./literals.md#gender)
-- `Id`: [VoiceId](./literals.md#voiceid)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `Gender`: [GenderType](./literals.md#gendertype)
+- `Id`: [VoiceIdType](./literals.md#voiceidtype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LanguageName`: `str`
 - `Name`: `str`
-- `AdditionalLanguageCodes`: `List`\[[LanguageCode](./literals.md#languagecode)\]
-- `SupportedEngines`: `List`\[[Engine](./literals.md#engine)\]
+- `AdditionalLanguageCodes`:
+  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `SupportedEngines`: `List`\[[EngineType](./literals.md#enginetype)\]

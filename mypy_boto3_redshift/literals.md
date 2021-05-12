@@ -3,15 +3,15 @@
 > [Index](..) > [Redshift](.) > Literals
 
 Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift)
 type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [Literals for boto3 Redshift module](#literals-for-boto3-redshift-module)
-  - [ActionType](#actiontype)
-  - [AquaConfigurationStatus](#aquaconfigurationstatus)
-  - [AquaStatus](#aquastatus)
-  - [AuthorizationStatus](#authorizationstatus)
+  - [ActionTypeType](#actiontypetype)
+  - [AquaConfigurationStatusType](#aquaconfigurationstatustype)
+  - [AquaStatusType](#aquastatustype)
+  - [AuthorizationStatusType](#authorizationstatustype)
   - [ClusterAvailableWaiterName](#clusteravailablewaitername)
   - [ClusterDeletedWaiterName](#clusterdeletedwaitername)
   - [ClusterRestoredWaiterName](#clusterrestoredwaitername)
@@ -42,30 +42,30 @@ type annotations stubs module
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
   - [DescribeUsageLimitsPaginatorName](#describeusagelimitspaginatorname)
   - [GetReservedNodeExchangeOfferingsPaginatorName](#getreservednodeexchangeofferingspaginatorname)
-  - [Mode](#mode)
-  - [NodeConfigurationOptionsFilterName](#nodeconfigurationoptionsfiltername)
-  - [OperatorType](#operatortype)
-  - [ParameterApplyType](#parameterapplytype)
-  - [PartnerIntegrationStatus](#partnerintegrationstatus)
-  - [ReservedNodeOfferingType](#reservednodeofferingtype)
-  - [ScheduleState](#schedulestate)
-  - [ScheduledActionFilterName](#scheduledactionfiltername)
-  - [ScheduledActionState](#scheduledactionstate)
-  - [ScheduledActionTypeValues](#scheduledactiontypevalues)
-  - [SnapshotAttributeToSortBy](#snapshotattributetosortby)
+  - [ModeType](#modetype)
+  - [NodeConfigurationOptionsFilterNameType](#nodeconfigurationoptionsfilternametype)
+  - [OperatorTypeType](#operatortypetype)
+  - [ParameterApplyTypeType](#parameterapplytypetype)
+  - [PartnerIntegrationStatusType](#partnerintegrationstatustype)
+  - [ReservedNodeOfferingTypeType](#reservednodeofferingtypetype)
+  - [ScheduleStateType](#schedulestatetype)
+  - [ScheduledActionFilterNameType](#scheduledactionfilternametype)
+  - [ScheduledActionStateType](#scheduledactionstatetype)
+  - [ScheduledActionTypeValuesType](#scheduledactiontypevaluestype)
+  - [SnapshotAttributeToSortByType](#snapshotattributetosortbytype)
   - [SnapshotAvailableWaiterName](#snapshotavailablewaitername)
-  - [SortByOrder](#sortbyorder)
-  - [SourceType](#sourcetype)
-  - [TableRestoreStatusType](#tablerestorestatustype)
-  - [UsageLimitBreachAction](#usagelimitbreachaction)
-  - [UsageLimitFeatureType](#usagelimitfeaturetype)
-  - [UsageLimitLimitType](#usagelimitlimittype)
-  - [UsageLimitPeriod](#usagelimitperiod)
+  - [SortByOrderType](#sortbyordertype)
+  - [SourceTypeType](#sourcetypetype)
+  - [TableRestoreStatusTypeType](#tablerestorestatustypetype)
+  - [UsageLimitBreachActionType](#usagelimitbreachactiontype)
+  - [UsageLimitFeatureTypeType](#usagelimitfeaturetypetype)
+  - [UsageLimitLimitTypeType](#usagelimitlimittypetype)
+  - [UsageLimitPeriodType](#usagelimitperiodtype)
 
-## ActionType
+## ActionTypeType
 
 ```python
-from mypy_boto3_redshift.literals import ActionType
+from mypy_boto3_redshift.literals import ActionTypeType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `resize-cluster`
 - `restore-cluster`
 
-## AquaConfigurationStatus
+## AquaConfigurationStatusType
 
 ```python
-from mypy_boto3_redshift.literals import AquaConfigurationStatus
+from mypy_boto3_redshift.literals import AquaConfigurationStatusType
 ```
 
 Values:
@@ -86,10 +86,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## AquaStatus
+## AquaStatusType
 
 ```python
-from mypy_boto3_redshift.literals import AquaStatus
+from mypy_boto3_redshift.literals import AquaStatusType
 ```
 
 Values:
@@ -98,10 +98,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## AuthorizationStatus
+## AuthorizationStatusType
 
 ```python
-from mypy_boto3_redshift.literals import AuthorizationStatus
+from mypy_boto3_redshift.literals import AuthorizationStatusType
 ```
 
 Values:
@@ -409,10 +409,10 @@ Values:
 
 - `get_reserved_node_exchange_offerings`
 
-## Mode
+## ModeType
 
 ```python
-from mypy_boto3_redshift.literals import Mode
+from mypy_boto3_redshift.literals import ModeType
 ```
 
 Values:
@@ -420,10 +420,10 @@ Values:
 - `high-performance`
 - `standard`
 
-## NodeConfigurationOptionsFilterName
+## NodeConfigurationOptionsFilterNameType
 
 ```python
-from mypy_boto3_redshift.literals import NodeConfigurationOptionsFilterName
+from mypy_boto3_redshift.literals import NodeConfigurationOptionsFilterNameType
 ```
 
 Values:
@@ -433,10 +433,10 @@ Values:
 - `NodeType`
 - `NumberOfNodes`
 
-## OperatorType
+## OperatorTypeType
 
 ```python
-from mypy_boto3_redshift.literals import OperatorType
+from mypy_boto3_redshift.literals import OperatorTypeType
 ```
 
 Values:
@@ -449,10 +449,10 @@ Values:
 - `le`
 - `lt`
 
-## ParameterApplyType
+## ParameterApplyTypeType
 
 ```python
-from mypy_boto3_redshift.literals import ParameterApplyType
+from mypy_boto3_redshift.literals import ParameterApplyTypeType
 ```
 
 Values:
@@ -460,10 +460,10 @@ Values:
 - `dynamic`
 - `static`
 
-## PartnerIntegrationStatus
+## PartnerIntegrationStatusType
 
 ```python
-from mypy_boto3_redshift.literals import PartnerIntegrationStatus
+from mypy_boto3_redshift.literals import PartnerIntegrationStatusType
 ```
 
 Values:
@@ -473,10 +473,10 @@ Values:
 - `Inactive`
 - `RuntimeFailure`
 
-## ReservedNodeOfferingType
+## ReservedNodeOfferingTypeType
 
 ```python
-from mypy_boto3_redshift.literals import ReservedNodeOfferingType
+from mypy_boto3_redshift.literals import ReservedNodeOfferingTypeType
 ```
 
 Values:
@@ -484,10 +484,10 @@ Values:
 - `Regular`
 - `Upgradable`
 
-## ScheduleState
+## ScheduleStateType
 
 ```python
-from mypy_boto3_redshift.literals import ScheduleState
+from mypy_boto3_redshift.literals import ScheduleStateType
 ```
 
 Values:
@@ -496,10 +496,10 @@ Values:
 - `FAILED`
 - `MODIFYING`
 
-## ScheduledActionFilterName
+## ScheduledActionFilterNameType
 
 ```python
-from mypy_boto3_redshift.literals import ScheduledActionFilterName
+from mypy_boto3_redshift.literals import ScheduledActionFilterNameType
 ```
 
 Values:
@@ -507,10 +507,10 @@ Values:
 - `cluster-identifier`
 - `iam-role`
 
-## ScheduledActionState
+## ScheduledActionStateType
 
 ```python
-from mypy_boto3_redshift.literals import ScheduledActionState
+from mypy_boto3_redshift.literals import ScheduledActionStateType
 ```
 
 Values:
@@ -518,10 +518,10 @@ Values:
 - `ACTIVE`
 - `DISABLED`
 
-## ScheduledActionTypeValues
+## ScheduledActionTypeValuesType
 
 ```python
-from mypy_boto3_redshift.literals import ScheduledActionTypeValues
+from mypy_boto3_redshift.literals import ScheduledActionTypeValuesType
 ```
 
 Values:
@@ -530,10 +530,10 @@ Values:
 - `ResizeCluster`
 - `ResumeCluster`
 
-## SnapshotAttributeToSortBy
+## SnapshotAttributeToSortByType
 
 ```python
-from mypy_boto3_redshift.literals import SnapshotAttributeToSortBy
+from mypy_boto3_redshift.literals import SnapshotAttributeToSortByType
 ```
 
 Values:
@@ -552,10 +552,10 @@ Values:
 
 - `snapshot_available`
 
-## SortByOrder
+## SortByOrderType
 
 ```python
-from mypy_boto3_redshift.literals import SortByOrder
+from mypy_boto3_redshift.literals import SortByOrderType
 ```
 
 Values:
@@ -563,10 +563,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_redshift.literals import SourceType
+from mypy_boto3_redshift.literals import SourceTypeType
 ```
 
 Values:
@@ -577,10 +577,10 @@ Values:
 - `cluster-snapshot`
 - `scheduled-action`
 
-## TableRestoreStatusType
+## TableRestoreStatusTypeType
 
 ```python
-from mypy_boto3_redshift.literals import TableRestoreStatusType
+from mypy_boto3_redshift.literals import TableRestoreStatusTypeType
 ```
 
 Values:
@@ -591,10 +591,10 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
-## UsageLimitBreachAction
+## UsageLimitBreachActionType
 
 ```python
-from mypy_boto3_redshift.literals import UsageLimitBreachAction
+from mypy_boto3_redshift.literals import UsageLimitBreachActionType
 ```
 
 Values:
@@ -603,10 +603,10 @@ Values:
 - `emit-metric`
 - `log`
 
-## UsageLimitFeatureType
+## UsageLimitFeatureTypeType
 
 ```python
-from mypy_boto3_redshift.literals import UsageLimitFeatureType
+from mypy_boto3_redshift.literals import UsageLimitFeatureTypeType
 ```
 
 Values:
@@ -614,10 +614,10 @@ Values:
 - `concurrency-scaling`
 - `spectrum`
 
-## UsageLimitLimitType
+## UsageLimitLimitTypeType
 
 ```python
-from mypy_boto3_redshift.literals import UsageLimitLimitType
+from mypy_boto3_redshift.literals import UsageLimitLimitTypeType
 ```
 
 Values:
@@ -625,10 +625,10 @@ Values:
 - `data-scanned`
 - `time`
 
-## UsageLimitPeriod
+## UsageLimitPeriodType
 
 ```python
-from mypy_boto3_redshift.literals import UsageLimitPeriod
+from mypy_boto3_redshift.literals import UsageLimitPeriodType
 ```
 
 Values:

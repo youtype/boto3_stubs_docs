@@ -3,23 +3,23 @@
 > [Index](..) > [CloudSearch](.) > Literals
 
 Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
 [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 - [Literals for boto3 CloudSearch module](#literals-for-boto3-cloudsearch-module)
-  - [AlgorithmicStemming](#algorithmicstemming)
-  - [AnalysisSchemeLanguage](#analysisschemelanguage)
-  - [IndexFieldType](#indexfieldtype)
-  - [OptionState](#optionstate)
-  - [PartitionInstanceType](#partitioninstancetype)
-  - [SuggesterFuzzyMatching](#suggesterfuzzymatching)
-  - [TLSSecurityPolicy](#tlssecuritypolicy)
+  - [AlgorithmicStemmingType](#algorithmicstemmingtype)
+  - [AnalysisSchemeLanguageType](#analysisschemelanguagetype)
+  - [IndexFieldTypeType](#indexfieldtypetype)
+  - [OptionStateType](#optionstatetype)
+  - [PartitionInstanceTypeType](#partitioninstancetypetype)
+  - [SuggesterFuzzyMatchingType](#suggesterfuzzymatchingtype)
+  - [TLSSecurityPolicyType](#tlssecuritypolicytype)
 
-## AlgorithmicStemming
+## AlgorithmicStemmingType
 
 ```python
-from mypy_boto3_cloudsearch.literals import AlgorithmicStemming
+from mypy_boto3_cloudsearch.literals import AlgorithmicStemmingType
 ```
 
 Values:
@@ -29,10 +29,10 @@ Values:
 - `minimal`
 - `none`
 
-## AnalysisSchemeLanguage
+## AnalysisSchemeLanguageType
 
 ```python
-from mypy_boto3_cloudsearch.literals import AnalysisSchemeLanguage
+from mypy_boto3_cloudsearch.literals import AnalysisSchemeLanguageType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `zh-Hans`
 - `zh-Hant`
 
-## IndexFieldType
+## IndexFieldTypeType
 
 ```python
-from mypy_boto3_cloudsearch.literals import IndexFieldType
+from mypy_boto3_cloudsearch.literals import IndexFieldTypeType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `text`
 - `text-array`
 
-## OptionState
+## OptionStateType
 
 ```python
-from mypy_boto3_cloudsearch.literals import OptionState
+from mypy_boto3_cloudsearch.literals import OptionStateType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `Processing`
 - `RequiresIndexDocuments`
 
-## PartitionInstanceType
+## PartitionInstanceTypeType
 
 ```python
-from mypy_boto3_cloudsearch.literals import PartitionInstanceType
+from mypy_boto3_cloudsearch.literals import PartitionInstanceTypeType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 - `search.small`
 - `search.xlarge`
 
-## SuggesterFuzzyMatching
+## SuggesterFuzzyMatchingType
 
 ```python
-from mypy_boto3_cloudsearch.literals import SuggesterFuzzyMatching
+from mypy_boto3_cloudsearch.literals import SuggesterFuzzyMatchingType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `low`
 - `none`
 
-## TLSSecurityPolicy
+## TLSSecurityPolicyType
 
 ```python
-from mypy_boto3_cloudsearch.literals import TLSSecurityPolicy
+from mypy_boto3_cloudsearch.literals import TLSSecurityPolicyType
 ```
 
 Values:

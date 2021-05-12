@@ -3,29 +3,29 @@
 > [Index](..) > [CloudWatch](.) > Literals
 
 Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
 [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 - [Literals for boto3 CloudWatch module](#literals-for-boto3-cloudwatch-module)
   - [AlarmExistsWaiterName](#alarmexistswaitername)
-  - [AlarmType](#alarmtype)
-  - [AnomalyDetectorStateValue](#anomalydetectorstatevalue)
-  - [ComparisonOperator](#comparisonoperator)
+  - [AlarmTypeType](#alarmtypetype)
+  - [AnomalyDetectorStateValueType](#anomalydetectorstatevaluetype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
   - [CompositeAlarmExistsWaiterName](#compositealarmexistswaitername)
   - [DescribeAlarmHistoryPaginatorName](#describealarmhistorypaginatorname)
   - [DescribeAlarmsPaginatorName](#describealarmspaginatorname)
   - [GetMetricDataPaginatorName](#getmetricdatapaginatorname)
-  - [HistoryItemType](#historyitemtype)
+  - [HistoryItemTypeType](#historyitemtypetype)
   - [ListDashboardsPaginatorName](#listdashboardspaginatorname)
   - [ListMetricsPaginatorName](#listmetricspaginatorname)
-  - [MetricStreamOutputFormat](#metricstreamoutputformat)
-  - [RecentlyActive](#recentlyactive)
-  - [ScanBy](#scanby)
-  - [StandardUnit](#standardunit)
-  - [StateValue](#statevalue)
-  - [Statistic](#statistic)
-  - [StatusCode](#statuscode)
+  - [MetricStreamOutputFormatType](#metricstreamoutputformattype)
+  - [RecentlyActiveType](#recentlyactivetype)
+  - [ScanByType](#scanbytype)
+  - [StandardUnitType](#standardunittype)
+  - [StateValueType](#statevaluetype)
+  - [StatisticType](#statistictype)
+  - [StatusCodeType](#statuscodetype)
 
 ## AlarmExistsWaiterName
 
@@ -37,10 +37,10 @@ Values:
 
 - `alarm_exists`
 
-## AlarmType
+## AlarmTypeType
 
 ```python
-from mypy_boto3_cloudwatch.literals import AlarmType
+from mypy_boto3_cloudwatch.literals import AlarmTypeType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `CompositeAlarm`
 - `MetricAlarm`
 
-## AnomalyDetectorStateValue
+## AnomalyDetectorStateValueType
 
 ```python
-from mypy_boto3_cloudwatch.literals import AnomalyDetectorStateValue
+from mypy_boto3_cloudwatch.literals import AnomalyDetectorStateValueType
 ```
 
 Values:
@@ -60,10 +60,10 @@ Values:
 - `TRAINED`
 - `TRAINED_INSUFFICIENT_DATA`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_cloudwatch.literals import ComparisonOperator
+from mypy_boto3_cloudwatch.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 
 - `get_metric_data`
 
-## HistoryItemType
+## HistoryItemTypeType
 
 ```python
-from mypy_boto3_cloudwatch.literals import HistoryItemType
+from mypy_boto3_cloudwatch.literals import HistoryItemTypeType
 ```
 
 Values:
@@ -148,10 +148,10 @@ Values:
 
 - `list_metrics`
 
-## MetricStreamOutputFormat
+## MetricStreamOutputFormatType
 
 ```python
-from mypy_boto3_cloudwatch.literals import MetricStreamOutputFormat
+from mypy_boto3_cloudwatch.literals import MetricStreamOutputFormatType
 ```
 
 Values:
@@ -159,20 +159,20 @@ Values:
 - `json`
 - `opentelemetry0.7`
 
-## RecentlyActive
+## RecentlyActiveType
 
 ```python
-from mypy_boto3_cloudwatch.literals import RecentlyActive
+from mypy_boto3_cloudwatch.literals import RecentlyActiveType
 ```
 
 Values:
 
 - `PT3H`
 
-## ScanBy
+## ScanByType
 
 ```python
-from mypy_boto3_cloudwatch.literals import ScanBy
+from mypy_boto3_cloudwatch.literals import ScanByType
 ```
 
 Values:
@@ -180,10 +180,10 @@ Values:
 - `TimestampAscending`
 - `TimestampDescending`
 
-## StandardUnit
+## StandardUnitType
 
 ```python
-from mypy_boto3_cloudwatch.literals import StandardUnit
+from mypy_boto3_cloudwatch.literals import StandardUnitType
 ```
 
 Values:
@@ -216,10 +216,10 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
-## StateValue
+## StateValueType
 
 ```python
-from mypy_boto3_cloudwatch.literals import StateValue
+from mypy_boto3_cloudwatch.literals import StateValueType
 ```
 
 Values:
@@ -228,10 +228,10 @@ Values:
 - `INSUFFICIENT_DATA`
 - `OK`
 
-## Statistic
+## StatisticType
 
 ```python
-from mypy_boto3_cloudwatch.literals import Statistic
+from mypy_boto3_cloudwatch.literals import StatisticType
 ```
 
 Values:
@@ -242,10 +242,10 @@ Values:
 - `SampleCount`
 - `Sum`
 
-## StatusCode
+## StatusCodeType
 
 ```python
-from mypy_boto3_cloudwatch.literals import StatusCode
+from mypy_boto3_cloudwatch.literals import StatusCodeType
 ```
 
 Values:

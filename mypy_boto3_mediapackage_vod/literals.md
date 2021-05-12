@@ -3,26 +3,26 @@
 > [Index](..) > [MediaPackageVod](.) > Literals
 
 Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
 [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [Literals for boto3 MediaPackageVod module](#literals-for-boto3-mediapackagevod-module)
-  - [AdMarkers](#admarkers)
-  - [EncryptionMethod](#encryptionmethod)
+  - [AdMarkersType](#admarkerstype)
+  - [EncryptionMethodType](#encryptionmethodtype)
   - [ListAssetsPaginatorName](#listassetspaginatorname)
   - [ListPackagingConfigurationsPaginatorName](#listpackagingconfigurationspaginatorname)
   - [ListPackagingGroupsPaginatorName](#listpackaginggroupspaginatorname)
-  - [ManifestLayout](#manifestlayout)
-  - [Profile](#profile)
-  - [SegmentTemplateFormat](#segmenttemplateformat)
-  - [StreamOrder](#streamorder)
-  - [\_\_PeriodTriggersElement](#__periodtriggerselement)
+  - [ManifestLayoutType](#manifestlayouttype)
+  - [ProfileType](#profiletype)
+  - [SegmentTemplateFormatType](#segmenttemplateformattype)
+  - [StreamOrderType](#streamordertype)
+  - [\_\_PeriodTriggersElementType](#__periodtriggerselementtype)
 
-## AdMarkers
+## AdMarkersType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import AdMarkers
+from mypy_boto3_mediapackage_vod.literals import AdMarkersType
 ```
 
 Values:
@@ -31,10 +31,10 @@ Values:
 - `PASSTHROUGH`
 - `SCTE35_ENHANCED`
 
-## EncryptionMethod
+## EncryptionMethodType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import EncryptionMethod
+from mypy_boto3_mediapackage_vod.literals import EncryptionMethodType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 
 - `list_packaging_groups`
 
-## ManifestLayout
+## ManifestLayoutType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import ManifestLayout
+from mypy_boto3_mediapackage_vod.literals import ManifestLayoutType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 - `COMPACT`
 - `FULL`
 
-## Profile
+## ProfileType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import Profile
+from mypy_boto3_mediapackage_vod.literals import ProfileType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 - `HBBTV_1_5`
 - `NONE`
 
-## SegmentTemplateFormat
+## SegmentTemplateFormatType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import SegmentTemplateFormat
+from mypy_boto3_mediapackage_vod.literals import SegmentTemplateFormatType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `NUMBER_WITH_TIMELINE`
 - `TIME_WITH_TIMELINE`
 
-## StreamOrder
+## StreamOrderType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import StreamOrder
+from mypy_boto3_mediapackage_vod.literals import StreamOrderType
 ```
 
 Values:
@@ -118,10 +118,10 @@ Values:
 - `VIDEO_BITRATE_ASCENDING`
 - `VIDEO_BITRATE_DESCENDING`
 
-## \_\_PeriodTriggersElement
+## \_\_PeriodTriggersElementType
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import __PeriodTriggersElement
+from mypy_boto3_mediapackage_vod.literals import __PeriodTriggersElementType
 ```
 
 Values:

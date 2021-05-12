@@ -3,7 +3,7 @@
 > [Index](..) > [ECRPublic](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
 [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
@@ -67,7 +67,8 @@ from mypy_boto3_ecr_public.type_defs import BatchCheckLayerAvailabilityResponseT
 Optional fields:
 
 - `layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
-- `failures`: `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
+- `failures`:
+  `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
 
 ## BatchDeleteImageResponseTypeDef
 
@@ -79,7 +80,8 @@ Optional fields:
 
 - `imageIds`:
   `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
-- `failures`: `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
+- `failures`:
+  `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
 
 ## CompleteLayerUploadResponseTypeDef
 
@@ -174,7 +176,8 @@ from mypy_boto3_ecr_public.type_defs import DescribeRepositoriesResponseTypeDef
 
 Optional fields:
 
-- `repositories`: `List`\[[RepositoryTypeDef](./type_defs.md#repositorytypedef)\]
+- `repositories`:
+  `List`\[[RepositoryTypeDef](./type_defs.md#repositorytypedef)\]
 - `nextToken`: `str`
 
 ## GetAuthorizationTokenResponseTypeDef
@@ -248,7 +251,7 @@ from mypy_boto3_ecr_public.type_defs import ImageFailureTypeDef
 Optional fields:
 
 - `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
-- `failureCode`: [ImageFailureCode](./literals.md#imagefailurecode)
+- `failureCode`: [ImageFailureCodeType](./literals.md#imagefailurecodetype)
 - `failureReason`: `str`
 
 ## ImageIdentifierTypeDef
@@ -309,7 +312,7 @@ from mypy_boto3_ecr_public.type_defs import LayerFailureTypeDef
 Optional fields:
 
 - `layerDigest`: `str`
-- `failureCode`: [LayerFailureCode](./literals.md#layerfailurecode)
+- `failureCode`: [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - `failureReason`: `str`
 
 ## LayerTypeDef
@@ -321,7 +324,8 @@ from mypy_boto3_ecr_public.type_defs import LayerTypeDef
 Optional fields:
 
 - `layerDigest`: `str`
-- `layerAvailability`: [LayerAvailability](./literals.md#layeravailability)
+- `layerAvailability`:
+  [LayerAvailabilityType](./literals.md#layeravailabilitytype)
 - `layerSize`: `int`
 - `mediaType`: `str`
 
@@ -402,7 +406,7 @@ from mypy_boto3_ecr_public.type_defs import RegistryAliasTypeDef
 Required fields:
 
 - `name`: `str`
-- `status`: [RegistryAliasStatus](./literals.md#registryaliasstatus)
+- `status`: [RegistryAliasStatusType](./literals.md#registryaliasstatustype)
 - `primaryRegistryAlias`: `bool`
 - `defaultRegistryAlias`: `bool`
 

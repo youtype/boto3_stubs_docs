@@ -3,25 +3,25 @@
 > [Index](..) > [ResourceGroups](.) > Literals
 
 Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [Literals for boto3 ResourceGroups module](#literals-for-boto3-resourcegroups-module)
-  - [GroupConfigurationStatus](#groupconfigurationstatus)
-  - [GroupFilterName](#groupfiltername)
+  - [GroupConfigurationStatusType](#groupconfigurationstatustype)
+  - [GroupFilterNameType](#groupfilternametype)
   - [ListGroupResourcesPaginatorName](#listgroupresourcespaginatorname)
   - [ListGroupsPaginatorName](#listgroupspaginatorname)
-  - [QueryErrorCode](#queryerrorcode)
-  - [QueryType](#querytype)
-  - [ResourceFilterName](#resourcefiltername)
-  - [ResourceStatusValue](#resourcestatusvalue)
+  - [QueryErrorCodeType](#queryerrorcodetype)
+  - [QueryTypeType](#querytypetype)
+  - [ResourceFilterNameType](#resourcefilternametype)
+  - [ResourceStatusValueType](#resourcestatusvaluetype)
   - [SearchResourcesPaginatorName](#searchresourcespaginatorname)
 
-## GroupConfigurationStatus
+## GroupConfigurationStatusType
 
 ```python
-from mypy_boto3_resource_groups.literals import GroupConfigurationStatus
+from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType
 ```
 
 Values:
@@ -30,10 +30,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
-## GroupFilterName
+## GroupFilterNameType
 
 ```python
-from mypy_boto3_resource_groups.literals import GroupFilterName
+from mypy_boto3_resource_groups.literals import GroupFilterNameType
 ```
 
 Values:
@@ -61,10 +61,10 @@ Values:
 
 - `list_groups`
 
-## QueryErrorCode
+## QueryErrorCodeType
 
 ```python
-from mypy_boto3_resource_groups.literals import QueryErrorCode
+from mypy_boto3_resource_groups.literals import QueryErrorCodeType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 - `CLOUDFORMATION_STACK_INACTIVE`
 - `CLOUDFORMATION_STACK_NOT_EXISTING`
 
-## QueryType
+## QueryTypeType
 
 ```python
-from mypy_boto3_resource_groups.literals import QueryType
+from mypy_boto3_resource_groups.literals import QueryTypeType
 ```
 
 Values:
@@ -83,20 +83,20 @@ Values:
 - `CLOUDFORMATION_STACK_1_0`
 - `TAG_FILTERS_1_0`
 
-## ResourceFilterName
+## ResourceFilterNameType
 
 ```python
-from mypy_boto3_resource_groups.literals import ResourceFilterName
+from mypy_boto3_resource_groups.literals import ResourceFilterNameType
 ```
 
 Values:
 
 - `resource-type`
 
-## ResourceStatusValue
+## ResourceStatusValueType
 
 ```python
-from mypy_boto3_resource_groups.literals import ResourceStatusValue
+from mypy_boto3_resource_groups.literals import ResourceStatusValueType
 ```
 
 Values:

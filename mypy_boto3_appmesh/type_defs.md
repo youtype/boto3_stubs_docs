@@ -3,7 +3,7 @@
 > [Index](..) > [AppMesh](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
 [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
@@ -330,7 +330,8 @@ from mypy_boto3_appmesh.type_defs import CreateVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
+- `virtualNode`:
+  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -418,7 +419,8 @@ from mypy_boto3_appmesh.type_defs import DeleteVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
+- `virtualNode`:
+  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -506,7 +508,8 @@ from mypy_boto3_appmesh.type_defs import DescribeVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
+- `virtualNode`:
+  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -554,7 +557,7 @@ from mypy_boto3_appmesh.type_defs import DurationTypeDef
 
 Optional fields:
 
-- `unit`: [DurationUnit](./literals.md#durationunit)
+- `unit`: [DurationUnitType](./literals.md#durationunittype)
 - `value`: `int`
 
 ## EgressFilterTypeDef
@@ -565,7 +568,7 @@ from mypy_boto3_appmesh.type_defs import EgressFilterTypeDef
 
 Required fields:
 
-- `type`: [EgressFilterType](./literals.md#egressfiltertype)
+- `type`: [EgressFilterTypeType](./literals.md#egressfiltertypetype)
 
 ## FileAccessLogTypeDef
 
@@ -589,7 +592,8 @@ Required fields:
 - `meshName`: `str`
 - `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
 - `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
-- `status`: [GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef)
+- `status`:
+  [GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef)
 - `virtualGatewayName`: `str`
 
 ## GatewayRouteRefTypeDef
@@ -618,9 +622,12 @@ from mypy_boto3_appmesh.type_defs import GatewayRouteSpecTypeDef
 
 Optional fields:
 
-- `grpcRoute`: [GrpcGatewayRouteTypeDef](./type_defs.md#grpcgatewayroutetypedef)
-- `http2Route`: [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
-- `httpRoute`: [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
+- `grpcRoute`:
+  [GrpcGatewayRouteTypeDef](./type_defs.md#grpcgatewayroutetypedef)
+- `http2Route`:
+  [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
+- `httpRoute`:
+  [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
 
 ## GatewayRouteStatusTypeDef
 
@@ -630,7 +637,8 @@ from mypy_boto3_appmesh.type_defs import GatewayRouteStatusTypeDef
 
 Required fields:
 
-- `status`: [GatewayRouteStatusCode](./literals.md#gatewayroutestatuscode)
+- `status`:
+  [GatewayRouteStatusCodeType](./literals.md#gatewayroutestatuscodetype)
 
 ## GatewayRouteTargetTypeDef
 
@@ -661,7 +669,8 @@ from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteActionTypeDef
 
 Required fields:
 
-- `target`: [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
+- `target`:
+  [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
 
 ## GrpcGatewayRouteMatchTypeDef
 
@@ -700,10 +709,10 @@ Required fields:
 Optional fields:
 
 - `grpcRetryEvents`:
-  `List`\[[GrpcRetryPolicyEvent](./literals.md#grpcretrypolicyevent)\]
+  `List`\[[GrpcRetryPolicyEventType](./literals.md#grpcretrypolicyeventtype)\]
 - `httpRetryEvents`: `List`\[`str`\]
 - `tcpRetryEvents`: `List`\[`Literal['connection-error']` (see
-  [TcpRetryPolicyEvent](./literals.md#tcpretrypolicyevent))\]
+  [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype))\]
 
 ## GrpcRouteActionTypeDef
 
@@ -772,7 +781,8 @@ Required fields:
 
 Optional fields:
 
-- `retryPolicy`: [GrpcRetryPolicyTypeDef](./type_defs.md#grpcretrypolicytypedef)
+- `retryPolicy`:
+  [GrpcRetryPolicyTypeDef](./type_defs.md#grpcretrypolicytypedef)
 - `timeout`: [GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef)
 
 ## GrpcTimeoutTypeDef
@@ -810,7 +820,7 @@ Required fields:
 
 - `healthyThreshold`: `int`
 - `intervalMillis`: `int`
-- `protocol`: [PortProtocol](./literals.md#portprotocol)
+- `protocol`: [PortProtocolType](./literals.md#portprotocoltype)
 - `timeoutMillis`: `int`
 - `unhealthyThreshold`: `int`
 
@@ -827,7 +837,8 @@ from mypy_boto3_appmesh.type_defs import HttpGatewayRouteActionTypeDef
 
 Required fields:
 
-- `target`: [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
+- `target`:
+  [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
 
 ## HttpGatewayRouteMatchTypeDef
 
@@ -867,7 +878,7 @@ Optional fields:
 
 - `httpRetryEvents`: `List`\[`str`\]
 - `tcpRetryEvents`: `List`\[`Literal['connection-error']` (see
-  [TcpRetryPolicyEvent](./literals.md#tcpretrypolicyevent))\]
+  [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype))\]
 
 ## HttpRouteActionTypeDef
 
@@ -909,8 +920,8 @@ Optional fields:
 
 - `headers`:
   `List`\[[HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)\]
-- `method`: [HttpMethod](./literals.md#httpmethod)
-- `scheme`: [HttpScheme](./literals.md#httpscheme)
+- `method`: [HttpMethodType](./literals.md#httpmethodtype)
+- `scheme`: [HttpSchemeType](./literals.md#httpschemetype)
 
 ## HttpRouteTypeDef
 
@@ -925,7 +936,8 @@ Required fields:
 
 Optional fields:
 
-- `retryPolicy`: [HttpRetryPolicyTypeDef](./type_defs.md#httpretrypolicytypedef)
+- `retryPolicy`:
+  [HttpRetryPolicyTypeDef](./type_defs.md#httpretrypolicytypedef)
 - `timeout`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
 
 ## HttpTimeoutTypeDef
@@ -1117,7 +1129,7 @@ Required fields:
 
 - `certificate`:
   [ListenerTlsCertificateTypeDef](./type_defs.md#listenertlscertificatetypedef)
-- `mode`: [ListenerTlsMode](./literals.md#listenertlsmode)
+- `mode`: [ListenerTlsModeType](./literals.md#listenertlsmodetype)
 
 Optional fields:
 
@@ -1242,7 +1254,7 @@ from mypy_boto3_appmesh.type_defs import MeshStatusTypeDef
 
 Optional fields:
 
-- `status`: [MeshStatusCode](./literals.md#meshstatuscode)
+- `status`: [MeshStatusCodeType](./literals.md#meshstatuscodetype)
 
 ## OutlierDetectionTypeDef
 
@@ -1278,7 +1290,7 @@ from mypy_boto3_appmesh.type_defs import PortMappingTypeDef
 Required fields:
 
 - `port`: `int`
-- `protocol`: [PortProtocol](./literals.md#portprotocol)
+- `protocol`: [PortProtocolType](./literals.md#portprotocoltype)
 
 ## ResourceMetadataTypeDef
 
@@ -1365,7 +1377,7 @@ from mypy_boto3_appmesh.type_defs import RouteStatusTypeDef
 
 Required fields:
 
-- `status`: [RouteStatusCode](./literals.md#routestatuscode)
+- `status`: [RouteStatusCodeType](./literals.md#routestatuscodetype)
 
 ## ServiceDiscoveryTypeDef
 
@@ -1377,7 +1389,8 @@ Optional fields:
 
 - `awsCloudMap`:
   [AwsCloudMapServiceDiscoveryTypeDef](./type_defs.md#awscloudmapservicediscoverytypedef)
-- `dns`: [DnsServiceDiscoveryTypeDef](./type_defs.md#dnsservicediscoverytypedef)
+- `dns`:
+  [DnsServiceDiscoveryTypeDef](./type_defs.md#dnsservicediscoverytypedef)
 
 ## SubjectAlternativeNameMatchersTypeDef
 
@@ -1565,7 +1578,8 @@ from mypy_boto3_appmesh.type_defs import UpdateVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
+- `virtualNode`:
+  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1720,7 +1734,7 @@ Required fields:
 - `healthyThreshold`: `int`
 - `intervalMillis`: `int`
 - `protocol`:
-  [VirtualGatewayPortProtocol](./literals.md#virtualgatewayportprotocol)
+  [VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype)
 - `timeoutMillis`: `int`
 - `unhealthyThreshold`: `int`
 
@@ -1810,7 +1824,7 @@ Required fields:
 - `certificate`:
   [VirtualGatewayListenerTlsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlscertificatetypedef)
 - `mode`:
-  [VirtualGatewayListenerTlsMode](./literals.md#virtualgatewaylistenertlsmode)
+  [VirtualGatewayListenerTlsModeType](./literals.md#virtualgatewaylistenertlsmodetype)
 
 Optional fields:
 
@@ -1887,7 +1901,7 @@ Required fields:
 
 - `port`: `int`
 - `protocol`:
-  [VirtualGatewayPortProtocol](./literals.md#virtualgatewayportprotocol)
+  [VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype)
 
 ## VirtualGatewayRefTypeDef
 
@@ -1932,7 +1946,8 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayStatusTypeDef
 
 Required fields:
 
-- `status`: [VirtualGatewayStatusCode](./literals.md#virtualgatewaystatuscode)
+- `status`:
+  [VirtualGatewayStatusCodeType](./literals.md#virtualgatewaystatuscodetype)
 
 ## VirtualGatewayTlsValidationContextAcmTrustTypeDef
 
@@ -2111,7 +2126,8 @@ from mypy_boto3_appmesh.type_defs import VirtualNodeStatusTypeDef
 
 Required fields:
 
-- `status`: [VirtualNodeStatusCode](./literals.md#virtualnodestatuscode)
+- `status`:
+  [VirtualNodeStatusCodeType](./literals.md#virtualnodestatuscodetype)
 
 ## VirtualNodeTcpConnectionPoolTypeDef
 
@@ -2194,7 +2210,8 @@ from mypy_boto3_appmesh.type_defs import VirtualRouterStatusTypeDef
 
 Required fields:
 
-- `status`: [VirtualRouterStatusCode](./literals.md#virtualrouterstatuscode)
+- `status`:
+  [VirtualRouterStatusCodeType](./literals.md#virtualrouterstatuscodetype)
 
 ## VirtualServiceBackendTypeDef
 
@@ -2274,7 +2291,8 @@ from mypy_boto3_appmesh.type_defs import VirtualServiceStatusTypeDef
 
 Required fields:
 
-- `status`: [VirtualServiceStatusCode](./literals.md#virtualservicestatuscode)
+- `status`:
+  [VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype)
 
 ## WeightedTargetTypeDef
 

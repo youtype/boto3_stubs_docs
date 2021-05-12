@@ -3,7 +3,7 @@
 > [Index](..) > [PinpointSMSVoice](.) > Typed dictionaries
 
 Auto-generated documentation for
-[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
 type annotations stubs module
 [mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 
@@ -54,8 +54,9 @@ Optional fields:
 - `Enabled`: `bool`
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
-- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
+- `SnsDestination`:
+  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
 ## EventDestinationTypeDef
 
@@ -70,9 +71,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 - `Name`: `str`
-- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
 ## GetConfigurationSetEventDestinationsResponseTypeDef
 
@@ -152,4 +154,5 @@ Optional fields:
   [CallInstructionsMessageTypeTypeDef](./type_defs.md#callinstructionsmessagetypetypedef)
 - `PlainTextMessage`:
   [PlainTextMessageTypeTypeDef](./type_defs.md#plaintextmessagetypetypedef)
-- `SSMLMessage`: [SSMLMessageTypeTypeDef](./type_defs.md#ssmlmessagetypetypedef)
+- `SSMLMessage`:
+  [SSMLMessageTypeTypeDef](./type_defs.md#ssmlmessagetypetypedef)

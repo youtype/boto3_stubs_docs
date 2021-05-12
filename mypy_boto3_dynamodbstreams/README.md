@@ -3,7 +3,7 @@
 > [Index](..) > DynamoDBStreams
 
 Auto-generated documentation for
-[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
 [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
@@ -29,25 +29,25 @@ Can be used directly:
 from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
 ```
 
-DynamoDBStreamsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_stream](./client.md#describe-stream)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_records](./client.md#get-records)
-- [get_shard_iterator](./client.md#get-shard-iterator)
-- [list_streams](./client.md#list-streams)
+- [can_paginate](./client.md#can_paginate)
+- [describe_stream](./client.md#describe_stream)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_records](./client.md#get_records)
+- [get_shard_iterator](./client.md#get_shard_iterator)
+- [list_streams](./client.md#list_streams)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ExpiredIteratorException](./client.md#expirediteratorexception)
-- [InternalServerError](./client.md#internalservererror)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TrimmedDataAccessException](./client.md#trimmeddataaccessexception)
+DynamoDBStreamsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ExpiredIteratorException
+- InternalServerError
+- LimitExceededException
+- ResourceNotFoundException
+- TrimmedDataAccessException
 
 ## Literals
 
@@ -56,14 +56,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodbstreams.literals import KeyType, ...
+from mypy_boto3_dynamodbstreams.literals import KeyTypeType, ...
 ```
 
-- [KeyType](./literals.md#keytype)
-- [OperationType](./literals.md#operationtype)
-- [ShardIteratorType](./literals.md#sharditeratortype)
-- [StreamStatus](./literals.md#streamstatus)
-- [StreamViewType](./literals.md#streamviewtype)
+- [KeyTypeType](./literals.md#keytypetype)
+- [OperationTypeType](./literals.md#operationtypetype)
+- [ShardIteratorTypeType](./literals.md#sharditeratortypetype)
+- [StreamStatusType](./literals.md#streamstatustype)
+- [StreamViewTypeType](./literals.md#streamviewtypetype)
 
 ## Typed dictionaries
 

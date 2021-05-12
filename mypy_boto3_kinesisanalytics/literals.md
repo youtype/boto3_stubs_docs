@@ -3,19 +3,19 @@
 > [Index](..) > [KinesisAnalytics](.) > Literals
 
 Auto-generated documentation for
-[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
+[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
 [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 - [Literals for boto3 KinesisAnalytics module](#literals-for-boto3-kinesisanalytics-module)
-  - [ApplicationStatus](#applicationstatus)
-  - [InputStartingPosition](#inputstartingposition)
-  - [RecordFormatType](#recordformattype)
+  - [ApplicationStatusType](#applicationstatustype)
+  - [InputStartingPositionType](#inputstartingpositiontype)
+  - [RecordFormatTypeType](#recordformattypetype)
 
-## ApplicationStatus
+## ApplicationStatusType
 
 ```python
-from mypy_boto3_kinesisanalytics.literals import ApplicationStatus
+from mypy_boto3_kinesisanalytics.literals import ApplicationStatusType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `STOPPING`
 - `UPDATING`
 
-## InputStartingPosition
+## InputStartingPositionType
 
 ```python
-from mypy_boto3_kinesisanalytics.literals import InputStartingPosition
+from mypy_boto3_kinesisanalytics.literals import InputStartingPositionType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 - `NOW`
 - `TRIM_HORIZON`
 
-## RecordFormatType
+## RecordFormatTypeType
 
 ```python
-from mypy_boto3_kinesisanalytics.literals import RecordFormatType
+from mypy_boto3_kinesisanalytics.literals import RecordFormatTypeType
 ```
 
 Values:

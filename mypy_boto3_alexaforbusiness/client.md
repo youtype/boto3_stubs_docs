@@ -3,7 +3,7 @@
 > [Index](..) > [AlexaForBusiness](.) > AlexaForBusinessClient
 
 Auto-generated documentation for
-[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
 [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
@@ -122,7 +122,7 @@ def get_alexaforbusiness_client() -> AlexaForBusinessClient:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client)
+[AlexaForBusiness.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client)
 
 ## Exceptions
 
@@ -162,7 +162,7 @@ Exceptions:
 Type annotations for `boto3.client("alexaforbusiness").approve_skill` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.approve_skill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill)
+[AlexaForBusiness.Client.approve_skill](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").associate_contact_with_address_book` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.associate_contact_with_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book)
+[AlexaForBusiness.Client.associate_contact_with_address_book](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.associate_device_with_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile)
+[AlexaForBusiness.Client.associate_device_with_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").associate_device_with_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.associate_device_with_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room)
+[AlexaForBusiness.Client.associate_device_with_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room)
 
 Arguments:
 
@@ -222,7 +222,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").associate_skill_group_with_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.associate_skill_group_with_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room)
+[AlexaForBusiness.Client.associate_skill_group_with_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").associate_skill_with_skill_group` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.associate_skill_with_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group)
+[AlexaForBusiness.Client.associate_skill_with_skill_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").associate_skill_with_users` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.associate_skill_with_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users)
+[AlexaForBusiness.Client.associate_skill_with_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").can_paginate` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.can_paginate)
+[AlexaForBusiness.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.can_paginate)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_address_book`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
+[AlexaForBusiness.Client.create_address_book](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
 
 Arguments:
 
@@ -297,11 +297,11 @@ Type annotations for
 `boto3.client("alexaforbusiness").create_business_report_schedule` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
+[AlexaForBusiness.Client.create_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
 
 Arguments:
 
-- `Format`: [BusinessReportFormat](./literals.md#businessreportformat)
+- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
   *(required)*
 - `ContentRange`:
   [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
@@ -323,15 +323,16 @@ Type annotations for
 `boto3.client("alexaforbusiness").create_conference_provider` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
+[AlexaForBusiness.Client.create_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
 
 Arguments:
 
 - `ConferenceProviderName`: `str` *(required)*
 - `ConferenceProviderType`:
-  [ConferenceProviderType](./literals.md#conferenceprovidertype) *(required)*
-- `MeetingSetting`: [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
+  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
   *(required)*
+- `MeetingSetting`:
+  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) *(required)*
 - `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 - `ClientRequestToken`: `str`
@@ -345,7 +346,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").create_contact` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
+[AlexaForBusiness.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
 
 Arguments:
 
@@ -355,7 +356,8 @@ Arguments:
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
   `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+- `SipAddresses`:
+  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 - `ClientRequestToken`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -368,7 +370,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_gateway_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
+[AlexaForBusiness.Client.create_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
 
 Arguments:
 
@@ -386,18 +388,18 @@ Type annotations for `boto3.client("alexaforbusiness").create_network_profile`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
+[AlexaForBusiness.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
 
 Arguments:
 
 - `NetworkProfileName`: `str` *(required)*
 - `Ssid`: `str` *(required)*
-- `SecurityType`: [NetworkSecurityType](./literals.md#networksecuritytype)
-  *(required)*
+- `SecurityType`:
+  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype) *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Description`: `str`
 - `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethod](./literals.md#networkeapmethod))
+  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
@@ -412,17 +414,18 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").create_profile` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
+[AlexaForBusiness.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
 
 Arguments:
 
 - `ProfileName`: `str` *(required)*
 - `Timezone`: `str` *(required)*
 - `Address`: `str` *(required)*
-- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit) *(required)*
-- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
+- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
   *(required)*
-- `WakeWord`: [WakeWord](./literals.md#wakeword) *(required)*
+- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
+  *(required)*
+- `WakeWord`: [WakeWordType](./literals.md#wakewordtype) *(required)*
 - `Locale`: `str`
 - `ClientRequestToken`: `str`
 - `SetupModeDisabled`: `bool`
@@ -441,7 +444,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").create_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
+[AlexaForBusiness.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
 
 Arguments:
 
@@ -460,7 +463,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_skill_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
+[AlexaForBusiness.Client.create_skill_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
 
 Arguments:
 
@@ -477,7 +480,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").create_user` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
+[AlexaForBusiness.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
 
 Arguments:
 
@@ -496,7 +499,7 @@ Type annotations for `boto3.client("alexaforbusiness").delete_address_book`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book)
+[AlexaForBusiness.Client.delete_address_book](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book)
 
 Arguments:
 
@@ -510,7 +513,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").delete_business_report_schedule` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule)
+[AlexaForBusiness.Client.delete_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule)
 
 Arguments:
 
@@ -524,7 +527,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").delete_conference_provider` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider)
+[AlexaForBusiness.Client.delete_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider)
 
 Arguments:
 
@@ -537,7 +540,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").delete_contact` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact)
+[AlexaForBusiness.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact)
 
 Arguments:
 
@@ -550,7 +553,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").delete_device` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device)
+[AlexaForBusiness.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device)
 
 Arguments:
 
@@ -564,13 +567,13 @@ Type annotations for
 `boto3.client("alexaforbusiness").delete_device_usage_data` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_device_usage_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data)
+[AlexaForBusiness.Client.delete_device_usage_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data)
 
 Arguments:
 
 - `DeviceArn`: `str` *(required)*
 - `DeviceUsageType`: `Literal['VOICE']` (see
-  [DeviceUsageType](./literals.md#deviceusagetype)) *(required)*
+  [DeviceUsageTypeType](./literals.md#deviceusagetypetype)) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -580,7 +583,7 @@ Type annotations for `boto3.client("alexaforbusiness").delete_gateway_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group)
+[AlexaForBusiness.Client.delete_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group)
 
 Arguments:
 
@@ -594,7 +597,7 @@ Type annotations for `boto3.client("alexaforbusiness").delete_network_profile`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile)
+[AlexaForBusiness.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile)
 
 Arguments:
 
@@ -607,7 +610,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").delete_profile` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile)
+[AlexaForBusiness.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile)
 
 Arguments:
 
@@ -620,7 +623,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").delete_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room)
+[AlexaForBusiness.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room)
 
 Arguments:
 
@@ -634,7 +637,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").delete_room_skill_parameter` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
+[AlexaForBusiness.Client.delete_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
 
 Arguments:
 
@@ -650,7 +653,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").delete_skill_authorization` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization)
+[AlexaForBusiness.Client.delete_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization)
 
 Arguments:
 
@@ -665,7 +668,7 @@ Type annotations for `boto3.client("alexaforbusiness").delete_skill_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group)
+[AlexaForBusiness.Client.delete_skill_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group)
 
 Arguments:
 
@@ -678,7 +681,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").delete_user` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user)
+[AlexaForBusiness.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user)
 
 Arguments:
 
@@ -694,7 +697,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_contact_from_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book)
+[AlexaForBusiness.Client.disassociate_contact_from_address_book](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book)
 
 Arguments:
 
@@ -709,7 +712,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").disassociate_device_from_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_device_from_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room)
+[AlexaForBusiness.Client.disassociate_device_from_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room)
 
 Arguments:
 
@@ -723,7 +726,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").disassociate_skill_from_skill_group` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_skill_from_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group)
+[AlexaForBusiness.Client.disassociate_skill_from_skill_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group)
 
 Arguments:
 
@@ -738,7 +741,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").disassociate_skill_from_users` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_skill_from_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users)
+[AlexaForBusiness.Client.disassociate_skill_from_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users)
 
 Arguments:
 
@@ -752,7 +755,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").disassociate_skill_group_from_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_skill_group_from_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room)
+[AlexaForBusiness.Client.disassociate_skill_group_from_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room)
 
 Arguments:
 
@@ -767,7 +770,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").forget_smart_home_appliances` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.forget_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances)
+[AlexaForBusiness.Client.forget_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances)
 
 Arguments:
 
@@ -781,7 +784,7 @@ Type annotations for `boto3.client("alexaforbusiness").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.generate_presigned_url)
+[AlexaForBusiness.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.generate_presigned_url)
 
 Arguments:
 
@@ -798,7 +801,7 @@ Type annotations for `boto3.client("alexaforbusiness").get_address_book`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book)
+[AlexaForBusiness.Client.get_address_book](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book)
 
 Arguments:
 
@@ -813,7 +816,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").get_conference_preference` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
+[AlexaForBusiness.Client.get_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
 
 Returns
 [GetConferencePreferenceResponseTypeDef](./type_defs.md#getconferencepreferenceresponsetypedef).
@@ -824,7 +827,7 @@ Type annotations for `boto3.client("alexaforbusiness").get_conference_provider`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider)
+[AlexaForBusiness.Client.get_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider)
 
 Arguments:
 
@@ -838,7 +841,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").get_contact` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact)
+[AlexaForBusiness.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact)
 
 Arguments:
 
@@ -851,7 +854,7 @@ Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
 Type annotations for `boto3.client("alexaforbusiness").get_device` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device)
+[AlexaForBusiness.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device)
 
 Arguments:
 
@@ -864,7 +867,7 @@ Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 Type annotations for `boto3.client("alexaforbusiness").get_gateway` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway)
+[AlexaForBusiness.Client.get_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway)
 
 Arguments:
 
@@ -878,7 +881,7 @@ Type annotations for `boto3.client("alexaforbusiness").get_gateway_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group)
+[AlexaForBusiness.Client.get_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group)
 
 Arguments:
 
@@ -893,7 +896,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").get_invitation_configuration` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
+[AlexaForBusiness.Client.get_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
 
 Returns
 [GetInvitationConfigurationResponseTypeDef](./type_defs.md#getinvitationconfigurationresponsetypedef).
@@ -904,7 +907,7 @@ Type annotations for `boto3.client("alexaforbusiness").get_network_profile`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile)
+[AlexaForBusiness.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile)
 
 Arguments:
 
@@ -918,7 +921,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").get_profile` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile)
+[AlexaForBusiness.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile)
 
 Arguments:
 
@@ -931,7 +934,7 @@ Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 Type annotations for `boto3.client("alexaforbusiness").get_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room)
+[AlexaForBusiness.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room)
 
 Arguments:
 
@@ -945,7 +948,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").get_room_skill_parameter` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
+[AlexaForBusiness.Client.get_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
 
 Arguments:
 
@@ -961,7 +964,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").get_skill_group` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.get_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group)
+[AlexaForBusiness.Client.get_skill_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group)
 
 Arguments:
 
@@ -976,7 +979,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").list_business_report_schedules` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_business_report_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules)
+[AlexaForBusiness.Client.list_business_report_schedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules)
 
 Arguments:
 
@@ -992,7 +995,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").list_conference_providers` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_conference_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers)
+[AlexaForBusiness.Client.list_conference_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers)
 
 Arguments:
 
@@ -1008,12 +1011,12 @@ Type annotations for `boto3.client("alexaforbusiness").list_device_events`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
+[AlexaForBusiness.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
 
 Arguments:
 
 - `DeviceArn`: `str` *(required)*
-- `EventType`: [DeviceEventType](./literals.md#deviceeventtype)
+- `EventType`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1026,7 +1029,7 @@ Type annotations for `boto3.client("alexaforbusiness").list_gateway_groups`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_gateway_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups)
+[AlexaForBusiness.Client.list_gateway_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups)
 
 Arguments:
 
@@ -1041,7 +1044,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").list_gateways` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
+[AlexaForBusiness.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
 
 Arguments:
 
@@ -1057,13 +1060,14 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").list_skills` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_skills](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
+[AlexaForBusiness.Client.list_skills](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
 
 Arguments:
 
 - `SkillGroupArn`: `str`
-- `EnablementType`: [EnablementTypeFilter](./literals.md#enablementtypefilter)
-- `SkillType`: [SkillTypeFilter](./literals.md#skilltypefilter)
+- `EnablementType`:
+  [EnablementTypeFilterType](./literals.md#enablementtypefiltertype)
+- `SkillType`: [SkillTypeFilterType](./literals.md#skilltypefiltertype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1075,7 +1079,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").list_skills_store_categories` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_skills_store_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories)
+[AlexaForBusiness.Client.list_skills_store_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories)
 
 Arguments:
 
@@ -1091,7 +1095,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").list_skills_store_skills_by_category` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_skills_store_skills_by_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
+[AlexaForBusiness.Client.list_skills_store_skills_by_category](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
 
 Arguments:
 
@@ -1108,7 +1112,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").list_smart_home_appliances` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
+[AlexaForBusiness.Client.list_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
 
 Arguments:
 
@@ -1124,7 +1128,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").list_tags` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
+[AlexaForBusiness.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
 
 Arguments:
 
@@ -1140,7 +1144,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").put_conference_preference` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.put_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference)
+[AlexaForBusiness.Client.put_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference)
 
 Arguments:
 
@@ -1156,7 +1160,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").put_invitation_configuration` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.put_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
+[AlexaForBusiness.Client.put_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
 
 Arguments:
 
@@ -1172,7 +1176,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").put_room_skill_parameter` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.put_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
+[AlexaForBusiness.Client.put_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
 
 Arguments:
 
@@ -1190,7 +1194,7 @@ Type annotations for `boto3.client("alexaforbusiness").put_skill_authorization`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.put_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
+[AlexaForBusiness.Client.put_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
 
 Arguments:
 
@@ -1206,7 +1210,7 @@ Type annotations for `boto3.client("alexaforbusiness").register_avs_device`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.register_avs_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
+[AlexaForBusiness.Client.register_avs_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
 
 Arguments:
 
@@ -1226,7 +1230,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").reject_skill` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.reject_skill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill)
+[AlexaForBusiness.Client.reject_skill](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill)
 
 Arguments:
 
@@ -1239,7 +1243,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").resolve_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.resolve_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room)
+[AlexaForBusiness.Client.resolve_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room)
 
 Arguments:
 
@@ -1255,7 +1259,7 @@ Type annotations for `boto3.client("alexaforbusiness").revoke_invitation`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.revoke_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation)
+[AlexaForBusiness.Client.revoke_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation)
 
 Arguments:
 
@@ -1270,7 +1274,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_address_books`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_address_books](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
+[AlexaForBusiness.Client.search_address_books](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
 
 Arguments:
 
@@ -1287,7 +1291,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").search_contacts` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
+[AlexaForBusiness.Client.search_contacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
 
 Arguments:
 
@@ -1304,7 +1308,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").search_devices` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
+[AlexaForBusiness.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
 
 Arguments:
 
@@ -1322,7 +1326,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_network_profiles`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
+[AlexaForBusiness.Client.search_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
 
 Arguments:
 
@@ -1339,7 +1343,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").search_profiles` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
+[AlexaForBusiness.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
 
 Arguments:
 
@@ -1356,7 +1360,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").search_rooms` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
+[AlexaForBusiness.Client.search_rooms](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
 
 Arguments:
 
@@ -1374,7 +1378,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_skill_groups`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_skill_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
+[AlexaForBusiness.Client.search_skill_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
 
 Arguments:
 
@@ -1391,7 +1395,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").search_users` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.search_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
+[AlexaForBusiness.Client.search_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
 
 Arguments:
 
@@ -1409,7 +1413,7 @@ Type annotations for `boto3.client("alexaforbusiness").send_announcement`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.send_announcement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
+[AlexaForBusiness.Client.send_announcement](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
 
 Arguments:
 
@@ -1427,7 +1431,7 @@ Returns
 Type annotations for `boto3.client("alexaforbusiness").send_invitation` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.send_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation)
+[AlexaForBusiness.Client.send_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation)
 
 Arguments:
 
@@ -1441,11 +1445,11 @@ Type annotations for `boto3.client("alexaforbusiness").start_device_sync`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.start_device_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
+[AlexaForBusiness.Client.start_device_sync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
 
 Arguments:
 
-- `Features`: `List`\[[Feature](./literals.md#feature)\] *(required)*
+- `Features`: `List`\[[FeatureType](./literals.md#featuretype)\] *(required)*
 - `RoomArn`: `str`
 - `DeviceArn`: `str`
 
@@ -1457,7 +1461,7 @@ Type annotations for
 `boto3.client("alexaforbusiness").start_smart_home_appliance_discovery` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.start_smart_home_appliance_discovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery)
+[AlexaForBusiness.Client.start_smart_home_appliance_discovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery)
 
 Arguments:
 
@@ -1470,7 +1474,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").tag_resource` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource)
+[AlexaForBusiness.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource)
 
 Arguments:
 
@@ -1484,7 +1488,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").untag_resource` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource)
+[AlexaForBusiness.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource)
 
 Arguments:
 
@@ -1499,7 +1503,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_address_book`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
+[AlexaForBusiness.Client.update_address_book](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
 
 Arguments:
 
@@ -1515,14 +1519,14 @@ Type annotations for
 `boto3.client("alexaforbusiness").update_business_report_schedule` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
+[AlexaForBusiness.Client.update_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
 
 Arguments:
 
 - `ScheduleArn`: `str` *(required)*
 - `S3BucketName`: `str`
 - `S3KeyPrefix`: `str`
-- `Format`: [BusinessReportFormat](./literals.md#businessreportformat)
+- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
 - `ScheduleName`: `str`
 - `Recurrence`:
   [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
@@ -1535,15 +1539,16 @@ Type annotations for
 `boto3.client("alexaforbusiness").update_conference_provider` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
+[AlexaForBusiness.Client.update_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
 
 Arguments:
 
 - `ConferenceProviderArn`: `str` *(required)*
 - `ConferenceProviderType`:
-  [ConferenceProviderType](./literals.md#conferenceprovidertype) *(required)*
-- `MeetingSetting`: [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
+  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
   *(required)*
+- `MeetingSetting`:
+  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) *(required)*
 - `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 
@@ -1554,7 +1559,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").update_contact` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
+[AlexaForBusiness.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
 
 Arguments:
 
@@ -1565,7 +1570,8 @@ Arguments:
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
   `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+- `SipAddresses`:
+  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1574,7 +1580,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").update_device` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device)
+[AlexaForBusiness.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device)
 
 Arguments:
 
@@ -1588,7 +1594,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").update_gateway` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
+[AlexaForBusiness.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
 
 Arguments:
 
@@ -1605,7 +1611,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_gateway_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
+[AlexaForBusiness.Client.update_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
 
 Arguments:
 
@@ -1621,7 +1627,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_network_profile`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
+[AlexaForBusiness.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
 
 Arguments:
 
@@ -1640,7 +1646,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").update_profile` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
+[AlexaForBusiness.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
 
 Arguments:
 
@@ -1649,9 +1655,9 @@ Arguments:
 - `IsDefault`: `bool`
 - `Timezone`: `str`
 - `Address`: `str`
-- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit)
-- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
-- `WakeWord`: [WakeWord](./literals.md#wakeword)
+- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
+- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
+- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
 - `Locale`: `str`
 - `SetupModeDisabled`: `bool`
 - `MaxVolumeLimit`: `int`
@@ -1667,7 +1673,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("alexaforbusiness").update_room` method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
+[AlexaForBusiness.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
 
 Arguments:
 
@@ -1685,7 +1691,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_skill_group`
 method.
 
 Boto3 documentation:
-[AlexaForBusiness.Client.update_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
+[AlexaForBusiness.Client.update_skill_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
 
 Arguments:
 

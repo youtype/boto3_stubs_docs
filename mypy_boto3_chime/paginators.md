@@ -3,7 +3,7 @@
 > [Index](..) > [Chime](.) > Paginators
 
 Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/chime.html#Chime)
 type annotations stubs module
 [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
@@ -25,7 +25,7 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
 ```
 
 Boto3 documentation:
-[Chime.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
+[Chime.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/chime.html#Chime.Paginator.ListAccounts)
 
 Arguments for `ListAccountsPaginator.paginate` method:
 
@@ -51,13 +51,13 @@ def get_list_users_paginator() -> ListUsersPaginator:
 ```
 
 Boto3 documentation:
-[Chime.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
+[Chime.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/chime.html#Chime.Paginator.ListUsers)
 
 Arguments for `ListUsersPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `UserEmail`: `str`
-- `UserType`: [UserType](./literals.md#usertype)
+- `UserType`: [UserTypeType](./literals.md#usertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

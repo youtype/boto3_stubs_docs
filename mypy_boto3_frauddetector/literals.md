@@ -3,29 +3,29 @@
 > [Index](..) > [FraudDetector](.) > Literals
 
 Auto-generated documentation for
-[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
 [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 - [Literals for boto3 FraudDetector module](#literals-for-boto3-frauddetector-module)
-  - [AsyncJobStatus](#asyncjobstatus)
-  - [DataSource](#datasource)
-  - [DataType](#datatype)
-  - [DetectorVersionStatus](#detectorversionstatus)
-  - [Language](#language)
-  - [ModelEndpointStatus](#modelendpointstatus)
-  - [ModelInputDataFormat](#modelinputdataformat)
-  - [ModelOutputDataFormat](#modeloutputdataformat)
-  - [ModelSource](#modelsource)
-  - [ModelTypeEnum](#modeltypeenum)
-  - [ModelVersionStatus](#modelversionstatus)
-  - [RuleExecutionMode](#ruleexecutionmode)
-  - [TrainingDataSourceEnum](#trainingdatasourceenum)
+  - [AsyncJobStatusType](#asyncjobstatustype)
+  - [DataSourceType](#datasourcetype)
+  - [DataTypeType](#datatypetype)
+  - [DetectorVersionStatusType](#detectorversionstatustype)
+  - [LanguageType](#languagetype)
+  - [ModelEndpointStatusType](#modelendpointstatustype)
+  - [ModelInputDataFormatType](#modelinputdataformattype)
+  - [ModelOutputDataFormatType](#modeloutputdataformattype)
+  - [ModelSourceType](#modelsourcetype)
+  - [ModelTypeEnumType](#modeltypeenumtype)
+  - [ModelVersionStatusType](#modelversionstatustype)
+  - [RuleExecutionModeType](#ruleexecutionmodetype)
+  - [TrainingDataSourceEnumType](#trainingdatasourceenumtype)
 
-## AsyncJobStatus
+## AsyncJobStatusType
 
 ```python
-from mypy_boto3_frauddetector.literals import AsyncJobStatus
+from mypy_boto3_frauddetector.literals import AsyncJobStatusType
 ```
 
 Values:
@@ -37,10 +37,10 @@ Values:
 - `IN_PROGRESS`
 - `IN_PROGRESS_INITIALIZING`
 
-## DataSource
+## DataSourceType
 
 ```python
-from mypy_boto3_frauddetector.literals import DataSource
+from mypy_boto3_frauddetector.literals import DataSourceType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `EXTERNAL_MODEL_SCORE`
 - `MODEL_SCORE`
 
-## DataType
+## DataTypeType
 
 ```python
-from mypy_boto3_frauddetector.literals import DataType
+from mypy_boto3_frauddetector.literals import DataTypeType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `INTEGER`
 - `STRING`
 
-## DetectorVersionStatus
+## DetectorVersionStatusType
 
 ```python
-from mypy_boto3_frauddetector.literals import DetectorVersionStatus
+from mypy_boto3_frauddetector.literals import DetectorVersionStatusType
 ```
 
 Values:
@@ -74,20 +74,20 @@ Values:
 - `DRAFT`
 - `INACTIVE`
 
-## Language
+## LanguageType
 
 ```python
-from mypy_boto3_frauddetector.literals import Language
+from mypy_boto3_frauddetector.literals import LanguageType
 ```
 
 Values:
 
 - `DETECTORPL`
 
-## ModelEndpointStatus
+## ModelEndpointStatusType
 
 ```python
-from mypy_boto3_frauddetector.literals import ModelEndpointStatus
+from mypy_boto3_frauddetector.literals import ModelEndpointStatusType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `ASSOCIATED`
 - `DISSOCIATED`
 
-## ModelInputDataFormat
+## ModelInputDataFormatType
 
 ```python
-from mypy_boto3_frauddetector.literals import ModelInputDataFormat
+from mypy_boto3_frauddetector.literals import ModelInputDataFormatType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `APPLICATION_JSON`
 - `TEXT_CSV`
 
-## ModelOutputDataFormat
+## ModelOutputDataFormatType
 
 ```python
-from mypy_boto3_frauddetector.literals import ModelOutputDataFormat
+from mypy_boto3_frauddetector.literals import ModelOutputDataFormatType
 ```
 
 Values:
@@ -117,30 +117,30 @@ Values:
 - `APPLICATION_JSONLINES`
 - `TEXT_CSV`
 
-## ModelSource
+## ModelSourceType
 
 ```python
-from mypy_boto3_frauddetector.literals import ModelSource
+from mypy_boto3_frauddetector.literals import ModelSourceType
 ```
 
 Values:
 
 - `SAGEMAKER`
 
-## ModelTypeEnum
+## ModelTypeEnumType
 
 ```python
-from mypy_boto3_frauddetector.literals import ModelTypeEnum
+from mypy_boto3_frauddetector.literals import ModelTypeEnumType
 ```
 
 Values:
 
 - `ONLINE_FRAUD_INSIGHTS`
 
-## ModelVersionStatus
+## ModelVersionStatusType
 
 ```python
-from mypy_boto3_frauddetector.literals import ModelVersionStatus
+from mypy_boto3_frauddetector.literals import ModelVersionStatusType
 ```
 
 Values:
@@ -149,10 +149,10 @@ Values:
 - `INACTIVE`
 - `TRAINING_CANCELLED`
 
-## RuleExecutionMode
+## RuleExecutionModeType
 
 ```python
-from mypy_boto3_frauddetector.literals import RuleExecutionMode
+from mypy_boto3_frauddetector.literals import RuleExecutionModeType
 ```
 
 Values:
@@ -160,10 +160,10 @@ Values:
 - `ALL_MATCHED`
 - `FIRST_MATCHED`
 
-## TrainingDataSourceEnum
+## TrainingDataSourceEnumType
 
 ```python
-from mypy_boto3_frauddetector.literals import TrainingDataSourceEnum
+from mypy_boto3_frauddetector.literals import TrainingDataSourceEnumType
 ```
 
 Values:

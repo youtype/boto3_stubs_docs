@@ -3,36 +3,36 @@
 > [Index](..) > [KMS](.) > Literals
 
 Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS)
 type annotations stubs module
 [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [Literals for boto3 KMS module](#literals-for-boto3-kms-module)
-  - [AlgorithmSpec](#algorithmspec)
-  - [ConnectionErrorCodeType](#connectionerrorcodetype)
-  - [ConnectionStateType](#connectionstatetype)
-  - [CustomerMasterKeySpec](#customermasterkeyspec)
-  - [DataKeyPairSpec](#datakeypairspec)
-  - [DataKeySpec](#datakeyspec)
-  - [EncryptionAlgorithmSpec](#encryptionalgorithmspec)
-  - [ExpirationModelType](#expirationmodeltype)
-  - [GrantOperation](#grantoperation)
-  - [KeyManagerType](#keymanagertype)
-  - [KeyState](#keystate)
-  - [KeyUsageType](#keyusagetype)
+  - [AlgorithmSpecType](#algorithmspectype)
+  - [ConnectionErrorCodeTypeType](#connectionerrorcodetypetype)
+  - [ConnectionStateTypeType](#connectionstatetypetype)
+  - [CustomerMasterKeySpecType](#customermasterkeyspectype)
+  - [DataKeyPairSpecType](#datakeypairspectype)
+  - [DataKeySpecType](#datakeyspectype)
+  - [EncryptionAlgorithmSpecType](#encryptionalgorithmspectype)
+  - [ExpirationModelTypeType](#expirationmodeltypetype)
+  - [GrantOperationType](#grantoperationtype)
+  - [KeyManagerTypeType](#keymanagertypetype)
+  - [KeyStateType](#keystatetype)
+  - [KeyUsageTypeType](#keyusagetypetype)
   - [ListAliasesPaginatorName](#listaliasespaginatorname)
   - [ListGrantsPaginatorName](#listgrantspaginatorname)
   - [ListKeyPoliciesPaginatorName](#listkeypoliciespaginatorname)
   - [ListKeysPaginatorName](#listkeyspaginatorname)
-  - [MessageType](#messagetype)
-  - [OriginType](#origintype)
-  - [SigningAlgorithmSpec](#signingalgorithmspec)
-  - [WrappingKeySpec](#wrappingkeyspec)
+  - [MessageTypeType](#messagetypetype)
+  - [OriginTypeType](#origintypetype)
+  - [SigningAlgorithmSpecType](#signingalgorithmspectype)
+  - [WrappingKeySpecType](#wrappingkeyspectype)
 
-## AlgorithmSpec
+## AlgorithmSpecType
 
 ```python
-from mypy_boto3_kms.literals import AlgorithmSpec
+from mypy_boto3_kms.literals import AlgorithmSpecType
 ```
 
 Values:
@@ -41,10 +41,10 @@ Values:
 - `RSAES_OAEP_SHA_256`
 - `RSAES_PKCS1_V1_5`
 
-## ConnectionErrorCodeType
+## ConnectionErrorCodeTypeType
 
 ```python
-from mypy_boto3_kms.literals import ConnectionErrorCodeType
+from mypy_boto3_kms.literals import ConnectionErrorCodeTypeType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `USER_LOGGED_IN`
 - `USER_NOT_FOUND`
 
-## ConnectionStateType
+## ConnectionStateTypeType
 
 ```python
-from mypy_boto3_kms.literals import ConnectionStateType
+from mypy_boto3_kms.literals import ConnectionStateTypeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `DISCONNECTING`
 - `FAILED`
 
-## CustomerMasterKeySpec
+## CustomerMasterKeySpecType
 
 ```python
-from mypy_boto3_kms.literals import CustomerMasterKeySpec
+from mypy_boto3_kms.literals import CustomerMasterKeySpecType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `RSA_4096`
 - `SYMMETRIC_DEFAULT`
 
-## DataKeyPairSpec
+## DataKeyPairSpecType
 
 ```python
-from mypy_boto3_kms.literals import DataKeyPairSpec
+from mypy_boto3_kms.literals import DataKeyPairSpecType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `RSA_3072`
 - `RSA_4096`
 
-## DataKeySpec
+## DataKeySpecType
 
 ```python
-from mypy_boto3_kms.literals import DataKeySpec
+from mypy_boto3_kms.literals import DataKeySpecType
 ```
 
 Values:
@@ -117,10 +117,10 @@ Values:
 - `AES_128`
 - `AES_256`
 
-## EncryptionAlgorithmSpec
+## EncryptionAlgorithmSpecType
 
 ```python
-from mypy_boto3_kms.literals import EncryptionAlgorithmSpec
+from mypy_boto3_kms.literals import EncryptionAlgorithmSpecType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 - `RSAES_OAEP_SHA_256`
 - `SYMMETRIC_DEFAULT`
 
-## ExpirationModelType
+## ExpirationModelTypeType
 
 ```python
-from mypy_boto3_kms.literals import ExpirationModelType
+from mypy_boto3_kms.literals import ExpirationModelTypeType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `KEY_MATERIAL_DOES_NOT_EXPIRE`
 - `KEY_MATERIAL_EXPIRES`
 
-## GrantOperation
+## GrantOperationType
 
 ```python
-from mypy_boto3_kms.literals import GrantOperation
+from mypy_boto3_kms.literals import GrantOperationType
 ```
 
 Values:
@@ -163,10 +163,10 @@ Values:
 - `Sign`
 - `Verify`
 
-## KeyManagerType
+## KeyManagerTypeType
 
 ```python
-from mypy_boto3_kms.literals import KeyManagerType
+from mypy_boto3_kms.literals import KeyManagerTypeType
 ```
 
 Values:
@@ -174,10 +174,10 @@ Values:
 - `AWS`
 - `CUSTOMER`
 
-## KeyState
+## KeyStateType
 
 ```python
-from mypy_boto3_kms.literals import KeyState
+from mypy_boto3_kms.literals import KeyStateType
 ```
 
 Values:
@@ -188,10 +188,10 @@ Values:
 - `PendingImport`
 - `Unavailable`
 
-## KeyUsageType
+## KeyUsageTypeType
 
 ```python
-from mypy_boto3_kms.literals import KeyUsageType
+from mypy_boto3_kms.literals import KeyUsageTypeType
 ```
 
 Values:
@@ -239,10 +239,10 @@ Values:
 
 - `list_keys`
 
-## MessageType
+## MessageTypeType
 
 ```python
-from mypy_boto3_kms.literals import MessageType
+from mypy_boto3_kms.literals import MessageTypeType
 ```
 
 Values:
@@ -250,10 +250,10 @@ Values:
 - `DIGEST`
 - `RAW`
 
-## OriginType
+## OriginTypeType
 
 ```python
-from mypy_boto3_kms.literals import OriginType
+from mypy_boto3_kms.literals import OriginTypeType
 ```
 
 Values:
@@ -262,10 +262,10 @@ Values:
 - `AWS_KMS`
 - `EXTERNAL`
 
-## SigningAlgorithmSpec
+## SigningAlgorithmSpecType
 
 ```python
-from mypy_boto3_kms.literals import SigningAlgorithmSpec
+from mypy_boto3_kms.literals import SigningAlgorithmSpecType
 ```
 
 Values:
@@ -280,10 +280,10 @@ Values:
 - `RSASSA_PSS_SHA_384`
 - `RSASSA_PSS_SHA_512`
 
-## WrappingKeySpec
+## WrappingKeySpecType
 
 ```python
-from mypy_boto3_kms.literals import WrappingKeySpec
+from mypy_boto3_kms.literals import WrappingKeySpecType
 ```
 
 Values:

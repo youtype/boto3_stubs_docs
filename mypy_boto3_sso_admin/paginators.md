@@ -3,7 +3,7 @@
 > [Index](..) > [SSOAdmin](.) > Paginators
 
 Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
 [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
@@ -34,7 +34,7 @@ def get_list_account_assignment_creation_status_paginator() -> ListAccountAssign
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountAssignmentCreationStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentCreationStatus)
+[SSOAdmin.Paginator.ListAccountAssignmentCreationStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentCreationStatus)
 
 Arguments for `ListAccountAssignmentCreationStatusPaginator.paginate` method:
 
@@ -62,7 +62,7 @@ def get_list_account_assignment_deletion_status_paginator() -> ListAccountAssign
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus)
+[SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus)
 
 Arguments for `ListAccountAssignmentDeletionStatusPaginator.paginate` method:
 
@@ -90,7 +90,7 @@ def get_list_account_assignments_paginator() -> ListAccountAssignmentsPaginator:
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountAssignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignments)
+[SSOAdmin.Paginator.ListAccountAssignments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignments)
 
 Arguments for `ListAccountAssignmentsPaginator.paginate` method:
 
@@ -118,14 +118,15 @@ def get_list_accounts_for_provisioned_permission_set_paginator() -> ListAccounts
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet)
+[SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet)
 
 Arguments for `ListAccountsForProvisionedPermissionSetPaginator.paginate`
 method:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
-- `ProvisioningStatus`: [ProvisioningStatus](./literals.md#provisioningstatus)
+- `ProvisioningStatus`:
+  [ProvisioningStatusType](./literals.md#provisioningstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -147,7 +148,7 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListInstances)
+[SSOAdmin.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListInstances)
 
 Arguments for `ListInstancesPaginator.paginate` method:
 
@@ -172,7 +173,7 @@ def get_list_managed_policies_in_permission_set_paginator() -> ListManagedPolici
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet)
+[SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet)
 
 Arguments for `ListManagedPoliciesInPermissionSetPaginator.paginate` method:
 
@@ -199,7 +200,7 @@ def get_list_permission_set_provisioning_status_paginator() -> ListPermissionSet
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListPermissionSetProvisioningStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetProvisioningStatus)
+[SSOAdmin.Paginator.ListPermissionSetProvisioningStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetProvisioningStatus)
 
 Arguments for `ListPermissionSetProvisioningStatusPaginator.paginate` method:
 
@@ -227,7 +228,7 @@ def get_list_permission_sets_paginator() -> ListPermissionSetsPaginator:
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListPermissionSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSets)
+[SSOAdmin.Paginator.ListPermissionSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSets)
 
 Arguments for `ListPermissionSetsPaginator.paginate` method:
 
@@ -253,14 +254,15 @@ def get_list_permission_sets_provisioned_to_account_paginator() -> ListPermissio
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount)
+[SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount)
 
 Arguments for `ListPermissionSetsProvisionedToAccountPaginator.paginate`
 method:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
-- `ProvisioningStatus`: [ProvisioningStatus](./literals.md#provisioningstatus)
+- `ProvisioningStatus`:
+  [ProvisioningStatusType](./literals.md#provisioningstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -282,7 +284,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[SSOAdmin.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListTagsForResource)
+[SSOAdmin.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 

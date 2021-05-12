@@ -3,7 +3,7 @@
 > [Index](..) > [AppRegistry](.) > Literals
 
 Auto-generated documentation for
-[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
 [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
@@ -12,8 +12,8 @@ type annotations stubs module
   - [ListAssociatedAttributeGroupsPaginatorName](#listassociatedattributegroupspaginatorname)
   - [ListAssociatedResourcesPaginatorName](#listassociatedresourcespaginatorname)
   - [ListAttributeGroupsPaginatorName](#listattributegroupspaginatorname)
-  - [ResourceType](#resourcetype)
-  - [SyncAction](#syncaction)
+  - [ResourceTypeType](#resourcetypetype)
+  - [SyncActionType](#syncactiontype)
 
 ## ListApplicationsPaginatorName
 
@@ -55,20 +55,20 @@ Values:
 
 - `list_attribute_groups`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.literals import ResourceType
+from mypy_boto3_servicecatalog_appregistry.literals import ResourceTypeType
 ```
 
 Values:
 
 - `CFN_STACK`
 
-## SyncAction
+## SyncActionType
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.literals import SyncAction
+from mypy_boto3_servicecatalog_appregistry.literals import SyncActionType
 ```
 
 Values:

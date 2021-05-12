@@ -3,32 +3,32 @@
 > [Index](..) > [ApplicationDiscoveryService](.) > Literals
 
 Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
 [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 - [Literals for boto3 ApplicationDiscoveryService module](#literals-for-boto3-applicationdiscoveryservice-module)
-  - [AgentStatus](#agentstatus)
-  - [BatchDeleteImportDataErrorCode](#batchdeleteimportdataerrorcode)
-  - [ConfigurationItemType](#configurationitemtype)
-  - [ContinuousExportStatus](#continuousexportstatus)
-  - [DataSource](#datasource)
+  - [AgentStatusType](#agentstatustype)
+  - [BatchDeleteImportDataErrorCodeType](#batchdeleteimportdataerrorcodetype)
+  - [ConfigurationItemTypeType](#configurationitemtypetype)
+  - [ContinuousExportStatusType](#continuousexportstatustype)
+  - [DataSourceType](#datasourcetype)
   - [DescribeAgentsPaginatorName](#describeagentspaginatorname)
   - [DescribeContinuousExportsPaginatorName](#describecontinuousexportspaginatorname)
   - [DescribeExportConfigurationsPaginatorName](#describeexportconfigurationspaginatorname)
   - [DescribeExportTasksPaginatorName](#describeexporttaskspaginatorname)
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
-  - [ExportDataFormat](#exportdataformat)
-  - [ExportStatus](#exportstatus)
-  - [ImportStatus](#importstatus)
-  - [ImportTaskFilterName](#importtaskfiltername)
+  - [ExportDataFormatType](#exportdataformattype)
+  - [ExportStatusType](#exportstatustype)
+  - [ImportStatusType](#importstatustype)
+  - [ImportTaskFilterNameType](#importtaskfilternametype)
   - [ListConfigurationsPaginatorName](#listconfigurationspaginatorname)
-  - [orderString](#orderstring)
+  - [orderStringType](#orderstringtype)
 
-## AgentStatus
+## AgentStatusType
 
 ```python
-from mypy_boto3_discovery.literals import AgentStatus
+from mypy_boto3_discovery.literals import AgentStatusType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `UNHEALTHY`
 - `UNKNOWN`
 
-## BatchDeleteImportDataErrorCode
+## BatchDeleteImportDataErrorCodeType
 
 ```python
-from mypy_boto3_discovery.literals import BatchDeleteImportDataErrorCode
+from mypy_boto3_discovery.literals import BatchDeleteImportDataErrorCodeType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `NOT_FOUND`
 - `OVER_LIMIT`
 
-## ConfigurationItemType
+## ConfigurationItemTypeType
 
 ```python
-from mypy_boto3_discovery.literals import ConfigurationItemType
+from mypy_boto3_discovery.literals import ConfigurationItemTypeType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `PROCESS`
 - `SERVER`
 
-## ContinuousExportStatus
+## ContinuousExportStatusType
 
 ```python
-from mypy_boto3_discovery.literals import ContinuousExportStatus
+from mypy_boto3_discovery.literals import ContinuousExportStatusType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `STOP_FAILED`
 - `STOP_IN_PROGRESS`
 
-## DataSource
+## DataSourceType
 
 ```python
-from mypy_boto3_discovery.literals import DataSource
+from mypy_boto3_discovery.literals import DataSourceType
 ```
 
 Values:
@@ -141,10 +141,10 @@ Values:
 
 - `describe_tags`
 
-## ExportDataFormat
+## ExportDataFormatType
 
 ```python
-from mypy_boto3_discovery.literals import ExportDataFormat
+from mypy_boto3_discovery.literals import ExportDataFormatType
 ```
 
 Values:
@@ -152,10 +152,10 @@ Values:
 - `CSV`
 - `GRAPHML`
 
-## ExportStatus
+## ExportStatusType
 
 ```python
-from mypy_boto3_discovery.literals import ExportStatus
+from mypy_boto3_discovery.literals import ExportStatusType
 ```
 
 Values:
@@ -164,10 +164,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
-## ImportStatus
+## ImportStatusType
 
 ```python
-from mypy_boto3_discovery.literals import ImportStatus
+from mypy_boto3_discovery.literals import ImportStatusType
 ```
 
 Values:
@@ -184,10 +184,10 @@ Values:
 - `IMPORT_IN_PROGRESS`
 - `INTERNAL_ERROR`
 
-## ImportTaskFilterName
+## ImportTaskFilterNameType
 
 ```python
-from mypy_boto3_discovery.literals import ImportTaskFilterName
+from mypy_boto3_discovery.literals import ImportTaskFilterNameType
 ```
 
 Values:
@@ -206,10 +206,10 @@ Values:
 
 - `list_configurations`
 
-## orderString
+## orderStringType
 
 ```python
-from mypy_boto3_discovery.literals import orderString
+from mypy_boto3_discovery.literals import orderStringType
 ```
 
 Values:

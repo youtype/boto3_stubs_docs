@@ -3,7 +3,7 @@
 > [Index](..) > CloudWatch
 
 Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
 [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
@@ -34,67 +34,67 @@ Can be used directly:
 from mypy_boto3_cloudwatch.client import CloudWatchClient
 ```
 
-CloudWatchClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_alarms](./client.md#delete-alarms)
-- [delete_anomaly_detector](./client.md#delete-anomaly-detector)
-- [delete_dashboards](./client.md#delete-dashboards)
-- [delete_insight_rules](./client.md#delete-insight-rules)
-- [delete_metric_stream](./client.md#delete-metric-stream)
-- [describe_alarm_history](./client.md#describe-alarm-history)
-- [describe_alarms](./client.md#describe-alarms)
-- [describe_alarms_for_metric](./client.md#describe-alarms-for-metric)
-- [describe_anomaly_detectors](./client.md#describe-anomaly-detectors)
-- [describe_insight_rules](./client.md#describe-insight-rules)
-- [disable_alarm_actions](./client.md#disable-alarm-actions)
-- [disable_insight_rules](./client.md#disable-insight-rules)
-- [enable_alarm_actions](./client.md#enable-alarm-actions)
-- [enable_insight_rules](./client.md#enable-insight-rules)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_dashboard](./client.md#get-dashboard)
-- [get_insight_rule_report](./client.md#get-insight-rule-report)
-- [get_metric_data](./client.md#get-metric-data)
-- [get_metric_statistics](./client.md#get-metric-statistics)
-- [get_metric_stream](./client.md#get-metric-stream)
-- [get_metric_widget_image](./client.md#get-metric-widget-image)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_dashboards](./client.md#list-dashboards)
-- [list_metric_streams](./client.md#list-metric-streams)
-- [list_metrics](./client.md#list-metrics)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_anomaly_detector](./client.md#put-anomaly-detector)
-- [put_composite_alarm](./client.md#put-composite-alarm)
-- [put_dashboard](./client.md#put-dashboard)
-- [put_insight_rule](./client.md#put-insight-rule)
-- [put_metric_alarm](./client.md#put-metric-alarm)
-- [put_metric_data](./client.md#put-metric-data)
-- [put_metric_stream](./client.md#put-metric-stream)
-- [set_alarm_state](./client.md#set-alarm-state)
-- [start_metric_streams](./client.md#start-metric-streams)
-- [stop_metric_streams](./client.md#stop-metric-streams)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [delete_alarms](./client.md#delete_alarms)
+- [delete_anomaly_detector](./client.md#delete_anomaly_detector)
+- [delete_dashboards](./client.md#delete_dashboards)
+- [delete_insight_rules](./client.md#delete_insight_rules)
+- [delete_metric_stream](./client.md#delete_metric_stream)
+- [describe_alarm_history](./client.md#describe_alarm_history)
+- [describe_alarms](./client.md#describe_alarms)
+- [describe_alarms_for_metric](./client.md#describe_alarms_for_metric)
+- [describe_anomaly_detectors](./client.md#describe_anomaly_detectors)
+- [describe_insight_rules](./client.md#describe_insight_rules)
+- [disable_alarm_actions](./client.md#disable_alarm_actions)
+- [disable_insight_rules](./client.md#disable_insight_rules)
+- [enable_alarm_actions](./client.md#enable_alarm_actions)
+- [enable_insight_rules](./client.md#enable_insight_rules)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_dashboard](./client.md#get_dashboard)
+- [get_insight_rule_report](./client.md#get_insight_rule_report)
+- [get_metric_data](./client.md#get_metric_data)
+- [get_metric_statistics](./client.md#get_metric_statistics)
+- [get_metric_stream](./client.md#get_metric_stream)
+- [get_metric_widget_image](./client.md#get_metric_widget_image)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_dashboards](./client.md#list_dashboards)
+- [list_metric_streams](./client.md#list_metric_streams)
+- [list_metrics](./client.md#list_metrics)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_anomaly_detector](./client.md#put_anomaly_detector)
+- [put_composite_alarm](./client.md#put_composite_alarm)
+- [put_dashboard](./client.md#put_dashboard)
+- [put_insight_rule](./client.md#put_insight_rule)
+- [put_metric_alarm](./client.md#put_metric_alarm)
+- [put_metric_data](./client.md#put_metric_data)
+- [put_metric_stream](./client.md#put_metric_stream)
+- [set_alarm_state](./client.md#set_alarm_state)
+- [start_metric_streams](./client.md#start_metric_streams)
+- [stop_metric_streams](./client.md#stop_metric_streams)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [DashboardInvalidInputError](./client.md#dashboardinvalidinputerror)
-- [DashboardNotFoundError](./client.md#dashboardnotfounderror)
-- [InternalServiceFault](./client.md#internalservicefault)
-- [InvalidFormatFault](./client.md#invalidformatfault)
-- [InvalidNextToken](./client.md#invalidnexttoken)
-- [InvalidParameterCombinationException](./client.md#invalidparametercombinationexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [LimitExceededFault](./client.md#limitexceededfault)
-- [MissingRequiredParameterException](./client.md#missingrequiredparameterexception)
-- [ResourceNotFound](./client.md#resourcenotfound)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+CloudWatchClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- DashboardInvalidInputError
+- DashboardNotFoundError
+- InternalServiceFault
+- InvalidFormatFault
+- InvalidNextToken
+- InvalidParameterCombinationException
+- InvalidParameterValueException
+- LimitExceededException
+- LimitExceededFault
+- MissingRequiredParameterException
+- ResourceNotFound
+- ResourceNotFoundException
 
 ## CloudWatchServiceResource
 
@@ -176,23 +176,23 @@ from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName, ...
 ```
 
 - [AlarmExistsWaiterName](./literals.md#alarmexistswaitername)
-- [AlarmType](./literals.md#alarmtype)
-- [AnomalyDetectorStateValue](./literals.md#anomalydetectorstatevalue)
-- [ComparisonOperator](./literals.md#comparisonoperator)
+- [AlarmTypeType](./literals.md#alarmtypetype)
+- [AnomalyDetectorStateValueType](./literals.md#anomalydetectorstatevaluetype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - [CompositeAlarmExistsWaiterName](./literals.md#compositealarmexistswaitername)
 - [DescribeAlarmHistoryPaginatorName](./literals.md#describealarmhistorypaginatorname)
 - [DescribeAlarmsPaginatorName](./literals.md#describealarmspaginatorname)
 - [GetMetricDataPaginatorName](./literals.md#getmetricdatapaginatorname)
-- [HistoryItemType](./literals.md#historyitemtype)
+- [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - [ListDashboardsPaginatorName](./literals.md#listdashboardspaginatorname)
 - [ListMetricsPaginatorName](./literals.md#listmetricspaginatorname)
-- [MetricStreamOutputFormat](./literals.md#metricstreamoutputformat)
-- [RecentlyActive](./literals.md#recentlyactive)
-- [ScanBy](./literals.md#scanby)
-- [StandardUnit](./literals.md#standardunit)
-- [StateValue](./literals.md#statevalue)
-- [Statistic](./literals.md#statistic)
-- [StatusCode](./literals.md#statuscode)
+- [MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype)
+- [RecentlyActiveType](./literals.md#recentlyactivetype)
+- [ScanByType](./literals.md#scanbytype)
+- [StandardUnitType](./literals.md#standardunittype)
+- [StateValueType](./literals.md#statevaluetype)
+- [StatisticType](./literals.md#statistictype)
+- [StatusCodeType](./literals.md#statuscodetype)
 
 ## Typed dictionaries
 

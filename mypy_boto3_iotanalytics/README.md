@@ -3,7 +3,7 @@
 > [Index](..) > IoTAnalytics
 
 Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
 [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
@@ -30,58 +30,58 @@ Can be used directly:
 from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
 ```
 
-IoTAnalyticsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_put_message](./client.md#batch-put-message)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_pipeline_reprocessing](./client.md#cancel-pipeline-reprocessing)
-- [create_channel](./client.md#create-channel)
-- [create_dataset](./client.md#create-dataset)
-- [create_dataset_content](./client.md#create-dataset-content)
-- [create_datastore](./client.md#create-datastore)
-- [create_pipeline](./client.md#create-pipeline)
-- [delete_channel](./client.md#delete-channel)
-- [delete_dataset](./client.md#delete-dataset)
-- [delete_dataset_content](./client.md#delete-dataset-content)
-- [delete_datastore](./client.md#delete-datastore)
-- [delete_pipeline](./client.md#delete-pipeline)
-- [describe_channel](./client.md#describe-channel)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_datastore](./client.md#describe-datastore)
-- [describe_logging_options](./client.md#describe-logging-options)
-- [describe_pipeline](./client.md#describe-pipeline)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_dataset_content](./client.md#get-dataset-content)
-- [get_paginator](./client.md#get-paginator)
-- [list_channels](./client.md#list-channels)
-- [list_dataset_contents](./client.md#list-dataset-contents)
-- [list_datasets](./client.md#list-datasets)
-- [list_datastores](./client.md#list-datastores)
-- [list_pipelines](./client.md#list-pipelines)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_logging_options](./client.md#put-logging-options)
-- [run_pipeline_activity](./client.md#run-pipeline-activity)
-- [sample_channel_data](./client.md#sample-channel-data)
-- [start_pipeline_reprocessing](./client.md#start-pipeline-reprocessing)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_channel](./client.md#update-channel)
-- [update_dataset](./client.md#update-dataset)
-- [update_datastore](./client.md#update-datastore)
-- [update_pipeline](./client.md#update-pipeline)
+- [batch_put_message](./client.md#batch_put_message)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_pipeline_reprocessing](./client.md#cancel_pipeline_reprocessing)
+- [create_channel](./client.md#create_channel)
+- [create_dataset](./client.md#create_dataset)
+- [create_dataset_content](./client.md#create_dataset_content)
+- [create_datastore](./client.md#create_datastore)
+- [create_pipeline](./client.md#create_pipeline)
+- [delete_channel](./client.md#delete_channel)
+- [delete_dataset](./client.md#delete_dataset)
+- [delete_dataset_content](./client.md#delete_dataset_content)
+- [delete_datastore](./client.md#delete_datastore)
+- [delete_pipeline](./client.md#delete_pipeline)
+- [describe_channel](./client.md#describe_channel)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_datastore](./client.md#describe_datastore)
+- [describe_logging_options](./client.md#describe_logging_options)
+- [describe_pipeline](./client.md#describe_pipeline)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_dataset_content](./client.md#get_dataset_content)
+- [get_paginator](./client.md#get_paginator)
+- [list_channels](./client.md#list_channels)
+- [list_dataset_contents](./client.md#list_dataset_contents)
+- [list_datasets](./client.md#list_datasets)
+- [list_datastores](./client.md#list_datastores)
+- [list_pipelines](./client.md#list_pipelines)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_logging_options](./client.md#put_logging_options)
+- [run_pipeline_activity](./client.md#run_pipeline_activity)
+- [sample_channel_data](./client.md#sample_channel_data)
+- [start_pipeline_reprocessing](./client.md#start_pipeline_reprocessing)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_channel](./client.md#update_channel)
+- [update_dataset](./client.md#update_dataset)
+- [update_datastore](./client.md#update_datastore)
+- [update_pipeline](./client.md#update_pipeline)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
+IoTAnalyticsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalFailureException
+- InvalidRequestException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
 
 ## Paginators
 
@@ -107,23 +107,23 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotanalytics.literals import ChannelStatus, ...
+from mypy_boto3_iotanalytics.literals import ChannelStatusType, ...
 ```
 
-- [ChannelStatus](./literals.md#channelstatus)
-- [ComputeType](./literals.md#computetype)
-- [DatasetActionType](./literals.md#datasetactiontype)
-- [DatasetContentState](./literals.md#datasetcontentstate)
-- [DatasetStatus](./literals.md#datasetstatus)
-- [DatastoreStatus](./literals.md#datastorestatus)
-- [FileFormatType](./literals.md#fileformattype)
+- [ChannelStatusType](./literals.md#channelstatustype)
+- [ComputeTypeType](./literals.md#computetypetype)
+- [DatasetActionTypeType](./literals.md#datasetactiontypetype)
+- [DatasetContentStateType](./literals.md#datasetcontentstatetype)
+- [DatasetStatusType](./literals.md#datasetstatustype)
+- [DatastoreStatusType](./literals.md#datastorestatustype)
+- [FileFormatTypeType](./literals.md#fileformattypetype)
 - [ListChannelsPaginatorName](./literals.md#listchannelspaginatorname)
 - [ListDatasetContentsPaginatorName](./literals.md#listdatasetcontentspaginatorname)
 - [ListDatasetsPaginatorName](./literals.md#listdatasetspaginatorname)
 - [ListDatastoresPaginatorName](./literals.md#listdatastorespaginatorname)
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
-- [LoggingLevel](./literals.md#logginglevel)
-- [ReprocessingStatus](./literals.md#reprocessingstatus)
+- [LoggingLevelType](./literals.md#loggingleveltype)
+- [ReprocessingStatusType](./literals.md#reprocessingstatustype)
 
 ## Typed dictionaries
 

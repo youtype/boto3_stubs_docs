@@ -3,7 +3,7 @@
 > [Index](..) > [SMS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS)
 type annotations stubs module
 [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
@@ -68,16 +68,17 @@ Optional fields:
 - `importedAppId`: `str`
 - `name`: `str`
 - `description`: `str`
-- `status`: [AppStatus](./literals.md#appstatus)
+- `status`: [AppStatusType](./literals.md#appstatustype)
 - `statusMessage`: `str`
 - `replicationConfigurationStatus`:
-  [AppReplicationConfigurationStatus](./literals.md#appreplicationconfigurationstatus)
-- `replicationStatus`: [AppReplicationStatus](./literals.md#appreplicationstatus)
+  [AppReplicationConfigurationStatusType](./literals.md#appreplicationconfigurationstatustype)
+- `replicationStatus`:
+  [AppReplicationStatusType](./literals.md#appreplicationstatustype)
 - `replicationStatusMessage`: `str`
 - `latestReplicationTime`: `datetime`
 - `launchConfigurationStatus`:
-  [AppLaunchConfigurationStatus](./literals.md#applaunchconfigurationstatus)
-- `launchStatus`: [AppLaunchStatus](./literals.md#applaunchstatus)
+  [AppLaunchConfigurationStatusType](./literals.md#applaunchconfigurationstatustype)
+- `launchStatus`: [AppLaunchStatusType](./literals.md#applaunchstatustype)
 - `launchStatusMessage`: `str`
 - `launchDetails`: [LaunchDetailsTypeDef](./type_defs.md#launchdetailstypedef)
 - `creationTime`: `datetime`
@@ -97,7 +98,7 @@ Optional fields:
 - `validationId`: `str`
 - `name`: `str`
 - `appValidationStrategy`: `Literal['SSM']` (see
-  [AppValidationStrategy](./literals.md#appvalidationstrategy))
+  [AppValidationStrategyType](./literals.md#appvalidationstrategytype))
 - `ssmValidationParameters`:
   [SSMValidationParametersTypeDef](./type_defs.md#ssmvalidationparameterstypedef)
 
@@ -123,11 +124,11 @@ Optional fields:
 
 - `connectorId`: `str`
 - `version`: `str`
-- `status`: [ConnectorStatus](./literals.md#connectorstatus)
+- `status`: [ConnectorStatusType](./literals.md#connectorstatustype)
 - `capabilityList`:
-  `List`\[[ConnectorCapability](./literals.md#connectorcapability)\]
+  `List`\[[ConnectorCapabilityType](./literals.md#connectorcapabilitytype)\]
 - `vmManagerName`: `str`
-- `vmManagerType`: [VmManagerType](./literals.md#vmmanagertype)
+- `vmManagerType`: [VmManagerTypeType](./literals.md#vmmanagertypetype)
 - `vmManagerId`: `str`
 - `ipAddress`: `str`
 - `macAddress`: `str`
@@ -246,7 +247,8 @@ from mypy_boto3_sms.type_defs import GetConnectorsResponseTypeDef
 
 Optional fields:
 
-- `connectorList`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+- `connectorList`:
+  `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 - `nextToken`: `str`
 
 ## GetReplicationJobsResponseTypeDef
@@ -269,7 +271,8 @@ from mypy_boto3_sms.type_defs import GetReplicationRunsResponseTypeDef
 
 Optional fields:
 
-- `replicationJob`: [ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef)
+- `replicationJob`:
+  [ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef)
 - `replicationRunList`:
   `List`\[[ReplicationRunTypeDef](./type_defs.md#replicationruntypedef)\]
 - `nextToken`: `str`
@@ -283,7 +286,8 @@ from mypy_boto3_sms.type_defs import GetServersResponseTypeDef
 Optional fields:
 
 - `lastModifiedOn`: `datetime`
-- `serverCatalogStatus`: [ServerCatalogStatus](./literals.md#servercatalogstatus)
+- `serverCatalogStatus`:
+  [ServerCatalogStatusType](./literals.md#servercatalogstatustype)
 - `serverList`: `List`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
 - `nextToken`: `str`
 
@@ -319,7 +323,7 @@ from mypy_boto3_sms.type_defs import NotificationContextTypeDef
 Optional fields:
 
 - `validationId`: `str`
-- `status`: [ValidationStatus](./literals.md#validationstatus)
+- `status`: [ValidationStatusType](./literals.md#validationstatustype)
 - `statusMessage`: `str`
 
 ## PaginatorConfigTypeDef
@@ -345,16 +349,16 @@ Optional fields:
 - `replicationJobId`: `str`
 - `serverId`: `str`
 - `serverType`: `Literal['VIRTUAL_MACHINE']` (see
-  [ServerType](./literals.md#servertype))
+  [ServerTypeType](./literals.md#servertypetype))
 - `vmServer`: [VmServerTypeDef](./type_defs.md#vmservertypedef)
 - `seedReplicationTime`: `datetime`
 - `frequency`: `int`
 - `runOnce`: `bool`
 - `nextReplicationRunStartTime`: `datetime`
-- `licenseType`: [LicenseType](./literals.md#licensetype)
+- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
 - `roleName`: `str`
 - `latestAmiId`: `str`
-- `state`: [ReplicationJobState](./literals.md#replicationjobstate)
+- `state`: [ReplicationJobStateType](./literals.md#replicationjobstatetype)
 - `statusMessage`: `str`
 - `description`: `str`
 - `numberOfRecentAmisToKeep`: `int`
@@ -383,8 +387,8 @@ from mypy_boto3_sms.type_defs import ReplicationRunTypeDef
 Optional fields:
 
 - `replicationRunId`: `str`
-- `state`: [ReplicationRunState](./literals.md#replicationrunstate)
-- `type`: [ReplicationRunType](./literals.md#replicationruntype)
+- `state`: [ReplicationRunStateType](./literals.md#replicationrunstatetype)
+- `type`: [ReplicationRunTypeType](./literals.md#replicationruntypetype)
 - `stageDetails`:
   [ReplicationRunStageDetailsTypeDef](./type_defs.md#replicationrunstagedetailstypedef)
 - `statusMessage`: `str`
@@ -442,7 +446,7 @@ Optional fields:
 
 - `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `instanceId`: `str`
-- `scriptType`: [ScriptType](./literals.md#scripttype)
+- `scriptType`: [ScriptTypeType](./literals.md#scripttypetype)
 - `command`: `str`
 - `executionTimeoutSeconds`: `int`
 - `outputS3BucketName`: `str`
@@ -515,7 +519,7 @@ Optional fields:
 - `associatePublicIpAddress`: `bool`
 - `iamInstanceProfileName`: `str`
 - `configureScript`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `configureScriptType`: [ScriptType](./literals.md#scripttype)
+- `configureScriptType`: [ScriptTypeType](./literals.md#scripttypetype)
 
 ## ServerReplicationConfigurationTypeDef
 
@@ -540,7 +544,7 @@ Optional fields:
 - `seedTime`: `datetime`
 - `frequency`: `int`
 - `runOnce`: `bool`
-- `licenseType`: [LicenseType](./literals.md#licensetype)
+- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
 - `numberOfRecentAmisToKeep`: `int`
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
@@ -555,7 +559,7 @@ Optional fields:
 
 - `serverId`: `str`
 - `serverType`: `Literal['VIRTUAL_MACHINE']` (see
-  [ServerType](./literals.md#servertype))
+  [ServerTypeType](./literals.md#servertypetype))
 - `vmServer`: [VmServerTypeDef](./type_defs.md#vmservertypedef)
 - `replicationJobId`: `str`
 - `replicationJobTerminated`: `bool`
@@ -572,7 +576,7 @@ Optional fields:
 - `validationId`: `str`
 - `name`: `str`
 - `serverValidationStrategy`: `Literal['USERDATA']` (see
-  [ServerValidationStrategy](./literals.md#servervalidationstrategy))
+  [ServerValidationStrategyType](./literals.md#servervalidationstrategytype))
 - `userDataValidationParameters`:
   [UserDataValidationParametersTypeDef](./type_defs.md#userdatavalidationparameterstypedef)
 
@@ -651,7 +655,7 @@ from mypy_boto3_sms.type_defs import UserDataValidationParametersTypeDef
 Optional fields:
 
 - `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `scriptType`: [ScriptType](./literals.md#scripttype)
+- `scriptType`: [ScriptTypeType](./literals.md#scripttypetype)
 
 ## ValidationOutputTypeDef
 
@@ -663,7 +667,7 @@ Required fields:
 
 - `validationId`: `str`
 - `name`: `str`
-- `status`: [ValidationStatus](./literals.md#validationstatus)
+- `status`: [ValidationStatusType](./literals.md#validationstatustype)
 - `statusMessage`: `str`
 - `latestValidationTime`: `datetime`
 - `appValidationOutput`:
@@ -696,5 +700,5 @@ Optional fields:
   [VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)
 - `vmName`: `str`
 - `vmManagerName`: `str`
-- `vmManagerType`: [VmManagerType](./literals.md#vmmanagertype)
+- `vmManagerType`: [VmManagerTypeType](./literals.md#vmmanagertypetype)
 - `vmPath`: `str`

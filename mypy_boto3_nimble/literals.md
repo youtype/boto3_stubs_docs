@@ -3,15 +3,15 @@
 > [Index](..) > [NimbleStudio](.) > Literals
 
 Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [Literals for boto3 NimbleStudio module](#literals-for-boto3-nimblestudio-module)
-  - [LaunchProfilePersona](#launchprofilepersona)
-  - [LaunchProfilePlatform](#launchprofileplatform)
-  - [LaunchProfileState](#launchprofilestate)
-  - [LaunchProfileStatusCode](#launchprofilestatuscode)
+  - [LaunchProfilePersonaType](#launchprofilepersonatype)
+  - [LaunchProfilePlatformType](#launchprofileplatformtype)
+  - [LaunchProfileStateType](#launchprofilestatetype)
+  - [LaunchProfileStatusCodeType](#launchprofilestatuscodetype)
   - [ListEulaAcceptancesPaginatorName](#listeulaacceptancespaginatorname)
   - [ListEulasPaginatorName](#listeulaspaginatorname)
   - [ListLaunchProfileMembersPaginatorName](#listlaunchprofilememberspaginatorname)
@@ -21,39 +21,39 @@ type annotations stubs module
   - [ListStudioComponentsPaginatorName](#liststudiocomponentspaginatorname)
   - [ListStudioMembersPaginatorName](#liststudiomemberspaginatorname)
   - [ListStudiosPaginatorName](#liststudiospaginatorname)
-  - [StreamingClipboardMode](#streamingclipboardmode)
-  - [StreamingImageEncryptionConfigurationKeyType](#streamingimageencryptionconfigurationkeytype)
-  - [StreamingImageState](#streamingimagestate)
-  - [StreamingImageStatusCode](#streamingimagestatuscode)
-  - [StreamingInstanceType](#streaminginstancetype)
-  - [StreamingSessionState](#streamingsessionstate)
-  - [StreamingSessionStatusCode](#streamingsessionstatuscode)
-  - [StreamingSessionStreamState](#streamingsessionstreamstate)
-  - [StreamingSessionStreamStatusCode](#streamingsessionstreamstatuscode)
-  - [StudioComponentInitializationScriptRunContext](#studiocomponentinitializationscriptruncontext)
-  - [StudioComponentState](#studiocomponentstate)
-  - [StudioComponentStatusCode](#studiocomponentstatuscode)
-  - [StudioComponentSubtype](#studiocomponentsubtype)
-  - [StudioComponentType](#studiocomponenttype)
-  - [StudioEncryptionConfigurationKeyType](#studioencryptionconfigurationkeytype)
-  - [StudioPersona](#studiopersona)
-  - [StudioState](#studiostate)
-  - [StudioStatusCode](#studiostatuscode)
+  - [StreamingClipboardModeType](#streamingclipboardmodetype)
+  - [StreamingImageEncryptionConfigurationKeyTypeType](#streamingimageencryptionconfigurationkeytypetype)
+  - [StreamingImageStateType](#streamingimagestatetype)
+  - [StreamingImageStatusCodeType](#streamingimagestatuscodetype)
+  - [StreamingInstanceTypeType](#streaminginstancetypetype)
+  - [StreamingSessionStateType](#streamingsessionstatetype)
+  - [StreamingSessionStatusCodeType](#streamingsessionstatuscodetype)
+  - [StreamingSessionStreamStateType](#streamingsessionstreamstatetype)
+  - [StreamingSessionStreamStatusCodeType](#streamingsessionstreamstatuscodetype)
+  - [StudioComponentInitializationScriptRunContextType](#studiocomponentinitializationscriptruncontexttype)
+  - [StudioComponentStateType](#studiocomponentstatetype)
+  - [StudioComponentStatusCodeType](#studiocomponentstatuscodetype)
+  - [StudioComponentSubtypeType](#studiocomponentsubtypetype)
+  - [StudioComponentTypeType](#studiocomponenttypetype)
+  - [StudioEncryptionConfigurationKeyTypeType](#studioencryptionconfigurationkeytypetype)
+  - [StudioPersonaType](#studiopersonatype)
+  - [StudioStateType](#studiostatetype)
+  - [StudioStatusCodeType](#studiostatuscodetype)
 
-## LaunchProfilePersona
+## LaunchProfilePersonaType
 
 ```python
-from mypy_boto3_nimble.literals import LaunchProfilePersona
+from mypy_boto3_nimble.literals import LaunchProfilePersonaType
 ```
 
 Values:
 
 - `USER`
 
-## LaunchProfilePlatform
+## LaunchProfilePlatformType
 
 ```python
-from mypy_boto3_nimble.literals import LaunchProfilePlatform
+from mypy_boto3_nimble.literals import LaunchProfilePlatformType
 ```
 
 Values:
@@ -61,10 +61,10 @@ Values:
 - `LINUX`
 - `WINDOWS`
 
-## LaunchProfileState
+## LaunchProfileStateType
 
 ```python
-from mypy_boto3_nimble.literals import LaunchProfileState
+from mypy_boto3_nimble.literals import LaunchProfileStateType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
-## LaunchProfileStatusCode
+## LaunchProfileStatusCodeType
 
 ```python
-from mypy_boto3_nimble.literals import LaunchProfileStatusCode
+from mypy_boto3_nimble.literals import LaunchProfileStatusCodeType
 ```
 
 Values:
@@ -190,10 +190,10 @@ Values:
 
 - `list_studios`
 
-## StreamingClipboardMode
+## StreamingClipboardModeType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingClipboardMode
+from mypy_boto3_nimble.literals import StreamingClipboardModeType
 ```
 
 Values:
@@ -201,20 +201,20 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## StreamingImageEncryptionConfigurationKeyType
+## StreamingImageEncryptionConfigurationKeyTypeType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingImageEncryptionConfigurationKeyType
+from mypy_boto3_nimble.literals import StreamingImageEncryptionConfigurationKeyTypeType
 ```
 
 Values:
 
 - `CUSTOMER_MANAGED_KEY`
 
-## StreamingImageState
+## StreamingImageStateType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingImageState
+from mypy_boto3_nimble.literals import StreamingImageStateType
 ```
 
 Values:
@@ -228,10 +228,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
-## StreamingImageStatusCode
+## StreamingImageStatusCodeType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingImageStatusCode
+from mypy_boto3_nimble.literals import StreamingImageStatusCodeType
 ```
 
 Values:
@@ -243,10 +243,10 @@ Values:
 - `STREAMING_IMAGE_READY`
 - `STREAMING_IMAGE_UPDATE_IN_PROGRESS`
 
-## StreamingInstanceType
+## StreamingInstanceTypeType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingInstanceType
+from mypy_boto3_nimble.literals import StreamingInstanceTypeType
 ```
 
 Values:
@@ -258,10 +258,10 @@ Values:
 - `g4dn.8xlarge`
 - `g4dn.xlarge`
 
-## StreamingSessionState
+## StreamingSessionStateType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingSessionState
+from mypy_boto3_nimble.literals import StreamingSessionStateType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `DELETED`
 - `READY`
 
-## StreamingSessionStatusCode
+## StreamingSessionStatusCodeType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingSessionStatusCode
+from mypy_boto3_nimble.literals import StreamingSessionStatusCodeType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 - `STREAMING_SESSION_DELETED`
 - `STREAMING_SESSION_READY`
 
-## StreamingSessionStreamState
+## StreamingSessionStreamStateType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingSessionStreamState
+from mypy_boto3_nimble.literals import StreamingSessionStreamStateType
 ```
 
 Values:
@@ -308,10 +308,10 @@ Values:
 - `DELETED`
 - `READY`
 
-## StreamingSessionStreamStatusCode
+## StreamingSessionStreamStatusCodeType
 
 ```python
-from mypy_boto3_nimble.literals import StreamingSessionStreamStatusCode
+from mypy_boto3_nimble.literals import StreamingSessionStreamStatusCodeType
 ```
 
 Values:
@@ -323,10 +323,10 @@ Values:
 - `STREAM_DELETED`
 - `STREAM_READY`
 
-## StudioComponentInitializationScriptRunContext
+## StudioComponentInitializationScriptRunContextType
 
 ```python
-from mypy_boto3_nimble.literals import StudioComponentInitializationScriptRunContext
+from mypy_boto3_nimble.literals import StudioComponentInitializationScriptRunContextType
 ```
 
 Values:
@@ -334,10 +334,10 @@ Values:
 - `SYSTEM_INITIALIZATION`
 - `USER_INITIALIZATION`
 
-## StudioComponentState
+## StudioComponentStateType
 
 ```python
-from mypy_boto3_nimble.literals import StudioComponentState
+from mypy_boto3_nimble.literals import StudioComponentStateType
 ```
 
 Values:
@@ -351,10 +351,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
-## StudioComponentStatusCode
+## StudioComponentStatusCodeType
 
 ```python
-from mypy_boto3_nimble.literals import StudioComponentStatusCode
+from mypy_boto3_nimble.literals import StudioComponentStatusCodeType
 ```
 
 Values:
@@ -370,10 +370,10 @@ Values:
 - `STUDIO_COMPONENT_UPDATE_IN_PROGRESS`
 - `STUDIO_COMPONENT_UPDATED`
 
-## StudioComponentSubtype
+## StudioComponentSubtypeType
 
 ```python
-from mypy_boto3_nimble.literals import StudioComponentSubtype
+from mypy_boto3_nimble.literals import StudioComponentSubtypeType
 ```
 
 Values:
@@ -383,10 +383,10 @@ Values:
 - `AWS_MANAGED_MICROSOFT_AD`
 - `CUSTOM`
 
-## StudioComponentType
+## StudioComponentTypeType
 
 ```python
-from mypy_boto3_nimble.literals import StudioComponentType
+from mypy_boto3_nimble.literals import StudioComponentTypeType
 ```
 
 Values:
@@ -397,10 +397,10 @@ Values:
 - `LICENSE_SERVICE`
 - `SHARED_FILE_SYSTEM`
 
-## StudioEncryptionConfigurationKeyType
+## StudioEncryptionConfigurationKeyTypeType
 
 ```python
-from mypy_boto3_nimble.literals import StudioEncryptionConfigurationKeyType
+from mypy_boto3_nimble.literals import StudioEncryptionConfigurationKeyTypeType
 ```
 
 Values:
@@ -408,20 +408,20 @@ Values:
 - `AWS_OWNED_KEY`
 - `CUSTOMER_MANAGED_KEY`
 
-## StudioPersona
+## StudioPersonaType
 
 ```python
-from mypy_boto3_nimble.literals import StudioPersona
+from mypy_boto3_nimble.literals import StudioPersonaType
 ```
 
 Values:
 
 - `ADMINISTRATOR`
 
-## StudioState
+## StudioStateType
 
 ```python
-from mypy_boto3_nimble.literals import StudioState
+from mypy_boto3_nimble.literals import StudioStateType
 ```
 
 Values:
@@ -435,10 +435,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
-## StudioStatusCode
+## StudioStatusCodeType
 
 ```python
-from mypy_boto3_nimble.literals import StudioStatusCode
+from mypy_boto3_nimble.literals import StudioStatusCodeType
 ```
 
 Values:

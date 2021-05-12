@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticTranscoder](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
 [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
@@ -464,7 +464,8 @@ Optional fields:
 
 - `Bucket`: `str`
 - `StorageClass`: `str`
-- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `Permissions`:
+  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 
 ## PipelineTypeDef
 

@@ -3,17 +3,17 @@
 > [Index](..) > [Kafka](.) > Literals
 
 Auto-generated documentation for
-[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kafka.html#Kafka)
 type annotations stubs module
 [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [Literals for boto3 Kafka module](#literals-for-boto3-kafka-module)
-  - [BrokerAZDistribution](#brokerazdistribution)
-  - [ClientBroker](#clientbroker)
-  - [ClusterState](#clusterstate)
-  - [ConfigurationState](#configurationstate)
-  - [EnhancedMonitoring](#enhancedmonitoring)
-  - [KafkaVersionStatus](#kafkaversionstatus)
+  - [BrokerAZDistributionType](#brokerazdistributiontype)
+  - [ClientBrokerType](#clientbrokertype)
+  - [ClusterStateType](#clusterstatetype)
+  - [ConfigurationStateType](#configurationstatetype)
+  - [EnhancedMonitoringType](#enhancedmonitoringtype)
+  - [KafkaVersionStatusType](#kafkaversionstatustype)
   - [ListClusterOperationsPaginatorName](#listclusteroperationspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListConfigurationRevisionsPaginatorName](#listconfigurationrevisionspaginatorname)
@@ -21,22 +21,22 @@ type annotations stubs module
   - [ListKafkaVersionsPaginatorName](#listkafkaversionspaginatorname)
   - [ListNodesPaginatorName](#listnodespaginatorname)
   - [ListScramSecretsPaginatorName](#listscramsecretspaginatorname)
-  - [NodeType](#nodetype)
+  - [NodeTypeType](#nodetypetype)
 
-## BrokerAZDistribution
+## BrokerAZDistributionType
 
 ```python
-from mypy_boto3_kafka.literals import BrokerAZDistribution
+from mypy_boto3_kafka.literals import BrokerAZDistributionType
 ```
 
 Values:
 
 - `DEFAULT`
 
-## ClientBroker
+## ClientBrokerType
 
 ```python
-from mypy_boto3_kafka.literals import ClientBroker
+from mypy_boto3_kafka.literals import ClientBrokerType
 ```
 
 Values:
@@ -45,10 +45,10 @@ Values:
 - `TLS`
 - `TLS_PLAINTEXT`
 
-## ClusterState
+## ClusterStateType
 
 ```python
-from mypy_boto3_kafka.literals import ClusterState
+from mypy_boto3_kafka.literals import ClusterStateType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `REBOOTING_BROKER`
 - `UPDATING`
 
-## ConfigurationState
+## ConfigurationStateType
 
 ```python
-from mypy_boto3_kafka.literals import ConfigurationState
+from mypy_boto3_kafka.literals import ConfigurationStateType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
-## EnhancedMonitoring
+## EnhancedMonitoringType
 
 ```python
-from mypy_boto3_kafka.literals import EnhancedMonitoring
+from mypy_boto3_kafka.literals import EnhancedMonitoringType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 - `PER_TOPIC_PER_BROKER`
 - `PER_TOPIC_PER_PARTITION`
 
-## KafkaVersionStatus
+## KafkaVersionStatusType
 
 ```python
-from mypy_boto3_kafka.literals import KafkaVersionStatus
+from mypy_boto3_kafka.literals import KafkaVersionStatusType
 ```
 
 Values:
@@ -168,10 +168,10 @@ Values:
 
 - `list_scram_secrets`
 
-## NodeType
+## NodeTypeType
 
 ```python
-from mypy_boto3_kafka.literals import NodeType
+from mypy_boto3_kafka.literals import NodeTypeType
 ```
 
 Values:

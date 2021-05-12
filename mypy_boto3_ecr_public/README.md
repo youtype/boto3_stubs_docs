@@ -3,7 +3,7 @@
 > [Index](..) > ECRPublic
 
 Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
 [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
@@ -30,63 +30,63 @@ Can be used directly:
 from mypy_boto3_ecr_public.client import ECRPublicClient
 ```
 
-ECRPublicClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_check_layer_availability](./client.md#batch-check-layer-availability)
-- [batch_delete_image](./client.md#batch-delete-image)
-- [can_paginate](./client.md#can-paginate)
-- [complete_layer_upload](./client.md#complete-layer-upload)
-- [create_repository](./client.md#create-repository)
-- [delete_repository](./client.md#delete-repository)
-- [delete_repository_policy](./client.md#delete-repository-policy)
-- [describe_image_tags](./client.md#describe-image-tags)
-- [describe_images](./client.md#describe-images)
-- [describe_registries](./client.md#describe-registries)
-- [describe_repositories](./client.md#describe-repositories)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_authorization_token](./client.md#get-authorization-token)
-- [get_paginator](./client.md#get-paginator)
-- [get_registry_catalog_data](./client.md#get-registry-catalog-data)
-- [get_repository_catalog_data](./client.md#get-repository-catalog-data)
-- [get_repository_policy](./client.md#get-repository-policy)
-- [initiate_layer_upload](./client.md#initiate-layer-upload)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_image](./client.md#put-image)
-- [put_registry_catalog_data](./client.md#put-registry-catalog-data)
-- [put_repository_catalog_data](./client.md#put-repository-catalog-data)
-- [set_repository_policy](./client.md#set-repository-policy)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [upload_layer_part](./client.md#upload-layer-part)
+- [batch_check_layer_availability](./client.md#batch_check_layer_availability)
+- [batch_delete_image](./client.md#batch_delete_image)
+- [can_paginate](./client.md#can_paginate)
+- [complete_layer_upload](./client.md#complete_layer_upload)
+- [create_repository](./client.md#create_repository)
+- [delete_repository](./client.md#delete_repository)
+- [delete_repository_policy](./client.md#delete_repository_policy)
+- [describe_image_tags](./client.md#describe_image_tags)
+- [describe_images](./client.md#describe_images)
+- [describe_registries](./client.md#describe_registries)
+- [describe_repositories](./client.md#describe_repositories)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_authorization_token](./client.md#get_authorization_token)
+- [get_paginator](./client.md#get_paginator)
+- [get_registry_catalog_data](./client.md#get_registry_catalog_data)
+- [get_repository_catalog_data](./client.md#get_repository_catalog_data)
+- [get_repository_policy](./client.md#get_repository_policy)
+- [initiate_layer_upload](./client.md#initiate_layer_upload)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_image](./client.md#put_image)
+- [put_registry_catalog_data](./client.md#put_registry_catalog_data)
+- [put_repository_catalog_data](./client.md#put_repository_catalog_data)
+- [set_repository_policy](./client.md#set_repository_policy)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [upload_layer_part](./client.md#upload_layer_part)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [EmptyUploadException](./client.md#emptyuploadexception)
-- [ImageAlreadyExistsException](./client.md#imagealreadyexistsexception)
-- [ImageDigestDoesNotMatchException](./client.md#imagedigestdoesnotmatchexception)
-- [ImageNotFoundException](./client.md#imagenotfoundexception)
-- [ImageTagAlreadyExistsException](./client.md#imagetagalreadyexistsexception)
-- [InvalidLayerException](./client.md#invalidlayerexception)
-- [InvalidLayerPartException](./client.md#invalidlayerpartexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidTagParameterException](./client.md#invalidtagparameterexception)
-- [LayerAlreadyExistsException](./client.md#layeralreadyexistsexception)
-- [LayerPartTooSmallException](./client.md#layerparttoosmallexception)
-- [LayersNotFoundException](./client.md#layersnotfoundexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ReferencedImagesNotFoundException](./client.md#referencedimagesnotfoundexception)
-- [RegistryNotFoundException](./client.md#registrynotfoundexception)
-- [RepositoryAlreadyExistsException](./client.md#repositoryalreadyexistsexception)
-- [RepositoryNotEmptyException](./client.md#repositorynotemptyexception)
-- [RepositoryNotFoundException](./client.md#repositorynotfoundexception)
-- [RepositoryPolicyNotFoundException](./client.md#repositorypolicynotfoundexception)
-- [ServerException](./client.md#serverexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [UnsupportedCommandException](./client.md#unsupportedcommandexception)
-- [UploadNotFoundException](./client.md#uploadnotfoundexception)
+ECRPublicClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- EmptyUploadException
+- ImageAlreadyExistsException
+- ImageDigestDoesNotMatchException
+- ImageNotFoundException
+- ImageTagAlreadyExistsException
+- InvalidLayerException
+- InvalidLayerPartException
+- InvalidParameterException
+- InvalidTagParameterException
+- LayerAlreadyExistsException
+- LayerPartTooSmallException
+- LayersNotFoundException
+- LimitExceededException
+- ReferencedImagesNotFoundException
+- RegistryNotFoundException
+- RepositoryAlreadyExistsException
+- RepositoryNotEmptyException
+- RepositoryNotFoundException
+- RepositoryPolicyNotFoundException
+- ServerException
+- TooManyTagsException
+- UnsupportedCommandException
+- UploadNotFoundException
 
 ## Paginators
 
@@ -118,10 +118,10 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName, ...
 - [DescribeImagesPaginatorName](./literals.md#describeimagespaginatorname)
 - [DescribeRegistriesPaginatorName](./literals.md#describeregistriespaginatorname)
 - [DescribeRepositoriesPaginatorName](./literals.md#describerepositoriespaginatorname)
-- [ImageFailureCode](./literals.md#imagefailurecode)
-- [LayerAvailability](./literals.md#layeravailability)
-- [LayerFailureCode](./literals.md#layerfailurecode)
-- [RegistryAliasStatus](./literals.md#registryaliasstatus)
+- [ImageFailureCodeType](./literals.md#imagefailurecodetype)
+- [LayerAvailabilityType](./literals.md#layeravailabilitytype)
+- [LayerFailureCodeType](./literals.md#layerfailurecodetype)
+- [RegistryAliasStatusType](./literals.md#registryaliasstatustype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > IdentityStore
 
 Auto-generated documentation for
-[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
+[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module
 [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
@@ -28,25 +28,25 @@ Can be used directly:
 from mypy_boto3_identitystore.client import IdentityStoreClient
 ```
 
-IdentityStoreClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_group](./client.md#describe-group)
-- [describe_user](./client.md#describe-user)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_groups](./client.md#list-groups)
-- [list_users](./client.md#list-users)
+- [can_paginate](./client.md#can_paginate)
+- [describe_group](./client.md#describe_group)
+- [describe_user](./client.md#describe_user)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_groups](./client.md#list_groups)
+- [list_users](./client.md#list_users)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+IdentityStoreClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Typed dictionaries
 

@@ -3,20 +3,20 @@
 > [Index](..) > [StorageGateway](.) > Literals
 
 Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
 [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 - [Literals for boto3 StorageGateway module](#literals-for-boto3-storagegateway-module)
-  - [ActiveDirectoryStatus](#activedirectorystatus)
-  - [AvailabilityMonitorTestStatus](#availabilitymonitorteststatus)
-  - [CaseSensitivity](#casesensitivity)
+  - [ActiveDirectoryStatusType](#activedirectorystatustype)
+  - [AvailabilityMonitorTestStatusType](#availabilitymonitorteststatustype)
+  - [CaseSensitivityType](#casesensitivitytype)
   - [DescribeTapeArchivesPaginatorName](#describetapearchivespaginatorname)
   - [DescribeTapeRecoveryPointsPaginatorName](#describetaperecoverypointspaginatorname)
   - [DescribeTapesPaginatorName](#describetapespaginatorname)
   - [DescribeVTLDevicesPaginatorName](#describevtldevicespaginatorname)
-  - [FileShareType](#filesharetype)
-  - [HostEnvironment](#hostenvironment)
+  - [FileShareTypeType](#filesharetypetype)
+  - [HostEnvironmentType](#hostenvironmenttype)
   - [ListFileSharesPaginatorName](#listfilesharespaginatorname)
   - [ListFileSystemAssociationsPaginatorName](#listfilesystemassociationspaginatorname)
   - [ListGatewaysPaginatorName](#listgatewayspaginatorname)
@@ -24,16 +24,16 @@ type annotations stubs module
   - [ListTapePoolsPaginatorName](#listtapepoolspaginatorname)
   - [ListTapesPaginatorName](#listtapespaginatorname)
   - [ListVolumesPaginatorName](#listvolumespaginatorname)
-  - [ObjectACL](#objectacl)
-  - [PoolStatus](#poolstatus)
-  - [RetentionLockType](#retentionlocktype)
-  - [SMBSecurityStrategy](#smbsecuritystrategy)
-  - [TapeStorageClass](#tapestorageclass)
+  - [ObjectACLType](#objectacltype)
+  - [PoolStatusType](#poolstatustype)
+  - [RetentionLockTypeType](#retentionlocktypetype)
+  - [SMBSecurityStrategyType](#smbsecuritystrategytype)
+  - [TapeStorageClassType](#tapestorageclasstype)
 
-## ActiveDirectoryStatus
+## ActiveDirectoryStatusType
 
 ```python
-from mypy_boto3_storagegateway.literals import ActiveDirectoryStatus
+from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `TIMEOUT`
 - `UNKNOWN_ERROR`
 
-## AvailabilityMonitorTestStatus
+## AvailabilityMonitorTestStatusType
 
 ```python
-from mypy_boto3_storagegateway.literals import AvailabilityMonitorTestStatus
+from mypy_boto3_storagegateway.literals import AvailabilityMonitorTestStatusType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 - `FAILED`
 - `PENDING`
 
-## CaseSensitivity
+## CaseSensitivityType
 
 ```python
-from mypy_boto3_storagegateway.literals import CaseSensitivity
+from mypy_boto3_storagegateway.literals import CaseSensitivityType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 
 - `describe_vtl_devices`
 
-## FileShareType
+## FileShareTypeType
 
 ```python
-from mypy_boto3_storagegateway.literals import FileShareType
+from mypy_boto3_storagegateway.literals import FileShareTypeType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `NFS`
 - `SMB`
 
-## HostEnvironment
+## HostEnvironmentType
 
 ```python
-from mypy_boto3_storagegateway.literals import HostEnvironment
+from mypy_boto3_storagegateway.literals import HostEnvironmentType
 ```
 
 Values:
@@ -204,10 +204,10 @@ Values:
 
 - `list_volumes`
 
-## ObjectACL
+## ObjectACLType
 
 ```python
-from mypy_boto3_storagegateway.literals import ObjectACL
+from mypy_boto3_storagegateway.literals import ObjectACLType
 ```
 
 Values:
@@ -220,10 +220,10 @@ Values:
 - `public-read`
 - `public-read-write`
 
-## PoolStatus
+## PoolStatusType
 
 ```python
-from mypy_boto3_storagegateway.literals import PoolStatus
+from mypy_boto3_storagegateway.literals import PoolStatusType
 ```
 
 Values:
@@ -231,10 +231,10 @@ Values:
 - `ACTIVE`
 - `DELETED`
 
-## RetentionLockType
+## RetentionLockTypeType
 
 ```python
-from mypy_boto3_storagegateway.literals import RetentionLockType
+from mypy_boto3_storagegateway.literals import RetentionLockTypeType
 ```
 
 Values:
@@ -243,10 +243,10 @@ Values:
 - `GOVERNANCE`
 - `NONE`
 
-## SMBSecurityStrategy
+## SMBSecurityStrategyType
 
 ```python
-from mypy_boto3_storagegateway.literals import SMBSecurityStrategy
+from mypy_boto3_storagegateway.literals import SMBSecurityStrategyType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 - `MandatoryEncryption`
 - `MandatorySigning`
 
-## TapeStorageClass
+## TapeStorageClassType
 
 ```python
-from mypy_boto3_storagegateway.literals import TapeStorageClass
+from mypy_boto3_storagegateway.literals import TapeStorageClassType
 ```
 
 Values:

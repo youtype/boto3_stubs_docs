@@ -3,7 +3,7 @@
 > [Index](..) > mgn
 
 Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgn.html#mgn)
 type annotations stubs module
 [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
@@ -29,49 +29,49 @@ Can be used directly:
 from mypy_boto3_mgn.client import mgnClient
 ```
 
-mgnClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [change_server_life_cycle_state](./client.md#change-server-life-cycle-state)
-- [create_replication_configuration_template](./client.md#create-replication-configuration-template)
-- [delete_job](./client.md#delete-job)
-- [delete_replication_configuration_template](./client.md#delete-replication-configuration-template)
-- [delete_source_server](./client.md#delete-source-server)
-- [describe_job_log_items](./client.md#describe-job-log-items)
-- [describe_jobs](./client.md#describe-jobs)
-- [describe_replication_configuration_templates](./client.md#describe-replication-configuration-templates)
-- [describe_source_servers](./client.md#describe-source-servers)
-- [disconnect_from_service](./client.md#disconnect-from-service)
-- [finalize_cutover](./client.md#finalize-cutover)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_launch_configuration](./client.md#get-launch-configuration)
-- [get_paginator](./client.md#get-paginator)
-- [get_replication_configuration](./client.md#get-replication-configuration)
-- [initialize_service](./client.md#initialize-service)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [mark_as_archived](./client.md#mark-as-archived)
-- [retry_data_replication](./client.md#retry-data-replication)
-- [start_cutover](./client.md#start-cutover)
-- [start_test](./client.md#start-test)
-- [tag_resource](./client.md#tag-resource)
-- [terminate_target_instances](./client.md#terminate-target-instances)
-- [untag_resource](./client.md#untag-resource)
-- [update_launch_configuration](./client.md#update-launch-configuration)
-- [update_replication_configuration](./client.md#update-replication-configuration)
-- [update_replication_configuration_template](./client.md#update-replication-configuration-template)
+- [can_paginate](./client.md#can_paginate)
+- [change_server_life_cycle_state](./client.md#change_server_life_cycle_state)
+- [create_replication_configuration_template](./client.md#create_replication_configuration_template)
+- [delete_job](./client.md#delete_job)
+- [delete_replication_configuration_template](./client.md#delete_replication_configuration_template)
+- [delete_source_server](./client.md#delete_source_server)
+- [describe_job_log_items](./client.md#describe_job_log_items)
+- [describe_jobs](./client.md#describe_jobs)
+- [describe_replication_configuration_templates](./client.md#describe_replication_configuration_templates)
+- [describe_source_servers](./client.md#describe_source_servers)
+- [disconnect_from_service](./client.md#disconnect_from_service)
+- [finalize_cutover](./client.md#finalize_cutover)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_launch_configuration](./client.md#get_launch_configuration)
+- [get_paginator](./client.md#get_paginator)
+- [get_replication_configuration](./client.md#get_replication_configuration)
+- [initialize_service](./client.md#initialize_service)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [mark_as_archived](./client.md#mark_as_archived)
+- [retry_data_replication](./client.md#retry_data_replication)
+- [start_cutover](./client.md#start_cutover)
+- [start_test](./client.md#start_test)
+- [tag_resource](./client.md#tag_resource)
+- [terminate_target_instances](./client.md#terminate_target_instances)
+- [untag_resource](./client.md#untag_resource)
+- [update_launch_configuration](./client.md#update_launch_configuration)
+- [update_replication_configuration](./client.md#update_replication_configuration)
+- [update_replication_configuration_template](./client.md#update_replication_configuration_template)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UninitializedAccountException](./client.md#uninitializedaccountexception)
-- [ValidationException](./client.md#validationexception)
+mgnClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- UninitializedAccountException
+- ValidationException
 
 ## Paginators
 
@@ -96,31 +96,31 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecycleState, ...
+from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecycleStateType, ...
 ```
 
-- [ChangeServerLifeCycleStateSourceServerLifecycleState](./literals.md#changeserverlifecyclestatesourceserverlifecyclestate)
-- [DataReplicationErrorString](./literals.md#datareplicationerrorstring)
-- [DataReplicationInitiationStepName](./literals.md#datareplicationinitiationstepname)
-- [DataReplicationInitiationStepStatus](./literals.md#datareplicationinitiationstepstatus)
-- [DataReplicationState](./literals.md#datareplicationstate)
+- [ChangeServerLifeCycleStateSourceServerLifecycleStateType](./literals.md#changeserverlifecyclestatesourceserverlifecyclestatetype)
+- [DataReplicationErrorStringType](./literals.md#datareplicationerrorstringtype)
+- [DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype)
+- [DataReplicationInitiationStepStatusType](./literals.md#datareplicationinitiationstepstatustype)
+- [DataReplicationStateType](./literals.md#datareplicationstatetype)
 - [DescribeJobLogItemsPaginatorName](./literals.md#describejoblogitemspaginatorname)
 - [DescribeJobsPaginatorName](./literals.md#describejobspaginatorname)
 - [DescribeReplicationConfigurationTemplatesPaginatorName](./literals.md#describereplicationconfigurationtemplatespaginatorname)
 - [DescribeSourceServersPaginatorName](./literals.md#describesourceserverspaginatorname)
-- [FirstBoot](./literals.md#firstboot)
-- [InitiatedBy](./literals.md#initiatedby)
-- [JobLogEvent](./literals.md#joblogevent)
-- [JobStatus](./literals.md#jobstatus)
-- [JobType](./literals.md#jobtype)
-- [LaunchDisposition](./literals.md#launchdisposition)
-- [LaunchStatus](./literals.md#launchstatus)
-- [LifeCycleState](./literals.md#lifecyclestate)
-- [ReplicationConfigurationDataPlaneRouting](./literals.md#replicationconfigurationdataplanerouting)
-- [ReplicationConfigurationDefaultLargeStagingDiskType](./literals.md#replicationconfigurationdefaultlargestagingdisktype)
-- [ReplicationConfigurationEbsEncryption](./literals.md#replicationconfigurationebsencryption)
-- [ReplicationConfigurationReplicatedDiskStagingDiskType](./literals.md#replicationconfigurationreplicateddiskstagingdisktype)
-- [TargetInstanceTypeRightSizingMethod](./literals.md#targetinstancetyperightsizingmethod)
+- [FirstBootType](./literals.md#firstboottype)
+- [InitiatedByType](./literals.md#initiatedbytype)
+- [JobLogEventType](./literals.md#joblogeventtype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [JobTypeType](./literals.md#jobtypetype)
+- [LaunchDispositionType](./literals.md#launchdispositiontype)
+- [LaunchStatusType](./literals.md#launchstatustype)
+- [LifeCycleStateType](./literals.md#lifecyclestatetype)
+- [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
+- [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
+- [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
+- [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
+- [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 
 ## Typed dictionaries
 

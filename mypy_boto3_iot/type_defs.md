@@ -3,7 +3,7 @@
 > [Index](..) > [IoT](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT)
 type annotations stubs module
 [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
@@ -361,8 +361,10 @@ from mypy_boto3_iot.type_defs import AbortCriteriaTypeDef
 
 Required fields:
 
-- `failureType`: [JobExecutionFailureType](./literals.md#jobexecutionfailuretype)
-- `action`: `Literal['CANCEL']` (see [AbortAction](./literals.md#abortaction))
+- `failureType`:
+  [JobExecutionFailureTypeType](./literals.md#jobexecutionfailuretypetype)
+- `action`: `Literal['CANCEL']` (see
+  [AbortActionType](./literals.md#abortactiontype))
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
@@ -375,7 +377,8 @@ from mypy_boto3_iot.type_defs import ActionTypeDef
 Optional fields:
 
 - `dynamoDB`: [DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef)
-- `dynamoDBv2`: [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
+- `dynamoDBv2`:
+  [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
 - `lambda`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
 - `sns`: [SnsActionTypeDef](./type_defs.md#snsactiontypedef)
 - `sqs`: [SqsActionTypeDef](./type_defs.md#sqsactiontypedef)
@@ -391,7 +394,8 @@ Optional fields:
   [CloudwatchLogsActionTypeDef](./type_defs.md#cloudwatchlogsactiontypedef)
 - `elasticsearch`:
   [ElasticsearchActionTypeDef](./type_defs.md#elasticsearchactiontypedef)
-- `salesforce`: [SalesforceActionTypeDef](./type_defs.md#salesforceactiontypedef)
+- `salesforce`:
+  [SalesforceActionTypeDef](./type_defs.md#salesforceactiontypedef)
 - `iotAnalytics`:
   [IotAnalyticsActionTypeDef](./type_defs.md#iotanalyticsactiontypedef)
 - `iotEvents`: [IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef)
@@ -399,7 +403,8 @@ Optional fields:
   [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
 - `stepFunctions`:
   [StepFunctionsActionTypeDef](./type_defs.md#stepfunctionsactiontypedef)
-- `timestream`: [TimestreamActionTypeDef](./type_defs.md#timestreamactiontypedef)
+- `timestream`:
+  [TimestreamActionTypeDef](./type_defs.md#timestreamactiontypedef)
 - `http`: [HttpActionTypeDef](./type_defs.md#httpactiontypedef)
 - `kafka`: [KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef)
 
@@ -541,7 +546,8 @@ from mypy_boto3_iot.type_defs import AuditCheckDetailsTypeDef
 
 Optional fields:
 
-- `checkRunStatus`: [AuditCheckRunStatus](./literals.md#auditcheckrunstatus)
+- `checkRunStatus`:
+  [AuditCheckRunStatusType](./literals.md#auditcheckrunstatustype)
 - `checkCompliant`: `bool`
 - `totalResourcesCount`: `int`
 - `nonCompliantResourcesCount`: `int`
@@ -562,7 +568,8 @@ Optional fields:
 - `checkName`: `str`
 - `taskStartTime`: `datetime`
 - `findingTime`: `datetime`
-- `severity`: [AuditFindingSeverity](./literals.md#auditfindingseverity)
+- `severity`:
+  [AuditFindingSeverityType](./literals.md#auditfindingseveritytype)
 - `nonCompliantResource`:
   [NonCompliantResourceTypeDef](./type_defs.md#noncompliantresourcetypedef)
 - `relatedResources`:
@@ -584,7 +591,7 @@ Optional fields:
 - `actionName`: `str`
 - `actionId`: `str`
 - `status`:
-  [AuditMitigationActionsExecutionStatus](./literals.md#auditmitigationactionsexecutionstatus)
+  [AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `errorCode`: `str`
@@ -601,7 +608,7 @@ Optional fields:
 - `taskId`: `str`
 - `startTime`: `datetime`
 - `taskStatus`:
-  [AuditMitigationActionsTaskStatus](./literals.md#auditmitigationactionstaskstatus)
+  [AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype)
 
 ## AuditMitigationActionsTaskTargetTypeDef
 
@@ -654,8 +661,8 @@ from mypy_boto3_iot.type_defs import AuditTaskMetadataTypeDef
 Optional fields:
 
 - `taskId`: `str`
-- `taskStatus`: [AuditTaskStatus](./literals.md#audittaskstatus)
-- `taskType`: [AuditTaskType](./literals.md#audittasktype)
+- `taskStatus`: [AuditTaskStatusType](./literals.md#audittaskstatustype)
+- `taskType`: [AuditTaskTypeType](./literals.md#audittasktypetype)
 
 ## AuthInfoTypeDef
 
@@ -669,7 +676,7 @@ Required fields:
 
 Optional fields:
 
-- `actionType`: [ActionType](./literals.md#actiontype)
+- `actionType`: [ActionTypeType](./literals.md#actiontypetype)
 
 ## AuthResultTypeDef
 
@@ -682,7 +689,7 @@ Optional fields:
 - `authInfo`: [AuthInfoTypeDef](./type_defs.md#authinfotypedef)
 - `allowed`: [AllowedTypeDef](./type_defs.md#allowedtypedef)
 - `denied`: [DeniedTypeDef](./type_defs.md#deniedtypedef)
-- `authDecision`: [AuthDecision](./literals.md#authdecision)
+- `authDecision`: [AuthDecisionType](./literals.md#authdecisiontype)
 - `missingContextValues`: `List`\[`str`\]
 
 ## AuthorizerConfigTypeDef
@@ -709,7 +716,7 @@ Optional fields:
 - `authorizerFunctionArn`: `str`
 - `tokenKeyName`: `str`
 - `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
-- `status`: [AuthorizerStatus](./literals.md#authorizerstatus)
+- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
 - `signingDisabled`: `bool`
@@ -745,9 +752,9 @@ from mypy_boto3_iot.type_defs import AwsJobAbortCriteriaTypeDef
 Required fields:
 
 - `failureType`:
-  [AwsJobAbortCriteriaFailureType](./literals.md#awsjobabortcriteriafailuretype)
+  [AwsJobAbortCriteriaFailureTypeType](./literals.md#awsjobabortcriteriafailuretypetype)
 - `action`: `Literal['CANCEL']` (see
-  [AwsJobAbortCriteriaAbortAction](./literals.md#awsjobabortcriteriaabortaction))
+  [AwsJobAbortCriteriaAbortActionType](./literals.md#awsjobabortcriteriaabortactiontype))
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
@@ -815,7 +822,8 @@ from mypy_boto3_iot.type_defs import BehaviorCriteriaTypeDef
 
 Optional fields:
 
-- `comparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `comparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `value`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - `durationSeconds`: `int`
 - `consecutiveDatapointsToAlarm`: `int`
@@ -836,7 +844,7 @@ Optional fields:
 - `securityProfileName`: `str`
 - `behaviorName`: `str`
 - `trainingDataCollectionStartDate`: `datetime`
-- `modelStatus`: [ModelStatus](./literals.md#modelstatus)
+- `modelStatus`: [ModelStatusType](./literals.md#modelstatustype)
 - `datapointsCollectionPercentage`: `float`
 - `lastModelRefreshDate`: `datetime`
 
@@ -888,12 +896,12 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateId`: `str`
-- `status`: [CACertificateStatus](./literals.md#cacertificatestatus)
+- `status`: [CACertificateStatusType](./literals.md#cacertificatestatustype)
 - `certificatePem`: `str`
 - `ownedBy`: `str`
 - `creationDate`: `datetime`
 - `autoRegistrationStatus`:
-  [AutoRegistrationStatus](./literals.md#autoregistrationstatus)
+  [AutoRegistrationStatusType](./literals.md#autoregistrationstatustype)
 - `lastModifiedDate`: `datetime`
 - `customerVersion`: `int`
 - `generationId`: `str`
@@ -910,7 +918,7 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateId`: `str`
-- `status`: [CACertificateStatus](./literals.md#cacertificatestatus)
+- `status`: [CACertificateStatusType](./literals.md#cacertificatestatustype)
 - `creationDate`: `datetime`
 
 ## CancelJobResponseTypeDef
@@ -936,7 +944,7 @@ Optional fields:
 - `certificateArn`: `str`
 - `certificateId`: `str`
 - `caCertificateId`: `str`
-- `status`: [CertificateStatus](./literals.md#certificatestatus)
+- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 - `certificatePem`: `str`
 - `ownedBy`: `str`
 - `previousOwnedBy`: `str`
@@ -947,7 +955,7 @@ Optional fields:
 - `generationId`: `str`
 - `validity`:
   [CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef)
-- `certificateMode`: [CertificateMode](./literals.md#certificatemode)
+- `certificateMode`: [CertificateModeType](./literals.md#certificatemodetype)
 
 ## CertificateTypeDef
 
@@ -959,8 +967,8 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateId`: `str`
-- `status`: [CertificateStatus](./literals.md#certificatestatus)
-- `certificateMode`: [CertificateMode](./literals.md#certificatemode)
+- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
+- `certificateMode`: [CertificateModeType](./literals.md#certificatemodetype)
 - `creationDate`: `datetime`
 
 ## CertificateValidityTypeDef
@@ -1192,7 +1200,7 @@ Optional fields:
 - `awsIotJobId`: `str`
 - `otaUpdateArn`: `str`
 - `awsIotJobArn`: `str`
-- `otaUpdateStatus`: [OTAUpdateStatus](./literals.md#otaupdatestatus)
+- `otaUpdateStatus`: [OTAUpdateStatusType](./literals.md#otaupdatestatustype)
 
 ## CreatePolicyResponseTypeDef
 
@@ -1386,7 +1394,7 @@ Optional fields:
 
 - `roleArn`: `str`
 - `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']` (see
-  [AuditNotificationType](./literals.md#auditnotificationtype)),
+  [AuditNotificationTypeType](./literals.md#auditnotificationtypetype)),
   [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
 - `auditCheckConfigurations`: `Dict`\[`str`,
   [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
@@ -1410,7 +1418,7 @@ from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskResponseT
 Optional fields:
 
 - `taskStatus`:
-  [AuditMitigationActionsTaskStatus](./literals.md#auditmitigationactionstaskstatus)
+  [AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `taskStatistics`: `Dict`\[`str`,
@@ -1444,10 +1452,11 @@ from mypy_boto3_iot.type_defs import DescribeAuditTaskResponseTypeDef
 
 Optional fields:
 
-- `taskStatus`: [AuditTaskStatus](./literals.md#audittaskstatus)
-- `taskType`: [AuditTaskType](./literals.md#audittasktype)
+- `taskStatus`: [AuditTaskStatusType](./literals.md#audittaskstatustype)
+- `taskType`: [AuditTaskTypeType](./literals.md#audittasktypetype)
 - `taskStartTime`: `datetime`
-- `taskStatistics`: [TaskStatisticsTypeDef](./type_defs.md#taskstatisticstypedef)
+- `taskStatistics`:
+  [TaskStatisticsTypeDef](./type_defs.md#taskstatisticstypedef)
 - `scheduledAuditName`: `str`
 - `auditDetails`: `Dict`\[`str`,
   [AuditCheckDetailsTypeDef](./type_defs.md#auditcheckdetailstypedef)\]
@@ -1514,7 +1523,7 @@ Optional fields:
 
 - `metricName`: `str`
 - `metricArn`: `str`
-- `metricType`: [CustomMetricType](./literals.md#custommetrictype)
+- `metricType`: [CustomMetricTypeType](./literals.md#custommetrictypetype)
 - `displayName`: `str`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -1552,7 +1561,7 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `type`: `Literal['TOPIC_FILTER']` (see
-  [DimensionType](./literals.md#dimensiontype))
+  [DimensionTypeType](./literals.md#dimensiontypetype))
 - `stringValues`: `List`\[`str`\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -1573,9 +1582,9 @@ Optional fields:
 - `authorizerConfig`:
   [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
 - `domainConfigurationStatus`:
-  [DomainConfigurationStatus](./literals.md#domainconfigurationstatus)
-- `serviceType`: [ServiceType](./literals.md#servicetype)
-- `domainType`: [DomainType](./literals.md#domaintype)
+  [DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype)
+- `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
+- `domainType`: [DomainTypeType](./literals.md#domaintypetype)
 - `lastStatusChangeDate`: `datetime`
 
 ## DescribeEndpointResponseTypeDef
@@ -1596,7 +1605,7 @@ from mypy_boto3_iot.type_defs import DescribeEventConfigurationsResponseTypeDef
 
 Optional fields:
 
-- `eventConfigurations`: `Dict`\[[EventType](./literals.md#eventtype),
+- `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -1610,7 +1619,7 @@ from mypy_boto3_iot.type_defs import DescribeIndexResponseTypeDef
 Optional fields:
 
 - `indexName`: `str`
-- `indexStatus`: [IndexStatus](./literals.md#indexstatus)
+- `indexStatus`: [IndexStatusType](./literals.md#indexstatustype)
 - `schema`: `str`
 
 ## DescribeJobExecutionResponseTypeDef
@@ -1643,7 +1652,8 @@ from mypy_boto3_iot.type_defs import DescribeMitigationActionResponseTypeDef
 Optional fields:
 
 - `actionName`: `str`
-- `actionType`: [MitigationActionType](./literals.md#mitigationactiontype)
+- `actionType`:
+  [MitigationActionTypeType](./literals.md#mitigationactiontypetype)
 - `actionArn`: `str`
 - `actionId`: `str`
 - `roleArn`: `str`
@@ -1704,9 +1714,9 @@ from mypy_boto3_iot.type_defs import DescribeScheduledAuditResponseTypeDef
 
 Optional fields:
 
-- `frequency`: [AuditFrequency](./literals.md#auditfrequency)
+- `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
 - `dayOfMonth`: `str`
-- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
+- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `targetCheckNames`: `List`\[`str`\]
 - `scheduledAuditName`: `str`
 - `scheduledAuditArn`: `str`
@@ -1724,7 +1734,7 @@ Optional fields:
 - `securityProfileDescription`: `str`
 - `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
 - `alertTargets`: `Dict`\[`Literal['SNS']` (see
-  [AlertTargetType](./literals.md#alerttargettype)),
+  [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
 - `additionalMetricsToRetain`: `List`\[`str`\]
 - `additionalMetricsToRetainV2`:
@@ -1762,7 +1772,7 @@ Optional fields:
 - `indexName`: `str`
 - `queryString`: `str`
 - `queryVersion`: `str`
-- `status`: [DynamicGroupStatus](./literals.md#dynamicgroupstatus)
+- `status`: [DynamicGroupStatusType](./literals.md#dynamicgroupstatustype)
 
 ## DescribeThingRegistrationTaskResponseTypeDef
 
@@ -1779,7 +1789,7 @@ Optional fields:
 - `inputFileBucket`: `str`
 - `inputFileKey`: `str`
 - `roleArn`: `str`
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `message`: `str`
 - `successCount`: `int`
 - `failureCount`: `int`
@@ -1843,7 +1853,7 @@ Optional fields:
 - `executionStartDate`: `datetime`
 - `executionEndDate`: `datetime`
 - `status`:
-  [DetectMitigationActionExecutionStatus](./literals.md#detectmitigationactionexecutionstatus)
+  [DetectMitigationActionExecutionStatusType](./literals.md#detectmitigationactionexecutionstatustype)
 - `errorCode`: `str`
 - `message`: `str`
 
@@ -1869,7 +1879,7 @@ Optional fields:
 
 - `taskId`: `str`
 - `taskStatus`:
-  [DetectMitigationActionsTaskStatus](./literals.md#detectmitigationactionstaskstatus)
+  [DetectMitigationActionsTaskStatusType](./literals.md#detectmitigationactionstaskstatustype)
 - `taskStartTime`: `datetime`
 - `taskEndTime`: `datetime`
 - `target`:
@@ -1905,7 +1915,7 @@ Optional fields:
 
 - `domainConfigurationName`: `str`
 - `domainConfigurationArn`: `str`
-- `serviceType`: [ServiceType](./literals.md#servicetype)
+- `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
 
 ## DynamoDBActionTypeDef
 
@@ -1923,10 +1933,10 @@ Required fields:
 Optional fields:
 
 - `operation`: `str`
-- `hashKeyType`: [DynamoKeyType](./literals.md#dynamokeytype)
+- `hashKeyType`: [DynamoKeyTypeType](./literals.md#dynamokeytypetype)
 - `rangeKeyField`: `str`
 - `rangeKeyValue`: `str`
-- `rangeKeyType`: [DynamoKeyType](./literals.md#dynamokeytype)
+- `rangeKeyType`: [DynamoKeyTypeType](./literals.md#dynamokeytypetype)
 - `payloadField`: `str`
 
 ## DynamoDBv2ActionTypeDef
@@ -1975,7 +1985,7 @@ from mypy_boto3_iot.type_defs import EnableIoTLoggingParamsTypeDef
 Required fields:
 
 - `roleArnForLogging`: `str`
-- `logLevel`: [LogLevel](./literals.md#loglevel)
+- `logLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## ErrorInfoTypeDef
 
@@ -2020,7 +2030,7 @@ from mypy_boto3_iot.type_defs import FieldTypeDef
 Optional fields:
 
 - `name`: `str`
-- `type`: [FieldType](./literals.md#fieldtype)
+- `type`: [FieldTypeType](./literals.md#fieldtypetype)
 
 ## FileLocationTypeDef
 
@@ -2114,7 +2124,7 @@ from mypy_boto3_iot.type_defs import GetLoggingOptionsResponseTypeDef
 Optional fields:
 
 - `roleArn`: `str`
-- `logLevel`: [LogLevel](./literals.md#loglevel)
+- `logLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## GetOTAUpdateResponseTypeDef
 
@@ -2221,7 +2231,7 @@ from mypy_boto3_iot.type_defs import GetV2LoggingOptionsResponseTypeDef
 Optional fields:
 
 - `roleArn`: `str`
-- `defaultLogLevel`: [LogLevel](./literals.md#loglevel)
+- `defaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `disableAllLogs`: `bool`
 
 ## GroupNameAndArnTypeDef
@@ -2271,7 +2281,8 @@ from mypy_boto3_iot.type_defs import HttpAuthorizationTypeDef
 
 Optional fields:
 
-- `sigv4`: [SigV4AuthorizationTypeDef](./type_defs.md#sigv4authorizationtypedef)
+- `sigv4`:
+  [SigV4AuthorizationTypeDef](./type_defs.md#sigv4authorizationtypedef)
 
 ## HttpContextTypeDef
 
@@ -2407,7 +2418,7 @@ from mypy_boto3_iot.type_defs import JobExecutionSummaryTypeDef
 
 Optional fields:
 
-- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
+- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - `queuedAt`: `datetime`
 - `startedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
@@ -2422,7 +2433,7 @@ from mypy_boto3_iot.type_defs import JobExecutionTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
+- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - `forceCanceled`: `bool`
 - `statusDetails`:
   [JobExecutionStatusDetailsTypeDef](./type_defs.md#jobexecutionstatusdetailstypedef)
@@ -2475,8 +2486,8 @@ Optional fields:
 - `jobArn`: `str`
 - `jobId`: `str`
 - `thingGroupId`: `str`
-- `targetSelection`: [TargetSelection](./literals.md#targetselection)
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `completedAt`: `datetime`
@@ -2491,8 +2502,8 @@ Optional fields:
 
 - `jobArn`: `str`
 - `jobId`: `str`
-- `targetSelection`: [TargetSelection](./literals.md#targetselection)
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `forceCanceled`: `bool`
 - `reasonCode`: `str`
 - `comment`: `str`
@@ -2595,7 +2606,8 @@ from mypy_boto3_iot.type_defs import ListAuditFindingsResponseTypeDef
 
 Optional fields:
 
-- `findings`: `List`\[[AuditFindingTypeDef](./type_defs.md#auditfindingtypedef)\]
+- `findings`:
+  `List`\[[AuditFindingTypeDef](./type_defs.md#auditfindingtypedef)\]
 - `nextToken`: `str`
 
 ## ListAuditMitigationActionsExecutionsResponseTypeDef
@@ -3062,7 +3074,7 @@ from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsResponseTyp
 Optional fields:
 
 - `resourceLinks`: `List`\[`str`\]
-- `reportType`: [ReportType](./literals.md#reporttype)
+- `reportType`: [ReportTypeType](./literals.md#reporttypetype)
 - `nextToken`: `str`
 
 ## ListThingRegistrationTasksResponseTypeDef
@@ -3179,7 +3191,7 @@ from mypy_boto3_iot.type_defs import LogTargetConfigurationTypeDef
 Optional fields:
 
 - `logTarget`: [LogTargetTypeDef](./type_defs.md#logtargettypedef)
-- `logLevel`: [LogLevel](./literals.md#loglevel)
+- `logLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## LogTargetTypeDef
 
@@ -3189,7 +3201,7 @@ from mypy_boto3_iot.type_defs import LogTargetTypeDef
 
 Required fields:
 
-- `targetType`: [LogTargetType](./literals.md#logtargettype)
+- `targetType`: [LogTargetTypeType](./literals.md#logtargettypetype)
 
 Optional fields:
 
@@ -3207,7 +3219,7 @@ Required fields:
 
 Optional fields:
 
-- `logLevel`: [LogLevel](./literals.md#loglevel)
+- `logLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## MachineLearningDetectionConfigTypeDef
 
@@ -3217,7 +3229,7 @@ from mypy_boto3_iot.type_defs import MachineLearningDetectionConfigTypeDef
 
 Required fields:
 
-- `confidenceLevel`: [ConfidenceLevel](./literals.md#confidencelevel)
+- `confidenceLevel`: [ConfidenceLevelType](./literals.md#confidenceleveltype)
 
 ## MetricDimensionTypeDef
 
@@ -3231,7 +3243,8 @@ Required fields:
 
 Optional fields:
 
-- `operator`: [DimensionValueOperator](./literals.md#dimensionvalueoperator)
+- `operator`:
+  [DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype)
 
 ## MetricToRetainTypeDef
 
@@ -3330,7 +3343,7 @@ from mypy_boto3_iot.type_defs import NonCompliantResourceTypeDef
 
 Optional fields:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceIdentifier`:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `additionalInfo`: `Dict`\[`str`, `str`\]
@@ -3369,10 +3382,10 @@ Optional fields:
   [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
 - `awsJobPresignedUrlConfig`:
   [AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef)
-- `targetSelection`: [TargetSelection](./literals.md#targetselection)
+- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `otaUpdateFiles`:
   `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
-- `otaUpdateStatus`: [OTAUpdateStatus](./literals.md#otaupdatestatus)
+- `otaUpdateStatus`: [OTAUpdateStatusType](./literals.md#otaupdatestatustype)
 - `awsIotJobId`: `str`
 - `awsIotJobArn`: `str`
 - `errorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
@@ -3626,7 +3639,7 @@ from mypy_boto3_iot.type_defs import RelatedResourceTypeDef
 
 Optional fields:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceIdentifier`:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `additionalInfo`: `Dict`\[`str`, `str`\]
@@ -3640,7 +3653,7 @@ from mypy_boto3_iot.type_defs import ReplaceDefaultPolicyVersionParamsTypeDef
 Required fields:
 
 - `templateName`: `Literal['BLANK_POLICY']` (see
-  [PolicyTemplateName](./literals.md#policytemplatename))
+  [PolicyTemplateNameType](./literals.md#policytemplatenametype))
 
 ## RepublishActionTypeDef
 
@@ -3705,7 +3718,8 @@ Required fields:
 
 Optional fields:
 
-- `cannedAcl`: [CannedAccessControlList](./literals.md#cannedaccesscontrollist)
+- `cannedAcl`:
+  [CannedAccessControlListType](./literals.md#cannedaccesscontrollisttype)
 
 ## S3DestinationTypeDef
 
@@ -3751,9 +3765,9 @@ Optional fields:
 
 - `scheduledAuditName`: `str`
 - `scheduledAuditArn`: `str`
-- `frequency`: [AuditFrequency](./literals.md#auditfrequency)
+- `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
 - `dayOfMonth`: `str`
-- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
+- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 
 ## SearchIndexResponseTypeDef
 
@@ -3764,7 +3778,8 @@ from mypy_boto3_iot.type_defs import SearchIndexResponseTypeDef
 Optional fields:
 
 - `nextToken`: `str`
-- `things`: `List`\[[ThingDocumentTypeDef](./type_defs.md#thingdocumenttypedef)\]
+- `things`:
+  `List`\[[ThingDocumentTypeDef](./type_defs.md#thingdocumenttypedef)\]
 - `thingGroups`:
   `List`\[[ThingGroupDocumentTypeDef](./type_defs.md#thinggroupdocumenttypedef)\]
 
@@ -3812,7 +3827,7 @@ Optional fields:
 
 - `serverCertificateArn`: `str`
 - `serverCertificateStatus`:
-  [ServerCertificateStatus](./literals.md#servercertificatestatus)
+  [ServerCertificateStatusType](./literals.md#servercertificatestatustype)
 - `serverCertificateStatusDetail`: `str`
 
 ## SetDefaultAuthorizerResponseTypeDef
@@ -3863,7 +3878,7 @@ Required fields:
 
 Optional fields:
 
-- `messageFormat`: [MessageFormat](./literals.md#messageformat)
+- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
 
 ## SqsActionTypeDef
 
@@ -4079,7 +4094,8 @@ from mypy_boto3_iot.type_defs import TestAuthorizationResponseTypeDef
 
 Optional fields:
 
-- `authResults`: `List`\[[AuthResultTypeDef](./type_defs.md#authresulttypedef)\]
+- `authResults`:
+  `List`\[[AuthResultTypeDef](./type_defs.md#authresulttypedef)\]
 
 ## TestInvokeAuthorizerResponseTypeDef
 
@@ -4160,7 +4176,7 @@ from mypy_boto3_iot.type_defs import ThingGroupIndexingConfigurationTypeDef
 Required fields:
 
 - `thingGroupIndexingMode`:
-  [ThingGroupIndexingMode](./literals.md#thinggroupindexingmode)
+  [ThingGroupIndexingModeType](./literals.md#thinggroupindexingmodetype)
 
 Optional fields:
 
@@ -4200,12 +4216,13 @@ from mypy_boto3_iot.type_defs import ThingIndexingConfigurationTypeDef
 
 Required fields:
 
-- `thingIndexingMode`: [ThingIndexingMode](./literals.md#thingindexingmode)
+- `thingIndexingMode`:
+  [ThingIndexingModeType](./literals.md#thingindexingmodetype)
 
 Optional fields:
 
 - `thingConnectivityIndexingMode`:
-  [ThingConnectivityIndexingMode](./literals.md#thingconnectivityindexingmode)
+  [ThingConnectivityIndexingModeType](./literals.md#thingconnectivityindexingmodetype)
 - `managedFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 - `customFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
@@ -4331,7 +4348,7 @@ Optional fields:
 
 - `arn`: `str`
 - `status`:
-  [TopicRuleDestinationStatus](./literals.md#topicruledestinationstatus)
+  [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `statusReason`: `str`
@@ -4350,7 +4367,7 @@ Optional fields:
 
 - `arn`: `str`
 - `status`:
-  [TopicRuleDestinationStatus](./literals.md#topicruledestinationstatus)
+  [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `statusReason`: `str`
@@ -4462,7 +4479,7 @@ from mypy_boto3_iot.type_defs import UpdateCACertificateParamsTypeDef
 Required fields:
 
 - `action`: `Literal['DEACTIVATE']` (see
-  [CACertificateUpdateAction](./literals.md#cacertificateupdateaction))
+  [CACertificateUpdateActionType](./literals.md#cacertificateupdateactiontype))
 
 ## UpdateCustomMetricResponseTypeDef
 
@@ -4474,7 +4491,7 @@ Optional fields:
 
 - `metricName`: `str`
 - `metricArn`: `str`
-- `metricType`: [CustomMetricType](./literals.md#custommetrictype)
+- `metricType`: [CustomMetricTypeType](./literals.md#custommetrictypetype)
 - `displayName`: `str`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -4488,7 +4505,7 @@ from mypy_boto3_iot.type_defs import UpdateDeviceCertificateParamsTypeDef
 Required fields:
 
 - `action`: `Literal['DEACTIVATE']` (see
-  [DeviceCertificateUpdateAction](./literals.md#devicecertificateupdateaction))
+  [DeviceCertificateUpdateActionType](./literals.md#devicecertificateupdateactiontype))
 
 ## UpdateDimensionResponseTypeDef
 
@@ -4501,7 +4518,7 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `type`: `Literal['TOPIC_FILTER']` (see
-  [DimensionType](./literals.md#dimensiontype))
+  [DimensionTypeType](./literals.md#dimensiontypetype))
 - `stringValues`: `List`\[`str`\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -4572,7 +4589,7 @@ Optional fields:
 - `securityProfileDescription`: `str`
 - `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
 - `alertTargets`: `Dict`\[`Literal['SNS']` (see
-  [AlertTargetType](./literals.md#alerttargettype)),
+  [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
 - `additionalMetricsToRetain`: `List`\[`str`\]
 - `additionalMetricsToRetainV2`:
@@ -4634,7 +4651,7 @@ from mypy_boto3_iot.type_defs import ViolationEventAdditionalInfoTypeDef
 
 Optional fields:
 
-- `confidenceLevel`: [ConfidenceLevel](./literals.md#confidencelevel)
+- `confidenceLevel`: [ConfidenceLevelType](./literals.md#confidenceleveltype)
 
 ## ViolationEventOccurrenceRangeTypeDef
 
@@ -4662,7 +4679,8 @@ Optional fields:
 - `metricValue`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - `violationEventAdditionalInfo`:
   [ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef)
-- `violationEventType`: [ViolationEventType](./literals.md#violationeventtype)
+- `violationEventType`:
+  [ViolationEventTypeType](./literals.md#violationeventtypetype)
 - `violationEventTime`: `datetime`
 
 ## VpcDestinationConfigurationTypeDef

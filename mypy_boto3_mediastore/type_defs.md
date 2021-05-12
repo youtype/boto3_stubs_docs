@@ -3,7 +3,7 @@
 > [Index](..) > [MediaStore](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
 [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
@@ -36,7 +36,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `ARN`: `str`
 - `Name`: `str`
-- `Status`: [ContainerStatus](./literals.md#containerstatus)
+- `Status`: [ContainerStatusType](./literals.md#containerstatustype)
 - `AccessLoggingEnabled`: `bool`
 
 ## CorsRuleTypeDef
@@ -52,7 +52,7 @@ Required fields:
 
 Optional fields:
 
-- `AllowedMethods`: `List`\[[MethodName](./literals.md#methodname)\]
+- `AllowedMethods`: `List`\[[MethodNameType](./literals.md#methodnametype)\]
 - `MaxAgeSeconds`: `int`
 - `ExposeHeaders`: `List`\[`str`\]
 
@@ -173,7 +173,7 @@ from mypy_boto3_mediastore.type_defs import MetricPolicyTypeDef
 Required fields:
 
 - `ContainerLevelMetrics`:
-  [ContainerLevelMetrics](./literals.md#containerlevelmetrics)
+  [ContainerLevelMetricsType](./literals.md#containerlevelmetricstype)
 
 Optional fields:
 

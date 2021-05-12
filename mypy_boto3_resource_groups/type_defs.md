@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroups](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
@@ -172,7 +172,8 @@ Optional fields:
   `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 - `ProposedConfiguration`:
   `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
-- `Status`: [GroupConfigurationStatus](./literals.md#groupconfigurationstatus)
+- `Status`:
+  [GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype)
 - `FailureReason`: `str`
 
 ## GroupFilterTypeDef
@@ -183,7 +184,7 @@ from mypy_boto3_resource_groups.type_defs import GroupFilterTypeDef
 
 Required fields:
 
-- `Name`: [GroupFilterName](./literals.md#groupfiltername)
+- `Name`: [GroupFilterNameType](./literals.md#groupfilternametype)
 - `Values`: `List`\[`str`\]
 
 ## GroupIdentifierTypeDef
@@ -264,7 +265,8 @@ Required fields:
 - `ResourceIdentifiers`:
   `List`\[[ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)\]
 - `NextToken`: `str`
-- `QueryErrors`: `List`\[[QueryErrorTypeDef](./type_defs.md#queryerrortypedef)\]
+- `QueryErrors`:
+  `List`\[[QueryErrorTypeDef](./type_defs.md#queryerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -313,7 +315,7 @@ from mypy_boto3_resource_groups.type_defs import QueryErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`: [QueryErrorCode](./literals.md#queryerrorcode)
+- `ErrorCode`: [QueryErrorCodeType](./literals.md#queryerrorcodetype)
 - `Message`: `str`
 
 ## ResourceFilterTypeDef
@@ -325,7 +327,7 @@ from mypy_boto3_resource_groups.type_defs import ResourceFilterTypeDef
 Required fields:
 
 - `Name`: `Literal['resource-type']` (see
-  [ResourceFilterName](./literals.md#resourcefiltername))
+  [ResourceFilterNameType](./literals.md#resourcefilternametype))
 - `Values`: `List`\[`str`\]
 
 ## ResourceIdentifierTypeDef
@@ -347,7 +349,7 @@ from mypy_boto3_resource_groups.type_defs import ResourceQueryTypeDef
 
 Required fields:
 
-- `Type`: [QueryType](./literals.md#querytype)
+- `Type`: [QueryTypeType](./literals.md#querytypetype)
 - `Query`: `str`
 
 ## ResourceStatusTypeDef
@@ -359,7 +361,7 @@ from mypy_boto3_resource_groups.type_defs import ResourceStatusTypeDef
 Optional fields:
 
 - `Name`: `Literal['PENDING']` (see
-  [ResourceStatusValue](./literals.md#resourcestatusvalue))
+  [ResourceStatusValueType](./literals.md#resourcestatusvaluetype))
 
 ## ResponseMetadataTypeDef
 
@@ -386,7 +388,8 @@ Required fields:
 - `ResourceIdentifiers`:
   `List`\[[ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)\]
 - `NextToken`: `str`
-- `QueryErrors`: `List`\[[QueryErrorTypeDef](./type_defs.md#queryerrortypedef)\]
+- `QueryErrors`:
+  `List`\[[QueryErrorTypeDef](./type_defs.md#queryerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

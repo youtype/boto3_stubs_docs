@@ -3,7 +3,7 @@
 > [Index](..) > [AccessAnalyzer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
 [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
@@ -83,12 +83,12 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef
 
 Required fields:
 
-- `changeType`: [FindingChangeType](./literals.md#findingchangetype)
+- `changeType`: [FindingChangeTypeType](./literals.md#findingchangetypetype)
 - `createdAt`: `datetime`
 - `id`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `status`: [FindingStatus](./literals.md#findingstatus)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `status`: [FindingStatusType](./literals.md#findingstatustype)
 
 Optional fields:
 
@@ -96,7 +96,7 @@ Optional fields:
 - `condition`: `Dict`\[`str`, `str`\]
 - `error`: `str`
 - `existingFindingId`: `str`
-- `existingFindingStatus`: [FindingStatus](./literals.md#findingstatus)
+- `existingFindingStatus`: [FindingStatusType](./literals.md#findingstatustype)
 - `isPublic`: `bool`
 - `principal`: `Dict`\[`str`, `str`\]
 - `resource`: `str`
@@ -112,7 +112,7 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewStatusReasonTypeDef
 Required fields:
 
 - `code`:
-  [AccessPreviewStatusReasonCode](./literals.md#accesspreviewstatusreasoncode)
+  [AccessPreviewStatusReasonCodeType](./literals.md#accesspreviewstatusreasoncodetype)
 
 ## AccessPreviewSummaryTypeDef
 
@@ -125,7 +125,7 @@ Required fields:
 - `analyzerArn`: `str`
 - `createdAt`: `datetime`
 - `id`: `str`
-- `status`: [AccessPreviewStatus](./literals.md#accesspreviewstatus)
+- `status`: [AccessPreviewStatusType](./literals.md#accesspreviewstatustype)
 
 Optional fields:
 
@@ -145,7 +145,7 @@ Required fields:
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `createdAt`: `datetime`
 - `id`: `str`
-- `status`: [AccessPreviewStatus](./literals.md#accesspreviewstatus)
+- `status`: [AccessPreviewStatusType](./literals.md#accesspreviewstatustype)
 
 Optional fields:
 
@@ -173,7 +173,7 @@ Required fields:
 
 - `resourceArn`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 ## AnalyzedResourceTypeDef
 
@@ -188,7 +188,7 @@ Required fields:
 - `isPublic`: `bool`
 - `resourceArn`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `updatedAt`: `datetime`
 
 Optional fields:
@@ -196,7 +196,7 @@ Optional fields:
 - `actions`: `List`\[`str`\]
 - `error`: `str`
 - `sharedVia`: `List`\[`str`\]
-- `status`: [FindingStatus](./literals.md#findingstatus)
+- `status`: [FindingStatusType](./literals.md#findingstatustype)
 
 ## AnalyzerSummaryTypeDef
 
@@ -209,7 +209,7 @@ Required fields:
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `name`: `str`
-- `status`: [AnalyzerStatus](./literals.md#analyzerstatus)
+- `status`: [AnalyzerStatusType](./literals.md#analyzerstatustype)
 - `type`: [TypeType](./literals.md#typetype)
 
 Optional fields:
@@ -228,7 +228,8 @@ from mypy_boto3_accessanalyzer.type_defs import ArchiveRuleSummaryTypeDef
 Required fields:
 
 - `createdAt`: `datetime`
-- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 - `updatedAt`: `datetime`
 
@@ -331,7 +332,7 @@ from mypy_boto3_accessanalyzer.type_defs import FindingSourceTypeDef
 
 Required fields:
 
-- `type`: [FindingSourceType](./literals.md#findingsourcetype)
+- `type`: [FindingSourceTypeType](./literals.md#findingsourcetypetype)
 
 Optional fields:
 
@@ -351,8 +352,8 @@ Required fields:
 - `createdAt`: `datetime`
 - `id`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `status`: [FindingStatus](./literals.md#findingstatus)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `status`: [FindingStatusType](./literals.md#findingstatustype)
 - `updatedAt`: `datetime`
 
 Optional fields:
@@ -378,8 +379,8 @@ Required fields:
 - `createdAt`: `datetime`
 - `id`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `status`: [FindingStatus](./literals.md#findingstatus)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `status`: [FindingStatusType](./literals.md#findingstatustype)
 - `updatedAt`: `datetime`
 
 Optional fields:
@@ -515,7 +516,8 @@ from mypy_boto3_accessanalyzer.type_defs import InlineArchiveRuleTypeDef
 
 Required fields:
 
-- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 
 ## JobDetailsTypeDef
@@ -528,7 +530,7 @@ Required fields:
 
 - `jobId`: `str`
 - `startedOn`: `datetime`
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 
 Optional fields:
 
@@ -543,7 +545,7 @@ from mypy_boto3_accessanalyzer.type_defs import JobErrorTypeDef
 
 Required fields:
 
-- `code`: [JobErrorCode](./literals.md#joberrorcode)
+- `code`: [JobErrorCodeType](./literals.md#joberrorcodetype)
 - `message`: `str`
 
 ## KmsGrantConfigurationTypeDef
@@ -556,7 +558,8 @@ Required fields:
 
 - `granteePrincipal`: `str`
 - `issuingAccount`: `str`
-- `operations`: `List`\[[KmsGrantOperation](./literals.md#kmsgrantoperation)\]
+- `operations`:
+  `List`\[[KmsGrantOperationType](./literals.md#kmsgrantoperationtype)\]
 
 Optional fields:
 
@@ -771,7 +774,7 @@ Required fields:
 - `jobId`: `str`
 - `principalArn`: `str`
 - `startedOn`: `datetime`
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 
 Optional fields:
 
@@ -812,7 +815,7 @@ from mypy_boto3_accessanalyzer.type_defs import S3BucketAclGrantConfigurationTyp
 Required fields:
 
 - `grantee`: [AclGranteeTypeDef](./type_defs.md#aclgranteetypedef)
-- `permission`: [AclPermission](./literals.md#aclpermission)
+- `permission`: [AclPermissionType](./literals.md#aclpermissiontype)
 
 ## S3BucketConfigurationTypeDef
 
@@ -861,7 +864,7 @@ from mypy_boto3_accessanalyzer.type_defs import SortCriteriaTypeDef
 Optional fields:
 
 - `attributeName`: `str`
-- `orderBy`: [OrderBy](./literals.md#orderby)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 ## SpanTypeDef
 
@@ -902,7 +905,7 @@ from mypy_boto3_accessanalyzer.type_defs import StatusReasonTypeDef
 
 Required fields:
 
-- `code`: [ReasonCode](./literals.md#reasoncode)
+- `code`: [ReasonCodeType](./literals.md#reasoncodetype)
 
 ## SubstringTypeDef
 
@@ -955,7 +958,7 @@ Required fields:
 
 - `findingDetails`: `str`
 - `findingType`:
-  [ValidatePolicyFindingType](./literals.md#validatepolicyfindingtype)
+  [ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype)
 - `issueCode`: `str`
 - `learnMoreLink`: `str`
 - `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]

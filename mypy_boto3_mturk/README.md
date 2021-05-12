@@ -3,7 +3,7 @@
 > [Index](..) > MTurk
 
 Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mturk.html#MTurk)
 type annotations stubs module
 [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
@@ -29,58 +29,58 @@ Can be used directly:
 from mypy_boto3_mturk.client import MTurkClient
 ```
 
-MTurkClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_qualification_request](./client.md#accept-qualification-request)
-- [approve_assignment](./client.md#approve-assignment)
-- [associate_qualification_with_worker](./client.md#associate-qualification-with-worker)
-- [can_paginate](./client.md#can-paginate)
-- [create_additional_assignments_for_hit](./client.md#create-additional-assignments-for-hit)
-- [create_hit](./client.md#create-hit)
-- [create_hit_type](./client.md#create-hit-type)
-- [create_hit_with_hit_type](./client.md#create-hit-with-hit-type)
-- [create_qualification_type](./client.md#create-qualification-type)
-- [create_worker_block](./client.md#create-worker-block)
-- [delete_hit](./client.md#delete-hit)
-- [delete_qualification_type](./client.md#delete-qualification-type)
-- [delete_worker_block](./client.md#delete-worker-block)
-- [disassociate_qualification_from_worker](./client.md#disassociate-qualification-from-worker)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_account_balance](./client.md#get-account-balance)
-- [get_assignment](./client.md#get-assignment)
-- [get_file_upload_url](./client.md#get-file-upload-url)
-- [get_hit](./client.md#get-hit)
-- [get_paginator](./client.md#get-paginator)
-- [get_qualification_score](./client.md#get-qualification-score)
-- [get_qualification_type](./client.md#get-qualification-type)
-- [list_assignments_for_hit](./client.md#list-assignments-for-hit)
-- [list_bonus_payments](./client.md#list-bonus-payments)
-- [list_hits](./client.md#list-hits)
-- [list_hits_for_qualification_type](./client.md#list-hits-for-qualification-type)
-- [list_qualification_requests](./client.md#list-qualification-requests)
-- [list_qualification_types](./client.md#list-qualification-types)
-- [list_review_policy_results_for_hit](./client.md#list-review-policy-results-for-hit)
-- [list_reviewable_hits](./client.md#list-reviewable-hits)
-- [list_worker_blocks](./client.md#list-worker-blocks)
-- [list_workers_with_qualification_type](./client.md#list-workers-with-qualification-type)
-- [notify_workers](./client.md#notify-workers)
-- [reject_assignment](./client.md#reject-assignment)
-- [reject_qualification_request](./client.md#reject-qualification-request)
-- [send_bonus](./client.md#send-bonus)
-- [send_test_event_notification](./client.md#send-test-event-notification)
-- [update_expiration_for_hit](./client.md#update-expiration-for-hit)
-- [update_hit_review_status](./client.md#update-hit-review-status)
-- [update_hit_type_of_hit](./client.md#update-hit-type-of-hit)
-- [update_notification_settings](./client.md#update-notification-settings)
-- [update_qualification_type](./client.md#update-qualification-type)
+- [accept_qualification_request](./client.md#accept_qualification_request)
+- [approve_assignment](./client.md#approve_assignment)
+- [associate_qualification_with_worker](./client.md#associate_qualification_with_worker)
+- [can_paginate](./client.md#can_paginate)
+- [create_additional_assignments_for_hit](./client.md#create_additional_assignments_for_hit)
+- [create_hit](./client.md#create_hit)
+- [create_hit_type](./client.md#create_hit_type)
+- [create_hit_with_hit_type](./client.md#create_hit_with_hit_type)
+- [create_qualification_type](./client.md#create_qualification_type)
+- [create_worker_block](./client.md#create_worker_block)
+- [delete_hit](./client.md#delete_hit)
+- [delete_qualification_type](./client.md#delete_qualification_type)
+- [delete_worker_block](./client.md#delete_worker_block)
+- [disassociate_qualification_from_worker](./client.md#disassociate_qualification_from_worker)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_account_balance](./client.md#get_account_balance)
+- [get_assignment](./client.md#get_assignment)
+- [get_file_upload_url](./client.md#get_file_upload_url)
+- [get_hit](./client.md#get_hit)
+- [get_paginator](./client.md#get_paginator)
+- [get_qualification_score](./client.md#get_qualification_score)
+- [get_qualification_type](./client.md#get_qualification_type)
+- [list_assignments_for_hit](./client.md#list_assignments_for_hit)
+- [list_bonus_payments](./client.md#list_bonus_payments)
+- [list_hits](./client.md#list_hits)
+- [list_hits_for_qualification_type](./client.md#list_hits_for_qualification_type)
+- [list_qualification_requests](./client.md#list_qualification_requests)
+- [list_qualification_types](./client.md#list_qualification_types)
+- [list_review_policy_results_for_hit](./client.md#list_review_policy_results_for_hit)
+- [list_reviewable_hits](./client.md#list_reviewable_hits)
+- [list_worker_blocks](./client.md#list_worker_blocks)
+- [list_workers_with_qualification_type](./client.md#list_workers_with_qualification_type)
+- [notify_workers](./client.md#notify_workers)
+- [reject_assignment](./client.md#reject_assignment)
+- [reject_qualification_request](./client.md#reject_qualification_request)
+- [send_bonus](./client.md#send_bonus)
+- [send_test_event_notification](./client.md#send_test_event_notification)
+- [update_expiration_for_hit](./client.md#update_expiration_for_hit)
+- [update_hit_review_status](./client.md#update_hit_review_status)
+- [update_hit_type_of_hit](./client.md#update_hit_type_of_hit)
+- [update_notification_settings](./client.md#update_notification_settings)
+- [update_qualification_type](./client.md#update_qualification_type)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [RequestError](./client.md#requesterror)
-- [ServiceFault](./client.md#servicefault)
+MTurkClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- RequestError
+- ServiceFault
 
 ## Paginators
 
@@ -110,15 +110,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mturk.literals import AssignmentStatus, ...
+from mypy_boto3_mturk.literals import AssignmentStatusType, ...
 ```
 
-- [AssignmentStatus](./literals.md#assignmentstatus)
-- [Comparator](./literals.md#comparator)
-- [EventType](./literals.md#eventtype)
-- [HITAccessActions](./literals.md#hitaccessactions)
-- [HITReviewStatus](./literals.md#hitreviewstatus)
-- [HITStatus](./literals.md#hitstatus)
+- [AssignmentStatusType](./literals.md#assignmentstatustype)
+- [ComparatorType](./literals.md#comparatortype)
+- [EventTypeType](./literals.md#eventtypetype)
+- [HITAccessActionsType](./literals.md#hitaccessactionstype)
+- [HITReviewStatusType](./literals.md#hitreviewstatustype)
+- [HITStatusType](./literals.md#hitstatustype)
 - [ListAssignmentsForHITPaginatorName](./literals.md#listassignmentsforhitpaginatorname)
 - [ListBonusPaymentsPaginatorName](./literals.md#listbonuspaymentspaginatorname)
 - [ListHITsForQualificationTypePaginatorName](./literals.md#listhitsforqualificationtypepaginatorname)
@@ -128,13 +128,13 @@ from mypy_boto3_mturk.literals import AssignmentStatus, ...
 - [ListReviewableHITsPaginatorName](./literals.md#listreviewablehitspaginatorname)
 - [ListWorkerBlocksPaginatorName](./literals.md#listworkerblockspaginatorname)
 - [ListWorkersWithQualificationTypePaginatorName](./literals.md#listworkerswithqualificationtypepaginatorname)
-- [NotificationTransport](./literals.md#notificationtransport)
-- [NotifyWorkersFailureCode](./literals.md#notifyworkersfailurecode)
-- [QualificationStatus](./literals.md#qualificationstatus)
-- [QualificationTypeStatus](./literals.md#qualificationtypestatus)
-- [ReviewActionStatus](./literals.md#reviewactionstatus)
-- [ReviewPolicyLevel](./literals.md#reviewpolicylevel)
-- [ReviewableHITStatus](./literals.md#reviewablehitstatus)
+- [NotificationTransportType](./literals.md#notificationtransporttype)
+- [NotifyWorkersFailureCodeType](./literals.md#notifyworkersfailurecodetype)
+- [QualificationStatusType](./literals.md#qualificationstatustype)
+- [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
+- [ReviewActionStatusType](./literals.md#reviewactionstatustype)
+- [ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)
+- [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
 
 ## Typed dictionaries
 

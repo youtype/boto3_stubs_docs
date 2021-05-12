@@ -3,7 +3,7 @@
 > [Index](..) > MediaConnect
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
@@ -31,54 +31,54 @@ Can be used directly:
 from mypy_boto3_mediaconnect.client import MediaConnectClient
 ```
 
-MediaConnectClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_flow_outputs](./client.md#add-flow-outputs)
-- [add_flow_sources](./client.md#add-flow-sources)
-- [add_flow_vpc_interfaces](./client.md#add-flow-vpc-interfaces)
-- [can_paginate](./client.md#can-paginate)
-- [create_flow](./client.md#create-flow)
-- [delete_flow](./client.md#delete-flow)
-- [describe_flow](./client.md#describe-flow)
-- [describe_offering](./client.md#describe-offering)
-- [describe_reservation](./client.md#describe-reservation)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [grant_flow_entitlements](./client.md#grant-flow-entitlements)
-- [list_entitlements](./client.md#list-entitlements)
-- [list_flows](./client.md#list-flows)
-- [list_offerings](./client.md#list-offerings)
-- [list_reservations](./client.md#list-reservations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [purchase_offering](./client.md#purchase-offering)
-- [remove_flow_output](./client.md#remove-flow-output)
-- [remove_flow_source](./client.md#remove-flow-source)
-- [remove_flow_vpc_interface](./client.md#remove-flow-vpc-interface)
-- [revoke_flow_entitlement](./client.md#revoke-flow-entitlement)
-- [start_flow](./client.md#start-flow)
-- [stop_flow](./client.md#stop-flow)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_flow](./client.md#update-flow)
-- [update_flow_entitlement](./client.md#update-flow-entitlement)
-- [update_flow_output](./client.md#update-flow-output)
-- [update_flow_source](./client.md#update-flow-source)
+- [add_flow_outputs](./client.md#add_flow_outputs)
+- [add_flow_sources](./client.md#add_flow_sources)
+- [add_flow_vpc_interfaces](./client.md#add_flow_vpc_interfaces)
+- [can_paginate](./client.md#can_paginate)
+- [create_flow](./client.md#create_flow)
+- [delete_flow](./client.md#delete_flow)
+- [describe_flow](./client.md#describe_flow)
+- [describe_offering](./client.md#describe_offering)
+- [describe_reservation](./client.md#describe_reservation)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [grant_flow_entitlements](./client.md#grant_flow_entitlements)
+- [list_entitlements](./client.md#list_entitlements)
+- [list_flows](./client.md#list_flows)
+- [list_offerings](./client.md#list_offerings)
+- [list_reservations](./client.md#list_reservations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [purchase_offering](./client.md#purchase_offering)
+- [remove_flow_output](./client.md#remove_flow_output)
+- [remove_flow_source](./client.md#remove_flow_source)
+- [remove_flow_vpc_interface](./client.md#remove_flow_vpc_interface)
+- [revoke_flow_entitlement](./client.md#revoke_flow_entitlement)
+- [start_flow](./client.md#start_flow)
+- [stop_flow](./client.md#stop_flow)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_flow](./client.md#update_flow)
+- [update_flow_entitlement](./client.md#update_flow_entitlement)
+- [update_flow_output](./client.md#update_flow_output)
+- [update_flow_source](./client.md#update_flow_source)
 
 ### Exceptions
 
-- [AddFlowOutputs420Exception](./client.md#addflowoutputs420exception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [CreateFlow420Exception](./client.md#createflow420exception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [GrantFlowEntitlements420Exception](./client.md#grantflowentitlements420exception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+MediaConnectClient [exceptions](./client.md#exceptions)
+
+- AddFlowOutputs420Exception
+- BadRequestException
+- ClientError
+- CreateFlow420Exception
+- ForbiddenException
+- GrantFlowEntitlements420Exception
+- InternalServerErrorException
+- NotFoundException
+- ServiceUnavailableException
+- TooManyRequestsException
 
 ## Paginators
 
@@ -118,27 +118,27 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.literals import Algorithm, ...
+from mypy_boto3_mediaconnect.literals import AlgorithmType, ...
 ```
 
-- [Algorithm](./literals.md#algorithm)
-- [DurationUnits](./literals.md#durationunits)
-- [EntitlementStatus](./literals.md#entitlementstatus)
+- [AlgorithmType](./literals.md#algorithmtype)
+- [DurationUnitsType](./literals.md#durationunitstype)
+- [EntitlementStatusType](./literals.md#entitlementstatustype)
 - [FlowActiveWaiterName](./literals.md#flowactivewaitername)
 - [FlowDeletedWaiterName](./literals.md#flowdeletedwaitername)
 - [FlowStandbyWaiterName](./literals.md#flowstandbywaitername)
-- [KeyType](./literals.md#keytype)
+- [KeyTypeType](./literals.md#keytypetype)
 - [ListEntitlementsPaginatorName](./literals.md#listentitlementspaginatorname)
 - [ListFlowsPaginatorName](./literals.md#listflowspaginatorname)
 - [ListOfferingsPaginatorName](./literals.md#listofferingspaginatorname)
 - [ListReservationsPaginatorName](./literals.md#listreservationspaginatorname)
-- [PriceUnits](./literals.md#priceunits)
+- [PriceUnitsType](./literals.md#priceunitstype)
 - [ProtocolType](./literals.md#protocoltype)
-- [ReservationState](./literals.md#reservationstate)
-- [ResourceType](./literals.md#resourcetype)
-- [SourceType](./literals.md#sourcetype)
-- [State](./literals.md#state)
-- [Status](./literals.md#status)
+- [ReservationStateType](./literals.md#reservationstatetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [SourceTypeType](./literals.md#sourcetypetype)
+- [StateType](./literals.md#statetype)
+- [StatusType](./literals.md#statustype)
 
 ## Typed dictionaries
 

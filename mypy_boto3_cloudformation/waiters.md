@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFormation](.) > Waiters
 
 Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
 [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
@@ -32,7 +32,7 @@ def get_change_set_create_complete_waiter() -> ChangeSetCreateCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.change_set_create_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.change_set_create_complete)
+[CloudFormation.Waiter.change_set_create_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.change_set_create_complete)
 
 Arguments for `ChangeSetCreateCompleteWaiter.wait` method:
 
@@ -56,7 +56,7 @@ def get_stack_create_complete_waiter() -> StackCreateCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.stack_create_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.stack_create_complete)
+[CloudFormation.Waiter.stack_create_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.stack_create_complete)
 
 Arguments for `StackCreateCompleteWaiter.wait` method:
 
@@ -79,7 +79,7 @@ def get_stack_delete_complete_waiter() -> StackDeleteCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.stack_delete_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.stack_delete_complete)
+[CloudFormation.Waiter.stack_delete_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.stack_delete_complete)
 
 Arguments for `StackDeleteCompleteWaiter.wait` method:
 
@@ -102,7 +102,7 @@ def get_stack_exists_waiter() -> StackExistsWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.stack_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.stack_exists)
+[CloudFormation.Waiter.stack_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.stack_exists)
 
 Arguments for `StackExistsWaiter.wait` method:
 
@@ -125,7 +125,7 @@ def get_stack_import_complete_waiter() -> StackImportCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.stack_import_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.stack_import_complete)
+[CloudFormation.Waiter.stack_import_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.stack_import_complete)
 
 Arguments for `StackImportCompleteWaiter.wait` method:
 
@@ -148,7 +148,7 @@ def get_stack_rollback_complete_waiter() -> StackRollbackCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.stack_rollback_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.stack_rollback_complete)
+[CloudFormation.Waiter.stack_rollback_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.stack_rollback_complete)
 
 Arguments for `StackRollbackCompleteWaiter.wait` method:
 
@@ -171,7 +171,7 @@ def get_stack_update_complete_waiter() -> StackUpdateCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.stack_update_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.stack_update_complete)
+[CloudFormation.Waiter.stack_update_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.stack_update_complete)
 
 Arguments for `StackUpdateCompleteWaiter.wait` method:
 
@@ -194,7 +194,7 @@ def get_type_registration_complete_waiter() -> TypeRegistrationCompleteWaiter:
 ```
 
 Boto3 documentation:
-[CloudFormation.Waiter.type_registration_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.type_registration_complete)
+[CloudFormation.Waiter.type_registration_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation.Waiter.type_registration_complete)
 
 Arguments for `TypeRegistrationCompleteWaiter.wait` method:
 

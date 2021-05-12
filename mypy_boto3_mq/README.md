@@ -3,7 +3,7 @@
 > [Index](..) > MQ
 
 Auto-generated documentation for
-[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mq.html#MQ)
 type annotations stubs module
 [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
@@ -29,45 +29,45 @@ Can be used directly:
 from mypy_boto3_mq.client import MQClient
 ```
 
-MQClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_broker](./client.md#create-broker)
-- [create_configuration](./client.md#create-configuration)
-- [create_tags](./client.md#create-tags)
-- [create_user](./client.md#create-user)
-- [delete_broker](./client.md#delete-broker)
-- [delete_tags](./client.md#delete-tags)
-- [delete_user](./client.md#delete-user)
-- [describe_broker](./client.md#describe-broker)
-- [describe_broker_engine_types](./client.md#describe-broker-engine-types)
-- [describe_broker_instance_options](./client.md#describe-broker-instance-options)
-- [describe_configuration](./client.md#describe-configuration)
-- [describe_configuration_revision](./client.md#describe-configuration-revision)
-- [describe_user](./client.md#describe-user)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_brokers](./client.md#list-brokers)
-- [list_configuration_revisions](./client.md#list-configuration-revisions)
-- [list_configurations](./client.md#list-configurations)
-- [list_tags](./client.md#list-tags)
-- [list_users](./client.md#list-users)
-- [reboot_broker](./client.md#reboot-broker)
-- [update_broker](./client.md#update-broker)
-- [update_configuration](./client.md#update-configuration)
-- [update_user](./client.md#update-user)
+- [can_paginate](./client.md#can_paginate)
+- [create_broker](./client.md#create_broker)
+- [create_configuration](./client.md#create_configuration)
+- [create_tags](./client.md#create_tags)
+- [create_user](./client.md#create_user)
+- [delete_broker](./client.md#delete_broker)
+- [delete_tags](./client.md#delete_tags)
+- [delete_user](./client.md#delete_user)
+- [describe_broker](./client.md#describe_broker)
+- [describe_broker_engine_types](./client.md#describe_broker_engine_types)
+- [describe_broker_instance_options](./client.md#describe_broker_instance_options)
+- [describe_configuration](./client.md#describe_configuration)
+- [describe_configuration_revision](./client.md#describe_configuration_revision)
+- [describe_user](./client.md#describe_user)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_brokers](./client.md#list_brokers)
+- [list_configuration_revisions](./client.md#list_configuration_revisions)
+- [list_configurations](./client.md#list_configurations)
+- [list_tags](./client.md#list_tags)
+- [list_users](./client.md#list_users)
+- [reboot_broker](./client.md#reboot_broker)
+- [update_broker](./client.md#update_broker)
+- [update_configuration](./client.md#update_configuration)
+- [update_user](./client.md#update_user)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+MQClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- ForbiddenException
+- InternalServerErrorException
+- NotFoundException
+- UnauthorizedException
 
 ## Paginators
 
@@ -89,18 +89,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mq.literals import AuthenticationStrategy, ...
+from mypy_boto3_mq.literals import AuthenticationStrategyType, ...
 ```
 
-- [AuthenticationStrategy](./literals.md#authenticationstrategy)
-- [BrokerState](./literals.md#brokerstate)
-- [BrokerStorageType](./literals.md#brokerstoragetype)
-- [ChangeType](./literals.md#changetype)
-- [DayOfWeek](./literals.md#dayofweek)
-- [DeploymentMode](./literals.md#deploymentmode)
-- [EngineType](./literals.md#enginetype)
+- [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
+- [BrokerStateType](./literals.md#brokerstatetype)
+- [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
+- [ChangeTypeType](./literals.md#changetypetype)
+- [DayOfWeekType](./literals.md#dayofweektype)
+- [DeploymentModeType](./literals.md#deploymentmodetype)
+- [EngineTypeType](./literals.md#enginetypetype)
 - [ListBrokersPaginatorName](./literals.md#listbrokerspaginatorname)
-- [SanitizationWarningReason](./literals.md#sanitizationwarningreason)
+- [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
 
 ## Typed dictionaries
 

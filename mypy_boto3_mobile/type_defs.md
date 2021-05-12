@@ -3,7 +3,7 @@
 > [Index](..) > [Mobile](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mobile.html#Mobile)
 type annotations stubs module
 [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
@@ -36,7 +36,7 @@ Optional fields:
 - `version`: `str`
 - `description`: `str`
 - `iconUrl`: `str`
-- `availablePlatforms`: `List`\[[Platform](./literals.md#platform)\]
+- `availablePlatforms`: `List`\[[PlatformType](./literals.md#platformtype)\]
 
 ## CreateProjectResultTypeDef
 
@@ -56,7 +56,8 @@ from mypy_boto3_mobile.type_defs import DeleteProjectResultTypeDef
 
 Optional fields:
 
-- `deletedResources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `deletedResources`:
+  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `orphanedResources`:
   `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
@@ -149,7 +150,7 @@ Optional fields:
 - `name`: `str`
 - `projectId`: `str`
 - `region`: `str`
-- `state`: [ProjectState](./literals.md#projectstate)
+- `state`: [ProjectStateType](./literals.md#projectstatetype)
 - `createdDate`: `datetime`
 - `lastUpdatedDate`: `datetime`
 - `consoleUrl`: `str`

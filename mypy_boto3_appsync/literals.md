@@ -3,21 +3,21 @@
 > [Index](..) > [AppSync](.) > Literals
 
 Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appsync.html#AppSync)
 type annotations stubs module
 [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [Literals for boto3 AppSync module](#literals-for-boto3-appsync-module)
-  - [ApiCacheStatus](#apicachestatus)
-  - [ApiCacheType](#apicachetype)
-  - [ApiCachingBehavior](#apicachingbehavior)
-  - [AuthenticationType](#authenticationtype)
-  - [AuthorizationType](#authorizationtype)
-  - [ConflictDetectionType](#conflictdetectiontype)
-  - [ConflictHandlerType](#conflicthandlertype)
-  - [DataSourceType](#datasourcetype)
-  - [DefaultAction](#defaultaction)
-  - [FieldLogLevel](#fieldloglevel)
+  - [ApiCacheStatusType](#apicachestatustype)
+  - [ApiCacheTypeType](#apicachetypetype)
+  - [ApiCachingBehaviorType](#apicachingbehaviortype)
+  - [AuthenticationTypeType](#authenticationtypetype)
+  - [AuthorizationTypeType](#authorizationtypetype)
+  - [ConflictDetectionTypeType](#conflictdetectiontypetype)
+  - [ConflictHandlerTypeType](#conflicthandlertypetype)
+  - [DataSourceTypeType](#datasourcetypetype)
+  - [DefaultActionType](#defaultactiontype)
+  - [FieldLogLevelType](#fieldlogleveltype)
   - [ListApiKeysPaginatorName](#listapikeyspaginatorname)
   - [ListDataSourcesPaginatorName](#listdatasourcespaginatorname)
   - [ListFunctionsPaginatorName](#listfunctionspaginatorname)
@@ -25,16 +25,16 @@ type annotations stubs module
   - [ListResolversByFunctionPaginatorName](#listresolversbyfunctionpaginatorname)
   - [ListResolversPaginatorName](#listresolverspaginatorname)
   - [ListTypesPaginatorName](#listtypespaginatorname)
-  - [OutputType](#outputtype)
-  - [RelationalDatabaseSourceType](#relationaldatabasesourcetype)
-  - [ResolverKind](#resolverkind)
-  - [SchemaStatus](#schemastatus)
-  - [TypeDefinitionFormat](#typedefinitionformat)
+  - [OutputTypeType](#outputtypetype)
+  - [RelationalDatabaseSourceTypeType](#relationaldatabasesourcetypetype)
+  - [ResolverKindType](#resolverkindtype)
+  - [SchemaStatusType](#schemastatustype)
+  - [TypeDefinitionFormatType](#typedefinitionformattype)
 
-## ApiCacheStatus
+## ApiCacheStatusType
 
 ```python
-from mypy_boto3_appsync.literals import ApiCacheStatus
+from mypy_boto3_appsync.literals import ApiCacheStatusType
 ```
 
 Values:
@@ -45,10 +45,10 @@ Values:
 - `FAILED`
 - `MODIFYING`
 
-## ApiCacheType
+## ApiCacheTypeType
 
 ```python
-from mypy_boto3_appsync.literals import ApiCacheType
+from mypy_boto3_appsync.literals import ApiCacheTypeType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `T2_SMALL`
 - `XLARGE`
 
-## ApiCachingBehavior
+## ApiCachingBehaviorType
 
 ```python
-from mypy_boto3_appsync.literals import ApiCachingBehavior
+from mypy_boto3_appsync.literals import ApiCachingBehaviorType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `FULL_REQUEST_CACHING`
 - `PER_RESOLVER_CACHING`
 
-## AuthenticationType
+## AuthenticationTypeType
 
 ```python
-from mypy_boto3_appsync.literals import AuthenticationType
+from mypy_boto3_appsync.literals import AuthenticationTypeType
 ```
 
 Values:
@@ -93,20 +93,20 @@ Values:
 - `AWS_IAM`
 - `OPENID_CONNECT`
 
-## AuthorizationType
+## AuthorizationTypeType
 
 ```python
-from mypy_boto3_appsync.literals import AuthorizationType
+from mypy_boto3_appsync.literals import AuthorizationTypeType
 ```
 
 Values:
 
 - `AWS_IAM`
 
-## ConflictDetectionType
+## ConflictDetectionTypeType
 
 ```python
-from mypy_boto3_appsync.literals import ConflictDetectionType
+from mypy_boto3_appsync.literals import ConflictDetectionTypeType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `NONE`
 - `VERSION`
 
-## ConflictHandlerType
+## ConflictHandlerTypeType
 
 ```python
-from mypy_boto3_appsync.literals import ConflictHandlerType
+from mypy_boto3_appsync.literals import ConflictHandlerTypeType
 ```
 
 Values:
@@ -127,10 +127,10 @@ Values:
 - `NONE`
 - `OPTIMISTIC_CONCURRENCY`
 
-## DataSourceType
+## DataSourceTypeType
 
 ```python
-from mypy_boto3_appsync.literals import DataSourceType
+from mypy_boto3_appsync.literals import DataSourceTypeType
 ```
 
 Values:
@@ -142,10 +142,10 @@ Values:
 - `NONE`
 - `RELATIONAL_DATABASE`
 
-## DefaultAction
+## DefaultActionType
 
 ```python
-from mypy_boto3_appsync.literals import DefaultAction
+from mypy_boto3_appsync.literals import DefaultActionType
 ```
 
 Values:
@@ -153,10 +153,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## FieldLogLevel
+## FieldLogLevelType
 
 ```python
-from mypy_boto3_appsync.literals import FieldLogLevel
+from mypy_boto3_appsync.literals import FieldLogLevelType
 ```
 
 Values:
@@ -235,10 +235,10 @@ Values:
 
 - `list_types`
 
-## OutputType
+## OutputTypeType
 
 ```python
-from mypy_boto3_appsync.literals import OutputType
+from mypy_boto3_appsync.literals import OutputTypeType
 ```
 
 Values:
@@ -246,20 +246,20 @@ Values:
 - `JSON`
 - `SDL`
 
-## RelationalDatabaseSourceType
+## RelationalDatabaseSourceTypeType
 
 ```python
-from mypy_boto3_appsync.literals import RelationalDatabaseSourceType
+from mypy_boto3_appsync.literals import RelationalDatabaseSourceTypeType
 ```
 
 Values:
 
 - `RDS_HTTP_ENDPOINT`
 
-## ResolverKind
+## ResolverKindType
 
 ```python
-from mypy_boto3_appsync.literals import ResolverKind
+from mypy_boto3_appsync.literals import ResolverKindType
 ```
 
 Values:
@@ -267,10 +267,10 @@ Values:
 - `PIPELINE`
 - `UNIT`
 
-## SchemaStatus
+## SchemaStatusType
 
 ```python
-from mypy_boto3_appsync.literals import SchemaStatus
+from mypy_boto3_appsync.literals import SchemaStatusType
 ```
 
 Values:
@@ -282,10 +282,10 @@ Values:
 - `PROCESSING`
 - `SUCCESS`
 
-## TypeDefinitionFormat
+## TypeDefinitionFormatType
 
 ```python
-from mypy_boto3_appsync.literals import TypeDefinitionFormat
+from mypy_boto3_appsync.literals import TypeDefinitionFormatType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > Mobile
 
 Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mobile.html#Mobile)
 type annotations stubs module
 [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
@@ -29,34 +29,34 @@ Can be used directly:
 from mypy_boto3_mobile.client import MobileClient
 ```
 
-MobileClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_project](./client.md#create-project)
-- [delete_project](./client.md#delete-project)
-- [describe_bundle](./client.md#describe-bundle)
-- [describe_project](./client.md#describe-project)
-- [export_bundle](./client.md#export-bundle)
-- [export_project](./client.md#export-project)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_bundles](./client.md#list-bundles)
-- [list_projects](./client.md#list-projects)
-- [update_project](./client.md#update-project)
+- [can_paginate](./client.md#can_paginate)
+- [create_project](./client.md#create_project)
+- [delete_project](./client.md#delete_project)
+- [describe_bundle](./client.md#describe_bundle)
+- [describe_project](./client.md#describe_project)
+- [export_bundle](./client.md#export_bundle)
+- [export_project](./client.md#export_project)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_bundles](./client.md#list_bundles)
+- [list_projects](./client.md#list_projects)
+- [update_project](./client.md#update_project)
 
 ### Exceptions
 
-- [AccountActionRequiredException](./client.md#accountactionrequiredexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+MobileClient [exceptions](./client.md#exceptions)
+
+- AccountActionRequiredException
+- BadRequestException
+- ClientError
+- InternalFailureException
+- LimitExceededException
+- NotFoundException
+- ServiceUnavailableException
+- TooManyRequestsException
+- UnauthorizedException
 
 ## Paginators
 
@@ -84,8 +84,8 @@ from mypy_boto3_mobile.literals import ListBundlesPaginatorName, ...
 
 - [ListBundlesPaginatorName](./literals.md#listbundlespaginatorname)
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
-- [Platform](./literals.md#platform)
-- [ProjectState](./literals.md#projectstate)
+- [PlatformType](./literals.md#platformtype)
+- [ProjectStateType](./literals.md#projectstatetype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [AppStream](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appstream.html#AppStream)
 type annotations stubs module
 [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
@@ -81,7 +81,7 @@ from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef
 Required fields:
 
 - `EndpointType`: `Literal['STREAMING']` (see
-  [AccessEndpointType](./literals.md#accessendpointtype))
+  [AccessEndpointTypeType](./literals.md#accessendpointtypetype))
 
 Optional fields:
 
@@ -271,7 +271,7 @@ Optional fields:
 
 - `S3BucketName`: `str`
 - `Schedule`: `Literal['DAILY']` (see
-  [UsageReportSchedule](./literals.md#usagereportschedule))
+  [UsageReportScheduleType](./literals.md#usagereportscheduletype))
 
 ## DeleteImageBuilderResultTypeDef
 
@@ -445,7 +445,7 @@ from mypy_boto3_appstream.type_defs import FleetErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`: [FleetErrorCode](./literals.md#fleeterrorcode)
+- `ErrorCode`: [FleetErrorCodeType](./literals.md#fleeterrorcodetype)
 - `ErrorMessage`: `str`
 
 ## FleetTypeDef
@@ -461,7 +461,7 @@ Required fields:
 - `InstanceType`: `str`
 - `ComputeCapacityStatus`:
   [ComputeCapacityStatusTypeDef](./type_defs.md#computecapacitystatustypedef)
-- `State`: [FleetState](./literals.md#fleetstate)
+- `State`: [FleetStateType](./literals.md#fleetstatetype)
 
 Optional fields:
 
@@ -469,17 +469,19 @@ Optional fields:
 - `Description`: `str`
 - `ImageName`: `str`
 - `ImageArn`: `str`
-- `FleetType`: [FleetType](./literals.md#fleettype)
+- `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
 - `MaxUserDurationInSeconds`: `int`
 - `DisconnectTimeoutInSeconds`: `int`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `CreatedTime`: `datetime`
-- `FleetErrors`: `List`\[[FleetErrorTypeDef](./type_defs.md#fleeterrortypedef)\]
+- `FleetErrors`:
+  `List`\[[FleetErrorTypeDef](./type_defs.md#fleeterrortypedef)\]
 - `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`: [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
+- `DomainJoinInfo`:
+  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
-- `StreamView`: [StreamView](./literals.md#streamview)
+- `StreamView`: [StreamViewType](./literals.md#streamviewtype)
 
 ## ImageBuilderStateChangeReasonTypeDef
 
@@ -490,7 +492,7 @@ from mypy_boto3_appstream.type_defs import ImageBuilderStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [ImageBuilderStateChangeReasonCode](./literals.md#imagebuilderstatechangereasoncode)
+  [ImageBuilderStateChangeReasonCodeType](./literals.md#imagebuilderstatechangereasoncodetype)
 - `Message`: `str`
 
 ## ImageBuilderTypeDef
@@ -511,14 +513,15 @@ Optional fields:
 - `DisplayName`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `InstanceType`: `str`
-- `Platform`: [PlatformType](./literals.md#platformtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
 - `IamRoleArn`: `str`
-- `State`: [ImageBuilderState](./literals.md#imagebuilderstate)
+- `State`: [ImageBuilderStateType](./literals.md#imagebuilderstatetype)
 - `StateChangeReason`:
   [ImageBuilderStateChangeReasonTypeDef](./type_defs.md#imagebuilderstatechangereasontypedef)
 - `CreatedTime`: `datetime`
 - `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`: [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
+- `DomainJoinInfo`:
+  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `NetworkAccessConfiguration`:
   [NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef)
 - `ImageBuilderErrors`:
@@ -546,7 +549,8 @@ from mypy_boto3_appstream.type_defs import ImageStateChangeReasonTypeDef
 
 Optional fields:
 
-- `Code`: [ImageStateChangeReasonCode](./literals.md#imagestatechangereasoncode)
+- `Code`:
+  [ImageStateChangeReasonCodeType](./literals.md#imagestatechangereasoncodetype)
 - `Message`: `str`
 
 ## ImageTypeDef
@@ -564,11 +568,11 @@ Optional fields:
 - `Arn`: `str`
 - `BaseImageArn`: `str`
 - `DisplayName`: `str`
-- `State`: [ImageState](./literals.md#imagestate)
-- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
+- `State`: [ImageStateType](./literals.md#imagestatetype)
+- `Visibility`: [VisibilityTypeType](./literals.md#visibilitytypetype)
 - `ImageBuilderSupported`: `bool`
 - `ImageBuilderName`: `str`
-- `Platform`: [PlatformType](./literals.md#platformtype)
+- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
 - `Description`: `str`
 - `StateChangeReason`:
   [ImageStateChangeReasonTypeDef](./type_defs.md#imagestatechangereasontypedef)
@@ -591,7 +595,7 @@ from mypy_boto3_appstream.type_defs import LastReportGenerationExecutionErrorTyp
 Optional fields:
 
 - `ErrorCode`:
-  [UsageReportExecutionErrorCode](./literals.md#usagereportexecutionerrorcode)
+  [UsageReportExecutionErrorCodeType](./literals.md#usagereportexecutionerrorcodetype)
 - `ErrorMessage`: `str`
 
 ## ListAssociatedFleetsResultTypeDef
@@ -657,7 +661,7 @@ from mypy_boto3_appstream.type_defs import ResourceErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`: [FleetErrorCode](./literals.md#fleeterrorcode)
+- `ErrorCode`: [FleetErrorCodeType](./literals.md#fleeterrorcodetype)
 - `ErrorMessage`: `str`
 - `ErrorTimestamp`: `datetime`
 
@@ -684,15 +688,16 @@ Required fields:
 - `UserId`: `str`
 - `StackName`: `str`
 - `FleetName`: `str`
-- `State`: [SessionState](./literals.md#sessionstate)
+- `State`: [SessionStateType](./literals.md#sessionstatetype)
 
 Optional fields:
 
 - `ConnectionState`:
-  [SessionConnectionState](./literals.md#sessionconnectionstate)
+  [SessionConnectionStateType](./literals.md#sessionconnectionstatetype)
 - `StartTime`: `datetime`
 - `MaxExpirationTime`: `datetime`
-- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - `NetworkAccessConfiguration`:
   [NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef)
 
@@ -716,7 +721,7 @@ from mypy_boto3_appstream.type_defs import StackErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`: [StackErrorCode](./literals.md#stackerrorcode)
+- `ErrorCode`: [StackErrorCodeType](./literals.md#stackerrorcodetype)
 - `ErrorMessage`: `str`
 
 ## StackTypeDef
@@ -739,7 +744,8 @@ Optional fields:
   `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
 - `RedirectURL`: `str`
 - `FeedbackURL`: `str`
-- `StackErrors`: `List`\[[StackErrorTypeDef](./type_defs.md#stackerrortypedef)\]
+- `StackErrors`:
+  `List`\[[StackErrorTypeDef](./type_defs.md#stackerrortypedef)\]
 - `UserSettings`:
   `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
 - `ApplicationSettings`:
@@ -776,7 +782,8 @@ from mypy_boto3_appstream.type_defs import StorageConnectorTypeDef
 
 Required fields:
 
-- `ConnectorType`: [StorageConnectorType](./literals.md#storageconnectortype)
+- `ConnectorType`:
+  [StorageConnectorTypeType](./literals.md#storageconnectortypetype)
 
 Optional fields:
 
@@ -824,7 +831,7 @@ Optional fields:
 
 - `S3BucketName`: `str`
 - `Schedule`: `Literal['DAILY']` (see
-  [UsageReportSchedule](./literals.md#usagereportschedule))
+  [UsageReportScheduleType](./literals.md#usagereportscheduletype))
 - `LastGeneratedReportDate`: `datetime`
 - `SubscriptionErrors`:
   `List`\[[LastReportGenerationExecutionErrorTypeDef](./type_defs.md#lastreportgenerationexecutionerrortypedef)\]
@@ -837,8 +844,8 @@ from mypy_boto3_appstream.type_defs import UserSettingTypeDef
 
 Required fields:
 
-- `Action`: [Action](./literals.md#action)
-- `Permission`: [Permission](./literals.md#permission)
+- `Action`: [ActionType](./literals.md#actiontype)
+- `Permission`: [PermissionType](./literals.md#permissiontype)
 
 ## UserStackAssociationErrorTypeDef
 
@@ -851,7 +858,7 @@ Optional fields:
 - `UserStackAssociation`:
   [UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)
 - `ErrorCode`:
-  [UserStackAssociationErrorCode](./literals.md#userstackassociationerrorcode)
+  [UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype)
 - `ErrorMessage`: `str`
 
 ## UserStackAssociationTypeDef
@@ -864,7 +871,8 @@ Required fields:
 
 - `StackName`: `str`
 - `UserName`: `str`
-- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
 Optional fields:
 
@@ -878,7 +886,8 @@ from mypy_boto3_appstream.type_defs import UserTypeDef
 
 Required fields:
 
-- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
 Optional fields:
 

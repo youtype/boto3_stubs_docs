@@ -3,23 +3,23 @@
 > [Index](..) > [LookoutEquipment](.) > Literals
 
 Auto-generated documentation for
-[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
 [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [Literals for boto3 LookoutEquipment module](#literals-for-boto3-lookoutequipment-module)
-  - [DataUploadFrequency](#datauploadfrequency)
-  - [DatasetStatus](#datasetstatus)
-  - [InferenceExecutionStatus](#inferenceexecutionstatus)
-  - [InferenceSchedulerStatus](#inferenceschedulerstatus)
-  - [IngestionJobStatus](#ingestionjobstatus)
-  - [ModelStatus](#modelstatus)
-  - [TargetSamplingRate](#targetsamplingrate)
+  - [DataUploadFrequencyType](#datauploadfrequencytype)
+  - [DatasetStatusType](#datasetstatustype)
+  - [InferenceExecutionStatusType](#inferenceexecutionstatustype)
+  - [InferenceSchedulerStatusType](#inferenceschedulerstatustype)
+  - [IngestionJobStatusType](#ingestionjobstatustype)
+  - [ModelStatusType](#modelstatustype)
+  - [TargetSamplingRateType](#targetsamplingratetype)
 
-## DataUploadFrequency
+## DataUploadFrequencyType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import DataUploadFrequency
+from mypy_boto3_lookoutequipment.literals import DataUploadFrequencyType
 ```
 
 Values:
@@ -30,10 +30,10 @@ Values:
 - `PT30M`
 - `PT5M`
 
-## DatasetStatus
+## DatasetStatusType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import DatasetStatus
+from mypy_boto3_lookoutequipment.literals import DatasetStatusType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `CREATED`
 - `INGESTION_IN_PROGRESS`
 
-## InferenceExecutionStatus
+## InferenceExecutionStatusType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import InferenceExecutionStatus
+from mypy_boto3_lookoutequipment.literals import InferenceExecutionStatusType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESS`
 
-## InferenceSchedulerStatus
+## InferenceSchedulerStatusType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import InferenceSchedulerStatus
+from mypy_boto3_lookoutequipment.literals import InferenceSchedulerStatusType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
-## IngestionJobStatus
+## IngestionJobStatusType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import IngestionJobStatus
+from mypy_boto3_lookoutequipment.literals import IngestionJobStatusType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESS`
 
-## ModelStatus
+## ModelStatusType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import ModelStatus
+from mypy_boto3_lookoutequipment.literals import ModelStatusType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESS`
 
-## TargetSamplingRate
+## TargetSamplingRateType
 
 ```python
-from mypy_boto3_lookoutequipment.literals import TargetSamplingRate
+from mypy_boto3_lookoutequipment.literals import TargetSamplingRateType
 ```
 
 Values:

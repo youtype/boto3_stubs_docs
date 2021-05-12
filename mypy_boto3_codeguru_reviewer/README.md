@@ -3,7 +3,7 @@
 > [Index](..) > CodeGuruReviewer
 
 Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
@@ -30,38 +30,38 @@ Can be used directly:
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 ```
 
-CodeGuruReviewerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_repository](./client.md#associate-repository)
-- [can_paginate](./client.md#can-paginate)
-- [create_code_review](./client.md#create-code-review)
-- [describe_code_review](./client.md#describe-code-review)
-- [describe_recommendation_feedback](./client.md#describe-recommendation-feedback)
-- [describe_repository_association](./client.md#describe-repository-association)
-- [disassociate_repository](./client.md#disassociate-repository)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_code_reviews](./client.md#list-code-reviews)
-- [list_recommendation_feedback](./client.md#list-recommendation-feedback)
-- [list_recommendations](./client.md#list-recommendations)
-- [list_repository_associations](./client.md#list-repository-associations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_recommendation_feedback](./client.md#put-recommendation-feedback)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [associate_repository](./client.md#associate_repository)
+- [can_paginate](./client.md#can_paginate)
+- [create_code_review](./client.md#create_code_review)
+- [describe_code_review](./client.md#describe_code_review)
+- [describe_recommendation_feedback](./client.md#describe_recommendation_feedback)
+- [describe_repository_association](./client.md#describe_repository_association)
+- [disassociate_repository](./client.md#disassociate_repository)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_code_reviews](./client.md#list_code_reviews)
+- [list_recommendation_feedback](./client.md#list_recommendation_feedback)
+- [list_recommendations](./client.md#list_recommendations)
+- [list_repository_associations](./client.md#list_repository_associations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_recommendation_feedback](./client.md#put_recommendation_feedback)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+CodeGuruReviewerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- NotFoundException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -83,15 +83,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import EncryptionOption, ...
+from mypy_boto3_codeguru_reviewer.literals import EncryptionOptionType, ...
 ```
 
-- [EncryptionOption](./literals.md#encryptionoption)
-- [JobState](./literals.md#jobstate)
+- [EncryptionOptionType](./literals.md#encryptionoptiontype)
+- [JobStateType](./literals.md#jobstatetype)
 - [ListRepositoryAssociationsPaginatorName](./literals.md#listrepositoryassociationspaginatorname)
-- [ProviderType](./literals.md#providertype)
-- [Reaction](./literals.md#reaction)
-- [RepositoryAssociationState](./literals.md#repositoryassociationstate)
+- [ProviderTypeType](./literals.md#providertypetype)
+- [ReactionType](./literals.md#reactiontype)
+- [RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)
 - [TypeType](./literals.md#typetype)
 
 ## Typed dictionaries

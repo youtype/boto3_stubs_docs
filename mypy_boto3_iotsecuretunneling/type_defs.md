@@ -3,7 +3,7 @@
 > [Index](..) > [IoTSecureTunneling](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
 [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
@@ -27,7 +27,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import ConnectionStateTypeDef
 
 Optional fields:
 
-- `status`: [ConnectionStatus](./literals.md#connectionstatus)
+- `status`: [ConnectionStatusType](./literals.md#connectionstatustype)
 - `lastUpdatedAt`: `datetime`
 
 ## DescribeTunnelResponseTypeDef
@@ -120,7 +120,7 @@ Optional fields:
 
 - `tunnelId`: `str`
 - `tunnelArn`: `str`
-- `status`: [TunnelStatus](./literals.md#tunnelstatus)
+- `status`: [TunnelStatusType](./literals.md#tunnelstatustype)
 - `description`: `str`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
@@ -135,7 +135,7 @@ Optional fields:
 
 - `tunnelId`: `str`
 - `tunnelArn`: `str`
-- `status`: [TunnelStatus](./literals.md#tunnelstatus)
+- `status`: [TunnelStatusType](./literals.md#tunnelstatustype)
 - `sourceConnectionState`:
   [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
 - `destinationConnectionState`:

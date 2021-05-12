@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > Literals
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -16,11 +16,11 @@ type annotations stubs module
   - [DescribeQueriesPaginatorName](#describequeriespaginatorname)
   - [DescribeResourcePoliciesPaginatorName](#describeresourcepoliciespaginatorname)
   - [DescribeSubscriptionFiltersPaginatorName](#describesubscriptionfilterspaginatorname)
-  - [Distribution](#distribution)
-  - [ExportTaskStatusCode](#exporttaskstatuscode)
+  - [DistributionType](#distributiontype)
+  - [ExportTaskStatusCodeType](#exporttaskstatuscodetype)
   - [FilterLogEventsPaginatorName](#filterlogeventspaginatorname)
-  - [OrderBy](#orderby)
-  - [QueryStatus](#querystatus)
+  - [OrderByType](#orderbytype)
+  - [QueryStatusType](#querystatustype)
 
 ## DescribeDestinationsPaginatorName
 
@@ -102,10 +102,10 @@ Values:
 
 - `describe_subscription_filters`
 
-## Distribution
+## DistributionType
 
 ```python
-from mypy_boto3_logs.literals import Distribution
+from mypy_boto3_logs.literals import DistributionType
 ```
 
 Values:
@@ -113,10 +113,10 @@ Values:
 - `ByLogStream`
 - `Random`
 
-## ExportTaskStatusCode
+## ExportTaskStatusCodeType
 
 ```python
-from mypy_boto3_logs.literals import ExportTaskStatusCode
+from mypy_boto3_logs.literals import ExportTaskStatusCodeType
 ```
 
 Values:
@@ -138,10 +138,10 @@ Values:
 
 - `filter_log_events`
 
-## OrderBy
+## OrderByType
 
 ```python
-from mypy_boto3_logs.literals import OrderBy
+from mypy_boto3_logs.literals import OrderByType
 ```
 
 Values:
@@ -149,10 +149,10 @@ Values:
 - `LastEventTime`
 - `LogStreamName`
 
-## QueryStatus
+## QueryStatusType
 
 ```python
-from mypy_boto3_logs.literals import QueryStatus
+from mypy_boto3_logs.literals import QueryStatusType
 ```
 
 Values:

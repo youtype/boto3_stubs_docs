@@ -3,7 +3,7 @@
 > [Index](..) > [NimbleStudio](.) > Typed dictionaries
 
 Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
@@ -141,7 +141,8 @@ from mypy_boto3_nimble.type_defs import CreateStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
+- `streamingImage`:
+  [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## CreateStreamingSessionResponseTypeDef
 
@@ -203,7 +204,8 @@ from mypy_boto3_nimble.type_defs import DeleteStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
+- `streamingImage`:
+  [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## DeleteStreamingSessionResponseTypeDef
 
@@ -328,7 +330,8 @@ from mypy_boto3_nimble.type_defs import GetStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
+- `streamingImage`:
+  [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## GetStreamingSessionResponseTypeDef
 
@@ -426,7 +429,8 @@ Optional fields:
 - `launchProfileProtocolVersion`: `str`
 - `launchPurpose`: `str`
 - `name`: `str`
-- `platform`: [LaunchProfilePlatform](./literals.md#launchprofileplatform)
+- `platform`:
+  [LaunchProfilePlatformType](./literals.md#launchprofileplatformtype)
 - `systemInitializationScripts`:
   `List`\[[LaunchProfileInitializationScriptTypeDef](./type_defs.md#launchprofileinitializationscripttypedef)\]
 - `userInitializationScripts`:
@@ -442,7 +446,7 @@ Optional fields:
 
 - `identityStoreId`: `str`
 - `persona`: `Literal['USER']` (see
-  [LaunchProfilePersona](./literals.md#launchprofilepersona))
+  [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype))
 - `principalId`: `str`
 
 ## LaunchProfileTypeDef
@@ -461,8 +465,9 @@ Optional fields:
 - `launchProfileId`: `str`
 - `launchProfileProtocolVersions`: `List`\[`str`\]
 - `name`: `str`
-- `state`: [LaunchProfileState](./literals.md#launchprofilestate)
-- `statusCode`: [LaunchProfileStatusCode](./literals.md#launchprofilestatuscode)
+- `state`: [LaunchProfileStateType](./literals.md#launchprofilestatetype)
+- `statusCode`:
+  [LaunchProfileStatusCodeType](./literals.md#launchprofilestatuscodetype)
 - `statusMessage`: `str`
 - `streamConfiguration`:
   [StreamConfigurationTypeDef](./type_defs.md#streamconfigurationtypedef)
@@ -606,7 +611,7 @@ from mypy_boto3_nimble.type_defs import NewLaunchProfileMemberTypeDef
 Required fields:
 
 - `persona`: `Literal['USER']` (see
-  [LaunchProfilePersona](./literals.md#launchprofilepersona))
+  [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype))
 - `principalId`: `str`
 
 ## NewStudioMemberTypeDef
@@ -618,7 +623,7 @@ from mypy_boto3_nimble.type_defs import NewStudioMemberTypeDef
 Required fields:
 
 - `persona`: `Literal['ADMINISTRATOR']` (see
-  [StudioPersona](./literals.md#studiopersona))
+  [StudioPersonaType](./literals.md#studiopersonatype))
 - `principalId`: `str`
 
 ## PaginatorConfigTypeDef
@@ -676,9 +681,10 @@ from mypy_boto3_nimble.type_defs import StreamConfigurationCreateTypeDef
 
 Required fields:
 
-- `clipboardMode`: [StreamingClipboardMode](./literals.md#streamingclipboardmode)
+- `clipboardMode`:
+  [StreamingClipboardModeType](./literals.md#streamingclipboardmodetype)
 - `ec2InstanceTypes`:
-  `List`\[[StreamingInstanceType](./literals.md#streaminginstancetype)\]
+  `List`\[[StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)\]
 - `streamingImageIds`: `List`\[`str`\]
 
 Optional fields:
@@ -693,9 +699,10 @@ from mypy_boto3_nimble.type_defs import StreamConfigurationTypeDef
 
 Optional fields:
 
-- `clipboardMode`: [StreamingClipboardMode](./literals.md#streamingclipboardmode)
+- `clipboardMode`:
+  [StreamingClipboardModeType](./literals.md#streamingclipboardmodetype)
 - `ec2InstanceTypes`:
-  `List`\[[StreamingInstanceType](./literals.md#streaminginstancetype)\]
+  `List`\[[StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)\]
 - `maxSessionLengthInMinutes`: `int`
 - `streamingImageIds`: `List`\[`str`\]
 
@@ -708,7 +715,7 @@ from mypy_boto3_nimble.type_defs import StreamingImageEncryptionConfigurationTyp
 Required fields:
 
 - `keyType`: `Literal['CUSTOMER_MANAGED_KEY']` (see
-  [StreamingImageEncryptionConfigurationKeyType](./literals.md#streamingimageencryptionconfigurationkeytype))
+  [StreamingImageEncryptionConfigurationKeyTypeType](./literals.md#streamingimageencryptionconfigurationkeytypetype))
 
 Optional fields:
 
@@ -731,9 +738,9 @@ Optional fields:
 - `name`: `str`
 - `owner`: `str`
 - `platform`: `str`
-- `state`: [StreamingImageState](./literals.md#streamingimagestate)
+- `state`: [StreamingImageStateType](./literals.md#streamingimagestatetype)
 - `statusCode`:
-  [StreamingImageStatusCode](./literals.md#streamingimagestatuscode)
+  [StreamingImageStatusCodeType](./literals.md#streamingimagestatuscodetype)
 - `statusMessage`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -750,9 +757,9 @@ Optional fields:
 - `createdBy`: `str`
 - `expiresAt`: `datetime`
 - `state`:
-  [StreamingSessionStreamState](./literals.md#streamingsessionstreamstate)
+  [StreamingSessionStreamStateType](./literals.md#streamingsessionstreamstatetype)
 - `statusCode`:
-  [StreamingSessionStreamStatusCode](./literals.md#streamingsessionstreamstatuscode)
+  [StreamingSessionStreamStatusCodeType](./literals.md#streamingsessionstreamstatuscodetype)
 - `streamId`: `str`
 - `url`: `str`
 
@@ -770,9 +777,9 @@ Optional fields:
 - `ec2InstanceType`: `str`
 - `launchProfileId`: `str`
 - `sessionId`: `str`
-- `state`: [StreamingSessionState](./literals.md#streamingsessionstate)
+- `state`: [StreamingSessionStateType](./literals.md#streamingsessionstatetype)
 - `statusCode`:
-  [StreamingSessionStatusCode](./literals.md#streamingsessionstatuscode)
+  [StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype)
 - `statusMessage`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -806,9 +813,10 @@ from mypy_boto3_nimble.type_defs import StudioComponentInitializationScriptTypeD
 Optional fields:
 
 - `launchProfileProtocolVersion`: `str`
-- `platform`: [LaunchProfilePlatform](./literals.md#launchprofileplatform)
+- `platform`:
+  [LaunchProfilePlatformType](./literals.md#launchprofileplatformtype)
 - `runContext`:
-  [StudioComponentInitializationScriptRunContext](./literals.md#studiocomponentinitializationscriptruncontext)
+  [StudioComponentInitializationScriptRunContextType](./literals.md#studiocomponentinitializationscriptruncontexttype)
 - `script`: `str`
 
 ## StudioComponentSummaryTypeDef
@@ -824,8 +832,9 @@ Optional fields:
 - `description`: `str`
 - `name`: `str`
 - `studioComponentId`: `str`
-- `subtype`: [StudioComponentSubtype](./literals.md#studiocomponentsubtype)
-- `type`: [StudioComponentType](./literals.md#studiocomponenttype)
+- `subtype`:
+  [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
+- `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
 
@@ -849,14 +858,15 @@ Optional fields:
 - `name`: `str`
 - `scriptParameters`:
   `List`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
-- `state`: [StudioComponentState](./literals.md#studiocomponentstate)
+- `state`: [StudioComponentStateType](./literals.md#studiocomponentstatetype)
 - `statusCode`:
-  [StudioComponentStatusCode](./literals.md#studiocomponentstatuscode)
+  [StudioComponentStatusCodeType](./literals.md#studiocomponentstatuscodetype)
 - `statusMessage`: `str`
 - `studioComponentId`: `str`
-- `subtype`: [StudioComponentSubtype](./literals.md#studiocomponentsubtype)
+- `subtype`:
+  [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `tags`: `Dict`\[`str`, `str`\]
-- `type`: [StudioComponentType](./literals.md#studiocomponenttype)
+- `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
 
@@ -869,7 +879,7 @@ from mypy_boto3_nimble.type_defs import StudioEncryptionConfigurationTypeDef
 Required fields:
 
 - `keyType`:
-  [StudioEncryptionConfigurationKeyType](./literals.md#studioencryptionconfigurationkeytype)
+  [StudioEncryptionConfigurationKeyTypeType](./literals.md#studioencryptionconfigurationkeytypetype)
 
 Optional fields:
 
@@ -885,7 +895,7 @@ Optional fields:
 
 - `identityStoreId`: `str`
 - `persona`: `Literal['ADMINISTRATOR']` (see
-  [StudioPersona](./literals.md#studiopersona))
+  [StudioPersonaType](./literals.md#studiopersonatype))
 - `principalId`: `str`
 
 ## StudioTypeDef
@@ -902,8 +912,8 @@ Optional fields:
 - `displayName`: `str`
 - `homeRegion`: `str`
 - `ssoClientId`: `str`
-- `state`: [StudioState](./literals.md#studiostate)
-- `statusCode`: [StudioStatusCode](./literals.md#studiostatuscode)
+- `state`: [StudioStateType](./literals.md#studiostatetype)
+- `statusCode`: [StudioStatusCodeType](./literals.md#studiostatuscodetype)
 - `statusMessage`: `str`
 - `studioEncryptionConfiguration`:
   [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
@@ -943,7 +953,8 @@ from mypy_boto3_nimble.type_defs import UpdateStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
+- `streamingImage`:
+  [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## UpdateStudioComponentResponseTypeDef
 

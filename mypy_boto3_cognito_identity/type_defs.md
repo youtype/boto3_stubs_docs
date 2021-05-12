@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentity](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
 [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
@@ -240,7 +240,8 @@ from mypy_boto3_cognito_identity.type_defs import MappingRuleTypeDef
 Required fields:
 
 - `Claim`: `str`
-- `MatchType`: [MappingRuleMatchType](./literals.md#mappingrulematchtype)
+- `MatchType`:
+  [MappingRuleMatchTypeType](./literals.md#mappingrulematchtypetype)
 - `Value`: `str`
 - `RoleARN`: `str`
 
@@ -274,12 +275,12 @@ from mypy_boto3_cognito_identity.type_defs import RoleMappingTypeDef
 
 Required fields:
 
-- `Type`: [RoleMappingType](./literals.md#rolemappingtype)
+- `Type`: [RoleMappingTypeType](./literals.md#rolemappingtypetype)
 
 Optional fields:
 
 - `AmbiguousRoleResolution`:
-  [AmbiguousRoleResolutionType](./literals.md#ambiguousroleresolutiontype)
+  [AmbiguousRoleResolutionTypeType](./literals.md#ambiguousroleresolutiontypetype)
 - `RulesConfiguration`:
   [RulesConfigurationTypeTypeDef](./type_defs.md#rulesconfigurationtypetypedef)
 
@@ -315,4 +316,4 @@ from mypy_boto3_cognito_identity.type_defs import UnprocessedIdentityIdTypeDef
 Optional fields:
 
 - `IdentityId`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)

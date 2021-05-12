@@ -3,7 +3,7 @@
 > [Index](..) > [MachineLearning](.) > Waiters
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
@@ -28,12 +28,12 @@ def get_batch_prediction_available_waiter() -> BatchPredictionAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.batch_prediction_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.batch_prediction_available)
+[MachineLearning.Waiter.batch_prediction_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Waiter.batch_prediction_available)
 
 Arguments for `BatchPredictionAvailableWaiter.wait` method:
 
 - `FilterVariable`:
-  [BatchPredictionFilterVariable](./literals.md#batchpredictionfiltervariable)
+  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -41,7 +41,7 @@ Arguments for `BatchPredictionAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NextToken`: `str`
 - `Limit`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -61,12 +61,12 @@ def get_data_source_available_waiter() -> DataSourceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.data_source_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.data_source_available)
+[MachineLearning.Waiter.data_source_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Waiter.data_source_available)
 
 Arguments for `DataSourceAvailableWaiter.wait` method:
 
 - `FilterVariable`:
-  [DataSourceFilterVariable](./literals.md#datasourcefiltervariable)
+  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -74,7 +74,7 @@ Arguments for `DataSourceAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NextToken`: `str`
 - `Limit`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -94,12 +94,12 @@ def get_evaluation_available_waiter() -> EvaluationAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.evaluation_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.evaluation_available)
+[MachineLearning.Waiter.evaluation_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Waiter.evaluation_available)
 
 Arguments for `EvaluationAvailableWaiter.wait` method:
 
 - `FilterVariable`:
-  [EvaluationFilterVariable](./literals.md#evaluationfiltervariable)
+  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -107,7 +107,7 @@ Arguments for `EvaluationAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NextToken`: `str`
 - `Limit`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -127,11 +127,12 @@ def get_ml_model_available_waiter() -> MLModelAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.ml_model_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.ml_model_available)
+[MachineLearning.Waiter.ml_model_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Waiter.ml_model_available)
 
 Arguments for `MLModelAvailableWaiter.wait` method:
 
-- `FilterVariable`: [MLModelFilterVariable](./literals.md#mlmodelfiltervariable)
+- `FilterVariable`:
+  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -139,7 +140,7 @@ Arguments for `MLModelAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NextToken`: `str`
 - `Limit`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

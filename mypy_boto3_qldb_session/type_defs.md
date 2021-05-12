@@ -3,7 +3,7 @@
 > [Index](..) > [QLDBSession](.) > Typed dictionaries
 
 Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
 [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
@@ -85,7 +85,8 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
+- `Parameters`:
+  `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 
 ## ExecuteStatementResultTypeDef
 
@@ -158,7 +159,8 @@ Optional fields:
   [StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef)
 - `StartTransaction`:
   [StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef)
-- `EndSession`: [EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef)
+- `EndSession`:
+  [EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef)
 - `CommitTransaction`:
   [CommitTransactionResultTypeDef](./type_defs.md#committransactionresulttypedef)
 - `AbortTransaction`:

@@ -3,7 +3,7 @@
 > [Index](..) > [TimestreamWrite](.) > Typed dictionaries
 
 Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
 [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
@@ -105,7 +105,7 @@ Required fields:
 Optional fields:
 
 - `DimensionValueType`: `Literal['VARCHAR']` (see
-  [DimensionValueType](./literals.md#dimensionvaluetype))
+  [DimensionValueTypeType](./literals.md#dimensionvaluetypetype))
 
 ## EndpointTypeDef
 
@@ -161,9 +161,10 @@ Optional fields:
 - `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `MeasureName`: `str`
 - `MeasureValue`: `str`
-- `MeasureValueType`: [MeasureValueType](./literals.md#measurevaluetype)
+- `MeasureValueType`:
+  [MeasureValueTypeType](./literals.md#measurevaluetypetype)
 - `Time`: `str`
-- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
+- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
 - `Version`: `int`
 
 ## RetentionPropertiesTypeDef
@@ -188,7 +189,7 @@ Optional fields:
 - `Arn`: `str`
 - `TableName`: `str`
 - `DatabaseName`: `str`
-- `TableStatus`: [TableStatus](./literals.md#tablestatus)
+- `TableStatus`: [TableStatusType](./literals.md#tablestatustype)
 - `RetentionProperties`:
   [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - `CreationTime`: `datetime`

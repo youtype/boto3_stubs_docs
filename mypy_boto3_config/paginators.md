@@ -3,7 +3,7 @@
 > [Index](..) > [ConfigService](.) > Paginators
 
 Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService)
 type annotations stubs module
 [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
@@ -54,7 +54,7 @@ def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAgg
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeAggregateComplianceByConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
+[ConfigService.Paginator.DescribeAggregateComplianceByConfigRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
 
 Arguments for `DescribeAggregateComplianceByConfigRulesPaginator.paginate`
 method:
@@ -83,7 +83,7 @@ def get_describe_aggregate_compliance_by_conformance_packs_paginator() -> Descri
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks)
+[ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks)
 
 Arguments for `DescribeAggregateComplianceByConformancePacksPaginator.paginate`
 method:
@@ -112,7 +112,7 @@ def get_describe_aggregation_authorizations_paginator() -> DescribeAggregationAu
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeAggregationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
+[ConfigService.Paginator.DescribeAggregationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
 
 Arguments for `DescribeAggregationAuthorizationsPaginator.paginate` method:
 
@@ -137,12 +137,13 @@ def get_describe_compliance_by_config_rule_paginator() -> DescribeComplianceByCo
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeComplianceByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
+[ConfigService.Paginator.DescribeComplianceByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
 
 Arguments for `DescribeComplianceByConfigRulePaginator.paginate` method:
 
 - `ConfigRuleNames`: `List`\[`str`\]
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -164,13 +165,14 @@ def get_describe_compliance_by_resource_paginator() -> DescribeComplianceByResou
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeComplianceByResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
+[ConfigService.Paginator.DescribeComplianceByResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
 
 Arguments for `DescribeComplianceByResourcePaginator.paginate` method:
 
 - `ResourceType`: `str`
 - `ResourceId`: `str`
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -192,7 +194,7 @@ def get_describe_config_rule_evaluation_status_paginator() -> DescribeConfigRule
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigRuleEvaluationStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
+[ConfigService.Paginator.DescribeConfigRuleEvaluationStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
 
 Arguments for `DescribeConfigRuleEvaluationStatusPaginator.paginate` method:
 
@@ -218,7 +220,7 @@ def get_describe_config_rules_paginator() -> DescribeConfigRulesPaginator:
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
+[ConfigService.Paginator.DescribeConfigRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
 
 Arguments for `DescribeConfigRulesPaginator.paginate` method:
 
@@ -244,14 +246,14 @@ def get_describe_configuration_aggregator_sources_status_paginator() -> Describe
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
+[ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
 
 Arguments for `DescribeConfigurationAggregatorSourcesStatusPaginator.paginate`
 method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusType](./literals.md#aggregatedsourcestatustype)\]
+  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -273,7 +275,7 @@ def get_describe_configuration_aggregators_paginator() -> DescribeConfigurationA
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigurationAggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
+[ConfigService.Paginator.DescribeConfigurationAggregators](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
 
 Arguments for `DescribeConfigurationAggregatorsPaginator.paginate` method:
 
@@ -299,7 +301,7 @@ def get_describe_conformance_pack_status_paginator() -> DescribeConformancePackS
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeConformancePackStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConformancePackStatus)
+[ConfigService.Paginator.DescribeConformancePackStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeConformancePackStatus)
 
 Arguments for `DescribeConformancePackStatusPaginator.paginate` method:
 
@@ -325,7 +327,7 @@ def get_describe_conformance_packs_paginator() -> DescribeConformancePacksPagina
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConformancePacks)
+[ConfigService.Paginator.DescribeConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeConformancePacks)
 
 Arguments for `DescribeConformancePacksPaginator.paginate` method:
 
@@ -351,7 +353,7 @@ def get_describe_organization_config_rule_statuses_paginator() -> DescribeOrgani
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses)
+[ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses)
 
 Arguments for `DescribeOrganizationConfigRuleStatusesPaginator.paginate`
 method:
@@ -378,7 +380,7 @@ def get_describe_organization_config_rules_paginator() -> DescribeOrganizationCo
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRules)
+[ConfigService.Paginator.DescribeOrganizationConfigRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRules)
 
 Arguments for `DescribeOrganizationConfigRulesPaginator.paginate` method:
 
@@ -404,7 +406,7 @@ def get_describe_organization_conformance_pack_statuses_paginator() -> DescribeO
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConformancePackStatuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePackStatuses)
+[ConfigService.Paginator.DescribeOrganizationConformancePackStatuses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePackStatuses)
 
 Arguments for `DescribeOrganizationConformancePackStatusesPaginator.paginate`
 method:
@@ -431,7 +433,7 @@ def get_describe_organization_conformance_packs_paginator() -> DescribeOrganizat
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePacks)
+[ConfigService.Paginator.DescribeOrganizationConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePacks)
 
 Arguments for `DescribeOrganizationConformancePacksPaginator.paginate` method:
 
@@ -457,7 +459,7 @@ def get_describe_pending_aggregation_requests_paginator() -> DescribePendingAggr
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribePendingAggregationRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
+[ConfigService.Paginator.DescribePendingAggregationRequests](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
 
 Arguments for `DescribePendingAggregationRequestsPaginator.paginate` method:
 
@@ -482,7 +484,7 @@ def get_describe_remediation_execution_status_paginator() -> DescribeRemediation
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeRemediationExecutionStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
+[ConfigService.Paginator.DescribeRemediationExecutionStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
 
 Arguments for `DescribeRemediationExecutionStatusPaginator.paginate` method:
 
@@ -510,7 +512,7 @@ def get_describe_retention_configurations_paginator() -> DescribeRetentionConfig
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.DescribeRetentionConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
+[ConfigService.Paginator.DescribeRetentionConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
 
 Arguments for `DescribeRetentionConfigurationsPaginator.paginate` method:
 
@@ -536,7 +538,7 @@ def get_get_aggregate_compliance_details_by_config_rule_paginator() -> GetAggreg
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
+[ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
 
 Arguments for `GetAggregateComplianceDetailsByConfigRulePaginator.paginate`
 method:
@@ -545,7 +547,7 @@ method:
 - `ConfigRuleName`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 - `AwsRegion`: `str` *(required)*
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -567,12 +569,13 @@ def get_get_compliance_details_by_config_rule_paginator() -> GetComplianceDetail
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
+[ConfigService.Paginator.GetComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
 
 Arguments for `GetComplianceDetailsByConfigRulePaginator.paginate` method:
 
 - `ConfigRuleName`: `str` *(required)*
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -594,13 +597,14 @@ def get_get_compliance_details_by_resource_paginator() -> GetComplianceDetailsBy
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetComplianceDetailsByResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
+[ConfigService.Paginator.GetComplianceDetailsByResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
 
 Arguments for `GetComplianceDetailsByResourcePaginator.paginate` method:
 
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -622,7 +626,7 @@ def get_get_conformance_pack_compliance_summary_paginator() -> GetConformancePac
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetConformancePackComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetConformancePackComplianceSummary)
+[ConfigService.Paginator.GetConformancePackComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetConformancePackComplianceSummary)
 
 Arguments for `GetConformancePackComplianceSummaryPaginator.paginate` method:
 
@@ -648,7 +652,7 @@ def get_get_organization_config_rule_detailed_status_paginator() -> GetOrganizat
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus)
+[ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus)
 
 Arguments for `GetOrganizationConfigRuleDetailedStatusPaginator.paginate`
 method:
@@ -677,7 +681,7 @@ def get_get_organization_conformance_pack_detailed_status_paginator() -> GetOrga
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus)
+[ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus)
 
 Arguments for `GetOrganizationConformancePackDetailedStatusPaginator.paginate`
 method:
@@ -706,15 +710,17 @@ def get_get_resource_config_history_paginator() -> GetResourceConfigHistoryPagin
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.GetResourceConfigHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
+[ConfigService.Paginator.GetResourceConfigHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
 
 Arguments for `GetResourceConfigHistoryPaginator.paginate` method:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `resourceId`: `str` *(required)*
 - `laterTime`: `datetime`
 - `earlierTime`: `datetime`
-- `chronologicalOrder`: [ChronologicalOrder](./literals.md#chronologicalorder)
+- `chronologicalOrder`:
+  [ChronologicalOrderType](./literals.md#chronologicalordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -736,12 +742,13 @@ def get_list_aggregate_discovered_resources_paginator() -> ListAggregateDiscover
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.ListAggregateDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
+[ConfigService.Paginator.ListAggregateDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
 
 Arguments for `ListAggregateDiscoveredResourcesPaginator.paginate` method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
-- `ResourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -764,11 +771,12 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
+[ConfigService.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
 
 Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `resourceIds`: `List`\[`str`\]
 - `resourceName`: `str`
 - `includeDeletedResources`: `bool`
@@ -793,7 +801,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListTagsForResource)
+[ConfigService.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 
@@ -819,7 +827,7 @@ def get_select_aggregate_resource_config_paginator() -> SelectAggregateResourceC
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.SelectAggregateResourceConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.SelectAggregateResourceConfig)
+[ConfigService.Paginator.SelectAggregateResourceConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.SelectAggregateResourceConfig)
 
 Arguments for `SelectAggregateResourceConfigPaginator.paginate` method:
 
@@ -847,7 +855,7 @@ def get_select_resource_config_paginator() -> SelectResourceConfigPaginator:
 ```
 
 Boto3 documentation:
-[ConfigService.Paginator.SelectResourceConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.SelectResourceConfig)
+[ConfigService.Paginator.SelectResourceConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService.Paginator.SelectResourceConfig)
 
 Arguments for `SelectResourceConfigPaginator.paginate` method:
 

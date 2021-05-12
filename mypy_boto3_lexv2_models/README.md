@@ -3,7 +3,7 @@
 > [Index](..) > LexModelsV2
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -29,63 +29,63 @@ Can be used directly:
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
 ```
 
-LexModelsV2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [build_bot_locale](./client.md#build-bot-locale)
-- [can_paginate](./client.md#can-paginate)
-- [create_bot](./client.md#create-bot)
-- [create_bot_alias](./client.md#create-bot-alias)
-- [create_bot_locale](./client.md#create-bot-locale)
-- [create_bot_version](./client.md#create-bot-version)
-- [create_intent](./client.md#create-intent)
-- [create_slot](./client.md#create-slot)
-- [create_slot_type](./client.md#create-slot-type)
-- [delete_bot](./client.md#delete-bot)
-- [delete_bot_alias](./client.md#delete-bot-alias)
-- [delete_bot_locale](./client.md#delete-bot-locale)
-- [delete_bot_version](./client.md#delete-bot-version)
-- [delete_intent](./client.md#delete-intent)
-- [delete_slot](./client.md#delete-slot)
-- [delete_slot_type](./client.md#delete-slot-type)
-- [describe_bot](./client.md#describe-bot)
-- [describe_bot_alias](./client.md#describe-bot-alias)
-- [describe_bot_locale](./client.md#describe-bot-locale)
-- [describe_bot_version](./client.md#describe-bot-version)
-- [describe_intent](./client.md#describe-intent)
-- [describe_slot](./client.md#describe-slot)
-- [describe_slot_type](./client.md#describe-slot-type)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_bot_aliases](./client.md#list-bot-aliases)
-- [list_bot_locales](./client.md#list-bot-locales)
-- [list_bot_versions](./client.md#list-bot-versions)
-- [list_bots](./client.md#list-bots)
-- [list_built_in_intents](./client.md#list-built-in-intents)
-- [list_built_in_slot_types](./client.md#list-built-in-slot-types)
-- [list_intents](./client.md#list-intents)
-- [list_slot_types](./client.md#list-slot-types)
-- [list_slots](./client.md#list-slots)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_bot](./client.md#update-bot)
-- [update_bot_alias](./client.md#update-bot-alias)
-- [update_bot_locale](./client.md#update-bot-locale)
-- [update_intent](./client.md#update-intent)
-- [update_slot](./client.md#update-slot)
-- [update_slot_type](./client.md#update-slot-type)
+- [build_bot_locale](./client.md#build_bot_locale)
+- [can_paginate](./client.md#can_paginate)
+- [create_bot](./client.md#create_bot)
+- [create_bot_alias](./client.md#create_bot_alias)
+- [create_bot_locale](./client.md#create_bot_locale)
+- [create_bot_version](./client.md#create_bot_version)
+- [create_intent](./client.md#create_intent)
+- [create_slot](./client.md#create_slot)
+- [create_slot_type](./client.md#create_slot_type)
+- [delete_bot](./client.md#delete_bot)
+- [delete_bot_alias](./client.md#delete_bot_alias)
+- [delete_bot_locale](./client.md#delete_bot_locale)
+- [delete_bot_version](./client.md#delete_bot_version)
+- [delete_intent](./client.md#delete_intent)
+- [delete_slot](./client.md#delete_slot)
+- [delete_slot_type](./client.md#delete_slot_type)
+- [describe_bot](./client.md#describe_bot)
+- [describe_bot_alias](./client.md#describe_bot_alias)
+- [describe_bot_locale](./client.md#describe_bot_locale)
+- [describe_bot_version](./client.md#describe_bot_version)
+- [describe_intent](./client.md#describe_intent)
+- [describe_slot](./client.md#describe_slot)
+- [describe_slot_type](./client.md#describe_slot_type)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_bot_aliases](./client.md#list_bot_aliases)
+- [list_bot_locales](./client.md#list_bot_locales)
+- [list_bot_versions](./client.md#list_bot_versions)
+- [list_bots](./client.md#list_bots)
+- [list_built_in_intents](./client.md#list_built_in_intents)
+- [list_built_in_slot_types](./client.md#list_built_in_slot_types)
+- [list_intents](./client.md#list_intents)
+- [list_slot_types](./client.md#list_slot_types)
+- [list_slots](./client.md#list_slots)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_bot](./client.md#update_bot)
+- [update_bot_alias](./client.md#update_bot_alias)
+- [update_bot_locale](./client.md#update_bot_locale)
+- [update_intent](./client.md#update_intent)
+- [update_slot](./client.md#update_slot)
+- [update_slot_type](./client.md#update_slot_type)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [PreconditionFailedException](./client.md#preconditionfailedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+LexModelsV2Client [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- PreconditionFailedException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -94,34 +94,34 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_models.literals import BotAliasStatus, ...
+from mypy_boto3_lexv2_models.literals import BotAliasStatusType, ...
 ```
 
-- [BotAliasStatus](./literals.md#botaliasstatus)
-- [BotFilterName](./literals.md#botfiltername)
-- [BotFilterOperator](./literals.md#botfilteroperator)
-- [BotLocaleFilterName](./literals.md#botlocalefiltername)
-- [BotLocaleFilterOperator](./literals.md#botlocalefilteroperator)
-- [BotLocaleSortAttribute](./literals.md#botlocalesortattribute)
-- [BotLocaleStatus](./literals.md#botlocalestatus)
-- [BotSortAttribute](./literals.md#botsortattribute)
-- [BotStatus](./literals.md#botstatus)
-- [BotVersionSortAttribute](./literals.md#botversionsortattribute)
-- [BuiltInIntentSortAttribute](./literals.md#builtinintentsortattribute)
-- [BuiltInSlotTypeSortAttribute](./literals.md#builtinslottypesortattribute)
-- [IntentFilterName](./literals.md#intentfiltername)
-- [IntentFilterOperator](./literals.md#intentfilteroperator)
-- [IntentSortAttribute](./literals.md#intentsortattribute)
-- [ObfuscationSettingType](./literals.md#obfuscationsettingtype)
-- [SlotConstraint](./literals.md#slotconstraint)
-- [SlotFilterName](./literals.md#slotfiltername)
-- [SlotFilterOperator](./literals.md#slotfilteroperator)
-- [SlotSortAttribute](./literals.md#slotsortattribute)
-- [SlotTypeFilterName](./literals.md#slottypefiltername)
-- [SlotTypeFilterOperator](./literals.md#slottypefilteroperator)
-- [SlotTypeSortAttribute](./literals.md#slottypesortattribute)
-- [SlotValueResolutionStrategy](./literals.md#slotvalueresolutionstrategy)
-- [SortOrder](./literals.md#sortorder)
+- [BotAliasStatusType](./literals.md#botaliasstatustype)
+- [BotFilterNameType](./literals.md#botfilternametype)
+- [BotFilterOperatorType](./literals.md#botfilteroperatortype)
+- [BotLocaleFilterNameType](./literals.md#botlocalefilternametype)
+- [BotLocaleFilterOperatorType](./literals.md#botlocalefilteroperatortype)
+- [BotLocaleSortAttributeType](./literals.md#botlocalesortattributetype)
+- [BotLocaleStatusType](./literals.md#botlocalestatustype)
+- [BotSortAttributeType](./literals.md#botsortattributetype)
+- [BotStatusType](./literals.md#botstatustype)
+- [BotVersionSortAttributeType](./literals.md#botversionsortattributetype)
+- [BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype)
+- [BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype)
+- [IntentFilterNameType](./literals.md#intentfilternametype)
+- [IntentFilterOperatorType](./literals.md#intentfilteroperatortype)
+- [IntentSortAttributeType](./literals.md#intentsortattributetype)
+- [ObfuscationSettingTypeType](./literals.md#obfuscationsettingtypetype)
+- [SlotConstraintType](./literals.md#slotconstrainttype)
+- [SlotFilterNameType](./literals.md#slotfilternametype)
+- [SlotFilterOperatorType](./literals.md#slotfilteroperatortype)
+- [SlotSortAttributeType](./literals.md#slotsortattributetype)
+- [SlotTypeFilterNameType](./literals.md#slottypefilternametype)
+- [SlotTypeFilterOperatorType](./literals.md#slottypefilteroperatortype)
+- [SlotTypeSortAttributeType](./literals.md#slottypesortattributetype)
+- [SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype)
+- [SortOrderType](./literals.md#sortordertype)
 
 ## Typed dictionaries
 

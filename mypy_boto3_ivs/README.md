@@ -3,7 +3,7 @@
 > [Index](..) > IVS
 
 Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ivs.html#IVS)
 type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
@@ -29,53 +29,53 @@ Can be used directly:
 from mypy_boto3_ivs.client import IVSClient
 ```
 
-IVSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_get_channel](./client.md#batch-get-channel)
-- [batch_get_stream_key](./client.md#batch-get-stream-key)
-- [can_paginate](./client.md#can-paginate)
-- [create_channel](./client.md#create-channel)
-- [create_recording_configuration](./client.md#create-recording-configuration)
-- [create_stream_key](./client.md#create-stream-key)
-- [delete_channel](./client.md#delete-channel)
-- [delete_playback_key_pair](./client.md#delete-playback-key-pair)
-- [delete_recording_configuration](./client.md#delete-recording-configuration)
-- [delete_stream_key](./client.md#delete-stream-key)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_channel](./client.md#get-channel)
-- [get_paginator](./client.md#get-paginator)
-- [get_playback_key_pair](./client.md#get-playback-key-pair)
-- [get_recording_configuration](./client.md#get-recording-configuration)
-- [get_stream](./client.md#get-stream)
-- [get_stream_key](./client.md#get-stream-key)
-- [import_playback_key_pair](./client.md#import-playback-key-pair)
-- [list_channels](./client.md#list-channels)
-- [list_playback_key_pairs](./client.md#list-playback-key-pairs)
-- [list_recording_configurations](./client.md#list-recording-configurations)
-- [list_stream_keys](./client.md#list-stream-keys)
-- [list_streams](./client.md#list-streams)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_metadata](./client.md#put-metadata)
-- [stop_stream](./client.md#stop-stream)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_channel](./client.md#update-channel)
+- [batch_get_channel](./client.md#batch_get_channel)
+- [batch_get_stream_key](./client.md#batch_get_stream_key)
+- [can_paginate](./client.md#can_paginate)
+- [create_channel](./client.md#create_channel)
+- [create_recording_configuration](./client.md#create_recording_configuration)
+- [create_stream_key](./client.md#create_stream_key)
+- [delete_channel](./client.md#delete_channel)
+- [delete_playback_key_pair](./client.md#delete_playback_key_pair)
+- [delete_recording_configuration](./client.md#delete_recording_configuration)
+- [delete_stream_key](./client.md#delete_stream_key)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_channel](./client.md#get_channel)
+- [get_paginator](./client.md#get_paginator)
+- [get_playback_key_pair](./client.md#get_playback_key_pair)
+- [get_recording_configuration](./client.md#get_recording_configuration)
+- [get_stream](./client.md#get_stream)
+- [get_stream_key](./client.md#get_stream_key)
+- [import_playback_key_pair](./client.md#import_playback_key_pair)
+- [list_channels](./client.md#list_channels)
+- [list_playback_key_pairs](./client.md#list_playback_key_pairs)
+- [list_recording_configurations](./client.md#list_recording_configurations)
+- [list_stream_keys](./client.md#list_stream_keys)
+- [list_streams](./client.md#list_streams)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_metadata](./client.md#put_metadata)
+- [stop_stream](./client.md#stop_stream)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_channel](./client.md#update_channel)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ChannelNotBroadcasting](./client.md#channelnotbroadcasting)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [PendingVerification](./client.md#pendingverification)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [StreamUnavailable](./client.md#streamunavailable)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+IVSClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ChannelNotBroadcasting
+- ClientError
+- ConflictException
+- InternalServerException
+- PendingVerification
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- StreamUnavailable
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -101,19 +101,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ivs.literals import ChannelLatencyMode, ...
+from mypy_boto3_ivs.literals import ChannelLatencyModeType, ...
 ```
 
-- [ChannelLatencyMode](./literals.md#channellatencymode)
-- [ChannelType](./literals.md#channeltype)
+- [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- [ChannelTypeType](./literals.md#channeltypetype)
 - [ListChannelsPaginatorName](./literals.md#listchannelspaginatorname)
 - [ListPlaybackKeyPairsPaginatorName](./literals.md#listplaybackkeypairspaginatorname)
 - [ListRecordingConfigurationsPaginatorName](./literals.md#listrecordingconfigurationspaginatorname)
 - [ListStreamKeysPaginatorName](./literals.md#liststreamkeyspaginatorname)
 - [ListStreamsPaginatorName](./literals.md#liststreamspaginatorname)
-- [RecordingConfigurationState](./literals.md#recordingconfigurationstate)
-- [StreamHealth](./literals.md#streamhealth)
-- [StreamState](./literals.md#streamstate)
+- [RecordingConfigurationStateType](./literals.md#recordingconfigurationstatetype)
+- [StreamHealthType](./literals.md#streamhealthtype)
+- [StreamStateType](./literals.md#streamstatetype)
 
 ## Typed dictionaries
 

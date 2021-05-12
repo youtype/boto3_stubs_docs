@@ -3,7 +3,7 @@
 > [Index](..) > [Translate](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/translate.html#Translate)
 type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
@@ -57,7 +57,7 @@ from mypy_boto3_translate.type_defs import CreateParallelDataResponseTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
+- `Status`: [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 
 ## DeleteParallelDataResponseTypeDef
 
@@ -68,7 +68,7 @@ from mypy_boto3_translate.type_defs import DeleteParallelDataResponseTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
+- `Status`: [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 
 ## DescribeTextTranslationJobResponseTypeDef
 
@@ -90,7 +90,7 @@ from mypy_boto3_translate.type_defs import EncryptionKeyTypeDef
 Required fields:
 
 - `Type`: `Literal['KMS']` (see
-  [EncryptionKeyType](./literals.md#encryptionkeytype))
+  [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype))
 - `Id`: `str`
 
 ## GetParallelDataResponseTypeDef
@@ -224,7 +224,7 @@ from mypy_boto3_translate.type_defs import ParallelDataConfigTypeDef
 Required fields:
 
 - `S3Uri`: `str`
-- `Format`: [ParallelDataFormat](./literals.md#paralleldataformat)
+- `Format`: [ParallelDataFormatType](./literals.md#paralleldataformattype)
 
 ## ParallelDataDataLocationTypeDef
 
@@ -248,7 +248,7 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `Description`: `str`
-- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
+- `Status`: [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - `SourceLanguageCode`: `str`
 - `TargetLanguageCodes`: `List`\[`str`\]
 - `ParallelDataConfig`:
@@ -262,7 +262,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `LatestUpdateAttemptStatus`:
-  [ParallelDataStatus](./literals.md#paralleldatastatus)
+  [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - `LatestUpdateAttemptAt`: `datetime`
 
 ## StartTextTranslationJobResponseTypeDef
@@ -274,7 +274,7 @@ from mypy_boto3_translate.type_defs import StartTextTranslationJobResponseTypeDe
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopTextTranslationJobResponseTypeDef
 
@@ -285,7 +285,7 @@ from mypy_boto3_translate.type_defs import StopTextTranslationJobResponseTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## TermTypeDef
 
@@ -318,7 +318,8 @@ from mypy_boto3_translate.type_defs import TerminologyDataTypeDef
 Required fields:
 
 - `File`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `Format`: [TerminologyDataFormat](./literals.md#terminologydataformat)
+- `Format`:
+  [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
 ## TerminologyPropertiesTypeDef
 
@@ -348,7 +349,7 @@ from mypy_boto3_translate.type_defs import TextTranslationJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmittedBeforeTime`: `datetime`
 - `SubmittedAfterTime`: `datetime`
 
@@ -362,7 +363,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `JobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
 - `SourceLanguageCode`: `str`
 - `TargetLanguageCodes`: `List`\[`str`\]
@@ -403,7 +404,7 @@ from mypy_boto3_translate.type_defs import UpdateParallelDataResponseTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
+- `Status`: [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - `LatestUpdateAttemptStatus`:
-  [ParallelDataStatus](./literals.md#paralleldatastatus)
+  [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - `LatestUpdateAttemptAt`: `datetime`

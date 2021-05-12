@@ -3,18 +3,18 @@
 > [Index](..) > [LexModelBuildingService](.) > Literals
 
 Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
 [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 - [Literals for boto3 LexModelBuildingService module](#literals-for-boto3-lexmodelbuildingservice-module)
-  - [ChannelStatus](#channelstatus)
-  - [ChannelType](#channeltype)
-  - [ContentType](#contenttype)
-  - [Destination](#destination)
-  - [ExportStatus](#exportstatus)
-  - [ExportType](#exporttype)
-  - [FulfillmentActivityType](#fulfillmentactivitytype)
+  - [ChannelStatusType](#channelstatustype)
+  - [ChannelTypeType](#channeltypetype)
+  - [ContentTypeType](#contenttypetype)
+  - [DestinationType](#destinationtype)
+  - [ExportStatusType](#exportstatustype)
+  - [ExportTypeType](#exporttypetype)
+  - [FulfillmentActivityTypeType](#fulfillmentactivitytypetype)
   - [GetBotAliasesPaginatorName](#getbotaliasespaginatorname)
   - [GetBotChannelAssociationsPaginatorName](#getbotchannelassociationspaginatorname)
   - [GetBotVersionsPaginatorName](#getbotversionspaginatorname)
@@ -25,22 +25,22 @@ type annotations stubs module
   - [GetIntentsPaginatorName](#getintentspaginatorname)
   - [GetSlotTypeVersionsPaginatorName](#getslottypeversionspaginatorname)
   - [GetSlotTypesPaginatorName](#getslottypespaginatorname)
-  - [ImportStatus](#importstatus)
-  - [Locale](#locale)
-  - [LogType](#logtype)
-  - [MergeStrategy](#mergestrategy)
-  - [ObfuscationSetting](#obfuscationsetting)
-  - [ProcessBehavior](#processbehavior)
-  - [ResourceType](#resourcetype)
-  - [SlotConstraint](#slotconstraint)
-  - [SlotValueSelectionStrategy](#slotvalueselectionstrategy)
-  - [Status](#status)
+  - [ImportStatusType](#importstatustype)
+  - [LocaleType](#localetype)
+  - [LogTypeType](#logtypetype)
+  - [MergeStrategyType](#mergestrategytype)
+  - [ObfuscationSettingType](#obfuscationsettingtype)
+  - [ProcessBehaviorType](#processbehaviortype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [SlotConstraintType](#slotconstrainttype)
+  - [SlotValueSelectionStrategyType](#slotvalueselectionstrategytype)
   - [StatusType](#statustype)
+  - [StatusTypeType](#statustypetype)
 
-## ChannelStatus
+## ChannelStatusType
 
 ```python
-from mypy_boto3_lex_models.literals import ChannelStatus
+from mypy_boto3_lex_models.literals import ChannelStatusType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## ChannelType
+## ChannelTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import ChannelType
+from mypy_boto3_lex_models.literals import ChannelTypeType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `Slack`
 - `Twilio-Sms`
 
-## ContentType
+## ContentTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import ContentType
+from mypy_boto3_lex_models.literals import ContentTypeType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `PlainText`
 - `SSML`
 
-## Destination
+## DestinationType
 
 ```python
-from mypy_boto3_lex_models.literals import Destination
+from mypy_boto3_lex_models.literals import DestinationType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `CLOUDWATCH_LOGS`
 - `S3`
 
-## ExportStatus
+## ExportStatusType
 
 ```python
-from mypy_boto3_lex_models.literals import ExportStatus
+from mypy_boto3_lex_models.literals import ExportStatusType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `IN_PROGRESS`
 - `READY`
 
-## ExportType
+## ExportTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import ExportType
+from mypy_boto3_lex_models.literals import ExportTypeType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `ALEXA_SKILLS_KIT`
 - `LEX`
 
-## FulfillmentActivityType
+## FulfillmentActivityTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import FulfillmentActivityType
+from mypy_boto3_lex_models.literals import FulfillmentActivityTypeType
 ```
 
 Values:
@@ -219,10 +219,10 @@ Values:
 
 - `get_slot_types`
 
-## ImportStatus
+## ImportStatusType
 
 ```python
-from mypy_boto3_lex_models.literals import ImportStatus
+from mypy_boto3_lex_models.literals import ImportStatusType
 ```
 
 Values:
@@ -231,10 +231,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## Locale
+## LocaleType
 
 ```python
-from mypy_boto3_lex_models.literals import Locale
+from mypy_boto3_lex_models.literals import LocaleType
 ```
 
 Values:
@@ -251,10 +251,10 @@ Values:
 - `it-IT`
 - `ja-JP`
 
-## LogType
+## LogTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import LogType
+from mypy_boto3_lex_models.literals import LogTypeType
 ```
 
 Values:
@@ -262,10 +262,10 @@ Values:
 - `AUDIO`
 - `TEXT`
 
-## MergeStrategy
+## MergeStrategyType
 
 ```python
-from mypy_boto3_lex_models.literals import MergeStrategy
+from mypy_boto3_lex_models.literals import MergeStrategyType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `FAIL_ON_CONFLICT`
 - `OVERWRITE_LATEST`
 
-## ObfuscationSetting
+## ObfuscationSettingType
 
 ```python
-from mypy_boto3_lex_models.literals import ObfuscationSetting
+from mypy_boto3_lex_models.literals import ObfuscationSettingType
 ```
 
 Values:
@@ -284,10 +284,10 @@ Values:
 - `DEFAULT_OBFUSCATION`
 - `NONE`
 
-## ProcessBehavior
+## ProcessBehaviorType
 
 ```python
-from mypy_boto3_lex_models.literals import ProcessBehavior
+from mypy_boto3_lex_models.literals import ProcessBehaviorType
 ```
 
 Values:
@@ -295,10 +295,10 @@ Values:
 - `BUILD`
 - `SAVE`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import ResourceType
+from mypy_boto3_lex_models.literals import ResourceTypeType
 ```
 
 Values:
@@ -307,10 +307,10 @@ Values:
 - `INTENT`
 - `SLOT_TYPE`
 
-## SlotConstraint
+## SlotConstraintType
 
 ```python
-from mypy_boto3_lex_models.literals import SlotConstraint
+from mypy_boto3_lex_models.literals import SlotConstraintType
 ```
 
 Values:
@@ -318,10 +318,10 @@ Values:
 - `Optional`
 - `Required`
 
-## SlotValueSelectionStrategy
+## SlotValueSelectionStrategyType
 
 ```python
-from mypy_boto3_lex_models.literals import SlotValueSelectionStrategy
+from mypy_boto3_lex_models.literals import SlotValueSelectionStrategyType
 ```
 
 Values:
@@ -329,10 +329,10 @@ Values:
 - `ORIGINAL_VALUE`
 - `TOP_RESOLUTION`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_lex_models.literals import Status
+from mypy_boto3_lex_models.literals import StatusType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `READY`
 - `READY_BASIC_TESTING`
 
-## StatusType
+## StatusTypeType
 
 ```python
-from mypy_boto3_lex_models.literals import StatusType
+from mypy_boto3_lex_models.literals import StatusTypeType
 ```
 
 Values:

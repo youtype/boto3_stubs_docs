@@ -3,7 +3,7 @@
 > [Index](..) > [OpsWorksCM](.) > OpsWorksCMClient
 
 Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
 [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
@@ -49,7 +49,7 @@ def get_opsworkscm_client() -> OpsWorksCMClient:
 ```
 
 Boto3 documentation:
-[OpsWorksCM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
+[OpsWorksCM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client)
 
 ## Exceptions
 
@@ -80,7 +80,7 @@ Exceptions:
 Type annotations for `boto3.client("opsworkscm").associate_node` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.associate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node)
+[OpsWorksCM.Client.associate_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node)
 
 Arguments:
 
@@ -98,7 +98,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").can_paginate` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.can_paginate)
+[OpsWorksCM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.can_paginate)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns `bool`.
 Type annotations for `boto3.client("opsworkscm").create_backup` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup)
+[OpsWorksCM.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup)
 
 Arguments:
 
@@ -127,7 +127,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").create_server` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server)
+[OpsWorksCM.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").delete_backup` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup)
+[OpsWorksCM.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("opsworkscm").delete_server` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server)
+[OpsWorksCM.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("opsworkscm").describe_account_attributes`
 method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes)
+[OpsWorksCM.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes)
 
 Returns
 [DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").describe_backups` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups)
+[OpsWorksCM.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").describe_events` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events)
+[OpsWorksCM.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Type annotations for
 `boto3.client("opsworkscm").describe_node_association_status` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.describe_node_association_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status)
+[OpsWorksCM.Client.describe_node_association_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").describe_servers` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.describe_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers)
+[OpsWorksCM.Client.describe_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers)
 
 Arguments:
 
@@ -264,7 +264,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").disassociate_node` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.disassociate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node)
+[OpsWorksCM.Client.disassociate_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Type annotations for
 `boto3.client("opsworkscm").export_server_engine_attribute` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.export_server_engine_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute)
+[OpsWorksCM.Client.export_server_engine_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("opsworkscm").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.generate_presigned_url)
+[OpsWorksCM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.generate_presigned_url)
 
 Arguments:
 
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("opsworkscm").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource)
+[OpsWorksCM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").restore_server` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.restore_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server)
+[OpsWorksCM.Client.restore_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("opsworkscm").start_maintenance` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.start_maintenance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance)
+[OpsWorksCM.Client.start_maintenance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns
 Type annotations for `boto3.client("opsworkscm").tag_resource` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource)
+[OpsWorksCM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("opsworkscm").untag_resource` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource)
+[OpsWorksCM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("opsworkscm").update_server` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server)
+[OpsWorksCM.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server)
 
 Arguments:
 
@@ -412,7 +412,7 @@ Type annotations for
 `boto3.client("opsworkscm").update_server_engine_attributes` method.
 
 Boto3 documentation:
-[OpsWorksCM.Client.update_server_engine_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes)
+[OpsWorksCM.Client.update_server_engine_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes)
 
 Arguments:
 

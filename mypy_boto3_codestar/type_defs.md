@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStar](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar.html#CodeStar)
 type annotations stubs module
 [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
@@ -90,7 +90,8 @@ from mypy_boto3_codestar.type_defs import CodeTypeDef
 Required fields:
 
 - `source`: [CodeSourceTypeDef](./type_defs.md#codesourcetypedef)
-- `destination`: [CodeDestinationTypeDef](./type_defs.md#codedestinationtypedef)
+- `destination`:
+  [CodeDestinationTypeDef](./type_defs.md#codedestinationtypedef)
 
 ## CreateProjectResultTypeDef
 
@@ -247,7 +248,8 @@ from mypy_boto3_codestar.type_defs import ListTeamMembersResultTypeDef
 
 Required fields:
 
-- `teamMembers`: `List`\[[TeamMemberTypeDef](./type_defs.md#teammembertypedef)\]
+- `teamMembers`:
+  `List`\[[TeamMemberTypeDef](./type_defs.md#teammembertypedef)\]
 
 Optional fields:
 

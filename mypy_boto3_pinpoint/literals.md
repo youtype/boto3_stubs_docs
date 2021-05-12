@@ -3,38 +3,38 @@
 > [Index](..) > [Pinpoint](.) > Literals
 
 Auto-generated documentation for
-[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
 [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [Literals for boto3 Pinpoint module](#literals-for-boto3-pinpoint-module)
-  - [Action](#action)
-  - [AttributeType](#attributetype)
-  - [CampaignStatus](#campaignstatus)
-  - [ChannelType](#channeltype)
-  - [DeliveryStatus](#deliverystatus)
-  - [DimensionType](#dimensiontype)
-  - [Duration](#duration)
-  - [FilterType](#filtertype)
-  - [Format](#format)
-  - [Frequency](#frequency)
-  - [Include](#include)
-  - [JobStatus](#jobstatus)
-  - [MessageType](#messagetype)
-  - [Mode](#mode)
-  - [Operator](#operator)
-  - [RecencyType](#recencytype)
-  - [SegmentType](#segmenttype)
-  - [SourceType](#sourcetype)
-  - [State](#state)
-  - [TemplateType](#templatetype)
+  - [ActionType](#actiontype)
+  - [AttributeTypeType](#attributetypetype)
+  - [CampaignStatusType](#campaignstatustype)
+  - [ChannelTypeType](#channeltypetype)
+  - [DeliveryStatusType](#deliverystatustype)
+  - [DimensionTypeType](#dimensiontypetype)
+  - [DurationType](#durationtype)
+  - [FilterTypeType](#filtertypetype)
+  - [FormatType](#formattype)
+  - [FrequencyType](#frequencytype)
+  - [IncludeType](#includetype)
+  - [JobStatusType](#jobstatustype)
+  - [MessageTypeType](#messagetypetype)
+  - [ModeType](#modetype)
+  - [OperatorType](#operatortype)
+  - [RecencyTypeType](#recencytypetype)
+  - [SegmentTypeType](#segmenttypetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [StateType](#statetype)
+  - [TemplateTypeType](#templatetypetype)
   - [TypeType](#typetype)
-  - [\_\_EndpointTypesElement](#__endpointtypeselement)
+  - [\_\_EndpointTypesElementType](#__endpointtypeselementtype)
 
-## Action
+## ActionType
 
 ```python
-from mypy_boto3_pinpoint.literals import Action
+from mypy_boto3_pinpoint.literals import ActionType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `OPEN_APP`
 - `URL`
 
-## AttributeType
+## AttributeTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import AttributeType
+from mypy_boto3_pinpoint.literals import AttributeTypeType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `INCLUSIVE`
 - `ON`
 
-## CampaignStatus
+## CampaignStatusType
 
 ```python
-from mypy_boto3_pinpoint.literals import CampaignStatus
+from mypy_boto3_pinpoint.literals import CampaignStatusType
 ```
 
 Values:
@@ -75,10 +75,10 @@ Values:
 - `PENDING_NEXT_RUN`
 - `SCHEDULED`
 
-## ChannelType
+## ChannelTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import ChannelType
+from mypy_boto3_pinpoint.literals import ChannelTypeType
 ```
 
 Values:
@@ -96,10 +96,10 @@ Values:
 - `SMS`
 - `VOICE`
 
-## DeliveryStatus
+## DeliveryStatusType
 
 ```python
-from mypy_boto3_pinpoint.literals import DeliveryStatus
+from mypy_boto3_pinpoint.literals import DeliveryStatusType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 - `THROTTLED`
 - `UNKNOWN_FAILURE`
 
-## DimensionType
+## DimensionTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import DimensionType
+from mypy_boto3_pinpoint.literals import DimensionTypeType
 ```
 
 Values:
@@ -123,10 +123,10 @@ Values:
 - `EXCLUSIVE`
 - `INCLUSIVE`
 
-## Duration
+## DurationType
 
 ```python
-from mypy_boto3_pinpoint.literals import Duration
+from mypy_boto3_pinpoint.literals import DurationType
 ```
 
 Values:
@@ -136,10 +136,10 @@ Values:
 - `DAY_7`
 - `HR_24`
 
-## FilterType
+## FilterTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import FilterType
+from mypy_boto3_pinpoint.literals import FilterTypeType
 ```
 
 Values:
@@ -147,10 +147,10 @@ Values:
 - `ENDPOINT`
 - `SYSTEM`
 
-## Format
+## FormatType
 
 ```python
-from mypy_boto3_pinpoint.literals import Format
+from mypy_boto3_pinpoint.literals import FormatType
 ```
 
 Values:
@@ -158,10 +158,10 @@ Values:
 - `CSV`
 - `JSON`
 
-## Frequency
+## FrequencyType
 
 ```python
-from mypy_boto3_pinpoint.literals import Frequency
+from mypy_boto3_pinpoint.literals import FrequencyType
 ```
 
 Values:
@@ -173,10 +173,10 @@ Values:
 - `ONCE`
 - `WEEKLY`
 
-## Include
+## IncludeType
 
 ```python
-from mypy_boto3_pinpoint.literals import Include
+from mypy_boto3_pinpoint.literals import IncludeType
 ```
 
 Values:
@@ -185,10 +185,10 @@ Values:
 - `ANY`
 - `NONE`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_pinpoint.literals import JobStatus
+from mypy_boto3_pinpoint.literals import JobStatusType
 ```
 
 Values:
@@ -203,10 +203,10 @@ Values:
 - `PREPARING_FOR_INITIALIZATION`
 - `PROCESSING`
 
-## MessageType
+## MessageTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import MessageType
+from mypy_boto3_pinpoint.literals import MessageTypeType
 ```
 
 Values:
@@ -214,10 +214,10 @@ Values:
 - `PROMOTIONAL`
 - `TRANSACTIONAL`
 
-## Mode
+## ModeType
 
 ```python
-from mypy_boto3_pinpoint.literals import Mode
+from mypy_boto3_pinpoint.literals import ModeType
 ```
 
 Values:
@@ -225,10 +225,10 @@ Values:
 - `DELIVERY`
 - `FILTER`
 
-## Operator
+## OperatorType
 
 ```python
-from mypy_boto3_pinpoint.literals import Operator
+from mypy_boto3_pinpoint.literals import OperatorType
 ```
 
 Values:
@@ -236,10 +236,10 @@ Values:
 - `ALL`
 - `ANY`
 
-## RecencyType
+## RecencyTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import RecencyType
+from mypy_boto3_pinpoint.literals import RecencyTypeType
 ```
 
 Values:
@@ -247,10 +247,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## SegmentType
+## SegmentTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import SegmentType
+from mypy_boto3_pinpoint.literals import SegmentTypeType
 ```
 
 Values:
@@ -258,10 +258,10 @@ Values:
 - `DIMENSIONAL`
 - `IMPORT`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import SourceType
+from mypy_boto3_pinpoint.literals import SourceTypeType
 ```
 
 Values:
@@ -270,10 +270,10 @@ Values:
 - `ANY`
 - `NONE`
 
-## State
+## StateType
 
 ```python
-from mypy_boto3_pinpoint.literals import State
+from mypy_boto3_pinpoint.literals import StateType
 ```
 
 Values:
@@ -285,10 +285,10 @@ Values:
 - `DRAFT`
 - `PAUSED`
 
-## TemplateType
+## TemplateTypeType
 
 ```python
-from mypy_boto3_pinpoint.literals import TemplateType
+from mypy_boto3_pinpoint.literals import TemplateTypeType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 - `ANY`
 - `NONE`
 
-## \_\_EndpointTypesElement
+## \_\_EndpointTypesElementType
 
 ```python
-from mypy_boto3_pinpoint.literals import __EndpointTypesElement
+from mypy_boto3_pinpoint.literals import __EndpointTypesElementType
 ```
 
 Values:

@@ -3,22 +3,22 @@
 > [Index](..) > [MWAA](.) > Literals
 
 Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA)
 type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 - [Literals for boto3 MWAA module](#literals-for-boto3-mwaa-module)
-  - [EnvironmentStatus](#environmentstatus)
+  - [EnvironmentStatusType](#environmentstatustype)
   - [ListEnvironmentsPaginatorName](#listenvironmentspaginatorname)
-  - [LoggingLevel](#logginglevel)
-  - [Unit](#unit)
-  - [UpdateStatus](#updatestatus)
-  - [WebserverAccessMode](#webserveraccessmode)
+  - [LoggingLevelType](#loggingleveltype)
+  - [UnitType](#unittype)
+  - [UpdateStatusType](#updatestatustype)
+  - [WebserverAccessModeType](#webserveraccessmodetype)
 
-## EnvironmentStatus
+## EnvironmentStatusType
 
 ```python
-from mypy_boto3_mwaa.literals import EnvironmentStatus
+from mypy_boto3_mwaa.literals import EnvironmentStatusType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 
 - `list_environments`
 
-## LoggingLevel
+## LoggingLevelType
 
 ```python
-from mypy_boto3_mwaa.literals import LoggingLevel
+from mypy_boto3_mwaa.literals import LoggingLevelType
 ```
 
 Values:
@@ -56,10 +56,10 @@ Values:
 - `INFO`
 - `WARNING`
 
-## Unit
+## UnitType
 
 ```python
-from mypy_boto3_mwaa.literals import Unit
+from mypy_boto3_mwaa.literals import UnitType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
-## UpdateStatus
+## UpdateStatusType
 
 ```python
-from mypy_boto3_mwaa.literals import UpdateStatus
+from mypy_boto3_mwaa.literals import UpdateStatusType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `PENDING`
 - `SUCCESS`
 
-## WebserverAccessMode
+## WebserverAccessModeType
 
 ```python
-from mypy_boto3_mwaa.literals import WebserverAccessMode
+from mypy_boto3_mwaa.literals import WebserverAccessModeType
 ```
 
 Values:

@@ -3,29 +3,29 @@
 > [Index](..) > [CodeBuild](.) > Literals
 
 Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
 [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [Literals for boto3 CodeBuild module](#literals-for-boto3-codebuild-module)
-  - [ArtifactNamespace](#artifactnamespace)
-  - [ArtifactPackaging](#artifactpackaging)
-  - [ArtifactsType](#artifactstype)
-  - [AuthType](#authtype)
-  - [BucketOwnerAccess](#bucketowneraccess)
-  - [BuildBatchPhaseType](#buildbatchphasetype)
-  - [BuildPhaseType](#buildphasetype)
-  - [CacheMode](#cachemode)
-  - [CacheType](#cachetype)
-  - [ComputeType](#computetype)
-  - [CredentialProviderType](#credentialprovidertype)
+  - [ArtifactNamespaceType](#artifactnamespacetype)
+  - [ArtifactPackagingType](#artifactpackagingtype)
+  - [ArtifactsTypeType](#artifactstypetype)
+  - [AuthTypeType](#authtypetype)
+  - [BucketOwnerAccessType](#bucketowneraccesstype)
+  - [BuildBatchPhaseTypeType](#buildbatchphasetypetype)
+  - [BuildPhaseTypeType](#buildphasetypetype)
+  - [CacheModeType](#cachemodetype)
+  - [CacheTypeType](#cachetypetype)
+  - [ComputeTypeType](#computetypetype)
+  - [CredentialProviderTypeType](#credentialprovidertypetype)
   - [DescribeCodeCoveragesPaginatorName](#describecodecoveragespaginatorname)
   - [DescribeTestCasesPaginatorName](#describetestcasespaginatorname)
-  - [EnvironmentType](#environmenttype)
-  - [EnvironmentVariableType](#environmentvariabletype)
-  - [FileSystemType](#filesystemtype)
-  - [ImagePullCredentialsType](#imagepullcredentialstype)
-  - [LanguageType](#languagetype)
+  - [EnvironmentTypeType](#environmenttypetype)
+  - [EnvironmentVariableTypeType](#environmentvariabletypetype)
+  - [FileSystemTypeType](#filesystemtypetype)
+  - [ImagePullCredentialsTypeType](#imagepullcredentialstypetype)
+  - [LanguageTypeType](#languagetypetype)
   - [ListBuildBatchesForProjectPaginatorName](#listbuildbatchesforprojectpaginatorname)
   - [ListBuildBatchesPaginatorName](#listbuildbatchespaginatorname)
   - [ListBuildsForProjectPaginatorName](#listbuildsforprojectpaginatorname)
@@ -36,31 +36,31 @@ type annotations stubs module
   - [ListReportsPaginatorName](#listreportspaginatorname)
   - [ListSharedProjectsPaginatorName](#listsharedprojectspaginatorname)
   - [ListSharedReportGroupsPaginatorName](#listsharedreportgroupspaginatorname)
-  - [LogsConfigStatusType](#logsconfigstatustype)
-  - [PlatformType](#platformtype)
-  - [ProjectSortByType](#projectsortbytype)
-  - [ReportCodeCoverageSortByType](#reportcodecoveragesortbytype)
-  - [ReportExportConfigType](#reportexportconfigtype)
-  - [ReportGroupSortByType](#reportgroupsortbytype)
-  - [ReportGroupStatusType](#reportgroupstatustype)
-  - [ReportGroupTrendFieldType](#reportgrouptrendfieldtype)
-  - [ReportPackagingType](#reportpackagingtype)
-  - [ReportStatusType](#reportstatustype)
-  - [ReportType](#reporttype)
-  - [RetryBuildBatchType](#retrybuildbatchtype)
-  - [ServerType](#servertype)
-  - [SharedResourceSortByType](#sharedresourcesortbytype)
-  - [SortOrderType](#sortordertype)
-  - [SourceAuthType](#sourceauthtype)
-  - [SourceType](#sourcetype)
-  - [StatusType](#statustype)
-  - [WebhookBuildType](#webhookbuildtype)
-  - [WebhookFilterType](#webhookfiltertype)
+  - [LogsConfigStatusTypeType](#logsconfigstatustypetype)
+  - [PlatformTypeType](#platformtypetype)
+  - [ProjectSortByTypeType](#projectsortbytypetype)
+  - [ReportCodeCoverageSortByTypeType](#reportcodecoveragesortbytypetype)
+  - [ReportExportConfigTypeType](#reportexportconfigtypetype)
+  - [ReportGroupSortByTypeType](#reportgroupsortbytypetype)
+  - [ReportGroupStatusTypeType](#reportgroupstatustypetype)
+  - [ReportGroupTrendFieldTypeType](#reportgrouptrendfieldtypetype)
+  - [ReportPackagingTypeType](#reportpackagingtypetype)
+  - [ReportStatusTypeType](#reportstatustypetype)
+  - [ReportTypeType](#reporttypetype)
+  - [RetryBuildBatchTypeType](#retrybuildbatchtypetype)
+  - [ServerTypeType](#servertypetype)
+  - [SharedResourceSortByTypeType](#sharedresourcesortbytypetype)
+  - [SortOrderTypeType](#sortordertypetype)
+  - [SourceAuthTypeType](#sourceauthtypetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [StatusTypeType](#statustypetype)
+  - [WebhookBuildTypeType](#webhookbuildtypetype)
+  - [WebhookFilterTypeType](#webhookfiltertypetype)
 
-## ArtifactNamespace
+## ArtifactNamespaceType
 
 ```python
-from mypy_boto3_codebuild.literals import ArtifactNamespace
+from mypy_boto3_codebuild.literals import ArtifactNamespaceType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `BUILD_ID`
 - `NONE`
 
-## ArtifactPackaging
+## ArtifactPackagingType
 
 ```python
-from mypy_boto3_codebuild.literals import ArtifactPackaging
+from mypy_boto3_codebuild.literals import ArtifactPackagingType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `NONE`
 - `ZIP`
 
-## ArtifactsType
+## ArtifactsTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ArtifactsType
+from mypy_boto3_codebuild.literals import ArtifactsTypeType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `NO_ARTIFACTS`
 - `S3`
 
-## AuthType
+## AuthTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import AuthType
+from mypy_boto3_codebuild.literals import AuthTypeType
 ```
 
 Values:
@@ -103,10 +103,10 @@ Values:
 - `OAUTH`
 - `PERSONAL_ACCESS_TOKEN`
 
-## BucketOwnerAccess
+## BucketOwnerAccessType
 
 ```python
-from mypy_boto3_codebuild.literals import BucketOwnerAccess
+from mypy_boto3_codebuild.literals import BucketOwnerAccessType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 - `NONE`
 - `READ_ONLY`
 
-## BuildBatchPhaseType
+## BuildBatchPhaseTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import BuildBatchPhaseType
+from mypy_boto3_codebuild.literals import BuildBatchPhaseTypeType
 ```
 
 Values:
@@ -131,10 +131,10 @@ Values:
 - `SUBMITTED`
 - `SUCCEEDED`
 
-## BuildPhaseType
+## BuildPhaseTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import BuildPhaseType
+from mypy_boto3_codebuild.literals import BuildPhaseTypeType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `SUBMITTED`
 - `UPLOAD_ARTIFACTS`
 
-## CacheMode
+## CacheModeType
 
 ```python
-from mypy_boto3_codebuild.literals import CacheMode
+from mypy_boto3_codebuild.literals import CacheModeType
 ```
 
 Values:
@@ -163,10 +163,10 @@ Values:
 - `LOCAL_DOCKER_LAYER_CACHE`
 - `LOCAL_SOURCE_CACHE`
 
-## CacheType
+## CacheTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import CacheType
+from mypy_boto3_codebuild.literals import CacheTypeType
 ```
 
 Values:
@@ -175,10 +175,10 @@ Values:
 - `NO_CACHE`
 - `S3`
 
-## ComputeType
+## ComputeTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ComputeType
+from mypy_boto3_codebuild.literals import ComputeTypeType
 ```
 
 Values:
@@ -188,10 +188,10 @@ Values:
 - `BUILD_GENERAL1_MEDIUM`
 - `BUILD_GENERAL1_SMALL`
 
-## CredentialProviderType
+## CredentialProviderTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import CredentialProviderType
+from mypy_boto3_codebuild.literals import CredentialProviderTypeType
 ```
 
 Values:
@@ -218,10 +218,10 @@ Values:
 
 - `describe_test_cases`
 
-## EnvironmentType
+## EnvironmentTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import EnvironmentType
+from mypy_boto3_codebuild.literals import EnvironmentTypeType
 ```
 
 Values:
@@ -232,10 +232,10 @@ Values:
 - `WINDOWS_CONTAINER`
 - `WINDOWS_SERVER_2019_CONTAINER`
 
-## EnvironmentVariableType
+## EnvironmentVariableTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import EnvironmentVariableType
+from mypy_boto3_codebuild.literals import EnvironmentVariableTypeType
 ```
 
 Values:
@@ -244,20 +244,20 @@ Values:
 - `PLAINTEXT`
 - `SECRETS_MANAGER`
 
-## FileSystemType
+## FileSystemTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import FileSystemType
+from mypy_boto3_codebuild.literals import FileSystemTypeType
 ```
 
 Values:
 
 - `EFS`
 
-## ImagePullCredentialsType
+## ImagePullCredentialsTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ImagePullCredentialsType
+from mypy_boto3_codebuild.literals import ImagePullCredentialsTypeType
 ```
 
 Values:
@@ -265,10 +265,10 @@ Values:
 - `CODEBUILD`
 - `SERVICE_ROLE`
 
-## LanguageType
+## LanguageTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import LanguageType
+from mypy_boto3_codebuild.literals import LanguageTypeType
 ```
 
 Values:
@@ -384,10 +384,10 @@ Values:
 
 - `list_shared_report_groups`
 
-## LogsConfigStatusType
+## LogsConfigStatusTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import LogsConfigStatusType
+from mypy_boto3_codebuild.literals import LogsConfigStatusTypeType
 ```
 
 Values:
@@ -395,10 +395,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## PlatformType
+## PlatformTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import PlatformType
+from mypy_boto3_codebuild.literals import PlatformTypeType
 ```
 
 Values:
@@ -408,10 +408,10 @@ Values:
 - `UBUNTU`
 - `WINDOWS_SERVER`
 
-## ProjectSortByType
+## ProjectSortByTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ProjectSortByType
+from mypy_boto3_codebuild.literals import ProjectSortByTypeType
 ```
 
 Values:
@@ -420,10 +420,10 @@ Values:
 - `LAST_MODIFIED_TIME`
 - `NAME`
 
-## ReportCodeCoverageSortByType
+## ReportCodeCoverageSortByTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportCodeCoverageSortByType
+from mypy_boto3_codebuild.literals import ReportCodeCoverageSortByTypeType
 ```
 
 Values:
@@ -431,10 +431,10 @@ Values:
 - `FILE_PATH`
 - `LINE_COVERAGE_PERCENTAGE`
 
-## ReportExportConfigType
+## ReportExportConfigTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportExportConfigType
+from mypy_boto3_codebuild.literals import ReportExportConfigTypeType
 ```
 
 Values:
@@ -442,10 +442,10 @@ Values:
 - `NO_EXPORT`
 - `S3`
 
-## ReportGroupSortByType
+## ReportGroupSortByTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportGroupSortByType
+from mypy_boto3_codebuild.literals import ReportGroupSortByTypeType
 ```
 
 Values:
@@ -454,10 +454,10 @@ Values:
 - `LAST_MODIFIED_TIME`
 - `NAME`
 
-## ReportGroupStatusType
+## ReportGroupStatusTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportGroupStatusType
+from mypy_boto3_codebuild.literals import ReportGroupStatusTypeType
 ```
 
 Values:
@@ -465,10 +465,10 @@ Values:
 - `ACTIVE`
 - `DELETING`
 
-## ReportGroupTrendFieldType
+## ReportGroupTrendFieldTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportGroupTrendFieldType
+from mypy_boto3_codebuild.literals import ReportGroupTrendFieldTypeType
 ```
 
 Values:
@@ -483,10 +483,10 @@ Values:
 - `PASS_RATE`
 - `TOTAL`
 
-## ReportPackagingType
+## ReportPackagingTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportPackagingType
+from mypy_boto3_codebuild.literals import ReportPackagingTypeType
 ```
 
 Values:
@@ -494,10 +494,10 @@ Values:
 - `NONE`
 - `ZIP`
 
-## ReportStatusType
+## ReportStatusTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportStatusType
+from mypy_boto3_codebuild.literals import ReportStatusTypeType
 ```
 
 Values:
@@ -508,10 +508,10 @@ Values:
 - `INCOMPLETE`
 - `SUCCEEDED`
 
-## ReportType
+## ReportTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ReportType
+from mypy_boto3_codebuild.literals import ReportTypeType
 ```
 
 Values:
@@ -519,10 +519,10 @@ Values:
 - `CODE_COVERAGE`
 - `TEST`
 
-## RetryBuildBatchType
+## RetryBuildBatchTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import RetryBuildBatchType
+from mypy_boto3_codebuild.literals import RetryBuildBatchTypeType
 ```
 
 Values:
@@ -530,10 +530,10 @@ Values:
 - `RETRY_ALL_BUILDS`
 - `RETRY_FAILED_BUILDS`
 
-## ServerType
+## ServerTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import ServerType
+from mypy_boto3_codebuild.literals import ServerTypeType
 ```
 
 Values:
@@ -542,10 +542,10 @@ Values:
 - `GITHUB`
 - `GITHUB_ENTERPRISE`
 
-## SharedResourceSortByType
+## SharedResourceSortByTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import SharedResourceSortByType
+from mypy_boto3_codebuild.literals import SharedResourceSortByTypeType
 ```
 
 Values:
@@ -553,10 +553,10 @@ Values:
 - `ARN`
 - `MODIFIED_TIME`
 
-## SortOrderType
+## SortOrderTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import SortOrderType
+from mypy_boto3_codebuild.literals import SortOrderTypeType
 ```
 
 Values:
@@ -564,20 +564,20 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## SourceAuthType
+## SourceAuthTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import SourceAuthType
+from mypy_boto3_codebuild.literals import SourceAuthTypeType
 ```
 
 Values:
 
 - `OAUTH`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import SourceType
+from mypy_boto3_codebuild.literals import SourceTypeType
 ```
 
 Values:
@@ -590,10 +590,10 @@ Values:
 - `NO_SOURCE`
 - `S3`
 
-## StatusType
+## StatusTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import StatusType
+from mypy_boto3_codebuild.literals import StatusTypeType
 ```
 
 Values:
@@ -605,10 +605,10 @@ Values:
 - `SUCCEEDED`
 - `TIMED_OUT`
 
-## WebhookBuildType
+## WebhookBuildTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import WebhookBuildType
+from mypy_boto3_codebuild.literals import WebhookBuildTypeType
 ```
 
 Values:
@@ -616,10 +616,10 @@ Values:
 - `BUILD`
 - `BUILD_BATCH`
 
-## WebhookFilterType
+## WebhookFilterTypeType
 
 ```python
-from mypy_boto3_codebuild.literals import WebhookFilterType
+from mypy_boto3_codebuild.literals import WebhookFilterTypeType
 ```
 
 Values:

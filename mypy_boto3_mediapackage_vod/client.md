@@ -3,7 +3,7 @@
 > [Index](..) > [MediaPackageVod](.) > MediaPackageVodClient
 
 Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
 [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
@@ -46,7 +46,7 @@ def get_mediapackage-vod_client() -> MediaPackageVodClient:
 ```
 
 Boto3 documentation:
-[MediaPackageVod.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client)
+[MediaPackageVod.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client)
 
 ## Exceptions
 
@@ -77,7 +77,7 @@ Exceptions:
 Type annotations for `boto3.client("mediapackage-vod").can_paginate` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.can_paginate)
+[MediaPackageVod.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.can_paginate)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediapackage-vod").configure_logs` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.configure_logs)
+[MediaPackageVod.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.configure_logs)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Returns
 Type annotations for `boto3.client("mediapackage-vod").create_asset` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_asset)
+[MediaPackageVod.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_asset)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for
 `boto3.client("mediapackage-vod").create_packaging_configuration` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.create_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_configuration)
+[MediaPackageVod.Client.create_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_configuration)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("mediapackage-vod").create_packaging_group`
 method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.create_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_group)
+[MediaPackageVod.Client.create_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_group)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Returns
 Type annotations for `boto3.client("mediapackage-vod").delete_asset` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_asset)
+[MediaPackageVod.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_asset)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Type annotations for
 `boto3.client("mediapackage-vod").delete_packaging_configuration` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.delete_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_configuration)
+[MediaPackageVod.Client.delete_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_configuration)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("mediapackage-vod").delete_packaging_group`
 method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.delete_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_group)
+[MediaPackageVod.Client.delete_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_group)
 
 Arguments:
 
@@ -206,7 +206,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediapackage-vod").describe_asset` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_asset)
+[MediaPackageVod.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_asset)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Type annotations for
 `boto3.client("mediapackage-vod").describe_packaging_configuration` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.describe_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_configuration)
+[MediaPackageVod.Client.describe_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_configuration)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Type annotations for
 `boto3.client("mediapackage-vod").describe_packaging_group` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.describe_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_group)
+[MediaPackageVod.Client.describe_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_group)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Type annotations for `boto3.client("mediapackage-vod").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.generate_presigned_url)
+[MediaPackageVod.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.generate_presigned_url)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Returns `str`.
 Type annotations for `boto3.client("mediapackage-vod").list_assets` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_assets)
+[MediaPackageVod.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_assets)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for
 `boto3.client("mediapackage-vod").list_packaging_configurations` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.list_packaging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_configurations)
+[MediaPackageVod.Client.list_packaging_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_configurations)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("mediapackage-vod").list_packaging_groups`
 method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.list_packaging_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_groups)
+[MediaPackageVod.Client.list_packaging_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_groups)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("mediapackage-vod").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_tags_for_resource)
+[MediaPackageVod.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns
 Type annotations for `boto3.client("mediapackage-vod").tag_resource` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.tag_resource)
+[MediaPackageVod.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.tag_resource)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Arguments:
 Type annotations for `boto3.client("mediapackage-vod").untag_resource` method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.untag_resource)
+[MediaPackageVod.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.untag_resource)
 
 Arguments:
 
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("mediapackage-vod").update_packaging_group`
 method.
 
 Boto3 documentation:
-[MediaPackageVod.Client.update_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.update_packaging_group)
+[MediaPackageVod.Client.update_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Client.update_packaging_group)
 
 Arguments:
 

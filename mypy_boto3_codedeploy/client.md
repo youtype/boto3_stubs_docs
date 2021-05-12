@@ -3,7 +3,7 @@
 > [Index](..) > [CodeDeploy](.) > CodeDeployClient
 
 Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
 [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
@@ -77,7 +77,7 @@ def get_codedeploy_client() -> CodeDeployClient:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client)
+[CodeDeploy.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client)
 
 ## Exceptions
 
@@ -215,7 +215,7 @@ Type annotations for
 `boto3.client("codedeploy").add_tags_to_on_premises_instances` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.add_tags_to_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances)
+[CodeDeploy.Client.add_tags_to_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Type annotations for
 `boto3.client("codedeploy").batch_get_application_revisions` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions)
+[CodeDeploy.Client.batch_get_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Type annotations for `boto3.client("codedeploy").batch_get_applications`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications)
+[CodeDeploy.Client.batch_get_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications)
 
 Arguments:
 
@@ -261,7 +261,7 @@ Type annotations for `boto3.client("codedeploy").batch_get_deployment_groups`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups)
+[CodeDeploy.Client.batch_get_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Type annotations for
 `boto3.client("codedeploy").batch_get_deployment_instances` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances)
+[CodeDeploy.Client.batch_get_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("codedeploy").batch_get_deployment_targets`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets)
+[CodeDeploy.Client.batch_get_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").batch_get_deployments` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments)
+[CodeDeploy.Client.batch_get_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Type annotations for
 `boto3.client("codedeploy").batch_get_on_premises_instances` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.batch_get_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances)
+[CodeDeploy.Client.batch_get_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").can_paginate` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.can_paginate)
+[CodeDeploy.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.can_paginate)
 
 Arguments:
 
@@ -350,24 +350,25 @@ Returns `bool`.
 Type annotations for `boto3.client("codedeploy").continue_deployment` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.continue_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment)
+[CodeDeploy.Client.continue_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment)
 
 Arguments:
 
 - `deploymentId`: `str`
-- `deploymentWaitType`: [DeploymentWaitType](./literals.md#deploymentwaittype)
+- `deploymentWaitType`:
+  [DeploymentWaitTypeType](./literals.md#deploymentwaittypetype)
 
 ### create_application
 
 Type annotations for `boto3.client("codedeploy").create_application` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application)
+[CodeDeploy.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.create_application)
 
 Arguments:
 
 - `applicationName`: `str` *(required)*
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -378,7 +379,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").create_deployment` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment)
+[CodeDeploy.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment)
 
 Arguments:
 
@@ -393,7 +394,8 @@ Arguments:
 - `autoRollbackConfiguration`:
   [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
 - `updateOutdatedInstancesOnly`: `bool`
-- `fileExistsBehavior`: [FileExistsBehavior](./literals.md#fileexistsbehavior)
+- `fileExistsBehavior`:
+  [FileExistsBehaviorType](./literals.md#fileexistsbehaviortype)
 
 Returns
 [CreateDeploymentOutputTypeDef](./type_defs.md#createdeploymentoutputtypedef).
@@ -404,7 +406,7 @@ Type annotations for `boto3.client("codedeploy").create_deployment_config`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.create_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config)
+[CodeDeploy.Client.create_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config)
 
 Arguments:
 
@@ -413,7 +415,7 @@ Arguments:
   [MinimumHealthyHostsTypeDef](./type_defs.md#minimumhealthyhoststypedef)
 - `trafficRoutingConfig`:
   [TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef)
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 
 Returns
 [CreateDeploymentConfigOutputTypeDef](./type_defs.md#createdeploymentconfigoutputtypedef).
@@ -424,7 +426,7 @@ Type annotations for `boto3.client("codedeploy").create_deployment_group`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.create_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group)
+[CodeDeploy.Client.create_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group)
 
 Arguments:
 
@@ -444,7 +446,7 @@ Arguments:
 - `autoRollbackConfiguration`:
   [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
 - `outdatedInstancesStrategy`:
-  [OutdatedInstancesStrategy](./literals.md#outdatedinstancesstrategy)
+  [OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype)
 - `deploymentStyle`:
   [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
 - `blueGreenDeploymentConfiguration`:
@@ -452,7 +454,8 @@ Arguments:
 - `loadBalancerInfo`:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
-- `ecsServices`: `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+- `ecsServices`:
+  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -465,7 +468,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").delete_application` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application)
+[CodeDeploy.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.delete_application)
 
 Arguments:
 
@@ -477,7 +480,7 @@ Type annotations for `boto3.client("codedeploy").delete_deployment_config`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.delete_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config)
+[CodeDeploy.Client.delete_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config)
 
 Arguments:
 
@@ -489,7 +492,7 @@ Type annotations for `boto3.client("codedeploy").delete_deployment_group`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.delete_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group)
+[CodeDeploy.Client.delete_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group)
 
 Arguments:
 
@@ -505,7 +508,7 @@ Type annotations for `boto3.client("codedeploy").delete_git_hub_account_token`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.delete_git_hub_account_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token)
+[CodeDeploy.Client.delete_git_hub_account_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token)
 
 Arguments:
 
@@ -520,7 +523,7 @@ Type annotations for
 `boto3.client("codedeploy").delete_resources_by_external_id` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.delete_resources_by_external_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id)
+[CodeDeploy.Client.delete_resources_by_external_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id)
 
 Arguments:
 
@@ -534,7 +537,7 @@ Type annotations for
 `boto3.client("codedeploy").deregister_on_premises_instance` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.deregister_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance)
+[CodeDeploy.Client.deregister_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance)
 
 Arguments:
 
@@ -546,7 +549,7 @@ Type annotations for `boto3.client("codedeploy").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.generate_presigned_url)
+[CodeDeploy.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.generate_presigned_url)
 
 Arguments:
 
@@ -562,7 +565,7 @@ Returns `str`.
 Type annotations for `boto3.client("codedeploy").get_application` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application)
+[CodeDeploy.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_application)
 
 Arguments:
 
@@ -577,7 +580,7 @@ Type annotations for `boto3.client("codedeploy").get_application_revision`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision)
+[CodeDeploy.Client.get_application_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision)
 
 Arguments:
 
@@ -593,7 +596,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").get_deployment` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment)
+[CodeDeploy.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment)
 
 Arguments:
 
@@ -607,7 +610,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").get_deployment_config` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config)
+[CodeDeploy.Client.get_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config)
 
 Arguments:
 
@@ -621,7 +624,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").get_deployment_group` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group)
+[CodeDeploy.Client.get_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group)
 
 Arguments:
 
@@ -637,7 +640,7 @@ Type annotations for `boto3.client("codedeploy").get_deployment_instance`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_deployment_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance)
+[CodeDeploy.Client.get_deployment_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance)
 
 Arguments:
 
@@ -652,7 +655,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").get_deployment_target` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_deployment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target)
+[CodeDeploy.Client.get_deployment_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target)
 
 Arguments:
 
@@ -668,7 +671,7 @@ Type annotations for `boto3.client("codedeploy").get_on_premises_instance`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.get_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance)
+[CodeDeploy.Client.get_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance)
 
 Arguments:
 
@@ -683,16 +686,18 @@ Type annotations for `boto3.client("codedeploy").list_application_revisions`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions)
+[CodeDeploy.Client.list_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions)
 
 Arguments:
 
 - `applicationName`: `str` *(required)*
-- `sortBy`: [ApplicationRevisionSortBy](./literals.md#applicationrevisionsortby)
-- `sortOrder`: [SortOrder](./literals.md#sortorder)
+- `sortBy`:
+  [ApplicationRevisionSortByType](./literals.md#applicationrevisionsortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `s3Bucket`: `str`
 - `s3KeyPrefix`: `str`
-- `deployed`: [ListStateFilterAction](./literals.md#liststatefilteraction)
+- `deployed`:
+  [ListStateFilterActionType](./literals.md#liststatefilteractiontype)
 - `nextToken`: `str`
 
 Returns
@@ -703,7 +708,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").list_applications` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
+[CodeDeploy.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
 
 Arguments:
 
@@ -718,7 +723,7 @@ Type annotations for `boto3.client("codedeploy").list_deployment_configs`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_deployment_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
+[CodeDeploy.Client.list_deployment_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
 
 Arguments:
 
@@ -733,7 +738,7 @@ Type annotations for `boto3.client("codedeploy").list_deployment_groups`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
+[CodeDeploy.Client.list_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
 
 Arguments:
 
@@ -749,15 +754,16 @@ Type annotations for `boto3.client("codedeploy").list_deployment_instances`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances)
+[CodeDeploy.Client.list_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances)
 
 Arguments:
 
 - `deploymentId`: `str` *(required)*
 - `nextToken`: `str`
 - `instanceStatusFilter`:
-  `List`\[[InstanceStatus](./literals.md#instancestatus)\]
-- `instanceTypeFilter`: `List`\[[InstanceType](./literals.md#instancetype)\]
+  `List`\[[InstanceStatusType](./literals.md#instancestatustype)\]
+- `instanceTypeFilter`:
+  `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 
 Returns
 [ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef).
@@ -768,13 +774,14 @@ Type annotations for `boto3.client("codedeploy").list_deployment_targets`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets)
+[CodeDeploy.Client.list_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets)
 
 Arguments:
 
 - `deploymentId`: `str`
 - `nextToken`: `str`
-- `targetFilters`: `Dict`\[[TargetFilterName](./literals.md#targetfiltername),
+- `targetFilters`:
+  `Dict`\[[TargetFilterNameType](./literals.md#targetfilternametype),
   `List`\[`str`\]\]
 
 Returns
@@ -785,7 +792,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").list_deployments` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
+[CodeDeploy.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
 
 Arguments:
 
@@ -793,7 +800,7 @@ Arguments:
 - `deploymentGroupName`: `str`
 - `externalId`: `str`
 - `includeOnlyStatuses`:
-  `List`\[[DeploymentStatus](./literals.md#deploymentstatus)\]
+  `List`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
 - `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `nextToken`: `str`
 
@@ -806,7 +813,7 @@ Type annotations for
 `boto3.client("codedeploy").list_git_hub_account_token_names` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_git_hub_account_token_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names)
+[CodeDeploy.Client.list_git_hub_account_token_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names)
 
 Arguments:
 
@@ -821,11 +828,12 @@ Type annotations for `boto3.client("codedeploy").list_on_premises_instances`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances)
+[CodeDeploy.Client.list_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances)
 
 Arguments:
 
-- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
+- `registrationStatus`:
+  [RegistrationStatusType](./literals.md#registrationstatustype)
 - `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 
@@ -838,7 +846,7 @@ Type annotations for `boto3.client("codedeploy").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource)
+[CodeDeploy.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -854,13 +862,13 @@ Type annotations for
 `boto3.client("codedeploy").put_lifecycle_event_hook_execution_status` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.put_lifecycle_event_hook_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status)
+[CodeDeploy.Client.put_lifecycle_event_hook_execution_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status)
 
 Arguments:
 
 - `deploymentId`: `str`
 - `lifecycleEventHookExecutionId`: `str`
-- `status`: [LifecycleEventStatus](./literals.md#lifecycleeventstatus)
+- `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
 
 Returns
 [PutLifecycleEventHookExecutionStatusOutputTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusoutputtypedef).
@@ -871,7 +879,7 @@ Type annotations for `boto3.client("codedeploy").register_application_revision`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.register_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)
+[CodeDeploy.Client.register_application_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)
 
 Arguments:
 
@@ -886,7 +894,7 @@ Type annotations for `boto3.client("codedeploy").register_on_premises_instance`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.register_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance)
+[CodeDeploy.Client.register_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance)
 
 Arguments:
 
@@ -900,7 +908,7 @@ Type annotations for
 `boto3.client("codedeploy").remove_tags_from_on_premises_instances` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.remove_tags_from_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances)
+[CodeDeploy.Client.remove_tags_from_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances)
 
 Arguments:
 
@@ -913,7 +921,7 @@ Type annotations for
 `boto3.client("codedeploy").skip_wait_time_for_instance_termination` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.skip_wait_time_for_instance_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination)
+[CodeDeploy.Client.skip_wait_time_for_instance_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination)
 
 Arguments:
 
@@ -924,7 +932,7 @@ Arguments:
 Type annotations for `boto3.client("codedeploy").stop_deployment` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment)
+[CodeDeploy.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment)
 
 Arguments:
 
@@ -939,7 +947,7 @@ Returns
 Type annotations for `boto3.client("codedeploy").tag_resource` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource)
+[CodeDeploy.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource)
 
 Arguments:
 
@@ -953,7 +961,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codedeploy").untag_resource` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource)
+[CodeDeploy.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource)
 
 Arguments:
 
@@ -967,7 +975,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codedeploy").update_application` method.
 
 Boto3 documentation:
-[CodeDeploy.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application)
+[CodeDeploy.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.update_application)
 
 Arguments:
 
@@ -980,7 +988,7 @@ Type annotations for `boto3.client("codedeploy").update_deployment_group`
 method.
 
 Boto3 documentation:
-[CodeDeploy.Client.update_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group)
+[CodeDeploy.Client.update_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group)
 
 Arguments:
 
@@ -1001,7 +1009,7 @@ Arguments:
 - `autoRollbackConfiguration`:
   [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
 - `outdatedInstancesStrategy`:
-  [OutdatedInstancesStrategy](./literals.md#outdatedinstancesstrategy)
+  [OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype)
 - `deploymentStyle`:
   [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
 - `blueGreenDeploymentConfiguration`:
@@ -1009,7 +1017,8 @@ Arguments:
 - `loadBalancerInfo`:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
-- `ecsServices`: `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+- `ecsServices`:
+  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
 

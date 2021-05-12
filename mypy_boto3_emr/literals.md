@@ -3,36 +3,36 @@
 > [Index](..) > [EMR](.) > Literals
 
 Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr.html#EMR)
 type annotations stubs module
 [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Literals for boto3 EMR module](#literals-for-boto3-emr-module)
-  - [ActionOnFailure](#actiononfailure)
-  - [AdjustmentType](#adjustmenttype)
-  - [AuthMode](#authmode)
-  - [AutoScalingPolicyState](#autoscalingpolicystate)
-  - [AutoScalingPolicyStateChangeReasonCode](#autoscalingpolicystatechangereasoncode)
-  - [CancelStepsRequestStatus](#cancelstepsrequeststatus)
+  - [ActionOnFailureType](#actiononfailuretype)
+  - [AdjustmentTypeType](#adjustmenttypetype)
+  - [AuthModeType](#authmodetype)
+  - [AutoScalingPolicyStateChangeReasonCodeType](#autoscalingpolicystatechangereasoncodetype)
+  - [AutoScalingPolicyStateType](#autoscalingpolicystatetype)
+  - [CancelStepsRequestStatusType](#cancelstepsrequeststatustype)
   - [ClusterRunningWaiterName](#clusterrunningwaitername)
-  - [ClusterState](#clusterstate)
-  - [ClusterStateChangeReasonCode](#clusterstatechangereasoncode)
+  - [ClusterStateChangeReasonCodeType](#clusterstatechangereasoncodetype)
+  - [ClusterStateType](#clusterstatetype)
   - [ClusterTerminatedWaiterName](#clusterterminatedwaitername)
-  - [ComparisonOperator](#comparisonoperator)
-  - [ComputeLimitsUnitType](#computelimitsunittype)
-  - [ExecutionEngineType](#executionenginetype)
-  - [IdentityType](#identitytype)
-  - [InstanceCollectionType](#instancecollectiontype)
-  - [InstanceFleetState](#instancefleetstate)
-  - [InstanceFleetStateChangeReasonCode](#instancefleetstatechangereasoncode)
-  - [InstanceFleetType](#instancefleettype)
-  - [InstanceGroupState](#instancegroupstate)
-  - [InstanceGroupStateChangeReasonCode](#instancegroupstatechangereasoncode)
-  - [InstanceGroupType](#instancegrouptype)
-  - [InstanceRoleType](#instanceroletype)
-  - [InstanceState](#instancestate)
-  - [InstanceStateChangeReasonCode](#instancestatechangereasoncode)
-  - [JobFlowExecutionState](#jobflowexecutionstate)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [ComputeLimitsUnitTypeType](#computelimitsunittypetype)
+  - [ExecutionEngineTypeType](#executionenginetypetype)
+  - [IdentityTypeType](#identitytypetype)
+  - [InstanceCollectionTypeType](#instancecollectiontypetype)
+  - [InstanceFleetStateChangeReasonCodeType](#instancefleetstatechangereasoncodetype)
+  - [InstanceFleetStateType](#instancefleetstatetype)
+  - [InstanceFleetTypeType](#instancefleettypetype)
+  - [InstanceGroupStateChangeReasonCodeType](#instancegroupstatechangereasoncodetype)
+  - [InstanceGroupStateType](#instancegroupstatetype)
+  - [InstanceGroupTypeType](#instancegrouptypetype)
+  - [InstanceRoleTypeType](#instanceroletypetype)
+  - [InstanceStateChangeReasonCodeType](#instancestatechangereasoncodetype)
+  - [InstanceStateType](#instancestatetype)
+  - [JobFlowExecutionStateType](#jobflowexecutionstatetype)
   - [ListBootstrapActionsPaginatorName](#listbootstrapactionspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListInstanceFleetsPaginatorName](#listinstancefleetspaginatorname)
@@ -43,28 +43,28 @@ type annotations stubs module
   - [ListStepsPaginatorName](#liststepspaginatorname)
   - [ListStudioSessionMappingsPaginatorName](#liststudiosessionmappingspaginatorname)
   - [ListStudiosPaginatorName](#liststudiospaginatorname)
-  - [MarketType](#markettype)
-  - [NotebookExecutionStatus](#notebookexecutionstatus)
-  - [OnDemandCapacityReservationPreference](#ondemandcapacityreservationpreference)
-  - [OnDemandCapacityReservationUsageStrategy](#ondemandcapacityreservationusagestrategy)
-  - [OnDemandProvisioningAllocationStrategy](#ondemandprovisioningallocationstrategy)
-  - [PlacementGroupStrategy](#placementgroupstrategy)
-  - [RepoUpgradeOnBoot](#repoupgradeonboot)
-  - [ScaleDownBehavior](#scaledownbehavior)
-  - [SpotProvisioningAllocationStrategy](#spotprovisioningallocationstrategy)
-  - [SpotProvisioningTimeoutAction](#spotprovisioningtimeoutaction)
-  - [Statistic](#statistic)
-  - [StepCancellationOption](#stepcancellationoption)
+  - [MarketTypeType](#markettypetype)
+  - [NotebookExecutionStatusType](#notebookexecutionstatustype)
+  - [OnDemandCapacityReservationPreferenceType](#ondemandcapacityreservationpreferencetype)
+  - [OnDemandCapacityReservationUsageStrategyType](#ondemandcapacityreservationusagestrategytype)
+  - [OnDemandProvisioningAllocationStrategyType](#ondemandprovisioningallocationstrategytype)
+  - [PlacementGroupStrategyType](#placementgroupstrategytype)
+  - [RepoUpgradeOnBootType](#repoupgradeonboottype)
+  - [ScaleDownBehaviorType](#scaledownbehaviortype)
+  - [SpotProvisioningAllocationStrategyType](#spotprovisioningallocationstrategytype)
+  - [SpotProvisioningTimeoutActionType](#spotprovisioningtimeoutactiontype)
+  - [StatisticType](#statistictype)
+  - [StepCancellationOptionType](#stepcancellationoptiontype)
   - [StepCompleteWaiterName](#stepcompletewaitername)
-  - [StepExecutionState](#stepexecutionstate)
-  - [StepState](#stepstate)
-  - [StepStateChangeReasonCode](#stepstatechangereasoncode)
-  - [Unit](#unit)
+  - [StepExecutionStateType](#stepexecutionstatetype)
+  - [StepStateChangeReasonCodeType](#stepstatechangereasoncodetype)
+  - [StepStateType](#stepstatetype)
+  - [UnitType](#unittype)
 
-## ActionOnFailure
+## ActionOnFailureType
 
 ```python
-from mypy_boto3_emr.literals import ActionOnFailure
+from mypy_boto3_emr.literals import ActionOnFailureType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `TERMINATE_CLUSTER`
 - `TERMINATE_JOB_FLOW`
 
-## AdjustmentType
+## AdjustmentTypeType
 
 ```python
-from mypy_boto3_emr.literals import AdjustmentType
+from mypy_boto3_emr.literals import AdjustmentTypeType
 ```
 
 Values:
@@ -86,10 +86,10 @@ Values:
 - `EXACT_CAPACITY`
 - `PERCENT_CHANGE_IN_CAPACITY`
 
-## AuthMode
+## AuthModeType
 
 ```python
-from mypy_boto3_emr.literals import AuthMode
+from mypy_boto3_emr.literals import AuthModeType
 ```
 
 Values:
@@ -97,10 +97,22 @@ Values:
 - `IAM`
 - `SSO`
 
-## AutoScalingPolicyState
+## AutoScalingPolicyStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_emr.literals import AutoScalingPolicyState
+from mypy_boto3_emr.literals import AutoScalingPolicyStateChangeReasonCodeType
+```
+
+Values:
+
+- `CLEANUP_FAILURE`
+- `PROVISION_FAILURE`
+- `USER_REQUEST`
+
+## AutoScalingPolicyStateType
+
+```python
+from mypy_boto3_emr.literals import AutoScalingPolicyStateType
 ```
 
 Values:
@@ -112,22 +124,10 @@ Values:
 - `FAILED`
 - `PENDING`
 
-## AutoScalingPolicyStateChangeReasonCode
+## CancelStepsRequestStatusType
 
 ```python
-from mypy_boto3_emr.literals import AutoScalingPolicyStateChangeReasonCode
-```
-
-Values:
-
-- `CLEANUP_FAILURE`
-- `PROVISION_FAILURE`
-- `USER_REQUEST`
-
-## CancelStepsRequestStatus
-
-```python
-from mypy_boto3_emr.literals import CancelStepsRequestStatus
+from mypy_boto3_emr.literals import CancelStepsRequestStatusType
 ```
 
 Values:
@@ -145,26 +145,10 @@ Values:
 
 - `cluster_running`
 
-## ClusterState
+## ClusterStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_emr.literals import ClusterState
-```
-
-Values:
-
-- `BOOTSTRAPPING`
-- `RUNNING`
-- `STARTING`
-- `TERMINATED`
-- `TERMINATED_WITH_ERRORS`
-- `TERMINATING`
-- `WAITING`
-
-## ClusterStateChangeReasonCode
-
-```python
-from mypy_boto3_emr.literals import ClusterStateChangeReasonCode
+from mypy_boto3_emr.literals import ClusterStateChangeReasonCodeType
 ```
 
 Values:
@@ -178,6 +162,22 @@ Values:
 - `USER_REQUEST`
 - `VALIDATION_ERROR`
 
+## ClusterStateType
+
+```python
+from mypy_boto3_emr.literals import ClusterStateType
+```
+
+Values:
+
+- `BOOTSTRAPPING`
+- `RUNNING`
+- `STARTING`
+- `TERMINATED`
+- `TERMINATED_WITH_ERRORS`
+- `TERMINATING`
+- `WAITING`
+
 ## ClusterTerminatedWaiterName
 
 ```python
@@ -188,10 +188,10 @@ Values:
 
 - `cluster_terminated`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_emr.literals import ComparisonOperator
+from mypy_boto3_emr.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -201,10 +201,10 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_OR_EQUAL`
 
-## ComputeLimitsUnitType
+## ComputeLimitsUnitTypeType
 
 ```python
-from mypy_boto3_emr.literals import ComputeLimitsUnitType
+from mypy_boto3_emr.literals import ComputeLimitsUnitTypeType
 ```
 
 Values:
@@ -213,20 +213,20 @@ Values:
 - `Instances`
 - `VCPU`
 
-## ExecutionEngineType
+## ExecutionEngineTypeType
 
 ```python
-from mypy_boto3_emr.literals import ExecutionEngineType
+from mypy_boto3_emr.literals import ExecutionEngineTypeType
 ```
 
 Values:
 
 - `EMR`
 
-## IdentityType
+## IdentityTypeType
 
 ```python
-from mypy_boto3_emr.literals import IdentityType
+from mypy_boto3_emr.literals import IdentityTypeType
 ```
 
 Values:
@@ -234,10 +234,10 @@ Values:
 - `GROUP`
 - `USER`
 
-## InstanceCollectionType
+## InstanceCollectionTypeType
 
 ```python
-from mypy_boto3_emr.literals import InstanceCollectionType
+from mypy_boto3_emr.literals import InstanceCollectionTypeType
 ```
 
 Values:
@@ -245,10 +245,23 @@ Values:
 - `INSTANCE_FLEET`
 - `INSTANCE_GROUP`
 
-## InstanceFleetState
+## InstanceFleetStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_emr.literals import InstanceFleetState
+from mypy_boto3_emr.literals import InstanceFleetStateChangeReasonCodeType
+```
+
+Values:
+
+- `CLUSTER_TERMINATED`
+- `INSTANCE_FAILURE`
+- `INTERNAL_ERROR`
+- `VALIDATION_ERROR`
+
+## InstanceFleetStateType
+
+```python
+from mypy_boto3_emr.literals import InstanceFleetStateType
 ```
 
 Values:
@@ -261,10 +274,22 @@ Values:
 - `TERMINATED`
 - `TERMINATING`
 
-## InstanceFleetStateChangeReasonCode
+## InstanceFleetTypeType
 
 ```python
-from mypy_boto3_emr.literals import InstanceFleetStateChangeReasonCode
+from mypy_boto3_emr.literals import InstanceFleetTypeType
+```
+
+Values:
+
+- `CORE`
+- `MASTER`
+- `TASK`
+
+## InstanceGroupStateChangeReasonCodeType
+
+```python
+from mypy_boto3_emr.literals import InstanceGroupStateChangeReasonCodeType
 ```
 
 Values:
@@ -274,22 +299,10 @@ Values:
 - `INTERNAL_ERROR`
 - `VALIDATION_ERROR`
 
-## InstanceFleetType
+## InstanceGroupStateType
 
 ```python
-from mypy_boto3_emr.literals import InstanceFleetType
-```
-
-Values:
-
-- `CORE`
-- `MASTER`
-- `TASK`
-
-## InstanceGroupState
-
-```python
-from mypy_boto3_emr.literals import InstanceGroupState
+from mypy_boto3_emr.literals import InstanceGroupStateType
 ```
 
 Values:
@@ -306,23 +319,10 @@ Values:
 - `TERMINATED`
 - `TERMINATING`
 
-## InstanceGroupStateChangeReasonCode
+## InstanceGroupTypeType
 
 ```python
-from mypy_boto3_emr.literals import InstanceGroupStateChangeReasonCode
-```
-
-Values:
-
-- `CLUSTER_TERMINATED`
-- `INSTANCE_FAILURE`
-- `INTERNAL_ERROR`
-- `VALIDATION_ERROR`
-
-## InstanceGroupType
-
-```python
-from mypy_boto3_emr.literals import InstanceGroupType
+from mypy_boto3_emr.literals import InstanceGroupTypeType
 ```
 
 Values:
@@ -331,10 +331,10 @@ Values:
 - `MASTER`
 - `TASK`
 
-## InstanceRoleType
+## InstanceRoleTypeType
 
 ```python
-from mypy_boto3_emr.literals import InstanceRoleType
+from mypy_boto3_emr.literals import InstanceRoleTypeType
 ```
 
 Values:
@@ -343,24 +343,10 @@ Values:
 - `MASTER`
 - `TASK`
 
-## InstanceState
+## InstanceStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_emr.literals import InstanceState
-```
-
-Values:
-
-- `AWAITING_FULFILLMENT`
-- `BOOTSTRAPPING`
-- `PROVISIONING`
-- `RUNNING`
-- `TERMINATED`
-
-## InstanceStateChangeReasonCode
-
-```python
-from mypy_boto3_emr.literals import InstanceStateChangeReasonCode
+from mypy_boto3_emr.literals import InstanceStateChangeReasonCodeType
 ```
 
 Values:
@@ -371,10 +357,24 @@ Values:
 - `INTERNAL_ERROR`
 - `VALIDATION_ERROR`
 
-## JobFlowExecutionState
+## InstanceStateType
 
 ```python
-from mypy_boto3_emr.literals import JobFlowExecutionState
+from mypy_boto3_emr.literals import InstanceStateType
+```
+
+Values:
+
+- `AWAITING_FULFILLMENT`
+- `BOOTSTRAPPING`
+- `PROVISIONING`
+- `RUNNING`
+- `TERMINATED`
+
+## JobFlowExecutionStateType
+
+```python
+from mypy_boto3_emr.literals import JobFlowExecutionStateType
 ```
 
 Values:
@@ -488,10 +488,10 @@ Values:
 
 - `list_studios`
 
-## MarketType
+## MarketTypeType
 
 ```python
-from mypy_boto3_emr.literals import MarketType
+from mypy_boto3_emr.literals import MarketTypeType
 ```
 
 Values:
@@ -499,10 +499,10 @@ Values:
 - `ON_DEMAND`
 - `SPOT`
 
-## NotebookExecutionStatus
+## NotebookExecutionStatusType
 
 ```python
-from mypy_boto3_emr.literals import NotebookExecutionStatus
+from mypy_boto3_emr.literals import NotebookExecutionStatusType
 ```
 
 Values:
@@ -518,10 +518,10 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
-## OnDemandCapacityReservationPreference
+## OnDemandCapacityReservationPreferenceType
 
 ```python
-from mypy_boto3_emr.literals import OnDemandCapacityReservationPreference
+from mypy_boto3_emr.literals import OnDemandCapacityReservationPreferenceType
 ```
 
 Values:
@@ -529,30 +529,30 @@ Values:
 - `none`
 - `open`
 
-## OnDemandCapacityReservationUsageStrategy
+## OnDemandCapacityReservationUsageStrategyType
 
 ```python
-from mypy_boto3_emr.literals import OnDemandCapacityReservationUsageStrategy
+from mypy_boto3_emr.literals import OnDemandCapacityReservationUsageStrategyType
 ```
 
 Values:
 
 - `use-capacity-reservations-first`
 
-## OnDemandProvisioningAllocationStrategy
+## OnDemandProvisioningAllocationStrategyType
 
 ```python
-from mypy_boto3_emr.literals import OnDemandProvisioningAllocationStrategy
+from mypy_boto3_emr.literals import OnDemandProvisioningAllocationStrategyType
 ```
 
 Values:
 
 - `lowest-price`
 
-## PlacementGroupStrategy
+## PlacementGroupStrategyType
 
 ```python
-from mypy_boto3_emr.literals import PlacementGroupStrategy
+from mypy_boto3_emr.literals import PlacementGroupStrategyType
 ```
 
 Values:
@@ -562,10 +562,10 @@ Values:
 - `PARTITION`
 - `SPREAD`
 
-## RepoUpgradeOnBoot
+## RepoUpgradeOnBootType
 
 ```python
-from mypy_boto3_emr.literals import RepoUpgradeOnBoot
+from mypy_boto3_emr.literals import RepoUpgradeOnBootType
 ```
 
 Values:
@@ -573,10 +573,10 @@ Values:
 - `NONE`
 - `SECURITY`
 
-## ScaleDownBehavior
+## ScaleDownBehaviorType
 
 ```python
-from mypy_boto3_emr.literals import ScaleDownBehavior
+from mypy_boto3_emr.literals import ScaleDownBehaviorType
 ```
 
 Values:
@@ -584,20 +584,20 @@ Values:
 - `TERMINATE_AT_INSTANCE_HOUR`
 - `TERMINATE_AT_TASK_COMPLETION`
 
-## SpotProvisioningAllocationStrategy
+## SpotProvisioningAllocationStrategyType
 
 ```python
-from mypy_boto3_emr.literals import SpotProvisioningAllocationStrategy
+from mypy_boto3_emr.literals import SpotProvisioningAllocationStrategyType
 ```
 
 Values:
 
 - `capacity-optimized`
 
-## SpotProvisioningTimeoutAction
+## SpotProvisioningTimeoutActionType
 
 ```python
-from mypy_boto3_emr.literals import SpotProvisioningTimeoutAction
+from mypy_boto3_emr.literals import SpotProvisioningTimeoutActionType
 ```
 
 Values:
@@ -605,10 +605,10 @@ Values:
 - `SWITCH_TO_ON_DEMAND`
 - `TERMINATE_CLUSTER`
 
-## Statistic
+## StatisticType
 
 ```python
-from mypy_boto3_emr.literals import Statistic
+from mypy_boto3_emr.literals import StatisticType
 ```
 
 Values:
@@ -619,10 +619,10 @@ Values:
 - `SAMPLE_COUNT`
 - `SUM`
 
-## StepCancellationOption
+## StepCancellationOptionType
 
 ```python
-from mypy_boto3_emr.literals import StepCancellationOption
+from mypy_boto3_emr.literals import StepCancellationOptionType
 ```
 
 Values:
@@ -640,10 +640,10 @@ Values:
 
 - `step_complete`
 
-## StepExecutionState
+## StepExecutionStateType
 
 ```python
-from mypy_boto3_emr.literals import StepExecutionState
+from mypy_boto3_emr.literals import StepExecutionStateType
 ```
 
 Values:
@@ -656,10 +656,20 @@ Values:
 - `PENDING`
 - `RUNNING`
 
-## StepState
+## StepStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_emr.literals import StepState
+from mypy_boto3_emr.literals import StepStateChangeReasonCodeType
+```
+
+Values:
+
+- `NONE`
+
+## StepStateType
+
+```python
+from mypy_boto3_emr.literals import StepStateType
 ```
 
 Values:
@@ -672,20 +682,10 @@ Values:
 - `PENDING`
 - `RUNNING`
 
-## StepStateChangeReasonCode
+## UnitType
 
 ```python
-from mypy_boto3_emr.literals import StepStateChangeReasonCode
-```
-
-Values:
-
-- `NONE`
-
-## Unit
-
-```python
-from mypy_boto3_emr.literals import Unit
+from mypy_boto3_emr.literals import UnitType
 ```
 
 Values:

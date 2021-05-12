@@ -3,16 +3,16 @@
 > [Index](..) > [DataPipeline](.) > Literals
 
 Auto-generated documentation for
-[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
 [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [Literals for boto3 DataPipeline module](#literals-for-boto3-datapipeline-module)
   - [DescribeObjectsPaginatorName](#describeobjectspaginatorname)
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
-  - [OperatorType](#operatortype)
+  - [OperatorTypeType](#operatortypetype)
   - [QueryObjectsPaginatorName](#queryobjectspaginatorname)
-  - [TaskStatus](#taskstatus)
+  - [TaskStatusType](#taskstatustype)
 
 ## DescribeObjectsPaginatorName
 
@@ -34,10 +34,10 @@ Values:
 
 - `list_pipelines`
 
-## OperatorType
+## OperatorTypeType
 
 ```python
-from mypy_boto3_datapipeline.literals import OperatorType
+from mypy_boto3_datapipeline.literals import OperatorTypeType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 
 - `query_objects`
 
-## TaskStatus
+## TaskStatusType
 
 ```python
-from mypy_boto3_datapipeline.literals import TaskStatus
+from mypy_boto3_datapipeline.literals import TaskStatusType
 ```
 
 Values:

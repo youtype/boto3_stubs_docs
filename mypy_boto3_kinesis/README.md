@@ -3,7 +3,7 @@
 > [Index](..) > Kinesis
 
 Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
@@ -30,60 +30,60 @@ Can be used directly:
 from mypy_boto3_kinesis.client import KinesisClient
 ```
 
-KinesisClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags_to_stream](./client.md#add-tags-to-stream)
-- [can_paginate](./client.md#can-paginate)
-- [create_stream](./client.md#create-stream)
-- [decrease_stream_retention_period](./client.md#decrease-stream-retention-period)
-- [delete_stream](./client.md#delete-stream)
-- [deregister_stream_consumer](./client.md#deregister-stream-consumer)
-- [describe_limits](./client.md#describe-limits)
-- [describe_stream](./client.md#describe-stream)
-- [describe_stream_consumer](./client.md#describe-stream-consumer)
-- [describe_stream_summary](./client.md#describe-stream-summary)
-- [disable_enhanced_monitoring](./client.md#disable-enhanced-monitoring)
-- [enable_enhanced_monitoring](./client.md#enable-enhanced-monitoring)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_records](./client.md#get-records)
-- [get_shard_iterator](./client.md#get-shard-iterator)
-- [get_waiter](./client.md#get-waiter)
-- [increase_stream_retention_period](./client.md#increase-stream-retention-period)
-- [list_shards](./client.md#list-shards)
-- [list_stream_consumers](./client.md#list-stream-consumers)
-- [list_streams](./client.md#list-streams)
-- [list_tags_for_stream](./client.md#list-tags-for-stream)
-- [merge_shards](./client.md#merge-shards)
-- [put_record](./client.md#put-record)
-- [put_records](./client.md#put-records)
-- [register_stream_consumer](./client.md#register-stream-consumer)
-- [remove_tags_from_stream](./client.md#remove-tags-from-stream)
-- [split_shard](./client.md#split-shard)
-- [start_stream_encryption](./client.md#start-stream-encryption)
-- [stop_stream_encryption](./client.md#stop-stream-encryption)
-- [subscribe_to_shard](./client.md#subscribe-to-shard)
-- [update_shard_count](./client.md#update-shard-count)
+- [add_tags_to_stream](./client.md#add_tags_to_stream)
+- [can_paginate](./client.md#can_paginate)
+- [create_stream](./client.md#create_stream)
+- [decrease_stream_retention_period](./client.md#decrease_stream_retention_period)
+- [delete_stream](./client.md#delete_stream)
+- [deregister_stream_consumer](./client.md#deregister_stream_consumer)
+- [describe_limits](./client.md#describe_limits)
+- [describe_stream](./client.md#describe_stream)
+- [describe_stream_consumer](./client.md#describe_stream_consumer)
+- [describe_stream_summary](./client.md#describe_stream_summary)
+- [disable_enhanced_monitoring](./client.md#disable_enhanced_monitoring)
+- [enable_enhanced_monitoring](./client.md#enable_enhanced_monitoring)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_records](./client.md#get_records)
+- [get_shard_iterator](./client.md#get_shard_iterator)
+- [get_waiter](./client.md#get_waiter)
+- [increase_stream_retention_period](./client.md#increase_stream_retention_period)
+- [list_shards](./client.md#list_shards)
+- [list_stream_consumers](./client.md#list_stream_consumers)
+- [list_streams](./client.md#list_streams)
+- [list_tags_for_stream](./client.md#list_tags_for_stream)
+- [merge_shards](./client.md#merge_shards)
+- [put_record](./client.md#put_record)
+- [put_records](./client.md#put_records)
+- [register_stream_consumer](./client.md#register_stream_consumer)
+- [remove_tags_from_stream](./client.md#remove_tags_from_stream)
+- [split_shard](./client.md#split_shard)
+- [start_stream_encryption](./client.md#start_stream_encryption)
+- [stop_stream_encryption](./client.md#stop_stream_encryption)
+- [subscribe_to_shard](./client.md#subscribe_to_shard)
+- [update_shard_count](./client.md#update_shard_count)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ExpiredIteratorException](./client.md#expirediteratorexception)
-- [ExpiredNextTokenException](./client.md#expirednexttokenexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [KMSAccessDeniedException](./client.md#kmsaccessdeniedexception)
-- [KMSDisabledException](./client.md#kmsdisabledexception)
-- [KMSInvalidStateException](./client.md#kmsinvalidstateexception)
-- [KMSNotFoundException](./client.md#kmsnotfoundexception)
-- [KMSOptInRequired](./client.md#kmsoptinrequired)
-- [KMSThrottlingException](./client.md#kmsthrottlingexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ProvisionedThroughputExceededException](./client.md#provisionedthroughputexceededexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+KinesisClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ExpiredIteratorException
+- ExpiredNextTokenException
+- InternalFailureException
+- InvalidArgumentException
+- KMSAccessDeniedException
+- KMSDisabledException
+- KMSInvalidStateException
+- KMSNotFoundException
+- KMSOptInRequired
+- KMSThrottlingException
+- LimitExceededException
+- ProvisionedThroughputExceededException
+- ResourceInUseException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -122,22 +122,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.literals import ConsumerStatus, ...
+from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
 ```
 
-- [ConsumerStatus](./literals.md#consumerstatus)
+- [ConsumerStatusType](./literals.md#consumerstatustype)
 - [DescribeStreamPaginatorName](./literals.md#describestreampaginatorname)
-- [EncryptionType](./literals.md#encryptiontype)
+- [EncryptionTypeType](./literals.md#encryptiontypetype)
 - [ListShardsPaginatorName](./literals.md#listshardspaginatorname)
 - [ListStreamConsumersPaginatorName](./literals.md#liststreamconsumerspaginatorname)
 - [ListStreamsPaginatorName](./literals.md#liststreamspaginatorname)
-- [MetricsName](./literals.md#metricsname)
-- [ScalingType](./literals.md#scalingtype)
-- [ShardFilterType](./literals.md#shardfiltertype)
-- [ShardIteratorType](./literals.md#sharditeratortype)
+- [MetricsNameType](./literals.md#metricsnametype)
+- [ScalingTypeType](./literals.md#scalingtypetype)
+- [ShardFilterTypeType](./literals.md#shardfiltertypetype)
+- [ShardIteratorTypeType](./literals.md#sharditeratortypetype)
 - [StreamExistsWaiterName](./literals.md#streamexistswaitername)
 - [StreamNotExistsWaiterName](./literals.md#streamnotexistswaitername)
-- [StreamStatus](./literals.md#streamstatus)
+- [StreamStatusType](./literals.md#streamstatustype)
 
 ## Typed dictionaries
 

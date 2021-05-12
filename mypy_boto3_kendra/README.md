@@ -3,7 +3,7 @@
 > [Index](..) > Kendra
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
@@ -28,55 +28,55 @@ Can be used directly:
 from mypy_boto3_kendra.client import KendraClient
 ```
 
-KendraClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_delete_document](./client.md#batch-delete-document)
-- [batch_put_document](./client.md#batch-put-document)
-- [can_paginate](./client.md#can-paginate)
-- [create_data_source](./client.md#create-data-source)
-- [create_faq](./client.md#create-faq)
-- [create_index](./client.md#create-index)
-- [create_thesaurus](./client.md#create-thesaurus)
-- [delete_data_source](./client.md#delete-data-source)
-- [delete_faq](./client.md#delete-faq)
-- [delete_index](./client.md#delete-index)
-- [delete_thesaurus](./client.md#delete-thesaurus)
-- [describe_data_source](./client.md#describe-data-source)
-- [describe_faq](./client.md#describe-faq)
-- [describe_index](./client.md#describe-index)
-- [describe_thesaurus](./client.md#describe-thesaurus)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_data_source_sync_jobs](./client.md#list-data-source-sync-jobs)
-- [list_data_sources](./client.md#list-data-sources)
-- [list_faqs](./client.md#list-faqs)
-- [list_indices](./client.md#list-indices)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_thesauri](./client.md#list-thesauri)
+- [batch_delete_document](./client.md#batch_delete_document)
+- [batch_put_document](./client.md#batch_put_document)
+- [can_paginate](./client.md#can_paginate)
+- [create_data_source](./client.md#create_data_source)
+- [create_faq](./client.md#create_faq)
+- [create_index](./client.md#create_index)
+- [create_thesaurus](./client.md#create_thesaurus)
+- [delete_data_source](./client.md#delete_data_source)
+- [delete_faq](./client.md#delete_faq)
+- [delete_index](./client.md#delete_index)
+- [delete_thesaurus](./client.md#delete_thesaurus)
+- [describe_data_source](./client.md#describe_data_source)
+- [describe_faq](./client.md#describe_faq)
+- [describe_index](./client.md#describe_index)
+- [describe_thesaurus](./client.md#describe_thesaurus)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_data_source_sync_jobs](./client.md#list_data_source_sync_jobs)
+- [list_data_sources](./client.md#list_data_sources)
+- [list_faqs](./client.md#list_faqs)
+- [list_indices](./client.md#list_indices)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_thesauri](./client.md#list_thesauri)
 - [query](./client.md#query)
-- [start_data_source_sync_job](./client.md#start-data-source-sync-job)
-- [stop_data_source_sync_job](./client.md#stop-data-source-sync-job)
-- [submit_feedback](./client.md#submit-feedback)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_data_source](./client.md#update-data-source)
-- [update_index](./client.md#update-index)
-- [update_thesaurus](./client.md#update-thesaurus)
+- [start_data_source_sync_job](./client.md#start_data_source_sync_job)
+- [stop_data_source_sync_job](./client.md#stop_data_source_sync_job)
+- [submit_feedback](./client.md#submit_feedback)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_data_source](./client.md#update_data_source)
+- [update_index](./client.md#update_index)
+- [update_thesaurus](./client.md#update_thesaurus)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceAlreadyExistException](./client.md#resourcealreadyexistexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceUnavailableException](./client.md#resourceunavailableexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+KendraClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceAlreadyExistException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceUnavailableException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -85,44 +85,44 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kendra.literals import AdditionalResultAttributeValueType, ...
+from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, ...
 ```
 
-- [AdditionalResultAttributeValueType](./literals.md#additionalresultattributevaluetype)
-- [ConfluenceAttachmentFieldName](./literals.md#confluenceattachmentfieldname)
-- [ConfluenceBlogFieldName](./literals.md#confluenceblogfieldname)
-- [ConfluencePageFieldName](./literals.md#confluencepagefieldname)
-- [ConfluenceSpaceFieldName](./literals.md#confluencespacefieldname)
-- [ConfluenceVersion](./literals.md#confluenceversion)
-- [ContentType](./literals.md#contenttype)
-- [DataSourceStatus](./literals.md#datasourcestatus)
-- [DataSourceSyncJobStatus](./literals.md#datasourcesyncjobstatus)
-- [DataSourceType](./literals.md#datasourcetype)
-- [DatabaseEngineType](./literals.md#databaseenginetype)
-- [DocumentAttributeValueType](./literals.md#documentattributevaluetype)
-- [ErrorCode](./literals.md#errorcode)
-- [FaqFileFormat](./literals.md#faqfileformat)
-- [FaqStatus](./literals.md#faqstatus)
-- [HighlightType](./literals.md#highlighttype)
-- [IndexEdition](./literals.md#indexedition)
-- [IndexStatus](./literals.md#indexstatus)
-- [KeyLocation](./literals.md#keylocation)
-- [Order](./literals.md#order)
-- [PrincipalType](./literals.md#principaltype)
-- [QueryIdentifiersEnclosingOption](./literals.md#queryidentifiersenclosingoption)
-- [QueryResultType](./literals.md#queryresulttype)
-- [ReadAccessType](./literals.md#readaccesstype)
-- [RelevanceType](./literals.md#relevancetype)
-- [SalesforceChatterFeedIncludeFilterType](./literals.md#salesforcechatterfeedincludefiltertype)
-- [SalesforceKnowledgeArticleState](./literals.md#salesforceknowledgearticlestate)
-- [SalesforceStandardObjectName](./literals.md#salesforcestandardobjectname)
-- [ScoreConfidence](./literals.md#scoreconfidence)
-- [ServiceNowAuthenticationType](./literals.md#servicenowauthenticationtype)
-- [ServiceNowBuildVersionType](./literals.md#servicenowbuildversiontype)
-- [SharePointVersion](./literals.md#sharepointversion)
-- [SortOrder](./literals.md#sortorder)
-- [ThesaurusStatus](./literals.md#thesaurusstatus)
-- [UserContextPolicy](./literals.md#usercontextpolicy)
+- [AdditionalResultAttributeValueTypeType](./literals.md#additionalresultattributevaluetypetype)
+- [ConfluenceAttachmentFieldNameType](./literals.md#confluenceattachmentfieldnametype)
+- [ConfluenceBlogFieldNameType](./literals.md#confluenceblogfieldnametype)
+- [ConfluencePageFieldNameType](./literals.md#confluencepagefieldnametype)
+- [ConfluenceSpaceFieldNameType](./literals.md#confluencespacefieldnametype)
+- [ConfluenceVersionType](./literals.md#confluenceversiontype)
+- [ContentTypeType](./literals.md#contenttypetype)
+- [DataSourceStatusType](./literals.md#datasourcestatustype)
+- [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
+- [DataSourceTypeType](./literals.md#datasourcetypetype)
+- [DatabaseEngineTypeType](./literals.md#databaseenginetypetype)
+- [DocumentAttributeValueTypeType](./literals.md#documentattributevaluetypetype)
+- [ErrorCodeType](./literals.md#errorcodetype)
+- [FaqFileFormatType](./literals.md#faqfileformattype)
+- [FaqStatusType](./literals.md#faqstatustype)
+- [HighlightTypeType](./literals.md#highlighttypetype)
+- [IndexEditionType](./literals.md#indexeditiontype)
+- [IndexStatusType](./literals.md#indexstatustype)
+- [KeyLocationType](./literals.md#keylocationtype)
+- [OrderType](./literals.md#ordertype)
+- [PrincipalTypeType](./literals.md#principaltypetype)
+- [QueryIdentifiersEnclosingOptionType](./literals.md#queryidentifiersenclosingoptiontype)
+- [QueryResultTypeType](./literals.md#queryresulttypetype)
+- [ReadAccessTypeType](./literals.md#readaccesstypetype)
+- [RelevanceTypeType](./literals.md#relevancetypetype)
+- [SalesforceChatterFeedIncludeFilterTypeType](./literals.md#salesforcechatterfeedincludefiltertypetype)
+- [SalesforceKnowledgeArticleStateType](./literals.md#salesforceknowledgearticlestatetype)
+- [SalesforceStandardObjectNameType](./literals.md#salesforcestandardobjectnametype)
+- [ScoreConfidenceType](./literals.md#scoreconfidencetype)
+- [ServiceNowAuthenticationTypeType](./literals.md#servicenowauthenticationtypetype)
+- [ServiceNowBuildVersionTypeType](./literals.md#servicenowbuildversiontypetype)
+- [SharePointVersionType](./literals.md#sharepointversiontype)
+- [SortOrderType](./literals.md#sortordertype)
+- [ThesaurusStatusType](./literals.md#thesaurusstatustype)
+- [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
 ## Typed dictionaries
 

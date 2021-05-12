@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceCatalog](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
 [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
@@ -138,7 +138,7 @@ from mypy_boto3_servicecatalog.type_defs import AccessLevelFilterTypeDef
 
 Optional fields:
 
-- `Key`: [AccessLevelFilterKey](./literals.md#accesslevelfilterkey)
+- `Key`: [AccessLevelFilterKeyType](./literals.md#accesslevelfilterkeytype)
 - `Value`: `str`
 
 ## BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
@@ -236,7 +236,7 @@ Required fields:
 - `ConstraintDetail`:
   [ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef)
 - `ConstraintParameters`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -309,7 +309,7 @@ Required fields:
 - `ProvisioningArtifactDetail`:
   [ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef)
 - `Info`: `Dict`\[`str`, `str`\]
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -362,7 +362,7 @@ Required fields:
 - `ConstraintDetail`:
   [ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef)
 - `ConstraintParameters`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -374,7 +374,8 @@ from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputT
 
 Required fields:
 
-- `CopyProductStatus`: [CopyProductStatus](./literals.md#copyproductstatus)
+- `CopyProductStatus`:
+  [CopyProductStatusType](./literals.md#copyproductstatustype)
 - `TargetProductId`: `str`
 - `StatusDetail`: `str`
 - `ResponseMetadata`:
@@ -393,7 +394,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TagOptions`:
   `List`\[[TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef)\]
-- `Budgets`: `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -408,7 +410,7 @@ Required fields:
 - `PortfolioShareToken`: `str`
 - `PortfolioId`: `str`
 - `OrganizationNodeValue`: `str`
-- `Status`: [ShareStatus](./literals.md#sharestatus)
+- `Status`: [ShareStatusType](./literals.md#sharestatustype)
 - `ShareDetails`: [ShareDetailsTypeDef](./type_defs.md#sharedetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -442,7 +444,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TagOptions`:
   `List`\[[TagOptionDetailTypeDef](./type_defs.md#tagoptiondetailtypedef)\]
-- `Budgets`: `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -458,8 +461,10 @@ Required fields:
   [ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef)
 - `ProvisioningArtifacts`:
   `List`\[[ProvisioningArtifactTypeDef](./type_defs.md#provisioningartifacttypedef)\]
-- `Budgets`: `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
-- `LaunchPaths`: `List`\[[LaunchPathTypeDef](./type_defs.md#launchpathtypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
+- `LaunchPaths`:
+  `List`\[[LaunchPathTypeDef](./type_defs.md#launchpathtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -520,7 +525,7 @@ Required fields:
 - `ProvisioningArtifactDetail`:
   [ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef)
 - `Info`: `Dict`\[`str`, `str`\]
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -649,7 +654,7 @@ Optional fields:
 - `ProductId`: `str`
 - `ProvisioningArtifactId`: `str`
 - `ErrorCode`:
-  [ServiceActionAssociationErrorCode](./literals.md#serviceactionassociationerrorcode)
+  [ServiceActionAssociationErrorCodeType](./literals.md#serviceactionassociationerrorcodetype)
 - `ErrorMessage`: `str`
 
 ## GetAWSOrganizationsAccessStatusOutputTypeDef
@@ -660,7 +665,7 @@ from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusO
 
 Required fields:
 
-- `AccessStatus`: [AccessStatus](./literals.md#accessstatus)
+- `AccessStatus`: [AccessStatusType](./literals.md#accessstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -672,7 +677,8 @@ from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutp
 
 Required fields:
 
-- `Outputs`: `List`\[[RecordOutputTypeDef](./type_defs.md#recordoutputtypedef)\]
+- `Outputs`:
+  `List`\[[RecordOutputTypeDef](./type_defs.md#recordoutputtypedef)\]
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -736,7 +742,8 @@ from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputType
 
 Required fields:
 
-- `Budgets`: `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
+- `Budgets`:
+  `List`\[[BudgetDetailTypeDef](./type_defs.md#budgetdetailtypedef)\]
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -994,7 +1001,7 @@ from mypy_boto3_servicecatalog.type_defs import OrganizationNodeTypeDef
 
 Optional fields:
 
-- `Type`: [OrganizationNodeType](./literals.md#organizationnodetype)
+- `Type`: [OrganizationNodeTypeType](./literals.md#organizationnodetypetype)
 - `Value`: `str`
 
 ## PaginatorConfigTypeDef
@@ -1049,7 +1056,8 @@ from mypy_boto3_servicecatalog.type_defs import PortfolioShareDetailTypeDef
 Optional fields:
 
 - `PrincipalId`: `str`
-- `Type`: [DescribePortfolioShareType](./literals.md#describeportfoliosharetype)
+- `Type`:
+  [DescribePortfolioShareTypeType](./literals.md#describeportfoliosharetypetype)
 - `Accepted`: `bool`
 - `ShareTagOptions`: `bool`
 
@@ -1063,7 +1071,7 @@ Optional fields:
 
 - `PrincipalARN`: `str`
 - `PrincipalType`: `Literal['IAM']` (see
-  [PrincipalType](./literals.md#principaltype))
+  [PrincipalTypeType](./literals.md#principaltypetype))
 
 ## ProductViewAggregationValueTypeDef
 
@@ -1086,7 +1094,7 @@ Optional fields:
 
 - `ProductViewSummary`:
   [ProductViewSummaryTypeDef](./type_defs.md#productviewsummarytypedef)
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ProductARN`: `str`
 - `CreatedTime`: `datetime`
 
@@ -1103,7 +1111,7 @@ Optional fields:
 - `Name`: `str`
 - `Owner`: `str`
 - `ShortDescription`: `str`
-- `Type`: [ProductType](./literals.md#producttype)
+- `Type`: [ProductTypeType](./literals.md#producttypetype)
 - `Distributor`: `str`
 - `HasDefaultPath`: `bool`
 - `SupportEmail`: `str`
@@ -1134,7 +1142,8 @@ Optional fields:
 - `Arn`: `str`
 - `Type`: `str`
 - `Id`: `str`
-- `Status`: [ProvisionedProductStatus](./literals.md#provisionedproductstatus)
+- `Status`:
+  [ProvisionedProductStatusType](./literals.md#provisionedproductstatustype)
 - `StatusMessage`: `str`
 - `CreatedTime`: `datetime`
 - `IdempotencyToken`: `str`
@@ -1162,7 +1171,8 @@ Optional fields:
 - `Arn`: `str`
 - `Type`: `str`
 - `Id`: `str`
-- `Status`: [ProvisionedProductStatus](./literals.md#provisionedproductstatus)
+- `Status`:
+  [ProvisionedProductStatusType](./literals.md#provisionedproductstatustype)
 - `StatusMessage`: `str`
 - `CreatedTime`: `datetime`
 - `IdempotencyToken`: `str`
@@ -1189,10 +1199,10 @@ Optional fields:
 - `ProvisionProductId`: `str`
 - `ProvisionProductName`: `str`
 - `PlanType`: `Literal['CLOUDFORMATION']` (see
-  [ProvisionedProductPlanType](./literals.md#provisionedproductplantype))
+  [ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype))
 - `ProvisioningArtifactId`: `str`
 - `Status`:
-  [ProvisionedProductPlanStatus](./literals.md#provisionedproductplanstatus)
+  [ProvisionedProductPlanStatusType](./literals.md#provisionedproductplanstatustype)
 - `UpdatedTime`: `datetime`
 - `NotificationArns`: `List`\[`str`\]
 - `ProvisioningParameters`:
@@ -1213,7 +1223,7 @@ Optional fields:
 - `ProvisionProductId`: `str`
 - `ProvisionProductName`: `str`
 - `PlanType`: `Literal['CLOUDFORMATION']` (see
-  [ProvisionedProductPlanType](./literals.md#provisionedproductplantype))
+  [ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype))
 - `ProvisioningArtifactId`: `str`
 
 ## ProvisioningArtifactDetailTypeDef
@@ -1227,11 +1237,12 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Type`: [ProvisioningArtifactType](./literals.md#provisioningartifacttype)
+- `Type`:
+  [ProvisioningArtifactTypeType](./literals.md#provisioningartifacttypetype)
 - `CreatedTime`: `datetime`
 - `Active`: `bool`
 - `Guidance`:
-  [ProvisioningArtifactGuidance](./literals.md#provisioningartifactguidance)
+  [ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype)
 
 ## ProvisioningArtifactOutputTypeDef
 
@@ -1287,7 +1298,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `Type`: [ProvisioningArtifactType](./literals.md#provisioningartifacttype)
+- `Type`:
+  [ProvisioningArtifactTypeType](./literals.md#provisioningartifacttypetype)
 - `DisableTemplateValidation`: `bool`
 
 ## ProvisioningArtifactSummaryTypeDef
@@ -1317,7 +1329,7 @@ Optional fields:
 - `Description`: `str`
 - `CreatedTime`: `datetime`
 - `Guidance`:
-  [ProvisioningArtifactGuidance](./literals.md#provisioningartifactguidance)
+  [ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype)
 
 ## ProvisioningArtifactViewTypeDef
 
@@ -1368,7 +1380,7 @@ Optional fields:
 
 - `RecordId`: `str`
 - `ProvisionedProductName`: `str`
-- `Status`: [RecordStatus](./literals.md#recordstatus)
+- `Status`: [RecordStatusType](./literals.md#recordstatustype)
 - `CreatedTime`: `datetime`
 - `UpdatedTime`: `datetime`
 - `ProvisionedProductType`: `str`
@@ -1428,7 +1440,7 @@ Optional fields:
 
 - `Target`:
   [ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef)
-- `Evaluation`: [EvaluationType](./literals.md#evaluationtype)
+- `Evaluation`: [EvaluationTypeType](./literals.md#evaluationtypetype)
 - `CausingEntity`: `str`
 
 ## ResourceChangeTypeDef
@@ -1439,12 +1451,13 @@ from mypy_boto3_servicecatalog.type_defs import ResourceChangeTypeDef
 
 Optional fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `LogicalResourceId`: `str`
 - `PhysicalResourceId`: `str`
 - `ResourceType`: `str`
-- `Replacement`: [Replacement](./literals.md#replacement)
-- `Scope`: `List`\[[ResourceAttribute](./literals.md#resourceattribute)\]
+- `Replacement`: [ReplacementType](./literals.md#replacementtype)
+- `Scope`:
+  `List`\[[ResourceAttributeType](./literals.md#resourceattributetype)\]
 - `Details`:
   `List`\[[ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef)\]
 
@@ -1470,9 +1483,10 @@ from mypy_boto3_servicecatalog.type_defs import ResourceTargetDefinitionTypeDef
 
 Optional fields:
 
-- `Attribute`: [ResourceAttribute](./literals.md#resourceattribute)
+- `Attribute`: [ResourceAttributeType](./literals.md#resourceattributetype)
 - `Name`: `str`
-- `RequiresRecreation`: [RequiresRecreation](./literals.md#requiresrecreation)
+- `RequiresRecreation`:
+  [RequiresRecreationType](./literals.md#requiresrecreationtype)
 
 ## ResponseMetadataTypeDef
 
@@ -1570,7 +1584,7 @@ Optional fields:
 - `ServiceActionSummary`:
   [ServiceActionSummaryTypeDef](./type_defs.md#serviceactionsummarytypedef)
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKey](./literals.md#serviceactiondefinitionkey),
+  `Dict`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
   `str`\]
 
 ## ServiceActionSummaryTypeDef
@@ -1585,7 +1599,7 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `DefinitionType`: `Literal['SSM_AUTOMATION']` (see
-  [ServiceActionDefinitionType](./literals.md#serviceactiondefinitiontype))
+  [ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype))
 
 ## ShareDetailsTypeDef
 
@@ -1596,7 +1610,8 @@ from mypy_boto3_servicecatalog.type_defs import ShareDetailsTypeDef
 Optional fields:
 
 - `SuccessfulShares`: `List`\[`str`\]
-- `ShareErrors`: `List`\[[ShareErrorTypeDef](./type_defs.md#shareerrortypedef)\]
+- `ShareErrors`:
+  `List`\[[ShareErrorTypeDef](./type_defs.md#shareerrortypedef)\]
 
 ## ShareErrorTypeDef
 
@@ -1620,7 +1635,8 @@ Optional fields:
 
 - `Account`: `str`
 - `Region`: `str`
-- `StackInstanceStatus`: [StackInstanceStatus](./literals.md#stackinstancestatus)
+- `StackInstanceStatus`:
+  [StackInstanceStatusType](./literals.md#stackinstancestatustype)
 
 ## TagOptionDetailTypeDef
 
@@ -1681,7 +1697,7 @@ Required fields:
 - `ConstraintDetail`:
   [ConstraintDetailTypeDef](./type_defs.md#constraintdetailtypedef)
 - `ConstraintParameters`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1708,7 +1724,7 @@ from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputTypeDe
 Required fields:
 
 - `PortfolioShareToken`: `str`
-- `Status`: [ShareStatus](./literals.md#sharestatus)
+- `Status`: [ShareStatusType](./literals.md#sharestatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1748,9 +1764,9 @@ Required fields:
 
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductProperties`:
-  `Dict`\[[PropertyKey](./literals.md#propertykey), `str`\]
+  `Dict`\[[PropertyKeyType](./literals.md#propertykeytype), `str`\]
 - `RecordId`: `str`
-- `Status`: [RecordStatus](./literals.md#recordstatus)
+- `Status`: [RecordStatusType](./literals.md#recordstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1765,7 +1781,7 @@ Required fields:
 - `ProvisioningArtifactDetail`:
   [ProvisioningArtifactDetailTypeDef](./type_defs.md#provisioningartifactdetailtypedef)
 - `Info`: `Dict`\[`str`, `str`\]
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1796,7 +1812,7 @@ Optional fields:
 - `StackSetMaxConcurrencyCount`: `int`
 - `StackSetMaxConcurrencyPercentage`: `int`
 - `StackSetOperationType`:
-  [StackSetOperationType](./literals.md#stacksetoperationtype)
+  [StackSetOperationTypeType](./literals.md#stacksetoperationtypetype)
 
 ## UpdateServiceActionOutputTypeDef
 

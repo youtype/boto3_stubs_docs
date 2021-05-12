@@ -3,7 +3,7 @@
 > [Index](..) > AppSync
 
 Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appsync.html#AppSync)
 type annotations stubs module
 [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
@@ -29,69 +29,69 @@ Can be used directly:
 from mypy_boto3_appsync.client import AppSyncClient
 ```
 
-AppSyncClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_api_cache](./client.md#create-api-cache)
-- [create_api_key](./client.md#create-api-key)
-- [create_data_source](./client.md#create-data-source)
-- [create_function](./client.md#create-function)
-- [create_graphql_api](./client.md#create-graphql-api)
-- [create_resolver](./client.md#create-resolver)
-- [create_type](./client.md#create-type)
-- [delete_api_cache](./client.md#delete-api-cache)
-- [delete_api_key](./client.md#delete-api-key)
-- [delete_data_source](./client.md#delete-data-source)
-- [delete_function](./client.md#delete-function)
-- [delete_graphql_api](./client.md#delete-graphql-api)
-- [delete_resolver](./client.md#delete-resolver)
-- [delete_type](./client.md#delete-type)
-- [flush_api_cache](./client.md#flush-api-cache)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_api_cache](./client.md#get-api-cache)
-- [get_data_source](./client.md#get-data-source)
-- [get_function](./client.md#get-function)
-- [get_graphql_api](./client.md#get-graphql-api)
-- [get_introspection_schema](./client.md#get-introspection-schema)
-- [get_paginator](./client.md#get-paginator)
-- [get_resolver](./client.md#get-resolver)
-- [get_schema_creation_status](./client.md#get-schema-creation-status)
-- [get_type](./client.md#get-type)
-- [list_api_keys](./client.md#list-api-keys)
-- [list_data_sources](./client.md#list-data-sources)
-- [list_functions](./client.md#list-functions)
-- [list_graphql_apis](./client.md#list-graphql-apis)
-- [list_resolvers](./client.md#list-resolvers)
-- [list_resolvers_by_function](./client.md#list-resolvers-by-function)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_types](./client.md#list-types)
-- [start_schema_creation](./client.md#start-schema-creation)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_api_cache](./client.md#update-api-cache)
-- [update_api_key](./client.md#update-api-key)
-- [update_data_source](./client.md#update-data-source)
-- [update_function](./client.md#update-function)
-- [update_graphql_api](./client.md#update-graphql-api)
-- [update_resolver](./client.md#update-resolver)
-- [update_type](./client.md#update-type)
+- [can_paginate](./client.md#can_paginate)
+- [create_api_cache](./client.md#create_api_cache)
+- [create_api_key](./client.md#create_api_key)
+- [create_data_source](./client.md#create_data_source)
+- [create_function](./client.md#create_function)
+- [create_graphql_api](./client.md#create_graphql_api)
+- [create_resolver](./client.md#create_resolver)
+- [create_type](./client.md#create_type)
+- [delete_api_cache](./client.md#delete_api_cache)
+- [delete_api_key](./client.md#delete_api_key)
+- [delete_data_source](./client.md#delete_data_source)
+- [delete_function](./client.md#delete_function)
+- [delete_graphql_api](./client.md#delete_graphql_api)
+- [delete_resolver](./client.md#delete_resolver)
+- [delete_type](./client.md#delete_type)
+- [flush_api_cache](./client.md#flush_api_cache)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_api_cache](./client.md#get_api_cache)
+- [get_data_source](./client.md#get_data_source)
+- [get_function](./client.md#get_function)
+- [get_graphql_api](./client.md#get_graphql_api)
+- [get_introspection_schema](./client.md#get_introspection_schema)
+- [get_paginator](./client.md#get_paginator)
+- [get_resolver](./client.md#get_resolver)
+- [get_schema_creation_status](./client.md#get_schema_creation_status)
+- [get_type](./client.md#get_type)
+- [list_api_keys](./client.md#list_api_keys)
+- [list_data_sources](./client.md#list_data_sources)
+- [list_functions](./client.md#list_functions)
+- [list_graphql_apis](./client.md#list_graphql_apis)
+- [list_resolvers](./client.md#list_resolvers)
+- [list_resolvers_by_function](./client.md#list_resolvers_by_function)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_types](./client.md#list_types)
+- [start_schema_creation](./client.md#start_schema_creation)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_api_cache](./client.md#update_api_cache)
+- [update_api_key](./client.md#update_api_key)
+- [update_data_source](./client.md#update_data_source)
+- [update_function](./client.md#update_function)
+- [update_graphql_api](./client.md#update_graphql_api)
+- [update_resolver](./client.md#update_resolver)
+- [update_type](./client.md#update_type)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ApiKeyLimitExceededException](./client.md#apikeylimitexceededexception)
-- [ApiKeyValidityOutOfBoundsException](./client.md#apikeyvalidityoutofboundsexception)
-- [ApiLimitExceededException](./client.md#apilimitexceededexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [GraphQLSchemaException](./client.md#graphqlschemaexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+AppSyncClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ApiKeyLimitExceededException
+- ApiKeyValidityOutOfBoundsException
+- ApiLimitExceededException
+- BadRequestException
+- ClientError
+- ConcurrentModificationException
+- GraphQLSchemaException
+- InternalFailureException
+- LimitExceededException
+- NotFoundException
+- UnauthorizedException
 
 ## Paginators
 
@@ -119,19 +119,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appsync.literals import ApiCacheStatus, ...
+from mypy_boto3_appsync.literals import ApiCacheStatusType, ...
 ```
 
-- [ApiCacheStatus](./literals.md#apicachestatus)
-- [ApiCacheType](./literals.md#apicachetype)
-- [ApiCachingBehavior](./literals.md#apicachingbehavior)
-- [AuthenticationType](./literals.md#authenticationtype)
-- [AuthorizationType](./literals.md#authorizationtype)
-- [ConflictDetectionType](./literals.md#conflictdetectiontype)
-- [ConflictHandlerType](./literals.md#conflicthandlertype)
-- [DataSourceType](./literals.md#datasourcetype)
-- [DefaultAction](./literals.md#defaultaction)
-- [FieldLogLevel](./literals.md#fieldloglevel)
+- [ApiCacheStatusType](./literals.md#apicachestatustype)
+- [ApiCacheTypeType](./literals.md#apicachetypetype)
+- [ApiCachingBehaviorType](./literals.md#apicachingbehaviortype)
+- [AuthenticationTypeType](./literals.md#authenticationtypetype)
+- [AuthorizationTypeType](./literals.md#authorizationtypetype)
+- [ConflictDetectionTypeType](./literals.md#conflictdetectiontypetype)
+- [ConflictHandlerTypeType](./literals.md#conflicthandlertypetype)
+- [DataSourceTypeType](./literals.md#datasourcetypetype)
+- [DefaultActionType](./literals.md#defaultactiontype)
+- [FieldLogLevelType](./literals.md#fieldlogleveltype)
 - [ListApiKeysPaginatorName](./literals.md#listapikeyspaginatorname)
 - [ListDataSourcesPaginatorName](./literals.md#listdatasourcespaginatorname)
 - [ListFunctionsPaginatorName](./literals.md#listfunctionspaginatorname)
@@ -139,11 +139,11 @@ from mypy_boto3_appsync.literals import ApiCacheStatus, ...
 - [ListResolversByFunctionPaginatorName](./literals.md#listresolversbyfunctionpaginatorname)
 - [ListResolversPaginatorName](./literals.md#listresolverspaginatorname)
 - [ListTypesPaginatorName](./literals.md#listtypespaginatorname)
-- [OutputType](./literals.md#outputtype)
-- [RelationalDatabaseSourceType](./literals.md#relationaldatabasesourcetype)
-- [ResolverKind](./literals.md#resolverkind)
-- [SchemaStatus](./literals.md#schemastatus)
-- [TypeDefinitionFormat](./literals.md#typedefinitionformat)
+- [OutputTypeType](./literals.md#outputtypetype)
+- [RelationalDatabaseSourceTypeType](./literals.md#relationaldatabasesourcetypetype)
+- [ResolverKindType](./literals.md#resolverkindtype)
+- [SchemaStatusType](./literals.md#schemastatustype)
+- [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
 ## Typed dictionaries
 

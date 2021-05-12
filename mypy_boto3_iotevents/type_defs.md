@@ -3,7 +3,7 @@
 > [Index](..) > [IoTEvents](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
 [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
@@ -77,14 +77,17 @@ Optional fields:
 - `iotTopicPublish`:
   [IotTopicPublishActionTypeDef](./type_defs.md#iottopicpublishactiontypedef)
 - `setTimer`: [SetTimerActionTypeDef](./type_defs.md#settimeractiontypedef)
-- `clearTimer`: [ClearTimerActionTypeDef](./type_defs.md#cleartimeractiontypedef)
-- `resetTimer`: [ResetTimerActionTypeDef](./type_defs.md#resettimeractiontypedef)
+- `clearTimer`:
+  [ClearTimerActionTypeDef](./type_defs.md#cleartimeractiontypedef)
+- `resetTimer`:
+  [ResetTimerActionTypeDef](./type_defs.md#resettimeractiontypedef)
 - `lambda`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
 - `iotEvents`: [IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef)
 - `sqs`: [SqsActionTypeDef](./type_defs.md#sqsactiontypedef)
 - `firehose`: [FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef)
 - `dynamoDB`: [DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef)
-- `dynamoDBv2`: [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
+- `dynamoDBv2`:
+  [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
 - `iotSiteWise`:
   [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
 
@@ -107,7 +110,7 @@ from mypy_boto3_iotevents.type_defs import AnalysisResultTypeDef
 Optional fields:
 
 - `type`: `str`
-- `level`: [AnalysisResultLevel](./literals.md#analysisresultlevel)
+- `level`: [AnalysisResultLevelType](./literals.md#analysisresultleveltype)
 - `message`: `str`
 - `locations`:
   `List`\[[AnalysisResultLocationTypeDef](./type_defs.md#analysisresultlocationtypedef)\]
@@ -206,7 +209,7 @@ from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisResponse
 
 Optional fields:
 
-- `status`: [AnalysisStatus](./literals.md#analysisstatus)
+- `status`: [AnalysisStatusType](./literals.md#analysisstatustype)
 
 ## DescribeDetectorModelResponseTypeDef
 
@@ -236,7 +239,8 @@ from mypy_boto3_iotevents.type_defs import DescribeLoggingOptionsResponseTypeDef
 
 Optional fields:
 
-- `loggingOptions`: [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
 
 ## DetectorDebugOptionTypeDef
 
@@ -268,9 +272,10 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `status`:
-  [DetectorModelVersionStatus](./literals.md#detectormodelversionstatus)
+  [DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype)
 - `key`: `str`
-- `evaluationMethod`: [EvaluationMethod](./literals.md#evaluationmethod)
+- `evaluationMethod`:
+  [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
 ## DetectorModelDefinitionTypeDef
 
@@ -323,8 +328,9 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `status`:
-  [DetectorModelVersionStatus](./literals.md#detectormodelversionstatus)
-- `evaluationMethod`: [EvaluationMethod](./literals.md#evaluationmethod)
+  [DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype)
+- `evaluationMethod`:
+  [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
 ## DynamoDBActionTypeDef
 
@@ -416,7 +422,7 @@ Required fields:
 - `inputArn`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: [InputStatus](./literals.md#inputstatus)
+- `status`: [InputStatusType](./literals.md#inputstatustype)
 
 Optional fields:
 
@@ -445,7 +451,7 @@ Optional fields:
 - `inputArn`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: [InputStatus](./literals.md#inputstatus)
+- `status`: [InputStatusType](./literals.md#inputstatustype)
 
 ## InputTypeDef
 
@@ -575,7 +581,7 @@ from mypy_boto3_iotevents.type_defs import LoggingOptionsTypeDef
 Required fields:
 
 - `roleArn`: `str`
-- `level`: [LoggingLevel](./literals.md#logginglevel)
+- `level`: [LoggingLevelType](./literals.md#loggingleveltype)
 - `enabled`: `bool`
 
 Optional fields:
@@ -624,7 +630,7 @@ from mypy_boto3_iotevents.type_defs import PayloadTypeDef
 Required fields:
 
 - `contentExpression`: `str`
-- `type`: [PayloadType](./literals.md#payloadtype)
+- `type`: [PayloadTypeType](./literals.md#payloadtypetype)
 
 ## ResetTimerActionTypeDef
 

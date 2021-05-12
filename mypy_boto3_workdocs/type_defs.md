@@ -3,7 +3,7 @@
 > [Index](..) > [WorkDocs](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
@@ -74,7 +74,7 @@ from mypy_boto3_workdocs.type_defs import ActivityTypeDef
 
 Optional fields:
 
-- `Type`: [ActivityType](./literals.md#activitytype)
+- `Type`: [ActivityTypeType](./literals.md#activitytypetype)
 - `TimeStamp`: `datetime`
 - `IsIndirectActivity`: `bool`
 - `OrganizationId`: `str`
@@ -109,7 +109,7 @@ Optional fields:
 - `CommentId`: `str`
 - `Contributor`: [UserTypeDef](./type_defs.md#usertypedef)
 - `CreatedTimestamp`: `datetime`
-- `CommentStatus`: [CommentStatusType](./literals.md#commentstatustype)
+- `CommentStatus`: [CommentStatusTypeType](./literals.md#commentstatustypetype)
 - `RecipientId`: `str`
 
 ## CommentTypeDef
@@ -129,8 +129,9 @@ Optional fields:
 - `Text`: `str`
 - `Contributor`: [UserTypeDef](./type_defs.md#usertypedef)
 - `CreatedTimestamp`: `datetime`
-- `Status`: [CommentStatusType](./literals.md#commentstatustype)
-- `Visibility`: [CommentVisibilityType](./literals.md#commentvisibilitytype)
+- `Status`: [CommentStatusTypeType](./literals.md#commentstatustypetype)
+- `Visibility`:
+  [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
 - `RecipientId`: `str`
 
 ## CreateCommentResponseTypeDef
@@ -229,7 +230,8 @@ from mypy_boto3_workdocs.type_defs import DescribeGroupsResponseTypeDef
 
 Optional fields:
 
-- `Groups`: `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
+- `Groups`:
+  `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
 - `Marker`: `str`
 
 ## DescribeNotificationSubscriptionsResponseTypeDef
@@ -294,7 +296,7 @@ Optional fields:
 - `ModifiedTimestamp`: `datetime`
 - `LatestVersionMetadata`:
   [DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)
-- `ResourceState`: [ResourceStateType](./literals.md#resourcestatetype)
+- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 - `Labels`: `List`\[`str`\]
 
 ## DocumentVersionMetadataTypeDef
@@ -310,15 +312,17 @@ Optional fields:
 - `ContentType`: `str`
 - `Size`: `int`
 - `Signature`: `str`
-- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
+- `Status`: [DocumentStatusTypeType](./literals.md#documentstatustypetype)
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
 - `ContentCreatedTimestamp`: `datetime`
 - `ContentModifiedTimestamp`: `datetime`
 - `CreatorId`: `str`
 - `Thumbnail`:
-  `Dict`\[[DocumentThumbnailType](./literals.md#documentthumbnailtype), `str`\]
-- `Source`: `Dict`\[[DocumentSourceType](./literals.md#documentsourcetype),
+  `Dict`\[[DocumentThumbnailTypeType](./literals.md#documentthumbnailtypetype),
+  `str`\]
+- `Source`:
+  `Dict`\[[DocumentSourceTypeType](./literals.md#documentsourcetypetype),
   `str`\]
 
 ## FolderMetadataTypeDef
@@ -335,7 +339,7 @@ Optional fields:
 - `ParentFolderId`: `str`
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
-- `ResourceState`: [ResourceStateType](./literals.md#resourcestatetype)
+- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 - `Signature`: `str`
 - `Labels`: `List`\[`str`\]
 - `Size`: `int`
@@ -439,7 +443,8 @@ from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadResponseT
 Optional fields:
 
 - `Metadata`: [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
-- `UploadMetadata`: [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
+- `UploadMetadata`:
+  [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
 
 ## NotificationOptionsTypeDef
 
@@ -473,7 +478,8 @@ from mypy_boto3_workdocs.type_defs import ParticipantsTypeDef
 Optional fields:
 
 - `Users`: `List`\[[UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)\]
-- `Groups`: `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
+- `Groups`:
+  `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
 
 ## PermissionInfoTypeDef
 
@@ -483,8 +489,8 @@ from mypy_boto3_workdocs.type_defs import PermissionInfoTypeDef
 
 Optional fields:
 
-- `Role`: [RoleType](./literals.md#roletype)
-- `Type`: [RolePermissionType](./literals.md#rolepermissiontype)
+- `Role`: [RoleTypeType](./literals.md#roletypetype)
+- `Type`: [RolePermissionTypeType](./literals.md#rolepermissiontypetype)
 
 ## PrincipalTypeDef
 
@@ -495,7 +501,7 @@ from mypy_boto3_workdocs.type_defs import PrincipalTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`: [PrincipalType](./literals.md#principaltype)
+- `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `Roles`:
   `List`\[[PermissionInfoTypeDef](./type_defs.md#permissioninfotypedef)\]
 
@@ -507,7 +513,7 @@ from mypy_boto3_workdocs.type_defs import ResourceMetadataTypeDef
 
 Optional fields:
 
-- `Type`: [ResourceType](./literals.md#resourcetype)
+- `Type`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Name`: `str`
 - `OriginalName`: `str`
 - `Id`: `str`
@@ -546,8 +552,8 @@ from mypy_boto3_workdocs.type_defs import SharePrincipalTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`: [PrincipalType](./literals.md#principaltype)
-- `Role`: [RoleType](./literals.md#roletype)
+- `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
+- `Role`: [RoleTypeType](./literals.md#roletypetype)
 
 ## ShareResultTypeDef
 
@@ -559,8 +565,8 @@ Optional fields:
 
 - `PrincipalId`: `str`
 - `InviteePrincipalId`: `str`
-- `Role`: [RoleType](./literals.md#roletype)
-- `Status`: [ShareStatusType](./literals.md#sharestatustype)
+- `Role`: [RoleTypeType](./literals.md#roletypetype)
+- `Status`: [ShareStatusTypeType](./literals.md#sharestatustypetype)
 - `ShareId`: `str`
 - `StatusMessage`: `str`
 
@@ -573,7 +579,7 @@ from mypy_boto3_workdocs.type_defs import StorageRuleTypeTypeDef
 Optional fields:
 
 - `StorageAllocatedInBytes`: `int`
-- `StorageType`: [StorageType](./literals.md#storagetype)
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 
 ## SubscriptionTypeDef
 
@@ -586,7 +592,7 @@ Optional fields:
 - `SubscriptionId`: `str`
 - `EndPoint`: `str`
 - `Protocol`: `Literal['HTTPS']` (see
-  [SubscriptionProtocolType](./literals.md#subscriptionprotocoltype))
+  [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype))
 
 ## UpdateUserResponseTypeDef
 
@@ -632,7 +638,8 @@ from mypy_boto3_workdocs.type_defs import UserStorageMetadataTypeDef
 Optional fields:
 
 - `StorageUtilizedInBytes`: `int`
-- `StorageRule`: [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
+- `StorageRule`:
+  [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 
 ## UserTypeDef
 
@@ -650,11 +657,11 @@ Optional fields:
 - `OrganizationId`: `str`
 - `RootFolderId`: `str`
 - `RecycleBinFolderId`: `str`
-- `Status`: [UserStatusType](./literals.md#userstatustype)
-- `Type`: [UserType](./literals.md#usertype)
+- `Status`: [UserStatusTypeType](./literals.md#userstatustypetype)
+- `Type`: [UserTypeType](./literals.md#usertypetype)
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
 - `TimeZoneId`: `str`
-- `Locale`: [LocaleType](./literals.md#localetype)
+- `Locale`: [LocaleTypeType](./literals.md#localetypetype)
 - `Storage`:
   [UserStorageMetadataTypeDef](./type_defs.md#userstoragemetadatatypedef)

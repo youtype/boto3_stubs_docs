@@ -3,7 +3,7 @@
 > [Index](..) > [ACM](.) > ACMClient
 
 Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM)
 type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
@@ -45,7 +45,7 @@ def get_acm_client() -> ACMClient:
 ```
 
 Boto3 documentation:
-[ACM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
+[ACM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("acm").add_tags_to_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.add_tags_to_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
+[ACM.Client.add_tags_to_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
 
 Arguments:
 
@@ -98,7 +98,7 @@ Arguments:
 Type annotations for `boto3.client("acm").can_paginate` method.
 
 Boto3 documentation:
-[ACM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate)
+[ACM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.can_paginate)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns `bool`.
 Type annotations for `boto3.client("acm").delete_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
+[ACM.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.delete_certificate)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Arguments:
 Type annotations for `boto3.client("acm").describe_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
+[ACM.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.describe_certificate)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns
 Type annotations for `boto3.client("acm").export_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.export_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
+[ACM.Client.export_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.export_certificate)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns
 Type annotations for `boto3.client("acm").generate_presigned_url` method.
 
 Boto3 documentation:
-[ACM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url)
+[ACM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.generate_presigned_url)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns `str`.
 Type annotations for `boto3.client("acm").get_account_configuration` method.
 
 Boto3 documentation:
-[ACM.Client.get_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
+[ACM.Client.get_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.get_account_configuration)
 
 Returns
 [GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef).
@@ -177,7 +177,7 @@ Returns
 Type annotations for `boto3.client("acm").get_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
+[ACM.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.get_certificate)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns
 Type annotations for `boto3.client("acm").import_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
+[ACM.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.import_certificate)
 
 Arguments:
 
@@ -209,12 +209,12 @@ Returns
 Type annotations for `boto3.client("acm").list_certificates` method.
 
 Boto3 documentation:
-[ACM.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
+[ACM.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.list_certificates)
 
 Arguments:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatus](./literals.md#certificatestatus)\]
+  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `NextToken`: `str`
 - `MaxItems`: `int`
@@ -227,7 +227,7 @@ Returns
 Type annotations for `boto3.client("acm").list_tags_for_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.list_tags_for_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
+[ACM.Client.list_tags_for_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Returns
 Type annotations for `boto3.client("acm").put_account_configuration` method.
 
 Boto3 documentation:
-[ACM.Client.put_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
+[ACM.Client.put_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.put_account_configuration)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Arguments:
 Type annotations for `boto3.client("acm").remove_tags_from_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.remove_tags_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
+[ACM.Client.remove_tags_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Arguments:
 Type annotations for `boto3.client("acm").renew_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.renew_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
+[ACM.Client.renew_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.renew_certificate)
 
 Arguments:
 
@@ -277,12 +277,13 @@ Arguments:
 Type annotations for `boto3.client("acm").request_certificate` method.
 
 Boto3 documentation:
-[ACM.Client.request_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
+[ACM.Client.request_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.request_certificate)
 
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `ValidationMethod`: [ValidationMethod](./literals.md#validationmethod)
+- `ValidationMethod`:
+  [ValidationMethodType](./literals.md#validationmethodtype)
 - `SubjectAlternativeNames`: `List`\[`str`\]
 - `IdempotencyToken`: `str`
 - `DomainValidationOptions`:
@@ -300,7 +301,7 @@ Returns
 Type annotations for `boto3.client("acm").resend_validation_email` method.
 
 Boto3 documentation:
-[ACM.Client.resend_validation_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
+[ACM.Client.resend_validation_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.resend_validation_email)
 
 Arguments:
 
@@ -313,7 +314,7 @@ Arguments:
 Type annotations for `boto3.client("acm").update_certificate_options` method.
 
 Boto3 documentation:
-[ACM.Client.update_certificate_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
+[ACM.Client.update_certificate_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM.Client.update_certificate_options)
 
 Arguments:
 

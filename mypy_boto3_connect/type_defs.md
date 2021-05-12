@@ -3,7 +3,7 @@
 > [Index](..) > [Connect](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connect.html#Connect)
 type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
@@ -153,7 +153,8 @@ from mypy_boto3_connect.type_defs import AttributeTypeDef
 
 Optional fields:
 
-- `AttributeType`: [InstanceAttributeType](./literals.md#instanceattributetype)
+- `AttributeType`:
+  [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
 - `Value`: `str`
 
 ## ChatMessageTypeDef
@@ -178,7 +179,7 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `ContactFlowType`: [ContactFlowType](./literals.md#contactflowtype)
+- `ContactFlowType`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
 
 ## ContactFlowTypeDef
 
@@ -191,7 +192,7 @@ Optional fields:
 - `Arn`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Type`: [ContactFlowType](./literals.md#contactflowtype)
+- `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
 - `Description`: `str`
 - `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -339,8 +340,8 @@ from mypy_boto3_connect.type_defs import CurrentMetricTypeDef
 
 Optional fields:
 
-- `Name`: [CurrentMetricName](./literals.md#currentmetricname)
-- `Unit`: [Unit](./literals.md#unit)
+- `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
+- `Unit`: [UnitType](./literals.md#unittype)
 
 ## DescribeContactFlowResponseTypeDef
 
@@ -422,7 +423,8 @@ from mypy_boto3_connect.type_defs import DescribeRoutingProfileResponseTypeDef
 
 Optional fields:
 
-- `RoutingProfile`: [RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef)
+- `RoutingProfile`:
+  [RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef)
 
 ## DescribeUserHierarchyGroupResponseTypeDef
 
@@ -432,7 +434,8 @@ from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupResponseTypeD
 
 Optional fields:
 
-- `HierarchyGroup`: [HierarchyGroupTypeDef](./type_defs.md#hierarchygrouptypedef)
+- `HierarchyGroup`:
+  [HierarchyGroupTypeDef](./type_defs.md#hierarchygrouptypedef)
 
 ## DescribeUserHierarchyStructureResponseTypeDef
 
@@ -464,7 +467,7 @@ from mypy_boto3_connect.type_defs import DimensionsTypeDef
 Optional fields:
 
 - `Queue`: [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
-- `Channel`: [Channel](./literals.md#channel)
+- `Channel`: [ChannelType](./literals.md#channeltype)
 
 ## EncryptionConfigTypeDef
 
@@ -475,7 +478,7 @@ from mypy_boto3_connect.type_defs import EncryptionConfigTypeDef
 Required fields:
 
 - `EncryptionType`: `Literal['KMS']` (see
-  [EncryptionType](./literals.md#encryptiontype))
+  [EncryptionTypeType](./literals.md#encryptiontypetype))
 - `KeyId`: `str`
 
 ## FiltersTypeDef
@@ -487,7 +490,7 @@ from mypy_boto3_connect.type_defs import FiltersTypeDef
 Optional fields:
 
 - `Queues`: `List`\[`str`\]
-- `Channels`: `List`\[[Channel](./literals.md#channel)\]
+- `Channels`: `List`\[[ChannelType](./literals.md#channeltype)\]
 
 ## GetContactAttributesResponseTypeDef
 
@@ -665,10 +668,10 @@ from mypy_boto3_connect.type_defs import HistoricalMetricTypeDef
 
 Optional fields:
 
-- `Name`: [HistoricalMetricName](./literals.md#historicalmetricname)
+- `Name`: [HistoricalMetricNameType](./literals.md#historicalmetricnametype)
 - `Threshold`: [ThresholdTypeDef](./type_defs.md#thresholdtypedef)
-- `Statistic`: [Statistic](./literals.md#statistic)
-- `Unit`: [Unit](./literals.md#unit)
+- `Statistic`: [StatisticType](./literals.md#statistictype)
+- `Unit`: [UnitType](./literals.md#unittype)
 
 ## HoursOfOperationConfigTypeDef
 
@@ -678,7 +681,7 @@ from mypy_boto3_connect.type_defs import HoursOfOperationConfigTypeDef
 
 Optional fields:
 
-- `Day`: [HoursOfOperationDays](./literals.md#hoursofoperationdays)
+- `Day`: [HoursOfOperationDaysType](./literals.md#hoursofoperationdaystype)
 - `StartTime`:
   [HoursOfOperationTimeSliceTypeDef](./type_defs.md#hoursofoperationtimeslicetypedef)
 - `EndTime`:
@@ -742,7 +745,7 @@ from mypy_boto3_connect.type_defs import InstanceStorageConfigTypeDef
 
 Required fields:
 
-- `StorageType`: [StorageType](./literals.md#storagetype)
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 
 Optional fields:
 
@@ -765,11 +768,12 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
-- `IdentityManagementType`: [DirectoryType](./literals.md#directorytype)
+- `IdentityManagementType`:
+  [DirectoryTypeType](./literals.md#directorytypetype)
 - `InstanceAlias`: `str`
 - `CreatedTime`: `datetime`
 - `ServiceRole`: `str`
-- `InstanceStatus`: [InstanceStatus](./literals.md#instancestatus)
+- `InstanceStatus`: [InstanceStatusType](./literals.md#instancestatustype)
 - `InboundCallsEnabled`: `bool`
 - `OutboundCallsEnabled`: `bool`
 
@@ -783,11 +787,12 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
-- `IdentityManagementType`: [DirectoryType](./literals.md#directorytype)
+- `IdentityManagementType`:
+  [DirectoryTypeType](./literals.md#directorytypetype)
 - `InstanceAlias`: `str`
 - `CreatedTime`: `datetime`
 - `ServiceRole`: `str`
-- `InstanceStatus`: [InstanceStatus](./literals.md#instancestatus)
+- `InstanceStatus`: [InstanceStatusType](./literals.md#instancestatustype)
 - `StatusReason`:
   [InstanceStatusReasonTypeDef](./type_defs.md#instancestatusreasontypedef)
 - `InboundCallsEnabled`: `bool`
@@ -805,11 +810,11 @@ Optional fields:
 - `IntegrationAssociationArn`: `str`
 - `InstanceId`: `str`
 - `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationType](./literals.md#integrationtype))
+  [IntegrationTypeType](./literals.md#integrationtypetype))
 - `IntegrationArn`: `str`
 - `SourceApplicationUrl`: `str`
 - `SourceApplicationName`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 
 ## KinesisFirehoseConfigTypeDef
 
@@ -1085,7 +1090,8 @@ from mypy_boto3_connect.type_defs import ListUseCasesResponseTypeDef
 
 Optional fields:
 
-- `UseCaseSummaryList`: `List`\[[UseCaseTypeDef](./type_defs.md#usecasetypedef)\]
+- `UseCaseSummaryList`:
+  `List`\[[UseCaseTypeDef](./type_defs.md#usecasetypedef)\]
 - `NextToken`: `str`
 
 ## ListUserHierarchyGroupsResponseTypeDef
@@ -1120,7 +1126,7 @@ from mypy_boto3_connect.type_defs import MediaConcurrencyTypeDef
 
 Required fields:
 
-- `Channel`: [Channel](./literals.md#channel)
+- `Channel`: [ChannelType](./literals.md#channeltype)
 - `Concurrency`: `int`
 
 ## OutboundCallerConfigTypeDef
@@ -1178,9 +1184,9 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `PhoneNumber`: `str`
-- `PhoneNumberType`: [PhoneNumberType](./literals.md#phonenumbertype)
+- `PhoneNumberType`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
 - `PhoneNumberCountryCode`:
-  [PhoneNumberCountryCode](./literals.md#phonenumbercountrycode)
+  [PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)
 
 ## PromptSummaryTypeDef
 
@@ -1227,7 +1233,7 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `QueueType`: [QueueType](./literals.md#queuetype)
+- `QueueType`: [QueueTypeType](./literals.md#queuetypetype)
 
 ## QueueTypeDef
 
@@ -1245,7 +1251,7 @@ Optional fields:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 - `HoursOfOperationId`: `str`
 - `MaxContacts`: `int`
-- `Status`: [QueueStatus](./literals.md#queuestatus)
+- `Status`: [QueueStatusType](./literals.md#queuestatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## QuickConnectConfigTypeDef
@@ -1256,7 +1262,8 @@ from mypy_boto3_connect.type_defs import QuickConnectConfigTypeDef
 
 Required fields:
 
-- `QuickConnectType`: [QuickConnectType](./literals.md#quickconnecttype)
+- `QuickConnectType`:
+  [QuickConnectTypeType](./literals.md#quickconnecttypetype)
 
 Optional fields:
 
@@ -1278,7 +1285,8 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `QuickConnectType`: [QuickConnectType](./literals.md#quickconnecttype)
+- `QuickConnectType`:
+  [QuickConnectTypeType](./literals.md#quickconnecttypetype)
 
 ## QuickConnectTypeDef
 
@@ -1305,7 +1313,8 @@ from mypy_boto3_connect.type_defs import ReferenceTypeDef
 Required fields:
 
 - `Value`: `str`
-- `Type`: `Literal['URL']` (see [ReferenceType](./literals.md#referencetype))
+- `Type`: `Literal['URL']` (see
+  [ReferenceTypeType](./literals.md#referencetypetype))
 
 ## RoutingProfileQueueConfigSummaryTypeDef
 
@@ -1320,7 +1329,7 @@ Required fields:
 - `QueueName`: `str`
 - `Priority`: `int`
 - `Delay`: `int`
-- `Channel`: [Channel](./literals.md#channel)
+- `Channel`: [ChannelType](./literals.md#channeltype)
 
 ## RoutingProfileQueueConfigTypeDef
 
@@ -1344,7 +1353,7 @@ from mypy_boto3_connect.type_defs import RoutingProfileQueueReferenceTypeDef
 Required fields:
 
 - `QueueId`: `str`
-- `Channel`: [Channel](./literals.md#channel)
+- `Channel`: [ChannelType](./literals.md#channeltype)
 
 ## RoutingProfileSummaryTypeDef
 
@@ -1456,7 +1465,8 @@ from mypy_boto3_connect.type_defs import ThresholdTypeDef
 
 Optional fields:
 
-- `Comparison`: `Literal['LT']` (see [Comparison](./literals.md#comparison))
+- `Comparison`: `Literal['LT']` (see
+  [ComparisonType](./literals.md#comparisontype))
 - `ThresholdValue`: `float`
 
 ## UseCaseTypeDef
@@ -1470,7 +1480,7 @@ Optional fields:
 - `UseCaseId`: `str`
 - `UseCaseArn`: `str`
 - `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseType](./literals.md#usecasetype))
+  [UseCaseTypeType](./literals.md#usecasetypetype))
 
 ## UserIdentityInfoTypeDef
 
@@ -1492,7 +1502,7 @@ from mypy_boto3_connect.type_defs import UserPhoneConfigTypeDef
 
 Required fields:
 
-- `PhoneType`: [PhoneType](./literals.md#phonetype)
+- `PhoneType`: [PhoneTypeType](./literals.md#phonetypetype)
 
 Optional fields:
 
@@ -1536,7 +1546,8 @@ Optional fields:
 - `Username`: `str`
 - `IdentityInfo`:
   [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
-- `PhoneConfig`: [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
+- `PhoneConfig`:
+  [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
 - `DirectoryUserId`: `str`
 - `SecurityProfileIds`: `List`\[`str`\]
 - `RoutingProfileId`: `str`
@@ -1551,4 +1562,5 @@ from mypy_boto3_connect.type_defs import VoiceRecordingConfigurationTypeDef
 
 Optional fields:
 
-- `VoiceRecordingTrack`: [VoiceRecordingTrack](./literals.md#voicerecordingtrack)
+- `VoiceRecordingTrack`:
+  [VoiceRecordingTrackType](./literals.md#voicerecordingtracktype)

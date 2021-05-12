@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStarconnections](.) > CodeStarconnectionsClient
 
 Auto-generated documentation for
-[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
 [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
@@ -40,7 +40,7 @@ def get_codestar-connections_client() -> CodeStarconnectionsClient:
 ```
 
 Boto3 documentation:
-[CodeStarconnections.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
+[CodeStarconnections.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client)
 
 ## Exceptions
 
@@ -71,7 +71,7 @@ Type annotations for `boto3.client("codestar-connections").can_paginate`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate)
+[CodeStarconnections.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate)
 
 Arguments:
 
@@ -85,12 +85,12 @@ Type annotations for `boto3.client("codestar-connections").create_connection`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
+[CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
 
 Arguments:
 
 - `ConnectionName`: `str` *(required)*
-- `ProviderType`: [ProviderType](./literals.md#providertype)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `HostArn`: `str`
 
@@ -102,12 +102,13 @@ Returns
 Type annotations for `boto3.client("codestar-connections").create_host` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
+[CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
 
 Arguments:
 
 - `Name`: `str` *(required)*
-- `ProviderType`: [ProviderType](./literals.md#providertype) *(required)*
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+  *(required)*
 - `ProviderEndpoint`: `str` *(required)*
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
@@ -121,7 +122,7 @@ Type annotations for `boto3.client("codestar-connections").delete_connection`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
+[CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
 
 Arguments:
 
@@ -134,7 +135,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codestar-connections").delete_host` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
+[CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
 
 Arguments:
 
@@ -148,7 +149,7 @@ Type annotations for
 `boto3.client("codestar-connections").generate_presigned_url` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url)
+[CodeStarconnections.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url)
 
 Arguments:
 
@@ -165,7 +166,7 @@ Type annotations for `boto3.client("codestar-connections").get_connection`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
+[CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
 
 Arguments:
 
@@ -179,7 +180,7 @@ Returns
 Type annotations for `boto3.client("codestar-connections").get_host` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
+[CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
 
 Arguments:
 
@@ -193,11 +194,11 @@ Type annotations for `boto3.client("codestar-connections").list_connections`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
+[CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
 
 Arguments:
 
-- `ProviderTypeFilter`: [ProviderType](./literals.md#providertype)
+- `ProviderTypeFilter`: [ProviderTypeType](./literals.md#providertypetype)
 - `HostArnFilter`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -210,7 +211,7 @@ Returns
 Type annotations for `boto3.client("codestar-connections").list_hosts` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
+[CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
 
 Arguments:
 
@@ -225,7 +226,7 @@ Type annotations for
 `boto3.client("codestar-connections").list_tags_for_resource` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
+[CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -240,7 +241,7 @@ Type annotations for `boto3.client("codestar-connections").tag_resource`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
+[CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
 
 Arguments:
 
@@ -255,7 +256,7 @@ Type annotations for `boto3.client("codestar-connections").untag_resource`
 method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
+[CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
 
 Arguments:
 
@@ -269,7 +270,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codestar-connections").update_host` method.
 
 Boto3 documentation:
-[CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
+[CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
 
 Arguments:
 

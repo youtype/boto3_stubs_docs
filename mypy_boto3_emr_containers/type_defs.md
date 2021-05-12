@@ -3,7 +3,7 @@
 > [Index](..) > [EMRContainers](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
@@ -109,7 +109,7 @@ from mypy_boto3_emr_containers.type_defs import ContainerProviderTypeDef
 Required fields:
 
 - `type`: `Literal['EKS']` (see
-  [ContainerProviderType](./literals.md#containerprovidertype))
+  [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
 - `id`: `str`
 
 Optional fields:
@@ -190,7 +190,8 @@ from mypy_boto3_emr_containers.type_defs import DescribeVirtualClusterResponseTy
 
 Optional fields:
 
-- `virtualCluster`: [VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)
+- `virtualCluster`:
+  [VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)
 
 ## EksInfoTypeDef
 
@@ -215,7 +216,7 @@ Optional fields:
 - `arn`: `str`
 - `virtualClusterId`: `str`
 - `type`: `str`
-- `state`: [EndpointState](./literals.md#endpointstate)
+- `state`: [EndpointStateType](./literals.md#endpointstatetype)
 - `releaseLabel`: `str`
 - `executionRoleArn`: `str`
 - `certificateArn`: `str`
@@ -250,7 +251,7 @@ Optional fields:
 - `name`: `str`
 - `virtualClusterId`: `str`
 - `arn`: `str`
-- `state`: [JobRunState](./literals.md#jobrunstate)
+- `state`: [JobRunStateType](./literals.md#jobrunstatetype)
 - `clientToken`: `str`
 - `executionRoleArn`: `str`
 - `releaseLabel`: `str`
@@ -261,7 +262,7 @@ Optional fields:
 - `createdBy`: `str`
 - `finishedAt`: `datetime`
 - `stateDetails`: `str`
-- `failureReason`: [FailureReason](./literals.md#failurereason)
+- `failureReason`: [FailureReasonType](./literals.md#failurereasontype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## ListJobRunsResponseTypeDef
@@ -316,7 +317,7 @@ from mypy_boto3_emr_containers.type_defs import MonitoringConfigurationTypeDef
 
 Optional fields:
 
-- `persistentAppUI`: [PersistentAppUI](./literals.md#persistentappui)
+- `persistentAppUI`: [PersistentAppUIType](./literals.md#persistentappuitype)
 - `cloudWatchMonitoringConfiguration`:
   [CloudWatchMonitoringConfigurationTypeDef](./type_defs.md#cloudwatchmonitoringconfigurationtypedef)
 - `s3MonitoringConfiguration`:
@@ -383,7 +384,7 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `arn`: `str`
-- `state`: [VirtualClusterState](./literals.md#virtualclusterstate)
+- `state`: [VirtualClusterStateType](./literals.md#virtualclusterstatetype)
 - `containerProvider`:
   [ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef)
 - `createdAt`: `datetime`

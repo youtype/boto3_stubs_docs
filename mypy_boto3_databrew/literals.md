@@ -3,16 +3,16 @@
 > [Index](..) > [GlueDataBrew](.) > Literals
 
 Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Literals for boto3 GlueDataBrew module](#literals-for-boto3-gluedatabrew-module)
-  - [CompressionFormat](#compressionformat)
-  - [EncryptionMode](#encryptionmode)
-  - [InputFormat](#inputformat)
-  - [JobRunState](#jobrunstate)
-  - [JobType](#jobtype)
+  - [CompressionFormatType](#compressionformattype)
+  - [EncryptionModeType](#encryptionmodetype)
+  - [InputFormatType](#inputformattype)
+  - [JobRunStateType](#jobrunstatetype)
+  - [JobTypeType](#jobtypetype)
   - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
   - [ListJobRunsPaginatorName](#listjobrunspaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
@@ -20,20 +20,20 @@ type annotations stubs module
   - [ListRecipeVersionsPaginatorName](#listrecipeversionspaginatorname)
   - [ListRecipesPaginatorName](#listrecipespaginatorname)
   - [ListSchedulesPaginatorName](#listschedulespaginatorname)
-  - [LogSubscription](#logsubscription)
-  - [Order](#order)
-  - [OrderedBy](#orderedby)
-  - [OutputFormat](#outputformat)
-  - [ParameterType](#parametertype)
-  - [SampleMode](#samplemode)
-  - [SampleType](#sampletype)
-  - [SessionStatus](#sessionstatus)
-  - [Source](#source)
+  - [LogSubscriptionType](#logsubscriptiontype)
+  - [OrderType](#ordertype)
+  - [OrderedByType](#orderedbytype)
+  - [OutputFormatType](#outputformattype)
+  - [ParameterTypeType](#parametertypetype)
+  - [SampleModeType](#samplemodetype)
+  - [SampleTypeType](#sampletypetype)
+  - [SessionStatusType](#sessionstatustype)
+  - [SourceType](#sourcetype)
 
-## CompressionFormat
+## CompressionFormatType
 
 ```python
-from mypy_boto3_databrew.literals import CompressionFormat
+from mypy_boto3_databrew.literals import CompressionFormatType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `ZLIB`
 - `ZSTD`
 
-## EncryptionMode
+## EncryptionModeType
 
 ```python
-from mypy_boto3_databrew.literals import EncryptionMode
+from mypy_boto3_databrew.literals import EncryptionModeType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `SSE-KMS`
 - `SSE-S3`
 
-## InputFormat
+## InputFormatType
 
 ```python
-from mypy_boto3_databrew.literals import InputFormat
+from mypy_boto3_databrew.literals import InputFormatType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 - `JSON`
 - `PARQUET`
 
-## JobRunState
+## JobRunStateType
 
 ```python
-from mypy_boto3_databrew.literals import JobRunState
+from mypy_boto3_databrew.literals import JobRunStateType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 - `SUCCEEDED`
 - `TIMEOUT`
 
-## JobType
+## JobTypeType
 
 ```python
-from mypy_boto3_databrew.literals import JobType
+from mypy_boto3_databrew.literals import JobTypeType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 
 - `list_schedules`
 
-## LogSubscription
+## LogSubscriptionType
 
 ```python
-from mypy_boto3_databrew.literals import LogSubscription
+from mypy_boto3_databrew.literals import LogSubscriptionType
 ```
 
 Values:
@@ -180,10 +180,10 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
-## Order
+## OrderType
 
 ```python
-from mypy_boto3_databrew.literals import Order
+from mypy_boto3_databrew.literals import OrderType
 ```
 
 Values:
@@ -191,20 +191,20 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## OrderedBy
+## OrderedByType
 
 ```python
-from mypy_boto3_databrew.literals import OrderedBy
+from mypy_boto3_databrew.literals import OrderedByType
 ```
 
 Values:
 
 - `LAST_MODIFIED_DATE`
 
-## OutputFormat
+## OutputFormatType
 
 ```python
-from mypy_boto3_databrew.literals import OutputFormat
+from mypy_boto3_databrew.literals import OutputFormatType
 ```
 
 Values:
@@ -217,10 +217,10 @@ Values:
 - `PARQUET`
 - `XML`
 
-## ParameterType
+## ParameterTypeType
 
 ```python
-from mypy_boto3_databrew.literals import ParameterType
+from mypy_boto3_databrew.literals import ParameterTypeType
 ```
 
 Values:
@@ -229,10 +229,10 @@ Values:
 - `Number`
 - `String`
 
-## SampleMode
+## SampleModeType
 
 ```python
-from mypy_boto3_databrew.literals import SampleMode
+from mypy_boto3_databrew.literals import SampleModeType
 ```
 
 Values:
@@ -240,10 +240,10 @@ Values:
 - `CUSTOM_ROWS`
 - `FULL_DATASET`
 
-## SampleType
+## SampleTypeType
 
 ```python
-from mypy_boto3_databrew.literals import SampleType
+from mypy_boto3_databrew.literals import SampleTypeType
 ```
 
 Values:
@@ -252,10 +252,10 @@ Values:
 - `LAST_N`
 - `RANDOM`
 
-## SessionStatus
+## SessionStatusType
 
 ```python
-from mypy_boto3_databrew.literals import SessionStatus
+from mypy_boto3_databrew.literals import SessionStatusType
 ```
 
 Values:
@@ -271,10 +271,10 @@ Values:
 - `TERMINATING`
 - `UPDATING`
 
-## Source
+## SourceType
 
 ```python
-from mypy_boto3_databrew.literals import Source
+from mypy_boto3_databrew.literals import SourceType
 ```
 
 Values:

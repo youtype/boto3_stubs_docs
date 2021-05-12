@@ -3,7 +3,7 @@
 > [Index](..) > AppIntegrationsService
 
 Auto-generated documentation for
-[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
+[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
 [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
@@ -28,32 +28,32 @@ Can be used directly:
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 ```
 
-AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_event_integration](./client.md#create-event-integration)
-- [delete_event_integration](./client.md#delete-event-integration)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_event_integration](./client.md#get-event-integration)
-- [list_event_integration_associations](./client.md#list-event-integration-associations)
-- [list_event_integrations](./client.md#list-event-integrations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_event_integration](./client.md#update-event-integration)
+- [can_paginate](./client.md#can_paginate)
+- [create_event_integration](./client.md#create_event_integration)
+- [delete_event_integration](./client.md#delete_event_integration)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_event_integration](./client.md#get_event_integration)
+- [list_event_integration_associations](./client.md#list_event_integration_associations)
+- [list_event_integrations](./client.md#list_event_integrations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_event_integration](./client.md#update_event_integration)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [DuplicateResourceException](./client.md#duplicateresourceexception)
-- [InternalServiceError](./client.md#internalserviceerror)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceQuotaExceededException](./client.md#resourcequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
+AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- DuplicateResourceException
+- InternalServiceError
+- InvalidRequestException
+- ResourceNotFoundException
+- ResourceQuotaExceededException
+- ThrottlingException
 
 ## Typed dictionaries
 

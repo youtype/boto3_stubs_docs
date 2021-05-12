@@ -3,7 +3,7 @@
 > [Index](..) > Textract
 
 Auto-generated documentation for
-[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/textract.html#Textract)
 type annotations stubs module
 [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
@@ -29,36 +29,36 @@ Can be used directly:
 from mypy_boto3_textract.client import TextractClient
 ```
 
-TextractClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [analyze_document](./client.md#analyze-document)
-- [can_paginate](./client.md#can-paginate)
-- [detect_document_text](./client.md#detect-document-text)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_document_analysis](./client.md#get-document-analysis)
-- [get_document_text_detection](./client.md#get-document-text-detection)
-- [start_document_analysis](./client.md#start-document-analysis)
-- [start_document_text_detection](./client.md#start-document-text-detection)
+- [analyze_document](./client.md#analyze_document)
+- [can_paginate](./client.md#can_paginate)
+- [detect_document_text](./client.md#detect_document_text)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_document_analysis](./client.md#get_document_analysis)
+- [get_document_text_detection](./client.md#get_document_text_detection)
+- [start_document_analysis](./client.md#start_document_analysis)
+- [start_document_text_detection](./client.md#start_document_text_detection)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BadDocumentException](./client.md#baddocumentexception)
-- [ClientError](./client.md#clienterror)
-- [DocumentTooLargeException](./client.md#documenttoolargeexception)
-- [HumanLoopQuotaExceededException](./client.md#humanloopquotaexceededexception)
-- [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidJobIdException](./client.md#invalidjobidexception)
-- [InvalidKMSKeyException](./client.md#invalidkmskeyexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidS3ObjectException](./client.md#invalids3objectexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ProvisionedThroughputExceededException](./client.md#provisionedthroughputexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UnsupportedDocumentException](./client.md#unsupporteddocumentexception)
+TextractClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BadDocumentException
+- ClientError
+- DocumentTooLargeException
+- HumanLoopQuotaExceededException
+- IdempotentParameterMismatchException
+- InternalServerError
+- InvalidJobIdException
+- InvalidKMSKeyException
+- InvalidParameterException
+- InvalidS3ObjectException
+- LimitExceededException
+- ProvisionedThroughputExceededException
+- ThrottlingException
+- UnsupportedDocumentException
 
 ## Literals
 
@@ -67,17 +67,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_textract.literals import BlockType, ...
+from mypy_boto3_textract.literals import BlockTypeType, ...
 ```
 
-- [BlockType](./literals.md#blocktype)
-- [ContentClassifier](./literals.md#contentclassifier)
-- [EntityType](./literals.md#entitytype)
-- [FeatureType](./literals.md#featuretype)
-- [JobStatus](./literals.md#jobstatus)
-- [RelationshipType](./literals.md#relationshiptype)
-- [SelectionStatus](./literals.md#selectionstatus)
-- [TextType](./literals.md#texttype)
+- [BlockTypeType](./literals.md#blocktypetype)
+- [ContentClassifierType](./literals.md#contentclassifiertype)
+- [EntityTypeType](./literals.md#entitytypetype)
+- [FeatureTypeType](./literals.md#featuretypetype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [RelationshipTypeType](./literals.md#relationshiptypetype)
+- [SelectionStatusType](./literals.md#selectionstatustype)
+- [TextTypeType](./literals.md#texttypetype)
 
 ## Typed dictionaries
 

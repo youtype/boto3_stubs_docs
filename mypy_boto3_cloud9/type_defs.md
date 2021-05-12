@@ -3,7 +3,7 @@
 > [Index](..) > [Cloud9](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
 [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
@@ -63,7 +63,7 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusResultTypeDef
 
 Required fields:
 
-- `status`: [EnvironmentStatus](./literals.md#environmentstatus)
+- `status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
 - `message`: `str`
 
 ## DescribeEnvironmentsResultTypeDef
@@ -86,7 +86,7 @@ from mypy_boto3_cloud9.type_defs import EnvironmentLifecycleTypeDef
 Optional fields:
 
 - `status`:
-  [EnvironmentLifecycleStatus](./literals.md#environmentlifecyclestatus)
+  [EnvironmentLifecycleStatusType](./literals.md#environmentlifecyclestatustype)
 - `reason`: `str`
 - `failureResource`: `str`
 
@@ -98,7 +98,7 @@ from mypy_boto3_cloud9.type_defs import EnvironmentMemberTypeDef
 
 Required fields:
 
-- `permissions`: [Permissions](./literals.md#permissions)
+- `permissions`: [PermissionsType](./literals.md#permissionstype)
 - `userId`: `str`
 - `userArn`: `str`
 - `environmentId`: `str`
@@ -115,7 +115,7 @@ from mypy_boto3_cloud9.type_defs import EnvironmentTypeDef
 
 Required fields:
 
-- `type`: [EnvironmentType](./literals.md#environmenttype)
+- `type`: [EnvironmentTypeType](./literals.md#environmenttypetype)
 - `arn`: `str`
 - `ownerArn`: `str`
 
@@ -124,11 +124,11 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `description`: `str`
-- `connectionType`: [ConnectionType](./literals.md#connectiontype)
+- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `lifecycle`:
   [EnvironmentLifecycleTypeDef](./type_defs.md#environmentlifecycletypedef)
 - `managedCredentialsStatus`:
-  [ManagedCredentialsStatus](./literals.md#managedcredentialsstatus)
+  [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
 
 ## ListEnvironmentsResultTypeDef
 

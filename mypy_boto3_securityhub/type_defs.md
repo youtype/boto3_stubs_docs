@@ -3,7 +3,7 @@
 > [Index](..) > [SecurityHub](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
 [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
@@ -407,7 +407,7 @@ from mypy_boto3_securityhub.type_defs import AdminAccountTypeDef
 Optional fields:
 
 - `AccountId`: `str`
-- `Status`: [AdminStatus](./literals.md#adminstatus)
+- `Status`: [AdminStatusType](./literals.md#adminstatustype)
 
 ## AvailabilityZoneTypeDef
 
@@ -1861,7 +1861,8 @@ from mypy_boto3_securityhub.type_defs import AwsIamAccessKeyDetailsTypeDef
 Optional fields:
 
 - `UserName`: `str`
-- `Status`: [AwsIamAccessKeyStatus](./literals.md#awsiamaccesskeystatus)
+- `Status`:
+  [AwsIamAccessKeyStatusType](./literals.md#awsiamaccesskeystatustype)
 - `CreatedAt`: `str`
 - `PrincipalId`: `str`
 - `PrincipalType`: `str`
@@ -3006,7 +3007,8 @@ Optional fields:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `SourceUrl`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ProductFields`: `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
+- `ProductFields`:
+  `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ProductName`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `CompanyName`:
@@ -3128,7 +3130,8 @@ Optional fields:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RelatedFindingsId`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `NoteText`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `NoteText`:
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NoteUpdatedAt`:
   `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `NoteUpdatedBy`:
@@ -3200,10 +3203,11 @@ Optional fields:
 - `ThreatIntelIndicators`:
   `List`\[[ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef)\]
 - `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
-- `VerificationState`: [VerificationState](./literals.md#verificationstate)
-- `WorkflowState`: [WorkflowState](./literals.md#workflowstate)
+- `VerificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
+- `WorkflowState`: [WorkflowStateType](./literals.md#workflowstatetype)
 - `Workflow`: [WorkflowTypeDef](./type_defs.md#workflowtypedef)
-- `RecordState`: [RecordState](./literals.md#recordstate)
+- `RecordState`: [RecordStateType](./literals.md#recordstatetype)
 - `RelatedFindings`:
   `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 - `Note`: [NoteTypeDef](./type_defs.md#notetypedef)
@@ -3467,7 +3471,7 @@ from mypy_boto3_securityhub.type_defs import ComplianceTypeDef
 
 Optional fields:
 
-- `Status`: [ComplianceStatus](./literals.md#compliancestatus)
+- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
 - `RelatedRequirements`: `List`\[`str`\]
 - `StatusReasons`:
   `List`\[[StatusReasonTypeDef](./type_defs.md#statusreasontypedef)\]
@@ -3524,7 +3528,8 @@ from mypy_boto3_securityhub.type_defs import CreateMembersResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
+- `UnprocessedAccounts`:
+  `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## CustomDataIdentifiersDetectionsTypeDef
 
@@ -3596,7 +3601,8 @@ from mypy_boto3_securityhub.type_defs import DateRangeTypeDef
 Optional fields:
 
 - `Value`: `int`
-- `Unit`: `Literal['DAYS']` (see [DateRangeUnit](./literals.md#daterangeunit))
+- `Unit`: `Literal['DAYS']` (see
+  [DateRangeUnitType](./literals.md#daterangeunittype))
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -3606,7 +3612,8 @@ from mypy_boto3_securityhub.type_defs import DeclineInvitationsResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
+- `UnprocessedAccounts`:
+  `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## DeleteActionTargetResponseTypeDef
 
@@ -3636,7 +3643,8 @@ from mypy_boto3_securityhub.type_defs import DeleteInvitationsResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
+- `UnprocessedAccounts`:
+  `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -3646,7 +3654,8 @@ from mypy_boto3_securityhub.type_defs import DeleteMembersResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
+- `UnprocessedAccounts`:
+  `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## DescribeActionTargetsResponseTypeDef
 
@@ -3769,7 +3778,7 @@ from mypy_boto3_securityhub.type_defs import FindingProviderSeverityTypeDef
 
 Optional fields:
 
-- `Label`: [SeverityLabel](./literals.md#severitylabel)
+- `Label`: [SeverityLabelType](./literals.md#severitylabeltype)
 - `Original`: `str`
 
 ## GeoLocationTypeDef
@@ -3828,7 +3837,8 @@ from mypy_boto3_securityhub.type_defs import GetInsightResultsResponseTypeDef
 
 Required fields:
 
-- `InsightResults`: [InsightResultsTypeDef](./type_defs.md#insightresultstypedef)
+- `InsightResults`:
+  [InsightResultsTypeDef](./type_defs.md#insightresultstypedef)
 
 ## GetInsightsResponseTypeDef
 
@@ -3873,7 +3883,8 @@ from mypy_boto3_securityhub.type_defs import GetMembersResponseTypeDef
 Optional fields:
 
 - `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
-- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
+- `UnprocessedAccounts`:
+  `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## IcmpTypeCodeTypeDef
 
@@ -3957,7 +3968,8 @@ from mypy_boto3_securityhub.type_defs import InviteMembersResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
+- `UnprocessedAccounts`:
+  `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## IpFilterTypeDef
 
@@ -4023,7 +4035,8 @@ from mypy_boto3_securityhub.type_defs import ListInvitationsResponseTypeDef
 
 Optional fields:
 
-- `Invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
+- `Invitations`:
+  `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `NextToken`: `str`
 
 ## ListMembersResponseTypeDef
@@ -4082,9 +4095,9 @@ Required fields:
 
 Optional fields:
 
-- `Type`: [MalwareType](./literals.md#malwaretype)
+- `Type`: [MalwareTypeType](./literals.md#malwaretypetype)
 - `Path`: `str`
-- `State`: [MalwareState](./literals.md#malwarestate)
+- `State`: [MalwareStateType](./literals.md#malwarestatetype)
 
 ## MapFilterTypeDef
 
@@ -4096,7 +4109,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Comparison`: [MapFilterComparison](./literals.md#mapfiltercomparison)
+- `Comparison`:
+  [MapFilterComparisonType](./literals.md#mapfiltercomparisontype)
 
 ## MemberTypeDef
 
@@ -4178,7 +4192,7 @@ from mypy_boto3_securityhub.type_defs import NetworkTypeDef
 
 Optional fields:
 
-- `Direction`: [NetworkDirection](./literals.md#networkdirection)
+- `Direction`: [NetworkDirectionType](./literals.md#networkdirectiontype)
 - `Protocol`: `str`
 - `OpenPortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `SourceIpV4`: `str`
@@ -4367,7 +4381,8 @@ Optional fields:
 - `CompanyName`: `str`
 - `Description`: `str`
 - `Categories`: `List`\[`str`\]
-- `IntegrationTypes`: `List`\[[IntegrationType](./literals.md#integrationtype)\]
+- `IntegrationTypes`:
+  `List`\[[IntegrationTypeType](./literals.md#integrationtypetype)\]
 - `MarketplaceUrl`: `str`
 - `ActivationUrl`: `str`
 - `ProductSubscriptionResourcePolicy`: `str`
@@ -4425,7 +4440,8 @@ from mypy_boto3_securityhub.type_defs import RemediationTypeDef
 
 Optional fields:
 
-- `Recommendation`: [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
+- `Recommendation`:
+  [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
 
 ## ResourceDetailsTypeDef
 
@@ -4449,8 +4465,10 @@ Optional fields:
   [AwsEc2SecurityGroupDetailsTypeDef](./type_defs.md#awsec2securitygroupdetailstypedef)
 - `AwsEc2Volume`:
   [AwsEc2VolumeDetailsTypeDef](./type_defs.md#awsec2volumedetailstypedef)
-- `AwsEc2Vpc`: [AwsEc2VpcDetailsTypeDef](./type_defs.md#awsec2vpcdetailstypedef)
-- `AwsEc2Eip`: [AwsEc2EipDetailsTypeDef](./type_defs.md#awsec2eipdetailstypedef)
+- `AwsEc2Vpc`:
+  [AwsEc2VpcDetailsTypeDef](./type_defs.md#awsec2vpcdetailstypedef)
+- `AwsEc2Eip`:
+  [AwsEc2EipDetailsTypeDef](./type_defs.md#awsec2eipdetailstypedef)
 - `AwsEc2Subnet`:
   [AwsEc2SubnetDetailsTypeDef](./type_defs.md#awsec2subnetdetailstypedef)
 - `AwsEc2NetworkAcl`:
@@ -4499,7 +4517,8 @@ Optional fields:
   [AwsIamGroupDetailsTypeDef](./type_defs.md#awsiamgroupdetailstypedef)
 - `AwsIamRole`:
   [AwsIamRoleDetailsTypeDef](./type_defs.md#awsiamroledetailstypedef)
-- `AwsKmsKey`: [AwsKmsKeyDetailsTypeDef](./type_defs.md#awskmskeydetailstypedef)
+- `AwsKmsKey`:
+  [AwsKmsKeyDetailsTypeDef](./type_defs.md#awskmskeydetailstypedef)
 - `AwsLambdaFunction`:
   [AwsLambdaFunctionDetailsTypeDef](./type_defs.md#awslambdafunctiondetailstypedef)
 - `AwsLambdaLayerVersion`:
@@ -4518,7 +4537,8 @@ Optional fields:
   [AwsRdsDbClusterSnapshotDetailsTypeDef](./type_defs.md#awsrdsdbclustersnapshotdetailstypedef)
 - `AwsRdsDbCluster`:
   [AwsRdsDbClusterDetailsTypeDef](./type_defs.md#awsrdsdbclusterdetailstypedef)
-- `Container`: [ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef)
+- `Container`:
+  [ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef)
 - `Other`: `Dict`\[`str`, `str`\]
 
 ## ResourceTypeDef
@@ -4534,7 +4554,7 @@ Required fields:
 
 Optional fields:
 
-- `Partition`: [Partition](./literals.md#partition)
+- `Partition`: [PartitionType](./literals.md#partitiontype)
 - `Region`: `str`
 - `ResourceRole`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -4587,7 +4607,7 @@ from mypy_boto3_securityhub.type_defs import SeverityTypeDef
 Optional fields:
 
 - `Product`: `float`
-- `Label`: [SeverityLabel](./literals.md#severitylabel)
+- `Label`: [SeverityLabelType](./literals.md#severitylabeltype)
 - `Normalized`: `int`
 - `Original`: `str`
 
@@ -4601,7 +4621,7 @@ Optional fields:
 
 - `Normalized`: `int`
 - `Product`: `float`
-- `Label`: [SeverityLabel](./literals.md#severitylabel)
+- `Label`: [SeverityLabelType](./literals.md#severitylabeltype)
 
 ## SoftwarePackageTypeDef
 
@@ -4626,7 +4646,7 @@ from mypy_boto3_securityhub.type_defs import SortCriterionTypeDef
 Optional fields:
 
 - `Field`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 ## StandardTypeDef
 
@@ -4650,14 +4670,14 @@ from mypy_boto3_securityhub.type_defs import StandardsControlTypeDef
 Optional fields:
 
 - `StandardsControlArn`: `str`
-- `ControlStatus`: [ControlStatus](./literals.md#controlstatus)
+- `ControlStatus`: [ControlStatusType](./literals.md#controlstatustype)
 - `DisabledReason`: `str`
 - `ControlStatusUpdatedAt`: `datetime`
 - `ControlId`: `str`
 - `Title`: `str`
 - `Description`: `str`
 - `RemediationUrl`: `str`
-- `SeverityRating`: [SeverityRating](./literals.md#severityrating)
+- `SeverityRating`: [SeverityRatingType](./literals.md#severityratingtype)
 - `RelatedRequirements`: `List`\[`str`\]
 
 ## StandardsSubscriptionRequestTypeDef
@@ -4685,7 +4705,7 @@ Required fields:
 - `StandardsSubscriptionArn`: `str`
 - `StandardsArn`: `str`
 - `StandardsInput`: `Dict`\[`str`, `str`\]
-- `StandardsStatus`: [StandardsStatus](./literals.md#standardsstatus)
+- `StandardsStatus`: [StandardsStatusType](./literals.md#standardsstatustype)
 
 ## StatusReasonTypeDef
 
@@ -4710,7 +4730,8 @@ from mypy_boto3_securityhub.type_defs import StringFilterTypeDef
 Optional fields:
 
 - `Value`: `str`
-- `Comparison`: [StringFilterComparison](./literals.md#stringfiltercomparison)
+- `Comparison`:
+  [StringFilterComparisonType](./literals.md#stringfiltercomparisontype)
 
 ## ThreatIntelIndicatorTypeDef
 
@@ -4720,10 +4741,11 @@ from mypy_boto3_securityhub.type_defs import ThreatIntelIndicatorTypeDef
 
 Optional fields:
 
-- `Type`: [ThreatIntelIndicatorType](./literals.md#threatintelindicatortype)
+- `Type`:
+  [ThreatIntelIndicatorTypeType](./literals.md#threatintelindicatortypetype)
 - `Value`: `str`
 - `Category`:
-  [ThreatIntelIndicatorCategory](./literals.md#threatintelindicatorcategory)
+  [ThreatIntelIndicatorCategoryType](./literals.md#threatintelindicatorcategorytype)
 - `LastObservedAt`: `str`
 - `Source`: `str`
 - `SourceUrl`: `str`
@@ -4803,7 +4825,7 @@ from mypy_boto3_securityhub.type_defs import WorkflowTypeDef
 
 Optional fields:
 
-- `Status`: [WorkflowStatus](./literals.md#workflowstatus)
+- `Status`: [WorkflowStatusType](./literals.md#workflowstatustype)
 
 ## WorkflowUpdateTypeDef
 
@@ -4813,4 +4835,4 @@ from mypy_boto3_securityhub.type_defs import WorkflowUpdateTypeDef
 
 Optional fields:
 
-- `Status`: [WorkflowStatus](./literals.md#workflowstatus)
+- `Status`: [WorkflowStatusType](./literals.md#workflowstatustype)

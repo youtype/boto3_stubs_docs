@@ -3,7 +3,7 @@
 > [Index](..) > [Schemas](.) > Waiters
 
 Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/schemas.html#Schemas)
 type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
@@ -25,7 +25,7 @@ def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
 ```
 
 Boto3 documentation:
-[Schemas.Waiter.code_binding_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.code_binding_exists)
+[Schemas.Waiter.code_binding_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/schemas.html#Schemas.Waiter.code_binding_exists)
 
 Arguments for `CodeBindingExistsWaiter.wait` method:
 

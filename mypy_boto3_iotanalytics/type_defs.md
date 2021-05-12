@@ -3,7 +3,7 @@
 > [Index](..) > [IoTAnalytics](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
 [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
@@ -206,7 +206,7 @@ Optional fields:
 - `channelName`: `str`
 - `channelStorage`:
   [ChannelStorageSummaryTypeDef](./type_defs.md#channelstoragesummarytypedef)
-- `status`: [ChannelStatus](./literals.md#channelstatus)
+- `status`: [ChannelStatusType](./literals.md#channelstatustype)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
@@ -222,7 +222,7 @@ Optional fields:
 - `name`: `str`
 - `storage`: [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `arn`: `str`
-- `status`: [ChannelStatus](./literals.md#channelstatus)
+- `status`: [ChannelStatusType](./literals.md#channelstatustype)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `creationTime`: `datetime`
@@ -380,7 +380,7 @@ from mypy_boto3_iotanalytics.type_defs import DatasetActionSummaryTypeDef
 Optional fields:
 
 - `actionName`: `str`
-- `actionType`: [DatasetActionType](./literals.md#datasetactiontype)
+- `actionType`: [DatasetActionTypeType](./literals.md#datasetactiontypetype)
 
 ## DatasetActionTypeDef
 
@@ -432,7 +432,7 @@ from mypy_boto3_iotanalytics.type_defs import DatasetContentStatusTypeDef
 
 Optional fields:
 
-- `state`: [DatasetContentState](./literals.md#datasetcontentstate)
+- `state`: [DatasetContentStateType](./literals.md#datasetcontentstatetype)
 - `reason`: `str`
 
 ## DatasetContentSummaryTypeDef
@@ -480,7 +480,7 @@ from mypy_boto3_iotanalytics.type_defs import DatasetSummaryTypeDef
 Optional fields:
 
 - `datasetName`: `str`
-- `status`: [DatasetStatus](./literals.md#datasetstatus)
+- `status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `triggers`:
@@ -497,7 +497,8 @@ from mypy_boto3_iotanalytics.type_defs import DatasetTriggerTypeDef
 Optional fields:
 
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
-- `dataset`: [TriggeringDatasetTypeDef](./type_defs.md#triggeringdatasettypedef)
+- `dataset`:
+  [TriggeringDatasetTypeDef](./type_defs.md#triggeringdatasettypedef)
 
 ## DatasetTypeDef
 
@@ -515,7 +516,7 @@ Optional fields:
   `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
   `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
-- `status`: [DatasetStatus](./literals.md#datasetstatus)
+- `status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `retentionPeriod`:
@@ -582,11 +583,11 @@ Optional fields:
 - `datastoreName`: `str`
 - `datastoreStorage`:
   [DatastoreStorageSummaryTypeDef](./type_defs.md#datastorestoragesummarytypedef)
-- `status`: [DatastoreStatus](./literals.md#datastorestatus)
+- `status`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
-- `fileFormatType`: [FileFormatType](./literals.md#fileformattype)
+- `fileFormatType`: [FileFormatTypeType](./literals.md#fileformattypetype)
 
 ## DatastoreTypeDef
 
@@ -599,7 +600,7 @@ Optional fields:
 - `name`: `str`
 - `storage`: [DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef)
 - `arn`: `str`
-- `status`: [DatastoreStatus](./literals.md#datastorestatus)
+- `status`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `creationTime`: `datetime`
@@ -671,7 +672,8 @@ from mypy_boto3_iotanalytics.type_defs import DescribeLoggingOptionsResponseType
 
 Optional fields:
 
-- `loggingOptions`: [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
 
 ## DescribePipelineResponseTypeDef
 
@@ -763,7 +765,8 @@ from mypy_boto3_iotanalytics.type_defs import GetDatasetContentResponseTypeDef
 
 Optional fields:
 
-- `entries`: `List`\[[DatasetEntryTypeDef](./type_defs.md#datasetentrytypedef)\]
+- `entries`:
+  `List`\[[DatasetEntryTypeDef](./type_defs.md#datasetentrytypedef)\]
 - `timestamp`: `datetime`
 - `status`:
   [DatasetContentStatusTypeDef](./type_defs.md#datasetcontentstatustypedef)
@@ -911,7 +914,8 @@ from mypy_boto3_iotanalytics.type_defs import LoggingOptionsTypeDef
 Required fields:
 
 - `roleArn`: `str`
-- `level`: `Literal['ERROR']` (see [LoggingLevel](./literals.md#logginglevel))
+- `level`: `Literal['ERROR']` (see
+  [LoggingLevelType](./literals.md#loggingleveltype))
 - `enabled`: `bool`
 
 ## MathActivityTypeDef
@@ -1064,7 +1068,7 @@ from mypy_boto3_iotanalytics.type_defs import ReprocessingSummaryTypeDef
 Optional fields:
 
 - `id`: `str`
-- `status`: [ReprocessingStatus](./literals.md#reprocessingstatus)
+- `status`: [ReprocessingStatusType](./literals.md#reprocessingstatustype)
 - `creationTime`: `datetime`
 
 ## ResourceConfigurationTypeDef
@@ -1075,7 +1079,7 @@ from mypy_boto3_iotanalytics.type_defs import ResourceConfigurationTypeDef
 
 Required fields:
 
-- `computeType`: [ComputeType](./literals.md#computetype)
+- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
 - `volumeSizeInGB`: `int`
 
 ## RetentionPeriodTypeDef

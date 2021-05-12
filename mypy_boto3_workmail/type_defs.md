@@ -3,7 +3,7 @@
 > [Index](..) > [WorkMail](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmail.html#WorkMail)
 type annotations stubs module
 [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
@@ -62,7 +62,8 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Effect`: [AccessControlRuleEffect](./literals.md#accesscontrolruleeffect)
+- `Effect`:
+  [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
 - `Description`: `str`
 - `IpRanges`: `List`\[`str`\]
 - `NotIpRanges`: `List`\[`str`\]
@@ -144,7 +145,7 @@ from mypy_boto3_workmail.type_defs import DelegateTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`: [MemberType](./literals.md#membertype)
+- `Type`: [MemberTypeType](./literals.md#membertypetype)
 
 ## DeleteOrganizationResponseTypeDef
 
@@ -168,7 +169,7 @@ Optional fields:
 - `GroupId`: `str`
 - `Name`: `str`
 - `Email`: `str`
-- `State`: [EntityState](./literals.md#entitystate)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -188,7 +189,7 @@ Optional fields:
 - `S3Prefix`: `str`
 - `S3Path`: `str`
 - `EstimatedProgress`: `int`
-- `State`: [MailboxExportJobState](./literals.md#mailboxexportjobstate)
+- `State`: [MailboxExportJobStateType](./literals.md#mailboxexportjobstatetype)
 - `ErrorInfo`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -222,9 +223,10 @@ Optional fields:
 - `ResourceId`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Type`: [ResourceType](./literals.md#resourcetype)
-- `BookingOptions`: [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
-- `State`: [EntityState](./literals.md#entitystate)
+- `Type`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `BookingOptions`:
+  [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -240,8 +242,8 @@ Optional fields:
 - `Name`: `str`
 - `Email`: `str`
 - `DisplayName`: `str`
-- `State`: [EntityState](./literals.md#entitystate)
-- `UserRole`: [UserRole](./literals.md#userrole)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
+- `UserRole`: [UserRoleType](./literals.md#userroletype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -264,8 +266,8 @@ from mypy_boto3_workmail.type_defs import FolderConfigurationTypeDef
 
 Required fields:
 
-- `Name`: [FolderName](./literals.md#foldername)
-- `Action`: [RetentionAction](./literals.md#retentionaction)
+- `Name`: [FolderNameType](./literals.md#foldernametype)
+- `Action`: [RetentionActionType](./literals.md#retentionactiontype)
 
 Optional fields:
 
@@ -279,7 +281,8 @@ from mypy_boto3_workmail.type_defs import GetAccessControlEffectResponseTypeDef
 
 Optional fields:
 
-- `Effect`: [AccessControlRuleEffect](./literals.md#accesscontrolruleeffect)
+- `Effect`:
+  [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
 - `MatchedRules`: `List`\[`str`\]
 
 ## GetDefaultRetentionPolicyResponseTypeDef
@@ -316,7 +319,7 @@ from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectResponseTyp
 Optional fields:
 
 - `Effect`:
-  [MobileDeviceAccessRuleEffect](./literals.md#mobiledeviceaccessruleeffect)
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
 - `MatchedRules`:
   `List`\[[MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef)\]
 
@@ -331,7 +334,7 @@ Optional fields:
 - `Id`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `State`: [EntityState](./literals.md#entitystate)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -399,7 +402,8 @@ from mypy_boto3_workmail.type_defs import ListMailboxPermissionsResponseTypeDef
 
 Optional fields:
 
-- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `Permissions`:
+  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `NextToken`: `str`
 
 ## ListMobileDeviceAccessRulesResponseTypeDef
@@ -482,7 +486,7 @@ Optional fields:
 - `S3BucketName`: `str`
 - `S3Path`: `str`
 - `EstimatedProgress`: `int`
-- `State`: [MailboxExportJobState](./literals.md#mailboxexportjobstate)
+- `State`: [MailboxExportJobStateType](./literals.md#mailboxexportjobstatetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
@@ -496,8 +500,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Type`: [MemberType](./literals.md#membertype)
-- `State`: [EntityState](./literals.md#entitystate)
+- `Type`: [MemberTypeType](./literals.md#membertypetype)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -524,7 +528,7 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Effect`:
-  [MobileDeviceAccessRuleEffect](./literals.md#mobiledeviceaccessruleeffect)
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
 - `DeviceTypes`: `List`\[`str`\]
 - `NotDeviceTypes`: `List`\[`str`\]
 - `DeviceModels`: `List`\[`str`\]
@@ -571,8 +575,9 @@ from mypy_boto3_workmail.type_defs import PermissionTypeDef
 Required fields:
 
 - `GranteeId`: `str`
-- `GranteeType`: [MemberType](./literals.md#membertype)
-- `PermissionValues`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `GranteeType`: [MemberTypeType](./literals.md#membertypetype)
+- `PermissionValues`:
+  `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
 
 ## ResourceTypeDef
 
@@ -585,8 +590,8 @@ Optional fields:
 - `Id`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Type`: [ResourceType](./literals.md#resourcetype)
-- `State`: [EntityState](./literals.md#entitystate)
+- `Type`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -623,7 +628,7 @@ Optional fields:
 - `Email`: `str`
 - `Name`: `str`
 - `DisplayName`: `str`
-- `State`: [EntityState](./literals.md#entitystate)
-- `UserRole`: [UserRole](./literals.md#userrole)
+- `State`: [EntityStateType](./literals.md#entitystatetype)
+- `UserRole`: [UserRoleType](./literals.md#userroletype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`

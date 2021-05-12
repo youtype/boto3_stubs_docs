@@ -3,7 +3,7 @@
 > [Index](..) > GreengrassV2
 
 Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
@@ -30,44 +30,44 @@ Can be used directly:
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
 ```
 
-GreengrassV2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_deployment](./client.md#cancel-deployment)
-- [create_component_version](./client.md#create-component-version)
-- [create_deployment](./client.md#create-deployment)
-- [delete_component](./client.md#delete-component)
-- [delete_core_device](./client.md#delete-core-device)
-- [describe_component](./client.md#describe-component)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_component](./client.md#get-component)
-- [get_component_version_artifact](./client.md#get-component-version-artifact)
-- [get_core_device](./client.md#get-core-device)
-- [get_deployment](./client.md#get-deployment)
-- [get_paginator](./client.md#get-paginator)
-- [list_component_versions](./client.md#list-component-versions)
-- [list_components](./client.md#list-components)
-- [list_core_devices](./client.md#list-core-devices)
-- [list_deployments](./client.md#list-deployments)
-- [list_effective_deployments](./client.md#list-effective-deployments)
-- [list_installed_components](./client.md#list-installed-components)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [resolve_component_candidates](./client.md#resolve-component-candidates)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_deployment](./client.md#cancel_deployment)
+- [create_component_version](./client.md#create_component_version)
+- [create_deployment](./client.md#create_deployment)
+- [delete_component](./client.md#delete_component)
+- [delete_core_device](./client.md#delete_core_device)
+- [describe_component](./client.md#describe_component)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_component](./client.md#get_component)
+- [get_component_version_artifact](./client.md#get_component_version_artifact)
+- [get_core_device](./client.md#get_core_device)
+- [get_deployment](./client.md#get_deployment)
+- [get_paginator](./client.md#get_paginator)
+- [list_component_versions](./client.md#list_component_versions)
+- [list_components](./client.md#list_components)
+- [list_core_devices](./client.md#list_core_devices)
+- [list_deployments](./client.md#list_deployments)
+- [list_effective_deployments](./client.md#list_effective_deployments)
+- [list_installed_components](./client.md#list_installed_components)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [resolve_component_candidates](./client.md#resolve_component_candidates)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+GreengrassV2Client [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -94,32 +94,32 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_greengrassv2.literals import CloudComponentState, ...
+from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 ```
 
-- [CloudComponentState](./literals.md#cloudcomponentstate)
-- [ComponentDependencyType](./literals.md#componentdependencytype)
-- [ComponentVisibilityScope](./literals.md#componentvisibilityscope)
-- [CoreDeviceStatus](./literals.md#coredevicestatus)
-- [DeploymentComponentUpdatePolicyAction](./literals.md#deploymentcomponentupdatepolicyaction)
-- [DeploymentFailureHandlingPolicy](./literals.md#deploymentfailurehandlingpolicy)
-- [DeploymentHistoryFilter](./literals.md#deploymenthistoryfilter)
-- [DeploymentStatus](./literals.md#deploymentstatus)
-- [EffectiveDeploymentExecutionStatus](./literals.md#effectivedeploymentexecutionstatus)
-- [InstalledComponentLifecycleState](./literals.md#installedcomponentlifecyclestate)
-- [IoTJobAbortAction](./literals.md#iotjobabortaction)
-- [IoTJobExecutionFailureType](./literals.md#iotjobexecutionfailuretype)
-- [LambdaEventSourceType](./literals.md#lambdaeventsourcetype)
-- [LambdaFilesystemPermission](./literals.md#lambdafilesystempermission)
-- [LambdaInputPayloadEncodingType](./literals.md#lambdainputpayloadencodingtype)
-- [LambdaIsolationMode](./literals.md#lambdaisolationmode)
+- [CloudComponentStateType](./literals.md#cloudcomponentstatetype)
+- [ComponentDependencyTypeType](./literals.md#componentdependencytypetype)
+- [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
+- [CoreDeviceStatusType](./literals.md#coredevicestatustype)
+- [DeploymentComponentUpdatePolicyActionType](./literals.md#deploymentcomponentupdatepolicyactiontype)
+- [DeploymentFailureHandlingPolicyType](./literals.md#deploymentfailurehandlingpolicytype)
+- [DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype)
+- [DeploymentStatusType](./literals.md#deploymentstatustype)
+- [EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype)
+- [InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype)
+- [IoTJobAbortActionType](./literals.md#iotjobabortactiontype)
+- [IoTJobExecutionFailureTypeType](./literals.md#iotjobexecutionfailuretypetype)
+- [LambdaEventSourceTypeType](./literals.md#lambdaeventsourcetypetype)
+- [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
+- [LambdaInputPayloadEncodingTypeType](./literals.md#lambdainputpayloadencodingtypetype)
+- [LambdaIsolationModeType](./literals.md#lambdaisolationmodetype)
 - [ListComponentVersionsPaginatorName](./literals.md#listcomponentversionspaginatorname)
 - [ListComponentsPaginatorName](./literals.md#listcomponentspaginatorname)
 - [ListCoreDevicesPaginatorName](./literals.md#listcoredevicespaginatorname)
 - [ListDeploymentsPaginatorName](./literals.md#listdeploymentspaginatorname)
 - [ListEffectiveDeploymentsPaginatorName](./literals.md#listeffectivedeploymentspaginatorname)
 - [ListInstalledComponentsPaginatorName](./literals.md#listinstalledcomponentspaginatorname)
-- [RecipeOutputFormat](./literals.md#recipeoutputformat)
+- [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
 
 ## Typed dictionaries
 

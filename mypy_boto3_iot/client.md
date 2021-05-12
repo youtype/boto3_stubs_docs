@@ -3,7 +3,7 @@
 > [Index](..) > [IoT](.) > IoTClient
 
 Auto-generated documentation for
-[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT)
 type annotations stubs module
 [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
@@ -252,7 +252,7 @@ def get_iot_client() -> IoTClient:
 ```
 
 Boto3 documentation:
-[IoT.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client)
+[IoT.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client)
 
 ## Exceptions
 
@@ -306,7 +306,7 @@ Exceptions:
 Type annotations for `boto3.client("iot").accept_certificate_transfer` method.
 
 Boto3 documentation:
-[IoT.Client.accept_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.accept_certificate_transfer)
+[IoT.Client.accept_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.accept_certificate_transfer)
 
 Arguments:
 
@@ -318,7 +318,7 @@ Arguments:
 Type annotations for `boto3.client("iot").add_thing_to_billing_group` method.
 
 Boto3 documentation:
-[IoT.Client.add_thing_to_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_billing_group)
+[IoT.Client.add_thing_to_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.add_thing_to_billing_group)
 
 Arguments:
 
@@ -334,7 +334,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").add_thing_to_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.add_thing_to_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_thing_group)
+[IoT.Client.add_thing_to_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.add_thing_to_thing_group)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").associate_targets_with_job` method.
 
 Boto3 documentation:
-[IoT.Client.associate_targets_with_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.associate_targets_with_job)
+[IoT.Client.associate_targets_with_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.associate_targets_with_job)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Returns
 Type annotations for `boto3.client("iot").attach_policy` method.
 
 Boto3 documentation:
-[IoT.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_policy)
+[IoT.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.attach_policy)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Arguments:
 Type annotations for `boto3.client("iot").attach_principal_policy` method.
 
 Boto3 documentation:
-[IoT.Client.attach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_principal_policy)
+[IoT.Client.attach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.attach_principal_policy)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Arguments:
 Type annotations for `boto3.client("iot").attach_security_profile` method.
 
 Boto3 documentation:
-[IoT.Client.attach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_security_profile)
+[IoT.Client.attach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.attach_security_profile)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").attach_thing_principal` method.
 
 Boto3 documentation:
-[IoT.Client.attach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_thing_principal)
+[IoT.Client.attach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.attach_thing_principal)
 
 Arguments:
 
@@ -420,7 +420,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").can_paginate` method.
 
 Boto3 documentation:
-[IoT.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.can_paginate)
+[IoT.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.can_paginate)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("iot").cancel_audit_mitigation_actions_task`
 method.
 
 Boto3 documentation:
-[IoT.Client.cancel_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task)
+[IoT.Client.cancel_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").cancel_audit_task` method.
 
 Boto3 documentation:
-[IoT.Client.cancel_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_task)
+[IoT.Client.cancel_audit_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.cancel_audit_task)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").cancel_certificate_transfer` method.
 
 Boto3 documentation:
-[IoT.Client.cancel_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_certificate_transfer)
+[IoT.Client.cancel_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.cancel_certificate_transfer)
 
 Arguments:
 
@@ -472,7 +472,7 @@ Type annotations for
 `boto3.client("iot").cancel_detect_mitigation_actions_task` method.
 
 Boto3 documentation:
-[IoT.Client.cancel_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task)
+[IoT.Client.cancel_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").cancel_job` method.
 
 Boto3 documentation:
-[IoT.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job)
+[IoT.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.cancel_job)
 
 Arguments:
 
@@ -501,7 +501,7 @@ Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
 Type annotations for `boto3.client("iot").cancel_job_execution` method.
 
 Boto3 documentation:
-[IoT.Client.cancel_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job_execution)
+[IoT.Client.cancel_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.cancel_job_execution)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Arguments:
 Type annotations for `boto3.client("iot").clear_default_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.clear_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.clear_default_authorizer)
+[IoT.Client.clear_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.clear_default_authorizer)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("iot").confirm_topic_rule_destination`
 method.
 
 Boto3 documentation:
-[IoT.Client.confirm_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination)
+[IoT.Client.confirm_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination)
 
 Arguments:
 
@@ -539,7 +539,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").create_audit_suppression` method.
 
 Boto3 documentation:
-[IoT.Client.create_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_audit_suppression)
+[IoT.Client.create_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_audit_suppression)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").create_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_authorizer)
+[IoT.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_authorizer)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Arguments:
 - `authorizerFunctionArn`: `str` *(required)*
 - `tokenKeyName`: `str`
 - `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
-- `status`: [AuthorizerStatus](./literals.md#authorizerstatus)
+- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
 
@@ -579,7 +579,7 @@ Returns
 Type annotations for `boto3.client("iot").create_billing_group` method.
 
 Boto3 documentation:
-[IoT.Client.create_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_billing_group)
+[IoT.Client.create_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_billing_group)
 
 Arguments:
 
@@ -596,7 +596,7 @@ Returns
 Type annotations for `boto3.client("iot").create_certificate_from_csr` method.
 
 Boto3 documentation:
-[IoT.Client.create_certificate_from_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_certificate_from_csr)
+[IoT.Client.create_certificate_from_csr](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_certificate_from_csr)
 
 Arguments:
 
@@ -611,12 +611,13 @@ Returns
 Type annotations for `boto3.client("iot").create_custom_metric` method.
 
 Boto3 documentation:
-[IoT.Client.create_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_custom_metric)
+[IoT.Client.create_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_custom_metric)
 
 Arguments:
 
 - `metricName`: `str` *(required)*
-- `metricType`: [CustomMetricType](./literals.md#custommetrictype) *(required)*
+- `metricType`: [CustomMetricTypeType](./literals.md#custommetrictypetype)
+  *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `displayName`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -629,13 +630,13 @@ Returns
 Type annotations for `boto3.client("iot").create_dimension` method.
 
 Boto3 documentation:
-[IoT.Client.create_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dimension)
+[IoT.Client.create_dimension](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_dimension)
 
 Arguments:
 
 - `name`: `str` *(required)*
 - `type`: `Literal['TOPIC_FILTER']` (see
-  [DimensionType](./literals.md#dimensiontype)) *(required)*
+  [DimensionTypeType](./literals.md#dimensiontypetype)) *(required)*
 - `stringValues`: `List`\[`str`\] *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -648,7 +649,7 @@ Returns
 Type annotations for `boto3.client("iot").create_domain_configuration` method.
 
 Boto3 documentation:
-[IoT.Client.create_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_domain_configuration)
+[IoT.Client.create_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_domain_configuration)
 
 Arguments:
 
@@ -658,7 +659,7 @@ Arguments:
 - `validationCertificateArn`: `str`
 - `authorizerConfig`:
   [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
-- `serviceType`: [ServiceType](./literals.md#servicetype)
+- `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -669,7 +670,7 @@ Returns
 Type annotations for `boto3.client("iot").create_dynamic_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.create_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dynamic_thing_group)
+[IoT.Client.create_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_dynamic_thing_group)
 
 Arguments:
 
@@ -689,7 +690,7 @@ Returns
 Type annotations for `boto3.client("iot").create_job` method.
 
 Boto3 documentation:
-[IoT.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job)
+[IoT.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_job)
 
 Arguments:
 
@@ -700,7 +701,7 @@ Arguments:
 - `description`: `str`
 - `presignedUrlConfig`:
   [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
-- `targetSelection`: [TargetSelection](./literals.md#targetselection)
+- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `jobExecutionsRolloutConfig`:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
@@ -715,7 +716,7 @@ Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 Type annotations for `boto3.client("iot").create_keys_and_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.create_keys_and_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_keys_and_certificate)
+[IoT.Client.create_keys_and_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_keys_and_certificate)
 
 Arguments:
 
@@ -729,7 +730,7 @@ Returns
 Type annotations for `boto3.client("iot").create_mitigation_action` method.
 
 Boto3 documentation:
-[IoT.Client.create_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_mitigation_action)
+[IoT.Client.create_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_mitigation_action)
 
 Arguments:
 
@@ -748,18 +749,19 @@ Returns
 Type annotations for `boto3.client("iot").create_ota_update` method.
 
 Boto3 documentation:
-[IoT.Client.create_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_ota_update)
+[IoT.Client.create_ota_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_ota_update)
 
 Arguments:
 
 - `otaUpdateId`: `str` *(required)*
 - `targets`: `List`\[`str`\] *(required)*
-- `files`: `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
+- `files`:
+  `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
 - `description`: `str`
 - `protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
-- `targetSelection`: [TargetSelection](./literals.md#targetselection)
+- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `awsJobExecutionsRolloutConfig`:
   [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
 - `awsJobPresignedUrlConfig`:
@@ -779,7 +781,7 @@ Returns
 Type annotations for `boto3.client("iot").create_policy` method.
 
 Boto3 documentation:
-[IoT.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy)
+[IoT.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_policy)
 
 Arguments:
 
@@ -795,7 +797,7 @@ Returns
 Type annotations for `boto3.client("iot").create_policy_version` method.
 
 Boto3 documentation:
-[IoT.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy_version)
+[IoT.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_policy_version)
 
 Arguments:
 
@@ -811,7 +813,7 @@ Returns
 Type annotations for `boto3.client("iot").create_provisioning_claim` method.
 
 Boto3 documentation:
-[IoT.Client.create_provisioning_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_claim)
+[IoT.Client.create_provisioning_claim](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_provisioning_claim)
 
 Arguments:
 
@@ -825,7 +827,7 @@ Returns
 Type annotations for `boto3.client("iot").create_provisioning_template` method.
 
 Boto3 documentation:
-[IoT.Client.create_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template)
+[IoT.Client.create_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_provisioning_template)
 
 Arguments:
 
@@ -847,7 +849,7 @@ Type annotations for `boto3.client("iot").create_provisioning_template_version`
 method.
 
 Boto3 documentation:
-[IoT.Client.create_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
+[IoT.Client.create_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
 
 Arguments:
 
@@ -863,7 +865,7 @@ Returns
 Type annotations for `boto3.client("iot").create_role_alias` method.
 
 Boto3 documentation:
-[IoT.Client.create_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_role_alias)
+[IoT.Client.create_role_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_role_alias)
 
 Arguments:
 
@@ -880,15 +882,16 @@ Returns
 Type annotations for `boto3.client("iot").create_scheduled_audit` method.
 
 Boto3 documentation:
-[IoT.Client.create_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_scheduled_audit)
+[IoT.Client.create_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_scheduled_audit)
 
 Arguments:
 
-- `frequency`: [AuditFrequency](./literals.md#auditfrequency) *(required)*
+- `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
+  *(required)*
 - `targetCheckNames`: `List`\[`str`\] *(required)*
 - `scheduledAuditName`: `str` *(required)*
 - `dayOfMonth`: `str`
-- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
+- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -899,7 +902,7 @@ Returns
 Type annotations for `boto3.client("iot").create_security_profile` method.
 
 Boto3 documentation:
-[IoT.Client.create_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_security_profile)
+[IoT.Client.create_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_security_profile)
 
 Arguments:
 
@@ -907,7 +910,7 @@ Arguments:
 - `securityProfileDescription`: `str`
 - `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
 - `alertTargets`: `Dict`\[`Literal['SNS']` (see
-  [AlertTargetType](./literals.md#alerttargettype)),
+  [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
 - `additionalMetricsToRetain`: `List`\[`str`\]
 - `additionalMetricsToRetainV2`:
@@ -922,7 +925,7 @@ Returns
 Type annotations for `boto3.client("iot").create_stream` method.
 
 Boto3 documentation:
-[IoT.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_stream)
+[IoT.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_stream)
 
 Arguments:
 
@@ -941,7 +944,7 @@ Returns
 Type annotations for `boto3.client("iot").create_thing` method.
 
 Boto3 documentation:
-[IoT.Client.create_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing)
+[IoT.Client.create_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_thing)
 
 Arguments:
 
@@ -959,7 +962,7 @@ Returns
 Type annotations for `boto3.client("iot").create_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.create_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_group)
+[IoT.Client.create_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_thing_group)
 
 Arguments:
 
@@ -977,7 +980,7 @@ Returns
 Type annotations for `boto3.client("iot").create_thing_type` method.
 
 Boto3 documentation:
-[IoT.Client.create_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_type)
+[IoT.Client.create_thing_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_thing_type)
 
 Arguments:
 
@@ -994,13 +997,14 @@ Returns
 Type annotations for `boto3.client("iot").create_topic_rule` method.
 
 Boto3 documentation:
-[IoT.Client.create_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule)
+[IoT.Client.create_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_topic_rule)
 
 Arguments:
 
 - `ruleName`: `str` *(required)*
 - `topicRulePayload`:
-  [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) *(required)*
+  [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef)
+  *(required)*
 - `tags`: `str`
 
 ### create_topic_rule_destination
@@ -1009,7 +1013,7 @@ Type annotations for `boto3.client("iot").create_topic_rule_destination`
 method.
 
 Boto3 documentation:
-[IoT.Client.create_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule_destination)
+[IoT.Client.create_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.create_topic_rule_destination)
 
 Arguments:
 
@@ -1026,7 +1030,7 @@ Type annotations for `boto3.client("iot").delete_account_audit_configuration`
 method.
 
 Boto3 documentation:
-[IoT.Client.delete_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_account_audit_configuration)
+[IoT.Client.delete_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_account_audit_configuration)
 
 Arguments:
 
@@ -1039,7 +1043,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_audit_suppression` method.
 
 Boto3 documentation:
-[IoT.Client.delete_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_audit_suppression)
+[IoT.Client.delete_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_audit_suppression)
 
 Arguments:
 
@@ -1055,7 +1059,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_authorizer)
+[IoT.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_authorizer)
 
 Arguments:
 
@@ -1068,7 +1072,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_billing_group` method.
 
 Boto3 documentation:
-[IoT.Client.delete_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_billing_group)
+[IoT.Client.delete_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_billing_group)
 
 Arguments:
 
@@ -1082,7 +1086,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_ca_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.delete_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ca_certificate)
+[IoT.Client.delete_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_ca_certificate)
 
 Arguments:
 
@@ -1095,7 +1099,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_certificate)
+[IoT.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_certificate)
 
 Arguments:
 
@@ -1107,7 +1111,7 @@ Arguments:
 Type annotations for `boto3.client("iot").delete_custom_metric` method.
 
 Boto3 documentation:
-[IoT.Client.delete_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_custom_metric)
+[IoT.Client.delete_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_custom_metric)
 
 Arguments:
 
@@ -1120,7 +1124,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_dimension` method.
 
 Boto3 documentation:
-[IoT.Client.delete_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dimension)
+[IoT.Client.delete_dimension](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_dimension)
 
 Arguments:
 
@@ -1133,7 +1137,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_domain_configuration` method.
 
 Boto3 documentation:
-[IoT.Client.delete_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_domain_configuration)
+[IoT.Client.delete_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_domain_configuration)
 
 Arguments:
 
@@ -1146,7 +1150,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_dynamic_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.delete_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group)
+[IoT.Client.delete_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group)
 
 Arguments:
 
@@ -1160,7 +1164,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_job` method.
 
 Boto3 documentation:
-[IoT.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job)
+[IoT.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_job)
 
 Arguments:
 
@@ -1173,7 +1177,7 @@ Arguments:
 Type annotations for `boto3.client("iot").delete_job_execution` method.
 
 Boto3 documentation:
-[IoT.Client.delete_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_execution)
+[IoT.Client.delete_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_job_execution)
 
 Arguments:
 
@@ -1188,7 +1192,7 @@ Arguments:
 Type annotations for `boto3.client("iot").delete_mitigation_action` method.
 
 Boto3 documentation:
-[IoT.Client.delete_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_mitigation_action)
+[IoT.Client.delete_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_mitigation_action)
 
 Arguments:
 
@@ -1201,7 +1205,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_ota_update` method.
 
 Boto3 documentation:
-[IoT.Client.delete_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ota_update)
+[IoT.Client.delete_ota_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_ota_update)
 
 Arguments:
 
@@ -1216,7 +1220,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_policy` method.
 
 Boto3 documentation:
-[IoT.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy)
+[IoT.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_policy)
 
 Arguments:
 
@@ -1227,7 +1231,7 @@ Arguments:
 Type annotations for `boto3.client("iot").delete_policy_version` method.
 
 Boto3 documentation:
-[IoT.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy_version)
+[IoT.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_policy_version)
 
 Arguments:
 
@@ -1239,7 +1243,7 @@ Arguments:
 Type annotations for `boto3.client("iot").delete_provisioning_template` method.
 
 Boto3 documentation:
-[IoT.Client.delete_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template)
+[IoT.Client.delete_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_provisioning_template)
 
 Arguments:
 
@@ -1253,7 +1257,7 @@ Type annotations for `boto3.client("iot").delete_provisioning_template_version`
 method.
 
 Boto3 documentation:
-[IoT.Client.delete_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
+[IoT.Client.delete_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
 
 Arguments:
 
@@ -1267,7 +1271,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_registration_code` method.
 
 Boto3 documentation:
-[IoT.Client.delete_registration_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_registration_code)
+[IoT.Client.delete_registration_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_registration_code)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1276,7 +1280,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_role_alias` method.
 
 Boto3 documentation:
-[IoT.Client.delete_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_role_alias)
+[IoT.Client.delete_role_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_role_alias)
 
 Arguments:
 
@@ -1289,7 +1293,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_scheduled_audit` method.
 
 Boto3 documentation:
-[IoT.Client.delete_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_scheduled_audit)
+[IoT.Client.delete_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_scheduled_audit)
 
 Arguments:
 
@@ -1302,7 +1306,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_security_profile` method.
 
 Boto3 documentation:
-[IoT.Client.delete_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_security_profile)
+[IoT.Client.delete_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_security_profile)
 
 Arguments:
 
@@ -1316,7 +1320,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_stream` method.
 
 Boto3 documentation:
-[IoT.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_stream)
+[IoT.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_stream)
 
 Arguments:
 
@@ -1329,7 +1333,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_thing` method.
 
 Boto3 documentation:
-[IoT.Client.delete_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing)
+[IoT.Client.delete_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_thing)
 
 Arguments:
 
@@ -1343,7 +1347,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.delete_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_group)
+[IoT.Client.delete_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_thing_group)
 
 Arguments:
 
@@ -1357,7 +1361,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_thing_type` method.
 
 Boto3 documentation:
-[IoT.Client.delete_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_type)
+[IoT.Client.delete_thing_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_thing_type)
 
 Arguments:
 
@@ -1370,7 +1374,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_topic_rule` method.
 
 Boto3 documentation:
-[IoT.Client.delete_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule)
+[IoT.Client.delete_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_topic_rule)
 
 Arguments:
 
@@ -1382,7 +1386,7 @@ Type annotations for `boto3.client("iot").delete_topic_rule_destination`
 method.
 
 Boto3 documentation:
-[IoT.Client.delete_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule_destination)
+[IoT.Client.delete_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_topic_rule_destination)
 
 Arguments:
 
@@ -1395,11 +1399,12 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").delete_v2_logging_level` method.
 
 Boto3 documentation:
-[IoT.Client.delete_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_v2_logging_level)
+[IoT.Client.delete_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.delete_v2_logging_level)
 
 Arguments:
 
-- `targetType`: [LogTargetType](./literals.md#logtargettype) *(required)*
+- `targetType`: [LogTargetTypeType](./literals.md#logtargettypetype)
+  *(required)*
 - `targetName`: `str` *(required)*
 
 ### deprecate_thing_type
@@ -1407,7 +1412,7 @@ Arguments:
 Type annotations for `boto3.client("iot").deprecate_thing_type` method.
 
 Boto3 documentation:
-[IoT.Client.deprecate_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.deprecate_thing_type)
+[IoT.Client.deprecate_thing_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.deprecate_thing_type)
 
 Arguments:
 
@@ -1422,7 +1427,7 @@ Type annotations for `boto3.client("iot").describe_account_audit_configuration`
 method.
 
 Boto3 documentation:
-[IoT.Client.describe_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_account_audit_configuration)
+[IoT.Client.describe_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_account_audit_configuration)
 
 Returns
 [DescribeAccountAuditConfigurationResponseTypeDef](./type_defs.md#describeaccountauditconfigurationresponsetypedef).
@@ -1432,7 +1437,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_audit_finding` method.
 
 Boto3 documentation:
-[IoT.Client.describe_audit_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_finding)
+[IoT.Client.describe_audit_finding](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_audit_finding)
 
 Arguments:
 
@@ -1447,7 +1452,7 @@ Type annotations for
 `boto3.client("iot").describe_audit_mitigation_actions_task` method.
 
 Boto3 documentation:
-[IoT.Client.describe_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task)
+[IoT.Client.describe_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task)
 
 Arguments:
 
@@ -1461,7 +1466,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_audit_suppression` method.
 
 Boto3 documentation:
-[IoT.Client.describe_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_suppression)
+[IoT.Client.describe_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_audit_suppression)
 
 Arguments:
 
@@ -1478,7 +1483,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_audit_task` method.
 
 Boto3 documentation:
-[IoT.Client.describe_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_task)
+[IoT.Client.describe_audit_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_audit_task)
 
 Arguments:
 
@@ -1492,7 +1497,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.describe_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_authorizer)
+[IoT.Client.describe_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_authorizer)
 
 Arguments:
 
@@ -1506,7 +1511,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_billing_group` method.
 
 Boto3 documentation:
-[IoT.Client.describe_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_billing_group)
+[IoT.Client.describe_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_billing_group)
 
 Arguments:
 
@@ -1520,7 +1525,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_ca_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.describe_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_ca_certificate)
+[IoT.Client.describe_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_ca_certificate)
 
 Arguments:
 
@@ -1534,7 +1539,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_certificate)
+[IoT.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_certificate)
 
 Arguments:
 
@@ -1548,7 +1553,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_custom_metric` method.
 
 Boto3 documentation:
-[IoT.Client.describe_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_custom_metric)
+[IoT.Client.describe_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_custom_metric)
 
 Arguments:
 
@@ -1562,7 +1567,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_default_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.describe_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_default_authorizer)
+[IoT.Client.describe_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_default_authorizer)
 
 Returns
 [DescribeDefaultAuthorizerResponseTypeDef](./type_defs.md#describedefaultauthorizerresponsetypedef).
@@ -1573,7 +1578,7 @@ Type annotations for
 `boto3.client("iot").describe_detect_mitigation_actions_task` method.
 
 Boto3 documentation:
-[IoT.Client.describe_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task)
+[IoT.Client.describe_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task)
 
 Arguments:
 
@@ -1587,7 +1592,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_dimension` method.
 
 Boto3 documentation:
-[IoT.Client.describe_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_dimension)
+[IoT.Client.describe_dimension](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_dimension)
 
 Arguments:
 
@@ -1602,7 +1607,7 @@ Type annotations for `boto3.client("iot").describe_domain_configuration`
 method.
 
 Boto3 documentation:
-[IoT.Client.describe_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_domain_configuration)
+[IoT.Client.describe_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_domain_configuration)
 
 Arguments:
 
@@ -1616,7 +1621,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_endpoint` method.
 
 Boto3 documentation:
-[IoT.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_endpoint)
+[IoT.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_endpoint)
 
 Arguments:
 
@@ -1631,7 +1636,7 @@ Type annotations for `boto3.client("iot").describe_event_configurations`
 method.
 
 Boto3 documentation:
-[IoT.Client.describe_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_event_configurations)
+[IoT.Client.describe_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_event_configurations)
 
 Returns
 [DescribeEventConfigurationsResponseTypeDef](./type_defs.md#describeeventconfigurationsresponsetypedef).
@@ -1641,7 +1646,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_index` method.
 
 Boto3 documentation:
-[IoT.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_index)
+[IoT.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_index)
 
 Arguments:
 
@@ -1655,7 +1660,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_job` method.
 
 Boto3 documentation:
-[IoT.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job)
+[IoT.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_job)
 
 Arguments:
 
@@ -1669,7 +1674,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_job_execution` method.
 
 Boto3 documentation:
-[IoT.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_execution)
+[IoT.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_job_execution)
 
 Arguments:
 
@@ -1685,7 +1690,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_mitigation_action` method.
 
 Boto3 documentation:
-[IoT.Client.describe_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_mitigation_action)
+[IoT.Client.describe_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_mitigation_action)
 
 Arguments:
 
@@ -1700,7 +1705,7 @@ Type annotations for `boto3.client("iot").describe_provisioning_template`
 method.
 
 Boto3 documentation:
-[IoT.Client.describe_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template)
+[IoT.Client.describe_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_provisioning_template)
 
 Arguments:
 
@@ -1715,7 +1720,7 @@ Type annotations for
 `boto3.client("iot").describe_provisioning_template_version` method.
 
 Boto3 documentation:
-[IoT.Client.describe_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
+[IoT.Client.describe_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
 
 Arguments:
 
@@ -1730,7 +1735,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_role_alias` method.
 
 Boto3 documentation:
-[IoT.Client.describe_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_role_alias)
+[IoT.Client.describe_role_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_role_alias)
 
 Arguments:
 
@@ -1744,7 +1749,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_scheduled_audit` method.
 
 Boto3 documentation:
-[IoT.Client.describe_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_scheduled_audit)
+[IoT.Client.describe_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_scheduled_audit)
 
 Arguments:
 
@@ -1758,7 +1763,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_security_profile` method.
 
 Boto3 documentation:
-[IoT.Client.describe_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_security_profile)
+[IoT.Client.describe_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_security_profile)
 
 Arguments:
 
@@ -1772,7 +1777,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_stream` method.
 
 Boto3 documentation:
-[IoT.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_stream)
+[IoT.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_stream)
 
 Arguments:
 
@@ -1786,7 +1791,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_thing` method.
 
 Boto3 documentation:
-[IoT.Client.describe_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing)
+[IoT.Client.describe_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_thing)
 
 Arguments:
 
@@ -1800,7 +1805,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.describe_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_group)
+[IoT.Client.describe_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_thing_group)
 
 Arguments:
 
@@ -1815,7 +1820,7 @@ Type annotations for `boto3.client("iot").describe_thing_registration_task`
 method.
 
 Boto3 documentation:
-[IoT.Client.describe_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_registration_task)
+[IoT.Client.describe_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_thing_registration_task)
 
 Arguments:
 
@@ -1829,7 +1834,7 @@ Returns
 Type annotations for `boto3.client("iot").describe_thing_type` method.
 
 Boto3 documentation:
-[IoT.Client.describe_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_type)
+[IoT.Client.describe_thing_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.describe_thing_type)
 
 Arguments:
 
@@ -1843,7 +1848,7 @@ Returns
 Type annotations for `boto3.client("iot").detach_policy` method.
 
 Boto3 documentation:
-[IoT.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_policy)
+[IoT.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.detach_policy)
 
 Arguments:
 
@@ -1855,7 +1860,7 @@ Arguments:
 Type annotations for `boto3.client("iot").detach_principal_policy` method.
 
 Boto3 documentation:
-[IoT.Client.detach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_principal_policy)
+[IoT.Client.detach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.detach_principal_policy)
 
 Arguments:
 
@@ -1867,7 +1872,7 @@ Arguments:
 Type annotations for `boto3.client("iot").detach_security_profile` method.
 
 Boto3 documentation:
-[IoT.Client.detach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_security_profile)
+[IoT.Client.detach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.detach_security_profile)
 
 Arguments:
 
@@ -1881,7 +1886,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").detach_thing_principal` method.
 
 Boto3 documentation:
-[IoT.Client.detach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_thing_principal)
+[IoT.Client.detach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.detach_thing_principal)
 
 Arguments:
 
@@ -1895,7 +1900,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").disable_topic_rule` method.
 
 Boto3 documentation:
-[IoT.Client.disable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.disable_topic_rule)
+[IoT.Client.disable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.disable_topic_rule)
 
 Arguments:
 
@@ -1906,7 +1911,7 @@ Arguments:
 Type annotations for `boto3.client("iot").enable_topic_rule` method.
 
 Boto3 documentation:
-[IoT.Client.enable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.enable_topic_rule)
+[IoT.Client.enable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.enable_topic_rule)
 
 Arguments:
 
@@ -1917,7 +1922,7 @@ Arguments:
 Type annotations for `boto3.client("iot").generate_presigned_url` method.
 
 Boto3 documentation:
-[IoT.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.generate_presigned_url)
+[IoT.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1934,7 +1939,7 @@ Type annotations for
 `boto3.client("iot").get_behavior_model_training_summaries` method.
 
 Boto3 documentation:
-[IoT.Client.get_behavior_model_training_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries)
+[IoT.Client.get_behavior_model_training_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries)
 
 Arguments:
 
@@ -1950,7 +1955,7 @@ Returns
 Type annotations for `boto3.client("iot").get_cardinality` method.
 
 Boto3 documentation:
-[IoT.Client.get_cardinality](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_cardinality)
+[IoT.Client.get_cardinality](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_cardinality)
 
 Arguments:
 
@@ -1967,7 +1972,7 @@ Returns
 Type annotations for `boto3.client("iot").get_effective_policies` method.
 
 Boto3 documentation:
-[IoT.Client.get_effective_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_effective_policies)
+[IoT.Client.get_effective_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_effective_policies)
 
 Arguments:
 
@@ -1983,7 +1988,7 @@ Returns
 Type annotations for `boto3.client("iot").get_indexing_configuration` method.
 
 Boto3 documentation:
-[IoT.Client.get_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_indexing_configuration)
+[IoT.Client.get_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_indexing_configuration)
 
 Returns
 [GetIndexingConfigurationResponseTypeDef](./type_defs.md#getindexingconfigurationresponsetypedef).
@@ -1993,7 +1998,7 @@ Returns
 Type annotations for `boto3.client("iot").get_job_document` method.
 
 Boto3 documentation:
-[IoT.Client.get_job_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_job_document)
+[IoT.Client.get_job_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_job_document)
 
 Arguments:
 
@@ -2007,7 +2012,7 @@ Returns
 Type annotations for `boto3.client("iot").get_logging_options` method.
 
 Boto3 documentation:
-[IoT.Client.get_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_logging_options)
+[IoT.Client.get_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_logging_options)
 
 Returns
 [GetLoggingOptionsResponseTypeDef](./type_defs.md#getloggingoptionsresponsetypedef).
@@ -2017,7 +2022,7 @@ Returns
 Type annotations for `boto3.client("iot").get_ota_update` method.
 
 Boto3 documentation:
-[IoT.Client.get_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_ota_update)
+[IoT.Client.get_ota_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_ota_update)
 
 Arguments:
 
@@ -2031,7 +2036,7 @@ Returns
 Type annotations for `boto3.client("iot").get_percentiles` method.
 
 Boto3 documentation:
-[IoT.Client.get_percentiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_percentiles)
+[IoT.Client.get_percentiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_percentiles)
 
 Arguments:
 
@@ -2049,7 +2054,7 @@ Returns
 Type annotations for `boto3.client("iot").get_policy` method.
 
 Boto3 documentation:
-[IoT.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy)
+[IoT.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_policy)
 
 Arguments:
 
@@ -2062,7 +2067,7 @@ Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 Type annotations for `boto3.client("iot").get_policy_version` method.
 
 Boto3 documentation:
-[IoT.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy_version)
+[IoT.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_policy_version)
 
 Arguments:
 
@@ -2077,7 +2082,7 @@ Returns
 Type annotations for `boto3.client("iot").get_registration_code` method.
 
 Boto3 documentation:
-[IoT.Client.get_registration_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_registration_code)
+[IoT.Client.get_registration_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_registration_code)
 
 Returns
 [GetRegistrationCodeResponseTypeDef](./type_defs.md#getregistrationcoderesponsetypedef).
@@ -2087,7 +2092,7 @@ Returns
 Type annotations for `boto3.client("iot").get_statistics` method.
 
 Boto3 documentation:
-[IoT.Client.get_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_statistics)
+[IoT.Client.get_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_statistics)
 
 Arguments:
 
@@ -2104,7 +2109,7 @@ Returns
 Type annotations for `boto3.client("iot").get_topic_rule` method.
 
 Boto3 documentation:
-[IoT.Client.get_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule)
+[IoT.Client.get_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_topic_rule)
 
 Arguments:
 
@@ -2118,7 +2123,7 @@ Returns
 Type annotations for `boto3.client("iot").get_topic_rule_destination` method.
 
 Boto3 documentation:
-[IoT.Client.get_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule_destination)
+[IoT.Client.get_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_topic_rule_destination)
 
 Arguments:
 
@@ -2132,7 +2137,7 @@ Returns
 Type annotations for `boto3.client("iot").get_v2_logging_options` method.
 
 Boto3 documentation:
-[IoT.Client.get_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_v2_logging_options)
+[IoT.Client.get_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.get_v2_logging_options)
 
 Returns
 [GetV2LoggingOptionsResponseTypeDef](./type_defs.md#getv2loggingoptionsresponsetypedef).
@@ -2142,14 +2147,14 @@ Returns
 Type annotations for `boto3.client("iot").list_active_violations` method.
 
 Boto3 documentation:
-[IoT.Client.list_active_violations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_active_violations)
+[IoT.Client.list_active_violations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_active_violations)
 
 Arguments:
 
 - `thingName`: `str`
 - `securityProfileName`: `str`
 - `behaviorCriteriaType`:
-  [BehaviorCriteriaType](./literals.md#behaviorcriteriatype)
+  [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -2162,7 +2167,7 @@ Returns
 Type annotations for `boto3.client("iot").list_attached_policies` method.
 
 Boto3 documentation:
-[IoT.Client.list_attached_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_attached_policies)
+[IoT.Client.list_attached_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_attached_policies)
 
 Arguments:
 
@@ -2179,7 +2184,7 @@ Returns
 Type annotations for `boto3.client("iot").list_audit_findings` method.
 
 Boto3 documentation:
-[IoT.Client.list_audit_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_findings)
+[IoT.Client.list_audit_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_audit_findings)
 
 Arguments:
 
@@ -2202,14 +2207,14 @@ Type annotations for
 `boto3.client("iot").list_audit_mitigation_actions_executions` method.
 
 Boto3 documentation:
-[IoT.Client.list_audit_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions)
+[IoT.Client.list_audit_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions)
 
 Arguments:
 
 - `taskId`: `str` *(required)*
 - `findingId`: `str` *(required)*
 - `actionStatus`:
-  [AuditMitigationActionsExecutionStatus](./literals.md#auditmitigationactionsexecutionstatus)
+  [AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2222,7 +2227,7 @@ Type annotations for `boto3.client("iot").list_audit_mitigation_actions_tasks`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_audit_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks)
+[IoT.Client.list_audit_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks)
 
 Arguments:
 
@@ -2231,7 +2236,7 @@ Arguments:
 - `auditTaskId`: `str`
 - `findingId`: `str`
 - `taskStatus`:
-  [AuditMitigationActionsTaskStatus](./literals.md#auditmitigationactionstaskstatus)
+  [AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2243,7 +2248,7 @@ Returns
 Type annotations for `boto3.client("iot").list_audit_suppressions` method.
 
 Boto3 documentation:
-[IoT.Client.list_audit_suppressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_suppressions)
+[IoT.Client.list_audit_suppressions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_audit_suppressions)
 
 Arguments:
 
@@ -2262,14 +2267,14 @@ Returns
 Type annotations for `boto3.client("iot").list_audit_tasks` method.
 
 Boto3 documentation:
-[IoT.Client.list_audit_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_tasks)
+[IoT.Client.list_audit_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_audit_tasks)
 
 Arguments:
 
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `taskType`: [AuditTaskType](./literals.md#audittasktype)
-- `taskStatus`: [AuditTaskStatus](./literals.md#audittaskstatus)
+- `taskType`: [AuditTaskTypeType](./literals.md#audittasktypetype)
+- `taskStatus`: [AuditTaskStatusType](./literals.md#audittaskstatustype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -2281,14 +2286,14 @@ Returns
 Type annotations for `boto3.client("iot").list_authorizers` method.
 
 Boto3 documentation:
-[IoT.Client.list_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_authorizers)
+[IoT.Client.list_authorizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_authorizers)
 
 Arguments:
 
 - `pageSize`: `int`
 - `marker`: `str`
 - `ascendingOrder`: `bool`
-- `status`: [AuthorizerStatus](./literals.md#authorizerstatus)
+- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 Returns
 [ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef).
@@ -2298,7 +2303,7 @@ Returns
 Type annotations for `boto3.client("iot").list_billing_groups` method.
 
 Boto3 documentation:
-[IoT.Client.list_billing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_billing_groups)
+[IoT.Client.list_billing_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_billing_groups)
 
 Arguments:
 
@@ -2314,7 +2319,7 @@ Returns
 Type annotations for `boto3.client("iot").list_ca_certificates` method.
 
 Boto3 documentation:
-[IoT.Client.list_ca_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ca_certificates)
+[IoT.Client.list_ca_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_ca_certificates)
 
 Arguments:
 
@@ -2330,7 +2335,7 @@ Returns
 Type annotations for `boto3.client("iot").list_certificates` method.
 
 Boto3 documentation:
-[IoT.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates)
+[IoT.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_certificates)
 
 Arguments:
 
@@ -2346,7 +2351,7 @@ Returns
 Type annotations for `boto3.client("iot").list_certificates_by_ca` method.
 
 Boto3 documentation:
-[IoT.Client.list_certificates_by_ca](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates_by_ca)
+[IoT.Client.list_certificates_by_ca](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_certificates_by_ca)
 
 Arguments:
 
@@ -2363,7 +2368,7 @@ Returns
 Type annotations for `boto3.client("iot").list_custom_metrics` method.
 
 Boto3 documentation:
-[IoT.Client.list_custom_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_custom_metrics)
+[IoT.Client.list_custom_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_custom_metrics)
 
 Arguments:
 
@@ -2379,7 +2384,7 @@ Type annotations for
 `boto3.client("iot").list_detect_mitigation_actions_executions` method.
 
 Boto3 documentation:
-[IoT.Client.list_detect_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions)
+[IoT.Client.list_detect_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions)
 
 Arguments:
 
@@ -2400,7 +2405,7 @@ Type annotations for `boto3.client("iot").list_detect_mitigation_actions_tasks`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_detect_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks)
+[IoT.Client.list_detect_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks)
 
 Arguments:
 
@@ -2417,7 +2422,7 @@ Returns
 Type annotations for `boto3.client("iot").list_dimensions` method.
 
 Boto3 documentation:
-[IoT.Client.list_dimensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_dimensions)
+[IoT.Client.list_dimensions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_dimensions)
 
 Arguments:
 
@@ -2432,13 +2437,13 @@ Returns
 Type annotations for `boto3.client("iot").list_domain_configurations` method.
 
 Boto3 documentation:
-[IoT.Client.list_domain_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_domain_configurations)
+[IoT.Client.list_domain_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_domain_configurations)
 
 Arguments:
 
 - `marker`: `str`
 - `pageSize`: `int`
-- `serviceType`: [ServiceType](./literals.md#servicetype)
+- `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
 
 Returns
 [ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef).
@@ -2448,7 +2453,7 @@ Returns
 Type annotations for `boto3.client("iot").list_indices` method.
 
 Boto3 documentation:
-[IoT.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_indices)
+[IoT.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_indices)
 
 Arguments:
 
@@ -2463,12 +2468,12 @@ Returns
 Type annotations for `boto3.client("iot").list_job_executions_for_job` method.
 
 Boto3 documentation:
-[IoT.Client.list_job_executions_for_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_job)
+[IoT.Client.list_job_executions_for_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_job_executions_for_job)
 
 Arguments:
 
 - `jobId`: `str` *(required)*
-- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
+- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2481,12 +2486,12 @@ Type annotations for `boto3.client("iot").list_job_executions_for_thing`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_job_executions_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_thing)
+[IoT.Client.list_job_executions_for_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_job_executions_for_thing)
 
 Arguments:
 
 - `thingName`: `str` *(required)*
-- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
+- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - `namespaceId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -2499,12 +2504,12 @@ Returns
 Type annotations for `boto3.client("iot").list_jobs` method.
 
 Boto3 documentation:
-[IoT.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_jobs)
+[IoT.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_jobs)
 
 Arguments:
 
-- `status`: [JobStatus](./literals.md#jobstatus)
-- `targetSelection`: [TargetSelection](./literals.md#targetselection)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
+- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `thingGroupName`: `str`
@@ -2518,11 +2523,12 @@ Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 Type annotations for `boto3.client("iot").list_mitigation_actions` method.
 
 Boto3 documentation:
-[IoT.Client.list_mitigation_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_mitigation_actions)
+[IoT.Client.list_mitigation_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_mitigation_actions)
 
 Arguments:
 
-- `actionType`: [MitigationActionType](./literals.md#mitigationactiontype)
+- `actionType`:
+  [MitigationActionTypeType](./literals.md#mitigationactiontypetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2534,13 +2540,13 @@ Returns
 Type annotations for `boto3.client("iot").list_ota_updates` method.
 
 Boto3 documentation:
-[IoT.Client.list_ota_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ota_updates)
+[IoT.Client.list_ota_updates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_ota_updates)
 
 Arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `otaUpdateStatus`: [OTAUpdateStatus](./literals.md#otaupdatestatus)
+- `otaUpdateStatus`: [OTAUpdateStatusType](./literals.md#otaupdatestatustype)
 
 Returns
 [ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef).
@@ -2550,7 +2556,7 @@ Returns
 Type annotations for `boto3.client("iot").list_outgoing_certificates` method.
 
 Boto3 documentation:
-[IoT.Client.list_outgoing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_outgoing_certificates)
+[IoT.Client.list_outgoing_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_outgoing_certificates)
 
 Arguments:
 
@@ -2566,7 +2572,7 @@ Returns
 Type annotations for `boto3.client("iot").list_policies` method.
 
 Boto3 documentation:
-[IoT.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policies)
+[IoT.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_policies)
 
 Arguments:
 
@@ -2582,7 +2588,7 @@ Returns
 Type annotations for `boto3.client("iot").list_policy_principals` method.
 
 Boto3 documentation:
-[IoT.Client.list_policy_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_principals)
+[IoT.Client.list_policy_principals](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_policy_principals)
 
 Arguments:
 
@@ -2599,7 +2605,7 @@ Returns
 Type annotations for `boto3.client("iot").list_policy_versions` method.
 
 Boto3 documentation:
-[IoT.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_versions)
+[IoT.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_policy_versions)
 
 Arguments:
 
@@ -2613,7 +2619,7 @@ Returns
 Type annotations for `boto3.client("iot").list_principal_policies` method.
 
 Boto3 documentation:
-[IoT.Client.list_principal_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_policies)
+[IoT.Client.list_principal_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_principal_policies)
 
 Arguments:
 
@@ -2630,7 +2636,7 @@ Returns
 Type annotations for `boto3.client("iot").list_principal_things` method.
 
 Boto3 documentation:
-[IoT.Client.list_principal_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_things)
+[IoT.Client.list_principal_things](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_principal_things)
 
 Arguments:
 
@@ -2647,7 +2653,7 @@ Type annotations for `boto3.client("iot").list_provisioning_template_versions`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_provisioning_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
+[IoT.Client.list_provisioning_template_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
 
 Arguments:
 
@@ -2663,7 +2669,7 @@ Returns
 Type annotations for `boto3.client("iot").list_provisioning_templates` method.
 
 Boto3 documentation:
-[IoT.Client.list_provisioning_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates)
+[IoT.Client.list_provisioning_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_provisioning_templates)
 
 Arguments:
 
@@ -2678,7 +2684,7 @@ Returns
 Type annotations for `boto3.client("iot").list_role_aliases` method.
 
 Boto3 documentation:
-[IoT.Client.list_role_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_role_aliases)
+[IoT.Client.list_role_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_role_aliases)
 
 Arguments:
 
@@ -2694,7 +2700,7 @@ Returns
 Type annotations for `boto3.client("iot").list_scheduled_audits` method.
 
 Boto3 documentation:
-[IoT.Client.list_scheduled_audits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_scheduled_audits)
+[IoT.Client.list_scheduled_audits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_scheduled_audits)
 
 Arguments:
 
@@ -2709,7 +2715,7 @@ Returns
 Type annotations for `boto3.client("iot").list_security_profiles` method.
 
 Boto3 documentation:
-[IoT.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles)
+[IoT.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_security_profiles)
 
 Arguments:
 
@@ -2727,7 +2733,7 @@ Type annotations for `boto3.client("iot").list_security_profiles_for_target`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_security_profiles_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles_for_target)
+[IoT.Client.list_security_profiles_for_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_security_profiles_for_target)
 
 Arguments:
 
@@ -2744,7 +2750,7 @@ Returns
 Type annotations for `boto3.client("iot").list_streams` method.
 
 Boto3 documentation:
-[IoT.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_streams)
+[IoT.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_streams)
 
 Arguments:
 
@@ -2760,7 +2766,7 @@ Returns
 Type annotations for `boto3.client("iot").list_tags_for_resource` method.
 
 Boto3 documentation:
-[IoT.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_tags_for_resource)
+[IoT.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -2775,7 +2781,7 @@ Returns
 Type annotations for `boto3.client("iot").list_targets_for_policy` method.
 
 Boto3 documentation:
-[IoT.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_policy)
+[IoT.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_targets_for_policy)
 
 Arguments:
 
@@ -2792,7 +2798,7 @@ Type annotations for `boto3.client("iot").list_targets_for_security_profile`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_targets_for_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_security_profile)
+[IoT.Client.list_targets_for_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_targets_for_security_profile)
 
 Arguments:
 
@@ -2808,7 +2814,7 @@ Returns
 Type annotations for `boto3.client("iot").list_thing_groups` method.
 
 Boto3 documentation:
-[IoT.Client.list_thing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups)
+[IoT.Client.list_thing_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_thing_groups)
 
 Arguments:
 
@@ -2826,7 +2832,7 @@ Returns
 Type annotations for `boto3.client("iot").list_thing_groups_for_thing` method.
 
 Boto3 documentation:
-[IoT.Client.list_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing)
+[IoT.Client.list_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing)
 
 Arguments:
 
@@ -2842,7 +2848,7 @@ Returns
 Type annotations for `boto3.client("iot").list_thing_principals` method.
 
 Boto3 documentation:
-[IoT.Client.list_thing_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_principals)
+[IoT.Client.list_thing_principals](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_thing_principals)
 
 Arguments:
 
@@ -2859,12 +2865,12 @@ Type annotations for `boto3.client("iot").list_thing_registration_task_reports`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_thing_registration_task_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports)
+[IoT.Client.list_thing_registration_task_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports)
 
 Arguments:
 
 - `taskId`: `str` *(required)*
-- `reportType`: [ReportType](./literals.md#reporttype) *(required)*
+- `reportType`: [ReportTypeType](./literals.md#reporttypetype) *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -2877,13 +2883,13 @@ Type annotations for `boto3.client("iot").list_thing_registration_tasks`
 method.
 
 Boto3 documentation:
-[IoT.Client.list_thing_registration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_tasks)
+[IoT.Client.list_thing_registration_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_thing_registration_tasks)
 
 Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 
 Returns
 [ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef).
@@ -2893,7 +2899,7 @@ Returns
 Type annotations for `boto3.client("iot").list_thing_types` method.
 
 Boto3 documentation:
-[IoT.Client.list_thing_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_types)
+[IoT.Client.list_thing_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_thing_types)
 
 Arguments:
 
@@ -2909,7 +2915,7 @@ Returns
 Type annotations for `boto3.client("iot").list_things` method.
 
 Boto3 documentation:
-[IoT.Client.list_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things)
+[IoT.Client.list_things](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_things)
 
 Arguments:
 
@@ -2927,7 +2933,7 @@ Returns [ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef).
 Type annotations for `boto3.client("iot").list_things_in_billing_group` method.
 
 Boto3 documentation:
-[IoT.Client.list_things_in_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_billing_group)
+[IoT.Client.list_things_in_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_things_in_billing_group)
 
 Arguments:
 
@@ -2943,7 +2949,7 @@ Returns
 Type annotations for `boto3.client("iot").list_things_in_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.list_things_in_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_thing_group)
+[IoT.Client.list_things_in_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_things_in_thing_group)
 
 Arguments:
 
@@ -2960,7 +2966,7 @@ Returns
 Type annotations for `boto3.client("iot").list_topic_rule_destinations` method.
 
 Boto3 documentation:
-[IoT.Client.list_topic_rule_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rule_destinations)
+[IoT.Client.list_topic_rule_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_topic_rule_destinations)
 
 Arguments:
 
@@ -2975,7 +2981,7 @@ Returns
 Type annotations for `boto3.client("iot").list_topic_rules` method.
 
 Boto3 documentation:
-[IoT.Client.list_topic_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rules)
+[IoT.Client.list_topic_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_topic_rules)
 
 Arguments:
 
@@ -2992,11 +2998,11 @@ Returns
 Type annotations for `boto3.client("iot").list_v2_logging_levels` method.
 
 Boto3 documentation:
-[IoT.Client.list_v2_logging_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_v2_logging_levels)
+[IoT.Client.list_v2_logging_levels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_v2_logging_levels)
 
 Arguments:
 
-- `targetType`: [LogTargetType](./literals.md#logtargettype)
+- `targetType`: [LogTargetTypeType](./literals.md#logtargettypetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -3008,7 +3014,7 @@ Returns
 Type annotations for `boto3.client("iot").list_violation_events` method.
 
 Boto3 documentation:
-[IoT.Client.list_violation_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_violation_events)
+[IoT.Client.list_violation_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.list_violation_events)
 
 Arguments:
 
@@ -3017,7 +3023,7 @@ Arguments:
 - `thingName`: `str`
 - `securityProfileName`: `str`
 - `behaviorCriteriaType`:
-  [BehaviorCriteriaType](./literals.md#behaviorcriteriatype)
+  [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -3030,7 +3036,7 @@ Returns
 Type annotations for `boto3.client("iot").register_ca_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.register_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate)
+[IoT.Client.register_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.register_ca_certificate)
 
 Arguments:
 
@@ -3050,14 +3056,14 @@ Returns
 Type annotations for `boto3.client("iot").register_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate)
+[IoT.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.register_certificate)
 
 Arguments:
 
 - `certificatePem`: `str` *(required)*
 - `caCertificatePem`: `str`
 - `setAsActive`: `bool`
-- `status`: [CertificateStatus](./literals.md#certificatestatus)
+- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 
 Returns
 [RegisterCertificateResponseTypeDef](./type_defs.md#registercertificateresponsetypedef).
@@ -3068,12 +3074,12 @@ Type annotations for `boto3.client("iot").register_certificate_without_ca`
 method.
 
 Boto3 documentation:
-[IoT.Client.register_certificate_without_ca](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate_without_ca)
+[IoT.Client.register_certificate_without_ca](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.register_certificate_without_ca)
 
 Arguments:
 
 - `certificatePem`: `str` *(required)*
-- `status`: [CertificateStatus](./literals.md#certificatestatus)
+- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 
 Returns
 [RegisterCertificateWithoutCAResponseTypeDef](./type_defs.md#registercertificatewithoutcaresponsetypedef).
@@ -3083,7 +3089,7 @@ Returns
 Type annotations for `boto3.client("iot").register_thing` method.
 
 Boto3 documentation:
-[IoT.Client.register_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_thing)
+[IoT.Client.register_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.register_thing)
 
 Arguments:
 
@@ -3098,7 +3104,7 @@ Returns
 Type annotations for `boto3.client("iot").reject_certificate_transfer` method.
 
 Boto3 documentation:
-[IoT.Client.reject_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.reject_certificate_transfer)
+[IoT.Client.reject_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.reject_certificate_transfer)
 
 Arguments:
 
@@ -3111,7 +3117,7 @@ Type annotations for `boto3.client("iot").remove_thing_from_billing_group`
 method.
 
 Boto3 documentation:
-[IoT.Client.remove_thing_from_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group)
+[IoT.Client.remove_thing_from_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group)
 
 Arguments:
 
@@ -3128,7 +3134,7 @@ Type annotations for `boto3.client("iot").remove_thing_from_thing_group`
 method.
 
 Boto3 documentation:
-[IoT.Client.remove_thing_from_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group)
+[IoT.Client.remove_thing_from_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group)
 
 Arguments:
 
@@ -3144,20 +3150,21 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").replace_topic_rule` method.
 
 Boto3 documentation:
-[IoT.Client.replace_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule)
+[IoT.Client.replace_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.replace_topic_rule)
 
 Arguments:
 
 - `ruleName`: `str` *(required)*
 - `topicRulePayload`:
-  [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) *(required)*
+  [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef)
+  *(required)*
 
 ### search_index
 
 Type annotations for `boto3.client("iot").search_index` method.
 
 Boto3 documentation:
-[IoT.Client.search_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.search_index)
+[IoT.Client.search_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.search_index)
 
 Arguments:
 
@@ -3175,7 +3182,7 @@ Returns
 Type annotations for `boto3.client("iot").set_default_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.set_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_authorizer)
+[IoT.Client.set_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.set_default_authorizer)
 
 Arguments:
 
@@ -3189,7 +3196,7 @@ Returns
 Type annotations for `boto3.client("iot").set_default_policy_version` method.
 
 Boto3 documentation:
-[IoT.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_policy_version)
+[IoT.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.set_default_policy_version)
 
 Arguments:
 
@@ -3201,7 +3208,7 @@ Arguments:
 Type annotations for `boto3.client("iot").set_logging_options` method.
 
 Boto3 documentation:
-[IoT.Client.set_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_logging_options)
+[IoT.Client.set_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.set_logging_options)
 
 Arguments:
 
@@ -3214,24 +3221,24 @@ Arguments:
 Type annotations for `boto3.client("iot").set_v2_logging_level` method.
 
 Boto3 documentation:
-[IoT.Client.set_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_level)
+[IoT.Client.set_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.set_v2_logging_level)
 
 Arguments:
 
 - `logTarget`: [LogTargetTypeDef](./type_defs.md#logtargettypedef) *(required)*
-- `logLevel`: [LogLevel](./literals.md#loglevel) *(required)*
+- `logLevel`: [LogLevelType](./literals.md#logleveltype) *(required)*
 
 ### set_v2_logging_options
 
 Type annotations for `boto3.client("iot").set_v2_logging_options` method.
 
 Boto3 documentation:
-[IoT.Client.set_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_options)
+[IoT.Client.set_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.set_v2_logging_options)
 
 Arguments:
 
 - `roleArn`: `str`
-- `defaultLogLevel`: [LogLevel](./literals.md#loglevel)
+- `defaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `disableAllLogs`: `bool`
 
 ### start_audit_mitigation_actions_task
@@ -3240,7 +3247,7 @@ Type annotations for `boto3.client("iot").start_audit_mitigation_actions_task`
 method.
 
 Boto3 documentation:
-[IoT.Client.start_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task)
+[IoT.Client.start_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task)
 
 Arguments:
 
@@ -3260,7 +3267,7 @@ Type annotations for `boto3.client("iot").start_detect_mitigation_actions_task`
 method.
 
 Boto3 documentation:
-[IoT.Client.start_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task)
+[IoT.Client.start_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task)
 
 Arguments:
 
@@ -3283,7 +3290,7 @@ Returns
 Type annotations for `boto3.client("iot").start_on_demand_audit_task` method.
 
 Boto3 documentation:
-[IoT.Client.start_on_demand_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_on_demand_audit_task)
+[IoT.Client.start_on_demand_audit_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.start_on_demand_audit_task)
 
 Arguments:
 
@@ -3298,7 +3305,7 @@ Type annotations for `boto3.client("iot").start_thing_registration_task`
 method.
 
 Boto3 documentation:
-[IoT.Client.start_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_thing_registration_task)
+[IoT.Client.start_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.start_thing_registration_task)
 
 Arguments:
 
@@ -3315,7 +3322,7 @@ Returns
 Type annotations for `boto3.client("iot").stop_thing_registration_task` method.
 
 Boto3 documentation:
-[IoT.Client.stop_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.stop_thing_registration_task)
+[IoT.Client.stop_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.stop_thing_registration_task)
 
 Arguments:
 
@@ -3328,7 +3335,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").tag_resource` method.
 
 Boto3 documentation:
-[IoT.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.tag_resource)
+[IoT.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.tag_resource)
 
 Arguments:
 
@@ -3342,7 +3349,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").test_authorization` method.
 
 Boto3 documentation:
-[IoT.Client.test_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_authorization)
+[IoT.Client.test_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.test_authorization)
 
 Arguments:
 
@@ -3362,7 +3369,7 @@ Returns
 Type annotations for `boto3.client("iot").test_invoke_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_invoke_authorizer)
+[IoT.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.test_invoke_authorizer)
 
 Arguments:
 
@@ -3381,7 +3388,7 @@ Returns
 Type annotations for `boto3.client("iot").transfer_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.transfer_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.transfer_certificate)
+[IoT.Client.transfer_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.transfer_certificate)
 
 Arguments:
 
@@ -3397,7 +3404,7 @@ Returns
 Type annotations for `boto3.client("iot").untag_resource` method.
 
 Boto3 documentation:
-[IoT.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.untag_resource)
+[IoT.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.untag_resource)
 
 Arguments:
 
@@ -3412,13 +3419,13 @@ Type annotations for `boto3.client("iot").update_account_audit_configuration`
 method.
 
 Boto3 documentation:
-[IoT.Client.update_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_account_audit_configuration)
+[IoT.Client.update_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_account_audit_configuration)
 
 Arguments:
 
 - `roleArn`: `str`
 - `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']` (see
-  [AuditNotificationType](./literals.md#auditnotificationtype)),
+  [AuditNotificationTypeType](./literals.md#auditnotificationtypetype)),
   [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
 - `auditCheckConfigurations`: `Dict`\[`str`,
   [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
@@ -3430,7 +3437,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").update_audit_suppression` method.
 
 Boto3 documentation:
-[IoT.Client.update_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_audit_suppression)
+[IoT.Client.update_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_audit_suppression)
 
 Arguments:
 
@@ -3449,7 +3456,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").update_authorizer` method.
 
 Boto3 documentation:
-[IoT.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_authorizer)
+[IoT.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_authorizer)
 
 Arguments:
 
@@ -3457,7 +3464,7 @@ Arguments:
 - `authorizerFunctionArn`: `str`
 - `tokenKeyName`: `str`
 - `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
-- `status`: [AuthorizerStatus](./literals.md#authorizerstatus)
+- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 Returns
 [UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).
@@ -3467,7 +3474,7 @@ Returns
 Type annotations for `boto3.client("iot").update_billing_group` method.
 
 Boto3 documentation:
-[IoT.Client.update_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_billing_group)
+[IoT.Client.update_billing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_billing_group)
 
 Arguments:
 
@@ -3485,14 +3492,14 @@ Returns
 Type annotations for `boto3.client("iot").update_ca_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.update_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_ca_certificate)
+[IoT.Client.update_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_ca_certificate)
 
 Arguments:
 
 - `certificateId`: `str` *(required)*
-- `newStatus`: [CACertificateStatus](./literals.md#cacertificatestatus)
+- `newStatus`: [CACertificateStatusType](./literals.md#cacertificatestatustype)
 - `newAutoRegistrationStatus`:
-  [AutoRegistrationStatus](./literals.md#autoregistrationstatus)
+  [AutoRegistrationStatusType](./literals.md#autoregistrationstatustype)
 - `registrationConfig`:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 - `removeAutoRegistration`: `bool`
@@ -3502,19 +3509,20 @@ Arguments:
 Type annotations for `boto3.client("iot").update_certificate` method.
 
 Boto3 documentation:
-[IoT.Client.update_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_certificate)
+[IoT.Client.update_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_certificate)
 
 Arguments:
 
 - `certificateId`: `str` *(required)*
-- `newStatus`: [CertificateStatus](./literals.md#certificatestatus) *(required)*
+- `newStatus`: [CertificateStatusType](./literals.md#certificatestatustype)
+  *(required)*
 
 ### update_custom_metric
 
 Type annotations for `boto3.client("iot").update_custom_metric` method.
 
 Boto3 documentation:
-[IoT.Client.update_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_custom_metric)
+[IoT.Client.update_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_custom_metric)
 
 Arguments:
 
@@ -3529,7 +3537,7 @@ Returns
 Type annotations for `boto3.client("iot").update_dimension` method.
 
 Boto3 documentation:
-[IoT.Client.update_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dimension)
+[IoT.Client.update_dimension](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_dimension)
 
 Arguments:
 
@@ -3544,7 +3552,7 @@ Returns
 Type annotations for `boto3.client("iot").update_domain_configuration` method.
 
 Boto3 documentation:
-[IoT.Client.update_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_domain_configuration)
+[IoT.Client.update_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_domain_configuration)
 
 Arguments:
 
@@ -3552,7 +3560,7 @@ Arguments:
 - `authorizerConfig`:
   [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
 - `domainConfigurationStatus`:
-  [DomainConfigurationStatus](./literals.md#domainconfigurationstatus)
+  [DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype)
 - `removeAuthorizerConfig`: `bool`
 
 Returns
@@ -3563,7 +3571,7 @@ Returns
 Type annotations for `boto3.client("iot").update_dynamic_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.update_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dynamic_thing_group)
+[IoT.Client.update_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_dynamic_thing_group)
 
 Arguments:
 
@@ -3584,11 +3592,11 @@ Returns
 Type annotations for `boto3.client("iot").update_event_configurations` method.
 
 Boto3 documentation:
-[IoT.Client.update_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_event_configurations)
+[IoT.Client.update_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_event_configurations)
 
 Arguments:
 
-- `eventConfigurations`: `Dict`\[[EventType](./literals.md#eventtype),
+- `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -3599,7 +3607,7 @@ Type annotations for `boto3.client("iot").update_indexing_configuration`
 method.
 
 Boto3 documentation:
-[IoT.Client.update_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_indexing_configuration)
+[IoT.Client.update_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_indexing_configuration)
 
 Arguments:
 
@@ -3615,7 +3623,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").update_job` method.
 
 Boto3 documentation:
-[IoT.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_job)
+[IoT.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_job)
 
 Arguments:
 
@@ -3634,7 +3642,7 @@ Arguments:
 Type annotations for `boto3.client("iot").update_mitigation_action` method.
 
 Boto3 documentation:
-[IoT.Client.update_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_mitigation_action)
+[IoT.Client.update_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_mitigation_action)
 
 Arguments:
 
@@ -3651,7 +3659,7 @@ Returns
 Type annotations for `boto3.client("iot").update_provisioning_template` method.
 
 Boto3 documentation:
-[IoT.Client.update_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template)
+[IoT.Client.update_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_provisioning_template)
 
 Arguments:
 
@@ -3671,7 +3679,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").update_role_alias` method.
 
 Boto3 documentation:
-[IoT.Client.update_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_role_alias)
+[IoT.Client.update_role_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_role_alias)
 
 Arguments:
 
@@ -3687,14 +3695,14 @@ Returns
 Type annotations for `boto3.client("iot").update_scheduled_audit` method.
 
 Boto3 documentation:
-[IoT.Client.update_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_scheduled_audit)
+[IoT.Client.update_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_scheduled_audit)
 
 Arguments:
 
 - `scheduledAuditName`: `str` *(required)*
-- `frequency`: [AuditFrequency](./literals.md#auditfrequency)
+- `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
 - `dayOfMonth`: `str`
-- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
+- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `targetCheckNames`: `List`\[`str`\]
 
 Returns
@@ -3705,7 +3713,7 @@ Returns
 Type annotations for `boto3.client("iot").update_security_profile` method.
 
 Boto3 documentation:
-[IoT.Client.update_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_security_profile)
+[IoT.Client.update_security_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_security_profile)
 
 Arguments:
 
@@ -3713,7 +3721,7 @@ Arguments:
 - `securityProfileDescription`: `str`
 - `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
 - `alertTargets`: `Dict`\[`Literal['SNS']` (see
-  [AlertTargetType](./literals.md#alerttargettype)),
+  [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
 - `additionalMetricsToRetain`: `List`\[`str`\]
 - `additionalMetricsToRetainV2`:
@@ -3731,7 +3739,7 @@ Returns
 Type annotations for `boto3.client("iot").update_stream` method.
 
 Boto3 documentation:
-[IoT.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_stream)
+[IoT.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_stream)
 
 Arguments:
 
@@ -3748,7 +3756,7 @@ Returns
 Type annotations for `boto3.client("iot").update_thing` method.
 
 Boto3 documentation:
-[IoT.Client.update_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing)
+[IoT.Client.update_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_thing)
 
 Arguments:
 
@@ -3766,7 +3774,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot").update_thing_group` method.
 
 Boto3 documentation:
-[IoT.Client.update_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_group)
+[IoT.Client.update_thing_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_thing_group)
 
 Arguments:
 
@@ -3785,7 +3793,7 @@ Type annotations for `boto3.client("iot").update_thing_groups_for_thing`
 method.
 
 Boto3 documentation:
-[IoT.Client.update_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing)
+[IoT.Client.update_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing)
 
 Arguments:
 
@@ -3802,13 +3810,13 @@ Type annotations for `boto3.client("iot").update_topic_rule_destination`
 method.
 
 Boto3 documentation:
-[IoT.Client.update_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_topic_rule_destination)
+[IoT.Client.update_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.update_topic_rule_destination)
 
 Arguments:
 
 - `arn`: `str` *(required)*
 - `status`:
-  [TopicRuleDestinationStatus](./literals.md#topicruledestinationstatus)
+  [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -3819,7 +3827,7 @@ Type annotations for `boto3.client("iot").validate_security_profile_behaviors`
 method.
 
 Boto3 documentation:
-[IoT.Client.validate_security_profile_behaviors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors)
+[IoT.Client.validate_security_profile_behaviors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors)
 
 Arguments:
 

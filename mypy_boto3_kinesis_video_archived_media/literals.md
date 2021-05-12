@@ -3,28 +3,28 @@
 > [Index](..) > [KinesisVideoArchivedMedia](.) > Literals
 
 Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
 [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 - [Literals for boto3 KinesisVideoArchivedMedia module](#literals-for-boto3-kinesisvideoarchivedmedia-module)
-  - [ClipFragmentSelectorType](#clipfragmentselectortype)
-  - [ContainerFormat](#containerformat)
-  - [DASHDisplayFragmentNumber](#dashdisplayfragmentnumber)
-  - [DASHDisplayFragmentTimestamp](#dashdisplayfragmenttimestamp)
-  - [DASHFragmentSelectorType](#dashfragmentselectortype)
-  - [DASHPlaybackMode](#dashplaybackmode)
-  - [FragmentSelectorType](#fragmentselectortype)
-  - [HLSDiscontinuityMode](#hlsdiscontinuitymode)
-  - [HLSDisplayFragmentTimestamp](#hlsdisplayfragmenttimestamp)
-  - [HLSFragmentSelectorType](#hlsfragmentselectortype)
-  - [HLSPlaybackMode](#hlsplaybackmode)
+  - [ClipFragmentSelectorTypeType](#clipfragmentselectortypetype)
+  - [ContainerFormatType](#containerformattype)
+  - [DASHDisplayFragmentNumberType](#dashdisplayfragmentnumbertype)
+  - [DASHDisplayFragmentTimestampType](#dashdisplayfragmenttimestamptype)
+  - [DASHFragmentSelectorTypeType](#dashfragmentselectortypetype)
+  - [DASHPlaybackModeType](#dashplaybackmodetype)
+  - [FragmentSelectorTypeType](#fragmentselectortypetype)
+  - [HLSDiscontinuityModeType](#hlsdiscontinuitymodetype)
+  - [HLSDisplayFragmentTimestampType](#hlsdisplayfragmenttimestamptype)
+  - [HLSFragmentSelectorTypeType](#hlsfragmentselectortypetype)
+  - [HLSPlaybackModeType](#hlsplaybackmodetype)
   - [ListFragmentsPaginatorName](#listfragmentspaginatorname)
 
-## ClipFragmentSelectorType
+## ClipFragmentSelectorTypeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelectorType
+from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelectorTypeType
 ```
 
 Values:
@@ -32,10 +32,10 @@ Values:
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
 
-## ContainerFormat
+## ContainerFormatType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import ContainerFormat
+from mypy_boto3_kinesis_video_archived_media.literals import ContainerFormatType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `FRAGMENTED_MP4`
 - `MPEG_TS`
 
-## DASHDisplayFragmentNumber
+## DASHDisplayFragmentNumberType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import DASHDisplayFragmentNumber
+from mypy_boto3_kinesis_video_archived_media.literals import DASHDisplayFragmentNumberType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `ALWAYS`
 - `NEVER`
 
-## DASHDisplayFragmentTimestamp
+## DASHDisplayFragmentTimestampType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import DASHDisplayFragmentTimestamp
+from mypy_boto3_kinesis_video_archived_media.literals import DASHDisplayFragmentTimestampType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `ALWAYS`
 - `NEVER`
 
-## DASHFragmentSelectorType
+## DASHFragmentSelectorTypeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import DASHFragmentSelectorType
+from mypy_boto3_kinesis_video_archived_media.literals import DASHFragmentSelectorTypeType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
 
-## DASHPlaybackMode
+## DASHPlaybackModeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import DASHPlaybackMode
+from mypy_boto3_kinesis_video_archived_media.literals import DASHPlaybackModeType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 - `LIVE_REPLAY`
 - `ON_DEMAND`
 
-## FragmentSelectorType
+## FragmentSelectorTypeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import FragmentSelectorType
+from mypy_boto3_kinesis_video_archived_media.literals import FragmentSelectorTypeType
 ```
 
 Values:
@@ -99,10 +99,10 @@ Values:
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
 
-## HLSDiscontinuityMode
+## HLSDiscontinuityModeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import HLSDiscontinuityMode
+from mypy_boto3_kinesis_video_archived_media.literals import HLSDiscontinuityModeType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `NEVER`
 - `ON_DISCONTINUITY`
 
-## HLSDisplayFragmentTimestamp
+## HLSDisplayFragmentTimestampType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import HLSDisplayFragmentTimestamp
+from mypy_boto3_kinesis_video_archived_media.literals import HLSDisplayFragmentTimestampType
 ```
 
 Values:
@@ -122,10 +122,10 @@ Values:
 - `ALWAYS`
 - `NEVER`
 
-## HLSFragmentSelectorType
+## HLSFragmentSelectorTypeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import HLSFragmentSelectorType
+from mypy_boto3_kinesis_video_archived_media.literals import HLSFragmentSelectorTypeType
 ```
 
 Values:
@@ -133,10 +133,10 @@ Values:
 - `PRODUCER_TIMESTAMP`
 - `SERVER_TIMESTAMP`
 
-## HLSPlaybackMode
+## HLSPlaybackModeType
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import HLSPlaybackMode
+from mypy_boto3_kinesis_video_archived_media.literals import HLSPlaybackModeType
 ```
 
 Values:

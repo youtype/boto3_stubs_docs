@@ -3,7 +3,7 @@
 > [Index](..) > [FSx](.) > Typed dictionaries
 
 Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx)
 type annotations stubs module
 [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
@@ -87,11 +87,12 @@ from mypy_boto3_fsx.type_defs import AdministrativeActionTypeDef
 Optional fields:
 
 - `AdministrativeActionType`:
-  [AdministrativeActionType](./literals.md#administrativeactiontype)
+  [AdministrativeActionTypeType](./literals.md#administrativeactiontypetype)
 - `ProgressPercent`: `int`
 - `RequestTime`: `datetime`
-- `Status`: [Status](./literals.md#status)
-- `TargetFileSystemValues`: [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
+- `Status`: [StatusType](./literals.md#statustype)
+- `TargetFileSystemValues`:
+  [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
 - `FailureDetails`:
   [AdministrativeActionFailureDetailsTypeDef](./type_defs.md#administrativeactionfailuredetailstypedef)
 
@@ -104,7 +105,7 @@ from mypy_boto3_fsx.type_defs import AliasTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Lifecycle`: [AliasLifecycle](./literals.md#aliaslifecycle)
+- `Lifecycle`: [AliasLifecycleType](./literals.md#aliaslifecycletype)
 
 ## AssociateFileSystemAliasesResponseTypeDef
 
@@ -135,8 +136,8 @@ from mypy_boto3_fsx.type_defs import BackupTypeDef
 Required fields:
 
 - `BackupId`: `str`
-- `Lifecycle`: [BackupLifecycle](./literals.md#backuplifecycle)
-- `Type`: [BackupType](./literals.md#backuptype)
+- `Lifecycle`: [BackupLifecycleType](./literals.md#backuplifecycletype)
+- `Type`: [BackupTypeType](./literals.md#backuptypetype)
 - `CreationTime`: `datetime`
 - `FileSystem`: [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
 
@@ -163,7 +164,7 @@ from mypy_boto3_fsx.type_defs import CancelDataRepositoryTaskResponseTypeDef
 Optional fields:
 
 - `Lifecycle`:
-  [DataRepositoryTaskLifecycle](./literals.md#datarepositorytasklifecycle)
+  [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)
 - `TaskId`: `str`
 
 ## CompletionReportTypeDef
@@ -180,9 +181,9 @@ Optional fields:
 
 - `Path`: `str`
 - `Format`: `Literal['REPORT_CSV_20191124']` (see
-  [ReportFormat](./literals.md#reportformat))
+  [ReportFormatType](./literals.md#reportformattype))
 - `Scope`: `Literal['FAILED_FILES_ONLY']` (see
-  [ReportScope](./literals.md#reportscope))
+  [ReportScopeType](./literals.md#reportscopetype))
 
 ## CopyBackupResponseTypeDef
 
@@ -237,13 +238,15 @@ Optional fields:
 - `ImportPath`: `str`
 - `ExportPath`: `str`
 - `ImportedFileChunkSize`: `int`
-- `DeploymentType`: [LustreDeploymentType](./literals.md#lustredeploymenttype)
-- `AutoImportPolicy`: [AutoImportPolicyType](./literals.md#autoimportpolicytype)
+- `DeploymentType`:
+  [LustreDeploymentTypeType](./literals.md#lustredeploymenttypetype)
+- `AutoImportPolicy`:
+  [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
 - `PerUnitStorageThroughput`: `int`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `DriveCacheType`: [DriveCacheType](./literals.md#drivecachetype)
+- `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
 
 ## CreateFileSystemResponseTypeDef
 
@@ -270,7 +273,8 @@ Optional fields:
 - `ActiveDirectoryId`: `str`
 - `SelfManagedActiveDirectoryConfiguration`:
   [SelfManagedActiveDirectoryConfigurationTypeDef](./type_defs.md#selfmanagedactivedirectoryconfigurationtypedef)
-- `DeploymentType`: [WindowsDeploymentType](./literals.md#windowsdeploymenttype)
+- `DeploymentType`:
+  [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
 - `PreferredSubnetId`: `str`
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
@@ -286,11 +290,13 @@ from mypy_boto3_fsx.type_defs import DataRepositoryConfigurationTypeDef
 
 Optional fields:
 
-- `Lifecycle`: [DataRepositoryLifecycle](./literals.md#datarepositorylifecycle)
+- `Lifecycle`:
+  [DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype)
 - `ImportPath`: `str`
 - `ExportPath`: `str`
 - `ImportedFileChunkSize`: `int`
-- `AutoImportPolicy`: [AutoImportPolicyType](./literals.md#autoimportpolicytype)
+- `AutoImportPolicy`:
+  [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
 - `FailureDetails`:
   [DataRepositoryFailureDetailsTypeDef](./type_defs.md#datarepositoryfailuredetailstypedef)
 
@@ -323,7 +329,7 @@ from mypy_boto3_fsx.type_defs import DataRepositoryTaskFilterTypeDef
 Optional fields:
 
 - `Name`:
-  [DataRepositoryTaskFilterName](./literals.md#datarepositorytaskfiltername)
+  [DataRepositoryTaskFilterNameType](./literals.md#datarepositorytaskfilternametype)
 - `Values`: `List`\[`str`\]
 
 ## DataRepositoryTaskStatusTypeDef
@@ -349,9 +355,9 @@ Required fields:
 
 - `TaskId`: `str`
 - `Lifecycle`:
-  [DataRepositoryTaskLifecycle](./literals.md#datarepositorytasklifecycle)
+  [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)
 - `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
-  [DataRepositoryTaskType](./literals.md#datarepositorytasktype))
+  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
 - `CreationTime`: `datetime`
 - `FileSystemId`: `str`
 
@@ -377,7 +383,7 @@ from mypy_boto3_fsx.type_defs import DeleteBackupResponseTypeDef
 Optional fields:
 
 - `BackupId`: `str`
-- `Lifecycle`: [BackupLifecycle](./literals.md#backuplifecycle)
+- `Lifecycle`: [BackupLifecycleType](./literals.md#backuplifecycletype)
 
 ## DeleteFileSystemLustreConfigurationTypeDef
 
@@ -410,7 +416,7 @@ from mypy_boto3_fsx.type_defs import DeleteFileSystemResponseTypeDef
 Optional fields:
 
 - `FileSystemId`: `str`
-- `Lifecycle`: [FileSystemLifecycle](./literals.md#filesystemlifecycle)
+- `Lifecycle`: [FileSystemLifecycleType](./literals.md#filesystemlifecycletype)
 - `WindowsResponse`:
   [DeleteFileSystemWindowsResponseTypeDef](./type_defs.md#deletefilesystemwindowsresponsetypedef)
 - `LustreResponse`:
@@ -480,7 +486,8 @@ from mypy_boto3_fsx.type_defs import DescribeFileSystemsResponseTypeDef
 
 Optional fields:
 
-- `FileSystems`: `List`\[[FileSystemTypeDef](./type_defs.md#filesystemtypedef)\]
+- `FileSystems`:
+  `List`\[[FileSystemTypeDef](./type_defs.md#filesystemtypedef)\]
 - `NextToken`: `str`
 
 ## DisassociateFileSystemAliasesResponseTypeDef
@@ -514,12 +521,12 @@ Optional fields:
 - `OwnerId`: `str`
 - `CreationTime`: `datetime`
 - `FileSystemId`: `str`
-- `FileSystemType`: [FileSystemType](./literals.md#filesystemtype)
-- `Lifecycle`: [FileSystemLifecycle](./literals.md#filesystemlifecycle)
+- `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
+- `Lifecycle`: [FileSystemLifecycleType](./literals.md#filesystemlifecycletype)
 - `FailureDetails`:
   [FileSystemFailureDetailsTypeDef](./type_defs.md#filesystemfailuredetailstypedef)
 - `StorageCapacity`: `int`
-- `StorageType`: [StorageType](./literals.md#storagetype)
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `VpcId`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `NetworkInterfaceIds`: `List`\[`str`\]
@@ -542,7 +549,7 @@ from mypy_boto3_fsx.type_defs import FilterTypeDef
 
 Optional fields:
 
-- `Name`: [FilterName](./literals.md#filtername)
+- `Name`: [FilterNameType](./literals.md#filternametype)
 - `Values`: `List`\[`str`\]
 
 ## ListTagsForResourceResponseTypeDef
@@ -567,13 +574,14 @@ Optional fields:
 - `WeeklyMaintenanceStartTime`: `str`
 - `DataRepositoryConfiguration`:
   [DataRepositoryConfigurationTypeDef](./type_defs.md#datarepositoryconfigurationtypedef)
-- `DeploymentType`: [LustreDeploymentType](./literals.md#lustredeploymenttype)
+- `DeploymentType`:
+  [LustreDeploymentTypeType](./literals.md#lustredeploymenttypetype)
 - `PerUnitStorageThroughput`: `int`
 - `MountName`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `DriveCacheType`: [DriveCacheType](./literals.md#drivecachetype)
+- `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
 
 ## PaginatorConfigTypeDef
 
@@ -653,7 +661,8 @@ Optional fields:
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
-- `AutoImportPolicy`: [AutoImportPolicyType](./literals.md#autoimportpolicytype)
+- `AutoImportPolicy`:
+  [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
 
 ## UpdateFileSystemResponseTypeDef
 
@@ -691,13 +700,14 @@ Optional fields:
 - `ActiveDirectoryId`: `str`
 - `SelfManagedActiveDirectoryConfiguration`:
   [SelfManagedActiveDirectoryAttributesTypeDef](./type_defs.md#selfmanagedactivedirectoryattributestypedef)
-- `DeploymentType`: [WindowsDeploymentType](./literals.md#windowsdeploymenttype)
+- `DeploymentType`:
+  [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
 - `RemoteAdministrationEndpoint`: `str`
 - `PreferredSubnetId`: `str`
 - `PreferredFileServerIp`: `str`
 - `ThroughputCapacity`: `int`
 - `MaintenanceOperationsInProgress`:
-  `List`\[[FileSystemMaintenanceOperation](./literals.md#filesystemmaintenanceoperation)\]
+  `List`\[[FileSystemMaintenanceOperationType](./literals.md#filesystemmaintenanceoperationtype)\]
 - `WeeklyMaintenanceStartTime`: `str`
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`

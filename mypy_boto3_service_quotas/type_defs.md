@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceQuotas](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
@@ -40,7 +40,7 @@ from mypy_boto3_service_quotas.type_defs import ErrorReasonTypeDef
 
 Optional fields:
 
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## GetAWSDefaultServiceQuotaResponseTypeDef
@@ -62,7 +62,7 @@ from mypy_boto3_service_quotas.type_defs import GetAssociationForServiceQuotaTem
 Optional fields:
 
 - `ServiceQuotaTemplateAssociationStatus`:
-  [ServiceQuotaTemplateAssociationStatus](./literals.md#servicequotatemplateassociationstatus)
+  [ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype)
 
 ## GetRequestedServiceQuotaChangeResponseTypeDef
 
@@ -220,7 +220,7 @@ from mypy_boto3_service_quotas.type_defs import QuotaPeriodTypeDef
 Optional fields:
 
 - `PeriodValue`: `int`
-- `PeriodUnit`: [PeriodUnit](./literals.md#periodunit)
+- `PeriodUnit`: [PeriodUnitType](./literals.md#periodunittype)
 
 ## RequestServiceQuotaIncreaseResponseTypeDef
 
@@ -248,7 +248,7 @@ Optional fields:
 - `QuotaCode`: `str`
 - `QuotaName`: `str`
 - `DesiredValue`: `float`
-- `Status`: [RequestStatus](./literals.md#requeststatus)
+- `Status`: [RequestStatusType](./literals.md#requeststatustype)
 - `Created`: `datetime`
 - `LastUpdated`: `datetime`
 - `Requester`: `str`

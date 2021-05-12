@@ -3,7 +3,7 @@
 > [Index](..) > GroundStation
 
 Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
 [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
@@ -30,46 +30,46 @@ Can be used directly:
 from mypy_boto3_groundstation.client import GroundStationClient
 ```
 
-GroundStationClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_contact](./client.md#cancel-contact)
-- [create_config](./client.md#create-config)
-- [create_dataflow_endpoint_group](./client.md#create-dataflow-endpoint-group)
-- [create_mission_profile](./client.md#create-mission-profile)
-- [delete_config](./client.md#delete-config)
-- [delete_dataflow_endpoint_group](./client.md#delete-dataflow-endpoint-group)
-- [delete_mission_profile](./client.md#delete-mission-profile)
-- [describe_contact](./client.md#describe-contact)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_config](./client.md#get-config)
-- [get_dataflow_endpoint_group](./client.md#get-dataflow-endpoint-group)
-- [get_minute_usage](./client.md#get-minute-usage)
-- [get_mission_profile](./client.md#get-mission-profile)
-- [get_paginator](./client.md#get-paginator)
-- [get_satellite](./client.md#get-satellite)
-- [list_configs](./client.md#list-configs)
-- [list_contacts](./client.md#list-contacts)
-- [list_dataflow_endpoint_groups](./client.md#list-dataflow-endpoint-groups)
-- [list_ground_stations](./client.md#list-ground-stations)
-- [list_mission_profiles](./client.md#list-mission-profiles)
-- [list_satellites](./client.md#list-satellites)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [reserve_contact](./client.md#reserve-contact)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_config](./client.md#update-config)
-- [update_mission_profile](./client.md#update-mission-profile)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_contact](./client.md#cancel_contact)
+- [create_config](./client.md#create_config)
+- [create_dataflow_endpoint_group](./client.md#create_dataflow_endpoint_group)
+- [create_mission_profile](./client.md#create_mission_profile)
+- [delete_config](./client.md#delete_config)
+- [delete_dataflow_endpoint_group](./client.md#delete_dataflow_endpoint_group)
+- [delete_mission_profile](./client.md#delete_mission_profile)
+- [describe_contact](./client.md#describe_contact)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_config](./client.md#get_config)
+- [get_dataflow_endpoint_group](./client.md#get_dataflow_endpoint_group)
+- [get_minute_usage](./client.md#get_minute_usage)
+- [get_mission_profile](./client.md#get_mission_profile)
+- [get_paginator](./client.md#get_paginator)
+- [get_satellite](./client.md#get_satellite)
+- [list_configs](./client.md#list_configs)
+- [list_contacts](./client.md#list_contacts)
+- [list_dataflow_endpoint_groups](./client.md#list_dataflow_endpoint_groups)
+- [list_ground_stations](./client.md#list_ground_stations)
+- [list_mission_profiles](./client.md#list_mission_profiles)
+- [list_satellites](./client.md#list_satellites)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [reserve_contact](./client.md#reserve_contact)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_config](./client.md#update_config)
+- [update_mission_profile](./client.md#update_mission_profile)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DependencyException](./client.md#dependencyexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [ResourceLimitExceededException](./client.md#resourcelimitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+GroundStationClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DependencyException
+- InvalidParameterException
+- ResourceLimitExceededException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -96,24 +96,24 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_groundstation.literals import AngleUnits, ...
+from mypy_boto3_groundstation.literals import AngleUnitsType, ...
 ```
 
-- [AngleUnits](./literals.md#angleunits)
-- [BandwidthUnits](./literals.md#bandwidthunits)
-- [ConfigCapabilityType](./literals.md#configcapabilitytype)
-- [ContactStatus](./literals.md#contactstatus)
-- [Criticality](./literals.md#criticality)
-- [EirpUnits](./literals.md#eirpunits)
-- [EndpointStatus](./literals.md#endpointstatus)
-- [FrequencyUnits](./literals.md#frequencyunits)
+- [AngleUnitsType](./literals.md#angleunitstype)
+- [BandwidthUnitsType](./literals.md#bandwidthunitstype)
+- [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
+- [ContactStatusType](./literals.md#contactstatustype)
+- [CriticalityType](./literals.md#criticalitytype)
+- [EirpUnitsType](./literals.md#eirpunitstype)
+- [EndpointStatusType](./literals.md#endpointstatustype)
+- [FrequencyUnitsType](./literals.md#frequencyunitstype)
 - [ListConfigsPaginatorName](./literals.md#listconfigspaginatorname)
 - [ListContactsPaginatorName](./literals.md#listcontactspaginatorname)
 - [ListDataflowEndpointGroupsPaginatorName](./literals.md#listdataflowendpointgroupspaginatorname)
 - [ListGroundStationsPaginatorName](./literals.md#listgroundstationspaginatorname)
 - [ListMissionProfilesPaginatorName](./literals.md#listmissionprofilespaginatorname)
 - [ListSatellitesPaginatorName](./literals.md#listsatellitespaginatorname)
-- [Polarization](./literals.md#polarization)
+- [PolarizationType](./literals.md#polarizationtype)
 
 ## Typed dictionaries
 

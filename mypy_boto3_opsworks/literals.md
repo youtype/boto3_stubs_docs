@@ -3,38 +3,38 @@
 > [Index](..) > [OpsWorks](.) > Literals
 
 Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
 [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [Literals for boto3 OpsWorks module](#literals-for-boto3-opsworks-module)
-  - [AppAttributesKeys](#appattributeskeys)
+  - [AppAttributesKeysType](#appattributeskeystype)
   - [AppExistsWaiterName](#appexistswaitername)
-  - [AppType](#apptype)
-  - [Architecture](#architecture)
-  - [AutoScalingType](#autoscalingtype)
-  - [CloudWatchLogsEncoding](#cloudwatchlogsencoding)
-  - [CloudWatchLogsInitialPosition](#cloudwatchlogsinitialposition)
-  - [CloudWatchLogsTimeZone](#cloudwatchlogstimezone)
-  - [DeploymentCommandName](#deploymentcommandname)
+  - [AppTypeType](#apptypetype)
+  - [ArchitectureType](#architecturetype)
+  - [AutoScalingTypeType](#autoscalingtypetype)
+  - [CloudWatchLogsEncodingType](#cloudwatchlogsencodingtype)
+  - [CloudWatchLogsInitialPositionType](#cloudwatchlogsinitialpositiontype)
+  - [CloudWatchLogsTimeZoneType](#cloudwatchlogstimezonetype)
+  - [DeploymentCommandNameType](#deploymentcommandnametype)
   - [DeploymentSuccessfulWaiterName](#deploymentsuccessfulwaitername)
   - [DescribeEcsClustersPaginatorName](#describeecsclusterspaginatorname)
   - [InstanceOnlineWaiterName](#instanceonlinewaitername)
   - [InstanceRegisteredWaiterName](#instanceregisteredwaitername)
   - [InstanceStoppedWaiterName](#instancestoppedwaitername)
   - [InstanceTerminatedWaiterName](#instanceterminatedwaitername)
-  - [LayerAttributesKeys](#layerattributeskeys)
-  - [LayerType](#layertype)
-  - [RootDeviceType](#rootdevicetype)
-  - [SourceType](#sourcetype)
-  - [StackAttributesKeys](#stackattributeskeys)
-  - [VirtualizationType](#virtualizationtype)
-  - [VolumeType](#volumetype)
+  - [LayerAttributesKeysType](#layerattributeskeystype)
+  - [LayerTypeType](#layertypetype)
+  - [RootDeviceTypeType](#rootdevicetypetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [StackAttributesKeysType](#stackattributeskeystype)
+  - [VirtualizationTypeType](#virtualizationtypetype)
+  - [VolumeTypeType](#volumetypetype)
 
-## AppAttributesKeys
+## AppAttributesKeysType
 
 ```python
-from mypy_boto3_opsworks.literals import AppAttributesKeys
+from mypy_boto3_opsworks.literals import AppAttributesKeysType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 
 - `app_exists`
 
-## AppType
+## AppTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import AppType
+from mypy_boto3_opsworks.literals import AppTypeType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `rails`
 - `static`
 
-## Architecture
+## ArchitectureType
 
 ```python
-from mypy_boto3_opsworks.literals import Architecture
+from mypy_boto3_opsworks.literals import ArchitectureType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `i386`
 - `x86_64`
 
-## AutoScalingType
+## AutoScalingTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import AutoScalingType
+from mypy_boto3_opsworks.literals import AutoScalingTypeType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `load`
 - `timer`
 
-## CloudWatchLogsEncoding
+## CloudWatchLogsEncodingType
 
 ```python
-from mypy_boto3_opsworks.literals import CloudWatchLogsEncoding
+from mypy_boto3_opsworks.literals import CloudWatchLogsEncodingType
 ```
 
 Values:
@@ -193,10 +193,10 @@ Values:
 - `utf_8`
 - `utf_8_sig`
 
-## CloudWatchLogsInitialPosition
+## CloudWatchLogsInitialPositionType
 
 ```python
-from mypy_boto3_opsworks.literals import CloudWatchLogsInitialPosition
+from mypy_boto3_opsworks.literals import CloudWatchLogsInitialPositionType
 ```
 
 Values:
@@ -204,10 +204,10 @@ Values:
 - `end_of_file`
 - `start_of_file`
 
-## CloudWatchLogsTimeZone
+## CloudWatchLogsTimeZoneType
 
 ```python
-from mypy_boto3_opsworks.literals import CloudWatchLogsTimeZone
+from mypy_boto3_opsworks.literals import CloudWatchLogsTimeZoneType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 - `LOCAL`
 - `UTC`
 
-## DeploymentCommandName
+## DeploymentCommandNameType
 
 ```python
-from mypy_boto3_opsworks.literals import DeploymentCommandName
+from mypy_boto3_opsworks.literals import DeploymentCommandNameType
 ```
 
 Values:
@@ -296,10 +296,10 @@ Values:
 
 - `instance_terminated`
 
-## LayerAttributesKeys
+## LayerAttributesKeysType
 
 ```python
-from mypy_boto3_opsworks.literals import LayerAttributesKeys
+from mypy_boto3_opsworks.literals import LayerAttributesKeysType
 ```
 
 Values:
@@ -330,10 +330,10 @@ Values:
 - `RubygemsVersion`
 - `RubyVersion`
 
-## LayerType
+## LayerTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import LayerType
+from mypy_boto3_opsworks.literals import LayerTypeType
 ```
 
 Values:
@@ -351,10 +351,10 @@ Values:
 - `rails-app`
 - `web`
 
-## RootDeviceType
+## RootDeviceTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import RootDeviceType
+from mypy_boto3_opsworks.literals import RootDeviceTypeType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `ebs`
 - `instance-store`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import SourceType
+from mypy_boto3_opsworks.literals import SourceTypeType
 ```
 
 Values:
@@ -375,20 +375,20 @@ Values:
 - `s3`
 - `svn`
 
-## StackAttributesKeys
+## StackAttributesKeysType
 
 ```python
-from mypy_boto3_opsworks.literals import StackAttributesKeys
+from mypy_boto3_opsworks.literals import StackAttributesKeysType
 ```
 
 Values:
 
 - `Color`
 
-## VirtualizationType
+## VirtualizationTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import VirtualizationType
+from mypy_boto3_opsworks.literals import VirtualizationTypeType
 ```
 
 Values:
@@ -396,10 +396,10 @@ Values:
 - `hvm`
 - `paravirtual`
 
-## VolumeType
+## VolumeTypeType
 
 ```python
-from mypy_boto3_opsworks.literals import VolumeType
+from mypy_boto3_opsworks.literals import VolumeTypeType
 ```
 
 Values:

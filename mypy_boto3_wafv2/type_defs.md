@@ -3,7 +3,7 @@
 > [Index](..) > [WAFV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
 [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
@@ -110,7 +110,7 @@ from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef
 
 Required fields:
 
-- `Action`: [ActionValue](./literals.md#actionvalue)
+- `Action`: [ActionValueType](./literals.md#actionvaluetype)
 
 ## AllowActionTypeDef
 
@@ -141,7 +141,8 @@ from mypy_boto3_wafv2.type_defs import BlockActionTypeDef
 
 Optional fields:
 
-- `CustomResponse`: [CustomResponseTypeDef](./type_defs.md#customresponsetypedef)
+- `CustomResponse`:
+  [CustomResponseTypeDef](./type_defs.md#customresponsetypedef)
 
 ## ByteMatchStatementTypeDef
 
@@ -156,7 +157,7 @@ Required fields:
 - `TextTransformations`:
   `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 - `PositionalConstraint`:
-  [PositionalConstraint](./literals.md#positionalconstraint)
+  [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
 ## CheckCapacityResponseTypeDef
 
@@ -263,7 +264,8 @@ from mypy_boto3_wafv2.type_defs import CustomResponseBodyTypeDef
 
 Required fields:
 
-- `ContentType`: [ResponseContentType](./literals.md#responsecontenttype)
+- `ContentType`:
+  [ResponseContentTypeType](./literals.md#responsecontenttypetype)
 - `Content`: `str`
 
 ## CustomResponseTypeDef
@@ -355,8 +357,8 @@ from mypy_boto3_wafv2.type_defs import FilterTypeDef
 
 Required fields:
 
-- `Behavior`: [FilterBehavior](./literals.md#filterbehavior)
-- `Requirement`: [FilterRequirement](./literals.md#filterrequirement)
+- `Behavior`: [FilterBehaviorType](./literals.md#filterbehaviortype)
+- `Requirement`: [FilterRequirementType](./literals.md#filterrequirementtype)
 - `Conditions`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## FirewallManagerRuleGroupTypeDef
@@ -371,7 +373,8 @@ Required fields:
 - `Priority`: `int`
 - `FirewallManagerStatement`:
   [FirewallManagerStatementTypeDef](./type_defs.md#firewallmanagerstatementtypedef)
-- `OverrideAction`: [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
+- `OverrideAction`:
+  [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
 - `VisibilityConfig`:
   [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
 
@@ -397,7 +400,8 @@ from mypy_boto3_wafv2.type_defs import ForwardedIPConfigTypeDef
 Required fields:
 
 - `HeaderName`: `str`
-- `FallbackBehavior`: [FallbackBehavior](./literals.md#fallbackbehavior)
+- `FallbackBehavior`:
+  [FallbackBehaviorType](./literals.md#fallbackbehaviortype)
 
 ## GeoMatchStatementTypeDef
 
@@ -407,7 +411,7 @@ from mypy_boto3_wafv2.type_defs import GeoMatchStatementTypeDef
 
 Optional fields:
 
-- `CountryCodes`: `List`\[[CountryCode](./literals.md#countrycode)\]
+- `CountryCodes`: `List`\[[CountryCodeType](./literals.md#countrycodetype)\]
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
@@ -548,8 +552,9 @@ from mypy_boto3_wafv2.type_defs import IPSetForwardedIPConfigTypeDef
 Required fields:
 
 - `HeaderName`: `str`
-- `FallbackBehavior`: [FallbackBehavior](./literals.md#fallbackbehavior)
-- `Position`: [ForwardedIPPosition](./literals.md#forwardedipposition)
+- `FallbackBehavior`:
+  [FallbackBehaviorType](./literals.md#fallbackbehaviortype)
+- `Position`: [ForwardedIPPositionType](./literals.md#forwardedippositiontype)
 
 ## IPSetReferenceStatementTypeDef
 
@@ -591,7 +596,8 @@ Required fields:
 - `Name`: `str`
 - `Id`: `str`
 - `ARN`: `str`
-- `IPAddressVersion`: [IPAddressVersion](./literals.md#ipaddressversion)
+- `IPAddressVersion`:
+  [IPAddressVersionType](./literals.md#ipaddressversiontype)
 - `Addresses`: `List`\[`str`\]
 
 Optional fields:
@@ -608,12 +614,12 @@ Required fields:
 
 - `MatchPattern`:
   [JsonMatchPatternTypeDef](./type_defs.md#jsonmatchpatterntypedef)
-- `MatchScope`: [JsonMatchScope](./literals.md#jsonmatchscope)
+- `MatchScope`: [JsonMatchScopeType](./literals.md#jsonmatchscopetype)
 
 Optional fields:
 
 - `InvalidFallbackBehavior`:
-  [BodyParsingFallbackBehavior](./literals.md#bodyparsingfallbackbehavior)
+  [BodyParsingFallbackBehaviorType](./literals.md#bodyparsingfallbackbehaviortype)
 
 ## JsonMatchPatternTypeDef
 
@@ -634,7 +640,7 @@ from mypy_boto3_wafv2.type_defs import LabelMatchStatementTypeDef
 
 Required fields:
 
-- `Scope`: [LabelMatchScope](./literals.md#labelmatchscope)
+- `Scope`: [LabelMatchScopeType](./literals.md#labelmatchscopetype)
 - `Key`: `str`
 
 ## LabelNameConditionTypeDef
@@ -787,7 +793,7 @@ from mypy_boto3_wafv2.type_defs import LoggingFilterTypeDef
 Required fields:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DefaultBehavior`: [FilterBehavior](./literals.md#filterbehavior)
+- `DefaultBehavior`: [FilterBehaviorType](./literals.md#filterbehaviortype)
 
 ## ManagedRuleGroupStatementTypeDef
 
@@ -868,7 +874,8 @@ from mypy_boto3_wafv2.type_defs import RateBasedStatementManagedKeysIPSetTypeDef
 
 Optional fields:
 
-- `IPAddressVersion`: [IPAddressVersion](./literals.md#ipaddressversion)
+- `IPAddressVersion`:
+  [IPAddressVersionType](./literals.md#ipaddressversiontype)
 - `Addresses`: `List`\[`str`\]
 
 ## RateBasedStatementTypeDef
@@ -881,7 +888,7 @@ Required fields:
 
 - `Limit`: `int`
 - `AggregateKeyType`:
-  [RateBasedStatementAggregateKeyType](./literals.md#ratebasedstatementaggregatekeytype)
+  [RateBasedStatementAggregateKeyTypeType](./literals.md#ratebasedstatementaggregatekeytypetype)
 
 Optional fields:
 
@@ -928,7 +935,8 @@ Optional fields:
 - `Id`: `str`
 - `ARN`: `str`
 - `Description`: `str`
-- `RegularExpressionList`: `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+- `RegularExpressionList`:
+  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
 
 ## RegexTypeDef
 
@@ -1036,7 +1044,8 @@ Required fields:
 Optional fields:
 
 - `Action`: [RuleActionTypeDef](./type_defs.md#ruleactiontypedef)
-- `OverrideAction`: [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
+- `OverrideAction`:
+  [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
 - `RuleLabels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
 
 ## SampledHTTPRequestTypeDef
@@ -1089,7 +1098,8 @@ from mypy_boto3_wafv2.type_defs import SizeConstraintStatementTypeDef
 Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Size`: `int`
 - `TextTransformations`:
   `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
@@ -1171,7 +1181,8 @@ from mypy_boto3_wafv2.type_defs import TextTransformationTypeDef
 Required fields:
 
 - `Priority`: `int`
-- `Type`: [TextTransformationType](./literals.md#texttransformationtype)
+- `Type`:
+  [TextTransformationTypeType](./literals.md#texttransformationtypetype)
 
 ## TimeWindowTypeDef
 

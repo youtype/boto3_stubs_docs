@@ -3,7 +3,7 @@
 > [Index](..) > [AuditManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
 [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
@@ -125,11 +125,12 @@ Optional fields:
 
 - `id`: `str`
 - `description`: `str`
-- `status`: [ControlSetStatus](./literals.md#controlsetstatus)
+- `status`: [ControlSetStatusType](./literals.md#controlsetstatustype)
 - `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `controls`:
   `List`\[[AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)\]
-- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
+- `delegations`:
+  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `systemEvidenceCount`: `int`
 - `manualEvidenceCount`: `int`
 
@@ -144,8 +145,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `description`: `str`
-- `status`: [ControlStatus](./literals.md#controlstatus)
-- `response`: [ControlResponse](./literals.md#controlresponse)
+- `status`: [ControlStatusType](./literals.md#controlstatustype)
+- `response`: [ControlResponseType](./literals.md#controlresponsetype)
 - `comments`:
   `List`\[[ControlCommentTypeDef](./type_defs.md#controlcommenttypedef)\]
 - `evidenceSources`: `List`\[`str`\]
@@ -189,7 +190,7 @@ Optional fields:
 
 - `arn`: `str`
 - `id`: `str`
-- `type`: [FrameworkType](./literals.md#frameworktype)
+- `type`: [FrameworkTypeType](./literals.md#frameworktypetype)
 - `name`: `str`
 - `description`: `str`
 - `logo`: `str`
@@ -209,7 +210,8 @@ Optional fields:
 
 - `id`: `str`
 - `arn`: `str`
-- `metadata`: [FrameworkMetadataTypeDef](./type_defs.md#frameworkmetadatatypedef)
+- `metadata`:
+  [FrameworkMetadataTypeDef](./type_defs.md#frameworkmetadatatypedef)
 - `controlSets`:
   `List`\[[AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef)\]
 
@@ -224,9 +226,10 @@ Optional fields:
 - `name`: `str`
 - `id`: `str`
 - `complianceType`: `str`
-- `status`: [AssessmentStatus](./literals.md#assessmentstatus)
+- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
+- `delegations`:
+  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 
@@ -242,12 +245,13 @@ Optional fields:
 - `id`: `str`
 - `description`: `str`
 - `complianceType`: `str`
-- `status`: [AssessmentStatus](./literals.md#assessmentstatus)
+- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `assessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 - `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
+- `delegations`:
+  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 
@@ -277,7 +281,8 @@ Optional fields:
 - `assessmentId`: `str`
 - `assessmentName`: `str`
 - `author`: `str`
-- `status`: [AssessmentReportStatus](./literals.md#assessmentreportstatus)
+- `status`:
+  [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
 - `creationTime`: `datetime`
 
 ## AssessmentReportTypeDef
@@ -295,7 +300,8 @@ Optional fields:
 - `assessmentId`: `str`
 - `assessmentName`: `str`
 - `author`: `str`
-- `status`: [AssessmentReportStatus](./literals.md#assessmentreportstatus)
+- `status`:
+  [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
 - `creationTime`: `datetime`
 
 ## AssessmentReportsDestinationTypeDef
@@ -307,7 +313,7 @@ from mypy_boto3_auditmanager.type_defs import AssessmentReportsDestinationTypeDe
 Optional fields:
 
 - `destinationType`: `Literal['S3']` (see
-  [AssessmentReportDestinationType](./literals.md#assessmentreportdestinationtype))
+  [AssessmentReportDestinationTypeType](./literals.md#assessmentreportdestinationtypetype))
 - `destination`: `str`
 
 ## AssessmentTypeDef
@@ -359,7 +365,8 @@ from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentR
 
 Optional fields:
 
-- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
+- `delegations`:
+  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `errors`:
   `List`\[[BatchCreateDelegationByAssessmentErrorTypeDef](./type_defs.md#batchcreatedelegationbyassessmenterrortypedef)\]
 
@@ -406,7 +413,8 @@ from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentCon
 
 Optional fields:
 
-- `manualEvidence`: [ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)
+- `manualEvidence`:
+  [ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
@@ -429,9 +437,9 @@ from mypy_boto3_auditmanager.type_defs import ChangeLogTypeDef
 
 Optional fields:
 
-- `objectType`: [ObjectTypeEnum](./literals.md#objecttypeenum)
+- `objectType`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
 - `objectName`: `str`
-- `action`: [ActionEnum](./literals.md#actionenum)
+- `action`: [ActionEnumType](./literals.md#actionenumtype)
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 
@@ -458,10 +466,11 @@ Optional fields:
 - `sourceId`: `str`
 - `sourceName`: `str`
 - `sourceDescription`: `str`
-- `sourceSetUpOption`: [SourceSetUpOption](./literals.md#sourcesetupoption)
-- `sourceType`: [SourceType](./literals.md#sourcetype)
+- `sourceSetUpOption`:
+  [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
+- `sourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
-- `sourceFrequency`: [SourceFrequency](./literals.md#sourcefrequency)
+- `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - `troubleshootingText`: `str`
 
 ## ControlMetadataTypeDef
@@ -501,7 +510,7 @@ Optional fields:
 
 - `arn`: `str`
 - `id`: `str`
-- `type`: [ControlType](./literals.md#controltype)
+- `type`: [ControlTypeType](./literals.md#controltypetype)
 - `name`: `str`
 - `description`: `str`
 - `testingInformation`: `str`
@@ -582,10 +591,11 @@ Optional fields:
 
 - `sourceName`: `str`
 - `sourceDescription`: `str`
-- `sourceSetUpOption`: [SourceSetUpOption](./literals.md#sourcesetupoption)
-- `sourceType`: [SourceType](./literals.md#sourcetype)
+- `sourceSetUpOption`:
+  [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
+- `sourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
-- `sourceFrequency`: [SourceFrequency](./literals.md#sourcefrequency)
+- `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - `troubleshootingText`: `str`
 
 ## CreateControlResponseTypeDef
@@ -609,7 +619,7 @@ Optional fields:
 - `comment`: `str`
 - `controlSetId`: `str`
 - `roleArn`: `str`
-- `roleType`: [RoleType](./literals.md#roletype)
+- `roleType`: [RoleTypeType](./literals.md#roletypetype)
 
 ## DelegationMetadataTypeDef
 
@@ -622,7 +632,7 @@ Optional fields:
 - `id`: `str`
 - `assessmentName`: `str`
 - `assessmentId`: `str`
-- `status`: [DelegationStatus](./literals.md#delegationstatus)
+- `status`: [DelegationStatusType](./literals.md#delegationstatustype)
 - `roleArn`: `str`
 - `creationTime`: `datetime`
 - `controlSetName`: `str`
@@ -638,9 +648,9 @@ Optional fields:
 - `id`: `str`
 - `assessmentName`: `str`
 - `assessmentId`: `str`
-- `status`: [DelegationStatus](./literals.md#delegationstatus)
+- `status`: [DelegationStatusType](./literals.md#delegationstatustype)
 - `roleArn`: `str`
-- `roleType`: [RoleType](./literals.md#roletype)
+- `roleType`: [RoleTypeType](./literals.md#roletypetype)
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 - `controlSetId`: `str`
@@ -655,7 +665,7 @@ from mypy_boto3_auditmanager.type_defs import DeregisterAccountResponseTypeDef
 
 Optional fields:
 
-- `status`: [AccountStatus](./literals.md#accountstatus)
+- `status`: [AccountStatusType](./literals.md#accountstatustype)
 
 ## EvidenceTypeDef
 
@@ -706,12 +716,13 @@ Optional fields:
 - `arn`: `str`
 - `id`: `str`
 - `name`: `str`
-- `type`: [FrameworkType](./literals.md#frameworktype)
+- `type`: [FrameworkTypeType](./literals.md#frameworktypetype)
 - `complianceType`: `str`
 - `description`: `str`
 - `logo`: `str`
 - `controlSources`: `str`
-- `controlSets`: `List`\[[ControlSetTypeDef](./type_defs.md#controlsettypedef)\]
+- `controlSets`:
+  `List`\[[ControlSetTypeDef](./type_defs.md#controlsettypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `createdBy`: `str`
@@ -726,7 +737,7 @@ from mypy_boto3_auditmanager.type_defs import GetAccountStatusResponseTypeDef
 
 Optional fields:
 
-- `status`: [AccountStatus](./literals.md#accountstatus)
+- `status`: [AccountStatusType](./literals.md#accountstatustype)
 
 ## GetAssessmentFrameworkResponseTypeDef
 
@@ -996,7 +1007,7 @@ from mypy_boto3_auditmanager.type_defs import RegisterAccountResponseTypeDef
 
 Optional fields:
 
-- `status`: [AccountStatus](./literals.md#accountstatus)
+- `status`: [AccountStatusType](./literals.md#accountstatustype)
 
 ## RegisterOrganizationAdminAccountResponseTypeDef
 
@@ -1028,7 +1039,7 @@ from mypy_boto3_auditmanager.type_defs import RoleTypeDef
 
 Optional fields:
 
-- `roleType`: [RoleType](./literals.md#roletype)
+- `roleType`: [RoleTypeType](./literals.md#roletypetype)
 - `roleArn`: `str`
 
 ## ScopeTypeDef
@@ -1039,8 +1050,10 @@ from mypy_boto3_auditmanager.type_defs import ScopeTypeDef
 
 Optional fields:
 
-- `awsAccounts`: `List`\[[AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)\]
-- `awsServices`: `List`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
+- `awsAccounts`:
+  `List`\[[AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)\]
+- `awsServices`:
+  `List`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
 
 ## ServiceMetadataTypeDef
 
@@ -1079,7 +1092,7 @@ from mypy_boto3_auditmanager.type_defs import SourceKeywordTypeDef
 Optional fields:
 
 - `keywordInputType`: `Literal['SELECT_FROM_LIST']` (see
-  [KeywordInputType](./literals.md#keywordinputtype))
+  [KeywordInputTypeType](./literals.md#keywordinputtypetype))
 - `keywordValue`: `str`
 
 ## URLTypeDef
@@ -1101,7 +1114,8 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlResponseTyp
 
 Optional fields:
 
-- `control`: [AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)
+- `control`:
+  [AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)
 
 ## UpdateAssessmentControlSetStatusResponseTypeDef
 

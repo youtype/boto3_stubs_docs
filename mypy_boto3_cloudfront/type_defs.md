@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFront](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
 [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
@@ -239,7 +239,8 @@ from mypy_boto3_cloudfront.type_defs import AliasICPRecordalTypeDef
 Optional fields:
 
 - `CNAME`: `str`
-- `ICPRecordalStatus`: [ICPRecordalStatus](./literals.md#icprecordalstatus)
+- `ICPRecordalStatus`:
+  [ICPRecordalStatusType](./literals.md#icprecordalstatustype)
 
 ## AliasesTypeDef
 
@@ -264,7 +265,7 @@ from mypy_boto3_cloudfront.type_defs import AllowedMethodsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[Method](./literals.md#method)\]
+- `Items`: `List`\[[MethodType](./literals.md#methodtype)\]
 
 Optional fields:
 
@@ -281,14 +282,16 @@ Required fields:
 - `PathPattern`: `str`
 - `TargetOriginId`: `str`
 - `ViewerProtocolPolicy`:
-  [ViewerProtocolPolicy](./literals.md#viewerprotocolpolicy)
+  [ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype)
 
 Optional fields:
 
-- `TrustedSigners`: [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
+- `TrustedSigners`:
+  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
 - `TrustedKeyGroups`:
   [TrustedKeyGroupsTypeDef](./type_defs.md#trustedkeygroupstypedef)
-- `AllowedMethods`: [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
+- `AllowedMethods`:
+  [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
 - `SmoothStreaming`: `bool`
 - `Compress`: `bool`
 - `LambdaFunctionAssociations`:
@@ -317,7 +320,8 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[[CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)\]
+- `Items`:
+  `List`\[[CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)\]
 
 ## CachePolicyConfigTypeDef
 
@@ -347,7 +351,7 @@ from mypy_boto3_cloudfront.type_defs import CachePolicyCookiesConfigTypeDef
 Required fields:
 
 - `CookieBehavior`:
-  [CachePolicyCookieBehavior](./literals.md#cachepolicycookiebehavior)
+  [CachePolicyCookieBehaviorType](./literals.md#cachepolicycookiebehaviortype)
 
 Optional fields:
 
@@ -362,7 +366,7 @@ from mypy_boto3_cloudfront.type_defs import CachePolicyHeadersConfigTypeDef
 Required fields:
 
 - `HeaderBehavior`:
-  [CachePolicyHeaderBehavior](./literals.md#cachepolicyheaderbehavior)
+  [CachePolicyHeaderBehaviorType](./literals.md#cachepolicyheaderbehaviortype)
 
 Optional fields:
 
@@ -394,7 +398,7 @@ from mypy_boto3_cloudfront.type_defs import CachePolicyQueryStringsConfigTypeDef
 Required fields:
 
 - `QueryStringBehavior`:
-  [CachePolicyQueryStringBehavior](./literals.md#cachepolicyquerystringbehavior)
+  [CachePolicyQueryStringBehaviorType](./literals.md#cachepolicyquerystringbehaviortype)
 
 Optional fields:
 
@@ -409,7 +413,7 @@ from mypy_boto3_cloudfront.type_defs import CachePolicySummaryTypeDef
 
 Required fields:
 
-- `Type`: [CachePolicyType](./literals.md#cachepolicytype)
+- `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
 - `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
 
 ## CachePolicyTypeDef
@@ -434,7 +438,7 @@ from mypy_boto3_cloudfront.type_defs import CachedMethodsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[Method](./literals.md#method)\]
+- `Items`: `List`\[[MethodType](./literals.md#methodtype)\]
 
 ## CloudFrontOriginAccessIdentityConfigTypeDef
 
@@ -517,7 +521,8 @@ from mypy_boto3_cloudfront.type_defs import ContentTypeProfileTypeDef
 
 Required fields:
 
-- `Format`: `Literal['URLEncoded']` (see [Format](./literals.md#format))
+- `Format`: `Literal['URLEncoded']` (see
+  [FormatType](./literals.md#formattype))
 - `ContentType`: `str`
 
 Optional fields:
@@ -561,7 +566,7 @@ from mypy_boto3_cloudfront.type_defs import CookiePreferenceTypeDef
 
 Required fields:
 
-- `Forward`: [ItemSelection](./literals.md#itemselection)
+- `Forward`: [ItemSelectionType](./literals.md#itemselectiontype)
 
 Optional fields:
 
@@ -808,7 +813,7 @@ Required fields:
 - `HTTPPort`: `int`
 - `HTTPSPort`: `int`
 - `OriginProtocolPolicy`:
-  [OriginProtocolPolicy](./literals.md#originprotocolpolicy)
+  [OriginProtocolPolicyType](./literals.md#originprotocolpolicytype)
 
 Optional fields:
 
@@ -827,14 +832,16 @@ Required fields:
 
 - `TargetOriginId`: `str`
 - `ViewerProtocolPolicy`:
-  [ViewerProtocolPolicy](./literals.md#viewerprotocolpolicy)
+  [ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype)
 
 Optional fields:
 
-- `TrustedSigners`: [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
+- `TrustedSigners`:
+  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
 - `TrustedKeyGroups`:
   [TrustedKeyGroupsTypeDef](./type_defs.md#trustedkeygroupstypedef)
-- `AllowedMethods`: [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
+- `AllowedMethods`:
+  [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
 - `SmoothStreaming`: `bool`
 - `Compress`: `bool`
 - `LambdaFunctionAssociations`:
@@ -883,16 +890,17 @@ Optional fields:
 - `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
 - `DefaultRootObject`: `str`
 - `OriginGroups`: [OriginGroupsTypeDef](./type_defs.md#origingroupstypedef)
-- `CacheBehaviors`: [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
+- `CacheBehaviors`:
+  [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
 - `CustomErrorResponses`:
   [CustomErrorResponsesTypeDef](./type_defs.md#customerrorresponsestypedef)
 - `Logging`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `PriceClass`: [PriceClass](./literals.md#priceclass)
+- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
 - `ViewerCertificate`:
   [ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef)
 - `Restrictions`: [RestrictionsTypeDef](./type_defs.md#restrictionstypedef)
 - `WebACLId`: `str`
-- `HttpVersion`: [HttpVersion](./literals.md#httpversion)
+- `HttpVersion`: [HttpVersionType](./literals.md#httpversiontype)
 - `IsIPV6Enabled`: `bool`
 
 ## DistributionConfigWithTagsTypeDef
@@ -961,17 +969,18 @@ Required fields:
 - `Origins`: [OriginsTypeDef](./type_defs.md#originstypedef)
 - `DefaultCacheBehavior`:
   [DefaultCacheBehaviorTypeDef](./type_defs.md#defaultcachebehaviortypedef)
-- `CacheBehaviors`: [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
+- `CacheBehaviors`:
+  [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
 - `CustomErrorResponses`:
   [CustomErrorResponsesTypeDef](./type_defs.md#customerrorresponsestypedef)
 - `Comment`: `str`
-- `PriceClass`: [PriceClass](./literals.md#priceclass)
+- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
 - `Enabled`: `bool`
 - `ViewerCertificate`:
   [ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef)
 - `Restrictions`: [RestrictionsTypeDef](./type_defs.md#restrictionstypedef)
 - `WebACLId`: `str`
-- `HttpVersion`: [HttpVersion](./literals.md#httpversion)
+- `HttpVersion`: [HttpVersionType](./literals.md#httpversiontype)
 - `IsIPV6Enabled`: `bool`
 
 Optional fields:
@@ -1220,7 +1229,7 @@ from mypy_boto3_cloudfront.type_defs import FunctionAssociationTypeDef
 Required fields:
 
 - `FunctionARN`: `str`
-- `EventType`: [EventType](./literals.md#eventtype)
+- `EventType`: [EventTypeType](./literals.md#eventtypetype)
 
 ## FunctionAssociationsTypeDef
 
@@ -1247,7 +1256,7 @@ Required fields:
 
 - `Comment`: `str`
 - `Runtime`: `Literal['cloudfront-js-1.0']` (see
-  [FunctionRuntime](./literals.md#functionruntime))
+  [FunctionRuntimeType](./literals.md#functionruntimetype))
 
 ## FunctionListTypeDef
 
@@ -1279,7 +1288,7 @@ Required fields:
 
 Optional fields:
 
-- `Stage`: [FunctionStage](./literals.md#functionstage)
+- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 - `CreatedTime`: `datetime`
 
 ## FunctionSummaryTypeDef
@@ -1291,7 +1300,8 @@ from mypy_boto3_cloudfront.type_defs import FunctionSummaryTypeDef
 Required fields:
 
 - `Name`: `str`
-- `FunctionConfig`: [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
+- `FunctionConfig`:
+  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
 - `FunctionMetadata`:
   [FunctionMetadataTypeDef](./type_defs.md#functionmetadatatypedef)
 
@@ -1307,7 +1317,8 @@ from mypy_boto3_cloudfront.type_defs import GeoRestrictionTypeDef
 
 Required fields:
 
-- `RestrictionType`: [GeoRestrictionType](./literals.md#georestrictiontype)
+- `RestrictionType`:
+  [GeoRestrictionTypeType](./literals.md#georestrictiontypetype)
 - `Quantity`: `int`
 
 Optional fields:
@@ -1462,7 +1473,8 @@ from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigResultTypeDef
 
 Optional fields:
 
-- `KeyGroupConfig`: [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
+- `KeyGroupConfig`:
+  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
 - `ETag`: `str`
 
 ## GetKeyGroupResultTypeDef
@@ -1702,7 +1714,8 @@ Required fields:
 
 - `Id`: `str`
 - `LastModifiedTime`: `datetime`
-- `KeyGroupConfig`: [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
+- `KeyGroupConfig`:
+  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
 
 ## KeyPairIdsTypeDef
 
@@ -1738,7 +1751,7 @@ from mypy_boto3_cloudfront.type_defs import LambdaFunctionAssociationTypeDef
 Required fields:
 
 - `LambdaFunctionARN`: `str`
-- `EventType`: [EventType](./literals.md#eventtype)
+- `EventType`: [EventTypeType](./literals.md#eventtypetype)
 
 Optional fields:
 
@@ -2077,7 +2090,7 @@ from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyCookiesConfigType
 Required fields:
 
 - `CookieBehavior`:
-  [OriginRequestPolicyCookieBehavior](./literals.md#originrequestpolicycookiebehavior)
+  [OriginRequestPolicyCookieBehaviorType](./literals.md#originrequestpolicycookiebehaviortype)
 
 Optional fields:
 
@@ -2092,7 +2105,7 @@ from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyHeadersConfigType
 Required fields:
 
 - `HeaderBehavior`:
-  [OriginRequestPolicyHeaderBehavior](./literals.md#originrequestpolicyheaderbehavior)
+  [OriginRequestPolicyHeaderBehaviorType](./literals.md#originrequestpolicyheaderbehaviortype)
 
 Optional fields:
 
@@ -2124,7 +2137,7 @@ from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyQueryStringsConfi
 Required fields:
 
 - `QueryStringBehavior`:
-  [OriginRequestPolicyQueryStringBehavior](./literals.md#originrequestpolicyquerystringbehavior)
+  [OriginRequestPolicyQueryStringBehaviorType](./literals.md#originrequestpolicyquerystringbehaviortype)
 
 Optional fields:
 
@@ -2139,7 +2152,8 @@ from mypy_boto3_cloudfront.type_defs import OriginRequestPolicySummaryTypeDef
 
 Required fields:
 
-- `Type`: [OriginRequestPolicyType](./literals.md#originrequestpolicytype)
+- `Type`:
+  [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
 - `OriginRequestPolicy`:
   [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
 
@@ -2179,7 +2193,7 @@ from mypy_boto3_cloudfront.type_defs import OriginSslProtocolsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[SslProtocol](./literals.md#sslprotocol)\]
+- `Items`: `List`\[[SslProtocolType](./literals.md#sslprotocoltype)\]
 
 ## OriginTypeDef
 
@@ -2196,7 +2210,8 @@ Optional fields:
 
 - `OriginPath`: `str`
 - `CustomHeaders`: [CustomHeadersTypeDef](./type_defs.md#customheaderstypedef)
-- `S3OriginConfig`: [S3OriginConfigTypeDef](./type_defs.md#s3originconfigtypedef)
+- `S3OriginConfig`:
+  [S3OriginConfigTypeDef](./type_defs.md#s3originconfigtypedef)
 - `CustomOriginConfig`:
   [CustomOriginConfigTypeDef](./type_defs.md#customoriginconfigtypedef)
 - `ConnectionAttempts`: `int`
@@ -2444,7 +2459,7 @@ from mypy_boto3_cloudfront.type_defs import RealtimeMetricsSubscriptionConfigTyp
 Required fields:
 
 - `RealtimeMetricsSubscriptionStatus`:
-  [RealtimeMetricsSubscriptionStatus](./literals.md#realtimemetricssubscriptionstatus)
+  [RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype)
 
 ## RestrictionsTypeDef
 
@@ -2454,7 +2469,8 @@ from mypy_boto3_cloudfront.type_defs import RestrictionsTypeDef
 
 Required fields:
 
-- `GeoRestriction`: [GeoRestrictionTypeDef](./type_defs.md#georestrictiontypedef)
+- `GeoRestriction`:
+  [GeoRestrictionTypeDef](./type_defs.md#georestrictiontypedef)
 
 ## S3OriginConfigTypeDef
 
@@ -2510,7 +2526,8 @@ Required fields:
 - `CallerReference`: `str`
 - `S3Origin`: [S3OriginTypeDef](./type_defs.md#s3origintypedef)
 - `Comment`: `str`
-- `TrustedSigners`: [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
+- `TrustedSigners`:
+  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
 - `Enabled`: `bool`
 
 Optional fields:
@@ -2518,7 +2535,7 @@ Optional fields:
 - `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
 - `Logging`:
   [StreamingLoggingConfigTypeDef](./type_defs.md#streamingloggingconfigtypedef)
-- `PriceClass`: [PriceClass](./literals.md#priceclass)
+- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
 
 ## StreamingDistributionConfigWithTagsTypeDef
 
@@ -2566,9 +2583,10 @@ Required fields:
 - `DomainName`: `str`
 - `S3Origin`: [S3OriginTypeDef](./type_defs.md#s3origintypedef)
 - `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
-- `TrustedSigners`: [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
+- `TrustedSigners`:
+  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
 - `Comment`: `str`
-- `PriceClass`: [PriceClass](./literals.md#priceclass)
+- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
 - `Enabled`: `bool`
 
 ## StreamingDistributionTypeDef
@@ -2831,11 +2849,13 @@ Optional fields:
 - `CloudFrontDefaultCertificate`: `bool`
 - `IAMCertificateId`: `str`
 - `ACMCertificateArn`: `str`
-- `SSLSupportMethod`: [SSLSupportMethod](./literals.md#sslsupportmethod)
+- `SSLSupportMethod`:
+  [SSLSupportMethodType](./literals.md#sslsupportmethodtype)
 - `MinimumProtocolVersion`:
-  [MinimumProtocolVersion](./literals.md#minimumprotocolversion)
+  [MinimumProtocolVersionType](./literals.md#minimumprotocolversiontype)
 - `Certificate`: `str`
-- `CertificateSource`: [CertificateSource](./literals.md#certificatesource)
+- `CertificateSource`:
+  [CertificateSourceType](./literals.md#certificatesourcetype)
 
 ## WaiterConfigTypeDef
 

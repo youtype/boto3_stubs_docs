@@ -3,7 +3,7 @@
 > [Index](..) > [EKS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/eks.html#EKS)
 type annotations stubs module
 [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
@@ -110,7 +110,7 @@ from mypy_boto3_eks.type_defs import AddonIssueTypeDef
 
 Optional fields:
 
-- `code`: [AddonIssueCode](./literals.md#addonissuecode)
+- `code`: [AddonIssueCodeType](./literals.md#addonissuecodetype)
 - `message`: `str`
 - `resourceIds`: `List`\[`str`\]
 
@@ -124,7 +124,7 @@ Optional fields:
 
 - `addonName`: `str`
 - `clusterName`: `str`
-- `status`: [AddonStatus](./literals.md#addonstatus)
+- `status`: [AddonStatusType](./literals.md#addonstatustype)
 - `addonVersion`: `str`
 - `health`: [AddonHealthTypeDef](./type_defs.md#addonhealthtypedef)
 - `addonArn`: `str`
@@ -207,8 +207,9 @@ Optional fields:
   [KubernetesNetworkConfigResponseTypeDef](./type_defs.md#kubernetesnetworkconfigresponsetypedef)
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `identity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `status`: [ClusterStatus](./literals.md#clusterstatus)
-- `certificateAuthority`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `status`: [ClusterStatusType](./literals.md#clusterstatustype)
+- `certificateAuthority`:
+  [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - `clientRequestToken`: `str`
 - `platformVersion`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -255,7 +256,8 @@ from mypy_boto3_eks.type_defs import CreateFargateProfileResponseTypeDef
 
 Optional fields:
 
-- `fargateProfile`: [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
+- `fargateProfile`:
+  [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
 
 ## CreateNodegroupResponseTypeDef
 
@@ -295,7 +297,8 @@ from mypy_boto3_eks.type_defs import DeleteFargateProfileResponseTypeDef
 
 Optional fields:
 
-- `fargateProfile`: [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
+- `fargateProfile`:
+  [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
 
 ## DeleteNodegroupResponseTypeDef
 
@@ -346,7 +349,8 @@ from mypy_boto3_eks.type_defs import DescribeFargateProfileResponseTypeDef
 
 Optional fields:
 
-- `fargateProfile`: [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
+- `fargateProfile`:
+  [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
 
 ## DescribeIdentityProviderConfigResponseTypeDef
 
@@ -408,7 +412,7 @@ from mypy_boto3_eks.type_defs import ErrorDetailTypeDef
 
 Optional fields:
 
-- `errorCode`: [ErrorCode](./literals.md#errorcode)
+- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 - `resourceIds`: `List`\[`str`\]
 
@@ -439,7 +443,7 @@ Optional fields:
 - `subnets`: `List`\[`str`\]
 - `selectors`:
   `List`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
-- `status`: [FargateProfileStatus](./literals.md#fargateprofilestatus)
+- `status`: [FargateProfileStatusType](./literals.md#fargateprofilestatustype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## IdentityProviderConfigResponseTypeDef
@@ -482,7 +486,7 @@ from mypy_boto3_eks.type_defs import IssueTypeDef
 
 Optional fields:
 
-- `code`: [NodegroupIssueCode](./literals.md#nodegroupissuecode)
+- `code`: [NodegroupIssueCodeType](./literals.md#nodegroupissuecodetype)
 - `message`: `str`
 - `resourceIds`: `List`\[`str`\]
 
@@ -603,7 +607,7 @@ from mypy_boto3_eks.type_defs import LogSetupTypeDef
 
 Optional fields:
 
-- `types`: `List`\[[LogType](./literals.md#logtype)\]
+- `types`: `List`\[[LogTypeType](./literals.md#logtypetype)\]
 - `enabled`: `bool`
 
 ## LoggingTypeDef
@@ -665,15 +669,15 @@ Optional fields:
 - `releaseVersion`: `str`
 - `createdAt`: `datetime`
 - `modifiedAt`: `datetime`
-- `status`: [NodegroupStatus](./literals.md#nodegroupstatus)
-- `capacityType`: [CapacityTypes](./literals.md#capacitytypes)
+- `status`: [NodegroupStatusType](./literals.md#nodegroupstatustype)
+- `capacityType`: [CapacityTypesType](./literals.md#capacitytypestype)
 - `scalingConfig`:
   [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
 - `instanceTypes`: `List`\[`str`\]
 - `subnets`: `List`\[`str`\]
 - `remoteAccess`:
   [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `amiType`: [AMITypes](./literals.md#amitypes)
+- `amiType`: [AMITypesType](./literals.md#amitypestype)
 - `nodeRole`: `str`
 - `labels`: `Dict`\[`str`, `str`\]
 - `taints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
@@ -734,7 +738,7 @@ Optional fields:
 - `groupsPrefix`: `str`
 - `requiredClaims`: `Dict`\[`str`, `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
-- `status`: [configStatus](./literals.md#configstatus)
+- `status`: [configStatusType](./literals.md#configstatustype)
 
 ## PaginatorConfigTypeDef
 
@@ -779,7 +783,7 @@ Optional fields:
 
 - `key`: `str`
 - `value`: `str`
-- `effect`: [TaintEffect](./literals.md#tainteffect)
+- `effect`: [TaintEffectType](./literals.md#tainteffecttype)
 
 ## UpdateAddonResponseTypeDef
 
@@ -850,7 +854,7 @@ from mypy_boto3_eks.type_defs import UpdateParamTypeDef
 
 Optional fields:
 
-- `type`: [UpdateParamType](./literals.md#updateparamtype)
+- `type`: [UpdateParamTypeType](./literals.md#updateparamtypetype)
 - `value`: `str`
 
 ## UpdateTaintsPayloadTypeDef
@@ -873,8 +877,8 @@ from mypy_boto3_eks.type_defs import UpdateTypeDef
 Optional fields:
 
 - `id`: `str`
-- `status`: [UpdateStatus](./literals.md#updatestatus)
-- `type`: [UpdateType](./literals.md#updatetype)
+- `status`: [UpdateStatusType](./literals.md#updatestatustype)
+- `type`: [UpdateTypeType](./literals.md#updatetypetype)
 - `params`: `List`\[[UpdateParamTypeDef](./type_defs.md#updateparamtypedef)\]
 - `createdAt`: `datetime`
 - `errors`: `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]

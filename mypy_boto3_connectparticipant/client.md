@@ -3,7 +3,7 @@
 > [Index](..) > [ConnectParticipant](.) > ConnectParticipantClient
 
 Auto-generated documentation for
-[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
 [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
@@ -36,7 +36,7 @@ def get_connectparticipant_client() -> ConnectParticipantClient:
 ```
 
 Boto3 documentation:
-[ConnectParticipant.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
+[ConnectParticipant.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client)
 
 ## Exceptions
 
@@ -67,7 +67,7 @@ Exceptions:
 Type annotations for `boto3.client("connectparticipant").can_paginate` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate)
+[ConnectParticipant.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Type annotations for
 `boto3.client("connectparticipant").complete_attachment_upload` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
+[ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
 
 Arguments:
 
@@ -97,11 +97,12 @@ Type annotations for
 `boto3.client("connectparticipant").create_participant_connection` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
+[ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
 
 Arguments:
 
-- `Type`: `List`\[[ConnectionType](./literals.md#connectiontype)\] *(required)*
+- `Type`: `List`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
+  *(required)*
 - `ParticipantToken`: `str` *(required)*
 
 Returns
@@ -113,7 +114,7 @@ Type annotations for
 `boto3.client("connectparticipant").disconnect_participant` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
+[ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
 
 Arguments:
 
@@ -128,7 +129,7 @@ Type annotations for
 `boto3.client("connectparticipant").generate_presigned_url` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url)
+[ConnectParticipant.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url)
 
 Arguments:
 
@@ -145,7 +146,7 @@ Type annotations for `boto3.client("connectparticipant").get_attachment`
 method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
+[ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
 
 Arguments:
 
@@ -161,7 +162,7 @@ Type annotations for `boto3.client("connectparticipant").get_transcript`
 method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
+[ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
 
 Arguments:
 
@@ -169,8 +170,8 @@ Arguments:
 - `ContactId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ScanDirection`: [ScanDirection](./literals.md#scandirection)
-- `SortOrder`: [SortKey](./literals.md#sortkey)
+- `ScanDirection`: [ScanDirectionType](./literals.md#scandirectiontype)
+- `SortOrder`: [SortKeyType](./literals.md#sortkeytype)
 - `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
 
 Returns
@@ -181,7 +182,7 @@ Returns
 Type annotations for `boto3.client("connectparticipant").send_event` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
+[ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
 
 Arguments:
 
@@ -197,7 +198,7 @@ Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
 Type annotations for `boto3.client("connectparticipant").send_message` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
+[ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
 
 Arguments:
 
@@ -215,7 +216,7 @@ Type annotations for
 `boto3.client("connectparticipant").start_attachment_upload` method.
 
 Boto3 documentation:
-[ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
+[ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
 
 Arguments:
 

@@ -3,36 +3,36 @@
 > [Index](..) > [LicenseManager](.) > Literals
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [Literals for boto3 LicenseManager module](#literals-for-boto3-licensemanager-module)
-  - [AllowedOperation](#allowedoperation)
-  - [CheckoutType](#checkouttype)
-  - [DigitalSignatureMethod](#digitalsignaturemethod)
-  - [EntitlementDataUnit](#entitlementdataunit)
-  - [EntitlementUnit](#entitlementunit)
-  - [GrantStatus](#grantstatus)
-  - [InventoryFilterCondition](#inventoryfiltercondition)
-  - [LicenseConfigurationStatus](#licenseconfigurationstatus)
-  - [LicenseCountingType](#licensecountingtype)
-  - [LicenseDeletionStatus](#licensedeletionstatus)
-  - [LicenseStatus](#licensestatus)
+  - [AllowedOperationType](#allowedoperationtype)
+  - [CheckoutTypeType](#checkouttypetype)
+  - [DigitalSignatureMethodType](#digitalsignaturemethodtype)
+  - [EntitlementDataUnitType](#entitlementdataunittype)
+  - [EntitlementUnitType](#entitlementunittype)
+  - [GrantStatusType](#grantstatustype)
+  - [InventoryFilterConditionType](#inventoryfilterconditiontype)
+  - [LicenseConfigurationStatusType](#licenseconfigurationstatustype)
+  - [LicenseCountingTypeType](#licensecountingtypetype)
+  - [LicenseDeletionStatusType](#licensedeletionstatustype)
+  - [LicenseStatusType](#licensestatustype)
   - [ListAssociationsForLicenseConfigurationPaginatorName](#listassociationsforlicenseconfigurationpaginatorname)
   - [ListLicenseConfigurationsPaginatorName](#listlicenseconfigurationspaginatorname)
   - [ListLicenseSpecificationsForResourcePaginatorName](#listlicensespecificationsforresourcepaginatorname)
   - [ListResourceInventoryPaginatorName](#listresourceinventorypaginatorname)
   - [ListUsageForLicenseConfigurationPaginatorName](#listusageforlicenseconfigurationpaginatorname)
-  - [ReceivedStatus](#receivedstatus)
-  - [RenewType](#renewtype)
-  - [ResourceType](#resourcetype)
-  - [TokenType](#tokentype)
+  - [ReceivedStatusType](#receivedstatustype)
+  - [RenewTypeType](#renewtypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [TokenTypeType](#tokentypetype)
 
-## AllowedOperation
+## AllowedOperationType
 
 ```python
-from mypy_boto3_license_manager.literals import AllowedOperation
+from mypy_boto3_license_manager.literals import AllowedOperationType
 ```
 
 Values:
@@ -45,30 +45,30 @@ Values:
 - `ExtendConsumptionLicense`
 - `ListPurchasedLicenses`
 
-## CheckoutType
+## CheckoutTypeType
 
 ```python
-from mypy_boto3_license_manager.literals import CheckoutType
+from mypy_boto3_license_manager.literals import CheckoutTypeType
 ```
 
 Values:
 
 - `PROVISIONAL`
 
-## DigitalSignatureMethod
+## DigitalSignatureMethodType
 
 ```python
-from mypy_boto3_license_manager.literals import DigitalSignatureMethod
+from mypy_boto3_license_manager.literals import DigitalSignatureMethodType
 ```
 
 Values:
 
 - `JWT_PS384`
 
-## EntitlementDataUnit
+## EntitlementDataUnitType
 
 ```python
-from mypy_boto3_license_manager.literals import EntitlementDataUnit
+from mypy_boto3_license_manager.literals import EntitlementDataUnitType
 ```
 
 Values:
@@ -101,10 +101,10 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
-## EntitlementUnit
+## EntitlementUnitType
 
 ```python
-from mypy_boto3_license_manager.literals import EntitlementUnit
+from mypy_boto3_license_manager.literals import EntitlementUnitType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 - `Terabytes`
 - `Terabytes/Second`
 
-## GrantStatus
+## GrantStatusType
 
 ```python
-from mypy_boto3_license_manager.literals import GrantStatus
+from mypy_boto3_license_manager.literals import GrantStatusType
 ```
 
 Values:
@@ -154,10 +154,10 @@ Values:
 - `PENDING_WORKFLOW`
 - `REJECTED`
 
-## InventoryFilterCondition
+## InventoryFilterConditionType
 
 ```python
-from mypy_boto3_license_manager.literals import InventoryFilterCondition
+from mypy_boto3_license_manager.literals import InventoryFilterConditionType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 - `EQUALS`
 - `NOT_EQUALS`
 
-## LicenseConfigurationStatus
+## LicenseConfigurationStatusType
 
 ```python
-from mypy_boto3_license_manager.literals import LicenseConfigurationStatus
+from mypy_boto3_license_manager.literals import LicenseConfigurationStatusType
 ```
 
 Values:
@@ -178,10 +178,10 @@ Values:
 - `AVAILABLE`
 - `DISABLED`
 
-## LicenseCountingType
+## LicenseCountingTypeType
 
 ```python
-from mypy_boto3_license_manager.literals import LicenseCountingType
+from mypy_boto3_license_manager.literals import LicenseCountingTypeType
 ```
 
 Values:
@@ -191,10 +191,10 @@ Values:
 - `Socket`
 - `vCPU`
 
-## LicenseDeletionStatus
+## LicenseDeletionStatusType
 
 ```python
-from mypy_boto3_license_manager.literals import LicenseDeletionStatus
+from mypy_boto3_license_manager.literals import LicenseDeletionStatusType
 ```
 
 Values:
@@ -202,10 +202,10 @@ Values:
 - `DELETED`
 - `PENDING_DELETE`
 
-## LicenseStatus
+## LicenseStatusType
 
 ```python
-from mypy_boto3_license_manager.literals import LicenseStatus
+from mypy_boto3_license_manager.literals import LicenseStatusType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 
 - `list_usage_for_license_configuration`
 
-## ReceivedStatus
+## ReceivedStatusType
 
 ```python
-from mypy_boto3_license_manager.literals import ReceivedStatus
+from mypy_boto3_license_manager.literals import ReceivedStatusType
 ```
 
 Values:
@@ -284,10 +284,10 @@ Values:
 - `PENDING_WORKFLOW`
 - `REJECTED`
 
-## RenewType
+## RenewTypeType
 
 ```python
-from mypy_boto3_license_manager.literals import RenewType
+from mypy_boto3_license_manager.literals import RenewTypeType
 ```
 
 Values:
@@ -296,10 +296,10 @@ Values:
 - `None`
 - `Weekly`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_license_manager.literals import ResourceType
+from mypy_boto3_license_manager.literals import ResourceTypeType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 - `RDS`
 - `SYSTEMS_MANAGER_MANAGED_INSTANCE`
 
-## TokenType
+## TokenTypeType
 
 ```python
-from mypy_boto3_license_manager.literals import TokenType
+from mypy_boto3_license_manager.literals import TokenTypeType
 ```
 
 Values:

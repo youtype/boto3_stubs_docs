@@ -3,45 +3,45 @@
 > [Index](..) > [EKS](.) > Literals
 
 Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/eks.html#EKS)
 type annotations stubs module
 [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
 - [Literals for boto3 EKS module](#literals-for-boto3-eks-module)
-  - [AMITypes](#amitypes)
+  - [AMITypesType](#amitypestype)
   - [AddonActiveWaiterName](#addonactivewaitername)
   - [AddonDeletedWaiterName](#addondeletedwaitername)
-  - [AddonIssueCode](#addonissuecode)
-  - [AddonStatus](#addonstatus)
-  - [CapacityTypes](#capacitytypes)
+  - [AddonIssueCodeType](#addonissuecodetype)
+  - [AddonStatusType](#addonstatustype)
+  - [CapacityTypesType](#capacitytypestype)
   - [ClusterActiveWaiterName](#clusteractivewaitername)
   - [ClusterDeletedWaiterName](#clusterdeletedwaitername)
-  - [ClusterStatus](#clusterstatus)
+  - [ClusterStatusType](#clusterstatustype)
   - [DescribeAddonVersionsPaginatorName](#describeaddonversionspaginatorname)
-  - [ErrorCode](#errorcode)
-  - [FargateProfileStatus](#fargateprofilestatus)
+  - [ErrorCodeType](#errorcodetype)
+  - [FargateProfileStatusType](#fargateprofilestatustype)
   - [ListAddonsPaginatorName](#listaddonspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListFargateProfilesPaginatorName](#listfargateprofilespaginatorname)
   - [ListIdentityProviderConfigsPaginatorName](#listidentityproviderconfigspaginatorname)
   - [ListNodegroupsPaginatorName](#listnodegroupspaginatorname)
   - [ListUpdatesPaginatorName](#listupdatespaginatorname)
-  - [LogType](#logtype)
+  - [LogTypeType](#logtypetype)
   - [NodegroupActiveWaiterName](#nodegroupactivewaitername)
   - [NodegroupDeletedWaiterName](#nodegroupdeletedwaitername)
-  - [NodegroupIssueCode](#nodegroupissuecode)
-  - [NodegroupStatus](#nodegroupstatus)
-  - [ResolveConflicts](#resolveconflicts)
-  - [TaintEffect](#tainteffect)
-  - [UpdateParamType](#updateparamtype)
-  - [UpdateStatus](#updatestatus)
-  - [UpdateType](#updatetype)
-  - [configStatus](#configstatus)
+  - [NodegroupIssueCodeType](#nodegroupissuecodetype)
+  - [NodegroupStatusType](#nodegroupstatustype)
+  - [ResolveConflictsType](#resolveconflictstype)
+  - [TaintEffectType](#tainteffecttype)
+  - [UpdateParamTypeType](#updateparamtypetype)
+  - [UpdateStatusType](#updatestatustype)
+  - [UpdateTypeType](#updatetypetype)
+  - [configStatusType](#configstatustype)
 
-## AMITypes
+## AMITypesType
 
 ```python
-from mypy_boto3_eks.literals import AMITypes
+from mypy_boto3_eks.literals import AMITypesType
 ```
 
 Values:
@@ -71,10 +71,10 @@ Values:
 
 - `addon_deleted`
 
-## AddonIssueCode
+## AddonIssueCodeType
 
 ```python
-from mypy_boto3_eks.literals import AddonIssueCode
+from mypy_boto3_eks.literals import AddonIssueCodeType
 ```
 
 Values:
@@ -86,10 +86,10 @@ Values:
 - `InsufficientNumberOfReplicas`
 - `InternalFailure`
 
-## AddonStatus
+## AddonStatusType
 
 ```python
-from mypy_boto3_eks.literals import AddonStatus
+from mypy_boto3_eks.literals import AddonStatusType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## CapacityTypes
+## CapacityTypesType
 
 ```python
-from mypy_boto3_eks.literals import CapacityTypes
+from mypy_boto3_eks.literals import CapacityTypesType
 ```
 
 Values:
@@ -133,10 +133,10 @@ Values:
 
 - `cluster_deleted`
 
-## ClusterStatus
+## ClusterStatusType
 
 ```python
-from mypy_boto3_eks.literals import ClusterStatus
+from mypy_boto3_eks.literals import ClusterStatusType
 ```
 
 Values:
@@ -157,10 +157,10 @@ Values:
 
 - `describe_addon_versions`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_eks.literals import ErrorCode
+from mypy_boto3_eks.literals import ErrorCodeType
 ```
 
 Values:
@@ -181,10 +181,10 @@ Values:
 - `Unknown`
 - `VpcIdNotFound`
 
-## FargateProfileStatus
+## FargateProfileStatusType
 
 ```python
-from mypy_boto3_eks.literals import FargateProfileStatus
+from mypy_boto3_eks.literals import FargateProfileStatusType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 
 - `list_updates`
 
-## LogType
+## LogTypeType
 
 ```python
-from mypy_boto3_eks.literals import LogType
+from mypy_boto3_eks.literals import LogTypeType
 ```
 
 Values:
@@ -289,10 +289,10 @@ Values:
 
 - `nodegroup_deleted`
 
-## NodegroupIssueCode
+## NodegroupIssueCodeType
 
 ```python
-from mypy_boto3_eks.literals import NodegroupIssueCode
+from mypy_boto3_eks.literals import NodegroupIssueCodeType
 ```
 
 Values:
@@ -316,10 +316,10 @@ Values:
 - `InternalFailure`
 - `NodeCreationFailure`
 
-## NodegroupStatus
+## NodegroupStatusType
 
 ```python
-from mypy_boto3_eks.literals import NodegroupStatus
+from mypy_boto3_eks.literals import NodegroupStatusType
 ```
 
 Values:
@@ -332,10 +332,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## ResolveConflicts
+## ResolveConflictsType
 
 ```python
-from mypy_boto3_eks.literals import ResolveConflicts
+from mypy_boto3_eks.literals import ResolveConflictsType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `NONE`
 - `OVERWRITE`
 
-## TaintEffect
+## TaintEffectType
 
 ```python
-from mypy_boto3_eks.literals import TaintEffect
+from mypy_boto3_eks.literals import TaintEffectType
 ```
 
 Values:
@@ -355,10 +355,10 @@ Values:
 - `NO_SCHEDULE`
 - `PREFER_NO_SCHEDULE`
 
-## UpdateParamType
+## UpdateParamTypeType
 
 ```python
-from mypy_boto3_eks.literals import UpdateParamType
+from mypy_boto3_eks.literals import UpdateParamTypeType
 ```
 
 Values:
@@ -385,10 +385,10 @@ Values:
 - `TaintsToRemove`
 - `Version`
 
-## UpdateStatus
+## UpdateStatusType
 
 ```python
-from mypy_boto3_eks.literals import UpdateStatus
+from mypy_boto3_eks.literals import UpdateStatusType
 ```
 
 Values:
@@ -398,10 +398,10 @@ Values:
 - `InProgress`
 - `Successful`
 
-## UpdateType
+## UpdateTypeType
 
 ```python
-from mypy_boto3_eks.literals import UpdateType
+from mypy_boto3_eks.literals import UpdateTypeType
 ```
 
 Values:
@@ -415,10 +415,10 @@ Values:
 - `LoggingUpdate`
 - `VersionUpdate`
 
-## configStatus
+## configStatusType
 
 ```python
-from mypy_boto3_eks.literals import configStatus
+from mypy_boto3_eks.literals import configStatusType
 ```
 
 Values:

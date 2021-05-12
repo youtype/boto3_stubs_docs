@@ -3,7 +3,7 @@
 > [Index](..) > [Mobile](.) > Paginators
 
 Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mobile.html#Mobile)
 type annotations stubs module
 [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
@@ -25,7 +25,7 @@ def get_list_bundles_paginator() -> ListBundlesPaginator:
 ```
 
 Boto3 documentation:
-[Mobile.Paginator.ListBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListBundles)
+[Mobile.Paginator.ListBundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mobile.html#Mobile.Paginator.ListBundles)
 
 Arguments for `ListBundlesPaginator.paginate` method:
 
@@ -49,7 +49,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
 ```
 
 Boto3 documentation:
-[Mobile.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListProjects)
+[Mobile.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mobile.html#Mobile.Paginator.ListProjects)
 
 Arguments for `ListProjectsPaginator.paginate` method:
 

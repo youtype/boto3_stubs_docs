@@ -3,7 +3,7 @@
 > [Index](..) > [DAX](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dax.html#DAX)
 type annotations stubs module
 [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
@@ -74,7 +74,8 @@ Optional fields:
 - `IamRoleArn`: `str`
 - `ParameterGroup`:
   [ParameterGroupStatusTypeDef](./type_defs.md#parametergroupstatustypedef)
-- `SSEDescription`: [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
+- `SSEDescription`:
+  [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 
 ## CreateClusterResponseTypeDef
 
@@ -94,7 +95,8 @@ from mypy_boto3_dax.type_defs import CreateParameterGroupResponseTypeDef
 
 Optional fields:
 
-- `ParameterGroup`: [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
+- `ParameterGroup`:
+  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 
 ## CreateSubnetGroupResponseTypeDef
 
@@ -234,7 +236,7 @@ from mypy_boto3_dax.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceName`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `Date`: `datetime`
 
@@ -351,7 +353,7 @@ from mypy_boto3_dax.type_defs import ParameterTypeDef
 Optional fields:
 
 - `ParameterName`: `str`
-- `ParameterType`: [ParameterType](./literals.md#parametertype)
+- `ParameterType`: [ParameterTypeType](./literals.md#parametertypetype)
 - `ParameterValue`: `str`
 - `NodeTypeSpecificValues`:
   `List`\[[NodeTypeSpecificValueTypeDef](./type_defs.md#nodetypespecificvaluetypedef)\]
@@ -359,8 +361,8 @@ Optional fields:
 - `Source`: `str`
 - `DataType`: `str`
 - `AllowedValues`: `str`
-- `IsModifiable`: [IsModifiable](./literals.md#ismodifiable)
-- `ChangeType`: [ChangeType](./literals.md#changetype)
+- `IsModifiable`: [IsModifiableType](./literals.md#ismodifiabletype)
+- `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
 ## RebootNodeResponseTypeDef
 
@@ -380,7 +382,7 @@ from mypy_boto3_dax.type_defs import SSEDescriptionTypeDef
 
 Optional fields:
 
-- `Status`: [SSEStatus](./literals.md#ssestatus)
+- `Status`: [SSEStatusType](./literals.md#ssestatustype)
 
 ## SSESpecificationTypeDef
 
@@ -476,7 +478,8 @@ from mypy_boto3_dax.type_defs import UpdateParameterGroupResponseTypeDef
 
 Optional fields:
 
-- `ParameterGroup`: [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
+- `ParameterGroup`:
+  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 
 ## UpdateSubnetGroupResponseTypeDef
 

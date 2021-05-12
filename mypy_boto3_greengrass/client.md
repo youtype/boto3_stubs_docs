@@ -3,7 +3,7 @@
 > [Index](..) > [Greengrass](.) > GreengrassClient
 
 Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
 [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
@@ -121,7 +121,7 @@ def get_greengrass_client() -> GreengrassClient:
 ```
 
 Boto3 documentation:
-[Greengrass.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client)
+[Greengrass.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client)
 
 ## Exceptions
 
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("greengrass").associate_role_to_group`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.associate_role_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_role_to_group)
+[Greengrass.Client.associate_role_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.associate_role_to_group)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Type annotations for
 `boto3.client("greengrass").associate_service_role_to_account` method.
 
 Boto3 documentation:
-[Greengrass.Client.associate_service_role_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_service_role_to_account)
+[Greengrass.Client.associate_service_role_to_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.associate_service_role_to_account)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Returns
 Type annotations for `boto3.client("greengrass").can_paginate` method.
 
 Boto3 documentation:
-[Greengrass.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.can_paginate)
+[Greengrass.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.can_paginate)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("greengrass").create_connector_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition)
+[Greengrass.Client.create_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_connector_definition)
 
 Arguments:
 
@@ -212,7 +212,7 @@ Type annotations for
 `boto3.client("greengrass").create_connector_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition_version)
+[Greengrass.Client.create_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_connector_definition_version)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Type annotations for `boto3.client("greengrass").create_core_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition)
+[Greengrass.Client.create_core_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_core_definition)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Type annotations for
 `boto3.client("greengrass").create_core_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition_version)
+[Greengrass.Client.create_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_core_definition_version)
 
 Arguments:
 
@@ -264,11 +264,12 @@ Returns
 Type annotations for `boto3.client("greengrass").create_deployment` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_deployment)
+[Greengrass.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_deployment)
 
 Arguments:
 
-- `DeploymentType`: [DeploymentType](./literals.md#deploymenttype) *(required)*
+- `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
+  *(required)*
 - `GroupId`: `str` *(required)*
 - `AmznClientToken`: `str`
 - `DeploymentId`: `str`
@@ -283,7 +284,7 @@ Type annotations for `boto3.client("greengrass").create_device_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition)
+[Greengrass.Client.create_device_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_device_definition)
 
 Arguments:
 
@@ -302,7 +303,7 @@ Type annotations for
 `boto3.client("greengrass").create_device_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition_version)
+[Greengrass.Client.create_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_device_definition_version)
 
 Arguments:
 
@@ -319,7 +320,7 @@ Type annotations for `boto3.client("greengrass").create_function_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition)
+[Greengrass.Client.create_function_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_function_definition)
 
 Arguments:
 
@@ -338,7 +339,7 @@ Type annotations for
 `boto3.client("greengrass").create_function_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition_version)
+[Greengrass.Client.create_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_function_definition_version)
 
 Arguments:
 
@@ -356,7 +357,7 @@ Returns
 Type annotations for `boto3.client("greengrass").create_group` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group)
+[Greengrass.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_group)
 
 Arguments:
 
@@ -374,7 +375,7 @@ Type annotations for
 `boto3.client("greengrass").create_group_certificate_authority` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_certificate_authority)
+[Greengrass.Client.create_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_group_certificate_authority)
 
 Arguments:
 
@@ -389,7 +390,7 @@ Returns
 Type annotations for `boto3.client("greengrass").create_group_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_group_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_version)
+[Greengrass.Client.create_group_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_group_version)
 
 Arguments:
 
@@ -412,7 +413,7 @@ Type annotations for `boto3.client("greengrass").create_logger_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition)
+[Greengrass.Client.create_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_logger_definition)
 
 Arguments:
 
@@ -431,7 +432,7 @@ Type annotations for
 `boto3.client("greengrass").create_logger_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition_version)
+[Greengrass.Client.create_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_logger_definition_version)
 
 Arguments:
 
@@ -448,7 +449,7 @@ Type annotations for `boto3.client("greengrass").create_resource_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition)
+[Greengrass.Client.create_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_resource_definition)
 
 Arguments:
 
@@ -467,7 +468,7 @@ Type annotations for
 `boto3.client("greengrass").create_resource_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version)
+[Greengrass.Client.create_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version)
 
 Arguments:
 
@@ -484,22 +485,23 @@ Type annotations for `boto3.client("greengrass").create_software_update_job`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.create_software_update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_software_update_job)
+[Greengrass.Client.create_software_update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_software_update_job)
 
 Arguments:
 
 - `S3UrlSignerRole`: `str` *(required)*
-- `SoftwareToUpdate`: [SoftwareToUpdate](./literals.md#softwaretoupdate)
-  *(required)*
+- `SoftwareToUpdate`:
+  [SoftwareToUpdateType](./literals.md#softwaretoupdatetype) *(required)*
 - `UpdateTargets`: `List`\[`str`\] *(required)*
 - `UpdateTargetsArchitecture`:
-  [UpdateTargetsArchitecture](./literals.md#updatetargetsarchitecture)
+  [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
   *(required)*
 - `UpdateTargetsOperatingSystem`:
-  [UpdateTargetsOperatingSystem](./literals.md#updatetargetsoperatingsystem)
+  [UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype)
   *(required)*
 - `AmznClientToken`: `str`
-- `UpdateAgentLogLevel`: [UpdateAgentLogLevel](./literals.md#updateagentloglevel)
+- `UpdateAgentLogLevel`:
+  [UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype)
 
 Returns
 [CreateSoftwareUpdateJobResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponsetypedef).
@@ -510,7 +512,7 @@ Type annotations for
 `boto3.client("greengrass").create_subscription_definition` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition)
+[Greengrass.Client.create_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition)
 
 Arguments:
 
@@ -529,7 +531,7 @@ Type annotations for
 `boto3.client("greengrass").create_subscription_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.create_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition_version)
+[Greengrass.Client.create_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition_version)
 
 Arguments:
 
@@ -547,7 +549,7 @@ Type annotations for `boto3.client("greengrass").delete_connector_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_connector_definition)
+[Greengrass.Client.delete_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_connector_definition)
 
 Arguments:
 
@@ -561,7 +563,7 @@ Type annotations for `boto3.client("greengrass").delete_core_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_core_definition)
+[Greengrass.Client.delete_core_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_core_definition)
 
 Arguments:
 
@@ -575,7 +577,7 @@ Type annotations for `boto3.client("greengrass").delete_device_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_device_definition)
+[Greengrass.Client.delete_device_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_device_definition)
 
 Arguments:
 
@@ -589,7 +591,7 @@ Type annotations for `boto3.client("greengrass").delete_function_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_function_definition)
+[Greengrass.Client.delete_function_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_function_definition)
 
 Arguments:
 
@@ -602,7 +604,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("greengrass").delete_group` method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_group)
+[Greengrass.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_group)
 
 Arguments:
 
@@ -616,7 +618,7 @@ Type annotations for `boto3.client("greengrass").delete_logger_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_logger_definition)
+[Greengrass.Client.delete_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_logger_definition)
 
 Arguments:
 
@@ -630,7 +632,7 @@ Type annotations for `boto3.client("greengrass").delete_resource_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_resource_definition)
+[Greengrass.Client.delete_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_resource_definition)
 
 Arguments:
 
@@ -644,7 +646,7 @@ Type annotations for
 `boto3.client("greengrass").delete_subscription_definition` method.
 
 Boto3 documentation:
-[Greengrass.Client.delete_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_subscription_definition)
+[Greengrass.Client.delete_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.delete_subscription_definition)
 
 Arguments:
 
@@ -658,7 +660,7 @@ Type annotations for `boto3.client("greengrass").disassociate_role_from_group`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.disassociate_role_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_role_from_group)
+[Greengrass.Client.disassociate_role_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.disassociate_role_from_group)
 
 Arguments:
 
@@ -673,7 +675,7 @@ Type annotations for
 `boto3.client("greengrass").disassociate_service_role_from_account` method.
 
 Boto3 documentation:
-[Greengrass.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_service_role_from_account)
+[Greengrass.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.disassociate_service_role_from_account)
 
 Returns
 [DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
@@ -684,7 +686,7 @@ Type annotations for `boto3.client("greengrass").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.generate_presigned_url)
+[Greengrass.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.generate_presigned_url)
 
 Arguments:
 
@@ -700,7 +702,7 @@ Returns `str`.
 Type annotations for `boto3.client("greengrass").get_associated_role` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_associated_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_associated_role)
+[Greengrass.Client.get_associated_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_associated_role)
 
 Arguments:
 
@@ -715,7 +717,7 @@ Type annotations for `boto3.client("greengrass").get_bulk_deployment_status`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_bulk_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_bulk_deployment_status)
+[Greengrass.Client.get_bulk_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_bulk_deployment_status)
 
 Arguments:
 
@@ -729,7 +731,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_connectivity_info` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connectivity_info)
+[Greengrass.Client.get_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_connectivity_info)
 
 Arguments:
 
@@ -744,7 +746,7 @@ Type annotations for `boto3.client("greengrass").get_connector_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition)
+[Greengrass.Client.get_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_connector_definition)
 
 Arguments:
 
@@ -759,7 +761,7 @@ Type annotations for
 `boto3.client("greengrass").get_connector_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition_version)
+[Greengrass.Client.get_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_connector_definition_version)
 
 Arguments:
 
@@ -775,7 +777,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_core_definition` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition)
+[Greengrass.Client.get_core_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_core_definition)
 
 Arguments:
 
@@ -790,7 +792,7 @@ Type annotations for `boto3.client("greengrass").get_core_definition_version`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition_version)
+[Greengrass.Client.get_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_core_definition_version)
 
 Arguments:
 
@@ -805,7 +807,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_deployment_status` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_deployment_status)
+[Greengrass.Client.get_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_deployment_status)
 
 Arguments:
 
@@ -820,7 +822,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_device_definition` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition)
+[Greengrass.Client.get_device_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_device_definition)
 
 Arguments:
 
@@ -835,7 +837,7 @@ Type annotations for `boto3.client("greengrass").get_device_definition_version`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition_version)
+[Greengrass.Client.get_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_device_definition_version)
 
 Arguments:
 
@@ -852,7 +854,7 @@ Type annotations for `boto3.client("greengrass").get_function_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition)
+[Greengrass.Client.get_function_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_function_definition)
 
 Arguments:
 
@@ -867,7 +869,7 @@ Type annotations for
 `boto3.client("greengrass").get_function_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition_version)
+[Greengrass.Client.get_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_function_definition_version)
 
 Arguments:
 
@@ -883,7 +885,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_group` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group)
+[Greengrass.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_group)
 
 Arguments:
 
@@ -897,7 +899,7 @@ Type annotations for
 `boto3.client("greengrass").get_group_certificate_authority` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_authority)
+[Greengrass.Client.get_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_authority)
 
 Arguments:
 
@@ -913,7 +915,7 @@ Type annotations for
 `boto3.client("greengrass").get_group_certificate_configuration` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_configuration)
+[Greengrass.Client.get_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_configuration)
 
 Arguments:
 
@@ -927,7 +929,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_group_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_group_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_version)
+[Greengrass.Client.get_group_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_group_version)
 
 Arguments:
 
@@ -942,7 +944,7 @@ Returns
 Type annotations for `boto3.client("greengrass").get_logger_definition` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition)
+[Greengrass.Client.get_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_logger_definition)
 
 Arguments:
 
@@ -957,7 +959,7 @@ Type annotations for `boto3.client("greengrass").get_logger_definition_version`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition_version)
+[Greengrass.Client.get_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_logger_definition_version)
 
 Arguments:
 
@@ -974,7 +976,7 @@ Type annotations for `boto3.client("greengrass").get_resource_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition)
+[Greengrass.Client.get_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_resource_definition)
 
 Arguments:
 
@@ -989,7 +991,7 @@ Type annotations for
 `boto3.client("greengrass").get_resource_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition_version)
+[Greengrass.Client.get_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_resource_definition_version)
 
 Arguments:
 
@@ -1005,7 +1007,7 @@ Type annotations for `boto3.client("greengrass").get_service_role_for_account`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_service_role_for_account)
+[Greengrass.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_service_role_for_account)
 
 Returns
 [GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
@@ -1016,7 +1018,7 @@ Type annotations for `boto3.client("greengrass").get_subscription_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.get_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition)
+[Greengrass.Client.get_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition)
 
 Arguments:
 
@@ -1031,7 +1033,7 @@ Type annotations for
 `boto3.client("greengrass").get_subscription_definition_version` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition_version)
+[Greengrass.Client.get_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition_version)
 
 Arguments:
 
@@ -1048,7 +1050,7 @@ Type annotations for
 `boto3.client("greengrass").get_thing_runtime_configuration` method.
 
 Boto3 documentation:
-[Greengrass.Client.get_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_thing_runtime_configuration)
+[Greengrass.Client.get_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.get_thing_runtime_configuration)
 
 Arguments:
 
@@ -1063,7 +1065,7 @@ Type annotations for
 `boto3.client("greengrass").list_bulk_deployment_detailed_reports` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_bulk_deployment_detailed_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployment_detailed_reports)
+[Greengrass.Client.list_bulk_deployment_detailed_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployment_detailed_reports)
 
 Arguments:
 
@@ -1079,7 +1081,7 @@ Returns
 Type annotations for `boto3.client("greengrass").list_bulk_deployments` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_bulk_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployments)
+[Greengrass.Client.list_bulk_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployments)
 
 Arguments:
 
@@ -1095,7 +1097,7 @@ Type annotations for
 `boto3.client("greengrass").list_connector_definition_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_connector_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definition_versions)
+[Greengrass.Client.list_connector_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_connector_definition_versions)
 
 Arguments:
 
@@ -1112,7 +1114,7 @@ Type annotations for `boto3.client("greengrass").list_connector_definitions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_connector_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definitions)
+[Greengrass.Client.list_connector_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_connector_definitions)
 
 Arguments:
 
@@ -1128,7 +1130,7 @@ Type annotations for `boto3.client("greengrass").list_core_definition_versions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_core_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definition_versions)
+[Greengrass.Client.list_core_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_core_definition_versions)
 
 Arguments:
 
@@ -1144,7 +1146,7 @@ Returns
 Type annotations for `boto3.client("greengrass").list_core_definitions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_core_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definitions)
+[Greengrass.Client.list_core_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_core_definitions)
 
 Arguments:
 
@@ -1159,7 +1161,7 @@ Returns
 Type annotations for `boto3.client("greengrass").list_deployments` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_deployments)
+[Greengrass.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_deployments)
 
 Arguments:
 
@@ -1176,7 +1178,7 @@ Type annotations for
 `boto3.client("greengrass").list_device_definition_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_device_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definition_versions)
+[Greengrass.Client.list_device_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_device_definition_versions)
 
 Arguments:
 
@@ -1193,7 +1195,7 @@ Type annotations for `boto3.client("greengrass").list_device_definitions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_device_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definitions)
+[Greengrass.Client.list_device_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_device_definitions)
 
 Arguments:
 
@@ -1209,7 +1211,7 @@ Type annotations for
 `boto3.client("greengrass").list_function_definition_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_function_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definition_versions)
+[Greengrass.Client.list_function_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_function_definition_versions)
 
 Arguments:
 
@@ -1226,7 +1228,7 @@ Type annotations for `boto3.client("greengrass").list_function_definitions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_function_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definitions)
+[Greengrass.Client.list_function_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_function_definitions)
 
 Arguments:
 
@@ -1242,7 +1244,7 @@ Type annotations for
 `boto3.client("greengrass").list_group_certificate_authorities` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_group_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_certificate_authorities)
+[Greengrass.Client.list_group_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_group_certificate_authorities)
 
 Arguments:
 
@@ -1256,7 +1258,7 @@ Returns
 Type annotations for `boto3.client("greengrass").list_group_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_group_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_versions)
+[Greengrass.Client.list_group_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_group_versions)
 
 Arguments:
 
@@ -1272,7 +1274,7 @@ Returns
 Type annotations for `boto3.client("greengrass").list_groups` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_groups)
+[Greengrass.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_groups)
 
 Arguments:
 
@@ -1287,7 +1289,7 @@ Type annotations for
 `boto3.client("greengrass").list_logger_definition_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_logger_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definition_versions)
+[Greengrass.Client.list_logger_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_logger_definition_versions)
 
 Arguments:
 
@@ -1304,7 +1306,7 @@ Type annotations for `boto3.client("greengrass").list_logger_definitions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_logger_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definitions)
+[Greengrass.Client.list_logger_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_logger_definitions)
 
 Arguments:
 
@@ -1320,7 +1322,7 @@ Type annotations for
 `boto3.client("greengrass").list_resource_definition_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_resource_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definition_versions)
+[Greengrass.Client.list_resource_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_resource_definition_versions)
 
 Arguments:
 
@@ -1337,7 +1339,7 @@ Type annotations for `boto3.client("greengrass").list_resource_definitions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_resource_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definitions)
+[Greengrass.Client.list_resource_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_resource_definitions)
 
 Arguments:
 
@@ -1353,7 +1355,7 @@ Type annotations for
 `boto3.client("greengrass").list_subscription_definition_versions` method.
 
 Boto3 documentation:
-[Greengrass.Client.list_subscription_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definition_versions)
+[Greengrass.Client.list_subscription_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_subscription_definition_versions)
 
 Arguments:
 
@@ -1370,7 +1372,7 @@ Type annotations for `boto3.client("greengrass").list_subscription_definitions`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_subscription_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definitions)
+[Greengrass.Client.list_subscription_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_subscription_definitions)
 
 Arguments:
 
@@ -1386,7 +1388,7 @@ Type annotations for `boto3.client("greengrass").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_tags_for_resource)
+[Greengrass.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1400,7 +1402,7 @@ Returns
 Type annotations for `boto3.client("greengrass").reset_deployments` method.
 
 Boto3 documentation:
-[Greengrass.Client.reset_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.reset_deployments)
+[Greengrass.Client.reset_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.reset_deployments)
 
 Arguments:
 
@@ -1416,7 +1418,7 @@ Returns
 Type annotations for `boto3.client("greengrass").start_bulk_deployment` method.
 
 Boto3 documentation:
-[Greengrass.Client.start_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.start_bulk_deployment)
+[Greengrass.Client.start_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.start_bulk_deployment)
 
 Arguments:
 
@@ -1433,7 +1435,7 @@ Returns
 Type annotations for `boto3.client("greengrass").stop_bulk_deployment` method.
 
 Boto3 documentation:
-[Greengrass.Client.stop_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.stop_bulk_deployment)
+[Greengrass.Client.stop_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.stop_bulk_deployment)
 
 Arguments:
 
@@ -1446,7 +1448,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("greengrass").tag_resource` method.
 
 Boto3 documentation:
-[Greengrass.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.tag_resource)
+[Greengrass.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.tag_resource)
 
 Arguments:
 
@@ -1458,7 +1460,7 @@ Arguments:
 Type annotations for `boto3.client("greengrass").untag_resource` method.
 
 Boto3 documentation:
-[Greengrass.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.untag_resource)
+[Greengrass.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.untag_resource)
 
 Arguments:
 
@@ -1471,7 +1473,7 @@ Type annotations for `boto3.client("greengrass").update_connectivity_info`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connectivity_info)
+[Greengrass.Client.update_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_connectivity_info)
 
 Arguments:
 
@@ -1488,7 +1490,7 @@ Type annotations for `boto3.client("greengrass").update_connector_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connector_definition)
+[Greengrass.Client.update_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_connector_definition)
 
 Arguments:
 
@@ -1503,7 +1505,7 @@ Type annotations for `boto3.client("greengrass").update_core_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_core_definition)
+[Greengrass.Client.update_core_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_core_definition)
 
 Arguments:
 
@@ -1518,7 +1520,7 @@ Type annotations for `boto3.client("greengrass").update_device_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_device_definition)
+[Greengrass.Client.update_device_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_device_definition)
 
 Arguments:
 
@@ -1533,7 +1535,7 @@ Type annotations for `boto3.client("greengrass").update_function_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_function_definition)
+[Greengrass.Client.update_function_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_function_definition)
 
 Arguments:
 
@@ -1547,7 +1549,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("greengrass").update_group` method.
 
 Boto3 documentation:
-[Greengrass.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group)
+[Greengrass.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_group)
 
 Arguments:
 
@@ -1562,7 +1564,7 @@ Type annotations for
 `boto3.client("greengrass").update_group_certificate_configuration` method.
 
 Boto3 documentation:
-[Greengrass.Client.update_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group_certificate_configuration)
+[Greengrass.Client.update_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_group_certificate_configuration)
 
 Arguments:
 
@@ -1578,7 +1580,7 @@ Type annotations for `boto3.client("greengrass").update_logger_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_logger_definition)
+[Greengrass.Client.update_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_logger_definition)
 
 Arguments:
 
@@ -1593,7 +1595,7 @@ Type annotations for `boto3.client("greengrass").update_resource_definition`
 method.
 
 Boto3 documentation:
-[Greengrass.Client.update_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_resource_definition)
+[Greengrass.Client.update_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_resource_definition)
 
 Arguments:
 
@@ -1608,7 +1610,7 @@ Type annotations for
 `boto3.client("greengrass").update_subscription_definition` method.
 
 Boto3 documentation:
-[Greengrass.Client.update_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_subscription_definition)
+[Greengrass.Client.update_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_subscription_definition)
 
 Arguments:
 
@@ -1623,7 +1625,7 @@ Type annotations for
 `boto3.client("greengrass").update_thing_runtime_configuration` method.
 
 Boto3 documentation:
-[Greengrass.Client.update_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_thing_runtime_configuration)
+[Greengrass.Client.update_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Client.update_thing_runtime_configuration)
 
 Arguments:
 

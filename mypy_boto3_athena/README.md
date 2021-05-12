@@ -3,7 +3,7 @@
 > [Index](..) > Athena
 
 Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/athena.html#Athena)
 type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
@@ -29,56 +29,56 @@ Can be used directly:
 from mypy_boto3_athena.client import AthenaClient
 ```
 
-AthenaClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_get_named_query](./client.md#batch-get-named-query)
-- [batch_get_query_execution](./client.md#batch-get-query-execution)
-- [can_paginate](./client.md#can-paginate)
-- [create_data_catalog](./client.md#create-data-catalog)
-- [create_named_query](./client.md#create-named-query)
-- [create_prepared_statement](./client.md#create-prepared-statement)
-- [create_work_group](./client.md#create-work-group)
-- [delete_data_catalog](./client.md#delete-data-catalog)
-- [delete_named_query](./client.md#delete-named-query)
-- [delete_prepared_statement](./client.md#delete-prepared-statement)
-- [delete_work_group](./client.md#delete-work-group)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_data_catalog](./client.md#get-data-catalog)
-- [get_database](./client.md#get-database)
-- [get_named_query](./client.md#get-named-query)
-- [get_paginator](./client.md#get-paginator)
-- [get_prepared_statement](./client.md#get-prepared-statement)
-- [get_query_execution](./client.md#get-query-execution)
-- [get_query_results](./client.md#get-query-results)
-- [get_table_metadata](./client.md#get-table-metadata)
-- [get_work_group](./client.md#get-work-group)
-- [list_data_catalogs](./client.md#list-data-catalogs)
-- [list_databases](./client.md#list-databases)
-- [list_engine_versions](./client.md#list-engine-versions)
-- [list_named_queries](./client.md#list-named-queries)
-- [list_prepared_statements](./client.md#list-prepared-statements)
-- [list_query_executions](./client.md#list-query-executions)
-- [list_table_metadata](./client.md#list-table-metadata)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_work_groups](./client.md#list-work-groups)
-- [start_query_execution](./client.md#start-query-execution)
-- [stop_query_execution](./client.md#stop-query-execution)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_data_catalog](./client.md#update-data-catalog)
-- [update_prepared_statement](./client.md#update-prepared-statement)
-- [update_work_group](./client.md#update-work-group)
+- [batch_get_named_query](./client.md#batch_get_named_query)
+- [batch_get_query_execution](./client.md#batch_get_query_execution)
+- [can_paginate](./client.md#can_paginate)
+- [create_data_catalog](./client.md#create_data_catalog)
+- [create_named_query](./client.md#create_named_query)
+- [create_prepared_statement](./client.md#create_prepared_statement)
+- [create_work_group](./client.md#create_work_group)
+- [delete_data_catalog](./client.md#delete_data_catalog)
+- [delete_named_query](./client.md#delete_named_query)
+- [delete_prepared_statement](./client.md#delete_prepared_statement)
+- [delete_work_group](./client.md#delete_work_group)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_data_catalog](./client.md#get_data_catalog)
+- [get_database](./client.md#get_database)
+- [get_named_query](./client.md#get_named_query)
+- [get_paginator](./client.md#get_paginator)
+- [get_prepared_statement](./client.md#get_prepared_statement)
+- [get_query_execution](./client.md#get_query_execution)
+- [get_query_results](./client.md#get_query_results)
+- [get_table_metadata](./client.md#get_table_metadata)
+- [get_work_group](./client.md#get_work_group)
+- [list_data_catalogs](./client.md#list_data_catalogs)
+- [list_databases](./client.md#list_databases)
+- [list_engine_versions](./client.md#list_engine_versions)
+- [list_named_queries](./client.md#list_named_queries)
+- [list_prepared_statements](./client.md#list_prepared_statements)
+- [list_query_executions](./client.md#list_query_executions)
+- [list_table_metadata](./client.md#list_table_metadata)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_work_groups](./client.md#list_work_groups)
+- [start_query_execution](./client.md#start_query_execution)
+- [stop_query_execution](./client.md#stop_query_execution)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_data_catalog](./client.md#update_data_catalog)
+- [update_prepared_statement](./client.md#update_prepared_statement)
+- [update_work_group](./client.md#update_work_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [MetadataException](./client.md#metadataexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+AthenaClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServerException
+- InvalidRequestException
+- MetadataException
+- ResourceNotFoundException
+- TooManyRequestsException
 
 ## Paginators
 
@@ -106,12 +106,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_athena.literals import ColumnNullable, ...
+from mypy_boto3_athena.literals import ColumnNullableType, ...
 ```
 
-- [ColumnNullable](./literals.md#columnnullable)
-- [DataCatalogType](./literals.md#datacatalogtype)
-- [EncryptionOption](./literals.md#encryptionoption)
+- [ColumnNullableType](./literals.md#columnnullabletype)
+- [DataCatalogTypeType](./literals.md#datacatalogtypetype)
+- [EncryptionOptionType](./literals.md#encryptionoptiontype)
 - [GetQueryResultsPaginatorName](./literals.md#getqueryresultspaginatorname)
 - [ListDataCatalogsPaginatorName](./literals.md#listdatacatalogspaginatorname)
 - [ListDatabasesPaginatorName](./literals.md#listdatabasespaginatorname)
@@ -119,9 +119,9 @@ from mypy_boto3_athena.literals import ColumnNullable, ...
 - [ListQueryExecutionsPaginatorName](./literals.md#listqueryexecutionspaginatorname)
 - [ListTableMetadataPaginatorName](./literals.md#listtablemetadatapaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [QueryExecutionState](./literals.md#queryexecutionstate)
-- [StatementType](./literals.md#statementtype)
-- [WorkGroupState](./literals.md#workgroupstate)
+- [QueryExecutionStateType](./literals.md#queryexecutionstatetype)
+- [StatementTypeType](./literals.md#statementtypetype)
+- [WorkGroupStateType](./literals.md#workgroupstatetype)
 
 ## Typed dictionaries
 

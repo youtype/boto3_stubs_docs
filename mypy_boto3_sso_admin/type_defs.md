@@ -3,7 +3,7 @@
 > [Index](..) > [SSOAdmin](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
 [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
@@ -73,7 +73,7 @@ from mypy_boto3_sso_admin.type_defs import AccountAssignmentOperationStatusMetad
 
 Optional fields:
 
-- `Status`: [StatusValues](./literals.md#statusvalues)
+- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 - `RequestId`: `str`
 - `CreatedDate`: `datetime`
 
@@ -85,14 +85,14 @@ from mypy_boto3_sso_admin.type_defs import AccountAssignmentOperationStatusTypeD
 
 Optional fields:
 
-- `Status`: [StatusValues](./literals.md#statusvalues)
+- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 - `RequestId`: `str`
 - `FailureReason`: `str`
 - `TargetId`: `str`
 - `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetType](./literals.md#targettype))
+  [TargetTypeType](./literals.md#targettypetype))
 - `PermissionSetArn`: `str`
-- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
+- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 - `CreatedDate`: `datetime`
 
@@ -106,7 +106,7 @@ Optional fields:
 
 - `AccountId`: `str`
 - `PermissionSetArn`: `str`
-- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
+- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
 ## AttachedManagedPolicyTypeDef
@@ -183,7 +183,7 @@ from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttribut
 Optional fields:
 
 - `Status`:
-  [InstanceAccessControlAttributeConfigurationStatus](./literals.md#instanceaccesscontrolattributeconfigurationstatus)
+  [InstanceAccessControlAttributeConfigurationStatusType](./literals.md#instanceaccesscontrolattributeconfigurationstatustype)
 - `StatusReason`: `str`
 - `InstanceAccessControlAttributeConfiguration`:
   [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
@@ -365,7 +365,7 @@ from mypy_boto3_sso_admin.type_defs import OperationStatusFilterTypeDef
 
 Optional fields:
 
-- `Status`: [StatusValues](./literals.md#statusvalues)
+- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 
 ## PaginatorConfigTypeDef
 
@@ -387,7 +387,7 @@ from mypy_boto3_sso_admin.type_defs import PermissionSetProvisioningStatusMetada
 
 Optional fields:
 
-- `Status`: [StatusValues](./literals.md#statusvalues)
+- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 - `RequestId`: `str`
 - `CreatedDate`: `datetime`
 
@@ -399,7 +399,7 @@ from mypy_boto3_sso_admin.type_defs import PermissionSetProvisioningStatusTypeDe
 
 Optional fields:
 
-- `Status`: [StatusValues](./literals.md#statusvalues)
+- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 - `RequestId`: `str`
 - `AccountId`: `str`
 - `PermissionSetArn`: `str`

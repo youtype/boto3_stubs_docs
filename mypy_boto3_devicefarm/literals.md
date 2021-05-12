@@ -3,27 +3,27 @@
 > [Index](..) > [DeviceFarm](.) > Literals
 
 Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
 [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 - [Literals for boto3 DeviceFarm module](#literals-for-boto3-devicefarm-module)
-  - [ArtifactCategory](#artifactcategory)
-  - [ArtifactType](#artifacttype)
-  - [BillingMethod](#billingmethod)
-  - [CurrencyCode](#currencycode)
-  - [DeviceAttribute](#deviceattribute)
-  - [DeviceAvailability](#deviceavailability)
-  - [DeviceFilterAttribute](#devicefilterattribute)
-  - [DeviceFormFactor](#deviceformfactor)
-  - [DevicePlatform](#deviceplatform)
-  - [DevicePoolType](#devicepooltype)
-  - [ExecutionResult](#executionresult)
-  - [ExecutionResultCode](#executionresultcode)
-  - [ExecutionStatus](#executionstatus)
+  - [ArtifactCategoryType](#artifactcategorytype)
+  - [ArtifactTypeType](#artifacttypetype)
+  - [BillingMethodType](#billingmethodtype)
+  - [CurrencyCodeType](#currencycodetype)
+  - [DeviceAttributeType](#deviceattributetype)
+  - [DeviceAvailabilityType](#deviceavailabilitytype)
+  - [DeviceFilterAttributeType](#devicefilterattributetype)
+  - [DeviceFormFactorType](#deviceformfactortype)
+  - [DevicePlatformType](#deviceplatformtype)
+  - [DevicePoolTypeType](#devicepooltypetype)
+  - [ExecutionResultCodeType](#executionresultcodetype)
+  - [ExecutionResultType](#executionresulttype)
+  - [ExecutionStatusType](#executionstatustype)
   - [GetOfferingStatusPaginatorName](#getofferingstatuspaginatorname)
-  - [InstanceStatus](#instancestatus)
-  - [InteractionMode](#interactionmode)
+  - [InstanceStatusType](#instancestatustype)
+  - [InteractionModeType](#interactionmodetype)
   - [ListArtifactsPaginatorName](#listartifactspaginatorname)
   - [ListDeviceInstancesPaginatorName](#listdeviceinstancespaginatorname)
   - [ListDevicePoolsPaginatorName](#listdevicepoolspaginatorname)
@@ -43,24 +43,24 @@ type annotations stubs module
   - [ListUniqueProblemsPaginatorName](#listuniqueproblemspaginatorname)
   - [ListUploadsPaginatorName](#listuploadspaginatorname)
   - [ListVPCEConfigurationsPaginatorName](#listvpceconfigurationspaginatorname)
-  - [NetworkProfileType](#networkprofiletype)
-  - [OfferingTransactionType](#offeringtransactiontype)
-  - [OfferingType](#offeringtype)
-  - [RecurringChargeFrequency](#recurringchargefrequency)
-  - [RuleOperator](#ruleoperator)
-  - [SampleType](#sampletype)
-  - [TestGridSessionArtifactCategory](#testgridsessionartifactcategory)
-  - [TestGridSessionArtifactType](#testgridsessionartifacttype)
-  - [TestGridSessionStatus](#testgridsessionstatus)
-  - [TestType](#testtype)
-  - [UploadCategory](#uploadcategory)
-  - [UploadStatus](#uploadstatus)
-  - [UploadType](#uploadtype)
+  - [NetworkProfileTypeType](#networkprofiletypetype)
+  - [OfferingTransactionTypeType](#offeringtransactiontypetype)
+  - [OfferingTypeType](#offeringtypetype)
+  - [RecurringChargeFrequencyType](#recurringchargefrequencytype)
+  - [RuleOperatorType](#ruleoperatortype)
+  - [SampleTypeType](#sampletypetype)
+  - [TestGridSessionArtifactCategoryType](#testgridsessionartifactcategorytype)
+  - [TestGridSessionArtifactTypeType](#testgridsessionartifacttypetype)
+  - [TestGridSessionStatusType](#testgridsessionstatustype)
+  - [TestTypeType](#testtypetype)
+  - [UploadCategoryType](#uploadcategorytype)
+  - [UploadStatusType](#uploadstatustype)
+  - [UploadTypeType](#uploadtypetype)
 
-## ArtifactCategory
+## ArtifactCategoryType
 
 ```python
-from mypy_boto3_devicefarm.literals import ArtifactCategory
+from mypy_boto3_devicefarm.literals import ArtifactCategoryType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `LOG`
 - `SCREENSHOT`
 
-## ArtifactType
+## ArtifactTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import ArtifactType
+from mypy_boto3_devicefarm.literals import ArtifactTypeType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `WEBKIT_LOG`
 - `XCTEST_LOG`
 
-## BillingMethod
+## BillingMethodType
 
 ```python
-from mypy_boto3_devicefarm.literals import BillingMethod
+from mypy_boto3_devicefarm.literals import BillingMethodType
 ```
 
 Values:
@@ -117,20 +117,20 @@ Values:
 - `METERED`
 - `UNMETERED`
 
-## CurrencyCode
+## CurrencyCodeType
 
 ```python
-from mypy_boto3_devicefarm.literals import CurrencyCode
+from mypy_boto3_devicefarm.literals import CurrencyCodeType
 ```
 
 Values:
 
 - `USD`
 
-## DeviceAttribute
+## DeviceAttributeType
 
 ```python
-from mypy_boto3_devicefarm.literals import DeviceAttribute
+from mypy_boto3_devicefarm.literals import DeviceAttributeType
 ```
 
 Values:
@@ -149,10 +149,10 @@ Values:
 - `REMOTE_ACCESS_ENABLED`
 - `REMOTE_DEBUG_ENABLED`
 
-## DeviceAvailability
+## DeviceAvailabilityType
 
 ```python
-from mypy_boto3_devicefarm.literals import DeviceAvailability
+from mypy_boto3_devicefarm.literals import DeviceAvailabilityType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `HIGHLY_AVAILABLE`
 - `TEMPORARY_NOT_AVAILABLE`
 
-## DeviceFilterAttribute
+## DeviceFilterAttributeType
 
 ```python
-from mypy_boto3_devicefarm.literals import DeviceFilterAttribute
+from mypy_boto3_devicefarm.literals import DeviceFilterAttributeType
 ```
 
 Values:
@@ -183,10 +183,10 @@ Values:
 - `REMOTE_ACCESS_ENABLED`
 - `REMOTE_DEBUG_ENABLED`
 
-## DeviceFormFactor
+## DeviceFormFactorType
 
 ```python
-from mypy_boto3_devicefarm.literals import DeviceFormFactor
+from mypy_boto3_devicefarm.literals import DeviceFormFactorType
 ```
 
 Values:
@@ -194,10 +194,10 @@ Values:
 - `PHONE`
 - `TABLET`
 
-## DevicePlatform
+## DevicePlatformType
 
 ```python
-from mypy_boto3_devicefarm.literals import DevicePlatform
+from mypy_boto3_devicefarm.literals import DevicePlatformType
 ```
 
 Values:
@@ -205,10 +205,10 @@ Values:
 - `ANDROID`
 - `IOS`
 
-## DevicePoolType
+## DevicePoolTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import DevicePoolType
+from mypy_boto3_devicefarm.literals import DevicePoolTypeType
 ```
 
 Values:
@@ -216,10 +216,21 @@ Values:
 - `CURATED`
 - `PRIVATE`
 
-## ExecutionResult
+## ExecutionResultCodeType
 
 ```python
-from mypy_boto3_devicefarm.literals import ExecutionResult
+from mypy_boto3_devicefarm.literals import ExecutionResultCodeType
+```
+
+Values:
+
+- `PARSING_FAILED`
+- `VPC_ENDPOINT_SETUP_FAILED`
+
+## ExecutionResultType
+
+```python
+from mypy_boto3_devicefarm.literals import ExecutionResultType
 ```
 
 Values:
@@ -232,21 +243,10 @@ Values:
 - `STOPPED`
 - `WARNED`
 
-## ExecutionResultCode
+## ExecutionStatusType
 
 ```python
-from mypy_boto3_devicefarm.literals import ExecutionResultCode
-```
-
-Values:
-
-- `PARSING_FAILED`
-- `VPC_ENDPOINT_SETUP_FAILED`
-
-## ExecutionStatus
-
-```python
-from mypy_boto3_devicefarm.literals import ExecutionStatus
+from mypy_boto3_devicefarm.literals import ExecutionStatusType
 ```
 
 Values:
@@ -271,10 +271,10 @@ Values:
 
 - `get_offering_status`
 
-## InstanceStatus
+## InstanceStatusType
 
 ```python
-from mypy_boto3_devicefarm.literals import InstanceStatus
+from mypy_boto3_devicefarm.literals import InstanceStatusType
 ```
 
 Values:
@@ -284,10 +284,10 @@ Values:
 - `NOT_AVAILABLE`
 - `PREPARING`
 
-## InteractionMode
+## InteractionModeType
 
 ```python
-from mypy_boto3_devicefarm.literals import InteractionMode
+from mypy_boto3_devicefarm.literals import InteractionModeType
 ```
 
 Values:
@@ -486,10 +486,10 @@ Values:
 
 - `list_vpce_configurations`
 
-## NetworkProfileType
+## NetworkProfileTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import NetworkProfileType
+from mypy_boto3_devicefarm.literals import NetworkProfileTypeType
 ```
 
 Values:
@@ -497,10 +497,10 @@ Values:
 - `CURATED`
 - `PRIVATE`
 
-## OfferingTransactionType
+## OfferingTransactionTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import OfferingTransactionType
+from mypy_boto3_devicefarm.literals import OfferingTransactionTypeType
 ```
 
 Values:
@@ -509,30 +509,30 @@ Values:
 - `RENEW`
 - `SYSTEM`
 
-## OfferingType
+## OfferingTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import OfferingType
+from mypy_boto3_devicefarm.literals import OfferingTypeType
 ```
 
 Values:
 
 - `RECURRING`
 
-## RecurringChargeFrequency
+## RecurringChargeFrequencyType
 
 ```python
-from mypy_boto3_devicefarm.literals import RecurringChargeFrequency
+from mypy_boto3_devicefarm.literals import RecurringChargeFrequencyType
 ```
 
 Values:
 
 - `MONTHLY`
 
-## RuleOperator
+## RuleOperatorType
 
 ```python
-from mypy_boto3_devicefarm.literals import RuleOperator
+from mypy_boto3_devicefarm.literals import RuleOperatorType
 ```
 
 Values:
@@ -546,10 +546,10 @@ Values:
 - `LESS_THAN_OR_EQUALS`
 - `NOT_IN`
 
-## SampleType
+## SampleTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import SampleType
+from mypy_boto3_devicefarm.literals import SampleTypeType
 ```
 
 Values:
@@ -572,10 +572,10 @@ Values:
 - `TX`
 - `TX_RATE`
 
-## TestGridSessionArtifactCategory
+## TestGridSessionArtifactCategoryType
 
 ```python
-from mypy_boto3_devicefarm.literals import TestGridSessionArtifactCategory
+from mypy_boto3_devicefarm.literals import TestGridSessionArtifactCategoryType
 ```
 
 Values:
@@ -583,10 +583,10 @@ Values:
 - `LOG`
 - `VIDEO`
 
-## TestGridSessionArtifactType
+## TestGridSessionArtifactTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import TestGridSessionArtifactType
+from mypy_boto3_devicefarm.literals import TestGridSessionArtifactTypeType
 ```
 
 Values:
@@ -595,10 +595,10 @@ Values:
 - `UNKNOWN`
 - `VIDEO`
 
-## TestGridSessionStatus
+## TestGridSessionStatusType
 
 ```python
-from mypy_boto3_devicefarm.literals import TestGridSessionStatus
+from mypy_boto3_devicefarm.literals import TestGridSessionStatusType
 ```
 
 Values:
@@ -607,10 +607,10 @@ Values:
 - `CLOSED`
 - `ERRORED`
 
-## TestType
+## TestTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import TestType
+from mypy_boto3_devicefarm.literals import TestTypeType
 ```
 
 Values:
@@ -637,10 +637,10 @@ Values:
 - `XCTEST`
 - `XCTEST_UI`
 
-## UploadCategory
+## UploadCategoryType
 
 ```python
-from mypy_boto3_devicefarm.literals import UploadCategory
+from mypy_boto3_devicefarm.literals import UploadCategoryType
 ```
 
 Values:
@@ -648,10 +648,10 @@ Values:
 - `CURATED`
 - `PRIVATE`
 
-## UploadStatus
+## UploadStatusType
 
 ```python
-from mypy_boto3_devicefarm.literals import UploadStatus
+from mypy_boto3_devicefarm.literals import UploadStatusType
 ```
 
 Values:
@@ -661,10 +661,10 @@ Values:
 - `PROCESSING`
 - `SUCCEEDED`
 
-## UploadType
+## UploadTypeType
 
 ```python
-from mypy_boto3_devicefarm.literals import UploadType
+from mypy_boto3_devicefarm.literals import UploadTypeType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [HealthLake](.) > Typed dictionaries
 
 Auto-generated documentation for
-[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
 [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
@@ -34,7 +34,7 @@ Required fields:
 
 - `DatastoreId`: `str`
 - `DatastoreArn`: `str`
-- `DatastoreStatus`: [DatastoreStatus](./literals.md#datastorestatus)
+- `DatastoreStatus`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `DatastoreEndpoint`: `str`
 
 ## DatastoreFilterTypeDef
@@ -46,7 +46,7 @@ from mypy_boto3_healthlake.type_defs import DatastoreFilterTypeDef
 Optional fields:
 
 - `DatastoreName`: `str`
-- `DatastoreStatus`: [DatastoreStatus](./literals.md#datastorestatus)
+- `DatastoreStatus`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `CreatedBefore`: `datetime`
 - `CreatedAfter`: `datetime`
 
@@ -60,9 +60,9 @@ Required fields:
 
 - `DatastoreId`: `str`
 - `DatastoreArn`: `str`
-- `DatastoreStatus`: [DatastoreStatus](./literals.md#datastorestatus)
+- `DatastoreStatus`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `DatastoreTypeVersion`: `Literal['R4']` (see
-  [FHIRVersion](./literals.md#fhirversion))
+  [FHIRVersionType](./literals.md#fhirversiontype))
 - `DatastoreEndpoint`: `str`
 
 Optional fields:
@@ -82,7 +82,7 @@ Required fields:
 
 - `DatastoreId`: `str`
 - `DatastoreArn`: `str`
-- `DatastoreStatus`: [DatastoreStatus](./literals.md#datastorestatus)
+- `DatastoreStatus`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `DatastoreEndpoint`: `str`
 
 ## DescribeFHIRDatastoreResponseTypeDef
@@ -127,7 +127,7 @@ from mypy_boto3_healthlake.type_defs import ExportJobPropertiesTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTime`: `datetime`
 - `DatastoreId`: `str`
 - `OutputDataConfig`:
@@ -149,7 +149,7 @@ from mypy_boto3_healthlake.type_defs import ImportJobPropertiesTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTime`: `datetime`
 - `DatastoreId`: `str`
 - `InputDataConfig`:
@@ -206,7 +206,7 @@ from mypy_boto3_healthlake.type_defs import PreloadDataConfigTypeDef
 Required fields:
 
 - `PreloadDataType`: `Literal['SYNTHEA']` (see
-  [PreloadDataType](./literals.md#preloaddatatype))
+  [PreloadDataTypeType](./literals.md#preloaddatatypetype))
 
 ## StartFHIRExportJobResponseTypeDef
 
@@ -217,7 +217,7 @@ from mypy_boto3_healthlake.type_defs import StartFHIRExportJobResponseTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 Optional fields:
 
@@ -232,7 +232,7 @@ from mypy_boto3_healthlake.type_defs import StartFHIRImportJobResponseTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 Optional fields:
 

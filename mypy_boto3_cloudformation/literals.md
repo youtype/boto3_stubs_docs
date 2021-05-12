@@ -3,29 +3,29 @@
 > [Index](..) > [CloudFormation](.) > Literals
 
 Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
 [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [Literals for boto3 CloudFormation module](#literals-for-boto3-cloudformation-module)
-  - [AccountGateStatus](#accountgatestatus)
-  - [CallAs](#callas)
-  - [Capability](#capability)
-  - [ChangeAction](#changeaction)
+  - [AccountGateStatusType](#accountgatestatustype)
+  - [CallAsType](#callastype)
+  - [CapabilityType](#capabilitytype)
+  - [ChangeActionType](#changeactiontype)
   - [ChangeSetCreateCompleteWaiterName](#changesetcreatecompletewaitername)
-  - [ChangeSetStatus](#changesetstatus)
-  - [ChangeSetType](#changesettype)
-  - [ChangeSource](#changesource)
-  - [ChangeType](#changetype)
-  - [DeprecatedStatus](#deprecatedstatus)
+  - [ChangeSetStatusType](#changesetstatustype)
+  - [ChangeSetTypeType](#changesettypetype)
+  - [ChangeSourceType](#changesourcetype)
+  - [ChangeTypeType](#changetypetype)
+  - [DeprecatedStatusType](#deprecatedstatustype)
   - [DescribeAccountLimitsPaginatorName](#describeaccountlimitspaginatorname)
   - [DescribeChangeSetPaginatorName](#describechangesetpaginatorname)
   - [DescribeStackEventsPaginatorName](#describestackeventspaginatorname)
   - [DescribeStacksPaginatorName](#describestackspaginatorname)
-  - [DifferenceType](#differencetype)
-  - [EvaluationType](#evaluationtype)
-  - [ExecutionStatus](#executionstatus)
-  - [HandlerErrorCode](#handlererrorcode)
+  - [DifferenceTypeType](#differencetypetype)
+  - [EvaluationTypeType](#evaluationtypetype)
+  - [ExecutionStatusType](#executionstatustype)
+  - [HandlerErrorCodeType](#handlererrorcodetype)
   - [ListChangeSetsPaginatorName](#listchangesetspaginatorname)
   - [ListExportsPaginatorName](#listexportspaginatorname)
   - [ListImportsPaginatorName](#listimportspaginatorname)
@@ -35,45 +35,45 @@ type annotations stubs module
   - [ListStackSetOperationsPaginatorName](#liststacksetoperationspaginatorname)
   - [ListStackSetsPaginatorName](#liststacksetspaginatorname)
   - [ListStacksPaginatorName](#liststackspaginatorname)
-  - [OnFailure](#onfailure)
-  - [OperationStatus](#operationstatus)
-  - [PermissionModels](#permissionmodels)
-  - [ProvisioningType](#provisioningtype)
-  - [RegionConcurrencyType](#regionconcurrencytype)
-  - [RegistrationStatus](#registrationstatus)
-  - [RegistryType](#registrytype)
-  - [Replacement](#replacement)
-  - [RequiresRecreation](#requiresrecreation)
-  - [ResourceAttribute](#resourceattribute)
-  - [ResourceSignalStatus](#resourcesignalstatus)
-  - [ResourceStatus](#resourcestatus)
+  - [OnFailureType](#onfailuretype)
+  - [OperationStatusType](#operationstatustype)
+  - [PermissionModelsType](#permissionmodelstype)
+  - [ProvisioningTypeType](#provisioningtypetype)
+  - [RegionConcurrencyTypeType](#regionconcurrencytypetype)
+  - [RegistrationStatusType](#registrationstatustype)
+  - [RegistryTypeType](#registrytypetype)
+  - [ReplacementType](#replacementtype)
+  - [RequiresRecreationType](#requiresrecreationtype)
+  - [ResourceAttributeType](#resourceattributetype)
+  - [ResourceSignalStatusType](#resourcesignalstatustype)
+  - [ResourceStatusType](#resourcestatustype)
   - [StackCreateCompleteWaiterName](#stackcreatecompletewaitername)
   - [StackDeleteCompleteWaiterName](#stackdeletecompletewaitername)
-  - [StackDriftDetectionStatus](#stackdriftdetectionstatus)
-  - [StackDriftStatus](#stackdriftstatus)
+  - [StackDriftDetectionStatusType](#stackdriftdetectionstatustype)
+  - [StackDriftStatusType](#stackdriftstatustype)
   - [StackExistsWaiterName](#stackexistswaitername)
   - [StackImportCompleteWaiterName](#stackimportcompletewaitername)
-  - [StackInstanceDetailedStatus](#stackinstancedetailedstatus)
-  - [StackInstanceFilterName](#stackinstancefiltername)
-  - [StackInstanceStatus](#stackinstancestatus)
-  - [StackResourceDriftStatus](#stackresourcedriftstatus)
+  - [StackInstanceDetailedStatusType](#stackinstancedetailedstatustype)
+  - [StackInstanceFilterNameType](#stackinstancefilternametype)
+  - [StackInstanceStatusType](#stackinstancestatustype)
+  - [StackResourceDriftStatusType](#stackresourcedriftstatustype)
   - [StackRollbackCompleteWaiterName](#stackrollbackcompletewaitername)
-  - [StackSetDriftDetectionStatus](#stacksetdriftdetectionstatus)
-  - [StackSetDriftStatus](#stacksetdriftstatus)
-  - [StackSetOperationAction](#stacksetoperationaction)
-  - [StackSetOperationResultStatus](#stacksetoperationresultstatus)
-  - [StackSetOperationStatus](#stacksetoperationstatus)
-  - [StackSetStatus](#stacksetstatus)
-  - [StackStatus](#stackstatus)
+  - [StackSetDriftDetectionStatusType](#stacksetdriftdetectionstatustype)
+  - [StackSetDriftStatusType](#stacksetdriftstatustype)
+  - [StackSetOperationActionType](#stacksetoperationactiontype)
+  - [StackSetOperationResultStatusType](#stacksetoperationresultstatustype)
+  - [StackSetOperationStatusType](#stacksetoperationstatustype)
+  - [StackSetStatusType](#stacksetstatustype)
+  - [StackStatusType](#stackstatustype)
   - [StackUpdateCompleteWaiterName](#stackupdatecompletewaitername)
-  - [TemplateStage](#templatestage)
+  - [TemplateStageType](#templatestagetype)
   - [TypeRegistrationCompleteWaiterName](#typeregistrationcompletewaitername)
-  - [Visibility](#visibility)
+  - [VisibilityType](#visibilitytype)
 
-## AccountGateStatus
+## AccountGateStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import AccountGateStatus
+from mypy_boto3_cloudformation.literals import AccountGateStatusType
 ```
 
 Values:
@@ -82,10 +82,10 @@ Values:
 - `SKIPPED`
 - `SUCCEEDED`
 
-## CallAs
+## CallAsType
 
 ```python
-from mypy_boto3_cloudformation.literals import CallAs
+from mypy_boto3_cloudformation.literals import CallAsType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `DELEGATED_ADMIN`
 - `SELF`
 
-## Capability
+## CapabilityType
 
 ```python
-from mypy_boto3_cloudformation.literals import Capability
+from mypy_boto3_cloudformation.literals import CapabilityType
 ```
 
 Values:
@@ -105,10 +105,10 @@ Values:
 - `CAPABILITY_IAM`
 - `CAPABILITY_NAMED_IAM`
 
-## ChangeAction
+## ChangeActionType
 
 ```python
-from mypy_boto3_cloudformation.literals import ChangeAction
+from mypy_boto3_cloudformation.literals import ChangeActionType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 
 - `change_set_create_complete`
 
-## ChangeSetStatus
+## ChangeSetStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import ChangeSetStatus
+from mypy_boto3_cloudformation.literals import ChangeSetStatusType
 ```
 
 Values:
@@ -146,10 +146,10 @@ Values:
 - `DELETE_PENDING`
 - `FAILED`
 
-## ChangeSetType
+## ChangeSetTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import ChangeSetType
+from mypy_boto3_cloudformation.literals import ChangeSetTypeType
 ```
 
 Values:
@@ -158,10 +158,10 @@ Values:
 - `IMPORT`
 - `UPDATE`
 
-## ChangeSource
+## ChangeSourceType
 
 ```python
-from mypy_boto3_cloudformation.literals import ChangeSource
+from mypy_boto3_cloudformation.literals import ChangeSourceType
 ```
 
 Values:
@@ -172,20 +172,20 @@ Values:
 - `ResourceAttribute`
 - `ResourceReference`
 
-## ChangeType
+## ChangeTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import ChangeType
+from mypy_boto3_cloudformation.literals import ChangeTypeType
 ```
 
 Values:
 
 - `Resource`
 
-## DeprecatedStatus
+## DeprecatedStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import DeprecatedStatus
+from mypy_boto3_cloudformation.literals import DeprecatedStatusType
 ```
 
 Values:
@@ -233,10 +233,10 @@ Values:
 
 - `describe_stacks`
 
-## DifferenceType
+## DifferenceTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import DifferenceType
+from mypy_boto3_cloudformation.literals import DifferenceTypeType
 ```
 
 Values:
@@ -245,10 +245,10 @@ Values:
 - `NOT_EQUAL`
 - `REMOVE`
 
-## EvaluationType
+## EvaluationTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import EvaluationType
+from mypy_boto3_cloudformation.literals import EvaluationTypeType
 ```
 
 Values:
@@ -256,10 +256,10 @@ Values:
 - `Dynamic`
 - `Static`
 
-## ExecutionStatus
+## ExecutionStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import ExecutionStatus
+from mypy_boto3_cloudformation.literals import ExecutionStatusType
 ```
 
 Values:
@@ -271,10 +271,10 @@ Values:
 - `OBSOLETE`
 - `UNAVAILABLE`
 
-## HandlerErrorCode
+## HandlerErrorCodeType
 
 ```python
-from mypy_boto3_cloudformation.literals import HandlerErrorCode
+from mypy_boto3_cloudformation.literals import HandlerErrorCodeType
 ```
 
 Values:
@@ -384,10 +384,10 @@ Values:
 
 - `list_stacks`
 
-## OnFailure
+## OnFailureType
 
 ```python
-from mypy_boto3_cloudformation.literals import OnFailure
+from mypy_boto3_cloudformation.literals import OnFailureType
 ```
 
 Values:
@@ -396,10 +396,10 @@ Values:
 - `DO_NOTHING`
 - `ROLLBACK`
 
-## OperationStatus
+## OperationStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import OperationStatus
+from mypy_boto3_cloudformation.literals import OperationStatusType
 ```
 
 Values:
@@ -409,10 +409,10 @@ Values:
 - `PENDING`
 - `SUCCESS`
 
-## PermissionModels
+## PermissionModelsType
 
 ```python
-from mypy_boto3_cloudformation.literals import PermissionModels
+from mypy_boto3_cloudformation.literals import PermissionModelsType
 ```
 
 Values:
@@ -420,10 +420,10 @@ Values:
 - `SELF_MANAGED`
 - `SERVICE_MANAGED`
 
-## ProvisioningType
+## ProvisioningTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import ProvisioningType
+from mypy_boto3_cloudformation.literals import ProvisioningTypeType
 ```
 
 Values:
@@ -432,10 +432,10 @@ Values:
 - `IMMUTABLE`
 - `NON_PROVISIONABLE`
 
-## RegionConcurrencyType
+## RegionConcurrencyTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import RegionConcurrencyType
+from mypy_boto3_cloudformation.literals import RegionConcurrencyTypeType
 ```
 
 Values:
@@ -443,10 +443,10 @@ Values:
 - `PARALLEL`
 - `SEQUENTIAL`
 
-## RegistrationStatus
+## RegistrationStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import RegistrationStatus
+from mypy_boto3_cloudformation.literals import RegistrationStatusType
 ```
 
 Values:
@@ -455,10 +455,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## RegistryType
+## RegistryTypeType
 
 ```python
-from mypy_boto3_cloudformation.literals import RegistryType
+from mypy_boto3_cloudformation.literals import RegistryTypeType
 ```
 
 Values:
@@ -466,10 +466,10 @@ Values:
 - `MODULE`
 - `RESOURCE`
 
-## Replacement
+## ReplacementType
 
 ```python
-from mypy_boto3_cloudformation.literals import Replacement
+from mypy_boto3_cloudformation.literals import ReplacementType
 ```
 
 Values:
@@ -478,10 +478,10 @@ Values:
 - `False`
 - `True`
 
-## RequiresRecreation
+## RequiresRecreationType
 
 ```python
-from mypy_boto3_cloudformation.literals import RequiresRecreation
+from mypy_boto3_cloudformation.literals import RequiresRecreationType
 ```
 
 Values:
@@ -490,10 +490,10 @@ Values:
 - `Conditionally`
 - `Never`
 
-## ResourceAttribute
+## ResourceAttributeType
 
 ```python
-from mypy_boto3_cloudformation.literals import ResourceAttribute
+from mypy_boto3_cloudformation.literals import ResourceAttributeType
 ```
 
 Values:
@@ -505,10 +505,10 @@ Values:
 - `Tags`
 - `UpdatePolicy`
 
-## ResourceSignalStatus
+## ResourceSignalStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import ResourceSignalStatus
+from mypy_boto3_cloudformation.literals import ResourceSignalStatusType
 ```
 
 Values:
@@ -516,10 +516,10 @@ Values:
 - `FAILURE`
 - `SUCCESS`
 
-## ResourceStatus
+## ResourceStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import ResourceStatus
+from mypy_boto3_cloudformation.literals import ResourceStatusType
 ```
 
 Values:
@@ -561,10 +561,10 @@ Values:
 
 - `stack_delete_complete`
 
-## StackDriftDetectionStatus
+## StackDriftDetectionStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackDriftDetectionStatus
+from mypy_boto3_cloudformation.literals import StackDriftDetectionStatusType
 ```
 
 Values:
@@ -573,10 +573,10 @@ Values:
 - `DETECTION_FAILED`
 - `DETECTION_IN_PROGRESS`
 
-## StackDriftStatus
+## StackDriftStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackDriftStatus
+from mypy_boto3_cloudformation.literals import StackDriftStatusType
 ```
 
 Values:
@@ -606,10 +606,10 @@ Values:
 
 - `stack_import_complete`
 
-## StackInstanceDetailedStatus
+## StackInstanceDetailedStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackInstanceDetailedStatus
+from mypy_boto3_cloudformation.literals import StackInstanceDetailedStatusType
 ```
 
 Values:
@@ -621,20 +621,20 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
-## StackInstanceFilterName
+## StackInstanceFilterNameType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackInstanceFilterName
+from mypy_boto3_cloudformation.literals import StackInstanceFilterNameType
 ```
 
 Values:
 
 - `DETAILED_STATUS`
 
-## StackInstanceStatus
+## StackInstanceStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackInstanceStatus
+from mypy_boto3_cloudformation.literals import StackInstanceStatusType
 ```
 
 Values:
@@ -643,10 +643,10 @@ Values:
 - `INOPERABLE`
 - `OUTDATED`
 
-## StackResourceDriftStatus
+## StackResourceDriftStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackResourceDriftStatus
+from mypy_boto3_cloudformation.literals import StackResourceDriftStatusType
 ```
 
 Values:
@@ -666,10 +666,10 @@ Values:
 
 - `stack_rollback_complete`
 
-## StackSetDriftDetectionStatus
+## StackSetDriftDetectionStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackSetDriftDetectionStatus
+from mypy_boto3_cloudformation.literals import StackSetDriftDetectionStatusType
 ```
 
 Values:
@@ -680,10 +680,10 @@ Values:
 - `PARTIAL_SUCCESS`
 - `STOPPED`
 
-## StackSetDriftStatus
+## StackSetDriftStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackSetDriftStatus
+from mypy_boto3_cloudformation.literals import StackSetDriftStatusType
 ```
 
 Values:
@@ -692,10 +692,10 @@ Values:
 - `IN_SYNC`
 - `NOT_CHECKED`
 
-## StackSetOperationAction
+## StackSetOperationActionType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackSetOperationAction
+from mypy_boto3_cloudformation.literals import StackSetOperationActionType
 ```
 
 Values:
@@ -705,10 +705,10 @@ Values:
 - `DETECT_DRIFT`
 - `UPDATE`
 
-## StackSetOperationResultStatus
+## StackSetOperationResultStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackSetOperationResultStatus
+from mypy_boto3_cloudformation.literals import StackSetOperationResultStatusType
 ```
 
 Values:
@@ -719,10 +719,10 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
-## StackSetOperationStatus
+## StackSetOperationStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackSetOperationStatus
+from mypy_boto3_cloudformation.literals import StackSetOperationStatusType
 ```
 
 Values:
@@ -734,10 +734,10 @@ Values:
 - `STOPPING`
 - `SUCCEEDED`
 
-## StackSetStatus
+## StackSetStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackSetStatus
+from mypy_boto3_cloudformation.literals import StackSetStatusType
 ```
 
 Values:
@@ -745,10 +745,10 @@ Values:
 - `ACTIVE`
 - `DELETED`
 
-## StackStatus
+## StackStatusType
 
 ```python
-from mypy_boto3_cloudformation.literals import StackStatus
+from mypy_boto3_cloudformation.literals import StackStatusType
 ```
 
 Values:
@@ -786,10 +786,10 @@ Values:
 
 - `stack_update_complete`
 
-## TemplateStage
+## TemplateStageType
 
 ```python
-from mypy_boto3_cloudformation.literals import TemplateStage
+from mypy_boto3_cloudformation.literals import TemplateStageType
 ```
 
 Values:
@@ -807,10 +807,10 @@ Values:
 
 - `type_registration_complete`
 
-## Visibility
+## VisibilityType
 
 ```python
-from mypy_boto3_cloudformation.literals import Visibility
+from mypy_boto3_cloudformation.literals import VisibilityType
 ```
 
 Values:

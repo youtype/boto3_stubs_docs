@@ -3,7 +3,7 @@
 > [Index](..) > [Shield](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/shield.html#Shield)
 type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
@@ -66,7 +66,8 @@ Optional fields:
   `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
 - `AttackProperties`:
   `List`\[[AttackPropertyTypeDef](./type_defs.md#attackpropertytypedef)\]
-- `Mitigations`: `List`\[[MitigationTypeDef](./type_defs.md#mitigationtypedef)\]
+- `Mitigations`:
+  `List`\[[MitigationTypeDef](./type_defs.md#mitigationtypedef)\]
 
 ## AttackPropertyTypeDef
 
@@ -76,12 +77,12 @@ from mypy_boto3_shield.type_defs import AttackPropertyTypeDef
 
 Optional fields:
 
-- `AttackLayer`: [AttackLayer](./literals.md#attacklayer)
+- `AttackLayer`: [AttackLayerType](./literals.md#attacklayertype)
 - `AttackPropertyIdentifier`:
-  [AttackPropertyIdentifier](./literals.md#attackpropertyidentifier)
+  [AttackPropertyIdentifierType](./literals.md#attackpropertyidentifiertype)
 - `TopContributors`:
   `List`\[[ContributorTypeDef](./type_defs.md#contributortypedef)\]
-- `Unit`: [Unit](./literals.md#unit)
+- `Unit`: [UnitType](./literals.md#unittype)
 - `Total`: `int`
 
 ## AttackStatisticsDataItemTypeDef
@@ -267,7 +268,8 @@ from mypy_boto3_shield.type_defs import GetSubscriptionStateResponseTypeDef
 
 Required fields:
 
-- `SubscriptionState`: [SubscriptionState](./literals.md#subscriptionstate)
+- `SubscriptionState`:
+  [SubscriptionStateType](./literals.md#subscriptionstatetype)
 
 ## LimitTypeDef
 
@@ -315,7 +317,8 @@ from mypy_boto3_shield.type_defs import ListProtectionsResponseTypeDef
 
 Optional fields:
 
-- `Protections`: `List`\[[ProtectionTypeDef](./type_defs.md#protectiontypedef)\]
+- `Protections`:
+  `List`\[[ProtectionTypeDef](./type_defs.md#protectiontypedef)\]
 - `NextToken`: `str`
 
 ## ListResourcesInProtectionGroupResponseTypeDef
@@ -407,13 +410,15 @@ Required fields:
 
 - `ProtectionGroupId`: `str`
 - `Aggregation`:
-  [ProtectionGroupAggregation](./literals.md#protectiongroupaggregation)
-- `Pattern`: [ProtectionGroupPattern](./literals.md#protectiongrouppattern)
+  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
+- `Pattern`:
+  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
 - `Members`: `List`\[`str`\]
 
 Optional fields:
 
-- `ResourceType`: [ProtectedResourceType](./literals.md#protectedresourcetype)
+- `ResourceType`:
+  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
 - `ProtectionGroupArn`: `str`
 
 ## ProtectionLimitsTypeDef
@@ -449,7 +454,7 @@ from mypy_boto3_shield.type_defs import SubResourceSummaryTypeDef
 
 Optional fields:
 
-- `Type`: [SubResourceType](./literals.md#subresourcetype)
+- `Type`: [SubResourceTypeType](./literals.md#subresourcetypetype)
 - `Id`: `str`
 - `AttackVectors`:
   `List`\[[SummarizedAttackVectorTypeDef](./type_defs.md#summarizedattackvectortypedef)\]
@@ -485,10 +490,10 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `TimeCommitmentInSeconds`: `int`
-- `AutoRenew`: [AutoRenew](./literals.md#autorenew)
+- `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)
 - `Limits`: `List`\[[LimitTypeDef](./type_defs.md#limittypedef)\]
 - `ProactiveEngagementStatus`:
-  [ProactiveEngagementStatus](./literals.md#proactiveengagementstatus)
+  [ProactiveEngagementStatusType](./literals.md#proactiveengagementstatustype)
 - `SubscriptionArn`: `str`
 
 ## SummarizedAttackVectorTypeDef

@@ -3,7 +3,7 @@
 > [Index](..) > Detective
 
 Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/detective.html#Detective)
 type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
@@ -29,36 +29,36 @@ Can be used directly:
 from mypy_boto3_detective.client import DetectiveClient
 ```
 
-DetectiveClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_invitation](./client.md#accept-invitation)
-- [can_paginate](./client.md#can-paginate)
-- [create_graph](./client.md#create-graph)
-- [create_members](./client.md#create-members)
-- [delete_graph](./client.md#delete-graph)
-- [delete_members](./client.md#delete-members)
-- [disassociate_membership](./client.md#disassociate-membership)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_members](./client.md#get-members)
-- [list_graphs](./client.md#list-graphs)
-- [list_invitations](./client.md#list-invitations)
-- [list_members](./client.md#list-members)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [reject_invitation](./client.md#reject-invitation)
-- [start_monitoring_member](./client.md#start-monitoring-member)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [accept_invitation](./client.md#accept_invitation)
+- [can_paginate](./client.md#can_paginate)
+- [create_graph](./client.md#create_graph)
+- [create_members](./client.md#create_members)
+- [delete_graph](./client.md#delete_graph)
+- [delete_members](./client.md#delete_members)
+- [disassociate_membership](./client.md#disassociate_membership)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_members](./client.md#get_members)
+- [list_graphs](./client.md#list_graphs)
+- [list_invitations](./client.md#list_invitations)
+- [list_members](./client.md#list_members)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [reject_invitation](./client.md#reject_invitation)
+- [start_monitoring_member](./client.md#start_monitoring_member)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+DetectiveClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Literals
 
@@ -67,11 +67,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_detective.literals import MemberDisabledReason, ...
+from mypy_boto3_detective.literals import MemberDisabledReasonType, ...
 ```
 
-- [MemberDisabledReason](./literals.md#memberdisabledreason)
-- [MemberStatus](./literals.md#memberstatus)
+- [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
+- [MemberStatusType](./literals.md#memberstatustype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > LexRuntimeV2
 
 Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
 [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
@@ -29,29 +29,29 @@ Can be used directly:
 from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
 ```
 
-LexRuntimeV2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_session](./client.md#delete-session)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_session](./client.md#get-session)
-- [put_session](./client.md#put-session)
-- [recognize_text](./client.md#recognize-text)
-- [recognize_utterance](./client.md#recognize-utterance)
+- [can_paginate](./client.md#can_paginate)
+- [delete_session](./client.md#delete_session)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_session](./client.md#get_session)
+- [put_session](./client.md#put_session)
+- [recognize_text](./client.md#recognize_text)
+- [recognize_utterance](./client.md#recognize_utterance)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BadGatewayException](./client.md#badgatewayexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [DependencyFailedException](./client.md#dependencyfailedexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+LexRuntimeV2Client [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BadGatewayException
+- ClientError
+- ConflictException
+- DependencyFailedException
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -60,14 +60,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_runtime.literals import ConfirmationState, ...
+from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType, ...
 ```
 
-- [ConfirmationState](./literals.md#confirmationstate)
-- [DialogActionType](./literals.md#dialogactiontype)
-- [IntentState](./literals.md#intentstate)
-- [MessageContentType](./literals.md#messagecontenttype)
-- [SentimentType](./literals.md#sentimenttype)
+- [ConfirmationStateType](./literals.md#confirmationstatetype)
+- [DialogActionTypeType](./literals.md#dialogactiontypetype)
+- [IntentStateType](./literals.md#intentstatetype)
+- [MessageContentTypeType](./literals.md#messagecontenttypetype)
+- [SentimentTypeType](./literals.md#sentimenttypetype)
 
 ## Typed dictionaries
 

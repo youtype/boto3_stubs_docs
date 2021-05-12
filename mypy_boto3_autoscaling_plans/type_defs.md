@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScalingPlans](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
 [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
@@ -58,7 +58,7 @@ Required fields:
 
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `Statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 
 Optional fields:
 
@@ -76,7 +76,7 @@ Required fields:
 
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `Statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 
 Optional fields:
 
@@ -160,7 +160,8 @@ from mypy_boto3_autoscaling_plans.type_defs import PredefinedLoadMetricSpecifica
 
 Required fields:
 
-- `PredefinedLoadMetricType`: [LoadMetricType](./literals.md#loadmetrictype)
+- `PredefinedLoadMetricType`:
+  [LoadMetricTypeType](./literals.md#loadmetrictypetype)
 
 Optional fields:
 
@@ -175,7 +176,7 @@ from mypy_boto3_autoscaling_plans.type_defs import PredefinedScalingMetricSpecif
 Required fields:
 
 - `PredefinedScalingMetricType`:
-  [ScalingMetricType](./literals.md#scalingmetrictype)
+  [ScalingMetricTypeType](./literals.md#scalingmetrictypetype)
 
 Optional fields:
 
@@ -189,9 +190,11 @@ from mypy_boto3_autoscaling_plans.type_defs import ScalingInstructionTypeDef
 
 Required fields:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
 - `TargetTrackingConfigurations`:
@@ -205,12 +208,12 @@ Optional fields:
   [CustomizedLoadMetricSpecificationTypeDef](./type_defs.md#customizedloadmetricspecificationtypedef)
 - `ScheduledActionBufferTime`: `int`
 - `PredictiveScalingMaxCapacityBehavior`:
-  [PredictiveScalingMaxCapacityBehavior](./literals.md#predictivescalingmaxcapacitybehavior)
+  [PredictiveScalingMaxCapacityBehaviorType](./literals.md#predictivescalingmaxcapacitybehaviortype)
 - `PredictiveScalingMaxCapacityBuffer`: `int`
 - `PredictiveScalingMode`:
-  [PredictiveScalingMode](./literals.md#predictivescalingmode)
+  [PredictiveScalingModeType](./literals.md#predictivescalingmodetype)
 - `ScalingPolicyUpdateBehavior`:
-  [ScalingPolicyUpdateBehavior](./literals.md#scalingpolicyupdatebehavior)
+  [ScalingPolicyUpdateBehaviorType](./literals.md#scalingpolicyupdatebehaviortype)
 - `DisableDynamicScaling`: `bool`
 
 ## ScalingPlanResourceTypeDef
@@ -223,10 +226,13 @@ Required fields:
 
 - `ScalingPlanName`: `str`
 - `ScalingPlanVersion`: `int`
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-- `ScalingStatusCode`: [ScalingStatusCode](./literals.md#scalingstatuscode)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
+- `ScalingStatusCode`:
+  [ScalingStatusCodeType](./literals.md#scalingstatuscodetype)
 
 Optional fields:
 
@@ -248,7 +254,8 @@ Required fields:
   [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
 - `ScalingInstructions`:
   `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
-- `StatusCode`: [ScalingPlanStatusCode](./literals.md#scalingplanstatuscode)
+- `StatusCode`:
+  [ScalingPlanStatusCodeType](./literals.md#scalingplanstatuscodetype)
 
 Optional fields:
 
@@ -266,7 +273,7 @@ Required fields:
 
 - `PolicyName`: `str`
 - `PolicyType`: `Literal['TargetTrackingScaling']` (see
-  [PolicyType](./literals.md#policytype))
+  [PolicyTypeType](./literals.md#policytypetype))
 
 Optional fields:
 

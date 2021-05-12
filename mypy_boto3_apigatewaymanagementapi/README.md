@@ -3,7 +3,7 @@
 > [Index](..) > ApiGatewayManagementApi
 
 Auto-generated documentation for
-[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
+[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
 type annotations stubs module
 [mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
@@ -28,23 +28,23 @@ Can be used directly:
 from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiClient
 ```
 
-ApiGatewayManagementApiClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_connection](./client.md#delete-connection)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_connection](./client.md#get-connection)
-- [post_to_connection](./client.md#post-to-connection)
+- [can_paginate](./client.md#can_paginate)
+- [delete_connection](./client.md#delete_connection)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_connection](./client.md#get_connection)
+- [post_to_connection](./client.md#post_to_connection)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [GoneException](./client.md#goneexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [PayloadTooLargeException](./client.md#payloadtoolargeexception)
+ApiGatewayManagementApiClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ForbiddenException
+- GoneException
+- LimitExceededException
+- PayloadTooLargeException
 
 ## Typed dictionaries
 

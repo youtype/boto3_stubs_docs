@@ -3,7 +3,7 @@
 > [Index](..) > DLM
 
 Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+[DLM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM)
 type annotations stubs module
 [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
@@ -28,28 +28,28 @@ Can be used directly:
 from mypy_boto3_dlm.client import DLMClient
 ```
 
-DLMClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_lifecycle_policy](./client.md#create-lifecycle-policy)
-- [delete_lifecycle_policy](./client.md#delete-lifecycle-policy)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_lifecycle_policies](./client.md#get-lifecycle-policies)
-- [get_lifecycle_policy](./client.md#get-lifecycle-policy)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_lifecycle_policy](./client.md#update-lifecycle-policy)
+- [can_paginate](./client.md#can_paginate)
+- [create_lifecycle_policy](./client.md#create_lifecycle_policy)
+- [delete_lifecycle_policy](./client.md#delete_lifecycle_policy)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_lifecycle_policies](./client.md#get_lifecycle_policies)
+- [get_lifecycle_policy](./client.md#get_lifecycle_policy)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_lifecycle_policy](./client.md#update_lifecycle_policy)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+DLMClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServerException
+- InvalidRequestException
+- LimitExceededException
+- ResourceNotFoundException
 
 ## Literals
 
@@ -58,19 +58,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dlm.literals import EventSourceValues, ...
+from mypy_boto3_dlm.literals import EventSourceValuesType, ...
 ```
 
-- [EventSourceValues](./literals.md#eventsourcevalues)
-- [EventTypeValues](./literals.md#eventtypevalues)
-- [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
-- [IntervalUnitValues](./literals.md#intervalunitvalues)
-- [LocationValues](./literals.md#locationvalues)
-- [PolicyTypeValues](./literals.md#policytypevalues)
-- [ResourceLocationValues](./literals.md#resourcelocationvalues)
-- [ResourceTypeValues](./literals.md#resourcetypevalues)
-- [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
-- [SettablePolicyStateValues](./literals.md#settablepolicystatevalues)
+- [EventSourceValuesType](./literals.md#eventsourcevaluestype)
+- [EventTypeValuesType](./literals.md#eventtypevaluestype)
+- [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
+- [IntervalUnitValuesType](./literals.md#intervalunitvaluestype)
+- [LocationValuesType](./literals.md#locationvaluestype)
+- [PolicyTypeValuesType](./literals.md#policytypevaluestype)
+- [ResourceLocationValuesType](./literals.md#resourcelocationvaluestype)
+- [ResourceTypeValuesType](./literals.md#resourcetypevaluestype)
+- [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
+- [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
 
 ## Typed dictionaries
 

@@ -3,38 +3,38 @@
 > [Index](..) > [Batch](.) > Literals
 
 Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/batch.html#Batch)
 type annotations stubs module
 [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [Literals for boto3 Batch module](#literals-for-boto3-batch-module)
-  - [ArrayJobDependency](#arrayjobdependency)
-  - [AssignPublicIp](#assignpublicip)
-  - [CEState](#cestate)
-  - [CEStatus](#cestatus)
-  - [CEType](#cetype)
-  - [CRAllocationStrategy](#crallocationstrategy)
-  - [CRType](#crtype)
+  - [ArrayJobDependencyType](#arrayjobdependencytype)
+  - [AssignPublicIpType](#assignpubliciptype)
+  - [CEStateType](#cestatetype)
+  - [CEStatusType](#cestatustype)
+  - [CETypeType](#cetypetype)
+  - [CRAllocationStrategyType](#crallocationstrategytype)
+  - [CRTypeType](#crtypetype)
   - [DescribeComputeEnvironmentsPaginatorName](#describecomputeenvironmentspaginatorname)
   - [DescribeJobDefinitionsPaginatorName](#describejobdefinitionspaginatorname)
   - [DescribeJobQueuesPaginatorName](#describejobqueuespaginatorname)
-  - [DeviceCgroupPermission](#devicecgrouppermission)
-  - [EFSAuthorizationConfigIAM](#efsauthorizationconfigiam)
-  - [EFSTransitEncryption](#efstransitencryption)
-  - [JQState](#jqstate)
-  - [JQStatus](#jqstatus)
-  - [JobDefinitionType](#jobdefinitiontype)
-  - [JobStatus](#jobstatus)
+  - [DeviceCgroupPermissionType](#devicecgrouppermissiontype)
+  - [EFSAuthorizationConfigIAMType](#efsauthorizationconfigiamtype)
+  - [EFSTransitEncryptionType](#efstransitencryptiontype)
+  - [JQStateType](#jqstatetype)
+  - [JQStatusType](#jqstatustype)
+  - [JobDefinitionTypeType](#jobdefinitiontypetype)
+  - [JobStatusType](#jobstatustype)
   - [ListJobsPaginatorName](#listjobspaginatorname)
-  - [LogDriver](#logdriver)
-  - [PlatformCapability](#platformcapability)
-  - [ResourceType](#resourcetype)
-  - [RetryAction](#retryaction)
+  - [LogDriverType](#logdrivertype)
+  - [PlatformCapabilityType](#platformcapabilitytype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [RetryActionType](#retryactiontype)
 
-## ArrayJobDependency
+## ArrayJobDependencyType
 
 ```python
-from mypy_boto3_batch.literals import ArrayJobDependency
+from mypy_boto3_batch.literals import ArrayJobDependencyType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `N_TO_N`
 - `SEQUENTIAL`
 
-## AssignPublicIp
+## AssignPublicIpType
 
 ```python
-from mypy_boto3_batch.literals import AssignPublicIp
+from mypy_boto3_batch.literals import AssignPublicIpType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## CEState
+## CEStateType
 
 ```python
-from mypy_boto3_batch.literals import CEState
+from mypy_boto3_batch.literals import CEStateType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## CEStatus
+## CEStatusType
 
 ```python
-from mypy_boto3_batch.literals import CEStatus
+from mypy_boto3_batch.literals import CEStatusType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `UPDATING`
 - `VALID`
 
-## CEType
+## CETypeType
 
 ```python
-from mypy_boto3_batch.literals import CEType
+from mypy_boto3_batch.literals import CETypeType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `MANAGED`
 - `UNMANAGED`
 
-## CRAllocationStrategy
+## CRAllocationStrategyType
 
 ```python
-from mypy_boto3_batch.literals import CRAllocationStrategy
+from mypy_boto3_batch.literals import CRAllocationStrategyType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `BEST_FIT_PROGRESSIVE`
 - `SPOT_CAPACITY_OPTIMIZED`
 
-## CRType
+## CRTypeType
 
 ```python
-from mypy_boto3_batch.literals import CRType
+from mypy_boto3_batch.literals import CRTypeType
 ```
 
 Values:
@@ -145,10 +145,10 @@ Values:
 
 - `describe_job_queues`
 
-## DeviceCgroupPermission
+## DeviceCgroupPermissionType
 
 ```python
-from mypy_boto3_batch.literals import DeviceCgroupPermission
+from mypy_boto3_batch.literals import DeviceCgroupPermissionType
 ```
 
 Values:
@@ -157,10 +157,10 @@ Values:
 - `READ`
 - `WRITE`
 
-## EFSAuthorizationConfigIAM
+## EFSAuthorizationConfigIAMType
 
 ```python
-from mypy_boto3_batch.literals import EFSAuthorizationConfigIAM
+from mypy_boto3_batch.literals import EFSAuthorizationConfigIAMType
 ```
 
 Values:
@@ -168,10 +168,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## EFSTransitEncryption
+## EFSTransitEncryptionType
 
 ```python
-from mypy_boto3_batch.literals import EFSTransitEncryption
+from mypy_boto3_batch.literals import EFSTransitEncryptionType
 ```
 
 Values:
@@ -179,10 +179,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## JQState
+## JQStateType
 
 ```python
-from mypy_boto3_batch.literals import JQState
+from mypy_boto3_batch.literals import JQStateType
 ```
 
 Values:
@@ -190,10 +190,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## JQStatus
+## JQStatusType
 
 ```python
-from mypy_boto3_batch.literals import JQStatus
+from mypy_boto3_batch.literals import JQStatusType
 ```
 
 Values:
@@ -205,10 +205,10 @@ Values:
 - `UPDATING`
 - `VALID`
 
-## JobDefinitionType
+## JobDefinitionTypeType
 
 ```python
-from mypy_boto3_batch.literals import JobDefinitionType
+from mypy_boto3_batch.literals import JobDefinitionTypeType
 ```
 
 Values:
@@ -216,10 +216,10 @@ Values:
 - `container`
 - `multinode`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_batch.literals import JobStatus
+from mypy_boto3_batch.literals import JobStatusType
 ```
 
 Values:
@@ -242,10 +242,10 @@ Values:
 
 - `list_jobs`
 
-## LogDriver
+## LogDriverType
 
 ```python
-from mypy_boto3_batch.literals import LogDriver
+from mypy_boto3_batch.literals import LogDriverType
 ```
 
 Values:
@@ -258,10 +258,10 @@ Values:
 - `splunk`
 - `syslog`
 
-## PlatformCapability
+## PlatformCapabilityType
 
 ```python
-from mypy_boto3_batch.literals import PlatformCapability
+from mypy_boto3_batch.literals import PlatformCapabilityType
 ```
 
 Values:
@@ -269,10 +269,10 @@ Values:
 - `EC2`
 - `FARGATE`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_batch.literals import ResourceType
+from mypy_boto3_batch.literals import ResourceTypeType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 - `MEMORY`
 - `VCPU`
 
-## RetryAction
+## RetryActionType
 
 ```python
-from mypy_boto3_batch.literals import RetryAction
+from mypy_boto3_batch.literals import RetryActionType
 ```
 
 Values:

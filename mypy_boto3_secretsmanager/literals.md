@@ -3,20 +3,20 @@
 > [Index](..) > [SecretsManager](.) > Literals
 
 Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
 [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [Literals for boto3 SecretsManager module](#literals-for-boto3-secretsmanager-module)
-  - [FilterNameStringType](#filternamestringtype)
+  - [FilterNameStringTypeType](#filternamestringtypetype)
   - [ListSecretsPaginatorName](#listsecretspaginatorname)
-  - [SortOrderType](#sortordertype)
-  - [StatusType](#statustype)
+  - [SortOrderTypeType](#sortordertypetype)
+  - [StatusTypeType](#statustypetype)
 
-## FilterNameStringType
+## FilterNameStringTypeType
 
 ```python
-from mypy_boto3_secretsmanager.literals import FilterNameStringType
+from mypy_boto3_secretsmanager.literals import FilterNameStringTypeType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 
 - `list_secrets`
 
-## SortOrderType
+## SortOrderTypeType
 
 ```python
-from mypy_boto3_secretsmanager.literals import SortOrderType
+from mypy_boto3_secretsmanager.literals import SortOrderTypeType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `asc`
 - `desc`
 
-## StatusType
+## StatusTypeType
 
 ```python
-from mypy_boto3_secretsmanager.literals import StatusType
+from mypy_boto3_secretsmanager.literals import StatusTypeType
 ```
 
 Values:

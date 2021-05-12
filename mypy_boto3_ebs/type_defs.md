@@ -3,7 +3,7 @@
 > [Index](..) > [EBS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ebs.html#EBS)
 type annotations stubs module
 [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
@@ -49,7 +49,7 @@ from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
 
 Optional fields:
 
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## GetSnapshotBlockResponseTypeDef
 
@@ -63,7 +63,7 @@ Optional fields:
 - `BlockData`: `StreamingBody`
 - `Checksum`: `str`
 - `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithm](./literals.md#checksumalgorithm))
+  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
 
 ## ListChangedBlocksResponseTypeDef
 
@@ -104,7 +104,7 @@ Optional fields:
 
 - `Checksum`: `str`
 - `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithm](./literals.md#checksumalgorithm))
+  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
 
 ## StartSnapshotResponseTypeDef
 
@@ -117,7 +117,7 @@ Optional fields:
 - `Description`: `str`
 - `SnapshotId`: `str`
 - `OwnerId`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `StartTime`: `datetime`
 - `VolumeSize`: `int`
 - `BlockSize`: `int`

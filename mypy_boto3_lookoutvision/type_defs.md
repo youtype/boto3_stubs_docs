@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutforVision](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
 [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
@@ -87,7 +87,7 @@ Optional fields:
 - `DatasetType`: `str`
 - `CreationTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
-- `Status`: [DatasetStatus](./literals.md#datasetstatus)
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `StatusMessage`: `str`
 - `ImageStats`:
   [DatasetImageStatsTypeDef](./type_defs.md#datasetimagestatstypedef)
@@ -125,7 +125,7 @@ Optional fields:
 
 - `DatasetType`: `str`
 - `CreationTimestamp`: `datetime`
-- `Status`: [DatasetStatus](./literals.md#datasetstatus)
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `StatusMessage`: `str`
 
 ## DatasetSourceTypeDef
@@ -259,7 +259,8 @@ from mypy_boto3_lookoutvision.type_defs import ListModelsResponseTypeDef
 
 Optional fields:
 
-- `Models`: `List`\[[ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef)\]
+- `Models`:
+  `List`\[[ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef)\]
 - `NextToken`: `str`
 
 ## ListProjectsResponseTypeDef
@@ -296,7 +297,7 @@ Optional fields:
 - `ModelArn`: `str`
 - `CreationTimestamp`: `datetime`
 - `Description`: `str`
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `StatusMessage`: `str`
 - `Performance`:
   [ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef)
@@ -320,7 +321,7 @@ Optional fields:
 - `ModelVersion`: `str`
 - `ModelArn`: `str`
 - `Description`: `str`
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `StatusMessage`: `str`
 - `Performance`:
   [ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef)
@@ -418,7 +419,7 @@ from mypy_boto3_lookoutvision.type_defs import StartModelResponseTypeDef
 
 Optional fields:
 
-- `Status`: [ModelHostingStatus](./literals.md#modelhostingstatus)
+- `Status`: [ModelHostingStatusType](./literals.md#modelhostingstatustype)
 
 ## StopModelResponseTypeDef
 
@@ -428,7 +429,7 @@ from mypy_boto3_lookoutvision.type_defs import StopModelResponseTypeDef
 
 Optional fields:
 
-- `Status`: [ModelHostingStatus](./literals.md#modelhostingstatus)
+- `Status`: [ModelHostingStatusType](./literals.md#modelhostingstatustype)
 
 ## TagTypeDef
 
@@ -449,4 +450,4 @@ from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesResponseTypeD
 
 Optional fields:
 
-- `Status`: [DatasetStatus](./literals.md#datasetstatus)
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)

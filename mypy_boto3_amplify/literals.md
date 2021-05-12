@@ -3,25 +3,25 @@
 > [Index](..) > [Amplify](.) > Literals
 
 Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify)
 type annotations stubs module
 [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [Literals for boto3 Amplify module](#literals-for-boto3-amplify-module)
-  - [DomainStatus](#domainstatus)
-  - [JobStatus](#jobstatus)
-  - [JobType](#jobtype)
+  - [DomainStatusType](#domainstatustype)
+  - [JobStatusType](#jobstatustype)
+  - [JobTypeType](#jobtypetype)
   - [ListAppsPaginatorName](#listappspaginatorname)
   - [ListBranchesPaginatorName](#listbranchespaginatorname)
   - [ListDomainAssociationsPaginatorName](#listdomainassociationspaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
-  - [Platform](#platform)
-  - [Stage](#stage)
+  - [PlatformType](#platformtype)
+  - [StageType](#stagetype)
 
-## DomainStatus
+## DomainStatusType
 
 ```python
-from mypy_boto3_amplify.literals import DomainStatus
+from mypy_boto3_amplify.literals import DomainStatusType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `REQUESTING_CERTIFICATE`
 - `UPDATING`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_amplify.literals import JobStatus
+from mypy_boto3_amplify.literals import JobStatusType
 ```
 
 Values:
@@ -51,10 +51,10 @@ Values:
 - `RUNNING`
 - `SUCCEED`
 
-## JobType
+## JobTypeType
 
 ```python
-from mypy_boto3_amplify.literals import JobType
+from mypy_boto3_amplify.literals import JobTypeType
 ```
 
 Values:
@@ -104,20 +104,20 @@ Values:
 
 - `list_jobs`
 
-## Platform
+## PlatformType
 
 ```python
-from mypy_boto3_amplify.literals import Platform
+from mypy_boto3_amplify.literals import PlatformType
 ```
 
 Values:
 
 - `WEB`
 
-## Stage
+## StageType
 
 ```python
-from mypy_boto3_amplify.literals import Stage
+from mypy_boto3_amplify.literals import StageType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [CodeGuruProfiler](.) > CodeGuruProfilerClient
 
 Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
 [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
@@ -52,7 +52,7 @@ def get_codeguruprofiler_client() -> CodeGuruProfilerClient:
 ```
 
 Boto3 documentation:
-[CodeGuruProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
+[CodeGuruProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
 
 ## Exceptions
 
@@ -84,7 +84,7 @@ Type annotations for
 `boto3.client("codeguruprofiler").add_notification_channels` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.add_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
+[CodeGuruProfiler.Client.add_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Type annotations for
 `boto3.client("codeguruprofiler").batch_get_frame_metric_data` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.batch_get_frame_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
+[CodeGuruProfiler.Client.batch_get_frame_metric_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
 
 Arguments:
 
@@ -111,7 +111,8 @@ Arguments:
   `List`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
 - `period`: `str`
 - `startTime`: `datetime`
-- `targetResolution`: [AggregationPeriod](./literals.md#aggregationperiod)
+- `targetResolution`:
+  [AggregationPeriodType](./literals.md#aggregationperiodtype)
 
 Returns
 [BatchGetFrameMetricDataResponseTypeDef](./type_defs.md#batchgetframemetricdataresponsetypedef).
@@ -121,7 +122,7 @@ Returns
 Type annotations for `boto3.client("codeguruprofiler").can_paginate` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate)
+[CodeGuruProfiler.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate)
 
 Arguments:
 
@@ -134,13 +135,14 @@ Returns `bool`.
 Type annotations for `boto3.client("codeguruprofiler").configure_agent` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.configure_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
+[CodeGuruProfiler.Client.configure_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
 
 Arguments:
 
 - `profilingGroupName`: `str` *(required)*
 - `fleetInstanceId`: `str`
-- `metadata`: `Dict`\[[MetadataField](./literals.md#metadatafield), `str`\]
+- `metadata`: `Dict`\[[MetadataFieldType](./literals.md#metadatafieldtype),
+  `str`\]
 
 Returns
 [ConfigureAgentResponseTypeDef](./type_defs.md#configureagentresponsetypedef).
@@ -151,7 +153,7 @@ Type annotations for `boto3.client("codeguruprofiler").create_profiling_group`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.create_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
+[CodeGuruProfiler.Client.create_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
 
 Arguments:
 
@@ -159,7 +161,7 @@ Arguments:
 - `profilingGroupName`: `str` *(required)*
 - `agentOrchestrationConfig`:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
@@ -171,7 +173,7 @@ Type annotations for `boto3.client("codeguruprofiler").delete_profiling_group`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.delete_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
+[CodeGuruProfiler.Client.delete_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
 
 Arguments:
 
@@ -185,7 +187,7 @@ Type annotations for
 `boto3.client("codeguruprofiler").describe_profiling_group` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.describe_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
+[CodeGuruProfiler.Client.describe_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
 
 Arguments:
 
@@ -200,7 +202,7 @@ Type annotations for `boto3.client("codeguruprofiler").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url)
+[CodeGuruProfiler.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url)
 
 Arguments:
 
@@ -217,7 +219,7 @@ Type annotations for
 `boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.get_findings_report_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
+[CodeGuruProfiler.Client.get_findings_report_account_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
 
 Arguments:
 
@@ -234,7 +236,7 @@ Type annotations for
 `boto3.client("codeguruprofiler").get_notification_configuration` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.get_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
+[CodeGuruProfiler.Client.get_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
 
 Arguments:
 
@@ -248,7 +250,7 @@ Returns
 Type annotations for `boto3.client("codeguruprofiler").get_policy` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
+[CodeGuruProfiler.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
 
 Arguments:
 
@@ -261,7 +263,7 @@ Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 Type annotations for `boto3.client("codeguruprofiler").get_profile` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
+[CodeGuruProfiler.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
 
 Arguments:
 
@@ -280,7 +282,7 @@ Type annotations for `boto3.client("codeguruprofiler").get_recommendations`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
+[CodeGuruProfiler.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
 
 Arguments:
 
@@ -298,7 +300,7 @@ Type annotations for `boto3.client("codeguruprofiler").list_findings_reports`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.list_findings_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
+[CodeGuruProfiler.Client.list_findings_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
 
 Arguments:
 
@@ -318,17 +320,18 @@ Type annotations for `boto3.client("codeguruprofiler").list_profile_times`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.list_profile_times](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
+[CodeGuruProfiler.Client.list_profile_times](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
 
 Arguments:
 
 - `endTime`: `datetime` *(required)*
-- `period`: [AggregationPeriod](./literals.md#aggregationperiod) *(required)*
+- `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
+  *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `startTime`: `datetime` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `orderBy`: [OrderBy](./literals.md#orderby)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 Returns
 [ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef).
@@ -339,7 +342,7 @@ Type annotations for `boto3.client("codeguruprofiler").list_profiling_groups`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.list_profiling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
+[CodeGuruProfiler.Client.list_profiling_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
 
 Arguments:
 
@@ -356,7 +359,7 @@ Type annotations for `boto3.client("codeguruprofiler").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
+[CodeGuruProfiler.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -371,7 +374,7 @@ Type annotations for `boto3.client("codeguruprofiler").post_agent_profile`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.post_agent_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
+[CodeGuruProfiler.Client.post_agent_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
 
 Arguments:
 
@@ -387,12 +390,12 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codeguruprofiler").put_permission` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
+[CodeGuruProfiler.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
 
 Arguments:
 
 - `actionGroup`: `Literal['agentPermissions']` (see
-  [ActionGroup](./literals.md#actiongroup)) *(required)*
+  [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
 - `principals`: `List`\[`str`\] *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `revisionId`: `str`
@@ -406,7 +409,7 @@ Type annotations for
 `boto3.client("codeguruprofiler").remove_notification_channel` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
+[CodeGuruProfiler.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
 
 Arguments:
 
@@ -422,12 +425,12 @@ Type annotations for `boto3.client("codeguruprofiler").remove_permission`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
+[CodeGuruProfiler.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
 
 Arguments:
 
 - `actionGroup`: `Literal['agentPermissions']` (see
-  [ActionGroup](./literals.md#actiongroup)) *(required)*
+  [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `revisionId`: `str` *(required)*
 
@@ -439,13 +442,13 @@ Returns
 Type annotations for `boto3.client("codeguruprofiler").submit_feedback` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
+[CodeGuruProfiler.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
 
 Arguments:
 
 - `anomalyInstanceId`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*
-- `type`: [FeedbackType](./literals.md#feedbacktype) *(required)*
+- `type`: [FeedbackTypeType](./literals.md#feedbacktypetype) *(required)*
 - `comment`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -455,7 +458,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codeguruprofiler").tag_resource` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
+[CodeGuruProfiler.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
 
 Arguments:
 
@@ -469,7 +472,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codeguruprofiler").untag_resource` method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
+[CodeGuruProfiler.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
 
 Arguments:
 
@@ -484,7 +487,7 @@ Type annotations for `boto3.client("codeguruprofiler").update_profiling_group`
 method.
 
 Boto3 documentation:
-[CodeGuruProfiler.Client.update_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
+[CodeGuruProfiler.Client.update_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
 
 Arguments:
 

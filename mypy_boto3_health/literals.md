@@ -3,7 +3,7 @@
 > [Index](..) > [Health](.) > Literals
 
 Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/health.html#Health)
 type annotations stubs module
 [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
@@ -15,11 +15,11 @@ type annotations stubs module
   - [DescribeEventTypesPaginatorName](#describeeventtypespaginatorname)
   - [DescribeEventsForOrganizationPaginatorName](#describeeventsfororganizationpaginatorname)
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
-  - [entityStatusCode](#entitystatuscode)
-  - [eventAggregateField](#eventaggregatefield)
-  - [eventScopeCode](#eventscopecode)
-  - [eventStatusCode](#eventstatuscode)
-  - [eventTypeCategory](#eventtypecategory)
+  - [entityStatusCodeType](#entitystatuscodetype)
+  - [eventAggregateFieldType](#eventaggregatefieldtype)
+  - [eventScopeCodeType](#eventscopecodetype)
+  - [eventStatusCodeType](#eventstatuscodetype)
+  - [eventTypeCategoryType](#eventtypecategorytype)
 
 ## DescribeAffectedAccountsForOrganizationPaginatorName
 
@@ -91,10 +91,10 @@ Values:
 
 - `describe_events`
 
-## entityStatusCode
+## entityStatusCodeType
 
 ```python
-from mypy_boto3_health.literals import entityStatusCode
+from mypy_boto3_health.literals import entityStatusCodeType
 ```
 
 Values:
@@ -103,20 +103,20 @@ Values:
 - `UNIMPAIRED`
 - `UNKNOWN`
 
-## eventAggregateField
+## eventAggregateFieldType
 
 ```python
-from mypy_boto3_health.literals import eventAggregateField
+from mypy_boto3_health.literals import eventAggregateFieldType
 ```
 
 Values:
 
 - `eventTypeCategory`
 
-## eventScopeCode
+## eventScopeCodeType
 
 ```python
-from mypy_boto3_health.literals import eventScopeCode
+from mypy_boto3_health.literals import eventScopeCodeType
 ```
 
 Values:
@@ -125,10 +125,10 @@ Values:
 - `NONE`
 - `PUBLIC`
 
-## eventStatusCode
+## eventStatusCodeType
 
 ```python
-from mypy_boto3_health.literals import eventStatusCode
+from mypy_boto3_health.literals import eventStatusCodeType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 - `open`
 - `upcoming`
 
-## eventTypeCategory
+## eventTypeCategoryType
 
 ```python
-from mypy_boto3_health.literals import eventTypeCategory
+from mypy_boto3_health.literals import eventTypeCategoryType
 ```
 
 Values:

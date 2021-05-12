@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDB](.) > DynamoDBClient
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -80,7 +80,7 @@ def get_dynamodb_client() -> DynamoDBClient:
 ```
 
 Boto3 documentation:
-[DynamoDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
+[DynamoDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client)
 
 ## Exceptions
 
@@ -134,7 +134,7 @@ Exceptions:
 Type annotations for `boto3.client("dynamodb").batch_execute_statement` method.
 
 Boto3 documentation:
-[DynamoDB.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement)
+[DynamoDB.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").batch_get_item` method.
 
 Boto3 documentation:
-[DynamoDB.Client.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item)
+[DynamoDB.Client.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Arguments:
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
@@ -167,7 +167,7 @@ Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 Type annotations for `boto3.client("dynamodb").batch_write_item` method.
 
 Boto3 documentation:
-[DynamoDB.Client.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item)
+[DynamoDB.Client.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item)
 
 Arguments:
 
@@ -175,9 +175,9 @@ Arguments:
   `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
 Returns
 [BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
@@ -187,7 +187,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").can_paginate` method.
 
 Boto3 documentation:
-[DynamoDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.can_paginate)
+[DynamoDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.can_paginate)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Returns `bool`.
 Type annotations for `boto3.client("dynamodb").create_backup` method.
 
 Boto3 documentation:
-[DynamoDB.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup)
+[DynamoDB.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.create_backup)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns [CreateBackupOutputTypeDef](./type_defs.md#createbackupoutputtypedef).
 Type annotations for `boto3.client("dynamodb").create_global_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.create_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table)
+[DynamoDB.Client.create_global_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.create_global_table)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").create_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table)
+[DynamoDB.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.create_table)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Arguments:
   `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `GlobalSecondaryIndexes`:
   `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `BillingMode`: [BillingMode](./literals.md#billingmode)
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `StreamSpecification`:
@@ -261,7 +261,7 @@ Returns [CreateTableOutputTypeDef](./type_defs.md#createtableoutputtypedef).
 Type annotations for `boto3.client("dynamodb").delete_backup` method.
 
 Boto3 documentation:
-[DynamoDB.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup)
+[DynamoDB.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.delete_backup)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns [DeleteBackupOutputTypeDef](./type_defs.md#deletebackupoutputtypedef).
 Type annotations for `boto3.client("dynamodb").delete_item` method.
 
 Boto3 documentation:
-[DynamoDB.Client.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item)
+[DynamoDB.Client.delete_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.delete_item)
 
 Arguments:
 
@@ -285,12 +285,13 @@ Arguments:
   *(required)*
 - `Expected`: `Dict`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
-- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 - `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
@@ -305,7 +306,7 @@ Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 Type annotations for `boto3.client("dynamodb").delete_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table)
+[DynamoDB.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.delete_table)
 
 Arguments:
 
@@ -318,7 +319,7 @@ Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 Type annotations for `boto3.client("dynamodb").describe_backup` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup)
+[DynamoDB.Client.describe_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_backup)
 
 Arguments:
 
@@ -333,7 +334,7 @@ Type annotations for `boto3.client("dynamodb").describe_continuous_backups`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups)
+[DynamoDB.Client.describe_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups)
 
 Arguments:
 
@@ -348,7 +349,7 @@ Type annotations for `boto3.client("dynamodb").describe_contributor_insights`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights)
+[DynamoDB.Client.describe_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights)
 
 Arguments:
 
@@ -363,7 +364,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").describe_endpoints` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints)
+[DynamoDB.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints)
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
@@ -373,7 +374,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").describe_export` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export)
+[DynamoDB.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_export)
 
 Arguments:
 
@@ -387,7 +388,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").describe_global_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table)
+[DynamoDB.Client.describe_global_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table)
 
 Arguments:
 
@@ -402,7 +403,7 @@ Type annotations for `boto3.client("dynamodb").describe_global_table_settings`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings)
+[DynamoDB.Client.describe_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings)
 
 Arguments:
 
@@ -417,7 +418,7 @@ Type annotations for
 `boto3.client("dynamodb").describe_kinesis_streaming_destination` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination)
+[DynamoDB.Client.describe_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination)
 
 Arguments:
 
@@ -431,7 +432,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").describe_limits` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_limits)
+[DynamoDB.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_limits)
 
 Returns
 [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
@@ -441,7 +442,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").describe_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table)
+[DynamoDB.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_table)
 
 Arguments:
 
@@ -456,7 +457,7 @@ Type annotations for
 `boto3.client("dynamodb").describe_table_replica_auto_scaling` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling)
+[DynamoDB.Client.describe_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling)
 
 Arguments:
 
@@ -470,7 +471,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").describe_time_to_live` method.
 
 Boto3 documentation:
-[DynamoDB.Client.describe_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live)
+[DynamoDB.Client.describe_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live)
 
 Arguments:
 
@@ -485,7 +486,7 @@ Type annotations for
 `boto3.client("dynamodb").disable_kinesis_streaming_destination` method.
 
 Boto3 documentation:
-[DynamoDB.Client.disable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination)
+[DynamoDB.Client.disable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination)
 
 Arguments:
 
@@ -501,7 +502,7 @@ Type annotations for
 `boto3.client("dynamodb").enable_kinesis_streaming_destination` method.
 
 Boto3 documentation:
-[DynamoDB.Client.enable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination)
+[DynamoDB.Client.enable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination)
 
 Arguments:
 
@@ -516,7 +517,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").execute_statement` method.
 
 Boto3 documentation:
-[DynamoDB.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement)
+[DynamoDB.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.execute_statement)
 
 Arguments:
 
@@ -535,7 +536,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").execute_transaction` method.
 
 Boto3 documentation:
-[DynamoDB.Client.execute_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction)
+[DynamoDB.Client.execute_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction)
 
 Arguments:
 
@@ -553,7 +554,7 @@ Type annotations for `boto3.client("dynamodb").export_table_to_point_in_time`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.export_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time)
+[DynamoDB.Client.export_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time)
 
 Arguments:
 
@@ -563,9 +564,9 @@ Arguments:
 - `ClientToken`: `str`
 - `S3BucketOwner`: `str`
 - `S3Prefix`: `str`
-- `S3SseAlgorithm`: [S3SseAlgorithm](./literals.md#s3ssealgorithm)
+- `S3SseAlgorithm`: [S3SseAlgorithmType](./literals.md#s3ssealgorithmtype)
 - `S3SseKmsKeyId`: `str`
-- `ExportFormat`: [ExportFormat](./literals.md#exportformat)
+- `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
 
 Returns
 [ExportTableToPointInTimeOutputTypeDef](./type_defs.md#exporttabletopointintimeoutputtypedef).
@@ -575,7 +576,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").generate_presigned_url` method.
 
 Boto3 documentation:
-[DynamoDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.generate_presigned_url)
+[DynamoDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.generate_presigned_url)
 
 Arguments:
 
@@ -591,7 +592,7 @@ Returns `str`.
 Type annotations for `boto3.client("dynamodb").get_item` method.
 
 Boto3 documentation:
-[DynamoDB.Client.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item)
+[DynamoDB.Client.get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.get_item)
 
 Arguments:
 
@@ -603,7 +604,7 @@ Arguments:
 - `AttributesToGet`: `List`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
@@ -614,7 +615,7 @@ Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 Type annotations for `boto3.client("dynamodb").list_backups` method.
 
 Boto3 documentation:
-[DynamoDB.Client.list_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups)
+[DynamoDB.Client.list_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.list_backups)
 
 Arguments:
 
@@ -623,7 +624,7 @@ Arguments:
 - `TimeRangeLowerBound`: `datetime`
 - `TimeRangeUpperBound`: `datetime`
 - `ExclusiveStartBackupArn`: `str`
-- `BackupType`: [BackupTypeFilter](./literals.md#backuptypefilter)
+- `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
 
 Returns [ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef).
 
@@ -633,7 +634,7 @@ Type annotations for `boto3.client("dynamodb").list_contributor_insights`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.list_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights)
+[DynamoDB.Client.list_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights)
 
 Arguments:
 
@@ -649,7 +650,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").list_exports` method.
 
 Boto3 documentation:
-[DynamoDB.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports)
+[DynamoDB.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.list_exports)
 
 Arguments:
 
@@ -664,7 +665,7 @@ Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 Type annotations for `boto3.client("dynamodb").list_global_tables` method.
 
 Boto3 documentation:
-[DynamoDB.Client.list_global_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables)
+[DynamoDB.Client.list_global_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables)
 
 Arguments:
 
@@ -680,7 +681,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").list_tables` method.
 
 Boto3 documentation:
-[DynamoDB.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables)
+[DynamoDB.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.list_tables)
 
 Arguments:
 
@@ -694,7 +695,7 @@ Returns [ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef).
 Type annotations for `boto3.client("dynamodb").list_tags_of_resource` method.
 
 Boto3 documentation:
-[DynamoDB.Client.list_tags_of_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource)
+[DynamoDB.Client.list_tags_of_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource)
 
 Arguments:
 
@@ -709,23 +710,24 @@ Returns
 Type annotations for `boto3.client("dynamodb").put_item` method.
 
 Boto3 documentation:
-[DynamoDB.Client.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item)
+[DynamoDB.Client.put_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.put_item)
 
 Arguments:
 
 - `TableName`: `str` *(required)*
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
-  *(required)*
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\] *(required)*
 - `Expected`: `Dict`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 - `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
@@ -740,13 +742,13 @@ Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 Type annotations for `boto3.client("dynamodb").query` method.
 
 Boto3 documentation:
-[DynamoDB.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query)
+[DynamoDB.Client.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.query)
 
 Arguments:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
-- `Select`: [Select](./literals.md#select)
+- `Select`: [SelectType](./literals.md#selecttype)
 - `AttributesToGet`: `List`\[`str`\]
 - `Limit`: `int`
 - `ConsistentRead`: `bool`
@@ -754,14 +756,15 @@ Arguments:
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `QueryFilter`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ScanIndexForward`: `bool`
 - `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `str`
 - `KeyConditionExpression`: `str`
@@ -779,13 +782,13 @@ Type annotations for `boto3.client("dynamodb").restore_table_from_backup`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.restore_table_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup)
+[DynamoDB.Client.restore_table_from_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup)
 
 Arguments:
 
 - `TargetTableName`: `str` *(required)*
 - `BackupArn`: `str` *(required)*
-- `BillingModeOverride`: [BillingMode](./literals.md#billingmode)
+- `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
 - `GlobalSecondaryIndexOverride`:
   `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `LocalSecondaryIndexOverride`:
@@ -804,7 +807,7 @@ Type annotations for `boto3.client("dynamodb").restore_table_to_point_in_time`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.restore_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time)
+[DynamoDB.Client.restore_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time)
 
 Arguments:
 
@@ -813,7 +816,7 @@ Arguments:
 - `SourceTableName`: `str`
 - `UseLatestRestorableTime`: `bool`
 - `RestoreDateTime`: `datetime`
-- `BillingModeOverride`: [BillingMode](./literals.md#billingmode)
+- `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
 - `GlobalSecondaryIndexOverride`:
   `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `LocalSecondaryIndexOverride`:
@@ -831,7 +834,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").scan` method.
 
 Boto3 documentation:
-[DynamoDB.Client.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan)
+[DynamoDB.Client.scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.scan)
 
 Arguments:
 
@@ -839,16 +842,17 @@ Arguments:
 - `IndexName`: `str`
 - `AttributesToGet`: `List`\[`str`\]
 - `Limit`: `int`
-- `Select`: [Select](./literals.md#select)
+- `Select`: [SelectType](./literals.md#selecttype)
 - `ScanFilter`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
@@ -867,7 +871,7 @@ Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 Type annotations for `boto3.client("dynamodb").tag_resource` method.
 
 Boto3 documentation:
-[DynamoDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource)
+[DynamoDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.tag_resource)
 
 Arguments:
 
@@ -879,7 +883,7 @@ Arguments:
 Type annotations for `boto3.client("dynamodb").transact_get_items` method.
 
 Boto3 documentation:
-[DynamoDB.Client.transact_get_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items)
+[DynamoDB.Client.transact_get_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items)
 
 Arguments:
 
@@ -887,7 +891,7 @@ Arguments:
   `List`\[[TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef)\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns
 [TransactGetItemsOutputTypeDef](./type_defs.md#transactgetitemsoutputtypedef).
@@ -897,7 +901,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").transact_write_items` method.
 
 Boto3 documentation:
-[DynamoDB.Client.transact_write_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items)
+[DynamoDB.Client.transact_write_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items)
 
 Arguments:
 
@@ -905,9 +909,9 @@ Arguments:
   `List`\[[TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef)\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ClientRequestToken`: `str`
 
 Returns
@@ -918,7 +922,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").untag_resource` method.
 
 Boto3 documentation:
-[DynamoDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource)
+[DynamoDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.untag_resource)
 
 Arguments:
 
@@ -931,7 +935,7 @@ Type annotations for `boto3.client("dynamodb").update_continuous_backups`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups)
+[DynamoDB.Client.update_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups)
 
 Arguments:
 
@@ -949,13 +953,13 @@ Type annotations for `boto3.client("dynamodb").update_contributor_insights`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights)
+[DynamoDB.Client.update_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights)
 
 Arguments:
 
 - `TableName`: `str` *(required)*
 - `ContributorInsightsAction`:
-  [ContributorInsightsAction](./literals.md#contributorinsightsaction)
+  [ContributorInsightsActionType](./literals.md#contributorinsightsactiontype)
   *(required)*
 - `IndexName`: `str`
 
@@ -967,7 +971,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").update_global_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table)
+[DynamoDB.Client.update_global_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_global_table)
 
 Arguments:
 
@@ -985,12 +989,12 @@ Type annotations for `boto3.client("dynamodb").update_global_table_settings`
 method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings)
+[DynamoDB.Client.update_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings)
 
 Arguments:
 
 - `GlobalTableName`: `str` *(required)*
-- `GlobalTableBillingMode`: [BillingMode](./literals.md#billingmode)
+- `GlobalTableBillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `GlobalTableProvisionedWriteCapacityUnits`: `int`
 - `GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
@@ -1007,7 +1011,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").update_item` method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item)
+[DynamoDB.Client.update_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_item)
 
 Arguments:
 
@@ -1020,12 +1024,13 @@ Arguments:
   [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
 - `Expected`: `Dict`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
-- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `UpdateExpression`: `str`
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
@@ -1041,14 +1046,14 @@ Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 Type annotations for `boto3.client("dynamodb").update_table` method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table)
+[DynamoDB.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_table)
 
 Arguments:
 
 - `TableName`: `str` *(required)*
 - `AttributeDefinitions`:
   `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `BillingMode`: [BillingMode](./literals.md#billingmode)
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `GlobalSecondaryIndexUpdates`:
@@ -1068,7 +1073,7 @@ Type annotations for
 `boto3.client("dynamodb").update_table_replica_auto_scaling` method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling)
+[DynamoDB.Client.update_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling)
 
 Arguments:
 
@@ -1088,7 +1093,7 @@ Returns
 Type annotations for `boto3.client("dynamodb").update_time_to_live` method.
 
 Boto3 documentation:
-[DynamoDB.Client.update_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live)
+[DynamoDB.Client.update_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live)
 
 Arguments:
 

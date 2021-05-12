@@ -3,36 +3,36 @@
 > [Index](..) > [CodeGuruProfiler](.) > Literals
 
 Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
 [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [Literals for boto3 CodeGuruProfiler module](#literals-for-boto3-codeguruprofiler-module)
-  - [ActionGroup](#actiongroup)
-  - [AgentParameterField](#agentparameterfield)
-  - [AggregationPeriod](#aggregationperiod)
-  - [ComputePlatform](#computeplatform)
-  - [EventPublisher](#eventpublisher)
-  - [FeedbackType](#feedbacktype)
+  - [ActionGroupType](#actiongrouptype)
+  - [AgentParameterFieldType](#agentparameterfieldtype)
+  - [AggregationPeriodType](#aggregationperiodtype)
+  - [ComputePlatformType](#computeplatformtype)
+  - [EventPublisherType](#eventpublishertype)
+  - [FeedbackTypeType](#feedbacktypetype)
   - [ListProfileTimesPaginatorName](#listprofiletimespaginatorname)
-  - [MetadataField](#metadatafield)
-  - [MetricType](#metrictype)
-  - [OrderBy](#orderby)
+  - [MetadataFieldType](#metadatafieldtype)
+  - [MetricTypeType](#metrictypetype)
+  - [OrderByType](#orderbytype)
 
-## ActionGroup
+## ActionGroupType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import ActionGroup
+from mypy_boto3_codeguruprofiler.literals import ActionGroupType
 ```
 
 Values:
 
 - `agentPermissions`
 
-## AgentParameterField
+## AgentParameterFieldType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import AgentParameterField
+from mypy_boto3_codeguruprofiler.literals import AgentParameterFieldType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `ReportingIntervalInMilliseconds`
 - `SamplingIntervalInMilliseconds`
 
-## AggregationPeriod
+## AggregationPeriodType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import AggregationPeriod
+from mypy_boto3_codeguruprofiler.literals import AggregationPeriodType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `PT1H`
 - `PT5M`
 
-## ComputePlatform
+## ComputePlatformType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import ComputePlatform
+from mypy_boto3_codeguruprofiler.literals import ComputePlatformType
 ```
 
 Values:
@@ -66,20 +66,20 @@ Values:
 - `AWSLambda`
 - `Default`
 
-## EventPublisher
+## EventPublisherType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import EventPublisher
+from mypy_boto3_codeguruprofiler.literals import EventPublisherType
 ```
 
 Values:
 
 - `AnomalyDetection`
 
-## FeedbackType
+## FeedbackTypeType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import FeedbackType
+from mypy_boto3_codeguruprofiler.literals import FeedbackTypeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 
 - `list_profile_times`
 
-## MetadataField
+## MetadataFieldType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import MetadataField
+from mypy_boto3_codeguruprofiler.literals import MetadataFieldType
 ```
 
 Values:
@@ -115,20 +115,20 @@ Values:
 - `LambdaRemainingTimeInMilliseconds`
 - `LambdaTimeGapBetweenInvokesInMilliseconds`
 
-## MetricType
+## MetricTypeType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import MetricType
+from mypy_boto3_codeguruprofiler.literals import MetricTypeType
 ```
 
 Values:
 
 - `AggregatedRelativeTotalTime`
 
-## OrderBy
+## OrderByType
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import OrderBy
+from mypy_boto3_codeguruprofiler.literals import OrderByType
 ```
 
 Values:

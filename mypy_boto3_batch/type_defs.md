@@ -3,7 +3,7 @@
 > [Index](..) > [Batch](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/batch.html#Batch)
 type annotations stubs module
 [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
@@ -145,9 +145,9 @@ Required fields:
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
-- `type`: [CEType](./literals.md#cetype)
-- `state`: [CEState](./literals.md#cestate)
-- `status`: [CEStatus](./literals.md#cestatus)
+- `type`: [CETypeType](./literals.md#cetypetype)
+- `state`: [CEStateType](./literals.md#cestatetype)
+- `status`: [CEStatusType](./literals.md#cestatustype)
 - `statusReason`: `str`
 - `computeResources`:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
@@ -172,14 +172,14 @@ from mypy_boto3_batch.type_defs import ComputeResourceTypeDef
 
 Required fields:
 
-- `type`: [CRType](./literals.md#crtype)
+- `type`: [CRTypeType](./literals.md#crtypetype)
 - `maxvCpus`: `int`
 - `subnets`: `List`\[`str`\]
 
 Optional fields:
 
 - `allocationStrategy`:
-  [CRAllocationStrategy](./literals.md#crallocationstrategy)
+  [CRAllocationStrategyType](./literals.md#crallocationstrategytype)
 - `minvCpus`: `int`
 - `desiredvCpus`: `int`
 - `instanceTypes`: `List`\[`str`\]
@@ -227,7 +227,8 @@ Optional fields:
 - `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 - `environment`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `mountPoints`: `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
+- `mountPoints`:
+  `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
 - `readonlyRootFilesystem`: `bool`
 - `ulimits`: `List`\[[UlimitTypeDef](./type_defs.md#ulimittypedef)\]
 - `privileged`: `bool`
@@ -286,7 +287,8 @@ Optional fields:
 - `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 - `environment`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `mountPoints`: `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
+- `mountPoints`:
+  `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
 - `readonlyRootFilesystem`: `bool`
 - `privileged`: `bool`
 - `ulimits`: `List`\[[UlimitTypeDef](./type_defs.md#ulimittypedef)\]
@@ -397,7 +399,7 @@ Optional fields:
 
 - `containerPath`: `str`
 - `permissions`:
-  `List`\[[DeviceCgroupPermission](./literals.md#devicecgrouppermission)\]
+  `List`\[[DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)\]
 
 ## EFSAuthorizationConfigTypeDef
 
@@ -408,7 +410,8 @@ from mypy_boto3_batch.type_defs import EFSAuthorizationConfigTypeDef
 Optional fields:
 
 - `accessPointId`: `str`
-- `iam`: [EFSAuthorizationConfigIAM](./literals.md#efsauthorizationconfigiam)
+- `iam`:
+  [EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype)
 
 ## EFSVolumeConfigurationTypeDef
 
@@ -423,7 +426,8 @@ Required fields:
 Optional fields:
 
 - `rootDirectory`: `str`
-- `transitEncryption`: [EFSTransitEncryption](./literals.md#efstransitencryption)
+- `transitEncryption`:
+  [EFSTransitEncryptionType](./literals.md#efstransitencryptiontype)
 - `transitEncryptionPort`: `int`
 - `authorizationConfig`:
   [EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef)
@@ -450,7 +454,7 @@ from mypy_boto3_batch.type_defs import EvaluateOnExitTypeDef
 
 Required fields:
 
-- `action`: [RetryAction](./literals.md#retryaction)
+- `action`: [RetryActionType](./literals.md#retryactiontype)
 
 Optional fields:
 
@@ -499,11 +503,12 @@ Optional fields:
 - `containerProperties`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `nodeProperties`: [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
+- `nodeProperties`:
+  [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `propagateTags`: `bool`
 - `platformCapabilities`:
-  `List`\[[PlatformCapability](./literals.md#platformcapability)\]
+  `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 ## JobDependencyTypeDef
 
@@ -514,7 +519,7 @@ from mypy_boto3_batch.type_defs import JobDependencyTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `type`: [ArrayJobDependency](./literals.md#arrayjobdependency)
+- `type`: [ArrayJobDependencyType](./literals.md#arrayjobdependencytype)
 
 ## JobDetailTypeDef
 
@@ -527,7 +532,7 @@ Required fields:
 - `jobName`: `str`
 - `jobId`: `str`
 - `jobQueue`: `str`
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `startedAt`: `int`
 - `jobDefinition`: `str`
 
@@ -545,14 +550,15 @@ Optional fields:
 - `parameters`: `Dict`\[`str`, `str`\]
 - `container`: [ContainerDetailTypeDef](./type_defs.md#containerdetailtypedef)
 - `nodeDetails`: [NodeDetailsTypeDef](./type_defs.md#nodedetailstypedef)
-- `nodeProperties`: [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
+- `nodeProperties`:
+  [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
 - `arrayProperties`:
   [ArrayPropertiesDetailTypeDef](./type_defs.md#arraypropertiesdetailtypedef)
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `propagateTags`: `bool`
 - `platformCapabilities`:
-  `List`\[[PlatformCapability](./literals.md#platformcapability)\]
+  `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 ## JobQueueDetailTypeDef
 
@@ -564,14 +570,14 @@ Required fields:
 
 - `jobQueueName`: `str`
 - `jobQueueArn`: `str`
-- `state`: [JQState](./literals.md#jqstate)
+- `state`: [JQStateType](./literals.md#jqstatetype)
 - `priority`: `int`
 - `computeEnvironmentOrder`:
   `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Optional fields:
 
-- `status`: [JQStatus](./literals.md#jqstatus)
+- `status`: [JQStatusType](./literals.md#jqstatustype)
 - `statusReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -590,11 +596,12 @@ Optional fields:
 
 - `jobArn`: `str`
 - `createdAt`: `int`
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `statusReason`: `str`
 - `startedAt`: `int`
 - `stoppedAt`: `int`
-- `container`: [ContainerSummaryTypeDef](./type_defs.md#containersummarytypedef)
+- `container`:
+  [ContainerSummaryTypeDef](./type_defs.md#containersummarytypedef)
 - `arrayProperties`:
   [ArrayPropertiesSummaryTypeDef](./type_defs.md#arraypropertiessummarytypedef)
 - `nodeProperties`:
@@ -681,7 +688,7 @@ from mypy_boto3_batch.type_defs import LogConfigurationTypeDef
 
 Required fields:
 
-- `logDriver`: [LogDriver](./literals.md#logdriver)
+- `logDriver`: [LogDriverType](./literals.md#logdrivertype)
 
 Optional fields:
 
@@ -708,7 +715,7 @@ from mypy_boto3_batch.type_defs import NetworkConfigurationTypeDef
 
 Optional fields:
 
-- `assignPublicIp`: [AssignPublicIp](./literals.md#assignpublicip)
+- `assignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
 
 ## NetworkInterfaceTypeDef
 
@@ -833,7 +840,7 @@ from mypy_boto3_batch.type_defs import ResourceRequirementTypeDef
 Required fields:
 
 - `value`: `str`
-- `type`: [ResourceType](./literals.md#resourcetype)
+- `type`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 ## RetryStrategyTypeDef
 

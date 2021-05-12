@@ -3,7 +3,7 @@
 > [Index](..) > CodeArtifact
 
 Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
 [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
@@ -30,58 +30,58 @@ Can be used directly:
 from mypy_boto3_codeartifact.client import CodeArtifactClient
 ```
 
-CodeArtifactClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_external_connection](./client.md#associate-external-connection)
-- [can_paginate](./client.md#can-paginate)
-- [copy_package_versions](./client.md#copy-package-versions)
-- [create_domain](./client.md#create-domain)
-- [create_repository](./client.md#create-repository)
-- [delete_domain](./client.md#delete-domain)
-- [delete_domain_permissions_policy](./client.md#delete-domain-permissions-policy)
-- [delete_package_versions](./client.md#delete-package-versions)
-- [delete_repository](./client.md#delete-repository)
-- [delete_repository_permissions_policy](./client.md#delete-repository-permissions-policy)
-- [describe_domain](./client.md#describe-domain)
-- [describe_package_version](./client.md#describe-package-version)
-- [describe_repository](./client.md#describe-repository)
-- [disassociate_external_connection](./client.md#disassociate-external-connection)
-- [dispose_package_versions](./client.md#dispose-package-versions)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_authorization_token](./client.md#get-authorization-token)
-- [get_domain_permissions_policy](./client.md#get-domain-permissions-policy)
-- [get_package_version_asset](./client.md#get-package-version-asset)
-- [get_package_version_readme](./client.md#get-package-version-readme)
-- [get_paginator](./client.md#get-paginator)
-- [get_repository_endpoint](./client.md#get-repository-endpoint)
-- [get_repository_permissions_policy](./client.md#get-repository-permissions-policy)
-- [list_domains](./client.md#list-domains)
-- [list_package_version_assets](./client.md#list-package-version-assets)
-- [list_package_version_dependencies](./client.md#list-package-version-dependencies)
-- [list_package_versions](./client.md#list-package-versions)
-- [list_packages](./client.md#list-packages)
-- [list_repositories](./client.md#list-repositories)
-- [list_repositories_in_domain](./client.md#list-repositories-in-domain)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_domain_permissions_policy](./client.md#put-domain-permissions-policy)
-- [put_repository_permissions_policy](./client.md#put-repository-permissions-policy)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_package_versions_status](./client.md#update-package-versions-status)
-- [update_repository](./client.md#update-repository)
+- [associate_external_connection](./client.md#associate_external_connection)
+- [can_paginate](./client.md#can_paginate)
+- [copy_package_versions](./client.md#copy_package_versions)
+- [create_domain](./client.md#create_domain)
+- [create_repository](./client.md#create_repository)
+- [delete_domain](./client.md#delete_domain)
+- [delete_domain_permissions_policy](./client.md#delete_domain_permissions_policy)
+- [delete_package_versions](./client.md#delete_package_versions)
+- [delete_repository](./client.md#delete_repository)
+- [delete_repository_permissions_policy](./client.md#delete_repository_permissions_policy)
+- [describe_domain](./client.md#describe_domain)
+- [describe_package_version](./client.md#describe_package_version)
+- [describe_repository](./client.md#describe_repository)
+- [disassociate_external_connection](./client.md#disassociate_external_connection)
+- [dispose_package_versions](./client.md#dispose_package_versions)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_authorization_token](./client.md#get_authorization_token)
+- [get_domain_permissions_policy](./client.md#get_domain_permissions_policy)
+- [get_package_version_asset](./client.md#get_package_version_asset)
+- [get_package_version_readme](./client.md#get_package_version_readme)
+- [get_paginator](./client.md#get_paginator)
+- [get_repository_endpoint](./client.md#get_repository_endpoint)
+- [get_repository_permissions_policy](./client.md#get_repository_permissions_policy)
+- [list_domains](./client.md#list_domains)
+- [list_package_version_assets](./client.md#list_package_version_assets)
+- [list_package_version_dependencies](./client.md#list_package_version_dependencies)
+- [list_package_versions](./client.md#list_package_versions)
+- [list_packages](./client.md#list_packages)
+- [list_repositories](./client.md#list_repositories)
+- [list_repositories_in_domain](./client.md#list_repositories_in_domain)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_domain_permissions_policy](./client.md#put_domain_permissions_policy)
+- [put_repository_permissions_policy](./client.md#put_repository_permissions_policy)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_package_versions_status](./client.md#update_package_versions_status)
+- [update_repository](./client.md#update_repository)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+CodeArtifactClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -108,22 +108,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codeartifact.literals import DomainStatus, ...
+from mypy_boto3_codeartifact.literals import DomainStatusType, ...
 ```
 
-- [DomainStatus](./literals.md#domainstatus)
-- [ExternalConnectionStatus](./literals.md#externalconnectionstatus)
-- [HashAlgorithm](./literals.md#hashalgorithm)
+- [DomainStatusType](./literals.md#domainstatustype)
+- [ExternalConnectionStatusType](./literals.md#externalconnectionstatustype)
+- [HashAlgorithmType](./literals.md#hashalgorithmtype)
 - [ListDomainsPaginatorName](./literals.md#listdomainspaginatorname)
 - [ListPackageVersionAssetsPaginatorName](./literals.md#listpackageversionassetspaginatorname)
 - [ListPackageVersionsPaginatorName](./literals.md#listpackageversionspaginatorname)
 - [ListPackagesPaginatorName](./literals.md#listpackagespaginatorname)
 - [ListRepositoriesInDomainPaginatorName](./literals.md#listrepositoriesindomainpaginatorname)
 - [ListRepositoriesPaginatorName](./literals.md#listrepositoriespaginatorname)
-- [PackageFormat](./literals.md#packageformat)
-- [PackageVersionErrorCode](./literals.md#packageversionerrorcode)
-- [PackageVersionSortType](./literals.md#packageversionsorttype)
-- [PackageVersionStatus](./literals.md#packageversionstatus)
+- [PackageFormatType](./literals.md#packageformattype)
+- [PackageVersionErrorCodeType](./literals.md#packageversionerrorcodetype)
+- [PackageVersionSortTypeType](./literals.md#packageversionsorttypetype)
+- [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 ## Typed dictionaries
 

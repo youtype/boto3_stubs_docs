@@ -3,35 +3,35 @@
 > [Index](..) > [ECS](.) > Literals
 
 Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecs.html#ECS)
 type annotations stubs module
 [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [Literals for boto3 ECS module](#literals-for-boto3-ecs-module)
-  - [AgentUpdateStatus](#agentupdatestatus)
-  - [AssignPublicIp](#assignpublicip)
-  - [CapacityProviderField](#capacityproviderfield)
-  - [CapacityProviderStatus](#capacityproviderstatus)
-  - [CapacityProviderUpdateStatus](#capacityproviderupdatestatus)
-  - [ClusterField](#clusterfield)
-  - [ClusterSettingName](#clustersettingname)
-  - [Compatibility](#compatibility)
-  - [Connectivity](#connectivity)
-  - [ContainerCondition](#containercondition)
-  - [ContainerInstanceField](#containerinstancefield)
-  - [ContainerInstanceStatus](#containerinstancestatus)
-  - [DeploymentControllerType](#deploymentcontrollertype)
-  - [DeploymentRolloutState](#deploymentrolloutstate)
-  - [DesiredStatus](#desiredstatus)
-  - [DeviceCgroupPermission](#devicecgrouppermission)
-  - [EFSAuthorizationConfigIAM](#efsauthorizationconfigiam)
-  - [EFSTransitEncryption](#efstransitencryption)
-  - [EnvironmentFileType](#environmentfiletype)
-  - [ExecuteCommandLogging](#executecommandlogging)
-  - [FirelensConfigurationType](#firelensconfigurationtype)
-  - [HealthStatus](#healthstatus)
-  - [IpcMode](#ipcmode)
-  - [LaunchType](#launchtype)
+  - [AgentUpdateStatusType](#agentupdatestatustype)
+  - [AssignPublicIpType](#assignpubliciptype)
+  - [CapacityProviderFieldType](#capacityproviderfieldtype)
+  - [CapacityProviderStatusType](#capacityproviderstatustype)
+  - [CapacityProviderUpdateStatusType](#capacityproviderupdatestatustype)
+  - [ClusterFieldType](#clusterfieldtype)
+  - [ClusterSettingNameType](#clustersettingnametype)
+  - [CompatibilityType](#compatibilitytype)
+  - [ConnectivityType](#connectivitytype)
+  - [ContainerConditionType](#containerconditiontype)
+  - [ContainerInstanceFieldType](#containerinstancefieldtype)
+  - [ContainerInstanceStatusType](#containerinstancestatustype)
+  - [DeploymentControllerTypeType](#deploymentcontrollertypetype)
+  - [DeploymentRolloutStateType](#deploymentrolloutstatetype)
+  - [DesiredStatusType](#desiredstatustype)
+  - [DeviceCgroupPermissionType](#devicecgrouppermissiontype)
+  - [EFSAuthorizationConfigIAMType](#efsauthorizationconfigiamtype)
+  - [EFSTransitEncryptionType](#efstransitencryptiontype)
+  - [EnvironmentFileTypeType](#environmentfiletypetype)
+  - [ExecuteCommandLoggingType](#executecommandloggingtype)
+  - [FirelensConfigurationTypeType](#firelensconfigurationtypetype)
+  - [HealthStatusType](#healthstatustype)
+  - [IpcModeType](#ipcmodetype)
+  - [LaunchTypeType](#launchtypetype)
   - [ListAccountSettingsPaginatorName](#listaccountsettingspaginatorname)
   - [ListAttributesPaginatorName](#listattributespaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
@@ -40,44 +40,44 @@ type annotations stubs module
   - [ListTaskDefinitionFamiliesPaginatorName](#listtaskdefinitionfamiliespaginatorname)
   - [ListTaskDefinitionsPaginatorName](#listtaskdefinitionspaginatorname)
   - [ListTasksPaginatorName](#listtaskspaginatorname)
-  - [LogDriver](#logdriver)
-  - [ManagedAgentName](#managedagentname)
-  - [ManagedScalingStatus](#managedscalingstatus)
-  - [ManagedTerminationProtection](#managedterminationprotection)
-  - [NetworkMode](#networkmode)
-  - [PidMode](#pidmode)
-  - [PlacementConstraintType](#placementconstrainttype)
-  - [PlacementStrategyType](#placementstrategytype)
-  - [PlatformDeviceType](#platformdevicetype)
-  - [PropagateTags](#propagatetags)
-  - [ProxyConfigurationType](#proxyconfigurationtype)
-  - [ResourceType](#resourcetype)
-  - [ScaleUnit](#scaleunit)
-  - [SchedulingStrategy](#schedulingstrategy)
-  - [Scope](#scope)
-  - [ServiceField](#servicefield)
+  - [LogDriverType](#logdrivertype)
+  - [ManagedAgentNameType](#managedagentnametype)
+  - [ManagedScalingStatusType](#managedscalingstatustype)
+  - [ManagedTerminationProtectionType](#managedterminationprotectiontype)
+  - [NetworkModeType](#networkmodetype)
+  - [PidModeType](#pidmodetype)
+  - [PlacementConstraintTypeType](#placementconstrainttypetype)
+  - [PlacementStrategyTypeType](#placementstrategytypetype)
+  - [PlatformDeviceTypeType](#platformdevicetypetype)
+  - [PropagateTagsType](#propagatetagstype)
+  - [ProxyConfigurationTypeType](#proxyconfigurationtypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [ScaleUnitType](#scaleunittype)
+  - [SchedulingStrategyType](#schedulingstrategytype)
+  - [ScopeType](#scopetype)
+  - [ServiceFieldType](#servicefieldtype)
   - [ServicesInactiveWaiterName](#servicesinactivewaitername)
   - [ServicesStableWaiterName](#servicesstablewaitername)
-  - [SettingName](#settingname)
-  - [SortOrder](#sortorder)
-  - [StabilityStatus](#stabilitystatus)
-  - [TargetType](#targettype)
-  - [TaskDefinitionFamilyStatus](#taskdefinitionfamilystatus)
-  - [TaskDefinitionField](#taskdefinitionfield)
-  - [TaskDefinitionPlacementConstraintType](#taskdefinitionplacementconstrainttype)
-  - [TaskDefinitionStatus](#taskdefinitionstatus)
-  - [TaskField](#taskfield)
-  - [TaskSetField](#tasksetfield)
-  - [TaskStopCode](#taskstopcode)
+  - [SettingNameType](#settingnametype)
+  - [SortOrderType](#sortordertype)
+  - [StabilityStatusType](#stabilitystatustype)
+  - [TargetTypeType](#targettypetype)
+  - [TaskDefinitionFamilyStatusType](#taskdefinitionfamilystatustype)
+  - [TaskDefinitionFieldType](#taskdefinitionfieldtype)
+  - [TaskDefinitionPlacementConstraintTypeType](#taskdefinitionplacementconstrainttypetype)
+  - [TaskDefinitionStatusType](#taskdefinitionstatustype)
+  - [TaskFieldType](#taskfieldtype)
+  - [TaskSetFieldType](#tasksetfieldtype)
+  - [TaskStopCodeType](#taskstopcodetype)
   - [TasksRunningWaiterName](#tasksrunningwaitername)
   - [TasksStoppedWaiterName](#tasksstoppedwaitername)
-  - [TransportProtocol](#transportprotocol)
-  - [UlimitName](#ulimitname)
+  - [TransportProtocolType](#transportprotocoltype)
+  - [UlimitNameType](#ulimitnametype)
 
-## AgentUpdateStatus
+## AgentUpdateStatusType
 
 ```python
-from mypy_boto3_ecs.literals import AgentUpdateStatus
+from mypy_boto3_ecs.literals import AgentUpdateStatusType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `UPDATED`
 - `UPDATING`
 
-## AssignPublicIp
+## AssignPublicIpType
 
 ```python
-from mypy_boto3_ecs.literals import AssignPublicIp
+from mypy_boto3_ecs.literals import AssignPublicIpType
 ```
 
 Values:
@@ -100,20 +100,20 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## CapacityProviderField
+## CapacityProviderFieldType
 
 ```python
-from mypy_boto3_ecs.literals import CapacityProviderField
+from mypy_boto3_ecs.literals import CapacityProviderFieldType
 ```
 
 Values:
 
 - `TAGS`
 
-## CapacityProviderStatus
+## CapacityProviderStatusType
 
 ```python
-from mypy_boto3_ecs.literals import CapacityProviderStatus
+from mypy_boto3_ecs.literals import CapacityProviderStatusType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## CapacityProviderUpdateStatus
+## CapacityProviderUpdateStatusType
 
 ```python
-from mypy_boto3_ecs.literals import CapacityProviderUpdateStatus
+from mypy_boto3_ecs.literals import CapacityProviderUpdateStatusType
 ```
 
 Values:
@@ -136,10 +136,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
-## ClusterField
+## ClusterFieldType
 
 ```python
-from mypy_boto3_ecs.literals import ClusterField
+from mypy_boto3_ecs.literals import ClusterFieldType
 ```
 
 Values:
@@ -150,20 +150,20 @@ Values:
 - `STATISTICS`
 - `TAGS`
 
-## ClusterSettingName
+## ClusterSettingNameType
 
 ```python
-from mypy_boto3_ecs.literals import ClusterSettingName
+from mypy_boto3_ecs.literals import ClusterSettingNameType
 ```
 
 Values:
 
 - `containerInsights`
 
-## Compatibility
+## CompatibilityType
 
 ```python
-from mypy_boto3_ecs.literals import Compatibility
+from mypy_boto3_ecs.literals import CompatibilityType
 ```
 
 Values:
@@ -171,10 +171,10 @@ Values:
 - `EC2`
 - `FARGATE`
 
-## Connectivity
+## ConnectivityType
 
 ```python
-from mypy_boto3_ecs.literals import Connectivity
+from mypy_boto3_ecs.literals import ConnectivityType
 ```
 
 Values:
@@ -182,10 +182,10 @@ Values:
 - `CONNECTED`
 - `DISCONNECTED`
 
-## ContainerCondition
+## ContainerConditionType
 
 ```python
-from mypy_boto3_ecs.literals import ContainerCondition
+from mypy_boto3_ecs.literals import ContainerConditionType
 ```
 
 Values:
@@ -195,20 +195,20 @@ Values:
 - `START`
 - `SUCCESS`
 
-## ContainerInstanceField
+## ContainerInstanceFieldType
 
 ```python
-from mypy_boto3_ecs.literals import ContainerInstanceField
+from mypy_boto3_ecs.literals import ContainerInstanceFieldType
 ```
 
 Values:
 
 - `TAGS`
 
-## ContainerInstanceStatus
+## ContainerInstanceStatusType
 
 ```python
-from mypy_boto3_ecs.literals import ContainerInstanceStatus
+from mypy_boto3_ecs.literals import ContainerInstanceStatusType
 ```
 
 Values:
@@ -219,10 +219,10 @@ Values:
 - `REGISTERING`
 - `REGISTRATION_FAILED`
 
-## DeploymentControllerType
+## DeploymentControllerTypeType
 
 ```python
-from mypy_boto3_ecs.literals import DeploymentControllerType
+from mypy_boto3_ecs.literals import DeploymentControllerTypeType
 ```
 
 Values:
@@ -231,10 +231,10 @@ Values:
 - `ECS`
 - `EXTERNAL`
 
-## DeploymentRolloutState
+## DeploymentRolloutStateType
 
 ```python
-from mypy_boto3_ecs.literals import DeploymentRolloutState
+from mypy_boto3_ecs.literals import DeploymentRolloutStateType
 ```
 
 Values:
@@ -243,10 +243,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## DesiredStatus
+## DesiredStatusType
 
 ```python
-from mypy_boto3_ecs.literals import DesiredStatus
+from mypy_boto3_ecs.literals import DesiredStatusType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 - `RUNNING`
 - `STOPPED`
 
-## DeviceCgroupPermission
+## DeviceCgroupPermissionType
 
 ```python
-from mypy_boto3_ecs.literals import DeviceCgroupPermission
+from mypy_boto3_ecs.literals import DeviceCgroupPermissionType
 ```
 
 Values:
@@ -267,10 +267,10 @@ Values:
 - `read`
 - `write`
 
-## EFSAuthorizationConfigIAM
+## EFSAuthorizationConfigIAMType
 
 ```python
-from mypy_boto3_ecs.literals import EFSAuthorizationConfigIAM
+from mypy_boto3_ecs.literals import EFSAuthorizationConfigIAMType
 ```
 
 Values:
@@ -278,10 +278,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## EFSTransitEncryption
+## EFSTransitEncryptionType
 
 ```python
-from mypy_boto3_ecs.literals import EFSTransitEncryption
+from mypy_boto3_ecs.literals import EFSTransitEncryptionType
 ```
 
 Values:
@@ -289,20 +289,20 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## EnvironmentFileType
+## EnvironmentFileTypeType
 
 ```python
-from mypy_boto3_ecs.literals import EnvironmentFileType
+from mypy_boto3_ecs.literals import EnvironmentFileTypeType
 ```
 
 Values:
 
 - `s3`
 
-## ExecuteCommandLogging
+## ExecuteCommandLoggingType
 
 ```python
-from mypy_boto3_ecs.literals import ExecuteCommandLogging
+from mypy_boto3_ecs.literals import ExecuteCommandLoggingType
 ```
 
 Values:
@@ -311,10 +311,10 @@ Values:
 - `NONE`
 - `OVERRIDE`
 
-## FirelensConfigurationType
+## FirelensConfigurationTypeType
 
 ```python
-from mypy_boto3_ecs.literals import FirelensConfigurationType
+from mypy_boto3_ecs.literals import FirelensConfigurationTypeType
 ```
 
 Values:
@@ -322,10 +322,10 @@ Values:
 - `fluentbit`
 - `fluentd`
 
-## HealthStatus
+## HealthStatusType
 
 ```python
-from mypy_boto3_ecs.literals import HealthStatus
+from mypy_boto3_ecs.literals import HealthStatusType
 ```
 
 Values:
@@ -334,10 +334,10 @@ Values:
 - `UNHEALTHY`
 - `UNKNOWN`
 
-## IpcMode
+## IpcModeType
 
 ```python
-from mypy_boto3_ecs.literals import IpcMode
+from mypy_boto3_ecs.literals import IpcModeType
 ```
 
 Values:
@@ -346,10 +346,10 @@ Values:
 - `none`
 - `task`
 
-## LaunchType
+## LaunchTypeType
 
 ```python
-from mypy_boto3_ecs.literals import LaunchType
+from mypy_boto3_ecs.literals import LaunchTypeType
 ```
 
 Values:
@@ -437,10 +437,10 @@ Values:
 
 - `list_tasks`
 
-## LogDriver
+## LogDriverType
 
 ```python
-from mypy_boto3_ecs.literals import LogDriver
+from mypy_boto3_ecs.literals import LogDriverType
 ```
 
 Values:
@@ -454,20 +454,20 @@ Values:
 - `splunk`
 - `syslog`
 
-## ManagedAgentName
+## ManagedAgentNameType
 
 ```python
-from mypy_boto3_ecs.literals import ManagedAgentName
+from mypy_boto3_ecs.literals import ManagedAgentNameType
 ```
 
 Values:
 
 - `ExecuteCommandAgent`
 
-## ManagedScalingStatus
+## ManagedScalingStatusType
 
 ```python
-from mypy_boto3_ecs.literals import ManagedScalingStatus
+from mypy_boto3_ecs.literals import ManagedScalingStatusType
 ```
 
 Values:
@@ -475,10 +475,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ManagedTerminationProtection
+## ManagedTerminationProtectionType
 
 ```python
-from mypy_boto3_ecs.literals import ManagedTerminationProtection
+from mypy_boto3_ecs.literals import ManagedTerminationProtectionType
 ```
 
 Values:
@@ -486,10 +486,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## NetworkMode
+## NetworkModeType
 
 ```python
-from mypy_boto3_ecs.literals import NetworkMode
+from mypy_boto3_ecs.literals import NetworkModeType
 ```
 
 Values:
@@ -499,10 +499,10 @@ Values:
 - `host`
 - `none`
 
-## PidMode
+## PidModeType
 
 ```python
-from mypy_boto3_ecs.literals import PidMode
+from mypy_boto3_ecs.literals import PidModeType
 ```
 
 Values:
@@ -510,10 +510,10 @@ Values:
 - `host`
 - `task`
 
-## PlacementConstraintType
+## PlacementConstraintTypeType
 
 ```python
-from mypy_boto3_ecs.literals import PlacementConstraintType
+from mypy_boto3_ecs.literals import PlacementConstraintTypeType
 ```
 
 Values:
@@ -521,10 +521,10 @@ Values:
 - `distinctInstance`
 - `memberOf`
 
-## PlacementStrategyType
+## PlacementStrategyTypeType
 
 ```python
-from mypy_boto3_ecs.literals import PlacementStrategyType
+from mypy_boto3_ecs.literals import PlacementStrategyTypeType
 ```
 
 Values:
@@ -533,20 +533,20 @@ Values:
 - `random`
 - `spread`
 
-## PlatformDeviceType
+## PlatformDeviceTypeType
 
 ```python
-from mypy_boto3_ecs.literals import PlatformDeviceType
+from mypy_boto3_ecs.literals import PlatformDeviceTypeType
 ```
 
 Values:
 
 - `GPU`
 
-## PropagateTags
+## PropagateTagsType
 
 ```python
-from mypy_boto3_ecs.literals import PropagateTags
+from mypy_boto3_ecs.literals import PropagateTagsType
 ```
 
 Values:
@@ -554,20 +554,20 @@ Values:
 - `SERVICE`
 - `TASK_DEFINITION`
 
-## ProxyConfigurationType
+## ProxyConfigurationTypeType
 
 ```python
-from mypy_boto3_ecs.literals import ProxyConfigurationType
+from mypy_boto3_ecs.literals import ProxyConfigurationTypeType
 ```
 
 Values:
 
 - `APPMESH`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_ecs.literals import ResourceType
+from mypy_boto3_ecs.literals import ResourceTypeType
 ```
 
 Values:
@@ -575,20 +575,20 @@ Values:
 - `GPU`
 - `InferenceAccelerator`
 
-## ScaleUnit
+## ScaleUnitType
 
 ```python
-from mypy_boto3_ecs.literals import ScaleUnit
+from mypy_boto3_ecs.literals import ScaleUnitType
 ```
 
 Values:
 
 - `PERCENT`
 
-## SchedulingStrategy
+## SchedulingStrategyType
 
 ```python
-from mypy_boto3_ecs.literals import SchedulingStrategy
+from mypy_boto3_ecs.literals import SchedulingStrategyType
 ```
 
 Values:
@@ -596,10 +596,10 @@ Values:
 - `DAEMON`
 - `REPLICA`
 
-## Scope
+## ScopeType
 
 ```python
-from mypy_boto3_ecs.literals import Scope
+from mypy_boto3_ecs.literals import ScopeType
 ```
 
 Values:
@@ -607,10 +607,10 @@ Values:
 - `shared`
 - `task`
 
-## ServiceField
+## ServiceFieldType
 
 ```python
-from mypy_boto3_ecs.literals import ServiceField
+from mypy_boto3_ecs.literals import ServiceFieldType
 ```
 
 Values:
@@ -637,10 +637,10 @@ Values:
 
 - `services_stable`
 
-## SettingName
+## SettingNameType
 
 ```python
-from mypy_boto3_ecs.literals import SettingName
+from mypy_boto3_ecs.literals import SettingNameType
 ```
 
 Values:
@@ -651,10 +651,10 @@ Values:
 - `serviceLongArnFormat`
 - `taskLongArnFormat`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_ecs.literals import SortOrder
+from mypy_boto3_ecs.literals import SortOrderType
 ```
 
 Values:
@@ -662,10 +662,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## StabilityStatus
+## StabilityStatusType
 
 ```python
-from mypy_boto3_ecs.literals import StabilityStatus
+from mypy_boto3_ecs.literals import StabilityStatusType
 ```
 
 Values:
@@ -673,20 +673,20 @@ Values:
 - `STABILIZING`
 - `STEADY_STATE`
 
-## TargetType
+## TargetTypeType
 
 ```python
-from mypy_boto3_ecs.literals import TargetType
+from mypy_boto3_ecs.literals import TargetTypeType
 ```
 
 Values:
 
 - `container-instance`
 
-## TaskDefinitionFamilyStatus
+## TaskDefinitionFamilyStatusType
 
 ```python
-from mypy_boto3_ecs.literals import TaskDefinitionFamilyStatus
+from mypy_boto3_ecs.literals import TaskDefinitionFamilyStatusType
 ```
 
 Values:
@@ -695,30 +695,30 @@ Values:
 - `ALL`
 - `INACTIVE`
 
-## TaskDefinitionField
+## TaskDefinitionFieldType
 
 ```python
-from mypy_boto3_ecs.literals import TaskDefinitionField
+from mypy_boto3_ecs.literals import TaskDefinitionFieldType
 ```
 
 Values:
 
 - `TAGS`
 
-## TaskDefinitionPlacementConstraintType
+## TaskDefinitionPlacementConstraintTypeType
 
 ```python
-from mypy_boto3_ecs.literals import TaskDefinitionPlacementConstraintType
+from mypy_boto3_ecs.literals import TaskDefinitionPlacementConstraintTypeType
 ```
 
 Values:
 
 - `memberOf`
 
-## TaskDefinitionStatus
+## TaskDefinitionStatusType
 
 ```python
-from mypy_boto3_ecs.literals import TaskDefinitionStatus
+from mypy_boto3_ecs.literals import TaskDefinitionStatusType
 ```
 
 Values:
@@ -726,30 +726,30 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## TaskField
+## TaskFieldType
 
 ```python
-from mypy_boto3_ecs.literals import TaskField
+from mypy_boto3_ecs.literals import TaskFieldType
 ```
 
 Values:
 
 - `TAGS`
 
-## TaskSetField
+## TaskSetFieldType
 
 ```python
-from mypy_boto3_ecs.literals import TaskSetField
+from mypy_boto3_ecs.literals import TaskSetFieldType
 ```
 
 Values:
 
 - `TAGS`
 
-## TaskStopCode
+## TaskStopCodeType
 
 ```python
-from mypy_boto3_ecs.literals import TaskStopCode
+from mypy_boto3_ecs.literals import TaskStopCodeType
 ```
 
 Values:
@@ -778,10 +778,10 @@ Values:
 
 - `tasks_stopped`
 
-## TransportProtocol
+## TransportProtocolType
 
 ```python
-from mypy_boto3_ecs.literals import TransportProtocol
+from mypy_boto3_ecs.literals import TransportProtocolType
 ```
 
 Values:
@@ -789,10 +789,10 @@ Values:
 - `tcp`
 - `udp`
 
-## UlimitName
+## UlimitNameType
 
 ```python
-from mypy_boto3_ecs.literals import UlimitName
+from mypy_boto3_ecs.literals import UlimitNameType
 ```
 
 Values:

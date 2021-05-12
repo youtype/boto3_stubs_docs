@@ -3,7 +3,7 @@
 > [Index](..) > [Synthetics](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
 [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
@@ -109,10 +109,10 @@ from mypy_boto3_synthetics.type_defs import CanaryRunStatusTypeDef
 
 Optional fields:
 
-- `State`: [CanaryRunState](./literals.md#canaryrunstate)
+- `State`: [CanaryRunStateType](./literals.md#canaryrunstatetype)
 - `StateReason`: `str`
 - `StateReasonCode`:
-  [CanaryRunStateReasonCode](./literals.md#canaryrunstatereasoncode)
+  [CanaryRunStateReasonCodeType](./literals.md#canaryrunstatereasoncodetype)
 
 ## CanaryRunTimelineTypeDef
 
@@ -136,7 +136,8 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Status`: [CanaryRunStatusTypeDef](./type_defs.md#canaryrunstatustypedef)
-- `Timeline`: [CanaryRunTimelineTypeDef](./type_defs.md#canaryruntimelinetypedef)
+- `Timeline`:
+  [CanaryRunTimelineTypeDef](./type_defs.md#canaryruntimelinetypedef)
 - `ArtifactS3Location`: `str`
 
 ## CanaryScheduleInputTypeDef
@@ -174,10 +175,10 @@ from mypy_boto3_synthetics.type_defs import CanaryStatusTypeDef
 
 Optional fields:
 
-- `State`: [CanaryState](./literals.md#canarystate)
+- `State`: [CanaryStateType](./literals.md#canarystatetype)
 - `StateReason`: `str`
 - `StateReasonCode`: `Literal['INVALID_PERMISSIONS']` (see
-  [CanaryStateReasonCode](./literals.md#canarystatereasoncode))
+  [CanaryStateReasonCodeType](./literals.md#canarystatereasoncodetype))
 
 ## CanaryTimelineTypeDef
 

@@ -3,24 +3,24 @@
 > [Index](..) > [Textract](.) > Literals
 
 Auto-generated documentation for
-[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/textract.html#Textract)
 type annotations stubs module
 [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [Literals for boto3 Textract module](#literals-for-boto3-textract-module)
-  - [BlockType](#blocktype)
-  - [ContentClassifier](#contentclassifier)
-  - [EntityType](#entitytype)
-  - [FeatureType](#featuretype)
-  - [JobStatus](#jobstatus)
-  - [RelationshipType](#relationshiptype)
-  - [SelectionStatus](#selectionstatus)
-  - [TextType](#texttype)
+  - [BlockTypeType](#blocktypetype)
+  - [ContentClassifierType](#contentclassifiertype)
+  - [EntityTypeType](#entitytypetype)
+  - [FeatureTypeType](#featuretypetype)
+  - [JobStatusType](#jobstatustype)
+  - [RelationshipTypeType](#relationshiptypetype)
+  - [SelectionStatusType](#selectionstatustype)
+  - [TextTypeType](#texttypetype)
 
-## BlockType
+## BlockTypeType
 
 ```python
-from mypy_boto3_textract.literals import BlockType
+from mypy_boto3_textract.literals import BlockTypeType
 ```
 
 Values:
@@ -33,10 +33,10 @@ Values:
 - `TABLE`
 - `WORD`
 
-## ContentClassifier
+## ContentClassifierType
 
 ```python
-from mypy_boto3_textract.literals import ContentClassifier
+from mypy_boto3_textract.literals import ContentClassifierType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 - `FreeOfAdultContent`
 - `FreeOfPersonallyIdentifiableInformation`
 
-## EntityType
+## EntityTypeType
 
 ```python
-from mypy_boto3_textract.literals import EntityType
+from mypy_boto3_textract.literals import EntityTypeType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `KEY`
 - `VALUE`
 
-## FeatureType
+## FeatureTypeType
 
 ```python
-from mypy_boto3_textract.literals import FeatureType
+from mypy_boto3_textract.literals import FeatureTypeType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `FORMS`
 - `TABLES`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_textract.literals import JobStatus
+from mypy_boto3_textract.literals import JobStatusType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `PARTIAL_SUCCESS`
 - `SUCCEEDED`
 
-## RelationshipType
+## RelationshipTypeType
 
 ```python
-from mypy_boto3_textract.literals import RelationshipType
+from mypy_boto3_textract.literals import RelationshipTypeType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `COMPLEX_FEATURES`
 - `VALUE`
 
-## SelectionStatus
+## SelectionStatusType
 
 ```python
-from mypy_boto3_textract.literals import SelectionStatus
+from mypy_boto3_textract.literals import SelectionStatusType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `NOT_SELECTED`
 - `SELECTED`
 
-## TextType
+## TextTypeType
 
 ```python
-from mypy_boto3_textract.literals import TextType
+from mypy_boto3_textract.literals import TextTypeType
 ```
 
 Values:

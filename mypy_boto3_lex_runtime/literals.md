@@ -3,22 +3,22 @@
 > [Index](..) > [LexRuntimeService](.) > Literals
 
 Auto-generated documentation for
-[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
+[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
 [mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 - [Literals for boto3 LexRuntimeService module](#literals-for-boto3-lexruntimeservice-module)
-  - [ConfirmationStatus](#confirmationstatus)
-  - [ContentType](#contenttype)
-  - [DialogActionType](#dialogactiontype)
-  - [DialogState](#dialogstate)
-  - [FulfillmentState](#fulfillmentstate)
-  - [MessageFormatType](#messageformattype)
+  - [ConfirmationStatusType](#confirmationstatustype)
+  - [ContentTypeType](#contenttypetype)
+  - [DialogActionTypeType](#dialogactiontypetype)
+  - [DialogStateType](#dialogstatetype)
+  - [FulfillmentStateType](#fulfillmentstatetype)
+  - [MessageFormatTypeType](#messageformattypetype)
 
-## ConfirmationStatus
+## ConfirmationStatusType
 
 ```python
-from mypy_boto3_lex_runtime.literals import ConfirmationStatus
+from mypy_boto3_lex_runtime.literals import ConfirmationStatusType
 ```
 
 Values:
@@ -27,20 +27,20 @@ Values:
 - `Denied`
 - `None`
 
-## ContentType
+## ContentTypeType
 
 ```python
-from mypy_boto3_lex_runtime.literals import ContentType
+from mypy_boto3_lex_runtime.literals import ContentTypeType
 ```
 
 Values:
 
 - `application/vnd.amazonaws.card.generic`
 
-## DialogActionType
+## DialogActionTypeType
 
 ```python
-from mypy_boto3_lex_runtime.literals import DialogActionType
+from mypy_boto3_lex_runtime.literals import DialogActionTypeType
 ```
 
 Values:
@@ -51,10 +51,10 @@ Values:
 - `ElicitIntent`
 - `ElicitSlot`
 
-## DialogState
+## DialogStateType
 
 ```python
-from mypy_boto3_lex_runtime.literals import DialogState
+from mypy_boto3_lex_runtime.literals import DialogStateType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `Fulfilled`
 - `ReadyForFulfillment`
 
-## FulfillmentState
+## FulfillmentStateType
 
 ```python
-from mypy_boto3_lex_runtime.literals import FulfillmentState
+from mypy_boto3_lex_runtime.literals import FulfillmentStateType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 - `Fulfilled`
 - `ReadyForFulfillment`
 
-## MessageFormatType
+## MessageFormatTypeType
 
 ```python
-from mypy_boto3_lex_runtime.literals import MessageFormatType
+from mypy_boto3_lex_runtime.literals import MessageFormatTypeType
 ```
 
 Values:

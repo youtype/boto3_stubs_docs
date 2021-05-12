@@ -3,22 +3,22 @@
 > [Index](..) > [FinSpaceData](.) > Literals
 
 Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
 [mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [Literals for boto3 FinSpaceData module](#literals-for-boto3-finspacedata-module)
-  - [ChangeType](#changetype)
-  - [ChangesetStatus](#changesetstatus)
-  - [ErrorCategory](#errorcategory)
-  - [FormatType](#formattype)
-  - [SourceType](#sourcetype)
-  - [locationType](#locationtype)
+  - [ChangeTypeType](#changetypetype)
+  - [ChangesetStatusType](#changesetstatustype)
+  - [ErrorCategoryType](#errorcategorytype)
+  - [FormatTypeType](#formattypetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [locationTypeType](#locationtypetype)
 
-## ChangeType
+## ChangeTypeType
 
 ```python
-from mypy_boto3_finspace_data.literals import ChangeType
+from mypy_boto3_finspace_data.literals import ChangeTypeType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `MODIFY`
 - `REPLACE`
 
-## ChangesetStatus
+## ChangesetStatusType
 
 ```python
-from mypy_boto3_finspace_data.literals import ChangesetStatus
+from mypy_boto3_finspace_data.literals import ChangesetStatusType
 ```
 
 Values:
@@ -41,10 +41,10 @@ Values:
 - `STOP_REQUESTED`
 - `SUCCESS`
 
-## ErrorCategory
+## ErrorCategoryType
 
 ```python
-from mypy_boto3_finspace_data.literals import ErrorCategory
+from mypy_boto3_finspace_data.literals import ErrorCategoryType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 - `The_inputs_to_this_request_are_invalid`
 - `The_system_temporarily_lacks_sufficient_resources_to_process_the_request`
 
-## FormatType
+## FormatTypeType
 
 ```python
-from mypy_boto3_finspace_data.literals import FormatType
+from mypy_boto3_finspace_data.literals import FormatTypeType
 ```
 
 Values:
@@ -71,20 +71,20 @@ Values:
 - `PARQUET`
 - `XML`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_finspace_data.literals import SourceType
+from mypy_boto3_finspace_data.literals import SourceTypeType
 ```
 
 Values:
 
 - `S3`
 
-## locationType
+## locationTypeType
 
 ```python
-from mypy_boto3_finspace_data.literals import locationType
+from mypy_boto3_finspace_data.literals import locationTypeType
 ```
 
 Values:

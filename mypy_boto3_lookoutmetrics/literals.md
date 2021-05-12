@@ -3,24 +3,24 @@
 > [Index](..) > [LookoutMetrics](.) > Literals
 
 Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
 [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 - [Literals for boto3 LookoutMetrics module](#literals-for-boto3-lookoutmetrics-module)
-  - [AggregationFunction](#aggregationfunction)
-  - [AlertStatus](#alertstatus)
-  - [AlertType](#alerttype)
-  - [AnomalyDetectionTaskStatus](#anomalydetectiontaskstatus)
-  - [AnomalyDetectorStatus](#anomalydetectorstatus)
-  - [CSVFileCompression](#csvfilecompression)
-  - [Frequency](#frequency)
-  - [JsonFileCompression](#jsonfilecompression)
+  - [AggregationFunctionType](#aggregationfunctiontype)
+  - [AlertStatusType](#alertstatustype)
+  - [AlertTypeType](#alerttypetype)
+  - [AnomalyDetectionTaskStatusType](#anomalydetectiontaskstatustype)
+  - [AnomalyDetectorStatusType](#anomalydetectorstatustype)
+  - [CSVFileCompressionType](#csvfilecompressiontype)
+  - [FrequencyType](#frequencytype)
+  - [JsonFileCompressionType](#jsonfilecompressiontype)
 
-## AggregationFunction
+## AggregationFunctionType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import AggregationFunction
+from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType
 ```
 
 Values:
@@ -28,10 +28,10 @@ Values:
 - `AVG`
 - `SUM`
 
-## AlertStatus
+## AlertStatusType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import AlertStatus
+from mypy_boto3_lookoutmetrics.literals import AlertStatusType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## AlertType
+## AlertTypeType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import AlertType
+from mypy_boto3_lookoutmetrics.literals import AlertTypeType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `LAMBDA`
 - `SNS`
 
-## AnomalyDetectionTaskStatus
+## AnomalyDetectionTaskStatusType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import AnomalyDetectionTaskStatus
+from mypy_boto3_lookoutmetrics.literals import AnomalyDetectionTaskStatusType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 - `IN_PROGRESS`
 - `PENDING`
 
-## AnomalyDetectorStatus
+## AnomalyDetectorStatusType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import AnomalyDetectorStatus
+from mypy_boto3_lookoutmetrics.literals import AnomalyDetectorStatusType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `FAILED`
 - `INACTIVE`
 
-## CSVFileCompression
+## CSVFileCompressionType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import CSVFileCompression
+from mypy_boto3_lookoutmetrics.literals import CSVFileCompressionType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `GZIP`
 - `NONE`
 
-## Frequency
+## FrequencyType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import Frequency
+from mypy_boto3_lookoutmetrics.literals import FrequencyType
 ```
 
 Values:
@@ -105,10 +105,10 @@ Values:
 - `PT1H`
 - `PT5M`
 
-## JsonFileCompression
+## JsonFileCompressionType
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import JsonFileCompression
+from mypy_boto3_lookoutmetrics.literals import JsonFileCompressionType
 ```
 
 Values:

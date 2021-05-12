@@ -3,7 +3,7 @@
 > [Index](..) > [Route53](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53.html#Route53)
 type annotations stubs module
 [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
@@ -109,7 +109,7 @@ from mypy_boto3_route53.type_defs import AccountLimitTypeDef
 
 Required fields:
 
-- `Type`: [AccountLimitType](./literals.md#accountlimittype)
+- `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
 - `Value`: `int`
 
 ## ActivateKeySigningKeyResponseTypeDef
@@ -130,7 +130,7 @@ from mypy_boto3_route53.type_defs import AlarmIdentifierTypeDef
 
 Required fields:
 
-- `Region`: [CloudWatchRegion](./literals.md#cloudwatchregion)
+- `Region`: [CloudWatchRegionType](./literals.md#cloudwatchregiontype)
 - `Name`: `str`
 
 ## AliasTargetTypeDef
@@ -178,7 +178,7 @@ from mypy_boto3_route53.type_defs import ChangeInfoTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Status`: [ChangeStatus](./literals.md#changestatus)
+- `Status`: [ChangeStatusType](./literals.md#changestatustype)
 - `SubmittedAt`: `datetime`
 
 Optional fields:
@@ -203,7 +203,7 @@ from mypy_boto3_route53.type_defs import ChangeTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `ResourceRecordSet`:
   [ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef)
 
@@ -217,11 +217,12 @@ Required fields:
 
 - `EvaluationPeriods`: `int`
 - `Threshold`: `float`
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Period`: `int`
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: [Statistic](./literals.md#statistic)
+- `Statistic`: [StatisticType](./literals.md#statistictype)
 
 Optional fields:
 
@@ -663,7 +664,7 @@ from mypy_boto3_route53.type_defs import HealthCheckConfigTypeDef
 
 Required fields:
 
-- `Type`: [HealthCheckType](./literals.md#healthchecktype)
+- `Type`: [HealthCheckTypeType](./literals.md#healthchecktypetype)
 
 Optional fields:
 
@@ -680,11 +681,12 @@ Optional fields:
 - `HealthThreshold`: `int`
 - `ChildHealthChecks`: `List`\[`str`\]
 - `EnableSNI`: `bool`
-- `Regions`: `List`\[[HealthCheckRegion](./literals.md#healthcheckregion)\]
+- `Regions`:
+  `List`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
 - `AlarmIdentifier`:
   [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
 - `InsufficientDataHealthStatus`:
-  [InsufficientDataHealthStatus](./literals.md#insufficientdatahealthstatus)
+  [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
 
 ## HealthCheckObservationTypeDef
 
@@ -694,7 +696,7 @@ from mypy_boto3_route53.type_defs import HealthCheckObservationTypeDef
 
 Optional fields:
 
-- `Region`: [HealthCheckRegion](./literals.md#healthcheckregion)
+- `Region`: [HealthCheckRegionType](./literals.md#healthcheckregiontype)
 - `IPAddress`: `str`
 - `StatusReport`: [StatusReportTypeDef](./type_defs.md#statusreporttypedef)
 
@@ -737,7 +739,7 @@ from mypy_boto3_route53.type_defs import HostedZoneLimitTypeDef
 
 Required fields:
 
-- `Type`: [HostedZoneLimitType](./literals.md#hostedzonelimittype)
+- `Type`: [HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype)
 - `Value`: `int`
 
 ## HostedZoneOwnerTypeDef
@@ -862,7 +864,8 @@ from mypy_boto3_route53.type_defs import ListHostedZonesByNameResponseTypeDef
 
 Required fields:
 
-- `HostedZones`: `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
+- `HostedZones`:
+  `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
@@ -897,7 +900,8 @@ from mypy_boto3_route53.type_defs import ListHostedZonesResponseTypeDef
 
 Required fields:
 
-- `HostedZones`: `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
+- `HostedZones`:
+  `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
@@ -937,7 +941,7 @@ Required fields:
 Optional fields:
 
 - `NextRecordName`: `str`
-- `NextRecordType`: [RRType](./literals.md#rrtype)
+- `NextRecordType`: [RRTypeType](./literals.md#rrtypetype)
 - `NextRecordIdentifier`: `str`
 
 ## ListReusableDelegationSetsResponseTypeDef
@@ -966,7 +970,8 @@ from mypy_boto3_route53.type_defs import ListTagsForResourceResponseTypeDef
 
 Required fields:
 
-- `ResourceTagSet`: [ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)
+- `ResourceTagSet`:
+  [ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)
 
 ## ListTagsForResourcesResponseTypeDef
 
@@ -1009,7 +1014,7 @@ Required fields:
 Optional fields:
 
 - `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRType](./literals.md#rrtype)
+- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
 
 ## ListTrafficPolicyInstancesByPolicyResponseTypeDef
 
@@ -1028,7 +1033,7 @@ Optional fields:
 
 - `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRType](./literals.md#rrtype)
+- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
 
 ## ListTrafficPolicyInstancesResponseTypeDef
 
@@ -1047,7 +1052,7 @@ Optional fields:
 
 - `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRType](./literals.md#rrtype)
+- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
 
 ## ListTrafficPolicyVersionsResponseTypeDef
 
@@ -1111,16 +1116,17 @@ from mypy_boto3_route53.type_defs import ResourceRecordSetTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [RRType](./literals.md#rrtype)
+- `Type`: [RRTypeType](./literals.md#rrtypetype)
 
 Optional fields:
 
 - `SetIdentifier`: `str`
 - `Weight`: `int`
-- `Region`: [ResourceRecordSetRegion](./literals.md#resourcerecordsetregion)
+- `Region`:
+  [ResourceRecordSetRegionType](./literals.md#resourcerecordsetregiontype)
 - `GeoLocation`: [GeoLocationTypeDef](./type_defs.md#geolocationtypedef)
 - `Failover`:
-  [ResourceRecordSetFailover](./literals.md#resourcerecordsetfailover)
+  [ResourceRecordSetFailoverType](./literals.md#resourcerecordsetfailovertype)
 - `MultiValueAnswer`: `bool`
 - `TTL`: `int`
 - `ResourceRecords`:
@@ -1147,7 +1153,7 @@ from mypy_boto3_route53.type_defs import ResourceTagSetTypeDef
 
 Optional fields:
 
-- `ResourceType`: [TagResourceType](./literals.md#tagresourcetype)
+- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
 - `ResourceId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -1160,7 +1166,7 @@ from mypy_boto3_route53.type_defs import ReusableDelegationSetLimitTypeDef
 Required fields:
 
 - `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
-  [ReusableDelegationSetLimitType](./literals.md#reusabledelegationsetlimittype))
+  [ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype))
 - `Value`: `int`
 
 ## StatusReportTypeDef
@@ -1195,7 +1201,7 @@ Required fields:
 
 - `Nameserver`: `str`
 - `RecordName`: `str`
-- `RecordType`: [RRType](./literals.md#rrtype)
+- `RecordType`: [RRTypeType](./literals.md#rrtypetype)
 - `RecordData`: `List`\[`str`\]
 - `ResponseCode`: `str`
 - `Protocol`: `str`
@@ -1216,7 +1222,7 @@ Required fields:
 - `Message`: `str`
 - `TrafficPolicyId`: `str`
 - `TrafficPolicyVersion`: `int`
-- `TrafficPolicyType`: [RRType](./literals.md#rrtype)
+- `TrafficPolicyType`: [RRTypeType](./literals.md#rrtypetype)
 
 ## TrafficPolicySummaryTypeDef
 
@@ -1228,7 +1234,7 @@ Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Type`: [RRType](./literals.md#rrtype)
+- `Type`: [RRTypeType](./literals.md#rrtypetype)
 - `LatestVersion`: `int`
 - `TrafficPolicyCount`: `int`
 
@@ -1243,7 +1249,7 @@ Required fields:
 - `Id`: `str`
 - `Version`: `int`
 - `Name`: `str`
-- `Type`: [RRType](./literals.md#rrtype)
+- `Type`: [RRTypeType](./literals.md#rrtypetype)
 - `Document`: `str`
 
 Optional fields:
@@ -1299,7 +1305,7 @@ from mypy_boto3_route53.type_defs import VPCTypeDef
 
 Optional fields:
 
-- `VPCRegion`: [VPCRegion](./literals.md#vpcregion)
+- `VPCRegion`: [VPCRegionType](./literals.md#vpcregiontype)
 - `VPCId`: `str`
 
 ## WaiterConfigTypeDef

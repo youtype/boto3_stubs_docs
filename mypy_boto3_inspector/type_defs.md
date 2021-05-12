@@ -3,7 +3,7 @@
 > [Index](..) > [Inspector](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector)
 type annotations stubs module
 [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
@@ -89,8 +89,9 @@ from mypy_boto3_inspector.type_defs import AgentFilterTypeDef
 
 Required fields:
 
-- `agentHealths`: `List`\[[AgentHealth](./literals.md#agenthealth)\]
-- `agentHealthCodes`: `List`\[[AgentHealthCode](./literals.md#agenthealthcode)\]
+- `agentHealths`: `List`\[[AgentHealthType](./literals.md#agenthealthtype)\]
+- `agentHealthCodes`:
+  `List`\[[AgentHealthCodeType](./literals.md#agenthealthcodetype)\]
 
 ## AgentPreviewTypeDef
 
@@ -106,7 +107,7 @@ Optional fields:
 
 - `hostname`: `str`
 - `autoScalingGroup`: `str`
-- `agentHealth`: [AgentHealth](./literals.md#agenthealth)
+- `agentHealth`: [AgentHealthType](./literals.md#agenthealthtype)
 - `agentVersion`: `str`
 - `operatingSystem`: `str`
 - `kernelVersion`: `str`
@@ -122,8 +123,8 @@ Required fields:
 
 - `agentId`: `str`
 - `assessmentRunArn`: `str`
-- `agentHealth`: [AgentHealth](./literals.md#agenthealth)
-- `agentHealthCode`: [AgentHealthCode](./literals.md#agenthealthcode)
+- `agentHealth`: [AgentHealthType](./literals.md#agenthealthtype)
+- `agentHealthCode`: [AgentHealthCodeType](./literals.md#agenthealthcodetype)
 - `telemetryMetadata`:
   `List`\[[TelemetryMetadataTypeDef](./type_defs.md#telemetrymetadatatypedef)\]
 
@@ -141,10 +142,12 @@ from mypy_boto3_inspector.type_defs import AssessmentRunFilterTypeDef
 Optional fields:
 
 - `namePattern`: `str`
-- `states`: `List`\[[AssessmentRunState](./literals.md#assessmentrunstate)\]
+- `states`:
+  `List`\[[AssessmentRunStateType](./literals.md#assessmentrunstatetype)\]
 - `durationRange`: [DurationRangeTypeDef](./type_defs.md#durationrangetypedef)
 - `rulesPackageArns`: `List`\[`str`\]
-- `startTimeRange`: [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
+- `startTimeRange`:
+  [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - `completionTimeRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - `stateChangeTimeRange`:
@@ -159,7 +162,7 @@ from mypy_boto3_inspector.type_defs import AssessmentRunNotificationTypeDef
 Required fields:
 
 - `date`: `datetime`
-- `event`: [InspectorEvent](./literals.md#inspectorevent)
+- `event`: [InspectorEventType](./literals.md#inspectoreventtype)
 - `error`: `bool`
 
 Optional fields:
@@ -167,7 +170,7 @@ Optional fields:
 - `message`: `str`
 - `snsTopicArn`: `str`
 - `snsPublishStatusCode`:
-  [AssessmentRunNotificationSnsStatusCode](./literals.md#assessmentrunnotificationsnsstatuscode)
+  [AssessmentRunNotificationSnsStatusCodeType](./literals.md#assessmentrunnotificationsnsstatuscodetype)
 
 ## AssessmentRunStateChangeTypeDef
 
@@ -178,7 +181,7 @@ from mypy_boto3_inspector.type_defs import AssessmentRunStateChangeTypeDef
 Required fields:
 
 - `stateChangedAt`: `datetime`
-- `state`: [AssessmentRunState](./literals.md#assessmentrunstate)
+- `state`: [AssessmentRunStateType](./literals.md#assessmentrunstatetype)
 
 ## AssessmentRunTypeDef
 
@@ -191,7 +194,7 @@ Required fields:
 - `arn`: `str`
 - `name`: `str`
 - `assessmentTemplateArn`: `str`
-- `state`: [AssessmentRunState](./literals.md#assessmentrunstate)
+- `state`: [AssessmentRunStateType](./literals.md#assessmentrunstatetype)
 - `durationInSeconds`: `int`
 - `rulesPackageArns`: `List`\[`str`\]
 - `userAttributesForFindings`:
@@ -203,7 +206,7 @@ Required fields:
   `List`\[[AssessmentRunStateChangeTypeDef](./type_defs.md#assessmentrunstatechangetypedef)\]
 - `notifications`:
   `List`\[[AssessmentRunNotificationTypeDef](./type_defs.md#assessmentrunnotificationtypedef)\]
-- `findingCounts`: `Dict`\[[Severity](./literals.md#severity), `int`\]
+- `findingCounts`: `Dict`\[[SeverityType](./literals.md#severitytype), `int`\]
 
 Optional fields:
 
@@ -467,7 +470,7 @@ from mypy_boto3_inspector.type_defs import EventSubscriptionTypeDef
 
 Required fields:
 
-- `event`: [InspectorEvent](./literals.md#inspectorevent)
+- `event`: [InspectorEventType](./literals.md#inspectoreventtype)
 - `subscribedAt`: `datetime`
 
 ## ExclusionPreviewTypeDef
@@ -513,7 +516,8 @@ from mypy_boto3_inspector.type_defs import FailedItemDetailsTypeDef
 
 Required fields:
 
-- `failureCode`: [FailedItemErrorCode](./literals.md#faileditemerrorcode)
+- `failureCode`:
+  [FailedItemErrorCodeType](./literals.md#faileditemerrorcodetype)
 - `retryable`: `bool`
 
 ## FindingFilterTypeDef
@@ -527,10 +531,11 @@ Optional fields:
 - `agentIds`: `List`\[`str`\]
 - `autoScalingGroups`: `List`\[`str`\]
 - `ruleNames`: `List`\[`str`\]
-- `severities`: `List`\[[Severity](./literals.md#severity)\]
+- `severities`: `List`\[[SeverityType](./literals.md#severitytype)\]
 - `rulesPackageArns`: `List`\[`str`\]
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `userAttributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `userAttributes`:
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `creationTimeRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
@@ -544,7 +549,8 @@ Required fields:
 
 - `arn`: `str`
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `userAttributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `userAttributes`:
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
 
@@ -555,14 +561,14 @@ Optional fields:
 - `serviceAttributes`:
   [InspectorServiceAttributesTypeDef](./type_defs.md#inspectorserviceattributestypedef)
 - `assetType`: `Literal['ec2-instance']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `assetAttributes`:
   [AssetAttributesTypeDef](./type_defs.md#assetattributestypedef)
 - `id`: `str`
 - `title`: `str`
 - `description`: `str`
 - `recommendation`: `str`
-- `severity`: [Severity](./literals.md#severity)
+- `severity`: [SeverityType](./literals.md#severitytype)
 - `numericSeverity`: `float`
 - `confidence`: `int`
 - `indicatorOfCompromise`: `bool`
@@ -575,7 +581,7 @@ from mypy_boto3_inspector.type_defs import GetAssessmentReportResponseTypeDef
 
 Required fields:
 
-- `status`: [ReportStatus](./literals.md#reportstatus)
+- `status`: [ReportStatusType](./literals.md#reportstatustype)
 
 Optional fields:
 
@@ -589,7 +595,7 @@ from mypy_boto3_inspector.type_defs import GetExclusionsPreviewResponseTypeDef
 
 Required fields:
 
-- `previewStatus`: [PreviewStatus](./literals.md#previewstatus)
+- `previewStatus`: [PreviewStatusType](./literals.md#previewstatustype)
 
 Optional fields:
 
@@ -869,7 +875,7 @@ from mypy_boto3_inspector.type_defs import ScopeTypeDef
 
 Optional fields:
 
-- `key`: [ScopeType](./literals.md#scopetype)
+- `key`: [ScopeTypeType](./literals.md#scopetypetype)
 - `value`: `str`
 
 ## SecurityGroupTypeDef

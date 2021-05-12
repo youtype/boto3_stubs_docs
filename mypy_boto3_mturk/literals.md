@@ -3,17 +3,17 @@
 > [Index](..) > [MTurk](.) > Literals
 
 Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mturk.html#MTurk)
 type annotations stubs module
 [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [Literals for boto3 MTurk module](#literals-for-boto3-mturk-module)
-  - [AssignmentStatus](#assignmentstatus)
-  - [Comparator](#comparator)
-  - [EventType](#eventtype)
-  - [HITAccessActions](#hitaccessactions)
-  - [HITReviewStatus](#hitreviewstatus)
-  - [HITStatus](#hitstatus)
+  - [AssignmentStatusType](#assignmentstatustype)
+  - [ComparatorType](#comparatortype)
+  - [EventTypeType](#eventtypetype)
+  - [HITAccessActionsType](#hitaccessactionstype)
+  - [HITReviewStatusType](#hitreviewstatustype)
+  - [HITStatusType](#hitstatustype)
   - [ListAssignmentsForHITPaginatorName](#listassignmentsforhitpaginatorname)
   - [ListBonusPaymentsPaginatorName](#listbonuspaymentspaginatorname)
   - [ListHITsForQualificationTypePaginatorName](#listhitsforqualificationtypepaginatorname)
@@ -23,18 +23,18 @@ type annotations stubs module
   - [ListReviewableHITsPaginatorName](#listreviewablehitspaginatorname)
   - [ListWorkerBlocksPaginatorName](#listworkerblockspaginatorname)
   - [ListWorkersWithQualificationTypePaginatorName](#listworkerswithqualificationtypepaginatorname)
-  - [NotificationTransport](#notificationtransport)
-  - [NotifyWorkersFailureCode](#notifyworkersfailurecode)
-  - [QualificationStatus](#qualificationstatus)
-  - [QualificationTypeStatus](#qualificationtypestatus)
-  - [ReviewActionStatus](#reviewactionstatus)
-  - [ReviewPolicyLevel](#reviewpolicylevel)
-  - [ReviewableHITStatus](#reviewablehitstatus)
+  - [NotificationTransportType](#notificationtransporttype)
+  - [NotifyWorkersFailureCodeType](#notifyworkersfailurecodetype)
+  - [QualificationStatusType](#qualificationstatustype)
+  - [QualificationTypeStatusType](#qualificationtypestatustype)
+  - [ReviewActionStatusType](#reviewactionstatustype)
+  - [ReviewPolicyLevelType](#reviewpolicyleveltype)
+  - [ReviewableHITStatusType](#reviewablehitstatustype)
 
-## AssignmentStatus
+## AssignmentStatusType
 
 ```python
-from mypy_boto3_mturk.literals import AssignmentStatus
+from mypy_boto3_mturk.literals import AssignmentStatusType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `Rejected`
 - `Submitted`
 
-## Comparator
+## ComparatorType
 
 ```python
-from mypy_boto3_mturk.literals import Comparator
+from mypy_boto3_mturk.literals import ComparatorType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `NotEqualTo`
 - `NotIn`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_mturk.literals import EventType
+from mypy_boto3_mturk.literals import EventTypeType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 - `HITReviewable`
 - `Ping`
 
-## HITAccessActions
+## HITAccessActionsType
 
 ```python
-from mypy_boto3_mturk.literals import HITAccessActions
+from mypy_boto3_mturk.literals import HITAccessActionsType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `DiscoverPreviewAndAccept`
 - `PreviewAndAccept`
 
-## HITReviewStatus
+## HITReviewStatusType
 
 ```python
-from mypy_boto3_mturk.literals import HITReviewStatus
+from mypy_boto3_mturk.literals import HITReviewStatusType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `ReviewedAppropriate`
 - `ReviewedInappropriate`
 
-## HITStatus
+## HITStatusType
 
 ```python
-from mypy_boto3_mturk.literals import HITStatus
+from mypy_boto3_mturk.literals import HITStatusType
 ```
 
 Values:
@@ -212,10 +212,10 @@ Values:
 
 - `list_workers_with_qualification_type`
 
-## NotificationTransport
+## NotificationTransportType
 
 ```python
-from mypy_boto3_mturk.literals import NotificationTransport
+from mypy_boto3_mturk.literals import NotificationTransportType
 ```
 
 Values:
@@ -224,10 +224,10 @@ Values:
 - `SNS`
 - `SQS`
 
-## NotifyWorkersFailureCode
+## NotifyWorkersFailureCodeType
 
 ```python
-from mypy_boto3_mturk.literals import NotifyWorkersFailureCode
+from mypy_boto3_mturk.literals import NotifyWorkersFailureCodeType
 ```
 
 Values:
@@ -235,10 +235,10 @@ Values:
 - `HardFailure`
 - `SoftFailure`
 
-## QualificationStatus
+## QualificationStatusType
 
 ```python
-from mypy_boto3_mturk.literals import QualificationStatus
+from mypy_boto3_mturk.literals import QualificationStatusType
 ```
 
 Values:
@@ -246,10 +246,10 @@ Values:
 - `Granted`
 - `Revoked`
 
-## QualificationTypeStatus
+## QualificationTypeStatusType
 
 ```python
-from mypy_boto3_mturk.literals import QualificationTypeStatus
+from mypy_boto3_mturk.literals import QualificationTypeStatusType
 ```
 
 Values:
@@ -257,10 +257,10 @@ Values:
 - `Active`
 - `Inactive`
 
-## ReviewActionStatus
+## ReviewActionStatusType
 
 ```python
-from mypy_boto3_mturk.literals import ReviewActionStatus
+from mypy_boto3_mturk.literals import ReviewActionStatusType
 ```
 
 Values:
@@ -270,10 +270,10 @@ Values:
 - `Intended`
 - `Succeeded`
 
-## ReviewPolicyLevel
+## ReviewPolicyLevelType
 
 ```python
-from mypy_boto3_mturk.literals import ReviewPolicyLevel
+from mypy_boto3_mturk.literals import ReviewPolicyLevelType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 - `Assignment`
 - `HIT`
 
-## ReviewableHITStatus
+## ReviewableHITStatusType
 
 ```python
-from mypy_boto3_mturk.literals import ReviewableHITStatus
+from mypy_boto3_mturk.literals import ReviewableHITStatusType
 ```
 
 Values:

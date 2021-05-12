@@ -3,7 +3,7 @@
 > [Index](..) > ECR
 
 Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecr.html#ECR)
 type annotations stubs module
 [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
@@ -30,82 +30,82 @@ Can be used directly:
 from mypy_boto3_ecr.client import ECRClient
 ```
 
-ECRClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_check_layer_availability](./client.md#batch-check-layer-availability)
-- [batch_delete_image](./client.md#batch-delete-image)
-- [batch_get_image](./client.md#batch-get-image)
-- [can_paginate](./client.md#can-paginate)
-- [complete_layer_upload](./client.md#complete-layer-upload)
-- [create_repository](./client.md#create-repository)
-- [delete_lifecycle_policy](./client.md#delete-lifecycle-policy)
-- [delete_registry_policy](./client.md#delete-registry-policy)
-- [delete_repository](./client.md#delete-repository)
-- [delete_repository_policy](./client.md#delete-repository-policy)
-- [describe_image_scan_findings](./client.md#describe-image-scan-findings)
-- [describe_images](./client.md#describe-images)
-- [describe_registry](./client.md#describe-registry)
-- [describe_repositories](./client.md#describe-repositories)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_authorization_token](./client.md#get-authorization-token)
-- [get_download_url_for_layer](./client.md#get-download-url-for-layer)
-- [get_lifecycle_policy](./client.md#get-lifecycle-policy)
-- [get_lifecycle_policy_preview](./client.md#get-lifecycle-policy-preview)
-- [get_paginator](./client.md#get-paginator)
-- [get_registry_policy](./client.md#get-registry-policy)
-- [get_repository_policy](./client.md#get-repository-policy)
-- [get_waiter](./client.md#get-waiter)
-- [initiate_layer_upload](./client.md#initiate-layer-upload)
-- [list_images](./client.md#list-images)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_image](./client.md#put-image)
-- [put_image_scanning_configuration](./client.md#put-image-scanning-configuration)
-- [put_image_tag_mutability](./client.md#put-image-tag-mutability)
-- [put_lifecycle_policy](./client.md#put-lifecycle-policy)
-- [put_registry_policy](./client.md#put-registry-policy)
-- [put_replication_configuration](./client.md#put-replication-configuration)
-- [set_repository_policy](./client.md#set-repository-policy)
-- [start_image_scan](./client.md#start-image-scan)
-- [start_lifecycle_policy_preview](./client.md#start-lifecycle-policy-preview)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [upload_layer_part](./client.md#upload-layer-part)
+- [batch_check_layer_availability](./client.md#batch_check_layer_availability)
+- [batch_delete_image](./client.md#batch_delete_image)
+- [batch_get_image](./client.md#batch_get_image)
+- [can_paginate](./client.md#can_paginate)
+- [complete_layer_upload](./client.md#complete_layer_upload)
+- [create_repository](./client.md#create_repository)
+- [delete_lifecycle_policy](./client.md#delete_lifecycle_policy)
+- [delete_registry_policy](./client.md#delete_registry_policy)
+- [delete_repository](./client.md#delete_repository)
+- [delete_repository_policy](./client.md#delete_repository_policy)
+- [describe_image_scan_findings](./client.md#describe_image_scan_findings)
+- [describe_images](./client.md#describe_images)
+- [describe_registry](./client.md#describe_registry)
+- [describe_repositories](./client.md#describe_repositories)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_authorization_token](./client.md#get_authorization_token)
+- [get_download_url_for_layer](./client.md#get_download_url_for_layer)
+- [get_lifecycle_policy](./client.md#get_lifecycle_policy)
+- [get_lifecycle_policy_preview](./client.md#get_lifecycle_policy_preview)
+- [get_paginator](./client.md#get_paginator)
+- [get_registry_policy](./client.md#get_registry_policy)
+- [get_repository_policy](./client.md#get_repository_policy)
+- [get_waiter](./client.md#get_waiter)
+- [initiate_layer_upload](./client.md#initiate_layer_upload)
+- [list_images](./client.md#list_images)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_image](./client.md#put_image)
+- [put_image_scanning_configuration](./client.md#put_image_scanning_configuration)
+- [put_image_tag_mutability](./client.md#put_image_tag_mutability)
+- [put_lifecycle_policy](./client.md#put_lifecycle_policy)
+- [put_registry_policy](./client.md#put_registry_policy)
+- [put_replication_configuration](./client.md#put_replication_configuration)
+- [set_repository_policy](./client.md#set_repository_policy)
+- [start_image_scan](./client.md#start_image_scan)
+- [start_lifecycle_policy_preview](./client.md#start_lifecycle_policy_preview)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [upload_layer_part](./client.md#upload_layer_part)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [EmptyUploadException](./client.md#emptyuploadexception)
-- [ImageAlreadyExistsException](./client.md#imagealreadyexistsexception)
-- [ImageDigestDoesNotMatchException](./client.md#imagedigestdoesnotmatchexception)
-- [ImageNotFoundException](./client.md#imagenotfoundexception)
-- [ImageTagAlreadyExistsException](./client.md#imagetagalreadyexistsexception)
-- [InvalidLayerException](./client.md#invalidlayerexception)
-- [InvalidLayerPartException](./client.md#invalidlayerpartexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidTagParameterException](./client.md#invalidtagparameterexception)
-- [KmsException](./client.md#kmsexception)
-- [LayerAlreadyExistsException](./client.md#layeralreadyexistsexception)
-- [LayerInaccessibleException](./client.md#layerinaccessibleexception)
-- [LayerPartTooSmallException](./client.md#layerparttoosmallexception)
-- [LayersNotFoundException](./client.md#layersnotfoundexception)
-- [LifecyclePolicyNotFoundException](./client.md#lifecyclepolicynotfoundexception)
-- [LifecyclePolicyPreviewInProgressException](./client.md#lifecyclepolicypreviewinprogressexception)
-- [LifecyclePolicyPreviewNotFoundException](./client.md#lifecyclepolicypreviewnotfoundexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ReferencedImagesNotFoundException](./client.md#referencedimagesnotfoundexception)
-- [RegistryPolicyNotFoundException](./client.md#registrypolicynotfoundexception)
-- [RepositoryAlreadyExistsException](./client.md#repositoryalreadyexistsexception)
-- [RepositoryNotEmptyException](./client.md#repositorynotemptyexception)
-- [RepositoryNotFoundException](./client.md#repositorynotfoundexception)
-- [RepositoryPolicyNotFoundException](./client.md#repositorypolicynotfoundexception)
-- [ScanNotFoundException](./client.md#scannotfoundexception)
-- [ServerException](./client.md#serverexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [UnsupportedImageTypeException](./client.md#unsupportedimagetypeexception)
-- [UploadNotFoundException](./client.md#uploadnotfoundexception)
-- [ValidationException](./client.md#validationexception)
+ECRClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- EmptyUploadException
+- ImageAlreadyExistsException
+- ImageDigestDoesNotMatchException
+- ImageNotFoundException
+- ImageTagAlreadyExistsException
+- InvalidLayerException
+- InvalidLayerPartException
+- InvalidParameterException
+- InvalidTagParameterException
+- KmsException
+- LayerAlreadyExistsException
+- LayerInaccessibleException
+- LayerPartTooSmallException
+- LayersNotFoundException
+- LifecyclePolicyNotFoundException
+- LifecyclePolicyPreviewInProgressException
+- LifecyclePolicyPreviewNotFoundException
+- LimitExceededException
+- ReferencedImagesNotFoundException
+- RegistryPolicyNotFoundException
+- RepositoryAlreadyExistsException
+- RepositoryNotEmptyException
+- RepositoryNotFoundException
+- RepositoryPolicyNotFoundException
+- ScanNotFoundException
+- ServerException
+- TooManyTagsException
+- UnsupportedImageTypeException
+- UploadNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -151,20 +151,20 @@ from mypy_boto3_ecr.literals import DescribeImageScanFindingsPaginatorName, ...
 - [DescribeImageScanFindingsPaginatorName](./literals.md#describeimagescanfindingspaginatorname)
 - [DescribeImagesPaginatorName](./literals.md#describeimagespaginatorname)
 - [DescribeRepositoriesPaginatorName](./literals.md#describerepositoriespaginatorname)
-- [EncryptionType](./literals.md#encryptiontype)
-- [FindingSeverity](./literals.md#findingseverity)
+- [EncryptionTypeType](./literals.md#encryptiontypetype)
+- [FindingSeverityType](./literals.md#findingseveritytype)
 - [GetLifecyclePolicyPreviewPaginatorName](./literals.md#getlifecyclepolicypreviewpaginatorname)
-- [ImageActionType](./literals.md#imageactiontype)
-- [ImageFailureCode](./literals.md#imagefailurecode)
+- [ImageActionTypeType](./literals.md#imageactiontypetype)
+- [ImageFailureCodeType](./literals.md#imagefailurecodetype)
 - [ImageScanCompleteWaiterName](./literals.md#imagescancompletewaitername)
-- [ImageTagMutability](./literals.md#imagetagmutability)
-- [LayerAvailability](./literals.md#layeravailability)
-- [LayerFailureCode](./literals.md#layerfailurecode)
+- [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
+- [LayerAvailabilityType](./literals.md#layeravailabilitytype)
+- [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - [LifecyclePolicyPreviewCompleteWaiterName](./literals.md#lifecyclepolicypreviewcompletewaitername)
-- [LifecyclePolicyPreviewStatus](./literals.md#lifecyclepolicypreviewstatus)
+- [LifecyclePolicyPreviewStatusType](./literals.md#lifecyclepolicypreviewstatustype)
 - [ListImagesPaginatorName](./literals.md#listimagespaginatorname)
-- [ScanStatus](./literals.md#scanstatus)
-- [TagStatus](./literals.md#tagstatus)
+- [ScanStatusType](./literals.md#scanstatustype)
+- [TagStatusType](./literals.md#tagstatustype)
 
 ## Typed dictionaries
 

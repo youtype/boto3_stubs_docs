@@ -3,7 +3,7 @@
 > [Index](..) > [EFS](.) > Literals
 
 Auto-generated documentation for
-[EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/efs.html#EFS)
 type annotations stubs module
 [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
@@ -11,11 +11,11 @@ type annotations stubs module
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
   - [DescribeMountTargetsPaginatorName](#describemounttargetspaginatorname)
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
-  - [LifeCycleState](#lifecyclestate)
-  - [PerformanceMode](#performancemode)
-  - [Status](#status)
-  - [ThroughputMode](#throughputmode)
-  - [TransitionToIARules](#transitiontoiarules)
+  - [LifeCycleStateType](#lifecyclestatetype)
+  - [PerformanceModeType](#performancemodetype)
+  - [StatusType](#statustype)
+  - [ThroughputModeType](#throughputmodetype)
+  - [TransitionToIARulesType](#transitiontoiarulestype)
 
 ## DescribeFileSystemsPaginatorName
 
@@ -47,10 +47,10 @@ Values:
 
 - `describe_tags`
 
-## LifeCycleState
+## LifeCycleStateType
 
 ```python
-from mypy_boto3_efs.literals import LifeCycleState
+from mypy_boto3_efs.literals import LifeCycleStateType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `error`
 - `updating`
 
-## PerformanceMode
+## PerformanceModeType
 
 ```python
-from mypy_boto3_efs.literals import PerformanceMode
+from mypy_boto3_efs.literals import PerformanceModeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `generalPurpose`
 - `maxIO`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_efs.literals import Status
+from mypy_boto3_efs.literals import StatusType
 ```
 
 Values:
@@ -86,10 +86,10 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
-## ThroughputMode
+## ThroughputModeType
 
 ```python
-from mypy_boto3_efs.literals import ThroughputMode
+from mypy_boto3_efs.literals import ThroughputModeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `bursting`
 - `provisioned`
 
-## TransitionToIARules
+## TransitionToIARulesType
 
 ```python
-from mypy_boto3_efs.literals import TransitionToIARules
+from mypy_boto3_efs.literals import TransitionToIARulesType
 ```
 
 Values:

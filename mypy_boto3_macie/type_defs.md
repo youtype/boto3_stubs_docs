@@ -3,7 +3,7 @@
 > [Index](..) > [Macie](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie)
 type annotations stubs module
 [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
@@ -42,9 +42,9 @@ from mypy_boto3_macie.type_defs import ClassificationTypeTypeDef
 Required fields:
 
 - `oneTime`:
-  [S3OneTimeClassificationType](./literals.md#s3onetimeclassificationtype)
+  [S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype)
 - `continuous`: `Literal['FULL']` (see
-  [S3ContinuousClassificationType](./literals.md#s3continuousclassificationtype))
+  [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
 
 ## ClassificationTypeUpdateTypeDef
 
@@ -55,9 +55,9 @@ from mypy_boto3_macie.type_defs import ClassificationTypeUpdateTypeDef
 Optional fields:
 
 - `oneTime`:
-  [S3OneTimeClassificationType](./literals.md#s3onetimeclassificationtype)
+  [S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype)
 - `continuous`: `Literal['FULL']` (see
-  [S3ContinuousClassificationType](./literals.md#s3continuousclassificationtype))
+  [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
 
 ## DisassociateS3ResourcesResultTypeDef
 

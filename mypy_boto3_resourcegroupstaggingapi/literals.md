@@ -3,23 +3,23 @@
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > Literals
 
 Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
 [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 - [Literals for boto3 ResourceGroupsTaggingAPI module](#literals-for-boto3-resourcegroupstaggingapi-module)
-  - [ErrorCode](#errorcode)
+  - [ErrorCodeType](#errorcodetype)
   - [GetComplianceSummaryPaginatorName](#getcompliancesummarypaginatorname)
   - [GetResourcesPaginatorName](#getresourcespaginatorname)
   - [GetTagKeysPaginatorName](#gettagkeyspaginatorname)
   - [GetTagValuesPaginatorName](#gettagvaluespaginatorname)
-  - [GroupByAttribute](#groupbyattribute)
-  - [TargetIdType](#targetidtype)
+  - [GroupByAttributeType](#groupbyattributetype)
+  - [TargetIdTypeType](#targetidtypetype)
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCode
+from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCodeType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 
 - `get_tag_values`
 
-## GroupByAttribute
+## GroupByAttributeType
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.literals import GroupByAttribute
+from mypy_boto3_resourcegroupstaggingapi.literals import GroupByAttributeType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `RESOURCE_TYPE`
 - `TARGET_ID`
 
-## TargetIdType
+## TargetIdTypeType
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.literals import TargetIdType
+from mypy_boto3_resourcegroupstaggingapi.literals import TargetIdTypeType
 ```
 
 Values:

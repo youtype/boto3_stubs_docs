@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticInference](.) > Paginators
 
 Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
 [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
@@ -25,7 +25,7 @@ def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
 ```
 
 Boto3 documentation:
-[ElasticInference.Paginator.DescribeAccelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
+[ElasticInference.Paginator.DescribeAccelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
 
 Arguments for `DescribeAcceleratorsPaginator.paginate` method:
 

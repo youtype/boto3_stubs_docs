@@ -3,7 +3,7 @@
 > [Index](..) > [Chime](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/chime.html#Chime)
 type annotations stubs module
 [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
@@ -259,10 +259,10 @@ Required fields:
 
 Optional fields:
 
-- `AccountType`: [AccountType](./literals.md#accounttype)
+- `AccountType`: [AccountTypeType](./literals.md#accounttypetype)
 - `CreatedTimestamp`: `datetime`
-- `DefaultLicense`: [License](./literals.md#license)
-- `SupportedLicenses`: `List`\[[License](./literals.md#license)\]
+- `DefaultLicense`: [LicenseType](./literals.md#licensetype)
+- `SupportedLicenses`: `List`\[[LicenseType](./literals.md#licensetype)\]
 - `SigninDelegateGroups`:
   `List`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
 
@@ -318,7 +318,8 @@ from mypy_boto3_chime.type_defs import AppInstanceStreamingConfigurationTypeDef
 
 Required fields:
 
-- `AppInstanceDataType`: [AppInstanceDataType](./literals.md#appinstancedatatype)
+- `AppInstanceDataType`:
+  [AppInstanceDataTypeType](./literals.md#appinstancedatatypetype)
 - `ResourceArn`: `str`
 
 ## AppInstanceSummaryTypeDef
@@ -355,7 +356,7 @@ from mypy_boto3_chime.type_defs import AppInstanceUserMembershipSummaryTypeDef
 
 Optional fields:
 
-- `Type`: [ChannelMembershipType](./literals.md#channelmembershiptype)
+- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - `ReadMarkerTimestamp`: `datetime`
 
 ## AppInstanceUserSummaryTypeDef
@@ -427,7 +428,7 @@ from mypy_boto3_chime.type_defs import BatchChannelMembershipsTypeDef
 Optional fields:
 
 - `InvitedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Type`: [ChannelMembershipType](./literals.md#channelmembershiptype)
+- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - `Members`: `List`\[[IdentityTypeDef](./type_defs.md#identitytypedef)\]
 - `ChannelArn`: `str`
 
@@ -452,7 +453,7 @@ from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipErrorTypeDef
 Optional fields:
 
 - `MemberArn`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## BatchCreateChannelMembershipResponseTypeDef
@@ -541,7 +542,8 @@ Optional fields:
 - `BotId`: `str`
 - `UserId`: `str`
 - `DisplayName`: `str`
-- `BotType`: `Literal['ChatBot']` (see [BotType](./literals.md#bottype))
+- `BotType`: `Literal['ChatBot']` (see
+  [BotTypeType](./literals.md#bottypetype))
 - `Disabled`: `bool`
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
@@ -589,7 +591,8 @@ from mypy_boto3_chime.type_defs import ChannelMembershipForAppInstanceUserSummar
 
 Optional fields:
 
-- `ChannelSummary`: [ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)
+- `ChannelSummary`:
+  [ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)
 - `AppInstanceUserMembershipSummary`:
   [AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef)
 
@@ -612,7 +615,7 @@ from mypy_boto3_chime.type_defs import ChannelMembershipTypeDef
 Optional fields:
 
 - `InvitedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Type`: [ChannelMembershipType](./literals.md#channelmembershiptype)
+- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `ChannelArn`: `str`
 - `CreatedTimestamp`: `datetime`
@@ -629,7 +632,7 @@ Optional fields:
 - `MessageId`: `str`
 - `Content`: `str`
 - `Metadata`: `str`
-- `Type`: [ChannelMessageType](./literals.md#channelmessagetype)
+- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
 - `CreatedTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 - `LastEditedTimestamp`: `datetime`
@@ -648,14 +651,14 @@ Optional fields:
 - `MessageId`: `str`
 - `Content`: `str`
 - `Metadata`: `str`
-- `Type`: [ChannelMessageType](./literals.md#channelmessagetype)
+- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
 - `CreatedTimestamp`: `datetime`
 - `LastEditedTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 - `Sender`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `Redacted`: `bool`
 - `Persistence`:
-  [ChannelMessagePersistenceType](./literals.md#channelmessagepersistencetype)
+  [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
 
 ## ChannelModeratedByAppInstanceUserSummaryTypeDef
 
@@ -665,7 +668,8 @@ from mypy_boto3_chime.type_defs import ChannelModeratedByAppInstanceUserSummaryT
 
 Optional fields:
 
-- `ChannelSummary`: [ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)
+- `ChannelSummary`:
+  [ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)
 
 ## ChannelModeratorSummaryTypeDef
 
@@ -710,8 +714,8 @@ Optional fields:
 
 - `Name`: `str`
 - `ChannelArn`: `str`
-- `Mode`: [ChannelMode](./literals.md#channelmode)
-- `Privacy`: [ChannelPrivacy](./literals.md#channelprivacy)
+- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
+- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
 - `Metadata`: `str`
 - `LastMessageTimestamp`: `datetime`
 
@@ -725,8 +729,8 @@ Optional fields:
 
 - `Name`: `str`
 - `ChannelArn`: `str`
-- `Mode`: [ChannelMode](./literals.md#channelmode)
-- `Privacy`: [ChannelPrivacy](./literals.md#channelprivacy)
+- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
+- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
 - `Metadata`: `str`
 - `CreatedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `CreatedTimestamp`: `datetime`
@@ -935,7 +939,8 @@ from mypy_boto3_chime.type_defs import CreateRoomMembershipResponseTypeDef
 
 Optional fields:
 
-- `RoomMembership`: [RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef)
+- `RoomMembership`:
+  [RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef)
 
 ## CreateRoomResponseTypeDef
 
@@ -1008,7 +1013,8 @@ from mypy_boto3_chime.type_defs import CreateVoiceConnectorResponseTypeDef
 
 Optional fields:
 
-- `VoiceConnector`: [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
+- `VoiceConnector`:
+  [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
 
 ## CredentialTypeDef
 
@@ -1260,7 +1266,8 @@ from mypy_boto3_chime.type_defs import GetChannelMessageResponseTypeDef
 
 Optional fields:
 
-- `ChannelMessage`: [ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef)
+- `ChannelMessage`:
+  [ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef)
 
 ## GetEventsConfigurationResponseTypeDef
 
@@ -1484,7 +1491,8 @@ from mypy_boto3_chime.type_defs import GetVoiceConnectorResponseTypeDef
 
 Optional fields:
 
-- `VoiceConnector`: [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
+- `VoiceConnector`:
+  [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
 
 ## GetVoiceConnectorStreamingConfigurationResponseTypeDef
 
@@ -1538,9 +1546,9 @@ from mypy_boto3_chime.type_defs import InviteTypeDef
 Optional fields:
 
 - `InviteId`: `str`
-- `Status`: [InviteStatus](./literals.md#invitestatus)
+- `Status`: [InviteStatusType](./literals.md#invitestatustype)
 - `EmailAddress`: `str`
-- `EmailStatus`: [EmailStatus](./literals.md#emailstatus)
+- `EmailStatus`: [EmailStatusType](./literals.md#emailstatustype)
 
 ## InviteUsersResponseTypeDef
 
@@ -1937,7 +1945,8 @@ Optional fields:
 
 - `MeetingId`: `str`
 - `ExternalMeetingId`: `str`
-- `MediaPlacement`: [MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef)
+- `MediaPlacement`:
+  [MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef)
 - `MediaRegion`: `str`
 
 ## MemberErrorTypeDef
@@ -1949,7 +1958,7 @@ from mypy_boto3_chime.type_defs import MemberErrorTypeDef
 Optional fields:
 
 - `MemberId`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## MemberTypeDef
@@ -1961,7 +1970,7 @@ from mypy_boto3_chime.type_defs import MemberTypeDef
 Optional fields:
 
 - `MemberId`: `str`
-- `MemberType`: [MemberType](./literals.md#membertype)
+- `MemberType`: [MemberTypeType](./literals.md#membertypetype)
 - `Email`: `str`
 - `FullName`: `str`
 - `AccountId`: `str`
@@ -1975,7 +1984,7 @@ from mypy_boto3_chime.type_defs import MembershipItemTypeDef
 Optional fields:
 
 - `MemberId`: `str`
-- `Role`: [RoomMembershipRole](./literals.md#roommembershiprole)
+- `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
 ## MessagingSessionEndpointTypeDef
 
@@ -1996,7 +2005,8 @@ from mypy_boto3_chime.type_defs import OrderedPhoneNumberTypeDef
 Optional fields:
 
 - `E164PhoneNumber`: `str`
-- `Status`: [OrderedPhoneNumberStatus](./literals.md#orderedphonenumberstatus)
+- `Status`:
+  [OrderedPhoneNumberStatusType](./literals.md#orderedphonenumberstatustype)
 
 ## OriginationRouteTypeDef
 
@@ -2008,7 +2018,8 @@ Optional fields:
 
 - `Host`: `str`
 - `Port`: `int`
-- `Protocol`: [OriginationRouteProtocol](./literals.md#originationrouteprotocol)
+- `Protocol`:
+  [OriginationRouteProtocolType](./literals.md#originationrouteprotocoltype)
 - `Priority`: `int`
 - `Weight`: `int`
 
@@ -2056,7 +2067,8 @@ from mypy_boto3_chime.type_defs import PhoneNumberAssociationTypeDef
 Optional fields:
 
 - `Value`: `str`
-- `Name`: [PhoneNumberAssociationName](./literals.md#phonenumberassociationname)
+- `Name`:
+  [PhoneNumberAssociationNameType](./literals.md#phonenumberassociationnametype)
 - `AssociatedTimestamp`: `datetime`
 
 ## PhoneNumberCapabilitiesTypeDef
@@ -2084,7 +2096,7 @@ Optional fields:
 
 - `CountryCode`: `str`
 - `SupportedPhoneNumberTypes`:
-  `List`\[[PhoneNumberType](./literals.md#phonenumbertype)\]
+  `List`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
 
 ## PhoneNumberErrorTypeDef
 
@@ -2095,7 +2107,7 @@ from mypy_boto3_chime.type_defs import PhoneNumberErrorTypeDef
 Optional fields:
 
 - `PhoneNumberId`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## PhoneNumberOrderTypeDef
@@ -2107,8 +2119,10 @@ from mypy_boto3_chime.type_defs import PhoneNumberOrderTypeDef
 Optional fields:
 
 - `PhoneNumberOrderId`: `str`
-- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
-- `Status`: [PhoneNumberOrderStatus](./literals.md#phonenumberorderstatus)
+- `ProductType`:
+  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
+- `Status`:
+  [PhoneNumberOrderStatusType](./literals.md#phonenumberorderstatustype)
 - `OrderedPhoneNumbers`:
   `List`\[[OrderedPhoneNumberTypeDef](./type_defs.md#orderedphonenumbertypedef)\]
 - `CreatedTimestamp`: `datetime`
@@ -2125,15 +2139,17 @@ Optional fields:
 - `PhoneNumberId`: `str`
 - `E164PhoneNumber`: `str`
 - `Country`: `str`
-- `Type`: [PhoneNumberType](./literals.md#phonenumbertype)
-- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
-- `Status`: [PhoneNumberStatus](./literals.md#phonenumberstatus)
+- `Type`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
+- `ProductType`:
+  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
+- `Status`: [PhoneNumberStatusType](./literals.md#phonenumberstatustype)
 - `Capabilities`:
   [PhoneNumberCapabilitiesTypeDef](./type_defs.md#phonenumbercapabilitiestypedef)
 - `Associations`:
   `List`\[[PhoneNumberAssociationTypeDef](./type_defs.md#phonenumberassociationtypedef)\]
 - `CallingName`: `str`
-- `CallingNameStatus`: [CallingNameStatus](./literals.md#callingnamestatus)
+- `CallingNameStatus`:
+  [CallingNameStatusType](./literals.md#callingnamestatustype)
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
 - `DeletionTimestamp`: `datetime`
@@ -2149,18 +2165,19 @@ Optional fields:
 - `VoiceConnectorId`: `str`
 - `ProxySessionId`: `str`
 - `Name`: `str`
-- `Status`: [ProxySessionStatus](./literals.md#proxysessionstatus)
+- `Status`: [ProxySessionStatusType](./literals.md#proxysessionstatustype)
 - `ExpiryMinutes`: `int`
-- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
 - `EndedTimestamp`: `datetime`
 - `Participants`:
   `List`\[[ParticipantTypeDef](./type_defs.md#participanttypedef)\]
 - `NumberSelectionBehavior`:
-  [NumberSelectionBehavior](./literals.md#numberselectionbehavior)
-- `GeoMatchLevel`: [GeoMatchLevel](./literals.md#geomatchlevel)
-- `GeoMatchParams`: [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
+  [NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype)
+- `GeoMatchLevel`: [GeoMatchLevelType](./literals.md#geomatchleveltype)
+- `GeoMatchParams`:
+  [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
 
 ## ProxyTypeDef
 
@@ -2359,7 +2376,7 @@ Optional fields:
 
 - `RoomId`: `str`
 - `Member`: [MemberTypeDef](./type_defs.md#membertypedef)
-- `Role`: [RoomMembershipRole](./literals.md#roommembershiprole)
+- `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 - `InvitedBy`: `str`
 - `UpdatedTimestamp`: `datetime`
 
@@ -2489,7 +2506,7 @@ Optional fields:
 - `SipRuleId`: `str`
 - `Name`: `str`
 - `Disabled`: `bool`
-- `TriggerType`: [SipRuleTriggerType](./literals.md#sipruletriggertype)
+- `TriggerType`: [SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype)
 - `TriggerValue`: `str`
 - `TargetApplications`:
   `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
@@ -2520,7 +2537,8 @@ from mypy_boto3_chime.type_defs import StreamingNotificationTargetTypeDef
 
 Required fields:
 
-- `NotificationTarget`: [NotificationTarget](./literals.md#notificationtarget)
+- `NotificationTarget`:
+  [NotificationTargetType](./literals.md#notificationtargettype)
 
 ## TagTypeDef
 
@@ -2653,7 +2671,8 @@ Required fields:
 
 Optional fields:
 
-- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
+- `ProductType`:
+  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
 - `CallingName`: `str`
 
 ## UpdatePhoneNumberResponseTypeDef
@@ -2684,7 +2703,8 @@ from mypy_boto3_chime.type_defs import UpdateRoomMembershipResponseTypeDef
 
 Optional fields:
 
-- `RoomMembership`: [RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef)
+- `RoomMembership`:
+  [RoomMembershipTypeDef](./type_defs.md#roommembershiptypedef)
 
 ## UpdateRoomResponseTypeDef
 
@@ -2729,8 +2749,8 @@ Required fields:
 
 Optional fields:
 
-- `LicenseType`: [License](./literals.md#license)
-- `UserType`: [UserType](./literals.md#usertype)
+- `LicenseType`: [LicenseType](./literals.md#licensetype)
+- `UserType`: [UserTypeType](./literals.md#usertypetype)
 - `AlexaForBusinessMetadata`:
   [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 
@@ -2763,7 +2783,8 @@ from mypy_boto3_chime.type_defs import UpdateVoiceConnectorResponseTypeDef
 
 Optional fields:
 
-- `VoiceConnector`: [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
+- `VoiceConnector`:
+  [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
 
 ## UserErrorTypeDef
 
@@ -2774,7 +2795,7 @@ from mypy_boto3_chime.type_defs import UserErrorTypeDef
 Optional fields:
 
 - `UserId`: `str`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## UserSettingsTypeDef
@@ -2804,11 +2825,11 @@ Optional fields:
 - `PrimaryEmail`: `str`
 - `PrimaryProvisionedNumber`: `str`
 - `DisplayName`: `str`
-- `LicenseType`: [License](./literals.md#license)
-- `UserType`: [UserType](./literals.md#usertype)
+- `LicenseType`: [LicenseType](./literals.md#licensetype)
+- `UserType`: [UserTypeType](./literals.md#usertypetype)
 - `UserRegistrationStatus`:
-  [RegistrationStatus](./literals.md#registrationstatus)
-- `UserInvitationStatus`: [InviteStatus](./literals.md#invitestatus)
+  [RegistrationStatusType](./literals.md#registrationstatustype)
+- `UserInvitationStatus`: [InviteStatusType](./literals.md#invitestatustype)
 - `RegisteredOn`: `datetime`
 - `InvitedOn`: `datetime`
 - `AlexaForBusinessMetadata`:
@@ -2860,7 +2881,8 @@ from mypy_boto3_chime.type_defs import VoiceConnectorTypeDef
 Optional fields:
 
 - `VoiceConnectorId`: `str`
-- `AwsRegion`: [VoiceConnectorAwsRegion](./literals.md#voiceconnectorawsregion)
+- `AwsRegion`:
+  [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
 - `Name`: `str`
 - `OutboundHostName`: `str`
 - `RequireEncryption`: `bool`

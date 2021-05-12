@@ -3,7 +3,7 @@
 > [Index](..) > AutoScalingPlans
 
 Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
 [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
@@ -30,29 +30,29 @@ Can be used directly:
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 ```
 
-AutoScalingPlansClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_scaling_plan](./client.md#create-scaling-plan)
-- [delete_scaling_plan](./client.md#delete-scaling-plan)
-- [describe_scaling_plan_resources](./client.md#describe-scaling-plan-resources)
-- [describe_scaling_plans](./client.md#describe-scaling-plans)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_scaling_plan_resource_forecast_data](./client.md#get-scaling-plan-resource-forecast-data)
-- [update_scaling_plan](./client.md#update-scaling-plan)
+- [can_paginate](./client.md#can_paginate)
+- [create_scaling_plan](./client.md#create_scaling_plan)
+- [delete_scaling_plan](./client.md#delete_scaling_plan)
+- [describe_scaling_plan_resources](./client.md#describe_scaling_plan_resources)
+- [describe_scaling_plans](./client.md#describe_scaling_plans)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_scaling_plan_resource_forecast_data](./client.md#get_scaling_plan_resource_forecast_data)
+- [update_scaling_plan](./client.md#update_scaling_plan)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentUpdateException](./client.md#concurrentupdateexception)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ObjectNotFoundException](./client.md#objectnotfoundexception)
-- [ValidationException](./client.md#validationexception)
+AutoScalingPlansClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentUpdateException
+- InternalServiceException
+- InvalidNextTokenException
+- LimitExceededException
+- ObjectNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -80,18 +80,18 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 
 - [DescribeScalingPlanResourcesPaginatorName](./literals.md#describescalingplanresourcespaginatorname)
 - [DescribeScalingPlansPaginatorName](./literals.md#describescalingplanspaginatorname)
-- [ForecastDataType](./literals.md#forecastdatatype)
-- [LoadMetricType](./literals.md#loadmetrictype)
-- [MetricStatistic](./literals.md#metricstatistic)
-- [PolicyType](./literals.md#policytype)
-- [PredictiveScalingMaxCapacityBehavior](./literals.md#predictivescalingmaxcapacitybehavior)
-- [PredictiveScalingMode](./literals.md#predictivescalingmode)
-- [ScalableDimension](./literals.md#scalabledimension)
-- [ScalingMetricType](./literals.md#scalingmetrictype)
-- [ScalingPlanStatusCode](./literals.md#scalingplanstatuscode)
-- [ScalingPolicyUpdateBehavior](./literals.md#scalingpolicyupdatebehavior)
-- [ScalingStatusCode](./literals.md#scalingstatuscode)
-- [ServiceNamespace](./literals.md#servicenamespace)
+- [ForecastDataTypeType](./literals.md#forecastdatatypetype)
+- [LoadMetricTypeType](./literals.md#loadmetrictypetype)
+- [MetricStatisticType](./literals.md#metricstatistictype)
+- [PolicyTypeType](./literals.md#policytypetype)
+- [PredictiveScalingMaxCapacityBehaviorType](./literals.md#predictivescalingmaxcapacitybehaviortype)
+- [PredictiveScalingModeType](./literals.md#predictivescalingmodetype)
+- [ScalableDimensionType](./literals.md#scalabledimensiontype)
+- [ScalingMetricTypeType](./literals.md#scalingmetrictypetype)
+- [ScalingPlanStatusCodeType](./literals.md#scalingplanstatuscodetype)
+- [ScalingPolicyUpdateBehaviorType](./literals.md#scalingpolicyupdatebehaviortype)
+- [ScalingStatusCodeType](./literals.md#scalingstatuscodetype)
+- [ServiceNamespaceType](./literals.md#servicenamespacetype)
 
 ## Typed dictionaries
 

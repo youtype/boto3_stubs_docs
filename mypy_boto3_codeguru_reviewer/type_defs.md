@@ -3,7 +3,7 @@
 > [Index](..) > [CodeGuruReviewer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
@@ -73,13 +73,14 @@ Optional fields:
 - `CodeReviewArn`: `str`
 - `RepositoryName`: `str`
 - `Owner`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
-- `State`: [JobState](./literals.md#jobstate)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+- `State`: [JobStateType](./literals.md#jobstatetype)
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
 - `Type`: [TypeType](./literals.md#typetype)
 - `PullRequestId`: `str`
-- `MetricsSummary`: [MetricsSummaryTypeDef](./type_defs.md#metricssummarytypedef)
+- `MetricsSummary`:
+  [MetricsSummaryTypeDef](./type_defs.md#metricssummarytypedef)
 
 ## CodeReviewTypeDef
 
@@ -93,14 +94,15 @@ Optional fields:
 - `CodeReviewArn`: `str`
 - `RepositoryName`: `str`
 - `Owner`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
-- `State`: [JobState](./literals.md#jobstate)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+- `State`: [JobStateType](./literals.md#jobstatetype)
 - `StateReason`: `str`
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
 - `Type`: [TypeType](./literals.md#typetype)
 - `PullRequestId`: `str`
-- `SourceCodeType`: [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
+- `SourceCodeType`:
+  [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
 - `AssociationArn`: `str`
 - `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
 
@@ -190,7 +192,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import KMSKeyDetailsTypeDef
 Optional fields:
 
 - `KMSKeyId`: `str`
-- `EncryptionOption`: [EncryptionOption](./literals.md#encryptionoption)
+- `EncryptionOption`:
+  [EncryptionOptionType](./literals.md#encryptionoptiontype)
 
 ## ListCodeReviewsResponseTypeDef
 
@@ -293,7 +296,7 @@ from mypy_boto3_codeguru_reviewer.type_defs import RecommendationFeedbackSummary
 Optional fields:
 
 - `RecommendationId`: `str`
-- `Reactions`: `List`\[[Reaction](./literals.md#reaction)\]
+- `Reactions`: `List`\[[ReactionType](./literals.md#reactiontype)\]
 - `UserId`: `str`
 
 ## RecommendationFeedbackTypeDef
@@ -306,7 +309,7 @@ Optional fields:
 
 - `CodeReviewArn`: `str`
 - `RecommendationId`: `str`
-- `Reactions`: `List`\[[Reaction](./literals.md#reaction)\]
+- `Reactions`: `List`\[[ReactionType](./literals.md#reactiontype)\]
 - `UserId`: `str`
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
@@ -350,8 +353,9 @@ Optional fields:
 - `AssociationId`: `str`
 - `Name`: `str`
 - `Owner`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
-- `State`: [RepositoryAssociationState](./literals.md#repositoryassociationstate)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+- `State`:
+  [RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)
 
 ## RepositoryAssociationTypeDef
 
@@ -366,8 +370,9 @@ Optional fields:
 - `ConnectionArn`: `str`
 - `Name`: `str`
 - `Owner`: `str`
-- `ProviderType`: [ProviderType](./literals.md#providertype)
-- `State`: [RepositoryAssociationState](./literals.md#repositoryassociationstate)
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+- `State`:
+  [RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)
 - `StateReason`: `str`
 - `LastUpdatedTimeStamp`: `datetime`
 - `CreatedTimeStamp`: `datetime`

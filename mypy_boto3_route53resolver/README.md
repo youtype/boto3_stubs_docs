@@ -3,7 +3,7 @@
 > [Index](..) > Route53Resolver
 
 Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
 [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
@@ -30,93 +30,93 @@ Can be used directly:
 from mypy_boto3_route53resolver.client import Route53ResolverClient
 ```
 
-Route53ResolverClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_firewall_rule_group](./client.md#associate-firewall-rule-group)
-- [associate_resolver_endpoint_ip_address](./client.md#associate-resolver-endpoint-ip-address)
-- [associate_resolver_query_log_config](./client.md#associate-resolver-query-log-config)
-- [associate_resolver_rule](./client.md#associate-resolver-rule)
-- [can_paginate](./client.md#can-paginate)
-- [create_firewall_domain_list](./client.md#create-firewall-domain-list)
-- [create_firewall_rule](./client.md#create-firewall-rule)
-- [create_firewall_rule_group](./client.md#create-firewall-rule-group)
-- [create_resolver_endpoint](./client.md#create-resolver-endpoint)
-- [create_resolver_query_log_config](./client.md#create-resolver-query-log-config)
-- [create_resolver_rule](./client.md#create-resolver-rule)
-- [delete_firewall_domain_list](./client.md#delete-firewall-domain-list)
-- [delete_firewall_rule](./client.md#delete-firewall-rule)
-- [delete_firewall_rule_group](./client.md#delete-firewall-rule-group)
-- [delete_resolver_endpoint](./client.md#delete-resolver-endpoint)
-- [delete_resolver_query_log_config](./client.md#delete-resolver-query-log-config)
-- [delete_resolver_rule](./client.md#delete-resolver-rule)
-- [disassociate_firewall_rule_group](./client.md#disassociate-firewall-rule-group)
-- [disassociate_resolver_endpoint_ip_address](./client.md#disassociate-resolver-endpoint-ip-address)
-- [disassociate_resolver_query_log_config](./client.md#disassociate-resolver-query-log-config)
-- [disassociate_resolver_rule](./client.md#disassociate-resolver-rule)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_firewall_config](./client.md#get-firewall-config)
-- [get_firewall_domain_list](./client.md#get-firewall-domain-list)
-- [get_firewall_rule_group](./client.md#get-firewall-rule-group)
-- [get_firewall_rule_group_association](./client.md#get-firewall-rule-group-association)
-- [get_firewall_rule_group_policy](./client.md#get-firewall-rule-group-policy)
-- [get_paginator](./client.md#get-paginator)
-- [get_resolver_dnssec_config](./client.md#get-resolver-dnssec-config)
-- [get_resolver_endpoint](./client.md#get-resolver-endpoint)
-- [get_resolver_query_log_config](./client.md#get-resolver-query-log-config)
-- [get_resolver_query_log_config_association](./client.md#get-resolver-query-log-config-association)
-- [get_resolver_query_log_config_policy](./client.md#get-resolver-query-log-config-policy)
-- [get_resolver_rule](./client.md#get-resolver-rule)
-- [get_resolver_rule_association](./client.md#get-resolver-rule-association)
-- [get_resolver_rule_policy](./client.md#get-resolver-rule-policy)
-- [import_firewall_domains](./client.md#import-firewall-domains)
-- [list_firewall_configs](./client.md#list-firewall-configs)
-- [list_firewall_domain_lists](./client.md#list-firewall-domain-lists)
-- [list_firewall_domains](./client.md#list-firewall-domains)
-- [list_firewall_rule_group_associations](./client.md#list-firewall-rule-group-associations)
-- [list_firewall_rule_groups](./client.md#list-firewall-rule-groups)
-- [list_firewall_rules](./client.md#list-firewall-rules)
-- [list_resolver_dnssec_configs](./client.md#list-resolver-dnssec-configs)
-- [list_resolver_endpoint_ip_addresses](./client.md#list-resolver-endpoint-ip-addresses)
-- [list_resolver_endpoints](./client.md#list-resolver-endpoints)
-- [list_resolver_query_log_config_associations](./client.md#list-resolver-query-log-config-associations)
-- [list_resolver_query_log_configs](./client.md#list-resolver-query-log-configs)
-- [list_resolver_rule_associations](./client.md#list-resolver-rule-associations)
-- [list_resolver_rules](./client.md#list-resolver-rules)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_firewall_rule_group_policy](./client.md#put-firewall-rule-group-policy)
-- [put_resolver_query_log_config_policy](./client.md#put-resolver-query-log-config-policy)
-- [put_resolver_rule_policy](./client.md#put-resolver-rule-policy)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_firewall_config](./client.md#update-firewall-config)
-- [update_firewall_domains](./client.md#update-firewall-domains)
-- [update_firewall_rule](./client.md#update-firewall-rule)
-- [update_firewall_rule_group_association](./client.md#update-firewall-rule-group-association)
-- [update_resolver_dnssec_config](./client.md#update-resolver-dnssec-config)
-- [update_resolver_endpoint](./client.md#update-resolver-endpoint)
-- [update_resolver_rule](./client.md#update-resolver-rule)
+- [associate_firewall_rule_group](./client.md#associate_firewall_rule_group)
+- [associate_resolver_endpoint_ip_address](./client.md#associate_resolver_endpoint_ip_address)
+- [associate_resolver_query_log_config](./client.md#associate_resolver_query_log_config)
+- [associate_resolver_rule](./client.md#associate_resolver_rule)
+- [can_paginate](./client.md#can_paginate)
+- [create_firewall_domain_list](./client.md#create_firewall_domain_list)
+- [create_firewall_rule](./client.md#create_firewall_rule)
+- [create_firewall_rule_group](./client.md#create_firewall_rule_group)
+- [create_resolver_endpoint](./client.md#create_resolver_endpoint)
+- [create_resolver_query_log_config](./client.md#create_resolver_query_log_config)
+- [create_resolver_rule](./client.md#create_resolver_rule)
+- [delete_firewall_domain_list](./client.md#delete_firewall_domain_list)
+- [delete_firewall_rule](./client.md#delete_firewall_rule)
+- [delete_firewall_rule_group](./client.md#delete_firewall_rule_group)
+- [delete_resolver_endpoint](./client.md#delete_resolver_endpoint)
+- [delete_resolver_query_log_config](./client.md#delete_resolver_query_log_config)
+- [delete_resolver_rule](./client.md#delete_resolver_rule)
+- [disassociate_firewall_rule_group](./client.md#disassociate_firewall_rule_group)
+- [disassociate_resolver_endpoint_ip_address](./client.md#disassociate_resolver_endpoint_ip_address)
+- [disassociate_resolver_query_log_config](./client.md#disassociate_resolver_query_log_config)
+- [disassociate_resolver_rule](./client.md#disassociate_resolver_rule)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_firewall_config](./client.md#get_firewall_config)
+- [get_firewall_domain_list](./client.md#get_firewall_domain_list)
+- [get_firewall_rule_group](./client.md#get_firewall_rule_group)
+- [get_firewall_rule_group_association](./client.md#get_firewall_rule_group_association)
+- [get_firewall_rule_group_policy](./client.md#get_firewall_rule_group_policy)
+- [get_paginator](./client.md#get_paginator)
+- [get_resolver_dnssec_config](./client.md#get_resolver_dnssec_config)
+- [get_resolver_endpoint](./client.md#get_resolver_endpoint)
+- [get_resolver_query_log_config](./client.md#get_resolver_query_log_config)
+- [get_resolver_query_log_config_association](./client.md#get_resolver_query_log_config_association)
+- [get_resolver_query_log_config_policy](./client.md#get_resolver_query_log_config_policy)
+- [get_resolver_rule](./client.md#get_resolver_rule)
+- [get_resolver_rule_association](./client.md#get_resolver_rule_association)
+- [get_resolver_rule_policy](./client.md#get_resolver_rule_policy)
+- [import_firewall_domains](./client.md#import_firewall_domains)
+- [list_firewall_configs](./client.md#list_firewall_configs)
+- [list_firewall_domain_lists](./client.md#list_firewall_domain_lists)
+- [list_firewall_domains](./client.md#list_firewall_domains)
+- [list_firewall_rule_group_associations](./client.md#list_firewall_rule_group_associations)
+- [list_firewall_rule_groups](./client.md#list_firewall_rule_groups)
+- [list_firewall_rules](./client.md#list_firewall_rules)
+- [list_resolver_dnssec_configs](./client.md#list_resolver_dnssec_configs)
+- [list_resolver_endpoint_ip_addresses](./client.md#list_resolver_endpoint_ip_addresses)
+- [list_resolver_endpoints](./client.md#list_resolver_endpoints)
+- [list_resolver_query_log_config_associations](./client.md#list_resolver_query_log_config_associations)
+- [list_resolver_query_log_configs](./client.md#list_resolver_query_log_configs)
+- [list_resolver_rule_associations](./client.md#list_resolver_rule_associations)
+- [list_resolver_rules](./client.md#list_resolver_rules)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_firewall_rule_group_policy](./client.md#put_firewall_rule_group_policy)
+- [put_resolver_query_log_config_policy](./client.md#put_resolver_query_log_config_policy)
+- [put_resolver_rule_policy](./client.md#put_resolver_rule_policy)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_firewall_config](./client.md#update_firewall_config)
+- [update_firewall_domains](./client.md#update_firewall_domains)
+- [update_firewall_rule](./client.md#update_firewall_rule)
+- [update_firewall_rule_group_association](./client.md#update_firewall_rule_group_association)
+- [update_resolver_dnssec_config](./client.md#update_resolver_dnssec_config)
+- [update_resolver_endpoint](./client.md#update_resolver_endpoint)
+- [update_resolver_rule](./client.md#update_resolver_rule)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidPolicyDocument](./client.md#invalidpolicydocument)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [InvalidTagException](./client.md#invalidtagexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceExistsException](./client.md#resourceexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceUnavailableException](./client.md#resourceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UnknownResourceException](./client.md#unknownresourceexception)
-- [ValidationException](./client.md#validationexception)
+Route53ResolverClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServiceErrorException
+- InvalidNextTokenException
+- InvalidParameterException
+- InvalidPolicyDocument
+- InvalidRequestException
+- InvalidTagException
+- LimitExceededException
+- ResourceExistsException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceUnavailableException
+- ThrottlingException
+- UnknownResourceException
+- ValidationException
 
 ## Paginators
 
@@ -151,19 +151,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_route53resolver.literals import Action, ...
+from mypy_boto3_route53resolver.literals import ActionType, ...
 ```
 
-- [Action](./literals.md#action)
-- [BlockOverrideDnsType](./literals.md#blockoverridednstype)
-- [BlockResponse](./literals.md#blockresponse)
-- [FirewallDomainImportOperation](./literals.md#firewalldomainimportoperation)
-- [FirewallDomainListStatus](./literals.md#firewalldomainliststatus)
-- [FirewallDomainUpdateOperation](./literals.md#firewalldomainupdateoperation)
-- [FirewallFailOpenStatus](./literals.md#firewallfailopenstatus)
-- [FirewallRuleGroupAssociationStatus](./literals.md#firewallrulegroupassociationstatus)
-- [FirewallRuleGroupStatus](./literals.md#firewallrulegroupstatus)
-- [IpAddressStatus](./literals.md#ipaddressstatus)
+- [ActionType](./literals.md#actiontype)
+- [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype)
+- [BlockResponseType](./literals.md#blockresponsetype)
+- [FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype)
+- [FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype)
+- [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
+- [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
+- [FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype)
+- [FirewallRuleGroupStatusType](./literals.md#firewallrulegroupstatustype)
+- [IpAddressStatusType](./literals.md#ipaddressstatustype)
 - [ListFirewallConfigsPaginatorName](./literals.md#listfirewallconfigspaginatorname)
 - [ListFirewallDomainListsPaginatorName](./literals.md#listfirewalldomainlistspaginatorname)
 - [ListFirewallDomainsPaginatorName](./literals.md#listfirewalldomainspaginatorname)
@@ -178,19 +178,19 @@ from mypy_boto3_route53resolver.literals import Action, ...
 - [ListResolverRuleAssociationsPaginatorName](./literals.md#listresolverruleassociationspaginatorname)
 - [ListResolverRulesPaginatorName](./literals.md#listresolverrulespaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [MutationProtectionStatus](./literals.md#mutationprotectionstatus)
-- [ResolverDNSSECValidationStatus](./literals.md#resolverdnssecvalidationstatus)
-- [ResolverEndpointDirection](./literals.md#resolverendpointdirection)
-- [ResolverEndpointStatus](./literals.md#resolverendpointstatus)
-- [ResolverQueryLogConfigAssociationError](./literals.md#resolverquerylogconfigassociationerror)
-- [ResolverQueryLogConfigAssociationStatus](./literals.md#resolverquerylogconfigassociationstatus)
-- [ResolverQueryLogConfigStatus](./literals.md#resolverquerylogconfigstatus)
-- [ResolverRuleAssociationStatus](./literals.md#resolverruleassociationstatus)
-- [ResolverRuleStatus](./literals.md#resolverrulestatus)
-- [RuleTypeOption](./literals.md#ruletypeoption)
-- [ShareStatus](./literals.md#sharestatus)
-- [SortOrder](./literals.md#sortorder)
-- [Validation](./literals.md#validation)
+- [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
+- [ResolverDNSSECValidationStatusType](./literals.md#resolverdnssecvalidationstatustype)
+- [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
+- [ResolverEndpointStatusType](./literals.md#resolverendpointstatustype)
+- [ResolverQueryLogConfigAssociationErrorType](./literals.md#resolverquerylogconfigassociationerrortype)
+- [ResolverQueryLogConfigAssociationStatusType](./literals.md#resolverquerylogconfigassociationstatustype)
+- [ResolverQueryLogConfigStatusType](./literals.md#resolverquerylogconfigstatustype)
+- [ResolverRuleAssociationStatusType](./literals.md#resolverruleassociationstatustype)
+- [ResolverRuleStatusType](./literals.md#resolverrulestatustype)
+- [RuleTypeOptionType](./literals.md#ruletypeoptiontype)
+- [ShareStatusType](./literals.md#sharestatustype)
+- [SortOrderType](./literals.md#sortordertype)
+- [ValidationType](./literals.md#validationtype)
 
 ## Typed dictionaries
 

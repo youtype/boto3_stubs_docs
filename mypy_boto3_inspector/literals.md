@@ -3,18 +3,18 @@
 > [Index](..) > [Inspector](.) > Literals
 
 Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/inspector.html#Inspector)
 type annotations stubs module
 [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [Literals for boto3 Inspector module](#literals-for-boto3-inspector-module)
-  - [AgentHealth](#agenthealth)
-  - [AgentHealthCode](#agenthealthcode)
-  - [AssessmentRunNotificationSnsStatusCode](#assessmentrunnotificationsnsstatuscode)
-  - [AssessmentRunState](#assessmentrunstate)
-  - [AssetType](#assettype)
-  - [FailedItemErrorCode](#faileditemerrorcode)
-  - [InspectorEvent](#inspectorevent)
+  - [AgentHealthCodeType](#agenthealthcodetype)
+  - [AgentHealthType](#agenthealthtype)
+  - [AssessmentRunNotificationSnsStatusCodeType](#assessmentrunnotificationsnsstatuscodetype)
+  - [AssessmentRunStateType](#assessmentrunstatetype)
+  - [AssetTypeType](#assettypetype)
+  - [FailedItemErrorCodeType](#faileditemerrorcodetype)
+  - [InspectorEventType](#inspectoreventtype)
   - [ListAssessmentRunAgentsPaginatorName](#listassessmentrunagentspaginatorname)
   - [ListAssessmentRunsPaginatorName](#listassessmentrunspaginatorname)
   - [ListAssessmentTargetsPaginatorName](#listassessmenttargetspaginatorname)
@@ -23,32 +23,20 @@ type annotations stubs module
   - [ListExclusionsPaginatorName](#listexclusionspaginatorname)
   - [ListFindingsPaginatorName](#listfindingspaginatorname)
   - [ListRulesPackagesPaginatorName](#listrulespackagespaginatorname)
-  - [Locale](#locale)
+  - [LocaleType](#localetype)
   - [PreviewAgentsPaginatorName](#previewagentspaginatorname)
-  - [PreviewStatus](#previewstatus)
-  - [ReportFileFormat](#reportfileformat)
-  - [ReportStatus](#reportstatus)
-  - [ReportType](#reporttype)
-  - [ScopeType](#scopetype)
-  - [Severity](#severity)
-  - [StopAction](#stopaction)
+  - [PreviewStatusType](#previewstatustype)
+  - [ReportFileFormatType](#reportfileformattype)
+  - [ReportStatusType](#reportstatustype)
+  - [ReportTypeType](#reporttypetype)
+  - [ScopeTypeType](#scopetypetype)
+  - [SeverityType](#severitytype)
+  - [StopActionType](#stopactiontype)
 
-## AgentHealth
-
-```python
-from mypy_boto3_inspector.literals import AgentHealth
-```
-
-Values:
-
-- `HEALTHY`
-- `UNHEALTHY`
-- `UNKNOWN`
-
-## AgentHealthCode
+## AgentHealthCodeType
 
 ```python
-from mypy_boto3_inspector.literals import AgentHealthCode
+from mypy_boto3_inspector.literals import AgentHealthCodeType
 ```
 
 Values:
@@ -60,10 +48,22 @@ Values:
 - `UNHEALTHY`
 - `UNKNOWN`
 
-## AssessmentRunNotificationSnsStatusCode
+## AgentHealthType
 
 ```python
-from mypy_boto3_inspector.literals import AssessmentRunNotificationSnsStatusCode
+from mypy_boto3_inspector.literals import AgentHealthType
+```
+
+Values:
+
+- `HEALTHY`
+- `UNHEALTHY`
+- `UNKNOWN`
+
+## AssessmentRunNotificationSnsStatusCodeType
+
+```python
+from mypy_boto3_inspector.literals import AssessmentRunNotificationSnsStatusCodeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `SUCCESS`
 - `TOPIC_DOES_NOT_EXIST`
 
-## AssessmentRunState
+## AssessmentRunStateType
 
 ```python
-from mypy_boto3_inspector.literals import AssessmentRunState
+from mypy_boto3_inspector.literals import AssessmentRunStateType
 ```
 
 Values:
@@ -95,20 +95,20 @@ Values:
 - `START_EVALUATING_RULES_PENDING`
 - `STOP_DATA_COLLECTION_PENDING`
 
-## AssetType
+## AssetTypeType
 
 ```python
-from mypy_boto3_inspector.literals import AssetType
+from mypy_boto3_inspector.literals import AssetTypeType
 ```
 
 Values:
 
 - `ec2-instance`
 
-## FailedItemErrorCode
+## FailedItemErrorCodeType
 
 ```python
-from mypy_boto3_inspector.literals import FailedItemErrorCode
+from mypy_boto3_inspector.literals import FailedItemErrorCodeType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `ITEM_DOES_NOT_EXIST`
 - `LIMIT_EXCEEDED`
 
-## InspectorEvent
+## InspectorEventType
 
 ```python
-from mypy_boto3_inspector.literals import InspectorEvent
+from mypy_boto3_inspector.literals import InspectorEventType
 ```
 
 Values:
@@ -214,10 +214,10 @@ Values:
 
 - `list_rules_packages`
 
-## Locale
+## LocaleType
 
 ```python
-from mypy_boto3_inspector.literals import Locale
+from mypy_boto3_inspector.literals import LocaleType
 ```
 
 Values:
@@ -234,10 +234,10 @@ Values:
 
 - `preview_agents`
 
-## PreviewStatus
+## PreviewStatusType
 
 ```python
-from mypy_boto3_inspector.literals import PreviewStatus
+from mypy_boto3_inspector.literals import PreviewStatusType
 ```
 
 Values:
@@ -245,10 +245,10 @@ Values:
 - `COMPLETED`
 - `WORK_IN_PROGRESS`
 
-## ReportFileFormat
+## ReportFileFormatType
 
 ```python
-from mypy_boto3_inspector.literals import ReportFileFormat
+from mypy_boto3_inspector.literals import ReportFileFormatType
 ```
 
 Values:
@@ -256,10 +256,10 @@ Values:
 - `HTML`
 - `PDF`
 
-## ReportStatus
+## ReportStatusType
 
 ```python
-from mypy_boto3_inspector.literals import ReportStatus
+from mypy_boto3_inspector.literals import ReportStatusType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 - `FAILED`
 - `WORK_IN_PROGRESS`
 
-## ReportType
+## ReportTypeType
 
 ```python
-from mypy_boto3_inspector.literals import ReportType
+from mypy_boto3_inspector.literals import ReportTypeType
 ```
 
 Values:
@@ -279,10 +279,10 @@ Values:
 - `FINDING`
 - `FULL`
 
-## ScopeType
+## ScopeTypeType
 
 ```python
-from mypy_boto3_inspector.literals import ScopeType
+from mypy_boto3_inspector.literals import ScopeTypeType
 ```
 
 Values:
@@ -290,10 +290,10 @@ Values:
 - `INSTANCE_ID`
 - `RULES_PACKAGE_ARN`
 
-## Severity
+## SeverityType
 
 ```python
-from mypy_boto3_inspector.literals import Severity
+from mypy_boto3_inspector.literals import SeverityType
 ```
 
 Values:
@@ -304,10 +304,10 @@ Values:
 - `Medium`
 - `Undefined`
 
-## StopAction
+## StopActionType
 
 ```python
-from mypy_boto3_inspector.literals import StopAction
+from mypy_boto3_inspector.literals import StopActionType
 ```
 
 Values:

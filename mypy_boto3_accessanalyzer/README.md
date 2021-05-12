@@ -3,7 +3,7 @@
 > [Index](..) > AccessAnalyzer
 
 Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
 [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
@@ -30,52 +30,52 @@ Can be used directly:
 from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
 ```
 
-AccessAnalyzerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [apply_archive_rule](./client.md#apply-archive-rule)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_policy_generation](./client.md#cancel-policy-generation)
-- [create_access_preview](./client.md#create-access-preview)
-- [create_analyzer](./client.md#create-analyzer)
-- [create_archive_rule](./client.md#create-archive-rule)
-- [delete_analyzer](./client.md#delete-analyzer)
-- [delete_archive_rule](./client.md#delete-archive-rule)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_access_preview](./client.md#get-access-preview)
-- [get_analyzed_resource](./client.md#get-analyzed-resource)
-- [get_analyzer](./client.md#get-analyzer)
-- [get_archive_rule](./client.md#get-archive-rule)
-- [get_finding](./client.md#get-finding)
-- [get_generated_policy](./client.md#get-generated-policy)
-- [get_paginator](./client.md#get-paginator)
-- [list_access_preview_findings](./client.md#list-access-preview-findings)
-- [list_access_previews](./client.md#list-access-previews)
-- [list_analyzed_resources](./client.md#list-analyzed-resources)
-- [list_analyzers](./client.md#list-analyzers)
-- [list_archive_rules](./client.md#list-archive-rules)
-- [list_findings](./client.md#list-findings)
-- [list_policy_generations](./client.md#list-policy-generations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_policy_generation](./client.md#start-policy-generation)
-- [start_resource_scan](./client.md#start-resource-scan)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_archive_rule](./client.md#update-archive-rule)
-- [update_findings](./client.md#update-findings)
-- [validate_policy](./client.md#validate-policy)
+- [apply_archive_rule](./client.md#apply_archive_rule)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_policy_generation](./client.md#cancel_policy_generation)
+- [create_access_preview](./client.md#create_access_preview)
+- [create_analyzer](./client.md#create_analyzer)
+- [create_archive_rule](./client.md#create_archive_rule)
+- [delete_analyzer](./client.md#delete_analyzer)
+- [delete_archive_rule](./client.md#delete_archive_rule)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_access_preview](./client.md#get_access_preview)
+- [get_analyzed_resource](./client.md#get_analyzed_resource)
+- [get_analyzer](./client.md#get_analyzer)
+- [get_archive_rule](./client.md#get_archive_rule)
+- [get_finding](./client.md#get_finding)
+- [get_generated_policy](./client.md#get_generated_policy)
+- [get_paginator](./client.md#get_paginator)
+- [list_access_preview_findings](./client.md#list_access_preview_findings)
+- [list_access_previews](./client.md#list_access_previews)
+- [list_analyzed_resources](./client.md#list_analyzed_resources)
+- [list_analyzers](./client.md#list_analyzers)
+- [list_archive_rules](./client.md#list_archive_rules)
+- [list_findings](./client.md#list_findings)
+- [list_policy_generations](./client.md#list_policy_generations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_policy_generation](./client.md#start_policy_generation)
+- [start_resource_scan](./client.md#start_resource_scan)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_archive_rule](./client.md#update_archive_rule)
+- [update_findings](./client.md#update_findings)
+- [validate_policy](./client.md#validate_policy)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+AccessAnalyzerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -104,20 +104,20 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.literals import AccessPreviewStatus, ...
+from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType, ...
 ```
 
-- [AccessPreviewStatus](./literals.md#accesspreviewstatus)
-- [AccessPreviewStatusReasonCode](./literals.md#accesspreviewstatusreasoncode)
-- [AclPermission](./literals.md#aclpermission)
-- [AnalyzerStatus](./literals.md#analyzerstatus)
-- [FindingChangeType](./literals.md#findingchangetype)
-- [FindingSourceType](./literals.md#findingsourcetype)
-- [FindingStatus](./literals.md#findingstatus)
-- [FindingStatusUpdate](./literals.md#findingstatusupdate)
-- [JobErrorCode](./literals.md#joberrorcode)
-- [JobStatus](./literals.md#jobstatus)
-- [KmsGrantOperation](./literals.md#kmsgrantoperation)
+- [AccessPreviewStatusReasonCodeType](./literals.md#accesspreviewstatusreasoncodetype)
+- [AccessPreviewStatusType](./literals.md#accesspreviewstatustype)
+- [AclPermissionType](./literals.md#aclpermissiontype)
+- [AnalyzerStatusType](./literals.md#analyzerstatustype)
+- [FindingChangeTypeType](./literals.md#findingchangetypetype)
+- [FindingSourceTypeType](./literals.md#findingsourcetypetype)
+- [FindingStatusType](./literals.md#findingstatustype)
+- [FindingStatusUpdateType](./literals.md#findingstatusupdatetype)
+- [JobErrorCodeType](./literals.md#joberrorcodetype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [KmsGrantOperationType](./literals.md#kmsgrantoperationtype)
 - [ListAccessPreviewFindingsPaginatorName](./literals.md#listaccesspreviewfindingspaginatorname)
 - [ListAccessPreviewsPaginatorName](./literals.md#listaccesspreviewspaginatorname)
 - [ListAnalyzedResourcesPaginatorName](./literals.md#listanalyzedresourcespaginatorname)
@@ -125,13 +125,13 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatus, ...
 - [ListArchiveRulesPaginatorName](./literals.md#listarchiverulespaginatorname)
 - [ListFindingsPaginatorName](./literals.md#listfindingspaginatorname)
 - [ListPolicyGenerationsPaginatorName](./literals.md#listpolicygenerationspaginatorname)
-- [Locale](./literals.md#locale)
-- [OrderBy](./literals.md#orderby)
-- [PolicyType](./literals.md#policytype)
-- [ReasonCode](./literals.md#reasoncode)
-- [ResourceType](./literals.md#resourcetype)
+- [LocaleType](./literals.md#localetype)
+- [OrderByType](./literals.md#orderbytype)
+- [PolicyTypeType](./literals.md#policytypetype)
+- [ReasonCodeType](./literals.md#reasoncodetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
 - [TypeType](./literals.md#typetype)
-- [ValidatePolicyFindingType](./literals.md#validatepolicyfindingtype)
+- [ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype)
 - [ValidatePolicyPaginatorName](./literals.md#validatepolicypaginatorname)
 
 ## Typed dictionaries

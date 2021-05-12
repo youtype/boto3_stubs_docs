@@ -3,7 +3,7 @@
 > [Index](..) > Comprehend
 
 Auto-generated documentation for
-[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
 [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
@@ -30,94 +30,94 @@ Can be used directly:
 from mypy_boto3_comprehend.client import ComprehendClient
 ```
 
-ComprehendClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_detect_dominant_language](./client.md#batch-detect-dominant-language)
-- [batch_detect_entities](./client.md#batch-detect-entities)
-- [batch_detect_key_phrases](./client.md#batch-detect-key-phrases)
-- [batch_detect_sentiment](./client.md#batch-detect-sentiment)
-- [batch_detect_syntax](./client.md#batch-detect-syntax)
-- [can_paginate](./client.md#can-paginate)
-- [classify_document](./client.md#classify-document)
-- [contains_pii_entities](./client.md#contains-pii-entities)
-- [create_document_classifier](./client.md#create-document-classifier)
-- [create_endpoint](./client.md#create-endpoint)
-- [create_entity_recognizer](./client.md#create-entity-recognizer)
-- [delete_document_classifier](./client.md#delete-document-classifier)
-- [delete_endpoint](./client.md#delete-endpoint)
-- [delete_entity_recognizer](./client.md#delete-entity-recognizer)
-- [describe_document_classification_job](./client.md#describe-document-classification-job)
-- [describe_document_classifier](./client.md#describe-document-classifier)
-- [describe_dominant_language_detection_job](./client.md#describe-dominant-language-detection-job)
-- [describe_endpoint](./client.md#describe-endpoint)
-- [describe_entities_detection_job](./client.md#describe-entities-detection-job)
-- [describe_entity_recognizer](./client.md#describe-entity-recognizer)
-- [describe_events_detection_job](./client.md#describe-events-detection-job)
-- [describe_key_phrases_detection_job](./client.md#describe-key-phrases-detection-job)
-- [describe_pii_entities_detection_job](./client.md#describe-pii-entities-detection-job)
-- [describe_sentiment_detection_job](./client.md#describe-sentiment-detection-job)
-- [describe_topics_detection_job](./client.md#describe-topics-detection-job)
-- [detect_dominant_language](./client.md#detect-dominant-language)
-- [detect_entities](./client.md#detect-entities)
-- [detect_key_phrases](./client.md#detect-key-phrases)
-- [detect_pii_entities](./client.md#detect-pii-entities)
-- [detect_sentiment](./client.md#detect-sentiment)
-- [detect_syntax](./client.md#detect-syntax)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_document_classification_jobs](./client.md#list-document-classification-jobs)
-- [list_document_classifiers](./client.md#list-document-classifiers)
-- [list_dominant_language_detection_jobs](./client.md#list-dominant-language-detection-jobs)
-- [list_endpoints](./client.md#list-endpoints)
-- [list_entities_detection_jobs](./client.md#list-entities-detection-jobs)
-- [list_entity_recognizers](./client.md#list-entity-recognizers)
-- [list_events_detection_jobs](./client.md#list-events-detection-jobs)
-- [list_key_phrases_detection_jobs](./client.md#list-key-phrases-detection-jobs)
-- [list_pii_entities_detection_jobs](./client.md#list-pii-entities-detection-jobs)
-- [list_sentiment_detection_jobs](./client.md#list-sentiment-detection-jobs)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_topics_detection_jobs](./client.md#list-topics-detection-jobs)
-- [start_document_classification_job](./client.md#start-document-classification-job)
-- [start_dominant_language_detection_job](./client.md#start-dominant-language-detection-job)
-- [start_entities_detection_job](./client.md#start-entities-detection-job)
-- [start_events_detection_job](./client.md#start-events-detection-job)
-- [start_key_phrases_detection_job](./client.md#start-key-phrases-detection-job)
-- [start_pii_entities_detection_job](./client.md#start-pii-entities-detection-job)
-- [start_sentiment_detection_job](./client.md#start-sentiment-detection-job)
-- [start_topics_detection_job](./client.md#start-topics-detection-job)
-- [stop_dominant_language_detection_job](./client.md#stop-dominant-language-detection-job)
-- [stop_entities_detection_job](./client.md#stop-entities-detection-job)
-- [stop_events_detection_job](./client.md#stop-events-detection-job)
-- [stop_key_phrases_detection_job](./client.md#stop-key-phrases-detection-job)
-- [stop_pii_entities_detection_job](./client.md#stop-pii-entities-detection-job)
-- [stop_sentiment_detection_job](./client.md#stop-sentiment-detection-job)
-- [stop_training_document_classifier](./client.md#stop-training-document-classifier)
-- [stop_training_entity_recognizer](./client.md#stop-training-entity-recognizer)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_endpoint](./client.md#update-endpoint)
+- [batch_detect_dominant_language](./client.md#batch_detect_dominant_language)
+- [batch_detect_entities](./client.md#batch_detect_entities)
+- [batch_detect_key_phrases](./client.md#batch_detect_key_phrases)
+- [batch_detect_sentiment](./client.md#batch_detect_sentiment)
+- [batch_detect_syntax](./client.md#batch_detect_syntax)
+- [can_paginate](./client.md#can_paginate)
+- [classify_document](./client.md#classify_document)
+- [contains_pii_entities](./client.md#contains_pii_entities)
+- [create_document_classifier](./client.md#create_document_classifier)
+- [create_endpoint](./client.md#create_endpoint)
+- [create_entity_recognizer](./client.md#create_entity_recognizer)
+- [delete_document_classifier](./client.md#delete_document_classifier)
+- [delete_endpoint](./client.md#delete_endpoint)
+- [delete_entity_recognizer](./client.md#delete_entity_recognizer)
+- [describe_document_classification_job](./client.md#describe_document_classification_job)
+- [describe_document_classifier](./client.md#describe_document_classifier)
+- [describe_dominant_language_detection_job](./client.md#describe_dominant_language_detection_job)
+- [describe_endpoint](./client.md#describe_endpoint)
+- [describe_entities_detection_job](./client.md#describe_entities_detection_job)
+- [describe_entity_recognizer](./client.md#describe_entity_recognizer)
+- [describe_events_detection_job](./client.md#describe_events_detection_job)
+- [describe_key_phrases_detection_job](./client.md#describe_key_phrases_detection_job)
+- [describe_pii_entities_detection_job](./client.md#describe_pii_entities_detection_job)
+- [describe_sentiment_detection_job](./client.md#describe_sentiment_detection_job)
+- [describe_topics_detection_job](./client.md#describe_topics_detection_job)
+- [detect_dominant_language](./client.md#detect_dominant_language)
+- [detect_entities](./client.md#detect_entities)
+- [detect_key_phrases](./client.md#detect_key_phrases)
+- [detect_pii_entities](./client.md#detect_pii_entities)
+- [detect_sentiment](./client.md#detect_sentiment)
+- [detect_syntax](./client.md#detect_syntax)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_document_classification_jobs](./client.md#list_document_classification_jobs)
+- [list_document_classifiers](./client.md#list_document_classifiers)
+- [list_dominant_language_detection_jobs](./client.md#list_dominant_language_detection_jobs)
+- [list_endpoints](./client.md#list_endpoints)
+- [list_entities_detection_jobs](./client.md#list_entities_detection_jobs)
+- [list_entity_recognizers](./client.md#list_entity_recognizers)
+- [list_events_detection_jobs](./client.md#list_events_detection_jobs)
+- [list_key_phrases_detection_jobs](./client.md#list_key_phrases_detection_jobs)
+- [list_pii_entities_detection_jobs](./client.md#list_pii_entities_detection_jobs)
+- [list_sentiment_detection_jobs](./client.md#list_sentiment_detection_jobs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_topics_detection_jobs](./client.md#list_topics_detection_jobs)
+- [start_document_classification_job](./client.md#start_document_classification_job)
+- [start_dominant_language_detection_job](./client.md#start_dominant_language_detection_job)
+- [start_entities_detection_job](./client.md#start_entities_detection_job)
+- [start_events_detection_job](./client.md#start_events_detection_job)
+- [start_key_phrases_detection_job](./client.md#start_key_phrases_detection_job)
+- [start_pii_entities_detection_job](./client.md#start_pii_entities_detection_job)
+- [start_sentiment_detection_job](./client.md#start_sentiment_detection_job)
+- [start_topics_detection_job](./client.md#start_topics_detection_job)
+- [stop_dominant_language_detection_job](./client.md#stop_dominant_language_detection_job)
+- [stop_entities_detection_job](./client.md#stop_entities_detection_job)
+- [stop_events_detection_job](./client.md#stop_events_detection_job)
+- [stop_key_phrases_detection_job](./client.md#stop_key_phrases_detection_job)
+- [stop_pii_entities_detection_job](./client.md#stop_pii_entities_detection_job)
+- [stop_sentiment_detection_job](./client.md#stop_sentiment_detection_job)
+- [stop_training_document_classifier](./client.md#stop_training_document_classifier)
+- [stop_training_entity_recognizer](./client.md#stop_training_entity_recognizer)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_endpoint](./client.md#update_endpoint)
 
 ### Exceptions
 
-- [BatchSizeLimitExceededException](./client.md#batchsizelimitexceededexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidFilterException](./client.md#invalidfilterexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [JobNotFoundException](./client.md#jobnotfoundexception)
-- [KmsKeyValidationException](./client.md#kmskeyvalidationexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceLimitExceededException](./client.md#resourcelimitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceUnavailableException](./client.md#resourceunavailableexception)
-- [TextSizeLimitExceededException](./client.md#textsizelimitexceededexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [TooManyTagKeysException](./client.md#toomanytagkeysexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [UnsupportedLanguageException](./client.md#unsupportedlanguageexception)
+ComprehendClient [exceptions](./client.md#exceptions)
+
+- BatchSizeLimitExceededException
+- ClientError
+- ConcurrentModificationException
+- InternalServerException
+- InvalidFilterException
+- InvalidRequestException
+- JobNotFoundException
+- KmsKeyValidationException
+- ResourceInUseException
+- ResourceLimitExceededException
+- ResourceNotFoundException
+- ResourceUnavailableException
+- TextSizeLimitExceededException
+- TooManyRequestsException
+- TooManyTagKeysException
+- TooManyTagsException
+- UnsupportedLanguageException
 
 ## Paginators
 
@@ -146,17 +146,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.literals import DocumentClassifierDataFormat, ...
+from mypy_boto3_comprehend.literals import DocumentClassifierDataFormatType, ...
 ```
 
-- [DocumentClassifierDataFormat](./literals.md#documentclassifierdataformat)
-- [DocumentClassifierMode](./literals.md#documentclassifiermode)
-- [EndpointStatus](./literals.md#endpointstatus)
-- [EntityRecognizerDataFormat](./literals.md#entityrecognizerdataformat)
-- [EntityType](./literals.md#entitytype)
-- [InputFormat](./literals.md#inputformat)
-- [JobStatus](./literals.md#jobstatus)
-- [LanguageCode](./literals.md#languagecode)
+- [DocumentClassifierDataFormatType](./literals.md#documentclassifierdataformattype)
+- [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
+- [EndpointStatusType](./literals.md#endpointstatustype)
+- [EntityRecognizerDataFormatType](./literals.md#entityrecognizerdataformattype)
+- [EntityTypeType](./literals.md#entitytypetype)
+- [InputFormatType](./literals.md#inputformattype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [LanguageCodeType](./literals.md#languagecodetype)
 - [ListDocumentClassificationJobsPaginatorName](./literals.md#listdocumentclassificationjobspaginatorname)
 - [ListDocumentClassifiersPaginatorName](./literals.md#listdocumentclassifierspaginatorname)
 - [ListDominantLanguageDetectionJobsPaginatorName](./literals.md#listdominantlanguagedetectionjobspaginatorname)
@@ -165,13 +165,13 @@ from mypy_boto3_comprehend.literals import DocumentClassifierDataFormat, ...
 - [ListKeyPhrasesDetectionJobsPaginatorName](./literals.md#listkeyphrasesdetectionjobspaginatorname)
 - [ListSentimentDetectionJobsPaginatorName](./literals.md#listsentimentdetectionjobspaginatorname)
 - [ListTopicsDetectionJobsPaginatorName](./literals.md#listtopicsdetectionjobspaginatorname)
-- [ModelStatus](./literals.md#modelstatus)
-- [PartOfSpeechTagType](./literals.md#partofspeechtagtype)
-- [PiiEntitiesDetectionMaskMode](./literals.md#piientitiesdetectionmaskmode)
-- [PiiEntitiesDetectionMode](./literals.md#piientitiesdetectionmode)
-- [PiiEntityType](./literals.md#piientitytype)
-- [SentimentType](./literals.md#sentimenttype)
-- [SyntaxLanguageCode](./literals.md#syntaxlanguagecode)
+- [ModelStatusType](./literals.md#modelstatustype)
+- [PartOfSpeechTagTypeType](./literals.md#partofspeechtagtypetype)
+- [PiiEntitiesDetectionMaskModeType](./literals.md#piientitiesdetectionmaskmodetype)
+- [PiiEntitiesDetectionModeType](./literals.md#piientitiesdetectionmodetype)
+- [PiiEntityTypeType](./literals.md#piientitytypetype)
+- [SentimentTypeType](./literals.md#sentimenttypetype)
+- [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
 
 ## Typed dictionaries
 

@@ -3,29 +3,29 @@
 > [Index](..) > [Kinesis](.) > Literals
 
 Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Literals for boto3 Kinesis module](#literals-for-boto3-kinesis-module)
-  - [ConsumerStatus](#consumerstatus)
+  - [ConsumerStatusType](#consumerstatustype)
   - [DescribeStreamPaginatorName](#describestreampaginatorname)
-  - [EncryptionType](#encryptiontype)
+  - [EncryptionTypeType](#encryptiontypetype)
   - [ListShardsPaginatorName](#listshardspaginatorname)
   - [ListStreamConsumersPaginatorName](#liststreamconsumerspaginatorname)
   - [ListStreamsPaginatorName](#liststreamspaginatorname)
-  - [MetricsName](#metricsname)
-  - [ScalingType](#scalingtype)
-  - [ShardFilterType](#shardfiltertype)
-  - [ShardIteratorType](#sharditeratortype)
+  - [MetricsNameType](#metricsnametype)
+  - [ScalingTypeType](#scalingtypetype)
+  - [ShardFilterTypeType](#shardfiltertypetype)
+  - [ShardIteratorTypeType](#sharditeratortypetype)
   - [StreamExistsWaiterName](#streamexistswaitername)
   - [StreamNotExistsWaiterName](#streamnotexistswaitername)
-  - [StreamStatus](#streamstatus)
+  - [StreamStatusType](#streamstatustype)
 
-## ConsumerStatus
+## ConsumerStatusType
 
 ```python
-from mypy_boto3_kinesis.literals import ConsumerStatus
+from mypy_boto3_kinesis.literals import ConsumerStatusType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 
 - `describe_stream`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_kinesis.literals import EncryptionType
+from mypy_boto3_kinesis.literals import EncryptionTypeType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 
 - `list_streams`
 
-## MetricsName
+## MetricsNameType
 
 ```python
-from mypy_boto3_kinesis.literals import MetricsName
+from mypy_boto3_kinesis.literals import MetricsNameType
 ```
 
 Values:
@@ -102,20 +102,20 @@ Values:
 - `ReadProvisionedThroughputExceeded`
 - `WriteProvisionedThroughputExceeded`
 
-## ScalingType
+## ScalingTypeType
 
 ```python
-from mypy_boto3_kinesis.literals import ScalingType
+from mypy_boto3_kinesis.literals import ScalingTypeType
 ```
 
 Values:
 
 - `UNIFORM_SCALING`
 
-## ShardFilterType
+## ShardFilterTypeType
 
 ```python
-from mypy_boto3_kinesis.literals import ShardFilterType
+from mypy_boto3_kinesis.literals import ShardFilterTypeType
 ```
 
 Values:
@@ -127,10 +127,10 @@ Values:
 - `FROM_TIMESTAMP`
 - `FROM_TRIM_HORIZON`
 
-## ShardIteratorType
+## ShardIteratorTypeType
 
 ```python
-from mypy_boto3_kinesis.literals import ShardIteratorType
+from mypy_boto3_kinesis.literals import ShardIteratorTypeType
 ```
 
 Values:
@@ -161,10 +161,10 @@ Values:
 
 - `stream_not_exists`
 
-## StreamStatus
+## StreamStatusType
 
 ```python
-from mypy_boto3_kinesis.literals import StreamStatus
+from mypy_boto3_kinesis.literals import StreamStatusType
 ```
 
 Values:

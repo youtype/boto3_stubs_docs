@@ -3,20 +3,20 @@
 > [Index](..) > [GlobalAccelerator](.) > Literals
 
 Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
 [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Literals for boto3 GlobalAccelerator module](#literals-for-boto3-globalaccelerator-module)
-  - [AcceleratorStatus](#acceleratorstatus)
-  - [ByoipCidrState](#byoipcidrstate)
-  - [ClientAffinity](#clientaffinity)
-  - [CustomRoutingAcceleratorStatus](#customroutingacceleratorstatus)
-  - [CustomRoutingDestinationTrafficState](#customroutingdestinationtrafficstate)
-  - [CustomRoutingProtocol](#customroutingprotocol)
-  - [HealthCheckProtocol](#healthcheckprotocol)
-  - [HealthState](#healthstate)
-  - [IpAddressType](#ipaddresstype)
+  - [AcceleratorStatusType](#acceleratorstatustype)
+  - [ByoipCidrStateType](#byoipcidrstatetype)
+  - [ClientAffinityType](#clientaffinitytype)
+  - [CustomRoutingAcceleratorStatusType](#customroutingacceleratorstatustype)
+  - [CustomRoutingDestinationTrafficStateType](#customroutingdestinationtrafficstatetype)
+  - [CustomRoutingProtocolType](#customroutingprotocoltype)
+  - [HealthCheckProtocolType](#healthcheckprotocoltype)
+  - [HealthStateType](#healthstatetype)
+  - [IpAddressTypeType](#ipaddresstypetype)
   - [ListAcceleratorsPaginatorName](#listacceleratorspaginatorname)
   - [ListByoipCidrsPaginatorName](#listbyoipcidrspaginatorname)
   - [ListCustomRoutingAcceleratorsPaginatorName](#listcustomroutingacceleratorspaginatorname)
@@ -27,10 +27,10 @@ type annotations stubs module
   - [ListListenersPaginatorName](#listlistenerspaginatorname)
   - [ProtocolType](#protocoltype)
 
-## AcceleratorStatus
+## AcceleratorStatusType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import AcceleratorStatus
+from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 - `DEPLOYED`
 - `IN_PROGRESS`
 
-## ByoipCidrState
+## ByoipCidrStateType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import ByoipCidrState
+from mypy_boto3_globalaccelerator.literals import ByoipCidrStateType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 - `PENDING_WITHDRAWING`
 - `READY`
 
-## ClientAffinity
+## ClientAffinityType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import ClientAffinity
+from mypy_boto3_globalaccelerator.literals import ClientAffinityType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `NONE`
 - `SOURCE_IP`
 
-## CustomRoutingAcceleratorStatus
+## CustomRoutingAcceleratorStatusType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import CustomRoutingAcceleratorStatus
+from mypy_boto3_globalaccelerator.literals import CustomRoutingAcceleratorStatusType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `DEPLOYED`
 - `IN_PROGRESS`
 
-## CustomRoutingDestinationTrafficState
+## CustomRoutingDestinationTrafficStateType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import CustomRoutingDestinationTrafficState
+from mypy_boto3_globalaccelerator.literals import CustomRoutingDestinationTrafficStateType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## CustomRoutingProtocol
+## CustomRoutingProtocolType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import CustomRoutingProtocol
+from mypy_boto3_globalaccelerator.literals import CustomRoutingProtocolType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `TCP`
 - `UDP`
 
-## HealthCheckProtocol
+## HealthCheckProtocolType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import HealthCheckProtocol
+from mypy_boto3_globalaccelerator.literals import HealthCheckProtocolType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `HTTPS`
 - `TCP`
 
-## HealthState
+## HealthStateType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import HealthState
+from mypy_boto3_globalaccelerator.literals import HealthStateType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `INITIAL`
 - `UNHEALTHY`
 
-## IpAddressType
+## IpAddressTypeType
 
 ```python
-from mypy_boto3_globalaccelerator.literals import IpAddressType
+from mypy_boto3_globalaccelerator.literals import IpAddressTypeType
 ```
 
 Values:

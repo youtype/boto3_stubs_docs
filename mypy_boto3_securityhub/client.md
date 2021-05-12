@@ -3,7 +3,7 @@
 > [Index](..) > [SecurityHub](.) > SecurityHubClient
 
 Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
 [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
@@ -80,7 +80,7 @@ def get_securityhub_client() -> SecurityHubClient:
 ```
 
 Boto3 documentation:
-[SecurityHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
+[SecurityHub.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client)
 
 ## Exceptions
 
@@ -113,7 +113,7 @@ Type annotations for
 `boto3.client("securityhub").accept_administrator_invitation` method.
 
 Boto3 documentation:
-[SecurityHub.Client.accept_administrator_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
+[SecurityHub.Client.accept_administrator_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
 
 Arguments:
 
@@ -127,7 +127,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").accept_invitation` method.
 
 Boto3 documentation:
-[SecurityHub.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
+[SecurityHub.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("securityhub").batch_disable_standards`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.batch_disable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
+[SecurityHub.Client.batch_disable_standards](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("securityhub").batch_enable_standards`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.batch_enable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
+[SecurityHub.Client.batch_enable_standards](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Type annotations for `boto3.client("securityhub").batch_import_findings`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.batch_import_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
+[SecurityHub.Client.batch_import_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("securityhub").batch_update_findings`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.batch_update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
+[SecurityHub.Client.batch_update_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
 
 Arguments:
 
@@ -200,7 +200,8 @@ Arguments:
   *(required)*
 - `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
 - `Severity`: [SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef)
-- `VerificationState`: [VerificationState](./literals.md#verificationstate)
+- `VerificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `Confidence`: `int`
 - `Criticality`: `int`
 - `Types`: `List`\[`str`\]
@@ -217,7 +218,7 @@ Returns
 Type annotations for `boto3.client("securityhub").can_paginate` method.
 
 Boto3 documentation:
-[SecurityHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate)
+[SecurityHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.can_paginate)
 
 Arguments:
 
@@ -230,7 +231,7 @@ Returns `bool`.
 Type annotations for `boto3.client("securityhub").create_action_target` method.
 
 Boto3 documentation:
-[SecurityHub.Client.create_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
+[SecurityHub.Client.create_action_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
 
 Arguments:
 
@@ -246,7 +247,7 @@ Returns
 Type annotations for `boto3.client("securityhub").create_insight` method.
 
 Boto3 documentation:
-[SecurityHub.Client.create_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight)
+[SecurityHub.Client.create_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.create_insight)
 
 Arguments:
 
@@ -264,7 +265,7 @@ Returns
 Type annotations for `boto3.client("securityhub").create_members` method.
 
 Boto3 documentation:
-[SecurityHub.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members)
+[SecurityHub.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.create_members)
 
 Arguments:
 
@@ -280,7 +281,7 @@ Returns
 Type annotations for `boto3.client("securityhub").decline_invitations` method.
 
 Boto3 documentation:
-[SecurityHub.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
+[SecurityHub.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
 
 Arguments:
 
@@ -294,7 +295,7 @@ Returns
 Type annotations for `boto3.client("securityhub").delete_action_target` method.
 
 Boto3 documentation:
-[SecurityHub.Client.delete_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
+[SecurityHub.Client.delete_action_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
 
 Arguments:
 
@@ -308,7 +309,7 @@ Returns
 Type annotations for `boto3.client("securityhub").delete_insight` method.
 
 Boto3 documentation:
-[SecurityHub.Client.delete_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
+[SecurityHub.Client.delete_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
 
 Arguments:
 
@@ -322,7 +323,7 @@ Returns
 Type annotations for `boto3.client("securityhub").delete_invitations` method.
 
 Boto3 documentation:
-[SecurityHub.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
+[SecurityHub.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
 
 Arguments:
 
@@ -336,7 +337,7 @@ Returns
 Type annotations for `boto3.client("securityhub").delete_members` method.
 
 Boto3 documentation:
-[SecurityHub.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members)
+[SecurityHub.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.delete_members)
 
 Arguments:
 
@@ -351,7 +352,7 @@ Type annotations for `boto3.client("securityhub").describe_action_targets`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.describe_action_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
+[SecurityHub.Client.describe_action_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
 
 Arguments:
 
@@ -367,7 +368,7 @@ Returns
 Type annotations for `boto3.client("securityhub").describe_hub` method.
 
 Boto3 documentation:
-[SecurityHub.Client.describe_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
+[SecurityHub.Client.describe_hub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
 
 Arguments:
 
@@ -382,7 +383,7 @@ Type annotations for
 `boto3.client("securityhub").describe_organization_configuration` method.
 
 Boto3 documentation:
-[SecurityHub.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
+[SecurityHub.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
 
 Returns
 [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
@@ -392,7 +393,7 @@ Returns
 Type annotations for `boto3.client("securityhub").describe_products` method.
 
 Boto3 documentation:
-[SecurityHub.Client.describe_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products)
+[SecurityHub.Client.describe_products](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.describe_products)
 
 Arguments:
 
@@ -408,7 +409,7 @@ Returns
 Type annotations for `boto3.client("securityhub").describe_standards` method.
 
 Boto3 documentation:
-[SecurityHub.Client.describe_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
+[SecurityHub.Client.describe_standards](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
 
 Arguments:
 
@@ -424,7 +425,7 @@ Type annotations for `boto3.client("securityhub").describe_standards_controls`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.describe_standards_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
+[SecurityHub.Client.describe_standards_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
 
 Arguments:
 
@@ -441,7 +442,7 @@ Type annotations for
 `boto3.client("securityhub").disable_import_findings_for_product` method.
 
 Boto3 documentation:
-[SecurityHub.Client.disable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
+[SecurityHub.Client.disable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
 
 Arguments:
 
@@ -455,7 +456,7 @@ Type annotations for
 `boto3.client("securityhub").disable_organization_admin_account` method.
 
 Boto3 documentation:
-[SecurityHub.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
+[SecurityHub.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
 
 Arguments:
 
@@ -468,7 +469,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").disable_security_hub` method.
 
 Boto3 documentation:
-[SecurityHub.Client.disable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub)
+[SecurityHub.Client.disable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -478,7 +479,7 @@ Type annotations for
 `boto3.client("securityhub").disassociate_from_administrator_account` method.
 
 Boto3 documentation:
-[SecurityHub.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account)
+[SecurityHub.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -488,7 +489,7 @@ Type annotations for
 `boto3.client("securityhub").disassociate_from_master_account` method.
 
 Boto3 documentation:
-[SecurityHub.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account)
+[SecurityHub.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -497,7 +498,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").disassociate_members` method.
 
 Boto3 documentation:
-[SecurityHub.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
+[SecurityHub.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
 
 Arguments:
 
@@ -511,7 +512,7 @@ Type annotations for
 `boto3.client("securityhub").enable_import_findings_for_product` method.
 
 Boto3 documentation:
-[SecurityHub.Client.enable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
+[SecurityHub.Client.enable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
 
 Arguments:
 
@@ -526,7 +527,7 @@ Type annotations for
 `boto3.client("securityhub").enable_organization_admin_account` method.
 
 Boto3 documentation:
-[SecurityHub.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
+[SecurityHub.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
 
 Arguments:
 
@@ -539,7 +540,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").enable_security_hub` method.
 
 Boto3 documentation:
-[SecurityHub.Client.enable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
+[SecurityHub.Client.enable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
 
 Arguments:
 
@@ -554,7 +555,7 @@ Type annotations for `boto3.client("securityhub").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url)
+[SecurityHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url)
 
 Arguments:
 
@@ -571,7 +572,7 @@ Type annotations for `boto3.client("securityhub").get_administrator_account`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
+[SecurityHub.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
 
 Returns
 [GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
@@ -582,7 +583,7 @@ Type annotations for `boto3.client("securityhub").get_enabled_standards`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_enabled_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
+[SecurityHub.Client.get_enabled_standards](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
 
 Arguments:
 
@@ -598,7 +599,7 @@ Returns
 Type annotations for `boto3.client("securityhub").get_findings` method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings)
+[SecurityHub.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_findings)
 
 Arguments:
 
@@ -617,7 +618,7 @@ Returns
 Type annotations for `boto3.client("securityhub").get_insight_results` method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_insight_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
+[SecurityHub.Client.get_insight_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
 
 Arguments:
 
@@ -631,7 +632,7 @@ Returns
 Type annotations for `boto3.client("securityhub").get_insights` method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights)
+[SecurityHub.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_insights)
 
 Arguments:
 
@@ -648,7 +649,7 @@ Type annotations for `boto3.client("securityhub").get_invitations_count`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
+[SecurityHub.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
 
 Returns
 [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
@@ -658,7 +659,7 @@ Returns
 Type annotations for `boto3.client("securityhub").get_master_account` method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
+[SecurityHub.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
 
 Returns
 [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
@@ -668,7 +669,7 @@ Returns
 Type annotations for `boto3.client("securityhub").get_members` method.
 
 Boto3 documentation:
-[SecurityHub.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members)
+[SecurityHub.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.get_members)
 
 Arguments:
 
@@ -681,7 +682,7 @@ Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 Type annotations for `boto3.client("securityhub").invite_members` method.
 
 Boto3 documentation:
-[SecurityHub.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members)
+[SecurityHub.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.invite_members)
 
 Arguments:
 
@@ -696,7 +697,7 @@ Type annotations for
 `boto3.client("securityhub").list_enabled_products_for_import` method.
 
 Boto3 documentation:
-[SecurityHub.Client.list_enabled_products_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
+[SecurityHub.Client.list_enabled_products_for_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
 
 Arguments:
 
@@ -711,7 +712,7 @@ Returns
 Type annotations for `boto3.client("securityhub").list_invitations` method.
 
 Boto3 documentation:
-[SecurityHub.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
+[SecurityHub.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
 
 Arguments:
 
@@ -726,7 +727,7 @@ Returns
 Type annotations for `boto3.client("securityhub").list_members` method.
 
 Boto3 documentation:
-[SecurityHub.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members)
+[SecurityHub.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.list_members)
 
 Arguments:
 
@@ -743,7 +744,7 @@ Type annotations for
 `boto3.client("securityhub").list_organization_admin_accounts` method.
 
 Boto3 documentation:
-[SecurityHub.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
+[SecurityHub.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
 
 Arguments:
 
@@ -759,7 +760,7 @@ Type annotations for `boto3.client("securityhub").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
+[SecurityHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -773,7 +774,7 @@ Returns
 Type annotations for `boto3.client("securityhub").tag_resource` method.
 
 Boto3 documentation:
-[SecurityHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
+[SecurityHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
 
 Arguments:
 
@@ -787,7 +788,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").untag_resource` method.
 
 Boto3 documentation:
-[SecurityHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
+[SecurityHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
 
 Arguments:
 
@@ -801,7 +802,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").update_action_target` method.
 
 Boto3 documentation:
-[SecurityHub.Client.update_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
+[SecurityHub.Client.update_action_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
 
 Arguments:
 
@@ -816,7 +817,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").update_findings` method.
 
 Boto3 documentation:
-[SecurityHub.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings)
+[SecurityHub.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.update_findings)
 
 Arguments:
 
@@ -824,7 +825,7 @@ Arguments:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
   *(required)*
 - `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
-- `RecordState`: [RecordState](./literals.md#recordstate)
+- `RecordState`: [RecordStateType](./literals.md#recordstatetype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -833,7 +834,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").update_insight` method.
 
 Boto3 documentation:
-[SecurityHub.Client.update_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight)
+[SecurityHub.Client.update_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.update_insight)
 
 Arguments:
 
@@ -851,7 +852,7 @@ Type annotations for
 `boto3.client("securityhub").update_organization_configuration` method.
 
 Boto3 documentation:
-[SecurityHub.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
+[SecurityHub.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
 
 Arguments:
 
@@ -865,7 +866,7 @@ Type annotations for
 `boto3.client("securityhub").update_security_hub_configuration` method.
 
 Boto3 documentation:
-[SecurityHub.Client.update_security_hub_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
+[SecurityHub.Client.update_security_hub_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
 
 Arguments:
 
@@ -879,12 +880,12 @@ Type annotations for `boto3.client("securityhub").update_standards_control`
 method.
 
 Boto3 documentation:
-[SecurityHub.Client.update_standards_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
+[SecurityHub.Client.update_standards_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
 
 Arguments:
 
 - `StandardsControlArn`: `str` *(required)*
-- `ControlStatus`: [ControlStatus](./literals.md#controlstatus)
+- `ControlStatus`: [ControlStatusType](./literals.md#controlstatustype)
 - `DisabledReason`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

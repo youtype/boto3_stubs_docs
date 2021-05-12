@@ -3,20 +3,20 @@
 > [Index](..) > [HealthLake](.) > Literals
 
 Auto-generated documentation for
-[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
 [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Literals for boto3 HealthLake module](#literals-for-boto3-healthlake-module)
-  - [DatastoreStatus](#datastorestatus)
-  - [FHIRVersion](#fhirversion)
-  - [JobStatus](#jobstatus)
-  - [PreloadDataType](#preloaddatatype)
+  - [DatastoreStatusType](#datastorestatustype)
+  - [FHIRVersionType](#fhirversiontype)
+  - [JobStatusType](#jobstatustype)
+  - [PreloadDataTypeType](#preloaddatatypetype)
 
-## DatastoreStatus
+## DatastoreStatusType
 
 ```python
-from mypy_boto3_healthlake.literals import DatastoreStatus
+from mypy_boto3_healthlake.literals import DatastoreStatusType
 ```
 
 Values:
@@ -26,20 +26,20 @@ Values:
 - `DELETED`
 - `DELETING`
 
-## FHIRVersion
+## FHIRVersionType
 
 ```python
-from mypy_boto3_healthlake.literals import FHIRVersion
+from mypy_boto3_healthlake.literals import FHIRVersionType
 ```
 
 Values:
 
 - `R4`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_healthlake.literals import JobStatus
+from mypy_boto3_healthlake.literals import JobStatusType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 
-## PreloadDataType
+## PreloadDataTypeType
 
 ```python
-from mypy_boto3_healthlake.literals import PreloadDataType
+from mypy_boto3_healthlake.literals import PreloadDataTypeType
 ```
 
 Values:

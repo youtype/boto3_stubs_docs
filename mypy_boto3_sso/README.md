@@ -3,7 +3,7 @@
 > [Index](..) > SSO
 
 Auto-generated documentation for
-[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso.html#SSO)
 type annotations stubs module
 [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
@@ -29,25 +29,25 @@ Can be used directly:
 from mypy_boto3_sso.client import SSOClient
 ```
 
-SSOClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_role_credentials](./client.md#get-role-credentials)
-- [list_account_roles](./client.md#list-account-roles)
-- [list_accounts](./client.md#list-accounts)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_role_credentials](./client.md#get_role_credentials)
+- [list_account_roles](./client.md#list_account_roles)
+- [list_accounts](./client.md#list_accounts)
 - [logout](./client.md#logout)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+SSOClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidRequestException
+- ResourceNotFoundException
+- TooManyRequestsException
+- UnauthorizedException
 
 ## Paginators
 

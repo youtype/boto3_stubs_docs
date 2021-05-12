@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -172,7 +172,7 @@ Optional fields:
 - `botAliasName`: `str`
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasStatus`: [BotAliasStatus](./literals.md#botaliasstatus)
+- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
@@ -184,9 +184,10 @@ from mypy_boto3_lexv2_models.type_defs import BotFilterTypeDef
 
 Required fields:
 
-- `name`: `Literal['BotName']` (see [BotFilterName](./literals.md#botfiltername))
+- `name`: `Literal['BotName']` (see
+  [BotFilterNameType](./literals.md#botfilternametype))
 - `values`: `List`\[`str`\]
-- `operator`: [BotFilterOperator](./literals.md#botfilteroperator)
+- `operator`: [BotFilterOperatorType](./literals.md#botfilteroperatortype)
 
 ## BotLocaleFilterTypeDef
 
@@ -197,9 +198,10 @@ from mypy_boto3_lexv2_models.type_defs import BotLocaleFilterTypeDef
 Required fields:
 
 - `name`: `Literal['BotLocaleName']` (see
-  [BotLocaleFilterName](./literals.md#botlocalefiltername))
+  [BotLocaleFilterNameType](./literals.md#botlocalefilternametype))
 - `values`: `List`\[`str`\]
-- `operator`: [BotLocaleFilterOperator](./literals.md#botlocalefilteroperator)
+- `operator`:
+  [BotLocaleFilterOperatorType](./literals.md#botlocalefilteroperatortype)
 
 ## BotLocaleHistoryEventTypeDef
 
@@ -221,8 +223,8 @@ from mypy_boto3_lexv2_models.type_defs import BotLocaleSortByTypeDef
 Required fields:
 
 - `attribute`: `Literal['BotLocaleName']` (see
-  [BotLocaleSortAttribute](./literals.md#botlocalesortattribute))
-- `order`: [SortOrder](./literals.md#sortorder)
+  [BotLocaleSortAttributeType](./literals.md#botlocalesortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## BotLocaleSummaryTypeDef
 
@@ -235,7 +237,7 @@ Optional fields:
 - `localeId`: `str`
 - `localeName`: `str`
 - `description`: `str`
-- `botLocaleStatus`: [BotLocaleStatus](./literals.md#botlocalestatus)
+- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - `lastUpdatedDateTime`: `datetime`
 - `lastBuildSubmittedDateTime`: `datetime`
 
@@ -248,8 +250,8 @@ from mypy_boto3_lexv2_models.type_defs import BotSortByTypeDef
 Required fields:
 
 - `attribute`: `Literal['BotName']` (see
-  [BotSortAttribute](./literals.md#botsortattribute))
-- `order`: [SortOrder](./literals.md#sortorder)
+  [BotSortAttributeType](./literals.md#botsortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## BotSummaryTypeDef
 
@@ -262,7 +264,7 @@ Optional fields:
 - `botId`: `str`
 - `botName`: `str`
 - `description`: `str`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `latestBotVersion`: `str`
 - `lastUpdatedDateTime`: `datetime`
 
@@ -285,8 +287,8 @@ from mypy_boto3_lexv2_models.type_defs import BotVersionSortByTypeDef
 Required fields:
 
 - `attribute`: `Literal['BotVersion']` (see
-  [BotVersionSortAttribute](./literals.md#botversionsortattribute))
-- `order`: [SortOrder](./literals.md#sortorder)
+  [BotVersionSortAttributeType](./literals.md#botversionsortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## BotVersionSummaryTypeDef
 
@@ -299,7 +301,7 @@ Optional fields:
 - `botName`: `str`
 - `botVersion`: `str`
 - `description`: `str`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 
 ## BuildBotLocaleResponseTypeDef
@@ -313,7 +315,7 @@ Optional fields:
 - `botId`: `str`
 - `botVersion`: `str`
 - `localeId`: `str`
-- `botLocaleStatus`: [BotLocaleStatus](./literals.md#botlocalestatus)
+- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - `lastBuildSubmittedDateTime`: `datetime`
 
 ## BuiltInIntentSortByTypeDef
@@ -325,8 +327,8 @@ from mypy_boto3_lexv2_models.type_defs import BuiltInIntentSortByTypeDef
 Required fields:
 
 - `attribute`: `Literal['IntentSignature']` (see
-  [BuiltInIntentSortAttribute](./literals.md#builtinintentsortattribute))
-- `order`: [SortOrder](./literals.md#sortorder)
+  [BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## BuiltInIntentSummaryTypeDef
 
@@ -348,8 +350,8 @@ from mypy_boto3_lexv2_models.type_defs import BuiltInSlotTypeSortByTypeDef
 Required fields:
 
 - `attribute`: `Literal['SlotTypeSignature']` (see
-  [BuiltInSlotTypeSortAttribute](./literals.md#builtinslottypesortattribute))
-- `order`: [SortOrder](./literals.md#sortorder)
+  [BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## BuiltInSlotTypeSummaryTypeDef
 
@@ -392,7 +394,8 @@ from mypy_boto3_lexv2_models.type_defs import CodeHookSpecificationTypeDef
 
 Required fields:
 
-- `lambdaCodeHook`: [LambdaCodeHookTypeDef](./type_defs.md#lambdacodehooktypedef)
+- `lambdaCodeHook`:
+  [LambdaCodeHookTypeDef](./type_defs.md#lambdacodehooktypedef)
 
 ## ConversationLogSettingsTypeDef
 
@@ -425,7 +428,7 @@ Optional fields:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `botAliasStatus`: [BotAliasStatus](./literals.md#botaliasstatus)
+- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
 - `botId`: `str`
 - `creationDateTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -445,7 +448,7 @@ Optional fields:
 - `description`: `str`
 - `nluIntentConfidenceThreshold`: `float`
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-- `botLocaleStatus`: [BotLocaleStatus](./literals.md#botlocalestatus)
+- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - `creationDateTime`: `datetime`
 
 ## CreateBotResponseTypeDef
@@ -462,7 +465,7 @@ Optional fields:
 - `roleArn`: `str`
 - `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
 - `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 - `botTags`: `Dict`\[`str`, `str`\]
 - `testBotAliasTags`: `Dict`\[`str`, `str`\]
@@ -480,7 +483,7 @@ Optional fields:
 - `botVersion`: `str`
 - `botVersionLocaleSpecification`: `Dict`\[`str`,
   [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 
 ## CreateIntentResponseTypeDef
@@ -589,7 +592,7 @@ Optional fields:
 
 - `botAliasId`: `str`
 - `botId`: `str`
-- `botAliasStatus`: [BotAliasStatus](./literals.md#botaliasstatus)
+- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
 
 ## DeleteBotLocaleResponseTypeDef
 
@@ -602,7 +605,7 @@ Optional fields:
 - `botId`: `str`
 - `botVersion`: `str`
 - `localeId`: `str`
-- `botLocaleStatus`: [BotLocaleStatus](./literals.md#botlocalestatus)
+- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 
 ## DeleteBotResponseTypeDef
 
@@ -613,7 +616,7 @@ from mypy_boto3_lexv2_models.type_defs import DeleteBotResponseTypeDef
 Optional fields:
 
 - `botId`: `str`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 
 ## DeleteBotVersionResponseTypeDef
 
@@ -625,7 +628,7 @@ Optional fields:
 
 - `botId`: `str`
 - `botVersion`: `str`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 
 ## DescribeBotAliasResponseTypeDef
 
@@ -647,7 +650,7 @@ Optional fields:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
 - `botAliasHistoryEvents`:
   `List`\[[BotAliasHistoryEventTypeDef](./type_defs.md#botaliashistoryeventtypedef)\]
-- `botAliasStatus`: [BotAliasStatus](./literals.md#botaliasstatus)
+- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
 - `botId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
@@ -669,7 +672,7 @@ Optional fields:
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 - `intentsCount`: `int`
 - `slotTypesCount`: `int`
-- `botLocaleStatus`: [BotLocaleStatus](./literals.md#botlocalestatus)
+- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - `failureReasons`: `List`\[`str`\]
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
@@ -691,7 +694,7 @@ Optional fields:
 - `roleArn`: `str`
 - `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
 - `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
@@ -710,7 +713,7 @@ Optional fields:
 - `roleArn`: `str`
 - `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
 - `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `failureReasons`: `List`\[`str`\]
 - `creationDateTime`: `datetime`
 
@@ -874,9 +877,10 @@ from mypy_boto3_lexv2_models.type_defs import IntentFilterTypeDef
 Required fields:
 
 - `name`: `Literal['IntentName']` (see
-  [IntentFilterName](./literals.md#intentfiltername))
+  [IntentFilterNameType](./literals.md#intentfilternametype))
 - `values`: `List`\[`str`\]
-- `operator`: [IntentFilterOperator](./literals.md#intentfilteroperator)
+- `operator`:
+  [IntentFilterOperatorType](./literals.md#intentfilteroperatortype)
 
 ## IntentSortByTypeDef
 
@@ -886,8 +890,8 @@ from mypy_boto3_lexv2_models.type_defs import IntentSortByTypeDef
 
 Required fields:
 
-- `attribute`: [IntentSortAttribute](./literals.md#intentsortattribute)
-- `order`: [SortOrder](./literals.md#sortorder)
+- `attribute`: [IntentSortAttributeType](./literals.md#intentsortattributetype)
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## IntentSummaryTypeDef
 
@@ -981,7 +985,8 @@ from mypy_boto3_lexv2_models.type_defs import ListBotsResponseTypeDef
 
 Optional fields:
 
-- `botSummaries`: `List`\[[BotSummaryTypeDef](./type_defs.md#botsummarytypedef)\]
+- `botSummaries`:
+  `List`\[[BotSummaryTypeDef](./type_defs.md#botsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListBuiltInIntentsResponseTypeDef
@@ -1104,7 +1109,7 @@ from mypy_boto3_lexv2_models.type_defs import ObfuscationSettingTypeDef
 Required fields:
 
 - `obfuscationSettingType`:
-  [ObfuscationSettingType](./literals.md#obfuscationsettingtype)
+  [ObfuscationSettingTypeType](./literals.md#obfuscationsettingtypetype)
 
 ## OutputContextTypeDef
 
@@ -1244,9 +1249,9 @@ from mypy_boto3_lexv2_models.type_defs import SlotFilterTypeDef
 Required fields:
 
 - `name`: `Literal['SlotName']` (see
-  [SlotFilterName](./literals.md#slotfiltername))
+  [SlotFilterNameType](./literals.md#slotfilternametype))
 - `values`: `List`\[`str`\]
-- `operator`: [SlotFilterOperator](./literals.md#slotfilteroperator)
+- `operator`: [SlotFilterOperatorType](./literals.md#slotfilteroperatortype)
 
 ## SlotPriorityTypeDef
 
@@ -1267,8 +1272,8 @@ from mypy_boto3_lexv2_models.type_defs import SlotSortByTypeDef
 
 Required fields:
 
-- `attribute`: [SlotSortAttribute](./literals.md#slotsortattribute)
-- `order`: [SortOrder](./literals.md#sortorder)
+- `attribute`: [SlotSortAttributeType](./literals.md#slotsortattributetype)
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## SlotSummaryTypeDef
 
@@ -1281,7 +1286,7 @@ Optional fields:
 - `slotId`: `str`
 - `slotName`: `str`
 - `description`: `str`
-- `slotConstraint`: [SlotConstraint](./literals.md#slotconstraint)
+- `slotConstraint`: [SlotConstraintType](./literals.md#slotconstrainttype)
 - `slotTypeId`: `str`
 - `valueElicitationPromptSpecification`:
   [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
@@ -1296,9 +1301,10 @@ from mypy_boto3_lexv2_models.type_defs import SlotTypeFilterTypeDef
 Required fields:
 
 - `name`: `Literal['SlotTypeName']` (see
-  [SlotTypeFilterName](./literals.md#slottypefiltername))
+  [SlotTypeFilterNameType](./literals.md#slottypefilternametype))
 - `values`: `List`\[`str`\]
-- `operator`: [SlotTypeFilterOperator](./literals.md#slottypefilteroperator)
+- `operator`:
+  [SlotTypeFilterOperatorType](./literals.md#slottypefilteroperatortype)
 
 ## SlotTypeSortByTypeDef
 
@@ -1308,8 +1314,9 @@ from mypy_boto3_lexv2_models.type_defs import SlotTypeSortByTypeDef
 
 Required fields:
 
-- `attribute`: [SlotTypeSortAttribute](./literals.md#slottypesortattribute)
-- `order`: [SortOrder](./literals.md#sortorder)
+- `attribute`:
+  [SlotTypeSortAttributeType](./literals.md#slottypesortattributetype)
+- `order`: [SortOrderType](./literals.md#sortordertype)
 
 ## SlotTypeSummaryTypeDef
 
@@ -1344,7 +1351,7 @@ from mypy_boto3_lexv2_models.type_defs import SlotValueElicitationSettingTypeDef
 
 Required fields:
 
-- `slotConstraint`: [SlotConstraint](./literals.md#slotconstraint)
+- `slotConstraint`: [SlotConstraintType](./literals.md#slotconstrainttype)
 
 Optional fields:
 
@@ -1376,7 +1383,7 @@ from mypy_boto3_lexv2_models.type_defs import SlotValueSelectionSettingTypeDef
 Required fields:
 
 - `resolutionStrategy`:
-  [SlotValueResolutionStrategy](./literals.md#slotvalueresolutionstrategy)
+  [SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype)
 
 Optional fields:
 
@@ -1441,7 +1448,7 @@ Optional fields:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `botAliasStatus`: [BotAliasStatus](./literals.md#botaliasstatus)
+- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
 - `botId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
@@ -1461,7 +1468,7 @@ Optional fields:
 - `description`: `str`
 - `nluIntentConfidenceThreshold`: `float`
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-- `botLocaleStatus`: [BotLocaleStatus](./literals.md#botlocalestatus)
+- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - `failureReasons`: `List`\[`str`\]
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
@@ -1480,7 +1487,7 @@ Optional fields:
 - `roleArn`: `str`
 - `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
 - `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatus](./literals.md#botstatus)
+- `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 

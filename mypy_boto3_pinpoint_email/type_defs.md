@@ -3,7 +3,7 @@
 > [Index](..) > [PinpointEmail](.) > Typed dictionaries
 
 Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
 [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
@@ -110,7 +110,7 @@ Required fields:
 
 - `DimensionName`: `str`
 - `DimensionValueSource`:
-  [DimensionValueSource](./literals.md#dimensionvaluesource)
+  [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
 - `DefaultDimensionValue`: `str`
 
 ## ContentTypeDef
@@ -137,7 +137,7 @@ Required fields:
 
 - `ReportId`: `str`
 - `DeliverabilityTestStatus`:
-  [DeliverabilityTestStatus](./literals.md#deliverabilityteststatus)
+  [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
 
 ## CreateEmailIdentityResponseTypeDef
 
@@ -147,9 +147,10 @@ from mypy_boto3_pinpoint_email.type_defs import CreateEmailIdentityResponseTypeD
 
 Optional fields:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`: [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
+- `DkimAttributes`:
+  [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
 
 ## DailyVolumeTypeDef
 
@@ -174,7 +175,7 @@ from mypy_boto3_pinpoint_email.type_defs import DedicatedIpTypeDef
 Required fields:
 
 - `Ip`: `str`
-- `WarmupStatus`: [WarmupStatus](./literals.md#warmupstatus)
+- `WarmupStatus`: [WarmupStatusType](./literals.md#warmupstatustype)
 - `WarmupPercentage`: `int`
 
 Optional fields:
@@ -195,7 +196,7 @@ Optional fields:
 - `FromEmailAddress`: `str`
 - `CreateDate`: `datetime`
 - `DeliverabilityTestStatus`:
-  [DeliverabilityTestStatus](./literals.md#deliverabilityteststatus)
+  [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
 
 ## DeliveryOptionsTypeDef
 
@@ -205,7 +206,7 @@ from mypy_boto3_pinpoint_email.type_defs import DeliveryOptionsTypeDef
 
 Optional fields:
 
-- `TlsPolicy`: [TlsPolicy](./literals.md#tlspolicy)
+- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 - `SendingPoolName`: `str`
 
 ## DestinationTypeDef
@@ -229,7 +230,7 @@ from mypy_boto3_pinpoint_email.type_defs import DkimAttributesTypeDef
 Optional fields:
 
 - `SigningEnabled`: `bool`
-- `Status`: [DkimStatus](./literals.md#dkimstatus)
+- `Status`: [DkimStatusType](./literals.md#dkimstatustype)
 - `Tokens`: `List`\[`str`\]
 
 ## DomainDeliverabilityCampaignTypeDef
@@ -303,12 +304,13 @@ from mypy_boto3_pinpoint_email.type_defs import EventDestinationDefinitionTypeDe
 Optional fields:
 
 - `Enabled`: `bool`
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
   [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 - `PinpointDestination`:
   [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
 
@@ -321,7 +323,7 @@ from mypy_boto3_pinpoint_email.type_defs import EventDestinationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 Optional fields:
 
@@ -330,7 +332,8 @@ Optional fields:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
   [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `SnsDestination`:
+  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 - `PinpointDestination`:
   [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
 
@@ -385,7 +388,8 @@ Optional fields:
   [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
 - `ReputationOptions`:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
-- `SendingOptions`: [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
+- `SendingOptions`:
+  [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## GetDedicatedIpResponseTypeDef
@@ -424,7 +428,7 @@ Optional fields:
 
 - `SubscriptionExpiryDate`: `datetime`
 - `AccountStatus`:
-  [DeliverabilityDashboardAccountStatus](./literals.md#deliverabilitydashboardaccountstatus)
+  [DeliverabilityDashboardAccountStatusType](./literals.md#deliverabilitydashboardaccountstatustype)
 - `ActiveSubscribedDomains`:
   `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 - `PendingExpirationSubscribedDomains`:
@@ -481,10 +485,11 @@ from mypy_boto3_pinpoint_email.type_defs import GetEmailIdentityResponseTypeDef
 
 Optional fields:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `FeedbackForwardingStatus`: `bool`
 - `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`: [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
+- `DkimAttributes`:
+  [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
 - `MailFromAttributes`:
   [MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -497,7 +502,7 @@ from mypy_boto3_pinpoint_email.type_defs import IdentityInfoTypeDef
 
 Optional fields:
 
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `IdentityName`: `str`
 - `SendingEnabled`: `bool`
 
@@ -619,8 +624,9 @@ Required fields:
 
 - `MailFromDomain`: `str`
 - `MailFromDomainStatus`:
-  [MailFromDomainStatus](./literals.md#mailfromdomainstatus)
-- `BehaviorOnMxFailure`: [BehaviorOnMxFailure](./literals.md#behavioronmxfailure)
+  [MailFromDomainStatusType](./literals.md#mailfromdomainstatustype)
+- `BehaviorOnMxFailure`:
+  [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
 
 ## MessageTagTypeDef
 

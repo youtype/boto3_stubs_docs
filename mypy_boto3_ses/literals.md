@@ -3,38 +3,38 @@
 > [Index](..) > [SES](.) > Literals
 
 Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES)
 type annotations stubs module
 [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Literals for boto3 SES module](#literals-for-boto3-ses-module)
-  - [BehaviorOnMXFailure](#behavioronmxfailure)
-  - [BounceType](#bouncetype)
-  - [BulkEmailStatus](#bulkemailstatus)
-  - [ConfigurationSetAttribute](#configurationsetattribute)
-  - [CustomMailFromStatus](#custommailfromstatus)
-  - [DimensionValueSource](#dimensionvaluesource)
-  - [DsnAction](#dsnaction)
-  - [EventType](#eventtype)
+  - [BehaviorOnMXFailureType](#behavioronmxfailuretype)
+  - [BounceTypeType](#bouncetypetype)
+  - [BulkEmailStatusType](#bulkemailstatustype)
+  - [ConfigurationSetAttributeType](#configurationsetattributetype)
+  - [CustomMailFromStatusType](#custommailfromstatustype)
+  - [DimensionValueSourceType](#dimensionvaluesourcetype)
+  - [DsnActionType](#dsnactiontype)
+  - [EventTypeType](#eventtypetype)
   - [IdentityExistsWaiterName](#identityexistswaitername)
-  - [IdentityType](#identitytype)
-  - [InvocationType](#invocationtype)
+  - [IdentityTypeType](#identitytypetype)
+  - [InvocationTypeType](#invocationtypetype)
   - [ListConfigurationSetsPaginatorName](#listconfigurationsetspaginatorname)
   - [ListCustomVerificationEmailTemplatesPaginatorName](#listcustomverificationemailtemplatespaginatorname)
   - [ListIdentitiesPaginatorName](#listidentitiespaginatorname)
   - [ListReceiptRuleSetsPaginatorName](#listreceiptrulesetspaginatorname)
   - [ListTemplatesPaginatorName](#listtemplatespaginatorname)
-  - [NotificationType](#notificationtype)
-  - [ReceiptFilterPolicy](#receiptfilterpolicy)
-  - [SNSActionEncoding](#snsactionencoding)
-  - [StopScope](#stopscope)
-  - [TlsPolicy](#tlspolicy)
-  - [VerificationStatus](#verificationstatus)
+  - [NotificationTypeType](#notificationtypetype)
+  - [ReceiptFilterPolicyType](#receiptfilterpolicytype)
+  - [SNSActionEncodingType](#snsactionencodingtype)
+  - [StopScopeType](#stopscopetype)
+  - [TlsPolicyType](#tlspolicytype)
+  - [VerificationStatusType](#verificationstatustype)
 
-## BehaviorOnMXFailure
+## BehaviorOnMXFailureType
 
 ```python
-from mypy_boto3_ses.literals import BehaviorOnMXFailure
+from mypy_boto3_ses.literals import BehaviorOnMXFailureType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `RejectMessage`
 - `UseDefaultValue`
 
-## BounceType
+## BounceTypeType
 
 ```python
-from mypy_boto3_ses.literals import BounceType
+from mypy_boto3_ses.literals import BounceTypeType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 - `TemporaryFailure`
 - `Undefined`
 
-## BulkEmailStatus
+## BulkEmailStatusType
 
 ```python
-from mypy_boto3_ses.literals import BulkEmailStatus
+from mypy_boto3_ses.literals import BulkEmailStatusType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `TemplateDoesNotExist`
 - `TransientFailure`
 
-## ConfigurationSetAttribute
+## ConfigurationSetAttributeType
 
 ```python
-from mypy_boto3_ses.literals import ConfigurationSetAttribute
+from mypy_boto3_ses.literals import ConfigurationSetAttributeType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `reputationOptions`
 - `trackingOptions`
 
-## CustomMailFromStatus
+## CustomMailFromStatusType
 
 ```python
-from mypy_boto3_ses.literals import CustomMailFromStatus
+from mypy_boto3_ses.literals import CustomMailFromStatusType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `Success`
 - `TemporaryFailure`
 
-## DimensionValueSource
+## DimensionValueSourceType
 
 ```python
-from mypy_boto3_ses.literals import DimensionValueSource
+from mypy_boto3_ses.literals import DimensionValueSourceType
 ```
 
 Values:
@@ -118,10 +118,10 @@ Values:
 - `linkTag`
 - `messageTag`
 
-## DsnAction
+## DsnActionType
 
 ```python
-from mypy_boto3_ses.literals import DsnAction
+from mypy_boto3_ses.literals import DsnActionType
 ```
 
 Values:
@@ -132,10 +132,10 @@ Values:
 - `failed`
 - `relayed`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_ses.literals import EventType
+from mypy_boto3_ses.literals import EventTypeType
 ```
 
 Values:
@@ -159,10 +159,10 @@ Values:
 
 - `identity_exists`
 
-## IdentityType
+## IdentityTypeType
 
 ```python
-from mypy_boto3_ses.literals import IdentityType
+from mypy_boto3_ses.literals import IdentityTypeType
 ```
 
 Values:
@@ -170,10 +170,10 @@ Values:
 - `Domain`
 - `EmailAddress`
 
-## InvocationType
+## InvocationTypeType
 
 ```python
-from mypy_boto3_ses.literals import InvocationType
+from mypy_boto3_ses.literals import InvocationTypeType
 ```
 
 Values:
@@ -231,10 +231,10 @@ Values:
 
 - `list_templates`
 
-## NotificationType
+## NotificationTypeType
 
 ```python
-from mypy_boto3_ses.literals import NotificationType
+from mypy_boto3_ses.literals import NotificationTypeType
 ```
 
 Values:
@@ -243,10 +243,10 @@ Values:
 - `Complaint`
 - `Delivery`
 
-## ReceiptFilterPolicy
+## ReceiptFilterPolicyType
 
 ```python
-from mypy_boto3_ses.literals import ReceiptFilterPolicy
+from mypy_boto3_ses.literals import ReceiptFilterPolicyType
 ```
 
 Values:
@@ -254,10 +254,10 @@ Values:
 - `Allow`
 - `Block`
 
-## SNSActionEncoding
+## SNSActionEncodingType
 
 ```python
-from mypy_boto3_ses.literals import SNSActionEncoding
+from mypy_boto3_ses.literals import SNSActionEncodingType
 ```
 
 Values:
@@ -265,20 +265,20 @@ Values:
 - `Base64`
 - `UTF-8`
 
-## StopScope
+## StopScopeType
 
 ```python
-from mypy_boto3_ses.literals import StopScope
+from mypy_boto3_ses.literals import StopScopeType
 ```
 
 Values:
 
 - `RuleSet`
 
-## TlsPolicy
+## TlsPolicyType
 
 ```python
-from mypy_boto3_ses.literals import TlsPolicy
+from mypy_boto3_ses.literals import TlsPolicyType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `Optional`
 - `Require`
 
-## VerificationStatus
+## VerificationStatusType
 
 ```python
-from mypy_boto3_ses.literals import VerificationStatus
+from mypy_boto3_ses.literals import VerificationStatusType
 ```
 
 Values:

@@ -3,19 +3,19 @@
 > [Index](..) > [ElastiCache](.) > Literals
 
 Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
 [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [Literals for boto3 ElastiCache module](#literals-for-boto3-elasticache-module)
-  - [AZMode](#azmode)
-  - [AuthTokenUpdateStatus](#authtokenupdatestatus)
-  - [AuthTokenUpdateStrategyType](#authtokenupdatestrategytype)
-  - [AuthenticationType](#authenticationtype)
-  - [AutomaticFailoverStatus](#automaticfailoverstatus)
+  - [AZModeType](#azmodetype)
+  - [AuthTokenUpdateStatusType](#authtokenupdatestatustype)
+  - [AuthTokenUpdateStrategyTypeType](#authtokenupdatestrategytypetype)
+  - [AuthenticationTypeType](#authenticationtypetype)
+  - [AutomaticFailoverStatusType](#automaticfailoverstatustype)
   - [CacheClusterAvailableWaiterName](#cacheclusteravailablewaitername)
   - [CacheClusterDeletedWaiterName](#cacheclusterdeletedwaitername)
-  - [ChangeType](#changetype)
+  - [ChangeTypeType](#changetypetype)
   - [DescribeCacheClustersPaginatorName](#describecacheclusterspaginatorname)
   - [DescribeCacheEngineVersionsPaginatorName](#describecacheengineversionspaginatorname)
   - [DescribeCacheParameterGroupsPaginatorName](#describecacheparametergroupspaginatorname)
@@ -33,28 +33,28 @@ type annotations stubs module
   - [DescribeUpdateActionsPaginatorName](#describeupdateactionspaginatorname)
   - [DescribeUserGroupsPaginatorName](#describeusergroupspaginatorname)
   - [DescribeUsersPaginatorName](#describeuserspaginatorname)
-  - [DestinationType](#destinationtype)
-  - [LogDeliveryConfigurationStatus](#logdeliveryconfigurationstatus)
-  - [LogFormat](#logformat)
-  - [LogType](#logtype)
-  - [MultiAZStatus](#multiazstatus)
-  - [NodeUpdateInitiatedBy](#nodeupdateinitiatedby)
-  - [NodeUpdateStatus](#nodeupdatestatus)
-  - [OutpostMode](#outpostmode)
-  - [PendingAutomaticFailoverStatus](#pendingautomaticfailoverstatus)
+  - [DestinationTypeType](#destinationtypetype)
+  - [LogDeliveryConfigurationStatusType](#logdeliveryconfigurationstatustype)
+  - [LogFormatType](#logformattype)
+  - [LogTypeType](#logtypetype)
+  - [MultiAZStatusType](#multiazstatustype)
+  - [NodeUpdateInitiatedByType](#nodeupdateinitiatedbytype)
+  - [NodeUpdateStatusType](#nodeupdatestatustype)
+  - [OutpostModeType](#outpostmodetype)
+  - [PendingAutomaticFailoverStatusType](#pendingautomaticfailoverstatustype)
   - [ReplicationGroupAvailableWaiterName](#replicationgroupavailablewaitername)
   - [ReplicationGroupDeletedWaiterName](#replicationgroupdeletedwaitername)
-  - [ServiceUpdateSeverity](#serviceupdateseverity)
-  - [ServiceUpdateStatus](#serviceupdatestatus)
-  - [ServiceUpdateType](#serviceupdatetype)
-  - [SlaMet](#slamet)
-  - [SourceType](#sourcetype)
-  - [UpdateActionStatus](#updateactionstatus)
+  - [ServiceUpdateSeverityType](#serviceupdateseveritytype)
+  - [ServiceUpdateStatusType](#serviceupdatestatustype)
+  - [ServiceUpdateTypeType](#serviceupdatetypetype)
+  - [SlaMetType](#slamettype)
+  - [SourceTypeType](#sourcetypetype)
+  - [UpdateActionStatusType](#updateactionstatustype)
 
-## AZMode
+## AZModeType
 
 ```python
-from mypy_boto3_elasticache.literals import AZMode
+from mypy_boto3_elasticache.literals import AZModeType
 ```
 
 Values:
@@ -62,10 +62,10 @@ Values:
 - `cross-az`
 - `single-az`
 
-## AuthTokenUpdateStatus
+## AuthTokenUpdateStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import AuthTokenUpdateStatus
+from mypy_boto3_elasticache.literals import AuthTokenUpdateStatusType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `ROTATING`
 - `SETTING`
 
-## AuthTokenUpdateStrategyType
+## AuthTokenUpdateStrategyTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import AuthTokenUpdateStrategyType
+from mypy_boto3_elasticache.literals import AuthTokenUpdateStrategyTypeType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `ROTATE`
 - `SET`
 
-## AuthenticationType
+## AuthenticationTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import AuthenticationType
+from mypy_boto3_elasticache.literals import AuthenticationTypeType
 ```
 
 Values:
@@ -96,10 +96,10 @@ Values:
 - `no-password`
 - `password`
 
-## AutomaticFailoverStatus
+## AutomaticFailoverStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import AutomaticFailoverStatus
+from mypy_boto3_elasticache.literals import AutomaticFailoverStatusType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 
 - `cache_cluster_deleted`
 
-## ChangeType
+## ChangeTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import ChangeType
+from mypy_boto3_elasticache.literals import ChangeTypeType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 
 - `describe_users`
 
-## DestinationType
+## DestinationTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import DestinationType
+from mypy_boto3_elasticache.literals import DestinationTypeType
 ```
 
 Values:
@@ -321,10 +321,10 @@ Values:
 - `cloudwatch-logs`
 - `kinesis-firehose`
 
-## LogDeliveryConfigurationStatus
+## LogDeliveryConfigurationStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import LogDeliveryConfigurationStatus
+from mypy_boto3_elasticache.literals import LogDeliveryConfigurationStatusType
 ```
 
 Values:
@@ -335,10 +335,10 @@ Values:
 - `error`
 - `modifying`
 
-## LogFormat
+## LogFormatType
 
 ```python
-from mypy_boto3_elasticache.literals import LogFormat
+from mypy_boto3_elasticache.literals import LogFormatType
 ```
 
 Values:
@@ -346,20 +346,20 @@ Values:
 - `json`
 - `text`
 
-## LogType
+## LogTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import LogType
+from mypy_boto3_elasticache.literals import LogTypeType
 ```
 
 Values:
 
 - `slow-log`
 
-## MultiAZStatus
+## MultiAZStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import MultiAZStatus
+from mypy_boto3_elasticache.literals import MultiAZStatusType
 ```
 
 Values:
@@ -367,10 +367,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## NodeUpdateInitiatedBy
+## NodeUpdateInitiatedByType
 
 ```python
-from mypy_boto3_elasticache.literals import NodeUpdateInitiatedBy
+from mypy_boto3_elasticache.literals import NodeUpdateInitiatedByType
 ```
 
 Values:
@@ -378,10 +378,10 @@ Values:
 - `customer`
 - `system`
 
-## NodeUpdateStatus
+## NodeUpdateStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import NodeUpdateStatus
+from mypy_boto3_elasticache.literals import NodeUpdateStatusType
 ```
 
 Values:
@@ -393,10 +393,10 @@ Values:
 - `stopping`
 - `waiting-to-start`
 
-## OutpostMode
+## OutpostModeType
 
 ```python
-from mypy_boto3_elasticache.literals import OutpostMode
+from mypy_boto3_elasticache.literals import OutpostModeType
 ```
 
 Values:
@@ -404,10 +404,10 @@ Values:
 - `cross-outpost`
 - `single-outpost`
 
-## PendingAutomaticFailoverStatus
+## PendingAutomaticFailoverStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import PendingAutomaticFailoverStatus
+from mypy_boto3_elasticache.literals import PendingAutomaticFailoverStatusType
 ```
 
 Values:
@@ -435,10 +435,10 @@ Values:
 
 - `replication_group_deleted`
 
-## ServiceUpdateSeverity
+## ServiceUpdateSeverityType
 
 ```python
-from mypy_boto3_elasticache.literals import ServiceUpdateSeverity
+from mypy_boto3_elasticache.literals import ServiceUpdateSeverityType
 ```
 
 Values:
@@ -448,10 +448,10 @@ Values:
 - `low`
 - `medium`
 
-## ServiceUpdateStatus
+## ServiceUpdateStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import ServiceUpdateStatus
+from mypy_boto3_elasticache.literals import ServiceUpdateStatusType
 ```
 
 Values:
@@ -460,20 +460,20 @@ Values:
 - `cancelled`
 - `expired`
 
-## ServiceUpdateType
+## ServiceUpdateTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import ServiceUpdateType
+from mypy_boto3_elasticache.literals import ServiceUpdateTypeType
 ```
 
 Values:
 
 - `security-update`
 
-## SlaMet
+## SlaMetType
 
 ```python
-from mypy_boto3_elasticache.literals import SlaMet
+from mypy_boto3_elasticache.literals import SlaMetType
 ```
 
 Values:
@@ -482,10 +482,10 @@ Values:
 - `no`
 - `yes`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_elasticache.literals import SourceType
+from mypy_boto3_elasticache.literals import SourceTypeType
 ```
 
 Values:
@@ -498,10 +498,10 @@ Values:
 - `user`
 - `user-group`
 
-## UpdateActionStatus
+## UpdateActionStatusType
 
 ```python
-from mypy_boto3_elasticache.literals import UpdateActionStatus
+from mypy_boto3_elasticache.literals import UpdateActionStatusType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [AmplifyBackend](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
 [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
@@ -84,7 +84,7 @@ from mypy_boto3_amplifybackend.type_defs import BackendAPIAuthTypeTypeDef
 
 Optional fields:
 
-- `Mode`: [Mode](./literals.md#mode)
+- `Mode`: [ModeType](./literals.md#modetype)
 - `Settings`:
   [BackendAPIAppSyncAuthSettingsTypeDef](./type_defs.md#backendapiappsyncauthsettingstypedef)
 
@@ -96,7 +96,8 @@ from mypy_boto3_amplifybackend.type_defs import BackendAPIConflictResolutionType
 
 Optional fields:
 
-- `ResolutionStrategy`: [ResolutionStrategy](./literals.md#resolutionstrategy)
+- `ResolutionStrategy`:
+  [ResolutionStrategyType](./literals.md#resolutionstrategytype)
 
 ## BackendAPIResourceConfigTypeDef
 
@@ -185,7 +186,7 @@ from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthForgotPasswordC
 
 Required fields:
 
-- `DeliveryMethod`: [DeliveryMethod](./literals.md#deliverymethod)
+- `DeliveryMethod`: [DeliveryMethodType](./literals.md#deliverymethodtype)
 
 Optional fields:
 
@@ -211,7 +212,7 @@ from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthMFAConfigTypeDe
 
 Required fields:
 
-- `MFAMode`: [MFAMode](./literals.md#mfamode)
+- `MFAMode`: [MFAModeType](./literals.md#mfamodetype)
 
 Optional fields:
 
@@ -225,8 +226,9 @@ from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthOAuthConfigType
 
 Required fields:
 
-- `OAuthGrantType`: [OAuthGrantType](./literals.md#oauthgranttype)
-- `OAuthScopes`: `List`\[[OAuthScopesElement](./literals.md#oauthscopeselement)\]
+- `OAuthGrantType`: [OAuthGrantTypeType](./literals.md#oauthgranttypetype)
+- `OAuthScopes`:
+  `List`\[[OAuthScopesElementType](./literals.md#oauthscopeselementtype)\]
 - `RedirectSignInURIs`: `List`\[`str`\]
 - `RedirectSignOutURIs`: `List`\[`str`\]
 
@@ -249,7 +251,7 @@ Required fields:
 Optional fields:
 
 - `AdditionalConstraints`:
-  `List`\[[AdditionalConstraintsElement](./literals.md#additionalconstraintselement)\]
+  `List`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 
 ## CreateBackendAuthResourceConfigTypeDef
 
@@ -259,8 +261,9 @@ from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthResourceConfigT
 
 Required fields:
 
-- `AuthResources`: [AuthResources](./literals.md#authresources)
-- `Service`: `Literal['COGNITO']` (see [Service](./literals.md#service))
+- `AuthResources`: [AuthResourcesType](./literals.md#authresourcestype)
+- `Service`: `Literal['COGNITO']` (see
+  [ServiceType](./literals.md#servicetype))
 - `UserPoolConfigs`:
   [CreateBackendAuthUserPoolConfigTypeDef](./type_defs.md#createbackendauthuserpoolconfigtypedef)
 
@@ -293,8 +296,8 @@ from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthUserPoolConfigT
 Required fields:
 
 - `RequiredSignUpAttributes`:
-  `List`\[[RequiredSignUpAttributesElement](./literals.md#requiredsignupattributeselement)\]
-- `SignInMethod`: [SignInMethod](./literals.md#signinmethod)
+  `List`\[[RequiredSignUpAttributesElementType](./literals.md#requiredsignupattributeselementtype)\]
+- `SignInMethod`: [SignInMethodType](./literals.md#signinmethodtype)
 - `UserPoolName`: `str`
 
 Optional fields:
@@ -439,7 +442,7 @@ from mypy_boto3_amplifybackend.type_defs import GetBackendAPIModelsResponseTypeD
 Optional fields:
 
 - `Models`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## GetBackendAPIResponseTypeDef
 
@@ -585,7 +588,8 @@ from mypy_boto3_amplifybackend.type_defs import SettingsTypeDef
 
 Optional fields:
 
-- `MfaTypes`: `List`\[[MfaTypesElement](./literals.md#mfatypeselement)\]
+- `MfaTypes`:
+  `List`\[[MfaTypesElementType](./literals.md#mfatypeselementtype)\]
 - `SmsMessage`: `str`
 
 ## SmsSettingsTypeDef
@@ -636,7 +640,7 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthForgotPasswordC
 
 Optional fields:
 
-- `DeliveryMethod`: [DeliveryMethod](./literals.md#deliverymethod)
+- `DeliveryMethod`: [DeliveryMethodType](./literals.md#deliverymethodtype)
 - `EmailSettings`: [EmailSettingsTypeDef](./type_defs.md#emailsettingstypedef)
 - `SmsSettings`: [SmsSettingsTypeDef](./type_defs.md#smssettingstypedef)
 
@@ -658,7 +662,7 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthMFAConfigTypeDe
 
 Optional fields:
 
-- `MFAMode`: [MFAMode](./literals.md#mfamode)
+- `MFAMode`: [MFAModeType](./literals.md#mfamodetype)
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 
 ## UpdateBackendAuthOAuthConfigTypeDef
@@ -670,8 +674,9 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthOAuthConfigType
 Optional fields:
 
 - `DomainPrefix`: `str`
-- `OAuthGrantType`: [OAuthGrantType](./literals.md#oauthgranttype)
-- `OAuthScopes`: `List`\[[OAuthScopesElement](./literals.md#oauthscopeselement)\]
+- `OAuthGrantType`: [OAuthGrantTypeType](./literals.md#oauthgranttypetype)
+- `OAuthScopes`:
+  `List`\[[OAuthScopesElementType](./literals.md#oauthscopeselementtype)\]
 - `RedirectSignInURIs`: `List`\[`str`\]
 - `RedirectSignOutURIs`: `List`\[`str`\]
 - `SocialProviderSettings`:
@@ -686,7 +691,7 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthPasswordPolicyC
 Optional fields:
 
 - `AdditionalConstraints`:
-  `List`\[[AdditionalConstraintsElement](./literals.md#additionalconstraintselement)\]
+  `List`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 - `MinimumLength`: `float`
 
 ## UpdateBackendAuthResourceConfigTypeDef
@@ -697,8 +702,9 @@ from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthResourceConfigT
 
 Required fields:
 
-- `AuthResources`: [AuthResources](./literals.md#authresources)
-- `Service`: `Literal['COGNITO']` (see [Service](./literals.md#service))
+- `AuthResources`: [AuthResourcesType](./literals.md#authresourcestype)
+- `Service`: `Literal['COGNITO']` (see
+  [ServiceType](./literals.md#servicetype))
 - `UserPoolConfigs`:
   [UpdateBackendAuthUserPoolConfigTypeDef](./type_defs.md#updatebackendauthuserpoolconfigtypedef)
 

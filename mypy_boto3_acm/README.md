@@ -3,7 +3,7 @@
 > [Index](..) > ACM
 
 Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM)
 type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
@@ -30,49 +30,49 @@ Can be used directly:
 from mypy_boto3_acm.client import ACMClient
 ```
 
-ACMClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags_to_certificate](./client.md#add-tags-to-certificate)
-- [can_paginate](./client.md#can-paginate)
-- [delete_certificate](./client.md#delete-certificate)
-- [describe_certificate](./client.md#describe-certificate)
-- [export_certificate](./client.md#export-certificate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_account_configuration](./client.md#get-account-configuration)
-- [get_certificate](./client.md#get-certificate)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [import_certificate](./client.md#import-certificate)
-- [list_certificates](./client.md#list-certificates)
-- [list_tags_for_certificate](./client.md#list-tags-for-certificate)
-- [put_account_configuration](./client.md#put-account-configuration)
-- [remove_tags_from_certificate](./client.md#remove-tags-from-certificate)
-- [renew_certificate](./client.md#renew-certificate)
-- [request_certificate](./client.md#request-certificate)
-- [resend_validation_email](./client.md#resend-validation-email)
-- [update_certificate_options](./client.md#update-certificate-options)
+- [add_tags_to_certificate](./client.md#add_tags_to_certificate)
+- [can_paginate](./client.md#can_paginate)
+- [delete_certificate](./client.md#delete_certificate)
+- [describe_certificate](./client.md#describe_certificate)
+- [export_certificate](./client.md#export_certificate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_account_configuration](./client.md#get_account_configuration)
+- [get_certificate](./client.md#get_certificate)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [import_certificate](./client.md#import_certificate)
+- [list_certificates](./client.md#list_certificates)
+- [list_tags_for_certificate](./client.md#list_tags_for_certificate)
+- [put_account_configuration](./client.md#put_account_configuration)
+- [remove_tags_from_certificate](./client.md#remove_tags_from_certificate)
+- [renew_certificate](./client.md#renew_certificate)
+- [request_certificate](./client.md#request_certificate)
+- [resend_validation_email](./client.md#resend_validation_email)
+- [update_certificate_options](./client.md#update_certificate_options)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InvalidArgsException](./client.md#invalidargsexception)
-- [InvalidArnException](./client.md#invalidarnexception)
-- [InvalidDomainValidationOptionsException](./client.md#invaliddomainvalidationoptionsexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidStateException](./client.md#invalidstateexception)
-- [InvalidTagException](./client.md#invalidtagexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [RequestInProgressException](./client.md#requestinprogressexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TagPolicyException](./client.md#tagpolicyexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [ValidationException](./client.md#validationexception)
+ACMClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InvalidArgsException
+- InvalidArnException
+- InvalidDomainValidationOptionsException
+- InvalidParameterException
+- InvalidStateException
+- InvalidTagException
+- LimitExceededException
+- RequestInProgressException
+- ResourceInUseException
+- ResourceNotFoundException
+- TagPolicyException
+- ThrottlingException
+- TooManyTagsException
+- ValidationException
 
 ## Paginators
 
@@ -107,24 +107,24 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_acm.literals import CertificateStatus, ...
+from mypy_boto3_acm.literals import CertificateStatusType, ...
 ```
 
-- [CertificateStatus](./literals.md#certificatestatus)
-- [CertificateTransparencyLoggingPreference](./literals.md#certificatetransparencyloggingpreference)
-- [CertificateType](./literals.md#certificatetype)
+- [CertificateStatusType](./literals.md#certificatestatustype)
+- [CertificateTransparencyLoggingPreferenceType](./literals.md#certificatetransparencyloggingpreferencetype)
+- [CertificateTypeType](./literals.md#certificatetypetype)
 - [CertificateValidatedWaiterName](./literals.md#certificatevalidatedwaitername)
-- [DomainStatus](./literals.md#domainstatus)
-- [ExtendedKeyUsageName](./literals.md#extendedkeyusagename)
-- [FailureReason](./literals.md#failurereason)
-- [KeyAlgorithm](./literals.md#keyalgorithm)
-- [KeyUsageName](./literals.md#keyusagename)
+- [DomainStatusType](./literals.md#domainstatustype)
+- [ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype)
+- [FailureReasonType](./literals.md#failurereasontype)
+- [KeyAlgorithmType](./literals.md#keyalgorithmtype)
+- [KeyUsageNameType](./literals.md#keyusagenametype)
 - [ListCertificatesPaginatorName](./literals.md#listcertificatespaginatorname)
-- [RecordType](./literals.md#recordtype)
-- [RenewalEligibility](./literals.md#renewaleligibility)
-- [RenewalStatus](./literals.md#renewalstatus)
-- [RevocationReason](./literals.md#revocationreason)
-- [ValidationMethod](./literals.md#validationmethod)
+- [RecordTypeType](./literals.md#recordtypetype)
+- [RenewalEligibilityType](./literals.md#renewaleligibilitytype)
+- [RenewalStatusType](./literals.md#renewalstatustype)
+- [RevocationReasonType](./literals.md#revocationreasontype)
+- [ValidationMethodType](./literals.md#validationmethodtype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > FinSpaceData
 
 Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
 [mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
@@ -29,24 +29,24 @@ Can be used directly:
 from mypy_boto3_finspace_data.client import FinSpaceDataClient
 ```
 
-FinSpaceDataClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_changeset](./client.md#create-changeset)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_programmatic_access_credentials](./client.md#get-programmatic-access-credentials)
-- [get_working_location](./client.md#get-working-location)
+- [can_paginate](./client.md#can_paginate)
+- [create_changeset](./client.md#create_changeset)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_programmatic_access_credentials](./client.md#get_programmatic_access_credentials)
+- [get_working_location](./client.md#get_working_location)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+FinSpaceDataClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -55,15 +55,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_finspace_data.literals import ChangeType, ...
+from mypy_boto3_finspace_data.literals import ChangeTypeType, ...
 ```
 
-- [ChangeType](./literals.md#changetype)
-- [ChangesetStatus](./literals.md#changesetstatus)
-- [ErrorCategory](./literals.md#errorcategory)
-- [FormatType](./literals.md#formattype)
-- [SourceType](./literals.md#sourcetype)
-- [locationType](./literals.md#locationtype)
+- [ChangeTypeType](./literals.md#changetypetype)
+- [ChangesetStatusType](./literals.md#changesetstatustype)
+- [ErrorCategoryType](./literals.md#errorcategorytype)
+- [FormatTypeType](./literals.md#formattypetype)
+- [SourceTypeType](./literals.md#sourcetypetype)
+- [locationTypeType](./literals.md#locationtypetype)
 
 ## Typed dictionaries
 

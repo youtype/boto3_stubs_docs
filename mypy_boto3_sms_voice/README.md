@@ -3,7 +3,7 @@
 > [Index](..) > SMSVoice
 
 Auto-generated documentation for
-[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
+[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms-voice.html#SMSVoice)
 type annotations stubs module
 [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
@@ -29,30 +29,30 @@ Can be used directly:
 from mypy_boto3_sms_voice.client import SMSVoiceClient
 ```
 
-SMSVoiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_configuration_set](./client.md#create-configuration-set)
-- [create_configuration_set_event_destination](./client.md#create-configuration-set-event-destination)
-- [delete_configuration_set](./client.md#delete-configuration-set)
-- [delete_configuration_set_event_destination](./client.md#delete-configuration-set-event-destination)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_configuration_set_event_destinations](./client.md#get-configuration-set-event-destinations)
-- [list_configuration_sets](./client.md#list-configuration-sets)
-- [send_voice_message](./client.md#send-voice-message)
-- [update_configuration_set_event_destination](./client.md#update-configuration-set-event-destination)
+- [can_paginate](./client.md#can_paginate)
+- [create_configuration_set](./client.md#create_configuration_set)
+- [create_configuration_set_event_destination](./client.md#create_configuration_set_event_destination)
+- [delete_configuration_set](./client.md#delete_configuration_set)
+- [delete_configuration_set_event_destination](./client.md#delete_configuration_set_event_destination)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_configuration_set_event_destinations](./client.md#get_configuration_set_event_destinations)
+- [list_configuration_sets](./client.md#list_configuration_sets)
+- [send_voice_message](./client.md#send_voice_message)
+- [update_configuration_set_event_destination](./client.md#update_configuration_set_event_destination)
 
 ### Exceptions
 
-- [AlreadyExistsException](./client.md#alreadyexistsexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+SMSVoiceClient [exceptions](./client.md#exceptions)
+
+- AlreadyExistsException
+- BadRequestException
+- ClientError
+- InternalServiceErrorException
+- LimitExceededException
+- NotFoundException
+- TooManyRequestsException
 
 ## Literals
 
@@ -61,10 +61,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sms_voice.literals import EventType, ...
+from mypy_boto3_sms_voice.literals import EventTypeType, ...
 ```
 
-- [EventType](./literals.md#eventtype)
+- [EventTypeType](./literals.md#eventtypetype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > QLDBSession
 
 Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
 [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
@@ -28,23 +28,23 @@ Can be used directly:
 from mypy_boto3_qldb_session.client import QLDBSessionClient
 ```
 
-QLDBSessionClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [send_command](./client.md#send-command)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [send_command](./client.md#send_command)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [CapacityExceededException](./client.md#capacityexceededexception)
-- [ClientError](./client.md#clienterror)
-- [InvalidSessionException](./client.md#invalidsessionexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [OccConflictException](./client.md#occconflictexception)
-- [RateExceededException](./client.md#rateexceededexception)
+QLDBSessionClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- CapacityExceededException
+- ClientError
+- InvalidSessionException
+- LimitExceededException
+- OccConflictException
+- RateExceededException
 
 ## Typed dictionaries
 

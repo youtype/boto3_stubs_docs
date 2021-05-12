@@ -3,51 +3,51 @@
 > [Index](..) > [DirectoryService](.) > Literals
 
 Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService)
 type annotations stubs module
 [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [Literals for boto3 DirectoryService module](#literals-for-boto3-directoryservice-module)
-  - [CertificateState](#certificatestate)
-  - [CertificateType](#certificatetype)
-  - [ClientAuthenticationType](#clientauthenticationtype)
+  - [CertificateStateType](#certificatestatetype)
+  - [CertificateTypeType](#certificatetypetype)
+  - [ClientAuthenticationTypeType](#clientauthenticationtypetype)
   - [DescribeDirectoriesPaginatorName](#describedirectoriespaginatorname)
   - [DescribeDomainControllersPaginatorName](#describedomaincontrollerspaginatorname)
   - [DescribeSharedDirectoriesPaginatorName](#describeshareddirectoriespaginatorname)
   - [DescribeSnapshotsPaginatorName](#describesnapshotspaginatorname)
   - [DescribeTrustsPaginatorName](#describetrustspaginatorname)
-  - [DirectoryEdition](#directoryedition)
-  - [DirectorySize](#directorysize)
-  - [DirectoryStage](#directorystage)
-  - [DirectoryType](#directorytype)
-  - [DomainControllerStatus](#domaincontrollerstatus)
-  - [IpRouteStatusMsg](#iproutestatusmsg)
-  - [LDAPSStatus](#ldapsstatus)
-  - [LDAPSType](#ldapstype)
+  - [DirectoryEditionType](#directoryeditiontype)
+  - [DirectorySizeType](#directorysizetype)
+  - [DirectoryStageType](#directorystagetype)
+  - [DirectoryTypeType](#directorytypetype)
+  - [DomainControllerStatusType](#domaincontrollerstatustype)
+  - [IpRouteStatusMsgType](#iproutestatusmsgtype)
+  - [LDAPSStatusType](#ldapsstatustype)
+  - [LDAPSTypeType](#ldapstypetype)
   - [ListIpRoutesPaginatorName](#listiproutespaginatorname)
   - [ListLogSubscriptionsPaginatorName](#listlogsubscriptionspaginatorname)
   - [ListSchemaExtensionsPaginatorName](#listschemaextensionspaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [RadiusAuthenticationProtocol](#radiusauthenticationprotocol)
-  - [RadiusStatus](#radiusstatus)
-  - [RegionType](#regiontype)
-  - [ReplicationScope](#replicationscope)
-  - [SchemaExtensionStatus](#schemaextensionstatus)
-  - [SelectiveAuth](#selectiveauth)
-  - [ShareMethod](#sharemethod)
-  - [ShareStatus](#sharestatus)
-  - [SnapshotStatus](#snapshotstatus)
-  - [SnapshotType](#snapshottype)
-  - [TargetType](#targettype)
-  - [TopicStatus](#topicstatus)
-  - [TrustDirection](#trustdirection)
-  - [TrustState](#truststate)
-  - [TrustType](#trusttype)
+  - [RadiusAuthenticationProtocolType](#radiusauthenticationprotocoltype)
+  - [RadiusStatusType](#radiusstatustype)
+  - [RegionTypeType](#regiontypetype)
+  - [ReplicationScopeType](#replicationscopetype)
+  - [SchemaExtensionStatusType](#schemaextensionstatustype)
+  - [SelectiveAuthType](#selectiveauthtype)
+  - [ShareMethodType](#sharemethodtype)
+  - [ShareStatusType](#sharestatustype)
+  - [SnapshotStatusType](#snapshotstatustype)
+  - [SnapshotTypeType](#snapshottypetype)
+  - [TargetTypeType](#targettypetype)
+  - [TopicStatusType](#topicstatustype)
+  - [TrustDirectionType](#trustdirectiontype)
+  - [TrustStateType](#truststatetype)
+  - [TrustTypeType](#trusttypetype)
 
-## CertificateState
+## CertificateStateType
 
 ```python
-from mypy_boto3_ds.literals import CertificateState
+from mypy_boto3_ds.literals import CertificateStateType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `RegisterFailed`
 - `Registering`
 
-## CertificateType
+## CertificateTypeType
 
 ```python
-from mypy_boto3_ds.literals import CertificateType
+from mypy_boto3_ds.literals import CertificateTypeType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `ClientCertAuth`
 - `ClientLDAPS`
 
-## ClientAuthenticationType
+## ClientAuthenticationTypeType
 
 ```python
-from mypy_boto3_ds.literals import ClientAuthenticationType
+from mypy_boto3_ds.literals import ClientAuthenticationTypeType
 ```
 
 Values:
@@ -130,10 +130,10 @@ Values:
 
 - `describe_trusts`
 
-## DirectoryEdition
+## DirectoryEditionType
 
 ```python
-from mypy_boto3_ds.literals import DirectoryEdition
+from mypy_boto3_ds.literals import DirectoryEditionType
 ```
 
 Values:
@@ -141,10 +141,10 @@ Values:
 - `Enterprise`
 - `Standard`
 
-## DirectorySize
+## DirectorySizeType
 
 ```python
-from mypy_boto3_ds.literals import DirectorySize
+from mypy_boto3_ds.literals import DirectorySizeType
 ```
 
 Values:
@@ -152,10 +152,10 @@ Values:
 - `Large`
 - `Small`
 
-## DirectoryStage
+## DirectoryStageType
 
 ```python
-from mypy_boto3_ds.literals import DirectoryStage
+from mypy_boto3_ds.literals import DirectoryStageType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 - `RestoreFailed`
 - `Restoring`
 
-## DirectoryType
+## DirectoryTypeType
 
 ```python
-from mypy_boto3_ds.literals import DirectoryType
+from mypy_boto3_ds.literals import DirectoryTypeType
 ```
 
 Values:
@@ -185,10 +185,10 @@ Values:
 - `SharedMicrosoftAD`
 - `SimpleAD`
 
-## DomainControllerStatus
+## DomainControllerStatusType
 
 ```python
-from mypy_boto3_ds.literals import DomainControllerStatus
+from mypy_boto3_ds.literals import DomainControllerStatusType
 ```
 
 Values:
@@ -201,10 +201,10 @@ Values:
 - `Impaired`
 - `Restoring`
 
-## IpRouteStatusMsg
+## IpRouteStatusMsgType
 
 ```python
-from mypy_boto3_ds.literals import IpRouteStatusMsg
+from mypy_boto3_ds.literals import IpRouteStatusMsgType
 ```
 
 Values:
@@ -216,10 +216,10 @@ Values:
 - `RemoveFailed`
 - `Removing`
 
-## LDAPSStatus
+## LDAPSStatusType
 
 ```python
-from mypy_boto3_ds.literals import LDAPSStatus
+from mypy_boto3_ds.literals import LDAPSStatusType
 ```
 
 Values:
@@ -229,10 +229,10 @@ Values:
 - `EnableFailed`
 - `Enabling`
 
-## LDAPSType
+## LDAPSTypeType
 
 ```python
-from mypy_boto3_ds.literals import LDAPSType
+from mypy_boto3_ds.literals import LDAPSTypeType
 ```
 
 Values:
@@ -279,10 +279,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## RadiusAuthenticationProtocol
+## RadiusAuthenticationProtocolType
 
 ```python
-from mypy_boto3_ds.literals import RadiusAuthenticationProtocol
+from mypy_boto3_ds.literals import RadiusAuthenticationProtocolType
 ```
 
 Values:
@@ -292,10 +292,10 @@ Values:
 - `MS-CHAPv2`
 - `PAP`
 
-## RadiusStatus
+## RadiusStatusType
 
 ```python
-from mypy_boto3_ds.literals import RadiusStatus
+from mypy_boto3_ds.literals import RadiusStatusType
 ```
 
 Values:
@@ -304,10 +304,10 @@ Values:
 - `Creating`
 - `Failed`
 
-## RegionType
+## RegionTypeType
 
 ```python
-from mypy_boto3_ds.literals import RegionType
+from mypy_boto3_ds.literals import RegionTypeType
 ```
 
 Values:
@@ -315,20 +315,20 @@ Values:
 - `Additional`
 - `Primary`
 
-## ReplicationScope
+## ReplicationScopeType
 
 ```python
-from mypy_boto3_ds.literals import ReplicationScope
+from mypy_boto3_ds.literals import ReplicationScopeType
 ```
 
 Values:
 
 - `Domain`
 
-## SchemaExtensionStatus
+## SchemaExtensionStatusType
 
 ```python
-from mypy_boto3_ds.literals import SchemaExtensionStatus
+from mypy_boto3_ds.literals import SchemaExtensionStatusType
 ```
 
 Values:
@@ -343,10 +343,10 @@ Values:
 - `RollbackInProgress`
 - `UpdatingSchema`
 
-## SelectiveAuth
+## SelectiveAuthType
 
 ```python
-from mypy_boto3_ds.literals import SelectiveAuth
+from mypy_boto3_ds.literals import SelectiveAuthType
 ```
 
 Values:
@@ -354,10 +354,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## ShareMethod
+## ShareMethodType
 
 ```python
-from mypy_boto3_ds.literals import ShareMethod
+from mypy_boto3_ds.literals import ShareMethodType
 ```
 
 Values:
@@ -365,10 +365,10 @@ Values:
 - `HANDSHAKE`
 - `ORGANIZATIONS`
 
-## ShareStatus
+## ShareStatusType
 
 ```python
-from mypy_boto3_ds.literals import ShareStatus
+from mypy_boto3_ds.literals import ShareStatusType
 ```
 
 Values:
@@ -383,10 +383,10 @@ Values:
 - `ShareFailed`
 - `Sharing`
 
-## SnapshotStatus
+## SnapshotStatusType
 
 ```python
-from mypy_boto3_ds.literals import SnapshotStatus
+from mypy_boto3_ds.literals import SnapshotStatusType
 ```
 
 Values:
@@ -395,10 +395,10 @@ Values:
 - `Creating`
 - `Failed`
 
-## SnapshotType
+## SnapshotTypeType
 
 ```python
-from mypy_boto3_ds.literals import SnapshotType
+from mypy_boto3_ds.literals import SnapshotTypeType
 ```
 
 Values:
@@ -406,20 +406,20 @@ Values:
 - `Auto`
 - `Manual`
 
-## TargetType
+## TargetTypeType
 
 ```python
-from mypy_boto3_ds.literals import TargetType
+from mypy_boto3_ds.literals import TargetTypeType
 ```
 
 Values:
 
 - `ACCOUNT`
 
-## TopicStatus
+## TopicStatusType
 
 ```python
-from mypy_boto3_ds.literals import TopicStatus
+from mypy_boto3_ds.literals import TopicStatusType
 ```
 
 Values:
@@ -429,10 +429,10 @@ Values:
 - `Registered`
 - `Topic not found`
 
-## TrustDirection
+## TrustDirectionType
 
 ```python
-from mypy_boto3_ds.literals import TrustDirection
+from mypy_boto3_ds.literals import TrustDirectionType
 ```
 
 Values:
@@ -441,10 +441,10 @@ Values:
 - `One-Way: Outgoing`
 - `Two-Way`
 
-## TrustState
+## TrustStateType
 
 ```python
-from mypy_boto3_ds.literals import TrustState
+from mypy_boto3_ds.literals import TrustStateType
 ```
 
 Values:
@@ -461,10 +461,10 @@ Values:
 - `VerifyFailed`
 - `Verifying`
 
-## TrustType
+## TrustTypeType
 
 ```python
-from mypy_boto3_ds.literals import TrustType
+from mypy_boto3_ds.literals import TrustTypeType
 ```
 
 Values:

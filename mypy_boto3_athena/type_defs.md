@@ -3,7 +3,7 @@
 > [Index](..) > [Athena](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/athena.html#Athena)
 type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
@@ -68,7 +68,8 @@ from mypy_boto3_athena.type_defs import BatchGetNamedQueryOutputTypeDef
 
 Required fields:
 
-- `NamedQueries`: `List`\[[NamedQueryTypeDef](./type_defs.md#namedquerytypedef)\]
+- `NamedQueries`:
+  `List`\[[NamedQueryTypeDef](./type_defs.md#namedquerytypedef)\]
 - `UnprocessedNamedQueryIds`:
   `List`\[[UnprocessedNamedQueryIdTypeDef](./type_defs.md#unprocessednamedqueryidtypedef)\]
 - `ResponseMetadata`:
@@ -108,7 +109,7 @@ Optional fields:
 - `Label`: `str`
 - `Precision`: `int`
 - `Scale`: `int`
-- `Nullable`: [ColumnNullable](./literals.md#columnnullable)
+- `Nullable`: [ColumnNullableType](./literals.md#columnnullabletype)
 - `CaseSensitive`: `bool`
 
 ## ColumnTypeDef
@@ -147,7 +148,7 @@ from mypy_boto3_athena.type_defs import DataCatalogSummaryTypeDef
 Optional fields:
 
 - `CatalogName`: `str`
-- `Type`: [DataCatalogType](./literals.md#datacatalogtype)
+- `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype)
 
 ## DataCatalogTypeDef
 
@@ -158,7 +159,7 @@ from mypy_boto3_athena.type_defs import DataCatalogTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [DataCatalogType](./literals.md#datacatalogtype)
+- `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype)
 
 Optional fields:
 
@@ -198,7 +199,8 @@ from mypy_boto3_athena.type_defs import EncryptionConfigurationTypeDef
 
 Required fields:
 
-- `EncryptionOption`: [EncryptionOption](./literals.md#encryptionoption)
+- `EncryptionOption`:
+  [EncryptionOptionType](./literals.md#encryptionoptiontype)
 
 Optional fields:
 
@@ -272,7 +274,8 @@ from mypy_boto3_athena.type_defs import GetQueryExecutionOutputTypeDef
 
 Required fields:
 
-- `QueryExecution`: [QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef)
+- `QueryExecution`:
+  [QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -526,7 +529,7 @@ from mypy_boto3_athena.type_defs import QueryExecutionStatusTypeDef
 
 Optional fields:
 
-- `State`: [QueryExecutionState](./literals.md#queryexecutionstate)
+- `State`: [QueryExecutionStateType](./literals.md#queryexecutionstatetype)
 - `StateChangeReason`: `str`
 - `SubmissionDateTime`: `datetime`
 - `CompletionDateTime`: `datetime`
@@ -541,7 +544,7 @@ Optional fields:
 
 - `QueryExecutionId`: `str`
 - `Query`: `str`
-- `StatementType`: [StatementType](./literals.md#statementtype)
+- `StatementType`: [StatementTypeType](./literals.md#statementtypetype)
 - `ResultConfiguration`:
   [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - `QueryExecutionContext`:
@@ -733,7 +736,7 @@ from mypy_boto3_athena.type_defs import WorkGroupSummaryTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `State`: [WorkGroupState](./literals.md#workgroupstate)
+- `State`: [WorkGroupStateType](./literals.md#workgroupstatetype)
 - `Description`: `str`
 - `CreationTime`: `datetime`
 - `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
@@ -750,7 +753,7 @@ Required fields:
 
 Optional fields:
 
-- `State`: [WorkGroupState](./literals.md#workgroupstate)
+- `State`: [WorkGroupStateType](./literals.md#workgroupstatetype)
 - `Configuration`:
   [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)
 - `Description`: `str`

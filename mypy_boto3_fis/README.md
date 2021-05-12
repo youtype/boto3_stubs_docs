@@ -3,7 +3,7 @@
 > [Index](..) > FIS
 
 Auto-generated documentation for
-[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+[FIS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fis.html#FIS)
 type annotations stubs module
 [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
@@ -28,34 +28,34 @@ Can be used directly:
 from mypy_boto3_fis.client import FISClient
 ```
 
-FISClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_experiment_template](./client.md#create-experiment-template)
-- [delete_experiment_template](./client.md#delete-experiment-template)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_action](./client.md#get-action)
-- [get_experiment](./client.md#get-experiment)
-- [get_experiment_template](./client.md#get-experiment-template)
-- [list_actions](./client.md#list-actions)
-- [list_experiment_templates](./client.md#list-experiment-templates)
-- [list_experiments](./client.md#list-experiments)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_experiment](./client.md#start-experiment)
-- [stop_experiment](./client.md#stop-experiment)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_experiment_template](./client.md#update-experiment-template)
+- [can_paginate](./client.md#can_paginate)
+- [create_experiment_template](./client.md#create_experiment_template)
+- [delete_experiment_template](./client.md#delete_experiment_template)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_action](./client.md#get_action)
+- [get_experiment](./client.md#get_experiment)
+- [get_experiment_template](./client.md#get_experiment_template)
+- [list_actions](./client.md#list_actions)
+- [list_experiment_templates](./client.md#list_experiment_templates)
+- [list_experiments](./client.md#list_experiments)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_experiment](./client.md#start_experiment)
+- [stop_experiment](./client.md#stop_experiment)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_experiment_template](./client.md#update_experiment_template)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+FISClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Literals
 
@@ -64,11 +64,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_fis.literals import ExperimentActionStatus, ...
+from mypy_boto3_fis.literals import ExperimentActionStatusType, ...
 ```
 
-- [ExperimentActionStatus](./literals.md#experimentactionstatus)
-- [ExperimentStatus](./literals.md#experimentstatus)
+- [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
+- [ExperimentStatusType](./literals.md#experimentstatustype)
 
 ## Typed dictionaries
 

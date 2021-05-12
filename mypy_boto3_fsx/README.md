@@ -3,7 +3,7 @@
 > [Index](..) > FSx
 
 Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx)
 type annotations stubs module
 [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
@@ -29,62 +29,62 @@ Can be used directly:
 from mypy_boto3_fsx.client import FSxClient
 ```
 
-FSxClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_file_system_aliases](./client.md#associate-file-system-aliases)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_data_repository_task](./client.md#cancel-data-repository-task)
-- [copy_backup](./client.md#copy-backup)
-- [create_backup](./client.md#create-backup)
-- [create_data_repository_task](./client.md#create-data-repository-task)
-- [create_file_system](./client.md#create-file-system)
-- [create_file_system_from_backup](./client.md#create-file-system-from-backup)
-- [delete_backup](./client.md#delete-backup)
-- [delete_file_system](./client.md#delete-file-system)
-- [describe_backups](./client.md#describe-backups)
-- [describe_data_repository_tasks](./client.md#describe-data-repository-tasks)
-- [describe_file_system_aliases](./client.md#describe-file-system-aliases)
-- [describe_file_systems](./client.md#describe-file-systems)
-- [disassociate_file_system_aliases](./client.md#disassociate-file-system-aliases)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_file_system](./client.md#update-file-system)
+- [associate_file_system_aliases](./client.md#associate_file_system_aliases)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_data_repository_task](./client.md#cancel_data_repository_task)
+- [copy_backup](./client.md#copy_backup)
+- [create_backup](./client.md#create_backup)
+- [create_data_repository_task](./client.md#create_data_repository_task)
+- [create_file_system](./client.md#create_file_system)
+- [create_file_system_from_backup](./client.md#create_file_system_from_backup)
+- [delete_backup](./client.md#delete_backup)
+- [delete_file_system](./client.md#delete_file_system)
+- [describe_backups](./client.md#describe_backups)
+- [describe_data_repository_tasks](./client.md#describe_data_repository_tasks)
+- [describe_file_system_aliases](./client.md#describe_file_system_aliases)
+- [describe_file_systems](./client.md#describe_file_systems)
+- [disassociate_file_system_aliases](./client.md#disassociate_file_system_aliases)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_file_system](./client.md#update_file_system)
 
 ### Exceptions
 
-- [ActiveDirectoryError](./client.md#activedirectoryerror)
-- [BackupBeingCopied](./client.md#backupbeingcopied)
-- [BackupInProgress](./client.md#backupinprogress)
-- [BackupNotFound](./client.md#backupnotfound)
-- [BackupRestoring](./client.md#backuprestoring)
-- [BadRequest](./client.md#badrequest)
-- [ClientError](./client.md#clienterror)
-- [DataRepositoryTaskEnded](./client.md#datarepositorytaskended)
-- [DataRepositoryTaskExecuting](./client.md#datarepositorytaskexecuting)
-- [DataRepositoryTaskNotFound](./client.md#datarepositorytasknotfound)
-- [FileSystemNotFound](./client.md#filesystemnotfound)
-- [IncompatibleParameterError](./client.md#incompatibleparametererror)
-- [IncompatibleRegionForMultiAZ](./client.md#incompatibleregionformultiaz)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidDestinationKmsKey](./client.md#invaliddestinationkmskey)
-- [InvalidExportPath](./client.md#invalidexportpath)
-- [InvalidImportPath](./client.md#invalidimportpath)
-- [InvalidNetworkSettings](./client.md#invalidnetworksettings)
-- [InvalidPerUnitStorageThroughput](./client.md#invalidperunitstoragethroughput)
-- [InvalidRegion](./client.md#invalidregion)
-- [InvalidSourceKmsKey](./client.md#invalidsourcekmskey)
-- [MissingFileSystemConfiguration](./client.md#missingfilesystemconfiguration)
-- [NotServiceResourceError](./client.md#notserviceresourceerror)
-- [ResourceDoesNotSupportTagging](./client.md#resourcedoesnotsupporttagging)
-- [ResourceNotFound](./client.md#resourcenotfound)
-- [ServiceLimitExceeded](./client.md#servicelimitexceeded)
-- [SourceBackupUnavailable](./client.md#sourcebackupunavailable)
-- [UnsupportedOperation](./client.md#unsupportedoperation)
+FSxClient [exceptions](./client.md#exceptions)
+
+- ActiveDirectoryError
+- BackupBeingCopied
+- BackupInProgress
+- BackupNotFound
+- BackupRestoring
+- BadRequest
+- ClientError
+- DataRepositoryTaskEnded
+- DataRepositoryTaskExecuting
+- DataRepositoryTaskNotFound
+- FileSystemNotFound
+- IncompatibleParameterError
+- IncompatibleRegionForMultiAZ
+- InternalServerError
+- InvalidDestinationKmsKey
+- InvalidExportPath
+- InvalidImportPath
+- InvalidNetworkSettings
+- InvalidPerUnitStorageThroughput
+- InvalidRegion
+- InvalidSourceKmsKey
+- MissingFileSystemConfiguration
+- NotServiceResourceError
+- ResourceDoesNotSupportTagging
+- ResourceNotFound
+- ServiceLimitExceeded
+- SourceBackupUnavailable
+- UnsupportedOperation
 
 ## Paginators
 
@@ -108,32 +108,32 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_fsx.literals import AdministrativeActionType, ...
+from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 ```
 
-- [AdministrativeActionType](./literals.md#administrativeactiontype)
-- [AliasLifecycle](./literals.md#aliaslifecycle)
-- [AutoImportPolicyType](./literals.md#autoimportpolicytype)
-- [BackupLifecycle](./literals.md#backuplifecycle)
-- [BackupType](./literals.md#backuptype)
-- [DataRepositoryLifecycle](./literals.md#datarepositorylifecycle)
-- [DataRepositoryTaskFilterName](./literals.md#datarepositorytaskfiltername)
-- [DataRepositoryTaskLifecycle](./literals.md#datarepositorytasklifecycle)
-- [DataRepositoryTaskType](./literals.md#datarepositorytasktype)
+- [AdministrativeActionTypeType](./literals.md#administrativeactiontypetype)
+- [AliasLifecycleType](./literals.md#aliaslifecycletype)
+- [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
+- [BackupLifecycleType](./literals.md#backuplifecycletype)
+- [BackupTypeType](./literals.md#backuptypetype)
+- [DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype)
+- [DataRepositoryTaskFilterNameType](./literals.md#datarepositorytaskfilternametype)
+- [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)
+- [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype)
 - [DescribeBackupsPaginatorName](./literals.md#describebackupspaginatorname)
 - [DescribeFileSystemsPaginatorName](./literals.md#describefilesystemspaginatorname)
-- [DriveCacheType](./literals.md#drivecachetype)
-- [FileSystemLifecycle](./literals.md#filesystemlifecycle)
-- [FileSystemMaintenanceOperation](./literals.md#filesystemmaintenanceoperation)
-- [FileSystemType](./literals.md#filesystemtype)
-- [FilterName](./literals.md#filtername)
+- [DriveCacheTypeType](./literals.md#drivecachetypetype)
+- [FileSystemLifecycleType](./literals.md#filesystemlifecycletype)
+- [FileSystemMaintenanceOperationType](./literals.md#filesystemmaintenanceoperationtype)
+- [FileSystemTypeType](./literals.md#filesystemtypetype)
+- [FilterNameType](./literals.md#filternametype)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [LustreDeploymentType](./literals.md#lustredeploymenttype)
-- [ReportFormat](./literals.md#reportformat)
-- [ReportScope](./literals.md#reportscope)
-- [Status](./literals.md#status)
-- [StorageType](./literals.md#storagetype)
-- [WindowsDeploymentType](./literals.md#windowsdeploymenttype)
+- [LustreDeploymentTypeType](./literals.md#lustredeploymenttypetype)
+- [ReportFormatType](./literals.md#reportformattype)
+- [ReportScopeType](./literals.md#reportscopetype)
+- [StatusType](./literals.md#statustype)
+- [StorageTypeType](./literals.md#storagetypetype)
+- [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
 
 ## Typed dictionaries
 

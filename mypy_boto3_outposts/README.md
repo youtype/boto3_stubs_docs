@@ -3,7 +3,7 @@
 > [Index](..) > Outposts
 
 Auto-generated documentation for
-[Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+[Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts)
 type annotations stubs module
 [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
@@ -28,31 +28,31 @@ Can be used directly:
 from mypy_boto3_outposts.client import OutpostsClient
 ```
 
-OutpostsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_outpost](./client.md#create-outpost)
-- [delete_outpost](./client.md#delete-outpost)
-- [delete_site](./client.md#delete-site)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_outpost](./client.md#get-outpost)
-- [get_outpost_instance_types](./client.md#get-outpost-instance-types)
-- [list_outposts](./client.md#list-outposts)
-- [list_sites](./client.md#list-sites)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_outpost](./client.md#create_outpost)
+- [delete_outpost](./client.md#delete_outpost)
+- [delete_site](./client.md#delete_site)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_outpost](./client.md#get_outpost)
+- [get_outpost_instance_types](./client.md#get_outpost_instance_types)
+- [list_outposts](./client.md#list_outposts)
+- [list_sites](./client.md#list_sites)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+OutpostsClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- NotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > MigrationHubConfig
 
 Auto-generated documentation for
-[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
+[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module
 [mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
@@ -29,25 +29,25 @@ Can be used directly:
 from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 ```
 
-MigrationHubConfigClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_home_region_control](./client.md#create-home-region-control)
-- [describe_home_region_controls](./client.md#describe-home-region-controls)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_home_region](./client.md#get-home-region)
+- [can_paginate](./client.md#can_paginate)
+- [create_home_region_control](./client.md#create_home_region_control)
+- [describe_home_region_controls](./client.md#describe_home_region_controls)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_home_region](./client.md#get_home_region)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [DryRunOperation](./client.md#dryrunoperation)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
+MigrationHubConfigClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- DryRunOperation
+- InternalServerError
+- InvalidInputException
+- ServiceUnavailableException
+- ThrottlingException
 
 ## Literals
 
@@ -56,10 +56,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_migrationhub_config.literals import TargetType, ...
+from mypy_boto3_migrationhub_config.literals import TargetTypeType, ...
 ```
 
-- [TargetType](./literals.md#targettype)
+- [TargetTypeType](./literals.md#targettypetype)
 
 ## Typed dictionaries
 

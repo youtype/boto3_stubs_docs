@@ -3,28 +3,28 @@
 > [Index](..) > [DAX](.) > Literals
 
 Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dax.html#DAX)
 type annotations stubs module
 [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
 - [Literals for boto3 DAX module](#literals-for-boto3-dax-module)
-  - [ChangeType](#changetype)
+  - [ChangeTypeType](#changetypetype)
   - [DescribeClustersPaginatorName](#describeclusterspaginatorname)
   - [DescribeDefaultParametersPaginatorName](#describedefaultparameterspaginatorname)
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
   - [DescribeParameterGroupsPaginatorName](#describeparametergroupspaginatorname)
   - [DescribeParametersPaginatorName](#describeparameterspaginatorname)
   - [DescribeSubnetGroupsPaginatorName](#describesubnetgroupspaginatorname)
-  - [IsModifiable](#ismodifiable)
+  - [IsModifiableType](#ismodifiabletype)
   - [ListTagsPaginatorName](#listtagspaginatorname)
-  - [ParameterType](#parametertype)
-  - [SSEStatus](#ssestatus)
-  - [SourceType](#sourcetype)
+  - [ParameterTypeType](#parametertypetype)
+  - [SSEStatusType](#ssestatustype)
+  - [SourceTypeType](#sourcetypetype)
 
-## ChangeType
+## ChangeTypeType
 
 ```python
-from mypy_boto3_dax.literals import ChangeType
+from mypy_boto3_dax.literals import ChangeTypeType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 
 - `describe_subnet_groups`
 
-## IsModifiable
+## IsModifiableType
 
 ```python
-from mypy_boto3_dax.literals import IsModifiable
+from mypy_boto3_dax.literals import IsModifiableType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 
 - `list_tags`
 
-## ParameterType
+## ParameterTypeType
 
 ```python
-from mypy_boto3_dax.literals import ParameterType
+from mypy_boto3_dax.literals import ParameterTypeType
 ```
 
 Values:
@@ -125,10 +125,10 @@ Values:
 - `DEFAULT`
 - `NODE_TYPE_SPECIFIC`
 
-## SSEStatus
+## SSEStatusType
 
 ```python
-from mypy_boto3_dax.literals import SSEStatus
+from mypy_boto3_dax.literals import SSEStatusType
 ```
 
 Values:
@@ -138,10 +138,10 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_dax.literals import SourceType
+from mypy_boto3_dax.literals import SourceTypeType
 ```
 
 Values:

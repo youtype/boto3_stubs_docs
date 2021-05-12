@@ -3,7 +3,7 @@
 > [Index](..) > [SavingsPlans](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
 [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
@@ -106,10 +106,10 @@ Optional fields:
 
 - `offeringId`: `str`
 - `paymentOption`:
-  [SavingsPlanPaymentOption](./literals.md#savingsplanpaymentoption)
-- `planType`: [SavingsPlanType](./literals.md#savingsplantype)
+  [SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)
+- `planType`: [SavingsPlanTypeType](./literals.md#savingsplantypetype)
 - `durationSeconds`: `int`
-- `currency`: [CurrencyCode](./literals.md#currencycode)
+- `currency`: [CurrencyCodeType](./literals.md#currencycodetype)
 - `planDescription`: `str`
 
 ## SavingsPlanFilterTypeDef
@@ -120,7 +120,8 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanFilterTypeDef
 
 Optional fields:
 
-- `name`: [SavingsPlansFilterName](./literals.md#savingsplansfiltername)
+- `name`:
+  [SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype)
 - `values`: `List`\[`str`\]
 
 ## SavingsPlanOfferingFilterElementTypeDef
@@ -132,7 +133,7 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingFilterElementTy
 Optional fields:
 
 - `name`:
-  [SavingsPlanOfferingFilterAttribute](./literals.md#savingsplanofferingfilterattribute)
+  [SavingsPlanOfferingFilterAttributeType](./literals.md#savingsplanofferingfilterattributetype)
 - `values`: `List`\[`str`\]
 
 ## SavingsPlanOfferingPropertyTypeDef
@@ -144,7 +145,7 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingPropertyTypeDef
 Optional fields:
 
 - `name`:
-  [SavingsPlanOfferingPropertyKey](./literals.md#savingsplanofferingpropertykey)
+  [SavingsPlanOfferingPropertyKeyType](./literals.md#savingsplanofferingpropertykeytype)
 - `value`: `str`
 
 ## SavingsPlanOfferingRateFilterElementTypeDef
@@ -156,7 +157,7 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanOfferingRateFilterEleme
 Optional fields:
 
 - `name`:
-  [SavingsPlanRateFilterAttribute](./literals.md#savingsplanratefilterattribute)
+  [SavingsPlanRateFilterAttributeType](./literals.md#savingsplanratefilterattributetype)
 - `values`: `List`\[`str`\]
 
 ## SavingsPlanOfferingRatePropertyTypeDef
@@ -181,10 +182,11 @@ Optional fields:
 - `savingsPlanOffering`:
   [ParentSavingsPlanOfferingTypeDef](./type_defs.md#parentsavingsplanofferingtypedef)
 - `rate`: `str`
-- `unit`: [SavingsPlanRateUnit](./literals.md#savingsplanrateunit)
-- `productType`: [SavingsPlanProductType](./literals.md#savingsplanproducttype)
+- `unit`: [SavingsPlanRateUnitType](./literals.md#savingsplanrateunittype)
+- `productType`:
+  [SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)
 - `serviceCode`:
-  [SavingsPlanRateServiceCode](./literals.md#savingsplanrateservicecode)
+  [SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)
 - `usageType`: `str`
 - `operation`: `str`
 - `properties`:
@@ -200,13 +202,13 @@ Optional fields:
 
 - `offeringId`: `str`
 - `productTypes`:
-  `List`\[[SavingsPlanProductType](./literals.md#savingsplanproducttype)\]
-- `planType`: [SavingsPlanType](./literals.md#savingsplantype)
+  `List`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
+- `planType`: [SavingsPlanTypeType](./literals.md#savingsplantypetype)
 - `description`: `str`
 - `paymentOption`:
-  [SavingsPlanPaymentOption](./literals.md#savingsplanpaymentoption)
+  [SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)
 - `durationSeconds`: `int`
-- `currency`: [CurrencyCode](./literals.md#currencycode)
+- `currency`: [CurrencyCodeType](./literals.md#currencycodetype)
 - `serviceCode`: `str`
 - `usageType`: `str`
 - `operation`: `str`
@@ -221,7 +223,8 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanRateFilterTypeDef
 
 Optional fields:
 
-- `name`: [SavingsPlanRateFilterName](./literals.md#savingsplanratefiltername)
+- `name`:
+  [SavingsPlanRateFilterNameType](./literals.md#savingsplanratefilternametype)
 - `values`: `List`\[`str`\]
 
 ## SavingsPlanRatePropertyTypeDef
@@ -232,7 +235,8 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanRatePropertyTypeDef
 
 Optional fields:
 
-- `name`: [SavingsPlanRatePropertyKey](./literals.md#savingsplanratepropertykey)
+- `name`:
+  [SavingsPlanRatePropertyKeyType](./literals.md#savingsplanratepropertykeytype)
 - `value`: `str`
 
 ## SavingsPlanRateTypeDef
@@ -244,11 +248,12 @@ from mypy_boto3_savingsplans.type_defs import SavingsPlanRateTypeDef
 Optional fields:
 
 - `rate`: `str`
-- `currency`: [CurrencyCode](./literals.md#currencycode)
-- `unit`: [SavingsPlanRateUnit](./literals.md#savingsplanrateunit)
-- `productType`: [SavingsPlanProductType](./literals.md#savingsplanproducttype)
+- `currency`: [CurrencyCodeType](./literals.md#currencycodetype)
+- `unit`: [SavingsPlanRateUnitType](./literals.md#savingsplanrateunittype)
+- `productType`:
+  [SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)
 - `serviceCode`:
-  [SavingsPlanRateServiceCode](./literals.md#savingsplanrateservicecode)
+  [SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)
 - `usageType`: `str`
 - `operation`: `str`
 - `properties`:
@@ -268,15 +273,15 @@ Optional fields:
 - `description`: `str`
 - `start`: `str`
 - `end`: `str`
-- `state`: [SavingsPlanState](./literals.md#savingsplanstate)
+- `state`: [SavingsPlanStateType](./literals.md#savingsplanstatetype)
 - `region`: `str`
 - `ec2InstanceFamily`: `str`
-- `savingsPlanType`: [SavingsPlanType](./literals.md#savingsplantype)
+- `savingsPlanType`: [SavingsPlanTypeType](./literals.md#savingsplantypetype)
 - `paymentOption`:
-  [SavingsPlanPaymentOption](./literals.md#savingsplanpaymentoption)
+  [SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)
 - `productTypes`:
-  `List`\[[SavingsPlanProductType](./literals.md#savingsplanproducttype)\]
-- `currency`: [CurrencyCode](./literals.md#currencycode)
+  `List`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
+- `currency`: [CurrencyCodeType](./literals.md#currencycodetype)
 - `commitment`: `str`
 - `upfrontPaymentAmount`: `str`
 - `recurringPaymentAmount`: `str`

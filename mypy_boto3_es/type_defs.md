@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticsearchService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
@@ -244,7 +244,8 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsInputTypeDef
 
 Optional fields:
 
-- `DesiredState`: [AutoTuneDesiredState](./literals.md#autotunedesiredstate)
+- `DesiredState`:
+  [AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype)
 - `MaintenanceSchedules`:
   `List`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
 
@@ -256,7 +257,7 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsOutputTypeDef
 
 Required fields:
 
-- `State`: [AutoTuneState](./literals.md#autotunestate)
+- `State`: [AutoTuneStateType](./literals.md#autotunestatetype)
 - `ErrorMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -280,8 +281,10 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsTypeDef
 
 Optional fields:
 
-- `DesiredState`: [AutoTuneDesiredState](./literals.md#autotunedesiredstate)
-- `RollbackOnDisable`: [RollbackOnDisable](./literals.md#rollbackondisable)
+- `DesiredState`:
+  [AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype)
+- `RollbackOnDisable`:
+  [RollbackOnDisableType](./literals.md#rollbackondisabletype)
 - `MaintenanceSchedules`:
   `List`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
 
@@ -295,7 +298,7 @@ Required fields:
 
 - `CreationDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `State`: [AutoTuneState](./literals.md#autotunestate)
+- `State`: [AutoTuneStateType](./literals.md#autotunestatetype)
 
 Optional fields:
 
@@ -312,7 +315,7 @@ from mypy_boto3_es.type_defs import AutoTuneTypeDef
 Optional fields:
 
 - `AutoTuneType`: `Literal['SCHEDULED_ACTION']` (see
-  [AutoTuneType](./literals.md#autotunetype))
+  [AutoTuneTypeType](./literals.md#autotunetypetype))
 - `AutoTuneDetails`:
   [AutoTuneDetailsTypeDef](./type_defs.md#autotunedetailstypedef)
 
@@ -398,7 +401,8 @@ from mypy_boto3_es.type_defs import CreatePackageResponseTypeDef
 
 Optional fields:
 
-- `PackageDetails`: [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
+- `PackageDetails`:
+  [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 
 ## DeleteElasticsearchDomainResponseTypeDef
 
@@ -441,7 +445,8 @@ from mypy_boto3_es.type_defs import DeletePackageResponseTypeDef
 
 Optional fields:
 
-- `PackageDetails`: [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
+- `PackageDetails`:
+  [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 
 ## DescribeDomainAutoTunesResponseTypeDef
 
@@ -495,7 +500,8 @@ from mypy_boto3_es.type_defs import DescribeElasticsearchInstanceTypeLimitsRespo
 
 Optional fields:
 
-- `LimitsByRole`: `Dict`\[`str`, [LimitsTypeDef](./type_defs.md#limitstypedef)\]
+- `LimitsByRole`: `Dict`\[`str`,
+  [LimitsTypeDef](./type_defs.md#limitstypedef)\]
 
 ## DescribeInboundCrossClusterSearchConnectionsResponseTypeDef
 
@@ -529,7 +535,8 @@ from mypy_boto3_es.type_defs import DescribePackagesFilterTypeDef
 
 Optional fields:
 
-- `Name`: [DescribePackagesFilterName](./literals.md#describepackagesfiltername)
+- `Name`:
+  [DescribePackagesFilterNameType](./literals.md#describepackagesfilternametype)
 - `Value`: `List`\[`str`\]
 
 ## DescribePackagesResponseTypeDef
@@ -600,7 +607,8 @@ from mypy_boto3_es.type_defs import DomainEndpointOptionsTypeDef
 Optional fields:
 
 - `EnforceHTTPS`: `bool`
-- `TLSSecurityPolicy`: [TLSSecurityPolicy](./literals.md#tlssecuritypolicy)
+- `TLSSecurityPolicy`:
+  [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
 - `CustomEndpointEnabled`: `bool`
 - `CustomEndpoint`: `str`
 - `CustomEndpointCertificateArn`: `str`
@@ -641,10 +649,11 @@ Optional fields:
 - `PackageID`: `str`
 - `PackageName`: `str`
 - `PackageType`: `Literal['TXT-DICTIONARY']` (see
-  [PackageType](./literals.md#packagetype))
+  [PackageTypeType](./literals.md#packagetypetype))
 - `LastUpdated`: `datetime`
 - `DomainName`: `str`
-- `DomainPackageStatus`: [DomainPackageStatus](./literals.md#domainpackagestatus)
+- `DomainPackageStatus`:
+  [DomainPackageStatusType](./literals.md#domainpackagestatustype)
 - `PackageVersion`: `str`
 - `ReferencePath`: `str`
 - `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
@@ -658,7 +667,7 @@ from mypy_boto3_es.type_defs import DurationTypeDef
 Optional fields:
 
 - `Value`: `int`
-- `Unit`: `Literal['HOURS']` (see [TimeUnit](./literals.md#timeunit))
+- `Unit`: `Literal['HOURS']` (see [TimeUnitType](./literals.md#timeunittype))
 
 ## EBSOptionsStatusTypeDef
 
@@ -680,7 +689,7 @@ from mypy_boto3_es.type_defs import EBSOptionsTypeDef
 Optional fields:
 
 - `EBSEnabled`: `bool`
-- `VolumeType`: [VolumeType](./literals.md#volumetype)
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `VolumeSize`: `int`
 - `Iops`: `int`
 
@@ -705,18 +714,18 @@ from mypy_boto3_es.type_defs import ElasticsearchClusterConfigTypeDef
 Optional fields:
 
 - `InstanceType`:
-  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
+  [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
 - `InstanceCount`: `int`
 - `DedicatedMasterEnabled`: `bool`
 - `ZoneAwarenessEnabled`: `bool`
 - `ZoneAwarenessConfig`:
   [ZoneAwarenessConfigTypeDef](./type_defs.md#zoneawarenessconfigtypedef)
 - `DedicatedMasterType`:
-  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
+  [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
 - `DedicatedMasterCount`: `int`
 - `WarmEnabled`: `bool`
 - `WarmType`:
-  [ESWarmPartitionInstanceType](./literals.md#eswarmpartitioninstancetype)
+  [ESWarmPartitionInstanceTypeType](./literals.md#eswarmpartitioninstancetypetype)
 - `WarmCount`: `int`
 
 ## ElasticsearchDomainConfigTypeDef
@@ -731,7 +740,8 @@ Optional fields:
   [ElasticsearchVersionStatusTypeDef](./type_defs.md#elasticsearchversionstatustypedef)
 - `ElasticsearchClusterConfig`:
   [ElasticsearchClusterConfigStatusTypeDef](./type_defs.md#elasticsearchclusterconfigstatustypedef)
-- `EBSOptions`: [EBSOptionsStatusTypeDef](./type_defs.md#ebsoptionsstatustypedef)
+- `EBSOptions`:
+  [EBSOptionsStatusTypeDef](./type_defs.md#ebsoptionsstatustypedef)
 - `AccessPolicies`:
   [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
 - `SnapshotOptions`:
@@ -783,13 +793,14 @@ Optional fields:
 - `SnapshotOptions`:
   [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
 - `VPCOptions`: [VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef)
-- `CognitoOptions`: [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
+- `CognitoOptions`:
+  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
 - `EncryptionAtRestOptions`:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
   [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
 - `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `LogPublishingOptions`: `Dict`\[[LogType](./literals.md#logtype),
+- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `ServiceSoftwareOptions`:
   [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
@@ -900,8 +911,8 @@ from mypy_boto3_es.type_defs import GetUpgradeStatusResponseTypeDef
 
 Optional fields:
 
-- `UpgradeStep`: [UpgradeStep](./literals.md#upgradestep)
-- `StepStatus`: [UpgradeStatus](./literals.md#upgradestatus)
+- `UpgradeStep`: [UpgradeStepType](./literals.md#upgradesteptype)
+- `StepStatus`: [UpgradeStatusType](./literals.md#upgradestatustype)
 - `UpgradeName`: `str`
 
 ## InboundCrossClusterSearchConnectionStatusTypeDef
@@ -913,7 +924,7 @@ from mypy_boto3_es.type_defs import InboundCrossClusterSearchConnectionStatusTyp
 Optional fields:
 
 - `StatusCode`:
-  [InboundCrossClusterSearchConnectionStatusCode](./literals.md#inboundcrossclustersearchconnectionstatuscode)
+  [InboundCrossClusterSearchConnectionStatusCodeType](./literals.md#inboundcrossclustersearchconnectionstatuscodetype)
 - `Message`: `str`
 
 ## InboundCrossClusterSearchConnectionTypeDef
@@ -964,7 +975,8 @@ Optional fields:
 
 - `StorageTypes`:
   `List`\[[StorageTypeTypeDef](./type_defs.md#storagetypetypedef)\]
-- `InstanceLimits`: [InstanceLimitsTypeDef](./type_defs.md#instancelimitstypedef)
+- `InstanceLimits`:
+  [InstanceLimitsTypeDef](./type_defs.md#instancelimitstypedef)
 - `AdditionalLimits`:
   `List`\[[AdditionalLimitTypeDef](./type_defs.md#additionallimittypedef)\]
 
@@ -976,7 +988,8 @@ from mypy_boto3_es.type_defs import ListDomainNamesResponseTypeDef
 
 Optional fields:
 
-- `DomainNames`: `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
+- `DomainNames`:
+  `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
 
 ## ListDomainsForPackageResponseTypeDef
 
@@ -999,7 +1012,7 @@ from mypy_boto3_es.type_defs import ListElasticsearchInstanceTypesResponseTypeDe
 Optional fields:
 
 - `ElasticsearchInstanceTypes`:
-  `List`\[[ESPartitionInstanceType](./literals.md#espartitioninstancetype)\]
+  `List`\[[ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)\]
 - `NextToken`: `str`
 
 ## ListElasticsearchVersionsResponseTypeDef
@@ -1054,7 +1067,7 @@ from mypy_boto3_es.type_defs import LogPublishingOptionsStatusTypeDef
 
 Optional fields:
 
-- `Options`: `Dict`\[[LogType](./literals.md#logtype),
+- `Options`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
@@ -1102,7 +1115,7 @@ Required fields:
 
 - `CreationDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `State`: [OptionState](./literals.md#optionstate)
+- `State`: [OptionStateType](./literals.md#optionstatetype)
 
 Optional fields:
 
@@ -1118,7 +1131,7 @@ from mypy_boto3_es.type_defs import OutboundCrossClusterSearchConnectionStatusTy
 Optional fields:
 
 - `StatusCode`:
-  [OutboundCrossClusterSearchConnectionStatusCode](./literals.md#outboundcrossclustersearchconnectionstatuscode)
+  [OutboundCrossClusterSearchConnectionStatusCodeType](./literals.md#outboundcrossclustersearchconnectionstatuscodetype)
 - `Message`: `str`
 
 ## OutboundCrossClusterSearchConnectionTypeDef
@@ -1149,9 +1162,9 @@ Optional fields:
 - `PackageID`: `str`
 - `PackageName`: `str`
 - `PackageType`: `Literal['TXT-DICTIONARY']` (see
-  [PackageType](./literals.md#packagetype))
+  [PackageTypeType](./literals.md#packagetypetype))
 - `PackageDescription`: `str`
-- `PackageStatus`: [PackageStatus](./literals.md#packagestatus)
+- `PackageStatus`: [PackageStatusType](./literals.md#packagestatustype)
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `AvailablePackageVersion`: `str`
@@ -1235,13 +1248,13 @@ Optional fields:
 
 - `ReservedElasticsearchInstanceOfferingId`: `str`
 - `ElasticsearchInstanceType`:
-  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
+  [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
 - `Duration`: `int`
 - `FixedPrice`: `float`
 - `UsagePrice`: `float`
 - `CurrencyCode`: `str`
 - `PaymentOption`:
-  [ReservedElasticsearchInstancePaymentOption](./literals.md#reservedelasticsearchinstancepaymentoption)
+  [ReservedElasticsearchInstancePaymentOptionType](./literals.md#reservedelasticsearchinstancepaymentoptiontype)
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
@@ -1257,7 +1270,7 @@ Optional fields:
 - `ReservedElasticsearchInstanceId`: `str`
 - `ReservedElasticsearchInstanceOfferingId`: `str`
 - `ElasticsearchInstanceType`:
-  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
+  [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
 - `StartTime`: `datetime`
 - `Duration`: `int`
 - `FixedPrice`: `float`
@@ -1266,7 +1279,7 @@ Optional fields:
 - `ElasticsearchInstanceCount`: `int`
 - `State`: `str`
 - `PaymentOption`:
-  [ReservedElasticsearchInstancePaymentOption](./literals.md#reservedelasticsearchinstancepaymentoption)
+  [ReservedElasticsearchInstancePaymentOptionType](./literals.md#reservedelasticsearchinstancepaymentoptiontype)
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
@@ -1337,10 +1350,10 @@ Optional fields:
 
 - `Date`: `datetime`
 - `ActionType`:
-  [ScheduledAutoTuneActionType](./literals.md#scheduledautotuneactiontype)
+  [ScheduledAutoTuneActionTypeType](./literals.md#scheduledautotuneactiontypetype)
 - `Action`: `str`
 - `Severity`:
-  [ScheduledAutoTuneSeverityType](./literals.md#scheduledautotuneseveritytype)
+  [ScheduledAutoTuneSeverityTypeType](./literals.md#scheduledautotuneseveritytypetype)
 
 ## ServiceSoftwareOptionsTypeDef
 
@@ -1354,7 +1367,7 @@ Optional fields:
 - `NewVersion`: `str`
 - `UpdateAvailable`: `bool`
 - `Cancellable`: `bool`
-- `UpdateStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `UpdateStatus`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `Description`: `str`
 - `AutomatedUpdateDate`: `datetime`
 - `OptionalDeployment`: `bool`
@@ -1445,7 +1458,8 @@ from mypy_boto3_es.type_defs import UpdatePackageResponseTypeDef
 
 Optional fields:
 
-- `PackageDetails`: [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
+- `PackageDetails`:
+  [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 
 ## UpgradeElasticsearchDomainResponseTypeDef
 
@@ -1469,7 +1483,7 @@ Optional fields:
 
 - `UpgradeName`: `str`
 - `StartTimestamp`: `datetime`
-- `UpgradeStatus`: [UpgradeStatus](./literals.md#upgradestatus)
+- `UpgradeStatus`: [UpgradeStatusType](./literals.md#upgradestatustype)
 - `StepsList`:
   `List`\[[UpgradeStepItemTypeDef](./type_defs.md#upgradestepitemtypedef)\]
 
@@ -1481,8 +1495,8 @@ from mypy_boto3_es.type_defs import UpgradeStepItemTypeDef
 
 Optional fields:
 
-- `UpgradeStep`: [UpgradeStep](./literals.md#upgradestep)
-- `UpgradeStepStatus`: [UpgradeStatus](./literals.md#upgradestatus)
+- `UpgradeStep`: [UpgradeStepType](./literals.md#upgradesteptype)
+- `UpgradeStepStatus`: [UpgradeStatusType](./literals.md#upgradestatustype)
 - `Issues`: `List`\[`str`\]
 - `ProgressPercent`: `float`
 

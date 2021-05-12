@@ -3,7 +3,7 @@
 > [Index](..) > [ECR](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecr.html#ECR)
 type annotations stubs module
 [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
@@ -103,7 +103,8 @@ from mypy_boto3_ecr.type_defs import BatchCheckLayerAvailabilityResponseTypeDef
 Optional fields:
 
 - `layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
-- `failures`: `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
+- `failures`:
+  `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
 
 ## BatchDeleteImageResponseTypeDef
 
@@ -115,7 +116,8 @@ Optional fields:
 
 - `imageIds`:
   `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
-- `failures`: `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
+- `failures`:
+  `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
 
 ## BatchGetImageResponseTypeDef
 
@@ -126,7 +128,8 @@ from mypy_boto3_ecr.type_defs import BatchGetImageResponseTypeDef
 Optional fields:
 
 - `images`: `List`\[[ImageTypeDef](./type_defs.md#imagetypedef)\]
-- `failures`: `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
+- `failures`:
+  `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
 
 ## CompleteLayerUploadResponseTypeDef
 
@@ -222,7 +225,7 @@ from mypy_boto3_ecr.type_defs import DescribeImagesFilterTypeDef
 
 Optional fields:
 
-- `tagStatus`: [TagStatus](./literals.md#tagstatus)
+- `tagStatus`: [TagStatusType](./literals.md#tagstatustype)
 
 ## DescribeImagesResponseTypeDef
 
@@ -256,7 +259,8 @@ from mypy_boto3_ecr.type_defs import DescribeRepositoriesResponseTypeDef
 
 Optional fields:
 
-- `repositories`: `List`\[[RepositoryTypeDef](./type_defs.md#repositorytypedef)\]
+- `repositories`:
+  `List`\[[RepositoryTypeDef](./type_defs.md#repositorytypedef)\]
 - `nextToken`: `str`
 
 ## EncryptionConfigurationTypeDef
@@ -267,7 +271,7 @@ from mypy_boto3_ecr.type_defs import EncryptionConfigurationTypeDef
 
 Required fields:
 
-- `encryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 
 Optional fields:
 
@@ -307,7 +311,7 @@ Optional fields:
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
 - `status`:
-  [LifecyclePolicyPreviewStatus](./literals.md#lifecyclepolicypreviewstatus)
+  [LifecyclePolicyPreviewStatusType](./literals.md#lifecyclepolicypreviewstatustype)
 - `nextToken`: `str`
 - `previewResults`:
   `List`\[[LifecyclePolicyPreviewResultTypeDef](./type_defs.md#lifecyclepolicypreviewresulttypedef)\]
@@ -380,7 +384,7 @@ from mypy_boto3_ecr.type_defs import ImageFailureTypeDef
 Optional fields:
 
 - `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
-- `failureCode`: [ImageFailureCode](./literals.md#imagefailurecode)
+- `failureCode`: [ImageFailureCodeType](./literals.md#imagefailurecodetype)
 - `failureReason`: `str`
 
 ## ImageIdentifierTypeDef
@@ -405,7 +409,7 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 - `uri`: `str`
-- `severity`: [FindingSeverity](./literals.md#findingseverity)
+- `severity`: [FindingSeverityType](./literals.md#findingseveritytype)
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## ImageScanFindingsSummaryTypeDef
@@ -419,7 +423,7 @@ Optional fields:
 - `imageScanCompletedAt`: `datetime`
 - `vulnerabilitySourceUpdatedAt`: `datetime`
 - `findingSeverityCounts`:
-  `Dict`\[[FindingSeverity](./literals.md#findingseverity), `int`\]
+  `Dict`\[[FindingSeverityType](./literals.md#findingseveritytype), `int`\]
 
 ## ImageScanFindingsTypeDef
 
@@ -434,7 +438,7 @@ Optional fields:
 - `findings`:
   `List`\[[ImageScanFindingTypeDef](./type_defs.md#imagescanfindingtypedef)\]
 - `findingSeverityCounts`:
-  `Dict`\[[FindingSeverity](./literals.md#findingseverity), `int`\]
+  `Dict`\[[FindingSeverityType](./literals.md#findingseveritytype), `int`\]
 
 ## ImageScanStatusTypeDef
 
@@ -444,7 +448,7 @@ from mypy_boto3_ecr.type_defs import ImageScanStatusTypeDef
 
 Optional fields:
 
-- `status`: [ScanStatus](./literals.md#scanstatus)
+- `status`: [ScanStatusType](./literals.md#scanstatustype)
 - `description`: `str`
 
 ## ImageScanningConfigurationTypeDef
@@ -491,7 +495,7 @@ from mypy_boto3_ecr.type_defs import LayerFailureTypeDef
 Optional fields:
 
 - `layerDigest`: `str`
-- `failureCode`: [LayerFailureCode](./literals.md#layerfailurecode)
+- `failureCode`: [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - `failureReason`: `str`
 
 ## LayerTypeDef
@@ -503,7 +507,8 @@ from mypy_boto3_ecr.type_defs import LayerTypeDef
 Optional fields:
 
 - `layerDigest`: `str`
-- `layerAvailability`: [LayerAvailability](./literals.md#layeravailability)
+- `layerAvailability`:
+  [LayerAvailabilityType](./literals.md#layeravailabilitytype)
 - `layerSize`: `int`
 - `mediaType`: `str`
 
@@ -515,7 +520,7 @@ from mypy_boto3_ecr.type_defs import LifecyclePolicyPreviewFilterTypeDef
 
 Optional fields:
 
-- `tagStatus`: [TagStatus](./literals.md#tagstatus)
+- `tagStatus`: [TagStatusType](./literals.md#tagstatustype)
 
 ## LifecyclePolicyPreviewResultTypeDef
 
@@ -551,7 +556,7 @@ from mypy_boto3_ecr.type_defs import LifecyclePolicyRuleActionTypeDef
 Optional fields:
 
 - `type`: `Literal['EXPIRE']` (see
-  [ImageActionType](./literals.md#imageactiontype))
+  [ImageActionTypeType](./literals.md#imageactiontypetype))
 
 ## ListImagesFilterTypeDef
 
@@ -561,7 +566,7 @@ from mypy_boto3_ecr.type_defs import ListImagesFilterTypeDef
 
 Optional fields:
 
-- `tagStatus`: [TagStatus](./literals.md#tagstatus)
+- `tagStatus`: [TagStatusType](./literals.md#tagstatustype)
 
 ## ListImagesResponseTypeDef
 
@@ -630,7 +635,8 @@ Optional fields:
 
 - `registryId`: `str`
 - `repositoryName`: `str`
-- `imageTagMutability`: [ImageTagMutability](./literals.md#imagetagmutability)
+- `imageTagMutability`:
+  [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
 
 ## PutLifecyclePolicyResponseTypeDef
 
@@ -712,7 +718,8 @@ Optional fields:
 - `repositoryName`: `str`
 - `repositoryUri`: `str`
 - `createdAt`: `datetime`
-- `imageTagMutability`: [ImageTagMutability](./literals.md#imagetagmutability)
+- `imageTagMutability`:
+  [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
 - `imageScanningConfiguration`:
   [ImageScanningConfigurationTypeDef](./type_defs.md#imagescanningconfigurationtypedef)
 - `encryptionConfiguration`:
@@ -756,7 +763,7 @@ Optional fields:
 - `repositoryName`: `str`
 - `lifecyclePolicyText`: `str`
 - `status`:
-  [LifecyclePolicyPreviewStatus](./literals.md#lifecyclepolicypreviewstatus)
+  [LifecyclePolicyPreviewStatusType](./literals.md#lifecyclepolicypreviewstatustype)
 
 ## TagTypeDef
 

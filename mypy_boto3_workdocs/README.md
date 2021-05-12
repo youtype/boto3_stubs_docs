@@ -3,7 +3,7 @@
 > [Index](..) > WorkDocs
 
 Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
@@ -30,83 +30,83 @@ Can be used directly:
 from mypy_boto3_workdocs.client import WorkDocsClient
 ```
 
-WorkDocsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [abort_document_version_upload](./client.md#abort-document-version-upload)
-- [activate_user](./client.md#activate-user)
-- [add_resource_permissions](./client.md#add-resource-permissions)
-- [can_paginate](./client.md#can-paginate)
-- [create_comment](./client.md#create-comment)
-- [create_custom_metadata](./client.md#create-custom-metadata)
-- [create_folder](./client.md#create-folder)
-- [create_labels](./client.md#create-labels)
-- [create_notification_subscription](./client.md#create-notification-subscription)
-- [create_user](./client.md#create-user)
-- [deactivate_user](./client.md#deactivate-user)
-- [delete_comment](./client.md#delete-comment)
-- [delete_custom_metadata](./client.md#delete-custom-metadata)
-- [delete_document](./client.md#delete-document)
-- [delete_folder](./client.md#delete-folder)
-- [delete_folder_contents](./client.md#delete-folder-contents)
-- [delete_labels](./client.md#delete-labels)
-- [delete_notification_subscription](./client.md#delete-notification-subscription)
-- [delete_user](./client.md#delete-user)
-- [describe_activities](./client.md#describe-activities)
-- [describe_comments](./client.md#describe-comments)
-- [describe_document_versions](./client.md#describe-document-versions)
-- [describe_folder_contents](./client.md#describe-folder-contents)
-- [describe_groups](./client.md#describe-groups)
-- [describe_notification_subscriptions](./client.md#describe-notification-subscriptions)
-- [describe_resource_permissions](./client.md#describe-resource-permissions)
-- [describe_root_folders](./client.md#describe-root-folders)
-- [describe_users](./client.md#describe-users)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_current_user](./client.md#get-current-user)
-- [get_document](./client.md#get-document)
-- [get_document_path](./client.md#get-document-path)
-- [get_document_version](./client.md#get-document-version)
-- [get_folder](./client.md#get-folder)
-- [get_folder_path](./client.md#get-folder-path)
-- [get_paginator](./client.md#get-paginator)
-- [get_resources](./client.md#get-resources)
-- [initiate_document_version_upload](./client.md#initiate-document-version-upload)
-- [remove_all_resource_permissions](./client.md#remove-all-resource-permissions)
-- [remove_resource_permission](./client.md#remove-resource-permission)
-- [update_document](./client.md#update-document)
-- [update_document_version](./client.md#update-document-version)
-- [update_folder](./client.md#update-folder)
-- [update_user](./client.md#update-user)
+- [abort_document_version_upload](./client.md#abort_document_version_upload)
+- [activate_user](./client.md#activate_user)
+- [add_resource_permissions](./client.md#add_resource_permissions)
+- [can_paginate](./client.md#can_paginate)
+- [create_comment](./client.md#create_comment)
+- [create_custom_metadata](./client.md#create_custom_metadata)
+- [create_folder](./client.md#create_folder)
+- [create_labels](./client.md#create_labels)
+- [create_notification_subscription](./client.md#create_notification_subscription)
+- [create_user](./client.md#create_user)
+- [deactivate_user](./client.md#deactivate_user)
+- [delete_comment](./client.md#delete_comment)
+- [delete_custom_metadata](./client.md#delete_custom_metadata)
+- [delete_document](./client.md#delete_document)
+- [delete_folder](./client.md#delete_folder)
+- [delete_folder_contents](./client.md#delete_folder_contents)
+- [delete_labels](./client.md#delete_labels)
+- [delete_notification_subscription](./client.md#delete_notification_subscription)
+- [delete_user](./client.md#delete_user)
+- [describe_activities](./client.md#describe_activities)
+- [describe_comments](./client.md#describe_comments)
+- [describe_document_versions](./client.md#describe_document_versions)
+- [describe_folder_contents](./client.md#describe_folder_contents)
+- [describe_groups](./client.md#describe_groups)
+- [describe_notification_subscriptions](./client.md#describe_notification_subscriptions)
+- [describe_resource_permissions](./client.md#describe_resource_permissions)
+- [describe_root_folders](./client.md#describe_root_folders)
+- [describe_users](./client.md#describe_users)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_current_user](./client.md#get_current_user)
+- [get_document](./client.md#get_document)
+- [get_document_path](./client.md#get_document_path)
+- [get_document_version](./client.md#get_document_version)
+- [get_folder](./client.md#get_folder)
+- [get_folder_path](./client.md#get_folder_path)
+- [get_paginator](./client.md#get_paginator)
+- [get_resources](./client.md#get_resources)
+- [initiate_document_version_upload](./client.md#initiate_document_version_upload)
+- [remove_all_resource_permissions](./client.md#remove_all_resource_permissions)
+- [remove_resource_permission](./client.md#remove_resource_permission)
+- [update_document](./client.md#update_document)
+- [update_document_version](./client.md#update_document_version)
+- [update_folder](./client.md#update_folder)
+- [update_user](./client.md#update_user)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [ConflictingOperationException](./client.md#conflictingoperationexception)
-- [CustomMetadataLimitExceededException](./client.md#custommetadatalimitexceededexception)
-- [DeactivatingLastSystemUserException](./client.md#deactivatinglastsystemuserexception)
-- [DocumentLockedForCommentsException](./client.md#documentlockedforcommentsexception)
-- [DraftUploadOutOfSyncException](./client.md#draftuploadoutofsyncexception)
-- [EntityAlreadyExistsException](./client.md#entityalreadyexistsexception)
-- [EntityNotExistsException](./client.md#entitynotexistsexception)
-- [FailedDependencyException](./client.md#faileddependencyexception)
-- [IllegalUserStateException](./client.md#illegaluserstateexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidCommentOperationException](./client.md#invalidcommentoperationexception)
-- [InvalidOperationException](./client.md#invalidoperationexception)
-- [InvalidPasswordException](./client.md#invalidpasswordexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ProhibitedStateException](./client.md#prohibitedstateexception)
-- [RequestedEntityTooLargeException](./client.md#requestedentitytoolargeexception)
-- [ResourceAlreadyCheckedOutException](./client.md#resourcealreadycheckedoutexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [StorageLimitExceededException](./client.md#storagelimitexceededexception)
-- [StorageLimitWillExceedException](./client.md#storagelimitwillexceedexception)
-- [TooManyLabelsException](./client.md#toomanylabelsexception)
-- [TooManySubscriptionsException](./client.md#toomanysubscriptionsexception)
-- [UnauthorizedOperationException](./client.md#unauthorizedoperationexception)
-- [UnauthorizedResourceAccessException](./client.md#unauthorizedresourceaccessexception)
+WorkDocsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- ConflictingOperationException
+- CustomMetadataLimitExceededException
+- DeactivatingLastSystemUserException
+- DocumentLockedForCommentsException
+- DraftUploadOutOfSyncException
+- EntityAlreadyExistsException
+- EntityNotExistsException
+- FailedDependencyException
+- IllegalUserStateException
+- InvalidArgumentException
+- InvalidCommentOperationException
+- InvalidOperationException
+- InvalidPasswordException
+- LimitExceededException
+- ProhibitedStateException
+- RequestedEntityTooLargeException
+- ResourceAlreadyCheckedOutException
+- ServiceUnavailableException
+- StorageLimitExceededException
+- StorageLimitWillExceedException
+- TooManyLabelsException
+- TooManySubscriptionsException
+- UnauthorizedOperationException
+- UnauthorizedResourceAccessException
 
 ## Paginators
 
@@ -136,13 +136,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.literals import ActivityType, ...
+from mypy_boto3_workdocs.literals import ActivityTypeType, ...
 ```
 
-- [ActivityType](./literals.md#activitytype)
-- [BooleanEnumType](./literals.md#booleanenumtype)
-- [CommentStatusType](./literals.md#commentstatustype)
-- [CommentVisibilityType](./literals.md#commentvisibilitytype)
+- [ActivityTypeType](./literals.md#activitytypetype)
+- [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
+- [CommentStatusTypeType](./literals.md#commentstatustypetype)
+- [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
 - [DescribeActivitiesPaginatorName](./literals.md#describeactivitiespaginatorname)
 - [DescribeCommentsPaginatorName](./literals.md#describecommentspaginatorname)
 - [DescribeDocumentVersionsPaginatorName](./literals.md#describedocumentversionspaginatorname)
@@ -152,28 +152,28 @@ from mypy_boto3_workdocs.literals import ActivityType, ...
 - [DescribeResourcePermissionsPaginatorName](./literals.md#describeresourcepermissionspaginatorname)
 - [DescribeRootFoldersPaginatorName](./literals.md#describerootfolderspaginatorname)
 - [DescribeUsersPaginatorName](./literals.md#describeuserspaginatorname)
-- [DocumentSourceType](./literals.md#documentsourcetype)
-- [DocumentStatusType](./literals.md#documentstatustype)
-- [DocumentThumbnailType](./literals.md#documentthumbnailtype)
-- [DocumentVersionStatus](./literals.md#documentversionstatus)
-- [FolderContentType](./literals.md#foldercontenttype)
-- [LocaleType](./literals.md#localetype)
-- [OrderType](./literals.md#ordertype)
-- [PrincipalType](./literals.md#principaltype)
-- [ResourceCollectionType](./literals.md#resourcecollectiontype)
-- [ResourceSortType](./literals.md#resourcesorttype)
-- [ResourceStateType](./literals.md#resourcestatetype)
-- [ResourceType](./literals.md#resourcetype)
-- [RolePermissionType](./literals.md#rolepermissiontype)
-- [RoleType](./literals.md#roletype)
-- [ShareStatusType](./literals.md#sharestatustype)
-- [StorageType](./literals.md#storagetype)
-- [SubscriptionProtocolType](./literals.md#subscriptionprotocoltype)
-- [SubscriptionType](./literals.md#subscriptiontype)
-- [UserFilterType](./literals.md#userfiltertype)
-- [UserSortType](./literals.md#usersorttype)
-- [UserStatusType](./literals.md#userstatustype)
-- [UserType](./literals.md#usertype)
+- [DocumentSourceTypeType](./literals.md#documentsourcetypetype)
+- [DocumentStatusTypeType](./literals.md#documentstatustypetype)
+- [DocumentThumbnailTypeType](./literals.md#documentthumbnailtypetype)
+- [DocumentVersionStatusType](./literals.md#documentversionstatustype)
+- [FolderContentTypeType](./literals.md#foldercontenttypetype)
+- [LocaleTypeType](./literals.md#localetypetype)
+- [OrderTypeType](./literals.md#ordertypetype)
+- [PrincipalTypeType](./literals.md#principaltypetype)
+- [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
+- [ResourceSortTypeType](./literals.md#resourcesorttypetype)
+- [ResourceStateTypeType](./literals.md#resourcestatetypetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [RolePermissionTypeType](./literals.md#rolepermissiontypetype)
+- [RoleTypeType](./literals.md#roletypetype)
+- [ShareStatusTypeType](./literals.md#sharestatustypetype)
+- [StorageTypeType](./literals.md#storagetypetype)
+- [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype)
+- [SubscriptionTypeType](./literals.md#subscriptiontypetype)
+- [UserFilterTypeType](./literals.md#userfiltertypetype)
+- [UserSortTypeType](./literals.md#usersorttypetype)
+- [UserStatusTypeType](./literals.md#userstatustypetype)
+- [UserTypeType](./literals.md#usertypetype)
 
 ## Typed dictionaries
 

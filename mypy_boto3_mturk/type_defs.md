@@ -3,7 +3,7 @@
 > [Index](..) > [MTurk](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mturk.html#MTurk)
 type annotations stubs module
 [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
@@ -61,7 +61,8 @@ Optional fields:
 - `AssignmentId`: `str`
 - `WorkerId`: `str`
 - `HITId`: `str`
-- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
+- `AssignmentStatus`:
+  [AssignmentStatusType](./literals.md#assignmentstatustype)
 - `AutoApprovalTime`: `datetime`
 - `AcceptTime`: `datetime`
 - `SubmitTime`: `datetime`
@@ -217,7 +218,7 @@ Optional fields:
 - `Description`: `str`
 - `Question`: `str`
 - `Keywords`: `str`
-- `HITStatus`: [HITStatus](./literals.md#hitstatus)
+- `HITStatus`: [HITStatusType](./literals.md#hitstatustype)
 - `MaxAssignments`: `int`
 - `Reward`: `str`
 - `AutoApprovalDelayInSeconds`: `int`
@@ -226,7 +227,7 @@ Optional fields:
 - `RequesterAnnotation`: `str`
 - `QualificationRequirements`:
   `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
-- `HITReviewStatus`: [HITReviewStatus](./literals.md#hitreviewstatus)
+- `HITReviewStatus`: [HITReviewStatusType](./literals.md#hitreviewstatustype)
 - `NumberOfAssignmentsPending`: `int`
 - `NumberOfAssignmentsAvailable`: `int`
 - `NumberOfAssignmentsCompleted`: `int`
@@ -241,7 +242,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `NumResults`: `int`
-- `Assignments`: `List`\[[AssignmentTypeDef](./type_defs.md#assignmenttypedef)\]
+- `Assignments`:
+  `List`\[[AssignmentTypeDef](./type_defs.md#assignmenttypedef)\]
 
 ## ListBonusPaymentsResponseTypeDef
 
@@ -384,9 +386,10 @@ from mypy_boto3_mturk.type_defs import NotificationSpecificationTypeDef
 Required fields:
 
 - `Destination`: `str`
-- `Transport`: [NotificationTransport](./literals.md#notificationtransport)
+- `Transport`:
+  [NotificationTransportType](./literals.md#notificationtransporttype)
 - `Version`: `str`
-- `EventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `EventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 ## NotifyWorkersFailureStatusTypeDef
 
@@ -397,7 +400,7 @@ from mypy_boto3_mturk.type_defs import NotifyWorkersFailureStatusTypeDef
 Optional fields:
 
 - `NotifyWorkersFailureCode`:
-  [NotifyWorkersFailureCode](./literals.md#notifyworkersfailurecode)
+  [NotifyWorkersFailureCodeType](./literals.md#notifyworkersfailurecodetype)
 - `NotifyWorkersFailureMessage`: `str`
 - `WorkerId`: `str`
 
@@ -472,14 +475,14 @@ from mypy_boto3_mturk.type_defs import QualificationRequirementTypeDef
 Required fields:
 
 - `QualificationTypeId`: `str`
-- `Comparator`: [Comparator](./literals.md#comparator)
+- `Comparator`: [ComparatorType](./literals.md#comparatortype)
 
 Optional fields:
 
 - `IntegerValues`: `List`\[`int`\]
 - `LocaleValues`: `List`\[[LocaleTypeDef](./type_defs.md#localetypedef)\]
 - `RequiredToPreview`: `bool`
-- `ActionsGuarded`: [HITAccessActions](./literals.md#hitaccessactions)
+- `ActionsGuarded`: [HITAccessActionsType](./literals.md#hitaccessactionstype)
 
 ## QualificationTypeDef
 
@@ -494,7 +497,7 @@ Optional fields:
 - `GrantTime`: `datetime`
 - `IntegerValue`: `int`
 - `LocaleValue`: [LocaleTypeDef](./type_defs.md#localetypedef)
-- `Status`: [QualificationStatus](./literals.md#qualificationstatus)
+- `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
 
 ## QualificationTypeTypeDef
 
@@ -510,7 +513,7 @@ Optional fields:
 - `Description`: `str`
 - `Keywords`: `str`
 - `QualificationTypeStatus`:
-  [QualificationTypeStatus](./literals.md#qualificationtypestatus)
+  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
 - `Test`: `str`
 - `TestDurationInSeconds`: `int`
 - `AnswerKey`: `str`
@@ -531,7 +534,7 @@ Optional fields:
 - `ActionName`: `str`
 - `TargetId`: `str`
 - `TargetType`: `str`
-- `Status`: [ReviewActionStatus](./literals.md#reviewactionstatus)
+- `Status`: [ReviewActionStatusType](./literals.md#reviewactionstatustype)
 - `CompleteTime`: `datetime`
 - `Result`: `str`
 - `ErrorCode`: `str`

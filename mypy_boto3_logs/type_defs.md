@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -95,7 +95,8 @@ from mypy_boto3_logs.type_defs import DescribeExportTasksResponseTypeDef
 
 Optional fields:
 
-- `exportTasks`: `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
+- `exportTasks`:
+  `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
 - `nextToken`: `str`
 
 ## DescribeLogGroupsResponseTypeDef
@@ -213,7 +214,7 @@ from mypy_boto3_logs.type_defs import ExportTaskStatusTypeDef
 
 Optional fields:
 
-- `code`: [ExportTaskStatusCode](./literals.md#exporttaskstatuscode)
+- `code`: [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
 - `message`: `str`
 
 ## ExportTaskTypeDef
@@ -308,7 +309,7 @@ Optional fields:
 - `results`:
   `List`\[`List`\[[ResultFieldTypeDef](./type_defs.md#resultfieldtypedef)\]\]
 - `statistics`: [QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef)
-- `status`: [QueryStatus](./literals.md#querystatus)
+- `status`: [QueryStatusType](./literals.md#querystatustype)
 
 ## InputLogEventTypeDef
 
@@ -482,7 +483,8 @@ from mypy_boto3_logs.type_defs import PutResourcePolicyResponseTypeDef
 
 Optional fields:
 
-- `resourcePolicy`: [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
+- `resourcePolicy`:
+  [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 
 ## QueryDefinitionTypeDef
 
@@ -508,7 +510,7 @@ Optional fields:
 
 - `queryId`: `str`
 - `queryString`: `str`
-- `status`: [QueryStatus](./literals.md#querystatus)
+- `status`: [QueryStatusType](./literals.md#querystatustype)
 - `createTime`: `int`
 - `logGroupName`: `str`
 
@@ -603,7 +605,7 @@ Optional fields:
 - `filterPattern`: `str`
 - `destinationArn`: `str`
 - `roleArn`: `str`
-- `distribution`: [Distribution](./literals.md#distribution)
+- `distribution`: [DistributionType](./literals.md#distributiontype)
 - `creationTime`: `int`
 
 ## TestMetricFilterResponseTypeDef

@@ -3,17 +3,17 @@
 > [Index](..) > [AppMesh](.) > Literals
 
 Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
 [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [Literals for boto3 AppMesh module](#literals-for-boto3-appmesh-module)
-  - [DurationUnit](#durationunit)
-  - [EgressFilterType](#egressfiltertype)
-  - [GatewayRouteStatusCode](#gatewayroutestatuscode)
-  - [GrpcRetryPolicyEvent](#grpcretrypolicyevent)
-  - [HttpMethod](#httpmethod)
-  - [HttpScheme](#httpscheme)
+  - [DurationUnitType](#durationunittype)
+  - [EgressFilterTypeType](#egressfiltertypetype)
+  - [GatewayRouteStatusCodeType](#gatewayroutestatuscodetype)
+  - [GrpcRetryPolicyEventType](#grpcretrypolicyeventtype)
+  - [HttpMethodType](#httpmethodtype)
+  - [HttpSchemeType](#httpschemetype)
   - [ListGatewayRoutesPaginatorName](#listgatewayroutespaginatorname)
   - [ListMeshesPaginatorName](#listmeshespaginatorname)
   - [ListRoutesPaginatorName](#listroutespaginatorname)
@@ -22,22 +22,22 @@ type annotations stubs module
   - [ListVirtualNodesPaginatorName](#listvirtualnodespaginatorname)
   - [ListVirtualRoutersPaginatorName](#listvirtualrouterspaginatorname)
   - [ListVirtualServicesPaginatorName](#listvirtualservicespaginatorname)
-  - [ListenerTlsMode](#listenertlsmode)
-  - [MeshStatusCode](#meshstatuscode)
-  - [PortProtocol](#portprotocol)
-  - [RouteStatusCode](#routestatuscode)
-  - [TcpRetryPolicyEvent](#tcpretrypolicyevent)
-  - [VirtualGatewayListenerTlsMode](#virtualgatewaylistenertlsmode)
-  - [VirtualGatewayPortProtocol](#virtualgatewayportprotocol)
-  - [VirtualGatewayStatusCode](#virtualgatewaystatuscode)
-  - [VirtualNodeStatusCode](#virtualnodestatuscode)
-  - [VirtualRouterStatusCode](#virtualrouterstatuscode)
-  - [VirtualServiceStatusCode](#virtualservicestatuscode)
+  - [ListenerTlsModeType](#listenertlsmodetype)
+  - [MeshStatusCodeType](#meshstatuscodetype)
+  - [PortProtocolType](#portprotocoltype)
+  - [RouteStatusCodeType](#routestatuscodetype)
+  - [TcpRetryPolicyEventType](#tcpretrypolicyeventtype)
+  - [VirtualGatewayListenerTlsModeType](#virtualgatewaylistenertlsmodetype)
+  - [VirtualGatewayPortProtocolType](#virtualgatewayportprotocoltype)
+  - [VirtualGatewayStatusCodeType](#virtualgatewaystatuscodetype)
+  - [VirtualNodeStatusCodeType](#virtualnodestatuscodetype)
+  - [VirtualRouterStatusCodeType](#virtualrouterstatuscodetype)
+  - [VirtualServiceStatusCodeType](#virtualservicestatuscodetype)
 
-## DurationUnit
+## DurationUnitType
 
 ```python
-from mypy_boto3_appmesh.literals import DurationUnit
+from mypy_boto3_appmesh.literals import DurationUnitType
 ```
 
 Values:
@@ -45,10 +45,10 @@ Values:
 - `ms`
 - `s`
 
-## EgressFilterType
+## EgressFilterTypeType
 
 ```python
-from mypy_boto3_appmesh.literals import EgressFilterType
+from mypy_boto3_appmesh.literals import EgressFilterTypeType
 ```
 
 Values:
@@ -56,10 +56,10 @@ Values:
 - `ALLOW_ALL`
 - `DROP_ALL`
 
-## GatewayRouteStatusCode
+## GatewayRouteStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import GatewayRouteStatusCode
+from mypy_boto3_appmesh.literals import GatewayRouteStatusCodeType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
-## GrpcRetryPolicyEvent
+## GrpcRetryPolicyEventType
 
 ```python
-from mypy_boto3_appmesh.literals import GrpcRetryPolicyEvent
+from mypy_boto3_appmesh.literals import GrpcRetryPolicyEventType
 ```
 
 Values:
@@ -82,10 +82,10 @@ Values:
 - `resource-exhausted`
 - `unavailable`
 
-## HttpMethod
+## HttpMethodType
 
 ```python
-from mypy_boto3_appmesh.literals import HttpMethod
+from mypy_boto3_appmesh.literals import HttpMethodType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `PUT`
 - `TRACE`
 
-## HttpScheme
+## HttpSchemeType
 
 ```python
-from mypy_boto3_appmesh.literals import HttpScheme
+from mypy_boto3_appmesh.literals import HttpSchemeType
 ```
 
 Values:
@@ -191,10 +191,10 @@ Values:
 
 - `list_virtual_services`
 
-## ListenerTlsMode
+## ListenerTlsModeType
 
 ```python
-from mypy_boto3_appmesh.literals import ListenerTlsMode
+from mypy_boto3_appmesh.literals import ListenerTlsModeType
 ```
 
 Values:
@@ -203,10 +203,10 @@ Values:
 - `PERMISSIVE`
 - `STRICT`
 
-## MeshStatusCode
+## MeshStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import MeshStatusCode
+from mypy_boto3_appmesh.literals import MeshStatusCodeType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
-## PortProtocol
+## PortProtocolType
 
 ```python
-from mypy_boto3_appmesh.literals import PortProtocol
+from mypy_boto3_appmesh.literals import PortProtocolType
 ```
 
 Values:
@@ -228,10 +228,10 @@ Values:
 - `http2`
 - `tcp`
 
-## RouteStatusCode
+## RouteStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import RouteStatusCode
+from mypy_boto3_appmesh.literals import RouteStatusCodeType
 ```
 
 Values:
@@ -240,20 +240,20 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
-## TcpRetryPolicyEvent
+## TcpRetryPolicyEventType
 
 ```python
-from mypy_boto3_appmesh.literals import TcpRetryPolicyEvent
+from mypy_boto3_appmesh.literals import TcpRetryPolicyEventType
 ```
 
 Values:
 
 - `connection-error`
 
-## VirtualGatewayListenerTlsMode
+## VirtualGatewayListenerTlsModeType
 
 ```python
-from mypy_boto3_appmesh.literals import VirtualGatewayListenerTlsMode
+from mypy_boto3_appmesh.literals import VirtualGatewayListenerTlsModeType
 ```
 
 Values:
@@ -262,10 +262,10 @@ Values:
 - `PERMISSIVE`
 - `STRICT`
 
-## VirtualGatewayPortProtocol
+## VirtualGatewayPortProtocolType
 
 ```python
-from mypy_boto3_appmesh.literals import VirtualGatewayPortProtocol
+from mypy_boto3_appmesh.literals import VirtualGatewayPortProtocolType
 ```
 
 Values:
@@ -274,10 +274,10 @@ Values:
 - `http`
 - `http2`
 
-## VirtualGatewayStatusCode
+## VirtualGatewayStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import VirtualGatewayStatusCode
+from mypy_boto3_appmesh.literals import VirtualGatewayStatusCodeType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
-## VirtualNodeStatusCode
+## VirtualNodeStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import VirtualNodeStatusCode
+from mypy_boto3_appmesh.literals import VirtualNodeStatusCodeType
 ```
 
 Values:
@@ -298,10 +298,10 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
-## VirtualRouterStatusCode
+## VirtualRouterStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import VirtualRouterStatusCode
+from mypy_boto3_appmesh.literals import VirtualRouterStatusCodeType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 - `DELETED`
 - `INACTIVE`
 
-## VirtualServiceStatusCode
+## VirtualServiceStatusCodeType
 
 ```python
-from mypy_boto3_appmesh.literals import VirtualServiceStatusCode
+from mypy_boto3_appmesh.literals import VirtualServiceStatusCodeType
 ```
 
 Values:

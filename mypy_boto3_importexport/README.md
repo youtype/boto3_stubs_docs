@@ -3,7 +3,7 @@
 > [Index](..) > ImportExport
 
 Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/importexport.html#ImportExport)
 type annotations stubs module
 [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
@@ -30,43 +30,43 @@ Can be used directly:
 from mypy_boto3_importexport.client import ImportExportClient
 ```
 
-ImportExportClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_job](./client.md#cancel-job)
-- [create_job](./client.md#create-job)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_shipping_label](./client.md#get-shipping-label)
-- [get_status](./client.md#get-status)
-- [list_jobs](./client.md#list-jobs)
-- [update_job](./client.md#update-job)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_job](./client.md#cancel_job)
+- [create_job](./client.md#create_job)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_shipping_label](./client.md#get_shipping_label)
+- [get_status](./client.md#get_status)
+- [list_jobs](./client.md#list_jobs)
+- [update_job](./client.md#update_job)
 
 ### Exceptions
 
-- [BucketPermissionException](./client.md#bucketpermissionexception)
-- [CanceledJobIdException](./client.md#canceledjobidexception)
-- [ClientError](./client.md#clienterror)
-- [CreateJobQuotaExceededException](./client.md#createjobquotaexceededexception)
-- [ExpiredJobIdException](./client.md#expiredjobidexception)
-- [InvalidAccessKeyIdException](./client.md#invalidaccesskeyidexception)
-- [InvalidAddressException](./client.md#invalidaddressexception)
-- [InvalidCustomsException](./client.md#invalidcustomsexception)
-- [InvalidFileSystemException](./client.md#invalidfilesystemexception)
-- [InvalidJobIdException](./client.md#invalidjobidexception)
-- [InvalidManifestFieldException](./client.md#invalidmanifestfieldexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidVersionException](./client.md#invalidversionexception)
-- [MalformedManifestException](./client.md#malformedmanifestexception)
-- [MissingCustomsException](./client.md#missingcustomsexception)
-- [MissingManifestFieldException](./client.md#missingmanifestfieldexception)
-- [MissingParameterException](./client.md#missingparameterexception)
-- [MultipleRegionsException](./client.md#multipleregionsexception)
-- [NoSuchBucketException](./client.md#nosuchbucketexception)
-- [UnableToCancelJobIdException](./client.md#unabletocanceljobidexception)
-- [UnableToUpdateJobIdException](./client.md#unabletoupdatejobidexception)
+ImportExportClient [exceptions](./client.md#exceptions)
+
+- BucketPermissionException
+- CanceledJobIdException
+- ClientError
+- CreateJobQuotaExceededException
+- ExpiredJobIdException
+- InvalidAccessKeyIdException
+- InvalidAddressException
+- InvalidCustomsException
+- InvalidFileSystemException
+- InvalidJobIdException
+- InvalidManifestFieldException
+- InvalidParameterException
+- InvalidVersionException
+- MalformedManifestException
+- MissingCustomsException
+- MissingManifestFieldException
+- MissingParameterException
+- MultipleRegionsException
+- NoSuchBucketException
+- UnableToCancelJobIdException
+- UnableToUpdateJobIdException
 
 ## Paginators
 
@@ -88,10 +88,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_importexport.literals import JobType, ...
+from mypy_boto3_importexport.literals import JobTypeType, ...
 ```
 
-- [JobType](./literals.md#jobtype)
+- [JobTypeType](./literals.md#jobtypetype)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
 
 ## Typed dictionaries

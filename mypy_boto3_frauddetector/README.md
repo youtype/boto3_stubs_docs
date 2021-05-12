@@ -3,7 +3,7 @@
 > [Index](..) > FraudDetector
 
 Auto-generated documentation for
-[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
 [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
@@ -29,79 +29,79 @@ Can be used directly:
 from mypy_boto3_frauddetector.client import FraudDetectorClient
 ```
 
-FraudDetectorClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_create_variable](./client.md#batch-create-variable)
-- [batch_get_variable](./client.md#batch-get-variable)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_batch_prediction_job](./client.md#cancel-batch-prediction-job)
-- [create_batch_prediction_job](./client.md#create-batch-prediction-job)
-- [create_detector_version](./client.md#create-detector-version)
-- [create_model](./client.md#create-model)
-- [create_model_version](./client.md#create-model-version)
-- [create_rule](./client.md#create-rule)
-- [create_variable](./client.md#create-variable)
-- [delete_batch_prediction_job](./client.md#delete-batch-prediction-job)
-- [delete_detector](./client.md#delete-detector)
-- [delete_detector_version](./client.md#delete-detector-version)
-- [delete_entity_type](./client.md#delete-entity-type)
-- [delete_event](./client.md#delete-event)
-- [delete_event_type](./client.md#delete-event-type)
-- [delete_external_model](./client.md#delete-external-model)
-- [delete_label](./client.md#delete-label)
-- [delete_model](./client.md#delete-model)
-- [delete_model_version](./client.md#delete-model-version)
-- [delete_outcome](./client.md#delete-outcome)
-- [delete_rule](./client.md#delete-rule)
-- [delete_variable](./client.md#delete-variable)
-- [describe_detector](./client.md#describe-detector)
-- [describe_model_versions](./client.md#describe-model-versions)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_batch_prediction_jobs](./client.md#get-batch-prediction-jobs)
-- [get_detector_version](./client.md#get-detector-version)
-- [get_detectors](./client.md#get-detectors)
-- [get_entity_types](./client.md#get-entity-types)
-- [get_event_prediction](./client.md#get-event-prediction)
-- [get_event_types](./client.md#get-event-types)
-- [get_external_models](./client.md#get-external-models)
-- [get_kms_encryption_key](./client.md#get-kms-encryption-key)
-- [get_labels](./client.md#get-labels)
-- [get_model_version](./client.md#get-model-version)
-- [get_models](./client.md#get-models)
-- [get_outcomes](./client.md#get-outcomes)
-- [get_rules](./client.md#get-rules)
-- [get_variables](./client.md#get-variables)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_detector](./client.md#put-detector)
-- [put_entity_type](./client.md#put-entity-type)
-- [put_event_type](./client.md#put-event-type)
-- [put_external_model](./client.md#put-external-model)
-- [put_kms_encryption_key](./client.md#put-kms-encryption-key)
-- [put_label](./client.md#put-label)
-- [put_outcome](./client.md#put-outcome)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_detector_version](./client.md#update-detector-version)
-- [update_detector_version_metadata](./client.md#update-detector-version-metadata)
-- [update_detector_version_status](./client.md#update-detector-version-status)
-- [update_model](./client.md#update-model)
-- [update_model_version](./client.md#update-model-version)
-- [update_model_version_status](./client.md#update-model-version-status)
-- [update_rule_metadata](./client.md#update-rule-metadata)
-- [update_rule_version](./client.md#update-rule-version)
-- [update_variable](./client.md#update-variable)
+- [batch_create_variable](./client.md#batch_create_variable)
+- [batch_get_variable](./client.md#batch_get_variable)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_batch_prediction_job](./client.md#cancel_batch_prediction_job)
+- [create_batch_prediction_job](./client.md#create_batch_prediction_job)
+- [create_detector_version](./client.md#create_detector_version)
+- [create_model](./client.md#create_model)
+- [create_model_version](./client.md#create_model_version)
+- [create_rule](./client.md#create_rule)
+- [create_variable](./client.md#create_variable)
+- [delete_batch_prediction_job](./client.md#delete_batch_prediction_job)
+- [delete_detector](./client.md#delete_detector)
+- [delete_detector_version](./client.md#delete_detector_version)
+- [delete_entity_type](./client.md#delete_entity_type)
+- [delete_event](./client.md#delete_event)
+- [delete_event_type](./client.md#delete_event_type)
+- [delete_external_model](./client.md#delete_external_model)
+- [delete_label](./client.md#delete_label)
+- [delete_model](./client.md#delete_model)
+- [delete_model_version](./client.md#delete_model_version)
+- [delete_outcome](./client.md#delete_outcome)
+- [delete_rule](./client.md#delete_rule)
+- [delete_variable](./client.md#delete_variable)
+- [describe_detector](./client.md#describe_detector)
+- [describe_model_versions](./client.md#describe_model_versions)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_batch_prediction_jobs](./client.md#get_batch_prediction_jobs)
+- [get_detector_version](./client.md#get_detector_version)
+- [get_detectors](./client.md#get_detectors)
+- [get_entity_types](./client.md#get_entity_types)
+- [get_event_prediction](./client.md#get_event_prediction)
+- [get_event_types](./client.md#get_event_types)
+- [get_external_models](./client.md#get_external_models)
+- [get_kms_encryption_key](./client.md#get_kms_encryption_key)
+- [get_labels](./client.md#get_labels)
+- [get_model_version](./client.md#get_model_version)
+- [get_models](./client.md#get_models)
+- [get_outcomes](./client.md#get_outcomes)
+- [get_rules](./client.md#get_rules)
+- [get_variables](./client.md#get_variables)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_detector](./client.md#put_detector)
+- [put_entity_type](./client.md#put_entity_type)
+- [put_event_type](./client.md#put_event_type)
+- [put_external_model](./client.md#put_external_model)
+- [put_kms_encryption_key](./client.md#put_kms_encryption_key)
+- [put_label](./client.md#put_label)
+- [put_outcome](./client.md#put_outcome)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_detector_version](./client.md#update_detector_version)
+- [update_detector_version_metadata](./client.md#update_detector_version_metadata)
+- [update_detector_version_status](./client.md#update_detector_version_status)
+- [update_model](./client.md#update_model)
+- [update_model_version](./client.md#update_model_version)
+- [update_model_version_status](./client.md#update_model_version_status)
+- [update_rule_metadata](./client.md#update_rule_metadata)
+- [update_rule_version](./client.md#update_rule_version)
+- [update_variable](./client.md#update_variable)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+FraudDetectorClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -110,22 +110,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_frauddetector.literals import AsyncJobStatus, ...
+from mypy_boto3_frauddetector.literals import AsyncJobStatusType, ...
 ```
 
-- [AsyncJobStatus](./literals.md#asyncjobstatus)
-- [DataSource](./literals.md#datasource)
-- [DataType](./literals.md#datatype)
-- [DetectorVersionStatus](./literals.md#detectorversionstatus)
-- [Language](./literals.md#language)
-- [ModelEndpointStatus](./literals.md#modelendpointstatus)
-- [ModelInputDataFormat](./literals.md#modelinputdataformat)
-- [ModelOutputDataFormat](./literals.md#modeloutputdataformat)
-- [ModelSource](./literals.md#modelsource)
-- [ModelTypeEnum](./literals.md#modeltypeenum)
-- [ModelVersionStatus](./literals.md#modelversionstatus)
-- [RuleExecutionMode](./literals.md#ruleexecutionmode)
-- [TrainingDataSourceEnum](./literals.md#trainingdatasourceenum)
+- [AsyncJobStatusType](./literals.md#asyncjobstatustype)
+- [DataSourceType](./literals.md#datasourcetype)
+- [DataTypeType](./literals.md#datatypetype)
+- [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
+- [LanguageType](./literals.md#languagetype)
+- [ModelEndpointStatusType](./literals.md#modelendpointstatustype)
+- [ModelInputDataFormatType](./literals.md#modelinputdataformattype)
+- [ModelOutputDataFormatType](./literals.md#modeloutputdataformattype)
+- [ModelSourceType](./literals.md#modelsourcetype)
+- [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+- [ModelVersionStatusType](./literals.md#modelversionstatustype)
+- [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
+- [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > GlueDataBrew
 
 Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
@@ -30,62 +30,62 @@ Can be used directly:
 from mypy_boto3_databrew.client import GlueDataBrewClient
 ```
 
-GlueDataBrewClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_delete_recipe_version](./client.md#batch-delete-recipe-version)
-- [can_paginate](./client.md#can-paginate)
-- [create_dataset](./client.md#create-dataset)
-- [create_profile_job](./client.md#create-profile-job)
-- [create_project](./client.md#create-project)
-- [create_recipe](./client.md#create-recipe)
-- [create_recipe_job](./client.md#create-recipe-job)
-- [create_schedule](./client.md#create-schedule)
-- [delete_dataset](./client.md#delete-dataset)
-- [delete_job](./client.md#delete-job)
-- [delete_project](./client.md#delete-project)
-- [delete_recipe_version](./client.md#delete-recipe-version)
-- [delete_schedule](./client.md#delete-schedule)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_job](./client.md#describe-job)
-- [describe_job_run](./client.md#describe-job-run)
-- [describe_project](./client.md#describe-project)
-- [describe_recipe](./client.md#describe-recipe)
-- [describe_schedule](./client.md#describe-schedule)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_datasets](./client.md#list-datasets)
-- [list_job_runs](./client.md#list-job-runs)
-- [list_jobs](./client.md#list-jobs)
-- [list_projects](./client.md#list-projects)
-- [list_recipe_versions](./client.md#list-recipe-versions)
-- [list_recipes](./client.md#list-recipes)
-- [list_schedules](./client.md#list-schedules)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [publish_recipe](./client.md#publish-recipe)
-- [send_project_session_action](./client.md#send-project-session-action)
-- [start_job_run](./client.md#start-job-run)
-- [start_project_session](./client.md#start-project-session)
-- [stop_job_run](./client.md#stop-job-run)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_dataset](./client.md#update-dataset)
-- [update_profile_job](./client.md#update-profile-job)
-- [update_project](./client.md#update-project)
-- [update_recipe](./client.md#update-recipe)
-- [update_recipe_job](./client.md#update-recipe-job)
-- [update_schedule](./client.md#update-schedule)
+- [batch_delete_recipe_version](./client.md#batch_delete_recipe_version)
+- [can_paginate](./client.md#can_paginate)
+- [create_dataset](./client.md#create_dataset)
+- [create_profile_job](./client.md#create_profile_job)
+- [create_project](./client.md#create_project)
+- [create_recipe](./client.md#create_recipe)
+- [create_recipe_job](./client.md#create_recipe_job)
+- [create_schedule](./client.md#create_schedule)
+- [delete_dataset](./client.md#delete_dataset)
+- [delete_job](./client.md#delete_job)
+- [delete_project](./client.md#delete_project)
+- [delete_recipe_version](./client.md#delete_recipe_version)
+- [delete_schedule](./client.md#delete_schedule)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_job](./client.md#describe_job)
+- [describe_job_run](./client.md#describe_job_run)
+- [describe_project](./client.md#describe_project)
+- [describe_recipe](./client.md#describe_recipe)
+- [describe_schedule](./client.md#describe_schedule)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_datasets](./client.md#list_datasets)
+- [list_job_runs](./client.md#list_job_runs)
+- [list_jobs](./client.md#list_jobs)
+- [list_projects](./client.md#list_projects)
+- [list_recipe_versions](./client.md#list_recipe_versions)
+- [list_recipes](./client.md#list_recipes)
+- [list_schedules](./client.md#list_schedules)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [publish_recipe](./client.md#publish_recipe)
+- [send_project_session_action](./client.md#send_project_session_action)
+- [start_job_run](./client.md#start_job_run)
+- [start_project_session](./client.md#start_project_session)
+- [stop_job_run](./client.md#stop_job_run)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_dataset](./client.md#update_dataset)
+- [update_profile_job](./client.md#update_profile_job)
+- [update_project](./client.md#update_project)
+- [update_recipe](./client.md#update_recipe)
+- [update_recipe_job](./client.md#update_recipe_job)
+- [update_schedule](./client.md#update_schedule)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+GlueDataBrewClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Paginators
 
@@ -113,14 +113,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.literals import CompressionFormat, ...
+from mypy_boto3_databrew.literals import CompressionFormatType, ...
 ```
 
-- [CompressionFormat](./literals.md#compressionformat)
-- [EncryptionMode](./literals.md#encryptionmode)
-- [InputFormat](./literals.md#inputformat)
-- [JobRunState](./literals.md#jobrunstate)
-- [JobType](./literals.md#jobtype)
+- [CompressionFormatType](./literals.md#compressionformattype)
+- [EncryptionModeType](./literals.md#encryptionmodetype)
+- [InputFormatType](./literals.md#inputformattype)
+- [JobRunStateType](./literals.md#jobrunstatetype)
+- [JobTypeType](./literals.md#jobtypetype)
 - [ListDatasetsPaginatorName](./literals.md#listdatasetspaginatorname)
 - [ListJobRunsPaginatorName](./literals.md#listjobrunspaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
@@ -128,15 +128,15 @@ from mypy_boto3_databrew.literals import CompressionFormat, ...
 - [ListRecipeVersionsPaginatorName](./literals.md#listrecipeversionspaginatorname)
 - [ListRecipesPaginatorName](./literals.md#listrecipespaginatorname)
 - [ListSchedulesPaginatorName](./literals.md#listschedulespaginatorname)
-- [LogSubscription](./literals.md#logsubscription)
-- [Order](./literals.md#order)
-- [OrderedBy](./literals.md#orderedby)
-- [OutputFormat](./literals.md#outputformat)
-- [ParameterType](./literals.md#parametertype)
-- [SampleMode](./literals.md#samplemode)
-- [SampleType](./literals.md#sampletype)
-- [SessionStatus](./literals.md#sessionstatus)
-- [Source](./literals.md#source)
+- [LogSubscriptionType](./literals.md#logsubscriptiontype)
+- [OrderType](./literals.md#ordertype)
+- [OrderedByType](./literals.md#orderedbytype)
+- [OutputFormatType](./literals.md#outputformattype)
+- [ParameterTypeType](./literals.md#parametertypetype)
+- [SampleModeType](./literals.md#samplemodetype)
+- [SampleTypeType](./literals.md#sampletypetype)
+- [SessionStatusType](./literals.md#sessionstatustype)
+- [SourceType](./literals.md#sourcetype)
 
 ## Typed dictionaries
 

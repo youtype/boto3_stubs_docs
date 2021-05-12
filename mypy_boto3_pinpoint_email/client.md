@@ -3,7 +3,7 @@
 > [Index](..) > [PinpointEmail](.) > PinpointEmailClient
 
 Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
 [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
@@ -71,7 +71,7 @@ def get_pinpoint-email_client() -> PinpointEmailClient:
 ```
 
 Boto3 documentation:
-[PinpointEmail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client)
+[PinpointEmail.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client)
 
 ## Exceptions
 
@@ -106,7 +106,7 @@ Exceptions:
 Type annotations for `boto3.client("pinpoint-email").can_paginate` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.can_paginate)
+[PinpointEmail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.can_paginate)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Type annotations for `boto3.client("pinpoint-email").create_configuration_set`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set)
+[PinpointEmail.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set)
 
 Arguments:
 
@@ -131,7 +131,8 @@ Arguments:
   [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
 - `ReputationOptions`:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
-- `SendingOptions`: [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
+- `SendingOptions`:
+  [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -143,7 +144,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set_event_destination)
+[PinpointEmail.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set_event_destination)
 
 Arguments:
 
@@ -161,7 +162,7 @@ Type annotations for `boto3.client("pinpoint-email").create_dedicated_ip_pool`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_dedicated_ip_pool)
+[PinpointEmail.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.create_dedicated_ip_pool)
 
 Arguments:
 
@@ -176,7 +177,7 @@ Type annotations for
 `boto3.client("pinpoint-email").create_deliverability_test_report` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_deliverability_test_report)
+[PinpointEmail.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.create_deliverability_test_report)
 
 Arguments:
 
@@ -195,7 +196,7 @@ Type annotations for `boto3.client("pinpoint-email").create_email_identity`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_email_identity)
+[PinpointEmail.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.create_email_identity)
 
 Arguments:
 
@@ -211,7 +212,7 @@ Type annotations for `boto3.client("pinpoint-email").delete_configuration_set`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set)
+[PinpointEmail.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set)
 
 Arguments:
 
@@ -226,7 +227,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set_event_destination)
+[PinpointEmail.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set_event_destination)
 
 Arguments:
 
@@ -241,7 +242,7 @@ Type annotations for `boto3.client("pinpoint-email").delete_dedicated_ip_pool`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_dedicated_ip_pool)
+[PinpointEmail.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_dedicated_ip_pool)
 
 Arguments:
 
@@ -255,7 +256,7 @@ Type annotations for `boto3.client("pinpoint-email").delete_email_identity`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_email_identity)
+[PinpointEmail.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_email_identity)
 
 Arguments:
 
@@ -269,7 +270,7 @@ Type annotations for `boto3.client("pinpoint-email").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.generate_presigned_url)
+[PinpointEmail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.generate_presigned_url)
 
 Arguments:
 
@@ -285,7 +286,7 @@ Returns `str`.
 Type annotations for `boto3.client("pinpoint-email").get_account` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account)
+[PinpointEmail.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account)
 
 Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
 
@@ -295,7 +296,7 @@ Type annotations for `boto3.client("pinpoint-email").get_blacklist_reports`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_blacklist_reports)
+[PinpointEmail.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_blacklist_reports)
 
 Arguments:
 
@@ -310,7 +311,7 @@ Type annotations for `boto3.client("pinpoint-email").get_configuration_set`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set)
+[PinpointEmail.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set)
 
 Arguments:
 
@@ -326,7 +327,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set_event_destinations)
+[PinpointEmail.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set_event_destinations)
 
 Arguments:
 
@@ -340,7 +341,7 @@ Returns
 Type annotations for `boto3.client("pinpoint-email").get_dedicated_ip` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ip)
+[PinpointEmail.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ip)
 
 Arguments:
 
@@ -354,7 +355,7 @@ Returns
 Type annotations for `boto3.client("pinpoint-email").get_dedicated_ips` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ips)
+[PinpointEmail.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ips)
 
 Arguments:
 
@@ -371,7 +372,7 @@ Type annotations for
 `boto3.client("pinpoint-email").get_deliverability_dashboard_options` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_dashboard_options)
+[PinpointEmail.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_dashboard_options)
 
 Returns
 [GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
@@ -382,7 +383,7 @@ Type annotations for
 `boto3.client("pinpoint-email").get_deliverability_test_report` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_test_report)
+[PinpointEmail.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_test_report)
 
 Arguments:
 
@@ -397,7 +398,7 @@ Type annotations for
 `boto3.client("pinpoint-email").get_domain_deliverability_campaign` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_deliverability_campaign)
+[PinpointEmail.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_deliverability_campaign)
 
 Arguments:
 
@@ -412,7 +413,7 @@ Type annotations for
 `boto3.client("pinpoint-email").get_domain_statistics_report` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_statistics_report)
+[PinpointEmail.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_statistics_report)
 
 Arguments:
 
@@ -429,7 +430,7 @@ Type annotations for `boto3.client("pinpoint-email").get_email_identity`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_email_identity)
+[PinpointEmail.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.get_email_identity)
 
 Arguments:
 
@@ -444,7 +445,7 @@ Type annotations for `boto3.client("pinpoint-email").list_configuration_sets`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_configuration_sets)
+[PinpointEmail.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.list_configuration_sets)
 
 Arguments:
 
@@ -460,7 +461,7 @@ Type annotations for `boto3.client("pinpoint-email").list_dedicated_ip_pools`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_dedicated_ip_pools)
+[PinpointEmail.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.list_dedicated_ip_pools)
 
 Arguments:
 
@@ -476,7 +477,7 @@ Type annotations for
 `boto3.client("pinpoint-email").list_deliverability_test_reports` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_deliverability_test_reports)
+[PinpointEmail.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.list_deliverability_test_reports)
 
 Arguments:
 
@@ -492,7 +493,7 @@ Type annotations for
 `boto3.client("pinpoint-email").list_domain_deliverability_campaigns` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_domain_deliverability_campaigns)
+[PinpointEmail.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.list_domain_deliverability_campaigns)
 
 Arguments:
 
@@ -511,7 +512,7 @@ Type annotations for `boto3.client("pinpoint-email").list_email_identities`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_email_identities)
+[PinpointEmail.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.list_email_identities)
 
 Arguments:
 
@@ -527,7 +528,7 @@ Type annotations for `boto3.client("pinpoint-email").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_tags_for_resource)
+[PinpointEmail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -543,7 +544,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes)
+[PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes)
 
 Arguments:
 
@@ -557,7 +558,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_account_sending_attributes` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_sending_attributes)
+[PinpointEmail.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_sending_attributes)
 
 Arguments:
 
@@ -571,12 +572,12 @@ Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_delivery_options` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_delivery_options)
+[PinpointEmail.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_delivery_options)
 
 Arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
-- `TlsPolicy`: [TlsPolicy](./literals.md#tlspolicy)
+- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 - `SendingPoolName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -588,7 +589,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_reputation_options)
+[PinpointEmail.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_reputation_options)
 
 Arguments:
 
@@ -603,7 +604,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_sending_options` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_sending_options)
+[PinpointEmail.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_sending_options)
 
 Arguments:
 
@@ -618,7 +619,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_tracking_options` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_tracking_options)
+[PinpointEmail.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_tracking_options)
 
 Arguments:
 
@@ -633,7 +634,7 @@ Type annotations for `boto3.client("pinpoint-email").put_dedicated_ip_in_pool`
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_in_pool)
+[PinpointEmail.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_in_pool)
 
 Arguments:
 
@@ -648,7 +649,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_dedicated_ip_warmup_attributes` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_warmup_attributes)
+[PinpointEmail.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_warmup_attributes)
 
 Arguments:
 
@@ -663,7 +664,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_deliverability_dashboard_option` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_deliverability_dashboard_option)
+[PinpointEmail.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_deliverability_dashboard_option)
 
 Arguments:
 
@@ -679,7 +680,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_email_identity_dkim_attributes` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_dkim_attributes)
+[PinpointEmail.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_dkim_attributes)
 
 Arguments:
 
@@ -694,7 +695,7 @@ Type annotations for
 `boto3.client("pinpoint-email").put_email_identity_feedback_attributes` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_feedback_attributes)
+[PinpointEmail.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_feedback_attributes)
 
 Arguments:
 
@@ -710,13 +711,14 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_mail_from_attributes)
+[PinpointEmail.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_mail_from_attributes)
 
 Arguments:
 
 - `EmailIdentity`: `str` *(required)*
 - `MailFromDomain`: `str`
-- `BehaviorOnMxFailure`: [BehaviorOnMxFailure](./literals.md#behavioronmxfailure)
+- `BehaviorOnMxFailure`:
+  [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -725,7 +727,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("pinpoint-email").send_email` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.send_email)
+[PinpointEmail.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.send_email)
 
 Arguments:
 
@@ -746,7 +748,7 @@ Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 Type annotations for `boto3.client("pinpoint-email").tag_resource` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.tag_resource)
+[PinpointEmail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.tag_resource)
 
 Arguments:
 
@@ -760,7 +762,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("pinpoint-email").untag_resource` method.
 
 Boto3 documentation:
-[PinpointEmail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.untag_resource)
+[PinpointEmail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.untag_resource)
 
 Arguments:
 
@@ -776,7 +778,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointEmail.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.update_configuration_set_event_destination)
+[PinpointEmail.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail.Client.update_configuration_set_event_destination)
 
 Arguments:
 

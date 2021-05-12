@@ -3,7 +3,7 @@
 > [Index](..) > [DevopsGuru](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
@@ -169,7 +169,7 @@ Optional fields:
 - `Namespace`: `str`
 - `Dimensions`:
   `List`\[[CloudWatchMetricsDimensionTypeDef](./type_defs.md#cloudwatchmetricsdimensiontypedef)\]
-- `Stat`: [CloudWatchMetricsStat](./literals.md#cloudwatchmetricsstat)
+- `Stat`: [CloudWatchMetricsStatType](./literals.md#cloudwatchmetricsstattype)
 - `Unit`: `str`
 - `Period`: `int`
 
@@ -344,8 +344,8 @@ Optional fields:
 - `Time`: `datetime`
 - `EventSource`: `str`
 - `Name`: `str`
-- `DataSource`: [EventDataSource](./literals.md#eventdatasource)
-- `EventClass`: [EventClass](./literals.md#eventclass)
+- `DataSource`: [EventDataSourceType](./literals.md#eventdatasourcetype)
+- `EventClass`: [EventClassType](./literals.md#eventclasstype)
 - `Resources`:
   `List`\[[EventResourceTypeDef](./type_defs.md#eventresourcetypedef)\]
 
@@ -359,7 +359,7 @@ Optional fields:
 
 - `ResourceCollection`:
   [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
-- `Status`: [CostEstimationStatus](./literals.md#costestimationstatus)
+- `Status`: [CostEstimationStatusType](./literals.md#costestimationstatustype)
 - `Costs`:
   `List`\[[ServiceResourceCostTypeDef](./type_defs.md#serviceresourcecosttypedef)\]
 - `TimeRange`:
@@ -388,7 +388,8 @@ from mypy_boto3_devops_guru.type_defs import InsightFeedbackTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Feedback`: [InsightFeedbackOption](./literals.md#insightfeedbackoption)
+- `Feedback`:
+  [InsightFeedbackOptionType](./literals.md#insightfeedbackoptiontype)
 
 ## InsightHealthTypeDef
 
@@ -439,10 +440,11 @@ from mypy_boto3_devops_guru.type_defs import ListEventsFiltersTypeDef
 Optional fields:
 
 - `InsightId`: `str`
-- `EventTimeRange`: [EventTimeRangeTypeDef](./type_defs.md#eventtimerangetypedef)
-- `EventClass`: [EventClass](./literals.md#eventclass)
+- `EventTimeRange`:
+  [EventTimeRangeTypeDef](./type_defs.md#eventtimerangetypedef)
+- `EventClass`: [EventClassType](./literals.md#eventclasstype)
 - `EventSource`: `str`
-- `DataSource`: [EventDataSource](./literals.md#eventdatasource)
+- `DataSource`: [EventDataSourceType](./literals.md#eventdatasourcetype)
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 
@@ -468,8 +470,9 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsAnyStatusFilterTypeDef
 
 Required fields:
 
-- `Type`: [InsightType](./literals.md#insighttype)
-- `StartTimeRange`: [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
+- `Type`: [InsightTypeType](./literals.md#insighttypetype)
+- `StartTimeRange`:
+  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
 
 ## ListInsightsClosedStatusFilterTypeDef
 
@@ -479,7 +482,7 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsClosedStatusFilterTypeD
 
 Required fields:
 
-- `Type`: [InsightType](./literals.md#insighttype)
+- `Type`: [InsightTypeType](./literals.md#insighttypetype)
 - `EndTimeRange`: [EndTimeRangeTypeDef](./type_defs.md#endtimerangetypedef)
 
 ## ListInsightsOngoingStatusFilterTypeDef
@@ -490,7 +493,7 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsOngoingStatusFilterType
 
 Required fields:
 
-- `Type`: [InsightType](./literals.md#insighttype)
+- `Type`: [InsightTypeType](./literals.md#insighttypetype)
 
 ## ListInsightsResponseTypeDef
 
@@ -575,7 +578,7 @@ from mypy_boto3_devops_guru.type_defs import OpsCenterIntegrationConfigTypeDef
 
 Optional fields:
 
-- `OptInStatus`: [OptInStatus](./literals.md#optinstatus)
+- `OptInStatus`: [OptInStatusType](./literals.md#optinstatustype)
 
 ## OpsCenterIntegrationTypeDef
 
@@ -585,7 +588,7 @@ from mypy_boto3_devops_guru.type_defs import OpsCenterIntegrationTypeDef
 
 Optional fields:
 
-- `OptInStatus`: [OptInStatus](./literals.md#optinstatus)
+- `OptInStatus`: [OptInStatusType](./literals.md#optinstatustype)
 
 ## PaginatorConfigTypeDef
 
@@ -622,8 +625,8 @@ from mypy_boto3_devops_guru.type_defs import ProactiveAnomalySummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
-- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
+- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
+- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
 - `UpdateTime`: `datetime`
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
@@ -645,8 +648,8 @@ from mypy_boto3_devops_guru.type_defs import ProactiveAnomalyTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
-- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
+- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
+- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
 - `UpdateTime`: `datetime`
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
@@ -669,8 +672,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`: [InsightSeverity](./literals.md#insightseverity)
-- `Status`: [InsightStatus](./literals.md#insightstatus)
+- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
+- `Status`: [InsightStatusType](./literals.md#insightstatustype)
 - `InsightTimeRange`:
   [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `PredictionTimeRange`:
@@ -690,8 +693,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`: [InsightSeverity](./literals.md#insightseverity)
-- `Status`: [InsightStatus](./literals.md#insightstatus)
+- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
+- `Status`: [InsightStatusType](./literals.md#insightstatustype)
 - `InsightTimeRange`:
   [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `PredictionTimeRange`:
@@ -709,8 +712,8 @@ from mypy_boto3_devops_guru.type_defs import ReactiveAnomalySummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
-- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
+- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
+- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - `SourceDetails`:
@@ -728,8 +731,8 @@ from mypy_boto3_devops_guru.type_defs import ReactiveAnomalyTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
-- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
+- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
+- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
 - `AnomalyTimeRange`:
   [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - `SourceDetails`:
@@ -748,8 +751,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`: [InsightSeverity](./literals.md#insightseverity)
-- `Status`: [InsightStatus](./literals.md#insightstatus)
+- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
+- `Status`: [InsightStatusType](./literals.md#insightstatustype)
 - `InsightTimeRange`:
   [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `ResourceCollection`:
@@ -767,8 +770,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`: [InsightSeverity](./literals.md#insightseverity)
-- `Status`: [InsightStatus](./literals.md#insightstatus)
+- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
+- `Status`: [InsightStatusType](./literals.md#insightstatustype)
 - `InsightTimeRange`:
   [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `ResourceCollection`:
@@ -891,8 +894,9 @@ from mypy_boto3_devops_guru.type_defs import SearchInsightsFiltersTypeDef
 
 Optional fields:
 
-- `Severities`: `List`\[[InsightSeverity](./literals.md#insightseverity)\]
-- `Statuses`: `List`\[[InsightStatus](./literals.md#insightstatus)\]
+- `Severities`:
+  `List`\[[InsightSeverityType](./literals.md#insightseveritytype)\]
+- `Statuses`: `List`\[[InsightStatusType](./literals.md#insightstatustype)\]
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
@@ -920,7 +924,7 @@ from mypy_boto3_devops_guru.type_defs import ServiceCollectionTypeDef
 
 Optional fields:
 
-- `ServiceNames`: `List`\[[ServiceName](./literals.md#servicename)\]
+- `ServiceNames`: `List`\[[ServiceNameType](./literals.md#servicenametype)\]
 
 ## ServiceHealthTypeDef
 
@@ -930,7 +934,7 @@ from mypy_boto3_devops_guru.type_defs import ServiceHealthTypeDef
 
 Optional fields:
 
-- `ServiceName`: [ServiceName](./literals.md#servicename)
+- `ServiceName`: [ServiceNameType](./literals.md#servicenametype)
 - `Insight`:
   [ServiceInsightHealthTypeDef](./type_defs.md#serviceinsighthealthtypedef)
 
@@ -966,7 +970,7 @@ Optional fields:
 
 - `Type`: `str`
 - `State`:
-  [CostEstimationServiceResourceState](./literals.md#costestimationserviceresourcestate)
+  [CostEstimationServiceResourceStateType](./literals.md#costestimationserviceresourcestatetype)
 - `Count`: `int`
 - `UnitCost`: `float`
 - `Cost`: `float`

@@ -3,30 +3,30 @@
 > [Index](..) > [CustomerProfiles](.) > Literals
 
 Auto-generated documentation for
-[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [Literals for boto3 CustomerProfiles module](#literals-for-boto3-customerprofiles-module)
-  - [DataPullMode](#datapullmode)
-  - [FieldContentType](#fieldcontenttype)
-  - [Gender](#gender)
-  - [MarketoConnectorOperator](#marketoconnectoroperator)
-  - [OperatorPropertiesKeys](#operatorpropertieskeys)
-  - [PartyType](#partytype)
-  - [S3ConnectorOperator](#s3connectoroperator)
-  - [SalesforceConnectorOperator](#salesforceconnectoroperator)
-  - [ServiceNowConnectorOperator](#servicenowconnectoroperator)
-  - [SourceConnectorType](#sourceconnectortype)
-  - [StandardIdentifier](#standardidentifier)
-  - [TaskType](#tasktype)
-  - [TriggerType](#triggertype)
-  - [ZendeskConnectorOperator](#zendeskconnectoroperator)
+  - [DataPullModeType](#datapullmodetype)
+  - [FieldContentTypeType](#fieldcontenttypetype)
+  - [GenderType](#gendertype)
+  - [MarketoConnectorOperatorType](#marketoconnectoroperatortype)
+  - [OperatorPropertiesKeysType](#operatorpropertieskeystype)
+  - [PartyTypeType](#partytypetype)
+  - [S3ConnectorOperatorType](#s3connectoroperatortype)
+  - [SalesforceConnectorOperatorType](#salesforceconnectoroperatortype)
+  - [ServiceNowConnectorOperatorType](#servicenowconnectoroperatortype)
+  - [SourceConnectorTypeType](#sourceconnectortypetype)
+  - [StandardIdentifierType](#standardidentifiertype)
+  - [TaskTypeType](#tasktypetype)
+  - [TriggerTypeType](#triggertypetype)
+  - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
 
-## DataPullMode
+## DataPullModeType
 
 ```python
-from mypy_boto3_customer_profiles.literals import DataPullMode
+from mypy_boto3_customer_profiles.literals import DataPullModeType
 ```
 
 Values:
@@ -34,10 +34,10 @@ Values:
 - `Complete`
 - `Incremental`
 
-## FieldContentType
+## FieldContentTypeType
 
 ```python
-from mypy_boto3_customer_profiles.literals import FieldContentType
+from mypy_boto3_customer_profiles.literals import FieldContentTypeType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `PHONE_NUMBER`
 - `STRING`
 
-## Gender
+## GenderType
 
 ```python
-from mypy_boto3_customer_profiles.literals import Gender
+from mypy_boto3_customer_profiles.literals import GenderType
 ```
 
 Values:
@@ -60,10 +60,10 @@ Values:
 - `MALE`
 - `UNSPECIFIED`
 
-## MarketoConnectorOperator
+## MarketoConnectorOperatorType
 
 ```python
-from mypy_boto3_customer_profiles.literals import MarketoConnectorOperator
+from mypy_boto3_customer_profiles.literals import MarketoConnectorOperatorType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## OperatorPropertiesKeys
+## OperatorPropertiesKeysType
 
 ```python
-from mypy_boto3_customer_profiles.literals import OperatorPropertiesKeys
+from mypy_boto3_customer_profiles.literals import OperatorPropertiesKeysType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `VALUE`
 - `VALUES`
 
-## PartyType
+## PartyTypeType
 
 ```python
-from mypy_boto3_customer_profiles.literals import PartyType
+from mypy_boto3_customer_profiles.literals import PartyTypeType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `INDIVIDUAL`
 - `OTHER`
 
-## S3ConnectorOperator
+## S3ConnectorOperatorType
 
 ```python
-from mypy_boto3_customer_profiles.literals import S3ConnectorOperator
+from mypy_boto3_customer_profiles.literals import S3ConnectorOperatorType
 ```
 
 Values:
@@ -149,40 +149,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## SalesforceConnectorOperator
+## SalesforceConnectorOperatorType
 
 ```python
-from mypy_boto3_customer_profiles.literals import SalesforceConnectorOperator
-```
-
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-## ServiceNowConnectorOperator
-
-```python
-from mypy_boto3_customer_profiles.literals import ServiceNowConnectorOperator
+from mypy_boto3_customer_profiles.literals import SalesforceConnectorOperatorType
 ```
 
 Values:
@@ -209,10 +179,40 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## SourceConnectorType
+## ServiceNowConnectorOperatorType
 
 ```python
-from mypy_boto3_customer_profiles.literals import SourceConnectorType
+from mypy_boto3_customer_profiles.literals import ServiceNowConnectorOperatorType
+```
+
+Values:
+
+- `ADDITION`
+- `BETWEEN`
+- `CONTAINS`
+- `DIVISION`
+- `EQUAL_TO`
+- `GREATER_THAN`
+- `GREATER_THAN_OR_EQUAL_TO`
+- `LESS_THAN`
+- `LESS_THAN_OR_EQUAL_TO`
+- `MASK_ALL`
+- `MASK_FIRST_N`
+- `MASK_LAST_N`
+- `MULTIPLICATION`
+- `NO_OP`
+- `NOT_EQUAL_TO`
+- `PROJECTION`
+- `SUBTRACTION`
+- `VALIDATE_NON_NEGATIVE`
+- `VALIDATE_NON_NULL`
+- `VALIDATE_NON_ZERO`
+- `VALIDATE_NUMERIC`
+
+## SourceConnectorTypeType
+
+```python
+from mypy_boto3_customer_profiles.literals import SourceConnectorTypeType
 ```
 
 Values:
@@ -223,10 +223,10 @@ Values:
 - `Servicenow`
 - `Zendesk`
 
-## StandardIdentifier
+## StandardIdentifierType
 
 ```python
-from mypy_boto3_customer_profiles.literals import StandardIdentifier
+from mypy_boto3_customer_profiles.literals import StandardIdentifierType
 ```
 
 Values:
@@ -237,10 +237,10 @@ Values:
 - `SECONDARY`
 - `UNIQUE`
 
-## TaskType
+## TaskTypeType
 
 ```python
-from mypy_boto3_customer_profiles.literals import TaskType
+from mypy_boto3_customer_profiles.literals import TaskTypeType
 ```
 
 Values:
@@ -253,10 +253,10 @@ Values:
 - `Truncate`
 - `Validate`
 
-## TriggerType
+## TriggerTypeType
 
 ```python
-from mypy_boto3_customer_profiles.literals import TriggerType
+from mypy_boto3_customer_profiles.literals import TriggerTypeType
 ```
 
 Values:
@@ -265,10 +265,10 @@ Values:
 - `OnDemand`
 - `Scheduled`
 
-## ZendeskConnectorOperator
+## ZendeskConnectorOperatorType
 
 ```python
-from mypy_boto3_customer_profiles.literals import ZendeskConnectorOperator
+from mypy_boto3_customer_profiles.literals import ZendeskConnectorOperatorType
 ```
 
 Values:

@@ -3,21 +3,21 @@
 > [Index](..) > [Route53Resolver](.) > Literals
 
 Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
 [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Literals for boto3 Route53Resolver module](#literals-for-boto3-route53resolver-module)
-  - [Action](#action)
-  - [BlockOverrideDnsType](#blockoverridednstype)
-  - [BlockResponse](#blockresponse)
-  - [FirewallDomainImportOperation](#firewalldomainimportoperation)
-  - [FirewallDomainListStatus](#firewalldomainliststatus)
-  - [FirewallDomainUpdateOperation](#firewalldomainupdateoperation)
-  - [FirewallFailOpenStatus](#firewallfailopenstatus)
-  - [FirewallRuleGroupAssociationStatus](#firewallrulegroupassociationstatus)
-  - [FirewallRuleGroupStatus](#firewallrulegroupstatus)
-  - [IpAddressStatus](#ipaddressstatus)
+  - [ActionType](#actiontype)
+  - [BlockOverrideDnsTypeType](#blockoverridednstypetype)
+  - [BlockResponseType](#blockresponsetype)
+  - [FirewallDomainImportOperationType](#firewalldomainimportoperationtype)
+  - [FirewallDomainListStatusType](#firewalldomainliststatustype)
+  - [FirewallDomainUpdateOperationType](#firewalldomainupdateoperationtype)
+  - [FirewallFailOpenStatusType](#firewallfailopenstatustype)
+  - [FirewallRuleGroupAssociationStatusType](#firewallrulegroupassociationstatustype)
+  - [FirewallRuleGroupStatusType](#firewallrulegroupstatustype)
+  - [IpAddressStatusType](#ipaddressstatustype)
   - [ListFirewallConfigsPaginatorName](#listfirewallconfigspaginatorname)
   - [ListFirewallDomainListsPaginatorName](#listfirewalldomainlistspaginatorname)
   - [ListFirewallDomainsPaginatorName](#listfirewalldomainspaginatorname)
@@ -32,24 +32,24 @@ type annotations stubs module
   - [ListResolverRuleAssociationsPaginatorName](#listresolverruleassociationspaginatorname)
   - [ListResolverRulesPaginatorName](#listresolverrulespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [MutationProtectionStatus](#mutationprotectionstatus)
-  - [ResolverDNSSECValidationStatus](#resolverdnssecvalidationstatus)
-  - [ResolverEndpointDirection](#resolverendpointdirection)
-  - [ResolverEndpointStatus](#resolverendpointstatus)
-  - [ResolverQueryLogConfigAssociationError](#resolverquerylogconfigassociationerror)
-  - [ResolverQueryLogConfigAssociationStatus](#resolverquerylogconfigassociationstatus)
-  - [ResolverQueryLogConfigStatus](#resolverquerylogconfigstatus)
-  - [ResolverRuleAssociationStatus](#resolverruleassociationstatus)
-  - [ResolverRuleStatus](#resolverrulestatus)
-  - [RuleTypeOption](#ruletypeoption)
-  - [ShareStatus](#sharestatus)
-  - [SortOrder](#sortorder)
-  - [Validation](#validation)
+  - [MutationProtectionStatusType](#mutationprotectionstatustype)
+  - [ResolverDNSSECValidationStatusType](#resolverdnssecvalidationstatustype)
+  - [ResolverEndpointDirectionType](#resolverendpointdirectiontype)
+  - [ResolverEndpointStatusType](#resolverendpointstatustype)
+  - [ResolverQueryLogConfigAssociationErrorType](#resolverquerylogconfigassociationerrortype)
+  - [ResolverQueryLogConfigAssociationStatusType](#resolverquerylogconfigassociationstatustype)
+  - [ResolverQueryLogConfigStatusType](#resolverquerylogconfigstatustype)
+  - [ResolverRuleAssociationStatusType](#resolverruleassociationstatustype)
+  - [ResolverRuleStatusType](#resolverrulestatustype)
+  - [RuleTypeOptionType](#ruletypeoptiontype)
+  - [ShareStatusType](#sharestatustype)
+  - [SortOrderType](#sortordertype)
+  - [ValidationType](#validationtype)
 
-## Action
+## ActionType
 
 ```python
-from mypy_boto3_route53resolver.literals import Action
+from mypy_boto3_route53resolver.literals import ActionType
 ```
 
 Values:
@@ -58,20 +58,20 @@ Values:
 - `ALLOW`
 - `BLOCK`
 
-## BlockOverrideDnsType
+## BlockOverrideDnsTypeType
 
 ```python
-from mypy_boto3_route53resolver.literals import BlockOverrideDnsType
+from mypy_boto3_route53resolver.literals import BlockOverrideDnsTypeType
 ```
 
 Values:
 
 - `CNAME`
 
-## BlockResponse
+## BlockResponseType
 
 ```python
-from mypy_boto3_route53resolver.literals import BlockResponse
+from mypy_boto3_route53resolver.literals import BlockResponseType
 ```
 
 Values:
@@ -80,20 +80,20 @@ Values:
 - `NXDOMAIN`
 - `OVERRIDE`
 
-## FirewallDomainImportOperation
+## FirewallDomainImportOperationType
 
 ```python
-from mypy_boto3_route53resolver.literals import FirewallDomainImportOperation
+from mypy_boto3_route53resolver.literals import FirewallDomainImportOperationType
 ```
 
 Values:
 
 - `REPLACE`
 
-## FirewallDomainListStatus
+## FirewallDomainListStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import FirewallDomainListStatus
+from mypy_boto3_route53resolver.literals import FirewallDomainListStatusType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `IMPORTING`
 - `UPDATING`
 
-## FirewallDomainUpdateOperation
+## FirewallDomainUpdateOperationType
 
 ```python
-from mypy_boto3_route53resolver.literals import FirewallDomainUpdateOperation
+from mypy_boto3_route53resolver.literals import FirewallDomainUpdateOperationType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `REMOVE`
 - `REPLACE`
 
-## FirewallFailOpenStatus
+## FirewallFailOpenStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import FirewallFailOpenStatus
+from mypy_boto3_route53resolver.literals import FirewallFailOpenStatusType
 ```
 
 Values:
@@ -127,10 +127,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## FirewallRuleGroupAssociationStatus
+## FirewallRuleGroupAssociationStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import FirewallRuleGroupAssociationStatus
+from mypy_boto3_route53resolver.literals import FirewallRuleGroupAssociationStatusType
 ```
 
 Values:
@@ -139,10 +139,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## FirewallRuleGroupStatus
+## FirewallRuleGroupStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import FirewallRuleGroupStatus
+from mypy_boto3_route53resolver.literals import FirewallRuleGroupStatusType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## IpAddressStatus
+## IpAddressStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import IpAddressStatus
+from mypy_boto3_route53resolver.literals import IpAddressStatusType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## MutationProtectionStatus
+## MutationProtectionStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import MutationProtectionStatus
+from mypy_boto3_route53resolver.literals import MutationProtectionStatusType
 ```
 
 Values:
@@ -321,10 +321,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ResolverDNSSECValidationStatus
+## ResolverDNSSECValidationStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverDNSSECValidationStatus
+from mypy_boto3_route53resolver.literals import ResolverDNSSECValidationStatusType
 ```
 
 Values:
@@ -334,10 +334,10 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
-## ResolverEndpointDirection
+## ResolverEndpointDirectionType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverEndpointDirection
+from mypy_boto3_route53resolver.literals import ResolverEndpointDirectionType
 ```
 
 Values:
@@ -345,10 +345,10 @@ Values:
 - `INBOUND`
 - `OUTBOUND`
 
-## ResolverEndpointStatus
+## ResolverEndpointStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverEndpointStatus
+from mypy_boto3_route53resolver.literals import ResolverEndpointStatusType
 ```
 
 Values:
@@ -360,10 +360,10 @@ Values:
 - `OPERATIONAL`
 - `UPDATING`
 
-## ResolverQueryLogConfigAssociationError
+## ResolverQueryLogConfigAssociationErrorType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigAssociationError
+from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigAssociationErrorType
 ```
 
 Values:
@@ -373,10 +373,10 @@ Values:
 - `INTERNAL_SERVICE_ERROR`
 - `NONE`
 
-## ResolverQueryLogConfigAssociationStatus
+## ResolverQueryLogConfigAssociationStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigAssociationStatus
+from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigAssociationStatusType
 ```
 
 Values:
@@ -387,10 +387,10 @@ Values:
 - `DELETING`
 - `FAILED`
 
-## ResolverQueryLogConfigStatus
+## ResolverQueryLogConfigStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigStatus
+from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigStatusType
 ```
 
 Values:
@@ -400,10 +400,10 @@ Values:
 - `DELETING`
 - `FAILED`
 
-## ResolverRuleAssociationStatus
+## ResolverRuleAssociationStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverRuleAssociationStatus
+from mypy_boto3_route53resolver.literals import ResolverRuleAssociationStatusType
 ```
 
 Values:
@@ -414,10 +414,10 @@ Values:
 - `FAILED`
 - `OVERRIDDEN`
 
-## ResolverRuleStatus
+## ResolverRuleStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ResolverRuleStatus
+from mypy_boto3_route53resolver.literals import ResolverRuleStatusType
 ```
 
 Values:
@@ -427,10 +427,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## RuleTypeOption
+## RuleTypeOptionType
 
 ```python
-from mypy_boto3_route53resolver.literals import RuleTypeOption
+from mypy_boto3_route53resolver.literals import RuleTypeOptionType
 ```
 
 Values:
@@ -439,10 +439,10 @@ Values:
 - `RECURSIVE`
 - `SYSTEM`
 
-## ShareStatus
+## ShareStatusType
 
 ```python
-from mypy_boto3_route53resolver.literals import ShareStatus
+from mypy_boto3_route53resolver.literals import ShareStatusType
 ```
 
 Values:
@@ -451,10 +451,10 @@ Values:
 - `SHARED_BY_ME`
 - `SHARED_WITH_ME`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_route53resolver.literals import SortOrder
+from mypy_boto3_route53resolver.literals import SortOrderType
 ```
 
 Values:
@@ -462,10 +462,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## Validation
+## ValidationType
 
 ```python
-from mypy_boto3_route53resolver.literals import Validation
+from mypy_boto3_route53resolver.literals import ValidationType
 ```
 
 Values:

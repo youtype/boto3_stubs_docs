@@ -3,26 +3,26 @@
 > [Index](..) > [FMS](.) > Literals
 
 Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS)
 type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Literals for boto3 FMS module](#literals-for-boto3-fms-module)
-  - [AccountRoleStatus](#accountrolestatus)
-  - [CustomerPolicyScopeIdType](#customerpolicyscopeidtype)
-  - [DependentServiceName](#dependentservicename)
+  - [AccountRoleStatusType](#accountrolestatustype)
+  - [CustomerPolicyScopeIdTypeType](#customerpolicyscopeidtypetype)
+  - [DependentServiceNameType](#dependentservicenametype)
   - [ListComplianceStatusPaginatorName](#listcompliancestatuspaginatorname)
   - [ListMemberAccountsPaginatorName](#listmemberaccountspaginatorname)
   - [ListPoliciesPaginatorName](#listpoliciespaginatorname)
-  - [PolicyComplianceStatusType](#policycompliancestatustype)
-  - [RemediationActionType](#remediationactiontype)
-  - [SecurityServiceType](#securityservicetype)
-  - [ViolationReason](#violationreason)
+  - [PolicyComplianceStatusTypeType](#policycompliancestatustypetype)
+  - [RemediationActionTypeType](#remediationactiontypetype)
+  - [SecurityServiceTypeType](#securityservicetypetype)
+  - [ViolationReasonType](#violationreasontype)
 
-## AccountRoleStatus
+## AccountRoleStatusType
 
 ```python
-from mypy_boto3_fms.literals import AccountRoleStatus
+from mypy_boto3_fms.literals import AccountRoleStatusType
 ```
 
 Values:
@@ -33,10 +33,10 @@ Values:
 - `PENDING_DELETION`
 - `READY`
 
-## CustomerPolicyScopeIdType
+## CustomerPolicyScopeIdTypeType
 
 ```python
-from mypy_boto3_fms.literals import CustomerPolicyScopeIdType
+from mypy_boto3_fms.literals import CustomerPolicyScopeIdTypeType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 - `ACCOUNT`
 - `ORG_UNIT`
 
-## DependentServiceName
+## DependentServiceNameType
 
 ```python
-from mypy_boto3_fms.literals import DependentServiceName
+from mypy_boto3_fms.literals import DependentServiceNameType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 
 - `list_policies`
 
-## PolicyComplianceStatusType
+## PolicyComplianceStatusTypeType
 
 ```python
-from mypy_boto3_fms.literals import PolicyComplianceStatusType
+from mypy_boto3_fms.literals import PolicyComplianceStatusTypeType
 ```
 
 Values:
@@ -98,10 +98,10 @@ Values:
 - `COMPLIANT`
 - `NON_COMPLIANT`
 
-## RemediationActionType
+## RemediationActionTypeType
 
 ```python
-from mypy_boto3_fms.literals import RemediationActionType
+from mypy_boto3_fms.literals import RemediationActionTypeType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 - `MODIFY`
 - `REMOVE`
 
-## SecurityServiceType
+## SecurityServiceTypeType
 
 ```python
-from mypy_boto3_fms.literals import SecurityServiceType
+from mypy_boto3_fms.literals import SecurityServiceTypeType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `WAF`
 - `WAFV2`
 
-## ViolationReason
+## ViolationReasonType
 
 ```python
-from mypy_boto3_fms.literals import ViolationReason
+from mypy_boto3_fms.literals import ViolationReasonType
 ```
 
 Values:

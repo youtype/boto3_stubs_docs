@@ -3,49 +3,49 @@
 > [Index](..) > [ComputeOptimizer](.) > Literals
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [Literals for boto3 ComputeOptimizer module](#literals-for-boto3-computeoptimizer-module)
-  - [EBSFilterName](#ebsfiltername)
-  - [EBSFinding](#ebsfinding)
-  - [EBSMetricName](#ebsmetricname)
-  - [ExportableAutoScalingGroupField](#exportableautoscalinggroupfield)
-  - [ExportableInstanceField](#exportableinstancefield)
-  - [FileFormat](#fileformat)
-  - [FilterName](#filtername)
-  - [Finding](#finding)
-  - [FindingReasonCode](#findingreasoncode)
-  - [JobFilterName](#jobfiltername)
-  - [JobStatus](#jobstatus)
-  - [LambdaFunctionMemoryMetricName](#lambdafunctionmemorymetricname)
-  - [LambdaFunctionMemoryMetricStatistic](#lambdafunctionmemorymetricstatistic)
-  - [LambdaFunctionMetricName](#lambdafunctionmetricname)
-  - [LambdaFunctionMetricStatistic](#lambdafunctionmetricstatistic)
-  - [LambdaFunctionRecommendationFilterName](#lambdafunctionrecommendationfiltername)
-  - [LambdaFunctionRecommendationFinding](#lambdafunctionrecommendationfinding)
-  - [LambdaFunctionRecommendationFindingReasonCode](#lambdafunctionrecommendationfindingreasoncode)
-  - [MetricName](#metricname)
-  - [MetricStatistic](#metricstatistic)
-  - [RecommendationSourceType](#recommendationsourcetype)
-  - [ResourceType](#resourcetype)
-  - [Status](#status)
+  - [EBSFilterNameType](#ebsfilternametype)
+  - [EBSFindingType](#ebsfindingtype)
+  - [EBSMetricNameType](#ebsmetricnametype)
+  - [ExportableAutoScalingGroupFieldType](#exportableautoscalinggroupfieldtype)
+  - [ExportableInstanceFieldType](#exportableinstancefieldtype)
+  - [FileFormatType](#fileformattype)
+  - [FilterNameType](#filternametype)
+  - [FindingReasonCodeType](#findingreasoncodetype)
+  - [FindingType](#findingtype)
+  - [JobFilterNameType](#jobfilternametype)
+  - [JobStatusType](#jobstatustype)
+  - [LambdaFunctionMemoryMetricNameType](#lambdafunctionmemorymetricnametype)
+  - [LambdaFunctionMemoryMetricStatisticType](#lambdafunctionmemorymetricstatistictype)
+  - [LambdaFunctionMetricNameType](#lambdafunctionmetricnametype)
+  - [LambdaFunctionMetricStatisticType](#lambdafunctionmetricstatistictype)
+  - [LambdaFunctionRecommendationFilterNameType](#lambdafunctionrecommendationfilternametype)
+  - [LambdaFunctionRecommendationFindingReasonCodeType](#lambdafunctionrecommendationfindingreasoncodetype)
+  - [LambdaFunctionRecommendationFindingType](#lambdafunctionrecommendationfindingtype)
+  - [MetricNameType](#metricnametype)
+  - [MetricStatisticType](#metricstatistictype)
+  - [RecommendationSourceTypeType](#recommendationsourcetypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [StatusType](#statustype)
 
-## EBSFilterName
+## EBSFilterNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import EBSFilterName
+from mypy_boto3_compute_optimizer.literals import EBSFilterNameType
 ```
 
 Values:
 
 - `Finding`
 
-## EBSFinding
+## EBSFindingType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import EBSFinding
+from mypy_boto3_compute_optimizer.literals import EBSFindingType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `NotOptimized`
 - `Optimized`
 
-## EBSMetricName
+## EBSMetricNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import EBSMetricName
+from mypy_boto3_compute_optimizer.literals import EBSMetricNameType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `VolumeWriteBytesPerSecond`
 - `VolumeWriteOpsPerSecond`
 
-## ExportableAutoScalingGroupField
+## ExportableAutoScalingGroupFieldType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import ExportableAutoScalingGroupField
+from mypy_boto3_compute_optimizer.literals import ExportableAutoScalingGroupFieldType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 - `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
 - `UtilizationMetricsMemoryMaximum`
 
-## ExportableInstanceField
+## ExportableInstanceFieldType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import ExportableInstanceField
+from mypy_boto3_compute_optimizer.literals import ExportableInstanceFieldType
 ```
 
 Values:
@@ -154,20 +154,20 @@ Values:
 - `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
 - `UtilizationMetricsMemoryMaximum`
 
-## FileFormat
+## FileFormatType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import FileFormat
+from mypy_boto3_compute_optimizer.literals import FileFormatType
 ```
 
 Values:
 
 - `Csv`
 
-## FilterName
+## FilterNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import FilterName
+from mypy_boto3_compute_optimizer.literals import FilterNameType
 ```
 
 Values:
@@ -175,10 +175,21 @@ Values:
 - `Finding`
 - `RecommendationSourceType`
 
-## Finding
+## FindingReasonCodeType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import Finding
+from mypy_boto3_compute_optimizer.literals import FindingReasonCodeType
+```
+
+Values:
+
+- `MemoryOverprovisioned`
+- `MemoryUnderprovisioned`
+
+## FindingType
+
+```python
+from mypy_boto3_compute_optimizer.literals import FindingType
 ```
 
 Values:
@@ -188,21 +199,10 @@ Values:
 - `Overprovisioned`
 - `Underprovisioned`
 
-## FindingReasonCode
+## JobFilterNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import FindingReasonCode
-```
-
-Values:
-
-- `MemoryOverprovisioned`
-- `MemoryUnderprovisioned`
-
-## JobFilterName
-
-```python
-from mypy_boto3_compute_optimizer.literals import JobFilterName
+from mypy_boto3_compute_optimizer.literals import JobFilterNameType
 ```
 
 Values:
@@ -210,10 +210,10 @@ Values:
 - `JobStatus`
 - `ResourceType`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import JobStatus
+from mypy_boto3_compute_optimizer.literals import JobStatusType
 ```
 
 Values:
@@ -223,20 +223,20 @@ Values:
 - `InProgress`
 - `Queued`
 
-## LambdaFunctionMemoryMetricName
+## LambdaFunctionMemoryMetricNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricName
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricNameType
 ```
 
 Values:
 
 - `Duration`
 
-## LambdaFunctionMemoryMetricStatistic
+## LambdaFunctionMemoryMetricStatisticType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricStatistic
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricStatisticType
 ```
 
 Values:
@@ -245,10 +245,10 @@ Values:
 - `LowerBound`
 - `UpperBound`
 
-## LambdaFunctionMetricName
+## LambdaFunctionMetricNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionMetricName
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionMetricNameType
 ```
 
 Values:
@@ -256,10 +256,10 @@ Values:
 - `Duration`
 - `Memory`
 
-## LambdaFunctionMetricStatistic
+## LambdaFunctionMetricStatisticType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionMetricStatistic
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionMetricStatisticType
 ```
 
 Values:
@@ -267,10 +267,10 @@ Values:
 - `Average`
 - `Maximum`
 
-## LambdaFunctionRecommendationFilterName
+## LambdaFunctionRecommendationFilterNameType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFilterName
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFilterNameType
 ```
 
 Values:
@@ -278,22 +278,10 @@ Values:
 - `Finding`
 - `FindingReasonCode`
 
-## LambdaFunctionRecommendationFinding
+## LambdaFunctionRecommendationFindingReasonCodeType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFinding
-```
-
-Values:
-
-- `NotOptimized`
-- `Optimized`
-- `Unavailable`
-
-## LambdaFunctionRecommendationFindingReasonCode
-
-```python
-from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFindingReasonCode
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFindingReasonCodeType
 ```
 
 Values:
@@ -303,10 +291,22 @@ Values:
 - `MemoryOverprovisioned`
 - `MemoryUnderprovisioned`
 
-## MetricName
+## LambdaFunctionRecommendationFindingType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import MetricName
+from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFindingType
+```
+
+Values:
+
+- `NotOptimized`
+- `Optimized`
+- `Unavailable`
+
+## MetricNameType
+
+```python
+from mypy_boto3_compute_optimizer.literals import MetricNameType
 ```
 
 Values:
@@ -318,10 +318,10 @@ Values:
 - `EBS_WRITE_OPS_PER_SECOND`
 - `Memory`
 
-## MetricStatistic
+## MetricStatisticType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import MetricStatistic
+from mypy_boto3_compute_optimizer.literals import MetricStatisticType
 ```
 
 Values:
@@ -329,10 +329,10 @@ Values:
 - `Average`
 - `Maximum`
 
-## RecommendationSourceType
+## RecommendationSourceTypeType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import RecommendationSourceType
+from mypy_boto3_compute_optimizer.literals import RecommendationSourceTypeType
 ```
 
 Values:
@@ -342,10 +342,10 @@ Values:
 - `Ec2Instance`
 - `LambdaFunction`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import ResourceType
+from mypy_boto3_compute_optimizer.literals import ResourceTypeType
 ```
 
 Values:
@@ -353,10 +353,10 @@ Values:
 - `AutoScalingGroup`
 - `Ec2Instance`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_compute_optimizer.literals import Status
+from mypy_boto3_compute_optimizer.literals import StatusType
 ```
 
 Values:

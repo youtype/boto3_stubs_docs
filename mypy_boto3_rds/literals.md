@@ -3,22 +3,22 @@
 > [Index](..) > [RDS](.) > Literals
 
 Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS)
 type annotations stubs module
 [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [Literals for boto3 RDS module](#literals-for-boto3-rds-module)
-  - [ActivityStreamMode](#activitystreammode)
-  - [ActivityStreamStatus](#activitystreamstatus)
-  - [ApplyMethod](#applymethod)
-  - [AuthScheme](#authscheme)
+  - [ActivityStreamModeType](#activitystreammodetype)
+  - [ActivityStreamStatusType](#activitystreamstatustype)
+  - [ApplyMethodType](#applymethodtype)
+  - [AuthSchemeType](#authschemetype)
   - [DBClusterSnapshotAvailableWaiterName](#dbclustersnapshotavailablewaitername)
   - [DBClusterSnapshotDeletedWaiterName](#dbclustersnapshotdeletedwaitername)
   - [DBInstanceAvailableWaiterName](#dbinstanceavailablewaitername)
   - [DBInstanceDeletedWaiterName](#dbinstancedeletedwaitername)
-  - [DBProxyEndpointStatus](#dbproxyendpointstatus)
-  - [DBProxyEndpointTargetRole](#dbproxyendpointtargetrole)
-  - [DBProxyStatus](#dbproxystatus)
+  - [DBProxyEndpointStatusType](#dbproxyendpointstatustype)
+  - [DBProxyEndpointTargetRoleType](#dbproxyendpointtargetroletype)
+  - [DBProxyStatusType](#dbproxystatustype)
   - [DBSnapshotAvailableWaiterName](#dbsnapshotavailablewaitername)
   - [DBSnapshotCompletedWaiterName](#dbsnapshotcompletedwaitername)
   - [DBSnapshotDeletedWaiterName](#dbsnapshotdeletedwaitername)
@@ -58,21 +58,21 @@ type annotations stubs module
   - [DescribeReservedDBInstancesPaginatorName](#describereserveddbinstancespaginatorname)
   - [DescribeSourceRegionsPaginatorName](#describesourceregionspaginatorname)
   - [DownloadDBLogFilePortionPaginatorName](#downloaddblogfileportionpaginatorname)
-  - [EngineFamily](#enginefamily)
-  - [FailoverStatus](#failoverstatus)
-  - [IAMAuthMode](#iamauthmode)
-  - [ReplicaMode](#replicamode)
-  - [SourceType](#sourcetype)
-  - [TargetHealthReason](#targethealthreason)
-  - [TargetRole](#targetrole)
-  - [TargetState](#targetstate)
-  - [TargetType](#targettype)
-  - [WriteForwardingStatus](#writeforwardingstatus)
+  - [EngineFamilyType](#enginefamilytype)
+  - [FailoverStatusType](#failoverstatustype)
+  - [IAMAuthModeType](#iamauthmodetype)
+  - [ReplicaModeType](#replicamodetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [TargetHealthReasonType](#targethealthreasontype)
+  - [TargetRoleType](#targetroletype)
+  - [TargetStateType](#targetstatetype)
+  - [TargetTypeType](#targettypetype)
+  - [WriteForwardingStatusType](#writeforwardingstatustype)
 
-## ActivityStreamMode
+## ActivityStreamModeType
 
 ```python
-from mypy_boto3_rds.literals import ActivityStreamMode
+from mypy_boto3_rds.literals import ActivityStreamModeType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `async`
 - `sync`
 
-## ActivityStreamStatus
+## ActivityStreamStatusType
 
 ```python
-from mypy_boto3_rds.literals import ActivityStreamStatus
+from mypy_boto3_rds.literals import ActivityStreamStatusType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `stopped`
 - `stopping`
 
-## ApplyMethod
+## ApplyMethodType
 
 ```python
-from mypy_boto3_rds.literals import ApplyMethod
+from mypy_boto3_rds.literals import ApplyMethodType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `immediate`
 - `pending-reboot`
 
-## AuthScheme
+## AuthSchemeType
 
 ```python
-from mypy_boto3_rds.literals import AuthScheme
+from mypy_boto3_rds.literals import AuthSchemeType
 ```
 
 Values:
@@ -154,10 +154,10 @@ Values:
 
 - `db_instance_deleted`
 
-## DBProxyEndpointStatus
+## DBProxyEndpointStatusType
 
 ```python
-from mypy_boto3_rds.literals import DBProxyEndpointStatus
+from mypy_boto3_rds.literals import DBProxyEndpointStatusType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 - `insufficient-resource-limits`
 - `modifying`
 
-## DBProxyEndpointTargetRole
+## DBProxyEndpointTargetRoleType
 
 ```python
-from mypy_boto3_rds.literals import DBProxyEndpointTargetRole
+from mypy_boto3_rds.literals import DBProxyEndpointTargetRoleType
 ```
 
 Values:
@@ -180,10 +180,10 @@ Values:
 - `READ_ONLY`
 - `READ_WRITE`
 
-## DBProxyStatus
+## DBProxyStatusType
 
 ```python
-from mypy_boto3_rds.literals import DBProxyStatus
+from mypy_boto3_rds.literals import DBProxyStatusType
 ```
 
 Values:
@@ -588,10 +588,10 @@ Values:
 
 - `download_db_log_file_portion`
 
-## EngineFamily
+## EngineFamilyType
 
 ```python
-from mypy_boto3_rds.literals import EngineFamily
+from mypy_boto3_rds.literals import EngineFamilyType
 ```
 
 Values:
@@ -599,10 +599,10 @@ Values:
 - `MYSQL`
 - `POSTGRESQL`
 
-## FailoverStatus
+## FailoverStatusType
 
 ```python
-from mypy_boto3_rds.literals import FailoverStatus
+from mypy_boto3_rds.literals import FailoverStatusType
 ```
 
 Values:
@@ -611,10 +611,10 @@ Values:
 - `failing-over`
 - `pending`
 
-## IAMAuthMode
+## IAMAuthModeType
 
 ```python
-from mypy_boto3_rds.literals import IAMAuthMode
+from mypy_boto3_rds.literals import IAMAuthModeType
 ```
 
 Values:
@@ -622,10 +622,10 @@ Values:
 - `DISABLED`
 - `REQUIRED`
 
-## ReplicaMode
+## ReplicaModeType
 
 ```python
-from mypy_boto3_rds.literals import ReplicaMode
+from mypy_boto3_rds.literals import ReplicaModeType
 ```
 
 Values:
@@ -633,10 +633,10 @@ Values:
 - `mounted`
 - `open-read-only`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_rds.literals import SourceType
+from mypy_boto3_rds.literals import SourceTypeType
 ```
 
 Values:
@@ -648,10 +648,10 @@ Values:
 - `db-security-group`
 - `db-snapshot`
 
-## TargetHealthReason
+## TargetHealthReasonType
 
 ```python
-from mypy_boto3_rds.literals import TargetHealthReason
+from mypy_boto3_rds.literals import TargetHealthReasonType
 ```
 
 Values:
@@ -662,10 +662,10 @@ Values:
 - `PENDING_PROXY_CAPACITY`
 - `UNREACHABLE`
 
-## TargetRole
+## TargetRoleType
 
 ```python
-from mypy_boto3_rds.literals import TargetRole
+from mypy_boto3_rds.literals import TargetRoleType
 ```
 
 Values:
@@ -674,10 +674,10 @@ Values:
 - `READ_WRITE`
 - `UNKNOWN`
 
-## TargetState
+## TargetStateType
 
 ```python
-from mypy_boto3_rds.literals import TargetState
+from mypy_boto3_rds.literals import TargetStateType
 ```
 
 Values:
@@ -686,10 +686,10 @@ Values:
 - `REGISTERING`
 - `UNAVAILABLE`
 
-## TargetType
+## TargetTypeType
 
 ```python
-from mypy_boto3_rds.literals import TargetType
+from mypy_boto3_rds.literals import TargetTypeType
 ```
 
 Values:
@@ -698,10 +698,10 @@ Values:
 - `RDS_SERVERLESS_ENDPOINT`
 - `TRACKED_CLUSTER`
 
-## WriteForwardingStatus
+## WriteForwardingStatusType
 
 ```python
-from mypy_boto3_rds.literals import WriteForwardingStatus
+from mypy_boto3_rds.literals import WriteForwardingStatusType
 ```
 
 Values:

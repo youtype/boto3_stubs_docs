@@ -3,7 +3,7 @@
 > [Index](..) > [Route53Domains](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
 [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
@@ -62,7 +62,7 @@ from mypy_boto3_route53domains.type_defs import BillingRecordTypeDef
 Optional fields:
 
 - `DomainName`: `str`
-- `Operation`: [OperationType](./literals.md#operationtype)
+- `Operation`: [OperationTypeType](./literals.md#operationtypetype)
 - `InvoiceId`: `str`
 - `BillDate`: `datetime`
 - `Price`: `float`
@@ -85,7 +85,8 @@ from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityResponseT
 
 Required fields:
 
-- `Availability`: [DomainAvailability](./literals.md#domainavailability)
+- `Availability`:
+  [DomainAvailabilityType](./literals.md#domainavailabilitytype)
 
 ## CheckDomainTransferabilityResponseTypeDef
 
@@ -108,18 +109,19 @@ Optional fields:
 
 - `FirstName`: `str`
 - `LastName`: `str`
-- `ContactType`: [ContactType](./literals.md#contacttype)
+- `ContactType`: [ContactTypeType](./literals.md#contacttypetype)
 - `OrganizationName`: `str`
 - `AddressLine1`: `str`
 - `AddressLine2`: `str`
 - `City`: `str`
 - `State`: `str`
-- `CountryCode`: [CountryCode](./literals.md#countrycode)
+- `CountryCode`: [CountryCodeType](./literals.md#countrycodetype)
 - `ZipCode`: `str`
 - `PhoneNumber`: `str`
 - `Email`: `str`
 - `Fax`: `str`
-- `ExtraParams`: `List`\[[ExtraParamTypeDef](./type_defs.md#extraparamtypedef)\]
+- `ExtraParams`:
+  `List`\[[ExtraParamTypeDef](./type_defs.md#extraparamtypedef)\]
 
 ## DisableDomainTransferLockResponseTypeDef
 
@@ -166,7 +168,7 @@ from mypy_boto3_route53domains.type_defs import DomainTransferabilityTypeDef
 
 Optional fields:
 
-- `Transferable`: [Transferable](./literals.md#transferable)
+- `Transferable`: [TransferableType](./literals.md#transferabletype)
 
 ## EnableDomainTransferLockResponseTypeDef
 
@@ -186,7 +188,7 @@ from mypy_boto3_route53domains.type_defs import ExtraParamTypeDef
 
 Required fields:
 
-- `Name`: [ExtraParamName](./literals.md#extraparamname)
+- `Name`: [ExtraParamNameType](./literals.md#extraparamnametype)
 - `Value`: `str`
 
 ## GetContactReachabilityStatusResponseTypeDef
@@ -198,7 +200,7 @@ from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusResp
 Optional fields:
 
 - `domainName`: `str`
-- `status`: [ReachabilityStatus](./literals.md#reachabilitystatus)
+- `status`: [ReachabilityStatusType](./literals.md#reachabilitystatustype)
 
 ## GetDomainDetailResponseTypeDef
 
@@ -209,7 +211,8 @@ from mypy_boto3_route53domains.type_defs import GetDomainDetailResponseTypeDef
 Required fields:
 
 - `DomainName`: `str`
-- `Nameservers`: `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+- `Nameservers`:
+  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
 - `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 - `RegistrantContact`:
   [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
@@ -254,10 +257,10 @@ from mypy_boto3_route53domains.type_defs import GetOperationDetailResponseTypeDe
 Optional fields:
 
 - `OperationId`: `str`
-- `Status`: [OperationStatus](./literals.md#operationstatus)
+- `Status`: [OperationStatusType](./literals.md#operationstatustype)
 - `Message`: `str`
 - `DomainName`: `str`
-- `Type`: [OperationType](./literals.md#operationtype)
+- `Type`: [OperationTypeType](./literals.md#operationtypetype)
 - `SubmittedDate`: `datetime`
 
 ## ListDomainsResponseTypeDef
@@ -323,8 +326,8 @@ from mypy_boto3_route53domains.type_defs import OperationSummaryTypeDef
 Required fields:
 
 - `OperationId`: `str`
-- `Status`: [OperationStatus](./literals.md#operationstatus)
-- `Type`: [OperationType](./literals.md#operationtype)
+- `Status`: [OperationStatusType](./literals.md#operationstatustype)
+- `Type`: [OperationTypeType](./literals.md#operationtypetype)
 - `SubmittedDate`: `datetime`
 
 ## PaginatorConfigTypeDef

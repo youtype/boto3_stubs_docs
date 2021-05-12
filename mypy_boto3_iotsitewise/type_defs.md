@@ -3,7 +3,7 @@
 > [Index](..) > [IoTSiteWise](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
 [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
@@ -128,7 +128,7 @@ Required fields:
 - `id`: `str`
 - `identity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `permission`: [Permission](./literals.md#permission)
+- `permission`: [PermissionType](./literals.md#permissiontype)
 
 Optional fields:
 
@@ -148,7 +148,7 @@ Required fields:
 
 Optional fields:
 
-- `quality`: [Quality](./literals.md#quality)
+- `quality`: [QualityType](./literals.md#qualitytype)
 
 ## AggregatesTypeDef
 
@@ -192,7 +192,7 @@ Required fields:
 
 - `assetId`: `str`
 - `code`: `Literal['INTERNAL_FAILURE']` (see
-  [AssetErrorCode](./literals.md#asseterrorcode))
+  [AssetErrorCodeType](./literals.md#asseterrorcodetype))
 - `message`: `str`
 
 ## AssetHierarchyInfoTypeDef
@@ -289,7 +289,7 @@ from mypy_boto3_iotsitewise.type_defs import AssetModelPropertyDefinitionTypeDef
 Required fields:
 
 - `name`: `str`
-- `dataType`: [PropertyDataType](./literals.md#propertydatatype)
+- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
 - `type`: [PropertyTypeTypeDef](./type_defs.md#propertytypetypedef)
 
 Optional fields:
@@ -306,7 +306,7 @@ from mypy_boto3_iotsitewise.type_defs import AssetModelPropertyTypeDef
 Required fields:
 
 - `name`: `str`
-- `dataType`: [PropertyDataType](./literals.md#propertydatatype)
+- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
 - `type`: [PropertyTypeTypeDef](./type_defs.md#propertytypetypedef)
 
 Optional fields:
@@ -323,7 +323,7 @@ from mypy_boto3_iotsitewise.type_defs import AssetModelStatusTypeDef
 
 Required fields:
 
-- `state`: [AssetModelState](./literals.md#assetmodelstate)
+- `state`: [AssetModelStateType](./literals.md#assetmodelstatetype)
 
 Optional fields:
 
@@ -355,7 +355,7 @@ Required fields:
 
 - `id`: `str`
 - `name`: `str`
-- `dataType`: [PropertyDataType](./literals.md#propertydatatype)
+- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
 
 Optional fields:
 
@@ -378,7 +378,7 @@ Required fields:
 
 Optional fields:
 
-- `quality`: [Quality](./literals.md#quality)
+- `quality`: [QualityType](./literals.md#qualitytype)
 
 ## AssetRelationshipSummaryTypeDef
 
@@ -389,7 +389,7 @@ from mypy_boto3_iotsitewise.type_defs import AssetRelationshipSummaryTypeDef
 Required fields:
 
 - `relationshipType`: `Literal['HIERARCHY']` (see
-  [AssetRelationshipType](./literals.md#assetrelationshiptype))
+  [AssetRelationshipTypeType](./literals.md#assetrelationshiptypetype))
 
 Optional fields:
 
@@ -404,7 +404,7 @@ from mypy_boto3_iotsitewise.type_defs import AssetStatusTypeDef
 
 Required fields:
 
-- `state`: [AssetState](./literals.md#assetstate)
+- `state`: [AssetStateType](./literals.md#assetstatetype)
 
 Optional fields:
 
@@ -499,9 +499,10 @@ from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyErrorTypeDef
 Required fields:
 
 - `errorCode`:
-  [BatchPutAssetPropertyValueErrorCode](./literals.md#batchputassetpropertyvalueerrorcode)
+  [BatchPutAssetPropertyValueErrorCodeType](./literals.md#batchputassetpropertyvalueerrorcodetype)
 - `errorMessage`: `str`
-- `timestamps`: `List`\[[TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)\]
+- `timestamps`:
+  `List`\[[TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)\]
 
 ## BatchPutAssetPropertyValueResponseTypeDef
 
@@ -534,7 +535,7 @@ from mypy_boto3_iotsitewise.type_defs import ConfigurationErrorDetailsTypeDef
 
 Required fields:
 
-- `code`: [ErrorCode](./literals.md#errorcode)
+- `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
 
 ## ConfigurationStatusTypeDef
@@ -545,7 +546,7 @@ from mypy_boto3_iotsitewise.type_defs import ConfigurationStatusTypeDef
 
 Required fields:
 
-- `state`: [ConfigurationState](./literals.md#configurationstate)
+- `state`: [ConfigurationStateType](./literals.md#configurationstatetype)
 
 Optional fields:
 
@@ -695,7 +696,7 @@ Required fields:
 - `accessPolicyArn`: `str`
 - `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `accessPolicyPermission`: [Permission](./literals.md#permission)
+- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
 - `accessPolicyCreationDate`: `datetime`
 - `accessPolicyLastUpdateDate`: `datetime`
 
@@ -796,7 +797,7 @@ from mypy_boto3_iotsitewise.type_defs import DescribeDefaultEncryptionConfigurat
 
 Required fields:
 
-- `encryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 
@@ -816,7 +817,7 @@ Required fields:
 - `capabilityNamespace`: `str`
 - `capabilityConfiguration`: `str`
 - `capabilitySyncStatus`:
-  [CapabilitySyncStatus](./literals.md#capabilitysyncstatus)
+  [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
 
 ## DescribeGatewayResponseTypeDef
 
@@ -847,7 +848,8 @@ from mypy_boto3_iotsitewise.type_defs import DescribeLoggingOptionsResponseTypeD
 
 Required fields:
 
-- `loggingOptions`: [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
 
 ## DescribePortalResponseTypeDef
 
@@ -873,7 +875,7 @@ Optional fields:
 - `portalLogoImageLocation`:
   [ImageLocationTypeDef](./type_defs.md#imagelocationtypedef)
 - `roleArn`: `str`
-- `portalAuthMode`: [AuthMode](./literals.md#authmode)
+- `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
 
 ## DescribeProjectResponseTypeDef
 
@@ -902,7 +904,7 @@ from mypy_boto3_iotsitewise.type_defs import ErrorDetailsTypeDef
 
 Required fields:
 
-- `code`: [ErrorCode](./literals.md#errorcode)
+- `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
 
 ## ExpressionVariableTypeDef
@@ -926,7 +928,7 @@ Required fields:
 
 - `capabilityNamespace`: `str`
 - `capabilitySyncStatus`:
-  [CapabilitySyncStatus](./literals.md#capabilitysyncstatus)
+  [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
 
 ## GatewayPlatformTypeDef
 
@@ -1074,7 +1076,8 @@ from mypy_boto3_iotsitewise.type_defs import ImageFileTypeDef
 Required fields:
 
 - `data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `type`: `Literal['PNG']` (see [ImageFileType](./literals.md#imagefiletype))
+- `type`: `Literal['PNG']` (see
+  [ImageFileTypeType](./literals.md#imagefiletypetype))
 
 ## ImageLocationTypeDef
 
@@ -1273,7 +1276,7 @@ from mypy_boto3_iotsitewise.type_defs import LoggingOptionsTypeDef
 
 Required fields:
 
-- `level`: [LoggingLevel](./literals.md#logginglevel)
+- `level`: [LoggingLevelType](./literals.md#loggingleveltype)
 
 ## MetricTypeDef
 
@@ -1306,7 +1309,7 @@ from mypy_boto3_iotsitewise.type_defs import MonitorErrorDetailsTypeDef
 
 Optional fields:
 
-- `code`: [MonitorErrorCode](./literals.md#monitorerrorcode)
+- `code`: [MonitorErrorCodeType](./literals.md#monitorerrorcodetype)
 - `message`: `str`
 
 ## PaginatorConfigTypeDef
@@ -1339,7 +1342,7 @@ from mypy_boto3_iotsitewise.type_defs import PortalStatusTypeDef
 
 Required fields:
 
-- `state`: [PortalState](./literals.md#portalstate)
+- `state`: [PortalStateType](./literals.md#portalstatetype)
 
 Optional fields:
 
@@ -1402,7 +1405,8 @@ from mypy_boto3_iotsitewise.type_defs import PropertyNotificationTypeDef
 Required fields:
 
 - `topic`: `str`
-- `state`: [PropertyNotificationState](./literals.md#propertynotificationstate)
+- `state`:
+  [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
 
 ## PropertyTypeDef
 
@@ -1414,7 +1418,7 @@ Required fields:
 
 - `id`: `str`
 - `name`: `str`
-- `dataType`: [PropertyDataType](./literals.md#propertydatatype)
+- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
 
 Optional fields:
 
@@ -1463,7 +1467,7 @@ from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationRe
 
 Required fields:
 
-- `encryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 
@@ -1549,7 +1553,7 @@ Required fields:
 
 - `capabilityNamespace`: `str`
 - `capabilitySyncStatus`:
-  [CapabilitySyncStatus](./literals.md#capabilitysyncstatus)
+  [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
 
 ## UpdatePortalResponseTypeDef
 

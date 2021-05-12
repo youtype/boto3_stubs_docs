@@ -3,7 +3,7 @@
 > [Index](..) > [OpsWorks](.) > Typed dictionaries
 
 Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
 [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
@@ -115,15 +115,16 @@ Optional fields:
 - `Shortname`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `DataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `Type`: [AppType](./literals.md#apptype)
+- `DataSources`:
+  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `Type`: [AppTypeType](./literals.md#apptypetype)
 - `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `Domains`: `List`\[`str`\]
 - `EnableSsl`: `bool`
 - `SslConfiguration`:
   [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
-- `Attributes`: `Dict`\[[AppAttributesKeys](./literals.md#appattributeskeys),
-  `str`\]
+- `Attributes`:
+  `Dict`\[[AppAttributesKeysType](./literals.md#appattributeskeystype), `str`\]
 - `CreatedAt`: `str`
 - `Environment`:
   `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
@@ -200,13 +201,15 @@ Optional fields:
 
 - `LogGroupName`: `str`
 - `DatetimeFormat`: `str`
-- `TimeZone`: [CloudWatchLogsTimeZone](./literals.md#cloudwatchlogstimezone)
+- `TimeZone`:
+  [CloudWatchLogsTimeZoneType](./literals.md#cloudwatchlogstimezonetype)
 - `File`: `str`
 - `FileFingerprintLines`: `str`
 - `MultiLineStartPattern`: `str`
 - `InitialPosition`:
-  [CloudWatchLogsInitialPosition](./literals.md#cloudwatchlogsinitialposition)
-- `Encoding`: [CloudWatchLogsEncoding](./literals.md#cloudwatchlogsencoding)
+  [CloudWatchLogsInitialPositionType](./literals.md#cloudwatchlogsinitialpositiontype)
+- `Encoding`:
+  [CloudWatchLogsEncodingType](./literals.md#cloudwatchlogsencodingtype)
 - `BufferDuration`: `int`
 - `BatchCount`: `int`
 - `BatchSize`: `int`
@@ -310,7 +313,7 @@ from mypy_boto3_opsworks.type_defs import DeploymentCommandTypeDef
 
 Required fields:
 
-- `Name`: [DeploymentCommandName](./literals.md#deploymentcommandname)
+- `Name`: [DeploymentCommandNameType](./literals.md#deploymentcommandnametype)
 
 Optional fields:
 
@@ -332,7 +335,8 @@ Optional fields:
 - `Duration`: `int`
 - `IamUserArn`: `str`
 - `Comment`: `str`
-- `Command`: [DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef)
+- `Command`:
+  [DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef)
 - `Status`: `str`
 - `CustomJson`: `str`
 - `InstanceIds`: `List`\[`str`\]
@@ -376,7 +380,8 @@ from mypy_boto3_opsworks.type_defs import DescribeDeploymentsResultTypeDef
 
 Optional fields:
 
-- `Deployments`: `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
+- `Deployments`:
+  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 
 ## DescribeEcsClustersResultTypeDef
 
@@ -386,7 +391,8 @@ from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultTypeDef
 
 Optional fields:
 
-- `EcsClusters`: `List`\[[EcsClusterTypeDef](./type_defs.md#ecsclustertypedef)\]
+- `EcsClusters`:
+  `List`\[[EcsClusterTypeDef](./type_defs.md#ecsclustertypedef)\]
 - `NextToken`: `str`
 
 ## DescribeElasticIpsResultTypeDef
@@ -449,7 +455,8 @@ from mypy_boto3_opsworks.type_defs import DescribeMyUserProfileResultTypeDef
 
 Optional fields:
 
-- `UserProfile`: [SelfUserProfileTypeDef](./type_defs.md#selfuserprofiletypedef)
+- `UserProfile`:
+  [SelfUserProfileTypeDef](./type_defs.md#selfuserprofiletypedef)
 
 ## DescribeOperatingSystemsResponseTypeDef
 
@@ -470,7 +477,8 @@ from mypy_boto3_opsworks.type_defs import DescribePermissionsResultTypeDef
 
 Optional fields:
 
-- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `Permissions`:
+  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 
 ## DescribeRaidArraysResultTypeDef
 
@@ -578,7 +586,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `Iops`: `int`
 - `VolumeSize`: `int`
-- `VolumeType`: [VolumeType](./literals.md#volumetype)
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `DeleteOnTermination`: `bool`
 
 ## EcsClusterTypeDef
@@ -684,9 +692,9 @@ Optional fields:
 
 - `AgentVersion`: `str`
 - `AmiId`: `str`
-- `Architecture`: [Architecture](./literals.md#architecture)
+- `Architecture`: [ArchitectureType](./literals.md#architecturetype)
 - `Arn`: `str`
-- `AutoScalingType`: [AutoScalingType](./literals.md#autoscalingtype)
+- `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
 - `AvailabilityZone`: `str`
 - `BlockDeviceMappings`:
   `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
@@ -713,7 +721,7 @@ Optional fields:
 - `RegisteredBy`: `str`
 - `ReportedAgentVersion`: `str`
 - `ReportedOs`: [ReportedOsTypeDef](./type_defs.md#reportedostypedef)
-- `RootDeviceType`: [RootDeviceType](./literals.md#rootdevicetype)
+- `RootDeviceType`: [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `RootDeviceVolumeId`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SshHostDsaKeyFingerprint`: `str`
@@ -723,7 +731,8 @@ Optional fields:
 - `Status`: `str`
 - `SubnetId`: `str`
 - `Tenancy`: `str`
-- `VirtualizationType`: [VirtualizationType](./literals.md#virtualizationtype)
+- `VirtualizationType`:
+  [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 
 ## InstancesCountTypeDef
 
@@ -765,10 +774,11 @@ Optional fields:
 - `Arn`: `str`
 - `StackId`: `str`
 - `LayerId`: `str`
-- `Type`: [LayerType](./literals.md#layertype)
+- `Type`: [LayerTypeType](./literals.md#layertypetype)
 - `Name`: `str`
 - `Shortname`: `str`
-- `Attributes`: `Dict`\[[LayerAttributesKeys](./literals.md#layerattributeskeys),
+- `Attributes`:
+  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
@@ -1034,7 +1044,7 @@ from mypy_boto3_opsworks.type_defs import SourceTypeDef
 
 Optional fields:
 
-- `Type`: [SourceType](./literals.md#sourcetype)
+- `Type`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Url`: `str`
 - `Username`: `str`
 - `Password`: `str`
@@ -1080,7 +1090,8 @@ Optional fields:
 - `Arn`: `str`
 - `LayersCount`: `int`
 - `AppsCount`: `int`
-- `InstancesCount`: [InstancesCountTypeDef](./type_defs.md#instancescounttypedef)
+- `InstancesCount`:
+  [InstancesCountTypeDef](./type_defs.md#instancescounttypedef)
 
 ## StackTypeDef
 
@@ -1096,7 +1107,7 @@ Optional fields:
 - `Region`: `str`
 - `VpcId`: `str`
 - `Attributes`: `Dict`\[`Literal['Color']` (see
-  [StackAttributesKeys](./literals.md#stackattributeskeys)), `str`\]
+  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `ServiceRoleArn`: `str`
 - `DefaultInstanceProfileArn`: `str`
 - `DefaultOs`: `str`
@@ -1113,7 +1124,8 @@ Optional fields:
 - `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `DefaultSshKeyName`: `str`
 - `CreatedAt`: `str`
-- `DefaultRootDeviceType`: [RootDeviceType](./literals.md#rootdevicetype)
+- `DefaultRootDeviceType`:
+  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
 ## TemporaryCredentialTypeDef

@@ -3,7 +3,7 @@
 > [Index](..) > AppMesh
 
 Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
 [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
@@ -29,65 +29,65 @@ Can be used directly:
 from mypy_boto3_appmesh.client import AppMeshClient
 ```
 
-AppMeshClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_gateway_route](./client.md#create-gateway-route)
-- [create_mesh](./client.md#create-mesh)
-- [create_route](./client.md#create-route)
-- [create_virtual_gateway](./client.md#create-virtual-gateway)
-- [create_virtual_node](./client.md#create-virtual-node)
-- [create_virtual_router](./client.md#create-virtual-router)
-- [create_virtual_service](./client.md#create-virtual-service)
-- [delete_gateway_route](./client.md#delete-gateway-route)
-- [delete_mesh](./client.md#delete-mesh)
-- [delete_route](./client.md#delete-route)
-- [delete_virtual_gateway](./client.md#delete-virtual-gateway)
-- [delete_virtual_node](./client.md#delete-virtual-node)
-- [delete_virtual_router](./client.md#delete-virtual-router)
-- [delete_virtual_service](./client.md#delete-virtual-service)
-- [describe_gateway_route](./client.md#describe-gateway-route)
-- [describe_mesh](./client.md#describe-mesh)
-- [describe_route](./client.md#describe-route)
-- [describe_virtual_gateway](./client.md#describe-virtual-gateway)
-- [describe_virtual_node](./client.md#describe-virtual-node)
-- [describe_virtual_router](./client.md#describe-virtual-router)
-- [describe_virtual_service](./client.md#describe-virtual-service)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_gateway_routes](./client.md#list-gateway-routes)
-- [list_meshes](./client.md#list-meshes)
-- [list_routes](./client.md#list-routes)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_virtual_gateways](./client.md#list-virtual-gateways)
-- [list_virtual_nodes](./client.md#list-virtual-nodes)
-- [list_virtual_routers](./client.md#list-virtual-routers)
-- [list_virtual_services](./client.md#list-virtual-services)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_gateway_route](./client.md#update-gateway-route)
-- [update_mesh](./client.md#update-mesh)
-- [update_route](./client.md#update-route)
-- [update_virtual_gateway](./client.md#update-virtual-gateway)
-- [update_virtual_node](./client.md#update-virtual-node)
-- [update_virtual_router](./client.md#update-virtual-router)
-- [update_virtual_service](./client.md#update-virtual-service)
+- [can_paginate](./client.md#can_paginate)
+- [create_gateway_route](./client.md#create_gateway_route)
+- [create_mesh](./client.md#create_mesh)
+- [create_route](./client.md#create_route)
+- [create_virtual_gateway](./client.md#create_virtual_gateway)
+- [create_virtual_node](./client.md#create_virtual_node)
+- [create_virtual_router](./client.md#create_virtual_router)
+- [create_virtual_service](./client.md#create_virtual_service)
+- [delete_gateway_route](./client.md#delete_gateway_route)
+- [delete_mesh](./client.md#delete_mesh)
+- [delete_route](./client.md#delete_route)
+- [delete_virtual_gateway](./client.md#delete_virtual_gateway)
+- [delete_virtual_node](./client.md#delete_virtual_node)
+- [delete_virtual_router](./client.md#delete_virtual_router)
+- [delete_virtual_service](./client.md#delete_virtual_service)
+- [describe_gateway_route](./client.md#describe_gateway_route)
+- [describe_mesh](./client.md#describe_mesh)
+- [describe_route](./client.md#describe_route)
+- [describe_virtual_gateway](./client.md#describe_virtual_gateway)
+- [describe_virtual_node](./client.md#describe_virtual_node)
+- [describe_virtual_router](./client.md#describe_virtual_router)
+- [describe_virtual_service](./client.md#describe_virtual_service)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_gateway_routes](./client.md#list_gateway_routes)
+- [list_meshes](./client.md#list_meshes)
+- [list_routes](./client.md#list_routes)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_virtual_gateways](./client.md#list_virtual_gateways)
+- [list_virtual_nodes](./client.md#list_virtual_nodes)
+- [list_virtual_routers](./client.md#list_virtual_routers)
+- [list_virtual_services](./client.md#list_virtual_services)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_gateway_route](./client.md#update_gateway_route)
+- [update_mesh](./client.md#update_mesh)
+- [update_route](./client.md#update_route)
+- [update_virtual_gateway](./client.md#update_virtual_gateway)
+- [update_virtual_node](./client.md#update_virtual_node)
+- [update_virtual_router](./client.md#update_virtual_router)
+- [update_virtual_service](./client.md#update_virtual_service)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+AppMeshClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- ForbiddenException
+- InternalServerErrorException
+- LimitExceededException
+- NotFoundException
+- ResourceInUseException
+- ServiceUnavailableException
+- TooManyRequestsException
+- TooManyTagsException
 
 ## Paginators
 
@@ -116,15 +116,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.literals import DurationUnit, ...
+from mypy_boto3_appmesh.literals import DurationUnitType, ...
 ```
 
-- [DurationUnit](./literals.md#durationunit)
-- [EgressFilterType](./literals.md#egressfiltertype)
-- [GatewayRouteStatusCode](./literals.md#gatewayroutestatuscode)
-- [GrpcRetryPolicyEvent](./literals.md#grpcretrypolicyevent)
-- [HttpMethod](./literals.md#httpmethod)
-- [HttpScheme](./literals.md#httpscheme)
+- [DurationUnitType](./literals.md#durationunittype)
+- [EgressFilterTypeType](./literals.md#egressfiltertypetype)
+- [GatewayRouteStatusCodeType](./literals.md#gatewayroutestatuscodetype)
+- [GrpcRetryPolicyEventType](./literals.md#grpcretrypolicyeventtype)
+- [HttpMethodType](./literals.md#httpmethodtype)
+- [HttpSchemeType](./literals.md#httpschemetype)
 - [ListGatewayRoutesPaginatorName](./literals.md#listgatewayroutespaginatorname)
 - [ListMeshesPaginatorName](./literals.md#listmeshespaginatorname)
 - [ListRoutesPaginatorName](./literals.md#listroutespaginatorname)
@@ -133,17 +133,17 @@ from mypy_boto3_appmesh.literals import DurationUnit, ...
 - [ListVirtualNodesPaginatorName](./literals.md#listvirtualnodespaginatorname)
 - [ListVirtualRoutersPaginatorName](./literals.md#listvirtualrouterspaginatorname)
 - [ListVirtualServicesPaginatorName](./literals.md#listvirtualservicespaginatorname)
-- [ListenerTlsMode](./literals.md#listenertlsmode)
-- [MeshStatusCode](./literals.md#meshstatuscode)
-- [PortProtocol](./literals.md#portprotocol)
-- [RouteStatusCode](./literals.md#routestatuscode)
-- [TcpRetryPolicyEvent](./literals.md#tcpretrypolicyevent)
-- [VirtualGatewayListenerTlsMode](./literals.md#virtualgatewaylistenertlsmode)
-- [VirtualGatewayPortProtocol](./literals.md#virtualgatewayportprotocol)
-- [VirtualGatewayStatusCode](./literals.md#virtualgatewaystatuscode)
-- [VirtualNodeStatusCode](./literals.md#virtualnodestatuscode)
-- [VirtualRouterStatusCode](./literals.md#virtualrouterstatuscode)
-- [VirtualServiceStatusCode](./literals.md#virtualservicestatuscode)
+- [ListenerTlsModeType](./literals.md#listenertlsmodetype)
+- [MeshStatusCodeType](./literals.md#meshstatuscodetype)
+- [PortProtocolType](./literals.md#portprotocoltype)
+- [RouteStatusCodeType](./literals.md#routestatuscodetype)
+- [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype)
+- [VirtualGatewayListenerTlsModeType](./literals.md#virtualgatewaylistenertlsmodetype)
+- [VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype)
+- [VirtualGatewayStatusCodeType](./literals.md#virtualgatewaystatuscodetype)
+- [VirtualNodeStatusCodeType](./literals.md#virtualnodestatuscodetype)
+- [VirtualRouterStatusCodeType](./literals.md#virtualrouterstatuscodetype)
+- [VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype)
 
 ## Typed dictionaries
 

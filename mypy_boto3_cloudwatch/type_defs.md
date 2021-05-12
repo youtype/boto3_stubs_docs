@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatch](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
 [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
@@ -68,9 +68,9 @@ from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef
 Optional fields:
 
 - `AlarmName`: `str`
-- `AlarmType`: [AlarmType](./literals.md#alarmtype)
+- `AlarmType`: [AlarmTypeType](./literals.md#alarmtypetype)
 - `Timestamp`: `datetime`
-- `HistoryItemType`: [HistoryItemType](./literals.md#historyitemtype)
+- `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `HistorySummary`: `str`
 - `HistoryData`: `str`
 
@@ -100,7 +100,7 @@ Optional fields:
 - `Configuration`:
   [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
 - `StateValue`:
-  [AnomalyDetectorStateValue](./literals.md#anomalydetectorstatevalue)
+  [AnomalyDetectorStateValueType](./literals.md#anomalydetectorstatevaluetype)
 
 ## CompositeAlarmTypeDef
 
@@ -122,7 +122,7 @@ Optional fields:
 - `StateReason`: `str`
 - `StateReasonData`: `str`
 - `StateUpdatedTimestamp`: `datetime`
-- `StateValue`: [StateValue](./literals.md#statevalue)
+- `StateValue`: [StateValueType](./literals.md#statevaluetype)
 
 ## DashboardEntryTypeDef
 
@@ -162,7 +162,7 @@ Optional fields:
 - `Sum`: `float`
 - `Minimum`: `float`
 - `Maximum`: `float`
-- `Unit`: [StandardUnit](./literals.md#standardunit)
+- `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `ExtendedStatistics`: `Dict`\[`str`, `float`\]
 
 ## DeleteInsightRulesOutputTypeDef
@@ -381,7 +381,7 @@ Required fields:
 - `CreationDate`: `datetime`
 - `LastUpdateDate`: `datetime`
 - `OutputFormat`:
-  [MetricStreamOutputFormat](./literals.md#metricstreamoutputformat)
+  [MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -544,21 +544,22 @@ Optional fields:
 - `OKActions`: `List`\[`str`\]
 - `AlarmActions`: `List`\[`str`\]
 - `InsufficientDataActions`: `List`\[`str`\]
-- `StateValue`: [StateValue](./literals.md#statevalue)
+- `StateValue`: [StateValueType](./literals.md#statevaluetype)
 - `StateReason`: `str`
 - `StateReasonData`: `str`
 - `StateUpdatedTimestamp`: `datetime`
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: [Statistic](./literals.md#statistic)
+- `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
 - `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
-- `Unit`: [StandardUnit](./literals.md#standardunit)
+- `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `EvaluationPeriods`: `int`
 - `DatapointsToAlarm`: `int`
 - `Threshold`: `float`
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
 - `Metrics`:
@@ -595,7 +596,7 @@ Optional fields:
 - `Label`: `str`
 - `Timestamps`: `List`\[`datetime`\]
 - `Values`: `List`\[`float`\]
-- `StatusCode`: [StatusCode](./literals.md#statuscode)
+- `StatusCode`: [StatusCodeType](./literals.md#statuscodetype)
 - `Messages`: `List`\[[MessageDataTypeDef](./type_defs.md#messagedatatypedef)\]
 
 ## MetricDatumTypeDef
@@ -616,7 +617,7 @@ Optional fields:
 - `StatisticValues`: [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
 - `Values`: `List`\[`float`\]
 - `Counts`: `List`\[`float`\]
-- `Unit`: [StandardUnit](./literals.md#standardunit)
+- `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `StorageResolution`: `int`
 
 ## MetricStatTypeDef
@@ -633,7 +634,7 @@ Required fields:
 
 Optional fields:
 
-- `Unit`: [StandardUnit](./literals.md#standardunit)
+- `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 ## MetricStreamEntryTypeDef
 
@@ -650,7 +651,7 @@ Optional fields:
 - `FirehoseArn`: `str`
 - `State`: `str`
 - `OutputFormat`:
-  [MetricStreamOutputFormat](./literals.md#metricstreamoutputformat)
+  [MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype)
 
 ## MetricStreamFilterTypeDef
 

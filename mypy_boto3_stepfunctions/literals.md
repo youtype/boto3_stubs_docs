@@ -3,26 +3,26 @@
 > [Index](..) > [SFN](.) > Literals
 
 Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
 [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Literals for boto3 SFN module](#literals-for-boto3-sfn-module)
-  - [ExecutionStatus](#executionstatus)
+  - [ExecutionStatusType](#executionstatustype)
   - [GetExecutionHistoryPaginatorName](#getexecutionhistorypaginatorname)
-  - [HistoryEventType](#historyeventtype)
+  - [HistoryEventTypeType](#historyeventtypetype)
   - [ListActivitiesPaginatorName](#listactivitiespaginatorname)
   - [ListExecutionsPaginatorName](#listexecutionspaginatorname)
   - [ListStateMachinesPaginatorName](#liststatemachinespaginatorname)
-  - [LogLevel](#loglevel)
-  - [StateMachineStatus](#statemachinestatus)
-  - [StateMachineType](#statemachinetype)
-  - [SyncExecutionStatus](#syncexecutionstatus)
+  - [LogLevelType](#logleveltype)
+  - [StateMachineStatusType](#statemachinestatustype)
+  - [StateMachineTypeType](#statemachinetypetype)
+  - [SyncExecutionStatusType](#syncexecutionstatustype)
 
-## ExecutionStatus
+## ExecutionStatusType
 
 ```python
-from mypy_boto3_stepfunctions.literals import ExecutionStatus
+from mypy_boto3_stepfunctions.literals import ExecutionStatusType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 
 - `get_execution_history`
 
-## HistoryEventType
+## HistoryEventTypeType
 
 ```python
-from mypy_boto3_stepfunctions.literals import HistoryEventType
+from mypy_boto3_stepfunctions.literals import HistoryEventTypeType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 
 - `list_state_machines`
 
-## LogLevel
+## LogLevelType
 
 ```python
-from mypy_boto3_stepfunctions.literals import LogLevel
+from mypy_boto3_stepfunctions.literals import LogLevelType
 ```
 
 Values:
@@ -150,10 +150,10 @@ Values:
 - `FATAL`
 - `OFF`
 
-## StateMachineStatus
+## StateMachineStatusType
 
 ```python
-from mypy_boto3_stepfunctions.literals import StateMachineStatus
+from mypy_boto3_stepfunctions.literals import StateMachineStatusType
 ```
 
 Values:
@@ -161,10 +161,10 @@ Values:
 - `ACTIVE`
 - `DELETING`
 
-## StateMachineType
+## StateMachineTypeType
 
 ```python
-from mypy_boto3_stepfunctions.literals import StateMachineType
+from mypy_boto3_stepfunctions.literals import StateMachineTypeType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 - `EXPRESS`
 - `STANDARD`
 
-## SyncExecutionStatus
+## SyncExecutionStatusType
 
 ```python
-from mypy_boto3_stepfunctions.literals import SyncExecutionStatus
+from mypy_boto3_stepfunctions.literals import SyncExecutionStatusType
 ```
 
 Values:

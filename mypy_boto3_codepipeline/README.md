@@ -3,7 +3,7 @@
 > [Index](..) > CodePipeline
 
 Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
 [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
@@ -30,93 +30,93 @@ Can be used directly:
 from mypy_boto3_codepipeline.client import CodePipelineClient
 ```
 
-CodePipelineClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [acknowledge_job](./client.md#acknowledge-job)
-- [acknowledge_third_party_job](./client.md#acknowledge-third-party-job)
-- [can_paginate](./client.md#can-paginate)
-- [create_custom_action_type](./client.md#create-custom-action-type)
-- [create_pipeline](./client.md#create-pipeline)
-- [delete_custom_action_type](./client.md#delete-custom-action-type)
-- [delete_pipeline](./client.md#delete-pipeline)
-- [delete_webhook](./client.md#delete-webhook)
-- [deregister_webhook_with_third_party](./client.md#deregister-webhook-with-third-party)
-- [disable_stage_transition](./client.md#disable-stage-transition)
-- [enable_stage_transition](./client.md#enable-stage-transition)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_action_type](./client.md#get-action-type)
-- [get_job_details](./client.md#get-job-details)
-- [get_paginator](./client.md#get-paginator)
-- [get_pipeline](./client.md#get-pipeline)
-- [get_pipeline_execution](./client.md#get-pipeline-execution)
-- [get_pipeline_state](./client.md#get-pipeline-state)
-- [get_third_party_job_details](./client.md#get-third-party-job-details)
-- [list_action_executions](./client.md#list-action-executions)
-- [list_action_types](./client.md#list-action-types)
-- [list_pipeline_executions](./client.md#list-pipeline-executions)
-- [list_pipelines](./client.md#list-pipelines)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_webhooks](./client.md#list-webhooks)
-- [poll_for_jobs](./client.md#poll-for-jobs)
-- [poll_for_third_party_jobs](./client.md#poll-for-third-party-jobs)
-- [put_action_revision](./client.md#put-action-revision)
-- [put_approval_result](./client.md#put-approval-result)
-- [put_job_failure_result](./client.md#put-job-failure-result)
-- [put_job_success_result](./client.md#put-job-success-result)
-- [put_third_party_job_failure_result](./client.md#put-third-party-job-failure-result)
-- [put_third_party_job_success_result](./client.md#put-third-party-job-success-result)
-- [put_webhook](./client.md#put-webhook)
-- [register_webhook_with_third_party](./client.md#register-webhook-with-third-party)
-- [retry_stage_execution](./client.md#retry-stage-execution)
-- [start_pipeline_execution](./client.md#start-pipeline-execution)
-- [stop_pipeline_execution](./client.md#stop-pipeline-execution)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_action_type](./client.md#update-action-type)
-- [update_pipeline](./client.md#update-pipeline)
+- [acknowledge_job](./client.md#acknowledge_job)
+- [acknowledge_third_party_job](./client.md#acknowledge_third_party_job)
+- [can_paginate](./client.md#can_paginate)
+- [create_custom_action_type](./client.md#create_custom_action_type)
+- [create_pipeline](./client.md#create_pipeline)
+- [delete_custom_action_type](./client.md#delete_custom_action_type)
+- [delete_pipeline](./client.md#delete_pipeline)
+- [delete_webhook](./client.md#delete_webhook)
+- [deregister_webhook_with_third_party](./client.md#deregister_webhook_with_third_party)
+- [disable_stage_transition](./client.md#disable_stage_transition)
+- [enable_stage_transition](./client.md#enable_stage_transition)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_action_type](./client.md#get_action_type)
+- [get_job_details](./client.md#get_job_details)
+- [get_paginator](./client.md#get_paginator)
+- [get_pipeline](./client.md#get_pipeline)
+- [get_pipeline_execution](./client.md#get_pipeline_execution)
+- [get_pipeline_state](./client.md#get_pipeline_state)
+- [get_third_party_job_details](./client.md#get_third_party_job_details)
+- [list_action_executions](./client.md#list_action_executions)
+- [list_action_types](./client.md#list_action_types)
+- [list_pipeline_executions](./client.md#list_pipeline_executions)
+- [list_pipelines](./client.md#list_pipelines)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_webhooks](./client.md#list_webhooks)
+- [poll_for_jobs](./client.md#poll_for_jobs)
+- [poll_for_third_party_jobs](./client.md#poll_for_third_party_jobs)
+- [put_action_revision](./client.md#put_action_revision)
+- [put_approval_result](./client.md#put_approval_result)
+- [put_job_failure_result](./client.md#put_job_failure_result)
+- [put_job_success_result](./client.md#put_job_success_result)
+- [put_third_party_job_failure_result](./client.md#put_third_party_job_failure_result)
+- [put_third_party_job_success_result](./client.md#put_third_party_job_success_result)
+- [put_webhook](./client.md#put_webhook)
+- [register_webhook_with_third_party](./client.md#register_webhook_with_third_party)
+- [retry_stage_execution](./client.md#retry_stage_execution)
+- [start_pipeline_execution](./client.md#start_pipeline_execution)
+- [stop_pipeline_execution](./client.md#stop_pipeline_execution)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_action_type](./client.md#update_action_type)
+- [update_pipeline](./client.md#update_pipeline)
 
 ### Exceptions
 
-- [ActionNotFoundException](./client.md#actionnotfoundexception)
-- [ActionTypeAlreadyExistsException](./client.md#actiontypealreadyexistsexception)
-- [ActionTypeNotFoundException](./client.md#actiontypenotfoundexception)
-- [ApprovalAlreadyCompletedException](./client.md#approvalalreadycompletedexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [ConflictException](./client.md#conflictexception)
-- [DuplicatedStopRequestException](./client.md#duplicatedstoprequestexception)
-- [InvalidActionDeclarationException](./client.md#invalidactiondeclarationexception)
-- [InvalidApprovalTokenException](./client.md#invalidapprovaltokenexception)
-- [InvalidArnException](./client.md#invalidarnexception)
-- [InvalidBlockerDeclarationException](./client.md#invalidblockerdeclarationexception)
-- [InvalidClientTokenException](./client.md#invalidclienttokenexception)
-- [InvalidJobException](./client.md#invalidjobexception)
-- [InvalidJobStateException](./client.md#invalidjobstateexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidNonceException](./client.md#invalidnonceexception)
-- [InvalidStageDeclarationException](./client.md#invalidstagedeclarationexception)
-- [InvalidStructureException](./client.md#invalidstructureexception)
-- [InvalidTagsException](./client.md#invalidtagsexception)
-- [InvalidWebhookAuthenticationParametersException](./client.md#invalidwebhookauthenticationparametersexception)
-- [InvalidWebhookFilterPatternException](./client.md#invalidwebhookfilterpatternexception)
-- [JobNotFoundException](./client.md#jobnotfoundexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotLatestPipelineExecutionException](./client.md#notlatestpipelineexecutionexception)
-- [OutputVariablesSizeExceededException](./client.md#outputvariablessizeexceededexception)
-- [PipelineExecutionNotFoundException](./client.md#pipelineexecutionnotfoundexception)
-- [PipelineExecutionNotStoppableException](./client.md#pipelineexecutionnotstoppableexception)
-- [PipelineNameInUseException](./client.md#pipelinenameinuseexception)
-- [PipelineNotFoundException](./client.md#pipelinenotfoundexception)
-- [PipelineVersionNotFoundException](./client.md#pipelineversionnotfoundexception)
-- [RequestFailedException](./client.md#requestfailedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [StageNotFoundException](./client.md#stagenotfoundexception)
-- [StageNotRetryableException](./client.md#stagenotretryableexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [ValidationException](./client.md#validationexception)
-- [WebhookNotFoundException](./client.md#webhooknotfoundexception)
+CodePipelineClient [exceptions](./client.md#exceptions)
+
+- ActionNotFoundException
+- ActionTypeAlreadyExistsException
+- ActionTypeNotFoundException
+- ApprovalAlreadyCompletedException
+- ClientError
+- ConcurrentModificationException
+- ConflictException
+- DuplicatedStopRequestException
+- InvalidActionDeclarationException
+- InvalidApprovalTokenException
+- InvalidArnException
+- InvalidBlockerDeclarationException
+- InvalidClientTokenException
+- InvalidJobException
+- InvalidJobStateException
+- InvalidNextTokenException
+- InvalidNonceException
+- InvalidStageDeclarationException
+- InvalidStructureException
+- InvalidTagsException
+- InvalidWebhookAuthenticationParametersException
+- InvalidWebhookFilterPatternException
+- JobNotFoundException
+- LimitExceededException
+- NotLatestPipelineExecutionException
+- OutputVariablesSizeExceededException
+- PipelineExecutionNotFoundException
+- PipelineExecutionNotStoppableException
+- PipelineNameInUseException
+- PipelineNotFoundException
+- PipelineVersionNotFoundException
+- RequestFailedException
+- ResourceNotFoundException
+- StageNotFoundException
+- StageNotRetryableException
+- TooManyTagsException
+- ValidationException
+- WebhookNotFoundException
 
 ## Paginators
 
@@ -143,33 +143,33 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codepipeline.literals import ActionCategory, ...
+from mypy_boto3_codepipeline.literals import ActionCategoryType, ...
 ```
 
-- [ActionCategory](./literals.md#actioncategory)
-- [ActionConfigurationPropertyType](./literals.md#actionconfigurationpropertytype)
-- [ActionExecutionStatus](./literals.md#actionexecutionstatus)
-- [ActionOwner](./literals.md#actionowner)
-- [ApprovalStatus](./literals.md#approvalstatus)
-- [ArtifactLocationType](./literals.md#artifactlocationtype)
-- [ArtifactStoreType](./literals.md#artifactstoretype)
-- [BlockerType](./literals.md#blockertype)
-- [EncryptionKeyType](./literals.md#encryptionkeytype)
-- [ExecutorType](./literals.md#executortype)
-- [FailureType](./literals.md#failuretype)
-- [JobStatus](./literals.md#jobstatus)
+- [ActionCategoryType](./literals.md#actioncategorytype)
+- [ActionConfigurationPropertyTypeType](./literals.md#actionconfigurationpropertytypetype)
+- [ActionExecutionStatusType](./literals.md#actionexecutionstatustype)
+- [ActionOwnerType](./literals.md#actionownertype)
+- [ApprovalStatusType](./literals.md#approvalstatustype)
+- [ArtifactLocationTypeType](./literals.md#artifactlocationtypetype)
+- [ArtifactStoreTypeType](./literals.md#artifactstoretypetype)
+- [BlockerTypeType](./literals.md#blockertypetype)
+- [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype)
+- [ExecutorTypeType](./literals.md#executortypetype)
+- [FailureTypeType](./literals.md#failuretypetype)
+- [JobStatusType](./literals.md#jobstatustype)
 - [ListActionExecutionsPaginatorName](./literals.md#listactionexecutionspaginatorname)
 - [ListActionTypesPaginatorName](./literals.md#listactiontypespaginatorname)
 - [ListPipelineExecutionsPaginatorName](./literals.md#listpipelineexecutionspaginatorname)
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
 - [ListWebhooksPaginatorName](./literals.md#listwebhookspaginatorname)
-- [PipelineExecutionStatus](./literals.md#pipelineexecutionstatus)
-- [StageExecutionStatus](./literals.md#stageexecutionstatus)
-- [StageRetryMode](./literals.md#stageretrymode)
-- [StageTransitionType](./literals.md#stagetransitiontype)
-- [TriggerType](./literals.md#triggertype)
-- [WebhookAuthenticationType](./literals.md#webhookauthenticationtype)
+- [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
+- [StageExecutionStatusType](./literals.md#stageexecutionstatustype)
+- [StageRetryModeType](./literals.md#stageretrymodetype)
+- [StageTransitionTypeType](./literals.md#stagetransitiontypetype)
+- [TriggerTypeType](./literals.md#triggertypetype)
+- [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
 
 ## Typed dictionaries
 

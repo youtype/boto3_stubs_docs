@@ -3,7 +3,7 @@
 > [Index](..) > EC2InstanceConnect
 
 Auto-generated documentation for
-[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
+[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
 [mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
@@ -28,27 +28,27 @@ Can be used directly:
 from mypy_boto3_ec2_instance_connect.client import EC2InstanceConnectClient
 ```
 
-EC2InstanceConnectClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [send_serial_console_ssh_public_key](./client.md#send-serial-console-ssh-public-key)
-- [send_ssh_public_key](./client.md#send-ssh-public-key)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [send_serial_console_ssh_public_key](./client.md#send_serial_console_ssh_public_key)
+- [send_ssh_public_key](./client.md#send_ssh_public_key)
 
 ### Exceptions
 
-- [AuthException](./client.md#authexception)
-- [ClientError](./client.md#clienterror)
-- [EC2InstanceNotFoundException](./client.md#ec2instancenotfoundexception)
-- [EC2InstanceTypeInvalidException](./client.md#ec2instancetypeinvalidexception)
-- [InvalidArgsException](./client.md#invalidargsexception)
-- [SerialConsoleAccessDisabledException](./client.md#serialconsoleaccessdisabledexception)
-- [SerialConsoleSessionLimitExceededException](./client.md#serialconsolesessionlimitexceededexception)
-- [SerialConsoleSessionUnavailableException](./client.md#serialconsolesessionunavailableexception)
-- [ServiceException](./client.md#serviceexception)
-- [ThrottlingException](./client.md#throttlingexception)
+EC2InstanceConnectClient [exceptions](./client.md#exceptions)
+
+- AuthException
+- ClientError
+- EC2InstanceNotFoundException
+- EC2InstanceTypeInvalidException
+- InvalidArgsException
+- SerialConsoleAccessDisabledException
+- SerialConsoleSessionLimitExceededException
+- SerialConsoleSessionUnavailableException
+- ServiceException
+- ThrottlingException
 
 ## Typed dictionaries
 

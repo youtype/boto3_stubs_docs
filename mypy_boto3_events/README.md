@@ -3,7 +3,7 @@
 > [Index](..) > EventBridge
 
 Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/events.html#EventBridge)
 type annotations stubs module
 [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
@@ -30,79 +30,79 @@ Can be used directly:
 from mypy_boto3_events.client import EventBridgeClient
 ```
 
-EventBridgeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [activate_event_source](./client.md#activate-event-source)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_replay](./client.md#cancel-replay)
-- [create_api_destination](./client.md#create-api-destination)
-- [create_archive](./client.md#create-archive)
-- [create_connection](./client.md#create-connection)
-- [create_event_bus](./client.md#create-event-bus)
-- [create_partner_event_source](./client.md#create-partner-event-source)
-- [deactivate_event_source](./client.md#deactivate-event-source)
-- [deauthorize_connection](./client.md#deauthorize-connection)
-- [delete_api_destination](./client.md#delete-api-destination)
-- [delete_archive](./client.md#delete-archive)
-- [delete_connection](./client.md#delete-connection)
-- [delete_event_bus](./client.md#delete-event-bus)
-- [delete_partner_event_source](./client.md#delete-partner-event-source)
-- [delete_rule](./client.md#delete-rule)
-- [describe_api_destination](./client.md#describe-api-destination)
-- [describe_archive](./client.md#describe-archive)
-- [describe_connection](./client.md#describe-connection)
-- [describe_event_bus](./client.md#describe-event-bus)
-- [describe_event_source](./client.md#describe-event-source)
-- [describe_partner_event_source](./client.md#describe-partner-event-source)
-- [describe_replay](./client.md#describe-replay)
-- [describe_rule](./client.md#describe-rule)
-- [disable_rule](./client.md#disable-rule)
-- [enable_rule](./client.md#enable-rule)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_api_destinations](./client.md#list-api-destinations)
-- [list_archives](./client.md#list-archives)
-- [list_connections](./client.md#list-connections)
-- [list_event_buses](./client.md#list-event-buses)
-- [list_event_sources](./client.md#list-event-sources)
-- [list_partner_event_source_accounts](./client.md#list-partner-event-source-accounts)
-- [list_partner_event_sources](./client.md#list-partner-event-sources)
-- [list_replays](./client.md#list-replays)
-- [list_rule_names_by_target](./client.md#list-rule-names-by-target)
-- [list_rules](./client.md#list-rules)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_targets_by_rule](./client.md#list-targets-by-rule)
-- [put_events](./client.md#put-events)
-- [put_partner_events](./client.md#put-partner-events)
-- [put_permission](./client.md#put-permission)
-- [put_rule](./client.md#put-rule)
-- [put_targets](./client.md#put-targets)
-- [remove_permission](./client.md#remove-permission)
-- [remove_targets](./client.md#remove-targets)
-- [start_replay](./client.md#start-replay)
-- [tag_resource](./client.md#tag-resource)
-- [test_event_pattern](./client.md#test-event-pattern)
-- [untag_resource](./client.md#untag-resource)
-- [update_api_destination](./client.md#update-api-destination)
-- [update_archive](./client.md#update-archive)
-- [update_connection](./client.md#update-connection)
+- [activate_event_source](./client.md#activate_event_source)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_replay](./client.md#cancel_replay)
+- [create_api_destination](./client.md#create_api_destination)
+- [create_archive](./client.md#create_archive)
+- [create_connection](./client.md#create_connection)
+- [create_event_bus](./client.md#create_event_bus)
+- [create_partner_event_source](./client.md#create_partner_event_source)
+- [deactivate_event_source](./client.md#deactivate_event_source)
+- [deauthorize_connection](./client.md#deauthorize_connection)
+- [delete_api_destination](./client.md#delete_api_destination)
+- [delete_archive](./client.md#delete_archive)
+- [delete_connection](./client.md#delete_connection)
+- [delete_event_bus](./client.md#delete_event_bus)
+- [delete_partner_event_source](./client.md#delete_partner_event_source)
+- [delete_rule](./client.md#delete_rule)
+- [describe_api_destination](./client.md#describe_api_destination)
+- [describe_archive](./client.md#describe_archive)
+- [describe_connection](./client.md#describe_connection)
+- [describe_event_bus](./client.md#describe_event_bus)
+- [describe_event_source](./client.md#describe_event_source)
+- [describe_partner_event_source](./client.md#describe_partner_event_source)
+- [describe_replay](./client.md#describe_replay)
+- [describe_rule](./client.md#describe_rule)
+- [disable_rule](./client.md#disable_rule)
+- [enable_rule](./client.md#enable_rule)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_api_destinations](./client.md#list_api_destinations)
+- [list_archives](./client.md#list_archives)
+- [list_connections](./client.md#list_connections)
+- [list_event_buses](./client.md#list_event_buses)
+- [list_event_sources](./client.md#list_event_sources)
+- [list_partner_event_source_accounts](./client.md#list_partner_event_source_accounts)
+- [list_partner_event_sources](./client.md#list_partner_event_sources)
+- [list_replays](./client.md#list_replays)
+- [list_rule_names_by_target](./client.md#list_rule_names_by_target)
+- [list_rules](./client.md#list_rules)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_targets_by_rule](./client.md#list_targets_by_rule)
+- [put_events](./client.md#put_events)
+- [put_partner_events](./client.md#put_partner_events)
+- [put_permission](./client.md#put_permission)
+- [put_rule](./client.md#put_rule)
+- [put_targets](./client.md#put_targets)
+- [remove_permission](./client.md#remove_permission)
+- [remove_targets](./client.md#remove_targets)
+- [start_replay](./client.md#start_replay)
+- [tag_resource](./client.md#tag_resource)
+- [test_event_pattern](./client.md#test_event_pattern)
+- [untag_resource](./client.md#untag_resource)
+- [update_api_destination](./client.md#update_api_destination)
+- [update_archive](./client.md#update_archive)
+- [update_connection](./client.md#update_connection)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [IllegalStatusException](./client.md#illegalstatusexception)
-- [InternalException](./client.md#internalexception)
-- [InvalidEventPatternException](./client.md#invalideventpatternexception)
-- [InvalidStateException](./client.md#invalidstateexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ManagedRuleException](./client.md#managedruleexception)
-- [OperationDisabledException](./client.md#operationdisabledexception)
-- [PolicyLengthExceededException](./client.md#policylengthexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+EventBridgeClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- IllegalStatusException
+- InternalException
+- InvalidEventPatternException
+- InvalidStateException
+- LimitExceededException
+- ManagedRuleException
+- OperationDisabledException
+- PolicyLengthExceededException
+- ResourceAlreadyExistsException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -126,23 +126,23 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_events.literals import ApiDestinationHttpMethod, ...
+from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
 ```
 
-- [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod)
-- [ApiDestinationState](./literals.md#apidestinationstate)
-- [ArchiveState](./literals.md#archivestate)
-- [AssignPublicIp](./literals.md#assignpublicip)
-- [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
-- [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
-- [ConnectionState](./literals.md#connectionstate)
-- [EventSourceState](./literals.md#eventsourcestate)
-- [LaunchType](./literals.md#launchtype)
+- [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
+- [ApiDestinationStateType](./literals.md#apidestinationstatetype)
+- [ArchiveStateType](./literals.md#archivestatetype)
+- [AssignPublicIpType](./literals.md#assignpubliciptype)
+- [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
+- [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
+- [ConnectionStateType](./literals.md#connectionstatetype)
+- [EventSourceStateType](./literals.md#eventsourcestatetype)
+- [LaunchTypeType](./literals.md#launchtypetype)
 - [ListRuleNamesByTargetPaginatorName](./literals.md#listrulenamesbytargetpaginatorname)
 - [ListRulesPaginatorName](./literals.md#listrulespaginatorname)
 - [ListTargetsByRulePaginatorName](./literals.md#listtargetsbyrulepaginatorname)
-- [ReplayState](./literals.md#replaystate)
-- [RuleState](./literals.md#rulestate)
+- [ReplayStateType](./literals.md#replaystatetype)
+- [RuleStateType](./literals.md#rulestatetype)
 
 ## Typed dictionaries
 

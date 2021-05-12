@@ -3,7 +3,7 @@
 > [Index](..) > [AugmentedAIRuntime](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
@@ -27,7 +27,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopResponse
 Required fields:
 
 - `CreationTime`: `datetime`
-- `HumanLoopStatus`: [HumanLoopStatus](./literals.md#humanloopstatus)
+- `HumanLoopStatus`: [HumanLoopStatusType](./literals.md#humanloopstatustype)
 - `HumanLoopName`: `str`
 - `HumanLoopArn`: `str`
 - `FlowDefinitionArn`: `str`
@@ -48,7 +48,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopDataAttributesTy
 Required fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifier](./literals.md#contentclassifier)\]
+  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## HumanLoopInputTypeDef
 
@@ -81,7 +81,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopSummaryTypeDef
 Optional fields:
 
 - `HumanLoopName`: `str`
-- `HumanLoopStatus`: [HumanLoopStatus](./literals.md#humanloopstatus)
+- `HumanLoopStatus`: [HumanLoopStatusType](./literals.md#humanloopstatustype)
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
 - `FlowDefinitionArn`: `str`

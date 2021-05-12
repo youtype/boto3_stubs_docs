@@ -3,7 +3,7 @@
 > [Index](..) > [CustomerProfiles](.) > CustomerProfilesClient
 
 Auto-generated documentation for
-[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
@@ -58,7 +58,7 @@ def get_customer-profiles_client() -> CustomerProfilesClient:
 ```
 
 Boto3 documentation:
-[CustomerProfiles.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client)
+[CustomerProfiles.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client)
 
 ## Exceptions
 
@@ -89,7 +89,7 @@ Type annotations for `boto3.client("customer-profiles").add_profile_key`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.add_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key)
+[CustomerProfiles.Client.add_profile_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").can_paginate` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.can_paginate)
+[CustomerProfiles.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.can_paginate)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Returns `bool`.
 Type annotations for `boto3.client("customer-profiles").create_domain` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_domain)
+[CustomerProfiles.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.create_domain)
 
 Arguments:
 
@@ -138,20 +138,20 @@ Returns
 Type annotations for `boto3.client("customer-profiles").create_profile` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_profile)
+[CustomerProfiles.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.create_profile)
 
 Arguments:
 
 - `DomainName`: `str` *(required)*
 - `AccountNumber`: `str`
 - `AdditionalInformation`: `str`
-- `PartyType`: [PartyType](./literals.md#partytype)
+- `PartyType`: [PartyTypeType](./literals.md#partytypetype)
 - `BusinessName`: `str`
 - `FirstName`: `str`
 - `MiddleName`: `str`
 - `LastName`: `str`
 - `BirthDate`: `str`
-- `Gender`: [Gender](./literals.md#gender)
+- `Gender`: [GenderType](./literals.md#gendertype)
 - `PhoneNumber`: `str`
 - `MobilePhoneNumber`: `str`
 - `HomePhoneNumber`: `str`
@@ -173,7 +173,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").delete_domain` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_domain)
+[CustomerProfiles.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_domain)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Type annotations for `boto3.client("customer-profiles").delete_integration`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_integration)
+[CustomerProfiles.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_integration)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").delete_profile` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile)
+[CustomerProfiles.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile)
 
 Arguments:
 
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("customer-profiles").delete_profile_key`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.delete_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_key)
+[CustomerProfiles.Client.delete_profile_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_key)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("customer-profiles").delete_profile_object`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.delete_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object)
+[CustomerProfiles.Client.delete_profile_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Type annotations for
 `boto3.client("customer-profiles").delete_profile_object_type` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.delete_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object_type)
+[CustomerProfiles.Client.delete_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object_type)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("customer-profiles").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.generate_presigned_url)
+[CustomerProfiles.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.generate_presigned_url)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns `str`.
 Type annotations for `boto3.client("customer-profiles").get_domain` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_domain)
+[CustomerProfiles.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.get_domain)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("customer-profiles").get_integration`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_integration)
+[CustomerProfiles.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.get_integration)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").get_matches` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.get_matches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_matches)
+[CustomerProfiles.Client.get_matches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.get_matches)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Type annotations for
 `boto3.client("customer-profiles").get_profile_object_type` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.get_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type)
+[CustomerProfiles.Client.get_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Type annotations for
 `boto3.client("customer-profiles").get_profile_object_type_template` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.get_profile_object_type_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type_template)
+[CustomerProfiles.Client.get_profile_object_type_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type_template)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Type annotations for
 `boto3.client("customer-profiles").list_account_integrations` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_account_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_account_integrations)
+[CustomerProfiles.Client.list_account_integrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_account_integrations)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").list_domains` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_domains)
+[CustomerProfiles.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_domains)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("customer-profiles").list_integrations`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_integrations)
+[CustomerProfiles.Client.list_integrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_integrations)
 
 Arguments:
 
@@ -412,7 +412,7 @@ Type annotations for
 `boto3.client("customer-profiles").list_profile_object_type_templates` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_profile_object_type_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_type_templates)
+[CustomerProfiles.Client.list_profile_object_type_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_type_templates)
 
 Arguments:
 
@@ -428,7 +428,7 @@ Type annotations for
 `boto3.client("customer-profiles").list_profile_object_types` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_profile_object_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_types)
+[CustomerProfiles.Client.list_profile_object_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_types)
 
 Arguments:
 
@@ -445,7 +445,7 @@ Type annotations for `boto3.client("customer-profiles").list_profile_objects`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_profile_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_objects)
+[CustomerProfiles.Client.list_profile_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_objects)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("customer-profiles").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_tags_for_resource)
+[CustomerProfiles.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").merge_profiles` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.merge_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.merge_profiles)
+[CustomerProfiles.Client.merge_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.merge_profiles)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("customer-profiles").put_integration`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_integration)
+[CustomerProfiles.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.put_integration)
 
 Arguments:
 
@@ -505,7 +505,8 @@ Arguments:
 - `ObjectTypeName`: `str` *(required)*
 - `Uri`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `FlowDefinition`: [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
+- `FlowDefinition`:
+  [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
 
 Returns
 [PutIntegrationResponseTypeDef](./type_defs.md#putintegrationresponsetypedef).
@@ -516,7 +517,7 @@ Type annotations for `boto3.client("customer-profiles").put_profile_object`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.put_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object)
+[CustomerProfiles.Client.put_profile_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object)
 
 Arguments:
 
@@ -533,7 +534,7 @@ Type annotations for
 `boto3.client("customer-profiles").put_profile_object_type` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.put_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object_type)
+[CustomerProfiles.Client.put_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object_type)
 
 Arguments:
 
@@ -559,7 +560,7 @@ Type annotations for `boto3.client("customer-profiles").search_profiles`
 method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles)
+[CustomerProfiles.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles)
 
 Arguments:
 
@@ -577,7 +578,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").tag_resource` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.tag_resource)
+[CustomerProfiles.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.tag_resource)
 
 Arguments:
 
@@ -591,7 +592,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("customer-profiles").untag_resource` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.untag_resource)
+[CustomerProfiles.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.untag_resource)
 
 Arguments:
 
@@ -605,7 +606,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("customer-profiles").update_domain` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_domain)
+[CustomerProfiles.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.update_domain)
 
 Arguments:
 
@@ -624,7 +625,7 @@ Returns
 Type annotations for `boto3.client("customer-profiles").update_profile` method.
 
 Boto3 documentation:
-[CustomerProfiles.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_profile)
+[CustomerProfiles.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles.Client.update_profile)
 
 Arguments:
 
@@ -632,13 +633,13 @@ Arguments:
 - `ProfileId`: `str` *(required)*
 - `AdditionalInformation`: `str`
 - `AccountNumber`: `str`
-- `PartyType`: [PartyType](./literals.md#partytype)
+- `PartyType`: [PartyTypeType](./literals.md#partytypetype)
 - `BusinessName`: `str`
 - `FirstName`: `str`
 - `MiddleName`: `str`
 - `LastName`: `str`
 - `BirthDate`: `str`
-- `Gender`: [Gender](./literals.md#gender)
+- `Gender`: [GenderType](./literals.md#gendertype)
 - `PhoneNumber`: `str`
 - `MobilePhoneNumber`: `str`
 - `HomePhoneNumber`: `str`
@@ -647,7 +648,8 @@ Arguments:
 - `PersonalEmailAddress`: `str`
 - `BusinessEmailAddress`: `str`
 - `Address`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `ShippingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
+- `ShippingAddress`:
+  [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `MailingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `BillingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `Attributes`: `Dict`\[`str`, `str`\]

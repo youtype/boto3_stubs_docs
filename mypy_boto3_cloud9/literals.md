@@ -3,25 +3,25 @@
 > [Index](..) > [Cloud9](.) > Literals
 
 Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
 [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Literals for boto3 Cloud9 module](#literals-for-boto3-cloud9-module)
-  - [ConnectionType](#connectiontype)
+  - [ConnectionTypeType](#connectiontypetype)
   - [DescribeEnvironmentMembershipsPaginatorName](#describeenvironmentmembershipspaginatorname)
-  - [EnvironmentLifecycleStatus](#environmentlifecyclestatus)
-  - [EnvironmentStatus](#environmentstatus)
-  - [EnvironmentType](#environmenttype)
+  - [EnvironmentLifecycleStatusType](#environmentlifecyclestatustype)
+  - [EnvironmentStatusType](#environmentstatustype)
+  - [EnvironmentTypeType](#environmenttypetype)
   - [ListEnvironmentsPaginatorName](#listenvironmentspaginatorname)
-  - [ManagedCredentialsStatus](#managedcredentialsstatus)
-  - [MemberPermissions](#memberpermissions)
-  - [Permissions](#permissions)
+  - [ManagedCredentialsStatusType](#managedcredentialsstatustype)
+  - [MemberPermissionsType](#memberpermissionstype)
+  - [PermissionsType](#permissionstype)
 
-## ConnectionType
+## ConnectionTypeType
 
 ```python
-from mypy_boto3_cloud9.literals import ConnectionType
+from mypy_boto3_cloud9.literals import ConnectionTypeType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 
 - `describe_environment_memberships`
 
-## EnvironmentLifecycleStatus
+## EnvironmentLifecycleStatusType
 
 ```python
-from mypy_boto3_cloud9.literals import EnvironmentLifecycleStatus
+from mypy_boto3_cloud9.literals import EnvironmentLifecycleStatusType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
-## EnvironmentStatus
+## EnvironmentStatusType
 
 ```python
-from mypy_boto3_cloud9.literals import EnvironmentStatus
+from mypy_boto3_cloud9.literals import EnvironmentStatusType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `stopped`
 - `stopping`
 
-## EnvironmentType
+## EnvironmentTypeType
 
 ```python
-from mypy_boto3_cloud9.literals import EnvironmentType
+from mypy_boto3_cloud9.literals import EnvironmentTypeType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 
 - `list_environments`
 
-## ManagedCredentialsStatus
+## ManagedCredentialsStatusType
 
 ```python
-from mypy_boto3_cloud9.literals import ManagedCredentialsStatus
+from mypy_boto3_cloud9.literals import ManagedCredentialsStatusType
 ```
 
 Values:
@@ -110,10 +110,10 @@ Values:
 - `PENDING_START_REMOVAL_BY_COLLABORATOR`
 - `PENDING_START_REMOVAL_BY_OWNER`
 
-## MemberPermissions
+## MemberPermissionsType
 
 ```python
-from mypy_boto3_cloud9.literals import MemberPermissions
+from mypy_boto3_cloud9.literals import MemberPermissionsType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `read-only`
 - `read-write`
 
-## Permissions
+## PermissionsType
 
 ```python
-from mypy_boto3_cloud9.literals import Permissions
+from mypy_boto3_cloud9.literals import PermissionsType
 ```
 
 Values:

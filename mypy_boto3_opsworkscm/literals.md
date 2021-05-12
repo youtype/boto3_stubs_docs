@@ -3,26 +3,26 @@
 > [Index](..) > [OpsWorksCM](.) > Literals
 
 Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
 [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [Literals for boto3 OpsWorksCM module](#literals-for-boto3-opsworkscm-module)
-  - [BackupStatus](#backupstatus)
-  - [BackupType](#backuptype)
+  - [BackupStatusType](#backupstatustype)
+  - [BackupTypeType](#backuptypetype)
   - [DescribeBackupsPaginatorName](#describebackupspaginatorname)
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
   - [DescribeServersPaginatorName](#describeserverspaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [MaintenanceStatus](#maintenancestatus)
+  - [MaintenanceStatusType](#maintenancestatustype)
   - [NodeAssociatedWaiterName](#nodeassociatedwaitername)
-  - [NodeAssociationStatus](#nodeassociationstatus)
-  - [ServerStatus](#serverstatus)
+  - [NodeAssociationStatusType](#nodeassociationstatustype)
+  - [ServerStatusType](#serverstatustype)
 
-## BackupStatus
+## BackupStatusType
 
 ```python
-from mypy_boto3_opsworkscm.literals import BackupStatus
+from mypy_boto3_opsworkscm.literals import BackupStatusType
 ```
 
 Values:
@@ -32,10 +32,10 @@ Values:
 - `IN_PROGRESS`
 - `OK`
 
-## BackupType
+## BackupTypeType
 
 ```python
-from mypy_boto3_opsworkscm.literals import BackupType
+from mypy_boto3_opsworkscm.literals import BackupTypeType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## MaintenanceStatus
+## MaintenanceStatusType
 
 ```python
-from mypy_boto3_opsworkscm.literals import MaintenanceStatus
+from mypy_boto3_opsworkscm.literals import MaintenanceStatusType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 
 - `node_associated`
 
-## NodeAssociationStatus
+## NodeAssociationStatusType
 
 ```python
-from mypy_boto3_opsworkscm.literals import NodeAssociationStatus
+from mypy_boto3_opsworkscm.literals import NodeAssociationStatusType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESS`
 
-## ServerStatus
+## ServerStatusType
 
 ```python
-from mypy_boto3_opsworkscm.literals import ServerStatus
+from mypy_boto3_opsworkscm.literals import ServerStatusType
 ```
 
 Values:

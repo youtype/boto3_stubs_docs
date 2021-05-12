@@ -3,22 +3,22 @@
 > [Index](..) > [LakeFormation](.) > Literals
 
 Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
 [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [Literals for boto3 LakeFormation module](#literals-for-boto3-lakeformation-module)
-  - [ComparisonOperator](#comparisonoperator)
-  - [DataLakeResourceType](#datalakeresourcetype)
-  - [FieldNameString](#fieldnamestring)
-  - [Permission](#permission)
-  - [ResourceShareType](#resourcesharetype)
-  - [ResourceType](#resourcetype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [DataLakeResourceTypeType](#datalakeresourcetypetype)
+  - [FieldNameStringType](#fieldnamestringtype)
+  - [PermissionType](#permissiontype)
+  - [ResourceShareTypeType](#resourcesharetypetype)
+  - [ResourceTypeType](#resourcetypetype)
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_lakeformation.literals import ComparisonOperator
+from mypy_boto3_lakeformation.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `NE`
 - `NOT_CONTAINS`
 
-## DataLakeResourceType
+## DataLakeResourceTypeType
 
 ```python
-from mypy_boto3_lakeformation.literals import DataLakeResourceType
+from mypy_boto3_lakeformation.literals import DataLakeResourceTypeType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `LF_TAG_POLICY_TABLE`
 - `TABLE`
 
-## FieldNameString
+## FieldNameStringType
 
 ```python
-from mypy_boto3_lakeformation.literals import FieldNameString
+from mypy_boto3_lakeformation.literals import FieldNameStringType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 - `RESOURCE_ARN`
 - `ROLE_ARN`
 
-## Permission
+## PermissionType
 
 ```python
-from mypy_boto3_lakeformation.literals import Permission
+from mypy_boto3_lakeformation.literals import PermissionType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 - `INSERT`
 - `SELECT`
 
-## ResourceShareType
+## ResourceShareTypeType
 
 ```python
-from mypy_boto3_lakeformation.literals import ResourceShareType
+from mypy_boto3_lakeformation.literals import ResourceShareTypeType
 ```
 
 Values:
@@ -99,10 +99,10 @@ Values:
 - `ALL`
 - `FOREIGN`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_lakeformation.literals import ResourceType
+from mypy_boto3_lakeformation.literals import ResourceTypeType
 ```
 
 Values:

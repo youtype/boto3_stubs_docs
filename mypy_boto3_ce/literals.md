@@ -3,44 +3,44 @@
 > [Index](..) > [CostExplorer](.) > Literals
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
 - [Literals for boto3 CostExplorer module](#literals-for-boto3-costexplorer-module)
-  - [AccountScope](#accountscope)
-  - [AnomalyFeedbackType](#anomalyfeedbacktype)
-  - [AnomalySubscriptionFrequency](#anomalysubscriptionfrequency)
-  - [Context](#context)
-  - [CostCategoryInheritedValueDimensionName](#costcategoryinheritedvaluedimensionname)
-  - [CostCategoryRuleType](#costcategoryruletype)
-  - [CostCategoryRuleVersion](#costcategoryruleversion)
-  - [CostCategoryStatus](#costcategorystatus)
-  - [CostCategoryStatusComponent](#costcategorystatuscomponent)
-  - [Dimension](#dimension)
-  - [Granularity](#granularity)
-  - [GroupDefinitionType](#groupdefinitiontype)
-  - [LookbackPeriodInDays](#lookbackperiodindays)
-  - [MatchOption](#matchoption)
-  - [Metric](#metric)
-  - [MonitorDimension](#monitordimension)
-  - [MonitorType](#monitortype)
-  - [NumericOperator](#numericoperator)
-  - [OfferingClass](#offeringclass)
-  - [PaymentOption](#paymentoption)
-  - [RecommendationTarget](#recommendationtarget)
-  - [RightsizingType](#rightsizingtype)
-  - [SavingsPlansDataType](#savingsplansdatatype)
-  - [SortOrder](#sortorder)
-  - [SubscriberStatus](#subscriberstatus)
-  - [SubscriberType](#subscribertype)
-  - [SupportedSavingsPlansType](#supportedsavingsplanstype)
-  - [TermInYears](#terminyears)
+  - [AccountScopeType](#accountscopetype)
+  - [AnomalyFeedbackTypeType](#anomalyfeedbacktypetype)
+  - [AnomalySubscriptionFrequencyType](#anomalysubscriptionfrequencytype)
+  - [ContextType](#contexttype)
+  - [CostCategoryInheritedValueDimensionNameType](#costcategoryinheritedvaluedimensionnametype)
+  - [CostCategoryRuleTypeType](#costcategoryruletypetype)
+  - [CostCategoryRuleVersionType](#costcategoryruleversiontype)
+  - [CostCategoryStatusComponentType](#costcategorystatuscomponenttype)
+  - [CostCategoryStatusType](#costcategorystatustype)
+  - [DimensionType](#dimensiontype)
+  - [GranularityType](#granularitytype)
+  - [GroupDefinitionTypeType](#groupdefinitiontypetype)
+  - [LookbackPeriodInDaysType](#lookbackperiodindaystype)
+  - [MatchOptionType](#matchoptiontype)
+  - [MetricType](#metrictype)
+  - [MonitorDimensionType](#monitordimensiontype)
+  - [MonitorTypeType](#monitortypetype)
+  - [NumericOperatorType](#numericoperatortype)
+  - [OfferingClassType](#offeringclasstype)
+  - [PaymentOptionType](#paymentoptiontype)
+  - [RecommendationTargetType](#recommendationtargettype)
+  - [RightsizingTypeType](#rightsizingtypetype)
+  - [SavingsPlansDataTypeType](#savingsplansdatatypetype)
+  - [SortOrderType](#sortordertype)
+  - [SubscriberStatusType](#subscriberstatustype)
+  - [SubscriberTypeType](#subscribertypetype)
+  - [SupportedSavingsPlansTypeType](#supportedsavingsplanstypetype)
+  - [TermInYearsType](#terminyearstype)
 
-## AccountScope
+## AccountScopeType
 
 ```python
-from mypy_boto3_ce.literals import AccountScope
+from mypy_boto3_ce.literals import AccountScopeType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `LINKED`
 - `PAYER`
 
-## AnomalyFeedbackType
+## AnomalyFeedbackTypeType
 
 ```python
-from mypy_boto3_ce.literals import AnomalyFeedbackType
+from mypy_boto3_ce.literals import AnomalyFeedbackTypeType
 ```
 
 Values:
@@ -60,10 +60,10 @@ Values:
 - `PLANNED_ACTIVITY`
 - `YES`
 
-## AnomalySubscriptionFrequency
+## AnomalySubscriptionFrequencyType
 
 ```python
-from mypy_boto3_ce.literals import AnomalySubscriptionFrequency
+from mypy_boto3_ce.literals import AnomalySubscriptionFrequencyType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 - `IMMEDIATE`
 - `WEEKLY`
 
-## Context
+## ContextType
 
 ```python
-from mypy_boto3_ce.literals import Context
+from mypy_boto3_ce.literals import ContextType
 ```
 
 Values:
@@ -84,10 +84,10 @@ Values:
 - `RESERVATIONS`
 - `SAVINGS_PLANS`
 
-## CostCategoryInheritedValueDimensionName
+## CostCategoryInheritedValueDimensionNameType
 
 ```python
-from mypy_boto3_ce.literals import CostCategoryInheritedValueDimensionName
+from mypy_boto3_ce.literals import CostCategoryInheritedValueDimensionNameType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `LINKED_ACCOUNT_NAME`
 - `TAG`
 
-## CostCategoryRuleType
+## CostCategoryRuleTypeType
 
 ```python
-from mypy_boto3_ce.literals import CostCategoryRuleType
+from mypy_boto3_ce.literals import CostCategoryRuleTypeType
 ```
 
 Values:
@@ -106,20 +106,30 @@ Values:
 - `INHERITED_VALUE`
 - `REGULAR`
 
-## CostCategoryRuleVersion
+## CostCategoryRuleVersionType
 
 ```python
-from mypy_boto3_ce.literals import CostCategoryRuleVersion
+from mypy_boto3_ce.literals import CostCategoryRuleVersionType
 ```
 
 Values:
 
 - `CostCategoryExpression.v1`
 
-## CostCategoryStatus
+## CostCategoryStatusComponentType
 
 ```python
-from mypy_boto3_ce.literals import CostCategoryStatus
+from mypy_boto3_ce.literals import CostCategoryStatusComponentType
+```
+
+Values:
+
+- `COST_EXPLORER`
+
+## CostCategoryStatusType
+
+```python
+from mypy_boto3_ce.literals import CostCategoryStatusType
 ```
 
 Values:
@@ -127,20 +137,10 @@ Values:
 - `APPLIED`
 - `PROCESSING`
 
-## CostCategoryStatusComponent
+## DimensionType
 
 ```python
-from mypy_boto3_ce.literals import CostCategoryStatusComponent
-```
-
-Values:
-
-- `COST_EXPLORER`
-
-## Dimension
-
-```python
-from mypy_boto3_ce.literals import Dimension
+from mypy_boto3_ce.literals import DimensionType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `USAGE_TYPE`
 - `USAGE_TYPE_GROUP`
 
-## Granularity
+## GranularityType
 
 ```python
-from mypy_boto3_ce.literals import Granularity
+from mypy_boto3_ce.literals import GranularityType
 ```
 
 Values:
@@ -189,10 +189,10 @@ Values:
 - `HOURLY`
 - `MONTHLY`
 
-## GroupDefinitionType
+## GroupDefinitionTypeType
 
 ```python
-from mypy_boto3_ce.literals import GroupDefinitionType
+from mypy_boto3_ce.literals import GroupDefinitionTypeType
 ```
 
 Values:
@@ -201,10 +201,10 @@ Values:
 - `DIMENSION`
 - `TAG`
 
-## LookbackPeriodInDays
+## LookbackPeriodInDaysType
 
 ```python
-from mypy_boto3_ce.literals import LookbackPeriodInDays
+from mypy_boto3_ce.literals import LookbackPeriodInDaysType
 ```
 
 Values:
@@ -213,10 +213,10 @@ Values:
 - `SIXTY_DAYS`
 - `THIRTY_DAYS`
 
-## MatchOption
+## MatchOptionType
 
 ```python
-from mypy_boto3_ce.literals import MatchOption
+from mypy_boto3_ce.literals import MatchOptionType
 ```
 
 Values:
@@ -229,10 +229,10 @@ Values:
 - `EQUALS`
 - `STARTS_WITH`
 
-## Metric
+## MetricType
 
 ```python
-from mypy_boto3_ce.literals import Metric
+from mypy_boto3_ce.literals import MetricType
 ```
 
 Values:
@@ -245,20 +245,20 @@ Values:
 - `UNBLENDED_COST`
 - `USAGE_QUANTITY`
 
-## MonitorDimension
+## MonitorDimensionType
 
 ```python
-from mypy_boto3_ce.literals import MonitorDimension
+from mypy_boto3_ce.literals import MonitorDimensionType
 ```
 
 Values:
 
 - `SERVICE`
 
-## MonitorType
+## MonitorTypeType
 
 ```python
-from mypy_boto3_ce.literals import MonitorType
+from mypy_boto3_ce.literals import MonitorTypeType
 ```
 
 Values:
@@ -266,10 +266,10 @@ Values:
 - `CUSTOM`
 - `DIMENSIONAL`
 
-## NumericOperator
+## NumericOperatorType
 
 ```python
-from mypy_boto3_ce.literals import NumericOperator
+from mypy_boto3_ce.literals import NumericOperatorType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_OR_EQUAL`
 
-## OfferingClass
+## OfferingClassType
 
 ```python
-from mypy_boto3_ce.literals import OfferingClass
+from mypy_boto3_ce.literals import OfferingClassType
 ```
 
 Values:
@@ -292,10 +292,10 @@ Values:
 - `CONVERTIBLE`
 - `STANDARD`
 
-## PaymentOption
+## PaymentOptionType
 
 ```python
-from mypy_boto3_ce.literals import PaymentOption
+from mypy_boto3_ce.literals import PaymentOptionType
 ```
 
 Values:
@@ -307,10 +307,10 @@ Values:
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
 
-## RecommendationTarget
+## RecommendationTargetType
 
 ```python
-from mypy_boto3_ce.literals import RecommendationTarget
+from mypy_boto3_ce.literals import RecommendationTargetType
 ```
 
 Values:
@@ -318,10 +318,10 @@ Values:
 - `CROSS_INSTANCE_FAMILY`
 - `SAME_INSTANCE_FAMILY`
 
-## RightsizingType
+## RightsizingTypeType
 
 ```python
-from mypy_boto3_ce.literals import RightsizingType
+from mypy_boto3_ce.literals import RightsizingTypeType
 ```
 
 Values:
@@ -329,10 +329,10 @@ Values:
 - `MODIFY`
 - `TERMINATE`
 
-## SavingsPlansDataType
+## SavingsPlansDataTypeType
 
 ```python
-from mypy_boto3_ce.literals import SavingsPlansDataType
+from mypy_boto3_ce.literals import SavingsPlansDataTypeType
 ```
 
 Values:
@@ -342,10 +342,10 @@ Values:
 - `SAVINGS`
 - `UTILIZATION`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_ce.literals import SortOrder
+from mypy_boto3_ce.literals import SortOrderType
 ```
 
 Values:
@@ -353,10 +353,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## SubscriberStatus
+## SubscriberStatusType
 
 ```python
-from mypy_boto3_ce.literals import SubscriberStatus
+from mypy_boto3_ce.literals import SubscriberStatusType
 ```
 
 Values:
@@ -364,10 +364,10 @@ Values:
 - `CONFIRMED`
 - `DECLINED`
 
-## SubscriberType
+## SubscriberTypeType
 
 ```python
-from mypy_boto3_ce.literals import SubscriberType
+from mypy_boto3_ce.literals import SubscriberTypeType
 ```
 
 Values:
@@ -375,10 +375,10 @@ Values:
 - `EMAIL`
 - `SNS`
 
-## SupportedSavingsPlansType
+## SupportedSavingsPlansTypeType
 
 ```python
-from mypy_boto3_ce.literals import SupportedSavingsPlansType
+from mypy_boto3_ce.literals import SupportedSavingsPlansTypeType
 ```
 
 Values:
@@ -387,10 +387,10 @@ Values:
 - `EC2_INSTANCE_SP`
 - `SAGEMAKER_SP`
 
-## TermInYears
+## TermInYearsType
 
 ```python
-from mypy_boto3_ce.literals import TermInYears
+from mypy_boto3_ce.literals import TermInYearsType
 ```
 
 Values:

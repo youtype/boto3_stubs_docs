@@ -3,34 +3,34 @@
 > [Index](..) > [MediaConnect](.) > Literals
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [Literals for boto3 MediaConnect module](#literals-for-boto3-mediaconnect-module)
-  - [Algorithm](#algorithm)
-  - [DurationUnits](#durationunits)
-  - [EntitlementStatus](#entitlementstatus)
+  - [AlgorithmType](#algorithmtype)
+  - [DurationUnitsType](#durationunitstype)
+  - [EntitlementStatusType](#entitlementstatustype)
   - [FlowActiveWaiterName](#flowactivewaitername)
   - [FlowDeletedWaiterName](#flowdeletedwaitername)
   - [FlowStandbyWaiterName](#flowstandbywaitername)
-  - [KeyType](#keytype)
+  - [KeyTypeType](#keytypetype)
   - [ListEntitlementsPaginatorName](#listentitlementspaginatorname)
   - [ListFlowsPaginatorName](#listflowspaginatorname)
   - [ListOfferingsPaginatorName](#listofferingspaginatorname)
   - [ListReservationsPaginatorName](#listreservationspaginatorname)
-  - [PriceUnits](#priceunits)
+  - [PriceUnitsType](#priceunitstype)
   - [ProtocolType](#protocoltype)
-  - [ReservationState](#reservationstate)
-  - [ResourceType](#resourcetype)
-  - [SourceType](#sourcetype)
-  - [State](#state)
-  - [Status](#status)
+  - [ReservationStateType](#reservationstatetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [SourceTypeType](#sourcetypetype)
+  - [StateType](#statetype)
+  - [StatusType](#statustype)
 
-## Algorithm
+## AlgorithmType
 
 ```python
-from mypy_boto3_mediaconnect.literals import Algorithm
+from mypy_boto3_mediaconnect.literals import AlgorithmType
 ```
 
 Values:
@@ -39,20 +39,20 @@ Values:
 - `aes192`
 - `aes256`
 
-## DurationUnits
+## DurationUnitsType
 
 ```python
-from mypy_boto3_mediaconnect.literals import DurationUnits
+from mypy_boto3_mediaconnect.literals import DurationUnitsType
 ```
 
 Values:
 
 - `MONTHS`
 
-## EntitlementStatus
+## EntitlementStatusType
 
 ```python
-from mypy_boto3_mediaconnect.literals import EntitlementStatus
+from mypy_boto3_mediaconnect.literals import EntitlementStatusType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 
 - `flow_standby`
 
-## KeyType
+## KeyTypeType
 
 ```python
-from mypy_boto3_mediaconnect.literals import KeyType
+from mypy_boto3_mediaconnect.literals import KeyTypeType
 ```
 
 Values:
@@ -142,10 +142,10 @@ Values:
 
 - `list_reservations`
 
-## PriceUnits
+## PriceUnitsType
 
 ```python
-from mypy_boto3_mediaconnect.literals import PriceUnits
+from mypy_boto3_mediaconnect.literals import PriceUnitsType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 - `zixi-pull`
 - `zixi-push`
 
-## ReservationState
+## ReservationStateType
 
 ```python
-from mypy_boto3_mediaconnect.literals import ReservationState
+from mypy_boto3_mediaconnect.literals import ReservationStateType
 ```
 
 Values:
@@ -180,20 +180,20 @@ Values:
 - `EXPIRED`
 - `PROCESSING`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_mediaconnect.literals import ResourceType
+from mypy_boto3_mediaconnect.literals import ResourceTypeType
 ```
 
 Values:
 
 - `Mbps_Outbound_Bandwidth`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_mediaconnect.literals import SourceType
+from mypy_boto3_mediaconnect.literals import SourceTypeType
 ```
 
 Values:
@@ -201,10 +201,10 @@ Values:
 - `ENTITLED`
 - `OWNED`
 
-## State
+## StateType
 
 ```python
-from mypy_boto3_mediaconnect.literals import State
+from mypy_boto3_mediaconnect.literals import StateType
 ```
 
 Values:
@@ -212,10 +212,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_mediaconnect.literals import Status
+from mypy_boto3_mediaconnect.literals import StatusType
 ```
 
 Values:

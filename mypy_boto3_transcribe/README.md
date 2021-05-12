@@ -3,7 +3,7 @@
 > [Index](..) > TranscribeService
 
 Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
 [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
@@ -29,48 +29,48 @@ Can be used directly:
 from mypy_boto3_transcribe.client import TranscribeServiceClient
 ```
 
-TranscribeServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_language_model](./client.md#create-language-model)
-- [create_medical_vocabulary](./client.md#create-medical-vocabulary)
-- [create_vocabulary](./client.md#create-vocabulary)
-- [create_vocabulary_filter](./client.md#create-vocabulary-filter)
-- [delete_language_model](./client.md#delete-language-model)
-- [delete_medical_transcription_job](./client.md#delete-medical-transcription-job)
-- [delete_medical_vocabulary](./client.md#delete-medical-vocabulary)
-- [delete_transcription_job](./client.md#delete-transcription-job)
-- [delete_vocabulary](./client.md#delete-vocabulary)
-- [delete_vocabulary_filter](./client.md#delete-vocabulary-filter)
-- [describe_language_model](./client.md#describe-language-model)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_medical_transcription_job](./client.md#get-medical-transcription-job)
-- [get_medical_vocabulary](./client.md#get-medical-vocabulary)
-- [get_transcription_job](./client.md#get-transcription-job)
-- [get_vocabulary](./client.md#get-vocabulary)
-- [get_vocabulary_filter](./client.md#get-vocabulary-filter)
-- [list_language_models](./client.md#list-language-models)
-- [list_medical_transcription_jobs](./client.md#list-medical-transcription-jobs)
-- [list_medical_vocabularies](./client.md#list-medical-vocabularies)
-- [list_transcription_jobs](./client.md#list-transcription-jobs)
-- [list_vocabularies](./client.md#list-vocabularies)
-- [list_vocabulary_filters](./client.md#list-vocabulary-filters)
-- [start_medical_transcription_job](./client.md#start-medical-transcription-job)
-- [start_transcription_job](./client.md#start-transcription-job)
-- [update_medical_vocabulary](./client.md#update-medical-vocabulary)
-- [update_vocabulary](./client.md#update-vocabulary)
-- [update_vocabulary_filter](./client.md#update-vocabulary-filter)
+- [can_paginate](./client.md#can_paginate)
+- [create_language_model](./client.md#create_language_model)
+- [create_medical_vocabulary](./client.md#create_medical_vocabulary)
+- [create_vocabulary](./client.md#create_vocabulary)
+- [create_vocabulary_filter](./client.md#create_vocabulary_filter)
+- [delete_language_model](./client.md#delete_language_model)
+- [delete_medical_transcription_job](./client.md#delete_medical_transcription_job)
+- [delete_medical_vocabulary](./client.md#delete_medical_vocabulary)
+- [delete_transcription_job](./client.md#delete_transcription_job)
+- [delete_vocabulary](./client.md#delete_vocabulary)
+- [delete_vocabulary_filter](./client.md#delete_vocabulary_filter)
+- [describe_language_model](./client.md#describe_language_model)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_medical_transcription_job](./client.md#get_medical_transcription_job)
+- [get_medical_vocabulary](./client.md#get_medical_vocabulary)
+- [get_transcription_job](./client.md#get_transcription_job)
+- [get_vocabulary](./client.md#get_vocabulary)
+- [get_vocabulary_filter](./client.md#get_vocabulary_filter)
+- [list_language_models](./client.md#list_language_models)
+- [list_medical_transcription_jobs](./client.md#list_medical_transcription_jobs)
+- [list_medical_vocabularies](./client.md#list_medical_vocabularies)
+- [list_transcription_jobs](./client.md#list_transcription_jobs)
+- [list_vocabularies](./client.md#list_vocabularies)
+- [list_vocabulary_filters](./client.md#list_vocabulary_filters)
+- [start_medical_transcription_job](./client.md#start_medical_transcription_job)
+- [start_transcription_job](./client.md#start_transcription_job)
+- [update_medical_vocabulary](./client.md#update_medical_vocabulary)
+- [update_vocabulary](./client.md#update_vocabulary)
+- [update_vocabulary_filter](./client.md#update_vocabulary_filter)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
+TranscribeServiceClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- InternalFailureException
+- LimitExceededException
+- NotFoundException
 
 ## Literals
 
@@ -79,22 +79,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_transcribe.literals import BaseModelName, ...
+from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 ```
 
-- [BaseModelName](./literals.md#basemodelname)
-- [CLMLanguageCode](./literals.md#clmlanguagecode)
-- [LanguageCode](./literals.md#languagecode)
-- [MediaFormat](./literals.md#mediaformat)
-- [ModelStatus](./literals.md#modelstatus)
-- [OutputLocationType](./literals.md#outputlocationtype)
-- [RedactionOutput](./literals.md#redactionoutput)
-- [RedactionType](./literals.md#redactiontype)
-- [Specialty](./literals.md#specialty)
-- [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
+- [BaseModelNameType](./literals.md#basemodelnametype)
+- [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
+- [LanguageCodeType](./literals.md#languagecodetype)
+- [MediaFormatType](./literals.md#mediaformattype)
+- [ModelStatusType](./literals.md#modelstatustype)
+- [OutputLocationTypeType](./literals.md#outputlocationtypetype)
+- [RedactionOutputType](./literals.md#redactionoutputtype)
+- [RedactionTypeType](./literals.md#redactiontypetype)
+- [SpecialtyType](./literals.md#specialtytype)
+- [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - [TypeType](./literals.md#typetype)
-- [VocabularyFilterMethod](./literals.md#vocabularyfiltermethod)
-- [VocabularyState](./literals.md#vocabularystate)
+- [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
+- [VocabularyStateType](./literals.md#vocabularystatetype)
 
 ## Typed dictionaries
 

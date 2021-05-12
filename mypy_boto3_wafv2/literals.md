@@ -3,33 +3,33 @@
 > [Index](..) > [WAFV2](.) > Literals
 
 Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
 [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [Literals for boto3 WAFV2 module](#literals-for-boto3-wafv2-module)
-  - [ActionValue](#actionvalue)
-  - [BodyParsingFallbackBehavior](#bodyparsingfallbackbehavior)
-  - [ComparisonOperator](#comparisonoperator)
-  - [CountryCode](#countrycode)
-  - [FallbackBehavior](#fallbackbehavior)
-  - [FilterBehavior](#filterbehavior)
-  - [FilterRequirement](#filterrequirement)
-  - [ForwardedIPPosition](#forwardedipposition)
-  - [IPAddressVersion](#ipaddressversion)
-  - [JsonMatchScope](#jsonmatchscope)
-  - [LabelMatchScope](#labelmatchscope)
-  - [PositionalConstraint](#positionalconstraint)
-  - [RateBasedStatementAggregateKeyType](#ratebasedstatementaggregatekeytype)
-  - [ResourceType](#resourcetype)
-  - [ResponseContentType](#responsecontenttype)
-  - [Scope](#scope)
-  - [TextTransformationType](#texttransformationtype)
+  - [ActionValueType](#actionvaluetype)
+  - [BodyParsingFallbackBehaviorType](#bodyparsingfallbackbehaviortype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [CountryCodeType](#countrycodetype)
+  - [FallbackBehaviorType](#fallbackbehaviortype)
+  - [FilterBehaviorType](#filterbehaviortype)
+  - [FilterRequirementType](#filterrequirementtype)
+  - [ForwardedIPPositionType](#forwardedippositiontype)
+  - [IPAddressVersionType](#ipaddressversiontype)
+  - [JsonMatchScopeType](#jsonmatchscopetype)
+  - [LabelMatchScopeType](#labelmatchscopetype)
+  - [PositionalConstraintType](#positionalconstrainttype)
+  - [RateBasedStatementAggregateKeyTypeType](#ratebasedstatementaggregatekeytypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [ResponseContentTypeType](#responsecontenttypetype)
+  - [ScopeType](#scopetype)
+  - [TextTransformationTypeType](#texttransformationtypetype)
 
-## ActionValue
+## ActionValueType
 
 ```python
-from mypy_boto3_wafv2.literals import ActionValue
+from mypy_boto3_wafv2.literals import ActionValueType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 - `BLOCK`
 - `COUNT`
 
-## BodyParsingFallbackBehavior
+## BodyParsingFallbackBehaviorType
 
 ```python
-from mypy_boto3_wafv2.literals import BodyParsingFallbackBehavior
+from mypy_boto3_wafv2.literals import BodyParsingFallbackBehaviorType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `MATCH`
 - `NO_MATCH`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_wafv2.literals import ComparisonOperator
+from mypy_boto3_wafv2.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `LT`
 - `NE`
 
-## CountryCode
+## CountryCodeType
 
 ```python
-from mypy_boto3_wafv2.literals import CountryCode
+from mypy_boto3_wafv2.literals import CountryCodeType
 ```
 
 Values:
@@ -323,10 +323,10 @@ Values:
 - `ZM`
 - `ZW`
 
-## FallbackBehavior
+## FallbackBehaviorType
 
 ```python
-from mypy_boto3_wafv2.literals import FallbackBehavior
+from mypy_boto3_wafv2.literals import FallbackBehaviorType
 ```
 
 Values:
@@ -334,10 +334,10 @@ Values:
 - `MATCH`
 - `NO_MATCH`
 
-## FilterBehavior
+## FilterBehaviorType
 
 ```python
-from mypy_boto3_wafv2.literals import FilterBehavior
+from mypy_boto3_wafv2.literals import FilterBehaviorType
 ```
 
 Values:
@@ -345,10 +345,10 @@ Values:
 - `DROP`
 - `KEEP`
 
-## FilterRequirement
+## FilterRequirementType
 
 ```python
-from mypy_boto3_wafv2.literals import FilterRequirement
+from mypy_boto3_wafv2.literals import FilterRequirementType
 ```
 
 Values:
@@ -356,10 +356,10 @@ Values:
 - `MEETS_ALL`
 - `MEETS_ANY`
 
-## ForwardedIPPosition
+## ForwardedIPPositionType
 
 ```python
-from mypy_boto3_wafv2.literals import ForwardedIPPosition
+from mypy_boto3_wafv2.literals import ForwardedIPPositionType
 ```
 
 Values:
@@ -368,10 +368,10 @@ Values:
 - `FIRST`
 - `LAST`
 
-## IPAddressVersion
+## IPAddressVersionType
 
 ```python
-from mypy_boto3_wafv2.literals import IPAddressVersion
+from mypy_boto3_wafv2.literals import IPAddressVersionType
 ```
 
 Values:
@@ -379,10 +379,10 @@ Values:
 - `IPV4`
 - `IPV6`
 
-## JsonMatchScope
+## JsonMatchScopeType
 
 ```python
-from mypy_boto3_wafv2.literals import JsonMatchScope
+from mypy_boto3_wafv2.literals import JsonMatchScopeType
 ```
 
 Values:
@@ -391,10 +391,10 @@ Values:
 - `KEY`
 - `VALUE`
 
-## LabelMatchScope
+## LabelMatchScopeType
 
 ```python
-from mypy_boto3_wafv2.literals import LabelMatchScope
+from mypy_boto3_wafv2.literals import LabelMatchScopeType
 ```
 
 Values:
@@ -402,10 +402,10 @@ Values:
 - `LABEL`
 - `NAMESPACE`
 
-## PositionalConstraint
+## PositionalConstraintType
 
 ```python
-from mypy_boto3_wafv2.literals import PositionalConstraint
+from mypy_boto3_wafv2.literals import PositionalConstraintType
 ```
 
 Values:
@@ -416,10 +416,10 @@ Values:
 - `EXACTLY`
 - `STARTS_WITH`
 
-## RateBasedStatementAggregateKeyType
+## RateBasedStatementAggregateKeyTypeType
 
 ```python
-from mypy_boto3_wafv2.literals import RateBasedStatementAggregateKeyType
+from mypy_boto3_wafv2.literals import RateBasedStatementAggregateKeyTypeType
 ```
 
 Values:
@@ -427,10 +427,10 @@ Values:
 - `FORWARDED_IP`
 - `IP`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_wafv2.literals import ResourceType
+from mypy_boto3_wafv2.literals import ResourceTypeType
 ```
 
 Values:
@@ -439,10 +439,10 @@ Values:
 - `APPLICATION_LOAD_BALANCER`
 - `APPSYNC`
 
-## ResponseContentType
+## ResponseContentTypeType
 
 ```python
-from mypy_boto3_wafv2.literals import ResponseContentType
+from mypy_boto3_wafv2.literals import ResponseContentTypeType
 ```
 
 Values:
@@ -451,10 +451,10 @@ Values:
 - `TEXT_HTML`
 - `TEXT_PLAIN`
 
-## Scope
+## ScopeType
 
 ```python
-from mypy_boto3_wafv2.literals import Scope
+from mypy_boto3_wafv2.literals import ScopeType
 ```
 
 Values:
@@ -462,10 +462,10 @@ Values:
 - `CLOUDFRONT`
 - `REGIONAL`
 
-## TextTransformationType
+## TextTransformationTypeType
 
 ```python
-from mypy_boto3_wafv2.literals import TextTransformationType
+from mypy_boto3_wafv2.literals import TextTransformationTypeType
 ```
 
 Values:

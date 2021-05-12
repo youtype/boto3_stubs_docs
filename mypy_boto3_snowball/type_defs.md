@@ -3,7 +3,7 @@
 > [Index](..) > [Snowball](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball)
 type annotations stubs module
 [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
@@ -84,7 +84,7 @@ from mypy_boto3_snowball.type_defs import ClusterListEntryTypeDef
 Optional fields:
 
 - `ClusterId`: `str`
-- `ClusterState`: [ClusterState](./literals.md#clusterstate)
+- `ClusterState`: [ClusterStateType](./literals.md#clusterstatetype)
 - `CreationDate`: `datetime`
 - `Description`: `str`
 
@@ -100,13 +100,13 @@ Optional fields:
 - `Description`: `str`
 - `KmsKeyARN`: `str`
 - `RoleARN`: `str`
-- `ClusterState`: [ClusterState](./literals.md#clusterstate)
-- `JobType`: [JobType](./literals.md#jobtype)
-- `SnowballType`: [SnowballType](./literals.md#snowballtype)
+- `ClusterState`: [ClusterStateType](./literals.md#clusterstatetype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 - `CreationDate`: `datetime`
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `AddressId`: `str`
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ForwardingAddressId`: `str`
 - `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
@@ -170,7 +170,7 @@ from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelResultTypeDef
 
 Optional fields:
 
-- `Status`: [ShippingLabelStatus](./literals.md#shippinglabelstatus)
+- `Status`: [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
 
 ## DataTransferTypeDef
 
@@ -237,7 +237,7 @@ from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelResultTypeD
 
 Optional fields:
 
-- `Status`: [ShippingLabelStatus](./literals.md#shippinglabelstatus)
+- `Status`: [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
 - `ExpirationDate`: `datetime`
 
 ## DeviceConfigurationTypeDef
@@ -335,10 +335,10 @@ from mypy_boto3_snowball.type_defs import JobListEntryTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `JobState`: [JobState](./literals.md#jobstate)
+- `JobState`: [JobStateType](./literals.md#jobstatetype)
 - `IsMaster`: `bool`
-- `JobType`: [JobType](./literals.md#jobtype)
-- `SnowballType`: [SnowballType](./literals.md#snowballtype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 - `CreationDate`: `datetime`
 - `Description`: `str`
 
@@ -363,9 +363,9 @@ from mypy_boto3_snowball.type_defs import JobMetadataTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `JobState`: [JobState](./literals.md#jobstate)
-- `JobType`: [JobType](./literals.md#jobtype)
-- `SnowballType`: [SnowballType](./literals.md#snowballtype)
+- `JobState`: [JobStateType](./literals.md#jobstatetype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 - `CreationDate`: `datetime`
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `Description`: `str`
@@ -375,7 +375,7 @@ Optional fields:
 - `ShippingDetails`:
   [ShippingDetailsTypeDef](./type_defs.md#shippingdetailstypedef)
 - `SnowballCapacityPreference`:
-  [SnowballCapacity](./literals.md#snowballcapacity)
+  [SnowballCapacityType](./literals.md#snowballcapacitytype)
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `DataTransferProgress`:
   [DataTransferTypeDef](./type_defs.md#datatransfertypedef)
@@ -395,7 +395,8 @@ from mypy_boto3_snowball.type_defs import JobResourceTypeDef
 
 Optional fields:
 
-- `S3Resources`: `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
+- `S3Resources`:
+  `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
 - `LambdaResources`:
   `List`\[[LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)\]
 - `Ec2AmiResources`:
@@ -495,12 +496,13 @@ Optional fields:
 - `LongTermPricingId`: `str`
 - `LongTermPricingEndDate`: `datetime`
 - `LongTermPricingStartDate`: `datetime`
-- `LongTermPricingType`: [LongTermPricingType](./literals.md#longtermpricingtype)
+- `LongTermPricingType`:
+  [LongTermPricingTypeType](./literals.md#longtermpricingtypetype)
 - `CurrentActiveJob`: `str`
 - `ReplacementJob`: `str`
 - `IsLongTermPricingAutoRenew`: `bool`
 - `LongTermPricingStatus`: `str`
-- `SnowballType`: [SnowballType](./literals.md#snowballtype)
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 - `JobIds`: `List`\[`str`\]
 
 ## NotificationTypeDef
@@ -512,7 +514,7 @@ from mypy_boto3_snowball.type_defs import NotificationTypeDef
 Optional fields:
 
 - `SnsTopicARN`: `str`
-- `JobStatesToNotify`: `List`\[[JobState](./literals.md#jobstate)\]
+- `JobStatesToNotify`: `List`\[[JobStateType](./literals.md#jobstatetype)\]
 - `NotifyAll`: `bool`
 
 ## PaginatorConfigTypeDef
@@ -557,7 +559,7 @@ from mypy_boto3_snowball.type_defs import ShippingDetailsTypeDef
 
 Optional fields:
 
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `InboundShipment`: [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
 - `OutboundShipment`: [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
 

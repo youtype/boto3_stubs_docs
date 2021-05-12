@@ -3,37 +3,37 @@
 > [Index](..) > [Imagebuilder](.) > Literals
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
+[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/imagebuilder.html#Imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [Literals for boto3 Imagebuilder module](#literals-for-boto3-imagebuilder-module)
-  - [ComponentFormat](#componentformat)
-  - [ComponentType](#componenttype)
-  - [ContainerRepositoryService](#containerrepositoryservice)
-  - [ContainerType](#containertype)
-  - [EbsVolumeType](#ebsvolumetype)
-  - [ImageStatus](#imagestatus)
-  - [ImageType](#imagetype)
-  - [Ownership](#ownership)
-  - [PipelineExecutionStartCondition](#pipelineexecutionstartcondition)
-  - [PipelineStatus](#pipelinestatus)
-  - [Platform](#platform)
+  - [ComponentFormatType](#componentformattype)
+  - [ComponentTypeType](#componenttypetype)
+  - [ContainerRepositoryServiceType](#containerrepositoryservicetype)
+  - [ContainerTypeType](#containertypetype)
+  - [EbsVolumeTypeType](#ebsvolumetypetype)
+  - [ImageStatusType](#imagestatustype)
+  - [ImageTypeType](#imagetypetype)
+  - [OwnershipType](#ownershiptype)
+  - [PipelineExecutionStartConditionType](#pipelineexecutionstartconditiontype)
+  - [PipelineStatusType](#pipelinestatustype)
+  - [PlatformType](#platformtype)
 
-## ComponentFormat
+## ComponentFormatType
 
 ```python
-from mypy_boto3_imagebuilder.literals import ComponentFormat
+from mypy_boto3_imagebuilder.literals import ComponentFormatType
 ```
 
 Values:
 
 - `SHELL`
 
-## ComponentType
+## ComponentTypeType
 
 ```python
-from mypy_boto3_imagebuilder.literals import ComponentType
+from mypy_boto3_imagebuilder.literals import ComponentTypeType
 ```
 
 Values:
@@ -41,30 +41,30 @@ Values:
 - `BUILD`
 - `TEST`
 
-## ContainerRepositoryService
+## ContainerRepositoryServiceType
 
 ```python
-from mypy_boto3_imagebuilder.literals import ContainerRepositoryService
+from mypy_boto3_imagebuilder.literals import ContainerRepositoryServiceType
 ```
 
 Values:
 
 - `ECR`
 
-## ContainerType
+## ContainerTypeType
 
 ```python
-from mypy_boto3_imagebuilder.literals import ContainerType
+from mypy_boto3_imagebuilder.literals import ContainerTypeType
 ```
 
 Values:
 
 - `DOCKER`
 
-## EbsVolumeType
+## EbsVolumeTypeType
 
 ```python
-from mypy_boto3_imagebuilder.literals import EbsVolumeType
+from mypy_boto3_imagebuilder.literals import EbsVolumeTypeType
 ```
 
 Values:
@@ -77,10 +77,10 @@ Values:
 - `st1`
 - `standard`
 
-## ImageStatus
+## ImageStatusType
 
 ```python
-from mypy_boto3_imagebuilder.literals import ImageStatus
+from mypy_boto3_imagebuilder.literals import ImageStatusType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `PENDING`
 - `TESTING`
 
-## ImageType
+## ImageTypeType
 
 ```python
-from mypy_boto3_imagebuilder.literals import ImageType
+from mypy_boto3_imagebuilder.literals import ImageTypeType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `AMI`
 - `DOCKER`
 
-## Ownership
+## OwnershipType
 
 ```python
-from mypy_boto3_imagebuilder.literals import Ownership
+from mypy_boto3_imagebuilder.literals import OwnershipType
 ```
 
 Values:
@@ -120,10 +120,10 @@ Values:
 - `Self`
 - `Shared`
 
-## PipelineExecutionStartCondition
+## PipelineExecutionStartConditionType
 
 ```python
-from mypy_boto3_imagebuilder.literals import PipelineExecutionStartCondition
+from mypy_boto3_imagebuilder.literals import PipelineExecutionStartConditionType
 ```
 
 Values:
@@ -131,10 +131,10 @@ Values:
 - `EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE`
 - `EXPRESSION_MATCH_ONLY`
 
-## PipelineStatus
+## PipelineStatusType
 
 ```python
-from mypy_boto3_imagebuilder.literals import PipelineStatus
+from mypy_boto3_imagebuilder.literals import PipelineStatusType
 ```
 
 Values:
@@ -142,10 +142,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## Platform
+## PlatformType
 
 ```python
-from mypy_boto3_imagebuilder.literals import Platform
+from mypy_boto3_imagebuilder.literals import PlatformType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > ConnectContactLens
 
 Auto-generated documentation for
-[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
+[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connect-contact-lens.html#ConnectContactLens)
 type annotations stubs module
 [mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
@@ -29,22 +29,22 @@ Can be used directly:
 from mypy_boto3_connect_contact_lens.client import ConnectContactLensClient
 ```
 
-ConnectContactLensClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_realtime_contact_analysis_segments](./client.md#list-realtime-contact-analysis-segments)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_realtime_contact_analysis_segments](./client.md#list_realtime_contact_analysis_segments)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
+ConnectContactLensClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServiceException
+- InvalidRequestException
+- ResourceNotFoundException
+- ThrottlingException
 
 ## Literals
 
@@ -53,10 +53,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect_contact_lens.literals import SentimentValue, ...
+from mypy_boto3_connect_contact_lens.literals import SentimentValueType, ...
 ```
 
-- [SentimentValue](./literals.md#sentimentvalue)
+- [SentimentValueType](./literals.md#sentimentvaluetype)
 
 ## Typed dictionaries
 

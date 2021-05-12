@@ -3,7 +3,7 @@
 > [Index](..) > [ServerlessApplicationRepository](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
 [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
@@ -113,7 +113,8 @@ Optional fields:
 - `CreationTime`: `str`
 - `ParameterDefinitions`:
   `List`\[[ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef)\]
-- `RequiredCapabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `RequiredCapabilities`:
+  `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `ResourcesSupported`: `bool`
 - `SemanticVersion`: `str`
 - `SourceCodeArchiveUrl`: `str`
@@ -145,7 +146,7 @@ Optional fields:
 - `CreationTime`: `str`
 - `ExpirationTime`: `str`
 - `SemanticVersion`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `TemplateId`: `str`
 - `TemplateUrl`: `str`
 
@@ -194,7 +195,7 @@ Optional fields:
 - `CreationTime`: `str`
 - `ExpirationTime`: `str`
 - `SemanticVersion`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `TemplateId`: `str`
 - `TemplateUrl`: `str`
 
@@ -377,7 +378,8 @@ Required fields:
 - `CreationTime`: `str`
 - `ParameterDefinitions`:
   `List`\[[ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef)\]
-- `RequiredCapabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `RequiredCapabilities`:
+  `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `ResourcesSupported`: `bool`
 - `SemanticVersion`: `str`
 - `TemplateUrl`: `str`

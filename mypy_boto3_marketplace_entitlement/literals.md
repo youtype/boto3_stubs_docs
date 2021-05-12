@@ -3,18 +3,18 @@
 > [Index](..) > [MarketplaceEntitlementService](.) > Literals
 
 Auto-generated documentation for
-[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module
 [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 - [Literals for boto3 MarketplaceEntitlementService module](#literals-for-boto3-marketplaceentitlementservice-module)
-  - [GetEntitlementFilterName](#getentitlementfiltername)
+  - [GetEntitlementFilterNameType](#getentitlementfilternametype)
   - [GetEntitlementsPaginatorName](#getentitlementspaginatorname)
 
-## GetEntitlementFilterName
+## GetEntitlementFilterNameType
 
 ```python
-from mypy_boto3_marketplace_entitlement.literals import GetEntitlementFilterName
+from mypy_boto3_marketplace_entitlement.literals import GetEntitlementFilterNameType
 ```
 
 Values:

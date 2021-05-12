@@ -3,30 +3,30 @@
 > [Index](..) > [AmplifyBackend](.) > Literals
 
 Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
 [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 - [Literals for boto3 AmplifyBackend module](#literals-for-boto3-amplifybackend-module)
-  - [AdditionalConstraintsElement](#additionalconstraintselement)
-  - [AuthResources](#authresources)
-  - [DeliveryMethod](#deliverymethod)
+  - [AdditionalConstraintsElementType](#additionalconstraintselementtype)
+  - [AuthResourcesType](#authresourcestype)
+  - [DeliveryMethodType](#deliverymethodtype)
   - [ListBackendJobsPaginatorName](#listbackendjobspaginatorname)
-  - [MFAMode](#mfamode)
-  - [MfaTypesElement](#mfatypeselement)
-  - [Mode](#mode)
-  - [OAuthGrantType](#oauthgranttype)
-  - [OAuthScopesElement](#oauthscopeselement)
-  - [RequiredSignUpAttributesElement](#requiredsignupattributeselement)
-  - [ResolutionStrategy](#resolutionstrategy)
-  - [Service](#service)
-  - [SignInMethod](#signinmethod)
-  - [Status](#status)
+  - [MFAModeType](#mfamodetype)
+  - [MfaTypesElementType](#mfatypeselementtype)
+  - [ModeType](#modetype)
+  - [OAuthGrantTypeType](#oauthgranttypetype)
+  - [OAuthScopesElementType](#oauthscopeselementtype)
+  - [RequiredSignUpAttributesElementType](#requiredsignupattributeselementtype)
+  - [ResolutionStrategyType](#resolutionstrategytype)
+  - [ServiceType](#servicetype)
+  - [SignInMethodType](#signinmethodtype)
+  - [StatusType](#statustype)
 
-## AdditionalConstraintsElement
+## AdditionalConstraintsElementType
 
 ```python
-from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElement
+from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType
 ```
 
 Values:
@@ -36,10 +36,10 @@ Values:
 - `REQUIRE_SYMBOL`
 - `REQUIRE_UPPERCASE`
 
-## AuthResources
+## AuthResourcesType
 
 ```python
-from mypy_boto3_amplifybackend.literals import AuthResources
+from mypy_boto3_amplifybackend.literals import AuthResourcesType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `IDENTITY_POOL_AND_USER_POOL`
 - `USER_POOL_ONLY`
 
-## DeliveryMethod
+## DeliveryMethodType
 
 ```python
-from mypy_boto3_amplifybackend.literals import DeliveryMethod
+from mypy_boto3_amplifybackend.literals import DeliveryMethodType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 
 - `list_backend_jobs`
 
-## MFAMode
+## MFAModeType
 
 ```python
-from mypy_boto3_amplifybackend.literals import MFAMode
+from mypy_boto3_amplifybackend.literals import MFAModeType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `ON`
 - `OPTIONAL`
 
-## MfaTypesElement
+## MfaTypesElementType
 
 ```python
-from mypy_boto3_amplifybackend.literals import MfaTypesElement
+from mypy_boto3_amplifybackend.literals import MfaTypesElementType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `SMS`
 - `TOTP`
 
-## Mode
+## ModeType
 
 ```python
-from mypy_boto3_amplifybackend.literals import Mode
+from mypy_boto3_amplifybackend.literals import ModeType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `AWS_IAM`
 - `OPENID_CONNECT`
 
-## OAuthGrantType
+## OAuthGrantTypeType
 
 ```python
-from mypy_boto3_amplifybackend.literals import OAuthGrantType
+from mypy_boto3_amplifybackend.literals import OAuthGrantTypeType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 - `CODE`
 - `IMPLICIT`
 
-## OAuthScopesElement
+## OAuthScopesElementType
 
 ```python
-from mypy_boto3_amplifybackend.literals import OAuthScopesElement
+from mypy_boto3_amplifybackend.literals import OAuthScopesElementType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 - `PHONE`
 - `PROFILE`
 
-## RequiredSignUpAttributesElement
+## RequiredSignUpAttributesElementType
 
 ```python
-from mypy_boto3_amplifybackend.literals import RequiredSignUpAttributesElement
+from mypy_boto3_amplifybackend.literals import RequiredSignUpAttributesElementType
 ```
 
 Values:
@@ -155,10 +155,10 @@ Values:
 - `WEBSITE`
 - `ZONE_INFO`
 
-## ResolutionStrategy
+## ResolutionStrategyType
 
 ```python
-from mypy_boto3_amplifybackend.literals import ResolutionStrategy
+from mypy_boto3_amplifybackend.literals import ResolutionStrategyType
 ```
 
 Values:
@@ -168,20 +168,20 @@ Values:
 - `NONE`
 - `OPTIMISTIC_CONCURRENCY`
 
-## Service
+## ServiceType
 
 ```python
-from mypy_boto3_amplifybackend.literals import Service
+from mypy_boto3_amplifybackend.literals import ServiceType
 ```
 
 Values:
 
 - `COGNITO`
 
-## SignInMethod
+## SignInMethodType
 
 ```python
-from mypy_boto3_amplifybackend.literals import SignInMethod
+from mypy_boto3_amplifybackend.literals import SignInMethodType
 ```
 
 Values:
@@ -191,10 +191,10 @@ Values:
 - `PHONE_NUMBER`
 - `USERNAME`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_amplifybackend.literals import Status
+from mypy_boto3_amplifybackend.literals import StatusType
 ```
 
 Values:

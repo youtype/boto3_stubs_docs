@@ -3,7 +3,7 @@
 > [Index](..) > [Amplify](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify)
 type annotations stubs module
 [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
@@ -72,7 +72,7 @@ Required fields:
 - `name`: `str`
 - `description`: `str`
 - `repository`: `str`
-- `platform`: `Literal['WEB']` (see [Platform](./literals.md#platform))
+- `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
 - `createTime`: `datetime`
 - `updateTime`: `datetime`
 - `environmentVariables`: `Dict`\[`str`, `str`\]
@@ -86,7 +86,8 @@ Optional fields:
 - `iamServiceRoleArn`: `str`
 - `enableBranchAutoDeletion`: `bool`
 - `basicAuthCredentials`: `str`
-- `customRules`: `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
+- `customRules`:
+  `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
 - `productionBranch`:
   [ProductionBranchTypeDef](./type_defs.md#productionbranchtypedef)
 - `buildSpec`: `str`
@@ -115,7 +116,7 @@ from mypy_boto3_amplify.type_defs import AutoBranchCreationConfigTypeDef
 
 Optional fields:
 
-- `stage`: [Stage](./literals.md#stage)
+- `stage`: [StageType](./literals.md#stagetype)
 - `framework`: `str`
 - `enableAutoBuild`: `bool`
 - `environmentVariables`: `Dict`\[`str`, `str`\]
@@ -155,7 +156,7 @@ Required fields:
 - `branchArn`: `str`
 - `branchName`: `str`
 - `description`: `str`
-- `stage`: [Stage](./literals.md#stage)
+- `stage`: [StageType](./literals.md#stagetype)
 - `displayName`: `str`
 - `enableNotification`: `bool`
 - `createTime`: `datetime`
@@ -339,7 +340,7 @@ Required fields:
 - `domainAssociationArn`: `str`
 - `domainName`: `str`
 - `enableAutoSubDomain`: `bool`
-- `domainStatus`: [DomainStatus](./literals.md#domainstatus)
+- `domainStatus`: [DomainStatusType](./literals.md#domainstatustype)
 - `statusReason`: `str`
 - `subDomains`: `List`\[[SubDomainTypeDef](./type_defs.md#subdomaintypedef)\]
 
@@ -446,8 +447,8 @@ Required fields:
 - `commitMessage`: `str`
 - `commitTime`: `datetime`
 - `startTime`: `datetime`
-- `status`: [JobStatus](./literals.md#jobstatus)
-- `jobType`: [JobType](./literals.md#jobtype)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
+- `jobType`: [JobTypeType](./literals.md#jobtypetype)
 
 Optional fields:
 
@@ -544,7 +545,8 @@ from mypy_boto3_amplify.type_defs import ListJobsResultTypeDef
 
 Required fields:
 
-- `jobSummaries`: `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
+- `jobSummaries`:
+  `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
 
 Optional fields:
 
@@ -629,7 +631,7 @@ Required fields:
 
 - `stepName`: `str`
 - `startTime`: `datetime`
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `endTime`: `datetime`
 
 Optional fields:

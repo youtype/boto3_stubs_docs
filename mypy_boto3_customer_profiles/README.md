@@ -3,7 +3,7 @@
 > [Index](..) > CustomerProfiles
 
 Auto-generated documentation for
-[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
@@ -29,51 +29,51 @@ Can be used directly:
 from mypy_boto3_customer_profiles.client import CustomerProfilesClient
 ```
 
-CustomerProfilesClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_profile_key](./client.md#add-profile-key)
-- [can_paginate](./client.md#can-paginate)
-- [create_domain](./client.md#create-domain)
-- [create_profile](./client.md#create-profile)
-- [delete_domain](./client.md#delete-domain)
-- [delete_integration](./client.md#delete-integration)
-- [delete_profile](./client.md#delete-profile)
-- [delete_profile_key](./client.md#delete-profile-key)
-- [delete_profile_object](./client.md#delete-profile-object)
-- [delete_profile_object_type](./client.md#delete-profile-object-type)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_domain](./client.md#get-domain)
-- [get_integration](./client.md#get-integration)
-- [get_matches](./client.md#get-matches)
-- [get_profile_object_type](./client.md#get-profile-object-type)
-- [get_profile_object_type_template](./client.md#get-profile-object-type-template)
-- [list_account_integrations](./client.md#list-account-integrations)
-- [list_domains](./client.md#list-domains)
-- [list_integrations](./client.md#list-integrations)
-- [list_profile_object_type_templates](./client.md#list-profile-object-type-templates)
-- [list_profile_object_types](./client.md#list-profile-object-types)
-- [list_profile_objects](./client.md#list-profile-objects)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [merge_profiles](./client.md#merge-profiles)
-- [put_integration](./client.md#put-integration)
-- [put_profile_object](./client.md#put-profile-object)
-- [put_profile_object_type](./client.md#put-profile-object-type)
-- [search_profiles](./client.md#search-profiles)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_domain](./client.md#update-domain)
-- [update_profile](./client.md#update-profile)
+- [add_profile_key](./client.md#add_profile_key)
+- [can_paginate](./client.md#can_paginate)
+- [create_domain](./client.md#create_domain)
+- [create_profile](./client.md#create_profile)
+- [delete_domain](./client.md#delete_domain)
+- [delete_integration](./client.md#delete_integration)
+- [delete_profile](./client.md#delete_profile)
+- [delete_profile_key](./client.md#delete_profile_key)
+- [delete_profile_object](./client.md#delete_profile_object)
+- [delete_profile_object_type](./client.md#delete_profile_object_type)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_domain](./client.md#get_domain)
+- [get_integration](./client.md#get_integration)
+- [get_matches](./client.md#get_matches)
+- [get_profile_object_type](./client.md#get_profile_object_type)
+- [get_profile_object_type_template](./client.md#get_profile_object_type_template)
+- [list_account_integrations](./client.md#list_account_integrations)
+- [list_domains](./client.md#list_domains)
+- [list_integrations](./client.md#list_integrations)
+- [list_profile_object_type_templates](./client.md#list_profile_object_type_templates)
+- [list_profile_object_types](./client.md#list_profile_object_types)
+- [list_profile_objects](./client.md#list_profile_objects)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [merge_profiles](./client.md#merge_profiles)
+- [put_integration](./client.md#put_integration)
+- [put_profile_object](./client.md#put_profile_object)
+- [put_profile_object_type](./client.md#put_profile_object_type)
+- [search_profiles](./client.md#search_profiles)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_domain](./client.md#update_domain)
+- [update_profile](./client.md#update_profile)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
+CustomerProfilesClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BadRequestException
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
 
 ## Literals
 
@@ -82,23 +82,23 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_customer_profiles.literals import DataPullMode, ...
+from mypy_boto3_customer_profiles.literals import DataPullModeType, ...
 ```
 
-- [DataPullMode](./literals.md#datapullmode)
-- [FieldContentType](./literals.md#fieldcontenttype)
-- [Gender](./literals.md#gender)
-- [MarketoConnectorOperator](./literals.md#marketoconnectoroperator)
-- [OperatorPropertiesKeys](./literals.md#operatorpropertieskeys)
-- [PartyType](./literals.md#partytype)
-- [S3ConnectorOperator](./literals.md#s3connectoroperator)
-- [SalesforceConnectorOperator](./literals.md#salesforceconnectoroperator)
-- [ServiceNowConnectorOperator](./literals.md#servicenowconnectoroperator)
-- [SourceConnectorType](./literals.md#sourceconnectortype)
-- [StandardIdentifier](./literals.md#standardidentifier)
-- [TaskType](./literals.md#tasktype)
-- [TriggerType](./literals.md#triggertype)
-- [ZendeskConnectorOperator](./literals.md#zendeskconnectoroperator)
+- [DataPullModeType](./literals.md#datapullmodetype)
+- [FieldContentTypeType](./literals.md#fieldcontenttypetype)
+- [GenderType](./literals.md#gendertype)
+- [MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype)
+- [OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype)
+- [PartyTypeType](./literals.md#partytypetype)
+- [S3ConnectorOperatorType](./literals.md#s3connectoroperatortype)
+- [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
+- [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
+- [SourceConnectorTypeType](./literals.md#sourceconnectortypetype)
+- [StandardIdentifierType](./literals.md#standardidentifiertype)
+- [TaskTypeType](./literals.md#tasktypetype)
+- [TriggerTypeType](./literals.md#triggertypetype)
+- [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 
 ## Typed dictionaries
 

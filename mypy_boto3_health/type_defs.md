@@ -3,7 +3,7 @@
 > [Index](..) > [Health](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/health.html#Health)
 type annotations stubs module
 [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
@@ -53,7 +53,7 @@ Optional fields:
 - `entityUrl`: `str`
 - `awsAccountId`: `str`
 - `lastUpdatedTime`: `datetime`
-- `statusCode`: [entityStatusCode](./literals.md#entitystatuscode)
+- `statusCode`: [entityStatusCodeType](./literals.md#entitystatuscodetype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## DateTimeRangeTypeDef
@@ -76,7 +76,7 @@ from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationR
 Optional fields:
 
 - `affectedAccounts`: `List`\[`str`\]
-- `eventScopeCode`: [eventScopeCode](./literals.md#eventscopecode)
+- `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
 - `nextToken`: `str`
 
 ## DescribeAffectedEntitiesForOrganizationResponseTypeDef
@@ -226,7 +226,8 @@ Optional fields:
 - `lastUpdatedTimes`:
   `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `tags`: `List`\[`Dict`\[`str`, `str`\]\]
-- `statusCodes`: `List`\[[entityStatusCode](./literals.md#entitystatuscode)\]
+- `statusCodes`:
+  `List`\[[entityStatusCodeType](./literals.md#entitystatuscodetype)\]
 
 ## EventAccountFilterTypeDef
 
@@ -310,9 +311,10 @@ Optional fields:
 - `entityArns`: `List`\[`str`\]
 - `entityValues`: `List`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategory](./literals.md#eventtypecategory)\]
+  `List`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
 - `tags`: `List`\[`Dict`\[`str`, `str`\]\]
-- `eventStatusCodes`: `List`\[[eventStatusCode](./literals.md#eventstatuscode)\]
+- `eventStatusCodes`:
+  `List`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
 
 ## EventTypeDef
 
@@ -325,14 +327,15 @@ Optional fields:
 - `arn`: `str`
 - `service`: `str`
 - `eventTypeCode`: `str`
-- `eventTypeCategory`: [eventTypeCategory](./literals.md#eventtypecategory)
+- `eventTypeCategory`:
+  [eventTypeCategoryType](./literals.md#eventtypecategorytype)
 - `region`: `str`
 - `availabilityZone`: `str`
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
-- `statusCode`: [eventStatusCode](./literals.md#eventstatuscode)
-- `eventScopeCode`: [eventScopeCode](./literals.md#eventscopecode)
+- `statusCode`: [eventStatusCodeType](./literals.md#eventstatuscodetype)
+- `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
 
 ## EventTypeFilterTypeDef
 
@@ -345,7 +348,7 @@ Optional fields:
 - `eventTypeCodes`: `List`\[`str`\]
 - `services`: `List`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategory](./literals.md#eventtypecategory)\]
+  `List`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
 
 ## EventTypeTypeDef
 
@@ -357,7 +360,7 @@ Optional fields:
 
 - `service`: `str`
 - `code`: `str`
-- `category`: [eventTypeCategory](./literals.md#eventtypecategory)
+- `category`: [eventTypeCategoryType](./literals.md#eventtypecategorytype)
 
 ## OrganizationAffectedEntitiesErrorItemTypeDef
 
@@ -413,12 +416,14 @@ Optional fields:
 - `regions`: `List`\[`str`\]
 - `startTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `endTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-- `lastUpdatedTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
+- `lastUpdatedTime`:
+  [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `entityArns`: `List`\[`str`\]
 - `entityValues`: `List`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategory](./literals.md#eventtypecategory)\]
-- `eventStatusCodes`: `List`\[[eventStatusCode](./literals.md#eventstatuscode)\]
+  `List`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
+- `eventStatusCodes`:
+  `List`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
 
 ## OrganizationEventTypeDef
 
@@ -431,13 +436,14 @@ Optional fields:
 - `arn`: `str`
 - `service`: `str`
 - `eventTypeCode`: `str`
-- `eventTypeCategory`: [eventTypeCategory](./literals.md#eventtypecategory)
-- `eventScopeCode`: [eventScopeCode](./literals.md#eventscopecode)
+- `eventTypeCategory`:
+  [eventTypeCategoryType](./literals.md#eventtypecategorytype)
+- `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
 - `region`: `str`
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
-- `statusCode`: [eventStatusCode](./literals.md#eventstatuscode)
+- `statusCode`: [eventStatusCodeType](./literals.md#eventstatuscodetype)
 
 ## PaginatorConfigTypeDef
 

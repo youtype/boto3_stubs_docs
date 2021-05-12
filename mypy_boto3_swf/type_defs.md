@@ -3,7 +3,7 @@
 > [Index](..) > [SWF](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF)
 type annotations stubs module
 [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
@@ -228,7 +228,8 @@ from mypy_boto3_swf.type_defs import ActivityTaskTimedOutEventAttributesTypeDef
 
 Required fields:
 
-- `timeoutType`: [ActivityTaskTimeoutType](./literals.md#activitytasktimeouttype)
+- `timeoutType`:
+  [ActivityTaskTimeoutTypeType](./literals.md#activitytasktimeouttypetype)
 - `scheduledEventId`: `int`
 - `startedEventId`: `int`
 
@@ -291,7 +292,7 @@ from mypy_boto3_swf.type_defs import ActivityTypeInfoTypeDef
 Required fields:
 
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
-- `status`: [RegistrationStatus](./literals.md#registrationstatus)
+- `status`: [RegistrationStatusType](./literals.md#registrationstatustype)
 - `creationDate`: `datetime`
 
 Optional fields:
@@ -344,7 +345,8 @@ from mypy_boto3_swf.type_defs import CancelTimerFailedEventAttributesTypeDef
 Required fields:
 
 - `timerId`: `str`
-- `cause`: [CancelTimerFailedCause](./literals.md#canceltimerfailedcause)
+- `cause`:
+  [CancelTimerFailedCauseType](./literals.md#canceltimerfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## CancelWorkflowExecutionDecisionAttributesTypeDef
@@ -366,7 +368,7 @@ from mypy_boto3_swf.type_defs import CancelWorkflowExecutionFailedEventAttribute
 Required fields:
 
 - `cause`:
-  [CancelWorkflowExecutionFailedCause](./literals.md#cancelworkflowexecutionfailedcause)
+  [CancelWorkflowExecutionFailedCauseType](./literals.md#cancelworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## ChildWorkflowExecutionCanceledEventAttributesTypeDef
@@ -463,7 +465,7 @@ Required fields:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `timeoutType`: `Literal['START_TO_CLOSE']` (see
-  [WorkflowExecutionTimeoutType](./literals.md#workflowexecutiontimeouttype))
+  [WorkflowExecutionTimeoutTypeType](./literals.md#workflowexecutiontimeouttypetype))
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
@@ -475,7 +477,7 @@ from mypy_boto3_swf.type_defs import CloseStatusFilterTypeDef
 
 Required fields:
 
-- `status`: [CloseStatus](./literals.md#closestatus)
+- `status`: [CloseStatusType](./literals.md#closestatustype)
 
 ## CompleteWorkflowExecutionDecisionAttributesTypeDef
 
@@ -496,7 +498,7 @@ from mypy_boto3_swf.type_defs import CompleteWorkflowExecutionFailedEventAttribu
 Required fields:
 
 - `cause`:
-  [CompleteWorkflowExecutionFailedCause](./literals.md#completeworkflowexecutionfailedcause)
+  [CompleteWorkflowExecutionFailedCauseType](./literals.md#completeworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## ContinueAsNewWorkflowExecutionDecisionAttributesTypeDef
@@ -512,7 +514,7 @@ Optional fields:
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `taskPriority`: `str`
 - `taskStartToCloseTimeout`: `str`
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `tagList`: `List`\[`str`\]
 - `workflowTypeVersion`: `str`
 - `lambdaRole`: `str`
@@ -526,7 +528,7 @@ from mypy_boto3_swf.type_defs import ContinueAsNewWorkflowExecutionFailedEventAt
 Required fields:
 
 - `cause`:
-  [ContinueAsNewWorkflowExecutionFailedCause](./literals.md#continueasnewworkflowexecutionfailedcause)
+  [ContinueAsNewWorkflowExecutionFailedCauseType](./literals.md#continueasnewworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## DecisionTaskCompletedEventAttributesTypeDef
@@ -582,7 +584,7 @@ from mypy_boto3_swf.type_defs import DecisionTaskTimedOutEventAttributesTypeDef
 Required fields:
 
 - `timeoutType`: `Literal['START_TO_CLOSE']` (see
-  [DecisionTaskTimeoutType](./literals.md#decisiontasktimeouttype))
+  [DecisionTaskTimeoutTypeType](./literals.md#decisiontasktimeouttypetype))
 - `scheduledEventId`: `int`
 - `startedEventId`: `int`
 
@@ -614,7 +616,7 @@ from mypy_boto3_swf.type_defs import DecisionTypeDef
 
 Required fields:
 
-- `decisionType`: [DecisionType](./literals.md#decisiontype)
+- `decisionType`: [DecisionTypeType](./literals.md#decisiontypetype)
 
 Optional fields:
 
@@ -676,7 +678,7 @@ from mypy_boto3_swf.type_defs import DomainInfoTypeDef
 Required fields:
 
 - `name`: `str`
-- `status`: [RegistrationStatus](./literals.md#registrationstatus)
+- `status`: [RegistrationStatusType](./literals.md#registrationstatustype)
 
 Optional fields:
 
@@ -691,7 +693,8 @@ from mypy_boto3_swf.type_defs import DomainInfosTypeDef
 
 Required fields:
 
-- `domainInfos`: `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
+- `domainInfos`:
+  `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
 
 Optional fields:
 
@@ -755,7 +758,7 @@ from mypy_boto3_swf.type_defs import FailWorkflowExecutionFailedEventAttributesT
 Required fields:
 
 - `cause`:
-  [FailWorkflowExecutionFailedCause](./literals.md#failworkflowexecutionfailedcause)
+  [FailWorkflowExecutionFailedCauseType](./literals.md#failworkflowexecutionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## HistoryEventTypeDef
@@ -767,7 +770,7 @@ from mypy_boto3_swf.type_defs import HistoryEventTypeDef
 Required fields:
 
 - `eventTimestamp`: `datetime`
-- `eventType`: [EventType](./literals.md#eventtype)
+- `eventType`: [EventTypeType](./literals.md#eventtypetype)
 - `eventId`: `int`
 
 Optional fields:
@@ -968,7 +971,7 @@ Required fields:
 Optional fields:
 
 - `timeoutType`: `Literal['START_TO_CLOSE']` (see
-  [LambdaFunctionTimeoutType](./literals.md#lambdafunctiontimeouttype))
+  [LambdaFunctionTimeoutTypeType](./literals.md#lambdafunctiontimeouttypetype))
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1047,7 +1050,7 @@ Required fields:
 
 - `markerName`: `str`
 - `cause`: `Literal['OPERATION_NOT_PERMITTED']` (see
-  [RecordMarkerFailedCause](./literals.md#recordmarkerfailedcause))
+  [RecordMarkerFailedCauseType](./literals.md#recordmarkerfailedcausetype))
 - `decisionTaskCompletedEventId`: `int`
 
 ## RequestCancelActivityTaskDecisionAttributesTypeDef
@@ -1070,7 +1073,7 @@ Required fields:
 
 - `activityId`: `str`
 - `cause`:
-  [RequestCancelActivityTaskFailedCause](./literals.md#requestcancelactivitytaskfailedcause)
+  [RequestCancelActivityTaskFailedCauseType](./literals.md#requestcancelactivitytaskfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## RequestCancelExternalWorkflowExecutionDecisionAttributesTypeDef
@@ -1098,7 +1101,7 @@ Required fields:
 
 - `workflowId`: `str`
 - `cause`:
-  [RequestCancelExternalWorkflowExecutionFailedCause](./literals.md#requestcancelexternalworkflowexecutionfailedcause)
+  [RequestCancelExternalWorkflowExecutionFailedCauseType](./literals.md#requestcancelexternalworkflowexecutionfailedcausetype)
 - `initiatedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
 
@@ -1194,7 +1197,7 @@ Required fields:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 - `activityId`: `str`
 - `cause`:
-  [ScheduleActivityTaskFailedCause](./literals.md#scheduleactivitytaskfailedcause)
+  [ScheduleActivityTaskFailedCauseType](./literals.md#scheduleactivitytaskfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## ScheduleLambdaFunctionDecisionAttributesTypeDef
@@ -1225,7 +1228,7 @@ Required fields:
 - `id`: `str`
 - `name`: `str`
 - `cause`:
-  [ScheduleLambdaFunctionFailedCause](./literals.md#schedulelambdafunctionfailedcause)
+  [ScheduleLambdaFunctionFailedCauseType](./literals.md#schedulelambdafunctionfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## SignalExternalWorkflowExecutionDecisionAttributesTypeDef
@@ -1255,7 +1258,7 @@ Required fields:
 
 - `workflowId`: `str`
 - `cause`:
-  [SignalExternalWorkflowExecutionFailedCause](./literals.md#signalexternalworkflowexecutionfailedcause)
+  [SignalExternalWorkflowExecutionFailedCauseType](./literals.md#signalexternalworkflowexecutionfailedcausetype)
 - `initiatedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
 
@@ -1301,7 +1304,7 @@ Optional fields:
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `taskPriority`: `str`
 - `taskStartToCloseTimeout`: `str`
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `tagList`: `List`\[`str`\]
 - `lambdaRole`: `str`
 
@@ -1315,7 +1318,7 @@ Required fields:
 
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `cause`:
-  [StartChildWorkflowExecutionFailedCause](./literals.md#startchildworkflowexecutionfailedcause)
+  [StartChildWorkflowExecutionFailedCauseType](./literals.md#startchildworkflowexecutionfailedcausetype)
 - `workflowId`: `str`
 - `initiatedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
@@ -1336,7 +1339,7 @@ Required fields:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `decisionTaskCompletedEventId`: `int`
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
 Optional fields:
 
@@ -1358,7 +1361,7 @@ Optional fields:
 
 - `scheduledEventId`: `int`
 - `cause`: `Literal['ASSUME_ROLE_FAILED']` (see
-  [StartLambdaFunctionFailedCause](./literals.md#startlambdafunctionfailedcause))
+  [StartLambdaFunctionFailedCauseType](./literals.md#startlambdafunctionfailedcausetype))
 - `message`: `str`
 
 ## StartTimerDecisionAttributesTypeDef
@@ -1385,7 +1388,7 @@ from mypy_boto3_swf.type_defs import StartTimerFailedEventAttributesTypeDef
 Required fields:
 
 - `timerId`: `str`
-- `cause`: [StartTimerFailedCause](./literals.md#starttimerfailedcause)
+- `cause`: [StartTimerFailedCauseType](./literals.md#starttimerfailedcausetype)
 - `decisionTaskCompletedEventId`: `int`
 
 ## TagFilterTypeDef
@@ -1459,7 +1462,7 @@ Optional fields:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `externalInitiatedEventId`: `int`
 - `cause`: `Literal['CHILD_POLICY_APPLIED']` (see
-  [WorkflowExecutionCancelRequestedCause](./literals.md#workflowexecutioncancelrequestedcause))
+  [WorkflowExecutionCancelRequestedCauseType](./literals.md#workflowexecutioncancelrequestedcausetype))
 
 ## WorkflowExecutionCanceledEventAttributesTypeDef
 
@@ -1500,7 +1503,7 @@ Required fields:
 - `taskStartToCloseTimeout`: `str`
 - `executionStartToCloseTimeout`: `str`
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
 Optional fields:
 
@@ -1518,7 +1521,7 @@ Required fields:
 - `decisionTaskCompletedEventId`: `int`
 - `newExecutionRunId`: `str`
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
 Optional fields:
@@ -1601,12 +1604,12 @@ Required fields:
   [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `startTimestamp`: `datetime`
-- `executionStatus`: [ExecutionStatus](./literals.md#executionstatus)
+- `executionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
 
 Optional fields:
 
 - `closeTimestamp`: `datetime`
-- `closeStatus`: [CloseStatus](./literals.md#closestatus)
+- `closeStatus`: [CloseStatusType](./literals.md#closestatustype)
 - `parent`: [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `tagList`: `List`\[`str`\]
 - `cancelRequested`: `bool`
@@ -1668,7 +1671,7 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionStartedEventAttributesType
 
 Required fields:
 
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
@@ -1693,14 +1696,14 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionTerminatedEventAttributesT
 
 Required fields:
 
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
 Optional fields:
 
 - `reason`: `str`
 - `details`: `str`
 - `cause`:
-  [WorkflowExecutionTerminatedCause](./literals.md#workflowexecutionterminatedcause)
+  [WorkflowExecutionTerminatedCauseType](./literals.md#workflowexecutionterminatedcausetype)
 
 ## WorkflowExecutionTimedOutEventAttributesTypeDef
 
@@ -1711,8 +1714,8 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionTimedOutEventAttributesTyp
 Required fields:
 
 - `timeoutType`: `Literal['START_TO_CLOSE']` (see
-  [WorkflowExecutionTimeoutType](./literals.md#workflowexecutiontimeouttype))
-- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+  [WorkflowExecutionTimeoutTypeType](./literals.md#workflowexecutiontimeouttypetype))
+- `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
 ## WorkflowExecutionTypeDef
 
@@ -1737,7 +1740,7 @@ Optional fields:
 - `defaultExecutionStartToCloseTimeout`: `str`
 - `defaultTaskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `defaultTaskPriority`: `str`
-- `defaultChildPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `defaultChildPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `defaultLambdaRole`: `str`
 
 ## WorkflowTypeDetailTypeDef
@@ -1775,7 +1778,7 @@ from mypy_boto3_swf.type_defs import WorkflowTypeInfoTypeDef
 Required fields:
 
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
-- `status`: [RegistrationStatus](./literals.md#registrationstatus)
+- `status`: [RegistrationStatusType](./literals.md#registrationstatustype)
 - `creationDate`: `datetime`
 
 Optional fields:

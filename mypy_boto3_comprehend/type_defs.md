@@ -3,7 +3,7 @@
 > [Index](..) > [Comprehend](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
 [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
@@ -214,8 +214,9 @@ from mypy_boto3_comprehend.type_defs import BatchDetectSentimentItemResultTypeDe
 Optional fields:
 
 - `Index`: `int`
-- `Sentiment`: [SentimentType](./literals.md#sentimenttype)
-- `SentimentScore`: [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
+- `Sentiment`: [SentimentTypeType](./literals.md#sentimenttypetype)
+- `SentimentScore`:
+  [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
 
 ## BatchDetectSentimentResponseTypeDef
 
@@ -308,7 +309,8 @@ Optional fields:
 
 - `Classes`:
   `List`\[[DocumentClassTypeDef](./type_defs.md#documentclasstypedef)\]
-- `Labels`: `List`\[[DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef)\]
+- `Labels`:
+  `List`\[[DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef)\]
 
 ## ContainsPiiEntitiesResponseTypeDef
 
@@ -520,8 +522,9 @@ from mypy_boto3_comprehend.type_defs import DetectSentimentResponseTypeDef
 
 Optional fields:
 
-- `Sentiment`: [SentimentType](./literals.md#sentimenttype)
-- `SentimentScore`: [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
+- `Sentiment`: [SentimentTypeType](./literals.md#sentimenttypetype)
+- `SentimentScore`:
+  [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
 
 ## DetectSyntaxResponseTypeDef
 
@@ -554,7 +557,7 @@ from mypy_boto3_comprehend.type_defs import DocumentClassificationJobFilterTypeD
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -568,7 +571,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -589,7 +592,7 @@ from mypy_boto3_comprehend.type_defs import DocumentClassifierFilterTypeDef
 
 Optional fields:
 
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -602,7 +605,7 @@ from mypy_boto3_comprehend.type_defs import DocumentClassifierInputDataConfigTyp
 Optional fields:
 
 - `DataFormat`:
-  [DocumentClassifierDataFormat](./literals.md#documentclassifierdataformat)
+  [DocumentClassifierDataFormatType](./literals.md#documentclassifierdataformattype)
 - `S3Uri`: `str`
 - `LabelDelimiter`: `str`
 - `AugmentedManifests`:
@@ -628,8 +631,8 @@ from mypy_boto3_comprehend.type_defs import DocumentClassifierPropertiesTypeDef
 Optional fields:
 
 - `DocumentClassifierArn`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -644,7 +647,8 @@ Optional fields:
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Mode`: [DocumentClassifierMode](./literals.md#documentclassifiermode)
+- `Mode`:
+  [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
 
 ## DocumentLabelTypeDef
@@ -667,7 +671,7 @@ from mypy_boto3_comprehend.type_defs import DominantLanguageDetectionJobFilterTy
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -681,7 +685,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -713,7 +717,7 @@ from mypy_boto3_comprehend.type_defs import EndpointFilterTypeDef
 Optional fields:
 
 - `ModelArn`: `str`
-- `Status`: [EndpointStatus](./literals.md#endpointstatus)
+- `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 
@@ -726,7 +730,7 @@ from mypy_boto3_comprehend.type_defs import EndpointPropertiesTypeDef
 Optional fields:
 
 - `EndpointArn`: `str`
-- `Status`: [EndpointStatus](./literals.md#endpointstatus)
+- `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `Message`: `str`
 - `ModelArn`: `str`
 - `DesiredInferenceUnits`: `int`
@@ -744,7 +748,7 @@ from mypy_boto3_comprehend.type_defs import EntitiesDetectionJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -758,7 +762,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -767,7 +771,7 @@ Optional fields:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
@@ -780,7 +784,7 @@ from mypy_boto3_comprehend.type_defs import EntityLabelTypeDef
 
 Optional fields:
 
-- `Name`: [PiiEntityType](./literals.md#piientitytype)
+- `Name`: [PiiEntityTypeType](./literals.md#piientitytypetype)
 - `Score`: `float`
 
 ## EntityRecognizerAnnotationsTypeDef
@@ -833,7 +837,7 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerFilterTypeDef
 
 Optional fields:
 
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -851,7 +855,7 @@ Required fields:
 Optional fields:
 
 - `DataFormat`:
-  [EntityRecognizerDataFormat](./literals.md#entityrecognizerdataformat)
+  [EntityRecognizerDataFormatType](./literals.md#entityrecognizerdataformattype)
 - `Documents`:
   [EntityRecognizerDocumentsTypeDef](./type_defs.md#entityrecognizerdocumentstypedef)
 - `Annotations`:
@@ -898,8 +902,8 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerPropertiesTypeDef
 Optional fields:
 
 - `EntityRecognizerArn`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -923,7 +927,7 @@ from mypy_boto3_comprehend.type_defs import EntityTypeDef
 Optional fields:
 
 - `Score`: `float`
-- `Type`: [EntityType](./literals.md#entitytype)
+- `Type`: [EntityTypeType](./literals.md#entitytypetype)
 - `Text`: `str`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
@@ -959,7 +963,7 @@ from mypy_boto3_comprehend.type_defs import EventsDetectionJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -973,7 +977,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -981,7 +985,7 @@ Optional fields:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
 - `TargetEventTypes`: `List`\[`str`\]
 
@@ -997,7 +1001,7 @@ Required fields:
 
 Optional fields:
 
-- `InputFormat`: [InputFormat](./literals.md#inputformat)
+- `InputFormat`: [InputFormatType](./literals.md#inputformattype)
 
 ## KeyPhraseTypeDef
 
@@ -1021,7 +1025,7 @@ from mypy_boto3_comprehend.type_defs import KeyPhrasesDetectionJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -1035,7 +1039,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1043,7 +1047,7 @@ Optional fields:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
@@ -1225,7 +1229,7 @@ from mypy_boto3_comprehend.type_defs import PartOfSpeechTagTypeDef
 
 Optional fields:
 
-- `Tag`: [PartOfSpeechTagType](./literals.md#partofspeechtagtype)
+- `Tag`: [PartOfSpeechTagTypeType](./literals.md#partofspeechtagtypetype)
 - `Score`: `float`
 
 ## PiiEntitiesDetectionJobFilterTypeDef
@@ -1237,7 +1241,7 @@ from mypy_boto3_comprehend.type_defs import PiiEntitiesDetectionJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -1251,7 +1255,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1261,9 +1265,10 @@ Optional fields:
   [PiiOutputDataConfigTypeDef](./type_defs.md#piioutputdataconfigtypedef)
 - `RedactionConfig`:
   [RedactionConfigTypeDef](./type_defs.md#redactionconfigtypedef)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
-- `Mode`: [PiiEntitiesDetectionMode](./literals.md#piientitiesdetectionmode)
+- `Mode`:
+  [PiiEntitiesDetectionModeType](./literals.md#piientitiesdetectionmodetype)
 
 ## PiiEntityTypeDef
 
@@ -1274,7 +1279,7 @@ from mypy_boto3_comprehend.type_defs import PiiEntityTypeDef
 Optional fields:
 
 - `Score`: `float`
-- `Type`: [PiiEntityType](./literals.md#piientitytype)
+- `Type`: [PiiEntityTypeType](./literals.md#piientitytypetype)
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 
@@ -1300,9 +1305,10 @@ from mypy_boto3_comprehend.type_defs import RedactionConfigTypeDef
 
 Optional fields:
 
-- `PiiEntityTypes`: `List`\[[PiiEntityType](./literals.md#piientitytype)\]
+- `PiiEntityTypes`:
+  `List`\[[PiiEntityTypeType](./literals.md#piientitytypetype)\]
 - `MaskMode`:
-  [PiiEntitiesDetectionMaskMode](./literals.md#piientitiesdetectionmaskmode)
+  [PiiEntitiesDetectionMaskModeType](./literals.md#piientitiesdetectionmaskmodetype)
 - `MaskCharacter`: `str`
 
 ## SentimentDetectionJobFilterTypeDef
@@ -1314,7 +1320,7 @@ from mypy_boto3_comprehend.type_defs import SentimentDetectionJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -1328,7 +1334,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1336,7 +1342,7 @@ Optional fields:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
@@ -1363,7 +1369,7 @@ from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobRespon
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartDominantLanguageDetectionJobResponseTypeDef
 
@@ -1374,7 +1380,7 @@ from mypy_boto3_comprehend.type_defs import StartDominantLanguageDetectionJobRes
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartEntitiesDetectionJobResponseTypeDef
 
@@ -1385,7 +1391,7 @@ from mypy_boto3_comprehend.type_defs import StartEntitiesDetectionJobResponseTyp
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartEventsDetectionJobResponseTypeDef
 
@@ -1396,7 +1402,7 @@ from mypy_boto3_comprehend.type_defs import StartEventsDetectionJobResponseTypeD
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartKeyPhrasesDetectionJobResponseTypeDef
 
@@ -1407,7 +1413,7 @@ from mypy_boto3_comprehend.type_defs import StartKeyPhrasesDetectionJobResponseT
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartPiiEntitiesDetectionJobResponseTypeDef
 
@@ -1418,7 +1424,7 @@ from mypy_boto3_comprehend.type_defs import StartPiiEntitiesDetectionJobResponse
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartSentimentDetectionJobResponseTypeDef
 
@@ -1429,7 +1435,7 @@ from mypy_boto3_comprehend.type_defs import StartSentimentDetectionJobResponseTy
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StartTopicsDetectionJobResponseTypeDef
 
@@ -1440,7 +1446,7 @@ from mypy_boto3_comprehend.type_defs import StartTopicsDetectionJobResponseTypeD
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopDominantLanguageDetectionJobResponseTypeDef
 
@@ -1451,7 +1457,7 @@ from mypy_boto3_comprehend.type_defs import StopDominantLanguageDetectionJobResp
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopEntitiesDetectionJobResponseTypeDef
 
@@ -1462,7 +1468,7 @@ from mypy_boto3_comprehend.type_defs import StopEntitiesDetectionJobResponseType
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopEventsDetectionJobResponseTypeDef
 
@@ -1473,7 +1479,7 @@ from mypy_boto3_comprehend.type_defs import StopEventsDetectionJobResponseTypeDe
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopKeyPhrasesDetectionJobResponseTypeDef
 
@@ -1484,7 +1490,7 @@ from mypy_boto3_comprehend.type_defs import StopKeyPhrasesDetectionJobResponseTy
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopPiiEntitiesDetectionJobResponseTypeDef
 
@@ -1495,7 +1501,7 @@ from mypy_boto3_comprehend.type_defs import StopPiiEntitiesDetectionJobResponseT
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## StopSentimentDetectionJobResponseTypeDef
 
@@ -1506,7 +1512,7 @@ from mypy_boto3_comprehend.type_defs import StopSentimentDetectionJobResponseTyp
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
 ## SyntaxTokenTypeDef
 
@@ -1520,7 +1526,8 @@ Optional fields:
 - `Text`: `str`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
-- `PartOfSpeech`: [PartOfSpeechTagTypeDef](./type_defs.md#partofspeechtagtypedef)
+- `PartOfSpeech`:
+  [PartOfSpeechTagTypeDef](./type_defs.md#partofspeechtagtypedef)
 
 ## TagTypeDef
 
@@ -1545,7 +1552,7 @@ from mypy_boto3_comprehend.type_defs import TopicsDetectionJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -1559,7 +1566,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`

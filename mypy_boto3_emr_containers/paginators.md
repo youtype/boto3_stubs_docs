@@ -3,7 +3,7 @@
 > [Index](..) > [EMRContainers](.) > Paginators
 
 Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
@@ -27,7 +27,7 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
 ```
 
 Boto3 documentation:
-[EMRContainers.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
+[EMRContainers.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
 
 Arguments for `ListJobRunsPaginator.paginate` method:
 
@@ -35,7 +35,7 @@ Arguments for `ListJobRunsPaginator.paginate` method:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `name`: `str`
-- `states`: `List`\[[JobRunState](./literals.md#jobrunstate)\]
+- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -57,7 +57,7 @@ def get_list_managed_endpoints_paginator() -> ListManagedEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[EMRContainers.Paginator.ListManagedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
+[EMRContainers.Paginator.ListManagedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
 
 Arguments for `ListManagedEndpointsPaginator.paginate` method:
 
@@ -65,7 +65,7 @@ Arguments for `ListManagedEndpointsPaginator.paginate` method:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `types`: `List`\[`str`\]
-- `states`: `List`\[[EndpointState](./literals.md#endpointstate)\]
+- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -87,16 +87,17 @@ def get_list_virtual_clusters_paginator() -> ListVirtualClustersPaginator:
 ```
 
 Boto3 documentation:
-[EMRContainers.Paginator.ListVirtualClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
+[EMRContainers.Paginator.ListVirtualClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
 
 Arguments for `ListVirtualClustersPaginator.paginate` method:
 
 - `containerProviderId`: `str`
 - `containerProviderType`: `Literal['EKS']` (see
-  [ContainerProviderType](./literals.md#containerprovidertype))
+  [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
 - `createdAfter`: `datetime`
 - `createdBefore`: `datetime`
-- `states`: `List`\[[VirtualClusterState](./literals.md#virtualclusterstate)\]
+- `states`:
+  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutEquipment](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
 [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
@@ -53,7 +53,7 @@ Optional fields:
 
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `Status`: [DatasetStatus](./literals.md#datasetstatus)
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 
 ## CreateInferenceSchedulerResponseTypeDef
 
@@ -65,7 +65,8 @@ Optional fields:
 
 - `InferenceSchedulerArn`: `str`
 - `InferenceSchedulerName`: `str`
-- `Status`: [InferenceSchedulerStatus](./literals.md#inferenceschedulerstatus)
+- `Status`:
+  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 
 ## CreateModelResponseTypeDef
 
@@ -76,7 +77,7 @@ from mypy_boto3_lookoutequipment.type_defs import CreateModelResponseTypeDef
 Optional fields:
 
 - `ModelArn`: `str`
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 
 ## DataIngestionJobSummaryTypeDef
 
@@ -91,7 +92,7 @@ Optional fields:
 - `DatasetArn`: `str`
 - `IngestionInputConfiguration`:
   [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
-- `Status`: [IngestionJobStatus](./literals.md#ingestionjobstatus)
+- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 
 ## DataPreProcessingConfigurationTypeDef
 
@@ -101,7 +102,8 @@ from mypy_boto3_lookoutequipment.type_defs import DataPreProcessingConfiguration
 
 Optional fields:
 
-- `TargetSamplingRate`: [TargetSamplingRate](./literals.md#targetsamplingrate)
+- `TargetSamplingRate`:
+  [TargetSamplingRateType](./literals.md#targetsamplingratetype)
 
 ## DatasetSchemaTypeDef
 
@@ -123,7 +125,7 @@ Optional fields:
 
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `Status`: [DatasetStatus](./literals.md#datasetstatus)
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `CreatedAt`: `datetime`
 
 ## DescribeDataIngestionJobResponseTypeDef
@@ -140,7 +142,7 @@ Optional fields:
   [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
 - `RoleArn`: `str`
 - `CreatedAt`: `datetime`
-- `Status`: [IngestionJobStatus](./literals.md#ingestionjobstatus)
+- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 - `FailedReason`: `str`
 
 ## DescribeDatasetResponseTypeDef
@@ -155,7 +157,7 @@ Optional fields:
 - `DatasetArn`: `str`
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
-- `Status`: [DatasetStatus](./literals.md#datasetstatus)
+- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `Schema`: `str`
 - `ServerSideKmsKeyId`: `str`
 - `IngestionInputConfiguration`:
@@ -173,9 +175,11 @@ Optional fields:
 - `ModelName`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: [InferenceSchedulerStatus](./literals.md#inferenceschedulerstatus)
+- `Status`:
+  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 - `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`: [DataUploadFrequency](./literals.md#datauploadfrequency)
+- `DataUploadFrequency`:
+  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `DataInputConfiguration`:
@@ -207,7 +211,7 @@ Optional fields:
 - `RoleArn`: `str`
 - `DataPreProcessingConfiguration`:
   [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `TrainingExecutionStartTime`: `datetime`
 - `TrainingExecutionEndTime`: `datetime`
 - `FailedReason`: `str`
@@ -236,7 +240,8 @@ Optional fields:
 - `DataOutputConfiguration`:
   [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
 - `CustomerResultObject`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-- `Status`: [InferenceExecutionStatus](./literals.md#inferenceexecutionstatus)
+- `Status`:
+  [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
 - `FailedReason`: `str`
 
 ## InferenceInputConfigurationTypeDef
@@ -319,9 +324,11 @@ Optional fields:
 - `ModelArn`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: [InferenceSchedulerStatus](./literals.md#inferenceschedulerstatus)
+- `Status`:
+  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 - `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`: [DataUploadFrequency](./literals.md#datauploadfrequency)
+- `DataUploadFrequency`:
+  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
 
 ## IngestionInputConfigurationTypeDef
 
@@ -455,7 +462,7 @@ Optional fields:
 - `ModelArn`: `str`
 - `DatasetName`: `str`
 - `DatasetArn`: `str`
-- `Status`: [ModelStatus](./literals.md#modelstatus)
+- `Status`: [ModelStatusType](./literals.md#modelstatustype)
 - `CreatedAt`: `datetime`
 
 ## S3ObjectTypeDef
@@ -478,7 +485,7 @@ from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobResponseT
 Optional fields:
 
 - `JobId`: `str`
-- `Status`: [IngestionJobStatus](./literals.md#ingestionjobstatus)
+- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 
 ## StartInferenceSchedulerResponseTypeDef
 
@@ -492,7 +499,8 @@ Optional fields:
 - `ModelName`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: [InferenceSchedulerStatus](./literals.md#inferenceschedulerstatus)
+- `Status`:
+  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 
 ## StopInferenceSchedulerResponseTypeDef
 
@@ -506,7 +514,8 @@ Optional fields:
 - `ModelName`: `str`
 - `InferenceSchedulerName`: `str`
 - `InferenceSchedulerArn`: `str`
-- `Status`: [InferenceSchedulerStatus](./literals.md#inferenceschedulerstatus)
+- `Status`:
+  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 
 ## TagTypeDef
 

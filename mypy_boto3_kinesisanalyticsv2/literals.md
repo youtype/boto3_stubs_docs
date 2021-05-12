@@ -3,29 +3,29 @@
 > [Index](..) > [KinesisAnalyticsV2](.) > Literals
 
 Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [Literals for boto3 KinesisAnalyticsV2 module](#literals-for-boto3-kinesisanalyticsv2-module)
-  - [ApplicationRestoreType](#applicationrestoretype)
-  - [ApplicationStatus](#applicationstatus)
-  - [CodeContentType](#codecontenttype)
-  - [ConfigurationType](#configurationtype)
-  - [InputStartingPosition](#inputstartingposition)
+  - [ApplicationRestoreTypeType](#applicationrestoretypetype)
+  - [ApplicationStatusType](#applicationstatustype)
+  - [CodeContentTypeType](#codecontenttypetype)
+  - [ConfigurationTypeType](#configurationtypetype)
+  - [InputStartingPositionType](#inputstartingpositiontype)
   - [ListApplicationSnapshotsPaginatorName](#listapplicationsnapshotspaginatorname)
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
-  - [LogLevel](#loglevel)
-  - [MetricsLevel](#metricslevel)
-  - [RecordFormatType](#recordformattype)
-  - [RuntimeEnvironment](#runtimeenvironment)
-  - [SnapshotStatus](#snapshotstatus)
-  - [UrlType](#urltype)
+  - [LogLevelType](#logleveltype)
+  - [MetricsLevelType](#metricsleveltype)
+  - [RecordFormatTypeType](#recordformattypetype)
+  - [RuntimeEnvironmentType](#runtimeenvironmenttype)
+  - [SnapshotStatusType](#snapshotstatustype)
+  - [UrlTypeType](#urltypetype)
 
-## ApplicationRestoreType
+## ApplicationRestoreTypeType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreType
+from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreTypeType
 ```
 
 Values:
@@ -34,10 +34,10 @@ Values:
 - `RESTORE_FROM_LATEST_SNAPSHOT`
 - `SKIP_RESTORE_FROM_SNAPSHOT`
 
-## ApplicationStatus
+## ApplicationStatusType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import ApplicationStatus
+from mypy_boto3_kinesisanalyticsv2.literals import ApplicationStatusType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `STOPPING`
 - `UPDATING`
 
-## CodeContentType
+## CodeContentTypeType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import CodeContentType
+from mypy_boto3_kinesisanalyticsv2.literals import CodeContentTypeType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `PLAINTEXT`
 - `ZIPFILE`
 
-## ConfigurationType
+## ConfigurationTypeType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import ConfigurationType
+from mypy_boto3_kinesisanalyticsv2.literals import ConfigurationTypeType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `CUSTOM`
 - `DEFAULT`
 
-## InputStartingPosition
+## InputStartingPositionType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import InputStartingPosition
+from mypy_boto3_kinesisanalyticsv2.literals import InputStartingPositionType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 
 - `list_applications`
 
-## LogLevel
+## LogLevelType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import LogLevel
+from mypy_boto3_kinesisanalyticsv2.literals import LogLevelType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `INFO`
 - `WARN`
 
-## MetricsLevel
+## MetricsLevelType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import MetricsLevel
+from mypy_boto3_kinesisanalyticsv2.literals import MetricsLevelType
 ```
 
 Values:
@@ -134,10 +134,10 @@ Values:
 - `PARALLELISM`
 - `TASK`
 
-## RecordFormatType
+## RecordFormatTypeType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import RecordFormatType
+from mypy_boto3_kinesisanalyticsv2.literals import RecordFormatTypeType
 ```
 
 Values:
@@ -145,10 +145,10 @@ Values:
 - `CSV`
 - `JSON`
 
-## RuntimeEnvironment
+## RuntimeEnvironmentType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import RuntimeEnvironment
+from mypy_boto3_kinesisanalyticsv2.literals import RuntimeEnvironmentType
 ```
 
 Values:
@@ -158,10 +158,10 @@ Values:
 - `FLINK-1_8`
 - `SQL-1_0`
 
-## SnapshotStatus
+## SnapshotStatusType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import SnapshotStatus
+from mypy_boto3_kinesisanalyticsv2.literals import SnapshotStatusType
 ```
 
 Values:
@@ -171,10 +171,10 @@ Values:
 - `FAILED`
 - `READY`
 
-## UrlType
+## UrlTypeType
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import UrlType
+from mypy_boto3_kinesisanalyticsv2.literals import UrlTypeType
 ```
 
 Values:

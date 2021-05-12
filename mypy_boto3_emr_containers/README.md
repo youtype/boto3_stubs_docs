@@ -3,7 +3,7 @@
 > [Index](..) > EMRContainers
 
 Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
@@ -30,35 +30,35 @@ Can be used directly:
 from mypy_boto3_emr_containers.client import EMRContainersClient
 ```
 
-EMRContainersClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_job_run](./client.md#cancel-job-run)
-- [create_managed_endpoint](./client.md#create-managed-endpoint)
-- [create_virtual_cluster](./client.md#create-virtual-cluster)
-- [delete_managed_endpoint](./client.md#delete-managed-endpoint)
-- [delete_virtual_cluster](./client.md#delete-virtual-cluster)
-- [describe_job_run](./client.md#describe-job-run)
-- [describe_managed_endpoint](./client.md#describe-managed-endpoint)
-- [describe_virtual_cluster](./client.md#describe-virtual-cluster)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_job_runs](./client.md#list-job-runs)
-- [list_managed_endpoints](./client.md#list-managed-endpoints)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_virtual_clusters](./client.md#list-virtual-clusters)
-- [start_job_run](./client.md#start-job-run)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_job_run](./client.md#cancel_job_run)
+- [create_managed_endpoint](./client.md#create_managed_endpoint)
+- [create_virtual_cluster](./client.md#create_virtual_cluster)
+- [delete_managed_endpoint](./client.md#delete_managed_endpoint)
+- [delete_virtual_cluster](./client.md#delete_virtual_cluster)
+- [describe_job_run](./client.md#describe_job_run)
+- [describe_managed_endpoint](./client.md#describe_managed_endpoint)
+- [describe_virtual_cluster](./client.md#describe_virtual_cluster)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_job_runs](./client.md#list_job_runs)
+- [list_managed_endpoints](./client.md#list_managed_endpoints)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_virtual_clusters](./client.md#list_virtual_clusters)
+- [start_job_run](./client.md#start_job_run)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+EMRContainersClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -82,18 +82,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr_containers.literals import ContainerProviderType, ...
+from mypy_boto3_emr_containers.literals import ContainerProviderTypeType, ...
 ```
 
-- [ContainerProviderType](./literals.md#containerprovidertype)
-- [EndpointState](./literals.md#endpointstate)
-- [FailureReason](./literals.md#failurereason)
-- [JobRunState](./literals.md#jobrunstate)
+- [ContainerProviderTypeType](./literals.md#containerprovidertypetype)
+- [EndpointStateType](./literals.md#endpointstatetype)
+- [FailureReasonType](./literals.md#failurereasontype)
+- [JobRunStateType](./literals.md#jobrunstatetype)
 - [ListJobRunsPaginatorName](./literals.md#listjobrunspaginatorname)
 - [ListManagedEndpointsPaginatorName](./literals.md#listmanagedendpointspaginatorname)
 - [ListVirtualClustersPaginatorName](./literals.md#listvirtualclusterspaginatorname)
-- [PersistentAppUI](./literals.md#persistentappui)
-- [VirtualClusterState](./literals.md#virtualclusterstate)
+- [PersistentAppUIType](./literals.md#persistentappuitype)
+- [VirtualClusterStateType](./literals.md#virtualclusterstatetype)
 
 ## Typed dictionaries
 

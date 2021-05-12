@@ -3,7 +3,7 @@
 > [Index](..) > [LicenseManager](.) > Paginators
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
@@ -29,7 +29,7 @@ def get_list_associations_for_license_configuration_paginator() -> ListAssociati
 ```
 
 Boto3 documentation:
-[LicenseManager.Paginator.ListAssociationsForLicenseConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListAssociationsForLicenseConfiguration)
+[LicenseManager.Paginator.ListAssociationsForLicenseConfiguration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager.Paginator.ListAssociationsForLicenseConfiguration)
 
 Arguments for `ListAssociationsForLicenseConfigurationPaginator.paginate`
 method:
@@ -56,7 +56,7 @@ def get_list_license_configurations_paginator() -> ListLicenseConfigurationsPagi
 ```
 
 Boto3 documentation:
-[LicenseManager.Paginator.ListLicenseConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseConfigurations)
+[LicenseManager.Paginator.ListLicenseConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseConfigurations)
 
 Arguments for `ListLicenseConfigurationsPaginator.paginate` method:
 
@@ -83,7 +83,7 @@ def get_list_license_specifications_for_resource_paginator() -> ListLicenseSpeci
 ```
 
 Boto3 documentation:
-[LicenseManager.Paginator.ListLicenseSpecificationsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseSpecificationsForResource)
+[LicenseManager.Paginator.ListLicenseSpecificationsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseSpecificationsForResource)
 
 Arguments for `ListLicenseSpecificationsForResourcePaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_list_resource_inventory_paginator() -> ListResourceInventoryPaginator:
 ```
 
 Boto3 documentation:
-[LicenseManager.Paginator.ListResourceInventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListResourceInventory)
+[LicenseManager.Paginator.ListResourceInventory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager.Paginator.ListResourceInventory)
 
 Arguments for `ListResourceInventoryPaginator.paginate` method:
 
@@ -136,7 +136,7 @@ def get_list_usage_for_license_configuration_paginator() -> ListUsageForLicenseC
 ```
 
 Boto3 documentation:
-[LicenseManager.Paginator.ListUsageForLicenseConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListUsageForLicenseConfiguration)
+[LicenseManager.Paginator.ListUsageForLicenseConfiguration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager.Paginator.ListUsageForLicenseConfiguration)
 
 Arguments for `ListUsageForLicenseConfigurationPaginator.paginate` method:
 

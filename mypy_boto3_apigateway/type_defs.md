@@ -3,7 +3,7 @@
 > [Index](..) > [APIGateway](.) > Typed dictionaries
 
 Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
 [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
@@ -166,7 +166,7 @@ Optional fields:
 
 - `id`: `str`
 - `name`: `str`
-- `type`: [AuthorizerType](./literals.md#authorizertype)
+- `type`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `providerARNs`: `List`\[`str`\]
 - `authType`: `str`
 - `authorizerUri`: `str`
@@ -306,7 +306,7 @@ from mypy_boto3_apigateway.type_defs import DocumentationPartLocationTypeDef
 
 Required fields:
 
-- `type`: [DocumentationPartType](./literals.md#documentationparttype)
+- `type`: [DocumentationPartTypeType](./literals.md#documentationparttypetype)
 
 Optional fields:
 
@@ -384,9 +384,10 @@ Optional fields:
 - `distributionHostedZoneId`: `str`
 - `endpointConfiguration`:
   [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
-- `domainNameStatus`: [DomainNameStatus](./literals.md#domainnamestatus)
+- `domainNameStatus`:
+  [DomainNameStatusType](./literals.md#domainnamestatustype)
 - `domainNameStatusMessage`: `str`
-- `securityPolicy`: [SecurityPolicy](./literals.md#securitypolicy)
+- `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 - `tags`: `Dict`\[`str`, `str`\]
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
@@ -410,7 +411,7 @@ from mypy_boto3_apigateway.type_defs import EndpointConfigurationTypeDef
 
 Optional fields:
 
-- `types`: `List`\[[EndpointType](./literals.md#endpointtype)\]
+- `types`: `List`\[[EndpointTypeType](./literals.md#endpointtypetype)\]
 - `vpcEndpointIds`: `List`\[`str`\]
 
 ## ExportResponseTypeDef
@@ -433,7 +434,8 @@ from mypy_boto3_apigateway.type_defs import GatewayResponseTypeDef
 
 Optional fields:
 
-- `responseType`: [GatewayResponseType](./literals.md#gatewayresponsetype)
+- `responseType`:
+  [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype)
 - `statusCode`: `str`
 - `responseParameters`: `Dict`\[`str`, `str`\]
 - `responseTemplates`: `Dict`\[`str`, `str`\]
@@ -464,7 +466,7 @@ Optional fields:
 - `responseParameters`: `Dict`\[`str`, `str`\]
 - `responseTemplates`: `Dict`\[`str`, `str`\]
 - `contentHandling`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 
 ## IntegrationTypeDef
 
@@ -474,17 +476,17 @@ from mypy_boto3_apigateway.type_defs import IntegrationTypeDef
 
 Optional fields:
 
-- `type`: [IntegrationType](./literals.md#integrationtype)
+- `type`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `httpMethod`: `str`
 - `uri`: `str`
-- `connectionType`: [ConnectionType](./literals.md#connectiontype)
+- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `connectionId`: `str`
 - `credentials`: `str`
 - `requestParameters`: `Dict`\[`str`, `str`\]
 - `requestTemplates`: `Dict`\[`str`, `str`\]
 - `passthroughBehavior`: `str`
 - `contentHandling`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `timeoutInMillis`: `int`
 - `cacheNamespace`: `str`
 - `cacheKeyParameters`: `List`\[`str`\]
@@ -522,7 +524,7 @@ Optional fields:
 - `cacheDataEncrypted`: `bool`
 - `requireAuthorizationForCacheControl`: `bool`
 - `unauthorizedCacheControlHeaderStrategy`:
-  [UnauthorizedCacheControlHeaderStrategy](./literals.md#unauthorizedcachecontrolheaderstrategy)
+  [UnauthorizedCacheControlHeaderStrategyType](./literals.md#unauthorizedcachecontrolheaderstrategytype)
 
 ## MethodSnapshotTypeDef
 
@@ -624,7 +626,7 @@ from mypy_boto3_apigateway.type_defs import PatchOperationTypeDef
 
 Optional fields:
 
-- `op`: [Op](./literals.md#op)
+- `op`: [OpType](./literals.md#optype)
 - `path`: `str`
 - `value`: `str`
 - `from`: `str`
@@ -639,7 +641,7 @@ Optional fields:
 
 - `limit`: `int`
 - `offset`: `int`
-- `period`: [QuotaPeriodType](./literals.md#quotaperiodtype)
+- `period`: [QuotaPeriodTypeType](./literals.md#quotaperiodtypetype)
 
 ## RequestValidatorTypeDef
 
@@ -708,7 +710,7 @@ Optional fields:
 - `warnings`: `List`\[`str`\]
 - `binaryMediaTypes`: `List`\[`str`\]
 - `minimumCompressionSize`: `int`
-- `apiKeySource`: [ApiKeySourceType](./literals.md#apikeysourcetype)
+- `apiKeySource`: [ApiKeySourceTypeType](./literals.md#apikeysourcetypetype)
 - `endpointConfiguration`:
   [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
 - `policy`: `str`
@@ -801,15 +803,18 @@ Optional fields:
 - `stageName`: `str`
 - `description`: `str`
 - `cacheClusterEnabled`: `bool`
-- `cacheClusterSize`: [CacheClusterSize](./literals.md#cacheclustersize)
-- `cacheClusterStatus`: [CacheClusterStatus](./literals.md#cacheclusterstatus)
+- `cacheClusterSize`:
+  [CacheClusterSizeType](./literals.md#cacheclustersizetype)
+- `cacheClusterStatus`:
+  [CacheClusterStatusType](./literals.md#cacheclusterstatustype)
 - `methodSettings`: `Dict`\[`str`,
   [MethodSettingTypeDef](./type_defs.md#methodsettingtypedef)\]
 - `variables`: `Dict`\[`str`, `str`\]
 - `documentationVersion`: `str`
 - `accessLogSettings`:
   [AccessLogSettingsTypeDef](./type_defs.md#accesslogsettingstypedef)
-- `canarySettings`: [CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef)
+- `canarySettings`:
+  [CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef)
 - `tracingEnabled`: `bool`
 - `webAclArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -976,7 +981,7 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 - `targetArns`: `List`\[`str`\]
-- `status`: [VpcLinkStatus](./literals.md#vpclinkstatus)
+- `status`: [VpcLinkStatusType](./literals.md#vpclinkstatustype)
 - `statusMessage`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 

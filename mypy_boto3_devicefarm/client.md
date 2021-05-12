@@ -3,7 +3,7 @@
 > [Index](..) > [DeviceFarm](.) > DeviceFarmClient
 
 Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
 [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
@@ -106,7 +106,7 @@ def get_devicefarm_client() -> DeviceFarmClient:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client)
+[DeviceFarm.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client)
 
 ## Exceptions
 
@@ -143,7 +143,7 @@ Exceptions:
 Type annotations for `boto3.client("devicefarm").can_paginate` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.can_paginate)
+[DeviceFarm.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.can_paginate)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns `bool`.
 Type annotations for `boto3.client("devicefarm").create_device_pool` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool)
+[DeviceFarm.Client.create_device_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("devicefarm").create_instance_profile`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile)
+[DeviceFarm.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile)
 
 Arguments:
 
@@ -194,14 +194,14 @@ Type annotations for `boto3.client("devicefarm").create_network_profile`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile)
+[DeviceFarm.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile)
 
 Arguments:
 
 - `projectArn`: `str` *(required)*
 - `name`: `str` *(required)*
 - `description`: `str`
-- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
 - `uplinkBandwidthBits`: `int`
 - `downlinkBandwidthBits`: `int`
 - `uplinkDelayMs`: `int`
@@ -219,7 +219,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").create_project` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
+[DeviceFarm.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Type annotations for `boto3.client("devicefarm").create_remote_access_session`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session)
+[DeviceFarm.Client.create_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Arguments:
 - `clientId`: `str`
 - `configuration`:
   [CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef)
-- `interactionMode`: [InteractionMode](./literals.md#interactionmode)
+- `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
 - `skipAppResign`: `bool`
 
 Returns
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("devicefarm").create_test_grid_project`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project)
+[DeviceFarm.Client.create_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").create_test_grid_url` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_test_grid_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
+[DeviceFarm.Client.create_test_grid_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
 
 Arguments:
 
@@ -292,13 +292,13 @@ Returns
 Type annotations for `boto3.client("devicefarm").create_upload` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_upload)
+[DeviceFarm.Client.create_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_upload)
 
 Arguments:
 
 - `projectArn`: `str` *(required)*
 - `name`: `str` *(required)*
-- `type`: [UploadType](./literals.md#uploadtype) *(required)*
+- `type`: [UploadTypeType](./literals.md#uploadtypetype) *(required)*
 - `contentType`: `str`
 
 Returns [CreateUploadResultTypeDef](./type_defs.md#createuploadresulttypedef).
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("devicefarm").create_vpce_configuration`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.create_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration)
+[DeviceFarm.Client.create_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration)
 
 Arguments:
 
@@ -326,7 +326,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").delete_device_pool` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
+[DeviceFarm.Client.delete_device_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
 
 Arguments:
 
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("devicefarm").delete_instance_profile`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
+[DeviceFarm.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
 
 Arguments:
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("devicefarm").delete_network_profile`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
+[DeviceFarm.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("devicefarm").delete_project` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
+[DeviceFarm.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("devicefarm").delete_remote_access_session`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
+[DeviceFarm.Client.delete_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("devicefarm").delete_run` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
+[DeviceFarm.Client.delete_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
 
 Arguments:
 
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("devicefarm").delete_test_grid_project`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
+[DeviceFarm.Client.delete_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("devicefarm").delete_upload` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
+[DeviceFarm.Client.delete_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("devicefarm").delete_vpce_configuration`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.delete_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
+[DeviceFarm.Client.delete_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("devicefarm").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.generate_presigned_url)
+[DeviceFarm.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.generate_presigned_url)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Returns `str`.
 Type annotations for `boto3.client("devicefarm").get_account_settings` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
+[DeviceFarm.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
 
 Returns
 [GetAccountSettingsResultTypeDef](./type_defs.md#getaccountsettingsresulttypedef).
@@ -475,7 +475,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_device` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
+[DeviceFarm.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
 
 Arguments:
 
@@ -488,7 +488,7 @@ Returns [GetDeviceResultTypeDef](./type_defs.md#getdeviceresulttypedef).
 Type annotations for `boto3.client("devicefarm").get_device_instance` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
+[DeviceFarm.Client.get_device_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_device_pool` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
+[DeviceFarm.Client.get_device_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
 
 Arguments:
 
@@ -517,13 +517,13 @@ Type annotations for `boto3.client("devicefarm").get_device_pool_compatibility`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_device_pool_compatibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility)
+[DeviceFarm.Client.get_device_pool_compatibility](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility)
 
 Arguments:
 
 - `devicePoolArn`: `str` *(required)*
 - `appArn`: `str`
-- `testType`: [TestType](./literals.md#testtype)
+- `testType`: [TestTypeType](./literals.md#testtypetype)
 - `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
 - `configuration`:
   [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
@@ -536,7 +536,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_instance_profile` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
+[DeviceFarm.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_job` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
+[DeviceFarm.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
 
 Arguments:
 
@@ -563,7 +563,7 @@ Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
 Type annotations for `boto3.client("devicefarm").get_network_profile` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
+[DeviceFarm.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
 
 Arguments:
 
@@ -577,7 +577,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_offering_status` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_offering_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
+[DeviceFarm.Client.get_offering_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
 
 Arguments:
 
@@ -591,7 +591,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_project` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
+[DeviceFarm.Client.get_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
 
 Arguments:
 
@@ -605,7 +605,7 @@ Type annotations for `boto3.client("devicefarm").get_remote_access_session`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
+[DeviceFarm.Client.get_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_run` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
+[DeviceFarm.Client.get_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
 
 Arguments:
 
@@ -632,7 +632,7 @@ Returns [GetRunResultTypeDef](./type_defs.md#getrunresulttypedef).
 Type annotations for `boto3.client("devicefarm").get_suite` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_suite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
+[DeviceFarm.Client.get_suite](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
 
 Arguments:
 
@@ -645,7 +645,7 @@ Returns [GetSuiteResultTypeDef](./type_defs.md#getsuiteresulttypedef).
 Type annotations for `boto3.client("devicefarm").get_test` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
+[DeviceFarm.Client.get_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
 
 Arguments:
 
@@ -658,7 +658,7 @@ Returns [GetTestResultTypeDef](./type_defs.md#gettestresulttypedef).
 Type annotations for `boto3.client("devicefarm").get_test_grid_project` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
+[DeviceFarm.Client.get_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_test_grid_session` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_test_grid_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session)
+[DeviceFarm.Client.get_test_grid_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session)
 
 Arguments:
 
@@ -688,7 +688,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").get_upload` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
+[DeviceFarm.Client.get_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
 
 Arguments:
 
@@ -702,7 +702,7 @@ Type annotations for `boto3.client("devicefarm").get_vpce_configuration`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.get_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
+[DeviceFarm.Client.get_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
 
 Arguments:
 
@@ -717,7 +717,7 @@ Type annotations for
 `boto3.client("devicefarm").install_to_remote_access_session` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.install_to_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
+[DeviceFarm.Client.install_to_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
 
 Arguments:
 
@@ -732,12 +732,13 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_artifacts` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts)
+[DeviceFarm.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts)
 
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`: [ArtifactCategory](./literals.md#artifactcategory) *(required)*
+- `type`: [ArtifactCategoryType](./literals.md#artifactcategorytype)
+  *(required)*
 - `nextToken`: `str`
 
 Returns
@@ -748,7 +749,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_device_instances` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_device_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
+[DeviceFarm.Client.list_device_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
 
 Arguments:
 
@@ -763,12 +764,12 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_device_pools` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_device_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools)
+[DeviceFarm.Client.list_device_pools](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools)
 
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`: [DevicePoolType](./literals.md#devicepooltype)
+- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
 - `nextToken`: `str`
 
 Returns
@@ -779,13 +780,14 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_devices` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_devices)
+[DeviceFarm.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_devices)
 
 Arguments:
 
 - `arn`: `str`
 - `nextToken`: `str`
-- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+- `filters`:
+  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 
 Returns [ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef).
 
@@ -795,7 +797,7 @@ Type annotations for `boto3.client("devicefarm").list_instance_profiles`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
+[DeviceFarm.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
 
 Arguments:
 
@@ -810,7 +812,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_jobs` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
+[DeviceFarm.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
 
 Arguments:
 
@@ -824,12 +826,12 @@ Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 Type annotations for `boto3.client("devicefarm").list_network_profiles` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles)
+[DeviceFarm.Client.list_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles)
 
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
 - `nextToken`: `str`
 
 Returns
@@ -841,7 +843,7 @@ Type annotations for `boto3.client("devicefarm").list_offering_promotions`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_offering_promotions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
+[DeviceFarm.Client.list_offering_promotions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
 
 Arguments:
 
@@ -856,7 +858,7 @@ Type annotations for `boto3.client("devicefarm").list_offering_transactions`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_offering_transactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
+[DeviceFarm.Client.list_offering_transactions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
 
 Arguments:
 
@@ -870,7 +872,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_offerings` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
+[DeviceFarm.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
 
 Arguments:
 
@@ -884,7 +886,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_projects` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
+[DeviceFarm.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
 
 Arguments:
 
@@ -899,7 +901,7 @@ Type annotations for `boto3.client("devicefarm").list_remote_access_sessions`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_remote_access_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
+[DeviceFarm.Client.list_remote_access_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
 
 Arguments:
 
@@ -914,7 +916,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_runs` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
+[DeviceFarm.Client.list_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
 
 Arguments:
 
@@ -928,7 +930,7 @@ Returns [ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef).
 Type annotations for `boto3.client("devicefarm").list_samples` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_samples](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
+[DeviceFarm.Client.list_samples](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
 
 Arguments:
 
@@ -942,7 +944,7 @@ Returns [ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef).
 Type annotations for `boto3.client("devicefarm").list_suites` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_suites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
+[DeviceFarm.Client.list_suites](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
 
 Arguments:
 
@@ -957,7 +959,7 @@ Type annotations for `boto3.client("devicefarm").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
+[DeviceFarm.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -972,7 +974,7 @@ Type annotations for `boto3.client("devicefarm").list_test_grid_projects`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
+[DeviceFarm.Client.list_test_grid_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
 
 Arguments:
 
@@ -988,7 +990,7 @@ Type annotations for
 `boto3.client("devicefarm").list_test_grid_session_actions` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_session_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
+[DeviceFarm.Client.list_test_grid_session_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
 
 Arguments:
 
@@ -1005,13 +1007,13 @@ Type annotations for
 `boto3.client("devicefarm").list_test_grid_session_artifacts` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_session_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts)
+[DeviceFarm.Client.list_test_grid_session_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts)
 
 Arguments:
 
 - `sessionArn`: `str` *(required)*
 - `type`:
-  [TestGridSessionArtifactCategory](./literals.md#testgridsessionartifactcategory)
+  [TestGridSessionArtifactCategoryType](./literals.md#testgridsessionartifactcategorytype)
 - `maxResult`: `int`
 - `nextToken`: `str`
 
@@ -1024,12 +1026,13 @@ Type annotations for `boto3.client("devicefarm").list_test_grid_sessions`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)
+[DeviceFarm.Client.list_test_grid_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)
 
 Arguments:
 
 - `projectArn`: `str` *(required)*
-- `status`: [TestGridSessionStatus](./literals.md#testgridsessionstatus)
+- `status`:
+  [TestGridSessionStatusType](./literals.md#testgridsessionstatustype)
 - `creationTimeAfter`: `datetime`
 - `creationTimeBefore`: `datetime`
 - `endTimeAfter`: `datetime`
@@ -1045,7 +1048,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_tests` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_tests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
+[DeviceFarm.Client.list_tests](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
 
 Arguments:
 
@@ -1059,7 +1062,7 @@ Returns [ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef).
 Type annotations for `boto3.client("devicefarm").list_unique_problems` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_unique_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
+[DeviceFarm.Client.list_unique_problems](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
 
 Arguments:
 
@@ -1074,12 +1077,12 @@ Returns
 Type annotations for `boto3.client("devicefarm").list_uploads` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads)
+[DeviceFarm.Client.list_uploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads)
 
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`: [UploadType](./literals.md#uploadtype)
+- `type`: [UploadTypeType](./literals.md#uploadtypetype)
 - `nextToken`: `str`
 
 Returns [ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef).
@@ -1090,7 +1093,7 @@ Type annotations for `boto3.client("devicefarm").list_vpce_configurations`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.list_vpce_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
+[DeviceFarm.Client.list_vpce_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
 
 Arguments:
 
@@ -1105,7 +1108,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").purchase_offering` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering)
+[DeviceFarm.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering)
 
 Arguments:
 
@@ -1121,7 +1124,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").renew_offering` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.renew_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
+[DeviceFarm.Client.renew_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
 
 Arguments:
 
@@ -1136,7 +1139,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").schedule_run` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.schedule_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run)
+[DeviceFarm.Client.schedule_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run)
 
 Arguments:
 
@@ -1160,7 +1163,7 @@ Returns [ScheduleRunResultTypeDef](./type_defs.md#schedulerunresulttypedef).
 Type annotations for `boto3.client("devicefarm").stop_job` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
+[DeviceFarm.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
 
 Arguments:
 
@@ -1174,7 +1177,7 @@ Type annotations for `boto3.client("devicefarm").stop_remote_access_session`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.stop_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
+[DeviceFarm.Client.stop_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
 
 Arguments:
 
@@ -1188,7 +1191,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").stop_run` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.stop_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
+[DeviceFarm.Client.stop_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
 
 Arguments:
 
@@ -1201,7 +1204,7 @@ Returns [StopRunResultTypeDef](./type_defs.md#stoprunresulttypedef).
 Type annotations for `boto3.client("devicefarm").tag_resource` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
+[DeviceFarm.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
 
 Arguments:
 
@@ -1215,7 +1218,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("devicefarm").untag_resource` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
+[DeviceFarm.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
 
 Arguments:
 
@@ -1230,7 +1233,7 @@ Type annotations for `boto3.client("devicefarm").update_device_instance`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance)
+[DeviceFarm.Client.update_device_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance)
 
 Arguments:
 
@@ -1246,7 +1249,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").update_device_pool` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool)
+[DeviceFarm.Client.update_device_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool)
 
 Arguments:
 
@@ -1266,7 +1269,7 @@ Type annotations for `boto3.client("devicefarm").update_instance_profile`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile)
+[DeviceFarm.Client.update_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile)
 
 Arguments:
 
@@ -1286,14 +1289,14 @@ Type annotations for `boto3.client("devicefarm").update_network_profile`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile)
+[DeviceFarm.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile)
 
 Arguments:
 
 - `arn`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
-- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
 - `uplinkBandwidthBits`: `int`
 - `downlinkBandwidthBits`: `int`
 - `uplinkDelayMs`: `int`
@@ -1311,7 +1314,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").update_project` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_project)
+[DeviceFarm.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_project)
 
 Arguments:
 
@@ -1328,7 +1331,7 @@ Type annotations for `boto3.client("devicefarm").update_test_grid_project`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project)
+[DeviceFarm.Client.update_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project)
 
 Arguments:
 
@@ -1344,7 +1347,7 @@ Returns
 Type annotations for `boto3.client("devicefarm").update_upload` method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_upload)
+[DeviceFarm.Client.update_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_upload)
 
 Arguments:
 
@@ -1361,7 +1364,7 @@ Type annotations for `boto3.client("devicefarm").update_vpce_configuration`
 method.
 
 Boto3 documentation:
-[DeviceFarm.Client.update_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration)
+[DeviceFarm.Client.update_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration)
 
 Arguments:
 

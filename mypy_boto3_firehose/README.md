@@ -3,7 +3,7 @@
 > [Index](..) > Firehose
 
 Auto-generated documentation for
-[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose)
 type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
@@ -29,35 +29,35 @@ Can be used directly:
 from mypy_boto3_firehose.client import FirehoseClient
 ```
 
-FirehoseClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_delivery_stream](./client.md#create-delivery-stream)
-- [delete_delivery_stream](./client.md#delete-delivery-stream)
-- [describe_delivery_stream](./client.md#describe-delivery-stream)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_delivery_streams](./client.md#list-delivery-streams)
-- [list_tags_for_delivery_stream](./client.md#list-tags-for-delivery-stream)
-- [put_record](./client.md#put-record)
-- [put_record_batch](./client.md#put-record-batch)
-- [start_delivery_stream_encryption](./client.md#start-delivery-stream-encryption)
-- [stop_delivery_stream_encryption](./client.md#stop-delivery-stream-encryption)
-- [tag_delivery_stream](./client.md#tag-delivery-stream)
-- [untag_delivery_stream](./client.md#untag-delivery-stream)
-- [update_destination](./client.md#update-destination)
+- [can_paginate](./client.md#can_paginate)
+- [create_delivery_stream](./client.md#create_delivery_stream)
+- [delete_delivery_stream](./client.md#delete_delivery_stream)
+- [describe_delivery_stream](./client.md#describe_delivery_stream)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_delivery_streams](./client.md#list_delivery_streams)
+- [list_tags_for_delivery_stream](./client.md#list_tags_for_delivery_stream)
+- [put_record](./client.md#put_record)
+- [put_record_batch](./client.md#put_record_batch)
+- [start_delivery_stream_encryption](./client.md#start_delivery_stream_encryption)
+- [stop_delivery_stream_encryption](./client.md#stop_delivery_stream_encryption)
+- [tag_delivery_stream](./client.md#tag_delivery_stream)
+- [untag_delivery_stream](./client.md#untag_delivery_stream)
+- [update_destination](./client.md#update_destination)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidKMSResourceException](./client.md#invalidkmsresourceexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
+FirehoseClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- InvalidArgumentException
+- InvalidKMSResourceException
+- LimitExceededException
+- ResourceInUseException
+- ResourceNotFoundException
+- ServiceUnavailableException
 
 ## Literals
 
@@ -66,30 +66,30 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_firehose.literals import CompressionFormat, ...
+from mypy_boto3_firehose.literals import CompressionFormatType, ...
 ```
 
-- [CompressionFormat](./literals.md#compressionformat)
-- [ContentEncoding](./literals.md#contentencoding)
-- [DeliveryStreamEncryptionStatus](./literals.md#deliverystreamencryptionstatus)
-- [DeliveryStreamFailureType](./literals.md#deliverystreamfailuretype)
-- [DeliveryStreamStatus](./literals.md#deliverystreamstatus)
-- [DeliveryStreamType](./literals.md#deliverystreamtype)
-- [ElasticsearchIndexRotationPeriod](./literals.md#elasticsearchindexrotationperiod)
-- [ElasticsearchS3BackupMode](./literals.md#elasticsearchs3backupmode)
-- [HECEndpointType](./literals.md#hecendpointtype)
-- [HttpEndpointS3BackupMode](./literals.md#httpendpoints3backupmode)
-- [KeyType](./literals.md#keytype)
-- [NoEncryptionConfig](./literals.md#noencryptionconfig)
-- [OrcCompression](./literals.md#orccompression)
-- [OrcFormatVersion](./literals.md#orcformatversion)
-- [ParquetCompression](./literals.md#parquetcompression)
-- [ParquetWriterVersion](./literals.md#parquetwriterversion)
-- [ProcessorParameterName](./literals.md#processorparametername)
-- [ProcessorType](./literals.md#processortype)
-- [RedshiftS3BackupMode](./literals.md#redshifts3backupmode)
-- [S3BackupMode](./literals.md#s3backupmode)
-- [SplunkS3BackupMode](./literals.md#splunks3backupmode)
+- [CompressionFormatType](./literals.md#compressionformattype)
+- [ContentEncodingType](./literals.md#contentencodingtype)
+- [DeliveryStreamEncryptionStatusType](./literals.md#deliverystreamencryptionstatustype)
+- [DeliveryStreamFailureTypeType](./literals.md#deliverystreamfailuretypetype)
+- [DeliveryStreamStatusType](./literals.md#deliverystreamstatustype)
+- [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
+- [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
+- [ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype)
+- [HECEndpointTypeType](./literals.md#hecendpointtypetype)
+- [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
+- [KeyTypeType](./literals.md#keytypetype)
+- [NoEncryptionConfigType](./literals.md#noencryptionconfigtype)
+- [OrcCompressionType](./literals.md#orccompressiontype)
+- [OrcFormatVersionType](./literals.md#orcformatversiontype)
+- [ParquetCompressionType](./literals.md#parquetcompressiontype)
+- [ParquetWriterVersionType](./literals.md#parquetwriterversiontype)
+- [ProcessorParameterNameType](./literals.md#processorparameternametype)
+- [ProcessorTypeType](./literals.md#processortypetype)
+- [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
+- [S3BackupModeType](./literals.md#s3backupmodetype)
+- [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > ElasticBeanstalk
 
 Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
@@ -31,84 +31,84 @@ Can be used directly:
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 ```
 
-ElasticBeanstalkClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [abort_environment_update](./client.md#abort-environment-update)
-- [apply_environment_managed_action](./client.md#apply-environment-managed-action)
-- [associate_environment_operations_role](./client.md#associate-environment-operations-role)
-- [can_paginate](./client.md#can-paginate)
-- [check_dns_availability](./client.md#check-dns-availability)
-- [compose_environments](./client.md#compose-environments)
-- [create_application](./client.md#create-application)
-- [create_application_version](./client.md#create-application-version)
-- [create_configuration_template](./client.md#create-configuration-template)
-- [create_environment](./client.md#create-environment)
-- [create_platform_version](./client.md#create-platform-version)
-- [create_storage_location](./client.md#create-storage-location)
-- [delete_application](./client.md#delete-application)
-- [delete_application_version](./client.md#delete-application-version)
-- [delete_configuration_template](./client.md#delete-configuration-template)
-- [delete_environment_configuration](./client.md#delete-environment-configuration)
-- [delete_platform_version](./client.md#delete-platform-version)
-- [describe_account_attributes](./client.md#describe-account-attributes)
-- [describe_application_versions](./client.md#describe-application-versions)
-- [describe_applications](./client.md#describe-applications)
-- [describe_configuration_options](./client.md#describe-configuration-options)
-- [describe_configuration_settings](./client.md#describe-configuration-settings)
-- [describe_environment_health](./client.md#describe-environment-health)
-- [describe_environment_managed_action_history](./client.md#describe-environment-managed-action-history)
-- [describe_environment_managed_actions](./client.md#describe-environment-managed-actions)
-- [describe_environment_resources](./client.md#describe-environment-resources)
-- [describe_environments](./client.md#describe-environments)
-- [describe_events](./client.md#describe-events)
-- [describe_instances_health](./client.md#describe-instances-health)
-- [describe_platform_version](./client.md#describe-platform-version)
-- [disassociate_environment_operations_role](./client.md#disassociate-environment-operations-role)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_available_solution_stacks](./client.md#list-available-solution-stacks)
-- [list_platform_branches](./client.md#list-platform-branches)
-- [list_platform_versions](./client.md#list-platform-versions)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [rebuild_environment](./client.md#rebuild-environment)
-- [request_environment_info](./client.md#request-environment-info)
-- [restart_app_server](./client.md#restart-app-server)
-- [retrieve_environment_info](./client.md#retrieve-environment-info)
-- [swap_environment_cnames](./client.md#swap-environment-cnames)
-- [terminate_environment](./client.md#terminate-environment)
-- [update_application](./client.md#update-application)
-- [update_application_resource_lifecycle](./client.md#update-application-resource-lifecycle)
-- [update_application_version](./client.md#update-application-version)
-- [update_configuration_template](./client.md#update-configuration-template)
-- [update_environment](./client.md#update-environment)
-- [update_tags_for_resource](./client.md#update-tags-for-resource)
-- [validate_configuration_settings](./client.md#validate-configuration-settings)
+- [abort_environment_update](./client.md#abort_environment_update)
+- [apply_environment_managed_action](./client.md#apply_environment_managed_action)
+- [associate_environment_operations_role](./client.md#associate_environment_operations_role)
+- [can_paginate](./client.md#can_paginate)
+- [check_dns_availability](./client.md#check_dns_availability)
+- [compose_environments](./client.md#compose_environments)
+- [create_application](./client.md#create_application)
+- [create_application_version](./client.md#create_application_version)
+- [create_configuration_template](./client.md#create_configuration_template)
+- [create_environment](./client.md#create_environment)
+- [create_platform_version](./client.md#create_platform_version)
+- [create_storage_location](./client.md#create_storage_location)
+- [delete_application](./client.md#delete_application)
+- [delete_application_version](./client.md#delete_application_version)
+- [delete_configuration_template](./client.md#delete_configuration_template)
+- [delete_environment_configuration](./client.md#delete_environment_configuration)
+- [delete_platform_version](./client.md#delete_platform_version)
+- [describe_account_attributes](./client.md#describe_account_attributes)
+- [describe_application_versions](./client.md#describe_application_versions)
+- [describe_applications](./client.md#describe_applications)
+- [describe_configuration_options](./client.md#describe_configuration_options)
+- [describe_configuration_settings](./client.md#describe_configuration_settings)
+- [describe_environment_health](./client.md#describe_environment_health)
+- [describe_environment_managed_action_history](./client.md#describe_environment_managed_action_history)
+- [describe_environment_managed_actions](./client.md#describe_environment_managed_actions)
+- [describe_environment_resources](./client.md#describe_environment_resources)
+- [describe_environments](./client.md#describe_environments)
+- [describe_events](./client.md#describe_events)
+- [describe_instances_health](./client.md#describe_instances_health)
+- [describe_platform_version](./client.md#describe_platform_version)
+- [disassociate_environment_operations_role](./client.md#disassociate_environment_operations_role)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_available_solution_stacks](./client.md#list_available_solution_stacks)
+- [list_platform_branches](./client.md#list_platform_branches)
+- [list_platform_versions](./client.md#list_platform_versions)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [rebuild_environment](./client.md#rebuild_environment)
+- [request_environment_info](./client.md#request_environment_info)
+- [restart_app_server](./client.md#restart_app_server)
+- [retrieve_environment_info](./client.md#retrieve_environment_info)
+- [swap_environment_cnames](./client.md#swap_environment_cnames)
+- [terminate_environment](./client.md#terminate_environment)
+- [update_application](./client.md#update_application)
+- [update_application_resource_lifecycle](./client.md#update_application_resource_lifecycle)
+- [update_application_version](./client.md#update_application_version)
+- [update_configuration_template](./client.md#update_configuration_template)
+- [update_environment](./client.md#update_environment)
+- [update_tags_for_resource](./client.md#update_tags_for_resource)
+- [validate_configuration_settings](./client.md#validate_configuration_settings)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CodeBuildNotInServiceRegionException](./client.md#codebuildnotinserviceregionexception)
-- [ElasticBeanstalkServiceException](./client.md#elasticbeanstalkserviceexception)
-- [InsufficientPrivilegesException](./client.md#insufficientprivilegesexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ManagedActionInvalidStateException](./client.md#managedactioninvalidstateexception)
-- [OperationInProgressException](./client.md#operationinprogressexception)
-- [PlatformVersionStillReferencedException](./client.md#platformversionstillreferencedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceTypeNotSupportedException](./client.md#resourcetypenotsupportedexception)
-- [S3LocationNotInServiceRegionException](./client.md#s3locationnotinserviceregionexception)
-- [S3SubscriptionRequiredException](./client.md#s3subscriptionrequiredexception)
-- [SourceBundleDeletionException](./client.md#sourcebundledeletionexception)
-- [TooManyApplicationVersionsException](./client.md#toomanyapplicationversionsexception)
-- [TooManyApplicationsException](./client.md#toomanyapplicationsexception)
-- [TooManyBucketsException](./client.md#toomanybucketsexception)
-- [TooManyConfigurationTemplatesException](./client.md#toomanyconfigurationtemplatesexception)
-- [TooManyEnvironmentsException](./client.md#toomanyenvironmentsexception)
-- [TooManyPlatformsException](./client.md#toomanyplatformsexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+ElasticBeanstalkClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CodeBuildNotInServiceRegionException
+- ElasticBeanstalkServiceException
+- InsufficientPrivilegesException
+- InvalidRequestException
+- ManagedActionInvalidStateException
+- OperationInProgressException
+- PlatformVersionStillReferencedException
+- ResourceNotFoundException
+- ResourceTypeNotSupportedException
+- S3LocationNotInServiceRegionException
+- S3SubscriptionRequiredException
+- SourceBundleDeletionException
+- TooManyApplicationVersionsException
+- TooManyApplicationsException
+- TooManyBucketsException
+- TooManyConfigurationTemplatesException
+- TooManyEnvironmentsException
+- TooManyPlatformsException
+- TooManyTagsException
 
 ## Paginators
 
@@ -149,36 +149,36 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatus, ...
+from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType, ...
 ```
 
-- [ActionHistoryStatus](./literals.md#actionhistorystatus)
-- [ActionStatus](./literals.md#actionstatus)
-- [ActionType](./literals.md#actiontype)
-- [ApplicationVersionStatus](./literals.md#applicationversionstatus)
-- [ComputeType](./literals.md#computetype)
-- [ConfigurationDeploymentStatus](./literals.md#configurationdeploymentstatus)
-- [ConfigurationOptionValueType](./literals.md#configurationoptionvaluetype)
+- [ActionHistoryStatusType](./literals.md#actionhistorystatustype)
+- [ActionStatusType](./literals.md#actionstatustype)
+- [ActionTypeType](./literals.md#actiontypetype)
+- [ApplicationVersionStatusType](./literals.md#applicationversionstatustype)
+- [ComputeTypeType](./literals.md#computetypetype)
+- [ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype)
+- [ConfigurationOptionValueTypeType](./literals.md#configurationoptionvaluetypetype)
 - [DescribeApplicationVersionsPaginatorName](./literals.md#describeapplicationversionspaginatorname)
 - [DescribeEnvironmentManagedActionHistoryPaginatorName](./literals.md#describeenvironmentmanagedactionhistorypaginatorname)
 - [DescribeEnvironmentsPaginatorName](./literals.md#describeenvironmentspaginatorname)
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
 - [EnvironmentExistsWaiterName](./literals.md#environmentexistswaitername)
-- [EnvironmentHealth](./literals.md#environmenthealth)
-- [EnvironmentHealthAttribute](./literals.md#environmenthealthattribute)
-- [EnvironmentHealthStatus](./literals.md#environmenthealthstatus)
-- [EnvironmentInfoType](./literals.md#environmentinfotype)
-- [EnvironmentStatus](./literals.md#environmentstatus)
+- [EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)
+- [EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype)
+- [EnvironmentHealthType](./literals.md#environmenthealthtype)
+- [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
+- [EnvironmentStatusType](./literals.md#environmentstatustype)
 - [EnvironmentTerminatedWaiterName](./literals.md#environmentterminatedwaitername)
 - [EnvironmentUpdatedWaiterName](./literals.md#environmentupdatedwaitername)
-- [EventSeverity](./literals.md#eventseverity)
-- [FailureType](./literals.md#failuretype)
-- [InstancesHealthAttribute](./literals.md#instanceshealthattribute)
+- [EventSeverityType](./literals.md#eventseveritytype)
+- [FailureTypeType](./literals.md#failuretypetype)
+- [InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)
 - [ListPlatformVersionsPaginatorName](./literals.md#listplatformversionspaginatorname)
-- [PlatformStatus](./literals.md#platformstatus)
-- [SourceRepository](./literals.md#sourcerepository)
-- [SourceType](./literals.md#sourcetype)
-- [ValidationSeverity](./literals.md#validationseverity)
+- [PlatformStatusType](./literals.md#platformstatustype)
+- [SourceRepositoryType](./literals.md#sourcerepositorytype)
+- [SourceTypeType](./literals.md#sourcetypetype)
+- [ValidationSeverityType](./literals.md#validationseveritytype)
 
 ## Typed dictionaries
 

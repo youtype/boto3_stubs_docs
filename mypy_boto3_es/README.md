@@ -3,7 +3,7 @@
 > [Index](..) > ElasticsearchService
 
 Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
@@ -30,68 +30,68 @@ Can be used directly:
 from mypy_boto3_es.client import ElasticsearchServiceClient
 ```
 
-ElasticsearchServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_inbound_cross_cluster_search_connection](./client.md#accept-inbound-cross-cluster-search-connection)
-- [add_tags](./client.md#add-tags)
-- [associate_package](./client.md#associate-package)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_elasticsearch_service_software_update](./client.md#cancel-elasticsearch-service-software-update)
-- [create_elasticsearch_domain](./client.md#create-elasticsearch-domain)
-- [create_outbound_cross_cluster_search_connection](./client.md#create-outbound-cross-cluster-search-connection)
-- [create_package](./client.md#create-package)
-- [delete_elasticsearch_domain](./client.md#delete-elasticsearch-domain)
-- [delete_elasticsearch_service_role](./client.md#delete-elasticsearch-service-role)
-- [delete_inbound_cross_cluster_search_connection](./client.md#delete-inbound-cross-cluster-search-connection)
-- [delete_outbound_cross_cluster_search_connection](./client.md#delete-outbound-cross-cluster-search-connection)
-- [delete_package](./client.md#delete-package)
-- [describe_domain_auto_tunes](./client.md#describe-domain-auto-tunes)
-- [describe_elasticsearch_domain](./client.md#describe-elasticsearch-domain)
-- [describe_elasticsearch_domain_config](./client.md#describe-elasticsearch-domain-config)
-- [describe_elasticsearch_domains](./client.md#describe-elasticsearch-domains)
-- [describe_elasticsearch_instance_type_limits](./client.md#describe-elasticsearch-instance-type-limits)
-- [describe_inbound_cross_cluster_search_connections](./client.md#describe-inbound-cross-cluster-search-connections)
-- [describe_outbound_cross_cluster_search_connections](./client.md#describe-outbound-cross-cluster-search-connections)
-- [describe_packages](./client.md#describe-packages)
-- [describe_reserved_elasticsearch_instance_offerings](./client.md#describe-reserved-elasticsearch-instance-offerings)
-- [describe_reserved_elasticsearch_instances](./client.md#describe-reserved-elasticsearch-instances)
-- [dissociate_package](./client.md#dissociate-package)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_compatible_elasticsearch_versions](./client.md#get-compatible-elasticsearch-versions)
-- [get_package_version_history](./client.md#get-package-version-history)
-- [get_paginator](./client.md#get-paginator)
-- [get_upgrade_history](./client.md#get-upgrade-history)
-- [get_upgrade_status](./client.md#get-upgrade-status)
-- [list_domain_names](./client.md#list-domain-names)
-- [list_domains_for_package](./client.md#list-domains-for-package)
-- [list_elasticsearch_instance_types](./client.md#list-elasticsearch-instance-types)
-- [list_elasticsearch_versions](./client.md#list-elasticsearch-versions)
-- [list_packages_for_domain](./client.md#list-packages-for-domain)
-- [list_tags](./client.md#list-tags)
-- [purchase_reserved_elasticsearch_instance_offering](./client.md#purchase-reserved-elasticsearch-instance-offering)
-- [reject_inbound_cross_cluster_search_connection](./client.md#reject-inbound-cross-cluster-search-connection)
-- [remove_tags](./client.md#remove-tags)
-- [start_elasticsearch_service_software_update](./client.md#start-elasticsearch-service-software-update)
-- [update_elasticsearch_domain_config](./client.md#update-elasticsearch-domain-config)
-- [update_package](./client.md#update-package)
-- [upgrade_elasticsearch_domain](./client.md#upgrade-elasticsearch-domain)
+- [accept_inbound_cross_cluster_search_connection](./client.md#accept_inbound_cross_cluster_search_connection)
+- [add_tags](./client.md#add_tags)
+- [associate_package](./client.md#associate_package)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_elasticsearch_service_software_update](./client.md#cancel_elasticsearch_service_software_update)
+- [create_elasticsearch_domain](./client.md#create_elasticsearch_domain)
+- [create_outbound_cross_cluster_search_connection](./client.md#create_outbound_cross_cluster_search_connection)
+- [create_package](./client.md#create_package)
+- [delete_elasticsearch_domain](./client.md#delete_elasticsearch_domain)
+- [delete_elasticsearch_service_role](./client.md#delete_elasticsearch_service_role)
+- [delete_inbound_cross_cluster_search_connection](./client.md#delete_inbound_cross_cluster_search_connection)
+- [delete_outbound_cross_cluster_search_connection](./client.md#delete_outbound_cross_cluster_search_connection)
+- [delete_package](./client.md#delete_package)
+- [describe_domain_auto_tunes](./client.md#describe_domain_auto_tunes)
+- [describe_elasticsearch_domain](./client.md#describe_elasticsearch_domain)
+- [describe_elasticsearch_domain_config](./client.md#describe_elasticsearch_domain_config)
+- [describe_elasticsearch_domains](./client.md#describe_elasticsearch_domains)
+- [describe_elasticsearch_instance_type_limits](./client.md#describe_elasticsearch_instance_type_limits)
+- [describe_inbound_cross_cluster_search_connections](./client.md#describe_inbound_cross_cluster_search_connections)
+- [describe_outbound_cross_cluster_search_connections](./client.md#describe_outbound_cross_cluster_search_connections)
+- [describe_packages](./client.md#describe_packages)
+- [describe_reserved_elasticsearch_instance_offerings](./client.md#describe_reserved_elasticsearch_instance_offerings)
+- [describe_reserved_elasticsearch_instances](./client.md#describe_reserved_elasticsearch_instances)
+- [dissociate_package](./client.md#dissociate_package)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_compatible_elasticsearch_versions](./client.md#get_compatible_elasticsearch_versions)
+- [get_package_version_history](./client.md#get_package_version_history)
+- [get_paginator](./client.md#get_paginator)
+- [get_upgrade_history](./client.md#get_upgrade_history)
+- [get_upgrade_status](./client.md#get_upgrade_status)
+- [list_domain_names](./client.md#list_domain_names)
+- [list_domains_for_package](./client.md#list_domains_for_package)
+- [list_elasticsearch_instance_types](./client.md#list_elasticsearch_instance_types)
+- [list_elasticsearch_versions](./client.md#list_elasticsearch_versions)
+- [list_packages_for_domain](./client.md#list_packages_for_domain)
+- [list_tags](./client.md#list_tags)
+- [purchase_reserved_elasticsearch_instance_offering](./client.md#purchase_reserved_elasticsearch_instance_offering)
+- [reject_inbound_cross_cluster_search_connection](./client.md#reject_inbound_cross_cluster_search_connection)
+- [remove_tags](./client.md#remove_tags)
+- [start_elasticsearch_service_software_update](./client.md#start_elasticsearch_service_software_update)
+- [update_elasticsearch_domain_config](./client.md#update_elasticsearch_domain_config)
+- [update_package](./client.md#update_package)
+- [upgrade_elasticsearch_domain](./client.md#upgrade_elasticsearch_domain)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BaseException](./client.md#baseexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [DisabledOperationException](./client.md#disabledoperationexception)
-- [InternalException](./client.md#internalexception)
-- [InvalidPaginationTokenException](./client.md#invalidpaginationtokenexception)
-- [InvalidTypeException](./client.md#invalidtypeexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+ElasticsearchServiceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BaseException
+- ClientError
+- ConflictException
+- DisabledOperationException
+- InternalException
+- InvalidPaginationTokenException
+- InvalidTypeException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -117,37 +117,37 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_es.literals import AutoTuneDesiredState, ...
+from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 ```
 
-- [AutoTuneDesiredState](./literals.md#autotunedesiredstate)
-- [AutoTuneState](./literals.md#autotunestate)
-- [AutoTuneType](./literals.md#autotunetype)
-- [DeploymentStatus](./literals.md#deploymentstatus)
-- [DescribePackagesFilterName](./literals.md#describepackagesfiltername)
+- [AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype)
+- [AutoTuneStateType](./literals.md#autotunestatetype)
+- [AutoTuneTypeType](./literals.md#autotunetypetype)
+- [DeploymentStatusType](./literals.md#deploymentstatustype)
+- [DescribePackagesFilterNameType](./literals.md#describepackagesfilternametype)
 - [DescribeReservedElasticsearchInstanceOfferingsPaginatorName](./literals.md#describereservedelasticsearchinstanceofferingspaginatorname)
 - [DescribeReservedElasticsearchInstancesPaginatorName](./literals.md#describereservedelasticsearchinstancespaginatorname)
-- [DomainPackageStatus](./literals.md#domainpackagestatus)
-- [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
-- [ESWarmPartitionInstanceType](./literals.md#eswarmpartitioninstancetype)
+- [DomainPackageStatusType](./literals.md#domainpackagestatustype)
+- [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
+- [ESWarmPartitionInstanceTypeType](./literals.md#eswarmpartitioninstancetypetype)
 - [GetUpgradeHistoryPaginatorName](./literals.md#getupgradehistorypaginatorname)
-- [InboundCrossClusterSearchConnectionStatusCode](./literals.md#inboundcrossclustersearchconnectionstatuscode)
+- [InboundCrossClusterSearchConnectionStatusCodeType](./literals.md#inboundcrossclustersearchconnectionstatuscodetype)
 - [ListElasticsearchInstanceTypesPaginatorName](./literals.md#listelasticsearchinstancetypespaginatorname)
 - [ListElasticsearchVersionsPaginatorName](./literals.md#listelasticsearchversionspaginatorname)
-- [LogType](./literals.md#logtype)
-- [OptionState](./literals.md#optionstate)
-- [OutboundCrossClusterSearchConnectionStatusCode](./literals.md#outboundcrossclustersearchconnectionstatuscode)
-- [PackageStatus](./literals.md#packagestatus)
-- [PackageType](./literals.md#packagetype)
-- [ReservedElasticsearchInstancePaymentOption](./literals.md#reservedelasticsearchinstancepaymentoption)
-- [RollbackOnDisable](./literals.md#rollbackondisable)
-- [ScheduledAutoTuneActionType](./literals.md#scheduledautotuneactiontype)
-- [ScheduledAutoTuneSeverityType](./literals.md#scheduledautotuneseveritytype)
-- [TLSSecurityPolicy](./literals.md#tlssecuritypolicy)
-- [TimeUnit](./literals.md#timeunit)
-- [UpgradeStatus](./literals.md#upgradestatus)
-- [UpgradeStep](./literals.md#upgradestep)
-- [VolumeType](./literals.md#volumetype)
+- [LogTypeType](./literals.md#logtypetype)
+- [OptionStateType](./literals.md#optionstatetype)
+- [OutboundCrossClusterSearchConnectionStatusCodeType](./literals.md#outboundcrossclustersearchconnectionstatuscodetype)
+- [PackageStatusType](./literals.md#packagestatustype)
+- [PackageTypeType](./literals.md#packagetypetype)
+- [ReservedElasticsearchInstancePaymentOptionType](./literals.md#reservedelasticsearchinstancepaymentoptiontype)
+- [RollbackOnDisableType](./literals.md#rollbackondisabletype)
+- [ScheduledAutoTuneActionTypeType](./literals.md#scheduledautotuneactiontypetype)
+- [ScheduledAutoTuneSeverityTypeType](./literals.md#scheduledautotuneseveritytypetype)
+- [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
+- [TimeUnitType](./literals.md#timeunittype)
+- [UpgradeStatusType](./literals.md#upgradestatustype)
+- [UpgradeStepType](./literals.md#upgradesteptype)
+- [VolumeTypeType](./literals.md#volumetypetype)
 
 ## Typed dictionaries
 

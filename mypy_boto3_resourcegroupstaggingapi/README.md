@@ -3,7 +3,7 @@
 > [Index](..) > ResourceGroupsTaggingAPI
 
 Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
 [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
@@ -30,31 +30,31 @@ Can be used directly:
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
 ```
 
-ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_report_creation](./client.md#describe-report-creation)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_compliance_summary](./client.md#get-compliance-summary)
-- [get_paginator](./client.md#get-paginator)
-- [get_resources](./client.md#get-resources)
-- [get_tag_keys](./client.md#get-tag-keys)
-- [get_tag_values](./client.md#get-tag-values)
-- [start_report_creation](./client.md#start-report-creation)
-- [tag_resources](./client.md#tag-resources)
-- [untag_resources](./client.md#untag-resources)
+- [can_paginate](./client.md#can_paginate)
+- [describe_report_creation](./client.md#describe_report_creation)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_compliance_summary](./client.md#get_compliance_summary)
+- [get_paginator](./client.md#get_paginator)
+- [get_resources](./client.md#get_resources)
+- [get_tag_keys](./client.md#get_tag_keys)
+- [get_tag_values](./client.md#get_tag_values)
+- [start_report_creation](./client.md#start_report_creation)
+- [tag_resources](./client.md#tag_resources)
+- [untag_resources](./client.md#untag_resources)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [ConstraintViolationException](./client.md#constraintviolationexception)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [PaginationTokenExpiredException](./client.md#paginationtokenexpiredexception)
-- [ThrottledException](./client.md#throttledexception)
+ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- ConstraintViolationException
+- InternalServiceException
+- InvalidParameterException
+- PaginationTokenExpiredException
+- ThrottledException
 
 ## Paginators
 
@@ -79,16 +79,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCode, ...
+from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCodeType, ...
 ```
 
-- [ErrorCode](./literals.md#errorcode)
+- [ErrorCodeType](./literals.md#errorcodetype)
 - [GetComplianceSummaryPaginatorName](./literals.md#getcompliancesummarypaginatorname)
 - [GetResourcesPaginatorName](./literals.md#getresourcespaginatorname)
 - [GetTagKeysPaginatorName](./literals.md#gettagkeyspaginatorname)
 - [GetTagValuesPaginatorName](./literals.md#gettagvaluespaginatorname)
-- [GroupByAttribute](./literals.md#groupbyattribute)
-- [TargetIdType](./literals.md#targetidtype)
+- [GroupByAttributeType](./literals.md#groupbyattributetype)
+- [TargetIdTypeType](./literals.md#targetidtypetype)
 
 ## Typed dictionaries
 

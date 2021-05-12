@@ -3,7 +3,7 @@
 > [Index](..) > [NetworkManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
 [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
@@ -129,7 +129,7 @@ Optional fields:
 - `ConnectedLinkId`: `str`
 - `Description`: `str`
 - `CreatedAt`: `datetime`
-- `State`: [ConnectionState](./literals.md#connectionstate)
+- `State`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConnectionResponseTypeDef
@@ -195,7 +195,7 @@ Optional fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `State`:
-  [CustomerGatewayAssociationState](./literals.md#customergatewayassociationstate)
+  [CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype)
 
 ## DeleteConnectionResponseTypeDef
 
@@ -290,7 +290,7 @@ Optional fields:
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `SiteId`: `str`
 - `CreatedAt`: `datetime`
-- `State`: [DeviceState](./literals.md#devicestate)
+- `State`: [DeviceStateType](./literals.md#devicestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DisassociateCustomerGatewayResponseTypeDef
@@ -334,7 +334,8 @@ from mypy_boto3_networkmanager.type_defs import GetConnectionsResponseTypeDef
 
 Optional fields:
 
-- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `Connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 
 ## GetCustomerGatewayAssociationsResponseTypeDef
@@ -430,7 +431,7 @@ Optional fields:
 - `GlobalNetworkArn`: `str`
 - `Description`: `str`
 - `CreatedAt`: `datetime`
-- `State`: [GlobalNetworkState](./literals.md#globalnetworkstate)
+- `State`: [GlobalNetworkStateType](./literals.md#globalnetworkstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LinkAssociationTypeDef
@@ -445,7 +446,7 @@ Optional fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `LinkAssociationState`:
-  [LinkAssociationState](./literals.md#linkassociationstate)
+  [LinkAssociationStateType](./literals.md#linkassociationstatetype)
 
 ## LinkTypeDef
 
@@ -464,7 +465,7 @@ Optional fields:
 - `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef)
 - `Provider`: `str`
 - `CreatedAt`: `datetime`
-- `State`: [LinkState](./literals.md#linkstate)
+- `State`: [LinkStateType](./literals.md#linkstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
@@ -526,7 +527,7 @@ Optional fields:
 - `Description`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `CreatedAt`: `datetime`
-- `State`: [SiteState](./literals.md#sitestate)
+- `State`: [SiteStateType](./literals.md#sitestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
@@ -553,7 +554,7 @@ Optional fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `State`:
-  [TransitGatewayConnectPeerAssociationState](./literals.md#transitgatewayconnectpeerassociationstate)
+  [TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype)
 
 ## TransitGatewayRegistrationStateReasonTypeDef
 
@@ -564,7 +565,7 @@ from mypy_boto3_networkmanager.type_defs import TransitGatewayRegistrationStateR
 Optional fields:
 
 - `Code`:
-  [TransitGatewayRegistrationState](./literals.md#transitgatewayregistrationstate)
+  [TransitGatewayRegistrationStateType](./literals.md#transitgatewayregistrationstatetype)
 - `Message`: `str`
 
 ## TransitGatewayRegistrationTypeDef

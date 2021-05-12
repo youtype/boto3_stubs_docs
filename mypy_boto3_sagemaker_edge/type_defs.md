@@ -3,7 +3,7 @@
 > [Index](..) > [SagemakerEdgeManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
+[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
 type annotations stubs module
 [mypy_boto3_sagemaker_edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
@@ -48,4 +48,5 @@ Optional fields:
 - `ModelVersion`: `str`
 - `LatestSampleTime`: `datetime`
 - `LatestInference`: `datetime`
-- `ModelMetrics`: `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
+- `ModelMetrics`:
+  `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]

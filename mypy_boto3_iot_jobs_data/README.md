@@ -3,7 +3,7 @@
 > [Index](..) > IoTJobsDataPlane
 
 Auto-generated documentation for
-[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module
 [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
@@ -29,27 +29,27 @@ Can be used directly:
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 ```
 
-IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_job_execution](./client.md#describe-job-execution)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_pending_job_executions](./client.md#get-pending-job-executions)
-- [start_next_pending_job_execution](./client.md#start-next-pending-job-execution)
-- [update_job_execution](./client.md#update-job-execution)
+- [can_paginate](./client.md#can_paginate)
+- [describe_job_execution](./client.md#describe_job_execution)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_pending_job_executions](./client.md#get_pending_job_executions)
+- [start_next_pending_job_execution](./client.md#start_next_pending_job_execution)
+- [update_job_execution](./client.md#update_job_execution)
 
 ### Exceptions
 
-- [CertificateValidationException](./client.md#certificatevalidationexception)
-- [ClientError](./client.md#clienterror)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [InvalidStateTransitionException](./client.md#invalidstatetransitionexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TerminalStateException](./client.md#terminalstateexception)
-- [ThrottlingException](./client.md#throttlingexception)
+IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
+
+- CertificateValidationException
+- ClientError
+- InvalidRequestException
+- InvalidStateTransitionException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- TerminalStateException
+- ThrottlingException
 
 ## Literals
 
@@ -58,10 +58,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot_jobs_data.literals import JobExecutionStatus, ...
+from mypy_boto3_iot_jobs_data.literals import JobExecutionStatusType, ...
 ```
 
-- [JobExecutionStatus](./literals.md#jobexecutionstatus)
+- [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 
 ## Typed dictionaries
 

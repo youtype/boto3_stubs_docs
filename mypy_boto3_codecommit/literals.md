@@ -3,38 +3,38 @@
 > [Index](..) > [CodeCommit](.) > Literals
 
 Auto-generated documentation for
-[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
 [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Literals for boto3 CodeCommit module](#literals-for-boto3-codecommit-module)
-  - [ApprovalState](#approvalstate)
-  - [ChangeTypeEnum](#changetypeenum)
-  - [ConflictDetailLevelTypeEnum](#conflictdetailleveltypeenum)
-  - [ConflictResolutionStrategyTypeEnum](#conflictresolutionstrategytypeenum)
+  - [ApprovalStateType](#approvalstatetype)
+  - [ChangeTypeEnumType](#changetypeenumtype)
+  - [ConflictDetailLevelTypeEnumType](#conflictdetailleveltypeenumtype)
+  - [ConflictResolutionStrategyTypeEnumType](#conflictresolutionstrategytypeenumtype)
   - [DescribePullRequestEventsPaginatorName](#describepullrequesteventspaginatorname)
-  - [FileModeTypeEnum](#filemodetypeenum)
+  - [FileModeTypeEnumType](#filemodetypeenumtype)
   - [GetCommentsForComparedCommitPaginatorName](#getcommentsforcomparedcommitpaginatorname)
   - [GetCommentsForPullRequestPaginatorName](#getcommentsforpullrequestpaginatorname)
   - [GetDifferencesPaginatorName](#getdifferencespaginatorname)
   - [ListBranchesPaginatorName](#listbranchespaginatorname)
   - [ListPullRequestsPaginatorName](#listpullrequestspaginatorname)
   - [ListRepositoriesPaginatorName](#listrepositoriespaginatorname)
-  - [MergeOptionTypeEnum](#mergeoptiontypeenum)
-  - [ObjectTypeEnum](#objecttypeenum)
-  - [OrderEnum](#orderenum)
-  - [OverrideStatus](#overridestatus)
-  - [PullRequestEventType](#pullrequesteventtype)
-  - [PullRequestStatusEnum](#pullrequeststatusenum)
-  - [RelativeFileVersionEnum](#relativefileversionenum)
-  - [ReplacementTypeEnum](#replacementtypeenum)
-  - [RepositoryTriggerEventEnum](#repositorytriggereventenum)
-  - [SortByEnum](#sortbyenum)
+  - [MergeOptionTypeEnumType](#mergeoptiontypeenumtype)
+  - [ObjectTypeEnumType](#objecttypeenumtype)
+  - [OrderEnumType](#orderenumtype)
+  - [OverrideStatusType](#overridestatustype)
+  - [PullRequestEventTypeType](#pullrequesteventtypetype)
+  - [PullRequestStatusEnumType](#pullrequeststatusenumtype)
+  - [RelativeFileVersionEnumType](#relativefileversionenumtype)
+  - [ReplacementTypeEnumType](#replacementtypeenumtype)
+  - [RepositoryTriggerEventEnumType](#repositorytriggereventenumtype)
+  - [SortByEnumType](#sortbyenumtype)
 
-## ApprovalState
+## ApprovalStateType
 
 ```python
-from mypy_boto3_codecommit.literals import ApprovalState
+from mypy_boto3_codecommit.literals import ApprovalStateType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `APPROVE`
 - `REVOKE`
 
-## ChangeTypeEnum
+## ChangeTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import ChangeTypeEnum
+from mypy_boto3_codecommit.literals import ChangeTypeEnumType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `D`
 - `M`
 
-## ConflictDetailLevelTypeEnum
+## ConflictDetailLevelTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import ConflictDetailLevelTypeEnum
+from mypy_boto3_codecommit.literals import ConflictDetailLevelTypeEnumType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `FILE_LEVEL`
 - `LINE_LEVEL`
 
-## ConflictResolutionStrategyTypeEnum
+## ConflictResolutionStrategyTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import ConflictResolutionStrategyTypeEnum
+from mypy_boto3_codecommit.literals import ConflictResolutionStrategyTypeEnumType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 
 - `describe_pull_request_events`
 
-## FileModeTypeEnum
+## FileModeTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import FileModeTypeEnum
+from mypy_boto3_codecommit.literals import FileModeTypeEnumType
 ```
 
 Values:
@@ -160,10 +160,10 @@ Values:
 
 - `list_repositories`
 
-## MergeOptionTypeEnum
+## MergeOptionTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import MergeOptionTypeEnum
+from mypy_boto3_codecommit.literals import MergeOptionTypeEnumType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 - `SQUASH_MERGE`
 - `THREE_WAY_MERGE`
 
-## ObjectTypeEnum
+## ObjectTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import ObjectTypeEnum
+from mypy_boto3_codecommit.literals import ObjectTypeEnumType
 ```
 
 Values:
@@ -185,10 +185,10 @@ Values:
 - `GIT_LINK`
 - `SYMBOLIC_LINK`
 
-## OrderEnum
+## OrderEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import OrderEnum
+from mypy_boto3_codecommit.literals import OrderEnumType
 ```
 
 Values:
@@ -196,10 +196,10 @@ Values:
 - `ascending`
 - `descending`
 
-## OverrideStatus
+## OverrideStatusType
 
 ```python
-from mypy_boto3_codecommit.literals import OverrideStatus
+from mypy_boto3_codecommit.literals import OverrideStatusType
 ```
 
 Values:
@@ -207,10 +207,10 @@ Values:
 - `OVERRIDE`
 - `REVOKE`
 
-## PullRequestEventType
+## PullRequestEventTypeType
 
 ```python
-from mypy_boto3_codecommit.literals import PullRequestEventType
+from mypy_boto3_codecommit.literals import PullRequestEventTypeType
 ```
 
 Values:
@@ -225,10 +225,10 @@ Values:
 - `PULL_REQUEST_SOURCE_REFERENCE_UPDATED`
 - `PULL_REQUEST_STATUS_CHANGED`
 
-## PullRequestStatusEnum
+## PullRequestStatusEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import PullRequestStatusEnum
+from mypy_boto3_codecommit.literals import PullRequestStatusEnumType
 ```
 
 Values:
@@ -236,10 +236,10 @@ Values:
 - `CLOSED`
 - `OPEN`
 
-## RelativeFileVersionEnum
+## RelativeFileVersionEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import RelativeFileVersionEnum
+from mypy_boto3_codecommit.literals import RelativeFileVersionEnumType
 ```
 
 Values:
@@ -247,10 +247,10 @@ Values:
 - `AFTER`
 - `BEFORE`
 
-## ReplacementTypeEnum
+## ReplacementTypeEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import ReplacementTypeEnum
+from mypy_boto3_codecommit.literals import ReplacementTypeEnumType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `KEEP_SOURCE`
 - `USE_NEW_CONTENT`
 
-## RepositoryTriggerEventEnum
+## RepositoryTriggerEventEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import RepositoryTriggerEventEnum
+from mypy_boto3_codecommit.literals import RepositoryTriggerEventEnumType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `deleteReference`
 - `updateReference`
 
-## SortByEnum
+## SortByEnumType
 
 ```python
-from mypy_boto3_codecommit.literals import SortByEnum
+from mypy_boto3_codecommit.literals import SortByEnumType
 ```
 
 Values:

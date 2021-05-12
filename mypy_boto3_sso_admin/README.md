@@ -3,7 +3,7 @@
 > [Index](..) > SSOAdmin
 
 Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
 [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
@@ -30,55 +30,55 @@ Can be used directly:
 from mypy_boto3_sso_admin.client import SSOAdminClient
 ```
 
-SSOAdminClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [attach_managed_policy_to_permission_set](./client.md#attach-managed-policy-to-permission-set)
-- [can_paginate](./client.md#can-paginate)
-- [create_account_assignment](./client.md#create-account-assignment)
-- [create_instance_access_control_attribute_configuration](./client.md#create-instance-access-control-attribute-configuration)
-- [create_permission_set](./client.md#create-permission-set)
-- [delete_account_assignment](./client.md#delete-account-assignment)
-- [delete_inline_policy_from_permission_set](./client.md#delete-inline-policy-from-permission-set)
-- [delete_instance_access_control_attribute_configuration](./client.md#delete-instance-access-control-attribute-configuration)
-- [delete_permission_set](./client.md#delete-permission-set)
-- [describe_account_assignment_creation_status](./client.md#describe-account-assignment-creation-status)
-- [describe_account_assignment_deletion_status](./client.md#describe-account-assignment-deletion-status)
-- [describe_instance_access_control_attribute_configuration](./client.md#describe-instance-access-control-attribute-configuration)
-- [describe_permission_set](./client.md#describe-permission-set)
-- [describe_permission_set_provisioning_status](./client.md#describe-permission-set-provisioning-status)
-- [detach_managed_policy_from_permission_set](./client.md#detach-managed-policy-from-permission-set)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_inline_policy_for_permission_set](./client.md#get-inline-policy-for-permission-set)
-- [get_paginator](./client.md#get-paginator)
-- [list_account_assignment_creation_status](./client.md#list-account-assignment-creation-status)
-- [list_account_assignment_deletion_status](./client.md#list-account-assignment-deletion-status)
-- [list_account_assignments](./client.md#list-account-assignments)
-- [list_accounts_for_provisioned_permission_set](./client.md#list-accounts-for-provisioned-permission-set)
-- [list_instances](./client.md#list-instances)
-- [list_managed_policies_in_permission_set](./client.md#list-managed-policies-in-permission-set)
-- [list_permission_set_provisioning_status](./client.md#list-permission-set-provisioning-status)
-- [list_permission_sets](./client.md#list-permission-sets)
-- [list_permission_sets_provisioned_to_account](./client.md#list-permission-sets-provisioned-to-account)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [provision_permission_set](./client.md#provision-permission-set)
-- [put_inline_policy_to_permission_set](./client.md#put-inline-policy-to-permission-set)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_instance_access_control_attribute_configuration](./client.md#update-instance-access-control-attribute-configuration)
-- [update_permission_set](./client.md#update-permission-set)
+- [attach_managed_policy_to_permission_set](./client.md#attach_managed_policy_to_permission_set)
+- [can_paginate](./client.md#can_paginate)
+- [create_account_assignment](./client.md#create_account_assignment)
+- [create_instance_access_control_attribute_configuration](./client.md#create_instance_access_control_attribute_configuration)
+- [create_permission_set](./client.md#create_permission_set)
+- [delete_account_assignment](./client.md#delete_account_assignment)
+- [delete_inline_policy_from_permission_set](./client.md#delete_inline_policy_from_permission_set)
+- [delete_instance_access_control_attribute_configuration](./client.md#delete_instance_access_control_attribute_configuration)
+- [delete_permission_set](./client.md#delete_permission_set)
+- [describe_account_assignment_creation_status](./client.md#describe_account_assignment_creation_status)
+- [describe_account_assignment_deletion_status](./client.md#describe_account_assignment_deletion_status)
+- [describe_instance_access_control_attribute_configuration](./client.md#describe_instance_access_control_attribute_configuration)
+- [describe_permission_set](./client.md#describe_permission_set)
+- [describe_permission_set_provisioning_status](./client.md#describe_permission_set_provisioning_status)
+- [detach_managed_policy_from_permission_set](./client.md#detach_managed_policy_from_permission_set)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_inline_policy_for_permission_set](./client.md#get_inline_policy_for_permission_set)
+- [get_paginator](./client.md#get_paginator)
+- [list_account_assignment_creation_status](./client.md#list_account_assignment_creation_status)
+- [list_account_assignment_deletion_status](./client.md#list_account_assignment_deletion_status)
+- [list_account_assignments](./client.md#list_account_assignments)
+- [list_accounts_for_provisioned_permission_set](./client.md#list_accounts_for_provisioned_permission_set)
+- [list_instances](./client.md#list_instances)
+- [list_managed_policies_in_permission_set](./client.md#list_managed_policies_in_permission_set)
+- [list_permission_set_provisioning_status](./client.md#list_permission_set_provisioning_status)
+- [list_permission_sets](./client.md#list_permission_sets)
+- [list_permission_sets_provisioned_to_account](./client.md#list_permission_sets_provisioned_to_account)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [provision_permission_set](./client.md#provision_permission_set)
+- [put_inline_policy_to_permission_set](./client.md#put_inline_policy_to_permission_set)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_instance_access_control_attribute_configuration](./client.md#update_instance_access_control_attribute_configuration)
+- [update_permission_set](./client.md#update_permission_set)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+SSOAdminClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -109,10 +109,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigurationStatus, ...
+from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigurationStatusType, ...
 ```
 
-- [InstanceAccessControlAttributeConfigurationStatus](./literals.md#instanceaccesscontrolattributeconfigurationstatus)
+- [InstanceAccessControlAttributeConfigurationStatusType](./literals.md#instanceaccesscontrolattributeconfigurationstatustype)
 - [ListAccountAssignmentCreationStatusPaginatorName](./literals.md#listaccountassignmentcreationstatuspaginatorname)
 - [ListAccountAssignmentDeletionStatusPaginatorName](./literals.md#listaccountassignmentdeletionstatuspaginatorname)
 - [ListAccountAssignmentsPaginatorName](./literals.md#listaccountassignmentspaginatorname)
@@ -123,11 +123,11 @@ from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigur
 - [ListPermissionSetsPaginatorName](./literals.md#listpermissionsetspaginatorname)
 - [ListPermissionSetsProvisionedToAccountPaginatorName](./literals.md#listpermissionsetsprovisionedtoaccountpaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [PrincipalType](./literals.md#principaltype)
-- [ProvisionTargetType](./literals.md#provisiontargettype)
-- [ProvisioningStatus](./literals.md#provisioningstatus)
-- [StatusValues](./literals.md#statusvalues)
-- [TargetType](./literals.md#targettype)
+- [PrincipalTypeType](./literals.md#principaltypetype)
+- [ProvisionTargetTypeType](./literals.md#provisiontargettypetype)
+- [ProvisioningStatusType](./literals.md#provisioningstatustype)
+- [StatusValuesType](./literals.md#statusvaluestype)
+- [TargetTypeType](./literals.md#targettypetype)
 
 ## Typed dictionaries
 

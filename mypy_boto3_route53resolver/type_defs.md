@@ -3,7 +3,7 @@
 > [Index](..) > [Route53Resolver](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
 [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
@@ -327,7 +327,7 @@ Optional fields:
 - `ResourceId`: `str`
 - `OwnerId`: `str`
 - `FirewallFailOpen`:
-  [FirewallFailOpenStatus](./literals.md#firewallfailopenstatus)
+  [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
 
 ## FirewallDomainListMetadataTypeDef
 
@@ -355,7 +355,8 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `DomainCount`: `int`
-- `Status`: [FirewallDomainListStatus](./literals.md#firewalldomainliststatus)
+- `Status`:
+  [FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype)
 - `StatusMessage`: `str`
 - `ManagedOwnerName`: `str`
 - `CreatorRequestId`: `str`
@@ -377,10 +378,10 @@ Optional fields:
 - `Name`: `str`
 - `Priority`: `int`
 - `MutationProtection`:
-  [MutationProtectionStatus](./literals.md#mutationprotectionstatus)
+  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
 - `ManagedOwnerName`: `str`
 - `Status`:
-  [FirewallRuleGroupAssociationStatus](./literals.md#firewallrulegroupassociationstatus)
+  [FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype)
 - `StatusMessage`: `str`
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
@@ -399,7 +400,7 @@ Optional fields:
 - `Name`: `str`
 - `OwnerId`: `str`
 - `CreatorRequestId`: `str`
-- `ShareStatus`: [ShareStatus](./literals.md#sharestatus)
+- `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
 
 ## FirewallRuleGroupTypeDef
 
@@ -413,11 +414,12 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `RuleCount`: `int`
-- `Status`: [FirewallRuleGroupStatus](./literals.md#firewallrulegroupstatus)
+- `Status`:
+  [FirewallRuleGroupStatusType](./literals.md#firewallrulegroupstatustype)
 - `StatusMessage`: `str`
 - `OwnerId`: `str`
 - `CreatorRequestId`: `str`
-- `ShareStatus`: [ShareStatus](./literals.md#sharestatus)
+- `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
@@ -433,11 +435,11 @@ Optional fields:
 - `FirewallDomainListId`: `str`
 - `Name`: `str`
 - `Priority`: `int`
-- `Action`: [Action](./literals.md#action)
-- `BlockResponse`: [BlockResponse](./literals.md#blockresponse)
+- `Action`: [ActionType](./literals.md#actiontype)
+- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
 - `BlockOverrideDomain`: `str`
 - `BlockOverrideDnsType`: `Literal['CNAME']` (see
-  [BlockOverrideDnsType](./literals.md#blockoverridednstype))
+  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
 - `BlockOverrideTtl`: `int`
 - `CreatorRequestId`: `str`
 - `CreationTime`: `str`
@@ -451,7 +453,8 @@ from mypy_boto3_route53resolver.type_defs import GetFirewallConfigResponseTypeDe
 
 Optional fields:
 
-- `FirewallConfig`: [FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)
+- `FirewallConfig`:
+  [FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)
 
 ## GetFirewallDomainListResponseTypeDef
 
@@ -591,7 +594,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: [FirewallDomainListStatus](./literals.md#firewalldomainliststatus)
+- `Status`:
+  [FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype)
 - `StatusMessage`: `str`
 
 ## IpAddressRequestTypeDef
@@ -619,7 +623,7 @@ Optional fields:
 - `IpId`: `str`
 - `SubnetId`: `str`
 - `Ip`: `str`
-- `Status`: [IpAddressStatus](./literals.md#ipaddressstatus)
+- `Status`: [IpAddressStatusType](./literals.md#ipaddressstatustype)
 - `StatusMessage`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
@@ -864,7 +868,7 @@ Optional fields:
 - `OwnerId`: `str`
 - `ResourceId`: `str`
 - `ValidationStatus`:
-  [ResolverDNSSECValidationStatus](./literals.md#resolverdnssecvalidationstatus)
+  [ResolverDNSSECValidationStatusType](./literals.md#resolverdnssecvalidationstatustype)
 
 ## ResolverEndpointTypeDef
 
@@ -880,10 +884,11 @@ Optional fields:
 - `Name`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `Direction`:
-  [ResolverEndpointDirection](./literals.md#resolverendpointdirection)
+  [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
 - `IpAddressCount`: `int`
 - `HostVPCId`: `str`
-- `Status`: [ResolverEndpointStatus](./literals.md#resolverendpointstatus)
+- `Status`:
+  [ResolverEndpointStatusType](./literals.md#resolverendpointstatustype)
 - `StatusMessage`: `str`
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
@@ -900,9 +905,9 @@ Optional fields:
 - `ResolverQueryLogConfigId`: `str`
 - `ResourceId`: `str`
 - `Status`:
-  [ResolverQueryLogConfigAssociationStatus](./literals.md#resolverquerylogconfigassociationstatus)
+  [ResolverQueryLogConfigAssociationStatusType](./literals.md#resolverquerylogconfigassociationstatustype)
 - `Error`:
-  [ResolverQueryLogConfigAssociationError](./literals.md#resolverquerylogconfigassociationerror)
+  [ResolverQueryLogConfigAssociationErrorType](./literals.md#resolverquerylogconfigassociationerrortype)
 - `ErrorMessage`: `str`
 - `CreationTime`: `str`
 
@@ -917,8 +922,8 @@ Optional fields:
 - `Id`: `str`
 - `OwnerId`: `str`
 - `Status`:
-  [ResolverQueryLogConfigStatus](./literals.md#resolverquerylogconfigstatus)
-- `ShareStatus`: [ShareStatus](./literals.md#sharestatus)
+  [ResolverQueryLogConfigStatusType](./literals.md#resolverquerylogconfigstatustype)
+- `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
 - `AssociationCount`: `int`
 - `Arn`: `str`
 - `Name`: `str`
@@ -939,7 +944,7 @@ Optional fields:
 - `Name`: `str`
 - `VPCId`: `str`
 - `Status`:
-  [ResolverRuleAssociationStatus](./literals.md#resolverruleassociationstatus)
+  [ResolverRuleAssociationStatusType](./literals.md#resolverruleassociationstatustype)
 - `StatusMessage`: `str`
 
 ## ResolverRuleConfigTypeDef
@@ -967,15 +972,15 @@ Optional fields:
 - `CreatorRequestId`: `str`
 - `Arn`: `str`
 - `DomainName`: `str`
-- `Status`: [ResolverRuleStatus](./literals.md#resolverrulestatus)
+- `Status`: [ResolverRuleStatusType](./literals.md#resolverrulestatustype)
 - `StatusMessage`: `str`
-- `RuleType`: [RuleTypeOption](./literals.md#ruletypeoption)
+- `RuleType`: [RuleTypeOptionType](./literals.md#ruletypeoptiontype)
 - `Name`: `str`
 - `TargetIps`:
   `List`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
 - `ResolverEndpointId`: `str`
 - `OwnerId`: `str`
-- `ShareStatus`: [ShareStatus](./literals.md#sharestatus)
+- `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
@@ -1012,7 +1017,8 @@ from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigResponseTyp
 
 Optional fields:
 
-- `FirewallConfig`: [FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)
+- `FirewallConfig`:
+  [FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)
 
 ## UpdateFirewallDomainsResponseTypeDef
 
@@ -1024,7 +1030,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Status`: [FirewallDomainListStatus](./literals.md#firewalldomainliststatus)
+- `Status`:
+  [FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype)
 - `StatusMessage`: `str`
 
 ## UpdateFirewallRuleGroupAssociationResponseTypeDef

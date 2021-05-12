@@ -3,49 +3,49 @@
 > [Index](..) > [IoTThingsGraph](.) > Literals
 
 Auto-generated documentation for
-[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
 [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [Literals for boto3 IoTThingsGraph module](#literals-for-boto3-iotthingsgraph-module)
-  - [DefinitionLanguage](#definitionlanguage)
-  - [DeploymentTarget](#deploymenttarget)
-  - [EntityFilterName](#entityfiltername)
-  - [EntityType](#entitytype)
-  - [FlowExecutionEventType](#flowexecutioneventtype)
-  - [FlowExecutionStatus](#flowexecutionstatus)
-  - [FlowTemplateFilterName](#flowtemplatefiltername)
+  - [DefinitionLanguageType](#definitionlanguagetype)
+  - [DeploymentTargetType](#deploymenttargettype)
+  - [EntityFilterNameType](#entityfilternametype)
+  - [EntityTypeType](#entitytypetype)
+  - [FlowExecutionEventTypeType](#flowexecutioneventtypetype)
+  - [FlowExecutionStatusType](#flowexecutionstatustype)
+  - [FlowTemplateFilterNameType](#flowtemplatefilternametype)
   - [GetFlowTemplateRevisionsPaginatorName](#getflowtemplaterevisionspaginatorname)
   - [GetSystemTemplateRevisionsPaginatorName](#getsystemtemplaterevisionspaginatorname)
   - [ListFlowExecutionMessagesPaginatorName](#listflowexecutionmessagespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [NamespaceDeletionStatus](#namespacedeletionstatus)
-  - [NamespaceDeletionStatusErrorCodes](#namespacedeletionstatuserrorcodes)
+  - [NamespaceDeletionStatusErrorCodesType](#namespacedeletionstatuserrorcodestype)
+  - [NamespaceDeletionStatusType](#namespacedeletionstatustype)
   - [SearchEntitiesPaginatorName](#searchentitiespaginatorname)
   - [SearchFlowExecutionsPaginatorName](#searchflowexecutionspaginatorname)
   - [SearchFlowTemplatesPaginatorName](#searchflowtemplatespaginatorname)
   - [SearchSystemInstancesPaginatorName](#searchsysteminstancespaginatorname)
   - [SearchSystemTemplatesPaginatorName](#searchsystemtemplatespaginatorname)
   - [SearchThingsPaginatorName](#searchthingspaginatorname)
-  - [SystemInstanceDeploymentStatus](#systeminstancedeploymentstatus)
-  - [SystemInstanceFilterName](#systeminstancefiltername)
-  - [SystemTemplateFilterName](#systemtemplatefiltername)
-  - [UploadStatus](#uploadstatus)
+  - [SystemInstanceDeploymentStatusType](#systeminstancedeploymentstatustype)
+  - [SystemInstanceFilterNameType](#systeminstancefilternametype)
+  - [SystemTemplateFilterNameType](#systemtemplatefilternametype)
+  - [UploadStatusType](#uploadstatustype)
 
-## DefinitionLanguage
+## DefinitionLanguageType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import DefinitionLanguage
+from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType
 ```
 
 Values:
 
 - `GRAPHQL`
 
-## DeploymentTarget
+## DeploymentTargetType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import DeploymentTarget
+from mypy_boto3_iotthingsgraph.literals import DeploymentTargetType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `CLOUD`
 - `GREENGRASS`
 
-## EntityFilterName
+## EntityFilterNameType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import EntityFilterName
+from mypy_boto3_iotthingsgraph.literals import EntityFilterNameType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `REFERENCED_ENTITY_ID`
 - `SEMANTIC_TYPE_PATH`
 
-## EntityType
+## EntityTypeType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import EntityType
+from mypy_boto3_iotthingsgraph.literals import EntityTypeType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `SERVICE`
 - `STATE`
 
-## FlowExecutionEventType
+## FlowExecutionEventTypeType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import FlowExecutionEventType
+from mypy_boto3_iotthingsgraph.literals import FlowExecutionEventTypeType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `THING_ACTION_TASK_FAILED`
 - `THING_ACTION_TASK_SUCCEEDED`
 
-## FlowExecutionStatus
+## FlowExecutionStatusType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import FlowExecutionStatus
+from mypy_boto3_iotthingsgraph.literals import FlowExecutionStatusType
 ```
 
 Values:
@@ -124,10 +124,10 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
-## FlowTemplateFilterName
+## FlowTemplateFilterNameType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import FlowTemplateFilterName
+from mypy_boto3_iotthingsgraph.literals import FlowTemplateFilterNameType
 ```
 
 Values:
@@ -174,10 +174,20 @@ Values:
 
 - `list_tags_for_resource`
 
-## NamespaceDeletionStatus
+## NamespaceDeletionStatusErrorCodesType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import NamespaceDeletionStatus
+from mypy_boto3_iotthingsgraph.literals import NamespaceDeletionStatusErrorCodesType
+```
+
+Values:
+
+- `VALIDATION_FAILED`
+
+## NamespaceDeletionStatusType
+
+```python
+from mypy_boto3_iotthingsgraph.literals import NamespaceDeletionStatusType
 ```
 
 Values:
@@ -185,16 +195,6 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
-
-## NamespaceDeletionStatusErrorCodes
-
-```python
-from mypy_boto3_iotthingsgraph.literals import NamespaceDeletionStatusErrorCodes
-```
-
-Values:
-
-- `VALIDATION_FAILED`
 
 ## SearchEntitiesPaginatorName
 
@@ -256,10 +256,10 @@ Values:
 
 - `search_things`
 
-## SystemInstanceDeploymentStatus
+## SystemInstanceDeploymentStatusType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import SystemInstanceDeploymentStatus
+from mypy_boto3_iotthingsgraph.literals import SystemInstanceDeploymentStatusType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `PENDING_DELETE`
 - `UNDEPLOY_IN_PROGRESS`
 
-## SystemInstanceFilterName
+## SystemInstanceFilterNameType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import SystemInstanceFilterName
+from mypy_boto3_iotthingsgraph.literals import SystemInstanceFilterNameType
 ```
 
 Values:
@@ -285,20 +285,20 @@ Values:
 - `STATUS`
 - `SYSTEM_TEMPLATE_ID`
 
-## SystemTemplateFilterName
+## SystemTemplateFilterNameType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import SystemTemplateFilterName
+from mypy_boto3_iotthingsgraph.literals import SystemTemplateFilterNameType
 ```
 
 Values:
 
 - `FLOW_TEMPLATE_ID`
 
-## UploadStatus
+## UploadStatusType
 
 ```python
-from mypy_boto3_iotthingsgraph.literals import UploadStatus
+from mypy_boto3_iotthingsgraph.literals import UploadStatusType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > MarketplaceCatalog
 
 Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
 [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
@@ -29,30 +29,30 @@ Can be used directly:
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 ```
 
-MarketplaceCatalogClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_change_set](./client.md#cancel-change-set)
-- [describe_change_set](./client.md#describe-change-set)
-- [describe_entity](./client.md#describe-entity)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_change_sets](./client.md#list-change-sets)
-- [list_entities](./client.md#list-entities)
-- [start_change_set](./client.md#start-change-set)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_change_set](./client.md#cancel_change_set)
+- [describe_change_set](./client.md#describe_change_set)
+- [describe_entity](./client.md#describe_entity)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_change_sets](./client.md#list_change_sets)
+- [list_entities](./client.md#list_entities)
+- [start_change_set](./client.md#start_change_set)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceNotSupportedException](./client.md#resourcenotsupportedexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+MarketplaceCatalogClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServiceException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceNotSupportedException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -61,12 +61,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplace_catalog.literals import ChangeStatus, ...
+from mypy_boto3_marketplace_catalog.literals import ChangeStatusType, ...
 ```
 
-- [ChangeStatus](./literals.md#changestatus)
-- [FailureCode](./literals.md#failurecode)
-- [SortOrder](./literals.md#sortorder)
+- [ChangeStatusType](./literals.md#changestatustype)
+- [FailureCodeType](./literals.md#failurecodetype)
+- [SortOrderType](./literals.md#sortordertype)
 
 ## Typed dictionaries
 

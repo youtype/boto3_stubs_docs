@@ -3,20 +3,20 @@
 > [Index](..) > [MediaStore](.) > Literals
 
 Auto-generated documentation for
-[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
 [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [Literals for boto3 MediaStore module](#literals-for-boto3-mediastore-module)
-  - [ContainerLevelMetrics](#containerlevelmetrics)
-  - [ContainerStatus](#containerstatus)
+  - [ContainerLevelMetricsType](#containerlevelmetricstype)
+  - [ContainerStatusType](#containerstatustype)
   - [ListContainersPaginatorName](#listcontainerspaginatorname)
-  - [MethodName](#methodname)
+  - [MethodNameType](#methodnametype)
 
-## ContainerLevelMetrics
+## ContainerLevelMetricsType
 
 ```python
-from mypy_boto3_mediastore.literals import ContainerLevelMetrics
+from mypy_boto3_mediastore.literals import ContainerLevelMetricsType
 ```
 
 Values:
@@ -24,10 +24,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ContainerStatus
+## ContainerStatusType
 
 ```python
-from mypy_boto3_mediastore.literals import ContainerStatus
+from mypy_boto3_mediastore.literals import ContainerStatusType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 
 - `list_containers`
 
-## MethodName
+## MethodNameType
 
 ```python
-from mypy_boto3_mediastore.literals import MethodName
+from mypy_boto3_mediastore.literals import MethodNameType
 ```
 
 Values:

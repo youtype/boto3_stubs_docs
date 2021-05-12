@@ -3,7 +3,7 @@
 > [Index](..) > [FMS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS)
 type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
@@ -151,7 +151,7 @@ from mypy_boto3_fms.type_defs import ComplianceViolatorTypeDef
 Optional fields:
 
 - `ResourceId`: `str`
-- `ViolationReason`: [ViolationReason](./literals.md#violationreason)
+- `ViolationReason`: [ViolationReasonType](./literals.md#violationreasontype)
 - `ResourceType`: `str`
 
 ## DnsDuplicateRuleGroupViolationTypeDef
@@ -200,7 +200,7 @@ from mypy_boto3_fms.type_defs import EvaluationResultTypeDef
 Optional fields:
 
 - `ComplianceStatus`:
-  [PolicyComplianceStatusType](./literals.md#policycompliancestatustype)
+  [PolicyComplianceStatusTypeType](./literals.md#policycompliancestatustypetype)
 - `ViolatorCount`: `int`
 - `EvaluationLimitExceeded`: `bool`
 
@@ -213,7 +213,7 @@ from mypy_boto3_fms.type_defs import GetAdminAccountResponseTypeDef
 Optional fields:
 
 - `AdminAccount`: `str`
-- `RoleStatus`: [AccountRoleStatus](./literals.md#accountrolestatus)
+- `RoleStatus`: [AccountRoleStatusType](./literals.md#accountrolestatustype)
 
 ## GetAppsListResponseTypeDef
 
@@ -268,7 +268,8 @@ from mypy_boto3_fms.type_defs import GetProtectionStatusResponseTypeDef
 Optional fields:
 
 - `AdminAccountId`: `str`
-- `ServiceType`: [SecurityServiceType](./literals.md#securityservicetype)
+- `ServiceType`:
+  [SecurityServiceTypeType](./literals.md#securityservicetypetype)
 - `Data`: `str`
 - `NextToken`: `str`
 
@@ -473,7 +474,8 @@ Optional fields:
 - `EvaluationLimitExceeded`: `bool`
 - `ExpiredAt`: `datetime`
 - `IssueInfoMap`:
-  `Dict`\[[DependentServiceName](./literals.md#dependentservicename), `str`\]
+  `Dict`\[[DependentServiceNameType](./literals.md#dependentservicenametype),
+  `str`\]
 
 ## PolicyComplianceStatusTypeDef
 
@@ -491,7 +493,8 @@ Optional fields:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `LastUpdated`: `datetime`
 - `IssueInfoMap`:
-  `Dict`\[[DependentServiceName](./literals.md#dependentservicename), `str`\]
+  `Dict`\[[DependentServiceNameType](./literals.md#dependentservicenametype),
+  `str`\]
 
 ## PolicySummaryTypeDef
 
@@ -505,7 +508,8 @@ Optional fields:
 - `PolicyId`: `str`
 - `PolicyName`: `str`
 - `ResourceType`: `str`
-- `SecurityServiceType`: [SecurityServiceType](./literals.md#securityservicetype)
+- `SecurityServiceType`:
+  [SecurityServiceTypeType](./literals.md#securityservicetypetype)
 - `RemediationEnabled`: `bool`
 
 ## PolicyTypeDef
@@ -531,10 +535,10 @@ Optional fields:
 - `ResourceTags`:
   `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 - `IncludeMap`:
-  `Dict`\[[CustomerPolicyScopeIdType](./literals.md#customerpolicyscopeidtype),
+  `Dict`\[[CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype),
   `List`\[`str`\]\]
 - `ExcludeMap`:
-  `Dict`\[[CustomerPolicyScopeIdType](./literals.md#customerpolicyscopeidtype),
+  `Dict`\[[CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype),
   `List`\[`str`\]\]
 
 ## ProtocolsListDataSummaryTypeDef
@@ -655,7 +659,7 @@ from mypy_boto3_fms.type_defs import SecurityGroupRemediationActionTypeDef
 Optional fields:
 
 - `RemediationActionType`:
-  [RemediationActionType](./literals.md#remediationactiontype)
+  [RemediationActionTypeType](./literals.md#remediationactiontypetype)
 - `Description`: `str`
 - `RemediationResult`:
   [SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)
@@ -684,7 +688,7 @@ from mypy_boto3_fms.type_defs import SecurityServicePolicyDataTypeDef
 
 Required fields:
 
-- `Type`: [SecurityServiceType](./literals.md#securityservicetype)
+- `Type`: [SecurityServiceTypeType](./literals.md#securityservicetypetype)
 
 Optional fields:
 

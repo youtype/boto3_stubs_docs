@@ -3,7 +3,7 @@
 > [Index](..) > WorkMailMessageFlow
 
 Auto-generated documentation for
-[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module
 [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
@@ -28,22 +28,22 @@ Can be used directly:
 from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 ```
 
-WorkMailMessageFlowClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_raw_message_content](./client.md#get-raw-message-content)
-- [put_raw_message_content](./client.md#put-raw-message-content)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_raw_message_content](./client.md#get_raw_message_content)
+- [put_raw_message_content](./client.md#put_raw_message_content)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidContentLocation](./client.md#invalidcontentlocation)
-- [MessageFrozen](./client.md#messagefrozen)
-- [MessageRejected](./client.md#messagerejected)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+WorkMailMessageFlowClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidContentLocation
+- MessageFrozen
+- MessageRejected
+- ResourceNotFoundException
 
 ## Typed dictionaries
 

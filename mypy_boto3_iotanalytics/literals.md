@@ -3,30 +3,30 @@
 > [Index](..) > [IoTAnalytics](.) > Literals
 
 Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
 [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [Literals for boto3 IoTAnalytics module](#literals-for-boto3-iotanalytics-module)
-  - [ChannelStatus](#channelstatus)
-  - [ComputeType](#computetype)
-  - [DatasetActionType](#datasetactiontype)
-  - [DatasetContentState](#datasetcontentstate)
-  - [DatasetStatus](#datasetstatus)
-  - [DatastoreStatus](#datastorestatus)
-  - [FileFormatType](#fileformattype)
+  - [ChannelStatusType](#channelstatustype)
+  - [ComputeTypeType](#computetypetype)
+  - [DatasetActionTypeType](#datasetactiontypetype)
+  - [DatasetContentStateType](#datasetcontentstatetype)
+  - [DatasetStatusType](#datasetstatustype)
+  - [DatastoreStatusType](#datastorestatustype)
+  - [FileFormatTypeType](#fileformattypetype)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
   - [ListDatasetContentsPaginatorName](#listdatasetcontentspaginatorname)
   - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
   - [ListDatastoresPaginatorName](#listdatastorespaginatorname)
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
-  - [LoggingLevel](#logginglevel)
-  - [ReprocessingStatus](#reprocessingstatus)
+  - [LoggingLevelType](#loggingleveltype)
+  - [ReprocessingStatusType](#reprocessingstatustype)
 
-## ChannelStatus
+## ChannelStatusType
 
 ```python
-from mypy_boto3_iotanalytics.literals import ChannelStatus
+from mypy_boto3_iotanalytics.literals import ChannelStatusType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `CREATING`
 - `DELETING`
 
-## ComputeType
+## ComputeTypeType
 
 ```python
-from mypy_boto3_iotanalytics.literals import ComputeType
+from mypy_boto3_iotanalytics.literals import ComputeTypeType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `ACU_1`
 - `ACU_2`
 
-## DatasetActionType
+## DatasetActionTypeType
 
 ```python
-from mypy_boto3_iotanalytics.literals import DatasetActionType
+from mypy_boto3_iotanalytics.literals import DatasetActionTypeType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 - `CONTAINER`
 - `QUERY`
 
-## DatasetContentState
+## DatasetContentStateType
 
 ```python
-from mypy_boto3_iotanalytics.literals import DatasetContentState
+from mypy_boto3_iotanalytics.literals import DatasetContentStateType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `FAILED`
 - `SUCCEEDED`
 
-## DatasetStatus
+## DatasetStatusType
 
 ```python
-from mypy_boto3_iotanalytics.literals import DatasetStatus
+from mypy_boto3_iotanalytics.literals import DatasetStatusType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `CREATING`
 - `DELETING`
 
-## DatastoreStatus
+## DatastoreStatusType
 
 ```python
-from mypy_boto3_iotanalytics.literals import DatastoreStatus
+from mypy_boto3_iotanalytics.literals import DatastoreStatusType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `CREATING`
 - `DELETING`
 
-## FileFormatType
+## FileFormatTypeType
 
 ```python
-from mypy_boto3_iotanalytics.literals import FileFormatType
+from mypy_boto3_iotanalytics.literals import FileFormatTypeType
 ```
 
 Values:
@@ -154,20 +154,20 @@ Values:
 
 - `list_pipelines`
 
-## LoggingLevel
+## LoggingLevelType
 
 ```python
-from mypy_boto3_iotanalytics.literals import LoggingLevel
+from mypy_boto3_iotanalytics.literals import LoggingLevelType
 ```
 
 Values:
 
 - `ERROR`
 
-## ReprocessingStatus
+## ReprocessingStatusType
 
 ```python
-from mypy_boto3_iotanalytics.literals import ReprocessingStatus
+from mypy_boto3_iotanalytics.literals import ReprocessingStatusType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > IoTSecureTunneling
 
 Auto-generated documentation for
-[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
 [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
@@ -29,25 +29,25 @@ Can be used directly:
 from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 ```
 
-IoTSecureTunnelingClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [close_tunnel](./client.md#close-tunnel)
-- [describe_tunnel](./client.md#describe-tunnel)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_tunnels](./client.md#list-tunnels)
-- [open_tunnel](./client.md#open-tunnel)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [close_tunnel](./client.md#close_tunnel)
+- [describe_tunnel](./client.md#describe_tunnel)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_tunnels](./client.md#list_tunnels)
+- [open_tunnel](./client.md#open_tunnel)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+IoTSecureTunnelingClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- LimitExceededException
+- ResourceNotFoundException
 
 ## Literals
 
@@ -56,11 +56,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsecuretunneling.literals import ConnectionStatus, ...
+from mypy_boto3_iotsecuretunneling.literals import ConnectionStatusType, ...
 ```
 
-- [ConnectionStatus](./literals.md#connectionstatus)
-- [TunnelStatus](./literals.md#tunnelstatus)
+- [ConnectionStatusType](./literals.md#connectionstatustype)
+- [TunnelStatusType](./literals.md#tunnelstatustype)
 
 ## Typed dictionaries
 

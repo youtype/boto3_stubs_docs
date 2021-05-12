@@ -3,31 +3,31 @@
 > [Index](..) > [PinpointEmail](.) > Literals
 
 Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
 [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [Literals for boto3 PinpointEmail module](#literals-for-boto3-pinpointemail-module)
-  - [BehaviorOnMxFailure](#behavioronmxfailure)
-  - [DeliverabilityDashboardAccountStatus](#deliverabilitydashboardaccountstatus)
-  - [DeliverabilityTestStatus](#deliverabilityteststatus)
-  - [DimensionValueSource](#dimensionvaluesource)
-  - [DkimStatus](#dkimstatus)
-  - [EventType](#eventtype)
+  - [BehaviorOnMxFailureType](#behavioronmxfailuretype)
+  - [DeliverabilityDashboardAccountStatusType](#deliverabilitydashboardaccountstatustype)
+  - [DeliverabilityTestStatusType](#deliverabilityteststatustype)
+  - [DimensionValueSourceType](#dimensionvaluesourcetype)
+  - [DkimStatusType](#dkimstatustype)
+  - [EventTypeType](#eventtypetype)
   - [GetDedicatedIpsPaginatorName](#getdedicatedipspaginatorname)
-  - [IdentityType](#identitytype)
+  - [IdentityTypeType](#identitytypetype)
   - [ListConfigurationSetsPaginatorName](#listconfigurationsetspaginatorname)
   - [ListDedicatedIpPoolsPaginatorName](#listdedicatedippoolspaginatorname)
   - [ListDeliverabilityTestReportsPaginatorName](#listdeliverabilitytestreportspaginatorname)
   - [ListEmailIdentitiesPaginatorName](#listemailidentitiespaginatorname)
-  - [MailFromDomainStatus](#mailfromdomainstatus)
-  - [TlsPolicy](#tlspolicy)
-  - [WarmupStatus](#warmupstatus)
+  - [MailFromDomainStatusType](#mailfromdomainstatustype)
+  - [TlsPolicyType](#tlspolicytype)
+  - [WarmupStatusType](#warmupstatustype)
 
-## BehaviorOnMxFailure
+## BehaviorOnMxFailureType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailure
+from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `REJECT_MESSAGE`
 - `USE_DEFAULT_VALUE`
 
-## DeliverabilityDashboardAccountStatus
+## DeliverabilityDashboardAccountStatusType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import DeliverabilityDashboardAccountStatus
+from mypy_boto3_pinpoint_email.literals import DeliverabilityDashboardAccountStatusType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `DISABLED`
 - `PENDING_EXPIRATION`
 
-## DeliverabilityTestStatus
+## DeliverabilityTestStatusType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import DeliverabilityTestStatus
+from mypy_boto3_pinpoint_email.literals import DeliverabilityTestStatusType
 ```
 
 Values:
@@ -58,10 +58,10 @@ Values:
 - `COMPLETED`
 - `IN_PROGRESS`
 
-## DimensionValueSource
+## DimensionValueSourceType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import DimensionValueSource
+from mypy_boto3_pinpoint_email.literals import DimensionValueSourceType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `LINK_TAG`
 - `MESSAGE_TAG`
 
-## DkimStatus
+## DkimStatusType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import DkimStatus
+from mypy_boto3_pinpoint_email.literals import DkimStatusType
 ```
 
 Values:
@@ -84,10 +84,10 @@ Values:
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import EventType
+from mypy_boto3_pinpoint_email.literals import EventTypeType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 
 - `get_dedicated_ips`
 
-## IdentityType
+## IdentityTypeType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import IdentityType
+from mypy_boto3_pinpoint_email.literals import IdentityTypeType
 ```
 
 Values:
@@ -163,10 +163,10 @@ Values:
 
 - `list_email_identities`
 
-## MailFromDomainStatus
+## MailFromDomainStatusType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import MailFromDomainStatus
+from mypy_boto3_pinpoint_email.literals import MailFromDomainStatusType
 ```
 
 Values:
@@ -176,10 +176,10 @@ Values:
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
 
-## TlsPolicy
+## TlsPolicyType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import TlsPolicy
+from mypy_boto3_pinpoint_email.literals import TlsPolicyType
 ```
 
 Values:
@@ -187,10 +187,10 @@ Values:
 - `OPTIONAL`
 - `REQUIRE`
 
-## WarmupStatus
+## WarmupStatusType
 
 ```python
-from mypy_boto3_pinpoint_email.literals import WarmupStatus
+from mypy_boto3_pinpoint_email.literals import WarmupStatusType
 ```
 
 Values:

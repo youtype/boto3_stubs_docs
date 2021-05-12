@@ -3,7 +3,7 @@
 > [Index](..) > [RoboMaker](.) > Typed dictionaries
 
 Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
 [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
@@ -167,11 +167,12 @@ Optional fields:
 
 - `arn`: `str`
 - `fleet`: `str`
-- `status`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `deploymentApplicationConfigs`:
   `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
 - `failureReason`: `str`
-- `failureCode`: [DeploymentJobErrorCode](./literals.md#deploymentjoberrorcode)
+- `failureCode`:
+  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - `createdAt`: `datetime`
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
@@ -237,7 +238,7 @@ Optional fields:
 - `name`: `str`
 - `createdAt`: `datetime`
 - `greengrassGroupId`: `str`
-- `architecture`: [Architecture](./literals.md#architecture)
+- `architecture`: [ArchitectureType](./literals.md#architecturetype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateSimulationApplicationResponseTypeDef
@@ -292,13 +293,15 @@ from mypy_boto3_robomaker.type_defs import CreateSimulationJobResponseTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `status`: [SimulationJobStatus](./literals.md#simulationjobstatus)
+- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
 - `lastStartedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
-- `failureBehavior`: [FailureBehavior](./literals.md#failurebehavior)
-- `failureCode`: [SimulationJobErrorCode](./literals.md#simulationjoberrorcode)
+- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
+- `failureCode`:
+  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
 - `clientRequestToken`: `str`
-- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `maxJobDurationInSeconds`: `int`
 - `simulationTimeMillis`: `int`
@@ -307,7 +310,8 @@ Optional fields:
   `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
 - `simulationApplications`:
   `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `dataSources`:
+  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `vpcConfig`:
   [VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
@@ -322,11 +326,13 @@ from mypy_boto3_robomaker.type_defs import CreateWorldExportJobResponseTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `status`: [WorldExportJobStatus](./literals.md#worldexportjobstatus)
+- `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - `createdAt`: `datetime`
-- `failureCode`: [WorldExportJobErrorCode](./literals.md#worldexportjoberrorcode)
+- `failureCode`:
+  [WorldExportJobErrorCodeType](./literals.md#worldexportjoberrorcodetype)
 - `clientRequestToken`: `str`
-- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `iamRole`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -339,10 +345,11 @@ from mypy_boto3_robomaker.type_defs import CreateWorldGenerationJobResponseTypeD
 Optional fields:
 
 - `arn`: `str`
-- `status`: [WorldGenerationJobStatus](./literals.md#worldgenerationjobstatus)
+- `status`:
+  [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
 - `createdAt`: `datetime`
 - `failureCode`:
-  [WorldGenerationJobErrorCode](./literals.md#worldgenerationjoberrorcode)
+  [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - `clientRequestToken`: `str`
 - `template`: `str`
 - `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
@@ -423,13 +430,14 @@ Optional fields:
 
 - `arn`: `str`
 - `fleet`: `str`
-- `status`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `deploymentApplicationConfigs`:
   `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `failureReason`: `str`
-- `failureCode`: [DeploymentJobErrorCode](./literals.md#deploymentjoberrorcode)
+- `failureCode`:
+  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - `createdAt`: `datetime`
 
 ## DeploymentLaunchConfigTypeDef
@@ -470,13 +478,14 @@ Optional fields:
 
 - `arn`: `str`
 - `fleet`: `str`
-- `status`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `deploymentApplicationConfigs`:
   `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
 - `failureReason`: `str`
-- `failureCode`: [DeploymentJobErrorCode](./literals.md#deploymentjoberrorcode)
+- `failureCode`:
+  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - `createdAt`: `datetime`
 - `robotDeploymentSummary`:
   `List`\[[RobotDeploymentTypeDef](./type_defs.md#robotdeploymenttypedef)\]
@@ -494,7 +503,8 @@ Optional fields:
 - `arn`: `str`
 - `robots`: `List`\[[RobotTypeDef](./type_defs.md#robottypedef)\]
 - `createdAt`: `datetime`
-- `lastDeploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `lastDeploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `lastDeploymentJob`: `str`
 - `lastDeploymentTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -528,10 +538,10 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `fleetArn`: `str`
-- `status`: [RobotStatus](./literals.md#robotstatus)
+- `status`: [RobotStatusType](./literals.md#robotstatustype)
 - `greengrassGroupId`: `str`
 - `createdAt`: `datetime`
-- `architecture`: [Architecture](./literals.md#architecture)
+- `architecture`: [ArchitectureType](./literals.md#architecturetype)
 - `lastDeploymentJob`: `str`
 - `lastDeploymentTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -567,13 +577,14 @@ from mypy_boto3_robomaker.type_defs import DescribeSimulationJobBatchResponseTyp
 Optional fields:
 
 - `arn`: `str`
-- `status`: [SimulationJobBatchStatus](./literals.md#simulationjobbatchstatus)
+- `status`:
+  [SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype)
 - `lastUpdatedAt`: `datetime`
 - `createdAt`: `datetime`
 - `clientRequestToken`: `str`
 - `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
 - `failureCode`: `Literal['InternalServiceError']` (see
-  [SimulationJobBatchErrorCode](./literals.md#simulationjobbatcherrorcode))
+  [SimulationJobBatchErrorCodeType](./literals.md#simulationjobbatcherrorcodetype))
 - `failureReason`: `str`
 - `failedRequests`:
   `List`\[[FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef)\]
@@ -593,14 +604,16 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `status`: [SimulationJobStatus](./literals.md#simulationjobstatus)
+- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
 - `lastStartedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
-- `failureBehavior`: [FailureBehavior](./literals.md#failurebehavior)
-- `failureCode`: [SimulationJobErrorCode](./literals.md#simulationjoberrorcode)
+- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
+- `failureCode`:
+  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
 - `failureReason`: `str`
 - `clientRequestToken`: `str`
-- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `maxJobDurationInSeconds`: `int`
 - `simulationTimeMillis`: `int`
@@ -609,7 +622,8 @@ Optional fields:
   `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
 - `simulationApplications`:
   `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `dataSources`:
+  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `vpcConfig`:
   [VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
@@ -626,13 +640,15 @@ from mypy_boto3_robomaker.type_defs import DescribeWorldExportJobResponseTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `status`: [WorldExportJobStatus](./literals.md#worldexportjobstatus)
+- `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - `createdAt`: `datetime`
-- `failureCode`: [WorldExportJobErrorCode](./literals.md#worldexportjoberrorcode)
+- `failureCode`:
+  [WorldExportJobErrorCodeType](./literals.md#worldexportjoberrorcodetype)
 - `failureReason`: `str`
 - `clientRequestToken`: `str`
 - `worlds`: `List`\[`str`\]
-- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `iamRole`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -645,10 +661,11 @@ from mypy_boto3_robomaker.type_defs import DescribeWorldGenerationJobResponseTyp
 Optional fields:
 
 - `arn`: `str`
-- `status`: [WorldGenerationJobStatus](./literals.md#worldgenerationjobstatus)
+- `status`:
+  [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
 - `createdAt`: `datetime`
 - `failureCode`:
-  [WorldGenerationJobErrorCode](./literals.md#worldgenerationjoberrorcode)
+  [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - `failureReason`: `str`
 - `clientRequestToken`: `str`
 - `template`: `str`
@@ -698,7 +715,8 @@ Optional fields:
 - `request`:
   [SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)
 - `failureReason`: `str`
-- `failureCode`: [SimulationJobErrorCode](./literals.md#simulationjoberrorcode)
+- `failureCode`:
+  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
 - `failedAt`: `datetime`
 
 ## FailureSummaryTypeDef
@@ -710,7 +728,8 @@ from mypy_boto3_robomaker.type_defs import FailureSummaryTypeDef
 Optional fields:
 
 - `totalFailureCount`: `int`
-- `failures`: `List`\[[WorldFailureTypeDef](./type_defs.md#worldfailuretypedef)\]
+- `failures`:
+  `List`\[[WorldFailureTypeDef](./type_defs.md#worldfailuretypedef)\]
 
 ## FilterTypeDef
 
@@ -733,7 +752,8 @@ Optional fields:
 
 - `finishedCount`: `int`
 - `succeededWorlds`: `List`\[`str`\]
-- `failureSummary`: [FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef)
+- `failureSummary`:
+  [FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef)
 
 ## FleetTypeDef
 
@@ -746,7 +766,8 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `lastDeploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `lastDeploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `lastDeploymentJob`: `str`
 - `lastDeploymentTime`: `datetime`
 
@@ -1006,7 +1027,8 @@ from mypy_boto3_robomaker.type_defs import ProgressDetailTypeDef
 
 Optional fields:
 
-- `currentProgress`: [RobotDeploymentStep](./literals.md#robotdeploymentstep)
+- `currentProgress`:
+  [RobotDeploymentStepType](./literals.md#robotdeploymentsteptype)
 - `percentDone`: `float`
 - `estimatedTimeRemainingSeconds`: `int`
 - `targetResource`: `str`
@@ -1031,7 +1053,7 @@ from mypy_boto3_robomaker.type_defs import RenderingEngineTypeDef
 Optional fields:
 
 - `name`: `Literal['OGRE']` (see
-  [RenderingEngineType](./literals.md#renderingenginetype))
+  [RenderingEngineTypeType](./literals.md#renderingenginetypetype))
 - `version`: `str`
 
 ## ResponseMetadataTypeDef
@@ -1094,10 +1116,12 @@ Optional fields:
 - `arn`: `str`
 - `deploymentStartTime`: `datetime`
 - `deploymentFinishTime`: `datetime`
-- `status`: [RobotStatus](./literals.md#robotstatus)
-- `progressDetail`: [ProgressDetailTypeDef](./type_defs.md#progressdetailtypedef)
+- `status`: [RobotStatusType](./literals.md#robotstatustype)
+- `progressDetail`:
+  [ProgressDetailTypeDef](./type_defs.md#progressdetailtypedef)
 - `failureReason`: `str`
-- `failureCode`: [DeploymentJobErrorCode](./literals.md#deploymentjoberrorcode)
+- `failureCode`:
+  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 
 ## RobotSoftwareSuiteTypeDef
 
@@ -1107,9 +1131,10 @@ from mypy_boto3_robomaker.type_defs import RobotSoftwareSuiteTypeDef
 
 Optional fields:
 
-- `name`: [RobotSoftwareSuiteType](./literals.md#robotsoftwaresuitetype)
+- `name`:
+  [RobotSoftwareSuiteTypeType](./literals.md#robotsoftwaresuitetypetype)
 - `version`:
-  [RobotSoftwareSuiteVersionType](./literals.md#robotsoftwaresuiteversiontype)
+  [RobotSoftwareSuiteVersionTypeType](./literals.md#robotsoftwaresuiteversiontypetype)
 
 ## RobotTypeDef
 
@@ -1122,10 +1147,10 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `fleetArn`: `str`
-- `status`: [RobotStatus](./literals.md#robotstatus)
+- `status`: [RobotStatusType](./literals.md#robotstatustype)
 - `greenGrassGroupId`: `str`
 - `createdAt`: `datetime`
-- `architecture`: [Architecture](./literals.md#architecture)
+- `architecture`: [ArchitectureType](./literals.md#architecturetype)
 - `lastDeploymentJob`: `str`
 - `lastDeploymentTime`: `datetime`
 
@@ -1207,7 +1232,8 @@ Optional fields:
 - `arn`: `str`
 - `lastUpdatedAt`: `datetime`
 - `createdAt`: `datetime`
-- `status`: [SimulationJobBatchStatus](./literals.md#simulationjobbatchstatus)
+- `status`:
+  [SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype)
 - `failedRequestCount`: `int`
 - `pendingRequestCount`: `int`
 - `createdRequestCount`: `int`
@@ -1224,10 +1250,11 @@ Required fields:
 
 Optional fields:
 
-- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `iamRole`: `str`
-- `failureBehavior`: [FailureBehavior](./literals.md#failurebehavior)
+- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
 - `useDefaultApplications`: `bool`
 - `robotApplications`:
   `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
@@ -1250,7 +1277,7 @@ Optional fields:
 - `arn`: `str`
 - `lastUpdatedAt`: `datetime`
 - `name`: `str`
-- `status`: [SimulationJobStatus](./literals.md#simulationjobstatus)
+- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
 - `simulationApplicationNames`: `List`\[`str`\]
 - `robotApplicationNames`: `List`\[`str`\]
 - `dataSourceNames`: `List`\[`str`\]
@@ -1265,14 +1292,16 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `status`: [SimulationJobStatus](./literals.md#simulationjobstatus)
+- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
 - `lastStartedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
-- `failureBehavior`: [FailureBehavior](./literals.md#failurebehavior)
-- `failureCode`: [SimulationJobErrorCode](./literals.md#simulationjoberrorcode)
+- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
+- `failureCode`:
+  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
 - `failureReason`: `str`
 - `clientRequestToken`: `str`
-- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `maxJobDurationInSeconds`: `int`
 - `simulationTimeMillis`: `int`
@@ -1281,7 +1310,8 @@ Optional fields:
   `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
 - `simulationApplications`:
   `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `dataSources`:
+  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `vpcConfig`:
   [VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
@@ -1298,7 +1328,7 @@ from mypy_boto3_robomaker.type_defs import SimulationSoftwareSuiteTypeDef
 Optional fields:
 
 - `name`:
-  [SimulationSoftwareSuiteType](./literals.md#simulationsoftwaresuitetype)
+  [SimulationSoftwareSuiteTypeType](./literals.md#simulationsoftwaresuitetypetype)
 - `version`: `str`
 
 ## SourceConfigTypeDef
@@ -1311,7 +1341,7 @@ Optional fields:
 
 - `s3Bucket`: `str`
 - `s3Key`: `str`
-- `architecture`: [Architecture](./literals.md#architecture)
+- `architecture`: [ArchitectureType](./literals.md#architecturetype)
 
 ## SourceTypeDef
 
@@ -1324,7 +1354,7 @@ Optional fields:
 - `s3Bucket`: `str`
 - `s3Key`: `str`
 - `etag`: `str`
-- `architecture`: [Architecture](./literals.md#architecture)
+- `architecture`: [ArchitectureType](./literals.md#architecturetype)
 
 ## StartSimulationJobBatchResponseTypeDef
 
@@ -1335,12 +1365,13 @@ from mypy_boto3_robomaker.type_defs import StartSimulationJobBatchResponseTypeDe
 Optional fields:
 
 - `arn`: `str`
-- `status`: [SimulationJobBatchStatus](./literals.md#simulationjobbatchstatus)
+- `status`:
+  [SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype)
 - `createdAt`: `datetime`
 - `clientRequestToken`: `str`
 - `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
 - `failureCode`: `Literal['InternalServiceError']` (see
-  [SimulationJobBatchErrorCode](./literals.md#simulationjobbatcherrorcode))
+  [SimulationJobBatchErrorCodeType](./literals.md#simulationjobbatcherrorcodetype))
 - `failureReason`: `str`
 - `failedRequests`:
   `List`\[[FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef)\]
@@ -1360,13 +1391,14 @@ Optional fields:
 
 - `arn`: `str`
 - `fleet`: `str`
-- `status`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `deploymentApplicationConfigs`:
   `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
 - `failureReason`: `str`
-- `failureCode`: [DeploymentJobErrorCode](./literals.md#deploymentjoberrorcode)
+- `failureCode`:
+  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - `createdAt`: `datetime`
 
 ## TemplateLocationTypeDef
@@ -1408,7 +1440,7 @@ Optional fields:
 
 - `streamUI`: `bool`
 - `streamOutputToCloudWatch`: `bool`
-- `exitBehavior`: [ExitBehavior](./literals.md#exitbehavior)
+- `exitBehavior`: [ExitBehaviorType](./literals.md#exitbehaviortype)
 
 ## UpdateRobotApplicationResponseTypeDef
 
@@ -1471,7 +1503,7 @@ Required fields:
 
 - `name`: `str`
 - `path`: `str`
-- `uploadBehavior`: [UploadBehavior](./literals.md#uploadbehavior)
+- `uploadBehavior`: [UploadBehaviorType](./literals.md#uploadbehaviortype)
 
 ## VPCConfigResponseTypeDef
 
@@ -1531,7 +1563,7 @@ from mypy_boto3_robomaker.type_defs import WorldExportJobSummaryTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `status`: [WorldExportJobStatus](./literals.md#worldexportjobstatus)
+- `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - `createdAt`: `datetime`
 - `worlds`: `List`\[`str`\]
 
@@ -1544,7 +1576,7 @@ from mypy_boto3_robomaker.type_defs import WorldFailureTypeDef
 Optional fields:
 
 - `failureCode`:
-  [WorldGenerationJobErrorCode](./literals.md#worldgenerationjoberrorcode)
+  [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - `sampleFailureReason`: `str`
 - `failureCount`: `int`
 
@@ -1559,7 +1591,8 @@ Optional fields:
 - `arn`: `str`
 - `template`: `str`
 - `createdAt`: `datetime`
-- `status`: [WorldGenerationJobStatus](./literals.md#worldgenerationjobstatus)
+- `status`:
+  [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
 - `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
 - `succeededWorldCount`: `int`
 - `failedWorldCount`: `int`

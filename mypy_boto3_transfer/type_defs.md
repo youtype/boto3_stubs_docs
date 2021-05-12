@@ -3,7 +3,7 @@
 > [Index](..) > [Transfer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transfer.html#Transfer)
 type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
@@ -118,20 +118,20 @@ Required fields:
 Optional fields:
 
 - `Certificate`: `str`
-- `Domain`: [Domain](./literals.md#domain)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `EndpointDetails`:
   [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
-- `EndpointType`: [EndpointType](./literals.md#endpointtype)
+- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `HostKeyFingerprint`: `str`
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `IdentityProviderType`:
-  [IdentityProviderType](./literals.md#identityprovidertype)
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `ServerId`: `str`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserCount`: `int`
 
@@ -150,7 +150,8 @@ Optional fields:
 - `HomeDirectory`: `str`
 - `HomeDirectoryMappings`:
   `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
-- `HomeDirectoryType`: [HomeDirectoryType](./literals.md#homedirectorytype)
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
@@ -229,7 +230,8 @@ from mypy_boto3_transfer.type_defs import ListServersResponseTypeDef
 
 Required fields:
 
-- `Servers`: `List`\[[ListedServerTypeDef](./type_defs.md#listedservertypedef)\]
+- `Servers`:
+  `List`\[[ListedServerTypeDef](./type_defs.md#listedservertypedef)\]
 
 Optional fields:
 
@@ -274,13 +276,13 @@ Required fields:
 
 Optional fields:
 
-- `Domain`: [Domain](./literals.md#domain)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `IdentityProviderType`:
-  [IdentityProviderType](./literals.md#identityprovidertype)
-- `EndpointType`: [EndpointType](./literals.md#endpointtype)
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `LoggingRole`: `str`
 - `ServerId`: `str`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `UserCount`: `int`
 
 ## ListedUserTypeDef
@@ -296,7 +298,8 @@ Required fields:
 Optional fields:
 
 - `HomeDirectory`: `str`
-- `HomeDirectoryType`: [HomeDirectoryType](./literals.md#homedirectorytype)
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `Role`: `str`
 - `SshPublicKeyCount`: `int`
 - `UserName`: `str`

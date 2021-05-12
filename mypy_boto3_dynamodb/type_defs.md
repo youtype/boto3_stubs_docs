@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDB](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -172,7 +172,8 @@ from mypy_boto3_dynamodb.type_defs import AttributeDefinitionTypeDef
 Required fields:
 
 - `AttributeName`: `str`
-- `AttributeType`: [ScalarAttributeType](./literals.md#scalarattributetype)
+- `AttributeType`:
+  [ScalarAttributeTypeType](./literals.md#scalarattributetypetype)
 
 ## AttributeValueUpdateTypeDef
 
@@ -185,7 +186,7 @@ Optional fields:
 - `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
   `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
   `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]
-- `Action`: [AttributeAction](./literals.md#attributeaction)
+- `Action`: [AttributeActionType](./literals.md#attributeactiontype)
 
 ## AutoScalingPolicyDescriptionTypeDef
 
@@ -300,8 +301,8 @@ Required fields:
 
 - `BackupArn`: `str`
 - `BackupName`: `str`
-- `BackupStatus`: [BackupStatus](./literals.md#backupstatus)
-- `BackupType`: [BackupType](./literals.md#backuptype)
+- `BackupStatus`: [BackupStatusType](./literals.md#backupstatustype)
+- `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
 - `BackupCreationDateTime`: `datetime`
 
 Optional fields:
@@ -324,8 +325,8 @@ Optional fields:
 - `BackupName`: `str`
 - `BackupCreationDateTime`: `datetime`
 - `BackupExpiryDateTime`: `datetime`
-- `BackupStatus`: [BackupStatus](./literals.md#backupstatus)
-- `BackupType`: [BackupType](./literals.md#backuptype)
+- `BackupStatus`: [BackupStatusType](./literals.md#backupstatustype)
+- `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
 - `BackupSizeBytes`: `int`
 
 ## BatchExecuteStatementOutputTypeDef
@@ -369,7 +370,7 @@ from mypy_boto3_dynamodb.type_defs import BatchStatementErrorTypeDef
 Optional fields:
 
 - `Code`:
-  [BatchStatementErrorCodeEnum](./literals.md#batchstatementerrorcodeenum)
+  [BatchStatementErrorCodeEnumType](./literals.md#batchstatementerrorcodeenumtype)
 - `Message`: `str`
 
 ## BatchStatementRequestTypeDef
@@ -400,9 +401,10 @@ Optional fields:
 - `Error`:
   [BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef)
 - `TableName`: `str`
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 
 ## BatchWriteItemOutputTypeDef
 
@@ -429,7 +431,7 @@ from mypy_boto3_dynamodb.type_defs import BillingModeSummaryTypeDef
 
 Optional fields:
 
-- `BillingMode`: [BillingMode](./literals.md#billingmode)
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `LastUpdateToPayPerRequestDateTime`: `datetime`
 
 ## CapacityTypeDef
@@ -466,7 +468,7 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailure](./literals.md#returnvaluesonconditioncheckfailure)
+  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
 ## ConditionTypeDef
 
@@ -476,7 +478,8 @@ from mypy_boto3_dynamodb.type_defs import ConditionTypeDef
 
 Required fields:
 
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 
 Optional fields:
 
@@ -512,7 +515,7 @@ from mypy_boto3_dynamodb.type_defs import ContinuousBackupsDescriptionTypeDef
 Required fields:
 
 - `ContinuousBackupsStatus`:
-  [ContinuousBackupsStatus](./literals.md#continuousbackupsstatus)
+  [ContinuousBackupsStatusType](./literals.md#continuousbackupsstatustype)
 
 Optional fields:
 
@@ -530,7 +533,7 @@ Optional fields:
 - `TableName`: `str`
 - `IndexName`: `str`
 - `ContributorInsightsStatus`:
-  [ContributorInsightsStatus](./literals.md#contributorinsightsstatus)
+  [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
 
 ## CreateBackupOutputTypeDef
 
@@ -725,7 +728,7 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailure](./literals.md#returnvaluesonconditioncheckfailure)
+  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
 ## DescribeBackupOutputTypeDef
 
@@ -765,7 +768,7 @@ Required fields:
 - `IndexName`: `str`
 - `ContributorInsightsRuleList`: `List`\[`str`\]
 - `ContributorInsightsStatus`:
-  [ContributorInsightsStatus](./literals.md#contributorinsightsstatus)
+  [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
 - `LastUpdateDateTime`: `datetime`
 - `FailureException`:
   [FailureExceptionTypeDef](./type_defs.md#failureexceptiontypedef)
@@ -941,7 +944,8 @@ Optional fields:
   `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
   `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]
 - `Exists`: `bool`
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `AttributeValueList`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
@@ -956,7 +960,7 @@ from mypy_boto3_dynamodb.type_defs import ExportDescriptionTypeDef
 Optional fields:
 
 - `ExportArn`: `str`
-- `ExportStatus`: [ExportStatus](./literals.md#exportstatus)
+- `ExportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ExportManifest`: `str`
@@ -967,11 +971,11 @@ Optional fields:
 - `S3Bucket`: `str`
 - `S3BucketOwner`: `str`
 - `S3Prefix`: `str`
-- `S3SseAlgorithm`: [S3SseAlgorithm](./literals.md#s3ssealgorithm)
+- `S3SseAlgorithm`: [S3SseAlgorithmType](./literals.md#s3ssealgorithmtype)
 - `S3SseKmsKeyId`: `str`
 - `FailureCode`: `str`
 - `FailureMessage`: `str`
-- `ExportFormat`: [ExportFormat](./literals.md#exportformat)
+- `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
 - `BilledSizeBytes`: `int`
 - `ItemCount`: `int`
 
@@ -984,7 +988,7 @@ from mypy_boto3_dynamodb.type_defs import ExportSummaryTypeDef
 Optional fields:
 
 - `ExportArn`: `str`
-- `ExportStatus`: [ExportStatus](./literals.md#exportstatus)
+- `ExportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 
 ## ExportTableToPointInTimeOutputTypeDef
 
@@ -1018,9 +1022,10 @@ from mypy_boto3_dynamodb.type_defs import GetItemOutputTypeDef
 
 Required fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
@@ -1068,7 +1073,7 @@ Optional fields:
 - `KeySchema`:
   `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-- `IndexStatus`: [IndexStatus](./literals.md#indexstatus)
+- `IndexStatus`: [IndexStatusType](./literals.md#indexstatustype)
 - `Backfilling`: `bool`
 - `ProvisionedThroughput`:
   [ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef)
@@ -1136,7 +1141,8 @@ Optional fields:
   `List`\[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)\]
 - `GlobalTableArn`: `str`
 - `CreationDateTime`: `datetime`
-- `GlobalTableStatus`: [GlobalTableStatus](./literals.md#globaltablestatus)
+- `GlobalTableStatus`:
+  [GlobalTableStatusType](./literals.md#globaltablestatustype)
 - `GlobalTableName`: `str`
 
 ## GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef
@@ -1188,9 +1194,10 @@ from mypy_boto3_dynamodb.type_defs import ItemResponseTypeDef
 
 Optional fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 
 ## KeySchemaElementTypeDef
 
@@ -1201,7 +1208,7 @@ from mypy_boto3_dynamodb.type_defs import KeySchemaElementTypeDef
 Required fields:
 
 - `AttributeName`: `str`
-- `KeyType`: [KeyType](./literals.md#keytype)
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 
 ## KeysAndAttributesTypeDef
 
@@ -1232,7 +1239,8 @@ from mypy_boto3_dynamodb.type_defs import KinesisDataStreamDestinationTypeDef
 Optional fields:
 
 - `StreamArn`: `str`
-- `DestinationStatus`: [DestinationStatus](./literals.md#destinationstatus)
+- `DestinationStatus`:
+  [DestinationStatusType](./literals.md#destinationstatustype)
 - `DestinationStatusDescription`: `str`
 
 ## KinesisStreamingDestinationOutputTypeDef
@@ -1245,7 +1253,8 @@ Required fields:
 
 - `TableName`: `str`
 - `StreamArn`: `str`
-- `DestinationStatus`: [DestinationStatus](./literals.md#destinationstatus)
+- `DestinationStatus`:
+  [DestinationStatusType](./literals.md#destinationstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1410,7 +1419,7 @@ from mypy_boto3_dynamodb.type_defs import PointInTimeRecoveryDescriptionTypeDef
 Optional fields:
 
 - `PointInTimeRecoveryStatus`:
-  [PointInTimeRecoveryStatus](./literals.md#pointintimerecoverystatus)
+  [PointInTimeRecoveryStatusType](./literals.md#pointintimerecoverystatustype)
 - `EarliestRestorableDateTime`: `datetime`
 - `LatestRestorableDateTime`: `datetime`
 
@@ -1432,7 +1441,7 @@ from mypy_boto3_dynamodb.type_defs import ProjectionTypeDef
 
 Optional fields:
 
-- `ProjectionType`: [ProjectionType](./literals.md#projectiontype)
+- `ProjectionType`: [ProjectionTypeType](./literals.md#projectiontypetype)
 - `NonKeyAttributes`: `List`\[`str`\]
 
 ## ProvisionedThroughputDescriptionTypeDef
@@ -1497,9 +1506,10 @@ from mypy_boto3_dynamodb.type_defs import PutRequestTypeDef
 
 Required fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 
 ## PutTypeDef
 
@@ -1509,9 +1519,10 @@ from mypy_boto3_dynamodb.type_defs import PutTypeDef
 
 Required fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
 - `TableName`: `str`
 
 Optional fields:
@@ -1523,7 +1534,7 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailure](./literals.md#returnvaluesonconditioncheckfailure)
+  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
 ## QueryOutputTypeDef
 
@@ -1539,8 +1550,8 @@ Required fields:
   `Any`\], `None`\]\]\]
 - `Count`: `int`
 - `ScannedCount`: `int`
-- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ConsumedCapacity`:
@@ -1563,7 +1574,7 @@ Optional fields:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
 - `ReplicaProvisionedWriteCapacityAutoScalingSettings`:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ReplicaStatus`: [ReplicaStatus](./literals.md#replicastatus)
+- `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
 
 ## ReplicaAutoScalingUpdateTypeDef
 
@@ -1591,7 +1602,7 @@ from mypy_boto3_dynamodb.type_defs import ReplicaDescriptionTypeDef
 Optional fields:
 
 - `RegionName`: `str`
-- `ReplicaStatus`: [ReplicaStatus](./literals.md#replicastatus)
+- `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
 - `ReplicaStatusDescription`: `str`
 - `ReplicaStatusPercentProgress`: `str`
 - `KMSMasterKeyId`: `str`
@@ -1610,7 +1621,7 @@ from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexAutoScaling
 Optional fields:
 
 - `IndexName`: `str`
-- `IndexStatus`: [IndexStatus](./literals.md#indexstatus)
+- `IndexStatus`: [IndexStatusType](./literals.md#indexstatustype)
 - `ProvisionedReadCapacityAutoScalingSettings`:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
 - `ProvisionedWriteCapacityAutoScalingSettings`:
@@ -1652,7 +1663,7 @@ Required fields:
 
 Optional fields:
 
-- `IndexStatus`: [IndexStatus](./literals.md#indexstatus)
+- `IndexStatus`: [IndexStatusType](./literals.md#indexstatustype)
 - `ProvisionedReadCapacityUnits`: `int`
 - `ProvisionedReadCapacityAutoScalingSettings`:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
@@ -1703,7 +1714,7 @@ Required fields:
 
 Optional fields:
 
-- `ReplicaStatus`: [ReplicaStatus](./literals.md#replicastatus)
+- `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
 - `ReplicaBillingModeSummary`:
   [BillingModeSummaryTypeDef](./type_defs.md#billingmodesummarytypedef)
 - `ReplicaProvisionedReadCapacityUnits`: `int`
@@ -1835,8 +1846,8 @@ from mypy_boto3_dynamodb.type_defs import SSEDescriptionTypeDef
 
 Optional fields:
 
-- `Status`: [SSEStatus](./literals.md#ssestatus)
-- `SSEType`: [SSEType](./literals.md#ssetype)
+- `Status`: [SSEStatusType](./literals.md#ssestatustype)
+- `SSEType`: [SSETypeType](./literals.md#ssetypetype)
 - `KMSMasterKeyArn`: `str`
 - `InaccessibleEncryptionDateTime`: `datetime`
 
@@ -1849,7 +1860,7 @@ from mypy_boto3_dynamodb.type_defs import SSESpecificationTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
-- `SSEType`: [SSEType](./literals.md#ssetype)
+- `SSEType`: [SSETypeType](./literals.md#ssetypetype)
 - `KMSMasterKeyId`: `str`
 
 ## ScanOutputTypeDef
@@ -1866,8 +1877,8 @@ Required fields:
   `Any`\], `None`\]\]\]
 - `Count`: `int`
 - `ScannedCount`: `int`
-- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ConsumedCapacity`:
@@ -1896,7 +1907,7 @@ Optional fields:
 - `TableArn`: `str`
 - `TableSizeBytes`: `int`
 - `ItemCount`: `int`
-- `BillingMode`: [BillingMode](./literals.md#billingmode)
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 
 ## SourceTableFeatureDetailsTypeDef
 
@@ -1914,7 +1925,8 @@ Optional fields:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `TimeToLiveDescription`:
   [TimeToLiveDescriptionTypeDef](./type_defs.md#timetolivedescriptiontypedef)
-- `SSEDescription`: [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
+- `SSEDescription`:
+  [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 
 ## StreamSpecificationTypeDef
 
@@ -1928,7 +1940,7 @@ Required fields:
 
 Optional fields:
 
-- `StreamViewType`: [StreamViewType](./literals.md#streamviewtype)
+- `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
 
 ## TableAutoScalingDescriptionTypeDef
 
@@ -1939,7 +1951,7 @@ from mypy_boto3_dynamodb.type_defs import TableAutoScalingDescriptionTypeDef
 Optional fields:
 
 - `TableName`: `str`
-- `TableStatus`: [TableStatus](./literals.md#tablestatus)
+- `TableStatus`: [TableStatusType](./literals.md#tablestatustype)
 - `Replicas`:
   `List`\[[ReplicaAutoScalingDescriptionTypeDef](./type_defs.md#replicaautoscalingdescriptiontypedef)\]
 
@@ -1956,7 +1968,7 @@ Optional fields:
 - `TableName`: `str`
 - `KeySchema`:
   `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `TableStatus`: [TableStatus](./literals.md#tablestatus)
+- `TableStatus`: [TableStatusType](./literals.md#tablestatustype)
 - `CreationDateTime`: `datetime`
 - `ProvisionedThroughput`:
   [ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef)
@@ -1977,8 +1989,10 @@ Optional fields:
 - `GlobalTableVersion`: `str`
 - `Replicas`:
   `List`\[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)\]
-- `RestoreSummary`: [RestoreSummaryTypeDef](./type_defs.md#restoresummarytypedef)
-- `SSEDescription`: [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
+- `RestoreSummary`:
+  [RestoreSummaryTypeDef](./type_defs.md#restoresummarytypedef)
+- `SSEDescription`:
+  [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 - `ArchivalSummary`:
   [ArchivalSummaryTypeDef](./type_defs.md#archivalsummarytypedef)
 
@@ -2001,7 +2015,8 @@ from mypy_boto3_dynamodb.type_defs import TimeToLiveDescriptionTypeDef
 
 Optional fields:
 
-- `TimeToLiveStatus`: [TimeToLiveStatus](./literals.md#timetolivestatus)
+- `TimeToLiveStatus`:
+  [TimeToLiveStatusType](./literals.md#timetolivestatustype)
 - `AttributeName`: `str`
 
 ## TimeToLiveSpecificationTypeDef
@@ -2048,7 +2063,8 @@ from mypy_boto3_dynamodb.type_defs import TransactWriteItemTypeDef
 
 Optional fields:
 
-- `ConditionCheck`: [ConditionCheckTypeDef](./type_defs.md#conditionchecktypedef)
+- `ConditionCheck`:
+  [ConditionCheckTypeDef](./type_defs.md#conditionchecktypedef)
 - `Put`: [PutTypeDef](./type_defs.md#puttypedef)
 - `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
 - `Update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
@@ -2092,7 +2108,7 @@ Required fields:
 - `TableName`: `str`
 - `IndexName`: `str`
 - `ContributorInsightsStatus`:
-  [ContributorInsightsStatus](./literals.md#contributorinsightsstatus)
+  [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2234,7 +2250,7 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailure](./literals.md#returnvaluesonconditioncheckfailure)
+  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
 ## WaiterConfigTypeDef
 

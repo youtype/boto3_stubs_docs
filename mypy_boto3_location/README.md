@@ -3,7 +3,7 @@
 > [Index](..) > LocationService
 
 Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/location.html#LocationService)
 type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
@@ -30,58 +30,58 @@ Can be used directly:
 from mypy_boto3_location.client import LocationServiceClient
 ```
 
-LocationServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_tracker_consumer](./client.md#associate-tracker-consumer)
-- [batch_delete_geofence](./client.md#batch-delete-geofence)
-- [batch_evaluate_geofences](./client.md#batch-evaluate-geofences)
-- [batch_get_device_position](./client.md#batch-get-device-position)
-- [batch_put_geofence](./client.md#batch-put-geofence)
-- [batch_update_device_position](./client.md#batch-update-device-position)
-- [can_paginate](./client.md#can-paginate)
-- [create_geofence_collection](./client.md#create-geofence-collection)
-- [create_map](./client.md#create-map)
-- [create_place_index](./client.md#create-place-index)
-- [create_tracker](./client.md#create-tracker)
-- [delete_geofence_collection](./client.md#delete-geofence-collection)
-- [delete_map](./client.md#delete-map)
-- [delete_place_index](./client.md#delete-place-index)
-- [delete_tracker](./client.md#delete-tracker)
-- [describe_geofence_collection](./client.md#describe-geofence-collection)
-- [describe_map](./client.md#describe-map)
-- [describe_place_index](./client.md#describe-place-index)
-- [describe_tracker](./client.md#describe-tracker)
-- [disassociate_tracker_consumer](./client.md#disassociate-tracker-consumer)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_device_position](./client.md#get-device-position)
-- [get_device_position_history](./client.md#get-device-position-history)
-- [get_geofence](./client.md#get-geofence)
-- [get_map_glyphs](./client.md#get-map-glyphs)
-- [get_map_sprites](./client.md#get-map-sprites)
-- [get_map_style_descriptor](./client.md#get-map-style-descriptor)
-- [get_map_tile](./client.md#get-map-tile)
-- [get_paginator](./client.md#get-paginator)
-- [list_geofence_collections](./client.md#list-geofence-collections)
-- [list_geofences](./client.md#list-geofences)
-- [list_maps](./client.md#list-maps)
-- [list_place_indexes](./client.md#list-place-indexes)
-- [list_tracker_consumers](./client.md#list-tracker-consumers)
-- [list_trackers](./client.md#list-trackers)
-- [put_geofence](./client.md#put-geofence)
-- [search_place_index_for_position](./client.md#search-place-index-for-position)
-- [search_place_index_for_text](./client.md#search-place-index-for-text)
+- [associate_tracker_consumer](./client.md#associate_tracker_consumer)
+- [batch_delete_geofence](./client.md#batch_delete_geofence)
+- [batch_evaluate_geofences](./client.md#batch_evaluate_geofences)
+- [batch_get_device_position](./client.md#batch_get_device_position)
+- [batch_put_geofence](./client.md#batch_put_geofence)
+- [batch_update_device_position](./client.md#batch_update_device_position)
+- [can_paginate](./client.md#can_paginate)
+- [create_geofence_collection](./client.md#create_geofence_collection)
+- [create_map](./client.md#create_map)
+- [create_place_index](./client.md#create_place_index)
+- [create_tracker](./client.md#create_tracker)
+- [delete_geofence_collection](./client.md#delete_geofence_collection)
+- [delete_map](./client.md#delete_map)
+- [delete_place_index](./client.md#delete_place_index)
+- [delete_tracker](./client.md#delete_tracker)
+- [describe_geofence_collection](./client.md#describe_geofence_collection)
+- [describe_map](./client.md#describe_map)
+- [describe_place_index](./client.md#describe_place_index)
+- [describe_tracker](./client.md#describe_tracker)
+- [disassociate_tracker_consumer](./client.md#disassociate_tracker_consumer)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_device_position](./client.md#get_device_position)
+- [get_device_position_history](./client.md#get_device_position_history)
+- [get_geofence](./client.md#get_geofence)
+- [get_map_glyphs](./client.md#get_map_glyphs)
+- [get_map_sprites](./client.md#get_map_sprites)
+- [get_map_style_descriptor](./client.md#get_map_style_descriptor)
+- [get_map_tile](./client.md#get_map_tile)
+- [get_paginator](./client.md#get_paginator)
+- [list_geofence_collections](./client.md#list_geofence_collections)
+- [list_geofences](./client.md#list_geofences)
+- [list_maps](./client.md#list_maps)
+- [list_place_indexes](./client.md#list_place_indexes)
+- [list_tracker_consumers](./client.md#list_tracker_consumers)
+- [list_trackers](./client.md#list_trackers)
+- [put_geofence](./client.md#put_geofence)
+- [search_place_index_for_position](./client.md#search_place_index_for_position)
+- [search_place_index_for_text](./client.md#search_place_index_for_text)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+LocationServiceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -109,19 +109,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_location.literals import BatchItemErrorCode, ...
+from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
 ```
 
-- [BatchItemErrorCode](./literals.md#batchitemerrorcode)
+- [BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype)
 - [GetDevicePositionHistoryPaginatorName](./literals.md#getdevicepositionhistorypaginatorname)
-- [IntendedUse](./literals.md#intendeduse)
+- [IntendedUseType](./literals.md#intendedusetype)
 - [ListGeofenceCollectionsPaginatorName](./literals.md#listgeofencecollectionspaginatorname)
 - [ListGeofencesPaginatorName](./literals.md#listgeofencespaginatorname)
 - [ListMapsPaginatorName](./literals.md#listmapspaginatorname)
 - [ListPlaceIndexesPaginatorName](./literals.md#listplaceindexespaginatorname)
 - [ListTrackerConsumersPaginatorName](./literals.md#listtrackerconsumerspaginatorname)
 - [ListTrackersPaginatorName](./literals.md#listtrackerspaginatorname)
-- [PricingPlan](./literals.md#pricingplan)
+- [PricingPlanType](./literals.md#pricingplantype)
 
 ## Typed dictionaries
 

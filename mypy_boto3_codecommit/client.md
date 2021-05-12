@@ -3,7 +3,7 @@
 > [Index](..) > [CodeCommit](.) > CodeCommitClient
 
 Auto-generated documentation for
-[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
 [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
@@ -106,7 +106,7 @@ def get_codecommit_client() -> CodeCommitClient:
 ```
 
 Boto3 documentation:
-[CodeCommit.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client)
+[CodeCommit.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client)
 
 ## Exceptions
 
@@ -318,7 +318,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.associate_approval_rule_template_with_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository)
+[CodeCommit.Client.associate_approval_rule_template_with_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.batch_associate_approval_rule_template_with_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories)
+[CodeCommit.Client.batch_associate_approval_rule_template_with_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories)
 
 Arguments:
 
@@ -348,22 +348,22 @@ Type annotations for
 `boto3.client("codecommit").batch_describe_merge_conflicts` method.
 
 Boto3 documentation:
-[CodeCommit.Client.batch_describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts)
+[CodeCommit.Client.batch_describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts)
 
 Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
-- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
-  *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype) *(required)*
 - `maxMergeHunks`: `int`
 - `maxConflictFiles`: `int`
 - `filePaths`: `List`\[`str`\]
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `nextToken`: `str`
 
 Returns
@@ -376,7 +376,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories)
+[CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns
 Type annotations for `boto3.client("codecommit").batch_get_commits` method.
 
 Boto3 documentation:
-[CodeCommit.Client.batch_get_commits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits)
+[CodeCommit.Client.batch_get_commits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits)
 
 Arguments:
 
@@ -407,7 +407,7 @@ Type annotations for `boto3.client("codecommit").batch_get_repositories`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.batch_get_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories)
+[CodeCommit.Client.batch_get_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Returns
 Type annotations for `boto3.client("codecommit").can_paginate` method.
 
 Boto3 documentation:
-[CodeCommit.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.can_paginate)
+[CodeCommit.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.can_paginate)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("codecommit").create_approval_rule_template`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template)
+[CodeCommit.Client.create_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Returns
 Type annotations for `boto3.client("codecommit").create_branch` method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch)
+[CodeCommit.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_branch)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Arguments:
 Type annotations for `boto3.client("codecommit").create_commit` method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit)
+[CodeCommit.Client.create_commit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_commit)
 
 Arguments:
 
@@ -475,7 +475,8 @@ Arguments:
 - `email`: `str`
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
-- `putFiles`: `List`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
+- `putFiles`:
+  `List`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
 - `deleteFiles`:
   `List`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
 - `setFileModes`:
@@ -488,12 +489,13 @@ Returns [CreateCommitOutputTypeDef](./type_defs.md#createcommitoutputtypedef).
 Type annotations for `boto3.client("codecommit").create_pull_request` method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request)
+[CodeCommit.Client.create_pull_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_pull_request)
 
 Arguments:
 
 - `title`: `str` *(required)*
-- `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\] *(required)*
+- `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+  *(required)*
 - `description`: `str`
 - `clientRequestToken`: `str`
 
@@ -506,7 +508,7 @@ Type annotations for
 `boto3.client("codecommit").create_pull_request_approval_rule` method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule)
+[CodeCommit.Client.create_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule)
 
 Arguments:
 
@@ -522,7 +524,7 @@ Returns
 Type annotations for `boto3.client("codecommit").create_repository` method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository)
+[CodeCommit.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_repository)
 
 Arguments:
 
@@ -539,19 +541,19 @@ Type annotations for
 `boto3.client("codecommit").create_unreferenced_merge_commit` method.
 
 Boto3 documentation:
-[CodeCommit.Client.create_unreferenced_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit)
+[CodeCommit.Client.create_unreferenced_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit)
 
 Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
-- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
-  *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype) *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `authorName`: `str`
 - `email`: `str`
 - `commitMessage`: `str`
@@ -568,7 +570,7 @@ Type annotations for `boto3.client("codecommit").delete_approval_rule_template`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.delete_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template)
+[CodeCommit.Client.delete_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template)
 
 Arguments:
 
@@ -582,7 +584,7 @@ Returns
 Type annotations for `boto3.client("codecommit").delete_branch` method.
 
 Boto3 documentation:
-[CodeCommit.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch)
+[CodeCommit.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.delete_branch)
 
 Arguments:
 
@@ -597,7 +599,7 @@ Type annotations for `boto3.client("codecommit").delete_comment_content`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.delete_comment_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content)
+[CodeCommit.Client.delete_comment_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content)
 
 Arguments:
 
@@ -611,7 +613,7 @@ Returns
 Type annotations for `boto3.client("codecommit").delete_file` method.
 
 Boto3 documentation:
-[CodeCommit.Client.delete_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file)
+[CodeCommit.Client.delete_file](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.delete_file)
 
 Arguments:
 
@@ -632,7 +634,7 @@ Type annotations for
 `boto3.client("codecommit").delete_pull_request_approval_rule` method.
 
 Boto3 documentation:
-[CodeCommit.Client.delete_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule)
+[CodeCommit.Client.delete_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule)
 
 Arguments:
 
@@ -647,7 +649,7 @@ Returns
 Type annotations for `boto3.client("codecommit").delete_repository` method.
 
 Boto3 documentation:
-[CodeCommit.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository)
+[CodeCommit.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.delete_repository)
 
 Arguments:
 
@@ -662,21 +664,21 @@ Type annotations for `boto3.client("codecommit").describe_merge_conflicts`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts)
+[CodeCommit.Client.describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts)
 
 Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
-- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
-  *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype) *(required)*
 - `filePath`: `str` *(required)*
 - `maxMergeHunks`: `int`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `nextToken`: `str`
 
 Returns
@@ -688,13 +690,13 @@ Type annotations for `boto3.client("codecommit").describe_pull_request_events`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.describe_pull_request_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events)
+[CodeCommit.Client.describe_pull_request_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events)
 
 Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestEventType`:
-  [PullRequestEventType](./literals.md#pullrequesteventtype)
+  [PullRequestEventTypeType](./literals.md#pullrequesteventtypetype)
 - `actorArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -709,7 +711,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.disassociate_approval_rule_template_from_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository)
+[CodeCommit.Client.disassociate_approval_rule_template_from_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository)
 
 Arguments:
 
@@ -722,7 +724,7 @@ Type annotations for
 `boto3.client("codecommit").evaluate_pull_request_approval_rules` method.
 
 Boto3 documentation:
-[CodeCommit.Client.evaluate_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules)
+[CodeCommit.Client.evaluate_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules)
 
 Arguments:
 
@@ -738,7 +740,7 @@ Type annotations for `boto3.client("codecommit").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.generate_presigned_url)
+[CodeCommit.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.generate_presigned_url)
 
 Arguments:
 
@@ -755,7 +757,7 @@ Type annotations for `boto3.client("codecommit").get_approval_rule_template`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template)
+[CodeCommit.Client.get_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template)
 
 Arguments:
 
@@ -769,7 +771,7 @@ Returns
 Type annotations for `boto3.client("codecommit").get_blob` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_blob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob)
+[CodeCommit.Client.get_blob](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_blob)
 
 Arguments:
 
@@ -783,7 +785,7 @@ Returns [GetBlobOutputTypeDef](./type_defs.md#getbloboutputtypedef).
 Type annotations for `boto3.client("codecommit").get_branch` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch)
+[CodeCommit.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_branch)
 
 Arguments:
 
@@ -797,7 +799,7 @@ Returns [GetBranchOutputTypeDef](./type_defs.md#getbranchoutputtypedef).
 Type annotations for `boto3.client("codecommit").get_comment` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment)
+[CodeCommit.Client.get_comment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_comment)
 
 Arguments:
 
@@ -810,7 +812,7 @@ Returns [GetCommentOutputTypeDef](./type_defs.md#getcommentoutputtypedef).
 Type annotations for `boto3.client("codecommit").get_comment_reactions` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_comment_reactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions)
+[CodeCommit.Client.get_comment_reactions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions)
 
 Arguments:
 
@@ -828,7 +830,7 @@ Type annotations for
 `boto3.client("codecommit").get_comments_for_compared_commit` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_comments_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit)
+[CodeCommit.Client.get_comments_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit)
 
 Arguments:
 
@@ -847,7 +849,7 @@ Type annotations for `boto3.client("codecommit").get_comments_for_pull_request`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_comments_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request)
+[CodeCommit.Client.get_comments_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request)
 
 Arguments:
 
@@ -866,7 +868,7 @@ Returns
 Type annotations for `boto3.client("codecommit").get_commit` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit)
+[CodeCommit.Client.get_commit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_commit)
 
 Arguments:
 
@@ -880,7 +882,7 @@ Returns [GetCommitOutputTypeDef](./type_defs.md#getcommitoutputtypedef).
 Type annotations for `boto3.client("codecommit").get_differences` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_differences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences)
+[CodeCommit.Client.get_differences](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_differences)
 
 Arguments:
 
@@ -900,7 +902,7 @@ Returns
 Type annotations for `boto3.client("codecommit").get_file` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file)
+[CodeCommit.Client.get_file](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_file)
 
 Arguments:
 
@@ -915,7 +917,7 @@ Returns [GetFileOutputTypeDef](./type_defs.md#getfileoutputtypedef).
 Type annotations for `boto3.client("codecommit").get_folder` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder)
+[CodeCommit.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_folder)
 
 Arguments:
 
@@ -930,7 +932,7 @@ Returns [GetFolderOutputTypeDef](./type_defs.md#getfolderoutputtypedef).
 Type annotations for `boto3.client("codecommit").get_merge_commit` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit)
+[CodeCommit.Client.get_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit)
 
 Arguments:
 
@@ -938,9 +940,9 @@ Arguments:
 - `sourceCommitSpecifier`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 
 Returns
 [GetMergeCommitOutputTypeDef](./type_defs.md#getmergecommitoutputtypedef).
@@ -950,20 +952,20 @@ Returns
 Type annotations for `boto3.client("codecommit").get_merge_conflicts` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts)
+[CodeCommit.Client.get_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts)
 
 Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
-- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
-  *(required)*
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype) *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `maxConflictFiles`: `int`
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `nextToken`: `str`
 
 Returns
@@ -974,7 +976,7 @@ Returns
 Type annotations for `boto3.client("codecommit").get_merge_options` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_merge_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options)
+[CodeCommit.Client.get_merge_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_merge_options)
 
 Arguments:
 
@@ -982,9 +984,9 @@ Arguments:
 - `sourceCommitSpecifier`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 
 Returns
 [GetMergeOptionsOutputTypeDef](./type_defs.md#getmergeoptionsoutputtypedef).
@@ -994,7 +996,7 @@ Returns
 Type annotations for `boto3.client("codecommit").get_pull_request` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request)
+[CodeCommit.Client.get_pull_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_pull_request)
 
 Arguments:
 
@@ -1009,7 +1011,7 @@ Type annotations for
 `boto3.client("codecommit").get_pull_request_approval_states` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_pull_request_approval_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states)
+[CodeCommit.Client.get_pull_request_approval_states](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states)
 
 Arguments:
 
@@ -1025,7 +1027,7 @@ Type annotations for
 `boto3.client("codecommit").get_pull_request_override_state` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_pull_request_override_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state)
+[CodeCommit.Client.get_pull_request_override_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state)
 
 Arguments:
 
@@ -1040,7 +1042,7 @@ Returns
 Type annotations for `boto3.client("codecommit").get_repository` method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository)
+[CodeCommit.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_repository)
 
 Arguments:
 
@@ -1055,7 +1057,7 @@ Type annotations for `boto3.client("codecommit").get_repository_triggers`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.get_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers)
+[CodeCommit.Client.get_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers)
 
 Arguments:
 
@@ -1070,7 +1072,7 @@ Type annotations for `boto3.client("codecommit").list_approval_rule_templates`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_approval_rule_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates)
+[CodeCommit.Client.list_approval_rule_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates)
 
 Arguments:
 
@@ -1087,7 +1089,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_associated_approval_rule_templates_for_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository)
+[CodeCommit.Client.list_associated_approval_rule_templates_for_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository)
 
 Arguments:
 
@@ -1103,7 +1105,7 @@ Returns
 Type annotations for `boto3.client("codecommit").list_branches` method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches)
+[CodeCommit.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_branches)
 
 Arguments:
 
@@ -1117,14 +1119,14 @@ Returns [ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef).
 Type annotations for `boto3.client("codecommit").list_pull_requests` method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_pull_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests)
+[CodeCommit.Client.list_pull_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests)
 
 Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `authorArn`: `str`
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum)
+  [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -1136,13 +1138,13 @@ Returns
 Type annotations for `boto3.client("codecommit").list_repositories` method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories)
+[CodeCommit.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_repositories)
 
 Arguments:
 
 - `nextToken`: `str`
-- `sortBy`: [SortByEnum](./literals.md#sortbyenum)
-- `order`: [OrderEnum](./literals.md#orderenum)
+- `sortBy`: [SortByEnumType](./literals.md#sortbyenumtype)
+- `order`: [OrderEnumType](./literals.md#orderenumtype)
 
 Returns
 [ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
@@ -1154,7 +1156,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_repositories_for_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template)
+[CodeCommit.Client.list_repositories_for_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template)
 
 Arguments:
 
@@ -1171,7 +1173,7 @@ Type annotations for `boto3.client("codecommit").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource)
+[CodeCommit.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1187,7 +1189,7 @@ Type annotations for
 `boto3.client("codecommit").merge_branches_by_fast_forward` method.
 
 Boto3 documentation:
-[CodeCommit.Client.merge_branches_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward)
+[CodeCommit.Client.merge_branches_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward)
 
 Arguments:
 
@@ -1205,7 +1207,7 @@ Type annotations for `boto3.client("codecommit").merge_branches_by_squash`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.merge_branches_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash)
+[CodeCommit.Client.merge_branches_by_squash](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash)
 
 Arguments:
 
@@ -1214,9 +1216,9 @@ Arguments:
 - `destinationCommitSpecifier`: `str` *(required)*
 - `targetBranch`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `authorName`: `str`
 - `email`: `str`
 - `commitMessage`: `str`
@@ -1233,7 +1235,7 @@ Type annotations for `boto3.client("codecommit").merge_branches_by_three_way`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.merge_branches_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way)
+[CodeCommit.Client.merge_branches_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way)
 
 Arguments:
 
@@ -1242,9 +1244,9 @@ Arguments:
 - `destinationCommitSpecifier`: `str` *(required)*
 - `targetBranch`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `authorName`: `str`
 - `email`: `str`
 - `commitMessage`: `str`
@@ -1261,7 +1263,7 @@ Type annotations for
 `boto3.client("codecommit").merge_pull_request_by_fast_forward` method.
 
 Boto3 documentation:
-[CodeCommit.Client.merge_pull_request_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward)
+[CodeCommit.Client.merge_pull_request_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward)
 
 Arguments:
 
@@ -1278,7 +1280,7 @@ Type annotations for `boto3.client("codecommit").merge_pull_request_by_squash`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.merge_pull_request_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash)
+[CodeCommit.Client.merge_pull_request_by_squash](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash)
 
 Arguments:
 
@@ -1286,9 +1288,9 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `sourceCommitId`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `commitMessage`: `str`
 - `authorName`: `str`
 - `email`: `str`
@@ -1305,7 +1307,7 @@ Type annotations for
 `boto3.client("codecommit").merge_pull_request_by_three_way` method.
 
 Boto3 documentation:
-[CodeCommit.Client.merge_pull_request_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way)
+[CodeCommit.Client.merge_pull_request_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way)
 
 Arguments:
 
@@ -1313,9 +1315,9 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `sourceCommitId`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `commitMessage`: `str`
 - `authorName`: `str`
 - `email`: `str`
@@ -1332,13 +1334,14 @@ Type annotations for
 `boto3.client("codecommit").override_pull_request_approval_rules` method.
 
 Boto3 documentation:
-[CodeCommit.Client.override_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules)
+[CodeCommit.Client.override_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules)
 
 Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
-- `overrideStatus`: [OverrideStatus](./literals.md#overridestatus) *(required)*
+- `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
+  *(required)*
 
 ### post_comment_for_compared_commit
 
@@ -1346,7 +1349,7 @@ Type annotations for
 `boto3.client("codecommit").post_comment_for_compared_commit` method.
 
 Boto3 documentation:
-[CodeCommit.Client.post_comment_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit)
+[CodeCommit.Client.post_comment_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit)
 
 Arguments:
 
@@ -1366,7 +1369,7 @@ Type annotations for `boto3.client("codecommit").post_comment_for_pull_request`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.post_comment_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request)
+[CodeCommit.Client.post_comment_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request)
 
 Arguments:
 
@@ -1386,7 +1389,7 @@ Returns
 Type annotations for `boto3.client("codecommit").post_comment_reply` method.
 
 Boto3 documentation:
-[CodeCommit.Client.post_comment_reply](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply)
+[CodeCommit.Client.post_comment_reply](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply)
 
 Arguments:
 
@@ -1402,7 +1405,7 @@ Returns
 Type annotations for `boto3.client("codecommit").put_comment_reaction` method.
 
 Boto3 documentation:
-[CodeCommit.Client.put_comment_reaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction)
+[CodeCommit.Client.put_comment_reaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction)
 
 Arguments:
 
@@ -1414,7 +1417,7 @@ Arguments:
 Type annotations for `boto3.client("codecommit").put_file` method.
 
 Boto3 documentation:
-[CodeCommit.Client.put_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file)
+[CodeCommit.Client.put_file](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.put_file)
 
 Arguments:
 
@@ -1422,7 +1425,7 @@ Arguments:
 - `branchName`: `str` *(required)*
 - `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `filePath`: `str` *(required)*
-- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `parentCommitId`: `str`
 - `commitMessage`: `str`
 - `name`: `str`
@@ -1436,7 +1439,7 @@ Type annotations for `boto3.client("codecommit").put_repository_triggers`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.put_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers)
+[CodeCommit.Client.put_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers)
 
 Arguments:
 
@@ -1453,7 +1456,7 @@ Returns
 Type annotations for `boto3.client("codecommit").tag_resource` method.
 
 Boto3 documentation:
-[CodeCommit.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource)
+[CodeCommit.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.tag_resource)
 
 Arguments:
 
@@ -1466,7 +1469,7 @@ Type annotations for `boto3.client("codecommit").test_repository_triggers`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.test_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers)
+[CodeCommit.Client.test_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers)
 
 Arguments:
 
@@ -1483,7 +1486,7 @@ Returns
 Type annotations for `boto3.client("codecommit").untag_resource` method.
 
 Boto3 documentation:
-[CodeCommit.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource)
+[CodeCommit.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.untag_resource)
 
 Arguments:
 
@@ -1496,7 +1499,7 @@ Type annotations for
 `boto3.client("codecommit").update_approval_rule_template_content` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_approval_rule_template_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content)
+[CodeCommit.Client.update_approval_rule_template_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content)
 
 Arguments:
 
@@ -1513,7 +1516,7 @@ Type annotations for
 `boto3.client("codecommit").update_approval_rule_template_description` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_approval_rule_template_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description)
+[CodeCommit.Client.update_approval_rule_template_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description)
 
 Arguments:
 
@@ -1529,7 +1532,7 @@ Type annotations for
 `boto3.client("codecommit").update_approval_rule_template_name` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_approval_rule_template_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name)
+[CodeCommit.Client.update_approval_rule_template_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name)
 
 Arguments:
 
@@ -1544,7 +1547,7 @@ Returns
 Type annotations for `boto3.client("codecommit").update_comment` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment)
+[CodeCommit.Client.update_comment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_comment)
 
 Arguments:
 
@@ -1559,7 +1562,7 @@ Returns
 Type annotations for `boto3.client("codecommit").update_default_branch` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_default_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch)
+[CodeCommit.Client.update_default_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_default_branch)
 
 Arguments:
 
@@ -1572,7 +1575,7 @@ Type annotations for
 `boto3.client("codecommit").update_pull_request_approval_rule_content` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_pull_request_approval_rule_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content)
+[CodeCommit.Client.update_pull_request_approval_rule_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content)
 
 Arguments:
 
@@ -1590,13 +1593,14 @@ Type annotations for
 `boto3.client("codecommit").update_pull_request_approval_state` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_pull_request_approval_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state)
+[CodeCommit.Client.update_pull_request_approval_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state)
 
 Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
-- `approvalState`: [ApprovalState](./literals.md#approvalstate) *(required)*
+- `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
+  *(required)*
 
 ### update_pull_request_description
 
@@ -1604,7 +1608,7 @@ Type annotations for
 `boto3.client("codecommit").update_pull_request_description` method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_pull_request_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description)
+[CodeCommit.Client.update_pull_request_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description)
 
 Arguments:
 
@@ -1620,13 +1624,14 @@ Type annotations for `boto3.client("codecommit").update_pull_request_status`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_pull_request_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status)
+[CodeCommit.Client.update_pull_request_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status)
 
 Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum) *(required)*
+  [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
+  *(required)*
 
 Returns
 [UpdatePullRequestStatusOutputTypeDef](./type_defs.md#updatepullrequeststatusoutputtypedef).
@@ -1637,7 +1642,7 @@ Type annotations for `boto3.client("codecommit").update_pull_request_title`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_pull_request_title](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title)
+[CodeCommit.Client.update_pull_request_title](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title)
 
 Arguments:
 
@@ -1653,7 +1658,7 @@ Type annotations for `boto3.client("codecommit").update_repository_description`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_repository_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description)
+[CodeCommit.Client.update_repository_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_repository_description)
 
 Arguments:
 
@@ -1666,7 +1671,7 @@ Type annotations for `boto3.client("codecommit").update_repository_name`
 method.
 
 Boto3 documentation:
-[CodeCommit.Client.update_repository_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name)
+[CodeCommit.Client.update_repository_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit.Client.update_repository_name)
 
 Arguments:
 

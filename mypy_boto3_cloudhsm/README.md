@@ -3,7 +3,7 @@
 > [Index](..) > CloudHSM
 
 Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
@@ -30,40 +30,40 @@ Can be used directly:
 from mypy_boto3_cloudhsm.client import CloudHSMClient
 ```
 
-CloudHSMClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags_to_resource](./client.md#add-tags-to-resource)
-- [can_paginate](./client.md#can-paginate)
-- [create_hapg](./client.md#create-hapg)
-- [create_hsm](./client.md#create-hsm)
-- [create_luna_client](./client.md#create-luna-client)
-- [delete_hapg](./client.md#delete-hapg)
-- [delete_hsm](./client.md#delete-hsm)
-- [delete_luna_client](./client.md#delete-luna-client)
-- [describe_hapg](./client.md#describe-hapg)
-- [describe_hsm](./client.md#describe-hsm)
-- [describe_luna_client](./client.md#describe-luna-client)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_config](./client.md#get-config)
-- [get_paginator](./client.md#get-paginator)
-- [list_available_zones](./client.md#list-available-zones)
-- [list_hapgs](./client.md#list-hapgs)
-- [list_hsms](./client.md#list-hsms)
-- [list_luna_clients](./client.md#list-luna-clients)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [modify_hapg](./client.md#modify-hapg)
-- [modify_hsm](./client.md#modify-hsm)
-- [modify_luna_client](./client.md#modify-luna-client)
-- [remove_tags_from_resource](./client.md#remove-tags-from-resource)
+- [add_tags_to_resource](./client.md#add_tags_to_resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_hapg](./client.md#create_hapg)
+- [create_hsm](./client.md#create_hsm)
+- [create_luna_client](./client.md#create_luna_client)
+- [delete_hapg](./client.md#delete_hapg)
+- [delete_hsm](./client.md#delete_hsm)
+- [delete_luna_client](./client.md#delete_luna_client)
+- [describe_hapg](./client.md#describe_hapg)
+- [describe_hsm](./client.md#describe_hsm)
+- [describe_luna_client](./client.md#describe_luna_client)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_config](./client.md#get_config)
+- [get_paginator](./client.md#get_paginator)
+- [list_available_zones](./client.md#list_available_zones)
+- [list_hapgs](./client.md#list_hapgs)
+- [list_hsms](./client.md#list_hsms)
+- [list_luna_clients](./client.md#list_luna_clients)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [modify_hapg](./client.md#modify_hapg)
+- [modify_hsm](./client.md#modify_hsm)
+- [modify_luna_client](./client.md#modify_luna_client)
+- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CloudHsmInternalException](./client.md#cloudhsminternalexception)
-- [CloudHsmServiceException](./client.md#cloudhsmserviceexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
+CloudHSMClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CloudHsmInternalException
+- CloudHsmServiceException
+- InvalidRequestException
 
 ## Paginators
 
@@ -87,16 +87,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsm.literals import ClientVersion, ...
+from mypy_boto3_cloudhsm.literals import ClientVersionType, ...
 ```
 
-- [ClientVersion](./literals.md#clientversion)
-- [CloudHsmObjectState](./literals.md#cloudhsmobjectstate)
-- [HsmStatus](./literals.md#hsmstatus)
+- [ClientVersionType](./literals.md#clientversiontype)
+- [CloudHsmObjectStateType](./literals.md#cloudhsmobjectstatetype)
+- [HsmStatusType](./literals.md#hsmstatustype)
 - [ListHapgsPaginatorName](./literals.md#listhapgspaginatorname)
 - [ListHsmsPaginatorName](./literals.md#listhsmspaginatorname)
 - [ListLunaClientsPaginatorName](./literals.md#listlunaclientspaginatorname)
-- [SubscriptionType](./literals.md#subscriptiontype)
+- [SubscriptionTypeType](./literals.md#subscriptiontypetype)
 
 ## Typed dictionaries
 

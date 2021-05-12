@@ -3,34 +3,34 @@
 > [Index](..) > [DirectConnect](.) > Literals
 
 Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
 [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [Literals for boto3 DirectConnect module](#literals-for-boto3-directconnect-module)
-  - [AddressFamily](#addressfamily)
-  - [BGPPeerState](#bgppeerstate)
-  - [BGPStatus](#bgpstatus)
-  - [ConnectionState](#connectionstate)
+  - [AddressFamilyType](#addressfamilytype)
+  - [BGPPeerStateType](#bgppeerstatetype)
+  - [BGPStatusType](#bgpstatustype)
+  - [ConnectionStateType](#connectionstatetype)
   - [DescribeDirectConnectGatewayAssociationsPaginatorName](#describedirectconnectgatewayassociationspaginatorname)
   - [DescribeDirectConnectGatewayAttachmentsPaginatorName](#describedirectconnectgatewayattachmentspaginatorname)
   - [DescribeDirectConnectGatewaysPaginatorName](#describedirectconnectgatewayspaginatorname)
-  - [DirectConnectGatewayAssociationProposalState](#directconnectgatewayassociationproposalstate)
-  - [DirectConnectGatewayAssociationState](#directconnectgatewayassociationstate)
-  - [DirectConnectGatewayAttachmentState](#directconnectgatewayattachmentstate)
-  - [DirectConnectGatewayAttachmentType](#directconnectgatewayattachmenttype)
-  - [DirectConnectGatewayState](#directconnectgatewaystate)
-  - [GatewayType](#gatewaytype)
-  - [HasLogicalRedundancy](#haslogicalredundancy)
-  - [InterconnectState](#interconnectstate)
-  - [LagState](#lagstate)
-  - [LoaContentType](#loacontenttype)
-  - [VirtualInterfaceState](#virtualinterfacestate)
+  - [DirectConnectGatewayAssociationProposalStateType](#directconnectgatewayassociationproposalstatetype)
+  - [DirectConnectGatewayAssociationStateType](#directconnectgatewayassociationstatetype)
+  - [DirectConnectGatewayAttachmentStateType](#directconnectgatewayattachmentstatetype)
+  - [DirectConnectGatewayAttachmentTypeType](#directconnectgatewayattachmenttypetype)
+  - [DirectConnectGatewayStateType](#directconnectgatewaystatetype)
+  - [GatewayTypeType](#gatewaytypetype)
+  - [HasLogicalRedundancyType](#haslogicalredundancytype)
+  - [InterconnectStateType](#interconnectstatetype)
+  - [LagStateType](#lagstatetype)
+  - [LoaContentTypeType](#loacontenttypetype)
+  - [VirtualInterfaceStateType](#virtualinterfacestatetype)
 
-## AddressFamily
+## AddressFamilyType
 
 ```python
-from mypy_boto3_directconnect.literals import AddressFamily
+from mypy_boto3_directconnect.literals import AddressFamilyType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 - `ipv4`
 - `ipv6`
 
-## BGPPeerState
+## BGPPeerStateType
 
 ```python
-from mypy_boto3_directconnect.literals import BGPPeerState
+from mypy_boto3_directconnect.literals import BGPPeerStateType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `pending`
 - `verifying`
 
-## BGPStatus
+## BGPStatusType
 
 ```python
-from mypy_boto3_directconnect.literals import BGPStatus
+from mypy_boto3_directconnect.literals import BGPStatusType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 - `unknown`
 - `up`
 
-## ConnectionState
+## ConnectionStateType
 
 ```python
-from mypy_boto3_directconnect.literals import ConnectionState
+from mypy_boto3_directconnect.literals import ConnectionStateType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 
 - `describe_direct_connect_gateways`
 
-## DirectConnectGatewayAssociationProposalState
+## DirectConnectGatewayAssociationProposalStateType
 
 ```python
-from mypy_boto3_directconnect.literals import DirectConnectGatewayAssociationProposalState
+from mypy_boto3_directconnect.literals import DirectConnectGatewayAssociationProposalStateType
 ```
 
 Values:
@@ -124,10 +124,10 @@ Values:
 - `deleted`
 - `requested`
 
-## DirectConnectGatewayAssociationState
+## DirectConnectGatewayAssociationStateType
 
 ```python
-from mypy_boto3_directconnect.literals import DirectConnectGatewayAssociationState
+from mypy_boto3_directconnect.literals import DirectConnectGatewayAssociationStateType
 ```
 
 Values:
@@ -138,10 +138,10 @@ Values:
 - `disassociating`
 - `updating`
 
-## DirectConnectGatewayAttachmentState
+## DirectConnectGatewayAttachmentStateType
 
 ```python
-from mypy_boto3_directconnect.literals import DirectConnectGatewayAttachmentState
+from mypy_boto3_directconnect.literals import DirectConnectGatewayAttachmentStateType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `detached`
 - `detaching`
 
-## DirectConnectGatewayAttachmentType
+## DirectConnectGatewayAttachmentTypeType
 
 ```python
-from mypy_boto3_directconnect.literals import DirectConnectGatewayAttachmentType
+from mypy_boto3_directconnect.literals import DirectConnectGatewayAttachmentTypeType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `PrivateVirtualInterface`
 - `TransitVirtualInterface`
 
-## DirectConnectGatewayState
+## DirectConnectGatewayStateType
 
 ```python
-from mypy_boto3_directconnect.literals import DirectConnectGatewayState
+from mypy_boto3_directconnect.literals import DirectConnectGatewayStateType
 ```
 
 Values:
@@ -175,10 +175,10 @@ Values:
 - `deleting`
 - `pending`
 
-## GatewayType
+## GatewayTypeType
 
 ```python
-from mypy_boto3_directconnect.literals import GatewayType
+from mypy_boto3_directconnect.literals import GatewayTypeType
 ```
 
 Values:
@@ -186,10 +186,10 @@ Values:
 - `transitGateway`
 - `virtualPrivateGateway`
 
-## HasLogicalRedundancy
+## HasLogicalRedundancyType
 
 ```python
-from mypy_boto3_directconnect.literals import HasLogicalRedundancy
+from mypy_boto3_directconnect.literals import HasLogicalRedundancyType
 ```
 
 Values:
@@ -198,10 +198,10 @@ Values:
 - `unknown`
 - `yes`
 
-## InterconnectState
+## InterconnectStateType
 
 ```python
-from mypy_boto3_directconnect.literals import InterconnectState
+from mypy_boto3_directconnect.literals import InterconnectStateType
 ```
 
 Values:
@@ -214,10 +214,10 @@ Values:
 - `requested`
 - `unknown`
 
-## LagState
+## LagStateType
 
 ```python
-from mypy_boto3_directconnect.literals import LagState
+from mypy_boto3_directconnect.literals import LagStateType
 ```
 
 Values:
@@ -230,20 +230,20 @@ Values:
 - `requested`
 - `unknown`
 
-## LoaContentType
+## LoaContentTypeType
 
 ```python
-from mypy_boto3_directconnect.literals import LoaContentType
+from mypy_boto3_directconnect.literals import LoaContentTypeType
 ```
 
 Values:
 
 - `application/pdf`
 
-## VirtualInterfaceState
+## VirtualInterfaceStateType
 
 ```python
-from mypy_boto3_directconnect.literals import VirtualInterfaceState
+from mypy_boto3_directconnect.literals import VirtualInterfaceStateType
 ```
 
 Values:

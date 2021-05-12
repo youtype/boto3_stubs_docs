@@ -3,24 +3,24 @@
 > [Index](..) > [CostandUsageReportService](.) > Literals
 
 Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [Literals for boto3 CostandUsageReportService module](#literals-for-boto3-costandusagereportservice-module)
-  - [AWSRegion](#awsregion)
-  - [AdditionalArtifact](#additionalartifact)
-  - [CompressionFormat](#compressionformat)
+  - [AWSRegionType](#awsregiontype)
+  - [AdditionalArtifactType](#additionalartifacttype)
+  - [CompressionFormatType](#compressionformattype)
   - [DescribeReportDefinitionsPaginatorName](#describereportdefinitionspaginatorname)
-  - [ReportFormat](#reportformat)
-  - [ReportVersioning](#reportversioning)
-  - [SchemaElement](#schemaelement)
-  - [TimeUnit](#timeunit)
+  - [ReportFormatType](#reportformattype)
+  - [ReportVersioningType](#reportversioningtype)
+  - [SchemaElementType](#schemaelementtype)
+  - [TimeUnitType](#timeunittype)
 
-## AWSRegion
+## AWSRegionType
 
 ```python
-from mypy_boto3_cur.literals import AWSRegion
+from mypy_boto3_cur.literals import AWSRegionType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
-## AdditionalArtifact
+## AdditionalArtifactType
 
 ```python
-from mypy_boto3_cur.literals import AdditionalArtifact
+from mypy_boto3_cur.literals import AdditionalArtifactType
 ```
 
 Values:
@@ -61,10 +61,10 @@ Values:
 - `QUICKSIGHT`
 - `REDSHIFT`
 
-## CompressionFormat
+## CompressionFormatType
 
 ```python
-from mypy_boto3_cur.literals import CompressionFormat
+from mypy_boto3_cur.literals import CompressionFormatType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 
 - `describe_report_definitions`
 
-## ReportFormat
+## ReportFormatType
 
 ```python
-from mypy_boto3_cur.literals import ReportFormat
+from mypy_boto3_cur.literals import ReportFormatType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 - `Parquet`
 - `textORcsv`
 
-## ReportVersioning
+## ReportVersioningType
 
 ```python
-from mypy_boto3_cur.literals import ReportVersioning
+from mypy_boto3_cur.literals import ReportVersioningType
 ```
 
 Values:
@@ -105,20 +105,20 @@ Values:
 - `CREATE_NEW_REPORT`
 - `OVERWRITE_REPORT`
 
-## SchemaElement
+## SchemaElementType
 
 ```python
-from mypy_boto3_cur.literals import SchemaElement
+from mypy_boto3_cur.literals import SchemaElementType
 ```
 
 Values:
 
 - `RESOURCES`
 
-## TimeUnit
+## TimeUnitType
 
 ```python
-from mypy_boto3_cur.literals import TimeUnit
+from mypy_boto3_cur.literals import TimeUnitType
 ```
 
 Values:

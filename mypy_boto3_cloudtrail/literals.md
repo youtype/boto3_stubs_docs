@@ -3,34 +3,34 @@
 > [Index](..) > [CloudTrail](.) > Literals
 
 Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
 [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [Literals for boto3 CloudTrail module](#literals-for-boto3-cloudtrail-module)
-  - [EventCategory](#eventcategory)
-  - [InsightType](#insighttype)
+  - [EventCategoryType](#eventcategorytype)
+  - [InsightTypeType](#insighttypetype)
   - [ListPublicKeysPaginatorName](#listpublickeyspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
   - [ListTrailsPaginatorName](#listtrailspaginatorname)
-  - [LookupAttributeKey](#lookupattributekey)
+  - [LookupAttributeKeyType](#lookupattributekeytype)
   - [LookupEventsPaginatorName](#lookupeventspaginatorname)
-  - [ReadWriteType](#readwritetype)
+  - [ReadWriteTypeType](#readwritetypetype)
 
-## EventCategory
+## EventCategoryType
 
 ```python
-from mypy_boto3_cloudtrail.literals import EventCategory
+from mypy_boto3_cloudtrail.literals import EventCategoryType
 ```
 
 Values:
 
 - `insight`
 
-## InsightType
+## InsightTypeType
 
 ```python
-from mypy_boto3_cloudtrail.literals import InsightType
+from mypy_boto3_cloudtrail.literals import InsightTypeType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 
 - `list_trails`
 
-## LookupAttributeKey
+## LookupAttributeKeyType
 
 ```python
-from mypy_boto3_cloudtrail.literals import LookupAttributeKey
+from mypy_boto3_cloudtrail.literals import LookupAttributeKeyType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 
 - `lookup_events`
 
-## ReadWriteType
+## ReadWriteTypeType
 
 ```python
-from mypy_boto3_cloudtrail.literals import ReadWriteType
+from mypy_boto3_cloudtrail.literals import ReadWriteTypeType
 ```
 
 Values:

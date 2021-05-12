@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoSync](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
+[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
 [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
@@ -50,7 +50,7 @@ Optional fields:
 
 - `StreamName`: `str`
 - `RoleArn`: `str`
-- `StreamingStatus`: [StreamingStatus](./literals.md#streamingstatus)
+- `StreamingStatus`: [StreamingStatusType](./literals.md#streamingstatustype)
 
 ## DatasetTypeDef
 
@@ -120,7 +120,8 @@ Optional fields:
 - `IdentityPoolId`: `str`
 - `BulkPublishStartTime`: `datetime`
 - `BulkPublishCompleteTime`: `datetime`
-- `BulkPublishStatus`: [BulkPublishStatus](./literals.md#bulkpublishstatus)
+- `BulkPublishStatus`:
+  [BulkPublishStatusType](./literals.md#bulkpublishstatustype)
 - `FailureMessage`: `str`
 
 ## GetCognitoEventsResponseTypeDef
@@ -143,7 +144,8 @@ Optional fields:
 
 - `IdentityPoolId`: `str`
 - `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
-- `CognitoStreams`: [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
+- `CognitoStreams`:
+  [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
 
 ## IdentityPoolUsageTypeDef
 
@@ -235,7 +237,7 @@ from mypy_boto3_cognito_sync.type_defs import RecordPatchTypeDef
 
 Required fields:
 
-- `Op`: [Operation](./literals.md#operation)
+- `Op`: [OperationType](./literals.md#operationtype)
 - `Key`: `str`
 - `SyncCount`: `int`
 
@@ -279,7 +281,8 @@ Optional fields:
 
 - `IdentityPoolId`: `str`
 - `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
-- `CognitoStreams`: [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
+- `CognitoStreams`:
+  [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
 
 ## UpdateRecordsResponseTypeDef
 

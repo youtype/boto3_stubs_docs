@@ -3,7 +3,7 @@
 > [Index](..) > [ApiGatewayV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
+[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
 [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
@@ -121,7 +121,7 @@ from mypy_boto3_apigatewayv2.type_defs import ApiTypeDef
 Required fields:
 
 - `Name`: `str`
-- `ProtocolType`: [ProtocolType](./literals.md#protocoltype)
+- `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
 - `RouteSelectionExpression`: `str`
 
 Optional fields:
@@ -156,7 +156,7 @@ Optional fields:
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: [AuthorizerType](./literals.md#authorizertype)
+- `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
 - `IdentitySource`: `List`\[`str`\]
@@ -211,7 +211,7 @@ Optional fields:
 - `DisableExecuteApiEndpoint`: `bool`
 - `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: [ProtocolType](./literals.md#protocoltype)
+- `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
 - `RouteSelectionExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
@@ -229,7 +229,7 @@ Optional fields:
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: [AuthorizerType](./literals.md#authorizertype)
+- `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
 - `IdentitySource`: `List`\[`str`\]
@@ -249,7 +249,8 @@ Optional fields:
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `DeploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
 
@@ -278,7 +279,7 @@ from mypy_boto3_apigatewayv2.type_defs import CreateIntegrationResponseResponseT
 Optional fields:
 
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `IntegrationResponseId`: `str`
 - `IntegrationResponseKey`: `str`
 - `ResponseParameters`: `Dict`\[`str`, `str`\]
@@ -295,18 +296,19 @@ Optional fields:
 
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: [IntegrationType](./literals.md#integrationtype)
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: [PassthroughBehavior](./literals.md#passthroughbehavior)
+- `PassthroughBehavior`:
+  [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
 - `RequestParameters`: `Dict`\[`str`, `str`\]
 - `RequestTemplates`: `Dict`\[`str`, `str`\]
@@ -355,7 +357,8 @@ Optional fields:
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
 - `AuthorizationScopes`: `List`\[`str`\]
-- `AuthorizationType`: [AuthorizationType](./literals.md#authorizationtype)
+- `AuthorizationType`:
+  [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
@@ -407,10 +410,10 @@ Optional fields:
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 - `VpcLinkId`: `str`
-- `VpcLinkStatus`: [VpcLinkStatus](./literals.md#vpclinkstatus)
+- `VpcLinkStatus`: [VpcLinkStatusType](./literals.md#vpclinkstatustype)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']` (see
-  [VpcLinkVersion](./literals.md#vpclinkversion))
+  [VpcLinkVersionType](./literals.md#vpclinkversiontype))
 
 ## DeploymentTypeDef
 
@@ -423,7 +426,8 @@ Optional fields:
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `DeploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
 
@@ -439,11 +443,12 @@ Optional fields:
 - `CertificateArn`: `str`
 - `CertificateName`: `str`
 - `CertificateUploadDate`: `datetime`
-- `DomainNameStatus`: [DomainNameStatus](./literals.md#domainnamestatus)
+- `DomainNameStatus`:
+  [DomainNameStatusType](./literals.md#domainnamestatustype)
 - `DomainNameStatusMessage`: `str`
-- `EndpointType`: [EndpointType](./literals.md#endpointtype)
+- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `HostedZoneId`: `str`
-- `SecurityPolicy`: [SecurityPolicy](./literals.md#securitypolicy)
+- `SecurityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 
 ## DomainNameTypeDef
 
@@ -517,7 +522,7 @@ Optional fields:
 - `DisableExecuteApiEndpoint`: `bool`
 - `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: [ProtocolType](./literals.md#protocoltype)
+- `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
 - `RouteSelectionExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
@@ -546,7 +551,7 @@ Optional fields:
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: [AuthorizerType](./literals.md#authorizertype)
+- `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
 - `IdentitySource`: `List`\[`str`\]
@@ -577,7 +582,8 @@ Optional fields:
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `DeploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
 
@@ -628,7 +634,7 @@ from mypy_boto3_apigatewayv2.type_defs import GetIntegrationResponseResponseType
 Optional fields:
 
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `IntegrationResponseId`: `str`
 - `IntegrationResponseKey`: `str`
 - `ResponseParameters`: `Dict`\[`str`, `str`\]
@@ -657,18 +663,19 @@ Optional fields:
 
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: [IntegrationType](./literals.md#integrationtype)
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: [PassthroughBehavior](./literals.md#passthroughbehavior)
+- `PassthroughBehavior`:
+  [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
 - `RequestParameters`: `Dict`\[`str`, `str`\]
 - `RequestTemplates`: `Dict`\[`str`, `str`\]
@@ -746,7 +753,8 @@ from mypy_boto3_apigatewayv2.type_defs import GetRouteResponsesResponseTypeDef
 
 Optional fields:
 
-- `Items`: `List`\[[RouteResponseTypeDef](./type_defs.md#routeresponsetypedef)\]
+- `Items`:
+  `List`\[[RouteResponseTypeDef](./type_defs.md#routeresponsetypedef)\]
 - `NextToken`: `str`
 
 ## GetRouteResultTypeDef
@@ -760,7 +768,8 @@ Optional fields:
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
 - `AuthorizationScopes`: `List`\[`str`\]
-- `AuthorizationType`: [AuthorizationType](./literals.md#authorizationtype)
+- `AuthorizationType`:
+  [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
@@ -844,10 +853,10 @@ Optional fields:
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 - `VpcLinkId`: `str`
-- `VpcLinkStatus`: [VpcLinkStatus](./literals.md#vpclinkstatus)
+- `VpcLinkStatus`: [VpcLinkStatusType](./literals.md#vpclinkstatustype)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']` (see
-  [VpcLinkVersion](./literals.md#vpclinkversion))
+  [VpcLinkVersionType](./literals.md#vpclinkversiontype))
 
 ## GetVpcLinksResponseTypeDef
 
@@ -879,7 +888,7 @@ Optional fields:
 - `DisableExecuteApiEndpoint`: `bool`
 - `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: [ProtocolType](./literals.md#protocoltype)
+- `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
 - `RouteSelectionExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
@@ -898,7 +907,7 @@ Required fields:
 Optional fields:
 
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `IntegrationResponseId`: `str`
 - `ResponseParameters`: `Dict`\[`str`, `str`\]
 - `ResponseTemplates`: `Dict`\[`str`, `str`\]
@@ -914,18 +923,19 @@ Optional fields:
 
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: [IntegrationType](./literals.md#integrationtype)
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: [PassthroughBehavior](./literals.md#passthroughbehavior)
+- `PassthroughBehavior`:
+  [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
 - `RequestParameters`: `Dict`\[`str`, `str`\]
 - `RequestTemplates`: `Dict`\[`str`, `str`\]
@@ -1026,7 +1036,7 @@ Optional fields:
 - `DisableExecuteApiEndpoint`: `bool`
 - `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: [ProtocolType](./literals.md#protocoltype)
+- `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
 - `RouteSelectionExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
@@ -1060,7 +1070,7 @@ Optional fields:
 
 - `DataTraceEnabled`: `bool`
 - `DetailedMetricsEnabled`: `bool`
-- `LoggingLevel`: [LoggingLevel](./literals.md#logginglevel)
+- `LoggingLevel`: [LoggingLevelType](./literals.md#loggingleveltype)
 - `ThrottlingBurstLimit`: `int`
 - `ThrottlingRateLimit`: `float`
 
@@ -1079,7 +1089,8 @@ Optional fields:
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
 - `AuthorizationScopes`: `List`\[`str`\]
-- `AuthorizationType`: [AuthorizationType](./literals.md#authorizationtype)
+- `AuthorizationType`:
+  [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
@@ -1171,7 +1182,7 @@ Optional fields:
 - `DisableExecuteApiEndpoint`: `bool`
 - `ImportInfo`: `List`\[`str`\]
 - `Name`: `str`
-- `ProtocolType`: [ProtocolType](./literals.md#protocoltype)
+- `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
 - `RouteSelectionExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Version`: `str`
@@ -1189,7 +1200,7 @@ Optional fields:
 - `AuthorizerId`: `str`
 - `AuthorizerPayloadFormatVersion`: `str`
 - `AuthorizerResultTtlInSeconds`: `int`
-- `AuthorizerType`: [AuthorizerType](./literals.md#authorizertype)
+- `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
 - `IdentitySource`: `List`\[`str`\]
@@ -1209,7 +1220,8 @@ Optional fields:
 - `AutoDeployed`: `bool`
 - `CreatedDate`: `datetime`
 - `DeploymentId`: `str`
-- `DeploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `DeploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
 
@@ -1238,7 +1250,7 @@ from mypy_boto3_apigatewayv2.type_defs import UpdateIntegrationResponseResponseT
 Optional fields:
 
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `IntegrationResponseId`: `str`
 - `IntegrationResponseKey`: `str`
 - `ResponseParameters`: `Dict`\[`str`, `str`\]
@@ -1255,18 +1267,19 @@ Optional fields:
 
 - `ApiGatewayManaged`: `bool`
 - `ConnectionId`: `str`
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `ContentHandlingStrategy`:
-  [ContentHandlingStrategy](./literals.md#contenthandlingstrategy)
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `CredentialsArn`: `str`
 - `Description`: `str`
 - `IntegrationId`: `str`
 - `IntegrationMethod`: `str`
 - `IntegrationResponseSelectionExpression`: `str`
 - `IntegrationSubtype`: `str`
-- `IntegrationType`: [IntegrationType](./literals.md#integrationtype)
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationUri`: `str`
-- `PassthroughBehavior`: [PassthroughBehavior](./literals.md#passthroughbehavior)
+- `PassthroughBehavior`:
+  [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
 - `RequestParameters`: `Dict`\[`str`, `str`\]
 - `RequestTemplates`: `Dict`\[`str`, `str`\]
@@ -1315,7 +1328,8 @@ Optional fields:
 - `ApiGatewayManaged`: `bool`
 - `ApiKeyRequired`: `bool`
 - `AuthorizationScopes`: `List`\[`str`\]
-- `AuthorizationType`: [AuthorizationType](./literals.md#authorizationtype)
+- `AuthorizationType`:
+  [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
@@ -1367,10 +1381,10 @@ Optional fields:
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 - `VpcLinkId`: `str`
-- `VpcLinkStatus`: [VpcLinkStatus](./literals.md#vpclinkstatus)
+- `VpcLinkStatus`: [VpcLinkStatusType](./literals.md#vpclinkstatustype)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']` (see
-  [VpcLinkVersion](./literals.md#vpclinkversion))
+  [VpcLinkVersionType](./literals.md#vpclinkversiontype))
 
 ## VpcLinkTypeDef
 
@@ -1389,7 +1403,7 @@ Optional fields:
 
 - `CreatedDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `VpcLinkStatus`: [VpcLinkStatus](./literals.md#vpclinkstatus)
+- `VpcLinkStatus`: [VpcLinkStatusType](./literals.md#vpclinkstatustype)
 - `VpcLinkStatusMessage`: `str`
 - `VpcLinkVersion`: `Literal['V2']` (see
-  [VpcLinkVersion](./literals.md#vpclinkversion))
+  [VpcLinkVersionType](./literals.md#vpclinkversiontype))

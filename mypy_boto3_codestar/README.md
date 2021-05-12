@@ -3,7 +3,7 @@
 > [Index](..) > CodeStar
 
 Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar.html#CodeStar)
 type annotations stubs module
 [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
@@ -30,48 +30,48 @@ Can be used directly:
 from mypy_boto3_codestar.client import CodeStarClient
 ```
 
-CodeStarClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_team_member](./client.md#associate-team-member)
-- [can_paginate](./client.md#can-paginate)
-- [create_project](./client.md#create-project)
-- [create_user_profile](./client.md#create-user-profile)
-- [delete_project](./client.md#delete-project)
-- [delete_user_profile](./client.md#delete-user-profile)
-- [describe_project](./client.md#describe-project)
-- [describe_user_profile](./client.md#describe-user-profile)
-- [disassociate_team_member](./client.md#disassociate-team-member)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_projects](./client.md#list-projects)
-- [list_resources](./client.md#list-resources)
-- [list_tags_for_project](./client.md#list-tags-for-project)
-- [list_team_members](./client.md#list-team-members)
-- [list_user_profiles](./client.md#list-user-profiles)
-- [tag_project](./client.md#tag-project)
-- [untag_project](./client.md#untag-project)
-- [update_project](./client.md#update-project)
-- [update_team_member](./client.md#update-team-member)
-- [update_user_profile](./client.md#update-user-profile)
+- [associate_team_member](./client.md#associate_team_member)
+- [can_paginate](./client.md#can_paginate)
+- [create_project](./client.md#create_project)
+- [create_user_profile](./client.md#create_user_profile)
+- [delete_project](./client.md#delete_project)
+- [delete_user_profile](./client.md#delete_user_profile)
+- [describe_project](./client.md#describe_project)
+- [describe_user_profile](./client.md#describe_user_profile)
+- [disassociate_team_member](./client.md#disassociate_team_member)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_projects](./client.md#list_projects)
+- [list_resources](./client.md#list_resources)
+- [list_tags_for_project](./client.md#list_tags_for_project)
+- [list_team_members](./client.md#list_team_members)
+- [list_user_profiles](./client.md#list_user_profiles)
+- [tag_project](./client.md#tag_project)
+- [untag_project](./client.md#untag_project)
+- [update_project](./client.md#update_project)
+- [update_team_member](./client.md#update_team_member)
+- [update_user_profile](./client.md#update_user_profile)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidServiceRoleException](./client.md#invalidserviceroleexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ProjectAlreadyExistsException](./client.md#projectalreadyexistsexception)
-- [ProjectConfigurationException](./client.md#projectconfigurationexception)
-- [ProjectCreationFailedException](./client.md#projectcreationfailedexception)
-- [ProjectNotFoundException](./client.md#projectnotfoundexception)
-- [TeamMemberAlreadyAssociatedException](./client.md#teammemberalreadyassociatedexception)
-- [TeamMemberNotFoundException](./client.md#teammembernotfoundexception)
-- [UserProfileAlreadyExistsException](./client.md#userprofilealreadyexistsexception)
-- [UserProfileNotFoundException](./client.md#userprofilenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+CodeStarClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- InvalidNextTokenException
+- InvalidServiceRoleException
+- LimitExceededException
+- ProjectAlreadyExistsException
+- ProjectConfigurationException
+- ProjectCreationFailedException
+- ProjectNotFoundException
+- TeamMemberAlreadyAssociatedException
+- TeamMemberNotFoundException
+- UserProfileAlreadyExistsException
+- UserProfileNotFoundException
+- ValidationException
 
 ## Paginators
 

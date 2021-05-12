@@ -3,7 +3,7 @@
 > [Index](..) > [DataExchange](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
 [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
@@ -88,7 +88,7 @@ Required fields:
 - `Arn`: `str`
 - `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -121,12 +121,12 @@ Optional fields:
 
 - `Arn`: `str`
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`: [Origin](./literals.md#origin)
+- `Origin`: [OriginType](./literals.md#origintype)
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -145,7 +145,7 @@ Optional fields:
 - `Details`: [ResponseDetailsTypeDef](./type_defs.md#responsedetailstypedef)
 - `Errors`: `List`\[[JobErrorTypeDef](./type_defs.md#joberrortypedef)\]
 - `Id`: `str`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `Type`: [TypeType](./literals.md#typetype)
 - `UpdatedAt`: `datetime`
 
@@ -177,12 +177,12 @@ Required fields:
 
 - `Arn`: `str`
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`: [Origin](./literals.md#origin)
+- `Origin`: [OriginType](./literals.md#origintype)
 - `UpdatedAt`: `datetime`
 
 Optional fields:
@@ -310,7 +310,8 @@ from mypy_boto3_dataexchange.type_defs import ExportServerSideEncryptionTypeDef
 
 Required fields:
 
-- `Type`: [ServerSideEncryptionTypes](./literals.md#serversideencryptiontypes)
+- `Type`:
+  [ServerSideEncryptionTypesType](./literals.md#serversideencryptiontypestype)
 
 Optional fields:
 
@@ -327,7 +328,7 @@ Optional fields:
 - `Arn`: `str`
 - `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -346,12 +347,12 @@ Optional fields:
 
 - `Arn`: `str`
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`: [Origin](./literals.md#origin)
+- `Origin`: [OriginType](./literals.md#origintype)
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -370,7 +371,7 @@ Optional fields:
 - `Details`: [ResponseDetailsTypeDef](./type_defs.md#responsedetailstypedef)
 - `Errors`: `List`\[[JobErrorTypeDef](./type_defs.md#joberrortypedef)\]
 - `Id`: `str`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `Type`: [TypeType](./literals.md#typetype)
 - `UpdatedAt`: `datetime`
 
@@ -471,7 +472,7 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `Details`: [ResponseDetailsTypeDef](./type_defs.md#responsedetailstypedef)
 - `Id`: `str`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `Type`: [TypeType](./literals.md#typetype)
 - `UpdatedAt`: `datetime`
 
@@ -487,16 +488,17 @@ from mypy_boto3_dataexchange.type_defs import JobErrorTypeDef
 
 Required fields:
 
-- `Code`: [Code](./literals.md#code)
+- `Code`: [CodeType](./literals.md#codetype)
 - `Message`: `str`
 
 Optional fields:
 
 - `Details`: [DetailsTypeDef](./type_defs.md#detailstypedef)
-- `LimitName`: [JobErrorLimitName](./literals.md#joberrorlimitname)
+- `LimitName`: [JobErrorLimitNameType](./literals.md#joberrorlimitnametype)
 - `LimitValue`: `float`
 - `ResourceId`: `str`
-- `ResourceType`: [JobErrorResourceTypes](./literals.md#joberrorresourcetypes)
+- `ResourceType`:
+  [JobErrorResourceTypesType](./literals.md#joberrorresourcetypestype)
 
 ## ListDataSetRevisionsResponseTypeDef
 
@@ -518,7 +520,8 @@ from mypy_boto3_dataexchange.type_defs import ListDataSetsResponseTypeDef
 
 Optional fields:
 
-- `DataSets`: `List`\[[DataSetEntryTypeDef](./type_defs.md#datasetentrytypedef)\]
+- `DataSets`:
+  `List`\[[DataSetEntryTypeDef](./type_defs.md#datasetentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListJobsResponseTypeDef
@@ -669,7 +672,7 @@ Optional fields:
 - `Arn`: `str`
 - `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -688,12 +691,12 @@ Optional fields:
 
 - `Arn`: `str`
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetType](./literals.md#assettype))
+  [AssetTypeType](./literals.md#assettypetype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`: [Origin](./literals.md#origin)
+- `Origin`: [OriginType](./literals.md#origintype)
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `UpdatedAt`: `datetime`

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSMV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
 [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
@@ -39,7 +39,7 @@ from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef
 Optional fields:
 
 - `Type`: `Literal['DAYS']` (see
-  [BackupRetentionType](./literals.md#backupretentiontype))
+  [BackupRetentionTypeType](./literals.md#backupretentiontypetype))
 - `Value`: `str`
 
 ## BackupTypeDef
@@ -54,7 +54,7 @@ Required fields:
 
 Optional fields:
 
-- `BackupState`: [BackupState](./literals.md#backupstate)
+- `BackupState`: [BackupStateType](./literals.md#backupstatetype)
 - `ClusterId`: `str`
 - `CreateTimestamp`: `datetime`
 - `CopyTimestamp`: `datetime`
@@ -88,7 +88,7 @@ from mypy_boto3_cloudhsmv2.type_defs import ClusterTypeDef
 Optional fields:
 
 - `BackupPolicy`: `Literal['DEFAULT']` (see
-  [BackupPolicy](./literals.md#backuppolicy))
+  [BackupPolicyType](./literals.md#backuppolicytype))
 - `BackupRetentionPolicy`:
   [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
 - `ClusterId`: `str`
@@ -98,7 +98,7 @@ Optional fields:
 - `PreCoPassword`: `str`
 - `SecurityGroup`: `str`
 - `SourceBackupId`: `str`
-- `State`: [ClusterState](./literals.md#clusterstate)
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
 - `StateMessage`: `str`
 - `SubnetMapping`: `Dict`\[`str`, `str`\]
 - `VpcId`: `str`
@@ -218,7 +218,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `EniId`: `str`
 - `EniIp`: `str`
-- `State`: [HsmState](./literals.md#hsmstate)
+- `State`: [HsmStateType](./literals.md#hsmstatetype)
 - `StateMessage`: `str`
 
 ## InitializeClusterResponseTypeDef
@@ -229,7 +229,7 @@ from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterResponseTypeDef
 
 Optional fields:
 
-- `State`: [ClusterState](./literals.md#clusterstate)
+- `State`: [ClusterStateType](./literals.md#clusterstatetype)
 - `StateMessage`: `str`
 
 ## ListTagsResponseTypeDef

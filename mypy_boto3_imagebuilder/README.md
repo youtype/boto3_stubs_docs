@@ -3,7 +3,7 @@
 > [Index](..) > Imagebuilder
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
+[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/imagebuilder.html#Imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
@@ -29,82 +29,82 @@ Can be used directly:
 from mypy_boto3_imagebuilder.client import ImagebuilderClient
 ```
 
-ImagebuilderClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_image_creation](./client.md#cancel-image-creation)
-- [create_component](./client.md#create-component)
-- [create_container_recipe](./client.md#create-container-recipe)
-- [create_distribution_configuration](./client.md#create-distribution-configuration)
-- [create_image](./client.md#create-image)
-- [create_image_pipeline](./client.md#create-image-pipeline)
-- [create_image_recipe](./client.md#create-image-recipe)
-- [create_infrastructure_configuration](./client.md#create-infrastructure-configuration)
-- [delete_component](./client.md#delete-component)
-- [delete_container_recipe](./client.md#delete-container-recipe)
-- [delete_distribution_configuration](./client.md#delete-distribution-configuration)
-- [delete_image](./client.md#delete-image)
-- [delete_image_pipeline](./client.md#delete-image-pipeline)
-- [delete_image_recipe](./client.md#delete-image-recipe)
-- [delete_infrastructure_configuration](./client.md#delete-infrastructure-configuration)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_component](./client.md#get-component)
-- [get_component_policy](./client.md#get-component-policy)
-- [get_container_recipe](./client.md#get-container-recipe)
-- [get_container_recipe_policy](./client.md#get-container-recipe-policy)
-- [get_distribution_configuration](./client.md#get-distribution-configuration)
-- [get_image](./client.md#get-image)
-- [get_image_pipeline](./client.md#get-image-pipeline)
-- [get_image_policy](./client.md#get-image-policy)
-- [get_image_recipe](./client.md#get-image-recipe)
-- [get_image_recipe_policy](./client.md#get-image-recipe-policy)
-- [get_infrastructure_configuration](./client.md#get-infrastructure-configuration)
-- [import_component](./client.md#import-component)
-- [list_component_build_versions](./client.md#list-component-build-versions)
-- [list_components](./client.md#list-components)
-- [list_container_recipes](./client.md#list-container-recipes)
-- [list_distribution_configurations](./client.md#list-distribution-configurations)
-- [list_image_build_versions](./client.md#list-image-build-versions)
-- [list_image_packages](./client.md#list-image-packages)
-- [list_image_pipeline_images](./client.md#list-image-pipeline-images)
-- [list_image_pipelines](./client.md#list-image-pipelines)
-- [list_image_recipes](./client.md#list-image-recipes)
-- [list_images](./client.md#list-images)
-- [list_infrastructure_configurations](./client.md#list-infrastructure-configurations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_component_policy](./client.md#put-component-policy)
-- [put_container_recipe_policy](./client.md#put-container-recipe-policy)
-- [put_image_policy](./client.md#put-image-policy)
-- [put_image_recipe_policy](./client.md#put-image-recipe-policy)
-- [start_image_pipeline_execution](./client.md#start-image-pipeline-execution)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_distribution_configuration](./client.md#update-distribution-configuration)
-- [update_image_pipeline](./client.md#update-image-pipeline)
-- [update_infrastructure_configuration](./client.md#update-infrastructure-configuration)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_image_creation](./client.md#cancel_image_creation)
+- [create_component](./client.md#create_component)
+- [create_container_recipe](./client.md#create_container_recipe)
+- [create_distribution_configuration](./client.md#create_distribution_configuration)
+- [create_image](./client.md#create_image)
+- [create_image_pipeline](./client.md#create_image_pipeline)
+- [create_image_recipe](./client.md#create_image_recipe)
+- [create_infrastructure_configuration](./client.md#create_infrastructure_configuration)
+- [delete_component](./client.md#delete_component)
+- [delete_container_recipe](./client.md#delete_container_recipe)
+- [delete_distribution_configuration](./client.md#delete_distribution_configuration)
+- [delete_image](./client.md#delete_image)
+- [delete_image_pipeline](./client.md#delete_image_pipeline)
+- [delete_image_recipe](./client.md#delete_image_recipe)
+- [delete_infrastructure_configuration](./client.md#delete_infrastructure_configuration)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_component](./client.md#get_component)
+- [get_component_policy](./client.md#get_component_policy)
+- [get_container_recipe](./client.md#get_container_recipe)
+- [get_container_recipe_policy](./client.md#get_container_recipe_policy)
+- [get_distribution_configuration](./client.md#get_distribution_configuration)
+- [get_image](./client.md#get_image)
+- [get_image_pipeline](./client.md#get_image_pipeline)
+- [get_image_policy](./client.md#get_image_policy)
+- [get_image_recipe](./client.md#get_image_recipe)
+- [get_image_recipe_policy](./client.md#get_image_recipe_policy)
+- [get_infrastructure_configuration](./client.md#get_infrastructure_configuration)
+- [import_component](./client.md#import_component)
+- [list_component_build_versions](./client.md#list_component_build_versions)
+- [list_components](./client.md#list_components)
+- [list_container_recipes](./client.md#list_container_recipes)
+- [list_distribution_configurations](./client.md#list_distribution_configurations)
+- [list_image_build_versions](./client.md#list_image_build_versions)
+- [list_image_packages](./client.md#list_image_packages)
+- [list_image_pipeline_images](./client.md#list_image_pipeline_images)
+- [list_image_pipelines](./client.md#list_image_pipelines)
+- [list_image_recipes](./client.md#list_image_recipes)
+- [list_images](./client.md#list_images)
+- [list_infrastructure_configurations](./client.md#list_infrastructure_configurations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_component_policy](./client.md#put_component_policy)
+- [put_container_recipe_policy](./client.md#put_container_recipe_policy)
+- [put_image_policy](./client.md#put_image_policy)
+- [put_image_recipe_policy](./client.md#put_image_recipe_policy)
+- [start_image_pipeline_execution](./client.md#start_image_pipeline_execution)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_distribution_configuration](./client.md#update_distribution_configuration)
+- [update_image_pipeline](./client.md#update_image_pipeline)
+- [update_infrastructure_configuration](./client.md#update_infrastructure_configuration)
 
 ### Exceptions
 
-- [CallRateLimitExceededException](./client.md#callratelimitexceededexception)
-- [ClientError](./client.md#clienterror)
-- [ClientException](./client.md#clientexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
-- [InvalidPaginationTokenException](./client.md#invalidpaginationtokenexception)
-- [InvalidParameterCombinationException](./client.md#invalidparametercombinationexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [InvalidVersionNumberException](./client.md#invalidversionnumberexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceDependencyException](./client.md#resourcedependencyexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceException](./client.md#serviceexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
+ImagebuilderClient [exceptions](./client.md#exceptions)
+
+- CallRateLimitExceededException
+- ClientError
+- ClientException
+- ForbiddenException
+- IdempotentParameterMismatchException
+- InvalidPaginationTokenException
+- InvalidParameterCombinationException
+- InvalidParameterException
+- InvalidParameterValueException
+- InvalidRequestException
+- InvalidVersionNumberException
+- ResourceAlreadyExistsException
+- ResourceDependencyException
+- ResourceInUseException
+- ResourceNotFoundException
+- ServiceException
+- ServiceQuotaExceededException
+- ServiceUnavailableException
 
 ## Literals
 
@@ -113,20 +113,20 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_imagebuilder.literals import ComponentFormat, ...
+from mypy_boto3_imagebuilder.literals import ComponentFormatType, ...
 ```
 
-- [ComponentFormat](./literals.md#componentformat)
-- [ComponentType](./literals.md#componenttype)
-- [ContainerRepositoryService](./literals.md#containerrepositoryservice)
-- [ContainerType](./literals.md#containertype)
-- [EbsVolumeType](./literals.md#ebsvolumetype)
-- [ImageStatus](./literals.md#imagestatus)
-- [ImageType](./literals.md#imagetype)
-- [Ownership](./literals.md#ownership)
-- [PipelineExecutionStartCondition](./literals.md#pipelineexecutionstartcondition)
-- [PipelineStatus](./literals.md#pipelinestatus)
-- [Platform](./literals.md#platform)
+- [ComponentFormatType](./literals.md#componentformattype)
+- [ComponentTypeType](./literals.md#componenttypetype)
+- [ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype)
+- [ContainerTypeType](./literals.md#containertypetype)
+- [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
+- [ImageStatusType](./literals.md#imagestatustype)
+- [ImageTypeType](./literals.md#imagetypetype)
+- [OwnershipType](./literals.md#ownershiptype)
+- [PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype)
+- [PipelineStatusType](./literals.md#pipelinestatustype)
+- [PlatformType](./literals.md#platformtype)
 
 ## Typed dictionaries
 

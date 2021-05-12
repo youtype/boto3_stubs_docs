@@ -3,7 +3,7 @@
 > [Index](..) > [Firehose](.) > FirehoseClient
 
 Auto-generated documentation for
-[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose)
 type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
@@ -40,7 +40,7 @@ def get_firehose_client() -> FirehoseClient:
 ```
 
 Boto3 documentation:
-[Firehose.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client)
+[Firehose.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client)
 
 ## Exceptions
 
@@ -72,7 +72,7 @@ Exceptions:
 Type annotations for `boto3.client("firehose").can_paginate` method.
 
 Boto3 documentation:
-[Firehose.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.can_paginate)
+[Firehose.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.can_paginate)
 
 Arguments:
 
@@ -85,12 +85,13 @@ Returns `bool`.
 Type annotations for `boto3.client("firehose").create_delivery_stream` method.
 
 Boto3 documentation:
-[Firehose.Client.create_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream)
+[Firehose.Client.create_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.create_delivery_stream)
 
 Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `DeliveryStreamType`: [DeliveryStreamType](./literals.md#deliverystreamtype)
+- `DeliveryStreamType`:
+  [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
 - `KinesisStreamSourceConfiguration`:
   [KinesisStreamSourceConfigurationTypeDef](./type_defs.md#kinesisstreamsourceconfigurationtypedef)
 - `DeliveryStreamEncryptionConfigurationInput`:
@@ -117,7 +118,7 @@ Returns
 Type annotations for `boto3.client("firehose").delete_delivery_stream` method.
 
 Boto3 documentation:
-[Firehose.Client.delete_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream)
+[Firehose.Client.delete_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.delete_delivery_stream)
 
 Arguments:
 
@@ -132,7 +133,7 @@ Type annotations for `boto3.client("firehose").describe_delivery_stream`
 method.
 
 Boto3 documentation:
-[Firehose.Client.describe_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream)
+[Firehose.Client.describe_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.describe_delivery_stream)
 
 Arguments:
 
@@ -148,7 +149,7 @@ Returns
 Type annotations for `boto3.client("firehose").generate_presigned_url` method.
 
 Boto3 documentation:
-[Firehose.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.generate_presigned_url)
+[Firehose.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.generate_presigned_url)
 
 Arguments:
 
@@ -164,12 +165,13 @@ Returns `str`.
 Type annotations for `boto3.client("firehose").list_delivery_streams` method.
 
 Boto3 documentation:
-[Firehose.Client.list_delivery_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams)
+[Firehose.Client.list_delivery_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.list_delivery_streams)
 
 Arguments:
 
 - `Limit`: `int`
-- `DeliveryStreamType`: [DeliveryStreamType](./literals.md#deliverystreamtype)
+- `DeliveryStreamType`:
+  [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
 - `ExclusiveStartDeliveryStreamName`: `str`
 
 Returns
@@ -181,7 +183,7 @@ Type annotations for `boto3.client("firehose").list_tags_for_delivery_stream`
 method.
 
 Boto3 documentation:
-[Firehose.Client.list_tags_for_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream)
+[Firehose.Client.list_tags_for_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream)
 
 Arguments:
 
@@ -197,7 +199,7 @@ Returns
 Type annotations for `boto3.client("firehose").put_record` method.
 
 Boto3 documentation:
-[Firehose.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record)
+[Firehose.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.put_record)
 
 Arguments:
 
@@ -211,12 +213,13 @@ Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 Type annotations for `boto3.client("firehose").put_record_batch` method.
 
 Boto3 documentation:
-[Firehose.Client.put_record_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch)
+[Firehose.Client.put_record_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.put_record_batch)
 
 Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\] *(required)*
+- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+  *(required)*
 
 Returns
 [PutRecordBatchOutputTypeDef](./type_defs.md#putrecordbatchoutputtypedef).
@@ -227,7 +230,7 @@ Type annotations for
 `boto3.client("firehose").start_delivery_stream_encryption` method.
 
 Boto3 documentation:
-[Firehose.Client.start_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption)
+[Firehose.Client.start_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption)
 
 Arguments:
 
@@ -243,7 +246,7 @@ Type annotations for `boto3.client("firehose").stop_delivery_stream_encryption`
 method.
 
 Boto3 documentation:
-[Firehose.Client.stop_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption)
+[Firehose.Client.stop_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption)
 
 Arguments:
 
@@ -256,7 +259,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("firehose").tag_delivery_stream` method.
 
 Boto3 documentation:
-[Firehose.Client.tag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream)
+[Firehose.Client.tag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.tag_delivery_stream)
 
 Arguments:
 
@@ -270,7 +273,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("firehose").untag_delivery_stream` method.
 
 Boto3 documentation:
-[Firehose.Client.untag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream)
+[Firehose.Client.untag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.untag_delivery_stream)
 
 Arguments:
 
@@ -284,7 +287,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("firehose").update_destination` method.
 
 Boto3 documentation:
-[Firehose.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination)
+[Firehose.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose.Client.update_destination)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CustomerProfiles](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
@@ -104,13 +104,15 @@ from mypy_boto3_customer_profiles.type_defs import ConnectorOperatorTypeDef
 
 Optional fields:
 
-- `Marketo`: [MarketoConnectorOperator](./literals.md#marketoconnectoroperator)
-- `S3`: [S3ConnectorOperator](./literals.md#s3connectoroperator)
+- `Marketo`:
+  [MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype)
+- `S3`: [S3ConnectorOperatorType](./literals.md#s3connectoroperatortype)
 - `Salesforce`:
-  [SalesforceConnectorOperator](./literals.md#salesforceconnectoroperator)
+  [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
 - `ServiceNow`:
-  [ServiceNowConnectorOperator](./literals.md#servicenowconnectoroperator)
-- `Zendesk`: [ZendeskConnectorOperator](./literals.md#zendeskconnectoroperator)
+  [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
+- `Zendesk`:
+  [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 
 ## CreateDomainResponseTypeDef
 
@@ -586,7 +588,7 @@ Optional fields:
 
 - `Source`: `str`
 - `Target`: `str`
-- `ContentType`: [FieldContentType](./literals.md#fieldcontenttype)
+- `ContentType`: [FieldContentTypeType](./literals.md#fieldcontenttypetype)
 
 ## ObjectTypeKeyTypeDef
 
@@ -597,7 +599,7 @@ from mypy_boto3_customer_profiles.type_defs import ObjectTypeKeyTypeDef
 Optional fields:
 
 - `StandardIdentifiers`:
-  `List`\[[StandardIdentifier](./literals.md#standardidentifier)\]
+  `List`\[[StandardIdentifierType](./literals.md#standardidentifiertype)\]
 - `FieldNames`: `List`\[`str`\]
 
 ## ProfileTypeDef
@@ -611,13 +613,13 @@ Optional fields:
 - `ProfileId`: `str`
 - `AccountNumber`: `str`
 - `AdditionalInformation`: `str`
-- `PartyType`: [PartyType](./literals.md#partytype)
+- `PartyType`: [PartyTypeType](./literals.md#partytypetype)
 - `BusinessName`: `str`
 - `FirstName`: `str`
 - `MiddleName`: `str`
 - `LastName`: `str`
 - `BirthDate`: `str`
-- `Gender`: [Gender](./literals.md#gender)
+- `Gender`: [GenderType](./literals.md#gendertype)
 - `PhoneNumber`: `str`
 - `MobilePhoneNumber`: `str`
 - `HomePhoneNumber`: `str`
@@ -725,7 +727,7 @@ Required fields:
 
 Optional fields:
 
-- `DataPullMode`: [DataPullMode](./literals.md#datapullmode)
+- `DataPullMode`: [DataPullModeType](./literals.md#datapullmodetype)
 - `ScheduleStartTime`: `datetime`
 - `ScheduleEndTime`: `datetime`
 - `Timezone`: `str`
@@ -779,7 +781,8 @@ from mypy_boto3_customer_profiles.type_defs import SourceFlowConfigTypeDef
 
 Required fields:
 
-- `ConnectorType`: [SourceConnectorType](./literals.md#sourceconnectortype)
+- `ConnectorType`:
+  [SourceConnectorTypeType](./literals.md#sourceconnectortypetype)
 - `SourceConnectorProperties`:
   [SourceConnectorPropertiesTypeDef](./type_defs.md#sourceconnectorpropertiestypedef)
 
@@ -798,7 +801,7 @@ from mypy_boto3_customer_profiles.type_defs import TaskTypeDef
 Required fields:
 
 - `SourceFields`: `List`\[`str`\]
-- `TaskType`: [TaskType](./literals.md#tasktype)
+- `TaskType`: [TaskTypeType](./literals.md#tasktypetype)
 
 Optional fields:
 
@@ -806,7 +809,8 @@ Optional fields:
   [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
 - `DestinationField`: `str`
 - `TaskProperties`:
-  `Dict`\[[OperatorPropertiesKeys](./literals.md#operatorpropertieskeys), `str`\]
+  `Dict`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
+  `str`\]
 
 ## TriggerConfigTypeDef
 
@@ -816,7 +820,7 @@ from mypy_boto3_customer_profiles.type_defs import TriggerConfigTypeDef
 
 Required fields:
 
-- `TriggerType`: [TriggerType](./literals.md#triggertype)
+- `TriggerType`: [TriggerTypeType](./literals.md#triggertypetype)
 
 Optional fields:
 

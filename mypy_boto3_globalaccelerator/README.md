@@ -3,7 +3,7 @@
 > [Index](..) > GlobalAccelerator
 
 Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
 [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
@@ -30,82 +30,82 @@ Can be used directly:
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 ```
 
-GlobalAcceleratorClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_custom_routing_endpoints](./client.md#add-custom-routing-endpoints)
-- [advertise_byoip_cidr](./client.md#advertise-byoip-cidr)
-- [allow_custom_routing_traffic](./client.md#allow-custom-routing-traffic)
-- [can_paginate](./client.md#can-paginate)
-- [create_accelerator](./client.md#create-accelerator)
-- [create_custom_routing_accelerator](./client.md#create-custom-routing-accelerator)
-- [create_custom_routing_endpoint_group](./client.md#create-custom-routing-endpoint-group)
-- [create_custom_routing_listener](./client.md#create-custom-routing-listener)
-- [create_endpoint_group](./client.md#create-endpoint-group)
-- [create_listener](./client.md#create-listener)
-- [delete_accelerator](./client.md#delete-accelerator)
-- [delete_custom_routing_accelerator](./client.md#delete-custom-routing-accelerator)
-- [delete_custom_routing_endpoint_group](./client.md#delete-custom-routing-endpoint-group)
-- [delete_custom_routing_listener](./client.md#delete-custom-routing-listener)
-- [delete_endpoint_group](./client.md#delete-endpoint-group)
-- [delete_listener](./client.md#delete-listener)
-- [deny_custom_routing_traffic](./client.md#deny-custom-routing-traffic)
-- [deprovision_byoip_cidr](./client.md#deprovision-byoip-cidr)
-- [describe_accelerator](./client.md#describe-accelerator)
-- [describe_accelerator_attributes](./client.md#describe-accelerator-attributes)
-- [describe_custom_routing_accelerator](./client.md#describe-custom-routing-accelerator)
-- [describe_custom_routing_accelerator_attributes](./client.md#describe-custom-routing-accelerator-attributes)
-- [describe_custom_routing_endpoint_group](./client.md#describe-custom-routing-endpoint-group)
-- [describe_custom_routing_listener](./client.md#describe-custom-routing-listener)
-- [describe_endpoint_group](./client.md#describe-endpoint-group)
-- [describe_listener](./client.md#describe-listener)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_accelerators](./client.md#list-accelerators)
-- [list_byoip_cidrs](./client.md#list-byoip-cidrs)
-- [list_custom_routing_accelerators](./client.md#list-custom-routing-accelerators)
-- [list_custom_routing_endpoint_groups](./client.md#list-custom-routing-endpoint-groups)
-- [list_custom_routing_listeners](./client.md#list-custom-routing-listeners)
-- [list_custom_routing_port_mappings](./client.md#list-custom-routing-port-mappings)
-- [list_custom_routing_port_mappings_by_destination](./client.md#list-custom-routing-port-mappings-by-destination)
-- [list_endpoint_groups](./client.md#list-endpoint-groups)
-- [list_listeners](./client.md#list-listeners)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [provision_byoip_cidr](./client.md#provision-byoip-cidr)
-- [remove_custom_routing_endpoints](./client.md#remove-custom-routing-endpoints)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_accelerator](./client.md#update-accelerator)
-- [update_accelerator_attributes](./client.md#update-accelerator-attributes)
-- [update_custom_routing_accelerator](./client.md#update-custom-routing-accelerator)
-- [update_custom_routing_accelerator_attributes](./client.md#update-custom-routing-accelerator-attributes)
-- [update_custom_routing_listener](./client.md#update-custom-routing-listener)
-- [update_endpoint_group](./client.md#update-endpoint-group)
-- [update_listener](./client.md#update-listener)
-- [withdraw_byoip_cidr](./client.md#withdraw-byoip-cidr)
+- [add_custom_routing_endpoints](./client.md#add_custom_routing_endpoints)
+- [advertise_byoip_cidr](./client.md#advertise_byoip_cidr)
+- [allow_custom_routing_traffic](./client.md#allow_custom_routing_traffic)
+- [can_paginate](./client.md#can_paginate)
+- [create_accelerator](./client.md#create_accelerator)
+- [create_custom_routing_accelerator](./client.md#create_custom_routing_accelerator)
+- [create_custom_routing_endpoint_group](./client.md#create_custom_routing_endpoint_group)
+- [create_custom_routing_listener](./client.md#create_custom_routing_listener)
+- [create_endpoint_group](./client.md#create_endpoint_group)
+- [create_listener](./client.md#create_listener)
+- [delete_accelerator](./client.md#delete_accelerator)
+- [delete_custom_routing_accelerator](./client.md#delete_custom_routing_accelerator)
+- [delete_custom_routing_endpoint_group](./client.md#delete_custom_routing_endpoint_group)
+- [delete_custom_routing_listener](./client.md#delete_custom_routing_listener)
+- [delete_endpoint_group](./client.md#delete_endpoint_group)
+- [delete_listener](./client.md#delete_listener)
+- [deny_custom_routing_traffic](./client.md#deny_custom_routing_traffic)
+- [deprovision_byoip_cidr](./client.md#deprovision_byoip_cidr)
+- [describe_accelerator](./client.md#describe_accelerator)
+- [describe_accelerator_attributes](./client.md#describe_accelerator_attributes)
+- [describe_custom_routing_accelerator](./client.md#describe_custom_routing_accelerator)
+- [describe_custom_routing_accelerator_attributes](./client.md#describe_custom_routing_accelerator_attributes)
+- [describe_custom_routing_endpoint_group](./client.md#describe_custom_routing_endpoint_group)
+- [describe_custom_routing_listener](./client.md#describe_custom_routing_listener)
+- [describe_endpoint_group](./client.md#describe_endpoint_group)
+- [describe_listener](./client.md#describe_listener)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_accelerators](./client.md#list_accelerators)
+- [list_byoip_cidrs](./client.md#list_byoip_cidrs)
+- [list_custom_routing_accelerators](./client.md#list_custom_routing_accelerators)
+- [list_custom_routing_endpoint_groups](./client.md#list_custom_routing_endpoint_groups)
+- [list_custom_routing_listeners](./client.md#list_custom_routing_listeners)
+- [list_custom_routing_port_mappings](./client.md#list_custom_routing_port_mappings)
+- [list_custom_routing_port_mappings_by_destination](./client.md#list_custom_routing_port_mappings_by_destination)
+- [list_endpoint_groups](./client.md#list_endpoint_groups)
+- [list_listeners](./client.md#list_listeners)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [provision_byoip_cidr](./client.md#provision_byoip_cidr)
+- [remove_custom_routing_endpoints](./client.md#remove_custom_routing_endpoints)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_accelerator](./client.md#update_accelerator)
+- [update_accelerator_attributes](./client.md#update_accelerator_attributes)
+- [update_custom_routing_accelerator](./client.md#update_custom_routing_accelerator)
+- [update_custom_routing_accelerator_attributes](./client.md#update_custom_routing_accelerator_attributes)
+- [update_custom_routing_listener](./client.md#update_custom_routing_listener)
+- [update_endpoint_group](./client.md#update_endpoint_group)
+- [update_listener](./client.md#update_listener)
+- [withdraw_byoip_cidr](./client.md#withdraw_byoip_cidr)
 
 ### Exceptions
 
-- [AcceleratorNotDisabledException](./client.md#acceleratornotdisabledexception)
-- [AcceleratorNotFoundException](./client.md#acceleratornotfoundexception)
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AssociatedEndpointGroupFoundException](./client.md#associatedendpointgroupfoundexception)
-- [AssociatedListenerFoundException](./client.md#associatedlistenerfoundexception)
-- [ByoipCidrNotFoundException](./client.md#byoipcidrnotfoundexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [EndpointAlreadyExistsException](./client.md#endpointalreadyexistsexception)
-- [EndpointGroupAlreadyExistsException](./client.md#endpointgroupalreadyexistsexception)
-- [EndpointGroupNotFoundException](./client.md#endpointgroupnotfoundexception)
-- [EndpointNotFoundException](./client.md#endpointnotfoundexception)
-- [IncorrectCidrStateException](./client.md#incorrectcidrstateexception)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidPortRangeException](./client.md#invalidportrangeexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ListenerNotFoundException](./client.md#listenernotfoundexception)
+GlobalAcceleratorClient [exceptions](./client.md#exceptions)
+
+- AcceleratorNotDisabledException
+- AcceleratorNotFoundException
+- AccessDeniedException
+- AssociatedEndpointGroupFoundException
+- AssociatedListenerFoundException
+- ByoipCidrNotFoundException
+- ClientError
+- ConflictException
+- EndpointAlreadyExistsException
+- EndpointGroupAlreadyExistsException
+- EndpointGroupNotFoundException
+- EndpointNotFoundException
+- IncorrectCidrStateException
+- InternalServiceErrorException
+- InvalidArgumentException
+- InvalidNextTokenException
+- InvalidPortRangeException
+- LimitExceededException
+- ListenerNotFoundException
 
 ## Paginators
 
@@ -134,18 +134,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_globalaccelerator.literals import AcceleratorStatus, ...
+from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType, ...
 ```
 
-- [AcceleratorStatus](./literals.md#acceleratorstatus)
-- [ByoipCidrState](./literals.md#byoipcidrstate)
-- [ClientAffinity](./literals.md#clientaffinity)
-- [CustomRoutingAcceleratorStatus](./literals.md#customroutingacceleratorstatus)
-- [CustomRoutingDestinationTrafficState](./literals.md#customroutingdestinationtrafficstate)
-- [CustomRoutingProtocol](./literals.md#customroutingprotocol)
-- [HealthCheckProtocol](./literals.md#healthcheckprotocol)
-- [HealthState](./literals.md#healthstate)
-- [IpAddressType](./literals.md#ipaddresstype)
+- [AcceleratorStatusType](./literals.md#acceleratorstatustype)
+- [ByoipCidrStateType](./literals.md#byoipcidrstatetype)
+- [ClientAffinityType](./literals.md#clientaffinitytype)
+- [CustomRoutingAcceleratorStatusType](./literals.md#customroutingacceleratorstatustype)
+- [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
+- [CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)
+- [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
+- [HealthStateType](./literals.md#healthstatetype)
+- [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - [ListAcceleratorsPaginatorName](./literals.md#listacceleratorspaginatorname)
 - [ListByoipCidrsPaginatorName](./literals.md#listbyoipcidrspaginatorname)
 - [ListCustomRoutingAcceleratorsPaginatorName](./literals.md#listcustomroutingacceleratorspaginatorname)

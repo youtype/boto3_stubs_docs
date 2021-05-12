@@ -3,7 +3,7 @@
 > [Index](..) > [SFN](.) > Paginators
 
 Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
 [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
@@ -28,7 +28,7 @@ def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
 ```
 
 Boto3 documentation:
-[SFN.Paginator.GetExecutionHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
+[SFN.Paginator.GetExecutionHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
 
 Arguments for `GetExecutionHistoryPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_activities_paginator() -> ListActivitiesPaginator:
 ```
 
 Boto3 documentation:
-[SFN.Paginator.ListActivities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
+[SFN.Paginator.ListActivities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
 
 Arguments for `ListActivitiesPaginator.paginate` method:
 
@@ -81,12 +81,12 @@ def get_list_executions_paginator() -> ListExecutionsPaginator:
 ```
 
 Boto3 documentation:
-[SFN.Paginator.ListExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
+[SFN.Paginator.ListExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
 
 Arguments for `ListExecutionsPaginator.paginate` method:
 
 - `stateMachineArn`: `str` *(required)*
-- `statusFilter`: [ExecutionStatus](./literals.md#executionstatus)
+- `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -108,7 +108,7 @@ def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
 ```
 
 Boto3 documentation:
-[SFN.Paginator.ListStateMachines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
+[SFN.Paginator.ListStateMachines](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
 
 Arguments for `ListStateMachinesPaginator.paginate` method:
 

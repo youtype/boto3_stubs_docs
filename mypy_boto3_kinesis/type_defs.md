@@ -3,7 +3,7 @@
 > [Index](..) > [Kinesis](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
@@ -76,7 +76,7 @@ Required fields:
 
 - `ConsumerName`: `str`
 - `ConsumerARN`: `str`
-- `ConsumerStatus`: [ConsumerStatus](./literals.md#consumerstatus)
+- `ConsumerStatus`: [ConsumerStatusType](./literals.md#consumerstatustype)
 - `ConsumerCreationTimestamp`: `datetime`
 - `StreamARN`: `str`
 
@@ -90,7 +90,7 @@ Required fields:
 
 - `ConsumerName`: `str`
 - `ConsumerARN`: `str`
-- `ConsumerStatus`: [ConsumerStatus](./literals.md#consumerstatus)
+- `ConsumerStatus`: [ConsumerStatusType](./literals.md#consumerstatustype)
 - `ConsumerCreationTimestamp`: `datetime`
 
 ## DescribeLimitsOutputTypeDef
@@ -153,7 +153,8 @@ from mypy_boto3_kinesis.type_defs import EnhancedMetricsTypeDef
 
 Optional fields:
 
-- `ShardLevelMetrics`: `List`\[[MetricsName](./literals.md#metricsname)\]
+- `ShardLevelMetrics`:
+  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
 
 ## EnhancedMonitoringOutputTypeDef
 
@@ -164,8 +165,10 @@ from mypy_boto3_kinesis.type_defs import EnhancedMonitoringOutputTypeDef
 Required fields:
 
 - `StreamName`: `str`
-- `CurrentShardLevelMetrics`: `List`\[[MetricsName](./literals.md#metricsname)\]
-- `DesiredShardLevelMetrics`: `List`\[[MetricsName](./literals.md#metricsname)\]
+- `CurrentShardLevelMetrics`:
+  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
+- `DesiredShardLevelMetrics`:
+  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -180,7 +183,8 @@ Required fields:
 - `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 - `NextShardIterator`: `str`
 - `MillisBehindLatest`: `int`
-- `ChildShards`: `List`\[[ChildShardTypeDef](./type_defs.md#childshardtypedef)\]
+- `ChildShards`:
+  `List`\[[ChildShardTypeDef](./type_defs.md#childshardtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -351,7 +355,7 @@ Required fields:
 
 - `ShardId`: `str`
 - `SequenceNumber`: `str`
-- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -366,7 +370,7 @@ Required fields:
 - `FailedRecordCount`: `int`
 - `Records`:
   `List`\[[PutRecordsResultEntryTypeDef](./type_defs.md#putrecordsresultentrytypedef)\]
-- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -413,7 +417,7 @@ Required fields:
 Optional fields:
 
 - `ApproximateArrivalTimestamp`: `datetime`
-- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 
 ## RegisterStreamConsumerOutputTypeDef
 
@@ -483,7 +487,7 @@ from mypy_boto3_kinesis.type_defs import ShardFilterTypeDef
 
 Required fields:
 
-- `Type`: [ShardFilterType](./literals.md#shardfiltertype)
+- `Type`: [ShardFilterTypeType](./literals.md#shardfiltertypetype)
 
 Optional fields:
 
@@ -516,7 +520,7 @@ from mypy_boto3_kinesis.type_defs import StartingPositionTypeDef
 
 Required fields:
 
-- `Type`: [ShardIteratorType](./literals.md#sharditeratortype)
+- `Type`: [ShardIteratorTypeType](./literals.md#sharditeratortypetype)
 
 Optional fields:
 
@@ -533,7 +537,7 @@ Required fields:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
-- `StreamStatus`: [StreamStatus](./literals.md#streamstatus)
+- `StreamStatus`: [StreamStatusType](./literals.md#streamstatustype)
 - `RetentionPeriodHours`: `int`
 - `StreamCreationTimestamp`: `datetime`
 - `EnhancedMonitoring`:
@@ -542,7 +546,7 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `KeyId`: `str`
 - `ConsumerCount`: `int`
 
@@ -556,7 +560,7 @@ Required fields:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
-- `StreamStatus`: [StreamStatus](./literals.md#streamstatus)
+- `StreamStatus`: [StreamStatusType](./literals.md#streamstatustype)
 - `Shards`: `List`\[[ShardTypeDef](./type_defs.md#shardtypedef)\]
 - `HasMoreShards`: `bool`
 - `RetentionPeriodHours`: `int`
@@ -566,7 +570,7 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `KeyId`: `str`
 
 ## SubscribeToShardEventStreamTypeDef
@@ -615,7 +619,8 @@ Required fields:
 
 Optional fields:
 
-- `ChildShards`: `List`\[[ChildShardTypeDef](./type_defs.md#childshardtypedef)\]
+- `ChildShards`:
+  `List`\[[ChildShardTypeDef](./type_defs.md#childshardtypedef)\]
 
 ## SubscribeToShardOutputTypeDef
 

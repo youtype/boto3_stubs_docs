@@ -3,44 +3,44 @@
 > [Index](..) > [CloudHSMV2](.) > Literals
 
 Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
 [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [Literals for boto3 CloudHSMV2 module](#literals-for-boto3-cloudhsmv2-module)
-  - [BackupPolicy](#backuppolicy)
-  - [BackupRetentionType](#backupretentiontype)
-  - [BackupState](#backupstate)
-  - [ClusterState](#clusterstate)
+  - [BackupPolicyType](#backuppolicytype)
+  - [BackupRetentionTypeType](#backupretentiontypetype)
+  - [BackupStateType](#backupstatetype)
+  - [ClusterStateType](#clusterstatetype)
   - [DescribeBackupsPaginatorName](#describebackupspaginatorname)
   - [DescribeClustersPaginatorName](#describeclusterspaginatorname)
-  - [HsmState](#hsmstate)
+  - [HsmStateType](#hsmstatetype)
   - [ListTagsPaginatorName](#listtagspaginatorname)
 
-## BackupPolicy
+## BackupPolicyType
 
 ```python
-from mypy_boto3_cloudhsmv2.literals import BackupPolicy
+from mypy_boto3_cloudhsmv2.literals import BackupPolicyType
 ```
 
 Values:
 
 - `DEFAULT`
 
-## BackupRetentionType
+## BackupRetentionTypeType
 
 ```python
-from mypy_boto3_cloudhsmv2.literals import BackupRetentionType
+from mypy_boto3_cloudhsmv2.literals import BackupRetentionTypeType
 ```
 
 Values:
 
 - `DAYS`
 
-## BackupState
+## BackupStateType
 
 ```python
-from mypy_boto3_cloudhsmv2.literals import BackupState
+from mypy_boto3_cloudhsmv2.literals import BackupStateType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `PENDING_DELETION`
 - `READY`
 
-## ClusterState
+## ClusterStateType
 
 ```python
-from mypy_boto3_cloudhsmv2.literals import ClusterState
+from mypy_boto3_cloudhsmv2.literals import ClusterStateType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 
 - `describe_clusters`
 
-## HsmState
+## HsmStateType
 
 ```python
-from mypy_boto3_cloudhsmv2.literals import HsmState
+from mypy_boto3_cloudhsmv2.literals import HsmStateType
 ```
 
 Values:

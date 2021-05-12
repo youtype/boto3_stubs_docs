@@ -3,7 +3,7 @@
 > [Index](..) > [GuardDuty](.) > GuardDutyClient
 
 Auto-generated documentation for
-[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
 [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
@@ -87,7 +87,7 @@ def get_guardduty_client() -> GuardDutyClient:
 ```
 
 Boto3 documentation:
-[GuardDuty.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
+[GuardDuty.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client)
 
 ## Exceptions
 
@@ -114,7 +114,7 @@ Exceptions:
 Type annotations for `boto3.client("guardduty").accept_invitation` method.
 
 Boto3 documentation:
-[GuardDuty.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
+[GuardDuty.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").archive_findings` method.
 
 Boto3 documentation:
-[GuardDuty.Client.archive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
+[GuardDuty.Client.archive_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").can_paginate` method.
 
 Boto3 documentation:
-[GuardDuty.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate)
+[GuardDuty.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.can_paginate)
 
 Arguments:
 
@@ -156,14 +156,14 @@ Returns `bool`.
 Type annotations for `boto3.client("guardduty").create_detector` method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
+[GuardDuty.Client.create_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_detector)
 
 Arguments:
 
 - `Enable`: `bool` *(required)*
 - `ClientToken`: `str`
 - `FindingPublishingFrequency`:
-  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
+  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -176,7 +176,7 @@ Returns
 Type annotations for `boto3.client("guardduty").create_filter` method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
+[GuardDuty.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_filter)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Arguments:
 - `FindingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) *(required)*
 - `Description`: `str`
-- `Action`: [FilterAction](./literals.md#filteraction)
+- `Action`: [FilterActionType](./literals.md#filteractiontype)
 - `Rank`: `int`
 - `ClientToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -198,13 +198,13 @@ Returns
 Type annotations for `boto3.client("guardduty").create_ip_set` method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
+[GuardDuty.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Format`: [IpSetFormat](./literals.md#ipsetformat) *(required)*
+- `Format`: [IpSetFormatType](./literals.md#ipsetformattype) *(required)*
 - `Location`: `str` *(required)*
 - `Activate`: `bool` *(required)*
 - `ClientToken`: `str`
@@ -218,7 +218,7 @@ Returns
 Type annotations for `boto3.client("guardduty").create_members` method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
+[GuardDuty.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_members)
 
 Arguments:
 
@@ -236,13 +236,13 @@ Type annotations for `boto3.client("guardduty").create_publishing_destination`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
+[GuardDuty.Client.create_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `DestinationType`: `Literal['S3']` (see
-  [DestinationType](./literals.md#destinationtype)) *(required)*
+  [DestinationTypeType](./literals.md#destinationtypetype)) *(required)*
 - `DestinationProperties`:
   [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
   *(required)*
@@ -256,7 +256,7 @@ Returns
 Type annotations for `boto3.client("guardduty").create_sample_findings` method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
+[GuardDuty.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
 
 Arguments:
 
@@ -271,13 +271,13 @@ Type annotations for `boto3.client("guardduty").create_threat_intel_set`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.create_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
+[GuardDuty.Client.create_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Format`: [ThreatIntelSetFormat](./literals.md#threatintelsetformat)
+- `Format`: [ThreatIntelSetFormatType](./literals.md#threatintelsetformattype)
   *(required)*
 - `Location`: `str` *(required)*
 - `Activate`: `bool` *(required)*
@@ -292,7 +292,7 @@ Returns
 Type annotations for `boto3.client("guardduty").decline_invitations` method.
 
 Boto3 documentation:
-[GuardDuty.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
+[GuardDuty.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
 
 Arguments:
 
@@ -306,7 +306,7 @@ Returns
 Type annotations for `boto3.client("guardduty").delete_detector` method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
+[GuardDuty.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").delete_filter` method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
+[GuardDuty.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").delete_invitations` method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
+[GuardDuty.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Returns
 Type annotations for `boto3.client("guardduty").delete_ip_set` method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
+[GuardDuty.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").delete_members` method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members)
+[GuardDuty.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_members)
 
 Arguments:
 
@@ -377,7 +377,7 @@ Type annotations for `boto3.client("guardduty").delete_publishing_destination`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
+[GuardDuty.Client.delete_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("guardduty").delete_threat_intel_set`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.delete_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
+[GuardDuty.Client.delete_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
 
 Arguments:
 
@@ -407,7 +407,7 @@ Type annotations for
 `boto3.client("guardduty").describe_organization_configuration` method.
 
 Boto3 documentation:
-[GuardDuty.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
+[GuardDuty.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Type annotations for
 `boto3.client("guardduty").describe_publishing_destination` method.
 
 Boto3 documentation:
-[GuardDuty.Client.describe_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
+[GuardDuty.Client.describe_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Type annotations for
 `boto3.client("guardduty").disable_organization_admin_account` method.
 
 Boto3 documentation:
-[GuardDuty.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
+[GuardDuty.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
 
 Arguments:
 
@@ -452,7 +452,7 @@ Type annotations for
 `boto3.client("guardduty").disassociate_from_master_account` method.
 
 Boto3 documentation:
-[GuardDuty.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
+[GuardDuty.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").disassociate_members` method.
 
 Boto3 documentation:
-[GuardDuty.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
+[GuardDuty.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Type annotations for
 `boto3.client("guardduty").enable_organization_admin_account` method.
 
 Boto3 documentation:
-[GuardDuty.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
+[GuardDuty.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").generate_presigned_url` method.
 
 Boto3 documentation:
-[GuardDuty.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url)
+[GuardDuty.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns `str`.
 Type annotations for `boto3.client("guardduty").get_detector` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector)
+[GuardDuty.Client.get_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_detector)
 
 Arguments:
 
@@ -524,7 +524,7 @@ Returns
 Type annotations for `boto3.client("guardduty").get_filter` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter)
+[GuardDuty.Client.get_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_filter)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Returns [GetFilterResponseTypeDef](./type_defs.md#getfilterresponsetypedef).
 Type annotations for `boto3.client("guardduty").get_findings` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
+[GuardDuty.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_findings)
 
 Arguments:
 
@@ -555,13 +555,14 @@ Type annotations for `boto3.client("guardduty").get_findings_statistics`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_findings_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
+[GuardDuty.Client.get_findings_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']` (see
-  [FindingStatisticType](./literals.md#findingstatistictype))\] *(required)*
+  [FindingStatisticTypeType](./literals.md#findingstatistictypetype))\]
+  *(required)*
 - `FindingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
@@ -573,7 +574,7 @@ Returns
 Type annotations for `boto3.client("guardduty").get_invitations_count` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
+[GuardDuty.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
 
 Returns
 [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
@@ -583,7 +584,7 @@ Returns
 Type annotations for `boto3.client("guardduty").get_ip_set` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
+[GuardDuty.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
 
 Arguments:
 
@@ -597,7 +598,7 @@ Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 Type annotations for `boto3.client("guardduty").get_master_account` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
+[GuardDuty.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
 
 Arguments:
 
@@ -611,7 +612,7 @@ Returns
 Type annotations for `boto3.client("guardduty").get_member_detectors` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
+[GuardDuty.Client.get_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
 
 Arguments:
 
@@ -626,7 +627,7 @@ Returns
 Type annotations for `boto3.client("guardduty").get_members` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members)
+[GuardDuty.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_members)
 
 Arguments:
 
@@ -640,7 +641,7 @@ Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 Type annotations for `boto3.client("guardduty").get_threat_intel_set` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
+[GuardDuty.Client.get_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
 
 Arguments:
 
@@ -655,13 +656,13 @@ Returns
 Type annotations for `boto3.client("guardduty").get_usage_statistics` method.
 
 Boto3 documentation:
-[GuardDuty.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
+[GuardDuty.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
-- `UsageStatisticType`: [UsageStatisticType](./literals.md#usagestatistictype)
-  *(required)*
+- `UsageStatisticType`:
+  [UsageStatisticTypeType](./literals.md#usagestatistictypetype) *(required)*
 - `UsageCriteria`: [UsageCriteriaTypeDef](./type_defs.md#usagecriteriatypedef)
   *(required)*
 - `Unit`: `str`
@@ -676,7 +677,7 @@ Returns
 Type annotations for `boto3.client("guardduty").invite_members` method.
 
 Boto3 documentation:
-[GuardDuty.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
+[GuardDuty.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.invite_members)
 
 Arguments:
 
@@ -693,7 +694,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_detectors` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
+[GuardDuty.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
 
 Arguments:
 
@@ -708,7 +709,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_filters` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
+[GuardDuty.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_filters)
 
 Arguments:
 
@@ -724,7 +725,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_findings` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
+[GuardDuty.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_findings)
 
 Arguments:
 
@@ -743,7 +744,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_invitations` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
+[GuardDuty.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
 
 Arguments:
 
@@ -758,7 +759,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_ip_sets` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
+[GuardDuty.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
 
 Arguments:
 
@@ -773,7 +774,7 @@ Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
 Type annotations for `boto3.client("guardduty").list_members` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
+[GuardDuty.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_members)
 
 Arguments:
 
@@ -791,7 +792,7 @@ Type annotations for
 `boto3.client("guardduty").list_organization_admin_accounts` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
+[GuardDuty.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
 
 Arguments:
 
@@ -807,7 +808,7 @@ Type annotations for `boto3.client("guardduty").list_publishing_destinations`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_publishing_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
+[GuardDuty.Client.list_publishing_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
 
 Arguments:
 
@@ -823,7 +824,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_tags_for_resource` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
+[GuardDuty.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -837,7 +838,7 @@ Returns
 Type annotations for `boto3.client("guardduty").list_threat_intel_sets` method.
 
 Boto3 documentation:
-[GuardDuty.Client.list_threat_intel_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
+[GuardDuty.Client.list_threat_intel_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
 
 Arguments:
 
@@ -854,7 +855,7 @@ Type annotations for `boto3.client("guardduty").start_monitoring_members`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.start_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
+[GuardDuty.Client.start_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
 
 Arguments:
 
@@ -870,7 +871,7 @@ Type annotations for `boto3.client("guardduty").stop_monitoring_members`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.stop_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
+[GuardDuty.Client.stop_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
 
 Arguments:
 
@@ -885,7 +886,7 @@ Returns
 Type annotations for `boto3.client("guardduty").tag_resource` method.
 
 Boto3 documentation:
-[GuardDuty.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
+[GuardDuty.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
 
 Arguments:
 
@@ -899,7 +900,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").unarchive_findings` method.
 
 Boto3 documentation:
-[GuardDuty.Client.unarchive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
+[GuardDuty.Client.unarchive_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
 
 Arguments:
 
@@ -913,7 +914,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").untag_resource` method.
 
 Boto3 documentation:
-[GuardDuty.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
+[GuardDuty.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
 
 Arguments:
 
@@ -927,14 +928,14 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").update_detector` method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
+[GuardDuty.Client.update_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_detector)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Enable`: `bool`
 - `FindingPublishingFrequency`:
-  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
+  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 
@@ -945,14 +946,14 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").update_filter` method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
+[GuardDuty.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_filter)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FilterName`: `str` *(required)*
 - `Description`: `str`
-- `Action`: [FilterAction](./literals.md#filteraction)
+- `Action`: [FilterActionType](./literals.md#filteractiontype)
 - `Rank`: `int`
 - `FindingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
@@ -966,13 +967,13 @@ Type annotations for `boto3.client("guardduty").update_findings_feedback`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_findings_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
+[GuardDuty.Client.update_findings_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
 
 Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingIds`: `List`\[`str`\] *(required)*
-- `Feedback`: [Feedback](./literals.md#feedback) *(required)*
+- `Feedback`: [FeedbackType](./literals.md#feedbacktype) *(required)*
 - `Comments`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -982,7 +983,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("guardduty").update_ip_set` method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
+[GuardDuty.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
 
 Arguments:
 
@@ -1000,7 +1001,7 @@ Type annotations for `boto3.client("guardduty").update_member_detectors`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
+[GuardDuty.Client.update_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
 
 Arguments:
 
@@ -1018,7 +1019,7 @@ Type annotations for
 `boto3.client("guardduty").update_organization_configuration` method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
+[GuardDuty.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
 
 Arguments:
 
@@ -1035,7 +1036,7 @@ Type annotations for `boto3.client("guardduty").update_publishing_destination`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
+[GuardDuty.Client.update_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
 
 Arguments:
 
@@ -1052,7 +1053,7 @@ Type annotations for `boto3.client("guardduty").update_threat_intel_set`
 method.
 
 Boto3 documentation:
-[GuardDuty.Client.update_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
+[GuardDuty.Client.update_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
 
 Arguments:
 

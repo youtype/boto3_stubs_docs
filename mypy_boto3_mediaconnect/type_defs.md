@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConnect](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
@@ -137,7 +137,7 @@ from mypy_boto3_mediaconnect.type_defs import DeleteFlowResponseTypeDef
 Optional fields:
 
 - `FlowArn`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## DescribeFlowResponseTypeDef
 
@@ -182,10 +182,10 @@ Required fields:
 
 Optional fields:
 
-- `Algorithm`: [Algorithm](./literals.md#algorithm)
+- `Algorithm`: [AlgorithmType](./literals.md#algorithmtype)
 - `ConstantInitializationVector`: `str`
 - `DeviceId`: `str`
-- `KeyType`: [KeyType](./literals.md#keytype)
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `Region`: `str`
 - `ResourceId`: `str`
 - `SecretArn`: `str`
@@ -208,7 +208,8 @@ Optional fields:
 - `DataTransferSubscriberFeePercent`: `int`
 - `Description`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `EntitlementStatus`: [EntitlementStatus](./literals.md#entitlementstatus)
+- `EntitlementStatus`:
+  [EntitlementStatusType](./literals.md#entitlementstatustype)
 
 ## FailoverConfigTypeDef
 
@@ -219,7 +220,7 @@ from mypy_boto3_mediaconnect.type_defs import FailoverConfigTypeDef
 Optional fields:
 
 - `RecoveryWindow`: `int`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 
 ## FlowTypeDef
 
@@ -236,7 +237,7 @@ Required fields:
 - `Name`: `str`
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `Source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 Optional fields:
 
@@ -263,7 +264,8 @@ Optional fields:
 - `DataTransferSubscriberFeePercent`: `int`
 - `Description`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `EntitlementStatus`: [EntitlementStatus](./literals.md#entitlementstatus)
+- `EntitlementStatus`:
+  [EntitlementStatusType](./literals.md#entitlementstatustype)
 - `Name`: `str`
 
 ## GrantFlowEntitlementsResponseTypeDef
@@ -361,8 +363,8 @@ Required fields:
 - `Description`: `str`
 - `FlowArn`: `str`
 - `Name`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
-- `Status`: [Status](./literals.md#status)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## MessagesTypeDef
 
@@ -385,11 +387,12 @@ Required fields:
 - `CurrencyCode`: `str`
 - `Duration`: `int`
 - `DurationUnits`: `Literal['MONTHS']` (see
-  [DurationUnits](./literals.md#durationunits))
+  [DurationUnitsType](./literals.md#durationunitstype))
 - `OfferingArn`: `str`
 - `OfferingDescription`: `str`
 - `PricePerUnit`: `str`
-- `PriceUnits`: `Literal['HOURLY']` (see [PriceUnits](./literals.md#priceunits))
+- `PriceUnits`: `Literal['HOURLY']` (see
+  [PriceUnitsType](./literals.md#priceunitstype))
 - `ResourceSpecification`:
   [ResourceSpecificationTypeDef](./type_defs.md#resourcespecificationtypedef)
 
@@ -484,15 +487,17 @@ Required fields:
 - `CurrencyCode`: `str`
 - `Duration`: `int`
 - `DurationUnits`: `Literal['MONTHS']` (see
-  [DurationUnits](./literals.md#durationunits))
+  [DurationUnitsType](./literals.md#durationunitstype))
 - `End`: `str`
 - `OfferingArn`: `str`
 - `OfferingDescription`: `str`
 - `PricePerUnit`: `str`
-- `PriceUnits`: `Literal['HOURLY']` (see [PriceUnits](./literals.md#priceunits))
+- `PriceUnits`: `Literal['HOURLY']` (see
+  [PriceUnitsType](./literals.md#priceunitstype))
 - `ReservationArn`: `str`
 - `ReservationName`: `str`
-- `ReservationState`: [ReservationState](./literals.md#reservationstate)
+- `ReservationState`:
+  [ReservationStateType](./literals.md#reservationstatetype)
 - `ResourceSpecification`:
   [ResourceSpecificationTypeDef](./type_defs.md#resourcespecificationtypedef)
 - `Start`: `str`
@@ -506,7 +511,7 @@ from mypy_boto3_mediaconnect.type_defs import ResourceSpecificationTypeDef
 Required fields:
 
 - `ResourceType`: `Literal['Mbps_Outbound_Bandwidth']` (see
-  [ResourceType](./literals.md#resourcetype))
+  [ResourceTypeType](./literals.md#resourcetypetype))
 
 Optional fields:
 
@@ -590,7 +595,7 @@ from mypy_boto3_mediaconnect.type_defs import StartFlowResponseTypeDef
 Optional fields:
 
 - `FlowArn`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## StopFlowResponseTypeDef
 
@@ -601,7 +606,7 @@ from mypy_boto3_mediaconnect.type_defs import StopFlowResponseTypeDef
 Optional fields:
 
 - `FlowArn`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## TransportTypeDef
 
@@ -631,10 +636,10 @@ from mypy_boto3_mediaconnect.type_defs import UpdateEncryptionTypeDef
 
 Optional fields:
 
-- `Algorithm`: [Algorithm](./literals.md#algorithm)
+- `Algorithm`: [AlgorithmType](./literals.md#algorithmtype)
 - `ConstantInitializationVector`: `str`
 - `DeviceId`: `str`
-- `KeyType`: [KeyType](./literals.md#keytype)
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `Region`: `str`
 - `ResourceId`: `str`
 - `RoleArn`: `str`
@@ -650,7 +655,7 @@ from mypy_boto3_mediaconnect.type_defs import UpdateFailoverConfigTypeDef
 Optional fields:
 
 - `RecoveryWindow`: `int`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 
 ## UpdateFlowEntitlementResponseTypeDef
 

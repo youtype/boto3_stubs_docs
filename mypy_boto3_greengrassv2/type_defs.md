@@ -3,7 +3,7 @@
 > [Index](..) > [GreengrassV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
@@ -76,7 +76,8 @@ from mypy_boto3_greengrassv2.type_defs import CloudComponentStatusTypeDef
 
 Optional fields:
 
-- `componentState`: [CloudComponentState](./literals.md#cloudcomponentstate)
+- `componentState`:
+  [CloudComponentStateType](./literals.md#cloudcomponentstatetype)
 - `message`: `str`
 - `errors`: `Dict`\[`str`, `str`\]
 
@@ -113,7 +114,7 @@ Optional fields:
 
 - `versionRequirement`: `str`
 - `dependencyType`:
-  [ComponentDependencyType](./literals.md#componentdependencytype)
+  [ComponentDependencyTypeType](./literals.md#componentdependencytypetype)
 
 ## ComponentDeploymentSpecificationTypeDef
 
@@ -199,7 +200,7 @@ from mypy_boto3_greengrassv2.type_defs import CoreDeviceTypeDef
 Optional fields:
 
 - `coreDeviceThingName`: `str`
-- `status`: [CoreDeviceStatus](./literals.md#coredevicestatus)
+- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `lastStatusUpdateTimestamp`: `datetime`
 
 ## CreateComponentVersionResponseTypeDef
@@ -242,7 +243,7 @@ Optional fields:
 
 - `timeoutInSeconds`: `int`
 - `action`:
-  [DeploymentComponentUpdatePolicyAction](./literals.md#deploymentcomponentupdatepolicyaction)
+  [DeploymentComponentUpdatePolicyActionType](./literals.md#deploymentcomponentupdatepolicyactiontype)
 
 ## DeploymentConfigurationValidationPolicyTypeDef
 
@@ -278,7 +279,7 @@ from mypy_boto3_greengrassv2.type_defs import DeploymentPoliciesTypeDef
 Optional fields:
 
 - `failureHandlingPolicy`:
-  [DeploymentFailureHandlingPolicy](./literals.md#deploymentfailurehandlingpolicy)
+  [DeploymentFailureHandlingPolicyType](./literals.md#deploymentfailurehandlingpolicytype)
 - `componentUpdatePolicy`:
   [DeploymentComponentUpdatePolicyTypeDef](./type_defs.md#deploymentcomponentupdatepolicytypedef)
 - `configurationValidationPolicy`:
@@ -297,7 +298,8 @@ Optional fields:
 - `deploymentId`: `str`
 - `deploymentName`: `str`
 - `creationTimestamp`: `datetime`
-- `deploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `deploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `isLatestForTarget`: `bool`
 
 ## DescribeComponentResponseTypeDef
@@ -332,7 +334,7 @@ Required fields:
 - `deploymentName`: `str`
 - `targetArn`: `str`
 - `coreDeviceExecutionStatus`:
-  [EffectiveDeploymentExecutionStatus](./literals.md#effectivedeploymentexecutionstatus)
+  [EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype)
 - `creationTimestamp`: `datetime`
 - `modifiedTimestamp`: `datetime`
 
@@ -351,7 +353,8 @@ from mypy_boto3_greengrassv2.type_defs import GetComponentResponseTypeDef
 
 Required fields:
 
-- `recipeOutputFormat`: [RecipeOutputFormat](./literals.md#recipeoutputformat)
+- `recipeOutputFormat`:
+  [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
 - `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Optional fields:
@@ -380,7 +383,7 @@ Optional fields:
 - `coreVersion`: `str`
 - `platform`: `str`
 - `architecture`: `str`
-- `status`: [CoreDeviceStatus](./literals.md#coredevicestatus)
+- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `lastStatusUpdateTimestamp`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -396,7 +399,8 @@ Optional fields:
 - `revisionId`: `str`
 - `deploymentId`: `str`
 - `deploymentName`: `str`
-- `deploymentStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `deploymentStatus`:
+  [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `iotJobId`: `str`
 - `iotJobArn`: `str`
 - `components`: `Dict`\[`str`,
@@ -420,7 +424,7 @@ Optional fields:
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `lifecycleState`:
-  [InstalledComponentLifecycleState](./literals.md#installedcomponentlifecyclestate)
+  [InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype)
 - `lifecycleStateDetails`: `str`
 - `isRoot`: `bool`
 
@@ -444,9 +448,9 @@ from mypy_boto3_greengrassv2.type_defs import IoTJobAbortCriteriaTypeDef
 Required fields:
 
 - `failureType`:
-  [IoTJobExecutionFailureType](./literals.md#iotjobexecutionfailuretype)
+  [IoTJobExecutionFailureTypeType](./literals.md#iotjobexecutionfailuretypetype)
 - `action`: `Literal['CANCEL']` (see
-  [IoTJobAbortAction](./literals.md#iotjobabortaction))
+  [IoTJobAbortActionType](./literals.md#iotjobabortactiontype))
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
@@ -524,7 +528,7 @@ Required fields:
 Optional fields:
 
 - `permission`:
-  [LambdaFilesystemPermission](./literals.md#lambdafilesystempermission)
+  [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - `addGroupOwner`: `bool`
 
 ## LambdaEventSourceTypeDef
@@ -536,7 +540,7 @@ from mypy_boto3_greengrassv2.type_defs import LambdaEventSourceTypeDef
 Required fields:
 
 - `topic`: `str`
-- `type`: [LambdaEventSourceType](./literals.md#lambdaeventsourcetype)
+- `type`: [LambdaEventSourceTypeType](./literals.md#lambdaeventsourcetypetype)
 
 ## LambdaExecutionParametersTypeDef
 
@@ -555,7 +559,7 @@ Optional fields:
 - `statusTimeoutInSeconds`: `int`
 - `pinned`: `bool`
 - `inputPayloadEncodingType`:
-  [LambdaInputPayloadEncodingType](./literals.md#lambdainputpayloadencodingtype)
+  [LambdaInputPayloadEncodingTypeType](./literals.md#lambdainputpayloadencodingtypetype)
 - `execArgs`: `List`\[`str`\]
 - `environmentVariables`: `Dict`\[`str`, `str`\]
 - `linuxProcessParams`:
@@ -590,7 +594,8 @@ from mypy_boto3_greengrassv2.type_defs import LambdaLinuxProcessParamsTypeDef
 
 Optional fields:
 
-- `isolationMode`: [LambdaIsolationMode](./literals.md#lambdaisolationmode)
+- `isolationMode`:
+  [LambdaIsolationModeType](./literals.md#lambdaisolationmodetype)
 - `containerParams`:
   [LambdaContainerParamsTypeDef](./type_defs.md#lambdacontainerparamstypedef)
 
@@ -608,7 +613,7 @@ Required fields:
 Optional fields:
 
 - `permission`:
-  [LambdaFilesystemPermission](./literals.md#lambdafilesystempermission)
+  [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - `addGroupOwner`: `bool`
 
 ## ListComponentVersionsResponseTypeDef
@@ -642,7 +647,8 @@ from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesResponseTypeDef
 
 Optional fields:
 
-- `coreDevices`: `List`\[[CoreDeviceTypeDef](./type_defs.md#coredevicetypedef)\]
+- `coreDevices`:
+  `List`\[[CoreDeviceTypeDef](./type_defs.md#coredevicetypedef)\]
 - `nextToken`: `str`
 
 ## ListDeploymentsResponseTypeDef
@@ -653,7 +659,8 @@ from mypy_boto3_greengrassv2.type_defs import ListDeploymentsResponseTypeDef
 
 Optional fields:
 
-- `deployments`: `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
+- `deployments`:
+  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 - `nextToken`: `str`
 
 ## ListEffectiveDeploymentsResponseTypeDef

@@ -3,7 +3,7 @@
 > [Index](..) > [Greengrass](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
 [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
@@ -169,7 +169,7 @@ Optional fields:
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
 - `DeploymentStatus`: `str`
-- `DeploymentType`: [DeploymentType](./literals.md#deploymenttype)
+- `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
 - `ErrorDetails`:
   `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 - `ErrorMessage`: `str`
@@ -544,7 +544,7 @@ Optional fields:
 - `CreatedAt`: `str`
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
-- `DeploymentType`: [DeploymentType](./literals.md#deploymenttype)
+- `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
 - `GroupArn`: `str`
 
 ## DeviceDefinitionVersionTypeDef
@@ -627,7 +627,7 @@ from mypy_boto3_greengrass.type_defs import FunctionConfigurationTypeDef
 
 Optional fields:
 
-- `EncodingType`: [EncodingType](./literals.md#encodingtype)
+- `EncodingType`: [EncodingTypeType](./literals.md#encodingtypetype)
 - `Environment`:
   [FunctionConfigurationEnvironmentTypeDef](./type_defs.md#functionconfigurationenvironmenttypedef)
 - `ExecArgs`: `str`
@@ -655,7 +655,8 @@ from mypy_boto3_greengrass.type_defs import FunctionDefaultExecutionConfigTypeDe
 
 Optional fields:
 
-- `IsolationMode`: [FunctionIsolationMode](./literals.md#functionisolationmode)
+- `IsolationMode`:
+  [FunctionIsolationModeType](./literals.md#functionisolationmodetype)
 - `RunAs`:
   [FunctionRunAsConfigTypeDef](./type_defs.md#functionrunasconfigtypedef)
 
@@ -679,7 +680,8 @@ from mypy_boto3_greengrass.type_defs import FunctionExecutionConfigTypeDef
 
 Optional fields:
 
-- `IsolationMode`: [FunctionIsolationMode](./literals.md#functionisolationmode)
+- `IsolationMode`:
+  [FunctionIsolationModeType](./literals.md#functionisolationmodetype)
 - `RunAs`:
   [FunctionRunAsConfigTypeDef](./type_defs.md#functionrunasconfigtypedef)
 
@@ -732,7 +734,7 @@ Optional fields:
 - `BulkDeploymentMetrics`:
   [BulkDeploymentMetricsTypeDef](./type_defs.md#bulkdeploymentmetricstypedef)
 - `BulkDeploymentStatus`:
-  [BulkDeploymentStatus](./literals.md#bulkdeploymentstatus)
+  [BulkDeploymentStatusType](./literals.md#bulkdeploymentstatustype)
 - `CreatedAt`: `str`
 - `ErrorDetails`:
   `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
@@ -826,7 +828,7 @@ from mypy_boto3_greengrass.type_defs import GetDeploymentStatusResponseTypeDef
 Optional fields:
 
 - `DeploymentStatus`: `str`
-- `DeploymentType`: [DeploymentType](./literals.md#deploymenttype)
+- `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
 - `ErrorDetails`:
   `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 - `ErrorMessage`: `str`
@@ -1206,7 +1208,8 @@ from mypy_boto3_greengrass.type_defs import ListDeploymentsResponseTypeDef
 
 Optional fields:
 
-- `Deployments`: `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
+- `Deployments`:
+  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 - `NextToken`: `str`
 
 ## ListDeviceDefinitionVersionsResponseTypeDef
@@ -1417,10 +1420,10 @@ from mypy_boto3_greengrass.type_defs import LoggerTypeDef
 
 Required fields:
 
-- `Component`: [LoggerComponent](./literals.md#loggercomponent)
+- `Component`: [LoggerComponentType](./literals.md#loggercomponenttype)
 - `Id`: `str`
-- `Level`: [LoggerLevel](./literals.md#loggerlevel)
-- `Type`: [LoggerType](./literals.md#loggertype)
+- `Level`: [LoggerLevelType](./literals.md#loggerleveltype)
+- `Type`: [LoggerTypeType](./literals.md#loggertypetype)
 
 Optional fields:
 
@@ -1461,7 +1464,7 @@ Required fields:
 
 Optional fields:
 
-- `Permission`: [Permission](./literals.md#permission)
+- `Permission`: [PermissionType](./literals.md#permissiontype)
 
 ## ResourceDataContainerTypeDef
 
@@ -1501,7 +1504,7 @@ from mypy_boto3_greengrass.type_defs import ResourceDownloadOwnerSettingTypeDef
 Required fields:
 
 - `GroupOwner`: `str`
-- `GroupPermission`: [Permission](./literals.md#permission)
+- `GroupPermission`: [PermissionType](./literals.md#permissiontype)
 
 ## ResourceTypeDef
 
@@ -1607,12 +1610,12 @@ from mypy_boto3_greengrass.type_defs import TelemetryConfigurationTypeDef
 
 Required fields:
 
-- `Telemetry`: [Telemetry](./literals.md#telemetry)
+- `Telemetry`: [TelemetryType](./literals.md#telemetrytype)
 
 Optional fields:
 
 - `ConfigurationSyncStatus`:
-  [ConfigurationSyncStatus](./literals.md#configurationsyncstatus)
+  [ConfigurationSyncStatusType](./literals.md#configurationsyncstatustype)
 
 ## TelemetryConfigurationUpdateTypeDef
 
@@ -1622,7 +1625,7 @@ from mypy_boto3_greengrass.type_defs import TelemetryConfigurationUpdateTypeDef
 
 Required fields:
 
-- `Telemetry`: [Telemetry](./literals.md#telemetry)
+- `Telemetry`: [TelemetryType](./literals.md#telemetrytype)
 
 ## UpdateConnectivityInfoResponseTypeDef
 

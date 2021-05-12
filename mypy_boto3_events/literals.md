@@ -3,30 +3,30 @@
 > [Index](..) > [EventBridge](.) > Literals
 
 Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/events.html#EventBridge)
 type annotations stubs module
 [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
 - [Literals for boto3 EventBridge module](#literals-for-boto3-eventbridge-module)
-  - [ApiDestinationHttpMethod](#apidestinationhttpmethod)
-  - [ApiDestinationState](#apidestinationstate)
-  - [ArchiveState](#archivestate)
-  - [AssignPublicIp](#assignpublicip)
-  - [ConnectionAuthorizationType](#connectionauthorizationtype)
-  - [ConnectionOAuthHttpMethod](#connectionoauthhttpmethod)
-  - [ConnectionState](#connectionstate)
-  - [EventSourceState](#eventsourcestate)
-  - [LaunchType](#launchtype)
+  - [ApiDestinationHttpMethodType](#apidestinationhttpmethodtype)
+  - [ApiDestinationStateType](#apidestinationstatetype)
+  - [ArchiveStateType](#archivestatetype)
+  - [AssignPublicIpType](#assignpubliciptype)
+  - [ConnectionAuthorizationTypeType](#connectionauthorizationtypetype)
+  - [ConnectionOAuthHttpMethodType](#connectionoauthhttpmethodtype)
+  - [ConnectionStateType](#connectionstatetype)
+  - [EventSourceStateType](#eventsourcestatetype)
+  - [LaunchTypeType](#launchtypetype)
   - [ListRuleNamesByTargetPaginatorName](#listrulenamesbytargetpaginatorname)
   - [ListRulesPaginatorName](#listrulespaginatorname)
   - [ListTargetsByRulePaginatorName](#listtargetsbyrulepaginatorname)
-  - [ReplayState](#replaystate)
-  - [RuleState](#rulestate)
+  - [ReplayStateType](#replaystatetype)
+  - [RuleStateType](#rulestatetype)
 
-## ApiDestinationHttpMethod
+## ApiDestinationHttpMethodType
 
 ```python
-from mypy_boto3_events.literals import ApiDestinationHttpMethod
+from mypy_boto3_events.literals import ApiDestinationHttpMethodType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 - `POST`
 - `PUT`
 
-## ApiDestinationState
+## ApiDestinationStateType
 
 ```python
-from mypy_boto3_events.literals import ApiDestinationState
+from mypy_boto3_events.literals import ApiDestinationStateType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## ArchiveState
+## ArchiveStateType
 
 ```python
-from mypy_boto3_events.literals import ArchiveState
+from mypy_boto3_events.literals import ArchiveStateType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
-## AssignPublicIp
+## AssignPublicIpType
 
 ```python
-from mypy_boto3_events.literals import AssignPublicIp
+from mypy_boto3_events.literals import AssignPublicIpType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ConnectionAuthorizationType
+## ConnectionAuthorizationTypeType
 
 ```python
-from mypy_boto3_events.literals import ConnectionAuthorizationType
+from mypy_boto3_events.literals import ConnectionAuthorizationTypeType
 ```
 
 Values:
@@ -88,10 +88,10 @@ Values:
 - `BASIC`
 - `OAUTH_CLIENT_CREDENTIALS`
 
-## ConnectionOAuthHttpMethod
+## ConnectionOAuthHttpMethodType
 
 ```python
-from mypy_boto3_events.literals import ConnectionOAuthHttpMethod
+from mypy_boto3_events.literals import ConnectionOAuthHttpMethodType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `POST`
 - `PUT`
 
-## ConnectionState
+## ConnectionStateType
 
 ```python
-from mypy_boto3_events.literals import ConnectionState
+from mypy_boto3_events.literals import ConnectionStateType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## EventSourceState
+## EventSourceStateType
 
 ```python
-from mypy_boto3_events.literals import EventSourceState
+from mypy_boto3_events.literals import EventSourceStateType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 - `DELETED`
 - `PENDING`
 
-## LaunchType
+## LaunchTypeType
 
 ```python
-from mypy_boto3_events.literals import LaunchType
+from mypy_boto3_events.literals import LaunchTypeType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 
 - `list_targets_by_rule`
 
-## ReplayState
+## ReplayStateType
 
 ```python
-from mypy_boto3_events.literals import ReplayState
+from mypy_boto3_events.literals import ReplayStateType
 ```
 
 Values:
@@ -184,10 +184,10 @@ Values:
 - `RUNNING`
 - `STARTING`
 
-## RuleState
+## RuleStateType
 
 ```python
-from mypy_boto3_events.literals import RuleState
+from mypy_boto3_events.literals import RuleStateType
 ```
 
 Values:

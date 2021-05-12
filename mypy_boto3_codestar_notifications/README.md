@@ -3,7 +3,7 @@
 > [Index](..) > CodeStarNotifications
 
 Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
 [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
@@ -30,38 +30,38 @@ Can be used directly:
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 ```
 
-CodeStarNotificationsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_notification_rule](./client.md#create-notification-rule)
-- [delete_notification_rule](./client.md#delete-notification-rule)
-- [delete_target](./client.md#delete-target)
-- [describe_notification_rule](./client.md#describe-notification-rule)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_event_types](./client.md#list-event-types)
-- [list_notification_rules](./client.md#list-notification-rules)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_targets](./client.md#list-targets)
+- [can_paginate](./client.md#can_paginate)
+- [create_notification_rule](./client.md#create_notification_rule)
+- [delete_notification_rule](./client.md#delete_notification_rule)
+- [delete_target](./client.md#delete_target)
+- [describe_notification_rule](./client.md#describe_notification_rule)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_event_types](./client.md#list_event_types)
+- [list_notification_rules](./client.md#list_notification_rules)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_targets](./client.md#list_targets)
 - [subscribe](./client.md#subscribe)
-- [tag_resource](./client.md#tag-resource)
+- [tag_resource](./client.md#tag_resource)
 - [unsubscribe](./client.md#unsubscribe)
-- [untag_resource](./client.md#untag-resource)
-- [update_notification_rule](./client.md#update-notification-rule)
+- [untag_resource](./client.md#untag_resource)
+- [update_notification_rule](./client.md#update_notification_rule)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [ConfigurationException](./client.md#configurationexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+CodeStarNotificationsClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConcurrentModificationException
+- ConfigurationException
+- InvalidNextTokenException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -85,18 +85,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar_notifications.literals import DetailType, ...
+from mypy_boto3_codestar_notifications.literals import DetailTypeType, ...
 ```
 
-- [DetailType](./literals.md#detailtype)
-- [ListEventTypesFilterName](./literals.md#listeventtypesfiltername)
+- [DetailTypeType](./literals.md#detailtypetype)
+- [ListEventTypesFilterNameType](./literals.md#listeventtypesfilternametype)
 - [ListEventTypesPaginatorName](./literals.md#listeventtypespaginatorname)
-- [ListNotificationRulesFilterName](./literals.md#listnotificationrulesfiltername)
+- [ListNotificationRulesFilterNameType](./literals.md#listnotificationrulesfilternametype)
 - [ListNotificationRulesPaginatorName](./literals.md#listnotificationrulespaginatorname)
-- [ListTargetsFilterName](./literals.md#listtargetsfiltername)
+- [ListTargetsFilterNameType](./literals.md#listtargetsfilternametype)
 - [ListTargetsPaginatorName](./literals.md#listtargetspaginatorname)
-- [NotificationRuleStatus](./literals.md#notificationrulestatus)
-- [TargetStatus](./literals.md#targetstatus)
+- [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
+- [TargetStatusType](./literals.md#targetstatustype)
 
 ## Typed dictionaries
 

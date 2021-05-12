@@ -3,7 +3,7 @@
 > [Index](..) > [RDS](.) > Paginators
 
 Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS)
 type annotations stubs module
 [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
@@ -60,7 +60,7 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCertificates)
+[RDS.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeCertificates)
 
 Arguments for `DescribeCertificatesPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_describe_custom_availability_zones_paginator() -> DescribeCustomAvailabi
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeCustomAvailabilityZones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCustomAvailabilityZones)
+[RDS.Paginator.DescribeCustomAvailabilityZones](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeCustomAvailabilityZones)
 
 Arguments for `DescribeCustomAvailabilityZonesPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_describe_db_cluster_backtracks_paginator() -> DescribeDBClusterBacktrack
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBClusterBacktracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterBacktracks)
+[RDS.Paginator.DescribeDBClusterBacktracks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBClusterBacktracks)
 
 Arguments for `DescribeDBClusterBacktracksPaginator.paginate` method:
 
@@ -142,7 +142,7 @@ def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsP
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBClusterEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterEndpoints)
+[RDS.Paginator.DescribeDBClusterEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBClusterEndpoints)
 
 Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
 
@@ -170,7 +170,7 @@ def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterPar
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameterGroups)
+[RDS.Paginator.DescribeDBClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameterGroups)
 
 Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
 
@@ -197,7 +197,7 @@ def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParameter
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameters)
+[RDS.Paginator.DescribeDBClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameters)
 
 Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
 
@@ -225,7 +225,7 @@ def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsP
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterSnapshots)
+[RDS.Paginator.DescribeDBClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBClusterSnapshots)
 
 Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
 
@@ -256,7 +256,7 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusters)
+[RDS.Paginator.DescribeDBClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBClusters)
 
 Arguments for `DescribeDBClustersPaginator.paginate` method:
 
@@ -284,7 +284,7 @@ def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPagin
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBEngineVersions)
+[RDS.Paginator.DescribeDBEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBEngineVersions)
 
 Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
 
@@ -317,7 +317,7 @@ def get_describe_db_instance_automated_backups_paginator() -> DescribeDBInstance
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBInstanceAutomatedBackups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstanceAutomatedBackups)
+[RDS.Paginator.DescribeDBInstanceAutomatedBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBInstanceAutomatedBackups)
 
 Arguments for `DescribeDBInstanceAutomatedBackupsPaginator.paginate` method:
 
@@ -346,7 +346,7 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstances)
+[RDS.Paginator.DescribeDBInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBInstances)
 
 Arguments for `DescribeDBInstancesPaginator.paginate` method:
 
@@ -373,7 +373,7 @@ def get_describe_db_log_files_paginator() -> DescribeDBLogFilesPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBLogFiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBLogFiles)
+[RDS.Paginator.DescribeDBLogFiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBLogFiles)
 
 Arguments for `DescribeDBLogFilesPaginator.paginate` method:
 
@@ -403,7 +403,7 @@ def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPag
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameterGroups)
+[RDS.Paginator.DescribeDBParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBParameterGroups)
 
 Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
 
@@ -430,7 +430,7 @@ def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameters)
+[RDS.Paginator.DescribeDBParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBParameters)
 
 Arguments for `DescribeDBParametersPaginator.paginate` method:
 
@@ -458,7 +458,7 @@ def get_describe_db_proxies_paginator() -> DescribeDBProxiesPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBProxies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxies)
+[RDS.Paginator.DescribeDBProxies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBProxies)
 
 Arguments for `DescribeDBProxiesPaginator.paginate` method:
 
@@ -485,7 +485,7 @@ def get_describe_db_proxy_endpoints_paginator() -> DescribeDBProxyEndpointsPagin
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBProxyEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyEndpoints)
+[RDS.Paginator.DescribeDBProxyEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBProxyEndpoints)
 
 Arguments for `DescribeDBProxyEndpointsPaginator.paginate` method:
 
@@ -513,7 +513,7 @@ def get_describe_db_proxy_target_groups_paginator() -> DescribeDBProxyTargetGrou
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBProxyTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargetGroups)
+[RDS.Paginator.DescribeDBProxyTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargetGroups)
 
 Arguments for `DescribeDBProxyTargetGroupsPaginator.paginate` method:
 
@@ -541,7 +541,7 @@ def get_describe_db_proxy_targets_paginator() -> DescribeDBProxyTargetsPaginator
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBProxyTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargets)
+[RDS.Paginator.DescribeDBProxyTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargets)
 
 Arguments for `DescribeDBProxyTargetsPaginator.paginate` method:
 
@@ -569,7 +569,7 @@ def get_describe_db_security_groups_paginator() -> DescribeDBSecurityGroupsPagin
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSecurityGroups)
+[RDS.Paginator.DescribeDBSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBSecurityGroups)
 
 Arguments for `DescribeDBSecurityGroupsPaginator.paginate` method:
 
@@ -596,7 +596,7 @@ def get_describe_db_snapshots_paginator() -> DescribeDBSnapshotsPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSnapshots)
+[RDS.Paginator.DescribeDBSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBSnapshots)
 
 Arguments for `DescribeDBSnapshotsPaginator.paginate` method:
 
@@ -628,7 +628,7 @@ def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeDBSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSubnetGroups)
+[RDS.Paginator.DescribeDBSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeDBSubnetGroups)
 
 Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
 
@@ -655,7 +655,7 @@ def get_describe_engine_default_cluster_parameters_paginator() -> DescribeEngine
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeEngineDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultClusterParameters)
+[RDS.Paginator.DescribeEngineDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultClusterParameters)
 
 Arguments for `DescribeEngineDefaultClusterParametersPaginator.paginate`
 method:
@@ -683,7 +683,7 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultParameters)
+[RDS.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultParameters)
 
 Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 
@@ -710,7 +710,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEventSubscriptions)
+[RDS.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeEventSubscriptions)
 
 Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 
@@ -736,12 +736,12 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEvents)
+[RDS.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeEvents)
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
@@ -768,7 +768,7 @@ def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeExportTasks)
+[RDS.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeExportTasks)
 
 Arguments for `DescribeExportTasksPaginator.paginate` method:
 
@@ -796,7 +796,7 @@ def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeGlobalClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeGlobalClusters)
+[RDS.Paginator.DescribeGlobalClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeGlobalClusters)
 
 Arguments for `DescribeGlobalClustersPaginator.paginate` method:
 
@@ -823,7 +823,7 @@ def get_describe_installation_media_paginator() -> DescribeInstallationMediaPagi
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeInstallationMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeInstallationMedia)
+[RDS.Paginator.DescribeInstallationMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeInstallationMedia)
 
 Arguments for `DescribeInstallationMediaPaginator.paginate` method:
 
@@ -850,7 +850,7 @@ def get_describe_option_group_options_paginator() -> DescribeOptionGroupOptionsP
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeOptionGroupOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroupOptions)
+[RDS.Paginator.DescribeOptionGroupOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeOptionGroupOptions)
 
 Arguments for `DescribeOptionGroupOptionsPaginator.paginate` method:
 
@@ -878,7 +878,7 @@ def get_describe_option_groups_paginator() -> DescribeOptionGroupsPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeOptionGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroups)
+[RDS.Paginator.DescribeOptionGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeOptionGroups)
 
 Arguments for `DescribeOptionGroupsPaginator.paginate` method:
 
@@ -907,7 +907,7 @@ def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableD
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeOrderableDBInstanceOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOrderableDBInstanceOptions)
+[RDS.Paginator.DescribeOrderableDBInstanceOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeOrderableDBInstanceOptions)
 
 Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
 
@@ -939,7 +939,7 @@ def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaint
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribePendingMaintenanceActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribePendingMaintenanceActions)
+[RDS.Paginator.DescribePendingMaintenanceActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribePendingMaintenanceActions)
 
 Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
 
@@ -966,7 +966,7 @@ def get_describe_reserved_db_instances_paginator() -> DescribeReservedDBInstance
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeReservedDBInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstances)
+[RDS.Paginator.DescribeReservedDBInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstances)
 
 Arguments for `DescribeReservedDBInstancesPaginator.paginate` method:
 
@@ -1000,7 +1000,7 @@ def get_describe_reserved_db_instances_offerings_paginator() -> DescribeReserved
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeReservedDBInstancesOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstancesOfferings)
+[RDS.Paginator.DescribeReservedDBInstancesOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstancesOfferings)
 
 Arguments for `DescribeReservedDBInstancesOfferingsPaginator.paginate` method:
 
@@ -1032,7 +1032,7 @@ def get_describe_source_regions_paginator() -> DescribeSourceRegionsPaginator:
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DescribeSourceRegions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeSourceRegions)
+[RDS.Paginator.DescribeSourceRegions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DescribeSourceRegions)
 
 Arguments for `DescribeSourceRegionsPaginator.paginate` method:
 
@@ -1059,7 +1059,7 @@ def get_download_db_log_file_portion_paginator() -> DownloadDBLogFilePortionPagi
 ```
 
 Boto3 documentation:
-[RDS.Paginator.DownloadDBLogFilePortion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DownloadDBLogFilePortion)
+[RDS.Paginator.DownloadDBLogFilePortion](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rds.html#RDS.Paginator.DownloadDBLogFilePortion)
 
 Arguments for `DownloadDBLogFilePortionPaginator.paginate` method:
 

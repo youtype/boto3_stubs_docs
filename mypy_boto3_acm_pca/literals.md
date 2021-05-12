@@ -3,37 +3,37 @@
 > [Index](..) > [ACMPCA](.) > Literals
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 - [Literals for boto3 ACMPCA module](#literals-for-boto3-acmpca-module)
-  - [AccessMethodType](#accessmethodtype)
-  - [ActionType](#actiontype)
+  - [AccessMethodTypeType](#accessmethodtypetype)
+  - [ActionTypeType](#actiontypetype)
   - [AuditReportCreatedWaiterName](#auditreportcreatedwaitername)
-  - [AuditReportResponseFormat](#auditreportresponseformat)
-  - [AuditReportStatus](#auditreportstatus)
+  - [AuditReportResponseFormatType](#auditreportresponseformattype)
+  - [AuditReportStatusType](#auditreportstatustype)
   - [CertificateAuthorityCSRCreatedWaiterName](#certificateauthoritycsrcreatedwaitername)
-  - [CertificateAuthorityStatus](#certificateauthoritystatus)
-  - [CertificateAuthorityType](#certificateauthoritytype)
+  - [CertificateAuthorityStatusType](#certificateauthoritystatustype)
+  - [CertificateAuthorityTypeType](#certificateauthoritytypetype)
   - [CertificateIssuedWaiterName](#certificateissuedwaitername)
-  - [ExtendedKeyUsageType](#extendedkeyusagetype)
-  - [FailureReason](#failurereason)
-  - [KeyAlgorithm](#keyalgorithm)
-  - [KeyStorageSecurityStandard](#keystoragesecuritystandard)
+  - [ExtendedKeyUsageTypeType](#extendedkeyusagetypetype)
+  - [FailureReasonType](#failurereasontype)
+  - [KeyAlgorithmType](#keyalgorithmtype)
+  - [KeyStorageSecurityStandardType](#keystoragesecuritystandardtype)
   - [ListCertificateAuthoritiesPaginatorName](#listcertificateauthoritiespaginatorname)
   - [ListPermissionsPaginatorName](#listpermissionspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
-  - [PolicyQualifierId](#policyqualifierid)
-  - [ResourceOwner](#resourceowner)
-  - [RevocationReason](#revocationreason)
-  - [SigningAlgorithm](#signingalgorithm)
-  - [ValidityPeriodType](#validityperiodtype)
+  - [PolicyQualifierIdType](#policyqualifieridtype)
+  - [ResourceOwnerType](#resourceownertype)
+  - [RevocationReasonType](#revocationreasontype)
+  - [SigningAlgorithmType](#signingalgorithmtype)
+  - [ValidityPeriodTypeType](#validityperiodtypetype)
 
-## AccessMethodType
+## AccessMethodTypeType
 
 ```python
-from mypy_boto3_acm_pca.literals import AccessMethodType
+from mypy_boto3_acm_pca.literals import AccessMethodTypeType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `RESOURCE_PKI_MANIFEST`
 - `RESOURCE_PKI_NOTIFY`
 
-## ActionType
+## ActionTypeType
 
 ```python
-from mypy_boto3_acm_pca.literals import ActionType
+from mypy_boto3_acm_pca.literals import ActionTypeType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 
 - `audit_report_created`
 
-## AuditReportResponseFormat
+## AuditReportResponseFormatType
 
 ```python
-from mypy_boto3_acm_pca.literals import AuditReportResponseFormat
+from mypy_boto3_acm_pca.literals import AuditReportResponseFormatType
 ```
 
 Values:
@@ -75,10 +75,10 @@ Values:
 - `CSV`
 - `JSON`
 
-## AuditReportStatus
+## AuditReportStatusType
 
 ```python
-from mypy_boto3_acm_pca.literals import AuditReportStatus
+from mypy_boto3_acm_pca.literals import AuditReportStatusType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 
 - `certificate_authority_csr_created`
 
-## CertificateAuthorityStatus
+## CertificateAuthorityStatusType
 
 ```python
-from mypy_boto3_acm_pca.literals import CertificateAuthorityStatus
+from mypy_boto3_acm_pca.literals import CertificateAuthorityStatusType
 ```
 
 Values:
@@ -113,10 +113,10 @@ Values:
 - `FAILED`
 - `PENDING_CERTIFICATE`
 
-## CertificateAuthorityType
+## CertificateAuthorityTypeType
 
 ```python
-from mypy_boto3_acm_pca.literals import CertificateAuthorityType
+from mypy_boto3_acm_pca.literals import CertificateAuthorityTypeType
 ```
 
 Values:
@@ -134,10 +134,10 @@ Values:
 
 - `certificate_issued`
 
-## ExtendedKeyUsageType
+## ExtendedKeyUsageTypeType
 
 ```python
-from mypy_boto3_acm_pca.literals import ExtendedKeyUsageType
+from mypy_boto3_acm_pca.literals import ExtendedKeyUsageTypeType
 ```
 
 Values:
@@ -152,10 +152,10 @@ Values:
 - `SMART_CARD_LOGIN`
 - `TIME_STAMPING`
 
-## FailureReason
+## FailureReasonType
 
 ```python
-from mypy_boto3_acm_pca.literals import FailureReason
+from mypy_boto3_acm_pca.literals import FailureReasonType
 ```
 
 Values:
@@ -164,10 +164,10 @@ Values:
 - `REQUEST_TIMED_OUT`
 - `UNSUPPORTED_ALGORITHM`
 
-## KeyAlgorithm
+## KeyAlgorithmType
 
 ```python
-from mypy_boto3_acm_pca.literals import KeyAlgorithm
+from mypy_boto3_acm_pca.literals import KeyAlgorithmType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `RSA_2048`
 - `RSA_4096`
 
-## KeyStorageSecurityStandard
+## KeyStorageSecurityStandardType
 
 ```python
-from mypy_boto3_acm_pca.literals import KeyStorageSecurityStandard
+from mypy_boto3_acm_pca.literals import KeyStorageSecurityStandardType
 ```
 
 Values:
@@ -218,20 +218,20 @@ Values:
 
 - `list_tags`
 
-## PolicyQualifierId
+## PolicyQualifierIdType
 
 ```python
-from mypy_boto3_acm_pca.literals import PolicyQualifierId
+from mypy_boto3_acm_pca.literals import PolicyQualifierIdType
 ```
 
 Values:
 
 - `CPS`
 
-## ResourceOwner
+## ResourceOwnerType
 
 ```python
-from mypy_boto3_acm_pca.literals import ResourceOwner
+from mypy_boto3_acm_pca.literals import ResourceOwnerType
 ```
 
 Values:
@@ -239,10 +239,10 @@ Values:
 - `OTHER_ACCOUNTS`
 - `SELF`
 
-## RevocationReason
+## RevocationReasonType
 
 ```python
-from mypy_boto3_acm_pca.literals import RevocationReason
+from mypy_boto3_acm_pca.literals import RevocationReasonType
 ```
 
 Values:
@@ -256,10 +256,10 @@ Values:
 - `SUPERSEDED`
 - `UNSPECIFIED`
 
-## SigningAlgorithm
+## SigningAlgorithmType
 
 ```python
-from mypy_boto3_acm_pca.literals import SigningAlgorithm
+from mypy_boto3_acm_pca.literals import SigningAlgorithmType
 ```
 
 Values:
@@ -271,10 +271,10 @@ Values:
 - `SHA512WITHECDSA`
 - `SHA512WITHRSA`
 
-## ValidityPeriodType
+## ValidityPeriodTypeType
 
 ```python
-from mypy_boto3_acm_pca.literals import ValidityPeriodType
+from mypy_boto3_acm_pca.literals import ValidityPeriodTypeType
 ```
 
 Values:

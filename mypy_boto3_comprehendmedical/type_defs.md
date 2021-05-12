@@ -3,7 +3,7 @@
 > [Index](..) > [ComprehendMedical](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
 [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
@@ -54,15 +54,16 @@ from mypy_boto3_comprehendmedical.type_defs import AttributeTypeDef
 
 Optional fields:
 
-- `Type`: [EntitySubType](./literals.md#entitysubtype)
+- `Type`: [EntitySubTypeType](./literals.md#entitysubtypetype)
 - `Score`: `float`
 - `RelationshipScore`: `float`
-- `RelationshipType`: [RelationshipType](./literals.md#relationshiptype)
+- `RelationshipType`:
+  [RelationshipTypeType](./literals.md#relationshiptypetype)
 - `Id`: `int`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 - `Text`: `str`
-- `Category`: [EntityType](./literals.md#entitytype)
+- `Category`: [EntityTypeType](./literals.md#entitytypetype)
 - `Traits`: `List`\[[TraitTypeDef](./type_defs.md#traittypedef)\]
 
 ## ComprehendMedicalAsyncJobFilterTypeDef
@@ -74,7 +75,7 @@ from mypy_boto3_comprehendmedical.type_defs import ComprehendMedicalAsyncJobFilt
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -88,7 +89,7 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
@@ -98,7 +99,7 @@ Optional fields:
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `LanguageCode`: `Literal['en']` (see
-  [LanguageCode](./literals.md#languagecode))
+  [LanguageCodeType](./literals.md#languagecodetype))
 - `DataAccessRoleArn`: `str`
 - `ManifestFilePath`: `str`
 - `KMSKey`: `str`
@@ -210,8 +211,8 @@ Optional fields:
 - `EndOffset`: `int`
 - `Score`: `float`
 - `Text`: `str`
-- `Category`: [EntityType](./literals.md#entitytype)
-- `Type`: [EntitySubType](./literals.md#entitysubtype)
+- `Category`: [EntityTypeType](./literals.md#entitytypetype)
+- `Type`: [EntitySubTypeType](./literals.md#entitysubtypetype)
 - `Traits`: `List`\[[TraitTypeDef](./type_defs.md#traittypedef)\]
 - `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
@@ -223,7 +224,7 @@ from mypy_boto3_comprehendmedical.type_defs import ICD10CMAttributeTypeDef
 
 Optional fields:
 
-- `Type`: [ICD10CMAttributeType](./literals.md#icd10cmattributetype)
+- `Type`: [ICD10CMAttributeTypeType](./literals.md#icd10cmattributetypetype)
 - `Score`: `float`
 - `RelationshipScore`: `float`
 - `Id`: `int`
@@ -231,9 +232,9 @@ Optional fields:
 - `EndOffset`: `int`
 - `Text`: `str`
 - `Traits`: `List`\[[ICD10CMTraitTypeDef](./type_defs.md#icd10cmtraittypedef)\]
-- `Category`: [ICD10CMEntityType](./literals.md#icd10cmentitytype)
+- `Category`: [ICD10CMEntityTypeType](./literals.md#icd10cmentitytypetype)
 - `RelationshipType`:
-  [ICD10CMRelationshipType](./literals.md#icd10cmrelationshiptype)
+  [ICD10CMRelationshipTypeType](./literals.md#icd10cmrelationshiptypetype)
 
 ## ICD10CMConceptTypeDef
 
@@ -258,8 +259,8 @@ Optional fields:
 - `Id`: `int`
 - `Text`: `str`
 - `Category`: `Literal['MEDICAL_CONDITION']` (see
-  [ICD10CMEntityCategory](./literals.md#icd10cmentitycategory))
-- `Type`: [ICD10CMEntityType](./literals.md#icd10cmentitytype)
+  [ICD10CMEntityCategoryType](./literals.md#icd10cmentitycategorytype))
+- `Type`: [ICD10CMEntityTypeType](./literals.md#icd10cmentitytypetype)
 - `Score`: `float`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
@@ -277,7 +278,7 @@ from mypy_boto3_comprehendmedical.type_defs import ICD10CMTraitTypeDef
 
 Optional fields:
 
-- `Name`: [ICD10CMTraitName](./literals.md#icd10cmtraitname)
+- `Name`: [ICD10CMTraitNameType](./literals.md#icd10cmtraitnametype)
 - `Score`: `float`
 
 ## InferICD10CMResponseTypeDef
@@ -304,7 +305,8 @@ from mypy_boto3_comprehendmedical.type_defs import InferRxNormResponseTypeDef
 
 Required fields:
 
-- `Entities`: `List`\[[RxNormEntityTypeDef](./type_defs.md#rxnormentitytypedef)\]
+- `Entities`:
+  `List`\[[RxNormEntityTypeDef](./type_defs.md#rxnormentitytypedef)\]
 
 Optional fields:
 
@@ -395,7 +397,7 @@ from mypy_boto3_comprehendmedical.type_defs import RxNormAttributeTypeDef
 
 Optional fields:
 
-- `Type`: [RxNormAttributeType](./literals.md#rxnormattributetype)
+- `Type`: [RxNormAttributeTypeType](./literals.md#rxnormattributetypetype)
 - `Score`: `float`
 - `RelationshipScore`: `float`
 - `Id`: `int`
@@ -427,8 +429,8 @@ Optional fields:
 - `Id`: `int`
 - `Text`: `str`
 - `Category`: `Literal['MEDICATION']` (see
-  [RxNormEntityCategory](./literals.md#rxnormentitycategory))
-- `Type`: [RxNormEntityType](./literals.md#rxnormentitytype)
+  [RxNormEntityCategoryType](./literals.md#rxnormentitycategorytype))
+- `Type`: [RxNormEntityTypeType](./literals.md#rxnormentitytypetype)
 - `Score`: `float`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
@@ -447,7 +449,7 @@ from mypy_boto3_comprehendmedical.type_defs import RxNormTraitTypeDef
 Optional fields:
 
 - `Name`: `Literal['NEGATION']` (see
-  [RxNormTraitName](./literals.md#rxnormtraitname))
+  [RxNormTraitNameType](./literals.md#rxnormtraitnametype))
 - `Score`: `float`
 
 ## StartEntitiesDetectionV2JobResponseTypeDef
@@ -538,7 +540,7 @@ from mypy_boto3_comprehendmedical.type_defs import TraitTypeDef
 
 Optional fields:
 
-- `Name`: [AttributeName](./literals.md#attributename)
+- `Name`: [AttributeNameType](./literals.md#attributenametype)
 - `Score`: `float`
 
 ## UnmappedAttributeTypeDef
@@ -549,5 +551,5 @@ from mypy_boto3_comprehendmedical.type_defs import UnmappedAttributeTypeDef
 
 Optional fields:
 
-- `Type`: [EntityType](./literals.md#entitytype)
+- `Type`: [EntityTypeType](./literals.md#entitytypetype)
 - `Attribute`: [AttributeTypeDef](./type_defs.md#attributetypedef)

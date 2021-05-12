@@ -3,17 +3,17 @@
 > [Index](..) > [ForecastService](.) > Literals
 
 Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService)
 type annotations stubs module
 [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Literals for boto3 ForecastService module](#literals-for-boto3-forecastservice-module)
-  - [AttributeType](#attributetype)
-  - [DatasetType](#datasettype)
-  - [Domain](#domain)
-  - [EvaluationType](#evaluationtype)
-  - [FeaturizationMethodName](#featurizationmethodname)
-  - [FilterConditionString](#filterconditionstring)
+  - [AttributeTypeType](#attributetypetype)
+  - [DatasetTypeType](#datasettypetype)
+  - [DomainType](#domaintype)
+  - [EvaluationTypeType](#evaluationtypetype)
+  - [FeaturizationMethodNameType](#featurizationmethodnametype)
+  - [FilterConditionStringType](#filterconditionstringtype)
   - [ListDatasetGroupsPaginatorName](#listdatasetgroupspaginatorname)
   - [ListDatasetImportJobsPaginatorName](#listdatasetimportjobspaginatorname)
   - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
@@ -21,12 +21,12 @@ type annotations stubs module
   - [ListForecastsPaginatorName](#listforecastspaginatorname)
   - [ListPredictorBacktestExportJobsPaginatorName](#listpredictorbacktestexportjobspaginatorname)
   - [ListPredictorsPaginatorName](#listpredictorspaginatorname)
-  - [ScalingType](#scalingtype)
+  - [ScalingTypeType](#scalingtypetype)
 
-## AttributeType
+## AttributeTypeType
 
 ```python
-from mypy_boto3_forecast.literals import AttributeType
+from mypy_boto3_forecast.literals import AttributeTypeType
 ```
 
 Values:
@@ -37,10 +37,10 @@ Values:
 - `string`
 - `timestamp`
 
-## DatasetType
+## DatasetTypeType
 
 ```python
-from mypy_boto3_forecast.literals import DatasetType
+from mypy_boto3_forecast.literals import DatasetTypeType
 ```
 
 Values:
@@ -49,10 +49,10 @@ Values:
 - `RELATED_TIME_SERIES`
 - `TARGET_TIME_SERIES`
 
-## Domain
+## DomainType
 
 ```python
-from mypy_boto3_forecast.literals import Domain
+from mypy_boto3_forecast.literals import DomainType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `WEB_TRAFFIC`
 - `WORK_FORCE`
 
-## EvaluationType
+## EvaluationTypeType
 
 ```python
-from mypy_boto3_forecast.literals import EvaluationType
+from mypy_boto3_forecast.literals import EvaluationTypeType
 ```
 
 Values:
@@ -76,20 +76,20 @@ Values:
 - `COMPUTED`
 - `SUMMARY`
 
-## FeaturizationMethodName
+## FeaturizationMethodNameType
 
 ```python
-from mypy_boto3_forecast.literals import FeaturizationMethodName
+from mypy_boto3_forecast.literals import FeaturizationMethodNameType
 ```
 
 Values:
 
 - `filling`
 
-## FilterConditionString
+## FilterConditionStringType
 
 ```python
-from mypy_boto3_forecast.literals import FilterConditionString
+from mypy_boto3_forecast.literals import FilterConditionStringType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 
 - `list_predictors`
 
-## ScalingType
+## ScalingTypeType
 
 ```python
-from mypy_boto3_forecast.literals import ScalingType
+from mypy_boto3_forecast.literals import ScalingTypeType
 ```
 
 Values:

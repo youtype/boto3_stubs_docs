@@ -3,7 +3,7 @@
 > [Index](..) > Pricing
 
 Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pricing.html#Pricing)
 type annotations stubs module
 [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
@@ -29,25 +29,25 @@ Can be used directly:
 from mypy_boto3_pricing.client import PricingClient
 ```
 
-PricingClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_services](./client.md#describe-services)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_attribute_values](./client.md#get-attribute-values)
-- [get_paginator](./client.md#get-paginator)
-- [get_products](./client.md#get-products)
+- [can_paginate](./client.md#can_paginate)
+- [describe_services](./client.md#describe_services)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_attribute_values](./client.md#get_attribute_values)
+- [get_paginator](./client.md#get_paginator)
+- [get_products](./client.md#get_products)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ExpiredNextTokenException](./client.md#expirednexttokenexception)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [NotFoundException](./client.md#notfoundexception)
+PricingClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ExpiredNextTokenException
+- InternalErrorException
+- InvalidNextTokenException
+- InvalidParameterException
+- NotFoundException
 
 ## Paginators
 
@@ -75,7 +75,7 @@ from mypy_boto3_pricing.literals import DescribeServicesPaginatorName, ...
 ```
 
 - [DescribeServicesPaginatorName](./literals.md#describeservicespaginatorname)
-- [FilterType](./literals.md#filtertype)
+- [FilterTypeType](./literals.md#filtertypetype)
 - [GetAttributeValuesPaginatorName](./literals.md#getattributevaluespaginatorname)
 - [GetProductsPaginatorName](./literals.md#getproductspaginatorname)
 

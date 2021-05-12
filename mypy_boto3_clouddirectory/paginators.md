@@ -3,7 +3,7 @@
 > [Index](..) > [CloudDirectory](.) > Paginators
 
 Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
 [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
@@ -43,7 +43,7 @@ def get_list_applied_schema_arns_paginator() -> ListAppliedSchemaArnsPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListAppliedSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAppliedSchemaArns)
+[CloudDirectory.Paginator.ListAppliedSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAppliedSchemaArns)
 
 Arguments for `ListAppliedSchemaArnsPaginator.paginate` method:
 
@@ -70,14 +70,15 @@ def get_list_attached_indices_paginator() -> ListAttachedIndicesPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListAttachedIndices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAttachedIndices)
+[CloudDirectory.Paginator.ListAttachedIndices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAttachedIndices)
 
 Arguments for `ListAttachedIndicesPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `TargetReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -99,7 +100,7 @@ def get_list_development_schema_arns_paginator() -> ListDevelopmentSchemaArnsPag
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListDevelopmentSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDevelopmentSchemaArns)
+[CloudDirectory.Paginator.ListDevelopmentSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDevelopmentSchemaArns)
 
 Arguments for `ListDevelopmentSchemaArnsPaginator.paginate` method:
 
@@ -124,11 +125,11 @@ def get_list_directories_paginator() -> ListDirectoriesPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListDirectories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDirectories)
+[CloudDirectory.Paginator.ListDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDirectories)
 
 Arguments for `ListDirectoriesPaginator.paginate` method:
 
-- `state`: [DirectoryState](./literals.md#directorystate)
+- `state`: [DirectoryStateType](./literals.md#directorystatetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -150,7 +151,7 @@ def get_list_facet_attributes_paginator() -> ListFacetAttributesPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListFacetAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetAttributes)
+[CloudDirectory.Paginator.ListFacetAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetAttributes)
 
 Arguments for `ListFacetAttributesPaginator.paginate` method:
 
@@ -177,7 +178,7 @@ def get_list_facet_names_paginator() -> ListFacetNamesPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListFacetNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetNames)
+[CloudDirectory.Paginator.ListFacetNames](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetNames)
 
 Arguments for `ListFacetNamesPaginator.paginate` method:
 
@@ -203,7 +204,7 @@ def get_list_incoming_typed_links_paginator() -> ListIncomingTypedLinksPaginator
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListIncomingTypedLinks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIncomingTypedLinks)
+[CloudDirectory.Paginator.ListIncomingTypedLinks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIncomingTypedLinks)
 
 Arguments for `ListIncomingTypedLinksPaginator.paginate` method:
 
@@ -214,7 +215,8 @@ Arguments for `ListIncomingTypedLinksPaginator.paginate` method:
   `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -236,7 +238,7 @@ def get_list_index_paginator() -> ListIndexPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListIndex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIndex)
+[CloudDirectory.Paginator.ListIndex](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIndex)
 
 Arguments for `ListIndexPaginator.paginate` method:
 
@@ -245,7 +247,8 @@ Arguments for `ListIndexPaginator.paginate` method:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `RangesOnIndexedValues`:
   `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -267,7 +270,7 @@ def get_list_managed_schema_arns_paginator() -> ListManagedSchemaArnsPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListManagedSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListManagedSchemaArns)
+[CloudDirectory.Paginator.ListManagedSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListManagedSchemaArns)
 
 Arguments for `ListManagedSchemaArnsPaginator.paginate` method:
 
@@ -293,14 +296,15 @@ def get_list_object_attributes_paginator() -> ListObjectAttributesPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListObjectAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectAttributes)
+[CloudDirectory.Paginator.ListObjectAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectAttributes)
 
 Arguments for `ListObjectAttributesPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `FacetFilter`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -323,7 +327,7 @@ def get_list_object_parent_paths_paginator() -> ListObjectParentPathsPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListObjectParentPaths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectParentPaths)
+[CloudDirectory.Paginator.ListObjectParentPaths](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectParentPaths)
 
 Arguments for `ListObjectParentPathsPaginator.paginate` method:
 
@@ -351,14 +355,15 @@ def get_list_object_policies_paginator() -> ListObjectPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListObjectPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectPolicies)
+[CloudDirectory.Paginator.ListObjectPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectPolicies)
 
 Arguments for `ListObjectPoliciesPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -380,7 +385,7 @@ def get_list_outgoing_typed_links_paginator() -> ListOutgoingTypedLinksPaginator
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListOutgoingTypedLinks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListOutgoingTypedLinks)
+[CloudDirectory.Paginator.ListOutgoingTypedLinks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListOutgoingTypedLinks)
 
 Arguments for `ListOutgoingTypedLinksPaginator.paginate` method:
 
@@ -391,7 +396,8 @@ Arguments for `ListOutgoingTypedLinksPaginator.paginate` method:
   `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -413,14 +419,15 @@ def get_list_policy_attachments_paginator() -> ListPolicyAttachmentsPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListPolicyAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPolicyAttachments)
+[CloudDirectory.Paginator.ListPolicyAttachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPolicyAttachments)
 
 Arguments for `ListPolicyAttachmentsPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `PolicyReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `ConsistencyLevel`:
+  [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -442,7 +449,7 @@ def get_list_published_schema_arns_paginator() -> ListPublishedSchemaArnsPaginat
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListPublishedSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPublishedSchemaArns)
+[CloudDirectory.Paginator.ListPublishedSchemaArns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPublishedSchemaArns)
 
 Arguments for `ListPublishedSchemaArnsPaginator.paginate` method:
 
@@ -468,7 +475,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTagsForResource)
+[CloudDirectory.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 
@@ -494,7 +501,7 @@ def get_list_typed_link_facet_attributes_paginator() -> ListTypedLinkFacetAttrib
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListTypedLinkFacetAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetAttributes)
+[CloudDirectory.Paginator.ListTypedLinkFacetAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetAttributes)
 
 Arguments for `ListTypedLinkFacetAttributesPaginator.paginate` method:
 
@@ -521,7 +528,7 @@ def get_list_typed_link_facet_names_paginator() -> ListTypedLinkFacetNamesPagina
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.ListTypedLinkFacetNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetNames)
+[CloudDirectory.Paginator.ListTypedLinkFacetNames](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetNames)
 
 Arguments for `ListTypedLinkFacetNamesPaginator.paginate` method:
 
@@ -547,7 +554,7 @@ def get_lookup_policy_paginator() -> LookupPolicyPaginator:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Paginator.LookupPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.LookupPolicy)
+[CloudDirectory.Paginator.LookupPolicy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory.Paginator.LookupPolicy)
 
 Arguments for `LookupPolicyPaginator.paginate` method:
 

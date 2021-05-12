@@ -3,7 +3,7 @@
 > [Index](..) > [Snowball](.) > SnowballClient
 
 Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball)
 type annotations stubs module
 [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
@@ -54,7 +54,7 @@ def get_snowball_client() -> SnowballClient:
 ```
 
 Boto3 documentation:
-[Snowball.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
+[Snowball.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client)
 
 ## Exceptions
 
@@ -90,7 +90,7 @@ Exceptions:
 Type annotations for `boto3.client("snowball").can_paginate` method.
 
 Boto3 documentation:
-[Snowball.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate)
+[Snowball.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.can_paginate)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Returns `bool`.
 Type annotations for `boto3.client("snowball").cancel_cluster` method.
 
 Boto3 documentation:
-[Snowball.Client.cancel_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
+[Snowball.Client.cancel_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.cancel_cluster)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("snowball").cancel_job` method.
 
 Boto3 documentation:
-[Snowball.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
+[Snowball.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.cancel_job)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("snowball").create_address` method.
 
 Boto3 documentation:
-[Snowball.Client.create_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
+[Snowball.Client.create_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.create_address)
 
 Arguments:
 
@@ -143,17 +143,19 @@ Returns
 Type annotations for `boto3.client("snowball").create_cluster` method.
 
 Boto3 documentation:
-[Snowball.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
+[Snowball.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.create_cluster)
 
 Arguments:
 
-- `JobType`: [JobType](./literals.md#jobtype) *(required)*
+- `JobType`: [JobTypeType](./literals.md#jobtypetype) *(required)*
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
   *(required)*
 - `AddressId`: `str` *(required)*
 - `RoleARN`: `str` *(required)*
-- `SnowballType`: [SnowballType](./literals.md#snowballtype) *(required)*
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption) *(required)*
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
+  *(required)*
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
+  *(required)*
 - `Description`: `str`
 - `KmsKeyARN`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
@@ -168,22 +170,22 @@ Returns
 Type annotations for `boto3.client("snowball").create_job` method.
 
 Boto3 documentation:
-[Snowball.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
+[Snowball.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.create_job)
 
 Arguments:
 
-- `JobType`: [JobType](./literals.md#jobtype)
+- `JobType`: [JobTypeType](./literals.md#jobtypetype)
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `Description`: `str`
 - `AddressId`: `str`
 - `KmsKeyARN`: `str`
 - `RoleARN`: `str`
 - `SnowballCapacityPreference`:
-  [SnowballCapacity](./literals.md#snowballcapacity)
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+  [SnowballCapacityType](./literals.md#snowballcapacitytype)
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ClusterId`: `str`
-- `SnowballType`: [SnowballType](./literals.md#snowballtype)
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 - `ForwardingAddressId`: `str`
 - `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - `DeviceConfiguration`:
@@ -198,14 +200,14 @@ Type annotations for `boto3.client("snowball").create_long_term_pricing`
 method.
 
 Boto3 documentation:
-[Snowball.Client.create_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
+[Snowball.Client.create_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
 
 Arguments:
 
-- `LongTermPricingType`: [LongTermPricingType](./literals.md#longtermpricingtype)
-  *(required)*
+- `LongTermPricingType`:
+  [LongTermPricingTypeType](./literals.md#longtermpricingtypetype) *(required)*
 - `IsLongTermPricingAutoRenew`: `bool`
-- `SnowballType`: [SnowballType](./literals.md#snowballtype)
+- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 
 Returns
 [CreateLongTermPricingResultTypeDef](./type_defs.md#createlongtermpricingresulttypedef).
@@ -216,12 +218,12 @@ Type annotations for `boto3.client("snowball").create_return_shipping_label`
 method.
 
 Boto3 documentation:
-[Snowball.Client.create_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
+[Snowball.Client.create_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
 
 Arguments:
 
 - `JobId`: `str` *(required)*
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 
 Returns
 [CreateReturnShippingLabelResultTypeDef](./type_defs.md#createreturnshippinglabelresulttypedef).
@@ -231,7 +233,7 @@ Returns
 Type annotations for `boto3.client("snowball").describe_address` method.
 
 Boto3 documentation:
-[Snowball.Client.describe_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
+[Snowball.Client.describe_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.describe_address)
 
 Arguments:
 
@@ -245,7 +247,7 @@ Returns
 Type annotations for `boto3.client("snowball").describe_addresses` method.
 
 Boto3 documentation:
-[Snowball.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
+[Snowball.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.describe_addresses)
 
 Arguments:
 
@@ -260,7 +262,7 @@ Returns
 Type annotations for `boto3.client("snowball").describe_cluster` method.
 
 Boto3 documentation:
-[Snowball.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
+[Snowball.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.describe_cluster)
 
 Arguments:
 
@@ -274,7 +276,7 @@ Returns
 Type annotations for `boto3.client("snowball").describe_job` method.
 
 Boto3 documentation:
-[Snowball.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
+[Snowball.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.describe_job)
 
 Arguments:
 
@@ -288,7 +290,7 @@ Type annotations for `boto3.client("snowball").describe_return_shipping_label`
 method.
 
 Boto3 documentation:
-[Snowball.Client.describe_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
+[Snowball.Client.describe_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
 
 Arguments:
 
@@ -302,7 +304,7 @@ Returns
 Type annotations for `boto3.client("snowball").generate_presigned_url` method.
 
 Boto3 documentation:
-[Snowball.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url)
+[Snowball.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.generate_presigned_url)
 
 Arguments:
 
@@ -318,7 +320,7 @@ Returns `str`.
 Type annotations for `boto3.client("snowball").get_job_manifest` method.
 
 Boto3 documentation:
-[Snowball.Client.get_job_manifest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
+[Snowball.Client.get_job_manifest](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.get_job_manifest)
 
 Arguments:
 
@@ -332,7 +334,7 @@ Returns
 Type annotations for `boto3.client("snowball").get_job_unlock_code` method.
 
 Boto3 documentation:
-[Snowball.Client.get_job_unlock_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
+[Snowball.Client.get_job_unlock_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
 
 Arguments:
 
@@ -346,7 +348,7 @@ Returns
 Type annotations for `boto3.client("snowball").get_snowball_usage` method.
 
 Boto3 documentation:
-[Snowball.Client.get_snowball_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
+[Snowball.Client.get_snowball_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
 
 Returns
 [GetSnowballUsageResultTypeDef](./type_defs.md#getsnowballusageresulttypedef).
@@ -356,7 +358,7 @@ Returns
 Type annotations for `boto3.client("snowball").get_software_updates` method.
 
 Boto3 documentation:
-[Snowball.Client.get_software_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
+[Snowball.Client.get_software_updates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.get_software_updates)
 
 Arguments:
 
@@ -370,7 +372,7 @@ Returns
 Type annotations for `boto3.client("snowball").list_cluster_jobs` method.
 
 Boto3 documentation:
-[Snowball.Client.list_cluster_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
+[Snowball.Client.list_cluster_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
 
 Arguments:
 
@@ -386,7 +388,7 @@ Returns
 Type annotations for `boto3.client("snowball").list_clusters` method.
 
 Boto3 documentation:
-[Snowball.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
+[Snowball.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.list_clusters)
 
 Arguments:
 
@@ -400,7 +402,7 @@ Returns [ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef).
 Type annotations for `boto3.client("snowball").list_compatible_images` method.
 
 Boto3 documentation:
-[Snowball.Client.list_compatible_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
+[Snowball.Client.list_compatible_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.list_compatible_images)
 
 Arguments:
 
@@ -415,7 +417,7 @@ Returns
 Type annotations for `boto3.client("snowball").list_jobs` method.
 
 Boto3 documentation:
-[Snowball.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
+[Snowball.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.list_jobs)
 
 Arguments:
 
@@ -429,7 +431,7 @@ Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 Type annotations for `boto3.client("snowball").list_long_term_pricing` method.
 
 Boto3 documentation:
-[Snowball.Client.list_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
+[Snowball.Client.list_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
 
 Arguments:
 
@@ -444,7 +446,7 @@ Returns
 Type annotations for `boto3.client("snowball").update_cluster` method.
 
 Boto3 documentation:
-[Snowball.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
+[Snowball.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.update_cluster)
 
 Arguments:
 
@@ -453,7 +455,7 @@ Arguments:
 - `Description`: `str`
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `AddressId`: `str`
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ForwardingAddressId`: `str`
 
@@ -464,7 +466,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("snowball").update_job` method.
 
 Boto3 documentation:
-[Snowball.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
+[Snowball.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.update_job)
 
 Arguments:
 
@@ -473,10 +475,10 @@ Arguments:
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `AddressId`: `str`
-- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `Description`: `str`
 - `SnowballCapacityPreference`:
-  [SnowballCapacity](./literals.md#snowballcapacity)
+  [SnowballCapacityType](./literals.md#snowballcapacitytype)
 - `ForwardingAddressId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -487,12 +489,13 @@ Type annotations for `boto3.client("snowball").update_job_shipment_state`
 method.
 
 Boto3 documentation:
-[Snowball.Client.update_job_shipment_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
+[Snowball.Client.update_job_shipment_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
 
 Arguments:
 
 - `JobId`: `str` *(required)*
-- `ShipmentState`: [ShipmentState](./literals.md#shipmentstate) *(required)*
+- `ShipmentState`: [ShipmentStateType](./literals.md#shipmentstatetype)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -502,7 +505,7 @@ Type annotations for `boto3.client("snowball").update_long_term_pricing`
 method.
 
 Boto3 documentation:
-[Snowball.Client.update_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
+[Snowball.Client.update_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
 
 Arguments:
 

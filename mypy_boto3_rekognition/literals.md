@@ -3,46 +3,46 @@
 > [Index](..) > [Rekognition](.) > Literals
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 - [Literals for boto3 Rekognition module](#literals-for-boto3-rekognition-module)
-  - [Attribute](#attribute)
-  - [BodyPart](#bodypart)
-  - [CelebrityRecognitionSortBy](#celebrityrecognitionsortby)
-  - [ContentClassifier](#contentclassifier)
-  - [ContentModerationSortBy](#contentmoderationsortby)
+  - [AttributeType](#attributetype)
+  - [BodyPartType](#bodyparttype)
+  - [CelebrityRecognitionSortByType](#celebrityrecognitionsortbytype)
+  - [ContentClassifierType](#contentclassifiertype)
+  - [ContentModerationSortByType](#contentmoderationsortbytype)
   - [DescribeProjectVersionsPaginatorName](#describeprojectversionspaginatorname)
   - [DescribeProjectsPaginatorName](#describeprojectspaginatorname)
-  - [EmotionName](#emotionname)
-  - [FaceAttributes](#faceattributes)
-  - [FaceSearchSortBy](#facesearchsortby)
-  - [GenderType](#gendertype)
-  - [LabelDetectionSortBy](#labeldetectionsortby)
-  - [LandmarkType](#landmarktype)
+  - [EmotionNameType](#emotionnametype)
+  - [FaceAttributesType](#faceattributestype)
+  - [FaceSearchSortByType](#facesearchsortbytype)
+  - [GenderTypeType](#gendertypetype)
+  - [LabelDetectionSortByType](#labeldetectionsortbytype)
+  - [LandmarkTypeType](#landmarktypetype)
   - [ListCollectionsPaginatorName](#listcollectionspaginatorname)
   - [ListFacesPaginatorName](#listfacespaginatorname)
   - [ListStreamProcessorsPaginatorName](#liststreamprocessorspaginatorname)
-  - [OrientationCorrection](#orientationcorrection)
-  - [PersonTrackingSortBy](#persontrackingsortby)
-  - [ProjectStatus](#projectstatus)
+  - [OrientationCorrectionType](#orientationcorrectiontype)
+  - [PersonTrackingSortByType](#persontrackingsortbytype)
+  - [ProjectStatusType](#projectstatustype)
   - [ProjectVersionRunningWaiterName](#projectversionrunningwaitername)
-  - [ProjectVersionStatus](#projectversionstatus)
+  - [ProjectVersionStatusType](#projectversionstatustype)
   - [ProjectVersionTrainingCompletedWaiterName](#projectversiontrainingcompletedwaitername)
-  - [ProtectiveEquipmentType](#protectiveequipmenttype)
-  - [QualityFilter](#qualityfilter)
-  - [Reason](#reason)
-  - [SegmentType](#segmenttype)
-  - [StreamProcessorStatus](#streamprocessorstatus)
-  - [TechnicalCueType](#technicalcuetype)
-  - [TextTypes](#texttypes)
-  - [VideoJobStatus](#videojobstatus)
+  - [ProtectiveEquipmentTypeType](#protectiveequipmenttypetype)
+  - [QualityFilterType](#qualityfiltertype)
+  - [ReasonType](#reasontype)
+  - [SegmentTypeType](#segmenttypetype)
+  - [StreamProcessorStatusType](#streamprocessorstatustype)
+  - [TechnicalCueTypeType](#technicalcuetypetype)
+  - [TextTypesType](#texttypestype)
+  - [VideoJobStatusType](#videojobstatustype)
 
-## Attribute
+## AttributeType
 
 ```python
-from mypy_boto3_rekognition.literals import Attribute
+from mypy_boto3_rekognition.literals import AttributeType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `ALL`
 - `DEFAULT`
 
-## BodyPart
+## BodyPartType
 
 ```python
-from mypy_boto3_rekognition.literals import BodyPart
+from mypy_boto3_rekognition.literals import BodyPartType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 - `LEFT_HAND`
 - `RIGHT_HAND`
 
-## CelebrityRecognitionSortBy
+## CelebrityRecognitionSortByType
 
 ```python
-from mypy_boto3_rekognition.literals import CelebrityRecognitionSortBy
+from mypy_boto3_rekognition.literals import CelebrityRecognitionSortByType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `ID`
 - `TIMESTAMP`
 
-## ContentClassifier
+## ContentClassifierType
 
 ```python
-from mypy_boto3_rekognition.literals import ContentClassifier
+from mypy_boto3_rekognition.literals import ContentClassifierType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `FreeOfAdultContent`
 - `FreeOfPersonallyIdentifiableInformation`
 
-## ContentModerationSortBy
+## ContentModerationSortByType
 
 ```python
-from mypy_boto3_rekognition.literals import ContentModerationSortBy
+from mypy_boto3_rekognition.literals import ContentModerationSortByType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 
 - `describe_projects`
 
-## EmotionName
+## EmotionNameType
 
 ```python
-from mypy_boto3_rekognition.literals import EmotionName
+from mypy_boto3_rekognition.literals import EmotionNameType
 ```
 
 Values:
@@ -134,10 +134,10 @@ Values:
 - `SURPRISED`
 - `UNKNOWN`
 
-## FaceAttributes
+## FaceAttributesType
 
 ```python
-from mypy_boto3_rekognition.literals import FaceAttributes
+from mypy_boto3_rekognition.literals import FaceAttributesType
 ```
 
 Values:
@@ -145,10 +145,10 @@ Values:
 - `ALL`
 - `DEFAULT`
 
-## FaceSearchSortBy
+## FaceSearchSortByType
 
 ```python
-from mypy_boto3_rekognition.literals import FaceSearchSortBy
+from mypy_boto3_rekognition.literals import FaceSearchSortByType
 ```
 
 Values:
@@ -156,10 +156,10 @@ Values:
 - `INDEX`
 - `TIMESTAMP`
 
-## GenderType
+## GenderTypeType
 
 ```python
-from mypy_boto3_rekognition.literals import GenderType
+from mypy_boto3_rekognition.literals import GenderTypeType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 - `Female`
 - `Male`
 
-## LabelDetectionSortBy
+## LabelDetectionSortByType
 
 ```python
-from mypy_boto3_rekognition.literals import LabelDetectionSortBy
+from mypy_boto3_rekognition.literals import LabelDetectionSortByType
 ```
 
 Values:
@@ -178,10 +178,10 @@ Values:
 - `NAME`
 - `TIMESTAMP`
 
-## LandmarkType
+## LandmarkTypeType
 
 ```python
-from mypy_boto3_rekognition.literals import LandmarkType
+from mypy_boto3_rekognition.literals import LandmarkTypeType
 ```
 
 Values:
@@ -247,10 +247,10 @@ Values:
 
 - `list_stream_processors`
 
-## OrientationCorrection
+## OrientationCorrectionType
 
 ```python
-from mypy_boto3_rekognition.literals import OrientationCorrection
+from mypy_boto3_rekognition.literals import OrientationCorrectionType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `ROTATE_270`
 - `ROTATE_90`
 
-## PersonTrackingSortBy
+## PersonTrackingSortByType
 
 ```python
-from mypy_boto3_rekognition.literals import PersonTrackingSortBy
+from mypy_boto3_rekognition.literals import PersonTrackingSortByType
 ```
 
 Values:
@@ -271,10 +271,10 @@ Values:
 - `INDEX`
 - `TIMESTAMP`
 
-## ProjectStatus
+## ProjectStatusType
 
 ```python
-from mypy_boto3_rekognition.literals import ProjectStatus
+from mypy_boto3_rekognition.literals import ProjectStatusType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 
 - `project_version_running`
 
-## ProjectVersionStatus
+## ProjectVersionStatusType
 
 ```python
-from mypy_boto3_rekognition.literals import ProjectVersionStatus
+from mypy_boto3_rekognition.literals import ProjectVersionStatusType
 ```
 
 Values:
@@ -321,10 +321,10 @@ Values:
 
 - `project_version_training_completed`
 
-## ProtectiveEquipmentType
+## ProtectiveEquipmentTypeType
 
 ```python
-from mypy_boto3_rekognition.literals import ProtectiveEquipmentType
+from mypy_boto3_rekognition.literals import ProtectiveEquipmentTypeType
 ```
 
 Values:
@@ -333,10 +333,10 @@ Values:
 - `HAND_COVER`
 - `HEAD_COVER`
 
-## QualityFilter
+## QualityFilterType
 
 ```python
-from mypy_boto3_rekognition.literals import QualityFilter
+from mypy_boto3_rekognition.literals import QualityFilterType
 ```
 
 Values:
@@ -347,10 +347,10 @@ Values:
 - `MEDIUM`
 - `NONE`
 
-## Reason
+## ReasonType
 
 ```python
-from mypy_boto3_rekognition.literals import Reason
+from mypy_boto3_rekognition.literals import ReasonType
 ```
 
 Values:
@@ -363,10 +363,10 @@ Values:
 - `LOW_SHARPNESS`
 - `SMALL_BOUNDING_BOX`
 
-## SegmentType
+## SegmentTypeType
 
 ```python
-from mypy_boto3_rekognition.literals import SegmentType
+from mypy_boto3_rekognition.literals import SegmentTypeType
 ```
 
 Values:
@@ -374,10 +374,10 @@ Values:
 - `SHOT`
 - `TECHNICAL_CUE`
 
-## StreamProcessorStatus
+## StreamProcessorStatusType
 
 ```python
-from mypy_boto3_rekognition.literals import StreamProcessorStatus
+from mypy_boto3_rekognition.literals import StreamProcessorStatusType
 ```
 
 Values:
@@ -388,10 +388,10 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
-## TechnicalCueType
+## TechnicalCueTypeType
 
 ```python
-from mypy_boto3_rekognition.literals import TechnicalCueType
+from mypy_boto3_rekognition.literals import TechnicalCueTypeType
 ```
 
 Values:
@@ -400,10 +400,10 @@ Values:
 - `ColorBars`
 - `EndCredits`
 
-## TextTypes
+## TextTypesType
 
 ```python
-from mypy_boto3_rekognition.literals import TextTypes
+from mypy_boto3_rekognition.literals import TextTypesType
 ```
 
 Values:
@@ -411,10 +411,10 @@ Values:
 - `LINE`
 - `WORD`
 
-## VideoJobStatus
+## VideoJobStatusType
 
 ```python
-from mypy_boto3_rekognition.literals import VideoJobStatus
+from mypy_boto3_rekognition.literals import VideoJobStatusType
 ```
 
 Values:

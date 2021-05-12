@@ -3,7 +3,7 @@
 > [Index](..) > [ComputeOptimizer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -88,7 +88,7 @@ Optional fields:
 - `accountId`: `str`
 - `autoScalingGroupArn`: `str`
 - `autoScalingGroupName`: `str`
-- `finding`: [Finding](./literals.md#finding)
+- `finding`: [FindingType](./literals.md#findingtype)
 - `utilizationMetrics`:
   `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`
@@ -118,7 +118,8 @@ from mypy_boto3_compute_optimizer.type_defs import EBSFilterTypeDef
 
 Optional fields:
 
-- `name`: `Literal['Finding']` (see [EBSFilterName](./literals.md#ebsfiltername))
+- `name`: `Literal['Finding']` (see
+  [EBSFilterNameType](./literals.md#ebsfilternametype))
 - `values`: `List`\[`str`\]
 
 ## EBSUtilizationMetricTypeDef
@@ -129,8 +130,8 @@ from mypy_boto3_compute_optimizer.type_defs import EBSUtilizationMetricTypeDef
 
 Optional fields:
 
-- `name`: [EBSMetricName](./literals.md#ebsmetricname)
-- `statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `name`: [EBSMetricNameType](./literals.md#ebsmetricnametype)
+- `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
 
 ## ExportAutoScalingGroupRecommendationsResponseTypeDef
@@ -173,7 +174,7 @@ from mypy_boto3_compute_optimizer.type_defs import FilterTypeDef
 
 Optional fields:
 
-- `name`: [FilterName](./literals.md#filtername)
+- `name`: [FilterNameType](./literals.md#filternametype)
 - `values`: `List`\[`str`\]
 
 ## GetAutoScalingGroupRecommendationsResponseTypeDef
@@ -237,7 +238,7 @@ from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusResponseTy
 
 Optional fields:
 
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `statusReason`: `str`
 - `memberAccountsEnrolled`: `bool`
 
@@ -303,7 +304,7 @@ Optional fields:
 - `accountId`: `str`
 - `instanceName`: `str`
 - `currentInstanceType`: `str`
-- `finding`: [Finding](./literals.md#finding)
+- `finding`: [FindingType](./literals.md#findingtype)
 - `utilizationMetrics`:
   `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`
@@ -321,7 +322,7 @@ from mypy_boto3_compute_optimizer.type_defs import JobFilterTypeDef
 
 Optional fields:
 
-- `name`: [JobFilterName](./literals.md#jobfiltername)
+- `name`: [JobFilterNameType](./literals.md#jobfilternametype)
 - `values`: `List`\[`str`\]
 
 ## LambdaFunctionMemoryProjectedMetricTypeDef
@@ -333,9 +334,9 @@ from mypy_boto3_compute_optimizer.type_defs import LambdaFunctionMemoryProjected
 Optional fields:
 
 - `name`: `Literal['Duration']` (see
-  [LambdaFunctionMemoryMetricName](./literals.md#lambdafunctionmemorymetricname))
+  [LambdaFunctionMemoryMetricNameType](./literals.md#lambdafunctionmemorymetricnametype))
 - `statistic`:
-  [LambdaFunctionMemoryMetricStatistic](./literals.md#lambdafunctionmemorymetricstatistic)
+  [LambdaFunctionMemoryMetricStatisticType](./literals.md#lambdafunctionmemorymetricstatistictype)
 - `value`: `float`
 
 ## LambdaFunctionMemoryRecommendationOptionTypeDef
@@ -360,7 +361,7 @@ from mypy_boto3_compute_optimizer.type_defs import LambdaFunctionRecommendationF
 Optional fields:
 
 - `name`:
-  [LambdaFunctionRecommendationFilterName](./literals.md#lambdafunctionrecommendationfiltername)
+  [LambdaFunctionRecommendationFilterNameType](./literals.md#lambdafunctionrecommendationfilternametype)
 - `values`: `List`\[`str`\]
 
 ## LambdaFunctionRecommendationTypeDef
@@ -381,9 +382,9 @@ Optional fields:
 - `lookbackPeriodInDays`: `float`
 - `lastRefreshTimestamp`: `datetime`
 - `finding`:
-  [LambdaFunctionRecommendationFinding](./literals.md#lambdafunctionrecommendationfinding)
+  [LambdaFunctionRecommendationFindingType](./literals.md#lambdafunctionrecommendationfindingtype)
 - `findingReasonCodes`:
-  `List`\[[LambdaFunctionRecommendationFindingReasonCode](./literals.md#lambdafunctionrecommendationfindingreasoncode)\]
+  `List`\[[LambdaFunctionRecommendationFindingReasonCodeType](./literals.md#lambdafunctionrecommendationfindingreasoncodetype)\]
 - `memorySizeRecommendationOptions`:
   `List`\[[LambdaFunctionMemoryRecommendationOptionTypeDef](./type_defs.md#lambdafunctionmemoryrecommendationoptiontypedef)\]
 
@@ -395,9 +396,10 @@ from mypy_boto3_compute_optimizer.type_defs import LambdaFunctionUtilizationMetr
 
 Optional fields:
 
-- `name`: [LambdaFunctionMetricName](./literals.md#lambdafunctionmetricname)
+- `name`:
+  [LambdaFunctionMetricNameType](./literals.md#lambdafunctionmetricnametype)
 - `statistic`:
-  [LambdaFunctionMetricStatistic](./literals.md#lambdafunctionmetricstatistic)
+  [LambdaFunctionMetricStatisticType](./literals.md#lambdafunctionmetricstatistictype)
 - `value`: `float`
 
 ## ProjectedMetricTypeDef
@@ -408,7 +410,7 @@ from mypy_boto3_compute_optimizer.type_defs import ProjectedMetricTypeDef
 
 Optional fields:
 
-- `name`: [MetricName](./literals.md#metricname)
+- `name`: [MetricNameType](./literals.md#metricnametype)
 - `timestamps`: `List`\[`datetime`\]
 - `values`: `List`\[`float`\]
 
@@ -420,7 +422,7 @@ from mypy_boto3_compute_optimizer.type_defs import ReasonCodeSummaryTypeDef
 
 Optional fields:
 
-- `name`: [FindingReasonCode](./literals.md#findingreasoncode)
+- `name`: [FindingReasonCodeType](./literals.md#findingreasoncodetype)
 - `value`: `float`
 
 ## RecommendationExportJobTypeDef
@@ -434,8 +436,8 @@ Optional fields:
 - `jobId`: `str`
 - `destination`:
   [ExportDestinationTypeDef](./type_defs.md#exportdestinationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `creationTimestamp`: `datetime`
 - `lastUpdatedTimestamp`: `datetime`
 - `failureReason`: `str`
@@ -450,7 +452,7 @@ Optional fields:
 
 - `recommendationSourceArn`: `str`
 - `recommendationSourceType`:
-  [RecommendationSourceType](./literals.md#recommendationsourcetype)
+  [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
 
 ## RecommendationSummaryTypeDef
 
@@ -462,7 +464,7 @@ Optional fields:
 
 - `summaries`: `List`\[[SummaryTypeDef](./type_defs.md#summarytypedef)\]
 - `recommendationResourceType`:
-  [RecommendationSourceType](./literals.md#recommendationsourcetype)
+  [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
 - `accountId`: `str`
 
 ## RecommendedOptionProjectedMetricTypeDef
@@ -509,7 +511,7 @@ from mypy_boto3_compute_optimizer.type_defs import SummaryTypeDef
 
 Optional fields:
 
-- `name`: [Finding](./literals.md#finding)
+- `name`: [FindingType](./literals.md#findingtype)
 - `value`: `float`
 - `reasonCodeSummaries`:
   `List`\[[ReasonCodeSummaryTypeDef](./type_defs.md#reasoncodesummarytypedef)\]
@@ -522,7 +524,7 @@ from mypy_boto3_compute_optimizer.type_defs import UpdateEnrollmentStatusRespons
 
 Optional fields:
 
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `statusReason`: `str`
 
 ## UtilizationMetricTypeDef
@@ -533,8 +535,8 @@ from mypy_boto3_compute_optimizer.type_defs import UtilizationMetricTypeDef
 
 Optional fields:
 
-- `name`: [MetricName](./literals.md#metricname)
-- `statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `name`: [MetricNameType](./literals.md#metricnametype)
+- `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
 
 ## VolumeConfigurationTypeDef
@@ -577,7 +579,7 @@ Optional fields:
 - `accountId`: `str`
 - `currentConfiguration`:
   [VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)
-- `finding`: [EBSFinding](./literals.md#ebsfinding)
+- `finding`: [EBSFindingType](./literals.md#ebsfindingtype)
 - `utilizationMetrics`:
   `List`\[[EBSUtilizationMetricTypeDef](./type_defs.md#ebsutilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`

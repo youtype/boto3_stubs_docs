@@ -3,7 +3,7 @@
 > [Index](..) > [RAM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM)
 type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
@@ -319,9 +319,9 @@ Optional fields:
 - `resourceShareName`: `str`
 - `associatedEntity`: `str`
 - `associationType`:
-  [ResourceShareAssociationType](./literals.md#resourceshareassociationtype)
+  [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
 - `status`:
-  [ResourceShareAssociationStatus](./literals.md#resourceshareassociationstatus)
+  [ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype)
 - `statusMessage`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
@@ -342,7 +342,7 @@ Optional fields:
 - `receiverAccountId`: `str`
 - `invitationTimestamp`: `datetime`
 - `status`:
-  [ResourceShareInvitationStatus](./literals.md#resourceshareinvitationstatus)
+  [ResourceShareInvitationStatusType](./literals.md#resourceshareinvitationstatustype)
 - `resourceShareAssociations`:
   `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
 
@@ -392,12 +392,13 @@ Optional fields:
 - `name`: `str`
 - `owningAccountId`: `str`
 - `allowExternalPrincipals`: `bool`
-- `status`: [ResourceShareStatus](./literals.md#resourcesharestatus)
+- `status`: [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `statusMessage`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
-- `featureSet`: [ResourceShareFeatureSet](./literals.md#resourcesharefeatureset)
+- `featureSet`:
+  [ResourceShareFeatureSetType](./literals.md#resourcesharefeaturesettype)
 
 ## ResourceTypeDef
 
@@ -411,7 +412,7 @@ Optional fields:
 - `type`: `str`
 - `resourceShareArn`: `str`
 - `resourceGroupArn`: `str`
-- `status`: [ResourceStatus](./literals.md#resourcestatus)
+- `status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `statusMessage`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`

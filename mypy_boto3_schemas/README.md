@@ -3,7 +3,7 @@
 > [Index](..) > Schemas
 
 Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/schemas.html#Schemas)
 type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
@@ -30,59 +30,59 @@ Can be used directly:
 from mypy_boto3_schemas.client import SchemasClient
 ```
 
-SchemasClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_discoverer](./client.md#create-discoverer)
-- [create_registry](./client.md#create-registry)
-- [create_schema](./client.md#create-schema)
-- [delete_discoverer](./client.md#delete-discoverer)
-- [delete_registry](./client.md#delete-registry)
-- [delete_resource_policy](./client.md#delete-resource-policy)
-- [delete_schema](./client.md#delete-schema)
-- [delete_schema_version](./client.md#delete-schema-version)
-- [describe_code_binding](./client.md#describe-code-binding)
-- [describe_discoverer](./client.md#describe-discoverer)
-- [describe_registry](./client.md#describe-registry)
-- [describe_schema](./client.md#describe-schema)
-- [export_schema](./client.md#export-schema)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_code_binding_source](./client.md#get-code-binding-source)
-- [get_discovered_schema](./client.md#get-discovered-schema)
-- [get_paginator](./client.md#get-paginator)
-- [get_resource_policy](./client.md#get-resource-policy)
-- [get_waiter](./client.md#get-waiter)
-- [list_discoverers](./client.md#list-discoverers)
-- [list_registries](./client.md#list-registries)
-- [list_schema_versions](./client.md#list-schema-versions)
-- [list_schemas](./client.md#list-schemas)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_code_binding](./client.md#put-code-binding)
-- [put_resource_policy](./client.md#put-resource-policy)
-- [search_schemas](./client.md#search-schemas)
-- [start_discoverer](./client.md#start-discoverer)
-- [stop_discoverer](./client.md#stop-discoverer)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_discoverer](./client.md#update-discoverer)
-- [update_registry](./client.md#update-registry)
-- [update_schema](./client.md#update-schema)
+- [can_paginate](./client.md#can_paginate)
+- [create_discoverer](./client.md#create_discoverer)
+- [create_registry](./client.md#create_registry)
+- [create_schema](./client.md#create_schema)
+- [delete_discoverer](./client.md#delete_discoverer)
+- [delete_registry](./client.md#delete_registry)
+- [delete_resource_policy](./client.md#delete_resource_policy)
+- [delete_schema](./client.md#delete_schema)
+- [delete_schema_version](./client.md#delete_schema_version)
+- [describe_code_binding](./client.md#describe_code_binding)
+- [describe_discoverer](./client.md#describe_discoverer)
+- [describe_registry](./client.md#describe_registry)
+- [describe_schema](./client.md#describe_schema)
+- [export_schema](./client.md#export_schema)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_code_binding_source](./client.md#get_code_binding_source)
+- [get_discovered_schema](./client.md#get_discovered_schema)
+- [get_paginator](./client.md#get_paginator)
+- [get_resource_policy](./client.md#get_resource_policy)
+- [get_waiter](./client.md#get_waiter)
+- [list_discoverers](./client.md#list_discoverers)
+- [list_registries](./client.md#list_registries)
+- [list_schema_versions](./client.md#list_schema_versions)
+- [list_schemas](./client.md#list_schemas)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_code_binding](./client.md#put_code_binding)
+- [put_resource_policy](./client.md#put_resource_policy)
+- [search_schemas](./client.md#search_schemas)
+- [start_discoverer](./client.md#start_discoverer)
+- [stop_discoverer](./client.md#stop_discoverer)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_discoverer](./client.md#update_discoverer)
+- [update_registry](./client.md#update_registry)
+- [update_schema](./client.md#update_schema)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [GoneException](./client.md#goneexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [PreconditionFailedException](./client.md#preconditionfailedexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+SchemasClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- ForbiddenException
+- GoneException
+- InternalServerErrorException
+- NotFoundException
+- PreconditionFailedException
+- ServiceUnavailableException
+- TooManyRequestsException
+- UnauthorizedException
 
 ## Paginators
 
@@ -125,8 +125,8 @@ from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName, ...
 ```
 
 - [CodeBindingExistsWaiterName](./literals.md#codebindingexistswaitername)
-- [CodeGenerationStatus](./literals.md#codegenerationstatus)
-- [DiscovererState](./literals.md#discovererstate)
+- [CodeGenerationStatusType](./literals.md#codegenerationstatustype)
+- [DiscovererStateType](./literals.md#discovererstatetype)
 - [ListDiscoverersPaginatorName](./literals.md#listdiscovererspaginatorname)
 - [ListRegistriesPaginatorName](./literals.md#listregistriespaginatorname)
 - [ListSchemaVersionsPaginatorName](./literals.md#listschemaversionspaginatorname)

@@ -3,7 +3,7 @@
 > [Index](..) > [Redshift](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift)
 type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
@@ -208,9 +208,9 @@ from mypy_boto3_redshift.type_defs import AquaConfigurationTypeDef
 
 Optional fields:
 
-- `AquaStatus`: [AquaStatus](./literals.md#aquastatus)
+- `AquaStatus`: [AquaStatusType](./literals.md#aquastatustype)
 - `AquaConfigurationStatus`:
-  [AquaConfigurationStatus](./literals.md#aquaconfigurationstatus)
+  [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
 ## AttributeValueTargetTypeDef
 
@@ -288,7 +288,8 @@ from mypy_boto3_redshift.type_defs import ClusterAssociatedToScheduleTypeDef
 Optional fields:
 
 - `ClusterIdentifier`: `str`
-- `ScheduleAssociationState`: [ScheduleState](./literals.md#schedulestate)
+- `ScheduleAssociationState`:
+  [ScheduleStateType](./literals.md#schedulestatetype)
 
 ## ClusterCredentialsTypeDef
 
@@ -560,7 +561,7 @@ Optional fields:
 - `DeferredMaintenanceWindows`:
   `List`\[[DeferredMaintenanceWindowTypeDef](./type_defs.md#deferredmaintenancewindowtypedef)\]
 - `SnapshotScheduleIdentifier`: `str`
-- `SnapshotScheduleState`: [ScheduleState](./literals.md#schedulestate)
+- `SnapshotScheduleState`: [ScheduleStateType](./literals.md#schedulestatetype)
 - `ExpectedNextSnapshotScheduleTime`: `datetime`
 - `ExpectedNextSnapshotScheduleTimeStatus`: `str`
 - `NextMaintenanceWindowStartTime`: `datetime`
@@ -932,7 +933,7 @@ Optional fields:
 - `ClusterIdentifier`: `str`
 - `AuthorizeTime`: `datetime`
 - `ClusterStatus`: `str`
-- `Status`: [AuthorizationStatus](./literals.md#authorizationstatus)
+- `Status`: [AuthorizationStatusType](./literals.md#authorizationstatustype)
 - `AllowedAllVPCs`: `bool`
 - `AllowedVPCs`: `List`\[`str`\]
 - `EndpointCount`: `int`
@@ -1026,7 +1027,7 @@ from mypy_boto3_redshift.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Severity`: `str`
@@ -1275,7 +1276,7 @@ Optional fields:
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
 - `EstimatedDiskUtilizationPercent`: `float`
-- `Mode`: [Mode](./literals.md#mode)
+- `Mode`: [ModeType](./literals.md#modetype)
 
 ## NodeConfigurationOptionsFilterTypeDef
 
@@ -1286,8 +1287,8 @@ from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsFilterTypeDef
 Optional fields:
 
 - `Name`:
-  [NodeConfigurationOptionsFilterName](./literals.md#nodeconfigurationoptionsfiltername)
-- `Operator`: [OperatorType](./literals.md#operatortype)
+  [NodeConfigurationOptionsFilterNameType](./literals.md#nodeconfigurationoptionsfilternametype)
+- `Operator`: [OperatorTypeType](./literals.md#operatortypetype)
 - `Values`: `List`\[`str`\]
 
 ## NodeConfigurationOptionsMessageTypeDef
@@ -1354,7 +1355,7 @@ Optional fields:
 - `Source`: `str`
 - `DataType`: `str`
 - `AllowedValues`: `str`
-- `ApplyType`: [ParameterApplyType](./literals.md#parameterapplytype)
+- `ApplyType`: [ParameterApplyTypeType](./literals.md#parameterapplytypetype)
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
 
@@ -1368,7 +1369,8 @@ Optional fields:
 
 - `DatabaseName`: `str`
 - `PartnerName`: `str`
-- `Status`: [PartnerIntegrationStatus](./literals.md#partnerintegrationstatus)
+- `Status`:
+  [PartnerIntegrationStatusType](./literals.md#partnerintegrationstatustype)
 - `StatusMessage`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
@@ -1473,7 +1475,7 @@ Optional fields:
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 - `ReservedNodeOfferingType`:
-  [ReservedNodeOfferingType](./literals.md#reservednodeofferingtype)
+  [ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype)
 
 ## ReservedNodeOfferingsMessageTypeDef
 
@@ -1509,7 +1511,7 @@ Optional fields:
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 - `ReservedNodeOfferingType`:
-  [ReservedNodeOfferingType](./literals.md#reservednodeofferingtype)
+  [ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype)
 
 ## ReservedNodesMessageTypeDef
 
@@ -1693,7 +1695,8 @@ from mypy_boto3_redshift.type_defs import ScheduledActionFilterTypeDef
 
 Required fields:
 
-- `Name`: [ScheduledActionFilterName](./literals.md#scheduledactionfiltername)
+- `Name`:
+  [ScheduledActionFilterNameType](./literals.md#scheduledactionfilternametype)
 - `Values`: `List`\[`str`\]
 
 ## ScheduledActionTypeDef
@@ -1710,7 +1713,7 @@ Optional fields:
 - `Schedule`: `str`
 - `IamRole`: `str`
 - `ScheduledActionDescription`: `str`
-- `State`: [ScheduledActionState](./literals.md#scheduledactionstate)
+- `State`: [ScheduledActionStateType](./literals.md#scheduledactionstatetype)
 - `NextInvocations`: `List`\[`datetime`\]
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1816,11 +1819,11 @@ from mypy_boto3_redshift.type_defs import SnapshotSortingEntityTypeDef
 Required fields:
 
 - `Attribute`:
-  [SnapshotAttributeToSortBy](./literals.md#snapshotattributetosortby)
+  [SnapshotAttributeToSortByType](./literals.md#snapshotattributetosortbytype)
 
 Optional fields:
 
-- `SortOrder`: [SortByOrder](./literals.md#sortbyorder)
+- `SortOrder`: [SortByOrderType](./literals.md#sortbyordertype)
 
 ## SnapshotTypeDef
 
@@ -1920,7 +1923,8 @@ from mypy_boto3_redshift.type_defs import TableRestoreStatusTypeDef
 Optional fields:
 
 - `TableRestoreRequestId`: `str`
-- `Status`: [TableRestoreStatusType](./literals.md#tablerestorestatustype)
+- `Status`:
+  [TableRestoreStatusTypeType](./literals.md#tablerestorestatustypetype)
 - `Message`: `str`
 - `RequestTime`: `datetime`
 - `ProgressInMegaBytes`: `int`
@@ -2002,7 +2006,8 @@ from mypy_boto3_redshift.type_defs import UsageLimitListTypeDef
 
 Optional fields:
 
-- `UsageLimits`: `List`\[[UsageLimitTypeDef](./type_defs.md#usagelimittypedef)\]
+- `UsageLimits`:
+  `List`\[[UsageLimitTypeDef](./type_defs.md#usagelimittypedef)\]
 - `Marker`: `str`
 
 ## UsageLimitTypeDef
@@ -2015,11 +2020,13 @@ Optional fields:
 
 - `UsageLimitId`: `str`
 - `ClusterIdentifier`: `str`
-- `FeatureType`: [UsageLimitFeatureType](./literals.md#usagelimitfeaturetype)
-- `LimitType`: [UsageLimitLimitType](./literals.md#usagelimitlimittype)
+- `FeatureType`:
+  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
+- `LimitType`: [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
 - `Amount`: `int`
-- `Period`: [UsageLimitPeriod](./literals.md#usagelimitperiod)
-- `BreachAction`: [UsageLimitBreachAction](./literals.md#usagelimitbreachaction)
+- `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
+- `BreachAction`:
+  [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VpcEndpointTypeDef

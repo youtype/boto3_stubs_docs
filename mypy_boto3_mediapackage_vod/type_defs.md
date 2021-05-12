@@ -3,7 +3,7 @@
 > [Index](..) > [MediaPackageVod](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
 [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
@@ -184,10 +184,10 @@ from mypy_boto3_mediapackage_vod.type_defs import DashManifestTypeDef
 
 Optional fields:
 
-- `ManifestLayout`: [ManifestLayout](./literals.md#manifestlayout)
+- `ManifestLayout`: [ManifestLayoutType](./literals.md#manifestlayouttype)
 - `ManifestName`: `str`
 - `MinBufferTimeSeconds`: `int`
-- `Profile`: [Profile](./literals.md#profile)
+- `Profile`: [ProfileType](./literals.md#profiletype)
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 
@@ -207,10 +207,10 @@ Optional fields:
 - `Encryption`: [DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef)
 - `IncludeEncoderConfigurationInSegments`: `bool`
 - `PeriodTriggers`: `List`\[`Literal['ADS']` (see
-  [\_\_PeriodTriggersElement](./literals.md#--periodtriggerselement))\]
+  [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype))\]
 - `SegmentDurationSeconds`: `int`
 - `SegmentTemplateFormat`:
-  [SegmentTemplateFormat](./literals.md#segmenttemplateformat)
+  [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 
 ## DescribeAssetResponseTypeDef
 
@@ -299,7 +299,8 @@ Required fields:
 Optional fields:
 
 - `ConstantInitializationVector`: `str`
-- `EncryptionMethod`: [EncryptionMethod](./literals.md#encryptionmethod)
+- `EncryptionMethod`:
+  [EncryptionMethodType](./literals.md#encryptionmethodtype)
 
 ## HlsManifestTypeDef
 
@@ -309,7 +310,7 @@ from mypy_boto3_mediapackage_vod.type_defs import HlsManifestTypeDef
 
 Optional fields:
 
-- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
+- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
 - `IncludeIframeOnlyStream`: `bool`
 - `ManifestName`: `str`
 - `ProgramDateTimeIntervalSeconds`: `int`
@@ -485,7 +486,7 @@ Optional fields:
 
 - `MaxVideoBitsPerSecond`: `int`
 - `MinVideoBitsPerSecond`: `int`
-- `StreamOrder`: [StreamOrder](./literals.md#streamorder)
+- `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
 
 ## UpdatePackagingGroupResponseTypeDef
 

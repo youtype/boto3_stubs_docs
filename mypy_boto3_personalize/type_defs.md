@@ -3,7 +3,7 @@
 > [Index](..) > [Personalize](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -124,7 +124,8 @@ Optional fields:
 
 - `name`: `str`
 - `algorithmArn`: `str`
-- `algorithmImage`: [AlgorithmImageTypeDef](./type_defs.md#algorithmimagetypedef)
+- `algorithmImage`:
+  [AlgorithmImageTypeDef](./type_defs.md#algorithmimagetypedef)
 - `defaultHyperParameters`: `Dict`\[`str`, `str`\]
 - `defaultHyperParameterRanges`:
   [DefaultHyperParameterRangesTypeDef](./type_defs.md#defaulthyperparameterrangestypedef)
@@ -183,7 +184,8 @@ from mypy_boto3_personalize.type_defs import BatchInferenceJobOutputTypeDef
 
 Required fields:
 
-- `s3DataDestination`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+- `s3DataDestination`:
+  [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -265,7 +267,8 @@ Optional fields:
 - `campaignArn`: `str`
 - `solutionVersionArn`: `str`
 - `minProvisionedTPS`: `int`
-- `campaignConfig`: [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+- `campaignConfig`:
+  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 - `status`: `str`
 - `failureReason`: `str`
 - `creationDateTime`: `datetime`
@@ -283,7 +286,8 @@ Optional fields:
 
 - `solutionVersionArn`: `str`
 - `minProvisionedTPS`: `int`
-- `campaignConfig`: [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+- `campaignConfig`:
+  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 - `status`: `str`
 - `failureReason`: `str`
 - `creationDateTime`: `datetime`
@@ -441,7 +445,8 @@ from mypy_boto3_personalize.type_defs import DatasetExportJobOutputTypeDef
 
 Required fields:
 
-- `s3DataDestination`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+- `s3DataDestination`:
+  [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -471,7 +476,7 @@ Optional fields:
 - `jobName`: `str`
 - `datasetExportJobArn`: `str`
 - `datasetArn`: `str`
-- `ingestionMode`: [IngestionMode](./literals.md#ingestionmode)
+- `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
 - `roleArn`: `str`
 - `status`: `str`
 - `jobOutput`:
@@ -1215,7 +1220,8 @@ Optional fields:
 - `recipeArn`: `str`
 - `datasetGroupArn`: `str`
 - `eventType`: `str`
-- `solutionConfig`: [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
+- `solutionConfig`:
+  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 - `autoMLResult`: [AutoMLResultTypeDef](./type_defs.md#automlresulttypedef)
 - `status`: `str`
 - `creationDateTime`: `datetime`
@@ -1252,10 +1258,12 @@ Optional fields:
 - `recipeArn`: `str`
 - `eventType`: `str`
 - `datasetGroupArn`: `str`
-- `solutionConfig`: [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
+- `solutionConfig`:
+  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 - `trainingHours`: `float`
-- `trainingMode`: [TrainingMode](./literals.md#trainingmode)
-- `tunedHPOParams`: [TunedHPOParamsTypeDef](./type_defs.md#tunedhpoparamstypedef)
+- `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
+- `tunedHPOParams`:
+  [TunedHPOParamsTypeDef](./type_defs.md#tunedhpoparamstypedef)
 - `status`: `str`
 - `failureReason`: `str`
 - `creationDateTime`: `datetime`

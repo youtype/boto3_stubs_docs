@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentityProvider](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
 [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
@@ -155,7 +155,7 @@ Required fields:
 
 - `Notify`: `bool`
 - `EventAction`:
-  [AccountTakeoverEventActionType](./literals.md#accounttakeovereventactiontype)
+  [AccountTakeoverEventActionTypeType](./literals.md#accounttakeovereventactiontypetype)
 
 ## AccountTakeoverActionsTypeTypeDef
 
@@ -238,7 +238,7 @@ Optional fields:
 - `UserCreateDate`: `datetime`
 - `UserLastModifiedDate`: `datetime`
 - `Enabled`: `bool`
-- `UserStatus`: [UserStatusType](./literals.md#userstatustype)
+- `UserStatus`: [UserStatusTypeType](./literals.md#userstatustypetype)
 - `MFAOptions`:
   `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 - `PreferredMfaSetting`: `str`
@@ -252,7 +252,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminInitiateAuthResponseTypeDef
 
 Optional fields:
 
-- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
+- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
@@ -300,7 +300,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminRespondToAuthChallengeResponse
 
 Optional fields:
 
-- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
+- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
@@ -364,9 +364,9 @@ from mypy_boto3_cognito_idp.type_defs import AuthEventTypeTypeDef
 Optional fields:
 
 - `EventId`: `str`
-- `EventType`: [EventType](./literals.md#eventtype)
+- `EventType`: [EventTypeType](./literals.md#eventtypetype)
 - `CreationDate`: `datetime`
-- `EventResponse`: [EventResponseType](./literals.md#eventresponsetype)
+- `EventResponse`: [EventResponseTypeType](./literals.md#eventresponsetypetype)
 - `EventRisk`: [EventRiskTypeTypeDef](./type_defs.md#eventrisktypetypedef)
 - `ChallengeResponses`:
   `List`\[[ChallengeResponseTypeTypeDef](./type_defs.md#challengeresponsetypetypedef)\]
@@ -399,8 +399,9 @@ from mypy_boto3_cognito_idp.type_defs import ChallengeResponseTypeTypeDef
 
 Optional fields:
 
-- `ChallengeName`: [ChallengeName](./literals.md#challengename)
-- `ChallengeResponse`: [ChallengeResponse](./literals.md#challengeresponse)
+- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
+- `ChallengeResponse`:
+  [ChallengeResponseType](./literals.md#challengeresponsetype)
 
 ## CodeDeliveryDetailsTypeTypeDef
 
@@ -411,7 +412,8 @@ from mypy_boto3_cognito_idp.type_defs import CodeDeliveryDetailsTypeTypeDef
 Optional fields:
 
 - `Destination`: `str`
-- `DeliveryMedium`: [DeliveryMediumType](./literals.md#deliverymediumtype)
+- `DeliveryMedium`:
+  [DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)
 - `AttributeName`: `str`
 
 ## CompromisedCredentialsActionsTypeTypeDef
@@ -423,7 +425,7 @@ from mypy_boto3_cognito_idp.type_defs import CompromisedCredentialsActionsTypeTy
 Required fields:
 
 - `EventAction`:
-  [CompromisedCredentialsEventActionType](./literals.md#compromisedcredentialseventactiontype)
+  [CompromisedCredentialsEventActionTypeType](./literals.md#compromisedcredentialseventactiontypetype)
 
 ## CompromisedCredentialsRiskConfigurationTypeTypeDef
 
@@ -438,7 +440,8 @@ Required fields:
 
 Optional fields:
 
-- `EventFilter`: `List`\[[EventFilterType](./literals.md#eventfiltertype)\]
+- `EventFilter`:
+  `List`\[[EventFilterTypeType](./literals.md#eventfiltertypetype)\]
 
 ## ConfirmDeviceResponseTypeDef
 
@@ -461,7 +464,8 @@ Required fields:
 - `IpAddress`: `str`
 - `ServerName`: `str`
 - `ServerPath`: `str`
-- `HttpHeaders`: `List`\[[HttpHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
+- `HttpHeaders`:
+  `List`\[[HttpHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
 
 Optional fields:
 
@@ -560,7 +564,7 @@ from mypy_boto3_cognito_idp.type_defs import CustomEmailLambdaVersionConfigTypeT
 Required fields:
 
 - `LambdaVersion`: `Literal['V1_0']` (see
-  [CustomEmailSenderLambdaVersionType](./literals.md#customemailsenderlambdaversiontype))
+  [CustomEmailSenderLambdaVersionTypeType](./literals.md#customemailsenderlambdaversiontypetype))
 - `LambdaArn`: `str`
 
 ## CustomSMSLambdaVersionConfigTypeTypeDef
@@ -572,7 +576,7 @@ from mypy_boto3_cognito_idp.type_defs import CustomSMSLambdaVersionConfigTypeTyp
 Required fields:
 
 - `LambdaVersion`: `Literal['V1_0']` (see
-  [CustomSMSSenderLambdaVersionType](./literals.md#customsmssenderlambdaversiontype))
+  [CustomSMSSenderLambdaVersionTypeType](./literals.md#customsmssenderlambdaversiontypetype))
 - `LambdaArn`: `str`
 
 ## DescribeIdentityProviderResponseTypeDef
@@ -702,7 +706,7 @@ Optional fields:
 - `S3Bucket`: `str`
 - `CloudFrontDistribution`: `str`
 - `Version`: `str`
-- `Status`: [DomainStatusType](./literals.md#domainstatustype)
+- `Status`: [DomainStatusTypeType](./literals.md#domainstatustypetype)
 - `CustomDomainConfig`:
   [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
 
@@ -717,7 +721,7 @@ Optional fields:
 - `SourceArn`: `str`
 - `ReplyToEmailAddress`: `str`
 - `EmailSendingAccount`:
-  [EmailSendingAccountType](./literals.md#emailsendingaccounttype)
+  [EmailSendingAccountTypeType](./literals.md#emailsendingaccounttypetype)
 - `From`: `str`
 - `ConfigurationSet`: `str`
 
@@ -743,7 +747,7 @@ from mypy_boto3_cognito_idp.type_defs import EventFeedbackTypeTypeDef
 
 Required fields:
 
-- `FeedbackValue`: [FeedbackValueType](./literals.md#feedbackvaluetype)
+- `FeedbackValue`: [FeedbackValueTypeType](./literals.md#feedbackvaluetypetype)
 - `Provider`: `str`
 
 Optional fields:
@@ -758,8 +762,8 @@ from mypy_boto3_cognito_idp.type_defs import EventRiskTypeTypeDef
 
 Optional fields:
 
-- `RiskDecision`: [RiskDecisionType](./literals.md#riskdecisiontype)
-- `RiskLevel`: [RiskLevelType](./literals.md#riskleveltype)
+- `RiskDecision`: [RiskDecisionTypeType](./literals.md#riskdecisiontypetype)
+- `RiskLevel`: [RiskLevelTypeType](./literals.md#riskleveltypetype)
 - `CompromisedCredentialsDetected`: `bool`
 
 ## ForgotPasswordResponseTypeDef
@@ -859,7 +863,7 @@ Optional fields:
   [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
 - `SoftwareTokenMfaConfiguration`:
   [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`: [UserPoolMfaType](./literals.md#userpoolmfatype)
+- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
 
 ## GetUserResponseTypeDef
 
@@ -918,7 +922,7 @@ Optional fields:
 - `UserPoolId`: `str`
 - `ProviderName`: `str`
 - `ProviderType`:
-  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+  [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
 - `ProviderDetails`: `Dict`\[`str`, `str`\]
 - `AttributeMapping`: `Dict`\[`str`, `str`\]
 - `IdpIdentifiers`: `List`\[`str`\]
@@ -933,7 +937,7 @@ from mypy_boto3_cognito_idp.type_defs import InitiateAuthResponseTypeDef
 
 Optional fields:
 
-- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
+- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
@@ -1091,7 +1095,8 @@ from mypy_boto3_cognito_idp.type_defs import MFAOptionTypeTypeDef
 
 Optional fields:
 
-- `DeliveryMedium`: [DeliveryMediumType](./literals.md#deliverymediumtype)
+- `DeliveryMedium`:
+  [DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)
 - `AttributeName`: `str`
 
 ## MessageTemplateTypeTypeDef
@@ -1199,7 +1204,7 @@ Optional fields:
 
 - `ProviderName`: `str`
 - `ProviderType`:
-  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+  [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
 - `LastModifiedDate`: `datetime`
 - `CreationDate`: `datetime`
 
@@ -1224,7 +1229,8 @@ from mypy_boto3_cognito_idp.type_defs import RecoveryOptionTypeTypeDef
 Required fields:
 
 - `Priority`: `int`
-- `Name`: [RecoveryOptionNameType](./literals.md#recoveryoptionnametype)
+- `Name`:
+  [RecoveryOptionNameTypeType](./literals.md#recoveryoptionnametypetype)
 
 ## ResendConfirmationCodeResponseTypeDef
 
@@ -1270,7 +1276,7 @@ from mypy_boto3_cognito_idp.type_defs import RespondToAuthChallengeResponseTypeD
 
 Optional fields:
 
-- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
+- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
@@ -1325,7 +1331,8 @@ from mypy_boto3_cognito_idp.type_defs import SchemaAttributeTypeTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `AttributeDataType`: [AttributeDataType](./literals.md#attributedatatype)
+- `AttributeDataType`:
+  [AttributeDataTypeType](./literals.md#attributedatatypetype)
 - `DeveloperOnlyAttribute`: `bool`
 - `Mutable`: `bool`
 - `Required`: `bool`
@@ -1368,7 +1375,7 @@ Optional fields:
   [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
 - `SoftwareTokenMfaConfiguration`:
   [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`: [UserPoolMfaType](./literals.md#userpoolmfatype)
+- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
 
 ## SignUpResponseTypeDef
 
@@ -1474,9 +1481,9 @@ from mypy_boto3_cognito_idp.type_defs import TokenValidityUnitsTypeTypeDef
 
 Optional fields:
 
-- `AccessToken`: [TimeUnitsType](./literals.md#timeunitstype)
-- `IdToken`: [TimeUnitsType](./literals.md#timeunitstype)
-- `RefreshToken`: [TimeUnitsType](./literals.md#timeunitstype)
+- `AccessToken`: [TimeUnitsTypeType](./literals.md#timeunitstypetype)
+- `IdToken`: [TimeUnitsTypeType](./literals.md#timeunitstypetype)
+- `RefreshToken`: [TimeUnitsTypeType](./literals.md#timeunitstypetype)
 
 ## UICustomizationTypeTypeDef
 
@@ -1583,7 +1590,8 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `StartDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `Status`: [UserImportJobStatusType](./literals.md#userimportjobstatustype)
+- `Status`:
+  [UserImportJobStatusTypeType](./literals.md#userimportjobstatustypetype)
 - `CloudWatchLogsRoleArn`: `str`
 - `ImportedUsers`: `int`
 - `SkippedUsers`: `int`
@@ -1599,7 +1607,7 @@ from mypy_boto3_cognito_idp.type_defs import UserPoolAddOnsTypeTypeDef
 Required fields:
 
 - `AdvancedSecurityMode`:
-  [AdvancedSecurityModeType](./literals.md#advancedsecuritymodetype)
+  [AdvancedSecurityModeTypeType](./literals.md#advancedsecuritymodetypetype)
 
 ## UserPoolClientDescriptionTypeDef
 
@@ -1635,18 +1643,19 @@ Optional fields:
 - `ReadAttributes`: `List`\[`str`\]
 - `WriteAttributes`: `List`\[`str`\]
 - `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsType](./literals.md#explicitauthflowstype)\]
+  `List`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
 - `SupportedIdentityProviders`: `List`\[`str`\]
 - `CallbackURLs`: `List`\[`str`\]
 - `LogoutURLs`: `List`\[`str`\]
 - `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`: `List`\[[OAuthFlowType](./literals.md#oauthflowtype)\]
+- `AllowedOAuthFlows`:
+  `List`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
 - `AllowedOAuthScopes`: `List`\[`str`\]
 - `AllowedOAuthFlowsUserPoolClient`: `bool`
 - `AnalyticsConfiguration`:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
 - `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypes](./literals.md#preventuserexistenceerrortypes)
+  [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
 
 ## UserPoolDescriptionTypeTypeDef
 
@@ -1660,7 +1669,7 @@ Optional fields:
 - `Name`: `str`
 - `LambdaConfig`:
   [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `Status`: [StatusType](./literals.md#statustype)
+- `Status`: [StatusTypeType](./literals.md#statustypetype)
 - `LastModifiedDate`: `datetime`
 - `CreationDate`: `datetime`
 
@@ -1689,24 +1698,24 @@ Optional fields:
   [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
 - `LambdaConfig`:
   [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `Status`: [StatusType](./literals.md#statustype)
+- `Status`: [StatusTypeType](./literals.md#statustypetype)
 - `LastModifiedDate`: `datetime`
 - `CreationDate`: `datetime`
 - `SchemaAttributes`:
   `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
 - `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeType](./literals.md#verifiedattributetype)\]
+  `List`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
 - `AliasAttributes`:
-  `List`\[[AliasAttributeType](./literals.md#aliasattributetype)\]
+  `List`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
 - `UsernameAttributes`:
-  `List`\[[UsernameAttributeType](./literals.md#usernameattributetype)\]
+  `List`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
 - `SmsVerificationMessage`: `str`
 - `EmailVerificationMessage`: `str`
 - `EmailVerificationSubject`: `str`
 - `VerificationMessageTemplate`:
   [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
 - `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`: [UserPoolMfaType](./literals.md#userpoolmfatype)
+- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
 - `DeviceConfiguration`:
   [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
 - `EstimatedNumberOfUsers`: `int`
@@ -1743,7 +1752,7 @@ Optional fields:
 - `UserCreateDate`: `datetime`
 - `UserLastModifiedDate`: `datetime`
 - `Enabled`: `bool`
-- `UserStatus`: [UserStatusType](./literals.md#userstatustype)
+- `UserStatus`: [UserStatusTypeType](./literals.md#userstatustypetype)
 - `MFAOptions`:
   `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 
@@ -1771,7 +1780,7 @@ Optional fields:
 - `EmailMessageByLink`: `str`
 - `EmailSubjectByLink`: `str`
 - `DefaultEmailOption`:
-  [DefaultEmailOptionType](./literals.md#defaultemailoptiontype)
+  [DefaultEmailOptionTypeType](./literals.md#defaultemailoptiontypetype)
 
 ## VerifySoftwareTokenResponseTypeDef
 
@@ -1782,5 +1791,5 @@ from mypy_boto3_cognito_idp.type_defs import VerifySoftwareTokenResponseTypeDef
 Optional fields:
 
 - `Status`:
-  [VerifySoftwareTokenResponseType](./literals.md#verifysoftwaretokenresponsetype)
+  [VerifySoftwareTokenResponseTypeType](./literals.md#verifysoftwaretokenresponsetypetype)
 - `Session`: `str`

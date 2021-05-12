@@ -3,39 +3,39 @@
 > [Index](..) > [GreengrassV2](.) > Literals
 
 Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [Literals for boto3 GreengrassV2 module](#literals-for-boto3-greengrassv2-module)
-  - [CloudComponentState](#cloudcomponentstate)
-  - [ComponentDependencyType](#componentdependencytype)
-  - [ComponentVisibilityScope](#componentvisibilityscope)
-  - [CoreDeviceStatus](#coredevicestatus)
-  - [DeploymentComponentUpdatePolicyAction](#deploymentcomponentupdatepolicyaction)
-  - [DeploymentFailureHandlingPolicy](#deploymentfailurehandlingpolicy)
-  - [DeploymentHistoryFilter](#deploymenthistoryfilter)
-  - [DeploymentStatus](#deploymentstatus)
-  - [EffectiveDeploymentExecutionStatus](#effectivedeploymentexecutionstatus)
-  - [InstalledComponentLifecycleState](#installedcomponentlifecyclestate)
-  - [IoTJobAbortAction](#iotjobabortaction)
-  - [IoTJobExecutionFailureType](#iotjobexecutionfailuretype)
-  - [LambdaEventSourceType](#lambdaeventsourcetype)
-  - [LambdaFilesystemPermission](#lambdafilesystempermission)
-  - [LambdaInputPayloadEncodingType](#lambdainputpayloadencodingtype)
-  - [LambdaIsolationMode](#lambdaisolationmode)
+  - [CloudComponentStateType](#cloudcomponentstatetype)
+  - [ComponentDependencyTypeType](#componentdependencytypetype)
+  - [ComponentVisibilityScopeType](#componentvisibilityscopetype)
+  - [CoreDeviceStatusType](#coredevicestatustype)
+  - [DeploymentComponentUpdatePolicyActionType](#deploymentcomponentupdatepolicyactiontype)
+  - [DeploymentFailureHandlingPolicyType](#deploymentfailurehandlingpolicytype)
+  - [DeploymentHistoryFilterType](#deploymenthistoryfiltertype)
+  - [DeploymentStatusType](#deploymentstatustype)
+  - [EffectiveDeploymentExecutionStatusType](#effectivedeploymentexecutionstatustype)
+  - [InstalledComponentLifecycleStateType](#installedcomponentlifecyclestatetype)
+  - [IoTJobAbortActionType](#iotjobabortactiontype)
+  - [IoTJobExecutionFailureTypeType](#iotjobexecutionfailuretypetype)
+  - [LambdaEventSourceTypeType](#lambdaeventsourcetypetype)
+  - [LambdaFilesystemPermissionType](#lambdafilesystempermissiontype)
+  - [LambdaInputPayloadEncodingTypeType](#lambdainputpayloadencodingtypetype)
+  - [LambdaIsolationModeType](#lambdaisolationmodetype)
   - [ListComponentVersionsPaginatorName](#listcomponentversionspaginatorname)
   - [ListComponentsPaginatorName](#listcomponentspaginatorname)
   - [ListCoreDevicesPaginatorName](#listcoredevicespaginatorname)
   - [ListDeploymentsPaginatorName](#listdeploymentspaginatorname)
   - [ListEffectiveDeploymentsPaginatorName](#listeffectivedeploymentspaginatorname)
   - [ListInstalledComponentsPaginatorName](#listinstalledcomponentspaginatorname)
-  - [RecipeOutputFormat](#recipeoutputformat)
+  - [RecipeOutputFormatType](#recipeoutputformattype)
 
-## CloudComponentState
+## CloudComponentStateType
 
 ```python
-from mypy_boto3_greengrassv2.literals import CloudComponentState
+from mypy_boto3_greengrassv2.literals import CloudComponentStateType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `INITIATED`
 - `REQUESTED`
 
-## ComponentDependencyType
+## ComponentDependencyTypeType
 
 ```python
-from mypy_boto3_greengrassv2.literals import ComponentDependencyType
+from mypy_boto3_greengrassv2.literals import ComponentDependencyTypeType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 - `HARD`
 - `SOFT`
 
-## ComponentVisibilityScope
+## ComponentVisibilityScopeType
 
 ```python
-from mypy_boto3_greengrassv2.literals import ComponentVisibilityScope
+from mypy_boto3_greengrassv2.literals import ComponentVisibilityScopeType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
-## CoreDeviceStatus
+## CoreDeviceStatusType
 
 ```python
-from mypy_boto3_greengrassv2.literals import CoreDeviceStatus
+from mypy_boto3_greengrassv2.literals import CoreDeviceStatusType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `HEALTHY`
 - `UNHEALTHY`
 
-## DeploymentComponentUpdatePolicyAction
+## DeploymentComponentUpdatePolicyActionType
 
 ```python
-from mypy_boto3_greengrassv2.literals import DeploymentComponentUpdatePolicyAction
+from mypy_boto3_greengrassv2.literals import DeploymentComponentUpdatePolicyActionType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `NOTIFY_COMPONENTS`
 - `SKIP_NOTIFY_COMPONENTS`
 
-## DeploymentFailureHandlingPolicy
+## DeploymentFailureHandlingPolicyType
 
 ```python
-from mypy_boto3_greengrassv2.literals import DeploymentFailureHandlingPolicy
+from mypy_boto3_greengrassv2.literals import DeploymentFailureHandlingPolicyType
 ```
 
 Values:
@@ -101,10 +101,10 @@ Values:
 - `DO_NOTHING`
 - `ROLLBACK`
 
-## DeploymentHistoryFilter
+## DeploymentHistoryFilterType
 
 ```python
-from mypy_boto3_greengrassv2.literals import DeploymentHistoryFilter
+from mypy_boto3_greengrassv2.literals import DeploymentHistoryFilterType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 - `ALL`
 - `LATEST_ONLY`
 
-## DeploymentStatus
+## DeploymentStatusType
 
 ```python
-from mypy_boto3_greengrassv2.literals import DeploymentStatus
+from mypy_boto3_greengrassv2.literals import DeploymentStatusType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `FAILED`
 - `INACTIVE`
 
-## EffectiveDeploymentExecutionStatus
+## EffectiveDeploymentExecutionStatusType
 
 ```python
-from mypy_boto3_greengrassv2.literals import EffectiveDeploymentExecutionStatus
+from mypy_boto3_greengrassv2.literals import EffectiveDeploymentExecutionStatusType
 ```
 
 Values:
@@ -142,10 +142,10 @@ Values:
 - `REJECTED`
 - `TIMED_OUT`
 
-## InstalledComponentLifecycleState
+## InstalledComponentLifecycleStateType
 
 ```python
-from mypy_boto3_greengrassv2.literals import InstalledComponentLifecycleState
+from mypy_boto3_greengrassv2.literals import InstalledComponentLifecycleStateType
 ```
 
 Values:
@@ -159,20 +159,20 @@ Values:
 - `STARTING`
 - `STOPPING`
 
-## IoTJobAbortAction
+## IoTJobAbortActionType
 
 ```python
-from mypy_boto3_greengrassv2.literals import IoTJobAbortAction
+from mypy_boto3_greengrassv2.literals import IoTJobAbortActionType
 ```
 
 Values:
 
 - `CANCEL`
 
-## IoTJobExecutionFailureType
+## IoTJobExecutionFailureTypeType
 
 ```python
-from mypy_boto3_greengrassv2.literals import IoTJobExecutionFailureType
+from mypy_boto3_greengrassv2.literals import IoTJobExecutionFailureTypeType
 ```
 
 Values:
@@ -182,10 +182,10 @@ Values:
 - `REJECTED`
 - `TIMED_OUT`
 
-## LambdaEventSourceType
+## LambdaEventSourceTypeType
 
 ```python
-from mypy_boto3_greengrassv2.literals import LambdaEventSourceType
+from mypy_boto3_greengrassv2.literals import LambdaEventSourceTypeType
 ```
 
 Values:
@@ -193,10 +193,10 @@ Values:
 - `IOT_CORE`
 - `PUB_SUB`
 
-## LambdaFilesystemPermission
+## LambdaFilesystemPermissionType
 
 ```python
-from mypy_boto3_greengrassv2.literals import LambdaFilesystemPermission
+from mypy_boto3_greengrassv2.literals import LambdaFilesystemPermissionType
 ```
 
 Values:
@@ -204,10 +204,10 @@ Values:
 - `ro`
 - `rw`
 
-## LambdaInputPayloadEncodingType
+## LambdaInputPayloadEncodingTypeType
 
 ```python
-from mypy_boto3_greengrassv2.literals import LambdaInputPayloadEncodingType
+from mypy_boto3_greengrassv2.literals import LambdaInputPayloadEncodingTypeType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 - `binary`
 - `json`
 
-## LambdaIsolationMode
+## LambdaIsolationModeType
 
 ```python
-from mypy_boto3_greengrassv2.literals import LambdaIsolationMode
+from mypy_boto3_greengrassv2.literals import LambdaIsolationModeType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 
 - `list_installed_components`
 
-## RecipeOutputFormat
+## RecipeOutputFormatType
 
 ```python
-from mypy_boto3_greengrassv2.literals import RecipeOutputFormat
+from mypy_boto3_greengrassv2.literals import RecipeOutputFormatType
 ```
 
 Values:

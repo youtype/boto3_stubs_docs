@@ -3,7 +3,7 @@
 > [Index](..) > Rekognition
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
@@ -31,87 +31,87 @@ Can be used directly:
 from mypy_boto3_rekognition.client import RekognitionClient
 ```
 
-RekognitionClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [compare_faces](./client.md#compare-faces)
-- [create_collection](./client.md#create-collection)
-- [create_project](./client.md#create-project)
-- [create_project_version](./client.md#create-project-version)
-- [create_stream_processor](./client.md#create-stream-processor)
-- [delete_collection](./client.md#delete-collection)
-- [delete_faces](./client.md#delete-faces)
-- [delete_project](./client.md#delete-project)
-- [delete_project_version](./client.md#delete-project-version)
-- [delete_stream_processor](./client.md#delete-stream-processor)
-- [describe_collection](./client.md#describe-collection)
-- [describe_project_versions](./client.md#describe-project-versions)
-- [describe_projects](./client.md#describe-projects)
-- [describe_stream_processor](./client.md#describe-stream-processor)
-- [detect_custom_labels](./client.md#detect-custom-labels)
-- [detect_faces](./client.md#detect-faces)
-- [detect_labels](./client.md#detect-labels)
-- [detect_moderation_labels](./client.md#detect-moderation-labels)
-- [detect_protective_equipment](./client.md#detect-protective-equipment)
-- [detect_text](./client.md#detect-text)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_celebrity_info](./client.md#get-celebrity-info)
-- [get_celebrity_recognition](./client.md#get-celebrity-recognition)
-- [get_content_moderation](./client.md#get-content-moderation)
-- [get_face_detection](./client.md#get-face-detection)
-- [get_face_search](./client.md#get-face-search)
-- [get_label_detection](./client.md#get-label-detection)
-- [get_paginator](./client.md#get-paginator)
-- [get_person_tracking](./client.md#get-person-tracking)
-- [get_segment_detection](./client.md#get-segment-detection)
-- [get_text_detection](./client.md#get-text-detection)
-- [get_waiter](./client.md#get-waiter)
-- [index_faces](./client.md#index-faces)
-- [list_collections](./client.md#list-collections)
-- [list_faces](./client.md#list-faces)
-- [list_stream_processors](./client.md#list-stream-processors)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [recognize_celebrities](./client.md#recognize-celebrities)
-- [search_faces](./client.md#search-faces)
-- [search_faces_by_image](./client.md#search-faces-by-image)
-- [start_celebrity_recognition](./client.md#start-celebrity-recognition)
-- [start_content_moderation](./client.md#start-content-moderation)
-- [start_face_detection](./client.md#start-face-detection)
-- [start_face_search](./client.md#start-face-search)
-- [start_label_detection](./client.md#start-label-detection)
-- [start_person_tracking](./client.md#start-person-tracking)
-- [start_project_version](./client.md#start-project-version)
-- [start_segment_detection](./client.md#start-segment-detection)
-- [start_stream_processor](./client.md#start-stream-processor)
-- [start_text_detection](./client.md#start-text-detection)
-- [stop_project_version](./client.md#stop-project-version)
-- [stop_stream_processor](./client.md#stop-stream-processor)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [compare_faces](./client.md#compare_faces)
+- [create_collection](./client.md#create_collection)
+- [create_project](./client.md#create_project)
+- [create_project_version](./client.md#create_project_version)
+- [create_stream_processor](./client.md#create_stream_processor)
+- [delete_collection](./client.md#delete_collection)
+- [delete_faces](./client.md#delete_faces)
+- [delete_project](./client.md#delete_project)
+- [delete_project_version](./client.md#delete_project_version)
+- [delete_stream_processor](./client.md#delete_stream_processor)
+- [describe_collection](./client.md#describe_collection)
+- [describe_project_versions](./client.md#describe_project_versions)
+- [describe_projects](./client.md#describe_projects)
+- [describe_stream_processor](./client.md#describe_stream_processor)
+- [detect_custom_labels](./client.md#detect_custom_labels)
+- [detect_faces](./client.md#detect_faces)
+- [detect_labels](./client.md#detect_labels)
+- [detect_moderation_labels](./client.md#detect_moderation_labels)
+- [detect_protective_equipment](./client.md#detect_protective_equipment)
+- [detect_text](./client.md#detect_text)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_celebrity_info](./client.md#get_celebrity_info)
+- [get_celebrity_recognition](./client.md#get_celebrity_recognition)
+- [get_content_moderation](./client.md#get_content_moderation)
+- [get_face_detection](./client.md#get_face_detection)
+- [get_face_search](./client.md#get_face_search)
+- [get_label_detection](./client.md#get_label_detection)
+- [get_paginator](./client.md#get_paginator)
+- [get_person_tracking](./client.md#get_person_tracking)
+- [get_segment_detection](./client.md#get_segment_detection)
+- [get_text_detection](./client.md#get_text_detection)
+- [get_waiter](./client.md#get_waiter)
+- [index_faces](./client.md#index_faces)
+- [list_collections](./client.md#list_collections)
+- [list_faces](./client.md#list_faces)
+- [list_stream_processors](./client.md#list_stream_processors)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [recognize_celebrities](./client.md#recognize_celebrities)
+- [search_faces](./client.md#search_faces)
+- [search_faces_by_image](./client.md#search_faces_by_image)
+- [start_celebrity_recognition](./client.md#start_celebrity_recognition)
+- [start_content_moderation](./client.md#start_content_moderation)
+- [start_face_detection](./client.md#start_face_detection)
+- [start_face_search](./client.md#start_face_search)
+- [start_label_detection](./client.md#start_label_detection)
+- [start_person_tracking](./client.md#start_person_tracking)
+- [start_project_version](./client.md#start_project_version)
+- [start_segment_detection](./client.md#start_segment_detection)
+- [start_stream_processor](./client.md#start_stream_processor)
+- [start_text_detection](./client.md#start_text_detection)
+- [stop_project_version](./client.md#stop_project_version)
+- [stop_stream_processor](./client.md#stop_stream_processor)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [HumanLoopQuotaExceededException](./client.md#humanloopquotaexceededexception)
-- [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
-- [ImageTooLargeException](./client.md#imagetoolargeexception)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidImageFormatException](./client.md#invalidimageformatexception)
-- [InvalidPaginationTokenException](./client.md#invalidpaginationtokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidS3ObjectException](./client.md#invalids3objectexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ProvisionedThroughputExceededException](./client.md#provisionedthroughputexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceNotReadyException](./client.md#resourcenotreadyexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [VideoTooLargeException](./client.md#videotoolargeexception)
+RekognitionClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- HumanLoopQuotaExceededException
+- IdempotentParameterMismatchException
+- ImageTooLargeException
+- InternalServerError
+- InvalidImageFormatException
+- InvalidPaginationTokenException
+- InvalidParameterException
+- InvalidS3ObjectException
+- LimitExceededException
+- ProvisionedThroughputExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourceNotReadyException
+- ServiceQuotaExceededException
+- ThrottlingException
+- VideoTooLargeException
 
 ## Paginators
 
@@ -151,39 +151,39 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.literals import Attribute, ...
+from mypy_boto3_rekognition.literals import AttributeType, ...
 ```
 
-- [Attribute](./literals.md#attribute)
-- [BodyPart](./literals.md#bodypart)
-- [CelebrityRecognitionSortBy](./literals.md#celebrityrecognitionsortby)
-- [ContentClassifier](./literals.md#contentclassifier)
-- [ContentModerationSortBy](./literals.md#contentmoderationsortby)
+- [AttributeType](./literals.md#attributetype)
+- [BodyPartType](./literals.md#bodyparttype)
+- [CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype)
+- [ContentClassifierType](./literals.md#contentclassifiertype)
+- [ContentModerationSortByType](./literals.md#contentmoderationsortbytype)
 - [DescribeProjectVersionsPaginatorName](./literals.md#describeprojectversionspaginatorname)
 - [DescribeProjectsPaginatorName](./literals.md#describeprojectspaginatorname)
-- [EmotionName](./literals.md#emotionname)
-- [FaceAttributes](./literals.md#faceattributes)
-- [FaceSearchSortBy](./literals.md#facesearchsortby)
-- [GenderType](./literals.md#gendertype)
-- [LabelDetectionSortBy](./literals.md#labeldetectionsortby)
-- [LandmarkType](./literals.md#landmarktype)
+- [EmotionNameType](./literals.md#emotionnametype)
+- [FaceAttributesType](./literals.md#faceattributestype)
+- [FaceSearchSortByType](./literals.md#facesearchsortbytype)
+- [GenderTypeType](./literals.md#gendertypetype)
+- [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
+- [LandmarkTypeType](./literals.md#landmarktypetype)
 - [ListCollectionsPaginatorName](./literals.md#listcollectionspaginatorname)
 - [ListFacesPaginatorName](./literals.md#listfacespaginatorname)
 - [ListStreamProcessorsPaginatorName](./literals.md#liststreamprocessorspaginatorname)
-- [OrientationCorrection](./literals.md#orientationcorrection)
-- [PersonTrackingSortBy](./literals.md#persontrackingsortby)
-- [ProjectStatus](./literals.md#projectstatus)
+- [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
+- [PersonTrackingSortByType](./literals.md#persontrackingsortbytype)
+- [ProjectStatusType](./literals.md#projectstatustype)
 - [ProjectVersionRunningWaiterName](./literals.md#projectversionrunningwaitername)
-- [ProjectVersionStatus](./literals.md#projectversionstatus)
+- [ProjectVersionStatusType](./literals.md#projectversionstatustype)
 - [ProjectVersionTrainingCompletedWaiterName](./literals.md#projectversiontrainingcompletedwaitername)
-- [ProtectiveEquipmentType](./literals.md#protectiveequipmenttype)
-- [QualityFilter](./literals.md#qualityfilter)
-- [Reason](./literals.md#reason)
-- [SegmentType](./literals.md#segmenttype)
-- [StreamProcessorStatus](./literals.md#streamprocessorstatus)
-- [TechnicalCueType](./literals.md#technicalcuetype)
-- [TextTypes](./literals.md#texttypes)
-- [VideoJobStatus](./literals.md#videojobstatus)
+- [ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)
+- [QualityFilterType](./literals.md#qualityfiltertype)
+- [ReasonType](./literals.md#reasontype)
+- [SegmentTypeType](./literals.md#segmenttypetype)
+- [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
+- [TechnicalCueTypeType](./literals.md#technicalcuetypetype)
+- [TextTypesType](./literals.md#texttypestype)
+- [VideoJobStatusType](./literals.md#videojobstatustype)
 
 ## Typed dictionaries
 

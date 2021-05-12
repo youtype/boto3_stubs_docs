@@ -3,30 +3,30 @@
 > [Index](..) > [TimestreamWrite](.) > Literals
 
 Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
 [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [Literals for boto3 TimestreamWrite module](#literals-for-boto3-timestreamwrite-module)
-  - [DimensionValueType](#dimensionvaluetype)
-  - [MeasureValueType](#measurevaluetype)
-  - [TableStatus](#tablestatus)
-  - [TimeUnit](#timeunit)
+  - [DimensionValueTypeType](#dimensionvaluetypetype)
+  - [MeasureValueTypeType](#measurevaluetypetype)
+  - [TableStatusType](#tablestatustype)
+  - [TimeUnitType](#timeunittype)
 
-## DimensionValueType
+## DimensionValueTypeType
 
 ```python
-from mypy_boto3_timestream_write.literals import DimensionValueType
+from mypy_boto3_timestream_write.literals import DimensionValueTypeType
 ```
 
 Values:
 
 - `VARCHAR`
 
-## MeasureValueType
+## MeasureValueTypeType
 
 ```python
-from mypy_boto3_timestream_write.literals import MeasureValueType
+from mypy_boto3_timestream_write.literals import MeasureValueTypeType
 ```
 
 Values:
@@ -36,10 +36,10 @@ Values:
 - `DOUBLE`
 - `VARCHAR`
 
-## TableStatus
+## TableStatusType
 
 ```python
-from mypy_boto3_timestream_write.literals import TableStatus
+from mypy_boto3_timestream_write.literals import TableStatusType
 ```
 
 Values:
@@ -47,10 +47,10 @@ Values:
 - `ACTIVE`
 - `DELETING`
 
-## TimeUnit
+## TimeUnitType
 
 ```python
-from mypy_boto3_timestream_write.literals import TimeUnit
+from mypy_boto3_timestream_write.literals import TimeUnitType
 ```
 
 Values:

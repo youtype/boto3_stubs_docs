@@ -3,7 +3,7 @@
 > [Index](..) > [ManagedBlockchain](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
 [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
@@ -70,7 +70,8 @@ Optional fields:
 
 - `ThresholdPercentage`: `int`
 - `ProposalDurationInHours`: `int`
-- `ThresholdComparator`: [ThresholdComparator](./literals.md#thresholdcomparator)
+- `ThresholdComparator`:
+  [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
 
 ## CreateMemberOutputTypeDef
 
@@ -180,8 +181,9 @@ Optional fields:
 - `InvitationId`: `str`
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
-- `Status`: [InvitationStatus](./literals.md#invitationstatus)
-- `NetworkSummary`: [NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef)
+- `Status`: [InvitationStatusType](./literals.md#invitationstatustype)
+- `NetworkSummary`:
+  [NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef)
 - `Arn`: `str`
 
 ## InviteActionTypeDef
@@ -202,7 +204,8 @@ from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputTypeDef
 
 Required fields:
 
-- `Invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
+- `Invitations`:
+  `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -304,7 +307,8 @@ from mypy_boto3_managedblockchain.type_defs import LogConfigurationsTypeDef
 
 Optional fields:
 
-- `Cloudwatch`: [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
+- `Cloudwatch`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 
 ## MemberConfigurationTypeDef
 
@@ -401,7 +405,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`: [MemberStatus](./literals.md#memberstatus)
+- `Status`: [MemberStatusType](./literals.md#memberstatustype)
 - `CreationDate`: `datetime`
 - `IsOwned`: `bool`
 - `Arn`: `str`
@@ -422,7 +426,7 @@ Optional fields:
   [MemberFrameworkAttributesTypeDef](./type_defs.md#memberframeworkattributestypedef)
 - `LogPublishingConfiguration`:
   [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
-- `Status`: [MemberStatus](./literals.md#memberstatus)
+- `Status`: [MemberStatusType](./literals.md#memberstatustype)
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
@@ -446,7 +450,7 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFabricAttributesTypeDe
 Optional fields:
 
 - `OrderingServiceEndpoint`: `str`
-- `Edition`: [Edition](./literals.md#edition)
+- `Edition`: [EditionType](./literals.md#editiontype)
 
 ## NetworkFabricConfigurationTypeDef
 
@@ -456,7 +460,7 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFabricConfigurationTyp
 
 Required fields:
 
-- `Edition`: [Edition](./literals.md#edition)
+- `Edition`: [EditionType](./literals.md#editiontype)
 
 ## NetworkFrameworkAttributesTypeDef
 
@@ -493,9 +497,9 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Framework`: [Framework](./literals.md#framework)
+- `Framework`: [FrameworkType](./literals.md#frameworktype)
 - `FrameworkVersion`: `str`
-- `Status`: [NetworkStatus](./literals.md#networkstatus)
+- `Status`: [NetworkStatusType](./literals.md#networkstatustype)
 - `CreationDate`: `datetime`
 - `Arn`: `str`
 
@@ -510,13 +514,13 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Framework`: [Framework](./literals.md#framework)
+- `Framework`: [FrameworkType](./literals.md#frameworktype)
 - `FrameworkVersion`: `str`
 - `FrameworkAttributes`:
   [NetworkFrameworkAttributesTypeDef](./type_defs.md#networkframeworkattributestypedef)
 - `VpcEndpointServiceName`: `str`
 - `VotingPolicy`: [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
-- `Status`: [NetworkStatus](./literals.md#networkstatus)
+- `Status`: [NetworkStatusType](./literals.md#networkstatustype)
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
@@ -536,7 +540,7 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `LogPublishingConfiguration`:
   [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
-- `StateDB`: [StateDBType](./literals.md#statedbtype)
+- `StateDB`: [StateDBTypeType](./literals.md#statedbtypetype)
 
 ## NodeEthereumAttributesTypeDef
 
@@ -570,7 +574,8 @@ Optional fields:
 
 - `ChaincodeLogs`:
   [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
-- `PeerLogs`: [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
+- `PeerLogs`:
+  [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
 
 ## NodeFrameworkAttributesTypeDef
 
@@ -605,7 +610,7 @@ from mypy_boto3_managedblockchain.type_defs import NodeSummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Status`: [NodeStatus](./literals.md#nodestatus)
+- `Status`: [NodeStatusType](./literals.md#nodestatustype)
 - `CreationDate`: `datetime`
 - `AvailabilityZone`: `str`
 - `InstanceType`: `str`
@@ -628,8 +633,8 @@ Optional fields:
   [NodeFrameworkAttributesTypeDef](./type_defs.md#nodeframeworkattributestypedef)
 - `LogPublishingConfiguration`:
   [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
-- `StateDB`: [StateDBType](./literals.md#statedbtype)
-- `Status`: [NodeStatus](./literals.md#nodestatus)
+- `StateDB`: [StateDBTypeType](./literals.md#statedbtypetype)
+- `Status`: [NodeStatusType](./literals.md#nodestatustype)
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
@@ -644,7 +649,8 @@ Optional fields:
 
 - `Invitations`:
   `List`\[[InviteActionTypeDef](./type_defs.md#inviteactiontypedef)\]
-- `Removals`: `List`\[[RemoveActionTypeDef](./type_defs.md#removeactiontypedef)\]
+- `Removals`:
+  `List`\[[RemoveActionTypeDef](./type_defs.md#removeactiontypedef)\]
 
 ## ProposalSummaryTypeDef
 
@@ -658,7 +664,7 @@ Optional fields:
 - `Description`: `str`
 - `ProposedByMemberId`: `str`
 - `ProposedByMemberName`: `str`
-- `Status`: [ProposalStatus](./literals.md#proposalstatus)
+- `Status`: [ProposalStatusType](./literals.md#proposalstatustype)
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
 - `Arn`: `str`
@@ -677,7 +683,7 @@ Optional fields:
 - `Actions`: [ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef)
 - `ProposedByMemberId`: `str`
 - `ProposedByMemberName`: `str`
-- `Status`: [ProposalStatus](./literals.md#proposalstatus)
+- `Status`: [ProposalStatusType](./literals.md#proposalstatustype)
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
 - `YesVoteCount`: `int`
@@ -718,7 +724,7 @@ from mypy_boto3_managedblockchain.type_defs import VoteSummaryTypeDef
 
 Optional fields:
 
-- `Vote`: [VoteValue](./literals.md#votevalue)
+- `Vote`: [VoteValueType](./literals.md#votevaluetype)
 - `MemberName`: `str`
 - `MemberId`: `str`
 

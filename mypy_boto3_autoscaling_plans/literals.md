@@ -3,25 +3,25 @@
 > [Index](..) > [AutoScalingPlans](.) > Literals
 
 Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
 [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [Literals for boto3 AutoScalingPlans module](#literals-for-boto3-autoscalingplans-module)
   - [DescribeScalingPlanResourcesPaginatorName](#describescalingplanresourcespaginatorname)
   - [DescribeScalingPlansPaginatorName](#describescalingplanspaginatorname)
-  - [ForecastDataType](#forecastdatatype)
-  - [LoadMetricType](#loadmetrictype)
-  - [MetricStatistic](#metricstatistic)
-  - [PolicyType](#policytype)
-  - [PredictiveScalingMaxCapacityBehavior](#predictivescalingmaxcapacitybehavior)
-  - [PredictiveScalingMode](#predictivescalingmode)
-  - [ScalableDimension](#scalabledimension)
-  - [ScalingMetricType](#scalingmetrictype)
-  - [ScalingPlanStatusCode](#scalingplanstatuscode)
-  - [ScalingPolicyUpdateBehavior](#scalingpolicyupdatebehavior)
-  - [ScalingStatusCode](#scalingstatuscode)
-  - [ServiceNamespace](#servicenamespace)
+  - [ForecastDataTypeType](#forecastdatatypetype)
+  - [LoadMetricTypeType](#loadmetrictypetype)
+  - [MetricStatisticType](#metricstatistictype)
+  - [PolicyTypeType](#policytypetype)
+  - [PredictiveScalingMaxCapacityBehaviorType](#predictivescalingmaxcapacitybehaviortype)
+  - [PredictiveScalingModeType](#predictivescalingmodetype)
+  - [ScalableDimensionType](#scalabledimensiontype)
+  - [ScalingMetricTypeType](#scalingmetrictypetype)
+  - [ScalingPlanStatusCodeType](#scalingplanstatuscodetype)
+  - [ScalingPolicyUpdateBehaviorType](#scalingpolicyupdatebehaviortype)
+  - [ScalingStatusCodeType](#scalingstatuscodetype)
+  - [ServiceNamespaceType](#servicenamespacetype)
 
 ## DescribeScalingPlanResourcesPaginatorName
 
@@ -43,10 +43,10 @@ Values:
 
 - `describe_scaling_plans`
 
-## ForecastDataType
+## ForecastDataTypeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ForecastDataType
+from mypy_boto3_autoscaling_plans.literals import ForecastDataTypeType
 ```
 
 Values:
@@ -56,10 +56,10 @@ Values:
 - `ScheduledActionMaxCapacity`
 - `ScheduledActionMinCapacity`
 
-## LoadMetricType
+## LoadMetricTypeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import LoadMetricType
+from mypy_boto3_autoscaling_plans.literals import LoadMetricTypeType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `ASGTotalNetworkIn`
 - `ASGTotalNetworkOut`
 
-## MetricStatistic
+## MetricStatisticType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import MetricStatistic
+from mypy_boto3_autoscaling_plans.literals import MetricStatisticType
 ```
 
 Values:
@@ -83,20 +83,20 @@ Values:
 - `SampleCount`
 - `Sum`
 
-## PolicyType
+## PolicyTypeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import PolicyType
+from mypy_boto3_autoscaling_plans.literals import PolicyTypeType
 ```
 
 Values:
 
 - `TargetTrackingScaling`
 
-## PredictiveScalingMaxCapacityBehavior
+## PredictiveScalingMaxCapacityBehaviorType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import PredictiveScalingMaxCapacityBehavior
+from mypy_boto3_autoscaling_plans.literals import PredictiveScalingMaxCapacityBehaviorType
 ```
 
 Values:
@@ -105,10 +105,10 @@ Values:
 - `SetMaxCapacityAboveForecastCapacity`
 - `SetMaxCapacityToForecastCapacity`
 
-## PredictiveScalingMode
+## PredictiveScalingModeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import PredictiveScalingMode
+from mypy_boto3_autoscaling_plans.literals import PredictiveScalingModeType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `ForecastAndScale`
 - `ForecastOnly`
 
-## ScalableDimension
+## ScalableDimensionType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ScalableDimension
+from mypy_boto3_autoscaling_plans.literals import ScalableDimensionType
 ```
 
 Values:
@@ -133,10 +133,10 @@ Values:
 - `ecs:service:DesiredCount`
 - `rds:cluster:ReadReplicaCount`
 
-## ScalingMetricType
+## ScalingMetricTypeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ScalingMetricType
+from mypy_boto3_autoscaling_plans.literals import ScalingMetricTypeType
 ```
 
 Values:
@@ -155,10 +155,10 @@ Values:
 - `RDSReaderAverageCPUUtilization`
 - `RDSReaderAverageDatabaseConnections`
 
-## ScalingPlanStatusCode
+## ScalingPlanStatusCodeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ScalingPlanStatusCode
+from mypy_boto3_autoscaling_plans.literals import ScalingPlanStatusCodeType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 - `UpdateFailed`
 - `UpdateInProgress`
 
-## ScalingPolicyUpdateBehavior
+## ScalingPolicyUpdateBehaviorType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ScalingPolicyUpdateBehavior
+from mypy_boto3_autoscaling_plans.literals import ScalingPolicyUpdateBehaviorType
 ```
 
 Values:
@@ -183,10 +183,10 @@ Values:
 - `KeepExternalPolicies`
 - `ReplaceExternalPolicies`
 
-## ScalingStatusCode
+## ScalingStatusCodeType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ScalingStatusCode
+from mypy_boto3_autoscaling_plans.literals import ScalingStatusCodeType
 ```
 
 Values:
@@ -195,10 +195,10 @@ Values:
 - `Inactive`
 - `PartiallyActive`
 
-## ServiceNamespace
+## ServiceNamespaceType
 
 ```python
-from mypy_boto3_autoscaling_plans.literals import ServiceNamespace
+from mypy_boto3_autoscaling_plans.literals import ServiceNamespaceType
 ```
 
 Values:

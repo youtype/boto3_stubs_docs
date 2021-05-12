@@ -3,7 +3,7 @@
 > [Index](..) > [NetworkFirewall](.) > NetworkFirewallClient
 
 Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
 [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
@@ -58,7 +58,7 @@ def get_network-firewall_client() -> NetworkFirewallClient:
 ```
 
 Boto3 documentation:
-[NetworkFirewall.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
+[NetworkFirewall.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Type annotations for
 `boto3.client("network-firewall").associate_firewall_policy` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.associate_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy)
+[NetworkFirewall.Client.associate_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Type annotations for `boto3.client("network-firewall").associate_subnets`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.associate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets)
+[NetworkFirewall.Client.associate_subnets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Returns
 Type annotations for `boto3.client("network-firewall").can_paginate` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.can_paginate)
+[NetworkFirewall.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.can_paginate)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Returns `bool`.
 Type annotations for `boto3.client("network-firewall").create_firewall` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.create_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall)
+[NetworkFirewall.Client.create_firewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall)
 
 Arguments:
 
@@ -171,13 +171,13 @@ Type annotations for `boto3.client("network-firewall").create_firewall_policy`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.create_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy)
+[NetworkFirewall.Client.create_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy)
 
 Arguments:
 
 - `FirewallPolicyName`: `str` *(required)*
-- `FirewallPolicy`: [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
-  *(required)*
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) *(required)*
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
@@ -191,12 +191,12 @@ Type annotations for `boto3.client("network-firewall").create_rule_group`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group)
+[NetworkFirewall.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group)
 
 Arguments:
 
 - `RuleGroupName`: `str` *(required)*
-- `Type`: [RuleGroupType](./literals.md#rulegrouptype) *(required)*
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype) *(required)*
 - `Capacity`: `int` *(required)*
 - `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - `Rules`: `str`
@@ -212,7 +212,7 @@ Returns
 Type annotations for `boto3.client("network-firewall").delete_firewall` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.delete_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall)
+[NetworkFirewall.Client.delete_firewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Type annotations for `boto3.client("network-firewall").delete_firewall_policy`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.delete_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy)
+[NetworkFirewall.Client.delete_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("network-firewall").delete_resource_policy`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy)
+[NetworkFirewall.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy)
 
 Arguments:
 
@@ -258,13 +258,13 @@ Type annotations for `boto3.client("network-firewall").delete_rule_group`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group)
+[NetworkFirewall.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group)
 
 Arguments:
 
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
-- `Type`: [RuleGroupType](./literals.md#rulegrouptype)
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 
 Returns
 [DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("network-firewall").describe_firewall`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.describe_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall)
+[NetworkFirewall.Client.describe_firewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Type annotations for
 `boto3.client("network-firewall").describe_firewall_policy` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.describe_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy)
+[NetworkFirewall.Client.describe_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Type annotations for
 `boto3.client("network-firewall").describe_logging_configuration` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.describe_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration)
+[NetworkFirewall.Client.describe_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Type annotations for
 `boto3.client("network-firewall").describe_resource_policy` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy)
+[NetworkFirewall.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy)
 
 Arguments:
 
@@ -338,13 +338,13 @@ Type annotations for `boto3.client("network-firewall").describe_rule_group`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.describe_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group)
+[NetworkFirewall.Client.describe_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group)
 
 Arguments:
 
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
-- `Type`: [RuleGroupType](./literals.md#rulegrouptype)
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 
 Returns
 [DescribeRuleGroupResponseTypeDef](./type_defs.md#describerulegroupresponsetypedef).
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("network-firewall").disassociate_subnets`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.disassociate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets)
+[NetworkFirewall.Client.disassociate_subnets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("network-firewall").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.generate_presigned_url)
+[NetworkFirewall.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.generate_presigned_url)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("network-firewall").list_firewall_policies`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.list_firewall_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies)
+[NetworkFirewall.Client.list_firewall_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies)
 
 Arguments:
 
@@ -405,7 +405,7 @@ Returns
 Type annotations for `boto3.client("network-firewall").list_firewalls` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.list_firewalls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls)
+[NetworkFirewall.Client.list_firewalls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("network-firewall").list_rule_groups`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups)
+[NetworkFirewall.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("network-firewall").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource)
+[NetworkFirewall.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("network-firewall").put_resource_policy`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy)
+[NetworkFirewall.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("network-firewall").tag_resource` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource)
+[NetworkFirewall.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource)
 
 Arguments:
 
@@ -483,7 +483,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("network-firewall").untag_resource` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource)
+[NetworkFirewall.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource)
 
 Arguments:
 
@@ -498,7 +498,7 @@ Type annotations for
 `boto3.client("network-firewall").update_firewall_delete_protection` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_firewall_delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection)
+[NetworkFirewall.Client.update_firewall_delete_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Type annotations for
 `boto3.client("network-firewall").update_firewall_description` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_firewall_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description)
+[NetworkFirewall.Client.update_firewall_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description)
 
 Arguments:
 
@@ -534,13 +534,13 @@ Type annotations for `boto3.client("network-firewall").update_firewall_policy`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy)
+[NetworkFirewall.Client.update_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy)
 
 Arguments:
 
 - `UpdateToken`: `str` *(required)*
-- `FirewallPolicy`: [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
-  *(required)*
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) *(required)*
 - `FirewallPolicyArn`: `str`
 - `FirewallPolicyName`: `str`
 - `Description`: `str`
@@ -556,7 +556,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_firewall_policy_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection)
+[NetworkFirewall.Client.update_firewall_policy_change_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection)
 
 Arguments:
 
@@ -574,7 +574,7 @@ Type annotations for
 `boto3.client("network-firewall").update_logging_configuration` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration)
+[NetworkFirewall.Client.update_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration)
 
 Arguments:
 
@@ -592,7 +592,7 @@ Type annotations for `boto3.client("network-firewall").update_rule_group`
 method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group)
+[NetworkFirewall.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group)
 
 Arguments:
 
@@ -601,7 +601,7 @@ Arguments:
 - `RuleGroupName`: `str`
 - `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - `Rules`: `str`
-- `Type`: [RuleGroupType](./literals.md#rulegrouptype)
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 - `Description`: `str`
 - `DryRun`: `bool`
 
@@ -614,7 +614,7 @@ Type annotations for
 `boto3.client("network-firewall").update_subnet_change_protection` method.
 
 Boto3 documentation:
-[NetworkFirewall.Client.update_subnet_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection)
+[NetworkFirewall.Client.update_subnet_change_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection)
 
 Arguments:
 

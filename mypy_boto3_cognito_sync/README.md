@@ -3,7 +3,7 @@
 > [Index](..) > CognitoSync
 
 Auto-generated documentation for
-[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
+[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
 [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
@@ -29,46 +29,46 @@ Can be used directly:
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
 ```
 
-CognitoSyncClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [bulk_publish](./client.md#bulk-publish)
-- [can_paginate](./client.md#can-paginate)
-- [delete_dataset](./client.md#delete-dataset)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_identity_pool_usage](./client.md#describe-identity-pool-usage)
-- [describe_identity_usage](./client.md#describe-identity-usage)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_bulk_publish_details](./client.md#get-bulk-publish-details)
-- [get_cognito_events](./client.md#get-cognito-events)
-- [get_identity_pool_configuration](./client.md#get-identity-pool-configuration)
-- [list_datasets](./client.md#list-datasets)
-- [list_identity_pool_usage](./client.md#list-identity-pool-usage)
-- [list_records](./client.md#list-records)
-- [register_device](./client.md#register-device)
-- [set_cognito_events](./client.md#set-cognito-events)
-- [set_identity_pool_configuration](./client.md#set-identity-pool-configuration)
-- [subscribe_to_dataset](./client.md#subscribe-to-dataset)
-- [unsubscribe_from_dataset](./client.md#unsubscribe-from-dataset)
-- [update_records](./client.md#update-records)
+- [bulk_publish](./client.md#bulk_publish)
+- [can_paginate](./client.md#can_paginate)
+- [delete_dataset](./client.md#delete_dataset)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_identity_pool_usage](./client.md#describe_identity_pool_usage)
+- [describe_identity_usage](./client.md#describe_identity_usage)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_bulk_publish_details](./client.md#get_bulk_publish_details)
+- [get_cognito_events](./client.md#get_cognito_events)
+- [get_identity_pool_configuration](./client.md#get_identity_pool_configuration)
+- [list_datasets](./client.md#list_datasets)
+- [list_identity_pool_usage](./client.md#list_identity_pool_usage)
+- [list_records](./client.md#list_records)
+- [register_device](./client.md#register_device)
+- [set_cognito_events](./client.md#set_cognito_events)
+- [set_identity_pool_configuration](./client.md#set_identity_pool_configuration)
+- [subscribe_to_dataset](./client.md#subscribe_to_dataset)
+- [unsubscribe_from_dataset](./client.md#unsubscribe_from_dataset)
+- [update_records](./client.md#update_records)
 
 ### Exceptions
 
-- [AlreadyStreamedException](./client.md#alreadystreamedexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [DuplicateRequestException](./client.md#duplicaterequestexception)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [InvalidConfigurationException](./client.md#invalidconfigurationexception)
-- [InvalidLambdaFunctionOutputException](./client.md#invalidlambdafunctionoutputexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [LambdaThrottledException](./client.md#lambdathrottledexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotAuthorizedException](./client.md#notauthorizedexception)
-- [ResourceConflictException](./client.md#resourceconflictexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+CognitoSyncClient [exceptions](./client.md#exceptions)
+
+- AlreadyStreamedException
+- ClientError
+- ConcurrentModificationException
+- DuplicateRequestException
+- InternalErrorException
+- InvalidConfigurationException
+- InvalidLambdaFunctionOutputException
+- InvalidParameterException
+- LambdaThrottledException
+- LimitExceededException
+- NotAuthorizedException
+- ResourceConflictException
+- ResourceNotFoundException
+- TooManyRequestsException
 
 ## Literals
 
@@ -77,13 +77,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cognito_sync.literals import BulkPublishStatus, ...
+from mypy_boto3_cognito_sync.literals import BulkPublishStatusType, ...
 ```
 
-- [BulkPublishStatus](./literals.md#bulkpublishstatus)
-- [Operation](./literals.md#operation)
-- [Platform](./literals.md#platform)
-- [StreamingStatus](./literals.md#streamingstatus)
+- [BulkPublishStatusType](./literals.md#bulkpublishstatustype)
+- [OperationType](./literals.md#operationtype)
+- [PlatformType](./literals.md#platformtype)
+- [StreamingStatusType](./literals.md#streamingstatustype)
 
 ## Typed dictionaries
 

@@ -3,31 +3,31 @@
 > [Index](..) > [ComprehendMedical](.) > Literals
 
 Auto-generated documentation for
-[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
 [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 - [Literals for boto3 ComprehendMedical module](#literals-for-boto3-comprehendmedical-module)
-  - [AttributeName](#attributename)
-  - [EntitySubType](#entitysubtype)
-  - [EntityType](#entitytype)
-  - [ICD10CMAttributeType](#icd10cmattributetype)
-  - [ICD10CMEntityCategory](#icd10cmentitycategory)
-  - [ICD10CMEntityType](#icd10cmentitytype)
-  - [ICD10CMRelationshipType](#icd10cmrelationshiptype)
-  - [ICD10CMTraitName](#icd10cmtraitname)
-  - [JobStatus](#jobstatus)
-  - [LanguageCode](#languagecode)
-  - [RelationshipType](#relationshiptype)
-  - [RxNormAttributeType](#rxnormattributetype)
-  - [RxNormEntityCategory](#rxnormentitycategory)
-  - [RxNormEntityType](#rxnormentitytype)
-  - [RxNormTraitName](#rxnormtraitname)
+  - [AttributeNameType](#attributenametype)
+  - [EntitySubTypeType](#entitysubtypetype)
+  - [EntityTypeType](#entitytypetype)
+  - [ICD10CMAttributeTypeType](#icd10cmattributetypetype)
+  - [ICD10CMEntityCategoryType](#icd10cmentitycategorytype)
+  - [ICD10CMEntityTypeType](#icd10cmentitytypetype)
+  - [ICD10CMRelationshipTypeType](#icd10cmrelationshiptypetype)
+  - [ICD10CMTraitNameType](#icd10cmtraitnametype)
+  - [JobStatusType](#jobstatustype)
+  - [LanguageCodeType](#languagecodetype)
+  - [RelationshipTypeType](#relationshiptypetype)
+  - [RxNormAttributeTypeType](#rxnormattributetypetype)
+  - [RxNormEntityCategoryType](#rxnormentitycategorytype)
+  - [RxNormEntityTypeType](#rxnormentitytypetype)
+  - [RxNormTraitNameType](#rxnormtraitnametype)
 
-## AttributeName
+## AttributeNameType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import AttributeName
+from mypy_boto3_comprehendmedical.literals import AttributeNameType
 ```
 
 Values:
@@ -37,10 +37,10 @@ Values:
 - `SIGN`
 - `SYMPTOM`
 
-## EntitySubType
+## EntitySubTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import EntitySubType
+from mypy_boto3_comprehendmedical.literals import EntitySubTypeType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `TREATMENT_NAME`
 - `URL`
 
-## EntityType
+## EntityTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import EntityType
+from mypy_boto3_comprehendmedical.literals import EntityTypeType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `TEST_TREATMENT_PROCEDURE`
 - `TIME_EXPRESSION`
 
-## ICD10CMAttributeType
+## ICD10CMAttributeTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import ICD10CMAttributeType
+from mypy_boto3_comprehendmedical.literals import ICD10CMAttributeTypeType
 ```
 
 Values:
@@ -111,20 +111,20 @@ Values:
 - `TIME_EXPRESSION`
 - `TIME_TO_DX_NAME`
 
-## ICD10CMEntityCategory
+## ICD10CMEntityCategoryType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import ICD10CMEntityCategory
+from mypy_boto3_comprehendmedical.literals import ICD10CMEntityCategoryType
 ```
 
 Values:
 
 - `MEDICAL_CONDITION`
 
-## ICD10CMEntityType
+## ICD10CMEntityTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import ICD10CMEntityType
+from mypy_boto3_comprehendmedical.literals import ICD10CMEntityTypeType
 ```
 
 Values:
@@ -132,10 +132,10 @@ Values:
 - `DX_NAME`
 - `TIME_EXPRESSION`
 
-## ICD10CMRelationshipType
+## ICD10CMRelationshipTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import ICD10CMRelationshipType
+from mypy_boto3_comprehendmedical.literals import ICD10CMRelationshipTypeType
 ```
 
 Values:
@@ -143,10 +143,10 @@ Values:
 - `OVERLAP`
 - `SYSTEM_ORGAN_SITE`
 
-## ICD10CMTraitName
+## ICD10CMTraitNameType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import ICD10CMTraitName
+from mypy_boto3_comprehendmedical.literals import ICD10CMTraitNameType
 ```
 
 Values:
@@ -156,10 +156,10 @@ Values:
 - `SIGN`
 - `SYMPTOM`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import JobStatus
+from mypy_boto3_comprehendmedical.literals import JobStatusType
 ```
 
 Values:
@@ -172,20 +172,20 @@ Values:
 - `STOPPED`
 - `SUBMITTED`
 
-## LanguageCode
+## LanguageCodeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import LanguageCode
+from mypy_boto3_comprehendmedical.literals import LanguageCodeType
 ```
 
 Values:
 
 - `en`
 
-## RelationshipType
+## RelationshipTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import RelationshipType
+from mypy_boto3_comprehendmedical.literals import RelationshipTypeType
 ```
 
 Values:
@@ -209,10 +209,10 @@ Values:
 - `TEST_VALUE`
 - `WITH_DOSAGE`
 
-## RxNormAttributeType
+## RxNormAttributeTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import RxNormAttributeType
+from mypy_boto3_comprehendmedical.literals import RxNormAttributeTypeType
 ```
 
 Values:
@@ -225,20 +225,20 @@ Values:
 - `ROUTE_OR_MODE`
 - `STRENGTH`
 
-## RxNormEntityCategory
+## RxNormEntityCategoryType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import RxNormEntityCategory
+from mypy_boto3_comprehendmedical.literals import RxNormEntityCategoryType
 ```
 
 Values:
 
 - `MEDICATION`
 
-## RxNormEntityType
+## RxNormEntityTypeType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import RxNormEntityType
+from mypy_boto3_comprehendmedical.literals import RxNormEntityTypeType
 ```
 
 Values:
@@ -246,10 +246,10 @@ Values:
 - `BRAND_NAME`
 - `GENERIC_NAME`
 
-## RxNormTraitName
+## RxNormTraitNameType
 
 ```python
-from mypy_boto3_comprehendmedical.literals import RxNormTraitName
+from mypy_boto3_comprehendmedical.literals import RxNormTraitNameType
 ```
 
 Values:

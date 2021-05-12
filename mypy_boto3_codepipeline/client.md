@@ -3,7 +3,7 @@
 > [Index](..) > [CodePipeline](.) > CodePipelineClient
 
 Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
 [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
@@ -68,7 +68,7 @@ def get_codepipeline_client() -> CodePipelineClient:
 ```
 
 Boto3 documentation:
-[CodePipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
+[CodePipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client)
 
 ## Exceptions
 
@@ -130,7 +130,7 @@ Exceptions:
 Type annotations for `boto3.client("codepipeline").acknowledge_job` method.
 
 Boto3 documentation:
-[CodePipeline.Client.acknowledge_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
+[CodePipeline.Client.acknowledge_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("codepipeline").acknowledge_third_party_job`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.acknowledge_third_party_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
+[CodePipeline.Client.acknowledge_third_party_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").can_paginate` method.
 
 Boto3 documentation:
-[CodePipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate)
+[CodePipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.can_paginate)
 
 Arguments:
 
@@ -176,11 +176,12 @@ Type annotations for `boto3.client("codepipeline").create_custom_action_type`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.create_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
+[CodePipeline.Client.create_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
 
 Arguments:
 
-- `category`: [ActionCategory](./literals.md#actioncategory) *(required)*
+- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
+  *(required)*
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
 - `inputArtifactDetails`:
@@ -201,7 +202,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").create_pipeline` method.
 
 Boto3 documentation:
-[CodePipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
+[CodePipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
 
 Arguments:
 
@@ -219,11 +220,12 @@ Type annotations for `boto3.client("codepipeline").delete_custom_action_type`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.delete_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
+[CodePipeline.Client.delete_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
 
 Arguments:
 
-- `category`: [ActionCategory](./literals.md#actioncategory) *(required)*
+- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
+  *(required)*
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
 
@@ -232,7 +234,7 @@ Arguments:
 Type annotations for `boto3.client("codepipeline").delete_pipeline` method.
 
 Boto3 documentation:
-[CodePipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
+[CodePipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
 
 Arguments:
 
@@ -243,7 +245,7 @@ Arguments:
 Type annotations for `boto3.client("codepipeline").delete_webhook` method.
 
 Boto3 documentation:
-[CodePipeline.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
+[CodePipeline.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
 
 Arguments:
 
@@ -257,7 +259,7 @@ Type annotations for
 `boto3.client("codepipeline").deregister_webhook_with_third_party` method.
 
 Boto3 documentation:
-[CodePipeline.Client.deregister_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
+[CodePipeline.Client.deregister_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
 
 Arguments:
 
@@ -271,14 +273,14 @@ Type annotations for `boto3.client("codepipeline").disable_stage_transition`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.disable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
+[CodePipeline.Client.disable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
 
 Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
-- `transitionType`: [StageTransitionType](./literals.md#stagetransitiontype)
-  *(required)*
+- `transitionType`:
+  [StageTransitionTypeType](./literals.md#stagetransitiontypetype) *(required)*
 - `reason`: `str` *(required)*
 
 ### enable_stage_transition
@@ -287,14 +289,14 @@ Type annotations for `boto3.client("codepipeline").enable_stage_transition`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.enable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
+[CodePipeline.Client.enable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
 
 Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
-- `transitionType`: [StageTransitionType](./literals.md#stagetransitiontype)
-  *(required)*
+- `transitionType`:
+  [StageTransitionTypeType](./literals.md#stagetransitiontypetype) *(required)*
 
 ### generate_presigned_url
 
@@ -302,7 +304,7 @@ Type annotations for `boto3.client("codepipeline").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url)
+[CodePipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url)
 
 Arguments:
 
@@ -318,11 +320,12 @@ Returns `str`.
 Type annotations for `boto3.client("codepipeline").get_action_type` method.
 
 Boto3 documentation:
-[CodePipeline.Client.get_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
+[CodePipeline.Client.get_action_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
 
 Arguments:
 
-- `category`: [ActionCategory](./literals.md#actioncategory) *(required)*
+- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
+  *(required)*
 - `owner`: `str` *(required)*
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -335,7 +338,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").get_job_details` method.
 
 Boto3 documentation:
-[CodePipeline.Client.get_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
+[CodePipeline.Client.get_job_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
 
 Arguments:
 
@@ -349,7 +352,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").get_pipeline` method.
 
 Boto3 documentation:
-[CodePipeline.Client.get_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
+[CodePipeline.Client.get_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
 
 Arguments:
 
@@ -364,7 +367,7 @@ Type annotations for `boto3.client("codepipeline").get_pipeline_execution`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.get_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
+[CodePipeline.Client.get_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
 
 Arguments:
 
@@ -379,7 +382,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").get_pipeline_state` method.
 
 Boto3 documentation:
-[CodePipeline.Client.get_pipeline_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
+[CodePipeline.Client.get_pipeline_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
 
 Arguments:
 
@@ -394,7 +397,7 @@ Type annotations for `boto3.client("codepipeline").get_third_party_job_details`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.get_third_party_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
+[CodePipeline.Client.get_third_party_job_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
 
 Arguments:
 
@@ -410,7 +413,7 @@ Type annotations for `boto3.client("codepipeline").list_action_executions`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.list_action_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
+[CodePipeline.Client.list_action_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
 
 Arguments:
 
@@ -428,11 +431,11 @@ Returns
 Type annotations for `boto3.client("codepipeline").list_action_types` method.
 
 Boto3 documentation:
-[CodePipeline.Client.list_action_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
+[CodePipeline.Client.list_action_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
 
 Arguments:
 
-- `actionOwnerFilter`: [ActionOwner](./literals.md#actionowner)
+- `actionOwnerFilter`: [ActionOwnerType](./literals.md#actionownertype)
 - `nextToken`: `str`
 - `regionFilter`: `str`
 
@@ -445,7 +448,7 @@ Type annotations for `boto3.client("codepipeline").list_pipeline_executions`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
+[CodePipeline.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
 
 Arguments:
 
@@ -461,7 +464,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").list_pipelines` method.
 
 Boto3 documentation:
-[CodePipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
+[CodePipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
 
 Arguments:
 
@@ -477,7 +480,7 @@ Type annotations for `boto3.client("codepipeline").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
+[CodePipeline.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -493,7 +496,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").list_webhooks` method.
 
 Boto3 documentation:
-[CodePipeline.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
+[CodePipeline.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
 
 Arguments:
 
@@ -507,7 +510,7 @@ Returns [ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef).
 Type annotations for `boto3.client("codepipeline").poll_for_jobs` method.
 
 Boto3 documentation:
-[CodePipeline.Client.poll_for_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
+[CodePipeline.Client.poll_for_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
 
 Arguments:
 
@@ -524,7 +527,7 @@ Type annotations for `boto3.client("codepipeline").poll_for_third_party_jobs`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.poll_for_third_party_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
+[CodePipeline.Client.poll_for_third_party_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
 
 Arguments:
 
@@ -540,15 +543,15 @@ Returns
 Type annotations for `boto3.client("codepipeline").put_action_revision` method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_action_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
+[CodePipeline.Client.put_action_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
 
 Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `actionName`: `str` *(required)*
-- `actionRevision`: [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef)
-  *(required)*
+- `actionRevision`:
+  [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef) *(required)*
 
 Returns
 [PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef).
@@ -558,7 +561,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").put_approval_result` method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_approval_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
+[CodePipeline.Client.put_approval_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
 
 Arguments:
 
@@ -578,13 +581,13 @@ Type annotations for `boto3.client("codepipeline").put_job_failure_result`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
+[CodePipeline.Client.put_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
 
 Arguments:
 
 - `jobId`: `str` *(required)*
-- `failureDetails`: [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-  *(required)*
+- `failureDetails`:
+  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) *(required)*
 
 ### put_job_success_result
 
@@ -592,7 +595,7 @@ Type annotations for `boto3.client("codepipeline").put_job_success_result`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
+[CodePipeline.Client.put_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
 
 Arguments:
 
@@ -610,14 +613,14 @@ Type annotations for
 `boto3.client("codepipeline").put_third_party_job_failure_result` method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_third_party_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
+[CodePipeline.Client.put_third_party_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
 
 Arguments:
 
 - `jobId`: `str` *(required)*
 - `clientToken`: `str` *(required)*
-- `failureDetails`: [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-  *(required)*
+- `failureDetails`:
+  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) *(required)*
 
 ### put_third_party_job_success_result
 
@@ -625,7 +628,7 @@ Type annotations for
 `boto3.client("codepipeline").put_third_party_job_success_result` method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_third_party_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
+[CodePipeline.Client.put_third_party_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
 
 Arguments:
 
@@ -642,11 +645,12 @@ Arguments:
 Type annotations for `boto3.client("codepipeline").put_webhook` method.
 
 Boto3 documentation:
-[CodePipeline.Client.put_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
+[CodePipeline.Client.put_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
 
 Arguments:
 
-- `webhook`: [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
+- `webhook`:
+  [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
   *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -658,7 +662,7 @@ Type annotations for
 `boto3.client("codepipeline").register_webhook_with_third_party` method.
 
 Boto3 documentation:
-[CodePipeline.Client.register_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
+[CodePipeline.Client.register_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
 
 Arguments:
 
@@ -672,7 +676,7 @@ Type annotations for `boto3.client("codepipeline").retry_stage_execution`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.retry_stage_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
+[CodePipeline.Client.retry_stage_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
 
 Arguments:
 
@@ -680,7 +684,7 @@ Arguments:
 - `stageName`: `str` *(required)*
 - `pipelineExecutionId`: `str` *(required)*
 - `retryMode`: `Literal['FAILED_ACTIONS']` (see
-  [StageRetryMode](./literals.md#stageretrymode)) *(required)*
+  [StageRetryModeType](./literals.md#stageretrymodetype)) *(required)*
 
 Returns
 [RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef).
@@ -691,7 +695,7 @@ Type annotations for `boto3.client("codepipeline").start_pipeline_execution`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
+[CodePipeline.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
 
 Arguments:
 
@@ -707,7 +711,7 @@ Type annotations for `boto3.client("codepipeline").stop_pipeline_execution`
 method.
 
 Boto3 documentation:
-[CodePipeline.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
+[CodePipeline.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
 
 Arguments:
 
@@ -724,7 +728,7 @@ Returns
 Type annotations for `boto3.client("codepipeline").tag_resource` method.
 
 Boto3 documentation:
-[CodePipeline.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
+[CodePipeline.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
 
 Arguments:
 
@@ -738,7 +742,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codepipeline").untag_resource` method.
 
 Boto3 documentation:
-[CodePipeline.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
+[CodePipeline.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
 
 Arguments:
 
@@ -752,7 +756,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codepipeline").update_action_type` method.
 
 Boto3 documentation:
-[CodePipeline.Client.update_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
+[CodePipeline.Client.update_action_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
 
 Arguments:
 
@@ -765,7 +769,7 @@ Arguments:
 Type annotations for `boto3.client("codepipeline").update_pipeline` method.
 
 Boto3 documentation:
-[CodePipeline.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
+[CodePipeline.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
 
 Arguments:
 

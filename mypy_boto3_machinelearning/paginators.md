@@ -3,7 +3,7 @@
 > [Index](..) > [MachineLearning](.) > Paginators
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
@@ -28,12 +28,12 @@ def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPagina
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeBatchPredictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
+[MachineLearning.Paginator.DescribeBatchPredictions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
 
 Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
 
 - `FilterVariable`:
-  [BatchPredictionFilterVariable](./literals.md#batchpredictionfiltervariable)
+  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -41,7 +41,7 @@ Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -63,12 +63,12 @@ def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeDataSources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
+[MachineLearning.Paginator.DescribeDataSources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
 
 Arguments for `DescribeDataSourcesPaginator.paginate` method:
 
 - `FilterVariable`:
-  [DataSourceFilterVariable](./literals.md#datasourcefiltervariable)
+  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -76,7 +76,7 @@ Arguments for `DescribeDataSourcesPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -98,12 +98,12 @@ def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeEvaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
+[MachineLearning.Paginator.DescribeEvaluations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
 
 Arguments for `DescribeEvaluationsPaginator.paginate` method:
 
 - `FilterVariable`:
-  [EvaluationFilterVariable](./literals.md#evaluationfiltervariable)
+  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -111,7 +111,7 @@ Arguments for `DescribeEvaluationsPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -133,11 +133,12 @@ def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeMLModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
+[MachineLearning.Paginator.DescribeMLModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
 
 Arguments for `DescribeMLModelsPaginator.paginate` method:
 
-- `FilterVariable`: [MLModelFilterVariable](./literals.md#mlmodelfiltervariable)
+- `FilterVariable`:
+  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -145,7 +146,7 @@ Arguments for `DescribeMLModelsPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

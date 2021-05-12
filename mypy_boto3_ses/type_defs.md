@@ -3,7 +3,7 @@
 > [Index](..) > [SES](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES)
 type annotations stubs module
 [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
@@ -135,7 +135,7 @@ Required fields:
 Optional fields:
 
 - `RecipientArn`: `str`
-- `BounceType`: [BounceType](./literals.md#bouncetype)
+- `BounceType`: [BounceTypeType](./literals.md#bouncetypetype)
 - `RecipientDsnFields`:
   [RecipientDsnFieldsTypeDef](./type_defs.md#recipientdsnfieldstypedef)
 
@@ -147,7 +147,7 @@ from mypy_boto3_ses.type_defs import BulkEmailDestinationStatusTypeDef
 
 Optional fields:
 
-- `Status`: [BulkEmailStatus](./literals.md#bulkemailstatus)
+- `Status`: [BulkEmailStatusType](./literals.md#bulkemailstatustype)
 - `Error`: `str`
 - `MessageId`: `str`
 
@@ -188,7 +188,7 @@ Required fields:
 
 - `DimensionName`: `str`
 - `DimensionValueSource`:
-  [DimensionValueSource](./literals.md#dimensionvaluesource)
+  [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
 - `DefaultDimensionValue`: `str`
 
 ## ConfigurationSetTypeDef
@@ -237,7 +237,7 @@ from mypy_boto3_ses.type_defs import DeliveryOptionsTypeDef
 
 Optional fields:
 
-- `TlsPolicy`: [TlsPolicy](./literals.md#tlspolicy)
+- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 
 ## DescribeActiveReceiptRuleSetResponseTypeDef
 
@@ -313,7 +313,7 @@ from mypy_boto3_ses.type_defs import EventDestinationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 Optional fields:
 
@@ -322,7 +322,8 @@ Optional fields:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
   [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SNSDestination`: [SNSDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
+- `SNSDestination`:
+  [SNSDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
 ## ExtensionFieldTypeDef
 
@@ -457,7 +458,7 @@ Required fields:
 
 - `DkimEnabled`: `bool`
 - `DkimVerificationStatus`:
-  [VerificationStatus](./literals.md#verificationstatus)
+  [VerificationStatusType](./literals.md#verificationstatustype)
 
 Optional fields:
 
@@ -473,8 +474,9 @@ Required fields:
 
 - `MailFromDomain`: `str`
 - `MailFromDomainStatus`:
-  [CustomMailFromStatus](./literals.md#custommailfromstatus)
-- `BehaviorOnMXFailure`: [BehaviorOnMXFailure](./literals.md#behavioronmxfailure)
+  [CustomMailFromStatusType](./literals.md#custommailfromstatustype)
+- `BehaviorOnMXFailure`:
+  [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
 
 ## IdentityNotificationAttributesTypeDef
 
@@ -503,7 +505,8 @@ from mypy_boto3_ses.type_defs import IdentityVerificationAttributesTypeDef
 
 Required fields:
 
-- `VerificationStatus`: [VerificationStatus](./literals.md#verificationstatus)
+- `VerificationStatus`:
+  [VerificationStatusType](./literals.md#verificationstatustype)
 
 Optional fields:
 
@@ -533,7 +536,7 @@ Required fields:
 Optional fields:
 
 - `TopicArn`: `str`
-- `InvocationType`: [InvocationType](./literals.md#invocationtype)
+- `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
 
 ## ListConfigurationSetsResponseTypeDef
 
@@ -698,7 +701,8 @@ Optional fields:
 
 - `S3Action`: [S3ActionTypeDef](./type_defs.md#s3actiontypedef)
 - `BounceAction`: [BounceActionTypeDef](./type_defs.md#bounceactiontypedef)
-- `WorkmailAction`: [WorkmailActionTypeDef](./type_defs.md#workmailactiontypedef)
+- `WorkmailAction`:
+  [WorkmailActionTypeDef](./type_defs.md#workmailactiontypedef)
 - `LambdaAction`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
 - `StopAction`: [StopActionTypeDef](./type_defs.md#stopactiontypedef)
 - `AddHeaderAction`:
@@ -724,7 +728,7 @@ from mypy_boto3_ses.type_defs import ReceiptIpFilterTypeDef
 
 Required fields:
 
-- `Policy`: [ReceiptFilterPolicy](./literals.md#receiptfilterpolicy)
+- `Policy`: [ReceiptFilterPolicyType](./literals.md#receiptfilterpolicytype)
 - `Cidr`: `str`
 
 ## ReceiptRuleSetMetadataTypeDef
@@ -751,7 +755,7 @@ Required fields:
 Optional fields:
 
 - `Enabled`: `bool`
-- `TlsPolicy`: [TlsPolicy](./literals.md#tlspolicy)
+- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 - `Recipients`: `List`\[`str`\]
 - `Actions`:
   `List`\[[ReceiptActionTypeDef](./type_defs.md#receiptactiontypedef)\]
@@ -765,7 +769,7 @@ from mypy_boto3_ses.type_defs import RecipientDsnFieldsTypeDef
 
 Required fields:
 
-- `Action`: [DsnAction](./literals.md#dsnaction)
+- `Action`: [DsnActionType](./literals.md#dsnactiontype)
 - `Status`: `str`
 
 Optional fields:
@@ -817,7 +821,7 @@ Required fields:
 
 Optional fields:
 
-- `Encoding`: [SNSActionEncoding](./literals.md#snsactionencoding)
+- `Encoding`: [SNSActionEncodingType](./literals.md#snsactionencodingtype)
 
 ## SNSDestinationTypeDef
 
@@ -912,7 +916,8 @@ from mypy_boto3_ses.type_defs import StopActionTypeDef
 
 Required fields:
 
-- `Scope`: `Literal['RuleSet']` (see [StopScope](./literals.md#stopscope))
+- `Scope`: `Literal['RuleSet']` (see
+  [StopScopeType](./literals.md#stopscopetype))
 
 Optional fields:
 

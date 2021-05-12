@@ -3,7 +3,7 @@
 > [Index](..) > [WAF](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+[WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF)
 type annotations stubs module
 [mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
 
@@ -153,7 +153,7 @@ Optional fields:
 - `Action`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 - `OverrideAction`:
   [WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef)
-- `Type`: [WafRuleType](./literals.md#wafruletype)
+- `Type`: [WafRuleTypeType](./literals.md#wafruletypetype)
 - `ExcludedRules`:
   `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 
@@ -192,8 +192,9 @@ from mypy_boto3_waf.type_defs import ByteMatchSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
-- `ByteMatchTuple`: [ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
+- `ByteMatchTuple`:
+  [ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef)
 
 ## ByteMatchTupleTypeDef
 
@@ -205,9 +206,10 @@ Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TargetString`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `TextTransformation`: [TextTransformation](./literals.md#texttransformation)
+- `TextTransformation`:
+  [TextTransformationType](./literals.md#texttransformationtype)
 - `PositionalConstraint`:
-  [PositionalConstraint](./literals.md#positionalconstraint)
+  [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
 ## CreateByteMatchSetResponseTypeDef
 
@@ -492,7 +494,7 @@ from mypy_boto3_waf.type_defs import FieldToMatchTypeDef
 
 Required fields:
 
-- `Type`: [MatchFieldType](./literals.md#matchfieldtype)
+- `Type`: [MatchFieldTypeType](./literals.md#matchfieldtypetype)
 
 Optional fields:
 
@@ -507,8 +509,9 @@ from mypy_boto3_waf.type_defs import GeoMatchConstraintTypeDef
 Required fields:
 
 - `Type`: `Literal['Country']` (see
-  [GeoMatchConstraintType](./literals.md#geomatchconstrainttype))
-- `Value`: [GeoMatchConstraintValue](./literals.md#geomatchconstraintvalue)
+  [GeoMatchConstraintTypeType](./literals.md#geomatchconstrainttypetype))
+- `Value`:
+  [GeoMatchConstraintValueType](./literals.md#geomatchconstraintvaluetype)
 
 ## GeoMatchSetSummaryTypeDef
 
@@ -545,7 +548,7 @@ from mypy_boto3_waf.type_defs import GeoMatchSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `GeoMatchConstraint`:
   [GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef)
 
@@ -577,7 +580,8 @@ from mypy_boto3_waf.type_defs import GetChangeTokenStatusResponseTypeDef
 
 Optional fields:
 
-- `ChangeTokenStatus`: [ChangeTokenStatus](./literals.md#changetokenstatus)
+- `ChangeTokenStatus`:
+  [ChangeTokenStatusType](./literals.md#changetokenstatustype)
 
 ## GetGeoMatchSetResponseTypeDef
 
@@ -771,7 +775,7 @@ from mypy_boto3_waf.type_defs import IPSetDescriptorTypeDef
 
 Required fields:
 
-- `Type`: [IPSetDescriptorType](./literals.md#ipsetdescriptortype)
+- `Type`: [IPSetDescriptorTypeType](./literals.md#ipsetdescriptortypetype)
 - `Value`: `str`
 
 ## IPSetSummaryTypeDef
@@ -809,7 +813,7 @@ from mypy_boto3_waf.type_defs import IPSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `IPSetDescriptor`:
   [IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef)
 
@@ -1039,7 +1043,7 @@ from mypy_boto3_waf.type_defs import PredicateTypeDef
 Required fields:
 
 - `Negated`: `bool`
-- `Type`: [PredicateType](./literals.md#predicatetype)
+- `Type`: [PredicateTypeType](./literals.md#predicatetypetype)
 - `DataId`: `str`
 
 ## PutLoggingConfigurationResponseTypeDef
@@ -1064,7 +1068,7 @@ Required fields:
 - `RuleId`: `str`
 - `MatchPredicates`:
   `List`\[[PredicateTypeDef](./type_defs.md#predicatetypedef)\]
-- `RateKey`: `Literal['IP']` (see [RateKey](./literals.md#ratekey))
+- `RateKey`: `Literal['IP']` (see [RateKeyType](./literals.md#ratekeytype))
 - `RateLimit`: `int`
 
 Optional fields:
@@ -1104,7 +1108,7 @@ from mypy_boto3_waf.type_defs import RegexMatchSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `RegexMatchTuple`:
   [RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef)
 
@@ -1117,7 +1121,8 @@ from mypy_boto3_waf.type_defs import RegexMatchTupleTypeDef
 Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`: [TextTransformation](./literals.md#texttransformation)
+- `TextTransformation`:
+  [TextTransformationType](./literals.md#texttransformationtype)
 - `RegexPatternSetId`: `str`
 
 ## RegexPatternSetSummaryTypeDef
@@ -1154,7 +1159,7 @@ from mypy_boto3_waf.type_defs import RegexPatternSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `RegexPatternString`: `str`
 
 ## RuleGroupSummaryTypeDef
@@ -1191,7 +1196,7 @@ from mypy_boto3_waf.type_defs import RuleGroupUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `ActivatedRule`: [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
 
 ## RuleSummaryTypeDef
@@ -1229,7 +1234,7 @@ from mypy_boto3_waf.type_defs import RuleUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 
 ## SampledHTTPRequestTypeDef
@@ -1284,8 +1289,9 @@ from mypy_boto3_waf.type_defs import SizeConstraintSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
-- `SizeConstraint`: [SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
+- `SizeConstraint`:
+  [SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef)
 
 ## SizeConstraintTypeDef
 
@@ -1296,8 +1302,10 @@ from mypy_boto3_waf.type_defs import SizeConstraintTypeDef
 Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`: [TextTransformation](./literals.md#texttransformation)
-- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `TextTransformation`:
+  [TextTransformationType](./literals.md#texttransformationtype)
+- `ComparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Size`: `int`
 
 ## SqlInjectionMatchSetSummaryTypeDef
@@ -1335,7 +1343,7 @@ from mypy_boto3_waf.type_defs import SqlInjectionMatchSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `SqlInjectionMatchTuple`:
   [SqlInjectionMatchTupleTypeDef](./type_defs.md#sqlinjectionmatchtupletypedef)
 
@@ -1348,7 +1356,8 @@ from mypy_boto3_waf.type_defs import SqlInjectionMatchTupleTypeDef
 Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`: [TextTransformation](./literals.md#texttransformation)
+- `TextTransformation`:
+  [TextTransformationType](./literals.md#texttransformationtype)
 
 ## SubscribedRuleGroupSummaryTypeDef
 
@@ -1523,7 +1532,7 @@ from mypy_boto3_waf.type_defs import WafActionTypeDef
 
 Required fields:
 
-- `Type`: [WafActionType](./literals.md#wafactiontype)
+- `Type`: [WafActionTypeType](./literals.md#wafactiontypetype)
 
 ## WafOverrideActionTypeDef
 
@@ -1533,7 +1542,7 @@ from mypy_boto3_waf.type_defs import WafOverrideActionTypeDef
 
 Required fields:
 
-- `Type`: [WafOverrideActionType](./literals.md#wafoverrideactiontype)
+- `Type`: [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
 
 ## WebACLSummaryTypeDef
 
@@ -1556,7 +1565,8 @@ Required fields:
 
 - `WebACLId`: `str`
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
-- `Rules`: `List`\[[ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)\]
+- `Rules`:
+  `List`\[[ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)\]
 
 Optional fields:
 
@@ -1572,7 +1582,7 @@ from mypy_boto3_waf.type_defs import WebACLUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `ActivatedRule`: [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
 
 ## XssMatchSetSummaryTypeDef
@@ -1610,7 +1620,7 @@ from mypy_boto3_waf.type_defs import XssMatchSetUpdateTypeDef
 
 Required fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `XssMatchTuple`: [XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef)
 
 ## XssMatchTupleTypeDef
@@ -1622,4 +1632,5 @@ from mypy_boto3_waf.type_defs import XssMatchTupleTypeDef
 Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`: [TextTransformation](./literals.md#texttransformation)
+- `TextTransformation`:
+  [TextTransformationType](./literals.md#texttransformationtype)

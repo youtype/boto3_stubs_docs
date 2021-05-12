@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutMetrics](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
 [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
@@ -88,8 +88,8 @@ Optional fields:
 - `AnomalyDetectorArn`: `str`
 - `AlertName`: `str`
 - `AlertSensitivityThreshold`: `int`
-- `AlertType`: [AlertType](./literals.md#alerttype)
-- `AlertStatus`: [AlertStatus](./literals.md#alertstatus)
+- `AlertType`: [AlertTypeType](./literals.md#alerttypetype)
+- `AlertStatus`: [AlertStatusType](./literals.md#alertstatustype)
 - `LastModificationTime`: `datetime`
 - `CreationTime`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -108,8 +108,8 @@ Optional fields:
 - `AnomalyDetectorArn`: `str`
 - `AlertName`: `str`
 - `AlertSensitivityThreshold`: `int`
-- `AlertType`: [AlertType](./literals.md#alerttype)
-- `AlertStatus`: [AlertStatus](./literals.md#alertstatus)
+- `AlertType`: [AlertTypeType](./literals.md#alerttypetype)
+- `AlertStatus`: [AlertStatusType](./literals.md#alertstatustype)
 - `LastModificationTime`: `datetime`
 - `CreationTime`: `datetime`
 
@@ -121,7 +121,7 @@ from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorConfigSummaryType
 
 Optional fields:
 
-- `AnomalyDetectorFrequency`: [Frequency](./literals.md#frequency)
+- `AnomalyDetectorFrequency`: [FrequencyType](./literals.md#frequencytype)
 
 ## AnomalyDetectorConfigTypeDef
 
@@ -131,7 +131,7 @@ from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorConfigTypeDef
 
 Optional fields:
 
-- `AnomalyDetectorFrequency`: [Frequency](./literals.md#frequency)
+- `AnomalyDetectorFrequency`: [FrequencyType](./literals.md#frequencytype)
 
 ## AnomalyDetectorSummaryTypeDef
 
@@ -146,7 +146,8 @@ Optional fields:
 - `AnomalyDetectorDescription`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-- `Status`: [AnomalyDetectorStatus](./literals.md#anomalydetectorstatus)
+- `Status`:
+  [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## AnomalyGroupStatisticsTypeDef
@@ -288,7 +289,8 @@ from mypy_boto3_lookoutmetrics.type_defs import CsvFormatDescriptorTypeDef
 
 Optional fields:
 
-- `FileCompression`: [CSVFileCompression](./literals.md#csvfilecompression)
+- `FileCompression`:
+  [CSVFileCompressionType](./literals.md#csvfilecompressiontype)
 - `Charset`: `str`
 - `ContainsHeader`: `bool`
 - `Delimiter`: `str`
@@ -332,7 +334,8 @@ Optional fields:
   [AnomalyDetectorConfigSummaryTypeDef](./type_defs.md#anomalydetectorconfigsummarytypedef)
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
-- `Status`: [AnomalyDetectorStatus](./literals.md#anomalydetectorstatus)
+- `Status`:
+  [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
 - `FailureReason`: `str`
 - `KmsKeyArn`: `str`
 
@@ -355,7 +358,7 @@ Optional fields:
 - `TimestampColumn`:
   [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
 - `DimensionList`: `List`\[`str`\]
-- `MetricSetFrequency`: [Frequency](./literals.md#frequency)
+- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
 - `Timezone`: `str`
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 
@@ -403,7 +406,7 @@ Optional fields:
 
 - `Timestamp`: `str`
 - `Status`:
-  [AnomalyDetectionTaskStatus](./literals.md#anomalydetectiontaskstatus)
+  [AnomalyDetectionTaskStatusType](./literals.md#anomalydetectiontaskstatustype)
 - `FailureReason`: `str`
 
 ## FileFormatDescriptorTypeDef
@@ -471,7 +474,8 @@ from mypy_boto3_lookoutmetrics.type_defs import JsonFormatDescriptorTypeDef
 
 Optional fields:
 
-- `FileCompression`: [JsonFileCompression](./literals.md#jsonfilecompression)
+- `FileCompression`:
+  [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
 - `Charset`: `str`
 
 ## LambdaConfigurationTypeDef
@@ -597,7 +601,8 @@ from mypy_boto3_lookoutmetrics.type_defs import MetricSourceTypeDef
 
 Optional fields:
 
-- `S3SourceConfig`: [S3SourceConfigTypeDef](./type_defs.md#s3sourceconfigtypedef)
+- `S3SourceConfig`:
+  [S3SourceConfigTypeDef](./type_defs.md#s3sourceconfigtypedef)
 - `AppFlowConfig`: [AppFlowConfigTypeDef](./type_defs.md#appflowconfigtypedef)
 - `CloudWatchConfig`:
   [CloudWatchConfigTypeDef](./type_defs.md#cloudwatchconfigtypedef)
@@ -615,7 +620,8 @@ from mypy_boto3_lookoutmetrics.type_defs import MetricTypeDef
 Required fields:
 
 - `MetricName`: `str`
-- `AggregationFunction`: [AggregationFunction](./literals.md#aggregationfunction)
+- `AggregationFunction`:
+  [AggregationFunctionType](./literals.md#aggregationfunctiontype)
 
 Optional fields:
 

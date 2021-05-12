@@ -3,35 +3,35 @@
 > [Index](..) > [CognitoIdentityProvider](.) > Literals
 
 Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
 [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 - [Literals for boto3 CognitoIdentityProvider module](#literals-for-boto3-cognitoidentityprovider-module)
-  - [AccountTakeoverEventActionType](#accounttakeovereventactiontype)
+  - [AccountTakeoverEventActionTypeType](#accounttakeovereventactiontypetype)
   - [AdminListGroupsForUserPaginatorName](#adminlistgroupsforuserpaginatorname)
   - [AdminListUserAuthEventsPaginatorName](#adminlistuserautheventspaginatorname)
-  - [AdvancedSecurityModeType](#advancedsecuritymodetype)
-  - [AliasAttributeType](#aliasattributetype)
-  - [AttributeDataType](#attributedatatype)
-  - [AuthFlowType](#authflowtype)
-  - [ChallengeName](#challengename)
+  - [AdvancedSecurityModeTypeType](#advancedsecuritymodetypetype)
+  - [AliasAttributeTypeType](#aliasattributetypetype)
+  - [AttributeDataTypeType](#attributedatatypetype)
+  - [AuthFlowTypeType](#authflowtypetype)
   - [ChallengeNameType](#challengenametype)
-  - [ChallengeResponse](#challengeresponse)
-  - [CompromisedCredentialsEventActionType](#compromisedcredentialseventactiontype)
-  - [CustomEmailSenderLambdaVersionType](#customemailsenderlambdaversiontype)
-  - [CustomSMSSenderLambdaVersionType](#customsmssenderlambdaversiontype)
-  - [DefaultEmailOptionType](#defaultemailoptiontype)
-  - [DeliveryMediumType](#deliverymediumtype)
-  - [DeviceRememberedStatusType](#devicerememberedstatustype)
-  - [DomainStatusType](#domainstatustype)
-  - [EmailSendingAccountType](#emailsendingaccounttype)
-  - [EventFilterType](#eventfiltertype)
-  - [EventResponseType](#eventresponsetype)
-  - [EventType](#eventtype)
-  - [ExplicitAuthFlowsType](#explicitauthflowstype)
-  - [FeedbackValueType](#feedbackvaluetype)
-  - [IdentityProviderTypeType](#identityprovidertypetype)
+  - [ChallengeNameTypeType](#challengenametypetype)
+  - [ChallengeResponseType](#challengeresponsetype)
+  - [CompromisedCredentialsEventActionTypeType](#compromisedcredentialseventactiontypetype)
+  - [CustomEmailSenderLambdaVersionTypeType](#customemailsenderlambdaversiontypetype)
+  - [CustomSMSSenderLambdaVersionTypeType](#customsmssenderlambdaversiontypetype)
+  - [DefaultEmailOptionTypeType](#defaultemailoptiontypetype)
+  - [DeliveryMediumTypeType](#deliverymediumtypetype)
+  - [DeviceRememberedStatusTypeType](#devicerememberedstatustypetype)
+  - [DomainStatusTypeType](#domainstatustypetype)
+  - [EmailSendingAccountTypeType](#emailsendingaccounttypetype)
+  - [EventFilterTypeType](#eventfiltertypetype)
+  - [EventResponseTypeType](#eventresponsetypetype)
+  - [EventTypeType](#eventtypetype)
+  - [ExplicitAuthFlowsTypeType](#explicitauthflowstypetype)
+  - [FeedbackValueTypeType](#feedbackvaluetypetype)
+  - [IdentityProviderTypeTypeType](#identityprovidertypetypetype)
   - [ListGroupsPaginatorName](#listgroupspaginatorname)
   - [ListIdentityProvidersPaginatorName](#listidentityproviderspaginatorname)
   - [ListResourceServersPaginatorName](#listresourceserverspaginatorname)
@@ -39,25 +39,25 @@ type annotations stubs module
   - [ListUserPoolsPaginatorName](#listuserpoolspaginatorname)
   - [ListUsersInGroupPaginatorName](#listusersingrouppaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [MessageActionType](#messageactiontype)
-  - [OAuthFlowType](#oauthflowtype)
-  - [PreventUserExistenceErrorTypes](#preventuserexistenceerrortypes)
-  - [RecoveryOptionNameType](#recoveryoptionnametype)
-  - [RiskDecisionType](#riskdecisiontype)
-  - [RiskLevelType](#riskleveltype)
-  - [StatusType](#statustype)
-  - [TimeUnitsType](#timeunitstype)
-  - [UserImportJobStatusType](#userimportjobstatustype)
-  - [UserPoolMfaType](#userpoolmfatype)
-  - [UserStatusType](#userstatustype)
-  - [UsernameAttributeType](#usernameattributetype)
-  - [VerifiedAttributeType](#verifiedattributetype)
-  - [VerifySoftwareTokenResponseType](#verifysoftwaretokenresponsetype)
+  - [MessageActionTypeType](#messageactiontypetype)
+  - [OAuthFlowTypeType](#oauthflowtypetype)
+  - [PreventUserExistenceErrorTypesType](#preventuserexistenceerrortypestype)
+  - [RecoveryOptionNameTypeType](#recoveryoptionnametypetype)
+  - [RiskDecisionTypeType](#riskdecisiontypetype)
+  - [RiskLevelTypeType](#riskleveltypetype)
+  - [StatusTypeType](#statustypetype)
+  - [TimeUnitsTypeType](#timeunitstypetype)
+  - [UserImportJobStatusTypeType](#userimportjobstatustypetype)
+  - [UserPoolMfaTypeType](#userpoolmfatypetype)
+  - [UserStatusTypeType](#userstatustypetype)
+  - [UsernameAttributeTypeType](#usernameattributetypetype)
+  - [VerifiedAttributeTypeType](#verifiedattributetypetype)
+  - [VerifySoftwareTokenResponseTypeType](#verifysoftwaretokenresponsetypetype)
 
-## AccountTakeoverEventActionType
+## AccountTakeoverEventActionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionType
+from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 
 - `admin_list_user_auth_events`
 
-## AdvancedSecurityModeType
+## AdvancedSecurityModeTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import AdvancedSecurityModeType
+from mypy_boto3_cognito_idp.literals import AdvancedSecurityModeTypeType
 ```
 
 Values:
@@ -99,10 +99,10 @@ Values:
 - `ENFORCED`
 - `OFF`
 
-## AliasAttributeType
+## AliasAttributeTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import AliasAttributeType
+from mypy_boto3_cognito_idp.literals import AliasAttributeTypeType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `phone_number`
 - `preferred_username`
 
-## AttributeDataType
+## AttributeDataTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import AttributeDataType
+from mypy_boto3_cognito_idp.literals import AttributeDataTypeType
 ```
 
 Values:
@@ -124,10 +124,10 @@ Values:
 - `Number`
 - `String`
 
-## AuthFlowType
+## AuthFlowTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import AuthFlowType
+from mypy_boto3_cognito_idp.literals import AuthFlowTypeType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `USER_PASSWORD_AUTH`
 - `USER_SRP_AUTH`
 
-## ChallengeName
+## ChallengeNameType
 
 ```python
-from mypy_boto3_cognito_idp.literals import ChallengeName
+from mypy_boto3_cognito_idp.literals import ChallengeNameType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `Mfa`
 - `Password`
 
-## ChallengeNameType
+## ChallengeNameTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import ChallengeNameType
+from mypy_boto3_cognito_idp.literals import ChallengeNameTypeType
 ```
 
 Values:
@@ -170,10 +170,10 @@ Values:
 - `SMS_MFA`
 - `SOFTWARE_TOKEN_MFA`
 
-## ChallengeResponse
+## ChallengeResponseType
 
 ```python
-from mypy_boto3_cognito_idp.literals import ChallengeResponse
+from mypy_boto3_cognito_idp.literals import ChallengeResponseType
 ```
 
 Values:
@@ -181,10 +181,10 @@ Values:
 - `Failure`
 - `Success`
 
-## CompromisedCredentialsEventActionType
+## CompromisedCredentialsEventActionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import CompromisedCredentialsEventActionType
+from mypy_boto3_cognito_idp.literals import CompromisedCredentialsEventActionTypeType
 ```
 
 Values:
@@ -192,30 +192,30 @@ Values:
 - `BLOCK`
 - `NO_ACTION`
 
-## CustomEmailSenderLambdaVersionType
+## CustomEmailSenderLambdaVersionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import CustomEmailSenderLambdaVersionType
+from mypy_boto3_cognito_idp.literals import CustomEmailSenderLambdaVersionTypeType
 ```
 
 Values:
 
 - `V1_0`
 
-## CustomSMSSenderLambdaVersionType
+## CustomSMSSenderLambdaVersionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import CustomSMSSenderLambdaVersionType
+from mypy_boto3_cognito_idp.literals import CustomSMSSenderLambdaVersionTypeType
 ```
 
 Values:
 
 - `V1_0`
 
-## DefaultEmailOptionType
+## DefaultEmailOptionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import DefaultEmailOptionType
+from mypy_boto3_cognito_idp.literals import DefaultEmailOptionTypeType
 ```
 
 Values:
@@ -223,10 +223,10 @@ Values:
 - `CONFIRM_WITH_CODE`
 - `CONFIRM_WITH_LINK`
 
-## DeliveryMediumType
+## DeliveryMediumTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import DeliveryMediumType
+from mypy_boto3_cognito_idp.literals import DeliveryMediumTypeType
 ```
 
 Values:
@@ -234,10 +234,10 @@ Values:
 - `EMAIL`
 - `SMS`
 
-## DeviceRememberedStatusType
+## DeviceRememberedStatusTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import DeviceRememberedStatusType
+from mypy_boto3_cognito_idp.literals import DeviceRememberedStatusTypeType
 ```
 
 Values:
@@ -245,10 +245,10 @@ Values:
 - `not_remembered`
 - `remembered`
 
-## DomainStatusType
+## DomainStatusTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import DomainStatusType
+from mypy_boto3_cognito_idp.literals import DomainStatusTypeType
 ```
 
 Values:
@@ -259,10 +259,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## EmailSendingAccountType
+## EmailSendingAccountTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import EmailSendingAccountType
+from mypy_boto3_cognito_idp.literals import EmailSendingAccountTypeType
 ```
 
 Values:
@@ -270,10 +270,10 @@ Values:
 - `COGNITO_DEFAULT`
 - `DEVELOPER`
 
-## EventFilterType
+## EventFilterTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import EventFilterType
+from mypy_boto3_cognito_idp.literals import EventFilterTypeType
 ```
 
 Values:
@@ -282,10 +282,10 @@ Values:
 - `SIGN_IN`
 - `SIGN_UP`
 
-## EventResponseType
+## EventResponseTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import EventResponseType
+from mypy_boto3_cognito_idp.literals import EventResponseTypeType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 - `Failure`
 - `Success`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import EventType
+from mypy_boto3_cognito_idp.literals import EventTypeType
 ```
 
 Values:
@@ -305,10 +305,10 @@ Values:
 - `SignIn`
 - `SignUp`
 
-## ExplicitAuthFlowsType
+## ExplicitAuthFlowsTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import ExplicitAuthFlowsType
+from mypy_boto3_cognito_idp.literals import ExplicitAuthFlowsTypeType
 ```
 
 Values:
@@ -322,10 +322,10 @@ Values:
 - `CUSTOM_AUTH_FLOW_ONLY`
 - `USER_PASSWORD_AUTH`
 
-## FeedbackValueType
+## FeedbackValueTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import FeedbackValueType
+from mypy_boto3_cognito_idp.literals import FeedbackValueTypeType
 ```
 
 Values:
@@ -333,10 +333,10 @@ Values:
 - `Invalid`
 - `Valid`
 
-## IdentityProviderTypeType
+## IdentityProviderTypeTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import IdentityProviderTypeType
+from mypy_boto3_cognito_idp.literals import IdentityProviderTypeTypeType
 ```
 
 Values:
@@ -418,10 +418,10 @@ Values:
 
 - `list_users`
 
-## MessageActionType
+## MessageActionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import MessageActionType
+from mypy_boto3_cognito_idp.literals import MessageActionTypeType
 ```
 
 Values:
@@ -429,10 +429,10 @@ Values:
 - `RESEND`
 - `SUPPRESS`
 
-## OAuthFlowType
+## OAuthFlowTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import OAuthFlowType
+from mypy_boto3_cognito_idp.literals import OAuthFlowTypeType
 ```
 
 Values:
@@ -441,10 +441,10 @@ Values:
 - `code`
 - `implicit`
 
-## PreventUserExistenceErrorTypes
+## PreventUserExistenceErrorTypesType
 
 ```python
-from mypy_boto3_cognito_idp.literals import PreventUserExistenceErrorTypes
+from mypy_boto3_cognito_idp.literals import PreventUserExistenceErrorTypesType
 ```
 
 Values:
@@ -452,10 +452,10 @@ Values:
 - `ENABLED`
 - `LEGACY`
 
-## RecoveryOptionNameType
+## RecoveryOptionNameTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import RecoveryOptionNameType
+from mypy_boto3_cognito_idp.literals import RecoveryOptionNameTypeType
 ```
 
 Values:
@@ -464,10 +464,10 @@ Values:
 - `verified_email`
 - `verified_phone_number`
 
-## RiskDecisionType
+## RiskDecisionTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import RiskDecisionType
+from mypy_boto3_cognito_idp.literals import RiskDecisionTypeType
 ```
 
 Values:
@@ -476,10 +476,10 @@ Values:
 - `Block`
 - `NoRisk`
 
-## RiskLevelType
+## RiskLevelTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import RiskLevelType
+from mypy_boto3_cognito_idp.literals import RiskLevelTypeType
 ```
 
 Values:
@@ -488,10 +488,10 @@ Values:
 - `Low`
 - `Medium`
 
-## StatusType
+## StatusTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import StatusType
+from mypy_boto3_cognito_idp.literals import StatusTypeType
 ```
 
 Values:
@@ -499,10 +499,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## TimeUnitsType
+## TimeUnitsTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import TimeUnitsType
+from mypy_boto3_cognito_idp.literals import TimeUnitsTypeType
 ```
 
 Values:
@@ -512,10 +512,10 @@ Values:
 - `minutes`
 - `seconds`
 
-## UserImportJobStatusType
+## UserImportJobStatusTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import UserImportJobStatusType
+from mypy_boto3_cognito_idp.literals import UserImportJobStatusTypeType
 ```
 
 Values:
@@ -529,10 +529,10 @@ Values:
 - `Stopping`
 - `Succeeded`
 
-## UserPoolMfaType
+## UserPoolMfaTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import UserPoolMfaType
+from mypy_boto3_cognito_idp.literals import UserPoolMfaTypeType
 ```
 
 Values:
@@ -541,10 +541,10 @@ Values:
 - `ON`
 - `OPTIONAL`
 
-## UserStatusType
+## UserStatusTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import UserStatusType
+from mypy_boto3_cognito_idp.literals import UserStatusTypeType
 ```
 
 Values:
@@ -557,10 +557,10 @@ Values:
 - `UNCONFIRMED`
 - `UNKNOWN`
 
-## UsernameAttributeType
+## UsernameAttributeTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import UsernameAttributeType
+from mypy_boto3_cognito_idp.literals import UsernameAttributeTypeType
 ```
 
 Values:
@@ -568,10 +568,10 @@ Values:
 - `email`
 - `phone_number`
 
-## VerifiedAttributeType
+## VerifiedAttributeTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import VerifiedAttributeType
+from mypy_boto3_cognito_idp.literals import VerifiedAttributeTypeType
 ```
 
 Values:
@@ -579,10 +579,10 @@ Values:
 - `email`
 - `phone_number`
 
-## VerifySoftwareTokenResponseType
+## VerifySoftwareTokenResponseTypeType
 
 ```python
-from mypy_boto3_cognito_idp.literals import VerifySoftwareTokenResponseType
+from mypy_boto3_cognito_idp.literals import VerifySoftwareTokenResponseTypeType
 ```
 
 Values:

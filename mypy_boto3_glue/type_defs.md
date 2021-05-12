@@ -3,7 +3,7 @@
 > [Index](..) > [Glue](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue)
 type annotations stubs module
 [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
@@ -302,7 +302,7 @@ from mypy_boto3_glue.type_defs import BackfillErrorTypeDef
 
 Optional fields:
 
-- `Code`: [BackfillErrorCode](./literals.md#backfillerrorcode)
+- `Code`: [BackfillErrorCodeType](./literals.md#backfillerrorcodetype)
 - `Partitions`:
   `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
 
@@ -485,7 +485,8 @@ from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestEntryTypeDef
 Required fields:
 
 - `PartitionValueList`: `List`\[`str`\]
-- `PartitionInput`: [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
+- `PartitionInput`:
+  [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
 
 ## BatchUpdatePartitionResponseTypeDef
 
@@ -532,7 +533,7 @@ Optional fields:
 
 - `TransformId`: `str`
 - `TaskRunId`: `str`
-- `Status`: [TaskStatusType](./literals.md#taskstatustype)
+- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
 
 ## CatalogEntryTypeDef
 
@@ -587,9 +588,11 @@ from mypy_boto3_glue.type_defs import ClassifierTypeDef
 
 Optional fields:
 
-- `GrokClassifier`: [GrokClassifierTypeDef](./type_defs.md#grokclassifiertypedef)
+- `GrokClassifier`:
+  [GrokClassifierTypeDef](./type_defs.md#grokclassifiertypedef)
 - `XMLClassifier`: [XMLClassifierTypeDef](./type_defs.md#xmlclassifiertypedef)
-- `JsonClassifier`: [JsonClassifierTypeDef](./type_defs.md#jsonclassifiertypedef)
+- `JsonClassifier`:
+  [JsonClassifierTypeDef](./type_defs.md#jsonclassifiertypedef)
 - `CsvClassifier`: [CsvClassifierTypeDef](./type_defs.md#csvclassifiertypedef)
 
 ## CloudWatchEncryptionTypeDef
@@ -601,7 +604,7 @@ from mypy_boto3_glue.type_defs import CloudWatchEncryptionTypeDef
 Optional fields:
 
 - `CloudWatchEncryptionMode`:
-  [CloudWatchEncryptionMode](./literals.md#cloudwatchencryptionmode)
+  [CloudWatchEncryptionModeType](./literals.md#cloudwatchencryptionmodetype)
 - `KmsKeyArn`: `str`
 
 ## CodeGenEdgeTypeDef
@@ -644,7 +647,8 @@ Required fields:
 
 - `Id`: `str`
 - `NodeType`: `str`
-- `Args`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+- `Args`:
+  `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 
 Optional fields:
 
@@ -680,7 +684,7 @@ from mypy_boto3_glue.type_defs import ColumnStatisticsDataTypeDef
 
 Required fields:
 
-- `Type`: [ColumnStatisticsType](./literals.md#columnstatisticstype)
+- `Type`: [ColumnStatisticsTypeType](./literals.md#columnstatisticstypetype)
 
 Optional fields:
 
@@ -750,11 +754,11 @@ from mypy_boto3_glue.type_defs import ConditionTypeDef
 Optional fields:
 
 - `LogicalOperator`: `Literal['EQUALS']` (see
-  [LogicalOperator](./literals.md#logicaloperator))
+  [LogicalOperatorType](./literals.md#logicaloperatortype))
 - `JobName`: `str`
-- `State`: [JobRunState](./literals.md#jobrunstate)
+- `State`: [JobRunStateType](./literals.md#jobrunstatetype)
 - `CrawlerName`: `str`
-- `CrawlState`: [CrawlState](./literals.md#crawlstate)
+- `CrawlState`: [CrawlStateType](./literals.md#crawlstatetype)
 
 ## ConfusionMatrixTypeDef
 
@@ -778,9 +782,10 @@ from mypy_boto3_glue.type_defs import ConnectionInputTypeDef
 Required fields:
 
 - `Name`: `str`
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `ConnectionProperties`:
-  `Dict`\[[ConnectionPropertyKey](./literals.md#connectionpropertykey), `str`\]
+  `Dict`\[[ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype),
+  `str`\]
 
 Optional fields:
 
@@ -813,10 +818,11 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `MatchCriteria`: `List`\[`str`\]
 - `ConnectionProperties`:
-  `Dict`\[[ConnectionPropertyKey](./literals.md#connectionpropertykey), `str`\]
+  `Dict`\[[ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype),
+  `str`\]
 - `PhysicalConnectionRequirements`:
   [PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef)
 - `CreationTime`: `datetime`
@@ -841,7 +847,7 @@ from mypy_boto3_glue.type_defs import CrawlTypeDef
 
 Optional fields:
 
-- `State`: [CrawlState](./literals.md#crawlstate)
+- `State`: [CrawlStateType](./literals.md#crawlstatetype)
 - `StartedOn`: `datetime`
 - `CompletedOn`: `datetime`
 - `ErrorMessage`: `str`
@@ -884,7 +890,8 @@ from mypy_boto3_glue.type_defs import CrawlerTargetsTypeDef
 Optional fields:
 
 - `S3Targets`: `List`\[[S3TargetTypeDef](./type_defs.md#s3targettypedef)\]
-- `JdbcTargets`: `List`\[[JdbcTargetTypeDef](./type_defs.md#jdbctargettypedef)\]
+- `JdbcTargets`:
+  `List`\[[JdbcTargetTypeDef](./type_defs.md#jdbctargettypedef)\]
 - `MongoDBTargets`:
   `List`\[[MongoDBTargetTypeDef](./type_defs.md#mongodbtargettypedef)\]
 - `DynamoDBTargets`:
@@ -911,7 +918,7 @@ Optional fields:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
 - `LineageConfiguration`:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `State`: [CrawlerState](./literals.md#crawlerstate)
+- `State`: [CrawlerStateType](./literals.md#crawlerstatetype)
 - `TablePrefix`: `str`
 - `Schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `CrawlElapsedTime`: `int`
@@ -936,7 +943,7 @@ Optional fields:
 
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
-- `ContainsHeader`: [CsvHeaderOption](./literals.md#csvheaderoption)
+- `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
 - `Header`: `List`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
@@ -957,7 +964,7 @@ Optional fields:
 - `YarnEndpointAddress`: `str`
 - `ZeppelinRemoteSparkInterpreterPort`: `int`
 - `NumberOfNodes`: `int`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `GlueVersion`: `str`
 - `NumberOfWorkers`: `int`
 - `AvailabilityZone`: `str`
@@ -1042,15 +1049,17 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaArn`: `str`
 - `Description`: `str`
-- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
-- `Compatibility`: [Compatibility](./literals.md#compatibility)
+- `DataFormat`: `Literal['AVRO']` (see
+  [DataFormatType](./literals.md#dataformattype))
+- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
 - `SchemaCheckpoint`: `int`
 - `LatestSchemaVersion`: `int`
 - `NextSchemaVersion`: `int`
-- `SchemaStatus`: [SchemaStatus](./literals.md#schemastatus)
+- `SchemaStatus`: [SchemaStatusType](./literals.md#schemastatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `SchemaVersionId`: `str`
-- `SchemaVersionStatus`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
+- `SchemaVersionStatus`:
+  [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
 
 ## CreateScriptResponseTypeDef
 
@@ -1126,7 +1135,7 @@ Optional fields:
 - `Version`: `int`
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
-- `ContainsHeader`: [CsvHeaderOption](./literals.md#csvheaderoption)
+- `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
 - `Header`: `List`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
@@ -1280,7 +1289,7 @@ Optional fields:
 
 - `RegistryName`: `str`
 - `RegistryArn`: `str`
-- `Status`: [RegistryStatus](./literals.md#registrystatus)
+- `Status`: [RegistryStatusType](./literals.md#registrystatustype)
 
 ## DeleteSchemaResponseTypeDef
 
@@ -1292,7 +1301,7 @@ Optional fields:
 
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
-- `Status`: [SchemaStatus](./literals.md#schemastatus)
+- `Status`: [SchemaStatusType](./literals.md#schemastatustype)
 
 ## DeleteSchemaVersionsResponseTypeDef
 
@@ -1353,7 +1362,7 @@ Optional fields:
 - `ZeppelinRemoteSparkInterpreterPort`: `int`
 - `PublicAddress`: `str`
 - `Status`: `str`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `GlueVersion`: `str`
 - `NumberOfWorkers`: `int`
 - `NumberOfNodes`: `int`
@@ -1418,7 +1427,7 @@ from mypy_boto3_glue.type_defs import EncryptionAtRestTypeDef
 Required fields:
 
 - `CatalogEncryptionMode`:
-  [CatalogEncryptionMode](./literals.md#catalogencryptionmode)
+  [CatalogEncryptionModeType](./literals.md#catalogencryptionmodetype)
 
 Optional fields:
 
@@ -1470,7 +1479,7 @@ from mypy_boto3_glue.type_defs import EvaluationMetricsTypeDef
 Required fields:
 
 - `TransformType`: `Literal['FIND_MATCHES']` (see
-  [TransformType](./literals.md#transformtype))
+  [TransformTypeType](./literals.md#transformtypetype))
 
 Optional fields:
 
@@ -1568,7 +1577,8 @@ from mypy_boto3_glue.type_defs import GetClassifiersResponseTypeDef
 
 Optional fields:
 
-- `Classifiers`: `List`\[[ClassifierTypeDef](./type_defs.md#classifiertypedef)\]
+- `Classifiers`:
+  `List`\[[ClassifierTypeDef](./type_defs.md#classifiertypedef)\]
 - `NextToken`: `str`
 
 ## GetColumnStatisticsForPartitionResponseTypeDef
@@ -1614,7 +1624,7 @@ from mypy_boto3_glue.type_defs import GetConnectionsFilterTypeDef
 Optional fields:
 
 - `MatchCriteria`: `List`\[`str`\]
-- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
+- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 
 ## GetConnectionsResponseTypeDef
 
@@ -1792,7 +1802,7 @@ Optional fields:
 
 - `TransformId`: `str`
 - `TaskRunId`: `str`
-- `Status`: [TaskStatusType](./literals.md#taskstatustype)
+- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
 - `LogGroupName`: `str`
 - `Properties`:
   [TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef)
@@ -1824,7 +1834,7 @@ Optional fields:
 - `TransformId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`: [TransformStatusType](./literals.md#transformstatustype)
+- `Status`: [TransformStatusTypeType](./literals.md#transformstatustypetype)
 - `CreatedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `InputRecordTables`:
@@ -1838,7 +1848,7 @@ Optional fields:
 - `Role`: `str`
 - `GlueVersion`: `str`
 - `MaxCapacity`: `float`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
@@ -1853,7 +1863,8 @@ from mypy_boto3_glue.type_defs import GetMLTransformsResponseTypeDef
 
 Required fields:
 
-- `Transforms`: `List`\[[MLTransformTypeDef](./type_defs.md#mltransformtypedef)\]
+- `Transforms`:
+  `List`\[[MLTransformTypeDef](./type_defs.md#mltransformtypedef)\]
 
 Optional fields:
 
@@ -1867,7 +1878,8 @@ from mypy_boto3_glue.type_defs import GetMappingResponseTypeDef
 
 Required fields:
 
-- `Mapping`: `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
+- `Mapping`:
+  `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
 
 ## GetPartitionIndexesResponseTypeDef
 
@@ -1924,7 +1936,7 @@ Optional fields:
 - `RegistryName`: `str`
 - `RegistryArn`: `str`
 - `Description`: `str`
-- `Status`: [RegistryStatus](./literals.md#registrystatus)
+- `Status`: [RegistryStatusType](./literals.md#registrystatustype)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -1963,8 +1975,9 @@ Optional fields:
 
 - `SchemaVersionId`: `str`
 - `SchemaArn`: `str`
-- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
-- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
+- `DataFormat`: `Literal['AVRO']` (see
+  [DataFormatType](./literals.md#dataformattype))
+- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
 - `CreatedTime`: `str`
 
 ## GetSchemaResponseTypeDef
@@ -1980,12 +1993,13 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaArn`: `str`
 - `Description`: `str`
-- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
-- `Compatibility`: [Compatibility](./literals.md#compatibility)
+- `DataFormat`: `Literal['AVRO']` (see
+  [DataFormatType](./literals.md#dataformattype))
+- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
 - `SchemaCheckpoint`: `int`
 - `LatestSchemaVersion`: `int`
 - `NextSchemaVersion`: `int`
-- `SchemaStatus`: [SchemaStatus](./literals.md#schemastatus)
+- `SchemaStatus`: [SchemaStatusType](./literals.md#schemastatustype)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -1999,10 +2013,11 @@ Optional fields:
 
 - `SchemaVersionId`: `str`
 - `SchemaDefinition`: `str`
-- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
+- `DataFormat`: `Literal['AVRO']` (see
+  [DataFormatType](./literals.md#dataformattype))
 - `SchemaArn`: `str`
 - `VersionNumber`: `int`
-- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
+- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
 - `CreatedTime`: `str`
 
 ## GetSchemaVersionsDiffResponseTypeDef
@@ -2272,7 +2287,7 @@ from mypy_boto3_glue.type_defs import JobBookmarksEncryptionTypeDef
 Optional fields:
 
 - `JobBookmarksEncryptionMode`:
-  [JobBookmarksEncryptionMode](./literals.md#jobbookmarksencryptionmode)
+  [JobBookmarksEncryptionModeType](./literals.md#jobbookmarksencryptionmodetype)
 - `KmsKeyArn`: `str`
 
 ## JobCommandTypeDef
@@ -2313,7 +2328,7 @@ Optional fields:
 - `StartedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `CompletedOn`: `datetime`
-- `JobRunState`: [JobRunState](./literals.md#jobrunstate)
+- `JobRunState`: [JobRunStateType](./literals.md#jobrunstatetype)
 - `Arguments`: `Dict`\[`str`, `str`\]
 - `ErrorMessage`: `str`
 - `PredecessorRuns`:
@@ -2322,7 +2337,7 @@ Optional fields:
 - `ExecutionTime`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `NumberOfWorkers`: `int`
 - `SecurityConfiguration`: `str`
 - `LogGroupName`: `str`
@@ -2349,12 +2364,13 @@ Optional fields:
 - `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
 - `DefaultArguments`: `Dict`\[`str`, `str`\]
 - `NonOverridableArguments`: `Dict`\[`str`, `str`\]
-- `Connections`: [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
+- `Connections`:
+  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `NumberOfWorkers`: `int`
 - `SecurityConfiguration`: `str`
 - `NotificationProperty`:
@@ -2377,12 +2393,13 @@ Optional fields:
 - `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
 - `DefaultArguments`: `Dict`\[`str`, `str`\]
 - `NonOverridableArguments`: `Dict`\[`str`, `str`\]
-- `Connections`: [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
+- `Connections`:
+  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `NumberOfWorkers`: `int`
 - `SecurityConfiguration`: `str`
 - `NotificationProperty`:
@@ -2435,7 +2452,7 @@ from mypy_boto3_glue.type_defs import LastCrawlInfoTypeDef
 
 Optional fields:
 
-- `Status`: [LastCrawlStatus](./literals.md#lastcrawlstatus)
+- `Status`: [LastCrawlStatusType](./literals.md#lastcrawlstatustype)
 - `ErrorMessage`: `str`
 - `LogGroup`: `str`
 - `LogStream`: `str`
@@ -2451,7 +2468,7 @@ from mypy_boto3_glue.type_defs import LineageConfigurationTypeDef
 Optional fields:
 
 - `CrawlerLineageSettings`:
-  [CrawlerLineageSettings](./literals.md#crawlerlineagesettings)
+  [CrawlerLineageSettingsType](./literals.md#crawlerlineagesettingstype)
 
 ## ListCrawlersResponseTypeDef
 
@@ -2566,7 +2583,8 @@ from mypy_boto3_glue.type_defs import LocationTypeDef
 
 Optional fields:
 
-- `Jdbc`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+- `Jdbc`:
+  `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 - `S3`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 - `DynamoDB`:
   `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
@@ -2598,7 +2616,7 @@ Optional fields:
 - `TransformId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`: [TransformStatusType](./literals.md#transformstatustype)
+- `Status`: [TransformStatusTypeType](./literals.md#transformstatustypetype)
 - `CreatedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `InputRecordTables`:
@@ -2612,7 +2630,7 @@ Optional fields:
 - `Role`: `str`
 - `GlueVersion`: `str`
 - `MaxCapacity`: `float`
-- `WorkerType`: [WorkerType](./literals.md#workertype)
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
@@ -2628,7 +2646,7 @@ from mypy_boto3_glue.type_defs import MLUserDataEncryptionTypeDef
 Required fields:
 
 - `MlUserDataEncryptionMode`:
-  [MLUserDataEncryptionModeString](./literals.md#mluserdataencryptionmodestring)
+  [MLUserDataEncryptionModeStringType](./literals.md#mluserdataencryptionmodestringtype)
 
 Optional fields:
 
@@ -2693,7 +2711,7 @@ from mypy_boto3_glue.type_defs import NodeTypeDef
 
 Optional fields:
 
-- `Type`: [NodeType](./literals.md#nodetype)
+- `Type`: [NodeTypeType](./literals.md#nodetypetype)
 - `Name`: `str`
 - `UniqueId`: `str`
 - `TriggerDetails`:
@@ -2768,7 +2786,8 @@ Required fields:
 - `IndexName`: `str`
 - `Keys`:
   `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `IndexStatus`: [PartitionIndexStatus](./literals.md#partitionindexstatus)
+- `IndexStatus`:
+  [PartitionIndexStatusType](./literals.md#partitionindexstatustype)
 
 Optional fields:
 
@@ -2861,7 +2880,7 @@ from mypy_boto3_glue.type_defs import PredicateTypeDef
 
 Optional fields:
 
-- `Logical`: [Logical](./literals.md#logical)
+- `Logical`: [LogicalType](./literals.md#logicaltype)
 - `Conditions`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## PrincipalPermissionsTypeDef
@@ -2874,7 +2893,7 @@ Optional fields:
 
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
+- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## PropertyPredicateTypeDef
 
@@ -2886,7 +2905,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Comparator`: [Comparator](./literals.md#comparator)
+- `Comparator`: [ComparatorType](./literals.md#comparatortype)
 
 ## PutResourcePolicyResponseTypeDef
 
@@ -2936,7 +2955,7 @@ from mypy_boto3_glue.type_defs import RecrawlPolicyTypeDef
 
 Optional fields:
 
-- `RecrawlBehavior`: [RecrawlBehavior](./literals.md#recrawlbehavior)
+- `RecrawlBehavior`: [RecrawlBehaviorType](./literals.md#recrawlbehaviortype)
 
 ## RegisterSchemaVersionResponseTypeDef
 
@@ -2948,7 +2967,7 @@ Optional fields:
 
 - `SchemaVersionId`: `str`
 - `VersionNumber`: `int`
-- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
+- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
 
 ## RegistryIdTypeDef
 
@@ -2972,7 +2991,7 @@ Optional fields:
 - `RegistryName`: `str`
 - `RegistryArn`: `str`
 - `Description`: `str`
-- `Status`: [RegistryStatus](./literals.md#registrystatus)
+- `Status`: [RegistryStatusType](./literals.md#registrystatustype)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -3012,7 +3031,7 @@ from mypy_boto3_glue.type_defs import ResourceUriTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Uri`: `str`
 
 ## ResumeWorkflowRunResponseTypeDef
@@ -3034,7 +3053,8 @@ from mypy_boto3_glue.type_defs import S3EncryptionTypeDef
 
 Optional fields:
 
-- `S3EncryptionMode`: [S3EncryptionMode](./literals.md#s3encryptionmode)
+- `S3EncryptionMode`:
+  [S3EncryptionModeType](./literals.md#s3encryptionmodetype)
 - `KmsKeyArn`: `str`
 
 ## S3TargetTypeDef
@@ -3058,7 +3078,7 @@ from mypy_boto3_glue.type_defs import ScheduleTypeDef
 Optional fields:
 
 - `ScheduleExpression`: `str`
-- `State`: [ScheduleState](./literals.md#schedulestate)
+- `State`: [ScheduleStateType](./literals.md#schedulestatetype)
 
 ## SchemaChangePolicyTypeDef
 
@@ -3068,8 +3088,8 @@ from mypy_boto3_glue.type_defs import SchemaChangePolicyTypeDef
 
 Optional fields:
 
-- `UpdateBehavior`: [UpdateBehavior](./literals.md#updatebehavior)
-- `DeleteBehavior`: [DeleteBehavior](./literals.md#deletebehavior)
+- `UpdateBehavior`: [UpdateBehaviorType](./literals.md#updatebehaviortype)
+- `DeleteBehavior`: [DeleteBehaviorType](./literals.md#deletebehaviortype)
 
 ## SchemaColumnTypeDef
 
@@ -3106,7 +3126,7 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaArn`: `str`
 - `Description`: `str`
-- `SchemaStatus`: [SchemaStatus](./literals.md#schemastatus)
+- `SchemaStatus`: [SchemaStatusType](./literals.md#schemastatustype)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -3144,7 +3164,7 @@ Optional fields:
 - `SchemaArn`: `str`
 - `SchemaVersionId`: `str`
 - `VersionNumber`: `int`
-- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
+- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
 - `CreatedTime`: `str`
 
 ## SchemaVersionNumberTypeDef
@@ -3226,7 +3246,7 @@ from mypy_boto3_glue.type_defs import SortCriterionTypeDef
 Optional fields:
 
 - `FieldName`: `str`
-- `Sort`: [Sort](./literals.md#sort)
+- `Sort`: [SortType](./literals.md#sorttype)
 
 ## StartExportLabelsTaskRunResponseTypeDef
 
@@ -3391,7 +3411,8 @@ Optional fields:
 - `ViewExpandedText`: `str`
 - `TableType`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
-- `TargetTable`: [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
+- `TargetTable`:
+  [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 
 ## TableTypeDef
 
@@ -3422,7 +3443,8 @@ Optional fields:
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `CreatedBy`: `str`
 - `IsRegisteredWithLakeFormation`: `bool`
-- `TargetTable`: [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
+- `TargetTable`:
+  [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 - `CatalogId`: `str`
 
 ## TableVersionErrorTypeDef
@@ -3456,8 +3478,8 @@ from mypy_boto3_glue.type_defs import TaskRunFilterCriteriaTypeDef
 
 Optional fields:
 
-- `TaskRunType`: [TaskType](./literals.md#tasktype)
-- `Status`: [TaskStatusType](./literals.md#taskstatustype)
+- `TaskRunType`: [TaskTypeType](./literals.md#tasktypetype)
+- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
 - `StartedBefore`: `datetime`
 - `StartedAfter`: `datetime`
 
@@ -3469,7 +3491,7 @@ from mypy_boto3_glue.type_defs import TaskRunPropertiesTypeDef
 
 Optional fields:
 
-- `TaskType`: [TaskType](./literals.md#tasktype)
+- `TaskType`: [TaskTypeType](./literals.md#tasktypetype)
 - `ImportLabelsTaskRunProperties`:
   [ImportLabelsTaskRunPropertiesTypeDef](./type_defs.md#importlabelstaskrunpropertiestypedef)
 - `ExportLabelsTaskRunProperties`:
@@ -3487,8 +3509,9 @@ from mypy_boto3_glue.type_defs import TaskRunSortCriteriaTypeDef
 
 Required fields:
 
-- `Column`: [TaskRunSortColumnType](./literals.md#taskrunsortcolumntype)
-- `SortDirection`: [SortDirectionType](./literals.md#sortdirectiontype)
+- `Column`:
+  [TaskRunSortColumnTypeType](./literals.md#taskrunsortcolumntypetype)
+- `SortDirection`: [SortDirectionTypeType](./literals.md#sortdirectiontypetype)
 
 ## TaskRunTypeDef
 
@@ -3500,7 +3523,7 @@ Optional fields:
 
 - `TransformId`: `str`
 - `TaskRunId`: `str`
-- `Status`: [TaskStatusType](./literals.md#taskstatustype)
+- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
 - `LogGroupName`: `str`
 - `Properties`:
   [TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef)
@@ -3532,8 +3555,8 @@ Optional fields:
 
 - `Name`: `str`
 - `TransformType`: `Literal['FIND_MATCHES']` (see
-  [TransformType](./literals.md#transformtype))
-- `Status`: [TransformStatusType](./literals.md#transformstatustype)
+  [TransformTypeType](./literals.md#transformtypetype))
+- `Status`: [TransformStatusTypeType](./literals.md#transformstatustypetype)
 - `GlueVersion`: `str`
 - `CreatedBefore`: `datetime`
 - `CreatedAfter`: `datetime`
@@ -3550,7 +3573,7 @@ from mypy_boto3_glue.type_defs import TransformParametersTypeDef
 Required fields:
 
 - `TransformType`: `Literal['FIND_MATCHES']` (see
-  [TransformType](./literals.md#transformtype))
+  [TransformTypeType](./literals.md#transformtypetype))
 
 Optional fields:
 
@@ -3565,8 +3588,9 @@ from mypy_boto3_glue.type_defs import TransformSortCriteriaTypeDef
 
 Required fields:
 
-- `Column`: [TransformSortColumnType](./literals.md#transformsortcolumntype)
-- `SortDirection`: [SortDirectionType](./literals.md#sortdirectiontype)
+- `Column`:
+  [TransformSortColumnTypeType](./literals.md#transformsortcolumntypetype)
+- `SortDirection`: [SortDirectionTypeType](./literals.md#sortdirectiontypetype)
 
 ## TriggerNodeDetailsTypeDef
 
@@ -3589,8 +3613,8 @@ Optional fields:
 - `Name`: `str`
 - `WorkflowName`: `str`
 - `Id`: `str`
-- `Type`: [TriggerType](./literals.md#triggertype)
-- `State`: [TriggerState](./literals.md#triggerstate)
+- `Type`: [TriggerTypeType](./literals.md#triggertypetype)
+- `State`: [TriggerStateType](./literals.md#triggerstatetype)
 - `Description`: `str`
 - `Schedule`: `str`
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
@@ -3646,7 +3670,7 @@ Optional fields:
 
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
-- `ContainsHeader`: [CsvHeaderOption](./literals.md#csvheaderoption)
+- `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
 - `Header`: `List`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
@@ -3770,7 +3794,7 @@ Optional fields:
 - `FunctionName`: `str`
 - `ClassName`: `str`
 - `OwnerName`: `str`
-- `OwnerType`: [PrincipalType](./literals.md#principaltype)
+- `OwnerType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `ResourceUris`:
   `List`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
 
@@ -3786,7 +3810,7 @@ Optional fields:
 - `DatabaseName`: `str`
 - `ClassName`: `str`
 - `OwnerName`: `str`
-- `OwnerType`: [PrincipalType](./literals.md#principaltype)
+- `OwnerType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `CreateTime`: `datetime`
 - `ResourceUris`:
   `List`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
@@ -3832,7 +3856,7 @@ Optional fields:
 - `WorkflowRunProperties`: `Dict`\[`str`, `str`\]
 - `StartedOn`: `datetime`
 - `CompletedOn`: `datetime`
-- `Status`: [WorkflowRunStatus](./literals.md#workflowrunstatus)
+- `Status`: [WorkflowRunStatusType](./literals.md#workflowrunstatustype)
 - `ErrorMessage`: `str`
 - `Statistics`:
   [WorkflowRunStatisticsTypeDef](./type_defs.md#workflowrunstatisticstypedef)

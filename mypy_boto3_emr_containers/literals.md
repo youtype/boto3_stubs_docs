@@ -3,35 +3,35 @@
 > [Index](..) > [EMRContainers](.) > Literals
 
 Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [Literals for boto3 EMRContainers module](#literals-for-boto3-emrcontainers-module)
-  - [ContainerProviderType](#containerprovidertype)
-  - [EndpointState](#endpointstate)
-  - [FailureReason](#failurereason)
-  - [JobRunState](#jobrunstate)
+  - [ContainerProviderTypeType](#containerprovidertypetype)
+  - [EndpointStateType](#endpointstatetype)
+  - [FailureReasonType](#failurereasontype)
+  - [JobRunStateType](#jobrunstatetype)
   - [ListJobRunsPaginatorName](#listjobrunspaginatorname)
   - [ListManagedEndpointsPaginatorName](#listmanagedendpointspaginatorname)
   - [ListVirtualClustersPaginatorName](#listvirtualclusterspaginatorname)
-  - [PersistentAppUI](#persistentappui)
-  - [VirtualClusterState](#virtualclusterstate)
+  - [PersistentAppUIType](#persistentappuitype)
+  - [VirtualClusterStateType](#virtualclusterstatetype)
 
-## ContainerProviderType
+## ContainerProviderTypeType
 
 ```python
-from mypy_boto3_emr_containers.literals import ContainerProviderType
+from mypy_boto3_emr_containers.literals import ContainerProviderTypeType
 ```
 
 Values:
 
 - `EKS`
 
-## EndpointState
+## EndpointStateType
 
 ```python
-from mypy_boto3_emr_containers.literals import EndpointState
+from mypy_boto3_emr_containers.literals import EndpointStateType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `TERMINATED_WITH_ERRORS`
 - `TERMINATING`
 
-## FailureReason
+## FailureReasonType
 
 ```python
-from mypy_boto3_emr_containers.literals import FailureReason
+from mypy_boto3_emr_containers.literals import FailureReasonType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `USER_ERROR`
 - `VALIDATION_ERROR`
 
-## JobRunState
+## JobRunStateType
 
 ```python
-from mypy_boto3_emr_containers.literals import JobRunState
+from mypy_boto3_emr_containers.literals import JobRunStateType
 ```
 
 Values:
@@ -101,10 +101,10 @@ Values:
 
 - `list_virtual_clusters`
 
-## PersistentAppUI
+## PersistentAppUIType
 
 ```python
-from mypy_boto3_emr_containers.literals import PersistentAppUI
+from mypy_boto3_emr_containers.literals import PersistentAppUIType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## VirtualClusterState
+## VirtualClusterStateType
 
 ```python
-from mypy_boto3_emr_containers.literals import VirtualClusterState
+from mypy_boto3_emr_containers.literals import VirtualClusterStateType
 ```
 
 Values:

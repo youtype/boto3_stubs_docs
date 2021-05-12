@@ -3,7 +3,7 @@
 > [Index](..) > DynamoDB
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -34,97 +34,97 @@ Can be used directly:
 from mypy_boto3_dynamodb.client import DynamoDBClient
 ```
 
-DynamoDBClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_execute_statement](./client.md#batch-execute-statement)
-- [batch_get_item](./client.md#batch-get-item)
-- [batch_write_item](./client.md#batch-write-item)
-- [can_paginate](./client.md#can-paginate)
-- [create_backup](./client.md#create-backup)
-- [create_global_table](./client.md#create-global-table)
-- [create_table](./client.md#create-table)
-- [delete_backup](./client.md#delete-backup)
-- [delete_item](./client.md#delete-item)
-- [delete_table](./client.md#delete-table)
-- [describe_backup](./client.md#describe-backup)
-- [describe_continuous_backups](./client.md#describe-continuous-backups)
-- [describe_contributor_insights](./client.md#describe-contributor-insights)
-- [describe_endpoints](./client.md#describe-endpoints)
-- [describe_export](./client.md#describe-export)
-- [describe_global_table](./client.md#describe-global-table)
-- [describe_global_table_settings](./client.md#describe-global-table-settings)
-- [describe_kinesis_streaming_destination](./client.md#describe-kinesis-streaming-destination)
-- [describe_limits](./client.md#describe-limits)
-- [describe_table](./client.md#describe-table)
-- [describe_table_replica_auto_scaling](./client.md#describe-table-replica-auto-scaling)
-- [describe_time_to_live](./client.md#describe-time-to-live)
-- [disable_kinesis_streaming_destination](./client.md#disable-kinesis-streaming-destination)
-- [enable_kinesis_streaming_destination](./client.md#enable-kinesis-streaming-destination)
-- [execute_statement](./client.md#execute-statement)
-- [execute_transaction](./client.md#execute-transaction)
-- [export_table_to_point_in_time](./client.md#export-table-to-point-in-time)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_item](./client.md#get-item)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_backups](./client.md#list-backups)
-- [list_contributor_insights](./client.md#list-contributor-insights)
-- [list_exports](./client.md#list-exports)
-- [list_global_tables](./client.md#list-global-tables)
-- [list_tables](./client.md#list-tables)
-- [list_tags_of_resource](./client.md#list-tags-of-resource)
-- [put_item](./client.md#put-item)
+- [batch_execute_statement](./client.md#batch_execute_statement)
+- [batch_get_item](./client.md#batch_get_item)
+- [batch_write_item](./client.md#batch_write_item)
+- [can_paginate](./client.md#can_paginate)
+- [create_backup](./client.md#create_backup)
+- [create_global_table](./client.md#create_global_table)
+- [create_table](./client.md#create_table)
+- [delete_backup](./client.md#delete_backup)
+- [delete_item](./client.md#delete_item)
+- [delete_table](./client.md#delete_table)
+- [describe_backup](./client.md#describe_backup)
+- [describe_continuous_backups](./client.md#describe_continuous_backups)
+- [describe_contributor_insights](./client.md#describe_contributor_insights)
+- [describe_endpoints](./client.md#describe_endpoints)
+- [describe_export](./client.md#describe_export)
+- [describe_global_table](./client.md#describe_global_table)
+- [describe_global_table_settings](./client.md#describe_global_table_settings)
+- [describe_kinesis_streaming_destination](./client.md#describe_kinesis_streaming_destination)
+- [describe_limits](./client.md#describe_limits)
+- [describe_table](./client.md#describe_table)
+- [describe_table_replica_auto_scaling](./client.md#describe_table_replica_auto_scaling)
+- [describe_time_to_live](./client.md#describe_time_to_live)
+- [disable_kinesis_streaming_destination](./client.md#disable_kinesis_streaming_destination)
+- [enable_kinesis_streaming_destination](./client.md#enable_kinesis_streaming_destination)
+- [execute_statement](./client.md#execute_statement)
+- [execute_transaction](./client.md#execute_transaction)
+- [export_table_to_point_in_time](./client.md#export_table_to_point_in_time)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_item](./client.md#get_item)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_backups](./client.md#list_backups)
+- [list_contributor_insights](./client.md#list_contributor_insights)
+- [list_exports](./client.md#list_exports)
+- [list_global_tables](./client.md#list_global_tables)
+- [list_tables](./client.md#list_tables)
+- [list_tags_of_resource](./client.md#list_tags_of_resource)
+- [put_item](./client.md#put_item)
 - [query](./client.md#query)
-- [restore_table_from_backup](./client.md#restore-table-from-backup)
-- [restore_table_to_point_in_time](./client.md#restore-table-to-point-in-time)
+- [restore_table_from_backup](./client.md#restore_table_from_backup)
+- [restore_table_to_point_in_time](./client.md#restore_table_to_point_in_time)
 - [scan](./client.md#scan)
-- [tag_resource](./client.md#tag-resource)
-- [transact_get_items](./client.md#transact-get-items)
-- [transact_write_items](./client.md#transact-write-items)
-- [untag_resource](./client.md#untag-resource)
-- [update_continuous_backups](./client.md#update-continuous-backups)
-- [update_contributor_insights](./client.md#update-contributor-insights)
-- [update_global_table](./client.md#update-global-table)
-- [update_global_table_settings](./client.md#update-global-table-settings)
-- [update_item](./client.md#update-item)
-- [update_table](./client.md#update-table)
-- [update_table_replica_auto_scaling](./client.md#update-table-replica-auto-scaling)
-- [update_time_to_live](./client.md#update-time-to-live)
+- [tag_resource](./client.md#tag_resource)
+- [transact_get_items](./client.md#transact_get_items)
+- [transact_write_items](./client.md#transact_write_items)
+- [untag_resource](./client.md#untag_resource)
+- [update_continuous_backups](./client.md#update_continuous_backups)
+- [update_contributor_insights](./client.md#update_contributor_insights)
+- [update_global_table](./client.md#update_global_table)
+- [update_global_table_settings](./client.md#update_global_table_settings)
+- [update_item](./client.md#update_item)
+- [update_table](./client.md#update_table)
+- [update_table_replica_auto_scaling](./client.md#update_table_replica_auto_scaling)
+- [update_time_to_live](./client.md#update_time_to_live)
 
 ### Exceptions
 
-- [BackupInUseException](./client.md#backupinuseexception)
-- [BackupNotFoundException](./client.md#backupnotfoundexception)
-- [ClientError](./client.md#clienterror)
-- [ConditionalCheckFailedException](./client.md#conditionalcheckfailedexception)
-- [ContinuousBackupsUnavailableException](./client.md#continuousbackupsunavailableexception)
-- [DuplicateItemException](./client.md#duplicateitemexception)
-- [ExportConflictException](./client.md#exportconflictexception)
-- [ExportNotFoundException](./client.md#exportnotfoundexception)
-- [GlobalTableAlreadyExistsException](./client.md#globaltablealreadyexistsexception)
-- [GlobalTableNotFoundException](./client.md#globaltablenotfoundexception)
-- [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
-- [IndexNotFoundException](./client.md#indexnotfoundexception)
-- [InternalServerError](./client.md#internalservererror)
-- [InvalidExportTimeException](./client.md#invalidexporttimeexception)
-- [InvalidRestoreTimeException](./client.md#invalidrestoretimeexception)
-- [ItemCollectionSizeLimitExceededException](./client.md#itemcollectionsizelimitexceededexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [PointInTimeRecoveryUnavailableException](./client.md#pointintimerecoveryunavailableexception)
-- [ProvisionedThroughputExceededException](./client.md#provisionedthroughputexceededexception)
-- [ReplicaAlreadyExistsException](./client.md#replicaalreadyexistsexception)
-- [ReplicaNotFoundException](./client.md#replicanotfoundexception)
-- [RequestLimitExceeded](./client.md#requestlimitexceeded)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TableAlreadyExistsException](./client.md#tablealreadyexistsexception)
-- [TableInUseException](./client.md#tableinuseexception)
-- [TableNotFoundException](./client.md#tablenotfoundexception)
-- [TransactionCanceledException](./client.md#transactioncanceledexception)
-- [TransactionConflictException](./client.md#transactionconflictexception)
-- [TransactionInProgressException](./client.md#transactioninprogressexception)
+DynamoDBClient [exceptions](./client.md#exceptions)
+
+- BackupInUseException
+- BackupNotFoundException
+- ClientError
+- ConditionalCheckFailedException
+- ContinuousBackupsUnavailableException
+- DuplicateItemException
+- ExportConflictException
+- ExportNotFoundException
+- GlobalTableAlreadyExistsException
+- GlobalTableNotFoundException
+- IdempotentParameterMismatchException
+- IndexNotFoundException
+- InternalServerError
+- InvalidExportTimeException
+- InvalidRestoreTimeException
+- ItemCollectionSizeLimitExceededException
+- LimitExceededException
+- PointInTimeRecoveryUnavailableException
+- ProvisionedThroughputExceededException
+- ReplicaAlreadyExistsException
+- ReplicaNotFoundException
+- RequestLimitExceeded
+- ResourceInUseException
+- ResourceNotFoundException
+- TableAlreadyExistsException
+- TableInUseException
+- TableNotFoundException
+- TransactionCanceledException
+- TransactionConflictException
+- TransactionInProgressException
 
 ## DynamoDBServiceResource
 
@@ -199,48 +199,48 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.literals import AttributeAction, ...
+from mypy_boto3_dynamodb.literals import AttributeActionType, ...
 ```
 
-- [AttributeAction](./literals.md#attributeaction)
-- [BackupStatus](./literals.md#backupstatus)
-- [BackupType](./literals.md#backuptype)
-- [BackupTypeFilter](./literals.md#backuptypefilter)
-- [BatchStatementErrorCodeEnum](./literals.md#batchstatementerrorcodeenum)
-- [BillingMode](./literals.md#billingmode)
-- [ComparisonOperator](./literals.md#comparisonoperator)
-- [ConditionalOperator](./literals.md#conditionaloperator)
-- [ContinuousBackupsStatus](./literals.md#continuousbackupsstatus)
-- [ContributorInsightsAction](./literals.md#contributorinsightsaction)
-- [ContributorInsightsStatus](./literals.md#contributorinsightsstatus)
-- [DestinationStatus](./literals.md#destinationstatus)
-- [ExportFormat](./literals.md#exportformat)
-- [ExportStatus](./literals.md#exportstatus)
-- [GlobalTableStatus](./literals.md#globaltablestatus)
-- [IndexStatus](./literals.md#indexstatus)
-- [KeyType](./literals.md#keytype)
+- [AttributeActionType](./literals.md#attributeactiontype)
+- [BackupStatusType](./literals.md#backupstatustype)
+- [BackupTypeFilterType](./literals.md#backuptypefiltertype)
+- [BackupTypeType](./literals.md#backuptypetype)
+- [BatchStatementErrorCodeEnumType](./literals.md#batchstatementerrorcodeenumtype)
+- [BillingModeType](./literals.md#billingmodetype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
+- [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- [ContinuousBackupsStatusType](./literals.md#continuousbackupsstatustype)
+- [ContributorInsightsActionType](./literals.md#contributorinsightsactiontype)
+- [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
+- [DestinationStatusType](./literals.md#destinationstatustype)
+- [ExportFormatType](./literals.md#exportformattype)
+- [ExportStatusType](./literals.md#exportstatustype)
+- [GlobalTableStatusType](./literals.md#globaltablestatustype)
+- [IndexStatusType](./literals.md#indexstatustype)
+- [KeyTypeType](./literals.md#keytypetype)
 - [ListBackupsPaginatorName](./literals.md#listbackupspaginatorname)
 - [ListTablesPaginatorName](./literals.md#listtablespaginatorname)
 - [ListTagsOfResourcePaginatorName](./literals.md#listtagsofresourcepaginatorname)
-- [PointInTimeRecoveryStatus](./literals.md#pointintimerecoverystatus)
-- [ProjectionType](./literals.md#projectiontype)
+- [PointInTimeRecoveryStatusType](./literals.md#pointintimerecoverystatustype)
+- [ProjectionTypeType](./literals.md#projectiontypetype)
 - [QueryPaginatorName](./literals.md#querypaginatorname)
-- [ReplicaStatus](./literals.md#replicastatus)
-- [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
-- [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
-- [ReturnValue](./literals.md#returnvalue)
-- [ReturnValuesOnConditionCheckFailure](./literals.md#returnvaluesonconditioncheckfailure)
-- [S3SseAlgorithm](./literals.md#s3ssealgorithm)
-- [SSEStatus](./literals.md#ssestatus)
-- [SSEType](./literals.md#ssetype)
-- [ScalarAttributeType](./literals.md#scalarattributetype)
+- [ReplicaStatusType](./literals.md#replicastatustype)
+- [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- [ReturnValueType](./literals.md#returnvaluetype)
+- [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
+- [S3SseAlgorithmType](./literals.md#s3ssealgorithmtype)
+- [SSEStatusType](./literals.md#ssestatustype)
+- [SSETypeType](./literals.md#ssetypetype)
+- [ScalarAttributeTypeType](./literals.md#scalarattributetypetype)
 - [ScanPaginatorName](./literals.md#scanpaginatorname)
-- [Select](./literals.md#select)
-- [StreamViewType](./literals.md#streamviewtype)
+- [SelectType](./literals.md#selecttype)
+- [StreamViewTypeType](./literals.md#streamviewtypetype)
 - [TableExistsWaiterName](./literals.md#tableexistswaitername)
 - [TableNotExistsWaiterName](./literals.md#tablenotexistswaitername)
-- [TableStatus](./literals.md#tablestatus)
-- [TimeToLiveStatus](./literals.md#timetolivestatus)
+- [TableStatusType](./literals.md#tablestatustype)
+- [TimeToLiveStatusType](./literals.md#timetolivestatustype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > finspace
 
 Auto-generated documentation for
-[finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
+[finspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace)
 type annotations stubs module
 [mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
@@ -29,32 +29,32 @@ Can be used directly:
 from mypy_boto3_finspace.client import finspaceClient
 ```
 
-finspaceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_environment](./client.md#create-environment)
-- [delete_environment](./client.md#delete-environment)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_environment](./client.md#get-environment)
-- [list_environments](./client.md#list-environments)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_environment](./client.md#update-environment)
+- [can_paginate](./client.md#can_paginate)
+- [create_environment](./client.md#create_environment)
+- [delete_environment](./client.md#delete_environment)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_environment](./client.md#get_environment)
+- [list_environments](./client.md#list_environments)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_environment](./client.md#update_environment)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+finspaceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- InvalidRequestException
+- LimitExceededException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -63,11 +63,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_finspace.literals import EnvironmentStatus, ...
+from mypy_boto3_finspace.literals import EnvironmentStatusType, ...
 ```
 
-- [EnvironmentStatus](./literals.md#environmentstatus)
-- [FederationMode](./literals.md#federationmode)
+- [EnvironmentStatusType](./literals.md#environmentstatustype)
+- [FederationModeType](./literals.md#federationmodetype)
 
 ## Typed dictionaries
 

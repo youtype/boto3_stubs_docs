@@ -3,7 +3,7 @@
 > [Index](..) > [EMRContainers](.) > EMRContainersClient
 
 Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
@@ -44,7 +44,7 @@ def get_emr-containers_client() -> EMRContainersClient:
 ```
 
 Boto3 documentation:
-[EMRContainers.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
+[EMRContainers.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client)
 
 ## Exceptions
 
@@ -72,7 +72,7 @@ Exceptions:
 Type annotations for `boto3.client("emr-containers").can_paginate` method.
 
 Boto3 documentation:
-[EMRContainers.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate)
+[EMRContainers.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.can_paginate)
 
 Arguments:
 
@@ -85,7 +85,7 @@ Returns `bool`.
 Type annotations for `boto3.client("emr-containers").cancel_job_run` method.
 
 Boto3 documentation:
-[EMRContainers.Client.cancel_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
+[EMRContainers.Client.cancel_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Type annotations for `boto3.client("emr-containers").create_managed_endpoint`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.create_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
+[EMRContainers.Client.create_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Type annotations for `boto3.client("emr-containers").create_virtual_cluster`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.create_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
+[EMRContainers.Client.create_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("emr-containers").delete_managed_endpoint`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.delete_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
+[EMRContainers.Client.delete_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("emr-containers").delete_virtual_cluster`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.delete_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
+[EMRContainers.Client.delete_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns
 Type annotations for `boto3.client("emr-containers").describe_job_run` method.
 
 Boto3 documentation:
-[EMRContainers.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
+[EMRContainers.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("emr-containers").describe_managed_endpoint`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.describe_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
+[EMRContainers.Client.describe_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("emr-containers").describe_virtual_cluster`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.describe_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
+[EMRContainers.Client.describe_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
 
 Arguments:
 
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("emr-containers").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url)
+[EMRContainers.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Returns `str`.
 Type annotations for `boto3.client("emr-containers").list_job_runs` method.
 
 Boto3 documentation:
-[EMRContainers.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
+[EMRContainers.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Arguments:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `name`: `str`
-- `states`: `List`\[[JobRunState](./literals.md#jobrunstate)\]
+- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -259,7 +259,7 @@ Type annotations for `boto3.client("emr-containers").list_managed_endpoints`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.list_managed_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
+[EMRContainers.Client.list_managed_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Arguments:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `types`: `List`\[`str`\]
-- `states`: `List`\[[EndpointState](./literals.md#endpointstate)\]
+- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("emr-containers").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
+[EMRContainers.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -295,16 +295,17 @@ Type annotations for `boto3.client("emr-containers").list_virtual_clusters`
 method.
 
 Boto3 documentation:
-[EMRContainers.Client.list_virtual_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
+[EMRContainers.Client.list_virtual_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
 
 Arguments:
 
 - `containerProviderId`: `str`
 - `containerProviderType`: `Literal['EKS']` (see
-  [ContainerProviderType](./literals.md#containerprovidertype))
+  [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
 - `createdAfter`: `datetime`
 - `createdBefore`: `datetime`
-- `states`: `List`\[[VirtualClusterState](./literals.md#virtualclusterstate)\]
+- `states`:
+  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -316,7 +317,7 @@ Returns
 Type annotations for `boto3.client("emr-containers").start_job_run` method.
 
 Boto3 documentation:
-[EMRContainers.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
+[EMRContainers.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
 
 Arguments:
 
@@ -338,7 +339,7 @@ Returns
 Type annotations for `boto3.client("emr-containers").tag_resource` method.
 
 Boto3 documentation:
-[EMRContainers.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
+[EMRContainers.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
 
 Arguments:
 
@@ -352,7 +353,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr-containers").untag_resource` method.
 
 Boto3 documentation:
-[EMRContainers.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
+[EMRContainers.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
 
 Arguments:
 

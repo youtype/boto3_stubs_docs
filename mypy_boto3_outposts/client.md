@@ -3,7 +3,7 @@
 > [Index](..) > [Outposts](.) > OutpostsClient
 
 Auto-generated documentation for
-[Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+[Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts)
 type annotations stubs module
 [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
@@ -38,7 +38,7 @@ def get_outposts_client() -> OutpostsClient:
 ```
 
 Boto3 documentation:
-[Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client)
+[Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 Type annotations for `boto3.client("outposts").can_paginate` method.
 
 Boto3 documentation:
-[Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.can_paginate)
+[Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Returns `bool`.
 Type annotations for `boto3.client("outposts").create_outpost` method.
 
 Boto3 documentation:
-[Outposts.Client.create_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost)
+[Outposts.Client.create_outpost](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.create_outpost)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Returns
 Type annotations for `boto3.client("outposts").delete_outpost` method.
 
 Boto3 documentation:
-[Outposts.Client.delete_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
+[Outposts.Client.delete_outpost](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.delete_outpost)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("outposts").delete_site` method.
 
 Boto3 documentation:
-[Outposts.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
+[Outposts.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.delete_site)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("outposts").generate_presigned_url` method.
 
 Boto3 documentation:
-[Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.generate_presigned_url)
+[Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.generate_presigned_url)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Returns `str`.
 Type annotations for `boto3.client("outposts").get_outpost` method.
 
 Boto3 documentation:
-[Outposts.Client.get_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost)
+[Outposts.Client.get_outpost](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.get_outpost)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("outposts").get_outpost_instance_types`
 method.
 
 Boto3 documentation:
-[Outposts.Client.get_outpost_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
+[Outposts.Client.get_outpost_instance_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Returns
 Type annotations for `boto3.client("outposts").list_outposts` method.
 
 Boto3 documentation:
-[Outposts.Client.list_outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
+[Outposts.Client.list_outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.list_outposts)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 Type annotations for `boto3.client("outposts").list_sites` method.
 
 Boto3 documentation:
-[Outposts.Client.list_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
+[Outposts.Client.list_sites](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.list_sites)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Returns [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef).
 Type annotations for `boto3.client("outposts").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Outposts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
+[Outposts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("outposts").tag_resource` method.
 
 Boto3 documentation:
-[Outposts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource)
+[Outposts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.tag_resource)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("outposts").untag_resource` method.
 
 Boto3 documentation:
-[Outposts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource)
+[Outposts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/outposts.html#Outposts.Client.untag_resource)
 
 Arguments:
 

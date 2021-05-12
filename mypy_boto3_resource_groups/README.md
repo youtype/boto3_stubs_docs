@@ -3,7 +3,7 @@
 > [Index](..) > ResourceGroups
 
 Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
@@ -30,40 +30,40 @@ Can be used directly:
 from mypy_boto3_resource_groups.client import ResourceGroupsClient
 ```
 
-ResourceGroupsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_group](./client.md#create-group)
-- [delete_group](./client.md#delete-group)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_group](./client.md#get-group)
-- [get_group_configuration](./client.md#get-group-configuration)
-- [get_group_query](./client.md#get-group-query)
-- [get_paginator](./client.md#get-paginator)
-- [get_tags](./client.md#get-tags)
-- [group_resources](./client.md#group-resources)
-- [list_group_resources](./client.md#list-group-resources)
-- [list_groups](./client.md#list-groups)
-- [put_group_configuration](./client.md#put-group-configuration)
-- [search_resources](./client.md#search-resources)
+- [can_paginate](./client.md#can_paginate)
+- [create_group](./client.md#create_group)
+- [delete_group](./client.md#delete_group)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_group](./client.md#get_group)
+- [get_group_configuration](./client.md#get_group_configuration)
+- [get_group_query](./client.md#get_group_query)
+- [get_paginator](./client.md#get_paginator)
+- [get_tags](./client.md#get_tags)
+- [group_resources](./client.md#group_resources)
+- [list_group_resources](./client.md#list_group_resources)
+- [list_groups](./client.md#list_groups)
+- [put_group_configuration](./client.md#put_group_configuration)
+- [search_resources](./client.md#search_resources)
 - [tag](./client.md#tag)
-- [ungroup_resources](./client.md#ungroup-resources)
+- [ungroup_resources](./client.md#ungroup_resources)
 - [untag](./client.md#untag)
-- [update_group](./client.md#update-group)
-- [update_group_query](./client.md#update-group-query)
+- [update_group](./client.md#update_group)
+- [update_group_query](./client.md#update_group_query)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [MethodNotAllowedException](./client.md#methodnotallowedexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
+ResourceGroupsClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ForbiddenException
+- InternalServerErrorException
+- MethodNotAllowedException
+- NotFoundException
+- TooManyRequestsException
+- UnauthorizedException
 
 ## Paginators
 
@@ -87,17 +87,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_resource_groups.literals import GroupConfigurationStatus, ...
+from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType, ...
 ```
 
-- [GroupConfigurationStatus](./literals.md#groupconfigurationstatus)
-- [GroupFilterName](./literals.md#groupfiltername)
+- [GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype)
+- [GroupFilterNameType](./literals.md#groupfilternametype)
 - [ListGroupResourcesPaginatorName](./literals.md#listgroupresourcespaginatorname)
 - [ListGroupsPaginatorName](./literals.md#listgroupspaginatorname)
-- [QueryErrorCode](./literals.md#queryerrorcode)
-- [QueryType](./literals.md#querytype)
-- [ResourceFilterName](./literals.md#resourcefiltername)
-- [ResourceStatusValue](./literals.md#resourcestatusvalue)
+- [QueryErrorCodeType](./literals.md#queryerrorcodetype)
+- [QueryTypeType](./literals.md#querytypetype)
+- [ResourceFilterNameType](./literals.md#resourcefilternametype)
+- [ResourceStatusValueType](./literals.md#resourcestatusvaluetype)
 - [SearchResourcesPaginatorName](./literals.md#searchresourcespaginatorname)
 
 ## Typed dictionaries

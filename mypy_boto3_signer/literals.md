@@ -3,37 +3,37 @@
 > [Index](..) > [Signer](.) > Literals
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/signer.html#Signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
 - [Literals for boto3 Signer module](#literals-for-boto3-signer-module)
-  - [Category](#category)
-  - [EncryptionAlgorithm](#encryptionalgorithm)
-  - [HashAlgorithm](#hashalgorithm)
-  - [ImageFormat](#imageformat)
+  - [CategoryType](#categorytype)
+  - [EncryptionAlgorithmType](#encryptionalgorithmtype)
+  - [HashAlgorithmType](#hashalgorithmtype)
+  - [ImageFormatType](#imageformattype)
   - [ListSigningJobsPaginatorName](#listsigningjobspaginatorname)
   - [ListSigningPlatformsPaginatorName](#listsigningplatformspaginatorname)
   - [ListSigningProfilesPaginatorName](#listsigningprofilespaginatorname)
-  - [SigningProfileStatus](#signingprofilestatus)
-  - [SigningStatus](#signingstatus)
+  - [SigningProfileStatusType](#signingprofilestatustype)
+  - [SigningStatusType](#signingstatustype)
   - [SuccessfulSigningJobWaiterName](#successfulsigningjobwaitername)
-  - [ValidityType](#validitytype)
+  - [ValidityTypeType](#validitytypetype)
 
-## Category
+## CategoryType
 
 ```python
-from mypy_boto3_signer.literals import Category
+from mypy_boto3_signer.literals import CategoryType
 ```
 
 Values:
 
 - `AWSIoT`
 
-## EncryptionAlgorithm
+## EncryptionAlgorithmType
 
 ```python
-from mypy_boto3_signer.literals import EncryptionAlgorithm
+from mypy_boto3_signer.literals import EncryptionAlgorithmType
 ```
 
 Values:
@@ -41,10 +41,10 @@ Values:
 - `ECDSA`
 - `RSA`
 
-## HashAlgorithm
+## HashAlgorithmType
 
 ```python
-from mypy_boto3_signer.literals import HashAlgorithm
+from mypy_boto3_signer.literals import HashAlgorithmType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `SHA1`
 - `SHA256`
 
-## ImageFormat
+## ImageFormatType
 
 ```python
-from mypy_boto3_signer.literals import ImageFormat
+from mypy_boto3_signer.literals import ImageFormatType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 
 - `list_signing_profiles`
 
-## SigningProfileStatus
+## SigningProfileStatusType
 
 ```python
-from mypy_boto3_signer.literals import SigningProfileStatus
+from mypy_boto3_signer.literals import SigningProfileStatusType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `Canceled`
 - `Revoked`
 
-## SigningStatus
+## SigningStatusType
 
 ```python
-from mypy_boto3_signer.literals import SigningStatus
+from mypy_boto3_signer.literals import SigningStatusType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 
 - `successful_signing_job`
 
-## ValidityType
+## ValidityTypeType
 
 ```python
-from mypy_boto3_signer.literals import ValidityType
+from mypy_boto3_signer.literals import ValidityTypeType
 ```
 
 Values:

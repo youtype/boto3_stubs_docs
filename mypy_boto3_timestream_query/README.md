@@ -3,7 +3,7 @@
 > [Index](..) > TimestreamQuery
 
 Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
@@ -30,27 +30,27 @@ Can be used directly:
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
 ```
 
-TimestreamQueryClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_query](./client.md#cancel-query)
-- [describe_endpoints](./client.md#describe-endpoints)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_query](./client.md#cancel_query)
+- [describe_endpoints](./client.md#describe_endpoints)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
 - [query](./client.md#query)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidEndpointException](./client.md#invalidendpointexception)
-- [QueryExecutionException](./client.md#queryexecutionexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+TimestreamQueryClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- InvalidEndpointException
+- QueryExecutionException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -76,7 +76,7 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName, ...
 ```
 
 - [QueryPaginatorName](./literals.md#querypaginatorname)
-- [ScalarType](./literals.md#scalartype)
+- [ScalarTypeType](./literals.md#scalartypetype)
 
 ## Typed dictionaries
 

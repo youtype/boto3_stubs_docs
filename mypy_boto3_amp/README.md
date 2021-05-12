@@ -3,7 +3,7 @@
 > [Index](..) > PrometheusService
 
 Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amp.html#PrometheusService)
 type annotations stubs module
 [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
@@ -30,29 +30,29 @@ Can be used directly:
 from mypy_boto3_amp.client import PrometheusServiceClient
 ```
 
-PrometheusServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_workspace](./client.md#create-workspace)
-- [delete_workspace](./client.md#delete-workspace)
-- [describe_workspace](./client.md#describe-workspace)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_workspaces](./client.md#list-workspaces)
-- [update_workspace_alias](./client.md#update-workspace-alias)
+- [can_paginate](./client.md#can_paginate)
+- [create_workspace](./client.md#create_workspace)
+- [delete_workspace](./client.md#delete_workspace)
+- [describe_workspace](./client.md#describe_workspace)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_workspaces](./client.md#list_workspaces)
+- [update_workspace_alias](./client.md#update_workspace_alias)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+PrometheusServiceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -78,7 +78,7 @@ from mypy_boto3_amp.literals import ListWorkspacesPaginatorName, ...
 ```
 
 - [ListWorkspacesPaginatorName](./literals.md#listworkspacespaginatorname)
-- [WorkspaceStatusCode](./literals.md#workspacestatuscode)
+- [WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype)
 
 ## Typed dictionaries
 

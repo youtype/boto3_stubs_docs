@@ -3,7 +3,7 @@
 > [Index](..) > [XRay](.) > Typed dictionaries
 
 Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay)
 type annotations stubs module
 [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
@@ -232,8 +232,8 @@ from mypy_boto3_xray.type_defs import EncryptionConfigTypeDef
 Optional fields:
 
 - `KeyId`: `str`
-- `Status`: [EncryptionStatus](./literals.md#encryptionstatus)
-- `Type`: [EncryptionType](./literals.md#encryptiontype)
+- `Status`: [EncryptionStatusType](./literals.md#encryptionstatustype)
+- `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 
 ## ErrorRootCauseEntityTypeDef
 
@@ -633,8 +633,8 @@ Optional fields:
 - `GroupName`: `str`
 - `RootCauseServiceId`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
 - `Categories`: `List`\[`Literal['FAULT']` (see
-  [InsightCategory](./literals.md#insightcategory))\]
-- `State`: [InsightState](./literals.md#insightstate)
+  [InsightCategoryType](./literals.md#insightcategorytype))\]
+- `State`: [InsightStateType](./literals.md#insightstatetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Summary`: `str`
@@ -659,8 +659,8 @@ Optional fields:
 - `GroupName`: `str`
 - `RootCauseServiceId`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
 - `Categories`: `List`\[`Literal['FAULT']` (see
-  [InsightCategory](./literals.md#insightcategory))\]
-- `State`: [InsightState](./literals.md#insightstate)
+  [InsightCategoryType](./literals.md#insightcategorytype))\]
+- `State`: [InsightStateType](./literals.md#insightstatetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Summary`: `str`
@@ -908,7 +908,7 @@ from mypy_boto3_xray.type_defs import SamplingStrategyTypeDef
 
 Optional fields:
 
-- `Name`: [SamplingStrategyName](./literals.md#samplingstrategyname)
+- `Name`: [SamplingStrategyNameType](./literals.md#samplingstrategynametype)
 - `Value`: `float`
 
 ## SamplingTargetDocumentTypeDef

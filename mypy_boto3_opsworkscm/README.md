@@ -3,7 +3,7 @@
 > [Index](..) > OpsWorksCM
 
 Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
 [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
@@ -31,43 +31,43 @@ Can be used directly:
 from mypy_boto3_opsworkscm.client import OpsWorksCMClient
 ```
 
-OpsWorksCMClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_node](./client.md#associate-node)
-- [can_paginate](./client.md#can-paginate)
-- [create_backup](./client.md#create-backup)
-- [create_server](./client.md#create-server)
-- [delete_backup](./client.md#delete-backup)
-- [delete_server](./client.md#delete-server)
-- [describe_account_attributes](./client.md#describe-account-attributes)
-- [describe_backups](./client.md#describe-backups)
-- [describe_events](./client.md#describe-events)
-- [describe_node_association_status](./client.md#describe-node-association-status)
-- [describe_servers](./client.md#describe-servers)
-- [disassociate_node](./client.md#disassociate-node)
-- [export_server_engine_attribute](./client.md#export-server-engine-attribute)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [restore_server](./client.md#restore-server)
-- [start_maintenance](./client.md#start-maintenance)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_server](./client.md#update-server)
-- [update_server_engine_attributes](./client.md#update-server-engine-attributes)
+- [associate_node](./client.md#associate_node)
+- [can_paginate](./client.md#can_paginate)
+- [create_backup](./client.md#create_backup)
+- [create_server](./client.md#create_server)
+- [delete_backup](./client.md#delete_backup)
+- [delete_server](./client.md#delete_server)
+- [describe_account_attributes](./client.md#describe_account_attributes)
+- [describe_backups](./client.md#describe_backups)
+- [describe_events](./client.md#describe_events)
+- [describe_node_association_status](./client.md#describe_node_association_status)
+- [describe_servers](./client.md#describe_servers)
+- [disassociate_node](./client.md#disassociate_node)
+- [export_server_engine_attribute](./client.md#export_server_engine_attribute)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [restore_server](./client.md#restore_server)
+- [start_maintenance](./client.md#start_maintenance)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_server](./client.md#update_server)
+- [update_server_engine_attributes](./client.md#update_server_engine_attributes)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidStateException](./client.md#invalidstateexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+OpsWorksCMClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidNextTokenException
+- InvalidStateException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -105,19 +105,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworkscm.literals import BackupStatus, ...
+from mypy_boto3_opsworkscm.literals import BackupStatusType, ...
 ```
 
-- [BackupStatus](./literals.md#backupstatus)
-- [BackupType](./literals.md#backuptype)
+- [BackupStatusType](./literals.md#backupstatustype)
+- [BackupTypeType](./literals.md#backuptypetype)
 - [DescribeBackupsPaginatorName](./literals.md#describebackupspaginatorname)
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
 - [DescribeServersPaginatorName](./literals.md#describeserverspaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [MaintenanceStatus](./literals.md#maintenancestatus)
+- [MaintenanceStatusType](./literals.md#maintenancestatustype)
 - [NodeAssociatedWaiterName](./literals.md#nodeassociatedwaitername)
-- [NodeAssociationStatus](./literals.md#nodeassociationstatus)
-- [ServerStatus](./literals.md#serverstatus)
+- [NodeAssociationStatusType](./literals.md#nodeassociationstatustype)
+- [ServerStatusType](./literals.md#serverstatustype)
 
 ## Typed dictionaries
 

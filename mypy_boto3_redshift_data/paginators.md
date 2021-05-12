@@ -3,7 +3,7 @@
 > [Index](..) > [RedshiftDataAPIService](.) > Paginators
 
 Auto-generated documentation for
-[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
+[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
 [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
@@ -30,7 +30,7 @@ def get_describe_table_paginator() -> DescribeTablePaginator:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Paginator.DescribeTable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.DescribeTable)
+[RedshiftDataAPIService.Paginator.DescribeTable](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.DescribeTable)
 
 Arguments for `DescribeTablePaginator.paginate` method:
 
@@ -62,7 +62,7 @@ def get_get_statement_result_paginator() -> GetStatementResultPaginator:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Paginator.GetStatementResult](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.GetStatementResult)
+[RedshiftDataAPIService.Paginator.GetStatementResult](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.GetStatementResult)
 
 Arguments for `GetStatementResultPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_list_databases_paginator() -> ListDatabasesPaginator:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListDatabases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListDatabases)
+[RedshiftDataAPIService.Paginator.ListDatabases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListDatabases)
 
 Arguments for `ListDatabasesPaginator.paginate` method:
 
@@ -117,7 +117,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListSchemas)
+[RedshiftDataAPIService.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListSchemas)
 
 Arguments for `ListSchemasPaginator.paginate` method:
 
@@ -148,13 +148,13 @@ def get_list_statements_paginator() -> ListStatementsPaginator:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListStatements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListStatements)
+[RedshiftDataAPIService.Paginator.ListStatements](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListStatements)
 
 Arguments for `ListStatementsPaginator.paginate` method:
 
 - `RoleLevel`: `bool`
 - `StatementName`: `str`
-- `Status`: [StatusString](./literals.md#statusstring)
+- `Status`: [StatusStringType](./literals.md#statusstringtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -176,7 +176,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListTables)
+[RedshiftDataAPIService.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListTables)
 
 Arguments for `ListTablesPaginator.paginate` method:
 

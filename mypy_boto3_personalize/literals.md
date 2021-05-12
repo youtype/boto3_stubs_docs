@@ -3,12 +3,12 @@
 > [Index](..) > [Personalize](.) > Literals
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [Literals for boto3 Personalize module](#literals-for-boto3-personalize-module)
-  - [IngestionMode](#ingestionmode)
+  - [IngestionModeType](#ingestionmodetype)
   - [ListBatchInferenceJobsPaginatorName](#listbatchinferencejobspaginatorname)
   - [ListCampaignsPaginatorName](#listcampaignspaginatorname)
   - [ListDatasetExportJobsPaginatorName](#listdatasetexportjobspaginatorname)
@@ -21,13 +21,13 @@ type annotations stubs module
   - [ListSchemasPaginatorName](#listschemaspaginatorname)
   - [ListSolutionVersionsPaginatorName](#listsolutionversionspaginatorname)
   - [ListSolutionsPaginatorName](#listsolutionspaginatorname)
-  - [RecipeProvider](#recipeprovider)
-  - [TrainingMode](#trainingmode)
+  - [RecipeProviderType](#recipeprovidertype)
+  - [TrainingModeType](#trainingmodetype)
 
-## IngestionMode
+## IngestionModeType
 
 ```python
-from mypy_boto3_personalize.literals import IngestionMode
+from mypy_boto3_personalize.literals import IngestionModeType
 ```
 
 Values:
@@ -156,20 +156,20 @@ Values:
 
 - `list_solutions`
 
-## RecipeProvider
+## RecipeProviderType
 
 ```python
-from mypy_boto3_personalize.literals import RecipeProvider
+from mypy_boto3_personalize.literals import RecipeProviderType
 ```
 
 Values:
 
 - `SERVICE`
 
-## TrainingMode
+## TrainingModeType
 
 ```python
-from mypy_boto3_personalize.literals import TrainingMode
+from mypy_boto3_personalize.literals import TrainingModeType
 ```
 
 Values:

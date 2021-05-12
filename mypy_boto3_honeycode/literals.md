@@ -3,25 +3,25 @@
 > [Index](..) > [Honeycode](.) > Literals
 
 Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
 [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [Literals for boto3 Honeycode module](#literals-for-boto3-honeycode-module)
-  - [Format](#format)
-  - [ImportDataCharacterEncoding](#importdatacharacterencoding)
-  - [ImportSourceDataFormat](#importsourcedataformat)
+  - [FormatType](#formattype)
+  - [ImportDataCharacterEncodingType](#importdatacharacterencodingtype)
+  - [ImportSourceDataFormatType](#importsourcedataformattype)
   - [ListTableColumnsPaginatorName](#listtablecolumnspaginatorname)
   - [ListTableRowsPaginatorName](#listtablerowspaginatorname)
   - [ListTablesPaginatorName](#listtablespaginatorname)
   - [QueryTableRowsPaginatorName](#querytablerowspaginatorname)
-  - [TableDataImportJobStatus](#tabledataimportjobstatus)
-  - [UpsertAction](#upsertaction)
+  - [TableDataImportJobStatusType](#tabledataimportjobstatustype)
+  - [UpsertActionType](#upsertactiontype)
 
-## Format
+## FormatType
 
 ```python
-from mypy_boto3_honeycode.literals import Format
+from mypy_boto3_honeycode.literals import FormatType
 ```
 
 Values:
@@ -38,10 +38,10 @@ Values:
 - `TEXT`
 - `TIME`
 
-## ImportDataCharacterEncoding
+## ImportDataCharacterEncodingType
 
 ```python
-from mypy_boto3_honeycode.literals import ImportDataCharacterEncoding
+from mypy_boto3_honeycode.literals import ImportDataCharacterEncodingType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `UTF-16LE`
 - `UTF-8`
 
-## ImportSourceDataFormat
+## ImportSourceDataFormatType
 
 ```python
-from mypy_boto3_honeycode.literals import ImportSourceDataFormat
+from mypy_boto3_honeycode.literals import ImportSourceDataFormatType
 ```
 
 Values:
@@ -103,10 +103,10 @@ Values:
 
 - `query_table_rows`
 
-## TableDataImportJobStatus
+## TableDataImportJobStatusType
 
 ```python
-from mypy_boto3_honeycode.literals import TableDataImportJobStatus
+from mypy_boto3_honeycode.literals import TableDataImportJobStatusType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `IN_PROGRESS`
 - `SUBMITTED`
 
-## UpsertAction
+## UpsertActionType
 
 ```python
-from mypy_boto3_honeycode.literals import UpsertAction
+from mypy_boto3_honeycode.literals import UpsertActionType
 ```
 
 Values:

@@ -3,26 +3,26 @@
 > [Index](..) > [ManagedBlockchain](.) > Literals
 
 Auto-generated documentation for
-[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
 [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 - [Literals for boto3 ManagedBlockchain module](#literals-for-boto3-managedblockchain-module)
-  - [Edition](#edition)
-  - [Framework](#framework)
-  - [InvitationStatus](#invitationstatus)
-  - [MemberStatus](#memberstatus)
-  - [NetworkStatus](#networkstatus)
-  - [NodeStatus](#nodestatus)
-  - [ProposalStatus](#proposalstatus)
-  - [StateDBType](#statedbtype)
-  - [ThresholdComparator](#thresholdcomparator)
-  - [VoteValue](#votevalue)
+  - [EditionType](#editiontype)
+  - [FrameworkType](#frameworktype)
+  - [InvitationStatusType](#invitationstatustype)
+  - [MemberStatusType](#memberstatustype)
+  - [NetworkStatusType](#networkstatustype)
+  - [NodeStatusType](#nodestatustype)
+  - [ProposalStatusType](#proposalstatustype)
+  - [StateDBTypeType](#statedbtypetype)
+  - [ThresholdComparatorType](#thresholdcomparatortype)
+  - [VoteValueType](#votevaluetype)
 
-## Edition
+## EditionType
 
 ```python
-from mypy_boto3_managedblockchain.literals import Edition
+from mypy_boto3_managedblockchain.literals import EditionType
 ```
 
 Values:
@@ -30,10 +30,10 @@ Values:
 - `STANDARD`
 - `STARTER`
 
-## Framework
+## FrameworkType
 
 ```python
-from mypy_boto3_managedblockchain.literals import Framework
+from mypy_boto3_managedblockchain.literals import FrameworkType
 ```
 
 Values:
@@ -41,10 +41,10 @@ Values:
 - `ETHEREUM`
 - `HYPERLEDGER_FABRIC`
 
-## InvitationStatus
+## InvitationStatusType
 
 ```python
-from mypy_boto3_managedblockchain.literals import InvitationStatus
+from mypy_boto3_managedblockchain.literals import InvitationStatusType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `PENDING`
 - `REJECTED`
 
-## MemberStatus
+## MemberStatusType
 
 ```python
-from mypy_boto3_managedblockchain.literals import MemberStatus
+from mypy_boto3_managedblockchain.literals import MemberStatusType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## NetworkStatus
+## NetworkStatusType
 
 ```python
-from mypy_boto3_managedblockchain.literals import NetworkStatus
+from mypy_boto3_managedblockchain.literals import NetworkStatusType
 ```
 
 Values:
@@ -84,10 +84,10 @@ Values:
 - `DELETED`
 - `DELETING`
 
-## NodeStatus
+## NodeStatusType
 
 ```python
-from mypy_boto3_managedblockchain.literals import NodeStatus
+from mypy_boto3_managedblockchain.literals import NodeStatusType
 ```
 
 Values:
@@ -101,10 +101,10 @@ Values:
 - `UNHEALTHY`
 - `UPDATING`
 
-## ProposalStatus
+## ProposalStatusType
 
 ```python
-from mypy_boto3_managedblockchain.literals import ProposalStatus
+from mypy_boto3_managedblockchain.literals import ProposalStatusType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 - `IN_PROGRESS`
 - `REJECTED`
 
-## StateDBType
+## StateDBTypeType
 
 ```python
-from mypy_boto3_managedblockchain.literals import StateDBType
+from mypy_boto3_managedblockchain.literals import StateDBTypeType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `CouchDB`
 - `LevelDB`
 
-## ThresholdComparator
+## ThresholdComparatorType
 
 ```python
-from mypy_boto3_managedblockchain.literals import ThresholdComparator
+from mypy_boto3_managedblockchain.literals import ThresholdComparatorType
 ```
 
 Values:
@@ -137,10 +137,10 @@ Values:
 - `GREATER_THAN`
 - `GREATER_THAN_OR_EQUAL_TO`
 
-## VoteValue
+## VoteValueType
 
 ```python
-from mypy_boto3_managedblockchain.literals import VoteValue
+from mypy_boto3_managedblockchain.literals import VoteValueType
 ```
 
 Values:

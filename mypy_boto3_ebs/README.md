@@ -3,7 +3,7 @@
 > [Index](..) > EBS
 
 Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ebs.html#EBS)
 type annotations stubs module
 [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
@@ -28,30 +28,30 @@ Can be used directly:
 from mypy_boto3_ebs.client import EBSClient
 ```
 
-EBSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [complete_snapshot](./client.md#complete-snapshot)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_snapshot_block](./client.md#get-snapshot-block)
-- [list_changed_blocks](./client.md#list-changed-blocks)
-- [list_snapshot_blocks](./client.md#list-snapshot-blocks)
-- [put_snapshot_block](./client.md#put-snapshot-block)
-- [start_snapshot](./client.md#start-snapshot)
+- [can_paginate](./client.md#can_paginate)
+- [complete_snapshot](./client.md#complete_snapshot)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_snapshot_block](./client.md#get_snapshot_block)
+- [list_changed_blocks](./client.md#list_changed_blocks)
+- [list_snapshot_blocks](./client.md#list_snapshot_blocks)
+- [put_snapshot_block](./client.md#put_snapshot_block)
+- [start_snapshot](./client.md#start_snapshot)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentLimitExceededException](./client.md#concurrentlimitexceededexception)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [RequestThrottledException](./client.md#requestthrottledexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ValidationException](./client.md#validationexception)
+EBSClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConcurrentLimitExceededException
+- ConflictException
+- InternalServerException
+- RequestThrottledException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ValidationException
 
 ## Literals
 
@@ -60,12 +60,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ebs.literals import ChecksumAggregationMethod, ...
+from mypy_boto3_ebs.literals import ChecksumAggregationMethodType, ...
 ```
 
-- [ChecksumAggregationMethod](./literals.md#checksumaggregationmethod)
-- [ChecksumAlgorithm](./literals.md#checksumalgorithm)
-- [Status](./literals.md#status)
+- [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype)
+- [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
+- [StatusType](./literals.md#statustype)
 
 ## Typed dictionaries
 

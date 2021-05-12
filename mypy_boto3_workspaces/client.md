@@ -3,7 +3,7 @@
 > [Index](..) > [WorkSpaces](.) > WorkSpacesClient
 
 Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
 [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
@@ -82,7 +82,7 @@ def get_workspaces_client() -> WorkSpacesClient:
 ```
 
 Boto3 documentation:
-[WorkSpaces.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
+[WorkSpaces.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client)
 
 ## Exceptions
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("workspaces").associate_connection_alias`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.associate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
+[WorkSpaces.Client.associate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
 
 Arguments:
 
@@ -137,7 +137,7 @@ Returns
 Type annotations for `boto3.client("workspaces").associate_ip_groups` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.associate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
+[WorkSpaces.Client.associate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").authorize_ip_rules` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.authorize_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
+[WorkSpaces.Client.authorize_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").can_paginate` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate)
+[WorkSpaces.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.can_paginate)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Returns `bool`.
 Type annotations for `boto3.client("workspaces").copy_workspace_image` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
+[WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("workspaces").create_connection_alias`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.create_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
+[WorkSpaces.Client.create_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Returns
 Type annotations for `boto3.client("workspaces").create_ip_group` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
+[WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Returns
 Type annotations for `boto3.client("workspaces").create_tags` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
+[WorkSpaces.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("workspaces").create_workspace_bundle`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
+[WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Returns
 Type annotations for `boto3.client("workspaces").create_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.create_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
+[WorkSpaces.Client.create_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("workspaces").delete_connection_alias`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.delete_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
+[WorkSpaces.Client.delete_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").delete_ip_group` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.delete_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
+[WorkSpaces.Client.delete_ip_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").delete_tags` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
+[WorkSpaces.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("workspaces").delete_workspace_bundle`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.delete_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
+[WorkSpaces.Client.delete_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("workspaces").delete_workspace_image`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.delete_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
+[WorkSpaces.Client.delete_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
 
 Arguments:
 
@@ -353,7 +353,7 @@ Type annotations for
 `boto3.client("workspaces").deregister_workspace_directory` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.deregister_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
+[WorkSpaces.Client.deregister_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").describe_account` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
+[WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
 
 Returns
 [DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
@@ -377,7 +377,7 @@ Type annotations for
 `boto3.client("workspaces").describe_account_modifications` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_account_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
+[WorkSpaces.Client.describe_account_modifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("workspaces").describe_client_properties`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
+[WorkSpaces.Client.describe_client_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
 
 Arguments:
 
@@ -407,7 +407,7 @@ Type annotations for
 `boto3.client("workspaces").describe_connection_alias_permissions` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
+[WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
 
 Arguments:
 
@@ -424,7 +424,7 @@ Type annotations for `boto3.client("workspaces").describe_connection_aliases`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
+[WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns
 Type annotations for `boto3.client("workspaces").describe_ip_groups` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
+[WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Returns
 Type annotations for `boto3.client("workspaces").describe_tags` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
+[WorkSpaces.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
 
 Arguments:
 
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("workspaces").describe_workspace_bundles`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
+[WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
 
 Arguments:
 
@@ -488,7 +488,7 @@ Type annotations for
 `boto3.client("workspaces").describe_workspace_directories` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
+[WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
 
 Arguments:
 
@@ -505,7 +505,7 @@ Type annotations for
 `boto3.client("workspaces").describe_workspace_image_permissions` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
+[WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
 
 Arguments:
 
@@ -522,12 +522,12 @@ Type annotations for `boto3.client("workspaces").describe_workspace_images`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
+[WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
 
 Arguments:
 
 - `ImageIds`: `List`\[`str`\]
-- `ImageType`: [ImageType](./literals.md#imagetype)
+- `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("workspaces").describe_workspace_snapshots`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
+[WorkSpaces.Client.describe_workspace_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns
 Type annotations for `boto3.client("workspaces").describe_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
+[WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
 
 Arguments:
 
@@ -574,7 +574,7 @@ Type annotations for
 `boto3.client("workspaces").describe_workspaces_connection_status` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.describe_workspaces_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
+[WorkSpaces.Client.describe_workspaces_connection_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
 
 Arguments:
 
@@ -590,7 +590,7 @@ Type annotations for `boto3.client("workspaces").disassociate_connection_alias`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.disassociate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
+[WorkSpaces.Client.disassociate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
 
 Arguments:
 
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("workspaces").disassociate_ip_groups`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.disassociate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
+[WorkSpaces.Client.disassociate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("workspaces").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url)
+[WorkSpaces.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url)
 
 Arguments:
 
@@ -636,18 +636,18 @@ Type annotations for `boto3.client("workspaces").import_workspace_image`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
+[WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
 
 Arguments:
 
 - `Ec2ImageId`: `str` *(required)*
 - `IngestionProcess`:
-  [WorkspaceImageIngestionProcess](./literals.md#workspaceimageingestionprocess)
+  [WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype)
   *(required)*
 - `ImageName`: `str` *(required)*
 - `ImageDescription`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Applications`: `List`\[[Application](./literals.md#application)\]
+- `Applications`: `List`\[[ApplicationType](./literals.md#applicationtype)\]
 
 Returns
 [ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
@@ -658,7 +658,7 @@ Type annotations for
 `boto3.client("workspaces").list_available_management_cidr_ranges` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
+[WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Returns
 Type annotations for `boto3.client("workspaces").migrate_workspace` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.migrate_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
+[WorkSpaces.Client.migrate_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
 
 Arguments:
 
@@ -689,12 +689,12 @@ Returns
 Type annotations for `boto3.client("workspaces").modify_account` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
+[WorkSpaces.Client.modify_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
 
 Arguments:
 
 - `DedicatedTenancySupport`: `Literal['ENABLED']` (see
-  [DedicatedTenancySupportEnum](./literals.md#dedicatedtenancysupportenum))
+  [DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype))
 - `DedicatedTenancyManagementCidrRange`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -705,13 +705,14 @@ Type annotations for `boto3.client("workspaces").modify_client_properties`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
+[WorkSpaces.Client.modify_client_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
 
 Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `ClientProperties`:
-  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef) *(required)*
+  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -721,7 +722,7 @@ Type annotations for
 `boto3.client("workspaces").modify_selfservice_permissions` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_selfservice_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
+[WorkSpaces.Client.modify_selfservice_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
 
 Arguments:
 
@@ -738,7 +739,7 @@ Type annotations for
 `boto3.client("workspaces").modify_workspace_access_properties` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_access_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
+[WorkSpaces.Client.modify_workspace_access_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
 
 Arguments:
 
@@ -755,7 +756,7 @@ Type annotations for
 `boto3.client("workspaces").modify_workspace_creation_properties` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_creation_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
+[WorkSpaces.Client.modify_workspace_creation_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
 
 Arguments:
 
@@ -772,7 +773,7 @@ Type annotations for `boto3.client("workspaces").modify_workspace_properties`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
+[WorkSpaces.Client.modify_workspace_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
 
 Arguments:
 
@@ -789,12 +790,13 @@ Type annotations for `boto3.client("workspaces").modify_workspace_state`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
+[WorkSpaces.Client.modify_workspace_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
 
 Arguments:
 
 - `WorkspaceId`: `str` *(required)*
-- `WorkspaceState`: [TargetWorkspaceState](./literals.md#targetworkspacestate)
+- `WorkspaceState`:
+  [TargetWorkspaceStateType](./literals.md#targetworkspacestatetype)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -804,7 +806,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").reboot_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.reboot_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
+[WorkSpaces.Client.reboot_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
 
 Arguments:
 
@@ -820,7 +822,7 @@ Returns
 Type annotations for `boto3.client("workspaces").rebuild_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.rebuild_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
+[WorkSpaces.Client.rebuild_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
 
 Arguments:
 
@@ -837,7 +839,7 @@ Type annotations for `boto3.client("workspaces").register_workspace_directory`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
+[WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
 
 Arguments:
 
@@ -845,7 +847,7 @@ Arguments:
 - `EnableWorkDocs`: `bool` *(required)*
 - `SubnetIds`: `List`\[`str`\]
 - `EnableSelfService`: `bool`
-- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -855,7 +857,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").restore_workspace` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.restore_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
+[WorkSpaces.Client.restore_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
 
 Arguments:
 
@@ -868,7 +870,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").revoke_ip_rules` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.revoke_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
+[WorkSpaces.Client.revoke_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
 
 Arguments:
 
@@ -882,7 +884,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workspaces").start_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.start_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
+[WorkSpaces.Client.start_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
 
 Arguments:
 
@@ -898,12 +900,13 @@ Returns
 Type annotations for `boto3.client("workspaces").stop_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.stop_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
+[WorkSpaces.Client.stop_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
 
 Arguments:
 
 - `StopWorkspaceRequests`:
-  `List`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\] *(required)*
+  `List`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
+  *(required)*
 
 Returns
 [StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
@@ -913,7 +916,7 @@ Returns
 Type annotations for `boto3.client("workspaces").terminate_workspaces` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.terminate_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
+[WorkSpaces.Client.terminate_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
 
 Arguments:
 
@@ -930,7 +933,7 @@ Type annotations for
 `boto3.client("workspaces").update_connection_alias_permission` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.update_connection_alias_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
+[WorkSpaces.Client.update_connection_alias_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
 
 Arguments:
 
@@ -947,7 +950,7 @@ Type annotations for `boto3.client("workspaces").update_rules_of_ip_group`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.update_rules_of_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
+[WorkSpaces.Client.update_rules_of_ip_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
 
 Arguments:
 
@@ -963,7 +966,7 @@ Type annotations for `boto3.client("workspaces").update_workspace_bundle`
 method.
 
 Boto3 documentation:
-[WorkSpaces.Client.update_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
+[WorkSpaces.Client.update_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
 
 Arguments:
 
@@ -978,7 +981,7 @@ Type annotations for
 `boto3.client("workspaces").update_workspace_image_permission` method.
 
 Boto3 documentation:
-[WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
+[WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
 
 Arguments:
 

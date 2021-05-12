@@ -3,7 +3,7 @@
 > [Index](..) > [Route53Resolver](.) > Route53ResolverClient
 
 Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
 [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
@@ -89,7 +89,7 @@ def get_route53resolver_client() -> Route53ResolverClient:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
+[Route53Resolver.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client)
 
 ## Exceptions
 
@@ -131,7 +131,7 @@ Type annotations for
 `boto3.client("route53resolver").associate_firewall_rule_group` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.associate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group)
+[Route53Resolver.Client.associate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Arguments:
 - `Priority`: `int` *(required)*
 - `Name`: `str` *(required)*
 - `MutationProtection`:
-  [MutationProtectionStatus](./literals.md#mutationprotectionstatus)
+  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -154,7 +154,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.associate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address)
+[Route53Resolver.Client.associate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Type annotations for
 `boto3.client("route53resolver").associate_resolver_query_log_config` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.associate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config)
+[Route53Resolver.Client.associate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config)
 
 Arguments:
 
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("route53resolver").associate_resolver_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.associate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule)
+[Route53Resolver.Client.associate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns
 Type annotations for `boto3.client("route53resolver").can_paginate` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate)
+[Route53Resolver.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Type annotations for
 `boto3.client("route53resolver").create_firewall_domain_list` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.create_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list)
+[Route53Resolver.Client.create_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Type annotations for `boto3.client("route53resolver").create_firewall_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.create_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule)
+[Route53Resolver.Client.create_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule)
 
 Arguments:
 
@@ -242,12 +242,12 @@ Arguments:
 - `FirewallRuleGroupId`: `str` *(required)*
 - `FirewallDomainListId`: `str` *(required)*
 - `Priority`: `int` *(required)*
-- `Action`: [Action](./literals.md#action) *(required)*
+- `Action`: [ActionType](./literals.md#actiontype) *(required)*
 - `Name`: `str` *(required)*
-- `BlockResponse`: [BlockResponse](./literals.md#blockresponse)
+- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
 - `BlockOverrideDomain`: `str`
 - `BlockOverrideDnsType`: `Literal['CNAME']` (see
-  [BlockOverrideDnsType](./literals.md#blockoverridednstype))
+  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
 - `BlockOverrideTtl`: `int`
 
 Returns
@@ -259,7 +259,7 @@ Type annotations for
 `boto3.client("route53resolver").create_firewall_rule_group` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.create_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group)
+[Route53Resolver.Client.create_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group)
 
 Arguments:
 
@@ -276,14 +276,14 @@ Type annotations for `boto3.client("route53resolver").create_resolver_endpoint`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.create_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint)
+[Route53Resolver.Client.create_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint)
 
 Arguments:
 
 - `CreatorRequestId`: `str` *(required)*
 - `SecurityGroupIds`: `List`\[`str`\] *(required)*
 - `Direction`:
-  [ResolverEndpointDirection](./literals.md#resolverendpointdirection)
+  [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
   *(required)*
 - `IpAddresses`:
   `List`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
@@ -300,7 +300,7 @@ Type annotations for
 `boto3.client("route53resolver").create_resolver_query_log_config` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.create_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config)
+[Route53Resolver.Client.create_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config)
 
 Arguments:
 
@@ -318,12 +318,13 @@ Type annotations for `boto3.client("route53resolver").create_resolver_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.create_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule)
+[Route53Resolver.Client.create_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule)
 
 Arguments:
 
 - `CreatorRequestId`: `str` *(required)*
-- `RuleType`: [RuleTypeOption](./literals.md#ruletypeoption) *(required)*
+- `RuleType`: [RuleTypeOptionType](./literals.md#ruletypeoptiontype)
+  *(required)*
 - `DomainName`: `str` *(required)*
 - `Name`: `str`
 - `TargetIps`:
@@ -340,7 +341,7 @@ Type annotations for
 `boto3.client("route53resolver").delete_firewall_domain_list` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.delete_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list)
+[Route53Resolver.Client.delete_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list)
 
 Arguments:
 
@@ -355,7 +356,7 @@ Type annotations for `boto3.client("route53resolver").delete_firewall_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.delete_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule)
+[Route53Resolver.Client.delete_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule)
 
 Arguments:
 
@@ -371,7 +372,7 @@ Type annotations for
 `boto3.client("route53resolver").delete_firewall_rule_group` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.delete_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group)
+[Route53Resolver.Client.delete_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group)
 
 Arguments:
 
@@ -386,7 +387,7 @@ Type annotations for `boto3.client("route53resolver").delete_resolver_endpoint`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.delete_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint)
+[Route53Resolver.Client.delete_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint)
 
 Arguments:
 
@@ -401,7 +402,7 @@ Type annotations for
 `boto3.client("route53resolver").delete_resolver_query_log_config` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.delete_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config)
+[Route53Resolver.Client.delete_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config)
 
 Arguments:
 
@@ -416,7 +417,7 @@ Type annotations for `boto3.client("route53resolver").delete_resolver_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.delete_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule)
+[Route53Resolver.Client.delete_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule)
 
 Arguments:
 
@@ -431,7 +432,7 @@ Type annotations for
 `boto3.client("route53resolver").disassociate_firewall_rule_group` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.disassociate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group)
+[Route53Resolver.Client.disassociate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group)
 
 Arguments:
 
@@ -447,7 +448,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.disassociate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address)
+[Route53Resolver.Client.disassociate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address)
 
 Arguments:
 
@@ -465,7 +466,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.disassociate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config)
+[Route53Resolver.Client.disassociate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config)
 
 Arguments:
 
@@ -481,7 +482,7 @@ Type annotations for
 `boto3.client("route53resolver").disassociate_resolver_rule` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.disassociate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule)
+[Route53Resolver.Client.disassociate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule)
 
 Arguments:
 
@@ -497,7 +498,7 @@ Type annotations for `boto3.client("route53resolver").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url)
+[Route53Resolver.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url)
 
 Arguments:
 
@@ -514,7 +515,7 @@ Type annotations for `boto3.client("route53resolver").get_firewall_config`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config)
+[Route53Resolver.Client.get_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config)
 
 Arguments:
 
@@ -529,7 +530,7 @@ Type annotations for `boto3.client("route53resolver").get_firewall_domain_list`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list)
+[Route53Resolver.Client.get_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list)
 
 Arguments:
 
@@ -544,7 +545,7 @@ Type annotations for `boto3.client("route53resolver").get_firewall_rule_group`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group)
+[Route53Resolver.Client.get_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group)
 
 Arguments:
 
@@ -559,7 +560,7 @@ Type annotations for
 `boto3.client("route53resolver").get_firewall_rule_group_association` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association)
+[Route53Resolver.Client.get_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association)
 
 Arguments:
 
@@ -574,7 +575,7 @@ Type annotations for
 `boto3.client("route53resolver").get_firewall_rule_group_policy` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy)
+[Route53Resolver.Client.get_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy)
 
 Arguments:
 
@@ -589,7 +590,7 @@ Type annotations for
 `boto3.client("route53resolver").get_resolver_dnssec_config` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config)
+[Route53Resolver.Client.get_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config)
 
 Arguments:
 
@@ -604,7 +605,7 @@ Type annotations for `boto3.client("route53resolver").get_resolver_endpoint`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint)
+[Route53Resolver.Client.get_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint)
 
 Arguments:
 
@@ -619,7 +620,7 @@ Type annotations for
 `boto3.client("route53resolver").get_resolver_query_log_config` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config)
+[Route53Resolver.Client.get_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config)
 
 Arguments:
 
@@ -635,7 +636,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_query_log_config_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association)
+[Route53Resolver.Client.get_resolver_query_log_config_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association)
 
 Arguments:
 
@@ -650,7 +651,7 @@ Type annotations for
 `boto3.client("route53resolver").get_resolver_query_log_config_policy` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy)
+[Route53Resolver.Client.get_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy)
 
 Arguments:
 
@@ -665,7 +666,7 @@ Type annotations for `boto3.client("route53resolver").get_resolver_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule)
+[Route53Resolver.Client.get_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule)
 
 Arguments:
 
@@ -680,7 +681,7 @@ Type annotations for
 `boto3.client("route53resolver").get_resolver_rule_association` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_rule_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association)
+[Route53Resolver.Client.get_resolver_rule_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association)
 
 Arguments:
 
@@ -695,7 +696,7 @@ Type annotations for `boto3.client("route53resolver").get_resolver_rule_policy`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.get_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy)
+[Route53Resolver.Client.get_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy)
 
 Arguments:
 
@@ -710,13 +711,13 @@ Type annotations for `boto3.client("route53resolver").import_firewall_domains`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.import_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains)
+[Route53Resolver.Client.import_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains)
 
 Arguments:
 
 - `FirewallDomainListId`: `str` *(required)*
 - `Operation`: `Literal['REPLACE']` (see
-  [FirewallDomainImportOperation](./literals.md#firewalldomainimportoperation))
+  [FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype))
   *(required)*
 - `DomainFileUrl`: `str` *(required)*
 
@@ -729,7 +730,7 @@ Type annotations for `boto3.client("route53resolver").list_firewall_configs`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_firewall_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs)
+[Route53Resolver.Client.list_firewall_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs)
 
 Arguments:
 
@@ -745,7 +746,7 @@ Type annotations for
 `boto3.client("route53resolver").list_firewall_domain_lists` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_firewall_domain_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists)
+[Route53Resolver.Client.list_firewall_domain_lists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists)
 
 Arguments:
 
@@ -761,7 +762,7 @@ Type annotations for `boto3.client("route53resolver").list_firewall_domains`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains)
+[Route53Resolver.Client.list_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains)
 
 Arguments:
 
@@ -778,7 +779,7 @@ Type annotations for
 `boto3.client("route53resolver").list_firewall_rule_group_associations` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_firewall_rule_group_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations)
+[Route53Resolver.Client.list_firewall_rule_group_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations)
 
 Arguments:
 
@@ -786,7 +787,7 @@ Arguments:
 - `VpcId`: `str`
 - `Priority`: `int`
 - `Status`:
-  [FirewallRuleGroupAssociationStatus](./literals.md#firewallrulegroupassociationstatus)
+  [FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -799,7 +800,7 @@ Type annotations for
 `boto3.client("route53resolver").list_firewall_rule_groups` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_firewall_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups)
+[Route53Resolver.Client.list_firewall_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups)
 
 Arguments:
 
@@ -815,13 +816,13 @@ Type annotations for `boto3.client("route53resolver").list_firewall_rules`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_firewall_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules)
+[Route53Resolver.Client.list_firewall_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules)
 
 Arguments:
 
 - `FirewallRuleGroupId`: `str` *(required)*
 - `Priority`: `int`
-- `Action`: [Action](./literals.md#action)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -834,7 +835,7 @@ Type annotations for
 `boto3.client("route53resolver").list_resolver_dnssec_configs` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_dnssec_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs)
+[Route53Resolver.Client.list_resolver_dnssec_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs)
 
 Arguments:
 
@@ -851,7 +852,7 @@ Type annotations for
 `boto3.client("route53resolver").list_resolver_endpoint_ip_addresses` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_endpoint_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses)
+[Route53Resolver.Client.list_resolver_endpoint_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses)
 
 Arguments:
 
@@ -868,7 +869,7 @@ Type annotations for `boto3.client("route53resolver").list_resolver_endpoints`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints)
+[Route53Resolver.Client.list_resolver_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints)
 
 Arguments:
 
@@ -886,7 +887,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_query_log_config_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations)
+[Route53Resolver.Client.list_resolver_query_log_config_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations)
 
 Arguments:
 
@@ -894,7 +895,7 @@ Arguments:
 - `NextToken`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
 [ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef).
@@ -905,7 +906,7 @@ Type annotations for
 `boto3.client("route53resolver").list_resolver_query_log_configs` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_query_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs)
+[Route53Resolver.Client.list_resolver_query_log_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs)
 
 Arguments:
 
@@ -913,7 +914,7 @@ Arguments:
 - `NextToken`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
 [ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef).
@@ -924,7 +925,7 @@ Type annotations for
 `boto3.client("route53resolver").list_resolver_rule_associations` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_rule_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations)
+[Route53Resolver.Client.list_resolver_rule_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations)
 
 Arguments:
 
@@ -941,7 +942,7 @@ Type annotations for `boto3.client("route53resolver").list_resolver_rules`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_resolver_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules)
+[Route53Resolver.Client.list_resolver_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules)
 
 Arguments:
 
@@ -958,7 +959,7 @@ Type annotations for `boto3.client("route53resolver").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource)
+[Route53Resolver.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -975,7 +976,7 @@ Type annotations for
 `boto3.client("route53resolver").put_firewall_rule_group_policy` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.put_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy)
+[Route53Resolver.Client.put_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy)
 
 Arguments:
 
@@ -991,7 +992,7 @@ Type annotations for
 `boto3.client("route53resolver").put_resolver_query_log_config_policy` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.put_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy)
+[Route53Resolver.Client.put_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy)
 
 Arguments:
 
@@ -1007,7 +1008,7 @@ Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.put_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy)
+[Route53Resolver.Client.put_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy)
 
 Arguments:
 
@@ -1022,7 +1023,7 @@ Returns
 Type annotations for `boto3.client("route53resolver").tag_resource` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource)
+[Route53Resolver.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource)
 
 Arguments:
 
@@ -1036,7 +1037,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("route53resolver").untag_resource` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource)
+[Route53Resolver.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource)
 
 Arguments:
 
@@ -1051,13 +1052,14 @@ Type annotations for `boto3.client("route53resolver").update_firewall_config`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config)
+[Route53Resolver.Client.update_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config)
 
 Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `FirewallFailOpen`:
-  [FirewallFailOpenStatus](./literals.md#firewallfailopenstatus) *(required)*
+  [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
+  *(required)*
 
 Returns
 [UpdateFirewallConfigResponseTypeDef](./type_defs.md#updatefirewallconfigresponsetypedef).
@@ -1068,13 +1070,13 @@ Type annotations for `boto3.client("route53resolver").update_firewall_domains`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains)
+[Route53Resolver.Client.update_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains)
 
 Arguments:
 
 - `FirewallDomainListId`: `str` *(required)*
 - `Operation`:
-  [FirewallDomainUpdateOperation](./literals.md#firewalldomainupdateoperation)
+  [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
   *(required)*
 - `Domains`: `List`\[`str`\] *(required)*
 
@@ -1087,18 +1089,18 @@ Type annotations for `boto3.client("route53resolver").update_firewall_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule)
+[Route53Resolver.Client.update_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule)
 
 Arguments:
 
 - `FirewallRuleGroupId`: `str` *(required)*
 - `FirewallDomainListId`: `str` *(required)*
 - `Priority`: `int`
-- `Action`: [Action](./literals.md#action)
-- `BlockResponse`: [BlockResponse](./literals.md#blockresponse)
+- `Action`: [ActionType](./literals.md#actiontype)
+- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
 - `BlockOverrideDomain`: `str`
 - `BlockOverrideDnsType`: `Literal['CNAME']` (see
-  [BlockOverrideDnsType](./literals.md#blockoverridednstype))
+  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
 - `BlockOverrideTtl`: `int`
 - `Name`: `str`
 
@@ -1112,14 +1114,14 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association)
+[Route53Resolver.Client.update_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association)
 
 Arguments:
 
 - `FirewallRuleGroupAssociationId`: `str` *(required)*
 - `Priority`: `int`
 - `MutationProtection`:
-  [MutationProtectionStatus](./literals.md#mutationprotectionstatus)
+  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
 - `Name`: `str`
 
 Returns
@@ -1131,12 +1133,12 @@ Type annotations for
 `boto3.client("route53resolver").update_resolver_dnssec_config` method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config)
+[Route53Resolver.Client.update_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config)
 
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Validation`: [Validation](./literals.md#validation) *(required)*
+- `Validation`: [ValidationType](./literals.md#validationtype) *(required)*
 
 Returns
 [UpdateResolverDnssecConfigResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponsetypedef).
@@ -1147,7 +1149,7 @@ Type annotations for `boto3.client("route53resolver").update_resolver_endpoint`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
+[Route53Resolver.Client.update_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
 
 Arguments:
 
@@ -1163,12 +1165,13 @@ Type annotations for `boto3.client("route53resolver").update_resolver_rule`
 method.
 
 Boto3 documentation:
-[Route53Resolver.Client.update_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule)
+[Route53Resolver.Client.update_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule)
 
 Arguments:
 
 - `ResolverRuleId`: `str` *(required)*
-- `Config`: [ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef)
+- `Config`:
+  [ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef)
   *(required)*
 
 Returns

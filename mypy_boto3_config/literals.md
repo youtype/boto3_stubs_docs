@@ -3,22 +3,22 @@
 > [Index](..) > [ConfigService](.) > Literals
 
 Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService)
 type annotations stubs module
 [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
 - [Literals for boto3 ConfigService module](#literals-for-boto3-configservice-module)
-  - [AggregateConformancePackComplianceSummaryGroupKey](#aggregateconformancepackcompliancesummarygroupkey)
-  - [AggregatedSourceStatusType](#aggregatedsourcestatustype)
-  - [AggregatedSourceType](#aggregatedsourcetype)
-  - [ChronologicalOrder](#chronologicalorder)
-  - [ComplianceType](#compliancetype)
-  - [ConfigRuleComplianceSummaryGroupKey](#configrulecompliancesummarygroupkey)
-  - [ConfigRuleState](#configrulestate)
-  - [ConfigurationItemStatus](#configurationitemstatus)
-  - [ConformancePackComplianceType](#conformancepackcompliancetype)
-  - [ConformancePackState](#conformancepackstate)
-  - [DeliveryStatus](#deliverystatus)
+  - [AggregateConformancePackComplianceSummaryGroupKeyType](#aggregateconformancepackcompliancesummarygroupkeytype)
+  - [AggregatedSourceStatusTypeType](#aggregatedsourcestatustypetype)
+  - [AggregatedSourceTypeType](#aggregatedsourcetypetype)
+  - [ChronologicalOrderType](#chronologicalordertype)
+  - [ComplianceTypeType](#compliancetypetype)
+  - [ConfigRuleComplianceSummaryGroupKeyType](#configrulecompliancesummarygroupkeytype)
+  - [ConfigRuleStateType](#configrulestatetype)
+  - [ConfigurationItemStatusType](#configurationitemstatustype)
+  - [ConformancePackComplianceTypeType](#conformancepackcompliancetypetype)
+  - [ConformancePackStateType](#conformancepackstatetype)
+  - [DeliveryStatusType](#deliverystatustype)
   - [DescribeAggregateComplianceByConfigRulesPaginatorName](#describeaggregatecompliancebyconfigrulespaginatorname)
   - [DescribeAggregateComplianceByConformancePacksPaginatorName](#describeaggregatecompliancebyconformancepackspaginatorname)
   - [DescribeAggregationAuthorizationsPaginatorName](#describeaggregationauthorizationspaginatorname)
@@ -37,7 +37,7 @@ type annotations stubs module
   - [DescribePendingAggregationRequestsPaginatorName](#describependingaggregationrequestspaginatorname)
   - [DescribeRemediationExecutionStatusPaginatorName](#describeremediationexecutionstatuspaginatorname)
   - [DescribeRetentionConfigurationsPaginatorName](#describeretentionconfigurationspaginatorname)
-  - [EventSource](#eventsource)
+  - [EventSourceType](#eventsourcetype)
   - [GetAggregateComplianceDetailsByConfigRulePaginatorName](#getaggregatecompliancedetailsbyconfigrulepaginatorname)
   - [GetComplianceDetailsByConfigRulePaginatorName](#getcompliancedetailsbyconfigrulepaginatorname)
   - [GetComplianceDetailsByResourcePaginatorName](#getcompliancedetailsbyresourcepaginatorname)
@@ -48,28 +48,28 @@ type annotations stubs module
   - [ListAggregateDiscoveredResourcesPaginatorName](#listaggregatediscoveredresourcespaginatorname)
   - [ListDiscoveredResourcesPaginatorName](#listdiscoveredresourcespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [MaximumExecutionFrequency](#maximumexecutionfrequency)
-  - [MemberAccountRuleStatus](#memberaccountrulestatus)
-  - [MessageType](#messagetype)
-  - [OrganizationConfigRuleTriggerType](#organizationconfigruletriggertype)
-  - [OrganizationResourceDetailedStatus](#organizationresourcedetailedstatus)
-  - [OrganizationResourceStatus](#organizationresourcestatus)
-  - [OrganizationRuleStatus](#organizationrulestatus)
-  - [Owner](#owner)
-  - [RecorderStatus](#recorderstatus)
-  - [RemediationExecutionState](#remediationexecutionstate)
-  - [RemediationExecutionStepState](#remediationexecutionstepstate)
-  - [RemediationTargetType](#remediationtargettype)
-  - [ResourceCountGroupKey](#resourcecountgroupkey)
-  - [ResourceType](#resourcetype)
-  - [ResourceValueType](#resourcevaluetype)
+  - [MaximumExecutionFrequencyType](#maximumexecutionfrequencytype)
+  - [MemberAccountRuleStatusType](#memberaccountrulestatustype)
+  - [MessageTypeType](#messagetypetype)
+  - [OrganizationConfigRuleTriggerTypeType](#organizationconfigruletriggertypetype)
+  - [OrganizationResourceDetailedStatusType](#organizationresourcedetailedstatustype)
+  - [OrganizationResourceStatusType](#organizationresourcestatustype)
+  - [OrganizationRuleStatusType](#organizationrulestatustype)
+  - [OwnerType](#ownertype)
+  - [RecorderStatusType](#recorderstatustype)
+  - [RemediationExecutionStateType](#remediationexecutionstatetype)
+  - [RemediationExecutionStepStateType](#remediationexecutionstepstatetype)
+  - [RemediationTargetTypeType](#remediationtargettypetype)
+  - [ResourceCountGroupKeyType](#resourcecountgroupkeytype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [ResourceValueTypeType](#resourcevaluetypetype)
   - [SelectAggregateResourceConfigPaginatorName](#selectaggregateresourceconfigpaginatorname)
   - [SelectResourceConfigPaginatorName](#selectresourceconfigpaginatorname)
 
-## AggregateConformancePackComplianceSummaryGroupKey
+## AggregateConformancePackComplianceSummaryGroupKeyType
 
 ```python
-from mypy_boto3_config.literals import AggregateConformancePackComplianceSummaryGroupKey
+from mypy_boto3_config.literals import AggregateConformancePackComplianceSummaryGroupKeyType
 ```
 
 Values:
@@ -77,10 +77,10 @@ Values:
 - `ACCOUNT_ID`
 - `AWS_REGION`
 
-## AggregatedSourceStatusType
+## AggregatedSourceStatusTypeType
 
 ```python
-from mypy_boto3_config.literals import AggregatedSourceStatusType
+from mypy_boto3_config.literals import AggregatedSourceStatusTypeType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `OUTDATED`
 - `SUCCEEDED`
 
-## AggregatedSourceType
+## AggregatedSourceTypeType
 
 ```python
-from mypy_boto3_config.literals import AggregatedSourceType
+from mypy_boto3_config.literals import AggregatedSourceTypeType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `ACCOUNT`
 - `ORGANIZATION`
 
-## ChronologicalOrder
+## ChronologicalOrderType
 
 ```python
-from mypy_boto3_config.literals import ChronologicalOrder
+from mypy_boto3_config.literals import ChronologicalOrderType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `Forward`
 - `Reverse`
 
-## ComplianceType
+## ComplianceTypeType
 
 ```python
-from mypy_boto3_config.literals import ComplianceType
+from mypy_boto3_config.literals import ComplianceTypeType
 ```
 
 Values:
@@ -124,10 +124,10 @@ Values:
 - `NON_COMPLIANT`
 - `NOT_APPLICABLE`
 
-## ConfigRuleComplianceSummaryGroupKey
+## ConfigRuleComplianceSummaryGroupKeyType
 
 ```python
-from mypy_boto3_config.literals import ConfigRuleComplianceSummaryGroupKey
+from mypy_boto3_config.literals import ConfigRuleComplianceSummaryGroupKeyType
 ```
 
 Values:
@@ -135,10 +135,10 @@ Values:
 - `ACCOUNT_ID`
 - `AWS_REGION`
 
-## ConfigRuleState
+## ConfigRuleStateType
 
 ```python
-from mypy_boto3_config.literals import ConfigRuleState
+from mypy_boto3_config.literals import ConfigRuleStateType
 ```
 
 Values:
@@ -148,10 +148,10 @@ Values:
 - `DELETING_RESULTS`
 - `EVALUATING`
 
-## ConfigurationItemStatus
+## ConfigurationItemStatusType
 
 ```python
-from mypy_boto3_config.literals import ConfigurationItemStatus
+from mypy_boto3_config.literals import ConfigurationItemStatusType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `ResourceDiscovered`
 - `ResourceNotRecorded`
 
-## ConformancePackComplianceType
+## ConformancePackComplianceTypeType
 
 ```python
-from mypy_boto3_config.literals import ConformancePackComplianceType
+from mypy_boto3_config.literals import ConformancePackComplianceTypeType
 ```
 
 Values:
@@ -174,10 +174,10 @@ Values:
 - `INSUFFICIENT_DATA`
 - `NON_COMPLIANT`
 
-## ConformancePackState
+## ConformancePackStateType
 
 ```python
-from mypy_boto3_config.literals import ConformancePackState
+from mypy_boto3_config.literals import ConformancePackStateType
 ```
 
 Values:
@@ -188,10 +188,10 @@ Values:
 - `DELETE_FAILED`
 - `DELETE_IN_PROGRESS`
 
-## DeliveryStatus
+## DeliveryStatusType
 
 ```python
-from mypy_boto3_config.literals import DeliveryStatus
+from mypy_boto3_config.literals import DeliveryStatusType
 ```
 
 Values:
@@ -380,10 +380,10 @@ Values:
 
 - `describe_retention_configurations`
 
-## EventSource
+## EventSourceType
 
 ```python
-from mypy_boto3_config.literals import EventSource
+from mypy_boto3_config.literals import EventSourceType
 ```
 
 Values:
@@ -490,10 +490,10 @@ Values:
 
 - `list_tags_for_resource`
 
-## MaximumExecutionFrequency
+## MaximumExecutionFrequencyType
 
 ```python
-from mypy_boto3_config.literals import MaximumExecutionFrequency
+from mypy_boto3_config.literals import MaximumExecutionFrequencyType
 ```
 
 Values:
@@ -504,10 +504,10 @@ Values:
 - `Twelve_Hours`
 - `TwentyFour_Hours`
 
-## MemberAccountRuleStatus
+## MemberAccountRuleStatusType
 
 ```python
-from mypy_boto3_config.literals import MemberAccountRuleStatus
+from mypy_boto3_config.literals import MemberAccountRuleStatusType
 ```
 
 Values:
@@ -522,10 +522,10 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
-## MessageType
+## MessageTypeType
 
 ```python
-from mypy_boto3_config.literals import MessageType
+from mypy_boto3_config.literals import MessageTypeType
 ```
 
 Values:
@@ -535,10 +535,10 @@ Values:
 - `OversizedConfigurationItemChangeNotification`
 - `ScheduledNotification`
 
-## OrganizationConfigRuleTriggerType
+## OrganizationConfigRuleTriggerTypeType
 
 ```python
-from mypy_boto3_config.literals import OrganizationConfigRuleTriggerType
+from mypy_boto3_config.literals import OrganizationConfigRuleTriggerTypeType
 ```
 
 Values:
@@ -547,10 +547,10 @@ Values:
 - `OversizedConfigurationItemChangeNotification`
 - `ScheduledNotification`
 
-## OrganizationResourceDetailedStatus
+## OrganizationResourceDetailedStatusType
 
 ```python
-from mypy_boto3_config.literals import OrganizationResourceDetailedStatus
+from mypy_boto3_config.literals import OrganizationResourceDetailedStatusType
 ```
 
 Values:
@@ -565,10 +565,10 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
-## OrganizationResourceStatus
+## OrganizationResourceStatusType
 
 ```python
-from mypy_boto3_config.literals import OrganizationResourceStatus
+from mypy_boto3_config.literals import OrganizationResourceStatusType
 ```
 
 Values:
@@ -583,10 +583,10 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
-## OrganizationRuleStatus
+## OrganizationRuleStatusType
 
 ```python
-from mypy_boto3_config.literals import OrganizationRuleStatus
+from mypy_boto3_config.literals import OrganizationRuleStatusType
 ```
 
 Values:
@@ -601,10 +601,10 @@ Values:
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
 
-## Owner
+## OwnerType
 
 ```python
-from mypy_boto3_config.literals import Owner
+from mypy_boto3_config.literals import OwnerType
 ```
 
 Values:
@@ -612,10 +612,10 @@ Values:
 - `AWS`
 - `CUSTOM_LAMBDA`
 
-## RecorderStatus
+## RecorderStatusType
 
 ```python
-from mypy_boto3_config.literals import RecorderStatus
+from mypy_boto3_config.literals import RecorderStatusType
 ```
 
 Values:
@@ -624,10 +624,10 @@ Values:
 - `Pending`
 - `Success`
 
-## RemediationExecutionState
+## RemediationExecutionStateType
 
 ```python
-from mypy_boto3_config.literals import RemediationExecutionState
+from mypy_boto3_config.literals import RemediationExecutionStateType
 ```
 
 Values:
@@ -637,10 +637,10 @@ Values:
 - `QUEUED`
 - `SUCCEEDED`
 
-## RemediationExecutionStepState
+## RemediationExecutionStepStateType
 
 ```python
-from mypy_boto3_config.literals import RemediationExecutionStepState
+from mypy_boto3_config.literals import RemediationExecutionStepStateType
 ```
 
 Values:
@@ -649,20 +649,20 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
-## RemediationTargetType
+## RemediationTargetTypeType
 
 ```python
-from mypy_boto3_config.literals import RemediationTargetType
+from mypy_boto3_config.literals import RemediationTargetTypeType
 ```
 
 Values:
 
 - `SSM_DOCUMENT`
 
-## ResourceCountGroupKey
+## ResourceCountGroupKeyType
 
 ```python
-from mypy_boto3_config.literals import ResourceCountGroupKey
+from mypy_boto3_config.literals import ResourceCountGroupKeyType
 ```
 
 Values:
@@ -671,10 +671,10 @@ Values:
 - `AWS_REGION`
 - `RESOURCE_TYPE`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_config.literals import ResourceType
+from mypy_boto3_config.literals import ResourceTypeType
 ```
 
 Values:
@@ -777,10 +777,10 @@ Values:
 - `AWS::WAFv2::WebACL`
 - `AWS::XRay::EncryptionConfig`
 
-## ResourceValueType
+## ResourceValueTypeType
 
 ```python
-from mypy_boto3_config.literals import ResourceValueType
+from mypy_boto3_config.literals import ResourceValueTypeType
 ```
 
 Values:

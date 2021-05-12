@@ -3,7 +3,7 @@
 > [Index](..) > Snowball
 
 Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/snowball.html#Snowball)
 type annotations stubs module
 [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
@@ -30,53 +30,53 @@ Can be used directly:
 from mypy_boto3_snowball.client import SnowballClient
 ```
 
-SnowballClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_cluster](./client.md#cancel-cluster)
-- [cancel_job](./client.md#cancel-job)
-- [create_address](./client.md#create-address)
-- [create_cluster](./client.md#create-cluster)
-- [create_job](./client.md#create-job)
-- [create_long_term_pricing](./client.md#create-long-term-pricing)
-- [create_return_shipping_label](./client.md#create-return-shipping-label)
-- [describe_address](./client.md#describe-address)
-- [describe_addresses](./client.md#describe-addresses)
-- [describe_cluster](./client.md#describe-cluster)
-- [describe_job](./client.md#describe-job)
-- [describe_return_shipping_label](./client.md#describe-return-shipping-label)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_job_manifest](./client.md#get-job-manifest)
-- [get_job_unlock_code](./client.md#get-job-unlock-code)
-- [get_paginator](./client.md#get-paginator)
-- [get_snowball_usage](./client.md#get-snowball-usage)
-- [get_software_updates](./client.md#get-software-updates)
-- [list_cluster_jobs](./client.md#list-cluster-jobs)
-- [list_clusters](./client.md#list-clusters)
-- [list_compatible_images](./client.md#list-compatible-images)
-- [list_jobs](./client.md#list-jobs)
-- [list_long_term_pricing](./client.md#list-long-term-pricing)
-- [update_cluster](./client.md#update-cluster)
-- [update_job](./client.md#update-job)
-- [update_job_shipment_state](./client.md#update-job-shipment-state)
-- [update_long_term_pricing](./client.md#update-long-term-pricing)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_cluster](./client.md#cancel_cluster)
+- [cancel_job](./client.md#cancel_job)
+- [create_address](./client.md#create_address)
+- [create_cluster](./client.md#create_cluster)
+- [create_job](./client.md#create_job)
+- [create_long_term_pricing](./client.md#create_long_term_pricing)
+- [create_return_shipping_label](./client.md#create_return_shipping_label)
+- [describe_address](./client.md#describe_address)
+- [describe_addresses](./client.md#describe_addresses)
+- [describe_cluster](./client.md#describe_cluster)
+- [describe_job](./client.md#describe_job)
+- [describe_return_shipping_label](./client.md#describe_return_shipping_label)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_job_manifest](./client.md#get_job_manifest)
+- [get_job_unlock_code](./client.md#get_job_unlock_code)
+- [get_paginator](./client.md#get_paginator)
+- [get_snowball_usage](./client.md#get_snowball_usage)
+- [get_software_updates](./client.md#get_software_updates)
+- [list_cluster_jobs](./client.md#list_cluster_jobs)
+- [list_clusters](./client.md#list_clusters)
+- [list_compatible_images](./client.md#list_compatible_images)
+- [list_jobs](./client.md#list_jobs)
+- [list_long_term_pricing](./client.md#list_long_term_pricing)
+- [update_cluster](./client.md#update_cluster)
+- [update_job](./client.md#update_job)
+- [update_job_shipment_state](./client.md#update_job_shipment_state)
+- [update_long_term_pricing](./client.md#update_long_term_pricing)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ClusterLimitExceededException](./client.md#clusterlimitexceededexception)
-- [ConflictException](./client.md#conflictexception)
-- [Ec2RequestFailedException](./client.md#ec2requestfailedexception)
-- [InvalidAddressException](./client.md#invalidaddressexception)
-- [InvalidInputCombinationException](./client.md#invalidinputcombinationexception)
-- [InvalidJobStateException](./client.md#invalidjobstateexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidResourceException](./client.md#invalidresourceexception)
-- [KMSRequestFailedException](./client.md#kmsrequestfailedexception)
-- [ReturnShippingLabelAlreadyExistsException](./client.md#returnshippinglabelalreadyexistsexception)
-- [UnsupportedAddressException](./client.md#unsupportedaddressexception)
+SnowballClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ClusterLimitExceededException
+- ConflictException
+- Ec2RequestFailedException
+- InvalidAddressException
+- InvalidInputCombinationException
+- InvalidJobStateException
+- InvalidNextTokenException
+- InvalidResourceException
+- KMSRequestFailedException
+- ReturnShippingLabelAlreadyExistsException
+- UnsupportedAddressException
 
 ## Paginators
 
@@ -102,23 +102,23 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.literals import ClusterState, ...
+from mypy_boto3_snowball.literals import ClusterStateType, ...
 ```
 
-- [ClusterState](./literals.md#clusterstate)
+- [ClusterStateType](./literals.md#clusterstatetype)
 - [DescribeAddressesPaginatorName](./literals.md#describeaddressespaginatorname)
-- [JobState](./literals.md#jobstate)
-- [JobType](./literals.md#jobtype)
+- [JobStateType](./literals.md#jobstatetype)
+- [JobTypeType](./literals.md#jobtypetype)
 - [ListClusterJobsPaginatorName](./literals.md#listclusterjobspaginatorname)
 - [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
 - [ListCompatibleImagesPaginatorName](./literals.md#listcompatibleimagespaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
-- [LongTermPricingType](./literals.md#longtermpricingtype)
-- [ShipmentState](./literals.md#shipmentstate)
-- [ShippingLabelStatus](./literals.md#shippinglabelstatus)
-- [ShippingOption](./literals.md#shippingoption)
-- [SnowballCapacity](./literals.md#snowballcapacity)
-- [SnowballType](./literals.md#snowballtype)
+- [LongTermPricingTypeType](./literals.md#longtermpricingtypetype)
+- [ShipmentStateType](./literals.md#shipmentstatetype)
+- [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
+- [ShippingOptionType](./literals.md#shippingoptiontype)
+- [SnowballCapacityType](./literals.md#snowballcapacitytype)
+- [SnowballTypeType](./literals.md#snowballtypetype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [GroundStation](.) > Typed dictionaries
 
 Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
 [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
@@ -77,7 +77,8 @@ from mypy_boto3_groundstation.type_defs import AntennaDownlinkConfigTypeDef
 
 Required fields:
 
-- `spectrumConfig`: [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
+- `spectrumConfig`:
+  [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
 
 ## AntennaDownlinkDemodDecodeConfigTypeDef
 
@@ -90,7 +91,8 @@ Required fields:
 - `decodeConfig`: [DecodeConfigTypeDef](./type_defs.md#decodeconfigtypedef)
 - `demodulationConfig`:
   [DemodulationConfigTypeDef](./type_defs.md#demodulationconfigtypedef)
-- `spectrumConfig`: [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
+- `spectrumConfig`:
+  [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
 
 ## AntennaUplinkConfigTypeDef
 
@@ -133,7 +135,8 @@ Optional fields:
 
 - `configArn`: `str`
 - `configId`: `str`
-- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
+- `configType`:
+  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 
 ## ConfigListItemTypeDef
 
@@ -145,7 +148,8 @@ Optional fields:
 
 - `configArn`: `str`
 - `configId`: `str`
-- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
+- `configType`:
+  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `name`: `str`
 
 ## ConfigTypeDataTypeDef
@@ -166,7 +170,8 @@ Optional fields:
   [DataflowEndpointConfigTypeDef](./type_defs.md#dataflowendpointconfigtypedef)
 - `s3RecordingConfig`:
   [S3RecordingConfigTypeDef](./type_defs.md#s3recordingconfigtypedef)
-- `trackingConfig`: [TrackingConfigTypeDef](./type_defs.md#trackingconfigtypedef)
+- `trackingConfig`:
+  [TrackingConfigTypeDef](./type_defs.md#trackingconfigtypedef)
 - `uplinkEchoConfig`:
   [UplinkEchoConfigTypeDef](./type_defs.md#uplinkechoconfigtypedef)
 
@@ -179,7 +184,7 @@ from mypy_boto3_groundstation.type_defs import ContactDataTypeDef
 Optional fields:
 
 - `contactId`: `str`
-- `contactStatus`: [ContactStatus](./literals.md#contactstatus)
+- `contactStatus`: [ContactStatusType](./literals.md#contactstatustype)
 - `endTime`: `datetime`
 - `errorMessage`: `str`
 - `groundStation`: `str`
@@ -260,7 +265,7 @@ Optional fields:
 - `address`: [SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)
 - `mtu`: `int`
 - `name`: `str`
-- `status`: [EndpointStatus](./literals.md#endpointstatus)
+- `status`: [EndpointStatusType](./literals.md#endpointstatustype)
 
 ## DecodeConfigTypeDef
 
@@ -291,7 +296,7 @@ from mypy_boto3_groundstation.type_defs import DescribeContactResponseTypeDef
 Optional fields:
 
 - `contactId`: `str`
-- `contactStatus`: [ContactStatus](./literals.md#contactstatus)
+- `contactStatus`: [ContactStatusType](./literals.md#contactstatustype)
 - `dataflowList`:
   `List`\[[DataflowDetailTypeDef](./type_defs.md#dataflowdetailtypedef)\]
 - `endTime`: `datetime`
@@ -316,7 +321,8 @@ Optional fields:
 
 - `configDetails`: [ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef)
 - `configId`: `str`
-- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
+- `configType`:
+  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `dataflowDestinationRegion`: `str`
 
 ## EirpTypeDef
@@ -327,7 +333,7 @@ from mypy_boto3_groundstation.type_defs import EirpTypeDef
 
 Required fields:
 
-- `units`: `Literal['dBW']` (see [EirpUnits](./literals.md#eirpunits))
+- `units`: `Literal['dBW']` (see [EirpUnitsType](./literals.md#eirpunitstype))
 - `value`: `float`
 
 ## ElevationTypeDef
@@ -338,7 +344,7 @@ from mypy_boto3_groundstation.type_defs import ElevationTypeDef
 
 Required fields:
 
-- `unit`: [AngleUnits](./literals.md#angleunits)
+- `unit`: [AngleUnitsType](./literals.md#angleunitstype)
 - `value`: `float`
 
 ## EndpointDetailsTypeDef
@@ -361,7 +367,7 @@ from mypy_boto3_groundstation.type_defs import FrequencyBandwidthTypeDef
 
 Required fields:
 
-- `units`: [BandwidthUnits](./literals.md#bandwidthunits)
+- `units`: [BandwidthUnitsType](./literals.md#bandwidthunitstype)
 - `value`: `float`
 
 ## FrequencyTypeDef
@@ -372,7 +378,7 @@ from mypy_boto3_groundstation.type_defs import FrequencyTypeDef
 
 Required fields:
 
-- `units`: [FrequencyUnits](./literals.md#frequencyunits)
+- `units`: [FrequencyUnitsType](./literals.md#frequencyunitstype)
 - `value`: `float`
 
 ## GetConfigResponseTypeDef
@@ -390,7 +396,8 @@ Required fields:
 
 Optional fields:
 
-- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
+- `configType`:
+  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## GetDataflowEndpointGroupResponseTypeDef
@@ -654,7 +661,8 @@ Optional fields:
 
 - `configDetails`: [ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef)
 - `configId`: `str`
-- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
+- `configType`:
+  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `dataflowSourceRegion`: `str`
 
 ## SpectrumConfigTypeDef
@@ -671,7 +679,7 @@ Required fields:
 
 Optional fields:
 
-- `polarization`: [Polarization](./literals.md#polarization)
+- `polarization`: [PolarizationType](./literals.md#polarizationtype)
 
 ## TrackingConfigTypeDef
 
@@ -681,7 +689,7 @@ from mypy_boto3_groundstation.type_defs import TrackingConfigTypeDef
 
 Required fields:
 
-- `autotrack`: [Criticality](./literals.md#criticality)
+- `autotrack`: [CriticalityType](./literals.md#criticalitytype)
 
 ## UplinkEchoConfigTypeDef
 
@@ -706,4 +714,4 @@ Required fields:
 
 Optional fields:
 
-- `polarization`: [Polarization](./literals.md#polarization)
+- `polarization`: [PolarizationType](./literals.md#polarizationtype)

@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDB](.) > Paginators
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -28,14 +28,14 @@ def get_list_backups_paginator() -> ListBackupsPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.ListBackups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
+[DynamoDB.Paginator.ListBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
 
 Arguments for `ListBackupsPaginator.paginate` method:
 
 - `TableName`: `str`
 - `TimeRangeLowerBound`: `datetime`
 - `TimeRangeUpperBound`: `datetime`
-- `BackupType`: [BackupTypeFilter](./literals.md#backuptypefilter)
+- `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -56,7 +56,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
+[DynamoDB.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
 
 Arguments for `ListTablesPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.ListTagsOfResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
+[DynamoDB.Paginator.ListTagsOfResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
 
 Arguments for `ListTagsOfResourcePaginator.paginate` method:
 
@@ -106,23 +106,24 @@ def get_query_paginator() -> QueryPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
+[DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
 
 Arguments for `QueryPaginator.paginate` method:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
-- `Select`: [Select](./literals.md#select)
+- `Select`: [SelectType](./literals.md#selecttype)
 - `AttributesToGet`: `List`\[`str`\]
 - `ConsistentRead`: `bool`
 - `KeyConditions`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `QueryFilter`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ScanIndexForward`: `bool`
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `str`
 - `KeyConditionExpression`: `str`
@@ -151,19 +152,20 @@ def get_scan_paginator() -> ScanPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.Scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
+[DynamoDB.Paginator.Scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
 
 Arguments for `ScanPaginator.paginate` method:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
 - `AttributesToGet`: `List`\[`str`\]
-- `Select`: [Select](./literals.md#select)
+- `Select`: [SelectType](./literals.md#selecttype)
 - `ScanFilter`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`

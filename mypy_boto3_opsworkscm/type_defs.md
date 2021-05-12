@@ -3,7 +3,7 @@
 > [Index](..) > [OpsWorksCM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
 [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
@@ -63,7 +63,7 @@ Optional fields:
 
 - `BackupArn`: `str`
 - `BackupId`: `str`
-- `BackupType`: [BackupType](./literals.md#backuptype)
+- `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Engine`: `str`
@@ -80,7 +80,7 @@ Optional fields:
 - `SecurityGroupIds`: `List`\[`str`\]
 - `ServerName`: `str`
 - `ServiceRoleArn`: `str`
-- `Status`: [BackupStatus](./literals.md#backupstatus)
+- `Status`: [BackupStatusType](./literals.md#backupstatustype)
 - `StatusDescription`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `ToolsVersion`: `str`
@@ -149,7 +149,7 @@ from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusRespons
 Optional fields:
 
 - `NodeAssociationStatus`:
-  [NodeAssociationStatus](./literals.md#nodeassociationstatus)
+  [NodeAssociationStatusType](./literals.md#nodeassociationstatustype)
 - `EngineAttributes`:
   `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
@@ -257,12 +257,13 @@ Optional fields:
 - `InstanceProfileArn`: `str`
 - `InstanceType`: `str`
 - `KeyPair`: `str`
-- `MaintenanceStatus`: [MaintenanceStatus](./literals.md#maintenancestatus)
+- `MaintenanceStatus`:
+  [MaintenanceStatusType](./literals.md#maintenancestatustype)
 - `PreferredMaintenanceWindow`: `str`
 - `PreferredBackupWindow`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `ServiceRoleArn`: `str`
-- `Status`: [ServerStatus](./literals.md#serverstatus)
+- `Status`: [ServerStatusType](./literals.md#serverstatustype)
 - `StatusReason`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `ServerArn`: `str`

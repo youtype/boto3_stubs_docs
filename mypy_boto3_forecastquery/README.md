@@ -3,7 +3,7 @@
 > [Index](..) > ForecastQueryService
 
 Auto-generated documentation for
-[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
+[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecastquery.html#ForecastQueryService)
 type annotations stubs module
 [mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
@@ -28,22 +28,22 @@ Can be used directly:
 from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
 ```
 
-ForecastQueryServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [query_forecast](./client.md#query-forecast)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [query_forecast](./client.md#query_forecast)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+ForecastQueryServiceClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidInputException
+- InvalidNextTokenException
+- LimitExceededException
+- ResourceInUseException
+- ResourceNotFoundException
 
 ## Typed dictionaries
 

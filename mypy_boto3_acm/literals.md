@@ -3,31 +3,31 @@
 > [Index](..) > [ACM](.) > Literals
 
 Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM)
 type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [Literals for boto3 ACM module](#literals-for-boto3-acm-module)
-  - [CertificateStatus](#certificatestatus)
-  - [CertificateTransparencyLoggingPreference](#certificatetransparencyloggingpreference)
-  - [CertificateType](#certificatetype)
+  - [CertificateStatusType](#certificatestatustype)
+  - [CertificateTransparencyLoggingPreferenceType](#certificatetransparencyloggingpreferencetype)
+  - [CertificateTypeType](#certificatetypetype)
   - [CertificateValidatedWaiterName](#certificatevalidatedwaitername)
-  - [DomainStatus](#domainstatus)
-  - [ExtendedKeyUsageName](#extendedkeyusagename)
-  - [FailureReason](#failurereason)
-  - [KeyAlgorithm](#keyalgorithm)
-  - [KeyUsageName](#keyusagename)
+  - [DomainStatusType](#domainstatustype)
+  - [ExtendedKeyUsageNameType](#extendedkeyusagenametype)
+  - [FailureReasonType](#failurereasontype)
+  - [KeyAlgorithmType](#keyalgorithmtype)
+  - [KeyUsageNameType](#keyusagenametype)
   - [ListCertificatesPaginatorName](#listcertificatespaginatorname)
-  - [RecordType](#recordtype)
-  - [RenewalEligibility](#renewaleligibility)
-  - [RenewalStatus](#renewalstatus)
-  - [RevocationReason](#revocationreason)
-  - [ValidationMethod](#validationmethod)
+  - [RecordTypeType](#recordtypetype)
+  - [RenewalEligibilityType](#renewaleligibilitytype)
+  - [RenewalStatusType](#renewalstatustype)
+  - [RevocationReasonType](#revocationreasontype)
+  - [ValidationMethodType](#validationmethodtype)
 
-## CertificateStatus
+## CertificateStatusType
 
 ```python
-from mypy_boto3_acm.literals import CertificateStatus
+from mypy_boto3_acm.literals import CertificateStatusType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `REVOKED`
 - `VALIDATION_TIMED_OUT`
 
-## CertificateTransparencyLoggingPreference
+## CertificateTransparencyLoggingPreferenceType
 
 ```python
-from mypy_boto3_acm.literals import CertificateTransparencyLoggingPreference
+from mypy_boto3_acm.literals import CertificateTransparencyLoggingPreferenceType
 ```
 
 Values:
@@ -51,10 +51,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## CertificateType
+## CertificateTypeType
 
 ```python
-from mypy_boto3_acm.literals import CertificateType
+from mypy_boto3_acm.literals import CertificateTypeType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 
 - `certificate_validated`
 
-## DomainStatus
+## DomainStatusType
 
 ```python
-from mypy_boto3_acm.literals import DomainStatus
+from mypy_boto3_acm.literals import DomainStatusType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `PENDING_VALIDATION`
 - `SUCCESS`
 
-## ExtendedKeyUsageName
+## ExtendedKeyUsageNameType
 
 ```python
-from mypy_boto3_acm.literals import ExtendedKeyUsageName
+from mypy_boto3_acm.literals import ExtendedKeyUsageNameType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `TLS_WEB_CLIENT_AUTHENTICATION`
 - `TLS_WEB_SERVER_AUTHENTICATION`
 
-## FailureReason
+## FailureReasonType
 
 ```python
-from mypy_boto3_acm.literals import FailureReason
+from mypy_boto3_acm.literals import FailureReasonType
 ```
 
 Values:
@@ -132,10 +132,10 @@ Values:
 - `PCA_RESOURCE_NOT_FOUND`
 - `SLR_NOT_FOUND`
 
-## KeyAlgorithm
+## KeyAlgorithmType
 
 ```python
-from mypy_boto3_acm.literals import KeyAlgorithm
+from mypy_boto3_acm.literals import KeyAlgorithmType
 ```
 
 Values:
@@ -147,10 +147,10 @@ Values:
 - `RSA_2048`
 - `RSA_4096`
 
-## KeyUsageName
+## KeyUsageNameType
 
 ```python
-from mypy_boto3_acm.literals import KeyUsageName
+from mypy_boto3_acm.literals import KeyUsageNameType
 ```
 
 Values:
@@ -177,20 +177,20 @@ Values:
 
 - `list_certificates`
 
-## RecordType
+## RecordTypeType
 
 ```python
-from mypy_boto3_acm.literals import RecordType
+from mypy_boto3_acm.literals import RecordTypeType
 ```
 
 Values:
 
 - `CNAME`
 
-## RenewalEligibility
+## RenewalEligibilityType
 
 ```python
-from mypy_boto3_acm.literals import RenewalEligibility
+from mypy_boto3_acm.literals import RenewalEligibilityType
 ```
 
 Values:
@@ -198,10 +198,10 @@ Values:
 - `ELIGIBLE`
 - `INELIGIBLE`
 
-## RenewalStatus
+## RenewalStatusType
 
 ```python
-from mypy_boto3_acm.literals import RenewalStatus
+from mypy_boto3_acm.literals import RenewalStatusType
 ```
 
 Values:
@@ -211,10 +211,10 @@ Values:
 - `PENDING_VALIDATION`
 - `SUCCESS`
 
-## RevocationReason
+## RevocationReasonType
 
 ```python
-from mypy_boto3_acm.literals import RevocationReason
+from mypy_boto3_acm.literals import RevocationReasonType
 ```
 
 Values:
@@ -230,10 +230,10 @@ Values:
 - `SUPERCEDED`
 - `UNSPECIFIED`
 
-## ValidationMethod
+## ValidationMethodType
 
 ```python
-from mypy_boto3_acm.literals import ValidationMethod
+from mypy_boto3_acm.literals import ValidationMethodType
 ```
 
 Values:

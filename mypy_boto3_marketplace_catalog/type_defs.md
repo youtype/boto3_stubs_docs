@@ -3,7 +3,7 @@
 > [Index](..) > [MarketplaceCatalog](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
 [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
@@ -47,9 +47,9 @@ Optional fields:
 - `ChangeSetName`: `str`
 - `StartTime`: `str`
 - `EndTime`: `str`
-- `Status`: [ChangeStatus](./literals.md#changestatus)
+- `Status`: [ChangeStatusType](./literals.md#changestatustype)
 - `EntityIdList`: `List`\[`str`\]
-- `FailureCode`: [FailureCode](./literals.md#failurecode)
+- `FailureCode`: [FailureCodeType](./literals.md#failurecodetype)
 
 ## ChangeSummaryTypeDef
 
@@ -95,8 +95,8 @@ Optional fields:
 - `ChangeSetName`: `str`
 - `StartTime`: `str`
 - `EndTime`: `str`
-- `Status`: [ChangeStatus](./literals.md#changestatus)
-- `FailureCode`: [FailureCode](./literals.md#failurecode)
+- `Status`: [ChangeStatusType](./literals.md#changestatustype)
+- `FailureCode`: [FailureCodeType](./literals.md#failurecodetype)
 - `FailureDescription`: `str`
 - `ChangeSet`:
   `List`\[[ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef)\]
@@ -199,7 +199,7 @@ from mypy_boto3_marketplace_catalog.type_defs import SortTypeDef
 Optional fields:
 
 - `SortBy`: `str`
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 ## StartChangeSetResponseTypeDef
 

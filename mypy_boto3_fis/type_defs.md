@@ -3,7 +3,7 @@
 > [Index](..) > [FIS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+[FIS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fis.html#FIS)
 type annotations stubs module
 [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
@@ -176,7 +176,8 @@ from mypy_boto3_fis.type_defs import ExperimentActionStateTypeDef
 
 Optional fields:
 
-- `status`: [ExperimentActionStatus](./literals.md#experimentactionstatus)
+- `status`:
+  [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
 - `reason`: `str`
 
 ## ExperimentActionTypeDef
@@ -203,7 +204,7 @@ from mypy_boto3_fis.type_defs import ExperimentStateTypeDef
 
 Optional fields:
 
-- `status`: [ExperimentStatus](./literals.md#experimentstatus)
+- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
 - `reason`: `str`
 
 ## ExperimentStopConditionTypeDef

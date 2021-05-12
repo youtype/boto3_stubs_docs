@@ -3,7 +3,7 @@
 > [Index](..) > [WorkLink](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
+[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink)
 type annotations stubs module
 [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
@@ -101,7 +101,7 @@ from mypy_boto3_worklink.type_defs import DescribeDeviceResponseTypeDef
 
 Optional fields:
 
-- `Status`: [DeviceStatus](./literals.md#devicestatus)
+- `Status`: [DeviceStatusType](./literals.md#devicestatustype)
 - `Model`: `str`
 - `Manufacturer`: `str`
 - `OperatingSystem`: `str`
@@ -122,7 +122,7 @@ Optional fields:
 - `DomainName`: `str`
 - `DisplayName`: `str`
 - `CreatedTime`: `datetime`
-- `DomainStatus`: [DomainStatus](./literals.md#domainstatus)
+- `DomainStatus`: [DomainStatusType](./literals.md#domainstatustype)
 - `AcmCertificateArn`: `str`
 
 ## DescribeFleetMetadataResponseTypeDef
@@ -139,7 +139,7 @@ Optional fields:
 - `DisplayName`: `str`
 - `OptimizeForEndUserLocation`: `bool`
 - `CompanyCode`: `str`
-- `FleetStatus`: [FleetStatus](./literals.md#fleetstatus)
+- `FleetStatus`: [FleetStatusType](./literals.md#fleetstatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeIdentityProviderConfigurationResponseTypeDef
@@ -151,7 +151,7 @@ from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationR
 Optional fields:
 
 - `IdentityProviderType`: `Literal['SAML']` (see
-  [IdentityProviderType](./literals.md#identityprovidertype))
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype))
 - `ServiceProviderSamlMetadata`: `str`
 - `IdentityProviderSamlMetadata`: `str`
 
@@ -176,7 +176,7 @@ from mypy_boto3_worklink.type_defs import DeviceSummaryTypeDef
 Optional fields:
 
 - `DeviceId`: `str`
-- `DeviceStatus`: [DeviceStatus](./literals.md#devicestatus)
+- `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
 
 ## DomainSummaryTypeDef
 
@@ -188,7 +188,7 @@ Required fields:
 
 - `DomainName`: `str`
 - `CreatedTime`: `datetime`
-- `DomainStatus`: [DomainStatus](./literals.md#domainstatus)
+- `DomainStatus`: [DomainStatusType](./literals.md#domainstatustype)
 
 Optional fields:
 
@@ -208,7 +208,7 @@ Optional fields:
 - `FleetName`: `str`
 - `DisplayName`: `str`
 - `CompanyCode`: `str`
-- `FleetStatus`: [FleetStatus](./literals.md#fleetstatus)
+- `FleetStatus`: [FleetStatusType](./literals.md#fleetstatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListDevicesResponseTypeDef
@@ -290,7 +290,7 @@ from mypy_boto3_worklink.type_defs import WebsiteAuthorizationProviderSummaryTyp
 Required fields:
 
 - `AuthorizationProviderType`: `Literal['SAML']` (see
-  [AuthorizationProviderType](./literals.md#authorizationprovidertype))
+  [AuthorizationProviderTypeType](./literals.md#authorizationprovidertypetype))
 
 Optional fields:
 

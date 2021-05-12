@@ -3,14 +3,14 @@
 > [Index](..) > [Schemas](.) > Literals
 
 Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/schemas.html#Schemas)
 type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Literals for boto3 Schemas module](#literals-for-boto3-schemas-module)
   - [CodeBindingExistsWaiterName](#codebindingexistswaitername)
-  - [CodeGenerationStatus](#codegenerationstatus)
-  - [DiscovererState](#discovererstate)
+  - [CodeGenerationStatusType](#codegenerationstatustype)
+  - [DiscovererStateType](#discovererstatetype)
   - [ListDiscoverersPaginatorName](#listdiscovererspaginatorname)
   - [ListRegistriesPaginatorName](#listregistriespaginatorname)
   - [ListSchemaVersionsPaginatorName](#listschemaversionspaginatorname)
@@ -28,10 +28,10 @@ Values:
 
 - `code_binding_exists`
 
-## CodeGenerationStatus
+## CodeGenerationStatusType
 
 ```python
-from mypy_boto3_schemas.literals import CodeGenerationStatus
+from mypy_boto3_schemas.literals import CodeGenerationStatusType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `CREATE_FAILED`
 - `CREATE_IN_PROGRESS`
 
-## DiscovererState
+## DiscovererStateType
 
 ```python
-from mypy_boto3_schemas.literals import DiscovererState
+from mypy_boto3_schemas.literals import DiscovererStateType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [Firehose](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/firehose.html#Firehose)
 type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
@@ -152,8 +152,9 @@ Required fields:
 - `DeliveryStreamName`: `str`
 - `DeliveryStreamARN`: `str`
 - `DeliveryStreamStatus`:
-  [DeliveryStreamStatus](./literals.md#deliverystreamstatus)
-- `DeliveryStreamType`: [DeliveryStreamType](./literals.md#deliverystreamtype)
+  [DeliveryStreamStatusType](./literals.md#deliverystreamstatustype)
+- `DeliveryStreamType`:
+  [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
 - `VersionId`: `str`
 - `Destinations`:
   `List`\[[DestinationDescriptionTypeDef](./type_defs.md#destinationdescriptiontypedef)\]
@@ -177,7 +178,7 @@ from mypy_boto3_firehose.type_defs import DeliveryStreamEncryptionConfigurationI
 
 Required fields:
 
-- `KeyType`: [KeyType](./literals.md#keytype)
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 
 Optional fields:
 
@@ -192,9 +193,9 @@ from mypy_boto3_firehose.type_defs import DeliveryStreamEncryptionConfigurationT
 Optional fields:
 
 - `KeyARN`: `str`
-- `KeyType`: [KeyType](./literals.md#keytype)
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `Status`:
-  [DeliveryStreamEncryptionStatus](./literals.md#deliverystreamencryptionstatus)
+  [DeliveryStreamEncryptionStatusType](./literals.md#deliverystreamencryptionstatustype)
 - `FailureDescription`:
   [FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef)
 
@@ -219,7 +220,8 @@ from mypy_boto3_firehose.type_defs import DeserializerTypeDef
 
 Optional fields:
 
-- `OpenXJsonSerDe`: [OpenXJsonSerDeTypeDef](./type_defs.md#openxjsonserdetypedef)
+- `OpenXJsonSerDe`:
+  [OpenXJsonSerDeTypeDef](./type_defs.md#openxjsonserdetypedef)
 - `HiveJsonSerDe`: [HiveJsonSerDeTypeDef](./type_defs.md#hivejsonserdetypedef)
 
 ## DestinationDescriptionTypeDef
@@ -277,13 +279,13 @@ Optional fields:
 - `ClusterEndpoint`: `str`
 - `TypeName`: `str`
 - `IndexRotationPeriod`:
-  [ElasticsearchIndexRotationPeriod](./literals.md#elasticsearchindexrotationperiod)
+  [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
 - `BufferingHints`:
   [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
 - `RetryOptions`:
   [ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef)
 - `S3BackupMode`:
-  [ElasticsearchS3BackupMode](./literals.md#elasticsearchs3backupmode)
+  [ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
@@ -305,13 +307,13 @@ Optional fields:
 - `IndexName`: `str`
 - `TypeName`: `str`
 - `IndexRotationPeriod`:
-  [ElasticsearchIndexRotationPeriod](./literals.md#elasticsearchindexrotationperiod)
+  [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
 - `BufferingHints`:
   [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
 - `RetryOptions`:
   [ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef)
 - `S3BackupMode`:
-  [ElasticsearchS3BackupMode](./literals.md#elasticsearchs3backupmode)
+  [ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype)
 - `S3DestinationDescription`:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - `ProcessingConfiguration`:
@@ -335,7 +337,7 @@ Optional fields:
 - `IndexName`: `str`
 - `TypeName`: `str`
 - `IndexRotationPeriod`:
-  [ElasticsearchIndexRotationPeriod](./literals.md#elasticsearchindexrotationperiod)
+  [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
 - `BufferingHints`:
   [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
 - `RetryOptions`:
@@ -366,7 +368,7 @@ from mypy_boto3_firehose.type_defs import EncryptionConfigurationTypeDef
 Optional fields:
 
 - `NoEncryptionConfig`: `Literal['NoEncryption']` (see
-  [NoEncryptionConfig](./literals.md#noencryptionconfig))
+  [NoEncryptionConfigType](./literals.md#noencryptionconfigtype))
 - `KMSEncryptionConfig`:
   [KMSEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
 
@@ -385,15 +387,17 @@ Optional fields:
 
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
+- `BufferingHints`:
+  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [S3BackupMode](./literals.md#s3backupmode)
+- `S3BackupMode`: [S3BackupModeType](./literals.md#s3backupmodetype)
 - `S3BackupConfiguration`:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - `DataFormatConversionConfiguration`:
@@ -409,8 +413,10 @@ Required fields:
 
 - `RoleARN`: `str`
 - `BucketARN`: `str`
-- `BufferingHints`: [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
+- `BufferingHints`:
+  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
@@ -422,7 +428,7 @@ Optional fields:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [S3BackupMode](./literals.md#s3backupmode)
+- `S3BackupMode`: [S3BackupModeType](./literals.md#s3backupmodetype)
 - `S3BackupDescription`:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - `DataFormatConversionConfiguration`:
@@ -440,15 +446,17 @@ Optional fields:
 - `BucketARN`: `str`
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
+- `BufferingHints`:
+  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
   [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [S3BackupMode](./literals.md#s3backupmode)
+- `S3BackupMode`: [S3BackupModeType](./literals.md#s3backupmodetype)
 - `S3BackupUpdate`:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `DataFormatConversionConfiguration`:
@@ -462,7 +470,8 @@ from mypy_boto3_firehose.type_defs import FailureDescriptionTypeDef
 
 Required fields:
 
-- `Type`: [DeliveryStreamFailureType](./literals.md#deliverystreamfailuretype)
+- `Type`:
+  [DeliveryStreamFailureTypeType](./literals.md#deliverystreamfailuretypetype)
 - `Details`: `str`
 
 ## HiveJsonSerDeTypeDef
@@ -550,7 +559,7 @@ Optional fields:
 - `RetryOptions`:
   [HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef)
 - `S3BackupMode`:
-  [HttpEndpointS3BackupMode](./literals.md#httpendpoints3backupmode)
+  [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
 
 ## HttpEndpointDestinationDescriptionTypeDef
 
@@ -574,7 +583,7 @@ Optional fields:
 - `RetryOptions`:
   [HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef)
 - `S3BackupMode`:
-  [HttpEndpointS3BackupMode](./literals.md#httpendpoints3backupmode)
+  [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
 - `S3DestinationDescription`:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 
@@ -600,7 +609,7 @@ Optional fields:
 - `RetryOptions`:
   [HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef)
 - `S3BackupMode`:
-  [HttpEndpointS3BackupMode](./literals.md#httpendpoints3backupmode)
+  [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
 - `S3Update`:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 
@@ -612,7 +621,7 @@ from mypy_boto3_firehose.type_defs import HttpEndpointRequestConfigurationTypeDe
 
 Optional fields:
 
-- `ContentEncoding`: [ContentEncoding](./literals.md#contentencoding)
+- `ContentEncoding`: [ContentEncodingType](./literals.md#contentencodingtype)
 - `CommonAttributes`:
   `List`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
 
@@ -720,11 +729,11 @@ Optional fields:
 - `RowIndexStride`: `int`
 - `EnablePadding`: `bool`
 - `PaddingTolerance`: `float`
-- `Compression`: [OrcCompression](./literals.md#orccompression)
+- `Compression`: [OrcCompressionType](./literals.md#orccompressiontype)
 - `BloomFilterColumns`: `List`\[`str`\]
 - `BloomFilterFalsePositiveProbability`: `float`
 - `DictionaryKeyThreshold`: `float`
-- `FormatVersion`: [OrcFormatVersion](./literals.md#orcformatversion)
+- `FormatVersion`: [OrcFormatVersionType](./literals.md#orcformatversiontype)
 
 ## OutputFormatConfigurationTypeDef
 
@@ -746,10 +755,11 @@ Optional fields:
 
 - `BlockSizeBytes`: `int`
 - `PageSizeBytes`: `int`
-- `Compression`: [ParquetCompression](./literals.md#parquetcompression)
+- `Compression`: [ParquetCompressionType](./literals.md#parquetcompressiontype)
 - `EnableDictionaryCompression`: `bool`
 - `MaxPaddingBytes`: `int`
-- `WriterVersion`: [ParquetWriterVersion](./literals.md#parquetwriterversion)
+- `WriterVersion`:
+  [ParquetWriterVersionType](./literals.md#parquetwriterversiontype)
 
 ## ProcessingConfigurationTypeDef
 
@@ -770,7 +780,8 @@ from mypy_boto3_firehose.type_defs import ProcessorParameterTypeDef
 
 Required fields:
 
-- `ParameterName`: [ProcessorParameterName](./literals.md#processorparametername)
+- `ParameterName`:
+  [ProcessorParameterNameType](./literals.md#processorparameternametype)
 - `ParameterValue`: `str`
 
 ## ProcessorTypeDef
@@ -781,7 +792,8 @@ from mypy_boto3_firehose.type_defs import ProcessorTypeDef
 
 Required fields:
 
-- `Type`: `Literal['Lambda']` (see [ProcessorType](./literals.md#processortype))
+- `Type`: `Literal['Lambda']` (see
+  [ProcessorTypeType](./literals.md#processortypetype))
 
 Optional fields:
 
@@ -860,7 +872,8 @@ Optional fields:
   [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [RedshiftS3BackupMode](./literals.md#redshifts3backupmode)
+- `S3BackupMode`:
+  [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
 - `S3BackupConfiguration`:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
@@ -887,7 +900,8 @@ Optional fields:
   [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [RedshiftS3BackupMode](./literals.md#redshifts3backupmode)
+- `S3BackupMode`:
+  [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
 - `S3BackupDescription`:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - `CloudWatchLoggingOptions`:
@@ -912,7 +926,8 @@ Optional fields:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [RedshiftS3BackupMode](./literals.md#redshifts3backupmode)
+- `S3BackupMode`:
+  [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
 - `S3BackupUpdate`:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `CloudWatchLoggingOptions`:
@@ -957,8 +972,10 @@ Optional fields:
 
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
+- `BufferingHints`:
+  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
@@ -974,8 +991,10 @@ Required fields:
 
 - `RoleARN`: `str`
 - `BucketARN`: `str`
-- `BufferingHints`: [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
+- `BufferingHints`:
+  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
@@ -998,8 +1017,10 @@ Optional fields:
 - `BucketARN`: `str`
 - `Prefix`: `str`
 - `ErrorOutputPrefix`: `str`
-- `BufferingHints`: [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`: [CompressionFormat](./literals.md#compressionformat)
+- `BufferingHints`:
+  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
+- `CompressionFormat`:
+  [CompressionFormatType](./literals.md#compressionformattype)
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
@@ -1051,7 +1072,7 @@ from mypy_boto3_firehose.type_defs import SplunkDestinationConfigurationTypeDef
 Required fields:
 
 - `HECEndpoint`: `str`
-- `HECEndpointType`: [HECEndpointType](./literals.md#hecendpointtype)
+- `HECEndpointType`: [HECEndpointTypeType](./literals.md#hecendpointtypetype)
 - `HECToken`: `str`
 - `S3Configuration`:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
@@ -1061,7 +1082,8 @@ Optional fields:
 - `HECAcknowledgmentTimeoutInSeconds`: `int`
 - `RetryOptions`:
   [SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef)
-- `S3BackupMode`: [SplunkS3BackupMode](./literals.md#splunks3backupmode)
+- `S3BackupMode`:
+  [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
 - `ProcessingConfiguration`:
   [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
@@ -1076,12 +1098,13 @@ from mypy_boto3_firehose.type_defs import SplunkDestinationDescriptionTypeDef
 Optional fields:
 
 - `HECEndpoint`: `str`
-- `HECEndpointType`: [HECEndpointType](./literals.md#hecendpointtype)
+- `HECEndpointType`: [HECEndpointTypeType](./literals.md#hecendpointtypetype)
 - `HECToken`: `str`
 - `HECAcknowledgmentTimeoutInSeconds`: `int`
 - `RetryOptions`:
   [SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef)
-- `S3BackupMode`: [SplunkS3BackupMode](./literals.md#splunks3backupmode)
+- `S3BackupMode`:
+  [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
 - `S3DestinationDescription`:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - `ProcessingConfiguration`:
@@ -1098,12 +1121,13 @@ from mypy_boto3_firehose.type_defs import SplunkDestinationUpdateTypeDef
 Optional fields:
 
 - `HECEndpoint`: `str`
-- `HECEndpointType`: [HECEndpointType](./literals.md#hecendpointtype)
+- `HECEndpointType`: [HECEndpointTypeType](./literals.md#hecendpointtypetype)
 - `HECToken`: `str`
 - `HECAcknowledgmentTimeoutInSeconds`: `int`
 - `RetryOptions`:
   [SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef)
-- `S3BackupMode`: [SplunkS3BackupMode](./literals.md#splunks3backupmode)
+- `S3BackupMode`:
+  [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
 - `S3Update`:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `ProcessingConfiguration`:

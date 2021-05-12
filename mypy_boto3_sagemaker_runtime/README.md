@@ -3,7 +3,7 @@
 > [Index](..) > SageMakerRuntime
 
 Auto-generated documentation for
-[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
@@ -28,21 +28,21 @@ Can be used directly:
 from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 ```
 
-SageMakerRuntimeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [invoke_endpoint](./client.md#invoke-endpoint)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [invoke_endpoint](./client.md#invoke_endpoint)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalFailure](./client.md#internalfailure)
-- [ModelError](./client.md#modelerror)
-- [ServiceUnavailable](./client.md#serviceunavailable)
-- [ValidationError](./client.md#validationerror)
+SageMakerRuntimeClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalFailure
+- ModelError
+- ServiceUnavailable
+- ValidationError
 
 ## Typed dictionaries
 

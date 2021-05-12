@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDBStreams](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
 [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
@@ -101,7 +101,7 @@ from mypy_boto3_dynamodbstreams.type_defs import KeySchemaElementTypeDef
 Required fields:
 
 - `AttributeName`: `str`
-- `KeyType`: [KeyType](./literals.md#keytype)
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 
 ## ListStreamsOutputTypeDef
 
@@ -125,7 +125,7 @@ from mypy_boto3_dynamodbstreams.type_defs import RecordTypeDef
 Optional fields:
 
 - `eventID`: `str`
-- `eventName`: [OperationType](./literals.md#operationtype)
+- `eventName`: [OperationTypeType](./literals.md#operationtypetype)
 - `eventVersion`: `str`
 - `eventSource`: `str`
 - `awsRegion`: `str`
@@ -180,8 +180,8 @@ Optional fields:
 
 - `StreamArn`: `str`
 - `StreamLabel`: `str`
-- `StreamStatus`: [StreamStatus](./literals.md#streamstatus)
-- `StreamViewType`: [StreamViewType](./literals.md#streamviewtype)
+- `StreamStatus`: [StreamStatusType](./literals.md#streamstatustype)
+- `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
 - `CreationRequestDateTime`: `datetime`
 - `TableName`: `str`
 - `KeySchema`:
@@ -206,7 +206,7 @@ Optional fields:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `SequenceNumber`: `str`
 - `SizeBytes`: `int`
-- `StreamViewType`: [StreamViewType](./literals.md#streamviewtype)
+- `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
 
 ## StreamTypeDef
 

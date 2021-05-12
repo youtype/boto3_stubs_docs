@@ -3,7 +3,7 @@
 > [Index](..) > [AppSync](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appsync.html#AppSync)
 type annotations stubs module
 [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
@@ -74,7 +74,8 @@ from mypy_boto3_appsync.type_defs import AdditionalAuthenticationProviderTypeDef
 
 Optional fields:
 
-- `authenticationType`: [AuthenticationType](./literals.md#authenticationtype)
+- `authenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `userPoolConfig`:
@@ -89,11 +90,12 @@ from mypy_boto3_appsync.type_defs import ApiCacheTypeDef
 Optional fields:
 
 - `ttl`: `int`
-- `apiCachingBehavior`: [ApiCachingBehavior](./literals.md#apicachingbehavior)
+- `apiCachingBehavior`:
+  [ApiCachingBehaviorType](./literals.md#apicachingbehaviortype)
 - `transitEncryptionEnabled`: `bool`
 - `atRestEncryptionEnabled`: `bool`
-- `type`: [ApiCacheType](./literals.md#apicachetype)
-- `status`: [ApiCacheStatus](./literals.md#apicachestatus)
+- `type`: [ApiCacheTypeType](./literals.md#apicachetypetype)
+- `status`: [ApiCacheStatusType](./literals.md#apicachestatustype)
 
 ## ApiKeyTypeDef
 
@@ -117,7 +119,7 @@ from mypy_boto3_appsync.type_defs import AuthorizationConfigTypeDef
 Required fields:
 
 - `authorizationType`: `Literal['AWS_IAM']` (see
-  [AuthorizationType](./literals.md#authorizationtype))
+  [AuthorizationTypeType](./literals.md#authorizationtypetype))
 
 Optional fields:
 
@@ -242,7 +244,7 @@ Optional fields:
 - `dataSourceArn`: `str`
 - `name`: `str`
 - `description`: `str`
-- `type`: [DataSourceType](./literals.md#datasourcetype)
+- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
 - `serviceRoleArn`: `str`
 - `dynamodbConfig`:
   [DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef)
@@ -383,7 +385,7 @@ from mypy_boto3_appsync.type_defs import GetSchemaCreationStatusResponseTypeDef
 
 Optional fields:
 
-- `status`: [SchemaStatus](./literals.md#schemastatus)
+- `status`: [SchemaStatusType](./literals.md#schemastatustype)
 - `details`: `str`
 
 ## GetTypeResponseTypeDef
@@ -406,9 +408,11 @@ Optional fields:
 
 - `name`: `str`
 - `apiId`: `str`
-- `authenticationType`: [AuthenticationType](./literals.md#authenticationtype)
+- `authenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - `logConfig`: [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
-- `userPoolConfig`: [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
+- `userPoolConfig`:
+  [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `arn`: `str`
@@ -470,7 +474,8 @@ from mypy_boto3_appsync.type_defs import ListDataSourcesResponseTypeDef
 
 Optional fields:
 
-- `dataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `dataSources`:
+  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `nextToken`: `str`
 
 ## ListFunctionsResponseTypeDef
@@ -493,7 +498,8 @@ from mypy_boto3_appsync.type_defs import ListGraphqlApisResponseTypeDef
 
 Optional fields:
 
-- `graphqlApis`: `List`\[[GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)\]
+- `graphqlApis`:
+  `List`\[[GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)\]
 - `nextToken`: `str`
 
 ## ListResolversByFunctionResponseTypeDef
@@ -547,7 +553,7 @@ from mypy_boto3_appsync.type_defs import LogConfigTypeDef
 
 Required fields:
 
-- `fieldLogLevel`: [FieldLogLevel](./literals.md#fieldloglevel)
+- `fieldLogLevel`: [FieldLogLevelType](./literals.md#fieldlogleveltype)
 - `cloudWatchLogsRoleArn`: `str`
 
 Optional fields:
@@ -615,7 +621,7 @@ from mypy_boto3_appsync.type_defs import RelationalDatabaseDataSourceConfigTypeD
 Optional fields:
 
 - `relationalDatabaseSourceType`: `Literal['RDS_HTTP_ENDPOINT']` (see
-  [RelationalDatabaseSourceType](./literals.md#relationaldatabasesourcetype))
+  [RelationalDatabaseSourceTypeType](./literals.md#relationaldatabasesourcetypetype))
 - `rdsHttpEndpointConfig`:
   [RdsHttpEndpointConfigTypeDef](./type_defs.md#rdshttpendpointconfigtypedef)
 
@@ -633,8 +639,9 @@ Optional fields:
 - `resolverArn`: `str`
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
-- `kind`: [ResolverKind](./literals.md#resolverkind)
-- `pipelineConfig`: [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
+- `kind`: [ResolverKindType](./literals.md#resolverkindtype)
+- `pipelineConfig`:
+  [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
@@ -646,7 +653,7 @@ from mypy_boto3_appsync.type_defs import StartSchemaCreationResponseTypeDef
 
 Optional fields:
 
-- `status`: [SchemaStatus](./literals.md#schemastatus)
+- `status`: [SchemaStatusType](./literals.md#schemastatustype)
 
 ## SyncConfigTypeDef
 
@@ -656,9 +663,10 @@ from mypy_boto3_appsync.type_defs import SyncConfigTypeDef
 
 Optional fields:
 
-- `conflictHandler`: [ConflictHandlerType](./literals.md#conflicthandlertype)
+- `conflictHandler`:
+  [ConflictHandlerTypeType](./literals.md#conflicthandlertypetype)
 - `conflictDetection`:
-  [ConflictDetectionType](./literals.md#conflictdetectiontype)
+  [ConflictDetectionTypeType](./literals.md#conflictdetectiontypetype)
 - `lambdaConflictHandlerConfig`:
   [LambdaConflictHandlerConfigTypeDef](./type_defs.md#lambdaconflicthandlerconfigtypedef)
 
@@ -674,7 +682,7 @@ Optional fields:
 - `description`: `str`
 - `arn`: `str`
 - `definition`: `str`
-- `format`: [TypeDefinitionFormat](./literals.md#typedefinitionformat)
+- `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
 
 ## UpdateApiCacheResponseTypeDef
 
@@ -757,7 +765,7 @@ Required fields:
 
 - `userPoolId`: `str`
 - `awsRegion`: `str`
-- `defaultAction`: [DefaultAction](./literals.md#defaultaction)
+- `defaultAction`: [DefaultActionType](./literals.md#defaultactiontype)
 
 Optional fields:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [LicenseManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
@@ -82,7 +82,7 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`: [GrantStatus](./literals.md#grantstatus)
+- `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 
 ## AutomatedDiscoveryInformationTypeDef
@@ -122,7 +122,8 @@ Optional fields:
 - `SignedToken`: `str`
 - `IssuedAt`: `str`
 - `Expiration`: `str`
-- `CheckoutMetadata`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+- `CheckoutMetadata`:
+  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 ## CheckoutLicenseResponseTypeDef
 
@@ -133,7 +134,7 @@ from mypy_boto3_license_manager.type_defs import CheckoutLicenseResponseTypeDef
 Optional fields:
 
 - `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutType](./literals.md#checkouttype))
+  [CheckoutTypeType](./literals.md#checkouttypetype))
 - `LicenseConsumptionToken`: `str`
 - `EntitlementsAllowed`:
   `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
@@ -150,7 +151,7 @@ from mypy_boto3_license_manager.type_defs import ConsumedLicenseSummaryTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ConsumedLicenses`: `int`
 
 ## ConsumptionConfigurationTypeDef
@@ -161,7 +162,7 @@ from mypy_boto3_license_manager.type_defs import ConsumptionConfigurationTypeDef
 
 Optional fields:
 
-- `RenewType`: [RenewType](./literals.md#renewtype)
+- `RenewType`: [RenewTypeType](./literals.md#renewtypetype)
 - `ProvisionalConfiguration`:
   [ProvisionalConfigurationTypeDef](./type_defs.md#provisionalconfigurationtypedef)
 - `BorrowConfiguration`:
@@ -176,7 +177,7 @@ from mypy_boto3_license_manager.type_defs import CreateGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`: [GrantStatus](./literals.md#grantstatus)
+- `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 
 ## CreateGrantVersionResponseTypeDef
@@ -188,7 +189,7 @@ from mypy_boto3_license_manager.type_defs import CreateGrantVersionResponseTypeD
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`: [GrantStatus](./literals.md#grantstatus)
+- `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 
 ## CreateLicenseConfigurationResponseTypeDef
@@ -210,7 +211,7 @@ from mypy_boto3_license_manager.type_defs import CreateLicenseResponseTypeDef
 Optional fields:
 
 - `LicenseArn`: `str`
-- `Status`: [LicenseStatus](./literals.md#licensestatus)
+- `Status`: [LicenseStatusType](./literals.md#licensestatustype)
 - `Version`: `str`
 
 ## CreateLicenseVersionResponseTypeDef
@@ -223,7 +224,7 @@ Optional fields:
 
 - `LicenseArn`: `str`
 - `Version`: `str`
-- `Status`: [LicenseStatus](./literals.md#licensestatus)
+- `Status`: [LicenseStatusType](./literals.md#licensestatustype)
 
 ## CreateTokenResponseTypeDef
 
@@ -235,7 +236,7 @@ Optional fields:
 
 - `TokenId`: `str`
 - `TokenType`: `Literal['REFRESH_TOKEN']` (see
-  [TokenType](./literals.md#tokentype))
+  [TokenTypeType](./literals.md#tokentypetype))
 - `Token`: `str`
 
 ## DatetimeRangeTypeDef
@@ -261,7 +262,7 @@ from mypy_boto3_license_manager.type_defs import DeleteGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`: [GrantStatus](./literals.md#grantstatus)
+- `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 
 ## DeleteLicenseResponseTypeDef
@@ -272,7 +273,8 @@ from mypy_boto3_license_manager.type_defs import DeleteLicenseResponseTypeDef
 
 Optional fields:
 
-- `Status`: [LicenseDeletionStatus](./literals.md#licensedeletionstatus)
+- `Status`:
+  [LicenseDeletionStatusType](./literals.md#licensedeletionstatustype)
 - `DeletionDate`: `str`
 
 ## EntitlementDataTypeDef
@@ -284,7 +286,7 @@ from mypy_boto3_license_manager.type_defs import EntitlementDataTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Unit`: [EntitlementDataUnit](./literals.md#entitlementdataunit)
+- `Unit`: [EntitlementDataUnitType](./literals.md#entitlementdataunittype)
 
 Optional fields:
 
@@ -299,7 +301,7 @@ from mypy_boto3_license_manager.type_defs import EntitlementTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Unit`: [EntitlementUnit](./literals.md#entitlementunit)
+- `Unit`: [EntitlementUnitType](./literals.md#entitlementunittype)
 
 Optional fields:
 
@@ -318,7 +320,7 @@ Required fields:
 
 - `Name`: `str`
 - `ConsumedValue`: `str`
-- `Unit`: [EntitlementDataUnit](./literals.md#entitlementdataunit)
+- `Unit`: [EntitlementDataUnitType](./literals.md#entitlementdataunittype)
 
 Optional fields:
 
@@ -378,7 +380,8 @@ Optional fields:
 - `LicenseConfigurationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `LicenseCountingType`: [LicenseCountingType](./literals.md#licensecountingtype)
+- `LicenseCountingType`:
+  [LicenseCountingTypeType](./literals.md#licensecountingtypetype)
 - `LicenseRules`: `List`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
@@ -445,10 +448,10 @@ Required fields:
 - `LicenseArn`: `str`
 - `GranteePrincipalArn`: `str`
 - `HomeRegion`: `str`
-- `GrantStatus`: [GrantStatus](./literals.md#grantstatus)
+- `GrantStatus`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 - `GrantedOperations`:
-  `List`\[[AllowedOperation](./literals.md#allowedoperation)\]
+  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 
 Optional fields:
 
@@ -468,14 +471,15 @@ Optional fields:
 - `ProductSKU`: `str`
 - `Issuer`: [IssuerDetailsTypeDef](./type_defs.md#issuerdetailstypedef)
 - `HomeRegion`: `str`
-- `Status`: [LicenseStatus](./literals.md#licensestatus)
+- `Status`: [LicenseStatusType](./literals.md#licensestatustype)
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `Beneficiary`: `str`
 - `Entitlements`:
   `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `ConsumptionConfiguration`:
   [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
-- `LicenseMetadata`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+- `LicenseMetadata`:
+  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `CreateTime`: `str`
 - `Version`: `str`
 - `ReceivedMetadata`:
@@ -490,7 +494,8 @@ from mypy_boto3_license_manager.type_defs import InventoryFilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Condition`: [InventoryFilterCondition](./literals.md#inventoryfiltercondition)
+- `Condition`:
+  [InventoryFilterConditionType](./literals.md#inventoryfilterconditiontype)
 
 Optional fields:
 
@@ -531,7 +536,7 @@ from mypy_boto3_license_manager.type_defs import LicenseConfigurationAssociation
 Optional fields:
 
 - `ResourceArn`: `str`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceOwnerId`: `str`
 - `AssociationTime`: `datetime`
 - `AmiAssociationScope`: `str`
@@ -548,7 +553,8 @@ Optional fields:
 - `LicenseConfigurationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `LicenseCountingType`: [LicenseCountingType](./literals.md#licensecountingtype)
+- `LicenseCountingType`:
+  [LicenseCountingTypeType](./literals.md#licensecountingtypetype)
 - `LicenseRules`: `List`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
@@ -574,7 +580,7 @@ from mypy_boto3_license_manager.type_defs import LicenseConfigurationUsageTypeDe
 Optional fields:
 
 - `ResourceArn`: `str`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceStatus`: `str`
 - `ResourceOwnerId`: `str`
 - `AssociationTime`: `datetime`
@@ -589,7 +595,7 @@ from mypy_boto3_license_manager.type_defs import LicenseOperationFailureTypeDef
 Optional fields:
 
 - `ResourceArn`: `str`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ErrorMessage`: `str`
 - `FailureTime`: `datetime`
 - `OperationName`: `str`
@@ -625,14 +631,15 @@ Optional fields:
 - `ProductSKU`: `str`
 - `Issuer`: [IssuerDetailsTypeDef](./type_defs.md#issuerdetailstypedef)
 - `HomeRegion`: `str`
-- `Status`: [LicenseStatus](./literals.md#licensestatus)
+- `Status`: [LicenseStatusType](./literals.md#licensestatustype)
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `Beneficiary`: `str`
 - `Entitlements`:
   `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `ConsumptionConfiguration`:
   [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
-- `LicenseMetadata`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+- `LicenseMetadata`:
+  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `CreateTime`: `str`
 - `Version`: `str`
 
@@ -804,7 +811,7 @@ from mypy_boto3_license_manager.type_defs import ManagedResourceSummaryTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `AssociationCount`: `int`
 
 ## MetadataTypeDef
@@ -885,9 +892,9 @@ from mypy_boto3_license_manager.type_defs import ReceivedMetadataTypeDef
 
 Optional fields:
 
-- `ReceivedStatus`: [ReceivedStatus](./literals.md#receivedstatus)
+- `ReceivedStatus`: [ReceivedStatusType](./literals.md#receivedstatustype)
 - `AllowedOperations`:
-  `List`\[[AllowedOperation](./literals.md#allowedoperation)\]
+  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 
 ## RejectGrantResponseTypeDef
 
@@ -898,7 +905,7 @@ from mypy_boto3_license_manager.type_defs import RejectGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`: [GrantStatus](./literals.md#grantstatus)
+- `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 
 ## ResourceInventoryTypeDef
@@ -910,7 +917,7 @@ from mypy_boto3_license_manager.type_defs import ResourceInventoryTypeDef
 Optional fields:
 
 - `ResourceId`: `str`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceArn`: `str`
 - `Platform`: `str`
 - `PlatformVersion`: `str`

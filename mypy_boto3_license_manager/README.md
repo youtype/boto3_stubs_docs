@@ -3,7 +3,7 @@
 > [Index](..) > LicenseManager
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
@@ -30,74 +30,74 @@ Can be used directly:
 from mypy_boto3_license_manager.client import LicenseManagerClient
 ```
 
-LicenseManagerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_grant](./client.md#accept-grant)
-- [can_paginate](./client.md#can-paginate)
-- [check_in_license](./client.md#check-in-license)
-- [checkout_borrow_license](./client.md#checkout-borrow-license)
-- [checkout_license](./client.md#checkout-license)
-- [create_grant](./client.md#create-grant)
-- [create_grant_version](./client.md#create-grant-version)
-- [create_license](./client.md#create-license)
-- [create_license_configuration](./client.md#create-license-configuration)
-- [create_license_version](./client.md#create-license-version)
-- [create_token](./client.md#create-token)
-- [delete_grant](./client.md#delete-grant)
-- [delete_license](./client.md#delete-license)
-- [delete_license_configuration](./client.md#delete-license-configuration)
-- [delete_token](./client.md#delete-token)
-- [extend_license_consumption](./client.md#extend-license-consumption)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_access_token](./client.md#get-access-token)
-- [get_grant](./client.md#get-grant)
-- [get_license](./client.md#get-license)
-- [get_license_configuration](./client.md#get-license-configuration)
-- [get_license_usage](./client.md#get-license-usage)
-- [get_paginator](./client.md#get-paginator)
-- [get_service_settings](./client.md#get-service-settings)
-- [list_associations_for_license_configuration](./client.md#list-associations-for-license-configuration)
-- [list_distributed_grants](./client.md#list-distributed-grants)
-- [list_failures_for_license_configuration_operations](./client.md#list-failures-for-license-configuration-operations)
-- [list_license_configurations](./client.md#list-license-configurations)
-- [list_license_specifications_for_resource](./client.md#list-license-specifications-for-resource)
-- [list_license_versions](./client.md#list-license-versions)
-- [list_licenses](./client.md#list-licenses)
-- [list_received_grants](./client.md#list-received-grants)
-- [list_received_licenses](./client.md#list-received-licenses)
-- [list_resource_inventory](./client.md#list-resource-inventory)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_tokens](./client.md#list-tokens)
-- [list_usage_for_license_configuration](./client.md#list-usage-for-license-configuration)
-- [reject_grant](./client.md#reject-grant)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_license_configuration](./client.md#update-license-configuration)
-- [update_license_specifications_for_resource](./client.md#update-license-specifications-for-resource)
-- [update_service_settings](./client.md#update-service-settings)
+- [accept_grant](./client.md#accept_grant)
+- [can_paginate](./client.md#can_paginate)
+- [check_in_license](./client.md#check_in_license)
+- [checkout_borrow_license](./client.md#checkout_borrow_license)
+- [checkout_license](./client.md#checkout_license)
+- [create_grant](./client.md#create_grant)
+- [create_grant_version](./client.md#create_grant_version)
+- [create_license](./client.md#create_license)
+- [create_license_configuration](./client.md#create_license_configuration)
+- [create_license_version](./client.md#create_license_version)
+- [create_token](./client.md#create_token)
+- [delete_grant](./client.md#delete_grant)
+- [delete_license](./client.md#delete_license)
+- [delete_license_configuration](./client.md#delete_license_configuration)
+- [delete_token](./client.md#delete_token)
+- [extend_license_consumption](./client.md#extend_license_consumption)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_access_token](./client.md#get_access_token)
+- [get_grant](./client.md#get_grant)
+- [get_license](./client.md#get_license)
+- [get_license_configuration](./client.md#get_license_configuration)
+- [get_license_usage](./client.md#get_license_usage)
+- [get_paginator](./client.md#get_paginator)
+- [get_service_settings](./client.md#get_service_settings)
+- [list_associations_for_license_configuration](./client.md#list_associations_for_license_configuration)
+- [list_distributed_grants](./client.md#list_distributed_grants)
+- [list_failures_for_license_configuration_operations](./client.md#list_failures_for_license_configuration_operations)
+- [list_license_configurations](./client.md#list_license_configurations)
+- [list_license_specifications_for_resource](./client.md#list_license_specifications_for_resource)
+- [list_license_versions](./client.md#list_license_versions)
+- [list_licenses](./client.md#list_licenses)
+- [list_received_grants](./client.md#list_received_grants)
+- [list_received_licenses](./client.md#list_received_licenses)
+- [list_resource_inventory](./client.md#list_resource_inventory)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_tokens](./client.md#list_tokens)
+- [list_usage_for_license_configuration](./client.md#list_usage_for_license_configuration)
+- [reject_grant](./client.md#reject_grant)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_license_configuration](./client.md#update_license_configuration)
+- [update_license_specifications_for_resource](./client.md#update_license_specifications_for_resource)
+- [update_service_settings](./client.md#update_service_settings)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AuthorizationException](./client.md#authorizationexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [EntitlementNotAllowedException](./client.md#entitlementnotallowedexception)
-- [FailedDependencyException](./client.md#faileddependencyexception)
-- [FilterLimitExceededException](./client.md#filterlimitexceededexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [InvalidResourceStateException](./client.md#invalidresourcestateexception)
-- [LicenseUsageException](./client.md#licenseusageexception)
-- [NoEntitlementsAllowedException](./client.md#noentitlementsallowedexception)
-- [RateLimitExceededException](./client.md#ratelimitexceededexception)
-- [RedirectException](./client.md#redirectexception)
-- [ResourceLimitExceededException](./client.md#resourcelimitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServerInternalException](./client.md#serverinternalexception)
-- [UnsupportedDigitalSignatureMethodException](./client.md#unsupporteddigitalsignaturemethodexception)
-- [ValidationException](./client.md#validationexception)
+LicenseManagerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AuthorizationException
+- ClientError
+- ConflictException
+- EntitlementNotAllowedException
+- FailedDependencyException
+- FilterLimitExceededException
+- InvalidParameterValueException
+- InvalidResourceStateException
+- LicenseUsageException
+- NoEntitlementsAllowedException
+- RateLimitExceededException
+- RedirectException
+- ResourceLimitExceededException
+- ResourceNotFoundException
+- ServerInternalException
+- UnsupportedDigitalSignatureMethodException
+- ValidationException
 
 ## Paginators
 
@@ -123,29 +123,29 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.literals import AllowedOperation, ...
+from mypy_boto3_license_manager.literals import AllowedOperationType, ...
 ```
 
-- [AllowedOperation](./literals.md#allowedoperation)
-- [CheckoutType](./literals.md#checkouttype)
-- [DigitalSignatureMethod](./literals.md#digitalsignaturemethod)
-- [EntitlementDataUnit](./literals.md#entitlementdataunit)
-- [EntitlementUnit](./literals.md#entitlementunit)
-- [GrantStatus](./literals.md#grantstatus)
-- [InventoryFilterCondition](./literals.md#inventoryfiltercondition)
-- [LicenseConfigurationStatus](./literals.md#licenseconfigurationstatus)
-- [LicenseCountingType](./literals.md#licensecountingtype)
-- [LicenseDeletionStatus](./literals.md#licensedeletionstatus)
-- [LicenseStatus](./literals.md#licensestatus)
+- [AllowedOperationType](./literals.md#allowedoperationtype)
+- [CheckoutTypeType](./literals.md#checkouttypetype)
+- [DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype)
+- [EntitlementDataUnitType](./literals.md#entitlementdataunittype)
+- [EntitlementUnitType](./literals.md#entitlementunittype)
+- [GrantStatusType](./literals.md#grantstatustype)
+- [InventoryFilterConditionType](./literals.md#inventoryfilterconditiontype)
+- [LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype)
+- [LicenseCountingTypeType](./literals.md#licensecountingtypetype)
+- [LicenseDeletionStatusType](./literals.md#licensedeletionstatustype)
+- [LicenseStatusType](./literals.md#licensestatustype)
 - [ListAssociationsForLicenseConfigurationPaginatorName](./literals.md#listassociationsforlicenseconfigurationpaginatorname)
 - [ListLicenseConfigurationsPaginatorName](./literals.md#listlicenseconfigurationspaginatorname)
 - [ListLicenseSpecificationsForResourcePaginatorName](./literals.md#listlicensespecificationsforresourcepaginatorname)
 - [ListResourceInventoryPaginatorName](./literals.md#listresourceinventorypaginatorname)
 - [ListUsageForLicenseConfigurationPaginatorName](./literals.md#listusageforlicenseconfigurationpaginatorname)
-- [ReceivedStatus](./literals.md#receivedstatus)
-- [RenewType](./literals.md#renewtype)
-- [ResourceType](./literals.md#resourcetype)
-- [TokenType](./literals.md#tokentype)
+- [ReceivedStatusType](./literals.md#receivedstatustype)
+- [RenewTypeType](./literals.md#renewtypetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [TokenTypeType](./literals.md#tokentypetype)
 
 ## Typed dictionaries
 

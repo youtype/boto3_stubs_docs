@@ -3,32 +3,32 @@
 > [Index](..) > [Glacier](.) > Literals
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [Literals for boto3 Glacier module](#literals-for-boto3-glacier-module)
-  - [ActionCode](#actioncode)
-  - [CannedACL](#cannedacl)
-  - [EncryptionType](#encryptiontype)
-  - [ExpressionType](#expressiontype)
-  - [FileHeaderInfo](#fileheaderinfo)
+  - [ActionCodeType](#actioncodetype)
+  - [CannedACLType](#cannedacltype)
+  - [EncryptionTypeType](#encryptiontypetype)
+  - [ExpressionTypeType](#expressiontypetype)
+  - [FileHeaderInfoType](#fileheaderinfotype)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ListMultipartUploadsPaginatorName](#listmultipartuploadspaginatorname)
   - [ListPartsPaginatorName](#listpartspaginatorname)
   - [ListVaultsPaginatorName](#listvaultspaginatorname)
-  - [Permission](#permission)
-  - [QuoteFields](#quotefields)
-  - [StatusCode](#statuscode)
-  - [StorageClass](#storageclass)
+  - [PermissionType](#permissiontype)
+  - [QuoteFieldsType](#quotefieldstype)
+  - [StatusCodeType](#statuscodetype)
+  - [StorageClassType](#storageclasstype)
   - [TypeType](#typetype)
   - [VaultExistsWaiterName](#vaultexistswaitername)
   - [VaultNotExistsWaiterName](#vaultnotexistswaitername)
 
-## ActionCode
+## ActionCodeType
 
 ```python
-from mypy_boto3_glacier.literals import ActionCode
+from mypy_boto3_glacier.literals import ActionCodeType
 ```
 
 Values:
@@ -37,10 +37,10 @@ Values:
 - `InventoryRetrieval`
 - `Select`
 
-## CannedACL
+## CannedACLType
 
 ```python
-from mypy_boto3_glacier.literals import CannedACL
+from mypy_boto3_glacier.literals import CannedACLType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `public-read`
 - `public-read-write`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_glacier.literals import EncryptionType
+from mypy_boto3_glacier.literals import EncryptionTypeType
 ```
 
 Values:
@@ -64,20 +64,20 @@ Values:
 - `AES256`
 - `aws:kms`
 
-## ExpressionType
+## ExpressionTypeType
 
 ```python
-from mypy_boto3_glacier.literals import ExpressionType
+from mypy_boto3_glacier.literals import ExpressionTypeType
 ```
 
 Values:
 
 - `SQL`
 
-## FileHeaderInfo
+## FileHeaderInfoType
 
 ```python
-from mypy_boto3_glacier.literals import FileHeaderInfo
+from mypy_boto3_glacier.literals import FileHeaderInfoType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 
 - `list_vaults`
 
-## Permission
+## PermissionType
 
 ```python
-from mypy_boto3_glacier.literals import Permission
+from mypy_boto3_glacier.literals import PermissionType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `WRITE`
 - `WRITE_ACP`
 
-## QuoteFields
+## QuoteFieldsType
 
 ```python
-from mypy_boto3_glacier.literals import QuoteFields
+from mypy_boto3_glacier.literals import QuoteFieldsType
 ```
 
 Values:
@@ -151,10 +151,10 @@ Values:
 - `ALWAYS`
 - `ASNEEDED`
 
-## StatusCode
+## StatusCodeType
 
 ```python
-from mypy_boto3_glacier.literals import StatusCode
+from mypy_boto3_glacier.literals import StatusCodeType
 ```
 
 Values:
@@ -163,10 +163,10 @@ Values:
 - `InProgress`
 - `Succeeded`
 
-## StorageClass
+## StorageClassType
 
 ```python
-from mypy_boto3_glacier.literals import StorageClass
+from mypy_boto3_glacier.literals import StorageClassType
 ```
 
 Values:

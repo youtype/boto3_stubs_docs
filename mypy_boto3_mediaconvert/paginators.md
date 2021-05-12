@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConvert](.) > Paginators
 
 Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module
 [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
@@ -29,11 +29,11 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
+[MediaConvert.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
 
 Arguments for `DescribeEndpointsPaginator.paginate` method:
 
-- `Mode`: [DescribeEndpointsMode](./literals.md#describeendpointsmode)
+- `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -55,13 +55,13 @@ def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListJobTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
+[MediaConvert.Paginator.ListJobTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
 
 Arguments for `ListJobTemplatesPaginator.paginate` method:
 
 - `Category`: `str`
-- `ListBy`: [JobTemplateListBy](./literals.md#jobtemplatelistby)
-- `Order`: [Order](./literals.md#order)
+- `ListBy`: [JobTemplateListByType](./literals.md#jobtemplatelistbytype)
+- `Order`: [OrderType](./literals.md#ordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -82,13 +82,13 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
+[MediaConvert.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 
-- `Order`: [Order](./literals.md#order)
+- `Order`: [OrderType](./literals.md#ordertype)
 - `Queue`: `str`
-- `Status`: [JobStatus](./literals.md#jobstatus)
+- `Status`: [JobStatusType](./literals.md#jobstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -110,13 +110,13 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
+[MediaConvert.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
 
 Arguments for `ListPresetsPaginator.paginate` method:
 
 - `Category`: `str`
-- `ListBy`: [PresetListBy](./literals.md#presetlistby)
-- `Order`: [Order](./literals.md#order)
+- `ListBy`: [PresetListByType](./literals.md#presetlistbytype)
+- `Order`: [OrderType](./literals.md#ordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -138,12 +138,12 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
+[MediaConvert.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
 
 Arguments for `ListQueuesPaginator.paginate` method:
 
-- `ListBy`: [QueueListBy](./literals.md#queuelistby)
-- `Order`: [Order](./literals.md#order)
+- `ListBy`: [QueueListByType](./literals.md#queuelistbytype)
+- `Order`: [OrderType](./literals.md#ordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > IoT1ClickProjects
 
 Auto-generated documentation for
-[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module
 [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
@@ -30,38 +30,38 @@ Can be used directly:
 from mypy_boto3_iot1click_projects.client import IoT1ClickProjectsClient
 ```
 
-IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_device_with_placement](./client.md#associate-device-with-placement)
-- [can_paginate](./client.md#can-paginate)
-- [create_placement](./client.md#create-placement)
-- [create_project](./client.md#create-project)
-- [delete_placement](./client.md#delete-placement)
-- [delete_project](./client.md#delete-project)
-- [describe_placement](./client.md#describe-placement)
-- [describe_project](./client.md#describe-project)
-- [disassociate_device_from_placement](./client.md#disassociate-device-from-placement)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_devices_in_placement](./client.md#get-devices-in-placement)
-- [get_paginator](./client.md#get-paginator)
-- [list_placements](./client.md#list-placements)
-- [list_projects](./client.md#list-projects)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_placement](./client.md#update-placement)
-- [update_project](./client.md#update-project)
+- [associate_device_with_placement](./client.md#associate_device_with_placement)
+- [can_paginate](./client.md#can_paginate)
+- [create_placement](./client.md#create_placement)
+- [create_project](./client.md#create_project)
+- [delete_placement](./client.md#delete_placement)
+- [delete_project](./client.md#delete_project)
+- [describe_placement](./client.md#describe_placement)
+- [describe_project](./client.md#describe_project)
+- [disassociate_device_from_placement](./client.md#disassociate_device_from_placement)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_devices_in_placement](./client.md#get_devices_in_placement)
+- [get_paginator](./client.md#get_paginator)
+- [list_placements](./client.md#list_placements)
+- [list_projects](./client.md#list_projects)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_placement](./client.md#update_placement)
+- [update_project](./client.md#update_project)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceConflictException](./client.md#resourceconflictexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalFailureException
+- InvalidRequestException
+- ResourceConflictException
+- ResourceNotFoundException
+- TooManyRequestsException
 
 ## Paginators
 

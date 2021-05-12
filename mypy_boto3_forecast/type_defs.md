@@ -3,7 +3,7 @@
 > [Index](..) > [ForecastService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService)
 type annotations stubs module
 [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
@@ -93,7 +93,7 @@ Required fields:
 
 Optional fields:
 
-- `ScalingType`: [ScalingType](./literals.md#scalingtype)
+- `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
 
 ## CreateDatasetGroupResponseTypeDef
 
@@ -224,8 +224,8 @@ Optional fields:
 
 - `DatasetArn`: `str`
 - `DatasetName`: `str`
-- `DatasetType`: [DatasetType](./literals.md#datasettype)
-- `Domain`: [Domain](./literals.md#domain)
+- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
@@ -240,7 +240,7 @@ Optional fields:
 - `DatasetGroupName`: `str`
 - `DatasetGroupArn`: `str`
 - `DatasetArns`: `List`\[`str`\]
-- `Domain`: [Domain](./literals.md#domain)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
@@ -280,8 +280,8 @@ Optional fields:
 
 - `DatasetArn`: `str`
 - `DatasetName`: `str`
-- `Domain`: [Domain](./literals.md#domain)
-- `DatasetType`: [DatasetType](./literals.md#datasettype)
+- `Domain`: [DomainType](./literals.md#domaintype)
+- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
 - `DataFrequency`: `str`
 - `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
 - `EncryptionConfig`:
@@ -301,7 +301,8 @@ Optional fields:
 - `ForecastExportJobArn`: `str`
 - `ForecastExportJobName`: `str`
 - `ForecastArn`: `str`
-- `Destination`: [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
 - `Message`: `str`
 - `Status`: `str`
 - `CreationTime`: `datetime`
@@ -337,7 +338,8 @@ Optional fields:
 - `PredictorBacktestExportJobArn`: `str`
 - `PredictorBacktestExportJobName`: `str`
 - `PredictorArn`: `str`
-- `Destination`: [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
 - `Message`: `str`
 - `Status`: `str`
 - `CreationTime`: `datetime`
@@ -450,7 +452,7 @@ from mypy_boto3_forecast.type_defs import FeaturizationMethodTypeDef
 Required fields:
 
 - `FeaturizationMethodName`: `Literal['filling']` (see
-  [FeaturizationMethodName](./literals.md#featurizationmethodname))
+  [FeaturizationMethodNameType](./literals.md#featurizationmethodnametype))
 
 Optional fields:
 
@@ -481,7 +483,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Condition`: [FilterConditionString](./literals.md#filterconditionstring)
+- `Condition`:
+  [FilterConditionStringType](./literals.md#filterconditionstringtype)
 
 ## ForecastExportJobSummaryTypeDef
 
@@ -493,7 +496,8 @@ Optional fields:
 
 - `ForecastExportJobArn`: `str`
 - `ForecastExportJobName`: `str`
-- `Destination`: [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
@@ -567,7 +571,7 @@ Required fields:
 
 Optional fields:
 
-- `ScalingType`: [ScalingType](./literals.md#scalingtype)
+- `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
 
 ## ListDatasetGroupsResponseTypeDef
 
@@ -714,7 +718,8 @@ Optional fields:
 
 - `PredictorBacktestExportJobArn`: `str`
 - `PredictorBacktestExportJobName`: `str`
-- `Destination`: [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
 - `Status`: `str`
 - `Message`: `str`
 - `CreationTime`: `datetime`
@@ -783,7 +788,7 @@ from mypy_boto3_forecast.type_defs import SchemaAttributeTypeDef
 Optional fields:
 
 - `AttributeName`: `str`
-- `AttributeType`: [AttributeType](./literals.md#attributetype)
+- `AttributeType`: [AttributeTypeType](./literals.md#attributetypetype)
 
 ## SchemaTypeDef
 
@@ -870,5 +875,5 @@ Optional fields:
 - `TestWindowStart`: `datetime`
 - `TestWindowEnd`: `datetime`
 - `ItemCount`: `int`
-- `EvaluationType`: [EvaluationType](./literals.md#evaluationtype)
+- `EvaluationType`: [EvaluationTypeType](./literals.md#evaluationtypetype)
 - `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)

@@ -3,7 +3,7 @@
 > [Index](..) > [Lightsail](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
 [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
@@ -248,7 +248,7 @@ from mypy_boto3_lightsail.type_defs import AddOnRequestTypeDef
 Required fields:
 
 - `addOnType`: `Literal['AutoSnapshot']` (see
-  [AddOnType](./literals.md#addontype))
+  [AddOnTypeType](./literals.md#addontypetype))
 
 Optional fields:
 
@@ -280,22 +280,26 @@ Optional fields:
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `supportCode`: `str`
 - `monitoredResourceInfo`:
   [MonitoredResourceInfoTypeDef](./type_defs.md#monitoredresourceinfotypedef)
-- `comparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `comparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `evaluationPeriods`: `int`
 - `period`: `int`
 - `threshold`: `float`
 - `datapointsToAlarm`: `int`
-- `treatMissingData`: [TreatMissingData](./literals.md#treatmissingdata)
-- `statistic`: [MetricStatistic](./literals.md#metricstatistic)
-- `metricName`: [MetricName](./literals.md#metricname)
-- `state`: [AlarmState](./literals.md#alarmstate)
-- `unit`: [MetricUnit](./literals.md#metricunit)
-- `contactProtocols`: `List`\[[ContactProtocol](./literals.md#contactprotocol)\]
-- `notificationTriggers`: `List`\[[AlarmState](./literals.md#alarmstate)\]
+- `treatMissingData`:
+  [TreatMissingDataType](./literals.md#treatmissingdatatype)
+- `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
+- `metricName`: [MetricNameType](./literals.md#metricnametype)
+- `state`: [AlarmStateType](./literals.md#alarmstatetype)
+- `unit`: [MetricUnitType](./literals.md#metricunittype)
+- `contactProtocols`:
+  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+- `notificationTriggers`:
+  `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
 ## AllocateStaticIpResultTypeDef
@@ -389,7 +393,7 @@ Optional fields:
 
 - `date`: `str`
 - `createdAt`: `datetime`
-- `status`: [AutoSnapshotStatus](./literals.md#autosnapshotstatus)
+- `status`: [AutoSnapshotStatusType](./literals.md#autosnapshotstatustype)
 - `fromAttachedDisks`:
   `List`\[[AttachedDiskTypeDef](./type_defs.md#attacheddisktypedef)\]
 
@@ -415,7 +419,7 @@ Optional fields:
 - `blueprintId`: `str`
 - `name`: `str`
 - `group`: `str`
-- `type`: [BlueprintType](./literals.md#blueprinttype)
+- `type`: [BlueprintTypeType](./literals.md#blueprinttypetype)
 - `description`: `str`
 - `isActive`: `bool`
 - `minPower`: `int`
@@ -423,7 +427,7 @@ Optional fields:
 - `versionCode`: `str`
 - `productUrl`: `str`
 - `licenseUrl`: `str`
-- `platform`: [InstancePlatform](./literals.md#instanceplatform)
+- `platform`: [InstancePlatformType](./literals.md#instanceplatformtype)
 
 ## BundleTypeDef
 
@@ -444,7 +448,7 @@ Optional fields:
 - `ramSizeInGb`: `float`
 - `transferPerMonthInGb`: `int`
 - `supportedPlatforms`:
-  `List`\[[InstancePlatform](./literals.md#instanceplatform)\]
+  `List`\[[InstancePlatformType](./literals.md#instanceplatformtype)\]
 
 ## CacheBehaviorPerPathTypeDef
 
@@ -455,7 +459,7 @@ from mypy_boto3_lightsail.type_defs import CacheBehaviorPerPathTypeDef
 Optional fields:
 
 - `path`: `str`
-- `behavior`: [BehaviorEnum](./literals.md#behaviorenum)
+- `behavior`: [BehaviorEnumType](./literals.md#behaviorenumtype)
 
 ## CacheBehaviorTypeDef
 
@@ -465,7 +469,7 @@ from mypy_boto3_lightsail.type_defs import CacheBehaviorTypeDef
 
 Optional fields:
 
-- `behavior`: [BehaviorEnum](./literals.md#behaviorenum)
+- `behavior`: [BehaviorEnumType](./literals.md#behaviorenumtype)
 
 ## CacheSettingsTypeDef
 
@@ -510,7 +514,7 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `domainName`: `str`
-- `status`: [CertificateStatus](./literals.md#certificatestatus)
+- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 - `serialNumber`: `str`
 - `subjectAlternativeNames`: `List`\[`str`\]
 - `domainValidationRecords`:
@@ -524,7 +528,8 @@ Optional fields:
 - `notBefore`: `datetime`
 - `notAfter`: `datetime`
 - `eligibleToRenew`: `str`
-- `renewalSummary`: [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
+- `renewalSummary`:
+  [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
 - `revokedAt`: `datetime`
 - `revocationReason`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -549,7 +554,7 @@ from mypy_boto3_lightsail.type_defs import CloudFormationStackRecordSourceInfoTy
 Optional fields:
 
 - `resourceType`: `Literal['ExportSnapshotRecord']` (see
-  [CloudFormationStackRecordSourceType](./literals.md#cloudformationstackrecordsourcetype))
+  [CloudFormationStackRecordSourceTypeType](./literals.md#cloudformationstackrecordsourcetypetype))
 - `name`: `str`
 - `arn`: `str`
 
@@ -565,8 +570,8 @@ Optional fields:
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `state`: [RecordState](./literals.md#recordstate)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `state`: [RecordStateType](./literals.md#recordstatetype)
 - `sourceInfo`:
   `List`\[[CloudFormationStackRecordSourceInfoTypeDef](./type_defs.md#cloudformationstackrecordsourceinfotypedef)\]
 - `destinationInfo`:
@@ -581,13 +586,13 @@ from mypy_boto3_lightsail.type_defs import ContactMethodTypeDef
 Optional fields:
 
 - `contactEndpoint`: `str`
-- `status`: [ContactMethodStatus](./literals.md#contactmethodstatus)
-- `protocol`: [ContactProtocol](./literals.md#contactprotocol)
+- `status`: [ContactMethodStatusType](./literals.md#contactmethodstatustype)
+- `protocol`: [ContactProtocolType](./literals.md#contactprotocoltype)
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `supportCode`: `str`
 
 ## ContainerImageTypeDef
@@ -625,7 +630,7 @@ Optional fields:
 
 - `version`: `int`
 - `state`:
-  [ContainerServiceDeploymentState](./literals.md#containerservicedeploymentstate)
+  [ContainerServiceDeploymentStateType](./literals.md#containerservicedeploymentstatetype)
 - `containers`: `Dict`\[`str`,
   [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
@@ -708,7 +713,7 @@ from mypy_boto3_lightsail.type_defs import ContainerServiceStateDetailTypeDef
 Optional fields:
 
 - `code`:
-  [ContainerServiceStateDetailCode](./literals.md#containerservicestatedetailcode)
+  [ContainerServiceStateDetailCodeType](./literals.md#containerservicestatedetailcodetype)
 - `message`: `str`
 
 ## ContainerServiceTypeDef
@@ -723,11 +728,12 @@ Optional fields:
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `power`: [ContainerServicePowerName](./literals.md#containerservicepowername)
+- `power`:
+  [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
 - `powerId`: `str`
-- `state`: [ContainerServiceState](./literals.md#containerservicestate)
+- `state`: [ContainerServiceStateType](./literals.md#containerservicestatetype)
 - `stateDetail`:
   [ContainerServiceStateDetailTypeDef](./type_defs.md#containerservicestatedetailtypedef)
 - `scale`: `int`
@@ -764,7 +770,7 @@ Optional fields:
 - `command`: `List`\[`str`\]
 - `environment`: `Dict`\[`str`, `str`\]
 - `ports`: `Dict`\[`str`,
-  [ContainerServiceProtocol](./literals.md#containerserviceprotocol)\]
+  [ContainerServiceProtocolType](./literals.md#containerserviceprotocoltype)\]
 
 ## CookieObjectTypeDef
 
@@ -774,7 +780,7 @@ from mypy_boto3_lightsail.type_defs import CookieObjectTypeDef
 
 Optional fields:
 
-- `option`: [ForwardValues](./literals.md#forwardvalues)
+- `option`: [ForwardValuesType](./literals.md#forwardvaluestype)
 - `cookiesAllowList`: `List`\[`str`\]
 
 ## CopySnapshotResultTypeDef
@@ -1285,10 +1291,10 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `sizeInGb`: `int`
-- `state`: [DiskSnapshotState](./literals.md#disksnapshotstate)
+- `state`: [DiskSnapshotStateType](./literals.md#disksnapshotstatetype)
 - `progress`: `str`
 - `fromDiskName`: `str`
 - `fromDiskArn`: `str`
@@ -1309,14 +1315,14 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `addOns`: `List`\[[AddOnTypeDef](./type_defs.md#addontypedef)\]
 - `sizeInGb`: `int`
 - `isSystemDisk`: `bool`
 - `iops`: `int`
 - `path`: `str`
-- `state`: [DiskState](./literals.md#diskstate)
+- `state`: [DiskStateType](./literals.md#diskstatetype)
 - `attachedTo`: `str`
 - `isAttached`: `bool`
 - `attachmentState`: `str`
@@ -1364,7 +1370,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `domainEntries`:
   `List`\[[DomainEntryTypeDef](./type_defs.md#domainentrytypedef)\]
@@ -1378,7 +1384,8 @@ from mypy_boto3_lightsail.type_defs import DomainValidationRecordTypeDef
 Optional fields:
 
 - `domainName`: `str`
-- `resourceRecord`: [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
+- `resourceRecord`:
+  [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
 
 ## DownloadDefaultKeyPairResultTypeDef
 
@@ -1426,7 +1433,7 @@ from mypy_boto3_lightsail.type_defs import ExportSnapshotRecordSourceInfoTypeDef
 Optional fields:
 
 - `resourceType`:
-  [ExportSnapshotRecordSourceType](./literals.md#exportsnapshotrecordsourcetype)
+  [ExportSnapshotRecordSourceTypeType](./literals.md#exportsnapshotrecordsourcetypetype)
 - `createdAt`: `datetime`
 - `name`: `str`
 - `arn`: `str`
@@ -1449,8 +1456,8 @@ Optional fields:
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `state`: [RecordState](./literals.md#recordstate)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `state`: [RecordStateType](./literals.md#recordstatetype)
 - `sourceInfo`:
   [ExportSnapshotRecordSourceInfoTypeDef](./type_defs.md#exportsnapshotrecordsourceinfotypedef)
 - `destinationInfo`:
@@ -1497,7 +1504,7 @@ from mypy_boto3_lightsail.type_defs import GetAutoSnapshotsResultTypeDef
 Optional fields:
 
 - `resourceName`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `autoSnapshots`:
   `List`\[[AutoSnapshotDetailsTypeDef](./type_defs.md#autosnapshotdetailstypedef)\]
 
@@ -1610,7 +1617,7 @@ from mypy_boto3_lightsail.type_defs import GetContainerServiceMetricDataResultTy
 Optional fields:
 
 - `metricName`:
-  [ContainerServiceMetricName](./literals.md#containerservicemetricname)
+  [ContainerServiceMetricNameType](./literals.md#containerservicemetricnametype)
 - `metricData`:
   `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
@@ -1698,7 +1705,8 @@ from mypy_boto3_lightsail.type_defs import GetDistributionMetricDataResultTypeDe
 
 Optional fields:
 
-- `metricName`: [DistributionMetricName](./literals.md#distributionmetricname)
+- `metricName`:
+  [DistributionMetricNameType](./literals.md#distributionmetricnametype)
 - `metricData`:
   `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
@@ -1766,7 +1774,7 @@ from mypy_boto3_lightsail.type_defs import GetInstanceMetricDataResultTypeDef
 
 Optional fields:
 
-- `metricName`: [InstanceMetricName](./literals.md#instancemetricname)
+- `metricName`: [InstanceMetricNameType](./literals.md#instancemetricnametype)
 - `metricData`:
   `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
@@ -1864,7 +1872,8 @@ from mypy_boto3_lightsail.type_defs import GetLoadBalancerMetricDataResultTypeDe
 
 Optional fields:
 
-- `metricName`: [LoadBalancerMetricName](./literals.md#loadbalancermetricname)
+- `metricName`:
+  [LoadBalancerMetricNameType](./literals.md#loadbalancermetricnametype)
 - `metricData`:
   `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
@@ -2023,7 +2032,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMetricDataResult
 Optional fields:
 
 - `metricName`:
-  [RelationalDatabaseMetricName](./literals.md#relationaldatabasemetricname)
+  [RelationalDatabaseMetricNameType](./literals.md#relationaldatabasemetricnametype)
 - `metricData`:
   `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
@@ -2114,8 +2123,8 @@ from mypy_boto3_lightsail.type_defs import HeaderObjectTypeDef
 
 Optional fields:
 
-- `option`: [ForwardValues](./literals.md#forwardvalues)
-- `headersAllowList`: `List`\[[HeaderEnum](./literals.md#headerenum)\]
+- `option`: [ForwardValuesType](./literals.md#forwardvaluestype)
+- `headersAllowList`: `List`\[[HeaderEnumType](./literals.md#headerenumtype)\]
 
 ## HostKeyAttributesTypeDef
 
@@ -2152,9 +2161,9 @@ from mypy_boto3_lightsail.type_defs import InputOriginTypeDef
 Optional fields:
 
 - `name`: `str`
-- `regionName`: [RegionName](./literals.md#regionname)
+- `regionName`: [RegionNameType](./literals.md#regionnametype)
 - `protocolPolicy`:
-  [OriginProtocolPolicyEnum](./literals.md#originprotocolpolicyenum)
+  [OriginProtocolPolicyEnumType](./literals.md#originprotocolpolicyenumtype)
 
 ## InstanceAccessDetailsTypeDef
 
@@ -2170,7 +2179,8 @@ Optional fields:
 - `password`: `str`
 - `passwordData`: [PasswordDataTypeDef](./type_defs.md#passworddatatypedef)
 - `privateKey`: `str`
-- `protocol`: [InstanceAccessProtocol](./literals.md#instanceaccessprotocol)
+- `protocol`:
+  [InstanceAccessProtocolType](./literals.md#instanceaccessprotocoltype)
 - `instanceName`: `str`
 - `username`: `str`
 - `hostKeys`:
@@ -2186,7 +2196,8 @@ Required fields:
 
 - `sourceName`: `str`
 - `instanceType`: `str`
-- `portInfoSource`: [PortInfoSourceType](./literals.md#portinfosourcetype)
+- `portInfoSource`:
+  [PortInfoSourceTypeType](./literals.md#portinfosourcetypetype)
 - `availabilityZone`: `str`
 
 Optional fields:
@@ -2214,9 +2225,10 @@ from mypy_boto3_lightsail.type_defs import InstanceHealthSummaryTypeDef
 Optional fields:
 
 - `instanceName`: `str`
-- `instanceHealth`: [InstanceHealthState](./literals.md#instancehealthstate)
+- `instanceHealth`:
+  [InstanceHealthStateType](./literals.md#instancehealthstatetype)
 - `instanceHealthReason`:
-  [InstanceHealthReason](./literals.md#instancehealthreason)
+  [InstanceHealthReasonType](./literals.md#instancehealthreasontype)
 
 ## InstanceNetworkingTypeDef
 
@@ -2241,11 +2253,11 @@ Optional fields:
 
 - `fromPort`: `int`
 - `toPort`: `int`
-- `protocol`: [NetworkProtocol](./literals.md#networkprotocol)
+- `protocol`: [NetworkProtocolType](./literals.md#networkprotocoltype)
 - `accessFrom`: `str`
-- `accessType`: [PortAccessType](./literals.md#portaccesstype)
+- `accessType`: [PortAccessTypeType](./literals.md#portaccesstypetype)
 - `commonName`: `str`
-- `accessDirection`: [AccessDirection](./literals.md#accessdirection)
+- `accessDirection`: [AccessDirectionType](./literals.md#accessdirectiontype)
 - `cidrs`: `List`\[`str`\]
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
@@ -2260,8 +2272,8 @@ Optional fields:
 
 - `fromPort`: `int`
 - `toPort`: `int`
-- `protocol`: [NetworkProtocol](./literals.md#networkprotocol)
-- `state`: [PortState](./literals.md#portstate)
+- `protocol`: [NetworkProtocolType](./literals.md#networkprotocoltype)
+- `state`: [PortStateType](./literals.md#portstatetype)
 - `cidrs`: `List`\[`str`\]
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
@@ -2291,9 +2303,9 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `state`: [InstanceSnapshotState](./literals.md#instancesnapshotstate)
+- `state`: [InstanceSnapshotStateType](./literals.md#instancesnapshotstatetype)
 - `progress`: `str`
 - `fromAttachedDisks`: `List`\[[DiskTypeDef](./type_defs.md#disktypedef)\]
 - `fromInstanceName`: `str`
@@ -2327,7 +2339,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `blueprintId`: `str`
 - `blueprintName`: `str`
@@ -2337,7 +2349,7 @@ Optional fields:
 - `privateIpAddress`: `str`
 - `publicIpAddress`: `str`
 - `ipv6Addresses`: `List`\[`str`\]
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `hardware`: [InstanceHardwareTypeDef](./type_defs.md#instancehardwaretypedef)
 - `networking`:
   [InstanceNetworkingTypeDef](./type_defs.md#instancenetworkingtypedef)
@@ -2368,7 +2380,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `fingerprint`: `str`
 
@@ -2385,7 +2397,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `alternativeDomainNames`: `List`\[`str`\]
 - `status`: `str`
 - `isEnabled`: `bool`
@@ -2401,7 +2413,7 @@ Optional fields:
 - `cacheBehaviors`:
   `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `ableToUpdateBundle`: `bool`
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LoadBalancerTlsCertificateDomainValidationOptionTypeDef
@@ -2414,7 +2426,7 @@ Optional fields:
 
 - `domainName`: `str`
 - `validationStatus`:
-  [LoadBalancerTlsCertificateDomainStatus](./literals.md#loadbalancertlscertificatedomainstatus)
+  [LoadBalancerTlsCertificateDomainStatusType](./literals.md#loadbalancertlscertificatedomainstatustype)
 
 ## LoadBalancerTlsCertificateDomainValidationRecordTypeDef
 
@@ -2428,7 +2440,7 @@ Optional fields:
 - `type`: `str`
 - `value`: `str`
 - `validationStatus`:
-  [LoadBalancerTlsCertificateDomainStatus](./literals.md#loadbalancertlscertificatedomainstatus)
+  [LoadBalancerTlsCertificateDomainStatusType](./literals.md#loadbalancertlscertificatedomainstatustype)
 - `domainName`: `str`
 
 ## LoadBalancerTlsCertificateRenewalSummaryTypeDef
@@ -2440,7 +2452,7 @@ from mypy_boto3_lightsail.type_defs import LoadBalancerTlsCertificateRenewalSumm
 Optional fields:
 
 - `renewalStatus`:
-  [LoadBalancerTlsCertificateRenewalStatus](./literals.md#loadbalancertlscertificaterenewalstatus)
+  [LoadBalancerTlsCertificateRenewalStatusType](./literals.md#loadbalancertlscertificaterenewalstatustype)
 - `domainValidationOptions`:
   `List`\[[LoadBalancerTlsCertificateDomainValidationOptionTypeDef](./type_defs.md#loadbalancertlscertificatedomainvalidationoptiontypedef)\]
 
@@ -2468,17 +2480,17 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `loadBalancerName`: `str`
 - `isAttached`: `bool`
 - `status`:
-  [LoadBalancerTlsCertificateStatus](./literals.md#loadbalancertlscertificatestatus)
+  [LoadBalancerTlsCertificateStatusType](./literals.md#loadbalancertlscertificatestatustype)
 - `domainName`: `str`
 - `domainValidationRecords`:
   `List`\[[LoadBalancerTlsCertificateDomainValidationRecordTypeDef](./type_defs.md#loadbalancertlscertificatedomainvalidationrecordtypedef)\]
 - `failureReason`:
-  [LoadBalancerTlsCertificateFailureReason](./literals.md#loadbalancertlscertificatefailurereason)
+  [LoadBalancerTlsCertificateFailureReasonType](./literals.md#loadbalancertlscertificatefailurereasontype)
 - `issuedAt`: `datetime`
 - `issuer`: `str`
 - `keyAlgorithm`: `str`
@@ -2487,7 +2499,7 @@ Optional fields:
 - `renewalSummary`:
   [LoadBalancerTlsCertificateRenewalSummaryTypeDef](./type_defs.md#loadbalancertlscertificaterenewalsummarytypedef)
 - `revocationReason`:
-  [LoadBalancerTlsCertificateRevocationReason](./literals.md#loadbalancertlscertificaterevocationreason)
+  [LoadBalancerTlsCertificateRevocationReasonType](./literals.md#loadbalancertlscertificaterevocationreasontype)
 - `revokedAt`: `datetime`
 - `serial`: `str`
 - `signatureAlgorithm`: `str`
@@ -2507,11 +2519,12 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `dnsName`: `str`
-- `state`: [LoadBalancerState](./literals.md#loadbalancerstate)
-- `protocol`: [LoadBalancerProtocol](./literals.md#loadbalancerprotocol)
+- `state`: [LoadBalancerStateType](./literals.md#loadbalancerstatetype)
+- `protocol`:
+  [LoadBalancerProtocolType](./literals.md#loadbalancerprotocoltype)
 - `publicPorts`: `List`\[`int`\]
 - `healthCheckPath`: `str`
 - `instancePort`: `int`
@@ -2520,9 +2533,9 @@ Optional fields:
 - `tlsCertificateSummaries`:
   `List`\[[LoadBalancerTlsCertificateSummaryTypeDef](./type_defs.md#loadbalancertlscertificatesummarytypedef)\]
 - `configurationOptions`:
-  `Dict`\[[LoadBalancerAttributeName](./literals.md#loadbalancerattributename),
+  `Dict`\[[LoadBalancerAttributeNameType](./literals.md#loadbalancerattributenametype),
   `str`\]
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 ## LogEventTypeDef
 
@@ -2549,7 +2562,7 @@ Optional fields:
 - `sampleCount`: `float`
 - `sum`: `float`
 - `timestamp`: `datetime`
-- `unit`: [MetricUnit](./literals.md#metricunit)
+- `unit`: [MetricUnitType](./literals.md#metricunittype)
 
 ## MonitoredResourceInfoTypeDef
 
@@ -2561,7 +2574,7 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 ## MonthlyTransferTypeDef
 
@@ -2593,13 +2606,13 @@ Optional fields:
 
 - `id`: `str`
 - `resourceName`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
 - `isTerminal`: `bool`
 - `operationDetails`: `str`
-- `operationType`: [OperationType](./literals.md#operationtype)
-- `status`: [OperationStatus](./literals.md#operationstatus)
+- `operationType`: [OperationTypeType](./literals.md#operationtypetype)
+- `status`: [OperationStatusType](./literals.md#operationstatustype)
 - `statusChangedAt`: `datetime`
 - `errorCode`: `str`
 - `errorDetails`: `str`
@@ -2613,10 +2626,10 @@ from mypy_boto3_lightsail.type_defs import OriginTypeDef
 Optional fields:
 
 - `name`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `regionName`: [RegionName](./literals.md#regionname)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `regionName`: [RegionNameType](./literals.md#regionnametype)
 - `protocolPolicy`:
-  [OriginProtocolPolicyEnum](./literals.md#originprotocolpolicyenum)
+  [OriginProtocolPolicyEnumType](./literals.md#originprotocolpolicyenumtype)
 
 ## PaginatorConfigTypeDef
 
@@ -2685,7 +2698,7 @@ Optional fields:
 
 - `fromPort`: `int`
 - `toPort`: `int`
-- `protocol`: [NetworkProtocol](./literals.md#networkprotocol)
+- `protocol`: [NetworkProtocolType](./literals.md#networkprotocoltype)
 - `cidrs`: `List`\[`str`\]
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
@@ -2752,7 +2765,7 @@ Optional fields:
 - `continentCode`: `str`
 - `description`: `str`
 - `displayName`: `str`
-- `name`: [RegionName](./literals.md#regionname)
+- `name`: [RegionNameType](./literals.md#regionnametype)
 - `availabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `relationalDatabaseAvailabilityZones`:
@@ -2766,7 +2779,8 @@ from mypy_boto3_lightsail.type_defs import RegisterContainerImageResultTypeDef
 
 Optional fields:
 
-- `containerImage`: [ContainerImageTypeDef](./type_defs.md#containerimagetypedef)
+- `containerImage`:
+  [ContainerImageTypeDef](./type_defs.md#containerimagetypedef)
 
 ## RelationalDatabaseBlueprintTypeDef
 
@@ -2778,7 +2792,7 @@ Optional fields:
 
 - `blueprintId`: `str`
 - `engine`: `Literal['mysql']` (see
-  [RelationalDatabaseEngine](./literals.md#relationaldatabaseengine))
+  [RelationalDatabaseEngineType](./literals.md#relationaldatabaseenginetype))
 - `engineVersion`: `str`
 - `engineDescription`: `str`
 - `engineVersionDescription`: `str`
@@ -2868,7 +2882,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `engine`: `str`
 - `engineVersion`: `str`
@@ -2892,7 +2906,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `relationalDatabaseBlueprintId`: `str`
 - `relationalDatabaseBundleId`: `str`
@@ -2938,7 +2952,7 @@ Optional fields:
 
 - `domainValidationRecords`:
   `List`\[[DomainValidationRecordTypeDef](./type_defs.md#domainvalidationrecordtypedef)\]
-- `renewalStatus`: [RenewalStatus](./literals.md#renewalstatus)
+- `renewalStatus`: [RenewalStatusType](./literals.md#renewalstatustype)
 - `renewalStatusReason`: `str`
 - `updatedAt`: `datetime`
 
@@ -2963,7 +2977,7 @@ from mypy_boto3_lightsail.type_defs import ResourceLocationTypeDef
 Optional fields:
 
 - `availabilityZone`: `str`
-- `regionName`: [RegionName](./literals.md#regionname)
+- `regionName`: [RegionNameType](./literals.md#regionnametype)
 
 ## ResourceRecordTypeDef
 
@@ -3030,7 +3044,7 @@ Optional fields:
 - `supportCode`: `str`
 - `createdAt`: `datetime`
 - `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ipAddress`: `str`
 - `attachedTo`: `str`
 - `isAttached`: `bool`

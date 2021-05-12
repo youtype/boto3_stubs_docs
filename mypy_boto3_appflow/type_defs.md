@@ -3,7 +3,7 @@
 > [Index](..) > [Appflow](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow)
 type annotations stubs module
 [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
@@ -120,7 +120,7 @@ from mypy_boto3_appflow.type_defs import AggregationConfigTypeDef
 
 Optional fields:
 
-- `aggregationType`: [AggregationType](./literals.md#aggregationtype)
+- `aggregationType`: [AggregationTypeType](./literals.md#aggregationtypetype)
 
 ## AmplitudeConnectorProfileCredentialsTypeDef
 
@@ -154,12 +154,13 @@ Optional fields:
 - `canUseAsSource`: `bool`
 - `canUseAsDestination`: `bool`
 - `supportedDestinationConnectors`:
-  `List`\[[ConnectorType](./literals.md#connectortype)\]
+  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
 - `supportedSchedulingFrequencies`:
-  `List`\[[ScheduleFrequencyType](./literals.md#schedulefrequencytype)\]
+  `List`\[[ScheduleFrequencyTypeType](./literals.md#schedulefrequencytypetype)\]
 - `isPrivateLinkEnabled`: `bool`
 - `isPrivateLinkEndpointUrlRequired`: `bool`
-- `supportedTriggerTypes`: `List`\[[TriggerType](./literals.md#triggertype)\]
+- `supportedTriggerTypes`:
+  `List`\[[TriggerTypeType](./literals.md#triggertypetype)\]
 - `connectorMetadata`:
   [ConnectorMetadataTypeDef](./type_defs.md#connectormetadatatypedef)
 
@@ -252,27 +253,32 @@ from mypy_boto3_appflow.type_defs import ConnectorOperatorTypeDef
 Optional fields:
 
 - `Amplitude`: `Literal['BETWEEN']` (see
-  [AmplitudeConnectorOperator](./literals.md#amplitudeconnectoroperator))
-- `Datadog`: [DatadogConnectorOperator](./literals.md#datadogconnectoroperator)
+  [AmplitudeConnectorOperatorType](./literals.md#amplitudeconnectoroperatortype))
+- `Datadog`:
+  [DatadogConnectorOperatorType](./literals.md#datadogconnectoroperatortype)
 - `Dynatrace`:
-  [DynatraceConnectorOperator](./literals.md#dynatraceconnectoroperator)
+  [DynatraceConnectorOperatorType](./literals.md#dynatraceconnectoroperatortype)
 - `GoogleAnalytics`:
-  [GoogleAnalyticsConnectorOperator](./literals.md#googleanalyticsconnectoroperator)
+  [GoogleAnalyticsConnectorOperatorType](./literals.md#googleanalyticsconnectoroperatortype)
 - `InforNexus`:
-  [InforNexusConnectorOperator](./literals.md#infornexusconnectoroperator)
-- `Marketo`: [MarketoConnectorOperator](./literals.md#marketoconnectoroperator)
-- `S3`: [S3ConnectorOperator](./literals.md#s3connectoroperator)
+  [InforNexusConnectorOperatorType](./literals.md#infornexusconnectoroperatortype)
+- `Marketo`:
+  [MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype)
+- `S3`: [S3ConnectorOperatorType](./literals.md#s3connectoroperatortype)
 - `Salesforce`:
-  [SalesforceConnectorOperator](./literals.md#salesforceconnectoroperator)
+  [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
 - `ServiceNow`:
-  [ServiceNowConnectorOperator](./literals.md#servicenowconnectoroperator)
+  [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
 - `Singular`:
-  [SingularConnectorOperator](./literals.md#singularconnectoroperator)
-- `Slack`: [SlackConnectorOperator](./literals.md#slackconnectoroperator)
+  [SingularConnectorOperatorType](./literals.md#singularconnectoroperatortype)
+- `Slack`:
+  [SlackConnectorOperatorType](./literals.md#slackconnectoroperatortype)
 - `Trendmicro`:
-  [TrendmicroConnectorOperator](./literals.md#trendmicroconnectoroperator)
-- `Veeva`: [VeevaConnectorOperator](./literals.md#veevaconnectoroperator)
-- `Zendesk`: [ZendeskConnectorOperator](./literals.md#zendeskconnectoroperator)
+  [TrendmicroConnectorOperatorType](./literals.md#trendmicroconnectoroperatortype)
+- `Veeva`:
+  [VeevaConnectorOperatorType](./literals.md#veevaconnectoroperatortype)
+- `Zendesk`:
+  [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
 
 ## ConnectorProfileConfigTypeDef
 
@@ -374,8 +380,8 @@ Optional fields:
 
 - `connectorProfileArn`: `str`
 - `connectorProfileName`: `str`
-- `connectorType`: [ConnectorType](./literals.md#connectortype)
-- `connectionMode`: [ConnectionMode](./literals.md#connectionmode)
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
 - `credentialsArn`: `str`
 - `connectorProfileProperties`:
   [ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef)
@@ -401,7 +407,7 @@ from mypy_boto3_appflow.type_defs import CreateFlowResponseTypeDef
 Optional fields:
 
 - `flowArn`: `str`
-- `flowStatus`: [FlowStatus](./literals.md#flowstatus)
+- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 
 ## CustomerProfilesDestinationPropertiesTypeDef
 
@@ -480,7 +486,7 @@ from mypy_boto3_appflow.type_defs import DescribeConnectorsResponseTypeDef
 Optional fields:
 
 - `connectorConfigurations`:
-  `Dict`\[[ConnectorType](./literals.md#connectortype),
+  `Dict`\[[ConnectorTypeType](./literals.md#connectortypetype),
   [ConnectorConfigurationTypeDef](./type_defs.md#connectorconfigurationtypedef)\]
 - `nextToken`: `str`
 
@@ -508,7 +514,7 @@ Optional fields:
 - `description`: `str`
 - `flowName`: `str`
 - `kmsArn`: `str`
-- `flowStatus`: [FlowStatus](./literals.md#flowstatus)
+- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 - `flowStatusMessage`: `str`
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
@@ -565,7 +571,7 @@ Optional fields:
 - `isUpsertable`: `bool`
 - `isUpdatable`: `bool`
 - `supportedWriteOperations`:
-  `List`\[[WriteOperationType](./literals.md#writeoperationtype)\]
+  `List`\[[WriteOperationTypeType](./literals.md#writeoperationtypetype)\]
 
 ## DestinationFlowConfigTypeDef
 
@@ -575,7 +581,7 @@ from mypy_boto3_appflow.type_defs import DestinationFlowConfigTypeDef
 
 Required fields:
 
-- `connectorType`: [ConnectorType](./literals.md#connectortype)
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `destinationConnectorProperties`:
   [DestinationConnectorPropertiesTypeDef](./type_defs.md#destinationconnectorpropertiestypedef)
 
@@ -661,7 +667,8 @@ Optional fields:
 
 - `mostRecentExecutionMessage`: `str`
 - `mostRecentExecutionTime`: `datetime`
-- `mostRecentExecutionStatus`: [ExecutionStatus](./literals.md#executionstatus)
+- `mostRecentExecutionStatus`:
+  [ExecutionStatusType](./literals.md#executionstatustype)
 
 ## ExecutionRecordTypeDef
 
@@ -672,7 +679,7 @@ from mypy_boto3_appflow.type_defs import ExecutionRecordTypeDef
 Optional fields:
 
 - `executionId`: `str`
-- `executionStatus`: [ExecutionStatus](./literals.md#executionstatus)
+- `executionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
 - `executionResult`:
   [ExecutionResultTypeDef](./type_defs.md#executionresulttypedef)
 - `startedAt`: `datetime`
@@ -702,7 +709,7 @@ from mypy_boto3_appflow.type_defs import FieldTypeDetailsTypeDef
 Required fields:
 
 - `fieldType`: `str`
-- `filterOperators`: `List`\[[Operator](./literals.md#operator)\]
+- `filterOperators`: `List`\[[OperatorType](./literals.md#operatortype)\]
 
 Optional fields:
 
@@ -719,10 +726,11 @@ Optional fields:
 - `flowArn`: `str`
 - `description`: `str`
 - `flowName`: `str`
-- `flowStatus`: [FlowStatus](./literals.md#flowstatus)
-- `sourceConnectorType`: [ConnectorType](./literals.md#connectortype)
-- `destinationConnectorType`: [ConnectorType](./literals.md#connectortype)
-- `triggerType`: [TriggerType](./literals.md#triggertype)
+- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
+- `sourceConnectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+- `destinationConnectorType`:
+  [ConnectorTypeType](./literals.md#connectortypetype)
+- `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `createdBy`: `str`
@@ -928,8 +936,8 @@ from mypy_boto3_appflow.type_defs import PrefixConfigTypeDef
 
 Optional fields:
 
-- `prefixType`: [PrefixType](./literals.md#prefixtype)
-- `prefixFormat`: [PrefixFormat](./literals.md#prefixformat)
+- `prefixType`: [PrefixTypeType](./literals.md#prefixtypetype)
+- `prefixFormat`: [PrefixFormatType](./literals.md#prefixformattype)
 
 ## RedshiftConnectorProfileCredentialsTypeDef
 
@@ -999,7 +1007,7 @@ from mypy_boto3_appflow.type_defs import S3OutputFormatConfigTypeDef
 
 Optional fields:
 
-- `fileType`: [FileType](./literals.md#filetype)
+- `fileType`: [FileTypeType](./literals.md#filetypetype)
 - `prefixConfig`: [PrefixConfigTypeDef](./type_defs.md#prefixconfigtypedef)
 - `aggregationConfig`:
   [AggregationConfigTypeDef](./type_defs.md#aggregationconfigtypedef)
@@ -1058,7 +1066,8 @@ Optional fields:
 - `idFieldNames`: `List`\[`str`\]
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-- `writeOperationType`: [WriteOperationType](./literals.md#writeoperationtype)
+- `writeOperationType`:
+  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
 
 ## SalesforceMetadataTypeDef
 
@@ -1097,7 +1106,7 @@ Required fields:
 
 Optional fields:
 
-- `dataPullMode`: [DataPullMode](./literals.md#datapullmode)
+- `dataPullMode`: [DataPullModeType](./literals.md#datapullmodetype)
 - `scheduleStartTime`: `datetime`
 - `scheduleEndTime`: `datetime`
 - `timezone`: `str`
@@ -1314,7 +1323,7 @@ from mypy_boto3_appflow.type_defs import SourceFlowConfigTypeDef
 
 Required fields:
 
-- `connectorType`: [ConnectorType](./literals.md#connectortype)
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `sourceConnectorProperties`:
   [SourceConnectorPropertiesTypeDef](./type_defs.md#sourceconnectorpropertiestypedef)
 
@@ -1333,7 +1342,7 @@ from mypy_boto3_appflow.type_defs import StartFlowResponseTypeDef
 Optional fields:
 
 - `flowArn`: `str`
-- `flowStatus`: [FlowStatus](./literals.md#flowstatus)
+- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 - `executionId`: `str`
 
 ## StopFlowResponseTypeDef
@@ -1345,7 +1354,7 @@ from mypy_boto3_appflow.type_defs import StopFlowResponseTypeDef
 Optional fields:
 
 - `flowArn`: `str`
-- `flowStatus`: [FlowStatus](./literals.md#flowstatus)
+- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 
 ## SupportedFieldTypeDetailsTypeDef
 
@@ -1366,7 +1375,7 @@ from mypy_boto3_appflow.type_defs import TaskTypeDef
 Required fields:
 
 - `sourceFields`: `List`\[`str`\]
-- `taskType`: [TaskType](./literals.md#tasktype)
+- `taskType`: [TaskTypeType](./literals.md#tasktypetype)
 
 Optional fields:
 
@@ -1374,7 +1383,8 @@ Optional fields:
   [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
 - `destinationField`: `str`
 - `taskProperties`:
-  `Dict`\[[OperatorPropertiesKeys](./literals.md#operatorpropertieskeys), `str`\]
+  `Dict`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
+  `str`\]
 
 ## TrendmicroConnectorProfileCredentialsTypeDef
 
@@ -1404,7 +1414,7 @@ from mypy_boto3_appflow.type_defs import TriggerConfigTypeDef
 
 Required fields:
 
-- `triggerType`: [TriggerType](./literals.md#triggertype)
+- `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
 
 Optional fields:
 
@@ -1440,7 +1450,7 @@ from mypy_boto3_appflow.type_defs import UpdateFlowResponseTypeDef
 
 Optional fields:
 
-- `flowStatus`: [FlowStatus](./literals.md#flowstatus)
+- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 
 ## UpsolverDestinationPropertiesTypeDef
 
@@ -1470,7 +1480,7 @@ Required fields:
 
 Optional fields:
 
-- `fileType`: [FileType](./literals.md#filetype)
+- `fileType`: [FileTypeType](./literals.md#filetypetype)
 - `aggregationConfig`:
   [AggregationConfigTypeDef](./type_defs.md#aggregationconfigtypedef)
 
@@ -1547,7 +1557,8 @@ Optional fields:
 - `idFieldNames`: `List`\[`str`\]
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-- `writeOperationType`: [WriteOperationType](./literals.md#writeoperationtype)
+- `writeOperationType`:
+  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
 
 ## ZendeskMetadataTypeDef
 

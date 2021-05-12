@@ -3,13 +3,13 @@
 > [Index](..) > [TimestreamQuery](.) > Literals
 
 Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Literals for boto3 TimestreamQuery module](#literals-for-boto3-timestreamquery-module)
   - [QueryPaginatorName](#querypaginatorname)
-  - [ScalarType](#scalartype)
+  - [ScalarTypeType](#scalartypetype)
 
 ## QueryPaginatorName
 
@@ -21,10 +21,10 @@ Values:
 
 - `query`
 
-## ScalarType
+## ScalarTypeType
 
 ```python
-from mypy_boto3_timestream_query.literals import ScalarType
+from mypy_boto3_timestream_query.literals import ScalarTypeType
 ```
 
 Values:

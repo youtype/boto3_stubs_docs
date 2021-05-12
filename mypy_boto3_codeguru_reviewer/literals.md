@@ -3,23 +3,23 @@
 > [Index](..) > [CodeGuruReviewer](.) > Literals
 
 Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Literals for boto3 CodeGuruReviewer module](#literals-for-boto3-codegurureviewer-module)
-  - [EncryptionOption](#encryptionoption)
-  - [JobState](#jobstate)
+  - [EncryptionOptionType](#encryptionoptiontype)
+  - [JobStateType](#jobstatetype)
   - [ListRepositoryAssociationsPaginatorName](#listrepositoryassociationspaginatorname)
-  - [ProviderType](#providertype)
-  - [Reaction](#reaction)
-  - [RepositoryAssociationState](#repositoryassociationstate)
+  - [ProviderTypeType](#providertypetype)
+  - [ReactionType](#reactiontype)
+  - [RepositoryAssociationStateType](#repositoryassociationstatetype)
   - [TypeType](#typetype)
 
-## EncryptionOption
+## EncryptionOptionType
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import EncryptionOption
+from mypy_boto3_codeguru_reviewer.literals import EncryptionOptionType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `AWS_OWNED_CMK`
 - `CUSTOMER_MANAGED_CMK`
 
-## JobState
+## JobStateType
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import JobState
+from mypy_boto3_codeguru_reviewer.literals import JobStateType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 
 - `list_repository_associations`
 
-## ProviderType
+## ProviderTypeType
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import ProviderType
+from mypy_boto3_codeguru_reviewer.literals import ProviderTypeType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 - `GitHub`
 - `GitHubEnterpriseServer`
 
-## Reaction
+## ReactionType
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import Reaction
+from mypy_boto3_codeguru_reviewer.literals import ReactionType
 ```
 
 Values:
@@ -74,10 +74,10 @@ Values:
 - `ThumbsDown`
 - `ThumbsUp`
 
-## RepositoryAssociationState
+## RepositoryAssociationStateType
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import RepositoryAssociationState
+from mypy_boto3_codeguru_reviewer.literals import RepositoryAssociationStateType
 ```
 
 Values:

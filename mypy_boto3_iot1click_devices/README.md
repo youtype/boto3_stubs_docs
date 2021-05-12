@@ -3,7 +3,7 @@
 > [Index](..) > IoT1ClickDevicesService
 
 Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
 [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
@@ -30,37 +30,37 @@ Can be used directly:
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 ```
 
-IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [claim_devices_by_claim_code](./client.md#claim-devices-by-claim-code)
-- [describe_device](./client.md#describe-device)
-- [finalize_device_claim](./client.md#finalize-device-claim)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_device_methods](./client.md#get-device-methods)
-- [get_paginator](./client.md#get-paginator)
-- [initiate_device_claim](./client.md#initiate-device-claim)
-- [invoke_device_method](./client.md#invoke-device-method)
-- [list_device_events](./client.md#list-device-events)
-- [list_devices](./client.md#list-devices)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [unclaim_device](./client.md#unclaim-device)
-- [untag_resource](./client.md#untag-resource)
-- [update_device_state](./client.md#update-device-state)
+- [can_paginate](./client.md#can_paginate)
+- [claim_devices_by_claim_code](./client.md#claim_devices_by_claim_code)
+- [describe_device](./client.md#describe_device)
+- [finalize_device_claim](./client.md#finalize_device_claim)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_device_methods](./client.md#get_device_methods)
+- [get_paginator](./client.md#get_paginator)
+- [initiate_device_claim](./client.md#initiate_device_claim)
+- [invoke_device_method](./client.md#invoke_device_method)
+- [list_device_events](./client.md#list_device_events)
+- [list_devices](./client.md#list_devices)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [unclaim_device](./client.md#unclaim_device)
+- [untag_resource](./client.md#untag_resource)
+- [update_device_state](./client.md#update_device_state)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [PreconditionFailedException](./client.md#preconditionfailedexception)
-- [RangeNotSatisfiableException](./client.md#rangenotsatisfiableexception)
-- [ResourceConflictException](./client.md#resourceconflictexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ForbiddenException
+- InternalFailureException
+- InvalidRequestException
+- PreconditionFailedException
+- RangeNotSatisfiableException
+- ResourceConflictException
+- ResourceNotFoundException
 
 ## Paginators
 

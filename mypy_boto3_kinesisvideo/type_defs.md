@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisVideo](.) > Typed dictionaries
 
 Auto-generated documentation for
-[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
+[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
 [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
@@ -40,8 +40,8 @@ Optional fields:
 - `ChannelName`: `str`
 - `ChannelARN`: `str`
 - `ChannelType`: `Literal['SINGLE_MASTER']` (see
-  [ChannelType](./literals.md#channeltype))
-- `ChannelStatus`: [Status](./literals.md#status)
+  [ChannelTypeType](./literals.md#channeltypetype))
+- `ChannelStatus`: [StatusType](./literals.md#statustype)
 - `CreationTime`: `datetime`
 - `SingleMasterConfiguration`:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
@@ -56,7 +56,7 @@ from mypy_boto3_kinesisvideo.type_defs import ChannelNameConditionTypeDef
 Optional fields:
 
 - `ComparisonOperator`: `Literal['BEGINS_WITH']` (see
-  [ComparisonOperator](./literals.md#comparisonoperator))
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype))
 - `ComparisonValue`: `str`
 
 ## CreateSignalingChannelOutputTypeDef
@@ -206,7 +206,7 @@ from mypy_boto3_kinesisvideo.type_defs import ResourceEndpointListItemTypeDef
 
 Optional fields:
 
-- `Protocol`: [ChannelProtocol](./literals.md#channelprotocol)
+- `Protocol`: [ChannelProtocolType](./literals.md#channelprotocoltype)
 - `ResourceEndpoint`: `str`
 
 ## ResponseMetadataTypeDef
@@ -231,8 +231,9 @@ from mypy_boto3_kinesisvideo.type_defs import SingleMasterChannelEndpointConfigu
 
 Optional fields:
 
-- `Protocols`: `List`\[[ChannelProtocol](./literals.md#channelprotocol)\]
-- `Role`: [ChannelRole](./literals.md#channelrole)
+- `Protocols`:
+  `List`\[[ChannelProtocolType](./literals.md#channelprotocoltype)\]
+- `Role`: [ChannelRoleType](./literals.md#channelroletype)
 
 ## SingleMasterConfigurationTypeDef
 
@@ -258,7 +259,7 @@ Optional fields:
 - `MediaType`: `str`
 - `KmsKeyId`: `str`
 - `Version`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 - `CreationTime`: `datetime`
 - `DataRetentionInHours`: `int`
 
@@ -271,7 +272,7 @@ from mypy_boto3_kinesisvideo.type_defs import StreamNameConditionTypeDef
 Optional fields:
 
 - `ComparisonOperator`: `Literal['BEGINS_WITH']` (see
-  [ComparisonOperator](./literals.md#comparisonoperator))
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype))
 - `ComparisonValue`: `str`
 
 ## TagTypeDef

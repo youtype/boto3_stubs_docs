@@ -3,7 +3,7 @@
 > [Index](..) > Glacier
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
@@ -33,59 +33,59 @@ Can be used directly:
 from mypy_boto3_glacier.client import GlacierClient
 ```
 
-GlacierClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [abort_multipart_upload](./client.md#abort-multipart-upload)
-- [abort_vault_lock](./client.md#abort-vault-lock)
-- [add_tags_to_vault](./client.md#add-tags-to-vault)
-- [can_paginate](./client.md#can-paginate)
-- [complete_multipart_upload](./client.md#complete-multipart-upload)
-- [complete_vault_lock](./client.md#complete-vault-lock)
-- [create_vault](./client.md#create-vault)
-- [delete_archive](./client.md#delete-archive)
-- [delete_vault](./client.md#delete-vault)
-- [delete_vault_access_policy](./client.md#delete-vault-access-policy)
-- [delete_vault_notifications](./client.md#delete-vault-notifications)
-- [describe_job](./client.md#describe-job)
-- [describe_vault](./client.md#describe-vault)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_data_retrieval_policy](./client.md#get-data-retrieval-policy)
-- [get_job_output](./client.md#get-job-output)
-- [get_paginator](./client.md#get-paginator)
-- [get_vault_access_policy](./client.md#get-vault-access-policy)
-- [get_vault_lock](./client.md#get-vault-lock)
-- [get_vault_notifications](./client.md#get-vault-notifications)
-- [get_waiter](./client.md#get-waiter)
-- [initiate_job](./client.md#initiate-job)
-- [initiate_multipart_upload](./client.md#initiate-multipart-upload)
-- [initiate_vault_lock](./client.md#initiate-vault-lock)
-- [list_jobs](./client.md#list-jobs)
-- [list_multipart_uploads](./client.md#list-multipart-uploads)
-- [list_parts](./client.md#list-parts)
-- [list_provisioned_capacity](./client.md#list-provisioned-capacity)
-- [list_tags_for_vault](./client.md#list-tags-for-vault)
-- [list_vaults](./client.md#list-vaults)
-- [purchase_provisioned_capacity](./client.md#purchase-provisioned-capacity)
-- [remove_tags_from_vault](./client.md#remove-tags-from-vault)
-- [set_data_retrieval_policy](./client.md#set-data-retrieval-policy)
-- [set_vault_access_policy](./client.md#set-vault-access-policy)
-- [set_vault_notifications](./client.md#set-vault-notifications)
-- [upload_archive](./client.md#upload-archive)
-- [upload_multipart_part](./client.md#upload-multipart-part)
+- [abort_multipart_upload](./client.md#abort_multipart_upload)
+- [abort_vault_lock](./client.md#abort_vault_lock)
+- [add_tags_to_vault](./client.md#add_tags_to_vault)
+- [can_paginate](./client.md#can_paginate)
+- [complete_multipart_upload](./client.md#complete_multipart_upload)
+- [complete_vault_lock](./client.md#complete_vault_lock)
+- [create_vault](./client.md#create_vault)
+- [delete_archive](./client.md#delete_archive)
+- [delete_vault](./client.md#delete_vault)
+- [delete_vault_access_policy](./client.md#delete_vault_access_policy)
+- [delete_vault_notifications](./client.md#delete_vault_notifications)
+- [describe_job](./client.md#describe_job)
+- [describe_vault](./client.md#describe_vault)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_data_retrieval_policy](./client.md#get_data_retrieval_policy)
+- [get_job_output](./client.md#get_job_output)
+- [get_paginator](./client.md#get_paginator)
+- [get_vault_access_policy](./client.md#get_vault_access_policy)
+- [get_vault_lock](./client.md#get_vault_lock)
+- [get_vault_notifications](./client.md#get_vault_notifications)
+- [get_waiter](./client.md#get_waiter)
+- [initiate_job](./client.md#initiate_job)
+- [initiate_multipart_upload](./client.md#initiate_multipart_upload)
+- [initiate_vault_lock](./client.md#initiate_vault_lock)
+- [list_jobs](./client.md#list_jobs)
+- [list_multipart_uploads](./client.md#list_multipart_uploads)
+- [list_parts](./client.md#list_parts)
+- [list_provisioned_capacity](./client.md#list_provisioned_capacity)
+- [list_tags_for_vault](./client.md#list_tags_for_vault)
+- [list_vaults](./client.md#list_vaults)
+- [purchase_provisioned_capacity](./client.md#purchase_provisioned_capacity)
+- [remove_tags_from_vault](./client.md#remove_tags_from_vault)
+- [set_data_retrieval_policy](./client.md#set_data_retrieval_policy)
+- [set_vault_access_policy](./client.md#set_vault_access_policy)
+- [set_vault_notifications](./client.md#set_vault_notifications)
+- [upload_archive](./client.md#upload_archive)
+- [upload_multipart_part](./client.md#upload_multipart_part)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InsufficientCapacityException](./client.md#insufficientcapacityexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [MissingParameterValueException](./client.md#missingparametervalueexception)
-- [PolicyEnforcedException](./client.md#policyenforcedexception)
-- [RequestTimeoutException](./client.md#requesttimeoutexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
+GlacierClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InsufficientCapacityException
+- InvalidParameterValueException
+- LimitExceededException
+- MissingParameterValueException
+- PolicyEnforcedException
+- RequestTimeoutException
+- ResourceNotFoundException
+- ServiceUnavailableException
 
 ## GlacierServiceResource
 
@@ -164,22 +164,22 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.literals import ActionCode, ...
+from mypy_boto3_glacier.literals import ActionCodeType, ...
 ```
 
-- [ActionCode](./literals.md#actioncode)
-- [CannedACL](./literals.md#cannedacl)
-- [EncryptionType](./literals.md#encryptiontype)
-- [ExpressionType](./literals.md#expressiontype)
-- [FileHeaderInfo](./literals.md#fileheaderinfo)
+- [ActionCodeType](./literals.md#actioncodetype)
+- [CannedACLType](./literals.md#cannedacltype)
+- [EncryptionTypeType](./literals.md#encryptiontypetype)
+- [ExpressionTypeType](./literals.md#expressiontypetype)
+- [FileHeaderInfoType](./literals.md#fileheaderinfotype)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
 - [ListMultipartUploadsPaginatorName](./literals.md#listmultipartuploadspaginatorname)
 - [ListPartsPaginatorName](./literals.md#listpartspaginatorname)
 - [ListVaultsPaginatorName](./literals.md#listvaultspaginatorname)
-- [Permission](./literals.md#permission)
-- [QuoteFields](./literals.md#quotefields)
-- [StatusCode](./literals.md#statuscode)
-- [StorageClass](./literals.md#storageclass)
+- [PermissionType](./literals.md#permissiontype)
+- [QuoteFieldsType](./literals.md#quotefieldstype)
+- [StatusCodeType](./literals.md#statuscodetype)
+- [StorageClassType](./literals.md#storageclasstype)
 - [TypeType](./literals.md#typetype)
 - [VaultExistsWaiterName](./literals.md#vaultexistswaitername)
 - [VaultNotExistsWaiterName](./literals.md#vaultnotexistswaitername)

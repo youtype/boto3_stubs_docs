@@ -3,23 +3,23 @@
 > [Index](..) > [CloudHSM](.) > Literals
 
 Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [Literals for boto3 CloudHSM module](#literals-for-boto3-cloudhsm-module)
-  - [ClientVersion](#clientversion)
-  - [CloudHsmObjectState](#cloudhsmobjectstate)
-  - [HsmStatus](#hsmstatus)
+  - [ClientVersionType](#clientversiontype)
+  - [CloudHsmObjectStateType](#cloudhsmobjectstatetype)
+  - [HsmStatusType](#hsmstatustype)
   - [ListHapgsPaginatorName](#listhapgspaginatorname)
   - [ListHsmsPaginatorName](#listhsmspaginatorname)
   - [ListLunaClientsPaginatorName](#listlunaclientspaginatorname)
-  - [SubscriptionType](#subscriptiontype)
+  - [SubscriptionTypeType](#subscriptiontypetype)
 
-## ClientVersion
+## ClientVersionType
 
 ```python
-from mypy_boto3_cloudhsm.literals import ClientVersion
+from mypy_boto3_cloudhsm.literals import ClientVersionType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `5.1`
 - `5.3`
 
-## CloudHsmObjectState
+## CloudHsmObjectStateType
 
 ```python
-from mypy_boto3_cloudhsm.literals import CloudHsmObjectState
+from mypy_boto3_cloudhsm.literals import CloudHsmObjectStateType
 ```
 
 Values:
@@ -39,10 +39,10 @@ Values:
 - `READY`
 - `UPDATING`
 
-## HsmStatus
+## HsmStatusType
 
 ```python
-from mypy_boto3_cloudhsm.literals import HsmStatus
+from mypy_boto3_cloudhsm.literals import HsmStatusType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 
 - `list_luna_clients`
 
-## SubscriptionType
+## SubscriptionTypeType
 
 ```python
-from mypy_boto3_cloudhsm.literals import SubscriptionType
+from mypy_boto3_cloudhsm.literals import SubscriptionTypeType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [SSOAdmin](.) > SSOAdminClient
 
 Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
 [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
@@ -60,7 +60,7 @@ def get_sso-admin_client() -> SSOAdminClient:
 ```
 
 Boto3 documentation:
-[SSOAdmin.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
+[SSOAdmin.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client)
 
 ## Exceptions
 
@@ -93,7 +93,7 @@ Type annotations for
 `boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.attach_managed_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
+[SSOAdmin.Client.attach_managed_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").can_paginate` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate)
+[SSOAdmin.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate)
 
 Arguments:
 
@@ -122,16 +122,17 @@ Type annotations for `boto3.client("sso-admin").create_account_assignment`
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.create_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
+[SSOAdmin.Client.create_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
 
 Arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `TargetId`: `str` *(required)*
 - `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetType](./literals.md#targettype)) *(required)*
+  [TargetTypeType](./literals.md#targettypetype)) *(required)*
 - `PermissionSetArn`: `str` *(required)*
-- `PrincipalType`: [PrincipalType](./literals.md#principaltype) *(required)*
+- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
+  *(required)*
 - `PrincipalId`: `str` *(required)*
 
 Returns
@@ -144,7 +145,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.create_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
+[SSOAdmin.Client.create_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
 
 Arguments:
 
@@ -160,7 +161,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").create_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.create_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
+[SSOAdmin.Client.create_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
 
 Arguments:
 
@@ -180,16 +181,17 @@ Type annotations for `boto3.client("sso-admin").delete_account_assignment`
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.delete_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
+[SSOAdmin.Client.delete_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
 
 Arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `TargetId`: `str` *(required)*
 - `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetType](./literals.md#targettype)) *(required)*
+  [TargetTypeType](./literals.md#targettypetype)) *(required)*
 - `PermissionSetArn`: `str` *(required)*
-- `PrincipalType`: [PrincipalType](./literals.md#principaltype) *(required)*
+- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
+  *(required)*
 - `PrincipalId`: `str` *(required)*
 
 Returns
@@ -201,7 +203,7 @@ Type annotations for
 `boto3.client("sso-admin").delete_inline_policy_from_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.delete_inline_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
+[SSOAdmin.Client.delete_inline_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
 
 Arguments:
 
@@ -217,7 +219,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.delete_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
+[SSOAdmin.Client.delete_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
 
 Arguments:
 
@@ -230,7 +232,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").delete_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.delete_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
+[SSOAdmin.Client.delete_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
 
 Arguments:
 
@@ -245,7 +247,7 @@ Type annotations for
 `boto3.client("sso-admin").describe_account_assignment_creation_status` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.describe_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
+[SSOAdmin.Client.describe_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
 
 Arguments:
 
@@ -261,7 +263,7 @@ Type annotations for
 `boto3.client("sso-admin").describe_account_assignment_deletion_status` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.describe_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
+[SSOAdmin.Client.describe_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
 
 Arguments:
 
@@ -278,7 +280,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.describe_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
+[SSOAdmin.Client.describe_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
 
 Arguments:
 
@@ -293,7 +295,7 @@ Type annotations for `boto3.client("sso-admin").describe_permission_set`
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.describe_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
+[SSOAdmin.Client.describe_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
 
 Arguments:
 
@@ -309,7 +311,7 @@ Type annotations for
 `boto3.client("sso-admin").describe_permission_set_provisioning_status` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.describe_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
+[SSOAdmin.Client.describe_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
 
 Arguments:
 
@@ -325,7 +327,7 @@ Type annotations for
 `boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.detach_managed_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
+[SSOAdmin.Client.detach_managed_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
 
 Arguments:
 
@@ -340,7 +342,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").generate_presigned_url` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url)
+[SSOAdmin.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url)
 
 Arguments:
 
@@ -357,7 +359,7 @@ Type annotations for
 `boto3.client("sso-admin").get_inline_policy_for_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.get_inline_policy_for_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
+[SSOAdmin.Client.get_inline_policy_for_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
 
 Arguments:
 
@@ -373,7 +375,7 @@ Type annotations for
 `boto3.client("sso-admin").list_account_assignment_creation_status` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
+[SSOAdmin.Client.list_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
 
 Arguments:
 
@@ -392,7 +394,7 @@ Type annotations for
 `boto3.client("sso-admin").list_account_assignment_deletion_status` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
+[SSOAdmin.Client.list_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
 
 Arguments:
 
@@ -411,7 +413,7 @@ Type annotations for `boto3.client("sso-admin").list_account_assignments`
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_account_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
+[SSOAdmin.Client.list_account_assignments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
 
 Arguments:
 
@@ -431,13 +433,14 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_accounts_for_provisioned_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
+[SSOAdmin.Client.list_accounts_for_provisioned_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
 
 Arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
-- `ProvisioningStatus`: [ProvisioningStatus](./literals.md#provisioningstatus)
+- `ProvisioningStatus`:
+  [ProvisioningStatusType](./literals.md#provisioningstatustype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -449,7 +452,7 @@ Returns
 Type annotations for `boto3.client("sso-admin").list_instances` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
+[SSOAdmin.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
 
 Arguments:
 
@@ -465,7 +468,7 @@ Type annotations for
 `boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_managed_policies_in_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
+[SSOAdmin.Client.list_managed_policies_in_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
 
 Arguments:
 
@@ -483,7 +486,7 @@ Type annotations for
 `boto3.client("sso-admin").list_permission_set_provisioning_status` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
+[SSOAdmin.Client.list_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
 
 Arguments:
 
@@ -501,7 +504,7 @@ Returns
 Type annotations for `boto3.client("sso-admin").list_permission_sets` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_permission_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
+[SSOAdmin.Client.list_permission_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
 
 Arguments:
 
@@ -518,13 +521,14 @@ Type annotations for
 `boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_permission_sets_provisioned_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
+[SSOAdmin.Client.list_permission_sets_provisioned_to_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
 
 Arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
-- `ProvisioningStatus`: [ProvisioningStatus](./literals.md#provisioningstatus)
+- `ProvisioningStatus`:
+  [ProvisioningStatusType](./literals.md#provisioningstatustype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -536,7 +540,7 @@ Returns
 Type annotations for `boto3.client("sso-admin").list_tags_for_resource` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
+[SSOAdmin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -553,14 +557,14 @@ Type annotations for `boto3.client("sso-admin").provision_permission_set`
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.provision_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
+[SSOAdmin.Client.provision_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
 
 Arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
-- `TargetType`: [ProvisionTargetType](./literals.md#provisiontargettype)
-  *(required)*
+- `TargetType`:
+  [ProvisionTargetTypeType](./literals.md#provisiontargettypetype) *(required)*
 - `TargetId`: `str`
 
 Returns
@@ -572,7 +576,7 @@ Type annotations for
 `boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.put_inline_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
+[SSOAdmin.Client.put_inline_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
 
 Arguments:
 
@@ -587,7 +591,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").tag_resource` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
+[SSOAdmin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
 
 Arguments:
 
@@ -602,7 +606,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").untag_resource` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
+[SSOAdmin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
 
 Arguments:
 
@@ -619,7 +623,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[SSOAdmin.Client.update_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
+[SSOAdmin.Client.update_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
 
 Arguments:
 
@@ -635,7 +639,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sso-admin").update_permission_set` method.
 
 Boto3 documentation:
-[SSOAdmin.Client.update_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
+[SSOAdmin.Client.update_permission_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
 
 Arguments:
 

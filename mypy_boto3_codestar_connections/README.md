@@ -3,7 +3,7 @@
 > [Index](..) > CodeStarconnections
 
 Auto-generated documentation for
-[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
 [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
@@ -29,33 +29,33 @@ Can be used directly:
 from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 ```
 
-CodeStarconnectionsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_connection](./client.md#create-connection)
-- [create_host](./client.md#create-host)
-- [delete_connection](./client.md#delete-connection)
-- [delete_host](./client.md#delete-host)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_connection](./client.md#get-connection)
-- [get_host](./client.md#get-host)
-- [list_connections](./client.md#list-connections)
-- [list_hosts](./client.md#list-hosts)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_host](./client.md#update-host)
+- [can_paginate](./client.md#can_paginate)
+- [create_connection](./client.md#create_connection)
+- [create_host](./client.md#create_host)
+- [delete_connection](./client.md#delete_connection)
+- [delete_host](./client.md#delete_host)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_connection](./client.md#get_connection)
+- [get_host](./client.md#get_host)
+- [list_connections](./client.md#list_connections)
+- [list_hosts](./client.md#list_hosts)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_host](./client.md#update_host)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceUnavailableException](./client.md#resourceunavailableexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+CodeStarconnectionsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- LimitExceededException
+- ResourceNotFoundException
+- ResourceUnavailableException
+- UnsupportedOperationException
 
 ## Literals
 
@@ -64,11 +64,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar_connections.literals import ConnectionStatus, ...
+from mypy_boto3_codestar_connections.literals import ConnectionStatusType, ...
 ```
 
-- [ConnectionStatus](./literals.md#connectionstatus)
-- [ProviderType](./literals.md#providertype)
+- [ConnectionStatusType](./literals.md#connectionstatustype)
+- [ProviderTypeType](./literals.md#providertypetype)
 
 ## Typed dictionaries
 

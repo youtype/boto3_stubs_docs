@@ -3,7 +3,7 @@
 > [Index](..) > [TimestreamQuery](.) > Typed dictionaries
 
 Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
@@ -150,7 +150,7 @@ from mypy_boto3_timestream_query.type_defs import TypeTypeDef
 
 Optional fields:
 
-- `ScalarType`: [ScalarType](./literals.md#scalartype)
+- `ScalarType`: [ScalarTypeType](./literals.md#scalartypetype)
 - `ArrayColumnInfo`: [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
 - `TimeSeriesMeasureValueColumnInfo`:
   [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)

@@ -3,7 +3,7 @@
 > [Index](..) > DAX
 
 Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dax.html#DAX)
 type annotations stubs module
 [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
@@ -29,64 +29,64 @@ Can be used directly:
 from mypy_boto3_dax.client import DAXClient
 ```
 
-DAXClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_cluster](./client.md#create-cluster)
-- [create_parameter_group](./client.md#create-parameter-group)
-- [create_subnet_group](./client.md#create-subnet-group)
-- [decrease_replication_factor](./client.md#decrease-replication-factor)
-- [delete_cluster](./client.md#delete-cluster)
-- [delete_parameter_group](./client.md#delete-parameter-group)
-- [delete_subnet_group](./client.md#delete-subnet-group)
-- [describe_clusters](./client.md#describe-clusters)
-- [describe_default_parameters](./client.md#describe-default-parameters)
-- [describe_events](./client.md#describe-events)
-- [describe_parameter_groups](./client.md#describe-parameter-groups)
-- [describe_parameters](./client.md#describe-parameters)
-- [describe_subnet_groups](./client.md#describe-subnet-groups)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [increase_replication_factor](./client.md#increase-replication-factor)
-- [list_tags](./client.md#list-tags)
-- [reboot_node](./client.md#reboot-node)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_cluster](./client.md#update-cluster)
-- [update_parameter_group](./client.md#update-parameter-group)
-- [update_subnet_group](./client.md#update-subnet-group)
+- [can_paginate](./client.md#can_paginate)
+- [create_cluster](./client.md#create_cluster)
+- [create_parameter_group](./client.md#create_parameter_group)
+- [create_subnet_group](./client.md#create_subnet_group)
+- [decrease_replication_factor](./client.md#decrease_replication_factor)
+- [delete_cluster](./client.md#delete_cluster)
+- [delete_parameter_group](./client.md#delete_parameter_group)
+- [delete_subnet_group](./client.md#delete_subnet_group)
+- [describe_clusters](./client.md#describe_clusters)
+- [describe_default_parameters](./client.md#describe_default_parameters)
+- [describe_events](./client.md#describe_events)
+- [describe_parameter_groups](./client.md#describe_parameter_groups)
+- [describe_parameters](./client.md#describe_parameters)
+- [describe_subnet_groups](./client.md#describe_subnet_groups)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [increase_replication_factor](./client.md#increase_replication_factor)
+- [list_tags](./client.md#list_tags)
+- [reboot_node](./client.md#reboot_node)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_cluster](./client.md#update_cluster)
+- [update_parameter_group](./client.md#update_parameter_group)
+- [update_subnet_group](./client.md#update_subnet_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ClusterAlreadyExistsFault](./client.md#clusteralreadyexistsfault)
-- [ClusterNotFoundFault](./client.md#clusternotfoundfault)
-- [ClusterQuotaForCustomerExceededFault](./client.md#clusterquotaforcustomerexceededfault)
-- [InsufficientClusterCapacityFault](./client.md#insufficientclustercapacityfault)
-- [InvalidARNFault](./client.md#invalidarnfault)
-- [InvalidClusterStateFault](./client.md#invalidclusterstatefault)
-- [InvalidParameterCombinationException](./client.md#invalidparametercombinationexception)
-- [InvalidParameterGroupStateFault](./client.md#invalidparametergroupstatefault)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [InvalidSubnet](./client.md#invalidsubnet)
-- [InvalidVPCNetworkStateFault](./client.md#invalidvpcnetworkstatefault)
-- [NodeNotFoundFault](./client.md#nodenotfoundfault)
-- [NodeQuotaForClusterExceededFault](./client.md#nodequotaforclusterexceededfault)
-- [NodeQuotaForCustomerExceededFault](./client.md#nodequotaforcustomerexceededfault)
-- [ParameterGroupAlreadyExistsFault](./client.md#parametergroupalreadyexistsfault)
-- [ParameterGroupNotFoundFault](./client.md#parametergroupnotfoundfault)
-- [ParameterGroupQuotaExceededFault](./client.md#parametergroupquotaexceededfault)
-- [ServiceLinkedRoleNotFoundFault](./client.md#servicelinkedrolenotfoundfault)
-- [SubnetGroupAlreadyExistsFault](./client.md#subnetgroupalreadyexistsfault)
-- [SubnetGroupInUseFault](./client.md#subnetgroupinusefault)
-- [SubnetGroupNotFoundFault](./client.md#subnetgroupnotfoundfault)
-- [SubnetGroupQuotaExceededFault](./client.md#subnetgroupquotaexceededfault)
-- [SubnetInUse](./client.md#subnetinuse)
-- [SubnetQuotaExceededFault](./client.md#subnetquotaexceededfault)
-- [TagNotFoundFault](./client.md#tagnotfoundfault)
-- [TagQuotaPerResourceExceeded](./client.md#tagquotaperresourceexceeded)
+DAXClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ClusterAlreadyExistsFault
+- ClusterNotFoundFault
+- ClusterQuotaForCustomerExceededFault
+- InsufficientClusterCapacityFault
+- InvalidARNFault
+- InvalidClusterStateFault
+- InvalidParameterCombinationException
+- InvalidParameterGroupStateFault
+- InvalidParameterValueException
+- InvalidSubnet
+- InvalidVPCNetworkStateFault
+- NodeNotFoundFault
+- NodeQuotaForClusterExceededFault
+- NodeQuotaForCustomerExceededFault
+- ParameterGroupAlreadyExistsFault
+- ParameterGroupNotFoundFault
+- ParameterGroupQuotaExceededFault
+- ServiceLinkedRoleNotFoundFault
+- SubnetGroupAlreadyExistsFault
+- SubnetGroupInUseFault
+- SubnetGroupNotFoundFault
+- SubnetGroupQuotaExceededFault
+- SubnetInUse
+- SubnetQuotaExceededFault
+- TagNotFoundFault
+- TagQuotaPerResourceExceeded
 
 ## Paginators
 
@@ -114,21 +114,21 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.literals import ChangeType, ...
+from mypy_boto3_dax.literals import ChangeTypeType, ...
 ```
 
-- [ChangeType](./literals.md#changetype)
+- [ChangeTypeType](./literals.md#changetypetype)
 - [DescribeClustersPaginatorName](./literals.md#describeclusterspaginatorname)
 - [DescribeDefaultParametersPaginatorName](./literals.md#describedefaultparameterspaginatorname)
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
 - [DescribeParameterGroupsPaginatorName](./literals.md#describeparametergroupspaginatorname)
 - [DescribeParametersPaginatorName](./literals.md#describeparameterspaginatorname)
 - [DescribeSubnetGroupsPaginatorName](./literals.md#describesubnetgroupspaginatorname)
-- [IsModifiable](./literals.md#ismodifiable)
+- [IsModifiableType](./literals.md#ismodifiabletype)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
-- [ParameterType](./literals.md#parametertype)
-- [SSEStatus](./literals.md#ssestatus)
-- [SourceType](./literals.md#sourcetype)
+- [ParameterTypeType](./literals.md#parametertypetype)
+- [SSEStatusType](./literals.md#ssestatustype)
+- [SourceTypeType](./literals.md#sourcetypetype)
 
 ## Typed dictionaries
 

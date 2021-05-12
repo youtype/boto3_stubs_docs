@@ -3,7 +3,7 @@
 > [Index](..) > [IoTDeviceAdvisor](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
 [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
@@ -99,7 +99,7 @@ Optional fields:
 - `testResult`: [TestResultTypeDef](./type_defs.md#testresulttypedef)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
-- `status`: [SuiteRunStatus](./literals.md#suiterunstatus)
+- `status`: [SuiteRunStatusType](./literals.md#suiterunstatustype)
 - `errorReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -234,7 +234,7 @@ Optional fields:
 - `createdAt`: `datetime`
 - `startedAt`: `datetime`
 - `endAt`: `datetime`
-- `status`: [SuiteRunStatus](./literals.md#suiterunstatus)
+- `status`: [SuiteRunStatusType](./literals.md#suiterunstatustype)
 - `passed`: `int`
 - `failed`: `int`
 
@@ -271,7 +271,7 @@ Optional fields:
 - `testCaseRunId`: `str`
 - `testCaseDefinitionId`: `str`
 - `testCaseDefinitionName`: `str`
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `logUrl`: `str`

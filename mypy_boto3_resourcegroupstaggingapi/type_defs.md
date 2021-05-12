@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
 [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
@@ -59,7 +59,7 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import FailureInfoTypeDef
 Optional fields:
 
 - `StatusCode`: `int`
-- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
 ## GetComplianceSummaryOutputTypeDef
@@ -164,7 +164,7 @@ Optional fields:
 
 - `LastUpdated`: `str`
 - `TargetId`: `str`
-- `TargetIdType`: [TargetIdType](./literals.md#targetidtype)
+- `TargetIdType`: [TargetIdTypeType](./literals.md#targetidtypetype)
 - `Region`: `str`
 - `ResourceType`: `str`
 - `NonCompliantResources`: `int`

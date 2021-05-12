@@ -3,7 +3,7 @@
 > [Index](..) > ElasticLoadBalancingv2
 
 Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
 [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
@@ -31,89 +31,89 @@ Can be used directly:
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 ```
 
-ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_listener_certificates](./client.md#add-listener-certificates)
-- [add_tags](./client.md#add-tags)
-- [can_paginate](./client.md#can-paginate)
-- [create_listener](./client.md#create-listener)
-- [create_load_balancer](./client.md#create-load-balancer)
-- [create_rule](./client.md#create-rule)
-- [create_target_group](./client.md#create-target-group)
-- [delete_listener](./client.md#delete-listener)
-- [delete_load_balancer](./client.md#delete-load-balancer)
-- [delete_rule](./client.md#delete-rule)
-- [delete_target_group](./client.md#delete-target-group)
-- [deregister_targets](./client.md#deregister-targets)
-- [describe_account_limits](./client.md#describe-account-limits)
-- [describe_listener_certificates](./client.md#describe-listener-certificates)
-- [describe_listeners](./client.md#describe-listeners)
-- [describe_load_balancer_attributes](./client.md#describe-load-balancer-attributes)
-- [describe_load_balancers](./client.md#describe-load-balancers)
-- [describe_rules](./client.md#describe-rules)
-- [describe_ssl_policies](./client.md#describe-ssl-policies)
-- [describe_tags](./client.md#describe-tags)
-- [describe_target_group_attributes](./client.md#describe-target-group-attributes)
-- [describe_target_groups](./client.md#describe-target-groups)
-- [describe_target_health](./client.md#describe-target-health)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [modify_listener](./client.md#modify-listener)
-- [modify_load_balancer_attributes](./client.md#modify-load-balancer-attributes)
-- [modify_rule](./client.md#modify-rule)
-- [modify_target_group](./client.md#modify-target-group)
-- [modify_target_group_attributes](./client.md#modify-target-group-attributes)
-- [register_targets](./client.md#register-targets)
-- [remove_listener_certificates](./client.md#remove-listener-certificates)
-- [remove_tags](./client.md#remove-tags)
-- [set_ip_address_type](./client.md#set-ip-address-type)
-- [set_rule_priorities](./client.md#set-rule-priorities)
-- [set_security_groups](./client.md#set-security-groups)
-- [set_subnets](./client.md#set-subnets)
+- [add_listener_certificates](./client.md#add_listener_certificates)
+- [add_tags](./client.md#add_tags)
+- [can_paginate](./client.md#can_paginate)
+- [create_listener](./client.md#create_listener)
+- [create_load_balancer](./client.md#create_load_balancer)
+- [create_rule](./client.md#create_rule)
+- [create_target_group](./client.md#create_target_group)
+- [delete_listener](./client.md#delete_listener)
+- [delete_load_balancer](./client.md#delete_load_balancer)
+- [delete_rule](./client.md#delete_rule)
+- [delete_target_group](./client.md#delete_target_group)
+- [deregister_targets](./client.md#deregister_targets)
+- [describe_account_limits](./client.md#describe_account_limits)
+- [describe_listener_certificates](./client.md#describe_listener_certificates)
+- [describe_listeners](./client.md#describe_listeners)
+- [describe_load_balancer_attributes](./client.md#describe_load_balancer_attributes)
+- [describe_load_balancers](./client.md#describe_load_balancers)
+- [describe_rules](./client.md#describe_rules)
+- [describe_ssl_policies](./client.md#describe_ssl_policies)
+- [describe_tags](./client.md#describe_tags)
+- [describe_target_group_attributes](./client.md#describe_target_group_attributes)
+- [describe_target_groups](./client.md#describe_target_groups)
+- [describe_target_health](./client.md#describe_target_health)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [modify_listener](./client.md#modify_listener)
+- [modify_load_balancer_attributes](./client.md#modify_load_balancer_attributes)
+- [modify_rule](./client.md#modify_rule)
+- [modify_target_group](./client.md#modify_target_group)
+- [modify_target_group_attributes](./client.md#modify_target_group_attributes)
+- [register_targets](./client.md#register_targets)
+- [remove_listener_certificates](./client.md#remove_listener_certificates)
+- [remove_tags](./client.md#remove_tags)
+- [set_ip_address_type](./client.md#set_ip_address_type)
+- [set_rule_priorities](./client.md#set_rule_priorities)
+- [set_security_groups](./client.md#set_security_groups)
+- [set_subnets](./client.md#set_subnets)
 
 ### Exceptions
 
-- [ALPNPolicyNotSupportedException](./client.md#alpnpolicynotsupportedexception)
-- [AllocationIdNotFoundException](./client.md#allocationidnotfoundexception)
-- [AvailabilityZoneNotSupportedException](./client.md#availabilityzonenotsupportedexception)
-- [CertificateNotFoundException](./client.md#certificatenotfoundexception)
-- [ClientError](./client.md#clienterror)
-- [DuplicateListenerException](./client.md#duplicatelistenerexception)
-- [DuplicateLoadBalancerNameException](./client.md#duplicateloadbalancernameexception)
-- [DuplicateTagKeysException](./client.md#duplicatetagkeysexception)
-- [DuplicateTargetGroupNameException](./client.md#duplicatetargetgroupnameexception)
-- [HealthUnavailableException](./client.md#healthunavailableexception)
-- [IncompatibleProtocolsException](./client.md#incompatibleprotocolsexception)
-- [InvalidConfigurationRequestException](./client.md#invalidconfigurationrequestexception)
-- [InvalidLoadBalancerActionException](./client.md#invalidloadbalanceractionexception)
-- [InvalidSchemeException](./client.md#invalidschemeexception)
-- [InvalidSecurityGroupException](./client.md#invalidsecuritygroupexception)
-- [InvalidSubnetException](./client.md#invalidsubnetexception)
-- [InvalidTargetException](./client.md#invalidtargetexception)
-- [ListenerNotFoundException](./client.md#listenernotfoundexception)
-- [LoadBalancerNotFoundException](./client.md#loadbalancernotfoundexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [PriorityInUseException](./client.md#priorityinuseexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [RuleNotFoundException](./client.md#rulenotfoundexception)
-- [SSLPolicyNotFoundException](./client.md#sslpolicynotfoundexception)
-- [SubnetNotFoundException](./client.md#subnetnotfoundexception)
-- [TargetGroupAssociationLimitException](./client.md#targetgroupassociationlimitexception)
-- [TargetGroupNotFoundException](./client.md#targetgroupnotfoundexception)
-- [TooManyActionsException](./client.md#toomanyactionsexception)
-- [TooManyCertificatesException](./client.md#toomanycertificatesexception)
-- [TooManyListenersException](./client.md#toomanylistenersexception)
-- [TooManyLoadBalancersException](./client.md#toomanyloadbalancersexception)
-- [TooManyRegistrationsForTargetIdException](./client.md#toomanyregistrationsfortargetidexception)
-- [TooManyRulesException](./client.md#toomanyrulesexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [TooManyTargetGroupsException](./client.md#toomanytargetgroupsexception)
-- [TooManyTargetsException](./client.md#toomanytargetsexception)
-- [TooManyUniqueTargetGroupsPerLoadBalancerException](./client.md#toomanyuniquetargetgroupsperloadbalancerexception)
-- [UnsupportedProtocolException](./client.md#unsupportedprotocolexception)
+ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
+
+- ALPNPolicyNotSupportedException
+- AllocationIdNotFoundException
+- AvailabilityZoneNotSupportedException
+- CertificateNotFoundException
+- ClientError
+- DuplicateListenerException
+- DuplicateLoadBalancerNameException
+- DuplicateTagKeysException
+- DuplicateTargetGroupNameException
+- HealthUnavailableException
+- IncompatibleProtocolsException
+- InvalidConfigurationRequestException
+- InvalidLoadBalancerActionException
+- InvalidSchemeException
+- InvalidSecurityGroupException
+- InvalidSubnetException
+- InvalidTargetException
+- ListenerNotFoundException
+- LoadBalancerNotFoundException
+- OperationNotPermittedException
+- PriorityInUseException
+- ResourceInUseException
+- RuleNotFoundException
+- SSLPolicyNotFoundException
+- SubnetNotFoundException
+- TargetGroupAssociationLimitException
+- TargetGroupNotFoundException
+- TooManyActionsException
+- TooManyCertificatesException
+- TooManyListenersException
+- TooManyLoadBalancersException
+- TooManyRegistrationsForTargetIdException
+- TooManyRulesException
+- TooManyTagsException
+- TooManyTargetGroupsException
+- TooManyTargetsException
+- TooManyUniqueTargetGroupsPerLoadBalancerException
+- UnsupportedProtocolException
 
 ## Paginators
 
@@ -158,12 +158,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.literals import ActionTypeEnum, ...
+from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 ```
 
-- [ActionTypeEnum](./literals.md#actiontypeenum)
-- [AuthenticateCognitoActionConditionalBehaviorEnum](./literals.md#authenticatecognitoactionconditionalbehaviorenum)
-- [AuthenticateOidcActionConditionalBehaviorEnum](./literals.md#authenticateoidcactionconditionalbehaviorenum)
+- [ActionTypeEnumType](./literals.md#actiontypeenumtype)
+- [AuthenticateCognitoActionConditionalBehaviorEnumType](./literals.md#authenticatecognitoactionconditionalbehaviorenumtype)
+- [AuthenticateOidcActionConditionalBehaviorEnumType](./literals.md#authenticateoidcactionconditionalbehaviorenumtype)
 - [DescribeAccountLimitsPaginatorName](./literals.md#describeaccountlimitspaginatorname)
 - [DescribeListenerCertificatesPaginatorName](./literals.md#describelistenercertificatespaginatorname)
 - [DescribeListenersPaginatorName](./literals.md#describelistenerspaginatorname)
@@ -171,20 +171,20 @@ from mypy_boto3_elbv2.literals import ActionTypeEnum, ...
 - [DescribeRulesPaginatorName](./literals.md#describerulespaginatorname)
 - [DescribeSSLPoliciesPaginatorName](./literals.md#describesslpoliciespaginatorname)
 - [DescribeTargetGroupsPaginatorName](./literals.md#describetargetgroupspaginatorname)
-- [IpAddressType](./literals.md#ipaddresstype)
+- [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - [LoadBalancerAvailableWaiterName](./literals.md#loadbalanceravailablewaitername)
 - [LoadBalancerExistsWaiterName](./literals.md#loadbalancerexistswaitername)
-- [LoadBalancerSchemeEnum](./literals.md#loadbalancerschemeenum)
-- [LoadBalancerStateEnum](./literals.md#loadbalancerstateenum)
-- [LoadBalancerTypeEnum](./literals.md#loadbalancertypeenum)
+- [LoadBalancerSchemeEnumType](./literals.md#loadbalancerschemeenumtype)
+- [LoadBalancerStateEnumType](./literals.md#loadbalancerstateenumtype)
+- [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 - [LoadBalancersDeletedWaiterName](./literals.md#loadbalancersdeletedwaitername)
-- [ProtocolEnum](./literals.md#protocolenum)
-- [RedirectActionStatusCodeEnum](./literals.md#redirectactionstatuscodeenum)
+- [ProtocolEnumType](./literals.md#protocolenumtype)
+- [RedirectActionStatusCodeEnumType](./literals.md#redirectactionstatuscodeenumtype)
 - [TargetDeregisteredWaiterName](./literals.md#targetderegisteredwaitername)
-- [TargetHealthReasonEnum](./literals.md#targethealthreasonenum)
-- [TargetHealthStateEnum](./literals.md#targethealthstateenum)
+- [TargetHealthReasonEnumType](./literals.md#targethealthreasonenumtype)
+- [TargetHealthStateEnumType](./literals.md#targethealthstateenumtype)
 - [TargetInServiceWaiterName](./literals.md#targetinservicewaitername)
-- [TargetTypeEnum](./literals.md#targettypeenum)
+- [TargetTypeEnumType](./literals.md#targettypeenumtype)
 
 ## Typed dictionaries
 

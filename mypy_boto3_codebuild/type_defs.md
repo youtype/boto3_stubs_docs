@@ -3,7 +3,7 @@
 > [Index](..) > [CodeBuild](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
 [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
@@ -124,7 +124,8 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesOutputTypeDef
 
 Required fields:
 
-- `buildBatches`: `List`\[[BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)\]
+- `buildBatches`:
+  `List`\[[BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)\]
 - `buildBatchesNotFound`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -207,7 +208,8 @@ Optional fields:
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
-- `bucketOwnerAccess`: [BucketOwnerAccess](./literals.md#bucketowneraccess)
+- `bucketOwnerAccess`:
+  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## BuildBatchFilterTypeDef
 
@@ -217,7 +219,7 @@ from mypy_boto3_codebuild.type_defs import BuildBatchFilterTypeDef
 
 Optional fields:
 
-- `status`: [StatusType](./literals.md#statustype)
+- `status`: [StatusTypeType](./literals.md#statustypetype)
 
 ## BuildBatchPhaseTypeDef
 
@@ -227,12 +229,13 @@ from mypy_boto3_codebuild.type_defs import BuildBatchPhaseTypeDef
 
 Optional fields:
 
-- `phaseType`: [BuildBatchPhaseType](./literals.md#buildbatchphasetype)
-- `phaseStatus`: [StatusType](./literals.md#statustype)
+- `phaseType`: [BuildBatchPhaseTypeType](./literals.md#buildbatchphasetypetype)
+- `phaseStatus`: [StatusTypeType](./literals.md#statustypetype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `durationInSeconds`: `int`
-- `contexts`: `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
+- `contexts`:
+  `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
 
 ## BuildBatchTypeDef
 
@@ -247,7 +250,7 @@ Optional fields:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `currentPhase`: `str`
-- `buildBatchStatus`: [StatusType](./literals.md#statustype)
+- `buildBatchStatus`: [StatusTypeType](./literals.md#statustypetype)
 - `sourceVersion`: `str`
 - `resolvedSourceVersion`: `str`
 - `projectName`: `str`
@@ -277,7 +280,8 @@ Optional fields:
   `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
-- `buildGroups`: `List`\[[BuildGroupTypeDef](./type_defs.md#buildgrouptypedef)\]
+- `buildGroups`:
+  `List`\[[BuildGroupTypeDef](./type_defs.md#buildgrouptypedef)\]
 - `debugSessionEnabled`: `bool`
 
 ## BuildGroupTypeDef
@@ -315,12 +319,13 @@ from mypy_boto3_codebuild.type_defs import BuildPhaseTypeDef
 
 Optional fields:
 
-- `phaseType`: [BuildPhaseType](./literals.md#buildphasetype)
-- `phaseStatus`: [StatusType](./literals.md#statustype)
+- `phaseType`: [BuildPhaseTypeType](./literals.md#buildphasetypetype)
+- `phaseStatus`: [StatusTypeType](./literals.md#statustypetype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `durationInSeconds`: `int`
-- `contexts`: `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
+- `contexts`:
+  `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
 
 ## BuildStatusConfigTypeDef
 
@@ -343,7 +348,7 @@ Optional fields:
 
 - `arn`: `str`
 - `requestedOn`: `datetime`
-- `buildStatus`: [StatusType](./literals.md#statustype)
+- `buildStatus`: [StatusTypeType](./literals.md#statustypetype)
 - `primaryArtifact`:
   [ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)
 - `secondaryArtifacts`:
@@ -363,7 +368,7 @@ Optional fields:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `currentPhase`: `str`
-- `buildStatus`: [StatusType](./literals.md#statustype)
+- `buildStatus`: [StatusTypeType](./literals.md#statustypetype)
 - `sourceVersion`: `str`
 - `resolvedSourceVersion`: `str`
 - `projectName`: `str`
@@ -405,7 +410,7 @@ from mypy_boto3_codebuild.type_defs import CloudWatchLogsConfigTypeDef
 
 Required fields:
 
-- `status`: [LogsConfigStatusType](./literals.md#logsconfigstatustype)
+- `status`: [LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype)
 
 Optional fields:
 
@@ -567,7 +572,7 @@ from mypy_boto3_codebuild.type_defs import EnvironmentLanguageTypeDef
 
 Optional fields:
 
-- `language`: [LanguageType](./literals.md#languagetype)
+- `language`: [LanguageTypeType](./literals.md#languagetypetype)
 - `images`:
   `List`\[[EnvironmentImageTypeDef](./type_defs.md#environmentimagetypedef)\]
 
@@ -579,7 +584,7 @@ from mypy_boto3_codebuild.type_defs import EnvironmentPlatformTypeDef
 
 Optional fields:
 
-- `platform`: [PlatformType](./literals.md#platformtype)
+- `platform`: [PlatformTypeType](./literals.md#platformtypetype)
 - `languages`:
   `List`\[[EnvironmentLanguageTypeDef](./type_defs.md#environmentlanguagetypedef)\]
 
@@ -596,7 +601,8 @@ Required fields:
 
 Optional fields:
 
-- `type`: [EnvironmentVariableType](./literals.md#environmentvariabletype)
+- `type`:
+  [EnvironmentVariableTypeType](./literals.md#environmentvariabletypetype)
 
 ## ExportedEnvironmentVariableTypeDef
 
@@ -886,19 +892,20 @@ from mypy_boto3_codebuild.type_defs import ProjectArtifactsTypeDef
 
 Required fields:
 
-- `type`: [ArtifactsType](./literals.md#artifactstype)
+- `type`: [ArtifactsTypeType](./literals.md#artifactstypetype)
 
 Optional fields:
 
 - `location`: `str`
 - `path`: `str`
-- `namespaceType`: [ArtifactNamespace](./literals.md#artifactnamespace)
+- `namespaceType`: [ArtifactNamespaceType](./literals.md#artifactnamespacetype)
 - `name`: `str`
-- `packaging`: [ArtifactPackaging](./literals.md#artifactpackaging)
+- `packaging`: [ArtifactPackagingType](./literals.md#artifactpackagingtype)
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
-- `bucketOwnerAccess`: [BucketOwnerAccess](./literals.md#bucketowneraccess)
+- `bucketOwnerAccess`:
+  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## ProjectBadgeTypeDef
 
@@ -933,12 +940,12 @@ from mypy_boto3_codebuild.type_defs import ProjectCacheTypeDef
 
 Required fields:
 
-- `type`: [CacheType](./literals.md#cachetype)
+- `type`: [CacheTypeType](./literals.md#cachetypetype)
 
 Optional fields:
 
 - `location`: `str`
-- `modes`: `List`\[[CacheMode](./literals.md#cachemode)\]
+- `modes`: `List`\[[CacheModeType](./literals.md#cachemodetype)\]
 
 ## ProjectEnvironmentTypeDef
 
@@ -948,9 +955,9 @@ from mypy_boto3_codebuild.type_defs import ProjectEnvironmentTypeDef
 
 Required fields:
 
-- `type`: [EnvironmentType](./literals.md#environmenttype)
+- `type`: [EnvironmentTypeType](./literals.md#environmenttypetype)
 - `image`: `str`
-- `computeType`: [ComputeType](./literals.md#computetype)
+- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
 
 Optional fields:
 
@@ -961,7 +968,7 @@ Optional fields:
 - `registryCredential`:
   [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
 - `imagePullCredentialsType`:
-  [ImagePullCredentialsType](./literals.md#imagepullcredentialstype)
+  [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
 
 ## ProjectFileSystemLocationTypeDef
 
@@ -971,7 +978,8 @@ from mypy_boto3_codebuild.type_defs import ProjectFileSystemLocationTypeDef
 
 Optional fields:
 
-- `type`: `Literal['EFS']` (see [FileSystemType](./literals.md#filesystemtype))
+- `type`: `Literal['EFS']` (see
+  [FileSystemTypeType](./literals.md#filesystemtypetype))
 - `location`: `str`
 - `mountPoint`: `str`
 - `identifier`: `str`
@@ -985,7 +993,7 @@ from mypy_boto3_codebuild.type_defs import ProjectSourceTypeDef
 
 Required fields:
 
-- `type`: [SourceType](./literals.md#sourcetype)
+- `type`: [SourceTypeType](./literals.md#sourcetypetype)
 
 Optional fields:
 
@@ -1029,7 +1037,8 @@ Optional fields:
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
   `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `artifacts`: [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
+- `artifacts`:
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifacts`:
   `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
@@ -1074,7 +1083,7 @@ Required fields:
 
 - `credential`: `str`
 - `credentialProvider`: `Literal['SECRETS_MANAGER']` (see
-  [CredentialProviderType](./literals.md#credentialprovidertype))
+  [CredentialProviderTypeType](./literals.md#credentialprovidertypetype))
 
 ## ReportExportConfigTypeDef
 
@@ -1085,7 +1094,7 @@ from mypy_boto3_codebuild.type_defs import ReportExportConfigTypeDef
 Optional fields:
 
 - `exportConfigType`:
-  [ReportExportConfigType](./literals.md#reportexportconfigtype)
+  [ReportExportConfigTypeType](./literals.md#reportexportconfigtypetype)
 - `s3Destination`:
   [S3ReportExportConfigTypeDef](./type_defs.md#s3reportexportconfigtypedef)
 
@@ -1097,7 +1106,7 @@ from mypy_boto3_codebuild.type_defs import ReportFilterTypeDef
 
 Optional fields:
 
-- `status`: [ReportStatusType](./literals.md#reportstatustype)
+- `status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
 
 ## ReportGroupTrendStatsTypeDef
 
@@ -1121,13 +1130,14 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [ReportType](./literals.md#reporttype)
+- `type`: [ReportTypeType](./literals.md#reporttypetype)
 - `exportConfig`:
   [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
 - `created`: `datetime`
 - `lastModified`: `datetime`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `status`: [ReportGroupStatusType](./literals.md#reportgroupstatustype)
+- `status`:
+  [ReportGroupStatusTypeType](./literals.md#reportgroupstatustypetype)
 
 ## ReportTypeDef
 
@@ -1138,11 +1148,11 @@ from mypy_boto3_codebuild.type_defs import ReportTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `type`: [ReportType](./literals.md#reporttype)
+- `type`: [ReportTypeType](./literals.md#reporttypetype)
 - `name`: `str`
 - `reportGroupArn`: `str`
 - `executionId`: `str`
-- `status`: [ReportStatusType](./literals.md#reportstatustype)
+- `status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
 - `created`: `datetime`
 - `expired`: `datetime`
 - `exportConfig`:
@@ -1172,7 +1182,7 @@ from mypy_boto3_codebuild.type_defs import ResolvedArtifactTypeDef
 
 Optional fields:
 
-- `type`: [ArtifactsType](./literals.md#artifactstype)
+- `type`: [ArtifactsTypeType](./literals.md#artifactstypetype)
 - `location`: `str`
 - `identifier`: `str`
 
@@ -1222,13 +1232,14 @@ from mypy_boto3_codebuild.type_defs import S3LogsConfigTypeDef
 
 Required fields:
 
-- `status`: [LogsConfigStatusType](./literals.md#logsconfigstatustype)
+- `status`: [LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype)
 
 Optional fields:
 
 - `location`: `str`
 - `encryptionDisabled`: `bool`
-- `bucketOwnerAccess`: [BucketOwnerAccess](./literals.md#bucketowneraccess)
+- `bucketOwnerAccess`:
+  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## S3ReportExportConfigTypeDef
 
@@ -1241,7 +1252,7 @@ Optional fields:
 - `bucket`: `str`
 - `bucketOwner`: `str`
 - `path`: `str`
-- `packaging`: [ReportPackagingType](./literals.md#reportpackagingtype)
+- `packaging`: [ReportPackagingTypeType](./literals.md#reportpackagingtypetype)
 - `encryptionKey`: `str`
 - `encryptionDisabled`: `bool`
 
@@ -1253,7 +1264,8 @@ from mypy_boto3_codebuild.type_defs import SourceAuthTypeDef
 
 Required fields:
 
-- `type`: `Literal['OAUTH']` (see [SourceAuthType](./literals.md#sourceauthtype))
+- `type`: `Literal['OAUTH']` (see
+  [SourceAuthTypeType](./literals.md#sourceauthtypetype))
 
 Optional fields:
 
@@ -1268,8 +1280,8 @@ from mypy_boto3_codebuild.type_defs import SourceCredentialsInfoTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `serverType`: [ServerType](./literals.md#servertype)
-- `authType`: [AuthType](./literals.md#authtype)
+- `serverType`: [ServerTypeType](./literals.md#servertypetype)
+- `authType`: [AuthTypeType](./literals.md#authtypetype)
 
 ## StartBuildBatchOutputTypeDef
 
@@ -1426,7 +1438,7 @@ from mypy_boto3_codebuild.type_defs import WebhookFilterTypeDef
 
 Required fields:
 
-- `type`: [WebhookFilterType](./literals.md#webhookfiltertype)
+- `type`: [WebhookFilterTypeType](./literals.md#webhookfiltertypetype)
 - `pattern`: `str`
 
 Optional fields:
@@ -1447,5 +1459,5 @@ Optional fields:
 - `branchFilter`: `str`
 - `filterGroups`:
   `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
-- `buildType`: [WebhookBuildType](./literals.md#webhookbuildtype)
+- `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 - `lastModifiedSecret`: `datetime`

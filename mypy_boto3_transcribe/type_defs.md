@@ -3,7 +3,7 @@
 > [Index](..) > [TranscribeService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
 [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
@@ -55,8 +55,8 @@ from mypy_boto3_transcribe.type_defs import ContentRedactionTypeDef
 Required fields:
 
 - `RedactionType`: `Literal['PII']` (see
-  [RedactionType](./literals.md#redactiontype))
-- `RedactionOutput`: [RedactionOutput](./literals.md#redactionoutput)
+  [RedactionTypeType](./literals.md#redactiontypetype))
+- `RedactionOutput`: [RedactionOutputType](./literals.md#redactionoutputtype)
 
 ## CreateLanguageModelResponseTypeDef
 
@@ -66,12 +66,12 @@ from mypy_boto3_transcribe.type_defs import CreateLanguageModelResponseTypeDef
 
 Optional fields:
 
-- `LanguageCode`: [CLMLanguageCode](./literals.md#clmlanguagecode)
-- `BaseModelName`: [BaseModelName](./literals.md#basemodelname)
+- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
+- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
 - `ModelName`: `str`
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `ModelStatus`: [ModelStatus](./literals.md#modelstatus)
+- `ModelStatus`: [ModelStatusType](./literals.md#modelstatustype)
 
 ## CreateMedicalVocabularyResponseTypeDef
 
@@ -82,8 +82,8 @@ from mypy_boto3_transcribe.type_defs import CreateMedicalVocabularyResponseTypeD
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 
@@ -96,7 +96,7 @@ from mypy_boto3_transcribe.type_defs import CreateVocabularyFilterResponseTypeDe
 Optional fields:
 
 - `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 
 ## CreateVocabularyResponseTypeDef
@@ -108,8 +108,8 @@ from mypy_boto3_transcribe.type_defs import CreateVocabularyResponseTypeDef
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 
@@ -143,8 +143,8 @@ from mypy_boto3_transcribe.type_defs import GetMedicalVocabularyResponseTypeDef
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 - `DownloadUri`: `str`
@@ -169,7 +169,7 @@ from mypy_boto3_transcribe.type_defs import GetVocabularyFilterResponseTypeDef
 Optional fields:
 
 - `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 - `DownloadUri`: `str`
 
@@ -182,8 +182,8 @@ from mypy_boto3_transcribe.type_defs import GetVocabularyResponseTypeDef
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 - `DownloadUri`: `str`
@@ -225,9 +225,9 @@ Optional fields:
 - `ModelName`: `str`
 - `CreateTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-- `LanguageCode`: [CLMLanguageCode](./literals.md#clmlanguagecode)
-- `BaseModelName`: [BaseModelName](./literals.md#basemodelname)
-- `ModelStatus`: [ModelStatus](./literals.md#modelstatus)
+- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
+- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
+- `ModelStatus`: [ModelStatusType](./literals.md#modelstatustype)
 - `UpgradeAvailability`: `bool`
 - `FailureReason`: `str`
 - `InputDataConfig`:
@@ -242,7 +242,8 @@ from mypy_boto3_transcribe.type_defs import ListLanguageModelsResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Models`: `List`\[[LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)\]
+- `Models`:
+  `List`\[[LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)\]
 
 ## ListMedicalTranscriptionJobsResponseTypeDef
 
@@ -252,7 +253,8 @@ from mypy_boto3_transcribe.type_defs import ListMedicalTranscriptionJobsResponse
 
 Optional fields:
 
-- `Status`: [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
+- `Status`:
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - `NextToken`: `str`
 - `MedicalTranscriptionJobSummaries`:
   `List`\[[MedicalTranscriptionJobSummaryTypeDef](./type_defs.md#medicaltranscriptionjobsummarytypedef)\]
@@ -265,7 +267,7 @@ from mypy_boto3_transcribe.type_defs import ListMedicalVocabulariesResponseTypeD
 
 Optional fields:
 
-- `Status`: [VocabularyState](./literals.md#vocabularystate)
+- `Status`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `NextToken`: `str`
 - `Vocabularies`:
   `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
@@ -278,7 +280,8 @@ from mypy_boto3_transcribe.type_defs import ListTranscriptionJobsResponseTypeDef
 
 Optional fields:
 
-- `Status`: [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
+- `Status`:
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - `NextToken`: `str`
 - `TranscriptionJobSummaries`:
   `List`\[[TranscriptionJobSummaryTypeDef](./type_defs.md#transcriptionjobsummarytypedef)\]
@@ -291,7 +294,7 @@ from mypy_boto3_transcribe.type_defs import ListVocabulariesResponseTypeDef
 
 Optional fields:
 
-- `Status`: [VocabularyState](./literals.md#vocabularystate)
+- `Status`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `NextToken`: `str`
 - `Vocabularies`:
   `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
@@ -340,13 +343,14 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `StartTime`: `datetime`
 - `CompletionTime`: `datetime`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `TranscriptionJobStatus`:
-  [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - `FailureReason`: `str`
-- `OutputLocationType`: [OutputLocationType](./literals.md#outputlocationtype)
+- `OutputLocationType`:
+  [OutputLocationTypeType](./literals.md#outputlocationtypetype)
 - `Specialty`: `Literal['PRIMARYCARE']` (see
-  [Specialty](./literals.md#specialty))
+  [SpecialtyType](./literals.md#specialtytype))
 - `Type`: [TypeType](./literals.md#typetype)
 
 ## MedicalTranscriptionJobTypeDef
@@ -359,10 +363,10 @@ Optional fields:
 
 - `MedicalTranscriptionJobName`: `str`
 - `TranscriptionJobStatus`:
-  [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormat](./literals.md#mediaformat)
+- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
 - `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
 - `Transcript`:
   [MedicalTranscriptTypeDef](./type_defs.md#medicaltranscripttypedef)
@@ -373,7 +377,7 @@ Optional fields:
 - `Settings`:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `Specialty`: `Literal['PRIMARYCARE']` (see
-  [Specialty](./literals.md#specialty))
+  [SpecialtyType](./literals.md#specialtytype))
 - `Type`: [TypeType](./literals.md#typetype)
 
 ## MedicalTranscriptionSettingTypeDef
@@ -417,7 +421,7 @@ Optional fields:
 - `MaxAlternatives`: `int`
 - `VocabularyFilterName`: `str`
 - `VocabularyFilterMethod`:
-  [VocabularyFilterMethod](./literals.md#vocabularyfiltermethod)
+  [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
 
 ## StartMedicalTranscriptionJobResponseTypeDef
 
@@ -464,11 +468,12 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `StartTime`: `datetime`
 - `CompletionTime`: `datetime`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `TranscriptionJobStatus`:
-  [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - `FailureReason`: `str`
-- `OutputLocationType`: [OutputLocationType](./literals.md#outputlocationtype)
+- `OutputLocationType`:
+  [OutputLocationTypeType](./literals.md#outputlocationtypetype)
 - `ContentRedaction`:
   [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
@@ -485,10 +490,10 @@ Optional fields:
 
 - `TranscriptionJobName`: `str`
 - `TranscriptionJobStatus`:
-  [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormat](./literals.md#mediaformat)
+- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
 - `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
 - `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
 - `StartTime`: `datetime`
@@ -502,7 +507,8 @@ Optional fields:
 - `ContentRedaction`:
   [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `IdentifyLanguage`: `bool`
-- `LanguageOptions`: `List`\[[LanguageCode](./literals.md#languagecode)\]
+- `LanguageOptions`:
+  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `IdentifiedLanguageScore`: `float`
 
 ## UpdateMedicalVocabularyResponseTypeDef
@@ -514,9 +520,9 @@ from mypy_boto3_transcribe.type_defs import UpdateMedicalVocabularyResponseTypeD
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 
 ## UpdateVocabularyFilterResponseTypeDef
 
@@ -527,7 +533,7 @@ from mypy_boto3_transcribe.type_defs import UpdateVocabularyFilterResponseTypeDe
 Optional fields:
 
 - `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 
 ## UpdateVocabularyResponseTypeDef
@@ -539,9 +545,9 @@ from mypy_boto3_transcribe.type_defs import UpdateVocabularyResponseTypeDef
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 
 ## VocabularyFilterInfoTypeDef
 
@@ -552,7 +558,7 @@ from mypy_boto3_transcribe.type_defs import VocabularyFilterInfoTypeDef
 Optional fields:
 
 - `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 
 ## VocabularyInfoTypeDef
@@ -564,6 +570,6 @@ from mypy_boto3_transcribe.type_defs import VocabularyInfoTypeDef
 Optional fields:
 
 - `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
-- `VocabularyState`: [VocabularyState](./literals.md#vocabularystate)
+- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)

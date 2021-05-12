@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDB](.) > DynamoDBServiceResource
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -37,7 +37,7 @@ def get_dynamodb_resource() -> DynamoDBServiceResource:
 ```
 
 Boto3 documentation:
-[DynamoDB.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource)
+[DynamoDB.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource)
 
 ## Attributes
 
@@ -61,7 +61,7 @@ def get_collection() -> ServiceResourceTablesCollection:
 Provides access to [Table](#table) resource.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.tables)
+[DynamoDB.ServiceResource.tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.tables)
 
 ## Methods
 
@@ -70,7 +70,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("dynamodb").Table` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.Table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
+[DynamoDB.ServiceResource.Table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
 
 Arguments:
 
@@ -83,7 +83,7 @@ Returns [Table](#table).
 Type annotations for `boto3.resource("dynamodb").batch_get_item` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
+[DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
 
 Arguments:
 
@@ -91,7 +91,7 @@ Arguments:
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
 Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
@@ -100,7 +100,7 @@ Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").batch_write_item` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
+[DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
 
 Arguments:
 
@@ -108,9 +108,9 @@ Arguments:
   `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
 Returns
 [BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
@@ -120,7 +120,7 @@ Returns
 Type annotations for `boto3.resource("dynamodb").create_table` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
+[DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Arguments:
   `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `GlobalSecondaryIndexes`:
   `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `BillingMode`: [BillingMode](./literals.md#billingmode)
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `StreamSpecification`:
@@ -152,7 +152,7 @@ Type annotations for `boto3.resource("dynamodb").get_available_subresources`
 method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
+[DynamoDB.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -170,7 +170,7 @@ def get_resource() -> Table:
 ```
 
 Boto3 documentation:
-[DynamoDB.Table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
+[DynamoDB.Table](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
 
 ### Table attributes
 
@@ -204,7 +204,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("dynamodb").batch_writer` method.
 
 Boto3 documentation:
-[DynamoDB.Table.batch_writer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
+[DynamoDB.Table.batch_writer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns `BatchWriter`.
 Type annotations for `boto3.resource("dynamodb").delete` method.
 
 Boto3 documentation:
-[DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete)
+[DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.delete)
 
 Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
@@ -226,7 +226,7 @@ Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").delete_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
+[DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
 
 Arguments:
 
@@ -236,12 +236,13 @@ Arguments:
   *(required)*
 - `Expected`: `Dict`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
-- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 - `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
@@ -257,7 +258,7 @@ Type annotations for `boto3.resource("dynamodb").get_available_subresources`
 method.
 
 Boto3 documentation:
-[DynamoDB.Table.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
+[DynamoDB.Table.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -266,7 +267,7 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("dynamodb").get_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_item)
+[DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.get_item)
 
 Arguments:
 
@@ -277,7 +278,7 @@ Arguments:
 - `AttributesToGet`: `List`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
@@ -288,29 +289,30 @@ Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").load` method.
 
 Boto3 documentation:
-[DynamoDB.Table.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.load)
+[DynamoDB.Table.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.load)
 
 #### Table.put_item method
 
 Type annotations for `boto3.resource("dynamodb").put_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.put_item)
+[DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.put_item)
 
 Arguments:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
-  *(required)*
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\] *(required)*
 - `Expected`: `Dict`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 - `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
@@ -325,12 +327,12 @@ Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").query` method.
 
 Boto3 documentation:
-[DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.query)
+[DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.query)
 
 Arguments:
 
 - `IndexName`: `str`
-- `Select`: [Select](./literals.md#select)
+- `Select`: [SelectType](./literals.md#selecttype)
 - `AttributesToGet`: `List`\[`str`\]
 - `Limit`: `int`
 - `ConsistentRead`: `bool`
@@ -338,14 +340,15 @@ Arguments:
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `QueryFilter`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ScanIndexForward`: `bool`
 - `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
 - `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
@@ -362,30 +365,31 @@ Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").reload` method.
 
 Boto3 documentation:
-[DynamoDB.Table.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.reload)
+[DynamoDB.Table.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.reload)
 
 #### Table.scan method
 
 Type annotations for `boto3.resource("dynamodb").scan` method.
 
 Boto3 documentation:
-[DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.scan)
+[DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.scan)
 
 Arguments:
 
 - `IndexName`: `str`
 - `AttributesToGet`: `List`\[`str`\]
 - `Limit`: `int`
-- `Select`: [Select](./literals.md#select)
+- `Select`: [SelectType](./literals.md#selecttype)
 - `ScanFilter`: `Dict`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
@@ -404,13 +408,13 @@ Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").update` method.
 
 Boto3 documentation:
-[DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update)
+[DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.update)
 
 Arguments:
 
 - `AttributeDefinitions`:
   `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `BillingMode`: [BillingMode](./literals.md#billingmode)
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `GlobalSecondaryIndexUpdates`:
@@ -429,7 +433,7 @@ Returns [Table](#table).
 Type annotations for `boto3.resource("dynamodb").update_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item)
+[DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.update_item)
 
 Arguments:
 
@@ -441,12 +445,13 @@ Arguments:
   [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
 - `Expected`: `Dict`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
-- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `UpdateExpression`: `str`
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
@@ -462,11 +467,11 @@ Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").wait_until_exists` method.
 
 Boto3 documentation:
-[DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
+[DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
 
 #### Table.wait_until_not_exists method
 
 Type annotations for `boto3.resource("dynamodb").wait_until_not_exists` method.
 
 Boto3 documentation:
-[DynamoDB.Table.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_not_exists)
+[DynamoDB.Table.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB.Table.wait_until_not_exists)

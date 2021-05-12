@@ -3,26 +3,26 @@
 > [Index](..) > [ApplicationInsights](.) > Literals
 
 Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
 [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 - [Literals for boto3 ApplicationInsights module](#literals-for-boto3-applicationinsights-module)
-  - [CloudWatchEventSource](#cloudwatcheventsource)
-  - [ConfigurationEventResourceType](#configurationeventresourcetype)
-  - [ConfigurationEventStatus](#configurationeventstatus)
-  - [FeedbackKey](#feedbackkey)
-  - [FeedbackValue](#feedbackvalue)
-  - [LogFilter](#logfilter)
-  - [OsType](#ostype)
-  - [SeverityLevel](#severitylevel)
-  - [Status](#status)
-  - [Tier](#tier)
+  - [CloudWatchEventSourceType](#cloudwatcheventsourcetype)
+  - [ConfigurationEventResourceTypeType](#configurationeventresourcetypetype)
+  - [ConfigurationEventStatusType](#configurationeventstatustype)
+  - [FeedbackKeyType](#feedbackkeytype)
+  - [FeedbackValueType](#feedbackvaluetype)
+  - [LogFilterType](#logfiltertype)
+  - [OsTypeType](#ostypetype)
+  - [SeverityLevelType](#severityleveltype)
+  - [StatusType](#statustype)
+  - [TierType](#tiertype)
 
-## CloudWatchEventSource
+## CloudWatchEventSourceType
 
 ```python
-from mypy_boto3_application_insights.literals import CloudWatchEventSource
+from mypy_boto3_application_insights.literals import CloudWatchEventSourceType
 ```
 
 Values:
@@ -32,10 +32,10 @@ Values:
 - `HEALTH`
 - `RDS`
 
-## ConfigurationEventResourceType
+## ConfigurationEventResourceTypeType
 
 ```python
-from mypy_boto3_application_insights.literals import ConfigurationEventResourceType
+from mypy_boto3_application_insights.literals import ConfigurationEventResourceTypeType
 ```
 
 Values:
@@ -45,10 +45,10 @@ Values:
 - `CLOUDWATCH_LOG`
 - `SSM_ASSOCIATION`
 
-## ConfigurationEventStatus
+## ConfigurationEventStatusType
 
 ```python
-from mypy_boto3_application_insights.literals import ConfigurationEventStatus
+from mypy_boto3_application_insights.literals import ConfigurationEventStatusType
 ```
 
 Values:
@@ -57,20 +57,20 @@ Values:
 - `INFO`
 - `WARN`
 
-## FeedbackKey
+## FeedbackKeyType
 
 ```python
-from mypy_boto3_application_insights.literals import FeedbackKey
+from mypy_boto3_application_insights.literals import FeedbackKeyType
 ```
 
 Values:
 
 - `INSIGHTS_FEEDBACK`
 
-## FeedbackValue
+## FeedbackValueType
 
 ```python
-from mypy_boto3_application_insights.literals import FeedbackValue
+from mypy_boto3_application_insights.literals import FeedbackValueType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `NOT_USEFUL`
 - `USEFUL`
 
-## LogFilter
+## LogFilterType
 
 ```python
-from mypy_boto3_application_insights.literals import LogFilter
+from mypy_boto3_application_insights.literals import LogFilterType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `INFO`
 - `WARN`
 
-## OsType
+## OsTypeType
 
 ```python
-from mypy_boto3_application_insights.literals import OsType
+from mypy_boto3_application_insights.literals import OsTypeType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `LINUX`
 - `WINDOWS`
 
-## SeverityLevel
+## SeverityLevelType
 
 ```python
-from mypy_boto3_application_insights.literals import SeverityLevel
+from mypy_boto3_application_insights.literals import SeverityLevelType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `Low`
 - `Medium`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_application_insights.literals import Status
+from mypy_boto3_application_insights.literals import StatusType
 ```
 
 Values:
@@ -126,10 +126,10 @@ Values:
 - `PENDING`
 - `RESOLVED`
 
-## Tier
+## TierType
 
 ```python
-from mypy_boto3_application_insights.literals import Tier
+from mypy_boto3_application_insights.literals import TierType
 ```
 
 Values:

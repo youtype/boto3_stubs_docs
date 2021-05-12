@@ -3,7 +3,7 @@
 > [Index](..) > [TimestreamQuery](.) > Paginators
 
 Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
@@ -24,7 +24,7 @@ def get_query_paginator() -> QueryPaginator:
 ```
 
 Boto3 documentation:
-[TimestreamQuery.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Paginator.Query)
+[TimestreamQuery.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/timestream-query.html#TimestreamQuery.Paginator.Query)
 
 Arguments for `QueryPaginator.paginate` method:
 

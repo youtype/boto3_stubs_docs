@@ -3,7 +3,7 @@
 > [Index](..) > LookoutEquipment
 
 Auto-generated documentation for
-[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
 [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
@@ -29,45 +29,45 @@ Can be used directly:
 from mypy_boto3_lookoutequipment.client import LookoutEquipmentClient
 ```
 
-LookoutEquipmentClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_dataset](./client.md#create-dataset)
-- [create_inference_scheduler](./client.md#create-inference-scheduler)
-- [create_model](./client.md#create-model)
-- [delete_dataset](./client.md#delete-dataset)
-- [delete_inference_scheduler](./client.md#delete-inference-scheduler)
-- [delete_model](./client.md#delete-model)
-- [describe_data_ingestion_job](./client.md#describe-data-ingestion-job)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_inference_scheduler](./client.md#describe-inference-scheduler)
-- [describe_model](./client.md#describe-model)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_data_ingestion_jobs](./client.md#list-data-ingestion-jobs)
-- [list_datasets](./client.md#list-datasets)
-- [list_inference_executions](./client.md#list-inference-executions)
-- [list_inference_schedulers](./client.md#list-inference-schedulers)
-- [list_models](./client.md#list-models)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_data_ingestion_job](./client.md#start-data-ingestion-job)
-- [start_inference_scheduler](./client.md#start-inference-scheduler)
-- [stop_inference_scheduler](./client.md#stop-inference-scheduler)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_inference_scheduler](./client.md#update-inference-scheduler)
+- [can_paginate](./client.md#can_paginate)
+- [create_dataset](./client.md#create_dataset)
+- [create_inference_scheduler](./client.md#create_inference_scheduler)
+- [create_model](./client.md#create_model)
+- [delete_dataset](./client.md#delete_dataset)
+- [delete_inference_scheduler](./client.md#delete_inference_scheduler)
+- [delete_model](./client.md#delete_model)
+- [describe_data_ingestion_job](./client.md#describe_data_ingestion_job)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_inference_scheduler](./client.md#describe_inference_scheduler)
+- [describe_model](./client.md#describe_model)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_data_ingestion_jobs](./client.md#list_data_ingestion_jobs)
+- [list_datasets](./client.md#list_datasets)
+- [list_inference_executions](./client.md#list_inference_executions)
+- [list_inference_schedulers](./client.md#list_inference_schedulers)
+- [list_models](./client.md#list_models)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_data_ingestion_job](./client.md#start_data_ingestion_job)
+- [start_inference_scheduler](./client.md#start_inference_scheduler)
+- [stop_inference_scheduler](./client.md#stop_inference_scheduler)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_inference_scheduler](./client.md#update_inference_scheduler)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+LookoutEquipmentClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -76,16 +76,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutequipment.literals import DataUploadFrequency, ...
+from mypy_boto3_lookoutequipment.literals import DataUploadFrequencyType, ...
 ```
 
-- [DataUploadFrequency](./literals.md#datauploadfrequency)
-- [DatasetStatus](./literals.md#datasetstatus)
-- [InferenceExecutionStatus](./literals.md#inferenceexecutionstatus)
-- [InferenceSchedulerStatus](./literals.md#inferenceschedulerstatus)
-- [IngestionJobStatus](./literals.md#ingestionjobstatus)
-- [ModelStatus](./literals.md#modelstatus)
-- [TargetSamplingRate](./literals.md#targetsamplingrate)
+- [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
+- [DatasetStatusType](./literals.md#datasetstatustype)
+- [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
+- [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
+- [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
+- [ModelStatusType](./literals.md#modelstatustype)
+- [TargetSamplingRateType](./literals.md#targetsamplingratetype)
 
 ## Typed dictionaries
 

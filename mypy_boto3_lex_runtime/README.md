@@ -3,7 +3,7 @@
 > [Index](..) > LexRuntimeService
 
 Auto-generated documentation for
-[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
+[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
 [mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
@@ -29,32 +29,32 @@ Can be used directly:
 from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
 ```
 
-LexRuntimeServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_session](./client.md#delete-session)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_session](./client.md#get-session)
-- [post_content](./client.md#post-content)
-- [post_text](./client.md#post-text)
-- [put_session](./client.md#put-session)
+- [can_paginate](./client.md#can_paginate)
+- [delete_session](./client.md#delete_session)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_session](./client.md#get_session)
+- [post_content](./client.md#post_content)
+- [post_text](./client.md#post_text)
+- [put_session](./client.md#put_session)
 
 ### Exceptions
 
-- [BadGatewayException](./client.md#badgatewayexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [DependencyFailedException](./client.md#dependencyfailedexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [LoopDetectedException](./client.md#loopdetectedexception)
-- [NotAcceptableException](./client.md#notacceptableexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [RequestTimeoutException](./client.md#requesttimeoutexception)
-- [UnsupportedMediaTypeException](./client.md#unsupportedmediatypeexception)
+LexRuntimeServiceClient [exceptions](./client.md#exceptions)
+
+- BadGatewayException
+- BadRequestException
+- ClientError
+- ConflictException
+- DependencyFailedException
+- InternalFailureException
+- LimitExceededException
+- LoopDetectedException
+- NotAcceptableException
+- NotFoundException
+- RequestTimeoutException
+- UnsupportedMediaTypeException
 
 ## Literals
 
@@ -63,15 +63,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_runtime.literals import ConfirmationStatus, ...
+from mypy_boto3_lex_runtime.literals import ConfirmationStatusType, ...
 ```
 
-- [ConfirmationStatus](./literals.md#confirmationstatus)
-- [ContentType](./literals.md#contenttype)
-- [DialogActionType](./literals.md#dialogactiontype)
-- [DialogState](./literals.md#dialogstate)
-- [FulfillmentState](./literals.md#fulfillmentstate)
-- [MessageFormatType](./literals.md#messageformattype)
+- [ConfirmationStatusType](./literals.md#confirmationstatustype)
+- [ContentTypeType](./literals.md#contenttypetype)
+- [DialogActionTypeType](./literals.md#dialogactiontypetype)
+- [DialogStateType](./literals.md#dialogstatetype)
+- [FulfillmentStateType](./literals.md#fulfillmentstatetype)
+- [MessageFormatTypeType](./literals.md#messageformattypetype)
 
 ## Typed dictionaries
 

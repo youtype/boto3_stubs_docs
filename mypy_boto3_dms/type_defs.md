@@ -3,7 +3,7 @@
 > [Index](..) > [DatabaseMigrationService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
 [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
@@ -359,7 +359,8 @@ from mypy_boto3_dms.type_defs import DescribeConnectionsResponseTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `Connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 
 ## DescribeEndpointSettingsResponseTypeDef
 
@@ -599,7 +600,7 @@ Optional fields:
 - `ServerName`: `str`
 - `Port`: `int`
 - `DatabaseName`: `str`
-- `NestingLevel`: [NestingLevelValue](./literals.md#nestinglevelvalue)
+- `NestingLevel`: [NestingLevelValueType](./literals.md#nestinglevelvaluetype)
 - `ExtractDocId`: `bool`
 - `DocsToInvestigate`: `int`
 - `KmsKeyId`: `str`
@@ -641,7 +642,8 @@ from mypy_boto3_dms.type_defs import EndpointSettingTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`: [EndpointSettingTypeValue](./literals.md#endpointsettingtypevalue)
+- `Type`:
+  [EndpointSettingTypeValueType](./literals.md#endpointsettingtypevaluetype)
 - `EnumValues`: `List`\[`str`\]
 - `Sensitive`: `bool`
 - `Units`: `str`
@@ -659,7 +661,7 @@ Optional fields:
 
 - `EndpointIdentifier`: `str`
 - `EndpointType`:
-  [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
+  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
 - `EngineName`: `str`
 - `EngineDisplayName`: `str`
 - `Username`: `str`
@@ -671,7 +673,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `EndpointArn`: `str`
 - `CertificateArn`: `str`
-- `SslMode`: [DmsSslModeValue](./literals.md#dmssslmodevalue)
+- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
 - `ServiceAccessRoleArn`: `str`
 - `ExternalTableDefinition`: `str`
 - `ExternalId`: `str`
@@ -694,11 +696,14 @@ Optional fields:
 - `PostgreSQLSettings`:
   [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
 - `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
-- `OracleSettings`: [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
-- `SybaseSettings`: [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
 - `MicrosoftSQLServerSettings`:
   [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
-- `IBMDb2Settings`: [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 
 ## EventCategoryGroupTypeDef
@@ -740,7 +745,7 @@ Optional fields:
 
 - `SourceIdentifier`: `str`
 - `SourceType`: `Literal['replication-instance']` (see
-  [SourceType](./literals.md#sourcetype))
+  [SourceTypeType](./literals.md#sourcetypetype))
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
@@ -795,7 +800,8 @@ Optional fields:
 
 - `Broker`: `str`
 - `Topic`: `str`
-- `MessageFormat`: [MessageFormatValue](./literals.md#messageformatvalue)
+- `MessageFormat`:
+  [MessageFormatValueType](./literals.md#messageformatvaluetype)
 - `IncludeTransactionDetails`: `bool`
 - `IncludePartitionValue`: `bool`
 - `PartitionIncludeSchemaTable`: `bool`
@@ -804,7 +810,7 @@ Optional fields:
 - `MessageMaxBytes`: `int`
 - `IncludeNullAndEmpty`: `bool`
 - `SecurityProtocol`:
-  [KafkaSecurityProtocol](./literals.md#kafkasecurityprotocol)
+  [KafkaSecurityProtocolType](./literals.md#kafkasecurityprotocoltype)
 - `SslClientCertificateArn`: `str`
 - `SslClientKeyArn`: `str`
 - `SslClientKeyPassword`: `str`
@@ -821,7 +827,8 @@ from mypy_boto3_dms.type_defs import KinesisSettingsTypeDef
 Optional fields:
 
 - `StreamArn`: `str`
-- `MessageFormat`: [MessageFormatValue](./literals.md#messageformatvalue)
+- `MessageFormat`:
+  [MessageFormatValueType](./literals.md#messageformatvaluetype)
 - `ServiceAccessRoleArn`: `str`
 - `IncludeTransactionDetails`: `bool`
 - `IncludePartitionValue`: `bool`
@@ -855,7 +862,7 @@ Optional fields:
 - `Password`: `str`
 - `QuerySingleAlwaysOnNode`: `bool`
 - `ReadBackupOnly`: `bool`
-- `SafeguardPolicy`: [SafeguardPolicy](./literals.md#safeguardpolicy)
+- `SafeguardPolicy`: [SafeguardPolicyType](./literals.md#safeguardpolicytype)
 - `ServerName`: `str`
 - `Username`: `str`
 - `UseBcpFullLoad`: `bool`
@@ -930,9 +937,10 @@ Optional fields:
 - `ServerName`: `str`
 - `Port`: `int`
 - `DatabaseName`: `str`
-- `AuthType`: [AuthTypeValue](./literals.md#authtypevalue)
-- `AuthMechanism`: [AuthMechanismValue](./literals.md#authmechanismvalue)
-- `NestingLevel`: [NestingLevelValue](./literals.md#nestinglevelvalue)
+- `AuthType`: [AuthTypeValueType](./literals.md#authtypevaluetype)
+- `AuthMechanism`:
+  [AuthMechanismValueType](./literals.md#authmechanismvaluetype)
+- `NestingLevel`: [NestingLevelValueType](./literals.md#nestinglevelvaluetype)
 - `ExtractDocId`: `str`
 - `DocsToInvestigate`: `str`
 - `AuthSource`: `str`
@@ -963,7 +971,7 @@ Optional fields:
 - `CleanSourceMetadataOnMismatch`: `bool`
 - `DatabaseName`: `str`
 - `EventsPollInterval`: `int`
-- `TargetDbType`: [TargetDbType](./literals.md#targetdbtype)
+- `TargetDbType`: [TargetDbTypeType](./literals.md#targetdbtypetype)
 - `MaxFileSize`: `int`
 - `ParallelLoadThreads`: `int`
 - `Password`: `str`
@@ -1018,7 +1026,8 @@ Optional fields:
 - `AsmPassword`: `str`
 - `AsmServer`: `str`
 - `AsmUser`: `str`
-- `CharLengthSemantics`: [CharLengthSemantics](./literals.md#charlengthsemantics)
+- `CharLengthSemantics`:
+  [CharLengthSemanticsType](./literals.md#charlengthsemanticstype)
 - `DatabaseName`: `str`
 - `DirectPathParallelLoad`: `bool`
 - `FailTasksOnLobTruncation`: `bool`
@@ -1054,7 +1063,7 @@ Optional fields:
 - `IncludedAllocatedStorage`: `int`
 - `AvailabilityZones`: `List`\[`str`\]
 - `ReleaseStatus`: `Literal['beta']` (see
-  [ReleaseStatusValues](./literals.md#releasestatusvalues))
+  [ReleaseStatusValuesType](./literals.md#releasestatusvaluestype))
 
 ## PaginatorConfigTypeDef
 
@@ -1135,7 +1144,8 @@ Optional fields:
 - `DatabaseName`: `str`
 - `DateFormat`: `str`
 - `EmptyAsNull`: `bool`
-- `EncryptionMode`: [EncryptionModeValue](./literals.md#encryptionmodevalue)
+- `EncryptionMode`:
+  [EncryptionModeValueType](./literals.md#encryptionmodevaluetype)
 - `ExplicitIds`: `bool`
 - `FileTransferUploadStreams`: `int`
 - `LoadTimeout`: `int`
@@ -1178,7 +1188,7 @@ Optional fields:
 - `EndpointArn`: `str`
 - `ReplicationInstanceArn`: `str`
 - `Status`:
-  [RefreshSchemasStatusTypeValue](./literals.md#refreshschemasstatustypevalue)
+  [RefreshSchemasStatusTypeValueType](./literals.md#refreshschemasstatustypevaluetype)
 - `LastRefreshDate`: `datetime`
 - `LastFailureMessage`: `str`
 
@@ -1361,7 +1371,8 @@ Optional fields:
 - `SourceEndpointArn`: `str`
 - `TargetEndpointArn`: `str`
 - `ReplicationInstanceArn`: `str`
-- `MigrationType`: [MigrationTypeValue](./literals.md#migrationtypevalue)
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
 - `TableMappings`: `str`
 - `ReplicationTaskSettings`: `str`
 - `Status`: `str`
@@ -1404,15 +1415,18 @@ Optional fields:
 - `CsvDelimiter`: `str`
 - `BucketFolder`: `str`
 - `BucketName`: `str`
-- `CompressionType`: [CompressionTypeValue](./literals.md#compressiontypevalue)
-- `EncryptionMode`: [EncryptionModeValue](./literals.md#encryptionmodevalue)
+- `CompressionType`:
+  [CompressionTypeValueType](./literals.md#compressiontypevaluetype)
+- `EncryptionMode`:
+  [EncryptionModeValueType](./literals.md#encryptionmodevaluetype)
 - `ServerSideEncryptionKmsKeyId`: `str`
-- `DataFormat`: [DataFormatValue](./literals.md#dataformatvalue)
-- `EncodingType`: [EncodingTypeValue](./literals.md#encodingtypevalue)
+- `DataFormat`: [DataFormatValueType](./literals.md#dataformatvaluetype)
+- `EncodingType`: [EncodingTypeValueType](./literals.md#encodingtypevaluetype)
 - `DictPageSizeLimit`: `int`
 - `RowGroupLength`: `int`
 - `DataPageSize`: `int`
-- `ParquetVersion`: [ParquetVersionValue](./literals.md#parquetversionvalue)
+- `ParquetVersion`:
+  [ParquetVersionValueType](./literals.md#parquetversionvaluetype)
 - `EnableStatistics`: `bool`
 - `IncludeOpForFullLoad`: `bool`
 - `CdcInsertsOnly`: `bool`
@@ -1421,9 +1435,9 @@ Optional fields:
 - `CdcInsertsAndUpdates`: `bool`
 - `DatePartitionEnabled`: `bool`
 - `DatePartitionSequence`:
-  [DatePartitionSequenceValue](./literals.md#datepartitionsequencevalue)
+  [DatePartitionSequenceValueType](./literals.md#datepartitionsequencevaluetype)
 - `DatePartitionDelimiter`:
-  [DatePartitionDelimiterValue](./literals.md#datepartitiondelimitervalue)
+  [DatePartitionDelimiterValueType](./literals.md#datepartitiondelimitervaluetype)
 - `UseCsvNoSupValue`: `bool`
 - `CsvNoSupValue`: `str`
 - `PreserveTransactions`: `bool`
@@ -1497,7 +1511,7 @@ Optional fields:
 - `EngineName`: `str`
 - `SupportsCDC`: `bool`
 - `EndpointType`:
-  [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
+  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
 - `ReplicationInstanceEngineMinimumVersion`: `str`
 - `EngineDisplayName`: `str`
 

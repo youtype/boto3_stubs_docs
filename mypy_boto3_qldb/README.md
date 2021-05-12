@@ -3,7 +3,7 @@
 > [Index](..) > QLDB
 
 Auto-generated documentation for
-[QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
+[QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB)
 type annotations stubs module
 [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
@@ -28,41 +28,41 @@ Can be used directly:
 from mypy_boto3_qldb.client import QLDBClient
 ```
 
-QLDBClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_journal_kinesis_stream](./client.md#cancel-journal-kinesis-stream)
-- [create_ledger](./client.md#create-ledger)
-- [delete_ledger](./client.md#delete-ledger)
-- [describe_journal_kinesis_stream](./client.md#describe-journal-kinesis-stream)
-- [describe_journal_s3_export](./client.md#describe-journal-s3-export)
-- [describe_ledger](./client.md#describe-ledger)
-- [export_journal_to_s3](./client.md#export-journal-to-s3)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_block](./client.md#get-block)
-- [get_digest](./client.md#get-digest)
-- [get_revision](./client.md#get-revision)
-- [list_journal_kinesis_streams_for_ledger](./client.md#list-journal-kinesis-streams-for-ledger)
-- [list_journal_s3_exports](./client.md#list-journal-s3-exports)
-- [list_journal_s3_exports_for_ledger](./client.md#list-journal-s3-exports-for-ledger)
-- [list_ledgers](./client.md#list-ledgers)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [stream_journal_to_kinesis](./client.md#stream-journal-to-kinesis)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_ledger](./client.md#update-ledger)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_journal_kinesis_stream](./client.md#cancel_journal_kinesis_stream)
+- [create_ledger](./client.md#create_ledger)
+- [delete_ledger](./client.md#delete_ledger)
+- [describe_journal_kinesis_stream](./client.md#describe_journal_kinesis_stream)
+- [describe_journal_s3_export](./client.md#describe_journal_s3_export)
+- [describe_ledger](./client.md#describe_ledger)
+- [export_journal_to_s3](./client.md#export_journal_to_s3)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_block](./client.md#get_block)
+- [get_digest](./client.md#get_digest)
+- [get_revision](./client.md#get_revision)
+- [list_journal_kinesis_streams_for_ledger](./client.md#list_journal_kinesis_streams_for_ledger)
+- [list_journal_s3_exports](./client.md#list_journal_s3_exports)
+- [list_journal_s3_exports_for_ledger](./client.md#list_journal_s3_exports_for_ledger)
+- [list_ledgers](./client.md#list_ledgers)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [stream_journal_to_kinesis](./client.md#stream_journal_to_kinesis)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_ledger](./client.md#update_ledger)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourcePreconditionNotMetException](./client.md#resourcepreconditionnotmetexception)
+QLDBClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidParameterException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotFoundException
+- ResourcePreconditionNotMetException
 
 ## Literals
 
@@ -71,15 +71,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_qldb.literals import ErrorCause, ...
+from mypy_boto3_qldb.literals import ErrorCauseType, ...
 ```
 
-- [ErrorCause](./literals.md#errorcause)
-- [ExportStatus](./literals.md#exportstatus)
-- [LedgerState](./literals.md#ledgerstate)
-- [PermissionsMode](./literals.md#permissionsmode)
-- [S3ObjectEncryptionType](./literals.md#s3objectencryptiontype)
-- [StreamStatus](./literals.md#streamstatus)
+- [ErrorCauseType](./literals.md#errorcausetype)
+- [ExportStatusType](./literals.md#exportstatustype)
+- [LedgerStateType](./literals.md#ledgerstatetype)
+- [PermissionsModeType](./literals.md#permissionsmodetype)
+- [S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype)
+- [StreamStatusType](./literals.md#streamstatustype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [FSx](.) > FSxClient
 
 Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx)
 type annotations stubs module
 [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
@@ -47,7 +47,7 @@ def get_fsx_client() -> FSxClient:
 ```
 
 Boto3 documentation:
-[FSx.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client)
+[FSx.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client)
 
 ## Exceptions
 
@@ -100,7 +100,7 @@ Type annotations for `boto3.client("fsx").associate_file_system_aliases`
 method.
 
 Boto3 documentation:
-[FSx.Client.associate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
+[FSx.Client.associate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns
 Type annotations for `boto3.client("fsx").can_paginate` method.
 
 Boto3 documentation:
-[FSx.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.can_paginate)
+[FSx.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.can_paginate)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns `bool`.
 Type annotations for `boto3.client("fsx").cancel_data_repository_task` method.
 
 Boto3 documentation:
-[FSx.Client.cancel_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
+[FSx.Client.cancel_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns
 Type annotations for `boto3.client("fsx").copy_backup` method.
 
 Boto3 documentation:
-[FSx.Client.copy_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
+[FSx.Client.copy_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.copy_backup)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 Type annotations for `boto3.client("fsx").create_backup` method.
 
 Boto3 documentation:
-[FSx.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
+[FSx.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.create_backup)
 
 Arguments:
 
@@ -177,12 +177,13 @@ Returns
 Type annotations for `boto3.client("fsx").create_data_repository_task` method.
 
 Boto3 documentation:
-[FSx.Client.create_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
+[FSx.Client.create_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.create_data_repository_task)
 
 Arguments:
 
 - `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
-  [DataRepositoryTaskType](./literals.md#datarepositorytasktype)) *(required)*
+  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
+  *(required)*
 - `FileSystemId`: `str` *(required)*
 - `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
   *(required)*
@@ -198,15 +199,16 @@ Returns
 Type annotations for `boto3.client("fsx").create_file_system` method.
 
 Boto3 documentation:
-[FSx.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
+[FSx.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.create_file_system)
 
 Arguments:
 
-- `FileSystemType`: [FileSystemType](./literals.md#filesystemtype) *(required)*
+- `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
+  *(required)*
 - `StorageCapacity`: `int` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
-- `StorageType`: [StorageType](./literals.md#storagetype)
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `SecurityGroupIds`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
@@ -224,7 +226,7 @@ Type annotations for `boto3.client("fsx").create_file_system_from_backup`
 method.
 
 Boto3 documentation:
-[FSx.Client.create_file_system_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
+[FSx.Client.create_file_system_from_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
 
 Arguments:
 
@@ -237,7 +239,7 @@ Arguments:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
-- `StorageType`: [StorageType](./literals.md#storagetype)
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `KmsKeyId`: `str`
 
 Returns
@@ -248,7 +250,7 @@ Returns
 Type annotations for `boto3.client("fsx").delete_backup` method.
 
 Boto3 documentation:
-[FSx.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
+[FSx.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.delete_backup)
 
 Arguments:
 
@@ -263,7 +265,7 @@ Returns
 Type annotations for `boto3.client("fsx").delete_file_system` method.
 
 Boto3 documentation:
-[FSx.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
+[FSx.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.delete_file_system)
 
 Arguments:
 
@@ -282,7 +284,7 @@ Returns
 Type annotations for `boto3.client("fsx").describe_backups` method.
 
 Boto3 documentation:
-[FSx.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
+[FSx.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.describe_backups)
 
 Arguments:
 
@@ -300,7 +302,7 @@ Type annotations for `boto3.client("fsx").describe_data_repository_tasks`
 method.
 
 Boto3 documentation:
-[FSx.Client.describe_data_repository_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
+[FSx.Client.describe_data_repository_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
 
 Arguments:
 
@@ -318,7 +320,7 @@ Returns
 Type annotations for `boto3.client("fsx").describe_file_system_aliases` method.
 
 Boto3 documentation:
-[FSx.Client.describe_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
+[FSx.Client.describe_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
 
 Arguments:
 
@@ -335,7 +337,7 @@ Returns
 Type annotations for `boto3.client("fsx").describe_file_systems` method.
 
 Boto3 documentation:
-[FSx.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
+[FSx.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.describe_file_systems)
 
 Arguments:
 
@@ -352,7 +354,7 @@ Type annotations for `boto3.client("fsx").disassociate_file_system_aliases`
 method.
 
 Boto3 documentation:
-[FSx.Client.disassociate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
+[FSx.Client.disassociate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
 
 Arguments:
 
@@ -368,7 +370,7 @@ Returns
 Type annotations for `boto3.client("fsx").generate_presigned_url` method.
 
 Boto3 documentation:
-[FSx.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.generate_presigned_url)
+[FSx.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.generate_presigned_url)
 
 Arguments:
 
@@ -384,7 +386,7 @@ Returns `str`.
 Type annotations for `boto3.client("fsx").list_tags_for_resource` method.
 
 Boto3 documentation:
-[FSx.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
+[FSx.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -400,7 +402,7 @@ Returns
 Type annotations for `boto3.client("fsx").tag_resource` method.
 
 Boto3 documentation:
-[FSx.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
+[FSx.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.tag_resource)
 
 Arguments:
 
@@ -414,7 +416,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("fsx").untag_resource` method.
 
 Boto3 documentation:
-[FSx.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
+[FSx.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.untag_resource)
 
 Arguments:
 
@@ -428,7 +430,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("fsx").update_file_system` method.
 
 Boto3 documentation:
-[FSx.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
+[FSx.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fsx.html#FSx.Client.update_file_system)
 
 Arguments:
 

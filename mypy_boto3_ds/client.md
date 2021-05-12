@@ -3,7 +3,7 @@
 > [Index](..) > [DirectoryService](.) > DirectoryServiceClient
 
 Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService)
 type annotations stubs module
 [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
@@ -91,7 +91,7 @@ def get_ds_client() -> DirectoryServiceClient:
 ```
 
 Boto3 documentation:
-[DirectoryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
+[DirectoryService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client)
 
 ## Exceptions
 
@@ -150,7 +150,7 @@ Exceptions:
 Type annotations for `boto3.client("ds").accept_shared_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.accept_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
+[DirectoryService.Client.accept_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
 
 Arguments:
 
@@ -164,7 +164,7 @@ Returns
 Type annotations for `boto3.client("ds").add_ip_routes` method.
 
 Boto3 documentation:
-[DirectoryService.Client.add_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes)
+[DirectoryService.Client.add_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.add_ip_routes)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").add_region` method.
 
 Boto3 documentation:
-[DirectoryService.Client.add_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region)
+[DirectoryService.Client.add_region](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.add_region)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").add_tags_to_resource` method.
 
 Boto3 documentation:
-[DirectoryService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
+[DirectoryService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").can_paginate` method.
 
 Boto3 documentation:
-[DirectoryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate)
+[DirectoryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.can_paginate)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ds").cancel_schema_extension` method.
 
 Boto3 documentation:
-[DirectoryService.Client.cancel_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
+[DirectoryService.Client.cancel_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
 
 Arguments:
 
@@ -238,13 +238,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").connect_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.connect_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory)
+[DirectoryService.Client.connect_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.connect_directory)
 
 Arguments:
 
 - `Name`: `str` *(required)*
 - `Password`: `str` *(required)*
-- `Size`: [DirectorySize](./literals.md#directorysize) *(required)*
+- `Size`: [DirectorySizeType](./literals.md#directorysizetype) *(required)*
 - `ConnectSettings`:
   [DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef)
   *(required)*
@@ -260,7 +260,7 @@ Returns
 Type annotations for `boto3.client("ds").create_alias` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias)
+[DirectoryService.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_alias)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns [CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef).
 Type annotations for `boto3.client("ds").create_computer` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_computer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer)
+[DirectoryService.Client.create_computer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_computer)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Returns
 Type annotations for `boto3.client("ds").create_conditional_forwarder` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder)
+[DirectoryService.Client.create_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder)
 
 Arguments:
 
@@ -308,13 +308,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").create_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory)
+[DirectoryService.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_directory)
 
 Arguments:
 
 - `Name`: `str` *(required)*
 - `Password`: `str` *(required)*
-- `Size`: [DirectorySize](./literals.md#directorysize) *(required)*
+- `Size`: [DirectorySizeType](./literals.md#directorysizetype) *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
 - `VpcSettings`:
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("ds").create_log_subscription` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
+[DirectoryService.Client.create_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
 
 Arguments:
 
@@ -343,7 +343,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").create_microsoft_ad` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_microsoft_ad](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad)
+[DirectoryService.Client.create_microsoft_ad](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad)
 
 Arguments:
 
@@ -354,7 +354,7 @@ Arguments:
   *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
-- `Edition`: [DirectoryEdition](./literals.md#directoryedition)
+- `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -365,7 +365,7 @@ Returns
 Type annotations for `boto3.client("ds").create_snapshot` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot)
+[DirectoryService.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_snapshot)
 
 Arguments:
 
@@ -380,17 +380,18 @@ Returns
 Type annotations for `boto3.client("ds").create_trust` method.
 
 Boto3 documentation:
-[DirectoryService.Client.create_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust)
+[DirectoryService.Client.create_trust](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.create_trust)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
 - `TrustPassword`: `str` *(required)*
-- `TrustDirection`: [TrustDirection](./literals.md#trustdirection) *(required)*
-- `TrustType`: [TrustType](./literals.md#trusttype)
+- `TrustDirection`: [TrustDirectionType](./literals.md#trustdirectiontype)
+  *(required)*
+- `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
 - `ConditionalForwarderIpAddrs`: `List`\[`str`\]
-- `SelectiveAuth`: [SelectiveAuth](./literals.md#selectiveauth)
+- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
 Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 
@@ -399,7 +400,7 @@ Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 Type annotations for `boto3.client("ds").delete_conditional_forwarder` method.
 
 Boto3 documentation:
-[DirectoryService.Client.delete_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
+[DirectoryService.Client.delete_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
 
 Arguments:
 
@@ -413,7 +414,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").delete_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory)
+[DirectoryService.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.delete_directory)
 
 Arguments:
 
@@ -427,7 +428,7 @@ Returns
 Type annotations for `boto3.client("ds").delete_log_subscription` method.
 
 Boto3 documentation:
-[DirectoryService.Client.delete_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
+[DirectoryService.Client.delete_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
 
 Arguments:
 
@@ -440,7 +441,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").delete_snapshot` method.
 
 Boto3 documentation:
-[DirectoryService.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
+[DirectoryService.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
 
 Arguments:
 
@@ -454,7 +455,7 @@ Returns
 Type annotations for `boto3.client("ds").delete_trust` method.
 
 Boto3 documentation:
-[DirectoryService.Client.delete_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust)
+[DirectoryService.Client.delete_trust](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.delete_trust)
 
 Arguments:
 
@@ -468,7 +469,7 @@ Returns [DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef).
 Type annotations for `boto3.client("ds").deregister_certificate` method.
 
 Boto3 documentation:
-[DirectoryService.Client.deregister_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
+[DirectoryService.Client.deregister_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
 
 Arguments:
 
@@ -482,7 +483,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").deregister_event_topic` method.
 
 Boto3 documentation:
-[DirectoryService.Client.deregister_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
+[DirectoryService.Client.deregister_event_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
 
 Arguments:
 
@@ -496,7 +497,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").describe_certificate` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate)
+[DirectoryService.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_certificate)
 
 Arguments:
 
@@ -512,7 +513,7 @@ Type annotations for `boto3.client("ds").describe_conditional_forwarders`
 method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_conditional_forwarders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
+[DirectoryService.Client.describe_conditional_forwarders](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
 
 Arguments:
 
@@ -527,7 +528,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_directories` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories)
+[DirectoryService.Client.describe_directories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_directories)
 
 Arguments:
 
@@ -543,7 +544,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_domain_controllers` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers)
+[DirectoryService.Client.describe_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers)
 
 Arguments:
 
@@ -560,7 +561,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_event_topics` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_event_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
+[DirectoryService.Client.describe_event_topics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
 
 Arguments:
 
@@ -575,12 +576,13 @@ Returns
 Type annotations for `boto3.client("ds").describe_ldaps_settings` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_ldaps_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings)
+[DirectoryService.Client.describe_ldaps_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` (see [LDAPSType](./literals.md#ldapstype))
+- `Type`: `Literal['Client']` (see
+  [LDAPSTypeType](./literals.md#ldapstypetype))
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -592,7 +594,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_regions` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions)
+[DirectoryService.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_regions)
 
 Arguments:
 
@@ -608,7 +610,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_shared_directories` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_shared_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories)
+[DirectoryService.Client.describe_shared_directories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_shared_directories)
 
 Arguments:
 
@@ -625,7 +627,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_snapshots` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots)
+[DirectoryService.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_snapshots)
 
 Arguments:
 
@@ -642,7 +644,7 @@ Returns
 Type annotations for `boto3.client("ds").describe_trusts` method.
 
 Boto3 documentation:
-[DirectoryService.Client.describe_trusts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts)
+[DirectoryService.Client.describe_trusts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.describe_trusts)
 
 Arguments:
 
@@ -659,13 +661,13 @@ Returns
 Type annotations for `boto3.client("ds").disable_client_authentication` method.
 
 Boto3 documentation:
-[DirectoryService.Client.disable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
+[DirectoryService.Client.disable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Type`: `Literal['SmartCard']` (see
-  [ClientAuthenticationType](./literals.md#clientauthenticationtype))
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -675,13 +677,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").disable_ldaps` method.
 
 Boto3 documentation:
-[DirectoryService.Client.disable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
+[DirectoryService.Client.disable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` (see [LDAPSType](./literals.md#ldapstype))
-  *(required)*
+- `Type`: `Literal['Client']` (see
+  [LDAPSTypeType](./literals.md#ldapstypetype)) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -690,7 +692,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").disable_radius` method.
 
 Boto3 documentation:
-[DirectoryService.Client.disable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius)
+[DirectoryService.Client.disable_radius](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.disable_radius)
 
 Arguments:
 
@@ -703,7 +705,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").disable_sso` method.
 
 Boto3 documentation:
-[DirectoryService.Client.disable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso)
+[DirectoryService.Client.disable_sso](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.disable_sso)
 
 Arguments:
 
@@ -718,13 +720,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").enable_client_authentication` method.
 
 Boto3 documentation:
-[DirectoryService.Client.enable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
+[DirectoryService.Client.enable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Type`: `Literal['SmartCard']` (see
-  [ClientAuthenticationType](./literals.md#clientauthenticationtype))
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -734,13 +736,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").enable_ldaps` method.
 
 Boto3 documentation:
-[DirectoryService.Client.enable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
+[DirectoryService.Client.enable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` (see [LDAPSType](./literals.md#ldapstype))
-  *(required)*
+- `Type`: `Literal['Client']` (see
+  [LDAPSTypeType](./literals.md#ldapstypetype)) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -749,13 +751,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").enable_radius` method.
 
 Boto3 documentation:
-[DirectoryService.Client.enable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius)
+[DirectoryService.Client.enable_radius](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.enable_radius)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `RadiusSettings`: [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
-  *(required)*
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -764,7 +766,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").enable_sso` method.
 
 Boto3 documentation:
-[DirectoryService.Client.enable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso)
+[DirectoryService.Client.enable_sso](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.enable_sso)
 
 Arguments:
 
@@ -779,7 +781,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").generate_presigned_url` method.
 
 Boto3 documentation:
-[DirectoryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url)
+[DirectoryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -795,7 +797,7 @@ Returns `str`.
 Type annotations for `boto3.client("ds").get_directory_limits` method.
 
 Boto3 documentation:
-[DirectoryService.Client.get_directory_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
+[DirectoryService.Client.get_directory_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
 
 Returns
 [GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef).
@@ -805,7 +807,7 @@ Returns
 Type annotations for `boto3.client("ds").get_snapshot_limits` method.
 
 Boto3 documentation:
-[DirectoryService.Client.get_snapshot_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
+[DirectoryService.Client.get_snapshot_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
 
 Arguments:
 
@@ -819,7 +821,7 @@ Returns
 Type annotations for `boto3.client("ds").list_certificates` method.
 
 Boto3 documentation:
-[DirectoryService.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates)
+[DirectoryService.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.list_certificates)
 
 Arguments:
 
@@ -835,7 +837,7 @@ Returns
 Type annotations for `boto3.client("ds").list_ip_routes` method.
 
 Boto3 documentation:
-[DirectoryService.Client.list_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes)
+[DirectoryService.Client.list_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.list_ip_routes)
 
 Arguments:
 
@@ -850,7 +852,7 @@ Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
 Type annotations for `boto3.client("ds").list_log_subscriptions` method.
 
 Boto3 documentation:
-[DirectoryService.Client.list_log_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions)
+[DirectoryService.Client.list_log_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions)
 
 Arguments:
 
@@ -866,7 +868,7 @@ Returns
 Type annotations for `boto3.client("ds").list_schema_extensions` method.
 
 Boto3 documentation:
-[DirectoryService.Client.list_schema_extensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions)
+[DirectoryService.Client.list_schema_extensions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.list_schema_extensions)
 
 Arguments:
 
@@ -882,7 +884,7 @@ Returns
 Type annotations for `boto3.client("ds").list_tags_for_resource` method.
 
 Boto3 documentation:
-[DirectoryService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource)
+[DirectoryService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -898,13 +900,13 @@ Returns
 Type annotations for `boto3.client("ds").register_certificate` method.
 
 Boto3 documentation:
-[DirectoryService.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate)
+[DirectoryService.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.register_certificate)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `CertificateData`: `str` *(required)*
-- `Type`: [CertificateType](./literals.md#certificatetype)
+- `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
 - `ClientCertAuthSettings`:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
@@ -916,7 +918,7 @@ Returns
 Type annotations for `boto3.client("ds").register_event_topic` method.
 
 Boto3 documentation:
-[DirectoryService.Client.register_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic)
+[DirectoryService.Client.register_event_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.register_event_topic)
 
 Arguments:
 
@@ -930,7 +932,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").reject_shared_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.reject_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
+[DirectoryService.Client.reject_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
 
 Arguments:
 
@@ -944,7 +946,7 @@ Returns
 Type annotations for `boto3.client("ds").remove_ip_routes` method.
 
 Boto3 documentation:
-[DirectoryService.Client.remove_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
+[DirectoryService.Client.remove_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
 
 Arguments:
 
@@ -958,7 +960,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").remove_region` method.
 
 Boto3 documentation:
-[DirectoryService.Client.remove_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region)
+[DirectoryService.Client.remove_region](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.remove_region)
 
 Arguments:
 
@@ -971,7 +973,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").remove_tags_from_resource` method.
 
 Boto3 documentation:
-[DirectoryService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
+[DirectoryService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
 
 Arguments:
 
@@ -985,7 +987,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").reset_user_password` method.
 
 Boto3 documentation:
-[DirectoryService.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password)
+[DirectoryService.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.reset_user_password)
 
 Arguments:
 
@@ -1000,7 +1002,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").restore_from_snapshot` method.
 
 Boto3 documentation:
-[DirectoryService.Client.restore_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
+[DirectoryService.Client.restore_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
 
 Arguments:
 
@@ -1013,14 +1015,14 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").share_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.share_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory)
+[DirectoryService.Client.share_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.share_directory)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `ShareTarget`: [ShareTargetTypeDef](./type_defs.md#sharetargettypedef)
   *(required)*
-- `ShareMethod`: [ShareMethod](./literals.md#sharemethod) *(required)*
+- `ShareMethod`: [ShareMethodType](./literals.md#sharemethodtype) *(required)*
 - `ShareNotes`: `str`
 
 Returns
@@ -1031,7 +1033,7 @@ Returns
 Type annotations for `boto3.client("ds").start_schema_extension` method.
 
 Boto3 documentation:
-[DirectoryService.Client.start_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension)
+[DirectoryService.Client.start_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.start_schema_extension)
 
 Arguments:
 
@@ -1048,7 +1050,7 @@ Returns
 Type annotations for `boto3.client("ds").unshare_directory` method.
 
 Boto3 documentation:
-[DirectoryService.Client.unshare_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory)
+[DirectoryService.Client.unshare_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.unshare_directory)
 
 Arguments:
 
@@ -1064,7 +1066,7 @@ Returns
 Type annotations for `boto3.client("ds").update_conditional_forwarder` method.
 
 Boto3 documentation:
-[DirectoryService.Client.update_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder)
+[DirectoryService.Client.update_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder)
 
 Arguments:
 
@@ -1080,7 +1082,7 @@ Type annotations for `boto3.client("ds").update_number_of_domain_controllers`
 method.
 
 Boto3 documentation:
-[DirectoryService.Client.update_number_of_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
+[DirectoryService.Client.update_number_of_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
 
 Arguments:
 
@@ -1094,13 +1096,13 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").update_radius` method.
 
 Boto3 documentation:
-[DirectoryService.Client.update_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius)
+[DirectoryService.Client.update_radius](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.update_radius)
 
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `RadiusSettings`: [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
-  *(required)*
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1109,12 +1111,12 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ds").update_trust` method.
 
 Boto3 documentation:
-[DirectoryService.Client.update_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust)
+[DirectoryService.Client.update_trust](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.update_trust)
 
 Arguments:
 
 - `TrustId`: `str` *(required)*
-- `SelectiveAuth`: [SelectiveAuth](./literals.md#selectiveauth)
+- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
 Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 
@@ -1123,7 +1125,7 @@ Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 Type annotations for `boto3.client("ds").verify_trust` method.
 
 Boto3 documentation:
-[DirectoryService.Client.verify_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust)
+[DirectoryService.Client.verify_trust](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService.Client.verify_trust)
 
 Arguments:
 

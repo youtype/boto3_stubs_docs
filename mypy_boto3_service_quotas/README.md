@@ -3,7 +3,7 @@
 > [Index](..) > ServiceQuotas
 
 Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
@@ -30,53 +30,53 @@ Can be used directly:
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
 ```
 
-ServiceQuotasClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_service_quota_template](./client.md#associate-service-quota-template)
-- [can_paginate](./client.md#can-paginate)
-- [delete_service_quota_increase_request_from_template](./client.md#delete-service-quota-increase-request-from-template)
-- [disassociate_service_quota_template](./client.md#disassociate-service-quota-template)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_association_for_service_quota_template](./client.md#get-association-for-service-quota-template)
-- [get_aws_default_service_quota](./client.md#get-aws-default-service-quota)
-- [get_paginator](./client.md#get-paginator)
-- [get_requested_service_quota_change](./client.md#get-requested-service-quota-change)
-- [get_service_quota](./client.md#get-service-quota)
-- [get_service_quota_increase_request_from_template](./client.md#get-service-quota-increase-request-from-template)
-- [list_aws_default_service_quotas](./client.md#list-aws-default-service-quotas)
-- [list_requested_service_quota_change_history](./client.md#list-requested-service-quota-change-history)
-- [list_requested_service_quota_change_history_by_quota](./client.md#list-requested-service-quota-change-history-by-quota)
-- [list_service_quota_increase_requests_in_template](./client.md#list-service-quota-increase-requests-in-template)
-- [list_service_quotas](./client.md#list-service-quotas)
-- [list_services](./client.md#list-services)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_service_quota_increase_request_into_template](./client.md#put-service-quota-increase-request-into-template)
-- [request_service_quota_increase](./client.md#request-service-quota-increase)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [associate_service_quota_template](./client.md#associate_service_quota_template)
+- [can_paginate](./client.md#can_paginate)
+- [delete_service_quota_increase_request_from_template](./client.md#delete_service_quota_increase_request_from_template)
+- [disassociate_service_quota_template](./client.md#disassociate_service_quota_template)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_association_for_service_quota_template](./client.md#get_association_for_service_quota_template)
+- [get_aws_default_service_quota](./client.md#get_aws_default_service_quota)
+- [get_paginator](./client.md#get_paginator)
+- [get_requested_service_quota_change](./client.md#get_requested_service_quota_change)
+- [get_service_quota](./client.md#get_service_quota)
+- [get_service_quota_increase_request_from_template](./client.md#get_service_quota_increase_request_from_template)
+- [list_aws_default_service_quotas](./client.md#list_aws_default_service_quotas)
+- [list_requested_service_quota_change_history](./client.md#list_requested_service_quota_change_history)
+- [list_requested_service_quota_change_history_by_quota](./client.md#list_requested_service_quota_change_history_by_quota)
+- [list_service_quota_increase_requests_in_template](./client.md#list_service_quota_increase_requests_in_template)
+- [list_service_quotas](./client.md#list_service_quotas)
+- [list_services](./client.md#list_services)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_service_quota_increase_request_into_template](./client.md#put_service_quota_increase_request_into_template)
+- [request_service_quota_increase](./client.md#request_service_quota_increase)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AWSServiceAccessNotEnabledException](./client.md#awsserviceaccessnotenabledexception)
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [DependencyAccessDeniedException](./client.md#dependencyaccessdeniedexception)
-- [IllegalArgumentException](./client.md#illegalargumentexception)
-- [InvalidPaginationTokenException](./client.md#invalidpaginationtokenexception)
-- [InvalidResourceStateException](./client.md#invalidresourcestateexception)
-- [NoAvailableOrganizationException](./client.md#noavailableorganizationexception)
-- [NoSuchResourceException](./client.md#nosuchresourceexception)
-- [OrganizationNotInAllFeaturesModeException](./client.md#organizationnotinallfeaturesmodeexception)
-- [QuotaExceededException](./client.md#quotaexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ServiceException](./client.md#serviceexception)
-- [ServiceQuotaTemplateNotInUseException](./client.md#servicequotatemplatenotinuseexception)
-- [TagPolicyViolationException](./client.md#tagpolicyviolationexception)
-- [TemplatesNotAvailableInRegionException](./client.md#templatesnotavailableinregionexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+ServiceQuotasClient [exceptions](./client.md#exceptions)
+
+- AWSServiceAccessNotEnabledException
+- AccessDeniedException
+- ClientError
+- DependencyAccessDeniedException
+- IllegalArgumentException
+- InvalidPaginationTokenException
+- InvalidResourceStateException
+- NoAvailableOrganizationException
+- NoSuchResourceException
+- OrganizationNotInAllFeaturesModeException
+- QuotaExceededException
+- ResourceAlreadyExistsException
+- ServiceException
+- ServiceQuotaTemplateNotInUseException
+- TagPolicyViolationException
+- TemplatesNotAvailableInRegionException
+- TooManyRequestsException
+- TooManyTagsException
 
 ## Paginators
 
@@ -103,19 +103,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_service_quotas.literals import ErrorCode, ...
+from mypy_boto3_service_quotas.literals import ErrorCodeType, ...
 ```
 
-- [ErrorCode](./literals.md#errorcode)
+- [ErrorCodeType](./literals.md#errorcodetype)
 - [ListAWSDefaultServiceQuotasPaginatorName](./literals.md#listawsdefaultservicequotaspaginatorname)
 - [ListRequestedServiceQuotaChangeHistoryByQuotaPaginatorName](./literals.md#listrequestedservicequotachangehistorybyquotapaginatorname)
 - [ListRequestedServiceQuotaChangeHistoryPaginatorName](./literals.md#listrequestedservicequotachangehistorypaginatorname)
 - [ListServiceQuotaIncreaseRequestsInTemplatePaginatorName](./literals.md#listservicequotaincreaserequestsintemplatepaginatorname)
 - [ListServiceQuotasPaginatorName](./literals.md#listservicequotaspaginatorname)
 - [ListServicesPaginatorName](./literals.md#listservicespaginatorname)
-- [PeriodUnit](./literals.md#periodunit)
-- [RequestStatus](./literals.md#requeststatus)
-- [ServiceQuotaTemplateAssociationStatus](./literals.md#servicequotatemplateassociationstatus)
+- [PeriodUnitType](./literals.md#periodunittype)
+- [RequestStatusType](./literals.md#requeststatustype)
+- [ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype)
 
 ## Typed dictionaries
 

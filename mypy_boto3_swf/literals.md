@@ -3,49 +3,49 @@
 > [Index](..) > [SWF](.) > Literals
 
 Auto-generated documentation for
-[SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF)
 type annotations stubs module
 [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
 - [Literals for boto3 SWF module](#literals-for-boto3-swf-module)
-  - [ActivityTaskTimeoutType](#activitytasktimeouttype)
-  - [CancelTimerFailedCause](#canceltimerfailedcause)
-  - [CancelWorkflowExecutionFailedCause](#cancelworkflowexecutionfailedcause)
-  - [ChildPolicy](#childpolicy)
-  - [CloseStatus](#closestatus)
-  - [CompleteWorkflowExecutionFailedCause](#completeworkflowexecutionfailedcause)
-  - [ContinueAsNewWorkflowExecutionFailedCause](#continueasnewworkflowexecutionfailedcause)
-  - [DecisionTaskTimeoutType](#decisiontasktimeouttype)
-  - [DecisionType](#decisiontype)
-  - [EventType](#eventtype)
-  - [ExecutionStatus](#executionstatus)
-  - [FailWorkflowExecutionFailedCause](#failworkflowexecutionfailedcause)
+  - [ActivityTaskTimeoutTypeType](#activitytasktimeouttypetype)
+  - [CancelTimerFailedCauseType](#canceltimerfailedcausetype)
+  - [CancelWorkflowExecutionFailedCauseType](#cancelworkflowexecutionfailedcausetype)
+  - [ChildPolicyType](#childpolicytype)
+  - [CloseStatusType](#closestatustype)
+  - [CompleteWorkflowExecutionFailedCauseType](#completeworkflowexecutionfailedcausetype)
+  - [ContinueAsNewWorkflowExecutionFailedCauseType](#continueasnewworkflowexecutionfailedcausetype)
+  - [DecisionTaskTimeoutTypeType](#decisiontasktimeouttypetype)
+  - [DecisionTypeType](#decisiontypetype)
+  - [EventTypeType](#eventtypetype)
+  - [ExecutionStatusType](#executionstatustype)
+  - [FailWorkflowExecutionFailedCauseType](#failworkflowexecutionfailedcausetype)
   - [GetWorkflowExecutionHistoryPaginatorName](#getworkflowexecutionhistorypaginatorname)
-  - [LambdaFunctionTimeoutType](#lambdafunctiontimeouttype)
+  - [LambdaFunctionTimeoutTypeType](#lambdafunctiontimeouttypetype)
   - [ListActivityTypesPaginatorName](#listactivitytypespaginatorname)
   - [ListClosedWorkflowExecutionsPaginatorName](#listclosedworkflowexecutionspaginatorname)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [ListOpenWorkflowExecutionsPaginatorName](#listopenworkflowexecutionspaginatorname)
   - [ListWorkflowTypesPaginatorName](#listworkflowtypespaginatorname)
   - [PollForDecisionTaskPaginatorName](#pollfordecisiontaskpaginatorname)
-  - [RecordMarkerFailedCause](#recordmarkerfailedcause)
-  - [RegistrationStatus](#registrationstatus)
-  - [RequestCancelActivityTaskFailedCause](#requestcancelactivitytaskfailedcause)
-  - [RequestCancelExternalWorkflowExecutionFailedCause](#requestcancelexternalworkflowexecutionfailedcause)
-  - [ScheduleActivityTaskFailedCause](#scheduleactivitytaskfailedcause)
-  - [ScheduleLambdaFunctionFailedCause](#schedulelambdafunctionfailedcause)
-  - [SignalExternalWorkflowExecutionFailedCause](#signalexternalworkflowexecutionfailedcause)
-  - [StartChildWorkflowExecutionFailedCause](#startchildworkflowexecutionfailedcause)
-  - [StartLambdaFunctionFailedCause](#startlambdafunctionfailedcause)
-  - [StartTimerFailedCause](#starttimerfailedcause)
-  - [WorkflowExecutionCancelRequestedCause](#workflowexecutioncancelrequestedcause)
-  - [WorkflowExecutionTerminatedCause](#workflowexecutionterminatedcause)
-  - [WorkflowExecutionTimeoutType](#workflowexecutiontimeouttype)
+  - [RecordMarkerFailedCauseType](#recordmarkerfailedcausetype)
+  - [RegistrationStatusType](#registrationstatustype)
+  - [RequestCancelActivityTaskFailedCauseType](#requestcancelactivitytaskfailedcausetype)
+  - [RequestCancelExternalWorkflowExecutionFailedCauseType](#requestcancelexternalworkflowexecutionfailedcausetype)
+  - [ScheduleActivityTaskFailedCauseType](#scheduleactivitytaskfailedcausetype)
+  - [ScheduleLambdaFunctionFailedCauseType](#schedulelambdafunctionfailedcausetype)
+  - [SignalExternalWorkflowExecutionFailedCauseType](#signalexternalworkflowexecutionfailedcausetype)
+  - [StartChildWorkflowExecutionFailedCauseType](#startchildworkflowexecutionfailedcausetype)
+  - [StartLambdaFunctionFailedCauseType](#startlambdafunctionfailedcausetype)
+  - [StartTimerFailedCauseType](#starttimerfailedcausetype)
+  - [WorkflowExecutionCancelRequestedCauseType](#workflowexecutioncancelrequestedcausetype)
+  - [WorkflowExecutionTerminatedCauseType](#workflowexecutionterminatedcausetype)
+  - [WorkflowExecutionTimeoutTypeType](#workflowexecutiontimeouttypetype)
 
-## ActivityTaskTimeoutType
+## ActivityTaskTimeoutTypeType
 
 ```python
-from mypy_boto3_swf.literals import ActivityTaskTimeoutType
+from mypy_boto3_swf.literals import ActivityTaskTimeoutTypeType
 ```
 
 Values:
@@ -55,10 +55,10 @@ Values:
 - `SCHEDULE_TO_START`
 - `START_TO_CLOSE`
 
-## CancelTimerFailedCause
+## CancelTimerFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import CancelTimerFailedCause
+from mypy_boto3_swf.literals import CancelTimerFailedCauseType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `TIMER_ID_UNKNOWN`
 
-## CancelWorkflowExecutionFailedCause
+## CancelWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import CancelWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import CancelWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -77,10 +77,10 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `UNHANDLED_DECISION`
 
-## ChildPolicy
+## ChildPolicyType
 
 ```python
-from mypy_boto3_swf.literals import ChildPolicy
+from mypy_boto3_swf.literals import ChildPolicyType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `REQUEST_CANCEL`
 - `TERMINATE`
 
-## CloseStatus
+## CloseStatusType
 
 ```python
-from mypy_boto3_swf.literals import CloseStatus
+from mypy_boto3_swf.literals import CloseStatusType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `TERMINATED`
 - `TIMED_OUT`
 
-## CompleteWorkflowExecutionFailedCause
+## CompleteWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import CompleteWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import CompleteWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 - `OPERATION_NOT_PERMITTED`
 - `UNHANDLED_DECISION`
 
-## ContinueAsNewWorkflowExecutionFailedCause
+## ContinueAsNewWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import ContinueAsNewWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import ContinueAsNewWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -133,20 +133,20 @@ Values:
 - `WORKFLOW_TYPE_DEPRECATED`
 - `WORKFLOW_TYPE_DOES_NOT_EXIST`
 
-## DecisionTaskTimeoutType
+## DecisionTaskTimeoutTypeType
 
 ```python
-from mypy_boto3_swf.literals import DecisionTaskTimeoutType
+from mypy_boto3_swf.literals import DecisionTaskTimeoutTypeType
 ```
 
 Values:
 
 - `START_TO_CLOSE`
 
-## DecisionType
+## DecisionTypeType
 
 ```python
-from mypy_boto3_swf.literals import DecisionType
+from mypy_boto3_swf.literals import DecisionTypeType
 ```
 
 Values:
@@ -165,10 +165,10 @@ Values:
 - `StartChildWorkflowExecution`
 - `StartTimer`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_swf.literals import EventType
+from mypy_boto3_swf.literals import EventTypeType
 ```
 
 Values:
@@ -228,10 +228,10 @@ Values:
 - `WorkflowExecutionTerminated`
 - `WorkflowExecutionTimedOut`
 
-## ExecutionStatus
+## ExecutionStatusType
 
 ```python
-from mypy_boto3_swf.literals import ExecutionStatus
+from mypy_boto3_swf.literals import ExecutionStatusType
 ```
 
 Values:
@@ -239,10 +239,10 @@ Values:
 - `CLOSED`
 - `OPEN`
 
-## FailWorkflowExecutionFailedCause
+## FailWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import FailWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import FailWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 
 - `get_workflow_execution_history`
 
-## LambdaFunctionTimeoutType
+## LambdaFunctionTimeoutTypeType
 
 ```python
-from mypy_boto3_swf.literals import LambdaFunctionTimeoutType
+from mypy_boto3_swf.literals import LambdaFunctionTimeoutTypeType
 ```
 
 Values:
@@ -330,20 +330,20 @@ Values:
 
 - `poll_for_decision_task`
 
-## RecordMarkerFailedCause
+## RecordMarkerFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import RecordMarkerFailedCause
+from mypy_boto3_swf.literals import RecordMarkerFailedCauseType
 ```
 
 Values:
 
 - `OPERATION_NOT_PERMITTED`
 
-## RegistrationStatus
+## RegistrationStatusType
 
 ```python
-from mypy_boto3_swf.literals import RegistrationStatus
+from mypy_boto3_swf.literals import RegistrationStatusType
 ```
 
 Values:
@@ -351,10 +351,10 @@ Values:
 - `DEPRECATED`
 - `REGISTERED`
 
-## RequestCancelActivityTaskFailedCause
+## RequestCancelActivityTaskFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import RequestCancelActivityTaskFailedCause
+from mypy_boto3_swf.literals import RequestCancelActivityTaskFailedCauseType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `ACTIVITY_ID_UNKNOWN`
 - `OPERATION_NOT_PERMITTED`
 
-## RequestCancelExternalWorkflowExecutionFailedCause
+## RequestCancelExternalWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import RequestCancelExternalWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import RequestCancelExternalWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -374,10 +374,10 @@ Values:
 - `REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED`
 - `UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION`
 
-## ScheduleActivityTaskFailedCause
+## ScheduleActivityTaskFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import ScheduleActivityTaskFailedCause
+from mypy_boto3_swf.literals import ScheduleActivityTaskFailedCauseType
 ```
 
 Values:
@@ -394,10 +394,10 @@ Values:
 - `OPEN_ACTIVITIES_LIMIT_EXCEEDED`
 - `OPERATION_NOT_PERMITTED`
 
-## ScheduleLambdaFunctionFailedCause
+## ScheduleLambdaFunctionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import ScheduleLambdaFunctionFailedCause
+from mypy_boto3_swf.literals import ScheduleLambdaFunctionFailedCauseType
 ```
 
 Values:
@@ -407,10 +407,10 @@ Values:
 - `LAMBDA_SERVICE_NOT_AVAILABLE_IN_REGION`
 - `OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED`
 
-## SignalExternalWorkflowExecutionFailedCause
+## SignalExternalWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import SignalExternalWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import SignalExternalWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -419,10 +419,10 @@ Values:
 - `SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED`
 - `UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION`
 
-## StartChildWorkflowExecutionFailedCause
+## StartChildWorkflowExecutionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import StartChildWorkflowExecutionFailedCause
+from mypy_boto3_swf.literals import StartChildWorkflowExecutionFailedCauseType
 ```
 
 Values:
@@ -439,20 +439,20 @@ Values:
 - `WORKFLOW_TYPE_DEPRECATED`
 - `WORKFLOW_TYPE_DOES_NOT_EXIST`
 
-## StartLambdaFunctionFailedCause
+## StartLambdaFunctionFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import StartLambdaFunctionFailedCause
+from mypy_boto3_swf.literals import StartLambdaFunctionFailedCauseType
 ```
 
 Values:
 
 - `ASSUME_ROLE_FAILED`
 
-## StartTimerFailedCause
+## StartTimerFailedCauseType
 
 ```python
-from mypy_boto3_swf.literals import StartTimerFailedCause
+from mypy_boto3_swf.literals import StartTimerFailedCauseType
 ```
 
 Values:
@@ -462,20 +462,20 @@ Values:
 - `TIMER_CREATION_RATE_EXCEEDED`
 - `TIMER_ID_ALREADY_IN_USE`
 
-## WorkflowExecutionCancelRequestedCause
+## WorkflowExecutionCancelRequestedCauseType
 
 ```python
-from mypy_boto3_swf.literals import WorkflowExecutionCancelRequestedCause
+from mypy_boto3_swf.literals import WorkflowExecutionCancelRequestedCauseType
 ```
 
 Values:
 
 - `CHILD_POLICY_APPLIED`
 
-## WorkflowExecutionTerminatedCause
+## WorkflowExecutionTerminatedCauseType
 
 ```python
-from mypy_boto3_swf.literals import WorkflowExecutionTerminatedCause
+from mypy_boto3_swf.literals import WorkflowExecutionTerminatedCauseType
 ```
 
 Values:
@@ -484,10 +484,10 @@ Values:
 - `EVENT_LIMIT_EXCEEDED`
 - `OPERATOR_INITIATED`
 
-## WorkflowExecutionTimeoutType
+## WorkflowExecutionTimeoutTypeType
 
 ```python
-from mypy_boto3_swf.literals import WorkflowExecutionTimeoutType
+from mypy_boto3_swf.literals import WorkflowExecutionTimeoutTypeType
 ```
 
 Values:

@@ -3,50 +3,50 @@
 > [Index](..) > [Chime](.) > Literals
 
 Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/chime.html#Chime)
 type annotations stubs module
 [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [Literals for boto3 Chime module](#literals-for-boto3-chime-module)
-  - [AccountType](#accounttype)
-  - [AppInstanceDataType](#appinstancedatatype)
-  - [BotType](#bottype)
-  - [CallingNameStatus](#callingnamestatus)
-  - [Capability](#capability)
-  - [ChannelMembershipType](#channelmembershiptype)
-  - [ChannelMessagePersistenceType](#channelmessagepersistencetype)
-  - [ChannelMessageType](#channelmessagetype)
-  - [ChannelMode](#channelmode)
-  - [ChannelPrivacy](#channelprivacy)
-  - [EmailStatus](#emailstatus)
-  - [ErrorCode](#errorcode)
-  - [GeoMatchLevel](#geomatchlevel)
-  - [InviteStatus](#invitestatus)
-  - [License](#license)
+  - [AccountTypeType](#accounttypetype)
+  - [AppInstanceDataTypeType](#appinstancedatatypetype)
+  - [BotTypeType](#bottypetype)
+  - [CallingNameStatusType](#callingnamestatustype)
+  - [CapabilityType](#capabilitytype)
+  - [ChannelMembershipTypeType](#channelmembershiptypetype)
+  - [ChannelMessagePersistenceTypeType](#channelmessagepersistencetypetype)
+  - [ChannelMessageTypeType](#channelmessagetypetype)
+  - [ChannelModeType](#channelmodetype)
+  - [ChannelPrivacyType](#channelprivacytype)
+  - [EmailStatusType](#emailstatustype)
+  - [ErrorCodeType](#errorcodetype)
+  - [GeoMatchLevelType](#geomatchleveltype)
+  - [InviteStatusType](#invitestatustype)
+  - [LicenseType](#licensetype)
   - [ListAccountsPaginatorName](#listaccountspaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [MemberType](#membertype)
-  - [NotificationTarget](#notificationtarget)
-  - [NumberSelectionBehavior](#numberselectionbehavior)
-  - [OrderedPhoneNumberStatus](#orderedphonenumberstatus)
-  - [OriginationRouteProtocol](#originationrouteprotocol)
-  - [PhoneNumberAssociationName](#phonenumberassociationname)
-  - [PhoneNumberOrderStatus](#phonenumberorderstatus)
-  - [PhoneNumberProductType](#phonenumberproducttype)
-  - [PhoneNumberStatus](#phonenumberstatus)
-  - [PhoneNumberType](#phonenumbertype)
-  - [ProxySessionStatus](#proxysessionstatus)
-  - [RegistrationStatus](#registrationstatus)
-  - [RoomMembershipRole](#roommembershiprole)
-  - [SipRuleTriggerType](#sipruletriggertype)
-  - [SortOrder](#sortorder)
-  - [UserType](#usertype)
-  - [VoiceConnectorAwsRegion](#voiceconnectorawsregion)
+  - [MemberTypeType](#membertypetype)
+  - [NotificationTargetType](#notificationtargettype)
+  - [NumberSelectionBehaviorType](#numberselectionbehaviortype)
+  - [OrderedPhoneNumberStatusType](#orderedphonenumberstatustype)
+  - [OriginationRouteProtocolType](#originationrouteprotocoltype)
+  - [PhoneNumberAssociationNameType](#phonenumberassociationnametype)
+  - [PhoneNumberOrderStatusType](#phonenumberorderstatustype)
+  - [PhoneNumberProductTypeType](#phonenumberproducttypetype)
+  - [PhoneNumberStatusType](#phonenumberstatustype)
+  - [PhoneNumberTypeType](#phonenumbertypetype)
+  - [ProxySessionStatusType](#proxysessionstatustype)
+  - [RegistrationStatusType](#registrationstatustype)
+  - [RoomMembershipRoleType](#roommembershiproletype)
+  - [SipRuleTriggerTypeType](#sipruletriggertypetype)
+  - [SortOrderType](#sortordertype)
+  - [UserTypeType](#usertypetype)
+  - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
 
-## AccountType
+## AccountTypeType
 
 ```python
-from mypy_boto3_chime.literals import AccountType
+from mypy_boto3_chime.literals import AccountTypeType
 ```
 
 Values:
@@ -56,10 +56,10 @@ Values:
 - `EnterpriseOIDC`
 - `Team`
 
-## AppInstanceDataType
+## AppInstanceDataTypeType
 
 ```python
-from mypy_boto3_chime.literals import AppInstanceDataType
+from mypy_boto3_chime.literals import AppInstanceDataTypeType
 ```
 
 Values:
@@ -67,20 +67,20 @@ Values:
 - `Channel`
 - `ChannelMessage`
 
-## BotType
+## BotTypeType
 
 ```python
-from mypy_boto3_chime.literals import BotType
+from mypy_boto3_chime.literals import BotTypeType
 ```
 
 Values:
 
 - `ChatBot`
 
-## CallingNameStatus
+## CallingNameStatusType
 
 ```python
-from mypy_boto3_chime.literals import CallingNameStatus
+from mypy_boto3_chime.literals import CallingNameStatusType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `UpdateInProgress`
 - `UpdateSucceeded`
 
-## Capability
+## CapabilityType
 
 ```python
-from mypy_boto3_chime.literals import Capability
+from mypy_boto3_chime.literals import CapabilityType
 ```
 
 Values:
@@ -101,10 +101,10 @@ Values:
 - `SMS`
 - `Voice`
 
-## ChannelMembershipType
+## ChannelMembershipTypeType
 
 ```python
-from mypy_boto3_chime.literals import ChannelMembershipType
+from mypy_boto3_chime.literals import ChannelMembershipTypeType
 ```
 
 Values:
@@ -112,10 +112,10 @@ Values:
 - `DEFAULT`
 - `HIDDEN`
 
-## ChannelMessagePersistenceType
+## ChannelMessagePersistenceTypeType
 
 ```python
-from mypy_boto3_chime.literals import ChannelMessagePersistenceType
+from mypy_boto3_chime.literals import ChannelMessagePersistenceTypeType
 ```
 
 Values:
@@ -123,10 +123,10 @@ Values:
 - `NON_PERSISTENT`
 - `PERSISTENT`
 
-## ChannelMessageType
+## ChannelMessageTypeType
 
 ```python
-from mypy_boto3_chime.literals import ChannelMessageType
+from mypy_boto3_chime.literals import ChannelMessageTypeType
 ```
 
 Values:
@@ -134,10 +134,10 @@ Values:
 - `CONTROL`
 - `STANDARD`
 
-## ChannelMode
+## ChannelModeType
 
 ```python
-from mypy_boto3_chime.literals import ChannelMode
+from mypy_boto3_chime.literals import ChannelModeType
 ```
 
 Values:
@@ -145,10 +145,10 @@ Values:
 - `RESTRICTED`
 - `UNRESTRICTED`
 
-## ChannelPrivacy
+## ChannelPrivacyType
 
 ```python
-from mypy_boto3_chime.literals import ChannelPrivacy
+from mypy_boto3_chime.literals import ChannelPrivacyType
 ```
 
 Values:
@@ -156,10 +156,10 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
-## EmailStatus
+## EmailStatusType
 
 ```python
-from mypy_boto3_chime.literals import EmailStatus
+from mypy_boto3_chime.literals import EmailStatusType
 ```
 
 Values:
@@ -168,10 +168,10 @@ Values:
 - `NotSent`
 - `Sent`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_chime.literals import ErrorCode
+from mypy_boto3_chime.literals import ErrorCodeType
 ```
 
 Values:
@@ -192,10 +192,10 @@ Values:
 - `Unprocessable`
 - `VoiceConnectorGroupAssociationsExist`
 
-## GeoMatchLevel
+## GeoMatchLevelType
 
 ```python
-from mypy_boto3_chime.literals import GeoMatchLevel
+from mypy_boto3_chime.literals import GeoMatchLevelType
 ```
 
 Values:
@@ -203,10 +203,10 @@ Values:
 - `AreaCode`
 - `Country`
 
-## InviteStatus
+## InviteStatusType
 
 ```python
-from mypy_boto3_chime.literals import InviteStatus
+from mypy_boto3_chime.literals import InviteStatusType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 - `Failed`
 - `Pending`
 
-## License
+## LicenseType
 
 ```python
-from mypy_boto3_chime.literals import License
+from mypy_boto3_chime.literals import LicenseType
 ```
 
 Values:
@@ -248,10 +248,10 @@ Values:
 
 - `list_users`
 
-## MemberType
+## MemberTypeType
 
 ```python
-from mypy_boto3_chime.literals import MemberType
+from mypy_boto3_chime.literals import MemberTypeType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `User`
 - `Webhook`
 
-## NotificationTarget
+## NotificationTargetType
 
 ```python
-from mypy_boto3_chime.literals import NotificationTarget
+from mypy_boto3_chime.literals import NotificationTargetType
 ```
 
 Values:
@@ -272,10 +272,10 @@ Values:
 - `SNS`
 - `SQS`
 
-## NumberSelectionBehavior
+## NumberSelectionBehaviorType
 
 ```python
-from mypy_boto3_chime.literals import NumberSelectionBehavior
+from mypy_boto3_chime.literals import NumberSelectionBehaviorType
 ```
 
 Values:
@@ -283,10 +283,10 @@ Values:
 - `AvoidSticky`
 - `PreferSticky`
 
-## OrderedPhoneNumberStatus
+## OrderedPhoneNumberStatusType
 
 ```python
-from mypy_boto3_chime.literals import OrderedPhoneNumberStatus
+from mypy_boto3_chime.literals import OrderedPhoneNumberStatusType
 ```
 
 Values:
@@ -295,10 +295,10 @@ Values:
 - `Failed`
 - `Processing`
 
-## OriginationRouteProtocol
+## OriginationRouteProtocolType
 
 ```python
-from mypy_boto3_chime.literals import OriginationRouteProtocol
+from mypy_boto3_chime.literals import OriginationRouteProtocolType
 ```
 
 Values:
@@ -306,10 +306,10 @@ Values:
 - `TCP`
 - `UDP`
 
-## PhoneNumberAssociationName
+## PhoneNumberAssociationNameType
 
 ```python
-from mypy_boto3_chime.literals import PhoneNumberAssociationName
+from mypy_boto3_chime.literals import PhoneNumberAssociationNameType
 ```
 
 Values:
@@ -320,10 +320,10 @@ Values:
 - `VoiceConnectorGroupId`
 - `VoiceConnectorId`
 
-## PhoneNumberOrderStatus
+## PhoneNumberOrderStatusType
 
 ```python
-from mypy_boto3_chime.literals import PhoneNumberOrderStatus
+from mypy_boto3_chime.literals import PhoneNumberOrderStatusType
 ```
 
 Values:
@@ -333,10 +333,10 @@ Values:
 - `Processing`
 - `Successful`
 
-## PhoneNumberProductType
+## PhoneNumberProductTypeType
 
 ```python
-from mypy_boto3_chime.literals import PhoneNumberProductType
+from mypy_boto3_chime.literals import PhoneNumberProductTypeType
 ```
 
 Values:
@@ -345,10 +345,10 @@ Values:
 - `SipMediaApplicationDialIn`
 - `VoiceConnector`
 
-## PhoneNumberStatus
+## PhoneNumberStatusType
 
 ```python
-from mypy_boto3_chime.literals import PhoneNumberStatus
+from mypy_boto3_chime.literals import PhoneNumberStatusType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `ReleaseInProgress`
 - `Unassigned`
 
-## PhoneNumberType
+## PhoneNumberTypeType
 
 ```python
-from mypy_boto3_chime.literals import PhoneNumberType
+from mypy_boto3_chime.literals import PhoneNumberTypeType
 ```
 
 Values:
@@ -373,10 +373,10 @@ Values:
 - `Local`
 - `TollFree`
 
-## ProxySessionStatus
+## ProxySessionStatusType
 
 ```python
-from mypy_boto3_chime.literals import ProxySessionStatus
+from mypy_boto3_chime.literals import ProxySessionStatusType
 ```
 
 Values:
@@ -385,10 +385,10 @@ Values:
 - `InProgress`
 - `Open`
 
-## RegistrationStatus
+## RegistrationStatusType
 
 ```python
-from mypy_boto3_chime.literals import RegistrationStatus
+from mypy_boto3_chime.literals import RegistrationStatusType
 ```
 
 Values:
@@ -397,10 +397,10 @@ Values:
 - `Suspended`
 - `Unregistered`
 
-## RoomMembershipRole
+## RoomMembershipRoleType
 
 ```python
-from mypy_boto3_chime.literals import RoomMembershipRole
+from mypy_boto3_chime.literals import RoomMembershipRoleType
 ```
 
 Values:
@@ -408,10 +408,10 @@ Values:
 - `Administrator`
 - `Member`
 
-## SipRuleTriggerType
+## SipRuleTriggerTypeType
 
 ```python
-from mypy_boto3_chime.literals import SipRuleTriggerType
+from mypy_boto3_chime.literals import SipRuleTriggerTypeType
 ```
 
 Values:
@@ -419,10 +419,10 @@ Values:
 - `RequestUriHostname`
 - `ToPhoneNumber`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_chime.literals import SortOrder
+from mypy_boto3_chime.literals import SortOrderType
 ```
 
 Values:
@@ -430,10 +430,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## UserType
+## UserTypeType
 
 ```python
-from mypy_boto3_chime.literals import UserType
+from mypy_boto3_chime.literals import UserTypeType
 ```
 
 Values:
@@ -441,10 +441,10 @@ Values:
 - `PrivateUser`
 - `SharedDevice`
 
-## VoiceConnectorAwsRegion
+## VoiceConnectorAwsRegionType
 
 ```python
-from mypy_boto3_chime.literals import VoiceConnectorAwsRegion
+from mypy_boto3_chime.literals import VoiceConnectorAwsRegionType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatch](.) > Waiters
 
 Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
 [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
@@ -25,16 +25,16 @@ def get_alarm_exists_waiter() -> AlarmExistsWaiter:
 ```
 
 Boto3 documentation:
-[CloudWatch.Waiter.alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.alarm_exists)
+[CloudWatch.Waiter.alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudwatch.html#CloudWatch.Waiter.alarm_exists)
 
 Arguments for `AlarmExistsWaiter.wait` method:
 
 - `AlarmNames`: `List`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
+- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
-- `StateValue`: [StateValue](./literals.md#statevalue)
+- `StateValue`: [StateValueType](./literals.md#statevaluetype)
 - `ActionPrefix`: `str`
 - `MaxRecords`: `int`
 - `NextToken`: `str`
@@ -55,16 +55,16 @@ def get_composite_alarm_exists_waiter() -> CompositeAlarmExistsWaiter:
 ```
 
 Boto3 documentation:
-[CloudWatch.Waiter.composite_alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.composite_alarm_exists)
+[CloudWatch.Waiter.composite_alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudwatch.html#CloudWatch.Waiter.composite_alarm_exists)
 
 Arguments for `CompositeAlarmExistsWaiter.wait` method:
 
 - `AlarmNames`: `List`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
+- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
-- `StateValue`: [StateValue](./literals.md#statevalue)
+- `StateValue`: [StateValueType](./literals.md#statevaluetype)
 - `ActionPrefix`: `str`
 - `MaxRecords`: `int`
 - `NextToken`: `str`

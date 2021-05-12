@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
@@ -117,7 +117,7 @@ Optional fields:
 - `Label`: `str`
 - `LastModifiedTimestamp`: `str`
 - `PartitionSerialList`: `List`\[`str`\]
-- `State`: [CloudHsmObjectState](./literals.md#cloudhsmobjectstate)
+- `State`: [CloudHsmObjectStateType](./literals.md#cloudhsmobjectstatetype)
 
 ## DescribeHsmResponseTypeDef
 
@@ -128,13 +128,13 @@ from mypy_boto3_cloudhsm.type_defs import DescribeHsmResponseTypeDef
 Optional fields:
 
 - `HsmArn`: `str`
-- `Status`: [HsmStatus](./literals.md#hsmstatus)
+- `Status`: [HsmStatusType](./literals.md#hsmstatustype)
 - `StatusDetails`: `str`
 - `AvailabilityZone`: `str`
 - `EniId`: `str`
 - `EniIp`: `str`
 - `SubscriptionType`: `Literal['PRODUCTION']` (see
-  [SubscriptionType](./literals.md#subscriptiontype))
+  [SubscriptionTypeType](./literals.md#subscriptiontypetype))
 - `SubscriptionStartDate`: `str`
 - `SubscriptionEndDate`: `str`
 - `VpcId`: `str`

@@ -3,7 +3,7 @@
 > [Index](..) > DocDB
 
 Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/docdb.html#DocDB)
 type annotations stubs module
 [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
@@ -30,119 +30,119 @@ Can be used directly:
 from mypy_boto3_docdb.client import DocDBClient
 ```
 
-DocDBClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_source_identifier_to_subscription](./client.md#add-source-identifier-to-subscription)
-- [add_tags_to_resource](./client.md#add-tags-to-resource)
-- [apply_pending_maintenance_action](./client.md#apply-pending-maintenance-action)
-- [can_paginate](./client.md#can-paginate)
-- [copy_db_cluster_parameter_group](./client.md#copy-db-cluster-parameter-group)
-- [copy_db_cluster_snapshot](./client.md#copy-db-cluster-snapshot)
-- [create_db_cluster](./client.md#create-db-cluster)
-- [create_db_cluster_parameter_group](./client.md#create-db-cluster-parameter-group)
-- [create_db_cluster_snapshot](./client.md#create-db-cluster-snapshot)
-- [create_db_instance](./client.md#create-db-instance)
-- [create_db_subnet_group](./client.md#create-db-subnet-group)
-- [create_event_subscription](./client.md#create-event-subscription)
-- [delete_db_cluster](./client.md#delete-db-cluster)
-- [delete_db_cluster_parameter_group](./client.md#delete-db-cluster-parameter-group)
-- [delete_db_cluster_snapshot](./client.md#delete-db-cluster-snapshot)
-- [delete_db_instance](./client.md#delete-db-instance)
-- [delete_db_subnet_group](./client.md#delete-db-subnet-group)
-- [delete_event_subscription](./client.md#delete-event-subscription)
-- [describe_certificates](./client.md#describe-certificates)
-- [describe_db_cluster_parameter_groups](./client.md#describe-db-cluster-parameter-groups)
-- [describe_db_cluster_parameters](./client.md#describe-db-cluster-parameters)
-- [describe_db_cluster_snapshot_attributes](./client.md#describe-db-cluster-snapshot-attributes)
-- [describe_db_cluster_snapshots](./client.md#describe-db-cluster-snapshots)
-- [describe_db_clusters](./client.md#describe-db-clusters)
-- [describe_db_engine_versions](./client.md#describe-db-engine-versions)
-- [describe_db_instances](./client.md#describe-db-instances)
-- [describe_db_subnet_groups](./client.md#describe-db-subnet-groups)
-- [describe_engine_default_cluster_parameters](./client.md#describe-engine-default-cluster-parameters)
-- [describe_event_categories](./client.md#describe-event-categories)
-- [describe_event_subscriptions](./client.md#describe-event-subscriptions)
-- [describe_events](./client.md#describe-events)
-- [describe_orderable_db_instance_options](./client.md#describe-orderable-db-instance-options)
-- [describe_pending_maintenance_actions](./client.md#describe-pending-maintenance-actions)
-- [failover_db_cluster](./client.md#failover-db-cluster)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [modify_db_cluster](./client.md#modify-db-cluster)
-- [modify_db_cluster_parameter_group](./client.md#modify-db-cluster-parameter-group)
-- [modify_db_cluster_snapshot_attribute](./client.md#modify-db-cluster-snapshot-attribute)
-- [modify_db_instance](./client.md#modify-db-instance)
-- [modify_db_subnet_group](./client.md#modify-db-subnet-group)
-- [modify_event_subscription](./client.md#modify-event-subscription)
-- [reboot_db_instance](./client.md#reboot-db-instance)
-- [remove_source_identifier_from_subscription](./client.md#remove-source-identifier-from-subscription)
-- [remove_tags_from_resource](./client.md#remove-tags-from-resource)
-- [reset_db_cluster_parameter_group](./client.md#reset-db-cluster-parameter-group)
-- [restore_db_cluster_from_snapshot](./client.md#restore-db-cluster-from-snapshot)
-- [restore_db_cluster_to_point_in_time](./client.md#restore-db-cluster-to-point-in-time)
-- [start_db_cluster](./client.md#start-db-cluster)
-- [stop_db_cluster](./client.md#stop-db-cluster)
+- [add_source_identifier_to_subscription](./client.md#add_source_identifier_to_subscription)
+- [add_tags_to_resource](./client.md#add_tags_to_resource)
+- [apply_pending_maintenance_action](./client.md#apply_pending_maintenance_action)
+- [can_paginate](./client.md#can_paginate)
+- [copy_db_cluster_parameter_group](./client.md#copy_db_cluster_parameter_group)
+- [copy_db_cluster_snapshot](./client.md#copy_db_cluster_snapshot)
+- [create_db_cluster](./client.md#create_db_cluster)
+- [create_db_cluster_parameter_group](./client.md#create_db_cluster_parameter_group)
+- [create_db_cluster_snapshot](./client.md#create_db_cluster_snapshot)
+- [create_db_instance](./client.md#create_db_instance)
+- [create_db_subnet_group](./client.md#create_db_subnet_group)
+- [create_event_subscription](./client.md#create_event_subscription)
+- [delete_db_cluster](./client.md#delete_db_cluster)
+- [delete_db_cluster_parameter_group](./client.md#delete_db_cluster_parameter_group)
+- [delete_db_cluster_snapshot](./client.md#delete_db_cluster_snapshot)
+- [delete_db_instance](./client.md#delete_db_instance)
+- [delete_db_subnet_group](./client.md#delete_db_subnet_group)
+- [delete_event_subscription](./client.md#delete_event_subscription)
+- [describe_certificates](./client.md#describe_certificates)
+- [describe_db_cluster_parameter_groups](./client.md#describe_db_cluster_parameter_groups)
+- [describe_db_cluster_parameters](./client.md#describe_db_cluster_parameters)
+- [describe_db_cluster_snapshot_attributes](./client.md#describe_db_cluster_snapshot_attributes)
+- [describe_db_cluster_snapshots](./client.md#describe_db_cluster_snapshots)
+- [describe_db_clusters](./client.md#describe_db_clusters)
+- [describe_db_engine_versions](./client.md#describe_db_engine_versions)
+- [describe_db_instances](./client.md#describe_db_instances)
+- [describe_db_subnet_groups](./client.md#describe_db_subnet_groups)
+- [describe_engine_default_cluster_parameters](./client.md#describe_engine_default_cluster_parameters)
+- [describe_event_categories](./client.md#describe_event_categories)
+- [describe_event_subscriptions](./client.md#describe_event_subscriptions)
+- [describe_events](./client.md#describe_events)
+- [describe_orderable_db_instance_options](./client.md#describe_orderable_db_instance_options)
+- [describe_pending_maintenance_actions](./client.md#describe_pending_maintenance_actions)
+- [failover_db_cluster](./client.md#failover_db_cluster)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [modify_db_cluster](./client.md#modify_db_cluster)
+- [modify_db_cluster_parameter_group](./client.md#modify_db_cluster_parameter_group)
+- [modify_db_cluster_snapshot_attribute](./client.md#modify_db_cluster_snapshot_attribute)
+- [modify_db_instance](./client.md#modify_db_instance)
+- [modify_db_subnet_group](./client.md#modify_db_subnet_group)
+- [modify_event_subscription](./client.md#modify_event_subscription)
+- [reboot_db_instance](./client.md#reboot_db_instance)
+- [remove_source_identifier_from_subscription](./client.md#remove_source_identifier_from_subscription)
+- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
+- [reset_db_cluster_parameter_group](./client.md#reset_db_cluster_parameter_group)
+- [restore_db_cluster_from_snapshot](./client.md#restore_db_cluster_from_snapshot)
+- [restore_db_cluster_to_point_in_time](./client.md#restore_db_cluster_to_point_in_time)
+- [start_db_cluster](./client.md#start_db_cluster)
+- [stop_db_cluster](./client.md#stop_db_cluster)
 
 ### Exceptions
 
-- [AuthorizationNotFoundFault](./client.md#authorizationnotfoundfault)
-- [CertificateNotFoundFault](./client.md#certificatenotfoundfault)
-- [ClientError](./client.md#clienterror)
-- [DBClusterAlreadyExistsFault](./client.md#dbclusteralreadyexistsfault)
-- [DBClusterNotFoundFault](./client.md#dbclusternotfoundfault)
-- [DBClusterParameterGroupNotFoundFault](./client.md#dbclusterparametergroupnotfoundfault)
-- [DBClusterQuotaExceededFault](./client.md#dbclusterquotaexceededfault)
-- [DBClusterSnapshotAlreadyExistsFault](./client.md#dbclustersnapshotalreadyexistsfault)
-- [DBClusterSnapshotNotFoundFault](./client.md#dbclustersnapshotnotfoundfault)
-- [DBInstanceAlreadyExistsFault](./client.md#dbinstancealreadyexistsfault)
-- [DBInstanceNotFoundFault](./client.md#dbinstancenotfoundfault)
-- [DBParameterGroupAlreadyExistsFault](./client.md#dbparametergroupalreadyexistsfault)
-- [DBParameterGroupNotFoundFault](./client.md#dbparametergroupnotfoundfault)
-- [DBParameterGroupQuotaExceededFault](./client.md#dbparametergroupquotaexceededfault)
-- [DBSecurityGroupNotFoundFault](./client.md#dbsecuritygroupnotfoundfault)
-- [DBSnapshotAlreadyExistsFault](./client.md#dbsnapshotalreadyexistsfault)
-- [DBSnapshotNotFoundFault](./client.md#dbsnapshotnotfoundfault)
-- [DBSubnetGroupAlreadyExistsFault](./client.md#dbsubnetgroupalreadyexistsfault)
-- [DBSubnetGroupDoesNotCoverEnoughAZs](./client.md#dbsubnetgroupdoesnotcoverenoughazs)
-- [DBSubnetGroupNotFoundFault](./client.md#dbsubnetgroupnotfoundfault)
-- [DBSubnetGroupQuotaExceededFault](./client.md#dbsubnetgroupquotaexceededfault)
-- [DBSubnetQuotaExceededFault](./client.md#dbsubnetquotaexceededfault)
-- [DBUpgradeDependencyFailureFault](./client.md#dbupgradedependencyfailurefault)
-- [EventSubscriptionQuotaExceededFault](./client.md#eventsubscriptionquotaexceededfault)
-- [InstanceQuotaExceededFault](./client.md#instancequotaexceededfault)
-- [InsufficientDBClusterCapacityFault](./client.md#insufficientdbclustercapacityfault)
-- [InsufficientDBInstanceCapacityFault](./client.md#insufficientdbinstancecapacityfault)
-- [InsufficientStorageClusterCapacityFault](./client.md#insufficientstorageclustercapacityfault)
-- [InvalidDBClusterSnapshotStateFault](./client.md#invaliddbclustersnapshotstatefault)
-- [InvalidDBClusterStateFault](./client.md#invaliddbclusterstatefault)
-- [InvalidDBInstanceStateFault](./client.md#invaliddbinstancestatefault)
-- [InvalidDBParameterGroupStateFault](./client.md#invaliddbparametergroupstatefault)
-- [InvalidDBSecurityGroupStateFault](./client.md#invaliddbsecuritygroupstatefault)
-- [InvalidDBSnapshotStateFault](./client.md#invaliddbsnapshotstatefault)
-- [InvalidDBSubnetGroupStateFault](./client.md#invaliddbsubnetgroupstatefault)
-- [InvalidDBSubnetStateFault](./client.md#invaliddbsubnetstatefault)
-- [InvalidEventSubscriptionStateFault](./client.md#invalideventsubscriptionstatefault)
-- [InvalidRestoreFault](./client.md#invalidrestorefault)
-- [InvalidSubnet](./client.md#invalidsubnet)
-- [InvalidVPCNetworkStateFault](./client.md#invalidvpcnetworkstatefault)
-- [KMSKeyNotAccessibleFault](./client.md#kmskeynotaccessiblefault)
-- [ResourceNotFoundFault](./client.md#resourcenotfoundfault)
-- [SNSInvalidTopicFault](./client.md#snsinvalidtopicfault)
-- [SNSNoAuthorizationFault](./client.md#snsnoauthorizationfault)
-- [SNSTopicArnNotFoundFault](./client.md#snstopicarnnotfoundfault)
-- [SharedSnapshotQuotaExceededFault](./client.md#sharedsnapshotquotaexceededfault)
-- [SnapshotQuotaExceededFault](./client.md#snapshotquotaexceededfault)
-- [SourceNotFoundFault](./client.md#sourcenotfoundfault)
-- [StorageQuotaExceededFault](./client.md#storagequotaexceededfault)
-- [StorageTypeNotSupportedFault](./client.md#storagetypenotsupportedfault)
-- [SubnetAlreadyInUse](./client.md#subnetalreadyinuse)
-- [SubscriptionAlreadyExistFault](./client.md#subscriptionalreadyexistfault)
-- [SubscriptionCategoryNotFoundFault](./client.md#subscriptioncategorynotfoundfault)
-- [SubscriptionNotFoundFault](./client.md#subscriptionnotfoundfault)
+DocDBClient [exceptions](./client.md#exceptions)
+
+- AuthorizationNotFoundFault
+- CertificateNotFoundFault
+- ClientError
+- DBClusterAlreadyExistsFault
+- DBClusterNotFoundFault
+- DBClusterParameterGroupNotFoundFault
+- DBClusterQuotaExceededFault
+- DBClusterSnapshotAlreadyExistsFault
+- DBClusterSnapshotNotFoundFault
+- DBInstanceAlreadyExistsFault
+- DBInstanceNotFoundFault
+- DBParameterGroupAlreadyExistsFault
+- DBParameterGroupNotFoundFault
+- DBParameterGroupQuotaExceededFault
+- DBSecurityGroupNotFoundFault
+- DBSnapshotAlreadyExistsFault
+- DBSnapshotNotFoundFault
+- DBSubnetGroupAlreadyExistsFault
+- DBSubnetGroupDoesNotCoverEnoughAZs
+- DBSubnetGroupNotFoundFault
+- DBSubnetGroupQuotaExceededFault
+- DBSubnetQuotaExceededFault
+- DBUpgradeDependencyFailureFault
+- EventSubscriptionQuotaExceededFault
+- InstanceQuotaExceededFault
+- InsufficientDBClusterCapacityFault
+- InsufficientDBInstanceCapacityFault
+- InsufficientStorageClusterCapacityFault
+- InvalidDBClusterSnapshotStateFault
+- InvalidDBClusterStateFault
+- InvalidDBInstanceStateFault
+- InvalidDBParameterGroupStateFault
+- InvalidDBSecurityGroupStateFault
+- InvalidDBSnapshotStateFault
+- InvalidDBSubnetGroupStateFault
+- InvalidDBSubnetStateFault
+- InvalidEventSubscriptionStateFault
+- InvalidRestoreFault
+- InvalidSubnet
+- InvalidVPCNetworkStateFault
+- KMSKeyNotAccessibleFault
+- ResourceNotFoundFault
+- SNSInvalidTopicFault
+- SNSNoAuthorizationFault
+- SNSTopicArnNotFoundFault
+- SharedSnapshotQuotaExceededFault
+- SnapshotQuotaExceededFault
+- SourceNotFoundFault
+- StorageQuotaExceededFault
+- StorageTypeNotSupportedFault
+- SubnetAlreadyInUse
+- SubscriptionAlreadyExistFault
+- SubscriptionCategoryNotFoundFault
+- SubscriptionNotFoundFault
 
 ## Paginators
 
@@ -189,10 +189,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.literals import ApplyMethod, ...
+from mypy_boto3_docdb.literals import ApplyMethodType, ...
 ```
 
-- [ApplyMethod](./literals.md#applymethod)
+- [ApplyMethodType](./literals.md#applymethodtype)
 - [DBInstanceAvailableWaiterName](./literals.md#dbinstanceavailablewaitername)
 - [DBInstanceDeletedWaiterName](./literals.md#dbinstancedeletedwaitername)
 - [DescribeCertificatesPaginatorName](./literals.md#describecertificatespaginatorname)
@@ -207,7 +207,7 @@ from mypy_boto3_docdb.literals import ApplyMethod, ...
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
 - [DescribeOrderableDBInstanceOptionsPaginatorName](./literals.md#describeorderabledbinstanceoptionspaginatorname)
 - [DescribePendingMaintenanceActionsPaginatorName](./literals.md#describependingmaintenanceactionspaginatorname)
-- [SourceType](./literals.md#sourcetype)
+- [SourceTypeType](./literals.md#sourcetypetype)
 
 ## Typed dictionaries
 

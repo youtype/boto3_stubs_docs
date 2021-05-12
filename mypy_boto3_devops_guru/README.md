@@ -3,7 +3,7 @@
 > [Index](..) > DevopsGuru
 
 Auto-generated documentation for
-[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
@@ -30,45 +30,45 @@ Can be used directly:
 from mypy_boto3_devops_guru.client import DevopsGuruClient
 ```
 
-DevopsGuruClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_notification_channel](./client.md#add-notification-channel)
-- [can_paginate](./client.md#can-paginate)
-- [describe_account_health](./client.md#describe-account-health)
-- [describe_account_overview](./client.md#describe-account-overview)
-- [describe_anomaly](./client.md#describe-anomaly)
-- [describe_feedback](./client.md#describe-feedback)
-- [describe_insight](./client.md#describe-insight)
-- [describe_resource_collection_health](./client.md#describe-resource-collection-health)
-- [describe_service_integration](./client.md#describe-service-integration)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_cost_estimation](./client.md#get-cost-estimation)
-- [get_paginator](./client.md#get-paginator)
-- [get_resource_collection](./client.md#get-resource-collection)
-- [list_anomalies_for_insight](./client.md#list-anomalies-for-insight)
-- [list_events](./client.md#list-events)
-- [list_insights](./client.md#list-insights)
-- [list_notification_channels](./client.md#list-notification-channels)
-- [list_recommendations](./client.md#list-recommendations)
-- [put_feedback](./client.md#put-feedback)
-- [remove_notification_channel](./client.md#remove-notification-channel)
-- [search_insights](./client.md#search-insights)
-- [start_cost_estimation](./client.md#start-cost-estimation)
-- [update_resource_collection](./client.md#update-resource-collection)
-- [update_service_integration](./client.md#update-service-integration)
+- [add_notification_channel](./client.md#add_notification_channel)
+- [can_paginate](./client.md#can_paginate)
+- [describe_account_health](./client.md#describe_account_health)
+- [describe_account_overview](./client.md#describe_account_overview)
+- [describe_anomaly](./client.md#describe_anomaly)
+- [describe_feedback](./client.md#describe_feedback)
+- [describe_insight](./client.md#describe_insight)
+- [describe_resource_collection_health](./client.md#describe_resource_collection_health)
+- [describe_service_integration](./client.md#describe_service_integration)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_cost_estimation](./client.md#get_cost_estimation)
+- [get_paginator](./client.md#get_paginator)
+- [get_resource_collection](./client.md#get_resource_collection)
+- [list_anomalies_for_insight](./client.md#list_anomalies_for_insight)
+- [list_events](./client.md#list_events)
+- [list_insights](./client.md#list_insights)
+- [list_notification_channels](./client.md#list_notification_channels)
+- [list_recommendations](./client.md#list_recommendations)
+- [put_feedback](./client.md#put_feedback)
+- [remove_notification_channel](./client.md#remove_notification_channel)
+- [search_insights](./client.md#search_insights)
+- [start_cost_estimation](./client.md#start_cost_estimation)
+- [update_resource_collection](./client.md#update_resource_collection)
+- [update_service_integration](./client.md#update_service_integration)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+DevopsGuruClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -98,34 +98,34 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.literals import AnomalySeverity, ...
+from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
 ```
 
-- [AnomalySeverity](./literals.md#anomalyseverity)
-- [AnomalyStatus](./literals.md#anomalystatus)
-- [CloudWatchMetricsStat](./literals.md#cloudwatchmetricsstat)
-- [CostEstimationServiceResourceState](./literals.md#costestimationserviceresourcestate)
-- [CostEstimationStatus](./literals.md#costestimationstatus)
+- [AnomalySeverityType](./literals.md#anomalyseveritytype)
+- [AnomalyStatusType](./literals.md#anomalystatustype)
+- [CloudWatchMetricsStatType](./literals.md#cloudwatchmetricsstattype)
+- [CostEstimationServiceResourceStateType](./literals.md#costestimationserviceresourcestatetype)
+- [CostEstimationStatusType](./literals.md#costestimationstatustype)
 - [DescribeResourceCollectionHealthPaginatorName](./literals.md#describeresourcecollectionhealthpaginatorname)
-- [EventClass](./literals.md#eventclass)
-- [EventDataSource](./literals.md#eventdatasource)
+- [EventClassType](./literals.md#eventclasstype)
+- [EventDataSourceType](./literals.md#eventdatasourcetype)
 - [GetCostEstimationPaginatorName](./literals.md#getcostestimationpaginatorname)
 - [GetResourceCollectionPaginatorName](./literals.md#getresourcecollectionpaginatorname)
-- [InsightFeedbackOption](./literals.md#insightfeedbackoption)
-- [InsightSeverity](./literals.md#insightseverity)
-- [InsightStatus](./literals.md#insightstatus)
-- [InsightType](./literals.md#insighttype)
+- [InsightFeedbackOptionType](./literals.md#insightfeedbackoptiontype)
+- [InsightSeverityType](./literals.md#insightseveritytype)
+- [InsightStatusType](./literals.md#insightstatustype)
+- [InsightTypeType](./literals.md#insighttypetype)
 - [ListAnomaliesForInsightPaginatorName](./literals.md#listanomaliesforinsightpaginatorname)
 - [ListEventsPaginatorName](./literals.md#listeventspaginatorname)
 - [ListInsightsPaginatorName](./literals.md#listinsightspaginatorname)
 - [ListNotificationChannelsPaginatorName](./literals.md#listnotificationchannelspaginatorname)
 - [ListRecommendationsPaginatorName](./literals.md#listrecommendationspaginatorname)
-- [Locale](./literals.md#locale)
-- [OptInStatus](./literals.md#optinstatus)
-- [ResourceCollectionType](./literals.md#resourcecollectiontype)
+- [LocaleType](./literals.md#localetype)
+- [OptInStatusType](./literals.md#optinstatustype)
+- [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
 - [SearchInsightsPaginatorName](./literals.md#searchinsightspaginatorname)
-- [ServiceName](./literals.md#servicename)
-- [UpdateResourceCollectionAction](./literals.md#updateresourcecollectionaction)
+- [ServiceNameType](./literals.md#servicenametype)
+- [UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype)
 
 ## Typed dictionaries
 

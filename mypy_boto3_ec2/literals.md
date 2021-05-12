@@ -3,67 +3,67 @@
 > [Index](..) > [EC2](.) > Literals
 
 Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2)
 type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Literals for boto3 EC2 module](#literals-for-boto3-ec2-module)
-  - [AccountAttributeName](#accountattributename)
-  - [ActivityStatus](#activitystatus)
-  - [AddressAttributeName](#addressattributename)
-  - [Affinity](#affinity)
-  - [AllocationState](#allocationstate)
-  - [AllocationStrategy](#allocationstrategy)
-  - [AllowsMultipleInstanceTypes](#allowsmultipleinstancetypes)
-  - [AnalysisStatus](#analysisstatus)
-  - [ApplianceModeSupportValue](#appliancemodesupportvalue)
-  - [ArchitectureType](#architecturetype)
-  - [ArchitectureValues](#architecturevalues)
-  - [AssociatedNetworkType](#associatednetworktype)
-  - [AssociationStatusCode](#associationstatuscode)
-  - [AttachmentStatus](#attachmentstatus)
-  - [AutoAcceptSharedAssociationsValue](#autoacceptsharedassociationsvalue)
-  - [AutoAcceptSharedAttachmentsValue](#autoacceptsharedattachmentsvalue)
-  - [AutoPlacement](#autoplacement)
-  - [AvailabilityZoneOptInStatus](#availabilityzoneoptinstatus)
-  - [AvailabilityZoneState](#availabilityzonestate)
-  - [BatchState](#batchstate)
-  - [BgpStatus](#bgpstatus)
-  - [BootModeType](#bootmodetype)
-  - [BootModeValues](#bootmodevalues)
+  - [AccountAttributeNameType](#accountattributenametype)
+  - [ActivityStatusType](#activitystatustype)
+  - [AddressAttributeNameType](#addressattributenametype)
+  - [AffinityType](#affinitytype)
+  - [AllocationStateType](#allocationstatetype)
+  - [AllocationStrategyType](#allocationstrategytype)
+  - [AllowsMultipleInstanceTypesType](#allowsmultipleinstancetypestype)
+  - [AnalysisStatusType](#analysisstatustype)
+  - [ApplianceModeSupportValueType](#appliancemodesupportvaluetype)
+  - [ArchitectureTypeType](#architecturetypetype)
+  - [ArchitectureValuesType](#architecturevaluestype)
+  - [AssociatedNetworkTypeType](#associatednetworktypetype)
+  - [AssociationStatusCodeType](#associationstatuscodetype)
+  - [AttachmentStatusType](#attachmentstatustype)
+  - [AutoAcceptSharedAssociationsValueType](#autoacceptsharedassociationsvaluetype)
+  - [AutoAcceptSharedAttachmentsValueType](#autoacceptsharedattachmentsvaluetype)
+  - [AutoPlacementType](#autoplacementtype)
+  - [AvailabilityZoneOptInStatusType](#availabilityzoneoptinstatustype)
+  - [AvailabilityZoneStateType](#availabilityzonestatetype)
+  - [BatchStateType](#batchstatetype)
+  - [BgpStatusType](#bgpstatustype)
+  - [BootModeTypeType](#bootmodetypetype)
+  - [BootModeValuesType](#bootmodevaluestype)
   - [BundleTaskCompleteWaiterName](#bundletaskcompletewaitername)
-  - [BundleTaskState](#bundletaskstate)
-  - [ByoipCidrState](#byoipcidrstate)
-  - [CancelBatchErrorCode](#cancelbatcherrorcode)
-  - [CancelSpotInstanceRequestState](#cancelspotinstancerequeststate)
-  - [CapacityReservationInstancePlatform](#capacityreservationinstanceplatform)
-  - [CapacityReservationPreference](#capacityreservationpreference)
-  - [CapacityReservationState](#capacityreservationstate)
-  - [CapacityReservationTenancy](#capacityreservationtenancy)
-  - [CarrierGatewayState](#carriergatewaystate)
-  - [ClientCertificateRevocationListStatusCode](#clientcertificaterevocationliststatuscode)
-  - [ClientVpnAuthenticationType](#clientvpnauthenticationtype)
-  - [ClientVpnAuthorizationRuleStatusCode](#clientvpnauthorizationrulestatuscode)
-  - [ClientVpnConnectionStatusCode](#clientvpnconnectionstatuscode)
-  - [ClientVpnEndpointAttributeStatusCode](#clientvpnendpointattributestatuscode)
-  - [ClientVpnEndpointStatusCode](#clientvpnendpointstatuscode)
-  - [ClientVpnRouteStatusCode](#clientvpnroutestatuscode)
-  - [ConnectionNotificationState](#connectionnotificationstate)
-  - [ConnectionNotificationType](#connectionnotificationtype)
-  - [ContainerFormat](#containerformat)
+  - [BundleTaskStateType](#bundletaskstatetype)
+  - [ByoipCidrStateType](#byoipcidrstatetype)
+  - [CancelBatchErrorCodeType](#cancelbatcherrorcodetype)
+  - [CancelSpotInstanceRequestStateType](#cancelspotinstancerequeststatetype)
+  - [CapacityReservationInstancePlatformType](#capacityreservationinstanceplatformtype)
+  - [CapacityReservationPreferenceType](#capacityreservationpreferencetype)
+  - [CapacityReservationStateType](#capacityreservationstatetype)
+  - [CapacityReservationTenancyType](#capacityreservationtenancytype)
+  - [CarrierGatewayStateType](#carriergatewaystatetype)
+  - [ClientCertificateRevocationListStatusCodeType](#clientcertificaterevocationliststatuscodetype)
+  - [ClientVpnAuthenticationTypeType](#clientvpnauthenticationtypetype)
+  - [ClientVpnAuthorizationRuleStatusCodeType](#clientvpnauthorizationrulestatuscodetype)
+  - [ClientVpnConnectionStatusCodeType](#clientvpnconnectionstatuscodetype)
+  - [ClientVpnEndpointAttributeStatusCodeType](#clientvpnendpointattributestatuscodetype)
+  - [ClientVpnEndpointStatusCodeType](#clientvpnendpointstatuscodetype)
+  - [ClientVpnRouteStatusCodeType](#clientvpnroutestatuscodetype)
+  - [ConnectionNotificationStateType](#connectionnotificationstatetype)
+  - [ConnectionNotificationTypeType](#connectionnotificationtypetype)
+  - [ContainerFormatType](#containerformattype)
   - [ConversionTaskCancelledWaiterName](#conversiontaskcancelledwaitername)
   - [ConversionTaskCompletedWaiterName](#conversiontaskcompletedwaitername)
   - [ConversionTaskDeletedWaiterName](#conversiontaskdeletedwaitername)
-  - [ConversionTaskState](#conversiontaskstate)
-  - [CopyTagsFromSource](#copytagsfromsource)
-  - [CurrencyCodeValues](#currencycodevalues)
+  - [ConversionTaskStateType](#conversiontaskstatetype)
+  - [CopyTagsFromSourceType](#copytagsfromsourcetype)
+  - [CurrencyCodeValuesType](#currencycodevaluestype)
   - [CustomerGatewayAvailableWaiterName](#customergatewayavailablewaitername)
-  - [DatafeedSubscriptionState](#datafeedsubscriptionstate)
-  - [DefaultRouteTableAssociationValue](#defaultroutetableassociationvalue)
-  - [DefaultRouteTablePropagationValue](#defaultroutetablepropagationvalue)
-  - [DefaultTargetCapacityType](#defaulttargetcapacitytype)
-  - [DeleteFleetErrorCode](#deletefleeterrorcode)
-  - [DeleteQueuedReservedInstancesErrorCode](#deletequeuedreservedinstanceserrorcode)
+  - [DatafeedSubscriptionStateType](#datafeedsubscriptionstatetype)
+  - [DefaultRouteTableAssociationValueType](#defaultroutetableassociationvaluetype)
+  - [DefaultRouteTablePropagationValueType](#defaultroutetablepropagationvaluetype)
+  - [DefaultTargetCapacityTypeType](#defaulttargetcapacitytypetype)
+  - [DeleteFleetErrorCodeType](#deletefleeterrorcodetype)
+  - [DeleteQueuedReservedInstancesErrorCodeType](#deletequeuedreservedinstanceserrorcodetype)
   - [DescribeAddressesAttributePaginatorName](#describeaddressesattributepaginatorname)
   - [DescribeByoipCidrsPaginatorName](#describebyoipcidrspaginatorname)
   - [DescribeCapacityReservationsPaginatorName](#describecapacityreservationspaginatorname)
@@ -153,40 +153,40 @@ type annotations stubs module
   - [DescribeVpcEndpointsPaginatorName](#describevpcendpointspaginatorname)
   - [DescribeVpcPeeringConnectionsPaginatorName](#describevpcpeeringconnectionspaginatorname)
   - [DescribeVpcsPaginatorName](#describevpcspaginatorname)
-  - [DeviceType](#devicetype)
-  - [DiskImageFormat](#diskimageformat)
-  - [DiskType](#disktype)
-  - [DnsNameState](#dnsnamestate)
-  - [DnsSupportValue](#dnssupportvalue)
-  - [DomainType](#domaintype)
-  - [EbsEncryptionSupport](#ebsencryptionsupport)
-  - [EbsNvmeSupport](#ebsnvmesupport)
-  - [EbsOptimizedSupport](#ebsoptimizedsupport)
-  - [ElasticGpuState](#elasticgpustate)
-  - [ElasticGpuStatus](#elasticgpustatus)
-  - [EnaSupport](#enasupport)
-  - [EndDateType](#enddatetype)
-  - [EphemeralNvmeSupport](#ephemeralnvmesupport)
-  - [EventCode](#eventcode)
-  - [EventType](#eventtype)
-  - [ExcessCapacityTerminationPolicy](#excesscapacityterminationpolicy)
-  - [ExportEnvironment](#exportenvironment)
+  - [DeviceTypeType](#devicetypetype)
+  - [DiskImageFormatType](#diskimageformattype)
+  - [DiskTypeType](#disktypetype)
+  - [DnsNameStateType](#dnsnamestatetype)
+  - [DnsSupportValueType](#dnssupportvaluetype)
+  - [DomainTypeType](#domaintypetype)
+  - [EbsEncryptionSupportType](#ebsencryptionsupporttype)
+  - [EbsNvmeSupportType](#ebsnvmesupporttype)
+  - [EbsOptimizedSupportType](#ebsoptimizedsupporttype)
+  - [ElasticGpuStateType](#elasticgpustatetype)
+  - [ElasticGpuStatusType](#elasticgpustatustype)
+  - [EnaSupportType](#enasupporttype)
+  - [EndDateTypeType](#enddatetypetype)
+  - [EphemeralNvmeSupportType](#ephemeralnvmesupporttype)
+  - [EventCodeType](#eventcodetype)
+  - [EventTypeType](#eventtypetype)
+  - [ExcessCapacityTerminationPolicyType](#excesscapacityterminationpolicytype)
+  - [ExportEnvironmentType](#exportenvironmenttype)
   - [ExportTaskCancelledWaiterName](#exporttaskcancelledwaitername)
   - [ExportTaskCompletedWaiterName](#exporttaskcompletedwaitername)
-  - [ExportTaskState](#exporttaskstate)
-  - [FastSnapshotRestoreStateCode](#fastsnapshotrestorestatecode)
-  - [FleetActivityStatus](#fleetactivitystatus)
-  - [FleetCapacityReservationUsageStrategy](#fleetcapacityreservationusagestrategy)
-  - [FleetEventType](#fleeteventtype)
-  - [FleetExcessCapacityTerminationPolicy](#fleetexcesscapacityterminationpolicy)
-  - [FleetOnDemandAllocationStrategy](#fleetondemandallocationstrategy)
-  - [FleetReplacementStrategy](#fleetreplacementstrategy)
-  - [FleetStateCode](#fleetstatecode)
-  - [FleetType](#fleettype)
-  - [FlowLogsResourceType](#flowlogsresourcetype)
-  - [FpgaImageAttributeName](#fpgaimageattributename)
-  - [FpgaImageStateCode](#fpgaimagestatecode)
-  - [GatewayType](#gatewaytype)
+  - [ExportTaskStateType](#exporttaskstatetype)
+  - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
+  - [FleetActivityStatusType](#fleetactivitystatustype)
+  - [FleetCapacityReservationUsageStrategyType](#fleetcapacityreservationusagestrategytype)
+  - [FleetEventTypeType](#fleeteventtypetype)
+  - [FleetExcessCapacityTerminationPolicyType](#fleetexcesscapacityterminationpolicytype)
+  - [FleetOnDemandAllocationStrategyType](#fleetondemandallocationstrategytype)
+  - [FleetReplacementStrategyType](#fleetreplacementstrategytype)
+  - [FleetStateCodeType](#fleetstatecodetype)
+  - [FleetTypeType](#fleettypetype)
+  - [FlowLogsResourceTypeType](#flowlogsresourcetypetype)
+  - [FpgaImageAttributeNameType](#fpgaimageattributenametype)
+  - [FpgaImageStateCodeType](#fpgaimagestatecodetype)
+  - [GatewayTypeType](#gatewaytypetype)
   - [GetAssociatedIpv6PoolCidrsPaginatorName](#getassociatedipv6poolcidrspaginatorname)
   - [GetGroupsForCapacityReservationPaginatorName](#getgroupsforcapacityreservationpaginatorname)
   - [GetManagedPrefixListAssociationsPaginatorName](#getmanagedprefixlistassociationspaginatorname)
@@ -196,177 +196,177 @@ type annotations stubs module
   - [GetTransitGatewayPrefixListReferencesPaginatorName](#gettransitgatewayprefixlistreferencespaginatorname)
   - [GetTransitGatewayRouteTableAssociationsPaginatorName](#gettransitgatewayroutetableassociationspaginatorname)
   - [GetTransitGatewayRouteTablePropagationsPaginatorName](#gettransitgatewayroutetablepropagationspaginatorname)
-  - [HostRecovery](#hostrecovery)
-  - [HostTenancy](#hosttenancy)
-  - [HttpTokensState](#httptokensstate)
-  - [HypervisorType](#hypervisortype)
-  - [IamInstanceProfileAssociationState](#iaminstanceprofileassociationstate)
-  - [Igmpv2SupportValue](#igmpv2supportvalue)
-  - [ImageAttributeName](#imageattributename)
+  - [HostRecoveryType](#hostrecoverytype)
+  - [HostTenancyType](#hosttenancytype)
+  - [HttpTokensStateType](#httptokensstatetype)
+  - [HypervisorTypeType](#hypervisortypetype)
+  - [IamInstanceProfileAssociationStateType](#iaminstanceprofileassociationstatetype)
+  - [Igmpv2SupportValueType](#igmpv2supportvaluetype)
+  - [ImageAttributeNameType](#imageattributenametype)
   - [ImageAvailableWaiterName](#imageavailablewaitername)
   - [ImageExistsWaiterName](#imageexistswaitername)
-  - [ImageState](#imagestate)
-  - [ImageTypeValues](#imagetypevalues)
-  - [InstanceAttributeName](#instanceattributename)
+  - [ImageStateType](#imagestatetype)
+  - [ImageTypeValuesType](#imagetypevaluestype)
+  - [InstanceAttributeNameType](#instanceattributenametype)
   - [InstanceExistsWaiterName](#instanceexistswaitername)
-  - [InstanceHealthStatus](#instancehealthstatus)
-  - [InstanceInterruptionBehavior](#instanceinterruptionbehavior)
-  - [InstanceLifecycle](#instancelifecycle)
+  - [InstanceHealthStatusType](#instancehealthstatustype)
+  - [InstanceInterruptionBehaviorType](#instanceinterruptionbehaviortype)
   - [InstanceLifecycleType](#instancelifecycletype)
-  - [InstanceMatchCriteria](#instancematchcriteria)
-  - [InstanceMetadataEndpointState](#instancemetadataendpointstate)
-  - [InstanceMetadataOptionsState](#instancemetadataoptionsstate)
+  - [InstanceLifecycleTypeType](#instancelifecycletypetype)
+  - [InstanceMatchCriteriaType](#instancematchcriteriatype)
+  - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
+  - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
   - [InstanceRunningWaiterName](#instancerunningwaitername)
-  - [InstanceStateName](#instancestatename)
+  - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
   - [InstanceStoppedWaiterName](#instancestoppedwaitername)
   - [InstanceTerminatedWaiterName](#instanceterminatedwaitername)
-  - [InstanceType](#instancetype)
-  - [InstanceTypeHypervisor](#instancetypehypervisor)
-  - [InterfacePermissionType](#interfacepermissiontype)
-  - [Ipv6SupportValue](#ipv6supportvalue)
+  - [InstanceTypeHypervisorType](#instancetypehypervisortype)
+  - [InstanceTypeType](#instancetypetype)
+  - [InterfacePermissionTypeType](#interfacepermissiontypetype)
+  - [Ipv6SupportValueType](#ipv6supportvaluetype)
   - [KeyPairExistsWaiterName](#keypairexistswaitername)
-  - [LaunchTemplateErrorCode](#launchtemplateerrorcode)
-  - [LaunchTemplateHttpTokensState](#launchtemplatehttptokensstate)
-  - [LaunchTemplateInstanceMetadataEndpointState](#launchtemplateinstancemetadataendpointstate)
-  - [LaunchTemplateInstanceMetadataOptionsState](#launchtemplateinstancemetadataoptionsstate)
-  - [ListingState](#listingstate)
-  - [ListingStatus](#listingstatus)
-  - [LocalGatewayRouteState](#localgatewayroutestate)
-  - [LocalGatewayRouteType](#localgatewayroutetype)
-  - [LocationType](#locationtype)
-  - [LogDestinationType](#logdestinationtype)
-  - [MarketType](#markettype)
-  - [MembershipType](#membershiptype)
-  - [ModifyAvailabilityZoneOptInStatus](#modifyavailabilityzoneoptinstatus)
-  - [MonitoringState](#monitoringstate)
-  - [MoveStatus](#movestatus)
-  - [MulticastSupportValue](#multicastsupportvalue)
+  - [LaunchTemplateErrorCodeType](#launchtemplateerrorcodetype)
+  - [LaunchTemplateHttpTokensStateType](#launchtemplatehttptokensstatetype)
+  - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
+  - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
+  - [ListingStateType](#listingstatetype)
+  - [ListingStatusType](#listingstatustype)
+  - [LocalGatewayRouteStateType](#localgatewayroutestatetype)
+  - [LocalGatewayRouteTypeType](#localgatewayroutetypetype)
+  - [LocationTypeType](#locationtypetype)
+  - [LogDestinationTypeType](#logdestinationtypetype)
+  - [MarketTypeType](#markettypetype)
+  - [MembershipTypeType](#membershiptypetype)
+  - [ModifyAvailabilityZoneOptInStatusType](#modifyavailabilityzoneoptinstatustype)
+  - [MonitoringStateType](#monitoringstatetype)
+  - [MoveStatusType](#movestatustype)
+  - [MulticastSupportValueType](#multicastsupportvaluetype)
   - [NatGatewayAvailableWaiterName](#natgatewayavailablewaitername)
-  - [NatGatewayState](#natgatewaystate)
-  - [NetworkInterfaceAttribute](#networkinterfaceattribute)
+  - [NatGatewayStateType](#natgatewaystatetype)
+  - [NetworkInterfaceAttributeType](#networkinterfaceattributetype)
   - [NetworkInterfaceAvailableWaiterName](#networkinterfaceavailablewaitername)
-  - [NetworkInterfaceCreationType](#networkinterfacecreationtype)
-  - [NetworkInterfacePermissionStateCode](#networkinterfacepermissionstatecode)
-  - [NetworkInterfaceStatus](#networkinterfacestatus)
-  - [NetworkInterfaceType](#networkinterfacetype)
-  - [OfferingClassType](#offeringclasstype)
-  - [OfferingTypeValues](#offeringtypevalues)
-  - [OnDemandAllocationStrategy](#ondemandallocationstrategy)
-  - [OperationType](#operationtype)
-  - [PartitionLoadFrequency](#partitionloadfrequency)
+  - [NetworkInterfaceCreationTypeType](#networkinterfacecreationtypetype)
+  - [NetworkInterfacePermissionStateCodeType](#networkinterfacepermissionstatecodetype)
+  - [NetworkInterfaceStatusType](#networkinterfacestatustype)
+  - [NetworkInterfaceTypeType](#networkinterfacetypetype)
+  - [OfferingClassTypeType](#offeringclasstypetype)
+  - [OfferingTypeValuesType](#offeringtypevaluestype)
+  - [OnDemandAllocationStrategyType](#ondemandallocationstrategytype)
+  - [OperationTypeType](#operationtypetype)
+  - [PartitionLoadFrequencyType](#partitionloadfrequencytype)
   - [PasswordDataAvailableWaiterName](#passworddataavailablewaitername)
-  - [PaymentOption](#paymentoption)
-  - [PermissionGroup](#permissiongroup)
-  - [PlacementGroupState](#placementgroupstate)
-  - [PlacementGroupStrategy](#placementgroupstrategy)
-  - [PlacementStrategy](#placementstrategy)
-  - [PlatformValues](#platformvalues)
-  - [PrefixListState](#prefixliststate)
-  - [PrincipalType](#principaltype)
-  - [ProductCodeValues](#productcodevalues)
+  - [PaymentOptionType](#paymentoptiontype)
+  - [PermissionGroupType](#permissiongrouptype)
+  - [PlacementGroupStateType](#placementgroupstatetype)
+  - [PlacementGroupStrategyType](#placementgroupstrategytype)
+  - [PlacementStrategyType](#placementstrategytype)
+  - [PlatformValuesType](#platformvaluestype)
+  - [PrefixListStateType](#prefixliststatetype)
+  - [PrincipalTypeType](#principaltypetype)
+  - [ProductCodeValuesType](#productcodevaluestype)
   - [ProtocolType](#protocoltype)
-  - [ProtocolValue](#protocolvalue)
-  - [RIProductDescription](#riproductdescription)
-  - [RecurringChargeFrequency](#recurringchargefrequency)
-  - [ReplaceRootVolumeTaskState](#replacerootvolumetaskstate)
-  - [ReplacementStrategy](#replacementstrategy)
-  - [ReportInstanceReasonCodes](#reportinstancereasoncodes)
-  - [ReportStatusType](#reportstatustype)
-  - [ReservationState](#reservationstate)
-  - [ReservedInstanceState](#reservedinstancestate)
-  - [ResetFpgaImageAttributeName](#resetfpgaimageattributename)
-  - [ResetImageAttributeName](#resetimageattributename)
-  - [ResourceType](#resourcetype)
-  - [RootDeviceType](#rootdevicetype)
-  - [RouteOrigin](#routeorigin)
-  - [RouteState](#routestate)
-  - [RouteTableAssociationStateCode](#routetableassociationstatecode)
-  - [RuleAction](#ruleaction)
+  - [ProtocolValueType](#protocolvaluetype)
+  - [RIProductDescriptionType](#riproductdescriptiontype)
+  - [RecurringChargeFrequencyType](#recurringchargefrequencytype)
+  - [ReplaceRootVolumeTaskStateType](#replacerootvolumetaskstatetype)
+  - [ReplacementStrategyType](#replacementstrategytype)
+  - [ReportInstanceReasonCodesType](#reportinstancereasoncodestype)
+  - [ReportStatusTypeType](#reportstatustypetype)
+  - [ReservationStateType](#reservationstatetype)
+  - [ReservedInstanceStateType](#reservedinstancestatetype)
+  - [ResetFpgaImageAttributeNameType](#resetfpgaimageattributenametype)
+  - [ResetImageAttributeNameType](#resetimageattributenametype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [RootDeviceTypeType](#rootdevicetypetype)
+  - [RouteOriginType](#routeorigintype)
+  - [RouteStateType](#routestatetype)
+  - [RouteTableAssociationStateCodeType](#routetableassociationstatecodetype)
+  - [RuleActionType](#ruleactiontype)
   - [SearchLocalGatewayRoutesPaginatorName](#searchlocalgatewayroutespaginatorname)
   - [SearchTransitGatewayMulticastGroupsPaginatorName](#searchtransitgatewaymulticastgroupspaginatorname)
   - [SecurityGroupExistsWaiterName](#securitygroupexistswaitername)
-  - [SelfServicePortal](#selfserviceportal)
-  - [ServiceState](#servicestate)
-  - [ServiceType](#servicetype)
-  - [ShutdownBehavior](#shutdownbehavior)
-  - [SnapshotAttributeName](#snapshotattributename)
+  - [SelfServicePortalType](#selfserviceportaltype)
+  - [ServiceStateType](#servicestatetype)
+  - [ServiceTypeType](#servicetypetype)
+  - [ShutdownBehaviorType](#shutdownbehaviortype)
+  - [SnapshotAttributeNameType](#snapshotattributenametype)
   - [SnapshotCompletedWaiterName](#snapshotcompletedwaitername)
-  - [SnapshotState](#snapshotstate)
-  - [SpotAllocationStrategy](#spotallocationstrategy)
-  - [SpotInstanceInterruptionBehavior](#spotinstanceinterruptionbehavior)
+  - [SnapshotStateType](#snapshotstatetype)
+  - [SpotAllocationStrategyType](#spotallocationstrategytype)
+  - [SpotInstanceInterruptionBehaviorType](#spotinstanceinterruptionbehaviortype)
   - [SpotInstanceRequestFulfilledWaiterName](#spotinstancerequestfulfilledwaitername)
-  - [SpotInstanceState](#spotinstancestate)
-  - [SpotInstanceType](#spotinstancetype)
-  - [State](#state)
-  - [StaticSourcesSupportValue](#staticsourcessupportvalue)
-  - [Status](#status)
-  - [StatusName](#statusname)
+  - [SpotInstanceStateType](#spotinstancestatetype)
+  - [SpotInstanceTypeType](#spotinstancetypetype)
+  - [StateType](#statetype)
+  - [StaticSourcesSupportValueType](#staticsourcessupportvaluetype)
+  - [StatusNameType](#statusnametype)
   - [StatusType](#statustype)
+  - [StatusTypeType](#statustypetype)
   - [SubnetAvailableWaiterName](#subnetavailablewaitername)
-  - [SubnetCidrBlockStateCode](#subnetcidrblockstatecode)
-  - [SubnetState](#subnetstate)
-  - [SummaryStatus](#summarystatus)
+  - [SubnetCidrBlockStateCodeType](#subnetcidrblockstatecodetype)
+  - [SubnetStateType](#subnetstatetype)
+  - [SummaryStatusType](#summarystatustype)
   - [SystemStatusOkWaiterName](#systemstatusokwaitername)
-  - [TelemetryStatus](#telemetrystatus)
-  - [Tenancy](#tenancy)
-  - [TrafficDirection](#trafficdirection)
-  - [TrafficMirrorFilterRuleField](#trafficmirrorfilterrulefield)
-  - [TrafficMirrorNetworkService](#trafficmirrornetworkservice)
-  - [TrafficMirrorRuleAction](#trafficmirrorruleaction)
-  - [TrafficMirrorSessionField](#trafficmirrorsessionfield)
-  - [TrafficMirrorTargetType](#trafficmirrortargettype)
-  - [TrafficType](#traffictype)
-  - [TransitGatewayAssociationState](#transitgatewayassociationstate)
-  - [TransitGatewayAttachmentResourceType](#transitgatewayattachmentresourcetype)
-  - [TransitGatewayAttachmentState](#transitgatewayattachmentstate)
-  - [TransitGatewayConnectPeerState](#transitgatewayconnectpeerstate)
-  - [TransitGatewayMulitcastDomainAssociationState](#transitgatewaymulitcastdomainassociationstate)
-  - [TransitGatewayMulticastDomainState](#transitgatewaymulticastdomainstate)
-  - [TransitGatewayPrefixListReferenceState](#transitgatewayprefixlistreferencestate)
-  - [TransitGatewayPropagationState](#transitgatewaypropagationstate)
-  - [TransitGatewayRouteState](#transitgatewayroutestate)
-  - [TransitGatewayRouteTableState](#transitgatewayroutetablestate)
-  - [TransitGatewayRouteType](#transitgatewayroutetype)
-  - [TransitGatewayState](#transitgatewaystate)
-  - [TransportProtocol](#transportprotocol)
-  - [TunnelInsideIpVersion](#tunnelinsideipversion)
-  - [UnlimitedSupportedInstanceFamily](#unlimitedsupportedinstancefamily)
-  - [UnsuccessfulInstanceCreditSpecificationErrorCode](#unsuccessfulinstancecreditspecificationerrorcode)
-  - [UsageClassType](#usageclasstype)
-  - [VirtualizationType](#virtualizationtype)
-  - [VolumeAttachmentState](#volumeattachmentstate)
-  - [VolumeAttributeName](#volumeattributename)
+  - [TelemetryStatusType](#telemetrystatustype)
+  - [TenancyType](#tenancytype)
+  - [TrafficDirectionType](#trafficdirectiontype)
+  - [TrafficMirrorFilterRuleFieldType](#trafficmirrorfilterrulefieldtype)
+  - [TrafficMirrorNetworkServiceType](#trafficmirrornetworkservicetype)
+  - [TrafficMirrorRuleActionType](#trafficmirrorruleactiontype)
+  - [TrafficMirrorSessionFieldType](#trafficmirrorsessionfieldtype)
+  - [TrafficMirrorTargetTypeType](#trafficmirrortargettypetype)
+  - [TrafficTypeType](#traffictypetype)
+  - [TransitGatewayAssociationStateType](#transitgatewayassociationstatetype)
+  - [TransitGatewayAttachmentResourceTypeType](#transitgatewayattachmentresourcetypetype)
+  - [TransitGatewayAttachmentStateType](#transitgatewayattachmentstatetype)
+  - [TransitGatewayConnectPeerStateType](#transitgatewayconnectpeerstatetype)
+  - [TransitGatewayMulitcastDomainAssociationStateType](#transitgatewaymulitcastdomainassociationstatetype)
+  - [TransitGatewayMulticastDomainStateType](#transitgatewaymulticastdomainstatetype)
+  - [TransitGatewayPrefixListReferenceStateType](#transitgatewayprefixlistreferencestatetype)
+  - [TransitGatewayPropagationStateType](#transitgatewaypropagationstatetype)
+  - [TransitGatewayRouteStateType](#transitgatewayroutestatetype)
+  - [TransitGatewayRouteTableStateType](#transitgatewayroutetablestatetype)
+  - [TransitGatewayRouteTypeType](#transitgatewayroutetypetype)
+  - [TransitGatewayStateType](#transitgatewaystatetype)
+  - [TransportProtocolType](#transportprotocoltype)
+  - [TunnelInsideIpVersionType](#tunnelinsideipversiontype)
+  - [UnlimitedSupportedInstanceFamilyType](#unlimitedsupportedinstancefamilytype)
+  - [UnsuccessfulInstanceCreditSpecificationErrorCodeType](#unsuccessfulinstancecreditspecificationerrorcodetype)
+  - [UsageClassTypeType](#usageclasstypetype)
+  - [VirtualizationTypeType](#virtualizationtypetype)
+  - [VolumeAttachmentStateType](#volumeattachmentstatetype)
+  - [VolumeAttributeNameType](#volumeattributenametype)
   - [VolumeAvailableWaiterName](#volumeavailablewaitername)
   - [VolumeDeletedWaiterName](#volumedeletedwaitername)
   - [VolumeInUseWaiterName](#volumeinusewaitername)
-  - [VolumeModificationState](#volumemodificationstate)
-  - [VolumeState](#volumestate)
-  - [VolumeStatusInfoStatus](#volumestatusinfostatus)
-  - [VolumeStatusName](#volumestatusname)
-  - [VolumeType](#volumetype)
-  - [VpcAttributeName](#vpcattributename)
+  - [VolumeModificationStateType](#volumemodificationstatetype)
+  - [VolumeStateType](#volumestatetype)
+  - [VolumeStatusInfoStatusType](#volumestatusinfostatustype)
+  - [VolumeStatusNameType](#volumestatusnametype)
+  - [VolumeTypeType](#volumetypetype)
+  - [VpcAttributeNameType](#vpcattributenametype)
   - [VpcAvailableWaiterName](#vpcavailablewaitername)
-  - [VpcCidrBlockStateCode](#vpccidrblockstatecode)
-  - [VpcEndpointType](#vpcendpointtype)
+  - [VpcCidrBlockStateCodeType](#vpccidrblockstatecodetype)
+  - [VpcEndpointTypeType](#vpcendpointtypetype)
   - [VpcExistsWaiterName](#vpcexistswaitername)
   - [VpcPeeringConnectionDeletedWaiterName](#vpcpeeringconnectiondeletedwaitername)
   - [VpcPeeringConnectionExistsWaiterName](#vpcpeeringconnectionexistswaitername)
-  - [VpcPeeringConnectionStateReasonCode](#vpcpeeringconnectionstatereasoncode)
-  - [VpcState](#vpcstate)
-  - [VpcTenancy](#vpctenancy)
+  - [VpcPeeringConnectionStateReasonCodeType](#vpcpeeringconnectionstatereasoncodetype)
+  - [VpcStateType](#vpcstatetype)
+  - [VpcTenancyType](#vpctenancytype)
   - [VpnConnectionAvailableWaiterName](#vpnconnectionavailablewaitername)
   - [VpnConnectionDeletedWaiterName](#vpnconnectiondeletedwaitername)
-  - [VpnEcmpSupportValue](#vpnecmpsupportvalue)
-  - [VpnProtocol](#vpnprotocol)
-  - [VpnState](#vpnstate)
-  - [VpnStaticRouteSource](#vpnstaticroutesource)
-  - [scope](#scope)
+  - [VpnEcmpSupportValueType](#vpnecmpsupportvaluetype)
+  - [VpnProtocolType](#vpnprotocoltype)
+  - [VpnStateType](#vpnstatetype)
+  - [VpnStaticRouteSourceType](#vpnstaticroutesourcetype)
+  - [scopeType](#scopetype)
 
-## AccountAttributeName
+## AccountAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import AccountAttributeName
+from mypy_boto3_ec2.literals import AccountAttributeNameType
 ```
 
 Values:
@@ -374,10 +374,10 @@ Values:
 - `default-vpc`
 - `supported-platforms`
 
-## ActivityStatus
+## ActivityStatusType
 
 ```python
-from mypy_boto3_ec2.literals import ActivityStatus
+from mypy_boto3_ec2.literals import ActivityStatusType
 ```
 
 Values:
@@ -387,20 +387,20 @@ Values:
 - `pending_fulfillment`
 - `pending_termination`
 
-## AddressAttributeName
+## AddressAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import AddressAttributeName
+from mypy_boto3_ec2.literals import AddressAttributeNameType
 ```
 
 Values:
 
 - `domain-name`
 
-## Affinity
+## AffinityType
 
 ```python
-from mypy_boto3_ec2.literals import Affinity
+from mypy_boto3_ec2.literals import AffinityType
 ```
 
 Values:
@@ -408,10 +408,10 @@ Values:
 - `default`
 - `host`
 
-## AllocationState
+## AllocationStateType
 
 ```python
-from mypy_boto3_ec2.literals import AllocationState
+from mypy_boto3_ec2.literals import AllocationStateType
 ```
 
 Values:
@@ -423,10 +423,10 @@ Values:
 - `released-permanent-failure`
 - `under-assessment`
 
-## AllocationStrategy
+## AllocationStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import AllocationStrategy
+from mypy_boto3_ec2.literals import AllocationStrategyType
 ```
 
 Values:
@@ -436,10 +436,10 @@ Values:
 - `diversified`
 - `lowestPrice`
 
-## AllowsMultipleInstanceTypes
+## AllowsMultipleInstanceTypesType
 
 ```python
-from mypy_boto3_ec2.literals import AllowsMultipleInstanceTypes
+from mypy_boto3_ec2.literals import AllowsMultipleInstanceTypesType
 ```
 
 Values:
@@ -447,10 +447,10 @@ Values:
 - `off`
 - `on`
 
-## AnalysisStatus
+## AnalysisStatusType
 
 ```python
-from mypy_boto3_ec2.literals import AnalysisStatus
+from mypy_boto3_ec2.literals import AnalysisStatusType
 ```
 
 Values:
@@ -459,10 +459,10 @@ Values:
 - `running`
 - `succeeded`
 
-## ApplianceModeSupportValue
+## ApplianceModeSupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import ApplianceModeSupportValue
+from mypy_boto3_ec2.literals import ApplianceModeSupportValueType
 ```
 
 Values:
@@ -470,10 +470,10 @@ Values:
 - `disable`
 - `enable`
 
-## ArchitectureType
+## ArchitectureTypeType
 
 ```python
-from mypy_boto3_ec2.literals import ArchitectureType
+from mypy_boto3_ec2.literals import ArchitectureTypeType
 ```
 
 Values:
@@ -482,10 +482,10 @@ Values:
 - `i386`
 - `x86_64`
 
-## ArchitectureValues
+## ArchitectureValuesType
 
 ```python
-from mypy_boto3_ec2.literals import ArchitectureValues
+from mypy_boto3_ec2.literals import ArchitectureValuesType
 ```
 
 Values:
@@ -494,20 +494,20 @@ Values:
 - `i386`
 - `x86_64`
 
-## AssociatedNetworkType
+## AssociatedNetworkTypeType
 
 ```python
-from mypy_boto3_ec2.literals import AssociatedNetworkType
+from mypy_boto3_ec2.literals import AssociatedNetworkTypeType
 ```
 
 Values:
 
 - `vpc`
 
-## AssociationStatusCode
+## AssociationStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import AssociationStatusCode
+from mypy_boto3_ec2.literals import AssociationStatusCodeType
 ```
 
 Values:
@@ -518,10 +518,10 @@ Values:
 - `disassociated`
 - `disassociating`
 
-## AttachmentStatus
+## AttachmentStatusType
 
 ```python
-from mypy_boto3_ec2.literals import AttachmentStatus
+from mypy_boto3_ec2.literals import AttachmentStatusType
 ```
 
 Values:
@@ -531,10 +531,10 @@ Values:
 - `detached`
 - `detaching`
 
-## AutoAcceptSharedAssociationsValue
+## AutoAcceptSharedAssociationsValueType
 
 ```python
-from mypy_boto3_ec2.literals import AutoAcceptSharedAssociationsValue
+from mypy_boto3_ec2.literals import AutoAcceptSharedAssociationsValueType
 ```
 
 Values:
@@ -542,10 +542,10 @@ Values:
 - `disable`
 - `enable`
 
-## AutoAcceptSharedAttachmentsValue
+## AutoAcceptSharedAttachmentsValueType
 
 ```python
-from mypy_boto3_ec2.literals import AutoAcceptSharedAttachmentsValue
+from mypy_boto3_ec2.literals import AutoAcceptSharedAttachmentsValueType
 ```
 
 Values:
@@ -553,10 +553,10 @@ Values:
 - `disable`
 - `enable`
 
-## AutoPlacement
+## AutoPlacementType
 
 ```python
-from mypy_boto3_ec2.literals import AutoPlacement
+from mypy_boto3_ec2.literals import AutoPlacementType
 ```
 
 Values:
@@ -564,10 +564,10 @@ Values:
 - `off`
 - `on`
 
-## AvailabilityZoneOptInStatus
+## AvailabilityZoneOptInStatusType
 
 ```python
-from mypy_boto3_ec2.literals import AvailabilityZoneOptInStatus
+from mypy_boto3_ec2.literals import AvailabilityZoneOptInStatusType
 ```
 
 Values:
@@ -576,10 +576,10 @@ Values:
 - `opt-in-not-required`
 - `opted-in`
 
-## AvailabilityZoneState
+## AvailabilityZoneStateType
 
 ```python
-from mypy_boto3_ec2.literals import AvailabilityZoneState
+from mypy_boto3_ec2.literals import AvailabilityZoneStateType
 ```
 
 Values:
@@ -589,10 +589,10 @@ Values:
 - `information`
 - `unavailable`
 
-## BatchState
+## BatchStateType
 
 ```python
-from mypy_boto3_ec2.literals import BatchState
+from mypy_boto3_ec2.literals import BatchStateType
 ```
 
 Values:
@@ -605,10 +605,10 @@ Values:
 - `modifying`
 - `submitted`
 
-## BgpStatus
+## BgpStatusType
 
 ```python
-from mypy_boto3_ec2.literals import BgpStatus
+from mypy_boto3_ec2.literals import BgpStatusType
 ```
 
 Values:
@@ -616,10 +616,10 @@ Values:
 - `down`
 - `up`
 
-## BootModeType
+## BootModeTypeType
 
 ```python
-from mypy_boto3_ec2.literals import BootModeType
+from mypy_boto3_ec2.literals import BootModeTypeType
 ```
 
 Values:
@@ -627,10 +627,10 @@ Values:
 - `legacy-bios`
 - `uefi`
 
-## BootModeValues
+## BootModeValuesType
 
 ```python
-from mypy_boto3_ec2.literals import BootModeValues
+from mypy_boto3_ec2.literals import BootModeValuesType
 ```
 
 Values:
@@ -648,10 +648,10 @@ Values:
 
 - `bundle_task_complete`
 
-## BundleTaskState
+## BundleTaskStateType
 
 ```python
-from mypy_boto3_ec2.literals import BundleTaskState
+from mypy_boto3_ec2.literals import BundleTaskStateType
 ```
 
 Values:
@@ -664,10 +664,10 @@ Values:
 - `storing`
 - `waiting-for-shutdown`
 
-## ByoipCidrState
+## ByoipCidrStateType
 
 ```python
-from mypy_boto3_ec2.literals import ByoipCidrState
+from mypy_boto3_ec2.literals import ByoipCidrStateType
 ```
 
 Values:
@@ -681,10 +681,10 @@ Values:
 - `provisioned`
 - `provisioned-not-publicly-advertisable`
 
-## CancelBatchErrorCode
+## CancelBatchErrorCodeType
 
 ```python
-from mypy_boto3_ec2.literals import CancelBatchErrorCode
+from mypy_boto3_ec2.literals import CancelBatchErrorCodeType
 ```
 
 Values:
@@ -694,10 +694,10 @@ Values:
 - `fleetRequestNotInCancellableState`
 - `unexpectedError`
 
-## CancelSpotInstanceRequestState
+## CancelSpotInstanceRequestStateType
 
 ```python
-from mypy_boto3_ec2.literals import CancelSpotInstanceRequestState
+from mypy_boto3_ec2.literals import CancelSpotInstanceRequestStateType
 ```
 
 Values:
@@ -708,10 +708,10 @@ Values:
 - `completed`
 - `open`
 
-## CapacityReservationInstancePlatform
+## CapacityReservationInstancePlatformType
 
 ```python
-from mypy_boto3_ec2.literals import CapacityReservationInstancePlatform
+from mypy_boto3_ec2.literals import CapacityReservationInstancePlatformType
 ```
 
 Values:
@@ -728,10 +728,10 @@ Values:
 - `Windows with SQL Server Standard`
 - `Windows with SQL Server Web`
 
-## CapacityReservationPreference
+## CapacityReservationPreferenceType
 
 ```python
-from mypy_boto3_ec2.literals import CapacityReservationPreference
+from mypy_boto3_ec2.literals import CapacityReservationPreferenceType
 ```
 
 Values:
@@ -739,10 +739,10 @@ Values:
 - `none`
 - `open`
 
-## CapacityReservationState
+## CapacityReservationStateType
 
 ```python
-from mypy_boto3_ec2.literals import CapacityReservationState
+from mypy_boto3_ec2.literals import CapacityReservationStateType
 ```
 
 Values:
@@ -753,10 +753,10 @@ Values:
 - `failed`
 - `pending`
 
-## CapacityReservationTenancy
+## CapacityReservationTenancyType
 
 ```python
-from mypy_boto3_ec2.literals import CapacityReservationTenancy
+from mypy_boto3_ec2.literals import CapacityReservationTenancyType
 ```
 
 Values:
@@ -764,10 +764,10 @@ Values:
 - `dedicated`
 - `default`
 
-## CarrierGatewayState
+## CarrierGatewayStateType
 
 ```python
-from mypy_boto3_ec2.literals import CarrierGatewayState
+from mypy_boto3_ec2.literals import CarrierGatewayStateType
 ```
 
 Values:
@@ -777,10 +777,10 @@ Values:
 - `deleting`
 - `pending`
 
-## ClientCertificateRevocationListStatusCode
+## ClientCertificateRevocationListStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientCertificateRevocationListStatusCode
+from mypy_boto3_ec2.literals import ClientCertificateRevocationListStatusCodeType
 ```
 
 Values:
@@ -788,10 +788,10 @@ Values:
 - `active`
 - `pending`
 
-## ClientVpnAuthenticationType
+## ClientVpnAuthenticationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientVpnAuthenticationType
+from mypy_boto3_ec2.literals import ClientVpnAuthenticationTypeType
 ```
 
 Values:
@@ -800,10 +800,10 @@ Values:
 - `directory-service-authentication`
 - `federated-authentication`
 
-## ClientVpnAuthorizationRuleStatusCode
+## ClientVpnAuthorizationRuleStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientVpnAuthorizationRuleStatusCode
+from mypy_boto3_ec2.literals import ClientVpnAuthorizationRuleStatusCodeType
 ```
 
 Values:
@@ -813,10 +813,10 @@ Values:
 - `failed`
 - `revoking`
 
-## ClientVpnConnectionStatusCode
+## ClientVpnConnectionStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientVpnConnectionStatusCode
+from mypy_boto3_ec2.literals import ClientVpnConnectionStatusCodeType
 ```
 
 Values:
@@ -826,10 +826,10 @@ Values:
 - `terminated`
 - `terminating`
 
-## ClientVpnEndpointAttributeStatusCode
+## ClientVpnEndpointAttributeStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientVpnEndpointAttributeStatusCode
+from mypy_boto3_ec2.literals import ClientVpnEndpointAttributeStatusCodeType
 ```
 
 Values:
@@ -837,10 +837,10 @@ Values:
 - `applied`
 - `applying`
 
-## ClientVpnEndpointStatusCode
+## ClientVpnEndpointStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientVpnEndpointStatusCode
+from mypy_boto3_ec2.literals import ClientVpnEndpointStatusCodeType
 ```
 
 Values:
@@ -850,10 +850,10 @@ Values:
 - `deleting`
 - `pending-associate`
 
-## ClientVpnRouteStatusCode
+## ClientVpnRouteStatusCodeType
 
 ```python
-from mypy_boto3_ec2.literals import ClientVpnRouteStatusCode
+from mypy_boto3_ec2.literals import ClientVpnRouteStatusCodeType
 ```
 
 Values:
@@ -863,10 +863,10 @@ Values:
 - `deleting`
 - `failed`
 
-## ConnectionNotificationState
+## ConnectionNotificationStateType
 
 ```python
-from mypy_boto3_ec2.literals import ConnectionNotificationState
+from mypy_boto3_ec2.literals import ConnectionNotificationStateType
 ```
 
 Values:
@@ -874,20 +874,20 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## ConnectionNotificationType
+## ConnectionNotificationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import ConnectionNotificationType
+from mypy_boto3_ec2.literals import ConnectionNotificationTypeType
 ```
 
 Values:
 
 - `Topic`
 
-## ContainerFormat
+## ContainerFormatType
 
 ```python
-from mypy_boto3_ec2.literals import ContainerFormat
+from mypy_boto3_ec2.literals import ContainerFormatType
 ```
 
 Values:
@@ -924,10 +924,10 @@ Values:
 
 - `conversion_task_deleted`
 
-## ConversionTaskState
+## ConversionTaskStateType
 
 ```python
-from mypy_boto3_ec2.literals import ConversionTaskState
+from mypy_boto3_ec2.literals import ConversionTaskStateType
 ```
 
 Values:
@@ -937,20 +937,20 @@ Values:
 - `cancelling`
 - `completed`
 
-## CopyTagsFromSource
+## CopyTagsFromSourceType
 
 ```python
-from mypy_boto3_ec2.literals import CopyTagsFromSource
+from mypy_boto3_ec2.literals import CopyTagsFromSourceType
 ```
 
 Values:
 
 - `volume`
 
-## CurrencyCodeValues
+## CurrencyCodeValuesType
 
 ```python
-from mypy_boto3_ec2.literals import CurrencyCodeValues
+from mypy_boto3_ec2.literals import CurrencyCodeValuesType
 ```
 
 Values:
@@ -967,10 +967,10 @@ Values:
 
 - `customer_gateway_available`
 
-## DatafeedSubscriptionState
+## DatafeedSubscriptionStateType
 
 ```python
-from mypy_boto3_ec2.literals import DatafeedSubscriptionState
+from mypy_boto3_ec2.literals import DatafeedSubscriptionStateType
 ```
 
 Values:
@@ -978,10 +978,10 @@ Values:
 - `Active`
 - `Inactive`
 
-## DefaultRouteTableAssociationValue
+## DefaultRouteTableAssociationValueType
 
 ```python
-from mypy_boto3_ec2.literals import DefaultRouteTableAssociationValue
+from mypy_boto3_ec2.literals import DefaultRouteTableAssociationValueType
 ```
 
 Values:
@@ -989,10 +989,10 @@ Values:
 - `disable`
 - `enable`
 
-## DefaultRouteTablePropagationValue
+## DefaultRouteTablePropagationValueType
 
 ```python
-from mypy_boto3_ec2.literals import DefaultRouteTablePropagationValue
+from mypy_boto3_ec2.literals import DefaultRouteTablePropagationValueType
 ```
 
 Values:
@@ -1000,10 +1000,10 @@ Values:
 - `disable`
 - `enable`
 
-## DefaultTargetCapacityType
+## DefaultTargetCapacityTypeType
 
 ```python
-from mypy_boto3_ec2.literals import DefaultTargetCapacityType
+from mypy_boto3_ec2.literals import DefaultTargetCapacityTypeType
 ```
 
 Values:
@@ -1011,10 +1011,10 @@ Values:
 - `on-demand`
 - `spot`
 
-## DeleteFleetErrorCode
+## DeleteFleetErrorCodeType
 
 ```python
-from mypy_boto3_ec2.literals import DeleteFleetErrorCode
+from mypy_boto3_ec2.literals import DeleteFleetErrorCodeType
 ```
 
 Values:
@@ -1024,10 +1024,10 @@ Values:
 - `fleetNotInDeletableState`
 - `unexpectedError`
 
-## DeleteQueuedReservedInstancesErrorCode
+## DeleteQueuedReservedInstancesErrorCodeType
 
 ```python
-from mypy_boto3_ec2.literals import DeleteQueuedReservedInstancesErrorCode
+from mypy_boto3_ec2.literals import DeleteQueuedReservedInstancesErrorCodeType
 ```
 
 Values:
@@ -1926,10 +1926,10 @@ Values:
 
 - `describe_vpcs`
 
-## DeviceType
+## DeviceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import DeviceType
+from mypy_boto3_ec2.literals import DeviceTypeType
 ```
 
 Values:
@@ -1937,10 +1937,10 @@ Values:
 - `ebs`
 - `instance-store`
 
-## DiskImageFormat
+## DiskImageFormatType
 
 ```python
-from mypy_boto3_ec2.literals import DiskImageFormat
+from mypy_boto3_ec2.literals import DiskImageFormatType
 ```
 
 Values:
@@ -1949,10 +1949,10 @@ Values:
 - `VHD`
 - `VMDK`
 
-## DiskType
+## DiskTypeType
 
 ```python
-from mypy_boto3_ec2.literals import DiskType
+from mypy_boto3_ec2.literals import DiskTypeType
 ```
 
 Values:
@@ -1960,10 +1960,10 @@ Values:
 - `hdd`
 - `ssd`
 
-## DnsNameState
+## DnsNameStateType
 
 ```python
-from mypy_boto3_ec2.literals import DnsNameState
+from mypy_boto3_ec2.literals import DnsNameStateType
 ```
 
 Values:
@@ -1972,10 +1972,10 @@ Values:
 - `pendingVerification`
 - `verified`
 
-## DnsSupportValue
+## DnsSupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import DnsSupportValue
+from mypy_boto3_ec2.literals import DnsSupportValueType
 ```
 
 Values:
@@ -1983,10 +1983,10 @@ Values:
 - `disable`
 - `enable`
 
-## DomainType
+## DomainTypeType
 
 ```python
-from mypy_boto3_ec2.literals import DomainType
+from mypy_boto3_ec2.literals import DomainTypeType
 ```
 
 Values:
@@ -1994,10 +1994,10 @@ Values:
 - `standard`
 - `vpc`
 
-## EbsEncryptionSupport
+## EbsEncryptionSupportType
 
 ```python
-from mypy_boto3_ec2.literals import EbsEncryptionSupport
+from mypy_boto3_ec2.literals import EbsEncryptionSupportType
 ```
 
 Values:
@@ -2005,10 +2005,10 @@ Values:
 - `supported`
 - `unsupported`
 
-## EbsNvmeSupport
+## EbsNvmeSupportType
 
 ```python
-from mypy_boto3_ec2.literals import EbsNvmeSupport
+from mypy_boto3_ec2.literals import EbsNvmeSupportType
 ```
 
 Values:
@@ -2017,10 +2017,10 @@ Values:
 - `supported`
 - `unsupported`
 
-## EbsOptimizedSupport
+## EbsOptimizedSupportType
 
 ```python
-from mypy_boto3_ec2.literals import EbsOptimizedSupport
+from mypy_boto3_ec2.literals import EbsOptimizedSupportType
 ```
 
 Values:
@@ -2029,20 +2029,20 @@ Values:
 - `supported`
 - `unsupported`
 
-## ElasticGpuState
+## ElasticGpuStateType
 
 ```python
-from mypy_boto3_ec2.literals import ElasticGpuState
+from mypy_boto3_ec2.literals import ElasticGpuStateType
 ```
 
 Values:
 
 - `ATTACHED`
 
-## ElasticGpuStatus
+## ElasticGpuStatusType
 
 ```python
-from mypy_boto3_ec2.literals import ElasticGpuStatus
+from mypy_boto3_ec2.literals import ElasticGpuStatusType
 ```
 
 Values:
@@ -2050,10 +2050,10 @@ Values:
 - `IMPAIRED`
 - `OK`
 
-## EnaSupport
+## EnaSupportType
 
 ```python
-from mypy_boto3_ec2.literals import EnaSupport
+from mypy_boto3_ec2.literals import EnaSupportType
 ```
 
 Values:
@@ -2062,10 +2062,10 @@ Values:
 - `supported`
 - `unsupported`
 
-## EndDateType
+## EndDateTypeType
 
 ```python
-from mypy_boto3_ec2.literals import EndDateType
+from mypy_boto3_ec2.literals import EndDateTypeType
 ```
 
 Values:
@@ -2073,10 +2073,10 @@ Values:
 - `limited`
 - `unlimited`
 
-## EphemeralNvmeSupport
+## EphemeralNvmeSupportType
 
 ```python
-from mypy_boto3_ec2.literals import EphemeralNvmeSupport
+from mypy_boto3_ec2.literals import EphemeralNvmeSupportType
 ```
 
 Values:
@@ -2085,10 +2085,10 @@ Values:
 - `supported`
 - `unsupported`
 
-## EventCode
+## EventCodeType
 
 ```python
-from mypy_boto3_ec2.literals import EventCode
+from mypy_boto3_ec2.literals import EventCodeType
 ```
 
 Values:
@@ -2099,10 +2099,10 @@ Values:
 - `system-maintenance`
 - `system-reboot`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_ec2.literals import EventType
+from mypy_boto3_ec2.literals import EventTypeType
 ```
 
 Values:
@@ -2112,10 +2112,10 @@ Values:
 - `information`
 - `instanceChange`
 
-## ExcessCapacityTerminationPolicy
+## ExcessCapacityTerminationPolicyType
 
 ```python
-from mypy_boto3_ec2.literals import ExcessCapacityTerminationPolicy
+from mypy_boto3_ec2.literals import ExcessCapacityTerminationPolicyType
 ```
 
 Values:
@@ -2123,10 +2123,10 @@ Values:
 - `default`
 - `noTermination`
 
-## ExportEnvironment
+## ExportEnvironmentType
 
 ```python
-from mypy_boto3_ec2.literals import ExportEnvironment
+from mypy_boto3_ec2.literals import ExportEnvironmentType
 ```
 
 Values:
@@ -2155,10 +2155,10 @@ Values:
 
 - `export_task_completed`
 
-## ExportTaskState
+## ExportTaskStateType
 
 ```python
-from mypy_boto3_ec2.literals import ExportTaskState
+from mypy_boto3_ec2.literals import ExportTaskStateType
 ```
 
 Values:
@@ -2168,10 +2168,10 @@ Values:
 - `cancelling`
 - `completed`
 
-## FastSnapshotRestoreStateCode
+## FastSnapshotRestoreStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import FastSnapshotRestoreStateCode
+from mypy_boto3_ec2.literals import FastSnapshotRestoreStateCodeType
 ```
 
 Values:
@@ -2182,10 +2182,10 @@ Values:
 - `enabling`
 - `optimizing`
 
-## FleetActivityStatus
+## FleetActivityStatusType
 
 ```python
-from mypy_boto3_ec2.literals import FleetActivityStatus
+from mypy_boto3_ec2.literals import FleetActivityStatusType
 ```
 
 Values:
@@ -2195,20 +2195,20 @@ Values:
 - `pending_fulfillment`
 - `pending_termination`
 
-## FleetCapacityReservationUsageStrategy
+## FleetCapacityReservationUsageStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import FleetCapacityReservationUsageStrategy
+from mypy_boto3_ec2.literals import FleetCapacityReservationUsageStrategyType
 ```
 
 Values:
 
 - `use-capacity-reservations-first`
 
-## FleetEventType
+## FleetEventTypeType
 
 ```python
-from mypy_boto3_ec2.literals import FleetEventType
+from mypy_boto3_ec2.literals import FleetEventTypeType
 ```
 
 Values:
@@ -2217,10 +2217,10 @@ Values:
 - `instance-change`
 - `service-error`
 
-## FleetExcessCapacityTerminationPolicy
+## FleetExcessCapacityTerminationPolicyType
 
 ```python
-from mypy_boto3_ec2.literals import FleetExcessCapacityTerminationPolicy
+from mypy_boto3_ec2.literals import FleetExcessCapacityTerminationPolicyType
 ```
 
 Values:
@@ -2228,10 +2228,10 @@ Values:
 - `no-termination`
 - `termination`
 
-## FleetOnDemandAllocationStrategy
+## FleetOnDemandAllocationStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import FleetOnDemandAllocationStrategy
+from mypy_boto3_ec2.literals import FleetOnDemandAllocationStrategyType
 ```
 
 Values:
@@ -2239,20 +2239,20 @@ Values:
 - `lowest-price`
 - `prioritized`
 
-## FleetReplacementStrategy
+## FleetReplacementStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import FleetReplacementStrategy
+from mypy_boto3_ec2.literals import FleetReplacementStrategyType
 ```
 
 Values:
 
 - `launch`
 
-## FleetStateCode
+## FleetStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import FleetStateCode
+from mypy_boto3_ec2.literals import FleetStateCodeType
 ```
 
 Values:
@@ -2265,10 +2265,10 @@ Values:
 - `modifying`
 - `submitted`
 
-## FleetType
+## FleetTypeType
 
 ```python
-from mypy_boto3_ec2.literals import FleetType
+from mypy_boto3_ec2.literals import FleetTypeType
 ```
 
 Values:
@@ -2277,10 +2277,10 @@ Values:
 - `maintain`
 - `request`
 
-## FlowLogsResourceType
+## FlowLogsResourceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import FlowLogsResourceType
+from mypy_boto3_ec2.literals import FlowLogsResourceTypeType
 ```
 
 Values:
@@ -2289,10 +2289,10 @@ Values:
 - `Subnet`
 - `VPC`
 
-## FpgaImageAttributeName
+## FpgaImageAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import FpgaImageAttributeName
+from mypy_boto3_ec2.literals import FpgaImageAttributeNameType
 ```
 
 Values:
@@ -2302,10 +2302,10 @@ Values:
 - `name`
 - `productCodes`
 
-## FpgaImageStateCode
+## FpgaImageStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import FpgaImageStateCode
+from mypy_boto3_ec2.literals import FpgaImageStateCodeType
 ```
 
 Values:
@@ -2315,10 +2315,10 @@ Values:
 - `pending`
 - `unavailable`
 
-## GatewayType
+## GatewayTypeType
 
 ```python
-from mypy_boto3_ec2.literals import GatewayType
+from mypy_boto3_ec2.literals import GatewayTypeType
 ```
 
 Values:
@@ -2415,10 +2415,10 @@ Values:
 
 - `get_transit_gateway_route_table_propagations`
 
-## HostRecovery
+## HostRecoveryType
 
 ```python
-from mypy_boto3_ec2.literals import HostRecovery
+from mypy_boto3_ec2.literals import HostRecoveryType
 ```
 
 Values:
@@ -2426,10 +2426,10 @@ Values:
 - `off`
 - `on`
 
-## HostTenancy
+## HostTenancyType
 
 ```python
-from mypy_boto3_ec2.literals import HostTenancy
+from mypy_boto3_ec2.literals import HostTenancyType
 ```
 
 Values:
@@ -2437,10 +2437,10 @@ Values:
 - `dedicated`
 - `host`
 
-## HttpTokensState
+## HttpTokensStateType
 
 ```python
-from mypy_boto3_ec2.literals import HttpTokensState
+from mypy_boto3_ec2.literals import HttpTokensStateType
 ```
 
 Values:
@@ -2448,10 +2448,10 @@ Values:
 - `optional`
 - `required`
 
-## HypervisorType
+## HypervisorTypeType
 
 ```python
-from mypy_boto3_ec2.literals import HypervisorType
+from mypy_boto3_ec2.literals import HypervisorTypeType
 ```
 
 Values:
@@ -2459,10 +2459,10 @@ Values:
 - `ovm`
 - `xen`
 
-## IamInstanceProfileAssociationState
+## IamInstanceProfileAssociationStateType
 
 ```python
-from mypy_boto3_ec2.literals import IamInstanceProfileAssociationState
+from mypy_boto3_ec2.literals import IamInstanceProfileAssociationStateType
 ```
 
 Values:
@@ -2472,10 +2472,10 @@ Values:
 - `disassociated`
 - `disassociating`
 
-## Igmpv2SupportValue
+## Igmpv2SupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import Igmpv2SupportValue
+from mypy_boto3_ec2.literals import Igmpv2SupportValueType
 ```
 
 Values:
@@ -2483,10 +2483,10 @@ Values:
 - `disable`
 - `enable`
 
-## ImageAttributeName
+## ImageAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import ImageAttributeName
+from mypy_boto3_ec2.literals import ImageAttributeNameType
 ```
 
 Values:
@@ -2520,10 +2520,10 @@ Values:
 
 - `image_exists`
 
-## ImageState
+## ImageStateType
 
 ```python
-from mypy_boto3_ec2.literals import ImageState
+from mypy_boto3_ec2.literals import ImageStateType
 ```
 
 Values:
@@ -2536,10 +2536,10 @@ Values:
 - `pending`
 - `transient`
 
-## ImageTypeValues
+## ImageTypeValuesType
 
 ```python
-from mypy_boto3_ec2.literals import ImageTypeValues
+from mypy_boto3_ec2.literals import ImageTypeValuesType
 ```
 
 Values:
@@ -2548,10 +2548,10 @@ Values:
 - `machine`
 - `ramdisk`
 
-## InstanceAttributeName
+## InstanceAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceAttributeName
+from mypy_boto3_ec2.literals import InstanceAttributeNameType
 ```
 
 Values:
@@ -2582,10 +2582,10 @@ Values:
 
 - `instance_exists`
 
-## InstanceHealthStatus
+## InstanceHealthStatusType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceHealthStatus
+from mypy_boto3_ec2.literals import InstanceHealthStatusType
 ```
 
 Values:
@@ -2593,10 +2593,10 @@ Values:
 - `healthy`
 - `unhealthy`
 
-## InstanceInterruptionBehavior
+## InstanceInterruptionBehaviorType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceInterruptionBehavior
+from mypy_boto3_ec2.literals import InstanceInterruptionBehaviorType
 ```
 
 Values:
@@ -2604,17 +2604,6 @@ Values:
 - `hibernate`
 - `stop`
 - `terminate`
-
-## InstanceLifecycle
-
-```python
-from mypy_boto3_ec2.literals import InstanceLifecycle
-```
-
-Values:
-
-- `on-demand`
-- `spot`
 
 ## InstanceLifecycleType
 
@@ -2624,13 +2613,24 @@ from mypy_boto3_ec2.literals import InstanceLifecycleType
 
 Values:
 
+- `on-demand`
+- `spot`
+
+## InstanceLifecycleTypeType
+
+```python
+from mypy_boto3_ec2.literals import InstanceLifecycleTypeType
+```
+
+Values:
+
 - `scheduled`
 - `spot`
 
-## InstanceMatchCriteria
+## InstanceMatchCriteriaType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceMatchCriteria
+from mypy_boto3_ec2.literals import InstanceMatchCriteriaType
 ```
 
 Values:
@@ -2638,10 +2638,10 @@ Values:
 - `open`
 - `targeted`
 
-## InstanceMetadataEndpointState
+## InstanceMetadataEndpointStateType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceMetadataEndpointState
+from mypy_boto3_ec2.literals import InstanceMetadataEndpointStateType
 ```
 
 Values:
@@ -2649,10 +2649,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## InstanceMetadataOptionsState
+## InstanceMetadataOptionsStateType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceMetadataOptionsState
+from mypy_boto3_ec2.literals import InstanceMetadataOptionsStateType
 ```
 
 Values:
@@ -2670,10 +2670,10 @@ Values:
 
 - `instance_running`
 
-## InstanceStateName
+## InstanceStateNameType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceStateName
+from mypy_boto3_ec2.literals import InstanceStateNameType
 ```
 
 Values:
@@ -2715,10 +2715,21 @@ Values:
 
 - `instance_terminated`
 
-## InstanceType
+## InstanceTypeHypervisorType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceType
+from mypy_boto3_ec2.literals import InstanceTypeHypervisorType
+```
+
+Values:
+
+- `nitro`
+- `xen`
+
+## InstanceTypeType
+
+```python
+from mypy_boto3_ec2.literals import InstanceTypeType
 ```
 
 Values:
@@ -3122,21 +3133,10 @@ Values:
 - `z1d.metal`
 - `z1d.xlarge`
 
-## InstanceTypeHypervisor
+## InterfacePermissionTypeType
 
 ```python
-from mypy_boto3_ec2.literals import InstanceTypeHypervisor
-```
-
-Values:
-
-- `nitro`
-- `xen`
-
-## InterfacePermissionType
-
-```python
-from mypy_boto3_ec2.literals import InterfacePermissionType
+from mypy_boto3_ec2.literals import InterfacePermissionTypeType
 ```
 
 Values:
@@ -3144,10 +3144,10 @@ Values:
 - `EIP-ASSOCIATE`
 - `INSTANCE-ATTACH`
 
-## Ipv6SupportValue
+## Ipv6SupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import Ipv6SupportValue
+from mypy_boto3_ec2.literals import Ipv6SupportValueType
 ```
 
 Values:
@@ -3165,10 +3165,10 @@ Values:
 
 - `key_pair_exists`
 
-## LaunchTemplateErrorCode
+## LaunchTemplateErrorCodeType
 
 ```python
-from mypy_boto3_ec2.literals import LaunchTemplateErrorCode
+from mypy_boto3_ec2.literals import LaunchTemplateErrorCodeType
 ```
 
 Values:
@@ -3180,10 +3180,10 @@ Values:
 - `launchTemplateVersionDoesNotExist`
 - `unexpectedError`
 
-## LaunchTemplateHttpTokensState
+## LaunchTemplateHttpTokensStateType
 
 ```python
-from mypy_boto3_ec2.literals import LaunchTemplateHttpTokensState
+from mypy_boto3_ec2.literals import LaunchTemplateHttpTokensStateType
 ```
 
 Values:
@@ -3191,10 +3191,10 @@ Values:
 - `optional`
 - `required`
 
-## LaunchTemplateInstanceMetadataEndpointState
+## LaunchTemplateInstanceMetadataEndpointStateType
 
 ```python
-from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataEndpointState
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataEndpointStateType
 ```
 
 Values:
@@ -3202,10 +3202,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## LaunchTemplateInstanceMetadataOptionsState
+## LaunchTemplateInstanceMetadataOptionsStateType
 
 ```python
-from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataOptionsState
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataOptionsStateType
 ```
 
 Values:
@@ -3213,10 +3213,10 @@ Values:
 - `applied`
 - `pending`
 
-## ListingState
+## ListingStateType
 
 ```python
-from mypy_boto3_ec2.literals import ListingState
+from mypy_boto3_ec2.literals import ListingStateType
 ```
 
 Values:
@@ -3226,10 +3226,10 @@ Values:
 - `pending`
 - `sold`
 
-## ListingStatus
+## ListingStatusType
 
 ```python
-from mypy_boto3_ec2.literals import ListingStatus
+from mypy_boto3_ec2.literals import ListingStatusType
 ```
 
 Values:
@@ -3239,10 +3239,10 @@ Values:
 - `closed`
 - `pending`
 
-## LocalGatewayRouteState
+## LocalGatewayRouteStateType
 
 ```python
-from mypy_boto3_ec2.literals import LocalGatewayRouteState
+from mypy_boto3_ec2.literals import LocalGatewayRouteStateType
 ```
 
 Values:
@@ -3253,10 +3253,10 @@ Values:
 - `deleting`
 - `pending`
 
-## LocalGatewayRouteType
+## LocalGatewayRouteTypeType
 
 ```python
-from mypy_boto3_ec2.literals import LocalGatewayRouteType
+from mypy_boto3_ec2.literals import LocalGatewayRouteTypeType
 ```
 
 Values:
@@ -3264,10 +3264,10 @@ Values:
 - `propagated`
 - `static`
 
-## LocationType
+## LocationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import LocationType
+from mypy_boto3_ec2.literals import LocationTypeType
 ```
 
 Values:
@@ -3276,10 +3276,10 @@ Values:
 - `availability-zone-id`
 - `region`
 
-## LogDestinationType
+## LogDestinationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import LogDestinationType
+from mypy_boto3_ec2.literals import LogDestinationTypeType
 ```
 
 Values:
@@ -3287,20 +3287,20 @@ Values:
 - `cloud-watch-logs`
 - `s3`
 
-## MarketType
+## MarketTypeType
 
 ```python
-from mypy_boto3_ec2.literals import MarketType
+from mypy_boto3_ec2.literals import MarketTypeType
 ```
 
 Values:
 
 - `spot`
 
-## MembershipType
+## MembershipTypeType
 
 ```python
-from mypy_boto3_ec2.literals import MembershipType
+from mypy_boto3_ec2.literals import MembershipTypeType
 ```
 
 Values:
@@ -3308,10 +3308,10 @@ Values:
 - `igmp`
 - `static`
 
-## ModifyAvailabilityZoneOptInStatus
+## ModifyAvailabilityZoneOptInStatusType
 
 ```python
-from mypy_boto3_ec2.literals import ModifyAvailabilityZoneOptInStatus
+from mypy_boto3_ec2.literals import ModifyAvailabilityZoneOptInStatusType
 ```
 
 Values:
@@ -3319,10 +3319,10 @@ Values:
 - `not-opted-in`
 - `opted-in`
 
-## MonitoringState
+## MonitoringStateType
 
 ```python
-from mypy_boto3_ec2.literals import MonitoringState
+from mypy_boto3_ec2.literals import MonitoringStateType
 ```
 
 Values:
@@ -3332,10 +3332,10 @@ Values:
 - `enabled`
 - `pending`
 
-## MoveStatus
+## MoveStatusType
 
 ```python
-from mypy_boto3_ec2.literals import MoveStatus
+from mypy_boto3_ec2.literals import MoveStatusType
 ```
 
 Values:
@@ -3343,10 +3343,10 @@ Values:
 - `movingToVpc`
 - `restoringToClassic`
 
-## MulticastSupportValue
+## MulticastSupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import MulticastSupportValue
+from mypy_boto3_ec2.literals import MulticastSupportValueType
 ```
 
 Values:
@@ -3364,10 +3364,10 @@ Values:
 
 - `nat_gateway_available`
 
-## NatGatewayState
+## NatGatewayStateType
 
 ```python
-from mypy_boto3_ec2.literals import NatGatewayState
+from mypy_boto3_ec2.literals import NatGatewayStateType
 ```
 
 Values:
@@ -3378,10 +3378,10 @@ Values:
 - `failed`
 - `pending`
 
-## NetworkInterfaceAttribute
+## NetworkInterfaceAttributeType
 
 ```python
-from mypy_boto3_ec2.literals import NetworkInterfaceAttribute
+from mypy_boto3_ec2.literals import NetworkInterfaceAttributeType
 ```
 
 Values:
@@ -3401,20 +3401,20 @@ Values:
 
 - `network_interface_available`
 
-## NetworkInterfaceCreationType
+## NetworkInterfaceCreationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import NetworkInterfaceCreationType
+from mypy_boto3_ec2.literals import NetworkInterfaceCreationTypeType
 ```
 
 Values:
 
 - `efa`
 
-## NetworkInterfacePermissionStateCode
+## NetworkInterfacePermissionStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import NetworkInterfacePermissionStateCode
+from mypy_boto3_ec2.literals import NetworkInterfacePermissionStateCodeType
 ```
 
 Values:
@@ -3424,10 +3424,10 @@ Values:
 - `revoked`
 - `revoking`
 
-## NetworkInterfaceStatus
+## NetworkInterfaceStatusType
 
 ```python
-from mypy_boto3_ec2.literals import NetworkInterfaceStatus
+from mypy_boto3_ec2.literals import NetworkInterfaceStatusType
 ```
 
 Values:
@@ -3438,10 +3438,10 @@ Values:
 - `detaching`
 - `in-use`
 
-## NetworkInterfaceType
+## NetworkInterfaceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import NetworkInterfaceType
+from mypy_boto3_ec2.literals import NetworkInterfaceTypeType
 ```
 
 Values:
@@ -3450,10 +3450,10 @@ Values:
 - `interface`
 - `natGateway`
 
-## OfferingClassType
+## OfferingClassTypeType
 
 ```python
-from mypy_boto3_ec2.literals import OfferingClassType
+from mypy_boto3_ec2.literals import OfferingClassTypeType
 ```
 
 Values:
@@ -3461,10 +3461,10 @@ Values:
 - `convertible`
 - `standard`
 
-## OfferingTypeValues
+## OfferingTypeValuesType
 
 ```python
-from mypy_boto3_ec2.literals import OfferingTypeValues
+from mypy_boto3_ec2.literals import OfferingTypeValuesType
 ```
 
 Values:
@@ -3476,10 +3476,10 @@ Values:
 - `No Upfront`
 - `Partial Upfront`
 
-## OnDemandAllocationStrategy
+## OnDemandAllocationStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import OnDemandAllocationStrategy
+from mypy_boto3_ec2.literals import OnDemandAllocationStrategyType
 ```
 
 Values:
@@ -3487,10 +3487,10 @@ Values:
 - `lowestPrice`
 - `prioritized`
 
-## OperationType
+## OperationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import OperationType
+from mypy_boto3_ec2.literals import OperationTypeType
 ```
 
 Values:
@@ -3498,10 +3498,10 @@ Values:
 - `add`
 - `remove`
 
-## PartitionLoadFrequency
+## PartitionLoadFrequencyType
 
 ```python
-from mypy_boto3_ec2.literals import PartitionLoadFrequency
+from mypy_boto3_ec2.literals import PartitionLoadFrequencyType
 ```
 
 Values:
@@ -3521,10 +3521,10 @@ Values:
 
 - `password_data_available`
 
-## PaymentOption
+## PaymentOptionType
 
 ```python
-from mypy_boto3_ec2.literals import PaymentOption
+from mypy_boto3_ec2.literals import PaymentOptionType
 ```
 
 Values:
@@ -3533,20 +3533,20 @@ Values:
 - `NoUpfront`
 - `PartialUpfront`
 
-## PermissionGroup
+## PermissionGroupType
 
 ```python
-from mypy_boto3_ec2.literals import PermissionGroup
+from mypy_boto3_ec2.literals import PermissionGroupType
 ```
 
 Values:
 
 - `all`
 
-## PlacementGroupState
+## PlacementGroupStateType
 
 ```python
-from mypy_boto3_ec2.literals import PlacementGroupState
+from mypy_boto3_ec2.literals import PlacementGroupStateType
 ```
 
 Values:
@@ -3556,10 +3556,10 @@ Values:
 - `deleting`
 - `pending`
 
-## PlacementGroupStrategy
+## PlacementGroupStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import PlacementGroupStrategy
+from mypy_boto3_ec2.literals import PlacementGroupStrategyType
 ```
 
 Values:
@@ -3568,10 +3568,10 @@ Values:
 - `partition`
 - `spread`
 
-## PlacementStrategy
+## PlacementStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import PlacementStrategy
+from mypy_boto3_ec2.literals import PlacementStrategyType
 ```
 
 Values:
@@ -3580,20 +3580,20 @@ Values:
 - `partition`
 - `spread`
 
-## PlatformValues
+## PlatformValuesType
 
 ```python
-from mypy_boto3_ec2.literals import PlatformValues
+from mypy_boto3_ec2.literals import PlatformValuesType
 ```
 
 Values:
 
 - `Windows`
 
-## PrefixListState
+## PrefixListStateType
 
 ```python
-from mypy_boto3_ec2.literals import PrefixListState
+from mypy_boto3_ec2.literals import PrefixListStateType
 ```
 
 Values:
@@ -3611,10 +3611,10 @@ Values:
 - `restore-failed`
 - `restore-in-progress`
 
-## PrincipalType
+## PrincipalTypeType
 
 ```python
-from mypy_boto3_ec2.literals import PrincipalType
+from mypy_boto3_ec2.literals import PrincipalTypeType
 ```
 
 Values:
@@ -3626,10 +3626,10 @@ Values:
 - `Service`
 - `User`
 
-## ProductCodeValues
+## ProductCodeValuesType
 
 ```python
-from mypy_boto3_ec2.literals import ProductCodeValues
+from mypy_boto3_ec2.literals import ProductCodeValuesType
 ```
 
 Values:
@@ -3648,20 +3648,20 @@ Values:
 - `tcp`
 - `udp`
 
-## ProtocolValue
+## ProtocolValueType
 
 ```python
-from mypy_boto3_ec2.literals import ProtocolValue
+from mypy_boto3_ec2.literals import ProtocolValueType
 ```
 
 Values:
 
 - `gre`
 
-## RIProductDescription
+## RIProductDescriptionType
 
 ```python
-from mypy_boto3_ec2.literals import RIProductDescription
+from mypy_boto3_ec2.literals import RIProductDescriptionType
 ```
 
 Values:
@@ -3671,20 +3671,20 @@ Values:
 - `Windows`
 - `Windows (Amazon VPC)`
 
-## RecurringChargeFrequency
+## RecurringChargeFrequencyType
 
 ```python
-from mypy_boto3_ec2.literals import RecurringChargeFrequency
+from mypy_boto3_ec2.literals import RecurringChargeFrequencyType
 ```
 
 Values:
 
 - `Hourly`
 
-## ReplaceRootVolumeTaskState
+## ReplaceRootVolumeTaskStateType
 
 ```python
-from mypy_boto3_ec2.literals import ReplaceRootVolumeTaskState
+from mypy_boto3_ec2.literals import ReplaceRootVolumeTaskStateType
 ```
 
 Values:
@@ -3696,20 +3696,20 @@ Values:
 - `pending`
 - `succeeded`
 
-## ReplacementStrategy
+## ReplacementStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import ReplacementStrategy
+from mypy_boto3_ec2.literals import ReplacementStrategyType
 ```
 
 Values:
 
 - `launch`
 
-## ReportInstanceReasonCodes
+## ReportInstanceReasonCodesType
 
 ```python
-from mypy_boto3_ec2.literals import ReportInstanceReasonCodes
+from mypy_boto3_ec2.literals import ReportInstanceReasonCodesType
 ```
 
 Values:
@@ -3724,10 +3724,10 @@ Values:
 - `performance-other`
 - `unresponsive`
 
-## ReportStatusType
+## ReportStatusTypeType
 
 ```python
-from mypy_boto3_ec2.literals import ReportStatusType
+from mypy_boto3_ec2.literals import ReportStatusTypeType
 ```
 
 Values:
@@ -3735,10 +3735,10 @@ Values:
 - `impaired`
 - `ok`
 
-## ReservationState
+## ReservationStateType
 
 ```python
-from mypy_boto3_ec2.literals import ReservationState
+from mypy_boto3_ec2.literals import ReservationStateType
 ```
 
 Values:
@@ -3748,10 +3748,10 @@ Values:
 - `payment-pending`
 - `retired`
 
-## ReservedInstanceState
+## ReservedInstanceStateType
 
 ```python
-from mypy_boto3_ec2.literals import ReservedInstanceState
+from mypy_boto3_ec2.literals import ReservedInstanceStateType
 ```
 
 Values:
@@ -3763,30 +3763,30 @@ Values:
 - `queued-deleted`
 - `retired`
 
-## ResetFpgaImageAttributeName
+## ResetFpgaImageAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import ResetFpgaImageAttributeName
+from mypy_boto3_ec2.literals import ResetFpgaImageAttributeNameType
 ```
 
 Values:
 
 - `loadPermission`
 
-## ResetImageAttributeName
+## ResetImageAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import ResetImageAttributeName
+from mypy_boto3_ec2.literals import ResetImageAttributeNameType
 ```
 
 Values:
 
 - `launchPermission`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import ResourceType
+from mypy_boto3_ec2.literals import ResourceTypeType
 ```
 
 Values:
@@ -3839,10 +3839,10 @@ Values:
 - `vpn-connection`
 - `vpn-gateway`
 
-## RootDeviceType
+## RootDeviceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import RootDeviceType
+from mypy_boto3_ec2.literals import RootDeviceTypeType
 ```
 
 Values:
@@ -3850,10 +3850,10 @@ Values:
 - `ebs`
 - `instance-store`
 
-## RouteOrigin
+## RouteOriginType
 
 ```python
-from mypy_boto3_ec2.literals import RouteOrigin
+from mypy_boto3_ec2.literals import RouteOriginType
 ```
 
 Values:
@@ -3862,10 +3862,10 @@ Values:
 - `CreateRouteTable`
 - `EnableVgwRoutePropagation`
 
-## RouteState
+## RouteStateType
 
 ```python
-from mypy_boto3_ec2.literals import RouteState
+from mypy_boto3_ec2.literals import RouteStateType
 ```
 
 Values:
@@ -3873,10 +3873,10 @@ Values:
 - `active`
 - `blackhole`
 
-## RouteTableAssociationStateCode
+## RouteTableAssociationStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import RouteTableAssociationStateCode
+from mypy_boto3_ec2.literals import RouteTableAssociationStateCodeType
 ```
 
 Values:
@@ -3887,10 +3887,10 @@ Values:
 - `disassociating`
 - `failed`
 
-## RuleAction
+## RuleActionType
 
 ```python
-from mypy_boto3_ec2.literals import RuleAction
+from mypy_boto3_ec2.literals import RuleActionType
 ```
 
 Values:
@@ -3928,10 +3928,10 @@ Values:
 
 - `security_group_exists`
 
-## SelfServicePortal
+## SelfServicePortalType
 
 ```python
-from mypy_boto3_ec2.literals import SelfServicePortal
+from mypy_boto3_ec2.literals import SelfServicePortalType
 ```
 
 Values:
@@ -3939,10 +3939,10 @@ Values:
 - `disabled`
 - `enabled`
 
-## ServiceState
+## ServiceStateType
 
 ```python
-from mypy_boto3_ec2.literals import ServiceState
+from mypy_boto3_ec2.literals import ServiceStateType
 ```
 
 Values:
@@ -3953,10 +3953,10 @@ Values:
 - `Failed`
 - `Pending`
 
-## ServiceType
+## ServiceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import ServiceType
+from mypy_boto3_ec2.literals import ServiceTypeType
 ```
 
 Values:
@@ -3965,10 +3965,10 @@ Values:
 - `GatewayLoadBalancer`
 - `Interface`
 
-## ShutdownBehavior
+## ShutdownBehaviorType
 
 ```python
-from mypy_boto3_ec2.literals import ShutdownBehavior
+from mypy_boto3_ec2.literals import ShutdownBehaviorType
 ```
 
 Values:
@@ -3976,10 +3976,10 @@ Values:
 - `stop`
 - `terminate`
 
-## SnapshotAttributeName
+## SnapshotAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import SnapshotAttributeName
+from mypy_boto3_ec2.literals import SnapshotAttributeNameType
 ```
 
 Values:
@@ -3997,10 +3997,10 @@ Values:
 
 - `snapshot_completed`
 
-## SnapshotState
+## SnapshotStateType
 
 ```python
-from mypy_boto3_ec2.literals import SnapshotState
+from mypy_boto3_ec2.literals import SnapshotStateType
 ```
 
 Values:
@@ -4009,10 +4009,10 @@ Values:
 - `error`
 - `pending`
 
-## SpotAllocationStrategy
+## SpotAllocationStrategyType
 
 ```python
-from mypy_boto3_ec2.literals import SpotAllocationStrategy
+from mypy_boto3_ec2.literals import SpotAllocationStrategyType
 ```
 
 Values:
@@ -4022,10 +4022,10 @@ Values:
 - `diversified`
 - `lowest-price`
 
-## SpotInstanceInterruptionBehavior
+## SpotInstanceInterruptionBehaviorType
 
 ```python
-from mypy_boto3_ec2.literals import SpotInstanceInterruptionBehavior
+from mypy_boto3_ec2.literals import SpotInstanceInterruptionBehaviorType
 ```
 
 Values:
@@ -4044,10 +4044,10 @@ Values:
 
 - `spot_instance_request_fulfilled`
 
-## SpotInstanceState
+## SpotInstanceStateType
 
 ```python
-from mypy_boto3_ec2.literals import SpotInstanceState
+from mypy_boto3_ec2.literals import SpotInstanceStateType
 ```
 
 Values:
@@ -4058,10 +4058,10 @@ Values:
 - `failed`
 - `open`
 
-## SpotInstanceType
+## SpotInstanceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import SpotInstanceType
+from mypy_boto3_ec2.literals import SpotInstanceTypeType
 ```
 
 Values:
@@ -4069,10 +4069,10 @@ Values:
 - `one-time`
 - `persistent`
 
-## State
+## StateType
 
 ```python
-from mypy_boto3_ec2.literals import State
+from mypy_boto3_ec2.literals import StateType
 ```
 
 Values:
@@ -4086,10 +4086,10 @@ Values:
 - `PendingAcceptance`
 - `Rejected`
 
-## StaticSourcesSupportValue
+## StaticSourcesSupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import StaticSourcesSupportValue
+from mypy_boto3_ec2.literals import StaticSourcesSupportValueType
 ```
 
 Values:
@@ -4097,22 +4097,10 @@ Values:
 - `disable`
 - `enable`
 
-## Status
+## StatusNameType
 
 ```python
-from mypy_boto3_ec2.literals import Status
-```
-
-Values:
-
-- `InClassic`
-- `InVpc`
-- `MoveInProgress`
-
-## StatusName
-
-```python
-from mypy_boto3_ec2.literals import StatusName
+from mypy_boto3_ec2.literals import StatusNameType
 ```
 
 Values:
@@ -4123,6 +4111,18 @@ Values:
 
 ```python
 from mypy_boto3_ec2.literals import StatusType
+```
+
+Values:
+
+- `InClassic`
+- `InVpc`
+- `MoveInProgress`
+
+## StatusTypeType
+
+```python
+from mypy_boto3_ec2.literals import StatusTypeType
 ```
 
 Values:
@@ -4142,10 +4142,10 @@ Values:
 
 - `subnet_available`
 
-## SubnetCidrBlockStateCode
+## SubnetCidrBlockStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import SubnetCidrBlockStateCode
+from mypy_boto3_ec2.literals import SubnetCidrBlockStateCodeType
 ```
 
 Values:
@@ -4157,10 +4157,10 @@ Values:
 - `failed`
 - `failing`
 
-## SubnetState
+## SubnetStateType
 
 ```python
-from mypy_boto3_ec2.literals import SubnetState
+from mypy_boto3_ec2.literals import SubnetStateType
 ```
 
 Values:
@@ -4168,10 +4168,10 @@ Values:
 - `available`
 - `pending`
 
-## SummaryStatus
+## SummaryStatusType
 
 ```python
-from mypy_boto3_ec2.literals import SummaryStatus
+from mypy_boto3_ec2.literals import SummaryStatusType
 ```
 
 Values:
@@ -4192,10 +4192,10 @@ Values:
 
 - `system_status_ok`
 
-## TelemetryStatus
+## TelemetryStatusType
 
 ```python
-from mypy_boto3_ec2.literals import TelemetryStatus
+from mypy_boto3_ec2.literals import TelemetryStatusType
 ```
 
 Values:
@@ -4203,10 +4203,10 @@ Values:
 - `DOWN`
 - `UP`
 
-## Tenancy
+## TenancyType
 
 ```python
-from mypy_boto3_ec2.literals import Tenancy
+from mypy_boto3_ec2.literals import TenancyType
 ```
 
 Values:
@@ -4215,10 +4215,10 @@ Values:
 - `default`
 - `host`
 
-## TrafficDirection
+## TrafficDirectionType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficDirection
+from mypy_boto3_ec2.literals import TrafficDirectionType
 ```
 
 Values:
@@ -4226,10 +4226,10 @@ Values:
 - `egress`
 - `ingress`
 
-## TrafficMirrorFilterRuleField
+## TrafficMirrorFilterRuleFieldType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficMirrorFilterRuleField
+from mypy_boto3_ec2.literals import TrafficMirrorFilterRuleFieldType
 ```
 
 Values:
@@ -4239,20 +4239,20 @@ Values:
 - `protocol`
 - `source-port-range`
 
-## TrafficMirrorNetworkService
+## TrafficMirrorNetworkServiceType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficMirrorNetworkService
+from mypy_boto3_ec2.literals import TrafficMirrorNetworkServiceType
 ```
 
 Values:
 
 - `amazon-dns`
 
-## TrafficMirrorRuleAction
+## TrafficMirrorRuleActionType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficMirrorRuleAction
+from mypy_boto3_ec2.literals import TrafficMirrorRuleActionType
 ```
 
 Values:
@@ -4260,10 +4260,10 @@ Values:
 - `accept`
 - `reject`
 
-## TrafficMirrorSessionField
+## TrafficMirrorSessionFieldType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficMirrorSessionField
+from mypy_boto3_ec2.literals import TrafficMirrorSessionFieldType
 ```
 
 Values:
@@ -4272,10 +4272,10 @@ Values:
 - `packet-length`
 - `virtual-network-id`
 
-## TrafficMirrorTargetType
+## TrafficMirrorTargetTypeType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficMirrorTargetType
+from mypy_boto3_ec2.literals import TrafficMirrorTargetTypeType
 ```
 
 Values:
@@ -4283,10 +4283,10 @@ Values:
 - `network-interface`
 - `network-load-balancer`
 
-## TrafficType
+## TrafficTypeType
 
 ```python
-from mypy_boto3_ec2.literals import TrafficType
+from mypy_boto3_ec2.literals import TrafficTypeType
 ```
 
 Values:
@@ -4295,10 +4295,10 @@ Values:
 - `ALL`
 - `REJECT`
 
-## TransitGatewayAssociationState
+## TransitGatewayAssociationStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayAssociationState
+from mypy_boto3_ec2.literals import TransitGatewayAssociationStateType
 ```
 
 Values:
@@ -4308,10 +4308,10 @@ Values:
 - `disassociated`
 - `disassociating`
 
-## TransitGatewayAttachmentResourceType
+## TransitGatewayAttachmentResourceTypeType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayAttachmentResourceType
+from mypy_boto3_ec2.literals import TransitGatewayAttachmentResourceTypeType
 ```
 
 Values:
@@ -4323,10 +4323,10 @@ Values:
 - `vpc`
 - `vpn`
 
-## TransitGatewayAttachmentState
+## TransitGatewayAttachmentStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayAttachmentState
+from mypy_boto3_ec2.literals import TransitGatewayAttachmentStateType
 ```
 
 Values:
@@ -4345,10 +4345,10 @@ Values:
 - `rejecting`
 - `rollingBack`
 
-## TransitGatewayConnectPeerState
+## TransitGatewayConnectPeerStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayConnectPeerState
+from mypy_boto3_ec2.literals import TransitGatewayConnectPeerStateType
 ```
 
 Values:
@@ -4358,10 +4358,10 @@ Values:
 - `deleting`
 - `pending`
 
-## TransitGatewayMulitcastDomainAssociationState
+## TransitGatewayMulitcastDomainAssociationStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayMulitcastDomainAssociationState
+from mypy_boto3_ec2.literals import TransitGatewayMulitcastDomainAssociationStateType
 ```
 
 Values:
@@ -4374,10 +4374,10 @@ Values:
 - `pendingAcceptance`
 - `rejected`
 
-## TransitGatewayMulticastDomainState
+## TransitGatewayMulticastDomainStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayMulticastDomainState
+from mypy_boto3_ec2.literals import TransitGatewayMulticastDomainStateType
 ```
 
 Values:
@@ -4387,10 +4387,10 @@ Values:
 - `deleting`
 - `pending`
 
-## TransitGatewayPrefixListReferenceState
+## TransitGatewayPrefixListReferenceStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayPrefixListReferenceState
+from mypy_boto3_ec2.literals import TransitGatewayPrefixListReferenceStateType
 ```
 
 Values:
@@ -4400,10 +4400,10 @@ Values:
 - `modifying`
 - `pending`
 
-## TransitGatewayPropagationState
+## TransitGatewayPropagationStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayPropagationState
+from mypy_boto3_ec2.literals import TransitGatewayPropagationStateType
 ```
 
 Values:
@@ -4413,10 +4413,10 @@ Values:
 - `enabled`
 - `enabling`
 
-## TransitGatewayRouteState
+## TransitGatewayRouteStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayRouteState
+from mypy_boto3_ec2.literals import TransitGatewayRouteStateType
 ```
 
 Values:
@@ -4427,10 +4427,10 @@ Values:
 - `deleting`
 - `pending`
 
-## TransitGatewayRouteTableState
+## TransitGatewayRouteTableStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayRouteTableState
+from mypy_boto3_ec2.literals import TransitGatewayRouteTableStateType
 ```
 
 Values:
@@ -4440,10 +4440,10 @@ Values:
 - `deleting`
 - `pending`
 
-## TransitGatewayRouteType
+## TransitGatewayRouteTypeType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayRouteType
+from mypy_boto3_ec2.literals import TransitGatewayRouteTypeType
 ```
 
 Values:
@@ -4451,10 +4451,10 @@ Values:
 - `propagated`
 - `static`
 
-## TransitGatewayState
+## TransitGatewayStateType
 
 ```python
-from mypy_boto3_ec2.literals import TransitGatewayState
+from mypy_boto3_ec2.literals import TransitGatewayStateType
 ```
 
 Values:
@@ -4465,10 +4465,10 @@ Values:
 - `modifying`
 - `pending`
 
-## TransportProtocol
+## TransportProtocolType
 
 ```python
-from mypy_boto3_ec2.literals import TransportProtocol
+from mypy_boto3_ec2.literals import TransportProtocolType
 ```
 
 Values:
@@ -4476,10 +4476,10 @@ Values:
 - `tcp`
 - `udp`
 
-## TunnelInsideIpVersion
+## TunnelInsideIpVersionType
 
 ```python
-from mypy_boto3_ec2.literals import TunnelInsideIpVersion
+from mypy_boto3_ec2.literals import TunnelInsideIpVersionType
 ```
 
 Values:
@@ -4487,10 +4487,10 @@ Values:
 - `ipv4`
 - `ipv6`
 
-## UnlimitedSupportedInstanceFamily
+## UnlimitedSupportedInstanceFamilyType
 
 ```python
-from mypy_boto3_ec2.literals import UnlimitedSupportedInstanceFamily
+from mypy_boto3_ec2.literals import UnlimitedSupportedInstanceFamilyType
 ```
 
 Values:
@@ -4500,10 +4500,10 @@ Values:
 - `t3a`
 - `t4g`
 
-## UnsuccessfulInstanceCreditSpecificationErrorCode
+## UnsuccessfulInstanceCreditSpecificationErrorCodeType
 
 ```python
-from mypy_boto3_ec2.literals import UnsuccessfulInstanceCreditSpecificationErrorCode
+from mypy_boto3_ec2.literals import UnsuccessfulInstanceCreditSpecificationErrorCodeType
 ```
 
 Values:
@@ -4513,10 +4513,10 @@ Values:
 - `InvalidInstanceID.Malformed`
 - `InvalidInstanceID.NotFound`
 
-## UsageClassType
+## UsageClassTypeType
 
 ```python
-from mypy_boto3_ec2.literals import UsageClassType
+from mypy_boto3_ec2.literals import UsageClassTypeType
 ```
 
 Values:
@@ -4524,10 +4524,10 @@ Values:
 - `on-demand`
 - `spot`
 
-## VirtualizationType
+## VirtualizationTypeType
 
 ```python
-from mypy_boto3_ec2.literals import VirtualizationType
+from mypy_boto3_ec2.literals import VirtualizationTypeType
 ```
 
 Values:
@@ -4535,10 +4535,10 @@ Values:
 - `hvm`
 - `paravirtual`
 
-## VolumeAttachmentState
+## VolumeAttachmentStateType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeAttachmentState
+from mypy_boto3_ec2.literals import VolumeAttachmentStateType
 ```
 
 Values:
@@ -4549,10 +4549,10 @@ Values:
 - `detached`
 - `detaching`
 
-## VolumeAttributeName
+## VolumeAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeAttributeName
+from mypy_boto3_ec2.literals import VolumeAttributeNameType
 ```
 
 Values:
@@ -4590,10 +4590,10 @@ Values:
 
 - `volume_in_use`
 
-## VolumeModificationState
+## VolumeModificationStateType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeModificationState
+from mypy_boto3_ec2.literals import VolumeModificationStateType
 ```
 
 Values:
@@ -4603,10 +4603,10 @@ Values:
 - `modifying`
 - `optimizing`
 
-## VolumeState
+## VolumeStateType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeState
+from mypy_boto3_ec2.literals import VolumeStateType
 ```
 
 Values:
@@ -4618,10 +4618,10 @@ Values:
 - `error`
 - `in-use`
 
-## VolumeStatusInfoStatus
+## VolumeStatusInfoStatusType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeStatusInfoStatus
+from mypy_boto3_ec2.literals import VolumeStatusInfoStatusType
 ```
 
 Values:
@@ -4630,10 +4630,10 @@ Values:
 - `insufficient-data`
 - `ok`
 
-## VolumeStatusName
+## VolumeStatusNameType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeStatusName
+from mypy_boto3_ec2.literals import VolumeStatusNameType
 ```
 
 Values:
@@ -4641,10 +4641,10 @@ Values:
 - `io-enabled`
 - `io-performance`
 
-## VolumeType
+## VolumeTypeType
 
 ```python
-from mypy_boto3_ec2.literals import VolumeType
+from mypy_boto3_ec2.literals import VolumeTypeType
 ```
 
 Values:
@@ -4657,10 +4657,10 @@ Values:
 - `st1`
 - `standard`
 
-## VpcAttributeName
+## VpcAttributeNameType
 
 ```python
-from mypy_boto3_ec2.literals import VpcAttributeName
+from mypy_boto3_ec2.literals import VpcAttributeNameType
 ```
 
 Values:
@@ -4678,10 +4678,10 @@ Values:
 
 - `vpc_available`
 
-## VpcCidrBlockStateCode
+## VpcCidrBlockStateCodeType
 
 ```python
-from mypy_boto3_ec2.literals import VpcCidrBlockStateCode
+from mypy_boto3_ec2.literals import VpcCidrBlockStateCodeType
 ```
 
 Values:
@@ -4693,10 +4693,10 @@ Values:
 - `failed`
 - `failing`
 
-## VpcEndpointType
+## VpcEndpointTypeType
 
 ```python
-from mypy_boto3_ec2.literals import VpcEndpointType
+from mypy_boto3_ec2.literals import VpcEndpointTypeType
 ```
 
 Values:
@@ -4735,10 +4735,10 @@ Values:
 
 - `vpc_peering_connection_exists`
 
-## VpcPeeringConnectionStateReasonCode
+## VpcPeeringConnectionStateReasonCodeType
 
 ```python
-from mypy_boto3_ec2.literals import VpcPeeringConnectionStateReasonCode
+from mypy_boto3_ec2.literals import VpcPeeringConnectionStateReasonCodeType
 ```
 
 Values:
@@ -4753,10 +4753,10 @@ Values:
 - `provisioning`
 - `rejected`
 
-## VpcState
+## VpcStateType
 
 ```python
-from mypy_boto3_ec2.literals import VpcState
+from mypy_boto3_ec2.literals import VpcStateType
 ```
 
 Values:
@@ -4764,10 +4764,10 @@ Values:
 - `available`
 - `pending`
 
-## VpcTenancy
+## VpcTenancyType
 
 ```python
-from mypy_boto3_ec2.literals import VpcTenancy
+from mypy_boto3_ec2.literals import VpcTenancyType
 ```
 
 Values:
@@ -4794,10 +4794,10 @@ Values:
 
 - `vpn_connection_deleted`
 
-## VpnEcmpSupportValue
+## VpnEcmpSupportValueType
 
 ```python
-from mypy_boto3_ec2.literals import VpnEcmpSupportValue
+from mypy_boto3_ec2.literals import VpnEcmpSupportValueType
 ```
 
 Values:
@@ -4805,20 +4805,20 @@ Values:
 - `disable`
 - `enable`
 
-## VpnProtocol
+## VpnProtocolType
 
 ```python
-from mypy_boto3_ec2.literals import VpnProtocol
+from mypy_boto3_ec2.literals import VpnProtocolType
 ```
 
 Values:
 
 - `openvpn`
 
-## VpnState
+## VpnStateType
 
 ```python
-from mypy_boto3_ec2.literals import VpnState
+from mypy_boto3_ec2.literals import VpnStateType
 ```
 
 Values:
@@ -4828,20 +4828,20 @@ Values:
 - `deleting`
 - `pending`
 
-## VpnStaticRouteSource
+## VpnStaticRouteSourceType
 
 ```python
-from mypy_boto3_ec2.literals import VpnStaticRouteSource
+from mypy_boto3_ec2.literals import VpnStaticRouteSourceType
 ```
 
 Values:
 
 - `Static`
 
-## scope
+## scopeType
 
 ```python
-from mypy_boto3_ec2.literals import scope
+from mypy_boto3_ec2.literals import scopeType
 ```
 
 Values:

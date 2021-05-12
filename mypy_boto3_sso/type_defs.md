@@ -3,7 +3,7 @@
 > [Index](..) > [SSO](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso.html#SSO)
 type annotations stubs module
 [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 

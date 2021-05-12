@@ -3,7 +3,7 @@
 > [Index](..) > [S3](.) > Paginators
 
 Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3)
 type annotations stubs module
 [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
@@ -29,14 +29,14 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
 ```
 
 Boto3 documentation:
-[S3.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListMultipartUploads)
+[S3.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Paginator.ListMultipartUploads)
 
 Arguments for `ListMultipartUploadsPaginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `Prefix`: `str`
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
@@ -60,14 +60,14 @@ def get_list_object_versions_paginator() -> ListObjectVersionsPaginator:
 ```
 
 Boto3 documentation:
-[S3.Paginator.ListObjectVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectVersions)
+[S3.Paginator.ListObjectVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Paginator.ListObjectVersions)
 
 Arguments for `ListObjectVersionsPaginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `Prefix`: `str`
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
@@ -90,17 +90,17 @@ def get_list_objects_paginator() -> ListObjectsPaginator:
 ```
 
 Boto3 documentation:
-[S3.Paginator.ListObjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjects)
+[S3.Paginator.ListObjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Paginator.ListObjects)
 
 Arguments for `ListObjectsPaginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `Prefix`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -122,19 +122,19 @@ def get_list_objects_v2_paginator() -> ListObjectsV2Paginator:
 ```
 
 Boto3 documentation:
-[S3.Paginator.ListObjectsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2)
+[S3.Paginator.ListObjectsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Paginator.ListObjectsV2)
 
 Arguments for `ListObjectsV2Paginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
 - `EncodingType`: `Literal['url']` (see
-  [EncodingType](./literals.md#encodingtype))
+  [EncodingTypeType](./literals.md#encodingtypetype))
 - `Prefix`: `str`
 - `FetchOwner`: `bool`
 - `StartAfter`: `str`
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -156,7 +156,7 @@ def get_list_parts_paginator() -> ListPartsPaginator:
 ```
 
 Boto3 documentation:
-[S3.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListParts)
+[S3.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3.html#S3.Paginator.ListParts)
 
 Arguments for `ListPartsPaginator.paginate` method:
 
@@ -164,7 +164,7 @@ Arguments for `ListPartsPaginator.paginate` method:
 - `Key`: `str` *(required)*
 - `UploadId`: `str` *(required)*
 - `RequestPayer`: `Literal['requester']` (see
-  [RequestPayer](./literals.md#requestpayer))
+  [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

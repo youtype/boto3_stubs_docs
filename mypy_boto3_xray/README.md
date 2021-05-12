@@ -3,7 +3,7 @@
 > [Index](..) > XRay
 
 Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay)
 type annotations stubs module
 [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
@@ -29,49 +29,49 @@ Can be used directly:
 from mypy_boto3_xray.client import XRayClient
 ```
 
-XRayClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [batch_get_traces](./client.md#batch-get-traces)
-- [can_paginate](./client.md#can-paginate)
-- [create_group](./client.md#create-group)
-- [create_sampling_rule](./client.md#create-sampling-rule)
-- [delete_group](./client.md#delete-group)
-- [delete_sampling_rule](./client.md#delete-sampling-rule)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_encryption_config](./client.md#get-encryption-config)
-- [get_group](./client.md#get-group)
-- [get_groups](./client.md#get-groups)
-- [get_insight](./client.md#get-insight)
-- [get_insight_events](./client.md#get-insight-events)
-- [get_insight_impact_graph](./client.md#get-insight-impact-graph)
-- [get_insight_summaries](./client.md#get-insight-summaries)
-- [get_paginator](./client.md#get-paginator)
-- [get_sampling_rules](./client.md#get-sampling-rules)
-- [get_sampling_statistic_summaries](./client.md#get-sampling-statistic-summaries)
-- [get_sampling_targets](./client.md#get-sampling-targets)
-- [get_service_graph](./client.md#get-service-graph)
-- [get_time_series_service_statistics](./client.md#get-time-series-service-statistics)
-- [get_trace_graph](./client.md#get-trace-graph)
-- [get_trace_summaries](./client.md#get-trace-summaries)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_encryption_config](./client.md#put-encryption-config)
-- [put_telemetry_records](./client.md#put-telemetry-records)
-- [put_trace_segments](./client.md#put-trace-segments)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_group](./client.md#update-group)
-- [update_sampling_rule](./client.md#update-sampling-rule)
+- [batch_get_traces](./client.md#batch_get_traces)
+- [can_paginate](./client.md#can_paginate)
+- [create_group](./client.md#create_group)
+- [create_sampling_rule](./client.md#create_sampling_rule)
+- [delete_group](./client.md#delete_group)
+- [delete_sampling_rule](./client.md#delete_sampling_rule)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_encryption_config](./client.md#get_encryption_config)
+- [get_group](./client.md#get_group)
+- [get_groups](./client.md#get_groups)
+- [get_insight](./client.md#get_insight)
+- [get_insight_events](./client.md#get_insight_events)
+- [get_insight_impact_graph](./client.md#get_insight_impact_graph)
+- [get_insight_summaries](./client.md#get_insight_summaries)
+- [get_paginator](./client.md#get_paginator)
+- [get_sampling_rules](./client.md#get_sampling_rules)
+- [get_sampling_statistic_summaries](./client.md#get_sampling_statistic_summaries)
+- [get_sampling_targets](./client.md#get_sampling_targets)
+- [get_service_graph](./client.md#get_service_graph)
+- [get_time_series_service_statistics](./client.md#get_time_series_service_statistics)
+- [get_trace_graph](./client.md#get_trace_graph)
+- [get_trace_summaries](./client.md#get_trace_summaries)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_encryption_config](./client.md#put_encryption_config)
+- [put_telemetry_records](./client.md#put_telemetry_records)
+- [put_trace_segments](./client.md#put_trace_segments)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_group](./client.md#update_group)
+- [update_sampling_rule](./client.md#update_sampling_rule)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [RuleLimitExceededException](./client.md#rulelimitexceededexception)
-- [ThrottledException](./client.md#throttledexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
+XRayClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidRequestException
+- ResourceNotFoundException
+- RuleLimitExceededException
+- ThrottledException
+- TooManyTagsException
 
 ## Paginators
 
@@ -104,8 +104,8 @@ from mypy_boto3_xray.literals import BatchGetTracesPaginatorName, ...
 ```
 
 - [BatchGetTracesPaginatorName](./literals.md#batchgettracespaginatorname)
-- [EncryptionStatus](./literals.md#encryptionstatus)
-- [EncryptionType](./literals.md#encryptiontype)
+- [EncryptionStatusType](./literals.md#encryptionstatustype)
+- [EncryptionTypeType](./literals.md#encryptiontypetype)
 - [GetGroupsPaginatorName](./literals.md#getgroupspaginatorname)
 - [GetSamplingRulesPaginatorName](./literals.md#getsamplingrulespaginatorname)
 - [GetSamplingStatisticSummariesPaginatorName](./literals.md#getsamplingstatisticsummariespaginatorname)
@@ -113,10 +113,10 @@ from mypy_boto3_xray.literals import BatchGetTracesPaginatorName, ...
 - [GetTimeSeriesServiceStatisticsPaginatorName](./literals.md#gettimeseriesservicestatisticspaginatorname)
 - [GetTraceGraphPaginatorName](./literals.md#gettracegraphpaginatorname)
 - [GetTraceSummariesPaginatorName](./literals.md#gettracesummariespaginatorname)
-- [InsightCategory](./literals.md#insightcategory)
-- [InsightState](./literals.md#insightstate)
-- [SamplingStrategyName](./literals.md#samplingstrategyname)
-- [TimeRangeType](./literals.md#timerangetype)
+- [InsightCategoryType](./literals.md#insightcategorytype)
+- [InsightStateType](./literals.md#insightstatetype)
+- [SamplingStrategyNameType](./literals.md#samplingstrategynametype)
+- [TimeRangeTypeType](./literals.md#timerangetypetype)
 
 ## Typed dictionaries
 

@@ -3,15 +3,15 @@
 > [Index](..) > [IAM](.) > Literals
 
 Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iam.html#IAM)
 type annotations stubs module
 [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
 - [Literals for boto3 IAM module](#literals-for-boto3-iam-module)
-  - [AccessAdvisorUsageGranularityType](#accessadvisorusagegranularitytype)
-  - [ContextKeyTypeEnum](#contextkeytypeenum)
-  - [DeletionTaskStatusType](#deletiontaskstatustype)
-  - [EntityType](#entitytype)
+  - [AccessAdvisorUsageGranularityTypeType](#accessadvisorusagegranularitytypetype)
+  - [ContextKeyTypeEnumType](#contextkeytypeenumtype)
+  - [DeletionTaskStatusTypeType](#deletiontaskstatustypetype)
+  - [EntityTypeType](#entitytypetype)
   - [GetAccountAuthorizationDetailsPaginatorName](#getaccountauthorizationdetailspaginatorname)
   - [GetGroupPaginatorName](#getgrouppaginatorname)
   - [InstanceProfileExistsWaiterName](#instanceprofileexistswaitername)
@@ -37,32 +37,32 @@ type annotations stubs module
   - [ListUserPoliciesPaginatorName](#listuserpoliciespaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
   - [ListVirtualMFADevicesPaginatorName](#listvirtualmfadevicespaginatorname)
-  - [PermissionsBoundaryAttachmentType](#permissionsboundaryattachmenttype)
-  - [PolicyEvaluationDecisionType](#policyevaluationdecisiontype)
+  - [PermissionsBoundaryAttachmentTypeType](#permissionsboundaryattachmenttypetype)
+  - [PolicyEvaluationDecisionTypeType](#policyevaluationdecisiontypetype)
   - [PolicyExistsWaiterName](#policyexistswaitername)
-  - [PolicySourceType](#policysourcetype)
-  - [PolicyUsageType](#policyusagetype)
-  - [ReportFormatType](#reportformattype)
-  - [ReportStateType](#reportstatetype)
+  - [PolicySourceTypeType](#policysourcetypetype)
+  - [PolicyUsageTypeType](#policyusagetypetype)
+  - [ReportFormatTypeType](#reportformattypetype)
+  - [ReportStateTypeType](#reportstatetypetype)
   - [RoleExistsWaiterName](#roleexistswaitername)
   - [SimulateCustomPolicyPaginatorName](#simulatecustompolicypaginatorname)
   - [SimulatePrincipalPolicyPaginatorName](#simulateprincipalpolicypaginatorname)
   - [UserExistsWaiterName](#userexistswaitername)
-  - [assignmentStatusType](#assignmentstatustype)
-  - [encodingType](#encodingtype)
-  - [globalEndpointTokenVersion](#globalendpointtokenversion)
-  - [jobStatusType](#jobstatustype)
-  - [policyOwnerEntityType](#policyownerentitytype)
-  - [policyScopeType](#policyscopetype)
-  - [policyType](#policytype)
-  - [sortKeyType](#sortkeytype)
-  - [statusType](#statustype)
-  - [summaryKeyType](#summarykeytype)
+  - [assignmentStatusTypeType](#assignmentstatustypetype)
+  - [encodingTypeType](#encodingtypetype)
+  - [globalEndpointTokenVersionType](#globalendpointtokenversiontype)
+  - [jobStatusTypeType](#jobstatustypetype)
+  - [policyOwnerEntityTypeType](#policyownerentitytypetype)
+  - [policyScopeTypeType](#policyscopetypetype)
+  - [policyTypeType](#policytypetype)
+  - [sortKeyTypeType](#sortkeytypetype)
+  - [statusTypeType](#statustypetype)
+  - [summaryKeyTypeType](#summarykeytypetype)
 
-## AccessAdvisorUsageGranularityType
+## AccessAdvisorUsageGranularityTypeType
 
 ```python
-from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityType
+from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityTypeType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `ACTION_LEVEL`
 - `SERVICE_LEVEL`
 
-## ContextKeyTypeEnum
+## ContextKeyTypeEnumType
 
 ```python
-from mypy_boto3_iam.literals import ContextKeyTypeEnum
+from mypy_boto3_iam.literals import ContextKeyTypeEnumType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `string`
 - `stringList`
 
-## DeletionTaskStatusType
+## DeletionTaskStatusTypeType
 
 ```python
-from mypy_boto3_iam.literals import DeletionTaskStatusType
+from mypy_boto3_iam.literals import DeletionTaskStatusTypeType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `NOT_STARTED`
 - `SUCCEEDED`
 
-## EntityType
+## EntityTypeType
 
 ```python
-from mypy_boto3_iam.literals import EntityType
+from mypy_boto3_iam.literals import EntityTypeType
 ```
 
 Values:
@@ -368,20 +368,20 @@ Values:
 
 - `list_virtual_mfa_devices`
 
-## PermissionsBoundaryAttachmentType
+## PermissionsBoundaryAttachmentTypeType
 
 ```python
-from mypy_boto3_iam.literals import PermissionsBoundaryAttachmentType
+from mypy_boto3_iam.literals import PermissionsBoundaryAttachmentTypeType
 ```
 
 Values:
 
 - `PermissionsBoundaryPolicy`
 
-## PolicyEvaluationDecisionType
+## PolicyEvaluationDecisionTypeType
 
 ```python
-from mypy_boto3_iam.literals import PolicyEvaluationDecisionType
+from mypy_boto3_iam.literals import PolicyEvaluationDecisionTypeType
 ```
 
 Values:
@@ -400,10 +400,10 @@ Values:
 
 - `policy_exists`
 
-## PolicySourceType
+## PolicySourceTypeType
 
 ```python
-from mypy_boto3_iam.literals import PolicySourceType
+from mypy_boto3_iam.literals import PolicySourceTypeType
 ```
 
 Values:
@@ -416,10 +416,10 @@ Values:
 - `user`
 - `user-managed`
 
-## PolicyUsageType
+## PolicyUsageTypeType
 
 ```python
-from mypy_boto3_iam.literals import PolicyUsageType
+from mypy_boto3_iam.literals import PolicyUsageTypeType
 ```
 
 Values:
@@ -427,20 +427,20 @@ Values:
 - `PermissionsBoundary`
 - `PermissionsPolicy`
 
-## ReportFormatType
+## ReportFormatTypeType
 
 ```python
-from mypy_boto3_iam.literals import ReportFormatType
+from mypy_boto3_iam.literals import ReportFormatTypeType
 ```
 
 Values:
 
 - `text/csv`
 
-## ReportStateType
+## ReportStateTypeType
 
 ```python
-from mypy_boto3_iam.literals import ReportStateType
+from mypy_boto3_iam.literals import ReportStateTypeType
 ```
 
 Values:
@@ -489,10 +489,10 @@ Values:
 
 - `user_exists`
 
-## assignmentStatusType
+## assignmentStatusTypeType
 
 ```python
-from mypy_boto3_iam.literals import assignmentStatusType
+from mypy_boto3_iam.literals import assignmentStatusTypeType
 ```
 
 Values:
@@ -501,10 +501,10 @@ Values:
 - `Assigned`
 - `Unassigned`
 
-## encodingType
+## encodingTypeType
 
 ```python
-from mypy_boto3_iam.literals import encodingType
+from mypy_boto3_iam.literals import encodingTypeType
 ```
 
 Values:
@@ -512,10 +512,10 @@ Values:
 - `PEM`
 - `SSH`
 
-## globalEndpointTokenVersion
+## globalEndpointTokenVersionType
 
 ```python
-from mypy_boto3_iam.literals import globalEndpointTokenVersion
+from mypy_boto3_iam.literals import globalEndpointTokenVersionType
 ```
 
 Values:
@@ -523,10 +523,10 @@ Values:
 - `v1Token`
 - `v2Token`
 
-## jobStatusType
+## jobStatusTypeType
 
 ```python
-from mypy_boto3_iam.literals import jobStatusType
+from mypy_boto3_iam.literals import jobStatusTypeType
 ```
 
 Values:
@@ -535,10 +535,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## policyOwnerEntityType
+## policyOwnerEntityTypeType
 
 ```python
-from mypy_boto3_iam.literals import policyOwnerEntityType
+from mypy_boto3_iam.literals import policyOwnerEntityTypeType
 ```
 
 Values:
@@ -547,10 +547,10 @@ Values:
 - `ROLE`
 - `USER`
 
-## policyScopeType
+## policyScopeTypeType
 
 ```python
-from mypy_boto3_iam.literals import policyScopeType
+from mypy_boto3_iam.literals import policyScopeTypeType
 ```
 
 Values:
@@ -559,10 +559,10 @@ Values:
 - `AWS`
 - `Local`
 
-## policyType
+## policyTypeType
 
 ```python
-from mypy_boto3_iam.literals import policyType
+from mypy_boto3_iam.literals import policyTypeType
 ```
 
 Values:
@@ -570,10 +570,10 @@ Values:
 - `INLINE`
 - `MANAGED`
 
-## sortKeyType
+## sortKeyTypeType
 
 ```python
-from mypy_boto3_iam.literals import sortKeyType
+from mypy_boto3_iam.literals import sortKeyTypeType
 ```
 
 Values:
@@ -583,10 +583,10 @@ Values:
 - `SERVICE_NAMESPACE_ASCENDING`
 - `SERVICE_NAMESPACE_DESCENDING`
 
-## statusType
+## statusTypeType
 
 ```python
-from mypy_boto3_iam.literals import statusType
+from mypy_boto3_iam.literals import statusTypeType
 ```
 
 Values:
@@ -594,10 +594,10 @@ Values:
 - `Active`
 - `Inactive`
 
-## summaryKeyType
+## summaryKeyTypeType
 
 ```python
-from mypy_boto3_iam.literals import summaryKeyType
+from mypy_boto3_iam.literals import summaryKeyTypeType
 ```
 
 Values:

@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceDiscovery](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
 [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
@@ -145,7 +145,7 @@ Required fields:
 Optional fields:
 
 - `NamespaceId`: `str`
-- `RoutingPolicy`: [RoutingPolicy](./literals.md#routingpolicy)
+- `RoutingPolicy`: [RoutingPolicyType](./literals.md#routingpolicytype)
 
 ## DnsPropertiesTypeDef
 
@@ -165,7 +165,7 @@ from mypy_boto3_servicediscovery.type_defs import DnsRecordTypeDef
 
 Required fields:
 
-- `Type`: [RecordType](./literals.md#recordtype)
+- `Type`: [RecordTypeType](./literals.md#recordtypetype)
 - `TTL`: `int`
 
 ## GetInstanceResponseTypeDef
@@ -186,7 +186,7 @@ from mypy_boto3_servicediscovery.type_defs import GetInstancesHealthStatusRespon
 
 Optional fields:
 
-- `Status`: `Dict`\[`str`, [HealthStatus](./literals.md#healthstatus)\]
+- `Status`: `Dict`\[`str`, [HealthStatusType](./literals.md#healthstatustype)\]
 - `NextToken`: `str`
 
 ## GetNamespaceResponseTypeDef
@@ -227,7 +227,7 @@ from mypy_boto3_servicediscovery.type_defs import HealthCheckConfigTypeDef
 
 Required fields:
 
-- `Type`: [HealthCheckType](./literals.md#healthchecktype)
+- `Type`: [HealthCheckTypeType](./literals.md#healthchecktypetype)
 
 Optional fields:
 
@@ -255,7 +255,7 @@ Optional fields:
 - `InstanceId`: `str`
 - `NamespaceName`: `str`
 - `ServiceName`: `str`
-- `HealthStatus`: [HealthStatus](./literals.md#healthstatus)
+- `HealthStatus`: [HealthStatusType](./literals.md#healthstatustype)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 ## HttpPropertiesTypeDef
@@ -361,12 +361,12 @@ from mypy_boto3_servicediscovery.type_defs import NamespaceFilterTypeDef
 Required fields:
 
 - `Name`: `Literal['TYPE']` (see
-  [NamespaceFilterName](./literals.md#namespacefiltername))
+  [NamespaceFilterNameType](./literals.md#namespacefilternametype))
 - `Values`: `List`\[`str`\]
 
 Optional fields:
 
-- `Condition`: [FilterCondition](./literals.md#filtercondition)
+- `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
 
 ## NamespacePropertiesTypeDef
 
@@ -377,7 +377,8 @@ from mypy_boto3_servicediscovery.type_defs import NamespacePropertiesTypeDef
 Optional fields:
 
 - `DnsProperties`: [DnsPropertiesTypeDef](./type_defs.md#dnspropertiestypedef)
-- `HttpProperties`: [HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef)
+- `HttpProperties`:
+  [HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef)
 
 ## NamespaceSummaryTypeDef
 
@@ -390,7 +391,7 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`: [NamespaceType](./literals.md#namespacetype)
+- `Type`: [NamespaceTypeType](./literals.md#namespacetypetype)
 - `Description`: `str`
 - `ServiceCount`: `int`
 - `Properties`:
@@ -408,7 +409,7 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`: [NamespaceType](./literals.md#namespacetype)
+- `Type`: [NamespaceTypeType](./literals.md#namespacetypetype)
 - `Description`: `str`
 - `ServiceCount`: `int`
 - `Properties`:
@@ -424,12 +425,12 @@ from mypy_boto3_servicediscovery.type_defs import OperationFilterTypeDef
 
 Required fields:
 
-- `Name`: [OperationFilterName](./literals.md#operationfiltername)
+- `Name`: [OperationFilterNameType](./literals.md#operationfilternametype)
 - `Values`: `List`\[`str`\]
 
 Optional fields:
 
-- `Condition`: [FilterCondition](./literals.md#filtercondition)
+- `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
 
 ## OperationSummaryTypeDef
 
@@ -440,7 +441,7 @@ from mypy_boto3_servicediscovery.type_defs import OperationSummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Status`: [OperationStatus](./literals.md#operationstatus)
+- `Status`: [OperationStatusType](./literals.md#operationstatustype)
 
 ## OperationTypeDef
 
@@ -451,13 +452,14 @@ from mypy_boto3_servicediscovery.type_defs import OperationTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`: [OperationType](./literals.md#operationtype)
-- `Status`: [OperationStatus](./literals.md#operationstatus)
+- `Type`: [OperationTypeType](./literals.md#operationtypetype)
+- `Status`: [OperationStatusType](./literals.md#operationstatustype)
 - `ErrorMessage`: `str`
 - `ErrorCode`: `str`
 - `CreateDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `Targets`: `Dict`\[[OperationTargetType](./literals.md#operationtargettype),
+- `Targets`:
+  `Dict`\[[OperationTargetTypeType](./literals.md#operationtargettypetype),
   `str`\]
 
 ## PaginatorConfigTypeDef
@@ -504,12 +506,12 @@ from mypy_boto3_servicediscovery.type_defs import ServiceFilterTypeDef
 Required fields:
 
 - `Name`: `Literal['NAMESPACE_ID']` (see
-  [ServiceFilterName](./literals.md#servicefiltername))
+  [ServiceFilterNameType](./literals.md#servicefilternametype))
 - `Values`: `List`\[`str`\]
 
 Optional fields:
 
-- `Condition`: [FilterCondition](./literals.md#filtercondition)
+- `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
 
 ## ServiceSummaryTypeDef
 
@@ -522,7 +524,7 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`: [ServiceType](./literals.md#servicetype)
+- `Type`: [ServiceTypeType](./literals.md#servicetypetype)
 - `Description`: `str`
 - `InstanceCount`: `int`
 - `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
@@ -547,7 +549,7 @@ Optional fields:
 - `Description`: `str`
 - `InstanceCount`: `int`
 - `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
-- `Type`: [ServiceType](./literals.md#servicetype)
+- `Type`: [ServiceTypeType](./literals.md#servicetypetype)
 - `HealthCheckConfig`:
   [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckCustomConfig`:

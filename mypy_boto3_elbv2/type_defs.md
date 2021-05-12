@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticLoadBalancingv2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
 [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
@@ -82,7 +82,7 @@ from mypy_boto3_elbv2.type_defs import ActionTypeDef
 
 Required fields:
 
-- `Type`: [ActionTypeEnum](./literals.md#actiontypeenum)
+- `Type`: [ActionTypeEnumType](./literals.md#actiontypeenumtype)
 
 Optional fields:
 
@@ -131,7 +131,7 @@ Optional fields:
 - `SessionTimeout`: `int`
 - `AuthenticationRequestExtraParams`: `Dict`\[`str`, `str`\]
 - `OnUnauthenticatedRequest`:
-  [AuthenticateCognitoActionConditionalBehaviorEnum](./literals.md#authenticatecognitoactionconditionalbehaviorenum)
+  [AuthenticateCognitoActionConditionalBehaviorEnumType](./literals.md#authenticatecognitoactionconditionalbehaviorenumtype)
 
 ## AuthenticateOidcActionConfigTypeDef
 
@@ -155,7 +155,7 @@ Optional fields:
 - `SessionTimeout`: `int`
 - `AuthenticationRequestExtraParams`: `Dict`\[`str`, `str`\]
 - `OnUnauthenticatedRequest`:
-  [AuthenticateOidcActionConditionalBehaviorEnum](./literals.md#authenticateoidcactionconditionalbehaviorenum)
+  [AuthenticateOidcActionConditionalBehaviorEnumType](./literals.md#authenticateoidcactionconditionalbehaviorenumtype)
 - `UseExistingClientSecret`: `bool`
 
 ## AvailabilityZoneTypeDef
@@ -471,7 +471,7 @@ Optional fields:
 - `ListenerArn`: `str`
 - `LoadBalancerArn`: `str`
 - `Port`: `int`
-- `Protocol`: [ProtocolEnum](./literals.md#protocolenum)
+- `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
 - `Certificates`:
   `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `SslPolicy`: `str`
@@ -510,7 +510,7 @@ from mypy_boto3_elbv2.type_defs import LoadBalancerStateTypeDef
 
 Optional fields:
 
-- `Code`: [LoadBalancerStateEnum](./literals.md#loadbalancerstateenum)
+- `Code`: [LoadBalancerStateEnumType](./literals.md#loadbalancerstateenumtype)
 - `Reason`: `str`
 
 ## LoadBalancerTypeDef
@@ -526,14 +526,15 @@ Optional fields:
 - `CanonicalHostedZoneId`: `str`
 - `CreatedTime`: `datetime`
 - `LoadBalancerName`: `str`
-- `Scheme`: [LoadBalancerSchemeEnum](./literals.md#loadbalancerschemeenum)
+- `Scheme`:
+  [LoadBalancerSchemeEnumType](./literals.md#loadbalancerschemeenumtype)
 - `VpcId`: `str`
 - `State`: [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
-- `Type`: [LoadBalancerTypeEnum](./literals.md#loadbalancertypeenum)
+- `Type`: [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 - `AvailabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `SecurityGroups`: `List`\[`str`\]
-- `IpAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `CustomerOwnedIpv4Pool`: `str`
 
 ## MatcherTypeDef
@@ -663,7 +664,7 @@ from mypy_boto3_elbv2.type_defs import RedirectActionConfigTypeDef
 Required fields:
 
 - `StatusCode`:
-  [RedirectActionStatusCodeEnum](./literals.md#redirectactionstatuscodeenum)
+  [RedirectActionStatusCodeEnumType](./literals.md#redirectactionstatuscodeenumtype)
 
 Optional fields:
 
@@ -744,7 +745,7 @@ from mypy_boto3_elbv2.type_defs import SetIpAddressTypeOutputTypeDef
 
 Required fields:
 
-- `IpAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -782,7 +783,7 @@ Required fields:
 
 - `AvailabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
-- `IpAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -904,10 +905,10 @@ Optional fields:
 
 - `TargetGroupArn`: `str`
 - `TargetGroupName`: `str`
-- `Protocol`: [ProtocolEnum](./literals.md#protocolenum)
+- `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
 - `Port`: `int`
 - `VpcId`: `str`
-- `HealthCheckProtocol`: [ProtocolEnum](./literals.md#protocolenum)
+- `HealthCheckProtocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
 - `HealthCheckPort`: `str`
 - `HealthCheckEnabled`: `bool`
 - `HealthCheckIntervalSeconds`: `int`
@@ -917,7 +918,7 @@ Optional fields:
 - `HealthCheckPath`: `str`
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 - `LoadBalancerArns`: `List`\[`str`\]
-- `TargetType`: [TargetTypeEnum](./literals.md#targettypeenum)
+- `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
 - `ProtocolVersion`: `str`
 
 ## TargetHealthDescriptionTypeDef
@@ -940,8 +941,9 @@ from mypy_boto3_elbv2.type_defs import TargetHealthTypeDef
 
 Optional fields:
 
-- `State`: [TargetHealthStateEnum](./literals.md#targethealthstateenum)
-- `Reason`: [TargetHealthReasonEnum](./literals.md#targethealthreasonenum)
+- `State`: [TargetHealthStateEnumType](./literals.md#targethealthstateenumtype)
+- `Reason`:
+  [TargetHealthReasonEnumType](./literals.md#targethealthreasonenumtype)
 - `Description`: `str`
 
 ## WaiterConfigTypeDef

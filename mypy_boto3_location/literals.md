@@ -3,26 +3,26 @@
 > [Index](..) > [LocationService](.) > Literals
 
 Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/location.html#LocationService)
 type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
 - [Literals for boto3 LocationService module](#literals-for-boto3-locationservice-module)
-  - [BatchItemErrorCode](#batchitemerrorcode)
+  - [BatchItemErrorCodeType](#batchitemerrorcodetype)
   - [GetDevicePositionHistoryPaginatorName](#getdevicepositionhistorypaginatorname)
-  - [IntendedUse](#intendeduse)
+  - [IntendedUseType](#intendedusetype)
   - [ListGeofenceCollectionsPaginatorName](#listgeofencecollectionspaginatorname)
   - [ListGeofencesPaginatorName](#listgeofencespaginatorname)
   - [ListMapsPaginatorName](#listmapspaginatorname)
   - [ListPlaceIndexesPaginatorName](#listplaceindexespaginatorname)
   - [ListTrackerConsumersPaginatorName](#listtrackerconsumerspaginatorname)
   - [ListTrackersPaginatorName](#listtrackerspaginatorname)
-  - [PricingPlan](#pricingplan)
+  - [PricingPlanType](#pricingplantype)
 
-## BatchItemErrorCode
+## BatchItemErrorCodeType
 
 ```python
-from mypy_boto3_location.literals import BatchItemErrorCode
+from mypy_boto3_location.literals import BatchItemErrorCodeType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 
 - `get_device_position_history`
 
-## IntendedUse
+## IntendedUseType
 
 ```python
-from mypy_boto3_location.literals import IntendedUse
+from mypy_boto3_location.literals import IntendedUseType
 ```
 
 Values:
@@ -115,10 +115,10 @@ Values:
 
 - `list_trackers`
 
-## PricingPlan
+## PricingPlanType
 
 ```python
-from mypy_boto3_location.literals import PricingPlan
+from mypy_boto3_location.literals import PricingPlanType
 ```
 
 Values:

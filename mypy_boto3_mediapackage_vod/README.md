@@ -3,7 +3,7 @@
 > [Index](..) > MediaPackageVod
 
 Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
 [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
@@ -30,40 +30,40 @@ Can be used directly:
 from mypy_boto3_mediapackage_vod.client import MediaPackageVodClient
 ```
 
-MediaPackageVodClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [configure_logs](./client.md#configure-logs)
-- [create_asset](./client.md#create-asset)
-- [create_packaging_configuration](./client.md#create-packaging-configuration)
-- [create_packaging_group](./client.md#create-packaging-group)
-- [delete_asset](./client.md#delete-asset)
-- [delete_packaging_configuration](./client.md#delete-packaging-configuration)
-- [delete_packaging_group](./client.md#delete-packaging-group)
-- [describe_asset](./client.md#describe-asset)
-- [describe_packaging_configuration](./client.md#describe-packaging-configuration)
-- [describe_packaging_group](./client.md#describe-packaging-group)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_assets](./client.md#list-assets)
-- [list_packaging_configurations](./client.md#list-packaging-configurations)
-- [list_packaging_groups](./client.md#list-packaging-groups)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_packaging_group](./client.md#update-packaging-group)
+- [can_paginate](./client.md#can_paginate)
+- [configure_logs](./client.md#configure_logs)
+- [create_asset](./client.md#create_asset)
+- [create_packaging_configuration](./client.md#create_packaging_configuration)
+- [create_packaging_group](./client.md#create_packaging_group)
+- [delete_asset](./client.md#delete_asset)
+- [delete_packaging_configuration](./client.md#delete_packaging_configuration)
+- [delete_packaging_group](./client.md#delete_packaging_group)
+- [describe_asset](./client.md#describe_asset)
+- [describe_packaging_configuration](./client.md#describe_packaging_configuration)
+- [describe_packaging_group](./client.md#describe_packaging_group)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_assets](./client.md#list_assets)
+- [list_packaging_configurations](./client.md#list_packaging_configurations)
+- [list_packaging_groups](./client.md#list_packaging_groups)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_packaging_group](./client.md#update_packaging_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [UnprocessableEntityException](./client.md#unprocessableentityexception)
+MediaPackageVodClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ForbiddenException
+- InternalServerErrorException
+- NotFoundException
+- ServiceUnavailableException
+- TooManyRequestsException
+- UnprocessableEntityException
 
 ## Paginators
 
@@ -87,19 +87,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediapackage_vod.literals import AdMarkers, ...
+from mypy_boto3_mediapackage_vod.literals import AdMarkersType, ...
 ```
 
-- [AdMarkers](./literals.md#admarkers)
-- [EncryptionMethod](./literals.md#encryptionmethod)
+- [AdMarkersType](./literals.md#admarkerstype)
+- [EncryptionMethodType](./literals.md#encryptionmethodtype)
 - [ListAssetsPaginatorName](./literals.md#listassetspaginatorname)
 - [ListPackagingConfigurationsPaginatorName](./literals.md#listpackagingconfigurationspaginatorname)
 - [ListPackagingGroupsPaginatorName](./literals.md#listpackaginggroupspaginatorname)
-- [ManifestLayout](./literals.md#manifestlayout)
-- [Profile](./literals.md#profile)
-- [SegmentTemplateFormat](./literals.md#segmenttemplateformat)
-- [StreamOrder](./literals.md#streamorder)
-- [\_\_PeriodTriggersElement](./literals.md#--periodtriggerselement)
+- [ManifestLayoutType](./literals.md#manifestlayouttype)
+- [ProfileType](./literals.md#profiletype)
+- [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
+- [StreamOrderType](./literals.md#streamordertype)
+- [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [mgn](.) > Typed dictionaries
 
 Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgn.html#mgn)
 type annotations stubs module
 [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
@@ -72,7 +72,7 @@ from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateSourceServerLifec
 Required fields:
 
 - `state`:
-  [ChangeServerLifeCycleStateSourceServerLifecycleState](./literals.md#changeserverlifecyclestatesourceserverlifecyclestate)
+  [ChangeServerLifeCycleStateSourceServerLifecycleStateType](./literals.md#changeserverlifecyclestatesourceserverlifecyclestatetype)
 
 ## DataReplicationErrorTypeDef
 
@@ -82,7 +82,8 @@ from mypy_boto3_mgn.type_defs import DataReplicationErrorTypeDef
 
 Optional fields:
 
-- `error`: [DataReplicationErrorString](./literals.md#datareplicationerrorstring)
+- `error`:
+  [DataReplicationErrorStringType](./literals.md#datareplicationerrorstringtype)
 - `rawError`: `str`
 
 ## DataReplicationInfoReplicatedDiskTypeDef
@@ -112,7 +113,7 @@ Optional fields:
 - `dataReplicationInitiation`:
   [DataReplicationInitiationTypeDef](./type_defs.md#datareplicationinitiationtypedef)
 - `dataReplicationState`:
-  [DataReplicationState](./literals.md#datareplicationstate)
+  [DataReplicationStateType](./literals.md#datareplicationstatetype)
 - `etaDateTime`: `str`
 - `lagDuration`: `str`
 - `replicatedDisks`:
@@ -127,9 +128,9 @@ from mypy_boto3_mgn.type_defs import DataReplicationInitiationStepTypeDef
 Optional fields:
 
 - `name`:
-  [DataReplicationInitiationStepName](./literals.md#datareplicationinitiationstepname)
+  [DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype)
 - `status`:
-  [DataReplicationInitiationStepStatus](./literals.md#datareplicationinitiationstepstatus)
+  [DataReplicationInitiationStepStatusType](./literals.md#datareplicationinitiationstepstatustype)
 
 ## DataReplicationInitiationTypeDef
 
@@ -257,7 +258,7 @@ from mypy_boto3_mgn.type_defs import JobLogTypeDef
 
 Optional fields:
 
-- `event`: [JobLogEvent](./literals.md#joblogevent)
+- `event`: [JobLogEventType](./literals.md#joblogeventtype)
 - `eventData`: [JobLogEventDataTypeDef](./type_defs.md#joblogeventdatatypedef)
 - `logDateTime`: `str`
 
@@ -276,12 +277,12 @@ Optional fields:
 - `arn`: `str`
 - `creationDateTime`: `str`
 - `endDateTime`: `str`
-- `initiatedBy`: [InitiatedBy](./literals.md#initiatedby)
+- `initiatedBy`: [InitiatedByType](./literals.md#initiatedbytype)
 - `participatingServers`:
   `List`\[[ParticipatingServerTypeDef](./type_defs.md#participatingservertypedef)\]
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `tags`: `Dict`\[`str`, `str`\]
-- `type`: [JobType](./literals.md#jobtype)
+- `type`: [JobTypeType](./literals.md#jobtypetype)
 
 ## LaunchConfigurationTypeDef
 
@@ -294,12 +295,13 @@ Optional fields:
 - `copyPrivateIp`: `bool`
 - `copyTags`: `bool`
 - `ec2LaunchTemplateID`: `str`
-- `launchDisposition`: [LaunchDisposition](./literals.md#launchdisposition)
+- `launchDisposition`:
+  [LaunchDispositionType](./literals.md#launchdispositiontype)
 - `licensing`: [LicensingTypeDef](./type_defs.md#licensingtypedef)
 - `name`: `str`
 - `sourceServerID`: `str`
 - `targetInstanceTypeRightSizingMethod`:
-  [TargetInstanceTypeRightSizingMethod](./literals.md#targetinstancetyperightsizingmethod)
+  [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 
 ## LaunchedInstanceTypeDef
 
@@ -310,7 +312,7 @@ from mypy_boto3_mgn.type_defs import LaunchedInstanceTypeDef
 Optional fields:
 
 - `ec2InstanceID`: `str`
-- `firstBoot`: [FirstBoot](./literals.md#firstboot)
+- `firstBoot`: [FirstBootType](./literals.md#firstboottype)
 - `jobID`: `str`
 
 ## LicensingTypeDef
@@ -429,8 +431,9 @@ Optional fields:
 - `lastCutover`:
   [LifeCycleLastCutoverTypeDef](./type_defs.md#lifecyclelastcutovertypedef)
 - `lastSeenByServiceDateTime`: `str`
-- `lastTest`: [LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef)
-- `state`: [LifeCycleState](./literals.md#lifecyclestate)
+- `lastTest`:
+  [LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef)
+- `state`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -484,7 +487,7 @@ from mypy_boto3_mgn.type_defs import ParticipatingServerTypeDef
 
 Optional fields:
 
-- `launchStatus`: [LaunchStatus](./literals.md#launchstatus)
+- `launchStatus`: [LaunchStatusType](./literals.md#launchstatustype)
 - `sourceServerID`: `str`
 
 ## ReplicationConfigurationReplicatedDiskTypeDef
@@ -499,7 +502,7 @@ Optional fields:
 - `iops`: `int`
 - `isBootDisk`: `bool`
 - `stagingDiskType`:
-  [ReplicationConfigurationReplicatedDiskStagingDiskType](./literals.md#replicationconfigurationreplicateddiskstagingdisktype)
+  [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
 
 ## ReplicationConfigurationTemplateTypeDef
 
@@ -518,11 +521,11 @@ Optional fields:
 - `bandwidthThrottling`: `int`
 - `createPublicIP`: `bool`
 - `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRouting](./literals.md#replicationconfigurationdataplanerouting)
+  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
 - `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskType](./literals.md#replicationconfigurationdefaultlargestagingdisktype)
+  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
 - `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryption](./literals.md#replicationconfigurationebsencryption)
+  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
 - `ebsEncryptionKeyArn`: `str`
 - `replicationServerInstanceType`: `str`
 - `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
@@ -543,11 +546,11 @@ Optional fields:
 - `bandwidthThrottling`: `int`
 - `createPublicIP`: `bool`
 - `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRouting](./literals.md#replicationconfigurationdataplanerouting)
+  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
 - `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskType](./literals.md#replicationconfigurationdefaultlargestagingdisktype)
+  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
 - `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryption](./literals.md#replicationconfigurationebsencryption)
+  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
 - `ebsEncryptionKeyArn`: `str`
 - `name`: `str`
 - `replicatedDisks`:

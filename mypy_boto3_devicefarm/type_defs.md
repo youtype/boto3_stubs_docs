@@ -3,7 +3,7 @@
 > [Index](..) > [DeviceFarm](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
 [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
@@ -133,10 +133,10 @@ from mypy_boto3_devicefarm.type_defs import AccountSettingsTypeDef
 Optional fields:
 
 - `awsAccountNumber`: `str`
-- `unmeteredDevices`: `Dict`\[[DevicePlatform](./literals.md#deviceplatform),
-  `int`\]
+- `unmeteredDevices`:
+  `Dict`\[[DevicePlatformType](./literals.md#deviceplatformtype), `int`\]
 - `unmeteredRemoteAccessDevices`:
-  `Dict`\[[DevicePlatform](./literals.md#deviceplatform), `int`\]
+  `Dict`\[[DevicePlatformType](./literals.md#deviceplatformtype), `int`\]
 - `maxJobTimeoutMinutes`: `int`
 - `trialMinutes`: [TrialMinutesTypeDef](./type_defs.md#trialminutestypedef)
 - `maxSlots`: `Dict`\[`str`, `int`\]
@@ -153,7 +153,7 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [ArtifactType](./literals.md#artifacttype)
+- `type`: [ArtifactTypeType](./literals.md#artifacttypetype)
 - `extension`: `str`
 - `url`: `str`
 
@@ -214,7 +214,8 @@ from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileResultTypeDef
 
 Optional fields:
 
-- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `networkProfile`:
+  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## CreateProjectResultTypeDef
 
@@ -234,7 +235,7 @@ from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionConfigurati
 
 Optional fields:
 
-- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
+- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 - `vpceConfigurationArns`: `List`\[`str`\]
 
 ## CreateRemoteAccessSessionResultTypeDef
@@ -311,8 +312,9 @@ from mypy_boto3_devicefarm.type_defs import DeviceFilterTypeDef
 
 Optional fields:
 
-- `attribute`: [DeviceFilterAttribute](./literals.md#devicefilterattribute)
-- `operator`: [RuleOperator](./literals.md#ruleoperator)
+- `attribute`:
+  [DeviceFilterAttributeType](./literals.md#devicefilterattributetype)
+- `operator`: [RuleOperatorType](./literals.md#ruleoperatortype)
 - `values`: `List`\[`str`\]
 
 ## DeviceInstanceTypeDef
@@ -326,7 +328,7 @@ Optional fields:
 - `arn`: `str`
 - `deviceArn`: `str`
 - `labels`: `List`\[`str`\]
-- `status`: [InstanceStatus](./literals.md#instancestatus)
+- `status`: [InstanceStatusType](./literals.md#instancestatustype)
 - `udid`: `str`
 - `instanceProfile`:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
@@ -367,7 +369,7 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
-- `type`: [DevicePoolType](./literals.md#devicepooltype)
+- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
 - `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `maxDevices`: `int`
 
@@ -379,7 +381,8 @@ from mypy_boto3_devicefarm.type_defs import DeviceSelectionConfigurationTypeDef
 
 Required fields:
 
-- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+- `filters`:
+  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `maxDevices`: `int`
 
 ## DeviceSelectionResultTypeDef
@@ -390,7 +393,8 @@ from mypy_boto3_devicefarm.type_defs import DeviceSelectionResultTypeDef
 
 Optional fields:
 
-- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+- `filters`:
+  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `matchedDevicesCount`: `int`
 - `maxDevices`: `int`
 
@@ -407,8 +411,8 @@ Optional fields:
 - `manufacturer`: `str`
 - `model`: `str`
 - `modelId`: `str`
-- `formFactor`: [DeviceFormFactor](./literals.md#deviceformfactor)
-- `platform`: [DevicePlatform](./literals.md#deviceplatform)
+- `formFactor`: [DeviceFormFactorType](./literals.md#deviceformfactortype)
+- `platform`: [DevicePlatformType](./literals.md#deviceplatformtype)
 - `os`: `str`
 - `cpu`: [CPUTypeDef](./type_defs.md#cputypedef)
 - `resolution`: [ResolutionTypeDef](./type_defs.md#resolutiontypedef)
@@ -423,7 +427,8 @@ Optional fields:
 - `fleetName`: `str`
 - `instances`:
   `List`\[[DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)\]
-- `availability`: [DeviceAvailability](./literals.md#deviceavailability)
+- `availability`:
+  [DeviceAvailabilityType](./literals.md#deviceavailabilitytype)
 
 ## ExecutionConfigurationTypeDef
 
@@ -458,7 +463,8 @@ from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceResultTypeDef
 
 Optional fields:
 
-- `deviceInstance`: [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
+- `deviceInstance`:
+  [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
 
 ## GetDevicePoolCompatibilityResultTypeDef
 
@@ -522,7 +528,8 @@ from mypy_boto3_devicefarm.type_defs import GetNetworkProfileResultTypeDef
 
 Optional fields:
 
-- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `networkProfile`:
+  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## GetOfferingStatusResultTypeDef
 
@@ -641,7 +648,7 @@ from mypy_boto3_devicefarm.type_defs import IncompatibilityMessageTypeDef
 Optional fields:
 
 - `message`: `str`
-- `type`: [DeviceAttribute](./literals.md#deviceattribute)
+- `type`: [DeviceAttributeType](./literals.md#deviceattributetype)
 
 ## InstallToRemoteAccessSessionResultTypeDef
 
@@ -678,10 +685,10 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [TestType](./literals.md#testtype)
+- `type`: [TestTypeType](./literals.md#testtypetype)
 - `created`: `datetime`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
-- `result`: [ExecutionResult](./literals.md#executionresult)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `started`: `datetime`
 - `stopped`: `datetime`
 - `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
@@ -723,7 +730,8 @@ from mypy_boto3_devicefarm.type_defs import ListDevicePoolsResultTypeDef
 
 Optional fields:
 
-- `devicePools`: `List`\[[DevicePoolTypeDef](./type_defs.md#devicepooltypedef)\]
+- `devicePools`:
+  `List`\[[DevicePoolTypeDef](./type_defs.md#devicepooltypedef)\]
 - `nextToken`: `str`
 
 ## ListDevicesResultTypeDef
@@ -940,7 +948,8 @@ from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsResultTypeDef
 
 Optional fields:
 
-- `uniqueProblems`: `Dict`\[[ExecutionResult](./literals.md#executionresult),
+- `uniqueProblems`:
+  `Dict`\[[ExecutionResultType](./literals.md#executionresulttype),
   `List`\[[UniqueProblemTypeDef](./type_defs.md#uniqueproblemtypedef)\]\]
 - `nextToken`: `str`
 
@@ -988,7 +997,7 @@ Optional fields:
 
 - `amount`: `float`
 - `currencyCode`: `Literal['USD']` (see
-  [CurrencyCode](./literals.md#currencycode))
+  [CurrencyCodeType](./literals.md#currencycodetype))
 
 ## NetworkProfileTypeDef
 
@@ -1001,7 +1010,7 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
-- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
 - `uplinkBandwidthBits`: `int`
 - `downlinkBandwidthBits`: `int`
 - `uplinkDelayMs`: `int`
@@ -1030,7 +1039,8 @@ from mypy_boto3_devicefarm.type_defs import OfferingStatusTypeDef
 
 Optional fields:
 
-- `type`: [OfferingTransactionType](./literals.md#offeringtransactiontype)
+- `type`:
+  [OfferingTransactionTypeType](./literals.md#offeringtransactiontypetype)
 - `offering`: [OfferingTypeDef](./type_defs.md#offeringtypedef)
 - `quantity`: `int`
 - `effectiveOn`: `datetime`
@@ -1043,7 +1053,8 @@ from mypy_boto3_devicefarm.type_defs import OfferingTransactionTypeDef
 
 Optional fields:
 
-- `offeringStatus`: [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)
+- `offeringStatus`:
+  [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)
 - `transactionId`: `str`
 - `offeringPromotionId`: `str`
 - `createdOn`: `datetime`
@@ -1059,8 +1070,9 @@ Optional fields:
 
 - `id`: `str`
 - `description`: `str`
-- `type`: `Literal['RECURRING']` (see [OfferingType](./literals.md#offeringtype))
-- `platform`: [DevicePlatform](./literals.md#deviceplatform)
+- `type`: `Literal['RECURRING']` (see
+  [OfferingTypeType](./literals.md#offeringtypetype))
+- `platform`: [DevicePlatformType](./literals.md#deviceplatformtype)
 - `recurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
@@ -1100,7 +1112,7 @@ Optional fields:
 - `suite`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
 - `test`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
 - `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `result`: [ExecutionResult](./literals.md#executionresult)
+- `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `message`: `str`
 
 ## ProjectTypeDef
@@ -1150,7 +1162,7 @@ Optional fields:
 
 - `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
 - `frequency`: `Literal['MONTHLY']` (see
-  [RecurringChargeFrequency](./literals.md#recurringchargefrequency))
+  [RecurringChargeFrequencyType](./literals.md#recurringchargefrequencytype))
 
 ## RemoteAccessSessionTypeDef
 
@@ -1163,8 +1175,8 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `created`: `datetime`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
-- `result`: [ExecutionResult](./literals.md#executionresult)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `message`: `str`
 - `started`: `datetime`
 - `stopped`: `datetime`
@@ -1175,11 +1187,11 @@ Optional fields:
 - `remoteRecordAppArn`: `str`
 - `hostAddress`: `str`
 - `clientId`: `str`
-- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
+- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 - `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 - `endpoint`: `str`
 - `deviceUdid`: `str`
-- `interactionMode`: [InteractionMode](./literals.md#interactionmode)
+- `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
 - `skipAppResign`: `bool`
 
 ## RenewOfferingResultTypeDef
@@ -1212,8 +1224,8 @@ from mypy_boto3_devicefarm.type_defs import RuleTypeDef
 
 Optional fields:
 
-- `attribute`: [DeviceAttribute](./literals.md#deviceattribute)
-- `operator`: [RuleOperator](./literals.md#ruleoperator)
+- `attribute`: [DeviceAttributeType](./literals.md#deviceattributetype)
+- `operator`: [RuleOperatorType](./literals.md#ruleoperatortype)
 - `value`: `str`
 
 ## RunTypeDef
@@ -1226,22 +1238,24 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [TestType](./literals.md#testtype)
-- `platform`: [DevicePlatform](./literals.md#deviceplatform)
+- `type`: [TestTypeType](./literals.md#testtypetype)
+- `platform`: [DevicePlatformType](./literals.md#deviceplatformtype)
 - `created`: `datetime`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
-- `result`: [ExecutionResult](./literals.md#executionresult)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `started`: `datetime`
 - `stopped`: `datetime`
 - `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
 - `message`: `str`
 - `totalJobs`: `int`
 - `completedJobs`: `int`
-- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
+- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 - `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
-- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `networkProfile`:
+  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 - `parsingResultUrl`: `str`
-- `resultCode`: [ExecutionResultCode](./literals.md#executionresultcode)
+- `resultCode`:
+  [ExecutionResultCodeType](./literals.md#executionresultcodetype)
 - `seed`: `int`
 - `appUpload`: `str`
 - `eventCount`: `int`
@@ -1267,7 +1281,7 @@ from mypy_boto3_devicefarm.type_defs import SampleTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `type`: [SampleType](./literals.md#sampletype)
+- `type`: [SampleTypeType](./literals.md#sampletypetype)
 - `url`: `str`
 
 ## ScheduleRunConfigurationTypeDef
@@ -1287,7 +1301,7 @@ Optional fields:
   [CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef)
 - `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
 - `auxiliaryApps`: `List`\[`str`\]
-- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
+- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 
 ## ScheduleRunResultTypeDef
 
@@ -1307,7 +1321,7 @@ from mypy_boto3_devicefarm.type_defs import ScheduleRunTestTypeDef
 
 Required fields:
 
-- `type`: [TestType](./literals.md#testtype)
+- `type`: [TestTypeType](./literals.md#testtypetype)
 
 Optional fields:
 
@@ -1357,10 +1371,10 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [TestType](./literals.md#testtype)
+- `type`: [TestTypeType](./literals.md#testtypetype)
 - `created`: `datetime`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
-- `result`: [ExecutionResult](./literals.md#executionresult)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `started`: `datetime`
 - `stopped`: `datetime`
 - `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
@@ -1415,7 +1429,7 @@ Optional fields:
 
 - `filename`: `str`
 - `type`:
-  [TestGridSessionArtifactType](./literals.md#testgridsessionartifacttype)
+  [TestGridSessionArtifactTypeType](./literals.md#testgridsessionartifacttypetype)
 - `url`: `str`
 
 ## TestGridSessionTypeDef
@@ -1427,7 +1441,8 @@ from mypy_boto3_devicefarm.type_defs import TestGridSessionTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `status`: [TestGridSessionStatus](./literals.md#testgridsessionstatus)
+- `status`:
+  [TestGridSessionStatusType](./literals.md#testgridsessionstatustype)
 - `created`: `datetime`
 - `ended`: `datetime`
 - `billingMinutes`: `float`
@@ -1443,10 +1458,10 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`: [TestType](./literals.md#testtype)
+- `type`: [TestTypeType](./literals.md#testtypetype)
 - `created`: `datetime`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
-- `result`: [ExecutionResult](./literals.md#executionresult)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `started`: `datetime`
 - `stopped`: `datetime`
 - `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
@@ -1483,7 +1498,8 @@ from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceResultTypeDef
 
 Optional fields:
 
-- `deviceInstance`: [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
+- `deviceInstance`:
+  [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
 
 ## UpdateDevicePoolResultTypeDef
 
@@ -1514,7 +1530,8 @@ from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileResultTypeDef
 
 Optional fields:
 
-- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `networkProfile`:
+  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## UpdateProjectResultTypeDef
 
@@ -1569,13 +1586,13 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `created`: `datetime`
-- `type`: [UploadType](./literals.md#uploadtype)
-- `status`: [UploadStatus](./literals.md#uploadstatus)
+- `type`: [UploadTypeType](./literals.md#uploadtypetype)
+- `status`: [UploadStatusType](./literals.md#uploadstatustype)
 - `url`: `str`
 - `metadata`: `str`
 - `contentType`: `str`
 - `message`: `str`
-- `category`: [UploadCategory](./literals.md#uploadcategory)
+- `category`: [UploadCategoryType](./literals.md#uploadcategorytype)
 
 ## VPCEConfigurationTypeDef
 

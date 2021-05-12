@@ -3,7 +3,7 @@
 > [Index](..) > [Polly](.) > PollyClient
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
@@ -38,7 +38,7 @@ def get_polly_client() -> PollyClient:
 ```
 
 Boto3 documentation:
-[Polly.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
+[Polly.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client)
 
 ## Exceptions
 
@@ -84,7 +84,7 @@ Exceptions:
 Type annotations for `boto3.client("polly").can_paginate` method.
 
 Boto3 documentation:
-[Polly.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate)
+[Polly.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.can_paginate)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Returns `bool`.
 Type annotations for `boto3.client("polly").delete_lexicon` method.
 
 Boto3 documentation:
-[Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
+[Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.delete_lexicon)
 
 Arguments:
 
@@ -110,12 +110,12 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("polly").describe_voices` method.
 
 Boto3 documentation:
-[Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
+[Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.describe_voices)
 
 Arguments:
 
-- `Engine`: [Engine](./literals.md#engine)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `Engine`: [EngineType](./literals.md#enginetype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `IncludeAdditionalLanguageCodes`: `bool`
 - `NextToken`: `str`
 
@@ -127,7 +127,7 @@ Returns
 Type annotations for `boto3.client("polly").generate_presigned_url` method.
 
 Boto3 documentation:
-[Polly.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url)
+[Polly.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.generate_presigned_url)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns `str`.
 Type annotations for `boto3.client("polly").get_lexicon` method.
 
 Boto3 documentation:
-[Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
+[Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.get_lexicon)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
 Type annotations for `boto3.client("polly").get_speech_synthesis_task` method.
 
 Boto3 documentation:
-[Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
+[Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns
 Type annotations for `boto3.client("polly").list_lexicons` method.
 
 Boto3 documentation:
-[Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
+[Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.list_lexicons)
 
 Arguments:
 
@@ -184,13 +184,13 @@ Type annotations for `boto3.client("polly").list_speech_synthesis_tasks`
 method.
 
 Boto3 documentation:
-[Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
+[Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
 
 Arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Status`: [TaskStatus](./literals.md#taskstatus)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 
 Returns
 [ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
@@ -200,7 +200,7 @@ Returns
 Type annotations for `boto3.client("polly").put_lexicon` method.
 
 Boto3 documentation:
-[Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
+[Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.put_lexicon)
 
 Arguments:
 
@@ -215,22 +215,24 @@ Type annotations for `boto3.client("polly").start_speech_synthesis_task`
 method.
 
 Boto3 documentation:
-[Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
+[Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
 
 Arguments:
 
-- `OutputFormat`: [OutputFormat](./literals.md#outputformat) *(required)*
+- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
+  *(required)*
 - `OutputS3BucketName`: `str` *(required)*
 - `Text`: `str` *(required)*
-- `VoiceId`: [VoiceId](./literals.md#voiceid) *(required)*
-- `Engine`: [Engine](./literals.md#engine)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
+- `Engine`: [EngineType](./literals.md#enginetype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LexiconNames`: `List`\[`str`\]
 - `OutputS3KeyPrefix`: `str`
 - `SampleRate`: `str`
 - `SnsTopicArn`: `str`
-- `SpeechMarkTypes`: `List`\[[SpeechMarkType](./literals.md#speechmarktype)\]
-- `TextType`: [TextType](./literals.md#texttype)
+- `SpeechMarkTypes`:
+  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+- `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
 [StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
@@ -240,19 +242,21 @@ Returns
 Type annotations for `boto3.client("polly").synthesize_speech` method.
 
 Boto3 documentation:
-[Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
+[Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly.Client.synthesize_speech)
 
 Arguments:
 
-- `OutputFormat`: [OutputFormat](./literals.md#outputformat) *(required)*
+- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
+  *(required)*
 - `Text`: `str` *(required)*
-- `VoiceId`: [VoiceId](./literals.md#voiceid) *(required)*
-- `Engine`: [Engine](./literals.md#engine)
-- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
+- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
+- `Engine`: [EngineType](./literals.md#enginetype)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LexiconNames`: `List`\[`str`\]
 - `SampleRate`: `str`
-- `SpeechMarkTypes`: `List`\[[SpeechMarkType](./literals.md#speechmarktype)\]
-- `TextType`: [TextType](./literals.md#texttype)
+- `SpeechMarkTypes`:
+  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+- `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
 [SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef).

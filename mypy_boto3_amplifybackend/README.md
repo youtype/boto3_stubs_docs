@@ -3,7 +3,7 @@
 > [Index](..) > AmplifyBackend
 
 Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
 [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
@@ -30,45 +30,45 @@ Can be used directly:
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
 ```
 
-AmplifyBackendClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [clone_backend](./client.md#clone-backend)
-- [create_backend](./client.md#create-backend)
-- [create_backend_api](./client.md#create-backend-api)
-- [create_backend_auth](./client.md#create-backend-auth)
-- [create_backend_config](./client.md#create-backend-config)
-- [create_token](./client.md#create-token)
-- [delete_backend](./client.md#delete-backend)
-- [delete_backend_api](./client.md#delete-backend-api)
-- [delete_backend_auth](./client.md#delete-backend-auth)
-- [delete_token](./client.md#delete-token)
-- [generate_backend_api_models](./client.md#generate-backend-api-models)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_backend](./client.md#get-backend)
-- [get_backend_api](./client.md#get-backend-api)
-- [get_backend_api_models](./client.md#get-backend-api-models)
-- [get_backend_auth](./client.md#get-backend-auth)
-- [get_backend_job](./client.md#get-backend-job)
-- [get_paginator](./client.md#get-paginator)
-- [get_token](./client.md#get-token)
-- [list_backend_jobs](./client.md#list-backend-jobs)
-- [remove_all_backends](./client.md#remove-all-backends)
-- [remove_backend_config](./client.md#remove-backend-config)
-- [update_backend_api](./client.md#update-backend-api)
-- [update_backend_auth](./client.md#update-backend-auth)
-- [update_backend_config](./client.md#update-backend-config)
-- [update_backend_job](./client.md#update-backend-job)
+- [can_paginate](./client.md#can_paginate)
+- [clone_backend](./client.md#clone_backend)
+- [create_backend](./client.md#create_backend)
+- [create_backend_api](./client.md#create_backend_api)
+- [create_backend_auth](./client.md#create_backend_auth)
+- [create_backend_config](./client.md#create_backend_config)
+- [create_token](./client.md#create_token)
+- [delete_backend](./client.md#delete_backend)
+- [delete_backend_api](./client.md#delete_backend_api)
+- [delete_backend_auth](./client.md#delete_backend_auth)
+- [delete_token](./client.md#delete_token)
+- [generate_backend_api_models](./client.md#generate_backend_api_models)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_backend](./client.md#get_backend)
+- [get_backend_api](./client.md#get_backend_api)
+- [get_backend_api_models](./client.md#get_backend_api_models)
+- [get_backend_auth](./client.md#get_backend_auth)
+- [get_backend_job](./client.md#get_backend_job)
+- [get_paginator](./client.md#get_paginator)
+- [get_token](./client.md#get_token)
+- [list_backend_jobs](./client.md#list_backend_jobs)
+- [remove_all_backends](./client.md#remove_all_backends)
+- [remove_backend_config](./client.md#remove_backend_config)
+- [update_backend_api](./client.md#update_backend_api)
+- [update_backend_auth](./client.md#update_backend_auth)
+- [update_backend_config](./client.md#update_backend_config)
+- [update_backend_job](./client.md#update_backend_job)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [GatewayTimeoutException](./client.md#gatewaytimeoutexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+AmplifyBackendClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- GatewayTimeoutException
+- NotFoundException
+- TooManyRequestsException
 
 ## Paginators
 
@@ -90,23 +90,23 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElement, ...
+from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType, ...
 ```
 
-- [AdditionalConstraintsElement](./literals.md#additionalconstraintselement)
-- [AuthResources](./literals.md#authresources)
-- [DeliveryMethod](./literals.md#deliverymethod)
+- [AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)
+- [AuthResourcesType](./literals.md#authresourcestype)
+- [DeliveryMethodType](./literals.md#deliverymethodtype)
 - [ListBackendJobsPaginatorName](./literals.md#listbackendjobspaginatorname)
-- [MFAMode](./literals.md#mfamode)
-- [MfaTypesElement](./literals.md#mfatypeselement)
-- [Mode](./literals.md#mode)
-- [OAuthGrantType](./literals.md#oauthgranttype)
-- [OAuthScopesElement](./literals.md#oauthscopeselement)
-- [RequiredSignUpAttributesElement](./literals.md#requiredsignupattributeselement)
-- [ResolutionStrategy](./literals.md#resolutionstrategy)
-- [Service](./literals.md#service)
-- [SignInMethod](./literals.md#signinmethod)
-- [Status](./literals.md#status)
+- [MFAModeType](./literals.md#mfamodetype)
+- [MfaTypesElementType](./literals.md#mfatypeselementtype)
+- [ModeType](./literals.md#modetype)
+- [OAuthGrantTypeType](./literals.md#oauthgranttypetype)
+- [OAuthScopesElementType](./literals.md#oauthscopeselementtype)
+- [RequiredSignUpAttributesElementType](./literals.md#requiredsignupattributeselementtype)
+- [ResolutionStrategyType](./literals.md#resolutionstrategytype)
+- [ServiceType](./literals.md#servicetype)
+- [SignInMethodType](./literals.md#signinmethodtype)
+- [StatusType](./literals.md#statustype)
 
 ## Typed dictionaries
 

@@ -3,16 +3,16 @@
 > [Index](..) > [SQS](.) > Literals
 
 Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sqs.html#SQS)
 type annotations stubs module
 [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 - [Literals for boto3 SQS module](#literals-for-boto3-sqs-module)
   - [ListDeadLetterSourceQueuesPaginatorName](#listdeadlettersourcequeuespaginatorname)
   - [ListQueuesPaginatorName](#listqueuespaginatorname)
-  - [MessageSystemAttributeName](#messagesystemattributename)
-  - [MessageSystemAttributeNameForSends](#messagesystemattributenameforsends)
-  - [QueueAttributeName](#queueattributename)
+  - [MessageSystemAttributeNameForSendsType](#messagesystemattributenameforsendstype)
+  - [MessageSystemAttributeNameType](#messagesystemattributenametype)
+  - [QueueAttributeNameType](#queueattributenametype)
 
 ## ListDeadLetterSourceQueuesPaginatorName
 
@@ -34,10 +34,20 @@ Values:
 
 - `list_queues`
 
-## MessageSystemAttributeName
+## MessageSystemAttributeNameForSendsType
 
 ```python
-from mypy_boto3_sqs.literals import MessageSystemAttributeName
+from mypy_boto3_sqs.literals import MessageSystemAttributeNameForSendsType
+```
+
+Values:
+
+- `AWSTraceHeader`
+
+## MessageSystemAttributeNameType
+
+```python
+from mypy_boto3_sqs.literals import MessageSystemAttributeNameType
 ```
 
 Values:
@@ -51,20 +61,10 @@ Values:
 - `SentTimestamp`
 - `SequenceNumber`
 
-## MessageSystemAttributeNameForSends
+## QueueAttributeNameType
 
 ```python
-from mypy_boto3_sqs.literals import MessageSystemAttributeNameForSends
-```
-
-Values:
-
-- `AWSTraceHeader`
-
-## QueueAttributeName
-
-```python
-from mypy_boto3_sqs.literals import QueueAttributeName
+from mypy_boto3_sqs.literals import QueueAttributeNameType
 ```
 
 Values:

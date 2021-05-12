@@ -3,34 +3,34 @@
 > [Index](..) > [MediaPackage](.) > Literals
 
 Auto-generated documentation for
-[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
 [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 - [Literals for boto3 MediaPackage module](#literals-for-boto3-mediapackage-module)
-  - [AdMarkers](#admarkers)
-  - [AdsOnDeliveryRestrictions](#adsondeliveryrestrictions)
-  - [EncryptionMethod](#encryptionmethod)
+  - [AdMarkersType](#admarkerstype)
+  - [AdsOnDeliveryRestrictionsType](#adsondeliveryrestrictionstype)
+  - [EncryptionMethodType](#encryptionmethodtype)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
   - [ListHarvestJobsPaginatorName](#listharvestjobspaginatorname)
   - [ListOriginEndpointsPaginatorName](#listoriginendpointspaginatorname)
-  - [ManifestLayout](#manifestlayout)
-  - [Origination](#origination)
-  - [PlaylistType](#playlisttype)
-  - [PresetSpeke20Audio](#presetspeke20audio)
-  - [PresetSpeke20Video](#presetspeke20video)
-  - [Profile](#profile)
-  - [SegmentTemplateFormat](#segmenttemplateformat)
-  - [Status](#status)
-  - [StreamOrder](#streamorder)
-  - [UtcTiming](#utctiming)
-  - [\_\_AdTriggersElement](#__adtriggerselement)
-  - [\_\_PeriodTriggersElement](#__periodtriggerselement)
+  - [ManifestLayoutType](#manifestlayouttype)
+  - [OriginationType](#originationtype)
+  - [PlaylistTypeType](#playlisttypetype)
+  - [PresetSpeke20AudioType](#presetspeke20audiotype)
+  - [PresetSpeke20VideoType](#presetspeke20videotype)
+  - [ProfileType](#profiletype)
+  - [SegmentTemplateFormatType](#segmenttemplateformattype)
+  - [StatusType](#statustype)
+  - [StreamOrderType](#streamordertype)
+  - [UtcTimingType](#utctimingtype)
+  - [\_\_AdTriggersElementType](#__adtriggerselementtype)
+  - [\_\_PeriodTriggersElementType](#__periodtriggerselementtype)
 
-## AdMarkers
+## AdMarkersType
 
 ```python
-from mypy_boto3_mediapackage.literals import AdMarkers
+from mypy_boto3_mediapackage.literals import AdMarkersType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `PASSTHROUGH`
 - `SCTE35_ENHANCED`
 
-## AdsOnDeliveryRestrictions
+## AdsOnDeliveryRestrictionsType
 
 ```python
-from mypy_boto3_mediapackage.literals import AdsOnDeliveryRestrictions
+from mypy_boto3_mediapackage.literals import AdsOnDeliveryRestrictionsType
 ```
 
 Values:
@@ -53,10 +53,10 @@ Values:
 - `RESTRICTED`
 - `UNRESTRICTED`
 
-## EncryptionMethod
+## EncryptionMethodType
 
 ```python
-from mypy_boto3_mediapackage.literals import EncryptionMethod
+from mypy_boto3_mediapackage.literals import EncryptionMethodType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 
 - `list_origin_endpoints`
 
-## ManifestLayout
+## ManifestLayoutType
 
 ```python
-from mypy_boto3_mediapackage.literals import ManifestLayout
+from mypy_boto3_mediapackage.literals import ManifestLayoutType
 ```
 
 Values:
@@ -105,10 +105,10 @@ Values:
 - `COMPACT`
 - `FULL`
 
-## Origination
+## OriginationType
 
 ```python
-from mypy_boto3_mediapackage.literals import Origination
+from mypy_boto3_mediapackage.literals import OriginationType
 ```
 
 Values:
@@ -116,10 +116,10 @@ Values:
 - `ALLOW`
 - `DENY`
 
-## PlaylistType
+## PlaylistTypeType
 
 ```python
-from mypy_boto3_mediapackage.literals import PlaylistType
+from mypy_boto3_mediapackage.literals import PlaylistTypeType
 ```
 
 Values:
@@ -128,30 +128,30 @@ Values:
 - `NONE`
 - `VOD`
 
-## PresetSpeke20Audio
+## PresetSpeke20AudioType
 
 ```python
-from mypy_boto3_mediapackage.literals import PresetSpeke20Audio
+from mypy_boto3_mediapackage.literals import PresetSpeke20AudioType
 ```
 
 Values:
 
 - `PRESET-AUDIO-1`
 
-## PresetSpeke20Video
+## PresetSpeke20VideoType
 
 ```python
-from mypy_boto3_mediapackage.literals import PresetSpeke20Video
+from mypy_boto3_mediapackage.literals import PresetSpeke20VideoType
 ```
 
 Values:
 
 - `PRESET-VIDEO-1`
 
-## Profile
+## ProfileType
 
 ```python
-from mypy_boto3_mediapackage.literals import Profile
+from mypy_boto3_mediapackage.literals import ProfileType
 ```
 
 Values:
@@ -159,10 +159,10 @@ Values:
 - `HBBTV_1_5`
 - `NONE`
 
-## SegmentTemplateFormat
+## SegmentTemplateFormatType
 
 ```python
-from mypy_boto3_mediapackage.literals import SegmentTemplateFormat
+from mypy_boto3_mediapackage.literals import SegmentTemplateFormatType
 ```
 
 Values:
@@ -171,10 +171,10 @@ Values:
 - `NUMBER_WITH_TIMELINE`
 - `TIME_WITH_TIMELINE`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_mediapackage.literals import Status
+from mypy_boto3_mediapackage.literals import StatusType
 ```
 
 Values:
@@ -183,10 +183,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
-## StreamOrder
+## StreamOrderType
 
 ```python
-from mypy_boto3_mediapackage.literals import StreamOrder
+from mypy_boto3_mediapackage.literals import StreamOrderType
 ```
 
 Values:
@@ -195,10 +195,10 @@ Values:
 - `VIDEO_BITRATE_ASCENDING`
 - `VIDEO_BITRATE_DESCENDING`
 
-## UtcTiming
+## UtcTimingType
 
 ```python
-from mypy_boto3_mediapackage.literals import UtcTiming
+from mypy_boto3_mediapackage.literals import UtcTimingType
 ```
 
 Values:
@@ -207,10 +207,10 @@ Values:
 - `HTTP-ISO`
 - `NONE`
 
-## \_\_AdTriggersElement
+## \_\_AdTriggersElementType
 
 ```python
-from mypy_boto3_mediapackage.literals import __AdTriggersElement
+from mypy_boto3_mediapackage.literals import __AdTriggersElementType
 ```
 
 Values:
@@ -224,10 +224,10 @@ Values:
 - `PROVIDER_PLACEMENT_OPPORTUNITY`
 - `SPLICE_INSERT`
 
-## \_\_PeriodTriggersElement
+## \_\_PeriodTriggersElementType
 
 ```python
-from mypy_boto3_mediapackage.literals import __PeriodTriggersElement
+from mypy_boto3_mediapackage.literals import __PeriodTriggersElementType
 ```
 
 Values:

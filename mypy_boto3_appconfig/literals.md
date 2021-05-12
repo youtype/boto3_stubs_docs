@@ -3,23 +3,23 @@
 > [Index](..) > [AppConfig](.) > Literals
 
 Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
 [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 - [Literals for boto3 AppConfig module](#literals-for-boto3-appconfig-module)
-  - [DeploymentEventType](#deploymenteventtype)
-  - [DeploymentState](#deploymentstate)
-  - [EnvironmentState](#environmentstate)
-  - [GrowthType](#growthtype)
-  - [ReplicateTo](#replicateto)
-  - [TriggeredBy](#triggeredby)
-  - [ValidatorType](#validatortype)
+  - [DeploymentEventTypeType](#deploymenteventtypetype)
+  - [DeploymentStateType](#deploymentstatetype)
+  - [EnvironmentStateType](#environmentstatetype)
+  - [GrowthTypeType](#growthtypetype)
+  - [ReplicateToType](#replicatetotype)
+  - [TriggeredByType](#triggeredbytype)
+  - [ValidatorTypeType](#validatortypetype)
 
-## DeploymentEventType
+## DeploymentEventTypeType
 
 ```python
-from mypy_boto3_appconfig.literals import DeploymentEventType
+from mypy_boto3_appconfig.literals import DeploymentEventTypeType
 ```
 
 Values:
@@ -31,10 +31,10 @@ Values:
 - `ROLLBACK_COMPLETED`
 - `ROLLBACK_STARTED`
 
-## DeploymentState
+## DeploymentStateType
 
 ```python
-from mypy_boto3_appconfig.literals import DeploymentState
+from mypy_boto3_appconfig.literals import DeploymentStateType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `ROLLING_BACK`
 - `VALIDATING`
 
-## EnvironmentState
+## EnvironmentStateType
 
 ```python
-from mypy_boto3_appconfig.literals import EnvironmentState
+from mypy_boto3_appconfig.literals import EnvironmentStateType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `ROLLED_BACK`
 - `ROLLING_BACK`
 
-## GrowthType
+## GrowthTypeType
 
 ```python
-from mypy_boto3_appconfig.literals import GrowthType
+from mypy_boto3_appconfig.literals import GrowthTypeType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `EXPONENTIAL`
 - `LINEAR`
 
-## ReplicateTo
+## ReplicateToType
 
 ```python
-from mypy_boto3_appconfig.literals import ReplicateTo
+from mypy_boto3_appconfig.literals import ReplicateToType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `NONE`
 - `SSM_DOCUMENT`
 
-## TriggeredBy
+## TriggeredByType
 
 ```python
-from mypy_boto3_appconfig.literals import TriggeredBy
+from mypy_boto3_appconfig.literals import TriggeredByType
 ```
 
 Values:
@@ -94,10 +94,10 @@ Values:
 - `INTERNAL_ERROR`
 - `USER`
 
-## ValidatorType
+## ValidatorTypeType
 
 ```python
-from mypy_boto3_appconfig.literals import ValidatorType
+from mypy_boto3_appconfig.literals import ValidatorTypeType
 ```
 
 Values:

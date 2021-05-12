@@ -3,7 +3,7 @@
 > [Index](..) > [CloudSearch](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
 [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
@@ -89,7 +89,8 @@ Optional fields:
 - `Stopwords`: `str`
 - `StemmingDictionary`: `str`
 - `JapaneseTokenizationDictionary`: `str`
-- `AlgorithmicStemming`: [AlgorithmicStemming](./literals.md#algorithmicstemming)
+- `AlgorithmicStemming`:
+  [AlgorithmicStemmingType](./literals.md#algorithmicstemmingtype)
 
 ## AnalysisSchemeStatusTypeDef
 
@@ -112,7 +113,7 @@ Required fields:
 
 - `AnalysisSchemeName`: `str`
 - `AnalysisSchemeLanguage`:
-  [AnalysisSchemeLanguage](./literals.md#analysisschemelanguage)
+  [AnalysisSchemeLanguageType](./literals.md#analysisschemelanguagetype)
 
 Optional fields:
 
@@ -198,7 +199,8 @@ from mypy_boto3_cloudsearch.type_defs import DefineExpressionResponseTypeDef
 
 Required fields:
 
-- `Expression`: [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
+- `Expression`:
+  [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
 
 ## DefineIndexFieldResponseTypeDef
 
@@ -208,7 +210,8 @@ from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldResponseTypeDef
 
 Required fields:
 
-- `IndexField`: [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
+- `IndexField`:
+  [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
 
 ## DefineSuggesterResponseTypeDef
 
@@ -249,7 +252,8 @@ from mypy_boto3_cloudsearch.type_defs import DeleteExpressionResponseTypeDef
 
 Required fields:
 
-- `Expression`: [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
+- `Expression`:
+  [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
 
 ## DeleteIndexFieldResponseTypeDef
 
@@ -259,7 +263,8 @@ from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldResponseTypeDef
 
 Required fields:
 
-- `IndexField`: [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
+- `IndexField`:
+  [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
 
 ## DeleteSuggesterResponseTypeDef
 
@@ -382,7 +387,8 @@ Required fields:
 
 Optional fields:
 
-- `FuzzyMatching`: [SuggesterFuzzyMatching](./literals.md#suggesterfuzzymatching)
+- `FuzzyMatching`:
+  [SuggesterFuzzyMatchingType](./literals.md#suggesterfuzzymatchingtype)
 - `SortExpression`: `str`
 
 ## DomainEndpointOptionsStatusTypeDef
@@ -406,7 +412,8 @@ from mypy_boto3_cloudsearch.type_defs import DomainEndpointOptionsTypeDef
 Optional fields:
 
 - `EnforceHTTPS`: `bool`
-- `TLSSecurityPolicy`: [TLSSecurityPolicy](./literals.md#tlssecuritypolicy)
+- `TLSSecurityPolicy`:
+  [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
 
 ## DomainStatusTypeDef
 
@@ -515,13 +522,14 @@ from mypy_boto3_cloudsearch.type_defs import IndexFieldTypeDef
 Required fields:
 
 - `IndexFieldName`: `str`
-- `IndexFieldType`: [IndexFieldType](./literals.md#indexfieldtype)
+- `IndexFieldType`: [IndexFieldTypeType](./literals.md#indexfieldtypetype)
 
 Optional fields:
 
 - `IntOptions`: [IntOptionsTypeDef](./type_defs.md#intoptionstypedef)
 - `DoubleOptions`: [DoubleOptionsTypeDef](./type_defs.md#doubleoptionstypedef)
-- `LiteralOptions`: [LiteralOptionsTypeDef](./type_defs.md#literaloptionstypedef)
+- `LiteralOptions`:
+  [LiteralOptionsTypeDef](./type_defs.md#literaloptionstypedef)
 - `TextOptions`: [TextOptionsTypeDef](./type_defs.md#textoptionstypedef)
 - `DateOptions`: [DateOptionsTypeDef](./type_defs.md#dateoptionstypedef)
 - `LatLonOptions`: [LatLonOptionsTypeDef](./type_defs.md#latlonoptionstypedef)
@@ -640,7 +648,7 @@ Required fields:
 
 - `CreationDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `State`: [OptionState](./literals.md#optionstate)
+- `State`: [OptionStateType](./literals.md#optionstatetype)
 
 Optional fields:
 
@@ -655,7 +663,8 @@ from mypy_boto3_cloudsearch.type_defs import ScalingParametersStatusTypeDef
 
 Required fields:
 
-- `Options`: [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
+- `Options`:
+  [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## ScalingParametersTypeDef
@@ -667,7 +676,7 @@ from mypy_boto3_cloudsearch.type_defs import ScalingParametersTypeDef
 Optional fields:
 
 - `DesiredInstanceType`:
-  [PartitionInstanceType](./literals.md#partitioninstancetype)
+  [PartitionInstanceTypeType](./literals.md#partitioninstancetypetype)
 - `DesiredReplicationCount`: `int`
 - `DesiredPartitionCount`: `int`
 

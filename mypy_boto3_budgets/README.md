@@ -3,7 +3,7 @@
 > [Index](..) > Budgets
 
 Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/budgets.html#Budgets)
 type annotations stubs module
 [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
@@ -29,48 +29,48 @@ Can be used directly:
 from mypy_boto3_budgets.client import BudgetsClient
 ```
 
-BudgetsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_budget](./client.md#create-budget)
-- [create_budget_action](./client.md#create-budget-action)
-- [create_notification](./client.md#create-notification)
-- [create_subscriber](./client.md#create-subscriber)
-- [delete_budget](./client.md#delete-budget)
-- [delete_budget_action](./client.md#delete-budget-action)
-- [delete_notification](./client.md#delete-notification)
-- [delete_subscriber](./client.md#delete-subscriber)
-- [describe_budget](./client.md#describe-budget)
-- [describe_budget_action](./client.md#describe-budget-action)
-- [describe_budget_action_histories](./client.md#describe-budget-action-histories)
-- [describe_budget_actions_for_account](./client.md#describe-budget-actions-for-account)
-- [describe_budget_actions_for_budget](./client.md#describe-budget-actions-for-budget)
-- [describe_budget_performance_history](./client.md#describe-budget-performance-history)
-- [describe_budgets](./client.md#describe-budgets)
-- [describe_notifications_for_budget](./client.md#describe-notifications-for-budget)
-- [describe_subscribers_for_notification](./client.md#describe-subscribers-for-notification)
-- [execute_budget_action](./client.md#execute-budget-action)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [update_budget](./client.md#update-budget)
-- [update_budget_action](./client.md#update-budget-action)
-- [update_notification](./client.md#update-notification)
-- [update_subscriber](./client.md#update-subscriber)
+- [can_paginate](./client.md#can_paginate)
+- [create_budget](./client.md#create_budget)
+- [create_budget_action](./client.md#create_budget_action)
+- [create_notification](./client.md#create_notification)
+- [create_subscriber](./client.md#create_subscriber)
+- [delete_budget](./client.md#delete_budget)
+- [delete_budget_action](./client.md#delete_budget_action)
+- [delete_notification](./client.md#delete_notification)
+- [delete_subscriber](./client.md#delete_subscriber)
+- [describe_budget](./client.md#describe_budget)
+- [describe_budget_action](./client.md#describe_budget_action)
+- [describe_budget_action_histories](./client.md#describe_budget_action_histories)
+- [describe_budget_actions_for_account](./client.md#describe_budget_actions_for_account)
+- [describe_budget_actions_for_budget](./client.md#describe_budget_actions_for_budget)
+- [describe_budget_performance_history](./client.md#describe_budget_performance_history)
+- [describe_budgets](./client.md#describe_budgets)
+- [describe_notifications_for_budget](./client.md#describe_notifications_for_budget)
+- [describe_subscribers_for_notification](./client.md#describe_subscribers_for_notification)
+- [execute_budget_action](./client.md#execute_budget_action)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [update_budget](./client.md#update_budget)
+- [update_budget_action](./client.md#update_budget_action)
+- [update_notification](./client.md#update_notification)
+- [update_subscriber](./client.md#update_subscriber)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [CreationLimitExceededException](./client.md#creationlimitexceededexception)
-- [DuplicateRecordException](./client.md#duplicaterecordexception)
-- [ExpiredNextTokenException](./client.md#expirednexttokenexception)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ResourceLockedException](./client.md#resourcelockedexception)
+BudgetsClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- CreationLimitExceededException
+- DuplicateRecordException
+- ExpiredNextTokenException
+- InternalErrorException
+- InvalidNextTokenException
+- InvalidParameterException
+- NotFoundException
+- ResourceLockedException
 
 ## Paginators
 
@@ -98,15 +98,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_budgets.literals import ActionStatus, ...
+from mypy_boto3_budgets.literals import ActionStatusType, ...
 ```
 
-- [ActionStatus](./literals.md#actionstatus)
-- [ActionSubType](./literals.md#actionsubtype)
-- [ActionType](./literals.md#actiontype)
-- [ApprovalModel](./literals.md#approvalmodel)
-- [BudgetType](./literals.md#budgettype)
-- [ComparisonOperator](./literals.md#comparisonoperator)
+- [ActionStatusType](./literals.md#actionstatustype)
+- [ActionSubTypeType](./literals.md#actionsubtypetype)
+- [ActionTypeType](./literals.md#actiontypetype)
+- [ApprovalModelType](./literals.md#approvalmodeltype)
+- [BudgetTypeType](./literals.md#budgettypetype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - [DescribeBudgetActionHistoriesPaginatorName](./literals.md#describebudgetactionhistoriespaginatorname)
 - [DescribeBudgetActionsForAccountPaginatorName](./literals.md#describebudgetactionsforaccountpaginatorname)
 - [DescribeBudgetActionsForBudgetPaginatorName](./literals.md#describebudgetactionsforbudgetpaginatorname)
@@ -114,13 +114,13 @@ from mypy_boto3_budgets.literals import ActionStatus, ...
 - [DescribeBudgetsPaginatorName](./literals.md#describebudgetspaginatorname)
 - [DescribeNotificationsForBudgetPaginatorName](./literals.md#describenotificationsforbudgetpaginatorname)
 - [DescribeSubscribersForNotificationPaginatorName](./literals.md#describesubscribersfornotificationpaginatorname)
-- [EventType](./literals.md#eventtype)
-- [ExecutionType](./literals.md#executiontype)
-- [NotificationState](./literals.md#notificationstate)
-- [NotificationType](./literals.md#notificationtype)
-- [SubscriptionType](./literals.md#subscriptiontype)
-- [ThresholdType](./literals.md#thresholdtype)
-- [TimeUnit](./literals.md#timeunit)
+- [EventTypeType](./literals.md#eventtypetype)
+- [ExecutionTypeType](./literals.md#executiontypetype)
+- [NotificationStateType](./literals.md#notificationstatetype)
+- [NotificationTypeType](./literals.md#notificationtypetype)
+- [SubscriptionTypeType](./literals.md#subscriptiontypetype)
+- [ThresholdTypeType](./literals.md#thresholdtypetype)
+- [TimeUnitType](./literals.md#timeunittype)
 
 ## Typed dictionaries
 

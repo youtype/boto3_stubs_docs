@@ -3,27 +3,27 @@
 > [Index](..) > [Glue](.) > Literals
 
 Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue)
 type annotations stubs module
 [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
 - [Literals for boto3 Glue module](#literals-for-boto3-glue-module)
-  - [BackfillErrorCode](#backfillerrorcode)
-  - [CatalogEncryptionMode](#catalogencryptionmode)
-  - [CloudWatchEncryptionMode](#cloudwatchencryptionmode)
-  - [ColumnStatisticsType](#columnstatisticstype)
-  - [Comparator](#comparator)
-  - [Compatibility](#compatibility)
-  - [ConnectionPropertyKey](#connectionpropertykey)
-  - [ConnectionType](#connectiontype)
-  - [CrawlState](#crawlstate)
-  - [CrawlerLineageSettings](#crawlerlineagesettings)
-  - [CrawlerState](#crawlerstate)
-  - [CsvHeaderOption](#csvheaderoption)
-  - [DataFormat](#dataformat)
-  - [DeleteBehavior](#deletebehavior)
-  - [EnableHybridValues](#enablehybridvalues)
-  - [ExistCondition](#existcondition)
+  - [BackfillErrorCodeType](#backfillerrorcodetype)
+  - [CatalogEncryptionModeType](#catalogencryptionmodetype)
+  - [CloudWatchEncryptionModeType](#cloudwatchencryptionmodetype)
+  - [ColumnStatisticsTypeType](#columnstatisticstypetype)
+  - [ComparatorType](#comparatortype)
+  - [CompatibilityType](#compatibilitytype)
+  - [ConnectionPropertyKeyType](#connectionpropertykeytype)
+  - [ConnectionTypeType](#connectiontypetype)
+  - [CrawlStateType](#crawlstatetype)
+  - [CrawlerLineageSettingsType](#crawlerlineagesettingstype)
+  - [CrawlerStateType](#crawlerstatetype)
+  - [CsvHeaderOptionType](#csvheaderoptiontype)
+  - [DataFormatType](#dataformattype)
+  - [DeleteBehaviorType](#deletebehaviortype)
+  - [EnableHybridValuesType](#enablehybridvaluestype)
+  - [ExistConditionType](#existconditiontype)
   - [GetClassifiersPaginatorName](#getclassifierspaginatorname)
   - [GetConnectionsPaginatorName](#getconnectionspaginatorname)
   - [GetCrawlerMetricsPaginatorName](#getcrawlermetricspaginatorname)
@@ -40,47 +40,47 @@ type annotations stubs module
   - [GetTablesPaginatorName](#gettablespaginatorname)
   - [GetTriggersPaginatorName](#gettriggerspaginatorname)
   - [GetUserDefinedFunctionsPaginatorName](#getuserdefinedfunctionspaginatorname)
-  - [JobBookmarksEncryptionMode](#jobbookmarksencryptionmode)
-  - [JobRunState](#jobrunstate)
-  - [Language](#language)
-  - [LastCrawlStatus](#lastcrawlstatus)
+  - [JobBookmarksEncryptionModeType](#jobbookmarksencryptionmodetype)
+  - [JobRunStateType](#jobrunstatetype)
+  - [LanguageType](#languagetype)
+  - [LastCrawlStatusType](#lastcrawlstatustype)
   - [ListRegistriesPaginatorName](#listregistriespaginatorname)
   - [ListSchemaVersionsPaginatorName](#listschemaversionspaginatorname)
   - [ListSchemasPaginatorName](#listschemaspaginatorname)
-  - [Logical](#logical)
-  - [LogicalOperator](#logicaloperator)
-  - [MLUserDataEncryptionModeString](#mluserdataencryptionmodestring)
-  - [NodeType](#nodetype)
-  - [PartitionIndexStatus](#partitionindexstatus)
-  - [Permission](#permission)
-  - [PrincipalType](#principaltype)
-  - [RecrawlBehavior](#recrawlbehavior)
-  - [RegistryStatus](#registrystatus)
-  - [ResourceShareType](#resourcesharetype)
-  - [ResourceType](#resourcetype)
-  - [S3EncryptionMode](#s3encryptionmode)
-  - [ScheduleState](#schedulestate)
-  - [SchemaDiffType](#schemadifftype)
-  - [SchemaStatus](#schemastatus)
-  - [SchemaVersionStatus](#schemaversionstatus)
-  - [Sort](#sort)
-  - [SortDirectionType](#sortdirectiontype)
-  - [TaskRunSortColumnType](#taskrunsortcolumntype)
-  - [TaskStatusType](#taskstatustype)
-  - [TaskType](#tasktype)
-  - [TransformSortColumnType](#transformsortcolumntype)
-  - [TransformStatusType](#transformstatustype)
-  - [TransformType](#transformtype)
-  - [TriggerState](#triggerstate)
-  - [TriggerType](#triggertype)
-  - [UpdateBehavior](#updatebehavior)
-  - [WorkerType](#workertype)
-  - [WorkflowRunStatus](#workflowrunstatus)
+  - [LogicalOperatorType](#logicaloperatortype)
+  - [LogicalType](#logicaltype)
+  - [MLUserDataEncryptionModeStringType](#mluserdataencryptionmodestringtype)
+  - [NodeTypeType](#nodetypetype)
+  - [PartitionIndexStatusType](#partitionindexstatustype)
+  - [PermissionType](#permissiontype)
+  - [PrincipalTypeType](#principaltypetype)
+  - [RecrawlBehaviorType](#recrawlbehaviortype)
+  - [RegistryStatusType](#registrystatustype)
+  - [ResourceShareTypeType](#resourcesharetypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [S3EncryptionModeType](#s3encryptionmodetype)
+  - [ScheduleStateType](#schedulestatetype)
+  - [SchemaDiffTypeType](#schemadifftypetype)
+  - [SchemaStatusType](#schemastatustype)
+  - [SchemaVersionStatusType](#schemaversionstatustype)
+  - [SortDirectionTypeType](#sortdirectiontypetype)
+  - [SortType](#sorttype)
+  - [TaskRunSortColumnTypeType](#taskrunsortcolumntypetype)
+  - [TaskStatusTypeType](#taskstatustypetype)
+  - [TaskTypeType](#tasktypetype)
+  - [TransformSortColumnTypeType](#transformsortcolumntypetype)
+  - [TransformStatusTypeType](#transformstatustypetype)
+  - [TransformTypeType](#transformtypetype)
+  - [TriggerStateType](#triggerstatetype)
+  - [TriggerTypeType](#triggertypetype)
+  - [UpdateBehaviorType](#updatebehaviortype)
+  - [WorkerTypeType](#workertypetype)
+  - [WorkflowRunStatusType](#workflowrunstatustype)
 
-## BackfillErrorCode
+## BackfillErrorCodeType
 
 ```python
-from mypy_boto3_glue.literals import BackfillErrorCode
+from mypy_boto3_glue.literals import BackfillErrorCodeType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 - `MISSING_PARTITION_VALUE_ERROR`
 - `UNSUPPORTED_PARTITION_CHARACTER_ERROR`
 
-## CatalogEncryptionMode
+## CatalogEncryptionModeType
 
 ```python
-from mypy_boto3_glue.literals import CatalogEncryptionMode
+from mypy_boto3_glue.literals import CatalogEncryptionModeType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `DISABLED`
 - `SSE-KMS`
 
-## CloudWatchEncryptionMode
+## CloudWatchEncryptionModeType
 
 ```python
-from mypy_boto3_glue.literals import CloudWatchEncryptionMode
+from mypy_boto3_glue.literals import CloudWatchEncryptionModeType
 ```
 
 Values:
@@ -113,10 +113,10 @@ Values:
 - `DISABLED`
 - `SSE-KMS`
 
-## ColumnStatisticsType
+## ColumnStatisticsTypeType
 
 ```python
-from mypy_boto3_glue.literals import ColumnStatisticsType
+from mypy_boto3_glue.literals import ColumnStatisticsTypeType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 - `LONG`
 - `STRING`
 
-## Comparator
+## ComparatorType
 
 ```python
-from mypy_boto3_glue.literals import Comparator
+from mypy_boto3_glue.literals import ComparatorType
 ```
 
 Values:
@@ -143,10 +143,10 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_EQUALS`
 
-## Compatibility
+## CompatibilityType
 
 ```python
-from mypy_boto3_glue.literals import Compatibility
+from mypy_boto3_glue.literals import CompatibilityType
 ```
 
 Values:
@@ -160,10 +160,10 @@ Values:
 - `FULL_ALL`
 - `NONE`
 
-## ConnectionPropertyKey
+## ConnectionPropertyKeyType
 
 ```python
-from mypy_boto3_glue.literals import ConnectionPropertyKey
+from mypy_boto3_glue.literals import ConnectionPropertyKeyType
 ```
 
 Values:
@@ -199,10 +199,10 @@ Values:
 - `SKIP_CUSTOM_JDBC_CERT_VALIDATION`
 - `USERNAME`
 
-## ConnectionType
+## ConnectionTypeType
 
 ```python
-from mypy_boto3_glue.literals import ConnectionType
+from mypy_boto3_glue.literals import ConnectionTypeType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 - `NETWORK`
 - `SFTP`
 
-## CrawlState
+## CrawlStateType
 
 ```python
-from mypy_boto3_glue.literals import CrawlState
+from mypy_boto3_glue.literals import CrawlStateType
 ```
 
 Values:
@@ -229,10 +229,10 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
-## CrawlerLineageSettings
+## CrawlerLineageSettingsType
 
 ```python
-from mypy_boto3_glue.literals import CrawlerLineageSettings
+from mypy_boto3_glue.literals import CrawlerLineageSettingsType
 ```
 
 Values:
@@ -240,10 +240,10 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
-## CrawlerState
+## CrawlerStateType
 
 ```python
-from mypy_boto3_glue.literals import CrawlerState
+from mypy_boto3_glue.literals import CrawlerStateType
 ```
 
 Values:
@@ -252,10 +252,10 @@ Values:
 - `RUNNING`
 - `STOPPING`
 
-## CsvHeaderOption
+## CsvHeaderOptionType
 
 ```python
-from mypy_boto3_glue.literals import CsvHeaderOption
+from mypy_boto3_glue.literals import CsvHeaderOptionType
 ```
 
 Values:
@@ -264,20 +264,20 @@ Values:
 - `PRESENT`
 - `UNKNOWN`
 
-## DataFormat
+## DataFormatType
 
 ```python
-from mypy_boto3_glue.literals import DataFormat
+from mypy_boto3_glue.literals import DataFormatType
 ```
 
 Values:
 
 - `AVRO`
 
-## DeleteBehavior
+## DeleteBehaviorType
 
 ```python
-from mypy_boto3_glue.literals import DeleteBehavior
+from mypy_boto3_glue.literals import DeleteBehaviorType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `DEPRECATE_IN_DATABASE`
 - `LOG`
 
-## EnableHybridValues
+## EnableHybridValuesType
 
 ```python
-from mypy_boto3_glue.literals import EnableHybridValues
+from mypy_boto3_glue.literals import EnableHybridValuesType
 ```
 
 Values:
@@ -297,10 +297,10 @@ Values:
 - `FALSE`
 - `TRUE`
 
-## ExistCondition
+## ExistConditionType
 
 ```python
-from mypy_boto3_glue.literals import ExistCondition
+from mypy_boto3_glue.literals import ExistConditionType
 ```
 
 Values:
@@ -469,10 +469,10 @@ Values:
 
 - `get_user_defined_functions`
 
-## JobBookmarksEncryptionMode
+## JobBookmarksEncryptionModeType
 
 ```python
-from mypy_boto3_glue.literals import JobBookmarksEncryptionMode
+from mypy_boto3_glue.literals import JobBookmarksEncryptionModeType
 ```
 
 Values:
@@ -480,10 +480,10 @@ Values:
 - `CSE-KMS`
 - `DISABLED`
 
-## JobRunState
+## JobRunStateType
 
 ```python
-from mypy_boto3_glue.literals import JobRunState
+from mypy_boto3_glue.literals import JobRunStateType
 ```
 
 Values:
@@ -496,10 +496,10 @@ Values:
 - `SUCCEEDED`
 - `TIMEOUT`
 
-## Language
+## LanguageType
 
 ```python
-from mypy_boto3_glue.literals import Language
+from mypy_boto3_glue.literals import LanguageType
 ```
 
 Values:
@@ -507,10 +507,10 @@ Values:
 - `PYTHON`
 - `SCALA`
 
-## LastCrawlStatus
+## LastCrawlStatusType
 
 ```python
-from mypy_boto3_glue.literals import LastCrawlStatus
+from mypy_boto3_glue.literals import LastCrawlStatusType
 ```
 
 Values:
@@ -549,10 +549,20 @@ Values:
 
 - `list_schemas`
 
-## Logical
+## LogicalOperatorType
 
 ```python
-from mypy_boto3_glue.literals import Logical
+from mypy_boto3_glue.literals import LogicalOperatorType
+```
+
+Values:
+
+- `EQUALS`
+
+## LogicalType
+
+```python
+from mypy_boto3_glue.literals import LogicalType
 ```
 
 Values:
@@ -560,20 +570,10 @@ Values:
 - `AND`
 - `ANY`
 
-## LogicalOperator
+## MLUserDataEncryptionModeStringType
 
 ```python
-from mypy_boto3_glue.literals import LogicalOperator
-```
-
-Values:
-
-- `EQUALS`
-
-## MLUserDataEncryptionModeString
-
-```python
-from mypy_boto3_glue.literals import MLUserDataEncryptionModeString
+from mypy_boto3_glue.literals import MLUserDataEncryptionModeStringType
 ```
 
 Values:
@@ -581,10 +581,10 @@ Values:
 - `DISABLED`
 - `SSE-KMS`
 
-## NodeType
+## NodeTypeType
 
 ```python
-from mypy_boto3_glue.literals import NodeType
+from mypy_boto3_glue.literals import NodeTypeType
 ```
 
 Values:
@@ -593,10 +593,10 @@ Values:
 - `JOB`
 - `TRIGGER`
 
-## PartitionIndexStatus
+## PartitionIndexStatusType
 
 ```python
-from mypy_boto3_glue.literals import PartitionIndexStatus
+from mypy_boto3_glue.literals import PartitionIndexStatusType
 ```
 
 Values:
@@ -606,10 +606,10 @@ Values:
 - `DELETING`
 - `FAILED`
 
-## Permission
+## PermissionType
 
 ```python
-from mypy_boto3_glue.literals import Permission
+from mypy_boto3_glue.literals import PermissionType
 ```
 
 Values:
@@ -624,10 +624,10 @@ Values:
 - `INSERT`
 - `SELECT`
 
-## PrincipalType
+## PrincipalTypeType
 
 ```python
-from mypy_boto3_glue.literals import PrincipalType
+from mypy_boto3_glue.literals import PrincipalTypeType
 ```
 
 Values:
@@ -636,10 +636,10 @@ Values:
 - `ROLE`
 - `USER`
 
-## RecrawlBehavior
+## RecrawlBehaviorType
 
 ```python
-from mypy_boto3_glue.literals import RecrawlBehavior
+from mypy_boto3_glue.literals import RecrawlBehaviorType
 ```
 
 Values:
@@ -647,10 +647,10 @@ Values:
 - `CRAWL_EVERYTHING`
 - `CRAWL_NEW_FOLDERS_ONLY`
 
-## RegistryStatus
+## RegistryStatusType
 
 ```python
-from mypy_boto3_glue.literals import RegistryStatus
+from mypy_boto3_glue.literals import RegistryStatusType
 ```
 
 Values:
@@ -658,10 +658,10 @@ Values:
 - `AVAILABLE`
 - `DELETING`
 
-## ResourceShareType
+## ResourceShareTypeType
 
 ```python
-from mypy_boto3_glue.literals import ResourceShareType
+from mypy_boto3_glue.literals import ResourceShareTypeType
 ```
 
 Values:
@@ -669,10 +669,10 @@ Values:
 - `ALL`
 - `FOREIGN`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_glue.literals import ResourceType
+from mypy_boto3_glue.literals import ResourceTypeType
 ```
 
 Values:
@@ -681,10 +681,10 @@ Values:
 - `FILE`
 - `JAR`
 
-## S3EncryptionMode
+## S3EncryptionModeType
 
 ```python
-from mypy_boto3_glue.literals import S3EncryptionMode
+from mypy_boto3_glue.literals import S3EncryptionModeType
 ```
 
 Values:
@@ -693,10 +693,10 @@ Values:
 - `SSE-KMS`
 - `SSE-S3`
 
-## ScheduleState
+## ScheduleStateType
 
 ```python
-from mypy_boto3_glue.literals import ScheduleState
+from mypy_boto3_glue.literals import ScheduleStateType
 ```
 
 Values:
@@ -705,20 +705,20 @@ Values:
 - `SCHEDULED`
 - `TRANSITIONING`
 
-## SchemaDiffType
+## SchemaDiffTypeType
 
 ```python
-from mypy_boto3_glue.literals import SchemaDiffType
+from mypy_boto3_glue.literals import SchemaDiffTypeType
 ```
 
 Values:
 
 - `SYNTAX_DIFF`
 
-## SchemaStatus
+## SchemaStatusType
 
 ```python
-from mypy_boto3_glue.literals import SchemaStatus
+from mypy_boto3_glue.literals import SchemaStatusType
 ```
 
 Values:
@@ -727,10 +727,10 @@ Values:
 - `DELETING`
 - `PENDING`
 
-## SchemaVersionStatus
+## SchemaVersionStatusType
 
 ```python
-from mypy_boto3_glue.literals import SchemaVersionStatus
+from mypy_boto3_glue.literals import SchemaVersionStatusType
 ```
 
 Values:
@@ -740,21 +740,10 @@ Values:
 - `FAILURE`
 - `PENDING`
 
-## Sort
+## SortDirectionTypeType
 
 ```python
-from mypy_boto3_glue.literals import Sort
-```
-
-Values:
-
-- `ASC`
-- `DESC`
-
-## SortDirectionType
-
-```python
-from mypy_boto3_glue.literals import SortDirectionType
+from mypy_boto3_glue.literals import SortDirectionTypeType
 ```
 
 Values:
@@ -762,10 +751,21 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## TaskRunSortColumnType
+## SortType
 
 ```python
-from mypy_boto3_glue.literals import TaskRunSortColumnType
+from mypy_boto3_glue.literals import SortType
+```
+
+Values:
+
+- `ASC`
+- `DESC`
+
+## TaskRunSortColumnTypeType
+
+```python
+from mypy_boto3_glue.literals import TaskRunSortColumnTypeType
 ```
 
 Values:
@@ -774,10 +774,10 @@ Values:
 - `STATUS`
 - `TASK_RUN_TYPE`
 
-## TaskStatusType
+## TaskStatusTypeType
 
 ```python
-from mypy_boto3_glue.literals import TaskStatusType
+from mypy_boto3_glue.literals import TaskStatusTypeType
 ```
 
 Values:
@@ -790,10 +790,10 @@ Values:
 - `SUCCEEDED`
 - `TIMEOUT`
 
-## TaskType
+## TaskTypeType
 
 ```python
-from mypy_boto3_glue.literals import TaskType
+from mypy_boto3_glue.literals import TaskTypeType
 ```
 
 Values:
@@ -804,10 +804,10 @@ Values:
 - `IMPORT_LABELS`
 - `LABELING_SET_GENERATION`
 
-## TransformSortColumnType
+## TransformSortColumnTypeType
 
 ```python
-from mypy_boto3_glue.literals import TransformSortColumnType
+from mypy_boto3_glue.literals import TransformSortColumnTypeType
 ```
 
 Values:
@@ -818,10 +818,10 @@ Values:
 - `STATUS`
 - `TRANSFORM_TYPE`
 
-## TransformStatusType
+## TransformStatusTypeType
 
 ```python
-from mypy_boto3_glue.literals import TransformStatusType
+from mypy_boto3_glue.literals import TransformStatusTypeType
 ```
 
 Values:
@@ -830,20 +830,20 @@ Values:
 - `NOT_READY`
 - `READY`
 
-## TransformType
+## TransformTypeType
 
 ```python
-from mypy_boto3_glue.literals import TransformType
+from mypy_boto3_glue.literals import TransformTypeType
 ```
 
 Values:
 
 - `FIND_MATCHES`
 
-## TriggerState
+## TriggerStateType
 
 ```python
-from mypy_boto3_glue.literals import TriggerState
+from mypy_boto3_glue.literals import TriggerStateType
 ```
 
 Values:
@@ -857,10 +857,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## TriggerType
+## TriggerTypeType
 
 ```python
-from mypy_boto3_glue.literals import TriggerType
+from mypy_boto3_glue.literals import TriggerTypeType
 ```
 
 Values:
@@ -869,10 +869,10 @@ Values:
 - `ON_DEMAND`
 - `SCHEDULED`
 
-## UpdateBehavior
+## UpdateBehaviorType
 
 ```python
-from mypy_boto3_glue.literals import UpdateBehavior
+from mypy_boto3_glue.literals import UpdateBehaviorType
 ```
 
 Values:
@@ -880,10 +880,10 @@ Values:
 - `LOG`
 - `UPDATE_IN_DATABASE`
 
-## WorkerType
+## WorkerTypeType
 
 ```python
-from mypy_boto3_glue.literals import WorkerType
+from mypy_boto3_glue.literals import WorkerTypeType
 ```
 
 Values:
@@ -892,10 +892,10 @@ Values:
 - `G.2X`
 - `Standard`
 
-## WorkflowRunStatus
+## WorkflowRunStatusType
 
 ```python
-from mypy_boto3_glue.literals import WorkflowRunStatus
+from mypy_boto3_glue.literals import WorkflowRunStatusType
 ```
 
 Values:

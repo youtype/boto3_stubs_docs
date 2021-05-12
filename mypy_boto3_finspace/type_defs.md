@@ -3,7 +3,7 @@
 > [Index](..) > [finspace](.) > Typed dictionaries
 
 Auto-generated documentation for
-[finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
+[finspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace)
 type annotations stubs module
 [mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
@@ -39,14 +39,14 @@ Optional fields:
 - `name`: `str`
 - `environmentId`: `str`
 - `awsAccountId`: `str`
-- `status`: [EnvironmentStatus](./literals.md#environmentstatus)
+- `status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
 - `environmentUrl`: `str`
 - `description`: `str`
 - `environmentArn`: `str`
 - `sageMakerStudioDomainUrl`: `str`
 - `kmsKeyId`: `str`
 - `dedicatedServiceAccountId`: `str`
-- `federationMode`: [FederationMode](./literals.md#federationmode)
+- `federationMode`: [FederationModeType](./literals.md#federationmodetype)
 - `federationParameters`:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 

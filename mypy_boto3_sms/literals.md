@@ -3,40 +3,40 @@
 > [Index](..) > [SMS](.) > Literals
 
 Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS)
 type annotations stubs module
 [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
 - [Literals for boto3 SMS module](#literals-for-boto3-sms-module)
-  - [AppLaunchConfigurationStatus](#applaunchconfigurationstatus)
-  - [AppLaunchStatus](#applaunchstatus)
-  - [AppReplicationConfigurationStatus](#appreplicationconfigurationstatus)
-  - [AppReplicationStatus](#appreplicationstatus)
-  - [AppStatus](#appstatus)
-  - [AppValidationStrategy](#appvalidationstrategy)
-  - [ConnectorCapability](#connectorcapability)
-  - [ConnectorStatus](#connectorstatus)
+  - [AppLaunchConfigurationStatusType](#applaunchconfigurationstatustype)
+  - [AppLaunchStatusType](#applaunchstatustype)
+  - [AppReplicationConfigurationStatusType](#appreplicationconfigurationstatustype)
+  - [AppReplicationStatusType](#appreplicationstatustype)
+  - [AppStatusType](#appstatustype)
+  - [AppValidationStrategyType](#appvalidationstrategytype)
+  - [ConnectorCapabilityType](#connectorcapabilitytype)
+  - [ConnectorStatusType](#connectorstatustype)
   - [GetConnectorsPaginatorName](#getconnectorspaginatorname)
   - [GetReplicationJobsPaginatorName](#getreplicationjobspaginatorname)
   - [GetReplicationRunsPaginatorName](#getreplicationrunspaginatorname)
   - [GetServersPaginatorName](#getserverspaginatorname)
-  - [LicenseType](#licensetype)
+  - [LicenseTypeType](#licensetypetype)
   - [ListAppsPaginatorName](#listappspaginatorname)
-  - [OutputFormat](#outputformat)
-  - [ReplicationJobState](#replicationjobstate)
-  - [ReplicationRunState](#replicationrunstate)
-  - [ReplicationRunType](#replicationruntype)
-  - [ScriptType](#scripttype)
-  - [ServerCatalogStatus](#servercatalogstatus)
-  - [ServerType](#servertype)
-  - [ServerValidationStrategy](#servervalidationstrategy)
-  - [ValidationStatus](#validationstatus)
-  - [VmManagerType](#vmmanagertype)
+  - [OutputFormatType](#outputformattype)
+  - [ReplicationJobStateType](#replicationjobstatetype)
+  - [ReplicationRunStateType](#replicationrunstatetype)
+  - [ReplicationRunTypeType](#replicationruntypetype)
+  - [ScriptTypeType](#scripttypetype)
+  - [ServerCatalogStatusType](#servercatalogstatustype)
+  - [ServerTypeType](#servertypetype)
+  - [ServerValidationStrategyType](#servervalidationstrategytype)
+  - [ValidationStatusType](#validationstatustype)
+  - [VmManagerTypeType](#vmmanagertypetype)
 
-## AppLaunchConfigurationStatus
+## AppLaunchConfigurationStatusType
 
 ```python
-from mypy_boto3_sms.literals import AppLaunchConfigurationStatus
+from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType
 ```
 
 Values:
@@ -44,10 +44,10 @@ Values:
 - `CONFIGURED`
 - `NOT_CONFIGURED`
 
-## AppLaunchStatus
+## AppLaunchStatusType
 
 ```python
-from mypy_boto3_sms.literals import AppLaunchStatus
+from mypy_boto3_sms.literals import AppLaunchStatusType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `TERMINATED`
 - `VALIDATION_IN_PROGRESS`
 
-## AppReplicationConfigurationStatus
+## AppReplicationConfigurationStatusType
 
 ```python
-from mypy_boto3_sms.literals import AppReplicationConfigurationStatus
+from mypy_boto3_sms.literals import AppReplicationConfigurationStatusType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `CONFIGURED`
 - `NOT_CONFIGURED`
 
-## AppReplicationStatus
+## AppReplicationStatusType
 
 ```python
-from mypy_boto3_sms.literals import AppReplicationStatus
+from mypy_boto3_sms.literals import AppReplicationStatusType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `REPLICATION_STOPPING`
 - `VALIDATION_IN_PROGRESS`
 
-## AppStatus
+## AppStatusType
 
 ```python
-from mypy_boto3_sms.literals import AppStatus
+from mypy_boto3_sms.literals import AppStatusType
 ```
 
 Values:
@@ -119,20 +119,20 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## AppValidationStrategy
+## AppValidationStrategyType
 
 ```python
-from mypy_boto3_sms.literals import AppValidationStrategy
+from mypy_boto3_sms.literals import AppValidationStrategyType
 ```
 
 Values:
 
 - `SSM`
 
-## ConnectorCapability
+## ConnectorCapabilityType
 
 ```python
-from mypy_boto3_sms.literals import ConnectorCapability
+from mypy_boto3_sms.literals import ConnectorCapabilityType
 ```
 
 Values:
@@ -143,10 +143,10 @@ Values:
 - `SNAPSHOT_BATCHING`
 - `VSPHERE`
 
-## ConnectorStatus
+## ConnectorStatusType
 
 ```python
-from mypy_boto3_sms.literals import ConnectorStatus
+from mypy_boto3_sms.literals import ConnectorStatusType
 ```
 
 Values:
@@ -194,10 +194,10 @@ Values:
 
 - `get_servers`
 
-## LicenseType
+## LicenseTypeType
 
 ```python
-from mypy_boto3_sms.literals import LicenseType
+from mypy_boto3_sms.literals import LicenseTypeType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 
 - `list_apps`
 
-## OutputFormat
+## OutputFormatType
 
 ```python
-from mypy_boto3_sms.literals import OutputFormat
+from mypy_boto3_sms.literals import OutputFormatType
 ```
 
 Values:
@@ -226,10 +226,10 @@ Values:
 - `JSON`
 - `YAML`
 
-## ReplicationJobState
+## ReplicationJobStateType
 
 ```python
-from mypy_boto3_sms.literals import ReplicationJobState
+from mypy_boto3_sms.literals import ReplicationJobStateType
 ```
 
 Values:
@@ -243,10 +243,10 @@ Values:
 - `PAUSED_ON_FAILURE`
 - `PENDING`
 
-## ReplicationRunState
+## ReplicationRunStateType
 
 ```python
-from mypy_boto3_sms.literals import ReplicationRunState
+from mypy_boto3_sms.literals import ReplicationRunStateType
 ```
 
 Values:
@@ -259,10 +259,10 @@ Values:
 - `MISSED`
 - `PENDING`
 
-## ReplicationRunType
+## ReplicationRunTypeType
 
 ```python
-from mypy_boto3_sms.literals import ReplicationRunType
+from mypy_boto3_sms.literals import ReplicationRunTypeType
 ```
 
 Values:
@@ -270,10 +270,10 @@ Values:
 - `AUTOMATIC`
 - `ON_DEMAND`
 
-## ScriptType
+## ScriptTypeType
 
 ```python
-from mypy_boto3_sms.literals import ScriptType
+from mypy_boto3_sms.literals import ScriptTypeType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 - `POWERSHELL_SCRIPT`
 - `SHELL_SCRIPT`
 
-## ServerCatalogStatus
+## ServerCatalogStatusType
 
 ```python
-from mypy_boto3_sms.literals import ServerCatalogStatus
+from mypy_boto3_sms.literals import ServerCatalogStatusType
 ```
 
 Values:
@@ -295,30 +295,30 @@ Values:
 - `IMPORTING`
 - `NOT_IMPORTED`
 
-## ServerType
+## ServerTypeType
 
 ```python
-from mypy_boto3_sms.literals import ServerType
+from mypy_boto3_sms.literals import ServerTypeType
 ```
 
 Values:
 
 - `VIRTUAL_MACHINE`
 
-## ServerValidationStrategy
+## ServerValidationStrategyType
 
 ```python
-from mypy_boto3_sms.literals import ServerValidationStrategy
+from mypy_boto3_sms.literals import ServerValidationStrategyType
 ```
 
 Values:
 
 - `USERDATA`
 
-## ValidationStatus
+## ValidationStatusType
 
 ```python
-from mypy_boto3_sms.literals import ValidationStatus
+from mypy_boto3_sms.literals import ValidationStatusType
 ```
 
 Values:
@@ -329,10 +329,10 @@ Values:
 - `READY_FOR_VALIDATION`
 - `SUCCEEDED`
 
-## VmManagerType
+## VmManagerTypeType
 
 ```python
-from mypy_boto3_sms.literals import VmManagerType
+from mypy_boto3_sms.literals import VmManagerTypeType
 ```
 
 Values:

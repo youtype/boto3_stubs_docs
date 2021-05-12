@@ -3,7 +3,7 @@
 > [Index](..) > NimbleStudio
 
 Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
@@ -30,69 +30,69 @@ Can be used directly:
 from mypy_boto3_nimble.client import NimbleStudioClient
 ```
 
-NimbleStudioClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_eulas](./client.md#accept-eulas)
-- [can_paginate](./client.md#can-paginate)
-- [create_launch_profile](./client.md#create-launch-profile)
-- [create_streaming_image](./client.md#create-streaming-image)
-- [create_streaming_session](./client.md#create-streaming-session)
-- [create_streaming_session_stream](./client.md#create-streaming-session-stream)
-- [create_studio](./client.md#create-studio)
-- [create_studio_component](./client.md#create-studio-component)
-- [delete_launch_profile](./client.md#delete-launch-profile)
-- [delete_launch_profile_member](./client.md#delete-launch-profile-member)
-- [delete_streaming_image](./client.md#delete-streaming-image)
-- [delete_streaming_session](./client.md#delete-streaming-session)
-- [delete_studio](./client.md#delete-studio)
-- [delete_studio_component](./client.md#delete-studio-component)
-- [delete_studio_member](./client.md#delete-studio-member)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_eula](./client.md#get-eula)
-- [get_launch_profile](./client.md#get-launch-profile)
-- [get_launch_profile_details](./client.md#get-launch-profile-details)
-- [get_launch_profile_initialization](./client.md#get-launch-profile-initialization)
-- [get_launch_profile_member](./client.md#get-launch-profile-member)
-- [get_paginator](./client.md#get-paginator)
-- [get_streaming_image](./client.md#get-streaming-image)
-- [get_streaming_session](./client.md#get-streaming-session)
-- [get_streaming_session_stream](./client.md#get-streaming-session-stream)
-- [get_studio](./client.md#get-studio)
-- [get_studio_component](./client.md#get-studio-component)
-- [get_studio_member](./client.md#get-studio-member)
-- [list_eula_acceptances](./client.md#list-eula-acceptances)
-- [list_eulas](./client.md#list-eulas)
-- [list_launch_profile_members](./client.md#list-launch-profile-members)
-- [list_launch_profiles](./client.md#list-launch-profiles)
-- [list_streaming_images](./client.md#list-streaming-images)
-- [list_streaming_sessions](./client.md#list-streaming-sessions)
-- [list_studio_components](./client.md#list-studio-components)
-- [list_studio_members](./client.md#list-studio-members)
-- [list_studios](./client.md#list-studios)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_launch_profile_members](./client.md#put-launch-profile-members)
-- [put_studio_members](./client.md#put-studio-members)
-- [start_studio_sso_configuration_repair](./client.md#start-studio-sso-configuration-repair)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_launch_profile](./client.md#update-launch-profile)
-- [update_launch_profile_member](./client.md#update-launch-profile-member)
-- [update_streaming_image](./client.md#update-streaming-image)
-- [update_studio](./client.md#update-studio)
-- [update_studio_component](./client.md#update-studio-component)
+- [accept_eulas](./client.md#accept_eulas)
+- [can_paginate](./client.md#can_paginate)
+- [create_launch_profile](./client.md#create_launch_profile)
+- [create_streaming_image](./client.md#create_streaming_image)
+- [create_streaming_session](./client.md#create_streaming_session)
+- [create_streaming_session_stream](./client.md#create_streaming_session_stream)
+- [create_studio](./client.md#create_studio)
+- [create_studio_component](./client.md#create_studio_component)
+- [delete_launch_profile](./client.md#delete_launch_profile)
+- [delete_launch_profile_member](./client.md#delete_launch_profile_member)
+- [delete_streaming_image](./client.md#delete_streaming_image)
+- [delete_streaming_session](./client.md#delete_streaming_session)
+- [delete_studio](./client.md#delete_studio)
+- [delete_studio_component](./client.md#delete_studio_component)
+- [delete_studio_member](./client.md#delete_studio_member)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_eula](./client.md#get_eula)
+- [get_launch_profile](./client.md#get_launch_profile)
+- [get_launch_profile_details](./client.md#get_launch_profile_details)
+- [get_launch_profile_initialization](./client.md#get_launch_profile_initialization)
+- [get_launch_profile_member](./client.md#get_launch_profile_member)
+- [get_paginator](./client.md#get_paginator)
+- [get_streaming_image](./client.md#get_streaming_image)
+- [get_streaming_session](./client.md#get_streaming_session)
+- [get_streaming_session_stream](./client.md#get_streaming_session_stream)
+- [get_studio](./client.md#get_studio)
+- [get_studio_component](./client.md#get_studio_component)
+- [get_studio_member](./client.md#get_studio_member)
+- [list_eula_acceptances](./client.md#list_eula_acceptances)
+- [list_eulas](./client.md#list_eulas)
+- [list_launch_profile_members](./client.md#list_launch_profile_members)
+- [list_launch_profiles](./client.md#list_launch_profiles)
+- [list_streaming_images](./client.md#list_streaming_images)
+- [list_streaming_sessions](./client.md#list_streaming_sessions)
+- [list_studio_components](./client.md#list_studio_components)
+- [list_studio_members](./client.md#list_studio_members)
+- [list_studios](./client.md#list_studios)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_launch_profile_members](./client.md#put_launch_profile_members)
+- [put_studio_members](./client.md#put_studio_members)
+- [start_studio_sso_configuration_repair](./client.md#start_studio_sso_configuration_repair)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_launch_profile](./client.md#update_launch_profile)
+- [update_launch_profile_member](./client.md#update_launch_profile_member)
+- [update_streaming_image](./client.md#update_streaming_image)
+- [update_studio](./client.md#update_studio)
+- [update_studio_component](./client.md#update_studio_component)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+NimbleStudioClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerErrorException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -122,13 +122,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_nimble.literals import LaunchProfilePersona, ...
+from mypy_boto3_nimble.literals import LaunchProfilePersonaType, ...
 ```
 
-- [LaunchProfilePersona](./literals.md#launchprofilepersona)
-- [LaunchProfilePlatform](./literals.md#launchprofileplatform)
-- [LaunchProfileState](./literals.md#launchprofilestate)
-- [LaunchProfileStatusCode](./literals.md#launchprofilestatuscode)
+- [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype)
+- [LaunchProfilePlatformType](./literals.md#launchprofileplatformtype)
+- [LaunchProfileStateType](./literals.md#launchprofilestatetype)
+- [LaunchProfileStatusCodeType](./literals.md#launchprofilestatuscodetype)
 - [ListEulaAcceptancesPaginatorName](./literals.md#listeulaacceptancespaginatorname)
 - [ListEulasPaginatorName](./literals.md#listeulaspaginatorname)
 - [ListLaunchProfileMembersPaginatorName](./literals.md#listlaunchprofilememberspaginatorname)
@@ -138,24 +138,24 @@ from mypy_boto3_nimble.literals import LaunchProfilePersona, ...
 - [ListStudioComponentsPaginatorName](./literals.md#liststudiocomponentspaginatorname)
 - [ListStudioMembersPaginatorName](./literals.md#liststudiomemberspaginatorname)
 - [ListStudiosPaginatorName](./literals.md#liststudiospaginatorname)
-- [StreamingClipboardMode](./literals.md#streamingclipboardmode)
-- [StreamingImageEncryptionConfigurationKeyType](./literals.md#streamingimageencryptionconfigurationkeytype)
-- [StreamingImageState](./literals.md#streamingimagestate)
-- [StreamingImageStatusCode](./literals.md#streamingimagestatuscode)
-- [StreamingInstanceType](./literals.md#streaminginstancetype)
-- [StreamingSessionState](./literals.md#streamingsessionstate)
-- [StreamingSessionStatusCode](./literals.md#streamingsessionstatuscode)
-- [StreamingSessionStreamState](./literals.md#streamingsessionstreamstate)
-- [StreamingSessionStreamStatusCode](./literals.md#streamingsessionstreamstatuscode)
-- [StudioComponentInitializationScriptRunContext](./literals.md#studiocomponentinitializationscriptruncontext)
-- [StudioComponentState](./literals.md#studiocomponentstate)
-- [StudioComponentStatusCode](./literals.md#studiocomponentstatuscode)
-- [StudioComponentSubtype](./literals.md#studiocomponentsubtype)
-- [StudioComponentType](./literals.md#studiocomponenttype)
-- [StudioEncryptionConfigurationKeyType](./literals.md#studioencryptionconfigurationkeytype)
-- [StudioPersona](./literals.md#studiopersona)
-- [StudioState](./literals.md#studiostate)
-- [StudioStatusCode](./literals.md#studiostatuscode)
+- [StreamingClipboardModeType](./literals.md#streamingclipboardmodetype)
+- [StreamingImageEncryptionConfigurationKeyTypeType](./literals.md#streamingimageencryptionconfigurationkeytypetype)
+- [StreamingImageStateType](./literals.md#streamingimagestatetype)
+- [StreamingImageStatusCodeType](./literals.md#streamingimagestatuscodetype)
+- [StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)
+- [StreamingSessionStateType](./literals.md#streamingsessionstatetype)
+- [StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype)
+- [StreamingSessionStreamStateType](./literals.md#streamingsessionstreamstatetype)
+- [StreamingSessionStreamStatusCodeType](./literals.md#streamingsessionstreamstatuscodetype)
+- [StudioComponentInitializationScriptRunContextType](./literals.md#studiocomponentinitializationscriptruncontexttype)
+- [StudioComponentStateType](./literals.md#studiocomponentstatetype)
+- [StudioComponentStatusCodeType](./literals.md#studiocomponentstatuscodetype)
+- [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
+- [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
+- [StudioEncryptionConfigurationKeyTypeType](./literals.md#studioencryptionconfigurationkeytypetype)
+- [StudioPersonaType](./literals.md#studiopersonatype)
+- [StudioStateType](./literals.md#studiostatetype)
+- [StudioStatusCodeType](./literals.md#studiostatuscodetype)
 
 ## Typed dictionaries
 

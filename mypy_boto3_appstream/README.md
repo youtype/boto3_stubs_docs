@@ -3,7 +3,7 @@
 > [Index](..) > AppStream
 
 Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appstream.html#AppStream)
 type annotations stubs module
 [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
@@ -31,78 +31,78 @@ Can be used directly:
 from mypy_boto3_appstream.client import AppStreamClient
 ```
 
-AppStreamClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_fleet](./client.md#associate-fleet)
-- [batch_associate_user_stack](./client.md#batch-associate-user-stack)
-- [batch_disassociate_user_stack](./client.md#batch-disassociate-user-stack)
-- [can_paginate](./client.md#can-paginate)
-- [copy_image](./client.md#copy-image)
-- [create_directory_config](./client.md#create-directory-config)
-- [create_fleet](./client.md#create-fleet)
-- [create_image_builder](./client.md#create-image-builder)
-- [create_image_builder_streaming_url](./client.md#create-image-builder-streaming-url)
-- [create_stack](./client.md#create-stack)
-- [create_streaming_url](./client.md#create-streaming-url)
-- [create_updated_image](./client.md#create-updated-image)
-- [create_usage_report_subscription](./client.md#create-usage-report-subscription)
-- [create_user](./client.md#create-user)
-- [delete_directory_config](./client.md#delete-directory-config)
-- [delete_fleet](./client.md#delete-fleet)
-- [delete_image](./client.md#delete-image)
-- [delete_image_builder](./client.md#delete-image-builder)
-- [delete_image_permissions](./client.md#delete-image-permissions)
-- [delete_stack](./client.md#delete-stack)
-- [delete_usage_report_subscription](./client.md#delete-usage-report-subscription)
-- [delete_user](./client.md#delete-user)
-- [describe_directory_configs](./client.md#describe-directory-configs)
-- [describe_fleets](./client.md#describe-fleets)
-- [describe_image_builders](./client.md#describe-image-builders)
-- [describe_image_permissions](./client.md#describe-image-permissions)
-- [describe_images](./client.md#describe-images)
-- [describe_sessions](./client.md#describe-sessions)
-- [describe_stacks](./client.md#describe-stacks)
-- [describe_usage_report_subscriptions](./client.md#describe-usage-report-subscriptions)
-- [describe_user_stack_associations](./client.md#describe-user-stack-associations)
-- [describe_users](./client.md#describe-users)
-- [disable_user](./client.md#disable-user)
-- [disassociate_fleet](./client.md#disassociate-fleet)
-- [enable_user](./client.md#enable-user)
-- [expire_session](./client.md#expire-session)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_associated_fleets](./client.md#list-associated-fleets)
-- [list_associated_stacks](./client.md#list-associated-stacks)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_fleet](./client.md#start-fleet)
-- [start_image_builder](./client.md#start-image-builder)
-- [stop_fleet](./client.md#stop-fleet)
-- [stop_image_builder](./client.md#stop-image-builder)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_directory_config](./client.md#update-directory-config)
-- [update_fleet](./client.md#update-fleet)
-- [update_image_permissions](./client.md#update-image-permissions)
-- [update_stack](./client.md#update-stack)
+- [associate_fleet](./client.md#associate_fleet)
+- [batch_associate_user_stack](./client.md#batch_associate_user_stack)
+- [batch_disassociate_user_stack](./client.md#batch_disassociate_user_stack)
+- [can_paginate](./client.md#can_paginate)
+- [copy_image](./client.md#copy_image)
+- [create_directory_config](./client.md#create_directory_config)
+- [create_fleet](./client.md#create_fleet)
+- [create_image_builder](./client.md#create_image_builder)
+- [create_image_builder_streaming_url](./client.md#create_image_builder_streaming_url)
+- [create_stack](./client.md#create_stack)
+- [create_streaming_url](./client.md#create_streaming_url)
+- [create_updated_image](./client.md#create_updated_image)
+- [create_usage_report_subscription](./client.md#create_usage_report_subscription)
+- [create_user](./client.md#create_user)
+- [delete_directory_config](./client.md#delete_directory_config)
+- [delete_fleet](./client.md#delete_fleet)
+- [delete_image](./client.md#delete_image)
+- [delete_image_builder](./client.md#delete_image_builder)
+- [delete_image_permissions](./client.md#delete_image_permissions)
+- [delete_stack](./client.md#delete_stack)
+- [delete_usage_report_subscription](./client.md#delete_usage_report_subscription)
+- [delete_user](./client.md#delete_user)
+- [describe_directory_configs](./client.md#describe_directory_configs)
+- [describe_fleets](./client.md#describe_fleets)
+- [describe_image_builders](./client.md#describe_image_builders)
+- [describe_image_permissions](./client.md#describe_image_permissions)
+- [describe_images](./client.md#describe_images)
+- [describe_sessions](./client.md#describe_sessions)
+- [describe_stacks](./client.md#describe_stacks)
+- [describe_usage_report_subscriptions](./client.md#describe_usage_report_subscriptions)
+- [describe_user_stack_associations](./client.md#describe_user_stack_associations)
+- [describe_users](./client.md#describe_users)
+- [disable_user](./client.md#disable_user)
+- [disassociate_fleet](./client.md#disassociate_fleet)
+- [enable_user](./client.md#enable_user)
+- [expire_session](./client.md#expire_session)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_associated_fleets](./client.md#list_associated_fleets)
+- [list_associated_stacks](./client.md#list_associated_stacks)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_fleet](./client.md#start_fleet)
+- [start_image_builder](./client.md#start_image_builder)
+- [stop_fleet](./client.md#stop_fleet)
+- [stop_image_builder](./client.md#stop_image_builder)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_directory_config](./client.md#update_directory_config)
+- [update_fleet](./client.md#update_fleet)
+- [update_image_permissions](./client.md#update_image_permissions)
+- [update_stack](./client.md#update_stack)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [IncompatibleImageException](./client.md#incompatibleimageexception)
-- [InvalidAccountStatusException](./client.md#invalidaccountstatusexception)
-- [InvalidParameterCombinationException](./client.md#invalidparametercombinationexception)
-- [InvalidRoleException](./client.md#invalidroleexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [RequestLimitExceededException](./client.md#requestlimitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotAvailableException](./client.md#resourcenotavailableexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+AppStreamClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConcurrentModificationException
+- IncompatibleImageException
+- InvalidAccountStatusException
+- InvalidParameterCombinationException
+- InvalidRoleException
+- LimitExceededException
+- OperationNotPermittedException
+- RequestLimitExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotAvailableException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -147,12 +147,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.literals import AccessEndpointType, ...
+from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
 ```
 
-- [AccessEndpointType](./literals.md#accessendpointtype)
-- [Action](./literals.md#action)
-- [AuthenticationType](./literals.md#authenticationtype)
+- [AccessEndpointTypeType](./literals.md#accessendpointtypetype)
+- [ActionType](./literals.md#actiontype)
+- [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - [DescribeDirectoryConfigsPaginatorName](./literals.md#describedirectoryconfigspaginatorname)
 - [DescribeFleetsPaginatorName](./literals.md#describefleetspaginatorname)
 - [DescribeImageBuildersPaginatorName](./literals.md#describeimagebuilderspaginatorname)
@@ -161,31 +161,31 @@ from mypy_boto3_appstream.literals import AccessEndpointType, ...
 - [DescribeStacksPaginatorName](./literals.md#describestackspaginatorname)
 - [DescribeUserStackAssociationsPaginatorName](./literals.md#describeuserstackassociationspaginatorname)
 - [DescribeUsersPaginatorName](./literals.md#describeuserspaginatorname)
-- [FleetAttribute](./literals.md#fleetattribute)
-- [FleetErrorCode](./literals.md#fleeterrorcode)
+- [FleetAttributeType](./literals.md#fleetattributetype)
+- [FleetErrorCodeType](./literals.md#fleeterrorcodetype)
 - [FleetStartedWaiterName](./literals.md#fleetstartedwaitername)
-- [FleetState](./literals.md#fleetstate)
+- [FleetStateType](./literals.md#fleetstatetype)
 - [FleetStoppedWaiterName](./literals.md#fleetstoppedwaitername)
-- [FleetType](./literals.md#fleettype)
-- [ImageBuilderState](./literals.md#imagebuilderstate)
-- [ImageBuilderStateChangeReasonCode](./literals.md#imagebuilderstatechangereasoncode)
-- [ImageState](./literals.md#imagestate)
-- [ImageStateChangeReasonCode](./literals.md#imagestatechangereasoncode)
+- [FleetTypeType](./literals.md#fleettypetype)
+- [ImageBuilderStateChangeReasonCodeType](./literals.md#imagebuilderstatechangereasoncodetype)
+- [ImageBuilderStateType](./literals.md#imagebuilderstatetype)
+- [ImageStateChangeReasonCodeType](./literals.md#imagestatechangereasoncodetype)
+- [ImageStateType](./literals.md#imagestatetype)
 - [ListAssociatedFleetsPaginatorName](./literals.md#listassociatedfleetspaginatorname)
 - [ListAssociatedStacksPaginatorName](./literals.md#listassociatedstackspaginatorname)
-- [MessageAction](./literals.md#messageaction)
-- [Permission](./literals.md#permission)
-- [PlatformType](./literals.md#platformtype)
-- [SessionConnectionState](./literals.md#sessionconnectionstate)
-- [SessionState](./literals.md#sessionstate)
-- [StackAttribute](./literals.md#stackattribute)
-- [StackErrorCode](./literals.md#stackerrorcode)
-- [StorageConnectorType](./literals.md#storageconnectortype)
-- [StreamView](./literals.md#streamview)
-- [UsageReportExecutionErrorCode](./literals.md#usagereportexecutionerrorcode)
-- [UsageReportSchedule](./literals.md#usagereportschedule)
-- [UserStackAssociationErrorCode](./literals.md#userstackassociationerrorcode)
-- [VisibilityType](./literals.md#visibilitytype)
+- [MessageActionType](./literals.md#messageactiontype)
+- [PermissionType](./literals.md#permissiontype)
+- [PlatformTypeType](./literals.md#platformtypetype)
+- [SessionConnectionStateType](./literals.md#sessionconnectionstatetype)
+- [SessionStateType](./literals.md#sessionstatetype)
+- [StackAttributeType](./literals.md#stackattributetype)
+- [StackErrorCodeType](./literals.md#stackerrorcodetype)
+- [StorageConnectorTypeType](./literals.md#storageconnectortypetype)
+- [StreamViewType](./literals.md#streamviewtype)
+- [UsageReportExecutionErrorCodeType](./literals.md#usagereportexecutionerrorcodetype)
+- [UsageReportScheduleType](./literals.md#usagereportscheduletype)
+- [UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype)
+- [VisibilityTypeType](./literals.md#visibilitytypetype)
 
 ## Typed dictionaries
 

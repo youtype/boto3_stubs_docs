@@ -3,7 +3,7 @@
 > [Index](..) > [MWAA](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA)
 type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
@@ -105,9 +105,10 @@ Optional fields:
 - `RequirementsS3Path`: `str`
 - `ServiceRoleArn`: `str`
 - `SourceBucketArn`: `str`
-- `Status`: [EnvironmentStatus](./literals.md#environmentstatus)
+- `Status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
-- `WebserverAccessMode`: [WebserverAccessMode](./literals.md#webserveraccessmode)
+- `WebserverAccessMode`:
+  [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 - `WebserverUrl`: `str`
 - `WeeklyMaintenanceWindowStart`: `str`
 
@@ -133,7 +134,7 @@ Optional fields:
 
 - `CreatedAt`: `datetime`
 - `Error`: [UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)
-- `Status`: [UpdateStatus](./literals.md#updatestatus)
+- `Status`: [UpdateStatusType](./literals.md#updatestatustype)
 
 ## ListEnvironmentsOutputTypeDef
 
@@ -213,7 +214,7 @@ Optional fields:
 
 - `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `StatisticValues`: [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
-- `Unit`: [Unit](./literals.md#unit)
+- `Unit`: [UnitType](./literals.md#unittype)
 - `Value`: `float`
 
 ## ModuleLoggingConfigurationInputTypeDef
@@ -225,7 +226,7 @@ from mypy_boto3_mwaa.type_defs import ModuleLoggingConfigurationInputTypeDef
 Required fields:
 
 - `Enabled`: `bool`
-- `LogLevel`: [LoggingLevel](./literals.md#logginglevel)
+- `LogLevel`: [LoggingLevelType](./literals.md#loggingleveltype)
 
 ## ModuleLoggingConfigurationTypeDef
 
@@ -237,7 +238,7 @@ Optional fields:
 
 - `CloudWatchLogGroupArn`: `str`
 - `Enabled`: `bool`
-- `LogLevel`: [LoggingLevel](./literals.md#logginglevel)
+- `LogLevel`: [LoggingLevelType](./literals.md#loggingleveltype)
 
 ## NetworkConfigurationTypeDef
 

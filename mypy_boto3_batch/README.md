@@ -3,7 +3,7 @@
 > [Index](..) > Batch
 
 Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/batch.html#Batch)
 type annotations stubs module
 [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
@@ -29,38 +29,38 @@ Can be used directly:
 from mypy_boto3_batch.client import BatchClient
 ```
 
-BatchClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_job](./client.md#cancel-job)
-- [create_compute_environment](./client.md#create-compute-environment)
-- [create_job_queue](./client.md#create-job-queue)
-- [delete_compute_environment](./client.md#delete-compute-environment)
-- [delete_job_queue](./client.md#delete-job-queue)
-- [deregister_job_definition](./client.md#deregister-job-definition)
-- [describe_compute_environments](./client.md#describe-compute-environments)
-- [describe_job_definitions](./client.md#describe-job-definitions)
-- [describe_job_queues](./client.md#describe-job-queues)
-- [describe_jobs](./client.md#describe-jobs)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_jobs](./client.md#list-jobs)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [register_job_definition](./client.md#register-job-definition)
-- [submit_job](./client.md#submit-job)
-- [tag_resource](./client.md#tag-resource)
-- [terminate_job](./client.md#terminate-job)
-- [untag_resource](./client.md#untag-resource)
-- [update_compute_environment](./client.md#update-compute-environment)
-- [update_job_queue](./client.md#update-job-queue)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_job](./client.md#cancel_job)
+- [create_compute_environment](./client.md#create_compute_environment)
+- [create_job_queue](./client.md#create_job_queue)
+- [delete_compute_environment](./client.md#delete_compute_environment)
+- [delete_job_queue](./client.md#delete_job_queue)
+- [deregister_job_definition](./client.md#deregister_job_definition)
+- [describe_compute_environments](./client.md#describe_compute_environments)
+- [describe_job_definitions](./client.md#describe_job_definitions)
+- [describe_job_queues](./client.md#describe_job_queues)
+- [describe_jobs](./client.md#describe_jobs)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_jobs](./client.md#list_jobs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [register_job_definition](./client.md#register_job_definition)
+- [submit_job](./client.md#submit_job)
+- [tag_resource](./client.md#tag_resource)
+- [terminate_job](./client.md#terminate_job)
+- [untag_resource](./client.md#untag_resource)
+- [update_compute_environment](./client.md#update_compute_environment)
+- [update_job_queue](./client.md#update_job_queue)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ClientException](./client.md#clientexception)
-- [ServerException](./client.md#serverexception)
+BatchClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ClientException
+- ServerException
 
 ## Paginators
 
@@ -85,31 +85,31 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_batch.literals import ArrayJobDependency, ...
+from mypy_boto3_batch.literals import ArrayJobDependencyType, ...
 ```
 
-- [ArrayJobDependency](./literals.md#arrayjobdependency)
-- [AssignPublicIp](./literals.md#assignpublicip)
-- [CEState](./literals.md#cestate)
-- [CEStatus](./literals.md#cestatus)
-- [CEType](./literals.md#cetype)
-- [CRAllocationStrategy](./literals.md#crallocationstrategy)
-- [CRType](./literals.md#crtype)
+- [ArrayJobDependencyType](./literals.md#arrayjobdependencytype)
+- [AssignPublicIpType](./literals.md#assignpubliciptype)
+- [CEStateType](./literals.md#cestatetype)
+- [CEStatusType](./literals.md#cestatustype)
+- [CETypeType](./literals.md#cetypetype)
+- [CRAllocationStrategyType](./literals.md#crallocationstrategytype)
+- [CRTypeType](./literals.md#crtypetype)
 - [DescribeComputeEnvironmentsPaginatorName](./literals.md#describecomputeenvironmentspaginatorname)
 - [DescribeJobDefinitionsPaginatorName](./literals.md#describejobdefinitionspaginatorname)
 - [DescribeJobQueuesPaginatorName](./literals.md#describejobqueuespaginatorname)
-- [DeviceCgroupPermission](./literals.md#devicecgrouppermission)
-- [EFSAuthorizationConfigIAM](./literals.md#efsauthorizationconfigiam)
-- [EFSTransitEncryption](./literals.md#efstransitencryption)
-- [JQState](./literals.md#jqstate)
-- [JQStatus](./literals.md#jqstatus)
-- [JobDefinitionType](./literals.md#jobdefinitiontype)
-- [JobStatus](./literals.md#jobstatus)
+- [DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)
+- [EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype)
+- [EFSTransitEncryptionType](./literals.md#efstransitencryptiontype)
+- [JQStateType](./literals.md#jqstatetype)
+- [JQStatusType](./literals.md#jqstatustype)
+- [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
+- [JobStatusType](./literals.md#jobstatustype)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
-- [LogDriver](./literals.md#logdriver)
-- [PlatformCapability](./literals.md#platformcapability)
-- [ResourceType](./literals.md#resourcetype)
-- [RetryAction](./literals.md#retryaction)
+- [LogDriverType](./literals.md#logdrivertype)
+- [PlatformCapabilityType](./literals.md#platformcapabilitytype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [RetryActionType](./literals.md#retryactiontype)
 
 ## Typed dictionaries
 

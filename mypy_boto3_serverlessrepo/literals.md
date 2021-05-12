@@ -3,21 +3,21 @@
 > [Index](..) > [ServerlessApplicationRepository](.) > Literals
 
 Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
 [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 - [Literals for boto3 ServerlessApplicationRepository module](#literals-for-boto3-serverlessapplicationrepository-module)
-  - [Capability](#capability)
+  - [CapabilityType](#capabilitytype)
   - [ListApplicationDependenciesPaginatorName](#listapplicationdependenciespaginatorname)
   - [ListApplicationVersionsPaginatorName](#listapplicationversionspaginatorname)
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
-  - [Status](#status)
+  - [StatusType](#statustype)
 
-## Capability
+## CapabilityType
 
 ```python
-from mypy_boto3_serverlessrepo.literals import Capability
+from mypy_boto3_serverlessrepo.literals import CapabilityType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 
 - `list_applications`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_serverlessrepo.literals import Status
+from mypy_boto3_serverlessrepo.literals import StatusType
 ```
 
 Values:

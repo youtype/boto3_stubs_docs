@@ -3,14 +3,14 @@
 > [Index](..) > [AppStream](.) > Literals
 
 Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appstream.html#AppStream)
 type annotations stubs module
 [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 - [Literals for boto3 AppStream module](#literals-for-boto3-appstream-module)
-  - [AccessEndpointType](#accessendpointtype)
-  - [Action](#action)
-  - [AuthenticationType](#authenticationtype)
+  - [AccessEndpointTypeType](#accessendpointtypetype)
+  - [ActionType](#actiontype)
+  - [AuthenticationTypeType](#authenticationtypetype)
   - [DescribeDirectoryConfigsPaginatorName](#describedirectoryconfigspaginatorname)
   - [DescribeFleetsPaginatorName](#describefleetspaginatorname)
   - [DescribeImageBuildersPaginatorName](#describeimagebuilderspaginatorname)
@@ -19,46 +19,46 @@ type annotations stubs module
   - [DescribeStacksPaginatorName](#describestackspaginatorname)
   - [DescribeUserStackAssociationsPaginatorName](#describeuserstackassociationspaginatorname)
   - [DescribeUsersPaginatorName](#describeuserspaginatorname)
-  - [FleetAttribute](#fleetattribute)
-  - [FleetErrorCode](#fleeterrorcode)
+  - [FleetAttributeType](#fleetattributetype)
+  - [FleetErrorCodeType](#fleeterrorcodetype)
   - [FleetStartedWaiterName](#fleetstartedwaitername)
-  - [FleetState](#fleetstate)
+  - [FleetStateType](#fleetstatetype)
   - [FleetStoppedWaiterName](#fleetstoppedwaitername)
-  - [FleetType](#fleettype)
-  - [ImageBuilderState](#imagebuilderstate)
-  - [ImageBuilderStateChangeReasonCode](#imagebuilderstatechangereasoncode)
-  - [ImageState](#imagestate)
-  - [ImageStateChangeReasonCode](#imagestatechangereasoncode)
+  - [FleetTypeType](#fleettypetype)
+  - [ImageBuilderStateChangeReasonCodeType](#imagebuilderstatechangereasoncodetype)
+  - [ImageBuilderStateType](#imagebuilderstatetype)
+  - [ImageStateChangeReasonCodeType](#imagestatechangereasoncodetype)
+  - [ImageStateType](#imagestatetype)
   - [ListAssociatedFleetsPaginatorName](#listassociatedfleetspaginatorname)
   - [ListAssociatedStacksPaginatorName](#listassociatedstackspaginatorname)
-  - [MessageAction](#messageaction)
-  - [Permission](#permission)
-  - [PlatformType](#platformtype)
-  - [SessionConnectionState](#sessionconnectionstate)
-  - [SessionState](#sessionstate)
-  - [StackAttribute](#stackattribute)
-  - [StackErrorCode](#stackerrorcode)
-  - [StorageConnectorType](#storageconnectortype)
-  - [StreamView](#streamview)
-  - [UsageReportExecutionErrorCode](#usagereportexecutionerrorcode)
-  - [UsageReportSchedule](#usagereportschedule)
-  - [UserStackAssociationErrorCode](#userstackassociationerrorcode)
-  - [VisibilityType](#visibilitytype)
+  - [MessageActionType](#messageactiontype)
+  - [PermissionType](#permissiontype)
+  - [PlatformTypeType](#platformtypetype)
+  - [SessionConnectionStateType](#sessionconnectionstatetype)
+  - [SessionStateType](#sessionstatetype)
+  - [StackAttributeType](#stackattributetype)
+  - [StackErrorCodeType](#stackerrorcodetype)
+  - [StorageConnectorTypeType](#storageconnectortypetype)
+  - [StreamViewType](#streamviewtype)
+  - [UsageReportExecutionErrorCodeType](#usagereportexecutionerrorcodetype)
+  - [UsageReportScheduleType](#usagereportscheduletype)
+  - [UserStackAssociationErrorCodeType](#userstackassociationerrorcodetype)
+  - [VisibilityTypeType](#visibilitytypetype)
 
-## AccessEndpointType
+## AccessEndpointTypeType
 
 ```python
-from mypy_boto3_appstream.literals import AccessEndpointType
+from mypy_boto3_appstream.literals import AccessEndpointTypeType
 ```
 
 Values:
 
 - `STREAMING`
 
-## Action
+## ActionType
 
 ```python
-from mypy_boto3_appstream.literals import Action
+from mypy_boto3_appstream.literals import ActionType
 ```
 
 Values:
@@ -71,10 +71,10 @@ Values:
 - `FILE_UPLOAD`
 - `PRINTING_TO_LOCAL_DEVICE`
 
-## AuthenticationType
+## AuthenticationTypeType
 
 ```python
-from mypy_boto3_appstream.literals import AuthenticationType
+from mypy_boto3_appstream.literals import AuthenticationTypeType
 ```
 
 Values:
@@ -163,10 +163,10 @@ Values:
 
 - `describe_users`
 
-## FleetAttribute
+## FleetAttributeType
 
 ```python
-from mypy_boto3_appstream.literals import FleetAttribute
+from mypy_boto3_appstream.literals import FleetAttributeType
 ```
 
 Values:
@@ -176,10 +176,10 @@ Values:
 - `VPC_CONFIGURATION`
 - `VPC_CONFIGURATION_SECURITY_GROUP_IDS`
 
-## FleetErrorCode
+## FleetErrorCodeType
 
 ```python
-from mypy_boto3_appstream.literals import FleetErrorCode
+from mypy_boto3_appstream.literals import FleetErrorCodeType
 ```
 
 Values:
@@ -225,10 +225,10 @@ Values:
 
 - `fleet_started`
 
-## FleetState
+## FleetStateType
 
 ```python
-from mypy_boto3_appstream.literals import FleetState
+from mypy_boto3_appstream.literals import FleetStateType
 ```
 
 Values:
@@ -248,10 +248,10 @@ Values:
 
 - `fleet_stopped`
 
-## FleetType
+## FleetTypeType
 
 ```python
-from mypy_boto3_appstream.literals import FleetType
+from mypy_boto3_appstream.literals import FleetTypeType
 ```
 
 Values:
@@ -259,10 +259,21 @@ Values:
 - `ALWAYS_ON`
 - `ON_DEMAND`
 
-## ImageBuilderState
+## ImageBuilderStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_appstream.literals import ImageBuilderState
+from mypy_boto3_appstream.literals import ImageBuilderStateChangeReasonCodeType
+```
+
+Values:
+
+- `IMAGE_UNAVAILABLE`
+- `INTERNAL_ERROR`
+
+## ImageBuilderStateType
+
+```python
+from mypy_boto3_appstream.literals import ImageBuilderStateType
 ```
 
 Values:
@@ -279,21 +290,22 @@ Values:
 - `UPDATING`
 - `UPDATING_AGENT`
 
-## ImageBuilderStateChangeReasonCode
+## ImageStateChangeReasonCodeType
 
 ```python
-from mypy_boto3_appstream.literals import ImageBuilderStateChangeReasonCode
+from mypy_boto3_appstream.literals import ImageStateChangeReasonCodeType
 ```
 
 Values:
 
-- `IMAGE_UNAVAILABLE`
+- `IMAGE_BUILDER_NOT_AVAILABLE`
+- `IMAGE_COPY_FAILURE`
 - `INTERNAL_ERROR`
 
-## ImageState
+## ImageStateType
 
 ```python
-from mypy_boto3_appstream.literals import ImageState
+from mypy_boto3_appstream.literals import ImageStateType
 ```
 
 Values:
@@ -305,18 +317,6 @@ Values:
 - `FAILED`
 - `IMPORTING`
 - `PENDING`
-
-## ImageStateChangeReasonCode
-
-```python
-from mypy_boto3_appstream.literals import ImageStateChangeReasonCode
-```
-
-Values:
-
-- `IMAGE_BUILDER_NOT_AVAILABLE`
-- `IMAGE_COPY_FAILURE`
-- `INTERNAL_ERROR`
 
 ## ListAssociatedFleetsPaginatorName
 
@@ -338,10 +338,10 @@ Values:
 
 - `list_associated_stacks`
 
-## MessageAction
+## MessageActionType
 
 ```python
-from mypy_boto3_appstream.literals import MessageAction
+from mypy_boto3_appstream.literals import MessageActionType
 ```
 
 Values:
@@ -349,10 +349,10 @@ Values:
 - `RESEND`
 - `SUPPRESS`
 
-## Permission
+## PermissionType
 
 ```python
-from mypy_boto3_appstream.literals import Permission
+from mypy_boto3_appstream.literals import PermissionType
 ```
 
 Values:
@@ -360,10 +360,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## PlatformType
+## PlatformTypeType
 
 ```python
-from mypy_boto3_appstream.literals import PlatformType
+from mypy_boto3_appstream.literals import PlatformTypeType
 ```
 
 Values:
@@ -372,10 +372,10 @@ Values:
 - `WINDOWS_SERVER_2016`
 - `WINDOWS_SERVER_2019`
 
-## SessionConnectionState
+## SessionConnectionStateType
 
 ```python
-from mypy_boto3_appstream.literals import SessionConnectionState
+from mypy_boto3_appstream.literals import SessionConnectionStateType
 ```
 
 Values:
@@ -383,10 +383,10 @@ Values:
 - `CONNECTED`
 - `NOT_CONNECTED`
 
-## SessionState
+## SessionStateType
 
 ```python
-from mypy_boto3_appstream.literals import SessionState
+from mypy_boto3_appstream.literals import SessionStateType
 ```
 
 Values:
@@ -395,10 +395,10 @@ Values:
 - `EXPIRED`
 - `PENDING`
 
-## StackAttribute
+## StackAttributeType
 
 ```python
-from mypy_boto3_appstream.literals import StackAttribute
+from mypy_boto3_appstream.literals import StackAttributeType
 ```
 
 Values:
@@ -415,10 +415,10 @@ Values:
 - `THEME_NAME`
 - `USER_SETTINGS`
 
-## StackErrorCode
+## StackErrorCodeType
 
 ```python
-from mypy_boto3_appstream.literals import StackErrorCode
+from mypy_boto3_appstream.literals import StackErrorCodeType
 ```
 
 Values:
@@ -426,10 +426,10 @@ Values:
 - `INTERNAL_SERVICE_ERROR`
 - `STORAGE_CONNECTOR_ERROR`
 
-## StorageConnectorType
+## StorageConnectorTypeType
 
 ```python
-from mypy_boto3_appstream.literals import StorageConnectorType
+from mypy_boto3_appstream.literals import StorageConnectorTypeType
 ```
 
 Values:
@@ -438,10 +438,10 @@ Values:
 - `HOMEFOLDERS`
 - `ONE_DRIVE`
 
-## StreamView
+## StreamViewType
 
 ```python
-from mypy_boto3_appstream.literals import StreamView
+from mypy_boto3_appstream.literals import StreamViewType
 ```
 
 Values:
@@ -449,10 +449,10 @@ Values:
 - `APP`
 - `DESKTOP`
 
-## UsageReportExecutionErrorCode
+## UsageReportExecutionErrorCodeType
 
 ```python
-from mypy_boto3_appstream.literals import UsageReportExecutionErrorCode
+from mypy_boto3_appstream.literals import UsageReportExecutionErrorCodeType
 ```
 
 Values:
@@ -461,20 +461,20 @@ Values:
 - `INTERNAL_SERVICE_ERROR`
 - `RESOURCE_NOT_FOUND`
 
-## UsageReportSchedule
+## UsageReportScheduleType
 
 ```python
-from mypy_boto3_appstream.literals import UsageReportSchedule
+from mypy_boto3_appstream.literals import UsageReportScheduleType
 ```
 
 Values:
 
 - `DAILY`
 
-## UserStackAssociationErrorCode
+## UserStackAssociationErrorCodeType
 
 ```python
-from mypy_boto3_appstream.literals import UserStackAssociationErrorCode
+from mypy_boto3_appstream.literals import UserStackAssociationErrorCodeType
 ```
 
 Values:
@@ -484,10 +484,10 @@ Values:
 - `STACK_NOT_FOUND`
 - `USER_NAME_NOT_FOUND`
 
-## VisibilityType
+## VisibilityTypeType
 
 ```python
-from mypy_boto3_appstream.literals import VisibilityType
+from mypy_boto3_appstream.literals import VisibilityTypeType
 ```
 
 Values:

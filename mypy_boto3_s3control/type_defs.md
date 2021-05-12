@@ -3,7 +3,7 @@
 > [Index](..) > [S3Control](.) > Typed dictionaries
 
 Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control)
 type annotations stubs module
 [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
@@ -119,7 +119,7 @@ from mypy_boto3_s3control.type_defs import AccessPointTypeDef
 Required fields:
 
 - `Name`: `str`
-- `NetworkOrigin`: [NetworkOrigin](./literals.md#networkorigin)
+- `NetworkOrigin`: [NetworkOriginType](./literals.md#networkorigintype)
 - `Bucket`: `str`
 
 Optional fields:
@@ -208,7 +208,7 @@ from mypy_boto3_s3control.type_defs import CreateBucketConfigurationTypeDef
 Optional fields:
 
 - `LocationConstraint`:
-  [BucketLocationConstraint](./literals.md#bucketlocationconstraint)
+  [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 
 ## CreateBucketResultTypeDef
 
@@ -326,7 +326,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Bucket`: `str`
-- `NetworkOrigin`: [NetworkOrigin](./literals.md#networkorigin)
+- `NetworkOrigin`: [NetworkOriginType](./literals.md#networkorigintype)
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `PublicAccessBlockConfiguration`:
@@ -341,7 +341,8 @@ from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationResult
 
 Optional fields:
 
-- `Rules`: `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+- `Rules`:
+  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 
 ## GetBucketPolicyResultTypeDef
 
@@ -417,7 +418,8 @@ from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingRes
 
 Optional fields:
 
-- `Tags`: `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
 ## IncludeTypeDef
 
@@ -442,7 +444,7 @@ Optional fields:
 - `ConfirmationRequired`: `bool`
 - `Description`: `str`
 - `JobArn`: `str`
-- `Status`: [JobStatus](./literals.md#jobstatus)
+- `Status`: [JobStatusType](./literals.md#jobstatustype)
 - `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
 - `Operation`: [JobOperationTypeDef](./type_defs.md#joboperationtypedef)
 - `Priority`: `int`
@@ -479,9 +481,9 @@ Optional fields:
 
 - `JobId`: `str`
 - `Description`: `str`
-- `Operation`: [OperationName](./literals.md#operationname)
+- `Operation`: [OperationNameType](./literals.md#operationnametype)
 - `Priority`: `int`
-- `Status`: [JobStatus](./literals.md#jobstatus)
+- `Status`: [JobStatusType](./literals.md#jobstatustype)
 - `CreationTime`: `datetime`
 - `TerminationDate`: `datetime`
 - `ProgressSummary`:
@@ -510,11 +512,12 @@ from mypy_boto3_s3control.type_defs import JobManifestSpecTypeDef
 
 Required fields:
 
-- `Format`: [JobManifestFormat](./literals.md#jobmanifestformat)
+- `Format`: [JobManifestFormatType](./literals.md#jobmanifestformattype)
 
 Optional fields:
 
-- `Fields`: `List`\[[JobManifestFieldName](./literals.md#jobmanifestfieldname)\]
+- `Fields`:
+  `List`\[[JobManifestFieldNameType](./literals.md#jobmanifestfieldnametype)\]
 
 ## JobManifestTypeDef
 
@@ -578,9 +581,9 @@ Optional fields:
 
 - `Bucket`: `str`
 - `Format`: `Literal['Report_CSV_20180820']` (see
-  [JobReportFormat](./literals.md#jobreportformat))
+  [JobReportFormatType](./literals.md#jobreportformattype))
 - `Prefix`: `str`
-- `ReportScope`: [JobReportScope](./literals.md#jobreportscope)
+- `ReportScope`: [JobReportScopeType](./literals.md#jobreportscopetype)
 
 ## LambdaInvokeOperationTypeDef
 
@@ -600,7 +603,8 @@ from mypy_boto3_s3control.type_defs import LifecycleConfigurationTypeDef
 
 Optional fields:
 
-- `Rules`: `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+- `Rules`:
+  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 
 ## LifecycleExpirationTypeDef
 
@@ -646,7 +650,7 @@ from mypy_boto3_s3control.type_defs import LifecycleRuleTypeDef
 
 Required fields:
 
-- `Status`: [ExpirationStatus](./literals.md#expirationstatus)
+- `Status`: [ExpirationStatusType](./literals.md#expirationstatustype)
 
 Optional fields:
 
@@ -655,7 +659,8 @@ Optional fields:
 - `ID`: `str`
 - `Filter`:
   [LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef)
-- `Transitions`: `List`\[[TransitionTypeDef](./type_defs.md#transitiontypedef)\]
+- `Transitions`:
+  `List`\[[TransitionTypeDef](./type_defs.md#transitiontypedef)\]
 - `NoncurrentVersionTransitions`:
   `List`\[[NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef)\]
 - `NoncurrentVersionExpiration`:
@@ -758,7 +763,8 @@ from mypy_boto3_s3control.type_defs import NoncurrentVersionTransitionTypeDef
 Optional fields:
 
 - `NoncurrentDays`: `int`
-- `StorageClass`: [TransitionStorageClass](./literals.md#transitionstorageclass)
+- `StorageClass`:
+  [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
 ## ObjectLambdaAccessPointTypeDef
 
@@ -790,7 +796,7 @@ Optional fields:
 
 - `CloudWatchMetricsEnabled`: `bool`
 - `AllowedFeatures`:
-  `List`\[[ObjectLambdaAllowedFeature](./literals.md#objectlambdaallowedfeature)\]
+  `List`\[[ObjectLambdaAllowedFeatureType](./literals.md#objectlambdaallowedfeaturetype)\]
 
 ## ObjectLambdaContentTransformationTypeDef
 
@@ -812,7 +818,7 @@ from mypy_boto3_s3control.type_defs import ObjectLambdaTransformationConfigurati
 Required fields:
 
 - `Actions`: `List`\[`Literal['GetObject']` (see
-  [ObjectLambdaTransformationConfigurationAction](./literals.md#objectlambdatransformationconfigurationaction))\]
+  [ObjectLambdaTransformationConfigurationActionType](./literals.md#objectlambdatransformationconfigurationactiontype))\]
 - `ContentTransformation`:
   [ObjectLambdaContentTransformationTypeDef](./type_defs.md#objectlambdacontenttransformationtypedef)
 
@@ -930,7 +936,7 @@ Optional fields:
 - `AccessControlList`:
   [S3AccessControlListTypeDef](./type_defs.md#s3accesscontrollisttypedef)
 - `CannedAccessControlList`:
-  [S3CannedAccessControlList](./literals.md#s3cannedaccesscontrollist)
+  [S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype)
 
 ## S3BucketDestinationTypeDef
 
@@ -940,9 +946,9 @@ from mypy_boto3_s3control.type_defs import S3BucketDestinationTypeDef
 
 Required fields:
 
-- `Format`: [Format](./literals.md#format)
+- `Format`: [FormatType](./literals.md#formattype)
 - `OutputSchemaVersion`: `Literal['V_1']` (see
-  [OutputSchemaVersion](./literals.md#outputschemaversion))
+  [OutputSchemaVersionType](./literals.md#outputschemaversiontype))
 - `AccountId`: `str`
 - `Arn`: `str`
 
@@ -962,23 +968,24 @@ Optional fields:
 
 - `TargetResource`: `str`
 - `CannedAccessControlList`:
-  [S3CannedAccessControlList](./literals.md#s3cannedaccesscontrollist)
+  [S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype)
 - `AccessControlGrants`:
   `List`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
-- `MetadataDirective`: [S3MetadataDirective](./literals.md#s3metadatadirective)
+- `MetadataDirective`:
+  [S3MetadataDirectiveType](./literals.md#s3metadatadirectivetype)
 - `ModifiedSinceConstraint`: `datetime`
 - `NewObjectMetadata`:
   [S3ObjectMetadataTypeDef](./type_defs.md#s3objectmetadatatypedef)
 - `NewObjectTagging`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 - `RedirectLocation`: `str`
 - `RequesterPays`: `bool`
-- `StorageClass`: [S3StorageClass](./literals.md#s3storageclass)
+- `StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
 - `UnModifiedSinceConstraint`: `datetime`
 - `SSEAwsKmsKeyId`: `str`
 - `TargetKeyPrefix`: `str`
 - `ObjectLockLegalHoldStatus`:
-  [S3ObjectLockLegalHoldStatus](./literals.md#s3objectlocklegalholdstatus)
-- `ObjectLockMode`: [S3ObjectLockMode](./literals.md#s3objectlockmode)
+  [S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype)
+- `ObjectLockMode`: [S3ObjectLockModeType](./literals.md#s3objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
 
 ## S3GrantTypeDef
@@ -990,7 +997,7 @@ from mypy_boto3_s3control.type_defs import S3GrantTypeDef
 Optional fields:
 
 - `Grantee`: [S3GranteeTypeDef](./type_defs.md#s3granteetypedef)
-- `Permission`: [S3Permission](./literals.md#s3permission)
+- `Permission`: [S3PermissionType](./literals.md#s3permissiontype)
 
 ## S3GranteeTypeDef
 
@@ -1001,7 +1008,7 @@ from mypy_boto3_s3control.type_defs import S3GranteeTypeDef
 Optional fields:
 
 - `TypeIdentifier`:
-  [S3GranteeTypeIdentifier](./literals.md#s3granteetypeidentifier)
+  [S3GranteeTypeIdentifierType](./literals.md#s3granteetypeidentifiertype)
 - `Identifier`: `str`
 - `DisplayName`: `str`
 
@@ -1014,7 +1021,7 @@ from mypy_boto3_s3control.type_defs import S3InitiateRestoreObjectOperationTypeD
 Optional fields:
 
 - `ExpirationInDays`: `int`
-- `GlacierJobTier`: [S3GlacierJobTier](./literals.md#s3glacierjobtier)
+- `GlacierJobTier`: [S3GlacierJobTierType](./literals.md#s3glacierjobtiertype)
 
 ## S3ObjectLockLegalHoldTypeDef
 
@@ -1025,7 +1032,7 @@ from mypy_boto3_s3control.type_defs import S3ObjectLockLegalHoldTypeDef
 Required fields:
 
 - `Status`:
-  [S3ObjectLockLegalHoldStatus](./literals.md#s3objectlocklegalholdstatus)
+  [S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype)
 
 ## S3ObjectMetadataTypeDef
 
@@ -1045,7 +1052,7 @@ Optional fields:
 - `ContentType`: `str`
 - `HttpExpiresDate`: `datetime`
 - `RequesterCharged`: `bool`
-- `SSEAlgorithm`: [S3SSEAlgorithm](./literals.md#s3ssealgorithm)
+- `SSEAlgorithm`: [S3SSEAlgorithmType](./literals.md#s3ssealgorithmtype)
 
 ## S3ObjectOwnerTypeDef
 
@@ -1067,7 +1074,8 @@ from mypy_boto3_s3control.type_defs import S3RetentionTypeDef
 Optional fields:
 
 - `RetainUntilDate`: `datetime`
-- `Mode`: [S3ObjectLockRetentionMode](./literals.md#s3objectlockretentionmode)
+- `Mode`:
+  [S3ObjectLockRetentionModeType](./literals.md#s3objectlockretentionmodetype)
 
 ## S3SetObjectAclOperationTypeDef
 
@@ -1232,7 +1240,8 @@ Optional fields:
 
 - `Date`: `datetime`
 - `Days`: `int`
-- `StorageClass`: [TransitionStorageClass](./literals.md#transitionstorageclass)
+- `StorageClass`:
+  [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
 ## UpdateJobPriorityResultTypeDef
 
@@ -1254,7 +1263,7 @@ from mypy_boto3_s3control.type_defs import UpdateJobStatusResultTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `Status`: [JobStatus](./literals.md#jobstatus)
+- `Status`: [JobStatusType](./literals.md#jobstatustype)
 - `StatusUpdateReason`: `str`
 
 ## VpcConfigurationTypeDef

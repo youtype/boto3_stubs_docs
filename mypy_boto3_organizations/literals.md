@@ -3,22 +3,22 @@
 > [Index](..) > [Organizations](.) > Literals
 
 Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/organizations.html#Organizations)
 type annotations stubs module
 [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [Literals for boto3 Organizations module](#literals-for-boto3-organizations-module)
-  - [AccountJoinedMethod](#accountjoinedmethod)
-  - [AccountStatus](#accountstatus)
-  - [ActionType](#actiontype)
-  - [ChildType](#childtype)
-  - [CreateAccountFailureReason](#createaccountfailurereason)
-  - [CreateAccountState](#createaccountstate)
-  - [EffectivePolicyType](#effectivepolicytype)
-  - [HandshakePartyType](#handshakepartytype)
-  - [HandshakeResourceType](#handshakeresourcetype)
-  - [HandshakeState](#handshakestate)
-  - [IAMUserAccessToBilling](#iamuseraccesstobilling)
+  - [AccountJoinedMethodType](#accountjoinedmethodtype)
+  - [AccountStatusType](#accountstatustype)
+  - [ActionTypeType](#actiontypetype)
+  - [ChildTypeType](#childtypetype)
+  - [CreateAccountFailureReasonType](#createaccountfailurereasontype)
+  - [CreateAccountStateType](#createaccountstatetype)
+  - [EffectivePolicyTypeType](#effectivepolicytypetype)
+  - [HandshakePartyTypeType](#handshakepartytypetype)
+  - [HandshakeResourceTypeType](#handshakeresourcetypetype)
+  - [HandshakeStateType](#handshakestatetype)
+  - [IAMUserAccessToBillingType](#iamuseraccesstobillingtype)
   - [ListAWSServiceAccessForOrganizationPaginatorName](#listawsserviceaccessfororganizationpaginatorname)
   - [ListAccountsForParentPaginatorName](#listaccountsforparentpaginatorname)
   - [ListAccountsPaginatorName](#listaccountspaginatorname)
@@ -35,16 +35,16 @@ type annotations stubs module
   - [ListRootsPaginatorName](#listrootspaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [ListTargetsForPolicyPaginatorName](#listtargetsforpolicypaginatorname)
-  - [OrganizationFeatureSet](#organizationfeatureset)
-  - [ParentType](#parenttype)
-  - [PolicyType](#policytype)
-  - [PolicyTypeStatus](#policytypestatus)
-  - [TargetType](#targettype)
+  - [OrganizationFeatureSetType](#organizationfeaturesettype)
+  - [ParentTypeType](#parenttypetype)
+  - [PolicyTypeStatusType](#policytypestatustype)
+  - [PolicyTypeType](#policytypetype)
+  - [TargetTypeType](#targettypetype)
 
-## AccountJoinedMethod
+## AccountJoinedMethodType
 
 ```python
-from mypy_boto3_organizations.literals import AccountJoinedMethod
+from mypy_boto3_organizations.literals import AccountJoinedMethodType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `CREATED`
 - `INVITED`
 
-## AccountStatus
+## AccountStatusType
 
 ```python
-from mypy_boto3_organizations.literals import AccountStatus
+from mypy_boto3_organizations.literals import AccountStatusType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 - `ACTIVE`
 - `SUSPENDED`
 
-## ActionType
+## ActionTypeType
 
 ```python
-from mypy_boto3_organizations.literals import ActionType
+from mypy_boto3_organizations.literals import ActionTypeType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `ENABLE_ALL_FEATURES`
 - `INVITE`
 
-## ChildType
+## ChildTypeType
 
 ```python
-from mypy_boto3_organizations.literals import ChildType
+from mypy_boto3_organizations.literals import ChildTypeType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 - `ACCOUNT`
 - `ORGANIZATIONAL_UNIT`
 
-## CreateAccountFailureReason
+## CreateAccountFailureReasonType
 
 ```python
-from mypy_boto3_organizations.literals import CreateAccountFailureReason
+from mypy_boto3_organizations.literals import CreateAccountFailureReasonType
 ```
 
 Values:
@@ -109,10 +109,10 @@ Values:
 - `PENDING_BUSINESS_VALIDATION`
 - `UNKNOWN_BUSINESS_VALIDATION`
 
-## CreateAccountState
+## CreateAccountStateType
 
 ```python
-from mypy_boto3_organizations.literals import CreateAccountState
+from mypy_boto3_organizations.literals import CreateAccountStateType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
-## EffectivePolicyType
+## EffectivePolicyTypeType
 
 ```python
-from mypy_boto3_organizations.literals import EffectivePolicyType
+from mypy_boto3_organizations.literals import EffectivePolicyTypeType
 ```
 
 Values:
@@ -133,10 +133,10 @@ Values:
 - `BACKUP_POLICY`
 - `TAG_POLICY`
 
-## HandshakePartyType
+## HandshakePartyTypeType
 
 ```python
-from mypy_boto3_organizations.literals import HandshakePartyType
+from mypy_boto3_organizations.literals import HandshakePartyTypeType
 ```
 
 Values:
@@ -145,10 +145,10 @@ Values:
 - `EMAIL`
 - `ORGANIZATION`
 
-## HandshakeResourceType
+## HandshakeResourceTypeType
 
 ```python
-from mypy_boto3_organizations.literals import HandshakeResourceType
+from mypy_boto3_organizations.literals import HandshakeResourceTypeType
 ```
 
 Values:
@@ -162,10 +162,10 @@ Values:
 - `ORGANIZATION_FEATURE_SET`
 - `PARENT_HANDSHAKE`
 
-## HandshakeState
+## HandshakeStateType
 
 ```python
-from mypy_boto3_organizations.literals import HandshakeState
+from mypy_boto3_organizations.literals import HandshakeStateType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `OPEN`
 - `REQUESTED`
 
-## IAMUserAccessToBilling
+## IAMUserAccessToBillingType
 
 ```python
-from mypy_boto3_organizations.literals import IAMUserAccessToBilling
+from mypy_boto3_organizations.literals import IAMUserAccessToBillingType
 ```
 
 Values:
@@ -348,10 +348,10 @@ Values:
 
 - `list_targets_for_policy`
 
-## OrganizationFeatureSet
+## OrganizationFeatureSetType
 
 ```python
-from mypy_boto3_organizations.literals import OrganizationFeatureSet
+from mypy_boto3_organizations.literals import OrganizationFeatureSetType
 ```
 
 Values:
@@ -359,10 +359,10 @@ Values:
 - `ALL`
 - `CONSOLIDATED_BILLING`
 
-## ParentType
+## ParentTypeType
 
 ```python
-from mypy_boto3_organizations.literals import ParentType
+from mypy_boto3_organizations.literals import ParentTypeType
 ```
 
 Values:
@@ -370,10 +370,22 @@ Values:
 - `ORGANIZATIONAL_UNIT`
 - `ROOT`
 
-## PolicyType
+## PolicyTypeStatusType
 
 ```python
-from mypy_boto3_organizations.literals import PolicyType
+from mypy_boto3_organizations.literals import PolicyTypeStatusType
+```
+
+Values:
+
+- `ENABLED`
+- `PENDING_DISABLE`
+- `PENDING_ENABLE`
+
+## PolicyTypeType
+
+```python
+from mypy_boto3_organizations.literals import PolicyTypeType
 ```
 
 Values:
@@ -383,22 +395,10 @@ Values:
 - `SERVICE_CONTROL_POLICY`
 - `TAG_POLICY`
 
-## PolicyTypeStatus
+## TargetTypeType
 
 ```python
-from mypy_boto3_organizations.literals import PolicyTypeStatus
-```
-
-Values:
-
-- `ENABLED`
-- `PENDING_DISABLE`
-- `PENDING_ENABLE`
-
-## TargetType
-
-```python
-from mypy_boto3_organizations.literals import TargetType
+from mypy_boto3_organizations.literals import TargetTypeType
 ```
 
 Values:

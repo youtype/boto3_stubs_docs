@@ -3,7 +3,7 @@
 > [Index](..) > [SSM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM)
 type annotations stubs module
 [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
@@ -342,9 +342,9 @@ Optional fields:
 - `MaxErrors`: `str`
 - `MaxConcurrency`: `str`
 - `ComplianceSeverity`:
-  [AssociationComplianceSeverity](./literals.md#associationcomplianceseverity)
+  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
 - `SyncCompliance`:
-  [AssociationSyncCompliance](./literals.md#associationsynccompliance)
+  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
 - `CalendarNames`: `List`\[`str`\]
 - `TargetLocations`:
@@ -359,10 +359,10 @@ from mypy_boto3_ssm.type_defs import AssociationExecutionFilterTypeDef
 Required fields:
 
 - `Key`:
-  [AssociationExecutionFilterKey](./literals.md#associationexecutionfilterkey)
+  [AssociationExecutionFilterKeyType](./literals.md#associationexecutionfilterkeytype)
 - `Value`: `str`
 - `Type`:
-  [AssociationFilterOperatorType](./literals.md#associationfilteroperatortype)
+  [AssociationFilterOperatorTypeType](./literals.md#associationfilteroperatortypetype)
 
 ## AssociationExecutionTargetTypeDef
 
@@ -391,7 +391,7 @@ from mypy_boto3_ssm.type_defs import AssociationExecutionTargetsFilterTypeDef
 Required fields:
 
 - `Key`:
-  [AssociationExecutionTargetsFilterKey](./literals.md#associationexecutiontargetsfilterkey)
+  [AssociationExecutionTargetsFilterKeyType](./literals.md#associationexecutiontargetsfilterkeytype)
 - `Value`: `str`
 
 ## AssociationExecutionTypeDef
@@ -419,7 +419,7 @@ from mypy_boto3_ssm.type_defs import AssociationFilterTypeDef
 
 Required fields:
 
-- `key`: [AssociationFilterKey](./literals.md#associationfilterkey)
+- `key`: [AssociationFilterKeyType](./literals.md#associationfilterkeytype)
 - `value`: `str`
 
 ## AssociationOverviewTypeDef
@@ -443,7 +443,7 @@ from mypy_boto3_ssm.type_defs import AssociationStatusTypeDef
 Required fields:
 
 - `Date`: `datetime`
-- `Name`: [AssociationStatusName](./literals.md#associationstatusname)
+- `Name`: [AssociationStatusNameType](./literals.md#associationstatusnametype)
 - `Message`: `str`
 
 Optional fields:
@@ -492,9 +492,9 @@ Optional fields:
 - `MaxErrors`: `str`
 - `MaxConcurrency`: `str`
 - `ComplianceSeverity`:
-  [AssociationComplianceSeverity](./literals.md#associationcomplianceseverity)
+  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
 - `SyncCompliance`:
-  [AssociationSyncCompliance](./literals.md#associationsynccompliance)
+  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
 - `CalendarNames`: `List`\[`str`\]
 - `TargetLocations`:
@@ -512,7 +512,7 @@ Optional fields:
 - `Size`: `int`
 - `Hash`: `str`
 - `HashType`: `Literal['Sha256']` (see
-  [AttachmentHashType](./literals.md#attachmenthashtype))
+  [AttachmentHashTypeType](./literals.md#attachmenthashtypetype))
 - `Url`: `str`
 
 ## AttachmentInformationTypeDef
@@ -533,7 +533,7 @@ from mypy_boto3_ssm.type_defs import AttachmentsSourceTypeDef
 
 Optional fields:
 
-- `Key`: [AttachmentsSourceKey](./literals.md#attachmentssourcekey)
+- `Key`: [AttachmentsSourceKeyType](./literals.md#attachmentssourcekeytype)
 - `Values`: `List`\[`str`\]
 - `Name`: `str`
 
@@ -546,7 +546,7 @@ from mypy_boto3_ssm.type_defs import AutomationExecutionFilterTypeDef
 Required fields:
 
 - `Key`:
-  [AutomationExecutionFilterKey](./literals.md#automationexecutionfilterkey)
+  [AutomationExecutionFilterKeyType](./literals.md#automationexecutionfilterkeytype)
 - `Values`: `List`\[`str`\]
 
 ## AutomationExecutionMetadataTypeDef
@@ -561,13 +561,13 @@ Optional fields:
 - `DocumentName`: `str`
 - `DocumentVersion`: `str`
 - `AutomationExecutionStatus`:
-  [AutomationExecutionStatus](./literals.md#automationexecutionstatus)
+  [AutomationExecutionStatusType](./literals.md#automationexecutionstatustype)
 - `ExecutionStartTime`: `datetime`
 - `ExecutionEndTime`: `datetime`
 - `ExecutedBy`: `str`
 - `LogFile`: `str`
 - `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Mode`: [ExecutionMode](./literals.md#executionmode)
+- `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
 - `ParentAutomationExecutionId`: `str`
 - `CurrentStepName`: `str`
 - `CurrentAction`: `str`
@@ -580,9 +580,9 @@ Optional fields:
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `Target`: `str`
-- `AutomationType`: [AutomationType](./literals.md#automationtype)
+- `AutomationType`: [AutomationTypeType](./literals.md#automationtypetype)
 - `AutomationSubtype`: `Literal['ChangeRequest']` (see
-  [AutomationSubtype](./literals.md#automationsubtype))
+  [AutomationSubtypeType](./literals.md#automationsubtypetype))
 - `ScheduledTime`: `datetime`
 - `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
 - `OpsItemId`: `str`
@@ -603,14 +603,14 @@ Optional fields:
 - `ExecutionStartTime`: `datetime`
 - `ExecutionEndTime`: `datetime`
 - `AutomationExecutionStatus`:
-  [AutomationExecutionStatus](./literals.md#automationexecutionstatus)
+  [AutomationExecutionStatusType](./literals.md#automationexecutionstatustype)
 - `StepExecutions`:
   `List`\[[StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef)\]
 - `StepExecutionsTruncated`: `bool`
 - `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
 - `FailureMessage`: `str`
-- `Mode`: [ExecutionMode](./literals.md#executionmode)
+- `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
 - `ParentAutomationExecutionId`: `str`
 - `ExecutedBy`: `str`
 - `CurrentStepName`: `str`
@@ -628,7 +628,7 @@ Optional fields:
 - `ProgressCounters`:
   [ProgressCountersTypeDef](./type_defs.md#progresscounterstypedef)
 - `AutomationSubtype`: `Literal['ChangeRequest']` (see
-  [AutomationSubtype](./literals.md#automationsubtype))
+  [AutomationSubtypeType](./literals.md#automationsubtypetype))
 - `ScheduledTime`: `datetime`
 - `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
 - `OpsItemId`: `str`
@@ -643,15 +643,16 @@ from mypy_boto3_ssm.type_defs import BaselineOverrideTypeDef
 
 Optional fields:
 
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `GlobalFilters`:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`: [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
 - `ApprovedPatches`: `List`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevel](./literals.md#patchcompliancelevel)
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `RejectedPatches`: `List`\[`str`\]
-- `RejectedPatchesAction`: [PatchAction](./literals.md#patchaction)
+- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
 - `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 
@@ -684,7 +685,7 @@ from mypy_boto3_ssm.type_defs import CommandFilterTypeDef
 
 Required fields:
 
-- `key`: [CommandFilterKey](./literals.md#commandfilterkey)
+- `key`: [CommandFilterKeyType](./literals.md#commandfilterkeytype)
 - `value`: `str`
 
 ## CommandInvocationTypeDef
@@ -702,7 +703,8 @@ Optional fields:
 - `DocumentName`: `str`
 - `DocumentVersion`: `str`
 - `RequestedDateTime`: `datetime`
-- `Status`: [CommandInvocationStatus](./literals.md#commandinvocationstatus)
+- `Status`:
+  [CommandInvocationStatusType](./literals.md#commandinvocationstatustype)
 - `StatusDetails`: `str`
 - `TraceOutput`: `str`
 - `StandardOutputUrl`: `str`
@@ -724,7 +726,7 @@ from mypy_boto3_ssm.type_defs import CommandPluginTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`: [CommandPluginStatus](./literals.md#commandpluginstatus)
+- `Status`: [CommandPluginStatusType](./literals.md#commandpluginstatustype)
 - `StatusDetails`: `str`
 - `ResponseCode`: `int`
 - `ResponseStartDateTime`: `datetime`
@@ -753,7 +755,7 @@ Optional fields:
 - `InstanceIds`: `List`\[`str`\]
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `RequestedDateTime`: `datetime`
-- `Status`: [CommandStatus](./literals.md#commandstatus)
+- `Status`: [CommandStatusType](./literals.md#commandstatustype)
 - `StatusDetails`: `str`
 - `OutputS3Region`: `str`
 - `OutputS3BucketName`: `str`
@@ -794,8 +796,8 @@ from mypy_boto3_ssm.type_defs import ComplianceItemEntryTypeDef
 
 Required fields:
 
-- `Severity`: [ComplianceSeverity](./literals.md#complianceseverity)
-- `Status`: [ComplianceStatus](./literals.md#compliancestatus)
+- `Severity`: [ComplianceSeverityType](./literals.md#complianceseveritytype)
+- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
 
 Optional fields:
 
@@ -816,8 +818,8 @@ Optional fields:
 - `ResourceId`: `str`
 - `Id`: `str`
 - `Title`: `str`
-- `Status`: [ComplianceStatus](./literals.md#compliancestatus)
-- `Severity`: [ComplianceSeverity](./literals.md#complianceseverity)
+- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
+- `Severity`: [ComplianceSeverityType](./literals.md#complianceseveritytype)
 - `ExecutionSummary`:
   [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
 - `Details`: `Dict`\[`str`, `str`\]
@@ -833,7 +835,7 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
 - `Type`:
-  [ComplianceQueryOperatorType](./literals.md#compliancequeryoperatortype)
+  [ComplianceQueryOperatorTypeType](./literals.md#compliancequeryoperatortypetype)
 
 ## ComplianceSummaryItemTypeDef
 
@@ -896,9 +898,9 @@ Optional fields:
 - `MaxErrors`: `str`
 - `MaxConcurrency`: `str`
 - `ComplianceSeverity`:
-  [AssociationComplianceSeverity](./literals.md#associationcomplianceseverity)
+  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
 - `SyncCompliance`:
-  [AssociationSyncCompliance](./literals.md#associationsynccompliance)
+  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
 - `CalendarNames`: `List`\[`str`\]
 - `TargetLocations`:
@@ -1065,7 +1067,7 @@ from mypy_boto3_ssm.type_defs import DescribeActivationsFilterTypeDef
 Optional fields:
 
 - `FilterKey`:
-  [DescribeActivationsFilterKeys](./literals.md#describeactivationsfilterkeys)
+  [DescribeActivationsFilterKeysType](./literals.md#describeactivationsfilterkeystype)
 - `FilterValues`: `List`\[`str`\]
 
 ## DescribeActivationsResultTypeDef
@@ -1479,24 +1481,24 @@ Optional fields:
 
 - `Sha1`: `str`
 - `Hash`: `str`
-- `HashType`: [DocumentHashType](./literals.md#documenthashtype)
+- `HashType`: [DocumentHashTypeType](./literals.md#documenthashtypetype)
 - `Name`: `str`
 - `DisplayName`: `str`
 - `VersionName`: `str`
 - `Owner`: `str`
 - `CreatedDate`: `datetime`
-- `Status`: [DocumentStatus](./literals.md#documentstatus)
+- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
 - `StatusInformation`: `str`
 - `DocumentVersion`: `str`
 - `Description`: `str`
 - `Parameters`:
   `List`\[[DocumentParameterTypeDef](./type_defs.md#documentparametertypedef)\]
-- `PlatformTypes`: `List`\[[PlatformType](./literals.md#platformtype)\]
-- `DocumentType`: [DocumentType](./literals.md#documenttype)
+- `PlatformTypes`: `List`\[[PlatformTypeType](./literals.md#platformtypetype)\]
+- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
 - `SchemaVersion`: `str`
 - `LatestVersion`: `str`
 - `DefaultVersion`: `str`
-- `DocumentFormat`: [DocumentFormat](./literals.md#documentformat)
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 - `TargetType`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AttachmentsInformation`:
@@ -1508,7 +1510,7 @@ Optional fields:
   `List`\[[ReviewInformationTypeDef](./type_defs.md#reviewinformationtypedef)\]
 - `ApprovedVersion`: `str`
 - `PendingReviewVersion`: `str`
-- `ReviewStatus`: [ReviewStatus](./literals.md#reviewstatus)
+- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 
 ## DocumentFilterTypeDef
 
@@ -1518,7 +1520,7 @@ from mypy_boto3_ssm.type_defs import DocumentFilterTypeDef
 
 Required fields:
 
-- `key`: [DocumentFilterKey](./literals.md#documentfilterkey)
+- `key`: [DocumentFilterKeyType](./literals.md#documentfilterkeytype)
 - `value`: `str`
 
 ## DocumentIdentifierTypeDef
@@ -1534,16 +1536,16 @@ Optional fields:
 - `DisplayName`: `str`
 - `Owner`: `str`
 - `VersionName`: `str`
-- `PlatformTypes`: `List`\[[PlatformType](./literals.md#platformtype)\]
+- `PlatformTypes`: `List`\[[PlatformTypeType](./literals.md#platformtypetype)\]
 - `DocumentVersion`: `str`
-- `DocumentType`: [DocumentType](./literals.md#documenttype)
+- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
 - `SchemaVersion`: `str`
-- `DocumentFormat`: [DocumentFormat](./literals.md#documentformat)
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 - `TargetType`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Requires`:
   `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
-- `ReviewStatus`: [ReviewStatus](./literals.md#reviewstatus)
+- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `Author`: `str`
 
 ## DocumentKeyValuesFilterTypeDef
@@ -1577,7 +1579,7 @@ from mypy_boto3_ssm.type_defs import DocumentParameterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`: [DocumentParameterType](./literals.md#documentparametertype)
+- `Type`: [DocumentParameterTypeType](./literals.md#documentparametertypetype)
 - `Description`: `str`
 - `DefaultValue`: `str`
 
@@ -1604,7 +1606,7 @@ from mypy_boto3_ssm.type_defs import DocumentReviewCommentSourceTypeDef
 Optional fields:
 
 - `Type`: `Literal['Comment']` (see
-  [DocumentReviewCommentType](./literals.md#documentreviewcommenttype))
+  [DocumentReviewCommentTypeType](./literals.md#documentreviewcommenttypetype))
 - `Content`: `str`
 
 ## DocumentReviewerResponseSourceTypeDef
@@ -1617,7 +1619,7 @@ Optional fields:
 
 - `CreateTime`: `datetime`
 - `UpdatedTime`: `datetime`
-- `ReviewStatus`: [ReviewStatus](./literals.md#reviewstatus)
+- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `Comment`:
   `List`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
 - `Reviewer`: `str`
@@ -1630,7 +1632,7 @@ from mypy_boto3_ssm.type_defs import DocumentReviewsTypeDef
 
 Required fields:
 
-- `Action`: [DocumentReviewAction](./literals.md#documentreviewaction)
+- `Action`: [DocumentReviewActionType](./literals.md#documentreviewactiontype)
 
 Optional fields:
 
@@ -1651,10 +1653,10 @@ Optional fields:
 - `VersionName`: `str`
 - `CreatedDate`: `datetime`
 - `IsDefaultVersion`: `bool`
-- `DocumentFormat`: [DocumentFormat](./literals.md#documentformat)
-- `Status`: [DocumentStatus](./literals.md#documentstatus)
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
+- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
 - `StatusInformation`: `str`
-- `ReviewStatus`: [ReviewStatus](./literals.md#reviewstatus)
+- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 
 ## EffectivePatchTypeDef
 
@@ -1678,7 +1680,7 @@ Optional fields:
 - `Entry`:
   [CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)
 - `Message`: `str`
-- `Fault`: [Fault](./literals.md#fault)
+- `Fault`: [FaultType](./literals.md#faulttype)
 
 ## FailureDetailsTypeDef
 
@@ -1711,7 +1713,7 @@ from mypy_boto3_ssm.type_defs import GetCalendarStateResponseTypeDef
 
 Optional fields:
 
-- `State`: [CalendarState](./literals.md#calendarstate)
+- `State`: [CalendarStateType](./literals.md#calendarstatetype)
 - `AtTime`: `str`
 - `NextTransitionTime`: `str`
 
@@ -1733,7 +1735,8 @@ Optional fields:
 - `ExecutionStartDateTime`: `str`
 - `ExecutionElapsedTime`: `str`
 - `ExecutionEndDateTime`: `str`
-- `Status`: [CommandInvocationStatus](./literals.md#commandinvocationstatus)
+- `Status`:
+  [CommandInvocationStatusType](./literals.md#commandinvocationstatustype)
 - `StatusDetails`: `str`
 - `StandardOutputContent`: `str`
 - `StandardOutputUrl`: `str`
@@ -1751,7 +1754,7 @@ from mypy_boto3_ssm.type_defs import GetConnectionStatusResponseTypeDef
 Optional fields:
 
 - `Target`: `str`
-- `Status`: [ConnectionStatus](./literals.md#connectionstatus)
+- `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
 
 ## GetDefaultPatchBaselineResultTypeDef
 
@@ -1762,7 +1765,7 @@ from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineResultTypeDef
 Optional fields:
 
 - `BaselineId`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 
 ## GetDeployablePatchSnapshotForInstanceResultTypeDef
 
@@ -1790,16 +1793,16 @@ Optional fields:
 - `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
-- `Status`: [DocumentStatus](./literals.md#documentstatus)
+- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
 - `StatusInformation`: `str`
 - `Content`: `str`
-- `DocumentType`: [DocumentType](./literals.md#documenttype)
-- `DocumentFormat`: [DocumentFormat](./literals.md#documentformat)
+- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 - `Requires`:
   `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
 - `AttachmentsContent`:
   `List`\[[AttachmentContentTypeDef](./type_defs.md#attachmentcontenttypedef)\]
-- `ReviewStatus`: [ReviewStatus](./literals.md#reviewstatus)
+- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 
 ## GetInventoryResultTypeDef
 
@@ -1836,7 +1839,7 @@ Optional fields:
 - `WindowExecutionId`: `str`
 - `TaskIds`: `List`\[`str`\]
 - `Status`:
-  [MaintenanceWindowExecutionStatus](./literals.md#maintenancewindowexecutionstatus)
+  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1854,10 +1857,10 @@ Optional fields:
 - `InvocationId`: `str`
 - `ExecutionId`: `str`
 - `TaskType`:
-  [MaintenanceWindowTaskType](./literals.md#maintenancewindowtasktype)
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - `Parameters`: `str`
 - `Status`:
-  [MaintenanceWindowExecutionStatus](./literals.md#maintenancewindowexecutionstatus)
+  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1876,14 +1879,15 @@ Optional fields:
 - `TaskExecutionId`: `str`
 - `TaskArn`: `str`
 - `ServiceRole`: `str`
-- `Type`: [MaintenanceWindowTaskType](./literals.md#maintenancewindowtasktype)
+- `Type`:
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - `TaskParameters`: `List`\[`Dict`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]\]
 - `Priority`: `int`
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `Status`:
-  [MaintenanceWindowExecutionStatus](./literals.md#maintenancewindowexecutionstatus)
+  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1926,7 +1930,7 @@ Optional fields:
 - `TaskArn`: `str`
 - `ServiceRoleArn`: `str`
 - `TaskType`:
-  [MaintenanceWindowTaskType](./literals.md#maintenancewindowtasktype)
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - `TaskParameters`: `Dict`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
 - `TaskInvocationParameters`:
@@ -2026,7 +2030,7 @@ Optional fields:
 
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 
 ## GetPatchBaselineResultTypeDef
 
@@ -2038,16 +2042,17 @@ Optional fields:
 
 - `BaselineId`: `str`
 - `Name`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `GlobalFilters`:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`: [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
 - `ApprovedPatches`: `List`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevel](./literals.md#patchcompliancelevel)
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
 - `RejectedPatches`: `List`\[`str`\]
-- `RejectedPatchesAction`: [PatchAction](./literals.md#patchaction)
+- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `PatchGroups`: `List`\[`str`\]
 - `CreatedDate`: `datetime`
 - `ModifiedDate`: `datetime`
@@ -2062,7 +2067,8 @@ from mypy_boto3_ssm.type_defs import GetServiceSettingResultTypeDef
 
 Optional fields:
 
-- `ServiceSetting`: [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
+- `ServiceSetting`:
+  [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
 
 ## InstanceAggregatedAssociationOverviewTypeDef
 
@@ -2083,7 +2089,8 @@ from mypy_boto3_ssm.type_defs import InstanceAssociationOutputLocationTypeDef
 
 Optional fields:
 
-- `S3Location`: [S3OutputLocationTypeDef](./type_defs.md#s3outputlocationtypedef)
+- `S3Location`:
+  [S3OutputLocationTypeDef](./type_defs.md#s3outputlocationtypedef)
 
 ## InstanceAssociationOutputUrlTypeDef
 
@@ -2139,7 +2146,7 @@ from mypy_boto3_ssm.type_defs import InstanceInformationFilterTypeDef
 Required fields:
 
 - `key`:
-  [InstanceInformationFilterKey](./literals.md#instanceinformationfilterkey)
+  [InstanceInformationFilterKeyType](./literals.md#instanceinformationfilterkeytype)
 - `valueSet`: `List`\[`str`\]
 
 ## InstanceInformationStringFilterTypeDef
@@ -2162,17 +2169,17 @@ from mypy_boto3_ssm.type_defs import InstanceInformationTypeDef
 Optional fields:
 
 - `InstanceId`: `str`
-- `PingStatus`: [PingStatus](./literals.md#pingstatus)
+- `PingStatus`: [PingStatusType](./literals.md#pingstatustype)
 - `LastPingDateTime`: `datetime`
 - `AgentVersion`: `str`
 - `IsLatestVersion`: `bool`
-- `PlatformType`: [PlatformType](./literals.md#platformtype)
+- `PlatformType`: [PlatformTypeType](./literals.md#platformtypetype)
 - `PlatformName`: `str`
 - `PlatformVersion`: `str`
 - `ActivationId`: `str`
 - `IamRole`: `str`
 - `RegistrationDate`: `datetime`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Name`: `str`
 - `IPAddress`: `str`
 - `ComputerName`: `str`
@@ -2193,7 +2200,7 @@ Required fields:
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
 - `Type`:
-  [InstancePatchStateOperatorType](./literals.md#instancepatchstateoperatortype)
+  [InstancePatchStateOperatorTypeType](./literals.md#instancepatchstateoperatortypetype)
 
 ## InstancePatchStateTypeDef
 
@@ -2208,7 +2215,7 @@ Required fields:
 - `BaselineId`: `str`
 - `OperationStartTime`: `datetime`
 - `OperationEndTime`: `datetime`
-- `Operation`: [PatchOperationType](./literals.md#patchoperationtype)
+- `Operation`: [PatchOperationTypeType](./literals.md#patchoperationtypetype)
 
 Optional fields:
 
@@ -2224,7 +2231,7 @@ Optional fields:
 - `UnreportedNotApplicableCount`: `int`
 - `NotApplicableCount`: `int`
 - `LastNoRebootInstallOperationTime`: `datetime`
-- `RebootOption`: [RebootOption](./literals.md#rebootoption)
+- `RebootOption`: [RebootOptionType](./literals.md#rebootoptiontype)
 - `CriticalNonCompliantCount`: `int`
 - `SecurityNonCompliantCount`: `int`
 - `OtherNonCompliantCount`: `int`
@@ -2254,7 +2261,8 @@ Optional fields:
 - `DeletionId`: `str`
 - `TypeName`: `str`
 - `DeletionStartTime`: `datetime`
-- `LastStatus`: [InventoryDeletionStatus](./literals.md#inventorydeletionstatus)
+- `LastStatus`:
+  [InventoryDeletionStatusType](./literals.md#inventorydeletionstatustype)
 - `LastStatusMessage`: `str`
 - `DeletionSummary`:
   [InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef)
@@ -2298,7 +2306,8 @@ Required fields:
 
 Optional fields:
 
-- `Type`: [InventoryQueryOperatorType](./literals.md#inventoryqueryoperatortype)
+- `Type`:
+  [InventoryQueryOperatorTypeType](./literals.md#inventoryqueryoperatortypetype)
 
 ## InventoryGroupTypeDef
 
@@ -2322,7 +2331,7 @@ Required fields:
 
 - `Name`: `str`
 - `DataType`:
-  [InventoryAttributeDataType](./literals.md#inventoryattributedatatype)
+  [InventoryAttributeDataTypeType](./literals.md#inventoryattributedatatypetype)
 
 ## InventoryItemSchemaTypeDef
 
@@ -2631,13 +2640,13 @@ Optional fields:
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
 - `Status`:
-  [MaintenanceWindowExecutionStatus](./literals.md#maintenancewindowexecutionstatus)
+  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `TaskArn`: `str`
 - `TaskType`:
-  [MaintenanceWindowTaskType](./literals.md#maintenancewindowtasktype)
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 
 ## MaintenanceWindowExecutionTaskInvocationIdentityTypeDef
 
@@ -2652,10 +2661,10 @@ Optional fields:
 - `InvocationId`: `str`
 - `ExecutionId`: `str`
 - `TaskType`:
-  [MaintenanceWindowTaskType](./literals.md#maintenancewindowtasktype)
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - `Parameters`: `str`
 - `Status`:
-  [MaintenanceWindowExecutionStatus](./literals.md#maintenancewindowexecutionstatus)
+  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -2673,7 +2682,7 @@ Optional fields:
 - `WindowId`: `str`
 - `WindowExecutionId`: `str`
 - `Status`:
-  [MaintenanceWindowExecutionStatus](./literals.md#maintenancewindowexecutionstatus)
+  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -2745,7 +2754,8 @@ Optional fields:
 - `CloudWatchOutputConfig`:
   [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
 - `DocumentHash`: `str`
-- `DocumentHashType`: [DocumentHashType](./literals.md#documenthashtype)
+- `DocumentHashType`:
+  [DocumentHashTypeType](./literals.md#documenthashtypetype)
 - `DocumentVersion`: `str`
 - `NotificationConfig`:
   [NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef)
@@ -2777,7 +2787,7 @@ Optional fields:
 - `WindowId`: `str`
 - `WindowTargetId`: `str`
 - `ResourceType`:
-  [MaintenanceWindowResourceType](./literals.md#maintenancewindowresourcetype)
+  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `OwnerInformation`: `str`
 - `Name`: `str`
@@ -2821,7 +2831,8 @@ Optional fields:
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
 - `TaskArn`: `str`
-- `Type`: [MaintenanceWindowTaskType](./literals.md#maintenancewindowtasktype)
+- `Type`:
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `TaskParameters`: `Dict`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
@@ -2865,8 +2876,9 @@ Optional fields:
 
 - `NotificationArn`: `str`
 - `NotificationEvents`:
-  `List`\[[NotificationEvent](./literals.md#notificationevent)\]
-- `NotificationType`: [NotificationType](./literals.md#notificationtype)
+  `List`\[[NotificationEventType](./literals.md#notificationeventtype)\]
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype)
 
 ## OpsAggregatorTypeDef
 
@@ -2920,7 +2932,7 @@ Required fields:
 
 Optional fields:
 
-- `Type`: [OpsFilterOperatorType](./literals.md#opsfilteroperatortype)
+- `Type`: [OpsFilterOperatorTypeType](./literals.md#opsfilteroperatortypetype)
 
 ## OpsItemDataValueTypeDef
 
@@ -2931,7 +2943,7 @@ from mypy_boto3_ssm.type_defs import OpsItemDataValueTypeDef
 Optional fields:
 
 - `Value`: `str`
-- `Type`: [OpsItemDataType](./literals.md#opsitemdatatype)
+- `Type`: [OpsItemDataTypeType](./literals.md#opsitemdatatypetype)
 
 ## OpsItemEventFilterTypeDef
 
@@ -2942,10 +2954,10 @@ from mypy_boto3_ssm.type_defs import OpsItemEventFilterTypeDef
 Required fields:
 
 - `Key`: `Literal['OpsItemId']` (see
-  [OpsItemEventFilterKey](./literals.md#opsitemeventfilterkey))
+  [OpsItemEventFilterKeyType](./literals.md#opsitemeventfilterkeytype))
 - `Values`: `List`\[`str`\]
 - `Operator`: `Literal['Equal']` (see
-  [OpsItemEventFilterOperator](./literals.md#opsitemeventfilteroperator))
+  [OpsItemEventFilterOperatorType](./literals.md#opsitemeventfilteroperatortype))
 
 ## OpsItemEventSummaryTypeDef
 
@@ -2971,9 +2983,10 @@ from mypy_boto3_ssm.type_defs import OpsItemFilterTypeDef
 
 Required fields:
 
-- `Key`: [OpsItemFilterKey](./literals.md#opsitemfilterkey)
+- `Key`: [OpsItemFilterKeyType](./literals.md#opsitemfilterkeytype)
 - `Values`: `List`\[`str`\]
-- `Operator`: [OpsItemFilterOperator](./literals.md#opsitemfilteroperator)
+- `Operator`:
+  [OpsItemFilterOperatorType](./literals.md#opsitemfilteroperatortype)
 
 ## OpsItemIdentityTypeDef
 
@@ -3023,10 +3036,10 @@ from mypy_boto3_ssm.type_defs import OpsItemRelatedItemsFilterTypeDef
 Required fields:
 
 - `Key`:
-  [OpsItemRelatedItemsFilterKey](./literals.md#opsitemrelateditemsfilterkey)
+  [OpsItemRelatedItemsFilterKeyType](./literals.md#opsitemrelateditemsfilterkeytype)
 - `Values`: `List`\[`str`\]
 - `Operator`: `Literal['Equal']` (see
-  [OpsItemRelatedItemsFilterOperator](./literals.md#opsitemrelateditemsfilteroperator))
+  [OpsItemRelatedItemsFilterOperatorType](./literals.md#opsitemrelateditemsfilteroperatortype))
 
 ## OpsItemSummaryTypeDef
 
@@ -3042,7 +3055,7 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `Priority`: `int`
 - `Source`: `str`
-- `Status`: [OpsItemStatus](./literals.md#opsitemstatus)
+- `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
 - `OpsItemId`: `str`
 - `Title`: `str`
 - `OperationalData`: `Dict`\[`str`,
@@ -3074,7 +3087,7 @@ Optional fields:
 - `Priority`: `int`
 - `RelatedOpsItems`:
   `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
-- `Status`: [OpsItemStatus](./literals.md#opsitemstatus)
+- `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
 - `OpsItemId`: `str`
 - `Version`: `str`
 - `Title`: `str`
@@ -3155,7 +3168,7 @@ from mypy_boto3_ssm.type_defs import ParameterHistoryTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`: [ParameterType](./literals.md#parametertype)
+- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
 - `KeyId`: `str`
 - `LastModifiedDate`: `datetime`
 - `LastModifiedUser`: `str`
@@ -3164,7 +3177,7 @@ Optional fields:
 - `AllowedPattern`: `str`
 - `Version`: `int`
 - `Labels`: `List`\[`str`\]
-- `Tier`: [ParameterTier](./literals.md#parametertier)
+- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
 - `Policies`:
   `List`\[[ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef)\]
 - `DataType`: `str`
@@ -3190,14 +3203,14 @@ from mypy_boto3_ssm.type_defs import ParameterMetadataTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`: [ParameterType](./literals.md#parametertype)
+- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
 - `KeyId`: `str`
 - `LastModifiedDate`: `datetime`
 - `LastModifiedUser`: `str`
 - `Description`: `str`
 - `AllowedPattern`: `str`
 - `Version`: `int`
-- `Tier`: [ParameterTier](./literals.md#parametertier)
+- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
 - `Policies`:
   `List`\[[ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef)\]
 - `DataType`: `str`
@@ -3226,7 +3239,7 @@ from mypy_boto3_ssm.type_defs import ParameterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`: [ParameterType](./literals.md#parametertype)
+- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
 - `Value`: `str`
 - `Version`: `int`
 - `Selector`: `str`
@@ -3243,7 +3256,7 @@ from mypy_boto3_ssm.type_defs import ParametersFilterTypeDef
 
 Required fields:
 
-- `Key`: [ParametersFilterKey](./literals.md#parametersfilterkey)
+- `Key`: [ParametersFilterKeyType](./literals.md#parametersfilterkeytype)
 - `Values`: `List`\[`str`\]
 
 ## PatchBaselineIdentityTypeDef
@@ -3256,7 +3269,7 @@ Optional fields:
 
 - `BaselineId`: `str`
 - `BaselineName`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `BaselineDescription`: `str`
 - `DefaultBaseline`: `bool`
 
@@ -3272,7 +3285,8 @@ Required fields:
 - `KBId`: `str`
 - `Classification`: `str`
 - `Severity`: `str`
-- `State`: [PatchComplianceDataState](./literals.md#patchcompliancedatastate)
+- `State`:
+  [PatchComplianceDataStateType](./literals.md#patchcompliancedatastatetype)
 - `InstalledTime`: `datetime`
 
 Optional fields:
@@ -3298,7 +3312,7 @@ from mypy_boto3_ssm.type_defs import PatchFilterTypeDef
 
 Required fields:
 
-- `Key`: [PatchFilterKey](./literals.md#patchfilterkey)
+- `Key`: [PatchFilterKeyType](./literals.md#patchfilterkeytype)
 - `Values`: `List`\[`str`\]
 
 ## PatchGroupPatchBaselineMappingTypeDef
@@ -3347,7 +3361,8 @@ Required fields:
 
 Optional fields:
 
-- `ComplianceLevel`: [PatchComplianceLevel](./literals.md#patchcompliancelevel)
+- `ComplianceLevel`:
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApproveAfterDays`: `int`
 - `ApproveUntilDate`: `str`
 - `EnableNonSecurity`: `bool`
@@ -3373,8 +3388,9 @@ from mypy_boto3_ssm.type_defs import PatchStatusTypeDef
 Optional fields:
 
 - `DeploymentStatus`:
-  [PatchDeploymentStatus](./literals.md#patchdeploymentstatus)
-- `ComplianceLevel`: [PatchComplianceLevel](./literals.md#patchcompliancelevel)
+  [PatchDeploymentStatusType](./literals.md#patchdeploymentstatustype)
+- `ComplianceLevel`:
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovalDate`: `datetime`
 
 ## PatchTypeDef
@@ -3442,7 +3458,7 @@ from mypy_boto3_ssm.type_defs import PutParameterResultTypeDef
 Optional fields:
 
 - `Version`: `int`
-- `Tier`: [ParameterTier](./literals.md#parametertier)
+- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
 
 ## RegisterDefaultPatchBaselineResultTypeDef
 
@@ -3503,7 +3519,8 @@ from mypy_boto3_ssm.type_defs import ResetServiceSettingResultTypeDef
 
 Optional fields:
 
-- `ServiceSetting`: [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
+- `ServiceSetting`:
+  [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
 
 ## ResolvedTargetsTypeDef
 
@@ -3527,8 +3544,9 @@ Optional fields:
 - `ComplianceType`: `str`
 - `ResourceType`: `str`
 - `ResourceId`: `str`
-- `Status`: [ComplianceStatus](./literals.md#compliancestatus)
-- `OverallSeverity`: [ComplianceSeverity](./literals.md#complianceseverity)
+- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
+- `OverallSeverity`:
+  [ComplianceSeverityType](./literals.md#complianceseveritytype)
 - `ExecutionSummary`:
   [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
 - `CompliantSummary`:
@@ -3579,7 +3597,7 @@ Optional fields:
 - `LastSuccessfulSyncTime`: `datetime`
 - `SyncLastModifiedTime`: `datetime`
 - `LastStatus`:
-  [LastResourceDataSyncStatus](./literals.md#lastresourcedatasyncstatus)
+  [LastResourceDataSyncStatusType](./literals.md#lastresourcedatasyncstatustype)
 - `SyncCreatedTime`: `datetime`
 - `LastSyncStatusMessage`: `str`
 
@@ -3603,7 +3621,7 @@ Required fields:
 
 - `BucketName`: `str`
 - `SyncFormat`: `Literal['JsonSerDe']` (see
-  [ResourceDataSyncS3Format](./literals.md#resourcedatasyncs3format))
+  [ResourceDataSyncS3FormatType](./literals.md#resourcedatasyncs3formattype))
 - `Region`: `str`
 
 Optional fields:
@@ -3678,7 +3696,7 @@ from mypy_boto3_ssm.type_defs import ReviewInformationTypeDef
 Optional fields:
 
 - `ReviewedTime`: `datetime`
-- `Status`: [ReviewStatus](./literals.md#reviewstatus)
+- `Status`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `Reviewer`: `str`
 
 ## RunbookTypeDef
@@ -3769,7 +3787,7 @@ from mypy_boto3_ssm.type_defs import SessionFilterTypeDef
 
 Required fields:
 
-- `key`: [SessionFilterKey](./literals.md#sessionfilterkey)
+- `key`: [SessionFilterKeyType](./literals.md#sessionfilterkeytype)
 - `value`: `str`
 
 ## SessionManagerOutputUrlTypeDef
@@ -3793,7 +3811,7 @@ Optional fields:
 
 - `SessionId`: `str`
 - `Target`: `str`
-- `Status`: [SessionStatus](./literals.md#sessionstatus)
+- `Status`: [SessionStatusType](./literals.md#sessionstatustype)
 - `StartDate`: `datetime`
 - `EndDate`: `datetime`
 - `DocumentName`: `str`
@@ -3857,7 +3875,7 @@ from mypy_boto3_ssm.type_defs import StepExecutionFilterTypeDef
 
 Required fields:
 
-- `Key`: [StepExecutionFilterKey](./literals.md#stepexecutionfilterkey)
+- `Key`: [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - `Values`: `List`\[`str`\]
 
 ## StepExecutionTypeDef
@@ -3876,13 +3894,14 @@ Optional fields:
 - `ExecutionStartTime`: `datetime`
 - `ExecutionEndTime`: `datetime`
 - `StepStatus`:
-  [AutomationExecutionStatus](./literals.md#automationexecutionstatus)
+  [AutomationExecutionStatusType](./literals.md#automationexecutionstatustype)
 - `ResponseCode`: `str`
 - `Inputs`: `Dict`\[`str`, `str`\]
 - `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
 - `Response`: `str`
 - `FailureMessage`: `str`
-- `FailureDetails`: [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
+- `FailureDetails`:
+  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
 - `StepExecutionId`: `str`
 - `OverriddenParameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `IsEnd`: `bool`
@@ -3890,7 +3909,8 @@ Optional fields:
 - `IsCritical`: `bool`
 - `ValidNextSteps`: `List`\[`str`\]
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetLocation`: [TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)
+- `TargetLocation`:
+  [TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)
 
 ## TagTypeDef
 
@@ -4073,16 +4093,17 @@ Optional fields:
 
 - `BaselineId`: `str`
 - `Name`: `str`
-- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `GlobalFilters`:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`: [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
 - `ApprovedPatches`: `List`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevel](./literals.md#patchcompliancelevel)
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
 - `RejectedPatches`: `List`\[`str`\]
-- `RejectedPatchesAction`: [PatchAction](./literals.md#patchaction)
+- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `CreatedDate`: `datetime`
 - `ModifiedDate`: `datetime`
 - `Description`: `str`

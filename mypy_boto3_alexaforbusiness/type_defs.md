@@ -3,7 +3,7 @@
 > [Index](..) > [AlexaForBusiness](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
 [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
@@ -147,7 +147,7 @@ from mypy_boto3_alexaforbusiness.type_defs import AudioTypeDef
 
 Required fields:
 
-- `Locale`: `Literal['en-US']` (see [Locale](./literals.md#locale))
+- `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
 - `Location`: `str`
 
 ## BusinessReportContentRangeTypeDef
@@ -158,7 +158,8 @@ from mypy_boto3_alexaforbusiness.type_defs import BusinessReportContentRangeType
 
 Required fields:
 
-- `Interval`: [BusinessReportInterval](./literals.md#businessreportinterval)
+- `Interval`:
+  [BusinessReportIntervalType](./literals.md#businessreportintervaltype)
 
 ## BusinessReportRecurrenceTypeDef
 
@@ -193,7 +194,7 @@ Optional fields:
 - `ScheduleName`: `str`
 - `S3BucketName`: `str`
 - `S3KeyPrefix`: `str`
-- `Format`: [BusinessReportFormat](./literals.md#businessreportformat)
+- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
 - `ContentRange`:
   [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
 - `Recurrence`:
@@ -209,9 +210,9 @@ from mypy_boto3_alexaforbusiness.type_defs import BusinessReportTypeDef
 
 Optional fields:
 
-- `Status`: [BusinessReportStatus](./literals.md#businessreportstatus)
+- `Status`: [BusinessReportStatusType](./literals.md#businessreportstatustype)
 - `FailureCode`:
-  [BusinessReportFailureCode](./literals.md#businessreportfailurecode)
+  [BusinessReportFailureCodeType](./literals.md#businessreportfailurecodetype)
 - `S3Location`:
   [BusinessReportS3LocationTypeDef](./type_defs.md#businessreports3locationtypedef)
 - `DeliveryTime`: `datetime`
@@ -248,10 +249,12 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`: [ConferenceProviderType](./literals.md#conferenceprovidertype)
+- `Type`:
+  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
 - `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
-- `MeetingSetting`: [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
+- `MeetingSetting`:
+  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
 
 ## ContactDataTypeDef
 
@@ -268,7 +271,8 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
   `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+- `SipAddresses`:
+  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 ## ContactTypeDef
 
@@ -285,7 +289,8 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
   `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+- `SipAddresses`:
+  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 ## ContentTypeDef
 
@@ -349,7 +354,7 @@ Required fields:
 
 - `ReminderAtMinutes`: `List`\[`int`\]
 - `ReminderType`:
-  [EndOfMeetingReminderType](./literals.md#endofmeetingremindertype)
+  [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
 
 ## CreateGatewayGroupResponseTypeDef
@@ -477,7 +482,7 @@ Optional fields:
 - `DeviceName`: `str`
 - `SoftwareVersion`: `str`
 - `MacAddress`: `str`
-- `DeviceStatus`: [DeviceStatus](./literals.md#devicestatus)
+- `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
 - `NetworkProfileArn`: `str`
 - `NetworkProfileName`: `str`
 - `RoomArn`: `str`
@@ -494,7 +499,7 @@ from mypy_boto3_alexaforbusiness.type_defs import DeviceEventTypeDef
 
 Optional fields:
 
-- `Type`: [DeviceEventType](./literals.md#deviceeventtype)
+- `Type`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
 - `Value`: `str`
 - `Timestamp`: `datetime`
 
@@ -518,8 +523,9 @@ from mypy_boto3_alexaforbusiness.type_defs import DeviceStatusDetailTypeDef
 
 Optional fields:
 
-- `Feature`: [Feature](./literals.md#feature)
-- `Code`: [DeviceStatusDetailCode](./literals.md#devicestatusdetailcode)
+- `Feature`: [FeatureType](./literals.md#featuretype)
+- `Code`:
+  [DeviceStatusDetailCodeType](./literals.md#devicestatusdetailcodetype)
 
 ## DeviceStatusInfoTypeDef
 
@@ -531,7 +537,8 @@ Optional fields:
 
 - `DeviceStatusDetails`:
   `List`\[[DeviceStatusDetailTypeDef](./type_defs.md#devicestatusdetailtypedef)\]
-- `ConnectionStatus`: [ConnectionStatus](./literals.md#connectionstatus)
+- `ConnectionStatus`:
+  [ConnectionStatusType](./literals.md#connectionstatustype)
 - `ConnectionStatusUpdatedTime`: `datetime`
 
 ## DeviceTypeDef
@@ -549,7 +556,7 @@ Optional fields:
 - `SoftwareVersion`: `str`
 - `MacAddress`: `str`
 - `RoomArn`: `str`
-- `DeviceStatus`: [DeviceStatus](./literals.md#devicestatus)
+- `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
 - `DeviceStatusInfo`:
   [DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef)
 - `NetworkProfileInfo`:
@@ -565,7 +572,7 @@ Optional fields:
 
 - `ReminderAtMinutes`: `List`\[`int`\]
 - `ReminderType`:
-  [EndOfMeetingReminderType](./literals.md#endofmeetingremindertype)
+  [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
 
 ## FilterTypeDef
@@ -723,7 +730,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetNetworkProfileResponseTypeD
 
 Optional fields:
 
-- `NetworkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `NetworkProfile`:
+  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## GetProfileResponseTypeDef
 
@@ -775,7 +783,7 @@ from mypy_boto3_alexaforbusiness.type_defs import IPDialInTypeDef
 Required fields:
 
 - `Endpoint`: `str`
-- `CommsProtocol`: [CommsProtocol](./literals.md#commsprotocol)
+- `CommsProtocol`: [CommsProtocolType](./literals.md#commsprotocoltype)
 
 ## InstantBookingTypeDef
 
@@ -917,8 +925,10 @@ Optional fields:
 - `RoomUtilizationMetricsEnabled`: `bool`
 - `EndOfMeetingReminder`:
   [EndOfMeetingReminderTypeDef](./type_defs.md#endofmeetingremindertypedef)
-- `InstantBooking`: [InstantBookingTypeDef](./type_defs.md#instantbookingtypedef)
-- `RequireCheckIn`: [RequireCheckInTypeDef](./type_defs.md#requirecheckintypedef)
+- `InstantBooking`:
+  [InstantBookingTypeDef](./type_defs.md#instantbookingtypedef)
+- `RequireCheckIn`:
+  [RequireCheckInTypeDef](./type_defs.md#requirecheckintypedef)
 
 ## MeetingSettingTypeDef
 
@@ -928,7 +938,7 @@ from mypy_boto3_alexaforbusiness.type_defs import MeetingSettingTypeDef
 
 Required fields:
 
-- `RequirePin`: [RequirePin](./literals.md#requirepin)
+- `RequirePin`: [RequirePinType](./literals.md#requirepintype)
 
 ## NetworkProfileDataTypeDef
 
@@ -942,9 +952,10 @@ Optional fields:
 - `NetworkProfileName`: `str`
 - `Description`: `str`
 - `Ssid`: `str`
-- `SecurityType`: [NetworkSecurityType](./literals.md#networksecuritytype)
+- `SecurityType`:
+  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype)
 - `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethod](./literals.md#networkeapmethod))
+  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
 - `CertificateAuthorityArn`: `str`
 
 ## NetworkProfileTypeDef
@@ -959,9 +970,10 @@ Optional fields:
 - `NetworkProfileName`: `str`
 - `Description`: `str`
 - `Ssid`: `str`
-- `SecurityType`: [NetworkSecurityType](./literals.md#networksecuritytype)
+- `SecurityType`:
+  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype)
 - `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethod](./literals.md#networkeapmethod))
+  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
@@ -1001,7 +1013,7 @@ from mypy_boto3_alexaforbusiness.type_defs import PhoneNumberTypeDef
 Required fields:
 
 - `Number`: `str`
-- `Type`: [PhoneNumberType](./literals.md#phonenumbertype)
+- `Type`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
 
 ## ProfileDataTypeDef
 
@@ -1016,9 +1028,9 @@ Optional fields:
 - `IsDefault`: `bool`
 - `Address`: `str`
 - `Timezone`: `str`
-- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit)
-- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
-- `WakeWord`: [WakeWord](./literals.md#wakeword)
+- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
+- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
+- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
 - `Locale`: `str`
 
 ## ProfileTypeDef
@@ -1034,9 +1046,9 @@ Optional fields:
 - `IsDefault`: `bool`
 - `Address`: `str`
 - `Timezone`: `str`
-- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit)
-- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
-- `WakeWord`: [WakeWord](./literals.md#wakeword)
+- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
+- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
+- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
 - `Locale`: `str`
 - `SetupModeDisabled`: `bool`
 - `MaxVolumeLimit`: `int`
@@ -1238,7 +1250,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SipAddressTypeDef
 Required fields:
 
 - `Uri`: `str`
-- `Type`: `Literal['WORK']` (see [SipType](./literals.md#siptype))
+- `Type`: `Literal['WORK']` (see [SipTypeType](./literals.md#siptypetype))
 
 ## SkillDetailsTypeDef
 
@@ -1294,8 +1306,8 @@ Optional fields:
 - `SkillId`: `str`
 - `SkillName`: `str`
 - `SupportsLinking`: `bool`
-- `EnablementType`: [EnablementType](./literals.md#enablementtype)
-- `SkillType`: [SkillType](./literals.md#skilltype)
+- `EnablementType`: [EnablementTypeType](./literals.md#enablementtypetype)
+- `SkillType`: [SkillTypeType](./literals.md#skilltypetype)
 
 ## SkillsStoreSkillTypeDef
 
@@ -1334,7 +1346,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SortTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Value`: [SortValue](./literals.md#sortvalue)
+- `Value`: [SortValueType](./literals.md#sortvaluetype)
 
 ## SsmlTypeDef
 
@@ -1344,7 +1356,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SsmlTypeDef
 
 Required fields:
 
-- `Locale`: `Literal['en-US']` (see [Locale](./literals.md#locale))
+- `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
 - `Value`: `str`
 
 ## TagTypeDef
@@ -1366,7 +1378,7 @@ from mypy_boto3_alexaforbusiness.type_defs import TextTypeDef
 
 Required fields:
 
-- `Locale`: `Literal['en-US']` (see [Locale](./literals.md#locale))
+- `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
 - `Value`: `str`
 
 ## UpdateEndOfMeetingReminderTypeDef
@@ -1379,7 +1391,7 @@ Optional fields:
 
 - `ReminderAtMinutes`: `List`\[`int`\]
 - `ReminderType`:
-  [EndOfMeetingReminderType](./literals.md#endofmeetingremindertype)
+  [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
 
 ## UpdateInstantBookingTypeDef
@@ -1432,5 +1444,6 @@ Optional fields:
 - `FirstName`: `str`
 - `LastName`: `str`
 - `Email`: `str`
-- `EnrollmentStatus`: [EnrollmentStatus](./literals.md#enrollmentstatus)
+- `EnrollmentStatus`:
+  [EnrollmentStatusType](./literals.md#enrollmentstatustype)
 - `EnrollmentId`: `str`

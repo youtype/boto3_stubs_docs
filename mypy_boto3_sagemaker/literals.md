@@ -3,87 +3,87 @@
 > [Index](..) > [SageMaker](.) > Literals
 
 Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
 [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [Literals for boto3 SageMaker module](#literals-for-boto3-sagemaker-module)
-  - [ActionStatus](#actionstatus)
-  - [AlgorithmSortBy](#algorithmsortby)
-  - [AlgorithmStatus](#algorithmstatus)
-  - [AppImageConfigSortKey](#appimageconfigsortkey)
-  - [AppInstanceType](#appinstancetype)
-  - [AppNetworkAccessType](#appnetworkaccesstype)
-  - [AppSortKey](#appsortkey)
-  - [AppStatus](#appstatus)
-  - [AppType](#apptype)
-  - [ArtifactSourceIdType](#artifactsourceidtype)
-  - [AssemblyType](#assemblytype)
-  - [AssociationEdgeType](#associationedgetype)
-  - [AthenaResultCompressionType](#athenaresultcompressiontype)
-  - [AthenaResultFormat](#athenaresultformat)
-  - [AuthMode](#authmode)
-  - [AutoMLJobObjectiveType](#automljobobjectivetype)
-  - [AutoMLJobSecondaryStatus](#automljobsecondarystatus)
-  - [AutoMLJobStatus](#automljobstatus)
-  - [AutoMLMetricEnum](#automlmetricenum)
-  - [AutoMLS3DataType](#automls3datatype)
-  - [AutoMLSortBy](#automlsortby)
-  - [AutoMLSortOrder](#automlsortorder)
-  - [AwsManagedHumanLoopRequestSource](#awsmanagedhumanlooprequestsource)
-  - [BatchStrategy](#batchstrategy)
-  - [BooleanOperator](#booleanoperator)
-  - [CandidateSortBy](#candidatesortby)
-  - [CandidateStatus](#candidatestatus)
-  - [CandidateStepType](#candidatesteptype)
-  - [CapacitySizeType](#capacitysizetype)
-  - [CaptureMode](#capturemode)
-  - [CaptureStatus](#capturestatus)
-  - [CodeRepositorySortBy](#coderepositorysortby)
-  - [CodeRepositorySortOrder](#coderepositorysortorder)
-  - [CompilationJobStatus](#compilationjobstatus)
-  - [CompressionType](#compressiontype)
-  - [ConditionOutcome](#conditionoutcome)
-  - [ContainerMode](#containermode)
-  - [ContentClassifier](#contentclassifier)
-  - [DataDistributionType](#datadistributiontype)
-  - [DetailedAlgorithmStatus](#detailedalgorithmstatus)
-  - [DetailedModelPackageStatus](#detailedmodelpackagestatus)
-  - [DirectInternetAccess](#directinternetaccess)
-  - [DomainStatus](#domainstatus)
-  - [EdgePackagingJobStatus](#edgepackagingjobstatus)
-  - [EndpointConfigSortKey](#endpointconfigsortkey)
+  - [ActionStatusType](#actionstatustype)
+  - [AlgorithmSortByType](#algorithmsortbytype)
+  - [AlgorithmStatusType](#algorithmstatustype)
+  - [AppImageConfigSortKeyType](#appimageconfigsortkeytype)
+  - [AppInstanceTypeType](#appinstancetypetype)
+  - [AppNetworkAccessTypeType](#appnetworkaccesstypetype)
+  - [AppSortKeyType](#appsortkeytype)
+  - [AppStatusType](#appstatustype)
+  - [AppTypeType](#apptypetype)
+  - [ArtifactSourceIdTypeType](#artifactsourceidtypetype)
+  - [AssemblyTypeType](#assemblytypetype)
+  - [AssociationEdgeTypeType](#associationedgetypetype)
+  - [AthenaResultCompressionTypeType](#athenaresultcompressiontypetype)
+  - [AthenaResultFormatType](#athenaresultformattype)
+  - [AuthModeType](#authmodetype)
+  - [AutoMLJobObjectiveTypeType](#automljobobjectivetypetype)
+  - [AutoMLJobSecondaryStatusType](#automljobsecondarystatustype)
+  - [AutoMLJobStatusType](#automljobstatustype)
+  - [AutoMLMetricEnumType](#automlmetricenumtype)
+  - [AutoMLS3DataTypeType](#automls3datatypetype)
+  - [AutoMLSortByType](#automlsortbytype)
+  - [AutoMLSortOrderType](#automlsortordertype)
+  - [AwsManagedHumanLoopRequestSourceType](#awsmanagedhumanlooprequestsourcetype)
+  - [BatchStrategyType](#batchstrategytype)
+  - [BooleanOperatorType](#booleanoperatortype)
+  - [CandidateSortByType](#candidatesortbytype)
+  - [CandidateStatusType](#candidatestatustype)
+  - [CandidateStepTypeType](#candidatesteptypetype)
+  - [CapacitySizeTypeType](#capacitysizetypetype)
+  - [CaptureModeType](#capturemodetype)
+  - [CaptureStatusType](#capturestatustype)
+  - [CodeRepositorySortByType](#coderepositorysortbytype)
+  - [CodeRepositorySortOrderType](#coderepositorysortordertype)
+  - [CompilationJobStatusType](#compilationjobstatustype)
+  - [CompressionTypeType](#compressiontypetype)
+  - [ConditionOutcomeType](#conditionoutcometype)
+  - [ContainerModeType](#containermodetype)
+  - [ContentClassifierType](#contentclassifiertype)
+  - [DataDistributionTypeType](#datadistributiontypetype)
+  - [DetailedAlgorithmStatusType](#detailedalgorithmstatustype)
+  - [DetailedModelPackageStatusType](#detailedmodelpackagestatustype)
+  - [DirectInternetAccessType](#directinternetaccesstype)
+  - [DomainStatusType](#domainstatustype)
+  - [EdgePackagingJobStatusType](#edgepackagingjobstatustype)
+  - [EndpointConfigSortKeyType](#endpointconfigsortkeytype)
   - [EndpointDeletedWaiterName](#endpointdeletedwaitername)
   - [EndpointInServiceWaiterName](#endpointinservicewaitername)
-  - [EndpointSortKey](#endpointsortkey)
-  - [EndpointStatus](#endpointstatus)
-  - [ExecutionStatus](#executionstatus)
-  - [FeatureGroupSortBy](#featuregroupsortby)
-  - [FeatureGroupSortOrder](#featuregroupsortorder)
-  - [FeatureGroupStatus](#featuregroupstatus)
-  - [FeatureType](#featuretype)
-  - [FileSystemAccessMode](#filesystemaccessmode)
-  - [FileSystemType](#filesystemtype)
-  - [FlowDefinitionStatus](#flowdefinitionstatus)
-  - [Framework](#framework)
-  - [HumanTaskUiStatus](#humantaskuistatus)
-  - [HyperParameterScalingType](#hyperparameterscalingtype)
-  - [HyperParameterTuningJobObjectiveType](#hyperparametertuningjobobjectivetype)
-  - [HyperParameterTuningJobSortByOptions](#hyperparametertuningjobsortbyoptions)
-  - [HyperParameterTuningJobStatus](#hyperparametertuningjobstatus)
-  - [HyperParameterTuningJobStrategyType](#hyperparametertuningjobstrategytype)
-  - [HyperParameterTuningJobWarmStartType](#hyperparametertuningjobwarmstarttype)
-  - [ImageSortBy](#imagesortby)
-  - [ImageSortOrder](#imagesortorder)
-  - [ImageStatus](#imagestatus)
-  - [ImageVersionSortBy](#imageversionsortby)
-  - [ImageVersionSortOrder](#imageversionsortorder)
-  - [ImageVersionStatus](#imageversionstatus)
-  - [InferenceExecutionMode](#inferenceexecutionmode)
-  - [InputMode](#inputmode)
-  - [InstanceType](#instancetype)
-  - [JoinSource](#joinsource)
-  - [LabelingJobStatus](#labelingjobstatus)
+  - [EndpointSortKeyType](#endpointsortkeytype)
+  - [EndpointStatusType](#endpointstatustype)
+  - [ExecutionStatusType](#executionstatustype)
+  - [FeatureGroupSortByType](#featuregroupsortbytype)
+  - [FeatureGroupSortOrderType](#featuregroupsortordertype)
+  - [FeatureGroupStatusType](#featuregroupstatustype)
+  - [FeatureTypeType](#featuretypetype)
+  - [FileSystemAccessModeType](#filesystemaccessmodetype)
+  - [FileSystemTypeType](#filesystemtypetype)
+  - [FlowDefinitionStatusType](#flowdefinitionstatustype)
+  - [FrameworkType](#frameworktype)
+  - [HumanTaskUiStatusType](#humantaskuistatustype)
+  - [HyperParameterScalingTypeType](#hyperparameterscalingtypetype)
+  - [HyperParameterTuningJobObjectiveTypeType](#hyperparametertuningjobobjectivetypetype)
+  - [HyperParameterTuningJobSortByOptionsType](#hyperparametertuningjobsortbyoptionstype)
+  - [HyperParameterTuningJobStatusType](#hyperparametertuningjobstatustype)
+  - [HyperParameterTuningJobStrategyTypeType](#hyperparametertuningjobstrategytypetype)
+  - [HyperParameterTuningJobWarmStartTypeType](#hyperparametertuningjobwarmstarttypetype)
+  - [ImageSortByType](#imagesortbytype)
+  - [ImageSortOrderType](#imagesortordertype)
+  - [ImageStatusType](#imagestatustype)
+  - [ImageVersionSortByType](#imageversionsortbytype)
+  - [ImageVersionSortOrderType](#imageversionsortordertype)
+  - [ImageVersionStatusType](#imageversionstatustype)
+  - [InferenceExecutionModeType](#inferenceexecutionmodetype)
+  - [InputModeType](#inputmodetype)
+  - [InstanceTypeType](#instancetypetype)
+  - [JoinSourceType](#joinsourcetype)
+  - [LabelingJobStatusType](#labelingjobstatustype)
   - [ListActionsPaginatorName](#listactionspaginatorname)
   - [ListAlgorithmsPaginatorName](#listalgorithmspaginatorname)
   - [ListAppImageConfigsPaginatorName](#listappimageconfigspaginatorname)
@@ -94,15 +94,15 @@ type annotations stubs module
   - [ListCandidatesForAutoMLJobPaginatorName](#listcandidatesforautomljobpaginatorname)
   - [ListCodeRepositoriesPaginatorName](#listcoderepositoriespaginatorname)
   - [ListCompilationJobsPaginatorName](#listcompilationjobspaginatorname)
-  - [ListCompilationJobsSortBy](#listcompilationjobssortby)
+  - [ListCompilationJobsSortByType](#listcompilationjobssortbytype)
   - [ListContextsPaginatorName](#listcontextspaginatorname)
   - [ListDataQualityJobDefinitionsPaginatorName](#listdataqualityjobdefinitionspaginatorname)
   - [ListDeviceFleetsPaginatorName](#listdevicefleetspaginatorname)
-  - [ListDeviceFleetsSortBy](#listdevicefleetssortby)
+  - [ListDeviceFleetsSortByType](#listdevicefleetssortbytype)
   - [ListDevicesPaginatorName](#listdevicespaginatorname)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [ListEdgePackagingJobsPaginatorName](#listedgepackagingjobspaginatorname)
-  - [ListEdgePackagingJobsSortBy](#listedgepackagingjobssortby)
+  - [ListEdgePackagingJobsSortByType](#listedgepackagingjobssortbytype)
   - [ListEndpointConfigsPaginatorName](#listendpointconfigspaginatorname)
   - [ListEndpointsPaginatorName](#listendpointspaginatorname)
   - [ListExperimentsPaginatorName](#listexperimentspaginatorname)
@@ -113,7 +113,7 @@ type annotations stubs module
   - [ListImageVersionsPaginatorName](#listimageversionspaginatorname)
   - [ListImagesPaginatorName](#listimagespaginatorname)
   - [ListLabelingJobsForWorkteamPaginatorName](#listlabelingjobsforworkteampaginatorname)
-  - [ListLabelingJobsForWorkteamSortByOptions](#listlabelingjobsforworkteamsortbyoptions)
+  - [ListLabelingJobsForWorkteamSortByOptionsType](#listlabelingjobsforworkteamsortbyoptionstype)
   - [ListLabelingJobsPaginatorName](#listlabelingjobspaginatorname)
   - [ListModelBiasJobDefinitionsPaginatorName](#listmodelbiasjobdefinitionspaginatorname)
   - [ListModelExplainabilityJobDefinitionsPaginatorName](#listmodelexplainabilityjobdefinitionspaginatorname)
@@ -139,105 +139,105 @@ type annotations stubs module
   - [ListTrialsPaginatorName](#listtrialspaginatorname)
   - [ListUserProfilesPaginatorName](#listuserprofilespaginatorname)
   - [ListWorkforcesPaginatorName](#listworkforcespaginatorname)
-  - [ListWorkforcesSortByOptions](#listworkforcessortbyoptions)
+  - [ListWorkforcesSortByOptionsType](#listworkforcessortbyoptionstype)
   - [ListWorkteamsPaginatorName](#listworkteamspaginatorname)
-  - [ListWorkteamsSortByOptions](#listworkteamssortbyoptions)
-  - [ModelApprovalStatus](#modelapprovalstatus)
-  - [ModelCacheSetting](#modelcachesetting)
-  - [ModelPackageGroupSortBy](#modelpackagegroupsortby)
-  - [ModelPackageGroupStatus](#modelpackagegroupstatus)
-  - [ModelPackageSortBy](#modelpackagesortby)
-  - [ModelPackageStatus](#modelpackagestatus)
-  - [ModelPackageType](#modelpackagetype)
-  - [ModelSortKey](#modelsortkey)
-  - [MonitoringExecutionSortKey](#monitoringexecutionsortkey)
-  - [MonitoringJobDefinitionSortKey](#monitoringjobdefinitionsortkey)
-  - [MonitoringProblemType](#monitoringproblemtype)
-  - [MonitoringScheduleSortKey](#monitoringschedulesortkey)
-  - [MonitoringType](#monitoringtype)
-  - [NotebookInstanceAcceleratorType](#notebookinstanceacceleratortype)
+  - [ListWorkteamsSortByOptionsType](#listworkteamssortbyoptionstype)
+  - [ModelApprovalStatusType](#modelapprovalstatustype)
+  - [ModelCacheSettingType](#modelcachesettingtype)
+  - [ModelPackageGroupSortByType](#modelpackagegroupsortbytype)
+  - [ModelPackageGroupStatusType](#modelpackagegroupstatustype)
+  - [ModelPackageSortByType](#modelpackagesortbytype)
+  - [ModelPackageStatusType](#modelpackagestatustype)
+  - [ModelPackageTypeType](#modelpackagetypetype)
+  - [ModelSortKeyType](#modelsortkeytype)
+  - [MonitoringExecutionSortKeyType](#monitoringexecutionsortkeytype)
+  - [MonitoringJobDefinitionSortKeyType](#monitoringjobdefinitionsortkeytype)
+  - [MonitoringProblemTypeType](#monitoringproblemtypetype)
+  - [MonitoringScheduleSortKeyType](#monitoringschedulesortkeytype)
+  - [MonitoringTypeType](#monitoringtypetype)
+  - [NotebookInstanceAcceleratorTypeType](#notebookinstanceacceleratortypetype)
   - [NotebookInstanceDeletedWaiterName](#notebookinstancedeletedwaitername)
   - [NotebookInstanceInServiceWaiterName](#notebookinstanceinservicewaitername)
-  - [NotebookInstanceLifecycleConfigSortKey](#notebookinstancelifecycleconfigsortkey)
-  - [NotebookInstanceLifecycleConfigSortOrder](#notebookinstancelifecycleconfigsortorder)
-  - [NotebookInstanceSortKey](#notebookinstancesortkey)
-  - [NotebookInstanceSortOrder](#notebookinstancesortorder)
-  - [NotebookInstanceStatus](#notebookinstancestatus)
+  - [NotebookInstanceLifecycleConfigSortKeyType](#notebookinstancelifecycleconfigsortkeytype)
+  - [NotebookInstanceLifecycleConfigSortOrderType](#notebookinstancelifecycleconfigsortordertype)
+  - [NotebookInstanceSortKeyType](#notebookinstancesortkeytype)
+  - [NotebookInstanceSortOrderType](#notebookinstancesortordertype)
+  - [NotebookInstanceStatusType](#notebookinstancestatustype)
   - [NotebookInstanceStoppedWaiterName](#notebookinstancestoppedwaitername)
-  - [NotebookOutputOption](#notebookoutputoption)
-  - [ObjectiveStatus](#objectivestatus)
-  - [OfflineStoreStatusValue](#offlinestorestatusvalue)
-  - [Operator](#operator)
-  - [OrderKey](#orderkey)
-  - [ParameterType](#parametertype)
-  - [PipelineExecutionStatus](#pipelineexecutionstatus)
-  - [PipelineStatus](#pipelinestatus)
-  - [ProblemType](#problemtype)
-  - [ProcessingInstanceType](#processinginstancetype)
+  - [NotebookOutputOptionType](#notebookoutputoptiontype)
+  - [ObjectiveStatusType](#objectivestatustype)
+  - [OfflineStoreStatusValueType](#offlinestorestatusvaluetype)
+  - [OperatorType](#operatortype)
+  - [OrderKeyType](#orderkeytype)
+  - [ParameterTypeType](#parametertypetype)
+  - [PipelineExecutionStatusType](#pipelineexecutionstatustype)
+  - [PipelineStatusType](#pipelinestatustype)
+  - [ProblemTypeType](#problemtypetype)
+  - [ProcessingInstanceTypeType](#processinginstancetypetype)
   - [ProcessingJobCompletedOrStoppedWaiterName](#processingjobcompletedorstoppedwaitername)
-  - [ProcessingJobStatus](#processingjobstatus)
-  - [ProcessingS3CompressionType](#processings3compressiontype)
-  - [ProcessingS3DataDistributionType](#processings3datadistributiontype)
-  - [ProcessingS3DataType](#processings3datatype)
-  - [ProcessingS3InputMode](#processings3inputmode)
-  - [ProcessingS3UploadMode](#processings3uploadmode)
-  - [ProductionVariantAcceleratorType](#productionvariantacceleratortype)
-  - [ProductionVariantInstanceType](#productionvariantinstancetype)
-  - [ProfilingStatus](#profilingstatus)
-  - [ProjectSortBy](#projectsortby)
-  - [ProjectSortOrder](#projectsortorder)
-  - [ProjectStatus](#projectstatus)
-  - [RecordWrapper](#recordwrapper)
-  - [RedshiftResultCompressionType](#redshiftresultcompressiontype)
-  - [RedshiftResultFormat](#redshiftresultformat)
-  - [RepositoryAccessMode](#repositoryaccessmode)
-  - [ResourceType](#resourcetype)
-  - [RetentionType](#retentiontype)
-  - [RootAccess](#rootaccess)
-  - [RuleEvaluationStatus](#ruleevaluationstatus)
-  - [S3DataDistribution](#s3datadistribution)
-  - [S3DataType](#s3datatype)
-  - [SagemakerServicecatalogStatus](#sagemakerservicecatalogstatus)
-  - [ScheduleStatus](#schedulestatus)
+  - [ProcessingJobStatusType](#processingjobstatustype)
+  - [ProcessingS3CompressionTypeType](#processings3compressiontypetype)
+  - [ProcessingS3DataDistributionTypeType](#processings3datadistributiontypetype)
+  - [ProcessingS3DataTypeType](#processings3datatypetype)
+  - [ProcessingS3InputModeType](#processings3inputmodetype)
+  - [ProcessingS3UploadModeType](#processings3uploadmodetype)
+  - [ProductionVariantAcceleratorTypeType](#productionvariantacceleratortypetype)
+  - [ProductionVariantInstanceTypeType](#productionvariantinstancetypetype)
+  - [ProfilingStatusType](#profilingstatustype)
+  - [ProjectSortByType](#projectsortbytype)
+  - [ProjectSortOrderType](#projectsortordertype)
+  - [ProjectStatusType](#projectstatustype)
+  - [RecordWrapperType](#recordwrappertype)
+  - [RedshiftResultCompressionTypeType](#redshiftresultcompressiontypetype)
+  - [RedshiftResultFormatType](#redshiftresultformattype)
+  - [RepositoryAccessModeType](#repositoryaccessmodetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [RetentionTypeType](#retentiontypetype)
+  - [RootAccessType](#rootaccesstype)
+  - [RuleEvaluationStatusType](#ruleevaluationstatustype)
+  - [S3DataDistributionType](#s3datadistributiontype)
+  - [S3DataTypeType](#s3datatypetype)
+  - [SagemakerServicecatalogStatusType](#sagemakerservicecatalogstatustype)
+  - [ScheduleStatusType](#schedulestatustype)
   - [SearchPaginatorName](#searchpaginatorname)
-  - [SearchSortOrder](#searchsortorder)
-  - [SecondaryStatus](#secondarystatus)
-  - [SortActionsBy](#sortactionsby)
-  - [SortArtifactsBy](#sortartifactsby)
-  - [SortAssociationsBy](#sortassociationsby)
-  - [SortBy](#sortby)
-  - [SortContextsBy](#sortcontextsby)
-  - [SortExperimentsBy](#sortexperimentsby)
-  - [SortOrder](#sortorder)
-  - [SortPipelineExecutionsBy](#sortpipelineexecutionsby)
-  - [SortPipelinesBy](#sortpipelinesby)
-  - [SortTrialComponentsBy](#sorttrialcomponentsby)
-  - [SortTrialsBy](#sorttrialsby)
-  - [SplitType](#splittype)
-  - [StepStatus](#stepstatus)
-  - [TargetDevice](#targetdevice)
-  - [TargetPlatformAccelerator](#targetplatformaccelerator)
-  - [TargetPlatformArch](#targetplatformarch)
-  - [TargetPlatformOs](#targetplatformos)
-  - [TrafficRoutingConfigType](#trafficroutingconfigtype)
-  - [TrainingInputMode](#traininginputmode)
-  - [TrainingInstanceType](#traininginstancetype)
+  - [SearchSortOrderType](#searchsortordertype)
+  - [SecondaryStatusType](#secondarystatustype)
+  - [SortActionsByType](#sortactionsbytype)
+  - [SortArtifactsByType](#sortartifactsbytype)
+  - [SortAssociationsByType](#sortassociationsbytype)
+  - [SortByType](#sortbytype)
+  - [SortContextsByType](#sortcontextsbytype)
+  - [SortExperimentsByType](#sortexperimentsbytype)
+  - [SortOrderType](#sortordertype)
+  - [SortPipelineExecutionsByType](#sortpipelineexecutionsbytype)
+  - [SortPipelinesByType](#sortpipelinesbytype)
+  - [SortTrialComponentsByType](#sorttrialcomponentsbytype)
+  - [SortTrialsByType](#sorttrialsbytype)
+  - [SplitTypeType](#splittypetype)
+  - [StepStatusType](#stepstatustype)
+  - [TargetDeviceType](#targetdevicetype)
+  - [TargetPlatformAcceleratorType](#targetplatformacceleratortype)
+  - [TargetPlatformArchType](#targetplatformarchtype)
+  - [TargetPlatformOsType](#targetplatformostype)
+  - [TrafficRoutingConfigTypeType](#trafficroutingconfigtypetype)
+  - [TrainingInputModeType](#traininginputmodetype)
+  - [TrainingInstanceTypeType](#traininginstancetypetype)
   - [TrainingJobCompletedOrStoppedWaiterName](#trainingjobcompletedorstoppedwaitername)
-  - [TrainingJobEarlyStoppingType](#trainingjobearlystoppingtype)
-  - [TrainingJobSortByOptions](#trainingjobsortbyoptions)
-  - [TrainingJobStatus](#trainingjobstatus)
-  - [TransformInstanceType](#transforminstancetype)
+  - [TrainingJobEarlyStoppingTypeType](#trainingjobearlystoppingtypetype)
+  - [TrainingJobSortByOptionsType](#trainingjobsortbyoptionstype)
+  - [TrainingJobStatusType](#trainingjobstatustype)
+  - [TransformInstanceTypeType](#transforminstancetypetype)
   - [TransformJobCompletedOrStoppedWaiterName](#transformjobcompletedorstoppedwaitername)
-  - [TransformJobStatus](#transformjobstatus)
-  - [TrialComponentPrimaryStatus](#trialcomponentprimarystatus)
-  - [UserProfileSortKey](#userprofilesortkey)
-  - [UserProfileStatus](#userprofilestatus)
-  - [VariantPropertyType](#variantpropertytype)
+  - [TransformJobStatusType](#transformjobstatustype)
+  - [TrialComponentPrimaryStatusType](#trialcomponentprimarystatustype)
+  - [UserProfileSortKeyType](#userprofilesortkeytype)
+  - [UserProfileStatusType](#userprofilestatustype)
+  - [VariantPropertyTypeType](#variantpropertytypetype)
 
-## ActionStatus
+## ActionStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ActionStatus
+from mypy_boto3_sagemaker.literals import ActionStatusType
 ```
 
 Values:
@@ -249,10 +249,10 @@ Values:
 - `Stopping`
 - `Unknown`
 
-## AlgorithmSortBy
+## AlgorithmSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import AlgorithmSortBy
+from mypy_boto3_sagemaker.literals import AlgorithmSortByType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## AlgorithmStatus
+## AlgorithmStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import AlgorithmStatus
+from mypy_boto3_sagemaker.literals import AlgorithmStatusType
 ```
 
 Values:
@@ -274,10 +274,10 @@ Values:
 - `InProgress`
 - `Pending`
 
-## AppImageConfigSortKey
+## AppImageConfigSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import AppImageConfigSortKey
+from mypy_boto3_sagemaker.literals import AppImageConfigSortKeyType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `LastModifiedTime`
 - `Name`
 
-## AppInstanceType
+## AppInstanceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AppInstanceType
+from mypy_boto3_sagemaker.literals import AppInstanceTypeType
 ```
 
 Values:
@@ -327,10 +327,10 @@ Values:
 - `ml.t3.xlarge`
 - `system`
 
-## AppNetworkAccessType
+## AppNetworkAccessTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AppNetworkAccessType
+from mypy_boto3_sagemaker.literals import AppNetworkAccessTypeType
 ```
 
 Values:
@@ -338,20 +338,20 @@ Values:
 - `PublicInternetOnly`
 - `VpcOnly`
 
-## AppSortKey
+## AppSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import AppSortKey
+from mypy_boto3_sagemaker.literals import AppSortKeyType
 ```
 
 Values:
 
 - `CreationTime`
 
-## AppStatus
+## AppStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import AppStatus
+from mypy_boto3_sagemaker.literals import AppStatusType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `InService`
 - `Pending`
 
-## AppType
+## AppTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AppType
+from mypy_boto3_sagemaker.literals import AppTypeType
 ```
 
 Values:
@@ -374,10 +374,10 @@ Values:
 - `KernelGateway`
 - `TensorBoard`
 
-## ArtifactSourceIdType
+## ArtifactSourceIdTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ArtifactSourceIdType
+from mypy_boto3_sagemaker.literals import ArtifactSourceIdTypeType
 ```
 
 Values:
@@ -387,10 +387,10 @@ Values:
 - `S3ETag`
 - `S3Version`
 
-## AssemblyType
+## AssemblyTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AssemblyType
+from mypy_boto3_sagemaker.literals import AssemblyTypeType
 ```
 
 Values:
@@ -398,10 +398,10 @@ Values:
 - `Line`
 - `None`
 
-## AssociationEdgeType
+## AssociationEdgeTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AssociationEdgeType
+from mypy_boto3_sagemaker.literals import AssociationEdgeTypeType
 ```
 
 Values:
@@ -411,10 +411,10 @@ Values:
 - `DerivedFrom`
 - `Produced`
 
-## AthenaResultCompressionType
+## AthenaResultCompressionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AthenaResultCompressionType
+from mypy_boto3_sagemaker.literals import AthenaResultCompressionTypeType
 ```
 
 Values:
@@ -423,10 +423,10 @@ Values:
 - `SNAPPY`
 - `ZLIB`
 
-## AthenaResultFormat
+## AthenaResultFormatType
 
 ```python
-from mypy_boto3_sagemaker.literals import AthenaResultFormat
+from mypy_boto3_sagemaker.literals import AthenaResultFormatType
 ```
 
 Values:
@@ -437,10 +437,10 @@ Values:
 - `PARQUET`
 - `TEXTFILE`
 
-## AuthMode
+## AuthModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AuthMode
+from mypy_boto3_sagemaker.literals import AuthModeType
 ```
 
 Values:
@@ -448,10 +448,10 @@ Values:
 - `IAM`
 - `SSO`
 
-## AutoMLJobObjectiveType
+## AutoMLJobObjectiveTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLJobObjectiveType
+from mypy_boto3_sagemaker.literals import AutoMLJobObjectiveTypeType
 ```
 
 Values:
@@ -459,10 +459,10 @@ Values:
 - `Maximize`
 - `Minimize`
 
-## AutoMLJobSecondaryStatus
+## AutoMLJobSecondaryStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLJobSecondaryStatus
+from mypy_boto3_sagemaker.literals import AutoMLJobSecondaryStatusType
 ```
 
 Values:
@@ -483,10 +483,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## AutoMLJobStatus
+## AutoMLJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLJobStatus
+from mypy_boto3_sagemaker.literals import AutoMLJobStatusType
 ```
 
 Values:
@@ -497,10 +497,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## AutoMLMetricEnum
+## AutoMLMetricEnumType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLMetricEnum
+from mypy_boto3_sagemaker.literals import AutoMLMetricEnumType
 ```
 
 Values:
@@ -511,10 +511,10 @@ Values:
 - `F1macro`
 - `MSE`
 
-## AutoMLS3DataType
+## AutoMLS3DataTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLS3DataType
+from mypy_boto3_sagemaker.literals import AutoMLS3DataTypeType
 ```
 
 Values:
@@ -522,10 +522,10 @@ Values:
 - `ManifestFile`
 - `S3Prefix`
 
-## AutoMLSortBy
+## AutoMLSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLSortBy
+from mypy_boto3_sagemaker.literals import AutoMLSortByType
 ```
 
 Values:
@@ -534,10 +534,10 @@ Values:
 - `Name`
 - `Status`
 
-## AutoMLSortOrder
+## AutoMLSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import AutoMLSortOrder
+from mypy_boto3_sagemaker.literals import AutoMLSortOrderType
 ```
 
 Values:
@@ -545,10 +545,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## AwsManagedHumanLoopRequestSource
+## AwsManagedHumanLoopRequestSourceType
 
 ```python
-from mypy_boto3_sagemaker.literals import AwsManagedHumanLoopRequestSource
+from mypy_boto3_sagemaker.literals import AwsManagedHumanLoopRequestSourceType
 ```
 
 Values:
@@ -556,10 +556,10 @@ Values:
 - `AWS/Rekognition/DetectModerationLabels/Image/V3`
 - `AWS/Textract/AnalyzeDocument/Forms/V1`
 
-## BatchStrategy
+## BatchStrategyType
 
 ```python
-from mypy_boto3_sagemaker.literals import BatchStrategy
+from mypy_boto3_sagemaker.literals import BatchStrategyType
 ```
 
 Values:
@@ -567,10 +567,10 @@ Values:
 - `MultiRecord`
 - `SingleRecord`
 
-## BooleanOperator
+## BooleanOperatorType
 
 ```python
-from mypy_boto3_sagemaker.literals import BooleanOperator
+from mypy_boto3_sagemaker.literals import BooleanOperatorType
 ```
 
 Values:
@@ -578,10 +578,10 @@ Values:
 - `And`
 - `Or`
 
-## CandidateSortBy
+## CandidateSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import CandidateSortBy
+from mypy_boto3_sagemaker.literals import CandidateSortByType
 ```
 
 Values:
@@ -590,10 +590,10 @@ Values:
 - `FinalObjectiveMetricValue`
 - `Status`
 
-## CandidateStatus
+## CandidateStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import CandidateStatus
+from mypy_boto3_sagemaker.literals import CandidateStatusType
 ```
 
 Values:
@@ -604,10 +604,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## CandidateStepType
+## CandidateStepTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import CandidateStepType
+from mypy_boto3_sagemaker.literals import CandidateStepTypeType
 ```
 
 Values:
@@ -616,10 +616,10 @@ Values:
 - `AWS::SageMaker::TrainingJob`
 - `AWS::SageMaker::TransformJob`
 
-## CapacitySizeType
+## CapacitySizeTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import CapacitySizeType
+from mypy_boto3_sagemaker.literals import CapacitySizeTypeType
 ```
 
 Values:
@@ -627,10 +627,10 @@ Values:
 - `CAPACITY_PERCENT`
 - `INSTANCE_COUNT`
 
-## CaptureMode
+## CaptureModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import CaptureMode
+from mypy_boto3_sagemaker.literals import CaptureModeType
 ```
 
 Values:
@@ -638,10 +638,10 @@ Values:
 - `Input`
 - `Output`
 
-## CaptureStatus
+## CaptureStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import CaptureStatus
+from mypy_boto3_sagemaker.literals import CaptureStatusType
 ```
 
 Values:
@@ -649,10 +649,10 @@ Values:
 - `Started`
 - `Stopped`
 
-## CodeRepositorySortBy
+## CodeRepositorySortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import CodeRepositorySortBy
+from mypy_boto3_sagemaker.literals import CodeRepositorySortByType
 ```
 
 Values:
@@ -661,10 +661,10 @@ Values:
 - `LastModifiedTime`
 - `Name`
 
-## CodeRepositorySortOrder
+## CodeRepositorySortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import CodeRepositorySortOrder
+from mypy_boto3_sagemaker.literals import CodeRepositorySortOrderType
 ```
 
 Values:
@@ -672,10 +672,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## CompilationJobStatus
+## CompilationJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import CompilationJobStatus
+from mypy_boto3_sagemaker.literals import CompilationJobStatusType
 ```
 
 Values:
@@ -687,10 +687,10 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
-## CompressionType
+## CompressionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import CompressionType
+from mypy_boto3_sagemaker.literals import CompressionTypeType
 ```
 
 Values:
@@ -698,10 +698,10 @@ Values:
 - `Gzip`
 - `None`
 
-## ConditionOutcome
+## ConditionOutcomeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ConditionOutcome
+from mypy_boto3_sagemaker.literals import ConditionOutcomeType
 ```
 
 Values:
@@ -709,10 +709,10 @@ Values:
 - `False`
 - `True`
 
-## ContainerMode
+## ContainerModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ContainerMode
+from mypy_boto3_sagemaker.literals import ContainerModeType
 ```
 
 Values:
@@ -720,10 +720,10 @@ Values:
 - `MultiModel`
 - `SingleModel`
 
-## ContentClassifier
+## ContentClassifierType
 
 ```python
-from mypy_boto3_sagemaker.literals import ContentClassifier
+from mypy_boto3_sagemaker.literals import ContentClassifierType
 ```
 
 Values:
@@ -731,10 +731,10 @@ Values:
 - `FreeOfAdultContent`
 - `FreeOfPersonallyIdentifiableInformation`
 
-## DataDistributionType
+## DataDistributionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import DataDistributionType
+from mypy_boto3_sagemaker.literals import DataDistributionTypeType
 ```
 
 Values:
@@ -742,10 +742,10 @@ Values:
 - `FullyReplicated`
 - `ShardedByS3Key`
 
-## DetailedAlgorithmStatus
+## DetailedAlgorithmStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import DetailedAlgorithmStatus
+from mypy_boto3_sagemaker.literals import DetailedAlgorithmStatusType
 ```
 
 Values:
@@ -755,10 +755,10 @@ Values:
 - `InProgress`
 - `NotStarted`
 
-## DetailedModelPackageStatus
+## DetailedModelPackageStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import DetailedModelPackageStatus
+from mypy_boto3_sagemaker.literals import DetailedModelPackageStatusType
 ```
 
 Values:
@@ -768,10 +768,10 @@ Values:
 - `InProgress`
 - `NotStarted`
 
-## DirectInternetAccess
+## DirectInternetAccessType
 
 ```python
-from mypy_boto3_sagemaker.literals import DirectInternetAccess
+from mypy_boto3_sagemaker.literals import DirectInternetAccessType
 ```
 
 Values:
@@ -779,10 +779,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## DomainStatus
+## DomainStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import DomainStatus
+from mypy_boto3_sagemaker.literals import DomainStatusType
 ```
 
 Values:
@@ -795,10 +795,10 @@ Values:
 - `Update_Failed`
 - `Updating`
 
-## EdgePackagingJobStatus
+## EdgePackagingJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import EdgePackagingJobStatus
+from mypy_boto3_sagemaker.literals import EdgePackagingJobStatusType
 ```
 
 Values:
@@ -810,10 +810,10 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
-## EndpointConfigSortKey
+## EndpointConfigSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import EndpointConfigSortKey
+from mypy_boto3_sagemaker.literals import EndpointConfigSortKeyType
 ```
 
 Values:
@@ -841,10 +841,10 @@ Values:
 
 - `endpoint_in_service`
 
-## EndpointSortKey
+## EndpointSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import EndpointSortKey
+from mypy_boto3_sagemaker.literals import EndpointSortKeyType
 ```
 
 Values:
@@ -853,10 +853,10 @@ Values:
 - `Name`
 - `Status`
 
-## EndpointStatus
+## EndpointStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import EndpointStatus
+from mypy_boto3_sagemaker.literals import EndpointStatusType
 ```
 
 Values:
@@ -870,10 +870,10 @@ Values:
 - `SystemUpdating`
 - `Updating`
 
-## ExecutionStatus
+## ExecutionStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ExecutionStatus
+from mypy_boto3_sagemaker.literals import ExecutionStatusType
 ```
 
 Values:
@@ -886,10 +886,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## FeatureGroupSortBy
+## FeatureGroupSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import FeatureGroupSortBy
+from mypy_boto3_sagemaker.literals import FeatureGroupSortByType
 ```
 
 Values:
@@ -899,10 +899,10 @@ Values:
 - `Name`
 - `OfflineStoreStatus`
 
-## FeatureGroupSortOrder
+## FeatureGroupSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import FeatureGroupSortOrder
+from mypy_boto3_sagemaker.literals import FeatureGroupSortOrderType
 ```
 
 Values:
@@ -910,10 +910,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## FeatureGroupStatus
+## FeatureGroupStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import FeatureGroupStatus
+from mypy_boto3_sagemaker.literals import FeatureGroupStatusType
 ```
 
 Values:
@@ -924,10 +924,10 @@ Values:
 - `DeleteFailed`
 - `Deleting`
 
-## FeatureType
+## FeatureTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import FeatureType
+from mypy_boto3_sagemaker.literals import FeatureTypeType
 ```
 
 Values:
@@ -936,10 +936,10 @@ Values:
 - `Integral`
 - `String`
 
-## FileSystemAccessMode
+## FileSystemAccessModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import FileSystemAccessMode
+from mypy_boto3_sagemaker.literals import FileSystemAccessModeType
 ```
 
 Values:
@@ -947,10 +947,10 @@ Values:
 - `ro`
 - `rw`
 
-## FileSystemType
+## FileSystemTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import FileSystemType
+from mypy_boto3_sagemaker.literals import FileSystemTypeType
 ```
 
 Values:
@@ -958,10 +958,10 @@ Values:
 - `EFS`
 - `FSxLustre`
 
-## FlowDefinitionStatus
+## FlowDefinitionStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import FlowDefinitionStatus
+from mypy_boto3_sagemaker.literals import FlowDefinitionStatusType
 ```
 
 Values:
@@ -971,10 +971,10 @@ Values:
 - `Failed`
 - `Initializing`
 
-## Framework
+## FrameworkType
 
 ```python
-from mypy_boto3_sagemaker.literals import Framework
+from mypy_boto3_sagemaker.literals import FrameworkType
 ```
 
 Values:
@@ -989,10 +989,10 @@ Values:
 - `TFLITE`
 - `XGBOOST`
 
-## HumanTaskUiStatus
+## HumanTaskUiStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import HumanTaskUiStatus
+from mypy_boto3_sagemaker.literals import HumanTaskUiStatusType
 ```
 
 Values:
@@ -1000,10 +1000,10 @@ Values:
 - `Active`
 - `Deleting`
 
-## HyperParameterScalingType
+## HyperParameterScalingTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import HyperParameterScalingType
+from mypy_boto3_sagemaker.literals import HyperParameterScalingTypeType
 ```
 
 Values:
@@ -1013,10 +1013,10 @@ Values:
 - `Logarithmic`
 - `ReverseLogarithmic`
 
-## HyperParameterTuningJobObjectiveType
+## HyperParameterTuningJobObjectiveTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import HyperParameterTuningJobObjectiveType
+from mypy_boto3_sagemaker.literals import HyperParameterTuningJobObjectiveTypeType
 ```
 
 Values:
@@ -1024,10 +1024,10 @@ Values:
 - `Maximize`
 - `Minimize`
 
-## HyperParameterTuningJobSortByOptions
+## HyperParameterTuningJobSortByOptionsType
 
 ```python
-from mypy_boto3_sagemaker.literals import HyperParameterTuningJobSortByOptions
+from mypy_boto3_sagemaker.literals import HyperParameterTuningJobSortByOptionsType
 ```
 
 Values:
@@ -1036,10 +1036,10 @@ Values:
 - `Name`
 - `Status`
 
-## HyperParameterTuningJobStatus
+## HyperParameterTuningJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import HyperParameterTuningJobStatus
+from mypy_boto3_sagemaker.literals import HyperParameterTuningJobStatusType
 ```
 
 Values:
@@ -1050,10 +1050,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## HyperParameterTuningJobStrategyType
+## HyperParameterTuningJobStrategyTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import HyperParameterTuningJobStrategyType
+from mypy_boto3_sagemaker.literals import HyperParameterTuningJobStrategyTypeType
 ```
 
 Values:
@@ -1061,10 +1061,10 @@ Values:
 - `Bayesian`
 - `Random`
 
-## HyperParameterTuningJobWarmStartType
+## HyperParameterTuningJobWarmStartTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import HyperParameterTuningJobWarmStartType
+from mypy_boto3_sagemaker.literals import HyperParameterTuningJobWarmStartTypeType
 ```
 
 Values:
@@ -1072,10 +1072,10 @@ Values:
 - `IdenticalDataAndAlgorithm`
 - `TransferLearning`
 
-## ImageSortBy
+## ImageSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ImageSortBy
+from mypy_boto3_sagemaker.literals import ImageSortByType
 ```
 
 Values:
@@ -1084,10 +1084,10 @@ Values:
 - `IMAGE_NAME`
 - `LAST_MODIFIED_TIME`
 
-## ImageSortOrder
+## ImageSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import ImageSortOrder
+from mypy_boto3_sagemaker.literals import ImageSortOrderType
 ```
 
 Values:
@@ -1095,10 +1095,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## ImageStatus
+## ImageStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ImageStatus
+from mypy_boto3_sagemaker.literals import ImageStatusType
 ```
 
 Values:
@@ -1111,10 +1111,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
-## ImageVersionSortBy
+## ImageVersionSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ImageVersionSortBy
+from mypy_boto3_sagemaker.literals import ImageVersionSortByType
 ```
 
 Values:
@@ -1123,10 +1123,10 @@ Values:
 - `LAST_MODIFIED_TIME`
 - `VERSION`
 
-## ImageVersionSortOrder
+## ImageVersionSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import ImageVersionSortOrder
+from mypy_boto3_sagemaker.literals import ImageVersionSortOrderType
 ```
 
 Values:
@@ -1134,10 +1134,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## ImageVersionStatus
+## ImageVersionStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ImageVersionStatus
+from mypy_boto3_sagemaker.literals import ImageVersionStatusType
 ```
 
 Values:
@@ -1148,10 +1148,10 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
-## InferenceExecutionMode
+## InferenceExecutionModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import InferenceExecutionMode
+from mypy_boto3_sagemaker.literals import InferenceExecutionModeType
 ```
 
 Values:
@@ -1159,10 +1159,10 @@ Values:
 - `Direct`
 - `Serial`
 
-## InputMode
+## InputModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import InputMode
+from mypy_boto3_sagemaker.literals import InputModeType
 ```
 
 Values:
@@ -1170,10 +1170,10 @@ Values:
 - `File`
 - `Pipe`
 
-## InstanceType
+## InstanceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import InstanceType
+from mypy_boto3_sagemaker.literals import InstanceTypeType
 ```
 
 Values:
@@ -1217,10 +1217,10 @@ Values:
 - `ml.t3.medium`
 - `ml.t3.xlarge`
 
-## JoinSource
+## JoinSourceType
 
 ```python
-from mypy_boto3_sagemaker.literals import JoinSource
+from mypy_boto3_sagemaker.literals import JoinSourceType
 ```
 
 Values:
@@ -1228,10 +1228,10 @@ Values:
 - `Input`
 - `None`
 
-## LabelingJobStatus
+## LabelingJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import LabelingJobStatus
+from mypy_boto3_sagemaker.literals import LabelingJobStatusType
 ```
 
 Values:
@@ -1343,10 +1343,10 @@ Values:
 
 - `list_compilation_jobs`
 
-## ListCompilationJobsSortBy
+## ListCompilationJobsSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ListCompilationJobsSortBy
+from mypy_boto3_sagemaker.literals import ListCompilationJobsSortByType
 ```
 
 Values:
@@ -1385,10 +1385,10 @@ Values:
 
 - `list_device_fleets`
 
-## ListDeviceFleetsSortBy
+## ListDeviceFleetsSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ListDeviceFleetsSortBy
+from mypy_boto3_sagemaker.literals import ListDeviceFleetsSortByType
 ```
 
 Values:
@@ -1427,10 +1427,10 @@ Values:
 
 - `list_edge_packaging_jobs`
 
-## ListEdgePackagingJobsSortBy
+## ListEdgePackagingJobsSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ListEdgePackagingJobsSortBy
+from mypy_boto3_sagemaker.literals import ListEdgePackagingJobsSortByType
 ```
 
 Values:
@@ -1541,10 +1541,10 @@ Values:
 
 - `list_labeling_jobs_for_workteam`
 
-## ListLabelingJobsForWorkteamSortByOptions
+## ListLabelingJobsForWorkteamSortByOptionsType
 
 ```python
-from mypy_boto3_sagemaker.literals import ListLabelingJobsForWorkteamSortByOptions
+from mypy_boto3_sagemaker.literals import ListLabelingJobsForWorkteamSortByOptionsType
 ```
 
 Values:
@@ -1801,10 +1801,10 @@ Values:
 
 - `list_workforces`
 
-## ListWorkforcesSortByOptions
+## ListWorkforcesSortByOptionsType
 
 ```python
-from mypy_boto3_sagemaker.literals import ListWorkforcesSortByOptions
+from mypy_boto3_sagemaker.literals import ListWorkforcesSortByOptionsType
 ```
 
 Values:
@@ -1822,10 +1822,10 @@ Values:
 
 - `list_workteams`
 
-## ListWorkteamsSortByOptions
+## ListWorkteamsSortByOptionsType
 
 ```python
-from mypy_boto3_sagemaker.literals import ListWorkteamsSortByOptions
+from mypy_boto3_sagemaker.literals import ListWorkteamsSortByOptionsType
 ```
 
 Values:
@@ -1833,10 +1833,10 @@ Values:
 - `CreateDate`
 - `Name`
 
-## ModelApprovalStatus
+## ModelApprovalStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelApprovalStatus
+from mypy_boto3_sagemaker.literals import ModelApprovalStatusType
 ```
 
 Values:
@@ -1845,10 +1845,10 @@ Values:
 - `PendingManualApproval`
 - `Rejected`
 
-## ModelCacheSetting
+## ModelCacheSettingType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelCacheSetting
+from mypy_boto3_sagemaker.literals import ModelCacheSettingType
 ```
 
 Values:
@@ -1856,10 +1856,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## ModelPackageGroupSortBy
+## ModelPackageGroupSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelPackageGroupSortBy
+from mypy_boto3_sagemaker.literals import ModelPackageGroupSortByType
 ```
 
 Values:
@@ -1867,10 +1867,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## ModelPackageGroupStatus
+## ModelPackageGroupStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelPackageGroupStatus
+from mypy_boto3_sagemaker.literals import ModelPackageGroupStatusType
 ```
 
 Values:
@@ -1882,10 +1882,10 @@ Values:
 - `InProgress`
 - `Pending`
 
-## ModelPackageSortBy
+## ModelPackageSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelPackageSortBy
+from mypy_boto3_sagemaker.literals import ModelPackageSortByType
 ```
 
 Values:
@@ -1893,10 +1893,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## ModelPackageStatus
+## ModelPackageStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelPackageStatus
+from mypy_boto3_sagemaker.literals import ModelPackageStatusType
 ```
 
 Values:
@@ -1907,10 +1907,10 @@ Values:
 - `InProgress`
 - `Pending`
 
-## ModelPackageType
+## ModelPackageTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelPackageType
+from mypy_boto3_sagemaker.literals import ModelPackageTypeType
 ```
 
 Values:
@@ -1919,10 +1919,10 @@ Values:
 - `Unversioned`
 - `Versioned`
 
-## ModelSortKey
+## ModelSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import ModelSortKey
+from mypy_boto3_sagemaker.literals import ModelSortKeyType
 ```
 
 Values:
@@ -1930,10 +1930,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## MonitoringExecutionSortKey
+## MonitoringExecutionSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import MonitoringExecutionSortKey
+from mypy_boto3_sagemaker.literals import MonitoringExecutionSortKeyType
 ```
 
 Values:
@@ -1942,10 +1942,10 @@ Values:
 - `ScheduledTime`
 - `Status`
 
-## MonitoringJobDefinitionSortKey
+## MonitoringJobDefinitionSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import MonitoringJobDefinitionSortKey
+from mypy_boto3_sagemaker.literals import MonitoringJobDefinitionSortKeyType
 ```
 
 Values:
@@ -1953,10 +1953,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## MonitoringProblemType
+## MonitoringProblemTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import MonitoringProblemType
+from mypy_boto3_sagemaker.literals import MonitoringProblemTypeType
 ```
 
 Values:
@@ -1965,10 +1965,10 @@ Values:
 - `MulticlassClassification`
 - `Regression`
 
-## MonitoringScheduleSortKey
+## MonitoringScheduleSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import MonitoringScheduleSortKey
+from mypy_boto3_sagemaker.literals import MonitoringScheduleSortKeyType
 ```
 
 Values:
@@ -1977,10 +1977,10 @@ Values:
 - `Name`
 - `Status`
 
-## MonitoringType
+## MonitoringTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import MonitoringType
+from mypy_boto3_sagemaker.literals import MonitoringTypeType
 ```
 
 Values:
@@ -1990,10 +1990,10 @@ Values:
 - `ModelExplainability`
 - `ModelQuality`
 
-## NotebookInstanceAcceleratorType
+## NotebookInstanceAcceleratorTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookInstanceAcceleratorType
+from mypy_boto3_sagemaker.literals import NotebookInstanceAcceleratorTypeType
 ```
 
 Values:
@@ -2025,10 +2025,10 @@ Values:
 
 - `notebook_instance_in_service`
 
-## NotebookInstanceLifecycleConfigSortKey
+## NotebookInstanceLifecycleConfigSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookInstanceLifecycleConfigSortKey
+from mypy_boto3_sagemaker.literals import NotebookInstanceLifecycleConfigSortKeyType
 ```
 
 Values:
@@ -2037,10 +2037,10 @@ Values:
 - `LastModifiedTime`
 - `Name`
 
-## NotebookInstanceLifecycleConfigSortOrder
+## NotebookInstanceLifecycleConfigSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookInstanceLifecycleConfigSortOrder
+from mypy_boto3_sagemaker.literals import NotebookInstanceLifecycleConfigSortOrderType
 ```
 
 Values:
@@ -2048,10 +2048,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## NotebookInstanceSortKey
+## NotebookInstanceSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookInstanceSortKey
+from mypy_boto3_sagemaker.literals import NotebookInstanceSortKeyType
 ```
 
 Values:
@@ -2060,10 +2060,10 @@ Values:
 - `Name`
 - `Status`
 
-## NotebookInstanceSortOrder
+## NotebookInstanceSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookInstanceSortOrder
+from mypy_boto3_sagemaker.literals import NotebookInstanceSortOrderType
 ```
 
 Values:
@@ -2071,10 +2071,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## NotebookInstanceStatus
+## NotebookInstanceStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookInstanceStatus
+from mypy_boto3_sagemaker.literals import NotebookInstanceStatusType
 ```
 
 Values:
@@ -2097,10 +2097,10 @@ Values:
 
 - `notebook_instance_stopped`
 
-## NotebookOutputOption
+## NotebookOutputOptionType
 
 ```python
-from mypy_boto3_sagemaker.literals import NotebookOutputOption
+from mypy_boto3_sagemaker.literals import NotebookOutputOptionType
 ```
 
 Values:
@@ -2108,10 +2108,10 @@ Values:
 - `Allowed`
 - `Disabled`
 
-## ObjectiveStatus
+## ObjectiveStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ObjectiveStatus
+from mypy_boto3_sagemaker.literals import ObjectiveStatusType
 ```
 
 Values:
@@ -2120,10 +2120,10 @@ Values:
 - `Pending`
 - `Succeeded`
 
-## OfflineStoreStatusValue
+## OfflineStoreStatusValueType
 
 ```python
-from mypy_boto3_sagemaker.literals import OfflineStoreStatusValue
+from mypy_boto3_sagemaker.literals import OfflineStoreStatusValueType
 ```
 
 Values:
@@ -2132,10 +2132,10 @@ Values:
 - `Blocked`
 - `Disabled`
 
-## Operator
+## OperatorType
 
 ```python
-from mypy_boto3_sagemaker.literals import Operator
+from mypy_boto3_sagemaker.literals import OperatorType
 ```
 
 Values:
@@ -2151,10 +2151,10 @@ Values:
 - `NotEquals`
 - `NotExists`
 
-## OrderKey
+## OrderKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import OrderKey
+from mypy_boto3_sagemaker.literals import OrderKeyType
 ```
 
 Values:
@@ -2162,10 +2162,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## ParameterType
+## ParameterTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ParameterType
+from mypy_boto3_sagemaker.literals import ParameterTypeType
 ```
 
 Values:
@@ -2175,10 +2175,10 @@ Values:
 - `FreeText`
 - `Integer`
 
-## PipelineExecutionStatus
+## PipelineExecutionStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import PipelineExecutionStatus
+from mypy_boto3_sagemaker.literals import PipelineExecutionStatusType
 ```
 
 Values:
@@ -2189,20 +2189,20 @@ Values:
 - `Stopping`
 - `Succeeded`
 
-## PipelineStatus
+## PipelineStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import PipelineStatus
+from mypy_boto3_sagemaker.literals import PipelineStatusType
 ```
 
 Values:
 
 - `Active`
 
-## ProblemType
+## ProblemTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProblemType
+from mypy_boto3_sagemaker.literals import ProblemTypeType
 ```
 
 Values:
@@ -2211,10 +2211,10 @@ Values:
 - `MulticlassClassification`
 - `Regression`
 
-## ProcessingInstanceType
+## ProcessingInstanceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingInstanceType
+from mypy_boto3_sagemaker.literals import ProcessingInstanceTypeType
 ```
 
 Values:
@@ -2268,10 +2268,10 @@ Values:
 
 - `processing_job_completed_or_stopped`
 
-## ProcessingJobStatus
+## ProcessingJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingJobStatus
+from mypy_boto3_sagemaker.literals import ProcessingJobStatusType
 ```
 
 Values:
@@ -2282,10 +2282,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## ProcessingS3CompressionType
+## ProcessingS3CompressionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingS3CompressionType
+from mypy_boto3_sagemaker.literals import ProcessingS3CompressionTypeType
 ```
 
 Values:
@@ -2293,10 +2293,10 @@ Values:
 - `Gzip`
 - `None`
 
-## ProcessingS3DataDistributionType
+## ProcessingS3DataDistributionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingS3DataDistributionType
+from mypy_boto3_sagemaker.literals import ProcessingS3DataDistributionTypeType
 ```
 
 Values:
@@ -2304,10 +2304,10 @@ Values:
 - `FullyReplicated`
 - `ShardedByS3Key`
 
-## ProcessingS3DataType
+## ProcessingS3DataTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingS3DataType
+from mypy_boto3_sagemaker.literals import ProcessingS3DataTypeType
 ```
 
 Values:
@@ -2315,10 +2315,10 @@ Values:
 - `ManifestFile`
 - `S3Prefix`
 
-## ProcessingS3InputMode
+## ProcessingS3InputModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingS3InputMode
+from mypy_boto3_sagemaker.literals import ProcessingS3InputModeType
 ```
 
 Values:
@@ -2326,10 +2326,10 @@ Values:
 - `File`
 - `Pipe`
 
-## ProcessingS3UploadMode
+## ProcessingS3UploadModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProcessingS3UploadMode
+from mypy_boto3_sagemaker.literals import ProcessingS3UploadModeType
 ```
 
 Values:
@@ -2337,10 +2337,10 @@ Values:
 - `Continuous`
 - `EndOfJob`
 
-## ProductionVariantAcceleratorType
+## ProductionVariantAcceleratorTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProductionVariantAcceleratorType
+from mypy_boto3_sagemaker.literals import ProductionVariantAcceleratorTypeType
 ```
 
 Values:
@@ -2352,10 +2352,10 @@ Values:
 - `ml.eia2.medium`
 - `ml.eia2.xlarge`
 
-## ProductionVariantInstanceType
+## ProductionVariantInstanceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProductionVariantInstanceType
+from mypy_boto3_sagemaker.literals import ProductionVariantInstanceTypeType
 ```
 
 Values:
@@ -2427,10 +2427,10 @@ Values:
 - `ml.t2.medium`
 - `ml.t2.xlarge`
 
-## ProfilingStatus
+## ProfilingStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProfilingStatus
+from mypy_boto3_sagemaker.literals import ProfilingStatusType
 ```
 
 Values:
@@ -2438,10 +2438,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## ProjectSortBy
+## ProjectSortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProjectSortBy
+from mypy_boto3_sagemaker.literals import ProjectSortByType
 ```
 
 Values:
@@ -2449,10 +2449,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## ProjectSortOrder
+## ProjectSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProjectSortOrder
+from mypy_boto3_sagemaker.literals import ProjectSortOrderType
 ```
 
 Values:
@@ -2460,10 +2460,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## ProjectStatus
+## ProjectStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ProjectStatus
+from mypy_boto3_sagemaker.literals import ProjectStatusType
 ```
 
 Values:
@@ -2476,10 +2476,10 @@ Values:
 - `DeleteInProgress`
 - `Pending`
 
-## RecordWrapper
+## RecordWrapperType
 
 ```python
-from mypy_boto3_sagemaker.literals import RecordWrapper
+from mypy_boto3_sagemaker.literals import RecordWrapperType
 ```
 
 Values:
@@ -2487,10 +2487,10 @@ Values:
 - `None`
 - `RecordIO`
 
-## RedshiftResultCompressionType
+## RedshiftResultCompressionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import RedshiftResultCompressionType
+from mypy_boto3_sagemaker.literals import RedshiftResultCompressionTypeType
 ```
 
 Values:
@@ -2501,10 +2501,10 @@ Values:
 - `SNAPPY`
 - `ZSTD`
 
-## RedshiftResultFormat
+## RedshiftResultFormatType
 
 ```python
-from mypy_boto3_sagemaker.literals import RedshiftResultFormat
+from mypy_boto3_sagemaker.literals import RedshiftResultFormatType
 ```
 
 Values:
@@ -2512,10 +2512,10 @@ Values:
 - `CSV`
 - `PARQUET`
 
-## RepositoryAccessMode
+## RepositoryAccessModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import RepositoryAccessMode
+from mypy_boto3_sagemaker.literals import RepositoryAccessModeType
 ```
 
 Values:
@@ -2523,10 +2523,10 @@ Values:
 - `Platform`
 - `Vpc`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import ResourceType
+from mypy_boto3_sagemaker.literals import ResourceTypeType
 ```
 
 Values:
@@ -2542,10 +2542,10 @@ Values:
 - `PipelineExecution`
 - `TrainingJob`
 
-## RetentionType
+## RetentionTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import RetentionType
+from mypy_boto3_sagemaker.literals import RetentionTypeType
 ```
 
 Values:
@@ -2553,10 +2553,10 @@ Values:
 - `Delete`
 - `Retain`
 
-## RootAccess
+## RootAccessType
 
 ```python
-from mypy_boto3_sagemaker.literals import RootAccess
+from mypy_boto3_sagemaker.literals import RootAccessType
 ```
 
 Values:
@@ -2564,10 +2564,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## RuleEvaluationStatus
+## RuleEvaluationStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import RuleEvaluationStatus
+from mypy_boto3_sagemaker.literals import RuleEvaluationStatusType
 ```
 
 Values:
@@ -2579,10 +2579,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## S3DataDistribution
+## S3DataDistributionType
 
 ```python
-from mypy_boto3_sagemaker.literals import S3DataDistribution
+from mypy_boto3_sagemaker.literals import S3DataDistributionType
 ```
 
 Values:
@@ -2590,10 +2590,10 @@ Values:
 - `FullyReplicated`
 - `ShardedByS3Key`
 
-## S3DataType
+## S3DataTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import S3DataType
+from mypy_boto3_sagemaker.literals import S3DataTypeType
 ```
 
 Values:
@@ -2602,10 +2602,10 @@ Values:
 - `ManifestFile`
 - `S3Prefix`
 
-## SagemakerServicecatalogStatus
+## SagemakerServicecatalogStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import SagemakerServicecatalogStatus
+from mypy_boto3_sagemaker.literals import SagemakerServicecatalogStatusType
 ```
 
 Values:
@@ -2613,10 +2613,10 @@ Values:
 - `Disabled`
 - `Enabled`
 
-## ScheduleStatus
+## ScheduleStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import ScheduleStatus
+from mypy_boto3_sagemaker.literals import ScheduleStatusType
 ```
 
 Values:
@@ -2636,10 +2636,10 @@ Values:
 
 - `search`
 
-## SearchSortOrder
+## SearchSortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import SearchSortOrder
+from mypy_boto3_sagemaker.literals import SearchSortOrderType
 ```
 
 Values:
@@ -2647,10 +2647,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## SecondaryStatus
+## SecondaryStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import SecondaryStatus
+from mypy_boto3_sagemaker.literals import SecondaryStatusType
 ```
 
 Values:
@@ -2672,10 +2672,10 @@ Values:
 - `Updating`
 - `Uploading`
 
-## SortActionsBy
+## SortActionsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortActionsBy
+from mypy_boto3_sagemaker.literals import SortActionsByType
 ```
 
 Values:
@@ -2683,20 +2683,20 @@ Values:
 - `CreationTime`
 - `Name`
 
-## SortArtifactsBy
+## SortArtifactsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortArtifactsBy
+from mypy_boto3_sagemaker.literals import SortArtifactsByType
 ```
 
 Values:
 
 - `CreationTime`
 
-## SortAssociationsBy
+## SortAssociationsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortAssociationsBy
+from mypy_boto3_sagemaker.literals import SortAssociationsByType
 ```
 
 Values:
@@ -2707,10 +2707,10 @@ Values:
 - `SourceArn`
 - `SourceType`
 
-## SortBy
+## SortByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortBy
+from mypy_boto3_sagemaker.literals import SortByType
 ```
 
 Values:
@@ -2719,10 +2719,10 @@ Values:
 - `Name`
 - `Status`
 
-## SortContextsBy
+## SortContextsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortContextsBy
+from mypy_boto3_sagemaker.literals import SortContextsByType
 ```
 
 Values:
@@ -2730,10 +2730,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## SortExperimentsBy
+## SortExperimentsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortExperimentsBy
+from mypy_boto3_sagemaker.literals import SortExperimentsByType
 ```
 
 Values:
@@ -2741,10 +2741,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortOrder
+from mypy_boto3_sagemaker.literals import SortOrderType
 ```
 
 Values:
@@ -2752,10 +2752,10 @@ Values:
 - `Ascending`
 - `Descending`
 
-## SortPipelineExecutionsBy
+## SortPipelineExecutionsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortPipelineExecutionsBy
+from mypy_boto3_sagemaker.literals import SortPipelineExecutionsByType
 ```
 
 Values:
@@ -2763,10 +2763,10 @@ Values:
 - `CreationTime`
 - `PipelineExecutionArn`
 
-## SortPipelinesBy
+## SortPipelinesByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortPipelinesBy
+from mypy_boto3_sagemaker.literals import SortPipelinesByType
 ```
 
 Values:
@@ -2774,10 +2774,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## SortTrialComponentsBy
+## SortTrialComponentsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortTrialComponentsBy
+from mypy_boto3_sagemaker.literals import SortTrialComponentsByType
 ```
 
 Values:
@@ -2785,10 +2785,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## SortTrialsBy
+## SortTrialsByType
 
 ```python
-from mypy_boto3_sagemaker.literals import SortTrialsBy
+from mypy_boto3_sagemaker.literals import SortTrialsByType
 ```
 
 Values:
@@ -2796,10 +2796,10 @@ Values:
 - `CreationTime`
 - `Name`
 
-## SplitType
+## SplitTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import SplitType
+from mypy_boto3_sagemaker.literals import SplitTypeType
 ```
 
 Values:
@@ -2809,10 +2809,10 @@ Values:
 - `RecordIO`
 - `TFRecord`
 
-## StepStatus
+## StepStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import StepStatus
+from mypy_boto3_sagemaker.literals import StepStatusType
 ```
 
 Values:
@@ -2824,10 +2824,10 @@ Values:
 - `Stopping`
 - `Succeeded`
 
-## TargetDevice
+## TargetDeviceType
 
 ```python
-from mypy_boto3_sagemaker.literals import TargetDevice
+from mypy_boto3_sagemaker.literals import TargetDeviceType
 ```
 
 Values:
@@ -2862,10 +2862,10 @@ Values:
 - `x86_win32`
 - `x86_win64`
 
-## TargetPlatformAccelerator
+## TargetPlatformAcceleratorType
 
 ```python
-from mypy_boto3_sagemaker.literals import TargetPlatformAccelerator
+from mypy_boto3_sagemaker.literals import TargetPlatformAcceleratorType
 ```
 
 Values:
@@ -2874,10 +2874,10 @@ Values:
 - `MALI`
 - `NVIDIA`
 
-## TargetPlatformArch
+## TargetPlatformArchType
 
 ```python
-from mypy_boto3_sagemaker.literals import TargetPlatformArch
+from mypy_boto3_sagemaker.literals import TargetPlatformArchType
 ```
 
 Values:
@@ -2888,10 +2888,10 @@ Values:
 - `X86`
 - `X86_64`
 
-## TargetPlatformOs
+## TargetPlatformOsType
 
 ```python
-from mypy_boto3_sagemaker.literals import TargetPlatformOs
+from mypy_boto3_sagemaker.literals import TargetPlatformOsType
 ```
 
 Values:
@@ -2899,10 +2899,10 @@ Values:
 - `ANDROID`
 - `LINUX`
 
-## TrafficRoutingConfigType
+## TrafficRoutingConfigTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrafficRoutingConfigType
+from mypy_boto3_sagemaker.literals import TrafficRoutingConfigTypeType
 ```
 
 Values:
@@ -2910,10 +2910,10 @@ Values:
 - `ALL_AT_ONCE`
 - `CANARY`
 
-## TrainingInputMode
+## TrainingInputModeType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrainingInputMode
+from mypy_boto3_sagemaker.literals import TrainingInputModeType
 ```
 
 Values:
@@ -2921,10 +2921,10 @@ Values:
 - `File`
 - `Pipe`
 
-## TrainingInstanceType
+## TrainingInstanceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrainingInstanceType
+from mypy_boto3_sagemaker.literals import TrainingInstanceTypeType
 ```
 
 Values:
@@ -2979,10 +2979,10 @@ Values:
 
 - `training_job_completed_or_stopped`
 
-## TrainingJobEarlyStoppingType
+## TrainingJobEarlyStoppingTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrainingJobEarlyStoppingType
+from mypy_boto3_sagemaker.literals import TrainingJobEarlyStoppingTypeType
 ```
 
 Values:
@@ -2990,10 +2990,10 @@ Values:
 - `Auto`
 - `Off`
 
-## TrainingJobSortByOptions
+## TrainingJobSortByOptionsType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrainingJobSortByOptions
+from mypy_boto3_sagemaker.literals import TrainingJobSortByOptionsType
 ```
 
 Values:
@@ -3003,10 +3003,10 @@ Values:
 - `Name`
 - `Status`
 
-## TrainingJobStatus
+## TrainingJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrainingJobStatus
+from mypy_boto3_sagemaker.literals import TrainingJobStatusType
 ```
 
 Values:
@@ -3017,10 +3017,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## TransformInstanceType
+## TransformInstanceTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import TransformInstanceType
+from mypy_boto3_sagemaker.literals import TransformInstanceTypeType
 ```
 
 Values:
@@ -3062,10 +3062,10 @@ Values:
 
 - `transform_job_completed_or_stopped`
 
-## TransformJobStatus
+## TransformJobStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import TransformJobStatus
+from mypy_boto3_sagemaker.literals import TransformJobStatusType
 ```
 
 Values:
@@ -3076,10 +3076,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## TrialComponentPrimaryStatus
+## TrialComponentPrimaryStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import TrialComponentPrimaryStatus
+from mypy_boto3_sagemaker.literals import TrialComponentPrimaryStatusType
 ```
 
 Values:
@@ -3090,10 +3090,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## UserProfileSortKey
+## UserProfileSortKeyType
 
 ```python
-from mypy_boto3_sagemaker.literals import UserProfileSortKey
+from mypy_boto3_sagemaker.literals import UserProfileSortKeyType
 ```
 
 Values:
@@ -3101,10 +3101,10 @@ Values:
 - `CreationTime`
 - `LastModifiedTime`
 
-## UserProfileStatus
+## UserProfileStatusType
 
 ```python
-from mypy_boto3_sagemaker.literals import UserProfileStatus
+from mypy_boto3_sagemaker.literals import UserProfileStatusType
 ```
 
 Values:
@@ -3117,10 +3117,10 @@ Values:
 - `Update_Failed`
 - `Updating`
 
-## VariantPropertyType
+## VariantPropertyTypeType
 
 ```python
-from mypy_boto3_sagemaker.literals import VariantPropertyType
+from mypy_boto3_sagemaker.literals import VariantPropertyTypeType
 ```
 
 Values:

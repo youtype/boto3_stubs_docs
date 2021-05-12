@@ -3,7 +3,7 @@
 > [Index](..) > [AccessAnalyzer](.) > Paginators
 
 Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
 [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
@@ -32,13 +32,14 @@ def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPag
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAccessPreviewFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
+[AccessAnalyzer.Paginator.ListAccessPreviewFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
 
 Arguments for `ListAccessPreviewFindingsPaginator.paginate` method:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -60,7 +61,7 @@ def get_list_access_previews_paginator() -> ListAccessPreviewsPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAccessPreviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
+[AccessAnalyzer.Paginator.ListAccessPreviews](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
 
 Arguments for `ListAccessPreviewsPaginator.paginate` method:
 
@@ -86,12 +87,12 @@ def get_list_analyzed_resources_paginator() -> ListAnalyzedResourcesPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAnalyzedResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
+[AccessAnalyzer.Paginator.ListAnalyzedResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
 
 Arguments for `ListAnalyzedResourcesPaginator.paginate` method:
 
 - `analyzerArn`: `str` *(required)*
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -113,7 +114,7 @@ def get_list_analyzers_paginator() -> ListAnalyzersPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAnalyzers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
+[AccessAnalyzer.Paginator.ListAnalyzers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
 
 Arguments for `ListAnalyzersPaginator.paginate` method:
 
@@ -139,7 +140,7 @@ def get_list_archive_rules_paginator() -> ListArchiveRulesPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListArchiveRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
+[AccessAnalyzer.Paginator.ListArchiveRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
 
 Arguments for `ListArchiveRulesPaginator.paginate` method:
 
@@ -165,12 +166,13 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
+[AccessAnalyzer.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
 
 Arguments for `ListFindingsPaginator.paginate` method:
 
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -193,7 +195,7 @@ def get_list_policy_generations_paginator() -> ListPolicyGenerationsPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ListPolicyGenerations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
+[AccessAnalyzer.Paginator.ListPolicyGenerations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
 
 Arguments for `ListPolicyGenerationsPaginator.paginate` method:
 
@@ -219,13 +221,13 @@ def get_validate_policy_paginator() -> ValidatePolicyPaginator:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Paginator.ValidatePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
+[AccessAnalyzer.Paginator.ValidatePolicy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
 
 Arguments for `ValidatePolicyPaginator.paginate` method:
 
 - `policyDocument`: `str` *(required)*
-- `policyType`: [PolicyType](./literals.md#policytype) *(required)*
-- `locale`: [Locale](./literals.md#locale)
+- `policyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
+- `locale`: [LocaleType](./literals.md#localetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudTrail](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
 [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
@@ -121,7 +121,7 @@ from mypy_boto3_cloudtrail.type_defs import EventSelectorTypeDef
 
 Optional fields:
 
-- `ReadWriteType`: [ReadWriteType](./literals.md#readwritetype)
+- `ReadWriteType`: [ReadWriteTypeType](./literals.md#readwritetypetype)
 - `IncludeManagementEvents`: `bool`
 - `DataResources`:
   `List`\[[DataResourceTypeDef](./type_defs.md#dataresourcetypedef)\]
@@ -216,7 +216,7 @@ from mypy_boto3_cloudtrail.type_defs import InsightSelectorTypeDef
 Optional fields:
 
 - `InsightType`: `Literal['ApiCallRateInsight']` (see
-  [InsightType](./literals.md#insighttype))
+  [InsightTypeType](./literals.md#insighttypetype))
 
 ## ListPublicKeysResponseTypeDef
 
@@ -226,7 +226,8 @@ from mypy_boto3_cloudtrail.type_defs import ListPublicKeysResponseTypeDef
 
 Optional fields:
 
-- `PublicKeyList`: `List`\[[PublicKeyTypeDef](./type_defs.md#publickeytypedef)\]
+- `PublicKeyList`:
+  `List`\[[PublicKeyTypeDef](./type_defs.md#publickeytypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsResponseTypeDef
@@ -260,7 +261,8 @@ from mypy_boto3_cloudtrail.type_defs import LookupAttributeTypeDef
 
 Required fields:
 
-- `AttributeKey`: [LookupAttributeKey](./literals.md#lookupattributekey)
+- `AttributeKey`:
+  [LookupAttributeKeyType](./literals.md#lookupattributekeytype)
 - `AttributeValue`: `str`
 
 ## LookupEventsResponseTypeDef

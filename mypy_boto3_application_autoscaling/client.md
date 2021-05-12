@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationAutoScaling](.) > ApplicationAutoScalingClient
 
 Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
 [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
@@ -39,7 +39,7 @@ def get_application-autoscaling_client() -> ApplicationAutoScalingClient:
 ```
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client)
+[ApplicationAutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client)
 
 ## Exceptions
 
@@ -72,7 +72,7 @@ Type annotations for `boto3.client("application-autoscaling").can_paginate`
 method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.can_paginate)
+[ApplicationAutoScaling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.can_paginate)
 
 Arguments:
 
@@ -86,16 +86,16 @@ Type annotations for
 `boto3.client("application-autoscaling").delete_scaling_policy` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
+[ApplicationAutoScaling.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
 
 Arguments:
 
 - `PolicyName`: `str` *(required)*
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -105,16 +105,16 @@ Type annotations for
 `boto3.client("application-autoscaling").delete_scheduled_action` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
+[ApplicationAutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ScheduledActionName`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -124,15 +124,15 @@ Type annotations for
 `boto3.client("application-autoscaling").deregister_scalable_target` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.deregister_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
+[ApplicationAutoScaling.Client.deregister_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -142,14 +142,15 @@ Type annotations for
 `boto3.client("application-autoscaling").describe_scalable_targets` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scalable_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
+[ApplicationAutoScaling.Client.describe_scalable_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceIds`: `List`\[`str`\]
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -162,14 +163,15 @@ Type annotations for
 `boto3.client("application-autoscaling").describe_scaling_activities` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
+[ApplicationAutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -182,15 +184,16 @@ Type annotations for
 `boto3.client("application-autoscaling").describe_scaling_policies` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
+[ApplicationAutoScaling.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `PolicyNames`: `List`\[`str`\]
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -203,15 +206,16 @@ Type annotations for
 `boto3.client("application-autoscaling").describe_scheduled_actions` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
+[ApplicationAutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ScheduledActionNames`: `List`\[`str`\]
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -224,7 +228,7 @@ Type annotations for
 `boto3.client("application-autoscaling").generate_presigned_url` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.generate_presigned_url)
+[ApplicationAutoScaling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.generate_presigned_url)
 
 Arguments:
 
@@ -241,17 +245,17 @@ Type annotations for
 `boto3.client("application-autoscaling").put_scaling_policy` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
+[ApplicationAutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
 
 Arguments:
 
 - `PolicyName`: `str` *(required)*
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
-- `PolicyType`: [PolicyType](./literals.md#policytype)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
+- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
 - `StepScalingPolicyConfiguration`:
   [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
 - `TargetTrackingScalingPolicyConfiguration`:
@@ -266,16 +270,16 @@ Type annotations for
 `boto3.client("application-autoscaling").put_scheduled_action` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.put_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
+[ApplicationAutoScaling.Client.put_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ScheduledActionName`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 - `Schedule`: `str`
 - `Timezone`: `str`
 - `StartTime`: `datetime`
@@ -291,19 +295,20 @@ Type annotations for
 `boto3.client("application-autoscaling").register_scalable_target` method.
 
 Boto3 documentation:
-[ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
+[ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
 
 Arguments:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
-  *(required)*
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-  *(required)*
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
 - `RoleARN`: `str`
-- `SuspendedState`: [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
+- `SuspendedState`:
+  [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

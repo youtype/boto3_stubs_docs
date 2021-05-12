@@ -3,7 +3,7 @@
 > [Index](..) > LookoutMetrics
 
 Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
 [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
@@ -29,48 +29,48 @@ Can be used directly:
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 ```
 
-LookoutMetricsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [activate_anomaly_detector](./client.md#activate-anomaly-detector)
-- [back_test_anomaly_detector](./client.md#back-test-anomaly-detector)
-- [can_paginate](./client.md#can-paginate)
-- [create_alert](./client.md#create-alert)
-- [create_anomaly_detector](./client.md#create-anomaly-detector)
-- [create_metric_set](./client.md#create-metric-set)
-- [delete_alert](./client.md#delete-alert)
-- [delete_anomaly_detector](./client.md#delete-anomaly-detector)
-- [describe_alert](./client.md#describe-alert)
-- [describe_anomaly_detection_executions](./client.md#describe-anomaly-detection-executions)
-- [describe_anomaly_detector](./client.md#describe-anomaly-detector)
-- [describe_metric_set](./client.md#describe-metric-set)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_anomaly_group](./client.md#get-anomaly-group)
-- [get_feedback](./client.md#get-feedback)
-- [get_sample_data](./client.md#get-sample-data)
-- [list_alerts](./client.md#list-alerts)
-- [list_anomaly_detectors](./client.md#list-anomaly-detectors)
-- [list_anomaly_group_summaries](./client.md#list-anomaly-group-summaries)
-- [list_anomaly_group_time_series](./client.md#list-anomaly-group-time-series)
-- [list_metric_sets](./client.md#list-metric-sets)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_feedback](./client.md#put-feedback)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_anomaly_detector](./client.md#update-anomaly-detector)
-- [update_metric_set](./client.md#update-metric-set)
+- [activate_anomaly_detector](./client.md#activate_anomaly_detector)
+- [back_test_anomaly_detector](./client.md#back_test_anomaly_detector)
+- [can_paginate](./client.md#can_paginate)
+- [create_alert](./client.md#create_alert)
+- [create_anomaly_detector](./client.md#create_anomaly_detector)
+- [create_metric_set](./client.md#create_metric_set)
+- [delete_alert](./client.md#delete_alert)
+- [delete_anomaly_detector](./client.md#delete_anomaly_detector)
+- [describe_alert](./client.md#describe_alert)
+- [describe_anomaly_detection_executions](./client.md#describe_anomaly_detection_executions)
+- [describe_anomaly_detector](./client.md#describe_anomaly_detector)
+- [describe_metric_set](./client.md#describe_metric_set)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_anomaly_group](./client.md#get_anomaly_group)
+- [get_feedback](./client.md#get_feedback)
+- [get_sample_data](./client.md#get_sample_data)
+- [list_alerts](./client.md#list_alerts)
+- [list_anomaly_detectors](./client.md#list_anomaly_detectors)
+- [list_anomaly_group_summaries](./client.md#list_anomaly_group_summaries)
+- [list_anomaly_group_time_series](./client.md#list_anomaly_group_time_series)
+- [list_metric_sets](./client.md#list_metric_sets)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_feedback](./client.md#put_feedback)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_anomaly_detector](./client.md#update_anomaly_detector)
+- [update_metric_set](./client.md#update_metric_set)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [ValidationException](./client.md#validationexception)
+LookoutMetricsClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- TooManyRequestsException
+- ValidationException
 
 ## Literals
 
@@ -79,17 +79,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutmetrics.literals import AggregationFunction, ...
+from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 ```
 
-- [AggregationFunction](./literals.md#aggregationfunction)
-- [AlertStatus](./literals.md#alertstatus)
-- [AlertType](./literals.md#alerttype)
-- [AnomalyDetectionTaskStatus](./literals.md#anomalydetectiontaskstatus)
-- [AnomalyDetectorStatus](./literals.md#anomalydetectorstatus)
-- [CSVFileCompression](./literals.md#csvfilecompression)
-- [Frequency](./literals.md#frequency)
-- [JsonFileCompression](./literals.md#jsonfilecompression)
+- [AggregationFunctionType](./literals.md#aggregationfunctiontype)
+- [AlertStatusType](./literals.md#alertstatustype)
+- [AlertTypeType](./literals.md#alerttypetype)
+- [AnomalyDetectionTaskStatusType](./literals.md#anomalydetectiontaskstatustype)
+- [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
+- [CSVFileCompressionType](./literals.md#csvfilecompressiontype)
+- [FrequencyType](./literals.md#frequencytype)
+- [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
 
 ## Typed dictionaries
 

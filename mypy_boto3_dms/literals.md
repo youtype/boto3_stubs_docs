@@ -3,18 +3,18 @@
 > [Index](..) > [DatabaseMigrationService](.) > Literals
 
 Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
 [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [Literals for boto3 DatabaseMigrationService module](#literals-for-boto3-databasemigrationservice-module)
-  - [AuthMechanismValue](#authmechanismvalue)
-  - [AuthTypeValue](#authtypevalue)
-  - [CharLengthSemantics](#charlengthsemantics)
-  - [CompressionTypeValue](#compressiontypevalue)
-  - [DataFormatValue](#dataformatvalue)
-  - [DatePartitionDelimiterValue](#datepartitiondelimitervalue)
-  - [DatePartitionSequenceValue](#datepartitionsequencevalue)
+  - [AuthMechanismValueType](#authmechanismvaluetype)
+  - [AuthTypeValueType](#authtypevaluetype)
+  - [CharLengthSemanticsType](#charlengthsemanticstype)
+  - [CompressionTypeValueType](#compressiontypevaluetype)
+  - [DataFormatValueType](#dataformatvaluetype)
+  - [DatePartitionDelimiterValueType](#datepartitiondelimitervaluetype)
+  - [DatePartitionSequenceValueType](#datepartitionsequencevaluetype)
   - [DescribeCertificatesPaginatorName](#describecertificatespaginatorname)
   - [DescribeConnectionsPaginatorName](#describeconnectionspaginatorname)
   - [DescribeEndpointTypesPaginatorName](#describeendpointtypespaginatorname)
@@ -28,36 +28,36 @@ type annotations stubs module
   - [DescribeReplicationTasksPaginatorName](#describereplicationtaskspaginatorname)
   - [DescribeSchemasPaginatorName](#describeschemaspaginatorname)
   - [DescribeTableStatisticsPaginatorName](#describetablestatisticspaginatorname)
-  - [DmsSslModeValue](#dmssslmodevalue)
-  - [EncodingTypeValue](#encodingtypevalue)
-  - [EncryptionModeValue](#encryptionmodevalue)
+  - [DmsSslModeValueType](#dmssslmodevaluetype)
+  - [EncodingTypeValueType](#encodingtypevaluetype)
+  - [EncryptionModeValueType](#encryptionmodevaluetype)
   - [EndpointDeletedWaiterName](#endpointdeletedwaitername)
-  - [EndpointSettingTypeValue](#endpointsettingtypevalue)
-  - [KafkaSecurityProtocol](#kafkasecurityprotocol)
-  - [MessageFormatValue](#messageformatvalue)
-  - [MigrationTypeValue](#migrationtypevalue)
-  - [NestingLevelValue](#nestinglevelvalue)
-  - [ParquetVersionValue](#parquetversionvalue)
-  - [RefreshSchemasStatusTypeValue](#refreshschemasstatustypevalue)
-  - [ReleaseStatusValues](#releasestatusvalues)
-  - [ReloadOptionValue](#reloadoptionvalue)
-  - [ReplicationEndpointTypeValue](#replicationendpointtypevalue)
+  - [EndpointSettingTypeValueType](#endpointsettingtypevaluetype)
+  - [KafkaSecurityProtocolType](#kafkasecurityprotocoltype)
+  - [MessageFormatValueType](#messageformatvaluetype)
+  - [MigrationTypeValueType](#migrationtypevaluetype)
+  - [NestingLevelValueType](#nestinglevelvaluetype)
+  - [ParquetVersionValueType](#parquetversionvaluetype)
+  - [RefreshSchemasStatusTypeValueType](#refreshschemasstatustypevaluetype)
+  - [ReleaseStatusValuesType](#releasestatusvaluestype)
+  - [ReloadOptionValueType](#reloadoptionvaluetype)
+  - [ReplicationEndpointTypeValueType](#replicationendpointtypevaluetype)
   - [ReplicationInstanceAvailableWaiterName](#replicationinstanceavailablewaitername)
   - [ReplicationInstanceDeletedWaiterName](#replicationinstancedeletedwaitername)
   - [ReplicationTaskDeletedWaiterName](#replicationtaskdeletedwaitername)
   - [ReplicationTaskReadyWaiterName](#replicationtaskreadywaitername)
   - [ReplicationTaskRunningWaiterName](#replicationtaskrunningwaitername)
   - [ReplicationTaskStoppedWaiterName](#replicationtaskstoppedwaitername)
-  - [SafeguardPolicy](#safeguardpolicy)
-  - [SourceType](#sourcetype)
-  - [StartReplicationTaskTypeValue](#startreplicationtasktypevalue)
-  - [TargetDbType](#targetdbtype)
+  - [SafeguardPolicyType](#safeguardpolicytype)
+  - [SourceTypeType](#sourcetypetype)
+  - [StartReplicationTaskTypeValueType](#startreplicationtasktypevaluetype)
+  - [TargetDbTypeType](#targetdbtypetype)
   - [TestConnectionSucceedsWaiterName](#testconnectionsucceedswaitername)
 
-## AuthMechanismValue
+## AuthMechanismValueType
 
 ```python
-from mypy_boto3_dms.literals import AuthMechanismValue
+from mypy_boto3_dms.literals import AuthMechanismValueType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `mongodb_cr`
 - `scram_sha_1`
 
-## AuthTypeValue
+## AuthTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import AuthTypeValue
+from mypy_boto3_dms.literals import AuthTypeValueType
 ```
 
 Values:
@@ -77,10 +77,10 @@ Values:
 - `no`
 - `password`
 
-## CharLengthSemantics
+## CharLengthSemanticsType
 
 ```python
-from mypy_boto3_dms.literals import CharLengthSemantics
+from mypy_boto3_dms.literals import CharLengthSemanticsType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `char`
 - `default`
 
-## CompressionTypeValue
+## CompressionTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import CompressionTypeValue
+from mypy_boto3_dms.literals import CompressionTypeValueType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `gzip`
 - `none`
 
-## DataFormatValue
+## DataFormatValueType
 
 ```python
-from mypy_boto3_dms.literals import DataFormatValue
+from mypy_boto3_dms.literals import DataFormatValueType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `csv`
 - `parquet`
 
-## DatePartitionDelimiterValue
+## DatePartitionDelimiterValueType
 
 ```python
-from mypy_boto3_dms.literals import DatePartitionDelimiterValue
+from mypy_boto3_dms.literals import DatePartitionDelimiterValueType
 ```
 
 Values:
@@ -124,10 +124,10 @@ Values:
 - `SLASH`
 - `UNDERSCORE`
 
-## DatePartitionSequenceValue
+## DatePartitionSequenceValueType
 
 ```python
-from mypy_boto3_dms.literals import DatePartitionSequenceValue
+from mypy_boto3_dms.literals import DatePartitionSequenceValueType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 
 - `describe_table_statistics`
 
-## DmsSslModeValue
+## DmsSslModeValueType
 
 ```python
-from mypy_boto3_dms.literals import DmsSslModeValue
+from mypy_boto3_dms.literals import DmsSslModeValueType
 ```
 
 Values:
@@ -281,10 +281,10 @@ Values:
 - `verify-ca`
 - `verify-full`
 
-## EncodingTypeValue
+## EncodingTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import EncodingTypeValue
+from mypy_boto3_dms.literals import EncodingTypeValueType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 - `plain-dictionary`
 - `rle-dictionary`
 
-## EncryptionModeValue
+## EncryptionModeValueType
 
 ```python
-from mypy_boto3_dms.literals import EncryptionModeValue
+from mypy_boto3_dms.literals import EncryptionModeValueType
 ```
 
 Values:
@@ -314,10 +314,10 @@ Values:
 
 - `endpoint_deleted`
 
-## EndpointSettingTypeValue
+## EndpointSettingTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import EndpointSettingTypeValue
+from mypy_boto3_dms.literals import EndpointSettingTypeValueType
 ```
 
 Values:
@@ -327,10 +327,10 @@ Values:
 - `integer`
 - `string`
 
-## KafkaSecurityProtocol
+## KafkaSecurityProtocolType
 
 ```python
-from mypy_boto3_dms.literals import KafkaSecurityProtocol
+from mypy_boto3_dms.literals import KafkaSecurityProtocolType
 ```
 
 Values:
@@ -340,10 +340,10 @@ Values:
 - `ssl-authentication`
 - `ssl-encryption`
 
-## MessageFormatValue
+## MessageFormatValueType
 
 ```python
-from mypy_boto3_dms.literals import MessageFormatValue
+from mypy_boto3_dms.literals import MessageFormatValueType
 ```
 
 Values:
@@ -351,10 +351,10 @@ Values:
 - `json`
 - `json-unformatted`
 
-## MigrationTypeValue
+## MigrationTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import MigrationTypeValue
+from mypy_boto3_dms.literals import MigrationTypeValueType
 ```
 
 Values:
@@ -363,10 +363,10 @@ Values:
 - `full-load`
 - `full-load-and-cdc`
 
-## NestingLevelValue
+## NestingLevelValueType
 
 ```python
-from mypy_boto3_dms.literals import NestingLevelValue
+from mypy_boto3_dms.literals import NestingLevelValueType
 ```
 
 Values:
@@ -374,10 +374,10 @@ Values:
 - `none`
 - `one`
 
-## ParquetVersionValue
+## ParquetVersionValueType
 
 ```python
-from mypy_boto3_dms.literals import ParquetVersionValue
+from mypy_boto3_dms.literals import ParquetVersionValueType
 ```
 
 Values:
@@ -385,10 +385,10 @@ Values:
 - `parquet-1-0`
 - `parquet-2-0`
 
-## RefreshSchemasStatusTypeValue
+## RefreshSchemasStatusTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import RefreshSchemasStatusTypeValue
+from mypy_boto3_dms.literals import RefreshSchemasStatusTypeValueType
 ```
 
 Values:
@@ -397,20 +397,20 @@ Values:
 - `refreshing`
 - `successful`
 
-## ReleaseStatusValues
+## ReleaseStatusValuesType
 
 ```python
-from mypy_boto3_dms.literals import ReleaseStatusValues
+from mypy_boto3_dms.literals import ReleaseStatusValuesType
 ```
 
 Values:
 
 - `beta`
 
-## ReloadOptionValue
+## ReloadOptionValueType
 
 ```python
-from mypy_boto3_dms.literals import ReloadOptionValue
+from mypy_boto3_dms.literals import ReloadOptionValueType
 ```
 
 Values:
@@ -418,10 +418,10 @@ Values:
 - `data-reload`
 - `validate-only`
 
-## ReplicationEndpointTypeValue
+## ReplicationEndpointTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import ReplicationEndpointTypeValue
+from mypy_boto3_dms.literals import ReplicationEndpointTypeValueType
 ```
 
 Values:
@@ -489,10 +489,10 @@ Values:
 
 - `replication_task_stopped`
 
-## SafeguardPolicy
+## SafeguardPolicyType
 
 ```python
-from mypy_boto3_dms.literals import SafeguardPolicy
+from mypy_boto3_dms.literals import SafeguardPolicyType
 ```
 
 Values:
@@ -501,20 +501,20 @@ Values:
 - `rely-on-sql-server-replication-agent`
 - `shared-automatic-truncation`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_dms.literals import SourceType
+from mypy_boto3_dms.literals import SourceTypeType
 ```
 
 Values:
 
 - `replication-instance`
 
-## StartReplicationTaskTypeValue
+## StartReplicationTaskTypeValueType
 
 ```python
-from mypy_boto3_dms.literals import StartReplicationTaskTypeValue
+from mypy_boto3_dms.literals import StartReplicationTaskTypeValueType
 ```
 
 Values:
@@ -523,10 +523,10 @@ Values:
 - `resume-processing`
 - `start-replication`
 
-## TargetDbType
+## TargetDbTypeType
 
 ```python
-from mypy_boto3_dms.literals import TargetDbType
+from mypy_boto3_dms.literals import TargetDbTypeType
 ```
 
 Values:

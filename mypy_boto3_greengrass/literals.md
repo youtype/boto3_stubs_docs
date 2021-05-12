@@ -3,16 +3,16 @@
 > [Index](..) > [Greengrass](.) > Literals
 
 Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
 [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [Literals for boto3 Greengrass module](#literals-for-boto3-greengrass-module)
-  - [BulkDeploymentStatus](#bulkdeploymentstatus)
-  - [ConfigurationSyncStatus](#configurationsyncstatus)
-  - [DeploymentType](#deploymenttype)
-  - [EncodingType](#encodingtype)
-  - [FunctionIsolationMode](#functionisolationmode)
+  - [BulkDeploymentStatusType](#bulkdeploymentstatustype)
+  - [ConfigurationSyncStatusType](#configurationsyncstatustype)
+  - [DeploymentTypeType](#deploymenttypetype)
+  - [EncodingTypeType](#encodingtypetype)
+  - [FunctionIsolationModeType](#functionisolationmodetype)
   - [ListBulkDeploymentDetailedReportsPaginatorName](#listbulkdeploymentdetailedreportspaginatorname)
   - [ListBulkDeploymentsPaginatorName](#listbulkdeploymentspaginatorname)
   - [ListConnectorDefinitionVersionsPaginatorName](#listconnectordefinitionversionspaginatorname)
@@ -32,20 +32,20 @@ type annotations stubs module
   - [ListResourceDefinitionsPaginatorName](#listresourcedefinitionspaginatorname)
   - [ListSubscriptionDefinitionVersionsPaginatorName](#listsubscriptiondefinitionversionspaginatorname)
   - [ListSubscriptionDefinitionsPaginatorName](#listsubscriptiondefinitionspaginatorname)
-  - [LoggerComponent](#loggercomponent)
-  - [LoggerLevel](#loggerlevel)
-  - [LoggerType](#loggertype)
-  - [Permission](#permission)
-  - [SoftwareToUpdate](#softwaretoupdate)
-  - [Telemetry](#telemetry)
-  - [UpdateAgentLogLevel](#updateagentloglevel)
-  - [UpdateTargetsArchitecture](#updatetargetsarchitecture)
-  - [UpdateTargetsOperatingSystem](#updatetargetsoperatingsystem)
+  - [LoggerComponentType](#loggercomponenttype)
+  - [LoggerLevelType](#loggerleveltype)
+  - [LoggerTypeType](#loggertypetype)
+  - [PermissionType](#permissiontype)
+  - [SoftwareToUpdateType](#softwaretoupdatetype)
+  - [TelemetryType](#telemetrytype)
+  - [UpdateAgentLogLevelType](#updateagentlogleveltype)
+  - [UpdateTargetsArchitectureType](#updatetargetsarchitecturetype)
+  - [UpdateTargetsOperatingSystemType](#updatetargetsoperatingsystemtype)
 
-## BulkDeploymentStatus
+## BulkDeploymentStatusType
 
 ```python
-from mypy_boto3_greengrass.literals import BulkDeploymentStatus
+from mypy_boto3_greengrass.literals import BulkDeploymentStatusType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 - `Stopped`
 - `Stopping`
 
-## ConfigurationSyncStatus
+## ConfigurationSyncStatusType
 
 ```python
-from mypy_boto3_greengrass.literals import ConfigurationSyncStatus
+from mypy_boto3_greengrass.literals import ConfigurationSyncStatusType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `InSync`
 - `OutOfSync`
 
-## DeploymentType
+## DeploymentTypeType
 
 ```python
-from mypy_boto3_greengrass.literals import DeploymentType
+from mypy_boto3_greengrass.literals import DeploymentTypeType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `Redeployment`
 - `ResetDeployment`
 
-## EncodingType
+## EncodingTypeType
 
 ```python
-from mypy_boto3_greengrass.literals import EncodingType
+from mypy_boto3_greengrass.literals import EncodingTypeType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 - `binary`
 - `json`
 
-## FunctionIsolationMode
+## FunctionIsolationModeType
 
 ```python
-from mypy_boto3_greengrass.literals import FunctionIsolationMode
+from mypy_boto3_greengrass.literals import FunctionIsolationModeType
 ```
 
 Values:
@@ -293,10 +293,10 @@ Values:
 
 - `list_subscription_definitions`
 
-## LoggerComponent
+## LoggerComponentType
 
 ```python
-from mypy_boto3_greengrass.literals import LoggerComponent
+from mypy_boto3_greengrass.literals import LoggerComponentType
 ```
 
 Values:
@@ -304,10 +304,10 @@ Values:
 - `GreengrassSystem`
 - `Lambda`
 
-## LoggerLevel
+## LoggerLevelType
 
 ```python
-from mypy_boto3_greengrass.literals import LoggerLevel
+from mypy_boto3_greengrass.literals import LoggerLevelType
 ```
 
 Values:
@@ -318,10 +318,10 @@ Values:
 - `INFO`
 - `WARN`
 
-## LoggerType
+## LoggerTypeType
 
 ```python
-from mypy_boto3_greengrass.literals import LoggerType
+from mypy_boto3_greengrass.literals import LoggerTypeType
 ```
 
 Values:
@@ -329,10 +329,10 @@ Values:
 - `AWSCloudWatch`
 - `FileSystem`
 
-## Permission
+## PermissionType
 
 ```python
-from mypy_boto3_greengrass.literals import Permission
+from mypy_boto3_greengrass.literals import PermissionType
 ```
 
 Values:
@@ -340,10 +340,10 @@ Values:
 - `ro`
 - `rw`
 
-## SoftwareToUpdate
+## SoftwareToUpdateType
 
 ```python
-from mypy_boto3_greengrass.literals import SoftwareToUpdate
+from mypy_boto3_greengrass.literals import SoftwareToUpdateType
 ```
 
 Values:
@@ -351,10 +351,10 @@ Values:
 - `core`
 - `ota_agent`
 
-## Telemetry
+## TelemetryType
 
 ```python
-from mypy_boto3_greengrass.literals import Telemetry
+from mypy_boto3_greengrass.literals import TelemetryType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `Off`
 - `On`
 
-## UpdateAgentLogLevel
+## UpdateAgentLogLevelType
 
 ```python
-from mypy_boto3_greengrass.literals import UpdateAgentLogLevel
+from mypy_boto3_greengrass.literals import UpdateAgentLogLevelType
 ```
 
 Values:
@@ -379,10 +379,10 @@ Values:
 - `VERBOSE`
 - `WARN`
 
-## UpdateTargetsArchitecture
+## UpdateTargetsArchitectureType
 
 ```python
-from mypy_boto3_greengrass.literals import UpdateTargetsArchitecture
+from mypy_boto3_greengrass.literals import UpdateTargetsArchitectureType
 ```
 
 Values:
@@ -392,10 +392,10 @@ Values:
 - `armv7l`
 - `x86_64`
 
-## UpdateTargetsOperatingSystem
+## UpdateTargetsOperatingSystemType
 
 ```python
-from mypy_boto3_greengrass.literals import UpdateTargetsOperatingSystem
+from mypy_boto3_greengrass.literals import UpdateTargetsOperatingSystemType
 ```
 
 Values:

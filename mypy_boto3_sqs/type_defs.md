@@ -3,7 +3,7 @@
 > [Index](..) > [SQS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sqs.html#SQS)
 type annotations stubs module
 [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
@@ -137,7 +137,8 @@ from mypy_boto3_sqs.type_defs import GetQueueAttributesResultTypeDef
 
 Optional fields:
 
-- `Attributes`: `Dict`\[[QueueAttributeName](./literals.md#queueattributename),
+- `Attributes`:
+  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
 
 ## GetQueueUrlResultTypeDef
@@ -232,7 +233,7 @@ Optional fields:
 - `MD5OfBody`: `str`
 - `Body`: `str`
 - `Attributes`:
-  `Dict`\[[MessageSystemAttributeName](./literals.md#messagesystemattributename),
+  `Dict`\[[MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype),
   `str`\]
 - `MD5OfMessageAttributes`: `str`
 - `MessageAttributes`: `Dict`\[`str`,
@@ -277,7 +278,7 @@ Optional fields:
 - `MessageAttributes`: `Dict`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
-  [MessageSystemAttributeNameForSends](./literals.md#messagesystemattributenameforsends)),
+  [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)),
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`

@@ -3,45 +3,45 @@
 > [Index](..) > [Appflow](.) > Literals
 
 Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appflow.html#Appflow)
 type annotations stubs module
 [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 - [Literals for boto3 Appflow module](#literals-for-boto3-appflow-module)
-  - [AggregationType](#aggregationtype)
-  - [AmplitudeConnectorOperator](#amplitudeconnectoroperator)
-  - [ConnectionMode](#connectionmode)
-  - [ConnectorType](#connectortype)
-  - [DataPullMode](#datapullmode)
-  - [DatadogConnectorOperator](#datadogconnectoroperator)
-  - [DynatraceConnectorOperator](#dynatraceconnectoroperator)
-  - [ExecutionStatus](#executionstatus)
-  - [FileType](#filetype)
-  - [FlowStatus](#flowstatus)
-  - [GoogleAnalyticsConnectorOperator](#googleanalyticsconnectoroperator)
-  - [InforNexusConnectorOperator](#infornexusconnectoroperator)
-  - [MarketoConnectorOperator](#marketoconnectoroperator)
-  - [Operator](#operator)
-  - [OperatorPropertiesKeys](#operatorpropertieskeys)
-  - [PrefixFormat](#prefixformat)
-  - [PrefixType](#prefixtype)
-  - [S3ConnectorOperator](#s3connectoroperator)
-  - [SalesforceConnectorOperator](#salesforceconnectoroperator)
-  - [ScheduleFrequencyType](#schedulefrequencytype)
-  - [ServiceNowConnectorOperator](#servicenowconnectoroperator)
-  - [SingularConnectorOperator](#singularconnectoroperator)
-  - [SlackConnectorOperator](#slackconnectoroperator)
-  - [TaskType](#tasktype)
-  - [TrendmicroConnectorOperator](#trendmicroconnectoroperator)
-  - [TriggerType](#triggertype)
-  - [VeevaConnectorOperator](#veevaconnectoroperator)
-  - [WriteOperationType](#writeoperationtype)
-  - [ZendeskConnectorOperator](#zendeskconnectoroperator)
+  - [AggregationTypeType](#aggregationtypetype)
+  - [AmplitudeConnectorOperatorType](#amplitudeconnectoroperatortype)
+  - [ConnectionModeType](#connectionmodetype)
+  - [ConnectorTypeType](#connectortypetype)
+  - [DataPullModeType](#datapullmodetype)
+  - [DatadogConnectorOperatorType](#datadogconnectoroperatortype)
+  - [DynatraceConnectorOperatorType](#dynatraceconnectoroperatortype)
+  - [ExecutionStatusType](#executionstatustype)
+  - [FileTypeType](#filetypetype)
+  - [FlowStatusType](#flowstatustype)
+  - [GoogleAnalyticsConnectorOperatorType](#googleanalyticsconnectoroperatortype)
+  - [InforNexusConnectorOperatorType](#infornexusconnectoroperatortype)
+  - [MarketoConnectorOperatorType](#marketoconnectoroperatortype)
+  - [OperatorPropertiesKeysType](#operatorpropertieskeystype)
+  - [OperatorType](#operatortype)
+  - [PrefixFormatType](#prefixformattype)
+  - [PrefixTypeType](#prefixtypetype)
+  - [S3ConnectorOperatorType](#s3connectoroperatortype)
+  - [SalesforceConnectorOperatorType](#salesforceconnectoroperatortype)
+  - [ScheduleFrequencyTypeType](#schedulefrequencytypetype)
+  - [ServiceNowConnectorOperatorType](#servicenowconnectoroperatortype)
+  - [SingularConnectorOperatorType](#singularconnectoroperatortype)
+  - [SlackConnectorOperatorType](#slackconnectoroperatortype)
+  - [TaskTypeType](#tasktypetype)
+  - [TrendmicroConnectorOperatorType](#trendmicroconnectoroperatortype)
+  - [TriggerTypeType](#triggertypetype)
+  - [VeevaConnectorOperatorType](#veevaconnectoroperatortype)
+  - [WriteOperationTypeType](#writeoperationtypetype)
+  - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
 
-## AggregationType
+## AggregationTypeType
 
 ```python
-from mypy_boto3_appflow.literals import AggregationType
+from mypy_boto3_appflow.literals import AggregationTypeType
 ```
 
 Values:
@@ -49,20 +49,20 @@ Values:
 - `None`
 - `SingleFile`
 
-## AmplitudeConnectorOperator
+## AmplitudeConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import AmplitudeConnectorOperator
+from mypy_boto3_appflow.literals import AmplitudeConnectorOperatorType
 ```
 
 Values:
 
 - `BETWEEN`
 
-## ConnectionMode
+## ConnectionModeType
 
 ```python
-from mypy_boto3_appflow.literals import ConnectionMode
+from mypy_boto3_appflow.literals import ConnectionModeType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `Private`
 - `Public`
 
-## ConnectorType
+## ConnectorTypeType
 
 ```python
-from mypy_boto3_appflow.literals import ConnectorType
+from mypy_boto3_appflow.literals import ConnectorTypeType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `Veeva`
 - `Zendesk`
 
-## DataPullMode
+## DataPullModeType
 
 ```python
-from mypy_boto3_appflow.literals import DataPullMode
+from mypy_boto3_appflow.literals import DataPullModeType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `Complete`
 - `Incremental`
 
-## DatadogConnectorOperator
+## DatadogConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import DatadogConnectorOperator
+from mypy_boto3_appflow.literals import DatadogConnectorOperatorType
 ```
 
 Values:
@@ -135,10 +135,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## DynatraceConnectorOperator
+## DynatraceConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import DynatraceConnectorOperator
+from mypy_boto3_appflow.literals import DynatraceConnectorOperatorType
 ```
 
 Values:
@@ -159,10 +159,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## ExecutionStatus
+## ExecutionStatusType
 
 ```python
-from mypy_boto3_appflow.literals import ExecutionStatus
+from mypy_boto3_appflow.literals import ExecutionStatusType
 ```
 
 Values:
@@ -171,10 +171,10 @@ Values:
 - `InProgress`
 - `Successful`
 
-## FileType
+## FileTypeType
 
 ```python
-from mypy_boto3_appflow.literals import FileType
+from mypy_boto3_appflow.literals import FileTypeType
 ```
 
 Values:
@@ -183,10 +183,10 @@ Values:
 - `JSON`
 - `PARQUET`
 
-## FlowStatus
+## FlowStatusType
 
 ```python
-from mypy_boto3_appflow.literals import FlowStatus
+from mypy_boto3_appflow.literals import FlowStatusType
 ```
 
 Values:
@@ -198,10 +198,10 @@ Values:
 - `Errored`
 - `Suspended`
 
-## GoogleAnalyticsConnectorOperator
+## GoogleAnalyticsConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import GoogleAnalyticsConnectorOperator
+from mypy_boto3_appflow.literals import GoogleAnalyticsConnectorOperatorType
 ```
 
 Values:
@@ -209,10 +209,10 @@ Values:
 - `BETWEEN`
 - `PROJECTION`
 
-## InforNexusConnectorOperator
+## InforNexusConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import InforNexusConnectorOperator
+from mypy_boto3_appflow.literals import InforNexusConnectorOperatorType
 ```
 
 Values:
@@ -233,10 +233,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## MarketoConnectorOperator
+## MarketoConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import MarketoConnectorOperator
+from mypy_boto3_appflow.literals import MarketoConnectorOperatorType
 ```
 
 Values:
@@ -258,40 +258,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## Operator
+## OperatorPropertiesKeysType
 
 ```python
-from mypy_boto3_appflow.literals import Operator
-```
-
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-## OperatorPropertiesKeys
-
-```python
-from mypy_boto3_appflow.literals import OperatorPropertiesKeys
+from mypy_boto3_appflow.literals import OperatorPropertiesKeysType
 ```
 
 Values:
@@ -311,65 +281,10 @@ Values:
 - `VALUE`
 - `VALUES`
 
-## PrefixFormat
+## OperatorType
 
 ```python
-from mypy_boto3_appflow.literals import PrefixFormat
-```
-
-Values:
-
-- `DAY`
-- `HOUR`
-- `MINUTE`
-- `MONTH`
-- `YEAR`
-
-## PrefixType
-
-```python
-from mypy_boto3_appflow.literals import PrefixType
-```
-
-Values:
-
-- `FILENAME`
-- `PATH`
-- `PATH_AND_FILENAME`
-
-## S3ConnectorOperator
-
-```python
-from mypy_boto3_appflow.literals import S3ConnectorOperator
-```
-
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-## SalesforceConnectorOperator
-
-```python
-from mypy_boto3_appflow.literals import SalesforceConnectorOperator
+from mypy_boto3_appflow.literals import OperatorType
 ```
 
 Values:
@@ -396,10 +311,95 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## ScheduleFrequencyType
+## PrefixFormatType
 
 ```python
-from mypy_boto3_appflow.literals import ScheduleFrequencyType
+from mypy_boto3_appflow.literals import PrefixFormatType
+```
+
+Values:
+
+- `DAY`
+- `HOUR`
+- `MINUTE`
+- `MONTH`
+- `YEAR`
+
+## PrefixTypeType
+
+```python
+from mypy_boto3_appflow.literals import PrefixTypeType
+```
+
+Values:
+
+- `FILENAME`
+- `PATH`
+- `PATH_AND_FILENAME`
+
+## S3ConnectorOperatorType
+
+```python
+from mypy_boto3_appflow.literals import S3ConnectorOperatorType
+```
+
+Values:
+
+- `ADDITION`
+- `BETWEEN`
+- `DIVISION`
+- `EQUAL_TO`
+- `GREATER_THAN`
+- `GREATER_THAN_OR_EQUAL_TO`
+- `LESS_THAN`
+- `LESS_THAN_OR_EQUAL_TO`
+- `MASK_ALL`
+- `MASK_FIRST_N`
+- `MASK_LAST_N`
+- `MULTIPLICATION`
+- `NO_OP`
+- `NOT_EQUAL_TO`
+- `PROJECTION`
+- `SUBTRACTION`
+- `VALIDATE_NON_NEGATIVE`
+- `VALIDATE_NON_NULL`
+- `VALIDATE_NON_ZERO`
+- `VALIDATE_NUMERIC`
+
+## SalesforceConnectorOperatorType
+
+```python
+from mypy_boto3_appflow.literals import SalesforceConnectorOperatorType
+```
+
+Values:
+
+- `ADDITION`
+- `BETWEEN`
+- `CONTAINS`
+- `DIVISION`
+- `EQUAL_TO`
+- `GREATER_THAN`
+- `GREATER_THAN_OR_EQUAL_TO`
+- `LESS_THAN`
+- `LESS_THAN_OR_EQUAL_TO`
+- `MASK_ALL`
+- `MASK_FIRST_N`
+- `MASK_LAST_N`
+- `MULTIPLICATION`
+- `NO_OP`
+- `NOT_EQUAL_TO`
+- `PROJECTION`
+- `SUBTRACTION`
+- `VALIDATE_NON_NEGATIVE`
+- `VALIDATE_NON_NULL`
+- `VALIDATE_NON_ZERO`
+- `VALIDATE_NUMERIC`
+
+## ScheduleFrequencyTypeType
+
+```python
+from mypy_boto3_appflow.literals import ScheduleFrequencyTypeType
 ```
 
 Values:
@@ -411,10 +411,10 @@ Values:
 - `ONCE`
 - `WEEKLY`
 
-## ServiceNowConnectorOperator
+## ServiceNowConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import ServiceNowConnectorOperator
+from mypy_boto3_appflow.literals import ServiceNowConnectorOperatorType
 ```
 
 Values:
@@ -441,10 +441,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## SingularConnectorOperator
+## SingularConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import SingularConnectorOperator
+from mypy_boto3_appflow.literals import SingularConnectorOperatorType
 ```
 
 Values:
@@ -464,10 +464,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## SlackConnectorOperator
+## SlackConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import SlackConnectorOperator
+from mypy_boto3_appflow.literals import SlackConnectorOperatorType
 ```
 
 Values:
@@ -492,10 +492,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## TaskType
+## TaskTypeType
 
 ```python
-from mypy_boto3_appflow.literals import TaskType
+from mypy_boto3_appflow.literals import TaskTypeType
 ```
 
 Values:
@@ -508,10 +508,10 @@ Values:
 - `Truncate`
 - `Validate`
 
-## TrendmicroConnectorOperator
+## TrendmicroConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import TrendmicroConnectorOperator
+from mypy_boto3_appflow.literals import TrendmicroConnectorOperatorType
 ```
 
 Values:
@@ -531,10 +531,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## TriggerType
+## TriggerTypeType
 
 ```python
-from mypy_boto3_appflow.literals import TriggerType
+from mypy_boto3_appflow.literals import TriggerTypeType
 ```
 
 Values:
@@ -543,10 +543,10 @@ Values:
 - `OnDemand`
 - `Scheduled`
 
-## VeevaConnectorOperator
+## VeevaConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import VeevaConnectorOperator
+from mypy_boto3_appflow.literals import VeevaConnectorOperatorType
 ```
 
 Values:
@@ -573,10 +573,10 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-## WriteOperationType
+## WriteOperationTypeType
 
 ```python
-from mypy_boto3_appflow.literals import WriteOperationType
+from mypy_boto3_appflow.literals import WriteOperationTypeType
 ```
 
 Values:
@@ -585,10 +585,10 @@ Values:
 - `UPDATE`
 - `UPSERT`
 
-## ZendeskConnectorOperator
+## ZendeskConnectorOperatorType
 
 ```python
-from mypy_boto3_appflow.literals import ZendeskConnectorOperator
+from mypy_boto3_appflow.literals import ZendeskConnectorOperatorType
 ```
 
 Values:

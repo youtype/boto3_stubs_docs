@@ -3,7 +3,7 @@
 > [Index](..) > ForecastService
 
 Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService)
 type annotations stubs module
 [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
@@ -30,58 +30,58 @@ Can be used directly:
 from mypy_boto3_forecast.client import ForecastServiceClient
 ```
 
-ForecastServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_dataset](./client.md#create-dataset)
-- [create_dataset_group](./client.md#create-dataset-group)
-- [create_dataset_import_job](./client.md#create-dataset-import-job)
-- [create_forecast](./client.md#create-forecast)
-- [create_forecast_export_job](./client.md#create-forecast-export-job)
-- [create_predictor](./client.md#create-predictor)
-- [create_predictor_backtest_export_job](./client.md#create-predictor-backtest-export-job)
-- [delete_dataset](./client.md#delete-dataset)
-- [delete_dataset_group](./client.md#delete-dataset-group)
-- [delete_dataset_import_job](./client.md#delete-dataset-import-job)
-- [delete_forecast](./client.md#delete-forecast)
-- [delete_forecast_export_job](./client.md#delete-forecast-export-job)
-- [delete_predictor](./client.md#delete-predictor)
-- [delete_predictor_backtest_export_job](./client.md#delete-predictor-backtest-export-job)
-- [delete_resource_tree](./client.md#delete-resource-tree)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_dataset_group](./client.md#describe-dataset-group)
-- [describe_dataset_import_job](./client.md#describe-dataset-import-job)
-- [describe_forecast](./client.md#describe-forecast)
-- [describe_forecast_export_job](./client.md#describe-forecast-export-job)
-- [describe_predictor](./client.md#describe-predictor)
-- [describe_predictor_backtest_export_job](./client.md#describe-predictor-backtest-export-job)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_accuracy_metrics](./client.md#get-accuracy-metrics)
-- [get_paginator](./client.md#get-paginator)
-- [list_dataset_groups](./client.md#list-dataset-groups)
-- [list_dataset_import_jobs](./client.md#list-dataset-import-jobs)
-- [list_datasets](./client.md#list-datasets)
-- [list_forecast_export_jobs](./client.md#list-forecast-export-jobs)
-- [list_forecasts](./client.md#list-forecasts)
-- [list_predictor_backtest_export_jobs](./client.md#list-predictor-backtest-export-jobs)
-- [list_predictors](./client.md#list-predictors)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [stop_resource](./client.md#stop-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_dataset_group](./client.md#update-dataset-group)
+- [can_paginate](./client.md#can_paginate)
+- [create_dataset](./client.md#create_dataset)
+- [create_dataset_group](./client.md#create_dataset_group)
+- [create_dataset_import_job](./client.md#create_dataset_import_job)
+- [create_forecast](./client.md#create_forecast)
+- [create_forecast_export_job](./client.md#create_forecast_export_job)
+- [create_predictor](./client.md#create_predictor)
+- [create_predictor_backtest_export_job](./client.md#create_predictor_backtest_export_job)
+- [delete_dataset](./client.md#delete_dataset)
+- [delete_dataset_group](./client.md#delete_dataset_group)
+- [delete_dataset_import_job](./client.md#delete_dataset_import_job)
+- [delete_forecast](./client.md#delete_forecast)
+- [delete_forecast_export_job](./client.md#delete_forecast_export_job)
+- [delete_predictor](./client.md#delete_predictor)
+- [delete_predictor_backtest_export_job](./client.md#delete_predictor_backtest_export_job)
+- [delete_resource_tree](./client.md#delete_resource_tree)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_dataset_group](./client.md#describe_dataset_group)
+- [describe_dataset_import_job](./client.md#describe_dataset_import_job)
+- [describe_forecast](./client.md#describe_forecast)
+- [describe_forecast_export_job](./client.md#describe_forecast_export_job)
+- [describe_predictor](./client.md#describe_predictor)
+- [describe_predictor_backtest_export_job](./client.md#describe_predictor_backtest_export_job)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_accuracy_metrics](./client.md#get_accuracy_metrics)
+- [get_paginator](./client.md#get_paginator)
+- [list_dataset_groups](./client.md#list_dataset_groups)
+- [list_dataset_import_jobs](./client.md#list_dataset_import_jobs)
+- [list_datasets](./client.md#list_datasets)
+- [list_forecast_export_jobs](./client.md#list_forecast_export_jobs)
+- [list_forecasts](./client.md#list_forecasts)
+- [list_predictor_backtest_export_jobs](./client.md#list_predictor_backtest_export_jobs)
+- [list_predictors](./client.md#list_predictors)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [stop_resource](./client.md#stop_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_dataset_group](./client.md#update_dataset_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+ForecastServiceClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidInputException
+- InvalidNextTokenException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -109,15 +109,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.literals import AttributeType, ...
+from mypy_boto3_forecast.literals import AttributeTypeType, ...
 ```
 
-- [AttributeType](./literals.md#attributetype)
-- [DatasetType](./literals.md#datasettype)
-- [Domain](./literals.md#domain)
-- [EvaluationType](./literals.md#evaluationtype)
-- [FeaturizationMethodName](./literals.md#featurizationmethodname)
-- [FilterConditionString](./literals.md#filterconditionstring)
+- [AttributeTypeType](./literals.md#attributetypetype)
+- [DatasetTypeType](./literals.md#datasettypetype)
+- [DomainType](./literals.md#domaintype)
+- [EvaluationTypeType](./literals.md#evaluationtypetype)
+- [FeaturizationMethodNameType](./literals.md#featurizationmethodnametype)
+- [FilterConditionStringType](./literals.md#filterconditionstringtype)
 - [ListDatasetGroupsPaginatorName](./literals.md#listdatasetgroupspaginatorname)
 - [ListDatasetImportJobsPaginatorName](./literals.md#listdatasetimportjobspaginatorname)
 - [ListDatasetsPaginatorName](./literals.md#listdatasetspaginatorname)
@@ -125,7 +125,7 @@ from mypy_boto3_forecast.literals import AttributeType, ...
 - [ListForecastsPaginatorName](./literals.md#listforecastspaginatorname)
 - [ListPredictorBacktestExportJobsPaginatorName](./literals.md#listpredictorbacktestexportjobspaginatorname)
 - [ListPredictorsPaginatorName](./literals.md#listpredictorspaginatorname)
-- [ScalingType](./literals.md#scalingtype)
+- [ScalingTypeType](./literals.md#scalingtypetype)
 
 ## Typed dictionaries
 

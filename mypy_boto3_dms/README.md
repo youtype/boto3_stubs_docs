@@ -3,7 +3,7 @@
 > [Index](..) > DatabaseMigrationService
 
 Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
 [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
@@ -31,96 +31,96 @@ Can be used directly:
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 ```
 
-DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags_to_resource](./client.md#add-tags-to-resource)
-- [apply_pending_maintenance_action](./client.md#apply-pending-maintenance-action)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_replication_task_assessment_run](./client.md#cancel-replication-task-assessment-run)
-- [create_endpoint](./client.md#create-endpoint)
-- [create_event_subscription](./client.md#create-event-subscription)
-- [create_replication_instance](./client.md#create-replication-instance)
-- [create_replication_subnet_group](./client.md#create-replication-subnet-group)
-- [create_replication_task](./client.md#create-replication-task)
-- [delete_certificate](./client.md#delete-certificate)
-- [delete_connection](./client.md#delete-connection)
-- [delete_endpoint](./client.md#delete-endpoint)
-- [delete_event_subscription](./client.md#delete-event-subscription)
-- [delete_replication_instance](./client.md#delete-replication-instance)
-- [delete_replication_subnet_group](./client.md#delete-replication-subnet-group)
-- [delete_replication_task](./client.md#delete-replication-task)
-- [delete_replication_task_assessment_run](./client.md#delete-replication-task-assessment-run)
-- [describe_account_attributes](./client.md#describe-account-attributes)
-- [describe_applicable_individual_assessments](./client.md#describe-applicable-individual-assessments)
-- [describe_certificates](./client.md#describe-certificates)
-- [describe_connections](./client.md#describe-connections)
-- [describe_endpoint_settings](./client.md#describe-endpoint-settings)
-- [describe_endpoint_types](./client.md#describe-endpoint-types)
-- [describe_endpoints](./client.md#describe-endpoints)
-- [describe_event_categories](./client.md#describe-event-categories)
-- [describe_event_subscriptions](./client.md#describe-event-subscriptions)
-- [describe_events](./client.md#describe-events)
-- [describe_orderable_replication_instances](./client.md#describe-orderable-replication-instances)
-- [describe_pending_maintenance_actions](./client.md#describe-pending-maintenance-actions)
-- [describe_refresh_schemas_status](./client.md#describe-refresh-schemas-status)
-- [describe_replication_instance_task_logs](./client.md#describe-replication-instance-task-logs)
-- [describe_replication_instances](./client.md#describe-replication-instances)
-- [describe_replication_subnet_groups](./client.md#describe-replication-subnet-groups)
-- [describe_replication_task_assessment_results](./client.md#describe-replication-task-assessment-results)
-- [describe_replication_task_assessment_runs](./client.md#describe-replication-task-assessment-runs)
-- [describe_replication_task_individual_assessments](./client.md#describe-replication-task-individual-assessments)
-- [describe_replication_tasks](./client.md#describe-replication-tasks)
-- [describe_schemas](./client.md#describe-schemas)
-- [describe_table_statistics](./client.md#describe-table-statistics)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [import_certificate](./client.md#import-certificate)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [modify_endpoint](./client.md#modify-endpoint)
-- [modify_event_subscription](./client.md#modify-event-subscription)
-- [modify_replication_instance](./client.md#modify-replication-instance)
-- [modify_replication_subnet_group](./client.md#modify-replication-subnet-group)
-- [modify_replication_task](./client.md#modify-replication-task)
-- [move_replication_task](./client.md#move-replication-task)
-- [reboot_replication_instance](./client.md#reboot-replication-instance)
-- [refresh_schemas](./client.md#refresh-schemas)
-- [reload_tables](./client.md#reload-tables)
-- [remove_tags_from_resource](./client.md#remove-tags-from-resource)
-- [start_replication_task](./client.md#start-replication-task)
-- [start_replication_task_assessment](./client.md#start-replication-task-assessment)
-- [start_replication_task_assessment_run](./client.md#start-replication-task-assessment-run)
-- [stop_replication_task](./client.md#stop-replication-task)
-- [test_connection](./client.md#test-connection)
+- [add_tags_to_resource](./client.md#add_tags_to_resource)
+- [apply_pending_maintenance_action](./client.md#apply_pending_maintenance_action)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_replication_task_assessment_run](./client.md#cancel_replication_task_assessment_run)
+- [create_endpoint](./client.md#create_endpoint)
+- [create_event_subscription](./client.md#create_event_subscription)
+- [create_replication_instance](./client.md#create_replication_instance)
+- [create_replication_subnet_group](./client.md#create_replication_subnet_group)
+- [create_replication_task](./client.md#create_replication_task)
+- [delete_certificate](./client.md#delete_certificate)
+- [delete_connection](./client.md#delete_connection)
+- [delete_endpoint](./client.md#delete_endpoint)
+- [delete_event_subscription](./client.md#delete_event_subscription)
+- [delete_replication_instance](./client.md#delete_replication_instance)
+- [delete_replication_subnet_group](./client.md#delete_replication_subnet_group)
+- [delete_replication_task](./client.md#delete_replication_task)
+- [delete_replication_task_assessment_run](./client.md#delete_replication_task_assessment_run)
+- [describe_account_attributes](./client.md#describe_account_attributes)
+- [describe_applicable_individual_assessments](./client.md#describe_applicable_individual_assessments)
+- [describe_certificates](./client.md#describe_certificates)
+- [describe_connections](./client.md#describe_connections)
+- [describe_endpoint_settings](./client.md#describe_endpoint_settings)
+- [describe_endpoint_types](./client.md#describe_endpoint_types)
+- [describe_endpoints](./client.md#describe_endpoints)
+- [describe_event_categories](./client.md#describe_event_categories)
+- [describe_event_subscriptions](./client.md#describe_event_subscriptions)
+- [describe_events](./client.md#describe_events)
+- [describe_orderable_replication_instances](./client.md#describe_orderable_replication_instances)
+- [describe_pending_maintenance_actions](./client.md#describe_pending_maintenance_actions)
+- [describe_refresh_schemas_status](./client.md#describe_refresh_schemas_status)
+- [describe_replication_instance_task_logs](./client.md#describe_replication_instance_task_logs)
+- [describe_replication_instances](./client.md#describe_replication_instances)
+- [describe_replication_subnet_groups](./client.md#describe_replication_subnet_groups)
+- [describe_replication_task_assessment_results](./client.md#describe_replication_task_assessment_results)
+- [describe_replication_task_assessment_runs](./client.md#describe_replication_task_assessment_runs)
+- [describe_replication_task_individual_assessments](./client.md#describe_replication_task_individual_assessments)
+- [describe_replication_tasks](./client.md#describe_replication_tasks)
+- [describe_schemas](./client.md#describe_schemas)
+- [describe_table_statistics](./client.md#describe_table_statistics)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [import_certificate](./client.md#import_certificate)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [modify_endpoint](./client.md#modify_endpoint)
+- [modify_event_subscription](./client.md#modify_event_subscription)
+- [modify_replication_instance](./client.md#modify_replication_instance)
+- [modify_replication_subnet_group](./client.md#modify_replication_subnet_group)
+- [modify_replication_task](./client.md#modify_replication_task)
+- [move_replication_task](./client.md#move_replication_task)
+- [reboot_replication_instance](./client.md#reboot_replication_instance)
+- [refresh_schemas](./client.md#refresh_schemas)
+- [reload_tables](./client.md#reload_tables)
+- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
+- [start_replication_task](./client.md#start_replication_task)
+- [start_replication_task_assessment](./client.md#start_replication_task_assessment)
+- [start_replication_task_assessment_run](./client.md#start_replication_task_assessment_run)
+- [stop_replication_task](./client.md#stop_replication_task)
+- [test_connection](./client.md#test_connection)
 
 ### Exceptions
 
-- [AccessDeniedFault](./client.md#accessdeniedfault)
-- [ClientError](./client.md#clienterror)
-- [InsufficientResourceCapacityFault](./client.md#insufficientresourcecapacityfault)
-- [InvalidCertificateFault](./client.md#invalidcertificatefault)
-- [InvalidResourceStateFault](./client.md#invalidresourcestatefault)
-- [InvalidSubnet](./client.md#invalidsubnet)
-- [KMSAccessDeniedFault](./client.md#kmsaccessdeniedfault)
-- [KMSDisabledFault](./client.md#kmsdisabledfault)
-- [KMSFault](./client.md#kmsfault)
-- [KMSInvalidStateFault](./client.md#kmsinvalidstatefault)
-- [KMSKeyNotAccessibleFault](./client.md#kmskeynotaccessiblefault)
-- [KMSNotFoundFault](./client.md#kmsnotfoundfault)
-- [KMSThrottlingFault](./client.md#kmsthrottlingfault)
-- [ReplicationSubnetGroupDoesNotCoverEnoughAZs](./client.md#replicationsubnetgroupdoesnotcoverenoughazs)
-- [ResourceAlreadyExistsFault](./client.md#resourcealreadyexistsfault)
-- [ResourceNotFoundFault](./client.md#resourcenotfoundfault)
-- [ResourceQuotaExceededFault](./client.md#resourcequotaexceededfault)
-- [S3AccessDeniedFault](./client.md#s3accessdeniedfault)
-- [S3ResourceNotFoundFault](./client.md#s3resourcenotfoundfault)
-- [SNSInvalidTopicFault](./client.md#snsinvalidtopicfault)
-- [SNSNoAuthorizationFault](./client.md#snsnoauthorizationfault)
-- [StorageQuotaExceededFault](./client.md#storagequotaexceededfault)
-- [SubnetAlreadyInUse](./client.md#subnetalreadyinuse)
-- [UpgradeDependencyFailureFault](./client.md#upgradedependencyfailurefault)
+DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedFault
+- ClientError
+- InsufficientResourceCapacityFault
+- InvalidCertificateFault
+- InvalidResourceStateFault
+- InvalidSubnet
+- KMSAccessDeniedFault
+- KMSDisabledFault
+- KMSFault
+- KMSInvalidStateFault
+- KMSKeyNotAccessibleFault
+- KMSNotFoundFault
+- KMSThrottlingFault
+- ReplicationSubnetGroupDoesNotCoverEnoughAZs
+- ResourceAlreadyExistsFault
+- ResourceNotFoundFault
+- ResourceQuotaExceededFault
+- S3AccessDeniedFault
+- S3ResourceNotFoundFault
+- SNSInvalidTopicFault
+- SNSNoAuthorizationFault
+- StorageQuotaExceededFault
+- SubnetAlreadyInUse
+- UpgradeDependencyFailureFault
 
 ## Paginators
 
@@ -174,16 +174,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.literals import AuthMechanismValue, ...
+from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 ```
 
-- [AuthMechanismValue](./literals.md#authmechanismvalue)
-- [AuthTypeValue](./literals.md#authtypevalue)
-- [CharLengthSemantics](./literals.md#charlengthsemantics)
-- [CompressionTypeValue](./literals.md#compressiontypevalue)
-- [DataFormatValue](./literals.md#dataformatvalue)
-- [DatePartitionDelimiterValue](./literals.md#datepartitiondelimitervalue)
-- [DatePartitionSequenceValue](./literals.md#datepartitionsequencevalue)
+- [AuthMechanismValueType](./literals.md#authmechanismvaluetype)
+- [AuthTypeValueType](./literals.md#authtypevaluetype)
+- [CharLengthSemanticsType](./literals.md#charlengthsemanticstype)
+- [CompressionTypeValueType](./literals.md#compressiontypevaluetype)
+- [DataFormatValueType](./literals.md#dataformatvaluetype)
+- [DatePartitionDelimiterValueType](./literals.md#datepartitiondelimitervaluetype)
+- [DatePartitionSequenceValueType](./literals.md#datepartitionsequencevaluetype)
 - [DescribeCertificatesPaginatorName](./literals.md#describecertificatespaginatorname)
 - [DescribeConnectionsPaginatorName](./literals.md#describeconnectionspaginatorname)
 - [DescribeEndpointTypesPaginatorName](./literals.md#describeendpointtypespaginatorname)
@@ -197,30 +197,30 @@ from mypy_boto3_dms.literals import AuthMechanismValue, ...
 - [DescribeReplicationTasksPaginatorName](./literals.md#describereplicationtaskspaginatorname)
 - [DescribeSchemasPaginatorName](./literals.md#describeschemaspaginatorname)
 - [DescribeTableStatisticsPaginatorName](./literals.md#describetablestatisticspaginatorname)
-- [DmsSslModeValue](./literals.md#dmssslmodevalue)
-- [EncodingTypeValue](./literals.md#encodingtypevalue)
-- [EncryptionModeValue](./literals.md#encryptionmodevalue)
+- [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
+- [EncodingTypeValueType](./literals.md#encodingtypevaluetype)
+- [EncryptionModeValueType](./literals.md#encryptionmodevaluetype)
 - [EndpointDeletedWaiterName](./literals.md#endpointdeletedwaitername)
-- [EndpointSettingTypeValue](./literals.md#endpointsettingtypevalue)
-- [KafkaSecurityProtocol](./literals.md#kafkasecurityprotocol)
-- [MessageFormatValue](./literals.md#messageformatvalue)
-- [MigrationTypeValue](./literals.md#migrationtypevalue)
-- [NestingLevelValue](./literals.md#nestinglevelvalue)
-- [ParquetVersionValue](./literals.md#parquetversionvalue)
-- [RefreshSchemasStatusTypeValue](./literals.md#refreshschemasstatustypevalue)
-- [ReleaseStatusValues](./literals.md#releasestatusvalues)
-- [ReloadOptionValue](./literals.md#reloadoptionvalue)
-- [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
+- [EndpointSettingTypeValueType](./literals.md#endpointsettingtypevaluetype)
+- [KafkaSecurityProtocolType](./literals.md#kafkasecurityprotocoltype)
+- [MessageFormatValueType](./literals.md#messageformatvaluetype)
+- [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
+- [NestingLevelValueType](./literals.md#nestinglevelvaluetype)
+- [ParquetVersionValueType](./literals.md#parquetversionvaluetype)
+- [RefreshSchemasStatusTypeValueType](./literals.md#refreshschemasstatustypevaluetype)
+- [ReleaseStatusValuesType](./literals.md#releasestatusvaluestype)
+- [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
+- [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
 - [ReplicationInstanceAvailableWaiterName](./literals.md#replicationinstanceavailablewaitername)
 - [ReplicationInstanceDeletedWaiterName](./literals.md#replicationinstancedeletedwaitername)
 - [ReplicationTaskDeletedWaiterName](./literals.md#replicationtaskdeletedwaitername)
 - [ReplicationTaskReadyWaiterName](./literals.md#replicationtaskreadywaitername)
 - [ReplicationTaskRunningWaiterName](./literals.md#replicationtaskrunningwaitername)
 - [ReplicationTaskStoppedWaiterName](./literals.md#replicationtaskstoppedwaitername)
-- [SafeguardPolicy](./literals.md#safeguardpolicy)
-- [SourceType](./literals.md#sourcetype)
-- [StartReplicationTaskTypeValue](./literals.md#startreplicationtasktypevalue)
-- [TargetDbType](./literals.md#targetdbtype)
+- [SafeguardPolicyType](./literals.md#safeguardpolicytype)
+- [SourceTypeType](./literals.md#sourcetypetype)
+- [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
+- [TargetDbTypeType](./literals.md#targetdbtypetype)
 - [TestConnectionSucceedsWaiterName](./literals.md#testconnectionsucceedswaitername)
 
 ## Typed dictionaries

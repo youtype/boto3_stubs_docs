@@ -3,7 +3,7 @@
 > [Index](..) > AuditManager
 
 Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
 [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
@@ -29,71 +29,71 @@ Can be used directly:
 from mypy_boto3_auditmanager.client import AuditManagerClient
 ```
 
-AuditManagerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_assessment_report_evidence_folder](./client.md#associate-assessment-report-evidence-folder)
-- [batch_associate_assessment_report_evidence](./client.md#batch-associate-assessment-report-evidence)
-- [batch_create_delegation_by_assessment](./client.md#batch-create-delegation-by-assessment)
-- [batch_delete_delegation_by_assessment](./client.md#batch-delete-delegation-by-assessment)
-- [batch_disassociate_assessment_report_evidence](./client.md#batch-disassociate-assessment-report-evidence)
-- [batch_import_evidence_to_assessment_control](./client.md#batch-import-evidence-to-assessment-control)
-- [can_paginate](./client.md#can-paginate)
-- [create_assessment](./client.md#create-assessment)
-- [create_assessment_framework](./client.md#create-assessment-framework)
-- [create_assessment_report](./client.md#create-assessment-report)
-- [create_control](./client.md#create-control)
-- [delete_assessment](./client.md#delete-assessment)
-- [delete_assessment_framework](./client.md#delete-assessment-framework)
-- [delete_assessment_report](./client.md#delete-assessment-report)
-- [delete_control](./client.md#delete-control)
-- [deregister_account](./client.md#deregister-account)
-- [deregister_organization_admin_account](./client.md#deregister-organization-admin-account)
-- [disassociate_assessment_report_evidence_folder](./client.md#disassociate-assessment-report-evidence-folder)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_account_status](./client.md#get-account-status)
-- [get_assessment](./client.md#get-assessment)
-- [get_assessment_framework](./client.md#get-assessment-framework)
-- [get_assessment_report_url](./client.md#get-assessment-report-url)
-- [get_change_logs](./client.md#get-change-logs)
-- [get_control](./client.md#get-control)
-- [get_delegations](./client.md#get-delegations)
-- [get_evidence](./client.md#get-evidence)
-- [get_evidence_by_evidence_folder](./client.md#get-evidence-by-evidence-folder)
-- [get_evidence_folder](./client.md#get-evidence-folder)
-- [get_evidence_folders_by_assessment](./client.md#get-evidence-folders-by-assessment)
-- [get_evidence_folders_by_assessment_control](./client.md#get-evidence-folders-by-assessment-control)
-- [get_organization_admin_account](./client.md#get-organization-admin-account)
-- [get_services_in_scope](./client.md#get-services-in-scope)
-- [get_settings](./client.md#get-settings)
-- [list_assessment_frameworks](./client.md#list-assessment-frameworks)
-- [list_assessment_reports](./client.md#list-assessment-reports)
-- [list_assessments](./client.md#list-assessments)
-- [list_controls](./client.md#list-controls)
-- [list_keywords_for_data_source](./client.md#list-keywords-for-data-source)
-- [list_notifications](./client.md#list-notifications)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [register_account](./client.md#register-account)
-- [register_organization_admin_account](./client.md#register-organization-admin-account)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_assessment](./client.md#update-assessment)
-- [update_assessment_control](./client.md#update-assessment-control)
-- [update_assessment_control_set_status](./client.md#update-assessment-control-set-status)
-- [update_assessment_framework](./client.md#update-assessment-framework)
-- [update_assessment_status](./client.md#update-assessment-status)
-- [update_control](./client.md#update-control)
-- [update_settings](./client.md#update-settings)
-- [validate_assessment_report_integrity](./client.md#validate-assessment-report-integrity)
+- [associate_assessment_report_evidence_folder](./client.md#associate_assessment_report_evidence_folder)
+- [batch_associate_assessment_report_evidence](./client.md#batch_associate_assessment_report_evidence)
+- [batch_create_delegation_by_assessment](./client.md#batch_create_delegation_by_assessment)
+- [batch_delete_delegation_by_assessment](./client.md#batch_delete_delegation_by_assessment)
+- [batch_disassociate_assessment_report_evidence](./client.md#batch_disassociate_assessment_report_evidence)
+- [batch_import_evidence_to_assessment_control](./client.md#batch_import_evidence_to_assessment_control)
+- [can_paginate](./client.md#can_paginate)
+- [create_assessment](./client.md#create_assessment)
+- [create_assessment_framework](./client.md#create_assessment_framework)
+- [create_assessment_report](./client.md#create_assessment_report)
+- [create_control](./client.md#create_control)
+- [delete_assessment](./client.md#delete_assessment)
+- [delete_assessment_framework](./client.md#delete_assessment_framework)
+- [delete_assessment_report](./client.md#delete_assessment_report)
+- [delete_control](./client.md#delete_control)
+- [deregister_account](./client.md#deregister_account)
+- [deregister_organization_admin_account](./client.md#deregister_organization_admin_account)
+- [disassociate_assessment_report_evidence_folder](./client.md#disassociate_assessment_report_evidence_folder)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_account_status](./client.md#get_account_status)
+- [get_assessment](./client.md#get_assessment)
+- [get_assessment_framework](./client.md#get_assessment_framework)
+- [get_assessment_report_url](./client.md#get_assessment_report_url)
+- [get_change_logs](./client.md#get_change_logs)
+- [get_control](./client.md#get_control)
+- [get_delegations](./client.md#get_delegations)
+- [get_evidence](./client.md#get_evidence)
+- [get_evidence_by_evidence_folder](./client.md#get_evidence_by_evidence_folder)
+- [get_evidence_folder](./client.md#get_evidence_folder)
+- [get_evidence_folders_by_assessment](./client.md#get_evidence_folders_by_assessment)
+- [get_evidence_folders_by_assessment_control](./client.md#get_evidence_folders_by_assessment_control)
+- [get_organization_admin_account](./client.md#get_organization_admin_account)
+- [get_services_in_scope](./client.md#get_services_in_scope)
+- [get_settings](./client.md#get_settings)
+- [list_assessment_frameworks](./client.md#list_assessment_frameworks)
+- [list_assessment_reports](./client.md#list_assessment_reports)
+- [list_assessments](./client.md#list_assessments)
+- [list_controls](./client.md#list_controls)
+- [list_keywords_for_data_source](./client.md#list_keywords_for_data_source)
+- [list_notifications](./client.md#list_notifications)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [register_account](./client.md#register_account)
+- [register_organization_admin_account](./client.md#register_organization_admin_account)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_assessment](./client.md#update_assessment)
+- [update_assessment_control](./client.md#update_assessment_control)
+- [update_assessment_control_set_status](./client.md#update_assessment_control_set_status)
+- [update_assessment_framework](./client.md#update_assessment_framework)
+- [update_assessment_status](./client.md#update_assessment_status)
+- [update_control](./client.md#update_control)
+- [update_settings](./client.md#update_settings)
+- [validate_assessment_report_integrity](./client.md#validate_assessment_report_integrity)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+AuditManagerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Literals
 
@@ -102,27 +102,27 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_auditmanager.literals import AccountStatus, ...
+from mypy_boto3_auditmanager.literals import AccountStatusType, ...
 ```
 
-- [AccountStatus](./literals.md#accountstatus)
-- [ActionEnum](./literals.md#actionenum)
-- [AssessmentReportDestinationType](./literals.md#assessmentreportdestinationtype)
-- [AssessmentReportStatus](./literals.md#assessmentreportstatus)
-- [AssessmentStatus](./literals.md#assessmentstatus)
-- [ControlResponse](./literals.md#controlresponse)
-- [ControlSetStatus](./literals.md#controlsetstatus)
-- [ControlStatus](./literals.md#controlstatus)
-- [ControlType](./literals.md#controltype)
-- [DelegationStatus](./literals.md#delegationstatus)
-- [FrameworkType](./literals.md#frameworktype)
-- [KeywordInputType](./literals.md#keywordinputtype)
-- [ObjectTypeEnum](./literals.md#objecttypeenum)
-- [RoleType](./literals.md#roletype)
-- [SettingAttribute](./literals.md#settingattribute)
-- [SourceFrequency](./literals.md#sourcefrequency)
-- [SourceSetUpOption](./literals.md#sourcesetupoption)
-- [SourceType](./literals.md#sourcetype)
+- [AccountStatusType](./literals.md#accountstatustype)
+- [ActionEnumType](./literals.md#actionenumtype)
+- [AssessmentReportDestinationTypeType](./literals.md#assessmentreportdestinationtypetype)
+- [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
+- [AssessmentStatusType](./literals.md#assessmentstatustype)
+- [ControlResponseType](./literals.md#controlresponsetype)
+- [ControlSetStatusType](./literals.md#controlsetstatustype)
+- [ControlStatusType](./literals.md#controlstatustype)
+- [ControlTypeType](./literals.md#controltypetype)
+- [DelegationStatusType](./literals.md#delegationstatustype)
+- [FrameworkTypeType](./literals.md#frameworktypetype)
+- [KeywordInputTypeType](./literals.md#keywordinputtypetype)
+- [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
+- [RoleTypeType](./literals.md#roletypetype)
+- [SettingAttributeType](./literals.md#settingattributetype)
+- [SourceFrequencyType](./literals.md#sourcefrequencytype)
+- [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
+- [SourceTypeType](./literals.md#sourcetypetype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > WorkSpaces
 
 Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
 [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
@@ -30,84 +30,84 @@ Can be used directly:
 from mypy_boto3_workspaces.client import WorkSpacesClient
 ```
 
-WorkSpacesClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_connection_alias](./client.md#associate-connection-alias)
-- [associate_ip_groups](./client.md#associate-ip-groups)
-- [authorize_ip_rules](./client.md#authorize-ip-rules)
-- [can_paginate](./client.md#can-paginate)
-- [copy_workspace_image](./client.md#copy-workspace-image)
-- [create_connection_alias](./client.md#create-connection-alias)
-- [create_ip_group](./client.md#create-ip-group)
-- [create_tags](./client.md#create-tags)
-- [create_workspace_bundle](./client.md#create-workspace-bundle)
-- [create_workspaces](./client.md#create-workspaces)
-- [delete_connection_alias](./client.md#delete-connection-alias)
-- [delete_ip_group](./client.md#delete-ip-group)
-- [delete_tags](./client.md#delete-tags)
-- [delete_workspace_bundle](./client.md#delete-workspace-bundle)
-- [delete_workspace_image](./client.md#delete-workspace-image)
-- [deregister_workspace_directory](./client.md#deregister-workspace-directory)
-- [describe_account](./client.md#describe-account)
-- [describe_account_modifications](./client.md#describe-account-modifications)
-- [describe_client_properties](./client.md#describe-client-properties)
-- [describe_connection_alias_permissions](./client.md#describe-connection-alias-permissions)
-- [describe_connection_aliases](./client.md#describe-connection-aliases)
-- [describe_ip_groups](./client.md#describe-ip-groups)
-- [describe_tags](./client.md#describe-tags)
-- [describe_workspace_bundles](./client.md#describe-workspace-bundles)
-- [describe_workspace_directories](./client.md#describe-workspace-directories)
-- [describe_workspace_image_permissions](./client.md#describe-workspace-image-permissions)
-- [describe_workspace_images](./client.md#describe-workspace-images)
-- [describe_workspace_snapshots](./client.md#describe-workspace-snapshots)
-- [describe_workspaces](./client.md#describe-workspaces)
-- [describe_workspaces_connection_status](./client.md#describe-workspaces-connection-status)
-- [disassociate_connection_alias](./client.md#disassociate-connection-alias)
-- [disassociate_ip_groups](./client.md#disassociate-ip-groups)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [import_workspace_image](./client.md#import-workspace-image)
-- [list_available_management_cidr_ranges](./client.md#list-available-management-cidr-ranges)
-- [migrate_workspace](./client.md#migrate-workspace)
-- [modify_account](./client.md#modify-account)
-- [modify_client_properties](./client.md#modify-client-properties)
-- [modify_selfservice_permissions](./client.md#modify-selfservice-permissions)
-- [modify_workspace_access_properties](./client.md#modify-workspace-access-properties)
-- [modify_workspace_creation_properties](./client.md#modify-workspace-creation-properties)
-- [modify_workspace_properties](./client.md#modify-workspace-properties)
-- [modify_workspace_state](./client.md#modify-workspace-state)
-- [reboot_workspaces](./client.md#reboot-workspaces)
-- [rebuild_workspaces](./client.md#rebuild-workspaces)
-- [register_workspace_directory](./client.md#register-workspace-directory)
-- [restore_workspace](./client.md#restore-workspace)
-- [revoke_ip_rules](./client.md#revoke-ip-rules)
-- [start_workspaces](./client.md#start-workspaces)
-- [stop_workspaces](./client.md#stop-workspaces)
-- [terminate_workspaces](./client.md#terminate-workspaces)
-- [update_connection_alias_permission](./client.md#update-connection-alias-permission)
-- [update_rules_of_ip_group](./client.md#update-rules-of-ip-group)
-- [update_workspace_bundle](./client.md#update-workspace-bundle)
-- [update_workspace_image_permission](./client.md#update-workspace-image-permission)
+- [associate_connection_alias](./client.md#associate_connection_alias)
+- [associate_ip_groups](./client.md#associate_ip_groups)
+- [authorize_ip_rules](./client.md#authorize_ip_rules)
+- [can_paginate](./client.md#can_paginate)
+- [copy_workspace_image](./client.md#copy_workspace_image)
+- [create_connection_alias](./client.md#create_connection_alias)
+- [create_ip_group](./client.md#create_ip_group)
+- [create_tags](./client.md#create_tags)
+- [create_workspace_bundle](./client.md#create_workspace_bundle)
+- [create_workspaces](./client.md#create_workspaces)
+- [delete_connection_alias](./client.md#delete_connection_alias)
+- [delete_ip_group](./client.md#delete_ip_group)
+- [delete_tags](./client.md#delete_tags)
+- [delete_workspace_bundle](./client.md#delete_workspace_bundle)
+- [delete_workspace_image](./client.md#delete_workspace_image)
+- [deregister_workspace_directory](./client.md#deregister_workspace_directory)
+- [describe_account](./client.md#describe_account)
+- [describe_account_modifications](./client.md#describe_account_modifications)
+- [describe_client_properties](./client.md#describe_client_properties)
+- [describe_connection_alias_permissions](./client.md#describe_connection_alias_permissions)
+- [describe_connection_aliases](./client.md#describe_connection_aliases)
+- [describe_ip_groups](./client.md#describe_ip_groups)
+- [describe_tags](./client.md#describe_tags)
+- [describe_workspace_bundles](./client.md#describe_workspace_bundles)
+- [describe_workspace_directories](./client.md#describe_workspace_directories)
+- [describe_workspace_image_permissions](./client.md#describe_workspace_image_permissions)
+- [describe_workspace_images](./client.md#describe_workspace_images)
+- [describe_workspace_snapshots](./client.md#describe_workspace_snapshots)
+- [describe_workspaces](./client.md#describe_workspaces)
+- [describe_workspaces_connection_status](./client.md#describe_workspaces_connection_status)
+- [disassociate_connection_alias](./client.md#disassociate_connection_alias)
+- [disassociate_ip_groups](./client.md#disassociate_ip_groups)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [import_workspace_image](./client.md#import_workspace_image)
+- [list_available_management_cidr_ranges](./client.md#list_available_management_cidr_ranges)
+- [migrate_workspace](./client.md#migrate_workspace)
+- [modify_account](./client.md#modify_account)
+- [modify_client_properties](./client.md#modify_client_properties)
+- [modify_selfservice_permissions](./client.md#modify_selfservice_permissions)
+- [modify_workspace_access_properties](./client.md#modify_workspace_access_properties)
+- [modify_workspace_creation_properties](./client.md#modify_workspace_creation_properties)
+- [modify_workspace_properties](./client.md#modify_workspace_properties)
+- [modify_workspace_state](./client.md#modify_workspace_state)
+- [reboot_workspaces](./client.md#reboot_workspaces)
+- [rebuild_workspaces](./client.md#rebuild_workspaces)
+- [register_workspace_directory](./client.md#register_workspace_directory)
+- [restore_workspace](./client.md#restore_workspace)
+- [revoke_ip_rules](./client.md#revoke_ip_rules)
+- [start_workspaces](./client.md#start_workspaces)
+- [stop_workspaces](./client.md#stop_workspaces)
+- [terminate_workspaces](./client.md#terminate_workspaces)
+- [update_connection_alias_permission](./client.md#update_connection_alias_permission)
+- [update_rules_of_ip_group](./client.md#update_rules_of_ip_group)
+- [update_workspace_bundle](./client.md#update_workspace_bundle)
+- [update_workspace_image_permission](./client.md#update_workspace_image_permission)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InvalidParameterValuesException](./client.md#invalidparametervaluesexception)
-- [InvalidResourceStateException](./client.md#invalidresourcestateexception)
-- [OperationInProgressException](./client.md#operationinprogressexception)
-- [OperationNotSupportedException](./client.md#operationnotsupportedexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceAssociatedException](./client.md#resourceassociatedexception)
-- [ResourceCreationFailedException](./client.md#resourcecreationfailedexception)
-- [ResourceLimitExceededException](./client.md#resourcelimitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceUnavailableException](./client.md#resourceunavailableexception)
-- [UnsupportedNetworkConfigurationException](./client.md#unsupportednetworkconfigurationexception)
-- [UnsupportedWorkspaceConfigurationException](./client.md#unsupportedworkspaceconfigurationexception)
-- [WorkspacesDefaultRoleNotFoundException](./client.md#workspacesdefaultrolenotfoundexception)
+WorkSpacesClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InvalidParameterValuesException
+- InvalidResourceStateException
+- OperationInProgressException
+- OperationNotSupportedException
+- ResourceAlreadyExistsException
+- ResourceAssociatedException
+- ResourceCreationFailedException
+- ResourceLimitExceededException
+- ResourceNotFoundException
+- ResourceUnavailableException
+- UnsupportedNetworkConfigurationException
+- UnsupportedWorkspaceConfigurationException
+- WorkspacesDefaultRoleNotFoundException
 
 ## Paginators
 
@@ -136,18 +136,18 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_workspaces.literals import AccessPropertyValue, ...
+from mypy_boto3_workspaces.literals import AccessPropertyValueType, ...
 ```
 
-- [AccessPropertyValue](./literals.md#accesspropertyvalue)
-- [Application](./literals.md#application)
-- [AssociationStatus](./literals.md#associationstatus)
-- [Compute](./literals.md#compute)
-- [ConnectionAliasState](./literals.md#connectionaliasstate)
-- [ConnectionState](./literals.md#connectionstate)
-- [DedicatedTenancyModificationStateEnum](./literals.md#dedicatedtenancymodificationstateenum)
-- [DedicatedTenancySupportEnum](./literals.md#dedicatedtenancysupportenum)
-- [DedicatedTenancySupportResultEnum](./literals.md#dedicatedtenancysupportresultenum)
+- [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- [ApplicationType](./literals.md#applicationtype)
+- [AssociationStatusType](./literals.md#associationstatustype)
+- [ComputeType](./literals.md#computetype)
+- [ConnectionAliasStateType](./literals.md#connectionaliasstatetype)
+- [ConnectionStateType](./literals.md#connectionstatetype)
+- [DedicatedTenancyModificationStateEnumType](./literals.md#dedicatedtenancymodificationstateenumtype)
+- [DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype)
+- [DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype)
 - [DescribeAccountModificationsPaginatorName](./literals.md#describeaccountmodificationspaginatorname)
 - [DescribeIpGroupsPaginatorName](./literals.md#describeipgroupspaginatorname)
 - [DescribeWorkspaceBundlesPaginatorName](./literals.md#describeworkspacebundlespaginatorname)
@@ -155,21 +155,21 @@ from mypy_boto3_workspaces.literals import AccessPropertyValue, ...
 - [DescribeWorkspaceImagesPaginatorName](./literals.md#describeworkspaceimagespaginatorname)
 - [DescribeWorkspacesConnectionStatusPaginatorName](./literals.md#describeworkspacesconnectionstatuspaginatorname)
 - [DescribeWorkspacesPaginatorName](./literals.md#describeworkspacespaginatorname)
-- [ImageType](./literals.md#imagetype)
+- [ImageTypeType](./literals.md#imagetypetype)
 - [ListAvailableManagementCidrRangesPaginatorName](./literals.md#listavailablemanagementcidrrangespaginatorname)
-- [ModificationResourceEnum](./literals.md#modificationresourceenum)
-- [ModificationStateEnum](./literals.md#modificationstateenum)
-- [OperatingSystemType](./literals.md#operatingsystemtype)
-- [ReconnectEnum](./literals.md#reconnectenum)
-- [RunningMode](./literals.md#runningmode)
-- [TargetWorkspaceState](./literals.md#targetworkspacestate)
-- [Tenancy](./literals.md#tenancy)
-- [WorkspaceDirectoryState](./literals.md#workspacedirectorystate)
-- [WorkspaceDirectoryType](./literals.md#workspacedirectorytype)
-- [WorkspaceImageIngestionProcess](./literals.md#workspaceimageingestionprocess)
-- [WorkspaceImageRequiredTenancy](./literals.md#workspaceimagerequiredtenancy)
-- [WorkspaceImageState](./literals.md#workspaceimagestate)
-- [WorkspaceState](./literals.md#workspacestate)
+- [ModificationResourceEnumType](./literals.md#modificationresourceenumtype)
+- [ModificationStateEnumType](./literals.md#modificationstateenumtype)
+- [OperatingSystemTypeType](./literals.md#operatingsystemtypetype)
+- [ReconnectEnumType](./literals.md#reconnectenumtype)
+- [RunningModeType](./literals.md#runningmodetype)
+- [TargetWorkspaceStateType](./literals.md#targetworkspacestatetype)
+- [TenancyType](./literals.md#tenancytype)
+- [WorkspaceDirectoryStateType](./literals.md#workspacedirectorystatetype)
+- [WorkspaceDirectoryTypeType](./literals.md#workspacedirectorytypetype)
+- [WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype)
+- [WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype)
+- [WorkspaceImageStateType](./literals.md#workspaceimagestatetype)
+- [WorkspaceStateType](./literals.md#workspacestatetype)
 
 ## Typed dictionaries
 

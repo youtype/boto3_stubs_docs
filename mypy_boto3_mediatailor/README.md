@@ -3,7 +3,7 @@
 > [Index](..) > MediaTailor
 
 Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
 [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
@@ -30,49 +30,49 @@ Can be used directly:
 from mypy_boto3_mediatailor.client import MediaTailorClient
 ```
 
-MediaTailorClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_channel](./client.md#create-channel)
-- [create_program](./client.md#create-program)
-- [create_source_location](./client.md#create-source-location)
-- [create_vod_source](./client.md#create-vod-source)
-- [delete_channel](./client.md#delete-channel)
-- [delete_channel_policy](./client.md#delete-channel-policy)
-- [delete_playback_configuration](./client.md#delete-playback-configuration)
-- [delete_program](./client.md#delete-program)
-- [delete_source_location](./client.md#delete-source-location)
-- [delete_vod_source](./client.md#delete-vod-source)
-- [describe_channel](./client.md#describe-channel)
-- [describe_program](./client.md#describe-program)
-- [describe_source_location](./client.md#describe-source-location)
-- [describe_vod_source](./client.md#describe-vod-source)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_channel_policy](./client.md#get-channel-policy)
-- [get_channel_schedule](./client.md#get-channel-schedule)
-- [get_paginator](./client.md#get-paginator)
-- [get_playback_configuration](./client.md#get-playback-configuration)
-- [list_channels](./client.md#list-channels)
-- [list_playback_configurations](./client.md#list-playback-configurations)
-- [list_source_locations](./client.md#list-source-locations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_vod_sources](./client.md#list-vod-sources)
-- [put_channel_policy](./client.md#put-channel-policy)
-- [put_playback_configuration](./client.md#put-playback-configuration)
-- [start_channel](./client.md#start-channel)
-- [stop_channel](./client.md#stop-channel)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_channel](./client.md#update-channel)
-- [update_source_location](./client.md#update-source-location)
-- [update_vod_source](./client.md#update-vod-source)
+- [can_paginate](./client.md#can_paginate)
+- [create_channel](./client.md#create_channel)
+- [create_program](./client.md#create_program)
+- [create_source_location](./client.md#create_source_location)
+- [create_vod_source](./client.md#create_vod_source)
+- [delete_channel](./client.md#delete_channel)
+- [delete_channel_policy](./client.md#delete_channel_policy)
+- [delete_playback_configuration](./client.md#delete_playback_configuration)
+- [delete_program](./client.md#delete_program)
+- [delete_source_location](./client.md#delete_source_location)
+- [delete_vod_source](./client.md#delete_vod_source)
+- [describe_channel](./client.md#describe_channel)
+- [describe_program](./client.md#describe_program)
+- [describe_source_location](./client.md#describe_source_location)
+- [describe_vod_source](./client.md#describe_vod_source)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_channel_policy](./client.md#get_channel_policy)
+- [get_channel_schedule](./client.md#get_channel_schedule)
+- [get_paginator](./client.md#get_paginator)
+- [get_playback_configuration](./client.md#get_playback_configuration)
+- [list_channels](./client.md#list_channels)
+- [list_playback_configurations](./client.md#list_playback_configurations)
+- [list_source_locations](./client.md#list_source_locations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_vod_sources](./client.md#list_vod_sources)
+- [put_channel_policy](./client.md#put_channel_policy)
+- [put_playback_configuration](./client.md#put_playback_configuration)
+- [start_channel](./client.md#start_channel)
+- [stop_channel](./client.md#stop_channel)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_channel](./client.md#update_channel)
+- [update_source_location](./client.md#update_source_location)
+- [update_vod_source](./client.md#update_vod_source)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
+MediaTailorClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
 
 ## Paginators
 
@@ -98,21 +98,21 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediatailor.literals import AccessType, ...
+from mypy_boto3_mediatailor.literals import AccessTypeType, ...
 ```
 
-- [AccessType](./literals.md#accesstype)
-- [ChannelState](./literals.md#channelstate)
+- [AccessTypeType](./literals.md#accesstypetype)
+- [ChannelStateType](./literals.md#channelstatetype)
 - [GetChannelSchedulePaginatorName](./literals.md#getchannelschedulepaginatorname)
 - [ListChannelsPaginatorName](./literals.md#listchannelspaginatorname)
 - [ListPlaybackConfigurationsPaginatorName](./literals.md#listplaybackconfigurationspaginatorname)
 - [ListSourceLocationsPaginatorName](./literals.md#listsourcelocationspaginatorname)
 - [ListVodSourcesPaginatorName](./literals.md#listvodsourcespaginatorname)
-- [MessageType](./literals.md#messagetype)
-- [Mode](./literals.md#mode)
-- [OriginManifestType](./literals.md#originmanifesttype)
-- [PlaybackMode](./literals.md#playbackmode)
-- [RelativePosition](./literals.md#relativeposition)
+- [MessageTypeType](./literals.md#messagetypetype)
+- [ModeType](./literals.md#modetype)
+- [OriginManifestTypeType](./literals.md#originmanifesttypetype)
+- [PlaybackModeType](./literals.md#playbackmodetype)
+- [RelativePositionType](./literals.md#relativepositiontype)
 - [TypeType](./literals.md#typetype)
 
 ## Typed dictionaries

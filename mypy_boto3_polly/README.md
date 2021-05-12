@@ -3,7 +3,7 @@
 > [Index](..) > Polly
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
@@ -29,47 +29,47 @@ Can be used directly:
 from mypy_boto3_polly.client import PollyClient
 ```
 
-PollyClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_lexicon](./client.md#delete-lexicon)
-- [describe_voices](./client.md#describe-voices)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_lexicon](./client.md#get-lexicon)
-- [get_paginator](./client.md#get-paginator)
-- [get_speech_synthesis_task](./client.md#get-speech-synthesis-task)
-- [list_lexicons](./client.md#list-lexicons)
-- [list_speech_synthesis_tasks](./client.md#list-speech-synthesis-tasks)
-- [put_lexicon](./client.md#put-lexicon)
-- [start_speech_synthesis_task](./client.md#start-speech-synthesis-task)
-- [synthesize_speech](./client.md#synthesize-speech)
+- [can_paginate](./client.md#can_paginate)
+- [delete_lexicon](./client.md#delete_lexicon)
+- [describe_voices](./client.md#describe_voices)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_lexicon](./client.md#get_lexicon)
+- [get_paginator](./client.md#get_paginator)
+- [get_speech_synthesis_task](./client.md#get_speech_synthesis_task)
+- [list_lexicons](./client.md#list_lexicons)
+- [list_speech_synthesis_tasks](./client.md#list_speech_synthesis_tasks)
+- [put_lexicon](./client.md#put_lexicon)
+- [start_speech_synthesis_task](./client.md#start_speech_synthesis_task)
+- [synthesize_speech](./client.md#synthesize_speech)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [EngineNotSupportedException](./client.md#enginenotsupportedexception)
-- [InvalidLexiconException](./client.md#invalidlexiconexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidS3BucketException](./client.md#invalids3bucketexception)
-- [InvalidS3KeyException](./client.md#invalids3keyexception)
-- [InvalidSampleRateException](./client.md#invalidsamplerateexception)
-- [InvalidSnsTopicArnException](./client.md#invalidsnstopicarnexception)
-- [InvalidSsmlException](./client.md#invalidssmlexception)
-- [InvalidTaskIdException](./client.md#invalidtaskidexception)
-- [LanguageNotSupportedException](./client.md#languagenotsupportedexception)
-- [LexiconNotFoundException](./client.md#lexiconnotfoundexception)
-- [LexiconSizeExceededException](./client.md#lexiconsizeexceededexception)
-- [MarksNotSupportedForFormatException](./client.md#marksnotsupportedforformatexception)
-- [MaxLexemeLengthExceededException](./client.md#maxlexemelengthexceededexception)
-- [MaxLexiconsNumberExceededException](./client.md#maxlexiconsnumberexceededexception)
-- [ServiceFailureException](./client.md#servicefailureexception)
-- [SsmlMarksNotSupportedForTextTypeException](./client.md#ssmlmarksnotsupportedfortexttypeexception)
-- [SynthesisTaskNotFoundException](./client.md#synthesistasknotfoundexception)
-- [TextLengthExceededException](./client.md#textlengthexceededexception)
-- [UnsupportedPlsAlphabetException](./client.md#unsupportedplsalphabetexception)
-- [UnsupportedPlsLanguageException](./client.md#unsupportedplslanguageexception)
+PollyClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- EngineNotSupportedException
+- InvalidLexiconException
+- InvalidNextTokenException
+- InvalidS3BucketException
+- InvalidS3KeyException
+- InvalidSampleRateException
+- InvalidSnsTopicArnException
+- InvalidSsmlException
+- InvalidTaskIdException
+- LanguageNotSupportedException
+- LexiconNotFoundException
+- LexiconSizeExceededException
+- MarksNotSupportedForFormatException
+- MaxLexemeLengthExceededException
+- MaxLexiconsNumberExceededException
+- ServiceFailureException
+- SsmlMarksNotSupportedForTextTypeException
+- SynthesisTaskNotFoundException
+- TextLengthExceededException
+- UnsupportedPlsAlphabetException
+- UnsupportedPlsLanguageException
 
 ## Paginators
 
@@ -97,16 +97,16 @@ from mypy_boto3_polly.literals import DescribeVoicesPaginatorName, ...
 ```
 
 - [DescribeVoicesPaginatorName](./literals.md#describevoicespaginatorname)
-- [Engine](./literals.md#engine)
-- [Gender](./literals.md#gender)
-- [LanguageCode](./literals.md#languagecode)
+- [EngineType](./literals.md#enginetype)
+- [GenderType](./literals.md#gendertype)
+- [LanguageCodeType](./literals.md#languagecodetype)
 - [ListLexiconsPaginatorName](./literals.md#listlexiconspaginatorname)
 - [ListSpeechSynthesisTasksPaginatorName](./literals.md#listspeechsynthesistaskspaginatorname)
-- [OutputFormat](./literals.md#outputformat)
-- [SpeechMarkType](./literals.md#speechmarktype)
-- [TaskStatus](./literals.md#taskstatus)
-- [TextType](./literals.md#texttype)
-- [VoiceId](./literals.md#voiceid)
+- [OutputFormatType](./literals.md#outputformattype)
+- [SpeechMarkTypeType](./literals.md#speechmarktypetype)
+- [TaskStatusType](./literals.md#taskstatustype)
+- [TextTypeType](./literals.md#texttypetype)
+- [VoiceIdType](./literals.md#voiceidtype)
 
 ## Typed dictionaries
 

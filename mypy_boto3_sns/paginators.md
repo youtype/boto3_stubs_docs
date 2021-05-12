@@ -3,7 +3,7 @@
 > [Index](..) > [SNS](.) > Paginators
 
 Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS)
 type annotations stubs module
 [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
@@ -30,7 +30,7 @@ def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPla
 ```
 
 Boto3 documentation:
-[SNS.Paginator.ListEndpointsByPlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
+[SNS.Paginator.ListEndpointsByPlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
 
 Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_phone_numbers_opted_out_paginator() -> ListPhoneNumbersOptedOutPagi
 ```
 
 Boto3 documentation:
-[SNS.Paginator.ListPhoneNumbersOptedOut](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
+[SNS.Paginator.ListPhoneNumbersOptedOut](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
 
 Arguments for `ListPhoneNumbersOptedOutPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_platform_applications_paginator() -> ListPlatformApplicationsPagina
 ```
 
 Boto3 documentation:
-[SNS.Paginator.ListPlatformApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
+[SNS.Paginator.ListPlatformApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
 
 Arguments for `ListPlatformApplicationsPaginator.paginate` method:
 
@@ -105,7 +105,7 @@ def get_list_subscriptions_paginator() -> ListSubscriptionsPaginator:
 ```
 
 Boto3 documentation:
-[SNS.Paginator.ListSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
+[SNS.Paginator.ListSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
 
 Arguments for `ListSubscriptionsPaginator.paginate` method:
 
@@ -130,7 +130,7 @@ def get_list_subscriptions_by_topic_paginator() -> ListSubscriptionsByTopicPagin
 ```
 
 Boto3 documentation:
-[SNS.Paginator.ListSubscriptionsByTopic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
+[SNS.Paginator.ListSubscriptionsByTopic](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
 
 Arguments for `ListSubscriptionsByTopicPaginator.paginate` method:
 
@@ -155,7 +155,7 @@ def get_list_topics_paginator() -> ListTopicsPaginator:
 ```
 
 Boto3 documentation:
-[SNS.Paginator.ListTopics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
+[SNS.Paginator.ListTopics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS.Paginator.ListTopics)
 
 Arguments for `ListTopicsPaginator.paginate` method:
 

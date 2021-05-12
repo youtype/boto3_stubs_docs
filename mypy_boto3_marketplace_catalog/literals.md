@@ -3,19 +3,19 @@
 > [Index](..) > [MarketplaceCatalog](.) > Literals
 
 Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
 [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 - [Literals for boto3 MarketplaceCatalog module](#literals-for-boto3-marketplacecatalog-module)
-  - [ChangeStatus](#changestatus)
-  - [FailureCode](#failurecode)
-  - [SortOrder](#sortorder)
+  - [ChangeStatusType](#changestatustype)
+  - [FailureCodeType](#failurecodetype)
+  - [SortOrderType](#sortordertype)
 
-## ChangeStatus
+## ChangeStatusType
 
 ```python
-from mypy_boto3_marketplace_catalog.literals import ChangeStatus
+from mypy_boto3_marketplace_catalog.literals import ChangeStatusType
 ```
 
 Values:
@@ -26,10 +26,10 @@ Values:
 - `PREPARING`
 - `SUCCEEDED`
 
-## FailureCode
+## FailureCodeType
 
 ```python
-from mypy_boto3_marketplace_catalog.literals import FailureCode
+from mypy_boto3_marketplace_catalog.literals import FailureCodeType
 ```
 
 Values:
@@ -37,10 +37,10 @@ Values:
 - `CLIENT_ERROR`
 - `SERVER_FAULT`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_marketplace_catalog.literals import SortOrder
+from mypy_boto3_marketplace_catalog.literals import SortOrderType
 ```
 
 Values:

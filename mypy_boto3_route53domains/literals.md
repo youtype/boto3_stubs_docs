@@ -3,27 +3,27 @@
 > [Index](..) > [Route53Domains](.) > Literals
 
 Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
 [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Literals for boto3 Route53Domains module](#literals-for-boto3-route53domains-module)
-  - [ContactType](#contacttype)
-  - [CountryCode](#countrycode)
-  - [DomainAvailability](#domainavailability)
-  - [ExtraParamName](#extraparamname)
+  - [ContactTypeType](#contacttypetype)
+  - [CountryCodeType](#countrycodetype)
+  - [DomainAvailabilityType](#domainavailabilitytype)
+  - [ExtraParamNameType](#extraparamnametype)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [ListOperationsPaginatorName](#listoperationspaginatorname)
-  - [OperationStatus](#operationstatus)
-  - [OperationType](#operationtype)
-  - [ReachabilityStatus](#reachabilitystatus)
-  - [Transferable](#transferable)
+  - [OperationStatusType](#operationstatustype)
+  - [OperationTypeType](#operationtypetype)
+  - [ReachabilityStatusType](#reachabilitystatustype)
+  - [TransferableType](#transferabletype)
   - [ViewBillingPaginatorName](#viewbillingpaginatorname)
 
-## ContactType
+## ContactTypeType
 
 ```python
-from mypy_boto3_route53domains.literals import ContactType
+from mypy_boto3_route53domains.literals import ContactTypeType
 ```
 
 Values:
@@ -34,10 +34,10 @@ Values:
 - `PUBLIC_BODY`
 - `RESELLER`
 
-## CountryCode
+## CountryCodeType
 
 ```python
-from mypy_boto3_route53domains.literals import CountryCode
+from mypy_boto3_route53domains.literals import CountryCodeType
 ```
 
 Values:
@@ -272,10 +272,10 @@ Values:
 - `ZM`
 - `ZW`
 
-## DomainAvailability
+## DomainAvailabilityType
 
 ```python
-from mypy_boto3_route53domains.literals import DomainAvailability
+from mypy_boto3_route53domains.literals import DomainAvailabilityType
 ```
 
 Values:
@@ -289,10 +289,10 @@ Values:
 - `UNAVAILABLE_PREMIUM`
 - `UNAVAILABLE_RESTRICTED`
 
-## ExtraParamName
+## ExtraParamNameType
 
 ```python
-from mypy_boto3_route53domains.literals import ExtraParamName
+from mypy_boto3_route53domains.literals import ExtraParamNameType
 ```
 
 Values:
@@ -347,10 +347,10 @@ Values:
 
 - `list_operations`
 
-## OperationStatus
+## OperationStatusType
 
 ```python
-from mypy_boto3_route53domains.literals import OperationStatus
+from mypy_boto3_route53domains.literals import OperationStatusType
 ```
 
 Values:
@@ -361,10 +361,10 @@ Values:
 - `SUBMITTED`
 - `SUCCESSFUL`
 
-## OperationType
+## OperationTypeType
 
 ```python
-from mypy_boto3_route53domains.literals import OperationType
+from mypy_boto3_route53domains.literals import OperationTypeType
 ```
 
 Values:
@@ -388,10 +388,10 @@ Values:
 - `UPDATE_DOMAIN_CONTACT`
 - `UPDATE_NAMESERVER`
 
-## ReachabilityStatus
+## ReachabilityStatusType
 
 ```python
-from mypy_boto3_route53domains.literals import ReachabilityStatus
+from mypy_boto3_route53domains.literals import ReachabilityStatusType
 ```
 
 Values:
@@ -400,10 +400,10 @@ Values:
 - `EXPIRED`
 - `PENDING`
 
-## Transferable
+## TransferableType
 
 ```python
-from mypy_boto3_route53domains.literals import Transferable
+from mypy_boto3_route53domains.literals import TransferableType
 ```
 
 Values:

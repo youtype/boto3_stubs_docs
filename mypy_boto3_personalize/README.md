@@ -3,7 +3,7 @@
 > [Index](..) > Personalize
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -30,69 +30,69 @@ Can be used directly:
 from mypy_boto3_personalize.client import PersonalizeClient
 ```
 
-PersonalizeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_batch_inference_job](./client.md#create-batch-inference-job)
-- [create_campaign](./client.md#create-campaign)
-- [create_dataset](./client.md#create-dataset)
-- [create_dataset_export_job](./client.md#create-dataset-export-job)
-- [create_dataset_group](./client.md#create-dataset-group)
-- [create_dataset_import_job](./client.md#create-dataset-import-job)
-- [create_event_tracker](./client.md#create-event-tracker)
-- [create_filter](./client.md#create-filter)
-- [create_schema](./client.md#create-schema)
-- [create_solution](./client.md#create-solution)
-- [create_solution_version](./client.md#create-solution-version)
-- [delete_campaign](./client.md#delete-campaign)
-- [delete_dataset](./client.md#delete-dataset)
-- [delete_dataset_group](./client.md#delete-dataset-group)
-- [delete_event_tracker](./client.md#delete-event-tracker)
-- [delete_filter](./client.md#delete-filter)
-- [delete_schema](./client.md#delete-schema)
-- [delete_solution](./client.md#delete-solution)
-- [describe_algorithm](./client.md#describe-algorithm)
-- [describe_batch_inference_job](./client.md#describe-batch-inference-job)
-- [describe_campaign](./client.md#describe-campaign)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_dataset_export_job](./client.md#describe-dataset-export-job)
-- [describe_dataset_group](./client.md#describe-dataset-group)
-- [describe_dataset_import_job](./client.md#describe-dataset-import-job)
-- [describe_event_tracker](./client.md#describe-event-tracker)
-- [describe_feature_transformation](./client.md#describe-feature-transformation)
-- [describe_filter](./client.md#describe-filter)
-- [describe_recipe](./client.md#describe-recipe)
-- [describe_schema](./client.md#describe-schema)
-- [describe_solution](./client.md#describe-solution)
-- [describe_solution_version](./client.md#describe-solution-version)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_solution_metrics](./client.md#get-solution-metrics)
-- [list_batch_inference_jobs](./client.md#list-batch-inference-jobs)
-- [list_campaigns](./client.md#list-campaigns)
-- [list_dataset_export_jobs](./client.md#list-dataset-export-jobs)
-- [list_dataset_groups](./client.md#list-dataset-groups)
-- [list_dataset_import_jobs](./client.md#list-dataset-import-jobs)
-- [list_datasets](./client.md#list-datasets)
-- [list_event_trackers](./client.md#list-event-trackers)
-- [list_filters](./client.md#list-filters)
-- [list_recipes](./client.md#list-recipes)
-- [list_schemas](./client.md#list-schemas)
-- [list_solution_versions](./client.md#list-solution-versions)
-- [list_solutions](./client.md#list-solutions)
-- [update_campaign](./client.md#update-campaign)
+- [can_paginate](./client.md#can_paginate)
+- [create_batch_inference_job](./client.md#create_batch_inference_job)
+- [create_campaign](./client.md#create_campaign)
+- [create_dataset](./client.md#create_dataset)
+- [create_dataset_export_job](./client.md#create_dataset_export_job)
+- [create_dataset_group](./client.md#create_dataset_group)
+- [create_dataset_import_job](./client.md#create_dataset_import_job)
+- [create_event_tracker](./client.md#create_event_tracker)
+- [create_filter](./client.md#create_filter)
+- [create_schema](./client.md#create_schema)
+- [create_solution](./client.md#create_solution)
+- [create_solution_version](./client.md#create_solution_version)
+- [delete_campaign](./client.md#delete_campaign)
+- [delete_dataset](./client.md#delete_dataset)
+- [delete_dataset_group](./client.md#delete_dataset_group)
+- [delete_event_tracker](./client.md#delete_event_tracker)
+- [delete_filter](./client.md#delete_filter)
+- [delete_schema](./client.md#delete_schema)
+- [delete_solution](./client.md#delete_solution)
+- [describe_algorithm](./client.md#describe_algorithm)
+- [describe_batch_inference_job](./client.md#describe_batch_inference_job)
+- [describe_campaign](./client.md#describe_campaign)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_dataset_export_job](./client.md#describe_dataset_export_job)
+- [describe_dataset_group](./client.md#describe_dataset_group)
+- [describe_dataset_import_job](./client.md#describe_dataset_import_job)
+- [describe_event_tracker](./client.md#describe_event_tracker)
+- [describe_feature_transformation](./client.md#describe_feature_transformation)
+- [describe_filter](./client.md#describe_filter)
+- [describe_recipe](./client.md#describe_recipe)
+- [describe_schema](./client.md#describe_schema)
+- [describe_solution](./client.md#describe_solution)
+- [describe_solution_version](./client.md#describe_solution_version)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_solution_metrics](./client.md#get_solution_metrics)
+- [list_batch_inference_jobs](./client.md#list_batch_inference_jobs)
+- [list_campaigns](./client.md#list_campaigns)
+- [list_dataset_export_jobs](./client.md#list_dataset_export_jobs)
+- [list_dataset_groups](./client.md#list_dataset_groups)
+- [list_dataset_import_jobs](./client.md#list_dataset_import_jobs)
+- [list_datasets](./client.md#list_datasets)
+- [list_event_trackers](./client.md#list_event_trackers)
+- [list_filters](./client.md#list_filters)
+- [list_recipes](./client.md#list_recipes)
+- [list_schemas](./client.md#list_schemas)
+- [list_solution_versions](./client.md#list_solution_versions)
+- [list_solutions](./client.md#list_solutions)
+- [update_campaign](./client.md#update_campaign)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceAlreadyExistsException](./client.md#resourcealreadyexistsexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+PersonalizeClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InvalidInputException
+- InvalidNextTokenException
+- LimitExceededException
+- ResourceAlreadyExistsException
+- ResourceInUseException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -125,10 +125,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.literals import IngestionMode, ...
+from mypy_boto3_personalize.literals import IngestionModeType, ...
 ```
 
-- [IngestionMode](./literals.md#ingestionmode)
+- [IngestionModeType](./literals.md#ingestionmodetype)
 - [ListBatchInferenceJobsPaginatorName](./literals.md#listbatchinferencejobspaginatorname)
 - [ListCampaignsPaginatorName](./literals.md#listcampaignspaginatorname)
 - [ListDatasetExportJobsPaginatorName](./literals.md#listdatasetexportjobspaginatorname)
@@ -141,8 +141,8 @@ from mypy_boto3_personalize.literals import IngestionMode, ...
 - [ListSchemasPaginatorName](./literals.md#listschemaspaginatorname)
 - [ListSolutionVersionsPaginatorName](./literals.md#listsolutionversionspaginatorname)
 - [ListSolutionsPaginatorName](./literals.md#listsolutionspaginatorname)
-- [RecipeProvider](./literals.md#recipeprovider)
-- [TrainingMode](./literals.md#trainingmode)
+- [RecipeProviderType](./literals.md#recipeprovidertype)
+- [TrainingModeType](./literals.md#trainingmodetype)
 
 ## Typed dictionaries
 

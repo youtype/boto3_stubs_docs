@@ -3,7 +3,7 @@
 > [Index](..) > SNS
 
 Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sns.html#SNS)
 type annotations stubs module
 [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
@@ -32,73 +32,73 @@ Can be used directly:
 from mypy_boto3_sns.client import SNSClient
 ```
 
-SNSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_permission](./client.md#add-permission)
-- [can_paginate](./client.md#can-paginate)
-- [check_if_phone_number_is_opted_out](./client.md#check-if-phone-number-is-opted-out)
-- [confirm_subscription](./client.md#confirm-subscription)
-- [create_platform_application](./client.md#create-platform-application)
-- [create_platform_endpoint](./client.md#create-platform-endpoint)
-- [create_topic](./client.md#create-topic)
-- [delete_endpoint](./client.md#delete-endpoint)
-- [delete_platform_application](./client.md#delete-platform-application)
-- [delete_topic](./client.md#delete-topic)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_endpoint_attributes](./client.md#get-endpoint-attributes)
-- [get_paginator](./client.md#get-paginator)
-- [get_platform_application_attributes](./client.md#get-platform-application-attributes)
-- [get_sms_attributes](./client.md#get-sms-attributes)
-- [get_subscription_attributes](./client.md#get-subscription-attributes)
-- [get_topic_attributes](./client.md#get-topic-attributes)
-- [list_endpoints_by_platform_application](./client.md#list-endpoints-by-platform-application)
-- [list_phone_numbers_opted_out](./client.md#list-phone-numbers-opted-out)
-- [list_platform_applications](./client.md#list-platform-applications)
-- [list_subscriptions](./client.md#list-subscriptions)
-- [list_subscriptions_by_topic](./client.md#list-subscriptions-by-topic)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_topics](./client.md#list-topics)
-- [opt_in_phone_number](./client.md#opt-in-phone-number)
+- [add_permission](./client.md#add_permission)
+- [can_paginate](./client.md#can_paginate)
+- [check_if_phone_number_is_opted_out](./client.md#check_if_phone_number_is_opted_out)
+- [confirm_subscription](./client.md#confirm_subscription)
+- [create_platform_application](./client.md#create_platform_application)
+- [create_platform_endpoint](./client.md#create_platform_endpoint)
+- [create_topic](./client.md#create_topic)
+- [delete_endpoint](./client.md#delete_endpoint)
+- [delete_platform_application](./client.md#delete_platform_application)
+- [delete_topic](./client.md#delete_topic)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_endpoint_attributes](./client.md#get_endpoint_attributes)
+- [get_paginator](./client.md#get_paginator)
+- [get_platform_application_attributes](./client.md#get_platform_application_attributes)
+- [get_sms_attributes](./client.md#get_sms_attributes)
+- [get_subscription_attributes](./client.md#get_subscription_attributes)
+- [get_topic_attributes](./client.md#get_topic_attributes)
+- [list_endpoints_by_platform_application](./client.md#list_endpoints_by_platform_application)
+- [list_phone_numbers_opted_out](./client.md#list_phone_numbers_opted_out)
+- [list_platform_applications](./client.md#list_platform_applications)
+- [list_subscriptions](./client.md#list_subscriptions)
+- [list_subscriptions_by_topic](./client.md#list_subscriptions_by_topic)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_topics](./client.md#list_topics)
+- [opt_in_phone_number](./client.md#opt_in_phone_number)
 - [publish](./client.md#publish)
-- [remove_permission](./client.md#remove-permission)
-- [set_endpoint_attributes](./client.md#set-endpoint-attributes)
-- [set_platform_application_attributes](./client.md#set-platform-application-attributes)
-- [set_sms_attributes](./client.md#set-sms-attributes)
-- [set_subscription_attributes](./client.md#set-subscription-attributes)
-- [set_topic_attributes](./client.md#set-topic-attributes)
+- [remove_permission](./client.md#remove_permission)
+- [set_endpoint_attributes](./client.md#set_endpoint_attributes)
+- [set_platform_application_attributes](./client.md#set_platform_application_attributes)
+- [set_sms_attributes](./client.md#set_sms_attributes)
+- [set_subscription_attributes](./client.md#set_subscription_attributes)
+- [set_topic_attributes](./client.md#set_topic_attributes)
 - [subscribe](./client.md#subscribe)
-- [tag_resource](./client.md#tag-resource)
+- [tag_resource](./client.md#tag_resource)
 - [unsubscribe](./client.md#unsubscribe)
-- [untag_resource](./client.md#untag-resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AuthorizationErrorException](./client.md#authorizationerrorexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentAccessException](./client.md#concurrentaccessexception)
-- [EndpointDisabledException](./client.md#endpointdisabledexception)
-- [FilterPolicyLimitExceededException](./client.md#filterpolicylimitexceededexception)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [InvalidSecurityException](./client.md#invalidsecurityexception)
-- [KMSAccessDeniedException](./client.md#kmsaccessdeniedexception)
-- [KMSDisabledException](./client.md#kmsdisabledexception)
-- [KMSInvalidStateException](./client.md#kmsinvalidstateexception)
-- [KMSNotFoundException](./client.md#kmsnotfoundexception)
-- [KMSOptInRequired](./client.md#kmsoptinrequired)
-- [KMSThrottlingException](./client.md#kmsthrottlingexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [PlatformApplicationDisabledException](./client.md#platformapplicationdisabledexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [StaleTagException](./client.md#staletagexception)
-- [SubscriptionLimitExceededException](./client.md#subscriptionlimitexceededexception)
-- [TagLimitExceededException](./client.md#taglimitexceededexception)
-- [TagPolicyException](./client.md#tagpolicyexception)
-- [ThrottledException](./client.md#throttledexception)
-- [TopicLimitExceededException](./client.md#topiclimitexceededexception)
+SNSClient [exceptions](./client.md#exceptions)
+
+- AuthorizationErrorException
+- ClientError
+- ConcurrentAccessException
+- EndpointDisabledException
+- FilterPolicyLimitExceededException
+- InternalErrorException
+- InvalidParameterException
+- InvalidParameterValueException
+- InvalidSecurityException
+- KMSAccessDeniedException
+- KMSDisabledException
+- KMSInvalidStateException
+- KMSNotFoundException
+- KMSOptInRequired
+- KMSThrottlingException
+- NotFoundException
+- PlatformApplicationDisabledException
+- ResourceNotFoundException
+- StaleTagException
+- SubscriptionLimitExceededException
+- TagLimitExceededException
+- TagPolicyException
+- ThrottledException
+- TopicLimitExceededException
 
 ## SNSServiceResource
 
@@ -121,7 +121,7 @@ Can be used directly:
 from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection, ...
 ```
 
-- [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresourceplatform-applications)
+- [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresourceplatform_applications)
 - [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresourcesubscriptions)
 - [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresourcetopics)
 

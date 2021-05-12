@@ -3,7 +3,7 @@
 > [Index](..) > [EC2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2)
 type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
@@ -1027,7 +1027,8 @@ Optional fields:
 - `InstanceId`: `str`
 - `InstanceType`: `str`
 - `SpotInstanceRequestId`: `str`
-- `InstanceHealth`: [InstanceHealthStatus](./literals.md#instancehealthstatus)
+- `InstanceHealth`:
+  [InstanceHealthStatusType](./literals.md#instancehealthstatustype)
 
 ## AddPrefixListEntryTypeDef
 
@@ -1069,7 +1070,7 @@ Optional fields:
 - `PublicIp`: `str`
 - `AllocationId`: `str`
 - `AssociationId`: `str`
-- `Domain`: [DomainType](./literals.md#domaintype)
+- `Domain`: [DomainTypeType](./literals.md#domaintypetype)
 - `NetworkInterfaceId`: `str`
 - `NetworkInterfaceOwnerId`: `str`
 - `PrivateIpAddress`: `str`
@@ -1102,7 +1103,7 @@ Optional fields:
 - `AllocationId`: `str`
 - `PublicIpv4Pool`: `str`
 - `NetworkBorderGroup`: `str`
-- `Domain`: [DomainType](./literals.md#domaintype)
+- `Domain`: [DomainTypeType](./literals.md#domaintypetype)
 - `CustomerOwnedIp`: `str`
 - `CustomerOwnedIpv4Pool`: `str`
 - `CarrierIp`: `str`
@@ -1125,7 +1126,7 @@ from mypy_boto3_ec2.type_defs import AllowedPrincipalTypeDef
 
 Optional fields:
 
-- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
+- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `Principal`: `str`
 
 ## AlternatePathHintTypeDef
@@ -1186,7 +1187,8 @@ Optional fields:
 
 - `Address`: `str`
 - `AvailabilityZone`: `str`
-- `Instance`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `Instance`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Port`: `int`
 
 ## AnalysisPacketHeaderTypeDef
@@ -1409,7 +1411,7 @@ Optional fields:
 
 - `NetworkId`: `str`
 - `NetworkType`: `Literal['vpc']` (see
-  [AssociatedNetworkType](./literals.md#associatednetworktype))
+  [AssociatedNetworkTypeType](./literals.md#associatednetworktypetype))
 
 ## AssociationStatusTypeDef
 
@@ -1419,7 +1421,7 @@ from mypy_boto3_ec2.type_defs import AssociationStatusTypeDef
 
 Optional fields:
 
-- `Code`: [AssociationStatusCode](./literals.md#associationstatuscode)
+- `Code`: [AssociationStatusCodeType](./literals.md#associationstatuscodetype)
 - `Message`: `str`
 
 ## AthenaIntegrationTypeDef
@@ -1432,7 +1434,7 @@ Required fields:
 
 - `IntegrationResultS3DestinationArn`: `str`
 - `PartitionLoadFrequency`:
-  [PartitionLoadFrequency](./literals.md#partitionloadfrequency)
+  [PartitionLoadFrequencyType](./literals.md#partitionloadfrequencytype)
 
 Optional fields:
 
@@ -1535,9 +1537,9 @@ from mypy_boto3_ec2.type_defs import AvailabilityZoneTypeDef
 
 Optional fields:
 
-- `State`: [AvailabilityZoneState](./literals.md#availabilityzonestate)
+- `State`: [AvailabilityZoneStateType](./literals.md#availabilityzonestatetype)
 - `OptInStatus`:
-  [AvailabilityZoneOptInStatus](./literals.md#availabilityzoneoptinstatus)
+  [AvailabilityZoneOptInStatusType](./literals.md#availabilityzoneoptinstatustype)
 - `Messages`:
   `List`\[[AvailabilityZoneMessageTypeDef](./type_defs.md#availabilityzonemessagetypedef)\]
 - `RegionName`: `str`
@@ -1619,7 +1621,7 @@ Optional fields:
 - `InstanceId`: `str`
 - `Progress`: `str`
 - `StartTime`: `datetime`
-- `State`: [BundleTaskState](./literals.md#bundletaskstate)
+- `State`: [BundleTaskStateType](./literals.md#bundletaskstatetype)
 - `Storage`: [StorageTypeDef](./type_defs.md#storagetypedef)
 - `UpdateTime`: `datetime`
 
@@ -1634,7 +1636,7 @@ Optional fields:
 - `Cidr`: `str`
 - `Description`: `str`
 - `StatusMessage`: `str`
-- `State`: [ByoipCidrState](./literals.md#byoipcidrstate)
+- `State`: [ByoipCidrStateType](./literals.md#byoipcidrstatetype)
 
 ## CancelBundleTaskResultTypeDef
 
@@ -1699,7 +1701,7 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsErrorTypeDef
 
 Optional fields:
 
-- `Code`: [CancelBatchErrorCode](./literals.md#cancelbatcherrorcode)
+- `Code`: [CancelBatchErrorCodeType](./literals.md#cancelbatcherrorcodetype)
 - `Message`: `str`
 
 ## CancelSpotFleetRequestsResponseTypeDef
@@ -1723,8 +1725,10 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsSuccessItemTypeDef
 
 Optional fields:
 
-- `CurrentSpotFleetRequestState`: [BatchState](./literals.md#batchstate)
-- `PreviousSpotFleetRequestState`: [BatchState](./literals.md#batchstate)
+- `CurrentSpotFleetRequestState`:
+  [BatchStateType](./literals.md#batchstatetype)
+- `PreviousSpotFleetRequestState`:
+  [BatchStateType](./literals.md#batchstatetype)
 - `SpotFleetRequestId`: `str`
 
 ## CancelSpotInstanceRequestsResultTypeDef
@@ -1748,7 +1752,7 @@ Optional fields:
 
 - `SpotInstanceRequestId`: `str`
 - `State`:
-  [CancelSpotInstanceRequestState](./literals.md#cancelspotinstancerequeststate)
+  [CancelSpotInstanceRequestStateType](./literals.md#cancelspotinstancerequeststatetype)
 
 ## CapacityReservationGroupTypeDef
 
@@ -1770,7 +1774,7 @@ from mypy_boto3_ec2.type_defs import CapacityReservationOptionsRequestTypeDef
 Optional fields:
 
 - `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
-  [FleetCapacityReservationUsageStrategy](./literals.md#fleetcapacityreservationusagestrategy))
+  [FleetCapacityReservationUsageStrategyType](./literals.md#fleetcapacityreservationusagestrategytype))
 
 ## CapacityReservationOptionsTypeDef
 
@@ -1781,7 +1785,7 @@ from mypy_boto3_ec2.type_defs import CapacityReservationOptionsTypeDef
 Optional fields:
 
 - `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
-  [FleetCapacityReservationUsageStrategy](./literals.md#fleetcapacityreservationusagestrategy))
+  [FleetCapacityReservationUsageStrategyType](./literals.md#fleetcapacityreservationusagestrategytype))
 
 ## CapacityReservationSpecificationResponseTypeDef
 
@@ -1792,7 +1796,7 @@ from mypy_boto3_ec2.type_defs import CapacityReservationSpecificationResponseTyp
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
+  [CapacityReservationPreferenceType](./literals.md#capacityreservationpreferencetype)
 - `CapacityReservationTarget`:
   [CapacityReservationTargetResponseTypeDef](./type_defs.md#capacityreservationtargetresponsetypedef)
 
@@ -1805,7 +1809,7 @@ from mypy_boto3_ec2.type_defs import CapacityReservationSpecificationTypeDef
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
+  [CapacityReservationPreferenceType](./literals.md#capacityreservationpreferencetype)
 - `CapacityReservationTarget`:
   [CapacityReservationTargetTypeDef](./type_defs.md#capacityreservationtargettypedef)
 
@@ -1845,20 +1849,21 @@ Optional fields:
 - `AvailabilityZoneId`: `str`
 - `InstanceType`: `str`
 - `InstancePlatform`:
-  [CapacityReservationInstancePlatform](./literals.md#capacityreservationinstanceplatform)
+  [CapacityReservationInstancePlatformType](./literals.md#capacityreservationinstanceplatformtype)
 - `AvailabilityZone`: `str`
 - `Tenancy`:
-  [CapacityReservationTenancy](./literals.md#capacityreservationtenancy)
+  [CapacityReservationTenancyType](./literals.md#capacityreservationtenancytype)
 - `TotalInstanceCount`: `int`
 - `AvailableInstanceCount`: `int`
 - `EbsOptimized`: `bool`
 - `EphemeralStorage`: `bool`
-- `State`: [CapacityReservationState](./literals.md#capacityreservationstate)
+- `State`:
+  [CapacityReservationStateType](./literals.md#capacityreservationstatetype)
 - `StartDate`: `datetime`
 - `EndDate`: `datetime`
-- `EndDateType`: [EndDateType](./literals.md#enddatetype)
+- `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
 - `InstanceMatchCriteria`:
-  [InstanceMatchCriteria](./literals.md#instancematchcriteria)
+  [InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype)
 - `CreateDate`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -1872,7 +1877,7 @@ Optional fields:
 
 - `CarrierGatewayId`: `str`
 - `VpcId`: `str`
-- `State`: [CarrierGatewayState](./literals.md#carriergatewaystate)
+- `State`: [CarrierGatewayStateType](./literals.md#carriergatewaystatetype)
 - `OwnerId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -1972,7 +1977,7 @@ from mypy_boto3_ec2.type_defs import ClientCertificateRevocationListStatusTypeDe
 Optional fields:
 
 - `Code`:
-  [ClientCertificateRevocationListStatusCode](./literals.md#clientcertificaterevocationliststatuscode)
+  [ClientCertificateRevocationListStatusCodeType](./literals.md#clientcertificaterevocationliststatuscodetype)
 - `Message`: `str`
 
 ## ClientConnectOptionsTypeDef
@@ -2021,7 +2026,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnAuthenticationRequestTypeDef
 Optional fields:
 
 - `Type`:
-  [ClientVpnAuthenticationType](./literals.md#clientvpnauthenticationtype)
+  [ClientVpnAuthenticationTypeType](./literals.md#clientvpnauthenticationtypetype)
 - `ActiveDirectory`:
   [DirectoryServiceAuthenticationRequestTypeDef](./type_defs.md#directoryserviceauthenticationrequesttypedef)
 - `MutualAuthentication`:
@@ -2038,7 +2043,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnAuthenticationTypeDef
 Optional fields:
 
 - `Type`:
-  [ClientVpnAuthenticationType](./literals.md#clientvpnauthenticationtype)
+  [ClientVpnAuthenticationTypeType](./literals.md#clientvpnauthenticationtypetype)
 - `ActiveDirectory`:
   [DirectoryServiceAuthenticationTypeDef](./type_defs.md#directoryserviceauthenticationtypedef)
 - `MutualAuthentication`:
@@ -2055,7 +2060,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnAuthorizationRuleStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnAuthorizationRuleStatusCode](./literals.md#clientvpnauthorizationrulestatuscode)
+  [ClientVpnAuthorizationRuleStatusCodeType](./literals.md#clientvpnauthorizationrulestatuscodetype)
 - `Message`: `str`
 
 ## ClientVpnConnectionStatusTypeDef
@@ -2067,7 +2072,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnConnectionStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnConnectionStatusCode](./literals.md#clientvpnconnectionstatuscode)
+  [ClientVpnConnectionStatusCodeType](./literals.md#clientvpnconnectionstatuscodetype)
 - `Message`: `str`
 
 ## ClientVpnConnectionTypeDef
@@ -2103,7 +2108,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnEndpointAttributeStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnEndpointAttributeStatusCode](./literals.md#clientvpnendpointattributestatuscode)
+  [ClientVpnEndpointAttributeStatusCodeType](./literals.md#clientvpnendpointattributestatuscodetype)
 - `Message`: `str`
 
 ## ClientVpnEndpointStatusTypeDef
@@ -2115,7 +2120,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnEndpointStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnEndpointStatusCode](./literals.md#clientvpnendpointstatuscode)
+  [ClientVpnEndpointStatusCodeType](./literals.md#clientvpnendpointstatuscodetype)
 - `Message`: `str`
 
 ## ClientVpnEndpointTypeDef
@@ -2137,8 +2142,9 @@ Optional fields:
 - `DnsServers`: `List`\[`str`\]
 - `SplitTunnel`: `bool`
 - `VpnProtocol`: `Literal['openvpn']` (see
-  [VpnProtocol](./literals.md#vpnprotocol))
-- `TransportProtocol`: [TransportProtocol](./literals.md#transportprotocol)
+  [VpnProtocolType](./literals.md#vpnprotocoltype))
+- `TransportProtocol`:
+  [TransportProtocolType](./literals.md#transportprotocoltype)
 - `VpnPort`: `int`
 - `AssociatedTargetNetworks`:
   `List`\[[AssociatedTargetNetworkTypeDef](./type_defs.md#associatedtargetnetworktypedef)\]
@@ -2162,7 +2168,8 @@ from mypy_boto3_ec2.type_defs import ClientVpnRouteStatusTypeDef
 
 Optional fields:
 
-- `Code`: [ClientVpnRouteStatusCode](./literals.md#clientvpnroutestatuscode)
+- `Code`:
+  [ClientVpnRouteStatusCodeType](./literals.md#clientvpnroutestatuscodetype)
 - `Message`: `str`
 
 ## ClientVpnRouteTypeDef
@@ -2256,11 +2263,11 @@ Optional fields:
 - `ServiceId`: `str`
 - `VpcEndpointId`: `str`
 - `ConnectionNotificationType`: `Literal['Topic']` (see
-  [ConnectionNotificationType](./literals.md#connectionnotificationtype))
+  [ConnectionNotificationTypeType](./literals.md#connectionnotificationtypetype))
 - `ConnectionNotificationArn`: `str`
 - `ConnectionEvents`: `List`\[`str`\]
 - `ConnectionNotificationState`:
-  [ConnectionNotificationState](./literals.md#connectionnotificationstate)
+  [ConnectionNotificationStateType](./literals.md#connectionnotificationstatetype)
 
 ## ConversionTaskTypeDef
 
@@ -2276,7 +2283,7 @@ Optional fields:
   [ImportInstanceTaskDetailsTypeDef](./type_defs.md#importinstancetaskdetailstypedef)
 - `ImportVolume`:
   [ImportVolumeTaskDetailsTypeDef](./type_defs.md#importvolumetaskdetailstypedef)
-- `State`: [ConversionTaskState](./literals.md#conversiontaskstate)
+- `State`: [ConversionTaskStateType](./literals.md#conversiontaskstatetype)
 - `StatusMessage`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -2352,7 +2359,8 @@ from mypy_boto3_ec2.type_defs import CreateCarrierGatewayResultTypeDef
 
 Optional fields:
 
-- `CarrierGateway`: [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
+- `CarrierGateway`:
+  [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
 
 ## CreateClientVpnEndpointResultTypeDef
 
@@ -2441,7 +2449,7 @@ Optional fields:
 
 - `LaunchTemplateAndOverrides`:
   [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
+- `Lifecycle`: [InstanceLifecycleType](./literals.md#instancelifecycletype)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
@@ -2455,11 +2463,11 @@ Optional fields:
 
 - `LaunchTemplateAndOverrides`:
   [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
+- `Lifecycle`: [InstanceLifecycleType](./literals.md#instancelifecycletype)
 - `InstanceIds`: `List`\[`str`\]
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Platform`: `Literal['Windows']` (see
-  [PlatformValues](./literals.md#platformvalues))
+  [PlatformValuesType](./literals.md#platformvaluestype))
 
 ## CreateFleetResultTypeDef
 
@@ -2538,8 +2546,10 @@ from mypy_boto3_ec2.type_defs import CreateLaunchTemplateResultTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
-- `Warning`: [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
+- `LaunchTemplate`:
+  [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `Warning`:
+  [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
 
 ## CreateLaunchTemplateVersionResultTypeDef
 
@@ -2551,7 +2561,8 @@ Optional fields:
 
 - `LaunchTemplateVersion`:
   [LaunchTemplateVersionTypeDef](./type_defs.md#launchtemplateversiontypedef)
-- `Warning`: [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
+- `Warning`:
+  [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
 
 ## CreateLocalGatewayRouteResultTypeDef
 
@@ -2647,7 +2658,8 @@ from mypy_boto3_ec2.type_defs import CreatePlacementGroupResultTypeDef
 
 Optional fields:
 
-- `PlacementGroup`: [PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)
+- `PlacementGroup`:
+  [PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)
 
 ## CreateReplaceRootVolumeTaskResultTypeDef
 
@@ -2821,7 +2833,8 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectRequestOptionsTy
 
 Required fields:
 
-- `Protocol`: `Literal['gre']` (see [ProtocolValue](./literals.md#protocolvalue))
+- `Protocol`: `Literal['gre']` (see
+  [ProtocolValueType](./literals.md#protocolvaluetype))
 
 ## CreateTransitGatewayConnectResultTypeDef
 
@@ -2842,11 +2855,12 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayMulticastDomainRequestO
 
 Optional fields:
 
-- `Igmpv2Support`: [Igmpv2SupportValue](./literals.md#igmpv2supportvalue)
+- `Igmpv2Support`:
+  [Igmpv2SupportValueType](./literals.md#igmpv2supportvaluetype)
 - `StaticSourcesSupport`:
-  [StaticSourcesSupportValue](./literals.md#staticsourcessupportvalue)
+  [StaticSourcesSupportValueType](./literals.md#staticsourcessupportvaluetype)
 - `AutoAcceptSharedAssociations`:
-  [AutoAcceptSharedAssociationsValue](./literals.md#autoacceptsharedassociationsvalue)
+  [AutoAcceptSharedAssociationsValueType](./literals.md#autoacceptsharedassociationsvaluetype)
 
 ## CreateTransitGatewayMulticastDomainResultTypeDef
 
@@ -2889,7 +2903,8 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayResultTypeDef
 
 Optional fields:
 
-- `TransitGateway`: [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
+- `TransitGateway`:
+  [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
 
 ## CreateTransitGatewayRouteResultTypeDef
 
@@ -2921,10 +2936,10 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayVpcAttachmentRequestOpt
 
 Optional fields:
 
-- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
-- `Ipv6Support`: [Ipv6SupportValue](./literals.md#ipv6supportvalue)
+- `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
+- `Ipv6Support`: [Ipv6SupportValueType](./literals.md#ipv6supportvaluetype)
 - `ApplianceModeSupport`:
-  [ApplianceModeSupportValue](./literals.md#appliancemodesupportvalue)
+  [ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype)
 
 ## CreateTransitGatewayVpcAttachmentResultTypeDef
 
@@ -2959,7 +2974,7 @@ from mypy_boto3_ec2.type_defs import CreateVolumePermissionTypeDef
 Optional fields:
 
 - `Group`: `Literal['all']` (see
-  [PermissionGroup](./literals.md#permissiongroup))
+  [PermissionGroupType](./literals.md#permissiongrouptype))
 - `UserId`: `str`
 
 ## CreateVpcEndpointConnectionNotificationResultTypeDef
@@ -3083,7 +3098,8 @@ from mypy_boto3_ec2.type_defs import DeleteCarrierGatewayResultTypeDef
 
 Optional fields:
 
-- `CarrierGateway`: [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
+- `CarrierGateway`:
+  [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
 
 ## DeleteClientVpnEndpointResultTypeDef
 
@@ -3136,7 +3152,7 @@ from mypy_boto3_ec2.type_defs import DeleteFleetErrorTypeDef
 
 Optional fields:
 
-- `Code`: [DeleteFleetErrorCode](./literals.md#deletefleeterrorcode)
+- `Code`: [DeleteFleetErrorCodeType](./literals.md#deletefleeterrorcodetype)
 - `Message`: `str`
 
 ## DeleteFleetSuccessItemTypeDef
@@ -3147,8 +3163,8 @@ from mypy_boto3_ec2.type_defs import DeleteFleetSuccessItemTypeDef
 
 Optional fields:
 
-- `CurrentFleetState`: [FleetStateCode](./literals.md#fleetstatecode)
-- `PreviousFleetState`: [FleetStateCode](./literals.md#fleetstatecode)
+- `CurrentFleetState`: [FleetStateCodeType](./literals.md#fleetstatecodetype)
+- `PreviousFleetState`: [FleetStateCodeType](./literals.md#fleetstatecodetype)
 - `FleetId`: `str`
 
 ## DeleteFleetsResultTypeDef
@@ -3193,7 +3209,8 @@ from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateResultTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `LaunchTemplate`:
+  [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 
 ## DeleteLaunchTemplateVersionsResponseErrorItemTypeDef
 
@@ -3314,7 +3331,7 @@ from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesErrorTypeDef
 Optional fields:
 
 - `Code`:
-  [DeleteQueuedReservedInstancesErrorCode](./literals.md#deletequeuedreservedinstanceserrorcode)
+  [DeleteQueuedReservedInstancesErrorCodeType](./literals.md#deletequeuedreservedinstanceserrorcodetype)
 - `Message`: `str`
 
 ## DeleteQueuedReservedInstancesResultTypeDef
@@ -3433,7 +3450,8 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayResultTypeDef
 
 Optional fields:
 
-- `TransitGateway`: [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
+- `TransitGateway`:
+  [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
 
 ## DeleteTransitGatewayRouteResultTypeDef
 
@@ -3628,7 +3646,8 @@ from mypy_boto3_ec2.type_defs import DescribeBundleTasksResultTypeDef
 
 Optional fields:
 
-- `BundleTasks`: `List`\[[BundleTaskTypeDef](./type_defs.md#bundletasktypedef)\]
+- `BundleTasks`:
+  `List`\[[BundleTaskTypeDef](./type_defs.md#bundletasktypedef)\]
 
 ## DescribeByoipCidrsResultTypeDef
 
@@ -3827,7 +3846,8 @@ from mypy_boto3_ec2.type_defs import DescribeExportTasksResultTypeDef
 
 Optional fields:
 
-- `ExportTasks`: `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
+- `ExportTasks`:
+  `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
 
 ## DescribeFastSnapshotRestoreSuccessItemTypeDef
 
@@ -3840,7 +3860,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `AvailabilityZone`: `str`
 - `State`:
-  [FastSnapshotRestoreStateCode](./literals.md#fastsnapshotrestorestatecode)
+  [FastSnapshotRestoreStateCodeType](./literals.md#fastsnapshotrestorestatecodetype)
 - `StateTransitionReason`: `str`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
@@ -3872,7 +3892,7 @@ Optional fields:
 
 - `LaunchTemplateAndOverrides`:
   [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
+- `Lifecycle`: [InstanceLifecycleType](./literals.md#instancelifecycletype)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
@@ -3914,11 +3934,11 @@ Optional fields:
 
 - `LaunchTemplateAndOverrides`:
   [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
+- `Lifecycle`: [InstanceLifecycleType](./literals.md#instancelifecycletype)
 - `InstanceIds`: `List`\[`str`\]
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Platform`: `Literal['Windows']` (see
-  [PlatformValues](./literals.md#platformvalues))
+  [PlatformValuesType](./literals.md#platformvaluestype))
 
 ## DescribeFleetsResultTypeDef
 
@@ -4297,7 +4317,8 @@ from mypy_boto3_ec2.type_defs import DescribeNatGatewaysResultTypeDef
 
 Optional fields:
 
-- `NatGateways`: `List`\[[NatGatewayTypeDef](./type_defs.md#natgatewaytypedef)\]
+- `NatGateways`:
+  `List`\[[NatGatewayTypeDef](./type_defs.md#natgatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkAclsResultTypeDef
@@ -4308,7 +4329,8 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkAclsResultTypeDef
 
 Optional fields:
 
-- `NetworkAcls`: `List`\[[NetworkAclTypeDef](./type_defs.md#networkacltypedef)\]
+- `NetworkAcls`:
+  `List`\[[NetworkAclTypeDef](./type_defs.md#networkacltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkInsightsAnalysesResultTypeDef
@@ -4396,7 +4418,8 @@ from mypy_boto3_ec2.type_defs import DescribePrefixListsResultTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `PrefixLists`: `List`\[[PrefixListTypeDef](./type_defs.md#prefixlisttypedef)\]
+- `PrefixLists`:
+  `List`\[[PrefixListTypeDef](./type_defs.md#prefixlisttypedef)\]
 
 ## DescribePrincipalIdFormatResultTypeDef
 
@@ -4498,7 +4521,8 @@ from mypy_boto3_ec2.type_defs import DescribeRouteTablesResultTypeDef
 
 Optional fields:
 
-- `RouteTables`: `List`\[[RouteTableTypeDef](./type_defs.md#routetabletypedef)\]
+- `RouteTables`:
+  `List`\[[RouteTableTypeDef](./type_defs.md#routetabletypedef)\]
 - `NextToken`: `str`
 
 ## DescribeScheduledInstanceAvailabilityResultTypeDef
@@ -4692,7 +4716,8 @@ from mypy_boto3_ec2.type_defs import DescribeTagsResultTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Tags`: `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
+- `Tags`:
+  `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
 
 ## DescribeTrafficMirrorFiltersResultTypeDef
 
@@ -4909,7 +4934,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkResultTypeDef
 
 Optional fields:
 
-- `Vpcs`: `List`\[[VpcClassicLinkTypeDef](./type_defs.md#vpcclassiclinktypedef)\]
+- `Vpcs`:
+  `List`\[[VpcClassicLinkTypeDef](./type_defs.md#vpcclassiclinktypedef)\]
 
 ## DescribeVpcEndpointConnectionNotificationsResultTypeDef
 
@@ -5026,7 +5052,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpnGatewaysResultTypeDef
 
 Optional fields:
 
-- `VpnGateways`: `List`\[[VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef)\]
+- `VpnGateways`:
+  `List`\[[VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef)\]
 
 ## DetachClassicLinkVpcResultTypeDef
 
@@ -5140,7 +5167,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `AvailabilityZone`: `str`
 - `State`:
-  [FastSnapshotRestoreStateCode](./literals.md#fastsnapshotrestorestatecode)
+  [FastSnapshotRestoreStateCodeType](./literals.md#fastsnapshotrestorestatecodetype)
 - `StateTransitionReason`: `str`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
@@ -5293,7 +5320,7 @@ from mypy_boto3_ec2.type_defs import DiskImageDescriptionTypeDef
 Optional fields:
 
 - `Checksum`: `str`
-- `Format`: [DiskImageFormat](./literals.md#diskimageformat)
+- `Format`: [DiskImageFormatType](./literals.md#diskimageformattype)
 - `ImportManifestUrl`: `str`
 - `Size`: `int`
 
@@ -5306,7 +5333,7 @@ from mypy_boto3_ec2.type_defs import DiskImageDetailTypeDef
 Required fields:
 
 - `Bytes`: `int`
-- `Format`: [DiskImageFormat](./literals.md#diskimageformat)
+- `Format`: [DiskImageFormatType](./literals.md#diskimageformattype)
 - `ImportManifestUrl`: `str`
 
 ## DiskImageTypeDef
@@ -5342,7 +5369,7 @@ Optional fields:
 
 - `SizeInGB`: `int`
 - `Count`: `int`
-- `Type`: [DiskType](./literals.md#disktype)
+- `Type`: [DiskTypeType](./literals.md#disktypetype)
 
 ## DnsEntryTypeDef
 
@@ -5378,7 +5405,7 @@ Optional fields:
 - `Iops`: `int`
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
-- `VolumeType`: [VolumeType](./literals.md#volumetype)
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `KmsKeyId`: `str`
 - `Throughput`: `int`
 - `OutpostArn`: `str`
@@ -5392,11 +5419,13 @@ from mypy_boto3_ec2.type_defs import EbsInfoTypeDef
 
 Optional fields:
 
-- `EbsOptimizedSupport`: [EbsOptimizedSupport](./literals.md#ebsoptimizedsupport)
-- `EncryptionSupport`: [EbsEncryptionSupport](./literals.md#ebsencryptionsupport)
+- `EbsOptimizedSupport`:
+  [EbsOptimizedSupportType](./literals.md#ebsoptimizedsupporttype)
+- `EncryptionSupport`:
+  [EbsEncryptionSupportType](./literals.md#ebsencryptionsupporttype)
 - `EbsOptimizedInfo`:
   [EbsOptimizedInfoTypeDef](./type_defs.md#ebsoptimizedinfotypedef)
-- `NvmeSupport`: [EbsNvmeSupport](./literals.md#ebsnvmesupport)
+- `NvmeSupport`: [EbsNvmeSupportType](./literals.md#ebsnvmesupporttype)
 
 ## EbsInstanceBlockDeviceSpecificationTypeDef
 
@@ -5419,7 +5448,7 @@ Optional fields:
 
 - `AttachTime`: `datetime`
 - `DeleteOnTermination`: `bool`
-- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
+- `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 - `VolumeId`: `str`
 
 ## EbsOptimizedInfoTypeDef
@@ -5481,7 +5510,7 @@ from mypy_boto3_ec2.type_defs import ElasticGpuHealthTypeDef
 
 Optional fields:
 
-- `Status`: [ElasticGpuStatus](./literals.md#elasticgpustatus)
+- `Status`: [ElasticGpuStatusType](./literals.md#elasticgpustatustype)
 
 ## ElasticGpuSpecificationResponseTypeDef
 
@@ -5517,7 +5546,7 @@ Optional fields:
 - `ElasticGpuHealth`:
   [ElasticGpuHealthTypeDef](./type_defs.md#elasticgpuhealthtypedef)
 - `ElasticGpuState`: `Literal['ATTACHED']` (see
-  [ElasticGpuState](./literals.md#elasticgpustate))
+  [ElasticGpuStateType](./literals.md#elasticgpustatetype))
 - `InstanceId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -5604,7 +5633,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `AvailabilityZone`: `str`
 - `State`:
-  [FastSnapshotRestoreStateCode](./literals.md#fastsnapshotrestorestatecode)
+  [FastSnapshotRestoreStateCodeType](./literals.md#fastsnapshotrestorestatecodetype)
 - `StateTransitionReason`: `str`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
@@ -5811,7 +5840,7 @@ from mypy_boto3_ec2.type_defs import ExportImageResultTypeDef
 Optional fields:
 
 - `Description`: `str`
-- `DiskImageFormat`: [DiskImageFormat](./literals.md#diskimageformat)
+- `DiskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
 - `ExportImageTaskId`: `str`
 - `ImageId`: `str`
 - `RoleName`: `str`
@@ -5875,10 +5904,11 @@ Optional fields:
 
 - `Description`: `str`
 - `ExportTaskId`: `str`
-- `ExportToS3Task`: [ExportToS3TaskTypeDef](./type_defs.md#exporttos3tasktypedef)
+- `ExportToS3Task`:
+  [ExportToS3TaskTypeDef](./type_defs.md#exporttos3tasktypedef)
 - `InstanceExportDetails`:
   [InstanceExportDetailsTypeDef](./type_defs.md#instanceexportdetailstypedef)
-- `State`: [ExportTaskState](./literals.md#exporttaskstate)
+- `State`: [ExportTaskStateType](./literals.md#exporttaskstatetype)
 - `StatusMessage`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -5891,8 +5921,8 @@ from mypy_boto3_ec2.type_defs import ExportToS3TaskSpecificationTypeDef
 Optional fields:
 
 - `ContainerFormat`: `Literal['ova']` (see
-  [ContainerFormat](./literals.md#containerformat))
-- `DiskImageFormat`: [DiskImageFormat](./literals.md#diskimageformat)
+  [ContainerFormatType](./literals.md#containerformattype))
+- `DiskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
 - `S3Bucket`: `str`
 - `S3Prefix`: `str`
 
@@ -5905,8 +5935,8 @@ from mypy_boto3_ec2.type_defs import ExportToS3TaskTypeDef
 Optional fields:
 
 - `ContainerFormat`: `Literal['ova']` (see
-  [ContainerFormat](./literals.md#containerformat))
-- `DiskImageFormat`: [DiskImageFormat](./literals.md#diskimageformat)
+  [ContainerFormatType](./literals.md#containerformattype))
+- `DiskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 
@@ -5973,13 +6003,14 @@ from mypy_boto3_ec2.type_defs import FleetDataTypeDef
 
 Optional fields:
 
-- `ActivityStatus`: [FleetActivityStatus](./literals.md#fleetactivitystatus)
+- `ActivityStatus`:
+  [FleetActivityStatusType](./literals.md#fleetactivitystatustype)
 - `CreateTime`: `datetime`
 - `FleetId`: `str`
-- `FleetState`: [FleetStateCode](./literals.md#fleetstatecode)
+- `FleetState`: [FleetStateCodeType](./literals.md#fleetstatecodetype)
 - `ClientToken`: `str`
 - `ExcessCapacityTerminationPolicy`:
-  [FleetExcessCapacityTerminationPolicy](./literals.md#fleetexcesscapacityterminationpolicy)
+  [FleetExcessCapacityTerminationPolicyType](./literals.md#fleetexcesscapacityterminationpolicytype)
 - `FulfilledCapacity`: `float`
 - `FulfilledOnDemandCapacity`: `float`
 - `LaunchTemplateConfigs`:
@@ -5987,7 +6018,7 @@ Optional fields:
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationTypeDef](./type_defs.md#targetcapacityspecificationtypedef)
 - `TerminateInstancesWithExpiration`: `bool`
-- `Type`: [FleetType](./literals.md#fleettype)
+- `Type`: [FleetTypeType](./literals.md#fleettypetype)
 - `ValidFrom`: `datetime`
 - `ValidUntil`: `datetime`
 - `ReplaceUnhealthyInstances`: `bool`
@@ -6034,7 +6065,7 @@ from mypy_boto3_ec2.type_defs import FleetLaunchTemplateOverridesRequestTypeDef
 
 Optional fields:
 
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `MaxPrice`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
@@ -6050,7 +6081,7 @@ from mypy_boto3_ec2.type_defs import FleetLaunchTemplateOverridesTypeDef
 
 Optional fields:
 
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `MaxPrice`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
@@ -6092,7 +6123,7 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceRequestTypeDef
 Optional fields:
 
 - `ReplacementStrategy`: `Literal['launch']` (see
-  [FleetReplacementStrategy](./literals.md#fleetreplacementstrategy))
+  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype))
 
 ## FleetSpotCapacityRebalanceTypeDef
 
@@ -6103,7 +6134,7 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceTypeDef
 Optional fields:
 
 - `ReplacementStrategy`: `Literal['launch']` (see
-  [FleetReplacementStrategy](./literals.md#fleetreplacementstrategy))
+  [FleetReplacementStrategyType](./literals.md#fleetreplacementstrategytype))
 
 ## FleetSpotMaintenanceStrategiesRequestTypeDef
 
@@ -6143,8 +6174,9 @@ Optional fields:
 - `FlowLogStatus`: `str`
 - `LogGroupName`: `str`
 - `ResourceId`: `str`
-- `TrafficType`: [TrafficType](./literals.md#traffictype)
-- `LogDestinationType`: [LogDestinationType](./literals.md#logdestinationtype)
+- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
+- `LogDestinationType`:
+  [LogDestinationTypeType](./literals.md#logdestinationtypetype)
 - `LogDestination`: `str`
 - `LogFormat`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -6198,7 +6230,7 @@ from mypy_boto3_ec2.type_defs import FpgaImageStateTypeDef
 
 Optional fields:
 
-- `Code`: [FpgaImageStateCode](./literals.md#fpgaimagestatecode)
+- `Code`: [FpgaImageStateCodeType](./literals.md#fpgaimagestatecodetype)
 - `Message`: `str`
 
 ## FpgaImageTypeDef
@@ -6274,7 +6306,8 @@ Optional fields:
 - `InstanceType`: `str`
 - `TotalInstanceCount`: `int`
 - `AvailableInstanceCount`: `int`
-- `State`: [CapacityReservationState](./literals.md#capacityreservationstate)
+- `State`:
+  [CapacityReservationStateType](./literals.md#capacityreservationstatetype)
 - `InstanceUsages`:
   `List`\[[InstanceUsageTypeDef](./type_defs.md#instanceusagetypedef)\]
 
@@ -6376,7 +6409,7 @@ from mypy_boto3_ec2.type_defs import GetHostReservationPurchasePreviewResultType
 Optional fields:
 
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Purchase`: `List`\[[PurchaseTypeDef](./type_defs.md#purchasetypedef)\]
 - `TotalHourlyPrice`: `str`
 - `TotalUpfrontPrice`: `str`
@@ -6596,7 +6629,7 @@ Optional fields:
 
 - `EventInformation`:
   [EventInformationTypeDef](./type_defs.md#eventinformationtypedef)
-- `EventType`: [FleetEventType](./literals.md#fleeteventtype)
+- `EventType`: [FleetEventTypeType](./literals.md#fleeteventtypetype)
 - `Timestamp`: `datetime`
 
 ## HistoryRecordTypeDef
@@ -6609,7 +6642,7 @@ Optional fields:
 
 - `EventInformation`:
   [EventInformationTypeDef](./type_defs.md#eventinformationtypedef)
-- `EventType`: [EventType](./literals.md#eventtype)
+- `EventType`: [EventTypeType](./literals.md#eventtypetype)
 - `Timestamp`: `datetime`
 
 ## HostInstanceTypeDef
@@ -6633,12 +6666,12 @@ from mypy_boto3_ec2.type_defs import HostOfferingTypeDef
 Optional fields:
 
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Duration`: `int`
 - `HourlyPrice`: `str`
 - `InstanceFamily`: `str`
 - `OfferingId`: `str`
-- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `UpfrontPrice`: `str`
 
 ## HostPropertiesTypeDef
@@ -6665,7 +6698,7 @@ Optional fields:
 
 - `Count`: `int`
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Duration`: `int`
 - `End`: `datetime`
 - `HostIdSet`: `List`\[`str`\]
@@ -6673,9 +6706,9 @@ Optional fields:
 - `HourlyPrice`: `str`
 - `InstanceFamily`: `str`
 - `OfferingId`: `str`
-- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `Start`: `datetime`
-- `State`: [ReservationState](./literals.md#reservationstate)
+- `State`: [ReservationStateType](./literals.md#reservationstatetype)
 - `UpfrontPrice`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -6687,23 +6720,24 @@ from mypy_boto3_ec2.type_defs import HostTypeDef
 
 Optional fields:
 
-- `AutoPlacement`: [AutoPlacement](./literals.md#autoplacement)
+- `AutoPlacement`: [AutoPlacementType](./literals.md#autoplacementtype)
 - `AvailabilityZone`: `str`
 - `AvailableCapacity`:
   [AvailableCapacityTypeDef](./type_defs.md#availablecapacitytypedef)
 - `ClientToken`: `str`
 - `HostId`: `str`
-- `HostProperties`: [HostPropertiesTypeDef](./type_defs.md#hostpropertiestypedef)
+- `HostProperties`:
+  [HostPropertiesTypeDef](./type_defs.md#hostpropertiestypedef)
 - `HostReservationId`: `str`
 - `Instances`:
   `List`\[[HostInstanceTypeDef](./type_defs.md#hostinstancetypedef)\]
-- `State`: [AllocationState](./literals.md#allocationstate)
+- `State`: [AllocationStateType](./literals.md#allocationstatetype)
 - `AllocationTime`: `datetime`
 - `ReleaseTime`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `HostRecovery`: [HostRecovery](./literals.md#hostrecovery)
+- `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
 - `AllowsMultipleInstanceTypes`:
-  [AllowsMultipleInstanceTypes](./literals.md#allowsmultipleinstancetypes)
+  [AllowsMultipleInstanceTypesType](./literals.md#allowsmultipleinstancetypestype)
 - `OwnerId`: `str`
 - `AvailabilityZoneId`: `str`
 - `MemberOfServiceLinkedResourceGroup`: `bool`
@@ -6741,7 +6775,7 @@ Optional fields:
 - `IamInstanceProfile`:
   [IamInstanceProfileTypeDef](./type_defs.md#iaminstanceprofiletypedef)
 - `State`:
-  [IamInstanceProfileAssociationState](./literals.md#iaminstanceprofileassociationstate)
+  [IamInstanceProfileAssociationStateType](./literals.md#iaminstanceprofileassociationstatetype)
 - `Timestamp`: `datetime`
 
 ## IamInstanceProfileSpecificationTypeDef
@@ -6834,36 +6868,38 @@ from mypy_boto3_ec2.type_defs import ImageTypeDef
 
 Optional fields:
 
-- `Architecture`: [ArchitectureValues](./literals.md#architecturevalues)
+- `Architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `CreationDate`: `str`
 - `ImageId`: `str`
 - `ImageLocation`: `str`
-- `ImageType`: [ImageTypeValues](./literals.md#imagetypevalues)
+- `ImageType`: [ImageTypeValuesType](./literals.md#imagetypevaluestype)
 - `Public`: `bool`
 - `KernelId`: `str`
 - `OwnerId`: `str`
 - `Platform`: `Literal['Windows']` (see
-  [PlatformValues](./literals.md#platformvalues))
+  [PlatformValuesType](./literals.md#platformvaluestype))
 - `PlatformDetails`: `str`
 - `UsageOperation`: `str`
 - `ProductCodes`:
   `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `RamdiskId`: `str`
-- `State`: [ImageState](./literals.md#imagestate)
+- `State`: [ImageStateType](./literals.md#imagestatetype)
 - `BlockDeviceMappings`:
   `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `EnaSupport`: `bool`
-- `Hypervisor`: [HypervisorType](./literals.md#hypervisortype)
+- `Hypervisor`: [HypervisorTypeType](./literals.md#hypervisortypetype)
 - `ImageOwnerAlias`: `str`
 - `Name`: `str`
 - `RootDeviceName`: `str`
-- `RootDeviceType`: [DeviceType](./literals.md#devicetype)
+- `RootDeviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `SriovNetSupport`: `str`
 - `StateReason`: [StateReasonTypeDef](./type_defs.md#statereasontypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VirtualizationType`: [VirtualizationType](./literals.md#virtualizationtype)
-- `BootMode`: [BootModeValues](./literals.md#bootmodevalues)
+- `VirtualizationType`:
+  [VirtualizationTypeType](./literals.md#virtualizationtypetype)
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 ## ImportClientVpnClientCertificateRevocationListResultTypeDef
 
@@ -6956,12 +6992,13 @@ from mypy_boto3_ec2.type_defs import ImportInstanceLaunchSpecificationTypeDef
 Optional fields:
 
 - `AdditionalInfo`: `str`
-- `Architecture`: [ArchitectureValues](./literals.md#architecturevalues)
+- `Architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `GroupIds`: `List`\[`str`\]
 - `GroupNames`: `List`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
-  [ShutdownBehavior](./literals.md#shutdownbehavior)
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+  [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Monitoring`: `bool`
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `PrivateIpAddress`: `str`
@@ -6976,7 +7013,8 @@ from mypy_boto3_ec2.type_defs import ImportInstanceResultTypeDef
 
 Optional fields:
 
-- `ConversionTask`: [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
+- `ConversionTask`:
+  [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
 
 ## ImportInstanceTaskDetailsTypeDef
 
@@ -6989,7 +7027,7 @@ Optional fields:
 - `Description`: `str`
 - `InstanceId`: `str`
 - `Platform`: `Literal['Windows']` (see
-  [PlatformValues](./literals.md#platformvalues))
+  [PlatformValuesType](./literals.md#platformvaluestype))
 - `Volumes`:
   `List`\[[ImportInstanceVolumeDetailItemTypeDef](./type_defs.md#importinstancevolumedetailitemtypedef)\]
 
@@ -7060,7 +7098,8 @@ from mypy_boto3_ec2.type_defs import ImportVolumeResultTypeDef
 
 Optional fields:
 
-- `ConversionTask`: [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
+- `ConversionTask`:
+  [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
 
 ## ImportVolumeTaskDetailsTypeDef
 
@@ -7117,7 +7156,8 @@ Optional fields:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnaSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
-- `EnclaveOptions`: [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
+- `EnclaveOptions`:
+  [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
 - `EbsOptimized`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `InstanceId`: `str`
@@ -7128,7 +7168,8 @@ Optional fields:
 - `ProductCodes`:
   `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `RamdiskId`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
-- `RootDeviceName`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `RootDeviceName`:
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `SriovNetSupport`:
@@ -7182,7 +7223,7 @@ from mypy_boto3_ec2.type_defs import InstanceCountTypeDef
 Optional fields:
 
 - `InstanceCount`: `int`
-- `State`: [ListingState](./literals.md#listingstate)
+- `State`: [ListingStateType](./literals.md#listingstatetype)
 
 ## InstanceCreditSpecificationRequestTypeDef
 
@@ -7215,7 +7256,8 @@ from mypy_boto3_ec2.type_defs import InstanceExportDetailsTypeDef
 Optional fields:
 
 - `InstanceId`: `str`
-- `TargetEnvironment`: [ExportEnvironment](./literals.md#exportenvironment)
+- `TargetEnvironment`:
+  [ExportEnvironmentType](./literals.md#exportenvironmenttype)
 
 ## InstanceFamilyCreditSpecificationTypeDef
 
@@ -7226,7 +7268,7 @@ from mypy_boto3_ec2.type_defs import InstanceFamilyCreditSpecificationTypeDef
 Optional fields:
 
 - `InstanceFamily`:
-  [UnlimitedSupportedInstanceFamily](./literals.md#unlimitedsupportedinstancefamily)
+  [UnlimitedSupportedInstanceFamilyType](./literals.md#unlimitedsupportedinstancefamilytype)
 - `CpuCredits`: `str`
 
 ## InstanceIpv6AddressRequestTypeDef
@@ -7257,7 +7299,8 @@ from mypy_boto3_ec2.type_defs import InstanceMarketOptionsRequestTypeDef
 
 Optional fields:
 
-- `MarketType`: `Literal['spot']` (see [MarketType](./literals.md#markettype))
+- `MarketType`: `Literal['spot']` (see
+  [MarketTypeType](./literals.md#markettypetype))
 - `SpotOptions`:
   [SpotMarketOptionsTypeDef](./type_defs.md#spotmarketoptionstypedef)
 
@@ -7269,10 +7312,10 @@ from mypy_boto3_ec2.type_defs import InstanceMetadataOptionsRequestTypeDef
 
 Optional fields:
 
-- `HttpTokens`: [HttpTokensState](./literals.md#httptokensstate)
+- `HttpTokens`: [HttpTokensStateType](./literals.md#httptokensstatetype)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [InstanceMetadataEndpointState](./literals.md#instancemetadataendpointstate)
+  [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 
 ## InstanceMetadataOptionsResponseTypeDef
 
@@ -7283,11 +7326,11 @@ from mypy_boto3_ec2.type_defs import InstanceMetadataOptionsResponseTypeDef
 Optional fields:
 
 - `State`:
-  [InstanceMetadataOptionsState](./literals.md#instancemetadataoptionsstate)
-- `HttpTokens`: [HttpTokensState](./literals.md#httptokensstate)
+  [InstanceMetadataOptionsStateType](./literals.md#instancemetadataoptionsstatetype)
+- `HttpTokens`: [HttpTokensStateType](./literals.md#httptokensstatetype)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [InstanceMetadataEndpointState](./literals.md#instancemetadataendpointstate)
+  [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 
 ## InstanceMonitoringTypeDef
 
@@ -7325,7 +7368,7 @@ Optional fields:
 - `AttachmentId`: `str`
 - `DeleteOnTermination`: `bool`
 - `DeviceIndex`: `int`
-- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
+- `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 - `NetworkCardIndex`: `int`
 
 ## InstanceNetworkInterfaceSpecificationTypeDef
@@ -7379,7 +7422,8 @@ Optional fields:
 - `PrivateIpAddresses`:
   `List`\[[InstancePrivateIpAddressTypeDef](./type_defs.md#instanceprivateipaddresstypedef)\]
 - `SourceDestCheck`: `bool`
-- `Status`: [NetworkInterfaceStatus](./literals.md#networkinterfacestatus)
+- `Status`:
+  [NetworkInterfaceStatusType](./literals.md#networkinterfacestatustype)
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `InterfaceType`: `str`
@@ -7430,7 +7474,7 @@ from mypy_boto3_ec2.type_defs import InstanceStateTypeDef
 Optional fields:
 
 - `Code`: `int`
-- `Name`: [InstanceStateName](./literals.md#instancestatename)
+- `Name`: [InstanceStateNameType](./literals.md#instancestatenametype)
 
 ## InstanceStatusDetailsTypeDef
 
@@ -7441,8 +7485,9 @@ from mypy_boto3_ec2.type_defs import InstanceStatusDetailsTypeDef
 Optional fields:
 
 - `ImpairedSince`: `datetime`
-- `Name`: `Literal['reachability']` (see [StatusName](./literals.md#statusname))
-- `Status`: [StatusType](./literals.md#statustype)
+- `Name`: `Literal['reachability']` (see
+  [StatusNameType](./literals.md#statusnametype))
+- `Status`: [StatusTypeType](./literals.md#statustypetype)
 
 ## InstanceStatusEventTypeDef
 
@@ -7453,7 +7498,7 @@ from mypy_boto3_ec2.type_defs import InstanceStatusEventTypeDef
 Optional fields:
 
 - `InstanceEventId`: `str`
-- `Code`: [EventCode](./literals.md#eventcode)
+- `Code`: [EventCodeType](./literals.md#eventcodetype)
 - `Description`: `str`
 - `NotAfter`: `datetime`
 - `NotBefore`: `datetime`
@@ -7469,7 +7514,7 @@ Optional fields:
 
 - `Details`:
   `List`\[[InstanceStatusDetailsTypeDef](./type_defs.md#instancestatusdetailstypedef)\]
-- `Status`: [SummaryStatus](./literals.md#summarystatus)
+- `Status`: [SummaryStatusType](./literals.md#summarystatustype)
 
 ## InstanceStatusTypeDef
 
@@ -7500,7 +7545,8 @@ Optional fields:
 
 - `TotalSizeInGB`: `int`
 - `Disks`: `List`\[[DiskInfoTypeDef](./type_defs.md#diskinfotypedef)\]
-- `NvmeSupport`: [EphemeralNvmeSupport](./literals.md#ephemeralnvmesupport)
+- `NvmeSupport`:
+  [EphemeralNvmeSupportType](./literals.md#ephemeralnvmesupporttype)
 
 ## InstanceTagNotificationAttributeTypeDef
 
@@ -7524,14 +7570,14 @@ Optional fields:
 - `AmiLaunchIndex`: `int`
 - `ImageId`: `str`
 - `InstanceId`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `LaunchTime`: `datetime`
 - `Monitoring`: [MonitoringTypeDef](./type_defs.md#monitoringtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `Platform`: `Literal['Windows']` (see
-  [PlatformValues](./literals.md#platformvalues))
+  [PlatformValuesType](./literals.md#platformvaluestype))
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
 - `ProductCodes`:
@@ -7543,17 +7589,18 @@ Optional fields:
 - `StateTransitionReason`: `str`
 - `SubnetId`: `str`
 - `VpcId`: `str`
-- `Architecture`: [ArchitectureValues](./literals.md#architecturevalues)
+- `Architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `BlockDeviceMappings`:
   `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `ClientToken`: `str`
 - `EbsOptimized`: `bool`
 - `EnaSupport`: `bool`
-- `Hypervisor`: [HypervisorType](./literals.md#hypervisortype)
+- `Hypervisor`: [HypervisorTypeType](./literals.md#hypervisortypetype)
 - `IamInstanceProfile`:
   [IamInstanceProfileTypeDef](./type_defs.md#iaminstanceprofiletypedef)
 - `InstanceLifecycle`:
-  [InstanceLifecycleType](./literals.md#instancelifecycletype)
+  [InstanceLifecycleTypeType](./literals.md#instancelifecycletypetype)
 - `ElasticGpuAssociations`:
   `List`\[[ElasticGpuAssociationTypeDef](./type_defs.md#elasticgpuassociationtypedef)\]
 - `ElasticInferenceAcceleratorAssociations`:
@@ -7562,7 +7609,7 @@ Optional fields:
   `List`\[[InstanceNetworkInterfaceTypeDef](./type_defs.md#instancenetworkinterfacetypedef)\]
 - `OutpostArn`: `str`
 - `RootDeviceName`: `str`
-- `RootDeviceType`: [DeviceType](./literals.md#devicetype)
+- `RootDeviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `SecurityGroups`:
   `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `SourceDestCheck`: `bool`
@@ -7570,7 +7617,8 @@ Optional fields:
 - `SriovNetSupport`: `str`
 - `StateReason`: [StateReasonTypeDef](./type_defs.md#statereasontypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VirtualizationType`: [VirtualizationType](./literals.md#virtualizationtype)
+- `VirtualizationType`:
+  [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 - `CpuOptions`: [CpuOptionsTypeDef](./type_defs.md#cpuoptionstypedef)
 - `CapacityReservationId`: `str`
 - `CapacityReservationSpecification`:
@@ -7581,8 +7629,9 @@ Optional fields:
   `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsResponseTypeDef](./type_defs.md#instancemetadataoptionsresponsetypedef)
-- `EnclaveOptions`: [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
-- `BootMode`: [BootModeValues](./literals.md#bootmodevalues)
+- `EnclaveOptions`:
+  [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 ## InstanceTypeInfoTypeDef
 
@@ -7592,17 +7641,18 @@ from mypy_boto3_ec2.type_defs import InstanceTypeInfoTypeDef
 
 Optional fields:
 
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `CurrentGeneration`: `bool`
 - `FreeTierEligible`: `bool`
 - `SupportedUsageClasses`:
-  `List`\[[UsageClassType](./literals.md#usageclasstype)\]
+  `List`\[[UsageClassTypeType](./literals.md#usageclasstypetype)\]
 - `SupportedRootDeviceTypes`:
-  `List`\[[RootDeviceType](./literals.md#rootdevicetype)\]
+  `List`\[[RootDeviceTypeType](./literals.md#rootdevicetypetype)\]
 - `SupportedVirtualizationTypes`:
-  `List`\[[VirtualizationType](./literals.md#virtualizationtype)\]
+  `List`\[[VirtualizationTypeType](./literals.md#virtualizationtypetype)\]
 - `BareMetal`: `bool`
-- `Hypervisor`: [InstanceTypeHypervisor](./literals.md#instancetypehypervisor)
+- `Hypervisor`:
+  [InstanceTypeHypervisorType](./literals.md#instancetypehypervisortype)
 - `ProcessorInfo`: [ProcessorInfoTypeDef](./type_defs.md#processorinfotypedef)
 - `VCpuInfo`: [VCpuInfoTypeDef](./type_defs.md#vcpuinfotypedef)
 - `MemoryInfo`: [MemoryInfoTypeDef](./type_defs.md#memoryinfotypedef)
@@ -7621,7 +7671,8 @@ Optional fields:
 - `BurstablePerformanceSupported`: `bool`
 - `DedicatedHostsSupported`: `bool`
 - `AutoRecoverySupported`: `bool`
-- `SupportedBootModes`: `List`\[[BootModeType](./literals.md#bootmodetype)\]
+- `SupportedBootModes`:
+  `List`\[[BootModeTypeType](./literals.md#bootmodetypetype)\]
 
 ## InstanceTypeOfferingTypeDef
 
@@ -7631,8 +7682,8 @@ from mypy_boto3_ec2.type_defs import InstanceTypeOfferingTypeDef
 
 Optional fields:
 
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
-- `LocationType`: [LocationType](./literals.md#locationtype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
 - `Location`: `str`
 
 ## InstanceUsageTypeDef
@@ -7665,7 +7716,7 @@ from mypy_boto3_ec2.type_defs import InternetGatewayAttachmentTypeDef
 
 Optional fields:
 
-- `State`: [AttachmentStatus](./literals.md#attachmentstatus)
+- `State`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 - `VpcId`: `str`
 
 ## InternetGatewayTypeDef
@@ -7817,7 +7868,7 @@ from mypy_boto3_ec2.type_defs import LaunchPermissionTypeDef
 Optional fields:
 
 - `Group`: `Literal['all']` (see
-  [PermissionGroup](./literals.md#permissiongroup))
+  [PermissionGroupType](./literals.md#permissiongrouptype))
 - `UserId`: `str`
 
 ## LaunchSpecificationTypeDef
@@ -7838,7 +7889,7 @@ Optional fields:
 - `IamInstanceProfile`:
   [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
 - `ImageId`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `NetworkInterfaces`:
@@ -7899,7 +7950,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateCapacityReservationSpecificat
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
+  [CapacityReservationPreferenceType](./literals.md#capacityreservationpreferencetype)
 - `CapacityReservationTarget`:
   [CapacityReservationTargetTypeDef](./type_defs.md#capacityreservationtargettypedef)
 
@@ -7912,7 +7963,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateCapacityReservationSpecificat
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
+  [CapacityReservationPreferenceType](./literals.md#capacityreservationpreferencetype)
 - `CapacityReservationTarget`:
   [CapacityReservationTargetResponseTypeDef](./type_defs.md#capacityreservationtargetresponsetypedef)
 
@@ -7965,7 +8016,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
-- `VolumeType`: [VolumeType](./literals.md#volumetype)
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `Throughput`: `int`
 
 ## LaunchTemplateEbsBlockDeviceTypeDef
@@ -7982,7 +8033,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
-- `VolumeType`: [VolumeType](./literals.md#volumetype)
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `Throughput`: `int`
 
 ## LaunchTemplateElasticInferenceAcceleratorResponseTypeDef
@@ -8080,7 +8131,8 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMarketOptionsRequestT
 
 Optional fields:
 
-- `MarketType`: `Literal['spot']` (see [MarketType](./literals.md#markettype))
+- `MarketType`: `Literal['spot']` (see
+  [MarketTypeType](./literals.md#markettypetype))
 - `SpotOptions`:
   [LaunchTemplateSpotMarketOptionsRequestTypeDef](./type_defs.md#launchtemplatespotmarketoptionsrequesttypedef)
 
@@ -8092,7 +8144,8 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMarketOptionsTypeDef
 
 Optional fields:
 
-- `MarketType`: `Literal['spot']` (see [MarketType](./literals.md#markettype))
+- `MarketType`: `Literal['spot']` (see
+  [MarketTypeType](./literals.md#markettypetype))
 - `SpotOptions`:
   [LaunchTemplateSpotMarketOptionsTypeDef](./type_defs.md#launchtemplatespotmarketoptionstypedef)
 
@@ -8105,10 +8158,10 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMetadataOptionsReques
 Optional fields:
 
 - `HttpTokens`:
-  [LaunchTemplateHttpTokensState](./literals.md#launchtemplatehttptokensstate)
+  [LaunchTemplateHttpTokensStateType](./literals.md#launchtemplatehttptokensstatetype)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [LaunchTemplateInstanceMetadataEndpointState](./literals.md#launchtemplateinstancemetadataendpointstate)
+  [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 
 ## LaunchTemplateInstanceMetadataOptionsTypeDef
 
@@ -8119,12 +8172,12 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMetadataOptionsTypeDe
 Optional fields:
 
 - `State`:
-  [LaunchTemplateInstanceMetadataOptionsState](./literals.md#launchtemplateinstancemetadataoptionsstate)
+  [LaunchTemplateInstanceMetadataOptionsStateType](./literals.md#launchtemplateinstancemetadataoptionsstatetype)
 - `HttpTokens`:
-  [LaunchTemplateHttpTokensState](./literals.md#launchtemplatehttptokensstate)
+  [LaunchTemplateHttpTokensStateType](./literals.md#launchtemplatehttptokensstatetype)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [LaunchTemplateInstanceMetadataEndpointState](./literals.md#launchtemplateinstancemetadataendpointstate)
+  [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 
 ## LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef
 
@@ -8206,7 +8259,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateOverridesTypeDef
 
 Optional fields:
 
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `SpotPrice`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
@@ -8225,7 +8278,7 @@ Optional fields:
 - `Affinity`: `str`
 - `GroupName`: `str`
 - `HostId`: `str`
-- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 - `PartitionNumber`: `int`
@@ -8242,7 +8295,7 @@ Optional fields:
 - `Affinity`: `str`
 - `GroupName`: `str`
 - `HostId`: `str`
-- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 - `PartitionNumber`: `int`
@@ -8268,11 +8321,12 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateSpotMarketOptionsRequestTypeD
 Optional fields:
 
 - `MaxPrice`: `str`
-- `SpotInstanceType`: [SpotInstanceType](./literals.md#spotinstancetype)
+- `SpotInstanceType`:
+  [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
 - `BlockDurationMinutes`: `int`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
+  [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
 ## LaunchTemplateSpotMarketOptionsTypeDef
 
@@ -8283,11 +8337,12 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateSpotMarketOptionsTypeDef
 Optional fields:
 
 - `MaxPrice`: `str`
-- `SpotInstanceType`: [SpotInstanceType](./literals.md#spotinstancetype)
+- `SpotInstanceType`:
+  [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
 - `BlockDurationMinutes`: `int`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
+  [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
 ## LaunchTemplateTagSpecificationRequestTypeDef
 
@@ -8297,7 +8352,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateTagSpecificationRequestTypeDe
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LaunchTemplateTagSpecificationTypeDef
@@ -8308,7 +8363,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateTagSpecificationTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LaunchTemplateTypeDef
@@ -8420,7 +8475,7 @@ from mypy_boto3_ec2.type_defs import LoadPermissionRequestTypeDef
 Optional fields:
 
 - `Group`: `Literal['all']` (see
-  [PermissionGroup](./literals.md#permissiongroup))
+  [PermissionGroupType](./literals.md#permissiongrouptype))
 - `UserId`: `str`
 
 ## LoadPermissionTypeDef
@@ -8433,7 +8488,7 @@ Optional fields:
 
 - `UserId`: `str`
 - `Group`: `Literal['all']` (see
-  [PermissionGroup](./literals.md#permissiongroup))
+  [PermissionGroupType](./literals.md#permissiongrouptype))
 
 ## LocalGatewayRouteTableTypeDef
 
@@ -8495,8 +8550,9 @@ Optional fields:
 
 - `DestinationCidrBlock`: `str`
 - `LocalGatewayVirtualInterfaceGroupId`: `str`
-- `Type`: [LocalGatewayRouteType](./literals.md#localgatewayroutetype)
-- `State`: [LocalGatewayRouteState](./literals.md#localgatewayroutestate)
+- `Type`: [LocalGatewayRouteTypeType](./literals.md#localgatewayroutetypetype)
+- `State`:
+  [LocalGatewayRouteStateType](./literals.md#localgatewayroutestatetype)
 - `LocalGatewayRouteTableId`: `str`
 - `LocalGatewayRouteTableArn`: `str`
 - `OwnerId`: `str`
@@ -8557,7 +8613,7 @@ Optional fields:
 
 - `PrefixListId`: `str`
 - `AddressFamily`: `str`
-- `State`: [PrefixListState](./literals.md#prefixliststate)
+- `State`: [PrefixListStateType](./literals.md#prefixliststatetype)
 - `StateMessage`: `str`
 - `PrefixListArn`: `str`
 - `PrefixListName`: `str`
@@ -8734,7 +8790,8 @@ from mypy_boto3_ec2.type_defs import ModifyLaunchTemplateResultTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `LaunchTemplate`:
+  [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 
 ## ModifyManagedPrefixListResultTypeDef
 
@@ -8810,15 +8867,16 @@ Optional fields:
 
 - `AddTransitGatewayCidrBlocks`: `List`\[`str`\]
 - `RemoveTransitGatewayCidrBlocks`: `List`\[`str`\]
-- `VpnEcmpSupport`: [VpnEcmpSupportValue](./literals.md#vpnecmpsupportvalue)
-- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
+- `VpnEcmpSupport`:
+  [VpnEcmpSupportValueType](./literals.md#vpnecmpsupportvaluetype)
+- `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
 - `AutoAcceptSharedAttachments`:
-  [AutoAcceptSharedAttachmentsValue](./literals.md#autoacceptsharedattachmentsvalue)
+  [AutoAcceptSharedAttachmentsValueType](./literals.md#autoacceptsharedattachmentsvaluetype)
 - `DefaultRouteTableAssociation`:
-  [DefaultRouteTableAssociationValue](./literals.md#defaultroutetableassociationvalue)
+  [DefaultRouteTableAssociationValueType](./literals.md#defaultroutetableassociationvaluetype)
 - `AssociationDefaultRouteTableId`: `str`
 - `DefaultRouteTablePropagation`:
-  [DefaultRouteTablePropagationValue](./literals.md#defaultroutetablepropagationvalue)
+  [DefaultRouteTablePropagationValueType](./literals.md#defaultroutetablepropagationvaluetype)
 - `PropagationDefaultRouteTableId`: `str`
 
 ## ModifyTransitGatewayPrefixListReferenceResultTypeDef
@@ -8840,7 +8898,8 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayResultTypeDef
 
 Optional fields:
 
-- `TransitGateway`: [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
+- `TransitGateway`:
+  [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
 
 ## ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef
 
@@ -8850,10 +8909,10 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayVpcAttachmentRequestOpt
 
 Optional fields:
 
-- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
-- `Ipv6Support`: [Ipv6SupportValue](./literals.md#ipv6supportvalue)
+- `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
+- `Ipv6Support`: [Ipv6SupportValueType](./literals.md#ipv6supportvaluetype)
 - `ApplianceModeSupport`:
-  [ApplianceModeSupportValue](./literals.md#appliancemodesupportvalue)
+  [ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype)
 
 ## ModifyTransitGatewayVpcAttachmentResultTypeDef
 
@@ -9033,7 +9092,7 @@ from mypy_boto3_ec2.type_defs import MonitoringTypeDef
 
 Optional fields:
 
-- `State`: [MonitoringState](./literals.md#monitoringstate)
+- `State`: [MonitoringStateType](./literals.md#monitoringstatetype)
 
 ## MoveAddressToVpcResultTypeDef
 
@@ -9044,7 +9103,7 @@ from mypy_boto3_ec2.type_defs import MoveAddressToVpcResultTypeDef
 Optional fields:
 
 - `AllocationId`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## MovingAddressStatusTypeDef
 
@@ -9054,7 +9113,7 @@ from mypy_boto3_ec2.type_defs import MovingAddressStatusTypeDef
 
 Optional fields:
 
-- `MoveStatus`: [MoveStatus](./literals.md#movestatus)
+- `MoveStatus`: [MoveStatusType](./literals.md#movestatustype)
 - `PublicIp`: `str`
 
 ## NatGatewayAddressTypeDef
@@ -9087,7 +9146,7 @@ Optional fields:
 - `NatGatewayId`: `str`
 - `ProvisionedBandwidth`:
   [ProvisionedBandwidthTypeDef](./type_defs.md#provisionedbandwidthtypedef)
-- `State`: [NatGatewayState](./literals.md#natgatewaystate)
+- `State`: [NatGatewayStateType](./literals.md#natgatewaystatetype)
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -9118,7 +9177,7 @@ Optional fields:
 - `Ipv6CidrBlock`: `str`
 - `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `Protocol`: `str`
-- `RuleAction`: [RuleAction](./literals.md#ruleaction)
+- `RuleAction`: [RuleActionType](./literals.md#ruleactiontype)
 - `RuleNumber`: `int`
 
 ## NetworkAclTypeDef
@@ -9168,7 +9227,7 @@ Optional fields:
 - `Ipv4AddressesPerInterface`: `int`
 - `Ipv6AddressesPerInterface`: `int`
 - `Ipv6Supported`: `bool`
-- `EnaSupport`: [EnaSupport](./literals.md#enasupport)
+- `EnaSupport`: [EnaSupportType](./literals.md#enasupporttype)
 - `EfaSupported`: `bool`
 - `EfaInfo`: [EfaInfoTypeDef](./type_defs.md#efainfotypedef)
 
@@ -9185,7 +9244,7 @@ Optional fields:
 - `NetworkInsightsPathId`: `str`
 - `FilterInArns`: `List`\[`str`\]
 - `StartDate`: `datetime`
-- `Status`: [AnalysisStatus](./literals.md#analysisstatus)
+- `Status`: [AnalysisStatusType](./literals.md#analysisstatustype)
 - `StatusMessage`: `str`
 - `NetworkPathFound`: `bool`
 - `ForwardPathComponents`:
@@ -9259,7 +9318,7 @@ Optional fields:
 - `NetworkCardIndex`: `int`
 - `InstanceId`: `str`
 - `InstanceOwnerId`: `str`
-- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
+- `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 
 ## NetworkInterfaceIpv6AddressTypeDef
 
@@ -9280,7 +9339,7 @@ from mypy_boto3_ec2.type_defs import NetworkInterfacePermissionStateTypeDef
 Optional fields:
 
 - `State`:
-  [NetworkInterfacePermissionStateCode](./literals.md#networkinterfacepermissionstatecode)
+  [NetworkInterfacePermissionStateCodeType](./literals.md#networkinterfacepermissionstatecodetype)
 - `StatusMessage`: `str`
 
 ## NetworkInterfacePermissionTypeDef
@@ -9295,7 +9354,8 @@ Optional fields:
 - `NetworkInterfaceId`: `str`
 - `AwsAccountId`: `str`
 - `AwsService`: `str`
-- `Permission`: [InterfacePermissionType](./literals.md#interfacepermissiontype)
+- `Permission`:
+  [InterfacePermissionTypeType](./literals.md#interfacepermissiontypetype)
 - `PermissionState`:
   [NetworkInterfacePermissionStateTypeDef](./type_defs.md#networkinterfacepermissionstatetypedef)
 
@@ -9329,7 +9389,8 @@ Optional fields:
 - `Description`: `str`
 - `Groups`:
   `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
-- `InterfaceType`: [NetworkInterfaceType](./literals.md#networkinterfacetype)
+- `InterfaceType`:
+  [NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype)
 - `Ipv6Addresses`:
   `List`\[[NetworkInterfaceIpv6AddressTypeDef](./type_defs.md#networkinterfaceipv6addresstypedef)\]
 - `MacAddress`: `str`
@@ -9343,7 +9404,8 @@ Optional fields:
 - `RequesterId`: `str`
 - `RequesterManaged`: `bool`
 - `SourceDestCheck`: `bool`
-- `Status`: [NetworkInterfaceStatus](./literals.md#networkinterfacestatus)
+- `Status`:
+  [NetworkInterfaceStatusType](./literals.md#networkinterfacestatustype)
 - `SubnetId`: `str`
 - `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
@@ -9368,7 +9430,7 @@ from mypy_boto3_ec2.type_defs import OnDemandOptionsRequestTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [FleetOnDemandAllocationStrategy](./literals.md#fleetondemandallocationstrategy)
+  [FleetOnDemandAllocationStrategyType](./literals.md#fleetondemandallocationstrategytype)
 - `CapacityReservationOptions`:
   [CapacityReservationOptionsRequestTypeDef](./type_defs.md#capacityreservationoptionsrequesttypedef)
 - `SingleInstanceType`: `bool`
@@ -9385,7 +9447,7 @@ from mypy_boto3_ec2.type_defs import OnDemandOptionsTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [FleetOnDemandAllocationStrategy](./literals.md#fleetondemandallocationstrategy)
+  [FleetOnDemandAllocationStrategyType](./literals.md#fleetondemandallocationstrategytype)
 - `CapacityReservationOptions`:
   [CapacityReservationOptionsTypeDef](./type_defs.md#capacityreservationoptionstypedef)
 - `SingleInstanceType`: `bool`
@@ -9621,7 +9683,7 @@ from mypy_boto3_ec2.type_defs import PlacementGroupInfoTypeDef
 Optional fields:
 
 - `SupportedStrategies`:
-  `List`\[[PlacementGroupStrategy](./literals.md#placementgroupstrategy)\]
+  `List`\[[PlacementGroupStrategyType](./literals.md#placementgroupstrategytype)\]
 
 ## PlacementGroupTypeDef
 
@@ -9632,8 +9694,8 @@ from mypy_boto3_ec2.type_defs import PlacementGroupTypeDef
 Optional fields:
 
 - `GroupName`: `str`
-- `State`: [PlacementGroupState](./literals.md#placementgroupstate)
-- `Strategy`: [PlacementStrategy](./literals.md#placementstrategy)
+- `State`: [PlacementGroupStateType](./literals.md#placementgroupstatetype)
+- `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
 - `PartitionCount`: `int`
 - `GroupId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -9661,7 +9723,7 @@ Optional fields:
 - `GroupName`: `str`
 - `PartitionNumber`: `int`
 - `HostId`: `str`
-- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 
@@ -9740,7 +9802,7 @@ from mypy_boto3_ec2.type_defs import PriceScheduleSpecificationTypeDef
 Optional fields:
 
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Price`: `float`
 - `Term`: `int`
 
@@ -9754,7 +9816,7 @@ Optional fields:
 
 - `Active`: `bool`
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Price`: `float`
 - `Term`: `int`
 
@@ -9798,7 +9860,7 @@ from mypy_boto3_ec2.type_defs import PrivateDnsNameConfigurationTypeDef
 
 Optional fields:
 
-- `State`: [DnsNameState](./literals.md#dnsnamestate)
+- `State`: [DnsNameStateType](./literals.md#dnsnamestatetype)
 - `Type`: `str`
 - `Value`: `str`
 - `Name`: `str`
@@ -9823,7 +9885,7 @@ from mypy_boto3_ec2.type_defs import ProcessorInfoTypeDef
 Optional fields:
 
 - `SupportedArchitectures`:
-  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
+  `List`\[[ArchitectureTypeType](./literals.md#architecturetypetype)\]
 - `SustainedClockSpeedInGhz`: `float`
 
 ## ProductCodeTypeDef
@@ -9835,7 +9897,8 @@ from mypy_boto3_ec2.type_defs import ProductCodeTypeDef
 Optional fields:
 
 - `ProductCodeId`: `str`
-- `ProductCodeType`: [ProductCodeValues](./literals.md#productcodevalues)
+- `ProductCodeType`:
+  [ProductCodeValuesType](./literals.md#productcodevaluestype)
 
 ## PropagatingVgwTypeDef
 
@@ -9923,7 +9986,7 @@ Optional fields:
 
 - `ClientToken`: `str`
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Purchase`: `List`\[[PurchaseTypeDef](./type_defs.md#purchasetypedef)\]
 - `TotalHourlyPrice`: `str`
 - `TotalUpfrontPrice`: `str`
@@ -9969,13 +10032,13 @@ from mypy_boto3_ec2.type_defs import PurchaseTypeDef
 Optional fields:
 
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Duration`: `int`
 - `HostIdSet`: `List`\[`str`\]
 - `HostReservationId`: `str`
 - `HourlyPrice`: `str`
 - `InstanceFamily`: `str`
-- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `UpfrontPrice`: `str`
 
 ## RecurringChargeTypeDef
@@ -9988,7 +10051,7 @@ Optional fields:
 
 - `Amount`: `float`
 - `Frequency`: `Literal['Hourly']` (see
-  [RecurringChargeFrequency](./literals.md#recurringchargefrequency))
+  [RecurringChargeFrequencyType](./literals.md#recurringchargefrequencytype))
 
 ## RegionTypeDef
 
@@ -10164,7 +10227,7 @@ Optional fields:
 - `ReplaceRootVolumeTaskId`: `str`
 - `InstanceId`: `str`
 - `TaskState`:
-  [ReplaceRootVolumeTaskState](./literals.md#replacerootvolumetaskstate)
+  [ReplaceRootVolumeTaskStateType](./literals.md#replacerootvolumetaskstatetype)
 - `StartTime`: `str`
 - `CompleteTime`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -10209,7 +10272,7 @@ Optional fields:
 - `NetworkInterfaces`:
   `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef](./type_defs.md#launchtemplateinstancenetworkinterfacespecificationrequesttypedef)\]
 - `ImageId`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KeyName`: `str`
 - `Monitoring`:
   [LaunchTemplatesMonitoringRequestTypeDef](./type_defs.md#launchtemplatesmonitoringrequesttypedef)
@@ -10218,7 +10281,7 @@ Optional fields:
 - `RamDiskId`: `str`
 - `DisableApiTermination`: `bool`
 - `InstanceInitiatedShutdownBehavior`:
-  [ShutdownBehavior](./literals.md#shutdownbehavior)
+  [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `UserData`: `str`
 - `TagSpecifications`:
   `List`\[[LaunchTemplateTagSpecificationRequestTypeDef](./type_defs.md#launchtemplatetagspecificationrequesttypedef)\]
@@ -10283,7 +10346,7 @@ Optional fields:
 - `IamInstanceProfile`:
   [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
 - `ImageId`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
@@ -10332,7 +10395,7 @@ Optional fields:
 
 - `Amount`: `float`
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 
 ## ReservedInstanceReservationValueTypeDef
 
@@ -10356,9 +10419,9 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `InstanceCount`: `int`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Platform`: `str`
-- `Scope`: [scope](./literals.md#scope)
+- `Scope`: [scopeType](./literals.md#scopetype)
 
 ## ReservedInstancesIdTypeDef
 
@@ -10386,7 +10449,7 @@ Optional fields:
   `List`\[[PriceScheduleTypeDef](./type_defs.md#pricescheduletypedef)\]
 - `ReservedInstancesId`: `str`
 - `ReservedInstancesListingId`: `str`
-- `Status`: [ListingStatus](./literals.md#listingstatus)
+- `Status`: [ListingStatusType](./literals.md#listingstatustype)
 - `StatusMessage`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UpdateDate`: `datetime`
@@ -10434,22 +10497,23 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `Duration`: `int`
 - `FixedPrice`: `float`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `ProductDescription`:
-  [RIProductDescription](./literals.md#riproductdescription)
+  [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
 - `ReservedInstancesOfferingId`: `str`
 - `UsagePrice`: `float`
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
-- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
+- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Marketplace`: `bool`
-- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
-- `OfferingType`: [OfferingTypeValues](./literals.md#offeringtypevalues)
+- `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
+- `OfferingType`:
+  [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
 - `PricingDetails`:
   `List`\[[PricingDetailTypeDef](./type_defs.md#pricingdetailtypedef)\]
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
-- `Scope`: [scope](./literals.md#scope)
+- `Scope`: [scopeType](./literals.md#scopetype)
 
 ## ReservedInstancesTypeDef
 
@@ -10464,21 +10528,22 @@ Optional fields:
 - `End`: `datetime`
 - `FixedPrice`: `float`
 - `InstanceCount`: `int`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `ProductDescription`:
-  [RIProductDescription](./literals.md#riproductdescription)
+  [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
 - `ReservedInstancesId`: `str`
 - `Start`: `datetime`
-- `State`: [ReservedInstanceState](./literals.md#reservedinstancestate)
+- `State`: [ReservedInstanceStateType](./literals.md#reservedinstancestatetype)
 - `UsagePrice`: `float`
 - `CurrencyCode`: `Literal['USD']` (see
-  [CurrencyCodeValues](./literals.md#currencycodevalues))
-- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
-- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
-- `OfferingType`: [OfferingTypeValues](./literals.md#offeringtypevalues)
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
+- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
+- `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
+- `OfferingType`:
+  [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
-- `Scope`: [scope](./literals.md#scope)
+- `Scope`: [scopeType](./literals.md#scopetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ResetAddressAttributeResultTypeDef
@@ -10519,7 +10584,8 @@ from mypy_boto3_ec2.type_defs import ResponseErrorTypeDef
 
 Optional fields:
 
-- `Code`: [LaunchTemplateErrorCode](./literals.md#launchtemplateerrorcode)
+- `Code`:
+  [LaunchTemplateErrorCodeType](./literals.md#launchtemplateerrorcodetype)
 - `Message`: `str`
 
 ## ResponseLaunchTemplateDataTypeDef
@@ -10539,7 +10605,7 @@ Optional fields:
 - `NetworkInterfaces`:
   `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#launchtemplateinstancenetworkinterfacespecificationtypedef)\]
 - `ImageId`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KeyName`: `str`
 - `Monitoring`:
   [LaunchTemplatesMonitoringTypeDef](./type_defs.md#launchtemplatesmonitoringtypedef)
@@ -10548,7 +10614,7 @@ Optional fields:
 - `RamDiskId`: `str`
 - `DisableApiTermination`: `bool`
 - `InstanceInitiatedShutdownBehavior`:
-  [ShutdownBehavior](./literals.md#shutdownbehavior)
+  [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `UserData`: `str`
 - `TagSpecifications`:
   `List`\[[LaunchTemplateTagSpecificationTypeDef](./type_defs.md#launchtemplatetagspecificationtypedef)\]
@@ -10584,7 +10650,7 @@ from mypy_boto3_ec2.type_defs import RestoreAddressToClassicResultTypeDef
 Optional fields:
 
 - `PublicIp`: `str`
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## RestoreManagedPrefixListVersionResultTypeDef
 
@@ -10641,7 +10707,7 @@ from mypy_boto3_ec2.type_defs import RouteTableAssociationStateTypeDef
 Optional fields:
 
 - `State`:
-  [RouteTableAssociationStateCode](./literals.md#routetableassociationstatecode)
+  [RouteTableAssociationStateCodeType](./literals.md#routetableassociationstatecodetype)
 - `StatusMessage`: `str`
 
 ## RouteTableAssociationTypeDef
@@ -10698,8 +10764,8 @@ Optional fields:
 - `LocalGatewayId`: `str`
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
-- `Origin`: [RouteOrigin](./literals.md#routeorigin)
-- `State`: [RouteState](./literals.md#routestate)
+- `Origin`: [RouteOriginType](./literals.md#routeorigintype)
+- `State`: [RouteStateType](./literals.md#routestatetype)
 - `VpcPeeringConnectionId`: `str`
 
 ## RunInstancesMonitoringEnabledTypeDef
@@ -11049,7 +11115,7 @@ Optional fields:
   `List`\[[ServiceTypeDetailTypeDef](./type_defs.md#servicetypedetailtypedef)\]
 - `ServiceId`: `str`
 - `ServiceName`: `str`
-- `ServiceState`: [ServiceState](./literals.md#servicestate)
+- `ServiceState`: [ServiceStateType](./literals.md#servicestatetype)
 - `AvailabilityZones`: `List`\[`str`\]
 - `AcceptanceRequired`: `bool`
 - `ManagesVpcEndpoints`: `bool`
@@ -11083,7 +11149,8 @@ Optional fields:
 - `AcceptanceRequired`: `bool`
 - `ManagesVpcEndpoints`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `PrivateDnsNameVerificationState`: [DnsNameState](./literals.md#dnsnamestate)
+- `PrivateDnsNameVerificationState`:
+  [DnsNameStateType](./literals.md#dnsnamestatetype)
 
 ## ServiceTypeDetailTypeDef
 
@@ -11093,7 +11160,7 @@ from mypy_boto3_ec2.type_defs import ServiceTypeDetailTypeDef
 
 Optional fields:
 
-- `ServiceType`: [ServiceType](./literals.md#servicetype)
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
 
 ## SlotDateTimeRangeRequestTypeDef
 
@@ -11162,7 +11229,7 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Encrypted`: `bool`
 - `VolumeId`: `str`
-- `State`: [SnapshotState](./literals.md#snapshotstate)
+- `State`: [SnapshotStateType](./literals.md#snapshotstatetype)
 - `VolumeSize`: `int`
 - `StartTime`: `datetime`
 - `Progress`: `str`
@@ -11207,7 +11274,7 @@ Optional fields:
 - `Progress`: `str`
 - `SnapshotId`: `str`
 - `StartTime`: `datetime`
-- `State`: [SnapshotState](./literals.md#snapshotstate)
+- `State`: [SnapshotStateType](./literals.md#snapshotstatetype)
 - `StateMessage`: `str`
 - `VolumeId`: `str`
 - `VolumeSize`: `int`
@@ -11224,7 +11291,7 @@ from mypy_boto3_ec2.type_defs import SpotCapacityRebalanceTypeDef
 Optional fields:
 
 - `ReplacementStrategy`: `Literal['launch']` (see
-  [ReplacementStrategy](./literals.md#replacementstrategy))
+  [ReplacementStrategyType](./literals.md#replacementstrategytype))
 
 ## SpotDatafeedSubscriptionTypeDef
 
@@ -11239,7 +11306,8 @@ Optional fields:
   [SpotInstanceStateFaultTypeDef](./type_defs.md#spotinstancestatefaulttypedef)
 - `OwnerId`: `str`
 - `Prefix`: `str`
-- `State`: [DatafeedSubscriptionState](./literals.md#datafeedsubscriptionstate)
+- `State`:
+  [DatafeedSubscriptionStateType](./literals.md#datafeedsubscriptionstatetype)
 
 ## SpotFleetLaunchSpecificationTypeDef
 
@@ -11258,7 +11326,7 @@ Optional fields:
 - `IamInstanceProfile`:
   [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
 - `ImageId`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
@@ -11297,14 +11365,15 @@ Required fields:
 
 Optional fields:
 
-- `AllocationStrategy`: [AllocationStrategy](./literals.md#allocationstrategy)
+- `AllocationStrategy`:
+  [AllocationStrategyType](./literals.md#allocationstrategytype)
 - `OnDemandAllocationStrategy`:
-  [OnDemandAllocationStrategy](./literals.md#ondemandallocationstrategy)
+  [OnDemandAllocationStrategyType](./literals.md#ondemandallocationstrategytype)
 - `SpotMaintenanceStrategies`:
   [SpotMaintenanceStrategiesTypeDef](./type_defs.md#spotmaintenancestrategiestypedef)
 - `ClientToken`: `str`
 - `ExcessCapacityTerminationPolicy`:
-  [ExcessCapacityTerminationPolicy](./literals.md#excesscapacityterminationpolicy)
+  [ExcessCapacityTerminationPolicyType](./literals.md#excesscapacityterminationpolicytype)
 - `FulfilledCapacity`: `float`
 - `OnDemandFulfilledCapacity`: `float`
 - `LaunchSpecifications`:
@@ -11316,12 +11385,12 @@ Optional fields:
 - `OnDemandMaxTotalPrice`: `str`
 - `SpotMaxTotalPrice`: `str`
 - `TerminateInstancesWithExpiration`: `bool`
-- `Type`: [FleetType](./literals.md#fleettype)
+- `Type`: [FleetTypeType](./literals.md#fleettypetype)
 - `ValidFrom`: `datetime`
 - `ValidUntil`: `datetime`
 - `ReplaceUnhealthyInstances`: `bool`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
+  [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 - `LoadBalancersConfig`:
   [LoadBalancersConfigTypeDef](./type_defs.md#loadbalancersconfigtypedef)
 - `InstancePoolsToUseCount`: `int`
@@ -11336,12 +11405,12 @@ from mypy_boto3_ec2.type_defs import SpotFleetRequestConfigTypeDef
 
 Optional fields:
 
-- `ActivityStatus`: [ActivityStatus](./literals.md#activitystatus)
+- `ActivityStatus`: [ActivityStatusType](./literals.md#activitystatustype)
 - `CreateTime`: `datetime`
 - `SpotFleetRequestConfig`:
   [SpotFleetRequestConfigDataTypeDef](./type_defs.md#spotfleetrequestconfigdatatypedef)
 - `SpotFleetRequestId`: `str`
-- `SpotFleetRequestState`: [BatchState](./literals.md#batchstate)
+- `SpotFleetRequestState`: [BatchStateType](./literals.md#batchstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SpotFleetTagSpecificationTypeDef
@@ -11352,7 +11421,7 @@ from mypy_boto3_ec2.type_defs import SpotFleetTagSpecificationTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SpotInstanceRequestTypeDef
@@ -11375,17 +11444,18 @@ Optional fields:
   [LaunchSpecificationTypeDef](./type_defs.md#launchspecificationtypedef)
 - `LaunchedAvailabilityZone`: `str`
 - `ProductDescription`:
-  [RIProductDescription](./literals.md#riproductdescription)
+  [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
 - `SpotInstanceRequestId`: `str`
 - `SpotPrice`: `str`
-- `State`: [SpotInstanceState](./literals.md#spotinstancestate)
-- `Status`: [SpotInstanceStatusTypeDef](./type_defs.md#spotinstancestatustypedef)
+- `State`: [SpotInstanceStateType](./literals.md#spotinstancestatetype)
+- `Status`:
+  [SpotInstanceStatusTypeDef](./type_defs.md#spotinstancestatustypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Type`: [SpotInstanceType](./literals.md#spotinstancetype)
+- `Type`: [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
 - `ValidFrom`: `datetime`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
+  [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
 ## SpotInstanceStateFaultTypeDef
 
@@ -11430,11 +11500,12 @@ from mypy_boto3_ec2.type_defs import SpotMarketOptionsTypeDef
 Optional fields:
 
 - `MaxPrice`: `str`
-- `SpotInstanceType`: [SpotInstanceType](./literals.md#spotinstancetype)
+- `SpotInstanceType`:
+  [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
 - `BlockDurationMinutes`: `int`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
+  [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
 ## SpotOptionsRequestTypeDef
 
@@ -11445,11 +11516,11 @@ from mypy_boto3_ec2.type_defs import SpotOptionsRequestTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [SpotAllocationStrategy](./literals.md#spotallocationstrategy)
+  [SpotAllocationStrategyType](./literals.md#spotallocationstrategytype)
 - `MaintenanceStrategies`:
   [FleetSpotMaintenanceStrategiesRequestTypeDef](./type_defs.md#fleetspotmaintenancestrategiesrequesttypedef)
 - `InstanceInterruptionBehavior`:
-  [SpotInstanceInterruptionBehavior](./literals.md#spotinstanceinterruptionbehavior)
+  [SpotInstanceInterruptionBehaviorType](./literals.md#spotinstanceinterruptionbehaviortype)
 - `InstancePoolsToUseCount`: `int`
 - `SingleInstanceType`: `bool`
 - `SingleAvailabilityZone`: `bool`
@@ -11465,11 +11536,11 @@ from mypy_boto3_ec2.type_defs import SpotOptionsTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [SpotAllocationStrategy](./literals.md#spotallocationstrategy)
+  [SpotAllocationStrategyType](./literals.md#spotallocationstrategytype)
 - `MaintenanceStrategies`:
   [FleetSpotMaintenanceStrategiesTypeDef](./type_defs.md#fleetspotmaintenancestrategiestypedef)
 - `InstanceInterruptionBehavior`:
-  [SpotInstanceInterruptionBehavior](./literals.md#spotinstanceinterruptionbehavior)
+  [SpotInstanceInterruptionBehaviorType](./literals.md#spotinstanceinterruptionbehaviortype)
 - `InstancePoolsToUseCount`: `int`
 - `SingleInstanceType`: `bool`
 - `SingleAvailabilityZone`: `bool`
@@ -11486,7 +11557,7 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `GroupName`: `str`
-- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
 
 ## SpotPriceTypeDef
 
@@ -11497,9 +11568,9 @@ from mypy_boto3_ec2.type_defs import SpotPriceTypeDef
 Optional fields:
 
 - `AvailabilityZone`: `str`
-- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `ProductDescription`:
-  [RIProductDescription](./literals.md#riproductdescription)
+  [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
 - `SpotPrice`: `str`
 - `Timestamp`: `datetime`
 
@@ -11637,7 +11708,7 @@ Optional fields:
 
 - `SubnetId`: `str`
 - `State`:
-  [TransitGatewayMulitcastDomainAssociationState](./literals.md#transitgatewaymulitcastdomainassociationstate)
+  [TransitGatewayMulitcastDomainAssociationStateType](./literals.md#transitgatewaymulitcastdomainassociationstatetype)
 
 ## SubnetCidrBlockStateTypeDef
 
@@ -11647,7 +11718,8 @@ from mypy_boto3_ec2.type_defs import SubnetCidrBlockStateTypeDef
 
 Optional fields:
 
-- `State`: [SubnetCidrBlockStateCode](./literals.md#subnetcidrblockstatecode)
+- `State`:
+  [SubnetCidrBlockStateCodeType](./literals.md#subnetcidrblockstatecodetype)
 - `StatusMessage`: `str`
 
 ## SubnetIpv6CidrBlockAssociationTypeDef
@@ -11679,7 +11751,7 @@ Optional fields:
 - `MapPublicIpOnLaunch`: `bool`
 - `MapCustomerOwnedIpOnLaunch`: `bool`
 - `CustomerOwnedIpv4Pool`: `str`
-- `State`: [SubnetState](./literals.md#subnetstate)
+- `State`: [SubnetStateType](./literals.md#subnetstatetype)
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `OwnerId`: `str`
@@ -11720,7 +11792,7 @@ Optional fields:
 
 - `Key`: `str`
 - `ResourceId`: `str`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Value`: `str`
 
 ## TagSpecificationTypeDef
@@ -11731,7 +11803,7 @@ from mypy_boto3_ec2.type_defs import TagSpecificationTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
@@ -11763,7 +11835,7 @@ Optional fields:
 - `OnDemandTargetCapacity`: `int`
 - `SpotTargetCapacity`: `int`
 - `DefaultTargetCapacityType`:
-  [DefaultTargetCapacityType](./literals.md#defaulttargetcapacitytype)
+  [DefaultTargetCapacityTypeType](./literals.md#defaulttargetcapacitytypetype)
 
 ## TargetCapacitySpecificationTypeDef
 
@@ -11777,7 +11849,7 @@ Optional fields:
 - `OnDemandTargetCapacity`: `int`
 - `SpotTargetCapacity`: `int`
 - `DefaultTargetCapacityType`:
-  [DefaultTargetCapacityType](./literals.md#defaulttargetcapacitytype)
+  [DefaultTargetCapacityTypeType](./literals.md#defaulttargetcapacitytypetype)
 
 ## TargetConfigurationRequestTypeDef
 
@@ -11901,9 +11973,11 @@ Optional fields:
 
 - `TrafficMirrorFilterRuleId`: `str`
 - `TrafficMirrorFilterId`: `str`
-- `TrafficDirection`: [TrafficDirection](./literals.md#trafficdirection)
+- `TrafficDirection`:
+  [TrafficDirectionType](./literals.md#trafficdirectiontype)
 - `RuleNumber`: `int`
-- `RuleAction`: [TrafficMirrorRuleAction](./literals.md#trafficmirrorruleaction)
+- `RuleAction`:
+  [TrafficMirrorRuleActionType](./literals.md#trafficmirrorruleactiontype)
 - `Protocol`: `int`
 - `DestinationPortRange`:
   [TrafficMirrorPortRangeTypeDef](./type_defs.md#trafficmirrorportrangetypedef)
@@ -11927,7 +12001,7 @@ Optional fields:
 - `EgressFilterRules`:
   `List`\[[TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)\]
 - `NetworkServices`: `List`\[`Literal['amazon-dns']` (see
-  [TrafficMirrorNetworkService](./literals.md#trafficmirrornetworkservice))\]
+  [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -11983,7 +12057,8 @@ Optional fields:
 - `TrafficMirrorTargetId`: `str`
 - `NetworkInterfaceId`: `str`
 - `NetworkLoadBalancerArn`: `str`
-- `Type`: [TrafficMirrorTargetType](./literals.md#trafficmirrortargettype)
+- `Type`:
+  [TrafficMirrorTargetTypeType](./literals.md#trafficmirrortargettypetype)
 - `Description`: `str`
 - `OwnerId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -12000,9 +12075,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `State`:
-  [TransitGatewayAssociationState](./literals.md#transitgatewayassociationstate)
+  [TransitGatewayAssociationStateType](./literals.md#transitgatewayassociationstatetype)
 
 ## TransitGatewayAttachmentAssociationTypeDef
 
@@ -12014,7 +12089,7 @@ Optional fields:
 
 - `TransitGatewayRouteTableId`: `str`
 - `State`:
-  [TransitGatewayAssociationState](./literals.md#transitgatewayassociationstate)
+  [TransitGatewayAssociationStateType](./literals.md#transitgatewayassociationstatetype)
 
 ## TransitGatewayAttachmentBgpConfigurationTypeDef
 
@@ -12028,7 +12103,7 @@ Optional fields:
 - `PeerAsn`: `int`
 - `TransitGatewayAddress`: `str`
 - `PeerAddress`: `str`
-- `BgpStatus`: [BgpStatus](./literals.md#bgpstatus)
+- `BgpStatus`: [BgpStatusType](./literals.md#bgpstatustype)
 
 ## TransitGatewayAttachmentPropagationTypeDef
 
@@ -12040,7 +12115,7 @@ Optional fields:
 
 - `TransitGatewayRouteTableId`: `str`
 - `State`:
-  [TransitGatewayPropagationState](./literals.md#transitgatewaypropagationstate)
+  [TransitGatewayPropagationStateType](./literals.md#transitgatewaypropagationstatetype)
 
 ## TransitGatewayAttachmentTypeDef
 
@@ -12055,10 +12130,10 @@ Optional fields:
 - `TransitGatewayOwnerId`: `str`
 - `ResourceOwnerId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `ResourceId`: `str`
 - `State`:
-  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentStateType](./literals.md#transitgatewayattachmentstatetype)
 - `Association`:
   [TransitGatewayAttachmentAssociationTypeDef](./type_defs.md#transitgatewayattachmentassociationtypedef)
 - `CreationTime`: `datetime`
@@ -12072,7 +12147,8 @@ from mypy_boto3_ec2.type_defs import TransitGatewayConnectOptionsTypeDef
 
 Optional fields:
 
-- `Protocol`: `Literal['gre']` (see [ProtocolValue](./literals.md#protocolvalue))
+- `Protocol`: `Literal['gre']` (see
+  [ProtocolValueType](./literals.md#protocolvaluetype))
 
 ## TransitGatewayConnectPeerConfigurationTypeDef
 
@@ -12085,7 +12161,8 @@ Optional fields:
 - `TransitGatewayAddress`: `str`
 - `PeerAddress`: `str`
 - `InsideCidrBlocks`: `List`\[`str`\]
-- `Protocol`: `Literal['gre']` (see [ProtocolValue](./literals.md#protocolvalue))
+- `Protocol`: `Literal['gre']` (see
+  [ProtocolValueType](./literals.md#protocolvaluetype))
 - `BgpConfigurations`:
   `List`\[[TransitGatewayAttachmentBgpConfigurationTypeDef](./type_defs.md#transitgatewayattachmentbgpconfigurationtypedef)\]
 
@@ -12100,7 +12177,7 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `TransitGatewayConnectPeerId`: `str`
 - `State`:
-  [TransitGatewayConnectPeerState](./literals.md#transitgatewayconnectpeerstate)
+  [TransitGatewayConnectPeerStateType](./literals.md#transitgatewayconnectpeerstatetype)
 - `CreationTime`: `datetime`
 - `ConnectPeerConfiguration`:
   [TransitGatewayConnectPeerConfigurationTypeDef](./type_defs.md#transitgatewayconnectpeerconfigurationtypedef)
@@ -12128,7 +12205,7 @@ Optional fields:
 - `TransportTransitGatewayAttachmentId`: `str`
 - `TransitGatewayId`: `str`
 - `State`:
-  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentStateType](./literals.md#transitgatewayattachmentstatetype)
 - `CreationTime`: `datetime`
 - `Options`:
   [TransitGatewayConnectOptionsTypeDef](./type_defs.md#transitgatewayconnectoptionstypedef)
@@ -12169,7 +12246,7 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `ResourceOwnerId`: `str`
 - `Subnet`: [SubnetAssociationTypeDef](./type_defs.md#subnetassociationtypedef)
 
@@ -12185,7 +12262,7 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `ResourceOwnerId`: `str`
 - `Subnets`:
   `List`\[[SubnetAssociationTypeDef](./type_defs.md#subnetassociationtypedef)\]
@@ -12198,11 +12275,12 @@ from mypy_boto3_ec2.type_defs import TransitGatewayMulticastDomainOptionsTypeDef
 
 Optional fields:
 
-- `Igmpv2Support`: [Igmpv2SupportValue](./literals.md#igmpv2supportvalue)
+- `Igmpv2Support`:
+  [Igmpv2SupportValueType](./literals.md#igmpv2supportvaluetype)
 - `StaticSourcesSupport`:
-  [StaticSourcesSupportValue](./literals.md#staticsourcessupportvalue)
+  [StaticSourcesSupportValueType](./literals.md#staticsourcessupportvaluetype)
 - `AutoAcceptSharedAssociations`:
-  [AutoAcceptSharedAssociationsValue](./literals.md#autoacceptsharedassociationsvalue)
+  [AutoAcceptSharedAssociationsValueType](./literals.md#autoacceptsharedassociationsvaluetype)
 
 ## TransitGatewayMulticastDomainTypeDef
 
@@ -12219,7 +12297,7 @@ Optional fields:
 - `Options`:
   [TransitGatewayMulticastDomainOptionsTypeDef](./type_defs.md#transitgatewaymulticastdomainoptionstypedef)
 - `State`:
-  [TransitGatewayMulticastDomainState](./literals.md#transitgatewaymulticastdomainstate)
+  [TransitGatewayMulticastDomainStateType](./literals.md#transitgatewaymulticastdomainstatetype)
 - `CreationTime`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -12236,13 +12314,13 @@ Optional fields:
 - `SubnetId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `ResourceOwnerId`: `str`
 - `NetworkInterfaceId`: `str`
 - `GroupMember`: `bool`
 - `GroupSource`: `bool`
-- `MemberType`: [MembershipType](./literals.md#membershiptype)
-- `SourceType`: [MembershipType](./literals.md#membershiptype)
+- `MemberType`: [MembershipTypeType](./literals.md#membershiptypetype)
+- `SourceType`: [MembershipTypeType](./literals.md#membershiptypetype)
 
 ## TransitGatewayMulticastRegisteredGroupMembersTypeDef
 
@@ -12279,17 +12357,18 @@ Optional fields:
 - `AmazonSideAsn`: `int`
 - `TransitGatewayCidrBlocks`: `List`\[`str`\]
 - `AutoAcceptSharedAttachments`:
-  [AutoAcceptSharedAttachmentsValue](./literals.md#autoacceptsharedattachmentsvalue)
+  [AutoAcceptSharedAttachmentsValueType](./literals.md#autoacceptsharedattachmentsvaluetype)
 - `DefaultRouteTableAssociation`:
-  [DefaultRouteTableAssociationValue](./literals.md#defaultroutetableassociationvalue)
+  [DefaultRouteTableAssociationValueType](./literals.md#defaultroutetableassociationvaluetype)
 - `AssociationDefaultRouteTableId`: `str`
 - `DefaultRouteTablePropagation`:
-  [DefaultRouteTablePropagationValue](./literals.md#defaultroutetablepropagationvalue)
+  [DefaultRouteTablePropagationValueType](./literals.md#defaultroutetablepropagationvaluetype)
 - `PropagationDefaultRouteTableId`: `str`
-- `VpnEcmpSupport`: [VpnEcmpSupportValue](./literals.md#vpnecmpsupportvalue)
-- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
+- `VpnEcmpSupport`:
+  [VpnEcmpSupportValueType](./literals.md#vpnecmpsupportvaluetype)
+- `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
 - `MulticastSupport`:
-  [MulticastSupportValue](./literals.md#multicastsupportvalue)
+  [MulticastSupportValueType](./literals.md#multicastsupportvaluetype)
 
 ## TransitGatewayPeeringAttachmentTypeDef
 
@@ -12307,7 +12386,7 @@ Optional fields:
 - `Status`:
   [PeeringAttachmentStatusTypeDef](./type_defs.md#peeringattachmentstatustypedef)
 - `State`:
-  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentStateType](./literals.md#transitgatewayattachmentstatetype)
 - `CreationTime`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
@@ -12321,7 +12400,7 @@ Optional fields:
 
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `ResourceId`: `str`
 
 ## TransitGatewayPrefixListReferenceTypeDef
@@ -12336,7 +12415,7 @@ Optional fields:
 - `PrefixListId`: `str`
 - `PrefixListOwnerId`: `str`
 - `State`:
-  [TransitGatewayPrefixListReferenceState](./literals.md#transitgatewayprefixlistreferencestate)
+  [TransitGatewayPrefixListReferenceStateType](./literals.md#transitgatewayprefixlistreferencestatetype)
 - `Blackhole`: `bool`
 - `TransitGatewayAttachment`:
   [TransitGatewayPrefixListAttachmentTypeDef](./type_defs.md#transitgatewayprefixlistattachmenttypedef)
@@ -12352,10 +12431,10 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `TransitGatewayRouteTableId`: `str`
 - `State`:
-  [TransitGatewayPropagationState](./literals.md#transitgatewaypropagationstate)
+  [TransitGatewayPropagationStateType](./literals.md#transitgatewaypropagationstatetype)
 
 ## TransitGatewayRequestOptionsTypeDef
 
@@ -12367,15 +12446,16 @@ Optional fields:
 
 - `AmazonSideAsn`: `int`
 - `AutoAcceptSharedAttachments`:
-  [AutoAcceptSharedAttachmentsValue](./literals.md#autoacceptsharedattachmentsvalue)
+  [AutoAcceptSharedAttachmentsValueType](./literals.md#autoacceptsharedattachmentsvaluetype)
 - `DefaultRouteTableAssociation`:
-  [DefaultRouteTableAssociationValue](./literals.md#defaultroutetableassociationvalue)
+  [DefaultRouteTableAssociationValueType](./literals.md#defaultroutetableassociationvaluetype)
 - `DefaultRouteTablePropagation`:
-  [DefaultRouteTablePropagationValue](./literals.md#defaultroutetablepropagationvalue)
-- `VpnEcmpSupport`: [VpnEcmpSupportValue](./literals.md#vpnecmpsupportvalue)
-- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
+  [DefaultRouteTablePropagationValueType](./literals.md#defaultroutetablepropagationvaluetype)
+- `VpnEcmpSupport`:
+  [VpnEcmpSupportValueType](./literals.md#vpnecmpsupportvaluetype)
+- `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
 - `MulticastSupport`:
-  [MulticastSupportValue](./literals.md#multicastsupportvalue)
+  [MulticastSupportValueType](./literals.md#multicastsupportvaluetype)
 - `TransitGatewayCidrBlocks`: `List`\[`str`\]
 
 ## TransitGatewayRouteAttachmentTypeDef
@@ -12389,7 +12469,7 @@ Optional fields:
 - `ResourceId`: `str`
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 
 ## TransitGatewayRouteTableAssociationTypeDef
 
@@ -12402,9 +12482,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `State`:
-  [TransitGatewayAssociationState](./literals.md#transitgatewayassociationstate)
+  [TransitGatewayAssociationStateType](./literals.md#transitgatewayassociationstatetype)
 
 ## TransitGatewayRouteTablePropagationTypeDef
 
@@ -12417,9 +12497,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `State`:
-  [TransitGatewayPropagationState](./literals.md#transitgatewaypropagationstate)
+  [TransitGatewayPropagationStateType](./literals.md#transitgatewaypropagationstatetype)
 
 ## TransitGatewayRouteTableTypeDef
 
@@ -12432,7 +12512,7 @@ Optional fields:
 - `TransitGatewayRouteTableId`: `str`
 - `TransitGatewayId`: `str`
 - `State`:
-  [TransitGatewayRouteTableState](./literals.md#transitgatewayroutetablestate)
+  [TransitGatewayRouteTableStateType](./literals.md#transitgatewayroutetablestatetype)
 - `DefaultAssociationRouteTable`: `bool`
 - `DefaultPropagationRouteTable`: `bool`
 - `CreationTime`: `datetime`
@@ -12450,8 +12530,10 @@ Optional fields:
 - `PrefixListId`: `str`
 - `TransitGatewayAttachments`:
   `List`\[[TransitGatewayRouteAttachmentTypeDef](./type_defs.md#transitgatewayrouteattachmenttypedef)\]
-- `Type`: [TransitGatewayRouteType](./literals.md#transitgatewayroutetype)
-- `State`: [TransitGatewayRouteState](./literals.md#transitgatewayroutestate)
+- `Type`:
+  [TransitGatewayRouteTypeType](./literals.md#transitgatewayroutetypetype)
+- `State`:
+  [TransitGatewayRouteStateType](./literals.md#transitgatewayroutestatetype)
 
 ## TransitGatewayTypeDef
 
@@ -12463,7 +12545,7 @@ Optional fields:
 
 - `TransitGatewayId`: `str`
 - `TransitGatewayArn`: `str`
-- `State`: [TransitGatewayState](./literals.md#transitgatewaystate)
+- `State`: [TransitGatewayStateType](./literals.md#transitgatewaystatetype)
 - `OwnerId`: `str`
 - `Description`: `str`
 - `CreationTime`: `datetime`
@@ -12479,10 +12561,10 @@ from mypy_boto3_ec2.type_defs import TransitGatewayVpcAttachmentOptionsTypeDef
 
 Optional fields:
 
-- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
-- `Ipv6Support`: [Ipv6SupportValue](./literals.md#ipv6supportvalue)
+- `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
+- `Ipv6Support`: [Ipv6SupportValueType](./literals.md#ipv6supportvaluetype)
 - `ApplianceModeSupport`:
-  [ApplianceModeSupportValue](./literals.md#appliancemodesupportvalue)
+  [ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype)
 
 ## TransitGatewayVpcAttachmentTypeDef
 
@@ -12497,7 +12579,7 @@ Optional fields:
 - `VpcId`: `str`
 - `VpcOwnerId`: `str`
 - `State`:
-  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentStateType](./literals.md#transitgatewayattachmentstatetype)
 - `SubnetIds`: `List`\[`str`\]
 - `CreationTime`: `datetime`
 - `Options`:
@@ -12570,7 +12652,7 @@ from mypy_boto3_ec2.type_defs import UnsuccessfulInstanceCreditSpecificationItem
 Optional fields:
 
 - `Code`:
-  [UnsuccessfulInstanceCreditSpecificationErrorCode](./literals.md#unsuccessfulinstancecreditspecificationerrorcode)
+  [UnsuccessfulInstanceCreditSpecificationErrorCodeType](./literals.md#unsuccessfulinstancecreditspecificationerrorcodetype)
 - `Message`: `str`
 
 ## UnsuccessfulInstanceCreditSpecificationItemTypeDef
@@ -12723,7 +12805,7 @@ Optional fields:
 - `AcceptedRouteCount`: `int`
 - `LastStatusChange`: `datetime`
 - `OutsideIpAddress`: `str`
-- `Status`: [TelemetryStatus](./literals.md#telemetrystatus)
+- `Status`: [TelemetryStatusType](./literals.md#telemetrystatustype)
 - `StatusMessage`: `str`
 - `CertificateArn`: `str`
 
@@ -12738,7 +12820,7 @@ Optional fields:
 - `AttachTime`: `datetime`
 - `Device`: `str`
 - `InstanceId`: `str`
-- `State`: [VolumeAttachmentState](./literals.md#volumeattachmentstate)
+- `State`: [VolumeAttachmentStateType](./literals.md#volumeattachmentstatetype)
 - `VolumeId`: `str`
 - `DeleteOnTermination`: `bool`
 
@@ -12762,16 +12844,16 @@ Optional fields:
 
 - `VolumeId`: `str`
 - `ModificationState`:
-  [VolumeModificationState](./literals.md#volumemodificationstate)
+  [VolumeModificationStateType](./literals.md#volumemodificationstatetype)
 - `StatusMessage`: `str`
 - `TargetSize`: `int`
 - `TargetIops`: `int`
-- `TargetVolumeType`: [VolumeType](./literals.md#volumetype)
+- `TargetVolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `TargetThroughput`: `int`
 - `TargetMultiAttachEnabled`: `bool`
 - `OriginalSize`: `int`
 - `OriginalIops`: `int`
-- `OriginalVolumeType`: [VolumeType](./literals.md#volumetype)
+- `OriginalVolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `OriginalThroughput`: `int`
 - `OriginalMultiAttachEnabled`: `bool`
 - `Progress`: `int`
@@ -12810,7 +12892,7 @@ from mypy_boto3_ec2.type_defs import VolumeStatusDetailsTypeDef
 
 Optional fields:
 
-- `Name`: [VolumeStatusName](./literals.md#volumestatusname)
+- `Name`: [VolumeStatusNameType](./literals.md#volumestatusnametype)
 - `Status`: `str`
 
 ## VolumeStatusEventTypeDef
@@ -12838,7 +12920,8 @@ Optional fields:
 
 - `Details`:
   `List`\[[VolumeStatusDetailsTypeDef](./type_defs.md#volumestatusdetailstypedef)\]
-- `Status`: [VolumeStatusInfoStatus](./literals.md#volumestatusinfostatus)
+- `Status`:
+  [VolumeStatusInfoStatusType](./literals.md#volumestatusinfostatustype)
 
 ## VolumeStatusItemTypeDef
 
@@ -12877,11 +12960,11 @@ Optional fields:
 - `OutpostArn`: `str`
 - `Size`: `int`
 - `SnapshotId`: `str`
-- `State`: [VolumeState](./literals.md#volumestate)
+- `State`: [VolumeStateType](./literals.md#volumestatetype)
 - `VolumeId`: `str`
 - `Iops`: `int`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VolumeType`: [VolumeType](./literals.md#volumetype)
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `FastRestored`: `bool`
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
@@ -12894,7 +12977,7 @@ from mypy_boto3_ec2.type_defs import VpcAttachmentTypeDef
 
 Optional fields:
 
-- `State`: [AttachmentStatus](./literals.md#attachmentstatus)
+- `State`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 - `VpcId`: `str`
 
 ## VpcCidrBlockAssociationTypeDef
@@ -12918,7 +13001,7 @@ from mypy_boto3_ec2.type_defs import VpcCidrBlockStateTypeDef
 
 Optional fields:
 
-- `State`: [VpcCidrBlockStateCode](./literals.md#vpccidrblockstatecode)
+- `State`: [VpcCidrBlockStateCodeType](./literals.md#vpccidrblockstatecodetype)
 - `StatusMessage`: `str`
 
 ## VpcClassicLinkTypeDef
@@ -12944,7 +13027,7 @@ Optional fields:
 - `ServiceId`: `str`
 - `VpcEndpointId`: `str`
 - `VpcEndpointOwner`: `str`
-- `VpcEndpointState`: [State](./literals.md#state)
+- `VpcEndpointState`: [StateType](./literals.md#statetype)
 - `CreationTimestamp`: `datetime`
 - `DnsEntries`: `List`\[[DnsEntryTypeDef](./type_defs.md#dnsentrytypedef)\]
 - `NetworkLoadBalancerArns`: `List`\[`str`\]
@@ -12959,10 +13042,10 @@ from mypy_boto3_ec2.type_defs import VpcEndpointTypeDef
 Optional fields:
 
 - `VpcEndpointId`: `str`
-- `VpcEndpointType`: [VpcEndpointType](./literals.md#vpcendpointtype)
+- `VpcEndpointType`: [VpcEndpointTypeType](./literals.md#vpcendpointtypetype)
 - `VpcId`: `str`
 - `ServiceName`: `str`
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `PolicyDocument`: `str`
 - `RouteTableIds`: `List`\[`str`\]
 - `SubnetIds`: `List`\[`str`\]
@@ -13013,7 +13096,7 @@ from mypy_boto3_ec2.type_defs import VpcPeeringConnectionStateReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [VpcPeeringConnectionStateReasonCode](./literals.md#vpcpeeringconnectionstatereasoncode)
+  [VpcPeeringConnectionStateReasonCodeType](./literals.md#vpcpeeringconnectionstatereasoncodetype)
 - `Message`: `str`
 
 ## VpcPeeringConnectionTypeDef
@@ -13062,10 +13145,10 @@ Optional fields:
 
 - `CidrBlock`: `str`
 - `DhcpOptionsId`: `str`
-- `State`: [VpcState](./literals.md#vpcstate)
+- `State`: [VpcStateType](./literals.md#vpcstatetype)
 - `VpcId`: `str`
 - `OwnerId`: `str`
-- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
+- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockAssociationSet`:
   `List`\[[VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)\]
 - `CidrBlockAssociationSet`:
@@ -13084,7 +13167,7 @@ Optional fields:
 - `EnableAcceleration`: `bool`
 - `StaticRoutesOnly`: `bool`
 - `TunnelInsideIpVersion`:
-  [TunnelInsideIpVersion](./literals.md#tunnelinsideipversion)
+  [TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype)
 - `TunnelOptions`:
   `List`\[[VpnTunnelOptionsSpecificationTypeDef](./type_defs.md#vpntunneloptionsspecificationtypedef)\]
 - `LocalIpv4NetworkCidr`: `str`
@@ -13107,7 +13190,7 @@ Optional fields:
 - `LocalIpv6NetworkCidr`: `str`
 - `RemoteIpv6NetworkCidr`: `str`
 - `TunnelInsideIpVersion`:
-  [TunnelInsideIpVersion](./literals.md#tunnelinsideipversion)
+  [TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype)
 - `TunnelOptions`:
   `List`\[[TunnelOptionTypeDef](./type_defs.md#tunneloptiontypedef)\]
 
@@ -13122,8 +13205,9 @@ Optional fields:
 - `CustomerGatewayConfiguration`: `str`
 - `CustomerGatewayId`: `str`
 - `Category`: `str`
-- `State`: [VpnState](./literals.md#vpnstate)
-- `Type`: `Literal['ipsec.1']` (see [GatewayType](./literals.md#gatewaytype))
+- `State`: [VpnStateType](./literals.md#vpnstatetype)
+- `Type`: `Literal['ipsec.1']` (see
+  [GatewayTypeType](./literals.md#gatewaytypetype))
 - `VpnConnectionId`: `str`
 - `VpnGatewayId`: `str`
 - `TransitGatewayId`: `str`
@@ -13144,8 +13228,9 @@ from mypy_boto3_ec2.type_defs import VpnGatewayTypeDef
 Optional fields:
 
 - `AvailabilityZone`: `str`
-- `State`: [VpnState](./literals.md#vpnstate)
-- `Type`: `Literal['ipsec.1']` (see [GatewayType](./literals.md#gatewaytype))
+- `State`: [VpnStateType](./literals.md#vpnstatetype)
+- `Type`: `Literal['ipsec.1']` (see
+  [GatewayTypeType](./literals.md#gatewaytypetype))
 - `VpcAttachments`:
   `List`\[[VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)\]
 - `VpnGatewayId`: `str`
@@ -13162,8 +13247,8 @@ Optional fields:
 
 - `DestinationCidrBlock`: `str`
 - `Source`: `Literal['Static']` (see
-  [VpnStaticRouteSource](./literals.md#vpnstaticroutesource))
-- `State`: [VpnState](./literals.md#vpnstate)
+  [VpnStaticRouteSourceType](./literals.md#vpnstaticroutesourcetype))
+- `State`: [VpnStateType](./literals.md#vpnstatetype)
 
 ## VpnTunnelOptionsSpecificationTypeDef
 

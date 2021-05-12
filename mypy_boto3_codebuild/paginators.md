@@ -3,7 +3,7 @@
 > [Index](..) > [CodeBuild](.) > Paginators
 
 Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
 [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
@@ -36,14 +36,14 @@ def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.DescribeCodeCoverages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
+[CodeBuild.Paginator.DescribeCodeCoverages](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
 
 Arguments for `DescribeCodeCoveragesPaginator.paginate` method:
 
 - `reportArn`: `str` *(required)*
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `sortBy`:
-  [ReportCodeCoverageSortByType](./literals.md#reportcodecoveragesortbytype)
+  [ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype)
 - `minLineCoveragePercentage`: `float`
 - `maxLineCoveragePercentage`: `float`
 - `PaginationConfig`:
@@ -67,7 +67,7 @@ def get_describe_test_cases_paginator() -> DescribeTestCasesPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.DescribeTestCases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
+[CodeBuild.Paginator.DescribeTestCases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
 
 Arguments for `DescribeTestCasesPaginator.paginate` method:
 
@@ -94,12 +94,12 @@ def get_list_build_batches_paginator() -> ListBuildBatchesPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListBuildBatches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
+[CodeBuild.Paginator.ListBuildBatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
 
 Arguments for `ListBuildBatchesPaginator.paginate` method:
 
 - `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -121,13 +121,13 @@ def get_list_build_batches_for_project_paginator() -> ListBuildBatchesForProject
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListBuildBatchesForProject](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
+[CodeBuild.Paginator.ListBuildBatchesForProject](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
 
 Arguments for `ListBuildBatchesForProjectPaginator.paginate` method:
 
 - `projectName`: `str`
 - `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -148,11 +148,11 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
+[CodeBuild.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
 
 Arguments for `ListBuildsPaginator.paginate` method:
 
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -174,12 +174,12 @@ def get_list_builds_for_project_paginator() -> ListBuildsForProjectPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListBuildsForProject](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
+[CodeBuild.Paginator.ListBuildsForProject](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
 
 Arguments for `ListBuildsForProjectPaginator.paginate` method:
 
 - `projectName`: `str` *(required)*
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -201,12 +201,12 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
+[CodeBuild.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
 
 Arguments for `ListProjectsPaginator.paginate` method:
 
-- `sortBy`: [ProjectSortByType](./literals.md#projectsortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortBy`: [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -228,12 +228,13 @@ def get_list_report_groups_paginator() -> ListReportGroupsPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListReportGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
+[CodeBuild.Paginator.ListReportGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
 
 Arguments for `ListReportGroupsPaginator.paginate` method:
 
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `sortBy`: [ReportGroupSortByType](./literals.md#reportgroupsortbytype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `sortBy`:
+  [ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -254,11 +255,11 @@ def get_list_reports_paginator() -> ListReportsPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
+[CodeBuild.Paginator.ListReports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
 
 Arguments for `ListReportsPaginator.paginate` method:
 
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -281,12 +282,12 @@ def get_list_reports_for_report_group_paginator() -> ListReportsForReportGroupPa
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListReportsForReportGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
+[CodeBuild.Paginator.ListReportsForReportGroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
 
 Arguments for `ListReportsForReportGroupPaginator.paginate` method:
 
 - `reportGroupArn`: `str` *(required)*
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -309,12 +310,13 @@ def get_list_shared_projects_paginator() -> ListSharedProjectsPaginator:
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListSharedProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
+[CodeBuild.Paginator.ListSharedProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
 
 Arguments for `ListSharedProjectsPaginator.paginate` method:
 
-- `sortBy`: [SharedResourceSortByType](./literals.md#sharedresourcesortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortBy`:
+  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -336,12 +338,13 @@ def get_list_shared_report_groups_paginator() -> ListSharedReportGroupsPaginator
 ```
 
 Boto3 documentation:
-[CodeBuild.Paginator.ListSharedReportGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
+[CodeBuild.Paginator.ListSharedReportGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
 
 Arguments for `ListSharedReportGroupsPaginator.paginate` method:
 
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `sortBy`: [SharedResourceSortByType](./literals.md#sharedresourcesortbytype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `sortBy`:
+  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -3,7 +3,7 @@
 > [Index](..) > Support
 
 Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support)
 type annotations stubs module
 [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
@@ -29,40 +29,40 @@ Can be used directly:
 from mypy_boto3_support.client import SupportClient
 ```
 
-SupportClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_attachments_to_set](./client.md#add-attachments-to-set)
-- [add_communication_to_case](./client.md#add-communication-to-case)
-- [can_paginate](./client.md#can-paginate)
-- [create_case](./client.md#create-case)
-- [describe_attachment](./client.md#describe-attachment)
-- [describe_cases](./client.md#describe-cases)
-- [describe_communications](./client.md#describe-communications)
-- [describe_services](./client.md#describe-services)
-- [describe_severity_levels](./client.md#describe-severity-levels)
-- [describe_trusted_advisor_check_refresh_statuses](./client.md#describe-trusted-advisor-check-refresh-statuses)
-- [describe_trusted_advisor_check_result](./client.md#describe-trusted-advisor-check-result)
-- [describe_trusted_advisor_check_summaries](./client.md#describe-trusted-advisor-check-summaries)
-- [describe_trusted_advisor_checks](./client.md#describe-trusted-advisor-checks)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [refresh_trusted_advisor_check](./client.md#refresh-trusted-advisor-check)
-- [resolve_case](./client.md#resolve-case)
+- [add_attachments_to_set](./client.md#add_attachments_to_set)
+- [add_communication_to_case](./client.md#add_communication_to_case)
+- [can_paginate](./client.md#can_paginate)
+- [create_case](./client.md#create_case)
+- [describe_attachment](./client.md#describe_attachment)
+- [describe_cases](./client.md#describe_cases)
+- [describe_communications](./client.md#describe_communications)
+- [describe_services](./client.md#describe_services)
+- [describe_severity_levels](./client.md#describe_severity_levels)
+- [describe_trusted_advisor_check_refresh_statuses](./client.md#describe_trusted_advisor_check_refresh_statuses)
+- [describe_trusted_advisor_check_result](./client.md#describe_trusted_advisor_check_result)
+- [describe_trusted_advisor_check_summaries](./client.md#describe_trusted_advisor_check_summaries)
+- [describe_trusted_advisor_checks](./client.md#describe_trusted_advisor_checks)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [refresh_trusted_advisor_check](./client.md#refresh_trusted_advisor_check)
+- [resolve_case](./client.md#resolve_case)
 
 ### Exceptions
 
-- [AttachmentIdNotFound](./client.md#attachmentidnotfound)
-- [AttachmentLimitExceeded](./client.md#attachmentlimitexceeded)
-- [AttachmentSetExpired](./client.md#attachmentsetexpired)
-- [AttachmentSetIdNotFound](./client.md#attachmentsetidnotfound)
-- [AttachmentSetSizeLimitExceeded](./client.md#attachmentsetsizelimitexceeded)
-- [CaseCreationLimitExceeded](./client.md#casecreationlimitexceeded)
-- [CaseIdNotFound](./client.md#caseidnotfound)
-- [ClientError](./client.md#clienterror)
-- [DescribeAttachmentLimitExceeded](./client.md#describeattachmentlimitexceeded)
-- [InternalServerError](./client.md#internalservererror)
+SupportClient [exceptions](./client.md#exceptions)
+
+- AttachmentIdNotFound
+- AttachmentLimitExceeded
+- AttachmentSetExpired
+- AttachmentSetIdNotFound
+- AttachmentSetSizeLimitExceeded
+- CaseCreationLimitExceeded
+- CaseIdNotFound
+- ClientError
+- DescribeAttachmentLimitExceeded
+- InternalServerError
 
 ## Paginators
 

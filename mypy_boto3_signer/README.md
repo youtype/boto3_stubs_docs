@@ -3,7 +3,7 @@
 > [Index](..) > Signer
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/signer.html#Signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
@@ -30,45 +30,45 @@ Can be used directly:
 from mypy_boto3_signer.client import SignerClient
 ```
 
-SignerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_profile_permission](./client.md#add-profile-permission)
-- [can_paginate](./client.md#can-paginate)
-- [cancel_signing_profile](./client.md#cancel-signing-profile)
-- [describe_signing_job](./client.md#describe-signing-job)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_signing_platform](./client.md#get-signing-platform)
-- [get_signing_profile](./client.md#get-signing-profile)
-- [get_waiter](./client.md#get-waiter)
-- [list_profile_permissions](./client.md#list-profile-permissions)
-- [list_signing_jobs](./client.md#list-signing-jobs)
-- [list_signing_platforms](./client.md#list-signing-platforms)
-- [list_signing_profiles](./client.md#list-signing-profiles)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_signing_profile](./client.md#put-signing-profile)
-- [remove_profile_permission](./client.md#remove-profile-permission)
-- [revoke_signature](./client.md#revoke-signature)
-- [revoke_signing_profile](./client.md#revoke-signing-profile)
-- [start_signing_job](./client.md#start-signing-job)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [add_profile_permission](./client.md#add_profile_permission)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_signing_profile](./client.md#cancel_signing_profile)
+- [describe_signing_job](./client.md#describe_signing_job)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_signing_platform](./client.md#get_signing_platform)
+- [get_signing_profile](./client.md#get_signing_profile)
+- [get_waiter](./client.md#get_waiter)
+- [list_profile_permissions](./client.md#list_profile_permissions)
+- [list_signing_jobs](./client.md#list_signing_jobs)
+- [list_signing_platforms](./client.md#list_signing_platforms)
+- [list_signing_profiles](./client.md#list_signing_profiles)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_signing_profile](./client.md#put_signing_profile)
+- [remove_profile_permission](./client.md#remove_profile_permission)
+- [revoke_signature](./client.md#revoke_signature)
+- [revoke_signing_profile](./client.md#revoke_signing_profile)
+- [start_signing_job](./client.md#start_signing_job)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceLimitExceededException](./client.md#servicelimitexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [ValidationException](./client.md#validationexception)
+SignerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BadRequestException
+- ClientError
+- ConflictException
+- InternalServiceErrorException
+- NotFoundException
+- ResourceNotFoundException
+- ServiceLimitExceededException
+- ThrottlingException
+- TooManyRequestsException
+- ValidationException
 
 ## Paginators
 
@@ -105,20 +105,20 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.literals import Category, ...
+from mypy_boto3_signer.literals import CategoryType, ...
 ```
 
-- [Category](./literals.md#category)
-- [EncryptionAlgorithm](./literals.md#encryptionalgorithm)
-- [HashAlgorithm](./literals.md#hashalgorithm)
-- [ImageFormat](./literals.md#imageformat)
+- [CategoryType](./literals.md#categorytype)
+- [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
+- [HashAlgorithmType](./literals.md#hashalgorithmtype)
+- [ImageFormatType](./literals.md#imageformattype)
 - [ListSigningJobsPaginatorName](./literals.md#listsigningjobspaginatorname)
 - [ListSigningPlatformsPaginatorName](./literals.md#listsigningplatformspaginatorname)
 - [ListSigningProfilesPaginatorName](./literals.md#listsigningprofilespaginatorname)
-- [SigningProfileStatus](./literals.md#signingprofilestatus)
-- [SigningStatus](./literals.md#signingstatus)
+- [SigningProfileStatusType](./literals.md#signingprofilestatustype)
+- [SigningStatusType](./literals.md#signingstatustype)
 - [SuccessfulSigningJobWaiterName](./literals.md#successfulsigningjobwaitername)
-- [ValidityType](./literals.md#validitytype)
+- [ValidityTypeType](./literals.md#validitytypetype)
 
 ## Typed dictionaries
 

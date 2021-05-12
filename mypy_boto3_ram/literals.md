@@ -3,7 +3,7 @@
 > [Index](..) > [RAM](.) > Literals
 
 Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM)
 type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
@@ -14,13 +14,13 @@ type annotations stubs module
   - [GetResourceSharesPaginatorName](#getresourcesharespaginatorname)
   - [ListPrincipalsPaginatorName](#listprincipalspaginatorname)
   - [ListResourcesPaginatorName](#listresourcespaginatorname)
-  - [ResourceOwner](#resourceowner)
-  - [ResourceShareAssociationStatus](#resourceshareassociationstatus)
-  - [ResourceShareAssociationType](#resourceshareassociationtype)
-  - [ResourceShareFeatureSet](#resourcesharefeatureset)
-  - [ResourceShareInvitationStatus](#resourceshareinvitationstatus)
-  - [ResourceShareStatus](#resourcesharestatus)
-  - [ResourceStatus](#resourcestatus)
+  - [ResourceOwnerType](#resourceownertype)
+  - [ResourceShareAssociationStatusType](#resourceshareassociationstatustype)
+  - [ResourceShareAssociationTypeType](#resourceshareassociationtypetype)
+  - [ResourceShareFeatureSetType](#resourcesharefeaturesettype)
+  - [ResourceShareInvitationStatusType](#resourceshareinvitationstatustype)
+  - [ResourceShareStatusType](#resourcesharestatustype)
+  - [ResourceStatusType](#resourcestatustype)
 
 ## GetResourcePoliciesPaginatorName
 
@@ -82,10 +82,10 @@ Values:
 
 - `list_resources`
 
-## ResourceOwner
+## ResourceOwnerType
 
 ```python
-from mypy_boto3_ram.literals import ResourceOwner
+from mypy_boto3_ram.literals import ResourceOwnerType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `OTHER-ACCOUNTS`
 - `SELF`
 
-## ResourceShareAssociationStatus
+## ResourceShareAssociationStatusType
 
 ```python
-from mypy_boto3_ram.literals import ResourceShareAssociationStatus
+from mypy_boto3_ram.literals import ResourceShareAssociationStatusType
 ```
 
 Values:
@@ -107,10 +107,10 @@ Values:
 - `DISASSOCIATING`
 - `FAILED`
 
-## ResourceShareAssociationType
+## ResourceShareAssociationTypeType
 
 ```python
-from mypy_boto3_ram.literals import ResourceShareAssociationType
+from mypy_boto3_ram.literals import ResourceShareAssociationTypeType
 ```
 
 Values:
@@ -118,10 +118,10 @@ Values:
 - `PRINCIPAL`
 - `RESOURCE`
 
-## ResourceShareFeatureSet
+## ResourceShareFeatureSetType
 
 ```python
-from mypy_boto3_ram.literals import ResourceShareFeatureSet
+from mypy_boto3_ram.literals import ResourceShareFeatureSetType
 ```
 
 Values:
@@ -130,10 +130,10 @@ Values:
 - `PROMOTING_TO_STANDARD`
 - `STANDARD`
 
-## ResourceShareInvitationStatus
+## ResourceShareInvitationStatusType
 
 ```python
-from mypy_boto3_ram.literals import ResourceShareInvitationStatus
+from mypy_boto3_ram.literals import ResourceShareInvitationStatusType
 ```
 
 Values:
@@ -143,10 +143,10 @@ Values:
 - `PENDING`
 - `REJECTED`
 
-## ResourceShareStatus
+## ResourceShareStatusType
 
 ```python
-from mypy_boto3_ram.literals import ResourceShareStatus
+from mypy_boto3_ram.literals import ResourceShareStatusType
 ```
 
 Values:
@@ -157,10 +157,10 @@ Values:
 - `FAILED`
 - `PENDING`
 
-## ResourceStatus
+## ResourceStatusType
 
 ```python
-from mypy_boto3_ram.literals import ResourceStatus
+from mypy_boto3_ram.literals import ResourceStatusType
 ```
 
 Values:

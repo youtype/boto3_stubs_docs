@@ -3,53 +3,53 @@
 > [Index](..) > [IoT](.) > Literals
 
 Auto-generated documentation for
-[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot.html#IoT)
 type annotations stubs module
 [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
 - [Literals for boto3 IoT module](#literals-for-boto3-iot-module)
-  - [AbortAction](#abortaction)
-  - [ActionType](#actiontype)
-  - [AlertTargetType](#alerttargettype)
-  - [AuditCheckRunStatus](#auditcheckrunstatus)
-  - [AuditFindingSeverity](#auditfindingseverity)
-  - [AuditFrequency](#auditfrequency)
-  - [AuditMitigationActionsExecutionStatus](#auditmitigationactionsexecutionstatus)
-  - [AuditMitigationActionsTaskStatus](#auditmitigationactionstaskstatus)
-  - [AuditNotificationType](#auditnotificationtype)
-  - [AuditTaskStatus](#audittaskstatus)
-  - [AuditTaskType](#audittasktype)
-  - [AuthDecision](#authdecision)
-  - [AuthorizerStatus](#authorizerstatus)
-  - [AutoRegistrationStatus](#autoregistrationstatus)
-  - [AwsJobAbortCriteriaAbortAction](#awsjobabortcriteriaabortaction)
-  - [AwsJobAbortCriteriaFailureType](#awsjobabortcriteriafailuretype)
-  - [BehaviorCriteriaType](#behaviorcriteriatype)
-  - [CACertificateStatus](#cacertificatestatus)
-  - [CACertificateUpdateAction](#cacertificateupdateaction)
-  - [CannedAccessControlList](#cannedaccesscontrollist)
-  - [CertificateMode](#certificatemode)
-  - [CertificateStatus](#certificatestatus)
-  - [ComparisonOperator](#comparisonoperator)
-  - [ConfidenceLevel](#confidencelevel)
-  - [CustomMetricType](#custommetrictype)
-  - [DayOfWeek](#dayofweek)
-  - [DetectMitigationActionExecutionStatus](#detectmitigationactionexecutionstatus)
-  - [DetectMitigationActionsTaskStatus](#detectmitigationactionstaskstatus)
-  - [DeviceCertificateUpdateAction](#devicecertificateupdateaction)
-  - [DimensionType](#dimensiontype)
-  - [DimensionValueOperator](#dimensionvalueoperator)
-  - [DomainConfigurationStatus](#domainconfigurationstatus)
-  - [DomainType](#domaintype)
-  - [DynamicGroupStatus](#dynamicgroupstatus)
-  - [DynamoKeyType](#dynamokeytype)
-  - [EventType](#eventtype)
-  - [FieldType](#fieldtype)
+  - [AbortActionType](#abortactiontype)
+  - [ActionTypeType](#actiontypetype)
+  - [AlertTargetTypeType](#alerttargettypetype)
+  - [AuditCheckRunStatusType](#auditcheckrunstatustype)
+  - [AuditFindingSeverityType](#auditfindingseveritytype)
+  - [AuditFrequencyType](#auditfrequencytype)
+  - [AuditMitigationActionsExecutionStatusType](#auditmitigationactionsexecutionstatustype)
+  - [AuditMitigationActionsTaskStatusType](#auditmitigationactionstaskstatustype)
+  - [AuditNotificationTypeType](#auditnotificationtypetype)
+  - [AuditTaskStatusType](#audittaskstatustype)
+  - [AuditTaskTypeType](#audittasktypetype)
+  - [AuthDecisionType](#authdecisiontype)
+  - [AuthorizerStatusType](#authorizerstatustype)
+  - [AutoRegistrationStatusType](#autoregistrationstatustype)
+  - [AwsJobAbortCriteriaAbortActionType](#awsjobabortcriteriaabortactiontype)
+  - [AwsJobAbortCriteriaFailureTypeType](#awsjobabortcriteriafailuretypetype)
+  - [BehaviorCriteriaTypeType](#behaviorcriteriatypetype)
+  - [CACertificateStatusType](#cacertificatestatustype)
+  - [CACertificateUpdateActionType](#cacertificateupdateactiontype)
+  - [CannedAccessControlListType](#cannedaccesscontrollisttype)
+  - [CertificateModeType](#certificatemodetype)
+  - [CertificateStatusType](#certificatestatustype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [ConfidenceLevelType](#confidenceleveltype)
+  - [CustomMetricTypeType](#custommetrictypetype)
+  - [DayOfWeekType](#dayofweektype)
+  - [DetectMitigationActionExecutionStatusType](#detectmitigationactionexecutionstatustype)
+  - [DetectMitigationActionsTaskStatusType](#detectmitigationactionstaskstatustype)
+  - [DeviceCertificateUpdateActionType](#devicecertificateupdateactiontype)
+  - [DimensionTypeType](#dimensiontypetype)
+  - [DimensionValueOperatorType](#dimensionvalueoperatortype)
+  - [DomainConfigurationStatusType](#domainconfigurationstatustype)
+  - [DomainTypeType](#domaintypetype)
+  - [DynamicGroupStatusType](#dynamicgroupstatustype)
+  - [DynamoKeyTypeType](#dynamokeytypetype)
+  - [EventTypeType](#eventtypetype)
+  - [FieldTypeType](#fieldtypetype)
   - [GetBehaviorModelTrainingSummariesPaginatorName](#getbehaviormodeltrainingsummariespaginatorname)
-  - [IndexStatus](#indexstatus)
-  - [JobExecutionFailureType](#jobexecutionfailuretype)
-  - [JobExecutionStatus](#jobexecutionstatus)
-  - [JobStatus](#jobstatus)
+  - [IndexStatusType](#indexstatustype)
+  - [JobExecutionFailureTypeType](#jobexecutionfailuretypetype)
+  - [JobExecutionStatusType](#jobexecutionstatustype)
+  - [JobStatusType](#jobstatustype)
   - [ListActiveViolationsPaginatorName](#listactiveviolationspaginatorname)
   - [ListAttachedPoliciesPaginatorName](#listattachedpoliciespaginatorname)
   - [ListAuditFindingsPaginatorName](#listauditfindingspaginatorname)
@@ -101,40 +101,40 @@ type annotations stubs module
   - [ListTopicRulesPaginatorName](#listtopicrulespaginatorname)
   - [ListV2LoggingLevelsPaginatorName](#listv2logginglevelspaginatorname)
   - [ListViolationEventsPaginatorName](#listviolationeventspaginatorname)
-  - [LogLevel](#loglevel)
-  - [LogTargetType](#logtargettype)
-  - [MessageFormat](#messageformat)
-  - [MitigationActionType](#mitigationactiontype)
-  - [ModelStatus](#modelstatus)
-  - [OTAUpdateStatus](#otaupdatestatus)
-  - [PolicyTemplateName](#policytemplatename)
+  - [LogLevelType](#logleveltype)
+  - [LogTargetTypeType](#logtargettypetype)
+  - [MessageFormatType](#messageformattype)
+  - [MitigationActionTypeType](#mitigationactiontypetype)
+  - [ModelStatusType](#modelstatustype)
+  - [OTAUpdateStatusType](#otaupdatestatustype)
+  - [PolicyTemplateNameType](#policytemplatenametype)
   - [ProtocolType](#protocoltype)
-  - [ReportType](#reporttype)
-  - [ResourceType](#resourcetype)
-  - [ServerCertificateStatus](#servercertificatestatus)
-  - [ServiceType](#servicetype)
-  - [Status](#status)
-  - [TargetSelection](#targetselection)
-  - [ThingConnectivityIndexingMode](#thingconnectivityindexingmode)
-  - [ThingGroupIndexingMode](#thinggroupindexingmode)
-  - [ThingIndexingMode](#thingindexingmode)
-  - [TopicRuleDestinationStatus](#topicruledestinationstatus)
-  - [ViolationEventType](#violationeventtype)
+  - [ReportTypeType](#reporttypetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [ServerCertificateStatusType](#servercertificatestatustype)
+  - [ServiceTypeType](#servicetypetype)
+  - [StatusType](#statustype)
+  - [TargetSelectionType](#targetselectiontype)
+  - [ThingConnectivityIndexingModeType](#thingconnectivityindexingmodetype)
+  - [ThingGroupIndexingModeType](#thinggroupindexingmodetype)
+  - [ThingIndexingModeType](#thingindexingmodetype)
+  - [TopicRuleDestinationStatusType](#topicruledestinationstatustype)
+  - [ViolationEventTypeType](#violationeventtypetype)
 
-## AbortAction
+## AbortActionType
 
 ```python
-from mypy_boto3_iot.literals import AbortAction
+from mypy_boto3_iot.literals import AbortActionType
 ```
 
 Values:
 
 - `CANCEL`
 
-## ActionType
+## ActionTypeType
 
 ```python
-from mypy_boto3_iot.literals import ActionType
+from mypy_boto3_iot.literals import ActionTypeType
 ```
 
 Values:
@@ -144,20 +144,20 @@ Values:
 - `RECEIVE`
 - `SUBSCRIBE`
 
-## AlertTargetType
+## AlertTargetTypeType
 
 ```python
-from mypy_boto3_iot.literals import AlertTargetType
+from mypy_boto3_iot.literals import AlertTargetTypeType
 ```
 
 Values:
 
 - `SNS`
 
-## AuditCheckRunStatus
+## AuditCheckRunStatusType
 
 ```python
-from mypy_boto3_iot.literals import AuditCheckRunStatus
+from mypy_boto3_iot.literals import AuditCheckRunStatusType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 - `IN_PROGRESS`
 - `WAITING_FOR_DATA_COLLECTION`
 
-## AuditFindingSeverity
+## AuditFindingSeverityType
 
 ```python
-from mypy_boto3_iot.literals import AuditFindingSeverity
+from mypy_boto3_iot.literals import AuditFindingSeverityType
 ```
 
 Values:
@@ -182,10 +182,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## AuditFrequency
+## AuditFrequencyType
 
 ```python
-from mypy_boto3_iot.literals import AuditFrequency
+from mypy_boto3_iot.literals import AuditFrequencyType
 ```
 
 Values:
@@ -195,10 +195,10 @@ Values:
 - `MONTHLY`
 - `WEEKLY`
 
-## AuditMitigationActionsExecutionStatus
+## AuditMitigationActionsExecutionStatusType
 
 ```python
-from mypy_boto3_iot.literals import AuditMitigationActionsExecutionStatus
+from mypy_boto3_iot.literals import AuditMitigationActionsExecutionStatusType
 ```
 
 Values:
@@ -210,10 +210,10 @@ Values:
 - `PENDING`
 - `SKIPPED`
 
-## AuditMitigationActionsTaskStatus
+## AuditMitigationActionsTaskStatusType
 
 ```python
-from mypy_boto3_iot.literals import AuditMitigationActionsTaskStatus
+from mypy_boto3_iot.literals import AuditMitigationActionsTaskStatusType
 ```
 
 Values:
@@ -223,20 +223,20 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## AuditNotificationType
+## AuditNotificationTypeType
 
 ```python
-from mypy_boto3_iot.literals import AuditNotificationType
+from mypy_boto3_iot.literals import AuditNotificationTypeType
 ```
 
 Values:
 
 - `SNS`
 
-## AuditTaskStatus
+## AuditTaskStatusType
 
 ```python
-from mypy_boto3_iot.literals import AuditTaskStatus
+from mypy_boto3_iot.literals import AuditTaskStatusType
 ```
 
 Values:
@@ -246,10 +246,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## AuditTaskType
+## AuditTaskTypeType
 
 ```python
-from mypy_boto3_iot.literals import AuditTaskType
+from mypy_boto3_iot.literals import AuditTaskTypeType
 ```
 
 Values:
@@ -257,10 +257,10 @@ Values:
 - `ON_DEMAND_AUDIT_TASK`
 - `SCHEDULED_AUDIT_TASK`
 
-## AuthDecision
+## AuthDecisionType
 
 ```python
-from mypy_boto3_iot.literals import AuthDecision
+from mypy_boto3_iot.literals import AuthDecisionType
 ```
 
 Values:
@@ -269,10 +269,10 @@ Values:
 - `EXPLICIT_DENY`
 - `IMPLICIT_DENY`
 
-## AuthorizerStatus
+## AuthorizerStatusType
 
 ```python
-from mypy_boto3_iot.literals import AuthorizerStatus
+from mypy_boto3_iot.literals import AuthorizerStatusType
 ```
 
 Values:
@@ -280,10 +280,10 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## AutoRegistrationStatus
+## AutoRegistrationStatusType
 
 ```python
-from mypy_boto3_iot.literals import AutoRegistrationStatus
+from mypy_boto3_iot.literals import AutoRegistrationStatusType
 ```
 
 Values:
@@ -291,20 +291,20 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
-## AwsJobAbortCriteriaAbortAction
+## AwsJobAbortCriteriaAbortActionType
 
 ```python
-from mypy_boto3_iot.literals import AwsJobAbortCriteriaAbortAction
+from mypy_boto3_iot.literals import AwsJobAbortCriteriaAbortActionType
 ```
 
 Values:
 
 - `CANCEL`
 
-## AwsJobAbortCriteriaFailureType
+## AwsJobAbortCriteriaFailureTypeType
 
 ```python
-from mypy_boto3_iot.literals import AwsJobAbortCriteriaFailureType
+from mypy_boto3_iot.literals import AwsJobAbortCriteriaFailureTypeType
 ```
 
 Values:
@@ -314,10 +314,10 @@ Values:
 - `REJECTED`
 - `TIMED_OUT`
 
-## BehaviorCriteriaType
+## BehaviorCriteriaTypeType
 
 ```python
-from mypy_boto3_iot.literals import BehaviorCriteriaType
+from mypy_boto3_iot.literals import BehaviorCriteriaTypeType
 ```
 
 Values:
@@ -326,10 +326,10 @@ Values:
 - `STATIC`
 - `STATISTICAL`
 
-## CACertificateStatus
+## CACertificateStatusType
 
 ```python
-from mypy_boto3_iot.literals import CACertificateStatus
+from mypy_boto3_iot.literals import CACertificateStatusType
 ```
 
 Values:
@@ -337,20 +337,20 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
-## CACertificateUpdateAction
+## CACertificateUpdateActionType
 
 ```python
-from mypy_boto3_iot.literals import CACertificateUpdateAction
+from mypy_boto3_iot.literals import CACertificateUpdateActionType
 ```
 
 Values:
 
 - `DEACTIVATE`
 
-## CannedAccessControlList
+## CannedAccessControlListType
 
 ```python
-from mypy_boto3_iot.literals import CannedAccessControlList
+from mypy_boto3_iot.literals import CannedAccessControlListType
 ```
 
 Values:
@@ -364,10 +364,10 @@ Values:
 - `public-read`
 - `public-read-write`
 
-## CertificateMode
+## CertificateModeType
 
 ```python
-from mypy_boto3_iot.literals import CertificateMode
+from mypy_boto3_iot.literals import CertificateModeType
 ```
 
 Values:
@@ -375,10 +375,10 @@ Values:
 - `DEFAULT`
 - `SNI_ONLY`
 
-## CertificateStatus
+## CertificateStatusType
 
 ```python
-from mypy_boto3_iot.literals import CertificateStatus
+from mypy_boto3_iot.literals import CertificateStatusType
 ```
 
 Values:
@@ -390,10 +390,10 @@ Values:
 - `REGISTER_INACTIVE`
 - `REVOKED`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_iot.literals import ComparisonOperator
+from mypy_boto3_iot.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -409,10 +409,10 @@ Values:
 - `not-in-port-set`
 - `not-in-set`
 
-## ConfidenceLevel
+## ConfidenceLevelType
 
 ```python
-from mypy_boto3_iot.literals import ConfidenceLevel
+from mypy_boto3_iot.literals import ConfidenceLevelType
 ```
 
 Values:
@@ -421,10 +421,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## CustomMetricType
+## CustomMetricTypeType
 
 ```python
-from mypy_boto3_iot.literals import CustomMetricType
+from mypy_boto3_iot.literals import CustomMetricTypeType
 ```
 
 Values:
@@ -434,10 +434,10 @@ Values:
 - `number-list`
 - `string-list`
 
-## DayOfWeek
+## DayOfWeekType
 
 ```python
-from mypy_boto3_iot.literals import DayOfWeek
+from mypy_boto3_iot.literals import DayOfWeekType
 ```
 
 Values:
@@ -450,10 +450,10 @@ Values:
 - `TUE`
 - `WED`
 
-## DetectMitigationActionExecutionStatus
+## DetectMitigationActionExecutionStatusType
 
 ```python
-from mypy_boto3_iot.literals import DetectMitigationActionExecutionStatus
+from mypy_boto3_iot.literals import DetectMitigationActionExecutionStatusType
 ```
 
 Values:
@@ -463,10 +463,10 @@ Values:
 - `SKIPPED`
 - `SUCCESSFUL`
 
-## DetectMitigationActionsTaskStatus
+## DetectMitigationActionsTaskStatusType
 
 ```python
-from mypy_boto3_iot.literals import DetectMitigationActionsTaskStatus
+from mypy_boto3_iot.literals import DetectMitigationActionsTaskStatusType
 ```
 
 Values:
@@ -476,30 +476,30 @@ Values:
 - `IN_PROGRESS`
 - `SUCCESSFUL`
 
-## DeviceCertificateUpdateAction
+## DeviceCertificateUpdateActionType
 
 ```python
-from mypy_boto3_iot.literals import DeviceCertificateUpdateAction
+from mypy_boto3_iot.literals import DeviceCertificateUpdateActionType
 ```
 
 Values:
 
 - `DEACTIVATE`
 
-## DimensionType
+## DimensionTypeType
 
 ```python
-from mypy_boto3_iot.literals import DimensionType
+from mypy_boto3_iot.literals import DimensionTypeType
 ```
 
 Values:
 
 - `TOPIC_FILTER`
 
-## DimensionValueOperator
+## DimensionValueOperatorType
 
 ```python
-from mypy_boto3_iot.literals import DimensionValueOperator
+from mypy_boto3_iot.literals import DimensionValueOperatorType
 ```
 
 Values:
@@ -507,10 +507,10 @@ Values:
 - `IN`
 - `NOT_IN`
 
-## DomainConfigurationStatus
+## DomainConfigurationStatusType
 
 ```python
-from mypy_boto3_iot.literals import DomainConfigurationStatus
+from mypy_boto3_iot.literals import DomainConfigurationStatusType
 ```
 
 Values:
@@ -518,10 +518,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## DomainType
+## DomainTypeType
 
 ```python
-from mypy_boto3_iot.literals import DomainType
+from mypy_boto3_iot.literals import DomainTypeType
 ```
 
 Values:
@@ -530,10 +530,10 @@ Values:
 - `CUSTOMER_MANAGED`
 - `ENDPOINT`
 
-## DynamicGroupStatus
+## DynamicGroupStatusType
 
 ```python
-from mypy_boto3_iot.literals import DynamicGroupStatus
+from mypy_boto3_iot.literals import DynamicGroupStatusType
 ```
 
 Values:
@@ -542,10 +542,10 @@ Values:
 - `BUILDING`
 - `REBUILDING`
 
-## DynamoKeyType
+## DynamoKeyTypeType
 
 ```python
-from mypy_boto3_iot.literals import DynamoKeyType
+from mypy_boto3_iot.literals import DynamoKeyTypeType
 ```
 
 Values:
@@ -553,10 +553,10 @@ Values:
 - `NUMBER`
 - `STRING`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_iot.literals import EventType
+from mypy_boto3_iot.literals import EventTypeType
 ```
 
 Values:
@@ -573,10 +573,10 @@ Values:
 - `THING_TYPE`
 - `THING_TYPE_ASSOCIATION`
 
-## FieldType
+## FieldTypeType
 
 ```python
-from mypy_boto3_iot.literals import FieldType
+from mypy_boto3_iot.literals import FieldTypeType
 ```
 
 Values:
@@ -595,10 +595,10 @@ Values:
 
 - `get_behavior_model_training_summaries`
 
-## IndexStatus
+## IndexStatusType
 
 ```python
-from mypy_boto3_iot.literals import IndexStatus
+from mypy_boto3_iot.literals import IndexStatusType
 ```
 
 Values:
@@ -607,10 +607,10 @@ Values:
 - `BUILDING`
 - `REBUILDING`
 
-## JobExecutionFailureType
+## JobExecutionFailureTypeType
 
 ```python
-from mypy_boto3_iot.literals import JobExecutionFailureType
+from mypy_boto3_iot.literals import JobExecutionFailureTypeType
 ```
 
 Values:
@@ -620,10 +620,10 @@ Values:
 - `REJECTED`
 - `TIMED_OUT`
 
-## JobExecutionStatus
+## JobExecutionStatusType
 
 ```python
-from mypy_boto3_iot.literals import JobExecutionStatus
+from mypy_boto3_iot.literals import JobExecutionStatusType
 ```
 
 Values:
@@ -637,10 +637,10 @@ Values:
 - `SUCCEEDED`
 - `TIMED_OUT`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_iot.literals import JobStatus
+from mypy_boto3_iot.literals import JobStatusType
 ```
 
 Values:
@@ -1160,10 +1160,10 @@ Values:
 
 - `list_violation_events`
 
-## LogLevel
+## LogLevelType
 
 ```python
-from mypy_boto3_iot.literals import LogLevel
+from mypy_boto3_iot.literals import LogLevelType
 ```
 
 Values:
@@ -1174,10 +1174,10 @@ Values:
 - `INFO`
 - `WARN`
 
-## LogTargetType
+## LogTargetTypeType
 
 ```python
-from mypy_boto3_iot.literals import LogTargetType
+from mypy_boto3_iot.literals import LogTargetTypeType
 ```
 
 Values:
@@ -1185,10 +1185,10 @@ Values:
 - `DEFAULT`
 - `THING_GROUP`
 
-## MessageFormat
+## MessageFormatType
 
 ```python
-from mypy_boto3_iot.literals import MessageFormat
+from mypy_boto3_iot.literals import MessageFormatType
 ```
 
 Values:
@@ -1196,10 +1196,10 @@ Values:
 - `JSON`
 - `RAW`
 
-## MitigationActionType
+## MitigationActionTypeType
 
 ```python
-from mypy_boto3_iot.literals import MitigationActionType
+from mypy_boto3_iot.literals import MitigationActionTypeType
 ```
 
 Values:
@@ -1211,10 +1211,10 @@ Values:
 - `UPDATE_CA_CERTIFICATE`
 - `UPDATE_DEVICE_CERTIFICATE`
 
-## ModelStatus
+## ModelStatusType
 
 ```python
-from mypy_boto3_iot.literals import ModelStatus
+from mypy_boto3_iot.literals import ModelStatusType
 ```
 
 Values:
@@ -1223,10 +1223,10 @@ Values:
 - `EXPIRED`
 - `PENDING_BUILD`
 
-## OTAUpdateStatus
+## OTAUpdateStatusType
 
 ```python
-from mypy_boto3_iot.literals import OTAUpdateStatus
+from mypy_boto3_iot.literals import OTAUpdateStatusType
 ```
 
 Values:
@@ -1236,10 +1236,10 @@ Values:
 - `CREATE_IN_PROGRESS`
 - `CREATE_PENDING`
 
-## PolicyTemplateName
+## PolicyTemplateNameType
 
 ```python
-from mypy_boto3_iot.literals import PolicyTemplateName
+from mypy_boto3_iot.literals import PolicyTemplateNameType
 ```
 
 Values:
@@ -1257,10 +1257,10 @@ Values:
 - `HTTP`
 - `MQTT`
 
-## ReportType
+## ReportTypeType
 
 ```python
-from mypy_boto3_iot.literals import ReportType
+from mypy_boto3_iot.literals import ReportTypeType
 ```
 
 Values:
@@ -1268,10 +1268,10 @@ Values:
 - `ERRORS`
 - `RESULTS`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_iot.literals import ResourceType
+from mypy_boto3_iot.literals import ResourceTypeType
 ```
 
 Values:
@@ -1285,10 +1285,10 @@ Values:
 - `IOT_POLICY`
 - `ROLE_ALIAS`
 
-## ServerCertificateStatus
+## ServerCertificateStatusType
 
 ```python
-from mypy_boto3_iot.literals import ServerCertificateStatus
+from mypy_boto3_iot.literals import ServerCertificateStatusType
 ```
 
 Values:
@@ -1296,10 +1296,10 @@ Values:
 - `INVALID`
 - `VALID`
 
-## ServiceType
+## ServiceTypeType
 
 ```python
-from mypy_boto3_iot.literals import ServiceType
+from mypy_boto3_iot.literals import ServiceTypeType
 ```
 
 Values:
@@ -1308,10 +1308,10 @@ Values:
 - `DATA`
 - `JOBS`
 
-## Status
+## StatusType
 
 ```python
-from mypy_boto3_iot.literals import Status
+from mypy_boto3_iot.literals import StatusType
 ```
 
 Values:
@@ -1322,10 +1322,10 @@ Values:
 - `Failed`
 - `InProgress`
 
-## TargetSelection
+## TargetSelectionType
 
 ```python
-from mypy_boto3_iot.literals import TargetSelection
+from mypy_boto3_iot.literals import TargetSelectionType
 ```
 
 Values:
@@ -1333,10 +1333,10 @@ Values:
 - `CONTINUOUS`
 - `SNAPSHOT`
 
-## ThingConnectivityIndexingMode
+## ThingConnectivityIndexingModeType
 
 ```python
-from mypy_boto3_iot.literals import ThingConnectivityIndexingMode
+from mypy_boto3_iot.literals import ThingConnectivityIndexingModeType
 ```
 
 Values:
@@ -1344,10 +1344,10 @@ Values:
 - `OFF`
 - `STATUS`
 
-## ThingGroupIndexingMode
+## ThingGroupIndexingModeType
 
 ```python
-from mypy_boto3_iot.literals import ThingGroupIndexingMode
+from mypy_boto3_iot.literals import ThingGroupIndexingModeType
 ```
 
 Values:
@@ -1355,10 +1355,10 @@ Values:
 - `OFF`
 - `ON`
 
-## ThingIndexingMode
+## ThingIndexingModeType
 
 ```python
-from mypy_boto3_iot.literals import ThingIndexingMode
+from mypy_boto3_iot.literals import ThingIndexingModeType
 ```
 
 Values:
@@ -1367,10 +1367,10 @@ Values:
 - `REGISTRY`
 - `REGISTRY_AND_SHADOW`
 
-## TopicRuleDestinationStatus
+## TopicRuleDestinationStatusType
 
 ```python
-from mypy_boto3_iot.literals import TopicRuleDestinationStatus
+from mypy_boto3_iot.literals import TopicRuleDestinationStatusType
 ```
 
 Values:
@@ -1381,10 +1381,10 @@ Values:
 - `ERROR`
 - `IN_PROGRESS`
 
-## ViolationEventType
+## ViolationEventTypeType
 
 ```python
-from mypy_boto3_iot.literals import ViolationEventType
+from mypy_boto3_iot.literals import ViolationEventTypeType
 ```
 
 Values:

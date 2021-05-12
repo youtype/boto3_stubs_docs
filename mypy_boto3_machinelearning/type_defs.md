@@ -3,7 +3,7 @@
 > [Index](..) > [MachineLearning](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
@@ -66,7 +66,8 @@ from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
+- `ResourceType`:
+  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -86,7 +87,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `OutputUri`: `str`
 - `Message`: `str`
 - `ComputeTime`: `int`
@@ -198,7 +199,7 @@ Optional fields:
 - `DataSizeInBytes`: `int`
 - `NumberOfFiles`: `int`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `Message`: `str`
 - `RedshiftMetadata`:
   [RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef)
@@ -280,7 +281,8 @@ from mypy_boto3_machinelearning.type_defs import DeleteTagsOutputTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
+- `ResourceType`:
+  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -346,7 +348,8 @@ from mypy_boto3_machinelearning.type_defs import DescribeTagsOutputTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
+- `ResourceType`:
+  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -367,7 +370,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `PerformanceMetrics`:
   [PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef)
 - `Message`: `str`
@@ -391,7 +394,7 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `OutputUri`: `str`
 - `LogUri`: `str`
 - `Message`: `str`
@@ -420,7 +423,7 @@ Required fields:
 - `DataSizeInBytes`: `int`
 - `NumberOfFiles`: `int`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `LogUri`: `str`
 - `Message`: `str`
 - `RedshiftMetadata`:
@@ -451,7 +454,7 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `PerformanceMetrics`:
   [PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef)
 - `LogUri`: `str`
@@ -476,13 +479,13 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `SizeInBytes`: `int`
 - `EndpointInfo`:
   [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `InputDataLocationS3`: `str`
-- `MLModelType`: [MLModelType](./literals.md#mlmodeltype)
+- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype)
 - `ScoreThreshold`: `float`
 - `ScoreThresholdLastUpdatedAt`: `datetime`
 - `LogUri`: `str`
@@ -509,14 +512,15 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`: [EntityStatus](./literals.md#entitystatus)
+- `Status`: [EntityStatusType](./literals.md#entitystatustype)
 - `SizeInBytes`: `int`
 - `EndpointInfo`:
   [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `InputDataLocationS3`: `str`
-- `Algorithm`: `Literal['sgd']` (see [Algorithm](./literals.md#algorithm))
-- `MLModelType`: [MLModelType](./literals.md#mlmodeltype)
+- `Algorithm`: `Literal['sgd']` (see
+  [AlgorithmType](./literals.md#algorithmtype))
+- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype)
 - `ScoreThreshold`: `float`
 - `ScoreThresholdLastUpdatedAt`: `datetime`
 - `Message`: `str`
@@ -569,8 +573,8 @@ Optional fields:
 - `predictedLabel`: `str`
 - `predictedValue`: `float`
 - `predictedScores`: `Dict`\[`str`, `float`\]
-- `details`: `Dict`\[[DetailsAttributes](./literals.md#detailsattributes),
-  `str`\]
+- `details`:
+  `Dict`\[[DetailsAttributesType](./literals.md#detailsattributestype), `str`\]
 
 ## RDSDataSpecTypeDef
 
@@ -580,7 +584,8 @@ from mypy_boto3_machinelearning.type_defs import RDSDataSpecTypeDef
 
 Required fields:
 
-- `DatabaseInformation`: [RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef)
+- `DatabaseInformation`:
+  [RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef)
 - `SelectSqlQuery`: `str`
 - `DatabaseCredentials`:
   [RDSDatabaseCredentialsTypeDef](./type_defs.md#rdsdatabasecredentialstypedef)
@@ -645,7 +650,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `EndpointUrl`: `str`
 - `EndpointStatus`:
-  [RealtimeEndpointStatus](./literals.md#realtimeendpointstatus)
+  [RealtimeEndpointStatusType](./literals.md#realtimeendpointstatustype)
 
 ## RedshiftDataSpecTypeDef
 

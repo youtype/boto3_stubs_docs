@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelBuildingService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
 [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
@@ -100,9 +100,9 @@ Optional fields:
 - `botAlias`: `str`
 - `botName`: `str`
 - `createdDate`: `datetime`
-- `type`: [ChannelType](./literals.md#channeltype)
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `botConfiguration`: `Dict`\[`str`, `str`\]
-- `status`: [ChannelStatus](./literals.md#channelstatus)
+- `status`: [ChannelStatusType](./literals.md#channelstatustype)
 - `failureReason`: `str`
 
 ## BotMetadataTypeDef
@@ -115,7 +115,7 @@ Optional fields:
 
 - `name`: `str`
 - `description`: `str`
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `lastUpdatedDate`: `datetime`
 - `createdDate`: `datetime`
 - `version`: `str`
@@ -129,7 +129,7 @@ from mypy_boto3_lex_models.type_defs import BuiltinIntentMetadataTypeDef
 Optional fields:
 
 - `signature`: `str`
-- `supportedLocales`: `List`\[[Locale](./literals.md#locale)\]
+- `supportedLocales`: `List`\[[LocaleType](./literals.md#localetype)\]
 
 ## BuiltinIntentSlotTypeDef
 
@@ -150,7 +150,7 @@ from mypy_boto3_lex_models.type_defs import BuiltinSlotTypeMetadataTypeDef
 Optional fields:
 
 - `signature`: `str`
-- `supportedLocales`: `List`\[[Locale](./literals.md#locale)\]
+- `supportedLocales`: `List`\[[LocaleType](./literals.md#localetype)\]
 
 ## CodeHookTypeDef
 
@@ -200,7 +200,7 @@ Optional fields:
 - `intents`: `List`\[[IntentTypeDef](./type_defs.md#intenttypedef)\]
 - `clarificationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `abortStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `failureReason`: `str`
 - `lastUpdatedDate`: `datetime`
 - `createdDate`: `datetime`
@@ -208,7 +208,7 @@ Optional fields:
 - `voiceId`: `str`
 - `checksum`: `str`
 - `version`: `str`
-- `locale`: [Locale](./literals.md#locale)
+- `locale`: [LocaleType](./literals.md#localetype)
 - `childDirected`: `bool`
 - `enableModelImprovements`: `bool`
 - `detectSentiment`: `bool`
@@ -227,7 +227,8 @@ Optional fields:
 - `sampleUtterances`: `List`\[`str`\]
 - `confirmationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `rejectionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `followUpPrompt`: [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
+- `followUpPrompt`:
+  [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
 - `conclusionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 - `dialogCodeHook`: [CodeHookTypeDef](./type_defs.md#codehooktypedef)
 - `fulfillmentActivity`:
@@ -261,7 +262,7 @@ Optional fields:
 - `version`: `str`
 - `checksum`: `str`
 - `valueSelectionStrategy`:
-  [SlotValueSelectionStrategy](./literals.md#slotvalueselectionstrategy)
+  [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
 - `parentSlotTypeSignature`: `str`
 - `slotTypeConfigurations`:
   `List`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
@@ -299,7 +300,8 @@ from mypy_boto3_lex_models.type_defs import FulfillmentActivityTypeDef
 
 Required fields:
 
-- `type`: [FulfillmentActivityType](./literals.md#fulfillmentactivitytype)
+- `type`:
+  [FulfillmentActivityTypeType](./literals.md#fulfillmentactivitytypetype)
 
 Optional fields:
 
@@ -348,9 +350,9 @@ Optional fields:
 - `botAlias`: `str`
 - `botName`: `str`
 - `createdDate`: `datetime`
-- `type`: [ChannelType](./literals.md#channeltype)
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `botConfiguration`: `Dict`\[`str`, `str`\]
-- `status`: [ChannelStatus](./literals.md#channelstatus)
+- `status`: [ChannelStatusType](./literals.md#channelstatustype)
 - `failureReason`: `str`
 
 ## GetBotChannelAssociationsResponseTypeDef
@@ -380,7 +382,7 @@ Optional fields:
 - `nluIntentConfidenceThreshold`: `float`
 - `clarificationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `abortStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `failureReason`: `str`
 - `lastUpdatedDate`: `datetime`
 - `createdDate`: `datetime`
@@ -388,7 +390,7 @@ Optional fields:
 - `voiceId`: `str`
 - `checksum`: `str`
 - `version`: `str`
-- `locale`: [Locale](./literals.md#locale)
+- `locale`: [LocaleType](./literals.md#localetype)
 - `childDirected`: `bool`
 - `detectSentiment`: `bool`
 
@@ -423,7 +425,7 @@ from mypy_boto3_lex_models.type_defs import GetBuiltinIntentResponseTypeDef
 Optional fields:
 
 - `signature`: `str`
-- `supportedLocales`: `List`\[[Locale](./literals.md#locale)\]
+- `supportedLocales`: `List`\[[LocaleType](./literals.md#localetype)\]
 - `slots`:
   `List`\[[BuiltinIntentSlotTypeDef](./type_defs.md#builtinintentslottypedef)\]
 
@@ -461,9 +463,9 @@ Optional fields:
 
 - `name`: `str`
 - `version`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `exportType`: [ExportType](./literals.md#exporttype)
-- `exportStatus`: [ExportStatus](./literals.md#exportstatus)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `exportType`: [ExportTypeType](./literals.md#exporttypetype)
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `failureReason`: `str`
 - `url`: `str`
 
@@ -476,10 +478,10 @@ from mypy_boto3_lex_models.type_defs import GetImportResponseTypeDef
 Optional fields:
 
 - `name`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `mergeStrategy`: [MergeStrategy](./literals.md#mergestrategy)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
 - `importId`: `str`
-- `importStatus`: [ImportStatus](./literals.md#importstatus)
+- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
 - `failureReason`: `List`\[`str`\]
 - `createdDate`: `datetime`
 
@@ -497,7 +499,8 @@ Optional fields:
 - `sampleUtterances`: `List`\[`str`\]
 - `confirmationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `rejectionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `followUpPrompt`: [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
+- `followUpPrompt`:
+  [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
 - `conclusionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 - `dialogCodeHook`: [CodeHookTypeDef](./type_defs.md#codehooktypedef)
 - `fulfillmentActivity`:
@@ -555,7 +558,7 @@ Optional fields:
 - `version`: `str`
 - `checksum`: `str`
 - `valueSelectionStrategy`:
-  [SlotValueSelectionStrategy](./literals.md#slotvalueselectionstrategy)
+  [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
 - `parentSlotTypeSignature`: `str`
 - `slotTypeConfigurations`:
   `List`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
@@ -664,8 +667,8 @@ from mypy_boto3_lex_models.type_defs import LogSettingsRequestTypeDef
 
 Required fields:
 
-- `logType`: [LogType](./literals.md#logtype)
-- `destination`: [Destination](./literals.md#destination)
+- `logType`: [LogTypeType](./literals.md#logtypetype)
+- `destination`: [DestinationType](./literals.md#destinationtype)
 - `resourceArn`: `str`
 
 Optional fields:
@@ -680,8 +683,8 @@ from mypy_boto3_lex_models.type_defs import LogSettingsResponseTypeDef
 
 Optional fields:
 
-- `logType`: [LogType](./literals.md#logtype)
-- `destination`: [Destination](./literals.md#destination)
+- `logType`: [LogTypeType](./literals.md#logtypetype)
+- `destination`: [DestinationType](./literals.md#destinationtype)
 - `kmsKeyArn`: `str`
 - `resourceArn`: `str`
 - `resourcePrefix`: `str`
@@ -694,7 +697,7 @@ from mypy_boto3_lex_models.type_defs import MessageTypeDef
 
 Required fields:
 
-- `contentType`: [ContentType](./literals.md#contenttype)
+- `contentType`: [ContentTypeType](./literals.md#contenttypetype)
 - `content`: `str`
 
 Optional fields:
@@ -774,7 +777,7 @@ Optional fields:
 - `nluIntentConfidenceThreshold`: `float`
 - `clarificationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `abortStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `status`: [Status](./literals.md#status)
+- `status`: [StatusType](./literals.md#statustype)
 - `failureReason`: `str`
 - `lastUpdatedDate`: `datetime`
 - `createdDate`: `datetime`
@@ -782,7 +785,7 @@ Optional fields:
 - `voiceId`: `str`
 - `checksum`: `str`
 - `version`: `str`
-- `locale`: [Locale](./literals.md#locale)
+- `locale`: [LocaleType](./literals.md#localetype)
 - `childDirected`: `bool`
 - `createVersion`: `bool`
 - `detectSentiment`: `bool`
@@ -802,7 +805,8 @@ Optional fields:
 - `sampleUtterances`: `List`\[`str`\]
 - `confirmationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `rejectionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `followUpPrompt`: [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
+- `followUpPrompt`:
+  [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
 - `conclusionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 - `dialogCodeHook`: [CodeHookTypeDef](./type_defs.md#codehooktypedef)
 - `fulfillmentActivity`:
@@ -837,7 +841,7 @@ Optional fields:
 - `version`: `str`
 - `checksum`: `str`
 - `valueSelectionStrategy`:
-  [SlotValueSelectionStrategy](./literals.md#slotvalueselectionstrategy)
+  [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
 - `createVersion`: `bool`
 - `parentSlotTypeSignature`: `str`
 - `slotTypeConfigurations`:
@@ -884,7 +888,7 @@ from mypy_boto3_lex_models.type_defs import SlotTypeDef
 Required fields:
 
 - `name`: `str`
-- `slotConstraint`: [SlotConstraint](./literals.md#slotconstraint)
+- `slotConstraint`: [SlotConstraintType](./literals.md#slotconstrainttype)
 
 Optional fields:
 
@@ -895,7 +899,8 @@ Optional fields:
 - `priority`: `int`
 - `sampleUtterances`: `List`\[`str`\]
 - `responseCard`: `str`
-- `obfuscationSetting`: [ObfuscationSetting](./literals.md#obfuscationsetting)
+- `obfuscationSetting`:
+  [ObfuscationSettingType](./literals.md#obfuscationsettingtype)
 - `defaultValueSpec`:
   [SlotDefaultValueSpecTypeDef](./type_defs.md#slotdefaultvaluespectypedef)
 
@@ -932,10 +937,10 @@ from mypy_boto3_lex_models.type_defs import StartImportResponseTypeDef
 Optional fields:
 
 - `name`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
-- `mergeStrategy`: [MergeStrategy](./literals.md#mergestrategy)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
 - `importId`: `str`
-- `importStatus`: [ImportStatus](./literals.md#importstatus)
+- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `createdDate`: `datetime`
 

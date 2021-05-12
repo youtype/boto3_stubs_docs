@@ -3,7 +3,7 @@
 > [Index](..) > [ConfigService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/config.html#ConfigService)
 type annotations stubs module
 [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
@@ -235,7 +235,7 @@ Optional fields:
 
 - `ConformancePackName`: `str`
 - `ComplianceType`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `AccountId`: `str`
 - `AwsRegion`: `str`
 
@@ -271,7 +271,7 @@ from mypy_boto3_config.type_defs import AggregateConformancePackComplianceTypeDe
 Optional fields:
 
 - `ComplianceType`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `CompliantRuleCount`: `int`
 - `NonCompliantRuleCount`: `int`
 - `TotalRuleCount`: `int`
@@ -286,7 +286,7 @@ Optional fields:
 
 - `EvaluationResultIdentifier`:
   [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `ResultRecordedTime`: `datetime`
 - `ConfigRuleInvokedTime`: `datetime`
 - `Annotation`: `str`
@@ -304,7 +304,7 @@ Required fields:
 - `SourceAccountId`: `str`
 - `SourceRegion`: `str`
 - `ResourceId`: `str`
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 Optional fields:
 
@@ -319,10 +319,11 @@ from mypy_boto3_config.type_defs import AggregatedSourceStatusTypeDef
 Optional fields:
 
 - `SourceId`: `str`
-- `SourceType`: [AggregatedSourceType](./literals.md#aggregatedsourcetype)
+- `SourceType`:
+  [AggregatedSourceTypeType](./literals.md#aggregatedsourcetypetype)
 - `AwsRegion`: `str`
 - `LastUpdateStatus`:
-  [AggregatedSourceStatusType](./literals.md#aggregatedsourcestatustype)
+  [AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)
 - `LastUpdateTime`: `datetime`
 - `LastErrorCode`: `str`
 - `LastErrorMessage`: `str`
@@ -352,10 +353,10 @@ Optional fields:
 - `accountId`: `str`
 - `configurationItemCaptureTime`: `datetime`
 - `configurationItemStatus`:
-  [ConfigurationItemStatus](./literals.md#configurationitemstatus)
+  [ConfigurationItemStatusType](./literals.md#configurationitemstatustype)
 - `configurationStateId`: `str`
 - `arn`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceId`: `str`
 - `resourceName`: `str`
 - `awsRegion`: `str`
@@ -458,7 +459,7 @@ from mypy_boto3_config.type_defs import ComplianceTypeDef
 
 Optional fields:
 
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `ComplianceContributorCount`:
   [ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef)
 
@@ -470,7 +471,7 @@ from mypy_boto3_config.type_defs import ConfigExportDeliveryInfoTypeDef
 
 Optional fields:
 
-- `lastStatus`: [DeliveryStatus](./literals.md#deliverystatus)
+- `lastStatus`: [DeliveryStatusType](./literals.md#deliverystatustype)
 - `lastErrorCode`: `str`
 - `lastErrorMessage`: `str`
 - `lastAttemptTime`: `datetime`
@@ -486,7 +487,7 @@ from mypy_boto3_config.type_defs import ConfigRuleComplianceFiltersTypeDef
 Optional fields:
 
 - `ConfigRuleName`: `str`
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `AccountId`: `str`
 - `AwsRegion`: `str`
 
@@ -541,8 +542,8 @@ Optional fields:
 - `Scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 - `InputParameters`: `str`
 - `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequency](./literals.md#maximumexecutionfrequency)
-- `ConfigRuleState`: [ConfigRuleState](./literals.md#configrulestate)
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
+- `ConfigRuleState`: [ConfigRuleStateType](./literals.md#configrulestatetype)
 - `CreatedBy`: `str`
 
 ## ConfigSnapshotDeliveryPropertiesTypeDef
@@ -554,7 +555,7 @@ from mypy_boto3_config.type_defs import ConfigSnapshotDeliveryPropertiesTypeDef
 Optional fields:
 
 - `deliveryFrequency`:
-  [MaximumExecutionFrequency](./literals.md#maximumexecutionfrequency)
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
 
 ## ConfigStreamDeliveryInfoTypeDef
 
@@ -564,7 +565,7 @@ from mypy_boto3_config.type_defs import ConfigStreamDeliveryInfoTypeDef
 
 Optional fields:
 
-- `lastStatus`: [DeliveryStatus](./literals.md#deliverystatus)
+- `lastStatus`: [DeliveryStatusType](./literals.md#deliverystatustype)
 - `lastErrorCode`: `str`
 - `lastErrorMessage`: `str`
 - `lastStatusChangeTime`: `datetime`
@@ -599,11 +600,11 @@ Optional fields:
 - `accountId`: `str`
 - `configurationItemCaptureTime`: `datetime`
 - `configurationItemStatus`:
-  [ConfigurationItemStatus](./literals.md#configurationitemstatus)
+  [ConfigurationItemStatusType](./literals.md#configurationitemstatustype)
 - `configurationStateId`: `str`
 - `configurationItemMD5Hash`: `str`
 - `arn`: `str`
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceId`: `str`
 - `resourceName`: `str`
 - `awsRegion`: `str`
@@ -628,7 +629,7 @@ Optional fields:
 - `lastStartTime`: `datetime`
 - `lastStopTime`: `datetime`
 - `recording`: `bool`
-- `lastStatus`: [RecorderStatus](./literals.md#recorderstatus)
+- `lastStatus`: [RecorderStatusType](./literals.md#recorderstatustype)
 - `lastErrorCode`: `str`
 - `lastErrorMessage`: `str`
 - `lastStatusChangeTime`: `datetime`
@@ -643,7 +644,8 @@ Optional fields:
 
 - `name`: `str`
 - `roleARN`: `str`
-- `recordingGroup`: [RecordingGroupTypeDef](./type_defs.md#recordinggrouptypedef)
+- `recordingGroup`:
+  [RecordingGroupTypeDef](./type_defs.md#recordinggrouptypedef)
 
 ## ConformancePackComplianceFiltersTypeDef
 
@@ -655,7 +657,7 @@ Optional fields:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `ComplianceType`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 
 ## ConformancePackComplianceSummaryTypeDef
 
@@ -667,7 +669,7 @@ Required fields:
 
 - `ConformancePackName`: `str`
 - `ConformancePackComplianceStatus`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 
 ## ConformancePackDetailTypeDef
 
@@ -700,7 +702,7 @@ Optional fields:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `ComplianceType`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `ResourceType`: `str`
 - `ResourceIds`: `List`\[`str`\]
 
@@ -713,7 +715,7 @@ from mypy_boto3_config.type_defs import ConformancePackEvaluationResultTypeDef
 Required fields:
 
 - `ComplianceType`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `EvaluationResultIdentifier`:
   [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
 - `ConfigRuleInvokedTime`: `datetime`
@@ -744,7 +746,7 @@ Optional fields:
 
 - `ConfigRuleName`: `str`
 - `ComplianceType`:
-  [ConformancePackComplianceType](./literals.md#conformancepackcompliancetype)
+  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `Controls`: `List`\[`str`\]
 
 ## ConformancePackStatusDetailTypeDef
@@ -759,7 +761,7 @@ Required fields:
 - `ConformancePackId`: `str`
 - `ConformancePackArn`: `str`
 - `ConformancePackState`:
-  [ConformancePackState](./literals.md#conformancepackstate)
+  [ConformancePackStateType](./literals.md#conformancepackstatetype)
 - `StackArn`: `str`
 - `LastUpdateRequestedTime`: `datetime`
 
@@ -901,7 +903,8 @@ from mypy_boto3_config.type_defs import DescribeConfigRulesResponseTypeDef
 
 Optional fields:
 
-- `ConfigRules`: `List`\[[ConfigRuleTypeDef](./type_defs.md#configruletypedef)\]
+- `ConfigRules`:
+  `List`\[[ConfigRuleTypeDef](./type_defs.md#configruletypedef)\]
 - `NextToken`: `str`
 
 ## DescribeConfigurationAggregatorSourcesStatusResponseTypeDef
@@ -1153,7 +1156,7 @@ Optional fields:
 
 - `EvaluationResultIdentifier`:
   [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `ResultRecordedTime`: `datetime`
 - `ConfigRuleInvokedTime`: `datetime`
 - `Annotation`: `str`
@@ -1169,7 +1172,7 @@ Required fields:
 
 - `ComplianceResourceType`: `str`
 - `ComplianceResourceId`: `str`
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `OrderingTimestamp`: `datetime`
 
 Optional fields:
@@ -1196,7 +1199,7 @@ Required fields:
 
 - `ComplianceResourceType`: `str`
 - `ComplianceResourceId`: `str`
-- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `OrderingTimestamp`: `datetime`
 
 Optional fields:
@@ -1517,7 +1520,7 @@ Required fields:
 - `AccountId`: `str`
 - `ConfigRuleName`: `str`
 - `MemberAccountRuleStatus`:
-  [MemberAccountRuleStatus](./literals.md#memberaccountrulestatus)
+  [MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype)
 
 Optional fields:
 
@@ -1550,7 +1553,7 @@ Required fields:
 
 - `OrganizationConfigRuleName`: `str`
 - `OrganizationRuleStatus`:
-  [OrganizationRuleStatus](./literals.md#organizationrulestatus)
+  [OrganizationRuleStatusType](./literals.md#organizationrulestatustype)
 
 Optional fields:
 
@@ -1589,7 +1592,7 @@ Required fields:
 - `AccountId`: `str`
 - `ConformancePackName`: `str`
 - `Status`:
-  [OrganizationResourceDetailedStatus](./literals.md#organizationresourcedetailedstatus)
+  [OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype)
 
 Optional fields:
 
@@ -1607,7 +1610,7 @@ Required fields:
 
 - `OrganizationConformancePackName`: `str`
 - `Status`:
-  [OrganizationResourceStatus](./literals.md#organizationresourcestatus)
+  [OrganizationResourceStatusType](./literals.md#organizationresourcestatustype)
 
 Optional fields:
 
@@ -1645,14 +1648,14 @@ Required fields:
 
 - `LambdaFunctionArn`: `str`
 - `OrganizationConfigRuleTriggerTypes`:
-  `List`\[[OrganizationConfigRuleTriggerType](./literals.md#organizationconfigruletriggertype)\]
+  `List`\[[OrganizationConfigRuleTriggerTypeType](./literals.md#organizationconfigruletriggertypetype)\]
 
 Optional fields:
 
 - `Description`: `str`
 - `InputParameters`: `str`
 - `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequency](./literals.md#maximumexecutionfrequency)
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
 - `ResourceTypesScope`: `List`\[`str`\]
 - `ResourceIdScope`: `str`
 - `TagKeyScope`: `str`
@@ -1673,7 +1676,7 @@ Optional fields:
 - `Description`: `str`
 - `InputParameters`: `str`
 - `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequency](./literals.md#maximumexecutionfrequency)
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
 - `ResourceTypesScope`: `List`\[`str`\]
 - `ResourceIdScope`: `str`
 - `TagKeyScope`: `str`
@@ -1689,7 +1692,7 @@ Optional fields:
 
 - `AccountId`: `str`
 - `Status`:
-  [OrganizationResourceDetailedStatus](./literals.md#organizationresourcedetailedstatus)
+  [OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype)
 
 ## PaginatorConfigTypeDef
 
@@ -1840,7 +1843,7 @@ Optional fields:
 
 - `allSupported`: `bool`
 - `includeGlobalResourceTypes`: `bool`
-- `resourceTypes`: `List`\[[ResourceType](./literals.md#resourcetype)\]
+- `resourceTypes`: `List`\[[ResourceTypeType](./literals.md#resourcetypetype)\]
 
 ## RelationshipTypeDef
 
@@ -1850,7 +1853,7 @@ from mypy_boto3_config.type_defs import RelationshipTypeDef
 
 Optional fields:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceId`: `str`
 - `resourceName`: `str`
 - `relationshipName`: `str`
@@ -1865,7 +1868,7 @@ Required fields:
 
 - `ConfigRuleName`: `str`
 - `TargetType`: `Literal['SSM_DOCUMENT']` (see
-  [RemediationTargetType](./literals.md#remediationtargettype))
+  [RemediationTargetTypeType](./literals.md#remediationtargettypetype))
 - `TargetId`: `str`
 
 Optional fields:
@@ -1919,7 +1922,8 @@ from mypy_boto3_config.type_defs import RemediationExecutionStatusTypeDef
 Optional fields:
 
 - `ResourceKey`: [ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)
-- `State`: [RemediationExecutionState](./literals.md#remediationexecutionstate)
+- `State`:
+  [RemediationExecutionStateType](./literals.md#remediationexecutionstatetype)
 - `StepDetails`:
   `List`\[[RemediationExecutionStepTypeDef](./type_defs.md#remediationexecutionsteptypedef)\]
 - `InvocationTime`: `datetime`
@@ -1935,7 +1939,7 @@ Optional fields:
 
 - `Name`: `str`
 - `State`:
-  [RemediationExecutionStepState](./literals.md#remediationexecutionstepstate)
+  [RemediationExecutionStepStateType](./literals.md#remediationexecutionstepstatetype)
 - `ErrorMessage`: `str`
 - `StartTime`: `datetime`
 - `StopTime`: `datetime`
@@ -1959,7 +1963,7 @@ from mypy_boto3_config.type_defs import ResourceCountFiltersTypeDef
 
 Optional fields:
 
-- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `AccountId`: `str`
 - `Region`: `str`
 
@@ -1971,7 +1975,7 @@ from mypy_boto3_config.type_defs import ResourceCountTypeDef
 
 Optional fields:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `count`: `int`
 
 ## ResourceFiltersTypeDef
@@ -1995,7 +1999,7 @@ from mypy_boto3_config.type_defs import ResourceIdentifierTypeDef
 
 Optional fields:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceId`: `str`
 - `resourceName`: `str`
 - `resourceDeletionTime`: `datetime`
@@ -2008,7 +2012,7 @@ from mypy_boto3_config.type_defs import ResourceKeyTypeDef
 
 Required fields:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceId`: `str`
 
 ## ResourceValueTypeDef
@@ -2020,7 +2024,7 @@ from mypy_boto3_config.type_defs import ResourceValueTypeDef
 Required fields:
 
 - `Value`: `Literal['RESOURCE_ID']` (see
-  [ResourceValueType](./literals.md#resourcevaluetype))
+  [ResourceValueTypeType](./literals.md#resourcevaluetypetype))
 
 ## RetentionConfigurationTypeDef
 
@@ -2079,10 +2083,10 @@ from mypy_boto3_config.type_defs import SourceDetailTypeDef
 Optional fields:
 
 - `EventSource`: `Literal['aws.config']` (see
-  [EventSource](./literals.md#eventsource))
-- `MessageType`: [MessageType](./literals.md#messagetype)
+  [EventSourceType](./literals.md#eventsourcetype))
+- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequency](./literals.md#maximumexecutionfrequency)
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
 
 ## SourceTypeDef
 
@@ -2092,7 +2096,7 @@ from mypy_boto3_config.type_defs import SourceTypeDef
 
 Required fields:
 
-- `Owner`: [Owner](./literals.md#owner)
+- `Owner`: [OwnerType](./literals.md#ownertype)
 - `SourceIdentifier`: `str`
 
 Optional fields:
@@ -2143,7 +2147,7 @@ Optional fields:
 
 - `AccountId`: `str`
 - `MemberAccountRuleStatus`:
-  [MemberAccountRuleStatus](./literals.md#memberaccountrulestatus)
+  [MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype)
 
 ## StoredQueryMetadataTypeDef
 

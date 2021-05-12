@@ -3,19 +3,19 @@
 > [Index](..) > [Comprehend](.) > Literals
 
 Auto-generated documentation for
-[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
 [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Literals for boto3 Comprehend module](#literals-for-boto3-comprehend-module)
-  - [DocumentClassifierDataFormat](#documentclassifierdataformat)
-  - [DocumentClassifierMode](#documentclassifiermode)
-  - [EndpointStatus](#endpointstatus)
-  - [EntityRecognizerDataFormat](#entityrecognizerdataformat)
-  - [EntityType](#entitytype)
-  - [InputFormat](#inputformat)
-  - [JobStatus](#jobstatus)
-  - [LanguageCode](#languagecode)
+  - [DocumentClassifierDataFormatType](#documentclassifierdataformattype)
+  - [DocumentClassifierModeType](#documentclassifiermodetype)
+  - [EndpointStatusType](#endpointstatustype)
+  - [EntityRecognizerDataFormatType](#entityrecognizerdataformattype)
+  - [EntityTypeType](#entitytypetype)
+  - [InputFormatType](#inputformattype)
+  - [JobStatusType](#jobstatustype)
+  - [LanguageCodeType](#languagecodetype)
   - [ListDocumentClassificationJobsPaginatorName](#listdocumentclassificationjobspaginatorname)
   - [ListDocumentClassifiersPaginatorName](#listdocumentclassifierspaginatorname)
   - [ListDominantLanguageDetectionJobsPaginatorName](#listdominantlanguagedetectionjobspaginatorname)
@@ -24,18 +24,18 @@ type annotations stubs module
   - [ListKeyPhrasesDetectionJobsPaginatorName](#listkeyphrasesdetectionjobspaginatorname)
   - [ListSentimentDetectionJobsPaginatorName](#listsentimentdetectionjobspaginatorname)
   - [ListTopicsDetectionJobsPaginatorName](#listtopicsdetectionjobspaginatorname)
-  - [ModelStatus](#modelstatus)
-  - [PartOfSpeechTagType](#partofspeechtagtype)
-  - [PiiEntitiesDetectionMaskMode](#piientitiesdetectionmaskmode)
-  - [PiiEntitiesDetectionMode](#piientitiesdetectionmode)
-  - [PiiEntityType](#piientitytype)
-  - [SentimentType](#sentimenttype)
-  - [SyntaxLanguageCode](#syntaxlanguagecode)
+  - [ModelStatusType](#modelstatustype)
+  - [PartOfSpeechTagTypeType](#partofspeechtagtypetype)
+  - [PiiEntitiesDetectionMaskModeType](#piientitiesdetectionmaskmodetype)
+  - [PiiEntitiesDetectionModeType](#piientitiesdetectionmodetype)
+  - [PiiEntityTypeType](#piientitytypetype)
+  - [SentimentTypeType](#sentimenttypetype)
+  - [SyntaxLanguageCodeType](#syntaxlanguagecodetype)
 
-## DocumentClassifierDataFormat
+## DocumentClassifierDataFormatType
 
 ```python
-from mypy_boto3_comprehend.literals import DocumentClassifierDataFormat
+from mypy_boto3_comprehend.literals import DocumentClassifierDataFormatType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `AUGMENTED_MANIFEST`
 - `COMPREHEND_CSV`
 
-## DocumentClassifierMode
+## DocumentClassifierModeType
 
 ```python
-from mypy_boto3_comprehend.literals import DocumentClassifierMode
+from mypy_boto3_comprehend.literals import DocumentClassifierModeType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `MULTI_CLASS`
 - `MULTI_LABEL`
 
-## EndpointStatus
+## EndpointStatusType
 
 ```python
-from mypy_boto3_comprehend.literals import EndpointStatus
+from mypy_boto3_comprehend.literals import EndpointStatusType
 ```
 
 Values:
@@ -68,10 +68,10 @@ Values:
 - `IN_SERVICE`
 - `UPDATING`
 
-## EntityRecognizerDataFormat
+## EntityRecognizerDataFormatType
 
 ```python
-from mypy_boto3_comprehend.literals import EntityRecognizerDataFormat
+from mypy_boto3_comprehend.literals import EntityRecognizerDataFormatType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `AUGMENTED_MANIFEST`
 - `COMPREHEND_CSV`
 
-## EntityType
+## EntityTypeType
 
 ```python
-from mypy_boto3_comprehend.literals import EntityType
+from mypy_boto3_comprehend.literals import EntityTypeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `QUANTITY`
 - `TITLE`
 
-## InputFormat
+## InputFormatType
 
 ```python
-from mypy_boto3_comprehend.literals import InputFormat
+from mypy_boto3_comprehend.literals import InputFormatType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `ONE_DOC_PER_FILE`
 - `ONE_DOC_PER_LINE`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_comprehend.literals import JobStatus
+from mypy_boto3_comprehend.literals import JobStatusType
 ```
 
 Values:
@@ -123,10 +123,10 @@ Values:
 - `STOPPED`
 - `SUBMITTED`
 
-## LanguageCode
+## LanguageCodeType
 
 ```python
-from mypy_boto3_comprehend.literals import LanguageCode
+from mypy_boto3_comprehend.literals import LanguageCodeType
 ```
 
 Values:
@@ -224,10 +224,10 @@ Values:
 
 - `list_topics_detection_jobs`
 
-## ModelStatus
+## ModelStatusType
 
 ```python
-from mypy_boto3_comprehend.literals import ModelStatus
+from mypy_boto3_comprehend.literals import ModelStatusType
 ```
 
 Values:
@@ -240,10 +240,10 @@ Values:
 - `TRAINED`
 - `TRAINING`
 
-## PartOfSpeechTagType
+## PartOfSpeechTagTypeType
 
 ```python
-from mypy_boto3_comprehend.literals import PartOfSpeechTagType
+from mypy_boto3_comprehend.literals import PartOfSpeechTagTypeType
 ```
 
 Values:
@@ -267,10 +267,10 @@ Values:
 - `SYM`
 - `VERB`
 
-## PiiEntitiesDetectionMaskMode
+## PiiEntitiesDetectionMaskModeType
 
 ```python
-from mypy_boto3_comprehend.literals import PiiEntitiesDetectionMaskMode
+from mypy_boto3_comprehend.literals import PiiEntitiesDetectionMaskModeType
 ```
 
 Values:
@@ -278,10 +278,10 @@ Values:
 - `MASK`
 - `REPLACE_WITH_PII_ENTITY_TYPE`
 
-## PiiEntitiesDetectionMode
+## PiiEntitiesDetectionModeType
 
 ```python
-from mypy_boto3_comprehend.literals import PiiEntitiesDetectionMode
+from mypy_boto3_comprehend.literals import PiiEntitiesDetectionModeType
 ```
 
 Values:
@@ -289,10 +289,10 @@ Values:
 - `ONLY_OFFSETS`
 - `ONLY_REDACTION`
 
-## PiiEntityType
+## PiiEntityTypeType
 
 ```python
-from mypy_boto3_comprehend.literals import PiiEntityType
+from mypy_boto3_comprehend.literals import PiiEntityTypeType
 ```
 
 Values:
@@ -321,10 +321,10 @@ Values:
 - `URL`
 - `USERNAME`
 
-## SentimentType
+## SentimentTypeType
 
 ```python
-from mypy_boto3_comprehend.literals import SentimentType
+from mypy_boto3_comprehend.literals import SentimentTypeType
 ```
 
 Values:
@@ -334,10 +334,10 @@ Values:
 - `NEUTRAL`
 - `POSITIVE`
 
-## SyntaxLanguageCode
+## SyntaxLanguageCodeType
 
 ```python
-from mypy_boto3_comprehend.literals import SyntaxLanguageCode
+from mypy_boto3_comprehend.literals import SyntaxLanguageCodeType
 ```
 
 Values:

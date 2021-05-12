@@ -3,7 +3,7 @@
 > [Index](..) > LakeFormation
 
 Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
 [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
@@ -29,48 +29,48 @@ Can be used directly:
 from mypy_boto3_lakeformation.client import LakeFormationClient
 ```
 
-LakeFormationClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_lf_tags_to_resource](./client.md#add-lf-tags-to-resource)
-- [batch_grant_permissions](./client.md#batch-grant-permissions)
-- [batch_revoke_permissions](./client.md#batch-revoke-permissions)
-- [can_paginate](./client.md#can-paginate)
-- [create_lf_tag](./client.md#create-lf-tag)
-- [delete_lf_tag](./client.md#delete-lf-tag)
-- [deregister_resource](./client.md#deregister-resource)
-- [describe_resource](./client.md#describe-resource)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_data_lake_settings](./client.md#get-data-lake-settings)
-- [get_effective_permissions_for_path](./client.md#get-effective-permissions-for-path)
-- [get_lf_tag](./client.md#get-lf-tag)
-- [get_resource_lf_tags](./client.md#get-resource-lf-tags)
-- [grant_permissions](./client.md#grant-permissions)
-- [list_lf_tags](./client.md#list-lf-tags)
-- [list_permissions](./client.md#list-permissions)
-- [list_resources](./client.md#list-resources)
-- [put_data_lake_settings](./client.md#put-data-lake-settings)
-- [register_resource](./client.md#register-resource)
-- [remove_lf_tags_from_resource](./client.md#remove-lf-tags-from-resource)
-- [revoke_permissions](./client.md#revoke-permissions)
-- [search_databases_by_lf_tags](./client.md#search-databases-by-lf-tags)
-- [search_tables_by_lf_tags](./client.md#search-tables-by-lf-tags)
-- [update_lf_tag](./client.md#update-lf-tag)
-- [update_resource](./client.md#update-resource)
+- [add_lf_tags_to_resource](./client.md#add_lf_tags_to_resource)
+- [batch_grant_permissions](./client.md#batch_grant_permissions)
+- [batch_revoke_permissions](./client.md#batch_revoke_permissions)
+- [can_paginate](./client.md#can_paginate)
+- [create_lf_tag](./client.md#create_lf_tag)
+- [delete_lf_tag](./client.md#delete_lf_tag)
+- [deregister_resource](./client.md#deregister_resource)
+- [describe_resource](./client.md#describe_resource)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_data_lake_settings](./client.md#get_data_lake_settings)
+- [get_effective_permissions_for_path](./client.md#get_effective_permissions_for_path)
+- [get_lf_tag](./client.md#get_lf_tag)
+- [get_resource_lf_tags](./client.md#get_resource_lf_tags)
+- [grant_permissions](./client.md#grant_permissions)
+- [list_lf_tags](./client.md#list_lf_tags)
+- [list_permissions](./client.md#list_permissions)
+- [list_resources](./client.md#list_resources)
+- [put_data_lake_settings](./client.md#put_data_lake_settings)
+- [register_resource](./client.md#register_resource)
+- [remove_lf_tags_from_resource](./client.md#remove_lf_tags_from_resource)
+- [revoke_permissions](./client.md#revoke_permissions)
+- [search_databases_by_lf_tags](./client.md#search_databases_by_lf_tags)
+- [search_tables_by_lf_tags](./client.md#search_tables_by_lf_tags)
+- [update_lf_tag](./client.md#update_lf_tag)
+- [update_resource](./client.md#update_resource)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AlreadyExistsException](./client.md#alreadyexistsexception)
-- [ClientError](./client.md#clienterror)
-- [ConcurrentModificationException](./client.md#concurrentmodificationexception)
-- [EntityNotFoundException](./client.md#entitynotfoundexception)
-- [GlueEncryptionException](./client.md#glueencryptionexception)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [OperationTimeoutException](./client.md#operationtimeoutexception)
-- [ResourceNumberLimitExceededException](./client.md#resourcenumberlimitexceededexception)
+LakeFormationClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AlreadyExistsException
+- ClientError
+- ConcurrentModificationException
+- EntityNotFoundException
+- GlueEncryptionException
+- InternalServiceException
+- InvalidInputException
+- OperationTimeoutException
+- ResourceNumberLimitExceededException
 
 ## Literals
 
@@ -79,15 +79,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lakeformation.literals import ComparisonOperator, ...
+from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
 ```
 
-- [ComparisonOperator](./literals.md#comparisonoperator)
-- [DataLakeResourceType](./literals.md#datalakeresourcetype)
-- [FieldNameString](./literals.md#fieldnamestring)
-- [Permission](./literals.md#permission)
-- [ResourceShareType](./literals.md#resourcesharetype)
-- [ResourceType](./literals.md#resourcetype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
+- [DataLakeResourceTypeType](./literals.md#datalakeresourcetypetype)
+- [FieldNameStringType](./literals.md#fieldnamestringtype)
+- [PermissionType](./literals.md#permissiontype)
+- [ResourceShareTypeType](./literals.md#resourcesharetypetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
 
 ## Typed dictionaries
 

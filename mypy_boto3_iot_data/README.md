@@ -3,7 +3,7 @@
 > [Index](..) > IoTDataPlane
 
 Auto-generated documentation for
-[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
+[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane)
 type annotations stubs module
 [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
@@ -28,31 +28,31 @@ Can be used directly:
 from mypy_boto3_iot_data.client import IoTDataPlaneClient
 ```
 
-IoTDataPlaneClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_thing_shadow](./client.md#delete-thing-shadow)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_thing_shadow](./client.md#get-thing-shadow)
-- [list_named_shadows_for_thing](./client.md#list-named-shadows-for-thing)
+- [can_paginate](./client.md#can_paginate)
+- [delete_thing_shadow](./client.md#delete_thing_shadow)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_thing_shadow](./client.md#get_thing_shadow)
+- [list_named_shadows_for_thing](./client.md#list_named_shadows_for_thing)
 - [publish](./client.md#publish)
-- [update_thing_shadow](./client.md#update-thing-shadow)
+- [update_thing_shadow](./client.md#update_thing_shadow)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [MethodNotAllowedException](./client.md#methodnotallowedexception)
-- [RequestEntityTooLargeException](./client.md#requestentitytoolargeexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [UnauthorizedException](./client.md#unauthorizedexception)
-- [UnsupportedDocumentEncodingException](./client.md#unsupporteddocumentencodingexception)
+IoTDataPlaneClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalFailureException
+- InvalidRequestException
+- MethodNotAllowedException
+- RequestEntityTooLargeException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
+- UnauthorizedException
+- UnsupportedDocumentEncodingException
 
 ## Typed dictionaries
 

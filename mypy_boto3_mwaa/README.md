@@ -3,7 +3,7 @@
 > [Index](..) > MWAA
 
 Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA)
 type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
@@ -29,32 +29,32 @@ Can be used directly:
 from mypy_boto3_mwaa.client import MWAAClient
 ```
 
-MWAAClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_cli_token](./client.md#create-cli-token)
-- [create_environment](./client.md#create-environment)
-- [create_web_login_token](./client.md#create-web-login-token)
-- [delete_environment](./client.md#delete-environment)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_environment](./client.md#get-environment)
-- [get_paginator](./client.md#get-paginator)
-- [list_environments](./client.md#list-environments)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [publish_metrics](./client.md#publish-metrics)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_environment](./client.md#update-environment)
+- [can_paginate](./client.md#can_paginate)
+- [create_cli_token](./client.md#create_cli_token)
+- [create_environment](./client.md#create_environment)
+- [create_web_login_token](./client.md#create_web_login_token)
+- [delete_environment](./client.md#delete_environment)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_environment](./client.md#get_environment)
+- [get_paginator](./client.md#get_paginator)
+- [list_environments](./client.md#list_environments)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [publish_metrics](./client.md#publish_metrics)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_environment](./client.md#update_environment)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+MWAAClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 
@@ -76,15 +76,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mwaa.literals import EnvironmentStatus, ...
+from mypy_boto3_mwaa.literals import EnvironmentStatusType, ...
 ```
 
-- [EnvironmentStatus](./literals.md#environmentstatus)
+- [EnvironmentStatusType](./literals.md#environmentstatustype)
 - [ListEnvironmentsPaginatorName](./literals.md#listenvironmentspaginatorname)
-- [LoggingLevel](./literals.md#logginglevel)
-- [Unit](./literals.md#unit)
-- [UpdateStatus](./literals.md#updatestatus)
-- [WebserverAccessMode](./literals.md#webserveraccessmode)
+- [LoggingLevelType](./literals.md#loggingleveltype)
+- [UnitType](./literals.md#unittype)
+- [UpdateStatusType](./literals.md#updatestatustype)
+- [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
 
 ## Typed dictionaries
 

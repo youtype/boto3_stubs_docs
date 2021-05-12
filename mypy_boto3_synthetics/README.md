@@ -3,7 +3,7 @@
 > [Index](..) > Synthetics
 
 Auto-generated documentation for
-[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
 [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
@@ -29,33 +29,33 @@ Can be used directly:
 from mypy_boto3_synthetics.client import SyntheticsClient
 ```
 
-SyntheticsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_canary](./client.md#create-canary)
-- [delete_canary](./client.md#delete-canary)
-- [describe_canaries](./client.md#describe-canaries)
-- [describe_canaries_last_run](./client.md#describe-canaries-last-run)
-- [describe_runtime_versions](./client.md#describe-runtime-versions)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_canary](./client.md#get-canary)
-- [get_canary_runs](./client.md#get-canary-runs)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_canary](./client.md#start-canary)
-- [stop_canary](./client.md#stop-canary)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_canary](./client.md#update-canary)
+- [can_paginate](./client.md#can_paginate)
+- [create_canary](./client.md#create_canary)
+- [delete_canary](./client.md#delete_canary)
+- [describe_canaries](./client.md#describe_canaries)
+- [describe_canaries_last_run](./client.md#describe_canaries_last_run)
+- [describe_runtime_versions](./client.md#describe_runtime_versions)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_canary](./client.md#get_canary)
+- [get_canary_runs](./client.md#get_canary_runs)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_canary](./client.md#start_canary)
+- [stop_canary](./client.md#stop_canary)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_canary](./client.md#update_canary)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+SyntheticsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ValidationException
 
 ## Literals
 
@@ -64,13 +64,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_synthetics.literals import CanaryRunState, ...
+from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
 ```
 
-- [CanaryRunState](./literals.md#canaryrunstate)
-- [CanaryRunStateReasonCode](./literals.md#canaryrunstatereasoncode)
-- [CanaryState](./literals.md#canarystate)
-- [CanaryStateReasonCode](./literals.md#canarystatereasoncode)
+- [CanaryRunStateReasonCodeType](./literals.md#canaryrunstatereasoncodetype)
+- [CanaryRunStateType](./literals.md#canaryrunstatetype)
+- [CanaryStateReasonCodeType](./literals.md#canarystatereasoncodetype)
+- [CanaryStateType](./literals.md#canarystatetype)
 
 ## Typed dictionaries
 

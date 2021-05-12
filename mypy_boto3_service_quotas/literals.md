@@ -3,26 +3,26 @@
 > [Index](..) > [ServiceQuotas](.) > Literals
 
 Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 - [Literals for boto3 ServiceQuotas module](#literals-for-boto3-servicequotas-module)
-  - [ErrorCode](#errorcode)
+  - [ErrorCodeType](#errorcodetype)
   - [ListAWSDefaultServiceQuotasPaginatorName](#listawsdefaultservicequotaspaginatorname)
   - [ListRequestedServiceQuotaChangeHistoryByQuotaPaginatorName](#listrequestedservicequotachangehistorybyquotapaginatorname)
   - [ListRequestedServiceQuotaChangeHistoryPaginatorName](#listrequestedservicequotachangehistorypaginatorname)
   - [ListServiceQuotaIncreaseRequestsInTemplatePaginatorName](#listservicequotaincreaserequestsintemplatepaginatorname)
   - [ListServiceQuotasPaginatorName](#listservicequotaspaginatorname)
   - [ListServicesPaginatorName](#listservicespaginatorname)
-  - [PeriodUnit](#periodunit)
-  - [RequestStatus](#requeststatus)
-  - [ServiceQuotaTemplateAssociationStatus](#servicequotatemplateassociationstatus)
+  - [PeriodUnitType](#periodunittype)
+  - [RequestStatusType](#requeststatustype)
+  - [ServiceQuotaTemplateAssociationStatusType](#servicequotatemplateassociationstatustype)
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_service_quotas.literals import ErrorCode
+from mypy_boto3_service_quotas.literals import ErrorCodeType
 ```
 
 Values:
@@ -92,10 +92,10 @@ Values:
 
 - `list_services`
 
-## PeriodUnit
+## PeriodUnitType
 
 ```python
-from mypy_boto3_service_quotas.literals import PeriodUnit
+from mypy_boto3_service_quotas.literals import PeriodUnitType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 - `SECOND`
 - `WEEK`
 
-## RequestStatus
+## RequestStatusType
 
 ```python
-from mypy_boto3_service_quotas.literals import RequestStatus
+from mypy_boto3_service_quotas.literals import RequestStatusType
 ```
 
 Values:
@@ -122,10 +122,10 @@ Values:
 - `DENIED`
 - `PENDING`
 
-## ServiceQuotaTemplateAssociationStatus
+## ServiceQuotaTemplateAssociationStatusType
 
 ```python
-from mypy_boto3_service_quotas.literals import ServiceQuotaTemplateAssociationStatus
+from mypy_boto3_service_quotas.literals import ServiceQuotaTemplateAssociationStatusType
 ```
 
 Values:

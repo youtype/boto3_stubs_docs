@@ -3,7 +3,7 @@
 > [Index](..) > SWF
 
 Auto-generated documentation for
-[SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF)
 type annotations stubs module
 [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
@@ -29,64 +29,64 @@ Can be used directly:
 from mypy_boto3_swf.client import SWFClient
 ```
 
-SWFClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [count_closed_workflow_executions](./client.md#count-closed-workflow-executions)
-- [count_open_workflow_executions](./client.md#count-open-workflow-executions)
-- [count_pending_activity_tasks](./client.md#count-pending-activity-tasks)
-- [count_pending_decision_tasks](./client.md#count-pending-decision-tasks)
-- [deprecate_activity_type](./client.md#deprecate-activity-type)
-- [deprecate_domain](./client.md#deprecate-domain)
-- [deprecate_workflow_type](./client.md#deprecate-workflow-type)
-- [describe_activity_type](./client.md#describe-activity-type)
-- [describe_domain](./client.md#describe-domain)
-- [describe_workflow_execution](./client.md#describe-workflow-execution)
-- [describe_workflow_type](./client.md#describe-workflow-type)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_workflow_execution_history](./client.md#get-workflow-execution-history)
-- [list_activity_types](./client.md#list-activity-types)
-- [list_closed_workflow_executions](./client.md#list-closed-workflow-executions)
-- [list_domains](./client.md#list-domains)
-- [list_open_workflow_executions](./client.md#list-open-workflow-executions)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_workflow_types](./client.md#list-workflow-types)
-- [poll_for_activity_task](./client.md#poll-for-activity-task)
-- [poll_for_decision_task](./client.md#poll-for-decision-task)
-- [record_activity_task_heartbeat](./client.md#record-activity-task-heartbeat)
-- [register_activity_type](./client.md#register-activity-type)
-- [register_domain](./client.md#register-domain)
-- [register_workflow_type](./client.md#register-workflow-type)
-- [request_cancel_workflow_execution](./client.md#request-cancel-workflow-execution)
-- [respond_activity_task_canceled](./client.md#respond-activity-task-canceled)
-- [respond_activity_task_completed](./client.md#respond-activity-task-completed)
-- [respond_activity_task_failed](./client.md#respond-activity-task-failed)
-- [respond_decision_task_completed](./client.md#respond-decision-task-completed)
-- [signal_workflow_execution](./client.md#signal-workflow-execution)
-- [start_workflow_execution](./client.md#start-workflow-execution)
-- [tag_resource](./client.md#tag-resource)
-- [terminate_workflow_execution](./client.md#terminate-workflow-execution)
-- [undeprecate_activity_type](./client.md#undeprecate-activity-type)
-- [undeprecate_domain](./client.md#undeprecate-domain)
-- [undeprecate_workflow_type](./client.md#undeprecate-workflow-type)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [count_closed_workflow_executions](./client.md#count_closed_workflow_executions)
+- [count_open_workflow_executions](./client.md#count_open_workflow_executions)
+- [count_pending_activity_tasks](./client.md#count_pending_activity_tasks)
+- [count_pending_decision_tasks](./client.md#count_pending_decision_tasks)
+- [deprecate_activity_type](./client.md#deprecate_activity_type)
+- [deprecate_domain](./client.md#deprecate_domain)
+- [deprecate_workflow_type](./client.md#deprecate_workflow_type)
+- [describe_activity_type](./client.md#describe_activity_type)
+- [describe_domain](./client.md#describe_domain)
+- [describe_workflow_execution](./client.md#describe_workflow_execution)
+- [describe_workflow_type](./client.md#describe_workflow_type)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_workflow_execution_history](./client.md#get_workflow_execution_history)
+- [list_activity_types](./client.md#list_activity_types)
+- [list_closed_workflow_executions](./client.md#list_closed_workflow_executions)
+- [list_domains](./client.md#list_domains)
+- [list_open_workflow_executions](./client.md#list_open_workflow_executions)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_workflow_types](./client.md#list_workflow_types)
+- [poll_for_activity_task](./client.md#poll_for_activity_task)
+- [poll_for_decision_task](./client.md#poll_for_decision_task)
+- [record_activity_task_heartbeat](./client.md#record_activity_task_heartbeat)
+- [register_activity_type](./client.md#register_activity_type)
+- [register_domain](./client.md#register_domain)
+- [register_workflow_type](./client.md#register_workflow_type)
+- [request_cancel_workflow_execution](./client.md#request_cancel_workflow_execution)
+- [respond_activity_task_canceled](./client.md#respond_activity_task_canceled)
+- [respond_activity_task_completed](./client.md#respond_activity_task_completed)
+- [respond_activity_task_failed](./client.md#respond_activity_task_failed)
+- [respond_decision_task_completed](./client.md#respond_decision_task_completed)
+- [signal_workflow_execution](./client.md#signal_workflow_execution)
+- [start_workflow_execution](./client.md#start_workflow_execution)
+- [tag_resource](./client.md#tag_resource)
+- [terminate_workflow_execution](./client.md#terminate_workflow_execution)
+- [undeprecate_activity_type](./client.md#undeprecate_activity_type)
+- [undeprecate_domain](./client.md#undeprecate_domain)
+- [undeprecate_workflow_type](./client.md#undeprecate_workflow_type)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DefaultUndefinedFault](./client.md#defaultundefinedfault)
-- [DomainAlreadyExistsFault](./client.md#domainalreadyexistsfault)
-- [DomainDeprecatedFault](./client.md#domaindeprecatedfault)
-- [LimitExceededFault](./client.md#limitexceededfault)
-- [OperationNotPermittedFault](./client.md#operationnotpermittedfault)
-- [TooManyTagsFault](./client.md#toomanytagsfault)
-- [TypeAlreadyExistsFault](./client.md#typealreadyexistsfault)
-- [TypeDeprecatedFault](./client.md#typedeprecatedfault)
-- [UnknownResourceFault](./client.md#unknownresourcefault)
-- [WorkflowExecutionAlreadyStartedFault](./client.md#workflowexecutionalreadystartedfault)
+SWFClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DefaultUndefinedFault
+- DomainAlreadyExistsFault
+- DomainDeprecatedFault
+- LimitExceededFault
+- OperationNotPermittedFault
+- TooManyTagsFault
+- TypeAlreadyExistsFault
+- TypeDeprecatedFault
+- UnknownResourceFault
+- WorkflowExecutionAlreadyStartedFault
 
 ## Paginators
 
@@ -114,42 +114,42 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.literals import ActivityTaskTimeoutType, ...
+from mypy_boto3_swf.literals import ActivityTaskTimeoutTypeType, ...
 ```
 
-- [ActivityTaskTimeoutType](./literals.md#activitytasktimeouttype)
-- [CancelTimerFailedCause](./literals.md#canceltimerfailedcause)
-- [CancelWorkflowExecutionFailedCause](./literals.md#cancelworkflowexecutionfailedcause)
-- [ChildPolicy](./literals.md#childpolicy)
-- [CloseStatus](./literals.md#closestatus)
-- [CompleteWorkflowExecutionFailedCause](./literals.md#completeworkflowexecutionfailedcause)
-- [ContinueAsNewWorkflowExecutionFailedCause](./literals.md#continueasnewworkflowexecutionfailedcause)
-- [DecisionTaskTimeoutType](./literals.md#decisiontasktimeouttype)
-- [DecisionType](./literals.md#decisiontype)
-- [EventType](./literals.md#eventtype)
-- [ExecutionStatus](./literals.md#executionstatus)
-- [FailWorkflowExecutionFailedCause](./literals.md#failworkflowexecutionfailedcause)
+- [ActivityTaskTimeoutTypeType](./literals.md#activitytasktimeouttypetype)
+- [CancelTimerFailedCauseType](./literals.md#canceltimerfailedcausetype)
+- [CancelWorkflowExecutionFailedCauseType](./literals.md#cancelworkflowexecutionfailedcausetype)
+- [ChildPolicyType](./literals.md#childpolicytype)
+- [CloseStatusType](./literals.md#closestatustype)
+- [CompleteWorkflowExecutionFailedCauseType](./literals.md#completeworkflowexecutionfailedcausetype)
+- [ContinueAsNewWorkflowExecutionFailedCauseType](./literals.md#continueasnewworkflowexecutionfailedcausetype)
+- [DecisionTaskTimeoutTypeType](./literals.md#decisiontasktimeouttypetype)
+- [DecisionTypeType](./literals.md#decisiontypetype)
+- [EventTypeType](./literals.md#eventtypetype)
+- [ExecutionStatusType](./literals.md#executionstatustype)
+- [FailWorkflowExecutionFailedCauseType](./literals.md#failworkflowexecutionfailedcausetype)
 - [GetWorkflowExecutionHistoryPaginatorName](./literals.md#getworkflowexecutionhistorypaginatorname)
-- [LambdaFunctionTimeoutType](./literals.md#lambdafunctiontimeouttype)
+- [LambdaFunctionTimeoutTypeType](./literals.md#lambdafunctiontimeouttypetype)
 - [ListActivityTypesPaginatorName](./literals.md#listactivitytypespaginatorname)
 - [ListClosedWorkflowExecutionsPaginatorName](./literals.md#listclosedworkflowexecutionspaginatorname)
 - [ListDomainsPaginatorName](./literals.md#listdomainspaginatorname)
 - [ListOpenWorkflowExecutionsPaginatorName](./literals.md#listopenworkflowexecutionspaginatorname)
 - [ListWorkflowTypesPaginatorName](./literals.md#listworkflowtypespaginatorname)
 - [PollForDecisionTaskPaginatorName](./literals.md#pollfordecisiontaskpaginatorname)
-- [RecordMarkerFailedCause](./literals.md#recordmarkerfailedcause)
-- [RegistrationStatus](./literals.md#registrationstatus)
-- [RequestCancelActivityTaskFailedCause](./literals.md#requestcancelactivitytaskfailedcause)
-- [RequestCancelExternalWorkflowExecutionFailedCause](./literals.md#requestcancelexternalworkflowexecutionfailedcause)
-- [ScheduleActivityTaskFailedCause](./literals.md#scheduleactivitytaskfailedcause)
-- [ScheduleLambdaFunctionFailedCause](./literals.md#schedulelambdafunctionfailedcause)
-- [SignalExternalWorkflowExecutionFailedCause](./literals.md#signalexternalworkflowexecutionfailedcause)
-- [StartChildWorkflowExecutionFailedCause](./literals.md#startchildworkflowexecutionfailedcause)
-- [StartLambdaFunctionFailedCause](./literals.md#startlambdafunctionfailedcause)
-- [StartTimerFailedCause](./literals.md#starttimerfailedcause)
-- [WorkflowExecutionCancelRequestedCause](./literals.md#workflowexecutioncancelrequestedcause)
-- [WorkflowExecutionTerminatedCause](./literals.md#workflowexecutionterminatedcause)
-- [WorkflowExecutionTimeoutType](./literals.md#workflowexecutiontimeouttype)
+- [RecordMarkerFailedCauseType](./literals.md#recordmarkerfailedcausetype)
+- [RegistrationStatusType](./literals.md#registrationstatustype)
+- [RequestCancelActivityTaskFailedCauseType](./literals.md#requestcancelactivitytaskfailedcausetype)
+- [RequestCancelExternalWorkflowExecutionFailedCauseType](./literals.md#requestcancelexternalworkflowexecutionfailedcausetype)
+- [ScheduleActivityTaskFailedCauseType](./literals.md#scheduleactivitytaskfailedcausetype)
+- [ScheduleLambdaFunctionFailedCauseType](./literals.md#schedulelambdafunctionfailedcausetype)
+- [SignalExternalWorkflowExecutionFailedCauseType](./literals.md#signalexternalworkflowexecutionfailedcausetype)
+- [StartChildWorkflowExecutionFailedCauseType](./literals.md#startchildworkflowexecutionfailedcausetype)
+- [StartLambdaFunctionFailedCauseType](./literals.md#startlambdafunctionfailedcausetype)
+- [StartTimerFailedCauseType](./literals.md#starttimerfailedcausetype)
+- [WorkflowExecutionCancelRequestedCauseType](./literals.md#workflowexecutioncancelrequestedcausetype)
+- [WorkflowExecutionTerminatedCauseType](./literals.md#workflowexecutionterminatedcausetype)
+- [WorkflowExecutionTimeoutTypeType](./literals.md#workflowexecutiontimeouttypetype)
 
 ## Typed dictionaries
 

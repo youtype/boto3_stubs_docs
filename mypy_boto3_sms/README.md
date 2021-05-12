@@ -3,7 +3,7 @@
 > [Index](..) > SMS
 
 Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS)
 type annotations stubs module
 [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
@@ -29,64 +29,64 @@ Can be used directly:
 from mypy_boto3_sms.client import SMSClient
 ```
 
-SMSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_app](./client.md#create-app)
-- [create_replication_job](./client.md#create-replication-job)
-- [delete_app](./client.md#delete-app)
-- [delete_app_launch_configuration](./client.md#delete-app-launch-configuration)
-- [delete_app_replication_configuration](./client.md#delete-app-replication-configuration)
-- [delete_app_validation_configuration](./client.md#delete-app-validation-configuration)
-- [delete_replication_job](./client.md#delete-replication-job)
-- [delete_server_catalog](./client.md#delete-server-catalog)
-- [disassociate_connector](./client.md#disassociate-connector)
-- [generate_change_set](./client.md#generate-change-set)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [generate_template](./client.md#generate-template)
-- [get_app](./client.md#get-app)
-- [get_app_launch_configuration](./client.md#get-app-launch-configuration)
-- [get_app_replication_configuration](./client.md#get-app-replication-configuration)
-- [get_app_validation_configuration](./client.md#get-app-validation-configuration)
-- [get_app_validation_output](./client.md#get-app-validation-output)
-- [get_connectors](./client.md#get-connectors)
-- [get_paginator](./client.md#get-paginator)
-- [get_replication_jobs](./client.md#get-replication-jobs)
-- [get_replication_runs](./client.md#get-replication-runs)
-- [get_servers](./client.md#get-servers)
-- [import_app_catalog](./client.md#import-app-catalog)
-- [import_server_catalog](./client.md#import-server-catalog)
-- [launch_app](./client.md#launch-app)
-- [list_apps](./client.md#list-apps)
-- [notify_app_validation_output](./client.md#notify-app-validation-output)
-- [put_app_launch_configuration](./client.md#put-app-launch-configuration)
-- [put_app_replication_configuration](./client.md#put-app-replication-configuration)
-- [put_app_validation_configuration](./client.md#put-app-validation-configuration)
-- [start_app_replication](./client.md#start-app-replication)
-- [start_on_demand_app_replication](./client.md#start-on-demand-app-replication)
-- [start_on_demand_replication_run](./client.md#start-on-demand-replication-run)
-- [stop_app_replication](./client.md#stop-app-replication)
-- [terminate_app](./client.md#terminate-app)
-- [update_app](./client.md#update-app)
-- [update_replication_job](./client.md#update-replication-job)
+- [can_paginate](./client.md#can_paginate)
+- [create_app](./client.md#create_app)
+- [create_replication_job](./client.md#create_replication_job)
+- [delete_app](./client.md#delete_app)
+- [delete_app_launch_configuration](./client.md#delete_app_launch_configuration)
+- [delete_app_replication_configuration](./client.md#delete_app_replication_configuration)
+- [delete_app_validation_configuration](./client.md#delete_app_validation_configuration)
+- [delete_replication_job](./client.md#delete_replication_job)
+- [delete_server_catalog](./client.md#delete_server_catalog)
+- [disassociate_connector](./client.md#disassociate_connector)
+- [generate_change_set](./client.md#generate_change_set)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [generate_template](./client.md#generate_template)
+- [get_app](./client.md#get_app)
+- [get_app_launch_configuration](./client.md#get_app_launch_configuration)
+- [get_app_replication_configuration](./client.md#get_app_replication_configuration)
+- [get_app_validation_configuration](./client.md#get_app_validation_configuration)
+- [get_app_validation_output](./client.md#get_app_validation_output)
+- [get_connectors](./client.md#get_connectors)
+- [get_paginator](./client.md#get_paginator)
+- [get_replication_jobs](./client.md#get_replication_jobs)
+- [get_replication_runs](./client.md#get_replication_runs)
+- [get_servers](./client.md#get_servers)
+- [import_app_catalog](./client.md#import_app_catalog)
+- [import_server_catalog](./client.md#import_server_catalog)
+- [launch_app](./client.md#launch_app)
+- [list_apps](./client.md#list_apps)
+- [notify_app_validation_output](./client.md#notify_app_validation_output)
+- [put_app_launch_configuration](./client.md#put_app_launch_configuration)
+- [put_app_replication_configuration](./client.md#put_app_replication_configuration)
+- [put_app_validation_configuration](./client.md#put_app_validation_configuration)
+- [start_app_replication](./client.md#start_app_replication)
+- [start_on_demand_app_replication](./client.md#start_on_demand_app_replication)
+- [start_on_demand_replication_run](./client.md#start_on_demand_replication_run)
+- [stop_app_replication](./client.md#stop_app_replication)
+- [terminate_app](./client.md#terminate_app)
+- [update_app](./client.md#update_app)
+- [update_replication_job](./client.md#update_replication_job)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DryRunOperationException](./client.md#dryrunoperationexception)
-- [InternalError](./client.md#internalerror)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [MissingRequiredParameterException](./client.md#missingrequiredparameterexception)
-- [NoConnectorsAvailableException](./client.md#noconnectorsavailableexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [ReplicationJobAlreadyExistsException](./client.md#replicationjobalreadyexistsexception)
-- [ReplicationJobNotFoundException](./client.md#replicationjobnotfoundexception)
-- [ReplicationRunLimitExceededException](./client.md#replicationrunlimitexceededexception)
-- [ServerCannotBeReplicatedException](./client.md#servercannotbereplicatedexception)
-- [TemporarilyUnavailableException](./client.md#temporarilyunavailableexception)
-- [UnauthorizedOperationException](./client.md#unauthorizedoperationexception)
+SMSClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DryRunOperationException
+- InternalError
+- InvalidParameterException
+- MissingRequiredParameterException
+- NoConnectorsAvailableException
+- OperationNotPermittedException
+- ReplicationJobAlreadyExistsException
+- ReplicationJobNotFoundException
+- ReplicationRunLimitExceededException
+- ServerCannotBeReplicatedException
+- TemporarilyUnavailableException
+- UnauthorizedOperationException
 
 ## Paginators
 
@@ -112,33 +112,33 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.literals import AppLaunchConfigurationStatus, ...
+from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType, ...
 ```
 
-- [AppLaunchConfigurationStatus](./literals.md#applaunchconfigurationstatus)
-- [AppLaunchStatus](./literals.md#applaunchstatus)
-- [AppReplicationConfigurationStatus](./literals.md#appreplicationconfigurationstatus)
-- [AppReplicationStatus](./literals.md#appreplicationstatus)
-- [AppStatus](./literals.md#appstatus)
-- [AppValidationStrategy](./literals.md#appvalidationstrategy)
-- [ConnectorCapability](./literals.md#connectorcapability)
-- [ConnectorStatus](./literals.md#connectorstatus)
+- [AppLaunchConfigurationStatusType](./literals.md#applaunchconfigurationstatustype)
+- [AppLaunchStatusType](./literals.md#applaunchstatustype)
+- [AppReplicationConfigurationStatusType](./literals.md#appreplicationconfigurationstatustype)
+- [AppReplicationStatusType](./literals.md#appreplicationstatustype)
+- [AppStatusType](./literals.md#appstatustype)
+- [AppValidationStrategyType](./literals.md#appvalidationstrategytype)
+- [ConnectorCapabilityType](./literals.md#connectorcapabilitytype)
+- [ConnectorStatusType](./literals.md#connectorstatustype)
 - [GetConnectorsPaginatorName](./literals.md#getconnectorspaginatorname)
 - [GetReplicationJobsPaginatorName](./literals.md#getreplicationjobspaginatorname)
 - [GetReplicationRunsPaginatorName](./literals.md#getreplicationrunspaginatorname)
 - [GetServersPaginatorName](./literals.md#getserverspaginatorname)
-- [LicenseType](./literals.md#licensetype)
+- [LicenseTypeType](./literals.md#licensetypetype)
 - [ListAppsPaginatorName](./literals.md#listappspaginatorname)
-- [OutputFormat](./literals.md#outputformat)
-- [ReplicationJobState](./literals.md#replicationjobstate)
-- [ReplicationRunState](./literals.md#replicationrunstate)
-- [ReplicationRunType](./literals.md#replicationruntype)
-- [ScriptType](./literals.md#scripttype)
-- [ServerCatalogStatus](./literals.md#servercatalogstatus)
-- [ServerType](./literals.md#servertype)
-- [ServerValidationStrategy](./literals.md#servervalidationstrategy)
-- [ValidationStatus](./literals.md#validationstatus)
-- [VmManagerType](./literals.md#vmmanagertype)
+- [OutputFormatType](./literals.md#outputformattype)
+- [ReplicationJobStateType](./literals.md#replicationjobstatetype)
+- [ReplicationRunStateType](./literals.md#replicationrunstatetype)
+- [ReplicationRunTypeType](./literals.md#replicationruntypetype)
+- [ScriptTypeType](./literals.md#scripttypetype)
+- [ServerCatalogStatusType](./literals.md#servercatalogstatustype)
+- [ServerTypeType](./literals.md#servertypetype)
+- [ServerValidationStrategyType](./literals.md#servervalidationstrategytype)
+- [ValidationStatusType](./literals.md#validationstatustype)
+- [VmManagerTypeType](./literals.md#vmmanagertypetype)
 
 ## Typed dictionaries
 

@@ -3,44 +3,44 @@
 > [Index](..) > [SecurityHub](.) > Literals
 
 Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
 [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 - [Literals for boto3 SecurityHub module](#literals-for-boto3-securityhub-module)
-  - [AdminStatus](#adminstatus)
-  - [AwsIamAccessKeyStatus](#awsiamaccesskeystatus)
-  - [ComplianceStatus](#compliancestatus)
-  - [ControlStatus](#controlstatus)
-  - [DateRangeUnit](#daterangeunit)
+  - [AdminStatusType](#adminstatustype)
+  - [AwsIamAccessKeyStatusType](#awsiamaccesskeystatustype)
+  - [ComplianceStatusType](#compliancestatustype)
+  - [ControlStatusType](#controlstatustype)
+  - [DateRangeUnitType](#daterangeunittype)
   - [GetEnabledStandardsPaginatorName](#getenabledstandardspaginatorname)
   - [GetFindingsPaginatorName](#getfindingspaginatorname)
   - [GetInsightsPaginatorName](#getinsightspaginatorname)
-  - [IntegrationType](#integrationtype)
+  - [IntegrationTypeType](#integrationtypetype)
   - [ListEnabledProductsForImportPaginatorName](#listenabledproductsforimportpaginatorname)
   - [ListInvitationsPaginatorName](#listinvitationspaginatorname)
   - [ListMembersPaginatorName](#listmemberspaginatorname)
-  - [MalwareState](#malwarestate)
-  - [MalwareType](#malwaretype)
-  - [MapFilterComparison](#mapfiltercomparison)
-  - [NetworkDirection](#networkdirection)
-  - [Partition](#partition)
-  - [RecordState](#recordstate)
-  - [SeverityLabel](#severitylabel)
-  - [SeverityRating](#severityrating)
-  - [SortOrder](#sortorder)
-  - [StandardsStatus](#standardsstatus)
-  - [StringFilterComparison](#stringfiltercomparison)
-  - [ThreatIntelIndicatorCategory](#threatintelindicatorcategory)
-  - [ThreatIntelIndicatorType](#threatintelindicatortype)
-  - [VerificationState](#verificationstate)
-  - [WorkflowState](#workflowstate)
-  - [WorkflowStatus](#workflowstatus)
+  - [MalwareStateType](#malwarestatetype)
+  - [MalwareTypeType](#malwaretypetype)
+  - [MapFilterComparisonType](#mapfiltercomparisontype)
+  - [NetworkDirectionType](#networkdirectiontype)
+  - [PartitionType](#partitiontype)
+  - [RecordStateType](#recordstatetype)
+  - [SeverityLabelType](#severitylabeltype)
+  - [SeverityRatingType](#severityratingtype)
+  - [SortOrderType](#sortordertype)
+  - [StandardsStatusType](#standardsstatustype)
+  - [StringFilterComparisonType](#stringfiltercomparisontype)
+  - [ThreatIntelIndicatorCategoryType](#threatintelindicatorcategorytype)
+  - [ThreatIntelIndicatorTypeType](#threatintelindicatortypetype)
+  - [VerificationStateType](#verificationstatetype)
+  - [WorkflowStateType](#workflowstatetype)
+  - [WorkflowStatusType](#workflowstatustype)
 
-## AdminStatus
+## AdminStatusType
 
 ```python
-from mypy_boto3_securityhub.literals import AdminStatus
+from mypy_boto3_securityhub.literals import AdminStatusType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `DISABLE_IN_PROGRESS`
 - `ENABLED`
 
-## AwsIamAccessKeyStatus
+## AwsIamAccessKeyStatusType
 
 ```python
-from mypy_boto3_securityhub.literals import AwsIamAccessKeyStatus
+from mypy_boto3_securityhub.literals import AwsIamAccessKeyStatusType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `Active`
 - `Inactive`
 
-## ComplianceStatus
+## ComplianceStatusType
 
 ```python
-from mypy_boto3_securityhub.literals import ComplianceStatus
+from mypy_boto3_securityhub.literals import ComplianceStatusType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 - `PASSED`
 - `WARNING`
 
-## ControlStatus
+## ControlStatusType
 
 ```python
-from mypy_boto3_securityhub.literals import ControlStatus
+from mypy_boto3_securityhub.literals import ControlStatusType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## DateRangeUnit
+## DateRangeUnitType
 
 ```python
-from mypy_boto3_securityhub.literals import DateRangeUnit
+from mypy_boto3_securityhub.literals import DateRangeUnitType
 ```
 
 Values:
@@ -123,10 +123,10 @@ Values:
 
 - `get_insights`
 
-## IntegrationType
+## IntegrationTypeType
 
 ```python
-from mypy_boto3_securityhub.literals import IntegrationType
+from mypy_boto3_securityhub.literals import IntegrationTypeType
 ```
 
 Values:
@@ -165,10 +165,10 @@ Values:
 
 - `list_members`
 
-## MalwareState
+## MalwareStateType
 
 ```python
-from mypy_boto3_securityhub.literals import MalwareState
+from mypy_boto3_securityhub.literals import MalwareStateType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `REMOVAL_FAILED`
 - `REMOVED`
 
-## MalwareType
+## MalwareTypeType
 
 ```python
-from mypy_boto3_securityhub.literals import MalwareType
+from mypy_boto3_securityhub.literals import MalwareTypeType
 ```
 
 Values:
@@ -201,10 +201,10 @@ Values:
 - `VIRUS`
 - `WORM`
 
-## MapFilterComparison
+## MapFilterComparisonType
 
 ```python
-from mypy_boto3_securityhub.literals import MapFilterComparison
+from mypy_boto3_securityhub.literals import MapFilterComparisonType
 ```
 
 Values:
@@ -212,10 +212,10 @@ Values:
 - `EQUALS`
 - `NOT_EQUALS`
 
-## NetworkDirection
+## NetworkDirectionType
 
 ```python
-from mypy_boto3_securityhub.literals import NetworkDirection
+from mypy_boto3_securityhub.literals import NetworkDirectionType
 ```
 
 Values:
@@ -223,10 +223,10 @@ Values:
 - `IN`
 - `OUT`
 
-## Partition
+## PartitionType
 
 ```python
-from mypy_boto3_securityhub.literals import Partition
+from mypy_boto3_securityhub.literals import PartitionType
 ```
 
 Values:
@@ -235,10 +235,10 @@ Values:
 - `aws-cn`
 - `aws-us-gov`
 
-## RecordState
+## RecordStateType
 
 ```python
-from mypy_boto3_securityhub.literals import RecordState
+from mypy_boto3_securityhub.literals import RecordStateType
 ```
 
 Values:
@@ -246,10 +246,10 @@ Values:
 - `ACTIVE`
 - `ARCHIVED`
 
-## SeverityLabel
+## SeverityLabelType
 
 ```python
-from mypy_boto3_securityhub.literals import SeverityLabel
+from mypy_boto3_securityhub.literals import SeverityLabelType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## SeverityRating
+## SeverityRatingType
 
 ```python
-from mypy_boto3_securityhub.literals import SeverityRating
+from mypy_boto3_securityhub.literals import SeverityRatingType
 ```
 
 Values:
@@ -273,10 +273,10 @@ Values:
 - `LOW`
 - `MEDIUM`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_securityhub.literals import SortOrder
+from mypy_boto3_securityhub.literals import SortOrderType
 ```
 
 Values:
@@ -284,10 +284,10 @@ Values:
 - `asc`
 - `desc`
 
-## StandardsStatus
+## StandardsStatusType
 
 ```python
-from mypy_boto3_securityhub.literals import StandardsStatus
+from mypy_boto3_securityhub.literals import StandardsStatusType
 ```
 
 Values:
@@ -298,10 +298,10 @@ Values:
 - `PENDING`
 - `READY`
 
-## StringFilterComparison
+## StringFilterComparisonType
 
 ```python
-from mypy_boto3_securityhub.literals import StringFilterComparison
+from mypy_boto3_securityhub.literals import StringFilterComparisonType
 ```
 
 Values:
@@ -311,10 +311,10 @@ Values:
 - `PREFIX`
 - `PREFIX_NOT_EQUALS`
 
-## ThreatIntelIndicatorCategory
+## ThreatIntelIndicatorCategoryType
 
 ```python
-from mypy_boto3_securityhub.literals import ThreatIntelIndicatorCategory
+from mypy_boto3_securityhub.literals import ThreatIntelIndicatorCategoryType
 ```
 
 Values:
@@ -326,10 +326,10 @@ Values:
 - `EXPLOIT_SITE`
 - `KEYLOGGER`
 
-## ThreatIntelIndicatorType
+## ThreatIntelIndicatorTypeType
 
 ```python
-from mypy_boto3_securityhub.literals import ThreatIntelIndicatorType
+from mypy_boto3_securityhub.literals import ThreatIntelIndicatorTypeType
 ```
 
 Values:
@@ -346,10 +346,10 @@ Values:
 - `PROCESS`
 - `URL`
 
-## VerificationState
+## VerificationStateType
 
 ```python
-from mypy_boto3_securityhub.literals import VerificationState
+from mypy_boto3_securityhub.literals import VerificationStateType
 ```
 
 Values:
@@ -359,10 +359,10 @@ Values:
 - `TRUE_POSITIVE`
 - `UNKNOWN`
 
-## WorkflowState
+## WorkflowStateType
 
 ```python
-from mypy_boto3_securityhub.literals import WorkflowState
+from mypy_boto3_securityhub.literals import WorkflowStateType
 ```
 
 Values:
@@ -373,10 +373,10 @@ Values:
 - `NEW`
 - `RESOLVED`
 
-## WorkflowStatus
+## WorkflowStatusType
 
 ```python
-from mypy_boto3_securityhub.literals import WorkflowStatus
+from mypy_boto3_securityhub.literals import WorkflowStatusType
 ```
 
 Values:

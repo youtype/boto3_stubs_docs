@@ -3,7 +3,7 @@
 > [Index](..) > [ECR](.) > Literals
 
 Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ecr.html#ECR)
 type annotations stubs module
 [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
@@ -11,20 +11,20 @@ type annotations stubs module
   - [DescribeImageScanFindingsPaginatorName](#describeimagescanfindingspaginatorname)
   - [DescribeImagesPaginatorName](#describeimagespaginatorname)
   - [DescribeRepositoriesPaginatorName](#describerepositoriespaginatorname)
-  - [EncryptionType](#encryptiontype)
-  - [FindingSeverity](#findingseverity)
+  - [EncryptionTypeType](#encryptiontypetype)
+  - [FindingSeverityType](#findingseveritytype)
   - [GetLifecyclePolicyPreviewPaginatorName](#getlifecyclepolicypreviewpaginatorname)
-  - [ImageActionType](#imageactiontype)
-  - [ImageFailureCode](#imagefailurecode)
+  - [ImageActionTypeType](#imageactiontypetype)
+  - [ImageFailureCodeType](#imagefailurecodetype)
   - [ImageScanCompleteWaiterName](#imagescancompletewaitername)
-  - [ImageTagMutability](#imagetagmutability)
-  - [LayerAvailability](#layeravailability)
-  - [LayerFailureCode](#layerfailurecode)
+  - [ImageTagMutabilityType](#imagetagmutabilitytype)
+  - [LayerAvailabilityType](#layeravailabilitytype)
+  - [LayerFailureCodeType](#layerfailurecodetype)
   - [LifecyclePolicyPreviewCompleteWaiterName](#lifecyclepolicypreviewcompletewaitername)
-  - [LifecyclePolicyPreviewStatus](#lifecyclepolicypreviewstatus)
+  - [LifecyclePolicyPreviewStatusType](#lifecyclepolicypreviewstatustype)
   - [ListImagesPaginatorName](#listimagespaginatorname)
-  - [ScanStatus](#scanstatus)
-  - [TagStatus](#tagstatus)
+  - [ScanStatusType](#scanstatustype)
+  - [TagStatusType](#tagstatustype)
 
 ## DescribeImageScanFindingsPaginatorName
 
@@ -56,10 +56,10 @@ Values:
 
 - `describe_repositories`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_ecr.literals import EncryptionType
+from mypy_boto3_ecr.literals import EncryptionTypeType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 - `AES256`
 - `KMS`
 
-## FindingSeverity
+## FindingSeverityType
 
 ```python
-from mypy_boto3_ecr.literals import FindingSeverity
+from mypy_boto3_ecr.literals import FindingSeverityType
 ```
 
 Values:
@@ -92,20 +92,20 @@ Values:
 
 - `get_lifecycle_policy_preview`
 
-## ImageActionType
+## ImageActionTypeType
 
 ```python
-from mypy_boto3_ecr.literals import ImageActionType
+from mypy_boto3_ecr.literals import ImageActionTypeType
 ```
 
 Values:
 
 - `EXPIRE`
 
-## ImageFailureCode
+## ImageFailureCodeType
 
 ```python
-from mypy_boto3_ecr.literals import ImageFailureCode
+from mypy_boto3_ecr.literals import ImageFailureCodeType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 
 - `image_scan_complete`
 
-## ImageTagMutability
+## ImageTagMutabilityType
 
 ```python
-from mypy_boto3_ecr.literals import ImageTagMutability
+from mypy_boto3_ecr.literals import ImageTagMutabilityType
 ```
 
 Values:
@@ -139,10 +139,10 @@ Values:
 - `IMMUTABLE`
 - `MUTABLE`
 
-## LayerAvailability
+## LayerAvailabilityType
 
 ```python
-from mypy_boto3_ecr.literals import LayerAvailability
+from mypy_boto3_ecr.literals import LayerAvailabilityType
 ```
 
 Values:
@@ -150,10 +150,10 @@ Values:
 - `AVAILABLE`
 - `UNAVAILABLE`
 
-## LayerFailureCode
+## LayerFailureCodeType
 
 ```python
-from mypy_boto3_ecr.literals import LayerFailureCode
+from mypy_boto3_ecr.literals import LayerFailureCodeType
 ```
 
 Values:
@@ -171,10 +171,10 @@ Values:
 
 - `lifecycle_policy_preview_complete`
 
-## LifecyclePolicyPreviewStatus
+## LifecyclePolicyPreviewStatusType
 
 ```python
-from mypy_boto3_ecr.literals import LifecyclePolicyPreviewStatus
+from mypy_boto3_ecr.literals import LifecyclePolicyPreviewStatusType
 ```
 
 Values:
@@ -194,10 +194,10 @@ Values:
 
 - `list_images`
 
-## ScanStatus
+## ScanStatusType
 
 ```python
-from mypy_boto3_ecr.literals import ScanStatus
+from mypy_boto3_ecr.literals import ScanStatusType
 ```
 
 Values:
@@ -206,10 +206,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## TagStatus
+## TagStatusType
 
 ```python
-from mypy_boto3_ecr.literals import TagStatus
+from mypy_boto3_ecr.literals import TagStatusType
 ```
 
 Values:

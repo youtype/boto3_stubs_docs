@@ -3,7 +3,7 @@
 > [Index](..) > [SFN](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
 [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
@@ -235,7 +235,7 @@ Required fields:
 - `executionArn`: `str`
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
 - `startDate`: `datetime`
 - `stopDate`: `datetime`
 - `input`: `str`
@@ -278,10 +278,10 @@ Required fields:
 
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `status`: [StateMachineStatus](./literals.md#statemachinestatus)
+- `status`: [StateMachineStatusType](./literals.md#statemachinestatustype)
 - `definition`: `str`
 - `roleArn`: `str`
-- `type`: [StateMachineType](./literals.md#statemachinetype)
+- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
 - `creationDate`: `datetime`
 - `loggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
@@ -323,7 +323,7 @@ Required fields:
 - `executionArn`: `str`
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
 - `startDate`: `datetime`
 
 Optional fields:
@@ -411,7 +411,7 @@ from mypy_boto3_stepfunctions.type_defs import HistoryEventTypeDef
 Required fields:
 
 - `timestamp`: `datetime`
-- `type`: [HistoryEventType](./literals.md#historyeventtype)
+- `type`: [HistoryEventTypeType](./literals.md#historyeventtypetype)
 - `id`: `int`
 
 Optional fields:
@@ -628,7 +628,7 @@ from mypy_boto3_stepfunctions.type_defs import LoggingConfigurationTypeDef
 
 Optional fields:
 
-- `level`: [LogLevel](./literals.md#loglevel)
+- `level`: [LogLevelType](./literals.md#logleveltype)
 - `includeExecutionData`: `bool`
 - `destinations`:
   `List`\[[LogDestinationTypeDef](./type_defs.md#logdestinationtypedef)\]
@@ -706,7 +706,7 @@ Required fields:
 - `name`: `str`
 - `startDate`: `datetime`
 - `stopDate`: `datetime`
-- `status`: [SyncExecutionStatus](./literals.md#syncexecutionstatus)
+- `status`: [SyncExecutionStatusType](./literals.md#syncexecutionstatustype)
 - `error`: `str`
 - `cause`: `str`
 - `input`: `str`
@@ -716,7 +716,8 @@ Required fields:
 - `outputDetails`:
   [CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef)
 - `traceHeader`: `str`
-- `billingDetails`: [BillingDetailsTypeDef](./type_defs.md#billingdetailstypedef)
+- `billingDetails`:
+  [BillingDetailsTypeDef](./type_defs.md#billingdetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -762,7 +763,7 @@ Required fields:
 
 - `stateMachineArn`: `str`
 - `name`: `str`
-- `type`: [StateMachineType](./literals.md#statemachinetype)
+- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
 - `creationDate`: `datetime`
 
 ## StopExecutionOutputTypeDef

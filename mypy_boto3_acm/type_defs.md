@@ -3,7 +3,7 @@
 > [Index](..) > [ACM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm.html#ACM)
 type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
@@ -50,22 +50,25 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `IssuedAt`: `datetime`
 - `ImportedAt`: `datetime`
-- `Status`: [CertificateStatus](./literals.md#certificatestatus)
+- `Status`: [CertificateStatusType](./literals.md#certificatestatustype)
 - `RevokedAt`: `datetime`
-- `RevocationReason`: [RevocationReason](./literals.md#revocationreason)
+- `RevocationReason`:
+  [RevocationReasonType](./literals.md#revocationreasontype)
 - `NotBefore`: `datetime`
 - `NotAfter`: `datetime`
-- `KeyAlgorithm`: [KeyAlgorithm](./literals.md#keyalgorithm)
+- `KeyAlgorithm`: [KeyAlgorithmType](./literals.md#keyalgorithmtype)
 - `SignatureAlgorithm`: `str`
 - `InUseBy`: `List`\[`str`\]
-- `FailureReason`: [FailureReason](./literals.md#failurereason)
-- `Type`: [CertificateType](./literals.md#certificatetype)
-- `RenewalSummary`: [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
+- `FailureReason`: [FailureReasonType](./literals.md#failurereasontype)
+- `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
+- `RenewalSummary`:
+  [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
 - `KeyUsages`: `List`\[[KeyUsageTypeDef](./type_defs.md#keyusagetypedef)\]
 - `ExtendedKeyUsages`:
   `List`\[[ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)\]
 - `CertificateAuthorityArn`: `str`
-- `RenewalEligibility`: [RenewalEligibility](./literals.md#renewaleligibility)
+- `RenewalEligibility`:
+  [RenewalEligibilityType](./literals.md#renewaleligibilitytype)
 - `Options`:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 
@@ -78,7 +81,7 @@ from mypy_boto3_acm.type_defs import CertificateOptionsTypeDef
 Optional fields:
 
 - `CertificateTransparencyLoggingPreference`:
-  [CertificateTransparencyLoggingPreference](./literals.md#certificatetransparencyloggingpreference)
+  [CertificateTransparencyLoggingPreferenceType](./literals.md#certificatetransparencyloggingpreferencetype)
 
 ## CertificateSummaryTypeDef
 
@@ -127,9 +130,11 @@ Optional fields:
 
 - `ValidationEmails`: `List`\[`str`\]
 - `ValidationDomain`: `str`
-- `ValidationStatus`: [DomainStatus](./literals.md#domainstatus)
-- `ResourceRecord`: [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
-- `ValidationMethod`: [ValidationMethod](./literals.md#validationmethod)
+- `ValidationStatus`: [DomainStatusType](./literals.md#domainstatustype)
+- `ResourceRecord`:
+  [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
+- `ValidationMethod`:
+  [ValidationMethodType](./literals.md#validationmethodtype)
 
 ## ExpiryEventsConfigurationTypeDef
 
@@ -161,7 +166,7 @@ from mypy_boto3_acm.type_defs import ExtendedKeyUsageTypeDef
 
 Optional fields:
 
-- `Name`: [ExtendedKeyUsageName](./literals.md#extendedkeyusagename)
+- `Name`: [ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype)
 - `OID`: `str`
 
 ## FiltersTypeDef
@@ -173,9 +178,9 @@ from mypy_boto3_acm.type_defs import FiltersTypeDef
 Optional fields:
 
 - `extendedKeyUsage`:
-  `List`\[[ExtendedKeyUsageName](./literals.md#extendedkeyusagename)\]
-- `keyUsage`: `List`\[[KeyUsageName](./literals.md#keyusagename)\]
-- `keyTypes`: `List`\[[KeyAlgorithm](./literals.md#keyalgorithm)\]
+  `List`\[[ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype)\]
+- `keyUsage`: `List`\[[KeyUsageNameType](./literals.md#keyusagenametype)\]
+- `keyTypes`: `List`\[[KeyAlgorithmType](./literals.md#keyalgorithmtype)\]
 
 ## GetAccountConfigurationResponseTypeDef
 
@@ -217,7 +222,7 @@ from mypy_boto3_acm.type_defs import KeyUsageTypeDef
 
 Optional fields:
 
-- `Name`: [KeyUsageName](./literals.md#keyusagename)
+- `Name`: [KeyUsageNameType](./literals.md#keyusagenametype)
 
 ## ListCertificatesResponseTypeDef
 
@@ -261,14 +266,14 @@ from mypy_boto3_acm.type_defs import RenewalSummaryTypeDef
 
 Required fields:
 
-- `RenewalStatus`: [RenewalStatus](./literals.md#renewalstatus)
+- `RenewalStatus`: [RenewalStatusType](./literals.md#renewalstatustype)
 - `DomainValidationOptions`:
   `List`\[[DomainValidationTypeDef](./type_defs.md#domainvalidationtypedef)\]
 - `UpdatedAt`: `datetime`
 
 Optional fields:
 
-- `RenewalStatusReason`: [FailureReason](./literals.md#failurereason)
+- `RenewalStatusReason`: [FailureReasonType](./literals.md#failurereasontype)
 
 ## RequestCertificateResponseTypeDef
 
@@ -289,7 +294,8 @@ from mypy_boto3_acm.type_defs import ResourceRecordTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: `Literal['CNAME']` (see [RecordType](./literals.md#recordtype))
+- `Type`: `Literal['CNAME']` (see
+  [RecordTypeType](./literals.md#recordtypetype))
 - `Value`: `str`
 
 ## TagTypeDef

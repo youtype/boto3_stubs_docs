@@ -3,7 +3,7 @@
 > [Index](..) > [DirectoryService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ds.html#DirectoryService)
 type annotations stubs module
 [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
@@ -107,9 +107,9 @@ Optional fields:
 
 - `CertificateId`: `str`
 - `CommonName`: `str`
-- `State`: [CertificateState](./literals.md#certificatestate)
+- `State`: [CertificateStateType](./literals.md#certificatestatetype)
 - `ExpiryDateTime`: `datetime`
-- `Type`: [CertificateType](./literals.md#certificatetype)
+- `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
 
 ## CertificateTypeDef
 
@@ -120,12 +120,12 @@ from mypy_boto3_ds.type_defs import CertificateTypeDef
 Optional fields:
 
 - `CertificateId`: `str`
-- `State`: [CertificateState](./literals.md#certificatestate)
+- `State`: [CertificateStateType](./literals.md#certificatestatetype)
 - `StateReason`: `str`
 - `CommonName`: `str`
 - `RegisteredDateTime`: `datetime`
 - `ExpiryDateTime`: `datetime`
-- `Type`: [CertificateType](./literals.md#certificatetype)
+- `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
 - `ClientCertAuthSettings`:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
@@ -163,7 +163,7 @@ Optional fields:
 - `RemoteDomainName`: `str`
 - `DnsIpAddrs`: `List`\[`str`\]
 - `ReplicationScope`: `Literal['Domain']` (see
-  [ReplicationScope](./literals.md#replicationscope))
+  [ReplicationScopeType](./literals.md#replicationscopetype))
 
 ## ConnectDirectoryResultTypeDef
 
@@ -319,7 +319,8 @@ from mypy_boto3_ds.type_defs import DescribeEventTopicsResultTypeDef
 
 Optional fields:
 
-- `EventTopics`: `List`\[[EventTopicTypeDef](./type_defs.md#eventtopictypedef)\]
+- `EventTopics`:
+  `List`\[[EventTopicTypeDef](./type_defs.md#eventtopictypedef)\]
 
 ## DescribeLDAPSSettingsResultTypeDef
 
@@ -418,25 +419,26 @@ Optional fields:
 - `DirectoryId`: `str`
 - `Name`: `str`
 - `ShortName`: `str`
-- `Size`: [DirectorySize](./literals.md#directorysize)
-- `Edition`: [DirectoryEdition](./literals.md#directoryedition)
+- `Size`: [DirectorySizeType](./literals.md#directorysizetype)
+- `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
 - `Alias`: `str`
 - `AccessUrl`: `str`
 - `Description`: `str`
 - `DnsIpAddrs`: `List`\[`str`\]
-- `Stage`: [DirectoryStage](./literals.md#directorystage)
-- `ShareStatus`: [ShareStatus](./literals.md#sharestatus)
-- `ShareMethod`: [ShareMethod](./literals.md#sharemethod)
+- `Stage`: [DirectoryStageType](./literals.md#directorystagetype)
+- `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
+- `ShareMethod`: [ShareMethodType](./literals.md#sharemethodtype)
 - `ShareNotes`: `str`
 - `LaunchTime`: `datetime`
 - `StageLastUpdatedDateTime`: `datetime`
-- `Type`: [DirectoryType](./literals.md#directorytype)
+- `Type`: [DirectoryTypeType](./literals.md#directorytypetype)
 - `VpcSettings`:
   [DirectoryVpcSettingsDescriptionTypeDef](./type_defs.md#directoryvpcsettingsdescriptiontypedef)
 - `ConnectSettings`:
   [DirectoryConnectSettingsDescriptionTypeDef](./type_defs.md#directoryconnectsettingsdescriptiontypedef)
-- `RadiusSettings`: [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
-- `RadiusStatus`: [RadiusStatus](./literals.md#radiusstatus)
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
+- `RadiusStatus`: [RadiusStatusType](./literals.md#radiusstatustype)
 - `StageReason`: `str`
 - `SsoEnabled`: `bool`
 - `DesiredNumberOfDomainControllers`: `int`
@@ -500,7 +502,8 @@ Optional fields:
 - `VpcId`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
-- `Status`: [DomainControllerStatus](./literals.md#domaincontrollerstatus)
+- `Status`:
+  [DomainControllerStatusType](./literals.md#domaincontrollerstatustype)
 - `StatusReason`: `str`
 - `LaunchTime`: `datetime`
 - `StatusLastUpdatedDateTime`: `datetime`
@@ -517,7 +520,7 @@ Optional fields:
 - `TopicName`: `str`
 - `TopicArn`: `str`
 - `CreatedDateTime`: `datetime`
-- `Status`: [TopicStatus](./literals.md#topicstatus)
+- `Status`: [TopicStatusType](./literals.md#topicstatustype)
 
 ## GetDirectoryLimitsResultTypeDef
 
@@ -538,7 +541,8 @@ from mypy_boto3_ds.type_defs import GetSnapshotLimitsResultTypeDef
 
 Optional fields:
 
-- `SnapshotLimits`: [SnapshotLimitsTypeDef](./type_defs.md#snapshotlimitstypedef)
+- `SnapshotLimits`:
+  [SnapshotLimitsTypeDef](./type_defs.md#snapshotlimitstypedef)
 
 ## IpRouteInfoTypeDef
 
@@ -550,7 +554,8 @@ Optional fields:
 
 - `DirectoryId`: `str`
 - `CidrIp`: `str`
-- `IpRouteStatusMsg`: [IpRouteStatusMsg](./literals.md#iproutestatusmsg)
+- `IpRouteStatusMsg`:
+  [IpRouteStatusMsgType](./literals.md#iproutestatusmsgtype)
 - `AddedDateTime`: `datetime`
 - `IpRouteStatusReason`: `str`
 - `Description`: `str`
@@ -574,7 +579,7 @@ from mypy_boto3_ds.type_defs import LDAPSSettingInfoTypeDef
 
 Optional fields:
 
-- `LDAPSStatus`: [LDAPSStatus](./literals.md#ldapsstatus)
+- `LDAPSStatus`: [LDAPSStatusType](./literals.md#ldapsstatustype)
 - `LDAPSStatusReason`: `str`
 - `LastUpdatedDateTime`: `datetime`
 
@@ -662,8 +667,9 @@ Optional fields:
 - `DnsIpAddrs`: `List`\[`str`\]
 - `VpcSettings`:
   [DirectoryVpcSettingsDescriptionTypeDef](./type_defs.md#directoryvpcsettingsdescriptiontypedef)
-- `RadiusSettings`: [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
-- `RadiusStatus`: [RadiusStatus](./literals.md#radiusstatus)
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
+- `RadiusStatus`: [RadiusStatusType](./literals.md#radiusstatustype)
 
 ## PaginatorConfigTypeDef
 
@@ -691,7 +697,7 @@ Optional fields:
 - `RadiusRetries`: `int`
 - `SharedSecret`: `str`
 - `AuthenticationProtocol`:
-  [RadiusAuthenticationProtocol](./literals.md#radiusauthenticationprotocol)
+  [RadiusAuthenticationProtocolType](./literals.md#radiusauthenticationprotocoltype)
 - `DisplayLabel`: `str`
 - `UseSameUsername`: `bool`
 
@@ -705,8 +711,8 @@ Optional fields:
 
 - `DirectoryId`: `str`
 - `RegionName`: `str`
-- `RegionType`: [RegionType](./literals.md#regiontype)
-- `Status`: [DirectoryStage](./literals.md#directorystage)
+- `RegionType`: [RegionTypeType](./literals.md#regiontypetype)
+- `Status`: [DirectoryStageType](./literals.md#directorystagetype)
 - `VpcSettings`:
   [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
 - `DesiredNumberOfDomainControllers`: `int`
@@ -757,7 +763,7 @@ Optional fields:
 - `SchemaExtensionId`: `str`
 - `Description`: `str`
 - `SchemaExtensionStatus`:
-  [SchemaExtensionStatus](./literals.md#schemaextensionstatus)
+  [SchemaExtensionStatusType](./literals.md#schemaextensionstatustype)
 - `SchemaExtensionStatusReason`: `str`
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
@@ -781,7 +787,8 @@ from mypy_boto3_ds.type_defs import ShareTargetTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`: `Literal['ACCOUNT']` (see [TargetType](./literals.md#targettype))
+- `Type`: `Literal['ACCOUNT']` (see
+  [TargetTypeType](./literals.md#targettypetype))
 
 ## SharedDirectoryTypeDef
 
@@ -793,10 +800,10 @@ Optional fields:
 
 - `OwnerAccountId`: `str`
 - `OwnerDirectoryId`: `str`
-- `ShareMethod`: [ShareMethod](./literals.md#sharemethod)
+- `ShareMethod`: [ShareMethodType](./literals.md#sharemethodtype)
 - `SharedAccountId`: `str`
 - `SharedDirectoryId`: `str`
-- `ShareStatus`: [ShareStatus](./literals.md#sharestatus)
+- `ShareStatus`: [ShareStatusType](./literals.md#sharestatustype)
 - `ShareNotes`: `str`
 - `CreatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
@@ -823,9 +830,9 @@ Optional fields:
 
 - `DirectoryId`: `str`
 - `SnapshotId`: `str`
-- `Type`: [SnapshotType](./literals.md#snapshottype)
+- `Type`: [SnapshotTypeType](./literals.md#snapshottypetype)
 - `Name`: `str`
-- `Status`: [SnapshotStatus](./literals.md#snapshotstatus)
+- `Status`: [SnapshotStatusType](./literals.md#snapshotstatustype)
 - `StartTime`: `datetime`
 
 ## StartSchemaExtensionResultTypeDef
@@ -860,14 +867,14 @@ Optional fields:
 - `DirectoryId`: `str`
 - `TrustId`: `str`
 - `RemoteDomainName`: `str`
-- `TrustType`: [TrustType](./literals.md#trusttype)
-- `TrustDirection`: [TrustDirection](./literals.md#trustdirection)
-- `TrustState`: [TrustState](./literals.md#truststate)
+- `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
+- `TrustDirection`: [TrustDirectionType](./literals.md#trustdirectiontype)
+- `TrustState`: [TrustStateType](./literals.md#truststatetype)
 - `CreatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
 - `StateLastUpdatedDateTime`: `datetime`
 - `TrustStateReason`: `str`
-- `SelectiveAuth`: [SelectiveAuth](./literals.md#selectiveauth)
+- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
 ## UnshareDirectoryResultTypeDef
 
@@ -888,7 +895,8 @@ from mypy_boto3_ds.type_defs import UnshareTargetTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`: `Literal['ACCOUNT']` (see [TargetType](./literals.md#targettype))
+- `Type`: `Literal['ACCOUNT']` (see
+  [TargetTypeType](./literals.md#targettypetype))
 
 ## UpdateTrustResultTypeDef
 

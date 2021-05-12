@@ -3,7 +3,7 @@
 > [Index](..) > ServerlessApplicationRepository
 
 Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
 [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
@@ -30,37 +30,37 @@ Can be used directly:
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
 ```
 
-ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [create_application_version](./client.md#create-application-version)
-- [create_cloud_formation_change_set](./client.md#create-cloud-formation-change-set)
-- [create_cloud_formation_template](./client.md#create-cloud-formation-template)
-- [delete_application](./client.md#delete-application)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_application](./client.md#get-application)
-- [get_application_policy](./client.md#get-application-policy)
-- [get_cloud_formation_template](./client.md#get-cloud-formation-template)
-- [get_paginator](./client.md#get-paginator)
-- [list_application_dependencies](./client.md#list-application-dependencies)
-- [list_application_versions](./client.md#list-application-versions)
-- [list_applications](./client.md#list-applications)
-- [put_application_policy](./client.md#put-application-policy)
-- [unshare_application](./client.md#unshare-application)
-- [update_application](./client.md#update-application)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [create_application_version](./client.md#create_application_version)
+- [create_cloud_formation_change_set](./client.md#create_cloud_formation_change_set)
+- [create_cloud_formation_template](./client.md#create_cloud_formation_template)
+- [delete_application](./client.md#delete_application)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_application](./client.md#get_application)
+- [get_application_policy](./client.md#get_application_policy)
+- [get_cloud_formation_template](./client.md#get_cloud_formation_template)
+- [get_paginator](./client.md#get_paginator)
+- [list_application_dependencies](./client.md#list_application_dependencies)
+- [list_application_versions](./client.md#list_application_versions)
+- [list_applications](./client.md#list_applications)
+- [put_application_policy](./client.md#put_application_policy)
+- [unshare_application](./client.md#unshare_application)
+- [update_application](./client.md#update_application)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [ForbiddenException](./client.md#forbiddenexception)
-- [InternalServerErrorException](./client.md#internalservererrorexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
+ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- ForbiddenException
+- InternalServerErrorException
+- NotFoundException
+- TooManyRequestsException
 
 ## Paginators
 
@@ -84,14 +84,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_serverlessrepo.literals import Capability, ...
+from mypy_boto3_serverlessrepo.literals import CapabilityType, ...
 ```
 
-- [Capability](./literals.md#capability)
+- [CapabilityType](./literals.md#capabilitytype)
 - [ListApplicationDependenciesPaginatorName](./literals.md#listapplicationdependenciespaginatorname)
 - [ListApplicationVersionsPaginatorName](./literals.md#listapplicationversionspaginatorname)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
-- [Status](./literals.md#status)
+- [StatusType](./literals.md#statustype)
 
 ## Typed dictionaries
 

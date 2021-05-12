@@ -3,7 +3,7 @@
 > [Index](..) > [CodeArtifact](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
 [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
@@ -72,7 +72,8 @@ Required fields:
 Optional fields:
 
 - `size`: `int`
-- `hashes`: `Dict`\[[HashAlgorithm](./literals.md#hashalgorithm), `str`\]
+- `hashes`: `Dict`\[[HashAlgorithmType](./literals.md#hashalgorithmtype),
+  `str`\]
 
 ## AssociateExternalConnectionResultTypeDef
 
@@ -240,7 +241,7 @@ Optional fields:
 - `name`: `str`
 - `owner`: `str`
 - `arn`: `str`
-- `status`: [DomainStatus](./literals.md#domainstatus)
+- `status`: [DomainStatusType](./literals.md#domainstatustype)
 - `createdTime`: `datetime`
 - `encryptionKey`: `str`
 - `repositoryCount`: `int`
@@ -258,7 +259,7 @@ Optional fields:
 - `name`: `str`
 - `owner`: `str`
 - `arn`: `str`
-- `status`: [DomainStatus](./literals.md#domainstatus)
+- `status`: [DomainStatusType](./literals.md#domainstatustype)
 - `createdTime`: `datetime`
 - `encryptionKey`: `str`
 
@@ -304,7 +305,7 @@ from mypy_boto3_codeartifact.type_defs import GetPackageVersionReadmeResultTypeD
 
 Optional fields:
 
-- `format`: [PackageFormat](./literals.md#packageformat)
+- `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `package`: `str`
 - `version`: `str`
@@ -362,7 +363,7 @@ from mypy_boto3_codeartifact.type_defs import ListPackageVersionAssetsResultType
 
 Optional fields:
 
-- `format`: [PackageFormat](./literals.md#packageformat)
+- `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `package`: `str`
 - `version`: `str`
@@ -378,7 +379,7 @@ from mypy_boto3_codeartifact.type_defs import ListPackageVersionDependenciesResu
 
 Optional fields:
 
-- `format`: [PackageFormat](./literals.md#packageformat)
+- `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `package`: `str`
 - `version`: `str`
@@ -396,7 +397,7 @@ from mypy_boto3_codeartifact.type_defs import ListPackageVersionsResultTypeDef
 Optional fields:
 
 - `defaultDisplayVersion`: `str`
-- `format`: [PackageFormat](./literals.md#packageformat)
+- `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `package`: `str`
 - `versions`:
@@ -470,7 +471,7 @@ from mypy_boto3_codeartifact.type_defs import PackageSummaryTypeDef
 
 Optional fields:
 
-- `format`: [PackageFormat](./literals.md#packageformat)
+- `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `package`: `str`
 
@@ -482,7 +483,7 @@ from mypy_boto3_codeartifact.type_defs import PackageVersionDescriptionTypeDef
 
 Optional fields:
 
-- `format`: [PackageFormat](./literals.md#packageformat)
+- `format`: [PackageFormatType](./literals.md#packageformattype)
 - `namespace`: `str`
 - `packageName`: `str`
 - `displayName`: `str`
@@ -493,7 +494,7 @@ Optional fields:
 - `publishedTime`: `datetime`
 - `licenses`: `List`\[[LicenseInfoTypeDef](./type_defs.md#licenseinfotypedef)\]
 - `revision`: `str`
-- `status`: [PackageVersionStatus](./literals.md#packageversionstatus)
+- `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 ## PackageVersionErrorTypeDef
 
@@ -503,7 +504,8 @@ from mypy_boto3_codeartifact.type_defs import PackageVersionErrorTypeDef
 
 Optional fields:
 
-- `errorCode`: [PackageVersionErrorCode](./literals.md#packageversionerrorcode)
+- `errorCode`:
+  [PackageVersionErrorCodeType](./literals.md#packageversionerrorcodetype)
 - `errorMessage`: `str`
 
 ## PackageVersionSummaryTypeDef
@@ -515,7 +517,7 @@ from mypy_boto3_codeartifact.type_defs import PackageVersionSummaryTypeDef
 Required fields:
 
 - `version`: `str`
-- `status`: [PackageVersionStatus](./literals.md#packageversionstatus)
+- `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 Optional fields:
 
@@ -581,9 +583,9 @@ from mypy_boto3_codeartifact.type_defs import RepositoryExternalConnectionInfoTy
 Optional fields:
 
 - `externalConnectionName`: `str`
-- `packageFormat`: [PackageFormat](./literals.md#packageformat)
+- `packageFormat`: [PackageFormatType](./literals.md#packageformattype)
 - `status`: `Literal['Available']` (see
-  [ExternalConnectionStatus](./literals.md#externalconnectionstatus))
+  [ExternalConnectionStatusType](./literals.md#externalconnectionstatustype))
 
 ## RepositorySummaryTypeDef
 
@@ -621,7 +623,7 @@ from mypy_boto3_codeartifact.type_defs import SuccessfulPackageVersionInfoTypeDe
 Optional fields:
 
 - `revision`: `str`
-- `status`: [PackageVersionStatus](./literals.md#packageversionstatus)
+- `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
 ## TagTypeDef
 

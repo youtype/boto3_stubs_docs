@@ -3,7 +3,7 @@
 > [Index](..) > [Signer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/signer.html#Signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
@@ -76,7 +76,7 @@ Optional fields:
 - `completedAt`: `datetime`
 - `signatureExpiresAt`: `datetime`
 - `requestedBy`: `str`
-- `status`: [SigningStatus](./literals.md#signingstatus)
+- `status`: [SigningStatusType](./literals.md#signingstatustype)
 - `statusReason`: `str`
 - `revocationRecord`:
   [SigningJobRevocationRecordTypeDef](./type_defs.md#signingjobrevocationrecordtypedef)
@@ -103,8 +103,9 @@ from mypy_boto3_signer.type_defs import EncryptionAlgorithmOptionsTypeDef
 Required fields:
 
 - `allowedValues`:
-  `List`\[[EncryptionAlgorithm](./literals.md#encryptionalgorithm)\]
-- `defaultValue`: [EncryptionAlgorithm](./literals.md#encryptionalgorithm)
+  `List`\[[EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)\]
+- `defaultValue`:
+  [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
 
 ## GetSigningPlatformResponseTypeDef
 
@@ -118,7 +119,8 @@ Optional fields:
 - `displayName`: `str`
 - `partner`: `str`
 - `target`: `str`
-- `category`: `Literal['AWSIoT']` (see [Category](./literals.md#category))
+- `category`: `Literal['AWSIoT']` (see
+  [CategoryType](./literals.md#categorytype))
 - `signingConfiguration`:
   [SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef)
 - `signingImageFormat`:
@@ -148,7 +150,7 @@ Optional fields:
 - `overrides`:
   [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
 - `signingParameters`: `Dict`\[`str`, `str`\]
-- `status`: [SigningProfileStatus](./literals.md#signingprofilestatus)
+- `status`: [SigningProfileStatusType](./literals.md#signingprofilestatustype)
 - `statusReason`: `str`
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -161,8 +163,9 @@ from mypy_boto3_signer.type_defs import HashAlgorithmOptionsTypeDef
 
 Required fields:
 
-- `allowedValues`: `List`\[[HashAlgorithm](./literals.md#hashalgorithm)\]
-- `defaultValue`: [HashAlgorithm](./literals.md#hashalgorithm)
+- `allowedValues`:
+  `List`\[[HashAlgorithmType](./literals.md#hashalgorithmtype)\]
+- `defaultValue`: [HashAlgorithmType](./literals.md#hashalgorithmtype)
 
 ## ListProfilePermissionsResponseTypeDef
 
@@ -174,7 +177,8 @@ Optional fields:
 
 - `revisionId`: `str`
 - `policySizeBytes`: `int`
-- `permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `permissions`:
+  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `nextToken`: `str`
 
 ## ListSigningJobsResponseTypeDef
@@ -312,7 +316,7 @@ from mypy_boto3_signer.type_defs import SignatureValidityPeriodTypeDef
 Optional fields:
 
 - `value`: `int`
-- `type`: [ValidityType](./literals.md#validitytype)
+- `type`: [ValidityTypeType](./literals.md#validitytypetype)
 
 ## SignedObjectTypeDef
 
@@ -332,8 +336,9 @@ from mypy_boto3_signer.type_defs import SigningConfigurationOverridesTypeDef
 
 Optional fields:
 
-- `encryptionAlgorithm`: [EncryptionAlgorithm](./literals.md#encryptionalgorithm)
-- `hashAlgorithm`: [HashAlgorithm](./literals.md#hashalgorithm)
+- `encryptionAlgorithm`:
+  [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
+- `hashAlgorithm`: [HashAlgorithmType](./literals.md#hashalgorithmtype)
 
 ## SigningConfigurationTypeDef
 
@@ -356,8 +361,9 @@ from mypy_boto3_signer.type_defs import SigningImageFormatTypeDef
 
 Required fields:
 
-- `supportedFormats`: `List`\[[ImageFormat](./literals.md#imageformat)\]
-- `defaultFormat`: [ImageFormat](./literals.md#imageformat)
+- `supportedFormats`:
+  `List`\[[ImageFormatType](./literals.md#imageformattype)\]
+- `defaultFormat`: [ImageFormatType](./literals.md#imageformattype)
 
 ## SigningJobRevocationRecordTypeDef
 
@@ -385,7 +391,7 @@ Optional fields:
 - `signingMaterial`:
   [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
 - `createdAt`: `datetime`
-- `status`: [SigningStatus](./literals.md#signingstatus)
+- `status`: [SigningStatusType](./literals.md#signingstatustype)
 - `isRevoked`: `bool`
 - `profileName`: `str`
 - `profileVersion`: `str`
@@ -415,7 +421,7 @@ Optional fields:
 
 - `signingConfiguration`:
   [SigningConfigurationOverridesTypeDef](./type_defs.md#signingconfigurationoverridestypedef)
-- `signingImageFormat`: [ImageFormat](./literals.md#imageformat)
+- `signingImageFormat`: [ImageFormatType](./literals.md#imageformattype)
 
 ## SigningPlatformTypeDef
 
@@ -429,7 +435,8 @@ Optional fields:
 - `displayName`: `str`
 - `partner`: `str`
 - `target`: `str`
-- `category`: `Literal['AWSIoT']` (see [Category](./literals.md#category))
+- `category`: `Literal['AWSIoT']` (see
+  [CategoryType](./literals.md#categorytype))
 - `signingConfiguration`:
   [SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef)
 - `signingImageFormat`:
@@ -467,7 +474,7 @@ Optional fields:
 - `platformId`: `str`
 - `platformDisplayName`: `str`
 - `signingParameters`: `Dict`\[`str`, `str`\]
-- `status`: [SigningProfileStatus](./literals.md#signingprofilestatus)
+- `status`: [SigningProfileStatusType](./literals.md#signingprofilestatustype)
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 

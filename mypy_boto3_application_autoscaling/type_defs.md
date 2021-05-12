@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationAutoScaling](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
 [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
@@ -49,7 +49,7 @@ Required fields:
 
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `Statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 
 Optional fields:
 
@@ -136,7 +136,7 @@ from mypy_boto3_application_autoscaling.type_defs import PredefinedMetricSpecifi
 
 Required fields:
 
-- `PredefinedMetricType`: [MetricType](./literals.md#metrictype)
+- `PredefinedMetricType`: [MetricTypeType](./literals.md#metrictypetype)
 
 Optional fields:
 
@@ -175,9 +175,11 @@ from mypy_boto3_application_autoscaling.type_defs import ScalableTargetTypeDef
 
 Required fields:
 
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
 - `RoleARN`: `str`
@@ -185,7 +187,8 @@ Required fields:
 
 Optional fields:
 
-- `SuspendedState`: [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
+- `SuspendedState`:
+  [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 
 ## ScalingActivityTypeDef
 
@@ -196,14 +199,16 @@ from mypy_boto3_application_autoscaling.type_defs import ScalingActivityTypeDef
 Required fields:
 
 - `ActivityId`: `str`
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `Description`: `str`
 - `Cause`: `str`
 - `StartTime`: `datetime`
 - `StatusCode`:
-  [ScalingActivityStatusCode](./literals.md#scalingactivitystatuscode)
+  [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
 
 Optional fields:
 
@@ -221,10 +226,12 @@ Required fields:
 
 - `PolicyARN`: `str`
 - `PolicyName`: `str`
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - `ResourceId`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
-- `PolicyType`: [PolicyType](./literals.md#policytype)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
+- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
 - `CreationTime`: `datetime`
 
 Optional fields:
@@ -245,7 +252,8 @@ Required fields:
 
 - `ScheduledActionName`: `str`
 - `ScheduledActionARN`: `str`
-- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
+- `ServiceNamespace`:
+  [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - `Schedule`: `str`
 - `ResourceId`: `str`
 - `CreationTime`: `datetime`
@@ -253,7 +261,8 @@ Required fields:
 Optional fields:
 
 - `Timezone`: `str`
-- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `ScalableDimension`:
+  [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ScalableTargetAction`:
@@ -282,13 +291,13 @@ from mypy_boto3_application_autoscaling.type_defs import StepScalingPolicyConfig
 
 Optional fields:
 
-- `AdjustmentType`: [AdjustmentType](./literals.md#adjustmenttype)
+- `AdjustmentType`: [AdjustmentTypeType](./literals.md#adjustmenttypetype)
 - `StepAdjustments`:
   `List`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
 - `MinAdjustmentMagnitude`: `int`
 - `Cooldown`: `int`
 - `MetricAggregationType`:
-  [MetricAggregationType](./literals.md#metricaggregationtype)
+  [MetricAggregationTypeType](./literals.md#metricaggregationtypetype)
 
 ## SuspendedStateTypeDef
 

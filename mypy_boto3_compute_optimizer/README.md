@@ -3,7 +3,7 @@
 > [Index](..) > ComputeOptimizer
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -29,36 +29,36 @@ Can be used directly:
 from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 ```
 
-ComputeOptimizerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_recommendation_export_jobs](./client.md#describe-recommendation-export-jobs)
-- [export_auto_scaling_group_recommendations](./client.md#export-auto-scaling-group-recommendations)
-- [export_ec2_instance_recommendations](./client.md#export-ec2-instance-recommendations)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_auto_scaling_group_recommendations](./client.md#get-auto-scaling-group-recommendations)
-- [get_ebs_volume_recommendations](./client.md#get-ebs-volume-recommendations)
-- [get_ec2_instance_recommendations](./client.md#get-ec2-instance-recommendations)
-- [get_ec2_recommendation_projected_metrics](./client.md#get-ec2-recommendation-projected-metrics)
-- [get_enrollment_status](./client.md#get-enrollment-status)
-- [get_lambda_function_recommendations](./client.md#get-lambda-function-recommendations)
-- [get_recommendation_summaries](./client.md#get-recommendation-summaries)
-- [update_enrollment_status](./client.md#update-enrollment-status)
+- [can_paginate](./client.md#can_paginate)
+- [describe_recommendation_export_jobs](./client.md#describe_recommendation_export_jobs)
+- [export_auto_scaling_group_recommendations](./client.md#export_auto_scaling_group_recommendations)
+- [export_ec2_instance_recommendations](./client.md#export_ec2_instance_recommendations)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_auto_scaling_group_recommendations](./client.md#get_auto_scaling_group_recommendations)
+- [get_ebs_volume_recommendations](./client.md#get_ebs_volume_recommendations)
+- [get_ec2_instance_recommendations](./client.md#get_ec2_instance_recommendations)
+- [get_ec2_recommendation_projected_metrics](./client.md#get_ec2_recommendation_projected_metrics)
+- [get_enrollment_status](./client.md#get_enrollment_status)
+- [get_lambda_function_recommendations](./client.md#get_lambda_function_recommendations)
+- [get_recommendation_summaries](./client.md#get_recommendation_summaries)
+- [update_enrollment_status](./client.md#update_enrollment_status)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidParameterValueException](./client.md#invalidparametervalueexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [MissingAuthenticationToken](./client.md#missingauthenticationtoken)
-- [OptInRequiredException](./client.md#optinrequiredexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [ThrottlingException](./client.md#throttlingexception)
+ComputeOptimizerClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalServerException
+- InvalidParameterValueException
+- LimitExceededException
+- MissingAuthenticationToken
+- OptInRequiredException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- ThrottlingException
 
 ## Literals
 
@@ -67,32 +67,32 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_compute_optimizer.literals import EBSFilterName, ...
+from mypy_boto3_compute_optimizer.literals import EBSFilterNameType, ...
 ```
 
-- [EBSFilterName](./literals.md#ebsfiltername)
-- [EBSFinding](./literals.md#ebsfinding)
-- [EBSMetricName](./literals.md#ebsmetricname)
-- [ExportableAutoScalingGroupField](./literals.md#exportableautoscalinggroupfield)
-- [ExportableInstanceField](./literals.md#exportableinstancefield)
-- [FileFormat](./literals.md#fileformat)
-- [FilterName](./literals.md#filtername)
-- [Finding](./literals.md#finding)
-- [FindingReasonCode](./literals.md#findingreasoncode)
-- [JobFilterName](./literals.md#jobfiltername)
-- [JobStatus](./literals.md#jobstatus)
-- [LambdaFunctionMemoryMetricName](./literals.md#lambdafunctionmemorymetricname)
-- [LambdaFunctionMemoryMetricStatistic](./literals.md#lambdafunctionmemorymetricstatistic)
-- [LambdaFunctionMetricName](./literals.md#lambdafunctionmetricname)
-- [LambdaFunctionMetricStatistic](./literals.md#lambdafunctionmetricstatistic)
-- [LambdaFunctionRecommendationFilterName](./literals.md#lambdafunctionrecommendationfiltername)
-- [LambdaFunctionRecommendationFinding](./literals.md#lambdafunctionrecommendationfinding)
-- [LambdaFunctionRecommendationFindingReasonCode](./literals.md#lambdafunctionrecommendationfindingreasoncode)
-- [MetricName](./literals.md#metricname)
-- [MetricStatistic](./literals.md#metricstatistic)
-- [RecommendationSourceType](./literals.md#recommendationsourcetype)
-- [ResourceType](./literals.md#resourcetype)
-- [Status](./literals.md#status)
+- [EBSFilterNameType](./literals.md#ebsfilternametype)
+- [EBSFindingType](./literals.md#ebsfindingtype)
+- [EBSMetricNameType](./literals.md#ebsmetricnametype)
+- [ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)
+- [ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)
+- [FileFormatType](./literals.md#fileformattype)
+- [FilterNameType](./literals.md#filternametype)
+- [FindingReasonCodeType](./literals.md#findingreasoncodetype)
+- [FindingType](./literals.md#findingtype)
+- [JobFilterNameType](./literals.md#jobfilternametype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [LambdaFunctionMemoryMetricNameType](./literals.md#lambdafunctionmemorymetricnametype)
+- [LambdaFunctionMemoryMetricStatisticType](./literals.md#lambdafunctionmemorymetricstatistictype)
+- [LambdaFunctionMetricNameType](./literals.md#lambdafunctionmetricnametype)
+- [LambdaFunctionMetricStatisticType](./literals.md#lambdafunctionmetricstatistictype)
+- [LambdaFunctionRecommendationFilterNameType](./literals.md#lambdafunctionrecommendationfilternametype)
+- [LambdaFunctionRecommendationFindingReasonCodeType](./literals.md#lambdafunctionrecommendationfindingreasoncodetype)
+- [LambdaFunctionRecommendationFindingType](./literals.md#lambdafunctionrecommendationfindingtype)
+- [MetricNameType](./literals.md#metricnametype)
+- [MetricStatisticType](./literals.md#metricstatistictype)
+- [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [StatusType](./literals.md#statustype)
 
 ## Typed dictionaries
 

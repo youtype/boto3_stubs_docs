@@ -3,7 +3,7 @@
 > [Index](..) > [Lambda](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+[Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda)
 type annotations stubs module
 [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
@@ -188,7 +188,7 @@ from mypy_boto3_lambda.type_defs import CodeSigningPoliciesTypeDef
 Optional fields:
 
 - `UntrustedArtifactOnDeployment`:
-  [CodeSigningPolicy](./literals.md#codesigningpolicy)
+  [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
 
 ## ConcurrencyTypeDef
 
@@ -273,7 +273,8 @@ from mypy_boto3_lambda.type_defs import EventSourceMappingConfigurationTypeDef
 Optional fields:
 
 - `UUID`: `str`
-- `StartingPosition`: [EventSourcePosition](./literals.md#eventsourceposition)
+- `StartingPosition`:
+  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
 - `StartingPositionTimestamp`: `datetime`
 - `BatchSize`: `int`
 - `MaximumBatchingWindowInSeconds`: `int`
@@ -297,7 +298,7 @@ Optional fields:
 - `MaximumRetryAttempts`: `int`
 - `TumblingWindowInSeconds`: `int`
 - `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseType](./literals.md#functionresponsetype))\]
+  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 ## FileSystemConfigTypeDef
 
@@ -347,7 +348,7 @@ Optional fields:
 
 - `FunctionName`: `str`
 - `FunctionArn`: `str`
-- `Runtime`: [Runtime](./literals.md#runtime)
+- `Runtime`: [RuntimeType](./literals.md#runtimetype)
 - `Role`: `str`
 - `Handler`: `str`
 - `CodeSize`: `int`
@@ -369,16 +370,17 @@ Optional fields:
 - `MasterArn`: `str`
 - `RevisionId`: `str`
 - `Layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
-- `State`: [State](./literals.md#state)
+- `State`: [StateType](./literals.md#statetype)
 - `StateReason`: `str`
-- `StateReasonCode`: [StateReasonCode](./literals.md#statereasoncode)
-- `LastUpdateStatus`: [LastUpdateStatus](./literals.md#lastupdatestatus)
+- `StateReasonCode`: [StateReasonCodeType](./literals.md#statereasoncodetype)
+- `LastUpdateStatus`:
+  [LastUpdateStatusType](./literals.md#lastupdatestatustype)
 - `LastUpdateStatusReason`: `str`
 - `LastUpdateStatusReasonCode`:
-  [LastUpdateStatusReasonCode](./literals.md#lastupdatestatusreasoncode)
+  [LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype)
 - `FileSystemConfigs`:
   `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `PackageType`: [PackageType](./literals.md#packagetype)
+- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
 - `ImageConfigResponse`:
   [ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef)
 - `SigningProfileVersionArn`: `str`
@@ -483,7 +485,7 @@ Optional fields:
 - `Description`: `str`
 - `CreatedDate`: `str`
 - `Version`: `int`
-- `CompatibleRuntimes`: `List`\[[Runtime](./literals.md#runtime)\]
+- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
 ## GetPolicyResponseTypeDef
@@ -509,7 +511,7 @@ Optional fields:
 - `AvailableProvisionedConcurrentExecutions`: `int`
 - `AllocatedProvisionedConcurrentExecutions`: `int`
 - `Status`:
-  [ProvisionedConcurrencyStatusEnum](./literals.md#provisionedconcurrencystatusenum)
+  [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
 - `StatusReason`: `str`
 - `LastModified`: `str`
 
@@ -625,7 +627,7 @@ Optional fields:
 - `Version`: `int`
 - `Description`: `str`
 - `CreatedDate`: `str`
-- `CompatibleRuntimes`: `List`\[[Runtime](./literals.md#runtime)\]
+- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
 ## LayersListItemTypeDef
@@ -815,7 +817,7 @@ Optional fields:
 - `AvailableProvisionedConcurrentExecutions`: `int`
 - `AllocatedProvisionedConcurrentExecutions`: `int`
 - `Status`:
-  [ProvisionedConcurrencyStatusEnum](./literals.md#provisionedconcurrencystatusenum)
+  [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
 - `StatusReason`: `str`
 - `LastModified`: `str`
 
@@ -834,7 +836,7 @@ Optional fields:
 - `Description`: `str`
 - `CreatedDate`: `str`
 - `Version`: `int`
-- `CompatibleRuntimes`: `List`\[[Runtime](./literals.md#runtime)\]
+- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
 ## PutFunctionCodeSigningConfigResponseTypeDef
@@ -860,7 +862,7 @@ Optional fields:
 - `AvailableProvisionedConcurrentExecutions`: `int`
 - `AllocatedProvisionedConcurrentExecutions`: `int`
 - `Status`:
-  [ProvisionedConcurrencyStatusEnum](./literals.md#provisionedconcurrencystatusenum)
+  [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
 - `StatusReason`: `str`
 - `LastModified`: `str`
 
@@ -887,7 +889,7 @@ from mypy_boto3_lambda.type_defs import SelfManagedEventSourceTypeDef
 Optional fields:
 
 - `Endpoints`: `Dict`\[`Literal['KAFKA_BOOTSTRAP_SERVERS']` (see
-  [EndPointType](./literals.md#endpointtype)), `List`\[`str`\]\]
+  [EndPointTypeType](./literals.md#endpointtypetype)), `List`\[`str`\]\]
 
 ## SourceAccessConfigurationTypeDef
 
@@ -897,7 +899,7 @@ from mypy_boto3_lambda.type_defs import SourceAccessConfigurationTypeDef
 
 Optional fields:
 
-- `Type`: [SourceAccessType](./literals.md#sourceaccesstype)
+- `Type`: [SourceAccessTypeType](./literals.md#sourceaccesstypetype)
 - `URI`: `str`
 
 ## TracingConfigResponseTypeDef
@@ -908,7 +910,7 @@ from mypy_boto3_lambda.type_defs import TracingConfigResponseTypeDef
 
 Optional fields:
 
-- `Mode`: [TracingMode](./literals.md#tracingmode)
+- `Mode`: [TracingModeType](./literals.md#tracingmodetype)
 
 ## TracingConfigTypeDef
 
@@ -918,7 +920,7 @@ from mypy_boto3_lambda.type_defs import TracingConfigTypeDef
 
 Optional fields:
 
-- `Mode`: [TracingMode](./literals.md#tracingmode)
+- `Mode`: [TracingModeType](./literals.md#tracingmodetype)
 
 ## UpdateCodeSigningConfigResponseTypeDef
 

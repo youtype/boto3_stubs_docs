@@ -3,7 +3,7 @@
 > [Index](..) > Macie
 
 Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie)
 type annotations stubs module
 [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
@@ -29,28 +29,28 @@ Can be used directly:
 from mypy_boto3_macie.client import MacieClient
 ```
 
-MacieClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_member_account](./client.md#associate-member-account)
-- [associate_s3_resources](./client.md#associate-s3-resources)
-- [can_paginate](./client.md#can-paginate)
-- [disassociate_member_account](./client.md#disassociate-member-account)
-- [disassociate_s3_resources](./client.md#disassociate-s3-resources)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_member_accounts](./client.md#list-member-accounts)
-- [list_s3_resources](./client.md#list-s3-resources)
-- [update_s3_resources](./client.md#update-s3-resources)
+- [associate_member_account](./client.md#associate_member_account)
+- [associate_s3_resources](./client.md#associate_s3_resources)
+- [can_paginate](./client.md#can_paginate)
+- [disassociate_member_account](./client.md#disassociate_member_account)
+- [disassociate_s3_resources](./client.md#disassociate_s3_resources)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_member_accounts](./client.md#list_member_accounts)
+- [list_s3_resources](./client.md#list_s3_resources)
+- [update_s3_resources](./client.md#update_s3_resources)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [InternalException](./client.md#internalexception)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [LimitExceededException](./client.md#limitexceededexception)
+MacieClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- InternalException
+- InvalidInputException
+- LimitExceededException
 
 ## Paginators
 
@@ -78,8 +78,8 @@ from mypy_boto3_macie.literals import ListMemberAccountsPaginatorName, ...
 
 - [ListMemberAccountsPaginatorName](./literals.md#listmemberaccountspaginatorname)
 - [ListS3ResourcesPaginatorName](./literals.md#lists3resourcespaginatorname)
-- [S3ContinuousClassificationType](./literals.md#s3continuousclassificationtype)
-- [S3OneTimeClassificationType](./literals.md#s3onetimeclassificationtype)
+- [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype)
+- [S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype)
 
 ## Typed dictionaries
 

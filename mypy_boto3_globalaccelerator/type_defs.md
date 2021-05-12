@@ -3,7 +3,7 @@
 > [Index](..) > [GlobalAccelerator](.) > Typed dictionaries
 
 Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
 [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
@@ -93,11 +93,11 @@ Optional fields:
 - `AcceleratorArn`: `str`
 - `Name`: `str`
 - `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressType](./literals.md#ipaddresstype))
+  [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `Enabled`: `bool`
 - `IpSets`: `List`\[[IpSetTypeDef](./type_defs.md#ipsettypedef)\]
 - `DnsName`: `str`
-- `Status`: [AcceleratorStatus](./literals.md#acceleratorstatus)
+- `Status`: [AcceleratorStatusType](./literals.md#acceleratorstatustype)
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -143,7 +143,7 @@ from mypy_boto3_globalaccelerator.type_defs import ByoipCidrTypeDef
 Optional fields:
 
 - `Cidr`: `str`
-- `State`: [ByoipCidrState](./literals.md#byoipcidrstate)
+- `State`: [ByoipCidrStateType](./literals.md#byoipcidrstatetype)
 - `Events`:
   `List`\[[ByoipCidrEventTypeDef](./type_defs.md#byoipcidreventtypedef)\]
 
@@ -244,12 +244,12 @@ Optional fields:
 - `AcceleratorArn`: `str`
 - `Name`: `str`
 - `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressType](./literals.md#ipaddresstype))
+  [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `Enabled`: `bool`
 - `IpSets`: `List`\[[IpSetTypeDef](./type_defs.md#ipsettypedef)\]
 - `DnsName`: `str`
 - `Status`:
-  [CustomRoutingAcceleratorStatus](./literals.md#customroutingacceleratorstatus)
+  [CustomRoutingAcceleratorStatusType](./literals.md#customroutingacceleratorstatustype)
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -264,7 +264,7 @@ Required fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 - `Protocols`:
-  `List`\[[CustomRoutingProtocol](./literals.md#customroutingprotocol)\]
+  `List`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
 
 ## CustomRoutingDestinationDescriptionTypeDef
 
@@ -436,9 +436,9 @@ Optional fields:
 - `DestinationSocketAddress`:
   [SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)
 - `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressType](./literals.md#ipaddresstype))
+  [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `DestinationTrafficState`:
-  [CustomRoutingDestinationTrafficState](./literals.md#customroutingdestinationtrafficstate)
+  [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
 
 ## EndpointConfigurationTypeDef
 
@@ -462,7 +462,7 @@ Optional fields:
 
 - `EndpointId`: `str`
 - `Weight`: `int`
-- `HealthState`: [HealthState](./literals.md#healthstate)
+- `HealthState`: [HealthStateType](./literals.md#healthstatetype)
 - `HealthReason`: `str`
 - `ClientIPPreservationEnabled`: `bool`
 
@@ -480,7 +480,8 @@ Optional fields:
   `List`\[[EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
-- `HealthCheckProtocol`: [HealthCheckProtocol](./literals.md#healthcheckprotocol)
+- `HealthCheckProtocol`:
+  [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
 - `HealthCheckPath`: `str`
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
@@ -625,7 +626,7 @@ Optional fields:
 - `ListenerArn`: `str`
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `ClientAffinity`: [ClientAffinity](./literals.md#clientaffinity)
+- `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
 ## PaginatorConfigTypeDef
 
@@ -653,9 +654,9 @@ Optional fields:
 - `DestinationSocketAddress`:
   [SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)
 - `Protocols`:
-  `List`\[[CustomRoutingProtocol](./literals.md#customroutingprotocol)\]
+  `List`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
 - `DestinationTrafficState`:
-  [CustomRoutingDestinationTrafficState](./literals.md#customroutingdestinationtrafficstate)
+  [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
 
 ## PortOverrideTypeDef
 

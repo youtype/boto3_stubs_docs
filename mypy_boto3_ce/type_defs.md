@@ -3,7 +3,7 @@
 > [Index](..) > [CostExplorer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
@@ -133,7 +133,7 @@ from mypy_boto3_ce.type_defs import AnomalyMonitorTypeDef
 Required fields:
 
 - `MonitorName`: `str`
-- `MonitorType`: [MonitorType](./literals.md#monitortype)
+- `MonitorType`: [MonitorTypeType](./literals.md#monitortypetype)
 
 Optional fields:
 
@@ -142,7 +142,7 @@ Optional fields:
 - `LastUpdatedDate`: `str`
 - `LastEvaluatedDate`: `str`
 - `MonitorDimension`: `Literal['SERVICE']` (see
-  [MonitorDimension](./literals.md#monitordimension))
+  [MonitorDimensionType](./literals.md#monitordimensiontype))
 - `MonitorSpecification`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `DimensionalValueCount`: `int`
 
@@ -166,10 +166,11 @@ from mypy_boto3_ce.type_defs import AnomalySubscriptionTypeDef
 Required fields:
 
 - `MonitorArnList`: `List`\[`str`\]
-- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `Threshold`: `float`
 - `Frequency`:
-  [AnomalySubscriptionFrequency](./literals.md#anomalysubscriptionfrequency)
+  [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
 - `SubscriptionName`: `str`
 
 Optional fields:
@@ -196,7 +197,7 @@ Optional fields:
 - `AnomalyEndDate`: `str`
 - `DimensionValue`: `str`
 - `RootCauses`: `List`\[[RootCauseTypeDef](./type_defs.md#rootcausetypedef)\]
-- `Feedback`: [AnomalyFeedbackType](./literals.md#anomalyfeedbacktype)
+- `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
 
 ## CostCategoryInheritedValueDimensionTypeDef
 
@@ -207,7 +208,7 @@ from mypy_boto3_ce.type_defs import CostCategoryInheritedValueDimensionTypeDef
 Optional fields:
 
 - `DimensionName`:
-  [CostCategoryInheritedValueDimensionName](./literals.md#costcategoryinheritedvaluedimensionname)
+  [CostCategoryInheritedValueDimensionNameType](./literals.md#costcategoryinheritedvaluedimensionnametype)
 - `DimensionKey`: `str`
 
 ## CostCategoryProcessingStatusTypeDef
@@ -219,8 +220,8 @@ from mypy_boto3_ce.type_defs import CostCategoryProcessingStatusTypeDef
 Optional fields:
 
 - `Component`: `Literal['COST_EXPLORER']` (see
-  [CostCategoryStatusComponent](./literals.md#costcategorystatuscomponent))
-- `Status`: [CostCategoryStatus](./literals.md#costcategorystatus)
+  [CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype))
+- `Status`: [CostCategoryStatusType](./literals.md#costcategorystatustype)
 
 ## CostCategoryReferenceTypeDef
 
@@ -252,7 +253,7 @@ Optional fields:
 - `Rule`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `InheritedValue`:
   [CostCategoryInheritedValueDimensionTypeDef](./type_defs.md#costcategoryinheritedvaluedimensiontypedef)
-- `Type`: [CostCategoryRuleType](./literals.md#costcategoryruletype)
+- `Type`: [CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype)
 
 ## CostCategoryTypeDef
 
@@ -266,7 +267,7 @@ Required fields:
 - `EffectiveStart`: `str`
 - `Name`: `str`
 - `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
-  [CostCategoryRuleVersion](./literals.md#costcategoryruleversion))
+  [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
 - `Rules`:
   `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
 
@@ -287,7 +288,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
-- `MatchOptions`: `List`\[[MatchOption](./literals.md#matchoption)\]
+- `MatchOptions`: `List`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
 ## CoverageByTimeTypeDef
 
@@ -444,9 +445,9 @@ from mypy_boto3_ce.type_defs import DimensionValuesTypeDef
 
 Optional fields:
 
-- `Key`: [Dimension](./literals.md#dimension)
+- `Key`: [DimensionType](./literals.md#dimensiontype)
 - `Values`: `List`\[`str`\]
-- `MatchOptions`: `List`\[[MatchOption](./literals.md#matchoption)\]
+- `MatchOptions`: `List`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
 ## DimensionValuesWithAttributesTypeDef
 
@@ -529,7 +530,7 @@ from mypy_boto3_ce.type_defs import EC2SpecificationTypeDef
 
 Optional fields:
 
-- `OfferingClass`: [OfferingClass](./literals.md#offeringclass)
+- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
 
 ## ESInstanceDetailsTypeDef
 
@@ -875,7 +876,7 @@ from mypy_boto3_ce.type_defs import GroupDefinitionTypeDef
 
 Optional fields:
 
-- `Type`: [GroupDefinitionType](./literals.md#groupdefinitiontype)
+- `Type`: [GroupDefinitionTypeType](./literals.md#groupdefinitiontypetype)
 - `Key`: `str`
 
 ## GroupTypeDef
@@ -1096,11 +1097,11 @@ from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationTypeDef
 
 Optional fields:
 
-- `AccountScope`: [AccountScope](./literals.md#accountscope)
+- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
 - `LookbackPeriodInDays`:
-  [LookbackPeriodInDays](./literals.md#lookbackperiodindays)
-- `TermInYears`: [TermInYears](./literals.md#terminyears)
-- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
+  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
+- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `ServiceSpecification`:
   [ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef)
 - `RecommendationDetails`:
@@ -1167,7 +1168,7 @@ from mypy_boto3_ce.type_defs import RightsizingRecommendationConfigurationTypeDe
 Required fields:
 
 - `RecommendationTarget`:
-  [RecommendationTarget](./literals.md#recommendationtarget)
+  [RecommendationTargetType](./literals.md#recommendationtargettype)
 - `BenefitsConsidered`: `bool`
 
 ## RightsizingRecommendationMetadataTypeDef
@@ -1181,7 +1182,7 @@ Optional fields:
 - `RecommendationId`: `str`
 - `GenerationTimestamp`: `str`
 - `LookbackPeriodInDays`:
-  [LookbackPeriodInDays](./literals.md#lookbackperiodindays)
+  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
 - `AdditionalMetadata`: `str`
 
 ## RightsizingRecommendationSummaryTypeDef
@@ -1208,7 +1209,7 @@ Optional fields:
 - `AccountId`: `str`
 - `CurrentInstance`:
   [CurrentInstanceTypeDef](./type_defs.md#currentinstancetypedef)
-- `RightsizingType`: [RightsizingType](./literals.md#rightsizingtype)
+- `RightsizingType`: [RightsizingTypeType](./literals.md#rightsizingtypetype)
 - `ModifyRecommendationDetail`:
   [ModifyRecommendationDetailTypeDef](./type_defs.md#modifyrecommendationdetailtypedef)
 - `TerminateRecommendationDetail`:
@@ -1343,13 +1344,13 @@ from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationTypeDef
 
 Optional fields:
 
-- `AccountScope`: [AccountScope](./literals.md#accountscope)
+- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
 - `SavingsPlansType`:
-  [SupportedSavingsPlansType](./literals.md#supportedsavingsplanstype)
-- `TermInYears`: [TermInYears](./literals.md#terminyears)
-- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
+  [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
+- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `LookbackPeriodInDays`:
-  [LookbackPeriodInDays](./literals.md#lookbackperiodindays)
+  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
 - `SavingsPlansPurchaseRecommendationDetails`:
   `List`\[[SavingsPlansPurchaseRecommendationDetailTypeDef](./type_defs.md#savingsplanspurchaserecommendationdetailtypedef)\]
 - `SavingsPlansPurchaseRecommendationSummary`:
@@ -1456,7 +1457,7 @@ Required fields:
 
 Optional fields:
 
-- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 ## SubscriberTypeDef
 
@@ -1467,8 +1468,8 @@ from mypy_boto3_ce.type_defs import SubscriberTypeDef
 Optional fields:
 
 - `Address`: `str`
-- `Type`: [SubscriberType](./literals.md#subscribertype)
-- `Status`: [SubscriberStatus](./literals.md#subscriberstatus)
+- `Type`: [SubscriberTypeType](./literals.md#subscribertypetype)
+- `Status`: [SubscriberStatusType](./literals.md#subscriberstatustype)
 
 ## TagValuesTypeDef
 
@@ -1480,7 +1481,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
-- `MatchOptions`: `List`\[[MatchOption](./literals.md#matchoption)\]
+- `MatchOptions`: `List`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
 ## TargetInstanceTypeDef
 
@@ -1518,7 +1519,7 @@ from mypy_boto3_ce.type_defs import TotalImpactFilterTypeDef
 
 Required fields:
 
-- `NumericOperator`: [NumericOperator](./literals.md#numericoperator)
+- `NumericOperator`: [NumericOperatorType](./literals.md#numericoperatortype)
 - `StartValue`: `float`
 
 Optional fields:

@@ -3,7 +3,7 @@
 > [Index](..) > AugmentedAIRuntime
 
 Auto-generated documentation for
-[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
@@ -30,28 +30,28 @@ Can be used directly:
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 ```
 
-AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_human_loop](./client.md#delete-human-loop)
-- [describe_human_loop](./client.md#describe-human-loop)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_human_loops](./client.md#list-human-loops)
-- [start_human_loop](./client.md#start-human-loop)
-- [stop_human_loop](./client.md#stop-human-loop)
+- [can_paginate](./client.md#can_paginate)
+- [delete_human_loop](./client.md#delete_human_loop)
+- [describe_human_loop](./client.md#describe_human_loop)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_human_loops](./client.md#list_human_loops)
+- [start_human_loop](./client.md#start_human_loop)
+- [stop_human_loop](./client.md#stop_human_loop)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+AugmentedAIRuntimeClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -73,13 +73,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifier, ...
+from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifierType, ...
 ```
 
-- [ContentClassifier](./literals.md#contentclassifier)
-- [HumanLoopStatus](./literals.md#humanloopstatus)
+- [ContentClassifierType](./literals.md#contentclassifiertype)
+- [HumanLoopStatusType](./literals.md#humanloopstatustype)
 - [ListHumanLoopsPaginatorName](./literals.md#listhumanloopspaginatorname)
-- [SortOrder](./literals.md#sortorder)
+- [SortOrderType](./literals.md#sortordertype)
 
 ## Typed dictionaries
 

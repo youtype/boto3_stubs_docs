@@ -3,7 +3,7 @@
 > [Index](..) > MarketplaceEntitlementService
 
 Auto-generated documentation for
-[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module
 [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
@@ -30,21 +30,21 @@ Can be used directly:
 from mypy_boto3_marketplace_entitlement.client import MarketplaceEntitlementServiceClient
 ```
 
-MarketplaceEntitlementServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_entitlements](./client.md#get-entitlements)
-- [get_paginator](./client.md#get-paginator)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_entitlements](./client.md#get_entitlements)
+- [get_paginator](./client.md#get_paginator)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServiceErrorException](./client.md#internalserviceerrorexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [ThrottlingException](./client.md#throttlingexception)
+MarketplaceEntitlementServiceClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServiceErrorException
+- InvalidParameterException
+- ThrottlingException
 
 ## Paginators
 
@@ -66,10 +66,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplace_entitlement.literals import GetEntitlementFilterName, ...
+from mypy_boto3_marketplace_entitlement.literals import GetEntitlementFilterNameType, ...
 ```
 
-- [GetEntitlementFilterName](./literals.md#getentitlementfiltername)
+- [GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype)
 - [GetEntitlementsPaginatorName](./literals.md#getentitlementspaginatorname)
 
 ## Typed dictionaries

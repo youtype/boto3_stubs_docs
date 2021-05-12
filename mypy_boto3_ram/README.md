@@ -3,7 +3,7 @@
 > [Index](..) > RAM
 
 Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ram.html#RAM)
 type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
@@ -29,62 +29,62 @@ Can be used directly:
 from mypy_boto3_ram.client import RAMClient
 ```
 
-RAMClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [accept_resource_share_invitation](./client.md#accept-resource-share-invitation)
-- [associate_resource_share](./client.md#associate-resource-share)
-- [associate_resource_share_permission](./client.md#associate-resource-share-permission)
-- [can_paginate](./client.md#can-paginate)
-- [create_resource_share](./client.md#create-resource-share)
-- [delete_resource_share](./client.md#delete-resource-share)
-- [disassociate_resource_share](./client.md#disassociate-resource-share)
-- [disassociate_resource_share_permission](./client.md#disassociate-resource-share-permission)
-- [enable_sharing_with_aws_organization](./client.md#enable-sharing-with-aws-organization)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_permission](./client.md#get-permission)
-- [get_resource_policies](./client.md#get-resource-policies)
-- [get_resource_share_associations](./client.md#get-resource-share-associations)
-- [get_resource_share_invitations](./client.md#get-resource-share-invitations)
-- [get_resource_shares](./client.md#get-resource-shares)
-- [list_pending_invitation_resources](./client.md#list-pending-invitation-resources)
-- [list_permissions](./client.md#list-permissions)
-- [list_principals](./client.md#list-principals)
-- [list_resource_share_permissions](./client.md#list-resource-share-permissions)
-- [list_resource_types](./client.md#list-resource-types)
-- [list_resources](./client.md#list-resources)
-- [promote_resource_share_created_from_policy](./client.md#promote-resource-share-created-from-policy)
-- [reject_resource_share_invitation](./client.md#reject-resource-share-invitation)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_resource_share](./client.md#update-resource-share)
+- [accept_resource_share_invitation](./client.md#accept_resource_share_invitation)
+- [associate_resource_share](./client.md#associate_resource_share)
+- [associate_resource_share_permission](./client.md#associate_resource_share_permission)
+- [can_paginate](./client.md#can_paginate)
+- [create_resource_share](./client.md#create_resource_share)
+- [delete_resource_share](./client.md#delete_resource_share)
+- [disassociate_resource_share](./client.md#disassociate_resource_share)
+- [disassociate_resource_share_permission](./client.md#disassociate_resource_share_permission)
+- [enable_sharing_with_aws_organization](./client.md#enable_sharing_with_aws_organization)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_permission](./client.md#get_permission)
+- [get_resource_policies](./client.md#get_resource_policies)
+- [get_resource_share_associations](./client.md#get_resource_share_associations)
+- [get_resource_share_invitations](./client.md#get_resource_share_invitations)
+- [get_resource_shares](./client.md#get_resource_shares)
+- [list_pending_invitation_resources](./client.md#list_pending_invitation_resources)
+- [list_permissions](./client.md#list_permissions)
+- [list_principals](./client.md#list_principals)
+- [list_resource_share_permissions](./client.md#list_resource_share_permissions)
+- [list_resource_types](./client.md#list_resource_types)
+- [list_resources](./client.md#list_resources)
+- [promote_resource_share_created_from_policy](./client.md#promote_resource_share_created_from_policy)
+- [reject_resource_share_invitation](./client.md#reject_resource_share_invitation)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_resource_share](./client.md#update_resource_share)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
-- [InvalidClientTokenException](./client.md#invalidclienttokenexception)
-- [InvalidMaxResultsException](./client.md#invalidmaxresultsexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidResourceTypeException](./client.md#invalidresourcetypeexception)
-- [InvalidStateTransitionException](./client.md#invalidstatetransitionexception)
-- [MalformedArnException](./client.md#malformedarnexception)
-- [MissingRequiredParameterException](./client.md#missingrequiredparameterexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [ResourceArnNotFoundException](./client.md#resourcearnnotfoundexception)
-- [ResourceShareInvitationAlreadyAcceptedException](./client.md#resourceshareinvitationalreadyacceptedexception)
-- [ResourceShareInvitationAlreadyRejectedException](./client.md#resourceshareinvitationalreadyrejectedexception)
-- [ResourceShareInvitationArnNotFoundException](./client.md#resourceshareinvitationarnnotfoundexception)
-- [ResourceShareInvitationExpiredException](./client.md#resourceshareinvitationexpiredexception)
-- [ResourceShareLimitExceededException](./client.md#resourcesharelimitexceededexception)
-- [ServerInternalException](./client.md#serverinternalexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TagLimitExceededException](./client.md#taglimitexceededexception)
-- [TagPolicyViolationException](./client.md#tagpolicyviolationexception)
-- [UnknownResourceException](./client.md#unknownresourceexception)
+RAMClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- IdempotentParameterMismatchException
+- InvalidClientTokenException
+- InvalidMaxResultsException
+- InvalidNextTokenException
+- InvalidParameterException
+- InvalidResourceTypeException
+- InvalidStateTransitionException
+- MalformedArnException
+- MissingRequiredParameterException
+- OperationNotPermittedException
+- ResourceArnNotFoundException
+- ResourceShareInvitationAlreadyAcceptedException
+- ResourceShareInvitationAlreadyRejectedException
+- ResourceShareInvitationArnNotFoundException
+- ResourceShareInvitationExpiredException
+- ResourceShareLimitExceededException
+- ServerInternalException
+- ServiceUnavailableException
+- TagLimitExceededException
+- TagPolicyViolationException
+- UnknownResourceException
 
 ## Paginators
 
@@ -120,13 +120,13 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 - [GetResourceSharesPaginatorName](./literals.md#getresourcesharespaginatorname)
 - [ListPrincipalsPaginatorName](./literals.md#listprincipalspaginatorname)
 - [ListResourcesPaginatorName](./literals.md#listresourcespaginatorname)
-- [ResourceOwner](./literals.md#resourceowner)
-- [ResourceShareAssociationStatus](./literals.md#resourceshareassociationstatus)
-- [ResourceShareAssociationType](./literals.md#resourceshareassociationtype)
-- [ResourceShareFeatureSet](./literals.md#resourcesharefeatureset)
-- [ResourceShareInvitationStatus](./literals.md#resourceshareinvitationstatus)
-- [ResourceShareStatus](./literals.md#resourcesharestatus)
-- [ResourceStatus](./literals.md#resourcestatus)
+- [ResourceOwnerType](./literals.md#resourceownertype)
+- [ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype)
+- [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
+- [ResourceShareFeatureSetType](./literals.md#resourcesharefeaturesettype)
+- [ResourceShareInvitationStatusType](./literals.md#resourceshareinvitationstatustype)
+- [ResourceShareStatusType](./literals.md#resourcesharestatustype)
+- [ResourceStatusType](./literals.md#resourcestatustype)
 
 ## Typed dictionaries
 

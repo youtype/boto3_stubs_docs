@@ -3,7 +3,7 @@
 > [Index](..) > DataSync
 
 Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datasync.html#DataSync)
 type annotations stubs module
 [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
@@ -30,54 +30,54 @@ Can be used directly:
 from mypy_boto3_datasync.client import DataSyncClient
 ```
 
-DataSyncClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_task_execution](./client.md#cancel-task-execution)
-- [create_agent](./client.md#create-agent)
-- [create_location_efs](./client.md#create-location-efs)
-- [create_location_fsx_windows](./client.md#create-location-fsx-windows)
-- [create_location_nfs](./client.md#create-location-nfs)
-- [create_location_object_storage](./client.md#create-location-object-storage)
-- [create_location_s3](./client.md#create-location-s3)
-- [create_location_smb](./client.md#create-location-smb)
-- [create_task](./client.md#create-task)
-- [delete_agent](./client.md#delete-agent)
-- [delete_location](./client.md#delete-location)
-- [delete_task](./client.md#delete-task)
-- [describe_agent](./client.md#describe-agent)
-- [describe_location_efs](./client.md#describe-location-efs)
-- [describe_location_fsx_windows](./client.md#describe-location-fsx-windows)
-- [describe_location_nfs](./client.md#describe-location-nfs)
-- [describe_location_object_storage](./client.md#describe-location-object-storage)
-- [describe_location_s3](./client.md#describe-location-s3)
-- [describe_location_smb](./client.md#describe-location-smb)
-- [describe_task](./client.md#describe-task)
-- [describe_task_execution](./client.md#describe-task-execution)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_agents](./client.md#list-agents)
-- [list_locations](./client.md#list-locations)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_task_executions](./client.md#list-task-executions)
-- [list_tasks](./client.md#list-tasks)
-- [start_task_execution](./client.md#start-task-execution)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_agent](./client.md#update-agent)
-- [update_location_nfs](./client.md#update-location-nfs)
-- [update_location_object_storage](./client.md#update-location-object-storage)
-- [update_location_smb](./client.md#update-location-smb)
-- [update_task](./client.md#update-task)
-- [update_task_execution](./client.md#update-task-execution)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_task_execution](./client.md#cancel_task_execution)
+- [create_agent](./client.md#create_agent)
+- [create_location_efs](./client.md#create_location_efs)
+- [create_location_fsx_windows](./client.md#create_location_fsx_windows)
+- [create_location_nfs](./client.md#create_location_nfs)
+- [create_location_object_storage](./client.md#create_location_object_storage)
+- [create_location_s3](./client.md#create_location_s3)
+- [create_location_smb](./client.md#create_location_smb)
+- [create_task](./client.md#create_task)
+- [delete_agent](./client.md#delete_agent)
+- [delete_location](./client.md#delete_location)
+- [delete_task](./client.md#delete_task)
+- [describe_agent](./client.md#describe_agent)
+- [describe_location_efs](./client.md#describe_location_efs)
+- [describe_location_fsx_windows](./client.md#describe_location_fsx_windows)
+- [describe_location_nfs](./client.md#describe_location_nfs)
+- [describe_location_object_storage](./client.md#describe_location_object_storage)
+- [describe_location_s3](./client.md#describe_location_s3)
+- [describe_location_smb](./client.md#describe_location_smb)
+- [describe_task](./client.md#describe_task)
+- [describe_task_execution](./client.md#describe_task_execution)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_agents](./client.md#list_agents)
+- [list_locations](./client.md#list_locations)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_task_executions](./client.md#list_task_executions)
+- [list_tasks](./client.md#list_tasks)
+- [start_task_execution](./client.md#start_task_execution)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_agent](./client.md#update_agent)
+- [update_location_nfs](./client.md#update_location_nfs)
+- [update_location_object_storage](./client.md#update_location_object_storage)
+- [update_location_smb](./client.md#update_location_smb)
+- [update_task](./client.md#update_task)
+- [update_task_execution](./client.md#update_task_execution)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalException](./client.md#internalexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
+DataSyncClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalException
+- InvalidRequestException
 
 ## Paginators
 
@@ -103,39 +103,39 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_datasync.literals import AgentStatus, ...
+from mypy_boto3_datasync.literals import AgentStatusType, ...
 ```
 
-- [AgentStatus](./literals.md#agentstatus)
-- [Atime](./literals.md#atime)
-- [EndpointType](./literals.md#endpointtype)
-- [FilterType](./literals.md#filtertype)
-- [Gid](./literals.md#gid)
+- [AgentStatusType](./literals.md#agentstatustype)
+- [AtimeType](./literals.md#atimetype)
+- [EndpointTypeType](./literals.md#endpointtypetype)
+- [FilterTypeType](./literals.md#filtertypetype)
+- [GidType](./literals.md#gidtype)
 - [ListAgentsPaginatorName](./literals.md#listagentspaginatorname)
 - [ListLocationsPaginatorName](./literals.md#listlocationspaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
 - [ListTaskExecutionsPaginatorName](./literals.md#listtaskexecutionspaginatorname)
 - [ListTasksPaginatorName](./literals.md#listtaskspaginatorname)
-- [LocationFilterName](./literals.md#locationfiltername)
-- [LogLevel](./literals.md#loglevel)
-- [Mtime](./literals.md#mtime)
-- [NfsVersion](./literals.md#nfsversion)
-- [ObjectStorageServerProtocol](./literals.md#objectstorageserverprotocol)
-- [Operator](./literals.md#operator)
-- [OverwriteMode](./literals.md#overwritemode)
-- [PhaseStatus](./literals.md#phasestatus)
-- [PosixPermissions](./literals.md#posixpermissions)
-- [PreserveDeletedFiles](./literals.md#preservedeletedfiles)
-- [PreserveDevices](./literals.md#preservedevices)
-- [S3StorageClass](./literals.md#s3storageclass)
-- [SmbVersion](./literals.md#smbversion)
-- [TaskExecutionStatus](./literals.md#taskexecutionstatus)
-- [TaskFilterName](./literals.md#taskfiltername)
-- [TaskQueueing](./literals.md#taskqueueing)
-- [TaskStatus](./literals.md#taskstatus)
-- [TransferMode](./literals.md#transfermode)
-- [Uid](./literals.md#uid)
-- [VerifyMode](./literals.md#verifymode)
+- [LocationFilterNameType](./literals.md#locationfilternametype)
+- [LogLevelType](./literals.md#logleveltype)
+- [MtimeType](./literals.md#mtimetype)
+- [NfsVersionType](./literals.md#nfsversiontype)
+- [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
+- [OperatorType](./literals.md#operatortype)
+- [OverwriteModeType](./literals.md#overwritemodetype)
+- [PhaseStatusType](./literals.md#phasestatustype)
+- [PosixPermissionsType](./literals.md#posixpermissionstype)
+- [PreserveDeletedFilesType](./literals.md#preservedeletedfilestype)
+- [PreserveDevicesType](./literals.md#preservedevicestype)
+- [S3StorageClassType](./literals.md#s3storageclasstype)
+- [SmbVersionType](./literals.md#smbversiontype)
+- [TaskExecutionStatusType](./literals.md#taskexecutionstatustype)
+- [TaskFilterNameType](./literals.md#taskfilternametype)
+- [TaskQueueingType](./literals.md#taskqueueingtype)
+- [TaskStatusType](./literals.md#taskstatustype)
+- [TransferModeType](./literals.md#transfermodetype)
+- [UidType](./literals.md#uidtype)
+- [VerifyModeType](./literals.md#verifymodetype)
 
 ## Typed dictionaries
 

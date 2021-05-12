@@ -3,38 +3,38 @@
 > [Index](..) > [SESV2](.) > Literals
 
 Auto-generated documentation for
-[SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
+[SESV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sesv2.html#SESV2)
 type annotations stubs module
 [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 - [Literals for boto3 SESV2 module](#literals-for-boto3-sesv2-module)
-  - [BehaviorOnMxFailure](#behavioronmxfailure)
-  - [BulkEmailStatus](#bulkemailstatus)
-  - [ContactLanguage](#contactlanguage)
-  - [ContactListImportAction](#contactlistimportaction)
-  - [DataFormat](#dataformat)
-  - [DeliverabilityDashboardAccountStatus](#deliverabilitydashboardaccountstatus)
-  - [DeliverabilityTestStatus](#deliverabilityteststatus)
-  - [DimensionValueSource](#dimensionvaluesource)
-  - [DkimSigningAttributesOrigin](#dkimsigningattributesorigin)
-  - [DkimStatus](#dkimstatus)
-  - [EventType](#eventtype)
-  - [IdentityType](#identitytype)
-  - [ImportDestinationType](#importdestinationtype)
-  - [JobStatus](#jobstatus)
-  - [MailFromDomainStatus](#mailfromdomainstatus)
-  - [MailType](#mailtype)
-  - [ReviewStatus](#reviewstatus)
-  - [SubscriptionStatus](#subscriptionstatus)
-  - [SuppressionListImportAction](#suppressionlistimportaction)
-  - [SuppressionListReason](#suppressionlistreason)
-  - [TlsPolicy](#tlspolicy)
-  - [WarmupStatus](#warmupstatus)
+  - [BehaviorOnMxFailureType](#behavioronmxfailuretype)
+  - [BulkEmailStatusType](#bulkemailstatustype)
+  - [ContactLanguageType](#contactlanguagetype)
+  - [ContactListImportActionType](#contactlistimportactiontype)
+  - [DataFormatType](#dataformattype)
+  - [DeliverabilityDashboardAccountStatusType](#deliverabilitydashboardaccountstatustype)
+  - [DeliverabilityTestStatusType](#deliverabilityteststatustype)
+  - [DimensionValueSourceType](#dimensionvaluesourcetype)
+  - [DkimSigningAttributesOriginType](#dkimsigningattributesorigintype)
+  - [DkimStatusType](#dkimstatustype)
+  - [EventTypeType](#eventtypetype)
+  - [IdentityTypeType](#identitytypetype)
+  - [ImportDestinationTypeType](#importdestinationtypetype)
+  - [JobStatusType](#jobstatustype)
+  - [MailFromDomainStatusType](#mailfromdomainstatustype)
+  - [MailTypeType](#mailtypetype)
+  - [ReviewStatusType](#reviewstatustype)
+  - [SubscriptionStatusType](#subscriptionstatustype)
+  - [SuppressionListImportActionType](#suppressionlistimportactiontype)
+  - [SuppressionListReasonType](#suppressionlistreasontype)
+  - [TlsPolicyType](#tlspolicytype)
+  - [WarmupStatusType](#warmupstatustype)
 
-## BehaviorOnMxFailure
+## BehaviorOnMxFailureType
 
 ```python
-from mypy_boto3_sesv2.literals import BehaviorOnMxFailure
+from mypy_boto3_sesv2.literals import BehaviorOnMxFailureType
 ```
 
 Values:
@@ -42,10 +42,10 @@ Values:
 - `REJECT_MESSAGE`
 - `USE_DEFAULT_VALUE`
 
-## BulkEmailStatus
+## BulkEmailStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import BulkEmailStatus
+from mypy_boto3_sesv2.literals import BulkEmailStatusType
 ```
 
 Values:
@@ -65,10 +65,10 @@ Values:
 - `TEMPLATE_NOT_FOUND`
 - `TRANSIENT_FAILURE`
 
-## ContactLanguage
+## ContactLanguageType
 
 ```python
-from mypy_boto3_sesv2.literals import ContactLanguage
+from mypy_boto3_sesv2.literals import ContactLanguageType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `EN`
 - `JA`
 
-## ContactListImportAction
+## ContactListImportActionType
 
 ```python
-from mypy_boto3_sesv2.literals import ContactListImportAction
+from mypy_boto3_sesv2.literals import ContactListImportActionType
 ```
 
 Values:
@@ -87,10 +87,10 @@ Values:
 - `DELETE`
 - `PUT`
 
-## DataFormat
+## DataFormatType
 
 ```python
-from mypy_boto3_sesv2.literals import DataFormat
+from mypy_boto3_sesv2.literals import DataFormatType
 ```
 
 Values:
@@ -98,10 +98,10 @@ Values:
 - `CSV`
 - `JSON`
 
-## DeliverabilityDashboardAccountStatus
+## DeliverabilityDashboardAccountStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import DeliverabilityDashboardAccountStatus
+from mypy_boto3_sesv2.literals import DeliverabilityDashboardAccountStatusType
 ```
 
 Values:
@@ -110,10 +110,10 @@ Values:
 - `DISABLED`
 - `PENDING_EXPIRATION`
 
-## DeliverabilityTestStatus
+## DeliverabilityTestStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import DeliverabilityTestStatus
+from mypy_boto3_sesv2.literals import DeliverabilityTestStatusType
 ```
 
 Values:
@@ -121,10 +121,10 @@ Values:
 - `COMPLETED`
 - `IN_PROGRESS`
 
-## DimensionValueSource
+## DimensionValueSourceType
 
 ```python
-from mypy_boto3_sesv2.literals import DimensionValueSource
+from mypy_boto3_sesv2.literals import DimensionValueSourceType
 ```
 
 Values:
@@ -133,10 +133,10 @@ Values:
 - `LINK_TAG`
 - `MESSAGE_TAG`
 
-## DkimSigningAttributesOrigin
+## DkimSigningAttributesOriginType
 
 ```python
-from mypy_boto3_sesv2.literals import DkimSigningAttributesOrigin
+from mypy_boto3_sesv2.literals import DkimSigningAttributesOriginType
 ```
 
 Values:
@@ -144,10 +144,10 @@ Values:
 - `AWS_SES`
 - `EXTERNAL`
 
-## DkimStatus
+## DkimStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import DkimStatus
+from mypy_boto3_sesv2.literals import DkimStatusType
 ```
 
 Values:
@@ -158,10 +158,10 @@ Values:
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_sesv2.literals import EventType
+from mypy_boto3_sesv2.literals import EventTypeType
 ```
 
 Values:
@@ -177,10 +177,10 @@ Values:
 - `SEND`
 - `SUBSCRIPTION`
 
-## IdentityType
+## IdentityTypeType
 
 ```python
-from mypy_boto3_sesv2.literals import IdentityType
+from mypy_boto3_sesv2.literals import IdentityTypeType
 ```
 
 Values:
@@ -189,10 +189,10 @@ Values:
 - `EMAIL_ADDRESS`
 - `MANAGED_DOMAIN`
 
-## ImportDestinationType
+## ImportDestinationTypeType
 
 ```python
-from mypy_boto3_sesv2.literals import ImportDestinationType
+from mypy_boto3_sesv2.literals import ImportDestinationTypeType
 ```
 
 Values:
@@ -200,10 +200,10 @@ Values:
 - `CONTACT_LIST`
 - `SUPPRESSION_LIST`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import JobStatus
+from mypy_boto3_sesv2.literals import JobStatusType
 ```
 
 Values:
@@ -213,10 +213,10 @@ Values:
 - `FAILED`
 - `PROCESSING`
 
-## MailFromDomainStatus
+## MailFromDomainStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import MailFromDomainStatus
+from mypy_boto3_sesv2.literals import MailFromDomainStatusType
 ```
 
 Values:
@@ -226,10 +226,10 @@ Values:
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
 
-## MailType
+## MailTypeType
 
 ```python
-from mypy_boto3_sesv2.literals import MailType
+from mypy_boto3_sesv2.literals import MailTypeType
 ```
 
 Values:
@@ -237,10 +237,10 @@ Values:
 - `MARKETING`
 - `TRANSACTIONAL`
 
-## ReviewStatus
+## ReviewStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import ReviewStatus
+from mypy_boto3_sesv2.literals import ReviewStatusType
 ```
 
 Values:
@@ -250,10 +250,10 @@ Values:
 - `GRANTED`
 - `PENDING`
 
-## SubscriptionStatus
+## SubscriptionStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import SubscriptionStatus
+from mypy_boto3_sesv2.literals import SubscriptionStatusType
 ```
 
 Values:
@@ -261,10 +261,10 @@ Values:
 - `OPT_IN`
 - `OPT_OUT`
 
-## SuppressionListImportAction
+## SuppressionListImportActionType
 
 ```python
-from mypy_boto3_sesv2.literals import SuppressionListImportAction
+from mypy_boto3_sesv2.literals import SuppressionListImportActionType
 ```
 
 Values:
@@ -272,10 +272,10 @@ Values:
 - `DELETE`
 - `PUT`
 
-## SuppressionListReason
+## SuppressionListReasonType
 
 ```python
-from mypy_boto3_sesv2.literals import SuppressionListReason
+from mypy_boto3_sesv2.literals import SuppressionListReasonType
 ```
 
 Values:
@@ -283,10 +283,10 @@ Values:
 - `BOUNCE`
 - `COMPLAINT`
 
-## TlsPolicy
+## TlsPolicyType
 
 ```python
-from mypy_boto3_sesv2.literals import TlsPolicy
+from mypy_boto3_sesv2.literals import TlsPolicyType
 ```
 
 Values:
@@ -294,10 +294,10 @@ Values:
 - `OPTIONAL`
 - `REQUIRE`
 
-## WarmupStatus
+## WarmupStatusType
 
 ```python
-from mypy_boto3_sesv2.literals import WarmupStatus
+from mypy_boto3_sesv2.literals import WarmupStatusType
 ```
 
 Values:

@@ -3,46 +3,46 @@
 > [Index](..) > [DLM](.) > Literals
 
 Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+[DLM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM)
 type annotations stubs module
 [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 - [Literals for boto3 DLM module](#literals-for-boto3-dlm-module)
-  - [EventSourceValues](#eventsourcevalues)
-  - [EventTypeValues](#eventtypevalues)
-  - [GettablePolicyStateValues](#gettablepolicystatevalues)
-  - [IntervalUnitValues](#intervalunitvalues)
-  - [LocationValues](#locationvalues)
-  - [PolicyTypeValues](#policytypevalues)
-  - [ResourceLocationValues](#resourcelocationvalues)
-  - [ResourceTypeValues](#resourcetypevalues)
-  - [RetentionIntervalUnitValues](#retentionintervalunitvalues)
-  - [SettablePolicyStateValues](#settablepolicystatevalues)
+  - [EventSourceValuesType](#eventsourcevaluestype)
+  - [EventTypeValuesType](#eventtypevaluestype)
+  - [GettablePolicyStateValuesType](#gettablepolicystatevaluestype)
+  - [IntervalUnitValuesType](#intervalunitvaluestype)
+  - [LocationValuesType](#locationvaluestype)
+  - [PolicyTypeValuesType](#policytypevaluestype)
+  - [ResourceLocationValuesType](#resourcelocationvaluestype)
+  - [ResourceTypeValuesType](#resourcetypevaluestype)
+  - [RetentionIntervalUnitValuesType](#retentionintervalunitvaluestype)
+  - [SettablePolicyStateValuesType](#settablepolicystatevaluestype)
 
-## EventSourceValues
+## EventSourceValuesType
 
 ```python
-from mypy_boto3_dlm.literals import EventSourceValues
+from mypy_boto3_dlm.literals import EventSourceValuesType
 ```
 
 Values:
 
 - `MANAGED_CWE`
 
-## EventTypeValues
+## EventTypeValuesType
 
 ```python
-from mypy_boto3_dlm.literals import EventTypeValues
+from mypy_boto3_dlm.literals import EventTypeValuesType
 ```
 
 Values:
 
 - `shareSnapshot`
 
-## GettablePolicyStateValues
+## GettablePolicyStateValuesType
 
 ```python
-from mypy_boto3_dlm.literals import GettablePolicyStateValues
+from mypy_boto3_dlm.literals import GettablePolicyStateValuesType
 ```
 
 Values:
@@ -51,20 +51,20 @@ Values:
 - `ENABLED`
 - `ERROR`
 
-## IntervalUnitValues
+## IntervalUnitValuesType
 
 ```python
-from mypy_boto3_dlm.literals import IntervalUnitValues
+from mypy_boto3_dlm.literals import IntervalUnitValuesType
 ```
 
 Values:
 
 - `HOURS`
 
-## LocationValues
+## LocationValuesType
 
 ```python
-from mypy_boto3_dlm.literals import LocationValues
+from mypy_boto3_dlm.literals import LocationValuesType
 ```
 
 Values:
@@ -72,10 +72,10 @@ Values:
 - `CLOUD`
 - `OUTPOST_LOCAL`
 
-## PolicyTypeValues
+## PolicyTypeValuesType
 
 ```python
-from mypy_boto3_dlm.literals import PolicyTypeValues
+from mypy_boto3_dlm.literals import PolicyTypeValuesType
 ```
 
 Values:
@@ -84,10 +84,10 @@ Values:
 - `EVENT_BASED_POLICY`
 - `IMAGE_MANAGEMENT`
 
-## ResourceLocationValues
+## ResourceLocationValuesType
 
 ```python
-from mypy_boto3_dlm.literals import ResourceLocationValues
+from mypy_boto3_dlm.literals import ResourceLocationValuesType
 ```
 
 Values:
@@ -95,10 +95,10 @@ Values:
 - `CLOUD`
 - `OUTPOST`
 
-## ResourceTypeValues
+## ResourceTypeValuesType
 
 ```python
-from mypy_boto3_dlm.literals import ResourceTypeValues
+from mypy_boto3_dlm.literals import ResourceTypeValuesType
 ```
 
 Values:
@@ -106,10 +106,10 @@ Values:
 - `INSTANCE`
 - `VOLUME`
 
-## RetentionIntervalUnitValues
+## RetentionIntervalUnitValuesType
 
 ```python
-from mypy_boto3_dlm.literals import RetentionIntervalUnitValues
+from mypy_boto3_dlm.literals import RetentionIntervalUnitValuesType
 ```
 
 Values:
@@ -119,10 +119,10 @@ Values:
 - `WEEKS`
 - `YEARS`
 
-## SettablePolicyStateValues
+## SettablePolicyStateValuesType
 
 ```python
-from mypy_boto3_dlm.literals import SettablePolicyStateValues
+from mypy_boto3_dlm.literals import SettablePolicyStateValuesType
 ```
 
 Values:

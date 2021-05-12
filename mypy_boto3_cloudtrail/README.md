@@ -3,7 +3,7 @@
 > [Index](..) > CloudTrail
 
 Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
 [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
@@ -30,79 +30,79 @@ Can be used directly:
 from mypy_boto3_cloudtrail.client import CloudTrailClient
 ```
 
-CloudTrailClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags](./client.md#add-tags)
-- [can_paginate](./client.md#can-paginate)
-- [create_trail](./client.md#create-trail)
-- [delete_trail](./client.md#delete-trail)
-- [describe_trails](./client.md#describe-trails)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_event_selectors](./client.md#get-event-selectors)
-- [get_insight_selectors](./client.md#get-insight-selectors)
-- [get_paginator](./client.md#get-paginator)
-- [get_trail](./client.md#get-trail)
-- [get_trail_status](./client.md#get-trail-status)
-- [list_public_keys](./client.md#list-public-keys)
-- [list_tags](./client.md#list-tags)
-- [list_trails](./client.md#list-trails)
-- [lookup_events](./client.md#lookup-events)
-- [put_event_selectors](./client.md#put-event-selectors)
-- [put_insight_selectors](./client.md#put-insight-selectors)
-- [remove_tags](./client.md#remove-tags)
-- [start_logging](./client.md#start-logging)
-- [stop_logging](./client.md#stop-logging)
-- [update_trail](./client.md#update-trail)
+- [add_tags](./client.md#add_tags)
+- [can_paginate](./client.md#can_paginate)
+- [create_trail](./client.md#create_trail)
+- [delete_trail](./client.md#delete_trail)
+- [describe_trails](./client.md#describe_trails)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_event_selectors](./client.md#get_event_selectors)
+- [get_insight_selectors](./client.md#get_insight_selectors)
+- [get_paginator](./client.md#get_paginator)
+- [get_trail](./client.md#get_trail)
+- [get_trail_status](./client.md#get_trail_status)
+- [list_public_keys](./client.md#list_public_keys)
+- [list_tags](./client.md#list_tags)
+- [list_trails](./client.md#list_trails)
+- [lookup_events](./client.md#lookup_events)
+- [put_event_selectors](./client.md#put_event_selectors)
+- [put_insight_selectors](./client.md#put_insight_selectors)
+- [remove_tags](./client.md#remove_tags)
+- [start_logging](./client.md#start_logging)
+- [stop_logging](./client.md#stop_logging)
+- [update_trail](./client.md#update_trail)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [CloudTrailARNInvalidException](./client.md#cloudtrailarninvalidexception)
-- [CloudTrailAccessNotEnabledException](./client.md#cloudtrailaccessnotenabledexception)
-- [CloudTrailInvalidClientTokenIdException](./client.md#cloudtrailinvalidclienttokenidexception)
-- [CloudWatchLogsDeliveryUnavailableException](./client.md#cloudwatchlogsdeliveryunavailableexception)
-- [ConflictException](./client.md#conflictexception)
-- [InsightNotEnabledException](./client.md#insightnotenabledexception)
-- [InsufficientDependencyServiceAccessPermissionException](./client.md#insufficientdependencyserviceaccesspermissionexception)
-- [InsufficientEncryptionPolicyException](./client.md#insufficientencryptionpolicyexception)
-- [InsufficientS3BucketPolicyException](./client.md#insufficients3bucketpolicyexception)
-- [InsufficientSnsTopicPolicyException](./client.md#insufficientsnstopicpolicyexception)
-- [InvalidCloudWatchLogsLogGroupArnException](./client.md#invalidcloudwatchlogsloggrouparnexception)
-- [InvalidCloudWatchLogsRoleArnException](./client.md#invalidcloudwatchlogsrolearnexception)
-- [InvalidEventCategoryException](./client.md#invalideventcategoryexception)
-- [InvalidEventSelectorsException](./client.md#invalideventselectorsexception)
-- [InvalidHomeRegionException](./client.md#invalidhomeregionexception)
-- [InvalidInsightSelectorsException](./client.md#invalidinsightselectorsexception)
-- [InvalidKmsKeyIdException](./client.md#invalidkmskeyidexception)
-- [InvalidLookupAttributesException](./client.md#invalidlookupattributesexception)
-- [InvalidMaxResultsException](./client.md#invalidmaxresultsexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidParameterCombinationException](./client.md#invalidparametercombinationexception)
-- [InvalidS3BucketNameException](./client.md#invalids3bucketnameexception)
-- [InvalidS3PrefixException](./client.md#invalids3prefixexception)
-- [InvalidSnsTopicNameException](./client.md#invalidsnstopicnameexception)
-- [InvalidTagParameterException](./client.md#invalidtagparameterexception)
-- [InvalidTimeRangeException](./client.md#invalidtimerangeexception)
-- [InvalidTokenException](./client.md#invalidtokenexception)
-- [InvalidTrailNameException](./client.md#invalidtrailnameexception)
-- [KmsException](./client.md#kmsexception)
-- [KmsKeyDisabledException](./client.md#kmskeydisabledexception)
-- [KmsKeyNotFoundException](./client.md#kmskeynotfoundexception)
-- [MaximumNumberOfTrailsExceededException](./client.md#maximumnumberoftrailsexceededexception)
-- [NotOrganizationMasterAccountException](./client.md#notorganizationmasteraccountexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [OrganizationNotInAllFeaturesModeException](./client.md#organizationnotinallfeaturesmodeexception)
-- [OrganizationsNotInUseException](./client.md#organizationsnotinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ResourceTypeNotSupportedException](./client.md#resourcetypenotsupportedexception)
-- [S3BucketDoesNotExistException](./client.md#s3bucketdoesnotexistexception)
-- [TagsLimitExceededException](./client.md#tagslimitexceededexception)
-- [TrailAlreadyExistsException](./client.md#trailalreadyexistsexception)
-- [TrailNotFoundException](./client.md#trailnotfoundexception)
-- [TrailNotProvidedException](./client.md#trailnotprovidedexception)
-- [UnsupportedOperationException](./client.md#unsupportedoperationexception)
+CloudTrailClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- CloudTrailARNInvalidException
+- CloudTrailAccessNotEnabledException
+- CloudTrailInvalidClientTokenIdException
+- CloudWatchLogsDeliveryUnavailableException
+- ConflictException
+- InsightNotEnabledException
+- InsufficientDependencyServiceAccessPermissionException
+- InsufficientEncryptionPolicyException
+- InsufficientS3BucketPolicyException
+- InsufficientSnsTopicPolicyException
+- InvalidCloudWatchLogsLogGroupArnException
+- InvalidCloudWatchLogsRoleArnException
+- InvalidEventCategoryException
+- InvalidEventSelectorsException
+- InvalidHomeRegionException
+- InvalidInsightSelectorsException
+- InvalidKmsKeyIdException
+- InvalidLookupAttributesException
+- InvalidMaxResultsException
+- InvalidNextTokenException
+- InvalidParameterCombinationException
+- InvalidS3BucketNameException
+- InvalidS3PrefixException
+- InvalidSnsTopicNameException
+- InvalidTagParameterException
+- InvalidTimeRangeException
+- InvalidTokenException
+- InvalidTrailNameException
+- KmsException
+- KmsKeyDisabledException
+- KmsKeyNotFoundException
+- MaximumNumberOfTrailsExceededException
+- NotOrganizationMasterAccountException
+- OperationNotPermittedException
+- OrganizationNotInAllFeaturesModeException
+- OrganizationsNotInUseException
+- ResourceNotFoundException
+- ResourceTypeNotSupportedException
+- S3BucketDoesNotExistException
+- TagsLimitExceededException
+- TrailAlreadyExistsException
+- TrailNotFoundException
+- TrailNotProvidedException
+- UnsupportedOperationException
 
 ## Paginators
 
@@ -127,17 +127,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudtrail.literals import EventCategory, ...
+from mypy_boto3_cloudtrail.literals import EventCategoryType, ...
 ```
 
-- [EventCategory](./literals.md#eventcategory)
-- [InsightType](./literals.md#insighttype)
+- [EventCategoryType](./literals.md#eventcategorytype)
+- [InsightTypeType](./literals.md#insighttypetype)
 - [ListPublicKeysPaginatorName](./literals.md#listpublickeyspaginatorname)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
 - [ListTrailsPaginatorName](./literals.md#listtrailspaginatorname)
-- [LookupAttributeKey](./literals.md#lookupattributekey)
+- [LookupAttributeKeyType](./literals.md#lookupattributekeytype)
 - [LookupEventsPaginatorName](./literals.md#lookupeventspaginatorname)
-- [ReadWriteType](./literals.md#readwritetype)
+- [ReadWriteTypeType](./literals.md#readwritetypetype)
 
 ## Typed dictionaries
 

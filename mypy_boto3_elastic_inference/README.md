@@ -3,7 +3,7 @@
 > [Index](..) > ElasticInference
 
 Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
 [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
@@ -30,26 +30,26 @@ Can be used directly:
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
 ```
 
-ElasticInferenceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_accelerator_offerings](./client.md#describe-accelerator-offerings)
-- [describe_accelerator_types](./client.md#describe-accelerator-types)
-- [describe_accelerators](./client.md#describe-accelerators)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [describe_accelerator_offerings](./client.md#describe_accelerator_offerings)
+- [describe_accelerator_types](./client.md#describe_accelerator_types)
+- [describe_accelerators](./client.md#describe_accelerators)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
+ElasticInferenceClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- InternalServerException
+- ResourceNotFoundException
 
 ## Paginators
 
@@ -75,7 +75,7 @@ from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorN
 ```
 
 - [DescribeAcceleratorsPaginatorName](./literals.md#describeacceleratorspaginatorname)
-- [LocationType](./literals.md#locationtype)
+- [LocationTypeType](./literals.md#locationtypetype)
 
 ## Typed dictionaries
 

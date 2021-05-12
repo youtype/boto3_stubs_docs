@@ -3,7 +3,7 @@
 > [Index](..) > ElasticTranscoder
 
 Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
 [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
@@ -31,42 +31,42 @@ Can be used directly:
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 ```
 
-ElasticTranscoderClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_job](./client.md#cancel-job)
-- [create_job](./client.md#create-job)
-- [create_pipeline](./client.md#create-pipeline)
-- [create_preset](./client.md#create-preset)
-- [delete_pipeline](./client.md#delete-pipeline)
-- [delete_preset](./client.md#delete-preset)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_jobs_by_pipeline](./client.md#list-jobs-by-pipeline)
-- [list_jobs_by_status](./client.md#list-jobs-by-status)
-- [list_pipelines](./client.md#list-pipelines)
-- [list_presets](./client.md#list-presets)
-- [read_job](./client.md#read-job)
-- [read_pipeline](./client.md#read-pipeline)
-- [read_preset](./client.md#read-preset)
-- [test_role](./client.md#test-role)
-- [update_pipeline](./client.md#update-pipeline)
-- [update_pipeline_notifications](./client.md#update-pipeline-notifications)
-- [update_pipeline_status](./client.md#update-pipeline-status)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_job](./client.md#cancel_job)
+- [create_job](./client.md#create_job)
+- [create_pipeline](./client.md#create_pipeline)
+- [create_preset](./client.md#create_preset)
+- [delete_pipeline](./client.md#delete_pipeline)
+- [delete_preset](./client.md#delete_preset)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_jobs_by_pipeline](./client.md#list_jobs_by_pipeline)
+- [list_jobs_by_status](./client.md#list_jobs_by_status)
+- [list_pipelines](./client.md#list_pipelines)
+- [list_presets](./client.md#list_presets)
+- [read_job](./client.md#read_job)
+- [read_pipeline](./client.md#read_pipeline)
+- [read_preset](./client.md#read_preset)
+- [test_role](./client.md#test_role)
+- [update_pipeline](./client.md#update_pipeline)
+- [update_pipeline_notifications](./client.md#update_pipeline_notifications)
+- [update_pipeline_status](./client.md#update_pipeline_status)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [IncompatibleVersionException](./client.md#incompatibleversionexception)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ValidationException](./client.md#validationexception)
+ElasticTranscoderClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- IncompatibleVersionException
+- InternalServiceException
+- LimitExceededException
+- ResourceInUseException
+- ResourceNotFoundException
+- ValidationException
 
 ## Paginators
 

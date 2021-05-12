@@ -3,7 +3,7 @@
 > [Index](..) > [KMS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kms.html#KMS)
 type annotations stubs module
 [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
@@ -110,9 +110,10 @@ Optional fields:
 - `CustomKeyStoreName`: `str`
 - `CloudHsmClusterId`: `str`
 - `TrustAnchorCertificate`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
+- `ConnectionState`:
+  [ConnectionStateTypeType](./literals.md#connectionstatetypetype)
 - `ConnectionErrorCode`:
-  [ConnectionErrorCodeType](./literals.md#connectionerrorcodetype)
+  [ConnectionErrorCodeTypeType](./literals.md#connectionerrorcodetypetype)
 - `CreationDate`: `datetime`
 
 ## DecryptResponseTypeDef
@@ -126,7 +127,7 @@ Optional fields:
 - `KeyId`: `str`
 - `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
 ## DescribeCustomKeyStoresResponseTypeDef
 
@@ -162,7 +163,7 @@ Optional fields:
 - `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
 ## GenerateDataKeyPairResponseTypeDef
 
@@ -176,7 +177,7 @@ Optional fields:
 - `PrivateKeyPlaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `KeyId`: `str`
-- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec)
+- `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
 
 ## GenerateDataKeyPairWithoutPlaintextResponseTypeDef
 
@@ -189,7 +190,7 @@ Optional fields:
 - `PrivateKeyCiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `KeyId`: `str`
-- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec)
+- `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
 
 ## GenerateDataKeyResponseTypeDef
 
@@ -268,12 +269,12 @@ Optional fields:
 - `KeyId`: `str`
 - `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `CustomerMasterKeySpec`:
-  [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
-- `KeyUsage`: [KeyUsageType](./literals.md#keyusagetype)
+  [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - `EncryptionAlgorithms`:
-  `List`\[[EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)\]
+  `List`\[[EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)\]
 - `SigningAlgorithms`:
-  `List`\[[SigningAlgorithmSpec](./literals.md#signingalgorithmspec)\]
+  `List`\[[SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)\]
 
 ## GrantConstraintsTypeDef
 
@@ -301,7 +302,8 @@ Optional fields:
 - `GranteePrincipal`: `str`
 - `RetiringPrincipal`: `str`
 - `IssuingAccount`: `str`
-- `Operations`: `List`\[[GrantOperation](./literals.md#grantoperation)\]
+- `Operations`:
+  `List`\[[GrantOperationType](./literals.md#grantoperationtype)\]
 - `Constraints`:
   [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
 
@@ -333,21 +335,22 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `Enabled`: `bool`
 - `Description`: `str`
-- `KeyUsage`: [KeyUsageType](./literals.md#keyusagetype)
-- `KeyState`: [KeyState](./literals.md#keystate)
+- `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
+- `KeyState`: [KeyStateType](./literals.md#keystatetype)
 - `DeletionDate`: `datetime`
 - `ValidTo`: `datetime`
-- `Origin`: [OriginType](./literals.md#origintype)
+- `Origin`: [OriginTypeType](./literals.md#origintypetype)
 - `CustomKeyStoreId`: `str`
 - `CloudHsmClusterId`: `str`
-- `ExpirationModel`: [ExpirationModelType](./literals.md#expirationmodeltype)
-- `KeyManager`: [KeyManagerType](./literals.md#keymanagertype)
+- `ExpirationModel`:
+  [ExpirationModelTypeType](./literals.md#expirationmodeltypetype)
+- `KeyManager`: [KeyManagerTypeType](./literals.md#keymanagertypetype)
 - `CustomerMasterKeySpec`:
-  [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
+  [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
 - `EncryptionAlgorithms`:
-  `List`\[[EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)\]
+  `List`\[[EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)\]
 - `SigningAlgorithms`:
-  `List`\[[SigningAlgorithmSpec](./literals.md#signingalgorithmspec)\]
+  `List`\[[SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)\]
 
 ## ListAliasesResponseTypeDef
 
@@ -435,9 +438,9 @@ Optional fields:
 - `SourceKeyId`: `str`
 - `KeyId`: `str`
 - `SourceEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `DestinationEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
 ## ScheduleKeyDeletionResponseTypeDef
 
@@ -460,7 +463,8 @@ Optional fields:
 
 - `KeyId`: `str`
 - `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
+- `SigningAlgorithm`:
+  [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
 
 ## TagTypeDef
 
@@ -483,4 +487,5 @@ Optional fields:
 
 - `KeyId`: `str`
 - `SignatureValid`: `bool`
-- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
+- `SigningAlgorithm`:
+  [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)

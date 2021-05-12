@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFormation](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
 [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
@@ -111,7 +111,7 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef
 
 Optional fields:
 
-- `Status`: [AccountGateStatus](./literals.md#accountgatestatus)
+- `Status`: [AccountGateStatusType](./literals.md#accountgatestatustype)
 - `StatusReason`: `str`
 
 ## AccountLimitTypeDef
@@ -148,8 +148,8 @@ Optional fields:
 - `StackName`: `str`
 - `ChangeSetId`: `str`
 - `ChangeSetName`: `str`
-- `ExecutionStatus`: [ExecutionStatus](./literals.md#executionstatus)
-- `Status`: [ChangeSetStatus](./literals.md#changesetstatus)
+- `ExecutionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `Status`: [ChangeSetStatusType](./literals.md#changesetstatustype)
 - `StatusReason`: `str`
 - `CreationTime`: `datetime`
 - `Description`: `str`
@@ -165,8 +165,10 @@ from mypy_boto3_cloudformation.type_defs import ChangeTypeDef
 
 Optional fields:
 
-- `Type`: `Literal['Resource']` (see [ChangeType](./literals.md#changetype))
-- `ResourceChange`: [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
+- `Type`: `Literal['Resource']` (see
+  [ChangeTypeType](./literals.md#changetypetype))
+- `ResourceChange`:
+  [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
 
 ## CreateChangeSetOutputTypeDef
 
@@ -270,13 +272,13 @@ Required fields:
 - `Description`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `CreationTime`: `datetime`
-- `ExecutionStatus`: [ExecutionStatus](./literals.md#executionstatus)
-- `Status`: [ChangeSetStatus](./literals.md#changesetstatus)
+- `ExecutionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `Status`: [ChangeSetStatusType](./literals.md#changesetstatustype)
 - `StatusReason`: `str`
 - `NotificationARNs`: `List`\[`str`\]
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Changes`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
 - `NextToken`: `str`
@@ -296,9 +298,10 @@ Required fields:
 
 - `StackId`: `str`
 - `StackDriftDetectionId`: `str`
-- `StackDriftStatus`: [StackDriftStatus](./literals.md#stackdriftstatus)
+- `StackDriftStatus`:
+  [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `DetectionStatus`:
-  [StackDriftDetectionStatus](./literals.md#stackdriftdetectionstatus)
+  [StackDriftDetectionStatusType](./literals.md#stackdriftdetectionstatustype)
 - `DetectionStatusReason`: `str`
 - `DriftedStackResourceCount`: `int`
 - `Timestamp`: `datetime`
@@ -313,7 +316,8 @@ from mypy_boto3_cloudformation.type_defs import DescribeStackEventsOutputTypeDef
 
 Required fields:
 
-- `StackEvents`: `List`\[[StackEventTypeDef](./type_defs.md#stackeventtypedef)\]
+- `StackEvents`:
+  `List`\[[StackEventTypeDef](./type_defs.md#stackeventtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -417,17 +421,19 @@ from mypy_boto3_cloudformation.type_defs import DescribeTypeOutputTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `Type`: [RegistryType](./literals.md#registrytype)
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
 - `TypeName`: `str`
 - `DefaultVersionId`: `str`
 - `IsDefaultVersion`: `bool`
 - `Description`: `str`
 - `Schema`: `str`
-- `ProvisioningType`: [ProvisioningType](./literals.md#provisioningtype)
-- `DeprecatedStatus`: [DeprecatedStatus](./literals.md#deprecatedstatus)
+- `ProvisioningType`:
+  [ProvisioningTypeType](./literals.md#provisioningtypetype)
+- `DeprecatedStatus`:
+  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
 - `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `ExecutionRoleArn`: `str`
-- `Visibility`: [Visibility](./literals.md#visibility)
+- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
 - `SourceUrl`: `str`
 - `DocumentationUrl`: `str`
 - `LastUpdated`: `datetime`
@@ -443,7 +449,8 @@ from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationOutputTy
 
 Required fields:
 
-- `ProgressStatus`: [RegistrationStatus](./literals.md#registrationstatus)
+- `ProgressStatus`:
+  [RegistrationStatusType](./literals.md#registrationstatustype)
 - `Description`: `str`
 - `TypeArn`: `str`
 - `TypeVersionArn`: `str`
@@ -532,7 +539,8 @@ from mypy_boto3_cloudformation.type_defs import GetTemplateOutputTypeDef
 Required fields:
 
 - `TemplateBody`: `str`
-- `StagesAvailable`: `List`\[[TemplateStage](./literals.md#templatestage)\]
+- `StagesAvailable`:
+  `List`\[[TemplateStageType](./literals.md#templatestagetype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -547,7 +555,7 @@ Required fields:
 - `Parameters`:
   `List`\[[ParameterDeclarationTypeDef](./type_defs.md#parameterdeclarationtypedef)\]
 - `Description`: `str`
-- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `CapabilitiesReason`: `str`
 - `ResourceTypes`: `List`\[`str`\]
 - `Version`: `str`
@@ -833,7 +841,7 @@ Required fields:
 - `PropertyPath`: `str`
 - `ExpectedValue`: `str`
 - `ActualValue`: `str`
-- `DifferenceType`: [DifferenceType](./literals.md#differencetype)
+- `DifferenceType`: [DifferenceTypeType](./literals.md#differencetypetype)
 
 ## RegisterTypeOutputTypeDef
 
@@ -857,8 +865,8 @@ Optional fields:
 
 - `Target`:
   [ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef)
-- `Evaluation`: [EvaluationType](./literals.md#evaluationtype)
-- `ChangeSource`: [ChangeSource](./literals.md#changesource)
+- `Evaluation`: [EvaluationTypeType](./literals.md#evaluationtypetype)
+- `ChangeSource`: [ChangeSourceType](./literals.md#changesourcetype)
 - `CausingEntity`: `str`
 
 ## ResourceChangeTypeDef
@@ -869,12 +877,13 @@ from mypy_boto3_cloudformation.type_defs import ResourceChangeTypeDef
 
 Optional fields:
 
-- `Action`: [ChangeAction](./literals.md#changeaction)
+- `Action`: [ChangeActionType](./literals.md#changeactiontype)
 - `LogicalResourceId`: `str`
 - `PhysicalResourceId`: `str`
 - `ResourceType`: `str`
-- `Replacement`: [Replacement](./literals.md#replacement)
-- `Scope`: `List`\[[ResourceAttribute](./literals.md#resourceattribute)\]
+- `Replacement`: [ReplacementType](./literals.md#replacementtype)
+- `Scope`:
+  `List`\[[ResourceAttributeType](./literals.md#resourceattributetype)\]
 - `Details`:
   `List`\[[ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef)\]
 - `ChangeSetId`: `str`
@@ -900,9 +909,10 @@ from mypy_boto3_cloudformation.type_defs import ResourceTargetDefinitionTypeDef
 
 Optional fields:
 
-- `Attribute`: [ResourceAttribute](./literals.md#resourceattribute)
+- `Attribute`: [ResourceAttributeType](./literals.md#resourceattributetype)
 - `Name`: `str`
-- `RequiresRecreation`: [RequiresRecreation](./literals.md#requiresrecreation)
+- `RequiresRecreation`:
+  [RequiresRecreationType](./literals.md#requiresrecreationtype)
 
 ## ResourceToImportTypeDef
 
@@ -961,7 +971,8 @@ from mypy_boto3_cloudformation.type_defs import StackDriftInformationSummaryType
 
 Required fields:
 
-- `StackDriftStatus`: [StackDriftStatus](./literals.md#stackdriftstatus)
+- `StackDriftStatus`:
+  [StackDriftStatusType](./literals.md#stackdriftstatustype)
 
 Optional fields:
 
@@ -975,7 +986,8 @@ from mypy_boto3_cloudformation.type_defs import StackDriftInformationTypeDef
 
 Required fields:
 
-- `StackDriftStatus`: [StackDriftStatus](./literals.md#stackdriftstatus)
+- `StackDriftStatus`:
+  [StackDriftStatusType](./literals.md#stackdriftstatustype)
 
 Optional fields:
 
@@ -999,7 +1011,7 @@ Optional fields:
 - `LogicalResourceId`: `str`
 - `PhysicalResourceId`: `str`
 - `ResourceType`: `str`
-- `ResourceStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `ResourceStatusReason`: `str`
 - `ResourceProperties`: `str`
 - `ClientRequestToken`: `str`
@@ -1013,7 +1025,7 @@ from mypy_boto3_cloudformation.type_defs import StackInstanceComprehensiveStatus
 Optional fields:
 
 - `DetailedStatus`:
-  [StackInstanceDetailedStatus](./literals.md#stackinstancedetailedstatus)
+  [StackInstanceDetailedStatusType](./literals.md#stackinstancedetailedstatustype)
 
 ## StackInstanceFilterTypeDef
 
@@ -1024,7 +1036,7 @@ from mypy_boto3_cloudformation.type_defs import StackInstanceFilterTypeDef
 Optional fields:
 
 - `Name`: `Literal['DETAILED_STATUS']` (see
-  [StackInstanceFilterName](./literals.md#stackinstancefiltername))
+  [StackInstanceFilterNameType](./literals.md#stackinstancefilternametype))
 - `Values`: `str`
 
 ## StackInstanceSummaryTypeDef
@@ -1039,12 +1051,12 @@ Optional fields:
 - `Region`: `str`
 - `Account`: `str`
 - `StackId`: `str`
-- `Status`: [StackInstanceStatus](./literals.md#stackinstancestatus)
+- `Status`: [StackInstanceStatusType](./literals.md#stackinstancestatustype)
 - `StatusReason`: `str`
 - `StackInstanceStatus`:
   [StackInstanceComprehensiveStatusTypeDef](./type_defs.md#stackinstancecomprehensivestatustypedef)
 - `OrganizationalUnitId`: `str`
-- `DriftStatus`: [StackDriftStatus](./literals.md#stackdriftstatus)
+- `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
 
 ## StackInstanceTypeDef
@@ -1061,12 +1073,12 @@ Optional fields:
 - `StackId`: `str`
 - `ParameterOverrides`:
   `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Status`: [StackInstanceStatus](./literals.md#stackinstancestatus)
+- `Status`: [StackInstanceStatusType](./literals.md#stackinstancestatustype)
 - `StackInstanceStatus`:
   [StackInstanceComprehensiveStatusTypeDef](./type_defs.md#stackinstancecomprehensivestatustypedef)
 - `StatusReason`: `str`
 - `OrganizationalUnitId`: `str`
-- `DriftStatus`: [StackDriftStatus](./literals.md#stackdriftstatus)
+- `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
 
 ## StackResourceDetailTypeDef
@@ -1080,7 +1092,7 @@ Required fields:
 - `LogicalResourceId`: `str`
 - `ResourceType`: `str`
 - `LastUpdatedTimestamp`: `datetime`
-- `ResourceStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 
 Optional fields:
 
@@ -1103,7 +1115,7 @@ from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationSum
 Required fields:
 
 - `StackResourceDriftStatus`:
-  [StackResourceDriftStatus](./literals.md#stackresourcedriftstatus)
+  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
 
 Optional fields:
 
@@ -1118,7 +1130,7 @@ from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationTyp
 Required fields:
 
 - `StackResourceDriftStatus`:
-  [StackResourceDriftStatus](./literals.md#stackresourcedriftstatus)
+  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
 
 Optional fields:
 
@@ -1136,7 +1148,7 @@ Required fields:
 - `LogicalResourceId`: `str`
 - `ResourceType`: `str`
 - `StackResourceDriftStatus`:
-  [StackResourceDriftStatus](./literals.md#stackresourcedriftstatus)
+  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
 - `Timestamp`: `datetime`
 
 Optional fields:
@@ -1161,7 +1173,7 @@ Required fields:
 - `LogicalResourceId`: `str`
 - `ResourceType`: `str`
 - `LastUpdatedTimestamp`: `datetime`
-- `ResourceStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 
 Optional fields:
 
@@ -1182,7 +1194,7 @@ Required fields:
 - `LogicalResourceId`: `str`
 - `ResourceType`: `str`
 - `Timestamp`: `datetime`
-- `ResourceStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 
 Optional fields:
 
@@ -1203,9 +1215,10 @@ from mypy_boto3_cloudformation.type_defs import StackSetDriftDetectionDetailsTyp
 
 Optional fields:
 
-- `DriftStatus`: [StackSetDriftStatus](./literals.md#stacksetdriftstatus)
+- `DriftStatus`:
+  [StackSetDriftStatusType](./literals.md#stacksetdriftstatustype)
 - `DriftDetectionStatus`:
-  [StackSetDriftDetectionStatus](./literals.md#stacksetdriftdetectionstatus)
+  [StackSetDriftDetectionStatusType](./literals.md#stacksetdriftdetectionstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
 - `TotalStackInstancesCount`: `int`
 - `DriftedStackInstancesCount`: `int`
@@ -1222,7 +1235,7 @@ from mypy_boto3_cloudformation.type_defs import StackSetOperationPreferencesType
 Optional fields:
 
 - `RegionConcurrencyType`:
-  [RegionConcurrencyType](./literals.md#regionconcurrencytype)
+  [RegionConcurrencyTypeType](./literals.md#regionconcurrencytypetype)
 - `RegionOrder`: `List`\[`str`\]
 - `FailureToleranceCount`: `int`
 - `FailureTolerancePercentage`: `int`
@@ -1240,7 +1253,7 @@ Optional fields:
 - `Account`: `str`
 - `Region`: `str`
 - `Status`:
-  [StackSetOperationResultStatus](./literals.md#stacksetoperationresultstatus)
+  [StackSetOperationResultStatusType](./literals.md#stacksetoperationresultstatustype)
 - `StatusReason`: `str`
 - `AccountGateResult`:
   [AccountGateResultTypeDef](./type_defs.md#accountgateresulttypedef)
@@ -1255,8 +1268,10 @@ from mypy_boto3_cloudformation.type_defs import StackSetOperationSummaryTypeDef
 Optional fields:
 
 - `OperationId`: `str`
-- `Action`: [StackSetOperationAction](./literals.md#stacksetoperationaction)
-- `Status`: [StackSetOperationStatus](./literals.md#stacksetoperationstatus)
+- `Action`:
+  [StackSetOperationActionType](./literals.md#stacksetoperationactiontype)
+- `Status`:
+  [StackSetOperationStatusType](./literals.md#stacksetoperationstatustype)
 - `CreationTimestamp`: `datetime`
 - `EndTimestamp`: `datetime`
 
@@ -1270,8 +1285,10 @@ Optional fields:
 
 - `OperationId`: `str`
 - `StackSetId`: `str`
-- `Action`: [StackSetOperationAction](./literals.md#stacksetoperationaction)
-- `Status`: [StackSetOperationStatus](./literals.md#stacksetoperationstatus)
+- `Action`:
+  [StackSetOperationActionType](./literals.md#stacksetoperationactiontype)
+- `Status`:
+  [StackSetOperationStatusType](./literals.md#stacksetoperationstatustype)
 - `OperationPreferences`:
   [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `RetainStacks`: `bool`
@@ -1295,10 +1312,11 @@ Optional fields:
 - `StackSetName`: `str`
 - `StackSetId`: `str`
 - `Description`: `str`
-- `Status`: [StackSetStatus](./literals.md#stacksetstatus)
-- `AutoDeployment`: [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `PermissionModel`: [PermissionModels](./literals.md#permissionmodels)
-- `DriftStatus`: [StackDriftStatus](./literals.md#stackdriftstatus)
+- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
+- `AutoDeployment`:
+  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
+- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
+- `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
 - `LastDriftCheckTimestamp`: `datetime`
 
 ## StackSetTypeDef
@@ -1312,18 +1330,19 @@ Optional fields:
 - `StackSetName`: `str`
 - `StackSetId`: `str`
 - `Description`: `str`
-- `Status`: [StackSetStatus](./literals.md#stacksetstatus)
+- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
 - `TemplateBody`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StackSetARN`: `str`
 - `AdministrationRoleARN`: `str`
 - `ExecutionRoleName`: `str`
 - `StackSetDriftDetectionDetails`:
   [StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef)
-- `AutoDeployment`: [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `PermissionModel`: [PermissionModels](./literals.md#permissionmodels)
+- `AutoDeployment`:
+  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
+- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
 - `OrganizationalUnitIds`: `List`\[`str`\]
 
 ## StackSummaryTypeDef
@@ -1336,7 +1355,7 @@ Required fields:
 
 - `StackName`: `str`
 - `CreationTime`: `datetime`
-- `StackStatus`: [StackStatus](./literals.md#stackstatus)
+- `StackStatus`: [StackStatusType](./literals.md#stackstatustype)
 
 Optional fields:
 
@@ -1360,7 +1379,7 @@ Required fields:
 
 - `StackName`: `str`
 - `CreationTime`: `datetime`
-- `StackStatus`: [StackStatus](./literals.md#stackstatus)
+- `StackStatus`: [StackStatusType](./literals.md#stackstatustype)
 
 Optional fields:
 
@@ -1376,7 +1395,7 @@ Optional fields:
 - `DisableRollback`: `bool`
 - `NotificationARNs`: `List`\[`str`\]
 - `TimeoutInMinutes`: `int`
-- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `RoleARN`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -1418,7 +1437,7 @@ from mypy_boto3_cloudformation.type_defs import TypeSummaryTypeDef
 
 Optional fields:
 
-- `Type`: [RegistryType](./literals.md#registrytype)
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
 - `TypeName`: `str`
 - `DefaultVersionId`: `str`
 - `TypeArn`: `str`
@@ -1433,7 +1452,7 @@ from mypy_boto3_cloudformation.type_defs import TypeVersionSummaryTypeDef
 
 Optional fields:
 
-- `Type`: [RegistryType](./literals.md#registrytype)
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
 - `TypeName`: `str`
 - `VersionId`: `str`
 - `IsDefaultVersion`: `bool`
@@ -1500,7 +1519,7 @@ Required fields:
 - `Parameters`:
   `List`\[[TemplateParameterTypeDef](./type_defs.md#templateparametertypedef)\]
 - `Description`: `str`
-- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `CapabilitiesReason`: `str`
 - `DeclaredTransforms`: `List`\[`str`\]
 - `ResponseMetadata`:

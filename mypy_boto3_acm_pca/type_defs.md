@@ -3,7 +3,7 @@
 > [Index](..) > [ACMPCA](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
@@ -87,7 +87,8 @@ from mypy_boto3_acm_pca.type_defs import AccessMethodTypeDef
 Optional fields:
 
 - `CustomObjectIdentifier`: `str`
-- `AccessMethodType`: [AccessMethodType](./literals.md#accessmethodtype)
+- `AccessMethodType`:
+  [AccessMethodTypeType](./literals.md#accessmethodtypetype)
 
 ## ApiPassthroughTypeDef
 
@@ -108,8 +109,9 @@ from mypy_boto3_acm_pca.type_defs import CertificateAuthorityConfigurationTypeDe
 
 Required fields:
 
-- `KeyAlgorithm`: [KeyAlgorithm](./literals.md#keyalgorithm)
-- `SigningAlgorithm`: [SigningAlgorithm](./literals.md#signingalgorithm)
+- `KeyAlgorithm`: [KeyAlgorithmType](./literals.md#keyalgorithmtype)
+- `SigningAlgorithm`:
+  [SigningAlgorithmType](./literals.md#signingalgorithmtype)
 - `Subject`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
 
 Optional fields:
@@ -128,20 +130,21 @@ Optional fields:
 - `OwnerAccount`: `str`
 - `CreatedAt`: `datetime`
 - `LastStateChangeAt`: `datetime`
-- `Type`: [CertificateAuthorityType](./literals.md#certificateauthoritytype)
+- `Type`:
+  [CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype)
 - `Serial`: `str`
 - `Status`:
-  [CertificateAuthorityStatus](./literals.md#certificateauthoritystatus)
+  [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
 - `NotBefore`: `datetime`
 - `NotAfter`: `datetime`
-- `FailureReason`: [FailureReason](./literals.md#failurereason)
+- `FailureReason`: [FailureReasonType](./literals.md#failurereasontype)
 - `CertificateAuthorityConfiguration`:
   [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
 - `RevocationConfiguration`:
   [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
 - `RestorableUntil`: `datetime`
 - `KeyStorageSecurityStandard`:
-  [KeyStorageSecurityStandard](./literals.md#keystoragesecuritystandard)
+  [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
 
 ## CreateCertificateAuthorityAuditReportResponseTypeDef
 
@@ -200,7 +203,8 @@ from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReport
 
 Optional fields:
 
-- `AuditReportStatus`: [AuditReportStatus](./literals.md#auditreportstatus)
+- `AuditReportStatus`:
+  [AuditReportStatusType](./literals.md#auditreportstatustype)
 - `S3BucketName`: `str`
 - `S3Key`: `str`
 - `CreatedAt`: `datetime`
@@ -239,7 +243,7 @@ from mypy_boto3_acm_pca.type_defs import ExtendedKeyUsageTypeDef
 Optional fields:
 
 - `ExtendedKeyUsageType`:
-  [ExtendedKeyUsageType](./literals.md#extendedkeyusagetype)
+  [ExtendedKeyUsageTypeType](./literals.md#extendedkeyusagetypetype)
 - `ExtendedKeyUsageObjectIdentifier`: `str`
 
 ## ExtensionsTypeDef
@@ -365,7 +369,8 @@ from mypy_boto3_acm_pca.type_defs import ListPermissionsResponseTypeDef
 
 Optional fields:
 
-- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `Permissions`:
+  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsResponseTypeDef
@@ -414,7 +419,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `Principal`: `str`
 - `SourceAccount`: `str`
-- `Actions`: `List`\[[ActionType](./literals.md#actiontype)\]
+- `Actions`: `List`\[[ActionTypeType](./literals.md#actiontypetype)\]
 - `Policy`: `str`
 
 ## PolicyInformationTypeDef
@@ -441,7 +446,7 @@ from mypy_boto3_acm_pca.type_defs import PolicyQualifierInfoTypeDef
 Required fields:
 
 - `PolicyQualifierId`: `Literal['CPS']` (see
-  [PolicyQualifierId](./literals.md#policyqualifierid))
+  [PolicyQualifierIdType](./literals.md#policyqualifieridtype))
 - `Qualifier`: [QualifierTypeDef](./type_defs.md#qualifiertypedef)
 
 ## QualifierTypeDef
@@ -488,7 +493,7 @@ from mypy_boto3_acm_pca.type_defs import ValidityTypeDef
 Required fields:
 
 - `Value`: `int`
-- `Type`: [ValidityPeriodType](./literals.md#validityperiodtype)
+- `Type`: [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
 
 ## WaiterConfigTypeDef
 

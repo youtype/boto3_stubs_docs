@@ -3,7 +3,7 @@
 > [Index](..) > LookoutforVision
 
 Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
 [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
@@ -30,43 +30,43 @@ Can be used directly:
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 ```
 
-LookoutforVisionClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_dataset](./client.md#create-dataset)
-- [create_model](./client.md#create-model)
-- [create_project](./client.md#create-project)
-- [delete_dataset](./client.md#delete-dataset)
-- [delete_model](./client.md#delete-model)
-- [delete_project](./client.md#delete-project)
-- [describe_dataset](./client.md#describe-dataset)
-- [describe_model](./client.md#describe-model)
-- [describe_project](./client.md#describe-project)
-- [detect_anomalies](./client.md#detect-anomalies)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [list_dataset_entries](./client.md#list-dataset-entries)
-- [list_models](./client.md#list-models)
-- [list_projects](./client.md#list-projects)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_model](./client.md#start-model)
-- [stop_model](./client.md#stop-model)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_dataset_entries](./client.md#update-dataset-entries)
+- [can_paginate](./client.md#can_paginate)
+- [create_dataset](./client.md#create_dataset)
+- [create_model](./client.md#create_model)
+- [create_project](./client.md#create_project)
+- [delete_dataset](./client.md#delete_dataset)
+- [delete_model](./client.md#delete_model)
+- [delete_project](./client.md#delete_project)
+- [describe_dataset](./client.md#describe_dataset)
+- [describe_model](./client.md#describe_model)
+- [describe_project](./client.md#describe_project)
+- [detect_anomalies](./client.md#detect_anomalies)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [list_dataset_entries](./client.md#list_dataset_entries)
+- [list_models](./client.md#list_models)
+- [list_projects](./client.md#list_projects)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_model](./client.md#start_model)
+- [stop_model](./client.md#stop_model)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_dataset_entries](./client.md#update_dataset_entries)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+LookoutforVisionClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -90,15 +90,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutvision.literals import DatasetStatus, ...
+from mypy_boto3_lookoutvision.literals import DatasetStatusType, ...
 ```
 
-- [DatasetStatus](./literals.md#datasetstatus)
+- [DatasetStatusType](./literals.md#datasetstatustype)
 - [ListDatasetEntriesPaginatorName](./literals.md#listdatasetentriespaginatorname)
 - [ListModelsPaginatorName](./literals.md#listmodelspaginatorname)
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
-- [ModelHostingStatus](./literals.md#modelhostingstatus)
-- [ModelStatus](./literals.md#modelstatus)
+- [ModelHostingStatusType](./literals.md#modelhostingstatustype)
+- [ModelStatusType](./literals.md#modelstatustype)
 
 ## Typed dictionaries
 

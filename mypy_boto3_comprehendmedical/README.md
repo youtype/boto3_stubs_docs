@@ -3,7 +3,7 @@
 > [Index](..) > ComprehendMedical
 
 Auto-generated documentation for
-[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
 [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
@@ -29,45 +29,45 @@ Can be used directly:
 from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 ```
 
-ComprehendMedicalClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [describe_entities_detection_v2_job](./client.md#describe-entities-detection-v2-job)
-- [describe_icd10_cm_inference_job](./client.md#describe-icd10-cm-inference-job)
-- [describe_phi_detection_job](./client.md#describe-phi-detection-job)
-- [describe_rx_norm_inference_job](./client.md#describe-rx-norm-inference-job)
-- [detect_entities](./client.md#detect-entities)
-- [detect_entities_v2](./client.md#detect-entities-v2)
-- [detect_phi](./client.md#detect-phi)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [infer_icd10_cm](./client.md#infer-icd10-cm)
-- [infer_rx_norm](./client.md#infer-rx-norm)
-- [list_entities_detection_v2_jobs](./client.md#list-entities-detection-v2-jobs)
-- [list_icd10_cm_inference_jobs](./client.md#list-icd10-cm-inference-jobs)
-- [list_phi_detection_jobs](./client.md#list-phi-detection-jobs)
-- [list_rx_norm_inference_jobs](./client.md#list-rx-norm-inference-jobs)
-- [start_entities_detection_v2_job](./client.md#start-entities-detection-v2-job)
-- [start_icd10_cm_inference_job](./client.md#start-icd10-cm-inference-job)
-- [start_phi_detection_job](./client.md#start-phi-detection-job)
-- [start_rx_norm_inference_job](./client.md#start-rx-norm-inference-job)
-- [stop_entities_detection_v2_job](./client.md#stop-entities-detection-v2-job)
-- [stop_icd10_cm_inference_job](./client.md#stop-icd10-cm-inference-job)
-- [stop_phi_detection_job](./client.md#stop-phi-detection-job)
-- [stop_rx_norm_inference_job](./client.md#stop-rx-norm-inference-job)
+- [can_paginate](./client.md#can_paginate)
+- [describe_entities_detection_v2_job](./client.md#describe_entities_detection_v2_job)
+- [describe_icd10_cm_inference_job](./client.md#describe_icd10_cm_inference_job)
+- [describe_phi_detection_job](./client.md#describe_phi_detection_job)
+- [describe_rx_norm_inference_job](./client.md#describe_rx_norm_inference_job)
+- [detect_entities](./client.md#detect_entities)
+- [detect_entities_v2](./client.md#detect_entities_v2)
+- [detect_phi](./client.md#detect_phi)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [infer_icd10_cm](./client.md#infer_icd10_cm)
+- [infer_rx_norm](./client.md#infer_rx_norm)
+- [list_entities_detection_v2_jobs](./client.md#list_entities_detection_v2_jobs)
+- [list_icd10_cm_inference_jobs](./client.md#list_icd10_cm_inference_jobs)
+- [list_phi_detection_jobs](./client.md#list_phi_detection_jobs)
+- [list_rx_norm_inference_jobs](./client.md#list_rx_norm_inference_jobs)
+- [start_entities_detection_v2_job](./client.md#start_entities_detection_v2_job)
+- [start_icd10_cm_inference_job](./client.md#start_icd10_cm_inference_job)
+- [start_phi_detection_job](./client.md#start_phi_detection_job)
+- [start_rx_norm_inference_job](./client.md#start_rx_norm_inference_job)
+- [stop_entities_detection_v2_job](./client.md#stop_entities_detection_v2_job)
+- [stop_icd10_cm_inference_job](./client.md#stop_icd10_cm_inference_job)
+- [stop_phi_detection_job](./client.md#stop_phi_detection_job)
+- [stop_rx_norm_inference_job](./client.md#stop_rx_norm_inference_job)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidEncodingException](./client.md#invalidencodingexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [TextSizeLimitExceededException](./client.md#textsizelimitexceededexception)
-- [TooManyRequestsException](./client.md#toomanyrequestsexception)
-- [ValidationException](./client.md#validationexception)
+ComprehendMedicalClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServerException
+- InvalidEncodingException
+- InvalidRequestException
+- ResourceNotFoundException
+- ServiceUnavailableException
+- TextSizeLimitExceededException
+- TooManyRequestsException
+- ValidationException
 
 ## Literals
 
@@ -76,24 +76,24 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehendmedical.literals import AttributeName, ...
+from mypy_boto3_comprehendmedical.literals import AttributeNameType, ...
 ```
 
-- [AttributeName](./literals.md#attributename)
-- [EntitySubType](./literals.md#entitysubtype)
-- [EntityType](./literals.md#entitytype)
-- [ICD10CMAttributeType](./literals.md#icd10cmattributetype)
-- [ICD10CMEntityCategory](./literals.md#icd10cmentitycategory)
-- [ICD10CMEntityType](./literals.md#icd10cmentitytype)
-- [ICD10CMRelationshipType](./literals.md#icd10cmrelationshiptype)
-- [ICD10CMTraitName](./literals.md#icd10cmtraitname)
-- [JobStatus](./literals.md#jobstatus)
-- [LanguageCode](./literals.md#languagecode)
-- [RelationshipType](./literals.md#relationshiptype)
-- [RxNormAttributeType](./literals.md#rxnormattributetype)
-- [RxNormEntityCategory](./literals.md#rxnormentitycategory)
-- [RxNormEntityType](./literals.md#rxnormentitytype)
-- [RxNormTraitName](./literals.md#rxnormtraitname)
+- [AttributeNameType](./literals.md#attributenametype)
+- [EntitySubTypeType](./literals.md#entitysubtypetype)
+- [EntityTypeType](./literals.md#entitytypetype)
+- [ICD10CMAttributeTypeType](./literals.md#icd10cmattributetypetype)
+- [ICD10CMEntityCategoryType](./literals.md#icd10cmentitycategorytype)
+- [ICD10CMEntityTypeType](./literals.md#icd10cmentitytypetype)
+- [ICD10CMRelationshipTypeType](./literals.md#icd10cmrelationshiptypetype)
+- [ICD10CMTraitNameType](./literals.md#icd10cmtraitnametype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [LanguageCodeType](./literals.md#languagecodetype)
+- [RelationshipTypeType](./literals.md#relationshiptypetype)
+- [RxNormAttributeTypeType](./literals.md#rxnormattributetypetype)
+- [RxNormEntityCategoryType](./literals.md#rxnormentitycategorytype)
+- [RxNormEntityTypeType](./literals.md#rxnormentitytypetype)
+- [RxNormTraitNameType](./literals.md#rxnormtraitnametype)
 
 ## Typed dictionaries
 

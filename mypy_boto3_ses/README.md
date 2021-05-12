@@ -3,7 +3,7 @@
 > [Index](..) > SES
 
 Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ses.html#SES)
 type annotations stubs module
 [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
@@ -30,123 +30,123 @@ Can be used directly:
 from mypy_boto3_ses.client import SESClient
 ```
 
-SESClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [clone_receipt_rule_set](./client.md#clone-receipt-rule-set)
-- [create_configuration_set](./client.md#create-configuration-set)
-- [create_configuration_set_event_destination](./client.md#create-configuration-set-event-destination)
-- [create_configuration_set_tracking_options](./client.md#create-configuration-set-tracking-options)
-- [create_custom_verification_email_template](./client.md#create-custom-verification-email-template)
-- [create_receipt_filter](./client.md#create-receipt-filter)
-- [create_receipt_rule](./client.md#create-receipt-rule)
-- [create_receipt_rule_set](./client.md#create-receipt-rule-set)
-- [create_template](./client.md#create-template)
-- [delete_configuration_set](./client.md#delete-configuration-set)
-- [delete_configuration_set_event_destination](./client.md#delete-configuration-set-event-destination)
-- [delete_configuration_set_tracking_options](./client.md#delete-configuration-set-tracking-options)
-- [delete_custom_verification_email_template](./client.md#delete-custom-verification-email-template)
-- [delete_identity](./client.md#delete-identity)
-- [delete_identity_policy](./client.md#delete-identity-policy)
-- [delete_receipt_filter](./client.md#delete-receipt-filter)
-- [delete_receipt_rule](./client.md#delete-receipt-rule)
-- [delete_receipt_rule_set](./client.md#delete-receipt-rule-set)
-- [delete_template](./client.md#delete-template)
-- [delete_verified_email_address](./client.md#delete-verified-email-address)
-- [describe_active_receipt_rule_set](./client.md#describe-active-receipt-rule-set)
-- [describe_configuration_set](./client.md#describe-configuration-set)
-- [describe_receipt_rule](./client.md#describe-receipt-rule)
-- [describe_receipt_rule_set](./client.md#describe-receipt-rule-set)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_account_sending_enabled](./client.md#get-account-sending-enabled)
-- [get_custom_verification_email_template](./client.md#get-custom-verification-email-template)
-- [get_identity_dkim_attributes](./client.md#get-identity-dkim-attributes)
-- [get_identity_mail_from_domain_attributes](./client.md#get-identity-mail-from-domain-attributes)
-- [get_identity_notification_attributes](./client.md#get-identity-notification-attributes)
-- [get_identity_policies](./client.md#get-identity-policies)
-- [get_identity_verification_attributes](./client.md#get-identity-verification-attributes)
-- [get_paginator](./client.md#get-paginator)
-- [get_send_quota](./client.md#get-send-quota)
-- [get_send_statistics](./client.md#get-send-statistics)
-- [get_template](./client.md#get-template)
-- [get_waiter](./client.md#get-waiter)
-- [list_configuration_sets](./client.md#list-configuration-sets)
-- [list_custom_verification_email_templates](./client.md#list-custom-verification-email-templates)
-- [list_identities](./client.md#list-identities)
-- [list_identity_policies](./client.md#list-identity-policies)
-- [list_receipt_filters](./client.md#list-receipt-filters)
-- [list_receipt_rule_sets](./client.md#list-receipt-rule-sets)
-- [list_templates](./client.md#list-templates)
-- [list_verified_email_addresses](./client.md#list-verified-email-addresses)
-- [put_configuration_set_delivery_options](./client.md#put-configuration-set-delivery-options)
-- [put_identity_policy](./client.md#put-identity-policy)
-- [reorder_receipt_rule_set](./client.md#reorder-receipt-rule-set)
-- [send_bounce](./client.md#send-bounce)
-- [send_bulk_templated_email](./client.md#send-bulk-templated-email)
-- [send_custom_verification_email](./client.md#send-custom-verification-email)
-- [send_email](./client.md#send-email)
-- [send_raw_email](./client.md#send-raw-email)
-- [send_templated_email](./client.md#send-templated-email)
-- [set_active_receipt_rule_set](./client.md#set-active-receipt-rule-set)
-- [set_identity_dkim_enabled](./client.md#set-identity-dkim-enabled)
-- [set_identity_feedback_forwarding_enabled](./client.md#set-identity-feedback-forwarding-enabled)
-- [set_identity_headers_in_notifications_enabled](./client.md#set-identity-headers-in-notifications-enabled)
-- [set_identity_mail_from_domain](./client.md#set-identity-mail-from-domain)
-- [set_identity_notification_topic](./client.md#set-identity-notification-topic)
-- [set_receipt_rule_position](./client.md#set-receipt-rule-position)
-- [test_render_template](./client.md#test-render-template)
-- [update_account_sending_enabled](./client.md#update-account-sending-enabled)
-- [update_configuration_set_event_destination](./client.md#update-configuration-set-event-destination)
-- [update_configuration_set_reputation_metrics_enabled](./client.md#update-configuration-set-reputation-metrics-enabled)
-- [update_configuration_set_sending_enabled](./client.md#update-configuration-set-sending-enabled)
-- [update_configuration_set_tracking_options](./client.md#update-configuration-set-tracking-options)
-- [update_custom_verification_email_template](./client.md#update-custom-verification-email-template)
-- [update_receipt_rule](./client.md#update-receipt-rule)
-- [update_template](./client.md#update-template)
-- [verify_domain_dkim](./client.md#verify-domain-dkim)
-- [verify_domain_identity](./client.md#verify-domain-identity)
-- [verify_email_address](./client.md#verify-email-address)
-- [verify_email_identity](./client.md#verify-email-identity)
+- [can_paginate](./client.md#can_paginate)
+- [clone_receipt_rule_set](./client.md#clone_receipt_rule_set)
+- [create_configuration_set](./client.md#create_configuration_set)
+- [create_configuration_set_event_destination](./client.md#create_configuration_set_event_destination)
+- [create_configuration_set_tracking_options](./client.md#create_configuration_set_tracking_options)
+- [create_custom_verification_email_template](./client.md#create_custom_verification_email_template)
+- [create_receipt_filter](./client.md#create_receipt_filter)
+- [create_receipt_rule](./client.md#create_receipt_rule)
+- [create_receipt_rule_set](./client.md#create_receipt_rule_set)
+- [create_template](./client.md#create_template)
+- [delete_configuration_set](./client.md#delete_configuration_set)
+- [delete_configuration_set_event_destination](./client.md#delete_configuration_set_event_destination)
+- [delete_configuration_set_tracking_options](./client.md#delete_configuration_set_tracking_options)
+- [delete_custom_verification_email_template](./client.md#delete_custom_verification_email_template)
+- [delete_identity](./client.md#delete_identity)
+- [delete_identity_policy](./client.md#delete_identity_policy)
+- [delete_receipt_filter](./client.md#delete_receipt_filter)
+- [delete_receipt_rule](./client.md#delete_receipt_rule)
+- [delete_receipt_rule_set](./client.md#delete_receipt_rule_set)
+- [delete_template](./client.md#delete_template)
+- [delete_verified_email_address](./client.md#delete_verified_email_address)
+- [describe_active_receipt_rule_set](./client.md#describe_active_receipt_rule_set)
+- [describe_configuration_set](./client.md#describe_configuration_set)
+- [describe_receipt_rule](./client.md#describe_receipt_rule)
+- [describe_receipt_rule_set](./client.md#describe_receipt_rule_set)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_account_sending_enabled](./client.md#get_account_sending_enabled)
+- [get_custom_verification_email_template](./client.md#get_custom_verification_email_template)
+- [get_identity_dkim_attributes](./client.md#get_identity_dkim_attributes)
+- [get_identity_mail_from_domain_attributes](./client.md#get_identity_mail_from_domain_attributes)
+- [get_identity_notification_attributes](./client.md#get_identity_notification_attributes)
+- [get_identity_policies](./client.md#get_identity_policies)
+- [get_identity_verification_attributes](./client.md#get_identity_verification_attributes)
+- [get_paginator](./client.md#get_paginator)
+- [get_send_quota](./client.md#get_send_quota)
+- [get_send_statistics](./client.md#get_send_statistics)
+- [get_template](./client.md#get_template)
+- [get_waiter](./client.md#get_waiter)
+- [list_configuration_sets](./client.md#list_configuration_sets)
+- [list_custom_verification_email_templates](./client.md#list_custom_verification_email_templates)
+- [list_identities](./client.md#list_identities)
+- [list_identity_policies](./client.md#list_identity_policies)
+- [list_receipt_filters](./client.md#list_receipt_filters)
+- [list_receipt_rule_sets](./client.md#list_receipt_rule_sets)
+- [list_templates](./client.md#list_templates)
+- [list_verified_email_addresses](./client.md#list_verified_email_addresses)
+- [put_configuration_set_delivery_options](./client.md#put_configuration_set_delivery_options)
+- [put_identity_policy](./client.md#put_identity_policy)
+- [reorder_receipt_rule_set](./client.md#reorder_receipt_rule_set)
+- [send_bounce](./client.md#send_bounce)
+- [send_bulk_templated_email](./client.md#send_bulk_templated_email)
+- [send_custom_verification_email](./client.md#send_custom_verification_email)
+- [send_email](./client.md#send_email)
+- [send_raw_email](./client.md#send_raw_email)
+- [send_templated_email](./client.md#send_templated_email)
+- [set_active_receipt_rule_set](./client.md#set_active_receipt_rule_set)
+- [set_identity_dkim_enabled](./client.md#set_identity_dkim_enabled)
+- [set_identity_feedback_forwarding_enabled](./client.md#set_identity_feedback_forwarding_enabled)
+- [set_identity_headers_in_notifications_enabled](./client.md#set_identity_headers_in_notifications_enabled)
+- [set_identity_mail_from_domain](./client.md#set_identity_mail_from_domain)
+- [set_identity_notification_topic](./client.md#set_identity_notification_topic)
+- [set_receipt_rule_position](./client.md#set_receipt_rule_position)
+- [test_render_template](./client.md#test_render_template)
+- [update_account_sending_enabled](./client.md#update_account_sending_enabled)
+- [update_configuration_set_event_destination](./client.md#update_configuration_set_event_destination)
+- [update_configuration_set_reputation_metrics_enabled](./client.md#update_configuration_set_reputation_metrics_enabled)
+- [update_configuration_set_sending_enabled](./client.md#update_configuration_set_sending_enabled)
+- [update_configuration_set_tracking_options](./client.md#update_configuration_set_tracking_options)
+- [update_custom_verification_email_template](./client.md#update_custom_verification_email_template)
+- [update_receipt_rule](./client.md#update_receipt_rule)
+- [update_template](./client.md#update_template)
+- [verify_domain_dkim](./client.md#verify_domain_dkim)
+- [verify_domain_identity](./client.md#verify_domain_identity)
+- [verify_email_address](./client.md#verify_email_address)
+- [verify_email_identity](./client.md#verify_email_identity)
 
 ### Exceptions
 
-- [AccountSendingPausedException](./client.md#accountsendingpausedexception)
-- [AlreadyExistsException](./client.md#alreadyexistsexception)
-- [CannotDeleteException](./client.md#cannotdeleteexception)
-- [ClientError](./client.md#clienterror)
-- [ConfigurationSetAlreadyExistsException](./client.md#configurationsetalreadyexistsexception)
-- [ConfigurationSetDoesNotExistException](./client.md#configurationsetdoesnotexistexception)
-- [ConfigurationSetSendingPausedException](./client.md#configurationsetsendingpausedexception)
-- [CustomVerificationEmailInvalidContentException](./client.md#customverificationemailinvalidcontentexception)
-- [CustomVerificationEmailTemplateAlreadyExistsException](./client.md#customverificationemailtemplatealreadyexistsexception)
-- [CustomVerificationEmailTemplateDoesNotExistException](./client.md#customverificationemailtemplatedoesnotexistexception)
-- [EventDestinationAlreadyExistsException](./client.md#eventdestinationalreadyexistsexception)
-- [EventDestinationDoesNotExistException](./client.md#eventdestinationdoesnotexistexception)
-- [FromEmailAddressNotVerifiedException](./client.md#fromemailaddressnotverifiedexception)
-- [InvalidCloudWatchDestinationException](./client.md#invalidcloudwatchdestinationexception)
-- [InvalidConfigurationSetException](./client.md#invalidconfigurationsetexception)
-- [InvalidDeliveryOptionsException](./client.md#invaliddeliveryoptionsexception)
-- [InvalidFirehoseDestinationException](./client.md#invalidfirehosedestinationexception)
-- [InvalidLambdaFunctionException](./client.md#invalidlambdafunctionexception)
-- [InvalidPolicyException](./client.md#invalidpolicyexception)
-- [InvalidRenderingParameterException](./client.md#invalidrenderingparameterexception)
-- [InvalidS3ConfigurationException](./client.md#invalids3configurationexception)
-- [InvalidSNSDestinationException](./client.md#invalidsnsdestinationexception)
-- [InvalidSnsTopicException](./client.md#invalidsnstopicexception)
-- [InvalidTemplateException](./client.md#invalidtemplateexception)
-- [InvalidTrackingOptionsException](./client.md#invalidtrackingoptionsexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [MailFromDomainNotVerifiedException](./client.md#mailfromdomainnotverifiedexception)
-- [MessageRejected](./client.md#messagerejected)
-- [MissingRenderingAttributeException](./client.md#missingrenderingattributeexception)
-- [ProductionAccessNotGrantedException](./client.md#productionaccessnotgrantedexception)
-- [RuleDoesNotExistException](./client.md#ruledoesnotexistexception)
-- [RuleSetDoesNotExistException](./client.md#rulesetdoesnotexistexception)
-- [TemplateDoesNotExistException](./client.md#templatedoesnotexistexception)
-- [TrackingOptionsAlreadyExistsException](./client.md#trackingoptionsalreadyexistsexception)
-- [TrackingOptionsDoesNotExistException](./client.md#trackingoptionsdoesnotexistexception)
+SESClient [exceptions](./client.md#exceptions)
+
+- AccountSendingPausedException
+- AlreadyExistsException
+- CannotDeleteException
+- ClientError
+- ConfigurationSetAlreadyExistsException
+- ConfigurationSetDoesNotExistException
+- ConfigurationSetSendingPausedException
+- CustomVerificationEmailInvalidContentException
+- CustomVerificationEmailTemplateAlreadyExistsException
+- CustomVerificationEmailTemplateDoesNotExistException
+- EventDestinationAlreadyExistsException
+- EventDestinationDoesNotExistException
+- FromEmailAddressNotVerifiedException
+- InvalidCloudWatchDestinationException
+- InvalidConfigurationSetException
+- InvalidDeliveryOptionsException
+- InvalidFirehoseDestinationException
+- InvalidLambdaFunctionException
+- InvalidPolicyException
+- InvalidRenderingParameterException
+- InvalidS3ConfigurationException
+- InvalidSNSDestinationException
+- InvalidSnsTopicException
+- InvalidTemplateException
+- InvalidTrackingOptionsException
+- LimitExceededException
+- MailFromDomainNotVerifiedException
+- MessageRejected
+- MissingRenderingAttributeException
+- ProductionAccessNotGrantedException
+- RuleDoesNotExistException
+- RuleSetDoesNotExistException
+- TemplateDoesNotExistException
+- TrackingOptionsAlreadyExistsException
+- TrackingOptionsDoesNotExistException
 
 ## Paginators
 
@@ -185,31 +185,31 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.literals import BehaviorOnMXFailure, ...
+from mypy_boto3_ses.literals import BehaviorOnMXFailureType, ...
 ```
 
-- [BehaviorOnMXFailure](./literals.md#behavioronmxfailure)
-- [BounceType](./literals.md#bouncetype)
-- [BulkEmailStatus](./literals.md#bulkemailstatus)
-- [ConfigurationSetAttribute](./literals.md#configurationsetattribute)
-- [CustomMailFromStatus](./literals.md#custommailfromstatus)
-- [DimensionValueSource](./literals.md#dimensionvaluesource)
-- [DsnAction](./literals.md#dsnaction)
-- [EventType](./literals.md#eventtype)
+- [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
+- [BounceTypeType](./literals.md#bouncetypetype)
+- [BulkEmailStatusType](./literals.md#bulkemailstatustype)
+- [ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)
+- [CustomMailFromStatusType](./literals.md#custommailfromstatustype)
+- [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
+- [DsnActionType](./literals.md#dsnactiontype)
+- [EventTypeType](./literals.md#eventtypetype)
 - [IdentityExistsWaiterName](./literals.md#identityexistswaitername)
-- [IdentityType](./literals.md#identitytype)
-- [InvocationType](./literals.md#invocationtype)
+- [IdentityTypeType](./literals.md#identitytypetype)
+- [InvocationTypeType](./literals.md#invocationtypetype)
 - [ListConfigurationSetsPaginatorName](./literals.md#listconfigurationsetspaginatorname)
 - [ListCustomVerificationEmailTemplatesPaginatorName](./literals.md#listcustomverificationemailtemplatespaginatorname)
 - [ListIdentitiesPaginatorName](./literals.md#listidentitiespaginatorname)
 - [ListReceiptRuleSetsPaginatorName](./literals.md#listreceiptrulesetspaginatorname)
 - [ListTemplatesPaginatorName](./literals.md#listtemplatespaginatorname)
-- [NotificationType](./literals.md#notificationtype)
-- [ReceiptFilterPolicy](./literals.md#receiptfilterpolicy)
-- [SNSActionEncoding](./literals.md#snsactionencoding)
-- [StopScope](./literals.md#stopscope)
-- [TlsPolicy](./literals.md#tlspolicy)
-- [VerificationStatus](./literals.md#verificationstatus)
+- [NotificationTypeType](./literals.md#notificationtypetype)
+- [ReceiptFilterPolicyType](./literals.md#receiptfilterpolicytype)
+- [SNSActionEncodingType](./literals.md#snsactionencodingtype)
+- [StopScopeType](./literals.md#stopscopetype)
+- [TlsPolicyType](./literals.md#tlspolicytype)
+- [VerificationStatusType](./literals.md#verificationstatustype)
 
 ## Typed dictionaries
 

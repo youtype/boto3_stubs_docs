@@ -3,7 +3,7 @@
 > [Index](..) > [Rekognition](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
@@ -268,9 +268,9 @@ Optional fields:
 - `UnmatchedFaces`:
   `List`\[[ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)\]
 - `SourceImageOrientationCorrection`:
-  [OrientationCorrection](./literals.md#orientationcorrection)
+  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
 - `TargetImageOrientationCorrection`:
-  [OrientationCorrection](./literals.md#orientationcorrection)
+  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
 
 ## ComparedFaceTypeDef
 
@@ -402,7 +402,7 @@ from mypy_boto3_rekognition.type_defs import DeleteProjectResponseTypeDef
 
 Optional fields:
 
-- `Status`: [ProjectStatus](./literals.md#projectstatus)
+- `Status`: [ProjectStatusType](./literals.md#projectstatustype)
 
 ## DeleteProjectVersionResponseTypeDef
 
@@ -412,7 +412,7 @@ from mypy_boto3_rekognition.type_defs import DeleteProjectVersionResponseTypeDef
 
 Optional fields:
 
-- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
+- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
 
 ## DescribeCollectionResponseTypeDef
 
@@ -461,7 +461,8 @@ Optional fields:
 
 - `Name`: `str`
 - `StreamProcessorArn`: `str`
-- `Status`: [StreamProcessorStatus](./literals.md#streamprocessorstatus)
+- `Status`:
+  [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
 - `StatusMessage`: `str`
 - `CreationTimestamp`: `datetime`
 - `LastUpdateTimestamp`: `datetime`
@@ -492,9 +493,10 @@ from mypy_boto3_rekognition.type_defs import DetectFacesResponseTypeDef
 
 Optional fields:
 
-- `FaceDetails`: `List`\[[FaceDetailTypeDef](./type_defs.md#facedetailtypedef)\]
+- `FaceDetails`:
+  `List`\[[FaceDetailTypeDef](./type_defs.md#facedetailtypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](./literals.md#orientationcorrection)
+  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
 
 ## DetectLabelsResponseTypeDef
 
@@ -506,7 +508,7 @@ Optional fields:
 
 - `Labels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](./literals.md#orientationcorrection)
+  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
 - `LabelModelVersion`: `str`
 
 ## DetectModerationLabelsResponseTypeDef
@@ -581,7 +583,7 @@ from mypy_boto3_rekognition.type_defs import EmotionTypeDef
 
 Optional fields:
 
-- `Type`: [EmotionName](./literals.md#emotionname)
+- `Type`: [EmotionNameType](./literals.md#emotionnametype)
 - `Confidence`: `float`
 
 ## EquipmentDetectionTypeDef
@@ -594,8 +596,10 @@ Optional fields:
 
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
-- `Type`: [ProtectiveEquipmentType](./literals.md#protectiveequipmenttype)
-- `CoversBodyPart`: [CoversBodyPartTypeDef](./type_defs.md#coversbodyparttypedef)
+- `Type`:
+  [ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)
+- `CoversBodyPart`:
+  [CoversBodyPartTypeDef](./type_defs.md#coversbodyparttypedef)
 
 ## EvaluationResultTypeDef
 
@@ -720,7 +724,7 @@ from mypy_boto3_rekognition.type_defs import GenderTypeDef
 
 Optional fields:
 
-- `Value`: [GenderType](./literals.md#gendertype)
+- `Value`: [GenderTypeType](./literals.md#gendertypetype)
 - `Confidence`: `float`
 
 ## GeometryTypeDef
@@ -753,7 +757,7 @@ from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionResponseType
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
@@ -768,7 +772,7 @@ from mypy_boto3_rekognition.type_defs import GetContentModerationResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `ModerationLabels`:
@@ -784,11 +788,12 @@ from mypy_boto3_rekognition.type_defs import GetFaceDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
-- `Faces`: `List`\[[FaceDetectionTypeDef](./type_defs.md#facedetectiontypedef)\]
+- `Faces`:
+  `List`\[[FaceDetectionTypeDef](./type_defs.md#facedetectiontypedef)\]
 
 ## GetFaceSearchResponseTypeDef
 
@@ -798,7 +803,7 @@ from mypy_boto3_rekognition.type_defs import GetFaceSearchResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `NextToken`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
@@ -812,7 +817,7 @@ from mypy_boto3_rekognition.type_defs import GetLabelDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
@@ -828,7 +833,7 @@ from mypy_boto3_rekognition.type_defs import GetPersonTrackingResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
@@ -843,7 +848,7 @@ from mypy_boto3_rekognition.type_defs import GetSegmentDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`:
   `List`\[[VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)\]
@@ -863,7 +868,7 @@ from mypy_boto3_rekognition.type_defs import GetTextDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
+- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
 - `StatusMessage`: `str`
 - `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `TextDetections`:
@@ -920,7 +925,7 @@ from mypy_boto3_rekognition.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifier](./literals.md#contentclassifier)\]
+  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## ImageQualityTypeDef
 
@@ -952,9 +957,10 @@ from mypy_boto3_rekognition.type_defs import IndexFacesResponseTypeDef
 
 Optional fields:
 
-- `FaceRecords`: `List`\[[FaceRecordTypeDef](./type_defs.md#facerecordtypedef)\]
+- `FaceRecords`:
+  `List`\[[FaceRecordTypeDef](./type_defs.md#facerecordtypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](./literals.md#orientationcorrection)
+  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
 - `FaceModelVersion`: `str`
 - `UnindexedFaces`:
   `List`\[[UnindexedFaceTypeDef](./type_defs.md#unindexedfacetypedef)\]
@@ -1022,7 +1028,7 @@ from mypy_boto3_rekognition.type_defs import LandmarkTypeDef
 
 Optional fields:
 
-- `Type`: [LandmarkType](./literals.md#landmarktype)
+- `Type`: [LandmarkTypeType](./literals.md#landmarktypetype)
 - `X`: `float`
 - `Y`: `float`
 
@@ -1218,7 +1224,7 @@ Optional fields:
 
 - `ProjectArn`: `str`
 - `CreationTimestamp`: `datetime`
-- `Status`: [ProjectStatus](./literals.md#projectstatus)
+- `Status`: [ProjectStatusType](./literals.md#projectstatustype)
 
 ## ProjectVersionDescriptionTypeDef
 
@@ -1231,7 +1237,7 @@ Optional fields:
 - `ProjectVersionArn`: `str`
 - `CreationTimestamp`: `datetime`
 - `MinInferenceUnits`: `int`
-- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
+- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
 - `StatusMessage`: `str`
 - `BillableTrainingTimeInSeconds`: `int`
 - `TrainingEndTimestamp`: `datetime`
@@ -1253,7 +1259,7 @@ from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentBodyPartTypeDef
 
 Optional fields:
 
-- `Name`: [BodyPart](./literals.md#bodypart)
+- `Name`: [BodyPartType](./literals.md#bodyparttype)
 - `Confidence`: `float`
 - `EquipmentDetections`:
   `List`\[[EquipmentDetectionTypeDef](./type_defs.md#equipmentdetectiontypedef)\]
@@ -1282,7 +1288,7 @@ Required fields:
 
 - `MinConfidence`: `float`
 - `RequiredEquipmentTypes`:
-  `List`\[[ProtectiveEquipmentType](./literals.md#protectiveequipmenttype)\]
+  `List`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
 
 ## ProtectiveEquipmentSummaryTypeDef
 
@@ -1304,11 +1310,12 @@ from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesResponseTypeDef
 
 Optional fields:
 
-- `CelebrityFaces`: `List`\[[CelebrityTypeDef](./type_defs.md#celebritytypedef)\]
+- `CelebrityFaces`:
+  `List`\[[CelebrityTypeDef](./type_defs.md#celebritytypedef)\]
 - `UnrecognizedFaces`:
   `List`\[[ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](./literals.md#orientationcorrection)
+  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
 
 ## RegionOfInterestTypeDef
 
@@ -1380,7 +1387,7 @@ from mypy_boto3_rekognition.type_defs import SegmentDetectionTypeDef
 
 Optional fields:
 
-- `Type`: [SegmentType](./literals.md#segmenttype)
+- `Type`: [SegmentTypeType](./literals.md#segmenttypetype)
 - `StartTimestampMillis`: `int`
 - `EndTimestampMillis`: `int`
 - `DurationMillis`: `int`
@@ -1399,7 +1406,7 @@ from mypy_boto3_rekognition.type_defs import SegmentTypeInfoTypeDef
 
 Optional fields:
 
-- `Type`: [SegmentType](./literals.md#segmenttype)
+- `Type`: [SegmentTypeType](./literals.md#segmenttypetype)
 - `ModelVersion`: `str`
 
 ## ShotSegmentTypeDef
@@ -1492,7 +1499,7 @@ from mypy_boto3_rekognition.type_defs import StartProjectVersionResponseTypeDef
 
 Optional fields:
 
-- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
+- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
 
 ## StartSegmentDetectionFiltersTypeDef
 
@@ -1567,7 +1574,7 @@ from mypy_boto3_rekognition.type_defs import StopProjectVersionResponseTypeDef
 
 Optional fields:
 
-- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
+- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
 
 ## StreamProcessorInputTypeDef
 
@@ -1613,7 +1620,8 @@ from mypy_boto3_rekognition.type_defs import StreamProcessorTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`: [StreamProcessorStatus](./literals.md#streamprocessorstatus)
+- `Status`:
+  [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
 
 ## SummaryTypeDef
 
@@ -1644,7 +1652,7 @@ from mypy_boto3_rekognition.type_defs import TechnicalCueSegmentTypeDef
 
 Optional fields:
 
-- `Type`: [TechnicalCueType](./literals.md#technicalcuetype)
+- `Type`: [TechnicalCueTypeType](./literals.md#technicalcuetypetype)
 - `Confidence`: `float`
 
 ## TestingDataResultTypeDef
@@ -1690,7 +1698,7 @@ from mypy_boto3_rekognition.type_defs import TextDetectionTypeDef
 Optional fields:
 
 - `DetectedText`: `str`
-- `Type`: [TextTypes](./literals.md#texttypes)
+- `Type`: [TextTypesType](./literals.md#texttypestype)
 - `Id`: `int`
 - `ParentId`: `int`
 - `Confidence`: `float`
@@ -1726,7 +1734,7 @@ from mypy_boto3_rekognition.type_defs import UnindexedFaceTypeDef
 
 Optional fields:
 
-- `Reasons`: `List`\[[Reason](./literals.md#reason)\]
+- `Reasons`: `List`\[[ReasonType](./literals.md#reasontype)\]
 - `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
 ## ValidationDataTypeDef

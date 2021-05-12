@@ -3,22 +3,22 @@
 > [Index](..) > [GuardDuty](.) > Literals
 
 Auto-generated documentation for
-[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
 [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 - [Literals for boto3 GuardDuty module](#literals-for-boto3-guardduty-module)
-  - [AdminStatus](#adminstatus)
-  - [DataSource](#datasource)
-  - [DataSourceStatus](#datasourcestatus)
-  - [DestinationType](#destinationtype)
-  - [DetectorStatus](#detectorstatus)
-  - [Feedback](#feedback)
-  - [FilterAction](#filteraction)
-  - [FindingPublishingFrequency](#findingpublishingfrequency)
-  - [FindingStatisticType](#findingstatistictype)
-  - [IpSetFormat](#ipsetformat)
-  - [IpSetStatus](#ipsetstatus)
+  - [AdminStatusType](#adminstatustype)
+  - [DataSourceStatusType](#datasourcestatustype)
+  - [DataSourceType](#datasourcetype)
+  - [DestinationTypeType](#destinationtypetype)
+  - [DetectorStatusType](#detectorstatustype)
+  - [FeedbackType](#feedbacktype)
+  - [FilterActionType](#filteractiontype)
+  - [FindingPublishingFrequencyType](#findingpublishingfrequencytype)
+  - [FindingStatisticTypeType](#findingstatistictypetype)
+  - [IpSetFormatType](#ipsetformattype)
+  - [IpSetStatusType](#ipsetstatustype)
   - [ListDetectorsPaginatorName](#listdetectorspaginatorname)
   - [ListFiltersPaginatorName](#listfilterspaginatorname)
   - [ListFindingsPaginatorName](#listfindingspaginatorname)
@@ -27,16 +27,16 @@ type annotations stubs module
   - [ListMembersPaginatorName](#listmemberspaginatorname)
   - [ListOrganizationAdminAccountsPaginatorName](#listorganizationadminaccountspaginatorname)
   - [ListThreatIntelSetsPaginatorName](#listthreatintelsetspaginatorname)
-  - [OrderBy](#orderby)
-  - [PublishingStatus](#publishingstatus)
-  - [ThreatIntelSetFormat](#threatintelsetformat)
-  - [ThreatIntelSetStatus](#threatintelsetstatus)
-  - [UsageStatisticType](#usagestatistictype)
+  - [OrderByType](#orderbytype)
+  - [PublishingStatusType](#publishingstatustype)
+  - [ThreatIntelSetFormatType](#threatintelsetformattype)
+  - [ThreatIntelSetStatusType](#threatintelsetstatustype)
+  - [UsageStatisticTypeType](#usagestatistictypetype)
 
-## AdminStatus
+## AdminStatusType
 
 ```python
-from mypy_boto3_guardduty.literals import AdminStatus
+from mypy_boto3_guardduty.literals import AdminStatusType
 ```
 
 Values:
@@ -44,10 +44,21 @@ Values:
 - `DISABLE_IN_PROGRESS`
 - `ENABLED`
 
-## DataSource
+## DataSourceStatusType
 
 ```python
-from mypy_boto3_guardduty.literals import DataSource
+from mypy_boto3_guardduty.literals import DataSourceStatusType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## DataSourceType
+
+```python
+from mypy_boto3_guardduty.literals import DataSourceType
 ```
 
 Values:
@@ -57,31 +68,20 @@ Values:
 - `FLOW_LOGS`
 - `S3_LOGS`
 
-## DataSourceStatus
+## DestinationTypeType
 
 ```python
-from mypy_boto3_guardduty.literals import DataSourceStatus
-```
-
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-## DestinationType
-
-```python
-from mypy_boto3_guardduty.literals import DestinationType
+from mypy_boto3_guardduty.literals import DestinationTypeType
 ```
 
 Values:
 
 - `S3`
 
-## DetectorStatus
+## DetectorStatusType
 
 ```python
-from mypy_boto3_guardduty.literals import DetectorStatus
+from mypy_boto3_guardduty.literals import DetectorStatusType
 ```
 
 Values:
@@ -89,10 +89,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## Feedback
+## FeedbackType
 
 ```python
-from mypy_boto3_guardduty.literals import Feedback
+from mypy_boto3_guardduty.literals import FeedbackType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `NOT_USEFUL`
 - `USEFUL`
 
-## FilterAction
+## FilterActionType
 
 ```python
-from mypy_boto3_guardduty.literals import FilterAction
+from mypy_boto3_guardduty.literals import FilterActionType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `ARCHIVE`
 - `NOOP`
 
-## FindingPublishingFrequency
+## FindingPublishingFrequencyType
 
 ```python
-from mypy_boto3_guardduty.literals import FindingPublishingFrequency
+from mypy_boto3_guardduty.literals import FindingPublishingFrequencyType
 ```
 
 Values:
@@ -123,20 +123,20 @@ Values:
 - `ONE_HOUR`
 - `SIX_HOURS`
 
-## FindingStatisticType
+## FindingStatisticTypeType
 
 ```python
-from mypy_boto3_guardduty.literals import FindingStatisticType
+from mypy_boto3_guardduty.literals import FindingStatisticTypeType
 ```
 
 Values:
 
 - `COUNT_BY_SEVERITY`
 
-## IpSetFormat
+## IpSetFormatType
 
 ```python
-from mypy_boto3_guardduty.literals import IpSetFormat
+from mypy_boto3_guardduty.literals import IpSetFormatType
 ```
 
 Values:
@@ -148,10 +148,10 @@ Values:
 - `STIX`
 - `TXT`
 
-## IpSetStatus
+## IpSetStatusType
 
 ```python
-from mypy_boto3_guardduty.literals import IpSetStatus
+from mypy_boto3_guardduty.literals import IpSetStatusType
 ```
 
 Values:
@@ -244,10 +244,10 @@ Values:
 
 - `list_threat_intel_sets`
 
-## OrderBy
+## OrderByType
 
 ```python
-from mypy_boto3_guardduty.literals import OrderBy
+from mypy_boto3_guardduty.literals import OrderByType
 ```
 
 Values:
@@ -255,10 +255,10 @@ Values:
 - `ASC`
 - `DESC`
 
-## PublishingStatus
+## PublishingStatusType
 
 ```python
-from mypy_boto3_guardduty.literals import PublishingStatus
+from mypy_boto3_guardduty.literals import PublishingStatusType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 - `STOPPED`
 - `UNABLE_TO_PUBLISH_FIX_DESTINATION_PROPERTY`
 
-## ThreatIntelSetFormat
+## ThreatIntelSetFormatType
 
 ```python
-from mypy_boto3_guardduty.literals import ThreatIntelSetFormat
+from mypy_boto3_guardduty.literals import ThreatIntelSetFormatType
 ```
 
 Values:
@@ -283,10 +283,10 @@ Values:
 - `STIX`
 - `TXT`
 
-## ThreatIntelSetStatus
+## ThreatIntelSetStatusType
 
 ```python
-from mypy_boto3_guardduty.literals import ThreatIntelSetStatus
+from mypy_boto3_guardduty.literals import ThreatIntelSetStatusType
 ```
 
 Values:
@@ -299,10 +299,10 @@ Values:
 - `ERROR`
 - `INACTIVE`
 
-## UsageStatisticType
+## UsageStatisticTypeType
 
 ```python
-from mypy_boto3_guardduty.literals import UsageStatisticType
+from mypy_boto3_guardduty.literals import UsageStatisticTypeType
 ```
 
 Values:

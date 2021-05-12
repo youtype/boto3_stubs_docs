@@ -3,7 +3,7 @@
 > [Index](..) > AppConfig
 
 Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
 [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
@@ -29,55 +29,55 @@ Can be used directly:
 from mypy_boto3_appconfig.client import AppConfigClient
 ```
 
-AppConfigClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_application](./client.md#create-application)
-- [create_configuration_profile](./client.md#create-configuration-profile)
-- [create_deployment_strategy](./client.md#create-deployment-strategy)
-- [create_environment](./client.md#create-environment)
-- [create_hosted_configuration_version](./client.md#create-hosted-configuration-version)
-- [delete_application](./client.md#delete-application)
-- [delete_configuration_profile](./client.md#delete-configuration-profile)
-- [delete_deployment_strategy](./client.md#delete-deployment-strategy)
-- [delete_environment](./client.md#delete-environment)
-- [delete_hosted_configuration_version](./client.md#delete-hosted-configuration-version)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_application](./client.md#get-application)
-- [get_configuration](./client.md#get-configuration)
-- [get_configuration_profile](./client.md#get-configuration-profile)
-- [get_deployment](./client.md#get-deployment)
-- [get_deployment_strategy](./client.md#get-deployment-strategy)
-- [get_environment](./client.md#get-environment)
-- [get_hosted_configuration_version](./client.md#get-hosted-configuration-version)
-- [list_applications](./client.md#list-applications)
-- [list_configuration_profiles](./client.md#list-configuration-profiles)
-- [list_deployment_strategies](./client.md#list-deployment-strategies)
-- [list_deployments](./client.md#list-deployments)
-- [list_environments](./client.md#list-environments)
-- [list_hosted_configuration_versions](./client.md#list-hosted-configuration-versions)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_deployment](./client.md#start-deployment)
-- [stop_deployment](./client.md#stop-deployment)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_application](./client.md#update-application)
-- [update_configuration_profile](./client.md#update-configuration-profile)
-- [update_deployment_strategy](./client.md#update-deployment-strategy)
-- [update_environment](./client.md#update-environment)
-- [validate_configuration](./client.md#validate-configuration)
+- [can_paginate](./client.md#can_paginate)
+- [create_application](./client.md#create_application)
+- [create_configuration_profile](./client.md#create_configuration_profile)
+- [create_deployment_strategy](./client.md#create_deployment_strategy)
+- [create_environment](./client.md#create_environment)
+- [create_hosted_configuration_version](./client.md#create_hosted_configuration_version)
+- [delete_application](./client.md#delete_application)
+- [delete_configuration_profile](./client.md#delete_configuration_profile)
+- [delete_deployment_strategy](./client.md#delete_deployment_strategy)
+- [delete_environment](./client.md#delete_environment)
+- [delete_hosted_configuration_version](./client.md#delete_hosted_configuration_version)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_application](./client.md#get_application)
+- [get_configuration](./client.md#get_configuration)
+- [get_configuration_profile](./client.md#get_configuration_profile)
+- [get_deployment](./client.md#get_deployment)
+- [get_deployment_strategy](./client.md#get_deployment_strategy)
+- [get_environment](./client.md#get_environment)
+- [get_hosted_configuration_version](./client.md#get_hosted_configuration_version)
+- [list_applications](./client.md#list_applications)
+- [list_configuration_profiles](./client.md#list_configuration_profiles)
+- [list_deployment_strategies](./client.md#list_deployment_strategies)
+- [list_deployments](./client.md#list_deployments)
+- [list_environments](./client.md#list_environments)
+- [list_hosted_configuration_versions](./client.md#list_hosted_configuration_versions)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_deployment](./client.md#start_deployment)
+- [stop_deployment](./client.md#stop_deployment)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_application](./client.md#update_application)
+- [update_configuration_profile](./client.md#update_configuration_profile)
+- [update_deployment_strategy](./client.md#update_deployment_strategy)
+- [update_environment](./client.md#update_environment)
+- [validate_configuration](./client.md#validate_configuration)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [PayloadTooLargeException](./client.md#payloadtoolargeexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
+AppConfigClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- InternalServerException
+- PayloadTooLargeException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
 
 ## Literals
 
@@ -86,16 +86,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appconfig.literals import DeploymentEventType, ...
+from mypy_boto3_appconfig.literals import DeploymentEventTypeType, ...
 ```
 
-- [DeploymentEventType](./literals.md#deploymenteventtype)
-- [DeploymentState](./literals.md#deploymentstate)
-- [EnvironmentState](./literals.md#environmentstate)
-- [GrowthType](./literals.md#growthtype)
-- [ReplicateTo](./literals.md#replicateto)
-- [TriggeredBy](./literals.md#triggeredby)
-- [ValidatorType](./literals.md#validatortype)
+- [DeploymentEventTypeType](./literals.md#deploymenteventtypetype)
+- [DeploymentStateType](./literals.md#deploymentstatetype)
+- [EnvironmentStateType](./literals.md#environmentstatetype)
+- [GrowthTypeType](./literals.md#growthtypetype)
+- [ReplicateToType](./literals.md#replicatetotype)
+- [TriggeredByType](./literals.md#triggeredbytype)
+- [ValidatorTypeType](./literals.md#validatortypetype)
 
 ## Typed dictionaries
 

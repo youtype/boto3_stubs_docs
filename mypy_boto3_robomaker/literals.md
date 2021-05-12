@@ -3,16 +3,16 @@
 > [Index](..) > [RoboMaker](.) > Literals
 
 Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
 [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 - [Literals for boto3 RoboMaker module](#literals-for-boto3-robomaker-module)
-  - [Architecture](#architecture)
-  - [DeploymentJobErrorCode](#deploymentjoberrorcode)
-  - [DeploymentStatus](#deploymentstatus)
-  - [ExitBehavior](#exitbehavior)
-  - [FailureBehavior](#failurebehavior)
+  - [ArchitectureType](#architecturetype)
+  - [DeploymentJobErrorCodeType](#deploymentjoberrorcodetype)
+  - [DeploymentStatusType](#deploymentstatustype)
+  - [ExitBehaviorType](#exitbehaviortype)
+  - [FailureBehaviorType](#failurebehaviortype)
   - [ListDeploymentJobsPaginatorName](#listdeploymentjobspaginatorname)
   - [ListFleetsPaginatorName](#listfleetspaginatorname)
   - [ListRobotApplicationsPaginatorName](#listrobotapplicationspaginatorname)
@@ -24,26 +24,26 @@ type annotations stubs module
   - [ListWorldGenerationJobsPaginatorName](#listworldgenerationjobspaginatorname)
   - [ListWorldTemplatesPaginatorName](#listworldtemplatespaginatorname)
   - [ListWorldsPaginatorName](#listworldspaginatorname)
-  - [RenderingEngineType](#renderingenginetype)
-  - [RobotDeploymentStep](#robotdeploymentstep)
-  - [RobotSoftwareSuiteType](#robotsoftwaresuitetype)
-  - [RobotSoftwareSuiteVersionType](#robotsoftwaresuiteversiontype)
-  - [RobotStatus](#robotstatus)
-  - [SimulationJobBatchErrorCode](#simulationjobbatcherrorcode)
-  - [SimulationJobBatchStatus](#simulationjobbatchstatus)
-  - [SimulationJobErrorCode](#simulationjoberrorcode)
-  - [SimulationJobStatus](#simulationjobstatus)
-  - [SimulationSoftwareSuiteType](#simulationsoftwaresuitetype)
-  - [UploadBehavior](#uploadbehavior)
-  - [WorldExportJobErrorCode](#worldexportjoberrorcode)
-  - [WorldExportJobStatus](#worldexportjobstatus)
-  - [WorldGenerationJobErrorCode](#worldgenerationjoberrorcode)
-  - [WorldGenerationJobStatus](#worldgenerationjobstatus)
+  - [RenderingEngineTypeType](#renderingenginetypetype)
+  - [RobotDeploymentStepType](#robotdeploymentsteptype)
+  - [RobotSoftwareSuiteTypeType](#robotsoftwaresuitetypetype)
+  - [RobotSoftwareSuiteVersionTypeType](#robotsoftwaresuiteversiontypetype)
+  - [RobotStatusType](#robotstatustype)
+  - [SimulationJobBatchErrorCodeType](#simulationjobbatcherrorcodetype)
+  - [SimulationJobBatchStatusType](#simulationjobbatchstatustype)
+  - [SimulationJobErrorCodeType](#simulationjoberrorcodetype)
+  - [SimulationJobStatusType](#simulationjobstatustype)
+  - [SimulationSoftwareSuiteTypeType](#simulationsoftwaresuitetypetype)
+  - [UploadBehaviorType](#uploadbehaviortype)
+  - [WorldExportJobErrorCodeType](#worldexportjoberrorcodetype)
+  - [WorldExportJobStatusType](#worldexportjobstatustype)
+  - [WorldGenerationJobErrorCodeType](#worldgenerationjoberrorcodetype)
+  - [WorldGenerationJobStatusType](#worldgenerationjobstatustype)
 
-## Architecture
+## ArchitectureType
 
 ```python
-from mypy_boto3_robomaker.literals import Architecture
+from mypy_boto3_robomaker.literals import ArchitectureType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `ARMHF`
 - `X86_64`
 
-## DeploymentJobErrorCode
+## DeploymentJobErrorCodeType
 
 ```python
-from mypy_boto3_robomaker.literals import DeploymentJobErrorCode
+from mypy_boto3_robomaker.literals import DeploymentJobErrorCodeType
 ```
 
 Values:
@@ -85,10 +85,10 @@ Values:
 - `RobotDeploymentAborted`
 - `RobotDeploymentNoResponse`
 
-## DeploymentStatus
+## DeploymentStatusType
 
 ```python
-from mypy_boto3_robomaker.literals import DeploymentStatus
+from mypy_boto3_robomaker.literals import DeploymentStatusType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `Preparing`
 - `Succeeded`
 
-## ExitBehavior
+## ExitBehaviorType
 
 ```python
-from mypy_boto3_robomaker.literals import ExitBehavior
+from mypy_boto3_robomaker.literals import ExitBehaviorType
 ```
 
 Values:
@@ -111,10 +111,10 @@ Values:
 - `FAIL`
 - `RESTART`
 
-## FailureBehavior
+## FailureBehaviorType
 
 ```python
-from mypy_boto3_robomaker.literals import FailureBehavior
+from mypy_boto3_robomaker.literals import FailureBehaviorType
 ```
 
 Values:
@@ -232,20 +232,20 @@ Values:
 
 - `list_worlds`
 
-## RenderingEngineType
+## RenderingEngineTypeType
 
 ```python
-from mypy_boto3_robomaker.literals import RenderingEngineType
+from mypy_boto3_robomaker.literals import RenderingEngineTypeType
 ```
 
 Values:
 
 - `OGRE`
 
-## RobotDeploymentStep
+## RobotDeploymentStepType
 
 ```python
-from mypy_boto3_robomaker.literals import RobotDeploymentStep
+from mypy_boto3_robomaker.literals import RobotDeploymentStepType
 ```
 
 Values:
@@ -258,10 +258,10 @@ Values:
 - `Launching`
 - `Validating`
 
-## RobotSoftwareSuiteType
+## RobotSoftwareSuiteTypeType
 
 ```python
-from mypy_boto3_robomaker.literals import RobotSoftwareSuiteType
+from mypy_boto3_robomaker.literals import RobotSoftwareSuiteTypeType
 ```
 
 Values:
@@ -269,10 +269,10 @@ Values:
 - `ROS`
 - `ROS2`
 
-## RobotSoftwareSuiteVersionType
+## RobotSoftwareSuiteVersionTypeType
 
 ```python
-from mypy_boto3_robomaker.literals import RobotSoftwareSuiteVersionType
+from mypy_boto3_robomaker.literals import RobotSoftwareSuiteVersionTypeType
 ```
 
 Values:
@@ -282,10 +282,10 @@ Values:
 - `Kinetic`
 - `Melodic`
 
-## RobotStatus
+## RobotStatusType
 
 ```python
-from mypy_boto3_robomaker.literals import RobotStatus
+from mypy_boto3_robomaker.literals import RobotStatusType
 ```
 
 Values:
@@ -298,20 +298,20 @@ Values:
 - `PendingNewDeployment`
 - `Registered`
 
-## SimulationJobBatchErrorCode
+## SimulationJobBatchErrorCodeType
 
 ```python
-from mypy_boto3_robomaker.literals import SimulationJobBatchErrorCode
+from mypy_boto3_robomaker.literals import SimulationJobBatchErrorCodeType
 ```
 
 Values:
 
 - `InternalServiceError`
 
-## SimulationJobBatchStatus
+## SimulationJobBatchStatusType
 
 ```python
-from mypy_boto3_robomaker.literals import SimulationJobBatchStatus
+from mypy_boto3_robomaker.literals import SimulationJobBatchStatusType
 ```
 
 Values:
@@ -326,10 +326,10 @@ Values:
 - `TimedOut`
 - `TimingOut`
 
-## SimulationJobErrorCode
+## SimulationJobErrorCodeType
 
 ```python
-from mypy_boto3_robomaker.literals import SimulationJobErrorCode
+from mypy_boto3_robomaker.literals import SimulationJobErrorCodeType
 ```
 
 Values:
@@ -366,10 +366,10 @@ Values:
 - `WrongRegionS3Output`
 - `WrongRegionSimulationApplication`
 
-## SimulationJobStatus
+## SimulationJobStatusType
 
 ```python
-from mypy_boto3_robomaker.literals import SimulationJobStatus
+from mypy_boto3_robomaker.literals import SimulationJobStatusType
 ```
 
 Values:
@@ -385,10 +385,10 @@ Values:
 - `Terminated`
 - `Terminating`
 
-## SimulationSoftwareSuiteType
+## SimulationSoftwareSuiteTypeType
 
 ```python
-from mypy_boto3_robomaker.literals import SimulationSoftwareSuiteType
+from mypy_boto3_robomaker.literals import SimulationSoftwareSuiteTypeType
 ```
 
 Values:
@@ -396,10 +396,10 @@ Values:
 - `Gazebo`
 - `RosbagPlay`
 
-## UploadBehavior
+## UploadBehaviorType
 
 ```python
-from mypy_boto3_robomaker.literals import UploadBehavior
+from mypy_boto3_robomaker.literals import UploadBehaviorType
 ```
 
 Values:
@@ -407,10 +407,10 @@ Values:
 - `UPLOAD_ON_TERMINATE`
 - `UPLOAD_ROLLING_AUTO_REMOVE`
 
-## WorldExportJobErrorCode
+## WorldExportJobErrorCodeType
 
 ```python
-from mypy_boto3_robomaker.literals import WorldExportJobErrorCode
+from mypy_boto3_robomaker.literals import WorldExportJobErrorCodeType
 ```
 
 Values:
@@ -422,10 +422,10 @@ Values:
 - `RequestThrottled`
 - `ResourceNotFound`
 
-## WorldExportJobStatus
+## WorldExportJobStatusType
 
 ```python
-from mypy_boto3_robomaker.literals import WorldExportJobStatus
+from mypy_boto3_robomaker.literals import WorldExportJobStatusType
 ```
 
 Values:
@@ -437,10 +437,10 @@ Values:
 - `Pending`
 - `Running`
 
-## WorldGenerationJobErrorCode
+## WorldGenerationJobErrorCodeType
 
 ```python
-from mypy_boto3_robomaker.literals import WorldGenerationJobErrorCode
+from mypy_boto3_robomaker.literals import WorldGenerationJobErrorCodeType
 ```
 
 Values:
@@ -452,10 +452,10 @@ Values:
 - `RequestThrottled`
 - `ResourceNotFound`
 
-## WorldGenerationJobStatus
+## WorldGenerationJobStatusType
 
 ```python
-from mypy_boto3_robomaker.literals import WorldGenerationJobStatus
+from mypy_boto3_robomaker.literals import WorldGenerationJobStatusType
 ```
 
 Values:

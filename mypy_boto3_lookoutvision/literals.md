@@ -3,22 +3,22 @@
 > [Index](..) > [LookoutforVision](.) > Literals
 
 Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
 [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [Literals for boto3 LookoutforVision module](#literals-for-boto3-lookoutforvision-module)
-  - [DatasetStatus](#datasetstatus)
+  - [DatasetStatusType](#datasetstatustype)
   - [ListDatasetEntriesPaginatorName](#listdatasetentriespaginatorname)
   - [ListModelsPaginatorName](#listmodelspaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
-  - [ModelHostingStatus](#modelhostingstatus)
-  - [ModelStatus](#modelstatus)
+  - [ModelHostingStatusType](#modelhostingstatustype)
+  - [ModelStatusType](#modelstatustype)
 
-## DatasetStatus
+## DatasetStatusType
 
 ```python
-from mypy_boto3_lookoutvision.literals import DatasetStatus
+from mypy_boto3_lookoutvision.literals import DatasetStatusType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 
 - `list_projects`
 
-## ModelHostingStatus
+## ModelHostingStatusType
 
 ```python
-from mypy_boto3_lookoutvision.literals import ModelHostingStatus
+from mypy_boto3_lookoutvision.literals import ModelHostingStatusType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 - `STOPPING_HOSTING`
 - `SYSTEM_UPDATING`
 
-## ModelStatus
+## ModelStatusType
 
 ```python
-from mypy_boto3_lookoutvision.literals import ModelStatus
+from mypy_boto3_lookoutvision.literals import ModelStatusType
 ```
 
 Values:

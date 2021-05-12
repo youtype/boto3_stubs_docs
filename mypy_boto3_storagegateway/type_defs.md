@@ -3,7 +3,7 @@
 > [Index](..) > [StorageGateway](.) > Typed dictionaries
 
 Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
 [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
@@ -587,7 +587,7 @@ Required fields:
 
 - `GatewayARN`: `str`
 - `Status`:
-  [AvailabilityMonitorTestStatus](./literals.md#availabilitymonitorteststatus)
+  [AvailabilityMonitorTestStatusType](./literals.md#availabilitymonitorteststatustype)
 - `StartTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -659,7 +659,8 @@ from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsOutputTyp
 
 Required fields:
 
-- `ChapCredentials`: `List`\[[ChapInfoTypeDef](./type_defs.md#chapinfotypedef)\]
+- `ChapCredentials`:
+  `List`\[[ChapInfoTypeDef](./type_defs.md#chapinfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -699,7 +700,7 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VPCEndpoint`: `str`
 - `CloudWatchLogGroupARN`: `str`
-- `HostEnvironment`: [HostEnvironment](./literals.md#hostenvironment)
+- `HostEnvironment`: [HostEnvironmentType](./literals.md#hostenvironmenttype)
 - `EndpointType`: `str`
 - `SoftwareUpdatesEndDate`: `str`
 - `DeprecationDate`: `str`
@@ -760,9 +761,10 @@ Required fields:
 - `GatewayARN`: `str`
 - `DomainName`: `str`
 - `ActiveDirectoryStatus`:
-  [ActiveDirectoryStatus](./literals.md#activedirectorystatus)
+  [ActiveDirectoryStatusType](./literals.md#activedirectorystatustype)
 - `SMBGuestPasswordSet`: `bool`
-- `SMBSecurityStrategy`: [SMBSecurityStrategy](./literals.md#smbsecuritystrategy)
+- `SMBSecurityStrategy`:
+  [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
 - `FileSharesVisible`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -957,7 +959,7 @@ from mypy_boto3_storagegateway.type_defs import FileShareInfoTypeDef
 
 Optional fields:
 
-- `FileShareType`: [FileShareType](./literals.md#filesharetype)
+- `FileShareType`: [FileShareTypeType](./literals.md#filesharetypetype)
 - `FileShareARN`: `str`
 - `FileShareId`: `str`
 - `FileShareStatus`: `str`
@@ -1019,7 +1021,7 @@ Required fields:
 
 - `GatewayARN`: `str`
 - `ActiveDirectoryStatus`:
-  [ActiveDirectoryStatus](./literals.md#activedirectorystatus)
+  [ActiveDirectoryStatusType](./literals.md#activedirectorystatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1168,7 +1170,8 @@ Required fields:
 
 - `GatewayARN`: `str`
 - `Marker`: `str`
-- `VolumeInfos`: `List`\[[VolumeInfoTypeDef](./type_defs.md#volumeinfotypedef)\]
+- `VolumeInfos`:
+  `List`\[[VolumeInfoTypeDef](./type_defs.md#volumeinfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1205,7 +1208,7 @@ Optional fields:
 - `Role`: `str`
 - `LocationARN`: `str`
 - `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACL](./literals.md#objectacl)
+- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
 - `ClientList`: `List`\[`str`\]
 - `Squash`: `str`
 - `ReadOnly`: `bool`
@@ -1264,10 +1267,11 @@ Optional fields:
 
 - `PoolARN`: `str`
 - `PoolName`: `str`
-- `StorageClass`: [TapeStorageClass](./literals.md#tapestorageclass)
-- `RetentionLockType`: [RetentionLockType](./literals.md#retentionlocktype)
+- `StorageClass`: [TapeStorageClassType](./literals.md#tapestorageclasstype)
+- `RetentionLockType`:
+  [RetentionLockTypeType](./literals.md#retentionlocktypetype)
 - `RetentionLockTimeInDays`: `int`
-- `PoolStatus`: [PoolStatus](./literals.md#poolstatus)
+- `PoolStatus`: [PoolStatusType](./literals.md#poolstatustype)
 
 ## RefreshCacheOutputTypeDef
 
@@ -1362,7 +1366,7 @@ Optional fields:
 - `Role`: `str`
 - `LocationARN`: `str`
 - `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACL](./literals.md#objectacl)
+- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
 - `ReadOnly`: `bool`
 - `GuessMIMETypeEnabled`: `bool`
 - `RequesterPays`: `bool`
@@ -1373,7 +1377,7 @@ Optional fields:
 - `InvalidUserList`: `List`\[`str`\]
 - `AuditDestinationARN`: `str`
 - `Authentication`: `str`
-- `CaseSensitivity`: [CaseSensitivity](./literals.md#casesensitivity)
+- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileShareName`: `str`
 - `CacheAttributes`:

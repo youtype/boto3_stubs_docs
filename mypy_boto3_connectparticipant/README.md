@@ -3,7 +3,7 @@
 > [Index](..) > ConnectParticipant
 
 Auto-generated documentation for
-[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
 [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
@@ -29,30 +29,30 @@ Can be used directly:
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 ```
 
-ConnectParticipantClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [complete_attachment_upload](./client.md#complete-attachment-upload)
-- [create_participant_connection](./client.md#create-participant-connection)
-- [disconnect_participant](./client.md#disconnect-participant)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_attachment](./client.md#get-attachment)
-- [get_transcript](./client.md#get-transcript)
-- [send_event](./client.md#send-event)
-- [send_message](./client.md#send-message)
-- [start_attachment_upload](./client.md#start-attachment-upload)
+- [can_paginate](./client.md#can_paginate)
+- [complete_attachment_upload](./client.md#complete_attachment_upload)
+- [create_participant_connection](./client.md#create_participant_connection)
+- [disconnect_participant](./client.md#disconnect_participant)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_attachment](./client.md#get_attachment)
+- [get_transcript](./client.md#get_transcript)
+- [send_event](./client.md#send_event)
+- [send_message](./client.md#send_message)
+- [start_attachment_upload](./client.md#start_attachment_upload)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+ConnectParticipantClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -61,15 +61,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_connectparticipant.literals import ArtifactStatus, ...
+from mypy_boto3_connectparticipant.literals import ArtifactStatusType, ...
 ```
 
-- [ArtifactStatus](./literals.md#artifactstatus)
-- [ChatItemType](./literals.md#chatitemtype)
-- [ConnectionType](./literals.md#connectiontype)
-- [ParticipantRole](./literals.md#participantrole)
-- [ScanDirection](./literals.md#scandirection)
-- [SortKey](./literals.md#sortkey)
+- [ArtifactStatusType](./literals.md#artifactstatustype)
+- [ChatItemTypeType](./literals.md#chatitemtypetype)
+- [ConnectionTypeType](./literals.md#connectiontypetype)
+- [ParticipantRoleType](./literals.md#participantroletype)
+- [ScanDirectionType](./literals.md#scandirectiontype)
+- [SortKeyType](./literals.md#sortkeytype)
 
 ## Typed dictionaries
 

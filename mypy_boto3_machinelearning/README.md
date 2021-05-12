@@ -3,7 +3,7 @@
 > [Index](..) > MachineLearning
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
@@ -31,54 +31,54 @@ Can be used directly:
 from mypy_boto3_machinelearning.client import MachineLearningClient
 ```
 
-MachineLearningClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags](./client.md#add-tags)
-- [can_paginate](./client.md#can-paginate)
-- [create_batch_prediction](./client.md#create-batch-prediction)
-- [create_data_source_from_rds](./client.md#create-data-source-from-rds)
-- [create_data_source_from_redshift](./client.md#create-data-source-from-redshift)
-- [create_data_source_from_s3](./client.md#create-data-source-from-s3)
-- [create_evaluation](./client.md#create-evaluation)
-- [create_ml_model](./client.md#create-ml-model)
-- [create_realtime_endpoint](./client.md#create-realtime-endpoint)
-- [delete_batch_prediction](./client.md#delete-batch-prediction)
-- [delete_data_source](./client.md#delete-data-source)
-- [delete_evaluation](./client.md#delete-evaluation)
-- [delete_ml_model](./client.md#delete-ml-model)
-- [delete_realtime_endpoint](./client.md#delete-realtime-endpoint)
-- [delete_tags](./client.md#delete-tags)
-- [describe_batch_predictions](./client.md#describe-batch-predictions)
-- [describe_data_sources](./client.md#describe-data-sources)
-- [describe_evaluations](./client.md#describe-evaluations)
-- [describe_ml_models](./client.md#describe-ml-models)
-- [describe_tags](./client.md#describe-tags)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_batch_prediction](./client.md#get-batch-prediction)
-- [get_data_source](./client.md#get-data-source)
-- [get_evaluation](./client.md#get-evaluation)
-- [get_ml_model](./client.md#get-ml-model)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
+- [add_tags](./client.md#add_tags)
+- [can_paginate](./client.md#can_paginate)
+- [create_batch_prediction](./client.md#create_batch_prediction)
+- [create_data_source_from_rds](./client.md#create_data_source_from_rds)
+- [create_data_source_from_redshift](./client.md#create_data_source_from_redshift)
+- [create_data_source_from_s3](./client.md#create_data_source_from_s3)
+- [create_evaluation](./client.md#create_evaluation)
+- [create_ml_model](./client.md#create_ml_model)
+- [create_realtime_endpoint](./client.md#create_realtime_endpoint)
+- [delete_batch_prediction](./client.md#delete_batch_prediction)
+- [delete_data_source](./client.md#delete_data_source)
+- [delete_evaluation](./client.md#delete_evaluation)
+- [delete_ml_model](./client.md#delete_ml_model)
+- [delete_realtime_endpoint](./client.md#delete_realtime_endpoint)
+- [delete_tags](./client.md#delete_tags)
+- [describe_batch_predictions](./client.md#describe_batch_predictions)
+- [describe_data_sources](./client.md#describe_data_sources)
+- [describe_evaluations](./client.md#describe_evaluations)
+- [describe_ml_models](./client.md#describe_ml_models)
+- [describe_tags](./client.md#describe_tags)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_batch_prediction](./client.md#get_batch_prediction)
+- [get_data_source](./client.md#get_data_source)
+- [get_evaluation](./client.md#get_evaluation)
+- [get_ml_model](./client.md#get_ml_model)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
 - [predict](./client.md#predict)
-- [update_batch_prediction](./client.md#update-batch-prediction)
-- [update_data_source](./client.md#update-data-source)
-- [update_evaluation](./client.md#update-evaluation)
-- [update_ml_model](./client.md#update-ml-model)
+- [update_batch_prediction](./client.md#update_batch_prediction)
+- [update_data_source](./client.md#update_data_source)
+- [update_evaluation](./client.md#update_evaluation)
+- [update_ml_model](./client.md#update_ml_model)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [IdempotentParameterMismatchException](./client.md#idempotentparametermismatchexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidInputException](./client.md#invalidinputexception)
-- [InvalidTagException](./client.md#invalidtagexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [PredictorNotMountedException](./client.md#predictornotmountedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [TagLimitExceededException](./client.md#taglimitexceededexception)
+MachineLearningClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- IdempotentParameterMismatchException
+- InternalServerException
+- InvalidInputException
+- InvalidTagException
+- LimitExceededException
+- PredictorNotMountedException
+- ResourceNotFoundException
+- TagLimitExceededException
 
 ## Paginators
 
@@ -119,28 +119,28 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.literals import Algorithm, ...
+from mypy_boto3_machinelearning.literals import AlgorithmType, ...
 ```
 
-- [Algorithm](./literals.md#algorithm)
+- [AlgorithmType](./literals.md#algorithmtype)
 - [BatchPredictionAvailableWaiterName](./literals.md#batchpredictionavailablewaitername)
-- [BatchPredictionFilterVariable](./literals.md#batchpredictionfiltervariable)
+- [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
 - [DataSourceAvailableWaiterName](./literals.md#datasourceavailablewaitername)
-- [DataSourceFilterVariable](./literals.md#datasourcefiltervariable)
+- [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
 - [DescribeBatchPredictionsPaginatorName](./literals.md#describebatchpredictionspaginatorname)
 - [DescribeDataSourcesPaginatorName](./literals.md#describedatasourcespaginatorname)
 - [DescribeEvaluationsPaginatorName](./literals.md#describeevaluationspaginatorname)
 - [DescribeMLModelsPaginatorName](./literals.md#describemlmodelspaginatorname)
-- [DetailsAttributes](./literals.md#detailsattributes)
-- [EntityStatus](./literals.md#entitystatus)
+- [DetailsAttributesType](./literals.md#detailsattributestype)
+- [EntityStatusType](./literals.md#entitystatustype)
 - [EvaluationAvailableWaiterName](./literals.md#evaluationavailablewaitername)
-- [EvaluationFilterVariable](./literals.md#evaluationfiltervariable)
+- [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
 - [MLModelAvailableWaiterName](./literals.md#mlmodelavailablewaitername)
-- [MLModelFilterVariable](./literals.md#mlmodelfiltervariable)
-- [MLModelType](./literals.md#mlmodeltype)
-- [RealtimeEndpointStatus](./literals.md#realtimeendpointstatus)
-- [SortOrder](./literals.md#sortorder)
-- [TaggableResourceType](./literals.md#taggableresourcetype)
+- [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
+- [MLModelTypeType](./literals.md#mlmodeltypetype)
+- [RealtimeEndpointStatusType](./literals.md#realtimeendpointstatustype)
+- [SortOrderType](./literals.md#sortordertype)
+- [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 
 ## Typed dictionaries
 

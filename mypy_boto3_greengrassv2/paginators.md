@@ -3,7 +3,7 @@
 > [Index](..) > [GreengrassV2](.) > Paginators
 
 Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
@@ -30,7 +30,7 @@ def get_list_component_versions_paginator() -> ListComponentVersionsPaginator:
 ```
 
 Boto3 documentation:
-[GreengrassV2.Paginator.ListComponentVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListComponentVersions)
+[GreengrassV2.Paginator.ListComponentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListComponentVersions)
 
 Arguments for `ListComponentVersionsPaginator.paginate` method:
 
@@ -56,11 +56,12 @@ def get_list_components_paginator() -> ListComponentsPaginator:
 ```
 
 Boto3 documentation:
-[GreengrassV2.Paginator.ListComponents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListComponents)
+[GreengrassV2.Paginator.ListComponents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListComponents)
 
 Arguments for `ListComponentsPaginator.paginate` method:
 
-- `scope`: [ComponentVisibilityScope](./literals.md#componentvisibilityscope)
+- `scope`:
+  [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -82,12 +83,12 @@ def get_list_core_devices_paginator() -> ListCoreDevicesPaginator:
 ```
 
 Boto3 documentation:
-[GreengrassV2.Paginator.ListCoreDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListCoreDevices)
+[GreengrassV2.Paginator.ListCoreDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListCoreDevices)
 
 Arguments for `ListCoreDevicesPaginator.paginate` method:
 
 - `thingGroupArn`: `str`
-- `status`: [CoreDeviceStatus](./literals.md#coredevicestatus)
+- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -109,13 +110,13 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
 ```
 
 Boto3 documentation:
-[GreengrassV2.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListDeployments)
+[GreengrassV2.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListDeployments)
 
 Arguments for `ListDeploymentsPaginator.paginate` method:
 
 - `targetArn`: `str`
 - `historyFilter`:
-  [DeploymentHistoryFilter](./literals.md#deploymenthistoryfilter)
+  [DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -137,7 +138,7 @@ def get_list_effective_deployments_paginator() -> ListEffectiveDeploymentsPagina
 ```
 
 Boto3 documentation:
-[GreengrassV2.Paginator.ListEffectiveDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListEffectiveDeployments)
+[GreengrassV2.Paginator.ListEffectiveDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListEffectiveDeployments)
 
 Arguments for `ListEffectiveDeploymentsPaginator.paginate` method:
 
@@ -163,7 +164,7 @@ def get_list_installed_components_paginator() -> ListInstalledComponentsPaginato
 ```
 
 Boto3 documentation:
-[GreengrassV2.Paginator.ListInstalledComponents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListInstalledComponents)
+[GreengrassV2.Paginator.ListInstalledComponents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListInstalledComponents)
 
 Arguments for `ListInstalledComponentsPaginator.paginate` method:
 

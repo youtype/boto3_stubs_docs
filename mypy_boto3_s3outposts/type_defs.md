@@ -3,7 +3,7 @@
 > [Index](..) > [S3Outposts](.) > Typed dictionaries
 
 Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
+[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
@@ -35,7 +35,7 @@ Optional fields:
 - `EndpointArn`: `str`
 - `OutpostsId`: `str`
 - `CidrBlock`: `str`
-- `Status`: [EndpointStatus](./literals.md#endpointstatus)
+- `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `CreationTime`: `datetime`
 - `NetworkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]

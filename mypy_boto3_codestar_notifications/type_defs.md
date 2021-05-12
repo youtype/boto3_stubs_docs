@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStarNotifications](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
 [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
@@ -65,9 +65,10 @@ Optional fields:
 - `Resource`: `str`
 - `Targets`:
   `List`\[[TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)\]
-- `DetailType`: [DetailType](./literals.md#detailtype)
+- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
 - `CreatedBy`: `str`
-- `Status`: [NotificationRuleStatus](./literals.md#notificationrulestatus)
+- `Status`:
+  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 - `CreatedTimestamp`: `datetime`
 - `LastModifiedTimestamp`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -93,7 +94,8 @@ from mypy_boto3_codestar_notifications.type_defs import ListEventTypesFilterType
 
 Required fields:
 
-- `Name`: [ListEventTypesFilterName](./literals.md#listeventtypesfiltername)
+- `Name`:
+  [ListEventTypesFilterNameType](./literals.md#listeventtypesfilternametype)
 - `Value`: `str`
 
 ## ListEventTypesResultTypeDef
@@ -117,7 +119,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesFil
 Required fields:
 
 - `Name`:
-  [ListNotificationRulesFilterName](./literals.md#listnotificationrulesfiltername)
+  [ListNotificationRulesFilterNameType](./literals.md#listnotificationrulesfilternametype)
 - `Value`: `str`
 
 ## ListNotificationRulesResultTypeDef
@@ -150,7 +152,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListTargetsFilterTypeDef
 
 Required fields:
 
-- `Name`: [ListTargetsFilterName](./literals.md#listtargetsfiltername)
+- `Name`: [ListTargetsFilterNameType](./literals.md#listtargetsfilternametype)
 - `Value`: `str`
 
 ## ListTargetsResultTypeDef
@@ -218,7 +220,7 @@ Optional fields:
 
 - `TargetAddress`: `str`
 - `TargetType`: `str`
-- `TargetStatus`: [TargetStatus](./literals.md#targetstatus)
+- `TargetStatus`: [TargetStatusType](./literals.md#targetstatustype)
 
 ## TargetTypeDef
 

@@ -3,7 +3,7 @@
 > [Index](..) > CostExplorer
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
@@ -28,56 +28,56 @@ Can be used directly:
 from mypy_boto3_ce.client import CostExplorerClient
 ```
 
-CostExplorerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_anomaly_monitor](./client.md#create-anomaly-monitor)
-- [create_anomaly_subscription](./client.md#create-anomaly-subscription)
-- [create_cost_category_definition](./client.md#create-cost-category-definition)
-- [delete_anomaly_monitor](./client.md#delete-anomaly-monitor)
-- [delete_anomaly_subscription](./client.md#delete-anomaly-subscription)
-- [delete_cost_category_definition](./client.md#delete-cost-category-definition)
-- [describe_cost_category_definition](./client.md#describe-cost-category-definition)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_anomalies](./client.md#get-anomalies)
-- [get_anomaly_monitors](./client.md#get-anomaly-monitors)
-- [get_anomaly_subscriptions](./client.md#get-anomaly-subscriptions)
-- [get_cost_and_usage](./client.md#get-cost-and-usage)
-- [get_cost_and_usage_with_resources](./client.md#get-cost-and-usage-with-resources)
-- [get_cost_categories](./client.md#get-cost-categories)
-- [get_cost_forecast](./client.md#get-cost-forecast)
-- [get_dimension_values](./client.md#get-dimension-values)
-- [get_reservation_coverage](./client.md#get-reservation-coverage)
-- [get_reservation_purchase_recommendation](./client.md#get-reservation-purchase-recommendation)
-- [get_reservation_utilization](./client.md#get-reservation-utilization)
-- [get_rightsizing_recommendation](./client.md#get-rightsizing-recommendation)
-- [get_savings_plans_coverage](./client.md#get-savings-plans-coverage)
-- [get_savings_plans_purchase_recommendation](./client.md#get-savings-plans-purchase-recommendation)
-- [get_savings_plans_utilization](./client.md#get-savings-plans-utilization)
-- [get_savings_plans_utilization_details](./client.md#get-savings-plans-utilization-details)
-- [get_tags](./client.md#get-tags)
-- [get_usage_forecast](./client.md#get-usage-forecast)
-- [list_cost_category_definitions](./client.md#list-cost-category-definitions)
-- [provide_anomaly_feedback](./client.md#provide-anomaly-feedback)
-- [update_anomaly_monitor](./client.md#update-anomaly-monitor)
-- [update_anomaly_subscription](./client.md#update-anomaly-subscription)
-- [update_cost_category_definition](./client.md#update-cost-category-definition)
+- [can_paginate](./client.md#can_paginate)
+- [create_anomaly_monitor](./client.md#create_anomaly_monitor)
+- [create_anomaly_subscription](./client.md#create_anomaly_subscription)
+- [create_cost_category_definition](./client.md#create_cost_category_definition)
+- [delete_anomaly_monitor](./client.md#delete_anomaly_monitor)
+- [delete_anomaly_subscription](./client.md#delete_anomaly_subscription)
+- [delete_cost_category_definition](./client.md#delete_cost_category_definition)
+- [describe_cost_category_definition](./client.md#describe_cost_category_definition)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_anomalies](./client.md#get_anomalies)
+- [get_anomaly_monitors](./client.md#get_anomaly_monitors)
+- [get_anomaly_subscriptions](./client.md#get_anomaly_subscriptions)
+- [get_cost_and_usage](./client.md#get_cost_and_usage)
+- [get_cost_and_usage_with_resources](./client.md#get_cost_and_usage_with_resources)
+- [get_cost_categories](./client.md#get_cost_categories)
+- [get_cost_forecast](./client.md#get_cost_forecast)
+- [get_dimension_values](./client.md#get_dimension_values)
+- [get_reservation_coverage](./client.md#get_reservation_coverage)
+- [get_reservation_purchase_recommendation](./client.md#get_reservation_purchase_recommendation)
+- [get_reservation_utilization](./client.md#get_reservation_utilization)
+- [get_rightsizing_recommendation](./client.md#get_rightsizing_recommendation)
+- [get_savings_plans_coverage](./client.md#get_savings_plans_coverage)
+- [get_savings_plans_purchase_recommendation](./client.md#get_savings_plans_purchase_recommendation)
+- [get_savings_plans_utilization](./client.md#get_savings_plans_utilization)
+- [get_savings_plans_utilization_details](./client.md#get_savings_plans_utilization_details)
+- [get_tags](./client.md#get_tags)
+- [get_usage_forecast](./client.md#get_usage_forecast)
+- [list_cost_category_definitions](./client.md#list_cost_category_definitions)
+- [provide_anomaly_feedback](./client.md#provide_anomaly_feedback)
+- [update_anomaly_monitor](./client.md#update_anomaly_monitor)
+- [update_anomaly_subscription](./client.md#update_anomaly_subscription)
+- [update_cost_category_definition](./client.md#update_cost_category_definition)
 
 ### Exceptions
 
-- [BillExpirationException](./client.md#billexpirationexception)
-- [ClientError](./client.md#clienterror)
-- [DataUnavailableException](./client.md#dataunavailableexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [RequestChangedException](./client.md#requestchangedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [UnknownMonitorException](./client.md#unknownmonitorexception)
-- [UnknownSubscriptionException](./client.md#unknownsubscriptionexception)
-- [UnresolvableUsageUnitException](./client.md#unresolvableusageunitexception)
+CostExplorerClient [exceptions](./client.md#exceptions)
+
+- BillExpirationException
+- ClientError
+- DataUnavailableException
+- InvalidNextTokenException
+- LimitExceededException
+- RequestChangedException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- UnknownMonitorException
+- UnknownSubscriptionException
+- UnresolvableUsageUnitException
 
 ## Literals
 
@@ -86,37 +86,37 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ce.literals import AccountScope, ...
+from mypy_boto3_ce.literals import AccountScopeType, ...
 ```
 
-- [AccountScope](./literals.md#accountscope)
-- [AnomalyFeedbackType](./literals.md#anomalyfeedbacktype)
-- [AnomalySubscriptionFrequency](./literals.md#anomalysubscriptionfrequency)
-- [Context](./literals.md#context)
-- [CostCategoryInheritedValueDimensionName](./literals.md#costcategoryinheritedvaluedimensionname)
-- [CostCategoryRuleType](./literals.md#costcategoryruletype)
-- [CostCategoryRuleVersion](./literals.md#costcategoryruleversion)
-- [CostCategoryStatus](./literals.md#costcategorystatus)
-- [CostCategoryStatusComponent](./literals.md#costcategorystatuscomponent)
-- [Dimension](./literals.md#dimension)
-- [Granularity](./literals.md#granularity)
-- [GroupDefinitionType](./literals.md#groupdefinitiontype)
-- [LookbackPeriodInDays](./literals.md#lookbackperiodindays)
-- [MatchOption](./literals.md#matchoption)
-- [Metric](./literals.md#metric)
-- [MonitorDimension](./literals.md#monitordimension)
-- [MonitorType](./literals.md#monitortype)
-- [NumericOperator](./literals.md#numericoperator)
-- [OfferingClass](./literals.md#offeringclass)
-- [PaymentOption](./literals.md#paymentoption)
-- [RecommendationTarget](./literals.md#recommendationtarget)
-- [RightsizingType](./literals.md#rightsizingtype)
-- [SavingsPlansDataType](./literals.md#savingsplansdatatype)
-- [SortOrder](./literals.md#sortorder)
-- [SubscriberStatus](./literals.md#subscriberstatus)
-- [SubscriberType](./literals.md#subscribertype)
-- [SupportedSavingsPlansType](./literals.md#supportedsavingsplanstype)
-- [TermInYears](./literals.md#terminyears)
+- [AccountScopeType](./literals.md#accountscopetype)
+- [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
+- [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
+- [ContextType](./literals.md#contexttype)
+- [CostCategoryInheritedValueDimensionNameType](./literals.md#costcategoryinheritedvaluedimensionnametype)
+- [CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype)
+- [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype)
+- [CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype)
+- [CostCategoryStatusType](./literals.md#costcategorystatustype)
+- [DimensionType](./literals.md#dimensiontype)
+- [GranularityType](./literals.md#granularitytype)
+- [GroupDefinitionTypeType](./literals.md#groupdefinitiontypetype)
+- [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
+- [MatchOptionType](./literals.md#matchoptiontype)
+- [MetricType](./literals.md#metrictype)
+- [MonitorDimensionType](./literals.md#monitordimensiontype)
+- [MonitorTypeType](./literals.md#monitortypetype)
+- [NumericOperatorType](./literals.md#numericoperatortype)
+- [OfferingClassType](./literals.md#offeringclasstype)
+- [PaymentOptionType](./literals.md#paymentoptiontype)
+- [RecommendationTargetType](./literals.md#recommendationtargettype)
+- [RightsizingTypeType](./literals.md#rightsizingtypetype)
+- [SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)
+- [SortOrderType](./literals.md#sortordertype)
+- [SubscriberStatusType](./literals.md#subscriberstatustype)
+- [SubscriberTypeType](./literals.md#subscribertypetype)
+- [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
+- [TermInYearsType](./literals.md#terminyearstype)
 
 ## Typed dictionaries
 

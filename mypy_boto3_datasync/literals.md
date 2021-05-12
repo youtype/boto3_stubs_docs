@@ -3,46 +3,46 @@
 > [Index](..) > [DataSync](.) > Literals
 
 Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datasync.html#DataSync)
 type annotations stubs module
 [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [Literals for boto3 DataSync module](#literals-for-boto3-datasync-module)
-  - [AgentStatus](#agentstatus)
-  - [Atime](#atime)
-  - [EndpointType](#endpointtype)
-  - [FilterType](#filtertype)
-  - [Gid](#gid)
+  - [AgentStatusType](#agentstatustype)
+  - [AtimeType](#atimetype)
+  - [EndpointTypeType](#endpointtypetype)
+  - [FilterTypeType](#filtertypetype)
+  - [GidType](#gidtype)
   - [ListAgentsPaginatorName](#listagentspaginatorname)
   - [ListLocationsPaginatorName](#listlocationspaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [ListTaskExecutionsPaginatorName](#listtaskexecutionspaginatorname)
   - [ListTasksPaginatorName](#listtaskspaginatorname)
-  - [LocationFilterName](#locationfiltername)
-  - [LogLevel](#loglevel)
-  - [Mtime](#mtime)
-  - [NfsVersion](#nfsversion)
-  - [ObjectStorageServerProtocol](#objectstorageserverprotocol)
-  - [Operator](#operator)
-  - [OverwriteMode](#overwritemode)
-  - [PhaseStatus](#phasestatus)
-  - [PosixPermissions](#posixpermissions)
-  - [PreserveDeletedFiles](#preservedeletedfiles)
-  - [PreserveDevices](#preservedevices)
-  - [S3StorageClass](#s3storageclass)
-  - [SmbVersion](#smbversion)
-  - [TaskExecutionStatus](#taskexecutionstatus)
-  - [TaskFilterName](#taskfiltername)
-  - [TaskQueueing](#taskqueueing)
-  - [TaskStatus](#taskstatus)
-  - [TransferMode](#transfermode)
-  - [Uid](#uid)
-  - [VerifyMode](#verifymode)
+  - [LocationFilterNameType](#locationfilternametype)
+  - [LogLevelType](#logleveltype)
+  - [MtimeType](#mtimetype)
+  - [NfsVersionType](#nfsversiontype)
+  - [ObjectStorageServerProtocolType](#objectstorageserverprotocoltype)
+  - [OperatorType](#operatortype)
+  - [OverwriteModeType](#overwritemodetype)
+  - [PhaseStatusType](#phasestatustype)
+  - [PosixPermissionsType](#posixpermissionstype)
+  - [PreserveDeletedFilesType](#preservedeletedfilestype)
+  - [PreserveDevicesType](#preservedevicestype)
+  - [S3StorageClassType](#s3storageclasstype)
+  - [SmbVersionType](#smbversiontype)
+  - [TaskExecutionStatusType](#taskexecutionstatustype)
+  - [TaskFilterNameType](#taskfilternametype)
+  - [TaskQueueingType](#taskqueueingtype)
+  - [TaskStatusType](#taskstatustype)
+  - [TransferModeType](#transfermodetype)
+  - [UidType](#uidtype)
+  - [VerifyModeType](#verifymodetype)
 
-## AgentStatus
+## AgentStatusType
 
 ```python
-from mypy_boto3_datasync.literals import AgentStatus
+from mypy_boto3_datasync.literals import AgentStatusType
 ```
 
 Values:
@@ -50,10 +50,10 @@ Values:
 - `OFFLINE`
 - `ONLINE`
 
-## Atime
+## AtimeType
 
 ```python
-from mypy_boto3_datasync.literals import Atime
+from mypy_boto3_datasync.literals import AtimeType
 ```
 
 Values:
@@ -61,10 +61,10 @@ Values:
 - `BEST_EFFORT`
 - `NONE`
 
-## EndpointType
+## EndpointTypeType
 
 ```python
-from mypy_boto3_datasync.literals import EndpointType
+from mypy_boto3_datasync.literals import EndpointTypeType
 ```
 
 Values:
@@ -73,20 +73,20 @@ Values:
 - `PRIVATE_LINK`
 - `PUBLIC`
 
-## FilterType
+## FilterTypeType
 
 ```python
-from mypy_boto3_datasync.literals import FilterType
+from mypy_boto3_datasync.literals import FilterTypeType
 ```
 
 Values:
 
 - `SIMPLE_PATTERN`
 
-## Gid
+## GidType
 
 ```python
-from mypy_boto3_datasync.literals import Gid
+from mypy_boto3_datasync.literals import GidType
 ```
 
 Values:
@@ -146,10 +146,10 @@ Values:
 
 - `list_tasks`
 
-## LocationFilterName
+## LocationFilterNameType
 
 ```python
-from mypy_boto3_datasync.literals import LocationFilterName
+from mypy_boto3_datasync.literals import LocationFilterNameType
 ```
 
 Values:
@@ -158,10 +158,10 @@ Values:
 - `LocationType`
 - `LocationUri`
 
-## LogLevel
+## LogLevelType
 
 ```python
-from mypy_boto3_datasync.literals import LogLevel
+from mypy_boto3_datasync.literals import LogLevelType
 ```
 
 Values:
@@ -170,10 +170,10 @@ Values:
 - `OFF`
 - `TRANSFER`
 
-## Mtime
+## MtimeType
 
 ```python
-from mypy_boto3_datasync.literals import Mtime
+from mypy_boto3_datasync.literals import MtimeType
 ```
 
 Values:
@@ -181,10 +181,10 @@ Values:
 - `NONE`
 - `PRESERVE`
 
-## NfsVersion
+## NfsVersionType
 
 ```python
-from mypy_boto3_datasync.literals import NfsVersion
+from mypy_boto3_datasync.literals import NfsVersionType
 ```
 
 Values:
@@ -194,10 +194,10 @@ Values:
 - `NFS4_0`
 - `NFS4_1`
 
-## ObjectStorageServerProtocol
+## ObjectStorageServerProtocolType
 
 ```python
-from mypy_boto3_datasync.literals import ObjectStorageServerProtocol
+from mypy_boto3_datasync.literals import ObjectStorageServerProtocolType
 ```
 
 Values:
@@ -205,10 +205,10 @@ Values:
 - `HTTP`
 - `HTTPS`
 
-## Operator
+## OperatorType
 
 ```python
-from mypy_boto3_datasync.literals import Operator
+from mypy_boto3_datasync.literals import OperatorType
 ```
 
 Values:
@@ -224,10 +224,10 @@ Values:
 - `NotContains`
 - `NotEquals`
 
-## OverwriteMode
+## OverwriteModeType
 
 ```python
-from mypy_boto3_datasync.literals import OverwriteMode
+from mypy_boto3_datasync.literals import OverwriteModeType
 ```
 
 Values:
@@ -235,10 +235,10 @@ Values:
 - `ALWAYS`
 - `NEVER`
 
-## PhaseStatus
+## PhaseStatusType
 
 ```python
-from mypy_boto3_datasync.literals import PhaseStatus
+from mypy_boto3_datasync.literals import PhaseStatusType
 ```
 
 Values:
@@ -247,10 +247,10 @@ Values:
 - `PENDING`
 - `SUCCESS`
 
-## PosixPermissions
+## PosixPermissionsType
 
 ```python
-from mypy_boto3_datasync.literals import PosixPermissions
+from mypy_boto3_datasync.literals import PosixPermissionsType
 ```
 
 Values:
@@ -258,10 +258,10 @@ Values:
 - `NONE`
 - `PRESERVE`
 
-## PreserveDeletedFiles
+## PreserveDeletedFilesType
 
 ```python
-from mypy_boto3_datasync.literals import PreserveDeletedFiles
+from mypy_boto3_datasync.literals import PreserveDeletedFilesType
 ```
 
 Values:
@@ -269,10 +269,10 @@ Values:
 - `PRESERVE`
 - `REMOVE`
 
-## PreserveDevices
+## PreserveDevicesType
 
 ```python
-from mypy_boto3_datasync.literals import PreserveDevices
+from mypy_boto3_datasync.literals import PreserveDevicesType
 ```
 
 Values:
@@ -280,10 +280,10 @@ Values:
 - `NONE`
 - `PRESERVE`
 
-## S3StorageClass
+## S3StorageClassType
 
 ```python
-from mypy_boto3_datasync.literals import S3StorageClass
+from mypy_boto3_datasync.literals import S3StorageClassType
 ```
 
 Values:
@@ -296,10 +296,10 @@ Values:
 - `STANDARD`
 - `STANDARD_IA`
 
-## SmbVersion
+## SmbVersionType
 
 ```python
-from mypy_boto3_datasync.literals import SmbVersion
+from mypy_boto3_datasync.literals import SmbVersionType
 ```
 
 Values:
@@ -308,10 +308,10 @@ Values:
 - `SMB2`
 - `SMB3`
 
-## TaskExecutionStatus
+## TaskExecutionStatusType
 
 ```python
-from mypy_boto3_datasync.literals import TaskExecutionStatus
+from mypy_boto3_datasync.literals import TaskExecutionStatusType
 ```
 
 Values:
@@ -324,10 +324,10 @@ Values:
 - `TRANSFERRING`
 - `VERIFYING`
 
-## TaskFilterName
+## TaskFilterNameType
 
 ```python
-from mypy_boto3_datasync.literals import TaskFilterName
+from mypy_boto3_datasync.literals import TaskFilterNameType
 ```
 
 Values:
@@ -335,10 +335,10 @@ Values:
 - `CreationTime`
 - `LocationId`
 
-## TaskQueueing
+## TaskQueueingType
 
 ```python
-from mypy_boto3_datasync.literals import TaskQueueing
+from mypy_boto3_datasync.literals import TaskQueueingType
 ```
 
 Values:
@@ -346,10 +346,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## TaskStatus
+## TaskStatusType
 
 ```python
-from mypy_boto3_datasync.literals import TaskStatus
+from mypy_boto3_datasync.literals import TaskStatusType
 ```
 
 Values:
@@ -360,10 +360,10 @@ Values:
 - `RUNNING`
 - `UNAVAILABLE`
 
-## TransferMode
+## TransferModeType
 
 ```python
-from mypy_boto3_datasync.literals import TransferMode
+from mypy_boto3_datasync.literals import TransferModeType
 ```
 
 Values:
@@ -371,10 +371,10 @@ Values:
 - `ALL`
 - `CHANGED`
 
-## Uid
+## UidType
 
 ```python
-from mypy_boto3_datasync.literals import Uid
+from mypy_boto3_datasync.literals import UidType
 ```
 
 Values:
@@ -384,10 +384,10 @@ Values:
 - `NAME`
 - `NONE`
 
-## VerifyMode
+## VerifyModeType
 
 ```python
-from mypy_boto3_datasync.literals import VerifyMode
+from mypy_boto3_datasync.literals import VerifyModeType
 ```
 
 Values:

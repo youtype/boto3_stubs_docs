@@ -3,7 +3,7 @@
 > [Index](..) > [Glacier](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
@@ -75,7 +75,7 @@ from mypy_boto3_glacier.type_defs import CSVInputTypeDef
 
 Optional fields:
 
-- `FileHeaderInfo`: [FileHeaderInfo](./literals.md#fileheaderinfo)
+- `FileHeaderInfo`: [FileHeaderInfoType](./literals.md#fileheaderinfotype)
 - `Comments`: `str`
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
@@ -90,7 +90,7 @@ from mypy_boto3_glacier.type_defs import CSVOutputTypeDef
 
 Required fields:
 
-- `QuoteFields`: [QuoteFields](./literals.md#quotefields)
+- `QuoteFields`: [QuoteFieldsType](./literals.md#quotefieldstype)
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
@@ -157,7 +157,7 @@ from mypy_boto3_glacier.type_defs import EncryptionTypeDef
 
 Optional fields:
 
-- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype)
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `KMSKeyId`: `str`
 - `KMSContext`: `str`
 
@@ -242,12 +242,12 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobDescription`: `str`
-- `Action`: [ActionCode](./literals.md#actioncode)
+- `Action`: [ActionCodeType](./literals.md#actioncodetype)
 - `ArchiveId`: `str`
 - `VaultARN`: `str`
 - `CreationDate`: `str`
 - `Completed`: `bool`
-- `StatusCode`: [StatusCode](./literals.md#statuscode)
+- `StatusCode`: [StatusCodeType](./literals.md#statuscodetype)
 - `StatusMessage`: `str`
 - `ArchiveSizeInBytes`: `int`
 - `InventorySizeInBytes`: `int`
@@ -262,7 +262,8 @@ Optional fields:
 - `JobOutputPath`: `str`
 - `SelectParameters`:
   [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `OutputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
 ## GrantTypeDef
 
@@ -273,7 +274,7 @@ from mypy_boto3_glacier.type_defs import GrantTypeDef
 Optional fields:
 
 - `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
-- `Permission`: [Permission](./literals.md#permission)
+- `Permission`: [PermissionType](./literals.md#permissiontype)
 
 ## GranteeTypeDef
 
@@ -387,7 +388,8 @@ Optional fields:
   [InventoryRetrievalJobInputTypeDef](./type_defs.md#inventoryretrievaljobinputtypedef)
 - `SelectParameters`:
   [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `OutputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
 ## ListJobsOutputTypeDef
 
@@ -567,11 +569,11 @@ Optional fields:
 - `BucketName`: `str`
 - `Prefix`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `CannedACL`: [CannedACL](./literals.md#cannedacl)
+- `CannedACL`: [CannedACLType](./literals.md#cannedacltype)
 - `AccessControlList`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `Tagging`: `Dict`\[`str`, `str`\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
-- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 
 ## SelectParametersTypeDef
 
@@ -584,7 +586,7 @@ Optional fields:
 - `InputSerialization`:
   [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
 - `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionType](./literals.md#expressiontype))
+  [ExpressionTypeType](./literals.md#expressiontypetype))
 - `Expression`: `str`
 - `OutputSerialization`:
   [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)

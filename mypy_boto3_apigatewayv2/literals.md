@@ -3,18 +3,18 @@
 > [Index](..) > [ApiGatewayV2](.) > Literals
 
 Auto-generated documentation for
-[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
+[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
 [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 - [Literals for boto3 ApiGatewayV2 module](#literals-for-boto3-apigatewayv2-module)
-  - [AuthorizationType](#authorizationtype)
-  - [AuthorizerType](#authorizertype)
-  - [ConnectionType](#connectiontype)
-  - [ContentHandlingStrategy](#contenthandlingstrategy)
-  - [DeploymentStatus](#deploymentstatus)
-  - [DomainNameStatus](#domainnamestatus)
-  - [EndpointType](#endpointtype)
+  - [AuthorizationTypeType](#authorizationtypetype)
+  - [AuthorizerTypeType](#authorizertypetype)
+  - [ConnectionTypeType](#connectiontypetype)
+  - [ContentHandlingStrategyType](#contenthandlingstrategytype)
+  - [DeploymentStatusType](#deploymentstatustype)
+  - [DomainNameStatusType](#domainnamestatustype)
+  - [EndpointTypeType](#endpointtypetype)
   - [GetApisPaginatorName](#getapispaginatorname)
   - [GetAuthorizersPaginatorName](#getauthorizerspaginatorname)
   - [GetDeploymentsPaginatorName](#getdeploymentspaginatorname)
@@ -25,20 +25,20 @@ type annotations stubs module
   - [GetRouteResponsesPaginatorName](#getrouteresponsespaginatorname)
   - [GetRoutesPaginatorName](#getroutespaginatorname)
   - [GetStagesPaginatorName](#getstagespaginatorname)
-  - [IntegrationType](#integrationtype)
+  - [IntegrationTypeType](#integrationtypetype)
   - [JSONYAMLType](#jsonyamltype)
-  - [LoggingLevel](#logginglevel)
+  - [LoggingLevelType](#loggingleveltype)
   - [OAS30Type](#oas30type)
-  - [PassthroughBehavior](#passthroughbehavior)
-  - [ProtocolType](#protocoltype)
-  - [SecurityPolicy](#securitypolicy)
-  - [VpcLinkStatus](#vpclinkstatus)
-  - [VpcLinkVersion](#vpclinkversion)
+  - [PassthroughBehaviorType](#passthroughbehaviortype)
+  - [ProtocolTypeType](#protocoltypetype)
+  - [SecurityPolicyType](#securitypolicytype)
+  - [VpcLinkStatusType](#vpclinkstatustype)
+  - [VpcLinkVersionType](#vpclinkversiontype)
 
-## AuthorizationType
+## AuthorizationTypeType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import AuthorizationType
+from mypy_boto3_apigatewayv2.literals import AuthorizationTypeType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `JWT`
 - `NONE`
 
-## AuthorizerType
+## AuthorizerTypeType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import AuthorizerType
+from mypy_boto3_apigatewayv2.literals import AuthorizerTypeType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `JWT`
 - `REQUEST`
 
-## ConnectionType
+## ConnectionTypeType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import ConnectionType
+from mypy_boto3_apigatewayv2.literals import ConnectionTypeType
 ```
 
 Values:
@@ -70,10 +70,10 @@ Values:
 - `INTERNET`
 - `VPC_LINK`
 
-## ContentHandlingStrategy
+## ContentHandlingStrategyType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import ContentHandlingStrategy
+from mypy_boto3_apigatewayv2.literals import ContentHandlingStrategyType
 ```
 
 Values:
@@ -81,10 +81,10 @@ Values:
 - `CONVERT_TO_BINARY`
 - `CONVERT_TO_TEXT`
 
-## DeploymentStatus
+## DeploymentStatusType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import DeploymentStatus
+from mypy_boto3_apigatewayv2.literals import DeploymentStatusType
 ```
 
 Values:
@@ -93,10 +93,10 @@ Values:
 - `FAILED`
 - `PENDING`
 
-## DomainNameStatus
+## DomainNameStatusType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import DomainNameStatus
+from mypy_boto3_apigatewayv2.literals import DomainNameStatusType
 ```
 
 Values:
@@ -104,10 +104,10 @@ Values:
 - `AVAILABLE`
 - `UPDATING`
 
-## EndpointType
+## EndpointTypeType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import EndpointType
+from mypy_boto3_apigatewayv2.literals import EndpointTypeType
 ```
 
 Values:
@@ -215,10 +215,10 @@ Values:
 
 - `get_stages`
 
-## IntegrationType
+## IntegrationTypeType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import IntegrationType
+from mypy_boto3_apigatewayv2.literals import IntegrationTypeType
 ```
 
 Values:
@@ -240,10 +240,10 @@ Values:
 - `JSON`
 - `YAML`
 
-## LoggingLevel
+## LoggingLevelType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import LoggingLevel
+from mypy_boto3_apigatewayv2.literals import LoggingLevelType
 ```
 
 Values:
@@ -262,10 +262,10 @@ Values:
 
 - `OAS30`
 
-## PassthroughBehavior
+## PassthroughBehaviorType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import PassthroughBehavior
+from mypy_boto3_apigatewayv2.literals import PassthroughBehaviorType
 ```
 
 Values:
@@ -274,10 +274,10 @@ Values:
 - `WHEN_NO_MATCH`
 - `WHEN_NO_TEMPLATES`
 
-## ProtocolType
+## ProtocolTypeType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import ProtocolType
+from mypy_boto3_apigatewayv2.literals import ProtocolTypeType
 ```
 
 Values:
@@ -285,10 +285,10 @@ Values:
 - `HTTP`
 - `WEBSOCKET`
 
-## SecurityPolicy
+## SecurityPolicyType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import SecurityPolicy
+from mypy_boto3_apigatewayv2.literals import SecurityPolicyType
 ```
 
 Values:
@@ -296,10 +296,10 @@ Values:
 - `TLS_1_0`
 - `TLS_1_2`
 
-## VpcLinkStatus
+## VpcLinkStatusType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import VpcLinkStatus
+from mypy_boto3_apigatewayv2.literals import VpcLinkStatusType
 ```
 
 Values:
@@ -310,10 +310,10 @@ Values:
 - `INACTIVE`
 - `PENDING`
 
-## VpcLinkVersion
+## VpcLinkVersionType
 
 ```python
-from mypy_boto3_apigatewayv2.literals import VpcLinkVersion
+from mypy_boto3_apigatewayv2.literals import VpcLinkVersionType
 ```
 
 Values:

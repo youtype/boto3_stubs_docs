@@ -3,12 +3,12 @@
 > [Index](..) > [DocDB](.) > Literals
 
 Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/docdb.html#DocDB)
 type annotations stubs module
 [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 - [Literals for boto3 DocDB module](#literals-for-boto3-docdb-module)
-  - [ApplyMethod](#applymethod)
+  - [ApplyMethodType](#applymethodtype)
   - [DBInstanceAvailableWaiterName](#dbinstanceavailablewaitername)
   - [DBInstanceDeletedWaiterName](#dbinstancedeletedwaitername)
   - [DescribeCertificatesPaginatorName](#describecertificatespaginatorname)
@@ -23,12 +23,12 @@ type annotations stubs module
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
   - [DescribeOrderableDBInstanceOptionsPaginatorName](#describeorderabledbinstanceoptionspaginatorname)
   - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
-  - [SourceType](#sourcetype)
+  - [SourceTypeType](#sourcetypetype)
 
-## ApplyMethod
+## ApplyMethodType
 
 ```python
-from mypy_boto3_docdb.literals import ApplyMethod
+from mypy_boto3_docdb.literals import ApplyMethodType
 ```
 
 Values:
@@ -176,10 +176,10 @@ Values:
 
 - `describe_pending_maintenance_actions`
 
-## SourceType
+## SourceTypeType
 
 ```python
-from mypy_boto3_docdb.literals import SourceType
+from mypy_boto3_docdb.literals import SourceTypeType
 ```
 
 Values:

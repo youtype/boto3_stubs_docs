@@ -3,7 +3,7 @@
 > [Index](..) > [CodePipeline](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
 [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
@@ -124,7 +124,7 @@ from mypy_boto3_codepipeline.type_defs import AcknowledgeJobOutputTypeDef
 
 Required fields:
 
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -136,7 +136,7 @@ from mypy_boto3_codepipeline.type_defs import AcknowledgeThirdPartyJobOutputType
 
 Required fields:
 
-- `status`: [JobStatus](./literals.md#jobstatus)
+- `status`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -158,7 +158,7 @@ Optional fields:
 - `queryable`: `bool`
 - `description`: `str`
 - `type`:
-  [ActionConfigurationPropertyType](./literals.md#actionconfigurationpropertytype)
+  [ActionConfigurationPropertyTypeType](./literals.md#actionconfigurationpropertytypetype)
 
 ## ActionConfigurationTypeDef
 
@@ -219,7 +219,8 @@ Optional fields:
 - `actionName`: `str`
 - `startTime`: `datetime`
 - `lastUpdateTime`: `datetime`
-- `status`: [ActionExecutionStatus](./literals.md#actionexecutionstatus)
+- `status`:
+  [ActionExecutionStatusType](./literals.md#actionexecutionstatustype)
 - `input`:
   [ActionExecutionInputTypeDef](./type_defs.md#actionexecutioninputtypedef)
 - `output`:
@@ -289,7 +290,8 @@ from mypy_boto3_codepipeline.type_defs import ActionExecutionTypeDef
 Optional fields:
 
 - `actionExecutionId`: `str`
-- `status`: [ActionExecutionStatus](./literals.md#actionexecutionstatus)
+- `status`:
+  [ActionExecutionStatusType](./literals.md#actionexecutionstatustype)
 - `summary`: `str`
 - `lastStatusChange`: `datetime`
 - `token`: `str`
@@ -348,7 +350,8 @@ Required fields:
 
 - `executor`:
   [ActionTypeExecutorTypeDef](./type_defs.md#actiontypeexecutortypedef)
-- `id`: [ActionTypeIdentifierTypeDef](./type_defs.md#actiontypeidentifiertypedef)
+- `id`:
+  [ActionTypeIdentifierTypeDef](./type_defs.md#actiontypeidentifiertypedef)
 - `inputArtifactDetails`:
   [ActionTypeArtifactDetailsTypeDef](./type_defs.md#actiontypeartifactdetailstypedef)
 - `outputArtifactDetails`:
@@ -373,7 +376,7 @@ Required fields:
 
 - `configuration`:
   [ExecutorConfigurationTypeDef](./type_defs.md#executorconfigurationtypedef)
-- `type`: [ExecutorType](./literals.md#executortype)
+- `type`: [ExecutorTypeType](./literals.md#executortypetype)
 
 Optional fields:
 
@@ -388,8 +391,8 @@ from mypy_boto3_codepipeline.type_defs import ActionTypeIdTypeDef
 
 Required fields:
 
-- `category`: [ActionCategory](./literals.md#actioncategory)
-- `owner`: [ActionOwner](./literals.md#actionowner)
+- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
+- `owner`: [ActionOwnerType](./literals.md#actionownertype)
 - `provider`: `str`
 - `version`: `str`
 
@@ -401,7 +404,7 @@ from mypy_boto3_codepipeline.type_defs import ActionTypeIdentifierTypeDef
 
 Required fields:
 
-- `category`: [ActionCategory](./literals.md#actioncategory)
+- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
 - `owner`: `str`
 - `provider`: `str`
 - `version`: `str`
@@ -490,7 +493,7 @@ from mypy_boto3_codepipeline.type_defs import ApprovalResultTypeDef
 Required fields:
 
 - `summary`: `str`
-- `status`: [ApprovalStatus](./literals.md#approvalstatus)
+- `status`: [ApprovalStatusType](./literals.md#approvalstatustype)
 
 ## ArtifactDetailTypeDef
 
@@ -523,7 +526,7 @@ from mypy_boto3_codepipeline.type_defs import ArtifactLocationTypeDef
 Optional fields:
 
 - `type`: `Literal['S3']` (see
-  [ArtifactLocationType](./literals.md#artifactlocationtype))
+  [ArtifactLocationTypeType](./literals.md#artifactlocationtypetype))
 - `s3Location`:
   [S3ArtifactLocationTypeDef](./type_defs.md#s3artifactlocationtypedef)
 
@@ -551,7 +554,7 @@ from mypy_boto3_codepipeline.type_defs import ArtifactStoreTypeDef
 Required fields:
 
 - `type`: `Literal['S3']` (see
-  [ArtifactStoreType](./literals.md#artifactstoretype))
+  [ArtifactStoreTypeType](./literals.md#artifactstoretypetype))
 - `location`: `str`
 
 Optional fields:
@@ -579,7 +582,8 @@ from mypy_boto3_codepipeline.type_defs import BlockerDeclarationTypeDef
 Required fields:
 
 - `name`: `str`
-- `type`: `Literal['Schedule']` (see [BlockerType](./literals.md#blockertype))
+- `type`: `Literal['Schedule']` (see
+  [BlockerTypeType](./literals.md#blockertypetype))
 
 ## CreateCustomActionTypeOutputTypeDef
 
@@ -634,7 +638,7 @@ Required fields:
 
 - `id`: `str`
 - `type`: `Literal['KMS']` (see
-  [EncryptionKeyType](./literals.md#encryptionkeytype))
+  [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype))
 
 ## ErrorDetailsTypeDef
 
@@ -667,7 +671,7 @@ from mypy_boto3_codepipeline.type_defs import ExecutionTriggerTypeDef
 
 Optional fields:
 
-- `triggerType`: [TriggerType](./literals.md#triggertype)
+- `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
 - `triggerDetail`: `str`
 
 ## ExecutorConfigurationTypeDef
@@ -691,7 +695,7 @@ from mypy_boto3_codepipeline.type_defs import FailureDetailsTypeDef
 
 Required fields:
 
-- `type`: [FailureType](./literals.md#failuretype)
+- `type`: [FailureTypeType](./literals.md#failuretypetype)
 - `message`: `str`
 
 Optional fields:
@@ -760,7 +764,8 @@ Required fields:
 
 - `pipelineName`: `str`
 - `pipelineVersion`: `int`
-- `stageStates`: `List`\[[StageStateTypeDef](./type_defs.md#stagestatetypedef)\]
+- `stageStates`:
+  `List`\[[StageStateTypeDef](./type_defs.md#stagestatetypedef)\]
 - `created`: `datetime`
 - `updated`: `datetime`
 - `ResponseMetadata`:
@@ -803,7 +808,8 @@ Optional fields:
 - `pipelineContext`:
   [PipelineContextTypeDef](./type_defs.md#pipelinecontexttypedef)
 - `inputArtifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `outputArtifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
+- `outputArtifacts`:
+  `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `artifactCredentials`:
   [AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef)
 - `continuationToken`: `str`
@@ -877,7 +883,8 @@ from mypy_boto3_codepipeline.type_defs import ListActionTypesOutputTypeDef
 
 Required fields:
 
-- `actionTypes`: `List`\[[ActionTypeTypeDef](./type_defs.md#actiontypetypedef)\]
+- `actionTypes`:
+  `List`\[[ActionTypeTypeDef](./type_defs.md#actiontypetypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1022,7 +1029,8 @@ from mypy_boto3_codepipeline.type_defs import PipelineExecutionSummaryTypeDef
 Optional fields:
 
 - `pipelineExecutionId`: `str`
-- `status`: [PipelineExecutionStatus](./literals.md#pipelineexecutionstatus)
+- `status`:
+  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `startTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `sourceRevisions`:
@@ -1042,7 +1050,8 @@ Optional fields:
 - `pipelineName`: `str`
 - `pipelineVersion`: `int`
 - `pipelineExecutionId`: `str`
-- `status`: [PipelineExecutionStatus](./literals.md#pipelineexecutionstatus)
+- `status`:
+  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `statusSummary`: `str`
 - `artifactRevisions`:
   `List`\[[ArtifactRevisionTypeDef](./type_defs.md#artifactrevisiontypedef)\]
@@ -1233,7 +1242,7 @@ from mypy_boto3_codepipeline.type_defs import StageExecutionTypeDef
 Required fields:
 
 - `pipelineExecutionId`: `str`
-- `status`: [StageExecutionStatus](./literals.md#stageexecutionstatus)
+- `status`: [StageExecutionStatusType](./literals.md#stageexecutionstatustype)
 
 ## StageStateTypeDef
 
@@ -1312,7 +1321,8 @@ Optional fields:
 - `pipelineContext`:
   [PipelineContextTypeDef](./type_defs.md#pipelinecontexttypedef)
 - `inputArtifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `outputArtifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
+- `outputArtifacts`:
+  `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `artifactCredentials`:
   [AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef)
 - `continuationToken`: `str`
@@ -1392,7 +1402,7 @@ Required fields:
 - `filters`:
   `List`\[[WebhookFilterRuleTypeDef](./type_defs.md#webhookfilterruletypedef)\]
 - `authentication`:
-  [WebhookAuthenticationType](./literals.md#webhookauthenticationtype)
+  [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
 - `authenticationConfiguration`:
   [WebhookAuthConfigurationTypeDef](./type_defs.md#webhookauthconfigurationtypedef)
 

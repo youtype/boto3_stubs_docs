@@ -3,7 +3,7 @@
 > [Index](..) > [FraudDetector](.) > Typed dictionaries
 
 Auto-generated documentation for
-[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
 [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
@@ -123,7 +123,7 @@ from mypy_boto3_frauddetector.type_defs import BatchPredictionTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `status`: [AsyncJobStatus](./literals.md#asyncjobstatus)
+- `status`: [AsyncJobStatusType](./literals.md#asyncjobstatustype)
 - `failureReason`: `str`
 - `startTime`: `str`
 - `completionTime`: `str`
@@ -148,7 +148,8 @@ Optional fields:
 
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
-- `status`: [DetectorVersionStatus](./literals.md#detectorversionstatus)
+- `status`:
+  [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 
 ## CreateModelVersionResultTypeDef
 
@@ -160,7 +161,7 @@ Optional fields:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnum](./literals.md#modeltypeenum))
+  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 - `status`: `str`
 
@@ -237,7 +238,8 @@ from mypy_boto3_frauddetector.type_defs import DetectorVersionSummaryTypeDef
 Optional fields:
 
 - `detectorVersionId`: `str`
-- `status`: [DetectorVersionStatus](./literals.md#detectorversionstatus)
+- `status`:
+  [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 - `description`: `str`
 - `lastUpdatedTime`: `str`
 
@@ -304,13 +306,14 @@ Optional fields:
 
 - `modelEndpoint`: `str`
 - `modelSource`: `Literal['SAGEMAKER']` (see
-  [ModelSource](./literals.md#modelsource))
+  [ModelSourceType](./literals.md#modelsourcetype))
 - `invokeModelEndpointRoleArn`: `str`
 - `inputConfiguration`:
   [ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef)
 - `outputConfiguration`:
   [ModelOutputConfigurationTypeDef](./type_defs.md#modeloutputconfigurationtypedef)
-- `modelEndpointStatus`: [ModelEndpointStatus](./literals.md#modelendpointstatus)
+- `modelEndpointStatus`:
+  [ModelEndpointStatusType](./literals.md#modelendpointstatustype)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
@@ -368,10 +371,12 @@ Optional fields:
 - `modelVersions`:
   `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
 - `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `status`: [DetectorVersionStatus](./literals.md#detectorversionstatus)
+- `status`:
+  [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
-- `ruleExecutionMode`: [RuleExecutionMode](./literals.md#ruleexecutionmode)
+- `ruleExecutionMode`:
+  [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 - `arn`: `str`
 
 ## GetDetectorsResultTypeDef
@@ -393,7 +398,8 @@ from mypy_boto3_frauddetector.type_defs import GetEntityTypesResultTypeDef
 
 Optional fields:
 
-- `entityTypes`: `List`\[[EntityTypeTypeDef](./type_defs.md#entitytypetypedef)\]
+- `entityTypes`:
+  `List`\[[EntityTypeTypeDef](./type_defs.md#entitytypetypedef)\]
 - `nextToken`: `str`
 
 ## GetEventPredictionResultTypeDef
@@ -406,7 +412,8 @@ Optional fields:
 
 - `modelScores`:
   `List`\[[ModelScoresTypeDef](./type_defs.md#modelscorestypedef)\]
-- `ruleResults`: `List`\[[RuleResultTypeDef](./type_defs.md#ruleresulttypedef)\]
+- `ruleResults`:
+  `List`\[[RuleResultTypeDef](./type_defs.md#ruleresulttypedef)\]
 
 ## GetEventTypesResultTypeDef
 
@@ -462,10 +469,10 @@ Optional fields:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnum](./literals.md#modeltypeenum))
+  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 - `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
-  [TrainingDataSourceEnum](./literals.md#trainingdatasourceenum))
+  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype))
 - `trainingDataSchema`:
   [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
 - `externalEventsDetail`:
@@ -503,7 +510,8 @@ from mypy_boto3_frauddetector.type_defs import GetRulesResultTypeDef
 
 Optional fields:
 
-- `ruleDetails`: `List`\[[RuleDetailTypeDef](./type_defs.md#ruledetailtypedef)\]
+- `ruleDetails`:
+  `List`\[[RuleDetailTypeDef](./type_defs.md#ruledetailtypedef)\]
 - `nextToken`: `str`
 
 ## GetVariablesResultTypeDef
@@ -599,7 +607,7 @@ Required fields:
 Optional fields:
 
 - `eventTypeName`: `str`
-- `format`: [ModelInputDataFormat](./literals.md#modelinputdataformat)
+- `format`: [ModelInputDataFormatType](./literals.md#modelinputdataformattype)
 - `jsonInputTemplate`: `str`
 - `csvInputTemplate`: `str`
 
@@ -611,7 +619,8 @@ from mypy_boto3_frauddetector.type_defs import ModelOutputConfigurationTypeDef
 
 Required fields:
 
-- `format`: [ModelOutputDataFormat](./literals.md#modeloutputdataformat)
+- `format`:
+  [ModelOutputDataFormatType](./literals.md#modeloutputdataformattype)
 
 Optional fields:
 
@@ -639,7 +648,7 @@ Optional fields:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnum](./literals.md#modeltypeenum))
+  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `description`: `str`
 - `eventTypeName`: `str`
 - `createdTime`: `str`
@@ -656,16 +665,17 @@ Optional fields:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnum](./literals.md#modeltypeenum))
+  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 - `status`: `str`
 - `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
-  [TrainingDataSourceEnum](./literals.md#trainingdatasourceenum))
+  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype))
 - `trainingDataSchema`:
   [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
-- `trainingResult`: [TrainingResultTypeDef](./type_defs.md#trainingresulttypedef)
+- `trainingResult`:
+  [TrainingResultTypeDef](./type_defs.md#trainingresulttypedef)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
@@ -680,7 +690,7 @@ Required fields:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnum](./literals.md#modeltypeenum))
+  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 
 Optional fields:
@@ -714,7 +724,8 @@ Optional fields:
 - `detectorId`: `str`
 - `ruleVersion`: `str`
 - `expression`: `str`
-- `language`: `Literal['DETECTORPL']` (see [Language](./literals.md#language))
+- `language`: `Literal['DETECTORPL']` (see
+  [LanguageType](./literals.md#languagetype))
 - `outcomes`: `List`\[`str`\]
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
@@ -800,7 +811,7 @@ Optional fields:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnum](./literals.md#modeltypeenum))
+  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 - `status`: `str`
 
@@ -838,8 +849,8 @@ from mypy_boto3_frauddetector.type_defs import VariableTypeDef
 Optional fields:
 
 - `name`: `str`
-- `dataType`: [DataType](./literals.md#datatype)
-- `dataSource`: [DataSource](./literals.md#datasource)
+- `dataType`: [DataTypeType](./literals.md#datatypetype)
+- `dataSource`: [DataSourceType](./literals.md#datasourcetype)
 - `defaultValue`: `str`
 - `description`: `str`
 - `variableType`: `str`

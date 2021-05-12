@@ -3,7 +3,7 @@
 > [Index](..) > MediaStore
 
 Auto-generated documentation for
-[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
 [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
@@ -30,44 +30,44 @@ Can be used directly:
 from mypy_boto3_mediastore.client import MediaStoreClient
 ```
 
-MediaStoreClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_container](./client.md#create-container)
-- [delete_container](./client.md#delete-container)
-- [delete_container_policy](./client.md#delete-container-policy)
-- [delete_cors_policy](./client.md#delete-cors-policy)
-- [delete_lifecycle_policy](./client.md#delete-lifecycle-policy)
-- [delete_metric_policy](./client.md#delete-metric-policy)
-- [describe_container](./client.md#describe-container)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_container_policy](./client.md#get-container-policy)
-- [get_cors_policy](./client.md#get-cors-policy)
-- [get_lifecycle_policy](./client.md#get-lifecycle-policy)
-- [get_metric_policy](./client.md#get-metric-policy)
-- [get_paginator](./client.md#get-paginator)
-- [list_containers](./client.md#list-containers)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_container_policy](./client.md#put-container-policy)
-- [put_cors_policy](./client.md#put-cors-policy)
-- [put_lifecycle_policy](./client.md#put-lifecycle-policy)
-- [put_metric_policy](./client.md#put-metric-policy)
-- [start_access_logging](./client.md#start-access-logging)
-- [stop_access_logging](./client.md#stop-access-logging)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_container](./client.md#create_container)
+- [delete_container](./client.md#delete_container)
+- [delete_container_policy](./client.md#delete_container_policy)
+- [delete_cors_policy](./client.md#delete_cors_policy)
+- [delete_lifecycle_policy](./client.md#delete_lifecycle_policy)
+- [delete_metric_policy](./client.md#delete_metric_policy)
+- [describe_container](./client.md#describe_container)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_container_policy](./client.md#get_container_policy)
+- [get_cors_policy](./client.md#get_cors_policy)
+- [get_lifecycle_policy](./client.md#get_lifecycle_policy)
+- [get_metric_policy](./client.md#get_metric_policy)
+- [get_paginator](./client.md#get_paginator)
+- [list_containers](./client.md#list_containers)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_container_policy](./client.md#put_container_policy)
+- [put_cors_policy](./client.md#put_cors_policy)
+- [put_lifecycle_policy](./client.md#put_lifecycle_policy)
+- [put_metric_policy](./client.md#put_metric_policy)
+- [start_access_logging](./client.md#start_access_logging)
+- [stop_access_logging](./client.md#stop_access_logging)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ContainerInUseException](./client.md#containerinuseexception)
-- [ContainerNotFoundException](./client.md#containernotfoundexception)
-- [CorsPolicyNotFoundException](./client.md#corspolicynotfoundexception)
-- [InternalServerError](./client.md#internalservererror)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [PolicyNotFoundException](./client.md#policynotfoundexception)
+MediaStoreClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ContainerInUseException
+- ContainerNotFoundException
+- CorsPolicyNotFoundException
+- InternalServerError
+- LimitExceededException
+- PolicyNotFoundException
 
 ## Paginators
 
@@ -89,13 +89,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediastore.literals import ContainerLevelMetrics, ...
+from mypy_boto3_mediastore.literals import ContainerLevelMetricsType, ...
 ```
 
-- [ContainerLevelMetrics](./literals.md#containerlevelmetrics)
-- [ContainerStatus](./literals.md#containerstatus)
+- [ContainerLevelMetricsType](./literals.md#containerlevelmetricstype)
+- [ContainerStatusType](./literals.md#containerstatustype)
 - [ListContainersPaginatorName](./literals.md#listcontainerspaginatorname)
-- [MethodName](./literals.md#methodname)
+- [MethodNameType](./literals.md#methodnametype)
 
 ## Typed dictionaries
 

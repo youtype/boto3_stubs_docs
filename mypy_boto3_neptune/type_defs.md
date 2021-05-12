@@ -3,7 +3,7 @@
 > [Index](..) > [Neptune](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+[Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/neptune.html#Neptune)
 type annotations stubs module
 [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
@@ -574,7 +574,8 @@ from mypy_boto3_neptune.type_defs import DBInstanceMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `DBInstances`: `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
+- `DBInstances`:
+  `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
 
 ## DBInstanceStatusInfoTypeDef
 
@@ -835,7 +836,8 @@ from mypy_boto3_neptune.type_defs import DescribeEngineDefaultClusterParametersR
 
 Optional fields:
 
-- `EngineDefaults`: [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 
 ## DescribeEngineDefaultParametersResultTypeDef
 
@@ -845,7 +847,8 @@ from mypy_boto3_neptune.type_defs import DescribeEngineDefaultParametersResultTy
 
 Optional fields:
 
-- `EngineDefaults`: [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 
 ## DescribeValidDBInstanceModificationsResultTypeDef
 
@@ -968,7 +971,7 @@ from mypy_boto3_neptune.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
@@ -1161,7 +1164,7 @@ Optional fields:
 - `AllowedValues`: `str`
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
-- `ApplyMethod`: [ApplyMethod](./literals.md#applymethod)
+- `ApplyMethod`: [ApplyMethodType](./literals.md#applymethodtype)
 
 ## PendingCloudwatchLogsExportsTypeDef
 

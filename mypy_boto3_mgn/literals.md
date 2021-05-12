@@ -3,38 +3,38 @@
 > [Index](..) > [mgn](.) > Literals
 
 Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mgn.html#mgn)
 type annotations stubs module
 [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [Literals for boto3 mgn module](#literals-for-boto3-mgn-module)
-  - [ChangeServerLifeCycleStateSourceServerLifecycleState](#changeserverlifecyclestatesourceserverlifecyclestate)
-  - [DataReplicationErrorString](#datareplicationerrorstring)
-  - [DataReplicationInitiationStepName](#datareplicationinitiationstepname)
-  - [DataReplicationInitiationStepStatus](#datareplicationinitiationstepstatus)
-  - [DataReplicationState](#datareplicationstate)
+  - [ChangeServerLifeCycleStateSourceServerLifecycleStateType](#changeserverlifecyclestatesourceserverlifecyclestatetype)
+  - [DataReplicationErrorStringType](#datareplicationerrorstringtype)
+  - [DataReplicationInitiationStepNameType](#datareplicationinitiationstepnametype)
+  - [DataReplicationInitiationStepStatusType](#datareplicationinitiationstepstatustype)
+  - [DataReplicationStateType](#datareplicationstatetype)
   - [DescribeJobLogItemsPaginatorName](#describejoblogitemspaginatorname)
   - [DescribeJobsPaginatorName](#describejobspaginatorname)
   - [DescribeReplicationConfigurationTemplatesPaginatorName](#describereplicationconfigurationtemplatespaginatorname)
   - [DescribeSourceServersPaginatorName](#describesourceserverspaginatorname)
-  - [FirstBoot](#firstboot)
-  - [InitiatedBy](#initiatedby)
-  - [JobLogEvent](#joblogevent)
-  - [JobStatus](#jobstatus)
-  - [JobType](#jobtype)
-  - [LaunchDisposition](#launchdisposition)
-  - [LaunchStatus](#launchstatus)
-  - [LifeCycleState](#lifecyclestate)
-  - [ReplicationConfigurationDataPlaneRouting](#replicationconfigurationdataplanerouting)
-  - [ReplicationConfigurationDefaultLargeStagingDiskType](#replicationconfigurationdefaultlargestagingdisktype)
-  - [ReplicationConfigurationEbsEncryption](#replicationconfigurationebsencryption)
-  - [ReplicationConfigurationReplicatedDiskStagingDiskType](#replicationconfigurationreplicateddiskstagingdisktype)
-  - [TargetInstanceTypeRightSizingMethod](#targetinstancetyperightsizingmethod)
+  - [FirstBootType](#firstboottype)
+  - [InitiatedByType](#initiatedbytype)
+  - [JobLogEventType](#joblogeventtype)
+  - [JobStatusType](#jobstatustype)
+  - [JobTypeType](#jobtypetype)
+  - [LaunchDispositionType](#launchdispositiontype)
+  - [LaunchStatusType](#launchstatustype)
+  - [LifeCycleStateType](#lifecyclestatetype)
+  - [ReplicationConfigurationDataPlaneRoutingType](#replicationconfigurationdataplaneroutingtype)
+  - [ReplicationConfigurationDefaultLargeStagingDiskTypeType](#replicationconfigurationdefaultlargestagingdisktypetype)
+  - [ReplicationConfigurationEbsEncryptionType](#replicationconfigurationebsencryptiontype)
+  - [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](#replicationconfigurationreplicateddiskstagingdisktypetype)
+  - [TargetInstanceTypeRightSizingMethodType](#targetinstancetyperightsizingmethodtype)
 
-## ChangeServerLifeCycleStateSourceServerLifecycleState
+## ChangeServerLifeCycleStateSourceServerLifecycleStateType
 
 ```python
-from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecycleState
+from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecycleStateType
 ```
 
 Values:
@@ -43,10 +43,10 @@ Values:
 - `READY_FOR_CUTOVER`
 - `READY_FOR_TEST`
 
-## DataReplicationErrorString
+## DataReplicationErrorStringType
 
 ```python
-from mypy_boto3_mgn.literals import DataReplicationErrorString
+from mypy_boto3_mgn.literals import DataReplicationErrorStringType
 ```
 
 Values:
@@ -66,10 +66,10 @@ Values:
 - `SNAPSHOTS_FAILURE`
 - `UNSTABLE_NETWORK`
 
-## DataReplicationInitiationStepName
+## DataReplicationInitiationStepNameType
 
 ```python
-from mypy_boto3_mgn.literals import DataReplicationInitiationStepName
+from mypy_boto3_mgn.literals import DataReplicationInitiationStepNameType
 ```
 
 Values:
@@ -86,10 +86,10 @@ Values:
 - `START_DATA_TRANSFER`
 - `WAIT`
 
-## DataReplicationInitiationStepStatus
+## DataReplicationInitiationStepStatusType
 
 ```python
-from mypy_boto3_mgn.literals import DataReplicationInitiationStepStatus
+from mypy_boto3_mgn.literals import DataReplicationInitiationStepStatusType
 ```
 
 Values:
@@ -100,10 +100,10 @@ Values:
 - `SKIPPED`
 - `SUCCEEDED`
 
-## DataReplicationState
+## DataReplicationStateType
 
 ```python
-from mypy_boto3_mgn.literals import DataReplicationState
+from mypy_boto3_mgn.literals import DataReplicationStateType
 ```
 
 Values:
@@ -159,10 +159,10 @@ Values:
 
 - `describe_source_servers`
 
-## FirstBoot
+## FirstBootType
 
 ```python
-from mypy_boto3_mgn.literals import FirstBoot
+from mypy_boto3_mgn.literals import FirstBootType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 - `UNKNOWN`
 - `WAITING`
 
-## InitiatedBy
+## InitiatedByType
 
 ```python
-from mypy_boto3_mgn.literals import InitiatedBy
+from mypy_boto3_mgn.literals import InitiatedByType
 ```
 
 Values:
@@ -185,10 +185,10 @@ Values:
 - `START_TEST`
 - `TERMINATE`
 
-## JobLogEvent
+## JobLogEventType
 
 ```python
-from mypy_boto3_mgn.literals import JobLogEvent
+from mypy_boto3_mgn.literals import JobLogEventType
 ```
 
 Values:
@@ -210,10 +210,10 @@ Values:
 - `SNAPSHOT_START`
 - `USING_PREVIOUS_SNAPSHOT`
 
-## JobStatus
+## JobStatusType
 
 ```python
-from mypy_boto3_mgn.literals import JobStatus
+from mypy_boto3_mgn.literals import JobStatusType
 ```
 
 Values:
@@ -222,10 +222,10 @@ Values:
 - `PENDING`
 - `STARTED`
 
-## JobType
+## JobTypeType
 
 ```python
-from mypy_boto3_mgn.literals import JobType
+from mypy_boto3_mgn.literals import JobTypeType
 ```
 
 Values:
@@ -233,10 +233,10 @@ Values:
 - `LAUNCH`
 - `TERMINATE`
 
-## LaunchDisposition
+## LaunchDispositionType
 
 ```python
-from mypy_boto3_mgn.literals import LaunchDisposition
+from mypy_boto3_mgn.literals import LaunchDispositionType
 ```
 
 Values:
@@ -244,10 +244,10 @@ Values:
 - `STARTED`
 - `STOPPED`
 
-## LaunchStatus
+## LaunchStatusType
 
 ```python
-from mypy_boto3_mgn.literals import LaunchStatus
+from mypy_boto3_mgn.literals import LaunchStatusType
 ```
 
 Values:
@@ -258,10 +258,10 @@ Values:
 - `PENDING`
 - `TERMINATED`
 
-## LifeCycleState
+## LifeCycleStateType
 
 ```python
-from mypy_boto3_mgn.literals import LifeCycleState
+from mypy_boto3_mgn.literals import LifeCycleStateType
 ```
 
 Values:
@@ -275,10 +275,10 @@ Values:
 - `STOPPED`
 - `TESTING`
 
-## ReplicationConfigurationDataPlaneRouting
+## ReplicationConfigurationDataPlaneRoutingType
 
 ```python
-from mypy_boto3_mgn.literals import ReplicationConfigurationDataPlaneRouting
+from mypy_boto3_mgn.literals import ReplicationConfigurationDataPlaneRoutingType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `PRIVATE_IP`
 - `PUBLIC_IP`
 
-## ReplicationConfigurationDefaultLargeStagingDiskType
+## ReplicationConfigurationDefaultLargeStagingDiskTypeType
 
 ```python
-from mypy_boto3_mgn.literals import ReplicationConfigurationDefaultLargeStagingDiskType
+from mypy_boto3_mgn.literals import ReplicationConfigurationDefaultLargeStagingDiskTypeType
 ```
 
 Values:
@@ -297,10 +297,10 @@ Values:
 - `GP2`
 - `ST1`
 
-## ReplicationConfigurationEbsEncryption
+## ReplicationConfigurationEbsEncryptionType
 
 ```python
-from mypy_boto3_mgn.literals import ReplicationConfigurationEbsEncryption
+from mypy_boto3_mgn.literals import ReplicationConfigurationEbsEncryptionType
 ```
 
 Values:
@@ -309,10 +309,10 @@ Values:
 - `DEFAULT`
 - `NONE`
 
-## ReplicationConfigurationReplicatedDiskStagingDiskType
+## ReplicationConfigurationReplicatedDiskStagingDiskTypeType
 
 ```python
-from mypy_boto3_mgn.literals import ReplicationConfigurationReplicatedDiskStagingDiskType
+from mypy_boto3_mgn.literals import ReplicationConfigurationReplicatedDiskStagingDiskTypeType
 ```
 
 Values:
@@ -324,10 +324,10 @@ Values:
 - `ST1`
 - `STANDARD`
 
-## TargetInstanceTypeRightSizingMethod
+## TargetInstanceTypeRightSizingMethodType
 
 ```python
-from mypy_boto3_mgn.literals import TargetInstanceTypeRightSizingMethod
+from mypy_boto3_mgn.literals import TargetInstanceTypeRightSizingMethodType
 ```
 
 Values:

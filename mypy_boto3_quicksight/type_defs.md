@@ -3,7 +3,7 @@
 > [Index](..) > [QuickSight](.) > Typed dictionaries
 
 Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
 [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
@@ -254,7 +254,7 @@ from mypy_boto3_quicksight.type_defs import AccountSettingsTypeDef
 Optional fields:
 
 - `AccountName`: `str`
-- `Edition`: [Edition](./literals.md#edition)
+- `Edition`: [EditionType](./literals.md#editiontype)
 - `DefaultNamespace`: `str`
 - `NotificationEmail`: `str`
 
@@ -277,7 +277,8 @@ from mypy_boto3_quicksight.type_defs import AdHocFilteringOptionTypeDef
 
 Optional fields:
 
-- `AvailabilityStatus`: [DashboardBehavior](./literals.md#dashboardbehavior)
+- `AvailabilityStatus`:
+  [DashboardBehaviorType](./literals.md#dashboardbehaviortype)
 
 ## AmazonElasticsearchParametersTypeDef
 
@@ -297,7 +298,7 @@ from mypy_boto3_quicksight.type_defs import AnalysisErrorTypeDef
 
 Optional fields:
 
-- `Type`: [AnalysisErrorType](./literals.md#analysiserrortype)
+- `Type`: [AnalysisErrorTypeType](./literals.md#analysiserrortypetype)
 - `Message`: `str`
 
 ## AnalysisSearchFilterTypeDef
@@ -309,9 +310,9 @@ from mypy_boto3_quicksight.type_defs import AnalysisSearchFilterTypeDef
 Optional fields:
 
 - `Operator`: `Literal['StringEquals']` (see
-  [FilterOperator](./literals.md#filteroperator))
+  [FilterOperatorType](./literals.md#filteroperatortype))
 - `Name`: `Literal['QUICKSIGHT_USER']` (see
-  [AnalysisFilterAttribute](./literals.md#analysisfilterattribute))
+  [AnalysisFilterAttributeType](./literals.md#analysisfilterattributetype))
 - `Value`: `str`
 
 ## AnalysisSourceEntityTypeDef
@@ -348,7 +349,7 @@ Optional fields:
 - `Arn`: `str`
 - `AnalysisId`: `str`
 - `Name`: `str`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
@@ -363,8 +364,9 @@ Optional fields:
 - `AnalysisId`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
-- `Errors`: `List`\[[AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef)\]
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
+- `Errors`:
+  `List`\[[AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef)\]
 - `DataSetArns`: `List`\[`str`\]
 - `ThemeArn`: `str`
 - `CreatedTime`: `datetime`
@@ -459,7 +461,7 @@ from mypy_boto3_quicksight.type_defs import CastColumnTypeOperationTypeDef
 Required fields:
 
 - `ColumnName`: `str`
-- `NewColumnType`: [ColumnDataType](./literals.md#columndatatype)
+- `NewColumnType`: [ColumnDataTypeType](./literals.md#columndatatypetype)
 
 Optional fields:
 
@@ -539,7 +541,8 @@ from mypy_boto3_quicksight.type_defs import ColumnTagTypeDef
 
 Optional fields:
 
-- `ColumnGeographicRole`: [GeoSpatialDataRole](./literals.md#geospatialdatarole)
+- `ColumnGeographicRole`:
+  [GeoSpatialDataRoleType](./literals.md#geospatialdataroletype)
 - `ColumnDescription`:
   [ColumnDescriptionTypeDef](./type_defs.md#columndescriptiontypedef)
 
@@ -569,7 +572,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `AnalysisId`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -595,7 +598,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `DashboardId`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -624,7 +627,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `DataSourceId`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -662,7 +665,8 @@ Optional fields:
 
 - `AssignmentName`: `str`
 - `AssignmentId`: `str`
-- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
+- `AssignmentStatus`:
+  [AssignmentStatusType](./literals.md#assignmentstatustype)
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 - `RequestId`: `str`
@@ -678,7 +682,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `IngestionId`: `str`
-- `IngestionStatus`: [IngestionStatus](./literals.md#ingestionstatus)
+- `IngestionStatus`: [IngestionStatusType](./literals.md#ingestionstatustype)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -693,9 +697,9 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `CapacityRegion`: `str`
-- `CreationStatus`: [NamespaceStatus](./literals.md#namespacestatus)
+- `CreationStatus`: [NamespaceStatusType](./literals.md#namespacestatustype)
 - `IdentityStore`: `Literal['QUICKSIGHT']` (see
-  [IdentityStore](./literals.md#identitystore))
+  [IdentityStoreType](./literals.md#identitystoretype))
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -722,7 +726,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `TemplateId`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -749,7 +753,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `ThemeId`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -793,7 +797,7 @@ from mypy_boto3_quicksight.type_defs import DashboardErrorTypeDef
 
 Optional fields:
 
-- `Type`: [DashboardErrorType](./literals.md#dashboarderrortype)
+- `Type`: [DashboardErrorTypeType](./literals.md#dashboarderrortypetype)
 - `Message`: `str`
 
 ## DashboardPublishOptionsTypeDef
@@ -820,12 +824,12 @@ from mypy_boto3_quicksight.type_defs import DashboardSearchFilterTypeDef
 Required fields:
 
 - `Operator`: `Literal['StringEquals']` (see
-  [FilterOperator](./literals.md#filteroperator))
+  [FilterOperatorType](./literals.md#filteroperatortype))
 
 Optional fields:
 
 - `Name`: `Literal['QUICKSIGHT_USER']` (see
-  [DashboardFilterAttribute](./literals.md#dashboardfilterattribute))
+  [DashboardFilterAttributeType](./literals.md#dashboardfilterattributetype))
 - `Value`: `str`
 
 ## DashboardSourceEntityTypeDef
@@ -894,7 +898,7 @@ Optional fields:
 - `Arn`: `str`
 - `CreatedTime`: `datetime`
 - `VersionNumber`: `int`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `SourceEntityArn`: `str`
 - `Description`: `str`
 
@@ -910,7 +914,7 @@ Optional fields:
 - `Errors`:
   `List`\[[DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef)\]
 - `VersionNumber`: `int`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Arn`: `str`
 - `SourceEntityArn`: `str`
 - `DataSetArns`: `List`\[`str`\]
@@ -978,7 +982,7 @@ Optional fields:
 - `Name`: `str`
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
-- `ImportMode`: [DataSetImportMode](./literals.md#datasetimportmode)
+- `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `ColumnLevelPermissionRulesApplied`: `bool`
@@ -1002,7 +1006,7 @@ Optional fields:
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `OutputColumns`:
   `List`\[[OutputColumnTypeDef](./type_defs.md#outputcolumntypedef)\]
-- `ImportMode`: [DataSetImportMode](./literals.md#datasetimportmode)
+- `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
 - `ConsumedSpiceCapacityInBytes`: `int`
 - `ColumnGroups`:
   `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
@@ -1021,7 +1025,8 @@ from mypy_boto3_quicksight.type_defs import DataSourceCredentialsTypeDef
 
 Optional fields:
 
-- `CredentialPair`: [CredentialPairTypeDef](./type_defs.md#credentialpairtypedef)
+- `CredentialPair`:
+  [CredentialPairTypeDef](./type_defs.md#credentialpairtypedef)
 - `CopySourceArn`: `str`
 
 ## DataSourceErrorInfoTypeDef
@@ -1032,7 +1037,8 @@ from mypy_boto3_quicksight.type_defs import DataSourceErrorInfoTypeDef
 
 Optional fields:
 
-- `Type`: [DataSourceErrorInfoType](./literals.md#datasourceerrorinfotype)
+- `Type`:
+  [DataSourceErrorInfoTypeType](./literals.md#datasourceerrorinfotypetype)
 - `Message`: `str`
 
 ## DataSourceParametersTypeDef
@@ -1053,7 +1059,8 @@ Optional fields:
   [AuroraPostgreSqlParametersTypeDef](./type_defs.md#aurorapostgresqlparameterstypedef)
 - `AwsIotAnalyticsParameters`:
   [AwsIotAnalyticsParametersTypeDef](./type_defs.md#awsiotanalyticsparameterstypedef)
-- `JiraParameters`: [JiraParametersTypeDef](./type_defs.md#jiraparameterstypedef)
+- `JiraParameters`:
+  [JiraParametersTypeDef](./type_defs.md#jiraparameterstypedef)
 - `MariaDbParameters`:
   [MariaDbParametersTypeDef](./type_defs.md#mariadbparameterstypedef)
 - `MySqlParameters`:
@@ -1092,8 +1099,8 @@ Optional fields:
 - `Arn`: `str`
 - `DataSourceId`: `str`
 - `Name`: `str`
-- `Type`: [DataSourceType](./literals.md#datasourcetype)
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `DataSourceParameters`:
@@ -1597,7 +1604,7 @@ from mypy_boto3_quicksight.type_defs import ErrorInfoTypeDef
 
 Optional fields:
 
-- `Type`: [IngestionErrorType](./literals.md#ingestionerrortype)
+- `Type`: [IngestionErrorTypeType](./literals.md#ingestionerrortypetype)
 - `Message`: `str`
 
 ## ExportToCSVOptionTypeDef
@@ -1608,7 +1615,8 @@ from mypy_boto3_quicksight.type_defs import ExportToCSVOptionTypeDef
 
 Optional fields:
 
-- `AvailabilityStatus`: [DashboardBehavior](./literals.md#dashboardbehavior)
+- `AvailabilityStatus`:
+  [DashboardBehaviorType](./literals.md#dashboardbehaviortype)
 
 ## FieldFolderTypeDef
 
@@ -1641,7 +1649,7 @@ Required fields:
 
 - `Name`: `str`
 - `CountryCode`: `Literal['US']` (see
-  [GeoSpatialCountryCode](./literals.md#geospatialcountrycode))
+  [GeoSpatialCountryCodeType](./literals.md#geospatialcountrycodetype))
 - `Columns`: `List`\[`str`\]
 
 ## GetDashboardEmbedUrlResponseTypeDef
@@ -1711,7 +1719,8 @@ from mypy_boto3_quicksight.type_defs import IAMPolicyAssignmentSummaryTypeDef
 Optional fields:
 
 - `AssignmentName`: `str`
-- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
+- `AssignmentStatus`:
+  [AssignmentStatusType](./literals.md#assignmentstatustype)
 
 ## IAMPolicyAssignmentTypeDef
 
@@ -1726,7 +1735,8 @@ Optional fields:
 - `AssignmentName`: `str`
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
-- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
+- `AssignmentStatus`:
+  [AssignmentStatusType](./literals.md#assignmentstatustype)
 
 ## IngestionTypeDef
 
@@ -1737,7 +1747,7 @@ from mypy_boto3_quicksight.type_defs import IngestionTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `IngestionStatus`: [IngestionStatus](./literals.md#ingestionstatus)
+- `IngestionStatus`: [IngestionStatusType](./literals.md#ingestionstatustype)
 - `CreatedTime`: `datetime`
 
 Optional fields:
@@ -1748,8 +1758,10 @@ Optional fields:
 - `QueueInfo`: [QueueInfoTypeDef](./type_defs.md#queueinfotypedef)
 - `IngestionTimeInSeconds`: `int`
 - `IngestionSizeInBytes`: `int`
-- `RequestSource`: [IngestionRequestSource](./literals.md#ingestionrequestsource)
-- `RequestType`: [IngestionRequestType](./literals.md#ingestionrequesttype)
+- `RequestSource`:
+  [IngestionRequestSourceType](./literals.md#ingestionrequestsourcetype)
+- `RequestType`:
+  [IngestionRequestTypeType](./literals.md#ingestionrequesttypetype)
 
 ## InputColumnTypeDef
 
@@ -1760,7 +1772,7 @@ from mypy_boto3_quicksight.type_defs import InputColumnTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: [InputColumnDataType](./literals.md#inputcolumndatatype)
+- `Type`: [InputColumnDataTypeType](./literals.md#inputcolumndatatypetype)
 
 ## IntegerParameterTypeDef
 
@@ -1793,7 +1805,7 @@ Required fields:
 
 - `LeftOperand`: `str`
 - `RightOperand`: `str`
-- `Type`: [JoinType](./literals.md#jointype)
+- `Type`: [JoinTypeType](./literals.md#jointypetype)
 - `OnClause`: `str`
 
 Optional fields:
@@ -1877,7 +1889,8 @@ from mypy_boto3_quicksight.type_defs import ListDataSourcesResponseTypeDef
 
 Optional fields:
 
-- `DataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `DataSources`:
+  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2107,7 +2120,8 @@ from mypy_boto3_quicksight.type_defs import LogicalTableTypeDef
 Required fields:
 
 - `Alias`: `str`
-- `Source`: [LogicalTableSourceTypeDef](./type_defs.md#logicaltablesourcetypedef)
+- `Source`:
+  [LogicalTableSourceTypeDef](./type_defs.md#logicaltablesourcetypedef)
 
 Optional fields:
 
@@ -2167,7 +2181,7 @@ from mypy_boto3_quicksight.type_defs import NamespaceErrorTypeDef
 
 Optional fields:
 
-- `Type`: [NamespaceErrorType](./literals.md#namespaceerrortype)
+- `Type`: [NamespaceErrorTypeType](./literals.md#namespaceerrortypetype)
 - `Message`: `str`
 
 ## NamespaceInfoV2TypeDef
@@ -2181,10 +2195,11 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `CapacityRegion`: `str`
-- `CreationStatus`: [NamespaceStatus](./literals.md#namespacestatus)
+- `CreationStatus`: [NamespaceStatusType](./literals.md#namespacestatustype)
 - `IdentityStore`: `Literal['QUICKSIGHT']` (see
-  [IdentityStore](./literals.md#identitystore))
-- `NamespaceError`: [NamespaceErrorTypeDef](./type_defs.md#namespaceerrortypedef)
+  [IdentityStoreType](./literals.md#identitystoretype))
+- `NamespaceError`:
+  [NamespaceErrorTypeDef](./type_defs.md#namespaceerrortypedef)
 
 ## OracleParametersTypeDef
 
@@ -2208,7 +2223,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `Type`: [ColumnDataType](./literals.md#columndatatype)
+- `Type`: [ColumnDataTypeType](./literals.md#columndatatypetype)
 
 ## PaginatorConfigTypeDef
 
@@ -2411,7 +2426,7 @@ Required fields:
 
 - `Arn`: `str`
 - `PermissionPolicy`:
-  [RowLevelPermissionPolicy](./literals.md#rowlevelpermissionpolicy)
+  [RowLevelPermissionPolicyType](./literals.md#rowlevelpermissionpolicytype)
 
 Optional fields:
 
@@ -2442,7 +2457,8 @@ Required fields:
 
 Optional fields:
 
-- `UploadSettings`: [UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef)
+- `UploadSettings`:
+  [UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef)
 
 ## SearchAnalysesResponseTypeDef
 
@@ -2490,7 +2506,7 @@ from mypy_boto3_quicksight.type_defs import SheetControlsOptionTypeDef
 
 Optional fields:
 
-- `VisibilityState`: [DashboardUIState](./literals.md#dashboarduistate)
+- `VisibilityState`: [DashboardUIStateType](./literals.md#dashboarduistatetype)
 
 ## SheetStyleTypeDef
 
@@ -2623,7 +2639,7 @@ from mypy_boto3_quicksight.type_defs import TemplateErrorTypeDef
 
 Optional fields:
 
-- `Type`: [TemplateErrorType](./literals.md#templateerrortype)
+- `Type`: [TemplateErrorTypeType](./literals.md#templateerrortypetype)
 - `Message`: `str`
 
 ## TemplateSourceAnalysisTypeDef
@@ -2702,7 +2718,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionNumber`: `int`
 - `CreatedTime`: `datetime`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Description`: `str`
 
 ## TemplateVersionTypeDef
@@ -2714,9 +2730,10 @@ from mypy_boto3_quicksight.type_defs import TemplateVersionTypeDef
 Optional fields:
 
 - `CreatedTime`: `datetime`
-- `Errors`: `List`\[[TemplateErrorTypeDef](./type_defs.md#templateerrortypedef)\]
+- `Errors`:
+  `List`\[[TemplateErrorTypeDef](./type_defs.md#templateerrortypedef)\]
 - `VersionNumber`: `int`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `DataSetConfigurations`:
   `List`\[[DataSetConfigurationTypeDef](./type_defs.md#datasetconfigurationtypedef)\]
 - `Description`: `str`
@@ -2758,7 +2775,8 @@ Optional fields:
 
 - `DataColorPalette`:
   [DataColorPaletteTypeDef](./type_defs.md#datacolorpalettetypedef)
-- `UIColorPalette`: [UIColorPaletteTypeDef](./type_defs.md#uicolorpalettetypedef)
+- `UIColorPalette`:
+  [UIColorPaletteTypeDef](./type_defs.md#uicolorpalettetypedef)
 - `Sheet`: [SheetStyleTypeDef](./type_defs.md#sheetstyletypedef)
 
 ## ThemeErrorTypeDef
@@ -2770,7 +2788,7 @@ from mypy_boto3_quicksight.type_defs import ThemeErrorTypeDef
 Optional fields:
 
 - `Type`: `Literal['INTERNAL_FAILURE']` (see
-  [ThemeErrorType](./literals.md#themeerrortype))
+  [ThemeErrorTypeType](./literals.md#themeerrortypetype))
 - `Message`: `str`
 
 ## ThemeSummaryTypeDef
@@ -2802,7 +2820,7 @@ Optional fields:
 - `Version`: [ThemeVersionTypeDef](./type_defs.md#themeversiontypedef)
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
-- `Type`: [ThemeType](./literals.md#themetype)
+- `Type`: [ThemeTypeType](./literals.md#themetypetype)
 
 ## ThemeVersionSummaryTypeDef
 
@@ -2816,7 +2834,7 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `CreatedTime`: `datetime`
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 
 ## ThemeVersionTypeDef
 
@@ -2834,7 +2852,7 @@ Optional fields:
 - `Configuration`:
   [ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef)
 - `Errors`: `List`\[[ThemeErrorTypeDef](./type_defs.md#themeerrortypedef)\]
-- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Status`: [ResourceStatusType](./literals.md#resourcestatustype)
 
 ## TileLayoutStyleTypeDef
 
@@ -2977,7 +2995,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `AnalysisId`: `str`
-- `UpdateStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `UpdateStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3020,7 +3038,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `DashboardId`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3075,7 +3093,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `DataSourceId`: `str`
-- `UpdateStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `UpdateStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3103,7 +3121,8 @@ Optional fields:
 - `AssignmentId`: `str`
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
-- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
+- `AssignmentStatus`:
+  [AssignmentStatusType](./literals.md#assignmentstatustype)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3145,7 +3164,7 @@ Optional fields:
 - `TemplateId`: `str`
 - `Arn`: `str`
 - `VersionArn`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3187,7 +3206,7 @@ Optional fields:
 - `ThemeId`: `str`
 - `Arn`: `str`
 - `VersionArn`: `str`
-- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3211,10 +3230,10 @@ from mypy_boto3_quicksight.type_defs import UploadSettingsTypeDef
 
 Optional fields:
 
-- `Format`: [FileFormat](./literals.md#fileformat)
+- `Format`: [FileFormatType](./literals.md#fileformattype)
 - `StartFromRow`: `int`
 - `ContainsHeader`: `bool`
-- `TextQualifier`: [TextQualifier](./literals.md#textqualifier)
+- `TextQualifier`: [TextQualifierType](./literals.md#textqualifiertype)
 - `Delimiter`: `str`
 
 ## UserTypeDef
@@ -3228,8 +3247,8 @@ Optional fields:
 - `Arn`: `str`
 - `UserName`: `str`
 - `Email`: `str`
-- `Role`: [UserRole](./literals.md#userrole)
-- `IdentityType`: [IdentityType](./literals.md#identitytype)
+- `Role`: [UserRoleType](./literals.md#userroletype)
+- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `Active`: `bool`
 - `PrincipalId`: `str`
 - `CustomPermissionsName`: `str`

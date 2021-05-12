@@ -3,7 +3,7 @@
 > [Index](..) > [Lightsail](.) > LightsailClient
 
 Auto-generated documentation for
-[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
 [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
@@ -171,7 +171,7 @@ def get_lightsail_client() -> LightsailClient:
 ```
 
 Boto3 documentation:
-[Lightsail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
+[Lightsail.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client)
 
 ## Exceptions
 
@@ -203,7 +203,7 @@ Exceptions:
 Type annotations for `boto3.client("lightsail").allocate_static_ip` method.
 
 Boto3 documentation:
-[Lightsail.Client.allocate_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip)
+[Lightsail.Client.allocate_static_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Type annotations for
 `boto3.client("lightsail").attach_certificate_to_distribution` method.
 
 Boto3 documentation:
-[Lightsail.Client.attach_certificate_to_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution)
+[Lightsail.Client.attach_certificate_to_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Returns
 Type annotations for `boto3.client("lightsail").attach_disk` method.
 
 Boto3 documentation:
-[Lightsail.Client.attach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk)
+[Lightsail.Client.attach_disk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.attach_disk)
 
 Arguments:
 
@@ -249,7 +249,7 @@ Type annotations for
 `boto3.client("lightsail").attach_instances_to_load_balancer` method.
 
 Boto3 documentation:
-[Lightsail.Client.attach_instances_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer)
+[Lightsail.Client.attach_instances_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Type annotations for
 `boto3.client("lightsail").attach_load_balancer_tls_certificate` method.
 
 Boto3 documentation:
-[Lightsail.Client.attach_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate)
+[Lightsail.Client.attach_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Returns
 Type annotations for `boto3.client("lightsail").attach_static_ip` method.
 
 Boto3 documentation:
-[Lightsail.Client.attach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_static_ip)
+[Lightsail.Client.attach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.attach_static_ip)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("lightsail").can_paginate` method.
 
 Boto3 documentation:
-[Lightsail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.can_paginate)
+[Lightsail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.can_paginate)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("lightsail").close_instance_public_ports`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.close_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports)
+[Lightsail.Client.close_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports)
 
 Arguments:
 
@@ -324,12 +324,12 @@ Returns
 Type annotations for `boto3.client("lightsail").copy_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot)
+[Lightsail.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.copy_snapshot)
 
 Arguments:
 
 - `targetSnapshotName`: `str` *(required)*
-- `sourceRegion`: [RegionName](./literals.md#regionname) *(required)*
+- `sourceRegion`: [RegionNameType](./literals.md#regionnametype) *(required)*
 - `sourceSnapshotName`: `str`
 - `sourceResourceName`: `str`
 - `restoreDate`: `str`
@@ -342,7 +342,7 @@ Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 Type annotations for `boto3.client("lightsail").create_certificate` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate)
+[Lightsail.Client.create_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_certificate)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("lightsail").create_cloud_formation_stack`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.create_cloud_formation_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack)
+[Lightsail.Client.create_cloud_formation_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack)
 
 Arguments:
 
@@ -376,11 +376,12 @@ Returns
 Type annotations for `boto3.client("lightsail").create_contact_method` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_contact_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_contact_method)
+[Lightsail.Client.create_contact_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_contact_method)
 
 Arguments:
 
-- `protocol`: [ContactProtocol](./literals.md#contactprotocol) *(required)*
+- `protocol`: [ContactProtocolType](./literals.md#contactprotocoltype)
+  *(required)*
 - `contactEndpoint`: `str` *(required)*
 
 Returns
@@ -392,12 +393,13 @@ Type annotations for `boto3.client("lightsail").create_container_service`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.create_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service)
+[Lightsail.Client.create_container_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_container_service)
 
 Arguments:
 
 - `serviceName`: `str` *(required)*
-- `power`: [ContainerServicePowerName](./literals.md#containerservicepowername)
+- `power`:
+  [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
   *(required)*
 - `scale`: `int` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -414,7 +416,7 @@ Type annotations for
 `boto3.client("lightsail").create_container_service_deployment` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_container_service_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment)
+[Lightsail.Client.create_container_service_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment)
 
 Arguments:
 
@@ -433,7 +435,7 @@ Type annotations for
 `boto3.client("lightsail").create_container_service_registry_login` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_container_service_registry_login](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login)
+[Lightsail.Client.create_container_service_registry_login](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login)
 
 Returns
 [CreateContainerServiceRegistryLoginResultTypeDef](./type_defs.md#createcontainerserviceregistryloginresulttypedef).
@@ -443,7 +445,7 @@ Returns
 Type annotations for `boto3.client("lightsail").create_disk` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk)
+[Lightsail.Client.create_disk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_disk)
 
 Arguments:
 
@@ -461,7 +463,7 @@ Type annotations for `boto3.client("lightsail").create_disk_from_snapshot`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.create_disk_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot)
+[Lightsail.Client.create_disk_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot)
 
 Arguments:
 
@@ -483,7 +485,7 @@ Returns
 Type annotations for `boto3.client("lightsail").create_disk_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot)
+[Lightsail.Client.create_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot)
 
 Arguments:
 
@@ -500,12 +502,13 @@ Returns
 Type annotations for `boto3.client("lightsail").create_distribution` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution)
+[Lightsail.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_distribution)
 
 Arguments:
 
 - `distributionName`: `str` *(required)*
-- `origin`: [InputOriginTypeDef](./type_defs.md#inputorigintypedef) *(required)*
+- `origin`: [InputOriginTypeDef](./type_defs.md#inputorigintypedef)
+  *(required)*
 - `defaultCacheBehavior`:
   [CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef) *(required)*
 - `bundleId`: `str` *(required)*
@@ -513,7 +516,7 @@ Arguments:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
   `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -524,7 +527,7 @@ Returns
 Type annotations for `boto3.client("lightsail").create_domain` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain)
+[Lightsail.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_domain)
 
 Arguments:
 
@@ -538,7 +541,7 @@ Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 Type annotations for `boto3.client("lightsail").create_domain_entry` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain_entry)
+[Lightsail.Client.create_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_domain_entry)
 
 Arguments:
 
@@ -555,7 +558,7 @@ Type annotations for `boto3.client("lightsail").create_instance_snapshot`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.create_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot)
+[Lightsail.Client.create_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot)
 
 Arguments:
 
@@ -571,7 +574,7 @@ Returns
 Type annotations for `boto3.client("lightsail").create_instances` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances)
+[Lightsail.Client.create_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_instances)
 
 Arguments:
 
@@ -584,7 +587,7 @@ Arguments:
 - `keyPairName`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
 [CreateInstancesResultTypeDef](./type_defs.md#createinstancesresulttypedef).
@@ -595,7 +598,7 @@ Type annotations for `boto3.client("lightsail").create_instances_from_snapshot`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.create_instances_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot)
+[Lightsail.Client.create_instances_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot)
 
 Arguments:
 
@@ -609,7 +612,7 @@ Arguments:
 - `keyPairName`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `sourceInstanceName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
@@ -622,7 +625,7 @@ Returns
 Type annotations for `boto3.client("lightsail").create_key_pair` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_key_pair)
+[Lightsail.Client.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_key_pair)
 
 Arguments:
 
@@ -637,7 +640,7 @@ Returns
 Type annotations for `boto3.client("lightsail").create_load_balancer` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer)
+[Lightsail.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_load_balancer)
 
 Arguments:
 
@@ -648,7 +651,7 @@ Arguments:
 - `certificateDomainName`: `str`
 - `certificateAlternativeNames`: `List`\[`str`\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
 [CreateLoadBalancerResultTypeDef](./type_defs.md#createloadbalancerresulttypedef).
@@ -659,7 +662,7 @@ Type annotations for
 `boto3.client("lightsail").create_load_balancer_tls_certificate` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate)
+[Lightsail.Client.create_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate)
 
 Arguments:
 
@@ -678,7 +681,7 @@ Type annotations for `boto3.client("lightsail").create_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.create_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database)
+[Lightsail.Client.create_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_relational_database)
 
 Arguments:
 
@@ -703,7 +706,7 @@ Type annotations for
 `boto3.client("lightsail").create_relational_database_from_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_relational_database_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot)
+[Lightsail.Client.create_relational_database_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot)
 
 Arguments:
 
@@ -726,7 +729,7 @@ Type annotations for
 `boto3.client("lightsail").create_relational_database_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.create_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot)
+[Lightsail.Client.create_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot)
 
 Arguments:
 
@@ -742,7 +745,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_alarm` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_alarm)
+[Lightsail.Client.delete_alarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_alarm)
 
 Arguments:
 
@@ -755,7 +758,7 @@ Returns [DeleteAlarmResultTypeDef](./type_defs.md#deletealarmresulttypedef).
 Type annotations for `boto3.client("lightsail").delete_auto_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_auto_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot)
+[Lightsail.Client.delete_auto_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot)
 
 Arguments:
 
@@ -770,7 +773,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_certificate` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_certificate)
+[Lightsail.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_certificate)
 
 Arguments:
 
@@ -784,11 +787,12 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_contact_method` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_contact_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_contact_method)
+[Lightsail.Client.delete_contact_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_contact_method)
 
 Arguments:
 
-- `protocol`: [ContactProtocol](./literals.md#contactprotocol) *(required)*
+- `protocol`: [ContactProtocolType](./literals.md#contactprotocoltype)
+  *(required)*
 
 Returns
 [DeleteContactMethodResultTypeDef](./type_defs.md#deletecontactmethodresulttypedef).
@@ -798,7 +802,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_container_image` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_image)
+[Lightsail.Client.delete_container_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_container_image)
 
 Arguments:
 
@@ -813,7 +817,7 @@ Type annotations for `boto3.client("lightsail").delete_container_service`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_service)
+[Lightsail.Client.delete_container_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_container_service)
 
 Arguments:
 
@@ -826,7 +830,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lightsail").delete_disk` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk)
+[Lightsail.Client.delete_disk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_disk)
 
 Arguments:
 
@@ -840,7 +844,7 @@ Returns [DeleteDiskResultTypeDef](./type_defs.md#deletediskresulttypedef).
 Type annotations for `boto3.client("lightsail").delete_disk_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot)
+[Lightsail.Client.delete_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot)
 
 Arguments:
 
@@ -854,7 +858,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_distribution` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_distribution)
+[Lightsail.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_distribution)
 
 Arguments:
 
@@ -868,7 +872,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_domain` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain)
+[Lightsail.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_domain)
 
 Arguments:
 
@@ -881,7 +885,7 @@ Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
 Type annotations for `boto3.client("lightsail").delete_domain_entry` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry)
+[Lightsail.Client.delete_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry)
 
 Arguments:
 
@@ -897,7 +901,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_instance` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance)
+[Lightsail.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_instance)
 
 Arguments:
 
@@ -913,7 +917,7 @@ Type annotations for `boto3.client("lightsail").delete_instance_snapshot`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot)
+[Lightsail.Client.delete_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot)
 
 Arguments:
 
@@ -927,7 +931,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_key_pair` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_key_pair)
+[Lightsail.Client.delete_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_key_pair)
 
 Arguments:
 
@@ -941,7 +945,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_known_host_keys` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_known_host_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys)
+[Lightsail.Client.delete_known_host_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys)
 
 Arguments:
 
@@ -955,7 +959,7 @@ Returns
 Type annotations for `boto3.client("lightsail").delete_load_balancer` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer)
+[Lightsail.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer)
 
 Arguments:
 
@@ -970,7 +974,7 @@ Type annotations for
 `boto3.client("lightsail").delete_load_balancer_tls_certificate` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate)
+[Lightsail.Client.delete_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate)
 
 Arguments:
 
@@ -987,7 +991,7 @@ Type annotations for `boto3.client("lightsail").delete_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database)
+[Lightsail.Client.delete_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_relational_database)
 
 Arguments:
 
@@ -1004,7 +1008,7 @@ Type annotations for
 `boto3.client("lightsail").delete_relational_database_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.delete_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot)
+[Lightsail.Client.delete_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot)
 
 Arguments:
 
@@ -1019,7 +1023,7 @@ Type annotations for
 `boto3.client("lightsail").detach_certificate_from_distribution` method.
 
 Boto3 documentation:
-[Lightsail.Client.detach_certificate_from_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution)
+[Lightsail.Client.detach_certificate_from_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution)
 
 Arguments:
 
@@ -1033,7 +1037,7 @@ Returns
 Type annotations for `boto3.client("lightsail").detach_disk` method.
 
 Boto3 documentation:
-[Lightsail.Client.detach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_disk)
+[Lightsail.Client.detach_disk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.detach_disk)
 
 Arguments:
 
@@ -1047,7 +1051,7 @@ Type annotations for
 `boto3.client("lightsail").detach_instances_from_load_balancer` method.
 
 Boto3 documentation:
-[Lightsail.Client.detach_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer)
+[Lightsail.Client.detach_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer)
 
 Arguments:
 
@@ -1062,7 +1066,7 @@ Returns
 Type annotations for `boto3.client("lightsail").detach_static_ip` method.
 
 Boto3 documentation:
-[Lightsail.Client.detach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_static_ip)
+[Lightsail.Client.detach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.detach_static_ip)
 
 Arguments:
 
@@ -1076,12 +1080,12 @@ Returns
 Type annotations for `boto3.client("lightsail").disable_add_on` method.
 
 Boto3 documentation:
-[Lightsail.Client.disable_add_on](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.disable_add_on)
+[Lightsail.Client.disable_add_on](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.disable_add_on)
 
 Arguments:
 
 - `addOnType`: `Literal['AutoSnapshot']` (see
-  [AddOnType](./literals.md#addontype)) *(required)*
+  [AddOnTypeType](./literals.md#addontypetype)) *(required)*
 - `resourceName`: `str` *(required)*
 
 Returns [DisableAddOnResultTypeDef](./type_defs.md#disableaddonresulttypedef).
@@ -1092,7 +1096,7 @@ Type annotations for `boto3.client("lightsail").download_default_key_pair`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.download_default_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair)
+[Lightsail.Client.download_default_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair)
 
 Returns
 [DownloadDefaultKeyPairResultTypeDef](./type_defs.md#downloaddefaultkeypairresulttypedef).
@@ -1102,7 +1106,7 @@ Returns
 Type annotations for `boto3.client("lightsail").enable_add_on` method.
 
 Boto3 documentation:
-[Lightsail.Client.enable_add_on](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.enable_add_on)
+[Lightsail.Client.enable_add_on](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.enable_add_on)
 
 Arguments:
 
@@ -1117,7 +1121,7 @@ Returns [EnableAddOnResultTypeDef](./type_defs.md#enableaddonresulttypedef).
 Type annotations for `boto3.client("lightsail").export_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.export_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.export_snapshot)
+[Lightsail.Client.export_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.export_snapshot)
 
 Arguments:
 
@@ -1131,7 +1135,7 @@ Returns
 Type annotations for `boto3.client("lightsail").generate_presigned_url` method.
 
 Boto3 documentation:
-[Lightsail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.generate_presigned_url)
+[Lightsail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1147,7 +1151,7 @@ Returns `str`.
 Type annotations for `boto3.client("lightsail").get_active_names` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_active_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_active_names)
+[Lightsail.Client.get_active_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_active_names)
 
 Arguments:
 
@@ -1161,7 +1165,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_alarms` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms)
+[Lightsail.Client.get_alarms](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_alarms)
 
 Arguments:
 
@@ -1176,7 +1180,7 @@ Returns [GetAlarmsResultTypeDef](./type_defs.md#getalarmsresulttypedef).
 Type annotations for `boto3.client("lightsail").get_auto_snapshots` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_auto_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots)
+[Lightsail.Client.get_auto_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots)
 
 Arguments:
 
@@ -1190,7 +1194,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_blueprints` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_blueprints)
+[Lightsail.Client.get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_blueprints)
 
 Arguments:
 
@@ -1205,7 +1209,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_bundles` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles)
+[Lightsail.Client.get_bundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_bundles)
 
 Arguments:
 
@@ -1219,12 +1223,12 @@ Returns [GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef).
 Type annotations for `boto3.client("lightsail").get_certificates` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates)
+[Lightsail.Client.get_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_certificates)
 
 Arguments:
 
 - `certificateStatuses`:
-  `List`\[[CertificateStatus](./literals.md#certificatestatus)\]
+  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `includeCertificateDetails`: `bool`
 - `certificateName`: `str`
 
@@ -1237,7 +1241,7 @@ Type annotations for
 `boto3.client("lightsail").get_cloud_formation_stack_records` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_cloud_formation_stack_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records)
+[Lightsail.Client.get_cloud_formation_stack_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records)
 
 Arguments:
 
@@ -1251,11 +1255,12 @@ Returns
 Type annotations for `boto3.client("lightsail").get_contact_methods` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_contact_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_contact_methods)
+[Lightsail.Client.get_contact_methods](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_contact_methods)
 
 Arguments:
 
-- `protocols`: `List`\[[ContactProtocol](./literals.md#contactprotocol)\]
+- `protocols`:
+  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 
 Returns
 [GetContactMethodsResultTypeDef](./type_defs.md#getcontactmethodsresulttypedef).
@@ -1266,7 +1271,7 @@ Type annotations for `boto3.client("lightsail").get_container_api_metadata`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_api_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata)
+[Lightsail.Client.get_container_api_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata)
 
 Returns
 [GetContainerAPIMetadataResultTypeDef](./type_defs.md#getcontainerapimetadataresulttypedef).
@@ -1276,7 +1281,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_container_images` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_images)
+[Lightsail.Client.get_container_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_images)
 
 Arguments:
 
@@ -1290,7 +1295,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_container_log` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_log](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log)
+[Lightsail.Client.get_container_log](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_log)
 
 Arguments:
 
@@ -1310,7 +1315,7 @@ Type annotations for
 `boto3.client("lightsail").get_container_service_deployments` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_service_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments)
+[Lightsail.Client.get_container_service_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments)
 
 Arguments:
 
@@ -1325,18 +1330,19 @@ Type annotations for
 `boto3.client("lightsail").get_container_service_metric_data` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_service_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data)
+[Lightsail.Client.get_container_service_metric_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data)
 
 Arguments:
 
 - `serviceName`: `str` *(required)*
 - `metricName`:
-  [ContainerServiceMetricName](./literals.md#containerservicemetricname)
+  [ContainerServiceMetricNameType](./literals.md#containerservicemetricnametype)
   *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
 - `period`: `int` *(required)*
-- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
+- `statistics`:
+  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1348,7 +1354,7 @@ Type annotations for `boto3.client("lightsail").get_container_service_powers`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_service_powers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers)
+[Lightsail.Client.get_container_service_powers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers)
 
 Returns
 [GetContainerServicePowersResultTypeDef](./type_defs.md#getcontainerservicepowersresulttypedef).
@@ -1358,7 +1364,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_container_services` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_container_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_services)
+[Lightsail.Client.get_container_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_container_services)
 
 Arguments:
 
@@ -1372,7 +1378,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_disk` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk)
+[Lightsail.Client.get_disk](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_disk)
 
 Arguments:
 
@@ -1385,7 +1391,7 @@ Returns [GetDiskResultTypeDef](./type_defs.md#getdiskresulttypedef).
 Type annotations for `boto3.client("lightsail").get_disk_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot)
+[Lightsail.Client.get_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot)
 
 Arguments:
 
@@ -1399,7 +1405,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_disk_snapshots` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_disk_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots)
+[Lightsail.Client.get_disk_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots)
 
 Arguments:
 
@@ -1413,7 +1419,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_disks` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_disks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disks)
+[Lightsail.Client.get_disks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_disks)
 
 Arguments:
 
@@ -1427,7 +1433,7 @@ Type annotations for `boto3.client("lightsail").get_distribution_bundles`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_distribution_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles)
+[Lightsail.Client.get_distribution_bundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles)
 
 Returns
 [GetDistributionBundlesResultTypeDef](./type_defs.md#getdistributionbundlesresulttypedef).
@@ -1438,7 +1444,7 @@ Type annotations for
 `boto3.client("lightsail").get_distribution_latest_cache_reset` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_distribution_latest_cache_reset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset)
+[Lightsail.Client.get_distribution_latest_cache_reset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset)
 
 Arguments:
 
@@ -1453,18 +1459,20 @@ Type annotations for `boto3.client("lightsail").get_distribution_metric_data`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_distribution_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data)
+[Lightsail.Client.get_distribution_metric_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data)
 
 Arguments:
 
 - `distributionName`: `str` *(required)*
-- `metricName`: [DistributionMetricName](./literals.md#distributionmetricname)
+- `metricName`:
+  [DistributionMetricNameType](./literals.md#distributionmetricnametype)
   *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
 - `period`: `int` *(required)*
-- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
-- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
+- `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
+- `statistics`:
+  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1475,7 +1483,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_distributions` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distributions)
+[Lightsail.Client.get_distributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_distributions)
 
 Arguments:
 
@@ -1490,7 +1498,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_domain` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domain)
+[Lightsail.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_domain)
 
 Arguments:
 
@@ -1503,7 +1511,7 @@ Returns [GetDomainResultTypeDef](./type_defs.md#getdomainresulttypedef).
 Type annotations for `boto3.client("lightsail").get_domains` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domains)
+[Lightsail.Client.get_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_domains)
 
 Arguments:
 
@@ -1517,7 +1525,7 @@ Type annotations for `boto3.client("lightsail").get_export_snapshot_records`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_export_snapshot_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records)
+[Lightsail.Client.get_export_snapshot_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records)
 
 Arguments:
 
@@ -1531,7 +1539,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_instance` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance)
+[Lightsail.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance)
 
 Arguments:
 
@@ -1545,12 +1553,13 @@ Type annotations for `boto3.client("lightsail").get_instance_access_details`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance_access_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details)
+[Lightsail.Client.get_instance_access_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details)
 
 Arguments:
 
 - `instanceName`: `str` *(required)*
-- `protocol`: [InstanceAccessProtocol](./literals.md#instanceaccessprotocol)
+- `protocol`:
+  [InstanceAccessProtocolType](./literals.md#instanceaccessprotocoltype)
 
 Returns
 [GetInstanceAccessDetailsResultTypeDef](./type_defs.md#getinstanceaccessdetailsresulttypedef).
@@ -1561,18 +1570,19 @@ Type annotations for `boto3.client("lightsail").get_instance_metric_data`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data)
+[Lightsail.Client.get_instance_metric_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data)
 
 Arguments:
 
 - `instanceName`: `str` *(required)*
-- `metricName`: [InstanceMetricName](./literals.md#instancemetricname)
+- `metricName`: [InstanceMetricNameType](./literals.md#instancemetricnametype)
   *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
-- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
+- `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
+- `statistics`:
+  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1584,7 +1594,7 @@ Type annotations for `boto3.client("lightsail").get_instance_port_states`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance_port_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states)
+[Lightsail.Client.get_instance_port_states](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states)
 
 Arguments:
 
@@ -1598,7 +1608,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_instance_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot)
+[Lightsail.Client.get_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot)
 
 Arguments:
 
@@ -1612,7 +1622,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_instance_snapshots` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots)
+[Lightsail.Client.get_instance_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots)
 
 Arguments:
 
@@ -1626,7 +1636,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_instance_state` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instance_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_state)
+[Lightsail.Client.get_instance_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instance_state)
 
 Arguments:
 
@@ -1640,7 +1650,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_instances` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instances)
+[Lightsail.Client.get_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_instances)
 
 Arguments:
 
@@ -1653,7 +1663,7 @@ Returns [GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef).
 Type annotations for `boto3.client("lightsail").get_key_pair` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pair)
+[Lightsail.Client.get_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_key_pair)
 
 Arguments:
 
@@ -1666,7 +1676,7 @@ Returns [GetKeyPairResultTypeDef](./type_defs.md#getkeypairresulttypedef).
 Type annotations for `boto3.client("lightsail").get_key_pairs` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pairs)
+[Lightsail.Client.get_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_key_pairs)
 
 Arguments:
 
@@ -1679,7 +1689,7 @@ Returns [GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef).
 Type annotations for `boto3.client("lightsail").get_load_balancer` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer)
+[Lightsail.Client.get_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_load_balancer)
 
 Arguments:
 
@@ -1694,18 +1704,20 @@ Type annotations for `boto3.client("lightsail").get_load_balancer_metric_data`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_load_balancer_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data)
+[Lightsail.Client.get_load_balancer_metric_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data)
 
 Arguments:
 
 - `loadBalancerName`: `str` *(required)*
-- `metricName`: [LoadBalancerMetricName](./literals.md#loadbalancermetricname)
+- `metricName`:
+  [LoadBalancerMetricNameType](./literals.md#loadbalancermetricnametype)
   *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
-- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
+- `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
+- `statistics`:
+  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1717,7 +1729,7 @@ Type annotations for
 `boto3.client("lightsail").get_load_balancer_tls_certificates` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_load_balancer_tls_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates)
+[Lightsail.Client.get_load_balancer_tls_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates)
 
 Arguments:
 
@@ -1731,7 +1743,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_load_balancers` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancers)
+[Lightsail.Client.get_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_load_balancers)
 
 Arguments:
 
@@ -1745,7 +1757,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_operation` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operation)
+[Lightsail.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_operation)
 
 Arguments:
 
@@ -1758,7 +1770,7 @@ Returns [GetOperationResultTypeDef](./type_defs.md#getoperationresulttypedef).
 Type annotations for `boto3.client("lightsail").get_operations` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations)
+[Lightsail.Client.get_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_operations)
 
 Arguments:
 
@@ -1773,7 +1785,7 @@ Type annotations for `boto3.client("lightsail").get_operations_for_resource`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_operations_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource)
+[Lightsail.Client.get_operations_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource)
 
 Arguments:
 
@@ -1788,7 +1800,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_regions` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_regions)
+[Lightsail.Client.get_regions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_regions)
 
 Arguments:
 
@@ -1803,7 +1815,7 @@ Type annotations for `boto3.client("lightsail").get_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database)
+[Lightsail.Client.get_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database)
 
 Arguments:
 
@@ -1818,7 +1830,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_blueprints` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints)
+[Lightsail.Client.get_relational_database_blueprints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints)
 
 Arguments:
 
@@ -1833,7 +1845,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_bundles` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles)
+[Lightsail.Client.get_relational_database_bundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles)
 
 Arguments:
 
@@ -1848,7 +1860,7 @@ Type annotations for `boto3.client("lightsail").get_relational_database_events`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events)
+[Lightsail.Client.get_relational_database_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events)
 
 Arguments:
 
@@ -1865,7 +1877,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_log_events` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events)
+[Lightsail.Client.get_relational_database_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events)
 
 Arguments:
 
@@ -1885,7 +1897,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_log_streams` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams)
+[Lightsail.Client.get_relational_database_log_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams)
 
 Arguments:
 
@@ -1901,13 +1913,13 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_master_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password)
+[Lightsail.Client.get_relational_database_master_user_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password)
 
 Arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `passwordVersion`:
-  [RelationalDatabasePasswordVersion](./literals.md#relationaldatabasepasswordversion)
+  [RelationalDatabasePasswordVersionType](./literals.md#relationaldatabasepasswordversiontype)
 
 Returns
 [GetRelationalDatabaseMasterUserPasswordResultTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordresulttypedef).
@@ -1918,19 +1930,20 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_metric_data` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data)
+[Lightsail.Client.get_relational_database_metric_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data)
 
 Arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `metricName`:
-  [RelationalDatabaseMetricName](./literals.md#relationaldatabasemetricname)
+  [RelationalDatabaseMetricNameType](./literals.md#relationaldatabasemetricnametype)
   *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
-- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
+- `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
+- `statistics`:
+  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -1942,7 +1955,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_parameters` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters)
+[Lightsail.Client.get_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters)
 
 Arguments:
 
@@ -1958,7 +1971,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_snapshot` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot)
+[Lightsail.Client.get_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot)
 
 Arguments:
 
@@ -1973,7 +1986,7 @@ Type annotations for
 `boto3.client("lightsail").get_relational_database_snapshots` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_database_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots)
+[Lightsail.Client.get_relational_database_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots)
 
 Arguments:
 
@@ -1988,7 +2001,7 @@ Type annotations for `boto3.client("lightsail").get_relational_databases`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.get_relational_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_databases)
+[Lightsail.Client.get_relational_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_relational_databases)
 
 Arguments:
 
@@ -2002,7 +2015,7 @@ Returns
 Type annotations for `boto3.client("lightsail").get_static_ip` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ip)
+[Lightsail.Client.get_static_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_static_ip)
 
 Arguments:
 
@@ -2015,7 +2028,7 @@ Returns [GetStaticIpResultTypeDef](./type_defs.md#getstaticipresulttypedef).
 Type annotations for `boto3.client("lightsail").get_static_ips` method.
 
 Boto3 documentation:
-[Lightsail.Client.get_static_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ips)
+[Lightsail.Client.get_static_ips](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.get_static_ips)
 
 Arguments:
 
@@ -2028,7 +2041,7 @@ Returns [GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef).
 Type annotations for `boto3.client("lightsail").import_key_pair` method.
 
 Boto3 documentation:
-[Lightsail.Client.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.import_key_pair)
+[Lightsail.Client.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.import_key_pair)
 
 Arguments:
 
@@ -2043,7 +2056,7 @@ Returns
 Type annotations for `boto3.client("lightsail").is_vpc_peered` method.
 
 Boto3 documentation:
-[Lightsail.Client.is_vpc_peered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered)
+[Lightsail.Client.is_vpc_peered](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered)
 
 Returns [IsVpcPeeredResultTypeDef](./type_defs.md#isvpcpeeredresulttypedef).
 
@@ -2053,7 +2066,7 @@ Type annotations for `boto3.client("lightsail").open_instance_public_ports`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.open_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports)
+[Lightsail.Client.open_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports)
 
 Arguments:
 
@@ -2068,7 +2081,7 @@ Returns
 Type annotations for `boto3.client("lightsail").peer_vpc` method.
 
 Boto3 documentation:
-[Lightsail.Client.peer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc)
+[Lightsail.Client.peer_vpc](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.peer_vpc)
 
 Returns [PeerVpcResultTypeDef](./type_defs.md#peervpcresulttypedef).
 
@@ -2077,21 +2090,24 @@ Returns [PeerVpcResultTypeDef](./type_defs.md#peervpcresulttypedef).
 Type annotations for `boto3.client("lightsail").put_alarm` method.
 
 Boto3 documentation:
-[Lightsail.Client.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm)
+[Lightsail.Client.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.put_alarm)
 
 Arguments:
 
 - `alarmName`: `str` *(required)*
-- `metricName`: [MetricName](./literals.md#metricname) *(required)*
+- `metricName`: [MetricNameType](./literals.md#metricnametype) *(required)*
 - `monitoredResourceName`: `str` *(required)*
-- `comparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
-  *(required)*
+- `comparisonOperator`:
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype) *(required)*
 - `threshold`: `float` *(required)*
 - `evaluationPeriods`: `int` *(required)*
 - `datapointsToAlarm`: `int`
-- `treatMissingData`: [TreatMissingData](./literals.md#treatmissingdata)
-- `contactProtocols`: `List`\[[ContactProtocol](./literals.md#contactprotocol)\]
-- `notificationTriggers`: `List`\[[AlarmState](./literals.md#alarmstate)\]
+- `treatMissingData`:
+  [TreatMissingDataType](./literals.md#treatmissingdatatype)
+- `contactProtocols`:
+  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+- `notificationTriggers`:
+  `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
 Returns [PutAlarmResultTypeDef](./type_defs.md#putalarmresulttypedef).
@@ -2102,7 +2118,7 @@ Type annotations for `boto3.client("lightsail").put_instance_public_ports`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.put_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports)
+[Lightsail.Client.put_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports)
 
 Arguments:
 
@@ -2118,7 +2134,7 @@ Returns
 Type annotations for `boto3.client("lightsail").reboot_instance` method.
 
 Boto3 documentation:
-[Lightsail.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_instance)
+[Lightsail.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.reboot_instance)
 
 Arguments:
 
@@ -2133,7 +2149,7 @@ Type annotations for `boto3.client("lightsail").reboot_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.reboot_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database)
+[Lightsail.Client.reboot_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database)
 
 Arguments:
 
@@ -2148,7 +2164,7 @@ Type annotations for `boto3.client("lightsail").register_container_image`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.register_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image)
+[Lightsail.Client.register_container_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.register_container_image)
 
 Arguments:
 
@@ -2164,7 +2180,7 @@ Returns
 Type annotations for `boto3.client("lightsail").release_static_ip` method.
 
 Boto3 documentation:
-[Lightsail.Client.release_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.release_static_ip)
+[Lightsail.Client.release_static_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.release_static_ip)
 
 Arguments:
 
@@ -2179,7 +2195,7 @@ Type annotations for `boto3.client("lightsail").reset_distribution_cache`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.reset_distribution_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache)
+[Lightsail.Client.reset_distribution_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache)
 
 Arguments:
 
@@ -2194,12 +2210,12 @@ Type annotations for
 `boto3.client("lightsail").send_contact_method_verification` method.
 
 Boto3 documentation:
-[Lightsail.Client.send_contact_method_verification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification)
+[Lightsail.Client.send_contact_method_verification](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification)
 
 Arguments:
 
 - `protocol`: `Literal['Email']` (see
-  [ContactMethodVerificationProtocol](./literals.md#contactmethodverificationprotocol))
+  [ContactMethodVerificationProtocolType](./literals.md#contactmethodverificationprotocoltype))
   *(required)*
 
 Returns
@@ -2210,13 +2226,15 @@ Returns
 Type annotations for `boto3.client("lightsail").set_ip_address_type` method.
 
 Boto3 documentation:
-[Lightsail.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type)
+[Lightsail.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type)
 
 Arguments:
 
-- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `resourceName`: `str` *(required)*
-- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype) *(required)*
+- `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
+  *(required)*
 
 Returns
 [SetIpAddressTypeResultTypeDef](./type_defs.md#setipaddresstyperesulttypedef).
@@ -2226,7 +2244,7 @@ Returns
 Type annotations for `boto3.client("lightsail").start_instance` method.
 
 Boto3 documentation:
-[Lightsail.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_instance)
+[Lightsail.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.start_instance)
 
 Arguments:
 
@@ -2241,7 +2259,7 @@ Type annotations for `boto3.client("lightsail").start_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.start_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_relational_database)
+[Lightsail.Client.start_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.start_relational_database)
 
 Arguments:
 
@@ -2255,7 +2273,7 @@ Returns
 Type annotations for `boto3.client("lightsail").stop_instance` method.
 
 Boto3 documentation:
-[Lightsail.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_instance)
+[Lightsail.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.stop_instance)
 
 Arguments:
 
@@ -2270,7 +2288,7 @@ Type annotations for `boto3.client("lightsail").stop_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.stop_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_relational_database)
+[Lightsail.Client.stop_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.stop_relational_database)
 
 Arguments:
 
@@ -2285,7 +2303,7 @@ Returns
 Type annotations for `boto3.client("lightsail").tag_resource` method.
 
 Boto3 documentation:
-[Lightsail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource)
+[Lightsail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.tag_resource)
 
 Arguments:
 
@@ -2300,12 +2318,12 @@ Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 Type annotations for `boto3.client("lightsail").test_alarm` method.
 
 Boto3 documentation:
-[Lightsail.Client.test_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.test_alarm)
+[Lightsail.Client.test_alarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.test_alarm)
 
 Arguments:
 
 - `alarmName`: `str` *(required)*
-- `state`: [AlarmState](./literals.md#alarmstate) *(required)*
+- `state`: [AlarmStateType](./literals.md#alarmstatetype) *(required)*
 
 Returns [TestAlarmResultTypeDef](./type_defs.md#testalarmresulttypedef).
 
@@ -2314,7 +2332,7 @@ Returns [TestAlarmResultTypeDef](./type_defs.md#testalarmresulttypedef).
 Type annotations for `boto3.client("lightsail").unpeer_vpc` method.
 
 Boto3 documentation:
-[Lightsail.Client.unpeer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc)
+[Lightsail.Client.unpeer_vpc](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc)
 
 Returns [UnpeerVpcResultTypeDef](./type_defs.md#unpeervpcresulttypedef).
 
@@ -2323,7 +2341,7 @@ Returns [UnpeerVpcResultTypeDef](./type_defs.md#unpeervpcresulttypedef).
 Type annotations for `boto3.client("lightsail").untag_resource` method.
 
 Boto3 documentation:
-[Lightsail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource)
+[Lightsail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.untag_resource)
 
 Arguments:
 
@@ -2340,12 +2358,13 @@ Type annotations for `boto3.client("lightsail").update_container_service`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.update_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service)
+[Lightsail.Client.update_container_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_container_service)
 
 Arguments:
 
 - `serviceName`: `str` *(required)*
-- `power`: [ContainerServicePowerName](./literals.md#containerservicepowername)
+- `power`:
+  [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
 - `scale`: `int`
 - `isDisabled`: `bool`
 - `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
@@ -2358,7 +2377,7 @@ Returns
 Type annotations for `boto3.client("lightsail").update_distribution` method.
 
 Boto3 documentation:
-[Lightsail.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution)
+[Lightsail.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_distribution)
 
 Arguments:
 
@@ -2381,7 +2400,7 @@ Type annotations for `boto3.client("lightsail").update_distribution_bundle`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.update_distribution_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle)
+[Lightsail.Client.update_distribution_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle)
 
 Arguments:
 
@@ -2396,7 +2415,7 @@ Returns
 Type annotations for `boto3.client("lightsail").update_domain_entry` method.
 
 Boto3 documentation:
-[Lightsail.Client.update_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_domain_entry)
+[Lightsail.Client.update_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_domain_entry)
 
 Arguments:
 
@@ -2413,13 +2432,13 @@ Type annotations for `boto3.client("lightsail").update_load_balancer_attribute`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.update_load_balancer_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute)
+[Lightsail.Client.update_load_balancer_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute)
 
 Arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `attributeName`:
-  [LoadBalancerAttributeName](./literals.md#loadbalancerattributename)
+  [LoadBalancerAttributeNameType](./literals.md#loadbalancerattributenametype)
   *(required)*
 - `attributeValue`: `str` *(required)*
 
@@ -2432,7 +2451,7 @@ Type annotations for `boto3.client("lightsail").update_relational_database`
 method.
 
 Boto3 documentation:
-[Lightsail.Client.update_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database)
+[Lightsail.Client.update_relational_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_relational_database)
 
 Arguments:
 
@@ -2456,7 +2475,7 @@ Type annotations for
 `boto3.client("lightsail").update_relational_database_parameters` method.
 
 Boto3 documentation:
-[Lightsail.Client.update_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters)
+[Lightsail.Client.update_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters)
 
 Arguments:
 

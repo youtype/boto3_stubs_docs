@@ -3,7 +3,7 @@
 > [Index](..) > [CodeDeploy](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
 [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
@@ -146,7 +146,7 @@ Optional fields:
 - `createTime`: `datetime`
 - `linkedToGitHub`: `bool`
 - `gitHubAccountName`: `str`
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 
 ## AutoRollbackConfigurationTypeDef
 
@@ -157,7 +157,8 @@ from mypy_boto3_codedeploy.type_defs import AutoRollbackConfigurationTypeDef
 Optional fields:
 
 - `enabled`: `bool`
-- `events`: `List`\[[AutoRollbackEvent](./literals.md#autorollbackevent)\]
+- `events`:
+  `List`\[[AutoRollbackEventType](./literals.md#autorollbackeventtype)\]
 
 ## AutoScalingGroupTypeDef
 
@@ -288,7 +289,7 @@ from mypy_boto3_codedeploy.type_defs import BlueInstanceTerminationOptionTypeDef
 
 Optional fields:
 
-- `action`: [InstanceAction](./literals.md#instanceaction)
+- `action`: [InstanceActionType](./literals.md#instanceactiontype)
 - `terminationWaitTimeInMinutes`: `int`
 
 ## CloudFormationTargetTypeDef
@@ -304,7 +305,7 @@ Optional fields:
 - `lastUpdatedAt`: `datetime`
 - `lifecycleEvents`:
   `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `status`: [TargetStatus](./literals.md#targetstatus)
+- `status`: [TargetStatusType](./literals.md#targetstatustype)
 - `resourceType`: `str`
 - `targetVersionWeight`: `float`
 
@@ -394,7 +395,7 @@ Optional fields:
 - `minimumHealthyHosts`:
   [MinimumHealthyHostsTypeDef](./type_defs.md#minimumhealthyhoststypedef)
 - `createTime`: `datetime`
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `trafficRoutingConfig`:
   [TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef)
 
@@ -428,7 +429,7 @@ Optional fields:
 - `deploymentStyle`:
   [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
 - `outdatedInstancesStrategy`:
-  [OutdatedInstancesStrategy](./literals.md#outdatedinstancesstrategy)
+  [OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype)
 - `blueGreenDeploymentConfiguration`:
   [BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef)
 - `loadBalancerInfo`:
@@ -440,8 +441,9 @@ Optional fields:
 - `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
 - `onPremisesTagSet`:
   [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
-- `ecsServices`: `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
+- `ecsServices`:
+  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
 
 ## DeploymentInfoTypeDef
 
@@ -458,7 +460,7 @@ Optional fields:
 - `previousRevision`:
   [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
 - `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `status`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `errorInformation`:
   [ErrorInformationTypeDef](./type_defs.md#errorinformationtypedef)
 - `createTime`: `datetime`
@@ -467,7 +469,7 @@ Optional fields:
 - `deploymentOverview`:
   [DeploymentOverviewTypeDef](./type_defs.md#deploymentoverviewtypedef)
 - `description`: `str`
-- `creator`: [DeploymentCreator](./literals.md#deploymentcreator)
+- `creator`: [DeploymentCreatorType](./literals.md#deploymentcreatortype)
 - `ignoreApplicationStopFailures`: `bool`
 - `autoRollbackConfiguration`:
   [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
@@ -483,9 +485,10 @@ Optional fields:
 - `loadBalancerInfo`:
   [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
 - `additionalDeploymentStatusInfo`: `str`
-- `fileExistsBehavior`: [FileExistsBehavior](./literals.md#fileexistsbehavior)
+- `fileExistsBehavior`:
+  [FileExistsBehaviorType](./literals.md#fileexistsbehaviortype)
 - `deploymentStatusMessages`: `List`\[`str`\]
-- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
+- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `externalId`: `str`
 - `relatedDeployments`:
   [RelatedDeploymentsTypeDef](./type_defs.md#relateddeploymentstypedef)
@@ -513,7 +516,8 @@ from mypy_boto3_codedeploy.type_defs import DeploymentReadyOptionTypeDef
 
 Optional fields:
 
-- `actionOnTimeout`: [DeploymentReadyAction](./literals.md#deploymentreadyaction)
+- `actionOnTimeout`:
+  [DeploymentReadyActionType](./literals.md#deploymentreadyactiontype)
 - `waitTimeInMinutes`: `int`
 
 ## DeploymentStyleTypeDef
@@ -524,8 +528,9 @@ from mypy_boto3_codedeploy.type_defs import DeploymentStyleTypeDef
 
 Optional fields:
 
-- `deploymentType`: [DeploymentType](./literals.md#deploymenttype)
-- `deploymentOption`: [DeploymentOption](./literals.md#deploymentoption)
+- `deploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
+- `deploymentOption`:
+  [DeploymentOptionType](./literals.md#deploymentoptiontype)
 
 ## DeploymentTargetTypeDef
 
@@ -536,8 +541,9 @@ from mypy_boto3_codedeploy.type_defs import DeploymentTargetTypeDef
 Optional fields:
 
 - `deploymentTargetType`:
-  [DeploymentTargetType](./literals.md#deploymenttargettype)
-- `instanceTarget`: [InstanceTargetTypeDef](./type_defs.md#instancetargettypedef)
+  [DeploymentTargetTypeType](./literals.md#deploymenttargettypetype)
+- `instanceTarget`:
+  [InstanceTargetTypeDef](./type_defs.md#instancetargettypedef)
 - `lambdaTarget`: [LambdaTargetTypeDef](./type_defs.md#lambdatargettypedef)
 - `ecsTarget`: [ECSTargetTypeDef](./type_defs.md#ecstargettypedef)
 - `cloudFormationTarget`:
@@ -551,7 +557,7 @@ from mypy_boto3_codedeploy.type_defs import DiagnosticsTypeDef
 
 Optional fields:
 
-- `errorCode`: [LifecycleErrorCode](./literals.md#lifecycleerrorcode)
+- `errorCode`: [LifecycleErrorCodeType](./literals.md#lifecycleerrorcodetype)
 - `scriptName`: `str`
 - `message`: `str`
 - `logTail`: `str`
@@ -566,7 +572,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Type`: [EC2TagFilterType](./literals.md#ec2tagfiltertype)
+- `Type`: [EC2TagFilterTypeType](./literals.md#ec2tagfiltertypetype)
 
 ## EC2TagSetTypeDef
 
@@ -604,8 +610,9 @@ Optional fields:
 - `lastUpdatedAt`: `datetime`
 - `lifecycleEvents`:
   `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `status`: [TargetStatus](./literals.md#targetstatus)
-- `taskSetsInfo`: `List`\[[ECSTaskSetTypeDef](./type_defs.md#ecstasksettypedef)\]
+- `status`: [TargetStatusType](./literals.md#targetstatustype)
+- `taskSetsInfo`:
+  `List`\[[ECSTaskSetTypeDef](./type_defs.md#ecstasksettypedef)\]
 
 ## ECSTaskSetTypeDef
 
@@ -621,8 +628,9 @@ Optional fields:
 - `runningCount`: `int`
 - `status`: `str`
 - `trafficWeight`: `float`
-- `targetGroup`: [TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef)
-- `taskSetLabel`: [TargetLabel](./literals.md#targetlabel)
+- `targetGroup`:
+  [TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef)
+- `taskSetLabel`: [TargetLabelType](./literals.md#targetlabeltype)
 
 ## ELBInfoTypeDef
 
@@ -642,7 +650,7 @@ from mypy_boto3_codedeploy.type_defs import ErrorInformationTypeDef
 
 Optional fields:
 
-- `code`: [ErrorCode](./literals.md#errorcode)
+- `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
 
 ## GenericRevisionInfoTypeDef
@@ -667,7 +675,8 @@ from mypy_boto3_codedeploy.type_defs import GetApplicationOutputTypeDef
 
 Required fields:
 
-- `application`: [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
+- `application`:
+  [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -733,7 +742,8 @@ from mypy_boto3_codedeploy.type_defs import GetDeploymentOutputTypeDef
 
 Required fields:
 
-- `deploymentInfo`: [DeploymentInfoTypeDef](./type_defs.md#deploymentinfotypedef)
+- `deploymentInfo`:
+  [DeploymentInfoTypeDef](./type_defs.md#deploymentinfotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -782,7 +792,7 @@ from mypy_boto3_codedeploy.type_defs import GreenFleetProvisioningOptionTypeDef
 Optional fields:
 
 - `action`:
-  [GreenFleetProvisioningAction](./literals.md#greenfleetprovisioningaction)
+  [GreenFleetProvisioningActionType](./literals.md#greenfleetprovisioningactiontype)
 
 ## InstanceInfoTypeDef
 
@@ -810,11 +820,11 @@ Optional fields:
 
 - `deploymentId`: `str`
 - `instanceId`: `str`
-- `status`: [InstanceStatus](./literals.md#instancestatus)
+- `status`: [InstanceStatusType](./literals.md#instancestatustype)
 - `lastUpdatedAt`: `datetime`
 - `lifecycleEvents`:
   `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `instanceType`: [InstanceType](./literals.md#instancetype)
+- `instanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 
 ## InstanceTargetTypeDef
 
@@ -827,11 +837,11 @@ Optional fields:
 - `deploymentId`: `str`
 - `targetId`: `str`
 - `targetArn`: `str`
-- `status`: [TargetStatus](./literals.md#targetstatus)
+- `status`: [TargetStatusType](./literals.md#targetstatustype)
 - `lastUpdatedAt`: `datetime`
 - `lifecycleEvents`:
   `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `instanceLabel`: [TargetLabel](./literals.md#targetlabel)
+- `instanceLabel`: [TargetLabelType](./literals.md#targetlabeltype)
 
 ## LambdaFunctionInfoTypeDef
 
@@ -858,7 +868,7 @@ Optional fields:
 - `deploymentId`: `str`
 - `targetId`: `str`
 - `targetArn`: `str`
-- `status`: [TargetStatus](./literals.md#targetstatus)
+- `status`: [TargetStatusType](./literals.md#targetstatustype)
 - `lastUpdatedAt`: `datetime`
 - `lifecycleEvents`:
   `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
@@ -874,7 +884,7 @@ from mypy_boto3_codedeploy.type_defs import LastDeploymentInfoTypeDef
 Optional fields:
 
 - `deploymentId`: `str`
-- `status`: [DeploymentStatus](./literals.md#deploymentstatus)
+- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `endTime`: `datetime`
 - `createTime`: `datetime`
 
@@ -890,7 +900,7 @@ Optional fields:
 - `diagnostics`: [DiagnosticsTypeDef](./type_defs.md#diagnosticstypedef)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
-- `status`: [LifecycleEventStatus](./literals.md#lifecycleeventstatus)
+- `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
 
 ## ListApplicationRevisionsOutputTypeDef
 
@@ -1046,7 +1056,8 @@ from mypy_boto3_codedeploy.type_defs import MinimumHealthyHostsTypeDef
 
 Optional fields:
 
-- `type`: [MinimumHealthyHostsType](./literals.md#minimumhealthyhoststype)
+- `type`:
+  [MinimumHealthyHostsTypeType](./literals.md#minimumhealthyhoststypetype)
 - `value`: `int`
 
 ## OnPremisesTagSetTypeDef
@@ -1141,11 +1152,14 @@ from mypy_boto3_codedeploy.type_defs import RevisionLocationTypeDef
 
 Optional fields:
 
-- `revisionType`: [RevisionLocationType](./literals.md#revisionlocationtype)
+- `revisionType`:
+  [RevisionLocationTypeType](./literals.md#revisionlocationtypetype)
 - `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `gitHubLocation`: [GitHubLocationTypeDef](./type_defs.md#githublocationtypedef)
+- `gitHubLocation`:
+  [GitHubLocationTypeDef](./type_defs.md#githublocationtypedef)
 - `string`: [RawStringTypeDef](./type_defs.md#rawstringtypedef)
-- `appSpecContent`: [AppSpecContentTypeDef](./type_defs.md#appspeccontenttypedef)
+- `appSpecContent`:
+  [AppSpecContentTypeDef](./type_defs.md#appspeccontenttypedef)
 
 ## RollbackInfoTypeDef
 
@@ -1169,7 +1183,7 @@ Optional fields:
 
 - `bucket`: `str`
 - `key`: `str`
-- `bundleType`: [BundleType](./literals.md#bundletype)
+- `bundleType`: [BundleTypeType](./literals.md#bundletypetype)
 - `version`: `str`
 - `eTag`: `str`
 
@@ -1181,7 +1195,7 @@ from mypy_boto3_codedeploy.type_defs import StopDeploymentOutputTypeDef
 
 Required fields:
 
-- `status`: [StopStatus](./literals.md#stopstatus)
+- `status`: [StopStatusType](./literals.md#stopstatustype)
 - `statusMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1196,7 +1210,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Type`: [TagFilterType](./literals.md#tagfiltertype)
+- `Type`: [TagFilterTypeType](./literals.md#tagfiltertypetype)
 
 ## TagTypeDef
 
@@ -1296,7 +1310,7 @@ from mypy_boto3_codedeploy.type_defs import TrafficRoutingConfigTypeDef
 
 Optional fields:
 
-- `type`: [TrafficRoutingType](./literals.md#trafficroutingtype)
+- `type`: [TrafficRoutingTypeType](./literals.md#trafficroutingtypetype)
 - `timeBasedCanary`:
   [TimeBasedCanaryTypeDef](./type_defs.md#timebasedcanarytypedef)
 - `timeBasedLinear`:
@@ -1312,7 +1326,8 @@ Optional fields:
 
 - `triggerName`: `str`
 - `triggerTargetArn`: `str`
-- `triggerEvents`: `List`\[[TriggerEventType](./literals.md#triggereventtype)\]
+- `triggerEvents`:
+  `List`\[[TriggerEventTypeType](./literals.md#triggereventtypetype)\]
 
 ## UpdateDeploymentGroupOutputTypeDef
 

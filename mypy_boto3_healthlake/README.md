@@ -3,7 +3,7 @@
 > [Index](..) > HealthLake
 
 Auto-generated documentation for
-[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
 [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
@@ -29,30 +29,30 @@ Can be used directly:
 from mypy_boto3_healthlake.client import HealthLakeClient
 ```
 
-HealthLakeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_fhir_datastore](./client.md#create-fhir-datastore)
-- [delete_fhir_datastore](./client.md#delete-fhir-datastore)
-- [describe_fhir_datastore](./client.md#describe-fhir-datastore)
-- [describe_fhir_export_job](./client.md#describe-fhir-export-job)
-- [describe_fhir_import_job](./client.md#describe-fhir-import-job)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [list_fhir_datastores](./client.md#list-fhir-datastores)
-- [start_fhir_export_job](./client.md#start-fhir-export-job)
-- [start_fhir_import_job](./client.md#start-fhir-import-job)
+- [can_paginate](./client.md#can_paginate)
+- [create_fhir_datastore](./client.md#create_fhir_datastore)
+- [delete_fhir_datastore](./client.md#delete_fhir_datastore)
+- [describe_fhir_datastore](./client.md#describe_fhir_datastore)
+- [describe_fhir_export_job](./client.md#describe_fhir_export_job)
+- [describe_fhir_import_job](./client.md#describe_fhir_import_job)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_fhir_datastores](./client.md#list_fhir_datastores)
+- [start_fhir_export_job](./client.md#start_fhir_export_job)
+- [start_fhir_import_job](./client.md#start_fhir_import_job)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+HealthLakeClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ThrottlingException
+- ValidationException
 
 ## Literals
 
@@ -61,13 +61,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_healthlake.literals import DatastoreStatus, ...
+from mypy_boto3_healthlake.literals import DatastoreStatusType, ...
 ```
 
-- [DatastoreStatus](./literals.md#datastorestatus)
-- [FHIRVersion](./literals.md#fhirversion)
-- [JobStatus](./literals.md#jobstatus)
-- [PreloadDataType](./literals.md#preloaddatatype)
+- [DatastoreStatusType](./literals.md#datastorestatustype)
+- [FHIRVersionType](./literals.md#fhirversiontype)
+- [JobStatusType](./literals.md#jobstatustype)
+- [PreloadDataTypeType](./literals.md#preloaddatatypetype)
 
 ## Typed dictionaries
 

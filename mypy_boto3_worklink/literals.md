@@ -3,31 +3,31 @@
 > [Index](..) > [WorkLink](.) > Literals
 
 Auto-generated documentation for
-[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
+[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/worklink.html#WorkLink)
 type annotations stubs module
 [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 - [Literals for boto3 WorkLink module](#literals-for-boto3-worklink-module)
-  - [AuthorizationProviderType](#authorizationprovidertype)
-  - [DeviceStatus](#devicestatus)
-  - [DomainStatus](#domainstatus)
-  - [FleetStatus](#fleetstatus)
-  - [IdentityProviderType](#identityprovidertype)
+  - [AuthorizationProviderTypeType](#authorizationprovidertypetype)
+  - [DeviceStatusType](#devicestatustype)
+  - [DomainStatusType](#domainstatustype)
+  - [FleetStatusType](#fleetstatustype)
+  - [IdentityProviderTypeType](#identityprovidertypetype)
 
-## AuthorizationProviderType
+## AuthorizationProviderTypeType
 
 ```python
-from mypy_boto3_worklink.literals import AuthorizationProviderType
+from mypy_boto3_worklink.literals import AuthorizationProviderTypeType
 ```
 
 Values:
 
 - `SAML`
 
-## DeviceStatus
+## DeviceStatusType
 
 ```python
-from mypy_boto3_worklink.literals import DeviceStatus
+from mypy_boto3_worklink.literals import DeviceStatusType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `ACTIVE`
 - `SIGNED_OUT`
 
-## DomainStatus
+## DomainStatusType
 
 ```python
-from mypy_boto3_worklink.literals import DomainStatus
+from mypy_boto3_worklink.literals import DomainStatusType
 ```
 
 Values:
@@ -52,10 +52,10 @@ Values:
 - `INACTIVE`
 - `PENDING_VALIDATION`
 
-## FleetStatus
+## FleetStatusType
 
 ```python
-from mypy_boto3_worklink.literals import FleetStatus
+from mypy_boto3_worklink.literals import FleetStatusType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 - `FAILED_TO_CREATE`
 - `FAILED_TO_DELETE`
 
-## IdentityProviderType
+## IdentityProviderTypeType
 
 ```python
-from mypy_boto3_worklink.literals import IdentityProviderType
+from mypy_boto3_worklink.literals import IdentityProviderTypeType
 ```
 
 Values:

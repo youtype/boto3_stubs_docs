@@ -3,22 +3,22 @@
 > [Index](..) > [ConnectParticipant](.) > Literals
 
 Auto-generated documentation for
-[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
 [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 - [Literals for boto3 ConnectParticipant module](#literals-for-boto3-connectparticipant-module)
-  - [ArtifactStatus](#artifactstatus)
-  - [ChatItemType](#chatitemtype)
-  - [ConnectionType](#connectiontype)
-  - [ParticipantRole](#participantrole)
-  - [ScanDirection](#scandirection)
-  - [SortKey](#sortkey)
+  - [ArtifactStatusType](#artifactstatustype)
+  - [ChatItemTypeType](#chatitemtypetype)
+  - [ConnectionTypeType](#connectiontypetype)
+  - [ParticipantRoleType](#participantroletype)
+  - [ScanDirectionType](#scandirectiontype)
+  - [SortKeyType](#sortkeytype)
 
-## ArtifactStatus
+## ArtifactStatusType
 
 ```python
-from mypy_boto3_connectparticipant.literals import ArtifactStatus
+from mypy_boto3_connectparticipant.literals import ArtifactStatusType
 ```
 
 Values:
@@ -27,10 +27,10 @@ Values:
 - `IN_PROGRESS`
 - `REJECTED`
 
-## ChatItemType
+## ChatItemTypeType
 
 ```python
-from mypy_boto3_connectparticipant.literals import ChatItemType
+from mypy_boto3_connectparticipant.literals import ChatItemTypeType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `TRANSFER_SUCCEEDED`
 - `TYPING`
 
-## ConnectionType
+## ConnectionTypeType
 
 ```python
-from mypy_boto3_connectparticipant.literals import ConnectionType
+from mypy_boto3_connectparticipant.literals import ConnectionTypeType
 ```
 
 Values:
@@ -57,10 +57,10 @@ Values:
 - `CONNECTION_CREDENTIALS`
 - `WEBSOCKET`
 
-## ParticipantRole
+## ParticipantRoleType
 
 ```python
-from mypy_boto3_connectparticipant.literals import ParticipantRole
+from mypy_boto3_connectparticipant.literals import ParticipantRoleType
 ```
 
 Values:
@@ -69,10 +69,10 @@ Values:
 - `CUSTOMER`
 - `SYSTEM`
 
-## ScanDirection
+## ScanDirectionType
 
 ```python
-from mypy_boto3_connectparticipant.literals import ScanDirection
+from mypy_boto3_connectparticipant.literals import ScanDirectionType
 ```
 
 Values:
@@ -80,10 +80,10 @@ Values:
 - `BACKWARD`
 - `FORWARD`
 
-## SortKey
+## SortKeyType
 
 ```python
-from mypy_boto3_connectparticipant.literals import SortKey
+from mypy_boto3_connectparticipant.literals import SortKeyType
 ```
 
 Values:

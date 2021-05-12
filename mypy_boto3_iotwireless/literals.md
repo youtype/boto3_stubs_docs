@@ -3,30 +3,30 @@
 > [Index](..) > [IoTWireless](.) > Literals
 
 Auto-generated documentation for
-[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module
 [mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 - [Literals for boto3 IoTWireless module](#literals-for-boto3-iotwireless-module)
-  - [BatteryLevel](#batterylevel)
-  - [ConnectionStatus](#connectionstatus)
-  - [DeviceState](#devicestate)
-  - [Event](#event)
-  - [ExpressionType](#expressiontype)
-  - [MessageType](#messagetype)
-  - [PartnerType](#partnertype)
-  - [SigningAlg](#signingalg)
-  - [WirelessDeviceIdType](#wirelessdeviceidtype)
-  - [WirelessDeviceType](#wirelessdevicetype)
-  - [WirelessGatewayIdType](#wirelessgatewayidtype)
-  - [WirelessGatewayServiceType](#wirelessgatewayservicetype)
-  - [WirelessGatewayTaskDefinitionType](#wirelessgatewaytaskdefinitiontype)
-  - [WirelessGatewayTaskStatus](#wirelessgatewaytaskstatus)
+  - [BatteryLevelType](#batteryleveltype)
+  - [ConnectionStatusType](#connectionstatustype)
+  - [DeviceStateType](#devicestatetype)
+  - [EventType](#eventtype)
+  - [ExpressionTypeType](#expressiontypetype)
+  - [MessageTypeType](#messagetypetype)
+  - [PartnerTypeType](#partnertypetype)
+  - [SigningAlgType](#signingalgtype)
+  - [WirelessDeviceIdTypeType](#wirelessdeviceidtypetype)
+  - [WirelessDeviceTypeType](#wirelessdevicetypetype)
+  - [WirelessGatewayIdTypeType](#wirelessgatewayidtypetype)
+  - [WirelessGatewayServiceTypeType](#wirelessgatewayservicetypetype)
+  - [WirelessGatewayTaskDefinitionTypeType](#wirelessgatewaytaskdefinitiontypetype)
+  - [WirelessGatewayTaskStatusType](#wirelessgatewaytaskstatustype)
 
-## BatteryLevel
+## BatteryLevelType
 
 ```python
-from mypy_boto3_iotwireless.literals import BatteryLevel
+from mypy_boto3_iotwireless.literals import BatteryLevelType
 ```
 
 Values:
@@ -35,10 +35,10 @@ Values:
 - `low`
 - `normal`
 
-## ConnectionStatus
+## ConnectionStatusType
 
 ```python
-from mypy_boto3_iotwireless.literals import ConnectionStatus
+from mypy_boto3_iotwireless.literals import ConnectionStatusType
 ```
 
 Values:
@@ -46,10 +46,10 @@ Values:
 - `Connected`
 - `Disconnected`
 
-## DeviceState
+## DeviceStateType
 
 ```python
-from mypy_boto3_iotwireless.literals import DeviceState
+from mypy_boto3_iotwireless.literals import DeviceStateType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `RegisteredReachable`
 - `RegisteredUnreachable`
 
-## Event
+## EventType
 
 ```python
-from mypy_boto3_iotwireless.literals import Event
+from mypy_boto3_iotwireless.literals import EventType
 ```
 
 Values:
@@ -73,10 +73,10 @@ Values:
 - `nack`
 - `passthrough`
 
-## ExpressionType
+## ExpressionTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import ExpressionType
+from mypy_boto3_iotwireless.literals import ExpressionTypeType
 ```
 
 Values:
@@ -84,10 +84,10 @@ Values:
 - `MqttTopic`
 - `RuleName`
 
-## MessageType
+## MessageTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import MessageType
+from mypy_boto3_iotwireless.literals import MessageTypeType
 ```
 
 Values:
@@ -97,20 +97,20 @@ Values:
 - `CUSTOM_COMMAND_ID_RESP`
 - `CUSTOM_COMMAND_ID_SET`
 
-## PartnerType
+## PartnerTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import PartnerType
+from mypy_boto3_iotwireless.literals import PartnerTypeType
 ```
 
 Values:
 
 - `Sidewalk`
 
-## SigningAlg
+## SigningAlgType
 
 ```python
-from mypy_boto3_iotwireless.literals import SigningAlg
+from mypy_boto3_iotwireless.literals import SigningAlgType
 ```
 
 Values:
@@ -118,10 +118,10 @@ Values:
 - `Ed25519`
 - `P256r1`
 
-## WirelessDeviceIdType
+## WirelessDeviceIdTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import WirelessDeviceIdType
+from mypy_boto3_iotwireless.literals import WirelessDeviceIdTypeType
 ```
 
 Values:
@@ -130,10 +130,10 @@ Values:
 - `ThingName`
 - `WirelessDeviceId`
 
-## WirelessDeviceType
+## WirelessDeviceTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import WirelessDeviceType
+from mypy_boto3_iotwireless.literals import WirelessDeviceTypeType
 ```
 
 Values:
@@ -141,10 +141,10 @@ Values:
 - `LoRaWAN`
 - `Sidewalk`
 
-## WirelessGatewayIdType
+## WirelessGatewayIdTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import WirelessGatewayIdType
+from mypy_boto3_iotwireless.literals import WirelessGatewayIdTypeType
 ```
 
 Values:
@@ -153,10 +153,10 @@ Values:
 - `ThingName`
 - `WirelessGatewayId`
 
-## WirelessGatewayServiceType
+## WirelessGatewayServiceTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import WirelessGatewayServiceType
+from mypy_boto3_iotwireless.literals import WirelessGatewayServiceTypeType
 ```
 
 Values:
@@ -164,20 +164,20 @@ Values:
 - `CUPS`
 - `LNS`
 
-## WirelessGatewayTaskDefinitionType
+## WirelessGatewayTaskDefinitionTypeType
 
 ```python
-from mypy_boto3_iotwireless.literals import WirelessGatewayTaskDefinitionType
+from mypy_boto3_iotwireless.literals import WirelessGatewayTaskDefinitionTypeType
 ```
 
 Values:
 
 - `UPDATE`
 
-## WirelessGatewayTaskStatus
+## WirelessGatewayTaskStatusType
 
 ```python
-from mypy_boto3_iotwireless.literals import WirelessGatewayTaskStatus
+from mypy_boto3_iotwireless.literals import WirelessGatewayTaskStatusType
 ```
 
 Values:

@@ -3,15 +3,15 @@
 > [Index](..) > [NetworkManager](.) > Literals
 
 Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
 [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [Literals for boto3 NetworkManager module](#literals-for-boto3-networkmanager-module)
-  - [ConnectionState](#connectionstate)
-  - [CustomerGatewayAssociationState](#customergatewayassociationstate)
+  - [ConnectionStateType](#connectionstatetype)
+  - [CustomerGatewayAssociationStateType](#customergatewayassociationstatetype)
   - [DescribeGlobalNetworksPaginatorName](#describeglobalnetworkspaginatorname)
-  - [DeviceState](#devicestate)
+  - [DeviceStateType](#devicestatetype)
   - [GetConnectionsPaginatorName](#getconnectionspaginatorname)
   - [GetCustomerGatewayAssociationsPaginatorName](#getcustomergatewayassociationspaginatorname)
   - [GetDevicesPaginatorName](#getdevicespaginatorname)
@@ -20,17 +20,17 @@ type annotations stubs module
   - [GetSitesPaginatorName](#getsitespaginatorname)
   - [GetTransitGatewayConnectPeerAssociationsPaginatorName](#gettransitgatewayconnectpeerassociationspaginatorname)
   - [GetTransitGatewayRegistrationsPaginatorName](#gettransitgatewayregistrationspaginatorname)
-  - [GlobalNetworkState](#globalnetworkstate)
-  - [LinkAssociationState](#linkassociationstate)
-  - [LinkState](#linkstate)
-  - [SiteState](#sitestate)
-  - [TransitGatewayConnectPeerAssociationState](#transitgatewayconnectpeerassociationstate)
-  - [TransitGatewayRegistrationState](#transitgatewayregistrationstate)
+  - [GlobalNetworkStateType](#globalnetworkstatetype)
+  - [LinkAssociationStateType](#linkassociationstatetype)
+  - [LinkStateType](#linkstatetype)
+  - [SiteStateType](#sitestatetype)
+  - [TransitGatewayConnectPeerAssociationStateType](#transitgatewayconnectpeerassociationstatetype)
+  - [TransitGatewayRegistrationStateType](#transitgatewayregistrationstatetype)
 
-## ConnectionState
+## ConnectionStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import ConnectionState
+from mypy_boto3_networkmanager.literals import ConnectionStateType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `PENDING`
 - `UPDATING`
 
-## CustomerGatewayAssociationState
+## CustomerGatewayAssociationStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import CustomerGatewayAssociationState
+from mypy_boto3_networkmanager.literals import CustomerGatewayAssociationStateType
 ```
 
 Values:
@@ -63,10 +63,10 @@ Values:
 
 - `describe_global_networks`
 
-## DeviceState
+## DeviceStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import DeviceState
+from mypy_boto3_networkmanager.literals import DeviceStateType
 ```
 
 Values:
@@ -156,10 +156,10 @@ Values:
 
 - `get_transit_gateway_registrations`
 
-## GlobalNetworkState
+## GlobalNetworkStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import GlobalNetworkState
+from mypy_boto3_networkmanager.literals import GlobalNetworkStateType
 ```
 
 Values:
@@ -169,10 +169,10 @@ Values:
 - `PENDING`
 - `UPDATING`
 
-## LinkAssociationState
+## LinkAssociationStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import LinkAssociationState
+from mypy_boto3_networkmanager.literals import LinkAssociationStateType
 ```
 
 Values:
@@ -182,10 +182,10 @@ Values:
 - `DELETING`
 - `PENDING`
 
-## LinkState
+## LinkStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import LinkState
+from mypy_boto3_networkmanager.literals import LinkStateType
 ```
 
 Values:
@@ -195,10 +195,10 @@ Values:
 - `PENDING`
 - `UPDATING`
 
-## SiteState
+## SiteStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import SiteState
+from mypy_boto3_networkmanager.literals import SiteStateType
 ```
 
 Values:
@@ -208,10 +208,10 @@ Values:
 - `PENDING`
 - `UPDATING`
 
-## TransitGatewayConnectPeerAssociationState
+## TransitGatewayConnectPeerAssociationStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import TransitGatewayConnectPeerAssociationState
+from mypy_boto3_networkmanager.literals import TransitGatewayConnectPeerAssociationStateType
 ```
 
 Values:
@@ -221,10 +221,10 @@ Values:
 - `DELETING`
 - `PENDING`
 
-## TransitGatewayRegistrationState
+## TransitGatewayRegistrationStateType
 
 ```python
-from mypy_boto3_networkmanager.literals import TransitGatewayRegistrationState
+from mypy_boto3_networkmanager.literals import TransitGatewayRegistrationStateType
 ```
 
 Values:

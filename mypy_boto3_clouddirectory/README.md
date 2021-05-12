@@ -3,7 +3,7 @@
 > [Index](..) > CloudDirectory
 
 Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
 [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
@@ -30,118 +30,118 @@ Can be used directly:
 from mypy_boto3_clouddirectory.client import CloudDirectoryClient
 ```
 
-CloudDirectoryClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_facet_to_object](./client.md#add-facet-to-object)
-- [apply_schema](./client.md#apply-schema)
-- [attach_object](./client.md#attach-object)
-- [attach_policy](./client.md#attach-policy)
-- [attach_to_index](./client.md#attach-to-index)
-- [attach_typed_link](./client.md#attach-typed-link)
-- [batch_read](./client.md#batch-read)
-- [batch_write](./client.md#batch-write)
-- [can_paginate](./client.md#can-paginate)
-- [create_directory](./client.md#create-directory)
-- [create_facet](./client.md#create-facet)
-- [create_index](./client.md#create-index)
-- [create_object](./client.md#create-object)
-- [create_schema](./client.md#create-schema)
-- [create_typed_link_facet](./client.md#create-typed-link-facet)
-- [delete_directory](./client.md#delete-directory)
-- [delete_facet](./client.md#delete-facet)
-- [delete_object](./client.md#delete-object)
-- [delete_schema](./client.md#delete-schema)
-- [delete_typed_link_facet](./client.md#delete-typed-link-facet)
-- [detach_from_index](./client.md#detach-from-index)
-- [detach_object](./client.md#detach-object)
-- [detach_policy](./client.md#detach-policy)
-- [detach_typed_link](./client.md#detach-typed-link)
-- [disable_directory](./client.md#disable-directory)
-- [enable_directory](./client.md#enable-directory)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_applied_schema_version](./client.md#get-applied-schema-version)
-- [get_directory](./client.md#get-directory)
-- [get_facet](./client.md#get-facet)
-- [get_link_attributes](./client.md#get-link-attributes)
-- [get_object_attributes](./client.md#get-object-attributes)
-- [get_object_information](./client.md#get-object-information)
-- [get_paginator](./client.md#get-paginator)
-- [get_schema_as_json](./client.md#get-schema-as-json)
-- [get_typed_link_facet_information](./client.md#get-typed-link-facet-information)
-- [list_applied_schema_arns](./client.md#list-applied-schema-arns)
-- [list_attached_indices](./client.md#list-attached-indices)
-- [list_development_schema_arns](./client.md#list-development-schema-arns)
-- [list_directories](./client.md#list-directories)
-- [list_facet_attributes](./client.md#list-facet-attributes)
-- [list_facet_names](./client.md#list-facet-names)
-- [list_incoming_typed_links](./client.md#list-incoming-typed-links)
-- [list_index](./client.md#list-index)
-- [list_managed_schema_arns](./client.md#list-managed-schema-arns)
-- [list_object_attributes](./client.md#list-object-attributes)
-- [list_object_children](./client.md#list-object-children)
-- [list_object_parent_paths](./client.md#list-object-parent-paths)
-- [list_object_parents](./client.md#list-object-parents)
-- [list_object_policies](./client.md#list-object-policies)
-- [list_outgoing_typed_links](./client.md#list-outgoing-typed-links)
-- [list_policy_attachments](./client.md#list-policy-attachments)
-- [list_published_schema_arns](./client.md#list-published-schema-arns)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_typed_link_facet_attributes](./client.md#list-typed-link-facet-attributes)
-- [list_typed_link_facet_names](./client.md#list-typed-link-facet-names)
-- [lookup_policy](./client.md#lookup-policy)
-- [publish_schema](./client.md#publish-schema)
-- [put_schema_from_json](./client.md#put-schema-from-json)
-- [remove_facet_from_object](./client.md#remove-facet-from-object)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_facet](./client.md#update-facet)
-- [update_link_attributes](./client.md#update-link-attributes)
-- [update_object_attributes](./client.md#update-object-attributes)
-- [update_schema](./client.md#update-schema)
-- [update_typed_link_facet](./client.md#update-typed-link-facet)
-- [upgrade_applied_schema](./client.md#upgrade-applied-schema)
-- [upgrade_published_schema](./client.md#upgrade-published-schema)
+- [add_facet_to_object](./client.md#add_facet_to_object)
+- [apply_schema](./client.md#apply_schema)
+- [attach_object](./client.md#attach_object)
+- [attach_policy](./client.md#attach_policy)
+- [attach_to_index](./client.md#attach_to_index)
+- [attach_typed_link](./client.md#attach_typed_link)
+- [batch_read](./client.md#batch_read)
+- [batch_write](./client.md#batch_write)
+- [can_paginate](./client.md#can_paginate)
+- [create_directory](./client.md#create_directory)
+- [create_facet](./client.md#create_facet)
+- [create_index](./client.md#create_index)
+- [create_object](./client.md#create_object)
+- [create_schema](./client.md#create_schema)
+- [create_typed_link_facet](./client.md#create_typed_link_facet)
+- [delete_directory](./client.md#delete_directory)
+- [delete_facet](./client.md#delete_facet)
+- [delete_object](./client.md#delete_object)
+- [delete_schema](./client.md#delete_schema)
+- [delete_typed_link_facet](./client.md#delete_typed_link_facet)
+- [detach_from_index](./client.md#detach_from_index)
+- [detach_object](./client.md#detach_object)
+- [detach_policy](./client.md#detach_policy)
+- [detach_typed_link](./client.md#detach_typed_link)
+- [disable_directory](./client.md#disable_directory)
+- [enable_directory](./client.md#enable_directory)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_applied_schema_version](./client.md#get_applied_schema_version)
+- [get_directory](./client.md#get_directory)
+- [get_facet](./client.md#get_facet)
+- [get_link_attributes](./client.md#get_link_attributes)
+- [get_object_attributes](./client.md#get_object_attributes)
+- [get_object_information](./client.md#get_object_information)
+- [get_paginator](./client.md#get_paginator)
+- [get_schema_as_json](./client.md#get_schema_as_json)
+- [get_typed_link_facet_information](./client.md#get_typed_link_facet_information)
+- [list_applied_schema_arns](./client.md#list_applied_schema_arns)
+- [list_attached_indices](./client.md#list_attached_indices)
+- [list_development_schema_arns](./client.md#list_development_schema_arns)
+- [list_directories](./client.md#list_directories)
+- [list_facet_attributes](./client.md#list_facet_attributes)
+- [list_facet_names](./client.md#list_facet_names)
+- [list_incoming_typed_links](./client.md#list_incoming_typed_links)
+- [list_index](./client.md#list_index)
+- [list_managed_schema_arns](./client.md#list_managed_schema_arns)
+- [list_object_attributes](./client.md#list_object_attributes)
+- [list_object_children](./client.md#list_object_children)
+- [list_object_parent_paths](./client.md#list_object_parent_paths)
+- [list_object_parents](./client.md#list_object_parents)
+- [list_object_policies](./client.md#list_object_policies)
+- [list_outgoing_typed_links](./client.md#list_outgoing_typed_links)
+- [list_policy_attachments](./client.md#list_policy_attachments)
+- [list_published_schema_arns](./client.md#list_published_schema_arns)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_typed_link_facet_attributes](./client.md#list_typed_link_facet_attributes)
+- [list_typed_link_facet_names](./client.md#list_typed_link_facet_names)
+- [lookup_policy](./client.md#lookup_policy)
+- [publish_schema](./client.md#publish_schema)
+- [put_schema_from_json](./client.md#put_schema_from_json)
+- [remove_facet_from_object](./client.md#remove_facet_from_object)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_facet](./client.md#update_facet)
+- [update_link_attributes](./client.md#update_link_attributes)
+- [update_object_attributes](./client.md#update_object_attributes)
+- [update_schema](./client.md#update_schema)
+- [update_typed_link_facet](./client.md#update_typed_link_facet)
+- [upgrade_applied_schema](./client.md#upgrade_applied_schema)
+- [upgrade_published_schema](./client.md#upgrade_published_schema)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [BatchWriteException](./client.md#batchwriteexception)
-- [CannotListParentOfRootException](./client.md#cannotlistparentofrootexception)
-- [ClientError](./client.md#clienterror)
-- [DirectoryAlreadyExistsException](./client.md#directoryalreadyexistsexception)
-- [DirectoryDeletedException](./client.md#directorydeletedexception)
-- [DirectoryNotDisabledException](./client.md#directorynotdisabledexception)
-- [DirectoryNotEnabledException](./client.md#directorynotenabledexception)
-- [FacetAlreadyExistsException](./client.md#facetalreadyexistsexception)
-- [FacetInUseException](./client.md#facetinuseexception)
-- [FacetNotFoundException](./client.md#facetnotfoundexception)
-- [FacetValidationException](./client.md#facetvalidationexception)
-- [IncompatibleSchemaException](./client.md#incompatibleschemaexception)
-- [IndexedAttributeMissingException](./client.md#indexedattributemissingexception)
-- [InternalServiceException](./client.md#internalserviceexception)
-- [InvalidArnException](./client.md#invalidarnexception)
-- [InvalidAttachmentException](./client.md#invalidattachmentexception)
-- [InvalidFacetUpdateException](./client.md#invalidfacetupdateexception)
-- [InvalidNextTokenException](./client.md#invalidnexttokenexception)
-- [InvalidRuleException](./client.md#invalidruleexception)
-- [InvalidSchemaDocException](./client.md#invalidschemadocexception)
-- [InvalidTaggingRequestException](./client.md#invalidtaggingrequestexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [LinkNameAlreadyInUseException](./client.md#linknamealreadyinuseexception)
-- [NotIndexException](./client.md#notindexexception)
-- [NotNodeException](./client.md#notnodeexception)
-- [NotPolicyException](./client.md#notpolicyexception)
-- [ObjectAlreadyDetachedException](./client.md#objectalreadydetachedexception)
-- [ObjectNotDetachedException](./client.md#objectnotdetachedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [RetryableConflictException](./client.md#retryableconflictexception)
-- [SchemaAlreadyExistsException](./client.md#schemaalreadyexistsexception)
-- [SchemaAlreadyPublishedException](./client.md#schemaalreadypublishedexception)
-- [StillContainsLinksException](./client.md#stillcontainslinksexception)
-- [UnsupportedIndexTypeException](./client.md#unsupportedindextypeexception)
-- [ValidationException](./client.md#validationexception)
+CloudDirectoryClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- BatchWriteException
+- CannotListParentOfRootException
+- ClientError
+- DirectoryAlreadyExistsException
+- DirectoryDeletedException
+- DirectoryNotDisabledException
+- DirectoryNotEnabledException
+- FacetAlreadyExistsException
+- FacetInUseException
+- FacetNotFoundException
+- FacetValidationException
+- IncompatibleSchemaException
+- IndexedAttributeMissingException
+- InternalServiceException
+- InvalidArnException
+- InvalidAttachmentException
+- InvalidFacetUpdateException
+- InvalidNextTokenException
+- InvalidRuleException
+- InvalidSchemaDocException
+- InvalidTaggingRequestException
+- LimitExceededException
+- LinkNameAlreadyInUseException
+- NotIndexException
+- NotNodeException
+- NotPolicyException
+- ObjectAlreadyDetachedException
+- ObjectNotDetachedException
+- ResourceNotFoundException
+- RetryableConflictException
+- SchemaAlreadyExistsException
+- SchemaAlreadyPublishedException
+- StillContainsLinksException
+- UnsupportedIndexTypeException
+- ValidationException
 
 ## Paginators
 
@@ -181,14 +181,14 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_clouddirectory.literals import BatchReadExceptionType, ...
+from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType, ...
 ```
 
-- [BatchReadExceptionType](./literals.md#batchreadexceptiontype)
-- [ConsistencyLevel](./literals.md#consistencylevel)
-- [DirectoryState](./literals.md#directorystate)
-- [FacetAttributeType](./literals.md#facetattributetype)
-- [FacetStyle](./literals.md#facetstyle)
+- [BatchReadExceptionTypeType](./literals.md#batchreadexceptiontypetype)
+- [ConsistencyLevelType](./literals.md#consistencyleveltype)
+- [DirectoryStateType](./literals.md#directorystatetype)
+- [FacetAttributeTypeType](./literals.md#facetattributetypetype)
+- [FacetStyleType](./literals.md#facetstyletype)
 - [ListAppliedSchemaArnsPaginatorName](./literals.md#listappliedschemaarnspaginatorname)
 - [ListAttachedIndicesPaginatorName](./literals.md#listattachedindicespaginatorname)
 - [ListDevelopmentSchemaArnsPaginatorName](./literals.md#listdevelopmentschemaarnspaginatorname)
@@ -208,11 +208,11 @@ from mypy_boto3_clouddirectory.literals import BatchReadExceptionType, ...
 - [ListTypedLinkFacetAttributesPaginatorName](./literals.md#listtypedlinkfacetattributespaginatorname)
 - [ListTypedLinkFacetNamesPaginatorName](./literals.md#listtypedlinkfacetnamespaginatorname)
 - [LookupPolicyPaginatorName](./literals.md#lookuppolicypaginatorname)
-- [ObjectType](./literals.md#objecttype)
-- [RangeMode](./literals.md#rangemode)
-- [RequiredAttributeBehavior](./literals.md#requiredattributebehavior)
-- [RuleType](./literals.md#ruletype)
-- [UpdateActionType](./literals.md#updateactiontype)
+- [ObjectTypeType](./literals.md#objecttypetype)
+- [RangeModeType](./literals.md#rangemodetype)
+- [RequiredAttributeBehaviorType](./literals.md#requiredattributebehaviortype)
+- [RuleTypeType](./literals.md#ruletypetype)
+- [UpdateActionTypeType](./literals.md#updateactiontypetype)
 
 ## Typed dictionaries
 

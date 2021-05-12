@@ -3,35 +3,35 @@
 > [Index](..) > [IoTSiteWise](.) > Literals
 
 Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
 [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Literals for boto3 IoTSiteWise module](#literals-for-boto3-iotsitewise-module)
-  - [AggregateType](#aggregatetype)
+  - [AggregateTypeType](#aggregatetypetype)
   - [AssetActiveWaiterName](#assetactivewaitername)
-  - [AssetErrorCode](#asseterrorcode)
+  - [AssetErrorCodeType](#asseterrorcodetype)
   - [AssetModelActiveWaiterName](#assetmodelactivewaitername)
   - [AssetModelNotExistsWaiterName](#assetmodelnotexistswaitername)
-  - [AssetModelState](#assetmodelstate)
+  - [AssetModelStateType](#assetmodelstatetype)
   - [AssetNotExistsWaiterName](#assetnotexistswaitername)
-  - [AssetRelationshipType](#assetrelationshiptype)
-  - [AssetState](#assetstate)
-  - [AuthMode](#authmode)
-  - [BatchPutAssetPropertyValueErrorCode](#batchputassetpropertyvalueerrorcode)
-  - [CapabilitySyncStatus](#capabilitysyncstatus)
-  - [ConfigurationState](#configurationstate)
-  - [EncryptionType](#encryptiontype)
-  - [ErrorCode](#errorcode)
+  - [AssetRelationshipTypeType](#assetrelationshiptypetype)
+  - [AssetStateType](#assetstatetype)
+  - [AuthModeType](#authmodetype)
+  - [BatchPutAssetPropertyValueErrorCodeType](#batchputassetpropertyvalueerrorcodetype)
+  - [CapabilitySyncStatusType](#capabilitysyncstatustype)
+  - [ConfigurationStateType](#configurationstatetype)
+  - [EncryptionTypeType](#encryptiontypetype)
+  - [ErrorCodeType](#errorcodetype)
   - [GetAssetPropertyAggregatesPaginatorName](#getassetpropertyaggregatespaginatorname)
   - [GetAssetPropertyValueHistoryPaginatorName](#getassetpropertyvaluehistorypaginatorname)
   - [GetInterpolatedAssetPropertyValuesPaginatorName](#getinterpolatedassetpropertyvaluespaginatorname)
-  - [IdentityType](#identitytype)
-  - [ImageFileType](#imagefiletype)
+  - [IdentityTypeType](#identitytypetype)
+  - [ImageFileTypeType](#imagefiletypetype)
   - [ListAccessPoliciesPaginatorName](#listaccesspoliciespaginatorname)
   - [ListAssetModelsPaginatorName](#listassetmodelspaginatorname)
   - [ListAssetRelationshipsPaginatorName](#listassetrelationshipspaginatorname)
-  - [ListAssetsFilter](#listassetsfilter)
+  - [ListAssetsFilterType](#listassetsfiltertype)
   - [ListAssetsPaginatorName](#listassetspaginatorname)
   - [ListAssociatedAssetsPaginatorName](#listassociatedassetspaginatorname)
   - [ListDashboardsPaginatorName](#listdashboardspaginatorname)
@@ -39,24 +39,24 @@ type annotations stubs module
   - [ListPortalsPaginatorName](#listportalspaginatorname)
   - [ListProjectAssetsPaginatorName](#listprojectassetspaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
-  - [LoggingLevel](#logginglevel)
-  - [MonitorErrorCode](#monitorerrorcode)
-  - [Permission](#permission)
+  - [LoggingLevelType](#loggingleveltype)
+  - [MonitorErrorCodeType](#monitorerrorcodetype)
+  - [PermissionType](#permissiontype)
   - [PortalActiveWaiterName](#portalactivewaitername)
   - [PortalNotExistsWaiterName](#portalnotexistswaitername)
-  - [PortalState](#portalstate)
-  - [PropertyDataType](#propertydatatype)
-  - [PropertyNotificationState](#propertynotificationstate)
-  - [Quality](#quality)
-  - [ResourceType](#resourcetype)
-  - [TimeOrdering](#timeordering)
-  - [TraversalDirection](#traversaldirection)
-  - [TraversalType](#traversaltype)
+  - [PortalStateType](#portalstatetype)
+  - [PropertyDataTypeType](#propertydatatypetype)
+  - [PropertyNotificationStateType](#propertynotificationstatetype)
+  - [QualityType](#qualitytype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [TimeOrderingType](#timeorderingtype)
+  - [TraversalDirectionType](#traversaldirectiontype)
+  - [TraversalTypeType](#traversaltypetype)
 
-## AggregateType
+## AggregateTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import AggregateType
+from mypy_boto3_iotsitewise.literals import AggregateTypeType
 ```
 
 Values:
@@ -78,10 +78,10 @@ Values:
 
 - `asset_active`
 
-## AssetErrorCode
+## AssetErrorCodeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import AssetErrorCode
+from mypy_boto3_iotsitewise.literals import AssetErrorCodeType
 ```
 
 Values:
@@ -108,10 +108,10 @@ Values:
 
 - `asset_model_not_exists`
 
-## AssetModelState
+## AssetModelStateType
 
 ```python
-from mypy_boto3_iotsitewise.literals import AssetModelState
+from mypy_boto3_iotsitewise.literals import AssetModelStateType
 ```
 
 Values:
@@ -133,20 +133,20 @@ Values:
 
 - `asset_not_exists`
 
-## AssetRelationshipType
+## AssetRelationshipTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import AssetRelationshipType
+from mypy_boto3_iotsitewise.literals import AssetRelationshipTypeType
 ```
 
 Values:
 
 - `HIERARCHY`
 
-## AssetState
+## AssetStateType
 
 ```python
-from mypy_boto3_iotsitewise.literals import AssetState
+from mypy_boto3_iotsitewise.literals import AssetStateType
 ```
 
 Values:
@@ -157,10 +157,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## AuthMode
+## AuthModeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import AuthMode
+from mypy_boto3_iotsitewise.literals import AuthModeType
 ```
 
 Values:
@@ -168,10 +168,10 @@ Values:
 - `IAM`
 - `SSO`
 
-## BatchPutAssetPropertyValueErrorCode
+## BatchPutAssetPropertyValueErrorCodeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import BatchPutAssetPropertyValueErrorCode
+from mypy_boto3_iotsitewise.literals import BatchPutAssetPropertyValueErrorCodeType
 ```
 
 Values:
@@ -186,10 +186,10 @@ Values:
 - `ThrottlingException`
 - `TimestampOutOfRangeException`
 
-## CapabilitySyncStatus
+## CapabilitySyncStatusType
 
 ```python
-from mypy_boto3_iotsitewise.literals import CapabilitySyncStatus
+from mypy_boto3_iotsitewise.literals import CapabilitySyncStatusType
 ```
 
 Values:
@@ -198,10 +198,10 @@ Values:
 - `OUT_OF_SYNC`
 - `SYNC_FAILED`
 
-## ConfigurationState
+## ConfigurationStateType
 
 ```python
-from mypy_boto3_iotsitewise.literals import ConfigurationState
+from mypy_boto3_iotsitewise.literals import ConfigurationStateType
 ```
 
 Values:
@@ -210,10 +210,10 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
-## EncryptionType
+## EncryptionTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import EncryptionType
+from mypy_boto3_iotsitewise.literals import EncryptionTypeType
 ```
 
 Values:
@@ -221,10 +221,10 @@ Values:
 - `KMS_BASED_ENCRYPTION`
 - `SITEWISE_DEFAULT_ENCRYPTION`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import ErrorCode
+from mypy_boto3_iotsitewise.literals import ErrorCodeType
 ```
 
 Values:
@@ -262,10 +262,10 @@ Values:
 
 - `get_interpolated_asset_property_values`
 
-## IdentityType
+## IdentityTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import IdentityType
+from mypy_boto3_iotsitewise.literals import IdentityTypeType
 ```
 
 Values:
@@ -274,10 +274,10 @@ Values:
 - `IAM`
 - `USER`
 
-## ImageFileType
+## ImageFileTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import ImageFileType
+from mypy_boto3_iotsitewise.literals import ImageFileTypeType
 ```
 
 Values:
@@ -314,10 +314,10 @@ Values:
 
 - `list_asset_relationships`
 
-## ListAssetsFilter
+## ListAssetsFilterType
 
 ```python
-from mypy_boto3_iotsitewise.literals import ListAssetsFilter
+from mypy_boto3_iotsitewise.literals import ListAssetsFilterType
 ```
 
 Values:
@@ -395,10 +395,10 @@ Values:
 
 - `list_projects`
 
-## LoggingLevel
+## LoggingLevelType
 
 ```python
-from mypy_boto3_iotsitewise.literals import LoggingLevel
+from mypy_boto3_iotsitewise.literals import LoggingLevelType
 ```
 
 Values:
@@ -407,10 +407,10 @@ Values:
 - `INFO`
 - `OFF`
 
-## MonitorErrorCode
+## MonitorErrorCodeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import MonitorErrorCode
+from mypy_boto3_iotsitewise.literals import MonitorErrorCodeType
 ```
 
 Values:
@@ -419,10 +419,10 @@ Values:
 - `LIMIT_EXCEEDED`
 - `VALIDATION_ERROR`
 
-## Permission
+## PermissionType
 
 ```python
-from mypy_boto3_iotsitewise.literals import Permission
+from mypy_boto3_iotsitewise.literals import PermissionType
 ```
 
 Values:
@@ -450,10 +450,10 @@ Values:
 
 - `portal_not_exists`
 
-## PortalState
+## PortalStateType
 
 ```python
-from mypy_boto3_iotsitewise.literals import PortalState
+from mypy_boto3_iotsitewise.literals import PortalStateType
 ```
 
 Values:
@@ -464,10 +464,10 @@ Values:
 - `FAILED`
 - `UPDATING`
 
-## PropertyDataType
+## PropertyDataTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import PropertyDataType
+from mypy_boto3_iotsitewise.literals import PropertyDataTypeType
 ```
 
 Values:
@@ -478,10 +478,10 @@ Values:
 - `STRING`
 - `STRUCT`
 
-## PropertyNotificationState
+## PropertyNotificationStateType
 
 ```python
-from mypy_boto3_iotsitewise.literals import PropertyNotificationState
+from mypy_boto3_iotsitewise.literals import PropertyNotificationStateType
 ```
 
 Values:
@@ -489,10 +489,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## Quality
+## QualityType
 
 ```python
-from mypy_boto3_iotsitewise.literals import Quality
+from mypy_boto3_iotsitewise.literals import QualityType
 ```
 
 Values:
@@ -501,10 +501,10 @@ Values:
 - `GOOD`
 - `UNCERTAIN`
 
-## ResourceType
+## ResourceTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import ResourceType
+from mypy_boto3_iotsitewise.literals import ResourceTypeType
 ```
 
 Values:
@@ -512,10 +512,10 @@ Values:
 - `PORTAL`
 - `PROJECT`
 
-## TimeOrdering
+## TimeOrderingType
 
 ```python
-from mypy_boto3_iotsitewise.literals import TimeOrdering
+from mypy_boto3_iotsitewise.literals import TimeOrderingType
 ```
 
 Values:
@@ -523,10 +523,10 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
-## TraversalDirection
+## TraversalDirectionType
 
 ```python
-from mypy_boto3_iotsitewise.literals import TraversalDirection
+from mypy_boto3_iotsitewise.literals import TraversalDirectionType
 ```
 
 Values:
@@ -534,10 +534,10 @@ Values:
 - `CHILD`
 - `PARENT`
 
-## TraversalType
+## TraversalTypeType
 
 ```python
-from mypy_boto3_iotsitewise.literals import TraversalType
+from mypy_boto3_iotsitewise.literals import TraversalTypeType
 ```
 
 Values:

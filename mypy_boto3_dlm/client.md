@@ -3,7 +3,7 @@
 > [Index](..) > [DLM](.) > DLMClient
 
 Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+[DLM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM)
 type annotations stubs module
 [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
@@ -36,7 +36,7 @@ def get_dlm_client() -> DLMClient:
 ```
 
 Boto3 documentation:
-[DLM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client)
+[DLM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client)
 
 ## Exceptions
 
@@ -65,7 +65,7 @@ Exceptions:
 Type annotations for `boto3.client("dlm").can_paginate` method.
 
 Boto3 documentation:
-[DLM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.can_paginate)
+[DLM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.can_paginate)
 
 Arguments:
 
@@ -78,13 +78,14 @@ Returns `bool`.
 Type annotations for `boto3.client("dlm").create_lifecycle_policy` method.
 
 Boto3 documentation:
-[DLM.Client.create_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
+[DLM.Client.create_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
 
 Arguments:
 
 - `ExecutionRoleArn`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `State`: [SettablePolicyStateValues](./literals.md#settablepolicystatevalues)
+- `State`:
+  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
   *(required)*
 - `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
   *(required)*
@@ -98,7 +99,7 @@ Returns
 Type annotations for `boto3.client("dlm").delete_lifecycle_policy` method.
 
 Boto3 documentation:
-[DLM.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
+[DLM.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
 
 Arguments:
 
@@ -111,7 +112,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("dlm").generate_presigned_url` method.
 
 Boto3 documentation:
-[DLM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.generate_presigned_url)
+[DLM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.generate_presigned_url)
 
 Arguments:
 
@@ -127,14 +128,15 @@ Returns `str`.
 Type annotations for `boto3.client("dlm").get_lifecycle_policies` method.
 
 Boto3 documentation:
-[DLM.Client.get_lifecycle_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
+[DLM.Client.get_lifecycle_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
 
 Arguments:
 
 - `PolicyIds`: `List`\[`str`\]
-- `State`: [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
+- `State`:
+  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValues](./literals.md#resourcetypevalues)\]
+  `List`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
 - `TargetTags`: `List`\[`str`\]
 - `TagsToAdd`: `List`\[`str`\]
 
@@ -146,7 +148,7 @@ Returns
 Type annotations for `boto3.client("dlm").get_lifecycle_policy` method.
 
 Boto3 documentation:
-[DLM.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
+[DLM.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
 
 Arguments:
 
@@ -160,7 +162,7 @@ Returns
 Type annotations for `boto3.client("dlm").list_tags_for_resource` method.
 
 Boto3 documentation:
-[DLM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
+[DLM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -174,7 +176,7 @@ Returns
 Type annotations for `boto3.client("dlm").tag_resource` method.
 
 Boto3 documentation:
-[DLM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
+[DLM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.tag_resource)
 
 Arguments:
 
@@ -188,7 +190,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("dlm").untag_resource` method.
 
 Boto3 documentation:
-[DLM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
+[DLM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.untag_resource)
 
 Arguments:
 
@@ -202,13 +204,14 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("dlm").update_lifecycle_policy` method.
 
 Boto3 documentation:
-[DLM.Client.update_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
+[DLM.Client.update_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
 
 Arguments:
 
 - `PolicyId`: `str` *(required)*
 - `ExecutionRoleArn`: `str`
-- `State`: [SettablePolicyStateValues](./literals.md#settablepolicystatevalues)
+- `State`:
+  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
 - `Description`: `str`
 - `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
 

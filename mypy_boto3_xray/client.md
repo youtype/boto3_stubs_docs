@@ -3,7 +3,7 @@
 > [Index](..) > [XRay](.) > XRayClient
 
 Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay)
 type annotations stubs module
 [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
@@ -56,7 +56,7 @@ def get_xray_client() -> XRayClient:
 ```
 
 Boto3 documentation:
-[XRay.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client)
+[XRay.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("xray").batch_get_traces` method.
 
 Boto3 documentation:
-[XRay.Client.batch_get_traces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces)
+[XRay.Client.batch_get_traces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.batch_get_traces)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Returns
 Type annotations for `boto3.client("xray").can_paginate` method.
 
 Boto3 documentation:
-[XRay.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.can_paginate)
+[XRay.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.can_paginate)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns `bool`.
 Type annotations for `boto3.client("xray").create_group` method.
 
 Boto3 documentation:
-[XRay.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group)
+[XRay.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.create_group)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
 Type annotations for `boto3.client("xray").create_sampling_rule` method.
 
 Boto3 documentation:
-[XRay.Client.create_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule)
+[XRay.Client.create_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.create_sampling_rule)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Returns
 Type annotations for `boto3.client("xray").delete_group` method.
 
 Boto3 documentation:
-[XRay.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group)
+[XRay.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.delete_group)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("xray").delete_sampling_rule` method.
 
 Boto3 documentation:
-[XRay.Client.delete_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule)
+[XRay.Client.delete_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.delete_sampling_rule)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns
 Type annotations for `boto3.client("xray").generate_presigned_url` method.
 
 Boto3 documentation:
-[XRay.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.generate_presigned_url)
+[XRay.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.generate_presigned_url)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Returns `str`.
 Type annotations for `boto3.client("xray").get_encryption_config` method.
 
 Boto3 documentation:
-[XRay.Client.get_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config)
+[XRay.Client.get_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_encryption_config)
 
 Returns
 [GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef).
@@ -202,7 +202,7 @@ Returns
 Type annotations for `boto3.client("xray").get_group` method.
 
 Boto3 documentation:
-[XRay.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group)
+[XRay.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_group)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef).
 Type annotations for `boto3.client("xray").get_groups` method.
 
 Boto3 documentation:
-[XRay.Client.get_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups)
+[XRay.Client.get_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_groups)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef).
 Type annotations for `boto3.client("xray").get_insight` method.
 
 Boto3 documentation:
-[XRay.Client.get_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight)
+[XRay.Client.get_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_insight)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Returns [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef).
 Type annotations for `boto3.client("xray").get_insight_events` method.
 
 Boto3 documentation:
-[XRay.Client.get_insight_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events)
+[XRay.Client.get_insight_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_insight_events)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns
 Type annotations for `boto3.client("xray").get_insight_impact_graph` method.
 
 Boto3 documentation:
-[XRay.Client.get_insight_impact_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
+[XRay.Client.get_insight_impact_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
 
 Arguments:
 
@@ -275,13 +275,13 @@ Returns
 Type annotations for `boto3.client("xray").get_insight_summaries` method.
 
 Boto3 documentation:
-[XRay.Client.get_insight_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries)
+[XRay.Client.get_insight_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_insight_summaries)
 
 Arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
-- `States`: `List`\[[InsightState](./literals.md#insightstate)\]
+- `States`: `List`\[[InsightStateType](./literals.md#insightstatetype)\]
 - `GroupARN`: `str`
 - `GroupName`: `str`
 - `MaxResults`: `int`
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("xray").get_sampling_rules` method.
 
 Boto3 documentation:
-[XRay.Client.get_sampling_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules)
+[XRay.Client.get_sampling_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_sampling_rules)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Type annotations for `boto3.client("xray").get_sampling_statistic_summaries`
 method.
 
 Boto3 documentation:
-[XRay.Client.get_sampling_statistic_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
+[XRay.Client.get_sampling_statistic_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Returns
 Type annotations for `boto3.client("xray").get_sampling_targets` method.
 
 Boto3 documentation:
-[XRay.Client.get_sampling_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets)
+[XRay.Client.get_sampling_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_sampling_targets)
 
 Arguments:
 
@@ -340,7 +340,7 @@ Returns
 Type annotations for `boto3.client("xray").get_service_graph` method.
 
 Boto3 documentation:
-[XRay.Client.get_service_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph)
+[XRay.Client.get_service_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_service_graph)
 
 Arguments:
 
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("xray").get_time_series_service_statistics`
 method.
 
 Boto3 documentation:
-[XRay.Client.get_time_series_service_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
+[XRay.Client.get_time_series_service_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("xray").get_trace_graph` method.
 
 Boto3 documentation:
-[XRay.Client.get_trace_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph)
+[XRay.Client.get_trace_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_trace_graph)
 
 Arguments:
 
@@ -395,13 +395,13 @@ Returns
 Type annotations for `boto3.client("xray").get_trace_summaries` method.
 
 Boto3 documentation:
-[XRay.Client.get_trace_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries)
+[XRay.Client.get_trace_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.get_trace_summaries)
 
 Arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
-- `TimeRangeType`: [TimeRangeType](./literals.md#timerangetype)
+- `TimeRangeType`: [TimeRangeTypeType](./literals.md#timerangetypetype)
 - `Sampling`: `bool`
 - `SamplingStrategy`:
   [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
@@ -416,7 +416,7 @@ Returns
 Type annotations for `boto3.client("xray").list_tags_for_resource` method.
 
 Boto3 documentation:
-[XRay.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource)
+[XRay.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -431,11 +431,11 @@ Returns
 Type annotations for `boto3.client("xray").put_encryption_config` method.
 
 Boto3 documentation:
-[XRay.Client.put_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config)
+[XRay.Client.put_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.put_encryption_config)
 
 Arguments:
 
-- `Type`: [EncryptionType](./literals.md#encryptiontype) *(required)*
+- `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype) *(required)*
 - `KeyId`: `str`
 
 Returns
@@ -446,7 +446,7 @@ Returns
 Type annotations for `boto3.client("xray").put_telemetry_records` method.
 
 Boto3 documentation:
-[XRay.Client.put_telemetry_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records)
+[XRay.Client.put_telemetry_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.put_telemetry_records)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("xray").put_trace_segments` method.
 
 Boto3 documentation:
-[XRay.Client.put_trace_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments)
+[XRay.Client.put_trace_segments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.put_trace_segments)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns
 Type annotations for `boto3.client("xray").tag_resource` method.
 
 Boto3 documentation:
-[XRay.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource)
+[XRay.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.tag_resource)
 
 Arguments:
 
@@ -492,7 +492,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("xray").untag_resource` method.
 
 Boto3 documentation:
-[XRay.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource)
+[XRay.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.untag_resource)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("xray").update_group` method.
 
 Boto3 documentation:
-[XRay.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group)
+[XRay.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.update_group)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Returns [UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef).
 Type annotations for `boto3.client("xray").update_sampling_rule` method.
 
 Boto3 documentation:
-[XRay.Client.update_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule)
+[XRay.Client.update_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/xray.html#XRay.Client.update_sampling_rule)
 
 Arguments:
 

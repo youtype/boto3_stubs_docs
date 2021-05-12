@@ -3,7 +3,7 @@
 > [Index](..) > [IoTEventsData](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
+[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module
 [mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
@@ -35,7 +35,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchPutMessageErrorEntryTypeDef
 Optional fields:
 
 - `messageId`: `str`
-- `errorCode`: [ErrorCode](./literals.md#errorcode)
+- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
 ## BatchPutMessageResponseTypeDef
@@ -58,7 +58,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorErrorEntryTyp
 Optional fields:
 
 - `messageId`: `str`
-- `errorCode`: [ErrorCode](./literals.md#errorcode)
+- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
 ## BatchUpdateDetectorResponseTypeDef

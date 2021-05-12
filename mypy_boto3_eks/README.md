@@ -3,7 +3,7 @@
 > [Index](..) > EKS
 
 Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/eks.html#EKS)
 type annotations stubs module
 [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
@@ -30,61 +30,61 @@ Can be used directly:
 from mypy_boto3_eks.client import EKSClient
 ```
 
-EKSClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [associate_encryption_config](./client.md#associate-encryption-config)
-- [associate_identity_provider_config](./client.md#associate-identity-provider-config)
-- [can_paginate](./client.md#can-paginate)
-- [create_addon](./client.md#create-addon)
-- [create_cluster](./client.md#create-cluster)
-- [create_fargate_profile](./client.md#create-fargate-profile)
-- [create_nodegroup](./client.md#create-nodegroup)
-- [delete_addon](./client.md#delete-addon)
-- [delete_cluster](./client.md#delete-cluster)
-- [delete_fargate_profile](./client.md#delete-fargate-profile)
-- [delete_nodegroup](./client.md#delete-nodegroup)
-- [describe_addon](./client.md#describe-addon)
-- [describe_addon_versions](./client.md#describe-addon-versions)
-- [describe_cluster](./client.md#describe-cluster)
-- [describe_fargate_profile](./client.md#describe-fargate-profile)
-- [describe_identity_provider_config](./client.md#describe-identity-provider-config)
-- [describe_nodegroup](./client.md#describe-nodegroup)
-- [describe_update](./client.md#describe-update)
-- [disassociate_identity_provider_config](./client.md#disassociate-identity-provider-config)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [list_addons](./client.md#list-addons)
-- [list_clusters](./client.md#list-clusters)
-- [list_fargate_profiles](./client.md#list-fargate-profiles)
-- [list_identity_provider_configs](./client.md#list-identity-provider-configs)
-- [list_nodegroups](./client.md#list-nodegroups)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [list_updates](./client.md#list-updates)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_addon](./client.md#update-addon)
-- [update_cluster_config](./client.md#update-cluster-config)
-- [update_cluster_version](./client.md#update-cluster-version)
-- [update_nodegroup_config](./client.md#update-nodegroup-config)
-- [update_nodegroup_version](./client.md#update-nodegroup-version)
+- [associate_encryption_config](./client.md#associate_encryption_config)
+- [associate_identity_provider_config](./client.md#associate_identity_provider_config)
+- [can_paginate](./client.md#can_paginate)
+- [create_addon](./client.md#create_addon)
+- [create_cluster](./client.md#create_cluster)
+- [create_fargate_profile](./client.md#create_fargate_profile)
+- [create_nodegroup](./client.md#create_nodegroup)
+- [delete_addon](./client.md#delete_addon)
+- [delete_cluster](./client.md#delete_cluster)
+- [delete_fargate_profile](./client.md#delete_fargate_profile)
+- [delete_nodegroup](./client.md#delete_nodegroup)
+- [describe_addon](./client.md#describe_addon)
+- [describe_addon_versions](./client.md#describe_addon_versions)
+- [describe_cluster](./client.md#describe_cluster)
+- [describe_fargate_profile](./client.md#describe_fargate_profile)
+- [describe_identity_provider_config](./client.md#describe_identity_provider_config)
+- [describe_nodegroup](./client.md#describe_nodegroup)
+- [describe_update](./client.md#describe_update)
+- [disassociate_identity_provider_config](./client.md#disassociate_identity_provider_config)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_addons](./client.md#list_addons)
+- [list_clusters](./client.md#list_clusters)
+- [list_fargate_profiles](./client.md#list_fargate_profiles)
+- [list_identity_provider_configs](./client.md#list_identity_provider_configs)
+- [list_nodegroups](./client.md#list_nodegroups)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [list_updates](./client.md#list_updates)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_addon](./client.md#update_addon)
+- [update_cluster_config](./client.md#update_cluster_config)
+- [update_cluster_version](./client.md#update_cluster_version)
+- [update_nodegroup_config](./client.md#update_nodegroup_config)
+- [update_nodegroup_version](./client.md#update_nodegroup_version)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ClientException](./client.md#clientexception)
-- [InvalidParameterException](./client.md#invalidparameterexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
-- [ResourceLimitExceededException](./client.md#resourcelimitexceededexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServerException](./client.md#serverexception)
-- [ServiceUnavailableException](./client.md#serviceunavailableexception)
-- [UnsupportedAvailabilityZoneException](./client.md#unsupportedavailabilityzoneexception)
+EKSClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ClientException
+- InvalidParameterException
+- InvalidRequestException
+- NotFoundException
+- ResourceInUseException
+- ResourceLimitExceededException
+- ResourceNotFoundException
+- ServerException
+- ServiceUnavailableException
+- UnsupportedAvailabilityZoneException
 
 ## Paginators
 
@@ -130,38 +130,38 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.literals import AMITypes, ...
+from mypy_boto3_eks.literals import AMITypesType, ...
 ```
 
-- [AMITypes](./literals.md#amitypes)
+- [AMITypesType](./literals.md#amitypestype)
 - [AddonActiveWaiterName](./literals.md#addonactivewaitername)
 - [AddonDeletedWaiterName](./literals.md#addondeletedwaitername)
-- [AddonIssueCode](./literals.md#addonissuecode)
-- [AddonStatus](./literals.md#addonstatus)
-- [CapacityTypes](./literals.md#capacitytypes)
+- [AddonIssueCodeType](./literals.md#addonissuecodetype)
+- [AddonStatusType](./literals.md#addonstatustype)
+- [CapacityTypesType](./literals.md#capacitytypestype)
 - [ClusterActiveWaiterName](./literals.md#clusteractivewaitername)
 - [ClusterDeletedWaiterName](./literals.md#clusterdeletedwaitername)
-- [ClusterStatus](./literals.md#clusterstatus)
+- [ClusterStatusType](./literals.md#clusterstatustype)
 - [DescribeAddonVersionsPaginatorName](./literals.md#describeaddonversionspaginatorname)
-- [ErrorCode](./literals.md#errorcode)
-- [FargateProfileStatus](./literals.md#fargateprofilestatus)
+- [ErrorCodeType](./literals.md#errorcodetype)
+- [FargateProfileStatusType](./literals.md#fargateprofilestatustype)
 - [ListAddonsPaginatorName](./literals.md#listaddonspaginatorname)
 - [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
 - [ListFargateProfilesPaginatorName](./literals.md#listfargateprofilespaginatorname)
 - [ListIdentityProviderConfigsPaginatorName](./literals.md#listidentityproviderconfigspaginatorname)
 - [ListNodegroupsPaginatorName](./literals.md#listnodegroupspaginatorname)
 - [ListUpdatesPaginatorName](./literals.md#listupdatespaginatorname)
-- [LogType](./literals.md#logtype)
+- [LogTypeType](./literals.md#logtypetype)
 - [NodegroupActiveWaiterName](./literals.md#nodegroupactivewaitername)
 - [NodegroupDeletedWaiterName](./literals.md#nodegroupdeletedwaitername)
-- [NodegroupIssueCode](./literals.md#nodegroupissuecode)
-- [NodegroupStatus](./literals.md#nodegroupstatus)
-- [ResolveConflicts](./literals.md#resolveconflicts)
-- [TaintEffect](./literals.md#tainteffect)
-- [UpdateParamType](./literals.md#updateparamtype)
-- [UpdateStatus](./literals.md#updatestatus)
-- [UpdateType](./literals.md#updatetype)
-- [configStatus](./literals.md#configstatus)
+- [NodegroupIssueCodeType](./literals.md#nodegroupissuecodetype)
+- [NodegroupStatusType](./literals.md#nodegroupstatustype)
+- [ResolveConflictsType](./literals.md#resolveconflictstype)
+- [TaintEffectType](./literals.md#tainteffecttype)
+- [UpdateParamTypeType](./literals.md#updateparamtypetype)
+- [UpdateStatusType](./literals.md#updatestatustype)
+- [UpdateTypeType](./literals.md#updatetypetype)
+- [configStatusType](./literals.md#configstatustype)
 
 ## Typed dictionaries
 

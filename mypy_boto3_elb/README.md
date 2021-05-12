@@ -3,7 +3,7 @@
 > [Index](..) > ElasticLoadBalancing
 
 Auto-generated documentation for
-[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
 [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
@@ -31,69 +31,69 @@ Can be used directly:
 from mypy_boto3_elb.client import ElasticLoadBalancingClient
 ```
 
-ElasticLoadBalancingClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_tags](./client.md#add-tags)
-- [apply_security_groups_to_load_balancer](./client.md#apply-security-groups-to-load-balancer)
-- [attach_load_balancer_to_subnets](./client.md#attach-load-balancer-to-subnets)
-- [can_paginate](./client.md#can-paginate)
-- [configure_health_check](./client.md#configure-health-check)
-- [create_app_cookie_stickiness_policy](./client.md#create-app-cookie-stickiness-policy)
-- [create_lb_cookie_stickiness_policy](./client.md#create-lb-cookie-stickiness-policy)
-- [create_load_balancer](./client.md#create-load-balancer)
-- [create_load_balancer_listeners](./client.md#create-load-balancer-listeners)
-- [create_load_balancer_policy](./client.md#create-load-balancer-policy)
-- [delete_load_balancer](./client.md#delete-load-balancer)
-- [delete_load_balancer_listeners](./client.md#delete-load-balancer-listeners)
-- [delete_load_balancer_policy](./client.md#delete-load-balancer-policy)
-- [deregister_instances_from_load_balancer](./client.md#deregister-instances-from-load-balancer)
-- [describe_account_limits](./client.md#describe-account-limits)
-- [describe_instance_health](./client.md#describe-instance-health)
-- [describe_load_balancer_attributes](./client.md#describe-load-balancer-attributes)
-- [describe_load_balancer_policies](./client.md#describe-load-balancer-policies)
-- [describe_load_balancer_policy_types](./client.md#describe-load-balancer-policy-types)
-- [describe_load_balancers](./client.md#describe-load-balancers)
-- [describe_tags](./client.md#describe-tags)
-- [detach_load_balancer_from_subnets](./client.md#detach-load-balancer-from-subnets)
-- [disable_availability_zones_for_load_balancer](./client.md#disable-availability-zones-for-load-balancer)
-- [enable_availability_zones_for_load_balancer](./client.md#enable-availability-zones-for-load-balancer)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_waiter](./client.md#get-waiter)
-- [modify_load_balancer_attributes](./client.md#modify-load-balancer-attributes)
-- [register_instances_with_load_balancer](./client.md#register-instances-with-load-balancer)
-- [remove_tags](./client.md#remove-tags)
-- [set_load_balancer_listener_ssl_certificate](./client.md#set-load-balancer-listener-ssl-certificate)
-- [set_load_balancer_policies_for_backend_server](./client.md#set-load-balancer-policies-for-backend-server)
-- [set_load_balancer_policies_of_listener](./client.md#set-load-balancer-policies-of-listener)
+- [add_tags](./client.md#add_tags)
+- [apply_security_groups_to_load_balancer](./client.md#apply_security_groups_to_load_balancer)
+- [attach_load_balancer_to_subnets](./client.md#attach_load_balancer_to_subnets)
+- [can_paginate](./client.md#can_paginate)
+- [configure_health_check](./client.md#configure_health_check)
+- [create_app_cookie_stickiness_policy](./client.md#create_app_cookie_stickiness_policy)
+- [create_lb_cookie_stickiness_policy](./client.md#create_lb_cookie_stickiness_policy)
+- [create_load_balancer](./client.md#create_load_balancer)
+- [create_load_balancer_listeners](./client.md#create_load_balancer_listeners)
+- [create_load_balancer_policy](./client.md#create_load_balancer_policy)
+- [delete_load_balancer](./client.md#delete_load_balancer)
+- [delete_load_balancer_listeners](./client.md#delete_load_balancer_listeners)
+- [delete_load_balancer_policy](./client.md#delete_load_balancer_policy)
+- [deregister_instances_from_load_balancer](./client.md#deregister_instances_from_load_balancer)
+- [describe_account_limits](./client.md#describe_account_limits)
+- [describe_instance_health](./client.md#describe_instance_health)
+- [describe_load_balancer_attributes](./client.md#describe_load_balancer_attributes)
+- [describe_load_balancer_policies](./client.md#describe_load_balancer_policies)
+- [describe_load_balancer_policy_types](./client.md#describe_load_balancer_policy_types)
+- [describe_load_balancers](./client.md#describe_load_balancers)
+- [describe_tags](./client.md#describe_tags)
+- [detach_load_balancer_from_subnets](./client.md#detach_load_balancer_from_subnets)
+- [disable_availability_zones_for_load_balancer](./client.md#disable_availability_zones_for_load_balancer)
+- [enable_availability_zones_for_load_balancer](./client.md#enable_availability_zones_for_load_balancer)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [modify_load_balancer_attributes](./client.md#modify_load_balancer_attributes)
+- [register_instances_with_load_balancer](./client.md#register_instances_with_load_balancer)
+- [remove_tags](./client.md#remove_tags)
+- [set_load_balancer_listener_ssl_certificate](./client.md#set_load_balancer_listener_ssl_certificate)
+- [set_load_balancer_policies_for_backend_server](./client.md#set_load_balancer_policies_for_backend_server)
+- [set_load_balancer_policies_of_listener](./client.md#set_load_balancer_policies_of_listener)
 
 ### Exceptions
 
-- [AccessPointNotFoundException](./client.md#accesspointnotfoundexception)
-- [CertificateNotFoundException](./client.md#certificatenotfoundexception)
-- [ClientError](./client.md#clienterror)
-- [DependencyThrottleException](./client.md#dependencythrottleexception)
-- [DuplicateAccessPointNameException](./client.md#duplicateaccesspointnameexception)
-- [DuplicateListenerException](./client.md#duplicatelistenerexception)
-- [DuplicatePolicyNameException](./client.md#duplicatepolicynameexception)
-- [DuplicateTagKeysException](./client.md#duplicatetagkeysexception)
-- [InvalidConfigurationRequestException](./client.md#invalidconfigurationrequestexception)
-- [InvalidEndPointException](./client.md#invalidendpointexception)
-- [InvalidSchemeException](./client.md#invalidschemeexception)
-- [InvalidSecurityGroupException](./client.md#invalidsecuritygroupexception)
-- [InvalidSubnetException](./client.md#invalidsubnetexception)
-- [ListenerNotFoundException](./client.md#listenernotfoundexception)
-- [LoadBalancerAttributeNotFoundException](./client.md#loadbalancerattributenotfoundexception)
-- [OperationNotPermittedException](./client.md#operationnotpermittedexception)
-- [PolicyNotFoundException](./client.md#policynotfoundexception)
-- [PolicyTypeNotFoundException](./client.md#policytypenotfoundexception)
-- [SubnetNotFoundException](./client.md#subnetnotfoundexception)
-- [TooManyAccessPointsException](./client.md#toomanyaccesspointsexception)
-- [TooManyPoliciesException](./client.md#toomanypoliciesexception)
-- [TooManyTagsException](./client.md#toomanytagsexception)
-- [UnsupportedProtocolException](./client.md#unsupportedprotocolexception)
+ElasticLoadBalancingClient [exceptions](./client.md#exceptions)
+
+- AccessPointNotFoundException
+- CertificateNotFoundException
+- ClientError
+- DependencyThrottleException
+- DuplicateAccessPointNameException
+- DuplicateListenerException
+- DuplicatePolicyNameException
+- DuplicateTagKeysException
+- InvalidConfigurationRequestException
+- InvalidEndPointException
+- InvalidSchemeException
+- InvalidSecurityGroupException
+- InvalidSubnetException
+- ListenerNotFoundException
+- LoadBalancerAttributeNotFoundException
+- OperationNotPermittedException
+- PolicyNotFoundException
+- PolicyTypeNotFoundException
+- SubnetNotFoundException
+- TooManyAccessPointsException
+- TooManyPoliciesException
+- TooManyTagsException
+- UnsupportedProtocolException
 
 ## Paginators
 

@@ -3,7 +3,7 @@
 > [Index](..) > [EFS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/efs.html#EFS)
 type annotations stubs module
 [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
@@ -46,7 +46,7 @@ Optional fields:
 - `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
 - `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 - `OwnerId`: `str`
-- `LifeCycleState`: [LifeCycleState](./literals.md#lifecyclestate)
+- `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 
 ## BackupPolicyDescriptionTypeDef
 
@@ -66,7 +66,7 @@ from mypy_boto3_efs.type_defs import BackupPolicyTypeDef
 
 Required fields:
 
-- `Status`: [Status](./literals.md#status)
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## CreationInfoTypeDef
 
@@ -155,10 +155,10 @@ Required fields:
 - `CreationToken`: `str`
 - `FileSystemId`: `str`
 - `CreationTime`: `datetime`
-- `LifeCycleState`: [LifeCycleState](./literals.md#lifecyclestate)
+- `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 - `NumberOfMountTargets`: `int`
 - `SizeInBytes`: [FileSystemSizeTypeDef](./type_defs.md#filesystemsizetypedef)
-- `PerformanceMode`: [PerformanceMode](./literals.md#performancemode)
+- `PerformanceMode`: [PerformanceModeType](./literals.md#performancemodetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
@@ -167,7 +167,7 @@ Optional fields:
 - `Name`: `str`
 - `Encrypted`: `bool`
 - `KmsKeyId`: `str`
-- `ThroughputMode`: [ThroughputMode](./literals.md#throughputmode)
+- `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)
 - `ProvisionedThroughputInMibps`: `float`
 - `AvailabilityZoneName`: `str`
 - `AvailabilityZoneId`: `str`
@@ -218,7 +218,8 @@ from mypy_boto3_efs.type_defs import LifecyclePolicyTypeDef
 
 Optional fields:
 
-- `TransitionToIA`: [TransitionToIARules](./literals.md#transitiontoiarules)
+- `TransitionToIA`:
+  [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -242,7 +243,7 @@ Required fields:
 - `MountTargetId`: `str`
 - `FileSystemId`: `str`
 - `SubnetId`: `str`
-- `LifeCycleState`: [LifeCycleState](./literals.md#lifecyclestate)
+- `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 
 Optional fields:
 

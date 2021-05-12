@@ -3,17 +3,17 @@
 > [Index](..) > [GameLift](.) > Literals
 
 Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/gamelift.html#GameLift)
 type annotations stubs module
 [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 - [Literals for boto3 GameLift module](#literals-for-boto3-gamelift-module)
-  - [AcceptanceType](#acceptancetype)
-  - [BackfillMode](#backfillmode)
-  - [BalancingStrategy](#balancingstrategy)
-  - [BuildStatus](#buildstatus)
-  - [CertificateType](#certificatetype)
-  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [AcceptanceTypeType](#acceptancetypetype)
+  - [BackfillModeType](#backfillmodetype)
+  - [BalancingStrategyType](#balancingstrategytype)
+  - [BuildStatusType](#buildstatustype)
+  - [CertificateTypeType](#certificatetypetype)
+  - [ComparisonOperatorTypeType](#comparisonoperatortypetype)
   - [DescribeFleetAttributesPaginatorName](#describefleetattributespaginatorname)
   - [DescribeFleetCapacityPaginatorName](#describefleetcapacitypaginatorname)
   - [DescribeFleetEventsPaginatorName](#describefleeteventspaginatorname)
@@ -27,51 +27,51 @@ type annotations stubs module
   - [DescribeMatchmakingRuleSetsPaginatorName](#describematchmakingrulesetspaginatorname)
   - [DescribePlayerSessionsPaginatorName](#describeplayersessionspaginatorname)
   - [DescribeScalingPoliciesPaginatorName](#describescalingpoliciespaginatorname)
-  - [EC2InstanceType](#ec2instancetype)
-  - [EventCode](#eventcode)
-  - [FleetAction](#fleetaction)
-  - [FleetStatus](#fleetstatus)
-  - [FleetType](#fleettype)
-  - [FlexMatchMode](#flexmatchmode)
-  - [GameServerClaimStatus](#gameserverclaimstatus)
-  - [GameServerGroupAction](#gameservergroupaction)
-  - [GameServerGroupDeleteOption](#gameservergroupdeleteoption)
-  - [GameServerGroupInstanceType](#gameservergroupinstancetype)
-  - [GameServerGroupStatus](#gameservergroupstatus)
-  - [GameServerHealthCheck](#gameserverhealthcheck)
-  - [GameServerInstanceStatus](#gameserverinstancestatus)
-  - [GameServerProtectionPolicy](#gameserverprotectionpolicy)
-  - [GameServerUtilizationStatus](#gameserverutilizationstatus)
-  - [GameSessionPlacementState](#gamesessionplacementstate)
-  - [GameSessionStatus](#gamesessionstatus)
-  - [GameSessionStatusReason](#gamesessionstatusreason)
-  - [InstanceStatus](#instancestatus)
-  - [IpProtocol](#ipprotocol)
+  - [EC2InstanceTypeType](#ec2instancetypetype)
+  - [EventCodeType](#eventcodetype)
+  - [FleetActionType](#fleetactiontype)
+  - [FleetStatusType](#fleetstatustype)
+  - [FleetTypeType](#fleettypetype)
+  - [FlexMatchModeType](#flexmatchmodetype)
+  - [GameServerClaimStatusType](#gameserverclaimstatustype)
+  - [GameServerGroupActionType](#gameservergroupactiontype)
+  - [GameServerGroupDeleteOptionType](#gameservergroupdeleteoptiontype)
+  - [GameServerGroupInstanceTypeType](#gameservergroupinstancetypetype)
+  - [GameServerGroupStatusType](#gameservergroupstatustype)
+  - [GameServerHealthCheckType](#gameserverhealthchecktype)
+  - [GameServerInstanceStatusType](#gameserverinstancestatustype)
+  - [GameServerProtectionPolicyType](#gameserverprotectionpolicytype)
+  - [GameServerUtilizationStatusType](#gameserverutilizationstatustype)
+  - [GameSessionPlacementStateType](#gamesessionplacementstatetype)
+  - [GameSessionStatusReasonType](#gamesessionstatusreasontype)
+  - [GameSessionStatusType](#gamesessionstatustype)
+  - [InstanceStatusType](#instancestatustype)
+  - [IpProtocolType](#ipprotocoltype)
   - [ListAliasesPaginatorName](#listaliasespaginatorname)
   - [ListBuildsPaginatorName](#listbuildspaginatorname)
   - [ListFleetsPaginatorName](#listfleetspaginatorname)
   - [ListGameServerGroupsPaginatorName](#listgameservergroupspaginatorname)
   - [ListGameServersPaginatorName](#listgameserverspaginatorname)
   - [ListScriptsPaginatorName](#listscriptspaginatorname)
-  - [LocationUpdateStatus](#locationupdatestatus)
-  - [MatchmakingConfigurationStatus](#matchmakingconfigurationstatus)
-  - [MetricName](#metricname)
-  - [OperatingSystem](#operatingsystem)
-  - [PlayerSessionCreationPolicy](#playersessioncreationpolicy)
-  - [PlayerSessionStatus](#playersessionstatus)
-  - [PolicyType](#policytype)
-  - [PriorityType](#prioritytype)
-  - [ProtectionPolicy](#protectionpolicy)
-  - [RoutingStrategyType](#routingstrategytype)
-  - [ScalingAdjustmentType](#scalingadjustmenttype)
-  - [ScalingStatusType](#scalingstatustype)
+  - [LocationUpdateStatusType](#locationupdatestatustype)
+  - [MatchmakingConfigurationStatusType](#matchmakingconfigurationstatustype)
+  - [MetricNameType](#metricnametype)
+  - [OperatingSystemType](#operatingsystemtype)
+  - [PlayerSessionCreationPolicyType](#playersessioncreationpolicytype)
+  - [PlayerSessionStatusType](#playersessionstatustype)
+  - [PolicyTypeType](#policytypetype)
+  - [PriorityTypeType](#prioritytypetype)
+  - [ProtectionPolicyType](#protectionpolicytype)
+  - [RoutingStrategyTypeType](#routingstrategytypetype)
+  - [ScalingAdjustmentTypeType](#scalingadjustmenttypetype)
+  - [ScalingStatusTypeType](#scalingstatustypetype)
   - [SearchGameSessionsPaginatorName](#searchgamesessionspaginatorname)
-  - [SortOrder](#sortorder)
+  - [SortOrderType](#sortordertype)
 
-## AcceptanceType
+## AcceptanceTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import AcceptanceType
+from mypy_boto3_gamelift.literals import AcceptanceTypeType
 ```
 
 Values:
@@ -79,10 +79,10 @@ Values:
 - `ACCEPT`
 - `REJECT`
 
-## BackfillMode
+## BackfillModeType
 
 ```python
-from mypy_boto3_gamelift.literals import BackfillMode
+from mypy_boto3_gamelift.literals import BackfillModeType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `AUTOMATIC`
 - `MANUAL`
 
-## BalancingStrategy
+## BalancingStrategyType
 
 ```python
-from mypy_boto3_gamelift.literals import BalancingStrategy
+from mypy_boto3_gamelift.literals import BalancingStrategyType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `SPOT_ONLY`
 - `SPOT_PREFERRED`
 
-## BuildStatus
+## BuildStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import BuildStatus
+from mypy_boto3_gamelift.literals import BuildStatusType
 ```
 
 Values:
@@ -114,10 +114,10 @@ Values:
 - `INITIALIZED`
 - `READY`
 
-## CertificateType
+## CertificateTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import CertificateType
+from mypy_boto3_gamelift.literals import CertificateTypeType
 ```
 
 Values:
@@ -125,10 +125,10 @@ Values:
 - `DISABLED`
 - `GENERATED`
 
-## ComparisonOperatorType
+## ComparisonOperatorTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import ComparisonOperatorType
+from mypy_boto3_gamelift.literals import ComparisonOperatorTypeType
 ```
 
 Values:
@@ -268,10 +268,10 @@ Values:
 
 - `describe_scaling_policies`
 
-## EC2InstanceType
+## EC2InstanceTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import EC2InstanceType
+from mypy_boto3_gamelift.literals import EC2InstanceTypeType
 ```
 
 Values:
@@ -359,10 +359,10 @@ Values:
 - `t2.micro`
 - `t2.small`
 
-## EventCode
+## EventCodeType
 
 ```python
-from mypy_boto3_gamelift.literals import EventCode
+from mypy_boto3_gamelift.literals import EventCodeType
 ```
 
 Values:
@@ -401,20 +401,20 @@ Values:
 - `SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT`
 - `SERVER_PROCESS_TERMINATED_UNHEALTHY`
 
-## FleetAction
+## FleetActionType
 
 ```python
-from mypy_boto3_gamelift.literals import FleetAction
+from mypy_boto3_gamelift.literals import FleetActionType
 ```
 
 Values:
 
 - `AUTO_SCALING`
 
-## FleetStatus
+## FleetStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import FleetStatus
+from mypy_boto3_gamelift.literals import FleetStatusType
 ```
 
 Values:
@@ -429,10 +429,10 @@ Values:
 - `TERMINATED`
 - `VALIDATING`
 
-## FleetType
+## FleetTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import FleetType
+from mypy_boto3_gamelift.literals import FleetTypeType
 ```
 
 Values:
@@ -440,10 +440,10 @@ Values:
 - `ON_DEMAND`
 - `SPOT`
 
-## FlexMatchMode
+## FlexMatchModeType
 
 ```python
-from mypy_boto3_gamelift.literals import FlexMatchMode
+from mypy_boto3_gamelift.literals import FlexMatchModeType
 ```
 
 Values:
@@ -451,30 +451,30 @@ Values:
 - `STANDALONE`
 - `WITH_QUEUE`
 
-## GameServerClaimStatus
+## GameServerClaimStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerClaimStatus
+from mypy_boto3_gamelift.literals import GameServerClaimStatusType
 ```
 
 Values:
 
 - `CLAIMED`
 
-## GameServerGroupAction
+## GameServerGroupActionType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerGroupAction
+from mypy_boto3_gamelift.literals import GameServerGroupActionType
 ```
 
 Values:
 
 - `REPLACE_INSTANCE_TYPES`
 
-## GameServerGroupDeleteOption
+## GameServerGroupDeleteOptionType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerGroupDeleteOption
+from mypy_boto3_gamelift.literals import GameServerGroupDeleteOptionType
 ```
 
 Values:
@@ -483,10 +483,10 @@ Values:
 - `RETAIN`
 - `SAFE_DELETE`
 
-## GameServerGroupInstanceType
+## GameServerGroupInstanceTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerGroupInstanceType
+from mypy_boto3_gamelift.literals import GameServerGroupInstanceTypeType
 ```
 
 Values:
@@ -556,10 +556,10 @@ Values:
 - `r5a.large`
 - `r5a.xlarge`
 
-## GameServerGroupStatus
+## GameServerGroupStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerGroupStatus
+from mypy_boto3_gamelift.literals import GameServerGroupStatusType
 ```
 
 Values:
@@ -572,20 +572,20 @@ Values:
 - `ERROR`
 - `NEW`
 
-## GameServerHealthCheck
+## GameServerHealthCheckType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerHealthCheck
+from mypy_boto3_gamelift.literals import GameServerHealthCheckType
 ```
 
 Values:
 
 - `HEALTHY`
 
-## GameServerInstanceStatus
+## GameServerInstanceStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerInstanceStatus
+from mypy_boto3_gamelift.literals import GameServerInstanceStatusType
 ```
 
 Values:
@@ -594,10 +594,10 @@ Values:
 - `DRAINING`
 - `SPOT_TERMINATING`
 
-## GameServerProtectionPolicy
+## GameServerProtectionPolicyType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerProtectionPolicy
+from mypy_boto3_gamelift.literals import GameServerProtectionPolicyType
 ```
 
 Values:
@@ -605,10 +605,10 @@ Values:
 - `FULL_PROTECTION`
 - `NO_PROTECTION`
 
-## GameServerUtilizationStatus
+## GameServerUtilizationStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import GameServerUtilizationStatus
+from mypy_boto3_gamelift.literals import GameServerUtilizationStatusType
 ```
 
 Values:
@@ -616,10 +616,10 @@ Values:
 - `AVAILABLE`
 - `UTILIZED`
 
-## GameSessionPlacementState
+## GameSessionPlacementStateType
 
 ```python
-from mypy_boto3_gamelift.literals import GameSessionPlacementState
+from mypy_boto3_gamelift.literals import GameSessionPlacementStateType
 ```
 
 Values:
@@ -630,10 +630,20 @@ Values:
 - `PENDING`
 - `TIMED_OUT`
 
-## GameSessionStatus
+## GameSessionStatusReasonType
 
 ```python
-from mypy_boto3_gamelift.literals import GameSessionStatus
+from mypy_boto3_gamelift.literals import GameSessionStatusReasonType
+```
+
+Values:
+
+- `INTERRUPTED`
+
+## GameSessionStatusType
+
+```python
+from mypy_boto3_gamelift.literals import GameSessionStatusType
 ```
 
 Values:
@@ -644,20 +654,10 @@ Values:
 - `TERMINATED`
 - `TERMINATING`
 
-## GameSessionStatusReason
+## InstanceStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import GameSessionStatusReason
-```
-
-Values:
-
-- `INTERRUPTED`
-
-## InstanceStatus
-
-```python
-from mypy_boto3_gamelift.literals import InstanceStatus
+from mypy_boto3_gamelift.literals import InstanceStatusType
 ```
 
 Values:
@@ -666,10 +666,10 @@ Values:
 - `PENDING`
 - `TERMINATING`
 
-## IpProtocol
+## IpProtocolType
 
 ```python
-from mypy_boto3_gamelift.literals import IpProtocol
+from mypy_boto3_gamelift.literals import IpProtocolType
 ```
 
 Values:
@@ -737,20 +737,20 @@ Values:
 
 - `list_scripts`
 
-## LocationUpdateStatus
+## LocationUpdateStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import LocationUpdateStatus
+from mypy_boto3_gamelift.literals import LocationUpdateStatusType
 ```
 
 Values:
 
 - `PENDING_UPDATE`
 
-## MatchmakingConfigurationStatus
+## MatchmakingConfigurationStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import MatchmakingConfigurationStatus
+from mypy_boto3_gamelift.literals import MatchmakingConfigurationStatusType
 ```
 
 Values:
@@ -764,10 +764,10 @@ Values:
 - `SEARCHING`
 - `TIMED_OUT`
 
-## MetricName
+## MetricNameType
 
 ```python
-from mypy_boto3_gamelift.literals import MetricName
+from mypy_boto3_gamelift.literals import MetricNameType
 ```
 
 Values:
@@ -784,10 +784,10 @@ Values:
 - `QueueDepth`
 - `WaitTime`
 
-## OperatingSystem
+## OperatingSystemType
 
 ```python
-from mypy_boto3_gamelift.literals import OperatingSystem
+from mypy_boto3_gamelift.literals import OperatingSystemType
 ```
 
 Values:
@@ -796,10 +796,10 @@ Values:
 - `AMAZON_LINUX_2`
 - `WINDOWS_2012`
 
-## PlayerSessionCreationPolicy
+## PlayerSessionCreationPolicyType
 
 ```python
-from mypy_boto3_gamelift.literals import PlayerSessionCreationPolicy
+from mypy_boto3_gamelift.literals import PlayerSessionCreationPolicyType
 ```
 
 Values:
@@ -807,10 +807,10 @@ Values:
 - `ACCEPT_ALL`
 - `DENY_ALL`
 
-## PlayerSessionStatus
+## PlayerSessionStatusType
 
 ```python
-from mypy_boto3_gamelift.literals import PlayerSessionStatus
+from mypy_boto3_gamelift.literals import PlayerSessionStatusType
 ```
 
 Values:
@@ -820,10 +820,10 @@ Values:
 - `RESERVED`
 - `TIMEDOUT`
 
-## PolicyType
+## PolicyTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import PolicyType
+from mypy_boto3_gamelift.literals import PolicyTypeType
 ```
 
 Values:
@@ -831,10 +831,10 @@ Values:
 - `RuleBased`
 - `TargetBased`
 
-## PriorityType
+## PriorityTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import PriorityType
+from mypy_boto3_gamelift.literals import PriorityTypeType
 ```
 
 Values:
@@ -844,10 +844,10 @@ Values:
 - `LATENCY`
 - `LOCATION`
 
-## ProtectionPolicy
+## ProtectionPolicyType
 
 ```python
-from mypy_boto3_gamelift.literals import ProtectionPolicy
+from mypy_boto3_gamelift.literals import ProtectionPolicyType
 ```
 
 Values:
@@ -855,10 +855,10 @@ Values:
 - `FullProtection`
 - `NoProtection`
 
-## RoutingStrategyType
+## RoutingStrategyTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import RoutingStrategyType
+from mypy_boto3_gamelift.literals import RoutingStrategyTypeType
 ```
 
 Values:
@@ -866,10 +866,10 @@ Values:
 - `SIMPLE`
 - `TERMINAL`
 
-## ScalingAdjustmentType
+## ScalingAdjustmentTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import ScalingAdjustmentType
+from mypy_boto3_gamelift.literals import ScalingAdjustmentTypeType
 ```
 
 Values:
@@ -878,10 +878,10 @@ Values:
 - `ExactCapacity`
 - `PercentChangeInCapacity`
 
-## ScalingStatusType
+## ScalingStatusTypeType
 
 ```python
-from mypy_boto3_gamelift.literals import ScalingStatusType
+from mypy_boto3_gamelift.literals import ScalingStatusTypeType
 ```
 
 Values:
@@ -904,10 +904,10 @@ Values:
 
 - `search_game_sessions`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_gamelift.literals import SortOrder
+from mypy_boto3_gamelift.literals import SortOrderType
 ```
 
 Values:

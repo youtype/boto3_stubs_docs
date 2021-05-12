@@ -3,7 +3,7 @@
 > [Index](..) > [Detective](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/detective.html#Detective)
 type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
@@ -50,7 +50,8 @@ from mypy_boto3_detective.type_defs import CreateMembersResponseTypeDef
 
 Optional fields:
 
-- `Members`: `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
+- `Members`:
+  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
 - `UnprocessedAccounts`:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
@@ -148,8 +149,9 @@ Optional fields:
 - `GraphArn`: `str`
 - `MasterId`: `str`
 - `AdministratorId`: `str`
-- `Status`: [MemberStatus](./literals.md#memberstatus)
-- `DisabledReason`: [MemberDisabledReason](./literals.md#memberdisabledreason)
+- `Status`: [MemberStatusType](./literals.md#memberstatustype)
+- `DisabledReason`:
+  [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
 - `InvitedTime`: `datetime`
 - `UpdatedTime`: `datetime`
 - `VolumeUsageInBytes`: `int`

@@ -3,32 +3,32 @@
 > [Index](..) > [CodeDeploy](.) > Literals
 
 Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
 [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [Literals for boto3 CodeDeploy module](#literals-for-boto3-codedeploy-module)
-  - [ApplicationRevisionSortBy](#applicationrevisionsortby)
-  - [AutoRollbackEvent](#autorollbackevent)
-  - [BundleType](#bundletype)
-  - [ComputePlatform](#computeplatform)
-  - [DeploymentCreator](#deploymentcreator)
-  - [DeploymentOption](#deploymentoption)
-  - [DeploymentReadyAction](#deploymentreadyaction)
-  - [DeploymentStatus](#deploymentstatus)
+  - [ApplicationRevisionSortByType](#applicationrevisionsortbytype)
+  - [AutoRollbackEventType](#autorollbackeventtype)
+  - [BundleTypeType](#bundletypetype)
+  - [ComputePlatformType](#computeplatformtype)
+  - [DeploymentCreatorType](#deploymentcreatortype)
+  - [DeploymentOptionType](#deploymentoptiontype)
+  - [DeploymentReadyActionType](#deploymentreadyactiontype)
+  - [DeploymentStatusType](#deploymentstatustype)
   - [DeploymentSuccessfulWaiterName](#deploymentsuccessfulwaitername)
-  - [DeploymentTargetType](#deploymenttargettype)
-  - [DeploymentType](#deploymenttype)
-  - [DeploymentWaitType](#deploymentwaittype)
-  - [EC2TagFilterType](#ec2tagfiltertype)
-  - [ErrorCode](#errorcode)
-  - [FileExistsBehavior](#fileexistsbehavior)
-  - [GreenFleetProvisioningAction](#greenfleetprovisioningaction)
-  - [InstanceAction](#instanceaction)
-  - [InstanceStatus](#instancestatus)
-  - [InstanceType](#instancetype)
-  - [LifecycleErrorCode](#lifecycleerrorcode)
-  - [LifecycleEventStatus](#lifecycleeventstatus)
+  - [DeploymentTargetTypeType](#deploymenttargettypetype)
+  - [DeploymentTypeType](#deploymenttypetype)
+  - [DeploymentWaitTypeType](#deploymentwaittypetype)
+  - [EC2TagFilterTypeType](#ec2tagfiltertypetype)
+  - [ErrorCodeType](#errorcodetype)
+  - [FileExistsBehaviorType](#fileexistsbehaviortype)
+  - [GreenFleetProvisioningActionType](#greenfleetprovisioningactiontype)
+  - [InstanceActionType](#instanceactiontype)
+  - [InstanceStatusType](#instancestatustype)
+  - [InstanceTypeType](#instancetypetype)
+  - [LifecycleErrorCodeType](#lifecycleerrorcodetype)
+  - [LifecycleEventStatusType](#lifecycleeventstatustype)
   - [ListApplicationRevisionsPaginatorName](#listapplicationrevisionspaginatorname)
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
   - [ListDeploymentConfigsPaginatorName](#listdeploymentconfigspaginatorname)
@@ -38,24 +38,24 @@ type annotations stubs module
   - [ListDeploymentsPaginatorName](#listdeploymentspaginatorname)
   - [ListGitHubAccountTokenNamesPaginatorName](#listgithubaccounttokennamespaginatorname)
   - [ListOnPremisesInstancesPaginatorName](#listonpremisesinstancespaginatorname)
-  - [ListStateFilterAction](#liststatefilteraction)
-  - [MinimumHealthyHostsType](#minimumhealthyhoststype)
-  - [OutdatedInstancesStrategy](#outdatedinstancesstrategy)
-  - [RegistrationStatus](#registrationstatus)
-  - [RevisionLocationType](#revisionlocationtype)
-  - [SortOrder](#sortorder)
-  - [StopStatus](#stopstatus)
-  - [TagFilterType](#tagfiltertype)
-  - [TargetFilterName](#targetfiltername)
-  - [TargetLabel](#targetlabel)
-  - [TargetStatus](#targetstatus)
-  - [TrafficRoutingType](#trafficroutingtype)
-  - [TriggerEventType](#triggereventtype)
+  - [ListStateFilterActionType](#liststatefilteractiontype)
+  - [MinimumHealthyHostsTypeType](#minimumhealthyhoststypetype)
+  - [OutdatedInstancesStrategyType](#outdatedinstancesstrategytype)
+  - [RegistrationStatusType](#registrationstatustype)
+  - [RevisionLocationTypeType](#revisionlocationtypetype)
+  - [SortOrderType](#sortordertype)
+  - [StopStatusType](#stopstatustype)
+  - [TagFilterTypeType](#tagfiltertypetype)
+  - [TargetFilterNameType](#targetfilternametype)
+  - [TargetLabelType](#targetlabeltype)
+  - [TargetStatusType](#targetstatustype)
+  - [TrafficRoutingTypeType](#trafficroutingtypetype)
+  - [TriggerEventTypeType](#triggereventtypetype)
 
-## ApplicationRevisionSortBy
+## ApplicationRevisionSortByType
 
 ```python
-from mypy_boto3_codedeploy.literals import ApplicationRevisionSortBy
+from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType
 ```
 
 Values:
@@ -64,10 +64,10 @@ Values:
 - `lastUsedTime`
 - `registerTime`
 
-## AutoRollbackEvent
+## AutoRollbackEventType
 
 ```python
-from mypy_boto3_codedeploy.literals import AutoRollbackEvent
+from mypy_boto3_codedeploy.literals import AutoRollbackEventType
 ```
 
 Values:
@@ -76,10 +76,10 @@ Values:
 - `DEPLOYMENT_STOP_ON_ALARM`
 - `DEPLOYMENT_STOP_ON_REQUEST`
 
-## BundleType
+## BundleTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import BundleType
+from mypy_boto3_codedeploy.literals import BundleTypeType
 ```
 
 Values:
@@ -90,10 +90,10 @@ Values:
 - `YAML`
 - `zip`
 
-## ComputePlatform
+## ComputePlatformType
 
 ```python
-from mypy_boto3_codedeploy.literals import ComputePlatform
+from mypy_boto3_codedeploy.literals import ComputePlatformType
 ```
 
 Values:
@@ -102,10 +102,10 @@ Values:
 - `Lambda`
 - `Server`
 
-## DeploymentCreator
+## DeploymentCreatorType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentCreator
+from mypy_boto3_codedeploy.literals import DeploymentCreatorType
 ```
 
 Values:
@@ -118,10 +118,10 @@ Values:
 - `codeDeployRollback`
 - `user`
 
-## DeploymentOption
+## DeploymentOptionType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentOption
+from mypy_boto3_codedeploy.literals import DeploymentOptionType
 ```
 
 Values:
@@ -129,10 +129,10 @@ Values:
 - `WITH_TRAFFIC_CONTROL`
 - `WITHOUT_TRAFFIC_CONTROL`
 
-## DeploymentReadyAction
+## DeploymentReadyActionType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentReadyAction
+from mypy_boto3_codedeploy.literals import DeploymentReadyActionType
 ```
 
 Values:
@@ -140,10 +140,10 @@ Values:
 - `CONTINUE_DEPLOYMENT`
 - `STOP_DEPLOYMENT`
 
-## DeploymentStatus
+## DeploymentStatusType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentStatus
+from mypy_boto3_codedeploy.literals import DeploymentStatusType
 ```
 
 Values:
@@ -167,10 +167,10 @@ Values:
 
 - `deployment_successful`
 
-## DeploymentTargetType
+## DeploymentTargetTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentTargetType
+from mypy_boto3_codedeploy.literals import DeploymentTargetTypeType
 ```
 
 Values:
@@ -180,10 +180,10 @@ Values:
 - `InstanceTarget`
 - `LambdaTarget`
 
-## DeploymentType
+## DeploymentTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentType
+from mypy_boto3_codedeploy.literals import DeploymentTypeType
 ```
 
 Values:
@@ -191,10 +191,10 @@ Values:
 - `BLUE_GREEN`
 - `IN_PLACE`
 
-## DeploymentWaitType
+## DeploymentWaitTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import DeploymentWaitType
+from mypy_boto3_codedeploy.literals import DeploymentWaitTypeType
 ```
 
 Values:
@@ -202,10 +202,10 @@ Values:
 - `READY_WAIT`
 - `TERMINATION_WAIT`
 
-## EC2TagFilterType
+## EC2TagFilterTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import EC2TagFilterType
+from mypy_boto3_codedeploy.literals import EC2TagFilterTypeType
 ```
 
 Values:
@@ -214,10 +214,10 @@ Values:
 - `KEY_ONLY`
 - `VALUE_ONLY`
 
-## ErrorCode
+## ErrorCodeType
 
 ```python
-from mypy_boto3_codedeploy.literals import ErrorCode
+from mypy_boto3_codedeploy.literals import ErrorCodeType
 ```
 
 Values:
@@ -257,10 +257,10 @@ Values:
 - `THROTTLED`
 - `TIMEOUT`
 
-## FileExistsBehavior
+## FileExistsBehaviorType
 
 ```python
-from mypy_boto3_codedeploy.literals import FileExistsBehavior
+from mypy_boto3_codedeploy.literals import FileExistsBehaviorType
 ```
 
 Values:
@@ -269,10 +269,10 @@ Values:
 - `OVERWRITE`
 - `RETAIN`
 
-## GreenFleetProvisioningAction
+## GreenFleetProvisioningActionType
 
 ```python
-from mypy_boto3_codedeploy.literals import GreenFleetProvisioningAction
+from mypy_boto3_codedeploy.literals import GreenFleetProvisioningActionType
 ```
 
 Values:
@@ -280,10 +280,10 @@ Values:
 - `COPY_AUTO_SCALING_GROUP`
 - `DISCOVER_EXISTING`
 
-## InstanceAction
+## InstanceActionType
 
 ```python
-from mypy_boto3_codedeploy.literals import InstanceAction
+from mypy_boto3_codedeploy.literals import InstanceActionType
 ```
 
 Values:
@@ -291,10 +291,10 @@ Values:
 - `KEEP_ALIVE`
 - `TERMINATE`
 
-## InstanceStatus
+## InstanceStatusType
 
 ```python
-from mypy_boto3_codedeploy.literals import InstanceStatus
+from mypy_boto3_codedeploy.literals import InstanceStatusType
 ```
 
 Values:
@@ -307,10 +307,10 @@ Values:
 - `Succeeded`
 - `Unknown`
 
-## InstanceType
+## InstanceTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import InstanceType
+from mypy_boto3_codedeploy.literals import InstanceTypeType
 ```
 
 Values:
@@ -318,10 +318,10 @@ Values:
 - `Blue`
 - `Green`
 
-## LifecycleErrorCode
+## LifecycleErrorCodeType
 
 ```python
-from mypy_boto3_codedeploy.literals import LifecycleErrorCode
+from mypy_boto3_codedeploy.literals import LifecycleErrorCodeType
 ```
 
 Values:
@@ -333,10 +333,10 @@ Values:
 - `Success`
 - `UnknownError`
 
-## LifecycleEventStatus
+## LifecycleEventStatusType
 
 ```python
-from mypy_boto3_codedeploy.literals import LifecycleEventStatus
+from mypy_boto3_codedeploy.literals import LifecycleEventStatusType
 ```
 
 Values:
@@ -438,10 +438,10 @@ Values:
 
 - `list_on_premises_instances`
 
-## ListStateFilterAction
+## ListStateFilterActionType
 
 ```python
-from mypy_boto3_codedeploy.literals import ListStateFilterAction
+from mypy_boto3_codedeploy.literals import ListStateFilterActionType
 ```
 
 Values:
@@ -450,10 +450,10 @@ Values:
 - `ignore`
 - `include`
 
-## MinimumHealthyHostsType
+## MinimumHealthyHostsTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import MinimumHealthyHostsType
+from mypy_boto3_codedeploy.literals import MinimumHealthyHostsTypeType
 ```
 
 Values:
@@ -461,10 +461,10 @@ Values:
 - `FLEET_PERCENT`
 - `HOST_COUNT`
 
-## OutdatedInstancesStrategy
+## OutdatedInstancesStrategyType
 
 ```python
-from mypy_boto3_codedeploy.literals import OutdatedInstancesStrategy
+from mypy_boto3_codedeploy.literals import OutdatedInstancesStrategyType
 ```
 
 Values:
@@ -472,10 +472,10 @@ Values:
 - `IGNORE`
 - `UPDATE`
 
-## RegistrationStatus
+## RegistrationStatusType
 
 ```python
-from mypy_boto3_codedeploy.literals import RegistrationStatus
+from mypy_boto3_codedeploy.literals import RegistrationStatusType
 ```
 
 Values:
@@ -483,10 +483,10 @@ Values:
 - `Deregistered`
 - `Registered`
 
-## RevisionLocationType
+## RevisionLocationTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import RevisionLocationType
+from mypy_boto3_codedeploy.literals import RevisionLocationTypeType
 ```
 
 Values:
@@ -496,10 +496,10 @@ Values:
 - `S3`
 - `String`
 
-## SortOrder
+## SortOrderType
 
 ```python
-from mypy_boto3_codedeploy.literals import SortOrder
+from mypy_boto3_codedeploy.literals import SortOrderType
 ```
 
 Values:
@@ -507,10 +507,10 @@ Values:
 - `ascending`
 - `descending`
 
-## StopStatus
+## StopStatusType
 
 ```python
-from mypy_boto3_codedeploy.literals import StopStatus
+from mypy_boto3_codedeploy.literals import StopStatusType
 ```
 
 Values:
@@ -518,10 +518,10 @@ Values:
 - `Pending`
 - `Succeeded`
 
-## TagFilterType
+## TagFilterTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import TagFilterType
+from mypy_boto3_codedeploy.literals import TagFilterTypeType
 ```
 
 Values:
@@ -530,10 +530,10 @@ Values:
 - `KEY_ONLY`
 - `VALUE_ONLY`
 
-## TargetFilterName
+## TargetFilterNameType
 
 ```python
-from mypy_boto3_codedeploy.literals import TargetFilterName
+from mypy_boto3_codedeploy.literals import TargetFilterNameType
 ```
 
 Values:
@@ -541,10 +541,10 @@ Values:
 - `ServerInstanceLabel`
 - `TargetStatus`
 
-## TargetLabel
+## TargetLabelType
 
 ```python
-from mypy_boto3_codedeploy.literals import TargetLabel
+from mypy_boto3_codedeploy.literals import TargetLabelType
 ```
 
 Values:
@@ -552,10 +552,10 @@ Values:
 - `Blue`
 - `Green`
 
-## TargetStatus
+## TargetStatusType
 
 ```python
-from mypy_boto3_codedeploy.literals import TargetStatus
+from mypy_boto3_codedeploy.literals import TargetStatusType
 ```
 
 Values:
@@ -568,10 +568,10 @@ Values:
 - `Succeeded`
 - `Unknown`
 
-## TrafficRoutingType
+## TrafficRoutingTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import TrafficRoutingType
+from mypy_boto3_codedeploy.literals import TrafficRoutingTypeType
 ```
 
 Values:
@@ -580,10 +580,10 @@ Values:
 - `TimeBasedCanary`
 - `TimeBasedLinear`
 
-## TriggerEventType
+## TriggerEventTypeType
 
 ```python
-from mypy_boto3_codedeploy.literals import TriggerEventType
+from mypy_boto3_codedeploy.literals import TriggerEventTypeType
 ```
 
 Values:

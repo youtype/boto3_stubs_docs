@@ -3,22 +3,22 @@
 > [Index](..) > [Lambda](.) > Literals
 
 Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+[Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lambda.html#Lambda)
 type annotations stubs module
 [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [Literals for boto3 Lambda module](#literals-for-boto3-lambda-module)
-  - [CodeSigningPolicy](#codesigningpolicy)
-  - [EndPointType](#endpointtype)
-  - [EventSourcePosition](#eventsourceposition)
+  - [CodeSigningPolicyType](#codesigningpolicytype)
+  - [EndPointTypeType](#endpointtypetype)
+  - [EventSourcePositionType](#eventsourcepositiontype)
   - [FunctionActiveWaiterName](#functionactivewaitername)
   - [FunctionExistsWaiterName](#functionexistswaitername)
-  - [FunctionResponseType](#functionresponsetype)
+  - [FunctionResponseTypeType](#functionresponsetypetype)
   - [FunctionUpdatedWaiterName](#functionupdatedwaitername)
-  - [FunctionVersion](#functionversion)
-  - [InvocationType](#invocationtype)
-  - [LastUpdateStatus](#lastupdatestatus)
-  - [LastUpdateStatusReasonCode](#lastupdatestatusreasoncode)
+  - [FunctionVersionType](#functionversiontype)
+  - [InvocationTypeType](#invocationtypetype)
+  - [LastUpdateStatusReasonCodeType](#lastupdatestatusreasoncodetype)
+  - [LastUpdateStatusType](#lastupdatestatustype)
   - [ListAliasesPaginatorName](#listaliasespaginatorname)
   - [ListCodeSigningConfigsPaginatorName](#listcodesigningconfigspaginatorname)
   - [ListEventSourceMappingsPaginatorName](#listeventsourcemappingspaginatorname)
@@ -29,19 +29,19 @@ type annotations stubs module
   - [ListLayersPaginatorName](#listlayerspaginatorname)
   - [ListProvisionedConcurrencyConfigsPaginatorName](#listprovisionedconcurrencyconfigspaginatorname)
   - [ListVersionsByFunctionPaginatorName](#listversionsbyfunctionpaginatorname)
-  - [LogType](#logtype)
-  - [PackageType](#packagetype)
-  - [ProvisionedConcurrencyStatusEnum](#provisionedconcurrencystatusenum)
-  - [Runtime](#runtime)
-  - [SourceAccessType](#sourceaccesstype)
-  - [State](#state)
-  - [StateReasonCode](#statereasoncode)
-  - [TracingMode](#tracingmode)
+  - [LogTypeType](#logtypetype)
+  - [PackageTypeType](#packagetypetype)
+  - [ProvisionedConcurrencyStatusEnumType](#provisionedconcurrencystatusenumtype)
+  - [RuntimeType](#runtimetype)
+  - [SourceAccessTypeType](#sourceaccesstypetype)
+  - [StateReasonCodeType](#statereasoncodetype)
+  - [StateType](#statetype)
+  - [TracingModeType](#tracingmodetype)
 
-## CodeSigningPolicy
+## CodeSigningPolicyType
 
 ```python
-from mypy_boto3_lambda.literals import CodeSigningPolicy
+from mypy_boto3_lambda.literals import CodeSigningPolicyType
 ```
 
 Values:
@@ -49,20 +49,20 @@ Values:
 - `Enforce`
 - `Warn`
 
-## EndPointType
+## EndPointTypeType
 
 ```python
-from mypy_boto3_lambda.literals import EndPointType
+from mypy_boto3_lambda.literals import EndPointTypeType
 ```
 
 Values:
 
 - `KAFKA_BOOTSTRAP_SERVERS`
 
-## EventSourcePosition
+## EventSourcePositionType
 
 ```python
-from mypy_boto3_lambda.literals import EventSourcePosition
+from mypy_boto3_lambda.literals import EventSourcePositionType
 ```
 
 Values:
@@ -91,10 +91,10 @@ Values:
 
 - `function_exists`
 
-## FunctionResponseType
+## FunctionResponseTypeType
 
 ```python
-from mypy_boto3_lambda.literals import FunctionResponseType
+from mypy_boto3_lambda.literals import FunctionResponseTypeType
 ```
 
 Values:
@@ -111,20 +111,20 @@ Values:
 
 - `function_updated`
 
-## FunctionVersion
+## FunctionVersionType
 
 ```python
-from mypy_boto3_lambda.literals import FunctionVersion
+from mypy_boto3_lambda.literals import FunctionVersionType
 ```
 
 Values:
 
 - `ALL`
 
-## InvocationType
+## InvocationTypeType
 
 ```python
-from mypy_boto3_lambda.literals import InvocationType
+from mypy_boto3_lambda.literals import InvocationTypeType
 ```
 
 Values:
@@ -133,22 +133,10 @@ Values:
 - `Event`
 - `RequestResponse`
 
-## LastUpdateStatus
+## LastUpdateStatusReasonCodeType
 
 ```python
-from mypy_boto3_lambda.literals import LastUpdateStatus
-```
-
-Values:
-
-- `Failed`
-- `InProgress`
-- `Successful`
-
-## LastUpdateStatusReasonCode
-
-```python
-from mypy_boto3_lambda.literals import LastUpdateStatusReasonCode
+from mypy_boto3_lambda.literals import LastUpdateStatusReasonCodeType
 ```
 
 Values:
@@ -163,6 +151,18 @@ Values:
 - `InvalidSecurityGroup`
 - `InvalidSubnet`
 - `SubnetOutOfIPAddresses`
+
+## LastUpdateStatusType
+
+```python
+from mypy_boto3_lambda.literals import LastUpdateStatusType
+```
+
+Values:
+
+- `Failed`
+- `InProgress`
+- `Successful`
 
 ## ListAliasesPaginatorName
 
@@ -264,10 +264,10 @@ Values:
 
 - `list_versions_by_function`
 
-## LogType
+## LogTypeType
 
 ```python
-from mypy_boto3_lambda.literals import LogType
+from mypy_boto3_lambda.literals import LogTypeType
 ```
 
 Values:
@@ -275,10 +275,10 @@ Values:
 - `None`
 - `Tail`
 
-## PackageType
+## PackageTypeType
 
 ```python
-from mypy_boto3_lambda.literals import PackageType
+from mypy_boto3_lambda.literals import PackageTypeType
 ```
 
 Values:
@@ -286,10 +286,10 @@ Values:
 - `Image`
 - `Zip`
 
-## ProvisionedConcurrencyStatusEnum
+## ProvisionedConcurrencyStatusEnumType
 
 ```python
-from mypy_boto3_lambda.literals import ProvisionedConcurrencyStatusEnum
+from mypy_boto3_lambda.literals import ProvisionedConcurrencyStatusEnumType
 ```
 
 Values:
@@ -298,10 +298,10 @@ Values:
 - `IN_PROGRESS`
 - `READY`
 
-## Runtime
+## RuntimeType
 
 ```python
-from mypy_boto3_lambda.literals import Runtime
+from mypy_boto3_lambda.literals import RuntimeType
 ```
 
 Values:
@@ -331,10 +331,10 @@ Values:
 - `ruby2.5`
 - `ruby2.7`
 
-## SourceAccessType
+## SourceAccessTypeType
 
 ```python
-from mypy_boto3_lambda.literals import SourceAccessType
+from mypy_boto3_lambda.literals import SourceAccessTypeType
 ```
 
 Values:
@@ -345,23 +345,10 @@ Values:
 - `VPC_SECURITY_GROUP`
 - `VPC_SUBNET`
 
-## State
+## StateReasonCodeType
 
 ```python
-from mypy_boto3_lambda.literals import State
-```
-
-Values:
-
-- `Active`
-- `Failed`
-- `Inactive`
-- `Pending`
-
-## StateReasonCode
-
-```python
-from mypy_boto3_lambda.literals import StateReasonCode
+from mypy_boto3_lambda.literals import StateReasonCodeType
 ```
 
 Values:
@@ -380,10 +367,23 @@ Values:
 - `Restoring`
 - `SubnetOutOfIPAddresses`
 
-## TracingMode
+## StateType
 
 ```python
-from mypy_boto3_lambda.literals import TracingMode
+from mypy_boto3_lambda.literals import StateType
+```
+
+Values:
+
+- `Active`
+- `Failed`
+- `Inactive`
+- `Pending`
+
+## TracingModeType
+
+```python
+from mypy_boto3_lambda.literals import TracingModeType
 ```
 
 Values:

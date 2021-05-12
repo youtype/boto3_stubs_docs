@@ -3,17 +3,17 @@
 > [Index](..) > [Budgets](.) > Literals
 
 Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/budgets.html#Budgets)
 type annotations stubs module
 [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 - [Literals for boto3 Budgets module](#literals-for-boto3-budgets-module)
-  - [ActionStatus](#actionstatus)
-  - [ActionSubType](#actionsubtype)
-  - [ActionType](#actiontype)
-  - [ApprovalModel](#approvalmodel)
-  - [BudgetType](#budgettype)
-  - [ComparisonOperator](#comparisonoperator)
+  - [ActionStatusType](#actionstatustype)
+  - [ActionSubTypeType](#actionsubtypetype)
+  - [ActionTypeType](#actiontypetype)
+  - [ApprovalModelType](#approvalmodeltype)
+  - [BudgetTypeType](#budgettypetype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
   - [DescribeBudgetActionHistoriesPaginatorName](#describebudgetactionhistoriespaginatorname)
   - [DescribeBudgetActionsForAccountPaginatorName](#describebudgetactionsforaccountpaginatorname)
   - [DescribeBudgetActionsForBudgetPaginatorName](#describebudgetactionsforbudgetpaginatorname)
@@ -21,18 +21,18 @@ type annotations stubs module
   - [DescribeBudgetsPaginatorName](#describebudgetspaginatorname)
   - [DescribeNotificationsForBudgetPaginatorName](#describenotificationsforbudgetpaginatorname)
   - [DescribeSubscribersForNotificationPaginatorName](#describesubscribersfornotificationpaginatorname)
-  - [EventType](#eventtype)
-  - [ExecutionType](#executiontype)
-  - [NotificationState](#notificationstate)
-  - [NotificationType](#notificationtype)
-  - [SubscriptionType](#subscriptiontype)
-  - [ThresholdType](#thresholdtype)
-  - [TimeUnit](#timeunit)
+  - [EventTypeType](#eventtypetype)
+  - [ExecutionTypeType](#executiontypetype)
+  - [NotificationStateType](#notificationstatetype)
+  - [NotificationTypeType](#notificationtypetype)
+  - [SubscriptionTypeType](#subscriptiontypetype)
+  - [ThresholdTypeType](#thresholdtypetype)
+  - [TimeUnitType](#timeunittype)
 
-## ActionStatus
+## ActionStatusType
 
 ```python
-from mypy_boto3_budgets.literals import ActionStatus
+from mypy_boto3_budgets.literals import ActionStatusType
 ```
 
 Values:
@@ -48,10 +48,10 @@ Values:
 - `REVERSE_SUCCESS`
 - `STANDBY`
 
-## ActionSubType
+## ActionSubTypeType
 
 ```python
-from mypy_boto3_budgets.literals import ActionSubType
+from mypy_boto3_budgets.literals import ActionSubTypeType
 ```
 
 Values:
@@ -59,10 +59,10 @@ Values:
 - `STOP_EC2_INSTANCES`
 - `STOP_RDS_INSTANCES`
 
-## ActionType
+## ActionTypeType
 
 ```python
-from mypy_boto3_budgets.literals import ActionType
+from mypy_boto3_budgets.literals import ActionTypeType
 ```
 
 Values:
@@ -71,10 +71,10 @@ Values:
 - `APPLY_SCP_POLICY`
 - `RUN_SSM_DOCUMENTS`
 
-## ApprovalModel
+## ApprovalModelType
 
 ```python
-from mypy_boto3_budgets.literals import ApprovalModel
+from mypy_boto3_budgets.literals import ApprovalModelType
 ```
 
 Values:
@@ -82,10 +82,10 @@ Values:
 - `AUTOMATIC`
 - `MANUAL`
 
-## BudgetType
+## BudgetTypeType
 
 ```python
-from mypy_boto3_budgets.literals import BudgetType
+from mypy_boto3_budgets.literals import BudgetTypeType
 ```
 
 Values:
@@ -97,10 +97,10 @@ Values:
 - `SAVINGS_PLANS_UTILIZATION`
 - `USAGE`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_budgets.literals import ComparisonOperator
+from mypy_boto3_budgets.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -179,10 +179,10 @@ Values:
 
 - `describe_subscribers_for_notification`
 
-## EventType
+## EventTypeType
 
 ```python
-from mypy_boto3_budgets.literals import EventType
+from mypy_boto3_budgets.literals import EventTypeType
 ```
 
 Values:
@@ -193,10 +193,10 @@ Values:
 - `SYSTEM`
 - `UPDATE_ACTION`
 
-## ExecutionType
+## ExecutionTypeType
 
 ```python
-from mypy_boto3_budgets.literals import ExecutionType
+from mypy_boto3_budgets.literals import ExecutionTypeType
 ```
 
 Values:
@@ -206,10 +206,10 @@ Values:
 - `RETRY_BUDGET_ACTION`
 - `REVERSE_BUDGET_ACTION`
 
-## NotificationState
+## NotificationStateType
 
 ```python
-from mypy_boto3_budgets.literals import NotificationState
+from mypy_boto3_budgets.literals import NotificationStateType
 ```
 
 Values:
@@ -217,10 +217,10 @@ Values:
 - `ALARM`
 - `OK`
 
-## NotificationType
+## NotificationTypeType
 
 ```python
-from mypy_boto3_budgets.literals import NotificationType
+from mypy_boto3_budgets.literals import NotificationTypeType
 ```
 
 Values:
@@ -228,10 +228,10 @@ Values:
 - `ACTUAL`
 - `FORECASTED`
 
-## SubscriptionType
+## SubscriptionTypeType
 
 ```python
-from mypy_boto3_budgets.literals import SubscriptionType
+from mypy_boto3_budgets.literals import SubscriptionTypeType
 ```
 
 Values:
@@ -239,10 +239,10 @@ Values:
 - `EMAIL`
 - `SNS`
 
-## ThresholdType
+## ThresholdTypeType
 
 ```python
-from mypy_boto3_budgets.literals import ThresholdType
+from mypy_boto3_budgets.literals import ThresholdTypeType
 ```
 
 Values:
@@ -250,10 +250,10 @@ Values:
 - `ABSOLUTE_VALUE`
 - `PERCENTAGE`
 
-## TimeUnit
+## TimeUnitType
 
 ```python
-from mypy_boto3_budgets.literals import TimeUnit
+from mypy_boto3_budgets.literals import TimeUnitType
 ```
 
 Values:

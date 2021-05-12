@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticInference](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
 [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
@@ -30,7 +30,7 @@ from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeOfferingTypeDe
 Optional fields:
 
 - `acceleratorType`: `str`
-- `locationType`: [LocationType](./literals.md#locationtype)
+- `locationType`: [LocationTypeType](./literals.md#locationtypetype)
 - `location`: `str`
 
 ## AcceleratorTypeTypeDef

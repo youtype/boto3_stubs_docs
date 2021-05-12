@@ -3,7 +3,7 @@
 > [Index](..) > [DocDB](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/docdb.html#DocDB)
 type annotations stubs module
 [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
@@ -461,7 +461,8 @@ from mypy_boto3_docdb.type_defs import DBInstanceMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `DBInstances`: `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
+- `DBInstances`:
+  `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
 
 ## DBInstanceStatusInfoTypeDef
 
@@ -602,7 +603,8 @@ from mypy_boto3_docdb.type_defs import DescribeEngineDefaultClusterParametersRes
 
 Optional fields:
 
-- `EngineDefaults`: [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 
 ## EndpointTypeDef
 
@@ -690,7 +692,7 @@ from mypy_boto3_docdb.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
@@ -837,7 +839,7 @@ Optional fields:
 - `AllowedValues`: `str`
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
-- `ApplyMethod`: [ApplyMethod](./literals.md#applymethod)
+- `ApplyMethod`: [ApplyMethodType](./literals.md#applymethodtype)
 
 ## PendingCloudwatchLogsExportsTypeDef
 

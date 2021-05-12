@@ -3,7 +3,7 @@
 > [Index](..) > [SSO](.) > Paginators
 
 Auto-generated documentation for
-[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso.html#SSO)
 type annotations stubs module
 [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
@@ -25,7 +25,7 @@ def get_list_account_roles_paginator() -> ListAccountRolesPaginator:
 ```
 
 Boto3 documentation:
-[SSO.Paginator.ListAccountRoles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
+[SSO.Paginator.ListAccountRoles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
 
 Arguments for `ListAccountRolesPaginator.paginate` method:
 
@@ -51,7 +51,7 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
 ```
 
 Boto3 documentation:
-[SSO.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
+[SSO.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso.html#SSO.Paginator.ListAccounts)
 
 Arguments for `ListAccountsPaginator.paginate` method:
 

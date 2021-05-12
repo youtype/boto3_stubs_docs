@@ -3,16 +3,16 @@
 > [Index](..) > [CloudDirectory](.) > Literals
 
 Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
 [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 - [Literals for boto3 CloudDirectory module](#literals-for-boto3-clouddirectory-module)
-  - [BatchReadExceptionType](#batchreadexceptiontype)
-  - [ConsistencyLevel](#consistencylevel)
-  - [DirectoryState](#directorystate)
-  - [FacetAttributeType](#facetattributetype)
-  - [FacetStyle](#facetstyle)
+  - [BatchReadExceptionTypeType](#batchreadexceptiontypetype)
+  - [ConsistencyLevelType](#consistencyleveltype)
+  - [DirectoryStateType](#directorystatetype)
+  - [FacetAttributeTypeType](#facetattributetypetype)
+  - [FacetStyleType](#facetstyletype)
   - [ListAppliedSchemaArnsPaginatorName](#listappliedschemaarnspaginatorname)
   - [ListAttachedIndicesPaginatorName](#listattachedindicespaginatorname)
   - [ListDevelopmentSchemaArnsPaginatorName](#listdevelopmentschemaarnspaginatorname)
@@ -32,16 +32,16 @@ type annotations stubs module
   - [ListTypedLinkFacetAttributesPaginatorName](#listtypedlinkfacetattributespaginatorname)
   - [ListTypedLinkFacetNamesPaginatorName](#listtypedlinkfacetnamespaginatorname)
   - [LookupPolicyPaginatorName](#lookuppolicypaginatorname)
-  - [ObjectType](#objecttype)
-  - [RangeMode](#rangemode)
-  - [RequiredAttributeBehavior](#requiredattributebehavior)
-  - [RuleType](#ruletype)
-  - [UpdateActionType](#updateactiontype)
+  - [ObjectTypeType](#objecttypetype)
+  - [RangeModeType](#rangemodetype)
+  - [RequiredAttributeBehaviorType](#requiredattributebehaviortype)
+  - [RuleTypeType](#ruletypetype)
+  - [UpdateActionTypeType](#updateactiontypetype)
 
-## BatchReadExceptionType
+## BatchReadExceptionTypeType
 
 ```python
-from mypy_boto3_clouddirectory.literals import BatchReadExceptionType
+from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType
 ```
 
 Values:
@@ -60,10 +60,10 @@ Values:
 - `ResourceNotFoundException`
 - `ValidationException`
 
-## ConsistencyLevel
+## ConsistencyLevelType
 
 ```python
-from mypy_boto3_clouddirectory.literals import ConsistencyLevel
+from mypy_boto3_clouddirectory.literals import ConsistencyLevelType
 ```
 
 Values:
@@ -71,10 +71,10 @@ Values:
 - `EVENTUAL`
 - `SERIALIZABLE`
 
-## DirectoryState
+## DirectoryStateType
 
 ```python
-from mypy_boto3_clouddirectory.literals import DirectoryState
+from mypy_boto3_clouddirectory.literals import DirectoryStateType
 ```
 
 Values:
@@ -83,10 +83,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## FacetAttributeType
+## FacetAttributeTypeType
 
 ```python
-from mypy_boto3_clouddirectory.literals import FacetAttributeType
+from mypy_boto3_clouddirectory.literals import FacetAttributeTypeType
 ```
 
 Values:
@@ -98,10 +98,10 @@ Values:
 - `STRING`
 - `VARIANT`
 
-## FacetStyle
+## FacetStyleType
 
 ```python
-from mypy_boto3_clouddirectory.literals import FacetStyle
+from mypy_boto3_clouddirectory.literals import FacetStyleType
 ```
 
 Values:
@@ -299,10 +299,10 @@ Values:
 
 - `lookup_policy`
 
-## ObjectType
+## ObjectTypeType
 
 ```python
-from mypy_boto3_clouddirectory.literals import ObjectType
+from mypy_boto3_clouddirectory.literals import ObjectTypeType
 ```
 
 Values:
@@ -312,10 +312,10 @@ Values:
 - `NODE`
 - `POLICY`
 
-## RangeMode
+## RangeModeType
 
 ```python
-from mypy_boto3_clouddirectory.literals import RangeMode
+from mypy_boto3_clouddirectory.literals import RangeModeType
 ```
 
 Values:
@@ -326,10 +326,10 @@ Values:
 - `LAST`
 - `LAST_BEFORE_MISSING_VALUES`
 
-## RequiredAttributeBehavior
+## RequiredAttributeBehaviorType
 
 ```python
-from mypy_boto3_clouddirectory.literals import RequiredAttributeBehavior
+from mypy_boto3_clouddirectory.literals import RequiredAttributeBehaviorType
 ```
 
 Values:
@@ -337,10 +337,10 @@ Values:
 - `NOT_REQUIRED`
 - `REQUIRED_ALWAYS`
 
-## RuleType
+## RuleTypeType
 
 ```python
-from mypy_boto3_clouddirectory.literals import RuleType
+from mypy_boto3_clouddirectory.literals import RuleTypeType
 ```
 
 Values:
@@ -350,10 +350,10 @@ Values:
 - `STRING_FROM_SET`
 - `STRING_LENGTH`
 
-## UpdateActionType
+## UpdateActionTypeType
 
 ```python
-from mypy_boto3_clouddirectory.literals import UpdateActionType
+from mypy_boto3_clouddirectory.literals import UpdateActionTypeType
 ```
 
 Values:

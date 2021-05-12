@@ -3,7 +3,7 @@
 > [Index](..) > CostandUsageReportService
 
 Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
@@ -30,25 +30,25 @@ Can be used directly:
 from mypy_boto3_cur.client import CostandUsageReportServiceClient
 ```
 
-CostandUsageReportServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [delete_report_definition](./client.md#delete-report-definition)
-- [describe_report_definitions](./client.md#describe-report-definitions)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [modify_report_definition](./client.md#modify-report-definition)
-- [put_report_definition](./client.md#put-report-definition)
+- [can_paginate](./client.md#can_paginate)
+- [delete_report_definition](./client.md#delete_report_definition)
+- [describe_report_definitions](./client.md#describe_report_definitions)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [modify_report_definition](./client.md#modify_report_definition)
+- [put_report_definition](./client.md#put_report_definition)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [DuplicateReportNameException](./client.md#duplicatereportnameexception)
-- [InternalErrorException](./client.md#internalerrorexception)
-- [ReportLimitReachedException](./client.md#reportlimitreachedexception)
-- [ValidationException](./client.md#validationexception)
+CostandUsageReportServiceClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- DuplicateReportNameException
+- InternalErrorException
+- ReportLimitReachedException
+- ValidationException
 
 ## Paginators
 
@@ -70,17 +70,17 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cur.literals import AWSRegion, ...
+from mypy_boto3_cur.literals import AWSRegionType, ...
 ```
 
-- [AWSRegion](./literals.md#awsregion)
-- [AdditionalArtifact](./literals.md#additionalartifact)
-- [CompressionFormat](./literals.md#compressionformat)
+- [AWSRegionType](./literals.md#awsregiontype)
+- [AdditionalArtifactType](./literals.md#additionalartifacttype)
+- [CompressionFormatType](./literals.md#compressionformattype)
 - [DescribeReportDefinitionsPaginatorName](./literals.md#describereportdefinitionspaginatorname)
-- [ReportFormat](./literals.md#reportformat)
-- [ReportVersioning](./literals.md#reportversioning)
-- [SchemaElement](./literals.md#schemaelement)
-- [TimeUnit](./literals.md#timeunit)
+- [ReportFormatType](./literals.md#reportformattype)
+- [ReportVersioningType](./literals.md#reportversioningtype)
+- [SchemaElementType](./literals.md#schemaelementtype)
+- [TimeUnitType](./literals.md#timeunittype)
 
 ## Typed dictionaries
 

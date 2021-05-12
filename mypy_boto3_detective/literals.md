@@ -3,18 +3,18 @@
 > [Index](..) > [Detective](.) > Literals
 
 Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/detective.html#Detective)
 type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
 - [Literals for boto3 Detective module](#literals-for-boto3-detective-module)
-  - [MemberDisabledReason](#memberdisabledreason)
-  - [MemberStatus](#memberstatus)
+  - [MemberDisabledReasonType](#memberdisabledreasontype)
+  - [MemberStatusType](#memberstatustype)
 
-## MemberDisabledReason
+## MemberDisabledReasonType
 
 ```python
-from mypy_boto3_detective.literals import MemberDisabledReason
+from mypy_boto3_detective.literals import MemberDisabledReasonType
 ```
 
 Values:
@@ -22,10 +22,10 @@ Values:
 - `VOLUME_TOO_HIGH`
 - `VOLUME_UNKNOWN`
 
-## MemberStatus
+## MemberStatusType
 
 ```python
-from mypy_boto3_detective.literals import MemberStatus
+from mypy_boto3_detective.literals import MemberStatusType
 ```
 
 Values:

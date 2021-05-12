@@ -3,7 +3,7 @@
 > [Index](..) > CodeGuruProfiler
 
 Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
 [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
@@ -30,46 +30,46 @@ Can be used directly:
 from mypy_boto3_codeguruprofiler.client import CodeGuruProfilerClient
 ```
 
-CodeGuruProfilerClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [add_notification_channels](./client.md#add-notification-channels)
-- [batch_get_frame_metric_data](./client.md#batch-get-frame-metric-data)
-- [can_paginate](./client.md#can-paginate)
-- [configure_agent](./client.md#configure-agent)
-- [create_profiling_group](./client.md#create-profiling-group)
-- [delete_profiling_group](./client.md#delete-profiling-group)
-- [describe_profiling_group](./client.md#describe-profiling-group)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_findings_report_account_summary](./client.md#get-findings-report-account-summary)
-- [get_notification_configuration](./client.md#get-notification-configuration)
-- [get_paginator](./client.md#get-paginator)
-- [get_policy](./client.md#get-policy)
-- [get_profile](./client.md#get-profile)
-- [get_recommendations](./client.md#get-recommendations)
-- [list_findings_reports](./client.md#list-findings-reports)
-- [list_profile_times](./client.md#list-profile-times)
-- [list_profiling_groups](./client.md#list-profiling-groups)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [post_agent_profile](./client.md#post-agent-profile)
-- [put_permission](./client.md#put-permission)
-- [remove_notification_channel](./client.md#remove-notification-channel)
-- [remove_permission](./client.md#remove-permission)
-- [submit_feedback](./client.md#submit-feedback)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_profiling_group](./client.md#update-profiling-group)
+- [add_notification_channels](./client.md#add_notification_channels)
+- [batch_get_frame_metric_data](./client.md#batch_get_frame_metric_data)
+- [can_paginate](./client.md#can_paginate)
+- [configure_agent](./client.md#configure_agent)
+- [create_profiling_group](./client.md#create_profiling_group)
+- [delete_profiling_group](./client.md#delete_profiling_group)
+- [describe_profiling_group](./client.md#describe_profiling_group)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_findings_report_account_summary](./client.md#get_findings_report_account_summary)
+- [get_notification_configuration](./client.md#get_notification_configuration)
+- [get_paginator](./client.md#get_paginator)
+- [get_policy](./client.md#get_policy)
+- [get_profile](./client.md#get_profile)
+- [get_recommendations](./client.md#get_recommendations)
+- [list_findings_reports](./client.md#list_findings_reports)
+- [list_profile_times](./client.md#list_profile_times)
+- [list_profiling_groups](./client.md#list_profiling_groups)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [post_agent_profile](./client.md#post_agent_profile)
+- [put_permission](./client.md#put_permission)
+- [remove_notification_channel](./client.md#remove_notification_channel)
+- [remove_permission](./client.md#remove_permission)
+- [submit_feedback](./client.md#submit_feedback)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_profiling_group](./client.md#update_profiling_group)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceQuotaExceededException](./client.md#servicequotaexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+CodeGuruProfilerClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceQuotaExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -91,19 +91,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguruprofiler.literals import ActionGroup, ...
+from mypy_boto3_codeguruprofiler.literals import ActionGroupType, ...
 ```
 
-- [ActionGroup](./literals.md#actiongroup)
-- [AgentParameterField](./literals.md#agentparameterfield)
-- [AggregationPeriod](./literals.md#aggregationperiod)
-- [ComputePlatform](./literals.md#computeplatform)
-- [EventPublisher](./literals.md#eventpublisher)
-- [FeedbackType](./literals.md#feedbacktype)
+- [ActionGroupType](./literals.md#actiongrouptype)
+- [AgentParameterFieldType](./literals.md#agentparameterfieldtype)
+- [AggregationPeriodType](./literals.md#aggregationperiodtype)
+- [ComputePlatformType](./literals.md#computeplatformtype)
+- [EventPublisherType](./literals.md#eventpublishertype)
+- [FeedbackTypeType](./literals.md#feedbacktypetype)
 - [ListProfileTimesPaginatorName](./literals.md#listprofiletimespaginatorname)
-- [MetadataField](./literals.md#metadatafield)
-- [MetricType](./literals.md#metrictype)
-- [OrderBy](./literals.md#orderby)
+- [MetadataFieldType](./literals.md#metadatafieldtype)
+- [MetricTypeType](./literals.md#metrictypetype)
+- [OrderByType](./literals.md#orderbytype)
 
 ## Typed dictionaries
 

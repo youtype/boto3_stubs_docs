@@ -3,7 +3,7 @@
 > [Index](..) > DataExchange
 
 Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
 [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
@@ -30,46 +30,46 @@ Can be used directly:
 from mypy_boto3_dataexchange.client import DataExchangeClient
 ```
 
-DataExchangeClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [cancel_job](./client.md#cancel-job)
-- [create_data_set](./client.md#create-data-set)
-- [create_job](./client.md#create-job)
-- [create_revision](./client.md#create-revision)
-- [delete_asset](./client.md#delete-asset)
-- [delete_data_set](./client.md#delete-data-set)
-- [delete_revision](./client.md#delete-revision)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_asset](./client.md#get-asset)
-- [get_data_set](./client.md#get-data-set)
-- [get_job](./client.md#get-job)
-- [get_paginator](./client.md#get-paginator)
-- [get_revision](./client.md#get-revision)
-- [list_data_set_revisions](./client.md#list-data-set-revisions)
-- [list_data_sets](./client.md#list-data-sets)
-- [list_jobs](./client.md#list-jobs)
-- [list_revision_assets](./client.md#list-revision-assets)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [start_job](./client.md#start-job)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
-- [update_asset](./client.md#update-asset)
-- [update_data_set](./client.md#update-data-set)
-- [update_revision](./client.md#update-revision)
+- [can_paginate](./client.md#can_paginate)
+- [cancel_job](./client.md#cancel_job)
+- [create_data_set](./client.md#create_data_set)
+- [create_job](./client.md#create_job)
+- [create_revision](./client.md#create_revision)
+- [delete_asset](./client.md#delete_asset)
+- [delete_data_set](./client.md#delete_data_set)
+- [delete_revision](./client.md#delete_revision)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_asset](./client.md#get_asset)
+- [get_data_set](./client.md#get_data_set)
+- [get_job](./client.md#get_job)
+- [get_paginator](./client.md#get_paginator)
+- [get_revision](./client.md#get_revision)
+- [list_data_set_revisions](./client.md#list_data_set_revisions)
+- [list_data_sets](./client.md#list_data_sets)
+- [list_jobs](./client.md#list_jobs)
+- [list_revision_assets](./client.md#list_revision_assets)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [start_job](./client.md#start_job)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
+- [update_asset](./client.md#update_asset)
+- [update_data_set](./client.md#update_data_set)
+- [update_revision](./client.md#update_revision)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [ServiceLimitExceededException](./client.md#servicelimitexceededexception)
-- [ThrottlingException](./client.md#throttlingexception)
-- [ValidationException](./client.md#validationexception)
+DataExchangeClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- ClientError
+- ConflictException
+- InternalServerException
+- ResourceNotFoundException
+- ServiceLimitExceededException
+- ThrottlingException
+- ValidationException
 
 ## Paginators
 
@@ -94,20 +94,20 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_dataexchange.literals import AssetType, ...
+from mypy_boto3_dataexchange.literals import AssetTypeType, ...
 ```
 
-- [AssetType](./literals.md#assettype)
-- [Code](./literals.md#code)
-- [JobErrorLimitName](./literals.md#joberrorlimitname)
-- [JobErrorResourceTypes](./literals.md#joberrorresourcetypes)
+- [AssetTypeType](./literals.md#assettypetype)
+- [CodeType](./literals.md#codetype)
+- [JobErrorLimitNameType](./literals.md#joberrorlimitnametype)
+- [JobErrorResourceTypesType](./literals.md#joberrorresourcetypestype)
 - [ListDataSetRevisionsPaginatorName](./literals.md#listdatasetrevisionspaginatorname)
 - [ListDataSetsPaginatorName](./literals.md#listdatasetspaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
 - [ListRevisionAssetsPaginatorName](./literals.md#listrevisionassetspaginatorname)
-- [Origin](./literals.md#origin)
-- [ServerSideEncryptionTypes](./literals.md#serversideencryptiontypes)
-- [State](./literals.md#state)
+- [OriginType](./literals.md#origintype)
+- [ServerSideEncryptionTypesType](./literals.md#serversideencryptiontypestype)
+- [StateType](./literals.md#statetype)
 - [TypeType](./literals.md#typetype)
 
 ## Typed dictionaries

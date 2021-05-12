@@ -3,7 +3,7 @@
 > [Index](..) > KinesisVideoSignalingChannels
 
 Auto-generated documentation for
-[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
 type annotations stubs module
 [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
@@ -29,24 +29,24 @@ Can be used directly:
 from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChannelsClient
 ```
 
-KinesisVideoSignalingChannelsClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_ice_server_config](./client.md#get-ice-server-config)
-- [send_alexa_offer_to_master](./client.md#send-alexa-offer-to-master)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_ice_server_config](./client.md#get_ice_server_config)
+- [send_alexa_offer_to_master](./client.md#send_alexa_offer_to_master)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ClientLimitExceededException](./client.md#clientlimitexceededexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidClientException](./client.md#invalidclientexception)
-- [NotAuthorizedException](./client.md#notauthorizedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [SessionExpiredException](./client.md#sessionexpiredexception)
+KinesisVideoSignalingChannelsClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ClientLimitExceededException
+- InvalidArgumentException
+- InvalidClientException
+- NotAuthorizedException
+- ResourceNotFoundException
+- SessionExpiredException
 
 ## Literals
 
@@ -55,10 +55,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_signaling.literals import Service, ...
+from mypy_boto3_kinesis_video_signaling.literals import ServiceType, ...
 ```
 
-- [Service](./literals.md#service)
+- [ServiceType](./literals.md#servicetype)
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > DataPipeline
 
 Auto-generated documentation for
-[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
 [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
@@ -30,41 +30,41 @@ Can be used directly:
 from mypy_boto3_datapipeline.client import DataPipelineClient
 ```
 
-DataPipelineClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [activate_pipeline](./client.md#activate-pipeline)
-- [add_tags](./client.md#add-tags)
-- [can_paginate](./client.md#can-paginate)
-- [create_pipeline](./client.md#create-pipeline)
-- [deactivate_pipeline](./client.md#deactivate-pipeline)
-- [delete_pipeline](./client.md#delete-pipeline)
-- [describe_objects](./client.md#describe-objects)
-- [describe_pipelines](./client.md#describe-pipelines)
-- [evaluate_expression](./client.md#evaluate-expression)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_paginator](./client.md#get-paginator)
-- [get_pipeline_definition](./client.md#get-pipeline-definition)
-- [list_pipelines](./client.md#list-pipelines)
-- [poll_for_task](./client.md#poll-for-task)
-- [put_pipeline_definition](./client.md#put-pipeline-definition)
-- [query_objects](./client.md#query-objects)
-- [remove_tags](./client.md#remove-tags)
-- [report_task_progress](./client.md#report-task-progress)
-- [report_task_runner_heartbeat](./client.md#report-task-runner-heartbeat)
-- [set_status](./client.md#set-status)
-- [set_task_status](./client.md#set-task-status)
-- [validate_pipeline_definition](./client.md#validate-pipeline-definition)
+- [activate_pipeline](./client.md#activate_pipeline)
+- [add_tags](./client.md#add_tags)
+- [can_paginate](./client.md#can_paginate)
+- [create_pipeline](./client.md#create_pipeline)
+- [deactivate_pipeline](./client.md#deactivate_pipeline)
+- [delete_pipeline](./client.md#delete_pipeline)
+- [describe_objects](./client.md#describe_objects)
+- [describe_pipelines](./client.md#describe_pipelines)
+- [evaluate_expression](./client.md#evaluate_expression)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_paginator](./client.md#get_paginator)
+- [get_pipeline_definition](./client.md#get_pipeline_definition)
+- [list_pipelines](./client.md#list_pipelines)
+- [poll_for_task](./client.md#poll_for_task)
+- [put_pipeline_definition](./client.md#put_pipeline_definition)
+- [query_objects](./client.md#query_objects)
+- [remove_tags](./client.md#remove_tags)
+- [report_task_progress](./client.md#report_task_progress)
+- [report_task_runner_heartbeat](./client.md#report_task_runner_heartbeat)
+- [set_status](./client.md#set_status)
+- [set_task_status](./client.md#set_task_status)
+- [validate_pipeline_definition](./client.md#validate_pipeline_definition)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [InternalServiceError](./client.md#internalserviceerror)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [PipelineDeletedException](./client.md#pipelinedeletedexception)
-- [PipelineNotFoundException](./client.md#pipelinenotfoundexception)
-- [TaskNotFoundException](./client.md#tasknotfoundexception)
+DataPipelineClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- InternalServiceError
+- InvalidRequestException
+- PipelineDeletedException
+- PipelineNotFoundException
+- TaskNotFoundException
 
 ## Paginators
 
@@ -93,9 +93,9 @@ from mypy_boto3_datapipeline.literals import DescribeObjectsPaginatorName, ...
 
 - [DescribeObjectsPaginatorName](./literals.md#describeobjectspaginatorname)
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
-- [OperatorType](./literals.md#operatortype)
+- [OperatorTypeType](./literals.md#operatortypetype)
 - [QueryObjectsPaginatorName](./literals.md#queryobjectspaginatorname)
-- [TaskStatus](./literals.md#taskstatus)
+- [TaskStatusType](./literals.md#taskstatustype)
 
 ## Typed dictionaries
 

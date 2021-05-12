@@ -3,7 +3,7 @@
 > [Index](..) > SSOOIDC
 
 Auto-generated documentation for
-[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
+[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module
 [mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
@@ -27,31 +27,31 @@ Can be used directly:
 from mypy_boto3_sso_oidc.client import SSOOIDCClient
 ```
 
-SSOOIDCClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_token](./client.md#create-token)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [register_client](./client.md#register-client)
-- [start_device_authorization](./client.md#start-device-authorization)
+- [can_paginate](./client.md#can_paginate)
+- [create_token](./client.md#create_token)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [register_client](./client.md#register_client)
+- [start_device_authorization](./client.md#start_device_authorization)
 
 ### Exceptions
 
-- [AccessDeniedException](./client.md#accessdeniedexception)
-- [AuthorizationPendingException](./client.md#authorizationpendingexception)
-- [ClientError](./client.md#clienterror)
-- [ExpiredTokenException](./client.md#expiredtokenexception)
-- [InternalServerException](./client.md#internalserverexception)
-- [InvalidClientException](./client.md#invalidclientexception)
-- [InvalidClientMetadataException](./client.md#invalidclientmetadataexception)
-- [InvalidGrantException](./client.md#invalidgrantexception)
-- [InvalidRequestException](./client.md#invalidrequestexception)
-- [InvalidScopeException](./client.md#invalidscopeexception)
-- [SlowDownException](./client.md#slowdownexception)
-- [UnauthorizedClientException](./client.md#unauthorizedclientexception)
-- [UnsupportedGrantTypeException](./client.md#unsupportedgranttypeexception)
+SSOOIDCClient [exceptions](./client.md#exceptions)
+
+- AccessDeniedException
+- AuthorizationPendingException
+- ClientError
+- ExpiredTokenException
+- InternalServerException
+- InvalidClientException
+- InvalidClientMetadataException
+- InvalidGrantException
+- InvalidRequestException
+- InvalidScopeException
+- SlowDownException
+- UnauthorizedClientException
+- UnsupportedGrantTypeException
 
 ## Typed dictionaries
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ElastiCache](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
 [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
@@ -145,7 +145,7 @@ from mypy_boto3_elasticache.type_defs import AuthenticationTypeDef
 
 Optional fields:
 
-- `Type`: [AuthenticationType](./literals.md#authenticationtype)
+- `Type`: [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - `PasswordCount`: `int`
 
 ## AuthorizeCacheSecurityGroupIngressResultTypeDef
@@ -286,7 +286,7 @@ Optional fields:
 - `MinimumEngineVersion`: `str`
 - `CacheNodeTypeSpecificValues`:
   `List`\[[CacheNodeTypeSpecificValueTypeDef](./type_defs.md#cachenodetypespecificvaluetypedef)\]
-- `ChangeType`: [ChangeType](./literals.md#changetype)
+- `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
 ## CacheNodeTypeSpecificValueTypeDef
 
@@ -308,12 +308,13 @@ from mypy_boto3_elasticache.type_defs import CacheNodeUpdateStatusTypeDef
 Optional fields:
 
 - `CacheNodeId`: `str`
-- `NodeUpdateStatus`: [NodeUpdateStatus](./literals.md#nodeupdatestatus)
+- `NodeUpdateStatus`:
+  [NodeUpdateStatusType](./literals.md#nodeupdatestatustype)
 - `NodeDeletionDate`: `datetime`
 - `NodeUpdateStartDate`: `datetime`
 - `NodeUpdateEndDate`: `datetime`
 - `NodeUpdateInitiatedBy`:
-  [NodeUpdateInitiatedBy](./literals.md#nodeupdateinitiatedby)
+  [NodeUpdateInitiatedByType](./literals.md#nodeupdateinitiatedbytype)
 - `NodeUpdateInitiatedDate`: `datetime`
 - `NodeUpdateStatusModifiedDate`: `datetime`
 
@@ -647,7 +648,8 @@ from mypy_boto3_elasticache.type_defs import DescribeEngineDefaultParametersResu
 
 Optional fields:
 
-- `EngineDefaults`: [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `EngineDefaults`:
+  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 
 ## DescribeGlobalReplicationGroupsResultTypeDef
 
@@ -764,7 +766,7 @@ from mypy_boto3_elasticache.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: [SourceType](./literals.md#sourcetype)
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `Date`: `datetime`
 
@@ -835,7 +837,7 @@ Optional fields:
 - `ReplicationGroupRegion`: `str`
 - `Role`: `str`
 - `AutomaticFailover`:
-  [AutomaticFailoverStatus](./literals.md#automaticfailoverstatus)
+  [AutomaticFailoverStatusType](./literals.md#automaticfailoverstatustype)
 - `Status`: `str`
 
 ## GlobalReplicationGroupTypeDef
@@ -902,11 +904,12 @@ from mypy_boto3_elasticache.type_defs import LogDeliveryConfigurationRequestType
 
 Optional fields:
 
-- `LogType`: `Literal['slow-log']` (see [LogType](./literals.md#logtype))
-- `DestinationType`: [DestinationType](./literals.md#destinationtype)
+- `LogType`: `Literal['slow-log']` (see
+  [LogTypeType](./literals.md#logtypetype))
+- `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
-- `LogFormat`: [LogFormat](./literals.md#logformat)
+- `LogFormat`: [LogFormatType](./literals.md#logformattype)
 - `Enabled`: `bool`
 
 ## LogDeliveryConfigurationTypeDef
@@ -917,13 +920,14 @@ from mypy_boto3_elasticache.type_defs import LogDeliveryConfigurationTypeDef
 
 Optional fields:
 
-- `LogType`: `Literal['slow-log']` (see [LogType](./literals.md#logtype))
-- `DestinationType`: [DestinationType](./literals.md#destinationtype)
+- `LogType`: `Literal['slow-log']` (see
+  [LogTypeType](./literals.md#logtypetype))
+- `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
-- `LogFormat`: [LogFormat](./literals.md#logformat)
+- `LogFormat`: [LogFormatType](./literals.md#logformattype)
 - `Status`:
-  [LogDeliveryConfigurationStatus](./literals.md#logdeliveryconfigurationstatus)
+  [LogDeliveryConfigurationStatusType](./literals.md#logdeliveryconfigurationstatustype)
 - `Message`: `str`
 
 ## ModifyCacheClusterResultTypeDef
@@ -1021,12 +1025,13 @@ Optional fields:
 
 - `CacheClusterId`: `str`
 - `CacheNodeId`: `str`
-- `NodeUpdateStatus`: [NodeUpdateStatus](./literals.md#nodeupdatestatus)
+- `NodeUpdateStatus`:
+  [NodeUpdateStatusType](./literals.md#nodeupdatestatustype)
 - `NodeDeletionDate`: `datetime`
 - `NodeUpdateStartDate`: `datetime`
 - `NodeUpdateEndDate`: `datetime`
 - `NodeUpdateInitiatedBy`:
-  [NodeUpdateInitiatedBy](./literals.md#nodeupdateinitiatedby)
+  [NodeUpdateInitiatedByType](./literals.md#nodeupdateinitiatedbytype)
 - `NodeUpdateInitiatedDate`: `datetime`
 - `NodeUpdateStatusModifiedDate`: `datetime`
 
@@ -1125,7 +1130,7 @@ Optional fields:
 - `AllowedValues`: `str`
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
-- `ChangeType`: [ChangeType](./literals.md#changetype)
+- `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
 ## PendingLogDeliveryConfigurationTypeDef
 
@@ -1135,11 +1140,12 @@ from mypy_boto3_elasticache.type_defs import PendingLogDeliveryConfigurationType
 
 Optional fields:
 
-- `LogType`: `Literal['slow-log']` (see [LogType](./literals.md#logtype))
-- `DestinationType`: [DestinationType](./literals.md#destinationtype)
+- `LogType`: `Literal['slow-log']` (see
+  [LogTypeType](./literals.md#logtypetype))
+- `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
-- `LogFormat`: [LogFormat](./literals.md#logformat)
+- `LogFormat`: [LogFormatType](./literals.md#logformattype)
 
 ## PendingModifiedValuesTypeDef
 
@@ -1153,7 +1159,8 @@ Optional fields:
 - `CacheNodeIdsToRemove`: `List`\[`str`\]
 - `EngineVersion`: `str`
 - `CacheNodeType`: `str`
-- `AuthTokenStatus`: [AuthTokenUpdateStatus](./literals.md#authtokenupdatestatus)
+- `AuthTokenStatus`:
+  [AuthTokenUpdateStatusType](./literals.md#authtokenupdatestatustype)
 - `LogDeliveryConfigurations`:
   `List`\[[PendingLogDeliveryConfigurationTypeDef](./type_defs.md#pendinglogdeliveryconfigurationtypedef)\]
 
@@ -1168,7 +1175,8 @@ Optional fields:
 - `ReplicationGroupId`: `str`
 - `CacheClusterId`: `str`
 - `ServiceUpdateName`: `str`
-- `UpdateActionStatus`: [UpdateActionStatus](./literals.md#updateactionstatus)
+- `UpdateActionStatus`:
+  [UpdateActionStatusType](./literals.md#updateactionstatustype)
 
 ## PurchaseReservedCacheNodesOfferingResultTypeDef
 
@@ -1248,9 +1256,11 @@ Optional fields:
 
 - `PrimaryClusterId`: `str`
 - `AutomaticFailoverStatus`:
-  [PendingAutomaticFailoverStatus](./literals.md#pendingautomaticfailoverstatus)
-- `Resharding`: [ReshardingStatusTypeDef](./type_defs.md#reshardingstatustypedef)
-- `AuthTokenStatus`: [AuthTokenUpdateStatus](./literals.md#authtokenupdatestatus)
+  [PendingAutomaticFailoverStatusType](./literals.md#pendingautomaticfailoverstatustype)
+- `Resharding`:
+  [ReshardingStatusTypeDef](./type_defs.md#reshardingstatustypedef)
+- `AuthTokenStatus`:
+  [AuthTokenUpdateStatusType](./literals.md#authtokenupdatestatustype)
 - `UserGroups`:
   [UserGroupsUpdateStatusTypeDef](./type_defs.md#usergroupsupdatestatustypedef)
 - `LogDeliveryConfigurations`:
@@ -1275,8 +1285,8 @@ Optional fields:
 - `NodeGroups`: `List`\[[NodeGroupTypeDef](./type_defs.md#nodegrouptypedef)\]
 - `SnapshottingClusterId`: `str`
 - `AutomaticFailover`:
-  [AutomaticFailoverStatus](./literals.md#automaticfailoverstatus)
-- `MultiAZ`: [MultiAZStatus](./literals.md#multiazstatus)
+  [AutomaticFailoverStatusType](./literals.md#automaticfailoverstatustype)
+- `MultiAZ`: [MultiAZStatusType](./literals.md#multiazstatustype)
 - `ConfigurationEndpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `SnapshotRetentionLimit`: `int`
 - `SnapshotWindow`: `str`
@@ -1413,12 +1423,13 @@ Optional fields:
 - `ServiceUpdateReleaseDate`: `datetime`
 - `ServiceUpdateEndDate`: `datetime`
 - `ServiceUpdateSeverity`:
-  [ServiceUpdateSeverity](./literals.md#serviceupdateseverity)
+  [ServiceUpdateSeverityType](./literals.md#serviceupdateseveritytype)
 - `ServiceUpdateRecommendedApplyByDate`: `datetime`
-- `ServiceUpdateStatus`: [ServiceUpdateStatus](./literals.md#serviceupdatestatus)
+- `ServiceUpdateStatus`:
+  [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 - `ServiceUpdateDescription`: `str`
 - `ServiceUpdateType`: `Literal['security-update']` (see
-  [ServiceUpdateType](./literals.md#serviceupdatetype))
+  [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype))
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `AutoUpdateAfterRecommendedApplyByDate`: `bool`
@@ -1478,7 +1489,7 @@ Optional fields:
 - `SnapshotWindow`: `str`
 - `NumNodeGroups`: `int`
 - `AutomaticFailover`:
-  [AutomaticFailoverStatus](./literals.md#automaticfailoverstatus)
+  [AutomaticFailoverStatusType](./literals.md#automaticfailoverstatustype)
 - `NodeSnapshots`:
   `List`\[[NodeSnapshotTypeDef](./type_defs.md#nodesnapshottypedef)\]
 - `KmsKeyId`: `str`
@@ -1601,16 +1612,18 @@ Optional fields:
 - `ServiceUpdateName`: `str`
 - `ServiceUpdateReleaseDate`: `datetime`
 - `ServiceUpdateSeverity`:
-  [ServiceUpdateSeverity](./literals.md#serviceupdateseverity)
-- `ServiceUpdateStatus`: [ServiceUpdateStatus](./literals.md#serviceupdatestatus)
+  [ServiceUpdateSeverityType](./literals.md#serviceupdateseveritytype)
+- `ServiceUpdateStatus`:
+  [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 - `ServiceUpdateRecommendedApplyByDate`: `datetime`
 - `ServiceUpdateType`: `Literal['security-update']` (see
-  [ServiceUpdateType](./literals.md#serviceupdatetype))
+  [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype))
 - `UpdateActionAvailableDate`: `datetime`
-- `UpdateActionStatus`: [UpdateActionStatus](./literals.md#updateactionstatus)
+- `UpdateActionStatus`:
+  [UpdateActionStatusType](./literals.md#updateactionstatustype)
 - `NodesUpdated`: `str`
 - `UpdateActionStatusModifiedDate`: `datetime`
-- `SlaMet`: [SlaMet](./literals.md#slamet)
+- `SlaMet`: [SlaMetType](./literals.md#slamettype)
 - `NodeGroupUpdateStatus`:
   `List`\[[NodeGroupUpdateStatusTypeDef](./type_defs.md#nodegroupupdatestatustypedef)\]
 - `CacheNodeUpdateStatus`:
@@ -1683,7 +1696,8 @@ Optional fields:
 - `Engine`: `str`
 - `AccessString`: `str`
 - `UserGroupIds`: `List`\[`str`\]
-- `Authentication`: [AuthenticationTypeDef](./type_defs.md#authenticationtypedef)
+- `Authentication`:
+  [AuthenticationTypeDef](./type_defs.md#authenticationtypedef)
 - `ARN`: `str`
 
 ## WaiterConfigTypeDef

@@ -3,55 +3,55 @@
 > [Index](..) > [DynamoDB](.) > Literals
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Literals for boto3 DynamoDB module](#literals-for-boto3-dynamodb-module)
-  - [AttributeAction](#attributeaction)
-  - [BackupStatus](#backupstatus)
-  - [BackupType](#backuptype)
-  - [BackupTypeFilter](#backuptypefilter)
-  - [BatchStatementErrorCodeEnum](#batchstatementerrorcodeenum)
-  - [BillingMode](#billingmode)
-  - [ComparisonOperator](#comparisonoperator)
-  - [ConditionalOperator](#conditionaloperator)
-  - [ContinuousBackupsStatus](#continuousbackupsstatus)
-  - [ContributorInsightsAction](#contributorinsightsaction)
-  - [ContributorInsightsStatus](#contributorinsightsstatus)
-  - [DestinationStatus](#destinationstatus)
-  - [ExportFormat](#exportformat)
-  - [ExportStatus](#exportstatus)
-  - [GlobalTableStatus](#globaltablestatus)
-  - [IndexStatus](#indexstatus)
-  - [KeyType](#keytype)
+  - [AttributeActionType](#attributeactiontype)
+  - [BackupStatusType](#backupstatustype)
+  - [BackupTypeFilterType](#backuptypefiltertype)
+  - [BackupTypeType](#backuptypetype)
+  - [BatchStatementErrorCodeEnumType](#batchstatementerrorcodeenumtype)
+  - [BillingModeType](#billingmodetype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
+  - [ConditionalOperatorType](#conditionaloperatortype)
+  - [ContinuousBackupsStatusType](#continuousbackupsstatustype)
+  - [ContributorInsightsActionType](#contributorinsightsactiontype)
+  - [ContributorInsightsStatusType](#contributorinsightsstatustype)
+  - [DestinationStatusType](#destinationstatustype)
+  - [ExportFormatType](#exportformattype)
+  - [ExportStatusType](#exportstatustype)
+  - [GlobalTableStatusType](#globaltablestatustype)
+  - [IndexStatusType](#indexstatustype)
+  - [KeyTypeType](#keytypetype)
   - [ListBackupsPaginatorName](#listbackupspaginatorname)
   - [ListTablesPaginatorName](#listtablespaginatorname)
   - [ListTagsOfResourcePaginatorName](#listtagsofresourcepaginatorname)
-  - [PointInTimeRecoveryStatus](#pointintimerecoverystatus)
-  - [ProjectionType](#projectiontype)
+  - [PointInTimeRecoveryStatusType](#pointintimerecoverystatustype)
+  - [ProjectionTypeType](#projectiontypetype)
   - [QueryPaginatorName](#querypaginatorname)
-  - [ReplicaStatus](#replicastatus)
-  - [ReturnConsumedCapacity](#returnconsumedcapacity)
-  - [ReturnItemCollectionMetrics](#returnitemcollectionmetrics)
-  - [ReturnValue](#returnvalue)
-  - [ReturnValuesOnConditionCheckFailure](#returnvaluesonconditioncheckfailure)
-  - [S3SseAlgorithm](#s3ssealgorithm)
-  - [SSEStatus](#ssestatus)
-  - [SSEType](#ssetype)
-  - [ScalarAttributeType](#scalarattributetype)
+  - [ReplicaStatusType](#replicastatustype)
+  - [ReturnConsumedCapacityType](#returnconsumedcapacitytype)
+  - [ReturnItemCollectionMetricsType](#returnitemcollectionmetricstype)
+  - [ReturnValueType](#returnvaluetype)
+  - [ReturnValuesOnConditionCheckFailureType](#returnvaluesonconditioncheckfailuretype)
+  - [S3SseAlgorithmType](#s3ssealgorithmtype)
+  - [SSEStatusType](#ssestatustype)
+  - [SSETypeType](#ssetypetype)
+  - [ScalarAttributeTypeType](#scalarattributetypetype)
   - [ScanPaginatorName](#scanpaginatorname)
-  - [Select](#select)
-  - [StreamViewType](#streamviewtype)
+  - [SelectType](#selecttype)
+  - [StreamViewTypeType](#streamviewtypetype)
   - [TableExistsWaiterName](#tableexistswaitername)
   - [TableNotExistsWaiterName](#tablenotexistswaitername)
-  - [TableStatus](#tablestatus)
-  - [TimeToLiveStatus](#timetolivestatus)
+  - [TableStatusType](#tablestatustype)
+  - [TimeToLiveStatusType](#timetolivestatustype)
 
-## AttributeAction
+## AttributeActionType
 
 ```python
-from mypy_boto3_dynamodb.literals import AttributeAction
+from mypy_boto3_dynamodb.literals import AttributeActionType
 ```
 
 Values:
@@ -60,10 +60,10 @@ Values:
 - `DELETE`
 - `PUT`
 
-## BackupStatus
+## BackupStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import BackupStatus
+from mypy_boto3_dynamodb.literals import BackupStatusType
 ```
 
 Values:
@@ -72,22 +72,10 @@ Values:
 - `CREATING`
 - `DELETED`
 
-## BackupType
+## BackupTypeFilterType
 
 ```python
-from mypy_boto3_dynamodb.literals import BackupType
-```
-
-Values:
-
-- `AWS_BACKUP`
-- `SYSTEM`
-- `USER`
-
-## BackupTypeFilter
-
-```python
-from mypy_boto3_dynamodb.literals import BackupTypeFilter
+from mypy_boto3_dynamodb.literals import BackupTypeFilterType
 ```
 
 Values:
@@ -97,10 +85,22 @@ Values:
 - `SYSTEM`
 - `USER`
 
-## BatchStatementErrorCodeEnum
+## BackupTypeType
 
 ```python
-from mypy_boto3_dynamodb.literals import BatchStatementErrorCodeEnum
+from mypy_boto3_dynamodb.literals import BackupTypeType
+```
+
+Values:
+
+- `AWS_BACKUP`
+- `SYSTEM`
+- `USER`
+
+## BatchStatementErrorCodeEnumType
+
+```python
+from mypy_boto3_dynamodb.literals import BatchStatementErrorCodeEnumType
 ```
 
 Values:
@@ -117,10 +117,10 @@ Values:
 - `TransactionConflict`
 - `ValidationError`
 
-## BillingMode
+## BillingModeType
 
 ```python
-from mypy_boto3_dynamodb.literals import BillingMode
+from mypy_boto3_dynamodb.literals import BillingModeType
 ```
 
 Values:
@@ -128,10 +128,10 @@ Values:
 - `PAY_PER_REQUEST`
 - `PROVISIONED`
 
-## ComparisonOperator
+## ComparisonOperatorType
 
 ```python
-from mypy_boto3_dynamodb.literals import ComparisonOperator
+from mypy_boto3_dynamodb.literals import ComparisonOperatorType
 ```
 
 Values:
@@ -150,10 +150,10 @@ Values:
 - `NOT_NULL`
 - `NULL`
 
-## ConditionalOperator
+## ConditionalOperatorType
 
 ```python
-from mypy_boto3_dynamodb.literals import ConditionalOperator
+from mypy_boto3_dynamodb.literals import ConditionalOperatorType
 ```
 
 Values:
@@ -161,10 +161,10 @@ Values:
 - `AND`
 - `OR`
 
-## ContinuousBackupsStatus
+## ContinuousBackupsStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import ContinuousBackupsStatus
+from mypy_boto3_dynamodb.literals import ContinuousBackupsStatusType
 ```
 
 Values:
@@ -172,10 +172,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ContributorInsightsAction
+## ContributorInsightsActionType
 
 ```python
-from mypy_boto3_dynamodb.literals import ContributorInsightsAction
+from mypy_boto3_dynamodb.literals import ContributorInsightsActionType
 ```
 
 Values:
@@ -183,10 +183,10 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
-## ContributorInsightsStatus
+## ContributorInsightsStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import ContributorInsightsStatus
+from mypy_boto3_dynamodb.literals import ContributorInsightsStatusType
 ```
 
 Values:
@@ -197,10 +197,10 @@ Values:
 - `ENABLING`
 - `FAILED`
 
-## DestinationStatus
+## DestinationStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import DestinationStatus
+from mypy_boto3_dynamodb.literals import DestinationStatusType
 ```
 
 Values:
@@ -211,10 +211,10 @@ Values:
 - `ENABLE_FAILED`
 - `ENABLING`
 
-## ExportFormat
+## ExportFormatType
 
 ```python
-from mypy_boto3_dynamodb.literals import ExportFormat
+from mypy_boto3_dynamodb.literals import ExportFormatType
 ```
 
 Values:
@@ -222,10 +222,10 @@ Values:
 - `DYNAMODB_JSON`
 - `ION`
 
-## ExportStatus
+## ExportStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import ExportStatus
+from mypy_boto3_dynamodb.literals import ExportStatusType
 ```
 
 Values:
@@ -234,10 +234,10 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
-## GlobalTableStatus
+## GlobalTableStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import GlobalTableStatus
+from mypy_boto3_dynamodb.literals import GlobalTableStatusType
 ```
 
 Values:
@@ -247,10 +247,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## IndexStatus
+## IndexStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import IndexStatus
+from mypy_boto3_dynamodb.literals import IndexStatusType
 ```
 
 Values:
@@ -260,10 +260,10 @@ Values:
 - `DELETING`
 - `UPDATING`
 
-## KeyType
+## KeyTypeType
 
 ```python
-from mypy_boto3_dynamodb.literals import KeyType
+from mypy_boto3_dynamodb.literals import KeyTypeType
 ```
 
 Values:
@@ -301,10 +301,10 @@ Values:
 
 - `list_tags_of_resource`
 
-## PointInTimeRecoveryStatus
+## PointInTimeRecoveryStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import PointInTimeRecoveryStatus
+from mypy_boto3_dynamodb.literals import PointInTimeRecoveryStatusType
 ```
 
 Values:
@@ -312,10 +312,10 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
-## ProjectionType
+## ProjectionTypeType
 
 ```python
-from mypy_boto3_dynamodb.literals import ProjectionType
+from mypy_boto3_dynamodb.literals import ProjectionTypeType
 ```
 
 Values:
@@ -334,10 +334,10 @@ Values:
 
 - `query`
 
-## ReplicaStatus
+## ReplicaStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import ReplicaStatus
+from mypy_boto3_dynamodb.literals import ReplicaStatusType
 ```
 
 Values:
@@ -350,10 +350,10 @@ Values:
 - `REGION_DISABLED`
 - `UPDATING`
 
-## ReturnConsumedCapacity
+## ReturnConsumedCapacityType
 
 ```python
-from mypy_boto3_dynamodb.literals import ReturnConsumedCapacity
+from mypy_boto3_dynamodb.literals import ReturnConsumedCapacityType
 ```
 
 Values:
@@ -362,10 +362,10 @@ Values:
 - `NONE`
 - `TOTAL`
 
-## ReturnItemCollectionMetrics
+## ReturnItemCollectionMetricsType
 
 ```python
-from mypy_boto3_dynamodb.literals import ReturnItemCollectionMetrics
+from mypy_boto3_dynamodb.literals import ReturnItemCollectionMetricsType
 ```
 
 Values:
@@ -373,10 +373,10 @@ Values:
 - `NONE`
 - `SIZE`
 
-## ReturnValue
+## ReturnValueType
 
 ```python
-from mypy_boto3_dynamodb.literals import ReturnValue
+from mypy_boto3_dynamodb.literals import ReturnValueType
 ```
 
 Values:
@@ -387,10 +387,10 @@ Values:
 - `UPDATED_NEW`
 - `UPDATED_OLD`
 
-## ReturnValuesOnConditionCheckFailure
+## ReturnValuesOnConditionCheckFailureType
 
 ```python
-from mypy_boto3_dynamodb.literals import ReturnValuesOnConditionCheckFailure
+from mypy_boto3_dynamodb.literals import ReturnValuesOnConditionCheckFailureType
 ```
 
 Values:
@@ -398,10 +398,10 @@ Values:
 - `ALL_OLD`
 - `NONE`
 
-## S3SseAlgorithm
+## S3SseAlgorithmType
 
 ```python
-from mypy_boto3_dynamodb.literals import S3SseAlgorithm
+from mypy_boto3_dynamodb.literals import S3SseAlgorithmType
 ```
 
 Values:
@@ -409,10 +409,10 @@ Values:
 - `AES256`
 - `KMS`
 
-## SSEStatus
+## SSEStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import SSEStatus
+from mypy_boto3_dynamodb.literals import SSEStatusType
 ```
 
 Values:
@@ -423,10 +423,10 @@ Values:
 - `ENABLING`
 - `UPDATING`
 
-## SSEType
+## SSETypeType
 
 ```python
-from mypy_boto3_dynamodb.literals import SSEType
+from mypy_boto3_dynamodb.literals import SSETypeType
 ```
 
 Values:
@@ -434,10 +434,10 @@ Values:
 - `AES256`
 - `KMS`
 
-## ScalarAttributeType
+## ScalarAttributeTypeType
 
 ```python
-from mypy_boto3_dynamodb.literals import ScalarAttributeType
+from mypy_boto3_dynamodb.literals import ScalarAttributeTypeType
 ```
 
 Values:
@@ -456,10 +456,10 @@ Values:
 
 - `scan`
 
-## Select
+## SelectType
 
 ```python
-from mypy_boto3_dynamodb.literals import Select
+from mypy_boto3_dynamodb.literals import SelectType
 ```
 
 Values:
@@ -469,10 +469,10 @@ Values:
 - `COUNT`
 - `SPECIFIC_ATTRIBUTES`
 
-## StreamViewType
+## StreamViewTypeType
 
 ```python
-from mypy_boto3_dynamodb.literals import StreamViewType
+from mypy_boto3_dynamodb.literals import StreamViewTypeType
 ```
 
 Values:
@@ -502,10 +502,10 @@ Values:
 
 - `table_not_exists`
 
-## TableStatus
+## TableStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import TableStatus
+from mypy_boto3_dynamodb.literals import TableStatusType
 ```
 
 Values:
@@ -518,10 +518,10 @@ Values:
 - `INACCESSIBLE_ENCRYPTION_CREDENTIALS`
 - `UPDATING`
 
-## TimeToLiveStatus
+## TimeToLiveStatusType
 
 ```python
-from mypy_boto3_dynamodb.literals import TimeToLiveStatus
+from mypy_boto3_dynamodb.literals import TimeToLiveStatusType
 ```
 
 Values:

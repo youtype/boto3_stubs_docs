@@ -3,21 +3,21 @@
 > [Index](..) > [LexRuntimeV2](.) > Literals
 
 Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
 [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 - [Literals for boto3 LexRuntimeV2 module](#literals-for-boto3-lexruntimev2-module)
-  - [ConfirmationState](#confirmationstate)
-  - [DialogActionType](#dialogactiontype)
-  - [IntentState](#intentstate)
-  - [MessageContentType](#messagecontenttype)
-  - [SentimentType](#sentimenttype)
+  - [ConfirmationStateType](#confirmationstatetype)
+  - [DialogActionTypeType](#dialogactiontypetype)
+  - [IntentStateType](#intentstatetype)
+  - [MessageContentTypeType](#messagecontenttypetype)
+  - [SentimentTypeType](#sentimenttypetype)
 
-## ConfirmationState
+## ConfirmationStateType
 
 ```python
-from mypy_boto3_lexv2_runtime.literals import ConfirmationState
+from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType
 ```
 
 Values:
@@ -26,10 +26,10 @@ Values:
 - `Denied`
 - `None`
 
-## DialogActionType
+## DialogActionTypeType
 
 ```python
-from mypy_boto3_lexv2_runtime.literals import DialogActionType
+from mypy_boto3_lexv2_runtime.literals import DialogActionTypeType
 ```
 
 Values:
@@ -40,10 +40,10 @@ Values:
 - `ElicitIntent`
 - `ElicitSlot`
 
-## IntentState
+## IntentStateType
 
 ```python
-from mypy_boto3_lexv2_runtime.literals import IntentState
+from mypy_boto3_lexv2_runtime.literals import IntentStateType
 ```
 
 Values:
@@ -54,10 +54,10 @@ Values:
 - `ReadyForFulfillment`
 - `Waiting`
 
-## MessageContentType
+## MessageContentTypeType
 
 ```python
-from mypy_boto3_lexv2_runtime.literals import MessageContentType
+from mypy_boto3_lexv2_runtime.literals import MessageContentTypeType
 ```
 
 Values:
@@ -67,10 +67,10 @@ Values:
 - `PlainText`
 - `SSML`
 
-## SentimentType
+## SentimentTypeType
 
 ```python
-from mypy_boto3_lexv2_runtime.literals import SentimentType
+from mypy_boto3_lexv2_runtime.literals import SentimentTypeType
 ```
 
 Values:

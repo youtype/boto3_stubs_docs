@@ -3,7 +3,7 @@
 > [Index](..) > [MediaTailor](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
 [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
@@ -66,7 +66,7 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef
 Optional fields:
 
 - `AccessType`: `Literal['S3_SIGV4']` (see
-  [AccessType](./literals.md#accesstype))
+  [AccessTypeType](./literals.md#accesstypetype))
 
 ## AdBreakTypeDef
 
@@ -77,7 +77,7 @@ from mypy_boto3_mediatailor.type_defs import AdBreakTypeDef
 Optional fields:
 
 - `MessageType`: `Literal['SPLICE_INSERT']` (see
-  [MessageType](./literals.md#messagetype))
+  [MessageTypeType](./literals.md#messagetypetype))
 - `OffsetMillis`: `int`
 - `Slate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `SpliceInsertMessage`:
@@ -101,7 +101,7 @@ from mypy_boto3_mediatailor.type_defs import AvailSuppressionTypeDef
 
 Optional fields:
 
-- `Mode`: [Mode](./literals.md#mode)
+- `Mode`: [ModeType](./literals.md#modetype)
 - `Value`: `str`
 
 ## BumperTypeDef
@@ -157,7 +157,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `ChannelName`: `str`
-- `ChannelState`: [ChannelState](./literals.md#channelstate)
+- `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
@@ -227,7 +227,8 @@ from mypy_boto3_mediatailor.type_defs import DashConfigurationForPutTypeDef
 Optional fields:
 
 - `MpdLocation`: `str`
-- `OriginManifestType`: [OriginManifestType](./literals.md#originmanifesttype)
+- `OriginManifestType`:
+  [OriginManifestTypeType](./literals.md#originmanifesttypetype)
 
 ## DashConfigurationTypeDef
 
@@ -239,7 +240,8 @@ Optional fields:
 
 - `ManifestEndpointPrefix`: `str`
 - `MpdLocation`: `str`
-- `OriginManifestType`: [OriginManifestType](./literals.md#originmanifesttype)
+- `OriginManifestType`:
+  [OriginManifestTypeType](./literals.md#originmanifesttypetype)
 
 ## DashPlaylistSettingsTypeDef
 
@@ -274,7 +276,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `ChannelName`: `str`
-- `ChannelState`: [ChannelState](./literals.md#channelstate)
+- `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
@@ -353,7 +355,8 @@ from mypy_boto3_mediatailor.type_defs import GetChannelScheduleResponseTypeDef
 
 Optional fields:
 
-- `Items`: `List`\[[ScheduleEntryTypeDef](./type_defs.md#scheduleentrytypedef)\]
+- `Items`:
+  `List`\[[ScheduleEntryTypeDef](./type_defs.md#scheduleentrytypedef)\]
 - `NextToken`: `str`
 
 ## GetPlaybackConfigurationResponseTypeDef
@@ -708,7 +711,8 @@ from mypy_boto3_mediatailor.type_defs import TransitionTypeDef
 
 Required fields:
 
-- `RelativePosition`: [RelativePosition](./literals.md#relativeposition)
+- `RelativePosition`:
+  [RelativePositionType](./literals.md#relativepositiontype)
 - `Type`: `str`
 
 Optional fields:
@@ -725,7 +729,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `ChannelName`: `str`
-- `ChannelState`: [ChannelState](./literals.md#channelstate)
+- `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `Outputs`:

@@ -3,7 +3,7 @@
 > [Index](..) > KinesisVideoArchivedMedia
 
 Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
 [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
@@ -30,31 +30,31 @@ Can be used directly:
 from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedMediaClient
 ```
 
-KinesisVideoArchivedMediaClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_clip](./client.md#get-clip)
-- [get_dash_streaming_session_url](./client.md#get-dash-streaming-session-url)
-- [get_hls_streaming_session_url](./client.md#get-hls-streaming-session-url)
-- [get_media_for_fragment_list](./client.md#get-media-for-fragment-list)
-- [get_paginator](./client.md#get-paginator)
-- [list_fragments](./client.md#list-fragments)
+- [can_paginate](./client.md#can_paginate)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_clip](./client.md#get_clip)
+- [get_dash_streaming_session_url](./client.md#get_dash_streaming_session_url)
+- [get_hls_streaming_session_url](./client.md#get_hls_streaming_session_url)
+- [get_media_for_fragment_list](./client.md#get_media_for_fragment_list)
+- [get_paginator](./client.md#get_paginator)
+- [list_fragments](./client.md#list_fragments)
 
 ### Exceptions
 
-- [ClientError](./client.md#clienterror)
-- [ClientLimitExceededException](./client.md#clientlimitexceededexception)
-- [InvalidArgumentException](./client.md#invalidargumentexception)
-- [InvalidCodecPrivateDataException](./client.md#invalidcodecprivatedataexception)
-- [InvalidMediaFrameException](./client.md#invalidmediaframeexception)
-- [MissingCodecPrivateDataException](./client.md#missingcodecprivatedataexception)
-- [NoDataRetentionException](./client.md#nodataretentionexception)
-- [NotAuthorizedException](./client.md#notauthorizedexception)
-- [ResourceNotFoundException](./client.md#resourcenotfoundexception)
-- [UnsupportedStreamMediaTypeException](./client.md#unsupportedstreammediatypeexception)
+KinesisVideoArchivedMediaClient [exceptions](./client.md#exceptions)
+
+- ClientError
+- ClientLimitExceededException
+- InvalidArgumentException
+- InvalidCodecPrivateDataException
+- InvalidMediaFrameException
+- MissingCodecPrivateDataException
+- NoDataRetentionException
+- NotAuthorizedException
+- ResourceNotFoundException
+- UnsupportedStreamMediaTypeException
 
 ## Paginators
 
@@ -76,20 +76,20 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelectorType, ...
+from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelectorTypeType, ...
 ```
 
-- [ClipFragmentSelectorType](./literals.md#clipfragmentselectortype)
-- [ContainerFormat](./literals.md#containerformat)
-- [DASHDisplayFragmentNumber](./literals.md#dashdisplayfragmentnumber)
-- [DASHDisplayFragmentTimestamp](./literals.md#dashdisplayfragmenttimestamp)
-- [DASHFragmentSelectorType](./literals.md#dashfragmentselectortype)
-- [DASHPlaybackMode](./literals.md#dashplaybackmode)
-- [FragmentSelectorType](./literals.md#fragmentselectortype)
-- [HLSDiscontinuityMode](./literals.md#hlsdiscontinuitymode)
-- [HLSDisplayFragmentTimestamp](./literals.md#hlsdisplayfragmenttimestamp)
-- [HLSFragmentSelectorType](./literals.md#hlsfragmentselectortype)
-- [HLSPlaybackMode](./literals.md#hlsplaybackmode)
+- [ClipFragmentSelectorTypeType](./literals.md#clipfragmentselectortypetype)
+- [ContainerFormatType](./literals.md#containerformattype)
+- [DASHDisplayFragmentNumberType](./literals.md#dashdisplayfragmentnumbertype)
+- [DASHDisplayFragmentTimestampType](./literals.md#dashdisplayfragmenttimestamptype)
+- [DASHFragmentSelectorTypeType](./literals.md#dashfragmentselectortypetype)
+- [DASHPlaybackModeType](./literals.md#dashplaybackmodetype)
+- [FragmentSelectorTypeType](./literals.md#fragmentselectortypetype)
+- [HLSDiscontinuityModeType](./literals.md#hlsdiscontinuitymodetype)
+- [HLSDisplayFragmentTimestampType](./literals.md#hlsdisplayfragmenttimestamptype)
+- [HLSFragmentSelectorTypeType](./literals.md#hlsfragmentselectortypetype)
+- [HLSPlaybackModeType](./literals.md#hlsplaybackmodetype)
 - [ListFragmentsPaginatorName](./literals.md#listfragmentspaginatorname)
 
 ## Typed dictionaries

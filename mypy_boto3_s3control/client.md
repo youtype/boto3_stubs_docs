@@ -3,7 +3,7 @@
 > [Index](..) > [S3Control](.) > S3ControlClient
 
 Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control)
 type annotations stubs module
 [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
@@ -78,7 +78,7 @@ def get_s3control_client() -> S3ControlClient:
 ```
 
 Boto3 documentation:
-[S3Control.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
+[S3Control.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client)
 
 ## Exceptions
 
@@ -115,7 +115,7 @@ Exceptions:
 Type annotations for `boto3.client("s3control").can_paginate` method.
 
 Boto3 documentation:
-[S3Control.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate)
+[S3Control.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.can_paginate)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Returns `bool`.
 Type annotations for `boto3.client("s3control").create_access_point` method.
 
 Boto3 documentation:
-[S3Control.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point)
+[S3Control.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.create_access_point)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Type annotations for
 `boto3.client("s3control").create_access_point_for_object_lambda` method.
 
 Boto3 documentation:
-[S3Control.Client.create_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda)
+[S3Control.Client.create_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda)
 
 Arguments:
 
@@ -167,12 +167,12 @@ Returns
 Type annotations for `boto3.client("s3control").create_bucket` method.
 
 Boto3 documentation:
-[S3Control.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket)
+[S3Control.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.create_bucket)
 
 Arguments:
 
 - `Bucket`: `str` *(required)*
-- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `CreateBucketConfiguration`:
   [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
 - `GrantFullControl`: `str`
@@ -190,7 +190,7 @@ Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
 Type annotations for `boto3.client("s3control").create_job` method.
 
 Boto3 documentation:
-[S3Control.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job)
+[S3Control.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.create_job)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 Type annotations for `boto3.client("s3control").delete_access_point` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point)
+[S3Control.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_access_point)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for
 `boto3.client("s3control").delete_access_point_for_object_lambda` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
+[S3Control.Client.delete_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
 
 Arguments:
 
@@ -240,7 +240,7 @@ Type annotations for `boto3.client("s3control").delete_access_point_policy`
 method.
 
 Boto3 documentation:
-[S3Control.Client.delete_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
+[S3Control.Client.delete_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[S3Control.Client.delete_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
+[S3Control.Client.delete_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").delete_bucket` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket)
+[S3Control.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_bucket)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Type annotations for
 `boto3.client("s3control").delete_bucket_lifecycle_configuration` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
+[S3Control.Client.delete_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").delete_bucket_policy` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
+[S3Control.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
 
 Arguments:
 
@@ -303,7 +303,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").delete_bucket_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
+[S3Control.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").delete_job_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
+[S3Control.Client.delete_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("s3control").delete_public_access_block`
 method.
 
 Boto3 documentation:
-[S3Control.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
+[S3Control.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Type annotations for
 `boto3.client("s3control").delete_storage_lens_configuration` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
+[S3Control.Client.delete_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
 
 Arguments:
 
@@ -355,7 +355,7 @@ Type annotations for
 `boto3.client("s3control").delete_storage_lens_configuration_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.delete_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
+[S3Control.Client.delete_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
 
 Arguments:
 
@@ -369,7 +369,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("s3control").describe_job` method.
 
 Boto3 documentation:
-[S3Control.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job)
+[S3Control.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.describe_job)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
 Type annotations for `boto3.client("s3control").generate_presigned_url` method.
 
 Boto3 documentation:
-[S3Control.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url)
+[S3Control.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.generate_presigned_url)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns `str`.
 Type annotations for `boto3.client("s3control").get_access_point` method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point)
+[S3Control.Client.get_access_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
+[S3Control.Client.get_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Type annotations for
 `boto3.client("s3control").get_access_point_for_object_lambda` method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
+[S3Control.Client.get_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("s3control").get_access_point_policy`
 method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
+[S3Control.Client.get_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Type annotations for
 `boto3.client("s3control").get_access_point_policy_for_object_lambda` method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
+[S3Control.Client.get_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("s3control").get_access_point_policy_status`
 method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
+[S3Control.Client.get_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[S3Control.Client.get_access_point_policy_status_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
+[S3Control.Client.get_access_point_policy_status_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
 
 Arguments:
 
@@ -512,7 +512,7 @@ Returns
 Type annotations for `boto3.client("s3control").get_bucket` method.
 
 Boto3 documentation:
-[S3Control.Client.get_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket)
+[S3Control.Client.get_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_bucket)
 
 Arguments:
 
@@ -527,7 +527,7 @@ Type annotations for
 `boto3.client("s3control").get_bucket_lifecycle_configuration` method.
 
 Boto3 documentation:
-[S3Control.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
+[S3Control.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
 
 Arguments:
 
@@ -542,7 +542,7 @@ Returns
 Type annotations for `boto3.client("s3control").get_bucket_policy` method.
 
 Boto3 documentation:
-[S3Control.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
+[S3Control.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
 
 Arguments:
 
@@ -557,7 +557,7 @@ Returns
 Type annotations for `boto3.client("s3control").get_bucket_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
+[S3Control.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
 
 Arguments:
 
@@ -572,7 +572,7 @@ Returns
 Type annotations for `boto3.client("s3control").get_job_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.get_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging)
+[S3Control.Client.get_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_job_tagging)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Type annotations for `boto3.client("s3control").get_public_access_block`
 method.
 
 Boto3 documentation:
-[S3Control.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block)
+[S3Control.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_public_access_block)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Type annotations for `boto3.client("s3control").get_storage_lens_configuration`
 method.
 
 Boto3 documentation:
-[S3Control.Client.get_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
+[S3Control.Client.get_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Type annotations for
 `boto3.client("s3control").get_storage_lens_configuration_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.get_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
+[S3Control.Client.get_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
 
 Arguments:
 
@@ -634,7 +634,7 @@ Returns
 Type annotations for `boto3.client("s3control").list_access_points` method.
 
 Boto3 documentation:
-[S3Control.Client.list_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points)
+[S3Control.Client.list_access_points](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.list_access_points)
 
 Arguments:
 
@@ -652,7 +652,7 @@ Type annotations for
 `boto3.client("s3control").list_access_points_for_object_lambda` method.
 
 Boto3 documentation:
-[S3Control.Client.list_access_points_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda)
+[S3Control.Client.list_access_points_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda)
 
 Arguments:
 
@@ -668,12 +668,12 @@ Returns
 Type annotations for `boto3.client("s3control").list_jobs` method.
 
 Boto3 documentation:
-[S3Control.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs)
+[S3Control.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.list_jobs)
 
 Arguments:
 
 - `AccountId`: `str` *(required)*
-- `JobStatuses`: `List`\[[JobStatus](./literals.md#jobstatus)\]
+- `JobStatuses`: `List`\[[JobStatusType](./literals.md#jobstatustype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -684,7 +684,7 @@ Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 Type annotations for `boto3.client("s3control").list_regional_buckets` method.
 
 Boto3 documentation:
-[S3Control.Client.list_regional_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets)
+[S3Control.Client.list_regional_buckets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.list_regional_buckets)
 
 Arguments:
 
@@ -702,7 +702,7 @@ Type annotations for
 `boto3.client("s3control").list_storage_lens_configurations` method.
 
 Boto3 documentation:
-[S3Control.Client.list_storage_lens_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
+[S3Control.Client.list_storage_lens_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
 
 Arguments:
 
@@ -719,7 +719,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[S3Control.Client.put_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda)
+[S3Control.Client.put_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda)
 
 Arguments:
 
@@ -735,7 +735,7 @@ Type annotations for `boto3.client("s3control").put_access_point_policy`
 method.
 
 Boto3 documentation:
-[S3Control.Client.put_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy)
+[S3Control.Client.put_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_access_point_policy)
 
 Arguments:
 
@@ -749,7 +749,7 @@ Type annotations for
 `boto3.client("s3control").put_access_point_policy_for_object_lambda` method.
 
 Boto3 documentation:
-[S3Control.Client.put_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda)
+[S3Control.Client.put_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda)
 
 Arguments:
 
@@ -763,7 +763,7 @@ Type annotations for
 `boto3.client("s3control").put_bucket_lifecycle_configuration` method.
 
 Boto3 documentation:
-[S3Control.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration)
+[S3Control.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").put_bucket_policy` method.
 
 Boto3 documentation:
-[S3Control.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy)
+[S3Control.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_bucket_policy)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").put_bucket_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging)
+[S3Control.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_bucket_tagging)
 
 Arguments:
 
@@ -804,7 +804,7 @@ Arguments:
 Type annotations for `boto3.client("s3control").put_job_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.put_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging)
+[S3Control.Client.put_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_job_tagging)
 
 Arguments:
 
@@ -820,7 +820,7 @@ Type annotations for `boto3.client("s3control").put_public_access_block`
 method.
 
 Boto3 documentation:
-[S3Control.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block)
+[S3Control.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_public_access_block)
 
 Arguments:
 
@@ -835,7 +835,7 @@ Type annotations for `boto3.client("s3control").put_storage_lens_configuration`
 method.
 
 Boto3 documentation:
-[S3Control.Client.put_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration)
+[S3Control.Client.put_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration)
 
 Arguments:
 
@@ -844,7 +844,8 @@ Arguments:
 - `StorageLensConfiguration`:
   [StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef)
   *(required)*
-- `Tags`: `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
 ### put_storage_lens_configuration_tagging
 
@@ -852,13 +853,14 @@ Type annotations for
 `boto3.client("s3control").put_storage_lens_configuration_tagging` method.
 
 Boto3 documentation:
-[S3Control.Client.put_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging)
+[S3Control.Client.put_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging)
 
 Arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
-- `Tags`: `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -868,7 +870,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("s3control").update_job_priority` method.
 
 Boto3 documentation:
-[S3Control.Client.update_job_priority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority)
+[S3Control.Client.update_job_priority](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.update_job_priority)
 
 Arguments:
 
@@ -884,14 +886,14 @@ Returns
 Type annotations for `boto3.client("s3control").update_job_status` method.
 
 Boto3 documentation:
-[S3Control.Client.update_job_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status)
+[S3Control.Client.update_job_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/s3control.html#S3Control.Client.update_job_status)
 
 Arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
-- `RequestedJobStatus`: [RequestedJobStatus](./literals.md#requestedjobstatus)
-  *(required)*
+- `RequestedJobStatus`:
+  [RequestedJobStatusType](./literals.md#requestedjobstatustype) *(required)*
 - `StatusUpdateReason`: `str`
 
 Returns

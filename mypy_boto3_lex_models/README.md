@@ -3,7 +3,7 @@
 > [Index](..) > LexModelBuildingService
 
 Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
 [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
@@ -30,63 +30,63 @@ Can be used directly:
 from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 ```
 
-LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
-
 ### Methods
 
-- [can_paginate](./client.md#can-paginate)
-- [create_bot_version](./client.md#create-bot-version)
-- [create_intent_version](./client.md#create-intent-version)
-- [create_slot_type_version](./client.md#create-slot-type-version)
-- [delete_bot](./client.md#delete-bot)
-- [delete_bot_alias](./client.md#delete-bot-alias)
-- [delete_bot_channel_association](./client.md#delete-bot-channel-association)
-- [delete_bot_version](./client.md#delete-bot-version)
-- [delete_intent](./client.md#delete-intent)
-- [delete_intent_version](./client.md#delete-intent-version)
-- [delete_slot_type](./client.md#delete-slot-type)
-- [delete_slot_type_version](./client.md#delete-slot-type-version)
-- [delete_utterances](./client.md#delete-utterances)
-- [generate_presigned_url](./client.md#generate-presigned-url)
-- [get_bot](./client.md#get-bot)
-- [get_bot_alias](./client.md#get-bot-alias)
-- [get_bot_aliases](./client.md#get-bot-aliases)
-- [get_bot_channel_association](./client.md#get-bot-channel-association)
-- [get_bot_channel_associations](./client.md#get-bot-channel-associations)
-- [get_bot_versions](./client.md#get-bot-versions)
-- [get_bots](./client.md#get-bots)
-- [get_builtin_intent](./client.md#get-builtin-intent)
-- [get_builtin_intents](./client.md#get-builtin-intents)
-- [get_builtin_slot_types](./client.md#get-builtin-slot-types)
-- [get_export](./client.md#get-export)
-- [get_import](./client.md#get-import)
-- [get_intent](./client.md#get-intent)
-- [get_intent_versions](./client.md#get-intent-versions)
-- [get_intents](./client.md#get-intents)
-- [get_paginator](./client.md#get-paginator)
-- [get_slot_type](./client.md#get-slot-type)
-- [get_slot_type_versions](./client.md#get-slot-type-versions)
-- [get_slot_types](./client.md#get-slot-types)
-- [get_utterances_view](./client.md#get-utterances-view)
-- [list_tags_for_resource](./client.md#list-tags-for-resource)
-- [put_bot](./client.md#put-bot)
-- [put_bot_alias](./client.md#put-bot-alias)
-- [put_intent](./client.md#put-intent)
-- [put_slot_type](./client.md#put-slot-type)
-- [start_import](./client.md#start-import)
-- [tag_resource](./client.md#tag-resource)
-- [untag_resource](./client.md#untag-resource)
+- [can_paginate](./client.md#can_paginate)
+- [create_bot_version](./client.md#create_bot_version)
+- [create_intent_version](./client.md#create_intent_version)
+- [create_slot_type_version](./client.md#create_slot_type_version)
+- [delete_bot](./client.md#delete_bot)
+- [delete_bot_alias](./client.md#delete_bot_alias)
+- [delete_bot_channel_association](./client.md#delete_bot_channel_association)
+- [delete_bot_version](./client.md#delete_bot_version)
+- [delete_intent](./client.md#delete_intent)
+- [delete_intent_version](./client.md#delete_intent_version)
+- [delete_slot_type](./client.md#delete_slot_type)
+- [delete_slot_type_version](./client.md#delete_slot_type_version)
+- [delete_utterances](./client.md#delete_utterances)
+- [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_bot](./client.md#get_bot)
+- [get_bot_alias](./client.md#get_bot_alias)
+- [get_bot_aliases](./client.md#get_bot_aliases)
+- [get_bot_channel_association](./client.md#get_bot_channel_association)
+- [get_bot_channel_associations](./client.md#get_bot_channel_associations)
+- [get_bot_versions](./client.md#get_bot_versions)
+- [get_bots](./client.md#get_bots)
+- [get_builtin_intent](./client.md#get_builtin_intent)
+- [get_builtin_intents](./client.md#get_builtin_intents)
+- [get_builtin_slot_types](./client.md#get_builtin_slot_types)
+- [get_export](./client.md#get_export)
+- [get_import](./client.md#get_import)
+- [get_intent](./client.md#get_intent)
+- [get_intent_versions](./client.md#get_intent_versions)
+- [get_intents](./client.md#get_intents)
+- [get_paginator](./client.md#get_paginator)
+- [get_slot_type](./client.md#get_slot_type)
+- [get_slot_type_versions](./client.md#get_slot_type_versions)
+- [get_slot_types](./client.md#get_slot_types)
+- [get_utterances_view](./client.md#get_utterances_view)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
+- [put_bot](./client.md#put_bot)
+- [put_bot_alias](./client.md#put_bot_alias)
+- [put_intent](./client.md#put_intent)
+- [put_slot_type](./client.md#put_slot_type)
+- [start_import](./client.md#start_import)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
-- [BadRequestException](./client.md#badrequestexception)
-- [ClientError](./client.md#clienterror)
-- [ConflictException](./client.md#conflictexception)
-- [InternalFailureException](./client.md#internalfailureexception)
-- [LimitExceededException](./client.md#limitexceededexception)
-- [NotFoundException](./client.md#notfoundexception)
-- [PreconditionFailedException](./client.md#preconditionfailedexception)
-- [ResourceInUseException](./client.md#resourceinuseexception)
+LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
+
+- BadRequestException
+- ClientError
+- ConflictException
+- InternalFailureException
+- LimitExceededException
+- NotFoundException
+- PreconditionFailedException
+- ResourceInUseException
 
 ## Paginators
 
@@ -117,16 +117,16 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.literals import ChannelStatus, ...
+from mypy_boto3_lex_models.literals import ChannelStatusType, ...
 ```
 
-- [ChannelStatus](./literals.md#channelstatus)
-- [ChannelType](./literals.md#channeltype)
-- [ContentType](./literals.md#contenttype)
-- [Destination](./literals.md#destination)
-- [ExportStatus](./literals.md#exportstatus)
-- [ExportType](./literals.md#exporttype)
-- [FulfillmentActivityType](./literals.md#fulfillmentactivitytype)
+- [ChannelStatusType](./literals.md#channelstatustype)
+- [ChannelTypeType](./literals.md#channeltypetype)
+- [ContentTypeType](./literals.md#contenttypetype)
+- [DestinationType](./literals.md#destinationtype)
+- [ExportStatusType](./literals.md#exportstatustype)
+- [ExportTypeType](./literals.md#exporttypetype)
+- [FulfillmentActivityTypeType](./literals.md#fulfillmentactivitytypetype)
 - [GetBotAliasesPaginatorName](./literals.md#getbotaliasespaginatorname)
 - [GetBotChannelAssociationsPaginatorName](./literals.md#getbotchannelassociationspaginatorname)
 - [GetBotVersionsPaginatorName](./literals.md#getbotversionspaginatorname)
@@ -137,17 +137,17 @@ from mypy_boto3_lex_models.literals import ChannelStatus, ...
 - [GetIntentsPaginatorName](./literals.md#getintentspaginatorname)
 - [GetSlotTypeVersionsPaginatorName](./literals.md#getslottypeversionspaginatorname)
 - [GetSlotTypesPaginatorName](./literals.md#getslottypespaginatorname)
-- [ImportStatus](./literals.md#importstatus)
-- [Locale](./literals.md#locale)
-- [LogType](./literals.md#logtype)
-- [MergeStrategy](./literals.md#mergestrategy)
-- [ObfuscationSetting](./literals.md#obfuscationsetting)
-- [ProcessBehavior](./literals.md#processbehavior)
-- [ResourceType](./literals.md#resourcetype)
-- [SlotConstraint](./literals.md#slotconstraint)
-- [SlotValueSelectionStrategy](./literals.md#slotvalueselectionstrategy)
-- [Status](./literals.md#status)
+- [ImportStatusType](./literals.md#importstatustype)
+- [LocaleType](./literals.md#localetype)
+- [LogTypeType](./literals.md#logtypetype)
+- [MergeStrategyType](./literals.md#mergestrategytype)
+- [ObfuscationSettingType](./literals.md#obfuscationsettingtype)
+- [ProcessBehaviorType](./literals.md#processbehaviortype)
+- [ResourceTypeType](./literals.md#resourcetypetype)
+- [SlotConstraintType](./literals.md#slotconstrainttype)
+- [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
 - [StatusType](./literals.md#statustype)
+- [StatusTypeType](./literals.md#statustypetype)
 
 ## Typed dictionaries
 
