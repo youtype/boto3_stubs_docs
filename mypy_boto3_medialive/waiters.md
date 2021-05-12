@@ -3,7 +3,7 @@
 > [Index](..) > [MediaLive](.) > Waiters
 
 Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive)
+[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive)
 type annotations stubs module
 [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
@@ -34,7 +34,7 @@ def get_channel_created_waiter() -> ChannelCreatedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.channel_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.channel_created)
+[MediaLive.Waiter.channel_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.channel_created)
 
 Arguments for `ChannelCreatedWaiter.wait` method:
 
@@ -55,7 +55,7 @@ def get_channel_deleted_waiter() -> ChannelDeletedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.channel_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.channel_deleted)
+[MediaLive.Waiter.channel_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.channel_deleted)
 
 Arguments for `ChannelDeletedWaiter.wait` method:
 
@@ -76,7 +76,7 @@ def get_channel_running_waiter() -> ChannelRunningWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.channel_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.channel_running)
+[MediaLive.Waiter.channel_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.channel_running)
 
 Arguments for `ChannelRunningWaiter.wait` method:
 
@@ -97,7 +97,7 @@ def get_channel_stopped_waiter() -> ChannelStoppedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.channel_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.channel_stopped)
+[MediaLive.Waiter.channel_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.channel_stopped)
 
 Arguments for `ChannelStoppedWaiter.wait` method:
 
@@ -118,7 +118,7 @@ def get_input_attached_waiter() -> InputAttachedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.input_attached](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.input_attached)
+[MediaLive.Waiter.input_attached](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.input_attached)
 
 Arguments for `InputAttachedWaiter.wait` method:
 
@@ -139,7 +139,7 @@ def get_input_deleted_waiter() -> InputDeletedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.input_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.input_deleted)
+[MediaLive.Waiter.input_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.input_deleted)
 
 Arguments for `InputDeletedWaiter.wait` method:
 
@@ -160,7 +160,7 @@ def get_input_detached_waiter() -> InputDetachedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.input_detached](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.input_detached)
+[MediaLive.Waiter.input_detached](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.input_detached)
 
 Arguments for `InputDetachedWaiter.wait` method:
 
@@ -182,7 +182,7 @@ def get_multiplex_created_waiter() -> MultiplexCreatedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.multiplex_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.multiplex_created)
+[MediaLive.Waiter.multiplex_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.multiplex_created)
 
 Arguments for `MultiplexCreatedWaiter.wait` method:
 
@@ -204,7 +204,7 @@ def get_multiplex_deleted_waiter() -> MultiplexDeletedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.multiplex_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.multiplex_deleted)
+[MediaLive.Waiter.multiplex_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.multiplex_deleted)
 
 Arguments for `MultiplexDeletedWaiter.wait` method:
 
@@ -226,7 +226,7 @@ def get_multiplex_running_waiter() -> MultiplexRunningWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.multiplex_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.multiplex_running)
+[MediaLive.Waiter.multiplex_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.multiplex_running)
 
 Arguments for `MultiplexRunningWaiter.wait` method:
 
@@ -248,7 +248,7 @@ def get_multiplex_stopped_waiter() -> MultiplexStoppedWaiter:
 ```
 
 Boto3 documentation:
-[MediaLive.Waiter.multiplex_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Waiter.multiplex_stopped)
+[MediaLive.Waiter.multiplex_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Waiter.multiplex_stopped)
 
 Arguments for `MultiplexStoppedWaiter.wait` method:
 

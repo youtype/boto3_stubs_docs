@@ -3,7 +3,7 @@
 > [Index](..) > [ForecastQueryService](.) > ForecastQueryServiceClient
 
 Auto-generated documentation for
-[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecastquery.html#ForecastQueryService)
+[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecastquery.html#ForecastQueryService)
 type annotations stubs module
 [mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
@@ -29,7 +29,7 @@ def get_forecastquery_client() -> ForecastQueryServiceClient:
 ```
 
 Boto3 documentation:
-[ForecastQueryService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecastquery.html#ForecastQueryService.Client)
+[ForecastQueryService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecastquery.html#ForecastQueryService.Client)
 
 ## Exceptions
 
@@ -59,7 +59,7 @@ Exceptions:
 Type annotations for `boto3.client("forecastquery").can_paginate` method.
 
 Boto3 documentation:
-[ForecastQueryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecastquery.html#ForecastQueryService.Client.can_paginate)
+[ForecastQueryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecastquery.html#ForecastQueryService.Client.can_paginate)
 
 Arguments:
 
@@ -73,7 +73,7 @@ Type annotations for `boto3.client("forecastquery").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ForecastQueryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecastquery.html#ForecastQueryService.Client.generate_presigned_url)
+[ForecastQueryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecastquery.html#ForecastQueryService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -89,7 +89,7 @@ Returns `str`.
 Type annotations for `boto3.client("forecastquery").query_forecast` method.
 
 Boto3 documentation:
-[ForecastQueryService.Client.query_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
+[ForecastQueryService.Client.query_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
 
 Arguments:
 

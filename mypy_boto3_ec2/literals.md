@@ -3,7 +3,7 @@
 > [Index](..) > [EC2](.) > Literals
 
 Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2.html#EC2)
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2.html#EC2)
 type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
@@ -3103,10 +3103,14 @@ Values:
 - `t4g.nano`
 - `t4g.small`
 - `t4g.xlarge`
+- `u-12tb1.112xlarge`
 - `u-12tb1.metal`
 - `u-18tb1.metal`
 - `u-24tb1.metal`
+- `u-6tb1.112xlarge`
+- `u-6tb1.56xlarge`
 - `u-6tb1.metal`
+- `u-9tb1.112xlarge`
 - `u-9tb1.metal`
 - `x1.16xlarge`
 - `x1.32xlarge`

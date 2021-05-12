@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > Paginators
 
 Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
 [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
@@ -28,7 +28,7 @@ def get_get_compliance_summary_paginator() -> GetComplianceSummaryPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
+[ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
 
 Arguments for `GetComplianceSummaryPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_get_resources_paginator() -> GetResourcesPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
+[ResourceGroupsTaggingAPI.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
 
 Arguments for `GetResourcesPaginator.paginate` method:
 
@@ -90,7 +90,7 @@ def get_get_tag_keys_paginator() -> GetTagKeysPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetTagKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
+[ResourceGroupsTaggingAPI.Paginator.GetTagKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
 
 Arguments for `GetTagKeysPaginator.paginate` method:
 
@@ -115,7 +115,7 @@ def get_get_tag_values_paginator() -> GetTagValuesPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetTagValues](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
+[ResourceGroupsTaggingAPI.Paginator.GetTagValues](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
 
 Arguments for `GetTagValuesPaginator.paginate` method:
 

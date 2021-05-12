@@ -3,7 +3,7 @@
 > [Index](..) > [WorkDocs](.) > WorkDocsClient
 
 Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs)
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
@@ -70,7 +70,7 @@ def get_workdocs_client() -> WorkDocsClient:
 ```
 
 Boto3 documentation:
-[WorkDocs.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client)
+[WorkDocs.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client)
 
 ## Exceptions
 
@@ -121,7 +121,7 @@ Type annotations for `boto3.client("workdocs").abort_document_version_upload`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.abort_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
+[WorkDocs.Client.abort_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").activate_user` method.
 
 Boto3 documentation:
-[WorkDocs.Client.activate_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.activate_user)
+[WorkDocs.Client.activate_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.activate_user)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("workdocs").add_resource_permissions`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.add_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
+[WorkDocs.Client.add_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns
 Type annotations for `boto3.client("workdocs").can_paginate` method.
 
 Boto3 documentation:
-[WorkDocs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.can_paginate)
+[WorkDocs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.can_paginate)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns `bool`.
 Type annotations for `boto3.client("workdocs").create_comment` method.
 
 Boto3 documentation:
-[WorkDocs.Client.create_comment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.create_comment)
+[WorkDocs.Client.create_comment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.create_comment)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("workdocs").create_custom_metadata` method.
 
 Boto3 documentation:
-[WorkDocs.Client.create_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
+[WorkDocs.Client.create_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workdocs").create_folder` method.
 
 Boto3 documentation:
-[WorkDocs.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.create_folder)
+[WorkDocs.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.create_folder)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns
 Type annotations for `boto3.client("workdocs").create_labels` method.
 
 Boto3 documentation:
-[WorkDocs.Client.create_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.create_labels)
+[WorkDocs.Client.create_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.create_labels)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Type annotations for
 `boto3.client("workdocs").create_notification_subscription` method.
 
 Boto3 documentation:
-[WorkDocs.Client.create_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
+[WorkDocs.Client.create_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns
 Type annotations for `boto3.client("workdocs").create_user` method.
 
 Boto3 documentation:
-[WorkDocs.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.create_user)
+[WorkDocs.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.create_user)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 Type annotations for `boto3.client("workdocs").deactivate_user` method.
 
 Boto3 documentation:
-[WorkDocs.Client.deactivate_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
+[WorkDocs.Client.deactivate_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").delete_comment` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_comment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
+[WorkDocs.Client.delete_comment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
 
 Arguments:
 
@@ -321,7 +321,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").delete_custom_metadata` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
+[WorkDocs.Client.delete_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
 
 Arguments:
 
@@ -338,7 +338,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workdocs").delete_document` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_document)
+[WorkDocs.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_document)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").delete_folder` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
+[WorkDocs.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").delete_folder_contents` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
+[WorkDocs.Client.delete_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
 
 Arguments:
 
@@ -374,7 +374,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").delete_labels` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
+[WorkDocs.Client.delete_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Type annotations for
 `boto3.client("workdocs").delete_notification_subscription` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
+[WorkDocs.Client.delete_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").delete_user` method.
 
 Boto3 documentation:
-[WorkDocs.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.delete_user)
+[WorkDocs.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.delete_user)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").describe_activities` method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_activities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
+[WorkDocs.Client.describe_activities](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Returns
 Type annotations for `boto3.client("workdocs").describe_comments` method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_comments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
+[WorkDocs.Client.describe_comments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Type annotations for `boto3.client("workdocs").describe_document_versions`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_document_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
+[WorkDocs.Client.describe_document_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
 
 Arguments:
 
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("workdocs").describe_folder_contents`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
+[WorkDocs.Client.describe_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
 
 Arguments:
 
@@ -498,7 +498,7 @@ Returns
 Type annotations for `boto3.client("workdocs").describe_groups` method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
+[WorkDocs.Client.describe_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
 
 Arguments:
 
@@ -517,7 +517,7 @@ Type annotations for
 `boto3.client("workdocs").describe_notification_subscriptions` method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_notification_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
+[WorkDocs.Client.describe_notification_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("workdocs").describe_resource_permissions`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
+[WorkDocs.Client.describe_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
 
 Arguments:
 
@@ -552,7 +552,7 @@ Returns
 Type annotations for `boto3.client("workdocs").describe_root_folders` method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_root_folders](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
+[WorkDocs.Client.describe_root_folders](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
 
 Arguments:
 
@@ -568,7 +568,7 @@ Returns
 Type annotations for `boto3.client("workdocs").describe_users` method.
 
 Boto3 documentation:
-[WorkDocs.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.describe_users)
+[WorkDocs.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.describe_users)
 
 Arguments:
 
@@ -591,7 +591,7 @@ Returns
 Type annotations for `boto3.client("workdocs").generate_presigned_url` method.
 
 Boto3 documentation:
-[WorkDocs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url)
+[WorkDocs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url)
 
 Arguments:
 
@@ -607,7 +607,7 @@ Returns `str`.
 Type annotations for `boto3.client("workdocs").get_current_user` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_current_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
+[WorkDocs.Client.get_current_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
 
 Arguments:
 
@@ -621,7 +621,7 @@ Returns
 Type annotations for `boto3.client("workdocs").get_document` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_document)
+[WorkDocs.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_document)
 
 Arguments:
 
@@ -637,7 +637,7 @@ Returns
 Type annotations for `boto3.client("workdocs").get_document_path` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_document_path](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
+[WorkDocs.Client.get_document_path](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Returns
 Type annotations for `boto3.client("workdocs").get_document_version` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_document_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
+[WorkDocs.Client.get_document_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
 
 Arguments:
 
@@ -673,7 +673,7 @@ Returns
 Type annotations for `boto3.client("workdocs").get_folder` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_folder)
+[WorkDocs.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_folder)
 
 Arguments:
 
@@ -688,7 +688,7 @@ Returns [GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef).
 Type annotations for `boto3.client("workdocs").get_folder_path` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_folder_path](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
+[WorkDocs.Client.get_folder_path](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
 
 Arguments:
 
@@ -706,7 +706,7 @@ Returns
 Type annotations for `boto3.client("workdocs").get_resources` method.
 
 Boto3 documentation:
-[WorkDocs.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.get_resources)
+[WorkDocs.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.get_resources)
 
 Arguments:
 
@@ -726,7 +726,7 @@ Type annotations for
 `boto3.client("workdocs").initiate_document_version_upload` method.
 
 Boto3 documentation:
-[WorkDocs.Client.initiate_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
+[WorkDocs.Client.initiate_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
 
 Arguments:
 
@@ -748,7 +748,7 @@ Type annotations for `boto3.client("workdocs").remove_all_resource_permissions`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.remove_all_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
+[WorkDocs.Client.remove_all_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
 
 Arguments:
 
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("workdocs").remove_resource_permission`
 method.
 
 Boto3 documentation:
-[WorkDocs.Client.remove_resource_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
+[WorkDocs.Client.remove_resource_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
 
 Arguments:
 
@@ -775,7 +775,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").update_document` method.
 
 Boto3 documentation:
-[WorkDocs.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.update_document)
+[WorkDocs.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.update_document)
 
 Arguments:
 
@@ -790,7 +790,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").update_document_version` method.
 
 Boto3 documentation:
-[WorkDocs.Client.update_document_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
+[WorkDocs.Client.update_document_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
 
 Arguments:
 
@@ -805,7 +805,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").update_folder` method.
 
 Boto3 documentation:
-[WorkDocs.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.update_folder)
+[WorkDocs.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.update_folder)
 
 Arguments:
 
@@ -820,7 +820,7 @@ Arguments:
 Type annotations for `boto3.client("workdocs").update_user` method.
 
 Boto3 documentation:
-[WorkDocs.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Client.update_user)
+[WorkDocs.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Client.update_user)
 
 Arguments:
 

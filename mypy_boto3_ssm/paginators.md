@@ -3,7 +3,7 @@
 > [Index](..) > [SSM](.) > Paginators
 
 Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM)
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM)
 type annotations stubs module
 [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
@@ -70,7 +70,7 @@ def get_describe_activations_paginator() -> DescribeActivationsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeActivations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeActivations)
+[SSM.Paginator.DescribeActivations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeActivations)
 
 Arguments for `DescribeActivationsPaginator.paginate` method:
 
@@ -97,7 +97,7 @@ def get_describe_association_execution_targets_paginator() -> DescribeAssociatio
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeAssociationExecutionTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutionTargets)
+[SSM.Paginator.DescribeAssociationExecutionTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutionTargets)
 
 Arguments for `DescribeAssociationExecutionTargetsPaginator.paginate` method:
 
@@ -126,7 +126,7 @@ def get_describe_association_executions_paginator() -> DescribeAssociationExecut
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeAssociationExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutions)
+[SSM.Paginator.DescribeAssociationExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutions)
 
 Arguments for `DescribeAssociationExecutionsPaginator.paginate` method:
 
@@ -154,7 +154,7 @@ def get_describe_automation_executions_paginator() -> DescribeAutomationExecutio
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeAutomationExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeAutomationExecutions)
+[SSM.Paginator.DescribeAutomationExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeAutomationExecutions)
 
 Arguments for `DescribeAutomationExecutionsPaginator.paginate` method:
 
@@ -181,7 +181,7 @@ def get_describe_automation_step_executions_paginator() -> DescribeAutomationSte
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeAutomationStepExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeAutomationStepExecutions)
+[SSM.Paginator.DescribeAutomationStepExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeAutomationStepExecutions)
 
 Arguments for `DescribeAutomationStepExecutionsPaginator.paginate` method:
 
@@ -210,7 +210,7 @@ def get_describe_available_patches_paginator() -> DescribeAvailablePatchesPagina
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeAvailablePatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeAvailablePatches)
+[SSM.Paginator.DescribeAvailablePatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeAvailablePatches)
 
 Arguments for `DescribeAvailablePatchesPaginator.paginate` method:
 
@@ -237,7 +237,7 @@ def get_describe_effective_instance_associations_paginator() -> DescribeEffectiv
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeEffectiveInstanceAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeEffectiveInstanceAssociations)
+[SSM.Paginator.DescribeEffectiveInstanceAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeEffectiveInstanceAssociations)
 
 Arguments for `DescribeEffectiveInstanceAssociationsPaginator.paginate` method:
 
@@ -263,7 +263,7 @@ def get_describe_effective_patches_for_patch_baseline_paginator() -> DescribeEff
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeEffectivePatchesForPatchBaseline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeEffectivePatchesForPatchBaseline)
+[SSM.Paginator.DescribeEffectivePatchesForPatchBaseline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeEffectivePatchesForPatchBaseline)
 
 Arguments for `DescribeEffectivePatchesForPatchBaselinePaginator.paginate`
 method:
@@ -290,7 +290,7 @@ def get_describe_instance_associations_status_paginator() -> DescribeInstanceAss
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeInstanceAssociationsStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeInstanceAssociationsStatus)
+[SSM.Paginator.DescribeInstanceAssociationsStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeInstanceAssociationsStatus)
 
 Arguments for `DescribeInstanceAssociationsStatusPaginator.paginate` method:
 
@@ -316,7 +316,7 @@ def get_describe_instance_information_paginator() -> DescribeInstanceInformation
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeInstanceInformation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeInstanceInformation)
+[SSM.Paginator.DescribeInstanceInformation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeInstanceInformation)
 
 Arguments for `DescribeInstanceInformationPaginator.paginate` method:
 
@@ -345,7 +345,7 @@ def get_describe_instance_patch_states_paginator() -> DescribeInstancePatchState
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeInstancePatchStates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStates)
+[SSM.Paginator.DescribeInstancePatchStates](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStates)
 
 Arguments for `DescribeInstancePatchStatesPaginator.paginate` method:
 
@@ -371,7 +371,7 @@ def get_describe_instance_patch_states_for_patch_group_paginator() -> DescribeIn
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeInstancePatchStatesForPatchGroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStatesForPatchGroup)
+[SSM.Paginator.DescribeInstancePatchStatesForPatchGroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStatesForPatchGroup)
 
 Arguments for `DescribeInstancePatchStatesForPatchGroupPaginator.paginate`
 method:
@@ -400,7 +400,7 @@ def get_describe_instance_patches_paginator() -> DescribeInstancePatchesPaginato
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeInstancePatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatches)
+[SSM.Paginator.DescribeInstancePatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatches)
 
 Arguments for `DescribeInstancePatchesPaginator.paginate` method:
 
@@ -428,7 +428,7 @@ def get_describe_inventory_deletions_paginator() -> DescribeInventoryDeletionsPa
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeInventoryDeletions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeInventoryDeletions)
+[SSM.Paginator.DescribeInventoryDeletions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeInventoryDeletions)
 
 Arguments for `DescribeInventoryDeletionsPaginator.paginate` method:
 
@@ -454,7 +454,7 @@ def get_describe_maintenance_window_execution_task_invocations_paginator() -> De
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations)
+[SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations)
 
 Arguments for
 `DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` method:
@@ -484,7 +484,7 @@ def get_describe_maintenance_window_execution_tasks_paginator() -> DescribeMaint
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowExecutionTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTasks)
+[SSM.Paginator.DescribeMaintenanceWindowExecutionTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTasks)
 
 Arguments for `DescribeMaintenanceWindowExecutionTasksPaginator.paginate`
 method:
@@ -513,7 +513,7 @@ def get_describe_maintenance_window_executions_paginator() -> DescribeMaintenanc
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutions)
+[SSM.Paginator.DescribeMaintenanceWindowExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutions)
 
 Arguments for `DescribeMaintenanceWindowExecutionsPaginator.paginate` method:
 
@@ -541,7 +541,7 @@ def get_describe_maintenance_window_schedule_paginator() -> DescribeMaintenanceW
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowSchedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowSchedule)
+[SSM.Paginator.DescribeMaintenanceWindowSchedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowSchedule)
 
 Arguments for `DescribeMaintenanceWindowSchedulePaginator.paginate` method:
 
@@ -572,7 +572,7 @@ def get_describe_maintenance_window_targets_paginator() -> DescribeMaintenanceWi
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTargets)
+[SSM.Paginator.DescribeMaintenanceWindowTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTargets)
 
 Arguments for `DescribeMaintenanceWindowTargetsPaginator.paginate` method:
 
@@ -600,7 +600,7 @@ def get_describe_maintenance_window_tasks_paginator() -> DescribeMaintenanceWind
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTasks)
+[SSM.Paginator.DescribeMaintenanceWindowTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTasks)
 
 Arguments for `DescribeMaintenanceWindowTasksPaginator.paginate` method:
 
@@ -628,7 +628,7 @@ def get_describe_maintenance_windows_paginator() -> DescribeMaintenanceWindowsPa
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindows](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindows)
+[SSM.Paginator.DescribeMaintenanceWindows](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindows)
 
 Arguments for `DescribeMaintenanceWindowsPaginator.paginate` method:
 
@@ -655,7 +655,7 @@ def get_describe_maintenance_windows_for_target_paginator() -> DescribeMaintenan
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowsForTarget](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowsForTarget)
+[SSM.Paginator.DescribeMaintenanceWindowsForTarget](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowsForTarget)
 
 Arguments for `DescribeMaintenanceWindowsForTargetPaginator.paginate` method:
 
@@ -684,7 +684,7 @@ def get_describe_ops_items_paginator() -> DescribeOpsItemsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeOpsItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeOpsItems)
+[SSM.Paginator.DescribeOpsItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeOpsItems)
 
 Arguments for `DescribeOpsItemsPaginator.paginate` method:
 
@@ -711,7 +711,7 @@ def get_describe_parameters_paginator() -> DescribeParametersPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeParameters)
+[SSM.Paginator.DescribeParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeParameters)
 
 Arguments for `DescribeParametersPaginator.paginate` method:
 
@@ -740,7 +740,7 @@ def get_describe_patch_baselines_paginator() -> DescribePatchBaselinesPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribePatchBaselines](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribePatchBaselines)
+[SSM.Paginator.DescribePatchBaselines](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribePatchBaselines)
 
 Arguments for `DescribePatchBaselinesPaginator.paginate` method:
 
@@ -767,7 +767,7 @@ def get_describe_patch_groups_paginator() -> DescribePatchGroupsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribePatchGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribePatchGroups)
+[SSM.Paginator.DescribePatchGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribePatchGroups)
 
 Arguments for `DescribePatchGroupsPaginator.paginate` method:
 
@@ -794,7 +794,7 @@ def get_describe_patch_properties_paginator() -> DescribePatchPropertiesPaginato
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribePatchProperties](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribePatchProperties)
+[SSM.Paginator.DescribePatchProperties](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribePatchProperties)
 
 Arguments for `DescribePatchPropertiesPaginator.paginate` method:
 
@@ -822,7 +822,7 @@ def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.DescribeSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.DescribeSessions)
+[SSM.Paginator.DescribeSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.DescribeSessions)
 
 Arguments for `DescribeSessionsPaginator.paginate` method:
 
@@ -849,7 +849,7 @@ def get_get_inventory_paginator() -> GetInventoryPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.GetInventory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.GetInventory)
+[SSM.Paginator.GetInventory](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.GetInventory)
 
 Arguments for `GetInventoryPaginator.paginate` method:
 
@@ -880,7 +880,7 @@ def get_get_inventory_schema_paginator() -> GetInventorySchemaPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.GetInventorySchema](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.GetInventorySchema)
+[SSM.Paginator.GetInventorySchema](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.GetInventorySchema)
 
 Arguments for `GetInventorySchemaPaginator.paginate` method:
 
@@ -907,7 +907,7 @@ def get_get_ops_summary_paginator() -> GetOpsSummaryPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.GetOpsSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.GetOpsSummary)
+[SSM.Paginator.GetOpsSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.GetOpsSummary)
 
 Arguments for `GetOpsSummaryPaginator.paginate` method:
 
@@ -938,7 +938,7 @@ def get_get_parameter_history_paginator() -> GetParameterHistoryPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.GetParameterHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.GetParameterHistory)
+[SSM.Paginator.GetParameterHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.GetParameterHistory)
 
 Arguments for `GetParameterHistoryPaginator.paginate` method:
 
@@ -965,7 +965,7 @@ def get_get_parameters_by_path_paginator() -> GetParametersByPathPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.GetParametersByPath](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.GetParametersByPath)
+[SSM.Paginator.GetParametersByPath](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.GetParametersByPath)
 
 Arguments for `GetParametersByPathPaginator.paginate` method:
 
@@ -995,7 +995,7 @@ def get_list_association_versions_paginator() -> ListAssociationVersionsPaginato
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListAssociationVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListAssociationVersions)
+[SSM.Paginator.ListAssociationVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListAssociationVersions)
 
 Arguments for `ListAssociationVersionsPaginator.paginate` method:
 
@@ -1020,7 +1020,7 @@ def get_list_associations_paginator() -> ListAssociationsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListAssociations)
+[SSM.Paginator.ListAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListAssociations)
 
 Arguments for `ListAssociationsPaginator.paginate` method:
 
@@ -1047,7 +1047,7 @@ def get_list_command_invocations_paginator() -> ListCommandInvocationsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListCommandInvocations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListCommandInvocations)
+[SSM.Paginator.ListCommandInvocations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListCommandInvocations)
 
 Arguments for `ListCommandInvocationsPaginator.paginate` method:
 
@@ -1076,7 +1076,7 @@ def get_list_commands_paginator() -> ListCommandsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListCommands](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListCommands)
+[SSM.Paginator.ListCommands](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListCommands)
 
 Arguments for `ListCommandsPaginator.paginate` method:
 
@@ -1105,7 +1105,7 @@ def get_list_compliance_items_paginator() -> ListComplianceItemsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListComplianceItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListComplianceItems)
+[SSM.Paginator.ListComplianceItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListComplianceItems)
 
 Arguments for `ListComplianceItemsPaginator.paginate` method:
 
@@ -1134,7 +1134,7 @@ def get_list_compliance_summaries_paginator() -> ListComplianceSummariesPaginato
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListComplianceSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListComplianceSummaries)
+[SSM.Paginator.ListComplianceSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListComplianceSummaries)
 
 Arguments for `ListComplianceSummariesPaginator.paginate` method:
 
@@ -1161,7 +1161,7 @@ def get_list_document_versions_paginator() -> ListDocumentVersionsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListDocumentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListDocumentVersions)
+[SSM.Paginator.ListDocumentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListDocumentVersions)
 
 Arguments for `ListDocumentVersionsPaginator.paginate` method:
 
@@ -1186,7 +1186,7 @@ def get_list_documents_paginator() -> ListDocumentsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListDocuments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListDocuments)
+[SSM.Paginator.ListDocuments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListDocuments)
 
 Arguments for `ListDocumentsPaginator.paginate` method:
 
@@ -1215,7 +1215,7 @@ def get_list_ops_item_events_paginator() -> ListOpsItemEventsPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListOpsItemEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListOpsItemEvents)
+[SSM.Paginator.ListOpsItemEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListOpsItemEvents)
 
 Arguments for `ListOpsItemEventsPaginator.paginate` method:
 
@@ -1242,7 +1242,7 @@ def get_list_ops_item_related_items_paginator() -> ListOpsItemRelatedItemsPagina
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListOpsItemRelatedItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListOpsItemRelatedItems)
+[SSM.Paginator.ListOpsItemRelatedItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListOpsItemRelatedItems)
 
 Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
 
@@ -1269,7 +1269,7 @@ def get_list_ops_metadata_paginator() -> ListOpsMetadataPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListOpsMetadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListOpsMetadata)
+[SSM.Paginator.ListOpsMetadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListOpsMetadata)
 
 Arguments for `ListOpsMetadataPaginator.paginate` method:
 
@@ -1296,7 +1296,7 @@ def get_list_resource_compliance_summaries_paginator() -> ListResourceCompliance
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListResourceComplianceSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListResourceComplianceSummaries)
+[SSM.Paginator.ListResourceComplianceSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListResourceComplianceSummaries)
 
 Arguments for `ListResourceComplianceSummariesPaginator.paginate` method:
 
@@ -1323,7 +1323,7 @@ def get_list_resource_data_sync_paginator() -> ListResourceDataSyncPaginator:
 ```
 
 Boto3 documentation:
-[SSM.Paginator.ListResourceDataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Paginator.ListResourceDataSync)
+[SSM.Paginator.ListResourceDataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Paginator.ListResourceDataSync)
 
 Arguments for `ListResourceDataSyncPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Lightsail](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/lightsail.html#Lightsail)
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
 [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 

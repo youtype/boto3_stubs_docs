@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceQuotas](.) > ServiceQuotasClient
 
 Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas)
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
@@ -48,7 +48,7 @@ def get_service-quotas_client() -> ServiceQuotasClient:
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client)
+[ServiceQuotas.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Type annotations for
 `boto3.client("service-quotas").associate_service_quota_template` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.associate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template)
+[ServiceQuotas.Client.associate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -100,7 +100,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("service-quotas").can_paginate` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.can_paginate)
+[ServiceQuotas.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.can_paginate)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.delete_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
+[ServiceQuotas.Client.delete_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Type annotations for
 `boto3.client("service-quotas").disassociate_service_quota_template` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.disassociate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template)
+[ServiceQuotas.Client.disassociate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("service-quotas").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.generate_presigned_url)
+[ServiceQuotas.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.generate_presigned_url)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.get_association_for_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
+[ServiceQuotas.Client.get_association_for_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
 
 Returns
 [GetAssociationForServiceQuotaTemplateResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponsetypedef).
@@ -170,7 +170,7 @@ Type annotations for
 `boto3.client("service-quotas").get_aws_default_service_quota` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.get_aws_default_service_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
+[ServiceQuotas.Client.get_aws_default_service_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Type annotations for
 `boto3.client("service-quotas").get_requested_service_quota_change` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.get_requested_service_quota_change](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
+[ServiceQuotas.Client.get_requested_service_quota_change](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Returns
 Type annotations for `boto3.client("service-quotas").get_service_quota` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.get_service_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
+[ServiceQuotas.Client.get_service_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.get_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
+[ServiceQuotas.Client.get_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Type annotations for
 `boto3.client("service-quotas").list_aws_default_service_quotas` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_aws_default_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
+[ServiceQuotas.Client.list_aws_default_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_requested_service_quota_change_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
+[ServiceQuotas.Client.list_requested_service_quota_change_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
+[ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_service_quota_increase_requests_in_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
+[ServiceQuotas.Client.list_service_quota_increase_requests_in_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("service-quotas").list_service_quotas`
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
+[ServiceQuotas.Client.list_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Returns
 Type annotations for `boto3.client("service-quotas").list_services` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
+[ServiceQuotas.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Type annotations for `boto3.client("service-quotas").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
+[ServiceQuotas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.put_service_quota_increase_request_into_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
+[ServiceQuotas.Client.put_service_quota_increase_request_into_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
 
 Arguments:
 
@@ -375,7 +375,7 @@ Type annotations for
 `boto3.client("service-quotas").request_service_quota_increase` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.request_service_quota_increase](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
+[ServiceQuotas.Client.request_service_quota_increase](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns
 Type annotations for `boto3.client("service-quotas").tag_resource` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
+[ServiceQuotas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
 
 Arguments:
 
@@ -405,7 +405,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("service-quotas").untag_resource` method.
 
 Boto3 documentation:
-[ServiceQuotas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
+[ServiceQuotas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
 
 Arguments:
 

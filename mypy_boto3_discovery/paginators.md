@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationDiscoveryService](.) > Paginators
 
 Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService)
+[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
 [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
@@ -30,7 +30,7 @@ def get_describe_agents_paginator() -> DescribeAgentsPaginator:
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Paginator.DescribeAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeAgents)
+[ApplicationDiscoveryService.Paginator.DescribeAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeAgents)
 
 Arguments for `DescribeAgentsPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_describe_continuous_exports_paginator() -> DescribeContinuousExportsPagi
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Paginator.DescribeContinuousExports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeContinuousExports)
+[ApplicationDiscoveryService.Paginator.DescribeContinuousExports](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeContinuousExports)
 
 Arguments for `DescribeContinuousExportsPaginator.paginate` method:
 
@@ -83,7 +83,7 @@ def get_describe_export_configurations_paginator() -> DescribeExportConfiguratio
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Paginator.DescribeExportConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportConfigurations)
+[ApplicationDiscoveryService.Paginator.DescribeExportConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportConfigurations)
 
 Arguments for `DescribeExportConfigurationsPaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportTasks)
+[ApplicationDiscoveryService.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportTasks)
 
 Arguments for `DescribeExportTasksPaginator.paginate` method:
 
@@ -137,7 +137,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeTags)
+[ApplicationDiscoveryService.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeTags)
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
@@ -163,7 +163,7 @@ def get_list_configurations_paginator() -> ListConfigurationsPaginator:
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Paginator.ListConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.ListConfigurations)
+[ApplicationDiscoveryService.Paginator.ListConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.ListConfigurations)
 
 Arguments for `ListConfigurationsPaginator.paginate` method:
 

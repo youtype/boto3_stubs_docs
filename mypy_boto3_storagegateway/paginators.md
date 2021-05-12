@@ -3,7 +3,7 @@
 > [Index](..) > [StorageGateway](.) > Paginators
 
 Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway)
+[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
 [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
@@ -35,7 +35,7 @@ def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.DescribeTapeArchives](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
+[StorageGateway.Paginator.DescribeTapeArchives](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
 
 Arguments for `DescribeTapeArchivesPaginator.paginate` method:
 
@@ -61,7 +61,7 @@ def get_describe_tape_recovery_points_paginator() -> DescribeTapeRecoveryPointsP
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.DescribeTapeRecoveryPoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
+[StorageGateway.Paginator.DescribeTapeRecoveryPoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
 
 Arguments for `DescribeTapeRecoveryPointsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_describe_tapes_paginator() -> DescribeTapesPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.DescribeTapes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
+[StorageGateway.Paginator.DescribeTapes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
 
 Arguments for `DescribeTapesPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_describe_vtl_devices_paginator() -> DescribeVTLDevicesPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.DescribeVTLDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
+[StorageGateway.Paginator.DescribeVTLDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
 
 Arguments for `DescribeVTLDevicesPaginator.paginate` method:
 
@@ -141,7 +141,7 @@ def get_list_file_shares_paginator() -> ListFileSharesPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListFileShares](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
+[StorageGateway.Paginator.ListFileShares](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
 
 Arguments for `ListFileSharesPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_list_file_system_associations_paginator() -> ListFileSystemAssociationsP
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListFileSystemAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
+[StorageGateway.Paginator.ListFileSystemAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
 
 Arguments for `ListFileSystemAssociationsPaginator.paginate` method:
 
@@ -193,7 +193,7 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
+[StorageGateway.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
 
 Arguments for `ListGatewaysPaginator.paginate` method:
 
@@ -218,7 +218,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
+[StorageGateway.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 
@@ -244,7 +244,7 @@ def get_list_tape_pools_paginator() -> ListTapePoolsPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListTapePools](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
+[StorageGateway.Paginator.ListTapePools](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
 
 Arguments for `ListTapePoolsPaginator.paginate` method:
 
@@ -270,7 +270,7 @@ def get_list_tapes_paginator() -> ListTapesPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListTapes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
+[StorageGateway.Paginator.ListTapes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
 
 Arguments for `ListTapesPaginator.paginate` method:
 
@@ -296,7 +296,7 @@ def get_list_volumes_paginator() -> ListVolumesPaginator:
 ```
 
 Boto3 documentation:
-[StorageGateway.Paginator.ListVolumes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
+[StorageGateway.Paginator.ListVolumes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
 
 Arguments for `ListVolumesPaginator.paginate` method:
 

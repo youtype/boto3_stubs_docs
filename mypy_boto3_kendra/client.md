@@ -3,7 +3,7 @@
 > [Index](..) > [Kendra](.) > KendraClient
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra)
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
@@ -57,7 +57,7 @@ def get_kendra_client() -> KendraClient:
 ```
 
 Boto3 documentation:
-[Kendra.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client)
+[Kendra.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client)
 
 ## Exceptions
 
@@ -92,7 +92,7 @@ Exceptions:
 Type annotations for `boto3.client("kendra").batch_delete_document` method.
 
 Boto3 documentation:
-[Kendra.Client.batch_delete_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.batch_delete_document)
+[Kendra.Client.batch_delete_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.batch_delete_document)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Returns
 Type annotations for `boto3.client("kendra").batch_put_document` method.
 
 Boto3 documentation:
-[Kendra.Client.batch_put_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.batch_put_document)
+[Kendra.Client.batch_put_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.batch_put_document)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns
 Type annotations for `boto3.client("kendra").can_paginate` method.
 
 Boto3 documentation:
-[Kendra.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.can_paginate)
+[Kendra.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.can_paginate)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns `bool`.
 Type annotations for `boto3.client("kendra").create_data_source` method.
 
 Boto3 documentation:
-[Kendra.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.create_data_source)
+[Kendra.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.create_data_source)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns
 Type annotations for `boto3.client("kendra").create_faq` method.
 
 Boto3 documentation:
-[Kendra.Client.create_faq](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.create_faq)
+[Kendra.Client.create_faq](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.create_faq)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
 Type annotations for `boto3.client("kendra").create_index` method.
 
 Boto3 documentation:
-[Kendra.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.create_index)
+[Kendra.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.create_index)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Returns
 Type annotations for `boto3.client("kendra").create_thesaurus` method.
 
 Boto3 documentation:
-[Kendra.Client.create_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.create_thesaurus)
+[Kendra.Client.create_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.create_thesaurus)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Returns
 Type annotations for `boto3.client("kendra").delete_data_source` method.
 
 Boto3 documentation:
-[Kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.delete_data_source)
+[Kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.delete_data_source)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").delete_faq` method.
 
 Boto3 documentation:
-[Kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.delete_faq)
+[Kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.delete_faq)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").delete_index` method.
 
 Boto3 documentation:
-[Kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.delete_index)
+[Kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.delete_index)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").delete_thesaurus` method.
 
 Boto3 documentation:
-[Kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.delete_thesaurus)
+[Kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.delete_thesaurus)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").describe_data_source` method.
 
 Boto3 documentation:
-[Kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.describe_data_source)
+[Kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.describe_data_source)
 
 Arguments:
 
@@ -289,7 +289,7 @@ Returns
 Type annotations for `boto3.client("kendra").describe_faq` method.
 
 Boto3 documentation:
-[Kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.describe_faq)
+[Kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.describe_faq)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("kendra").describe_index` method.
 
 Boto3 documentation:
-[Kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.describe_index)
+[Kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.describe_index)
 
 Arguments:
 
@@ -318,7 +318,7 @@ Returns
 Type annotations for `boto3.client("kendra").describe_thesaurus` method.
 
 Boto3 documentation:
-[Kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.describe_thesaurus)
+[Kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.describe_thesaurus)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns
 Type annotations for `boto3.client("kendra").generate_presigned_url` method.
 
 Boto3 documentation:
-[Kendra.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.generate_presigned_url)
+[Kendra.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.generate_presigned_url)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("kendra").list_data_source_sync_jobs`
 method.
 
 Boto3 documentation:
-[Kendra.Client.list_data_source_sync_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.list_data_source_sync_jobs)
+[Kendra.Client.list_data_source_sync_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.list_data_source_sync_jobs)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Returns
 Type annotations for `boto3.client("kendra").list_data_sources` method.
 
 Boto3 documentation:
-[Kendra.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.list_data_sources)
+[Kendra.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.list_data_sources)
 
 Arguments:
 
@@ -386,7 +386,7 @@ Returns
 Type annotations for `boto3.client("kendra").list_faqs` method.
 
 Boto3 documentation:
-[Kendra.Client.list_faqs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.list_faqs)
+[Kendra.Client.list_faqs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.list_faqs)
 
 Arguments:
 
@@ -401,7 +401,7 @@ Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
 Type annotations for `boto3.client("kendra").list_indices` method.
 
 Boto3 documentation:
-[Kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.list_indices)
+[Kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.list_indices)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns
 Type annotations for `boto3.client("kendra").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.list_tags_for_resource)
+[Kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Returns
 Type annotations for `boto3.client("kendra").list_thesauri` method.
 
 Boto3 documentation:
-[Kendra.Client.list_thesauri](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.list_thesauri)
+[Kendra.Client.list_thesauri](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.list_thesauri)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Returns
 Type annotations for `boto3.client("kendra").query` method.
 
 Boto3 documentation:
-[Kendra.Client.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.query)
+[Kendra.Client.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.query)
 
 Arguments:
 
@@ -475,7 +475,7 @@ Type annotations for `boto3.client("kendra").start_data_source_sync_job`
 method.
 
 Boto3 documentation:
-[Kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.start_data_source_sync_job)
+[Kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.start_data_source_sync_job)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Returns
 Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 
 Boto3 documentation:
-[Kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.stop_data_source_sync_job)
+[Kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.stop_data_source_sync_job)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").submit_feedback` method.
 
 Boto3 documentation:
-[Kendra.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.submit_feedback)
+[Kendra.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.submit_feedback)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").tag_resource` method.
 
 Boto3 documentation:
-[Kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.tag_resource)
+[Kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.tag_resource)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kendra").untag_resource` method.
 
 Boto3 documentation:
-[Kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.untag_resource)
+[Kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.untag_resource)
 
 Arguments:
 
@@ -546,7 +546,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kendra").update_data_source` method.
 
 Boto3 documentation:
-[Kendra.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.update_data_source)
+[Kendra.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.update_data_source)
 
 Arguments:
 
@@ -564,7 +564,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").update_index` method.
 
 Boto3 documentation:
-[Kendra.Client.update_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.update_index)
+[Kendra.Client.update_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.update_index)
 
 Arguments:
 
@@ -586,7 +586,7 @@ Arguments:
 Type annotations for `boto3.client("kendra").update_thesaurus` method.
 
 Boto3 documentation:
-[Kendra.Client.update_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kendra.html#Kendra.Client.update_thesaurus)
+[Kendra.Client.update_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kendra.html#Kendra.Client.update_thesaurus)
 
 Arguments:
 

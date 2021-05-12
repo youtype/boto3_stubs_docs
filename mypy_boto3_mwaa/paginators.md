@@ -3,7 +3,7 @@
 > [Index](..) > [MWAA](.) > Paginators
 
 Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA)
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA)
 type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
@@ -24,7 +24,7 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
 ```
 
 Boto3 documentation:
-[MWAA.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Paginator.ListEnvironments)
+[MWAA.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Paginator.ListEnvironments)
 
 Arguments for `ListEnvironmentsPaginator.paginate` method:
 

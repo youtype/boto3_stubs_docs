@@ -3,7 +3,7 @@
 > [Index](..) > [PinpointEmail](.) > Literals
 
 Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/pinpoint-email.html#PinpointEmail)
+[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
 [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 

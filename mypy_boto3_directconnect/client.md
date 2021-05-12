@@ -3,7 +3,7 @@
 > [Index](..) > [DirectConnect](.) > DirectConnectClient
 
 Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect)
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
 [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
@@ -88,7 +88,7 @@ def get_directconnect_client() -> DirectConnectClient:
 ```
 
 Boto3 documentation:
-[DirectConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client)
+[DirectConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client)
 
 ## Exceptions
 
@@ -119,7 +119,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.accept_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.accept_direct_connect_gateway_association_proposal)
+[DirectConnect.Client.accept_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.accept_direct_connect_gateway_association_proposal)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for
 `boto3.client("directconnect").allocate_connection_on_interconnect` method.
 
 Boto3 documentation:
-[DirectConnect.Client.allocate_connection_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.allocate_connection_on_interconnect)
+[DirectConnect.Client.allocate_connection_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.allocate_connection_on_interconnect)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("directconnect").allocate_hosted_connection`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.allocate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.allocate_hosted_connection)
+[DirectConnect.Client.allocate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.allocate_hosted_connection)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Type annotations for
 `boto3.client("directconnect").allocate_private_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.allocate_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.allocate_private_virtual_interface)
+[DirectConnect.Client.allocate_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.allocate_private_virtual_interface)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Type annotations for
 `boto3.client("directconnect").allocate_public_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.allocate_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.allocate_public_virtual_interface)
+[DirectConnect.Client.allocate_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.allocate_public_virtual_interface)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for
 `boto3.client("directconnect").allocate_transit_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.allocate_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.allocate_transit_virtual_interface)
+[DirectConnect.Client.allocate_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.allocate_transit_virtual_interface)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Type annotations for
 `boto3.client("directconnect").associate_connection_with_lag` method.
 
 Boto3 documentation:
-[DirectConnect.Client.associate_connection_with_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.associate_connection_with_lag)
+[DirectConnect.Client.associate_connection_with_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.associate_connection_with_lag)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Type annotations for
 `boto3.client("directconnect").associate_hosted_connection` method.
 
 Boto3 documentation:
-[DirectConnect.Client.associate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.associate_hosted_connection)
+[DirectConnect.Client.associate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.associate_hosted_connection)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("directconnect").associate_mac_sec_key`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.associate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.associate_mac_sec_key)
+[DirectConnect.Client.associate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.associate_mac_sec_key)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Type annotations for
 `boto3.client("directconnect").associate_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.associate_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.associate_virtual_interface)
+[DirectConnect.Client.associate_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.associate_virtual_interface)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 Type annotations for `boto3.client("directconnect").can_paginate` method.
 
 Boto3 documentation:
-[DirectConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.can_paginate)
+[DirectConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.can_paginate)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns `bool`.
 Type annotations for `boto3.client("directconnect").confirm_connection` method.
 
 Boto3 documentation:
-[DirectConnect.Client.confirm_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.confirm_connection)
+[DirectConnect.Client.confirm_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.confirm_connection)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Type annotations for
 `boto3.client("directconnect").confirm_private_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.confirm_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.confirm_private_virtual_interface)
+[DirectConnect.Client.confirm_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.confirm_private_virtual_interface)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Type annotations for
 `boto3.client("directconnect").confirm_public_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.confirm_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.confirm_public_virtual_interface)
+[DirectConnect.Client.confirm_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.confirm_public_virtual_interface)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Type annotations for
 `boto3.client("directconnect").confirm_transit_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.confirm_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.confirm_transit_virtual_interface)
+[DirectConnect.Client.confirm_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.confirm_transit_virtual_interface)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns
 Type annotations for `boto3.client("directconnect").create_bgp_peer` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_bgp_peer)
+[DirectConnect.Client.create_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_bgp_peer)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns
 Type annotations for `boto3.client("directconnect").create_connection` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_connection)
+[DirectConnect.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_connection)
 
 Arguments:
 
@@ -402,7 +402,7 @@ Type annotations for
 `boto3.client("directconnect").create_direct_connect_gateway` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway)
+[DirectConnect.Client.create_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association)
+[DirectConnect.Client.create_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association)
 
 Arguments:
 
@@ -439,7 +439,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association_proposal)
+[DirectConnect.Client.create_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association_proposal)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("directconnect").create_interconnect`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_interconnect)
+[DirectConnect.Client.create_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_interconnect)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns [InterconnectTypeDef](./type_defs.md#interconnecttypedef).
 Type annotations for `boto3.client("directconnect").create_lag` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_lag)
+[DirectConnect.Client.create_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_lag)
 
 Arguments:
 
@@ -500,7 +500,7 @@ Type annotations for
 `boto3.client("directconnect").create_private_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_private_virtual_interface)
+[DirectConnect.Client.create_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_private_virtual_interface)
 
 Arguments:
 
@@ -517,7 +517,7 @@ Type annotations for
 `boto3.client("directconnect").create_public_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_public_virtual_interface)
+[DirectConnect.Client.create_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_public_virtual_interface)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Type annotations for
 `boto3.client("directconnect").create_transit_virtual_interface` method.
 
 Boto3 documentation:
-[DirectConnect.Client.create_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.create_transit_virtual_interface)
+[DirectConnect.Client.create_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.create_transit_virtual_interface)
 
 Arguments:
 
@@ -551,7 +551,7 @@ Returns
 Type annotations for `boto3.client("directconnect").delete_bgp_peer` method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_bgp_peer)
+[DirectConnect.Client.delete_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_bgp_peer)
 
 Arguments:
 
@@ -568,7 +568,7 @@ Returns
 Type annotations for `boto3.client("directconnect").delete_connection` method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_connection)
+[DirectConnect.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_connection)
 
 Arguments:
 
@@ -582,7 +582,7 @@ Type annotations for
 `boto3.client("directconnect").delete_direct_connect_gateway` method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway)
+[DirectConnect.Client.delete_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway)
 
 Arguments:
 
@@ -598,7 +598,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association)
+[DirectConnect.Client.delete_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association)
 
 Arguments:
 
@@ -616,7 +616,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association_proposal)
+[DirectConnect.Client.delete_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association_proposal)
 
 Arguments:
 
@@ -631,7 +631,7 @@ Type annotations for `boto3.client("directconnect").delete_interconnect`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_interconnect)
+[DirectConnect.Client.delete_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_interconnect)
 
 Arguments:
 
@@ -645,7 +645,7 @@ Returns
 Type annotations for `boto3.client("directconnect").delete_lag` method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_lag)
+[DirectConnect.Client.delete_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_lag)
 
 Arguments:
 
@@ -659,7 +659,7 @@ Type annotations for `boto3.client("directconnect").delete_virtual_interface`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.delete_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.delete_virtual_interface)
+[DirectConnect.Client.delete_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.delete_virtual_interface)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Type annotations for `boto3.client("directconnect").describe_connection_loa`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_connection_loa](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_connection_loa)
+[DirectConnect.Client.describe_connection_loa](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_connection_loa)
 
 Arguments:
 
@@ -692,7 +692,7 @@ Type annotations for `boto3.client("directconnect").describe_connections`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_connections)
+[DirectConnect.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_connections)
 
 Arguments:
 
@@ -706,7 +706,7 @@ Type annotations for
 `boto3.client("directconnect").describe_connections_on_interconnect` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_connections_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_connections_on_interconnect)
+[DirectConnect.Client.describe_connections_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_connections_on_interconnect)
 
 Arguments:
 
@@ -721,7 +721,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_direct_connect_gateway_association_proposals](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_association_proposals)
+[DirectConnect.Client.describe_direct_connect_gateway_association_proposals](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_association_proposals)
 
 Arguments:
 
@@ -741,7 +741,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_direct_connect_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_associations)
+[DirectConnect.Client.describe_direct_connect_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_associations)
 
 Arguments:
 
@@ -762,7 +762,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_direct_connect_gateway_attachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_attachments)
+[DirectConnect.Client.describe_direct_connect_gateway_attachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_attachments)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Type annotations for
 `boto3.client("directconnect").describe_direct_connect_gateways` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_direct_connect_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateways)
+[DirectConnect.Client.describe_direct_connect_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateways)
 
 Arguments:
 
@@ -797,7 +797,7 @@ Type annotations for
 `boto3.client("directconnect").describe_hosted_connections` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_hosted_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_hosted_connections)
+[DirectConnect.Client.describe_hosted_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_hosted_connections)
 
 Arguments:
 
@@ -811,7 +811,7 @@ Type annotations for `boto3.client("directconnect").describe_interconnect_loa`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_interconnect_loa](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_interconnect_loa)
+[DirectConnect.Client.describe_interconnect_loa](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_interconnect_loa)
 
 Arguments:
 
@@ -829,7 +829,7 @@ Type annotations for `boto3.client("directconnect").describe_interconnects`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_interconnects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_interconnects)
+[DirectConnect.Client.describe_interconnects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_interconnects)
 
 Arguments:
 
@@ -842,7 +842,7 @@ Returns [InterconnectsTypeDef](./type_defs.md#interconnectstypedef).
 Type annotations for `boto3.client("directconnect").describe_lags` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_lags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_lags)
+[DirectConnect.Client.describe_lags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_lags)
 
 Arguments:
 
@@ -855,7 +855,7 @@ Returns [LagsTypeDef](./type_defs.md#lagstypedef).
 Type annotations for `boto3.client("directconnect").describe_loa` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_loa](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_loa)
+[DirectConnect.Client.describe_loa](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_loa)
 
 Arguments:
 
@@ -871,7 +871,7 @@ Returns [LoaTypeDef](./type_defs.md#loatypedef).
 Type annotations for `boto3.client("directconnect").describe_locations` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_locations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
+[DirectConnect.Client.describe_locations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
 
 Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
 
@@ -880,7 +880,7 @@ Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
 Type annotations for `boto3.client("directconnect").describe_tags` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_tags)
+[DirectConnect.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_tags)
 
 Arguments:
 
@@ -895,7 +895,7 @@ Type annotations for `boto3.client("directconnect").describe_virtual_gateways`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways)
+[DirectConnect.Client.describe_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways)
 
 Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
 
@@ -905,7 +905,7 @@ Type annotations for
 `boto3.client("directconnect").describe_virtual_interfaces` method.
 
 Boto3 documentation:
-[DirectConnect.Client.describe_virtual_interfaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_interfaces)
+[DirectConnect.Client.describe_virtual_interfaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_interfaces)
 
 Arguments:
 
@@ -920,7 +920,7 @@ Type annotations for
 `boto3.client("directconnect").disassociate_connection_from_lag` method.
 
 Boto3 documentation:
-[DirectConnect.Client.disassociate_connection_from_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.disassociate_connection_from_lag)
+[DirectConnect.Client.disassociate_connection_from_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.disassociate_connection_from_lag)
 
 Arguments:
 
@@ -935,7 +935,7 @@ Type annotations for `boto3.client("directconnect").disassociate_mac_sec_key`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.disassociate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.disassociate_mac_sec_key)
+[DirectConnect.Client.disassociate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.disassociate_mac_sec_key)
 
 Arguments:
 
@@ -951,7 +951,7 @@ Type annotations for `boto3.client("directconnect").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.generate_presigned_url)
+[DirectConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.generate_presigned_url)
 
 Arguments:
 
@@ -968,7 +968,7 @@ Type annotations for
 `boto3.client("directconnect").list_virtual_interface_test_history` method.
 
 Boto3 documentation:
-[DirectConnect.Client.list_virtual_interface_test_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.list_virtual_interface_test_history)
+[DirectConnect.Client.list_virtual_interface_test_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.list_virtual_interface_test_history)
 
 Arguments:
 
@@ -988,7 +988,7 @@ Type annotations for `boto3.client("directconnect").start_bgp_failover_test`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.start_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.start_bgp_failover_test)
+[DirectConnect.Client.start_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.start_bgp_failover_test)
 
 Arguments:
 
@@ -1005,7 +1005,7 @@ Type annotations for `boto3.client("directconnect").stop_bgp_failover_test`
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.stop_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.stop_bgp_failover_test)
+[DirectConnect.Client.stop_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.stop_bgp_failover_test)
 
 Arguments:
 
@@ -1019,7 +1019,7 @@ Returns
 Type annotations for `boto3.client("directconnect").tag_resource` method.
 
 Boto3 documentation:
-[DirectConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.tag_resource)
+[DirectConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.tag_resource)
 
 Arguments:
 
@@ -1033,7 +1033,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("directconnect").untag_resource` method.
 
 Boto3 documentation:
-[DirectConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.untag_resource)
+[DirectConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.untag_resource)
 
 Arguments:
 
@@ -1047,7 +1047,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("directconnect").update_connection` method.
 
 Boto3 documentation:
-[DirectConnect.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.update_connection)
+[DirectConnect.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.update_connection)
 
 Arguments:
 
@@ -1064,7 +1064,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[DirectConnect.Client.update_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.update_direct_connect_gateway_association)
+[DirectConnect.Client.update_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.update_direct_connect_gateway_association)
 
 Arguments:
 
@@ -1082,7 +1082,7 @@ Returns
 Type annotations for `boto3.client("directconnect").update_lag` method.
 
 Boto3 documentation:
-[DirectConnect.Client.update_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.update_lag)
+[DirectConnect.Client.update_lag](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.update_lag)
 
 Arguments:
 
@@ -1099,7 +1099,7 @@ Type annotations for
 `boto3.client("directconnect").update_virtual_interface_attributes` method.
 
 Boto3 documentation:
-[DirectConnect.Client.update_virtual_interface_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/directconnect.html#DirectConnect.Client.update_virtual_interface_attributes)
+[DirectConnect.Client.update_virtual_interface_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/directconnect.html#DirectConnect.Client.update_virtual_interface_attributes)
 
 Arguments:
 

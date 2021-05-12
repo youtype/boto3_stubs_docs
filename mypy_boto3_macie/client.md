@@ -3,7 +3,7 @@
 > [Index](..) > [Macie](.) > MacieClient
 
 Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie)
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie)
 type annotations stubs module
 [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
@@ -36,7 +36,7 @@ def get_macie_client() -> MacieClient:
 ```
 
 Boto3 documentation:
-[Macie.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client)
+[Macie.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client)
 
 ## Exceptions
 
@@ -65,7 +65,7 @@ Exceptions:
 Type annotations for `boto3.client("macie").associate_member_account` method.
 
 Boto3 documentation:
-[Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.associate_member_account)
+[Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.associate_member_account)
 
 Arguments:
 
@@ -76,7 +76,7 @@ Arguments:
 Type annotations for `boto3.client("macie").associate_s3_resources` method.
 
 Boto3 documentation:
-[Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.associate_s3_resources)
+[Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.associate_s3_resources)
 
 Arguments:
 
@@ -93,7 +93,7 @@ Returns
 Type annotations for `boto3.client("macie").can_paginate` method.
 
 Boto3 documentation:
-[Macie.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.can_paginate)
+[Macie.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.can_paginate)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Type annotations for `boto3.client("macie").disassociate_member_account`
 method.
 
 Boto3 documentation:
-[Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.disassociate_member_account)
+[Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.disassociate_member_account)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Arguments:
 Type annotations for `boto3.client("macie").disassociate_s3_resources` method.
 
 Boto3 documentation:
-[Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
+[Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns
 Type annotations for `boto3.client("macie").generate_presigned_url` method.
 
 Boto3 documentation:
-[Macie.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.generate_presigned_url)
+[Macie.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.generate_presigned_url)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Returns `str`.
 Type annotations for `boto3.client("macie").list_member_accounts` method.
 
 Boto3 documentation:
-[Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.list_member_accounts)
+[Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.list_member_accounts)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Returns
 Type annotations for `boto3.client("macie").list_s3_resources` method.
 
 Boto3 documentation:
-[Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.list_s3_resources)
+[Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.list_s3_resources)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Returns
 Type annotations for `boto3.client("macie").update_s3_resources` method.
 
 Boto3 documentation:
-[Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/macie.html#Macie.Client.update_s3_resources)
+[Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie.html#Macie.Client.update_s3_resources)
 
 Arguments:
 

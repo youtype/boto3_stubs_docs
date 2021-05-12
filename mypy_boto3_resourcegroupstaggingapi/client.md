@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > ResourceGroupsTaggingAPIClient
 
 Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
 [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
@@ -37,7 +37,7 @@ def get_resourcegroupstaggingapi_client() -> ResourceGroupsTaggingAPIClient:
 ```
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
+[ResourceGroupsTaggingAPI.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").can_paginate`
 method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate)
+[ResourceGroupsTaggingAPI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate)
 
 Arguments:
 
@@ -83,7 +83,7 @@ Type annotations for
 `boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
+[ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
 
 Returns
 [DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
@@ -94,7 +94,7 @@ Type annotations for
 `boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url)
+[ResourceGroupsTaggingAPI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Type annotations for
 `boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
+[ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources`
 method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
+[ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys`
 method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
+[ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values`
 method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
+[ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Type annotations for
 `boto3.client("resourcegroupstaggingapi").start_report_creation` method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
+[ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").tag_resources`
 method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
+[ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
 
 Arguments:
 
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").untag_resources`
 method.
 
 Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
+[ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
 
 Arguments:
 

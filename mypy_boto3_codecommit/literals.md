@@ -3,7 +3,7 @@
 > [Index](..) > [CodeCommit](.) > Literals
 
 Auto-generated documentation for
-[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/codecommit.html#CodeCommit)
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
 [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 

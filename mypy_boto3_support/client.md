@@ -3,7 +3,7 @@
 > [Index](..) > [Support](.) > SupportClient
 
 Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support)
+[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support)
 type annotations stubs module
 [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
@@ -43,7 +43,7 @@ def get_support_client() -> SupportClient:
 ```
 
 Boto3 documentation:
-[Support.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client)
+[Support.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client)
 
 ## Exceptions
 
@@ -77,7 +77,7 @@ Exceptions:
 Type annotations for `boto3.client("support").add_attachments_to_set` method.
 
 Boto3 documentation:
-[Support.Client.add_attachments_to_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.add_attachments_to_set)
+[Support.Client.add_attachments_to_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.add_attachments_to_set)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Type annotations for `boto3.client("support").add_communication_to_case`
 method.
 
 Boto3 documentation:
-[Support.Client.add_communication_to_case](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.add_communication_to_case)
+[Support.Client.add_communication_to_case](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.add_communication_to_case)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns
 Type annotations for `boto3.client("support").can_paginate` method.
 
 Boto3 documentation:
-[Support.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.can_paginate)
+[Support.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.can_paginate)
 
 Arguments:
 
@@ -124,7 +124,7 @@ Returns `bool`.
 Type annotations for `boto3.client("support").create_case` method.
 
 Boto3 documentation:
-[Support.Client.create_case](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.create_case)
+[Support.Client.create_case](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.create_case)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Returns [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef).
 Type annotations for `boto3.client("support").describe_attachment` method.
 
 Boto3 documentation:
-[Support.Client.describe_attachment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_attachment)
+[Support.Client.describe_attachment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_attachment)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns
 Type annotations for `boto3.client("support").describe_cases` method.
 
 Boto3 documentation:
-[Support.Client.describe_cases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_cases)
+[Support.Client.describe_cases](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_cases)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Returns
 Type annotations for `boto3.client("support").describe_communications` method.
 
 Boto3 documentation:
-[Support.Client.describe_communications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_communications)
+[Support.Client.describe_communications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_communications)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("support").describe_services` method.
 
 Boto3 documentation:
-[Support.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_services)
+[Support.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_services)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("support").describe_severity_levels` method.
 
 Boto3 documentation:
-[Support.Client.describe_severity_levels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_severity_levels)
+[Support.Client.describe_severity_levels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_severity_levels)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Support.Client.describe_trusted_advisor_check_refresh_statuses](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
+[Support.Client.describe_trusted_advisor_check_refresh_statuses](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Type annotations for
 `boto3.client("support").describe_trusted_advisor_check_result` method.
 
 Boto3 documentation:
-[Support.Client.describe_trusted_advisor_check_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
+[Support.Client.describe_trusted_advisor_check_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
 
 Arguments:
 
@@ -261,7 +261,7 @@ Type annotations for
 `boto3.client("support").describe_trusted_advisor_check_summaries` method.
 
 Boto3 documentation:
-[Support.Client.describe_trusted_advisor_check_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
+[Support.Client.describe_trusted_advisor_check_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
 
 Arguments:
 
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("support").describe_trusted_advisor_checks`
 method.
 
 Boto3 documentation:
-[Support.Client.describe_trusted_advisor_checks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
+[Support.Client.describe_trusted_advisor_checks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Returns
 Type annotations for `boto3.client("support").generate_presigned_url` method.
 
 Boto3 documentation:
-[Support.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.generate_presigned_url)
+[Support.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.generate_presigned_url)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("support").refresh_trusted_advisor_check`
 method.
 
 Boto3 documentation:
-[Support.Client.refresh_trusted_advisor_check](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
+[Support.Client.refresh_trusted_advisor_check](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
 
 Arguments:
 
@@ -321,7 +321,7 @@ Returns
 Type annotations for `boto3.client("support").resolve_case` method.
 
 Boto3 documentation:
-[Support.Client.resolve_case](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/support.html#Support.Client.resolve_case)
+[Support.Client.resolve_case](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support.Client.resolve_case)
 
 Arguments:
 

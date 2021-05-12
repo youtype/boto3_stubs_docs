@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFront](.) > CloudFrontClient
 
 Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront)
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
 [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
@@ -113,7 +113,7 @@ def get_cloudfront_client() -> CloudFrontClient:
 ```
 
 Boto3 documentation:
-[CloudFront.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client)
+[CloudFront.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client)
 
 ## Exceptions
 
@@ -259,7 +259,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudfront").can_paginate` method.
 
 Boto3 documentation:
-[CloudFront.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.can_paginate)
+[CloudFront.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.can_paginate)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cloudfront").create_cache_policy` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
+[CloudFront.Client.create_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
 
 Arguments:
 
@@ -289,7 +289,7 @@ Type annotations for
 `boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
+[CloudFront.Client.create_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").create_distribution` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
+[CloudFront.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("cloudfront").create_distribution_with_tags`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.create_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
+[CloudFront.Client.create_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for
 `boto3.client("cloudfront").create_field_level_encryption_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
+[CloudFront.Client.create_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Type annotations for
 `boto3.client("cloudfront").create_field_level_encryption_profile` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
+[CloudFront.Client.create_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").create_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_function)
+[CloudFront.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_function)
 
 Arguments:
 
@@ -389,7 +389,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").create_invalidation` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_invalidation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
+[CloudFront.Client.create_invalidation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").create_key_group` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
+[CloudFront.Client.create_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Type annotations for
 `boto3.client("cloudfront").create_monitoring_subscription` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
+[CloudFront.Client.create_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("cloudfront").create_origin_request_policy`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.create_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
+[CloudFront.Client.create_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
 
 Arguments:
 
@@ -456,7 +456,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").create_public_key` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
+[CloudFront.Client.create_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
 
 Arguments:
 
@@ -472,7 +472,7 @@ Type annotations for `boto3.client("cloudfront").create_realtime_log_config`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.create_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
+[CloudFront.Client.create_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
 
 Arguments:
 
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("cloudfront").create_streaming_distribution`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.create_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
+[CloudFront.Client.create_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
 
 Arguments:
 
@@ -508,7 +508,7 @@ Type annotations for
 `boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
 
 Boto3 documentation:
-[CloudFront.Client.create_streaming_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
+[CloudFront.Client.create_streaming_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
 
 Arguments:
 
@@ -524,7 +524,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").delete_cache_policy` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
+[CloudFront.Client.delete_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
 
 Arguments:
 
@@ -537,7 +537,7 @@ Type annotations for
 `boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
+[CloudFront.Client.delete_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
 
 Arguments:
 
@@ -549,7 +549,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").delete_distribution` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
+[CloudFront.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Type annotations for
 `boto3.client("cloudfront").delete_field_level_encryption_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
+[CloudFront.Client.delete_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Type annotations for
 `boto3.client("cloudfront").delete_field_level_encryption_profile` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
+[CloudFront.Client.delete_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
 
 Arguments:
 
@@ -587,7 +587,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").delete_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_function)
+[CloudFront.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_function)
 
 Arguments:
 
@@ -599,7 +599,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").delete_key_group` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
+[CloudFront.Client.delete_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
 
 Arguments:
 
@@ -612,7 +612,7 @@ Type annotations for
 `boto3.client("cloudfront").delete_monitoring_subscription` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
+[CloudFront.Client.delete_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
 
 Arguments:
 
@@ -626,7 +626,7 @@ Type annotations for `boto3.client("cloudfront").delete_origin_request_policy`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
+[CloudFront.Client.delete_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").delete_public_key` method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
+[CloudFront.Client.delete_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
 
 Arguments:
 
@@ -651,7 +651,7 @@ Type annotations for `boto3.client("cloudfront").delete_realtime_log_config`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
+[CloudFront.Client.delete_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
 
 Arguments:
 
@@ -664,7 +664,7 @@ Type annotations for `boto3.client("cloudfront").delete_streaming_distribution`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.delete_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
+[CloudFront.Client.delete_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
 
 Arguments:
 
@@ -676,7 +676,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").describe_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.describe_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.describe_function)
+[CloudFront.Client.describe_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.describe_function)
 
 Arguments:
 
@@ -692,7 +692,7 @@ Type annotations for `boto3.client("cloudfront").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url)
+[CloudFront.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url)
 
 Arguments:
 
@@ -708,7 +708,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudfront").get_cache_policy` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
+[CloudFront.Client.get_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
 
 Arguments:
 
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("cloudfront").get_cache_policy_config`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_cache_policy_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
+[CloudFront.Client.get_cache_policy_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
 
 Arguments:
 
@@ -738,7 +738,7 @@ Type annotations for
 `boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
+[CloudFront.Client.get_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
 
 Arguments:
 
@@ -754,7 +754,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_cloud_front_origin_access_identity_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
+[CloudFront.Client.get_cloud_front_origin_access_identity_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
 
 Arguments:
 
@@ -768,7 +768,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").get_distribution` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
+[CloudFront.Client.get_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
 
 Arguments:
 
@@ -783,7 +783,7 @@ Type annotations for `boto3.client("cloudfront").get_distribution_config`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
+[CloudFront.Client.get_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
 
 Arguments:
 
@@ -798,7 +798,7 @@ Type annotations for `boto3.client("cloudfront").get_field_level_encryption`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
+[CloudFront.Client.get_field_level_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Type annotations for
 `boto3.client("cloudfront").get_field_level_encryption_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
+[CloudFront.Client.get_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
 
 Arguments:
 
@@ -828,7 +828,7 @@ Type annotations for
 `boto3.client("cloudfront").get_field_level_encryption_profile` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
+[CloudFront.Client.get_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Type annotations for
 `boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption_profile_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
+[CloudFront.Client.get_field_level_encryption_profile_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").get_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_function)
+[CloudFront.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_function)
 
 Arguments:
 
@@ -871,7 +871,7 @@ Returns [GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef).
 Type annotations for `boto3.client("cloudfront").get_invalidation` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_invalidation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
+[CloudFront.Client.get_invalidation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
 
 Arguments:
 
@@ -886,7 +886,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").get_key_group` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
+[CloudFront.Client.get_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
 
 Arguments:
 
@@ -899,7 +899,7 @@ Returns [GetKeyGroupResultTypeDef](./type_defs.md#getkeygroupresulttypedef).
 Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
+[CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
 
 Arguments:
 
@@ -914,7 +914,7 @@ Type annotations for `boto3.client("cloudfront").get_monitoring_subscription`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
+[CloudFront.Client.get_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
 
 Arguments:
 
@@ -929,7 +929,7 @@ Type annotations for `boto3.client("cloudfront").get_origin_request_policy`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
+[CloudFront.Client.get_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
 
 Arguments:
 
@@ -944,7 +944,7 @@ Type annotations for
 `boto3.client("cloudfront").get_origin_request_policy_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_origin_request_policy_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
+[CloudFront.Client.get_origin_request_policy_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
 
 Arguments:
 
@@ -958,7 +958,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").get_public_key` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
+[CloudFront.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
 
 Arguments:
 
@@ -971,7 +971,7 @@ Returns [GetPublicKeyResultTypeDef](./type_defs.md#getpublickeyresulttypedef).
 Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
+[CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
 
 Arguments:
 
@@ -986,7 +986,7 @@ Type annotations for `boto3.client("cloudfront").get_realtime_log_config`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
+[CloudFront.Client.get_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
 
 Arguments:
 
@@ -1002,7 +1002,7 @@ Type annotations for `boto3.client("cloudfront").get_streaming_distribution`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.get_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
+[CloudFront.Client.get_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
 
 Arguments:
 
@@ -1017,7 +1017,7 @@ Type annotations for
 `boto3.client("cloudfront").get_streaming_distribution_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.get_streaming_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
+[CloudFront.Client.get_streaming_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
 
 Arguments:
 
@@ -1031,7 +1031,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").list_cache_policies` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_cache_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
+[CloudFront.Client.list_cache_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
 
 Arguments:
 
@@ -1048,7 +1048,7 @@ Type annotations for
 `boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_cloud_front_origin_access_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
+[CloudFront.Client.list_cloud_front_origin_access_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
 
 Arguments:
 
@@ -1063,7 +1063,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").list_distributions` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_distributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
+[CloudFront.Client.list_distributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
 
 Arguments:
 
@@ -1079,7 +1079,7 @@ Type annotations for
 `boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_distributions_by_cache_policy_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
+[CloudFront.Client.list_distributions_by_cache_policy_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
 
 Arguments:
 
@@ -1096,7 +1096,7 @@ Type annotations for
 `boto3.client("cloudfront").list_distributions_by_key_group` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_distributions_by_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
+[CloudFront.Client.list_distributions_by_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
 
 Arguments:
 
@@ -1114,7 +1114,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CloudFront.Client.list_distributions_by_origin_request_policy_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
+[CloudFront.Client.list_distributions_by_origin_request_policy_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
 
 Arguments:
 
@@ -1131,7 +1131,7 @@ Type annotations for
 `boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_distributions_by_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
+[CloudFront.Client.list_distributions_by_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
 
 Arguments:
 
@@ -1149,7 +1149,7 @@ Type annotations for
 `boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_distributions_by_web_acl_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
+[CloudFront.Client.list_distributions_by_web_acl_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
 
 Arguments:
 
@@ -1166,7 +1166,7 @@ Type annotations for
 `boto3.client("cloudfront").list_field_level_encryption_configs` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_field_level_encryption_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
+[CloudFront.Client.list_field_level_encryption_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
 
 Arguments:
 
@@ -1182,7 +1182,7 @@ Type annotations for
 `boto3.client("cloudfront").list_field_level_encryption_profiles` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_field_level_encryption_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
+[CloudFront.Client.list_field_level_encryption_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
 
 Arguments:
 
@@ -1197,7 +1197,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").list_functions` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_functions)
+[CloudFront.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_functions)
 
 Arguments:
 
@@ -1213,7 +1213,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").list_invalidations` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_invalidations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
+[CloudFront.Client.list_invalidations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
 
 Arguments:
 
@@ -1229,7 +1229,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").list_key_groups` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_key_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
+[CloudFront.Client.list_key_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
 
 Arguments:
 
@@ -1245,7 +1245,7 @@ Type annotations for `boto3.client("cloudfront").list_origin_request_policies`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.list_origin_request_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
+[CloudFront.Client.list_origin_request_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
 
 Arguments:
 
@@ -1262,7 +1262,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").list_public_keys` method.
 
 Boto3 documentation:
-[CloudFront.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
+[CloudFront.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
 
 Arguments:
 
@@ -1278,7 +1278,7 @@ Type annotations for `boto3.client("cloudfront").list_realtime_log_configs`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.list_realtime_log_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
+[CloudFront.Client.list_realtime_log_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
 
 Arguments:
 
@@ -1294,7 +1294,7 @@ Type annotations for `boto3.client("cloudfront").list_streaming_distributions`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.list_streaming_distributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
+[CloudFront.Client.list_streaming_distributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
 
 Arguments:
 
@@ -1310,7 +1310,7 @@ Type annotations for `boto3.client("cloudfront").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
+[CloudFront.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1324,7 +1324,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").publish_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.publish_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.publish_function)
+[CloudFront.Client.publish_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.publish_function)
 
 Arguments:
 
@@ -1339,7 +1339,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").tag_resource` method.
 
 Boto3 documentation:
-[CloudFront.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
+[CloudFront.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
 
 Arguments:
 
@@ -1351,7 +1351,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").test_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.test_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.test_function)
+[CloudFront.Client.test_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.test_function)
 
 Arguments:
 
@@ -1367,7 +1367,7 @@ Returns [TestFunctionResultTypeDef](./type_defs.md#testfunctionresulttypedef).
 Type annotations for `boto3.client("cloudfront").untag_resource` method.
 
 Boto3 documentation:
-[CloudFront.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
+[CloudFront.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
 
 Arguments:
 
@@ -1379,7 +1379,7 @@ Arguments:
 Type annotations for `boto3.client("cloudfront").update_cache_policy` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
+[CloudFront.Client.update_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
 
 Arguments:
 
@@ -1398,7 +1398,7 @@ Type annotations for
 `boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
+[CloudFront.Client.update_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
 
 Arguments:
 
@@ -1416,7 +1416,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").update_distribution` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
+[CloudFront.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
 
 Arguments:
 
@@ -1435,7 +1435,7 @@ Type annotations for
 `boto3.client("cloudfront").update_field_level_encryption_config` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
+[CloudFront.Client.update_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
 
 Arguments:
 
@@ -1454,7 +1454,7 @@ Type annotations for
 `boto3.client("cloudfront").update_field_level_encryption_profile` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
+[CloudFront.Client.update_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
 
 Arguments:
 
@@ -1472,7 +1472,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").update_function` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_function)
+[CloudFront.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_function)
 
 Arguments:
 
@@ -1490,7 +1490,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").update_key_group` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
+[CloudFront.Client.update_key_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
 
 Arguments:
 
@@ -1508,7 +1508,7 @@ Type annotations for `boto3.client("cloudfront").update_origin_request_policy`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.update_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
+[CloudFront.Client.update_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
 
 Arguments:
 
@@ -1526,7 +1526,7 @@ Returns
 Type annotations for `boto3.client("cloudfront").update_public_key` method.
 
 Boto3 documentation:
-[CloudFront.Client.update_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
+[CloudFront.Client.update_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
 
 Arguments:
 
@@ -1544,7 +1544,7 @@ Type annotations for `boto3.client("cloudfront").update_realtime_log_config`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.update_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
+[CloudFront.Client.update_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
 
 Arguments:
 
@@ -1563,7 +1563,7 @@ Type annotations for `boto3.client("cloudfront").update_streaming_distribution`
 method.
 
 Boto3 documentation:
-[CloudFront.Client.update_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
+[CloudFront.Client.update_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
 
 Arguments:
 

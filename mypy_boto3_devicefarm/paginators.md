@@ -3,7 +3,7 @@
 > [Index](..) > [DeviceFarm](.) > Paginators
 
 Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm)
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
 [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
@@ -44,7 +44,7 @@ def get_get_offering_status_paginator() -> GetOfferingStatusPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.GetOfferingStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
+[DeviceFarm.Paginator.GetOfferingStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
 
 Arguments for `GetOfferingStatusPaginator.paginate` method:
 
@@ -69,7 +69,7 @@ def get_list_artifacts_paginator() -> ListArtifactsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListArtifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
+[DeviceFarm.Paginator.ListArtifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
 
 Arguments for `ListArtifactsPaginator.paginate` method:
 
@@ -97,7 +97,7 @@ def get_list_device_instances_paginator() -> ListDeviceInstancesPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListDeviceInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
+[DeviceFarm.Paginator.ListDeviceInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
 
 Arguments for `ListDeviceInstancesPaginator.paginate` method:
 
@@ -122,7 +122,7 @@ def get_list_device_pools_paginator() -> ListDevicePoolsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListDevicePools](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
+[DeviceFarm.Paginator.ListDevicePools](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
 
 Arguments for `ListDevicePoolsPaginator.paginate` method:
 
@@ -149,7 +149,7 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
+[DeviceFarm.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
 
 Arguments for `ListDevicesPaginator.paginate` method:
 
@@ -177,7 +177,7 @@ def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListInstanceProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
+[DeviceFarm.Paginator.ListInstanceProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
 
 Arguments for `ListInstanceProfilesPaginator.paginate` method:
 
@@ -201,7 +201,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
+[DeviceFarm.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 
@@ -227,7 +227,7 @@ def get_list_network_profiles_paginator() -> ListNetworkProfilesPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListNetworkProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
+[DeviceFarm.Paginator.ListNetworkProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
 
 Arguments for `ListNetworkProfilesPaginator.paginate` method:
 
@@ -254,7 +254,7 @@ def get_list_offering_promotions_paginator() -> ListOfferingPromotionsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListOfferingPromotions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
+[DeviceFarm.Paginator.ListOfferingPromotions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
 
 Arguments for `ListOfferingPromotionsPaginator.paginate` method:
 
@@ -279,7 +279,7 @@ def get_list_offering_transactions_paginator() -> ListOfferingTransactionsPagina
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListOfferingTransactions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
+[DeviceFarm.Paginator.ListOfferingTransactions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
 
 Arguments for `ListOfferingTransactionsPaginator.paginate` method:
 
@@ -304,7 +304,7 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
+[DeviceFarm.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
 
 Arguments for `ListOfferingsPaginator.paginate` method:
 
@@ -329,7 +329,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
+[DeviceFarm.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
 
 Arguments for `ListProjectsPaginator.paginate` method:
 
@@ -355,7 +355,7 @@ def get_list_remote_access_sessions_paginator() -> ListRemoteAccessSessionsPagin
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListRemoteAccessSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
+[DeviceFarm.Paginator.ListRemoteAccessSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
 
 Arguments for `ListRemoteAccessSessionsPaginator.paginate` method:
 
@@ -380,7 +380,7 @@ def get_list_runs_paginator() -> ListRunsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
+[DeviceFarm.Paginator.ListRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
 
 Arguments for `ListRunsPaginator.paginate` method:
 
@@ -406,7 +406,7 @@ def get_list_samples_paginator() -> ListSamplesPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListSamples](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
+[DeviceFarm.Paginator.ListSamples](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
 
 Arguments for `ListSamplesPaginator.paginate` method:
 
@@ -431,7 +431,7 @@ def get_list_suites_paginator() -> ListSuitesPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListSuites](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
+[DeviceFarm.Paginator.ListSuites](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
 
 Arguments for `ListSuitesPaginator.paginate` method:
 
@@ -456,7 +456,7 @@ def get_list_tests_paginator() -> ListTestsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListTests](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
+[DeviceFarm.Paginator.ListTests](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
 
 Arguments for `ListTestsPaginator.paginate` method:
 
@@ -482,7 +482,7 @@ def get_list_unique_problems_paginator() -> ListUniqueProblemsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListUniqueProblems](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
+[DeviceFarm.Paginator.ListUniqueProblems](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
 
 Arguments for `ListUniqueProblemsPaginator.paginate` method:
 
@@ -508,7 +508,7 @@ def get_list_uploads_paginator() -> ListUploadsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListUploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
+[DeviceFarm.Paginator.ListUploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
 
 Arguments for `ListUploadsPaginator.paginate` method:
 
@@ -535,7 +535,7 @@ def get_list_vpce_configurations_paginator() -> ListVPCEConfigurationsPaginator:
 ```
 
 Boto3 documentation:
-[DeviceFarm.Paginator.ListVPCEConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
+[DeviceFarm.Paginator.ListVPCEConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
 
 Arguments for `ListVPCEConfigurationsPaginator.paginate` method:
 

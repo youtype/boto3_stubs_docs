@@ -3,7 +3,7 @@
 > [Index](..) > ServiceCatalog
 
 Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/servicecatalog.html#ServiceCatalog)
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
 [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 

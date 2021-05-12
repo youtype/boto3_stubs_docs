@@ -3,7 +3,7 @@
 > [Index](..) > [WorkDocs](.) > Paginators
 
 Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs)
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
@@ -33,7 +33,7 @@ def get_describe_activities_paginator() -> DescribeActivitiesPaginator:
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeActivities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeActivities)
+[WorkDocs.Paginator.DescribeActivities](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeActivities)
 
 Arguments for `DescribeActivitiesPaginator.paginate` method:
 
@@ -66,7 +66,7 @@ def get_describe_comments_paginator() -> DescribeCommentsPaginator:
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeComments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeComments)
+[WorkDocs.Paginator.DescribeComments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeComments)
 
 Arguments for `DescribeCommentsPaginator.paginate` method:
 
@@ -94,7 +94,7 @@ def get_describe_document_versions_paginator() -> DescribeDocumentVersionsPagina
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeDocumentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeDocumentVersions)
+[WorkDocs.Paginator.DescribeDocumentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeDocumentVersions)
 
 Arguments for `DescribeDocumentVersionsPaginator.paginate` method:
 
@@ -123,7 +123,7 @@ def get_describe_folder_contents_paginator() -> DescribeFolderContentsPaginator:
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeFolderContents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeFolderContents)
+[WorkDocs.Paginator.DescribeFolderContents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeFolderContents)
 
 Arguments for `DescribeFolderContentsPaginator.paginate` method:
 
@@ -154,7 +154,7 @@ def get_describe_groups_paginator() -> DescribeGroupsPaginator:
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeGroups)
+[WorkDocs.Paginator.DescribeGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeGroups)
 
 Arguments for `DescribeGroupsPaginator.paginate` method:
 
@@ -182,7 +182,7 @@ def get_describe_notification_subscriptions_paginator() -> DescribeNotificationS
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeNotificationSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeNotificationSubscriptions)
+[WorkDocs.Paginator.DescribeNotificationSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeNotificationSubscriptions)
 
 Arguments for `DescribeNotificationSubscriptionsPaginator.paginate` method:
 
@@ -208,7 +208,7 @@ def get_describe_resource_permissions_paginator() -> DescribeResourcePermissions
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeResourcePermissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeResourcePermissions)
+[WorkDocs.Paginator.DescribeResourcePermissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeResourcePermissions)
 
 Arguments for `DescribeResourcePermissionsPaginator.paginate` method:
 
@@ -236,7 +236,7 @@ def get_describe_root_folders_paginator() -> DescribeRootFoldersPaginator:
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeRootFolders](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeRootFolders)
+[WorkDocs.Paginator.DescribeRootFolders](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeRootFolders)
 
 Arguments for `DescribeRootFoldersPaginator.paginate` method:
 
@@ -262,7 +262,7 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
 ```
 
 Boto3 documentation:
-[WorkDocs.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/workdocs.html#WorkDocs.Paginator.DescribeUsers)
+[WorkDocs.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workdocs.html#WorkDocs.Paginator.DescribeUsers)
 
 Arguments for `DescribeUsersPaginator.paginate` method:
 

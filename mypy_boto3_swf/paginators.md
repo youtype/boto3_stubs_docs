@@ -3,7 +3,7 @@
 > [Index](..) > [SWF](.) > Paginators
 
 Auto-generated documentation for
-[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF)
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF)
 type annotations stubs module
 [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
@@ -31,7 +31,7 @@ def get_get_workflow_execution_history_paginator() -> GetWorkflowExecutionHistor
 ```
 
 Boto3 documentation:
-[SWF.Paginator.GetWorkflowExecutionHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.GetWorkflowExecutionHistory)
+[SWF.Paginator.GetWorkflowExecutionHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.GetWorkflowExecutionHistory)
 
 Arguments for `GetWorkflowExecutionHistoryPaginator.paginate` method:
 
@@ -61,7 +61,7 @@ def get_list_activity_types_paginator() -> ListActivityTypesPaginator:
 ```
 
 Boto3 documentation:
-[SWF.Paginator.ListActivityTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.ListActivityTypes)
+[SWF.Paginator.ListActivityTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.ListActivityTypes)
 
 Arguments for `ListActivityTypesPaginator.paginate` method:
 
@@ -91,7 +91,7 @@ def get_list_closed_workflow_executions_paginator() -> ListClosedWorkflowExecuti
 ```
 
 Boto3 documentation:
-[SWF.Paginator.ListClosedWorkflowExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.ListClosedWorkflowExecutions)
+[SWF.Paginator.ListClosedWorkflowExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.ListClosedWorkflowExecutions)
 
 Arguments for `ListClosedWorkflowExecutionsPaginator.paginate` method:
 
@@ -128,7 +128,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
 ```
 
 Boto3 documentation:
-[SWF.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.ListDomains)
+[SWF.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.ListDomains)
 
 Arguments for `ListDomainsPaginator.paginate` method:
 
@@ -156,7 +156,7 @@ def get_list_open_workflow_executions_paginator() -> ListOpenWorkflowExecutionsP
 ```
 
 Boto3 documentation:
-[SWF.Paginator.ListOpenWorkflowExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.ListOpenWorkflowExecutions)
+[SWF.Paginator.ListOpenWorkflowExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.ListOpenWorkflowExecutions)
 
 Arguments for `ListOpenWorkflowExecutionsPaginator.paginate` method:
 
@@ -191,7 +191,7 @@ def get_list_workflow_types_paginator() -> ListWorkflowTypesPaginator:
 ```
 
 Boto3 documentation:
-[SWF.Paginator.ListWorkflowTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.ListWorkflowTypes)
+[SWF.Paginator.ListWorkflowTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.ListWorkflowTypes)
 
 Arguments for `ListWorkflowTypesPaginator.paginate` method:
 
@@ -221,7 +221,7 @@ def get_poll_for_decision_task_paginator() -> PollForDecisionTaskPaginator:
 ```
 
 Boto3 documentation:
-[SWF.Paginator.PollForDecisionTask](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/swf.html#SWF.Paginator.PollForDecisionTask)
+[SWF.Paginator.PollForDecisionTask](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/swf.html#SWF.Paginator.PollForDecisionTask)
 
 Arguments for `PollForDecisionTaskPaginator.paginate` method:
 

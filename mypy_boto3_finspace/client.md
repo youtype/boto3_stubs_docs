@@ -3,7 +3,7 @@
 > [Index](..) > [finspace](.) > finspaceClient
 
 Auto-generated documentation for
-[finspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace)
+[finspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace)
 type annotations stubs module
 [mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
@@ -36,7 +36,7 @@ def get_finspace_client() -> finspaceClient:
 ```
 
 Boto3 documentation:
-[finspace.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client)
+[finspace.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 Type annotations for `boto3.client("finspace").can_paginate` method.
 
 Boto3 documentation:
-[finspace.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.can_paginate)
+[finspace.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.can_paginate)
 
 Arguments:
 
@@ -82,7 +82,7 @@ Returns `bool`.
 Type annotations for `boto3.client("finspace").create_environment` method.
 
 Boto3 documentation:
-[finspace.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.create_environment)
+[finspace.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.create_environment)
 
 Arguments:
 
@@ -102,7 +102,7 @@ Returns
 Type annotations for `boto3.client("finspace").delete_environment` method.
 
 Boto3 documentation:
-[finspace.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.delete_environment)
+[finspace.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.delete_environment)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("finspace").generate_presigned_url` method.
 
 Boto3 documentation:
-[finspace.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.generate_presigned_url)
+[finspace.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.generate_presigned_url)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Returns `str`.
 Type annotations for `boto3.client("finspace").get_environment` method.
 
 Boto3 documentation:
-[finspace.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.get_environment)
+[finspace.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.get_environment)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Returns
 Type annotations for `boto3.client("finspace").list_environments` method.
 
 Boto3 documentation:
-[finspace.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.list_environments)
+[finspace.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.list_environments)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns
 Type annotations for `boto3.client("finspace").list_tags_for_resource` method.
 
 Boto3 documentation:
-[finspace.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.list_tags_for_resource)
+[finspace.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Returns
 Type annotations for `boto3.client("finspace").tag_resource` method.
 
 Boto3 documentation:
-[finspace.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.tag_resource)
+[finspace.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.tag_resource)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("finspace").untag_resource` method.
 
 Boto3 documentation:
-[finspace.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.untag_resource)
+[finspace.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.untag_resource)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("finspace").update_environment` method.
 
 Boto3 documentation:
-[finspace.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/finspace.html#finspace.Client.update_environment)
+[finspace.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/finspace.html#finspace.Client.update_environment)
 
 Arguments:
 

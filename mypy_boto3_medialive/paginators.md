@@ -3,7 +3,7 @@
 > [Index](..) > [MediaLive](.) > Paginators
 
 Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive)
+[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive)
 type annotations stubs module
 [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
@@ -34,7 +34,7 @@ def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.DescribeSchedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
+[MediaLive.Paginator.DescribeSchedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
 
 Arguments for `DescribeSchedulePaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
+[MediaLive.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
 
 Arguments for `ListChannelsPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_list_input_device_transfers_paginator() -> ListInputDeviceTransfersPagin
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListInputDeviceTransfers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
+[MediaLive.Paginator.ListInputDeviceTransfers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
 
 Arguments for `ListInputDeviceTransfersPaginator.paginate` method:
 
@@ -111,7 +111,7 @@ def get_list_input_devices_paginator() -> ListInputDevicesPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListInputDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
+[MediaLive.Paginator.ListInputDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
 
 Arguments for `ListInputDevicesPaginator.paginate` method:
 
@@ -136,7 +136,7 @@ def get_list_input_security_groups_paginator() -> ListInputSecurityGroupsPaginat
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListInputSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
+[MediaLive.Paginator.ListInputSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
 
 Arguments for `ListInputSecurityGroupsPaginator.paginate` method:
 
@@ -160,7 +160,7 @@ def get_list_inputs_paginator() -> ListInputsPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListInputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
+[MediaLive.Paginator.ListInputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
 
 Arguments for `ListInputsPaginator.paginate` method:
 
@@ -185,7 +185,7 @@ def get_list_multiplex_programs_paginator() -> ListMultiplexProgramsPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListMultiplexPrograms](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
+[MediaLive.Paginator.ListMultiplexPrograms](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
 
 Arguments for `ListMultiplexProgramsPaginator.paginate` method:
 
@@ -211,7 +211,7 @@ def get_list_multiplexes_paginator() -> ListMultiplexesPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListMultiplexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
+[MediaLive.Paginator.ListMultiplexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
 
 Arguments for `ListMultiplexesPaginator.paginate` method:
 
@@ -236,7 +236,7 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
+[MediaLive.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
 
 Arguments for `ListOfferingsPaginator.paginate` method:
 
@@ -271,7 +271,7 @@ def get_list_reservations_paginator() -> ListReservationsPaginator:
 ```
 
 Boto3 documentation:
-[MediaLive.Paginator.ListReservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
+[MediaLive.Paginator.ListReservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
 
 Arguments for `ListReservationsPaginator.paginate` method:
 

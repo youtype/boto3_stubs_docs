@@ -3,7 +3,7 @@
 > [Index](..) > [GuardDuty](.) > Paginators
 
 Auto-generated documentation for
-[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty)
+[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
 [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
@@ -32,7 +32,7 @@ def get_list_detectors_paginator() -> ListDetectorsPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListDetectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListDetectors)
+[GuardDuty.Paginator.ListDetectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListDetectors)
 
 Arguments for `ListDetectorsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_filters_paginator() -> ListFiltersPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListFilters)
+[GuardDuty.Paginator.ListFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListFilters)
 
 Arguments for `ListFiltersPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListFindings)
+[GuardDuty.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListFindings)
 
 Arguments for `ListFindingsPaginator.paginate` method:
 
@@ -110,7 +110,7 @@ def get_list_ip_sets_paginator() -> ListIPSetsPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListIPSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListIPSets)
+[GuardDuty.Paginator.ListIPSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListIPSets)
 
 Arguments for `ListIPSetsPaginator.paginate` method:
 
@@ -136,7 +136,7 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListInvitations)
+[GuardDuty.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListInvitations)
 
 Arguments for `ListInvitationsPaginator.paginate` method:
 
@@ -160,7 +160,7 @@ def get_list_members_paginator() -> ListMembersPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListMembers)
+[GuardDuty.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListMembers)
 
 Arguments for `ListMembersPaginator.paginate` method:
 
@@ -187,7 +187,7 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListOrganizationAdminAccounts)
+[GuardDuty.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListOrganizationAdminAccounts)
 
 Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
 
@@ -212,7 +212,7 @@ def get_list_threat_intel_sets_paginator() -> ListThreatIntelSetsPaginator:
 ```
 
 Boto3 documentation:
-[GuardDuty.Paginator.ListThreatIntelSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/guardduty.html#GuardDuty.Paginator.ListThreatIntelSets)
+[GuardDuty.Paginator.ListThreatIntelSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/guardduty.html#GuardDuty.Paginator.ListThreatIntelSets)
 
 Arguments for `ListThreatIntelSetsPaginator.paginate` method:
 

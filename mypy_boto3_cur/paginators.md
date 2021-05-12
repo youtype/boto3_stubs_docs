@@ -3,7 +3,7 @@
 > [Index](..) > [CostandUsageReportService](.) > Paginators
 
 Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cur.html#CostandUsageReportService)
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
@@ -25,7 +25,7 @@ def get_describe_report_definitions_paginator() -> DescribeReportDefinitionsPagi
 ```
 
 Boto3 documentation:
-[CostandUsageReportService.Paginator.DescribeReportDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
+[CostandUsageReportService.Paginator.DescribeReportDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
 
 Arguments for `DescribeReportDefinitionsPaginator.paginate` method:
 

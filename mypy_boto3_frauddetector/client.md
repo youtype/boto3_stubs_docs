@@ -3,7 +3,7 @@
 > [Index](..) > [FraudDetector](.) > FraudDetectorClient
 
 Auto-generated documentation for
-[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector)
+[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
 [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
@@ -85,7 +85,7 @@ def get_frauddetector_client() -> FraudDetectorClient:
 ```
 
 Boto3 documentation:
-[FraudDetector.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client)
+[FraudDetector.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client)
 
 ## Exceptions
 
@@ -117,7 +117,7 @@ Type annotations for `boto3.client("frauddetector").batch_create_variable`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.batch_create_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.batch_create_variable)
+[FraudDetector.Client.batch_create_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.batch_create_variable)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").batch_get_variable` method.
 
 Boto3 documentation:
-[FraudDetector.Client.batch_get_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.batch_get_variable)
+[FraudDetector.Client.batch_get_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.batch_get_variable)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").can_paginate` method.
 
 Boto3 documentation:
-[FraudDetector.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.can_paginate)
+[FraudDetector.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.can_paginate)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Type annotations for
 `boto3.client("frauddetector").cancel_batch_prediction_job` method.
 
 Boto3 documentation:
-[FraudDetector.Client.cancel_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.cancel_batch_prediction_job)
+[FraudDetector.Client.cancel_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.cancel_batch_prediction_job)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Type annotations for
 `boto3.client("frauddetector").create_batch_prediction_job` method.
 
 Boto3 documentation:
-[FraudDetector.Client.create_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.create_batch_prediction_job)
+[FraudDetector.Client.create_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.create_batch_prediction_job)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("frauddetector").create_detector_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.create_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.create_detector_version)
+[FraudDetector.Client.create_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.create_detector_version)
 
 Arguments:
 
@@ -219,7 +219,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").create_model` method.
 
 Boto3 documentation:
-[FraudDetector.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.create_model)
+[FraudDetector.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.create_model)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("frauddetector").create_model_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.create_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.create_model_version)
+[FraudDetector.Client.create_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.create_model_version)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").create_rule` method.
 
 Boto3 documentation:
-[FraudDetector.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.create_rule)
+[FraudDetector.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.create_rule)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Returns [CreateRuleResultTypeDef](./type_defs.md#createruleresulttypedef).
 Type annotations for `boto3.client("frauddetector").create_variable` method.
 
 Boto3 documentation:
-[FraudDetector.Client.create_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.create_variable)
+[FraudDetector.Client.create_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.create_variable)
 
 Arguments:
 
@@ -303,7 +303,7 @@ Type annotations for
 `boto3.client("frauddetector").delete_batch_prediction_job` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_batch_prediction_job)
+[FraudDetector.Client.delete_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_batch_prediction_job)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_detector` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_detector)
+[FraudDetector.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_detector)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("frauddetector").delete_detector_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_detector_version)
+[FraudDetector.Client.delete_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_detector_version)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_entity_type` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_entity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_entity_type)
+[FraudDetector.Client.delete_entity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_entity_type)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_event` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_event)
+[FraudDetector.Client.delete_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_event)
 
 Arguments:
 
@@ -371,7 +371,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_event_type` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_event_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_event_type)
+[FraudDetector.Client.delete_event_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_event_type)
 
 Arguments:
 
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("frauddetector").delete_external_model`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_external_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_external_model)
+[FraudDetector.Client.delete_external_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_external_model)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_label` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_label)
+[FraudDetector.Client.delete_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_label)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_model` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_model)
+[FraudDetector.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_model)
 
 Arguments:
 
@@ -427,7 +427,7 @@ Type annotations for `boto3.client("frauddetector").delete_model_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_model_version)
+[FraudDetector.Client.delete_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_model_version)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_outcome` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_outcome](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_outcome)
+[FraudDetector.Client.delete_outcome](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_outcome)
 
 Arguments:
 
@@ -456,7 +456,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_rule` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_rule)
+[FraudDetector.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_rule)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").delete_variable` method.
 
 Boto3 documentation:
-[FraudDetector.Client.delete_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.delete_variable)
+[FraudDetector.Client.delete_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.delete_variable)
 
 Arguments:
 
@@ -482,7 +482,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").describe_detector` method.
 
 Boto3 documentation:
-[FraudDetector.Client.describe_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.describe_detector)
+[FraudDetector.Client.describe_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.describe_detector)
 
 Arguments:
 
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("frauddetector").describe_model_versions`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.describe_model_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.describe_model_versions)
+[FraudDetector.Client.describe_model_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.describe_model_versions)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("frauddetector").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.generate_presigned_url)
+[FraudDetector.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.generate_presigned_url)
 
 Arguments:
 
@@ -536,7 +536,7 @@ Type annotations for `boto3.client("frauddetector").get_batch_prediction_jobs`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_batch_prediction_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_batch_prediction_jobs)
+[FraudDetector.Client.get_batch_prediction_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_batch_prediction_jobs)
 
 Arguments:
 
@@ -553,7 +553,7 @@ Type annotations for `boto3.client("frauddetector").get_detector_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_detector_version)
+[FraudDetector.Client.get_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_detector_version)
 
 Arguments:
 
@@ -568,7 +568,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").get_detectors` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_detectors)
+[FraudDetector.Client.get_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_detectors)
 
 Arguments:
 
@@ -583,7 +583,7 @@ Returns [GetDetectorsResultTypeDef](./type_defs.md#getdetectorsresulttypedef).
 Type annotations for `boto3.client("frauddetector").get_entity_types` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_entity_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_entity_types)
+[FraudDetector.Client.get_entity_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_entity_types)
 
 Arguments:
 
@@ -600,7 +600,7 @@ Type annotations for `boto3.client("frauddetector").get_event_prediction`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_event_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_event_prediction)
+[FraudDetector.Client.get_event_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_event_prediction)
 
 Arguments:
 
@@ -623,7 +623,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").get_event_types` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_event_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_event_types)
+[FraudDetector.Client.get_event_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_event_types)
 
 Arguments:
 
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("frauddetector").get_external_models`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_external_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_external_models)
+[FraudDetector.Client.get_external_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_external_models)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("frauddetector").get_kms_encryption_key`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_kms_encryption_key)
+[FraudDetector.Client.get_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_kms_encryption_key)
 
 Returns
 [GetKMSEncryptionKeyResultTypeDef](./type_defs.md#getkmsencryptionkeyresulttypedef).
@@ -667,7 +667,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").get_labels` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_labels)
+[FraudDetector.Client.get_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_labels)
 
 Arguments:
 
@@ -682,7 +682,7 @@ Returns [GetLabelsResultTypeDef](./type_defs.md#getlabelsresulttypedef).
 Type annotations for `boto3.client("frauddetector").get_model_version` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_model_version)
+[FraudDetector.Client.get_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_model_version)
 
 Arguments:
 
@@ -699,7 +699,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").get_models` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_models)
+[FraudDetector.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_models)
 
 Arguments:
 
@@ -716,7 +716,7 @@ Returns [GetModelsResultTypeDef](./type_defs.md#getmodelsresulttypedef).
 Type annotations for `boto3.client("frauddetector").get_outcomes` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_outcomes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_outcomes)
+[FraudDetector.Client.get_outcomes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_outcomes)
 
 Arguments:
 
@@ -731,7 +731,7 @@ Returns [GetOutcomesResultTypeDef](./type_defs.md#getoutcomesresulttypedef).
 Type annotations for `boto3.client("frauddetector").get_rules` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_rules)
+[FraudDetector.Client.get_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_rules)
 
 Arguments:
 
@@ -748,7 +748,7 @@ Returns [GetRulesResultTypeDef](./type_defs.md#getrulesresulttypedef).
 Type annotations for `boto3.client("frauddetector").get_variables` method.
 
 Boto3 documentation:
-[FraudDetector.Client.get_variables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.get_variables)
+[FraudDetector.Client.get_variables](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.get_variables)
 
 Arguments:
 
@@ -764,7 +764,7 @@ Type annotations for `boto3.client("frauddetector").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.list_tags_for_resource)
+[FraudDetector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").put_detector` method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_detector)
+[FraudDetector.Client.put_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_detector)
 
 Arguments:
 
@@ -796,7 +796,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").put_entity_type` method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_entity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_entity_type)
+[FraudDetector.Client.put_entity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_entity_type)
 
 Arguments:
 
@@ -811,7 +811,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").put_event_type` method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_event_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_event_type)
+[FraudDetector.Client.put_event_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_event_type)
 
 Arguments:
 
@@ -829,7 +829,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").put_external_model` method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_external_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_external_model)
+[FraudDetector.Client.put_external_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_external_model)
 
 Arguments:
 
@@ -855,7 +855,7 @@ Type annotations for `boto3.client("frauddetector").put_kms_encryption_key`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_kms_encryption_key)
+[FraudDetector.Client.put_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_kms_encryption_key)
 
 Arguments:
 
@@ -868,7 +868,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").put_label` method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_label)
+[FraudDetector.Client.put_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_label)
 
 Arguments:
 
@@ -883,7 +883,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").put_outcome` method.
 
 Boto3 documentation:
-[FraudDetector.Client.put_outcome](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.put_outcome)
+[FraudDetector.Client.put_outcome](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.put_outcome)
 
 Arguments:
 
@@ -898,7 +898,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").tag_resource` method.
 
 Boto3 documentation:
-[FraudDetector.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.tag_resource)
+[FraudDetector.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.tag_resource)
 
 Arguments:
 
@@ -912,7 +912,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").untag_resource` method.
 
 Boto3 documentation:
-[FraudDetector.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.untag_resource)
+[FraudDetector.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.untag_resource)
 
 Arguments:
 
@@ -927,7 +927,7 @@ Type annotations for `boto3.client("frauddetector").update_detector_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version)
+[FraudDetector.Client.update_detector_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version)
 
 Arguments:
 
@@ -949,7 +949,7 @@ Type annotations for
 `boto3.client("frauddetector").update_detector_version_metadata` method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_detector_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_metadata)
+[FraudDetector.Client.update_detector_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_metadata)
 
 Arguments:
 
@@ -965,7 +965,7 @@ Type annotations for
 `boto3.client("frauddetector").update_detector_version_status` method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_detector_version_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_status)
+[FraudDetector.Client.update_detector_version_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_status)
 
 Arguments:
 
@@ -982,7 +982,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("frauddetector").update_model` method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_model)
+[FraudDetector.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_model)
 
 Arguments:
 
@@ -999,7 +999,7 @@ Type annotations for `boto3.client("frauddetector").update_model_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_model_version)
+[FraudDetector.Client.update_model_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_model_version)
 
 Arguments:
 
@@ -1020,7 +1020,7 @@ Type annotations for
 `boto3.client("frauddetector").update_model_version_status` method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_model_version_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_model_version_status)
+[FraudDetector.Client.update_model_version_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_model_version_status)
 
 Arguments:
 
@@ -1039,7 +1039,7 @@ Type annotations for `boto3.client("frauddetector").update_rule_metadata`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_rule_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_rule_metadata)
+[FraudDetector.Client.update_rule_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_rule_metadata)
 
 Arguments:
 
@@ -1054,7 +1054,7 @@ Type annotations for `boto3.client("frauddetector").update_rule_version`
 method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_rule_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_rule_version)
+[FraudDetector.Client.update_rule_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_rule_version)
 
 Arguments:
 
@@ -1074,7 +1074,7 @@ Returns
 Type annotations for `boto3.client("frauddetector").update_variable` method.
 
 Boto3 documentation:
-[FraudDetector.Client.update_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/frauddetector.html#FraudDetector.Client.update_variable)
+[FraudDetector.Client.update_variable](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/frauddetector.html#FraudDetector.Client.update_variable)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [MigrationHubConfig](.) > MigrationHubConfigClient
 
 Auto-generated documentation for
-[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig)
+[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module
 [mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
@@ -31,7 +31,7 @@ def get_migrationhub-config_client() -> MigrationHubConfigClient:
 ```
 
 Boto3 documentation:
-[MigrationHubConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
+[MigrationHubConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("migrationhub-config").can_paginate` method.
 
 Boto3 documentation:
-[MigrationHubConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate)
+[MigrationHubConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate)
 
 Arguments:
 
@@ -76,7 +76,7 @@ Type annotations for
 `boto3.client("migrationhub-config").create_home_region_control` method.
 
 Boto3 documentation:
-[MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
+[MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
 
 Arguments:
 
@@ -93,7 +93,7 @@ Type annotations for
 `boto3.client("migrationhub-config").describe_home_region_controls` method.
 
 Boto3 documentation:
-[MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
+[MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Type annotations for
 `boto3.client("migrationhub-config").generate_presigned_url` method.
 
 Boto3 documentation:
-[MigrationHubConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url)
+[MigrationHubConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Type annotations for `boto3.client("migrationhub-config").get_home_region`
 method.
 
 Boto3 documentation:
-[MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
+[MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
 
 Returns
 [GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef).

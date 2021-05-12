@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScalingPlans](.) > Paginators
 
 Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans)
+[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
 [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
@@ -26,7 +26,7 @@ def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResour
 ```
 
 Boto3 documentation:
-[AutoScalingPlans.Paginator.DescribeScalingPlanResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
+[AutoScalingPlans.Paginator.DescribeScalingPlanResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
 
 Arguments for `DescribeScalingPlanResourcesPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_describe_scaling_plans_paginator() -> DescribeScalingPlansPaginator:
 ```
 
 Boto3 documentation:
-[AutoScalingPlans.Paginator.DescribeScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
+[AutoScalingPlans.Paginator.DescribeScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
 
 Arguments for `DescribeScalingPlansPaginator.paginate` method:
 

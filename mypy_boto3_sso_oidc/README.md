@@ -3,7 +3,7 @@
 > [Index](..) > SSOOIDC
 
 Auto-generated documentation for
-[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sso-oidc.html#SSOOIDC)
+[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module
 [mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 

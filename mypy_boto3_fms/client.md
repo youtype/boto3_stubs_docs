@@ -3,7 +3,7 @@
 > [Index](..) > [FMS](.) > FMSClient
 
 Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS)
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS)
 type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
@@ -55,7 +55,7 @@ def get_fms_client() -> FMSClient:
 ```
 
 Boto3 documentation:
-[FMS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client)
+[FMS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("fms").associate_admin_account` method.
 
 Boto3 documentation:
-[FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.associate_admin_account)
+[FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.associate_admin_account)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Arguments:
 Type annotations for `boto3.client("fms").can_paginate` method.
 
 Boto3 documentation:
-[FMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.can_paginate)
+[FMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.can_paginate)
 
 Arguments:
 
@@ -110,7 +110,7 @@ Returns `bool`.
 Type annotations for `boto3.client("fms").delete_apps_list` method.
 
 Boto3 documentation:
-[FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.delete_apps_list)
+[FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.delete_apps_list)
 
 Arguments:
 
@@ -121,14 +121,14 @@ Arguments:
 Type annotations for `boto3.client("fms").delete_notification_channel` method.
 
 Boto3 documentation:
-[FMS.Client.delete_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.delete_notification_channel)
+[FMS.Client.delete_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.delete_notification_channel)
 
 ### delete_policy
 
 Type annotations for `boto3.client("fms").delete_policy` method.
 
 Boto3 documentation:
-[FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.delete_policy)
+[FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.delete_policy)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Arguments:
 Type annotations for `boto3.client("fms").delete_protocols_list` method.
 
 Boto3 documentation:
-[FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.delete_protocols_list)
+[FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.delete_protocols_list)
 
 Arguments:
 
@@ -151,14 +151,14 @@ Arguments:
 Type annotations for `boto3.client("fms").disassociate_admin_account` method.
 
 Boto3 documentation:
-[FMS.Client.disassociate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.disassociate_admin_account)
+[FMS.Client.disassociate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.disassociate_admin_account)
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("fms").generate_presigned_url` method.
 
 Boto3 documentation:
-[FMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.generate_presigned_url)
+[FMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Returns `str`.
 Type annotations for `boto3.client("fms").get_admin_account` method.
 
 Boto3 documentation:
-[FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_admin_account)
+[FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_admin_account)
 
 Returns
 [GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef).
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("fms").get_apps_list` method.
 
 Boto3 documentation:
-[FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_apps_list)
+[FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_apps_list)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("fms").get_compliance_detail` method.
 
 Boto3 documentation:
-[FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_compliance_detail)
+[FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_compliance_detail)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("fms").get_notification_channel` method.
 
 Boto3 documentation:
-[FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_notification_channel)
+[FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_notification_channel)
 
 Returns
 [GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef).
@@ -224,7 +224,7 @@ Returns
 Type annotations for `boto3.client("fms").get_policy` method.
 
 Boto3 documentation:
-[FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_policy)
+[FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_policy)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 Type annotations for `boto3.client("fms").get_protection_status` method.
 
 Boto3 documentation:
-[FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_protection_status)
+[FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_protection_status)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns
 Type annotations for `boto3.client("fms").get_protocols_list` method.
 
 Boto3 documentation:
-[FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_protocols_list)
+[FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_protocols_list)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Returns
 Type annotations for `boto3.client("fms").get_violation_details` method.
 
 Boto3 documentation:
-[FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.get_violation_details)
+[FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.get_violation_details)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns
 Type annotations for `boto3.client("fms").list_apps_lists` method.
 
 Boto3 documentation:
-[FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.list_apps_lists)
+[FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.list_apps_lists)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("fms").list_compliance_status` method.
 
 Boto3 documentation:
-[FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.list_compliance_status)
+[FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.list_compliance_status)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Returns
 Type annotations for `boto3.client("fms").list_member_accounts` method.
 
 Boto3 documentation:
-[FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.list_member_accounts)
+[FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.list_member_accounts)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Returns
 Type annotations for `boto3.client("fms").list_policies` method.
 
 Boto3 documentation:
-[FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.list_policies)
+[FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.list_policies)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Returns
 Type annotations for `boto3.client("fms").list_protocols_lists` method.
 
 Boto3 documentation:
-[FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.list_protocols_lists)
+[FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.list_protocols_lists)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns
 Type annotations for `boto3.client("fms").list_tags_for_resource` method.
 
 Boto3 documentation:
-[FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.list_tags_for_resource)
+[FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("fms").put_apps_list` method.
 
 Boto3 documentation:
-[FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.put_apps_list)
+[FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.put_apps_list)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Returns
 Type annotations for `boto3.client("fms").put_notification_channel` method.
 
 Boto3 documentation:
-[FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.put_notification_channel)
+[FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.put_notification_channel)
 
 Arguments:
 
@@ -408,7 +408,7 @@ Arguments:
 Type annotations for `boto3.client("fms").put_policy` method.
 
 Boto3 documentation:
-[FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.put_policy)
+[FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.put_policy)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
 Type annotations for `boto3.client("fms").put_protocols_list` method.
 
 Boto3 documentation:
-[FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.put_protocols_list)
+[FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.put_protocols_list)
 
 Arguments:
 
@@ -439,7 +439,7 @@ Returns
 Type annotations for `boto3.client("fms").tag_resource` method.
 
 Boto3 documentation:
-[FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.tag_resource)
+[FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.tag_resource)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("fms").untag_resource` method.
 
 Boto3 documentation:
-[FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/fms.html#FMS.Client.untag_resource)
+[FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/fms.html#FMS.Client.untag_resource)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [GroundStation](.) > Paginators
 
 Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation)
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
 [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
@@ -30,7 +30,7 @@ def get_list_configs_paginator() -> ListConfigsPaginator:
 ```
 
 Boto3 documentation:
-[GroundStation.Paginator.ListConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
+[GroundStation.Paginator.ListConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
 
 Arguments for `ListConfigsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_contacts_paginator() -> ListContactsPaginator:
 ```
 
 Boto3 documentation:
-[GroundStation.Paginator.ListContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
+[GroundStation.Paginator.ListContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
 
 Arguments for `ListContactsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_dataflow_endpoint_groups_paginator() -> ListDataflowEndpointGroupsP
 ```
 
 Boto3 documentation:
-[GroundStation.Paginator.ListDataflowEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
+[GroundStation.Paginator.ListDataflowEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
 
 Arguments for `ListDataflowEndpointGroupsPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_list_ground_stations_paginator() -> ListGroundStationsPaginator:
 ```
 
 Boto3 documentation:
-[GroundStation.Paginator.ListGroundStations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
+[GroundStation.Paginator.ListGroundStations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
 
 Arguments for `ListGroundStationsPaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_list_mission_profiles_paginator() -> ListMissionProfilesPaginator:
 ```
 
 Boto3 documentation:
-[GroundStation.Paginator.ListMissionProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
+[GroundStation.Paginator.ListMissionProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
 
 Arguments for `ListMissionProfilesPaginator.paginate` method:
 
@@ -163,7 +163,7 @@ def get_list_satellites_paginator() -> ListSatellitesPaginator:
 ```
 
 Boto3 documentation:
-[GroundStation.Paginator.ListSatellites](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
+[GroundStation.Paginator.ListSatellites](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
 
 Arguments for `ListSatellitesPaginator.paginate` method:
 

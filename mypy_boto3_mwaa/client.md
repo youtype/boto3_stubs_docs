@@ -3,7 +3,7 @@
 > [Index](..) > [MWAA](.) > MWAAClient
 
 Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA)
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA)
 type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
@@ -40,7 +40,7 @@ def get_mwaa_client() -> MWAAClient:
 ```
 
 Boto3 documentation:
-[MWAA.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client)
+[MWAA.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 Type annotations for `boto3.client("mwaa").can_paginate` method.
 
 Boto3 documentation:
-[MWAA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.can_paginate)
+[MWAA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.can_paginate)
 
 Arguments:
 
@@ -82,7 +82,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mwaa").create_cli_token` method.
 
 Boto3 documentation:
-[MWAA.Client.create_cli_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.create_cli_token)
+[MWAA.Client.create_cli_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.create_cli_token)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Returns
 Type annotations for `boto3.client("mwaa").create_environment` method.
 
 Boto3 documentation:
-[MWAA.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.create_environment)
+[MWAA.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.create_environment)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns
 Type annotations for `boto3.client("mwaa").create_web_login_token` method.
 
 Boto3 documentation:
-[MWAA.Client.create_web_login_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
+[MWAA.Client.create_web_login_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Returns
 Type annotations for `boto3.client("mwaa").delete_environment` method.
 
 Boto3 documentation:
-[MWAA.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.delete_environment)
+[MWAA.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.delete_environment)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mwaa").generate_presigned_url` method.
 
 Boto3 documentation:
-[MWAA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.generate_presigned_url)
+[MWAA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.generate_presigned_url)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns `str`.
 Type annotations for `boto3.client("mwaa").get_environment` method.
 
 Boto3 documentation:
-[MWAA.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.get_environment)
+[MWAA.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.get_environment)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns
 Type annotations for `boto3.client("mwaa").list_environments` method.
 
 Boto3 documentation:
-[MWAA.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.list_environments)
+[MWAA.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.list_environments)
 
 Arguments:
 
@@ -204,7 +204,7 @@ Returns
 Type annotations for `boto3.client("mwaa").list_tags_for_resource` method.
 
 Boto3 documentation:
-[MWAA.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
+[MWAA.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Returns
 Type annotations for `boto3.client("mwaa").publish_metrics` method.
 
 Boto3 documentation:
-[MWAA.Client.publish_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.publish_metrics)
+[MWAA.Client.publish_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.publish_metrics)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mwaa").tag_resource` method.
 
 Boto3 documentation:
-[MWAA.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.tag_resource)
+[MWAA.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.tag_resource)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mwaa").untag_resource` method.
 
 Boto3 documentation:
-[MWAA.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.untag_resource)
+[MWAA.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.untag_resource)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mwaa").update_environment` method.
 
 Boto3 documentation:
-[MWAA.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mwaa.html#MWAA.Client.update_environment)
+[MWAA.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mwaa.html#MWAA.Client.update_environment)
 
 Arguments:
 

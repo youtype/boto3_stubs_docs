@@ -3,7 +3,7 @@
 > [Index](..) > [ServerlessApplicationRepository](.) > Paginators
 
 Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
 [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
@@ -27,7 +27,7 @@ def get_list_application_dependencies_paginator() -> ListApplicationDependencies
 ```
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Paginator.ListApplicationDependencies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
+[ServerlessApplicationRepository.Paginator.ListApplicationDependencies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
 
 Arguments for `ListApplicationDependenciesPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_application_versions_paginator() -> ListApplicationVersionsPaginato
 ```
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Paginator.ListApplicationVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
+[ServerlessApplicationRepository.Paginator.ListApplicationVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
 
 Arguments for `ListApplicationVersionsPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
 ```
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
+[ServerlessApplicationRepository.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
 
 Arguments for `ListApplicationsPaginator.paginate` method:
 

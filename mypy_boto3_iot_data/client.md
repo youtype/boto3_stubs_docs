@@ -3,7 +3,7 @@
 > [Index](..) > [IoTDataPlane](.) > IoTDataPlaneClient
 
 Auto-generated documentation for
-[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane)
+[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane)
 type annotations stubs module
 [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
@@ -33,7 +33,7 @@ def get_iot-data_client() -> IoTDataPlaneClient:
 ```
 
 Boto3 documentation:
-[IoTDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client)
+[IoTDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 Type annotations for `boto3.client("iot-data").can_paginate` method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate)
+[IoTDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Returns `bool`.
 Type annotations for `boto3.client("iot-data").delete_thing_shadow` method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
+[IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Returns
 Type annotations for `boto3.client("iot-data").generate_presigned_url` method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url)
+[IoTDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Returns `str`.
 Type annotations for `boto3.client("iot-data").get_thing_shadow` method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
+[IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("iot-data").list_named_shadows_for_thing`
 method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
+[IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns
 Type annotations for `boto3.client("iot-data").publish` method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.publish)
+[IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.publish)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Arguments:
 Type annotations for `boto3.client("iot-data").update_thing_shadow` method.
 
 Boto3 documentation:
-[IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
+[IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
 
 Arguments:
 

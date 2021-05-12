@@ -3,7 +3,7 @@
 > [Index](..) > [CloudSearchDomain](.) > CloudSearchDomainClient
 
 Auto-generated documentation for
-[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain)
+[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module
 [mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
@@ -31,7 +31,7 @@ def get_cloudsearchdomain_client() -> CloudSearchDomainClient:
 ```
 
 Boto3 documentation:
-[CloudSearchDomain.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
+[CloudSearchDomain.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
 
 ## Exceptions
 
@@ -58,7 +58,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudsearchdomain").can_paginate` method.
 
 Boto3 documentation:
-[CloudSearchDomain.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.can_paginate)
+[CloudSearchDomain.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.can_paginate)
 
 Arguments:
 
@@ -72,7 +72,7 @@ Type annotations for `boto3.client("cloudsearchdomain").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudSearchDomain.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.generate_presigned_url)
+[CloudSearchDomain.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.generate_presigned_url)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudsearchdomain").search` method.
 
 Boto3 documentation:
-[CloudSearchDomain.Client.search](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
+[CloudSearchDomain.Client.search](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 Type annotations for `boto3.client("cloudsearchdomain").suggest` method.
 
 Boto3 documentation:
-[CloudSearchDomain.Client.suggest](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
+[CloudSearchDomain.Client.suggest](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
 
 Arguments:
 
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("cloudsearchdomain").upload_documents`
 method.
 
 Boto3 documentation:
-[CloudSearchDomain.Client.upload_documents](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
+[CloudSearchDomain.Client.upload_documents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
 
 Arguments:
 

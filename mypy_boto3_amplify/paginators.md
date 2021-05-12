@@ -3,7 +3,7 @@
 > [Index](..) > [Amplify](.) > Paginators
 
 Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify)
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/amplify.html#Amplify)
 type annotations stubs module
 [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
@@ -27,7 +27,7 @@ def get_list_apps_paginator() -> ListAppsPaginator:
 ```
 
 Boto3 documentation:
-[Amplify.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify.Paginator.ListApps)
+[Amplify.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/amplify.html#Amplify.Paginator.ListApps)
 
 Arguments for `ListAppsPaginator.paginate` method:
 
@@ -51,7 +51,7 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
 ```
 
 Boto3 documentation:
-[Amplify.Paginator.ListBranches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify.Paginator.ListBranches)
+[Amplify.Paginator.ListBranches](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/amplify.html#Amplify.Paginator.ListBranches)
 
 Arguments for `ListBranchesPaginator.paginate` method:
 
@@ -77,7 +77,7 @@ def get_list_domain_associations_paginator() -> ListDomainAssociationsPaginator:
 ```
 
 Boto3 documentation:
-[Amplify.Paginator.ListDomainAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
+[Amplify.Paginator.ListDomainAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
 
 Arguments for `ListDomainAssociationsPaginator.paginate` method:
 
@@ -102,7 +102,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[Amplify.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/amplify.html#Amplify.Paginator.ListJobs)
+[Amplify.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/amplify.html#Amplify.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [SMS](.) > Paginators
 
 Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS)
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS)
 type annotations stubs module
 [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
@@ -28,7 +28,7 @@ def get_get_connectors_paginator() -> GetConnectorsPaginator:
 ```
 
 Boto3 documentation:
-[SMS.Paginator.GetConnectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS.Paginator.GetConnectors)
+[SMS.Paginator.GetConnectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS.Paginator.GetConnectors)
 
 Arguments for `GetConnectorsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_get_replication_jobs_paginator() -> GetReplicationJobsPaginator:
 ```
 
 Boto3 documentation:
-[SMS.Paginator.GetReplicationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
+[SMS.Paginator.GetReplicationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
 
 Arguments for `GetReplicationJobsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_get_replication_runs_paginator() -> GetReplicationRunsPaginator:
 ```
 
 Boto3 documentation:
-[SMS.Paginator.GetReplicationRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
+[SMS.Paginator.GetReplicationRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
 
 Arguments for `GetReplicationRunsPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_get_servers_paginator() -> GetServersPaginator:
 ```
 
 Boto3 documentation:
-[SMS.Paginator.GetServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS.Paginator.GetServers)
+[SMS.Paginator.GetServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS.Paginator.GetServers)
 
 Arguments for `GetServersPaginator.paginate` method:
 
@@ -130,7 +130,7 @@ def get_list_apps_paginator() -> ListAppsPaginator:
 ```
 
 Boto3 documentation:
-[SMS.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS.Paginator.ListApps)
+[SMS.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS.Paginator.ListApps)
 
 Arguments for `ListAppsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ComprehendMedical](.) > ComprehendMedicalClient
 
 Auto-generated documentation for
-[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical)
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
 [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
@@ -49,7 +49,7 @@ def get_comprehendmedical_client() -> ComprehendMedicalClient:
 ```
 
 Boto3 documentation:
-[ComprehendMedical.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client)
+[ComprehendMedical.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client)
 
 ## Exceptions
 
@@ -82,7 +82,7 @@ Exceptions:
 Type annotations for `boto3.client("comprehendmedical").can_paginate` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.can_paginate)
+[ComprehendMedical.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.can_paginate)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Type annotations for
 `boto3.client("comprehendmedical").describe_entities_detection_v2_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.describe_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
+[ComprehendMedical.Client.describe_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Type annotations for
 `boto3.client("comprehendmedical").describe_icd10_cm_inference_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.describe_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
+[ComprehendMedical.Client.describe_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for
 `boto3.client("comprehendmedical").describe_phi_detection_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.describe_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
+[ComprehendMedical.Client.describe_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Type annotations for
 `boto3.client("comprehendmedical").describe_rx_norm_inference_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.describe_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
+[ComprehendMedical.Client.describe_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("comprehendmedical").detect_entities`
 method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
+[ComprehendMedical.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("comprehendmedical").detect_entities_v2`
 method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.detect_entities_v2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
+[ComprehendMedical.Client.detect_entities_v2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Returns
 Type annotations for `boto3.client("comprehendmedical").detect_phi` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.detect_phi](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
+[ComprehendMedical.Client.detect_phi](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("comprehendmedical").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.generate_presigned_url)
+[ComprehendMedical.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.generate_presigned_url)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Returns `str`.
 Type annotations for `boto3.client("comprehendmedical").infer_icd10_cm` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.infer_icd10_cm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
+[ComprehendMedical.Client.infer_icd10_cm](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns
 Type annotations for `boto3.client("comprehendmedical").infer_rx_norm` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.infer_rx_norm](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
+[ComprehendMedical.Client.infer_rx_norm](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Type annotations for
 `boto3.client("comprehendmedical").list_entities_detection_v2_jobs` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.list_entities_detection_v2_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
+[ComprehendMedical.Client.list_entities_detection_v2_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Type annotations for
 `boto3.client("comprehendmedical").list_icd10_cm_inference_jobs` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.list_icd10_cm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
+[ComprehendMedical.Client.list_icd10_cm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Type annotations for
 `boto3.client("comprehendmedical").list_phi_detection_jobs` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.list_phi_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
+[ComprehendMedical.Client.list_phi_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Type annotations for
 `boto3.client("comprehendmedical").list_rx_norm_inference_jobs` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.list_rx_norm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
+[ComprehendMedical.Client.list_rx_norm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Type annotations for
 `boto3.client("comprehendmedical").start_entities_detection_v2_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.start_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
+[ComprehendMedical.Client.start_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Type annotations for
 `boto3.client("comprehendmedical").start_icd10_cm_inference_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.start_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
+[ComprehendMedical.Client.start_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Type annotations for
 `boto3.client("comprehendmedical").start_phi_detection_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.start_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
+[ComprehendMedical.Client.start_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Type annotations for
 `boto3.client("comprehendmedical").start_rx_norm_inference_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.start_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
+[ComprehendMedical.Client.start_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Type annotations for
 `boto3.client("comprehendmedical").stop_entities_detection_v2_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.stop_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
+[ComprehendMedical.Client.stop_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
 
 Arguments:
 
@@ -431,7 +431,7 @@ Type annotations for
 `boto3.client("comprehendmedical").stop_icd10_cm_inference_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.stop_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
+[ComprehendMedical.Client.stop_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("comprehendmedical").stop_phi_detection_job`
 method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.stop_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
+[ComprehendMedical.Client.stop_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
 
 Arguments:
 
@@ -461,7 +461,7 @@ Type annotations for
 `boto3.client("comprehendmedical").stop_rx_norm_inference_job` method.
 
 Boto3 documentation:
-[ComprehendMedical.Client.stop_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
+[ComprehendMedical.Client.stop_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
 
 Arguments:
 

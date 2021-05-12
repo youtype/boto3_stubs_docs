@@ -3,7 +3,7 @@
 > [Index](..) > [SSM](.) > Waiters
 
 Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM)
+[SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM)
 type annotations stubs module
 [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
@@ -24,7 +24,7 @@ def get_command_executed_waiter() -> CommandExecutedWaiter:
 ```
 
 Boto3 documentation:
-[SSM.Waiter.command_executed](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ssm.html#SSM.Waiter.command_executed)
+[SSM.Waiter.command_executed](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm.html#SSM.Waiter.command_executed)
 
 Arguments for `CommandExecutedWaiter.wait` method:
 

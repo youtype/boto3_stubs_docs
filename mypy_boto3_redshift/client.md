@@ -3,7 +3,7 @@
 > [Index](..) > [Redshift](.) > RedshiftClient
 
 Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift)
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift)
 type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
@@ -134,7 +134,7 @@ def get_redshift_client() -> RedshiftClient:
 ```
 
 Boto3 documentation:
-[Redshift.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client)
+[Redshift.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client)
 
 ## Exceptions
 
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("redshift").accept_reserved_node_exchange`
 method.
 
 Boto3 documentation:
-[Redshift.Client.accept_reserved_node_exchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange)
+[Redshift.Client.accept_reserved_node_exchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Returns
 Type annotations for `boto3.client("redshift").add_partner` method.
 
 Boto3 documentation:
-[Redshift.Client.add_partner](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.add_partner)
+[Redshift.Client.add_partner](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.add_partner)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Type annotations for
 `boto3.client("redshift").authorize_cluster_security_group_ingress` method.
 
 Boto3 documentation:
-[Redshift.Client.authorize_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress)
+[Redshift.Client.authorize_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("redshift").authorize_endpoint_access`
 method.
 
 Boto3 documentation:
-[Redshift.Client.authorize_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access)
+[Redshift.Client.authorize_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("redshift").authorize_snapshot_access`
 method.
 
 Boto3 documentation:
-[Redshift.Client.authorize_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access)
+[Redshift.Client.authorize_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("redshift").batch_delete_cluster_snapshots`
 method.
 
 Boto3 documentation:
-[Redshift.Client.batch_delete_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots)
+[Redshift.Client.batch_delete_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("redshift").batch_modify_cluster_snapshots`
 method.
 
 Boto3 documentation:
-[Redshift.Client.batch_modify_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots)
+[Redshift.Client.batch_modify_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Returns
 Type annotations for `boto3.client("redshift").can_paginate` method.
 
 Boto3 documentation:
-[Redshift.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.can_paginate)
+[Redshift.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.can_paginate)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Returns `bool`.
 Type annotations for `boto3.client("redshift").cancel_resize` method.
 
 Boto3 documentation:
-[Redshift.Client.cancel_resize](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.cancel_resize)
+[Redshift.Client.cancel_resize](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.cancel_resize)
 
 Arguments:
 
@@ -424,7 +424,7 @@ Returns
 Type annotations for `boto3.client("redshift").copy_cluster_snapshot` method.
 
 Boto3 documentation:
-[Redshift.Client.copy_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot)
+[Redshift.Client.copy_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns
 Type annotations for `boto3.client("redshift").create_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_cluster)
+[Redshift.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_cluster)
 
 Arguments:
 
@@ -488,7 +488,7 @@ Type annotations for `boto3.client("redshift").create_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group)
+[Redshift.Client.create_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("redshift").create_cluster_security_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_cluster_security_group)
+[Redshift.Client.create_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_cluster_security_group)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Returns
 Type annotations for `boto3.client("redshift").create_cluster_snapshot` method.
 
 Boto3 documentation:
-[Redshift.Client.create_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot)
+[Redshift.Client.create_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot)
 
 Arguments:
 
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("redshift").create_cluster_subnet_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group)
+[Redshift.Client.create_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group)
 
 Arguments:
 
@@ -557,7 +557,7 @@ Returns
 Type annotations for `boto3.client("redshift").create_endpoint_access` method.
 
 Boto3 documentation:
-[Redshift.Client.create_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_endpoint_access)
+[Redshift.Client.create_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_endpoint_access)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("redshift").create_event_subscription`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_event_subscription)
+[Redshift.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_event_subscription)
 
 Arguments:
 
@@ -597,7 +597,7 @@ Type annotations for `boto3.client("redshift").create_hsm_client_certificate`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate)
+[Redshift.Client.create_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate)
 
 Arguments:
 
@@ -613,7 +613,7 @@ Type annotations for `boto3.client("redshift").create_hsm_configuration`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_hsm_configuration)
+[Redshift.Client.create_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_hsm_configuration)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Returns
 Type annotations for `boto3.client("redshift").create_scheduled_action` method.
 
 Boto3 documentation:
-[Redshift.Client.create_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_scheduled_action)
+[Redshift.Client.create_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_scheduled_action)
 
 Arguments:
 
@@ -656,7 +656,7 @@ Type annotations for `boto3.client("redshift").create_snapshot_copy_grant`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant)
+[Redshift.Client.create_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant)
 
 Arguments:
 
@@ -673,7 +673,7 @@ Type annotations for `boto3.client("redshift").create_snapshot_schedule`
 method.
 
 Boto3 documentation:
-[Redshift.Client.create_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule)
+[Redshift.Client.create_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule)
 
 Arguments:
 
@@ -691,7 +691,7 @@ Returns [SnapshotScheduleTypeDef](./type_defs.md#snapshotscheduletypedef).
 Type annotations for `boto3.client("redshift").create_tags` method.
 
 Boto3 documentation:
-[Redshift.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_tags)
+[Redshift.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_tags)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Arguments:
 Type annotations for `boto3.client("redshift").create_usage_limit` method.
 
 Boto3 documentation:
-[Redshift.Client.create_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.create_usage_limit)
+[Redshift.Client.create_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.create_usage_limit)
 
 Arguments:
 
@@ -726,7 +726,7 @@ Returns [UsageLimitTypeDef](./type_defs.md#usagelimittypedef).
 Type annotations for `boto3.client("redshift").delete_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_cluster)
+[Redshift.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_cluster)
 
 Arguments:
 
@@ -744,7 +744,7 @@ Type annotations for `boto3.client("redshift").delete_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group)
+[Redshift.Client.delete_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group)
 
 Arguments:
 
@@ -756,7 +756,7 @@ Type annotations for `boto3.client("redshift").delete_cluster_security_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group)
+[Redshift.Client.delete_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group)
 
 Arguments:
 
@@ -767,7 +767,7 @@ Arguments:
 Type annotations for `boto3.client("redshift").delete_cluster_snapshot` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot)
+[Redshift.Client.delete_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot)
 
 Arguments:
 
@@ -783,7 +783,7 @@ Type annotations for `boto3.client("redshift").delete_cluster_subnet_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group)
+[Redshift.Client.delete_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group)
 
 Arguments:
 
@@ -794,7 +794,7 @@ Arguments:
 Type annotations for `boto3.client("redshift").delete_endpoint_access` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_endpoint_access)
+[Redshift.Client.delete_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_endpoint_access)
 
 Arguments:
 
@@ -808,7 +808,7 @@ Type annotations for `boto3.client("redshift").delete_event_subscription`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_event_subscription)
+[Redshift.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_event_subscription)
 
 Arguments:
 
@@ -820,7 +820,7 @@ Type annotations for `boto3.client("redshift").delete_hsm_client_certificate`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate)
+[Redshift.Client.delete_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate)
 
 Arguments:
 
@@ -832,7 +832,7 @@ Type annotations for `boto3.client("redshift").delete_hsm_configuration`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration)
+[Redshift.Client.delete_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Arguments:
 Type annotations for `boto3.client("redshift").delete_partner` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_partner](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_partner)
+[Redshift.Client.delete_partner](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_partner)
 
 Arguments:
 
@@ -860,7 +860,7 @@ Returns
 Type annotations for `boto3.client("redshift").delete_scheduled_action` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_scheduled_action)
+[Redshift.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_scheduled_action)
 
 Arguments:
 
@@ -872,7 +872,7 @@ Type annotations for `boto3.client("redshift").delete_snapshot_copy_grant`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant)
+[Redshift.Client.delete_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant)
 
 Arguments:
 
@@ -884,7 +884,7 @@ Type annotations for `boto3.client("redshift").delete_snapshot_schedule`
 method.
 
 Boto3 documentation:
-[Redshift.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule)
+[Redshift.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule)
 
 Arguments:
 
@@ -895,7 +895,7 @@ Arguments:
 Type annotations for `boto3.client("redshift").delete_tags` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_tags)
+[Redshift.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_tags)
 
 Arguments:
 
@@ -907,7 +907,7 @@ Arguments:
 Type annotations for `boto3.client("redshift").delete_usage_limit` method.
 
 Boto3 documentation:
-[Redshift.Client.delete_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.delete_usage_limit)
+[Redshift.Client.delete_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.delete_usage_limit)
 
 Arguments:
 
@@ -919,7 +919,7 @@ Type annotations for `boto3.client("redshift").describe_account_attributes`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_account_attributes)
+[Redshift.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_account_attributes)
 
 Arguments:
 
@@ -934,7 +934,7 @@ Type annotations for `boto3.client("redshift").describe_cluster_db_revisions`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_db_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions)
+[Redshift.Client.describe_cluster_db_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions)
 
 Arguments:
 
@@ -951,7 +951,7 @@ Type annotations for
 `boto3.client("redshift").describe_cluster_parameter_groups` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups)
+[Redshift.Client.describe_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups)
 
 Arguments:
 
@@ -970,7 +970,7 @@ Type annotations for `boto3.client("redshift").describe_cluster_parameters`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters)
+[Redshift.Client.describe_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters)
 
 Arguments:
 
@@ -988,7 +988,7 @@ Type annotations for
 `boto3.client("redshift").describe_cluster_security_groups` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups)
+[Redshift.Client.describe_cluster_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups)
 
 Arguments:
 
@@ -1007,7 +1007,7 @@ Type annotations for `boto3.client("redshift").describe_cluster_snapshots`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots)
+[Redshift.Client.describe_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots)
 
 Arguments:
 
@@ -1033,7 +1033,7 @@ Type annotations for `boto3.client("redshift").describe_cluster_subnet_groups`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups)
+[Redshift.Client.describe_cluster_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups)
 
 Arguments:
 
@@ -1051,7 +1051,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_cluster_tracks` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_tracks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks)
+[Redshift.Client.describe_cluster_tracks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks)
 
 Arguments:
 
@@ -1067,7 +1067,7 @@ Type annotations for `boto3.client("redshift").describe_cluster_versions`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_cluster_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_cluster_versions)
+[Redshift.Client.describe_cluster_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_cluster_versions)
 
 Arguments:
 
@@ -1084,7 +1084,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_clusters` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_clusters)
+[Redshift.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_clusters)
 
 Arguments:
 
@@ -1102,7 +1102,7 @@ Type annotations for
 `boto3.client("redshift").describe_default_cluster_parameters` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters)
+[Redshift.Client.describe_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters)
 
 Arguments:
 
@@ -1119,7 +1119,7 @@ Type annotations for `boto3.client("redshift").describe_endpoint_access`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_endpoint_access)
+[Redshift.Client.describe_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_endpoint_access)
 
 Arguments:
 
@@ -1138,7 +1138,7 @@ Type annotations for `boto3.client("redshift").describe_endpoint_authorization`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_endpoint_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization)
+[Redshift.Client.describe_endpoint_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization)
 
 Arguments:
 
@@ -1157,7 +1157,7 @@ Type annotations for `boto3.client("redshift").describe_event_categories`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_event_categories)
+[Redshift.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_event_categories)
 
 Arguments:
 
@@ -1172,7 +1172,7 @@ Type annotations for `boto3.client("redshift").describe_event_subscriptions`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions)
+[Redshift.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions)
 
 Arguments:
 
@@ -1190,7 +1190,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_events` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_events)
+[Redshift.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_events)
 
 Arguments:
 
@@ -1210,7 +1210,7 @@ Type annotations for
 `boto3.client("redshift").describe_hsm_client_certificates` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_hsm_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates)
+[Redshift.Client.describe_hsm_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates)
 
 Arguments:
 
@@ -1229,7 +1229,7 @@ Type annotations for `boto3.client("redshift").describe_hsm_configurations`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_hsm_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations)
+[Redshift.Client.describe_hsm_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations)
 
 Arguments:
 
@@ -1247,7 +1247,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_logging_status` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_logging_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_logging_status)
+[Redshift.Client.describe_logging_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_logging_status)
 
 Arguments:
 
@@ -1261,7 +1261,7 @@ Type annotations for
 `boto3.client("redshift").describe_node_configuration_options` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_node_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options)
+[Redshift.Client.describe_node_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options)
 
 Arguments:
 
@@ -1283,7 +1283,7 @@ Type annotations for
 `boto3.client("redshift").describe_orderable_cluster_options` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_orderable_cluster_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options)
+[Redshift.Client.describe_orderable_cluster_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options)
 
 Arguments:
 
@@ -1300,7 +1300,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_partners` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_partners](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_partners)
+[Redshift.Client.describe_partners](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_partners)
 
 Arguments:
 
@@ -1318,7 +1318,7 @@ Type annotations for
 `boto3.client("redshift").describe_reserved_node_offerings` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_reserved_node_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings)
+[Redshift.Client.describe_reserved_node_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings)
 
 Arguments:
 
@@ -1334,7 +1334,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_reserved_nodes` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_reserved_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes)
+[Redshift.Client.describe_reserved_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes)
 
 Arguments:
 
@@ -1350,7 +1350,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_resize` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_resize](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_resize)
+[Redshift.Client.describe_resize](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_resize)
 
 Arguments:
 
@@ -1365,7 +1365,7 @@ Type annotations for `boto3.client("redshift").describe_scheduled_actions`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions)
+[Redshift.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions)
 
 Arguments:
 
@@ -1389,7 +1389,7 @@ Type annotations for `boto3.client("redshift").describe_snapshot_copy_grants`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_snapshot_copy_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants)
+[Redshift.Client.describe_snapshot_copy_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants)
 
 Arguments:
 
@@ -1408,7 +1408,7 @@ Type annotations for `boto3.client("redshift").describe_snapshot_schedules`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_snapshot_schedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules)
+[Redshift.Client.describe_snapshot_schedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules)
 
 Arguments:
 
@@ -1427,7 +1427,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_storage` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_storage)
+[Redshift.Client.describe_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_storage)
 
 Returns
 [CustomerStorageMessageTypeDef](./type_defs.md#customerstoragemessagetypedef).
@@ -1438,7 +1438,7 @@ Type annotations for `boto3.client("redshift").describe_table_restore_status`
 method.
 
 Boto3 documentation:
-[Redshift.Client.describe_table_restore_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_table_restore_status)
+[Redshift.Client.describe_table_restore_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_table_restore_status)
 
 Arguments:
 
@@ -1455,7 +1455,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_tags` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_tags)
+[Redshift.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_tags)
 
 Arguments:
 
@@ -1474,7 +1474,7 @@ Returns
 Type annotations for `boto3.client("redshift").describe_usage_limits` method.
 
 Boto3 documentation:
-[Redshift.Client.describe_usage_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.describe_usage_limits)
+[Redshift.Client.describe_usage_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.describe_usage_limits)
 
 Arguments:
 
@@ -1494,7 +1494,7 @@ Returns [UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef).
 Type annotations for `boto3.client("redshift").disable_logging` method.
 
 Boto3 documentation:
-[Redshift.Client.disable_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.disable_logging)
+[Redshift.Client.disable_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.disable_logging)
 
 Arguments:
 
@@ -1507,7 +1507,7 @@ Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 Type annotations for `boto3.client("redshift").disable_snapshot_copy` method.
 
 Boto3 documentation:
-[Redshift.Client.disable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy)
+[Redshift.Client.disable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy)
 
 Arguments:
 
@@ -1521,7 +1521,7 @@ Returns
 Type annotations for `boto3.client("redshift").enable_logging` method.
 
 Boto3 documentation:
-[Redshift.Client.enable_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.enable_logging)
+[Redshift.Client.enable_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.enable_logging)
 
 Arguments:
 
@@ -1536,7 +1536,7 @@ Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 Type annotations for `boto3.client("redshift").enable_snapshot_copy` method.
 
 Boto3 documentation:
-[Redshift.Client.enable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy)
+[Redshift.Client.enable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy)
 
 Arguments:
 
@@ -1554,7 +1554,7 @@ Returns
 Type annotations for `boto3.client("redshift").generate_presigned_url` method.
 
 Boto3 documentation:
-[Redshift.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.generate_presigned_url)
+[Redshift.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1570,7 +1570,7 @@ Returns `str`.
 Type annotations for `boto3.client("redshift").get_cluster_credentials` method.
 
 Boto3 documentation:
-[Redshift.Client.get_cluster_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.get_cluster_credentials)
+[Redshift.Client.get_cluster_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.get_cluster_credentials)
 
 Arguments:
 
@@ -1589,7 +1589,7 @@ Type annotations for
 `boto3.client("redshift").get_reserved_node_exchange_offerings` method.
 
 Boto3 documentation:
-[Redshift.Client.get_reserved_node_exchange_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings)
+[Redshift.Client.get_reserved_node_exchange_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings)
 
 Arguments:
 
@@ -1606,7 +1606,7 @@ Type annotations for `boto3.client("redshift").modify_aqua_configuration`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_aqua_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)
+[Redshift.Client.modify_aqua_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)
 
 Arguments:
 
@@ -1622,7 +1622,7 @@ Returns
 Type annotations for `boto3.client("redshift").modify_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster)
+[Redshift.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster)
 
 Arguments:
 
@@ -1661,7 +1661,7 @@ Type annotations for `boto3.client("redshift").modify_cluster_db_revision`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_db_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision)
+[Redshift.Client.modify_cluster_db_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision)
 
 Arguments:
 
@@ -1677,7 +1677,7 @@ Type annotations for `boto3.client("redshift").modify_cluster_iam_roles`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_iam_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles)
+[Redshift.Client.modify_cluster_iam_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles)
 
 Arguments:
 
@@ -1694,7 +1694,7 @@ Type annotations for `boto3.client("redshift").modify_cluster_maintenance`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_maintenance](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance)
+[Redshift.Client.modify_cluster_maintenance](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance)
 
 Arguments:
 
@@ -1714,7 +1714,7 @@ Type annotations for `boto3.client("redshift").modify_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group)
+[Redshift.Client.modify_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group)
 
 Arguments:
 
@@ -1730,7 +1730,7 @@ Returns
 Type annotations for `boto3.client("redshift").modify_cluster_snapshot` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot)
+[Redshift.Client.modify_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot)
 
 Arguments:
 
@@ -1747,7 +1747,7 @@ Type annotations for
 `boto3.client("redshift").modify_cluster_snapshot_schedule` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule)
+[Redshift.Client.modify_cluster_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule)
 
 Arguments:
 
@@ -1761,7 +1761,7 @@ Type annotations for `boto3.client("redshift").modify_cluster_subnet_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group)
+[Redshift.Client.modify_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group)
 
 Arguments:
 
@@ -1777,7 +1777,7 @@ Returns
 Type annotations for `boto3.client("redshift").modify_endpoint_access` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_endpoint_access)
+[Redshift.Client.modify_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_endpoint_access)
 
 Arguments:
 
@@ -1792,7 +1792,7 @@ Type annotations for `boto3.client("redshift").modify_event_subscription`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_event_subscription)
+[Redshift.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_event_subscription)
 
 Arguments:
 
@@ -1812,7 +1812,7 @@ Returns
 Type annotations for `boto3.client("redshift").modify_scheduled_action` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_scheduled_action)
+[Redshift.Client.modify_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_scheduled_action)
 
 Arguments:
 
@@ -1834,7 +1834,7 @@ Type annotations for
 `boto3.client("redshift").modify_snapshot_copy_retention_period` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_snapshot_copy_retention_period](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period)
+[Redshift.Client.modify_snapshot_copy_retention_period](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period)
 
 Arguments:
 
@@ -1851,7 +1851,7 @@ Type annotations for `boto3.client("redshift").modify_snapshot_schedule`
 method.
 
 Boto3 documentation:
-[Redshift.Client.modify_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule)
+[Redshift.Client.modify_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule)
 
 Arguments:
 
@@ -1865,7 +1865,7 @@ Returns [SnapshotScheduleTypeDef](./type_defs.md#snapshotscheduletypedef).
 Type annotations for `boto3.client("redshift").modify_usage_limit` method.
 
 Boto3 documentation:
-[Redshift.Client.modify_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.modify_usage_limit)
+[Redshift.Client.modify_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.modify_usage_limit)
 
 Arguments:
 
@@ -1881,7 +1881,7 @@ Returns [UsageLimitTypeDef](./type_defs.md#usagelimittypedef).
 Type annotations for `boto3.client("redshift").pause_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.pause_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.pause_cluster)
+[Redshift.Client.pause_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.pause_cluster)
 
 Arguments:
 
@@ -1895,7 +1895,7 @@ Type annotations for `boto3.client("redshift").purchase_reserved_node_offering`
 method.
 
 Boto3 documentation:
-[Redshift.Client.purchase_reserved_node_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering)
+[Redshift.Client.purchase_reserved_node_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering)
 
 Arguments:
 
@@ -1910,7 +1910,7 @@ Returns
 Type annotations for `boto3.client("redshift").reboot_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.reboot_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.reboot_cluster)
+[Redshift.Client.reboot_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.reboot_cluster)
 
 Arguments:
 
@@ -1925,7 +1925,7 @@ Type annotations for `boto3.client("redshift").reset_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[Redshift.Client.reset_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group)
+[Redshift.Client.reset_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group)
 
 Arguments:
 
@@ -1941,7 +1941,7 @@ Returns
 Type annotations for `boto3.client("redshift").resize_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.resize_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.resize_cluster)
+[Redshift.Client.resize_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.resize_cluster)
 
 Arguments:
 
@@ -1960,7 +1960,7 @@ Type annotations for `boto3.client("redshift").restore_from_cluster_snapshot`
 method.
 
 Boto3 documentation:
-[Redshift.Client.restore_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot)
+[Redshift.Client.restore_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot)
 
 Arguments:
 
@@ -2003,7 +2003,7 @@ Type annotations for
 `boto3.client("redshift").restore_table_from_cluster_snapshot` method.
 
 Boto3 documentation:
-[Redshift.Client.restore_table_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot)
+[Redshift.Client.restore_table_from_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot)
 
 Arguments:
 
@@ -2025,7 +2025,7 @@ Returns
 Type annotations for `boto3.client("redshift").resume_cluster` method.
 
 Boto3 documentation:
-[Redshift.Client.resume_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.resume_cluster)
+[Redshift.Client.resume_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.resume_cluster)
 
 Arguments:
 
@@ -2040,7 +2040,7 @@ Type annotations for
 `boto3.client("redshift").revoke_cluster_security_group_ingress` method.
 
 Boto3 documentation:
-[Redshift.Client.revoke_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress)
+[Redshift.Client.revoke_cluster_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress)
 
 Arguments:
 
@@ -2057,7 +2057,7 @@ Returns
 Type annotations for `boto3.client("redshift").revoke_endpoint_access` method.
 
 Boto3 documentation:
-[Redshift.Client.revoke_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access)
+[Redshift.Client.revoke_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access)
 
 Arguments:
 
@@ -2074,7 +2074,7 @@ Returns
 Type annotations for `boto3.client("redshift").revoke_snapshot_access` method.
 
 Boto3 documentation:
-[Redshift.Client.revoke_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access)
+[Redshift.Client.revoke_snapshot_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access)
 
 Arguments:
 
@@ -2090,7 +2090,7 @@ Returns
 Type annotations for `boto3.client("redshift").rotate_encryption_key` method.
 
 Boto3 documentation:
-[Redshift.Client.rotate_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.rotate_encryption_key)
+[Redshift.Client.rotate_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.rotate_encryption_key)
 
 Arguments:
 
@@ -2104,7 +2104,7 @@ Returns
 Type annotations for `boto3.client("redshift").update_partner_status` method.
 
 Boto3 documentation:
-[Redshift.Client.update_partner_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/redshift.html#Redshift.Client.update_partner_status)
+[Redshift.Client.update_partner_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift.html#Redshift.Client.update_partner_status)
 
 Arguments:
 

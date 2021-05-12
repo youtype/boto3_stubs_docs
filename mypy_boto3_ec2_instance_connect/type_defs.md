@@ -3,7 +3,7 @@
 > [Index](..) > [EC2InstanceConnect](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
+[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
 [mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 

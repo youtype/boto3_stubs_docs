@@ -3,7 +3,7 @@
 > [Index](..) > [Braket](.) > Paginators
 
 Auto-generated documentation for
-[Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/braket.html#Braket)
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/braket.html#Braket)
 type annotations stubs module
 [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
@@ -25,7 +25,7 @@ def get_search_devices_paginator() -> SearchDevicesPaginator:
 ```
 
 Boto3 documentation:
-[Braket.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/braket.html#Braket.Paginator.SearchDevices)
+[Braket.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/braket.html#Braket.Paginator.SearchDevices)
 
 Arguments for `SearchDevicesPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_search_quantum_tasks_paginator() -> SearchQuantumTasksPaginator:
 ```
 
 Boto3 documentation:
-[Braket.Paginator.SearchQuantumTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
+[Braket.Paginator.SearchQuantumTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
 
 Arguments for `SearchQuantumTasksPaginator.paginate` method:
 

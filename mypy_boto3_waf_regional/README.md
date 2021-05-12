@@ -3,7 +3,7 @@
 > [Index](..) > WAFRegional
 
 Auto-generated documentation for
-[WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf-regional.html#WAFRegional)
+[WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module
 [mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 

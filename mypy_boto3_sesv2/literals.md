@@ -3,7 +3,7 @@
 > [Index](..) > [SESV2](.) > Literals
 
 Auto-generated documentation for
-[SESV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sesv2.html#SESV2)
+[SESV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sesv2.html#SESV2)
 type annotations stubs module
 [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 

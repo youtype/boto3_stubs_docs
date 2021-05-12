@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > CloudWatchLogsClient
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -71,7 +71,7 @@ def get_logs_client() -> CloudWatchLogsClient:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client)
+[CloudWatchLogs.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client)
 
 ## Exceptions
 
@@ -107,7 +107,7 @@ Exceptions:
 Type annotations for `boto3.client("logs").associate_kms_key` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.associate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
+[CloudWatchLogs.Client.associate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Arguments:
 Type annotations for `boto3.client("logs").can_paginate` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.can_paginate)
+[CloudWatchLogs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.can_paginate)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns `bool`.
 Type annotations for `boto3.client("logs").cancel_export_task` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
+[CloudWatchLogs.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Arguments:
 Type annotations for `boto3.client("logs").create_export_task` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.create_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
+[CloudWatchLogs.Client.create_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns
 Type annotations for `boto3.client("logs").create_log_group` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.create_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
+[CloudWatchLogs.Client.create_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Arguments:
 Type annotations for `boto3.client("logs").create_log_stream` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.create_log_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
+[CloudWatchLogs.Client.create_log_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_destination` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
+[CloudWatchLogs.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_log_group` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
+[CloudWatchLogs.Client.delete_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_log_stream` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_log_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
+[CloudWatchLogs.Client.delete_log_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
 
 Arguments:
 
@@ -222,7 +222,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_metric_filter` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
+[CloudWatchLogs.Client.delete_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_query_definition` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_query_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
+[CloudWatchLogs.Client.delete_query_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("logs").delete_resource_policy` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
+[CloudWatchLogs.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_retention_policy` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
+[CloudWatchLogs.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Arguments:
 Type annotations for `boto3.client("logs").delete_subscription_filter` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.delete_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
+[CloudWatchLogs.Client.delete_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Arguments:
 Type annotations for `boto3.client("logs").describe_destinations` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
+[CloudWatchLogs.Client.describe_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_export_tasks` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
+[CloudWatchLogs.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_log_groups` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_log_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
+[CloudWatchLogs.Client.describe_log_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_log_streams` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_log_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
+[CloudWatchLogs.Client.describe_log_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_metric_filters` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_metric_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
+[CloudWatchLogs.Client.describe_metric_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_queries` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_queries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
+[CloudWatchLogs.Client.describe_queries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
 
 Arguments:
 
@@ -387,7 +387,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_query_definitions` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_query_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
+[CloudWatchLogs.Client.describe_query_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Returns
 Type annotations for `boto3.client("logs").describe_resource_policies` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
+[CloudWatchLogs.Client.describe_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("logs").describe_subscription_filters`
 method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.describe_subscription_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
+[CloudWatchLogs.Client.describe_subscription_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
 
 Arguments:
 
@@ -436,7 +436,7 @@ Returns
 Type annotations for `boto3.client("logs").disassociate_kms_key` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.disassociate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
+[CloudWatchLogs.Client.disassociate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Arguments:
 Type annotations for `boto3.client("logs").filter_log_events` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.filter_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
+[CloudWatchLogs.Client.filter_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Returns
 Type annotations for `boto3.client("logs").generate_presigned_url` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url)
+[CloudWatchLogs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns `str`.
 Type annotations for `boto3.client("logs").get_log_events` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.get_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
+[CloudWatchLogs.Client.get_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
 
 Arguments:
 
@@ -505,7 +505,7 @@ Returns
 Type annotations for `boto3.client("logs").get_log_group_fields` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.get_log_group_fields](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
+[CloudWatchLogs.Client.get_log_group_fields](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
 
 Arguments:
 
@@ -520,7 +520,7 @@ Returns
 Type annotations for `boto3.client("logs").get_log_record` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.get_log_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
+[CloudWatchLogs.Client.get_log_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Returns
 Type annotations for `boto3.client("logs").get_query_results` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
+[CloudWatchLogs.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
 
 Arguments:
 
@@ -548,7 +548,7 @@ Returns
 Type annotations for `boto3.client("logs").list_tags_log_group` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.list_tags_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
+[CloudWatchLogs.Client.list_tags_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Returns
 Type annotations for `boto3.client("logs").put_destination` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
+[CloudWatchLogs.Client.put_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
 
 Arguments:
 
@@ -578,7 +578,7 @@ Returns
 Type annotations for `boto3.client("logs").put_destination_policy` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_destination_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
+[CloudWatchLogs.Client.put_destination_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
 
 Arguments:
 
@@ -590,7 +590,7 @@ Arguments:
 Type annotations for `boto3.client("logs").put_log_events` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
+[CloudWatchLogs.Client.put_log_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
 
 Arguments:
 
@@ -609,7 +609,7 @@ Returns
 Type annotations for `boto3.client("logs").put_metric_filter` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
+[CloudWatchLogs.Client.put_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
 
 Arguments:
 
@@ -625,7 +625,7 @@ Arguments:
 Type annotations for `boto3.client("logs").put_query_definition` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_query_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
+[CloudWatchLogs.Client.put_query_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
 
 Arguments:
 
@@ -642,7 +642,7 @@ Returns
 Type annotations for `boto3.client("logs").put_resource_policy` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
+[CloudWatchLogs.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Returns
 Type annotations for `boto3.client("logs").put_retention_policy` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
+[CloudWatchLogs.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
 
 Arguments:
 
@@ -669,7 +669,7 @@ Arguments:
 Type annotations for `boto3.client("logs").put_subscription_filter` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.put_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
+[CloudWatchLogs.Client.put_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
 
 Arguments:
 
@@ -685,7 +685,7 @@ Arguments:
 Type annotations for `boto3.client("logs").start_query` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.start_query)
+[CloudWatchLogs.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.start_query)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
 Type annotations for `boto3.client("logs").stop_query` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.stop_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
+[CloudWatchLogs.Client.stop_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
 
 Arguments:
 
@@ -716,7 +716,7 @@ Returns [StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef).
 Type annotations for `boto3.client("logs").tag_log_group` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.tag_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
+[CloudWatchLogs.Client.tag_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
 
 Arguments:
 
@@ -728,7 +728,7 @@ Arguments:
 Type annotations for `boto3.client("logs").test_metric_filter` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.test_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
+[CloudWatchLogs.Client.test_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
 
 Arguments:
 
@@ -743,7 +743,7 @@ Returns
 Type annotations for `boto3.client("logs").untag_log_group` method.
 
 Boto3 documentation:
-[CloudWatchLogs.Client.untag_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
+[CloudWatchLogs.Client.untag_log_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
 
 Arguments:
 

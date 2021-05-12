@@ -3,7 +3,7 @@
 > [Index](..) > [WAF](.) > WAFClient
 
 Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF)
+[WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF)
 type annotations stubs module
 [mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
 
@@ -106,7 +106,7 @@ def get_waf_client() -> WAFClient:
 ```
 
 Boto3 documentation:
-[WAF.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client)
+[WAF.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client)
 
 ## Exceptions
 
@@ -150,7 +150,7 @@ Exceptions:
 Type annotations for `boto3.client("waf").can_paginate` method.
 
 Boto3 documentation:
-[WAF.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.can_paginate)
+[WAF.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.can_paginate)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns `bool`.
 Type annotations for `boto3.client("waf").create_byte_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_byte_match_set)
+[WAF.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_byte_match_set)
 
 Arguments:
 
@@ -178,7 +178,7 @@ Returns
 Type annotations for `boto3.client("waf").create_geo_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_geo_match_set)
+[WAF.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_geo_match_set)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns
 Type annotations for `boto3.client("waf").create_ip_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_ip_set)
+[WAF.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_ip_set)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Returns
 Type annotations for `boto3.client("waf").create_rate_based_rule` method.
 
 Boto3 documentation:
-[WAF.Client.create_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_rate_based_rule)
+[WAF.Client.create_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_rate_based_rule)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Returns
 Type annotations for `boto3.client("waf").create_regex_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_regex_match_set)
+[WAF.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_regex_match_set)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns
 Type annotations for `boto3.client("waf").create_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_regex_pattern_set)
+[WAF.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_regex_pattern_set)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns
 Type annotations for `boto3.client("waf").create_rule` method.
 
 Boto3 documentation:
-[WAF.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_rule)
+[WAF.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_rule)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
 Type annotations for `boto3.client("waf").create_rule_group` method.
 
 Boto3 documentation:
-[WAF.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_rule_group)
+[WAF.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_rule_group)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Returns
 Type annotations for `boto3.client("waf").create_size_constraint_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_size_constraint_set)
+[WAF.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_size_constraint_set)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("waf").create_sql_injection_match_set`
 method.
 
 Boto3 documentation:
-[WAF.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_sql_injection_match_set)
+[WAF.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_sql_injection_match_set)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns
 Type annotations for `boto3.client("waf").create_web_acl` method.
 
 Boto3 documentation:
-[WAF.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_web_acl)
+[WAF.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_web_acl)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Type annotations for `boto3.client("waf").create_web_acl_migration_stack`
 method.
 
 Boto3 documentation:
-[WAF.Client.create_web_acl_migration_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_web_acl_migration_stack)
+[WAF.Client.create_web_acl_migration_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_web_acl_migration_stack)
 
 Arguments:
 
@@ -358,7 +358,7 @@ Returns
 Type annotations for `boto3.client("waf").create_xss_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.create_xss_match_set)
+[WAF.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.create_xss_match_set)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_byte_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_byte_match_set)
+[WAF.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_byte_match_set)
 
 Arguments:
 
@@ -388,7 +388,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_geo_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_geo_match_set)
+[WAF.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_geo_match_set)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_ip_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_ip_set)
+[WAF.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_ip_set)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_logging_configuration` method.
 
 Boto3 documentation:
-[WAF.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_logging_configuration)
+[WAF.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_logging_configuration)
 
 Arguments:
 
@@ -431,7 +431,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("waf").delete_permission_policy` method.
 
 Boto3 documentation:
-[WAF.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_permission_policy)
+[WAF.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_permission_policy)
 
 Arguments:
 
@@ -444,7 +444,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("waf").delete_rate_based_rule` method.
 
 Boto3 documentation:
-[WAF.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_rate_based_rule)
+[WAF.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_rate_based_rule)
 
 Arguments:
 
@@ -459,7 +459,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_regex_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_regex_match_set)
+[WAF.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_regex_match_set)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_regex_pattern_set)
+[WAF.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_regex_pattern_set)
 
 Arguments:
 
@@ -489,7 +489,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_rule` method.
 
 Boto3 documentation:
-[WAF.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_rule)
+[WAF.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_rule)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Returns [DeleteRuleResponseTypeDef](./type_defs.md#deleteruleresponsetypedef).
 Type annotations for `boto3.client("waf").delete_rule_group` method.
 
 Boto3 documentation:
-[WAF.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_rule_group)
+[WAF.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_rule_group)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_size_constraint_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_size_constraint_set)
+[WAF.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_size_constraint_set)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("waf").delete_sql_injection_match_set`
 method.
 
 Boto3 documentation:
-[WAF.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_sql_injection_match_set)
+[WAF.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_sql_injection_match_set)
 
 Arguments:
 
@@ -549,7 +549,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_web_acl` method.
 
 Boto3 documentation:
-[WAF.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_web_acl)
+[WAF.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_web_acl)
 
 Arguments:
 
@@ -564,7 +564,7 @@ Returns
 Type annotations for `boto3.client("waf").delete_xss_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.delete_xss_match_set)
+[WAF.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.delete_xss_match_set)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Returns
 Type annotations for `boto3.client("waf").generate_presigned_url` method.
 
 Boto3 documentation:
-[WAF.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.generate_presigned_url)
+[WAF.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.generate_presigned_url)
 
 Arguments:
 
@@ -595,7 +595,7 @@ Returns `str`.
 Type annotations for `boto3.client("waf").get_byte_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_byte_match_set)
+[WAF.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_byte_match_set)
 
 Arguments:
 
@@ -609,7 +609,7 @@ Returns
 Type annotations for `boto3.client("waf").get_change_token` method.
 
 Boto3 documentation:
-[WAF.Client.get_change_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_change_token)
+[WAF.Client.get_change_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_change_token)
 
 Returns
 [GetChangeTokenResponseTypeDef](./type_defs.md#getchangetokenresponsetypedef).
@@ -619,7 +619,7 @@ Returns
 Type annotations for `boto3.client("waf").get_change_token_status` method.
 
 Boto3 documentation:
-[WAF.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_change_token_status)
+[WAF.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_change_token_status)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Returns
 Type annotations for `boto3.client("waf").get_geo_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_geo_match_set)
+[WAF.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_geo_match_set)
 
 Arguments:
 
@@ -647,7 +647,7 @@ Returns
 Type annotations for `boto3.client("waf").get_ip_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_ip_set)
+[WAF.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_ip_set)
 
 Arguments:
 
@@ -660,7 +660,7 @@ Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 Type annotations for `boto3.client("waf").get_logging_configuration` method.
 
 Boto3 documentation:
-[WAF.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_logging_configuration)
+[WAF.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_logging_configuration)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Returns
 Type annotations for `boto3.client("waf").get_permission_policy` method.
 
 Boto3 documentation:
-[WAF.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_permission_policy)
+[WAF.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_permission_policy)
 
 Arguments:
 
@@ -688,7 +688,7 @@ Returns
 Type annotations for `boto3.client("waf").get_rate_based_rule` method.
 
 Boto3 documentation:
-[WAF.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_rate_based_rule)
+[WAF.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_rate_based_rule)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Type annotations for `boto3.client("waf").get_rate_based_rule_managed_keys`
 method.
 
 Boto3 documentation:
-[WAF.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_rate_based_rule_managed_keys)
+[WAF.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_rate_based_rule_managed_keys)
 
 Arguments:
 
@@ -718,7 +718,7 @@ Returns
 Type annotations for `boto3.client("waf").get_regex_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_regex_match_set)
+[WAF.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_regex_match_set)
 
 Arguments:
 
@@ -732,7 +732,7 @@ Returns
 Type annotations for `boto3.client("waf").get_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_regex_pattern_set)
+[WAF.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_regex_pattern_set)
 
 Arguments:
 
@@ -746,7 +746,7 @@ Returns
 Type annotations for `boto3.client("waf").get_rule` method.
 
 Boto3 documentation:
-[WAF.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_rule)
+[WAF.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_rule)
 
 Arguments:
 
@@ -759,7 +759,7 @@ Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
 Type annotations for `boto3.client("waf").get_rule_group` method.
 
 Boto3 documentation:
-[WAF.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_rule_group)
+[WAF.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_rule_group)
 
 Arguments:
 
@@ -773,7 +773,7 @@ Returns
 Type annotations for `boto3.client("waf").get_sampled_requests` method.
 
 Boto3 documentation:
-[WAF.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_sampled_requests)
+[WAF.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_sampled_requests)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Returns
 Type annotations for `boto3.client("waf").get_size_constraint_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_size_constraint_set)
+[WAF.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_size_constraint_set)
 
 Arguments:
 
@@ -805,7 +805,7 @@ Returns
 Type annotations for `boto3.client("waf").get_sql_injection_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_sql_injection_match_set)
+[WAF.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_sql_injection_match_set)
 
 Arguments:
 
@@ -819,7 +819,7 @@ Returns
 Type annotations for `boto3.client("waf").get_web_acl` method.
 
 Boto3 documentation:
-[WAF.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_web_acl)
+[WAF.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_web_acl)
 
 Arguments:
 
@@ -832,7 +832,7 @@ Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
 Type annotations for `boto3.client("waf").get_xss_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.get_xss_match_set)
+[WAF.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.get_xss_match_set)
 
 Arguments:
 
@@ -847,7 +847,7 @@ Type annotations for `boto3.client("waf").list_activated_rules_in_rule_group`
 method.
 
 Boto3 documentation:
-[WAF.Client.list_activated_rules_in_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_activated_rules_in_rule_group)
+[WAF.Client.list_activated_rules_in_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_activated_rules_in_rule_group)
 
 Arguments:
 
@@ -863,7 +863,7 @@ Returns
 Type annotations for `boto3.client("waf").list_byte_match_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_byte_match_sets)
+[WAF.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_byte_match_sets)
 
 Arguments:
 
@@ -878,7 +878,7 @@ Returns
 Type annotations for `boto3.client("waf").list_geo_match_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_geo_match_sets)
+[WAF.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_geo_match_sets)
 
 Arguments:
 
@@ -893,7 +893,7 @@ Returns
 Type annotations for `boto3.client("waf").list_ip_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_ip_sets)
+[WAF.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_ip_sets)
 
 Arguments:
 
@@ -907,7 +907,7 @@ Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
 Type annotations for `boto3.client("waf").list_logging_configurations` method.
 
 Boto3 documentation:
-[WAF.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_logging_configurations)
+[WAF.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_logging_configurations)
 
 Arguments:
 
@@ -922,7 +922,7 @@ Returns
 Type annotations for `boto3.client("waf").list_rate_based_rules` method.
 
 Boto3 documentation:
-[WAF.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_rate_based_rules)
+[WAF.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_rate_based_rules)
 
 Arguments:
 
@@ -937,7 +937,7 @@ Returns
 Type annotations for `boto3.client("waf").list_regex_match_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_regex_match_sets)
+[WAF.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_regex_match_sets)
 
 Arguments:
 
@@ -952,7 +952,7 @@ Returns
 Type annotations for `boto3.client("waf").list_regex_pattern_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_regex_pattern_sets)
+[WAF.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_regex_pattern_sets)
 
 Arguments:
 
@@ -967,7 +967,7 @@ Returns
 Type annotations for `boto3.client("waf").list_rule_groups` method.
 
 Boto3 documentation:
-[WAF.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_rule_groups)
+[WAF.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_rule_groups)
 
 Arguments:
 
@@ -982,7 +982,7 @@ Returns
 Type annotations for `boto3.client("waf").list_rules` method.
 
 Boto3 documentation:
-[WAF.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_rules)
+[WAF.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_rules)
 
 Arguments:
 
@@ -996,7 +996,7 @@ Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 Type annotations for `boto3.client("waf").list_size_constraint_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_size_constraint_sets)
+[WAF.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_size_constraint_sets)
 
 Arguments:
 
@@ -1012,7 +1012,7 @@ Type annotations for `boto3.client("waf").list_sql_injection_match_sets`
 method.
 
 Boto3 documentation:
-[WAF.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_sql_injection_match_sets)
+[WAF.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_sql_injection_match_sets)
 
 Arguments:
 
@@ -1027,7 +1027,7 @@ Returns
 Type annotations for `boto3.client("waf").list_subscribed_rule_groups` method.
 
 Boto3 documentation:
-[WAF.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_subscribed_rule_groups)
+[WAF.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_subscribed_rule_groups)
 
 Arguments:
 
@@ -1042,7 +1042,7 @@ Returns
 Type annotations for `boto3.client("waf").list_tags_for_resource` method.
 
 Boto3 documentation:
-[WAF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_tags_for_resource)
+[WAF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1058,7 +1058,7 @@ Returns
 Type annotations for `boto3.client("waf").list_web_acls` method.
 
 Boto3 documentation:
-[WAF.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_web_acls)
+[WAF.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_web_acls)
 
 Arguments:
 
@@ -1073,7 +1073,7 @@ Returns
 Type annotations for `boto3.client("waf").list_xss_match_sets` method.
 
 Boto3 documentation:
-[WAF.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.list_xss_match_sets)
+[WAF.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.list_xss_match_sets)
 
 Arguments:
 
@@ -1088,7 +1088,7 @@ Returns
 Type annotations for `boto3.client("waf").put_logging_configuration` method.
 
 Boto3 documentation:
-[WAF.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.put_logging_configuration)
+[WAF.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.put_logging_configuration)
 
 Arguments:
 
@@ -1104,7 +1104,7 @@ Returns
 Type annotations for `boto3.client("waf").put_permission_policy` method.
 
 Boto3 documentation:
-[WAF.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.put_permission_policy)
+[WAF.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.put_permission_policy)
 
 Arguments:
 
@@ -1118,7 +1118,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("waf").tag_resource` method.
 
 Boto3 documentation:
-[WAF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.tag_resource)
+[WAF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.tag_resource)
 
 Arguments:
 
@@ -1132,7 +1132,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("waf").untag_resource` method.
 
 Boto3 documentation:
-[WAF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.untag_resource)
+[WAF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.untag_resource)
 
 Arguments:
 
@@ -1146,7 +1146,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("waf").update_byte_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_byte_match_set)
+[WAF.Client.update_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_byte_match_set)
 
 Arguments:
 
@@ -1164,7 +1164,7 @@ Returns
 Type annotations for `boto3.client("waf").update_geo_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_geo_match_set)
+[WAF.Client.update_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_geo_match_set)
 
 Arguments:
 
@@ -1182,7 +1182,7 @@ Returns
 Type annotations for `boto3.client("waf").update_ip_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_ip_set)
+[WAF.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_ip_set)
 
 Arguments:
 
@@ -1199,7 +1199,7 @@ Returns
 Type annotations for `boto3.client("waf").update_rate_based_rule` method.
 
 Boto3 documentation:
-[WAF.Client.update_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_rate_based_rule)
+[WAF.Client.update_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_rate_based_rule)
 
 Arguments:
 
@@ -1217,7 +1217,7 @@ Returns
 Type annotations for `boto3.client("waf").update_regex_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_regex_match_set)
+[WAF.Client.update_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_regex_match_set)
 
 Arguments:
 
@@ -1235,7 +1235,7 @@ Returns
 Type annotations for `boto3.client("waf").update_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_regex_pattern_set)
+[WAF.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_regex_pattern_set)
 
 Arguments:
 
@@ -1253,7 +1253,7 @@ Returns
 Type annotations for `boto3.client("waf").update_rule` method.
 
 Boto3 documentation:
-[WAF.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_rule)
+[WAF.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_rule)
 
 Arguments:
 
@@ -1269,7 +1269,7 @@ Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
 Type annotations for `boto3.client("waf").update_rule_group` method.
 
 Boto3 documentation:
-[WAF.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_rule_group)
+[WAF.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_rule_group)
 
 Arguments:
 
@@ -1287,7 +1287,7 @@ Returns
 Type annotations for `boto3.client("waf").update_size_constraint_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_size_constraint_set)
+[WAF.Client.update_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_size_constraint_set)
 
 Arguments:
 
@@ -1306,7 +1306,7 @@ Type annotations for `boto3.client("waf").update_sql_injection_match_set`
 method.
 
 Boto3 documentation:
-[WAF.Client.update_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_sql_injection_match_set)
+[WAF.Client.update_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_sql_injection_match_set)
 
 Arguments:
 
@@ -1324,7 +1324,7 @@ Returns
 Type annotations for `boto3.client("waf").update_web_acl` method.
 
 Boto3 documentation:
-[WAF.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_web_acl)
+[WAF.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_web_acl)
 
 Arguments:
 
@@ -1342,7 +1342,7 @@ Returns
 Type annotations for `boto3.client("waf").update_xss_match_set` method.
 
 Boto3 documentation:
-[WAF.Client.update_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/waf.html#WAF.Client.update_xss_match_set)
+[WAF.Client.update_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/waf.html#WAF.Client.update_xss_match_set)
 
 Arguments:
 

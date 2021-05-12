@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticInference](.) > ElasticInferenceClient
 
 Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference)
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
 [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
@@ -35,7 +35,7 @@ def get_elastic-inference_client() -> ElasticInferenceClient:
 ```
 
 Boto3 documentation:
-[ElasticInference.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client)
+[ElasticInference.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client)
 
 ## Exceptions
 
@@ -63,7 +63,7 @@ Exceptions:
 Type annotations for `boto3.client("elastic-inference").can_paginate` method.
 
 Boto3 documentation:
-[ElasticInference.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.can_paginate)
+[ElasticInference.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.can_paginate)
 
 Arguments:
 
@@ -77,7 +77,7 @@ Type annotations for
 `boto3.client("elastic-inference").describe_accelerator_offerings` method.
 
 Boto3 documentation:
-[ElasticInference.Client.describe_accelerator_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
+[ElasticInference.Client.describe_accelerator_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Type annotations for
 `boto3.client("elastic-inference").describe_accelerator_types` method.
 
 Boto3 documentation:
-[ElasticInference.Client.describe_accelerator_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
+[ElasticInference.Client.describe_accelerator_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
 
 Returns
 [DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
@@ -105,7 +105,7 @@ Type annotations for `boto3.client("elastic-inference").describe_accelerators`
 method.
 
 Boto3 documentation:
-[ElasticInference.Client.describe_accelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
+[ElasticInference.Client.describe_accelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("elastic-inference").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ElasticInference.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.generate_presigned_url)
+[ElasticInference.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.generate_presigned_url)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("elastic-inference").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ElasticInference.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
+[ElasticInference.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("elastic-inference").tag_resource` method.
 
 Boto3 documentation:
-[ElasticInference.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
+[ElasticInference.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elastic-inference").untag_resource` method.
 
 Boto3 documentation:
-[ElasticInference.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
+[ElasticInference.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ForecastService](.) > ForecastServiceClient
 
 Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService)
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService)
 type annotations stubs module
 [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
@@ -64,7 +64,7 @@ def get_forecast_client() -> ForecastServiceClient:
 ```
 
 Boto3 documentation:
-[ForecastService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client)
+[ForecastService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client)
 
 ## Exceptions
 
@@ -95,7 +95,7 @@ Exceptions:
 Type annotations for `boto3.client("forecast").can_paginate` method.
 
 Boto3 documentation:
-[ForecastService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.can_paginate)
+[ForecastService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.can_paginate)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns `bool`.
 Type annotations for `boto3.client("forecast").create_dataset` method.
 
 Boto3 documentation:
-[ForecastService.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_dataset)
+[ForecastService.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_dataset)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns
 Type annotations for `boto3.client("forecast").create_dataset_group` method.
 
 Boto3 documentation:
-[ForecastService.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_dataset_group)
+[ForecastService.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_dataset_group)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("forecast").create_dataset_import_job`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job)
+[ForecastService.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns
 Type annotations for `boto3.client("forecast").create_forecast` method.
 
 Boto3 documentation:
-[ForecastService.Client.create_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_forecast)
+[ForecastService.Client.create_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_forecast)
 
 Arguments:
 
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("forecast").create_forecast_export_job`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.create_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job)
+[ForecastService.Client.create_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("forecast").create_predictor` method.
 
 Boto3 documentation:
-[ForecastService.Client.create_predictor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_predictor)
+[ForecastService.Client.create_predictor](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_predictor)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for
 `boto3.client("forecast").create_predictor_backtest_export_job` method.
 
 Boto3 documentation:
-[ForecastService.Client.create_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job)
+[ForecastService.Client.create_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns
 Type annotations for `boto3.client("forecast").delete_dataset` method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_dataset)
+[ForecastService.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_dataset)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Arguments:
 Type annotations for `boto3.client("forecast").delete_dataset_group` method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_dataset_group)
+[ForecastService.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_dataset_group)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("forecast").delete_dataset_import_job`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job)
+[ForecastService.Client.delete_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Arguments:
 Type annotations for `boto3.client("forecast").delete_forecast` method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_forecast)
+[ForecastService.Client.delete_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_forecast)
 
 Arguments:
 
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("forecast").delete_forecast_export_job`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job)
+[ForecastService.Client.delete_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Arguments:
 Type annotations for `boto3.client("forecast").delete_predictor` method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_predictor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_predictor)
+[ForecastService.Client.delete_predictor](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_predictor)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Type annotations for
 `boto3.client("forecast").delete_predictor_backtest_export_job` method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job)
+[ForecastService.Client.delete_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job)
 
 Arguments:
 
@@ -336,7 +336,7 @@ Arguments:
 Type annotations for `boto3.client("forecast").delete_resource_tree` method.
 
 Boto3 documentation:
-[ForecastService.Client.delete_resource_tree](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.delete_resource_tree)
+[ForecastService.Client.delete_resource_tree](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.delete_resource_tree)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Arguments:
 Type annotations for `boto3.client("forecast").describe_dataset` method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_dataset)
+[ForecastService.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_dataset)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns
 Type annotations for `boto3.client("forecast").describe_dataset_group` method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_dataset_group)
+[ForecastService.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_dataset_group)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("forecast").describe_dataset_import_job`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job)
+[ForecastService.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns
 Type annotations for `boto3.client("forecast").describe_forecast` method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_forecast)
+[ForecastService.Client.describe_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_forecast)
 
 Arguments:
 
@@ -405,7 +405,7 @@ Type annotations for `boto3.client("forecast").describe_forecast_export_job`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job)
+[ForecastService.Client.describe_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Returns
 Type annotations for `boto3.client("forecast").describe_predictor` method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_predictor](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_predictor)
+[ForecastService.Client.describe_predictor](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_predictor)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Type annotations for
 `boto3.client("forecast").describe_predictor_backtest_export_job` method.
 
 Boto3 documentation:
-[ForecastService.Client.describe_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job)
+[ForecastService.Client.describe_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns
 Type annotations for `boto3.client("forecast").generate_presigned_url` method.
 
 Boto3 documentation:
-[ForecastService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.generate_presigned_url)
+[ForecastService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Returns `str`.
 Type annotations for `boto3.client("forecast").get_accuracy_metrics` method.
 
 Boto3 documentation:
-[ForecastService.Client.get_accuracy_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics)
+[ForecastService.Client.get_accuracy_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns
 Type annotations for `boto3.client("forecast").list_dataset_groups` method.
 
 Boto3 documentation:
-[ForecastService.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_dataset_groups)
+[ForecastService.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_dataset_groups)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("forecast").list_dataset_import_jobs`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs)
+[ForecastService.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns
 Type annotations for `boto3.client("forecast").list_datasets` method.
 
 Boto3 documentation:
-[ForecastService.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_datasets)
+[ForecastService.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_datasets)
 
 Arguments:
 
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("forecast").list_forecast_export_jobs`
 method.
 
 Boto3 documentation:
-[ForecastService.Client.list_forecast_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs)
+[ForecastService.Client.list_forecast_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs)
 
 Arguments:
 
@@ -542,7 +542,7 @@ Returns
 Type annotations for `boto3.client("forecast").list_forecasts` method.
 
 Boto3 documentation:
-[ForecastService.Client.list_forecasts](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_forecasts)
+[ForecastService.Client.list_forecasts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_forecasts)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Type annotations for
 `boto3.client("forecast").list_predictor_backtest_export_jobs` method.
 
 Boto3 documentation:
-[ForecastService.Client.list_predictor_backtest_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs)
+[ForecastService.Client.list_predictor_backtest_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Returns
 Type annotations for `boto3.client("forecast").list_predictors` method.
 
 Boto3 documentation:
-[ForecastService.Client.list_predictors](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_predictors)
+[ForecastService.Client.list_predictors](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_predictors)
 
 Arguments:
 
@@ -591,7 +591,7 @@ Returns
 Type annotations for `boto3.client("forecast").list_tags_for_resource` method.
 
 Boto3 documentation:
-[ForecastService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource)
+[ForecastService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -605,7 +605,7 @@ Returns
 Type annotations for `boto3.client("forecast").stop_resource` method.
 
 Boto3 documentation:
-[ForecastService.Client.stop_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.stop_resource)
+[ForecastService.Client.stop_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.stop_resource)
 
 Arguments:
 
@@ -616,7 +616,7 @@ Arguments:
 Type annotations for `boto3.client("forecast").tag_resource` method.
 
 Boto3 documentation:
-[ForecastService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.tag_resource)
+[ForecastService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.tag_resource)
 
 Arguments:
 
@@ -630,7 +630,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("forecast").untag_resource` method.
 
 Boto3 documentation:
-[ForecastService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.untag_resource)
+[ForecastService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.untag_resource)
 
 Arguments:
 
@@ -644,7 +644,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("forecast").update_dataset_group` method.
 
 Boto3 documentation:
-[ForecastService.Client.update_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/forecast.html#ForecastService.Client.update_dataset_group)
+[ForecastService.Client.update_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/forecast.html#ForecastService.Client.update_dataset_group)
 
 Arguments:
 

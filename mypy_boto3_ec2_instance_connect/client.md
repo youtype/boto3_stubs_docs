@@ -3,7 +3,7 @@
 > [Index](..) > [EC2InstanceConnect](.) > EC2InstanceConnectClient
 
 Auto-generated documentation for
-[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
+[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
 [mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
@@ -30,7 +30,7 @@ def get_ec2-instance-connect_client() -> EC2InstanceConnectClient:
 ```
 
 Boto3 documentation:
-[EC2InstanceConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client)
+[EC2InstanceConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client)
 
 ## Exceptions
 
@@ -65,7 +65,7 @@ Type annotations for `boto3.client("ec2-instance-connect").can_paginate`
 method.
 
 Boto3 documentation:
-[EC2InstanceConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.can_paginate)
+[EC2InstanceConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.can_paginate)
 
 Arguments:
 
@@ -79,7 +79,7 @@ Type annotations for
 `boto3.client("ec2-instance-connect").generate_presigned_url` method.
 
 Boto3 documentation:
-[EC2InstanceConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.generate_presigned_url)
+[EC2InstanceConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.generate_presigned_url)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[EC2InstanceConnect.Client.send_serial_console_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key)
+[EC2InstanceConnect.Client.send_serial_console_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Type annotations for `boto3.client("ec2-instance-connect").send_ssh_public_key`
 method.
 
 Boto3 documentation:
-[EC2InstanceConnect.Client.send_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key)
+[EC2InstanceConnect.Client.send_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key)
 
 Arguments:
 

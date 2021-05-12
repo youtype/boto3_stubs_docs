@@ -3,7 +3,7 @@
 > [Index](..) > [SMS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/sms.html#SMS)
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sms.html#SMS)
 type annotations stubs module
 [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 

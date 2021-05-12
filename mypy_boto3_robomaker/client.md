@@ -3,7 +3,7 @@
 > [Index](..) > [RoboMaker](.) > RoboMakerClient
 
 Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker)
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
 [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
@@ -86,7 +86,7 @@ def get_robomaker_client() -> RoboMakerClient:
 ```
 
 Boto3 documentation:
-[RoboMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client)
+[RoboMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client)
 
 ## Exceptions
 
@@ -120,7 +120,7 @@ Exceptions:
 Type annotations for `boto3.client("robomaker").batch_delete_worlds` method.
 
 Boto3 documentation:
-[RoboMaker.Client.batch_delete_worlds](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
+[RoboMaker.Client.batch_delete_worlds](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("robomaker").batch_describe_simulation_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.batch_describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
+[RoboMaker.Client.batch_describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Returns
 Type annotations for `boto3.client("robomaker").can_paginate` method.
 
 Boto3 documentation:
-[RoboMaker.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.can_paginate)
+[RoboMaker.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.can_paginate)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns `bool`.
 Type annotations for `boto3.client("robomaker").cancel_deployment_job` method.
 
 Boto3 documentation:
-[RoboMaker.Client.cancel_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
+[RoboMaker.Client.cancel_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("robomaker").cancel_simulation_job` method.
 
 Boto3 documentation:
-[RoboMaker.Client.cancel_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
+[RoboMaker.Client.cancel_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("robomaker").cancel_simulation_job_batch`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.cancel_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
+[RoboMaker.Client.cancel_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("robomaker").cancel_world_export_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.cancel_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
+[RoboMaker.Client.cancel_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Type annotations for `boto3.client("robomaker").cancel_world_generation_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.cancel_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
+[RoboMaker.Client.cancel_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("robomaker").create_deployment_job` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
+[RoboMaker.Client.create_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Returns
 Type annotations for `boto3.client("robomaker").create_fleet` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
+[RoboMaker.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Returns
 Type annotations for `boto3.client("robomaker").create_robot` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_robot)
+[RoboMaker.Client.create_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_robot)
 
 Arguments:
 
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("robomaker").create_robot_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
+[RoboMaker.Client.create_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Type annotations for
 `boto3.client("robomaker").create_robot_application_version` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_robot_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
+[RoboMaker.Client.create_robot_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("robomaker").create_simulation_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
+[RoboMaker.Client.create_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Type annotations for
 `boto3.client("robomaker").create_simulation_application_version` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_simulation_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
+[RoboMaker.Client.create_simulation_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns
 Type annotations for `boto3.client("robomaker").create_simulation_job` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
+[RoboMaker.Client.create_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("robomaker").create_world_export_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
+[RoboMaker.Client.create_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("robomaker").create_world_generation_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
+[RoboMaker.Client.create_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Returns
 Type annotations for `boto3.client("robomaker").create_world_template` method.
 
 Boto3 documentation:
-[RoboMaker.Client.create_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
+[RoboMaker.Client.create_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Returns
 Type annotations for `boto3.client("robomaker").delete_fleet` method.
 
 Boto3 documentation:
-[RoboMaker.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
+[RoboMaker.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
 
 Arguments:
 
@@ -466,7 +466,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("robomaker").delete_robot` method.
 
 Boto3 documentation:
-[RoboMaker.Client.delete_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
+[RoboMaker.Client.delete_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("robomaker").delete_robot_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.delete_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
+[RoboMaker.Client.delete_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
 
 Arguments:
 
@@ -495,7 +495,7 @@ Type annotations for `boto3.client("robomaker").delete_simulation_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.delete_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
+[RoboMaker.Client.delete_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("robomaker").delete_world_template` method.
 
 Boto3 documentation:
-[RoboMaker.Client.delete_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
+[RoboMaker.Client.delete_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("robomaker").deregister_robot` method.
 
 Boto3 documentation:
-[RoboMaker.Client.deregister_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
+[RoboMaker.Client.deregister_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Type annotations for `boto3.client("robomaker").describe_deployment_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
+[RoboMaker.Client.describe_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
 
 Arguments:
 
@@ -552,7 +552,7 @@ Returns
 Type annotations for `boto3.client("robomaker").describe_fleet` method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
+[RoboMaker.Client.describe_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Returns
 Type annotations for `boto3.client("robomaker").describe_robot` method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
+[RoboMaker.Client.describe_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
 
 Arguments:
 
@@ -581,7 +581,7 @@ Type annotations for `boto3.client("robomaker").describe_robot_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
+[RoboMaker.Client.describe_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
 
 Arguments:
 
@@ -597,7 +597,7 @@ Type annotations for
 `boto3.client("robomaker").describe_simulation_application` method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
+[RoboMaker.Client.describe_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
 
 Arguments:
 
@@ -613,7 +613,7 @@ Type annotations for `boto3.client("robomaker").describe_simulation_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
+[RoboMaker.Client.describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
 
 Arguments:
 
@@ -628,7 +628,7 @@ Type annotations for `boto3.client("robomaker").describe_simulation_job_batch`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
+[RoboMaker.Client.describe_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
 
 Arguments:
 
@@ -642,7 +642,7 @@ Returns
 Type annotations for `boto3.client("robomaker").describe_world` method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_world](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_world)
+[RoboMaker.Client.describe_world](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_world)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("robomaker").describe_world_export_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
+[RoboMaker.Client.describe_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Type annotations for `boto3.client("robomaker").describe_world_generation_job`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
+[RoboMaker.Client.describe_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
 
 Arguments:
 
@@ -687,7 +687,7 @@ Type annotations for `boto3.client("robomaker").describe_world_template`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.describe_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
+[RoboMaker.Client.describe_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
 
 Arguments:
 
@@ -701,7 +701,7 @@ Returns
 Type annotations for `boto3.client("robomaker").generate_presigned_url` method.
 
 Boto3 documentation:
-[RoboMaker.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url)
+[RoboMaker.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url)
 
 Arguments:
 
@@ -718,7 +718,7 @@ Type annotations for `boto3.client("robomaker").get_world_template_body`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.get_world_template_body](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
+[RoboMaker.Client.get_world_template_body](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
 
 Arguments:
 
@@ -733,7 +733,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_deployment_jobs` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_deployment_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
+[RoboMaker.Client.list_deployment_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
 
 Arguments:
 
@@ -749,7 +749,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_fleets` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
+[RoboMaker.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
 
 Arguments:
 
@@ -765,7 +765,7 @@ Type annotations for `boto3.client("robomaker").list_robot_applications`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_robot_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
+[RoboMaker.Client.list_robot_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
 
 Arguments:
 
@@ -782,7 +782,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_robots` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_robots](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_robots)
+[RoboMaker.Client.list_robots](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_robots)
 
 Arguments:
 
@@ -798,7 +798,7 @@ Type annotations for `boto3.client("robomaker").list_simulation_applications`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_simulation_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
+[RoboMaker.Client.list_simulation_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
 
 Arguments:
 
@@ -816,7 +816,7 @@ Type annotations for `boto3.client("robomaker").list_simulation_job_batches`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_simulation_job_batches](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
+[RoboMaker.Client.list_simulation_job_batches](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
 
 Arguments:
 
@@ -832,7 +832,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_simulation_jobs` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_simulation_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
+[RoboMaker.Client.list_simulation_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
 
 Arguments:
 
@@ -848,7 +848,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_tags_for_resource` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
+[RoboMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -862,7 +862,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_world_export_jobs` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_world_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
+[RoboMaker.Client.list_world_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
 
 Arguments:
 
@@ -879,7 +879,7 @@ Type annotations for `boto3.client("robomaker").list_world_generation_jobs`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_world_generation_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
+[RoboMaker.Client.list_world_generation_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
 
 Arguments:
 
@@ -895,7 +895,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_world_templates` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_world_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
+[RoboMaker.Client.list_world_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
 
 Arguments:
 
@@ -910,7 +910,7 @@ Returns
 Type annotations for `boto3.client("robomaker").list_worlds` method.
 
 Boto3 documentation:
-[RoboMaker.Client.list_worlds](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
+[RoboMaker.Client.list_worlds](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
 
 Arguments:
 
@@ -925,7 +925,7 @@ Returns [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef).
 Type annotations for `boto3.client("robomaker").register_robot` method.
 
 Boto3 documentation:
-[RoboMaker.Client.register_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.register_robot)
+[RoboMaker.Client.register_robot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.register_robot)
 
 Arguments:
 
@@ -940,7 +940,7 @@ Returns
 Type annotations for `boto3.client("robomaker").restart_simulation_job` method.
 
 Boto3 documentation:
-[RoboMaker.Client.restart_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
+[RoboMaker.Client.restart_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
 
 Arguments:
 
@@ -954,7 +954,7 @@ Type annotations for `boto3.client("robomaker").start_simulation_job_batch`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.start_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
+[RoboMaker.Client.start_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
 
 Arguments:
 
@@ -973,7 +973,7 @@ Returns
 Type annotations for `boto3.client("robomaker").sync_deployment_job` method.
 
 Boto3 documentation:
-[RoboMaker.Client.sync_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
+[RoboMaker.Client.sync_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
 
 Arguments:
 
@@ -988,7 +988,7 @@ Returns
 Type annotations for `boto3.client("robomaker").tag_resource` method.
 
 Boto3 documentation:
-[RoboMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
+[RoboMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
 
 Arguments:
 
@@ -1002,7 +1002,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("robomaker").untag_resource` method.
 
 Boto3 documentation:
-[RoboMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
+[RoboMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
 
 Arguments:
 
@@ -1017,7 +1017,7 @@ Type annotations for `boto3.client("robomaker").update_robot_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.update_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
+[RoboMaker.Client.update_robot_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
 
 Arguments:
 
@@ -1039,7 +1039,7 @@ Type annotations for `boto3.client("robomaker").update_simulation_application`
 method.
 
 Boto3 documentation:
-[RoboMaker.Client.update_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
+[RoboMaker.Client.update_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
 
 Arguments:
 
@@ -1065,7 +1065,7 @@ Returns
 Type annotations for `boto3.client("robomaker").update_world_template` method.
 
 Boto3 documentation:
-[RoboMaker.Client.update_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
+[RoboMaker.Client.update_world_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
 
 Arguments:
 

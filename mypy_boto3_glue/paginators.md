@@ -3,7 +3,7 @@
 > [Index](..) > [Glue](.) > Paginators
 
 Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue)
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue)
 type annotations stubs module
 [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
@@ -42,7 +42,7 @@ def get_get_classifiers_paginator() -> GetClassifiersPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetClassifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetClassifiers)
+[Glue.Paginator.GetClassifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetClassifiers)
 
 Arguments for `GetClassifiersPaginator.paginate` method:
 
@@ -66,7 +66,7 @@ def get_get_connections_paginator() -> GetConnectionsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetConnections)
+[Glue.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetConnections)
 
 Arguments for `GetConnectionsPaginator.paginate` method:
 
@@ -95,7 +95,7 @@ def get_get_crawler_metrics_paginator() -> GetCrawlerMetricsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetCrawlerMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetCrawlerMetrics)
+[Glue.Paginator.GetCrawlerMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetCrawlerMetrics)
 
 Arguments for `GetCrawlerMetricsPaginator.paginate` method:
 
@@ -120,7 +120,7 @@ def get_get_crawlers_paginator() -> GetCrawlersPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetCrawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetCrawlers)
+[Glue.Paginator.GetCrawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetCrawlers)
 
 Arguments for `GetCrawlersPaginator.paginate` method:
 
@@ -144,7 +144,7 @@ def get_get_databases_paginator() -> GetDatabasesPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetDatabases](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetDatabases)
+[Glue.Paginator.GetDatabases](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetDatabases)
 
 Arguments for `GetDatabasesPaginator.paginate` method:
 
@@ -171,7 +171,7 @@ def get_get_dev_endpoints_paginator() -> GetDevEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetDevEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetDevEndpoints)
+[Glue.Paginator.GetDevEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetDevEndpoints)
 
 Arguments for `GetDevEndpointsPaginator.paginate` method:
 
@@ -195,7 +195,7 @@ def get_get_job_runs_paginator() -> GetJobRunsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetJobRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetJobRuns)
+[Glue.Paginator.GetJobRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetJobRuns)
 
 Arguments for `GetJobRunsPaginator.paginate` method:
 
@@ -220,7 +220,7 @@ def get_get_jobs_paginator() -> GetJobsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetJobs)
+[Glue.Paginator.GetJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetJobs)
 
 Arguments for `GetJobsPaginator.paginate` method:
 
@@ -245,7 +245,7 @@ def get_get_partition_indexes_paginator() -> GetPartitionIndexesPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetPartitionIndexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetPartitionIndexes)
+[Glue.Paginator.GetPartitionIndexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetPartitionIndexes)
 
 Arguments for `GetPartitionIndexesPaginator.paginate` method:
 
@@ -272,7 +272,7 @@ def get_get_partitions_paginator() -> GetPartitionsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetPartitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetPartitions)
+[Glue.Paginator.GetPartitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetPartitions)
 
 Arguments for `GetPartitionsPaginator.paginate` method:
 
@@ -303,7 +303,7 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetResourcePolicies)
+[Glue.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetResourcePolicies)
 
 Arguments for `GetResourcePoliciesPaginator.paginate` method:
 
@@ -328,7 +328,7 @@ def get_get_security_configurations_paginator() -> GetSecurityConfigurationsPagi
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetSecurityConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetSecurityConfigurations)
+[Glue.Paginator.GetSecurityConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetSecurityConfigurations)
 
 Arguments for `GetSecurityConfigurationsPaginator.paginate` method:
 
@@ -353,7 +353,7 @@ def get_get_table_versions_paginator() -> GetTableVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetTableVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetTableVersions)
+[Glue.Paginator.GetTableVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetTableVersions)
 
 Arguments for `GetTableVersionsPaginator.paginate` method:
 
@@ -380,7 +380,7 @@ def get_get_tables_paginator() -> GetTablesPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetTables)
+[Glue.Paginator.GetTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetTables)
 
 Arguments for `GetTablesPaginator.paginate` method:
 
@@ -407,7 +407,7 @@ def get_get_triggers_paginator() -> GetTriggersPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetTriggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetTriggers)
+[Glue.Paginator.GetTriggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetTriggers)
 
 Arguments for `GetTriggersPaginator.paginate` method:
 
@@ -433,7 +433,7 @@ def get_get_user_defined_functions_paginator() -> GetUserDefinedFunctionsPaginat
 ```
 
 Boto3 documentation:
-[Glue.Paginator.GetUserDefinedFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.GetUserDefinedFunctions)
+[Glue.Paginator.GetUserDefinedFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.GetUserDefinedFunctions)
 
 Arguments for `GetUserDefinedFunctionsPaginator.paginate` method:
 
@@ -460,7 +460,7 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.ListRegistries)
+[Glue.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.ListRegistries)
 
 Arguments for `ListRegistriesPaginator.paginate` method:
 
@@ -485,7 +485,7 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.ListSchemaVersions)
+[Glue.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.ListSchemaVersions)
 
 Arguments for `ListSchemaVersionsPaginator.paginate` method:
 
@@ -510,7 +510,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
 ```
 
 Boto3 documentation:
-[Glue.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/glue.html#Glue.Paginator.ListSchemas)
+[Glue.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Paginator.ListSchemas)
 
 Arguments for `ListSchemasPaginator.paginate` method:
 

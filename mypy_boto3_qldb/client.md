@@ -3,7 +3,7 @@
 > [Index](..) > [QLDB](.) > QLDBClient
 
 Auto-generated documentation for
-[QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB)
+[QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB)
 type annotations stubs module
 [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
@@ -47,7 +47,7 @@ def get_qldb_client() -> QLDBClient:
 ```
 
 Boto3 documentation:
-[QLDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client)
+[QLDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client)
 
 ## Exceptions
 
@@ -78,7 +78,7 @@ Exceptions:
 Type annotations for `boto3.client("qldb").can_paginate` method.
 
 Boto3 documentation:
-[QLDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.can_paginate)
+[QLDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.can_paginate)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Type annotations for `boto3.client("qldb").cancel_journal_kinesis_stream`
 method.
 
 Boto3 documentation:
-[QLDB.Client.cancel_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
+[QLDB.Client.cancel_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Returns
 Type annotations for `boto3.client("qldb").create_ledger` method.
 
 Boto3 documentation:
-[QLDB.Client.create_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.create_ledger)
+[QLDB.Client.create_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.create_ledger)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Returns
 Type annotations for `boto3.client("qldb").delete_ledger` method.
 
 Boto3 documentation:
-[QLDB.Client.delete_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.delete_ledger)
+[QLDB.Client.delete_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.delete_ledger)
 
 Arguments:
 
@@ -137,7 +137,7 @@ Type annotations for `boto3.client("qldb").describe_journal_kinesis_stream`
 method.
 
 Boto3 documentation:
-[QLDB.Client.describe_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
+[QLDB.Client.describe_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns
 Type annotations for `boto3.client("qldb").describe_journal_s3_export` method.
 
 Boto3 documentation:
-[QLDB.Client.describe_journal_s3_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
+[QLDB.Client.describe_journal_s3_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns
 Type annotations for `boto3.client("qldb").describe_ledger` method.
 
 Boto3 documentation:
-[QLDB.Client.describe_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.describe_ledger)
+[QLDB.Client.describe_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.describe_ledger)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Returns
 Type annotations for `boto3.client("qldb").export_journal_to_s3` method.
 
 Boto3 documentation:
-[QLDB.Client.export_journal_to_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
+[QLDB.Client.export_journal_to_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns
 Type annotations for `boto3.client("qldb").generate_presigned_url` method.
 
 Boto3 documentation:
-[QLDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.generate_presigned_url)
+[QLDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.generate_presigned_url)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns `str`.
 Type annotations for `boto3.client("qldb").get_block` method.
 
 Boto3 documentation:
-[QLDB.Client.get_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.get_block)
+[QLDB.Client.get_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.get_block)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Returns [GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef).
 Type annotations for `boto3.client("qldb").get_digest` method.
 
 Boto3 documentation:
-[QLDB.Client.get_digest](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.get_digest)
+[QLDB.Client.get_digest](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.get_digest)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Returns [GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef).
 Type annotations for `boto3.client("qldb").get_revision` method.
 
 Boto3 documentation:
-[QLDB.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.get_revision)
+[QLDB.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.get_revision)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Type annotations for
 `boto3.client("qldb").list_journal_kinesis_streams_for_ledger` method.
 
 Boto3 documentation:
-[QLDB.Client.list_journal_kinesis_streams_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
+[QLDB.Client.list_journal_kinesis_streams_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Returns
 Type annotations for `boto3.client("qldb").list_journal_s3_exports` method.
 
 Boto3 documentation:
-[QLDB.Client.list_journal_s3_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
+[QLDB.Client.list_journal_s3_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("qldb").list_journal_s3_exports_for_ledger`
 method.
 
 Boto3 documentation:
-[QLDB.Client.list_journal_s3_exports_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
+[QLDB.Client.list_journal_s3_exports_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns
 Type annotations for `boto3.client("qldb").list_ledgers` method.
 
 Boto3 documentation:
-[QLDB.Client.list_ledgers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.list_ledgers)
+[QLDB.Client.list_ledgers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.list_ledgers)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Returns
 Type annotations for `boto3.client("qldb").list_tags_for_resource` method.
 
 Boto3 documentation:
-[QLDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
+[QLDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Returns
 Type annotations for `boto3.client("qldb").stream_journal_to_kinesis` method.
 
 Boto3 documentation:
-[QLDB.Client.stream_journal_to_kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
+[QLDB.Client.stream_journal_to_kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Returns
 Type annotations for `boto3.client("qldb").tag_resource` method.
 
 Boto3 documentation:
-[QLDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.tag_resource)
+[QLDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.tag_resource)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("qldb").untag_resource` method.
 
 Boto3 documentation:
-[QLDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.untag_resource)
+[QLDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.untag_resource)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("qldb").update_ledger` method.
 
 Boto3 documentation:
-[QLDB.Client.update_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/qldb.html#QLDB.Client.update_ledger)
+[QLDB.Client.update_ledger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/qldb.html#QLDB.Client.update_ledger)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [HealthLake](.) > Typed dictionaries
 
 Auto-generated documentation for
-[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/healthlake.html#HealthLake)
+[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
 [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 

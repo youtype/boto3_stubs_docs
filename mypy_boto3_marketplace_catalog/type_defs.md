@@ -3,7 +3,7 @@
 > [Index](..) > [MarketplaceCatalog](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
 [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 

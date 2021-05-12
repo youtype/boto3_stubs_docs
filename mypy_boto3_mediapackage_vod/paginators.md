@@ -3,7 +3,7 @@
 > [Index](..) > [MediaPackageVod](.) > Paginators
 
 Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod)
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
 [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
@@ -27,7 +27,7 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
 ```
 
 Boto3 documentation:
-[MediaPackageVod.Paginator.ListAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
+[MediaPackageVod.Paginator.ListAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
 
 Arguments for `ListAssetsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_packaging_configurations_paginator() -> ListPackagingConfigurations
 ```
 
 Boto3 documentation:
-[MediaPackageVod.Paginator.ListPackagingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
+[MediaPackageVod.Paginator.ListPackagingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
 
 Arguments for `ListPackagingConfigurationsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_packaging_groups_paginator() -> ListPackagingGroupsPaginator:
 ```
 
 Boto3 documentation:
-[MediaPackageVod.Paginator.ListPackagingGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
+[MediaPackageVod.Paginator.ListPackagingGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
 
 Arguments for `ListPackagingGroupsPaginator.paginate` method:
 

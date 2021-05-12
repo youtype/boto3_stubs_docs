@@ -3,7 +3,7 @@
 > [Index](..) > [DataPipeline](.) > DataPipelineClient
 
 Auto-generated documentation for
-[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline)
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
 [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
@@ -48,7 +48,7 @@ def get_datapipeline_client() -> DataPipelineClient:
 ```
 
 Boto3 documentation:
-[DataPipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client)
+[DataPipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client)
 
 ## Exceptions
 
@@ -78,7 +78,7 @@ Exceptions:
 Type annotations for `boto3.client("datapipeline").activate_pipeline` method.
 
 Boto3 documentation:
-[DataPipeline.Client.activate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
+[DataPipeline.Client.activate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datapipeline").add_tags` method.
 
 Boto3 documentation:
-[DataPipeline.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
+[DataPipeline.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datapipeline").can_paginate` method.
 
 Boto3 documentation:
-[DataPipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.can_paginate)
+[DataPipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.can_paginate)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Returns `bool`.
 Type annotations for `boto3.client("datapipeline").create_pipeline` method.
 
 Boto3 documentation:
-[DataPipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
+[DataPipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").deactivate_pipeline` method.
 
 Boto3 documentation:
-[DataPipeline.Client.deactivate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
+[DataPipeline.Client.deactivate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datapipeline").delete_pipeline` method.
 
 Boto3 documentation:
-[DataPipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
+[DataPipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Arguments:
 Type annotations for `boto3.client("datapipeline").describe_objects` method.
 
 Boto3 documentation:
-[DataPipeline.Client.describe_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
+[DataPipeline.Client.describe_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").describe_pipelines` method.
 
 Boto3 documentation:
-[DataPipeline.Client.describe_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
+[DataPipeline.Client.describe_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").evaluate_expression` method.
 
 Boto3 documentation:
-[DataPipeline.Client.evaluate_expression](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
+[DataPipeline.Client.evaluate_expression](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("datapipeline").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[DataPipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url)
+[DataPipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Type annotations for `boto3.client("datapipeline").get_pipeline_definition`
 method.
 
 Boto3 documentation:
-[DataPipeline.Client.get_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
+[DataPipeline.Client.get_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").list_pipelines` method.
 
 Boto3 documentation:
-[DataPipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
+[DataPipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
 
 Arguments:
 
@@ -257,7 +257,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").poll_for_task` method.
 
 Boto3 documentation:
-[DataPipeline.Client.poll_for_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
+[DataPipeline.Client.poll_for_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("datapipeline").put_pipeline_definition`
 method.
 
 Boto3 documentation:
-[DataPipeline.Client.put_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
+[DataPipeline.Client.put_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").query_objects` method.
 
 Boto3 documentation:
-[DataPipeline.Client.query_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
+[DataPipeline.Client.query_objects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Returns [QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef).
 Type annotations for `boto3.client("datapipeline").remove_tags` method.
 
 Boto3 documentation:
-[DataPipeline.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
+[DataPipeline.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Type annotations for `boto3.client("datapipeline").report_task_progress`
 method.
 
 Boto3 documentation:
-[DataPipeline.Client.report_task_progress](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
+[DataPipeline.Client.report_task_progress](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
 
 Arguments:
 
@@ -343,7 +343,7 @@ Type annotations for
 `boto3.client("datapipeline").report_task_runner_heartbeat` method.
 
 Boto3 documentation:
-[DataPipeline.Client.report_task_runner_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
+[DataPipeline.Client.report_task_runner_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
 
 Arguments:
 
@@ -359,7 +359,7 @@ Returns
 Type annotations for `boto3.client("datapipeline").set_status` method.
 
 Boto3 documentation:
-[DataPipeline.Client.set_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.set_status)
+[DataPipeline.Client.set_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.set_status)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Arguments:
 Type annotations for `boto3.client("datapipeline").set_task_status` method.
 
 Boto3 documentation:
-[DataPipeline.Client.set_task_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
+[DataPipeline.Client.set_task_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Type annotations for
 `boto3.client("datapipeline").validate_pipeline_definition` method.
 
 Boto3 documentation:
-[DataPipeline.Client.validate_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
+[DataPipeline.Client.validate_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
 
 Arguments:
 

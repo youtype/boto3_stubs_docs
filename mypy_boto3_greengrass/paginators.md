@@ -3,7 +3,7 @@
 > [Index](..) > [Greengrass](.) > Paginators
 
 Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass)
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
 [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
@@ -43,7 +43,7 @@ def get_list_bulk_deployment_detailed_reports_paginator() -> ListBulkDeploymentD
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListBulkDeploymentDetailedReports](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeploymentDetailedReports)
+[Greengrass.Paginator.ListBulkDeploymentDetailedReports](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeploymentDetailedReports)
 
 Arguments for `ListBulkDeploymentDetailedReportsPaginator.paginate` method:
 
@@ -69,7 +69,7 @@ def get_list_bulk_deployments_paginator() -> ListBulkDeploymentsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListBulkDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeployments)
+[Greengrass.Paginator.ListBulkDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeployments)
 
 Arguments for `ListBulkDeploymentsPaginator.paginate` method:
 
@@ -94,7 +94,7 @@ def get_list_connector_definition_versions_paginator() -> ListConnectorDefinitio
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListConnectorDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitionVersions)
+[Greengrass.Paginator.ListConnectorDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitionVersions)
 
 Arguments for `ListConnectorDefinitionVersionsPaginator.paginate` method:
 
@@ -120,7 +120,7 @@ def get_list_connector_definitions_paginator() -> ListConnectorDefinitionsPagina
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListConnectorDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitions)
+[Greengrass.Paginator.ListConnectorDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitions)
 
 Arguments for `ListConnectorDefinitionsPaginator.paginate` method:
 
@@ -145,7 +145,7 @@ def get_list_core_definition_versions_paginator() -> ListCoreDefinitionVersionsP
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListCoreDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitionVersions)
+[Greengrass.Paginator.ListCoreDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitionVersions)
 
 Arguments for `ListCoreDefinitionVersionsPaginator.paginate` method:
 
@@ -171,7 +171,7 @@ def get_list_core_definitions_paginator() -> ListCoreDefinitionsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListCoreDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitions)
+[Greengrass.Paginator.ListCoreDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitions)
 
 Arguments for `ListCoreDefinitionsPaginator.paginate` method:
 
@@ -196,7 +196,7 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListDeployments)
+[Greengrass.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListDeployments)
 
 Arguments for `ListDeploymentsPaginator.paginate` method:
 
@@ -222,7 +222,7 @@ def get_list_device_definition_versions_paginator() -> ListDeviceDefinitionVersi
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListDeviceDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitionVersions)
+[Greengrass.Paginator.ListDeviceDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitionVersions)
 
 Arguments for `ListDeviceDefinitionVersionsPaginator.paginate` method:
 
@@ -248,7 +248,7 @@ def get_list_device_definitions_paginator() -> ListDeviceDefinitionsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListDeviceDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitions)
+[Greengrass.Paginator.ListDeviceDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitions)
 
 Arguments for `ListDeviceDefinitionsPaginator.paginate` method:
 
@@ -273,7 +273,7 @@ def get_list_function_definition_versions_paginator() -> ListFunctionDefinitionV
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListFunctionDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitionVersions)
+[Greengrass.Paginator.ListFunctionDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitionVersions)
 
 Arguments for `ListFunctionDefinitionVersionsPaginator.paginate` method:
 
@@ -299,7 +299,7 @@ def get_list_function_definitions_paginator() -> ListFunctionDefinitionsPaginato
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListFunctionDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitions)
+[Greengrass.Paginator.ListFunctionDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitions)
 
 Arguments for `ListFunctionDefinitionsPaginator.paginate` method:
 
@@ -324,7 +324,7 @@ def get_list_group_versions_paginator() -> ListGroupVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListGroupVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListGroupVersions)
+[Greengrass.Paginator.ListGroupVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListGroupVersions)
 
 Arguments for `ListGroupVersionsPaginator.paginate` method:
 
@@ -349,7 +349,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListGroups)
+[Greengrass.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListGroups)
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
@@ -374,7 +374,7 @@ def get_list_logger_definition_versions_paginator() -> ListLoggerDefinitionVersi
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListLoggerDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitionVersions)
+[Greengrass.Paginator.ListLoggerDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitionVersions)
 
 Arguments for `ListLoggerDefinitionVersionsPaginator.paginate` method:
 
@@ -400,7 +400,7 @@ def get_list_logger_definitions_paginator() -> ListLoggerDefinitionsPaginator:
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListLoggerDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitions)
+[Greengrass.Paginator.ListLoggerDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitions)
 
 Arguments for `ListLoggerDefinitionsPaginator.paginate` method:
 
@@ -425,7 +425,7 @@ def get_list_resource_definition_versions_paginator() -> ListResourceDefinitionV
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListResourceDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitionVersions)
+[Greengrass.Paginator.ListResourceDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitionVersions)
 
 Arguments for `ListResourceDefinitionVersionsPaginator.paginate` method:
 
@@ -451,7 +451,7 @@ def get_list_resource_definitions_paginator() -> ListResourceDefinitionsPaginato
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListResourceDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitions)
+[Greengrass.Paginator.ListResourceDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitions)
 
 Arguments for `ListResourceDefinitionsPaginator.paginate` method:
 
@@ -476,7 +476,7 @@ def get_list_subscription_definition_versions_paginator() -> ListSubscriptionDef
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListSubscriptionDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitionVersions)
+[Greengrass.Paginator.ListSubscriptionDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitionVersions)
 
 Arguments for `ListSubscriptionDefinitionVersionsPaginator.paginate` method:
 
@@ -502,7 +502,7 @@ def get_list_subscription_definitions_paginator() -> ListSubscriptionDefinitions
 ```
 
 Boto3 documentation:
-[Greengrass.Paginator.ListSubscriptionDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitions)
+[Greengrass.Paginator.ListSubscriptionDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitions)
 
 Arguments for `ListSubscriptionDefinitionsPaginator.paginate` method:
 

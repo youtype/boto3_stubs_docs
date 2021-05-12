@@ -3,7 +3,7 @@
 > [Index](..) > [Kinesis](.) > KinesisClient
 
 Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis)
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
@@ -58,7 +58,7 @@ def get_kinesis_client() -> KinesisClient:
 ```
 
 Boto3 documentation:
-[Kinesis.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client)
+[Kinesis.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client)
 
 ## Exceptions
 
@@ -97,7 +97,7 @@ Exceptions:
 Type annotations for `boto3.client("kinesis").add_tags_to_stream` method.
 
 Boto3 documentation:
-[Kinesis.Client.add_tags_to_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream)
+[Kinesis.Client.add_tags_to_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").can_paginate` method.
 
 Boto3 documentation:
-[Kinesis.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.can_paginate)
+[Kinesis.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.can_paginate)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns `bool`.
 Type annotations for `boto3.client("kinesis").create_stream` method.
 
 Boto3 documentation:
-[Kinesis.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.create_stream)
+[Kinesis.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.create_stream)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("kinesis").decrease_stream_retention_period`
 method.
 
 Boto3 documentation:
-[Kinesis.Client.decrease_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period)
+[Kinesis.Client.decrease_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").delete_stream` method.
 
 Boto3 documentation:
-[Kinesis.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.delete_stream)
+[Kinesis.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.delete_stream)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Type annotations for `boto3.client("kinesis").deregister_stream_consumer`
 method.
 
 Boto3 documentation:
-[Kinesis.Client.deregister_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer)
+[Kinesis.Client.deregister_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").describe_limits` method.
 
 Boto3 documentation:
-[Kinesis.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.describe_limits)
+[Kinesis.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.describe_limits)
 
 Returns
 [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("kinesis").describe_stream` method.
 
 Boto3 documentation:
-[Kinesis.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.describe_stream)
+[Kinesis.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.describe_stream)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("kinesis").describe_stream_consumer` method.
 
 Boto3 documentation:
-[Kinesis.Client.describe_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer)
+[Kinesis.Client.describe_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Returns
 Type annotations for `boto3.client("kinesis").describe_stream_summary` method.
 
 Boto3 documentation:
-[Kinesis.Client.describe_stream_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary)
+[Kinesis.Client.describe_stream_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Type annotations for `boto3.client("kinesis").disable_enhanced_monitoring`
 method.
 
 Boto3 documentation:
-[Kinesis.Client.disable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring)
+[Kinesis.Client.disable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Type annotations for `boto3.client("kinesis").enable_enhanced_monitoring`
 method.
 
 Boto3 documentation:
-[Kinesis.Client.enable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring)
+[Kinesis.Client.enable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("kinesis").generate_presigned_url` method.
 
 Boto3 documentation:
-[Kinesis.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.generate_presigned_url)
+[Kinesis.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.generate_presigned_url)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns `str`.
 Type annotations for `boto3.client("kinesis").get_records` method.
 
 Boto3 documentation:
-[Kinesis.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.get_records)
+[Kinesis.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.get_records)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 Type annotations for `boto3.client("kinesis").get_shard_iterator` method.
 
 Boto3 documentation:
-[Kinesis.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator)
+[Kinesis.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("kinesis").increase_stream_retention_period`
 method.
 
 Boto3 documentation:
-[Kinesis.Client.increase_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period)
+[Kinesis.Client.increase_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").list_shards` method.
 
 Boto3 documentation:
-[Kinesis.Client.list_shards](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.list_shards)
+[Kinesis.Client.list_shards](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.list_shards)
 
 Arguments:
 
@@ -343,7 +343,7 @@ Returns [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef).
 Type annotations for `boto3.client("kinesis").list_stream_consumers` method.
 
 Boto3 documentation:
-[Kinesis.Client.list_stream_consumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers)
+[Kinesis.Client.list_stream_consumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Returns
 Type annotations for `boto3.client("kinesis").list_streams` method.
 
 Boto3 documentation:
-[Kinesis.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.list_streams)
+[Kinesis.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.list_streams)
 
 Arguments:
 
@@ -374,7 +374,7 @@ Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 Type annotations for `boto3.client("kinesis").list_tags_for_stream` method.
 
 Boto3 documentation:
-[Kinesis.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream)
+[Kinesis.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns
 Type annotations for `boto3.client("kinesis").merge_shards` method.
 
 Boto3 documentation:
-[Kinesis.Client.merge_shards](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.merge_shards)
+[Kinesis.Client.merge_shards](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.merge_shards)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").put_record` method.
 
 Boto3 documentation:
-[Kinesis.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.put_record)
+[Kinesis.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.put_record)
 
 Arguments:
 
@@ -420,7 +420,7 @@ Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 Type annotations for `boto3.client("kinesis").put_records` method.
 
 Boto3 documentation:
-[Kinesis.Client.put_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.put_records)
+[Kinesis.Client.put_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.put_records)
 
 Arguments:
 
@@ -436,7 +436,7 @@ Returns [PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef).
 Type annotations for `boto3.client("kinesis").register_stream_consumer` method.
 
 Boto3 documentation:
-[Kinesis.Client.register_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer)
+[Kinesis.Client.register_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Returns
 Type annotations for `boto3.client("kinesis").remove_tags_from_stream` method.
 
 Boto3 documentation:
-[Kinesis.Client.remove_tags_from_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream)
+[Kinesis.Client.remove_tags_from_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").split_shard` method.
 
 Boto3 documentation:
-[Kinesis.Client.split_shard](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.split_shard)
+[Kinesis.Client.split_shard](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.split_shard)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").start_stream_encryption` method.
 
 Boto3 documentation:
-[Kinesis.Client.start_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption)
+[Kinesis.Client.start_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").stop_stream_encryption` method.
 
 Boto3 documentation:
-[Kinesis.Client.stop_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption)
+[Kinesis.Client.stop_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption)
 
 Arguments:
 
@@ -504,7 +504,7 @@ Arguments:
 Type annotations for `boto3.client("kinesis").subscribe_to_shard` method.
 
 Boto3 documentation:
-[Kinesis.Client.subscribe_to_shard](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard)
+[Kinesis.Client.subscribe_to_shard](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Returns
 Type annotations for `boto3.client("kinesis").update_shard_count` method.
 
 Boto3 documentation:
-[Kinesis.Client.update_shard_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.71/reference/services/kinesis.html#Kinesis.Client.update_shard_count)
+[Kinesis.Client.update_shard_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis.html#Kinesis.Client.update_shard_count)
 
 Arguments:
 
