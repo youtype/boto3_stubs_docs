@@ -3,7 +3,7 @@
 > [Index](..) > [S3](.) > Waiters
 
 Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/s3.html#S3)
+[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/s3.html#S3)
 type annotations stubs module
 [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
@@ -27,7 +27,7 @@ def get_bucket_exists_waiter() -> BucketExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.bucket_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/s3.html#S3.Waiter.bucket_exists)
+[S3.Waiter.bucket_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/s3.html#S3.Waiter.bucket_exists)
 
 Arguments for `BucketExistsWaiter.wait` method:
 
@@ -49,7 +49,7 @@ def get_bucket_not_exists_waiter() -> BucketNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.bucket_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/s3.html#S3.Waiter.bucket_not_exists)
+[S3.Waiter.bucket_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/s3.html#S3.Waiter.bucket_not_exists)
 
 Arguments for `BucketNotExistsWaiter.wait` method:
 
@@ -71,7 +71,7 @@ def get_object_exists_waiter() -> ObjectExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.object_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/s3.html#S3.Waiter.object_exists)
+[S3.Waiter.object_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/s3.html#S3.Waiter.object_exists)
 
 Arguments for `ObjectExistsWaiter.wait` method:
 
@@ -106,7 +106,7 @@ def get_object_not_exists_waiter() -> ObjectNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.object_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/s3.html#S3.Waiter.object_not_exists)
+[S3.Waiter.object_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/s3.html#S3.Waiter.object_not_exists)
 
 Arguments for `ObjectNotExistsWaiter.wait` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStar](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar)
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar)
 type annotations stubs module
 [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 

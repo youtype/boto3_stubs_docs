@@ -3,7 +3,7 @@
 > [Index](..) > [GlobalAccelerator](.) > Paginators
 
 Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator)
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
 [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
@@ -32,7 +32,7 @@ def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListAccelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
+[GlobalAccelerator.Paginator.ListAccelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
 
 Arguments for `ListAcceleratorsPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_list_byoip_cidrs_paginator() -> ListByoipCidrsPaginator:
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListByoipCidrs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
+[GlobalAccelerator.Paginator.ListByoipCidrs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
 
 Arguments for `ListByoipCidrsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_custom_routing_accelerators_paginator() -> ListCustomRoutingAcceler
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingAccelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
+[GlobalAccelerator.Paginator.ListCustomRoutingAccelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
 
 Arguments for `ListCustomRoutingAcceleratorsPaginator.paginate` method:
 
@@ -107,7 +107,7 @@ def get_list_custom_routing_listeners_paginator() -> ListCustomRoutingListenersP
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingListeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
+[GlobalAccelerator.Paginator.ListCustomRoutingListeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
 
 Arguments for `ListCustomRoutingListenersPaginator.paginate` method:
 
@@ -133,7 +133,7 @@ def get_list_custom_routing_port_mappings_paginator() -> ListCustomRoutingPortMa
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingPortMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
+[GlobalAccelerator.Paginator.ListCustomRoutingPortMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
 
 Arguments for `ListCustomRoutingPortMappingsPaginator.paginate` method:
 
@@ -160,7 +160,7 @@ def get_list_custom_routing_port_mappings_by_destination_paginator() -> ListCust
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
+[GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
 
 Arguments for `ListCustomRoutingPortMappingsByDestinationPaginator.paginate`
 method:
@@ -188,7 +188,7 @@ def get_list_endpoint_groups_paginator() -> ListEndpointGroupsPaginator:
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
+[GlobalAccelerator.Paginator.ListEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
 
 Arguments for `ListEndpointGroupsPaginator.paginate` method:
 
@@ -214,7 +214,7 @@ def get_list_listeners_paginator() -> ListListenersPaginator:
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Paginator.ListListeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
+[GlobalAccelerator.Paginator.ListListeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
 
 Arguments for `ListListenersPaginator.paginate` method:
 

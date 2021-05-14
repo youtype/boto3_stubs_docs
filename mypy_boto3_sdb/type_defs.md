@@ -3,7 +3,7 @@
 > [Index](..) > [SimpleDB](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sdb.html#SimpleDB)
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
 [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [IVS](.) > Paginators
 
 Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ivs.html#IVS)
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS)
 type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
@@ -28,7 +28,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
 ```
 
 Boto3 documentation:
-[IVS.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ivs.html#IVS.Paginator.ListChannels)
+[IVS.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS.Paginator.ListChannels)
 
 Arguments for `ListChannelsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_playback_key_pairs_paginator() -> ListPlaybackKeyPairsPaginator:
 ```
 
 Boto3 documentation:
-[IVS.Paginator.ListPlaybackKeyPairs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ivs.html#IVS.Paginator.ListPlaybackKeyPairs)
+[IVS.Paginator.ListPlaybackKeyPairs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS.Paginator.ListPlaybackKeyPairs)
 
 Arguments for `ListPlaybackKeyPairsPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_list_recording_configurations_paginator() -> ListRecordingConfigurations
 ```
 
 Boto3 documentation:
-[IVS.Paginator.ListRecordingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ivs.html#IVS.Paginator.ListRecordingConfigurations)
+[IVS.Paginator.ListRecordingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS.Paginator.ListRecordingConfigurations)
 
 Arguments for `ListRecordingConfigurationsPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_stream_keys_paginator() -> ListStreamKeysPaginator:
 ```
 
 Boto3 documentation:
-[IVS.Paginator.ListStreamKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ivs.html#IVS.Paginator.ListStreamKeys)
+[IVS.Paginator.ListStreamKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS.Paginator.ListStreamKeys)
 
 Arguments for `ListStreamKeysPaginator.paginate` method:
 
@@ -129,7 +129,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
 ```
 
 Boto3 documentation:
-[IVS.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ivs.html#IVS.Paginator.ListStreams)
+[IVS.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS.Paginator.ListStreams)
 
 Arguments for `ListStreamsPaginator.paginate` method:
 

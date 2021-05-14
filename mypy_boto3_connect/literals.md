@@ -3,7 +3,7 @@
 > [Index](..) > [Connect](.) > Literals
 
 Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/connect.html#Connect)
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connect.html#Connect)
 type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 

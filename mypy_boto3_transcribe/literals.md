@@ -3,7 +3,7 @@
 > [Index](..) > [TranscribeService](.) > Literals
 
 Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/transcribe.html#TranscribeService)
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
 [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
@@ -12,6 +12,7 @@ type annotations stubs module
   - [CLMLanguageCodeType](#clmlanguagecodetype)
   - [LanguageCodeType](#languagecodetype)
   - [MediaFormatType](#mediaformattype)
+  - [MedicalContentIdentificationTypeType](#medicalcontentidentificationtypetype)
   - [ModelStatusType](#modelstatustype)
   - [OutputLocationTypeType](#outputlocationtypetype)
   - [RedactionOutputType](#redactionoutputtype)
@@ -107,6 +108,16 @@ Values:
 - `ogg`
 - `wav`
 - `webm`
+
+## MedicalContentIdentificationTypeType
+
+```python
+from mypy_boto3_transcribe.literals import MedicalContentIdentificationTypeType
+```
+
+Values:
+
+- `PHI`
 
 ## ModelStatusType
 

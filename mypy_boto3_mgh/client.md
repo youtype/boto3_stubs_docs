@@ -3,7 +3,7 @@
 > [Index](..) > [MigrationHub](.) > MigrationHubClient
 
 Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub)
+[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
 [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
@@ -46,7 +46,7 @@ def get_mgh_client() -> MigrationHubClient:
 ```
 
 Boto3 documentation:
-[MigrationHub.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client)
+[MigrationHub.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 Type annotations for `boto3.client("mgh").associate_created_artifact` method.
 
 Boto3 documentation:
-[MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
+[MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Type annotations for `boto3.client("mgh").associate_discovered_resource`
 method.
 
 Boto3 documentation:
-[MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
+[MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgh").can_paginate` method.
 
 Boto3 documentation:
-[MigrationHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.can_paginate)
+[MigrationHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.can_paginate)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("mgh").create_progress_update_stream`
 method.
 
 Boto3 documentation:
-[MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
+[MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("mgh").delete_progress_update_stream`
 method.
 
 Boto3 documentation:
-[MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
+[MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgh").describe_application_state` method.
 
 Boto3 documentation:
-[MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
+[MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Returns
 Type annotations for `boto3.client("mgh").describe_migration_task` method.
 
 Boto3 documentation:
-[MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
+[MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
 
 Arguments:
 
@@ -190,7 +190,7 @@ Type annotations for `boto3.client("mgh").disassociate_created_artifact`
 method.
 
 Boto3 documentation:
-[MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
+[MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("mgh").disassociate_discovered_resource`
 method.
 
 Boto3 documentation:
-[MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
+[MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgh").generate_presigned_url` method.
 
 Boto3 documentation:
-[MigrationHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url)
+[MigrationHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Returns `str`.
 Type annotations for `boto3.client("mgh").import_migration_task` method.
 
 Boto3 documentation:
-[MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
+[MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgh").list_application_states` method.
 
 Boto3 documentation:
-[MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.list_application_states)
+[MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.list_application_states)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Returns
 Type annotations for `boto3.client("mgh").list_created_artifacts` method.
 
 Boto3 documentation:
-[MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
+[MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("mgh").list_discovered_resources` method.
 
 Boto3 documentation:
-[MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
+[MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("mgh").list_migration_tasks` method.
 
 Boto3 documentation:
-[MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
+[MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Returns
 Type annotations for `boto3.client("mgh").list_progress_update_streams` method.
 
 Boto3 documentation:
-[MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
+[MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Returns
 Type annotations for `boto3.client("mgh").notify_application_state` method.
 
 Boto3 documentation:
-[MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
+[MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgh").notify_migration_task_state` method.
 
 Boto3 documentation:
-[MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
+[MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgh").put_resource_attributes` method.
 
 Boto3 documentation:
-[MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
+[MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
 
 Arguments:
 

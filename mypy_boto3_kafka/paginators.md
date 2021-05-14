@@ -3,7 +3,7 @@
 > [Index](..) > [Kafka](.) > Paginators
 
 Auto-generated documentation for
-[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka)
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka)
 type annotations stubs module
 [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
@@ -31,7 +31,7 @@ def get_list_cluster_operations_paginator() -> ListClusterOperationsPaginator:
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListClusterOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListClusterOperations)
+[Kafka.Paginator.ListClusterOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListClusterOperations)
 
 Arguments for `ListClusterOperationsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListClusters)
+[Kafka.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListClusters)
 
 Arguments for `ListClustersPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_configuration_revisions_paginator() -> ListConfigurationRevisionsPa
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListConfigurationRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListConfigurationRevisions)
+[Kafka.Paginator.ListConfigurationRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListConfigurationRevisions)
 
 Arguments for `ListConfigurationRevisionsPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_list_configurations_paginator() -> ListConfigurationsPaginator:
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListConfigurations)
+[Kafka.Paginator.ListConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListConfigurations)
 
 Arguments for `ListConfigurationsPaginator.paginate` method:
 
@@ -133,7 +133,7 @@ def get_list_kafka_versions_paginator() -> ListKafkaVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListKafkaVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListKafkaVersions)
+[Kafka.Paginator.ListKafkaVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListKafkaVersions)
 
 Arguments for `ListKafkaVersionsPaginator.paginate` method:
 
@@ -157,7 +157,7 @@ def get_list_nodes_paginator() -> ListNodesPaginator:
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListNodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListNodes)
+[Kafka.Paginator.ListNodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListNodes)
 
 Arguments for `ListNodesPaginator.paginate` method:
 
@@ -183,7 +183,7 @@ def get_list_scram_secrets_paginator() -> ListScramSecretsPaginator:
 ```
 
 Boto3 documentation:
-[Kafka.Paginator.ListScramSecrets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kafka.html#Kafka.Paginator.ListScramSecrets)
+[Kafka.Paginator.ListScramSecrets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Paginator.ListScramSecrets)
 
 Arguments for `ListScramSecretsPaginator.paginate` method:
 

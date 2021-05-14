@@ -3,7 +3,7 @@
 > [Index](..) > [SSMIncidents](.) > Waiters
 
 Auto-generated documentation for
-[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents)
+[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
 [mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
@@ -26,7 +26,7 @@ def get_wait_for_replication_set_active_waiter() -> WaitForReplicationSetActiveW
 ```
 
 Boto3 documentation:
-[SSMIncidents.Waiter.wait_for_replication_set_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Waiter.wait_for_replication_set_active)
+[SSMIncidents.Waiter.wait_for_replication_set_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Waiter.wait_for_replication_set_active)
 
 Arguments for `WaitForReplicationSetActiveWaiter.wait` method:
 
@@ -48,7 +48,7 @@ def get_wait_for_replication_set_deleted_waiter() -> WaitForReplicationSetDelete
 ```
 
 Boto3 documentation:
-[SSMIncidents.Waiter.wait_for_replication_set_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Waiter.wait_for_replication_set_deleted)
+[SSMIncidents.Waiter.wait_for_replication_set_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Waiter.wait_for_replication_set_deleted)
 
 Arguments for `WaitForReplicationSetDeletedWaiter.wait` method:
 

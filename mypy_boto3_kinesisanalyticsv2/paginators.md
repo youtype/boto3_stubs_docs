@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisAnalyticsV2](.) > Paginators
 
 Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
@@ -26,7 +26,7 @@ def get_list_application_snapshots_paginator() -> ListApplicationSnapshotsPagina
 ```
 
 Boto3 documentation:
-[KinesisAnalyticsV2.Paginator.ListApplicationSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
+[KinesisAnalyticsV2.Paginator.ListApplicationSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
 
 Arguments for `ListApplicationSnapshotsPaginator.paginate` method:
 
@@ -52,7 +52,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
 ```
 
 Boto3 documentation:
-[KinesisAnalyticsV2.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
+[KinesisAnalyticsV2.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
 
 Arguments for `ListApplicationsPaginator.paginate` method:
 

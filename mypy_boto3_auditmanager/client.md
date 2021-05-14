@@ -3,7 +3,7 @@
 > [Index](..) > [AuditManager](.) > AuditManagerClient
 
 Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager)
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
 [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
@@ -79,7 +79,7 @@ def get_auditmanager_client() -> AuditManagerClient:
 ```
 
 Boto3 documentation:
-[AuditManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client)
+[AuditManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client)
 
 ## Exceptions
 
@@ -110,7 +110,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AuditManager.Client.associate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
+[AuditManager.Client.associate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AuditManager.Client.batch_associate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
+[AuditManager.Client.batch_associate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Type annotations for
 `boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.batch_create_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
+[AuditManager.Client.batch_create_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Type annotations for
 `boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.batch_delete_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
+[AuditManager.Client.batch_delete_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
 
 Arguments:
 
@@ -178,7 +178,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AuditManager.Client.batch_disassociate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
+[AuditManager.Client.batch_disassociate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AuditManager.Client.batch_import_evidence_to_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
+[AuditManager.Client.batch_import_evidence_to_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").can_paginate` method.
 
 Boto3 documentation:
-[AuditManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.can_paginate)
+[AuditManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.can_paginate)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Returns `bool`.
 Type annotations for `boto3.client("auditmanager").create_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.create_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
+[AuditManager.Client.create_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Type annotations for `boto3.client("auditmanager").create_assessment_framework`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.create_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
+[AuditManager.Client.create_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Type annotations for `boto3.client("auditmanager").create_assessment_report`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.create_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
+[AuditManager.Client.create_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").create_control` method.
 
 Boto3 documentation:
-[AuditManager.Client.create_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.create_control)
+[AuditManager.Client.create_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.create_control)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").delete_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.delete_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
+[AuditManager.Client.delete_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Type annotations for `boto3.client("auditmanager").delete_assessment_framework`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.delete_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
+[AuditManager.Client.delete_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
 
 Arguments:
 
@@ -338,7 +338,7 @@ Type annotations for `boto3.client("auditmanager").delete_assessment_report`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.delete_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
+[AuditManager.Client.delete_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("auditmanager").delete_control` method.
 
 Boto3 documentation:
-[AuditManager.Client.delete_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.delete_control)
+[AuditManager.Client.delete_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.delete_control)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("auditmanager").deregister_account` method.
 
 Boto3 documentation:
-[AuditManager.Client.deregister_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
+[AuditManager.Client.deregister_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
 
 Returns
 [DeregisterAccountResponseTypeDef](./type_defs.md#deregisteraccountresponsetypedef).
@@ -376,7 +376,7 @@ Type annotations for
 `boto3.client("auditmanager").deregister_organization_admin_account` method.
 
 Boto3 documentation:
-[AuditManager.Client.deregister_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
+[AuditManager.Client.deregister_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AuditManager.Client.disassociate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
+[AuditManager.Client.disassociate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("auditmanager").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url)
+[AuditManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Returns `str`.
 Type annotations for `boto3.client("auditmanager").get_account_status` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_account_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
+[AuditManager.Client.get_account_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
 
 Returns
 [GetAccountStatusResponseTypeDef](./type_defs.md#getaccountstatusresponsetypedef).
@@ -432,7 +432,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").get_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
+[AuditManager.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Type annotations for `boto3.client("auditmanager").get_assessment_framework`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.get_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
+[AuditManager.Client.get_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("auditmanager").get_assessment_report_url`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.get_assessment_report_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
+[AuditManager.Client.get_assessment_report_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
 
 Arguments:
 
@@ -477,7 +477,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").get_change_logs` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_change_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
+[AuditManager.Client.get_change_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
 
 Arguments:
 
@@ -495,7 +495,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").get_control` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_control)
+[AuditManager.Client.get_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_control)
 
 Arguments:
 
@@ -508,7 +508,7 @@ Returns [GetControlResponseTypeDef](./type_defs.md#getcontrolresponsetypedef).
 Type annotations for `boto3.client("auditmanager").get_delegations` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_delegations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
+[AuditManager.Client.get_delegations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").get_evidence` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_evidence](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
+[AuditManager.Client.get_evidence](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
 
 Arguments:
 
@@ -541,7 +541,7 @@ Type annotations for
 `boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_evidence_by_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
+[AuditManager.Client.get_evidence_by_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
+[AuditManager.Client.get_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
 
 Arguments:
 
@@ -576,7 +576,7 @@ Type annotations for
 `boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_evidence_folders_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
+[AuditManager.Client.get_evidence_folders_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
 
 Arguments:
 
@@ -594,7 +594,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[AuditManager.Client.get_evidence_folders_by_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
+[AuditManager.Client.get_evidence_folders_by_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
 
 Arguments:
 
@@ -613,7 +613,7 @@ Type annotations for
 `boto3.client("auditmanager").get_organization_admin_account` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
+[AuditManager.Client.get_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
 
 Returns
 [GetOrganizationAdminAccountResponseTypeDef](./type_defs.md#getorganizationadminaccountresponsetypedef).
@@ -624,7 +624,7 @@ Type annotations for `boto3.client("auditmanager").get_services_in_scope`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.get_services_in_scope](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
+[AuditManager.Client.get_services_in_scope](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
 
 Returns
 [GetServicesInScopeResponseTypeDef](./type_defs.md#getservicesinscoperesponsetypedef).
@@ -634,7 +634,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
 Boto3 documentation:
-[AuditManager.Client.get_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.get_settings)
+[AuditManager.Client.get_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.get_settings)
 
 Arguments:
 
@@ -650,7 +650,7 @@ Type annotations for `boto3.client("auditmanager").list_assessment_frameworks`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.list_assessment_frameworks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
+[AuditManager.Client.list_assessment_frameworks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
 
 Arguments:
 
@@ -668,7 +668,7 @@ Type annotations for `boto3.client("auditmanager").list_assessment_reports`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.list_assessment_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
+[AuditManager.Client.list_assessment_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
 
 Arguments:
 
@@ -683,7 +683,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").list_assessments` method.
 
 Boto3 documentation:
-[AuditManager.Client.list_assessments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
+[AuditManager.Client.list_assessments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
 
 Arguments:
 
@@ -698,7 +698,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").list_controls` method.
 
 Boto3 documentation:
-[AuditManager.Client.list_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_controls)
+[AuditManager.Client.list_controls](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_controls)
 
 Arguments:
 
@@ -715,7 +715,7 @@ Type annotations for
 `boto3.client("auditmanager").list_keywords_for_data_source` method.
 
 Boto3 documentation:
-[AuditManager.Client.list_keywords_for_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
+[AuditManager.Client.list_keywords_for_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
 
 Arguments:
 
@@ -731,7 +731,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").list_notifications` method.
 
 Boto3 documentation:
-[AuditManager.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
+[AuditManager.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
 
 Arguments:
 
@@ -747,7 +747,7 @@ Type annotations for `boto3.client("auditmanager").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
+[AuditManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -761,7 +761,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
 Boto3 documentation:
-[AuditManager.Client.register_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.register_account)
+[AuditManager.Client.register_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.register_account)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Type annotations for
 `boto3.client("auditmanager").register_organization_admin_account` method.
 
 Boto3 documentation:
-[AuditManager.Client.register_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
+[AuditManager.Client.register_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").tag_resource` method.
 
 Boto3 documentation:
-[AuditManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
+[AuditManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
 
 Arguments:
 
@@ -805,7 +805,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("auditmanager").untag_resource` method.
 
 Boto3 documentation:
-[AuditManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
+[AuditManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
 
 Arguments:
 
@@ -819,7 +819,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("auditmanager").update_assessment` method.
 
 Boto3 documentation:
-[AuditManager.Client.update_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
+[AuditManager.Client.update_assessment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
 
 Arguments:
 
@@ -840,7 +840,7 @@ Type annotations for `boto3.client("auditmanager").update_assessment_control`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.update_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
+[AuditManager.Client.update_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
 
 Arguments:
 
@@ -859,7 +859,7 @@ Type annotations for
 `boto3.client("auditmanager").update_assessment_control_set_status` method.
 
 Boto3 documentation:
-[AuditManager.Client.update_assessment_control_set_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
+[AuditManager.Client.update_assessment_control_set_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
 
 Arguments:
 
@@ -878,7 +878,7 @@ Type annotations for `boto3.client("auditmanager").update_assessment_framework`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.update_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
+[AuditManager.Client.update_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
 
 Arguments:
 
@@ -899,7 +899,7 @@ Type annotations for `boto3.client("auditmanager").update_assessment_status`
 method.
 
 Boto3 documentation:
-[AuditManager.Client.update_assessment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
+[AuditManager.Client.update_assessment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
 
 Arguments:
 
@@ -915,7 +915,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").update_control` method.
 
 Boto3 documentation:
-[AuditManager.Client.update_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_control)
+[AuditManager.Client.update_control](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_control)
 
 Arguments:
 
@@ -937,7 +937,7 @@ Returns
 Type annotations for `boto3.client("auditmanager").update_settings` method.
 
 Boto3 documentation:
-[AuditManager.Client.update_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.update_settings)
+[AuditManager.Client.update_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.update_settings)
 
 Arguments:
 
@@ -956,7 +956,7 @@ Type annotations for
 `boto3.client("auditmanager").validate_assessment_report_integrity` method.
 
 Boto3 documentation:
-[AuditManager.Client.validate_assessment_report_integrity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
+[AuditManager.Client.validate_assessment_report_integrity](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
 
 Arguments:
 

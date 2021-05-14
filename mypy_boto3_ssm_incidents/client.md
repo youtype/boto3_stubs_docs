@@ -3,7 +3,7 @@
 > [Index](..) > [SSMIncidents](.) > SSMIncidentsClient
 
 Auto-generated documentation for
-[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents)
+[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
 [mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
@@ -59,7 +59,7 @@ def get_ssm-incidents_client() -> SSMIncidentsClient:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client)
+[SSMIncidents.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 Type annotations for `boto3.client("ssm-incidents").can_paginate` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.can_paginate)
+[SSMIncidents.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.can_paginate)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Type annotations for `boto3.client("ssm-incidents").create_replication_set`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.create_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.create_replication_set)
+[SSMIncidents.Client.create_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.create_replication_set)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("ssm-incidents").create_response_plan`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.create_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.create_response_plan)
+[SSMIncidents.Client.create_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.create_response_plan)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("ssm-incidents").create_timeline_event`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.create_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.create_timeline_event)
+[SSMIncidents.Client.create_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.create_timeline_event)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Type annotations for `boto3.client("ssm-incidents").delete_incident_record`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.delete_incident_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_incident_record)
+[SSMIncidents.Client.delete_incident_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_incident_record)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Type annotations for `boto3.client("ssm-incidents").delete_replication_set`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.delete_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_replication_set)
+[SSMIncidents.Client.delete_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_replication_set)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Type annotations for `boto3.client("ssm-incidents").delete_resource_policy`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_resource_policy)
+[SSMIncidents.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_resource_policy)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("ssm-incidents").delete_response_plan`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.delete_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_response_plan)
+[SSMIncidents.Client.delete_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_response_plan)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("ssm-incidents").delete_timeline_event`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.delete_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_timeline_event)
+[SSMIncidents.Client.delete_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_timeline_event)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("ssm-incidents").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.generate_presigned_url)
+[SSMIncidents.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.generate_presigned_url)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("ssm-incidents").get_incident_record`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.get_incident_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.get_incident_record)
+[SSMIncidents.Client.get_incident_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.get_incident_record)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Type annotations for `boto3.client("ssm-incidents").get_replication_set`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.get_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.get_replication_set)
+[SSMIncidents.Client.get_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.get_replication_set)
 
 Arguments:
 
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("ssm-incidents").get_resource_policies`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.get_resource_policies)
+[SSMIncidents.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.get_resource_policies)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Returns
 Type annotations for `boto3.client("ssm-incidents").get_response_plan` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.get_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.get_response_plan)
+[SSMIncidents.Client.get_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.get_response_plan)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("ssm-incidents").get_timeline_event` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.get_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.get_timeline_event)
+[SSMIncidents.Client.get_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.get_timeline_event)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("ssm-incidents").list_incident_records`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.list_incident_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.list_incident_records)
+[SSMIncidents.Client.list_incident_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.list_incident_records)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Returns
 Type annotations for `boto3.client("ssm-incidents").list_related_items` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.list_related_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.list_related_items)
+[SSMIncidents.Client.list_related_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.list_related_items)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("ssm-incidents").list_replication_sets`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.list_replication_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.list_replication_sets)
+[SSMIncidents.Client.list_replication_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.list_replication_sets)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Type annotations for `boto3.client("ssm-incidents").list_response_plans`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.list_response_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.list_response_plans)
+[SSMIncidents.Client.list_response_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.list_response_plans)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("ssm-incidents").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.list_tags_for_resource)
+[SSMIncidents.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("ssm-incidents").list_timeline_events`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.list_timeline_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.list_timeline_events)
+[SSMIncidents.Client.list_timeline_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.list_timeline_events)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("ssm-incidents").put_resource_policy`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.put_resource_policy)
+[SSMIncidents.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.put_resource_policy)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns
 Type annotations for `boto3.client("ssm-incidents").start_incident` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.start_incident](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.start_incident)
+[SSMIncidents.Client.start_incident](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.start_incident)
 
 Arguments:
 
@@ -468,7 +468,7 @@ Returns
 Type annotations for `boto3.client("ssm-incidents").tag_resource` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.tag_resource)
+[SSMIncidents.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.tag_resource)
 
 Arguments:
 
@@ -482,7 +482,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-incidents").untag_resource` method.
 
 Boto3 documentation:
-[SSMIncidents.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.untag_resource)
+[SSMIncidents.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.untag_resource)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("ssm-incidents").update_deletion_protection`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.update_deletion_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.update_deletion_protection)
+[SSMIncidents.Client.update_deletion_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.update_deletion_protection)
 
 Arguments:
 
@@ -513,7 +513,7 @@ Type annotations for `boto3.client("ssm-incidents").update_incident_record`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.update_incident_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.update_incident_record)
+[SSMIncidents.Client.update_incident_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.update_incident_record)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Type annotations for `boto3.client("ssm-incidents").update_related_items`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.update_related_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.update_related_items)
+[SSMIncidents.Client.update_related_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.update_related_items)
 
 Arguments:
 
@@ -553,7 +553,7 @@ Type annotations for `boto3.client("ssm-incidents").update_replication_set`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.update_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.update_replication_set)
+[SSMIncidents.Client.update_replication_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.update_replication_set)
 
 Arguments:
 
@@ -571,7 +571,7 @@ Type annotations for `boto3.client("ssm-incidents").update_response_plan`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.update_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.update_response_plan)
+[SSMIncidents.Client.update_response_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.update_response_plan)
 
 Arguments:
 
@@ -596,7 +596,7 @@ Type annotations for `boto3.client("ssm-incidents").update_timeline_event`
 method.
 
 Boto3 documentation:
-[SSMIncidents.Client.update_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ssm-incidents.html#SSMIncidents.Client.update_timeline_event)
+[SSMIncidents.Client.update_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ssm-incidents.html#SSMIncidents.Client.update_timeline_event)
 
 Arguments:
 

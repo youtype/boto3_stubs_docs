@@ -3,7 +3,7 @@
 > [Index](..) > [CloudTrail](.) > Paginators
 
 Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudtrail.html#CloudTrail)
+[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
 [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
@@ -28,7 +28,7 @@ def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
 ```
 
 Boto3 documentation:
-[CloudTrail.Paginator.ListPublicKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudtrail.html#CloudTrail.Paginator.ListPublicKeys)
+[CloudTrail.Paginator.ListPublicKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudtrail.html#CloudTrail.Paginator.ListPublicKeys)
 
 Arguments for `ListPublicKeysPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
 ```
 
 Boto3 documentation:
-[CloudTrail.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTags)
+[CloudTrail.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTags)
 
 Arguments for `ListTagsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_trails_paginator() -> ListTrailsPaginator:
 ```
 
 Boto3 documentation:
-[CloudTrail.Paginator.ListTrails](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTrails)
+[CloudTrail.Paginator.ListTrails](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTrails)
 
 Arguments for `ListTrailsPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_lookup_events_paginator() -> LookupEventsPaginator:
 ```
 
 Boto3 documentation:
-[CloudTrail.Paginator.LookupEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudtrail.html#CloudTrail.Paginator.LookupEvents)
+[CloudTrail.Paginator.LookupEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudtrail.html#CloudTrail.Paginator.LookupEvents)
 
 Arguments for `LookupEventsPaginator.paginate` method:
 

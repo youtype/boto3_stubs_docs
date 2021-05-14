@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStar](.) > CodeStarClient
 
 Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar)
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar)
 type annotations stubs module
 [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
@@ -47,7 +47,7 @@ def get_codestar_client() -> CodeStarClient:
 ```
 
 Boto3 documentation:
-[CodeStar.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client)
+[CodeStar.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client)
 
 ## Exceptions
 
@@ -85,7 +85,7 @@ Exceptions:
 Type annotations for `boto3.client("codestar").associate_team_member` method.
 
 Boto3 documentation:
-[CodeStar.Client.associate_team_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.associate_team_member)
+[CodeStar.Client.associate_team_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.associate_team_member)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Returns
 Type annotations for `boto3.client("codestar").can_paginate` method.
 
 Boto3 documentation:
-[CodeStar.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.can_paginate)
+[CodeStar.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.can_paginate)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns `bool`.
 Type annotations for `boto3.client("codestar").create_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.create_project)
+[CodeStar.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.create_project)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns
 Type annotations for `boto3.client("codestar").create_user_profile` method.
 
 Boto3 documentation:
-[CodeStar.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.create_user_profile)
+[CodeStar.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.create_user_profile)
 
 Arguments:
 
@@ -153,7 +153,7 @@ Returns
 Type annotations for `boto3.client("codestar").delete_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.delete_project)
+[CodeStar.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.delete_project)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns
 Type annotations for `boto3.client("codestar").delete_user_profile` method.
 
 Boto3 documentation:
-[CodeStar.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.delete_user_profile)
+[CodeStar.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.delete_user_profile)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("codestar").describe_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.describe_project)
+[CodeStar.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.describe_project)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns
 Type annotations for `boto3.client("codestar").describe_user_profile` method.
 
 Boto3 documentation:
-[CodeStar.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.describe_user_profile)
+[CodeStar.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.describe_user_profile)
 
 Arguments:
 
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("codestar").disassociate_team_member`
 method.
 
 Boto3 documentation:
-[CodeStar.Client.disassociate_team_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.disassociate_team_member)
+[CodeStar.Client.disassociate_team_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.disassociate_team_member)
 
 Arguments:
 
@@ -226,7 +226,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codestar").generate_presigned_url` method.
 
 Boto3 documentation:
-[CodeStar.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.generate_presigned_url)
+[CodeStar.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.generate_presigned_url)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Returns `str`.
 Type annotations for `boto3.client("codestar").list_projects` method.
 
 Boto3 documentation:
-[CodeStar.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.list_projects)
+[CodeStar.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.list_projects)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 Type annotations for `boto3.client("codestar").list_resources` method.
 
 Boto3 documentation:
-[CodeStar.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.list_resources)
+[CodeStar.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.list_resources)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns
 Type annotations for `boto3.client("codestar").list_tags_for_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.list_tags_for_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
+[CodeStar.Client.list_tags_for_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns
 Type annotations for `boto3.client("codestar").list_team_members` method.
 
 Boto3 documentation:
-[CodeStar.Client.list_team_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.list_team_members)
+[CodeStar.Client.list_team_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.list_team_members)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("codestar").list_user_profiles` method.
 
 Boto3 documentation:
-[CodeStar.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.list_user_profiles)
+[CodeStar.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.list_user_profiles)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns
 Type annotations for `boto3.client("codestar").tag_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.tag_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.tag_project)
+[CodeStar.Client.tag_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.tag_project)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns [TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef).
 Type annotations for `boto3.client("codestar").untag_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.untag_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.untag_project)
+[CodeStar.Client.untag_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.untag_project)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codestar").update_project` method.
 
 Boto3 documentation:
-[CodeStar.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.update_project)
+[CodeStar.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.update_project)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codestar").update_team_member` method.
 
 Boto3 documentation:
-[CodeStar.Client.update_team_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.update_team_member)
+[CodeStar.Client.update_team_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.update_team_member)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Returns
 Type annotations for `boto3.client("codestar").update_user_profile` method.
 
 Boto3 documentation:
-[CodeStar.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codestar.html#CodeStar.Client.update_user_profile)
+[CodeStar.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codestar.html#CodeStar.Client.update_user_profile)
 
 Arguments:
 

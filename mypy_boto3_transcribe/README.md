@@ -3,7 +3,7 @@
 > [Index](..) > TranscribeService
 
 Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/transcribe.html#TranscribeService)
+[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
 [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
@@ -86,6 +86,7 @@ from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 - [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
 - [LanguageCodeType](./literals.md#languagecodetype)
 - [MediaFormatType](./literals.md#mediaformattype)
+- [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype)
 - [ModelStatusType](./literals.md#modelstatustype)
 - [OutputLocationTypeType](./literals.md#outputlocationtypetype)
 - [RedactionOutputType](./literals.md#redactionoutputtype)

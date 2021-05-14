@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisVideoArchivedMedia](.) > Literals
 
 Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
 [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Chime](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime)
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime)
 type annotations stubs module
 [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 

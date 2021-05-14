@@ -3,7 +3,7 @@
 > [Index](..) > [Chime](.) > ChimeClient
 
 Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime)
+[Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime)
 type annotations stubs module
 [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
@@ -212,7 +212,7 @@ def get_chime_client() -> ChimeClient:
 ```
 
 Boto3 documentation:
-[Chime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client)
+[Chime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client)
 
 ## Exceptions
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("chime").associate_phone_number_with_user`
 method.
 
 Boto3 documentation:
-[Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
+[Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Type annotations for
 `boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
 
 Boto3 documentation:
-[Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
+[Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
+[Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Type annotations for
 `boto3.client("chime").associate_signin_delegate_groups_with_account` method.
 
 Boto3 documentation:
-[Chime.Client.associate_signin_delegate_groups_with_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
+[Chime.Client.associate_signin_delegate_groups_with_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("chime").batch_create_attendee` method.
 
 Boto3 documentation:
-[Chime.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_create_attendee)
+[Chime.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_create_attendee)
 
 Arguments:
 
@@ -334,7 +334,7 @@ Type annotations for `boto3.client("chime").batch_create_channel_membership`
 method.
 
 Boto3 documentation:
-[Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
+[Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("chime").batch_create_room_membership`
 method.
 
 Boto3 documentation:
-[Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_create_room_membership)
+[Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_create_room_membership)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Returns
 Type annotations for `boto3.client("chime").batch_delete_phone_number` method.
 
 Boto3 documentation:
-[Chime.Client.batch_delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
+[Chime.Client.batch_delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Returns
 Type annotations for `boto3.client("chime").batch_suspend_user` method.
 
 Boto3 documentation:
-[Chime.Client.batch_suspend_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_suspend_user)
+[Chime.Client.batch_suspend_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_suspend_user)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("chime").batch_unsuspend_user` method.
 
 Boto3 documentation:
-[Chime.Client.batch_unsuspend_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
+[Chime.Client.batch_unsuspend_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
 
 Arguments:
 
@@ -414,7 +414,7 @@ Returns
 Type annotations for `boto3.client("chime").batch_update_phone_number` method.
 
 Boto3 documentation:
-[Chime.Client.batch_update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_update_phone_number)
+[Chime.Client.batch_update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_update_phone_number)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Returns
 Type annotations for `boto3.client("chime").batch_update_user` method.
 
 Boto3 documentation:
-[Chime.Client.batch_update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.batch_update_user)
+[Chime.Client.batch_update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.batch_update_user)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns
 Type annotations for `boto3.client("chime").can_paginate` method.
 
 Boto3 documentation:
-[Chime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.can_paginate)
+[Chime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.can_paginate)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Returns `bool`.
 Type annotations for `boto3.client("chime").create_account` method.
 
 Boto3 documentation:
-[Chime.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_account)
+[Chime.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_account)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Returns
 Type annotations for `boto3.client("chime").create_app_instance` method.
 
 Boto3 documentation:
-[Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_app_instance)
+[Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_app_instance)
 
 Arguments:
 
@@ -491,7 +491,7 @@ Returns
 Type annotations for `boto3.client("chime").create_app_instance_admin` method.
 
 Boto3 documentation:
-[Chime.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_app_instance_admin)
+[Chime.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_app_instance_admin)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Returns
 Type annotations for `boto3.client("chime").create_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_app_instance_user)
+[Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_app_instance_user)
 
 Arguments:
 
@@ -525,7 +525,7 @@ Returns
 Type annotations for `boto3.client("chime").create_attendee` method.
 
 Boto3 documentation:
-[Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_attendee)
+[Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_attendee)
 
 Arguments:
 
@@ -541,7 +541,7 @@ Returns
 Type annotations for `boto3.client("chime").create_bot` method.
 
 Boto3 documentation:
-[Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_bot)
+[Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_bot)
 
 Arguments:
 
@@ -556,7 +556,7 @@ Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 Type annotations for `boto3.client("chime").create_channel` method.
 
 Boto3 documentation:
-[Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_channel)
+[Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_channel)
 
 Arguments:
 
@@ -577,7 +577,7 @@ Returns
 Type annotations for `boto3.client("chime").create_channel_ban` method.
 
 Boto3 documentation:
-[Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_channel_ban)
+[Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_channel_ban)
 
 Arguments:
 
@@ -593,7 +593,7 @@ Returns
 Type annotations for `boto3.client("chime").create_channel_membership` method.
 
 Boto3 documentation:
-[Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_channel_membership)
+[Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_channel_membership)
 
 Arguments:
 
@@ -611,7 +611,7 @@ Returns
 Type annotations for `boto3.client("chime").create_channel_moderator` method.
 
 Boto3 documentation:
-[Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_channel_moderator)
+[Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_channel_moderator)
 
 Arguments:
 
@@ -627,7 +627,7 @@ Returns
 Type annotations for `boto3.client("chime").create_meeting` method.
 
 Boto3 documentation:
-[Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_meeting)
+[Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_meeting)
 
 Arguments:
 
@@ -647,7 +647,7 @@ Returns
 Type annotations for `boto3.client("chime").create_meeting_dial_out` method.
 
 Boto3 documentation:
-[Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
+[Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
 
 Arguments:
 
@@ -665,7 +665,7 @@ Type annotations for `boto3.client("chime").create_meeting_with_attendees`
 method.
 
 Boto3 documentation:
-[Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
+[Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
 
 Arguments:
 
@@ -687,7 +687,7 @@ Returns
 Type annotations for `boto3.client("chime").create_phone_number_order` method.
 
 Boto3 documentation:
-[Chime.Client.create_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_phone_number_order)
+[Chime.Client.create_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_phone_number_order)
 
 Arguments:
 
@@ -704,7 +704,7 @@ Returns
 Type annotations for `boto3.client("chime").create_proxy_session` method.
 
 Boto3 documentation:
-[Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_proxy_session)
+[Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_proxy_session)
 
 Arguments:
 
@@ -728,7 +728,7 @@ Returns
 Type annotations for `boto3.client("chime").create_room` method.
 
 Boto3 documentation:
-[Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_room)
+[Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_room)
 
 Arguments:
 
@@ -743,7 +743,7 @@ Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
 Type annotations for `boto3.client("chime").create_room_membership` method.
 
 Boto3 documentation:
-[Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_room_membership)
+[Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_room_membership)
 
 Arguments:
 
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("chime").create_sip_media_application`
 method.
 
 Boto3 documentation:
-[Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_sip_media_application)
+[Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_sip_media_application)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Type annotations for `boto3.client("chime").create_sip_media_application_call`
 method.
 
 Boto3 documentation:
-[Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
+[Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
 
 Arguments:
 
@@ -796,7 +796,7 @@ Returns
 Type annotations for `boto3.client("chime").create_sip_rule` method.
 
 Boto3 documentation:
-[Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_sip_rule)
+[Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_sip_rule)
 
 Arguments:
 
@@ -817,7 +817,7 @@ Returns
 Type annotations for `boto3.client("chime").create_user` method.
 
 Boto3 documentation:
-[Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_user)
+[Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_user)
 
 Arguments:
 
@@ -833,7 +833,7 @@ Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 Type annotations for `boto3.client("chime").create_voice_connector` method.
 
 Boto3 documentation:
-[Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_voice_connector)
+[Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_voice_connector)
 
 Arguments:
 
@@ -851,7 +851,7 @@ Type annotations for `boto3.client("chime").create_voice_connector_group`
 method.
 
 Boto3 documentation:
-[Chime.Client.create_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.create_voice_connector_group)
+[Chime.Client.create_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.create_voice_connector_group)
 
 Arguments:
 
@@ -867,7 +867,7 @@ Returns
 Type annotations for `boto3.client("chime").delete_account` method.
 
 Boto3 documentation:
-[Chime.Client.delete_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_account)
+[Chime.Client.delete_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_account)
 
 Arguments:
 
@@ -880,7 +880,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("chime").delete_app_instance` method.
 
 Boto3 documentation:
-[Chime.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_app_instance)
+[Chime.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_app_instance)
 
 Arguments:
 
@@ -891,7 +891,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_app_instance_admin` method.
 
 Boto3 documentation:
-[Chime.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
+[Chime.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
 
 Arguments:
 
@@ -904,7 +904,7 @@ Type annotations for
 `boto3.client("chime").delete_app_instance_streaming_configurations` method.
 
 Boto3 documentation:
-[Chime.Client.delete_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
+[Chime.Client.delete_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
 
 Arguments:
 
@@ -915,7 +915,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_app_instance_user)
+[Chime.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_app_instance_user)
 
 Arguments:
 
@@ -926,7 +926,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_attendee` method.
 
 Boto3 documentation:
-[Chime.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_attendee)
+[Chime.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_attendee)
 
 Arguments:
 
@@ -938,7 +938,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_channel` method.
 
 Boto3 documentation:
-[Chime.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_channel)
+[Chime.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_channel)
 
 Arguments:
 
@@ -950,7 +950,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_channel_ban` method.
 
 Boto3 documentation:
-[Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_channel_ban)
+[Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_channel_ban)
 
 Arguments:
 
@@ -963,7 +963,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_channel_membership` method.
 
 Boto3 documentation:
-[Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_channel_membership)
+[Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_channel_membership)
 
 Arguments:
 
@@ -976,7 +976,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_channel_message` method.
 
 Boto3 documentation:
-[Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_channel_message)
+[Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_channel_message)
 
 Arguments:
 
@@ -989,7 +989,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_channel_moderator` method.
 
 Boto3 documentation:
-[Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_channel_moderator)
+[Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_channel_moderator)
 
 Arguments:
 
@@ -1003,7 +1003,7 @@ Type annotations for `boto3.client("chime").delete_events_configuration`
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_events_configuration)
+[Chime.Client.delete_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_events_configuration)
 
 Arguments:
 
@@ -1015,7 +1015,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_meeting` method.
 
 Boto3 documentation:
-[Chime.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_meeting)
+[Chime.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_meeting)
 
 Arguments:
 
@@ -1026,7 +1026,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_phone_number` method.
 
 Boto3 documentation:
-[Chime.Client.delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_phone_number)
+[Chime.Client.delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_phone_number)
 
 Arguments:
 
@@ -1037,7 +1037,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_proxy_session` method.
 
 Boto3 documentation:
-[Chime.Client.delete_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_proxy_session)
+[Chime.Client.delete_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_proxy_session)
 
 Arguments:
 
@@ -1049,7 +1049,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_room` method.
 
 Boto3 documentation:
-[Chime.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_room)
+[Chime.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_room)
 
 Arguments:
 
@@ -1061,7 +1061,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_room_membership` method.
 
 Boto3 documentation:
-[Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_room_membership)
+[Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_room_membership)
 
 Arguments:
 
@@ -1075,7 +1075,7 @@ Type annotations for `boto3.client("chime").delete_sip_media_application`
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_sip_media_application)
+[Chime.Client.delete_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_sip_media_application)
 
 Arguments:
 
@@ -1086,7 +1086,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_sip_rule` method.
 
 Boto3 documentation:
-[Chime.Client.delete_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_sip_rule)
+[Chime.Client.delete_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_sip_rule)
 
 Arguments:
 
@@ -1097,7 +1097,7 @@ Arguments:
 Type annotations for `boto3.client("chime").delete_voice_connector` method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector)
+[Chime.Client.delete_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector)
 
 Arguments:
 
@@ -1110,7 +1110,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
+[Chime.Client.delete_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
 
 Arguments:
 
@@ -1122,7 +1122,7 @@ Type annotations for `boto3.client("chime").delete_voice_connector_group`
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
+[Chime.Client.delete_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
 
 Arguments:
 
@@ -1134,7 +1134,7 @@ Type annotations for `boto3.client("chime").delete_voice_connector_origination`
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
+[Chime.Client.delete_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
 
 Arguments:
 
@@ -1146,7 +1146,7 @@ Type annotations for `boto3.client("chime").delete_voice_connector_proxy`
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
+[Chime.Client.delete_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
 
 Arguments:
 
@@ -1158,7 +1158,7 @@ Type annotations for
 `boto3.client("chime").delete_voice_connector_streaming_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
+[Chime.Client.delete_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
 
 Arguments:
 
@@ -1170,7 +1170,7 @@ Type annotations for `boto3.client("chime").delete_voice_connector_termination`
 method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
+[Chime.Client.delete_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
 
 Arguments:
 
@@ -1182,7 +1182,7 @@ Type annotations for
 `boto3.client("chime").delete_voice_connector_termination_credentials` method.
 
 Boto3 documentation:
-[Chime.Client.delete_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
+[Chime.Client.delete_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
 
 Arguments:
 
@@ -1194,7 +1194,7 @@ Arguments:
 Type annotations for `boto3.client("chime").describe_app_instance` method.
 
 Boto3 documentation:
-[Chime.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_app_instance)
+[Chime.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_app_instance)
 
 Arguments:
 
@@ -1209,7 +1209,7 @@ Type annotations for `boto3.client("chime").describe_app_instance_admin`
 method.
 
 Boto3 documentation:
-[Chime.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
+[Chime.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
 
 Arguments:
 
@@ -1224,7 +1224,7 @@ Returns
 Type annotations for `boto3.client("chime").describe_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_app_instance_user)
+[Chime.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_app_instance_user)
 
 Arguments:
 
@@ -1238,7 +1238,7 @@ Returns
 Type annotations for `boto3.client("chime").describe_channel` method.
 
 Boto3 documentation:
-[Chime.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_channel)
+[Chime.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_channel)
 
 Arguments:
 
@@ -1253,7 +1253,7 @@ Returns
 Type annotations for `boto3.client("chime").describe_channel_ban` method.
 
 Boto3 documentation:
-[Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_channel_ban)
+[Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_channel_ban)
 
 Arguments:
 
@@ -1270,7 +1270,7 @@ Type annotations for `boto3.client("chime").describe_channel_membership`
 method.
 
 Boto3 documentation:
-[Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_channel_membership)
+[Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_channel_membership)
 
 Arguments:
 
@@ -1288,7 +1288,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
+[Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
 
 Arguments:
 
@@ -1305,7 +1305,7 @@ Type annotations for
 `boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
+[Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
 
 Arguments:
 
@@ -1321,7 +1321,7 @@ Returns
 Type annotations for `boto3.client("chime").describe_channel_moderator` method.
 
 Boto3 documentation:
-[Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.describe_channel_moderator)
+[Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.describe_channel_moderator)
 
 Arguments:
 
@@ -1338,7 +1338,7 @@ Type annotations for
 `boto3.client("chime").disassociate_phone_number_from_user` method.
 
 Boto3 documentation:
-[Chime.Client.disassociate_phone_number_from_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
+[Chime.Client.disassociate_phone_number_from_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
 
 Arguments:
 
@@ -1353,7 +1353,7 @@ Type annotations for
 `boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
 
 Boto3 documentation:
-[Chime.Client.disassociate_phone_numbers_from_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
+[Chime.Client.disassociate_phone_numbers_from_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
 
 Arguments:
 
@@ -1370,7 +1370,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.disassociate_phone_numbers_from_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
+[Chime.Client.disassociate_phone_numbers_from_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
 
 Arguments:
 
@@ -1387,7 +1387,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.disassociate_signin_delegate_groups_from_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
+[Chime.Client.disassociate_signin_delegate_groups_from_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
 
 Arguments:
 
@@ -1401,7 +1401,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("chime").generate_presigned_url` method.
 
 Boto3 documentation:
-[Chime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.generate_presigned_url)
+[Chime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1417,7 +1417,7 @@ Returns `str`.
 Type annotations for `boto3.client("chime").get_account` method.
 
 Boto3 documentation:
-[Chime.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_account)
+[Chime.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_account)
 
 Arguments:
 
@@ -1430,7 +1430,7 @@ Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
 Type annotations for `boto3.client("chime").get_account_settings` method.
 
 Boto3 documentation:
-[Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_account_settings)
+[Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_account_settings)
 
 Arguments:
 
@@ -1445,7 +1445,7 @@ Type annotations for
 `boto3.client("chime").get_app_instance_retention_settings` method.
 
 Boto3 documentation:
-[Chime.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
+[Chime.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
 
 Arguments:
 
@@ -1460,7 +1460,7 @@ Type annotations for
 `boto3.client("chime").get_app_instance_streaming_configurations` method.
 
 Boto3 documentation:
-[Chime.Client.get_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
+[Chime.Client.get_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
 
 Arguments:
 
@@ -1474,7 +1474,7 @@ Returns
 Type annotations for `boto3.client("chime").get_attendee` method.
 
 Boto3 documentation:
-[Chime.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_attendee)
+[Chime.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_attendee)
 
 Arguments:
 
@@ -1489,7 +1489,7 @@ Returns
 Type annotations for `boto3.client("chime").get_bot` method.
 
 Boto3 documentation:
-[Chime.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_bot)
+[Chime.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_bot)
 
 Arguments:
 
@@ -1503,7 +1503,7 @@ Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
 Type annotations for `boto3.client("chime").get_channel_message` method.
 
 Boto3 documentation:
-[Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_channel_message)
+[Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_channel_message)
 
 Arguments:
 
@@ -1519,7 +1519,7 @@ Returns
 Type annotations for `boto3.client("chime").get_events_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.get_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_events_configuration)
+[Chime.Client.get_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_events_configuration)
 
 Arguments:
 
@@ -1534,7 +1534,7 @@ Returns
 Type annotations for `boto3.client("chime").get_global_settings` method.
 
 Boto3 documentation:
-[Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_global_settings)
+[Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_global_settings)
 
 Returns
 [GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
@@ -1544,7 +1544,7 @@ Returns
 Type annotations for `boto3.client("chime").get_meeting` method.
 
 Boto3 documentation:
-[Chime.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_meeting)
+[Chime.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_meeting)
 
 Arguments:
 
@@ -1558,7 +1558,7 @@ Type annotations for `boto3.client("chime").get_messaging_session_endpoint`
 method.
 
 Boto3 documentation:
-[Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
+[Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
 
 Returns
 [GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
@@ -1568,7 +1568,7 @@ Returns
 Type annotations for `boto3.client("chime").get_phone_number` method.
 
 Boto3 documentation:
-[Chime.Client.get_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_phone_number)
+[Chime.Client.get_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_phone_number)
 
 Arguments:
 
@@ -1582,7 +1582,7 @@ Returns
 Type annotations for `boto3.client("chime").get_phone_number_order` method.
 
 Boto3 documentation:
-[Chime.Client.get_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_phone_number_order)
+[Chime.Client.get_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_phone_number_order)
 
 Arguments:
 
@@ -1596,7 +1596,7 @@ Returns
 Type annotations for `boto3.client("chime").get_phone_number_settings` method.
 
 Boto3 documentation:
-[Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_phone_number_settings)
+[Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_phone_number_settings)
 
 Returns
 [GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef).
@@ -1606,7 +1606,7 @@ Returns
 Type annotations for `boto3.client("chime").get_proxy_session` method.
 
 Boto3 documentation:
-[Chime.Client.get_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_proxy_session)
+[Chime.Client.get_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_proxy_session)
 
 Arguments:
 
@@ -1621,7 +1621,7 @@ Returns
 Type annotations for `boto3.client("chime").get_retention_settings` method.
 
 Boto3 documentation:
-[Chime.Client.get_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_retention_settings)
+[Chime.Client.get_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_retention_settings)
 
 Arguments:
 
@@ -1635,7 +1635,7 @@ Returns
 Type annotations for `boto3.client("chime").get_room` method.
 
 Boto3 documentation:
-[Chime.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_room)
+[Chime.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_room)
 
 Arguments:
 
@@ -1649,7 +1649,7 @@ Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
 Type annotations for `boto3.client("chime").get_sip_media_application` method.
 
 Boto3 documentation:
-[Chime.Client.get_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_sip_media_application)
+[Chime.Client.get_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_sip_media_application)
 
 Arguments:
 
@@ -1664,7 +1664,7 @@ Type annotations for
 `boto3.client("chime").get_sip_media_application_logging_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.get_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
+[Chime.Client.get_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
 
 Arguments:
 
@@ -1678,7 +1678,7 @@ Returns
 Type annotations for `boto3.client("chime").get_sip_rule` method.
 
 Boto3 documentation:
-[Chime.Client.get_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_sip_rule)
+[Chime.Client.get_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_sip_rule)
 
 Arguments:
 
@@ -1691,7 +1691,7 @@ Returns [GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef).
 Type annotations for `boto3.client("chime").get_user` method.
 
 Boto3 documentation:
-[Chime.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_user)
+[Chime.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_user)
 
 Arguments:
 
@@ -1705,7 +1705,7 @@ Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 Type annotations for `boto3.client("chime").get_user_settings` method.
 
 Boto3 documentation:
-[Chime.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_user_settings)
+[Chime.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_user_settings)
 
 Arguments:
 
@@ -1720,7 +1720,7 @@ Returns
 Type annotations for `boto3.client("chime").get_voice_connector` method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector)
+[Chime.Client.get_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector)
 
 Arguments:
 
@@ -1736,7 +1736,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
+[Chime.Client.get_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
 
 Arguments:
 
@@ -1750,7 +1750,7 @@ Returns
 Type annotations for `boto3.client("chime").get_voice_connector_group` method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_group)
+[Chime.Client.get_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_group)
 
 Arguments:
 
@@ -1765,7 +1765,7 @@ Type annotations for
 `boto3.client("chime").get_voice_connector_logging_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
+[Chime.Client.get_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
 
 Arguments:
 
@@ -1780,7 +1780,7 @@ Type annotations for `boto3.client("chime").get_voice_connector_origination`
 method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
+[Chime.Client.get_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
 
 Arguments:
 
@@ -1794,7 +1794,7 @@ Returns
 Type annotations for `boto3.client("chime").get_voice_connector_proxy` method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
+[Chime.Client.get_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
 
 Arguments:
 
@@ -1809,7 +1809,7 @@ Type annotations for
 `boto3.client("chime").get_voice_connector_streaming_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
+[Chime.Client.get_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
 
 Arguments:
 
@@ -1824,7 +1824,7 @@ Type annotations for `boto3.client("chime").get_voice_connector_termination`
 method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
+[Chime.Client.get_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
 
 Arguments:
 
@@ -1839,7 +1839,7 @@ Type annotations for
 `boto3.client("chime").get_voice_connector_termination_health` method.
 
 Boto3 documentation:
-[Chime.Client.get_voice_connector_termination_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
+[Chime.Client.get_voice_connector_termination_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
 
 Arguments:
 
@@ -1853,7 +1853,7 @@ Returns
 Type annotations for `boto3.client("chime").invite_users` method.
 
 Boto3 documentation:
-[Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.invite_users)
+[Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.invite_users)
 
 Arguments:
 
@@ -1869,7 +1869,7 @@ Returns
 Type annotations for `boto3.client("chime").list_accounts` method.
 
 Boto3 documentation:
-[Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_accounts)
+[Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_accounts)
 
 Arguments:
 
@@ -1886,7 +1886,7 @@ Returns
 Type annotations for `boto3.client("chime").list_app_instance_admins` method.
 
 Boto3 documentation:
-[Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_app_instance_admins)
+[Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_app_instance_admins)
 
 Arguments:
 
@@ -1902,7 +1902,7 @@ Returns
 Type annotations for `boto3.client("chime").list_app_instance_users` method.
 
 Boto3 documentation:
-[Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_app_instance_users)
+[Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_app_instance_users)
 
 Arguments:
 
@@ -1918,7 +1918,7 @@ Returns
 Type annotations for `boto3.client("chime").list_app_instances` method.
 
 Boto3 documentation:
-[Chime.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_app_instances)
+[Chime.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_app_instances)
 
 Arguments:
 
@@ -1933,7 +1933,7 @@ Returns
 Type annotations for `boto3.client("chime").list_attendee_tags` method.
 
 Boto3 documentation:
-[Chime.Client.list_attendee_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_attendee_tags)
+[Chime.Client.list_attendee_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_attendee_tags)
 
 Arguments:
 
@@ -1948,7 +1948,7 @@ Returns
 Type annotations for `boto3.client("chime").list_attendees` method.
 
 Boto3 documentation:
-[Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_attendees)
+[Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_attendees)
 
 Arguments:
 
@@ -1964,7 +1964,7 @@ Returns
 Type annotations for `boto3.client("chime").list_bots` method.
 
 Boto3 documentation:
-[Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_bots)
+[Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_bots)
 
 Arguments:
 
@@ -1979,7 +1979,7 @@ Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
 Type annotations for `boto3.client("chime").list_channel_bans` method.
 
 Boto3 documentation:
-[Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channel_bans)
+[Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channel_bans)
 
 Arguments:
 
@@ -1996,7 +1996,7 @@ Returns
 Type annotations for `boto3.client("chime").list_channel_memberships` method.
 
 Boto3 documentation:
-[Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channel_memberships)
+[Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channel_memberships)
 
 Arguments:
 
@@ -2015,7 +2015,7 @@ Type annotations for
 `boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
+[Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
 
 Arguments:
 
@@ -2032,7 +2032,7 @@ Returns
 Type annotations for `boto3.client("chime").list_channel_messages` method.
 
 Boto3 documentation:
-[Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channel_messages)
+[Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channel_messages)
 
 Arguments:
 
@@ -2052,7 +2052,7 @@ Returns
 Type annotations for `boto3.client("chime").list_channel_moderators` method.
 
 Boto3 documentation:
-[Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channel_moderators)
+[Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channel_moderators)
 
 Arguments:
 
@@ -2069,7 +2069,7 @@ Returns
 Type annotations for `boto3.client("chime").list_channels` method.
 
 Boto3 documentation:
-[Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channels)
+[Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channels)
 
 Arguments:
 
@@ -2088,7 +2088,7 @@ Type annotations for
 `boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
+[Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
 
 Arguments:
 
@@ -2105,7 +2105,7 @@ Returns
 Type annotations for `boto3.client("chime").list_meeting_tags` method.
 
 Boto3 documentation:
-[Chime.Client.list_meeting_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_meeting_tags)
+[Chime.Client.list_meeting_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_meeting_tags)
 
 Arguments:
 
@@ -2119,7 +2119,7 @@ Returns
 Type annotations for `boto3.client("chime").list_meetings` method.
 
 Boto3 documentation:
-[Chime.Client.list_meetings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_meetings)
+[Chime.Client.list_meetings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_meetings)
 
 Arguments:
 
@@ -2134,7 +2134,7 @@ Returns
 Type annotations for `boto3.client("chime").list_phone_number_orders` method.
 
 Boto3 documentation:
-[Chime.Client.list_phone_number_orders](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_phone_number_orders)
+[Chime.Client.list_phone_number_orders](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_phone_number_orders)
 
 Arguments:
 
@@ -2149,7 +2149,7 @@ Returns
 Type annotations for `boto3.client("chime").list_phone_numbers` method.
 
 Boto3 documentation:
-[Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_phone_numbers)
+[Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_phone_numbers)
 
 Arguments:
 
@@ -2170,7 +2170,7 @@ Returns
 Type annotations for `boto3.client("chime").list_proxy_sessions` method.
 
 Boto3 documentation:
-[Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_proxy_sessions)
+[Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_proxy_sessions)
 
 Arguments:
 
@@ -2187,7 +2187,7 @@ Returns
 Type annotations for `boto3.client("chime").list_room_memberships` method.
 
 Boto3 documentation:
-[Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_room_memberships)
+[Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_room_memberships)
 
 Arguments:
 
@@ -2204,7 +2204,7 @@ Returns
 Type annotations for `boto3.client("chime").list_rooms` method.
 
 Boto3 documentation:
-[Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_rooms)
+[Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_rooms)
 
 Arguments:
 
@@ -2221,7 +2221,7 @@ Type annotations for `boto3.client("chime").list_sip_media_applications`
 method.
 
 Boto3 documentation:
-[Chime.Client.list_sip_media_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_sip_media_applications)
+[Chime.Client.list_sip_media_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_sip_media_applications)
 
 Arguments:
 
@@ -2236,7 +2236,7 @@ Returns
 Type annotations for `boto3.client("chime").list_sip_rules` method.
 
 Boto3 documentation:
-[Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_sip_rules)
+[Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_sip_rules)
 
 Arguments:
 
@@ -2253,7 +2253,7 @@ Type annotations for
 `boto3.client("chime").list_supported_phone_number_countries` method.
 
 Boto3 documentation:
-[Chime.Client.list_supported_phone_number_countries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
+[Chime.Client.list_supported_phone_number_countries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
 
 Arguments:
 
@@ -2269,7 +2269,7 @@ Returns
 Type annotations for `boto3.client("chime").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Chime.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_tags_for_resource)
+[Chime.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -2283,7 +2283,7 @@ Returns
 Type annotations for `boto3.client("chime").list_users` method.
 
 Boto3 documentation:
-[Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_users)
+[Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_users)
 
 Arguments:
 
@@ -2301,7 +2301,7 @@ Type annotations for `boto3.client("chime").list_voice_connector_groups`
 method.
 
 Boto3 documentation:
-[Chime.Client.list_voice_connector_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
+[Chime.Client.list_voice_connector_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
 
 Arguments:
 
@@ -2317,7 +2317,7 @@ Type annotations for
 `boto3.client("chime").list_voice_connector_termination_credentials` method.
 
 Boto3 documentation:
-[Chime.Client.list_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
+[Chime.Client.list_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
 
 Arguments:
 
@@ -2331,7 +2331,7 @@ Returns
 Type annotations for `boto3.client("chime").list_voice_connectors` method.
 
 Boto3 documentation:
-[Chime.Client.list_voice_connectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.list_voice_connectors)
+[Chime.Client.list_voice_connectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.list_voice_connectors)
 
 Arguments:
 
@@ -2346,7 +2346,7 @@ Returns
 Type annotations for `boto3.client("chime").logout_user` method.
 
 Boto3 documentation:
-[Chime.Client.logout_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.logout_user)
+[Chime.Client.logout_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.logout_user)
 
 Arguments:
 
@@ -2361,7 +2361,7 @@ Type annotations for
 `boto3.client("chime").put_app_instance_retention_settings` method.
 
 Boto3 documentation:
-[Chime.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
+[Chime.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
 
 Arguments:
 
@@ -2379,7 +2379,7 @@ Type annotations for
 `boto3.client("chime").put_app_instance_streaming_configurations` method.
 
 Boto3 documentation:
-[Chime.Client.put_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
+[Chime.Client.put_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
 
 Arguments:
 
@@ -2396,7 +2396,7 @@ Returns
 Type annotations for `boto3.client("chime").put_events_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_events_configuration)
+[Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_events_configuration)
 
 Arguments:
 
@@ -2413,7 +2413,7 @@ Returns
 Type annotations for `boto3.client("chime").put_retention_settings` method.
 
 Boto3 documentation:
-[Chime.Client.put_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_retention_settings)
+[Chime.Client.put_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_retention_settings)
 
 Arguments:
 
@@ -2431,7 +2431,7 @@ Type annotations for
 `boto3.client("chime").put_sip_media_application_logging_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.put_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
+[Chime.Client.put_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
 
 Arguments:
 
@@ -2449,7 +2449,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
+[Chime.Client.put_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
 
 Arguments:
 
@@ -2467,7 +2467,7 @@ Type annotations for
 `boto3.client("chime").put_voice_connector_logging_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
+[Chime.Client.put_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
 
 Arguments:
 
@@ -2485,7 +2485,7 @@ Type annotations for `boto3.client("chime").put_voice_connector_origination`
 method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
+[Chime.Client.put_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
 
 Arguments:
 
@@ -2501,7 +2501,7 @@ Returns
 Type annotations for `boto3.client("chime").put_voice_connector_proxy` method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
+[Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
 
 Arguments:
 
@@ -2520,7 +2520,7 @@ Type annotations for
 `boto3.client("chime").put_voice_connector_streaming_configuration` method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
+[Chime.Client.put_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
 
 Arguments:
 
@@ -2538,7 +2538,7 @@ Type annotations for `boto3.client("chime").put_voice_connector_termination`
 method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
+[Chime.Client.put_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
 
 Arguments:
 
@@ -2555,7 +2555,7 @@ Type annotations for
 `boto3.client("chime").put_voice_connector_termination_credentials` method.
 
 Boto3 documentation:
-[Chime.Client.put_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
+[Chime.Client.put_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
 
 Arguments:
 
@@ -2568,7 +2568,7 @@ Arguments:
 Type annotations for `boto3.client("chime").redact_channel_message` method.
 
 Boto3 documentation:
-[Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.redact_channel_message)
+[Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.redact_channel_message)
 
 Arguments:
 
@@ -2585,7 +2585,7 @@ Type annotations for `boto3.client("chime").redact_conversation_message`
 method.
 
 Boto3 documentation:
-[Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.redact_conversation_message)
+[Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.redact_conversation_message)
 
 Arguments:
 
@@ -2600,7 +2600,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("chime").redact_room_message` method.
 
 Boto3 documentation:
-[Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.redact_room_message)
+[Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.redact_room_message)
 
 Arguments:
 
@@ -2615,7 +2615,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("chime").regenerate_security_token` method.
 
 Boto3 documentation:
-[Chime.Client.regenerate_security_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.regenerate_security_token)
+[Chime.Client.regenerate_security_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.regenerate_security_token)
 
 Arguments:
 
@@ -2630,7 +2630,7 @@ Returns
 Type annotations for `boto3.client("chime").reset_personal_pin` method.
 
 Boto3 documentation:
-[Chime.Client.reset_personal_pin](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.reset_personal_pin)
+[Chime.Client.reset_personal_pin](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.reset_personal_pin)
 
 Arguments:
 
@@ -2645,7 +2645,7 @@ Returns
 Type annotations for `boto3.client("chime").restore_phone_number` method.
 
 Boto3 documentation:
-[Chime.Client.restore_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.restore_phone_number)
+[Chime.Client.restore_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.restore_phone_number)
 
 Arguments:
 
@@ -2660,7 +2660,7 @@ Type annotations for `boto3.client("chime").search_available_phone_numbers`
 method.
 
 Boto3 documentation:
-[Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
+[Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
 
 Arguments:
 
@@ -2681,7 +2681,7 @@ Returns
 Type annotations for `boto3.client("chime").send_channel_message` method.
 
 Boto3 documentation:
-[Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.send_channel_message)
+[Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.send_channel_message)
 
 Arguments:
 
@@ -2704,7 +2704,7 @@ Returns
 Type annotations for `boto3.client("chime").tag_attendee` method.
 
 Boto3 documentation:
-[Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.tag_attendee)
+[Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.tag_attendee)
 
 Arguments:
 
@@ -2717,7 +2717,7 @@ Arguments:
 Type annotations for `boto3.client("chime").tag_meeting` method.
 
 Boto3 documentation:
-[Chime.Client.tag_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.tag_meeting)
+[Chime.Client.tag_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.tag_meeting)
 
 Arguments:
 
@@ -2729,7 +2729,7 @@ Arguments:
 Type annotations for `boto3.client("chime").tag_resource` method.
 
 Boto3 documentation:
-[Chime.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.tag_resource)
+[Chime.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.tag_resource)
 
 Arguments:
 
@@ -2741,7 +2741,7 @@ Arguments:
 Type annotations for `boto3.client("chime").untag_attendee` method.
 
 Boto3 documentation:
-[Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.untag_attendee)
+[Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.untag_attendee)
 
 Arguments:
 
@@ -2754,7 +2754,7 @@ Arguments:
 Type annotations for `boto3.client("chime").untag_meeting` method.
 
 Boto3 documentation:
-[Chime.Client.untag_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.untag_meeting)
+[Chime.Client.untag_meeting](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.untag_meeting)
 
 Arguments:
 
@@ -2766,7 +2766,7 @@ Arguments:
 Type annotations for `boto3.client("chime").untag_resource` method.
 
 Boto3 documentation:
-[Chime.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.untag_resource)
+[Chime.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.untag_resource)
 
 Arguments:
 
@@ -2778,7 +2778,7 @@ Arguments:
 Type annotations for `boto3.client("chime").update_account` method.
 
 Boto3 documentation:
-[Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_account)
+[Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_account)
 
 Arguments:
 
@@ -2793,7 +2793,7 @@ Returns
 Type annotations for `boto3.client("chime").update_account_settings` method.
 
 Boto3 documentation:
-[Chime.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_account_settings)
+[Chime.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_account_settings)
 
 Arguments:
 
@@ -2808,7 +2808,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("chime").update_app_instance` method.
 
 Boto3 documentation:
-[Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_app_instance)
+[Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_app_instance)
 
 Arguments:
 
@@ -2824,7 +2824,7 @@ Returns
 Type annotations for `boto3.client("chime").update_app_instance_user` method.
 
 Boto3 documentation:
-[Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_app_instance_user)
+[Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_app_instance_user)
 
 Arguments:
 
@@ -2840,7 +2840,7 @@ Returns
 Type annotations for `boto3.client("chime").update_bot` method.
 
 Boto3 documentation:
-[Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_bot)
+[Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_bot)
 
 Arguments:
 
@@ -2855,7 +2855,7 @@ Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
 Type annotations for `boto3.client("chime").update_channel` method.
 
 Boto3 documentation:
-[Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_channel)
+[Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_channel)
 
 Arguments:
 
@@ -2873,7 +2873,7 @@ Returns
 Type annotations for `boto3.client("chime").update_channel_message` method.
 
 Boto3 documentation:
-[Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_channel_message)
+[Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_channel_message)
 
 Arguments:
 
@@ -2891,7 +2891,7 @@ Returns
 Type annotations for `boto3.client("chime").update_channel_read_marker` method.
 
 Boto3 documentation:
-[Chime.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_channel_read_marker)
+[Chime.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_channel_read_marker)
 
 Arguments:
 
@@ -2906,7 +2906,7 @@ Returns
 Type annotations for `boto3.client("chime").update_global_settings` method.
 
 Boto3 documentation:
-[Chime.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_global_settings)
+[Chime.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_global_settings)
 
 Arguments:
 
@@ -2922,7 +2922,7 @@ Arguments:
 Type annotations for `boto3.client("chime").update_phone_number` method.
 
 Boto3 documentation:
-[Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_phone_number)
+[Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_phone_number)
 
 Arguments:
 
@@ -2940,7 +2940,7 @@ Type annotations for `boto3.client("chime").update_phone_number_settings`
 method.
 
 Boto3 documentation:
-[Chime.Client.update_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_phone_number_settings)
+[Chime.Client.update_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_phone_number_settings)
 
 Arguments:
 
@@ -2951,7 +2951,7 @@ Arguments:
 Type annotations for `boto3.client("chime").update_proxy_session` method.
 
 Boto3 documentation:
-[Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_proxy_session)
+[Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_proxy_session)
 
 Arguments:
 
@@ -2969,7 +2969,7 @@ Returns
 Type annotations for `boto3.client("chime").update_room` method.
 
 Boto3 documentation:
-[Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_room)
+[Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_room)
 
 Arguments:
 
@@ -2984,7 +2984,7 @@ Returns [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef).
 Type annotations for `boto3.client("chime").update_room_membership` method.
 
 Boto3 documentation:
-[Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_room_membership)
+[Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_room_membership)
 
 Arguments:
 
@@ -3002,7 +3002,7 @@ Type annotations for `boto3.client("chime").update_sip_media_application`
 method.
 
 Boto3 documentation:
-[Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_sip_media_application)
+[Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_sip_media_application)
 
 Arguments:
 
@@ -3019,7 +3019,7 @@ Returns
 Type annotations for `boto3.client("chime").update_sip_rule` method.
 
 Boto3 documentation:
-[Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_sip_rule)
+[Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_sip_rule)
 
 Arguments:
 
@@ -3037,7 +3037,7 @@ Returns
 Type annotations for `boto3.client("chime").update_user` method.
 
 Boto3 documentation:
-[Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_user)
+[Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_user)
 
 Arguments:
 
@@ -3055,7 +3055,7 @@ Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 Type annotations for `boto3.client("chime").update_user_settings` method.
 
 Boto3 documentation:
-[Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_user_settings)
+[Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_user_settings)
 
 Arguments:
 
@@ -3069,7 +3069,7 @@ Arguments:
 Type annotations for `boto3.client("chime").update_voice_connector` method.
 
 Boto3 documentation:
-[Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_voice_connector)
+[Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_voice_connector)
 
 Arguments:
 
@@ -3086,7 +3086,7 @@ Type annotations for `boto3.client("chime").update_voice_connector_group`
 method.
 
 Boto3 documentation:
-[Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/chime.html#Chime.Client.update_voice_connector_group)
+[Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/chime.html#Chime.Client.update_voice_connector_group)
 
 Arguments:
 

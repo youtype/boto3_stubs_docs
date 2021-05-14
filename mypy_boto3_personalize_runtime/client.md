@@ -3,7 +3,7 @@
 > [Index](..) > [PersonalizeRuntime](.) > PersonalizeRuntimeClient
 
 Auto-generated documentation for
-[PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/personalize-runtime.html#PersonalizeRuntime)
+[PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module
 [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
@@ -30,7 +30,7 @@ def get_personalize-runtime_client() -> PersonalizeRuntimeClient:
 ```
 
 Boto3 documentation:
-[PersonalizeRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/personalize-runtime.html#PersonalizeRuntime.Client)
+[PersonalizeRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-runtime.html#PersonalizeRuntime.Client)
 
 ## Exceptions
 
@@ -57,7 +57,7 @@ Exceptions:
 Type annotations for `boto3.client("personalize-runtime").can_paginate` method.
 
 Boto3 documentation:
-[PersonalizeRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.can_paginate)
+[PersonalizeRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.can_paginate)
 
 Arguments:
 
@@ -71,7 +71,7 @@ Type annotations for
 `boto3.client("personalize-runtime").generate_presigned_url` method.
 
 Boto3 documentation:
-[PersonalizeRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.generate_presigned_url)
+[PersonalizeRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.generate_presigned_url)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Type annotations for
 `boto3.client("personalize-runtime").get_personalized_ranking` method.
 
 Boto3 documentation:
-[PersonalizeRuntime.Client.get_personalized_ranking](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
+[PersonalizeRuntime.Client.get_personalized_ranking](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Type annotations for `boto3.client("personalize-runtime").get_recommendations`
 method.
 
 Boto3 documentation:
-[PersonalizeRuntime.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
+[PersonalizeRuntime.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
 
 Arguments:
 

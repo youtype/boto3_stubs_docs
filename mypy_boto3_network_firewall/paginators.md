@@ -3,7 +3,7 @@
 > [Index](..) > [NetworkFirewall](.) > Paginators
 
 Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/network-firewall.html#NetworkFirewall)
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
 [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
@@ -28,7 +28,7 @@ def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[NetworkFirewall.Paginator.ListFirewallPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
+[NetworkFirewall.Paginator.ListFirewallPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
 
 Arguments for `ListFirewallPoliciesPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_firewalls_paginator() -> ListFirewallsPaginator:
 ```
 
 Boto3 documentation:
-[NetworkFirewall.Paginator.ListFirewalls](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
+[NetworkFirewall.Paginator.ListFirewalls](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
 
 Arguments for `ListFirewallsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
 ```
 
 Boto3 documentation:
-[NetworkFirewall.Paginator.ListRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
+[NetworkFirewall.Paginator.ListRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
 
 Arguments for `ListRuleGroupsPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[NetworkFirewall.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
+[NetworkFirewall.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 

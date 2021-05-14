@@ -3,7 +3,7 @@
 > [Index](..) > [WorkSpaces](.) > Paginators
 
 Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces)
+[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module
 [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
@@ -32,7 +32,7 @@ def get_describe_account_modifications_paginator() -> DescribeAccountModificatio
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeAccountModifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeAccountModifications)
+[WorkSpaces.Paginator.DescribeAccountModifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeAccountModifications)
 
 Arguments for `DescribeAccountModificationsPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_describe_ip_groups_paginator() -> DescribeIpGroupsPaginator:
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeIpGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeIpGroups)
+[WorkSpaces.Paginator.DescribeIpGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeIpGroups)
 
 Arguments for `DescribeIpGroupsPaginator.paginate` method:
 
@@ -83,7 +83,7 @@ def get_describe_workspace_bundles_paginator() -> DescribeWorkspaceBundlesPagina
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaceBundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceBundles)
+[WorkSpaces.Paginator.DescribeWorkspaceBundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceBundles)
 
 Arguments for `DescribeWorkspaceBundlesPaginator.paginate` method:
 
@@ -110,7 +110,7 @@ def get_describe_workspace_directories_paginator() -> DescribeWorkspaceDirectori
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaceDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceDirectories)
+[WorkSpaces.Paginator.DescribeWorkspaceDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceDirectories)
 
 Arguments for `DescribeWorkspaceDirectoriesPaginator.paginate` method:
 
@@ -137,7 +137,7 @@ def get_describe_workspace_images_paginator() -> DescribeWorkspaceImagesPaginato
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaceImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceImages)
+[WorkSpaces.Paginator.DescribeWorkspaceImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceImages)
 
 Arguments for `DescribeWorkspaceImagesPaginator.paginate` method:
 
@@ -164,7 +164,7 @@ def get_describe_workspaces_paginator() -> DescribeWorkspacesPaginator:
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaces)
+[WorkSpaces.Paginator.DescribeWorkspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaces)
 
 Arguments for `DescribeWorkspacesPaginator.paginate` method:
 
@@ -193,7 +193,7 @@ def get_describe_workspaces_connection_status_paginator() -> DescribeWorkspacesC
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus)
+[WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus)
 
 Arguments for `DescribeWorkspacesConnectionStatusPaginator.paginate` method:
 
@@ -219,7 +219,7 @@ def get_list_available_management_cidr_ranges_paginator() -> ListAvailableManage
 ```
 
 Boto3 documentation:
-[WorkSpaces.Paginator.ListAvailableManagementCidrRanges](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/workspaces.html#WorkSpaces.Paginator.ListAvailableManagementCidrRanges)
+[WorkSpaces.Paginator.ListAvailableManagementCidrRanges](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workspaces.html#WorkSpaces.Paginator.ListAvailableManagementCidrRanges)
 
 Arguments for `ListAvailableManagementCidrRangesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ImportExport](.) > Paginators
 
 Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport)
+[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport)
 type annotations stubs module
 [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
@@ -24,7 +24,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[ImportExport.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Paginator.ListJobs)
+[ImportExport.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 

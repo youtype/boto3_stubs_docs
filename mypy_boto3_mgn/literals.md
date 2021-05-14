@@ -3,7 +3,7 @@
 > [Index](..) > [mgn](.) > Literals
 
 Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/mgn.html#mgn)
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn)
 type annotations stubs module
 [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 

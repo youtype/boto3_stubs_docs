@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationInsights](.) > ApplicationInsightsClient
 
 Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights)
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
 [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
@@ -55,7 +55,7 @@ def get_application-insights_client() -> ApplicationInsightsClient:
 ```
 
 Boto3 documentation:
-[ApplicationInsights.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client)
+[ApplicationInsights.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client)
 
 ## Exceptions
 
@@ -89,7 +89,7 @@ Type annotations for `boto3.client("application-insights").can_paginate`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate)
+[ApplicationInsights.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Type annotations for `boto3.client("application-insights").create_application`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
+[ApplicationInsights.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("application-insights").create_component`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
+[ApplicationInsights.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("application-insights").create_log_pattern`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.create_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
+[ApplicationInsights.Client.create_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("application-insights").delete_application`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
+[ApplicationInsights.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("application-insights").delete_component`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
+[ApplicationInsights.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("application-insights").delete_log_pattern`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.delete_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
+[ApplicationInsights.Client.delete_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Type annotations for
 `boto3.client("application-insights").describe_application` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
+[ApplicationInsights.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Type annotations for `boto3.client("application-insights").describe_component`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
+[ApplicationInsights.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Type annotations for
 `boto3.client("application-insights").describe_component_configuration` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
+[ApplicationInsights.Client.describe_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_component_configuration_recommendation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
+[ApplicationInsights.Client.describe_component_configuration_recommendation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Type annotations for
 `boto3.client("application-insights").describe_log_pattern` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
+[ApplicationInsights.Client.describe_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Type annotations for
 `boto3.client("application-insights").describe_observation` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_observation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
+[ApplicationInsights.Client.describe_observation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("application-insights").describe_problem`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_problem](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
+[ApplicationInsights.Client.describe_problem](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Type annotations for
 `boto3.client("application-insights").describe_problem_observations` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.describe_problem_observations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
+[ApplicationInsights.Client.describe_problem_observations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Type annotations for
 `boto3.client("application-insights").generate_presigned_url` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url)
+[ApplicationInsights.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url)
 
 Arguments:
 
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("application-insights").list_applications`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
+[ApplicationInsights.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("application-insights").list_components`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
+[ApplicationInsights.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Type annotations for
 `boto3.client("application-insights").list_configuration_history` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_configuration_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
+[ApplicationInsights.Client.list_configuration_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Type annotations for
 `boto3.client("application-insights").list_log_pattern_sets` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_log_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
+[ApplicationInsights.Client.list_log_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
 
 Arguments:
 
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("application-insights").list_log_patterns`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_log_patterns](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
+[ApplicationInsights.Client.list_log_patterns](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("application-insights").list_problems`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_problems](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
+[ApplicationInsights.Client.list_problems](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
 
 Arguments:
 
@@ -454,7 +454,7 @@ Type annotations for
 `boto3.client("application-insights").list_tags_for_resource` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
+[ApplicationInsights.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Type annotations for `boto3.client("application-insights").tag_resource`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
+[ApplicationInsights.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
 
 Arguments:
 
@@ -484,7 +484,7 @@ Type annotations for `boto3.client("application-insights").untag_resource`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
+[ApplicationInsights.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
 
 Arguments:
 
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("application-insights").update_application`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
+[ApplicationInsights.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Type annotations for `boto3.client("application-insights").update_component`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.update_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
+[ApplicationInsights.Client.update_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Type annotations for
 `boto3.client("application-insights").update_component_configuration` method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.update_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
+[ApplicationInsights.Client.update_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
 
 Arguments:
 
@@ -553,7 +553,7 @@ Type annotations for `boto3.client("application-insights").update_log_pattern`
 method.
 
 Boto3 documentation:
-[ApplicationInsights.Client.update_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
+[ApplicationInsights.Client.update_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
 
 Arguments:
 

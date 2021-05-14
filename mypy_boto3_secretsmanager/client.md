@@ -3,7 +3,7 @@
 > [Index](..) > [SecretsManager](.) > SecretsManagerClient
 
 Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager)
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
 [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
@@ -51,7 +51,7 @@ def get_secretsmanager_client() -> SecretsManagerClient:
 ```
 
 Boto3 documentation:
-[SecretsManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client)
+[SecretsManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client)
 
 ## Exceptions
 
@@ -88,7 +88,7 @@ Exceptions:
 Type annotations for `boto3.client("secretsmanager").can_paginate` method.
 
 Boto3 documentation:
-[SecretsManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate)
+[SecretsManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate)
 
 Arguments:
 
@@ -102,7 +102,7 @@ Type annotations for `boto3.client("secretsmanager").cancel_rotate_secret`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.cancel_rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
+[SecretsManager.Client.cancel_rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").create_secret` method.
 
 Boto3 documentation:
-[SecretsManager.Client.create_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
+[SecretsManager.Client.create_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("secretsmanager").delete_resource_policy`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
+[SecretsManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").delete_secret` method.
 
 Boto3 documentation:
-[SecretsManager.Client.delete_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
+[SecretsManager.Client.delete_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").describe_secret` method.
 
 Boto3 documentation:
-[SecretsManager.Client.describe_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
+[SecretsManager.Client.describe_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("secretsmanager").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url)
+[SecretsManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("secretsmanager").get_random_password`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.get_random_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
+[SecretsManager.Client.get_random_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Type annotations for `boto3.client("secretsmanager").get_resource_policy`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
+[SecretsManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").get_secret_value` method.
 
 Boto3 documentation:
-[SecretsManager.Client.get_secret_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
+[SecretsManager.Client.get_secret_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("secretsmanager").list_secret_version_ids`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.list_secret_version_ids](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
+[SecretsManager.Client.list_secret_version_ids](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 
 Boto3 documentation:
-[SecretsManager.Client.list_secrets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
+[SecretsManager.Client.list_secrets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("secretsmanager").put_resource_policy`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
+[SecretsManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
 
 Arguments:
 
@@ -306,7 +306,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").put_secret_value` method.
 
 Boto3 documentation:
-[SecretsManager.Client.put_secret_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
+[SecretsManager.Client.put_secret_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Type annotations for
 `boto3.client("secretsmanager").remove_regions_from_replication` method.
 
 Boto3 documentation:
-[SecretsManager.Client.remove_regions_from_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
+[SecretsManager.Client.remove_regions_from_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Type annotations for
 `boto3.client("secretsmanager").replicate_secret_to_regions` method.
 
 Boto3 documentation:
-[SecretsManager.Client.replicate_secret_to_regions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
+[SecretsManager.Client.replicate_secret_to_regions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
 
 Arguments:
 
@@ -359,7 +359,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").restore_secret` method.
 
 Boto3 documentation:
-[SecretsManager.Client.restore_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
+[SecretsManager.Client.restore_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").rotate_secret` method.
 
 Boto3 documentation:
-[SecretsManager.Client.rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
+[SecretsManager.Client.rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Type annotations for
 `boto3.client("secretsmanager").stop_replication_to_replica` method.
 
 Boto3 documentation:
-[SecretsManager.Client.stop_replication_to_replica](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
+[SecretsManager.Client.stop_replication_to_replica](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns
 Type annotations for `boto3.client("secretsmanager").tag_resource` method.
 
 Boto3 documentation:
-[SecretsManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
+[SecretsManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Arguments:
 Type annotations for `boto3.client("secretsmanager").untag_resource` method.
 
 Boto3 documentation:
-[SecretsManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
+[SecretsManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Arguments:
 Type annotations for `boto3.client("secretsmanager").update_secret` method.
 
 Boto3 documentation:
-[SecretsManager.Client.update_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
+[SecretsManager.Client.update_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Type annotations for
 `boto3.client("secretsmanager").update_secret_version_stage` method.
 
 Boto3 documentation:
-[SecretsManager.Client.update_secret_version_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
+[SecretsManager.Client.update_secret_version_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
 
 Arguments:
 
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("secretsmanager").validate_resource_policy`
 method.
 
 Boto3 documentation:
-[SecretsManager.Client.validate_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
+[SecretsManager.Client.validate_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
 
 Arguments:
 

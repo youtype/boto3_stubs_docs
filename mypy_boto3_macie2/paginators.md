@@ -3,7 +3,7 @@
 > [Index](..) > [Macie2](.) > Paginators
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
@@ -17,6 +17,7 @@ type annotations stubs module
   - [ListInvitationsPaginator](#listinvitationspaginator)
   - [ListMembersPaginator](#listmemberspaginator)
   - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
+  - [SearchResourcesPaginator](#searchresourcespaginator)
 
 ## DescribeBucketsPaginator
 
@@ -33,7 +34,7 @@ def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.DescribeBuckets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
+[Macie2.Paginator.DescribeBuckets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
 
 Arguments for `DescribeBucketsPaginator.paginate` method:
 
@@ -62,7 +63,7 @@ def get_get_usage_statistics_paginator() -> GetUsageStatisticsPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.GetUsageStatistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
+[Macie2.Paginator.GetUsageStatistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
 
 Arguments for `GetUsageStatisticsPaginator.paginate` method:
 
@@ -92,7 +93,7 @@ def get_list_classification_jobs_paginator() -> ListClassificationJobsPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListClassificationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
+[Macie2.Paginator.ListClassificationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
 
 Arguments for `ListClassificationJobsPaginator.paginate` method:
 
@@ -121,7 +122,7 @@ def get_list_custom_data_identifiers_paginator() -> ListCustomDataIdentifiersPag
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListCustomDataIdentifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
+[Macie2.Paginator.ListCustomDataIdentifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
 
 Arguments for `ListCustomDataIdentifiersPaginator.paginate` method:
 
@@ -145,7 +146,7 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListFindings)
+[Macie2.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListFindings)
 
 Arguments for `ListFindingsPaginator.paginate` method:
 
@@ -173,7 +174,7 @@ def get_list_findings_filters_paginator() -> ListFindingsFiltersPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListFindingsFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
+[Macie2.Paginator.ListFindingsFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
 
 Arguments for `ListFindingsFiltersPaginator.paginate` method:
 
@@ -198,7 +199,7 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
+[Macie2.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
 
 Arguments for `ListInvitationsPaginator.paginate` method:
 
@@ -222,7 +223,7 @@ def get_list_members_paginator() -> ListMembersPaginator:
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListMembers)
+[Macie2.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListMembers)
 
 Arguments for `ListMembersPaginator.paginate` method:
 
@@ -248,7 +249,7 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
 ```
 
 Boto3 documentation:
-[Macie2.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
+[Macie2.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
 
 Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
 
@@ -257,3 +258,32 @@ Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
 
 `ListOrganizationAdminAccountsPaginator.paginate` returns
 `Iterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].
+
+## SearchResourcesPaginator
+
+Type annotations for
+`boto3.client("macie2").get_paginator("search_resources")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_macie2.paginator import SearchResourcesPaginator
+
+def get_search_resources_paginator() -> SearchResourcesPaginator:
+    return boto3.client("macie2").get_paginator("search_resources")
+```
+
+Boto3 documentation:
+[Macie2.Paginator.SearchResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2.Paginator.SearchResources)
+
+Arguments for `SearchResourcesPaginator.paginate` method:
+
+- `bucketCriteria`:
+  [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
+- `sortCriteria`:
+  [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`SearchResourcesPaginator.paginate` returns
+`Iterator`\[[SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef)\].

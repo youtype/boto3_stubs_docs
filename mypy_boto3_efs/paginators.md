@@ -3,7 +3,7 @@
 > [Index](..) > [EFS](.) > Paginators
 
 Auto-generated documentation for
-[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/efs.html#EFS)
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/efs.html#EFS)
 type annotations stubs module
 [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
@@ -27,7 +27,7 @@ def get_describe_file_systems_paginator() -> DescribeFileSystemsPaginator:
 ```
 
 Boto3 documentation:
-[EFS.Paginator.DescribeFileSystems](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/efs.html#EFS.Paginator.DescribeFileSystems)
+[EFS.Paginator.DescribeFileSystems](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/efs.html#EFS.Paginator.DescribeFileSystems)
 
 Arguments for `DescribeFileSystemsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_describe_mount_targets_paginator() -> DescribeMountTargetsPaginator:
 ```
 
 Boto3 documentation:
-[EFS.Paginator.DescribeMountTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/efs.html#EFS.Paginator.DescribeMountTargets)
+[EFS.Paginator.DescribeMountTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/efs.html#EFS.Paginator.DescribeMountTargets)
 
 Arguments for `DescribeMountTargetsPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
 ```
 
 Boto3 documentation:
-[EFS.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/efs.html#EFS.Paginator.DescribeTags)
+[EFS.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/efs.html#EFS.Paginator.DescribeTags)
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 

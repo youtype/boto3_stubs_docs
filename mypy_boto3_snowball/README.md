@@ -3,7 +3,7 @@
 > [Index](..) > Snowball
 
 Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/snowball.html#Snowball)
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/snowball.html#Snowball)
 type annotations stubs module
 [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 

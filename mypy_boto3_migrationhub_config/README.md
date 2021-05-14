@@ -3,7 +3,7 @@
 > [Index](..) > MigrationHubConfig
 
 Auto-generated documentation for
-[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/migrationhub-config.html#MigrationHubConfig)
+[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module
 [mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 

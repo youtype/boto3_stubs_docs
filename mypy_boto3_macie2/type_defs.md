@@ -3,7 +3,7 @@
 > [Index](..) > [Macie2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
@@ -41,6 +41,8 @@ type annotations stubs module
   - [CreateFindingsFilterResponseTypeDef](#createfindingsfilterresponsetypedef)
   - [CreateInvitationsResponseTypeDef](#createinvitationsresponsetypedef)
   - [CreateMemberResponseTypeDef](#creatememberresponsetypedef)
+  - [CriteriaBlockForJobTypeDef](#criteriablockforjobtypedef)
+  - [CriteriaForJobTypeDef](#criteriaforjobtypedef)
   - [CriterionAdditionalPropertiesTypeDef](#criterionadditionalpropertiestypedef)
   - [CustomDataIdentifierSummaryTypeDef](#customdataidentifiersummarytypedef)
   - [CustomDataIdentifiersTypeDef](#customdataidentifierstypedef)
@@ -99,6 +101,8 @@ type annotations stubs module
   - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
   - [ListOrganizationAdminAccountsResponseTypeDef](#listorganizationadminaccountsresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [MatchingBucketTypeDef](#matchingbuckettypedef)
+  - [MatchingResourceTypeDef](#matchingresourcetypedef)
   - [MemberTypeDef](#membertypedef)
   - [MonthlyScheduleTypeDef](#monthlyscheduletypedef)
   - [ObjectCountByEncryptionTypeTypeDef](#objectcountbyencryptiontypetypedef)
@@ -112,6 +116,7 @@ type annotations stubs module
   - [RecordTypeDef](#recordtypedef)
   - [ReplicationDetailsTypeDef](#replicationdetailstypedef)
   - [ResourcesAffectedTypeDef](#resourcesaffectedtypedef)
+  - [S3BucketCriteriaForJobTypeDef](#s3bucketcriteriaforjobtypedef)
   - [S3BucketDefinitionForJobTypeDef](#s3bucketdefinitionforjobtypedef)
   - [S3BucketOwnerTypeDef](#s3bucketownertypedef)
   - [S3BucketTypeDef](#s3buckettypedef)
@@ -119,6 +124,14 @@ type annotations stubs module
   - [S3JobDefinitionTypeDef](#s3jobdefinitiontypedef)
   - [S3ObjectTypeDef](#s3objecttypedef)
   - [ScopingTypeDef](#scopingtypedef)
+  - [SearchResourcesBucketCriteriaTypeDef](#searchresourcesbucketcriteriatypedef)
+  - [SearchResourcesCriteriaBlockTypeDef](#searchresourcescriteriablocktypedef)
+  - [SearchResourcesCriteriaTypeDef](#searchresourcescriteriatypedef)
+  - [SearchResourcesResponseTypeDef](#searchresourcesresponsetypedef)
+  - [SearchResourcesSimpleCriterionTypeDef](#searchresourcessimplecriteriontypedef)
+  - [SearchResourcesSortCriteriaTypeDef](#searchresourcessortcriteriatypedef)
+  - [SearchResourcesTagCriterionPairTypeDef](#searchresourcestagcriterionpairtypedef)
+  - [SearchResourcesTagCriterionTypeDef](#searchresourcestagcriteriontypedef)
   - [SecurityHubConfigurationTypeDef](#securityhubconfigurationtypedef)
   - [SensitiveDataItemTypeDef](#sensitivedataitemtypedef)
   - [ServerSideEncryptionTypeDef](#serversideencryptiontypedef)
@@ -127,9 +140,12 @@ type annotations stubs module
   - [SessionContextTypeDef](#sessioncontexttypedef)
   - [SessionIssuerTypeDef](#sessionissuertypedef)
   - [SeverityTypeDef](#severitytypedef)
+  - [SimpleCriterionForJobTypeDef](#simplecriterionforjobtypedef)
   - [SimpleScopeTermTypeDef](#simplescopetermtypedef)
   - [SortCriteriaTypeDef](#sortcriteriatypedef)
   - [StatisticsTypeDef](#statisticstypedef)
+  - [TagCriterionForJobTypeDef](#tagcriterionforjobtypedef)
+  - [TagCriterionPairForJobTypeDef](#tagcriterionpairforjobtypedef)
   - [TagScopeTermTypeDef](#tagscopetermtypedef)
   - [TagValuePairTypeDef](#tagvaluepairtypedef)
   - [TestCustomDataIdentifierResponseTypeDef](#testcustomdataidentifierresponsetypedef)
@@ -574,6 +590,30 @@ from mypy_boto3_macie2.type_defs import CreateMemberResponseTypeDef
 Optional fields:
 
 - `arn`: `str`
+
+## CriteriaBlockForJobTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CriteriaBlockForJobTypeDef
+```
+
+Optional fields:
+
+- `and`:
+  `List`\[[CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef)\]
+
+## CriteriaForJobTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CriteriaForJobTypeDef
+```
+
+Optional fields:
+
+- `simpleCriterion`:
+  [SimpleCriterionForJobTypeDef](./type_defs.md#simplecriterionforjobtypedef)
+- `tagCriterion`:
+  [TagCriterionForJobTypeDef](./type_defs.md#tagcriterionforjobtypedef)
 
 ## CriterionAdditionalPropertiesTypeDef
 
@@ -1198,6 +1238,8 @@ Optional fields:
 - `name`: `str`
 - `userPausedDetails`:
   [UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef)
+- `bucketCriteria`:
+  [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
 
 ## KeyValuePairTypeDef
 
@@ -1348,6 +1390,40 @@ from mypy_boto3_macie2.type_defs import ListTagsForResourceResponseTypeDef
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+
+## MatchingBucketTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import MatchingBucketTypeDef
+```
+
+Optional fields:
+
+- `accountId`: `str`
+- `bucketName`: `str`
+- `classifiableObjectCount`: `int`
+- `classifiableSizeInBytes`: `int`
+- `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
+- `objectCount`: `int`
+- `objectCountByEncryptionType`:
+  [ObjectCountByEncryptionTypeTypeDef](./type_defs.md#objectcountbyencryptiontypetypedef)
+- `sizeInBytes`: `int`
+- `sizeInBytesCompressed`: `int`
+- `unclassifiableObjectCount`:
+  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
+- `unclassifiableObjectSizeInBytes`:
+  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
+
+## MatchingResourceTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import MatchingResourceTypeDef
+```
+
+Optional fields:
+
+- `matchingBucket`:
+  [MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef)
 
 ## MemberTypeDef
 
@@ -1510,6 +1586,19 @@ Optional fields:
 - `s3Bucket`: [S3BucketTypeDef](./type_defs.md#s3buckettypedef)
 - `s3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
+## S3BucketCriteriaForJobTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import S3BucketCriteriaForJobTypeDef
+```
+
+Optional fields:
+
+- `excludes`:
+  [CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef)
+- `includes`:
+  [CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef)
+
 ## S3BucketDefinitionForJobTypeDef
 
 ```python
@@ -1578,6 +1667,8 @@ Optional fields:
 - `bucketDefinitions`:
   `List`\[[S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)\]
 - `scoping`: [ScopingTypeDef](./type_defs.md#scopingtypedef)
+- `bucketCriteria`:
+  [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
 
 ## S3ObjectTypeDef
 
@@ -1611,6 +1702,105 @@ Optional fields:
 
 - `excludes`: [JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef)
 - `includes`: [JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef)
+
+## SearchResourcesBucketCriteriaTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesBucketCriteriaTypeDef
+```
+
+Optional fields:
+
+- `excludes`:
+  [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
+- `includes`:
+  [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
+
+## SearchResourcesCriteriaBlockTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesCriteriaBlockTypeDef
+```
+
+Optional fields:
+
+- `and`:
+  `List`\[[SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)\]
+
+## SearchResourcesCriteriaTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesCriteriaTypeDef
+```
+
+Optional fields:
+
+- `simpleCriterion`:
+  [SearchResourcesSimpleCriterionTypeDef](./type_defs.md#searchresourcessimplecriteriontypedef)
+- `tagCriterion`:
+  [SearchResourcesTagCriterionTypeDef](./type_defs.md#searchresourcestagcriteriontypedef)
+
+## SearchResourcesResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesResponseTypeDef
+```
+
+Optional fields:
+
+- `matchingResources`:
+  `List`\[[MatchingResourceTypeDef](./type_defs.md#matchingresourcetypedef)\]
+- `nextToken`: `str`
+
+## SearchResourcesSimpleCriterionTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesSimpleCriterionTypeDef
+```
+
+Optional fields:
+
+- `comparator`:
+  [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
+- `key`:
+  [SearchResourcesSimpleCriterionKeyType](./literals.md#searchresourcessimplecriterionkeytype)
+- `values`: `List`\[`str`\]
+
+## SearchResourcesSortCriteriaTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesSortCriteriaTypeDef
+```
+
+Optional fields:
+
+- `attributeName`:
+  [SearchResourcesSortAttributeNameType](./literals.md#searchresourcessortattributenametype)
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
+
+## SearchResourcesTagCriterionPairTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesTagCriterionPairTypeDef
+```
+
+Optional fields:
+
+- `key`: `str`
+- `value`: `str`
+
+## SearchResourcesTagCriterionTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesTagCriterionTypeDef
+```
+
+Optional fields:
+
+- `comparator`:
+  [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
+- `tagValues`:
+  `List`\[[SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef)\]
 
 ## SecurityHubConfigurationTypeDef
 
@@ -1709,6 +1899,19 @@ Optional fields:
   [SeverityDescriptionType](./literals.md#severitydescriptiontype)
 - `score`: `int`
 
+## SimpleCriterionForJobTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SimpleCriterionForJobTypeDef
+```
+
+Optional fields:
+
+- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
+- `key`:
+  [SimpleCriterionKeyForJobType](./literals.md#simplecriterionkeyforjobtype)
+- `values`: `List`\[`str`\]
+
 ## SimpleScopeTermTypeDef
 
 ```python
@@ -1742,6 +1945,29 @@ Optional fields:
 
 - `approximateNumberOfObjectsToProcess`: `float`
 - `numberOfRuns`: `float`
+
+## TagCriterionForJobTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import TagCriterionForJobTypeDef
+```
+
+Optional fields:
+
+- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
+- `tagValues`:
+  `List`\[[TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef)\]
+
+## TagCriterionPairForJobTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import TagCriterionPairForJobTypeDef
+```
+
+Optional fields:
+
+- `key`: `str`
+- `value`: `str`
 
 ## TagScopeTermTypeDef
 

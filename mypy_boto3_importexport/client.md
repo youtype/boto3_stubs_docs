@@ -3,7 +3,7 @@
 > [Index](..) > [ImportExport](.) > ImportExportClient
 
 Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport)
+[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport)
 type annotations stubs module
 [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
@@ -35,7 +35,7 @@ def get_importexport_client() -> ImportExportClient:
 ```
 
 Boto3 documentation:
-[ImportExport.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client)
+[ImportExport.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client)
 
 ## Exceptions
 
@@ -80,7 +80,7 @@ Exceptions:
 Type annotations for `boto3.client("importexport").can_paginate` method.
 
 Boto3 documentation:
-[ImportExport.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.can_paginate)
+[ImportExport.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.can_paginate)
 
 Arguments:
 
@@ -93,7 +93,7 @@ Returns `bool`.
 Type annotations for `boto3.client("importexport").cancel_job` method.
 
 Boto3 documentation:
-[ImportExport.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.cancel_job)
+[ImportExport.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.cancel_job)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Returns [CancelJobOutputTypeDef](./type_defs.md#canceljoboutputtypedef).
 Type annotations for `boto3.client("importexport").create_job` method.
 
 Boto3 documentation:
-[ImportExport.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.create_job)
+[ImportExport.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.create_job)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Type annotations for `boto3.client("importexport").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ImportExport.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.generate_presigned_url)
+[ImportExport.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.generate_presigned_url)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Returns `str`.
 Type annotations for `boto3.client("importexport").get_shipping_label` method.
 
 Boto3 documentation:
-[ImportExport.Client.get_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
+[ImportExport.Client.get_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns
 Type annotations for `boto3.client("importexport").get_status` method.
 
 Boto3 documentation:
-[ImportExport.Client.get_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.get_status)
+[ImportExport.Client.get_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.get_status)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns [GetStatusOutputTypeDef](./type_defs.md#getstatusoutputtypedef).
 Type annotations for `boto3.client("importexport").list_jobs` method.
 
 Boto3 documentation:
-[ImportExport.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.list_jobs)
+[ImportExport.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.list_jobs)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 Type annotations for `boto3.client("importexport").update_job` method.
 
 Boto3 documentation:
-[ImportExport.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/importexport.html#ImportExport.Client.update_job)
+[ImportExport.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/importexport.html#ImportExport.Client.update_job)
 
 Arguments:
 

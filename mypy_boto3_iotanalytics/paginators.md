@@ -3,7 +3,7 @@
 > [Index](..) > [IoTAnalytics](.) > Paginators
 
 Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iotanalytics.html#IoTAnalytics)
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
 [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
@@ -29,7 +29,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
 ```
 
 Boto3 documentation:
-[IoTAnalytics.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
+[IoTAnalytics.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
 
 Arguments for `ListChannelsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_dataset_contents_paginator() -> ListDatasetContentsPaginator:
 ```
 
 Boto3 documentation:
-[IoTAnalytics.Paginator.ListDatasetContents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
+[IoTAnalytics.Paginator.ListDatasetContents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
 
 Arguments for `ListDatasetContentsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
 ```
 
 Boto3 documentation:
-[IoTAnalytics.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
+[IoTAnalytics.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
 
 Arguments for `ListDatasetsPaginator.paginate` method:
 
@@ -107,7 +107,7 @@ def get_list_datastores_paginator() -> ListDatastoresPaginator:
 ```
 
 Boto3 documentation:
-[IoTAnalytics.Paginator.ListDatastores](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
+[IoTAnalytics.Paginator.ListDatastores](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
 
 Arguments for `ListDatastoresPaginator.paginate` method:
 
@@ -132,7 +132,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
 ```
 
 Boto3 documentation:
-[IoTAnalytics.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
+[IoTAnalytics.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
 
 Arguments for `ListPipelinesPaginator.paginate` method:
 

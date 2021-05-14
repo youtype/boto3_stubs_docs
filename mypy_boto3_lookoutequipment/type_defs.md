@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutEquipment](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lookoutequipment.html#LookoutEquipment)
+[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
 [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 

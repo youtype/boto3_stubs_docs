@@ -3,7 +3,7 @@
 > [Index](..) > Macie2
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
@@ -81,6 +81,7 @@ from mypy_boto3_macie2.client import Macie2Client
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [put_classification_export_configuration](./client.md#put_classification_export_configuration)
 - [put_findings_publication_configuration](./client.md#put_findings_publication_configuration)
+- [search_resources](./client.md#search_resources)
 - [tag_resource](./client.md#tag_resource)
 - [test_custom_data_identifier](./client.md#test_custom_data_identifier)
 - [untag_resource](./client.md#untag_resource)
@@ -123,6 +124,7 @@ from mypy_boto3_macie2.paginators import DescribeBucketsPaginator, ...
 - [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+- [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
 
 ## Literals
 
@@ -169,9 +171,14 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 - [OrderByType](./literals.md#orderbytype)
 - [RelationshipStatusType](./literals.md#relationshipstatustype)
 - [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
+- [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
+- [SearchResourcesPaginatorName](./literals.md#searchresourcespaginatorname)
+- [SearchResourcesSimpleCriterionKeyType](./literals.md#searchresourcessimplecriterionkeytype)
+- [SearchResourcesSortAttributeNameType](./literals.md#searchresourcessortattributenametype)
 - [SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype)
 - [SeverityDescriptionType](./literals.md#severitydescriptiontype)
 - [SharedAccessType](./literals.md#sharedaccesstype)
+- [SimpleCriterionKeyForJobType](./literals.md#simplecriterionkeyforjobtype)
 - [StorageClassType](./literals.md#storageclasstype)
 - [TagTargetType](./literals.md#tagtargettype)
 - [TimeRangeType](./literals.md#timerangetype)
@@ -227,6 +234,8 @@ from mypy_boto3_macie2.type_defs import AccessControlListTypeDef, ...
 - [CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef)
 - [CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef)
 - [CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef)
+- [CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef)
+- [CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef)
 - [CriterionAdditionalPropertiesTypeDef](./type_defs.md#criterionadditionalpropertiestypedef)
 - [CustomDataIdentifierSummaryTypeDef](./type_defs.md#customdataidentifiersummarytypedef)
 - [CustomDataIdentifiersTypeDef](./type_defs.md#customdataidentifierstypedef)
@@ -285,6 +294,8 @@ from mypy_boto3_macie2.type_defs import AccessControlListTypeDef, ...
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef)
+- [MatchingResourceTypeDef](./type_defs.md#matchingresourcetypedef)
 - [MemberTypeDef](./type_defs.md#membertypedef)
 - [MonthlyScheduleTypeDef](./type_defs.md#monthlyscheduletypedef)
 - [ObjectCountByEncryptionTypeTypeDef](./type_defs.md#objectcountbyencryptiontypetypedef)
@@ -298,6 +309,7 @@ from mypy_boto3_macie2.type_defs import AccessControlListTypeDef, ...
 - [RecordTypeDef](./type_defs.md#recordtypedef)
 - [ReplicationDetailsTypeDef](./type_defs.md#replicationdetailstypedef)
 - [ResourcesAffectedTypeDef](./type_defs.md#resourcesaffectedtypedef)
+- [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
 - [S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)
 - [S3BucketOwnerTypeDef](./type_defs.md#s3bucketownertypedef)
 - [S3BucketTypeDef](./type_defs.md#s3buckettypedef)
@@ -305,6 +317,14 @@ from mypy_boto3_macie2.type_defs import AccessControlListTypeDef, ...
 - [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 - [ScopingTypeDef](./type_defs.md#scopingtypedef)
+- [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
+- [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
+- [SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)
+- [SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef)
+- [SearchResourcesSimpleCriterionTypeDef](./type_defs.md#searchresourcessimplecriteriontypedef)
+- [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
+- [SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef)
+- [SearchResourcesTagCriterionTypeDef](./type_defs.md#searchresourcestagcriteriontypedef)
 - [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
 - [SensitiveDataItemTypeDef](./type_defs.md#sensitivedataitemtypedef)
 - [ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef)
@@ -313,9 +333,12 @@ from mypy_boto3_macie2.type_defs import AccessControlListTypeDef, ...
 - [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
 - [SessionIssuerTypeDef](./type_defs.md#sessionissuertypedef)
 - [SeverityTypeDef](./type_defs.md#severitytypedef)
+- [SimpleCriterionForJobTypeDef](./type_defs.md#simplecriterionforjobtypedef)
 - [SimpleScopeTermTypeDef](./type_defs.md#simplescopetermtypedef)
 - [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - [StatisticsTypeDef](./type_defs.md#statisticstypedef)
+- [TagCriterionForJobTypeDef](./type_defs.md#tagcriterionforjobtypedef)
+- [TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef)
 - [TagScopeTermTypeDef](./type_defs.md#tagscopetermtypedef)
 - [TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef)
 - [TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef)

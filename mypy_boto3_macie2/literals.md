@@ -3,7 +3,7 @@
 > [Index](..) > [Macie2](.) > Literals
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
@@ -43,9 +43,14 @@ type annotations stubs module
   - [OrderByType](#orderbytype)
   - [RelationshipStatusType](#relationshipstatustype)
   - [ScopeFilterKeyType](#scopefilterkeytype)
+  - [SearchResourcesComparatorType](#searchresourcescomparatortype)
+  - [SearchResourcesPaginatorName](#searchresourcespaginatorname)
+  - [SearchResourcesSimpleCriterionKeyType](#searchresourcessimplecriterionkeytype)
+  - [SearchResourcesSortAttributeNameType](#searchresourcessortattributenametype)
   - [SensitiveDataItemCategoryType](#sensitivedataitemcategorytype)
   - [SeverityDescriptionType](#severitydescriptiontype)
   - [SharedAccessType](#sharedaccesstype)
+  - [SimpleCriterionKeyForJobType](#simplecriterionkeyforjobtype)
   - [StorageClassType](#storageclasstype)
   - [TagTargetType](#tagtargettype)
   - [TimeRangeType](#timerangetype)
@@ -479,6 +484,53 @@ Values:
 - `OBJECT_SIZE`
 - `TAG`
 
+## SearchResourcesComparatorType
+
+```python
+from mypy_boto3_macie2.literals import SearchResourcesComparatorType
+```
+
+Values:
+
+- `EQ`
+- `NE`
+
+## SearchResourcesPaginatorName
+
+```python
+from mypy_boto3_macie2.literals import SearchResourcesPaginatorName
+```
+
+Values:
+
+- `search_resources`
+
+## SearchResourcesSimpleCriterionKeyType
+
+```python
+from mypy_boto3_macie2.literals import SearchResourcesSimpleCriterionKeyType
+```
+
+Values:
+
+- `ACCOUNT_ID`
+- `S3_BUCKET_EFFECTIVE_PERMISSION`
+- `S3_BUCKET_NAME`
+- `S3_BUCKET_SHARED_ACCESS`
+
+## SearchResourcesSortAttributeNameType
+
+```python
+from mypy_boto3_macie2.literals import SearchResourcesSortAttributeNameType
+```
+
+Values:
+
+- `ACCOUNT_ID`
+- `RESOURCE_NAME`
+- `S3_CLASSIFIABLE_OBJECT_COUNT`
+- `S3_CLASSIFIABLE_SIZE_IN_BYTES`
+
 ## SensitiveDataItemCategoryType
 
 ```python
@@ -516,6 +568,19 @@ Values:
 - `INTERNAL`
 - `NOT_SHARED`
 - `UNKNOWN`
+
+## SimpleCriterionKeyForJobType
+
+```python
+from mypy_boto3_macie2.literals import SimpleCriterionKeyForJobType
+```
+
+Values:
+
+- `ACCOUNT_ID`
+- `S3_BUCKET_EFFECTIVE_PERMISSION`
+- `S3_BUCKET_NAME`
+- `S3_BUCKET_SHARED_ACCESS`
 
 ## StorageClassType
 

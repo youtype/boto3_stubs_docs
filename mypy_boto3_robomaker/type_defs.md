@@ -3,7 +3,7 @@
 > [Index](..) > [RoboMaker](.) > Typed dictionaries
 
 Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/robomaker.html#RoboMaker)
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
 [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 

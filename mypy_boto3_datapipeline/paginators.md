@@ -3,7 +3,7 @@
 > [Index](..) > [DataPipeline](.) > Paginators
 
 Auto-generated documentation for
-[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline)
+[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
 [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
@@ -27,7 +27,7 @@ def get_describe_objects_paginator() -> DescribeObjectsPaginator:
 ```
 
 Boto3 documentation:
-[DataPipeline.Paginator.DescribeObjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
+[DataPipeline.Paginator.DescribeObjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
 
 Arguments for `DescribeObjectsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
 ```
 
 Boto3 documentation:
-[DataPipeline.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
+[DataPipeline.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
 
 Arguments for `ListPipelinesPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_query_objects_paginator() -> QueryObjectsPaginator:
 ```
 
 Boto3 documentation:
-[DataPipeline.Paginator.QueryObjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
+[DataPipeline.Paginator.QueryObjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
 
 Arguments for `QueryObjectsPaginator.paginate` method:
 

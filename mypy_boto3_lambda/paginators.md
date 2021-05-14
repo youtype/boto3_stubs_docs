@@ -3,7 +3,7 @@
 > [Index](..) > [Lambda](.) > Paginators
 
 Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda)
+[Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda)
 type annotations stubs module
 [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
@@ -33,7 +33,7 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListAliases)
+[Lambda.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListAliases)
 
 Arguments for `ListAliasesPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_list_code_signing_configs_paginator() -> ListCodeSigningConfigsPaginator
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListCodeSigningConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListCodeSigningConfigs)
+[Lambda.Paginator.ListCodeSigningConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListCodeSigningConfigs)
 
 Arguments for `ListCodeSigningConfigsPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_list_event_source_mappings_paginator() -> ListEventSourceMappingsPaginat
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListEventSourceMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListEventSourceMappings)
+[Lambda.Paginator.ListEventSourceMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListEventSourceMappings)
 
 Arguments for `ListEventSourceMappingsPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_list_function_event_invoke_configs_paginator() -> ListFunctionEventInvok
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListFunctionEventInvokeConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListFunctionEventInvokeConfigs)
+[Lambda.Paginator.ListFunctionEventInvokeConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListFunctionEventInvokeConfigs)
 
 Arguments for `ListFunctionEventInvokeConfigsPaginator.paginate` method:
 
@@ -137,7 +137,7 @@ def get_list_functions_paginator() -> ListFunctionsPaginator:
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListFunctions)
+[Lambda.Paginator.ListFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListFunctions)
 
 Arguments for `ListFunctionsPaginator.paginate` method:
 
@@ -165,7 +165,7 @@ def get_list_functions_by_code_signing_config_paginator() -> ListFunctionsByCode
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListFunctionsByCodeSigningConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListFunctionsByCodeSigningConfig)
+[Lambda.Paginator.ListFunctionsByCodeSigningConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListFunctionsByCodeSigningConfig)
 
 Arguments for `ListFunctionsByCodeSigningConfigPaginator.paginate` method:
 
@@ -191,7 +191,7 @@ def get_list_layer_versions_paginator() -> ListLayerVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListLayerVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListLayerVersions)
+[Lambda.Paginator.ListLayerVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListLayerVersions)
 
 Arguments for `ListLayerVersionsPaginator.paginate` method:
 
@@ -217,7 +217,7 @@ def get_list_layers_paginator() -> ListLayersPaginator:
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListLayers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListLayers)
+[Lambda.Paginator.ListLayers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListLayers)
 
 Arguments for `ListLayersPaginator.paginate` method:
 
@@ -243,7 +243,7 @@ def get_list_provisioned_concurrency_configs_paginator() -> ListProvisionedConcu
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListProvisionedConcurrencyConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListProvisionedConcurrencyConfigs)
+[Lambda.Paginator.ListProvisionedConcurrencyConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListProvisionedConcurrencyConfigs)
 
 Arguments for `ListProvisionedConcurrencyConfigsPaginator.paginate` method:
 
@@ -269,7 +269,7 @@ def get_list_versions_by_function_paginator() -> ListVersionsByFunctionPaginator
 ```
 
 Boto3 documentation:
-[Lambda.Paginator.ListVersionsByFunction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lambda.html#Lambda.Paginator.ListVersionsByFunction)
+[Lambda.Paginator.ListVersionsByFunction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lambda.html#Lambda.Paginator.ListVersionsByFunction)
 
 Arguments for `ListVersionsByFunctionPaginator.paginate` method:
 

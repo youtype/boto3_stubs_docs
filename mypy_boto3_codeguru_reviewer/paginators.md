@@ -3,7 +3,7 @@
 > [Index](..) > [CodeGuruReviewer](.) > Paginators
 
 Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
@@ -25,7 +25,7 @@ def get_list_repository_associations_paginator() -> ListRepositoryAssociationsPa
 ```
 
 Boto3 documentation:
-[CodeGuruReviewer.Paginator.ListRepositoryAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Paginator.ListRepositoryAssociations)
+[CodeGuruReviewer.Paginator.ListRepositoryAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Paginator.ListRepositoryAssociations)
 
 Arguments for `ListRepositoryAssociationsPaginator.paginate` method:
 

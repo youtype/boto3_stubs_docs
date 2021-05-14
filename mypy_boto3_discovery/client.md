@@ -4,7 +4,7 @@
 > ApplicationDiscoveryServiceClient
 
 Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService)
+[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
 [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
@@ -55,7 +55,7 @@ def get_discovery_client() -> ApplicationDiscoveryServiceClient:
 ```
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client)
+[ApplicationDiscoveryService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.associate_configuration_items_to_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
+[ApplicationDiscoveryService.Client.associate_configuration_items_to_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Type annotations for `boto3.client("discovery").batch_delete_import_data`
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.batch_delete_import_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
+[ApplicationDiscoveryService.Client.batch_delete_import_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns
 Type annotations for `boto3.client("discovery").can_paginate` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.can_paginate)
+[ApplicationDiscoveryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.can_paginate)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Returns `bool`.
 Type annotations for `boto3.client("discovery").create_application` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
+[ApplicationDiscoveryService.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("discovery").create_tags` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
+[ApplicationDiscoveryService.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("discovery").delete_applications` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.delete_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
+[ApplicationDiscoveryService.Client.delete_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("discovery").delete_tags` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
+[ApplicationDiscoveryService.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("discovery").describe_agents` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_agents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
+[ApplicationDiscoveryService.Client.describe_agents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("discovery").describe_configurations`
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
+[ApplicationDiscoveryService.Client.describe_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
 
 Arguments:
 
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("discovery").describe_continuous_exports`
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_continuous_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
+[ApplicationDiscoveryService.Client.describe_continuous_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("discovery").describe_export_configurations`
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_export_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
+[ApplicationDiscoveryService.Client.describe_export_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Returns
 Type annotations for `boto3.client("discovery").describe_export_tasks` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
+[ApplicationDiscoveryService.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns
 Type annotations for `boto3.client("discovery").describe_import_tasks` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_import_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
+[ApplicationDiscoveryService.Client.describe_import_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Returns
 Type annotations for `boto3.client("discovery").describe_tags` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
+[ApplicationDiscoveryService.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
+[ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("discovery").export_configurations` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.export_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
+[ApplicationDiscoveryService.Client.export_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
 
 Returns
 [ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef).
@@ -332,7 +332,7 @@ Returns
 Type annotations for `boto3.client("discovery").generate_presigned_url` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.generate_presigned_url)
+[ApplicationDiscoveryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns `str`.
 Type annotations for `boto3.client("discovery").get_discovery_summary` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.get_discovery_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
+[ApplicationDiscoveryService.Client.get_discovery_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
 
 Returns
 [GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef).
@@ -358,7 +358,7 @@ Returns
 Type annotations for `boto3.client("discovery").list_configurations` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
+[ApplicationDiscoveryService.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Returns
 Type annotations for `boto3.client("discovery").list_server_neighbors` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.list_server_neighbors](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
+[ApplicationDiscoveryService.Client.list_server_neighbors](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("discovery").start_continuous_export`
 method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
+[ApplicationDiscoveryService.Client.start_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
 
 Returns
 [StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef).
@@ -409,7 +409,7 @@ Type annotations for
 `boto3.client("discovery").start_data_collection_by_agent_ids` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
+[ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
 
 Arguments:
 
@@ -423,7 +423,7 @@ Returns
 Type annotations for `boto3.client("discovery").start_export_task` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
+[ApplicationDiscoveryService.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
 
 Arguments:
 
@@ -442,7 +442,7 @@ Returns
 Type annotations for `boto3.client("discovery").start_import_task` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_import_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
+[ApplicationDiscoveryService.Client.start_import_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns
 Type annotations for `boto3.client("discovery").stop_continuous_export` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.stop_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
+[ApplicationDiscoveryService.Client.stop_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
 
 Arguments:
 
@@ -473,7 +473,7 @@ Type annotations for
 `boto3.client("discovery").stop_data_collection_by_agent_ids` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
+[ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
 
 Arguments:
 
@@ -487,7 +487,7 @@ Returns
 Type annotations for `boto3.client("discovery").update_application` method.
 
 Boto3 documentation:
-[ApplicationDiscoveryService.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
+[ApplicationDiscoveryService.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
 
 Arguments:
 

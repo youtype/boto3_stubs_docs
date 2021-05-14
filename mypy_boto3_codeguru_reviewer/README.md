@@ -3,7 +3,7 @@
 > [Index](..) > CodeGuruReviewer
 
 Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > Paginators
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -33,7 +33,7 @@ def get_describe_destinations_paginator() -> DescribeDestinationsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeDestinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeDestinations)
+[CloudWatchLogs.Paginator.DescribeDestinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeDestinations)
 
 Arguments for `DescribeDestinationsPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeExportTasks)
+[CloudWatchLogs.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeExportTasks)
 
 Arguments for `DescribeExportTasksPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_describe_log_groups_paginator() -> DescribeLogGroupsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeLogGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogGroups)
+[CloudWatchLogs.Paginator.DescribeLogGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogGroups)
 
 Arguments for `DescribeLogGroupsPaginator.paginate` method:
 
@@ -113,7 +113,7 @@ def get_describe_log_streams_paginator() -> DescribeLogStreamsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeLogStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogStreams)
+[CloudWatchLogs.Paginator.DescribeLogStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogStreams)
 
 Arguments for `DescribeLogStreamsPaginator.paginate` method:
 
@@ -142,7 +142,7 @@ def get_describe_metric_filters_paginator() -> DescribeMetricFiltersPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeMetricFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeMetricFilters)
+[CloudWatchLogs.Paginator.DescribeMetricFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeMetricFilters)
 
 Arguments for `DescribeMetricFiltersPaginator.paginate` method:
 
@@ -170,7 +170,7 @@ def get_describe_queries_paginator() -> DescribeQueriesPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeQueries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeQueries)
+[CloudWatchLogs.Paginator.DescribeQueries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeQueries)
 
 Arguments for `DescribeQueriesPaginator.paginate` method:
 
@@ -197,7 +197,7 @@ def get_describe_resource_policies_paginator() -> DescribeResourcePoliciesPagina
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeResourcePolicies)
+[CloudWatchLogs.Paginator.DescribeResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeResourcePolicies)
 
 Arguments for `DescribeResourcePoliciesPaginator.paginate` method:
 
@@ -222,7 +222,7 @@ def get_describe_subscription_filters_paginator() -> DescribeSubscriptionFilters
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeSubscriptionFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeSubscriptionFilters)
+[CloudWatchLogs.Paginator.DescribeSubscriptionFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeSubscriptionFilters)
 
 Arguments for `DescribeSubscriptionFiltersPaginator.paginate` method:
 
@@ -248,7 +248,7 @@ def get_filter_log_events_paginator() -> FilterLogEventsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatchLogs.Paginator.FilterLogEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/logs.html#CloudWatchLogs.Paginator.FilterLogEvents)
+[CloudWatchLogs.Paginator.FilterLogEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/logs.html#CloudWatchLogs.Paginator.FilterLogEvents)
 
 Arguments for `FilterLogEventsPaginator.paginate` method:
 

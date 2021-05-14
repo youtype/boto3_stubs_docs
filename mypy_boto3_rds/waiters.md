@@ -3,7 +3,7 @@
 > [Index](..) > [RDS](.) > Waiters
 
 Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS)
+[RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS)
 type annotations stubs module
 [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
@@ -31,7 +31,7 @@ def get_db_cluster_snapshot_available_waiter() -> DBClusterSnapshotAvailableWait
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_cluster_snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_cluster_snapshot_available)
+[RDS.Waiter.db_cluster_snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_cluster_snapshot_available)
 
 Arguments for `DBClusterSnapshotAvailableWaiter.wait` method:
 
@@ -60,7 +60,7 @@ def get_db_cluster_snapshot_deleted_waiter() -> DBClusterSnapshotDeletedWaiter:
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_cluster_snapshot_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_cluster_snapshot_deleted)
+[RDS.Waiter.db_cluster_snapshot_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_cluster_snapshot_deleted)
 
 Arguments for `DBClusterSnapshotDeletedWaiter.wait` method:
 
@@ -88,7 +88,7 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_instance_available)
+[RDS.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_instance_available)
 
 Arguments for `DBInstanceAvailableWaiter.wait` method:
 
@@ -112,7 +112,7 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_instance_deleted)
+[RDS.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_instance_deleted)
 
 Arguments for `DBInstanceDeletedWaiter.wait` method:
 
@@ -136,7 +136,7 @@ def get_db_snapshot_available_waiter() -> DBSnapshotAvailableWaiter:
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_snapshot_available)
+[RDS.Waiter.db_snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_snapshot_available)
 
 Arguments for `DBSnapshotAvailableWaiter.wait` method:
 
@@ -165,7 +165,7 @@ def get_db_snapshot_completed_waiter() -> DBSnapshotCompletedWaiter:
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_snapshot_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_snapshot_completed)
+[RDS.Waiter.db_snapshot_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_snapshot_completed)
 
 Arguments for `DBSnapshotCompletedWaiter.wait` method:
 
@@ -194,7 +194,7 @@ def get_db_snapshot_deleted_waiter() -> DBSnapshotDeletedWaiter:
 ```
 
 Boto3 documentation:
-[RDS.Waiter.db_snapshot_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds.html#RDS.Waiter.db_snapshot_deleted)
+[RDS.Waiter.db_snapshot_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds.html#RDS.Waiter.db_snapshot_deleted)
 
 Arguments for `DBSnapshotDeletedWaiter.wait` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > GroundStation
 
 Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/groundstation.html#GroundStation)
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
 [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 

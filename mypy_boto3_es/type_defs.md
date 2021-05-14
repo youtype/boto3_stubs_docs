@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticsearchService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/es.html#ElasticsearchService)
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
@@ -27,6 +27,7 @@ type annotations stubs module
   - [CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](#cancelelasticsearchservicesoftwareupdateresponsetypedef)
   - [CognitoOptionsStatusTypeDef](#cognitooptionsstatustypedef)
   - [CognitoOptionsTypeDef](#cognitooptionstypedef)
+  - [ColdStorageOptionsTypeDef](#coldstorageoptionstypedef)
   - [CompatibleVersionsMapTypeDef](#compatibleversionsmaptypedef)
   - [CreateElasticsearchDomainResponseTypeDef](#createelasticsearchdomainresponsetypedef)
   - [CreateOutboundCrossClusterSearchConnectionResponseTypeDef](#createoutboundcrossclustersearchconnectionresponsetypedef)
@@ -353,6 +354,16 @@ Optional fields:
 - `UserPoolId`: `str`
 - `IdentityPoolId`: `str`
 - `RoleArn`: `str`
+
+## ColdStorageOptionsTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ColdStorageOptionsTypeDef
+```
+
+Required fields:
+
+- `Enabled`: `bool`
 
 ## CompatibleVersionsMapTypeDef
 
@@ -727,6 +738,8 @@ Optional fields:
 - `WarmType`:
   [ESWarmPartitionInstanceTypeType](./literals.md#eswarmpartitioninstancetypetype)
 - `WarmCount`: `int`
+- `ColdStorageOptions`:
+  [ColdStorageOptionsTypeDef](./type_defs.md#coldstorageoptionstypedef)
 
 ## ElasticsearchDomainConfigTypeDef
 

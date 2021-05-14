@@ -3,7 +3,7 @@
 > [Index](..) > [ConnectContactLens](.) > ConnectContactLensClient
 
 Auto-generated documentation for
-[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/connect-contact-lens.html#ConnectContactLens)
+[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connect-contact-lens.html#ConnectContactLens)
 type annotations stubs module
 [mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
@@ -29,7 +29,7 @@ def get_connect-contact-lens_client() -> ConnectContactLensClient:
 ```
 
 Boto3 documentation:
-[ConnectContactLens.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
+[ConnectContactLens.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
 
 ## Exceptions
 
@@ -60,7 +60,7 @@ Type annotations for `boto3.client("connect-contact-lens").can_paginate`
 method.
 
 Boto3 documentation:
-[ConnectContactLens.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate)
+[ConnectContactLens.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate)
 
 Arguments:
 
@@ -74,7 +74,7 @@ Type annotations for
 `boto3.client("connect-contact-lens").generate_presigned_url` method.
 
 Boto3 documentation:
-[ConnectContactLens.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url)
+[ConnectContactLens.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ConnectContactLens.Client.list_realtime_contact_analysis_segments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
+[ConnectContactLens.Client.list_realtime_contact_analysis_segments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
 
 Arguments:
 

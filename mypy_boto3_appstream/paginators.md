@@ -3,7 +3,7 @@
 > [Index](..) > [AppStream](.) > Paginators
 
 Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream)
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream)
 type annotations stubs module
 [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
@@ -34,7 +34,7 @@ def get_describe_directory_configs_paginator() -> DescribeDirectoryConfigsPagina
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeDirectoryConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeDirectoryConfigs)
+[AppStream.Paginator.DescribeDirectoryConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeDirectoryConfigs)
 
 Arguments for `DescribeDirectoryConfigsPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeFleets)
+[AppStream.Paginator.DescribeFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeFleets)
 
 Arguments for `DescribeFleetsPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_describe_image_builders_paginator() -> DescribeImageBuildersPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeImageBuilders](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeImageBuilders)
+[AppStream.Paginator.DescribeImageBuilders](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeImageBuilders)
 
 Arguments for `DescribeImageBuildersPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeImages)
+[AppStream.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeImages)
 
 Arguments for `DescribeImagesPaginator.paginate` method:
 
@@ -140,7 +140,7 @@ def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeSessions)
+[AppStream.Paginator.DescribeSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeSessions)
 
 Arguments for `DescribeSessionsPaginator.paginate` method:
 
@@ -170,7 +170,7 @@ def get_describe_stacks_paginator() -> DescribeStacksPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeStacks)
+[AppStream.Paginator.DescribeStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeStacks)
 
 Arguments for `DescribeStacksPaginator.paginate` method:
 
@@ -196,7 +196,7 @@ def get_describe_user_stack_associations_paginator() -> DescribeUserStackAssocia
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeUserStackAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeUserStackAssociations)
+[AppStream.Paginator.DescribeUserStackAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeUserStackAssociations)
 
 Arguments for `DescribeUserStackAssociationsPaginator.paginate` method:
 
@@ -225,7 +225,7 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.DescribeUsers)
+[AppStream.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.DescribeUsers)
 
 Arguments for `DescribeUsersPaginator.paginate` method:
 
@@ -252,7 +252,7 @@ def get_list_associated_fleets_paginator() -> ListAssociatedFleetsPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.ListAssociatedFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.ListAssociatedFleets)
+[AppStream.Paginator.ListAssociatedFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.ListAssociatedFleets)
 
 Arguments for `ListAssociatedFleetsPaginator.paginate` method:
 
@@ -278,7 +278,7 @@ def get_list_associated_stacks_paginator() -> ListAssociatedStacksPaginator:
 ```
 
 Boto3 documentation:
-[AppStream.Paginator.ListAssociatedStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/appstream.html#AppStream.Paginator.ListAssociatedStacks)
+[AppStream.Paginator.ListAssociatedStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Paginator.ListAssociatedStacks)
 
 Arguments for `ListAssociatedStacksPaginator.paginate` method:
 

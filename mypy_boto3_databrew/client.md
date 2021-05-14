@@ -3,7 +3,7 @@
 > [Index](..) > [GlueDataBrew](.) > GlueDataBrewClient
 
 Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew)
+[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
 [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
@@ -68,7 +68,7 @@ def get_databrew_client() -> GlueDataBrewClient:
 ```
 
 Boto3 documentation:
-[GlueDataBrew.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client)
+[GlueDataBrew.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client)
 
 ## Exceptions
 
@@ -100,7 +100,7 @@ Type annotations for `boto3.client("databrew").batch_delete_recipe_version`
 method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.batch_delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version)
+[GlueDataBrew.Client.batch_delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Returns
 Type annotations for `boto3.client("databrew").can_paginate` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.can_paginate)
+[GlueDataBrew.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.can_paginate)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Returns `bool`.
 Type annotations for `boto3.client("databrew").create_dataset` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.create_dataset)
+[GlueDataBrew.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.create_dataset)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Returns
 Type annotations for `boto3.client("databrew").create_profile_job` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.create_profile_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job)
+[GlueDataBrew.Client.create_profile_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns
 Type annotations for `boto3.client("databrew").create_project` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.create_project)
+[GlueDataBrew.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.create_project)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Returns
 Type annotations for `boto3.client("databrew").create_recipe` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.create_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.create_recipe)
+[GlueDataBrew.Client.create_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.create_recipe)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Returns
 Type annotations for `boto3.client("databrew").create_recipe_job` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.create_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job)
+[GlueDataBrew.Client.create_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Returns
 Type annotations for `boto3.client("databrew").create_schedule` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.create_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.create_schedule)
+[GlueDataBrew.Client.create_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.create_schedule)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Returns
 Type annotations for `boto3.client("databrew").delete_dataset` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset)
+[GlueDataBrew.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Returns
 Type annotations for `boto3.client("databrew").delete_job` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.delete_job)
+[GlueDataBrew.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.delete_job)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 Type annotations for `boto3.client("databrew").delete_project` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.delete_project)
+[GlueDataBrew.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.delete_project)
 
 Arguments:
 
@@ -296,7 +296,7 @@ Returns
 Type annotations for `boto3.client("databrew").delete_recipe_version` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version)
+[GlueDataBrew.Client.delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version)
 
 Arguments:
 
@@ -311,7 +311,7 @@ Returns
 Type annotations for `boto3.client("databrew").delete_schedule` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule)
+[GlueDataBrew.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Returns
 Type annotations for `boto3.client("databrew").describe_dataset` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset)
+[GlueDataBrew.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Returns
 Type annotations for `boto3.client("databrew").describe_job` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.describe_job)
+[GlueDataBrew.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.describe_job)
 
 Arguments:
 
@@ -353,7 +353,7 @@ Returns
 Type annotations for `boto3.client("databrew").describe_job_run` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run)
+[GlueDataBrew.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Returns
 Type annotations for `boto3.client("databrew").describe_project` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.describe_project)
+[GlueDataBrew.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.describe_project)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns
 Type annotations for `boto3.client("databrew").describe_recipe` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe)
+[GlueDataBrew.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Returns
 Type annotations for `boto3.client("databrew").describe_schedule` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule)
+[GlueDataBrew.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Returns
 Type annotations for `boto3.client("databrew").generate_presigned_url` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.generate_presigned_url)
+[GlueDataBrew.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.generate_presigned_url)
 
 Arguments:
 
@@ -427,7 +427,7 @@ Returns `str`.
 Type annotations for `boto3.client("databrew").list_datasets` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_datasets)
+[GlueDataBrew.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_datasets)
 
 Arguments:
 
@@ -442,7 +442,7 @@ Returns
 Type annotations for `boto3.client("databrew").list_job_runs` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs)
+[GlueDataBrew.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns
 Type annotations for `boto3.client("databrew").list_jobs` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_jobs)
+[GlueDataBrew.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_jobs)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 Type annotations for `boto3.client("databrew").list_projects` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_projects)
+[GlueDataBrew.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_projects)
 
 Arguments:
 
@@ -489,7 +489,7 @@ Returns
 Type annotations for `boto3.client("databrew").list_recipe_versions` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_recipe_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions)
+[GlueDataBrew.Client.list_recipe_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions)
 
 Arguments:
 
@@ -505,7 +505,7 @@ Returns
 Type annotations for `boto3.client("databrew").list_recipes` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_recipes)
+[GlueDataBrew.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_recipes)
 
 Arguments:
 
@@ -521,7 +521,7 @@ Returns
 Type annotations for `boto3.client("databrew").list_schedules` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_schedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_schedules)
+[GlueDataBrew.Client.list_schedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_schedules)
 
 Arguments:
 
@@ -537,7 +537,7 @@ Returns
 Type annotations for `boto3.client("databrew").list_tags_for_resource` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource)
+[GlueDataBrew.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -551,7 +551,7 @@ Returns
 Type annotations for `boto3.client("databrew").publish_recipe` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.publish_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe)
+[GlueDataBrew.Client.publish_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("databrew").send_project_session_action`
 method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.send_project_session_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action)
+[GlueDataBrew.Client.send_project_session_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action)
 
 Arguments:
 
@@ -586,7 +586,7 @@ Returns
 Type annotations for `boto3.client("databrew").start_job_run` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.start_job_run)
+[GlueDataBrew.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.start_job_run)
 
 Arguments:
 
@@ -600,7 +600,7 @@ Returns
 Type annotations for `boto3.client("databrew").start_project_session` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.start_project_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.start_project_session)
+[GlueDataBrew.Client.start_project_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.start_project_session)
 
 Arguments:
 
@@ -615,7 +615,7 @@ Returns
 Type annotations for `boto3.client("databrew").stop_job_run` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run)
+[GlueDataBrew.Client.stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run)
 
 Arguments:
 
@@ -629,7 +629,7 @@ Returns [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef).
 Type annotations for `boto3.client("databrew").tag_resource` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.tag_resource)
+[GlueDataBrew.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.tag_resource)
 
 Arguments:
 
@@ -643,7 +643,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("databrew").untag_resource` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.untag_resource)
+[GlueDataBrew.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.untag_resource)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("databrew").update_dataset` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.update_dataset)
+[GlueDataBrew.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.update_dataset)
 
 Arguments:
 
@@ -675,7 +675,7 @@ Returns
 Type annotations for `boto3.client("databrew").update_profile_job` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.update_profile_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job)
+[GlueDataBrew.Client.update_profile_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job)
 
 Arguments:
 
@@ -699,7 +699,7 @@ Returns
 Type annotations for `boto3.client("databrew").update_project` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.update_project)
+[GlueDataBrew.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.update_project)
 
 Arguments:
 
@@ -715,7 +715,7 @@ Returns
 Type annotations for `boto3.client("databrew").update_recipe` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.update_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.update_recipe)
+[GlueDataBrew.Client.update_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.update_recipe)
 
 Arguments:
 
@@ -731,7 +731,7 @@ Returns
 Type annotations for `boto3.client("databrew").update_recipe_job` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.update_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job)
+[GlueDataBrew.Client.update_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job)
 
 Arguments:
 
@@ -754,7 +754,7 @@ Returns
 Type annotations for `boto3.client("databrew").update_schedule` method.
 
 Boto3 documentation:
-[GlueDataBrew.Client.update_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/databrew.html#GlueDataBrew.Client.update_schedule)
+[GlueDataBrew.Client.update_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/databrew.html#GlueDataBrew.Client.update_schedule)
 
 Arguments:
 

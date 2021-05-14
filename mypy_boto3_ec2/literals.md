@@ -3,7 +3,7 @@
 > [Index](..) > [EC2](.) > Literals
 
 Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/ec2.html#EC2)
+[EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ec2.html#EC2)
 type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 

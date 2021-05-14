@@ -3,7 +3,7 @@
 > [Index](..) > [GameLift](.) > Paginators
 
 Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift)
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift)
 type annotations stubs module
 [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
@@ -44,7 +44,7 @@ def get_describe_fleet_attributes_paginator() -> DescribeFleetAttributesPaginato
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeFleetAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetAttributes)
+[GameLift.Paginator.DescribeFleetAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetAttributes)
 
 Arguments for `DescribeFleetAttributesPaginator.paginate` method:
 
@@ -70,7 +70,7 @@ def get_describe_fleet_capacity_paginator() -> DescribeFleetCapacityPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeFleetCapacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetCapacity)
+[GameLift.Paginator.DescribeFleetCapacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetCapacity)
 
 Arguments for `DescribeFleetCapacityPaginator.paginate` method:
 
@@ -96,7 +96,7 @@ def get_describe_fleet_events_paginator() -> DescribeFleetEventsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeFleetEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetEvents)
+[GameLift.Paginator.DescribeFleetEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetEvents)
 
 Arguments for `DescribeFleetEventsPaginator.paginate` method:
 
@@ -124,7 +124,7 @@ def get_describe_fleet_utilization_paginator() -> DescribeFleetUtilizationPagina
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeFleetUtilization](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetUtilization)
+[GameLift.Paginator.DescribeFleetUtilization](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetUtilization)
 
 Arguments for `DescribeFleetUtilizationPaginator.paginate` method:
 
@@ -150,7 +150,7 @@ def get_describe_game_server_instances_paginator() -> DescribeGameServerInstance
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeGameServerInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeGameServerInstances)
+[GameLift.Paginator.DescribeGameServerInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeGameServerInstances)
 
 Arguments for `DescribeGameServerInstancesPaginator.paginate` method:
 
@@ -177,7 +177,7 @@ def get_describe_game_session_details_paginator() -> DescribeGameSessionDetailsP
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeGameSessionDetails](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionDetails)
+[GameLift.Paginator.DescribeGameSessionDetails](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionDetails)
 
 Arguments for `DescribeGameSessionDetailsPaginator.paginate` method:
 
@@ -207,7 +207,7 @@ def get_describe_game_session_queues_paginator() -> DescribeGameSessionQueuesPag
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeGameSessionQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionQueues)
+[GameLift.Paginator.DescribeGameSessionQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionQueues)
 
 Arguments for `DescribeGameSessionQueuesPaginator.paginate` method:
 
@@ -233,7 +233,7 @@ def get_describe_game_sessions_paginator() -> DescribeGameSessionsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeGameSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessions)
+[GameLift.Paginator.DescribeGameSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessions)
 
 Arguments for `DescribeGameSessionsPaginator.paginate` method:
 
@@ -263,7 +263,7 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeInstances)
+[GameLift.Paginator.DescribeInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeInstances)
 
 Arguments for `DescribeInstancesPaginator.paginate` method:
 
@@ -291,7 +291,7 @@ def get_describe_matchmaking_configurations_paginator() -> DescribeMatchmakingCo
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeMatchmakingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingConfigurations)
+[GameLift.Paginator.DescribeMatchmakingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingConfigurations)
 
 Arguments for `DescribeMatchmakingConfigurationsPaginator.paginate` method:
 
@@ -318,7 +318,7 @@ def get_describe_matchmaking_rule_sets_paginator() -> DescribeMatchmakingRuleSet
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeMatchmakingRuleSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingRuleSets)
+[GameLift.Paginator.DescribeMatchmakingRuleSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingRuleSets)
 
 Arguments for `DescribeMatchmakingRuleSetsPaginator.paginate` method:
 
@@ -344,7 +344,7 @@ def get_describe_player_sessions_paginator() -> DescribePlayerSessionsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribePlayerSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribePlayerSessions)
+[GameLift.Paginator.DescribePlayerSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribePlayerSessions)
 
 Arguments for `DescribePlayerSessionsPaginator.paginate` method:
 
@@ -373,7 +373,7 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.DescribeScalingPolicies)
+[GameLift.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.DescribeScalingPolicies)
 
 Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 
@@ -400,7 +400,7 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.ListAliases)
+[GameLift.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.ListAliases)
 
 Arguments for `ListAliasesPaginator.paginate` method:
 
@@ -427,7 +427,7 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.ListBuilds)
+[GameLift.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.ListBuilds)
 
 Arguments for `ListBuildsPaginator.paginate` method:
 
@@ -452,7 +452,7 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.ListFleets)
+[GameLift.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.ListFleets)
 
 Arguments for `ListFleetsPaginator.paginate` method:
 
@@ -479,7 +479,7 @@ def get_list_game_server_groups_paginator() -> ListGameServerGroupsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.ListGameServerGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.ListGameServerGroups)
+[GameLift.Paginator.ListGameServerGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.ListGameServerGroups)
 
 Arguments for `ListGameServerGroupsPaginator.paginate` method:
 
@@ -504,7 +504,7 @@ def get_list_game_servers_paginator() -> ListGameServersPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.ListGameServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.ListGameServers)
+[GameLift.Paginator.ListGameServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.ListGameServers)
 
 Arguments for `ListGameServersPaginator.paginate` method:
 
@@ -530,7 +530,7 @@ def get_list_scripts_paginator() -> ListScriptsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.ListScripts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.ListScripts)
+[GameLift.Paginator.ListScripts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.ListScripts)
 
 Arguments for `ListScriptsPaginator.paginate` method:
 
@@ -555,7 +555,7 @@ def get_search_game_sessions_paginator() -> SearchGameSessionsPaginator:
 ```
 
 Boto3 documentation:
-[GameLift.Paginator.SearchGameSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/gamelift.html#GameLift.Paginator.SearchGameSessions)
+[GameLift.Paginator.SearchGameSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/gamelift.html#GameLift.Paginator.SearchGameSessions)
 
 Arguments for `SearchGameSessionsPaginator.paginate` method:
 

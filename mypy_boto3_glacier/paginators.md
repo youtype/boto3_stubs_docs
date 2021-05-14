@@ -3,7 +3,7 @@
 > [Index](..) > [Glacier](.) > Paginators
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
@@ -27,7 +27,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[Glacier.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glacier.html#Glacier.Paginator.ListJobs)
+[Glacier.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
 ```
 
 Boto3 documentation:
-[Glacier.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
+[Glacier.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
 
 Arguments for `ListMultipartUploadsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_parts_paginator() -> ListPartsPaginator:
 ```
 
 Boto3 documentation:
-[Glacier.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glacier.html#Glacier.Paginator.ListParts)
+[Glacier.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Paginator.ListParts)
 
 Arguments for `ListPartsPaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_list_vaults_paginator() -> ListVaultsPaginator:
 ```
 
 Boto3 documentation:
-[Glacier.Paginator.ListVaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glacier.html#Glacier.Paginator.ListVaults)
+[Glacier.Paginator.ListVaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Paginator.ListVaults)
 
 Arguments for `ListVaultsPaginator.paginate` method:
 

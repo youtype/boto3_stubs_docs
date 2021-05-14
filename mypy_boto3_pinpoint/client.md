@@ -3,7 +3,7 @@
 > [Index](..) > [Pinpoint](.) > PinpointClient
 
 Auto-generated documentation for
-[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint)
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
 [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
@@ -140,7 +140,7 @@ def get_pinpoint_client() -> PinpointClient:
 ```
 
 Boto3 documentation:
-[Pinpoint.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client)
+[Pinpoint.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client)
 
 ## Exceptions
 
@@ -173,7 +173,7 @@ Exceptions:
 Type annotations for `boto3.client("pinpoint").can_paginate` method.
 
 Boto3 documentation:
-[Pinpoint.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.can_paginate)
+[Pinpoint.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.can_paginate)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Returns `bool`.
 Type annotations for `boto3.client("pinpoint").create_app` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_app)
+[Pinpoint.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_app)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 Type annotations for `boto3.client("pinpoint").create_campaign` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
+[Pinpoint.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_email_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
+[Pinpoint.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_export_job` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
+[Pinpoint.Client.create_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_import_job` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
+[Pinpoint.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_journey` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
+[Pinpoint.Client.create_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_push_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
+[Pinpoint.Client.create_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Type annotations for
 `boto3.client("pinpoint").create_recommender_configuration` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
+[Pinpoint.Client.create_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_segment` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
+[Pinpoint.Client.create_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_sms_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
+[Pinpoint.Client.create_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
 
 Arguments:
 
@@ -354,7 +354,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").create_voice_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.create_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
+[Pinpoint.Client.create_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
 
 Arguments:
 
@@ -371,7 +371,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_adm_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
+[Pinpoint.Client.delete_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
 
 Arguments:
 
@@ -385,7 +385,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_apns_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
+[Pinpoint.Client.delete_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("pinpoint").delete_apns_sandbox_channel`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
+[Pinpoint.Client.delete_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("pinpoint").delete_apns_voip_channel`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
+[Pinpoint.Client.delete_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Type annotations for
 `boto3.client("pinpoint").delete_apns_voip_sandbox_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
+[Pinpoint.Client.delete_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
 
 Arguments:
 
@@ -444,7 +444,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_app` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
+[Pinpoint.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Returns [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef).
 Type annotations for `boto3.client("pinpoint").delete_baidu_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
+[Pinpoint.Client.delete_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
 
 Arguments:
 
@@ -471,7 +471,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_campaign` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
+[Pinpoint.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
 
 Arguments:
 
@@ -486,7 +486,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_email_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_email_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
+[Pinpoint.Client.delete_email_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
 
 Arguments:
 
@@ -500,7 +500,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_email_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
+[Pinpoint.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
 
 Arguments:
 
@@ -515,7 +515,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_endpoint` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
+[Pinpoint.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
 
 Arguments:
 
@@ -530,7 +530,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_event_stream` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_event_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
+[Pinpoint.Client.delete_event_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
 
 Arguments:
 
@@ -544,7 +544,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_gcm_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
+[Pinpoint.Client.delete_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
 
 Arguments:
 
@@ -558,7 +558,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_journey` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
+[Pinpoint.Client.delete_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
 
 Arguments:
 
@@ -573,7 +573,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_push_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
+[Pinpoint.Client.delete_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
 
 Arguments:
 
@@ -589,7 +589,7 @@ Type annotations for
 `boto3.client("pinpoint").delete_recommender_configuration` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
+[Pinpoint.Client.delete_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_segment` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
+[Pinpoint.Client.delete_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
 
 Arguments:
 
@@ -618,7 +618,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_sms_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
+[Pinpoint.Client.delete_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
 
 Arguments:
 
@@ -632,7 +632,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_sms_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
+[Pinpoint.Client.delete_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
 
 Arguments:
 
@@ -647,7 +647,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_user_endpoints` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
+[Pinpoint.Client.delete_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
 
 Arguments:
 
@@ -662,7 +662,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_voice_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
+[Pinpoint.Client.delete_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
 
 Arguments:
 
@@ -676,7 +676,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").delete_voice_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.delete_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
+[Pinpoint.Client.delete_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
 
 Arguments:
 
@@ -691,7 +691,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").generate_presigned_url` method.
 
 Boto3 documentation:
-[Pinpoint.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url)
+[Pinpoint.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url)
 
 Arguments:
 
@@ -707,7 +707,7 @@ Returns `str`.
 Type annotations for `boto3.client("pinpoint").get_adm_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
+[Pinpoint.Client.get_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
 
 Arguments:
 
@@ -721,7 +721,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_apns_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
+[Pinpoint.Client.get_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
 
 Arguments:
 
@@ -736,7 +736,7 @@ Type annotations for `boto3.client("pinpoint").get_apns_sandbox_channel`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
+[Pinpoint.Client.get_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
 
 Arguments:
 
@@ -750,7 +750,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_apns_voip_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
+[Pinpoint.Client.get_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
 
 Arguments:
 
@@ -765,7 +765,7 @@ Type annotations for `boto3.client("pinpoint").get_apns_voip_sandbox_channel`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
+[Pinpoint.Client.get_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
 
 Arguments:
 
@@ -779,7 +779,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_app` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_app)
+[Pinpoint.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_app)
 
 Arguments:
 
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("pinpoint").get_application_date_range_kpi`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_application_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
+[Pinpoint.Client.get_application_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Type annotations for `boto3.client("pinpoint").get_application_settings`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_application_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
+[Pinpoint.Client.get_application_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
 
 Arguments:
 
@@ -827,7 +827,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_apps` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
+[Pinpoint.Client.get_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
 
 Arguments:
 
@@ -841,7 +841,7 @@ Returns [GetAppsResponseTypeDef](./type_defs.md#getappsresponsetypedef).
 Type annotations for `boto3.client("pinpoint").get_baidu_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
+[Pinpoint.Client.get_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
 
 Arguments:
 
@@ -855,7 +855,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_campaign` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
+[Pinpoint.Client.get_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
 
 Arguments:
 
@@ -870,7 +870,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_campaign_activities` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_campaign_activities](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
+[Pinpoint.Client.get_campaign_activities](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
 
 Arguments:
 
@@ -888,7 +888,7 @@ Type annotations for `boto3.client("pinpoint").get_campaign_date_range_kpi`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_campaign_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
+[Pinpoint.Client.get_campaign_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
 
 Arguments:
 
@@ -908,7 +908,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_campaign_version` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_campaign_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
+[Pinpoint.Client.get_campaign_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
 
 Arguments:
 
@@ -924,7 +924,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_campaign_versions` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_campaign_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
+[Pinpoint.Client.get_campaign_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
 
 Arguments:
 
@@ -941,7 +941,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_campaigns` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_campaigns](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
+[Pinpoint.Client.get_campaigns](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
 
 Arguments:
 
@@ -957,7 +957,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_channels` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
+[Pinpoint.Client.get_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
 
 Arguments:
 
@@ -971,7 +971,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_email_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_email_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
+[Pinpoint.Client.get_email_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
 
 Arguments:
 
@@ -985,7 +985,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_email_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
+[Pinpoint.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
 
 Arguments:
 
@@ -1000,7 +1000,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_endpoint` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
+[Pinpoint.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
 
 Arguments:
 
@@ -1015,7 +1015,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_event_stream` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_event_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
+[Pinpoint.Client.get_event_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
 
 Arguments:
 
@@ -1029,7 +1029,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_export_job` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
+[Pinpoint.Client.get_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
 
 Arguments:
 
@@ -1044,7 +1044,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_export_jobs` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
+[Pinpoint.Client.get_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
 
 Arguments:
 
@@ -1060,7 +1060,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_gcm_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
+[Pinpoint.Client.get_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
 
 Arguments:
 
@@ -1074,7 +1074,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_import_job` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
+[Pinpoint.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
 
 Arguments:
 
@@ -1089,7 +1089,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_import_jobs` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
+[Pinpoint.Client.get_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
 
 Arguments:
 
@@ -1105,7 +1105,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_journey` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
+[Pinpoint.Client.get_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
 
 Arguments:
 
@@ -1120,7 +1120,7 @@ Type annotations for `boto3.client("pinpoint").get_journey_date_range_kpi`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_journey_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
+[Pinpoint.Client.get_journey_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
 
 Arguments:
 
@@ -1141,7 +1141,7 @@ Type annotations for
 `boto3.client("pinpoint").get_journey_execution_activity_metrics` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_journey_execution_activity_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
+[Pinpoint.Client.get_journey_execution_activity_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
 
 Arguments:
 
@@ -1160,7 +1160,7 @@ Type annotations for `boto3.client("pinpoint").get_journey_execution_metrics`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_journey_execution_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
+[Pinpoint.Client.get_journey_execution_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
 
 Arguments:
 
@@ -1177,7 +1177,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_push_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
+[Pinpoint.Client.get_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
 
 Arguments:
 
@@ -1193,7 +1193,7 @@ Type annotations for `boto3.client("pinpoint").get_recommender_configuration`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
+[Pinpoint.Client.get_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
 
 Arguments:
 
@@ -1208,7 +1208,7 @@ Type annotations for `boto3.client("pinpoint").get_recommender_configurations`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_recommender_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
+[Pinpoint.Client.get_recommender_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
 
 Arguments:
 
@@ -1223,7 +1223,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_segment` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
+[Pinpoint.Client.get_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
 
 Arguments:
 
@@ -1237,7 +1237,7 @@ Returns [GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef).
 Type annotations for `boto3.client("pinpoint").get_segment_export_jobs` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_segment_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
+[Pinpoint.Client.get_segment_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
 
 Arguments:
 
@@ -1254,7 +1254,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_segment_import_jobs` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_segment_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
+[Pinpoint.Client.get_segment_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
 
 Arguments:
 
@@ -1271,7 +1271,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_segment_version` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_segment_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
+[Pinpoint.Client.get_segment_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
 
 Arguments:
 
@@ -1287,7 +1287,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_segment_versions` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_segment_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
+[Pinpoint.Client.get_segment_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
 
 Arguments:
 
@@ -1304,7 +1304,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_segments` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_segments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
+[Pinpoint.Client.get_segments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
 
 Arguments:
 
@@ -1320,7 +1320,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_sms_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
+[Pinpoint.Client.get_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
 
 Arguments:
 
@@ -1334,7 +1334,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_sms_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
+[Pinpoint.Client.get_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
 
 Arguments:
 
@@ -1349,7 +1349,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_user_endpoints` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
+[Pinpoint.Client.get_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
 
 Arguments:
 
@@ -1364,7 +1364,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_voice_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
+[Pinpoint.Client.get_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
 
 Arguments:
 
@@ -1378,7 +1378,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").get_voice_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.get_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
+[Pinpoint.Client.get_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
 
 Arguments:
 
@@ -1393,7 +1393,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").list_journeys` method.
 
 Boto3 documentation:
-[Pinpoint.Client.list_journeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
+[Pinpoint.Client.list_journeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
 
 Arguments:
 
@@ -1409,7 +1409,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Pinpoint.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
+[Pinpoint.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1423,7 +1423,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").list_template_versions` method.
 
 Boto3 documentation:
-[Pinpoint.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
+[Pinpoint.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
 
 Arguments:
 
@@ -1440,7 +1440,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").list_templates` method.
 
 Boto3 documentation:
-[Pinpoint.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
+[Pinpoint.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
 
 Arguments:
 
@@ -1457,7 +1457,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").phone_number_validate` method.
 
 Boto3 documentation:
-[Pinpoint.Client.phone_number_validate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
+[Pinpoint.Client.phone_number_validate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
 
 Arguments:
 
@@ -1473,7 +1473,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").put_event_stream` method.
 
 Boto3 documentation:
-[Pinpoint.Client.put_event_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
+[Pinpoint.Client.put_event_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
 
 Arguments:
 
@@ -1490,7 +1490,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").put_events` method.
 
 Boto3 documentation:
-[Pinpoint.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.put_events)
+[Pinpoint.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.put_events)
 
 Arguments:
 
@@ -1505,7 +1505,7 @@ Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
 Type annotations for `boto3.client("pinpoint").remove_attributes` method.
 
 Boto3 documentation:
-[Pinpoint.Client.remove_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
+[Pinpoint.Client.remove_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
 
 Arguments:
 
@@ -1523,7 +1523,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").send_messages` method.
 
 Boto3 documentation:
-[Pinpoint.Client.send_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
+[Pinpoint.Client.send_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
 
 Arguments:
 
@@ -1539,7 +1539,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").send_users_messages` method.
 
 Boto3 documentation:
-[Pinpoint.Client.send_users_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
+[Pinpoint.Client.send_users_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
 
 Arguments:
 
@@ -1556,7 +1556,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").tag_resource` method.
 
 Boto3 documentation:
-[Pinpoint.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
+[Pinpoint.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
 
 Arguments:
 
@@ -1568,7 +1568,7 @@ Arguments:
 Type annotations for `boto3.client("pinpoint").untag_resource` method.
 
 Boto3 documentation:
-[Pinpoint.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
+[Pinpoint.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
 
 Arguments:
 
@@ -1580,7 +1580,7 @@ Arguments:
 Type annotations for `boto3.client("pinpoint").update_adm_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
+[Pinpoint.Client.update_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
 
 Arguments:
 
@@ -1597,7 +1597,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_apns_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
+[Pinpoint.Client.update_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
 
 Arguments:
 
@@ -1615,7 +1615,7 @@ Type annotations for `boto3.client("pinpoint").update_apns_sandbox_channel`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
+[Pinpoint.Client.update_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
 
 Arguments:
 
@@ -1633,7 +1633,7 @@ Type annotations for `boto3.client("pinpoint").update_apns_voip_channel`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
+[Pinpoint.Client.update_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
 
 Arguments:
 
@@ -1651,7 +1651,7 @@ Type annotations for
 `boto3.client("pinpoint").update_apns_voip_sandbox_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
+[Pinpoint.Client.update_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
 
 Arguments:
 
@@ -1669,7 +1669,7 @@ Type annotations for `boto3.client("pinpoint").update_application_settings`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_application_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
+[Pinpoint.Client.update_application_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
 
 Arguments:
 
@@ -1686,7 +1686,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_baidu_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
+[Pinpoint.Client.update_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
 
 Arguments:
 
@@ -1703,7 +1703,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_campaign` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
+[Pinpoint.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
 
 Arguments:
 
@@ -1721,7 +1721,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_email_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_email_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
+[Pinpoint.Client.update_email_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
 
 Arguments:
 
@@ -1738,7 +1738,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_email_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
+[Pinpoint.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
 
 Arguments:
 
@@ -1757,7 +1757,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_endpoint` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
+[Pinpoint.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
 
 Arguments:
 
@@ -1774,7 +1774,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_endpoints_batch` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_endpoints_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
+[Pinpoint.Client.update_endpoints_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
 
 Arguments:
 
@@ -1791,7 +1791,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_gcm_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
+[Pinpoint.Client.update_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
 
 Arguments:
 
@@ -1808,7 +1808,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_journey` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
+[Pinpoint.Client.update_journey](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
 
 Arguments:
 
@@ -1826,7 +1826,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_journey_state` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_journey_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
+[Pinpoint.Client.update_journey_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
 
 Arguments:
 
@@ -1844,7 +1844,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_push_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
+[Pinpoint.Client.update_push_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
 
 Arguments:
 
@@ -1864,7 +1864,7 @@ Type annotations for
 `boto3.client("pinpoint").update_recommender_configuration` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
+[Pinpoint.Client.update_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
 
 Arguments:
 
@@ -1881,7 +1881,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_segment` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
+[Pinpoint.Client.update_segment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
 
 Arguments:
 
@@ -1899,7 +1899,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_sms_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
+[Pinpoint.Client.update_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
 
 Arguments:
 
@@ -1916,7 +1916,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_sms_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
+[Pinpoint.Client.update_sms_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
 
 Arguments:
 
@@ -1936,7 +1936,7 @@ Type annotations for `boto3.client("pinpoint").update_template_active_version`
 method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_template_active_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
+[Pinpoint.Client.update_template_active_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
 
 Arguments:
 
@@ -1954,7 +1954,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_voice_channel` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
+[Pinpoint.Client.update_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
 
 Arguments:
 
@@ -1971,7 +1971,7 @@ Returns
 Type annotations for `boto3.client("pinpoint").update_voice_template` method.
 
 Boto3 documentation:
-[Pinpoint.Client.update_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
+[Pinpoint.Client.update_voice_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
 
 Arguments:
 

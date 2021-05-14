@@ -3,7 +3,7 @@
 > [Index](..) > [Budgets](.) > Paginators
 
 Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets)
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets)
 type annotations stubs module
 [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
@@ -31,7 +31,7 @@ def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHist
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetActionHistories](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
+[Budgets.Paginator.DescribeBudgetActionHistories](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
 
 Arguments for `DescribeBudgetActionHistoriesPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_describe_budget_actions_for_account_paginator() -> DescribeBudgetActions
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetActionsForAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
+[Budgets.Paginator.DescribeBudgetActionsForAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
 
 Arguments for `DescribeBudgetActionsForAccountPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_describe_budget_actions_for_budget_paginator() -> DescribeBudgetActionsF
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetActionsForBudget](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
+[Budgets.Paginator.DescribeBudgetActionsForBudget](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
 
 Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
 
@@ -113,7 +113,7 @@ def get_describe_budget_performance_history_paginator() -> DescribeBudgetPerform
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetPerformanceHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
+[Budgets.Paginator.DescribeBudgetPerformanceHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
 
 Arguments for `DescribeBudgetPerformanceHistoryPaginator.paginate` method:
 
@@ -141,7 +141,7 @@ def get_describe_budgets_paginator() -> DescribeBudgetsPaginator:
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeBudgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
+[Budgets.Paginator.DescribeBudgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
 
 Arguments for `DescribeBudgetsPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_describe_notifications_for_budget_paginator() -> DescribeNotificationsFo
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeNotificationsForBudget](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
+[Budgets.Paginator.DescribeNotificationsForBudget](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
 
 Arguments for `DescribeNotificationsForBudgetPaginator.paginate` method:
 
@@ -194,7 +194,7 @@ def get_describe_subscribers_for_notification_paginator() -> DescribeSubscribers
 ```
 
 Boto3 documentation:
-[Budgets.Paginator.DescribeSubscribersForNotification](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
+[Budgets.Paginator.DescribeSubscribersForNotification](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
 
 Arguments for `DescribeSubscribersForNotificationPaginator.paginate` method:
 

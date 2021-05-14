@@ -3,7 +3,7 @@
 > [Index](..) > [DAX](.) > DAXClient
 
 Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX)
+[DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX)
 type annotations stubs module
 [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
@@ -50,7 +50,7 @@ def get_dax_client() -> DAXClient:
 ```
 
 Boto3 documentation:
-[DAX.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client)
+[DAX.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client)
 
 ## Exceptions
 
@@ -101,7 +101,7 @@ Exceptions:
 Type annotations for `boto3.client("dax").can_paginate` method.
 
 Boto3 documentation:
-[DAX.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.can_paginate)
+[DAX.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.can_paginate)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns `bool`.
 Type annotations for `boto3.client("dax").create_cluster` method.
 
 Boto3 documentation:
-[DAX.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.create_cluster)
+[DAX.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.create_cluster)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Returns
 Type annotations for `boto3.client("dax").create_parameter_group` method.
 
 Boto3 documentation:
-[DAX.Client.create_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.create_parameter_group)
+[DAX.Client.create_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.create_parameter_group)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns
 Type annotations for `boto3.client("dax").create_subnet_group` method.
 
 Boto3 documentation:
-[DAX.Client.create_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.create_subnet_group)
+[DAX.Client.create_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.create_subnet_group)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Returns
 Type annotations for `boto3.client("dax").decrease_replication_factor` method.
 
 Boto3 documentation:
-[DAX.Client.decrease_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.decrease_replication_factor)
+[DAX.Client.decrease_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.decrease_replication_factor)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns
 Type annotations for `boto3.client("dax").delete_cluster` method.
 
 Boto3 documentation:
-[DAX.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.delete_cluster)
+[DAX.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.delete_cluster)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns
 Type annotations for `boto3.client("dax").delete_parameter_group` method.
 
 Boto3 documentation:
-[DAX.Client.delete_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.delete_parameter_group)
+[DAX.Client.delete_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.delete_parameter_group)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns
 Type annotations for `boto3.client("dax").delete_subnet_group` method.
 
 Boto3 documentation:
-[DAX.Client.delete_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.delete_subnet_group)
+[DAX.Client.delete_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.delete_subnet_group)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Returns
 Type annotations for `boto3.client("dax").describe_clusters` method.
 
 Boto3 documentation:
-[DAX.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.describe_clusters)
+[DAX.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.describe_clusters)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns
 Type annotations for `boto3.client("dax").describe_default_parameters` method.
 
 Boto3 documentation:
-[DAX.Client.describe_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.describe_default_parameters)
+[DAX.Client.describe_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.describe_default_parameters)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns
 Type annotations for `boto3.client("dax").describe_events` method.
 
 Boto3 documentation:
-[DAX.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.describe_events)
+[DAX.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.describe_events)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Returns
 Type annotations for `boto3.client("dax").describe_parameter_groups` method.
 
 Boto3 documentation:
-[DAX.Client.describe_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.describe_parameter_groups)
+[DAX.Client.describe_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.describe_parameter_groups)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Returns
 Type annotations for `boto3.client("dax").describe_parameters` method.
 
 Boto3 documentation:
-[DAX.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.describe_parameters)
+[DAX.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.describe_parameters)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("dax").describe_subnet_groups` method.
 
 Boto3 documentation:
-[DAX.Client.describe_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.describe_subnet_groups)
+[DAX.Client.describe_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.describe_subnet_groups)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Returns
 Type annotations for `boto3.client("dax").generate_presigned_url` method.
 
 Boto3 documentation:
-[DAX.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.generate_presigned_url)
+[DAX.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.generate_presigned_url)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Returns `str`.
 Type annotations for `boto3.client("dax").increase_replication_factor` method.
 
 Boto3 documentation:
-[DAX.Client.increase_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.increase_replication_factor)
+[DAX.Client.increase_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.increase_replication_factor)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Returns
 Type annotations for `boto3.client("dax").list_tags` method.
 
 Boto3 documentation:
-[DAX.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.list_tags)
+[DAX.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.list_tags)
 
 Arguments:
 
@@ -377,7 +377,7 @@ Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 Type annotations for `boto3.client("dax").reboot_node` method.
 
 Boto3 documentation:
-[DAX.Client.reboot_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.reboot_node)
+[DAX.Client.reboot_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.reboot_node)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns [RebootNodeResponseTypeDef](./type_defs.md#rebootnoderesponsetypedef).
 Type annotations for `boto3.client("dax").tag_resource` method.
 
 Boto3 documentation:
-[DAX.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.tag_resource)
+[DAX.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.tag_resource)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns
 Type annotations for `boto3.client("dax").untag_resource` method.
 
 Boto3 documentation:
-[DAX.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.untag_resource)
+[DAX.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.untag_resource)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Returns
 Type annotations for `boto3.client("dax").update_cluster` method.
 
 Boto3 documentation:
-[DAX.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.update_cluster)
+[DAX.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.update_cluster)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns
 Type annotations for `boto3.client("dax").update_parameter_group` method.
 
 Boto3 documentation:
-[DAX.Client.update_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.update_parameter_group)
+[DAX.Client.update_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.update_parameter_group)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns
 Type annotations for `boto3.client("dax").update_subnet_group` method.
 
 Boto3 documentation:
-[DAX.Client.update_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/dax.html#DAX.Client.update_subnet_group)
+[DAX.Client.update_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dax.html#DAX.Client.update_subnet_group)
 
 Arguments:
 

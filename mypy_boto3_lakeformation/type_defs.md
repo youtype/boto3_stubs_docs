@@ -3,7 +3,7 @@
 > [Index](..) > [LakeFormation](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/lakeformation.html#LakeFormation)
+[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
 [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 

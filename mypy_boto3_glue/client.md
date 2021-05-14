@@ -3,7 +3,7 @@
 > [Index](..) > [Glue](.) > GlueClient
 
 Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue)
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue)
 type annotations stubs module
 [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
@@ -186,7 +186,7 @@ def get_glue_client() -> GlueClient:
 ```
 
 Boto3 documentation:
-[Glue.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client)
+[Glue.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client)
 
 ## Exceptions
 
@@ -235,7 +235,7 @@ Exceptions:
 Type annotations for `boto3.client("glue").batch_create_partition` method.
 
 Boto3 documentation:
-[Glue.Client.batch_create_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_create_partition)
+[Glue.Client.batch_create_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_create_partition)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_delete_connection` method.
 
 Boto3 documentation:
-[Glue.Client.batch_delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_delete_connection)
+[Glue.Client.batch_delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_delete_connection)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_delete_partition` method.
 
 Boto3 documentation:
-[Glue.Client.batch_delete_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_delete_partition)
+[Glue.Client.batch_delete_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_delete_partition)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_delete_table` method.
 
 Boto3 documentation:
-[Glue.Client.batch_delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_delete_table)
+[Glue.Client.batch_delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_delete_table)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_delete_table_version` method.
 
 Boto3 documentation:
-[Glue.Client.batch_delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_delete_table_version)
+[Glue.Client.batch_delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_delete_table_version)
 
 Arguments:
 
@@ -321,7 +321,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_get_crawlers` method.
 
 Boto3 documentation:
-[Glue.Client.batch_get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_get_crawlers)
+[Glue.Client.batch_get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_get_crawlers)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_get_dev_endpoints` method.
 
 Boto3 documentation:
-[Glue.Client.batch_get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints)
+[Glue.Client.batch_get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_get_jobs` method.
 
 Boto3 documentation:
-[Glue.Client.batch_get_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_get_jobs)
+[Glue.Client.batch_get_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_get_jobs)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_get_partition` method.
 
 Boto3 documentation:
-[Glue.Client.batch_get_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_get_partition)
+[Glue.Client.batch_get_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_get_partition)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_get_triggers` method.
 
 Boto3 documentation:
-[Glue.Client.batch_get_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_get_triggers)
+[Glue.Client.batch_get_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_get_triggers)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_get_workflows` method.
 
 Boto3 documentation:
-[Glue.Client.batch_get_workflows](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_get_workflows)
+[Glue.Client.batch_get_workflows](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_get_workflows)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_stop_job_run` method.
 
 Boto3 documentation:
-[Glue.Client.batch_stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_stop_job_run)
+[Glue.Client.batch_stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_stop_job_run)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Returns
 Type annotations for `boto3.client("glue").batch_update_partition` method.
 
 Boto3 documentation:
-[Glue.Client.batch_update_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.batch_update_partition)
+[Glue.Client.batch_update_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.batch_update_partition)
 
 Arguments:
 
@@ -445,7 +445,7 @@ Returns
 Type annotations for `boto3.client("glue").can_paginate` method.
 
 Boto3 documentation:
-[Glue.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.can_paginate)
+[Glue.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.can_paginate)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns `bool`.
 Type annotations for `boto3.client("glue").cancel_ml_task_run` method.
 
 Boto3 documentation:
-[Glue.Client.cancel_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.cancel_ml_task_run)
+[Glue.Client.cancel_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.cancel_ml_task_run)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Type annotations for `boto3.client("glue").check_schema_version_validity`
 method.
 
 Boto3 documentation:
-[Glue.Client.check_schema_version_validity](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.check_schema_version_validity)
+[Glue.Client.check_schema_version_validity](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.check_schema_version_validity)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Returns
 Type annotations for `boto3.client("glue").create_classifier` method.
 
 Boto3 documentation:
-[Glue.Client.create_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_classifier)
+[Glue.Client.create_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_classifier)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_connection` method.
 
 Boto3 documentation:
-[Glue.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_connection)
+[Glue.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_connection)
 
 Arguments:
 
@@ -525,7 +525,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_crawler` method.
 
 Boto3 documentation:
-[Glue.Client.create_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_crawler)
+[Glue.Client.create_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_crawler)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_database` method.
 
 Boto3 documentation:
-[Glue.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_database)
+[Glue.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_database)
 
 Arguments:
 
@@ -569,7 +569,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_dev_endpoint` method.
 
 Boto3 documentation:
-[Glue.Client.create_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_dev_endpoint)
+[Glue.Client.create_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_dev_endpoint)
 
 Arguments:
 
@@ -597,7 +597,7 @@ Returns
 Type annotations for `boto3.client("glue").create_job` method.
 
 Boto3 documentation:
-[Glue.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_job)
+[Glue.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_job)
 
 Arguments:
 
@@ -631,7 +631,7 @@ Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 Type annotations for `boto3.client("glue").create_ml_transform` method.
 
 Boto3 documentation:
-[Glue.Client.create_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_ml_transform)
+[Glue.Client.create_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_ml_transform)
 
 Arguments:
 
@@ -661,7 +661,7 @@ Returns
 Type annotations for `boto3.client("glue").create_partition` method.
 
 Boto3 documentation:
-[Glue.Client.create_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_partition)
+[Glue.Client.create_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_partition)
 
 Arguments:
 
@@ -678,7 +678,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_partition_index` method.
 
 Boto3 documentation:
-[Glue.Client.create_partition_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_partition_index)
+[Glue.Client.create_partition_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_partition_index)
 
 Arguments:
 
@@ -695,7 +695,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_registry` method.
 
 Boto3 documentation:
-[Glue.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_registry)
+[Glue.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_registry)
 
 Arguments:
 
@@ -711,7 +711,7 @@ Returns
 Type annotations for `boto3.client("glue").create_schema` method.
 
 Boto3 documentation:
-[Glue.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_schema)
+[Glue.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_schema)
 
 Arguments:
 
@@ -732,7 +732,7 @@ Returns
 Type annotations for `boto3.client("glue").create_script` method.
 
 Boto3 documentation:
-[Glue.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_script)
+[Glue.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_script)
 
 Arguments:
 
@@ -749,7 +749,7 @@ Type annotations for `boto3.client("glue").create_security_configuration`
 method.
 
 Boto3 documentation:
-[Glue.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_security_configuration)
+[Glue.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_security_configuration)
 
 Arguments:
 
@@ -766,7 +766,7 @@ Returns
 Type annotations for `boto3.client("glue").create_table` method.
 
 Boto3 documentation:
-[Glue.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_table)
+[Glue.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_table)
 
 Arguments:
 
@@ -784,7 +784,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_trigger` method.
 
 Boto3 documentation:
-[Glue.Client.create_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_trigger)
+[Glue.Client.create_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_trigger)
 
 Arguments:
 
@@ -808,7 +808,7 @@ Type annotations for `boto3.client("glue").create_user_defined_function`
 method.
 
 Boto3 documentation:
-[Glue.Client.create_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_user_defined_function)
+[Glue.Client.create_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_user_defined_function)
 
 Arguments:
 
@@ -825,7 +825,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").create_workflow` method.
 
 Boto3 documentation:
-[Glue.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.create_workflow)
+[Glue.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.create_workflow)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Returns
 Type annotations for `boto3.client("glue").delete_classifier` method.
 
 Boto3 documentation:
-[Glue.Client.delete_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_classifier)
+[Glue.Client.delete_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_classifier)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Type annotations for
 `boto3.client("glue").delete_column_statistics_for_partition` method.
 
 Boto3 documentation:
-[Glue.Client.delete_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
+[Glue.Client.delete_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
 
 Arguments:
 
@@ -875,7 +875,7 @@ Type annotations for `boto3.client("glue").delete_column_statistics_for_table`
 method.
 
 Boto3 documentation:
-[Glue.Client.delete_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
+[Glue.Client.delete_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
 
 Arguments:
 
@@ -891,7 +891,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_connection` method.
 
 Boto3 documentation:
-[Glue.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_connection)
+[Glue.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_connection)
 
 Arguments:
 
@@ -905,7 +905,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_crawler` method.
 
 Boto3 documentation:
-[Glue.Client.delete_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_crawler)
+[Glue.Client.delete_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_crawler)
 
 Arguments:
 
@@ -918,7 +918,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_database` method.
 
 Boto3 documentation:
-[Glue.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_database)
+[Glue.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_database)
 
 Arguments:
 
@@ -932,7 +932,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_dev_endpoint` method.
 
 Boto3 documentation:
-[Glue.Client.delete_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_dev_endpoint)
+[Glue.Client.delete_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_dev_endpoint)
 
 Arguments:
 
@@ -945,7 +945,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_job` method.
 
 Boto3 documentation:
-[Glue.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_job)
+[Glue.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_job)
 
 Arguments:
 
@@ -958,7 +958,7 @@ Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 Type annotations for `boto3.client("glue").delete_ml_transform` method.
 
 Boto3 documentation:
-[Glue.Client.delete_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_ml_transform)
+[Glue.Client.delete_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_ml_transform)
 
 Arguments:
 
@@ -972,7 +972,7 @@ Returns
 Type annotations for `boto3.client("glue").delete_partition` method.
 
 Boto3 documentation:
-[Glue.Client.delete_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_partition)
+[Glue.Client.delete_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_partition)
 
 Arguments:
 
@@ -988,7 +988,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_partition_index` method.
 
 Boto3 documentation:
-[Glue.Client.delete_partition_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_partition_index)
+[Glue.Client.delete_partition_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_partition_index)
 
 Arguments:
 
@@ -1004,7 +1004,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_registry` method.
 
 Boto3 documentation:
-[Glue.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_registry)
+[Glue.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_registry)
 
 Arguments:
 
@@ -1019,7 +1019,7 @@ Returns
 Type annotations for `boto3.client("glue").delete_resource_policy` method.
 
 Boto3 documentation:
-[Glue.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_resource_policy)
+[Glue.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_resource_policy)
 
 Arguments:
 
@@ -1033,7 +1033,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_schema` method.
 
 Boto3 documentation:
-[Glue.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_schema)
+[Glue.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_schema)
 
 Arguments:
 
@@ -1047,7 +1047,7 @@ Returns
 Type annotations for `boto3.client("glue").delete_schema_versions` method.
 
 Boto3 documentation:
-[Glue.Client.delete_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_schema_versions)
+[Glue.Client.delete_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_schema_versions)
 
 Arguments:
 
@@ -1063,7 +1063,7 @@ Type annotations for `boto3.client("glue").delete_security_configuration`
 method.
 
 Boto3 documentation:
-[Glue.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_security_configuration)
+[Glue.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_security_configuration)
 
 Arguments:
 
@@ -1076,7 +1076,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_table` method.
 
 Boto3 documentation:
-[Glue.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_table)
+[Glue.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_table)
 
 Arguments:
 
@@ -1091,7 +1091,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_table_version` method.
 
 Boto3 documentation:
-[Glue.Client.delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_table_version)
+[Glue.Client.delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_table_version)
 
 Arguments:
 
@@ -1107,7 +1107,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_trigger` method.
 
 Boto3 documentation:
-[Glue.Client.delete_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_trigger)
+[Glue.Client.delete_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_trigger)
 
 Arguments:
 
@@ -1122,7 +1122,7 @@ Type annotations for `boto3.client("glue").delete_user_defined_function`
 method.
 
 Boto3 documentation:
-[Glue.Client.delete_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_user_defined_function)
+[Glue.Client.delete_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_user_defined_function)
 
 Arguments:
 
@@ -1137,7 +1137,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").delete_workflow` method.
 
 Boto3 documentation:
-[Glue.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.delete_workflow)
+[Glue.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.delete_workflow)
 
 Arguments:
 
@@ -1151,7 +1151,7 @@ Returns
 Type annotations for `boto3.client("glue").generate_presigned_url` method.
 
 Boto3 documentation:
-[Glue.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.generate_presigned_url)
+[Glue.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1167,7 +1167,7 @@ Returns `str`.
 Type annotations for `boto3.client("glue").get_catalog_import_status` method.
 
 Boto3 documentation:
-[Glue.Client.get_catalog_import_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_catalog_import_status)
+[Glue.Client.get_catalog_import_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_catalog_import_status)
 
 Arguments:
 
@@ -1181,7 +1181,7 @@ Returns
 Type annotations for `boto3.client("glue").get_classifier` method.
 
 Boto3 documentation:
-[Glue.Client.get_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_classifier)
+[Glue.Client.get_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_classifier)
 
 Arguments:
 
@@ -1195,7 +1195,7 @@ Returns
 Type annotations for `boto3.client("glue").get_classifiers` method.
 
 Boto3 documentation:
-[Glue.Client.get_classifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_classifiers)
+[Glue.Client.get_classifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_classifiers)
 
 Arguments:
 
@@ -1211,7 +1211,7 @@ Type annotations for `boto3.client("glue").get_column_statistics_for_partition`
 method.
 
 Boto3 documentation:
-[Glue.Client.get_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
+[Glue.Client.get_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
 
 Arguments:
 
@@ -1230,7 +1230,7 @@ Type annotations for `boto3.client("glue").get_column_statistics_for_table`
 method.
 
 Boto3 documentation:
-[Glue.Client.get_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
+[Glue.Client.get_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
 
 Arguments:
 
@@ -1247,7 +1247,7 @@ Returns
 Type annotations for `boto3.client("glue").get_connection` method.
 
 Boto3 documentation:
-[Glue.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_connection)
+[Glue.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_connection)
 
 Arguments:
 
@@ -1263,7 +1263,7 @@ Returns
 Type annotations for `boto3.client("glue").get_connections` method.
 
 Boto3 documentation:
-[Glue.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_connections)
+[Glue.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_connections)
 
 Arguments:
 
@@ -1282,7 +1282,7 @@ Returns
 Type annotations for `boto3.client("glue").get_crawler` method.
 
 Boto3 documentation:
-[Glue.Client.get_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_crawler)
+[Glue.Client.get_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_crawler)
 
 Arguments:
 
@@ -1295,7 +1295,7 @@ Returns [GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef).
 Type annotations for `boto3.client("glue").get_crawler_metrics` method.
 
 Boto3 documentation:
-[Glue.Client.get_crawler_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_crawler_metrics)
+[Glue.Client.get_crawler_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_crawler_metrics)
 
 Arguments:
 
@@ -1311,7 +1311,7 @@ Returns
 Type annotations for `boto3.client("glue").get_crawlers` method.
 
 Boto3 documentation:
-[Glue.Client.get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_crawlers)
+[Glue.Client.get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_crawlers)
 
 Arguments:
 
@@ -1327,7 +1327,7 @@ Type annotations for
 `boto3.client("glue").get_data_catalog_encryption_settings` method.
 
 Boto3 documentation:
-[Glue.Client.get_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings)
+[Glue.Client.get_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings)
 
 Arguments:
 
@@ -1341,7 +1341,7 @@ Returns
 Type annotations for `boto3.client("glue").get_database` method.
 
 Boto3 documentation:
-[Glue.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_database)
+[Glue.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_database)
 
 Arguments:
 
@@ -1356,7 +1356,7 @@ Returns
 Type annotations for `boto3.client("glue").get_databases` method.
 
 Boto3 documentation:
-[Glue.Client.get_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_databases)
+[Glue.Client.get_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_databases)
 
 Arguments:
 
@@ -1374,7 +1374,7 @@ Returns
 Type annotations for `boto3.client("glue").get_dataflow_graph` method.
 
 Boto3 documentation:
-[Glue.Client.get_dataflow_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_dataflow_graph)
+[Glue.Client.get_dataflow_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_dataflow_graph)
 
 Arguments:
 
@@ -1388,7 +1388,7 @@ Returns
 Type annotations for `boto3.client("glue").get_dev_endpoint` method.
 
 Boto3 documentation:
-[Glue.Client.get_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_dev_endpoint)
+[Glue.Client.get_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_dev_endpoint)
 
 Arguments:
 
@@ -1402,7 +1402,7 @@ Returns
 Type annotations for `boto3.client("glue").get_dev_endpoints` method.
 
 Boto3 documentation:
-[Glue.Client.get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_dev_endpoints)
+[Glue.Client.get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_dev_endpoints)
 
 Arguments:
 
@@ -1417,7 +1417,7 @@ Returns
 Type annotations for `boto3.client("glue").get_job` method.
 
 Boto3 documentation:
-[Glue.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_job)
+[Glue.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_job)
 
 Arguments:
 
@@ -1430,7 +1430,7 @@ Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 Type annotations for `boto3.client("glue").get_job_bookmark` method.
 
 Boto3 documentation:
-[Glue.Client.get_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_job_bookmark)
+[Glue.Client.get_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_job_bookmark)
 
 Arguments:
 
@@ -1445,7 +1445,7 @@ Returns
 Type annotations for `boto3.client("glue").get_job_run` method.
 
 Boto3 documentation:
-[Glue.Client.get_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_job_run)
+[Glue.Client.get_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_job_run)
 
 Arguments:
 
@@ -1460,7 +1460,7 @@ Returns [GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef).
 Type annotations for `boto3.client("glue").get_job_runs` method.
 
 Boto3 documentation:
-[Glue.Client.get_job_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_job_runs)
+[Glue.Client.get_job_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_job_runs)
 
 Arguments:
 
@@ -1475,7 +1475,7 @@ Returns [GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef).
 Type annotations for `boto3.client("glue").get_jobs` method.
 
 Boto3 documentation:
-[Glue.Client.get_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_jobs)
+[Glue.Client.get_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_jobs)
 
 Arguments:
 
@@ -1489,7 +1489,7 @@ Returns [GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef).
 Type annotations for `boto3.client("glue").get_mapping` method.
 
 Boto3 documentation:
-[Glue.Client.get_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_mapping)
+[Glue.Client.get_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_mapping)
 
 Arguments:
 
@@ -1505,7 +1505,7 @@ Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
 Type annotations for `boto3.client("glue").get_ml_task_run` method.
 
 Boto3 documentation:
-[Glue.Client.get_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_ml_task_run)
+[Glue.Client.get_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_ml_task_run)
 
 Arguments:
 
@@ -1520,7 +1520,7 @@ Returns
 Type annotations for `boto3.client("glue").get_ml_task_runs` method.
 
 Boto3 documentation:
-[Glue.Client.get_ml_task_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_ml_task_runs)
+[Glue.Client.get_ml_task_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_ml_task_runs)
 
 Arguments:
 
@@ -1540,7 +1540,7 @@ Returns
 Type annotations for `boto3.client("glue").get_ml_transform` method.
 
 Boto3 documentation:
-[Glue.Client.get_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_ml_transform)
+[Glue.Client.get_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_ml_transform)
 
 Arguments:
 
@@ -1554,7 +1554,7 @@ Returns
 Type annotations for `boto3.client("glue").get_ml_transforms` method.
 
 Boto3 documentation:
-[Glue.Client.get_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_ml_transforms)
+[Glue.Client.get_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_ml_transforms)
 
 Arguments:
 
@@ -1573,7 +1573,7 @@ Returns
 Type annotations for `boto3.client("glue").get_partition` method.
 
 Boto3 documentation:
-[Glue.Client.get_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_partition)
+[Glue.Client.get_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_partition)
 
 Arguments:
 
@@ -1590,7 +1590,7 @@ Returns
 Type annotations for `boto3.client("glue").get_partition_indexes` method.
 
 Boto3 documentation:
-[Glue.Client.get_partition_indexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_partition_indexes)
+[Glue.Client.get_partition_indexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_partition_indexes)
 
 Arguments:
 
@@ -1607,7 +1607,7 @@ Returns
 Type annotations for `boto3.client("glue").get_partitions` method.
 
 Boto3 documentation:
-[Glue.Client.get_partitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_partitions)
+[Glue.Client.get_partitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_partitions)
 
 Arguments:
 
@@ -1628,7 +1628,7 @@ Returns
 Type annotations for `boto3.client("glue").get_plan` method.
 
 Boto3 documentation:
-[Glue.Client.get_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_plan)
+[Glue.Client.get_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_plan)
 
 Arguments:
 
@@ -1649,7 +1649,7 @@ Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
 Type annotations for `boto3.client("glue").get_registry` method.
 
 Boto3 documentation:
-[Glue.Client.get_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_registry)
+[Glue.Client.get_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_registry)
 
 Arguments:
 
@@ -1664,7 +1664,7 @@ Returns
 Type annotations for `boto3.client("glue").get_resource_policies` method.
 
 Boto3 documentation:
-[Glue.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_resource_policies)
+[Glue.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_resource_policies)
 
 Arguments:
 
@@ -1679,7 +1679,7 @@ Returns
 Type annotations for `boto3.client("glue").get_resource_policy` method.
 
 Boto3 documentation:
-[Glue.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_resource_policy)
+[Glue.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_resource_policy)
 
 Arguments:
 
@@ -1693,7 +1693,7 @@ Returns
 Type annotations for `boto3.client("glue").get_schema` method.
 
 Boto3 documentation:
-[Glue.Client.get_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_schema)
+[Glue.Client.get_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_schema)
 
 Arguments:
 
@@ -1706,7 +1706,7 @@ Returns [GetSchemaResponseTypeDef](./type_defs.md#getschemaresponsetypedef).
 Type annotations for `boto3.client("glue").get_schema_by_definition` method.
 
 Boto3 documentation:
-[Glue.Client.get_schema_by_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_schema_by_definition)
+[Glue.Client.get_schema_by_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_schema_by_definition)
 
 Arguments:
 
@@ -1721,7 +1721,7 @@ Returns
 Type annotations for `boto3.client("glue").get_schema_version` method.
 
 Boto3 documentation:
-[Glue.Client.get_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_schema_version)
+[Glue.Client.get_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_schema_version)
 
 Arguments:
 
@@ -1738,7 +1738,7 @@ Returns
 Type annotations for `boto3.client("glue").get_schema_versions_diff` method.
 
 Boto3 documentation:
-[Glue.Client.get_schema_versions_diff](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
+[Glue.Client.get_schema_versions_diff](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
 
 Arguments:
 
@@ -1760,7 +1760,7 @@ Returns
 Type annotations for `boto3.client("glue").get_security_configuration` method.
 
 Boto3 documentation:
-[Glue.Client.get_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_security_configuration)
+[Glue.Client.get_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_security_configuration)
 
 Arguments:
 
@@ -1774,7 +1774,7 @@ Returns
 Type annotations for `boto3.client("glue").get_security_configurations` method.
 
 Boto3 documentation:
-[Glue.Client.get_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_security_configurations)
+[Glue.Client.get_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_security_configurations)
 
 Arguments:
 
@@ -1789,7 +1789,7 @@ Returns
 Type annotations for `boto3.client("glue").get_table` method.
 
 Boto3 documentation:
-[Glue.Client.get_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_table)
+[Glue.Client.get_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_table)
 
 Arguments:
 
@@ -1804,7 +1804,7 @@ Returns [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef).
 Type annotations for `boto3.client("glue").get_table_version` method.
 
 Boto3 documentation:
-[Glue.Client.get_table_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_table_version)
+[Glue.Client.get_table_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_table_version)
 
 Arguments:
 
@@ -1821,7 +1821,7 @@ Returns
 Type annotations for `boto3.client("glue").get_table_versions` method.
 
 Boto3 documentation:
-[Glue.Client.get_table_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_table_versions)
+[Glue.Client.get_table_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_table_versions)
 
 Arguments:
 
@@ -1839,7 +1839,7 @@ Returns
 Type annotations for `boto3.client("glue").get_tables` method.
 
 Boto3 documentation:
-[Glue.Client.get_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_tables)
+[Glue.Client.get_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_tables)
 
 Arguments:
 
@@ -1856,7 +1856,7 @@ Returns [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef).
 Type annotations for `boto3.client("glue").get_tags` method.
 
 Boto3 documentation:
-[Glue.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_tags)
+[Glue.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_tags)
 
 Arguments:
 
@@ -1869,7 +1869,7 @@ Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 Type annotations for `boto3.client("glue").get_trigger` method.
 
 Boto3 documentation:
-[Glue.Client.get_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_trigger)
+[Glue.Client.get_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_trigger)
 
 Arguments:
 
@@ -1882,7 +1882,7 @@ Returns [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef).
 Type annotations for `boto3.client("glue").get_triggers` method.
 
 Boto3 documentation:
-[Glue.Client.get_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_triggers)
+[Glue.Client.get_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_triggers)
 
 Arguments:
 
@@ -1898,7 +1898,7 @@ Returns
 Type annotations for `boto3.client("glue").get_user_defined_function` method.
 
 Boto3 documentation:
-[Glue.Client.get_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_user_defined_function)
+[Glue.Client.get_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_user_defined_function)
 
 Arguments:
 
@@ -1914,7 +1914,7 @@ Returns
 Type annotations for `boto3.client("glue").get_user_defined_functions` method.
 
 Boto3 documentation:
-[Glue.Client.get_user_defined_functions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_user_defined_functions)
+[Glue.Client.get_user_defined_functions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_user_defined_functions)
 
 Arguments:
 
@@ -1932,7 +1932,7 @@ Returns
 Type annotations for `boto3.client("glue").get_workflow` method.
 
 Boto3 documentation:
-[Glue.Client.get_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_workflow)
+[Glue.Client.get_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_workflow)
 
 Arguments:
 
@@ -1947,7 +1947,7 @@ Returns
 Type annotations for `boto3.client("glue").get_workflow_run` method.
 
 Boto3 documentation:
-[Glue.Client.get_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_workflow_run)
+[Glue.Client.get_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_workflow_run)
 
 Arguments:
 
@@ -1963,7 +1963,7 @@ Returns
 Type annotations for `boto3.client("glue").get_workflow_run_properties` method.
 
 Boto3 documentation:
-[Glue.Client.get_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_workflow_run_properties)
+[Glue.Client.get_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_workflow_run_properties)
 
 Arguments:
 
@@ -1978,7 +1978,7 @@ Returns
 Type annotations for `boto3.client("glue").get_workflow_runs` method.
 
 Boto3 documentation:
-[Glue.Client.get_workflow_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.get_workflow_runs)
+[Glue.Client.get_workflow_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.get_workflow_runs)
 
 Arguments:
 
@@ -1995,7 +1995,7 @@ Returns
 Type annotations for `boto3.client("glue").import_catalog_to_glue` method.
 
 Boto3 documentation:
-[Glue.Client.import_catalog_to_glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.import_catalog_to_glue)
+[Glue.Client.import_catalog_to_glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.import_catalog_to_glue)
 
 Arguments:
 
@@ -2008,7 +2008,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").list_crawlers` method.
 
 Boto3 documentation:
-[Glue.Client.list_crawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_crawlers)
+[Glue.Client.list_crawlers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_crawlers)
 
 Arguments:
 
@@ -2024,7 +2024,7 @@ Returns
 Type annotations for `boto3.client("glue").list_dev_endpoints` method.
 
 Boto3 documentation:
-[Glue.Client.list_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_dev_endpoints)
+[Glue.Client.list_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_dev_endpoints)
 
 Arguments:
 
@@ -2040,7 +2040,7 @@ Returns
 Type annotations for `boto3.client("glue").list_jobs` method.
 
 Boto3 documentation:
-[Glue.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_jobs)
+[Glue.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_jobs)
 
 Arguments:
 
@@ -2055,7 +2055,7 @@ Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 Type annotations for `boto3.client("glue").list_ml_transforms` method.
 
 Boto3 documentation:
-[Glue.Client.list_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_ml_transforms)
+[Glue.Client.list_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_ml_transforms)
 
 Arguments:
 
@@ -2075,7 +2075,7 @@ Returns
 Type annotations for `boto3.client("glue").list_registries` method.
 
 Boto3 documentation:
-[Glue.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_registries)
+[Glue.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_registries)
 
 Arguments:
 
@@ -2090,7 +2090,7 @@ Returns
 Type annotations for `boto3.client("glue").list_schema_versions` method.
 
 Boto3 documentation:
-[Glue.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_schema_versions)
+[Glue.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_schema_versions)
 
 Arguments:
 
@@ -2106,7 +2106,7 @@ Returns
 Type annotations for `boto3.client("glue").list_schemas` method.
 
 Boto3 documentation:
-[Glue.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_schemas)
+[Glue.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_schemas)
 
 Arguments:
 
@@ -2122,7 +2122,7 @@ Returns
 Type annotations for `boto3.client("glue").list_triggers` method.
 
 Boto3 documentation:
-[Glue.Client.list_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_triggers)
+[Glue.Client.list_triggers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_triggers)
 
 Arguments:
 
@@ -2139,7 +2139,7 @@ Returns
 Type annotations for `boto3.client("glue").list_workflows` method.
 
 Boto3 documentation:
-[Glue.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.list_workflows)
+[Glue.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.list_workflows)
 
 Arguments:
 
@@ -2155,7 +2155,7 @@ Type annotations for
 `boto3.client("glue").put_data_catalog_encryption_settings` method.
 
 Boto3 documentation:
-[Glue.Client.put_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings)
+[Glue.Client.put_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings)
 
 Arguments:
 
@@ -2171,7 +2171,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").put_resource_policy` method.
 
 Boto3 documentation:
-[Glue.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.put_resource_policy)
+[Glue.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.put_resource_policy)
 
 Arguments:
 
@@ -2191,7 +2191,7 @@ Returns
 Type annotations for `boto3.client("glue").put_schema_version_metadata` method.
 
 Boto3 documentation:
-[Glue.Client.put_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
+[Glue.Client.put_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
 
 Arguments:
 
@@ -2211,7 +2211,7 @@ Returns
 Type annotations for `boto3.client("glue").put_workflow_run_properties` method.
 
 Boto3 documentation:
-[Glue.Client.put_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
+[Glue.Client.put_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
 
 Arguments:
 
@@ -2227,7 +2227,7 @@ Type annotations for `boto3.client("glue").query_schema_version_metadata`
 method.
 
 Boto3 documentation:
-[Glue.Client.query_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
+[Glue.Client.query_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
 
 Arguments:
 
@@ -2248,7 +2248,7 @@ Returns
 Type annotations for `boto3.client("glue").register_schema_version` method.
 
 Boto3 documentation:
-[Glue.Client.register_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.register_schema_version)
+[Glue.Client.register_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.register_schema_version)
 
 Arguments:
 
@@ -2264,7 +2264,7 @@ Type annotations for `boto3.client("glue").remove_schema_version_metadata`
 method.
 
 Boto3 documentation:
-[Glue.Client.remove_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
+[Glue.Client.remove_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
 
 Arguments:
 
@@ -2284,7 +2284,7 @@ Returns
 Type annotations for `boto3.client("glue").reset_job_bookmark` method.
 
 Boto3 documentation:
-[Glue.Client.reset_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.reset_job_bookmark)
+[Glue.Client.reset_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.reset_job_bookmark)
 
 Arguments:
 
@@ -2299,7 +2299,7 @@ Returns
 Type annotations for `boto3.client("glue").resume_workflow_run` method.
 
 Boto3 documentation:
-[Glue.Client.resume_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.resume_workflow_run)
+[Glue.Client.resume_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.resume_workflow_run)
 
 Arguments:
 
@@ -2315,7 +2315,7 @@ Returns
 Type annotations for `boto3.client("glue").search_tables` method.
 
 Boto3 documentation:
-[Glue.Client.search_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.search_tables)
+[Glue.Client.search_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.search_tables)
 
 Arguments:
 
@@ -2338,7 +2338,7 @@ Returns
 Type annotations for `boto3.client("glue").start_crawler` method.
 
 Boto3 documentation:
-[Glue.Client.start_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_crawler)
+[Glue.Client.start_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_crawler)
 
 Arguments:
 
@@ -2351,7 +2351,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").start_crawler_schedule` method.
 
 Boto3 documentation:
-[Glue.Client.start_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_crawler_schedule)
+[Glue.Client.start_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_crawler_schedule)
 
 Arguments:
 
@@ -2365,7 +2365,7 @@ Type annotations for `boto3.client("glue").start_export_labels_task_run`
 method.
 
 Boto3 documentation:
-[Glue.Client.start_export_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_export_labels_task_run)
+[Glue.Client.start_export_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_export_labels_task_run)
 
 Arguments:
 
@@ -2381,7 +2381,7 @@ Type annotations for `boto3.client("glue").start_import_labels_task_run`
 method.
 
 Boto3 documentation:
-[Glue.Client.start_import_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
+[Glue.Client.start_import_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
 
 Arguments:
 
@@ -2397,7 +2397,7 @@ Returns
 Type annotations for `boto3.client("glue").start_job_run` method.
 
 Boto3 documentation:
-[Glue.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_job_run)
+[Glue.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_job_run)
 
 Arguments:
 
@@ -2422,7 +2422,7 @@ Type annotations for `boto3.client("glue").start_ml_evaluation_task_run`
 method.
 
 Boto3 documentation:
-[Glue.Client.start_ml_evaluation_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run)
+[Glue.Client.start_ml_evaluation_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run)
 
 Arguments:
 
@@ -2437,7 +2437,7 @@ Type annotations for
 `boto3.client("glue").start_ml_labeling_set_generation_task_run` method.
 
 Boto3 documentation:
-[Glue.Client.start_ml_labeling_set_generation_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run)
+[Glue.Client.start_ml_labeling_set_generation_task_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run)
 
 Arguments:
 
@@ -2452,7 +2452,7 @@ Returns
 Type annotations for `boto3.client("glue").start_trigger` method.
 
 Boto3 documentation:
-[Glue.Client.start_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_trigger)
+[Glue.Client.start_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_trigger)
 
 Arguments:
 
@@ -2466,7 +2466,7 @@ Returns
 Type annotations for `boto3.client("glue").start_workflow_run` method.
 
 Boto3 documentation:
-[Glue.Client.start_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.start_workflow_run)
+[Glue.Client.start_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.start_workflow_run)
 
 Arguments:
 
@@ -2480,7 +2480,7 @@ Returns
 Type annotations for `boto3.client("glue").stop_crawler` method.
 
 Boto3 documentation:
-[Glue.Client.stop_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.stop_crawler)
+[Glue.Client.stop_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.stop_crawler)
 
 Arguments:
 
@@ -2493,7 +2493,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").stop_crawler_schedule` method.
 
 Boto3 documentation:
-[Glue.Client.stop_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.stop_crawler_schedule)
+[Glue.Client.stop_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.stop_crawler_schedule)
 
 Arguments:
 
@@ -2506,7 +2506,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").stop_trigger` method.
 
 Boto3 documentation:
-[Glue.Client.stop_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.stop_trigger)
+[Glue.Client.stop_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.stop_trigger)
 
 Arguments:
 
@@ -2520,7 +2520,7 @@ Returns
 Type annotations for `boto3.client("glue").stop_workflow_run` method.
 
 Boto3 documentation:
-[Glue.Client.stop_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.stop_workflow_run)
+[Glue.Client.stop_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.stop_workflow_run)
 
 Arguments:
 
@@ -2534,7 +2534,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").tag_resource` method.
 
 Boto3 documentation:
-[Glue.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.tag_resource)
+[Glue.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.tag_resource)
 
 Arguments:
 
@@ -2548,7 +2548,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").untag_resource` method.
 
 Boto3 documentation:
-[Glue.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.untag_resource)
+[Glue.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.untag_resource)
 
 Arguments:
 
@@ -2562,7 +2562,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_classifier` method.
 
 Boto3 documentation:
-[Glue.Client.update_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_classifier)
+[Glue.Client.update_classifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_classifier)
 
 Arguments:
 
@@ -2583,7 +2583,7 @@ Type annotations for
 `boto3.client("glue").update_column_statistics_for_partition` method.
 
 Boto3 documentation:
-[Glue.Client.update_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
+[Glue.Client.update_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
 
 Arguments:
 
@@ -2604,7 +2604,7 @@ Type annotations for `boto3.client("glue").update_column_statistics_for_table`
 method.
 
 Boto3 documentation:
-[Glue.Client.update_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
+[Glue.Client.update_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
 
 Arguments:
 
@@ -2623,7 +2623,7 @@ Returns
 Type annotations for `boto3.client("glue").update_connection` method.
 
 Boto3 documentation:
-[Glue.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_connection)
+[Glue.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_connection)
 
 Arguments:
 
@@ -2639,7 +2639,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_crawler` method.
 
 Boto3 documentation:
-[Glue.Client.update_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_crawler)
+[Glue.Client.update_crawler](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_crawler)
 
 Arguments:
 
@@ -2666,7 +2666,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_crawler_schedule` method.
 
 Boto3 documentation:
-[Glue.Client.update_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_crawler_schedule)
+[Glue.Client.update_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_crawler_schedule)
 
 Arguments:
 
@@ -2680,7 +2680,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_database` method.
 
 Boto3 documentation:
-[Glue.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_database)
+[Glue.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_database)
 
 Arguments:
 
@@ -2696,7 +2696,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_dev_endpoint` method.
 
 Boto3 documentation:
-[Glue.Client.update_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_dev_endpoint)
+[Glue.Client.update_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_dev_endpoint)
 
 Arguments:
 
@@ -2717,7 +2717,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_job` method.
 
 Boto3 documentation:
-[Glue.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_job)
+[Glue.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_job)
 
 Arguments:
 
@@ -2731,7 +2731,7 @@ Returns [UpdateJobResponseTypeDef](./type_defs.md#updatejobresponsetypedef).
 Type annotations for `boto3.client("glue").update_ml_transform` method.
 
 Boto3 documentation:
-[Glue.Client.update_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_ml_transform)
+[Glue.Client.update_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_ml_transform)
 
 Arguments:
 
@@ -2756,7 +2756,7 @@ Returns
 Type annotations for `boto3.client("glue").update_partition` method.
 
 Boto3 documentation:
-[Glue.Client.update_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_partition)
+[Glue.Client.update_partition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_partition)
 
 Arguments:
 
@@ -2774,7 +2774,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_registry` method.
 
 Boto3 documentation:
-[Glue.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_registry)
+[Glue.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_registry)
 
 Arguments:
 
@@ -2790,7 +2790,7 @@ Returns
 Type annotations for `boto3.client("glue").update_schema` method.
 
 Boto3 documentation:
-[Glue.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_schema)
+[Glue.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_schema)
 
 Arguments:
 
@@ -2808,7 +2808,7 @@ Returns
 Type annotations for `boto3.client("glue").update_table` method.
 
 Boto3 documentation:
-[Glue.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_table)
+[Glue.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_table)
 
 Arguments:
 
@@ -2825,7 +2825,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_trigger` method.
 
 Boto3 documentation:
-[Glue.Client.update_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_trigger)
+[Glue.Client.update_trigger](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_trigger)
 
 Arguments:
 
@@ -2842,7 +2842,7 @@ Type annotations for `boto3.client("glue").update_user_defined_function`
 method.
 
 Boto3 documentation:
-[Glue.Client.update_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_user_defined_function)
+[Glue.Client.update_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_user_defined_function)
 
 Arguments:
 
@@ -2860,7 +2860,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("glue").update_workflow` method.
 
 Boto3 documentation:
-[Glue.Client.update_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/glue.html#Glue.Client.update_workflow)
+[Glue.Client.update_workflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glue.html#Glue.Client.update_workflow)
 
 Arguments:
 

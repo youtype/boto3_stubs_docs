@@ -4,7 +4,7 @@
 > KinesisVideoArchivedMediaClient
 
 Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
 [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
@@ -35,7 +35,7 @@ def get_kinesis-video-archived-media_client() -> KinesisVideoArchivedMediaClient
 ```
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client)
+[KinesisVideoArchivedMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client)
 
 ## Exceptions
 
@@ -70,7 +70,7 @@ Type annotations for
 `boto3.client("kinesis-video-archived-media").can_paginate` method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.can_paginate)
+[KinesisVideoArchivedMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.can_paginate)
 
 Arguments:
 
@@ -84,7 +84,7 @@ Type annotations for
 `boto3.client("kinesis-video-archived-media").generate_presigned_url` method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.generate_presigned_url)
+[KinesisVideoArchivedMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.generate_presigned_url)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Type annotations for `boto3.client("kinesis-video-archived-media").get_clip`
 method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_clip](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_clip)
+[KinesisVideoArchivedMedia.Client.get_clip](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_clip)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url)
+[KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url)
+[KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_media_for_fragment_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_media_for_fragment_list)
+[KinesisVideoArchivedMedia.Client.get_media_for_fragment_list](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_media_for_fragment_list)
 
 Arguments:
 
@@ -190,7 +190,7 @@ Type annotations for
 `boto3.client("kinesis-video-archived-media").list_fragments` method.
 
 Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.list_fragments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.list_fragments)
+[KinesisVideoArchivedMedia.Client.list_fragments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.list_fragments)
 
 Arguments:
 

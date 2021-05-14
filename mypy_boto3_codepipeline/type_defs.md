@@ -3,7 +3,7 @@
 > [Index](..) > [CodePipeline](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/codepipeline.html#CodePipeline)
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
 [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 

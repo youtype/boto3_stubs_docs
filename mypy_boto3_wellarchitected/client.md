@@ -3,7 +3,7 @@
 > [Index](..) > [WellArchitected](.) > WellArchitectedClient
 
 Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected)
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
 [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
@@ -59,7 +59,7 @@ def get_wellarchitected_client() -> WellArchitectedClient:
 ```
 
 Boto3 documentation:
-[WellArchitected.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client)
+[WellArchitected.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 Type annotations for `boto3.client("wellarchitected").associate_lenses` method.
 
 Boto3 documentation:
-[WellArchitected.Client.associate_lenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
+[WellArchitected.Client.associate_lenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Arguments:
 Type annotations for `boto3.client("wellarchitected").can_paginate` method.
 
 Boto3 documentation:
-[WellArchitected.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate)
+[WellArchitected.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns `bool`.
 Type annotations for `boto3.client("wellarchitected").create_milestone` method.
 
 Boto3 documentation:
-[WellArchitected.Client.create_milestone](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
+[WellArchitected.Client.create_milestone](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").create_workload` method.
 
 Boto3 documentation:
-[WellArchitected.Client.create_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
+[WellArchitected.Client.create_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("wellarchitected").create_workload_share`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.create_workload_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
+[WellArchitected.Client.create_workload_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").delete_workload` method.
 
 Boto3 documentation:
-[WellArchitected.Client.delete_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
+[WellArchitected.Client.delete_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("wellarchitected").delete_workload_share`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.delete_workload_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
+[WellArchitected.Client.delete_workload_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("wellarchitected").disassociate_lenses`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.disassociate_lenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
+[WellArchitected.Client.disassociate_lenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Type annotations for `boto3.client("wellarchitected").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url)
+[WellArchitected.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Returns `str`.
 Type annotations for `boto3.client("wellarchitected").get_answer` method.
 
 Boto3 documentation:
-[WellArchitected.Client.get_answer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
+[WellArchitected.Client.get_answer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Returns [GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef).
 Type annotations for `boto3.client("wellarchitected").get_lens_review` method.
 
 Boto3 documentation:
-[WellArchitected.Client.get_lens_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
+[WellArchitected.Client.get_lens_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("wellarchitected").get_lens_review_report`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.get_lens_review_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
+[WellArchitected.Client.get_lens_review_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Type annotations for
 `boto3.client("wellarchitected").get_lens_version_difference` method.
 
 Boto3 documentation:
-[WellArchitected.Client.get_lens_version_difference](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
+[WellArchitected.Client.get_lens_version_difference](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").get_milestone` method.
 
 Boto3 documentation:
-[WellArchitected.Client.get_milestone](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
+[WellArchitected.Client.get_milestone](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns [GetMilestoneOutputTypeDef](./type_defs.md#getmilestoneoutputtypedef).
 Type annotations for `boto3.client("wellarchitected").get_workload` method.
 
 Boto3 documentation:
-[WellArchitected.Client.get_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
+[WellArchitected.Client.get_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Returns [GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef).
 Type annotations for `boto3.client("wellarchitected").list_answers` method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_answers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
+[WellArchitected.Client.list_answers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Type annotations for
 `boto3.client("wellarchitected").list_lens_review_improvements` method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_lens_review_improvements](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
+[WellArchitected.Client.list_lens_review_improvements](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("wellarchitected").list_lens_reviews`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_lens_reviews](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
+[WellArchitected.Client.list_lens_reviews](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").list_lenses` method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_lenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
+[WellArchitected.Client.list_lenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Returns [ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef).
 Type annotations for `boto3.client("wellarchitected").list_milestones` method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_milestones](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
+[WellArchitected.Client.list_milestones](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("wellarchitected").list_notifications`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
+[WellArchitected.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("wellarchitected").list_share_invitations`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
+[WellArchitected.Client.list_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("wellarchitected").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
+[WellArchitected.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("wellarchitected").list_workload_shares`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_workload_shares](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
+[WellArchitected.Client.list_workload_shares](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").list_workloads` method.
 
 Boto3 documentation:
-[WellArchitected.Client.list_workloads](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
+[WellArchitected.Client.list_workloads](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").tag_resource` method.
 
 Boto3 documentation:
-[WellArchitected.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
+[WellArchitected.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
 
 Arguments:
 
@@ -511,7 +511,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wellarchitected").untag_resource` method.
 
 Boto3 documentation:
-[WellArchitected.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
+[WellArchitected.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
 
 Arguments:
 
@@ -525,7 +525,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wellarchitected").update_answer` method.
 
 Boto3 documentation:
-[WellArchitected.Client.update_answer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
+[WellArchitected.Client.update_answer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
 
 Arguments:
 
@@ -544,7 +544,7 @@ Type annotations for `boto3.client("wellarchitected").update_lens_review`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.update_lens_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
+[WellArchitected.Client.update_lens_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Type annotations for `boto3.client("wellarchitected").update_share_invitation`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.update_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
+[WellArchitected.Client.update_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Returns
 Type annotations for `boto3.client("wellarchitected").update_workload` method.
 
 Boto3 documentation:
-[WellArchitected.Client.update_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
+[WellArchitected.Client.update_workload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
 
 Arguments:
 
@@ -610,7 +610,7 @@ Type annotations for `boto3.client("wellarchitected").update_workload_share`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.update_workload_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
+[WellArchitected.Client.update_workload_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
 
 Arguments:
 
@@ -628,7 +628,7 @@ Type annotations for `boto3.client("wellarchitected").upgrade_lens_review`
 method.
 
 Boto3 documentation:
-[WellArchitected.Client.upgrade_lens_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
+[WellArchitected.Client.upgrade_lens_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
 
 Arguments:
 

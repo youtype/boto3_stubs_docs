@@ -3,7 +3,7 @@
 > [Index](..) > [RDSDataService](.) > RDSDataServiceClient
 
 Auto-generated documentation for
-[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService)
+[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
 [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
@@ -34,7 +34,7 @@ def get_rds-data_client() -> RDSDataServiceClient:
 ```
 
 Boto3 documentation:
-[RDSDataService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client)
+[RDSDataService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client)
 
 ## Exceptions
 
@@ -65,7 +65,7 @@ Exceptions:
 Type annotations for `boto3.client("rds-data").batch_execute_statement` method.
 
 Boto3 documentation:
-[RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
+[RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
 
 Arguments:
 
@@ -86,7 +86,7 @@ Returns
 Type annotations for `boto3.client("rds-data").begin_transaction` method.
 
 Boto3 documentation:
-[RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
+[RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Returns
 Type annotations for `boto3.client("rds-data").can_paginate` method.
 
 Boto3 documentation:
-[RDSDataService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.can_paginate)
+[RDSDataService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.can_paginate)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns `bool`.
 Type annotations for `boto3.client("rds-data").commit_transaction` method.
 
 Boto3 documentation:
-[RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
+[RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns
 Type annotations for `boto3.client("rds-data").execute_sql` method.
 
 Boto3 documentation:
-[RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
+[RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
 Type annotations for `boto3.client("rds-data").execute_statement` method.
 
 Boto3 documentation:
-[RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
+[RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Returns
 Type annotations for `boto3.client("rds-data").generate_presigned_url` method.
 
 Boto3 documentation:
-[RDSDataService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url)
+[RDSDataService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -190,7 +190,7 @@ Returns `str`.
 Type annotations for `boto3.client("rds-data").rollback_transaction` method.
 
 Boto3 documentation:
-[RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
+[RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
 
 Arguments:
 

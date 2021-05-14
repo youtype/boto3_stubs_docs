@@ -3,7 +3,7 @@
 > [Index](..) > [EKS](.) > Waiters
 
 Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS)
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS)
 type annotations stubs module
 [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
@@ -29,7 +29,7 @@ def get_addon_active_waiter() -> AddonActiveWaiter:
 ```
 
 Boto3 documentation:
-[EKS.Waiter.addon_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS.Waiter.addon_active)
+[EKS.Waiter.addon_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS.Waiter.addon_active)
 
 Arguments for `AddonActiveWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_addon_deleted_waiter() -> AddonDeletedWaiter:
 ```
 
 Boto3 documentation:
-[EKS.Waiter.addon_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS.Waiter.addon_deleted)
+[EKS.Waiter.addon_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS.Waiter.addon_deleted)
 
 Arguments for `AddonDeletedWaiter.wait` method:
 
@@ -73,7 +73,7 @@ def get_cluster_active_waiter() -> ClusterActiveWaiter:
 ```
 
 Boto3 documentation:
-[EKS.Waiter.cluster_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS.Waiter.cluster_active)
+[EKS.Waiter.cluster_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS.Waiter.cluster_active)
 
 Arguments for `ClusterActiveWaiter.wait` method:
 
@@ -94,7 +94,7 @@ def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
 ```
 
 Boto3 documentation:
-[EKS.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS.Waiter.cluster_deleted)
+[EKS.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS.Waiter.cluster_deleted)
 
 Arguments for `ClusterDeletedWaiter.wait` method:
 
@@ -115,7 +115,7 @@ def get_nodegroup_active_waiter() -> NodegroupActiveWaiter:
 ```
 
 Boto3 documentation:
-[EKS.Waiter.nodegroup_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS.Waiter.nodegroup_active)
+[EKS.Waiter.nodegroup_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS.Waiter.nodegroup_active)
 
 Arguments for `NodegroupActiveWaiter.wait` method:
 
@@ -137,7 +137,7 @@ def get_nodegroup_deleted_waiter() -> NodegroupDeletedWaiter:
 ```
 
 Boto3 documentation:
-[EKS.Waiter.nodegroup_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/eks.html#EKS.Waiter.nodegroup_deleted)
+[EKS.Waiter.nodegroup_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/eks.html#EKS.Waiter.nodegroup_deleted)
 
 Arguments for `NodegroupDeletedWaiter.wait` method:
 

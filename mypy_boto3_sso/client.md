@@ -3,7 +3,7 @@
 > [Index](..) > [SSO](.) > SSOClient
 
 Auto-generated documentation for
-[SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO)
+[SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO)
 type annotations stubs module
 [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
@@ -33,7 +33,7 @@ def get_sso_client() -> SSOClient:
 ```
 
 Boto3 documentation:
-[SSO.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client)
+[SSO.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("sso").can_paginate` method.
 
 Boto3 documentation:
-[SSO.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client.can_paginate)
+[SSO.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Returns `bool`.
 Type annotations for `boto3.client("sso").generate_presigned_url` method.
 
 Boto3 documentation:
-[SSO.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client.generate_presigned_url)
+[SSO.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client.generate_presigned_url)
 
 Arguments:
 
@@ -91,7 +91,7 @@ Returns `str`.
 Type annotations for `boto3.client("sso").get_role_credentials` method.
 
 Boto3 documentation:
-[SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client.get_role_credentials)
+[SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client.get_role_credentials)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Returns
 Type annotations for `boto3.client("sso").list_account_roles` method.
 
 Boto3 documentation:
-[SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client.list_account_roles)
+[SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client.list_account_roles)
 
 Arguments:
 
@@ -124,7 +124,7 @@ Returns
 Type annotations for `boto3.client("sso").list_accounts` method.
 
 Boto3 documentation:
-[SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client.list_accounts)
+[SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client.list_accounts)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Returns
 Type annotations for `boto3.client("sso").logout` method.
 
 Boto3 documentation:
-[SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sso.html#SSO.Client.logout)
+[SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sso.html#SSO.Client.logout)
 
 Arguments:
 

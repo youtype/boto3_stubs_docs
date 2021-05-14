@@ -3,7 +3,7 @@
 > [Index](..) > [MachineLearning](.) > MachineLearningClient
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
@@ -58,7 +58,7 @@ def get_machinelearning_client() -> MachineLearningClient:
 ```
 
 Boto3 documentation:
-[MachineLearning.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client)
+[MachineLearning.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 Type annotations for `boto3.client("machinelearning").add_tags` method.
 
 Boto3 documentation:
-[MachineLearning.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
+[MachineLearning.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 Type annotations for `boto3.client("machinelearning").can_paginate` method.
 
 Boto3 documentation:
-[MachineLearning.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.can_paginate)
+[MachineLearning.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.can_paginate)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("machinelearning").create_batch_prediction`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
+[MachineLearning.Client.create_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Type annotations for
 `boto3.client("machinelearning").create_data_source_from_rds` method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_data_source_from_rds](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
+[MachineLearning.Client.create_data_source_from_rds](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Type annotations for
 `boto3.client("machinelearning").create_data_source_from_redshift` method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_data_source_from_redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
+[MachineLearning.Client.create_data_source_from_redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Type annotations for
 `boto3.client("machinelearning").create_data_source_from_s3` method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_data_source_from_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
+[MachineLearning.Client.create_data_source_from_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("machinelearning").create_evaluation`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
+[MachineLearning.Client.create_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").create_ml_model` method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
+[MachineLearning.Client.create_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("machinelearning").create_realtime_endpoint`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.create_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
+[MachineLearning.Client.create_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("machinelearning").delete_batch_prediction`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.delete_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
+[MachineLearning.Client.delete_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("machinelearning").delete_data_source`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
+[MachineLearning.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("machinelearning").delete_evaluation`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.delete_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
+[MachineLearning.Client.delete_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").delete_ml_model` method.
 
 Boto3 documentation:
-[MachineLearning.Client.delete_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
+[MachineLearning.Client.delete_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("machinelearning").delete_realtime_endpoint`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.delete_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
+[MachineLearning.Client.delete_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
 
 Arguments:
 
@@ -326,7 +326,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").delete_tags` method.
 
 Boto3 documentation:
-[MachineLearning.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
+[MachineLearning.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Type annotations for
 `boto3.client("machinelearning").describe_batch_predictions` method.
 
 Boto3 documentation:
-[MachineLearning.Client.describe_batch_predictions](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
+[MachineLearning.Client.describe_batch_predictions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("machinelearning").describe_data_sources`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.describe_data_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
+[MachineLearning.Client.describe_data_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("machinelearning").describe_evaluations`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.describe_evaluations](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
+[MachineLearning.Client.describe_evaluations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("machinelearning").describe_ml_models`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.describe_ml_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
+[MachineLearning.Client.describe_ml_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").describe_tags` method.
 
 Boto3 documentation:
-[MachineLearning.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
+[MachineLearning.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("machinelearning").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url)
+[MachineLearning.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("machinelearning").get_batch_prediction`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.get_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
+[MachineLearning.Client.get_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
 
 Arguments:
 
@@ -495,7 +495,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").get_data_source` method.
 
 Boto3 documentation:
-[MachineLearning.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
+[MachineLearning.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").get_evaluation` method.
 
 Boto3 documentation:
-[MachineLearning.Client.get_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
+[MachineLearning.Client.get_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
 
 Arguments:
 
@@ -524,7 +524,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").get_ml_model` method.
 
 Boto3 documentation:
-[MachineLearning.Client.get_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
+[MachineLearning.Client.get_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Returns [GetMLModelOutputTypeDef](./type_defs.md#getmlmodeloutputtypedef).
 Type annotations for `boto3.client("machinelearning").predict` method.
 
 Boto3 documentation:
-[MachineLearning.Client.predict](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.predict)
+[MachineLearning.Client.predict](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.predict)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("machinelearning").update_batch_prediction`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.update_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
+[MachineLearning.Client.update_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
 
 Arguments:
 
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("machinelearning").update_data_source`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
+[MachineLearning.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
 
 Arguments:
 
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("machinelearning").update_evaluation`
 method.
 
 Boto3 documentation:
-[MachineLearning.Client.update_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
+[MachineLearning.Client.update_evaluation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
 
 Arguments:
 
@@ -601,7 +601,7 @@ Returns
 Type annotations for `boto3.client("machinelearning").update_ml_model` method.
 
 Boto3 documentation:
-[MachineLearning.Client.update_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
+[MachineLearning.Client.update_ml_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
 
 Arguments:
 

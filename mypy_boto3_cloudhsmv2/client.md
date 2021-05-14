@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSMV2](.) > CloudHSMV2Client
 
 Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2)
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
 [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
@@ -44,7 +44,7 @@ def get_cloudhsmv2_client() -> CloudHSMV2Client:
 ```
 
 Boto3 documentation:
-[CloudHSMV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
+[CloudHSMV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
 
 ## Exceptions
 
@@ -75,7 +75,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudhsmv2").can_paginate` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.can_paginate)
+[CloudHSMV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.can_paginate)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cloudhsmv2").copy_backup_to_region` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.copy_backup_to_region](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region)
+[CloudHSMV2.Client.copy_backup_to_region](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").create_cluster` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster)
+[CloudHSMV2.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").create_hsm` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm)
+[CloudHSMV2.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 Type annotations for `boto3.client("cloudhsmv2").delete_backup` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup)
+[CloudHSMV2.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").delete_cluster` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster)
+[CloudHSMV2.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").delete_hsm` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm)
+[CloudHSMV2.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 Type annotations for `boto3.client("cloudhsmv2").describe_backups` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups)
+[CloudHSMV2.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").describe_clusters` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters)
+[CloudHSMV2.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("cloudhsmv2").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.generate_presigned_url)
+[CloudHSMV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -232,7 +232,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudhsmv2").initialize_cluster` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.initialize_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster)
+[CloudHSMV2.Client.initialize_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").list_tags` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags)
+[CloudHSMV2.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags)
 
 Arguments:
 
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("cloudhsmv2").modify_backup_attributes`
 method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.modify_backup_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes)
+[CloudHSMV2.Client.modify_backup_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").modify_cluster` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster)
+[CloudHSMV2.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster)
 
 Arguments:
 
@@ -296,7 +296,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").restore_backup` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.restore_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup)
+[CloudHSMV2.Client.restore_backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns
 Type annotations for `boto3.client("cloudhsmv2").tag_resource` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource)
+[CloudHSMV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudhsmv2").untag_resource` method.
 
 Boto3 documentation:
-[CloudHSMV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource)
+[CloudHSMV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource)
 
 Arguments:
 

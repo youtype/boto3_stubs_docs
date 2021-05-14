@@ -3,7 +3,7 @@
 > [Index](..) > [SavingsPlans](.) > SavingsPlansClient
 
 Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans)
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
 [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
@@ -37,7 +37,7 @@ def get_savingsplans_client() -> SavingsPlansClient:
 ```
 
 Boto3 documentation:
-[SavingsPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client)
+[SavingsPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 Type annotations for `boto3.client("savingsplans").can_paginate` method.
 
 Boto3 documentation:
-[SavingsPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate)
+[SavingsPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate)
 
 Arguments:
 
@@ -79,7 +79,7 @@ Returns `bool`.
 Type annotations for `boto3.client("savingsplans").create_savings_plan` method.
 
 Boto3 documentation:
-[SavingsPlans.Client.create_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
+[SavingsPlans.Client.create_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Type annotations for `boto3.client("savingsplans").delete_queued_savings_plan`
 method.
 
 Boto3 documentation:
-[SavingsPlans.Client.delete_queued_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan)
+[SavingsPlans.Client.delete_queued_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("savingsplans").describe_savings_plan_rates`
 method.
 
 Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plan_rates](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
+[SavingsPlans.Client.describe_savings_plan_rates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Type annotations for `boto3.client("savingsplans").describe_savings_plans`
 method.
 
 Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
+[SavingsPlans.Client.describe_savings_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Type annotations for
 `boto3.client("savingsplans").describe_savings_plans_offering_rates` method.
 
 Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plans_offering_rates](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
+[SavingsPlans.Client.describe_savings_plans_offering_rates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Type annotations for
 `boto3.client("savingsplans").describe_savings_plans_offerings` method.
 
 Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plans_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
+[SavingsPlans.Client.describe_savings_plans_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Type annotations for `boto3.client("savingsplans").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SavingsPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url)
+[SavingsPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("savingsplans").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[SavingsPlans.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource)
+[SavingsPlans.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Returns
 Type annotations for `boto3.client("savingsplans").tag_resource` method.
 
 Boto3 documentation:
-[SavingsPlans.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource)
+[SavingsPlans.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("savingsplans").untag_resource` method.
 
 Boto3 documentation:
-[SavingsPlans.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource)
+[SavingsPlans.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource)
 
 Arguments:
 

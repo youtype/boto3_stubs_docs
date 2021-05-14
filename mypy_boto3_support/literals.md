@@ -3,7 +3,7 @@
 > [Index](..) > [Support](.) > Literals
 
 Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/support.html#Support)
+[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/support.html#Support)
 type annotations stubs module
 [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 

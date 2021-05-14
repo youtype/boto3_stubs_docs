@@ -3,7 +3,7 @@
 > [Index](..) > [AugmentedAIRuntime](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 

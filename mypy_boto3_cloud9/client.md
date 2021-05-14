@@ -3,7 +3,7 @@
 > [Index](..) > [Cloud9](.) > Cloud9Client
 
 Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9)
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
 [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
@@ -42,7 +42,7 @@ def get_cloud9_client() -> Cloud9Client:
 ```
 
 Boto3 documentation:
-[Cloud9.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client)
+[Cloud9.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client)
 
 ## Exceptions
 
@@ -75,7 +75,7 @@ Exceptions:
 Type annotations for `boto3.client("cloud9").can_paginate` method.
 
 Boto3 documentation:
-[Cloud9.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.can_paginate)
+[Cloud9.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.can_paginate)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cloud9").create_environment_ec2` method.
 
 Boto3 documentation:
-[Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
+[Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Type annotations for `boto3.client("cloud9").create_environment_membership`
 method.
 
 Boto3 documentation:
-[Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
+[Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns
 Type annotations for `boto3.client("cloud9").delete_environment` method.
 
 Boto3 documentation:
-[Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.delete_environment)
+[Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.delete_environment)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Type annotations for `boto3.client("cloud9").delete_environment_membership`
 method.
 
 Boto3 documentation:
-[Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
+[Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("cloud9").describe_environment_memberships`
 method.
 
 Boto3 documentation:
-[Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
+[Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Type annotations for `boto3.client("cloud9").describe_environment_status`
 method.
 
 Boto3 documentation:
-[Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
+[Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns
 Type annotations for `boto3.client("cloud9").describe_environments` method.
 
 Boto3 documentation:
-[Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.describe_environments)
+[Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.describe_environments)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("cloud9").generate_presigned_url` method.
 
 Boto3 documentation:
-[Cloud9.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url)
+[Cloud9.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloud9").list_environments` method.
 
 Boto3 documentation:
-[Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.list_environments)
+[Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.list_environments)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Returns
 Type annotations for `boto3.client("cloud9").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
+[Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Returns
 Type annotations for `boto3.client("cloud9").tag_resource` method.
 
 Boto3 documentation:
-[Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.tag_resource)
+[Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.tag_resource)
 
 Arguments:
 
@@ -264,7 +264,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloud9").untag_resource` method.
 
 Boto3 documentation:
-[Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.untag_resource)
+[Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.untag_resource)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloud9").update_environment` method.
 
 Boto3 documentation:
-[Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.update_environment)
+[Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.update_environment)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("cloud9").update_environment_membership`
 method.
 
 Boto3 documentation:
-[Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
+[Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
 
 Arguments:
 

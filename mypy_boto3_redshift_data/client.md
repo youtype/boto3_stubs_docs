@@ -3,7 +3,7 @@
 > [Index](..) > [RedshiftDataAPIService](.) > RedshiftDataAPIServiceClient
 
 Auto-generated documentation for
-[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService)
+[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
 [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
@@ -38,7 +38,7 @@ def get_redshift-data_client() -> RedshiftDataAPIServiceClient:
 ```
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
+[RedshiftDataAPIService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 Type annotations for `boto3.client("redshift-data").can_paginate` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate)
+[RedshiftDataAPIService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Returns `bool`.
 Type annotations for `boto3.client("redshift-data").cancel_statement` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
+[RedshiftDataAPIService.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
 
 Arguments:
 
@@ -95,7 +95,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").describe_statement` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.describe_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
+[RedshiftDataAPIService.Client.describe_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").describe_table` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
+[RedshiftDataAPIService.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").execute_statement` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
+[RedshiftDataAPIService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("redshift-data").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url)
+[RedshiftDataAPIService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("redshift-data").get_statement_result`
 method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.get_statement_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
+[RedshiftDataAPIService.Client.get_statement_result](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").list_databases` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
+[RedshiftDataAPIService.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").list_schemas` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
+[RedshiftDataAPIService.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").list_statements` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
+[RedshiftDataAPIService.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Returns
 Type annotations for `boto3.client("redshift-data").list_tables` method.
 
 Boto3 documentation:
-[RedshiftDataAPIService.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
+[RedshiftDataAPIService.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
 
 Arguments:
 

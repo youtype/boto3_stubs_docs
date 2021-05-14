@@ -3,7 +3,7 @@
 > [Index](..) > [Polly](.) > Literals
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Transfer](.) > Paginators
 
 Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/transfer.html#Transfer)
+[Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/transfer.html#Transfer)
 type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
@@ -24,7 +24,7 @@ def get_list_servers_paginator() -> ListServersPaginator:
 ```
 
 Boto3 documentation:
-[Transfer.Paginator.ListServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.72/reference/services/transfer.html#Transfer.Paginator.ListServers)
+[Transfer.Paginator.ListServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/transfer.html#Transfer.Paginator.ListServers)
 
 Arguments for `ListServersPaginator.paginate` method:
 
