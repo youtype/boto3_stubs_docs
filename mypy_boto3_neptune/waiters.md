@@ -3,7 +3,7 @@
 > [Index](..) > [Neptune](.) > Waiters
 
 Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/neptune.html#Neptune)
+[Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/neptune.html#Neptune)
 type annotations stubs module
 [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
@@ -26,7 +26,7 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[Neptune.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/neptune.html#Neptune.Waiter.db_instance_available)
+[Neptune.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/neptune.html#Neptune.Waiter.db_instance_available)
 
 Arguments for `DBInstanceAvailableWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[Neptune.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/neptune.html#Neptune.Waiter.db_instance_deleted)
+[Neptune.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/neptune.html#Neptune.Waiter.db_instance_deleted)
 
 Arguments for `DBInstanceDeletedWaiter.wait` method:
 

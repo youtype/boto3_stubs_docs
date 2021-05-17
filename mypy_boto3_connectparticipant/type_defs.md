@@ -3,7 +3,7 @@
 > [Index](..) > [ConnectParticipant](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/connectparticipant.html#ConnectParticipant)
+[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
 [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 

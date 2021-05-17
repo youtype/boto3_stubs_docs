@@ -3,7 +3,7 @@
 > [Index](..) > [DocDB](.) > Waiters
 
 Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/docdb.html#DocDB)
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/docdb.html#DocDB)
 type annotations stubs module
 [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
@@ -26,7 +26,7 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[DocDB.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/docdb.html#DocDB.Waiter.db_instance_available)
+[DocDB.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/docdb.html#DocDB.Waiter.db_instance_available)
 
 Arguments for `DBInstanceAvailableWaiter.wait` method:
 
@@ -50,7 +50,7 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[DocDB.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/docdb.html#DocDB.Waiter.db_instance_deleted)
+[DocDB.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/docdb.html#DocDB.Waiter.db_instance_deleted)
 
 Arguments for `DBInstanceDeletedWaiter.wait` method:
 

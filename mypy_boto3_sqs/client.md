@@ -3,7 +3,7 @@
 > [Index](..) > [SQS](.) > SQSClient
 
 Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS)
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS)
 type annotations stubs module
 [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
@@ -49,7 +49,7 @@ def get_sqs_client() -> SQSClient:
 ```
 
 Boto3 documentation:
-[SQS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client)
+[SQS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client)
 
 ## Exceptions
 
@@ -90,7 +90,7 @@ Exceptions:
 Type annotations for `boto3.client("sqs").add_permission` method.
 
 Boto3 documentation:
-[SQS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.add_permission)
+[SQS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.add_permission)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").can_paginate` method.
 
 Boto3 documentation:
-[SQS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.can_paginate)
+[SQS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.can_paginate)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Returns `bool`.
 Type annotations for `boto3.client("sqs").change_message_visibility` method.
 
 Boto3 documentation:
-[SQS.Client.change_message_visibility](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.change_message_visibility)
+[SQS.Client.change_message_visibility](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.change_message_visibility)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("sqs").change_message_visibility_batch`
 method.
 
 Boto3 documentation:
-[SQS.Client.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.change_message_visibility_batch)
+[SQS.Client.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.change_message_visibility_batch)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("sqs").create_queue` method.
 
 Boto3 documentation:
-[SQS.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.create_queue)
+[SQS.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.create_queue)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Returns [CreateQueueResultTypeDef](./type_defs.md#createqueueresulttypedef).
 Type annotations for `boto3.client("sqs").delete_message` method.
 
 Boto3 documentation:
-[SQS.Client.delete_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.delete_message)
+[SQS.Client.delete_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.delete_message)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").delete_message_batch` method.
 
 Boto3 documentation:
-[SQS.Client.delete_message_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.delete_message_batch)
+[SQS.Client.delete_message_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.delete_message_batch)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Returns
 Type annotations for `boto3.client("sqs").delete_queue` method.
 
 Boto3 documentation:
-[SQS.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.delete_queue)
+[SQS.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.delete_queue)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").generate_presigned_url` method.
 
 Boto3 documentation:
-[SQS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.generate_presigned_url)
+[SQS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns `str`.
 Type annotations for `boto3.client("sqs").get_queue_attributes` method.
 
 Boto3 documentation:
-[SQS.Client.get_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.get_queue_attributes)
+[SQS.Client.get_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.get_queue_attributes)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns
 Type annotations for `boto3.client("sqs").get_queue_url` method.
 
 Boto3 documentation:
-[SQS.Client.get_queue_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.get_queue_url)
+[SQS.Client.get_queue_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.get_queue_url)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("sqs").list_dead_letter_source_queues`
 method.
 
 Boto3 documentation:
-[SQS.Client.list_dead_letter_source_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues)
+[SQS.Client.list_dead_letter_source_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Returns
 Type annotations for `boto3.client("sqs").list_queue_tags` method.
 
 Boto3 documentation:
-[SQS.Client.list_queue_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.list_queue_tags)
+[SQS.Client.list_queue_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.list_queue_tags)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Returns
 Type annotations for `boto3.client("sqs").list_queues` method.
 
 Boto3 documentation:
-[SQS.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.list_queues)
+[SQS.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.list_queues)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns [ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef).
 Type annotations for `boto3.client("sqs").purge_queue` method.
 
 Boto3 documentation:
-[SQS.Client.purge_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.purge_queue)
+[SQS.Client.purge_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.purge_queue)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").receive_message` method.
 
 Boto3 documentation:
-[SQS.Client.receive_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.receive_message)
+[SQS.Client.receive_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.receive_message)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("sqs").remove_permission` method.
 
 Boto3 documentation:
-[SQS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.remove_permission)
+[SQS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.remove_permission)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").send_message` method.
 
 Boto3 documentation:
-[SQS.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.send_message)
+[SQS.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.send_message)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 Type annotations for `boto3.client("sqs").send_message_batch` method.
 
 Boto3 documentation:
-[SQS.Client.send_message_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.send_message_batch)
+[SQS.Client.send_message_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.send_message_batch)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("sqs").set_queue_attributes` method.
 
 Boto3 documentation:
-[SQS.Client.set_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.set_queue_attributes)
+[SQS.Client.set_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.set_queue_attributes)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").tag_queue` method.
 
 Boto3 documentation:
-[SQS.Client.tag_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.tag_queue)
+[SQS.Client.tag_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.tag_queue)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Arguments:
 Type annotations for `boto3.client("sqs").untag_queue` method.
 
 Boto3 documentation:
-[SQS.Client.untag_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sqs.html#SQS.Client.untag_queue)
+[SQS.Client.untag_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sqs.html#SQS.Client.untag_queue)
 
 Arguments:
 

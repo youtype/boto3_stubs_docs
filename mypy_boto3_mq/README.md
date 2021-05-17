@@ -3,7 +3,7 @@
 > [Index](..) > MQ
 
 Auto-generated documentation for
-[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mq.html#MQ)
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mq.html#MQ)
 type annotations stubs module
 [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > MediaConnect
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
@@ -33,6 +33,7 @@ from mypy_boto3_mediaconnect.client import MediaConnectClient
 
 ### Methods
 
+- [add_flow_media_streams](./client.md#add_flow_media_streams)
 - [add_flow_outputs](./client.md#add_flow_outputs)
 - [add_flow_sources](./client.md#add_flow_sources)
 - [add_flow_vpc_interfaces](./client.md#add_flow_vpc_interfaces)
@@ -52,6 +53,7 @@ from mypy_boto3_mediaconnect.client import MediaConnectClient
 - [list_reservations](./client.md#list_reservations)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [purchase_offering](./client.md#purchase_offering)
+- [remove_flow_media_stream](./client.md#remove_flow_media_stream)
 - [remove_flow_output](./client.md#remove_flow_output)
 - [remove_flow_source](./client.md#remove_flow_source)
 - [remove_flow_vpc_interface](./client.md#remove_flow_vpc_interface)
@@ -62,6 +64,7 @@ from mypy_boto3_mediaconnect.client import MediaConnectClient
 - [untag_resource](./client.md#untag_resource)
 - [update_flow](./client.md#update_flow)
 - [update_flow_entitlement](./client.md#update_flow_entitlement)
+- [update_flow_media_stream](./client.md#update_flow_media_stream)
 - [update_flow_output](./client.md#update_flow_output)
 - [update_flow_source](./client.md#update_flow_source)
 
@@ -122,7 +125,10 @@ from mypy_boto3_mediaconnect.literals import AlgorithmType, ...
 ```
 
 - [AlgorithmType](./literals.md#algorithmtype)
+- [ColorimetryType](./literals.md#colorimetrytype)
 - [DurationUnitsType](./literals.md#durationunitstype)
+- [EncoderProfileType](./literals.md#encoderprofiletype)
+- [EncodingNameType](./literals.md#encodingnametype)
 - [EntitlementStatusType](./literals.md#entitlementstatustype)
 - [FlowActiveWaiterName](./literals.md#flowactivewaitername)
 - [FlowDeletedWaiterName](./literals.md#flowdeletedwaitername)
@@ -132,13 +138,18 @@ from mypy_boto3_mediaconnect.literals import AlgorithmType, ...
 - [ListFlowsPaginatorName](./literals.md#listflowspaginatorname)
 - [ListOfferingsPaginatorName](./literals.md#listofferingspaginatorname)
 - [ListReservationsPaginatorName](./literals.md#listreservationspaginatorname)
+- [MediaStreamTypeType](./literals.md#mediastreamtypetype)
+- [NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype)
 - [PriceUnitsType](./literals.md#priceunitstype)
 - [ProtocolType](./literals.md#protocoltype)
+- [RangeType](./literals.md#rangetype)
 - [ReservationStateType](./literals.md#reservationstatetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
+- [ScanModeType](./literals.md#scanmodetype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [StateType](./literals.md#statetype)
 - [StatusType](./literals.md#statustype)
+- [TcsType](./literals.md#tcstype)
 
 ## Typed dictionaries
 
@@ -148,24 +159,36 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.type_defs import AddFlowOutputsResponseTypeDef, ...
+from mypy_boto3_mediaconnect.type_defs import AddFlowMediaStreamsResponseTypeDef, ...
 ```
 
+- [AddFlowMediaStreamsResponseTypeDef](./type_defs.md#addflowmediastreamsresponsetypedef)
 - [AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef)
 - [AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef)
 - [AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef)
+- [AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)
 - [AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)
 - [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef)
 - [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef)
 - [DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef)
 - [DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef)
 - [DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef)
+- [DestinationConfigurationRequestTypeDef](./type_defs.md#destinationconfigurationrequesttypedef)
+- [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
+- [EncodingParametersRequestTypeDef](./type_defs.md#encodingparametersrequesttypedef)
+- [EncodingParametersTypeDef](./type_defs.md#encodingparameterstypedef)
 - [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - [FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef)
 - [FlowTypeDef](./type_defs.md#flowtypedef)
+- [FmtpRequestTypeDef](./type_defs.md#fmtprequesttypedef)
+- [FmtpTypeDef](./type_defs.md#fmtptypedef)
 - [GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)
 - [GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef)
+- [InputConfigurationRequestTypeDef](./type_defs.md#inputconfigurationrequesttypedef)
+- [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
+- [InterfaceRequestTypeDef](./type_defs.md#interfacerequesttypedef)
+- [InterfaceTypeDef](./type_defs.md#interfacetypedef)
 - [ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef)
 - [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef)
 - [ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)
@@ -173,11 +196,19 @@ from mypy_boto3_mediaconnect.type_defs import AddFlowOutputsResponseTypeDef, ...
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListedEntitlementTypeDef](./type_defs.md#listedentitlementtypedef)
 - [ListedFlowTypeDef](./type_defs.md#listedflowtypedef)
+- [MediaStreamAttributesRequestTypeDef](./type_defs.md#mediastreamattributesrequesttypedef)
+- [MediaStreamAttributesTypeDef](./type_defs.md#mediastreamattributestypedef)
+- [MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)
+- [MediaStreamOutputConfigurationTypeDef](./type_defs.md#mediastreamoutputconfigurationtypedef)
+- [MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)
+- [MediaStreamSourceConfigurationTypeDef](./type_defs.md#mediastreamsourceconfigurationtypedef)
+- [MediaStreamTypeDef](./type_defs.md#mediastreamtypedef)
 - [MessagesTypeDef](./type_defs.md#messagestypedef)
 - [OfferingTypeDef](./type_defs.md#offeringtypedef)
 - [OutputTypeDef](./type_defs.md#outputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef)
+- [RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef)
 - [RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef)
 - [RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef)
 - [RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef)
@@ -193,6 +224,7 @@ from mypy_boto3_mediaconnect.type_defs import AddFlowOutputsResponseTypeDef, ...
 - [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
 - [UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef)
+- [UpdateFlowMediaStreamResponseTypeDef](./type_defs.md#updateflowmediastreamresponsetypedef)
 - [UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef)
 - [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef)
 - [UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef)

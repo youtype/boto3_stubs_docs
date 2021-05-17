@@ -3,7 +3,7 @@
 > [Index](..) > [QLDBSession](.) > QLDBSessionClient
 
 Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/qldb-session.html#QLDBSession)
+[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
 [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
@@ -29,7 +29,7 @@ def get_qldb-session_client() -> QLDBSessionClient:
 ```
 
 Boto3 documentation:
-[QLDBSession.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/qldb-session.html#QLDBSession.Client)
+[QLDBSession.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/qldb-session.html#QLDBSession.Client)
 
 ## Exceptions
 
@@ -60,7 +60,7 @@ Exceptions:
 Type annotations for `boto3.client("qldb-session").can_paginate` method.
 
 Boto3 documentation:
-[QLDBSession.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/qldb-session.html#QLDBSession.Client.can_paginate)
+[QLDBSession.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/qldb-session.html#QLDBSession.Client.can_paginate)
 
 Arguments:
 
@@ -74,7 +74,7 @@ Type annotations for `boto3.client("qldb-session").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[QLDBSession.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/qldb-session.html#QLDBSession.Client.generate_presigned_url)
+[QLDBSession.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/qldb-session.html#QLDBSession.Client.generate_presigned_url)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns `str`.
 Type annotations for `boto3.client("qldb-session").send_command` method.
 
 Boto3 documentation:
-[QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/qldb-session.html#QLDBSession.Client.send_command)
+[QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/qldb-session.html#QLDBSession.Client.send_command)
 
 Arguments:
 

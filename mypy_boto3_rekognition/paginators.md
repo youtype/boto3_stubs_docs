@@ -3,7 +3,7 @@
 > [Index](..) > [Rekognition](.) > Paginators
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
@@ -29,7 +29,7 @@ def get_describe_project_versions_paginator() -> DescribeProjectVersionsPaginato
 ```
 
 Boto3 documentation:
-[Rekognition.Paginator.DescribeProjectVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
+[Rekognition.Paginator.DescribeProjectVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
 
 Arguments for `DescribeProjectVersionsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_describe_projects_paginator() -> DescribeProjectsPaginator:
 ```
 
 Boto3 documentation:
-[Rekognition.Paginator.DescribeProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
+[Rekognition.Paginator.DescribeProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
 
 Arguments for `DescribeProjectsPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_collections_paginator() -> ListCollectionsPaginator:
 ```
 
 Boto3 documentation:
-[Rekognition.Paginator.ListCollections](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
+[Rekognition.Paginator.ListCollections](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
 
 Arguments for `ListCollectionsPaginator.paginate` method:
 
@@ -105,7 +105,7 @@ def get_list_faces_paginator() -> ListFacesPaginator:
 ```
 
 Boto3 documentation:
-[Rekognition.Paginator.ListFaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
+[Rekognition.Paginator.ListFaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
 
 Arguments for `ListFacesPaginator.paginate` method:
 
@@ -131,7 +131,7 @@ def get_list_stream_processors_paginator() -> ListStreamProcessorsPaginator:
 ```
 
 Boto3 documentation:
-[Rekognition.Paginator.ListStreamProcessors](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
+[Rekognition.Paginator.ListStreamProcessors](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
 
 Arguments for `ListStreamProcessorsPaginator.paginate` method:
 

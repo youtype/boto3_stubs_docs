@@ -3,7 +3,7 @@
 > [Index](..) > [ECR](.) > Waiters
 
 Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ecr.html#ECR)
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr.html#ECR)
 type annotations stubs module
 [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
@@ -25,7 +25,7 @@ def get_image_scan_complete_waiter() -> ImageScanCompleteWaiter:
 ```
 
 Boto3 documentation:
-[ECR.Waiter.image_scan_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ecr.html#ECR.Waiter.image_scan_complete)
+[ECR.Waiter.image_scan_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr.html#ECR.Waiter.image_scan_complete)
 
 Arguments for `ImageScanCompleteWaiter.wait` method:
 
@@ -52,7 +52,7 @@ def get_lifecycle_policy_preview_complete_waiter() -> LifecyclePolicyPreviewComp
 ```
 
 Boto3 documentation:
-[ECR.Waiter.lifecycle_policy_preview_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ecr.html#ECR.Waiter.lifecycle_policy_preview_complete)
+[ECR.Waiter.lifecycle_policy_preview_complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr.html#ECR.Waiter.lifecycle_policy_preview_complete)
 
 Arguments for `LifecyclePolicyPreviewCompleteWaiter.wait` method:
 

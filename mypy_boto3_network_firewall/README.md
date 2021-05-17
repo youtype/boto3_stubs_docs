@@ -3,7 +3,7 @@
 > [Index](..) > NetworkFirewall
 
 Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/network-firewall.html#NetworkFirewall)
+[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
 [mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 

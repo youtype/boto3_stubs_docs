@@ -3,7 +3,7 @@
 > [Index](..) > [Neptune](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/neptune.html#Neptune)
+[Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/neptune.html#Neptune)
 type annotations stubs module
 [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
@@ -525,8 +525,11 @@ Optional fields:
 - `IAMDatabaseAuthenticationEnabled`: `bool`
 - `CloneGroupId`: `str`
 - `ClusterCreateTime`: `datetime`
+- `CopyTagsToSnapshot`: `bool`
 - `EnabledCloudwatchLogsExports`: `List`\[`str`\]
 - `DeletionProtection`: `bool`
+- `CrossAccountClone`: `bool`
+- `AutomaticRestartTime`: `datetime`
 
 ## DBEngineVersionMessageTypeDef
 

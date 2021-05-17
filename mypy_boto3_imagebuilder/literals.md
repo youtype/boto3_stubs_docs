@@ -3,7 +3,7 @@
 > [Index](..) > [Imagebuilder](.) > Literals
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/imagebuilder.html#Imagebuilder)
+[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/imagebuilder.html#Imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 

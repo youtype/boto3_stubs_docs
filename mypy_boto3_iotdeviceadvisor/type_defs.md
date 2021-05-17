@@ -3,7 +3,7 @@
 > [Index](..) > [IoTDeviceAdvisor](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
 [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
@@ -17,16 +17,12 @@ type annotations stubs module
   - [ListSuiteDefinitionsResponseTypeDef](#listsuitedefinitionsresponsetypedef)
   - [ListSuiteRunsResponseTypeDef](#listsuiterunsresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTestCasesResponseTypeDef](#listtestcasesresponsetypedef)
   - [StartSuiteRunResponseTypeDef](#startsuiterunresponsetypedef)
   - [SuiteDefinitionConfigurationTypeDef](#suitedefinitionconfigurationtypedef)
   - [SuiteDefinitionInformationTypeDef](#suitedefinitioninformationtypedef)
   - [SuiteRunConfigurationTypeDef](#suiterunconfigurationtypedef)
   - [SuiteRunInformationTypeDef](#suiteruninformationtypedef)
-  - [TestCaseCategoryTypeDef](#testcasecategorytypedef)
-  - [TestCaseDefinitionTypeDef](#testcasedefinitiontypedef)
   - [TestCaseRunTypeDef](#testcaseruntypedef)
-  - [TestCaseTypeDef](#testcasetypedef)
   - [TestResultTypeDef](#testresulttypedef)
   - [UpdateSuiteDefinitionResponseTypeDef](#updatesuitedefinitionresponsetypedef)
 
@@ -149,20 +145,6 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## ListTestCasesResponseTypeDef
-
-```python
-from mypy_boto3_iotdeviceadvisor.type_defs import ListTestCasesResponseTypeDef
-```
-
-Optional fields:
-
-- `categories`:
-  `List`\[[TestCaseCategoryTypeDef](./type_defs.md#testcasecategorytypedef)\]
-- `rootGroupConfiguration`: `Dict`\[`str`, `str`\]
-- `groupConfiguration`: `Dict`\[`str`, `str`\]
-- `nextToken`: `str`
-
 ## StartSuiteRunResponseTypeDef
 
 ```python
@@ -215,8 +197,6 @@ Optional fields:
 
 - `primaryDevice`:
   [DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)
-- `secondaryDevice`:
-  [DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)
 - `selectedTestList`: `List`\[`str`\]
 
 ## SuiteRunInformationTypeDef
@@ -238,28 +218,6 @@ Optional fields:
 - `passed`: `int`
 - `failed`: `int`
 
-## TestCaseCategoryTypeDef
-
-```python
-from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseCategoryTypeDef
-```
-
-Optional fields:
-
-- `name`: `str`
-- `tests`: `List`\[[TestCaseTypeDef](./type_defs.md#testcasetypedef)\]
-
-## TestCaseDefinitionTypeDef
-
-```python
-from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseDefinitionTypeDef
-```
-
-Optional fields:
-
-- `id`: `str`
-- `testCaseVersion`: `str`
-
 ## TestCaseRunTypeDef
 
 ```python
@@ -277,18 +235,6 @@ Optional fields:
 - `logUrl`: `str`
 - `warnings`: `str`
 - `failure`: `str`
-
-## TestCaseTypeDef
-
-```python
-from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseTypeDef
-```
-
-Optional fields:
-
-- `name`: `str`
-- `configuration`: `Dict`\[`str`, `str`\]
-- `test`: [TestCaseDefinitionTypeDef](./type_defs.md#testcasedefinitiontypedef)
 
 ## TestResultTypeDef
 

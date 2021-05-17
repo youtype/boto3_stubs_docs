@@ -3,7 +3,7 @@
 > [Index](..) > [Shield](.) > ShieldClient
 
 Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield)
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield)
 type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
@@ -62,7 +62,7 @@ def get_shield_client() -> ShieldClient:
 ```
 
 Boto3 documentation:
-[Shield.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client)
+[Shield.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client)
 
 ## Exceptions
 
@@ -100,7 +100,7 @@ Exceptions:
 Type annotations for `boto3.client("shield").associate_drt_log_bucket` method.
 
 Boto3 documentation:
-[Shield.Client.associate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
+[Shield.Client.associate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").associate_drt_role` method.
 
 Boto3 documentation:
-[Shield.Client.associate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.associate_drt_role)
+[Shield.Client.associate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.associate_drt_role)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").associate_health_check` method.
 
 Boto3 documentation:
-[Shield.Client.associate_health_check](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.associate_health_check)
+[Shield.Client.associate_health_check](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.associate_health_check)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Type annotations for
 `boto3.client("shield").associate_proactive_engagement_details` method.
 
 Boto3 documentation:
-[Shield.Client.associate_proactive_engagement_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
+[Shield.Client.associate_proactive_engagement_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").can_paginate` method.
 
 Boto3 documentation:
-[Shield.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.can_paginate)
+[Shield.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.can_paginate)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns `bool`.
 Type annotations for `boto3.client("shield").create_protection` method.
 
 Boto3 documentation:
-[Shield.Client.create_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.create_protection)
+[Shield.Client.create_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.create_protection)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Returns
 Type annotations for `boto3.client("shield").create_protection_group` method.
 
 Boto3 documentation:
-[Shield.Client.create_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.create_protection_group)
+[Shield.Client.create_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.create_protection_group)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").create_subscription` method.
 
 Boto3 documentation:
-[Shield.Client.create_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.create_subscription)
+[Shield.Client.create_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.create_subscription)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -217,7 +217,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").delete_protection` method.
 
 Boto3 documentation:
-[Shield.Client.delete_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.delete_protection)
+[Shield.Client.delete_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.delete_protection)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").delete_protection_group` method.
 
 Boto3 documentation:
-[Shield.Client.delete_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.delete_protection_group)
+[Shield.Client.delete_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.delete_protection_group)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").delete_subscription` method.
 
 Boto3 documentation:
-[Shield.Client.delete_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.delete_subscription)
+[Shield.Client.delete_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.delete_subscription)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -252,7 +252,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").describe_attack` method.
 
 Boto3 documentation:
-[Shield.Client.describe_attack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_attack)
+[Shield.Client.describe_attack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_attack)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("shield").describe_attack_statistics`
 method.
 
 Boto3 documentation:
-[Shield.Client.describe_attack_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_attack_statistics)
+[Shield.Client.describe_attack_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_attack_statistics)
 
 Returns
 [DescribeAttackStatisticsResponseTypeDef](./type_defs.md#describeattackstatisticsresponsetypedef).
@@ -277,7 +277,7 @@ Returns
 Type annotations for `boto3.client("shield").describe_drt_access` method.
 
 Boto3 documentation:
-[Shield.Client.describe_drt_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_drt_access)
+[Shield.Client.describe_drt_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_drt_access)
 
 Returns
 [DescribeDRTAccessResponseTypeDef](./type_defs.md#describedrtaccessresponsetypedef).
@@ -288,7 +288,7 @@ Type annotations for
 `boto3.client("shield").describe_emergency_contact_settings` method.
 
 Boto3 documentation:
-[Shield.Client.describe_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
+[Shield.Client.describe_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
 
 Returns
 [DescribeEmergencyContactSettingsResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponsetypedef).
@@ -298,7 +298,7 @@ Returns
 Type annotations for `boto3.client("shield").describe_protection` method.
 
 Boto3 documentation:
-[Shield.Client.describe_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_protection)
+[Shield.Client.describe_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_protection)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns
 Type annotations for `boto3.client("shield").describe_protection_group` method.
 
 Boto3 documentation:
-[Shield.Client.describe_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_protection_group)
+[Shield.Client.describe_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_protection_group)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Returns
 Type annotations for `boto3.client("shield").describe_subscription` method.
 
 Boto3 documentation:
-[Shield.Client.describe_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.describe_subscription)
+[Shield.Client.describe_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.describe_subscription)
 
 Returns
 [DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef).
@@ -338,7 +338,7 @@ Type annotations for `boto3.client("shield").disable_proactive_engagement`
 method.
 
 Boto3 documentation:
-[Shield.Client.disable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.disable_proactive_engagement)
+[Shield.Client.disable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.disable_proactive_engagement)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -348,7 +348,7 @@ Type annotations for `boto3.client("shield").disassociate_drt_log_bucket`
 method.
 
 Boto3 documentation:
-[Shield.Client.disassociate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
+[Shield.Client.disassociate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").disassociate_drt_role` method.
 
 Boto3 documentation:
-[Shield.Client.disassociate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.disassociate_drt_role)
+[Shield.Client.disassociate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.disassociate_drt_role)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -370,7 +370,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").disassociate_health_check` method.
 
 Boto3 documentation:
-[Shield.Client.disassociate_health_check](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.disassociate_health_check)
+[Shield.Client.disassociate_health_check](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.disassociate_health_check)
 
 Arguments:
 
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("shield").enable_proactive_engagement`
 method.
 
 Boto3 documentation:
-[Shield.Client.enable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.enable_proactive_engagement)
+[Shield.Client.enable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.enable_proactive_engagement)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -394,7 +394,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").generate_presigned_url` method.
 
 Boto3 documentation:
-[Shield.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.generate_presigned_url)
+[Shield.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.generate_presigned_url)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Returns `str`.
 Type annotations for `boto3.client("shield").get_subscription_state` method.
 
 Boto3 documentation:
-[Shield.Client.get_subscription_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.get_subscription_state)
+[Shield.Client.get_subscription_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.get_subscription_state)
 
 Returns
 [GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef).
@@ -420,7 +420,7 @@ Returns
 Type annotations for `boto3.client("shield").list_attacks` method.
 
 Boto3 documentation:
-[Shield.Client.list_attacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.list_attacks)
+[Shield.Client.list_attacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.list_attacks)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Returns
 Type annotations for `boto3.client("shield").list_protection_groups` method.
 
 Boto3 documentation:
-[Shield.Client.list_protection_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.list_protection_groups)
+[Shield.Client.list_protection_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.list_protection_groups)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Returns
 Type annotations for `boto3.client("shield").list_protections` method.
 
 Boto3 documentation:
-[Shield.Client.list_protections](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.list_protections)
+[Shield.Client.list_protections](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.list_protections)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Type annotations for
 `boto3.client("shield").list_resources_in_protection_group` method.
 
 Boto3 documentation:
-[Shield.Client.list_resources_in_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
+[Shield.Client.list_resources_in_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns
 Type annotations for `boto3.client("shield").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Shield.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.list_tags_for_resource)
+[Shield.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -499,7 +499,7 @@ Returns
 Type annotations for `boto3.client("shield").tag_resource` method.
 
 Boto3 documentation:
-[Shield.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.tag_resource)
+[Shield.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.tag_resource)
 
 Arguments:
 
@@ -513,7 +513,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").untag_resource` method.
 
 Boto3 documentation:
-[Shield.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.untag_resource)
+[Shield.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.untag_resource)
 
 Arguments:
 
@@ -528,7 +528,7 @@ Type annotations for `boto3.client("shield").update_emergency_contact_settings`
 method.
 
 Boto3 documentation:
-[Shield.Client.update_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
+[Shield.Client.update_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
 
 Arguments:
 
@@ -542,7 +542,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").update_protection_group` method.
 
 Boto3 documentation:
-[Shield.Client.update_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.update_protection_group)
+[Shield.Client.update_protection_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.update_protection_group)
 
 Arguments:
 
@@ -564,7 +564,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("shield").update_subscription` method.
 
 Boto3 documentation:
-[Shield.Client.update_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/shield.html#Shield.Client.update_subscription)
+[Shield.Client.update_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield.Client.update_subscription)
 
 Arguments:
 

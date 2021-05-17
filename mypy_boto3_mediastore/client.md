@@ -3,7 +3,7 @@
 > [Index](..) > [MediaStore](.) > MediaStoreClient
 
 Auto-generated documentation for
-[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore)
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
 [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
@@ -50,7 +50,7 @@ def get_mediastore_client() -> MediaStoreClient:
 ```
 
 Boto3 documentation:
-[MediaStore.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client)
+[MediaStore.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 Type annotations for `boto3.client("mediastore").can_paginate` method.
 
 Boto3 documentation:
-[MediaStore.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.can_paginate)
+[MediaStore.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.can_paginate)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediastore").create_container` method.
 
 Boto3 documentation:
-[MediaStore.Client.create_container](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.create_container)
+[MediaStore.Client.create_container](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.create_container)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Returns
 Type annotations for `boto3.client("mediastore").delete_container` method.
 
 Boto3 documentation:
-[MediaStore.Client.delete_container](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.delete_container)
+[MediaStore.Client.delete_container](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.delete_container)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("mediastore").delete_container_policy`
 method.
 
 Boto3 documentation:
-[MediaStore.Client.delete_container_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
+[MediaStore.Client.delete_container_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").delete_cors_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.delete_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
+[MediaStore.Client.delete_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("mediastore").delete_lifecycle_policy`
 method.
 
 Boto3 documentation:
-[MediaStore.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
+[MediaStore.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").delete_metric_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.delete_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
+[MediaStore.Client.delete_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").describe_container` method.
 
 Boto3 documentation:
-[MediaStore.Client.describe_container](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.describe_container)
+[MediaStore.Client.describe_container](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.describe_container)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("mediastore").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaStore.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.generate_presigned_url)
+[MediaStore.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.generate_presigned_url)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Returns `str`.
 Type annotations for `boto3.client("mediastore").get_container_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.get_container_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
+[MediaStore.Client.get_container_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns
 Type annotations for `boto3.client("mediastore").get_cors_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.get_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
+[MediaStore.Client.get_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Returns
 Type annotations for `boto3.client("mediastore").get_lifecycle_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
+[MediaStore.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
 
 Arguments:
 
@@ -249,7 +249,7 @@ Returns
 Type annotations for `boto3.client("mediastore").get_metric_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.get_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
+[MediaStore.Client.get_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("mediastore").list_containers` method.
 
 Boto3 documentation:
-[MediaStore.Client.list_containers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.list_containers)
+[MediaStore.Client.list_containers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.list_containers)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("mediastore").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[MediaStore.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
+[MediaStore.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Returns
 Type annotations for `boto3.client("mediastore").put_container_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.put_container_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
+[MediaStore.Client.put_container_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").put_cors_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.put_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
+[MediaStore.Client.put_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").put_lifecycle_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
+[MediaStore.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
 
 Arguments:
 
@@ -336,7 +336,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").put_metric_policy` method.
 
 Boto3 documentation:
-[MediaStore.Client.put_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
+[MediaStore.Client.put_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").start_access_logging` method.
 
 Boto3 documentation:
-[MediaStore.Client.start_access_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
+[MediaStore.Client.start_access_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").stop_access_logging` method.
 
 Boto3 documentation:
-[MediaStore.Client.stop_access_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
+[MediaStore.Client.stop_access_logging](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
 
 Arguments:
 
@@ -377,7 +377,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").tag_resource` method.
 
 Boto3 documentation:
-[MediaStore.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.tag_resource)
+[MediaStore.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.tag_resource)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore").untag_resource` method.
 
 Boto3 documentation:
-[MediaStore.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediastore.html#MediaStore.Client.untag_resource)
+[MediaStore.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediastore.html#MediaStore.Client.untag_resource)
 
 Arguments:
 

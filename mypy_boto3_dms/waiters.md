@@ -3,7 +3,7 @@
 > [Index](..) > [DatabaseMigrationService](.) > Waiters
 
 Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService)
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
 [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
@@ -31,7 +31,7 @@ def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.endpoint_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.endpoint_deleted)
+[DatabaseMigrationService.Waiter.endpoint_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.endpoint_deleted)
 
 Arguments for `EndpointDeletedWaiter.wait` method:
 
@@ -55,7 +55,7 @@ def get_replication_instance_available_waiter() -> ReplicationInstanceAvailableW
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_instance_available)
+[DatabaseMigrationService.Waiter.replication_instance_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_instance_available)
 
 Arguments for `ReplicationInstanceAvailableWaiter.wait` method:
 
@@ -79,7 +79,7 @@ def get_replication_instance_deleted_waiter() -> ReplicationInstanceDeletedWaite
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_instance_deleted)
+[DatabaseMigrationService.Waiter.replication_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_instance_deleted)
 
 Arguments for `ReplicationInstanceDeletedWaiter.wait` method:
 
@@ -103,7 +103,7 @@ def get_replication_task_deleted_waiter() -> ReplicationTaskDeletedWaiter:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_deleted)
+[DatabaseMigrationService.Waiter.replication_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_deleted)
 
 Arguments for `ReplicationTaskDeletedWaiter.wait` method:
 
@@ -128,7 +128,7 @@ def get_replication_task_ready_waiter() -> ReplicationTaskReadyWaiter:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_ready](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_ready)
+[DatabaseMigrationService.Waiter.replication_task_ready](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_ready)
 
 Arguments for `ReplicationTaskReadyWaiter.wait` method:
 
@@ -153,7 +153,7 @@ def get_replication_task_running_waiter() -> ReplicationTaskRunningWaiter:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_running)
+[DatabaseMigrationService.Waiter.replication_task_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_running)
 
 Arguments for `ReplicationTaskRunningWaiter.wait` method:
 
@@ -178,7 +178,7 @@ def get_replication_task_stopped_waiter() -> ReplicationTaskStoppedWaiter:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_stopped)
+[DatabaseMigrationService.Waiter.replication_task_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_stopped)
 
 Arguments for `ReplicationTaskStoppedWaiter.wait` method:
 
@@ -203,7 +203,7 @@ def get_test_connection_succeeds_waiter() -> TestConnectionSucceedsWaiter:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Waiter.test_connection_succeeds](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Waiter.test_connection_succeeds)
+[DatabaseMigrationService.Waiter.test_connection_succeeds](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Waiter.test_connection_succeeds)
 
 Arguments for `TestConnectionSucceedsWaiter.wait` method:
 

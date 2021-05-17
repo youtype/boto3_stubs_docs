@@ -3,7 +3,7 @@
 > [Index](..) > ApplicationInsights
 
 Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/application-insights.html#ApplicationInsights)
+[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
 [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
 

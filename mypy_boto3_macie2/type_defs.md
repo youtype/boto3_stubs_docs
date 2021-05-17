@@ -3,7 +3,7 @@
 > [Index](..) > [Macie2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 

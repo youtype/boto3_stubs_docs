@@ -3,7 +3,7 @@
 > [Index](..) > PinpointSMSVoice
 
 Auto-generated documentation for
-[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
 type annotations stubs module
 [mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 

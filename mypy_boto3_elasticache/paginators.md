@@ -3,7 +3,7 @@
 > [Index](..) > [ElastiCache](.) > Paginators
 
 Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache)
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
 [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
@@ -41,7 +41,7 @@ def get_describe_cache_clusters_paginator() -> DescribeCacheClustersPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
+[ElastiCache.Paginator.DescribeCacheClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
 
 Arguments for `DescribeCacheClustersPaginator.paginate` method:
 
@@ -69,7 +69,7 @@ def get_describe_cache_engine_versions_paginator() -> DescribeCacheEngineVersion
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
+[ElastiCache.Paginator.DescribeCacheEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
 
 Arguments for `DescribeCacheEngineVersionsPaginator.paginate` method:
 
@@ -98,7 +98,7 @@ def get_describe_cache_parameter_groups_paginator() -> DescribeCacheParameterGro
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
+[ElastiCache.Paginator.DescribeCacheParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
 
 Arguments for `DescribeCacheParameterGroupsPaginator.paginate` method:
 
@@ -124,7 +124,7 @@ def get_describe_cache_parameters_paginator() -> DescribeCacheParametersPaginato
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
+[ElastiCache.Paginator.DescribeCacheParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
 
 Arguments for `DescribeCacheParametersPaginator.paginate` method:
 
@@ -151,7 +151,7 @@ def get_describe_cache_security_groups_paginator() -> DescribeCacheSecurityGroup
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
+[ElastiCache.Paginator.DescribeCacheSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
 
 Arguments for `DescribeCacheSecurityGroupsPaginator.paginate` method:
 
@@ -177,7 +177,7 @@ def get_describe_cache_subnet_groups_paginator() -> DescribeCacheSubnetGroupsPag
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
+[ElastiCache.Paginator.DescribeCacheSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
 
 Arguments for `DescribeCacheSubnetGroupsPaginator.paginate` method:
 
@@ -203,7 +203,7 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
+[ElastiCache.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
 
 Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 
@@ -229,7 +229,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
+[ElastiCache.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
@@ -259,7 +259,7 @@ def get_describe_global_replication_groups_paginator() -> DescribeGlobalReplicat
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeGlobalReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
+[ElastiCache.Paginator.DescribeGlobalReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
 
 Arguments for `DescribeGlobalReplicationGroupsPaginator.paginate` method:
 
@@ -286,7 +286,7 @@ def get_describe_replication_groups_paginator() -> DescribeReplicationGroupsPagi
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
+[ElastiCache.Paginator.DescribeReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
 
 Arguments for `DescribeReplicationGroupsPaginator.paginate` method:
 
@@ -312,7 +312,7 @@ def get_describe_reserved_cache_nodes_paginator() -> DescribeReservedCacheNodesP
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeReservedCacheNodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
+[ElastiCache.Paginator.DescribeReservedCacheNodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
 
 Arguments for `DescribeReservedCacheNodesPaginator.paginate` method:
 
@@ -343,7 +343,7 @@ def get_describe_reserved_cache_nodes_offerings_paginator() -> DescribeReservedC
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeReservedCacheNodesOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
+[ElastiCache.Paginator.DescribeReservedCacheNodesOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
 
 Arguments for `DescribeReservedCacheNodesOfferingsPaginator.paginate` method:
 
@@ -373,7 +373,7 @@ def get_describe_service_updates_paginator() -> DescribeServiceUpdatesPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeServiceUpdates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
+[ElastiCache.Paginator.DescribeServiceUpdates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
 
 Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
 
@@ -401,7 +401,7 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
+[ElastiCache.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
 
 Arguments for `DescribeSnapshotsPaginator.paginate` method:
 
@@ -431,7 +431,7 @@ def get_describe_update_actions_paginator() -> DescribeUpdateActionsPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeUpdateActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
+[ElastiCache.Paginator.DescribeUpdateActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
 
 Arguments for `DescribeUpdateActionsPaginator.paginate` method:
 
@@ -467,7 +467,7 @@ def get_describe_user_groups_paginator() -> DescribeUserGroupsPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeUserGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
+[ElastiCache.Paginator.DescribeUserGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
 
 Arguments for `DescribeUserGroupsPaginator.paginate` method:
 
@@ -493,7 +493,7 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
 ```
 
 Boto3 documentation:
-[ElastiCache.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
+[ElastiCache.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
 
 Arguments for `DescribeUsersPaginator.paginate` method:
 

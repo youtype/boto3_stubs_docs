@@ -3,7 +3,7 @@
 > [Index](..) > [EBS](.) > Literals
 
 Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ebs.html#EBS)
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ebs.html#EBS)
 type annotations stubs module
 [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 

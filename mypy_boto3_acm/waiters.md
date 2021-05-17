@@ -3,7 +3,7 @@
 > [Index](..) > [ACM](.) > Waiters
 
 Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/acm.html#ACM)
+[ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/acm.html#ACM)
 type annotations stubs module
 [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
 
@@ -24,7 +24,7 @@ def get_certificate_validated_waiter() -> CertificateValidatedWaiter:
 ```
 
 Boto3 documentation:
-[ACM.Waiter.certificate_validated](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/acm.html#ACM.Waiter.certificate_validated)
+[ACM.Waiter.certificate_validated](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/acm.html#ACM.Waiter.certificate_validated)
 
 Arguments for `CertificateValidatedWaiter.wait` method:
 

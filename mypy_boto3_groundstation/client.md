@@ -3,7 +3,7 @@
 > [Index](..) > [GroundStation](.) > GroundStationClient
 
 Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation)
+[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
 [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
@@ -54,7 +54,7 @@ def get_groundstation_client() -> GroundStationClient:
 ```
 
 Boto3 documentation:
-[GroundStation.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client)
+[GroundStation.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client)
 
 ## Exceptions
 
@@ -83,7 +83,7 @@ Exceptions:
 Type annotations for `boto3.client("groundstation").can_paginate` method.
 
 Boto3 documentation:
-[GroundStation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.can_paginate)
+[GroundStation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.can_paginate)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Returns `bool`.
 Type annotations for `boto3.client("groundstation").cancel_contact` method.
 
 Boto3 documentation:
-[GroundStation.Client.cancel_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
+[GroundStation.Client.cancel_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 Type annotations for `boto3.client("groundstation").create_config` method.
 
 Boto3 documentation:
-[GroundStation.Client.create_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.create_config)
+[GroundStation.Client.create_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.create_config)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for
 `boto3.client("groundstation").create_dataflow_endpoint_group` method.
 
 Boto3 documentation:
-[GroundStation.Client.create_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
+[GroundStation.Client.create_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Type annotations for `boto3.client("groundstation").create_mission_profile`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.create_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
+[GroundStation.Client.create_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
 
 Arguments:
 
@@ -164,7 +164,7 @@ Returns
 Type annotations for `boto3.client("groundstation").delete_config` method.
 
 Boto3 documentation:
-[GroundStation.Client.delete_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.delete_config)
+[GroundStation.Client.delete_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.delete_config)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Type annotations for
 `boto3.client("groundstation").delete_dataflow_endpoint_group` method.
 
 Boto3 documentation:
-[GroundStation.Client.delete_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
+[GroundStation.Client.delete_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("groundstation").delete_mission_profile`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.delete_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
+[GroundStation.Client.delete_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Returns
 Type annotations for `boto3.client("groundstation").describe_contact` method.
 
 Boto3 documentation:
-[GroundStation.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.describe_contact)
+[GroundStation.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.describe_contact)
 
 Arguments:
 
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("groundstation").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url)
+[GroundStation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Returns `str`.
 Type annotations for `boto3.client("groundstation").get_config` method.
 
 Boto3 documentation:
-[GroundStation.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.get_config)
+[GroundStation.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.get_config)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Type annotations for
 `boto3.client("groundstation").get_dataflow_endpoint_group` method.
 
 Boto3 documentation:
-[GroundStation.Client.get_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
+[GroundStation.Client.get_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns
 Type annotations for `boto3.client("groundstation").get_minute_usage` method.
 
 Boto3 documentation:
-[GroundStation.Client.get_minute_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
+[GroundStation.Client.get_minute_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("groundstation").get_mission_profile`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.get_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
+[GroundStation.Client.get_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
 
 Arguments:
 
@@ -302,7 +302,7 @@ Returns
 Type annotations for `boto3.client("groundstation").get_satellite` method.
 
 Boto3 documentation:
-[GroundStation.Client.get_satellite](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.get_satellite)
+[GroundStation.Client.get_satellite](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.get_satellite)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Returns
 Type annotations for `boto3.client("groundstation").list_configs` method.
 
 Boto3 documentation:
-[GroundStation.Client.list_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_configs)
+[GroundStation.Client.list_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_configs)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Returns
 Type annotations for `boto3.client("groundstation").list_contacts` method.
 
 Boto3 documentation:
-[GroundStation.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_contacts)
+[GroundStation.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_contacts)
 
 Arguments:
 
@@ -354,7 +354,7 @@ Type annotations for
 `boto3.client("groundstation").list_dataflow_endpoint_groups` method.
 
 Boto3 documentation:
-[GroundStation.Client.list_dataflow_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
+[GroundStation.Client.list_dataflow_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("groundstation").list_ground_stations`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.list_ground_stations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
+[GroundStation.Client.list_ground_stations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
 
 Arguments:
 
@@ -387,7 +387,7 @@ Type annotations for `boto3.client("groundstation").list_mission_profiles`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.list_mission_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
+[GroundStation.Client.list_mission_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
 
 Arguments:
 
@@ -402,7 +402,7 @@ Returns
 Type annotations for `boto3.client("groundstation").list_satellites` method.
 
 Boto3 documentation:
-[GroundStation.Client.list_satellites](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_satellites)
+[GroundStation.Client.list_satellites](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_satellites)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("groundstation").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
+[GroundStation.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Returns
 Type annotations for `boto3.client("groundstation").reserve_contact` method.
 
 Boto3 documentation:
-[GroundStation.Client.reserve_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
+[GroundStation.Client.reserve_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 Type annotations for `boto3.client("groundstation").tag_resource` method.
 
 Boto3 documentation:
-[GroundStation.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.tag_resource)
+[GroundStation.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.tag_resource)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("groundstation").untag_resource` method.
 
 Boto3 documentation:
-[GroundStation.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.untag_resource)
+[GroundStation.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.untag_resource)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("groundstation").update_config` method.
 
 Boto3 documentation:
-[GroundStation.Client.update_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.update_config)
+[GroundStation.Client.update_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.update_config)
 
 Arguments:
 
@@ -498,7 +498,7 @@ Type annotations for `boto3.client("groundstation").update_mission_profile`
 method.
 
 Boto3 documentation:
-[GroundStation.Client.update_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
+[GroundStation.Client.update_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
 
 Arguments:
 

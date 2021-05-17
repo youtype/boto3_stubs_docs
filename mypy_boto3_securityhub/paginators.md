@@ -3,7 +3,7 @@
 > [Index](..) > [SecurityHub](.) > Paginators
 
 Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub)
+[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
 [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
@@ -30,7 +30,7 @@ def get_get_enabled_standards_paginator() -> GetEnabledStandardsPaginator:
 ```
 
 Boto3 documentation:
-[SecurityHub.Paginator.GetEnabledStandards](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
+[SecurityHub.Paginator.GetEnabledStandards](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
 
 Arguments for `GetEnabledStandardsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_get_findings_paginator() -> GetFindingsPaginator:
 ```
 
 Boto3 documentation:
-[SecurityHub.Paginator.GetFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
+[SecurityHub.Paginator.GetFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
 
 Arguments for `GetFindingsPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_get_insights_paginator() -> GetInsightsPaginator:
 ```
 
 Boto3 documentation:
-[SecurityHub.Paginator.GetInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
+[SecurityHub.Paginator.GetInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
 
 Arguments for `GetInsightsPaginator.paginate` method:
 
@@ -111,7 +111,7 @@ def get_list_enabled_products_for_import_paginator() -> ListEnabledProductsForIm
 ```
 
 Boto3 documentation:
-[SecurityHub.Paginator.ListEnabledProductsForImport](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
+[SecurityHub.Paginator.ListEnabledProductsForImport](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
 
 Arguments for `ListEnabledProductsForImportPaginator.paginate` method:
 
@@ -136,7 +136,7 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
 ```
 
 Boto3 documentation:
-[SecurityHub.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
+[SecurityHub.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
 
 Arguments for `ListInvitationsPaginator.paginate` method:
 
@@ -161,7 +161,7 @@ def get_list_members_paginator() -> ListMembersPaginator:
 ```
 
 Boto3 documentation:
-[SecurityHub.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
+[SecurityHub.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
 
 Arguments for `ListMembersPaginator.paginate` method:
 

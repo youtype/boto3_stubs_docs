@@ -3,7 +3,7 @@
 > [Index](..) > [SWF](.) > SWFClient
 
 Auto-generated documentation for
-[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF)
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF)
 type annotations stubs module
 [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
@@ -66,7 +66,7 @@ def get_swf_client() -> SWFClient:
 ```
 
 Boto3 documentation:
-[SWF.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client)
+[SWF.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client)
 
 ## Exceptions
 
@@ -101,7 +101,7 @@ Exceptions:
 Type annotations for `boto3.client("swf").can_paginate` method.
 
 Boto3 documentation:
-[SWF.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.can_paginate)
+[SWF.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.can_paginate)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Type annotations for `boto3.client("swf").count_closed_workflow_executions`
 method.
 
 Boto3 documentation:
-[SWF.Client.count_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.count_closed_workflow_executions)
+[SWF.Client.count_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.count_closed_workflow_executions)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("swf").count_open_workflow_executions`
 method.
 
 Boto3 documentation:
-[SWF.Client.count_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.count_open_workflow_executions)
+[SWF.Client.count_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.count_open_workflow_executions)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns
 Type annotations for `boto3.client("swf").count_pending_activity_tasks` method.
 
 Boto3 documentation:
-[SWF.Client.count_pending_activity_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.count_pending_activity_tasks)
+[SWF.Client.count_pending_activity_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.count_pending_activity_tasks)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 Type annotations for `boto3.client("swf").count_pending_decision_tasks` method.
 
 Boto3 documentation:
-[SWF.Client.count_pending_decision_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.count_pending_decision_tasks)
+[SWF.Client.count_pending_decision_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.count_pending_decision_tasks)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 Type annotations for `boto3.client("swf").deprecate_activity_type` method.
 
 Boto3 documentation:
-[SWF.Client.deprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.deprecate_activity_type)
+[SWF.Client.deprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.deprecate_activity_type)
 
 Arguments:
 
@@ -204,7 +204,7 @@ Arguments:
 Type annotations for `boto3.client("swf").deprecate_domain` method.
 
 Boto3 documentation:
-[SWF.Client.deprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.deprecate_domain)
+[SWF.Client.deprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.deprecate_domain)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Arguments:
 Type annotations for `boto3.client("swf").deprecate_workflow_type` method.
 
 Boto3 documentation:
-[SWF.Client.deprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.deprecate_workflow_type)
+[SWF.Client.deprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.deprecate_workflow_type)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Arguments:
 Type annotations for `boto3.client("swf").describe_activity_type` method.
 
 Boto3 documentation:
-[SWF.Client.describe_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.describe_activity_type)
+[SWF.Client.describe_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.describe_activity_type)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns [ActivityTypeDetailTypeDef](./type_defs.md#activitytypedetailtypedef).
 Type annotations for `boto3.client("swf").describe_domain` method.
 
 Boto3 documentation:
-[SWF.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.describe_domain)
+[SWF.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.describe_domain)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns [DomainDetailTypeDef](./type_defs.md#domaindetailtypedef).
 Type annotations for `boto3.client("swf").describe_workflow_execution` method.
 
 Boto3 documentation:
-[SWF.Client.describe_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.describe_workflow_execution)
+[SWF.Client.describe_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.describe_workflow_execution)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns
 Type annotations for `boto3.client("swf").describe_workflow_type` method.
 
 Boto3 documentation:
-[SWF.Client.describe_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.describe_workflow_type)
+[SWF.Client.describe_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.describe_workflow_type)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns [WorkflowTypeDetailTypeDef](./type_defs.md#workflowtypedetailtypedef).
 Type annotations for `boto3.client("swf").generate_presigned_url` method.
 
 Boto3 documentation:
-[SWF.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.generate_presigned_url)
+[SWF.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.generate_presigned_url)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Type annotations for `boto3.client("swf").get_workflow_execution_history`
 method.
 
 Boto3 documentation:
-[SWF.Client.get_workflow_execution_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.get_workflow_execution_history)
+[SWF.Client.get_workflow_execution_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.get_workflow_execution_history)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Returns [HistoryTypeDef](./type_defs.md#historytypedef).
 Type annotations for `boto3.client("swf").list_activity_types` method.
 
 Boto3 documentation:
-[SWF.Client.list_activity_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.list_activity_types)
+[SWF.Client.list_activity_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.list_activity_types)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("swf").list_closed_workflow_executions`
 method.
 
 Boto3 documentation:
-[SWF.Client.list_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.list_closed_workflow_executions)
+[SWF.Client.list_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.list_closed_workflow_executions)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Returns
 Type annotations for `boto3.client("swf").list_domains` method.
 
 Boto3 documentation:
-[SWF.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.list_domains)
+[SWF.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.list_domains)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("swf").list_open_workflow_executions`
 method.
 
 Boto3 documentation:
-[SWF.Client.list_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.list_open_workflow_executions)
+[SWF.Client.list_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.list_open_workflow_executions)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Returns
 Type annotations for `boto3.client("swf").list_tags_for_resource` method.
 
 Boto3 documentation:
-[SWF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.list_tags_for_resource)
+[SWF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -429,7 +429,7 @@ Returns
 Type annotations for `boto3.client("swf").list_workflow_types` method.
 
 Boto3 documentation:
-[SWF.Client.list_workflow_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.list_workflow_types)
+[SWF.Client.list_workflow_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.list_workflow_types)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns [WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef).
 Type annotations for `boto3.client("swf").poll_for_activity_task` method.
 
 Boto3 documentation:
-[SWF.Client.poll_for_activity_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.poll_for_activity_task)
+[SWF.Client.poll_for_activity_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.poll_for_activity_task)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Returns [ActivityTaskTypeDef](./type_defs.md#activitytasktypedef).
 Type annotations for `boto3.client("swf").poll_for_decision_task` method.
 
 Boto3 documentation:
-[SWF.Client.poll_for_decision_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.poll_for_decision_task)
+[SWF.Client.poll_for_decision_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.poll_for_decision_task)
 
 Arguments:
 
@@ -482,7 +482,7 @@ Type annotations for `boto3.client("swf").record_activity_task_heartbeat`
 method.
 
 Boto3 documentation:
-[SWF.Client.record_activity_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat)
+[SWF.Client.record_activity_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat)
 
 Arguments:
 
@@ -496,7 +496,7 @@ Returns [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef).
 Type annotations for `boto3.client("swf").register_activity_type` method.
 
 Boto3 documentation:
-[SWF.Client.register_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.register_activity_type)
+[SWF.Client.register_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.register_activity_type)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Arguments:
 Type annotations for `boto3.client("swf").register_domain` method.
 
 Boto3 documentation:
-[SWF.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.register_domain)
+[SWF.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.register_domain)
 
 Arguments:
 
@@ -530,7 +530,7 @@ Arguments:
 Type annotations for `boto3.client("swf").register_workflow_type` method.
 
 Boto3 documentation:
-[SWF.Client.register_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.register_workflow_type)
+[SWF.Client.register_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.register_workflow_type)
 
 Arguments:
 
@@ -551,7 +551,7 @@ Type annotations for `boto3.client("swf").request_cancel_workflow_execution`
 method.
 
 Boto3 documentation:
-[SWF.Client.request_cancel_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution)
+[SWF.Client.request_cancel_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution)
 
 Arguments:
 
@@ -565,7 +565,7 @@ Type annotations for `boto3.client("swf").respond_activity_task_canceled`
 method.
 
 Boto3 documentation:
-[SWF.Client.respond_activity_task_canceled](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.respond_activity_task_canceled)
+[SWF.Client.respond_activity_task_canceled](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.respond_activity_task_canceled)
 
 Arguments:
 
@@ -578,7 +578,7 @@ Type annotations for `boto3.client("swf").respond_activity_task_completed`
 method.
 
 Boto3 documentation:
-[SWF.Client.respond_activity_task_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.respond_activity_task_completed)
+[SWF.Client.respond_activity_task_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.respond_activity_task_completed)
 
 Arguments:
 
@@ -590,7 +590,7 @@ Arguments:
 Type annotations for `boto3.client("swf").respond_activity_task_failed` method.
 
 Boto3 documentation:
-[SWF.Client.respond_activity_task_failed](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.respond_activity_task_failed)
+[SWF.Client.respond_activity_task_failed](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.respond_activity_task_failed)
 
 Arguments:
 
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("swf").respond_decision_task_completed`
 method.
 
 Boto3 documentation:
-[SWF.Client.respond_decision_task_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.respond_decision_task_completed)
+[SWF.Client.respond_decision_task_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.respond_decision_task_completed)
 
 Arguments:
 
@@ -617,7 +617,7 @@ Arguments:
 Type annotations for `boto3.client("swf").signal_workflow_execution` method.
 
 Boto3 documentation:
-[SWF.Client.signal_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.signal_workflow_execution)
+[SWF.Client.signal_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.signal_workflow_execution)
 
 Arguments:
 
@@ -632,7 +632,7 @@ Arguments:
 Type annotations for `boto3.client("swf").start_workflow_execution` method.
 
 Boto3 documentation:
-[SWF.Client.start_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.start_workflow_execution)
+[SWF.Client.start_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.start_workflow_execution)
 
 Arguments:
 
@@ -656,7 +656,7 @@ Returns [RunTypeDef](./type_defs.md#runtypedef).
 Type annotations for `boto3.client("swf").tag_resource` method.
 
 Boto3 documentation:
-[SWF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.tag_resource)
+[SWF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.tag_resource)
 
 Arguments:
 
@@ -669,7 +669,7 @@ Arguments:
 Type annotations for `boto3.client("swf").terminate_workflow_execution` method.
 
 Boto3 documentation:
-[SWF.Client.terminate_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.terminate_workflow_execution)
+[SWF.Client.terminate_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.terminate_workflow_execution)
 
 Arguments:
 
@@ -685,7 +685,7 @@ Arguments:
 Type annotations for `boto3.client("swf").undeprecate_activity_type` method.
 
 Boto3 documentation:
-[SWF.Client.undeprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.undeprecate_activity_type)
+[SWF.Client.undeprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.undeprecate_activity_type)
 
 Arguments:
 
@@ -698,7 +698,7 @@ Arguments:
 Type annotations for `boto3.client("swf").undeprecate_domain` method.
 
 Boto3 documentation:
-[SWF.Client.undeprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.undeprecate_domain)
+[SWF.Client.undeprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.undeprecate_domain)
 
 Arguments:
 
@@ -709,7 +709,7 @@ Arguments:
 Type annotations for `boto3.client("swf").undeprecate_workflow_type` method.
 
 Boto3 documentation:
-[SWF.Client.undeprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.undeprecate_workflow_type)
+[SWF.Client.undeprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.undeprecate_workflow_type)
 
 Arguments:
 
@@ -722,7 +722,7 @@ Arguments:
 Type annotations for `boto3.client("swf").untag_resource` method.
 
 Boto3 documentation:
-[SWF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/swf.html#SWF.Client.untag_resource)
+[SWF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/swf.html#SWF.Client.untag_resource)
 
 Arguments:
 

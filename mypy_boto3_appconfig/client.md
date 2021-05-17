@@ -3,7 +3,7 @@
 > [Index](..) > [AppConfig](.) > AppConfigClient
 
 Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig)
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
 [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
@@ -61,7 +61,7 @@ def get_appconfig_client() -> AppConfigClient:
 ```
 
 Boto3 documentation:
-[AppConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client)
+[AppConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client)
 
 ## Exceptions
 
@@ -92,7 +92,7 @@ Exceptions:
 Type annotations for `boto3.client("appconfig").can_paginate` method.
 
 Boto3 documentation:
-[AppConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.can_paginate)
+[AppConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.can_paginate)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Returns `bool`.
 Type annotations for `boto3.client("appconfig").create_application` method.
 
 Boto3 documentation:
-[AppConfig.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.create_application)
+[AppConfig.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.create_application)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Type annotations for `boto3.client("appconfig").create_configuration_profile`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.create_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile)
+[AppConfig.Client.create_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("appconfig").create_deployment_strategy`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.create_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy)
+[AppConfig.Client.create_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns [DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef).
 Type annotations for `boto3.client("appconfig").create_environment` method.
 
 Boto3 documentation:
-[AppConfig.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.create_environment)
+[AppConfig.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.create_environment)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Type annotations for
 `boto3.client("appconfig").create_hosted_configuration_version` method.
 
 Boto3 documentation:
-[AppConfig.Client.create_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version)
+[AppConfig.Client.create_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("appconfig").delete_application` method.
 
 Boto3 documentation:
-[AppConfig.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.delete_application)
+[AppConfig.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.delete_application)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("appconfig").delete_configuration_profile`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.delete_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile)
+[AppConfig.Client.delete_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Type annotations for `boto3.client("appconfig").delete_deployment_strategy`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.delete_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy)
+[AppConfig.Client.delete_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Arguments:
 Type annotations for `boto3.client("appconfig").delete_environment` method.
 
 Boto3 documentation:
-[AppConfig.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.delete_environment)
+[AppConfig.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.delete_environment)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Type annotations for
 `boto3.client("appconfig").delete_hosted_configuration_version` method.
 
 Boto3 documentation:
-[AppConfig.Client.delete_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version)
+[AppConfig.Client.delete_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version)
 
 Arguments:
 
@@ -261,7 +261,7 @@ Arguments:
 Type annotations for `boto3.client("appconfig").generate_presigned_url` method.
 
 Boto3 documentation:
-[AppConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.generate_presigned_url)
+[AppConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.generate_presigned_url)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Returns `str`.
 Type annotations for `boto3.client("appconfig").get_application` method.
 
 Boto3 documentation:
-[AppConfig.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_application)
+[AppConfig.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_application)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Returns [ApplicationTypeDef](./type_defs.md#applicationtypedef).
 Type annotations for `boto3.client("appconfig").get_configuration` method.
 
 Boto3 documentation:
-[AppConfig.Client.get_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_configuration)
+[AppConfig.Client.get_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_configuration)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("appconfig").get_configuration_profile`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.get_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile)
+[AppConfig.Client.get_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Returns
 Type annotations for `boto3.client("appconfig").get_deployment` method.
 
 Boto3 documentation:
-[AppConfig.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_deployment)
+[AppConfig.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_deployment)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("appconfig").get_deployment_strategy`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.get_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy)
+[AppConfig.Client.get_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns [DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef).
 Type annotations for `boto3.client("appconfig").get_environment` method.
 
 Boto3 documentation:
-[AppConfig.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_environment)
+[AppConfig.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_environment)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Type annotations for
 `boto3.client("appconfig").get_hosted_configuration_version` method.
 
 Boto3 documentation:
-[AppConfig.Client.get_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version)
+[AppConfig.Client.get_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Returns
 Type annotations for `boto3.client("appconfig").list_applications` method.
 
 Boto3 documentation:
-[AppConfig.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_applications)
+[AppConfig.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_applications)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("appconfig").list_configuration_profiles`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.list_configuration_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles)
+[AppConfig.Client.list_configuration_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("appconfig").list_deployment_strategies`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.list_deployment_strategies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies)
+[AppConfig.Client.list_deployment_strategies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Returns
 Type annotations for `boto3.client("appconfig").list_deployments` method.
 
 Boto3 documentation:
-[AppConfig.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_deployments)
+[AppConfig.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_deployments)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
 Type annotations for `boto3.client("appconfig").list_environments` method.
 
 Boto3 documentation:
-[AppConfig.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_environments)
+[AppConfig.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_environments)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Type annotations for
 `boto3.client("appconfig").list_hosted_configuration_versions` method.
 
 Boto3 documentation:
-[AppConfig.Client.list_hosted_configuration_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions)
+[AppConfig.Client.list_hosted_configuration_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Returns
 Type annotations for `boto3.client("appconfig").list_tags_for_resource` method.
 
 Boto3 documentation:
-[AppConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource)
+[AppConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -492,7 +492,7 @@ Returns [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef).
 Type annotations for `boto3.client("appconfig").start_deployment` method.
 
 Boto3 documentation:
-[AppConfig.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.start_deployment)
+[AppConfig.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.start_deployment)
 
 Arguments:
 
@@ -511,7 +511,7 @@ Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 Type annotations for `boto3.client("appconfig").stop_deployment` method.
 
 Boto3 documentation:
-[AppConfig.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.stop_deployment)
+[AppConfig.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.stop_deployment)
 
 Arguments:
 
@@ -526,7 +526,7 @@ Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 Type annotations for `boto3.client("appconfig").tag_resource` method.
 
 Boto3 documentation:
-[AppConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.tag_resource)
+[AppConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.tag_resource)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Arguments:
 Type annotations for `boto3.client("appconfig").untag_resource` method.
 
 Boto3 documentation:
-[AppConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.untag_resource)
+[AppConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.untag_resource)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Arguments:
 Type annotations for `boto3.client("appconfig").update_application` method.
 
 Boto3 documentation:
-[AppConfig.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.update_application)
+[AppConfig.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.update_application)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("appconfig").update_configuration_profile`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.update_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile)
+[AppConfig.Client.update_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile)
 
 Arguments:
 
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("appconfig").update_deployment_strategy`
 method.
 
 Boto3 documentation:
-[AppConfig.Client.update_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy)
+[AppConfig.Client.update_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy)
 
 Arguments:
 
@@ -604,7 +604,7 @@ Returns [DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef).
 Type annotations for `boto3.client("appconfig").update_environment` method.
 
 Boto3 documentation:
-[AppConfig.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.update_environment)
+[AppConfig.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.update_environment)
 
 Arguments:
 
@@ -621,7 +621,7 @@ Returns [EnvironmentTypeDef](./type_defs.md#environmenttypedef).
 Type annotations for `boto3.client("appconfig").validate_configuration` method.
 
 Boto3 documentation:
-[AppConfig.Client.validate_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appconfig.html#AppConfig.Client.validate_configuration)
+[AppConfig.Client.validate_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appconfig.html#AppConfig.Client.validate_configuration)
 
 Arguments:
 

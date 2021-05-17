@@ -3,7 +3,7 @@
 > [Index](..) > [MTurk](.) > MTurkClient
 
 Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk)
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk)
 type annotations stubs module
 [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
@@ -68,7 +68,7 @@ def get_mturk_client() -> MTurkClient:
 ```
 
 Boto3 documentation:
-[MTurk.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client)
+[MTurk.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Type annotations for `boto3.client("mturk").accept_qualification_request`
 method.
 
 Boto3 documentation:
-[MTurk.Client.accept_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
+[MTurk.Client.accept_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
 
 Arguments:
 
@@ -110,7 +110,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").approve_assignment` method.
 
 Boto3 documentation:
-[MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.approve_assignment)
+[MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.approve_assignment)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for
 `boto3.client("mturk").associate_qualification_with_worker` method.
 
 Boto3 documentation:
-[MTurk.Client.associate_qualification_with_worker](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
+[MTurk.Client.associate_qualification_with_worker](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").can_paginate` method.
 
 Boto3 documentation:
-[MTurk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.can_paginate)
+[MTurk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.can_paginate)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Type annotations for
 `boto3.client("mturk").create_additional_assignments_for_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.create_additional_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
+[MTurk.Client.create_additional_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").create_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.create_hit)
+[MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.create_hit)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
 Type annotations for `boto3.client("mturk").create_hit_type` method.
 
 Boto3 documentation:
-[MTurk.Client.create_hit_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.create_hit_type)
+[MTurk.Client.create_hit_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.create_hit_type)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns
 Type annotations for `boto3.client("mturk").create_hit_with_hit_type` method.
 
 Boto3 documentation:
-[MTurk.Client.create_hit_with_hit_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
+[MTurk.Client.create_hit_with_hit_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("mturk").create_qualification_type` method.
 
 Boto3 documentation:
-[MTurk.Client.create_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.create_qualification_type)
+[MTurk.Client.create_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.create_qualification_type)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns
 Type annotations for `boto3.client("mturk").create_worker_block` method.
 
 Boto3 documentation:
-[MTurk.Client.create_worker_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.create_worker_block)
+[MTurk.Client.create_worker_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.create_worker_block)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").delete_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.delete_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.delete_hit)
+[MTurk.Client.delete_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.delete_hit)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").delete_qualification_type` method.
 
 Boto3 documentation:
-[MTurk.Client.delete_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
+[MTurk.Client.delete_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").delete_worker_block` method.
 
 Boto3 documentation:
-[MTurk.Client.delete_worker_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.delete_worker_block)
+[MTurk.Client.delete_worker_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.delete_worker_block)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Type annotations for
 `boto3.client("mturk").disassociate_qualification_from_worker` method.
 
 Boto3 documentation:
-[MTurk.Client.disassociate_qualification_from_worker](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
+[MTurk.Client.disassociate_qualification_from_worker](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
 
 Arguments:
 
@@ -343,7 +343,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").generate_presigned_url` method.
 
 Boto3 documentation:
-[MTurk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.generate_presigned_url)
+[MTurk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.generate_presigned_url)
 
 Arguments:
 
@@ -359,7 +359,7 @@ Returns `str`.
 Type annotations for `boto3.client("mturk").get_account_balance` method.
 
 Boto3 documentation:
-[MTurk.Client.get_account_balance](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.get_account_balance)
+[MTurk.Client.get_account_balance](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.get_account_balance)
 
 Returns
 [GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef).
@@ -369,7 +369,7 @@ Returns
 Type annotations for `boto3.client("mturk").get_assignment` method.
 
 Boto3 documentation:
-[MTurk.Client.get_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.get_assignment)
+[MTurk.Client.get_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.get_assignment)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Returns
 Type annotations for `boto3.client("mturk").get_file_upload_url` method.
 
 Boto3 documentation:
-[MTurk.Client.get_file_upload_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
+[MTurk.Client.get_file_upload_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Returns
 Type annotations for `boto3.client("mturk").get_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.get_hit)
+[MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.get_hit)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Returns [GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef).
 Type annotations for `boto3.client("mturk").get_qualification_score` method.
 
 Boto3 documentation:
-[MTurk.Client.get_qualification_score](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.get_qualification_score)
+[MTurk.Client.get_qualification_score](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.get_qualification_score)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Returns
 Type annotations for `boto3.client("mturk").get_qualification_type` method.
 
 Boto3 documentation:
-[MTurk.Client.get_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.get_qualification_type)
+[MTurk.Client.get_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.get_qualification_type)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Returns
 Type annotations for `boto3.client("mturk").list_assignments_for_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
+[MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns
 Type annotations for `boto3.client("mturk").list_bonus_payments` method.
 
 Boto3 documentation:
-[MTurk.Client.list_bonus_payments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
+[MTurk.Client.list_bonus_payments](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
 
 Arguments:
 
@@ -475,7 +475,7 @@ Returns
 Type annotations for `boto3.client("mturk").list_hits` method.
 
 Boto3 documentation:
-[MTurk.Client.list_hits](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_hits)
+[MTurk.Client.list_hits](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_hits)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Type annotations for `boto3.client("mturk").list_hits_for_qualification_type`
 method.
 
 Boto3 documentation:
-[MTurk.Client.list_hits_for_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
+[MTurk.Client.list_hits_for_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
 
 Arguments:
 
@@ -507,7 +507,7 @@ Type annotations for `boto3.client("mturk").list_qualification_requests`
 method.
 
 Boto3 documentation:
-[MTurk.Client.list_qualification_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
+[MTurk.Client.list_qualification_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Returns
 Type annotations for `boto3.client("mturk").list_qualification_types` method.
 
 Boto3 documentation:
-[MTurk.Client.list_qualification_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_qualification_types)
+[MTurk.Client.list_qualification_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_qualification_types)
 
 Arguments:
 
@@ -542,7 +542,7 @@ Type annotations for `boto3.client("mturk").list_review_policy_results_for_hit`
 method.
 
 Boto3 documentation:
-[MTurk.Client.list_review_policy_results_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
+[MTurk.Client.list_review_policy_results_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Returns
 Type annotations for `boto3.client("mturk").list_reviewable_hits` method.
 
 Boto3 documentation:
-[MTurk.Client.list_reviewable_hits](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
+[MTurk.Client.list_reviewable_hits](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Returns
 Type annotations for `boto3.client("mturk").list_worker_blocks` method.
 
 Boto3 documentation:
-[MTurk.Client.list_worker_blocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
+[MTurk.Client.list_worker_blocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
 
 Arguments:
 
@@ -595,7 +595,7 @@ Type annotations for
 `boto3.client("mturk").list_workers_with_qualification_type` method.
 
 Boto3 documentation:
-[MTurk.Client.list_workers_with_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
+[MTurk.Client.list_workers_with_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
 
 Arguments:
 
@@ -612,7 +612,7 @@ Returns
 Type annotations for `boto3.client("mturk").notify_workers` method.
 
 Boto3 documentation:
-[MTurk.Client.notify_workers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.notify_workers)
+[MTurk.Client.notify_workers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.notify_workers)
 
 Arguments:
 
@@ -628,7 +628,7 @@ Returns
 Type annotations for `boto3.client("mturk").reject_assignment` method.
 
 Boto3 documentation:
-[MTurk.Client.reject_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.reject_assignment)
+[MTurk.Client.reject_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.reject_assignment)
 
 Arguments:
 
@@ -643,7 +643,7 @@ Type annotations for `boto3.client("mturk").reject_qualification_request`
 method.
 
 Boto3 documentation:
-[MTurk.Client.reject_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
+[MTurk.Client.reject_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").send_bonus` method.
 
 Boto3 documentation:
-[MTurk.Client.send_bonus](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.send_bonus)
+[MTurk.Client.send_bonus](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.send_bonus)
 
 Arguments:
 
@@ -675,7 +675,7 @@ Type annotations for `boto3.client("mturk").send_test_event_notification`
 method.
 
 Boto3 documentation:
-[MTurk.Client.send_test_event_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
+[MTurk.Client.send_test_event_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
 
 Arguments:
 
@@ -691,7 +691,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").update_expiration_for_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.update_expiration_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
+[MTurk.Client.update_expiration_for_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
 
 Arguments:
 
@@ -705,7 +705,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").update_hit_review_status` method.
 
 Boto3 documentation:
-[MTurk.Client.update_hit_review_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
+[MTurk.Client.update_hit_review_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
 
 Arguments:
 
@@ -719,7 +719,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").update_hit_type_of_hit` method.
 
 Boto3 documentation:
-[MTurk.Client.update_hit_type_of_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
+[MTurk.Client.update_hit_type_of_hit](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
 
 Arguments:
 
@@ -734,7 +734,7 @@ Type annotations for `boto3.client("mturk").update_notification_settings`
 method.
 
 Boto3 documentation:
-[MTurk.Client.update_notification_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.update_notification_settings)
+[MTurk.Client.update_notification_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.update_notification_settings)
 
 Arguments:
 
@@ -750,7 +750,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mturk").update_qualification_type` method.
 
 Boto3 documentation:
-[MTurk.Client.update_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mturk.html#MTurk.Client.update_qualification_type)
+[MTurk.Client.update_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mturk.html#MTurk.Client.update_qualification_type)
 
 Arguments:
 

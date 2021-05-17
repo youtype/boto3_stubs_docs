@@ -3,7 +3,7 @@
 > [Index](..) > Kendra
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kendra.html#Kendra)
+[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kendra.html#Kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 

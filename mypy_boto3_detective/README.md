@@ -3,7 +3,7 @@
 > [Index](..) > Detective
 
 Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/detective.html#Detective)
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/detective.html#Detective)
 type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 

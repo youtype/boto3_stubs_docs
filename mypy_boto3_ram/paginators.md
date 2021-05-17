@@ -3,7 +3,7 @@
 > [Index](..) > [RAM](.) > Paginators
 
 Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM)
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM)
 type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
@@ -30,7 +30,7 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
+[RAM.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
 
 Arguments for `GetResourcePoliciesPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_get_resource_share_associations_paginator() -> GetResourceShareAssociati
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourceShareAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
+[RAM.Paginator.GetResourceShareAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
 
 Arguments for `GetResourceShareAssociationsPaginator.paginate` method:
 
@@ -90,7 +90,7 @@ def get_get_resource_share_invitations_paginator() -> GetResourceShareInvitation
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourceShareInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
+[RAM.Paginator.GetResourceShareInvitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
 
 Arguments for `GetResourceShareInvitationsPaginator.paginate` method:
 
@@ -117,7 +117,7 @@ def get_get_resource_shares_paginator() -> GetResourceSharesPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.GetResourceShares](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM.Paginator.GetResourceShares)
+[RAM.Paginator.GetResourceShares](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM.Paginator.GetResourceShares)
 
 Arguments for `GetResourceSharesPaginator.paginate` method:
 
@@ -148,7 +148,7 @@ def get_list_principals_paginator() -> ListPrincipalsPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.ListPrincipals](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM.Paginator.ListPrincipals)
+[RAM.Paginator.ListPrincipals](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM.Paginator.ListPrincipals)
 
 Arguments for `ListPrincipalsPaginator.paginate` method:
 
@@ -178,7 +178,7 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
 ```
 
 Boto3 documentation:
-[RAM.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ram.html#RAM.Paginator.ListResources)
+[RAM.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ram.html#RAM.Paginator.ListResources)
 
 Arguments for `ListResourcesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [SagemakerEdgeManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
+[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
 type annotations stubs module
 [mypy_boto3_sagemaker_edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 

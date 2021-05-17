@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSM](.) > Paginators
 
 Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsm.html#CloudHSM)
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
@@ -26,7 +26,7 @@ def get_list_hapgs_paginator() -> ListHapgsPaginator:
 ```
 
 Boto3 documentation:
-[CloudHSM.Paginator.ListHapgs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHapgs)
+[CloudHSM.Paginator.ListHapgs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHapgs)
 
 Arguments for `ListHapgsPaginator.paginate` method:
 
@@ -50,7 +50,7 @@ def get_list_hsms_paginator() -> ListHsmsPaginator:
 ```
 
 Boto3 documentation:
-[CloudHSM.Paginator.ListHsms](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHsms)
+[CloudHSM.Paginator.ListHsms](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHsms)
 
 Arguments for `ListHsmsPaginator.paginate` method:
 
@@ -75,7 +75,7 @@ def get_list_luna_clients_paginator() -> ListLunaClientsPaginator:
 ```
 
 Boto3 documentation:
-[CloudHSM.Paginator.ListLunaClients](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsm.html#CloudHSM.Paginator.ListLunaClients)
+[CloudHSM.Paginator.ListLunaClients](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudhsm.html#CloudHSM.Paginator.ListLunaClients)
 
 Arguments for `ListLunaClientsPaginator.paginate` method:
 

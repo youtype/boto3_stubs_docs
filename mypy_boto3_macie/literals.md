@@ -3,7 +3,7 @@
 > [Index](..) > [Macie](.) > Literals
 
 Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/macie.html#Macie)
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/macie.html#Macie)
 type annotations stubs module
 [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 

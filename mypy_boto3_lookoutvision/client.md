@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutforVision](.) > LookoutforVisionClient
 
 Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision)
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
 [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
@@ -48,7 +48,7 @@ def get_lookoutvision_client() -> LookoutforVisionClient:
 ```
 
 Boto3 documentation:
-[LookoutforVision.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client)
+[LookoutforVision.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client)
 
 ## Exceptions
 
@@ -80,7 +80,7 @@ Exceptions:
 Type annotations for `boto3.client("lookoutvision").can_paginate` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate)
+[LookoutforVision.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate)
 
 Arguments:
 
@@ -93,7 +93,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lookoutvision").create_dataset` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
+[LookoutforVision.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
 
 Arguments:
 
@@ -110,7 +110,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").create_model` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
+[LookoutforVision.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
 
 Arguments:
 
@@ -130,7 +130,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").create_project` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
+[LookoutforVision.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").delete_dataset` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
+[LookoutforVision.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lookoutvision").delete_model` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
+[LookoutforVision.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").delete_project` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
+[LookoutforVision.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").describe_dataset` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
+[LookoutforVision.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
 
 Arguments:
 
@@ -206,7 +206,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").describe_model` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
+[LookoutforVision.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").describe_project` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
+[LookoutforVision.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").detect_anomalies` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.detect_anomalies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
+[LookoutforVision.Client.detect_anomalies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("lookoutvision").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LookoutforVision.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url)
+[LookoutforVision.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Type annotations for `boto3.client("lookoutvision").list_dataset_entries`
 method.
 
 Boto3 documentation:
-[LookoutforVision.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
+[LookoutforVision.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").list_models` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
+[LookoutforVision.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 Type annotations for `boto3.client("lookoutvision").list_projects` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
+[LookoutforVision.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("lookoutvision").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[LookoutforVision.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
+[LookoutforVision.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("lookoutvision").start_model` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.start_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
+[LookoutforVision.Client.start_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
 
 Arguments:
 
@@ -353,7 +353,7 @@ Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
 Type annotations for `boto3.client("lookoutvision").stop_model` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.stop_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
+[LookoutforVision.Client.stop_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Returns [StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef).
 Type annotations for `boto3.client("lookoutvision").tag_resource` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
+[LookoutforVision.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lookoutvision").untag_resource` method.
 
 Boto3 documentation:
-[LookoutforVision.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
+[LookoutforVision.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Type annotations for `boto3.client("lookoutvision").update_dataset_entries`
 method.
 
 Boto3 documentation:
-[LookoutforVision.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
+[LookoutforVision.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
 
 Arguments:
 

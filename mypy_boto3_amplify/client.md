@@ -3,7 +3,7 @@
 > [Index](..) > [Amplify](.) > AmplifyClient
 
 Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify)
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify)
 type annotations stubs module
 [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
@@ -66,7 +66,7 @@ def get_amplify_client() -> AmplifyClient:
 ```
 
 Boto3 documentation:
-[Amplify.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client)
+[Amplify.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client)
 
 ## Exceptions
 
@@ -98,7 +98,7 @@ Exceptions:
 Type annotations for `boto3.client("amplify").can_paginate` method.
 
 Boto3 documentation:
-[Amplify.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.can_paginate)
+[Amplify.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.can_paginate)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns `bool`.
 Type annotations for `boto3.client("amplify").create_app` method.
 
 Boto3 documentation:
-[Amplify.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.create_app)
+[Amplify.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.create_app)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("amplify").create_backend_environment`
 method.
 
 Boto3 documentation:
-[Amplify.Client.create_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.create_backend_environment)
+[Amplify.Client.create_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.create_backend_environment)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns
 Type annotations for `boto3.client("amplify").create_branch` method.
 
 Boto3 documentation:
-[Amplify.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.create_branch)
+[Amplify.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.create_branch)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Returns [CreateBranchResultTypeDef](./type_defs.md#createbranchresulttypedef).
 Type annotations for `boto3.client("amplify").create_deployment` method.
 
 Boto3 documentation:
-[Amplify.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.create_deployment)
+[Amplify.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.create_deployment)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("amplify").create_domain_association`
 method.
 
 Boto3 documentation:
-[Amplify.Client.create_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.create_domain_association)
+[Amplify.Client.create_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.create_domain_association)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Returns
 Type annotations for `boto3.client("amplify").create_webhook` method.
 
 Boto3 documentation:
-[Amplify.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.create_webhook)
+[Amplify.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.create_webhook)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Returns
 Type annotations for `boto3.client("amplify").delete_app` method.
 
 Boto3 documentation:
-[Amplify.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.delete_app)
+[Amplify.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.delete_app)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("amplify").delete_backend_environment`
 method.
 
 Boto3 documentation:
-[Amplify.Client.delete_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.delete_backend_environment)
+[Amplify.Client.delete_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.delete_backend_environment)
 
 Arguments:
 
@@ -275,7 +275,7 @@ Returns
 Type annotations for `boto3.client("amplify").delete_branch` method.
 
 Boto3 documentation:
-[Amplify.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.delete_branch)
+[Amplify.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.delete_branch)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("amplify").delete_domain_association`
 method.
 
 Boto3 documentation:
-[Amplify.Client.delete_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.delete_domain_association)
+[Amplify.Client.delete_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.delete_domain_association)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns
 Type annotations for `boto3.client("amplify").delete_job` method.
 
 Boto3 documentation:
-[Amplify.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.delete_job)
+[Amplify.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.delete_job)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Returns [DeleteJobResultTypeDef](./type_defs.md#deletejobresulttypedef).
 Type annotations for `boto3.client("amplify").delete_webhook` method.
 
 Boto3 documentation:
-[Amplify.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.delete_webhook)
+[Amplify.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.delete_webhook)
 
 Arguments:
 
@@ -334,7 +334,7 @@ Returns
 Type annotations for `boto3.client("amplify").generate_access_logs` method.
 
 Boto3 documentation:
-[Amplify.Client.generate_access_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.generate_access_logs)
+[Amplify.Client.generate_access_logs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.generate_access_logs)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns
 Type annotations for `boto3.client("amplify").generate_presigned_url` method.
 
 Boto3 documentation:
-[Amplify.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.generate_presigned_url)
+[Amplify.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.generate_presigned_url)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns `str`.
 Type annotations for `boto3.client("amplify").get_app` method.
 
 Boto3 documentation:
-[Amplify.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_app)
+[Amplify.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_app)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns [GetAppResultTypeDef](./type_defs.md#getappresulttypedef).
 Type annotations for `boto3.client("amplify").get_artifact_url` method.
 
 Boto3 documentation:
-[Amplify.Client.get_artifact_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_artifact_url)
+[Amplify.Client.get_artifact_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_artifact_url)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns
 Type annotations for `boto3.client("amplify").get_backend_environment` method.
 
 Boto3 documentation:
-[Amplify.Client.get_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_backend_environment)
+[Amplify.Client.get_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_backend_environment)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Returns
 Type annotations for `boto3.client("amplify").get_branch` method.
 
 Boto3 documentation:
-[Amplify.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_branch)
+[Amplify.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_branch)
 
 Arguments:
 
@@ -423,7 +423,7 @@ Returns [GetBranchResultTypeDef](./type_defs.md#getbranchresulttypedef).
 Type annotations for `boto3.client("amplify").get_domain_association` method.
 
 Boto3 documentation:
-[Amplify.Client.get_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_domain_association)
+[Amplify.Client.get_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_domain_association)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Returns
 Type annotations for `boto3.client("amplify").get_job` method.
 
 Boto3 documentation:
-[Amplify.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_job)
+[Amplify.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_job)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
 Type annotations for `boto3.client("amplify").get_webhook` method.
 
 Boto3 documentation:
-[Amplify.Client.get_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.get_webhook)
+[Amplify.Client.get_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.get_webhook)
 
 Arguments:
 
@@ -466,7 +466,7 @@ Returns [GetWebhookResultTypeDef](./type_defs.md#getwebhookresulttypedef).
 Type annotations for `boto3.client("amplify").list_apps` method.
 
 Boto3 documentation:
-[Amplify.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_apps)
+[Amplify.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_apps)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Returns [ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef).
 Type annotations for `boto3.client("amplify").list_artifacts` method.
 
 Boto3 documentation:
-[Amplify.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_artifacts)
+[Amplify.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_artifacts)
 
 Arguments:
 
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("amplify").list_backend_environments`
 method.
 
 Boto3 documentation:
-[Amplify.Client.list_backend_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_backend_environments)
+[Amplify.Client.list_backend_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_backend_environments)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Returns
 Type annotations for `boto3.client("amplify").list_branches` method.
 
 Boto3 documentation:
-[Amplify.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_branches)
+[Amplify.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_branches)
 
 Arguments:
 
@@ -531,7 +531,7 @@ Returns [ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef).
 Type annotations for `boto3.client("amplify").list_domain_associations` method.
 
 Boto3 documentation:
-[Amplify.Client.list_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_domain_associations)
+[Amplify.Client.list_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_domain_associations)
 
 Arguments:
 
@@ -547,7 +547,7 @@ Returns
 Type annotations for `boto3.client("amplify").list_jobs` method.
 
 Boto3 documentation:
-[Amplify.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_jobs)
+[Amplify.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_jobs)
 
 Arguments:
 
@@ -563,7 +563,7 @@ Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 Type annotations for `boto3.client("amplify").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Amplify.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_tags_for_resource)
+[Amplify.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -577,7 +577,7 @@ Returns
 Type annotations for `boto3.client("amplify").list_webhooks` method.
 
 Boto3 documentation:
-[Amplify.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.list_webhooks)
+[Amplify.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.list_webhooks)
 
 Arguments:
 
@@ -592,7 +592,7 @@ Returns [ListWebhooksResultTypeDef](./type_defs.md#listwebhooksresulttypedef).
 Type annotations for `boto3.client("amplify").start_deployment` method.
 
 Boto3 documentation:
-[Amplify.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.start_deployment)
+[Amplify.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.start_deployment)
 
 Arguments:
 
@@ -609,7 +609,7 @@ Returns
 Type annotations for `boto3.client("amplify").start_job` method.
 
 Boto3 documentation:
-[Amplify.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.start_job)
+[Amplify.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.start_job)
 
 Arguments:
 
@@ -629,7 +629,7 @@ Returns [StartJobResultTypeDef](./type_defs.md#startjobresulttypedef).
 Type annotations for `boto3.client("amplify").stop_job` method.
 
 Boto3 documentation:
-[Amplify.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.stop_job)
+[Amplify.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.stop_job)
 
 Arguments:
 
@@ -644,7 +644,7 @@ Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
 Type annotations for `boto3.client("amplify").tag_resource` method.
 
 Boto3 documentation:
-[Amplify.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.tag_resource)
+[Amplify.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.tag_resource)
 
 Arguments:
 
@@ -658,7 +658,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("amplify").untag_resource` method.
 
 Boto3 documentation:
-[Amplify.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.untag_resource)
+[Amplify.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.untag_resource)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("amplify").update_app` method.
 
 Boto3 documentation:
-[Amplify.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.update_app)
+[Amplify.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.update_app)
 
 Arguments:
 
@@ -705,7 +705,7 @@ Returns [UpdateAppResultTypeDef](./type_defs.md#updateappresulttypedef).
 Type annotations for `boto3.client("amplify").update_branch` method.
 
 Boto3 documentation:
-[Amplify.Client.update_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.update_branch)
+[Amplify.Client.update_branch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.update_branch)
 
 Arguments:
 
@@ -735,7 +735,7 @@ Type annotations for `boto3.client("amplify").update_domain_association`
 method.
 
 Boto3 documentation:
-[Amplify.Client.update_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.update_domain_association)
+[Amplify.Client.update_domain_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.update_domain_association)
 
 Arguments:
 
@@ -756,7 +756,7 @@ Returns
 Type annotations for `boto3.client("amplify").update_webhook` method.
 
 Boto3 documentation:
-[Amplify.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/amplify.html#Amplify.Client.update_webhook)
+[Amplify.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify.Client.update_webhook)
 
 Arguments:
 

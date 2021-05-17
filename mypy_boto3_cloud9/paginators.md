@@ -3,7 +3,7 @@
 > [Index](..) > [Cloud9](.) > Paginators
 
 Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9)
+[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
 [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
@@ -26,7 +26,7 @@ def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembe
 ```
 
 Boto3 documentation:
-[Cloud9.Paginator.DescribeEnvironmentMemberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
+[Cloud9.Paginator.DescribeEnvironmentMemberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
 
 Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
 ```
 
 Boto3 documentation:
-[Cloud9.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
+[Cloud9.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
 
 Arguments for `ListEnvironmentsPaginator.paginate` method:
 

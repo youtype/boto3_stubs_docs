@@ -3,7 +3,7 @@
 > [Index](..) > [IAM](.) > Waiters
 
 Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iam.html#IAM)
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iam.html#IAM)
 type annotations stubs module
 [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
@@ -28,7 +28,7 @@ def get_instance_profile_exists_waiter() -> InstanceProfileExistsWaiter:
 ```
 
 Boto3 documentation:
-[IAM.Waiter.instance_profile_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iam.html#IAM.Waiter.instance_profile_exists)
+[IAM.Waiter.instance_profile_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iam.html#IAM.Waiter.instance_profile_exists)
 
 Arguments for `InstanceProfileExistsWaiter.wait` method:
 
@@ -49,7 +49,7 @@ def get_policy_exists_waiter() -> PolicyExistsWaiter:
 ```
 
 Boto3 documentation:
-[IAM.Waiter.policy_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iam.html#IAM.Waiter.policy_exists)
+[IAM.Waiter.policy_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iam.html#IAM.Waiter.policy_exists)
 
 Arguments for `PolicyExistsWaiter.wait` method:
 
@@ -70,7 +70,7 @@ def get_role_exists_waiter() -> RoleExistsWaiter:
 ```
 
 Boto3 documentation:
-[IAM.Waiter.role_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iam.html#IAM.Waiter.role_exists)
+[IAM.Waiter.role_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iam.html#IAM.Waiter.role_exists)
 
 Arguments for `RoleExistsWaiter.wait` method:
 
@@ -91,7 +91,7 @@ def get_user_exists_waiter() -> UserExistsWaiter:
 ```
 
 Boto3 documentation:
-[IAM.Waiter.user_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iam.html#IAM.Waiter.user_exists)
+[IAM.Waiter.user_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iam.html#IAM.Waiter.user_exists)
 
 Arguments for `UserExistsWaiter.wait` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticLoadBalancingv2](.) > Literals
 
 Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2)
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
 [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 

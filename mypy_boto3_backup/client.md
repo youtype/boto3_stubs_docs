@@ -3,7 +3,7 @@
 > [Index](..) > [Backup](.) > BackupClient
 
 Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup)
+[Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup)
 type annotations stubs module
 [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 
@@ -79,7 +79,7 @@ def get_backup_client() -> BackupClient:
 ```
 
 Boto3 documentation:
-[Backup.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client)
+[Backup.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client)
 
 ## Exceptions
 
@@ -113,7 +113,7 @@ Exceptions:
 Type annotations for `boto3.client("backup").can_paginate` method.
 
 Boto3 documentation:
-[Backup.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.can_paginate)
+[Backup.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.can_paginate)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns `bool`.
 Type annotations for `boto3.client("backup").create_backup_plan` method.
 
 Boto3 documentation:
-[Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.create_backup_plan)
+[Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.create_backup_plan)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns
 Type annotations for `boto3.client("backup").create_backup_selection` method.
 
 Boto3 documentation:
-[Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.create_backup_selection)
+[Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.create_backup_selection)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns
 Type annotations for `boto3.client("backup").create_backup_vault` method.
 
 Boto3 documentation:
-[Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.create_backup_vault)
+[Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.create_backup_vault)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Returns
 Type annotations for `boto3.client("backup").delete_backup_plan` method.
 
 Boto3 documentation:
-[Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.delete_backup_plan)
+[Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.delete_backup_plan)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns
 Type annotations for `boto3.client("backup").delete_backup_selection` method.
 
 Boto3 documentation:
-[Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.delete_backup_selection)
+[Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.delete_backup_selection)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Arguments:
 Type annotations for `boto3.client("backup").delete_backup_vault` method.
 
 Boto3 documentation:
-[Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.delete_backup_vault)
+[Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.delete_backup_vault)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("backup").delete_backup_vault_access_policy`
 method.
 
 Boto3 documentation:
-[Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
+[Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("backup").delete_backup_vault_notifications`
 method.
 
 Boto3 documentation:
-[Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
+[Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Arguments:
 Type annotations for `boto3.client("backup").delete_recovery_point` method.
 
 Boto3 documentation:
-[Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.delete_recovery_point)
+[Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.delete_recovery_point)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Arguments:
 Type annotations for `boto3.client("backup").describe_backup_job` method.
 
 Boto3 documentation:
-[Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_backup_job)
+[Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_backup_job)
 
 Arguments:
 
@@ -264,7 +264,7 @@ Returns
 Type annotations for `boto3.client("backup").describe_backup_vault` method.
 
 Boto3 documentation:
-[Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_backup_vault)
+[Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_backup_vault)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns
 Type annotations for `boto3.client("backup").describe_copy_job` method.
 
 Boto3 documentation:
-[Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_copy_job)
+[Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_copy_job)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns
 Type annotations for `boto3.client("backup").describe_global_settings` method.
 
 Boto3 documentation:
-[Backup.Client.describe_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_global_settings)
+[Backup.Client.describe_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_global_settings)
 
 Returns
 [DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef).
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("backup").describe_protected_resource`
 method.
 
 Boto3 documentation:
-[Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_protected_resource)
+[Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_protected_resource)
 
 Arguments:
 
@@ -317,7 +317,7 @@ Returns
 Type annotations for `boto3.client("backup").describe_recovery_point` method.
 
 Boto3 documentation:
-[Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_recovery_point)
+[Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_recovery_point)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Returns
 Type annotations for `boto3.client("backup").describe_region_settings` method.
 
 Boto3 documentation:
-[Backup.Client.describe_region_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_region_settings)
+[Backup.Client.describe_region_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_region_settings)
 
 Returns
 [DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
@@ -342,7 +342,7 @@ Returns
 Type annotations for `boto3.client("backup").describe_restore_job` method.
 
 Boto3 documentation:
-[Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.describe_restore_job)
+[Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.describe_restore_job)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Type annotations for `boto3.client("backup").disassociate_recovery_point`
 method.
 
 Boto3 documentation:
-[Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
+[Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("backup").export_backup_plan_template`
 method.
 
 Boto3 documentation:
-[Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.export_backup_plan_template)
+[Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.export_backup_plan_template)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Returns
 Type annotations for `boto3.client("backup").generate_presigned_url` method.
 
 Boto3 documentation:
-[Backup.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.generate_presigned_url)
+[Backup.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.generate_presigned_url)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Returns `str`.
 Type annotations for `boto3.client("backup").get_backup_plan` method.
 
 Boto3 documentation:
-[Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_backup_plan)
+[Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_backup_plan)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Returns
 Type annotations for `boto3.client("backup").get_backup_plan_from_json` method.
 
 Boto3 documentation:
-[Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
+[Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Type annotations for `boto3.client("backup").get_backup_plan_from_template`
 method.
 
 Boto3 documentation:
-[Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
+[Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
 
 Arguments:
 
@@ -444,7 +444,7 @@ Returns
 Type annotations for `boto3.client("backup").get_backup_selection` method.
 
 Boto3 documentation:
-[Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_backup_selection)
+[Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_backup_selection)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("backup").get_backup_vault_access_policy`
 method.
 
 Boto3 documentation:
-[Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
+[Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
 
 Arguments:
 
@@ -475,7 +475,7 @@ Type annotations for `boto3.client("backup").get_backup_vault_notifications`
 method.
 
 Boto3 documentation:
-[Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
+[Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Type annotations for
 `boto3.client("backup").get_recovery_point_restore_metadata` method.
 
 Boto3 documentation:
-[Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
+[Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("backup").get_supported_resource_types`
 method.
 
 Boto3 documentation:
-[Backup.Client.get_supported_resource_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.get_supported_resource_types)
+[Backup.Client.get_supported_resource_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.get_supported_resource_types)
 
 Returns
 [GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef).
@@ -516,7 +516,7 @@ Returns
 Type annotations for `boto3.client("backup").list_backup_jobs` method.
 
 Boto3 documentation:
-[Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_backup_jobs)
+[Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_backup_jobs)
 
 Arguments:
 
@@ -539,7 +539,7 @@ Type annotations for `boto3.client("backup").list_backup_plan_templates`
 method.
 
 Boto3 documentation:
-[Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
+[Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns
 Type annotations for `boto3.client("backup").list_backup_plan_versions` method.
 
 Boto3 documentation:
-[Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
+[Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
 
 Arguments:
 
@@ -570,7 +570,7 @@ Returns
 Type annotations for `boto3.client("backup").list_backup_plans` method.
 
 Boto3 documentation:
-[Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_backup_plans)
+[Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_backup_plans)
 
 Arguments:
 
@@ -586,7 +586,7 @@ Returns
 Type annotations for `boto3.client("backup").list_backup_selections` method.
 
 Boto3 documentation:
-[Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_backup_selections)
+[Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_backup_selections)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Returns
 Type annotations for `boto3.client("backup").list_backup_vaults` method.
 
 Boto3 documentation:
-[Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_backup_vaults)
+[Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_backup_vaults)
 
 Arguments:
 
@@ -617,7 +617,7 @@ Returns
 Type annotations for `boto3.client("backup").list_copy_jobs` method.
 
 Boto3 documentation:
-[Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_copy_jobs)
+[Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_copy_jobs)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
 Type annotations for `boto3.client("backup").list_protected_resources` method.
 
 Boto3 documentation:
-[Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_protected_resources)
+[Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_protected_resources)
 
 Arguments:
 
@@ -654,7 +654,7 @@ Type annotations for
 `boto3.client("backup").list_recovery_points_by_backup_vault` method.
 
 Boto3 documentation:
-[Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
+[Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
 
 Arguments:
 
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("backup").list_recovery_points_by_resource`
 method.
 
 Boto3 documentation:
-[Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
+[Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
 
 Arguments:
 
@@ -692,7 +692,7 @@ Returns
 Type annotations for `boto3.client("backup").list_restore_jobs` method.
 
 Boto3 documentation:
-[Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_restore_jobs)
+[Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_restore_jobs)
 
 Arguments:
 
@@ -711,7 +711,7 @@ Returns
 Type annotations for `boto3.client("backup").list_tags` method.
 
 Boto3 documentation:
-[Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.list_tags)
+[Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.list_tags)
 
 Arguments:
 
@@ -727,7 +727,7 @@ Type annotations for `boto3.client("backup").put_backup_vault_access_policy`
 method.
 
 Boto3 documentation:
-[Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
+[Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
 
 Arguments:
 
@@ -740,7 +740,7 @@ Type annotations for `boto3.client("backup").put_backup_vault_notifications`
 method.
 
 Boto3 documentation:
-[Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
+[Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
 
 Arguments:
 
@@ -755,7 +755,7 @@ Arguments:
 Type annotations for `boto3.client("backup").start_backup_job` method.
 
 Boto3 documentation:
-[Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.start_backup_job)
+[Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.start_backup_job)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Returns
 Type annotations for `boto3.client("backup").start_copy_job` method.
 
 Boto3 documentation:
-[Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.start_copy_job)
+[Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.start_copy_job)
 
 Arguments:
 
@@ -795,7 +795,7 @@ Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
 Type annotations for `boto3.client("backup").start_restore_job` method.
 
 Boto3 documentation:
-[Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.start_restore_job)
+[Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.start_restore_job)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Returns
 Type annotations for `boto3.client("backup").stop_backup_job` method.
 
 Boto3 documentation:
-[Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.stop_backup_job)
+[Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.stop_backup_job)
 
 Arguments:
 
@@ -824,7 +824,7 @@ Arguments:
 Type annotations for `boto3.client("backup").tag_resource` method.
 
 Boto3 documentation:
-[Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.tag_resource)
+[Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.tag_resource)
 
 Arguments:
 
@@ -836,7 +836,7 @@ Arguments:
 Type annotations for `boto3.client("backup").untag_resource` method.
 
 Boto3 documentation:
-[Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.untag_resource)
+[Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.untag_resource)
 
 Arguments:
 
@@ -848,7 +848,7 @@ Arguments:
 Type annotations for `boto3.client("backup").update_backup_plan` method.
 
 Boto3 documentation:
-[Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.update_backup_plan)
+[Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.update_backup_plan)
 
 Arguments:
 
@@ -864,7 +864,7 @@ Returns
 Type annotations for `boto3.client("backup").update_global_settings` method.
 
 Boto3 documentation:
-[Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.update_global_settings)
+[Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.update_global_settings)
 
 Arguments:
 
@@ -876,7 +876,7 @@ Type annotations for `boto3.client("backup").update_recovery_point_lifecycle`
 method.
 
 Boto3 documentation:
-[Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
+[Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
 
 Arguments:
 
@@ -892,7 +892,7 @@ Returns
 Type annotations for `boto3.client("backup").update_region_settings` method.
 
 Boto3 documentation:
-[Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/backup.html#Backup.Client.update_region_settings)
+[Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/backup.html#Backup.Client.update_region_settings)
 
 Arguments:
 

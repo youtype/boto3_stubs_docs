@@ -3,7 +3,7 @@
 > [Index](..) > [Pricing](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/pricing.html#Pricing)
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pricing.html#Pricing)
 type annotations stubs module
 [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 

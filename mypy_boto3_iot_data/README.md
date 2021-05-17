@@ -3,7 +3,7 @@
 > [Index](..) > IoTDataPlane
 
 Auto-generated documentation for
-[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iot-data.html#IoTDataPlane)
+[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-data.html#IoTDataPlane)
 type annotations stubs module
 [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 

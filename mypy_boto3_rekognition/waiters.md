@@ -3,7 +3,7 @@
 > [Index](..) > [Rekognition](.) > Waiters
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
@@ -26,7 +26,7 @@ def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
 ```
 
 Boto3 documentation:
-[Rekognition.Waiter.project_version_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Waiter.project_version_running)
+[Rekognition.Waiter.project_version_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Waiter.project_version_running)
 
 Arguments for `ProjectVersionRunningWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_project_version_training_completed_waiter() -> ProjectVersionTrainingCom
 ```
 
 Boto3 documentation:
-[Rekognition.Waiter.project_version_training_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/rekognition.html#Rekognition.Waiter.project_version_training_completed)
+[Rekognition.Waiter.project_version_training_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/rekognition.html#Rekognition.Waiter.project_version_training_completed)
 
 Arguments for `ProjectVersionTrainingCompletedWaiter.wait` method:
 

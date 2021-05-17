@@ -3,7 +3,7 @@
 > [Index](..) > [Schemas](.) > SchemasClient
 
 Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas)
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas)
 type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
@@ -61,7 +61,7 @@ def get_schemas_client() -> SchemasClient:
 ```
 
 Boto3 documentation:
-[Schemas.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client)
+[Schemas.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Exceptions:
 Type annotations for `boto3.client("schemas").can_paginate` method.
 
 Boto3 documentation:
-[Schemas.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.can_paginate)
+[Schemas.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.can_paginate)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Returns `bool`.
 Type annotations for `boto3.client("schemas").create_discoverer` method.
 
 Boto3 documentation:
-[Schemas.Client.create_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.create_discoverer)
+[Schemas.Client.create_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.create_discoverer)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Returns
 Type annotations for `boto3.client("schemas").create_registry` method.
 
 Boto3 documentation:
-[Schemas.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.create_registry)
+[Schemas.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.create_registry)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Returns
 Type annotations for `boto3.client("schemas").create_schema` method.
 
 Boto3 documentation:
-[Schemas.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.create_schema)
+[Schemas.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.create_schema)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns
 Type annotations for `boto3.client("schemas").delete_discoverer` method.
 
 Boto3 documentation:
-[Schemas.Client.delete_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.delete_discoverer)
+[Schemas.Client.delete_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.delete_discoverer)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").delete_registry` method.
 
 Boto3 documentation:
-[Schemas.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.delete_registry)
+[Schemas.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.delete_registry)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").delete_resource_policy` method.
 
 Boto3 documentation:
-[Schemas.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.delete_resource_policy)
+[Schemas.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.delete_resource_policy)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").delete_schema` method.
 
 Boto3 documentation:
-[Schemas.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.delete_schema)
+[Schemas.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.delete_schema)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").delete_schema_version` method.
 
 Boto3 documentation:
-[Schemas.Client.delete_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.delete_schema_version)
+[Schemas.Client.delete_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.delete_schema_version)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").describe_code_binding` method.
 
 Boto3 documentation:
-[Schemas.Client.describe_code_binding](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.describe_code_binding)
+[Schemas.Client.describe_code_binding](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.describe_code_binding)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Returns
 Type annotations for `boto3.client("schemas").describe_discoverer` method.
 
 Boto3 documentation:
-[Schemas.Client.describe_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.describe_discoverer)
+[Schemas.Client.describe_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.describe_discoverer)
 
 Arguments:
 
@@ -249,7 +249,7 @@ Returns
 Type annotations for `boto3.client("schemas").describe_registry` method.
 
 Boto3 documentation:
-[Schemas.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.describe_registry)
+[Schemas.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.describe_registry)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("schemas").describe_schema` method.
 
 Boto3 documentation:
-[Schemas.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.describe_schema)
+[Schemas.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.describe_schema)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns
 Type annotations for `boto3.client("schemas").export_schema` method.
 
 Boto3 documentation:
-[Schemas.Client.export_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.export_schema)
+[Schemas.Client.export_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.export_schema)
 
 Arguments:
 
@@ -296,7 +296,7 @@ Returns
 Type annotations for `boto3.client("schemas").generate_presigned_url` method.
 
 Boto3 documentation:
-[Schemas.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.generate_presigned_url)
+[Schemas.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.generate_presigned_url)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Returns `str`.
 Type annotations for `boto3.client("schemas").get_code_binding_source` method.
 
 Boto3 documentation:
-[Schemas.Client.get_code_binding_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
+[Schemas.Client.get_code_binding_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("schemas").get_discovered_schema` method.
 
 Boto3 documentation:
-[Schemas.Client.get_discovered_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.get_discovered_schema)
+[Schemas.Client.get_discovered_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.get_discovered_schema)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Returns
 Type annotations for `boto3.client("schemas").get_resource_policy` method.
 
 Boto3 documentation:
-[Schemas.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.get_resource_policy)
+[Schemas.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.get_resource_policy)
 
 Arguments:
 
@@ -358,7 +358,7 @@ Returns
 Type annotations for `boto3.client("schemas").list_discoverers` method.
 
 Boto3 documentation:
-[Schemas.Client.list_discoverers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.list_discoverers)
+[Schemas.Client.list_discoverers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.list_discoverers)
 
 Arguments:
 
@@ -375,7 +375,7 @@ Returns
 Type annotations for `boto3.client("schemas").list_registries` method.
 
 Boto3 documentation:
-[Schemas.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.list_registries)
+[Schemas.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.list_registries)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Returns
 Type annotations for `boto3.client("schemas").list_schema_versions` method.
 
 Boto3 documentation:
-[Schemas.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.list_schema_versions)
+[Schemas.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.list_schema_versions)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Returns
 Type annotations for `boto3.client("schemas").list_schemas` method.
 
 Boto3 documentation:
-[Schemas.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.list_schemas)
+[Schemas.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.list_schemas)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Returns
 Type annotations for `boto3.client("schemas").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Schemas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.list_tags_for_resource)
+[Schemas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Returns
 Type annotations for `boto3.client("schemas").put_code_binding` method.
 
 Boto3 documentation:
-[Schemas.Client.put_code_binding](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.put_code_binding)
+[Schemas.Client.put_code_binding](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.put_code_binding)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Returns
 Type annotations for `boto3.client("schemas").put_resource_policy` method.
 
 Boto3 documentation:
-[Schemas.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.put_resource_policy)
+[Schemas.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.put_resource_policy)
 
 Arguments:
 
@@ -473,7 +473,7 @@ Returns
 Type annotations for `boto3.client("schemas").search_schemas` method.
 
 Boto3 documentation:
-[Schemas.Client.search_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.search_schemas)
+[Schemas.Client.search_schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.search_schemas)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Returns
 Type annotations for `boto3.client("schemas").start_discoverer` method.
 
 Boto3 documentation:
-[Schemas.Client.start_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.start_discoverer)
+[Schemas.Client.start_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.start_discoverer)
 
 Arguments:
 
@@ -504,7 +504,7 @@ Returns
 Type annotations for `boto3.client("schemas").stop_discoverer` method.
 
 Boto3 documentation:
-[Schemas.Client.stop_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.stop_discoverer)
+[Schemas.Client.stop_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.stop_discoverer)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Returns
 Type annotations for `boto3.client("schemas").tag_resource` method.
 
 Boto3 documentation:
-[Schemas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.tag_resource)
+[Schemas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.tag_resource)
 
 Arguments:
 
@@ -530,7 +530,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").untag_resource` method.
 
 Boto3 documentation:
-[Schemas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.untag_resource)
+[Schemas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.untag_resource)
 
 Arguments:
 
@@ -542,7 +542,7 @@ Arguments:
 Type annotations for `boto3.client("schemas").update_discoverer` method.
 
 Boto3 documentation:
-[Schemas.Client.update_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.update_discoverer)
+[Schemas.Client.update_discoverer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.update_discoverer)
 
 Arguments:
 
@@ -557,7 +557,7 @@ Returns
 Type annotations for `boto3.client("schemas").update_registry` method.
 
 Boto3 documentation:
-[Schemas.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.update_registry)
+[Schemas.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.update_registry)
 
 Arguments:
 
@@ -572,7 +572,7 @@ Returns
 Type annotations for `boto3.client("schemas").update_schema` method.
 
 Boto3 documentation:
-[Schemas.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/schemas.html#Schemas.Client.update_schema)
+[Schemas.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Client.update_schema)
 
 Arguments:
 

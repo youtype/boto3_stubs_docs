@@ -3,7 +3,7 @@
 > [Index](..) > WAFV2
 
 Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2)
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
 [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [MachineLearning](.) > Paginators
 
 Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning)
+[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
@@ -28,7 +28,7 @@ def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPagina
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeBatchPredictions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
+[MachineLearning.Paginator.DescribeBatchPredictions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
 
 Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
 
@@ -63,7 +63,7 @@ def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeDataSources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
+[MachineLearning.Paginator.DescribeDataSources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
 
 Arguments for `DescribeDataSourcesPaginator.paginate` method:
 
@@ -98,7 +98,7 @@ def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeEvaluations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
+[MachineLearning.Paginator.DescribeEvaluations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
 
 Arguments for `DescribeEvaluationsPaginator.paginate` method:
 
@@ -133,7 +133,7 @@ def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
 ```
 
 Boto3 documentation:
-[MachineLearning.Paginator.DescribeMLModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
+[MachineLearning.Paginator.DescribeMLModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
 
 Arguments for `DescribeMLModelsPaginator.paginate` method:
 

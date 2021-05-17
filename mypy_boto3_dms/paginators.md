@@ -3,7 +3,7 @@
 > [Index](..) > [DatabaseMigrationService](.) > Paginators
 
 Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService)
+[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
 [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
@@ -37,7 +37,7 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
+[DatabaseMigrationService.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
 
 Arguments for `DescribeCertificatesPaginator.paginate` method:
 
@@ -63,7 +63,7 @@ def get_describe_connections_paginator() -> DescribeConnectionsPaginator:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeConnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
+[DatabaseMigrationService.Paginator.DescribeConnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
 
 Arguments for `DescribeConnectionsPaginator.paginate` method:
 
@@ -89,7 +89,7 @@ def get_describe_endpoint_types_paginator() -> DescribeEndpointTypesPaginator:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEndpointTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
+[DatabaseMigrationService.Paginator.DescribeEndpointTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
 
 Arguments for `DescribeEndpointTypesPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
+[DatabaseMigrationService.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
 
 Arguments for `DescribeEndpointsPaginator.paginate` method:
 
@@ -140,7 +140,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
+[DatabaseMigrationService.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
 
 Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 
@@ -166,7 +166,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
+[DatabaseMigrationService.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
@@ -199,7 +199,7 @@ def get_describe_orderable_replication_instances_paginator() -> DescribeOrderabl
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
+[DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
 
 Arguments for `DescribeOrderableReplicationInstancesPaginator.paginate` method:
 
@@ -224,7 +224,7 @@ def get_describe_replication_instances_paginator() -> DescribeReplicationInstanc
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
+[DatabaseMigrationService.Paginator.DescribeReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
 
 Arguments for `DescribeReplicationInstancesPaginator.paginate` method:
 
@@ -250,7 +250,7 @@ def get_describe_replication_subnet_groups_paginator() -> DescribeReplicationSub
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
+[DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
 
 Arguments for `DescribeReplicationSubnetGroupsPaginator.paginate` method:
 
@@ -276,7 +276,7 @@ def get_describe_replication_task_assessment_results_paginator() -> DescribeRepl
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
+[DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
 
 Arguments for `DescribeReplicationTaskAssessmentResultsPaginator.paginate`
 method:
@@ -303,7 +303,7 @@ def get_describe_replication_tasks_paginator() -> DescribeReplicationTasksPagina
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
+[DatabaseMigrationService.Paginator.DescribeReplicationTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
 
 Arguments for `DescribeReplicationTasksPaginator.paginate` method:
 
@@ -329,7 +329,7 @@ def get_describe_schemas_paginator() -> DescribeSchemasPaginator:
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
+[DatabaseMigrationService.Paginator.DescribeSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
 
 Arguments for `DescribeSchemasPaginator.paginate` method:
 
@@ -355,7 +355,7 @@ def get_describe_table_statistics_paginator() -> DescribeTableStatisticsPaginato
 ```
 
 Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeTableStatistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
+[DatabaseMigrationService.Paginator.DescribeTableStatistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
 
 Arguments for `DescribeTableStatisticsPaginator.paginate` method:
 

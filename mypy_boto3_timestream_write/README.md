@@ -3,7 +3,7 @@
 > [Index](..) > TimestreamWrite
 
 Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/timestream-write.html#TimestreamWrite)
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
 [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 

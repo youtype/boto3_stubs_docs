@@ -3,7 +3,7 @@
 > [Index](..) > [WAFV2](.) > WAFV2Client
 
 Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2)
+[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
 [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
@@ -68,7 +68,7 @@ def get_wafv2_client() -> WAFV2Client:
 ```
 
 Boto3 documentation:
-[WAFV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client)
+[WAFV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client)
 
 ## Exceptions
 
@@ -108,7 +108,7 @@ Exceptions:
 Type annotations for `boto3.client("wafv2").associate_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
+[WAFV2.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").can_paginate` method.
 
 Boto3 documentation:
-[WAFV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.can_paginate)
+[WAFV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.can_paginate)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Returns `bool`.
 Type annotations for `boto3.client("wafv2").check_capacity` method.
 
 Boto3 documentation:
-[WAFV2.Client.check_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.check_capacity)
+[WAFV2.Client.check_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.check_capacity)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Returns
 Type annotations for `boto3.client("wafv2").create_ip_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
+[WAFV2.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns
 Type annotations for `boto3.client("wafv2").create_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
+[WAFV2.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns
 Type annotations for `boto3.client("wafv2").create_rule_group` method.
 
 Boto3 documentation:
-[WAFV2.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
+[WAFV2.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Returns
 Type annotations for `boto3.client("wafv2").create_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
+[WAFV2.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Type annotations for
 `boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_firewall_manager_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
+[WAFV2.Client.delete_firewall_manager_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns
 Type annotations for `boto3.client("wafv2").delete_ip_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
+[WAFV2.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("wafv2").delete_logging_configuration`
 method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
+[WAFV2.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").delete_permission_policy` method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
+[WAFV2.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").delete_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
+[WAFV2.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").delete_rule_group` method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
+[WAFV2.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").delete_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
+[WAFV2.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
 
 Arguments:
 
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("wafv2").describe_managed_rule_group`
 method.
 
 Boto3 documentation:
-[WAFV2.Client.describe_managed_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
+[WAFV2.Client.describe_managed_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Returns
 Type annotations for `boto3.client("wafv2").disassociate_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
+[WAFV2.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
 
 Arguments:
 
@@ -375,7 +375,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").generate_presigned_url` method.
 
 Boto3 documentation:
-[WAFV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url)
+[WAFV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns `str`.
 Type annotations for `boto3.client("wafv2").get_ip_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
+[WAFV2.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 Type annotations for `boto3.client("wafv2").get_logging_configuration` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
+[WAFV2.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
 
 Arguments:
 
@@ -420,7 +420,7 @@ Returns
 Type annotations for `boto3.client("wafv2").get_permission_policy` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
+[WAFV2.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Type annotations for
 `boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_rate_based_statement_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
+[WAFV2.Client.get_rate_based_statement_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
 
 Arguments:
 
@@ -452,7 +452,7 @@ Returns
 Type annotations for `boto3.client("wafv2").get_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
+[WAFV2.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
 
 Arguments:
 
@@ -468,7 +468,7 @@ Returns
 Type annotations for `boto3.client("wafv2").get_rule_group` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
+[WAFV2.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
 
 Arguments:
 
@@ -484,7 +484,7 @@ Returns
 Type annotations for `boto3.client("wafv2").get_sampled_requests` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
+[WAFV2.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Returns
 Type annotations for `boto3.client("wafv2").get_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
+[WAFV2.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
 Type annotations for `boto3.client("wafv2").get_web_acl_for_resource` method.
 
 Boto3 documentation:
-[WAFV2.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
+[WAFV2.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
 
 Arguments:
 
@@ -533,7 +533,7 @@ Type annotations for `boto3.client("wafv2").list_available_managed_rule_groups`
 method.
 
 Boto3 documentation:
-[WAFV2.Client.list_available_managed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
+[WAFV2.Client.list_available_managed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
 
 Arguments:
 
@@ -549,7 +549,7 @@ Returns
 Type annotations for `boto3.client("wafv2").list_ip_sets` method.
 
 Boto3 documentation:
-[WAFV2.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
+[WAFV2.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
 
 Arguments:
 
@@ -565,7 +565,7 @@ Type annotations for `boto3.client("wafv2").list_logging_configurations`
 method.
 
 Boto3 documentation:
-[WAFV2.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
+[WAFV2.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
 
 Arguments:
 
@@ -581,7 +581,7 @@ Returns
 Type annotations for `boto3.client("wafv2").list_regex_pattern_sets` method.
 
 Boto3 documentation:
-[WAFV2.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
+[WAFV2.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
 
 Arguments:
 
@@ -597,7 +597,7 @@ Returns
 Type annotations for `boto3.client("wafv2").list_resources_for_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
+[WAFV2.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
 
 Arguments:
 
@@ -612,7 +612,7 @@ Returns
 Type annotations for `boto3.client("wafv2").list_rule_groups` method.
 
 Boto3 documentation:
-[WAFV2.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
+[WAFV2.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
 
 Arguments:
 
@@ -628,7 +628,7 @@ Returns
 Type annotations for `boto3.client("wafv2").list_tags_for_resource` method.
 
 Boto3 documentation:
-[WAFV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
+[WAFV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -644,7 +644,7 @@ Returns
 Type annotations for `boto3.client("wafv2").list_web_acls` method.
 
 Boto3 documentation:
-[WAFV2.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
+[WAFV2.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
 
 Arguments:
 
@@ -660,7 +660,7 @@ Returns
 Type annotations for `boto3.client("wafv2").put_logging_configuration` method.
 
 Boto3 documentation:
-[WAFV2.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
+[WAFV2.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
 
 Arguments:
 
@@ -676,7 +676,7 @@ Returns
 Type annotations for `boto3.client("wafv2").put_permission_policy` method.
 
 Boto3 documentation:
-[WAFV2.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
+[WAFV2.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
 
 Arguments:
 
@@ -690,7 +690,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").tag_resource` method.
 
 Boto3 documentation:
-[WAFV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.tag_resource)
+[WAFV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.tag_resource)
 
 Arguments:
 
@@ -704,7 +704,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").untag_resource` method.
 
 Boto3 documentation:
-[WAFV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.untag_resource)
+[WAFV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.untag_resource)
 
 Arguments:
 
@@ -718,7 +718,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("wafv2").update_ip_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
+[WAFV2.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
 
 Arguments:
 
@@ -737,7 +737,7 @@ Returns
 Type annotations for `boto3.client("wafv2").update_regex_pattern_set` method.
 
 Boto3 documentation:
-[WAFV2.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
+[WAFV2.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
 
 Arguments:
 
@@ -757,7 +757,7 @@ Returns
 Type annotations for `boto3.client("wafv2").update_rule_group` method.
 
 Boto3 documentation:
-[WAFV2.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
+[WAFV2.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
 
 Arguments:
 
@@ -781,7 +781,7 @@ Returns
 Type annotations for `boto3.client("wafv2").update_web_acl` method.
 
 Boto3 documentation:
-[WAFV2.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
+[WAFV2.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
 
 Arguments:
 

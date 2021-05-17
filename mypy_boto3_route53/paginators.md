@@ -3,7 +3,7 @@
 > [Index](..) > [Route53](.) > Paginators
 
 Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/route53.html#Route53)
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53.html#Route53)
 type annotations stubs module
 [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
@@ -29,7 +29,7 @@ def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
 ```
 
 Boto3 documentation:
-[Route53.Paginator.ListHealthChecks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
+[Route53.Paginator.ListHealthChecks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
 
 Arguments for `ListHealthChecksPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_hosted_zones_paginator() -> ListHostedZonesPaginator:
 ```
 
 Boto3 documentation:
-[Route53.Paginator.ListHostedZones](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/route53.html#Route53.Paginator.ListHostedZones)
+[Route53.Paginator.ListHostedZones](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53.html#Route53.Paginator.ListHostedZones)
 
 Arguments for `ListHostedZonesPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_list_query_logging_configs_paginator() -> ListQueryLoggingConfigsPaginat
 ```
 
 Boto3 documentation:
-[Route53.Paginator.ListQueryLoggingConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
+[Route53.Paginator.ListQueryLoggingConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
 
 Arguments for `ListQueryLoggingConfigsPaginator.paginate` method:
 
@@ -106,7 +106,7 @@ def get_list_resource_record_sets_paginator() -> ListResourceRecordSetsPaginator
 ```
 
 Boto3 documentation:
-[Route53.Paginator.ListResourceRecordSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
+[Route53.Paginator.ListResourceRecordSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
 
 Arguments for `ListResourceRecordSetsPaginator.paginate` method:
 
@@ -132,7 +132,7 @@ def get_list_vpc_association_authorizations_paginator() -> ListVPCAssociationAut
 ```
 
 Boto3 documentation:
-[Route53.Paginator.ListVPCAssociationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
+[Route53.Paginator.ListVPCAssociationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
 
 Arguments for `ListVPCAssociationAuthorizationsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Kafka](.) > KafkaClient
 
 Auto-generated documentation for
-[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka)
+[Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka)
 type annotations stubs module
 [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
@@ -59,7 +59,7 @@ def get_kafka_client() -> KafkaClient:
 ```
 
 Boto3 documentation:
-[Kafka.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client)
+[Kafka.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client)
 
 ## Exceptions
 
@@ -93,7 +93,7 @@ Type annotations for `boto3.client("kafka").batch_associate_scram_secret`
 method.
 
 Boto3 documentation:
-[Kafka.Client.batch_associate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret)
+[Kafka.Client.batch_associate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Type annotations for `boto3.client("kafka").batch_disassociate_scram_secret`
 method.
 
 Boto3 documentation:
-[Kafka.Client.batch_disassociate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret)
+[Kafka.Client.batch_disassociate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret)
 
 Arguments:
 
@@ -124,7 +124,7 @@ Returns
 Type annotations for `boto3.client("kafka").can_paginate` method.
 
 Boto3 documentation:
-[Kafka.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.can_paginate)
+[Kafka.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.can_paginate)
 
 Arguments:
 
@@ -137,7 +137,7 @@ Returns `bool`.
 Type annotations for `boto3.client("kafka").create_cluster` method.
 
 Boto3 documentation:
-[Kafka.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.create_cluster)
+[Kafka.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.create_cluster)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns
 Type annotations for `boto3.client("kafka").create_configuration` method.
 
 Boto3 documentation:
-[Kafka.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.create_configuration)
+[Kafka.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.create_configuration)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Returns
 Type annotations for `boto3.client("kafka").delete_cluster` method.
 
 Boto3 documentation:
-[Kafka.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.delete_cluster)
+[Kafka.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.delete_cluster)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Returns
 Type annotations for `boto3.client("kafka").delete_configuration` method.
 
 Boto3 documentation:
-[Kafka.Client.delete_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.delete_configuration)
+[Kafka.Client.delete_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.delete_configuration)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("kafka").describe_cluster` method.
 
 Boto3 documentation:
-[Kafka.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.describe_cluster)
+[Kafka.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.describe_cluster)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Returns
 Type annotations for `boto3.client("kafka").describe_cluster_operation` method.
 
 Boto3 documentation:
-[Kafka.Client.describe_cluster_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.describe_cluster_operation)
+[Kafka.Client.describe_cluster_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.describe_cluster_operation)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Returns
 Type annotations for `boto3.client("kafka").describe_configuration` method.
 
 Boto3 documentation:
-[Kafka.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.describe_configuration)
+[Kafka.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.describe_configuration)
 
 Arguments:
 
@@ -257,7 +257,7 @@ Type annotations for `boto3.client("kafka").describe_configuration_revision`
 method.
 
 Boto3 documentation:
-[Kafka.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.describe_configuration_revision)
+[Kafka.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.describe_configuration_revision)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns
 Type annotations for `boto3.client("kafka").generate_presigned_url` method.
 
 Boto3 documentation:
-[Kafka.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.generate_presigned_url)
+[Kafka.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.generate_presigned_url)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns `str`.
 Type annotations for `boto3.client("kafka").get_bootstrap_brokers` method.
 
 Boto3 documentation:
-[Kafka.Client.get_bootstrap_brokers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers)
+[Kafka.Client.get_bootstrap_brokers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers)
 
 Arguments:
 
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("kafka").get_compatible_kafka_versions`
 method.
 
 Boto3 documentation:
-[Kafka.Client.get_compatible_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions)
+[Kafka.Client.get_compatible_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions)
 
 Arguments:
 
@@ -317,7 +317,7 @@ Returns
 Type annotations for `boto3.client("kafka").list_cluster_operations` method.
 
 Boto3 documentation:
-[Kafka.Client.list_cluster_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_cluster_operations)
+[Kafka.Client.list_cluster_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_cluster_operations)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns
 Type annotations for `boto3.client("kafka").list_clusters` method.
 
 Boto3 documentation:
-[Kafka.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_clusters)
+[Kafka.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_clusters)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("kafka").list_configuration_revisions`
 method.
 
 Boto3 documentation:
-[Kafka.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_configuration_revisions)
+[Kafka.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_configuration_revisions)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns
 Type annotations for `boto3.client("kafka").list_configurations` method.
 
 Boto3 documentation:
-[Kafka.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_configurations)
+[Kafka.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_configurations)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Returns
 Type annotations for `boto3.client("kafka").list_kafka_versions` method.
 
 Boto3 documentation:
-[Kafka.Client.list_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_kafka_versions)
+[Kafka.Client.list_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_kafka_versions)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Returns
 Type annotations for `boto3.client("kafka").list_nodes` method.
 
 Boto3 documentation:
-[Kafka.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_nodes)
+[Kafka.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_nodes)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
 Type annotations for `boto3.client("kafka").list_scram_secrets` method.
 
 Boto3 documentation:
-[Kafka.Client.list_scram_secrets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_scram_secrets)
+[Kafka.Client.list_scram_secrets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_scram_secrets)
 
 Arguments:
 
@@ -427,7 +427,7 @@ Returns
 Type annotations for `boto3.client("kafka").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Kafka.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.list_tags_for_resource)
+[Kafka.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns
 Type annotations for `boto3.client("kafka").reboot_broker` method.
 
 Boto3 documentation:
-[Kafka.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.reboot_broker)
+[Kafka.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.reboot_broker)
 
 Arguments:
 
@@ -456,7 +456,7 @@ Returns
 Type annotations for `boto3.client("kafka").tag_resource` method.
 
 Boto3 documentation:
-[Kafka.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.tag_resource)
+[Kafka.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.tag_resource)
 
 Arguments:
 
@@ -468,7 +468,7 @@ Arguments:
 Type annotations for `boto3.client("kafka").untag_resource` method.
 
 Boto3 documentation:
-[Kafka.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.untag_resource)
+[Kafka.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.untag_resource)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Arguments:
 Type annotations for `boto3.client("kafka").update_broker_count` method.
 
 Boto3 documentation:
-[Kafka.Client.update_broker_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_broker_count)
+[Kafka.Client.update_broker_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_broker_count)
 
 Arguments:
 
@@ -496,7 +496,7 @@ Returns
 Type annotations for `boto3.client("kafka").update_broker_storage` method.
 
 Boto3 documentation:
-[Kafka.Client.update_broker_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_broker_storage)
+[Kafka.Client.update_broker_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_broker_storage)
 
 Arguments:
 
@@ -514,7 +514,7 @@ Returns
 Type annotations for `boto3.client("kafka").update_broker_type` method.
 
 Boto3 documentation:
-[Kafka.Client.update_broker_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_broker_type)
+[Kafka.Client.update_broker_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_broker_type)
 
 Arguments:
 
@@ -531,7 +531,7 @@ Type annotations for `boto3.client("kafka").update_cluster_configuration`
 method.
 
 Boto3 documentation:
-[Kafka.Client.update_cluster_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_cluster_configuration)
+[Kafka.Client.update_cluster_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_cluster_configuration)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Type annotations for `boto3.client("kafka").update_cluster_kafka_version`
 method.
 
 Boto3 documentation:
-[Kafka.Client.update_cluster_kafka_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version)
+[Kafka.Client.update_cluster_kafka_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version)
 
 Arguments:
 
@@ -568,7 +568,7 @@ Returns
 Type annotations for `boto3.client("kafka").update_configuration` method.
 
 Boto3 documentation:
-[Kafka.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_configuration)
+[Kafka.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_configuration)
 
 Arguments:
 
@@ -584,7 +584,7 @@ Returns
 Type annotations for `boto3.client("kafka").update_monitoring` method.
 
 Boto3 documentation:
-[Kafka.Client.update_monitoring](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kafka.html#Kafka.Client.update_monitoring)
+[Kafka.Client.update_monitoring](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kafka.html#Kafka.Client.update_monitoring)
 
 Arguments:
 

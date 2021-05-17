@@ -3,7 +3,7 @@
 > [Index](..) > [IoTSiteWise](.) > IoTSiteWiseClient
 
 Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise)
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
 [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
@@ -88,7 +88,7 @@ def get_iotsitewise_client() -> IoTSiteWiseClient:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client)
+[IoTSiteWise.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client)
 
 ## Exceptions
 
@@ -123,7 +123,7 @@ Exceptions:
 Type annotations for `boto3.client("iotsitewise").associate_assets` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.associate_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
+[IoTSiteWise.Client.associate_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for
 `boto3.client("iotsitewise").batch_associate_project_assets` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.batch_associate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
+[IoTSiteWise.Client.batch_associate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Type annotations for
 `boto3.client("iotsitewise").batch_disassociate_project_assets` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.batch_disassociate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
+[IoTSiteWise.Client.batch_disassociate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Type annotations for
 `boto3.client("iotsitewise").batch_put_asset_property_value` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.batch_put_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value)
+[IoTSiteWise.Client.batch_put_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").can_paginate` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.can_paginate)
+[IoTSiteWise.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.can_paginate)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns `bool`.
 Type annotations for `boto3.client("iotsitewise").create_access_policy` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
+[IoTSiteWise.Client.create_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
 
 Arguments:
 
@@ -222,7 +222,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").create_asset` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
+[IoTSiteWise.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").create_asset_model` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
+[IoTSiteWise.Client.create_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").create_dashboard` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
+[IoTSiteWise.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").create_gateway` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
+[IoTSiteWise.Client.create_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").create_portal` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
+[IoTSiteWise.Client.create_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").create_project` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
+[IoTSiteWise.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").delete_access_policy` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy)
+[IoTSiteWise.Client.delete_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").delete_asset` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset)
+[IoTSiteWise.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").delete_asset_model` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model)
+[IoTSiteWise.Client.delete_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").delete_dashboard` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard)
+[IoTSiteWise.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").delete_gateway` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway)
+[IoTSiteWise.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Arguments:
 Type annotations for `boto3.client("iotsitewise").delete_portal` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal)
+[IoTSiteWise.Client.delete_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").delete_project` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project)
+[IoTSiteWise.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project)
 
 Arguments:
 
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("iotsitewise").describe_access_policy`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy)
+[IoTSiteWise.Client.describe_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").describe_asset` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset)
+[IoTSiteWise.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").describe_asset_model` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model)
+[IoTSiteWise.Client.describe_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("iotsitewise").describe_asset_property`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_asset_property](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property)
+[IoTSiteWise.Client.describe_asset_property](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").describe_dashboard` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard)
+[IoTSiteWise.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Type annotations for
 `boto3.client("iotsitewise").describe_default_encryption_configuration` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
+[IoTSiteWise.Client.describe_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
 
 Returns
 [DescribeDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponsetypedef).
@@ -519,7 +519,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").describe_gateway` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway)
+[IoTSiteWise.Client.describe_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Type annotations for
 `boto3.client("iotsitewise").describe_gateway_capability_configuration` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration)
+[IoTSiteWise.Client.describe_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Type annotations for `boto3.client("iotsitewise").describe_logging_options`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
+[IoTSiteWise.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
 
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
@@ -560,7 +560,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").describe_portal` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal)
+[IoTSiteWise.Client.describe_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal)
 
 Arguments:
 
@@ -574,7 +574,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").describe_project` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project)
+[IoTSiteWise.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").disassociate_assets` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.disassociate_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
+[IoTSiteWise.Client.disassociate_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Type annotations for `boto3.client("iotsitewise").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.generate_presigned_url)
+[IoTSiteWise.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.generate_presigned_url)
 
 Arguments:
 
@@ -620,7 +620,7 @@ Type annotations for
 `boto3.client("iotsitewise").get_asset_property_aggregates` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.get_asset_property_aggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
+[IoTSiteWise.Client.get_asset_property_aggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
 
 Arguments:
 
@@ -646,7 +646,7 @@ Type annotations for `boto3.client("iotsitewise").get_asset_property_value`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.get_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
+[IoTSiteWise.Client.get_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
 
 Arguments:
 
@@ -663,7 +663,7 @@ Type annotations for
 `boto3.client("iotsitewise").get_asset_property_value_history` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.get_asset_property_value_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
+[IoTSiteWise.Client.get_asset_property_value_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
 
 Arguments:
 
@@ -686,7 +686,7 @@ Type annotations for
 `boto3.client("iotsitewise").get_interpolated_asset_property_values` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.get_interpolated_asset_property_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
+[IoTSiteWise.Client.get_interpolated_asset_property_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
 
 Arguments:
 
@@ -711,7 +711,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_access_policies` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_access_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
+[IoTSiteWise.Client.list_access_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
 
 Arguments:
 
@@ -731,7 +731,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_asset_models` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_asset_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models)
+[IoTSiteWise.Client.list_asset_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models)
 
 Arguments:
 
@@ -747,7 +747,7 @@ Type annotations for `boto3.client("iotsitewise").list_asset_relationships`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_asset_relationships](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
+[IoTSiteWise.Client.list_asset_relationships](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
 
 Arguments:
 
@@ -765,7 +765,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_assets` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
+[IoTSiteWise.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
 
 Arguments:
 
@@ -782,7 +782,7 @@ Type annotations for `boto3.client("iotsitewise").list_associated_assets`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_associated_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
+[IoTSiteWise.Client.list_associated_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
 
 Arguments:
 
@@ -801,7 +801,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_dashboards` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
+[IoTSiteWise.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
 
 Arguments:
 
@@ -817,7 +817,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_gateways` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways)
+[IoTSiteWise.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways)
 
 Arguments:
 
@@ -832,7 +832,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_portals` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_portals](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals)
+[IoTSiteWise.Client.list_portals](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals)
 
 Arguments:
 
@@ -847,7 +847,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_project_assets` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_project_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
+[IoTSiteWise.Client.list_project_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
 
 Arguments:
 
@@ -863,7 +863,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").list_projects` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
+[IoTSiteWise.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
 
 Arguments:
 
@@ -880,7 +880,7 @@ Type annotations for `boto3.client("iotsitewise").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource)
+[IoTSiteWise.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -895,7 +895,7 @@ Type annotations for
 `boto3.client("iotsitewise").put_default_encryption_configuration` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.put_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration)
+[IoTSiteWise.Client.put_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration)
 
 Arguments:
 
@@ -911,7 +911,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").put_logging_options` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options)
+[IoTSiteWise.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options)
 
 Arguments:
 
@@ -925,7 +925,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").tag_resource` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource)
+[IoTSiteWise.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource)
 
 Arguments:
 
@@ -939,7 +939,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").untag_resource` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource)
+[IoTSiteWise.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource)
 
 Arguments:
 
@@ -953,7 +953,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").update_access_policy` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
+[IoTSiteWise.Client.update_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
 
 Arguments:
 
@@ -973,7 +973,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").update_asset` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
+[IoTSiteWise.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
 
 Arguments:
 
@@ -989,7 +989,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").update_asset_model` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
+[IoTSiteWise.Client.update_asset_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
 
 Arguments:
 
@@ -1013,7 +1013,7 @@ Type annotations for `boto3.client("iotsitewise").update_asset_property`
 method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_asset_property](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
+[IoTSiteWise.Client.update_asset_property](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
 
 Arguments:
 
@@ -1029,7 +1029,7 @@ Arguments:
 Type annotations for `boto3.client("iotsitewise").update_dashboard` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
+[IoTSiteWise.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
 
 Arguments:
 
@@ -1046,7 +1046,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotsitewise").update_gateway` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway)
+[IoTSiteWise.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway)
 
 Arguments:
 
@@ -1059,7 +1059,7 @@ Type annotations for
 `boto3.client("iotsitewise").update_gateway_capability_configuration` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
+[IoTSiteWise.Client.update_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
 
 Arguments:
 
@@ -1075,7 +1075,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").update_portal` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
+[IoTSiteWise.Client.update_portal](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
 
 Arguments:
 
@@ -1095,7 +1095,7 @@ Returns
 Type annotations for `boto3.client("iotsitewise").update_project` method.
 
 Boto3 documentation:
-[IoTSiteWise.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
+[IoTSiteWise.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
 
 Arguments:
 

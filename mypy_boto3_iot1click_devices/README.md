@@ -3,7 +3,7 @@
 > [Index](..) > IoT1ClickDevicesService
 
 Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
 [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 

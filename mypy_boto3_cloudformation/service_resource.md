@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFormation](.) > CloudFormationServiceResource
 
 Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation)
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
 [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
@@ -48,7 +48,7 @@ def get_cloudformation_resource() -> CloudFormationServiceResource:
 ```
 
 Boto3 documentation:
-[CloudFormation.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource)
+[CloudFormation.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource)
 
 ## Attributes
 
@@ -72,7 +72,7 @@ def get_collection() -> ServiceResourceStacksCollection:
 Provides access to [Stack](#stack) resource.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.stacks)
+[CloudFormation.ServiceResource.stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.stacks)
 
 ## Methods
 
@@ -81,7 +81,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("cloudformation").Event` method.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.Event](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
+[CloudFormation.ServiceResource.Event](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns [Event](#event).
 Type annotations for `boto3.resource("cloudformation").Stack` method.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
+[CloudFormation.ServiceResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Returns [Stack](#stack).
 Type annotations for `boto3.resource("cloudformation").StackResource` method.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.StackResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
+[CloudFormation.ServiceResource.StackResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.resource("cloudformation").StackResourceSummary`
 method.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.StackResourceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
+[CloudFormation.ServiceResource.StackResourceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns [StackResourceSummary](#stackresourcesummary).
 Type annotations for `boto3.resource("cloudformation").create_stack` method.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.create_stack)
+[CloudFormation.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.create_stack)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Type annotations for
 `boto3.resource("cloudformation").get_available_subresources` method.
 
 Boto3 documentation:
-[CloudFormation.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.get_available_subresources)
+[CloudFormation.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -185,7 +185,7 @@ def get_resource() -> Event:
 ```
 
 Boto3 documentation:
-[CloudFormation.Event](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
+[CloudFormation.Event](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
 
 ### Event attributes
 
@@ -210,7 +210,7 @@ Type annotations for
 `boto3.resource("cloudformation").get_available_subresources` method.
 
 Boto3 documentation:
-[CloudFormation.Event.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Event.get_available_subresources)
+[CloudFormation.Event.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Event.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -228,7 +228,7 @@ def get_resource() -> Stack:
 ```
 
 Boto3 documentation:
-[CloudFormation.Stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
+[CloudFormation.Stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
 
 ### Stack attributes
 
@@ -279,7 +279,7 @@ def get_collection() -> StackEventsCollection:
 Provides access to [Event](#event) resource.
 
 Boto3 documentation:
-[CloudFormation.Stack.StackEventsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.events)
+[CloudFormation.Stack.StackEventsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.events)
 
 #### Stack.resource_summaries
 
@@ -299,7 +299,7 @@ def get_collection() -> StackResourceSummariesCollection:
 Provides access to [StackResourceSummary](#stackresourcesummary) resource.
 
 Boto3 documentation:
-[CloudFormation.Stack.StackResourceSummariesCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.resource_summaries)
+[CloudFormation.Stack.StackResourceSummariesCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.resource_summaries)
 
 ### Stack methods
 
@@ -308,7 +308,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("cloudformation").Resource` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.Resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.Resource)
+[CloudFormation.Stack.Resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.Resource)
 
 Arguments:
 
@@ -321,7 +321,7 @@ Returns [StackResource](#stackresource).
 Type annotations for `boto3.resource("cloudformation").cancel_update` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.cancel_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.cancel_update)
+[CloudFormation.Stack.cancel_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.cancel_update)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Arguments:
 Type annotations for `boto3.resource("cloudformation").delete` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.delete)
+[CloudFormation.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.delete)
 
 Arguments:
 
@@ -346,7 +346,7 @@ Type annotations for
 `boto3.resource("cloudformation").get_available_subresources` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.get_available_subresources)
+[CloudFormation.Stack.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -355,21 +355,21 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("cloudformation").load` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.load)
+[CloudFormation.Stack.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.load)
 
 #### Stack.reload method
 
 Type annotations for `boto3.resource("cloudformation").reload` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.reload)
+[CloudFormation.Stack.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.reload)
 
 #### Stack.update method
 
 Type annotations for `boto3.resource("cloudformation").update` method.
 
 Boto3 documentation:
-[CloudFormation.Stack.update](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.Stack.update)
+[CloudFormation.Stack.update](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Stack.update)
 
 Arguments:
 
@@ -406,7 +406,7 @@ def get_resource() -> StackResource:
 ```
 
 Boto3 documentation:
-[CloudFormation.StackResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
+[CloudFormation.StackResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
 
 ### StackResource attributes
 
@@ -431,7 +431,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("cloudformation").Stack` method.
 
 Boto3 documentation:
-[CloudFormation.StackResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.StackResource.Stack)
+[CloudFormation.StackResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.StackResource.Stack)
 
 Returns [Stack](#stack).
 
@@ -441,7 +441,7 @@ Type annotations for
 `boto3.resource("cloudformation").get_available_subresources` method.
 
 Boto3 documentation:
-[CloudFormation.StackResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.StackResource.get_available_subresources)
+[CloudFormation.StackResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.StackResource.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -450,14 +450,14 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("cloudformation").load` method.
 
 Boto3 documentation:
-[CloudFormation.StackResource.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.StackResource.load)
+[CloudFormation.StackResource.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.StackResource.load)
 
 #### StackResource.reload method
 
 Type annotations for `boto3.resource("cloudformation").reload` method.
 
 Boto3 documentation:
-[CloudFormation.StackResource.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.StackResource.reload)
+[CloudFormation.StackResource.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.StackResource.reload)
 
 ## StackResourceSummary
 
@@ -474,7 +474,7 @@ def get_resource() -> StackResourceSummary:
 ```
 
 Boto3 documentation:
-[CloudFormation.StackResourceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
+[CloudFormation.StackResourceSummary](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
 
 ### StackResourceSummary attributes
 
@@ -496,7 +496,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("cloudformation").Resource` method.
 
 Boto3 documentation:
-[CloudFormation.StackResourceSummary.Resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.Resource)
+[CloudFormation.StackResourceSummary.Resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.Resource)
 
 Returns [StackResource](#stackresource).
 
@@ -506,6 +506,6 @@ Type annotations for
 `boto3.resource("cloudformation").get_available_subresources` method.
 
 Boto3 documentation:
-[CloudFormation.StackResourceSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.get_available_subresources)
+[CloudFormation.StackResourceSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.get_available_subresources)
 
 Returns `List`\[`str`\].

@@ -3,7 +3,7 @@
 > [Index](..) > MarketplaceCommerceAnalytics
 
 Auto-generated documentation for
-[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module
 [mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 

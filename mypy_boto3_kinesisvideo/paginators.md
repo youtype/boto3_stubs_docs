@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisVideo](.) > Paginators
 
 Auto-generated documentation for
-[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesisvideo.html#KinesisVideo)
+[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
 [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
@@ -26,7 +26,7 @@ def get_list_signaling_channels_paginator() -> ListSignalingChannelsPaginator:
 ```
 
 Boto3 documentation:
-[KinesisVideo.Paginator.ListSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListSignalingChannels)
+[KinesisVideo.Paginator.ListSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListSignalingChannels)
 
 Arguments for `ListSignalingChannelsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
 ```
 
 Boto3 documentation:
-[KinesisVideo.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListStreams)
+[KinesisVideo.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListStreams)
 
 Arguments for `ListStreamsPaginator.paginate` method:
 

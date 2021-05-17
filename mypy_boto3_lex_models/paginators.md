@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelBuildingService](.) > Paginators
 
 Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService)
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
 [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
@@ -34,7 +34,7 @@ def get_get_bot_aliases_paginator() -> GetBotAliasesPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBotAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotAliases)
+[LexModelBuildingService.Paginator.GetBotAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotAliases)
 
 Arguments for `GetBotAliasesPaginator.paginate` method:
 
@@ -61,7 +61,7 @@ def get_get_bot_channel_associations_paginator() -> GetBotChannelAssociationsPag
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBotChannelAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotChannelAssociations)
+[LexModelBuildingService.Paginator.GetBotChannelAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotChannelAssociations)
 
 Arguments for `GetBotChannelAssociationsPaginator.paginate` method:
 
@@ -89,7 +89,7 @@ def get_get_bot_versions_paginator() -> GetBotVersionsPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBotVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotVersions)
+[LexModelBuildingService.Paginator.GetBotVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotVersions)
 
 Arguments for `GetBotVersionsPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_get_bots_paginator() -> GetBotsPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBots](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBots)
+[LexModelBuildingService.Paginator.GetBots](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBots)
 
 Arguments for `GetBotsPaginator.paginate` method:
 
@@ -140,7 +140,7 @@ def get_get_builtin_intents_paginator() -> GetBuiltinIntentsPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBuiltinIntents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinIntents)
+[LexModelBuildingService.Paginator.GetBuiltinIntents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinIntents)
 
 Arguments for `GetBuiltinIntentsPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_get_builtin_slot_types_paginator() -> GetBuiltinSlotTypesPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBuiltinSlotTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinSlotTypes)
+[LexModelBuildingService.Paginator.GetBuiltinSlotTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinSlotTypes)
 
 Arguments for `GetBuiltinSlotTypesPaginator.paginate` method:
 
@@ -194,7 +194,7 @@ def get_get_intent_versions_paginator() -> GetIntentVersionsPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetIntentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntentVersions)
+[LexModelBuildingService.Paginator.GetIntentVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntentVersions)
 
 Arguments for `GetIntentVersionsPaginator.paginate` method:
 
@@ -219,7 +219,7 @@ def get_get_intents_paginator() -> GetIntentsPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetIntents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntents)
+[LexModelBuildingService.Paginator.GetIntents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntents)
 
 Arguments for `GetIntentsPaginator.paginate` method:
 
@@ -245,7 +245,7 @@ def get_get_slot_type_versions_paginator() -> GetSlotTypeVersionsPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetSlotTypeVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypeVersions)
+[LexModelBuildingService.Paginator.GetSlotTypeVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypeVersions)
 
 Arguments for `GetSlotTypeVersionsPaginator.paginate` method:
 
@@ -271,7 +271,7 @@ def get_get_slot_types_paginator() -> GetSlotTypesPaginator:
 ```
 
 Boto3 documentation:
-[LexModelBuildingService.Paginator.GetSlotTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypes)
+[LexModelBuildingService.Paginator.GetSlotTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypes)
 
 Arguments for `GetSlotTypesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > IoTDeviceAdvisor
 
 Auto-generated documentation for
-[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
 [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
@@ -41,8 +41,8 @@ from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 - [list_suite_definitions](./client.md#list_suite_definitions)
 - [list_suite_runs](./client.md#list_suite_runs)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_test_cases](./client.md#list_test_cases)
 - [start_suite_run](./client.md#start_suite_run)
+- [stop_suite_run](./client.md#stop_suite_run)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_suite_definition](./client.md#update_suite_definition)
@@ -90,15 +90,11 @@ from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionResponseT
 - [ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef)
 - [ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ListTestCasesResponseTypeDef](./type_defs.md#listtestcasesresponsetypedef)
 - [StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef)
 - [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
 - [SuiteDefinitionInformationTypeDef](./type_defs.md#suitedefinitioninformationtypedef)
 - [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
 - [SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef)
-- [TestCaseCategoryTypeDef](./type_defs.md#testcasecategorytypedef)
-- [TestCaseDefinitionTypeDef](./type_defs.md#testcasedefinitiontypedef)
 - [TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef)
-- [TestCaseTypeDef](./type_defs.md#testcasetypedef)
 - [TestResultTypeDef](./type_defs.md#testresulttypedef)
 - [UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef)

@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutMetrics](.) > LookoutMetricsClient
 
 Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics)
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
 [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
@@ -53,7 +53,7 @@ def get_lookoutmetrics_client() -> LookoutMetricsClient:
 ```
 
 Boto3 documentation:
-[LookoutMetrics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
+[LookoutMetrics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Type annotations for `boto3.client("lookoutmetrics").activate_anomaly_detector`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.activate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
+[LookoutMetrics.Client.activate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Type annotations for
 `boto3.client("lookoutmetrics").back_test_anomaly_detector` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.back_test_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
+[LookoutMetrics.Client.back_test_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lookoutmetrics").can_paginate` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate)
+[LookoutMetrics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lookoutmetrics").create_alert` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.create_alert](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
+[LookoutMetrics.Client.create_alert](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("lookoutmetrics").create_anomaly_detector`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.create_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
+[LookoutMetrics.Client.create_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").create_metric_set` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.create_metric_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
+[LookoutMetrics.Client.create_metric_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").delete_alert` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.delete_alert](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
+[LookoutMetrics.Client.delete_alert](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("lookoutmetrics").delete_anomaly_detector`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
+[LookoutMetrics.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lookoutmetrics").describe_alert` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.describe_alert](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
+[LookoutMetrics.Client.describe_alert](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Type annotations for
 `boto3.client("lookoutmetrics").describe_anomaly_detection_executions` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.describe_anomaly_detection_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
+[LookoutMetrics.Client.describe_anomaly_detection_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detector`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.describe_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
+[LookoutMetrics.Client.describe_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("lookoutmetrics").describe_metric_set`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.describe_metric_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
+[LookoutMetrics.Client.describe_metric_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("lookoutmetrics").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url)
+[LookoutMetrics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Returns `str`.
 Type annotations for `boto3.client("lookoutmetrics").get_anomaly_group` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.get_anomaly_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
+[LookoutMetrics.Client.get_anomaly_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").get_feedback` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.get_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
+[LookoutMetrics.Client.get_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").get_sample_data` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.get_sample_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
+[LookoutMetrics.Client.get_sample_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").list_alerts` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
+[LookoutMetrics.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("lookoutmetrics").list_anomaly_detectors`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
+[LookoutMetrics.Client.list_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Type annotations for
 `boto3.client("lookoutmetrics").list_anomaly_group_summaries` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_group_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
+[LookoutMetrics.Client.list_anomaly_group_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Type annotations for
 `boto3.client("lookoutmetrics").list_anomaly_group_time_series` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_group_time_series](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
+[LookoutMetrics.Client.list_anomaly_group_time_series](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").list_metric_sets` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.list_metric_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
+[LookoutMetrics.Client.list_metric_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("lookoutmetrics").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
+[LookoutMetrics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").put_feedback` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
+[LookoutMetrics.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lookoutmetrics").tag_resource` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
+[LookoutMetrics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
 
 Arguments:
 
@@ -477,7 +477,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lookoutmetrics").untag_resource` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
+[LookoutMetrics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
 
 Arguments:
 
@@ -492,7 +492,7 @@ Type annotations for `boto3.client("lookoutmetrics").update_anomaly_detector`
 method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.update_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
+[LookoutMetrics.Client.update_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns
 Type annotations for `boto3.client("lookoutmetrics").update_metric_set` method.
 
 Boto3 documentation:
-[LookoutMetrics.Client.update_metric_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
+[LookoutMetrics.Client.update_metric_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
 
 Arguments:
 

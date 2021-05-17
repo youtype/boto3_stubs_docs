@@ -3,7 +3,7 @@
 > [Index](..) > [SMSVoice](.) > SMSVoiceClient
 
 Auto-generated documentation for
-[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice)
+[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice)
 type annotations stubs module
 [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
@@ -36,7 +36,7 @@ def get_sms-voice_client() -> SMSVoiceClient:
 ```
 
 Boto3 documentation:
-[SMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client)
+[SMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client)
 
 ## Exceptions
 
@@ -67,7 +67,7 @@ Exceptions:
 Type annotations for `boto3.client("sms-voice").can_paginate` method.
 
 Boto3 documentation:
-[SMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.can_paginate)
+[SMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Type annotations for `boto3.client("sms-voice").create_configuration_set`
 method.
 
 Boto3 documentation:
-[SMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set)
+[SMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set)
 
 Arguments:
 
@@ -95,7 +95,7 @@ Type annotations for
 `boto3.client("sms-voice").create_configuration_set_event_destination` method.
 
 Boto3 documentation:
-[SMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set_event_destination)
+[SMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set_event_destination)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Type annotations for `boto3.client("sms-voice").delete_configuration_set`
 method.
 
 Boto3 documentation:
-[SMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set)
+[SMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for
 `boto3.client("sms-voice").delete_configuration_set_event_destination` method.
 
 Boto3 documentation:
-[SMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set_event_destination)
+[SMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set_event_destination)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms-voice").generate_presigned_url` method.
 
 Boto3 documentation:
-[SMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.generate_presigned_url)
+[SMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.generate_presigned_url)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Type annotations for
 `boto3.client("sms-voice").get_configuration_set_event_destinations` method.
 
 Boto3 documentation:
-[SMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.get_configuration_set_event_destinations)
+[SMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.get_configuration_set_event_destinations)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("sms-voice").list_configuration_sets`
 method.
 
 Boto3 documentation:
-[SMSVoice.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.list_configuration_sets)
+[SMSVoice.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.list_configuration_sets)
 
 Arguments:
 
@@ -187,7 +187,7 @@ Returns
 Type annotations for `boto3.client("sms-voice").send_voice_message` method.
 
 Boto3 documentation:
-[SMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.send_voice_message)
+[SMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.send_voice_message)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Type annotations for
 `boto3.client("sms-voice").update_configuration_set_event_destination` method.
 
 Boto3 documentation:
-[SMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/sms-voice.html#SMSVoice.Client.update_configuration_set_event_destination)
+[SMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sms-voice.html#SMSVoice.Client.update_configuration_set_event_destination)
 
 Arguments:
 

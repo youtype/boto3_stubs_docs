@@ -3,26 +3,38 @@
 > [Index](..) > [MediaConnect](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [Typed dictionaries for boto3 MediaConnect module](#typed-dictionaries-for-boto3-mediaconnect-module)
+  - [AddFlowMediaStreamsResponseTypeDef](#addflowmediastreamsresponsetypedef)
   - [AddFlowOutputsResponseTypeDef](#addflowoutputsresponsetypedef)
   - [AddFlowSourcesResponseTypeDef](#addflowsourcesresponsetypedef)
   - [AddFlowVpcInterfacesResponseTypeDef](#addflowvpcinterfacesresponsetypedef)
+  - [AddMediaStreamRequestTypeDef](#addmediastreamrequesttypedef)
   - [AddOutputRequestTypeDef](#addoutputrequesttypedef)
   - [CreateFlowResponseTypeDef](#createflowresponsetypedef)
   - [DeleteFlowResponseTypeDef](#deleteflowresponsetypedef)
   - [DescribeFlowResponseTypeDef](#describeflowresponsetypedef)
   - [DescribeOfferingResponseTypeDef](#describeofferingresponsetypedef)
   - [DescribeReservationResponseTypeDef](#describereservationresponsetypedef)
+  - [DestinationConfigurationRequestTypeDef](#destinationconfigurationrequesttypedef)
+  - [DestinationConfigurationTypeDef](#destinationconfigurationtypedef)
+  - [EncodingParametersRequestTypeDef](#encodingparametersrequesttypedef)
+  - [EncodingParametersTypeDef](#encodingparameterstypedef)
   - [EncryptionTypeDef](#encryptiontypedef)
   - [EntitlementTypeDef](#entitlementtypedef)
   - [FailoverConfigTypeDef](#failoverconfigtypedef)
   - [FlowTypeDef](#flowtypedef)
+  - [FmtpRequestTypeDef](#fmtprequesttypedef)
+  - [FmtpTypeDef](#fmtptypedef)
   - [GrantEntitlementRequestTypeDef](#grantentitlementrequesttypedef)
   - [GrantFlowEntitlementsResponseTypeDef](#grantflowentitlementsresponsetypedef)
+  - [InputConfigurationRequestTypeDef](#inputconfigurationrequesttypedef)
+  - [InputConfigurationTypeDef](#inputconfigurationtypedef)
+  - [InterfaceRequestTypeDef](#interfacerequesttypedef)
+  - [InterfaceTypeDef](#interfacetypedef)
   - [ListEntitlementsResponseTypeDef](#listentitlementsresponsetypedef)
   - [ListFlowsResponseTypeDef](#listflowsresponsetypedef)
   - [ListOfferingsResponseTypeDef](#listofferingsresponsetypedef)
@@ -30,11 +42,19 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListedEntitlementTypeDef](#listedentitlementtypedef)
   - [ListedFlowTypeDef](#listedflowtypedef)
+  - [MediaStreamAttributesRequestTypeDef](#mediastreamattributesrequesttypedef)
+  - [MediaStreamAttributesTypeDef](#mediastreamattributestypedef)
+  - [MediaStreamOutputConfigurationRequestTypeDef](#mediastreamoutputconfigurationrequesttypedef)
+  - [MediaStreamOutputConfigurationTypeDef](#mediastreamoutputconfigurationtypedef)
+  - [MediaStreamSourceConfigurationRequestTypeDef](#mediastreamsourceconfigurationrequesttypedef)
+  - [MediaStreamSourceConfigurationTypeDef](#mediastreamsourceconfigurationtypedef)
+  - [MediaStreamTypeDef](#mediastreamtypedef)
   - [MessagesTypeDef](#messagestypedef)
   - [OfferingTypeDef](#offeringtypedef)
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PurchaseOfferingResponseTypeDef](#purchaseofferingresponsetypedef)
+  - [RemoveFlowMediaStreamResponseTypeDef](#removeflowmediastreamresponsetypedef)
   - [RemoveFlowOutputResponseTypeDef](#removeflowoutputresponsetypedef)
   - [RemoveFlowSourceResponseTypeDef](#removeflowsourceresponsetypedef)
   - [RemoveFlowVpcInterfaceResponseTypeDef](#removeflowvpcinterfaceresponsetypedef)
@@ -50,6 +70,7 @@ type annotations stubs module
   - [UpdateEncryptionTypeDef](#updateencryptiontypedef)
   - [UpdateFailoverConfigTypeDef](#updatefailoverconfigtypedef)
   - [UpdateFlowEntitlementResponseTypeDef](#updateflowentitlementresponsetypedef)
+  - [UpdateFlowMediaStreamResponseTypeDef](#updateflowmediastreamresponsetypedef)
   - [UpdateFlowOutputResponseTypeDef](#updateflowoutputresponsetypedef)
   - [UpdateFlowResponseTypeDef](#updateflowresponsetypedef)
   - [UpdateFlowSourceResponseTypeDef](#updateflowsourceresponsetypedef)
@@ -57,6 +78,18 @@ type annotations stubs module
   - [VpcInterfaceRequestTypeDef](#vpcinterfacerequesttypedef)
   - [VpcInterfaceTypeDef](#vpcinterfacetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
+
+## AddFlowMediaStreamsResponseTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import AddFlowMediaStreamsResponseTypeDef
+```
+
+Optional fields:
+
+- `FlowArn`: `str`
+- `MediaStreams`:
+  `List`\[[MediaStreamTypeDef](./type_defs.md#mediastreamtypedef)\]
 
 ## AddFlowOutputsResponseTypeDef
 
@@ -92,6 +125,26 @@ Optional fields:
 - `VpcInterfaces`:
   `List`\[[VpcInterfaceTypeDef](./type_defs.md#vpcinterfacetypedef)\]
 
+## AddMediaStreamRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import AddMediaStreamRequestTypeDef
+```
+
+Required fields:
+
+- `MediaStreamId`: `int`
+- `MediaStreamName`: `str`
+- `MediaStreamType`: [MediaStreamTypeType](./literals.md#mediastreamtypetype)
+
+Optional fields:
+
+- `Attributes`:
+  [MediaStreamAttributesRequestTypeDef](./type_defs.md#mediastreamattributesrequesttypedef)
+- `ClockRate`: `int`
+- `Description`: `str`
+- `VideoFormat`: `str`
+
 ## AddOutputRequestTypeDef
 
 ```python
@@ -109,6 +162,8 @@ Optional fields:
 - `Destination`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `MaxLatency`: `int`
+- `MediaStreamOutputConfigurations`:
+  `List`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Name`: `str`
 - `Port`: `int`
@@ -169,6 +224,54 @@ from mypy_boto3_mediaconnect.type_defs import DescribeReservationResponseTypeDef
 Optional fields:
 
 - `Reservation`: [ReservationTypeDef](./type_defs.md#reservationtypedef)
+
+## DestinationConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import DestinationConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `DestinationIp`: `str`
+- `DestinationPort`: `int`
+- `Interface`:
+  [InterfaceRequestTypeDef](./type_defs.md#interfacerequesttypedef)
+
+## DestinationConfigurationTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import DestinationConfigurationTypeDef
+```
+
+Required fields:
+
+- `DestinationIp`: `str`
+- `DestinationPort`: `int`
+- `Interface`: [InterfaceTypeDef](./type_defs.md#interfacetypedef)
+- `OutboundIp`: `str`
+
+## EncodingParametersRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import EncodingParametersRequestTypeDef
+```
+
+Required fields:
+
+- `CompressionFactor`: `float`
+- `EncoderProfile`: [EncoderProfileType](./literals.md#encoderprofiletype)
+
+## EncodingParametersTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import EncodingParametersTypeDef
+```
+
+Required fields:
+
+- `CompressionFactor`: `float`
+- `EncoderProfile`: [EncoderProfileType](./literals.md#encoderprofiletype)
 
 ## EncryptionTypeDef
 
@@ -243,11 +346,45 @@ Optional fields:
 
 - `Description`: `str`
 - `EgressIp`: `str`
+- `MediaStreams`:
+  `List`\[[MediaStreamTypeDef](./type_defs.md#mediastreamtypedef)\]
 - `SourceFailoverConfig`:
   [FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef)
 - `Sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
 - `VpcInterfaces`:
   `List`\[[VpcInterfaceTypeDef](./type_defs.md#vpcinterfacetypedef)\]
+
+## FmtpRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import FmtpRequestTypeDef
+```
+
+Optional fields:
+
+- `ChannelOrder`: `str`
+- `Colorimetry`: [ColorimetryType](./literals.md#colorimetrytype)
+- `ExactFramerate`: `str`
+- `Par`: `str`
+- `Range`: [RangeType](./literals.md#rangetype)
+- `ScanMode`: [ScanModeType](./literals.md#scanmodetype)
+- `Tcs`: [TcsType](./literals.md#tcstype)
+
+## FmtpTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import FmtpTypeDef
+```
+
+Optional fields:
+
+- `ChannelOrder`: `str`
+- `Colorimetry`: [ColorimetryType](./literals.md#colorimetrytype)
+- `ExactFramerate`: `str`
+- `Par`: `str`
+- `Range`: [RangeType](./literals.md#rangetype)
+- `ScanMode`: [ScanModeType](./literals.md#scanmodetype)
+- `Tcs`: [TcsType](./literals.md#tcstype)
 
 ## GrantEntitlementRequestTypeDef
 
@@ -279,6 +416,50 @@ Optional fields:
 - `Entitlements`:
   `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `FlowArn`: `str`
+
+## InputConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import InputConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `InputPort`: `int`
+- `Interface`:
+  [InterfaceRequestTypeDef](./type_defs.md#interfacerequesttypedef)
+
+## InputConfigurationTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import InputConfigurationTypeDef
+```
+
+Required fields:
+
+- `InputIp`: `str`
+- `InputPort`: `int`
+- `Interface`: [InterfaceTypeDef](./type_defs.md#interfacetypedef)
+
+## InterfaceRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import InterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## InterfaceTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import InterfaceTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 ## ListEntitlementsResponseTypeDef
 
@@ -366,6 +547,120 @@ Required fields:
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Status`: [StatusType](./literals.md#statustype)
 
+## MediaStreamAttributesRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamAttributesRequestTypeDef
+```
+
+Optional fields:
+
+- `Fmtp`: [FmtpRequestTypeDef](./type_defs.md#fmtprequesttypedef)
+- `Lang`: `str`
+
+## MediaStreamAttributesTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamAttributesTypeDef
+```
+
+Required fields:
+
+- `Fmtp`: [FmtpTypeDef](./type_defs.md#fmtptypedef)
+
+Optional fields:
+
+- `Lang`: `str`
+
+## MediaStreamOutputConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamOutputConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `EncodingName`: [EncodingNameType](./literals.md#encodingnametype)
+- `MediaStreamName`: `str`
+
+Optional fields:
+
+- `DestinationConfigurations`:
+  `List`\[[DestinationConfigurationRequestTypeDef](./type_defs.md#destinationconfigurationrequesttypedef)\]
+- `EncodingParameters`:
+  [EncodingParametersRequestTypeDef](./type_defs.md#encodingparametersrequesttypedef)
+
+## MediaStreamOutputConfigurationTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamOutputConfigurationTypeDef
+```
+
+Required fields:
+
+- `EncodingName`: [EncodingNameType](./literals.md#encodingnametype)
+- `MediaStreamName`: `str`
+
+Optional fields:
+
+- `DestinationConfigurations`:
+  `List`\[[DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)\]
+- `EncodingParameters`:
+  [EncodingParametersTypeDef](./type_defs.md#encodingparameterstypedef)
+
+## MediaStreamSourceConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamSourceConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `EncodingName`: [EncodingNameType](./literals.md#encodingnametype)
+- `MediaStreamName`: `str`
+
+Optional fields:
+
+- `InputConfigurations`:
+  `List`\[[InputConfigurationRequestTypeDef](./type_defs.md#inputconfigurationrequesttypedef)\]
+
+## MediaStreamSourceConfigurationTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamSourceConfigurationTypeDef
+```
+
+Required fields:
+
+- `EncodingName`: [EncodingNameType](./literals.md#encodingnametype)
+- `MediaStreamName`: `str`
+
+Optional fields:
+
+- `InputConfigurations`:
+  `List`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
+
+## MediaStreamTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MediaStreamTypeDef
+```
+
+Required fields:
+
+- `Fmt`: `int`
+- `MediaStreamId`: `int`
+- `MediaStreamName`: `str`
+- `MediaStreamType`: [MediaStreamTypeType](./literals.md#mediastreamtypetype)
+
+Optional fields:
+
+- `Attributes`:
+  [MediaStreamAttributesTypeDef](./type_defs.md#mediastreamattributestypedef)
+- `ClockRate`: `int`
+- `Description`: `str`
+- `VideoFormat`: `str`
+
 ## MessagesTypeDef
 
 ```python
@@ -411,6 +706,8 @@ Required fields:
 - `EntitlementArn`: `str`
 - `ListenerAddress`: `str`
 - `MediaLiveInputArn`: `str`
+- `MediaStreamOutputConfigurations`:
+  `List`\[[MediaStreamOutputConfigurationTypeDef](./type_defs.md#mediastreamoutputconfigurationtypedef)\]
 - `Name`: `str`
 - `OutputArn`: `str`
 - `Port`: `int`
@@ -441,6 +738,17 @@ from mypy_boto3_mediaconnect.type_defs import PurchaseOfferingResponseTypeDef
 Optional fields:
 
 - `Reservation`: [ReservationTypeDef](./type_defs.md#reservationtypedef)
+
+## RemoveFlowMediaStreamResponseTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import RemoveFlowMediaStreamResponseTypeDef
+```
+
+Optional fields:
+
+- `FlowArn`: `str`
+- `MediaStreamName`: `str`
 
 ## RemoveFlowOutputResponseTypeDef
 
@@ -556,6 +864,9 @@ Optional fields:
 - `IngestPort`: `int`
 - `MaxBitrate`: `int`
 - `MaxLatency`: `int`
+- `MaxSyncBuffer`: `int`
+- `MediaStreamSourceConfigurations`:
+  `List`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Name`: `str`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
@@ -582,6 +893,8 @@ Optional fields:
 - `EntitlementArn`: `str`
 - `IngestIp`: `str`
 - `IngestPort`: `int`
+- `MediaStreamSourceConfigurations`:
+  `List`\[[MediaStreamSourceConfigurationTypeDef](./type_defs.md#mediastreamsourceconfigurationtypedef)\]
 - `Transport`: [TransportTypeDef](./type_defs.md#transporttypedef)
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
@@ -623,6 +936,7 @@ Optional fields:
 - `CidrAllowList`: `List`\[`str`\]
 - `MaxBitrate`: `int`
 - `MaxLatency`: `int`
+- `MaxSyncBuffer`: `int`
 - `MinLatency`: `int`
 - `RemoteId`: `str`
 - `SmoothingLatency`: `int`
@@ -667,6 +981,17 @@ Optional fields:
 
 - `Entitlement`: [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - `FlowArn`: `str`
+
+## UpdateFlowMediaStreamResponseTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import UpdateFlowMediaStreamResponseTypeDef
+```
+
+Optional fields:
+
+- `FlowArn`: `str`
+- `MediaStream`: [MediaStreamTypeDef](./type_defs.md#mediastreamtypedef)
 
 ## UpdateFlowOutputResponseTypeDef
 
@@ -723,6 +1048,11 @@ Required fields:
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SubnetId`: `str`
 
+Optional fields:
+
+- `NetworkInterfaceType`:
+  [NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype)
+
 ## VpcInterfaceTypeDef
 
 ```python
@@ -733,6 +1063,8 @@ Required fields:
 
 - `Name`: `str`
 - `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceType`:
+  [NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype)
 - `RoleArn`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SubnetId`: `str`

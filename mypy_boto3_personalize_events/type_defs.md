@@ -3,7 +3,7 @@
 > [Index](..) > [PersonalizeEvents](.) > Typed dictionaries
 
 Auto-generated documentation for
-[PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/personalize-events.html#PersonalizeEvents)
+[PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module
 [mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
 

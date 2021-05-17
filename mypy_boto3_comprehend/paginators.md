@@ -3,7 +3,7 @@
 > [Index](..) > [Comprehend](.) > Paginators
 
 Auto-generated documentation for
-[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend)
+[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
 [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
@@ -32,7 +32,7 @@ def get_list_document_classification_jobs_paginator() -> ListDocumentClassificat
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListDocumentClassificationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassificationJobs)
+[Comprehend.Paginator.ListDocumentClassificationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassificationJobs)
 
 Arguments for `ListDocumentClassificationJobsPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_list_document_classifiers_paginator() -> ListDocumentClassifiersPaginato
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListDocumentClassifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassifiers)
+[Comprehend.Paginator.ListDocumentClassifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassifiers)
 
 Arguments for `ListDocumentClassifiersPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_list_dominant_language_detection_jobs_paginator() -> ListDominantLanguag
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListDominantLanguageDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListDominantLanguageDetectionJobs)
+[Comprehend.Paginator.ListDominantLanguageDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListDominantLanguageDetectionJobs)
 
 Arguments for `ListDominantLanguageDetectionJobsPaginator.paginate` method:
 
@@ -113,7 +113,7 @@ def get_list_entities_detection_jobs_paginator() -> ListEntitiesDetectionJobsPag
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListEntitiesDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListEntitiesDetectionJobs)
+[Comprehend.Paginator.ListEntitiesDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListEntitiesDetectionJobs)
 
 Arguments for `ListEntitiesDetectionJobsPaginator.paginate` method:
 
@@ -140,7 +140,7 @@ def get_list_entity_recognizers_paginator() -> ListEntityRecognizersPaginator:
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListEntityRecognizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListEntityRecognizers)
+[Comprehend.Paginator.ListEntityRecognizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListEntityRecognizers)
 
 Arguments for `ListEntityRecognizersPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_list_key_phrases_detection_jobs_paginator() -> ListKeyPhrasesDetectionJo
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListKeyPhrasesDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListKeyPhrasesDetectionJobs)
+[Comprehend.Paginator.ListKeyPhrasesDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListKeyPhrasesDetectionJobs)
 
 Arguments for `ListKeyPhrasesDetectionJobsPaginator.paginate` method:
 
@@ -194,7 +194,7 @@ def get_list_sentiment_detection_jobs_paginator() -> ListSentimentDetectionJobsP
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListSentimentDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListSentimentDetectionJobs)
+[Comprehend.Paginator.ListSentimentDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListSentimentDetectionJobs)
 
 Arguments for `ListSentimentDetectionJobsPaginator.paginate` method:
 
@@ -221,7 +221,7 @@ def get_list_topics_detection_jobs_paginator() -> ListTopicsDetectionJobsPaginat
 ```
 
 Boto3 documentation:
-[Comprehend.Paginator.ListTopicsDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/comprehend.html#Comprehend.Paginator.ListTopicsDetectionJobs)
+[Comprehend.Paginator.ListTopicsDetectionJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/comprehend.html#Comprehend.Paginator.ListTopicsDetectionJobs)
 
 Arguments for `ListTopicsDetectionJobsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Glacier](.) > GlacierServiceResource
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
@@ -57,7 +57,7 @@ def get_glacier_resource() -> GlacierServiceResource:
 ```
 
 Boto3 documentation:
-[Glacier.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource)
+[Glacier.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource)
 
 ## Attributes
 
@@ -81,7 +81,7 @@ def get_collection() -> ServiceResourceVaultsCollection:
 Provides access to [Vault](#vault) resource.
 
 Boto3 documentation:
-[Glacier.ServiceResource.vaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.vaults)
+[Glacier.ServiceResource.vaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.vaults)
 
 ## Methods
 
@@ -90,7 +90,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Account` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.Account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Account)
+[Glacier.ServiceResource.Account](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Account)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Returns [Account](#account).
 Type annotations for `boto3.resource("glacier").Archive` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.Archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Archive)
+[Glacier.ServiceResource.Archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Archive)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Returns [Archive](#archive).
 Type annotations for `boto3.resource("glacier").Job` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.Job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Job)
+[Glacier.ServiceResource.Job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Job)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Returns [Job](#job).
 Type annotations for `boto3.resource("glacier").MultipartUpload` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
+[Glacier.ServiceResource.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns [MultipartUpload](#multipartupload).
 Type annotations for `boto3.resource("glacier").Notification` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.Notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Notification)
+[Glacier.ServiceResource.Notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Notification)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns [Notification](#notification).
 Type annotations for `boto3.resource("glacier").Vault` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Vault)
+[Glacier.ServiceResource.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Vault)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns [Vault](#vault).
 Type annotations for `boto3.resource("glacier").create_vault` method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.create_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.create_vault)
+[Glacier.ServiceResource.create_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.create_vault)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.get_available_subresources)
+[Glacier.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -209,7 +209,7 @@ def get_resource() -> Account:
 ```
 
 Boto3 documentation:
-[Glacier.Account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Account)
+[Glacier.Account](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Account)
 
 ### Account attributes
 
@@ -236,7 +236,7 @@ def get_collection() -> AccountVaultsCollection:
 Provides access to [Vault](#vault) resource.
 
 Boto3 documentation:
-[Glacier.Account.AccountVaultsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Account.vaults)
+[Glacier.Account.AccountVaultsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Account.vaults)
 
 ### Account methods
 
@@ -245,7 +245,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Vault` method.
 
 Boto3 documentation:
-[Glacier.Account.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Account.Vault)
+[Glacier.Account.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Account.Vault)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns [Vault](#vault).
 Type annotations for `boto3.resource("glacier").create_vault` method.
 
 Boto3 documentation:
-[Glacier.Account.create_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Account.create_vault)
+[Glacier.Account.create_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Account.create_vault)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.Account.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Account.get_available_subresources)
+[Glacier.Account.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Account.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -290,7 +290,7 @@ def get_resource() -> Archive:
 ```
 
 Boto3 documentation:
-[Glacier.Archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Archive)
+[Glacier.Archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Archive)
 
 ### Archive attributes
 
@@ -305,7 +305,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Vault` method.
 
 Boto3 documentation:
-[Glacier.Archive.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Archive.Vault)
+[Glacier.Archive.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Archive.Vault)
 
 Returns [Vault](#vault).
 
@@ -314,7 +314,7 @@ Returns [Vault](#vault).
 Type annotations for `boto3.resource("glacier").delete` method.
 
 Boto3 documentation:
-[Glacier.Archive.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Archive.delete)
+[Glacier.Archive.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Archive.delete)
 
 #### Archive.get_available_subresources method
 
@@ -322,7 +322,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.Archive.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Archive.get_available_subresources)
+[Glacier.Archive.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Archive.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -332,7 +332,7 @@ Type annotations for `boto3.resource("glacier").initiate_archive_retrieval`
 method.
 
 Boto3 documentation:
-[Glacier.Archive.initiate_archive_retrieval](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Archive.initiate_archive_retrieval)
+[Glacier.Archive.initiate_archive_retrieval](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Archive.initiate_archive_retrieval)
 
 Arguments:
 
@@ -354,7 +354,7 @@ def get_resource() -> Job:
 ```
 
 Boto3 documentation:
-[Glacier.Job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Job)
+[Glacier.Job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Job)
 
 ### Job attributes
 
@@ -390,7 +390,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Vault` method.
 
 Boto3 documentation:
-[Glacier.Job.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Job.Vault)
+[Glacier.Job.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Job.Vault)
 
 Returns [Vault](#vault).
 
@@ -400,7 +400,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.Job.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Job.get_available_subresources)
+[Glacier.Job.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Job.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -409,7 +409,7 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("glacier").get_output` method.
 
 Boto3 documentation:
-[Glacier.Job.get_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Job.get_output)
+[Glacier.Job.get_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Job.get_output)
 
 Arguments:
 
@@ -422,14 +422,14 @@ Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 Type annotations for `boto3.resource("glacier").load` method.
 
 Boto3 documentation:
-[Glacier.Job.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Job.load)
+[Glacier.Job.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Job.load)
 
 #### Job.reload method
 
 Type annotations for `boto3.resource("glacier").reload` method.
 
 Boto3 documentation:
-[Glacier.Job.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Job.reload)
+[Glacier.Job.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Job.reload)
 
 ## MultipartUpload
 
@@ -445,7 +445,7 @@ def get_resource() -> MultipartUpload:
 ```
 
 Boto3 documentation:
-[Glacier.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
+[Glacier.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
 
 ### MultipartUpload attributes
 
@@ -465,7 +465,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Vault` method.
 
 Boto3 documentation:
-[Glacier.MultipartUpload.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.MultipartUpload.Vault)
+[Glacier.MultipartUpload.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.MultipartUpload.Vault)
 
 Returns [Vault](#vault).
 
@@ -474,14 +474,14 @@ Returns [Vault](#vault).
 Type annotations for `boto3.resource("glacier").abort` method.
 
 Boto3 documentation:
-[Glacier.MultipartUpload.abort](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.MultipartUpload.abort)
+[Glacier.MultipartUpload.abort](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.MultipartUpload.abort)
 
 #### MultipartUpload.complete method
 
 Type annotations for `boto3.resource("glacier").complete` method.
 
 Boto3 documentation:
-[Glacier.MultipartUpload.complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.MultipartUpload.complete)
+[Glacier.MultipartUpload.complete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.MultipartUpload.complete)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.MultipartUpload.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.MultipartUpload.get_available_subresources)
+[Glacier.MultipartUpload.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.MultipartUpload.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -506,7 +506,7 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("glacier").parts` method.
 
 Boto3 documentation:
-[Glacier.MultipartUpload.parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.MultipartUpload.parts)
+[Glacier.MultipartUpload.parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.MultipartUpload.parts)
 
 Arguments:
 
@@ -520,7 +520,7 @@ Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 Type annotations for `boto3.resource("glacier").upload_part` method.
 
 Boto3 documentation:
-[Glacier.MultipartUpload.upload_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.MultipartUpload.upload_part)
+[Glacier.MultipartUpload.upload_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.MultipartUpload.upload_part)
 
 Arguments:
 
@@ -545,7 +545,7 @@ def get_resource() -> Notification:
 ```
 
 Boto3 documentation:
-[Glacier.Notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Notification)
+[Glacier.Notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Notification)
 
 ### Notification attributes
 
@@ -561,7 +561,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Vault` method.
 
 Boto3 documentation:
-[Glacier.Notification.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Notification.Vault)
+[Glacier.Notification.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Notification.Vault)
 
 Returns [Vault](#vault).
 
@@ -570,7 +570,7 @@ Returns [Vault](#vault).
 Type annotations for `boto3.resource("glacier").delete` method.
 
 Boto3 documentation:
-[Glacier.Notification.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Notification.delete)
+[Glacier.Notification.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Notification.delete)
 
 #### Notification.get_available_subresources method
 
@@ -578,7 +578,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.Notification.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Notification.get_available_subresources)
+[Glacier.Notification.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Notification.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -587,21 +587,21 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("glacier").load` method.
 
 Boto3 documentation:
-[Glacier.Notification.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Notification.load)
+[Glacier.Notification.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Notification.load)
 
 #### Notification.reload method
 
 Type annotations for `boto3.resource("glacier").reload` method.
 
 Boto3 documentation:
-[Glacier.Notification.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Notification.reload)
+[Glacier.Notification.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Notification.reload)
 
 #### Notification.set method
 
 Type annotations for `boto3.resource("glacier").set` method.
 
 Boto3 documentation:
-[Glacier.Notification.set](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Notification.set)
+[Glacier.Notification.set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Notification.set)
 
 Arguments:
 
@@ -622,7 +622,7 @@ def get_resource() -> Vault:
 ```
 
 Boto3 documentation:
-[Glacier.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.ServiceResource.Vault)
+[Glacier.Vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.ServiceResource.Vault)
 
 ### Vault attributes
 
@@ -667,7 +667,7 @@ def get_collection() -> VaultCompletedJobsCollection:
 Provides access to [Job](#job) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultCompletedJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.completed_jobs)
+[Glacier.Vault.VaultCompletedJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.completed_jobs)
 
 #### Vault.failed_jobs
 
@@ -687,7 +687,7 @@ def get_collection() -> VaultFailedJobsCollection:
 Provides access to [Job](#job) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultFailedJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.failed_jobs)
+[Glacier.Vault.VaultFailedJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.failed_jobs)
 
 #### Vault.jobs
 
@@ -706,7 +706,7 @@ def get_collection() -> VaultJobsCollection:
 Provides access to [Job](#job) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.jobs)
+[Glacier.Vault.VaultJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.jobs)
 
 #### Vault.jobs_in_progress
 
@@ -726,7 +726,7 @@ def get_collection() -> VaultJobsInProgressCollection:
 Provides access to [Job](#job) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultJobsInProgressCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.jobs_in_progress)
+[Glacier.Vault.VaultJobsInProgressCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.jobs_in_progress)
 
 #### Vault.multipart_uplaods
 
@@ -746,7 +746,7 @@ def get_collection() -> VaultMultipartUplaodsCollection:
 Provides access to [MultipartUpload](#multipartupload) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultMultipartUplaodsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.multipart_uplaods)
+[Glacier.Vault.VaultMultipartUplaodsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.multipart_uplaods)
 
 #### Vault.multipart_uploads
 
@@ -766,7 +766,7 @@ def get_collection() -> VaultMultipartUploadsCollection:
 Provides access to [MultipartUpload](#multipartupload) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultMultipartUploadsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.multipart_uploads)
+[Glacier.Vault.VaultMultipartUploadsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.multipart_uploads)
 
 #### Vault.succeeded_jobs
 
@@ -786,7 +786,7 @@ def get_collection() -> VaultSucceededJobsCollection:
 Provides access to [Job](#job) resource.
 
 Boto3 documentation:
-[Glacier.Vault.VaultSucceededJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.succeeded_jobs)
+[Glacier.Vault.VaultSucceededJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.succeeded_jobs)
 
 ### Vault methods
 
@@ -795,7 +795,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("glacier").Account` method.
 
 Boto3 documentation:
-[Glacier.Vault.Account](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.Account)
+[Glacier.Vault.Account](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.Account)
 
 Returns [Account](#account).
 
@@ -804,7 +804,7 @@ Returns [Account](#account).
 Type annotations for `boto3.resource("glacier").Archive` method.
 
 Boto3 documentation:
-[Glacier.Vault.Archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.Archive)
+[Glacier.Vault.Archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.Archive)
 
 Arguments:
 
@@ -817,7 +817,7 @@ Returns [Archive](#archive).
 Type annotations for `boto3.resource("glacier").Job` method.
 
 Boto3 documentation:
-[Glacier.Vault.Job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.Job)
+[Glacier.Vault.Job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.Job)
 
 Arguments:
 
@@ -830,7 +830,7 @@ Returns [Job](#job).
 Type annotations for `boto3.resource("glacier").MultipartUpload` method.
 
 Boto3 documentation:
-[Glacier.Vault.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.MultipartUpload)
+[Glacier.Vault.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.MultipartUpload)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Returns [MultipartUpload](#multipartupload).
 Type annotations for `boto3.resource("glacier").Notification` method.
 
 Boto3 documentation:
-[Glacier.Vault.Notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.Notification)
+[Glacier.Vault.Notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.Notification)
 
 Returns [Notification](#notification).
 
@@ -852,7 +852,7 @@ Returns [Notification](#notification).
 Type annotations for `boto3.resource("glacier").create` method.
 
 Boto3 documentation:
-[Glacier.Vault.create](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.create)
+[Glacier.Vault.create](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.create)
 
 Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 
@@ -861,7 +861,7 @@ Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 Type annotations for `boto3.resource("glacier").delete` method.
 
 Boto3 documentation:
-[Glacier.Vault.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.delete)
+[Glacier.Vault.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.delete)
 
 #### Vault.get_available_subresources method
 
@@ -869,7 +869,7 @@ Type annotations for `boto3.resource("glacier").get_available_subresources`
 method.
 
 Boto3 documentation:
-[Glacier.Vault.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.get_available_subresources)
+[Glacier.Vault.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -879,7 +879,7 @@ Type annotations for `boto3.resource("glacier").initiate_inventory_retrieval`
 method.
 
 Boto3 documentation:
-[Glacier.Vault.initiate_inventory_retrieval](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.initiate_inventory_retrieval)
+[Glacier.Vault.initiate_inventory_retrieval](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.initiate_inventory_retrieval)
 
 Arguments:
 
@@ -893,7 +893,7 @@ Type annotations for `boto3.resource("glacier").initiate_multipart_upload`
 method.
 
 Boto3 documentation:
-[Glacier.Vault.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.initiate_multipart_upload)
+[Glacier.Vault.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.initiate_multipart_upload)
 
 Arguments:
 
@@ -907,21 +907,21 @@ Returns [MultipartUpload](#multipartupload).
 Type annotations for `boto3.resource("glacier").load` method.
 
 Boto3 documentation:
-[Glacier.Vault.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.load)
+[Glacier.Vault.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.load)
 
 #### Vault.reload method
 
 Type annotations for `boto3.resource("glacier").reload` method.
 
 Boto3 documentation:
-[Glacier.Vault.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.reload)
+[Glacier.Vault.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.reload)
 
 #### Vault.upload_archive method
 
 Type annotations for `boto3.resource("glacier").upload_archive` method.
 
 Boto3 documentation:
-[Glacier.Vault.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/glacier.html#Glacier.Vault.upload_archive)
+[Glacier.Vault.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Vault.upload_archive)
 
 Arguments:
 

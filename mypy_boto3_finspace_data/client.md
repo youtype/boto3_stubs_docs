@@ -3,7 +3,7 @@
 > [Index](..) > [FinSpaceData](.) > FinSpaceDataClient
 
 Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData)
+[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
 [mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
@@ -31,7 +31,7 @@ def get_finspace-data_client() -> FinSpaceDataClient:
 ```
 
 Boto3 documentation:
-[FinSpaceData.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData.Client)
+[FinSpaceData.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData.Client)
 
 ## Exceptions
 
@@ -61,7 +61,7 @@ Exceptions:
 Type annotations for `boto3.client("finspace-data").can_paginate` method.
 
 Boto3 documentation:
-[FinSpaceData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData.Client.can_paginate)
+[FinSpaceData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData.Client.can_paginate)
 
 Arguments:
 
@@ -74,7 +74,7 @@ Returns `bool`.
 Type annotations for `boto3.client("finspace-data").create_changeset` method.
 
 Boto3 documentation:
-[FinSpaceData.Client.create_changeset](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
+[FinSpaceData.Client.create_changeset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Type annotations for `boto3.client("finspace-data").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[FinSpaceData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData.Client.generate_presigned_url)
+[FinSpaceData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData.Client.generate_presigned_url)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Type annotations for
 `boto3.client("finspace-data").get_programmatic_access_credentials` method.
 
 Boto3 documentation:
-[FinSpaceData.Client.get_programmatic_access_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
+[FinSpaceData.Client.get_programmatic_access_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Type annotations for `boto3.client("finspace-data").get_working_location`
 method.
 
 Boto3 documentation:
-[FinSpaceData.Client.get_working_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
+[FinSpaceData.Client.get_working_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
 
 Arguments:
 

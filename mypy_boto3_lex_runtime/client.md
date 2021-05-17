@@ -3,7 +3,7 @@
 > [Index](..) > [LexRuntimeService](.) > LexRuntimeServiceClient
 
 Auto-generated documentation for
-[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService)
+[LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
 [mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
@@ -33,7 +33,7 @@ def get_lex-runtime_client() -> LexRuntimeServiceClient:
 ```
 
 Boto3 documentation:
-[LexRuntimeService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client)
+[LexRuntimeService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 Type annotations for `boto3.client("lex-runtime").can_paginate` method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.can_paginate)
+[LexRuntimeService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.can_paginate)
 
 Arguments:
 
@@ -82,7 +82,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lex-runtime").delete_session` method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.delete_session)
+[LexRuntimeService.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.delete_session)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Type annotations for `boto3.client("lex-runtime").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.generate_presigned_url)
+[LexRuntimeService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Returns `str`.
 Type annotations for `boto3.client("lex-runtime").get_session` method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.get_session)
+[LexRuntimeService.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.get_session)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 Type annotations for `boto3.client("lex-runtime").post_content` method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.post_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.post_content)
+[LexRuntimeService.Client.post_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.post_content)
 
 Arguments:
 
@@ -153,7 +153,7 @@ Returns
 Type annotations for `boto3.client("lex-runtime").post_text` method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.post_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.post_text)
+[LexRuntimeService.Client.post_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.post_text)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns [PostTextResponseTypeDef](./type_defs.md#posttextresponsetypedef).
 Type annotations for `boto3.client("lex-runtime").put_session` method.
 
 Boto3 documentation:
-[LexRuntimeService.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/lex-runtime.html#LexRuntimeService.Client.put_session)
+[LexRuntimeService.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lex-runtime.html#LexRuntimeService.Client.put_session)
 
 Arguments:
 

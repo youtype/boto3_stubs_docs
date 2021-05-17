@@ -3,7 +3,7 @@
 > [Index](..) > [WorkMailMessageFlow](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module
 [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 

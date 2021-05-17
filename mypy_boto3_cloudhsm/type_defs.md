@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudhsm.html#CloudHSM)
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 

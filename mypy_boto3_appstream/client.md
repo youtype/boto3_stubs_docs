@@ -3,7 +3,7 @@
 > [Index](..) > [AppStream](.) > AppStreamClient
 
 Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream)
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream)
 type annotations stubs module
 [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
@@ -78,7 +78,7 @@ def get_appstream_client() -> AppStreamClient:
 ```
 
 Boto3 documentation:
-[AppStream.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client)
+[AppStream.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client)
 
 ## Exceptions
 
@@ -115,7 +115,7 @@ Exceptions:
 Type annotations for `boto3.client("appstream").associate_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.associate_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.associate_fleet)
+[AppStream.Client.associate_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.associate_fleet)
 
 Arguments:
 
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("appstream").batch_associate_user_stack`
 method.
 
 Boto3 documentation:
-[AppStream.Client.batch_associate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack)
+[AppStream.Client.batch_associate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("appstream").batch_disassociate_user_stack`
 method.
 
 Boto3 documentation:
-[AppStream.Client.batch_disassociate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack)
+[AppStream.Client.batch_disassociate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns
 Type annotations for `boto3.client("appstream").can_paginate` method.
 
 Boto3 documentation:
-[AppStream.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.can_paginate)
+[AppStream.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.can_paginate)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns `bool`.
 Type annotations for `boto3.client("appstream").copy_image` method.
 
 Boto3 documentation:
-[AppStream.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.copy_image)
+[AppStream.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.copy_image)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("appstream").create_directory_config`
 method.
 
 Boto3 documentation:
-[AppStream.Client.create_directory_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_directory_config)
+[AppStream.Client.create_directory_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_directory_config)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Returns
 Type annotations for `boto3.client("appstream").create_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_fleet)
+[AppStream.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_fleet)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
 Type annotations for `boto3.client("appstream").create_image_builder` method.
 
 Boto3 documentation:
-[AppStream.Client.create_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_image_builder)
+[AppStream.Client.create_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_image_builder)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Type annotations for
 `boto3.client("appstream").create_image_builder_streaming_url` method.
 
 Boto3 documentation:
-[AppStream.Client.create_image_builder_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url)
+[AppStream.Client.create_image_builder_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url)
 
 Arguments:
 
@@ -285,7 +285,7 @@ Returns
 Type annotations for `boto3.client("appstream").create_stack` method.
 
 Boto3 documentation:
-[AppStream.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_stack)
+[AppStream.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_stack)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 Type annotations for `boto3.client("appstream").create_streaming_url` method.
 
 Boto3 documentation:
-[AppStream.Client.create_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_streaming_url)
+[AppStream.Client.create_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_streaming_url)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Returns
 Type annotations for `boto3.client("appstream").create_updated_image` method.
 
 Boto3 documentation:
-[AppStream.Client.create_updated_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_updated_image)
+[AppStream.Client.create_updated_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_updated_image)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Type annotations for
 `boto3.client("appstream").create_usage_report_subscription` method.
 
 Boto3 documentation:
-[AppStream.Client.create_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription)
+[AppStream.Client.create_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription)
 
 Returns
 [CreateUsageReportSubscriptionResultTypeDef](./type_defs.md#createusagereportsubscriptionresulttypedef).
@@ -361,7 +361,7 @@ Returns
 Type annotations for `boto3.client("appstream").create_user` method.
 
 Boto3 documentation:
-[AppStream.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.create_user)
+[AppStream.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.create_user)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Type annotations for `boto3.client("appstream").delete_directory_config`
 method.
 
 Boto3 documentation:
-[AppStream.Client.delete_directory_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_directory_config)
+[AppStream.Client.delete_directory_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_directory_config)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").delete_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_fleet)
+[AppStream.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_fleet)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").delete_image` method.
 
 Boto3 documentation:
-[AppStream.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_image)
+[AppStream.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_image)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Returns [DeleteImageResultTypeDef](./type_defs.md#deleteimageresulttypedef).
 Type annotations for `boto3.client("appstream").delete_image_builder` method.
 
 Boto3 documentation:
-[AppStream.Client.delete_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_image_builder)
+[AppStream.Client.delete_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_image_builder)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("appstream").delete_image_permissions`
 method.
 
 Boto3 documentation:
-[AppStream.Client.delete_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_image_permissions)
+[AppStream.Client.delete_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_image_permissions)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").delete_stack` method.
 
 Boto3 documentation:
-[AppStream.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_stack)
+[AppStream.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_stack)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Type annotations for
 `boto3.client("appstream").delete_usage_report_subscription` method.
 
 Boto3 documentation:
-[AppStream.Client.delete_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription)
+[AppStream.Client.delete_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -471,7 +471,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").delete_user` method.
 
 Boto3 documentation:
-[AppStream.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.delete_user)
+[AppStream.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.delete_user)
 
 Arguments:
 
@@ -487,7 +487,7 @@ Type annotations for `boto3.client("appstream").describe_directory_configs`
 method.
 
 Boto3 documentation:
-[AppStream.Client.describe_directory_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_directory_configs)
+[AppStream.Client.describe_directory_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_directory_configs)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Returns
 Type annotations for `boto3.client("appstream").describe_fleets` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_fleets)
+[AppStream.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_fleets)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("appstream").describe_image_builders`
 method.
 
 Boto3 documentation:
-[AppStream.Client.describe_image_builders](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_image_builders)
+[AppStream.Client.describe_image_builders](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_image_builders)
 
 Arguments:
 
@@ -536,7 +536,7 @@ Type annotations for `boto3.client("appstream").describe_image_permissions`
 method.
 
 Boto3 documentation:
-[AppStream.Client.describe_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_image_permissions)
+[AppStream.Client.describe_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_image_permissions)
 
 Arguments:
 
@@ -553,7 +553,7 @@ Returns
 Type annotations for `boto3.client("appstream").describe_images` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_images)
+[AppStream.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_images)
 
 Arguments:
 
@@ -571,7 +571,7 @@ Returns
 Type annotations for `boto3.client("appstream").describe_sessions` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_sessions)
+[AppStream.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_sessions)
 
 Arguments:
 
@@ -591,7 +591,7 @@ Returns
 Type annotations for `boto3.client("appstream").describe_stacks` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_stacks)
+[AppStream.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_stacks)
 
 Arguments:
 
@@ -607,7 +607,7 @@ Type annotations for
 `boto3.client("appstream").describe_usage_report_subscriptions` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_usage_report_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions)
+[AppStream.Client.describe_usage_report_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions)
 
 Arguments:
 
@@ -623,7 +623,7 @@ Type annotations for
 `boto3.client("appstream").describe_user_stack_associations` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_user_stack_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations)
+[AppStream.Client.describe_user_stack_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations)
 
 Arguments:
 
@@ -642,7 +642,7 @@ Returns
 Type annotations for `boto3.client("appstream").describe_users` method.
 
 Boto3 documentation:
-[AppStream.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.describe_users)
+[AppStream.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.describe_users)
 
 Arguments:
 
@@ -659,7 +659,7 @@ Returns
 Type annotations for `boto3.client("appstream").disable_user` method.
 
 Boto3 documentation:
-[AppStream.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.disable_user)
+[AppStream.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.disable_user)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").disassociate_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.disassociate_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.disassociate_fleet)
+[AppStream.Client.disassociate_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.disassociate_fleet)
 
 Arguments:
 
@@ -688,7 +688,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").enable_user` method.
 
 Boto3 documentation:
-[AppStream.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.enable_user)
+[AppStream.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.enable_user)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").expire_session` method.
 
 Boto3 documentation:
-[AppStream.Client.expire_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.expire_session)
+[AppStream.Client.expire_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.expire_session)
 
 Arguments:
 
@@ -716,7 +716,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").generate_presigned_url` method.
 
 Boto3 documentation:
-[AppStream.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.generate_presigned_url)
+[AppStream.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.generate_presigned_url)
 
 Arguments:
 
@@ -732,7 +732,7 @@ Returns `str`.
 Type annotations for `boto3.client("appstream").list_associated_fleets` method.
 
 Boto3 documentation:
-[AppStream.Client.list_associated_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.list_associated_fleets)
+[AppStream.Client.list_associated_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.list_associated_fleets)
 
 Arguments:
 
@@ -747,7 +747,7 @@ Returns
 Type annotations for `boto3.client("appstream").list_associated_stacks` method.
 
 Boto3 documentation:
-[AppStream.Client.list_associated_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.list_associated_stacks)
+[AppStream.Client.list_associated_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.list_associated_stacks)
 
 Arguments:
 
@@ -762,7 +762,7 @@ Returns
 Type annotations for `boto3.client("appstream").list_tags_for_resource` method.
 
 Boto3 documentation:
-[AppStream.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.list_tags_for_resource)
+[AppStream.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -776,7 +776,7 @@ Returns
 Type annotations for `boto3.client("appstream").start_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.start_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.start_fleet)
+[AppStream.Client.start_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.start_fleet)
 
 Arguments:
 
@@ -789,7 +789,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").start_image_builder` method.
 
 Boto3 documentation:
-[AppStream.Client.start_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.start_image_builder)
+[AppStream.Client.start_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.start_image_builder)
 
 Arguments:
 
@@ -804,7 +804,7 @@ Returns
 Type annotations for `boto3.client("appstream").stop_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.stop_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.stop_fleet)
+[AppStream.Client.stop_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.stop_fleet)
 
 Arguments:
 
@@ -817,7 +817,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").stop_image_builder` method.
 
 Boto3 documentation:
-[AppStream.Client.stop_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.stop_image_builder)
+[AppStream.Client.stop_image_builder](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.stop_image_builder)
 
 Arguments:
 
@@ -831,7 +831,7 @@ Returns
 Type annotations for `boto3.client("appstream").tag_resource` method.
 
 Boto3 documentation:
-[AppStream.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.tag_resource)
+[AppStream.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.tag_resource)
 
 Arguments:
 
@@ -845,7 +845,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").untag_resource` method.
 
 Boto3 documentation:
-[AppStream.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.untag_resource)
+[AppStream.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.untag_resource)
 
 Arguments:
 
@@ -860,7 +860,7 @@ Type annotations for `boto3.client("appstream").update_directory_config`
 method.
 
 Boto3 documentation:
-[AppStream.Client.update_directory_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.update_directory_config)
+[AppStream.Client.update_directory_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.update_directory_config)
 
 Arguments:
 
@@ -877,7 +877,7 @@ Returns
 Type annotations for `boto3.client("appstream").update_fleet` method.
 
 Boto3 documentation:
-[AppStream.Client.update_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.update_fleet)
+[AppStream.Client.update_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.update_fleet)
 
 Arguments:
 
@@ -910,7 +910,7 @@ Type annotations for `boto3.client("appstream").update_image_permissions`
 method.
 
 Boto3 documentation:
-[AppStream.Client.update_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.update_image_permissions)
+[AppStream.Client.update_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.update_image_permissions)
 
 Arguments:
 
@@ -927,7 +927,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appstream").update_stack` method.
 
 Boto3 documentation:
-[AppStream.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/appstream.html#AppStream.Client.update_stack)
+[AppStream.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appstream.html#AppStream.Client.update_stack)
 
 Arguments:
 

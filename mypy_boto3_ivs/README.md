@@ -3,7 +3,7 @@
 > [Index](..) > IVS
 
 Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/ivs.html#IVS)
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ivs.html#IVS)
 type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticLoadBalancingv2](.) > ElasticLoadBalancingv2Client
 
 Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2)
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
 [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
@@ -64,7 +64,7 @@ def get_elbv2_client() -> ElasticLoadBalancingv2Client:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
+[ElasticLoadBalancingv2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
 
 ## Exceptions
 
@@ -126,7 +126,7 @@ Exceptions:
 Type annotations for `boto3.client("elbv2").add_listener_certificates` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.add_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates)
+[ElasticLoadBalancingv2.Client.add_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns
 Type annotations for `boto3.client("elbv2").add_tags` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags)
+[ElasticLoadBalancingv2.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").can_paginate` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.can_paginate)
+[ElasticLoadBalancingv2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.can_paginate)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns `bool`.
 Type annotations for `boto3.client("elbv2").create_listener` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener)
+[ElasticLoadBalancingv2.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns
 Type annotations for `boto3.client("elbv2").create_load_balancer` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer)
+[ElasticLoadBalancingv2.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns
 Type annotations for `boto3.client("elbv2").create_rule` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule)
+[ElasticLoadBalancingv2.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns [CreateRuleOutputTypeDef](./type_defs.md#createruleoutputtypedef).
 Type annotations for `boto3.client("elbv2").create_target_group` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group)
+[ElasticLoadBalancingv2.Client.create_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Returns
 Type annotations for `boto3.client("elbv2").delete_listener` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener)
+[ElasticLoadBalancingv2.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").delete_load_balancer` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer)
+[ElasticLoadBalancingv2.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").delete_rule` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule)
+[ElasticLoadBalancingv2.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").delete_target_group` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group)
+[ElasticLoadBalancingv2.Client.delete_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group)
 
 Arguments:
 
@@ -318,7 +318,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").deregister_targets` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.deregister_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets)
+[ElasticLoadBalancingv2.Client.deregister_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets)
 
 Arguments:
 
@@ -334,7 +334,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").describe_account_limits` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits)
+[ElasticLoadBalancingv2.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("elbv2").describe_listener_certificates`
 method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates)
+[ElasticLoadBalancingv2.Client.describe_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_listeners` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_listeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners)
+[ElasticLoadBalancingv2.Client.describe_listeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("elbv2").describe_load_balancer_attributes`
 method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes)
+[ElasticLoadBalancingv2.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes)
 
 Arguments:
 
@@ -398,7 +398,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_load_balancers` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers)
+[ElasticLoadBalancingv2.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_rules` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules)
+[ElasticLoadBalancingv2.Client.describe_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_ssl_policies` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_ssl_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies)
+[ElasticLoadBalancingv2.Client.describe_ssl_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_tags` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags)
+[ElasticLoadBalancingv2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("elbv2").describe_target_group_attributes`
 method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes)
+[ElasticLoadBalancingv2.Client.describe_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_target_groups` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_target_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups)
+[ElasticLoadBalancingv2.Client.describe_target_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Returns
 Type annotations for `boto3.client("elbv2").describe_target_health` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_target_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health)
+[ElasticLoadBalancingv2.Client.describe_target_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns
 Type annotations for `boto3.client("elbv2").generate_presigned_url` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.generate_presigned_url)
+[ElasticLoadBalancingv2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -526,7 +526,7 @@ Returns `str`.
 Type annotations for `boto3.client("elbv2").modify_listener` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener)
+[ElasticLoadBalancingv2.Client.modify_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener)
 
 Arguments:
 
@@ -548,7 +548,7 @@ Type annotations for `boto3.client("elbv2").modify_load_balancer_attributes`
 method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes)
+[ElasticLoadBalancingv2.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes)
 
 Arguments:
 
@@ -565,7 +565,7 @@ Returns
 Type annotations for `boto3.client("elbv2").modify_rule` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule)
+[ElasticLoadBalancingv2.Client.modify_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule)
 
 Arguments:
 
@@ -581,7 +581,7 @@ Returns [ModifyRuleOutputTypeDef](./type_defs.md#modifyruleoutputtypedef).
 Type annotations for `boto3.client("elbv2").modify_target_group` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group)
+[ElasticLoadBalancingv2.Client.modify_target_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group)
 
 Arguments:
 
@@ -605,7 +605,7 @@ Type annotations for `boto3.client("elbv2").modify_target_group_attributes`
 method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes)
+[ElasticLoadBalancingv2.Client.modify_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes)
 
 Arguments:
 
@@ -622,7 +622,7 @@ Returns
 Type annotations for `boto3.client("elbv2").register_targets` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.register_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets)
+[ElasticLoadBalancingv2.Client.register_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets)
 
 Arguments:
 
@@ -639,7 +639,7 @@ Type annotations for `boto3.client("elbv2").remove_listener_certificates`
 method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.remove_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates)
+[ElasticLoadBalancingv2.Client.remove_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").remove_tags` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags)
+[ElasticLoadBalancingv2.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags)
 
 Arguments:
 
@@ -669,7 +669,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elbv2").set_ip_address_type` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
+[ElasticLoadBalancingv2.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
 
 Arguments:
 
@@ -685,7 +685,7 @@ Returns
 Type annotations for `boto3.client("elbv2").set_rule_priorities` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_rule_priorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities)
+[ElasticLoadBalancingv2.Client.set_rule_priorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities)
 
 Arguments:
 
@@ -701,7 +701,7 @@ Returns
 Type annotations for `boto3.client("elbv2").set_security_groups` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups)
+[ElasticLoadBalancingv2.Client.set_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups)
 
 Arguments:
 
@@ -716,7 +716,7 @@ Returns
 Type annotations for `boto3.client("elbv2").set_subnets` method.
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_subnets](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets)
+[ElasticLoadBalancingv2.Client.set_subnets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets)
 
 Arguments:
 

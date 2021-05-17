@@ -3,7 +3,7 @@
 > [Index](..) > [CustomerProfiles](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/customer-profiles.html#CustomerProfiles)
+[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
 [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 

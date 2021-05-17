@@ -3,7 +3,7 @@
 > [Index](..) > [CloudSearch](.) > CloudSearchClient
 
 Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch)
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
 [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
@@ -54,7 +54,7 @@ def get_cloudsearch_client() -> CloudSearchClient:
 ```
 
 Boto3 documentation:
-[CloudSearch.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client)
+[CloudSearch.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudsearch").build_suggesters` method.
 
 Boto3 documentation:
-[CloudSearch.Client.build_suggesters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
+[CloudSearch.Client.build_suggesters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").can_paginate` method.
 
 Boto3 documentation:
-[CloudSearch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate)
+[CloudSearch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cloudsearch").create_domain` method.
 
 Boto3 documentation:
-[CloudSearch.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
+[CloudSearch.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("cloudsearch").define_analysis_scheme`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.define_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
+[CloudSearch.Client.define_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").define_expression` method.
 
 Boto3 documentation:
-[CloudSearch.Client.define_expression](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
+[CloudSearch.Client.define_expression](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").define_index_field` method.
 
 Boto3 documentation:
-[CloudSearch.Client.define_index_field](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
+[CloudSearch.Client.define_index_field](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").define_suggester` method.
 
 Boto3 documentation:
-[CloudSearch.Client.define_suggester](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
+[CloudSearch.Client.define_suggester](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Type annotations for `boto3.client("cloudsearch").delete_analysis_scheme`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.delete_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
+[CloudSearch.Client.delete_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").delete_domain` method.
 
 Boto3 documentation:
-[CloudSearch.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
+[CloudSearch.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").delete_expression` method.
 
 Boto3 documentation:
-[CloudSearch.Client.delete_expression](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
+[CloudSearch.Client.delete_expression](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").delete_index_field` method.
 
 Boto3 documentation:
-[CloudSearch.Client.delete_index_field](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
+[CloudSearch.Client.delete_index_field](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").delete_suggester` method.
 
 Boto3 documentation:
-[CloudSearch.Client.delete_suggester](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
+[CloudSearch.Client.delete_suggester](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("cloudsearch").describe_analysis_schemes`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_analysis_schemes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
+[CloudSearch.Client.describe_analysis_schemes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Type annotations for
 `boto3.client("cloudsearch").describe_availability_options` method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_availability_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
+[CloudSearch.Client.describe_availability_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Type annotations for
 `boto3.client("cloudsearch").describe_domain_endpoint_options` method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
+[CloudSearch.Client.describe_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").describe_domains` method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
+[CloudSearch.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").describe_expressions` method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_expressions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
+[CloudSearch.Client.describe_expressions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
 
 Arguments:
 
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("cloudsearch").describe_index_fields`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_index_fields](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
+[CloudSearch.Client.describe_index_fields](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("cloudsearch").describe_scaling_parameters`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
+[CloudSearch.Client.describe_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Type annotations for
 `boto3.client("cloudsearch").describe_service_access_policies` method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
+[CloudSearch.Client.describe_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").describe_suggesters` method.
 
 Boto3 documentation:
-[CloudSearch.Client.describe_suggesters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
+[CloudSearch.Client.describe_suggesters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("cloudsearch").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url)
+[CloudSearch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudsearch").index_documents` method.
 
 Boto3 documentation:
-[CloudSearch.Client.index_documents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
+[CloudSearch.Client.index_documents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Returns
 Type annotations for `boto3.client("cloudsearch").list_domain_names` method.
 
 Boto3 documentation:
-[CloudSearch.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
+[CloudSearch.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
 
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
@@ -451,7 +451,7 @@ Type annotations for `boto3.client("cloudsearch").update_availability_options`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.update_availability_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
+[CloudSearch.Client.update_availability_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
 
 Arguments:
 
@@ -467,7 +467,7 @@ Type annotations for
 `boto3.client("cloudsearch").update_domain_endpoint_options` method.
 
 Boto3 documentation:
-[CloudSearch.Client.update_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
+[CloudSearch.Client.update_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("cloudsearch").update_scaling_parameters`
 method.
 
 Boto3 documentation:
-[CloudSearch.Client.update_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
+[CloudSearch.Client.update_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Type annotations for
 `boto3.client("cloudsearch").update_service_access_policies` method.
 
 Boto3 documentation:
-[CloudSearch.Client.update_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
+[CloudSearch.Client.update_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
 
 Arguments:
 

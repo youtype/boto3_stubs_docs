@@ -3,7 +3,7 @@
 > [Index](..) > [Health](.) > Paginators
 
 Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health)
+[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health)
 type annotations stubs module
 [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
@@ -31,7 +31,7 @@ def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffec
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeAffectedAccountsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
+[Health.Paginator.DescribeAffectedAccountsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
 
 Arguments for `DescribeAffectedAccountsForOrganizationPaginator.paginate`
 method:
@@ -58,7 +58,7 @@ def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPagina
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeAffectedEntities](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
+[Health.Paginator.DescribeAffectedEntities](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
 
 Arguments for `DescribeAffectedEntitiesPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_describe_affected_entities_for_organization_paginator() -> DescribeAffec
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeAffectedEntitiesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
+[Health.Paginator.DescribeAffectedEntitiesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
 
 Arguments for `DescribeAffectedEntitiesForOrganizationPaginator.paginate`
 method:
@@ -116,7 +116,7 @@ def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginato
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeEventAggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
+[Health.Paginator.DescribeEventAggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
 
 Arguments for `DescribeEventAggregatesPaginator.paginate` method:
 
@@ -145,7 +145,7 @@ def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeEventTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeEventTypes)
+[Health.Paginator.DescribeEventTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeEventTypes)
 
 Arguments for `DescribeEventTypesPaginator.paginate` method:
 
@@ -171,7 +171,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeEvents)
+[Health.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeEvents)
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
@@ -198,7 +198,7 @@ def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganiz
 ```
 
 Boto3 documentation:
-[Health.Paginator.DescribeEventsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
+[Health.Paginator.DescribeEventsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
 
 Arguments for `DescribeEventsForOrganizationPaginator.paginate` method:
 

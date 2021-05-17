@@ -3,7 +3,7 @@
 > [Index](..) > [mgn](.) > mgnClient
 
 Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn)
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn)
 type annotations stubs module
 [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
@@ -54,7 +54,7 @@ def get_mgn_client() -> mgnClient:
 ```
 
 Boto3 documentation:
-[mgn.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client)
+[mgn.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("mgn").can_paginate` method.
 
 Boto3 documentation:
-[mgn.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.can_paginate)
+[mgn.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.can_paginate)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Type annotations for `boto3.client("mgn").change_server_life_cycle_state`
 method.
 
 Boto3 documentation:
-[mgn.Client.change_server_life_cycle_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
+[mgn.Client.change_server_life_cycle_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Type annotations for
 `boto3.client("mgn").create_replication_configuration_template` method.
 
 Boto3 documentation:
-[mgn.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
+[mgn.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Returns
 Type annotations for `boto3.client("mgn").delete_job` method.
 
 Boto3 documentation:
-[mgn.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.delete_job)
+[mgn.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.delete_job)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Type annotations for
 `boto3.client("mgn").delete_replication_configuration_template` method.
 
 Boto3 documentation:
-[mgn.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
+[mgn.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgn").delete_source_server` method.
 
 Boto3 documentation:
-[mgn.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.delete_source_server)
+[mgn.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.delete_source_server)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgn").describe_job_log_items` method.
 
 Boto3 documentation:
-[mgn.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.describe_job_log_items)
+[mgn.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.describe_job_log_items)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("mgn").describe_jobs` method.
 
 Boto3 documentation:
-[mgn.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.describe_jobs)
+[mgn.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.describe_jobs)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Type annotations for
 `boto3.client("mgn").describe_replication_configuration_templates` method.
 
 Boto3 documentation:
-[mgn.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
+[mgn.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
 
 Arguments:
 
@@ -240,7 +240,7 @@ Returns
 Type annotations for `boto3.client("mgn").describe_source_servers` method.
 
 Boto3 documentation:
-[mgn.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.describe_source_servers)
+[mgn.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.describe_source_servers)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns
 Type annotations for `boto3.client("mgn").disconnect_from_service` method.
 
 Boto3 documentation:
-[mgn.Client.disconnect_from_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.disconnect_from_service)
+[mgn.Client.disconnect_from_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.disconnect_from_service)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 Type annotations for `boto3.client("mgn").finalize_cutover` method.
 
 Boto3 documentation:
-[mgn.Client.finalize_cutover](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.finalize_cutover)
+[mgn.Client.finalize_cutover](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.finalize_cutover)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 Type annotations for `boto3.client("mgn").generate_presigned_url` method.
 
 Boto3 documentation:
-[mgn.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.generate_presigned_url)
+[mgn.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.generate_presigned_url)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Returns `str`.
 Type annotations for `boto3.client("mgn").get_launch_configuration` method.
 
 Boto3 documentation:
-[mgn.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.get_launch_configuration)
+[mgn.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.get_launch_configuration)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("mgn").get_replication_configuration`
 method.
 
 Boto3 documentation:
-[mgn.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.get_replication_configuration)
+[mgn.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.get_replication_configuration)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("mgn").initialize_service` method.
 
 Boto3 documentation:
-[mgn.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.initialize_service)
+[mgn.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.initialize_service)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -338,7 +338,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mgn").list_tags_for_resource` method.
 
 Boto3 documentation:
-[mgn.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
+[mgn.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns
 Type annotations for `boto3.client("mgn").mark_as_archived` method.
 
 Boto3 documentation:
-[mgn.Client.mark_as_archived](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.mark_as_archived)
+[mgn.Client.mark_as_archived](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.mark_as_archived)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 Type annotations for `boto3.client("mgn").retry_data_replication` method.
 
 Boto3 documentation:
-[mgn.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.retry_data_replication)
+[mgn.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.retry_data_replication)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 Type annotations for `boto3.client("mgn").start_cutover` method.
 
 Boto3 documentation:
-[mgn.Client.start_cutover](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.start_cutover)
+[mgn.Client.start_cutover](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.start_cutover)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Returns
 Type annotations for `boto3.client("mgn").start_test` method.
 
 Boto3 documentation:
-[mgn.Client.start_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.start_test)
+[mgn.Client.start_test](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.start_test)
 
 Arguments:
 
@@ -407,7 +407,7 @@ Returns [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef).
 Type annotations for `boto3.client("mgn").tag_resource` method.
 
 Boto3 documentation:
-[mgn.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.tag_resource)
+[mgn.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.tag_resource)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Arguments:
 Type annotations for `boto3.client("mgn").terminate_target_instances` method.
 
 Boto3 documentation:
-[mgn.Client.terminate_target_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.terminate_target_instances)
+[mgn.Client.terminate_target_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.terminate_target_instances)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Returns
 Type annotations for `boto3.client("mgn").untag_resource` method.
 
 Boto3 documentation:
-[mgn.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.untag_resource)
+[mgn.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.untag_resource)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Arguments:
 Type annotations for `boto3.client("mgn").update_launch_configuration` method.
 
 Boto3 documentation:
-[mgn.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.update_launch_configuration)
+[mgn.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.update_launch_configuration)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Type annotations for `boto3.client("mgn").update_replication_configuration`
 method.
 
 Boto3 documentation:
-[mgn.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.update_replication_configuration)
+[mgn.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.update_replication_configuration)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Type annotations for
 `boto3.client("mgn").update_replication_configuration_template` method.
 
 Boto3 documentation:
-[mgn.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
+[mgn.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ACMPCA](.) > Paginators
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
@@ -27,7 +27,7 @@ def get_list_certificate_authorities_paginator() -> ListCertificateAuthoritiesPa
 ```
 
 Boto3 documentation:
-[ACMPCA.Paginator.ListCertificateAuthorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
+[ACMPCA.Paginator.ListCertificateAuthorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
 
 Arguments for `ListCertificateAuthoritiesPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_permissions_paginator() -> ListPermissionsPaginator:
 ```
 
 Boto3 documentation:
-[ACMPCA.Paginator.ListPermissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
+[ACMPCA.Paginator.ListPermissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
 
 Arguments for `ListPermissionsPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
 ```
 
 Boto3 documentation:
-[ACMPCA.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.73/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
+[ACMPCA.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
 
 Arguments for `ListTagsPaginator.paginate` method:
 
