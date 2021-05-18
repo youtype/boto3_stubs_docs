@@ -3,7 +3,7 @@
 > [Index](..) > [IoTEventsData](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotevents-data.html#IoTEventsData)
+[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module
 [mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 

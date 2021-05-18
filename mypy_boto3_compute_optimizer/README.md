@@ -3,7 +3,7 @@
 > [Index](..) > ComputeOptimizer
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -34,7 +34,9 @@ from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 - [can_paginate](./client.md#can_paginate)
 - [describe_recommendation_export_jobs](./client.md#describe_recommendation_export_jobs)
 - [export_auto_scaling_group_recommendations](./client.md#export_auto_scaling_group_recommendations)
+- [export_ebs_volume_recommendations](./client.md#export_ebs_volume_recommendations)
 - [export_ec2_instance_recommendations](./client.md#export_ec2_instance_recommendations)
+- [export_lambda_function_recommendations](./client.md#export_lambda_function_recommendations)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_auto_scaling_group_recommendations](./client.md#get_auto_scaling_group_recommendations)
 - [get_ebs_volume_recommendations](./client.md#get_ebs_volume_recommendations)
@@ -75,6 +77,8 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterNameType, ...
 - [EBSMetricNameType](./literals.md#ebsmetricnametype)
 - [ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)
 - [ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)
+- [ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)
+- [ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)
 - [FileFormatType](./literals.md#fileformattype)
 - [FilterNameType](./literals.md#filternametype)
 - [FindingReasonCodeType](./literals.md#findingreasoncodetype)
@@ -113,7 +117,9 @@ from mypy_boto3_compute_optimizer.type_defs import AutoScalingGroupConfiguration
 - [EBSUtilizationMetricTypeDef](./type_defs.md#ebsutilizationmetrictypedef)
 - [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef)
 - [ExportDestinationTypeDef](./type_defs.md#exportdestinationtypedef)
+- [ExportEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponsetypedef)
 - [ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef)
+- [ExportLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponsetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef)
 - [GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef)

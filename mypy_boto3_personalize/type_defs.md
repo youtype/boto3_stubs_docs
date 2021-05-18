@@ -3,7 +3,7 @@
 > [Index](..) > [Personalize](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -87,6 +87,7 @@ type annotations stubs module
   - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
   - [ListSolutionVersionsResponseTypeDef](#listsolutionversionsresponsetypedef)
   - [ListSolutionsResponseTypeDef](#listsolutionsresponsetypedef)
+  - [OptimizationObjectiveTypeDef](#optimizationobjectivetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RecipeSummaryTypeDef](#recipesummarytypedef)
   - [RecipeTypeDef](#recipetypedef)
@@ -1105,6 +1106,18 @@ Optional fields:
   `List`\[[SolutionSummaryTypeDef](./type_defs.md#solutionsummarytypedef)\]
 - `nextToken`: `str`
 
+## OptimizationObjectiveTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import OptimizationObjectiveTypeDef
+```
+
+Optional fields:
+
+- `itemAttribute`: `str`
+- `objectiveSensitivity`:
+  [ObjectiveSensitivityType](./literals.md#objectivesensitivitytype)
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1190,6 +1203,8 @@ Optional fields:
 - `algorithmHyperParameters`: `Dict`\[`str`, `str`\]
 - `featureTransformationParameters`: `Dict`\[`str`, `str`\]
 - `autoMLConfig`: [AutoMLConfigTypeDef](./type_defs.md#automlconfigtypedef)
+- `optimizationObjective`:
+  [OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef)
 
 ## SolutionSummaryTypeDef
 

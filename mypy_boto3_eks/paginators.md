@@ -3,7 +3,7 @@
 > [Index](..) > [EKS](.) > Paginators
 
 Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS)
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS)
 type annotations stubs module
 [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
@@ -31,7 +31,7 @@ def get_describe_addon_versions_paginator() -> DescribeAddonVersionsPaginator:
 ```
 
 Boto3 documentation:
-[EKS.Paginator.DescribeAddonVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.DescribeAddonVersions)
+[EKS.Paginator.DescribeAddonVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.DescribeAddonVersions)
 
 Arguments for `DescribeAddonVersionsPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_list_addons_paginator() -> ListAddonsPaginator:
 ```
 
 Boto3 documentation:
-[EKS.Paginator.ListAddons](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.ListAddons)
+[EKS.Paginator.ListAddons](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.ListAddons)
 
 Arguments for `ListAddonsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
 ```
 
 Boto3 documentation:
-[EKS.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.ListClusters)
+[EKS.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.ListClusters)
 
 Arguments for `ListClustersPaginator.paginate` method:
 
@@ -107,7 +107,7 @@ def get_list_fargate_profiles_paginator() -> ListFargateProfilesPaginator:
 ```
 
 Boto3 documentation:
-[EKS.Paginator.ListFargateProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.ListFargateProfiles)
+[EKS.Paginator.ListFargateProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.ListFargateProfiles)
 
 Arguments for `ListFargateProfilesPaginator.paginate` method:
 
@@ -133,7 +133,7 @@ def get_list_identity_provider_configs_paginator() -> ListIdentityProviderConfig
 ```
 
 Boto3 documentation:
-[EKS.Paginator.ListIdentityProviderConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.ListIdentityProviderConfigs)
+[EKS.Paginator.ListIdentityProviderConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.ListIdentityProviderConfigs)
 
 Arguments for `ListIdentityProviderConfigsPaginator.paginate` method:
 
@@ -158,7 +158,7 @@ def get_list_nodegroups_paginator() -> ListNodegroupsPaginator:
 ```
 
 Boto3 documentation:
-[EKS.Paginator.ListNodegroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.ListNodegroups)
+[EKS.Paginator.ListNodegroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.ListNodegroups)
 
 Arguments for `ListNodegroupsPaginator.paginate` method:
 
@@ -183,7 +183,7 @@ def get_list_updates_paginator() -> ListUpdatesPaginator:
 ```
 
 Boto3 documentation:
-[EKS.Paginator.ListUpdates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/eks.html#EKS.Paginator.ListUpdates)
+[EKS.Paginator.ListUpdates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/eks.html#EKS.Paginator.ListUpdates)
 
 Arguments for `ListUpdatesPaginator.paginate` method:
 

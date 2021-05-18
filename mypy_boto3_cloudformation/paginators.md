@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFormation](.) > Paginators
 
 Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation)
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
 [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
@@ -37,7 +37,7 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
+[CloudFormation.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
 
 Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 
@@ -62,7 +62,7 @@ def get_describe_change_set_paginator() -> DescribeChangeSetPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.DescribeChangeSet](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
+[CloudFormation.Paginator.DescribeChangeSet](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
 
 Arguments for `DescribeChangeSetPaginator.paginate` method:
 
@@ -89,7 +89,7 @@ def get_describe_stack_events_paginator() -> DescribeStackEventsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.DescribeStackEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
+[CloudFormation.Paginator.DescribeStackEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
 
 Arguments for `DescribeStackEventsPaginator.paginate` method:
 
@@ -115,7 +115,7 @@ def get_describe_stacks_paginator() -> DescribeStacksPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.DescribeStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
+[CloudFormation.Paginator.DescribeStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
 
 Arguments for `DescribeStacksPaginator.paginate` method:
 
@@ -141,7 +141,7 @@ def get_list_change_sets_paginator() -> ListChangeSetsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListChangeSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
+[CloudFormation.Paginator.ListChangeSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
 
 Arguments for `ListChangeSetsPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_list_exports_paginator() -> ListExportsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListExports](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
+[CloudFormation.Paginator.ListExports](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
 
 Arguments for `ListExportsPaginator.paginate` method:
 
@@ -192,7 +192,7 @@ def get_list_imports_paginator() -> ListImportsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListImports](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
+[CloudFormation.Paginator.ListImports](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
 
 Arguments for `ListImportsPaginator.paginate` method:
 
@@ -218,7 +218,7 @@ def get_list_stack_instances_paginator() -> ListStackInstancesPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListStackInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
+[CloudFormation.Paginator.ListStackInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
 
 Arguments for `ListStackInstancesPaginator.paginate` method:
 
@@ -249,7 +249,7 @@ def get_list_stack_resources_paginator() -> ListStackResourcesPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListStackResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
+[CloudFormation.Paginator.ListStackResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
 
 Arguments for `ListStackResourcesPaginator.paginate` method:
 
@@ -275,7 +275,7 @@ def get_list_stack_set_operation_results_paginator() -> ListStackSetOperationRes
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListStackSetOperationResults](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
+[CloudFormation.Paginator.ListStackSetOperationResults](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
 
 Arguments for `ListStackSetOperationResultsPaginator.paginate` method:
 
@@ -303,7 +303,7 @@ def get_list_stack_set_operations_paginator() -> ListStackSetOperationsPaginator
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListStackSetOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
+[CloudFormation.Paginator.ListStackSetOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
 
 Arguments for `ListStackSetOperationsPaginator.paginate` method:
 
@@ -330,7 +330,7 @@ def get_list_stack_sets_paginator() -> ListStackSetsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListStackSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
+[CloudFormation.Paginator.ListStackSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
 
 Arguments for `ListStackSetsPaginator.paginate` method:
 
@@ -357,7 +357,7 @@ def get_list_stacks_paginator() -> ListStacksPaginator:
 ```
 
 Boto3 documentation:
-[CloudFormation.Paginator.ListStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
+[CloudFormation.Paginator.ListStacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
 
 Arguments for `ListStacksPaginator.paginate` method:
 

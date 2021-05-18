@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroups](.) > ResourceGroupsClient
 
 Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups)
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
@@ -45,7 +45,7 @@ def get_resource-groups_client() -> ResourceGroupsClient:
 ```
 
 Boto3 documentation:
-[ResourceGroups.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client)
+[ResourceGroups.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client)
 
 ## Exceptions
 
@@ -77,7 +77,7 @@ Exceptions:
 Type annotations for `boto3.client("resource-groups").can_paginate` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.can_paginate)
+[ResourceGroups.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.can_paginate)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns `bool`.
 Type annotations for `boto3.client("resource-groups").create_group` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.create_group)
+[ResourceGroups.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.create_group)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns [CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef).
 Type annotations for `boto3.client("resource-groups").delete_group` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.delete_group)
+[ResourceGroups.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.delete_group)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("resource-groups").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ResourceGroups.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.generate_presigned_url)
+[ResourceGroups.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.generate_presigned_url)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns `str`.
 Type annotations for `boto3.client("resource-groups").get_group` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.get_group)
+[ResourceGroups.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.get_group)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("resource-groups").get_group_configuration`
 method.
 
 Boto3 documentation:
-[ResourceGroups.Client.get_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration)
+[ResourceGroups.Client.get_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns
 Type annotations for `boto3.client("resource-groups").get_group_query` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.get_group_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.get_group_query)
+[ResourceGroups.Client.get_group_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.get_group_query)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("resource-groups").get_tags` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.get_tags)
+[ResourceGroups.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.get_tags)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Returns [GetTagsOutputTypeDef](./type_defs.md#gettagsoutputtypedef).
 Type annotations for `boto3.client("resource-groups").group_resources` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.group_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.group_resources)
+[ResourceGroups.Client.group_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.group_resources)
 
 Arguments:
 
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("resource-groups").list_group_resources`
 method.
 
 Boto3 documentation:
-[ResourceGroups.Client.list_group_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.list_group_resources)
+[ResourceGroups.Client.list_group_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.list_group_resources)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Returns
 Type annotations for `boto3.client("resource-groups").list_groups` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.list_groups)
+[ResourceGroups.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.list_groups)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Type annotations for `boto3.client("resource-groups").put_group_configuration`
 method.
 
 Boto3 documentation:
-[ResourceGroups.Client.put_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.put_group_configuration)
+[ResourceGroups.Client.put_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.put_group_configuration)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("resource-groups").search_resources` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.search_resources)
+[ResourceGroups.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.search_resources)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns
 Type annotations for `boto3.client("resource-groups").tag` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.tag](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.tag)
+[ResourceGroups.Client.tag](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.tag)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("resource-groups").ungroup_resources`
 method.
 
 Boto3 documentation:
-[ResourceGroups.Client.ungroup_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.ungroup_resources)
+[ResourceGroups.Client.ungroup_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.ungroup_resources)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Returns
 Type annotations for `boto3.client("resource-groups").untag` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.untag](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.untag)
+[ResourceGroups.Client.untag](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.untag)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Returns [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef).
 Type annotations for `boto3.client("resource-groups").update_group` method.
 
 Boto3 documentation:
-[ResourceGroups.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.update_group)
+[ResourceGroups.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.update_group)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("resource-groups").update_group_query`
 method.
 
 Boto3 documentation:
-[ResourceGroups.Client.update_group_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/resource-groups.html#ResourceGroups.Client.update_group_query)
+[ResourceGroups.Client.update_group_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/resource-groups.html#ResourceGroups.Client.update_group_query)
 
 Arguments:
 

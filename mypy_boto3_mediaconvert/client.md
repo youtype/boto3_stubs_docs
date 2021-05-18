@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConvert](.) > MediaConvertClient
 
 Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert)
+[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module
 [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
@@ -54,7 +54,7 @@ def get_mediaconvert_client() -> MediaConvertClient:
 ```
 
 Boto3 documentation:
-[MediaConvert.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client)
+[MediaConvert.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Type annotations for `boto3.client("mediaconvert").associate_certificate`
 method.
 
 Boto3 documentation:
-[MediaConvert.Client.associate_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
+[MediaConvert.Client.associate_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").can_paginate` method.
 
 Boto3 documentation:
-[MediaConvert.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate)
+[MediaConvert.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediaconvert").cancel_job` method.
 
 Boto3 documentation:
-[MediaConvert.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
+[MediaConvert.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").create_job` method.
 
 Boto3 documentation:
-[MediaConvert.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
+[MediaConvert.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 Type annotations for `boto3.client("mediaconvert").create_job_template` method.
 
 Boto3 documentation:
-[MediaConvert.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
+[MediaConvert.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").create_preset` method.
 
 Boto3 documentation:
-[MediaConvert.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
+[MediaConvert.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").create_queue` method.
 
 Boto3 documentation:
-[MediaConvert.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
+[MediaConvert.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").delete_job_template` method.
 
 Boto3 documentation:
-[MediaConvert.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
+[MediaConvert.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").delete_preset` method.
 
 Boto3 documentation:
-[MediaConvert.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
+[MediaConvert.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
 
 Arguments:
 
@@ -249,7 +249,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").delete_queue` method.
 
 Boto3 documentation:
-[MediaConvert.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
+[MediaConvert.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").describe_endpoints` method.
 
 Boto3 documentation:
-[MediaConvert.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
+[MediaConvert.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("mediaconvert").disassociate_certificate`
 method.
 
 Boto3 documentation:
-[MediaConvert.Client.disassociate_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
+[MediaConvert.Client.disassociate_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("mediaconvert").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaConvert.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url)
+[MediaConvert.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Returns `str`.
 Type annotations for `boto3.client("mediaconvert").get_job` method.
 
 Boto3 documentation:
-[MediaConvert.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
+[MediaConvert.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 Type annotations for `boto3.client("mediaconvert").get_job_template` method.
 
 Boto3 documentation:
-[MediaConvert.Client.get_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
+[MediaConvert.Client.get_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
 
 Arguments:
 
@@ -336,7 +336,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").get_preset` method.
 
 Boto3 documentation:
-[MediaConvert.Client.get_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
+[MediaConvert.Client.get_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Returns [GetPresetResponseTypeDef](./type_defs.md#getpresetresponsetypedef).
 Type annotations for `boto3.client("mediaconvert").get_queue` method.
 
 Boto3 documentation:
-[MediaConvert.Client.get_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
+[MediaConvert.Client.get_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Returns [GetQueueResponseTypeDef](./type_defs.md#getqueueresponsetypedef).
 Type annotations for `boto3.client("mediaconvert").list_job_templates` method.
 
 Boto3 documentation:
-[MediaConvert.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
+[MediaConvert.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").list_jobs` method.
 
 Boto3 documentation:
-[MediaConvert.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
+[MediaConvert.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 Type annotations for `boto3.client("mediaconvert").list_presets` method.
 
 Boto3 documentation:
-[MediaConvert.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
+[MediaConvert.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").list_queues` method.
 
 Boto3 documentation:
-[MediaConvert.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
+[MediaConvert.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("mediaconvert").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[MediaConvert.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
+[MediaConvert.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").tag_resource` method.
 
 Boto3 documentation:
-[MediaConvert.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
+[MediaConvert.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").untag_resource` method.
 
 Boto3 documentation:
-[MediaConvert.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
+[MediaConvert.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediaconvert").update_job_template` method.
 
 Boto3 documentation:
-[MediaConvert.Client.update_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
+[MediaConvert.Client.update_job_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
 
 Arguments:
 
@@ -500,7 +500,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").update_preset` method.
 
 Boto3 documentation:
-[MediaConvert.Client.update_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
+[MediaConvert.Client.update_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
 
 Arguments:
 
@@ -517,7 +517,7 @@ Returns
 Type annotations for `boto3.client("mediaconvert").update_queue` method.
 
 Boto3 documentation:
-[MediaConvert.Client.update_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
+[MediaConvert.Client.update_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
 
 Arguments:
 

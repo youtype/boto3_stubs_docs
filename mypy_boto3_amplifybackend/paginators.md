@@ -3,7 +3,7 @@
 > [Index](..) > [AmplifyBackend](.) > Paginators
 
 Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplifybackend.html#AmplifyBackend)
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
 [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
@@ -25,7 +25,7 @@ def get_list_backend_jobs_paginator() -> ListBackendJobsPaginator:
 ```
 
 Boto3 documentation:
-[AmplifyBackend.Paginator.ListBackendJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplifybackend.html#AmplifyBackend.Paginator.ListBackendJobs)
+[AmplifyBackend.Paginator.ListBackendJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Paginator.ListBackendJobs)
 
 Arguments for `ListBackendJobsPaginator.paginate` method:
 

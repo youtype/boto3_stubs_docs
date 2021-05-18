@@ -3,7 +3,7 @@
 > [Index](..) > [ECRPublic](.) > ECRPublicClient
 
 Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic)
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
 [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
@@ -52,7 +52,7 @@ def get_ecr-public_client() -> ECRPublicClient:
 ```
 
 Boto3 documentation:
-[ECRPublic.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client)
+[ECRPublic.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client)
 
 ## Exceptions
 
@@ -101,7 +101,7 @@ Type annotations for
 `boto3.client("ecr-public").batch_check_layer_availability` method.
 
 Boto3 documentation:
-[ECRPublic.Client.batch_check_layer_availability](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.batch_check_layer_availability)
+[ECRPublic.Client.batch_check_layer_availability](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.batch_check_layer_availability)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").batch_delete_image` method.
 
 Boto3 documentation:
-[ECRPublic.Client.batch_delete_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.batch_delete_image)
+[ECRPublic.Client.batch_delete_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.batch_delete_image)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").can_paginate` method.
 
 Boto3 documentation:
-[ECRPublic.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.can_paginate)
+[ECRPublic.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.can_paginate)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ecr-public").complete_layer_upload` method.
 
 Boto3 documentation:
-[ECRPublic.Client.complete_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.complete_layer_upload)
+[ECRPublic.Client.complete_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.complete_layer_upload)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").create_repository` method.
 
 Boto3 documentation:
-[ECRPublic.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.create_repository)
+[ECRPublic.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.create_repository)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").delete_repository` method.
 
 Boto3 documentation:
-[ECRPublic.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.delete_repository)
+[ECRPublic.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.delete_repository)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("ecr-public").delete_repository_policy`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.delete_repository_policy)
+[ECRPublic.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.delete_repository_policy)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").describe_image_tags` method.
 
 Boto3 documentation:
-[ECRPublic.Client.describe_image_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.describe_image_tags)
+[ECRPublic.Client.describe_image_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.describe_image_tags)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").describe_images` method.
 
 Boto3 documentation:
-[ECRPublic.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.describe_images)
+[ECRPublic.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.describe_images)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").describe_registries` method.
 
 Boto3 documentation:
-[ECRPublic.Client.describe_registries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.describe_registries)
+[ECRPublic.Client.describe_registries](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.describe_registries)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").describe_repositories` method.
 
 Boto3 documentation:
-[ECRPublic.Client.describe_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.describe_repositories)
+[ECRPublic.Client.describe_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.describe_repositories)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("ecr-public").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.generate_presigned_url)
+[ECRPublic.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.generate_presigned_url)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("ecr-public").get_authorization_token`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.get_authorization_token)
+[ECRPublic.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.get_authorization_token)
 
 Returns
 [GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("ecr-public").get_registry_catalog_data`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.get_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.get_registry_catalog_data)
+[ECRPublic.Client.get_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.get_registry_catalog_data)
 
 Returns
 [GetRegistryCatalogDataResponseTypeDef](./type_defs.md#getregistrycatalogdataresponsetypedef).
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("ecr-public").get_repository_catalog_data`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.get_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.get_repository_catalog_data)
+[ECRPublic.Client.get_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.get_repository_catalog_data)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").get_repository_policy` method.
 
 Boto3 documentation:
-[ECRPublic.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.get_repository_policy)
+[ECRPublic.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.get_repository_policy)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").initiate_layer_upload` method.
 
 Boto3 documentation:
-[ECRPublic.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.initiate_layer_upload)
+[ECRPublic.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.initiate_layer_upload)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("ecr-public").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.list_tags_for_resource)
+[ECRPublic.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").put_image` method.
 
 Boto3 documentation:
-[ECRPublic.Client.put_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.put_image)
+[ECRPublic.Client.put_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.put_image)
 
 Arguments:
 
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("ecr-public").put_registry_catalog_data`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.put_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.put_registry_catalog_data)
+[ECRPublic.Client.put_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.put_registry_catalog_data)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Type annotations for `boto3.client("ecr-public").put_repository_catalog_data`
 method.
 
 Boto3 documentation:
-[ECRPublic.Client.put_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.put_repository_catalog_data)
+[ECRPublic.Client.put_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.put_repository_catalog_data)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").set_repository_policy` method.
 
 Boto3 documentation:
-[ECRPublic.Client.set_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.set_repository_policy)
+[ECRPublic.Client.set_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.set_repository_policy)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Returns
 Type annotations for `boto3.client("ecr-public").tag_resource` method.
 
 Boto3 documentation:
-[ECRPublic.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.tag_resource)
+[ECRPublic.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.tag_resource)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ecr-public").untag_resource` method.
 
 Boto3 documentation:
-[ECRPublic.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.untag_resource)
+[ECRPublic.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.untag_resource)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ecr-public").upload_layer_part` method.
 
 Boto3 documentation:
-[ECRPublic.Client.upload_layer_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Client.upload_layer_part)
+[ECRPublic.Client.upload_layer_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Client.upload_layer_part)
 
 Arguments:
 

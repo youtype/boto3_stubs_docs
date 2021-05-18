@@ -3,7 +3,7 @@
 > [Index](..) > Personalize
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -141,6 +141,7 @@ from mypy_boto3_personalize.literals import IngestionModeType, ...
 - [ListSchemasPaginatorName](./literals.md#listschemaspaginatorname)
 - [ListSolutionVersionsPaginatorName](./literals.md#listsolutionversionspaginatorname)
 - [ListSolutionsPaginatorName](./literals.md#listsolutionspaginatorname)
+- [ObjectiveSensitivityType](./literals.md#objectivesensitivitytype)
 - [RecipeProviderType](./literals.md#recipeprovidertype)
 - [TrainingModeType](./literals.md#trainingmodetype)
 
@@ -234,6 +235,7 @@ from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef, ...
 - [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)
 - [ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef)
 - [ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef)
+- [OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef)
 - [RecipeTypeDef](./type_defs.md#recipetypedef)

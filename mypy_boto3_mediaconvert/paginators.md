@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConvert](.) > Paginators
 
 Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert)
+[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module
 [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
@@ -29,7 +29,7 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
+[MediaConvert.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
 
 Arguments for `DescribeEndpointsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListJobTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
+[MediaConvert.Paginator.ListJobTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
 
 Arguments for `ListJobTemplatesPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
+[MediaConvert.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 
@@ -110,7 +110,7 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
+[MediaConvert.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
 
 Arguments for `ListPresetsPaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
 ```
 
 Boto3 documentation:
-[MediaConvert.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
+[MediaConvert.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
 
 Arguments for `ListQueuesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [SageMaker](.) > Waiters
 
 Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker)
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
 [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
@@ -32,7 +32,7 @@ def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.endpoint_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_deleted)
+[SageMaker.Waiter.endpoint_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_deleted)
 
 Arguments for `EndpointDeletedWaiter.wait` method:
 
@@ -54,7 +54,7 @@ def get_endpoint_in_service_waiter() -> EndpointInServiceWaiter:
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.endpoint_in_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_in_service)
+[SageMaker.Waiter.endpoint_in_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_in_service)
 
 Arguments for `EndpointInServiceWaiter.wait` method:
 
@@ -76,7 +76,7 @@ def get_notebook_instance_deleted_waiter() -> NotebookInstanceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.notebook_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_deleted)
+[SageMaker.Waiter.notebook_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_deleted)
 
 Arguments for `NotebookInstanceDeletedWaiter.wait` method:
 
@@ -98,7 +98,7 @@ def get_notebook_instance_in_service_waiter() -> NotebookInstanceInServiceWaiter
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.notebook_instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_in_service)
+[SageMaker.Waiter.notebook_instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_in_service)
 
 Arguments for `NotebookInstanceInServiceWaiter.wait` method:
 
@@ -120,7 +120,7 @@ def get_notebook_instance_stopped_waiter() -> NotebookInstanceStoppedWaiter:
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.notebook_instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_stopped)
+[SageMaker.Waiter.notebook_instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_stopped)
 
 Arguments for `NotebookInstanceStoppedWaiter.wait` method:
 
@@ -142,7 +142,7 @@ def get_processing_job_completed_or_stopped_waiter() -> ProcessingJobCompletedOr
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.processing_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.processing_job_completed_or_stopped)
+[SageMaker.Waiter.processing_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.processing_job_completed_or_stopped)
 
 Arguments for `ProcessingJobCompletedOrStoppedWaiter.wait` method:
 
@@ -164,7 +164,7 @@ def get_training_job_completed_or_stopped_waiter() -> TrainingJobCompletedOrStop
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.training_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.training_job_completed_or_stopped)
+[SageMaker.Waiter.training_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.training_job_completed_or_stopped)
 
 Arguments for `TrainingJobCompletedOrStoppedWaiter.wait` method:
 
@@ -186,7 +186,7 @@ def get_transform_job_completed_or_stopped_waiter() -> TransformJobCompletedOrSt
 ```
 
 Boto3 documentation:
-[SageMaker.Waiter.transform_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker.Waiter.transform_job_completed_or_stopped)
+[SageMaker.Waiter.transform_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker.Waiter.transform_job_completed_or_stopped)
 
 Arguments for `TransformJobCompletedOrStoppedWaiter.wait` method:
 

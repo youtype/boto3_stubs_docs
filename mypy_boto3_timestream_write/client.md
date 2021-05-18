@@ -3,7 +3,7 @@
 > [Index](..) > [TimestreamWrite](.) > TimestreamWriteClient
 
 Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite)
+[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
 [mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
@@ -43,7 +43,7 @@ def get_timestream-write_client() -> TimestreamWriteClient:
 ```
 
 Boto3 documentation:
-[TimestreamWrite.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client)
+[TimestreamWrite.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client)
 
 ## Exceptions
 
@@ -77,7 +77,7 @@ Exceptions:
 Type annotations for `boto3.client("timestream-write").can_paginate` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate)
+[TimestreamWrite.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns `bool`.
 Type annotations for `boto3.client("timestream-write").create_database` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
+[TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").create_table` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
+[TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
 
 Arguments:
 
@@ -124,7 +124,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").delete_database` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
+[TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Arguments:
 Type annotations for `boto3.client("timestream-write").delete_table` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
+[TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("timestream-write").describe_database`
 method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
+[TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Type annotations for `boto3.client("timestream-write").describe_endpoints`
 method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
+[TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
@@ -173,7 +173,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").describe_table` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
+[TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("timestream-write").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url)
+[TimestreamWrite.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns `str`.
 Type annotations for `boto3.client("timestream-write").list_databases` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
+[TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").list_tables` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
+[TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("timestream-write").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
+[TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").tag_resource` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
+[TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
 
 Arguments:
 
@@ -264,7 +264,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("timestream-write").untag_resource` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
+[TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("timestream-write").update_database` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
+[TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").update_table` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
+[TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
 
 Arguments:
 
@@ -311,7 +311,7 @@ Returns
 Type annotations for `boto3.client("timestream-write").write_records` method.
 
 Boto3 documentation:
-[TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
+[TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
 
 Arguments:
 

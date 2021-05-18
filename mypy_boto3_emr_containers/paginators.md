@@ -3,7 +3,7 @@
 > [Index](..) > [EMRContainers](.) > Paginators
 
 Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/emr-containers.html#EMRContainers)
+[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
@@ -27,7 +27,7 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
 ```
 
 Boto3 documentation:
-[EMRContainers.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
+[EMRContainers.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
 
 Arguments for `ListJobRunsPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_list_managed_endpoints_paginator() -> ListManagedEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[EMRContainers.Paginator.ListManagedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
+[EMRContainers.Paginator.ListManagedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
 
 Arguments for `ListManagedEndpointsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_virtual_clusters_paginator() -> ListVirtualClustersPaginator:
 ```
 
 Boto3 documentation:
-[EMRContainers.Paginator.ListVirtualClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
+[EMRContainers.Paginator.ListVirtualClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
 
 Arguments for `ListVirtualClustersPaginator.paginate` method:
 

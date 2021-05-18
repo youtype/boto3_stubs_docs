@@ -3,7 +3,7 @@
 > [Index](..) > [Glacier](.) > GlacierClient
 
 Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier)
+[Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier)
 type annotations stubs module
 [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
@@ -63,7 +63,7 @@ def get_glacier_client() -> GlacierClient:
 ```
 
 Boto3 documentation:
-[Glacier.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client)
+[Glacier.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Exceptions:
 Type annotations for `boto3.client("glacier").abort_multipart_upload` method.
 
 Boto3 documentation:
-[Glacier.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.abort_multipart_upload)
+[Glacier.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.abort_multipart_upload)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").abort_vault_lock` method.
 
 Boto3 documentation:
-[Glacier.Client.abort_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.abort_vault_lock)
+[Glacier.Client.abort_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.abort_vault_lock)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").add_tags_to_vault` method.
 
 Boto3 documentation:
-[Glacier.Client.add_tags_to_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.add_tags_to_vault)
+[Glacier.Client.add_tags_to_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.add_tags_to_vault)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").can_paginate` method.
 
 Boto3 documentation:
-[Glacier.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.can_paginate)
+[Glacier.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.can_paginate)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("glacier").complete_multipart_upload`
 method.
 
 Boto3 documentation:
-[Glacier.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.complete_multipart_upload)
+[Glacier.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.complete_multipart_upload)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns
 Type annotations for `boto3.client("glacier").complete_vault_lock` method.
 
 Boto3 documentation:
-[Glacier.Client.complete_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.complete_vault_lock)
+[Glacier.Client.complete_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.complete_vault_lock)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").create_vault` method.
 
 Boto3 documentation:
-[Glacier.Client.create_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.create_vault)
+[Glacier.Client.create_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.create_vault)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 Type annotations for `boto3.client("glacier").delete_archive` method.
 
 Boto3 documentation:
-[Glacier.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.delete_archive)
+[Glacier.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.delete_archive)
 
 Arguments:
 
@@ -206,7 +206,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").delete_vault` method.
 
 Boto3 documentation:
-[Glacier.Client.delete_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.delete_vault)
+[Glacier.Client.delete_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.delete_vault)
 
 Arguments:
 
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("glacier").delete_vault_access_policy`
 method.
 
 Boto3 documentation:
-[Glacier.Client.delete_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.delete_vault_access_policy)
+[Glacier.Client.delete_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.delete_vault_access_policy)
 
 Arguments:
 
@@ -232,7 +232,7 @@ Type annotations for `boto3.client("glacier").delete_vault_notifications`
 method.
 
 Boto3 documentation:
-[Glacier.Client.delete_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.delete_vault_notifications)
+[Glacier.Client.delete_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.delete_vault_notifications)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").describe_job` method.
 
 Boto3 documentation:
-[Glacier.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.describe_job)
+[Glacier.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.describe_job)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Returns
 Type annotations for `boto3.client("glacier").describe_vault` method.
 
 Boto3 documentation:
-[Glacier.Client.describe_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.describe_vault)
+[Glacier.Client.describe_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.describe_vault)
 
 Arguments:
 
@@ -275,7 +275,7 @@ Returns
 Type annotations for `boto3.client("glacier").generate_presigned_url` method.
 
 Boto3 documentation:
-[Glacier.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.generate_presigned_url)
+[Glacier.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.generate_presigned_url)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("glacier").get_data_retrieval_policy`
 method.
 
 Boto3 documentation:
-[Glacier.Client.get_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.get_data_retrieval_policy)
+[Glacier.Client.get_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.get_data_retrieval_policy)
 
 Arguments:
 
@@ -306,7 +306,7 @@ Returns
 Type annotations for `boto3.client("glacier").get_job_output` method.
 
 Boto3 documentation:
-[Glacier.Client.get_job_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.get_job_output)
+[Glacier.Client.get_job_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.get_job_output)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 Type annotations for `boto3.client("glacier").get_vault_access_policy` method.
 
 Boto3 documentation:
-[Glacier.Client.get_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.get_vault_access_policy)
+[Glacier.Client.get_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.get_vault_access_policy)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("glacier").get_vault_lock` method.
 
 Boto3 documentation:
-[Glacier.Client.get_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.get_vault_lock)
+[Glacier.Client.get_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.get_vault_lock)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns [GetVaultLockOutputTypeDef](./type_defs.md#getvaultlockoutputtypedef).
 Type annotations for `boto3.client("glacier").get_vault_notifications` method.
 
 Boto3 documentation:
-[Glacier.Client.get_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.get_vault_notifications)
+[Glacier.Client.get_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.get_vault_notifications)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns
 Type annotations for `boto3.client("glacier").initiate_job` method.
 
 Boto3 documentation:
-[Glacier.Client.initiate_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.initiate_job)
+[Glacier.Client.initiate_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.initiate_job)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("glacier").initiate_multipart_upload`
 method.
 
 Boto3 documentation:
-[Glacier.Client.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.initiate_multipart_upload)
+[Glacier.Client.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.initiate_multipart_upload)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("glacier").initiate_vault_lock` method.
 
 Boto3 documentation:
-[Glacier.Client.initiate_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.initiate_vault_lock)
+[Glacier.Client.initiate_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.initiate_vault_lock)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Returns
 Type annotations for `boto3.client("glacier").list_jobs` method.
 
 Boto3 documentation:
-[Glacier.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.list_jobs)
+[Glacier.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.list_jobs)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 Type annotations for `boto3.client("glacier").list_multipart_uploads` method.
 
 Boto3 documentation:
-[Glacier.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.list_multipart_uploads)
+[Glacier.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.list_multipart_uploads)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Returns
 Type annotations for `boto3.client("glacier").list_parts` method.
 
 Boto3 documentation:
-[Glacier.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.list_parts)
+[Glacier.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.list_parts)
 
 Arguments:
 
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("glacier").list_provisioned_capacity`
 method.
 
 Boto3 documentation:
-[Glacier.Client.list_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.list_provisioned_capacity)
+[Glacier.Client.list_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.list_provisioned_capacity)
 
 Arguments:
 
@@ -482,7 +482,7 @@ Returns
 Type annotations for `boto3.client("glacier").list_tags_for_vault` method.
 
 Boto3 documentation:
-[Glacier.Client.list_tags_for_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.list_tags_for_vault)
+[Glacier.Client.list_tags_for_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.list_tags_for_vault)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Returns
 Type annotations for `boto3.client("glacier").list_vaults` method.
 
 Boto3 documentation:
-[Glacier.Client.list_vaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.list_vaults)
+[Glacier.Client.list_vaults](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.list_vaults)
 
 Arguments:
 
@@ -513,7 +513,7 @@ Type annotations for `boto3.client("glacier").purchase_provisioned_capacity`
 method.
 
 Boto3 documentation:
-[Glacier.Client.purchase_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.purchase_provisioned_capacity)
+[Glacier.Client.purchase_provisioned_capacity](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.purchase_provisioned_capacity)
 
 Arguments:
 
@@ -527,7 +527,7 @@ Returns
 Type annotations for `boto3.client("glacier").remove_tags_from_vault` method.
 
 Boto3 documentation:
-[Glacier.Client.remove_tags_from_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.remove_tags_from_vault)
+[Glacier.Client.remove_tags_from_vault](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.remove_tags_from_vault)
 
 Arguments:
 
@@ -541,7 +541,7 @@ Type annotations for `boto3.client("glacier").set_data_retrieval_policy`
 method.
 
 Boto3 documentation:
-[Glacier.Client.set_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.set_data_retrieval_policy)
+[Glacier.Client.set_data_retrieval_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.set_data_retrieval_policy)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").set_vault_access_policy` method.
 
 Boto3 documentation:
-[Glacier.Client.set_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.set_vault_access_policy)
+[Glacier.Client.set_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.set_vault_access_policy)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").set_vault_notifications` method.
 
 Boto3 documentation:
-[Glacier.Client.set_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.set_vault_notifications)
+[Glacier.Client.set_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.set_vault_notifications)
 
 Arguments:
 
@@ -581,7 +581,7 @@ Arguments:
 Type annotations for `boto3.client("glacier").upload_archive` method.
 
 Boto3 documentation:
-[Glacier.Client.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.upload_archive)
+[Glacier.Client.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.upload_archive)
 
 Arguments:
 
@@ -599,7 +599,7 @@ Returns
 Type annotations for `boto3.client("glacier").upload_multipart_part` method.
 
 Boto3 documentation:
-[Glacier.Client.upload_multipart_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glacier.html#Glacier.Client.upload_multipart_part)
+[Glacier.Client.upload_multipart_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glacier.html#Glacier.Client.upload_multipart_part)
 
 Arguments:
 

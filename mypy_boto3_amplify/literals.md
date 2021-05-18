@@ -3,7 +3,7 @@
 > [Index](..) > [Amplify](.) > Literals
 
 Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amplify.html#Amplify)
+[Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplify.html#Amplify)
 type annotations stubs module
 [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
 

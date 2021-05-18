@@ -3,7 +3,7 @@
 > [Index](..) > [Signer](.) > Paginators
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/signer.html#Signer)
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
@@ -27,7 +27,7 @@ def get_list_signing_jobs_paginator() -> ListSigningJobsPaginator:
 ```
 
 Boto3 documentation:
-[Signer.Paginator.ListSigningJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/signer.html#Signer.Paginator.ListSigningJobs)
+[Signer.Paginator.ListSigningJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Paginator.ListSigningJobs)
 
 Arguments for `ListSigningJobsPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_list_signing_platforms_paginator() -> ListSigningPlatformsPaginator:
 ```
 
 Boto3 documentation:
-[Signer.Paginator.ListSigningPlatforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/signer.html#Signer.Paginator.ListSigningPlatforms)
+[Signer.Paginator.ListSigningPlatforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Paginator.ListSigningPlatforms)
 
 Arguments for `ListSigningPlatformsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_signing_profiles_paginator() -> ListSigningProfilesPaginator:
 ```
 
 Boto3 documentation:
-[Signer.Paginator.ListSigningProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/signer.html#Signer.Paginator.ListSigningProfiles)
+[Signer.Paginator.ListSigningProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Paginator.ListSigningProfiles)
 
 Arguments for `ListSigningProfilesPaginator.paginate` method:
 

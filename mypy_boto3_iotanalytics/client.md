@@ -3,7 +3,7 @@
 > [Index](..) > [IoTAnalytics](.) > IoTAnalyticsClient
 
 Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics)
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
 [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
@@ -63,7 +63,7 @@ def get_iotanalytics_client() -> IoTAnalyticsClient:
 ```
 
 Boto3 documentation:
-[IoTAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client)
+[IoTAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client)
 
 ## Exceptions
 
@@ -95,7 +95,7 @@ Exceptions:
 Type annotations for `boto3.client("iotanalytics").batch_put_message` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.batch_put_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.batch_put_message)
+[IoTAnalytics.Client.batch_put_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.batch_put_message)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").can_paginate` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.can_paginate)
+[IoTAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.can_paginate)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Type annotations for
 `boto3.client("iotanalytics").cancel_pipeline_reprocessing` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.cancel_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.cancel_pipeline_reprocessing)
+[IoTAnalytics.Client.cancel_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.cancel_pipeline_reprocessing)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotanalytics").create_channel` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.create_channel)
+[IoTAnalytics.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.create_channel)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").create_dataset` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset)
+[IoTAnalytics.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset)
 
 Arguments:
 
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("iotanalytics").create_dataset_content`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.create_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset_content)
+[IoTAnalytics.Client.create_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset_content)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").create_datastore` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.create_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.create_datastore)
+[IoTAnalytics.Client.create_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.create_datastore)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").create_pipeline` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.create_pipeline)
+[IoTAnalytics.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.create_pipeline)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").delete_channel` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_channel)
+[IoTAnalytics.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_channel)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").delete_dataset` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset)
+[IoTAnalytics.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset)
 
 Arguments:
 
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("iotanalytics").delete_dataset_content`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.delete_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset_content)
+[IoTAnalytics.Client.delete_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset_content)
 
 Arguments:
 
@@ -276,7 +276,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").delete_datastore` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.delete_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_datastore)
+[IoTAnalytics.Client.delete_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_datastore)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").delete_pipeline` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_pipeline)
+[IoTAnalytics.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_pipeline)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").describe_channel` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_channel)
+[IoTAnalytics.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_channel)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").describe_dataset` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_dataset)
+[IoTAnalytics.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_dataset)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").describe_datastore` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.describe_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_datastore)
+[IoTAnalytics.Client.describe_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_datastore)
 
 Arguments:
 
@@ -343,7 +343,7 @@ Type annotations for `boto3.client("iotanalytics").describe_logging_options`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_logging_options)
+[IoTAnalytics.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_logging_options)
 
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
@@ -353,7 +353,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").describe_pipeline` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.describe_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_pipeline)
+[IoTAnalytics.Client.describe_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_pipeline)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("iotanalytics").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.generate_presigned_url)
+[IoTAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.generate_presigned_url)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Returns `str`.
 Type annotations for `boto3.client("iotanalytics").get_dataset_content` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.get_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.get_dataset_content)
+[IoTAnalytics.Client.get_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.get_dataset_content)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").list_channels` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.list_channels)
+[IoTAnalytics.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.list_channels)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("iotanalytics").list_dataset_contents`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.list_dataset_contents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.list_dataset_contents)
+[IoTAnalytics.Client.list_dataset_contents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.list_dataset_contents)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").list_datasets` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datasets)
+[IoTAnalytics.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datasets)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").list_datastores` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.list_datastores](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datastores)
+[IoTAnalytics.Client.list_datastores](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datastores)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").list_pipelines` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.list_pipelines)
+[IoTAnalytics.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.list_pipelines)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("iotanalytics").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.list_tags_for_resource)
+[IoTAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").put_logging_options` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.put_logging_options)
+[IoTAnalytics.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.put_logging_options)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("iotanalytics").run_pipeline_activity`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.run_pipeline_activity](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.run_pipeline_activity)
+[IoTAnalytics.Client.run_pipeline_activity](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.run_pipeline_activity)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").sample_channel_data` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.sample_channel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.sample_channel_data)
+[IoTAnalytics.Client.sample_channel_data](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.sample_channel_data)
 
 Arguments:
 
@@ -541,7 +541,7 @@ Type annotations for `boto3.client("iotanalytics").start_pipeline_reprocessing`
 method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.start_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.start_pipeline_reprocessing)
+[IoTAnalytics.Client.start_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.start_pipeline_reprocessing)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Returns
 Type annotations for `boto3.client("iotanalytics").tag_resource` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.tag_resource)
+[IoTAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.tag_resource)
 
 Arguments:
 
@@ -573,7 +573,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotanalytics").untag_resource` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.untag_resource)
+[IoTAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.untag_resource)
 
 Arguments:
 
@@ -587,7 +587,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotanalytics").update_channel` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.update_channel)
+[IoTAnalytics.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.update_channel)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").update_dataset` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.update_dataset)
+[IoTAnalytics.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.update_dataset)
 
 Arguments:
 
@@ -626,7 +626,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").update_datastore` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.update_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.update_datastore)
+[IoTAnalytics.Client.update_datastore](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.update_datastore)
 
 Arguments:
 
@@ -643,7 +643,7 @@ Arguments:
 Type annotations for `boto3.client("iotanalytics").update_pipeline` method.
 
 Boto3 documentation:
-[IoTAnalytics.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iotanalytics.html#IoTAnalytics.Client.update_pipeline)
+[IoTAnalytics.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iotanalytics.html#IoTAnalytics.Client.update_pipeline)
 
 Arguments:
 

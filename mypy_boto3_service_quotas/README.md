@@ -3,7 +3,7 @@
 > [Index](..) > ServiceQuotas
 
 Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/service-quotas.html#ServiceQuotas)
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 

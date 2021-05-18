@@ -3,7 +3,7 @@
 > [Index](..) > [ApiGatewayManagementApi](.) > ApiGatewayManagementApiClient
 
 Auto-generated documentation for
-[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
+[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
 type annotations stubs module
 [mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
@@ -31,7 +31,7 @@ def get_apigatewaymanagementapi_client() -> ApiGatewayManagementApiClient:
 ```
 
 Boto3 documentation:
-[ApiGatewayManagementApi.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
+[ApiGatewayManagementApi.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
 
 ## Exceptions
 
@@ -61,7 +61,7 @@ Type annotations for `boto3.client("apigatewaymanagementapi").can_paginate`
 method.
 
 Boto3 documentation:
-[ApiGatewayManagementApi.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.can_paginate)
+[ApiGatewayManagementApi.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Type annotations for
 `boto3.client("apigatewaymanagementapi").delete_connection` method.
 
 Boto3 documentation:
-[ApiGatewayManagementApi.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection)
+[ApiGatewayManagementApi.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection)
 
 Arguments:
 
@@ -87,7 +87,7 @@ Type annotations for
 `boto3.client("apigatewaymanagementapi").generate_presigned_url` method.
 
 Boto3 documentation:
-[ApiGatewayManagementApi.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.generate_presigned_url)
+[ApiGatewayManagementApi.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.generate_presigned_url)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Type annotations for `boto3.client("apigatewaymanagementapi").get_connection`
 method.
 
 Boto3 documentation:
-[ApiGatewayManagementApi.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection)
+[ApiGatewayManagementApi.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Type annotations for
 `boto3.client("apigatewaymanagementapi").post_to_connection` method.
 
 Boto3 documentation:
-[ApiGatewayManagementApi.Client.post_to_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection)
+[ApiGatewayManagementApi.Client.post_to_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection)
 
 Arguments:
 

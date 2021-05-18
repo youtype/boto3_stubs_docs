@@ -3,7 +3,7 @@
 > [Index](..) > LicenseManager
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
@@ -41,11 +41,13 @@ from mypy_boto3_license_manager.client import LicenseManagerClient
 - [create_grant_version](./client.md#create_grant_version)
 - [create_license](./client.md#create_license)
 - [create_license_configuration](./client.md#create_license_configuration)
+- [create_license_manager_report_generator](./client.md#create_license_manager_report_generator)
 - [create_license_version](./client.md#create_license_version)
 - [create_token](./client.md#create_token)
 - [delete_grant](./client.md#delete_grant)
 - [delete_license](./client.md#delete_license)
 - [delete_license_configuration](./client.md#delete_license_configuration)
+- [delete_license_manager_report_generator](./client.md#delete_license_manager_report_generator)
 - [delete_token](./client.md#delete_token)
 - [extend_license_consumption](./client.md#extend_license_consumption)
 - [generate_presigned_url](./client.md#generate_presigned_url)
@@ -53,6 +55,7 @@ from mypy_boto3_license_manager.client import LicenseManagerClient
 - [get_grant](./client.md#get_grant)
 - [get_license](./client.md#get_license)
 - [get_license_configuration](./client.md#get_license_configuration)
+- [get_license_manager_report_generator](./client.md#get_license_manager_report_generator)
 - [get_license_usage](./client.md#get_license_usage)
 - [get_paginator](./client.md#get_paginator)
 - [get_service_settings](./client.md#get_service_settings)
@@ -60,6 +63,7 @@ from mypy_boto3_license_manager.client import LicenseManagerClient
 - [list_distributed_grants](./client.md#list_distributed_grants)
 - [list_failures_for_license_configuration_operations](./client.md#list_failures_for_license_configuration_operations)
 - [list_license_configurations](./client.md#list_license_configurations)
+- [list_license_manager_report_generators](./client.md#list_license_manager_report_generators)
 - [list_license_specifications_for_resource](./client.md#list_license_specifications_for_resource)
 - [list_license_versions](./client.md#list_license_versions)
 - [list_licenses](./client.md#list_licenses)
@@ -73,6 +77,7 @@ from mypy_boto3_license_manager.client import LicenseManagerClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_license_configuration](./client.md#update_license_configuration)
+- [update_license_manager_report_generator](./client.md#update_license_manager_report_generator)
 - [update_license_specifications_for_resource](./client.md#update_license_specifications_for_resource)
 - [update_service_settings](./client.md#update_service_settings)
 
@@ -144,6 +149,8 @@ from mypy_boto3_license_manager.literals import AllowedOperationType, ...
 - [ListUsageForLicenseConfigurationPaginatorName](./literals.md#listusageforlicenseconfigurationpaginatorname)
 - [ReceivedStatusType](./literals.md#receivedstatustype)
 - [RenewTypeType](./literals.md#renewtypetype)
+- [ReportFrequencyTypeType](./literals.md#reportfrequencytypetype)
+- [ReportTypeType](./literals.md#reporttypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [TokenTypeType](./literals.md#tokentypetype)
 
@@ -168,6 +175,7 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef, ...
 - [CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef)
 - [CreateGrantVersionResponseTypeDef](./type_defs.md#creategrantversionresponsetypedef)
 - [CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef)
+- [CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef)
 - [CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef)
 - [CreateLicenseVersionResponseTypeDef](./type_defs.md#createlicenseversionresponsetypedef)
 - [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef)
@@ -182,6 +190,7 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef, ...
 - [GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef)
 - [GetGrantResponseTypeDef](./type_defs.md#getgrantresponsetypedef)
 - [GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef)
+- [GetLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#getlicensemanagerreportgeneratorresponsetypedef)
 - [GetLicenseResponseTypeDef](./type_defs.md#getlicenseresponsetypedef)
 - [GetLicenseUsageResponseTypeDef](./type_defs.md#getlicenseusageresponsetypedef)
 - [GetServiceSettingsResponseTypeDef](./type_defs.md#getservicesettingsresponsetypedef)
@@ -201,6 +210,7 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef, ...
 - [ListDistributedGrantsResponseTypeDef](./type_defs.md#listdistributedgrantsresponsetypedef)
 - [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponsetypedef)
 - [ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef)
+- [ListLicenseManagerReportGeneratorsResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponsetypedef)
 - [ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef)
 - [ListLicenseVersionsResponseTypeDef](./type_defs.md#listlicenseversionsresponsetypedef)
 - [ListLicensesResponseTypeDef](./type_defs.md#listlicensesresponsetypedef)
@@ -219,6 +229,10 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef, ...
 - [ProvisionalConfigurationTypeDef](./type_defs.md#provisionalconfigurationtypedef)
 - [ReceivedMetadataTypeDef](./type_defs.md#receivedmetadatatypedef)
 - [RejectGrantResponseTypeDef](./type_defs.md#rejectgrantresponsetypedef)
+- [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
+- [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef)
+- [ReportGeneratorTypeDef](./type_defs.md#reportgeneratortypedef)
 - [ResourceInventoryTypeDef](./type_defs.md#resourceinventorytypedef)
+- [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TokenDataTypeDef](./type_defs.md#tokendatatypedef)

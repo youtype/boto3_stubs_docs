@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > Literals
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -20,9 +20,19 @@ type annotations stubs module
   - [BotVersionSortAttributeType](#botversionsortattributetype)
   - [BuiltInIntentSortAttributeType](#builtinintentsortattributetype)
   - [BuiltInSlotTypeSortAttributeType](#builtinslottypesortattributetype)
+  - [ExportFilterNameType](#exportfilternametype)
+  - [ExportFilterOperatorType](#exportfilteroperatortype)
+  - [ExportSortAttributeType](#exportsortattributetype)
+  - [ExportStatusType](#exportstatustype)
+  - [ImportExportFileFormatType](#importexportfileformattype)
+  - [ImportFilterNameType](#importfilternametype)
+  - [ImportFilterOperatorType](#importfilteroperatortype)
+  - [ImportSortAttributeType](#importsortattributetype)
+  - [ImportStatusType](#importstatustype)
   - [IntentFilterNameType](#intentfilternametype)
   - [IntentFilterOperatorType](#intentfilteroperatortype)
   - [IntentSortAttributeType](#intentsortattributetype)
+  - [MergeStrategyType](#mergestrategytype)
   - [ObfuscationSettingTypeType](#obfuscationsettingtypetype)
   - [SlotConstraintType](#slotconstrainttype)
   - [SlotFilterNameType](#slotfilternametype)
@@ -112,6 +122,7 @@ Values:
 - `Creating`
 - `Deleting`
 - `Failed`
+- `Importing`
 - `NotBuilt`
 - `ReadyExpressTesting`
 
@@ -137,6 +148,7 @@ Values:
 - `Creating`
 - `Deleting`
 - `Failed`
+- `Importing`
 - `Inactive`
 - `Versioning`
 
@@ -170,6 +182,104 @@ Values:
 
 - `SlotTypeSignature`
 
+## ExportFilterNameType
+
+```python
+from mypy_boto3_lexv2_models.literals import ExportFilterNameType
+```
+
+Values:
+
+- `ExportResourceType`
+
+## ExportFilterOperatorType
+
+```python
+from mypy_boto3_lexv2_models.literals import ExportFilterOperatorType
+```
+
+Values:
+
+- `CO`
+- `EQ`
+
+## ExportSortAttributeType
+
+```python
+from mypy_boto3_lexv2_models.literals import ExportSortAttributeType
+```
+
+Values:
+
+- `LastUpdatedDateTime`
+
+## ExportStatusType
+
+```python
+from mypy_boto3_lexv2_models.literals import ExportStatusType
+```
+
+Values:
+
+- `Completed`
+- `Deleting`
+- `Failed`
+- `InProgress`
+
+## ImportExportFileFormatType
+
+```python
+from mypy_boto3_lexv2_models.literals import ImportExportFileFormatType
+```
+
+Values:
+
+- `LexJson`
+
+## ImportFilterNameType
+
+```python
+from mypy_boto3_lexv2_models.literals import ImportFilterNameType
+```
+
+Values:
+
+- `ImportResourceType`
+
+## ImportFilterOperatorType
+
+```python
+from mypy_boto3_lexv2_models.literals import ImportFilterOperatorType
+```
+
+Values:
+
+- `CO`
+- `EQ`
+
+## ImportSortAttributeType
+
+```python
+from mypy_boto3_lexv2_models.literals import ImportSortAttributeType
+```
+
+Values:
+
+- `LastUpdatedDateTime`
+
+## ImportStatusType
+
+```python
+from mypy_boto3_lexv2_models.literals import ImportStatusType
+```
+
+Values:
+
+- `Completed`
+- `Deleting`
+- `Failed`
+- `InProgress`
+
 ## IntentFilterNameType
 
 ```python
@@ -201,6 +311,17 @@ Values:
 
 - `IntentName`
 - `LastUpdatedDateTime`
+
+## MergeStrategyType
+
+```python
+from mypy_boto3_lexv2_models.literals import MergeStrategyType
+```
+
+Values:
+
+- `FailOnConflict`
+- `Overwrite`
 
 ## ObfuscationSettingTypeType
 

@@ -3,7 +3,7 @@
 > [Index](..) > [DevopsGuru](.) > DevopsGuruClient
 
 Auto-generated documentation for
-[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru)
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
@@ -50,7 +50,7 @@ def get_devops-guru_client() -> DevopsGuruClient:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client)
+[DevopsGuru.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client)
 
 ## Exceptions
 
@@ -83,7 +83,7 @@ Type annotations for `boto3.client("devops-guru").add_notification_channel`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.add_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.add_notification_channel)
+[DevopsGuru.Client.add_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.add_notification_channel)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").can_paginate` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.can_paginate)
+[DevopsGuru.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.can_paginate)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("devops-guru").describe_account_health`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_account_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health)
+[DevopsGuru.Client.describe_account_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health)
 
 Returns
 [DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef).
@@ -124,7 +124,7 @@ Type annotations for `boto3.client("devops-guru").describe_account_overview`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_account_overview](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_overview)
+[DevopsGuru.Client.describe_account_overview](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_overview)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").describe_anomaly` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_anomaly](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_anomaly)
+[DevopsGuru.Client.describe_anomaly](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_anomaly)
 
 Arguments:
 
@@ -153,7 +153,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").describe_feedback` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_feedback)
+[DevopsGuru.Client.describe_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_feedback)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").describe_insight` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_insight)
+[DevopsGuru.Client.describe_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_insight)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Type annotations for
 `boto3.client("devops-guru").describe_resource_collection_health` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_resource_collection_health)
+[DevopsGuru.Client.describe_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_resource_collection_health)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("devops-guru").describe_service_integration`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.describe_service_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration)
+[DevopsGuru.Client.describe_service_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration)
 
 Returns
 [DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef).
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("devops-guru").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.generate_presigned_url)
+[DevopsGuru.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.generate_presigned_url)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Returns `str`.
 Type annotations for `boto3.client("devops-guru").get_cost_estimation` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.get_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.get_cost_estimation)
+[DevopsGuru.Client.get_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.get_cost_estimation)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Type annotations for `boto3.client("devops-guru").get_resource_collection`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.get_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.get_resource_collection)
+[DevopsGuru.Client.get_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.get_resource_collection)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("devops-guru").list_anomalies_for_insight`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.list_anomalies_for_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.list_anomalies_for_insight)
+[DevopsGuru.Client.list_anomalies_for_insight](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.list_anomalies_for_insight)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").list_events` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.list_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.list_events)
+[DevopsGuru.Client.list_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.list_events)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
 Type annotations for `boto3.client("devops-guru").list_insights` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.list_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.list_insights)
+[DevopsGuru.Client.list_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.list_insights)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("devops-guru").list_notification_channels`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.list_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.list_notification_channels)
+[DevopsGuru.Client.list_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.list_notification_channels)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").list_recommendations` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.list_recommendations)
+[DevopsGuru.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.list_recommendations)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Returns
 Type annotations for `boto3.client("devops-guru").put_feedback` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.put_feedback)
+[DevopsGuru.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.put_feedback)
 
 Arguments:
 
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("devops-guru").remove_notification_channel`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.remove_notification_channel)
+[DevopsGuru.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.remove_notification_channel)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("devops-guru").search_insights` method.
 
 Boto3 documentation:
-[DevopsGuru.Client.search_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.search_insights)
+[DevopsGuru.Client.search_insights](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.search_insights)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("devops-guru").start_cost_estimation`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.start_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.start_cost_estimation)
+[DevopsGuru.Client.start_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.start_cost_estimation)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("devops-guru").update_resource_collection`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.update_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.update_resource_collection)
+[DevopsGuru.Client.update_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.update_resource_collection)
 
 Arguments:
 
@@ -429,7 +429,7 @@ Type annotations for `boto3.client("devops-guru").update_service_integration`
 method.
 
 Boto3 documentation:
-[DevopsGuru.Client.update_service_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devops-guru.html#DevopsGuru.Client.update_service_integration)
+[DevopsGuru.Client.update_service_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Client.update_service_integration)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [NimbleStudio](.) > Paginators
 
 Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio)
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
@@ -33,7 +33,7 @@ def get_list_eula_acceptances_paginator() -> ListEulaAcceptancesPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListEulaAcceptances](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListEulaAcceptances)
+[NimbleStudio.Paginator.ListEulaAcceptances](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListEulaAcceptances)
 
 Arguments for `ListEulaAcceptancesPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_list_eulas_paginator() -> ListEulasPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListEulas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListEulas)
+[NimbleStudio.Paginator.ListEulas](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListEulas)
 
 Arguments for `ListEulasPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_list_launch_profile_members_paginator() -> ListLaunchProfileMembersPagin
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListLaunchProfileMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfileMembers)
+[NimbleStudio.Paginator.ListLaunchProfileMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfileMembers)
 
 Arguments for `ListLaunchProfileMembersPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_list_launch_profiles_paginator() -> ListLaunchProfilesPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListLaunchProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfiles)
+[NimbleStudio.Paginator.ListLaunchProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfiles)
 
 Arguments for `ListLaunchProfilesPaginator.paginate` method:
 
@@ -140,7 +140,7 @@ def get_list_streaming_images_paginator() -> ListStreamingImagesPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListStreamingImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingImages)
+[NimbleStudio.Paginator.ListStreamingImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingImages)
 
 Arguments for `ListStreamingImagesPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_list_streaming_sessions_paginator() -> ListStreamingSessionsPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListStreamingSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessions)
+[NimbleStudio.Paginator.ListStreamingSessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessions)
 
 Arguments for `ListStreamingSessionsPaginator.paginate` method:
 
@@ -195,7 +195,7 @@ def get_list_studio_components_paginator() -> ListStudioComponentsPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListStudioComponents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioComponents)
+[NimbleStudio.Paginator.ListStudioComponents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioComponents)
 
 Arguments for `ListStudioComponentsPaginator.paginate` method:
 
@@ -223,7 +223,7 @@ def get_list_studio_members_paginator() -> ListStudioMembersPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListStudioMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioMembers)
+[NimbleStudio.Paginator.ListStudioMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioMembers)
 
 Arguments for `ListStudioMembersPaginator.paginate` method:
 
@@ -248,7 +248,7 @@ def get_list_studios_paginator() -> ListStudiosPaginator:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Paginator.ListStudios](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/nimble.html#NimbleStudio.Paginator.ListStudios)
+[NimbleStudio.Paginator.ListStudios](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/nimble.html#NimbleStudio.Paginator.ListStudios)
 
 Arguments for `ListStudiosPaginator.paginate` method:
 

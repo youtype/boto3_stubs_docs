@@ -3,7 +3,7 @@
 > [Index](..) > [ComputeOptimizer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -16,7 +16,9 @@ type annotations stubs module
   - [EBSUtilizationMetricTypeDef](#ebsutilizationmetrictypedef)
   - [ExportAutoScalingGroupRecommendationsResponseTypeDef](#exportautoscalinggrouprecommendationsresponsetypedef)
   - [ExportDestinationTypeDef](#exportdestinationtypedef)
+  - [ExportEBSVolumeRecommendationsResponseTypeDef](#exportebsvolumerecommendationsresponsetypedef)
   - [ExportEC2InstanceRecommendationsResponseTypeDef](#exportec2instancerecommendationsresponsetypedef)
+  - [ExportLambdaFunctionRecommendationsResponseTypeDef](#exportlambdafunctionrecommendationsresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
   - [GetAutoScalingGroupRecommendationsResponseTypeDef](#getautoscalinggrouprecommendationsresponsetypedef)
   - [GetEBSVolumeRecommendationsResponseTypeDef](#getebsvolumerecommendationsresponsetypedef)
@@ -155,10 +157,32 @@ Optional fields:
 
 - `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
+## ExportEBSVolumeRecommendationsResponseTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import ExportEBSVolumeRecommendationsResponseTypeDef
+```
+
+Optional fields:
+
+- `jobId`: `str`
+- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+
 ## ExportEC2InstanceRecommendationsResponseTypeDef
 
 ```python
 from mypy_boto3_compute_optimizer.type_defs import ExportEC2InstanceRecommendationsResponseTypeDef
+```
+
+Optional fields:
+
+- `jobId`: `str`
+- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+
+## ExportLambdaFunctionRecommendationsResponseTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import ExportLambdaFunctionRecommendationsResponseTypeDef
 ```
 
 Optional fields:

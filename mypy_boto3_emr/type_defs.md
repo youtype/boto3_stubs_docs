@@ -3,7 +3,7 @@
 > [Index](..) > [EMR](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/emr.html#EMR)
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/emr.html#EMR)
 type annotations stubs module
 [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 

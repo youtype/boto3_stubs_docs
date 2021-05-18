@@ -3,7 +3,7 @@
 > [Index](..) > [AppMesh](.) > AppMeshClient
 
 Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh)
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
 [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
@@ -67,7 +67,7 @@ def get_appmesh_client() -> AppMeshClient:
 ```
 
 Boto3 documentation:
-[AppMesh.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client)
+[AppMesh.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client)
 
 ## Exceptions
 
@@ -102,7 +102,7 @@ Exceptions:
 Type annotations for `boto3.client("appmesh").can_paginate` method.
 
 Boto3 documentation:
-[AppMesh.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.can_paginate)
+[AppMesh.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.can_paginate)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Returns `bool`.
 Type annotations for `boto3.client("appmesh").create_gateway_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
+[AppMesh.Client.create_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns
 Type annotations for `boto3.client("appmesh").create_mesh` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_mesh)
+[AppMesh.Client.create_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_mesh)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns [CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef).
 Type annotations for `boto3.client("appmesh").create_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_route)
+[AppMesh.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_route)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Returns [CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef).
 Type annotations for `boto3.client("appmesh").create_virtual_gateway` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
+[AppMesh.Client.create_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns
 Type annotations for `boto3.client("appmesh").create_virtual_node` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
+[AppMesh.Client.create_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Returns
 Type annotations for `boto3.client("appmesh").create_virtual_router` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
+[AppMesh.Client.create_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Returns
 Type annotations for `boto3.client("appmesh").create_virtual_service` method.
 
 Boto3 documentation:
-[AppMesh.Client.create_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
+[AppMesh.Client.create_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Returns
 Type annotations for `boto3.client("appmesh").delete_gateway_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
+[AppMesh.Client.delete_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Returns
 Type annotations for `boto3.client("appmesh").delete_mesh` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
+[AppMesh.Client.delete_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Returns [DeleteMeshOutputTypeDef](./type_defs.md#deletemeshoutputtypedef).
 Type annotations for `boto3.client("appmesh").delete_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_route)
+[AppMesh.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_route)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns [DeleteRouteOutputTypeDef](./type_defs.md#deleterouteoutputtypedef).
 Type annotations for `boto3.client("appmesh").delete_virtual_gateway` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
+[AppMesh.Client.delete_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns
 Type annotations for `boto3.client("appmesh").delete_virtual_node` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
+[AppMesh.Client.delete_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("appmesh").delete_virtual_router` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
+[AppMesh.Client.delete_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
 
 Arguments:
 
@@ -345,7 +345,7 @@ Returns
 Type annotations for `boto3.client("appmesh").delete_virtual_service` method.
 
 Boto3 documentation:
-[AppMesh.Client.delete_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
+[AppMesh.Client.delete_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns
 Type annotations for `boto3.client("appmesh").describe_gateway_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
+[AppMesh.Client.describe_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Returns
 Type annotations for `boto3.client("appmesh").describe_mesh` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
+[AppMesh.Client.describe_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Returns [DescribeMeshOutputTypeDef](./type_defs.md#describemeshoutputtypedef).
 Type annotations for `boto3.client("appmesh").describe_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_route)
+[AppMesh.Client.describe_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_route)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Returns
 Type annotations for `boto3.client("appmesh").describe_virtual_gateway` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
+[AppMesh.Client.describe_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
 
 Arguments:
 
@@ -425,7 +425,7 @@ Returns
 Type annotations for `boto3.client("appmesh").describe_virtual_node` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
+[AppMesh.Client.describe_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns
 Type annotations for `boto3.client("appmesh").describe_virtual_router` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
+[AppMesh.Client.describe_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Returns
 Type annotations for `boto3.client("appmesh").describe_virtual_service` method.
 
 Boto3 documentation:
-[AppMesh.Client.describe_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
+[AppMesh.Client.describe_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
 
 Arguments:
 
@@ -473,7 +473,7 @@ Returns
 Type annotations for `boto3.client("appmesh").generate_presigned_url` method.
 
 Boto3 documentation:
-[AppMesh.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url)
+[AppMesh.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url)
 
 Arguments:
 
@@ -489,7 +489,7 @@ Returns `str`.
 Type annotations for `boto3.client("appmesh").list_gateway_routes` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
+[AppMesh.Client.list_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
 
 Arguments:
 
@@ -507,7 +507,7 @@ Returns
 Type annotations for `boto3.client("appmesh").list_meshes` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_meshes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_meshes)
+[AppMesh.Client.list_meshes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_meshes)
 
 Arguments:
 
@@ -521,7 +521,7 @@ Returns [ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef).
 Type annotations for `boto3.client("appmesh").list_routes` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_routes)
+[AppMesh.Client.list_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_routes)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Returns [ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef).
 Type annotations for `boto3.client("appmesh").list_tags_for_resource` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
+[AppMesh.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns
 Type annotations for `boto3.client("appmesh").list_virtual_gateways` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
+[AppMesh.Client.list_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
 
 Arguments:
 
@@ -571,7 +571,7 @@ Returns
 Type annotations for `boto3.client("appmesh").list_virtual_nodes` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_virtual_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
+[AppMesh.Client.list_virtual_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Returns
 Type annotations for `boto3.client("appmesh").list_virtual_routers` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_virtual_routers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
+[AppMesh.Client.list_virtual_routers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
 
 Arguments:
 
@@ -605,7 +605,7 @@ Returns
 Type annotations for `boto3.client("appmesh").list_virtual_services` method.
 
 Boto3 documentation:
-[AppMesh.Client.list_virtual_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
+[AppMesh.Client.list_virtual_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
 
 Arguments:
 
@@ -622,7 +622,7 @@ Returns
 Type annotations for `boto3.client("appmesh").tag_resource` method.
 
 Boto3 documentation:
-[AppMesh.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.tag_resource)
+[AppMesh.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.tag_resource)
 
 Arguments:
 
@@ -636,7 +636,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appmesh").untag_resource` method.
 
 Boto3 documentation:
-[AppMesh.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.untag_resource)
+[AppMesh.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.untag_resource)
 
 Arguments:
 
@@ -650,7 +650,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appmesh").update_gateway_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
+[AppMesh.Client.update_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
 
 Arguments:
 
@@ -670,7 +670,7 @@ Returns
 Type annotations for `boto3.client("appmesh").update_mesh` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_mesh)
+[AppMesh.Client.update_mesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_mesh)
 
 Arguments:
 
@@ -685,7 +685,7 @@ Returns [UpdateMeshOutputTypeDef](./type_defs.md#updatemeshoutputtypedef).
 Type annotations for `boto3.client("appmesh").update_route` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_route)
+[AppMesh.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_route)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Returns [UpdateRouteOutputTypeDef](./type_defs.md#updaterouteoutputtypedef).
 Type annotations for `boto3.client("appmesh").update_virtual_gateway` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
+[AppMesh.Client.update_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
 
 Arguments:
 
@@ -722,7 +722,7 @@ Returns
 Type annotations for `boto3.client("appmesh").update_virtual_node` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
+[AppMesh.Client.update_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
 
 Arguments:
 
@@ -741,7 +741,7 @@ Returns
 Type annotations for `boto3.client("appmesh").update_virtual_router` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
+[AppMesh.Client.update_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
 
 Arguments:
 
@@ -760,7 +760,7 @@ Returns
 Type annotations for `boto3.client("appmesh").update_virtual_service` method.
 
 Boto3 documentation:
-[AppMesh.Client.update_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
+[AppMesh.Client.update_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
 
 Arguments:
 

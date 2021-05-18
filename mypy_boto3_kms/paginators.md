@@ -3,7 +3,7 @@
 > [Index](..) > [KMS](.) > Paginators
 
 Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kms.html#KMS)
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kms.html#KMS)
 type annotations stubs module
 [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
@@ -27,7 +27,7 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
 ```
 
 Boto3 documentation:
-[KMS.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kms.html#KMS.Paginator.ListAliases)
+[KMS.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kms.html#KMS.Paginator.ListAliases)
 
 Arguments for `ListAliasesPaginator.paginate` method:
 
@@ -52,7 +52,7 @@ def get_list_grants_paginator() -> ListGrantsPaginator:
 ```
 
 Boto3 documentation:
-[KMS.Paginator.ListGrants](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kms.html#KMS.Paginator.ListGrants)
+[KMS.Paginator.ListGrants](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kms.html#KMS.Paginator.ListGrants)
 
 Arguments for `ListGrantsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_key_policies_paginator() -> ListKeyPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[KMS.Paginator.ListKeyPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
+[KMS.Paginator.ListKeyPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
 
 Arguments for `ListKeyPoliciesPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_keys_paginator() -> ListKeysPaginator:
 ```
 
 Boto3 documentation:
-[KMS.Paginator.ListKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kms.html#KMS.Paginator.ListKeys)
+[KMS.Paginator.ListKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kms.html#KMS.Paginator.ListKeys)
 
 Arguments for `ListKeysPaginator.paginate` method:
 

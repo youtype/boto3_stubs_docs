@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentityProvider](.) > Literals
 
 Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/cognito-idp.html#CognitoIdentityProvider)
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
 [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 

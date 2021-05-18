@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticsearchService](.) > Paginators
 
 Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/es.html#ElasticsearchService)
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
@@ -29,7 +29,7 @@ def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> Descri
 ```
 
 Boto3 documentation:
-[ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
+[ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
 
 Arguments for
 `DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` method:
@@ -56,7 +56,7 @@ def get_describe_reserved_elasticsearch_instances_paginator() -> DescribeReserve
 ```
 
 Boto3 documentation:
-[ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
+[ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
 
 Arguments for `DescribeReservedElasticsearchInstancesPaginator.paginate`
 method:
@@ -82,7 +82,7 @@ def get_get_upgrade_history_paginator() -> GetUpgradeHistoryPaginator:
 ```
 
 Boto3 documentation:
-[ElasticsearchService.Paginator.GetUpgradeHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
+[ElasticsearchService.Paginator.GetUpgradeHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
 
 Arguments for `GetUpgradeHistoryPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_list_elasticsearch_instance_types_paginator() -> ListElasticsearchInstan
 ```
 
 Boto3 documentation:
-[ElasticsearchService.Paginator.ListElasticsearchInstanceTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
+[ElasticsearchService.Paginator.ListElasticsearchInstanceTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
 
 Arguments for `ListElasticsearchInstanceTypesPaginator.paginate` method:
 
@@ -135,7 +135,7 @@ def get_list_elasticsearch_versions_paginator() -> ListElasticsearchVersionsPagi
 ```
 
 Boto3 documentation:
-[ElasticsearchService.Paginator.ListElasticsearchVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
+[ElasticsearchService.Paginator.ListElasticsearchVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
 
 Arguments for `ListElasticsearchVersionsPaginator.paginate` method:
 

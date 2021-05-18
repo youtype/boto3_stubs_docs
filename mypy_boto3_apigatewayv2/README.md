@@ -3,7 +3,7 @@
 > [Index](..) > ApiGatewayV2
 
 Auto-generated documentation for
-[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/apigatewayv2.html#ApiGatewayV2)
+[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
 [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ForecastService](.) > Paginators
 
 Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService)
+[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService)
 type annotations stubs module
 [mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
@@ -31,7 +31,7 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListDatasetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
+[ForecastService.Paginator.ListDatasetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
 
 Arguments for `ListDatasetGroupsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListDatasetImportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
+[ForecastService.Paginator.ListDatasetImportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
 
 Arguments for `ListDatasetImportJobsPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
+[ForecastService.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
 
 Arguments for `ListDatasetsPaginator.paginate` method:
 
@@ -106,7 +106,7 @@ def get_list_forecast_export_jobs_paginator() -> ListForecastExportJobsPaginator
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListForecastExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
+[ForecastService.Paginator.ListForecastExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
 
 Arguments for `ListForecastExportJobsPaginator.paginate` method:
 
@@ -132,7 +132,7 @@ def get_list_forecasts_paginator() -> ListForecastsPaginator:
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListForecasts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
+[ForecastService.Paginator.ListForecasts](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
 
 Arguments for `ListForecastsPaginator.paginate` method:
 
@@ -158,7 +158,7 @@ def get_list_predictor_backtest_export_jobs_paginator() -> ListPredictorBacktest
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListPredictorBacktestExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
+[ForecastService.Paginator.ListPredictorBacktestExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
 
 Arguments for `ListPredictorBacktestExportJobsPaginator.paginate` method:
 
@@ -184,7 +184,7 @@ def get_list_predictors_paginator() -> ListPredictorsPaginator:
 ```
 
 Boto3 documentation:
-[ForecastService.Paginator.ListPredictors](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
+[ForecastService.Paginator.ListPredictors](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
 
 Arguments for `ListPredictorsPaginator.paginate` method:
 

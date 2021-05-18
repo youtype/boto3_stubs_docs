@@ -4,7 +4,7 @@
 > KinesisVideoSignalingChannelsClient
 
 Auto-generated documentation for
-[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
 type annotations stubs module
 [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
@@ -31,7 +31,7 @@ def get_kinesis-video-signaling_client() -> KinesisVideoSignalingChannelsClient:
 ```
 
 Boto3 documentation:
-[KinesisVideoSignalingChannels.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client)
+[KinesisVideoSignalingChannels.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client)
 
 ## Exceptions
 
@@ -63,7 +63,7 @@ Type annotations for `boto3.client("kinesis-video-signaling").can_paginate`
 method.
 
 Boto3 documentation:
-[KinesisVideoSignalingChannels.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.can_paginate)
+[KinesisVideoSignalingChannels.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.can_paginate)
 
 Arguments:
 
@@ -77,7 +77,7 @@ Type annotations for
 `boto3.client("kinesis-video-signaling").generate_presigned_url` method.
 
 Boto3 documentation:
-[KinesisVideoSignalingChannels.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.generate_presigned_url)
+[KinesisVideoSignalingChannels.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.generate_presigned_url)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Type annotations for
 `boto3.client("kinesis-video-signaling").get_ice_server_config` method.
 
 Boto3 documentation:
-[KinesisVideoSignalingChannels.Client.get_ice_server_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
+[KinesisVideoSignalingChannels.Client.get_ice_server_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Type annotations for
 `boto3.client("kinesis-video-signaling").send_alexa_offer_to_master` method.
 
 Boto3 documentation:
-[KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
+[KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
 
 Arguments:
 

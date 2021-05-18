@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -13,9 +13,13 @@ type annotations stubs module
   - [BotAliasHistoryEventTypeDef](#botaliashistoryeventtypedef)
   - [BotAliasLocaleSettingsTypeDef](#botaliaslocalesettingstypedef)
   - [BotAliasSummaryTypeDef](#botaliassummarytypedef)
+  - [BotExportSpecificationTypeDef](#botexportspecificationtypedef)
   - [BotFilterTypeDef](#botfiltertypedef)
+  - [BotImportSpecificationTypeDef](#botimportspecificationtypedef)
+  - [BotLocaleExportSpecificationTypeDef](#botlocaleexportspecificationtypedef)
   - [BotLocaleFilterTypeDef](#botlocalefiltertypedef)
   - [BotLocaleHistoryEventTypeDef](#botlocalehistoryeventtypedef)
+  - [BotLocaleImportSpecificationTypeDef](#botlocaleimportspecificationtypedef)
   - [BotLocaleSortByTypeDef](#botlocalesortbytypedef)
   - [BotLocaleSummaryTypeDef](#botlocalesummarytypedef)
   - [BotSortByTypeDef](#botsortbytypedef)
@@ -36,25 +40,39 @@ type annotations stubs module
   - [CreateBotLocaleResponseTypeDef](#createbotlocaleresponsetypedef)
   - [CreateBotResponseTypeDef](#createbotresponsetypedef)
   - [CreateBotVersionResponseTypeDef](#createbotversionresponsetypedef)
+  - [CreateExportResponseTypeDef](#createexportresponsetypedef)
   - [CreateIntentResponseTypeDef](#createintentresponsetypedef)
   - [CreateSlotResponseTypeDef](#createslotresponsetypedef)
   - [CreateSlotTypeResponseTypeDef](#createslottyperesponsetypedef)
+  - [CreateUploadUrlResponseTypeDef](#createuploadurlresponsetypedef)
   - [CustomPayloadTypeDef](#custompayloadtypedef)
   - [DataPrivacyTypeDef](#dataprivacytypedef)
   - [DeleteBotAliasResponseTypeDef](#deletebotaliasresponsetypedef)
   - [DeleteBotLocaleResponseTypeDef](#deletebotlocaleresponsetypedef)
   - [DeleteBotResponseTypeDef](#deletebotresponsetypedef)
   - [DeleteBotVersionResponseTypeDef](#deletebotversionresponsetypedef)
+  - [DeleteExportResponseTypeDef](#deleteexportresponsetypedef)
+  - [DeleteImportResponseTypeDef](#deleteimportresponsetypedef)
   - [DescribeBotAliasResponseTypeDef](#describebotaliasresponsetypedef)
   - [DescribeBotLocaleResponseTypeDef](#describebotlocaleresponsetypedef)
   - [DescribeBotResponseTypeDef](#describebotresponsetypedef)
   - [DescribeBotVersionResponseTypeDef](#describebotversionresponsetypedef)
+  - [DescribeExportResponseTypeDef](#describeexportresponsetypedef)
+  - [DescribeImportResponseTypeDef](#describeimportresponsetypedef)
   - [DescribeIntentResponseTypeDef](#describeintentresponsetypedef)
   - [DescribeSlotResponseTypeDef](#describeslotresponsetypedef)
   - [DescribeSlotTypeResponseTypeDef](#describeslottyperesponsetypedef)
   - [DialogCodeHookSettingsTypeDef](#dialogcodehooksettingstypedef)
+  - [ExportFilterTypeDef](#exportfiltertypedef)
+  - [ExportResourceSpecificationTypeDef](#exportresourcespecificationtypedef)
+  - [ExportSortByTypeDef](#exportsortbytypedef)
+  - [ExportSummaryTypeDef](#exportsummarytypedef)
   - [FulfillmentCodeHookSettingsTypeDef](#fulfillmentcodehooksettingstypedef)
   - [ImageResponseCardTypeDef](#imageresponsecardtypedef)
+  - [ImportFilterTypeDef](#importfiltertypedef)
+  - [ImportResourceSpecificationTypeDef](#importresourcespecificationtypedef)
+  - [ImportSortByTypeDef](#importsortbytypedef)
+  - [ImportSummaryTypeDef](#importsummarytypedef)
   - [InputContextTypeDef](#inputcontexttypedef)
   - [IntentClosingSettingTypeDef](#intentclosingsettingtypedef)
   - [IntentConfirmationSettingTypeDef](#intentconfirmationsettingtypedef)
@@ -69,6 +87,8 @@ type annotations stubs module
   - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
   - [ListBuiltInIntentsResponseTypeDef](#listbuiltinintentsresponsetypedef)
   - [ListBuiltInSlotTypesResponseTypeDef](#listbuiltinslottypesresponsetypedef)
+  - [ListExportsResponseTypeDef](#listexportsresponsetypedef)
+  - [ListImportsResponseTypeDef](#listimportsresponsetypedef)
   - [ListIntentsResponseTypeDef](#listintentsresponsetypedef)
   - [ListSlotTypesResponseTypeDef](#listslottypesresponsetypedef)
   - [ListSlotsResponseTypeDef](#listslotsresponsetypedef)
@@ -98,12 +118,14 @@ type annotations stubs module
   - [SlotValueElicitationSettingTypeDef](#slotvalueelicitationsettingtypedef)
   - [SlotValueRegexFilterTypeDef](#slotvalueregexfiltertypedef)
   - [SlotValueSelectionSettingTypeDef](#slotvalueselectionsettingtypedef)
+  - [StartImportResponseTypeDef](#startimportresponsetypedef)
   - [StillWaitingResponseSpecificationTypeDef](#stillwaitingresponsespecificationtypedef)
   - [TextLogDestinationTypeDef](#textlogdestinationtypedef)
   - [TextLogSettingTypeDef](#textlogsettingtypedef)
   - [UpdateBotAliasResponseTypeDef](#updatebotaliasresponsetypedef)
   - [UpdateBotLocaleResponseTypeDef](#updatebotlocaleresponsetypedef)
   - [UpdateBotResponseTypeDef](#updatebotresponsetypedef)
+  - [UpdateExportResponseTypeDef](#updateexportresponsetypedef)
   - [UpdateIntentResponseTypeDef](#updateintentresponsetypedef)
   - [UpdateSlotResponseTypeDef](#updateslotresponsetypedef)
   - [UpdateSlotTypeResponseTypeDef](#updateslottyperesponsetypedef)
@@ -176,6 +198,17 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+## BotExportSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotExportSpecificationTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+
 ## BotFilterTypeDef
 
 ```python
@@ -188,6 +221,36 @@ Required fields:
   [BotFilterNameType](./literals.md#botfilternametype))
 - `values`: `List`\[`str`\]
 - `operator`: [BotFilterOperatorType](./literals.md#botfilteroperatortype)
+
+## BotImportSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotImportSpecificationTypeDef
+```
+
+Required fields:
+
+- `botName`: `str`
+- `roleArn`: `str`
+- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
+
+Optional fields:
+
+- `idleSessionTTLInSeconds`: `int`
+- `botTags`: `Dict`\[`str`, `str`\]
+- `testBotAliasTags`: `Dict`\[`str`, `str`\]
+
+## BotLocaleExportSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotLocaleExportSpecificationTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
 
 ## BotLocaleFilterTypeDef
 
@@ -213,6 +276,23 @@ Required fields:
 
 - `event`: `str`
 - `eventDate`: `datetime`
+
+## BotLocaleImportSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import BotLocaleImportSpecificationTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+
+Optional fields:
+
+- `nluIntentConfidenceThreshold`: `float`
+- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
 ## BotLocaleSortByTypeDef
 
@@ -486,6 +566,22 @@ Optional fields:
 - `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 
+## CreateExportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import CreateExportResponseTypeDef
+```
+
+Optional fields:
+
+- `exportId`: `str`
+- `resourceSpecification`:
+  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
+- `fileFormat`: `Literal['LexJson']` (see
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
+- `creationDateTime`: `datetime`
+
 ## CreateIntentResponseTypeDef
 
 ```python
@@ -562,6 +658,17 @@ Optional fields:
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
 
+## CreateUploadUrlResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import CreateUploadUrlResponseTypeDef
+```
+
+Optional fields:
+
+- `importId`: `str`
+- `uploadUrl`: `str`
+
 ## CustomPayloadTypeDef
 
 ```python
@@ -629,6 +736,28 @@ Optional fields:
 - `botId`: `str`
 - `botVersion`: `str`
 - `botStatus`: [BotStatusType](./literals.md#botstatustype)
+
+## DeleteExportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteExportResponseTypeDef
+```
+
+Optional fields:
+
+- `exportId`: `str`
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
+
+## DeleteImportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteImportResponseTypeDef
+```
+
+Optional fields:
+
+- `importId`: `str`
+- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
 
 ## DescribeBotAliasResponseTypeDef
 
@@ -716,6 +845,44 @@ Optional fields:
 - `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `failureReasons`: `List`\[`str`\]
 - `creationDateTime`: `datetime`
+
+## DescribeExportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeExportResponseTypeDef
+```
+
+Optional fields:
+
+- `exportId`: `str`
+- `resourceSpecification`:
+  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
+- `fileFormat`: `Literal['LexJson']` (see
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
+- `failureReasons`: `List`\[`str`\]
+- `downloadUrl`: `str`
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+
+## DescribeImportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeImportResponseTypeDef
+```
+
+Optional fields:
+
+- `importId`: `str`
+- `resourceSpecification`:
+  [ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef)
+- `importedResourceId`: `str`
+- `importedResourceName`: `str`
+- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
+- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
+- `failureReasons`: `List`\[`str`\]
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
 
 ## DescribeIntentResponseTypeDef
 
@@ -808,6 +975,62 @@ Required fields:
 
 - `enabled`: `bool`
 
+## ExportFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ExportFilterTypeDef
+```
+
+Required fields:
+
+- `name`: `Literal['ExportResourceType']` (see
+  [ExportFilterNameType](./literals.md#exportfilternametype))
+- `values`: `List`\[`str`\]
+- `operator`:
+  [ExportFilterOperatorType](./literals.md#exportfilteroperatortype)
+
+## ExportResourceSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ExportResourceSpecificationTypeDef
+```
+
+Optional fields:
+
+- `botExportSpecification`:
+  [BotExportSpecificationTypeDef](./type_defs.md#botexportspecificationtypedef)
+- `botLocaleExportSpecification`:
+  [BotLocaleExportSpecificationTypeDef](./type_defs.md#botlocaleexportspecificationtypedef)
+
+## ExportSortByTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ExportSortByTypeDef
+```
+
+Required fields:
+
+- `attribute`: `Literal['LastUpdatedDateTime']` (see
+  [ExportSortAttributeType](./literals.md#exportsortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
+
+## ExportSummaryTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ExportSummaryTypeDef
+```
+
+Optional fields:
+
+- `exportId`: `str`
+- `resourceSpecification`:
+  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
+- `fileFormat`: `Literal['LexJson']` (see
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+
 ## FulfillmentCodeHookSettingsTypeDef
 
 ```python
@@ -833,6 +1056,61 @@ Optional fields:
 - `subtitle`: `str`
 - `imageUrl`: `str`
 - `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
+
+## ImportFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ImportFilterTypeDef
+```
+
+Required fields:
+
+- `name`: `Literal['ImportResourceType']` (see
+  [ImportFilterNameType](./literals.md#importfilternametype))
+- `values`: `List`\[`str`\]
+- `operator`:
+  [ImportFilterOperatorType](./literals.md#importfilteroperatortype)
+
+## ImportResourceSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ImportResourceSpecificationTypeDef
+```
+
+Optional fields:
+
+- `botImportSpecification`:
+  [BotImportSpecificationTypeDef](./type_defs.md#botimportspecificationtypedef)
+- `botLocaleImportSpecification`:
+  [BotLocaleImportSpecificationTypeDef](./type_defs.md#botlocaleimportspecificationtypedef)
+
+## ImportSortByTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ImportSortByTypeDef
+```
+
+Required fields:
+
+- `attribute`: `Literal['LastUpdatedDateTime']` (see
+  [ImportSortAttributeType](./literals.md#importsortattributetype))
+- `order`: [SortOrderType](./literals.md#sortordertype)
+
+## ImportSummaryTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ImportSummaryTypeDef
+```
+
+Optional fields:
+
+- `importId`: `str`
+- `importedResourceId`: `str`
+- `importedResourceName`: `str`
+- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
+- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
 
 ## InputContextTypeDef
 
@@ -1014,6 +1292,34 @@ Optional fields:
   `List`\[[BuiltInSlotTypeSummaryTypeDef](./type_defs.md#builtinslottypesummarytypedef)\]
 - `nextToken`: `str`
 - `localeId`: `str`
+
+## ListExportsResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListExportsResponseTypeDef
+```
+
+Optional fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `exportSummaries`:
+  `List`\[[ExportSummaryTypeDef](./type_defs.md#exportsummarytypedef)\]
+- `nextToken`: `str`
+
+## ListImportsResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListImportsResponseTypeDef
+```
+
+Optional fields:
+
+- `botId`: `str`
+- `botVersion`: `str`
+- `importSummaries`:
+  `List`\[[ImportSummaryTypeDef](./type_defs.md#importsummarytypedef)\]
+- `nextToken`: `str`
 
 ## ListIntentsResponseTypeDef
 
@@ -1390,6 +1696,21 @@ Optional fields:
 - `regexFilter`:
   [SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef)
 
+## StartImportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import StartImportResponseTypeDef
+```
+
+Optional fields:
+
+- `importId`: `str`
+- `resourceSpecification`:
+  [ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef)
+- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
+- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
+- `creationDateTime`: `datetime`
+
 ## StillWaitingResponseSpecificationTypeDef
 
 ```python
@@ -1488,6 +1809,23 @@ Optional fields:
 - `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
 - `idleSessionTTLInSeconds`: `int`
 - `botStatus`: [BotStatusType](./literals.md#botstatustype)
+- `creationDateTime`: `datetime`
+- `lastUpdatedDateTime`: `datetime`
+
+## UpdateExportResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import UpdateExportResponseTypeDef
+```
+
+Optional fields:
+
+- `exportId`: `str`
+- `resourceSpecification`:
+  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
+- `fileFormat`: `Literal['LexJson']` (see
+  [ImportExportFileFormatType](./literals.md#importexportfileformattype))
+- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 

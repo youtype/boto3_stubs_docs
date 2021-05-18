@@ -3,7 +3,7 @@
 > [Index](..) > [ComputeOptimizer](.) > Literals
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -13,6 +13,8 @@ type annotations stubs module
   - [EBSMetricNameType](#ebsmetricnametype)
   - [ExportableAutoScalingGroupFieldType](#exportableautoscalinggroupfieldtype)
   - [ExportableInstanceFieldType](#exportableinstancefieldtype)
+  - [ExportableLambdaFunctionFieldType](#exportablelambdafunctionfieldtype)
+  - [ExportableVolumeFieldType](#exportablevolumefieldtype)
   - [FileFormatType](#fileformattype)
   - [FilterNameType](#filternametype)
   - [FindingReasonCodeType](#findingreasoncodetype)
@@ -153,6 +155,70 @@ Values:
 - `UtilizationMetricsEbsWriteBytesPerSecondMaximum`
 - `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
 - `UtilizationMetricsMemoryMaximum`
+
+## ExportableLambdaFunctionFieldType
+
+```python
+from mypy_boto3_compute_optimizer.literals import ExportableLambdaFunctionFieldType
+```
+
+Values:
+
+- `AccountId`
+- `CurrentConfigurationMemorySize`
+- `CurrentConfigurationTimeout`
+- `CurrentCostAverage`
+- `CurrentCostTotal`
+- `Finding`
+- `FindingReasonCodes`
+- `FunctionArn`
+- `FunctionVersion`
+- `LastRefreshTimestamp`
+- `LookbackPeriodInDays`
+- `NumberOfInvocations`
+- `RecommendationOptionsConfigurationMemorySize`
+- `RecommendationOptionsCostHigh`
+- `RecommendationOptionsCostLow`
+- `RecommendationOptionsProjectedUtilizationMetricsDurationExpected`
+- `RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound`
+- `RecommendationOptionsProjectedUtilizationMetricsDurationUpperBound`
+- `UtilizationMetricsDurationAverage`
+- `UtilizationMetricsDurationMaximum`
+- `UtilizationMetricsMemoryAverage`
+- `UtilizationMetricsMemoryMaximum`
+
+## ExportableVolumeFieldType
+
+```python
+from mypy_boto3_compute_optimizer.literals import ExportableVolumeFieldType
+```
+
+Values:
+
+- `AccountId`
+- `CurrentConfigurationVolumeBaselineIOPS`
+- `CurrentConfigurationVolumeBaselineThroughput`
+- `CurrentConfigurationVolumeBurstIOPS`
+- `CurrentConfigurationVolumeBurstThroughput`
+- `CurrentConfigurationVolumeSize`
+- `CurrentConfigurationVolumeType`
+- `CurrentMonthlyPrice`
+- `Finding`
+- `LastRefreshTimestamp`
+- `LookbackPeriodInDays`
+- `RecommendationOptionsConfigurationVolumeBaselineIOPS`
+- `RecommendationOptionsConfigurationVolumeBaselineThroughput`
+- `RecommendationOptionsConfigurationVolumeBurstIOPS`
+- `RecommendationOptionsConfigurationVolumeBurstThroughput`
+- `RecommendationOptionsConfigurationVolumeSize`
+- `RecommendationOptionsConfigurationVolumeType`
+- `RecommendationOptionsMonthlyPrice`
+- `RecommendationOptionsPerformanceRisk`
+- `UtilizationMetricsVolumeReadBytesPerSecondMaximum`
+- `UtilizationMetricsVolumeReadOpsPerSecondMaximum`
+- `UtilizationMetricsVolumeWriteBytesPerSecondMaximum`
+- `UtilizationMetricsVolumeWriteOpsPerSecondMaximum`
+- `VolumeArn`
 
 ## FileFormatType
 
@@ -351,7 +417,9 @@ from mypy_boto3_compute_optimizer.literals import ResourceTypeType
 Values:
 
 - `AutoScalingGroup`
+- `EbsVolume`
 - `Ec2Instance`
+- `LambdaFunction`
 
 ## StatusType
 

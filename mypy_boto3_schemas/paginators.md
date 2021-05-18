@@ -3,7 +3,7 @@
 > [Index](..) > [Schemas](.) > Paginators
 
 Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas)
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas)
 type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
@@ -29,7 +29,7 @@ def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
 ```
 
 Boto3 documentation:
-[Schemas.Paginator.ListDiscoverers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
+[Schemas.Paginator.ListDiscoverers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
 
 Arguments for `ListDiscoverersPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
 ```
 
 Boto3 documentation:
-[Schemas.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
+[Schemas.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
 
 Arguments for `ListRegistriesPaginator.paginate` method:
 
@@ -83,7 +83,7 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Schemas.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
+[Schemas.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
 
 Arguments for `ListSchemaVersionsPaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
 ```
 
 Boto3 documentation:
-[Schemas.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
+[Schemas.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
 
 Arguments for `ListSchemasPaginator.paginate` method:
 
@@ -135,7 +135,7 @@ def get_search_schemas_paginator() -> SearchSchemasPaginator:
 ```
 
 Boto3 documentation:
-[Schemas.Paginator.SearchSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
+[Schemas.Paginator.SearchSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
 
 Arguments for `SearchSchemasPaginator.paginate` method:
 

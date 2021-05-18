@@ -3,7 +3,7 @@
 > [Index](..) > [Braket](.) > BraketClient
 
 Auto-generated documentation for
-[Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket)
+[Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket)
 type annotations stubs module
 [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
@@ -38,7 +38,7 @@ def get_braket_client() -> BraketClient:
 ```
 
 Boto3 documentation:
-[Braket.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client)
+[Braket.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client)
 
 ## Exceptions
 
@@ -71,7 +71,7 @@ Exceptions:
 Type annotations for `boto3.client("braket").can_paginate` method.
 
 Boto3 documentation:
-[Braket.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.can_paginate)
+[Braket.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.can_paginate)
 
 Arguments:
 
@@ -84,7 +84,7 @@ Returns `bool`.
 Type annotations for `boto3.client("braket").cancel_quantum_task` method.
 
 Boto3 documentation:
-[Braket.Client.cancel_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.cancel_quantum_task)
+[Braket.Client.cancel_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.cancel_quantum_task)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Returns
 Type annotations for `boto3.client("braket").create_quantum_task` method.
 
 Boto3 documentation:
-[Braket.Client.create_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.create_quantum_task)
+[Braket.Client.create_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.create_quantum_task)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns
 Type annotations for `boto3.client("braket").generate_presigned_url` method.
 
 Boto3 documentation:
-[Braket.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.generate_presigned_url)
+[Braket.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.generate_presigned_url)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns `str`.
 Type annotations for `boto3.client("braket").get_device` method.
 
 Boto3 documentation:
-[Braket.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.get_device)
+[Braket.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.get_device)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 Type annotations for `boto3.client("braket").get_quantum_task` method.
 
 Boto3 documentation:
-[Braket.Client.get_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.get_quantum_task)
+[Braket.Client.get_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.get_quantum_task)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns
 Type annotations for `boto3.client("braket").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Braket.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.list_tags_for_resource)
+[Braket.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Returns
 Type annotations for `boto3.client("braket").search_devices` method.
 
 Boto3 documentation:
-[Braket.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.search_devices)
+[Braket.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.search_devices)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Returns
 Type annotations for `boto3.client("braket").search_quantum_tasks` method.
 
 Boto3 documentation:
-[Braket.Client.search_quantum_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.search_quantum_tasks)
+[Braket.Client.search_quantum_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.search_quantum_tasks)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Returns
 Type annotations for `boto3.client("braket").tag_resource` method.
 
 Boto3 documentation:
-[Braket.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.tag_resource)
+[Braket.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.tag_resource)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("braket").untag_resource` method.
 
 Boto3 documentation:
-[Braket.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/braket.html#Braket.Client.untag_resource)
+[Braket.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/braket.html#Braket.Client.untag_resource)
 
 Arguments:
 

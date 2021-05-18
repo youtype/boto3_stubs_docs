@@ -3,7 +3,7 @@
 > [Index](..) > [mgn](.) > Paginators
 
 Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn)
+[mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mgn.html#mgn)
 type annotations stubs module
 [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
@@ -28,7 +28,7 @@ def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
 ```
 
 Boto3 documentation:
-[mgn.Paginator.DescribeJobLogItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Paginator.DescribeJobLogItems)
+[mgn.Paginator.DescribeJobLogItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mgn.html#mgn.Paginator.DescribeJobLogItems)
 
 Arguments for `DescribeJobLogItemsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_describe_jobs_paginator() -> DescribeJobsPaginator:
 ```
 
 Boto3 documentation:
-[mgn.Paginator.DescribeJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Paginator.DescribeJobs)
+[mgn.Paginator.DescribeJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mgn.html#mgn.Paginator.DescribeJobs)
 
 Arguments for `DescribeJobsPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_describe_replication_configuration_templates_paginator() -> DescribeRepl
 ```
 
 Boto3 documentation:
-[mgn.Paginator.DescribeReplicationConfigurationTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Paginator.DescribeReplicationConfigurationTemplates)
+[mgn.Paginator.DescribeReplicationConfigurationTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mgn.html#mgn.Paginator.DescribeReplicationConfigurationTemplates)
 
 Arguments for `DescribeReplicationConfigurationTemplatesPaginator.paginate`
 method:
@@ -108,7 +108,7 @@ def get_describe_source_servers_paginator() -> DescribeSourceServersPaginator:
 ```
 
 Boto3 documentation:
-[mgn.Paginator.DescribeSourceServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mgn.html#mgn.Paginator.DescribeSourceServers)
+[mgn.Paginator.DescribeSourceServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mgn.html#mgn.Paginator.DescribeSourceServers)
 
 Arguments for `DescribeSourceServersPaginator.paginate` method:
 

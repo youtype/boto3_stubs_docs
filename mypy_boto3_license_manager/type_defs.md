@@ -3,7 +3,7 @@
 > [Index](..) > [LicenseManager](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
@@ -18,6 +18,7 @@ type annotations stubs module
   - [CreateGrantResponseTypeDef](#creategrantresponsetypedef)
   - [CreateGrantVersionResponseTypeDef](#creategrantversionresponsetypedef)
   - [CreateLicenseConfigurationResponseTypeDef](#createlicenseconfigurationresponsetypedef)
+  - [CreateLicenseManagerReportGeneratorResponseTypeDef](#createlicensemanagerreportgeneratorresponsetypedef)
   - [CreateLicenseResponseTypeDef](#createlicenseresponsetypedef)
   - [CreateLicenseVersionResponseTypeDef](#createlicenseversionresponsetypedef)
   - [CreateTokenResponseTypeDef](#createtokenresponsetypedef)
@@ -32,6 +33,7 @@ type annotations stubs module
   - [GetAccessTokenResponseTypeDef](#getaccesstokenresponsetypedef)
   - [GetGrantResponseTypeDef](#getgrantresponsetypedef)
   - [GetLicenseConfigurationResponseTypeDef](#getlicenseconfigurationresponsetypedef)
+  - [GetLicenseManagerReportGeneratorResponseTypeDef](#getlicensemanagerreportgeneratorresponsetypedef)
   - [GetLicenseResponseTypeDef](#getlicenseresponsetypedef)
   - [GetLicenseUsageResponseTypeDef](#getlicenseusageresponsetypedef)
   - [GetServiceSettingsResponseTypeDef](#getservicesettingsresponsetypedef)
@@ -51,6 +53,7 @@ type annotations stubs module
   - [ListDistributedGrantsResponseTypeDef](#listdistributedgrantsresponsetypedef)
   - [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](#listfailuresforlicenseconfigurationoperationsresponsetypedef)
   - [ListLicenseConfigurationsResponseTypeDef](#listlicenseconfigurationsresponsetypedef)
+  - [ListLicenseManagerReportGeneratorsResponseTypeDef](#listlicensemanagerreportgeneratorsresponsetypedef)
   - [ListLicenseSpecificationsForResourceResponseTypeDef](#listlicensespecificationsforresourceresponsetypedef)
   - [ListLicenseVersionsResponseTypeDef](#listlicenseversionsresponsetypedef)
   - [ListLicensesResponseTypeDef](#listlicensesresponsetypedef)
@@ -69,7 +72,11 @@ type annotations stubs module
   - [ProvisionalConfigurationTypeDef](#provisionalconfigurationtypedef)
   - [ReceivedMetadataTypeDef](#receivedmetadatatypedef)
   - [RejectGrantResponseTypeDef](#rejectgrantresponsetypedef)
+  - [ReportContextTypeDef](#reportcontexttypedef)
+  - [ReportFrequencyTypeDef](#reportfrequencytypedef)
+  - [ReportGeneratorTypeDef](#reportgeneratortypedef)
   - [ResourceInventoryTypeDef](#resourceinventorytypedef)
+  - [S3LocationTypeDef](#s3locationtypedef)
   - [TagTypeDef](#tagtypedef)
   - [TokenDataTypeDef](#tokendatatypedef)
 
@@ -201,6 +208,16 @@ from mypy_boto3_license_manager.type_defs import CreateLicenseConfigurationRespo
 Optional fields:
 
 - `LicenseConfigurationArn`: `str`
+
+## CreateLicenseManagerReportGeneratorResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseManagerReportGeneratorResponseTypeDef
+```
+
+Optional fields:
+
+- `LicenseManagerReportGeneratorArn`: `str`
 
 ## CreateLicenseResponseTypeDef
 
@@ -398,6 +415,17 @@ Optional fields:
 - `AutomatedDiscoveryInformation`:
   [AutomatedDiscoveryInformationTypeDef](./type_defs.md#automateddiscoveryinformationtypedef)
 - `DisassociateWhenNotFound`: `bool`
+
+## GetLicenseManagerReportGeneratorResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseManagerReportGeneratorResponseTypeDef
+```
+
+Optional fields:
+
+- `ReportGenerator`:
+  [ReportGeneratorTypeDef](./type_defs.md#reportgeneratortypedef)
 
 ## GetLicenseResponseTypeDef
 
@@ -701,6 +729,18 @@ Optional fields:
   `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
 - `NextToken`: `str`
 
+## ListLicenseManagerReportGeneratorsResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseManagerReportGeneratorsResponseTypeDef
+```
+
+Optional fields:
+
+- `ReportGenerators`:
+  `List`\[[ReportGeneratorTypeDef](./type_defs.md#reportgeneratortypedef)\]
+- `NextToken`: `str`
+
 ## ListLicenseSpecificationsForResourceResponseTypeDef
 
 ```python
@@ -908,6 +948,50 @@ Optional fields:
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
 
+## ReportContextTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ReportContextTypeDef
+```
+
+Required fields:
+
+- `licenseConfigurationArns`: `List`\[`str`\]
+
+## ReportFrequencyTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ReportFrequencyTypeDef
+```
+
+Optional fields:
+
+- `value`: `int`
+- `period`: [ReportFrequencyTypeType](./literals.md#reportfrequencytypetype)
+
+## ReportGeneratorTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ReportGeneratorTypeDef
+```
+
+Optional fields:
+
+- `ReportGeneratorName`: `str`
+- `ReportType`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\]
+- `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
+- `ReportFrequency`:
+  [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef)
+- `LicenseManagerReportGeneratorArn`: `str`
+- `LastRunStatus`: `str`
+- `LastRunFailureReason`: `str`
+- `LastReportGenerationTime`: `str`
+- `ReportCreatorAccount`: `str`
+- `Description`: `str`
+- `S3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `CreateTime`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## ResourceInventoryTypeDef
 
 ```python
@@ -922,6 +1006,17 @@ Optional fields:
 - `Platform`: `str`
 - `PlatformVersion`: `str`
 - `ResourceOwningAccountId`: `str`
+
+## S3LocationTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import S3LocationTypeDef
+```
+
+Optional fields:
+
+- `bucket`: `str`
+- `keyPrefix`: `str`
 
 ## TagTypeDef
 

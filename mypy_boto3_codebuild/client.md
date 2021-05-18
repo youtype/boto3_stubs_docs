@@ -3,7 +3,7 @@
 > [Index](..) > [CodeBuild](.) > CodeBuildClient
 
 Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild)
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
 [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
@@ -73,7 +73,7 @@ def get_codebuild_client() -> CodeBuildClient:
 ```
 
 Boto3 documentation:
-[CodeBuild.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client)
+[CodeBuild.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client)
 
 ## Exceptions
 
@@ -103,7 +103,7 @@ Exceptions:
 Type annotations for `boto3.client("codebuild").batch_delete_builds` method.
 
 Boto3 documentation:
-[CodeBuild.Client.batch_delete_builds](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.batch_delete_builds)
+[CodeBuild.Client.batch_delete_builds](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.batch_delete_builds)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("codebuild").batch_get_build_batches`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.batch_get_build_batches](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.batch_get_build_batches)
+[CodeBuild.Client.batch_get_build_batches](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.batch_get_build_batches)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns
 Type annotations for `boto3.client("codebuild").batch_get_builds` method.
 
 Boto3 documentation:
-[CodeBuild.Client.batch_get_builds](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.batch_get_builds)
+[CodeBuild.Client.batch_get_builds](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.batch_get_builds)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Returns
 Type annotations for `boto3.client("codebuild").batch_get_projects` method.
 
 Boto3 documentation:
-[CodeBuild.Client.batch_get_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.batch_get_projects)
+[CodeBuild.Client.batch_get_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.batch_get_projects)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("codebuild").batch_get_report_groups`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.batch_get_report_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.batch_get_report_groups)
+[CodeBuild.Client.batch_get_report_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.batch_get_report_groups)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns
 Type annotations for `boto3.client("codebuild").batch_get_reports` method.
 
 Boto3 documentation:
-[CodeBuild.Client.batch_get_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.batch_get_reports)
+[CodeBuild.Client.batch_get_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.batch_get_reports)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns
 Type annotations for `boto3.client("codebuild").can_paginate` method.
 
 Boto3 documentation:
-[CodeBuild.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.can_paginate)
+[CodeBuild.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.can_paginate)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Returns `bool`.
 Type annotations for `boto3.client("codebuild").create_project` method.
 
 Boto3 documentation:
-[CodeBuild.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.create_project)
+[CodeBuild.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.create_project)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Returns
 Type annotations for `boto3.client("codebuild").create_report_group` method.
 
 Boto3 documentation:
-[CodeBuild.Client.create_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.create_report_group)
+[CodeBuild.Client.create_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.create_report_group)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns
 Type annotations for `boto3.client("codebuild").create_webhook` method.
 
 Boto3 documentation:
-[CodeBuild.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.create_webhook)
+[CodeBuild.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.create_webhook)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Returns
 Type annotations for `boto3.client("codebuild").delete_build_batch` method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_build_batch)
+[CodeBuild.Client.delete_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_build_batch)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns
 Type annotations for `boto3.client("codebuild").delete_project` method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_project)
+[CodeBuild.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_project)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codebuild").delete_report` method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_report)
+[CodeBuild.Client.delete_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_report)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codebuild").delete_report_group` method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_report_group)
+[CodeBuild.Client.delete_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_report_group)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codebuild").delete_resource_policy` method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_resource_policy)
+[CodeBuild.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_resource_policy)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("codebuild").delete_source_credentials`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_source_credentials)
+[CodeBuild.Client.delete_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_source_credentials)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns
 Type annotations for `boto3.client("codebuild").delete_webhook` method.
 
 Boto3 documentation:
-[CodeBuild.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.delete_webhook)
+[CodeBuild.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.delete_webhook)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Type annotations for `boto3.client("codebuild").describe_code_coverages`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.describe_code_coverages](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.describe_code_coverages)
+[CodeBuild.Client.describe_code_coverages](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.describe_code_coverages)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Returns
 Type annotations for `boto3.client("codebuild").describe_test_cases` method.
 
 Boto3 documentation:
-[CodeBuild.Client.describe_test_cases](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.describe_test_cases)
+[CodeBuild.Client.describe_test_cases](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.describe_test_cases)
 
 Arguments:
 
@@ -417,7 +417,7 @@ Returns
 Type annotations for `boto3.client("codebuild").generate_presigned_url` method.
 
 Boto3 documentation:
-[CodeBuild.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.generate_presigned_url)
+[CodeBuild.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.generate_presigned_url)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Returns `str`.
 Type annotations for `boto3.client("codebuild").get_report_group_trend` method.
 
 Boto3 documentation:
-[CodeBuild.Client.get_report_group_trend](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.get_report_group_trend)
+[CodeBuild.Client.get_report_group_trend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.get_report_group_trend)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Returns
 Type annotations for `boto3.client("codebuild").get_resource_policy` method.
 
 Boto3 documentation:
-[CodeBuild.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.get_resource_policy)
+[CodeBuild.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.get_resource_policy)
 
 Arguments:
 
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("codebuild").import_source_credentials`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.import_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.import_source_credentials)
+[CodeBuild.Client.import_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.import_source_credentials)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("codebuild").invalidate_project_cache`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.invalidate_project_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.invalidate_project_cache)
+[CodeBuild.Client.invalidate_project_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.invalidate_project_cache)
 
 Arguments:
 
@@ -498,7 +498,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codebuild").list_build_batches` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_build_batches](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_build_batches)
+[CodeBuild.Client.list_build_batches](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_build_batches)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Type annotations for `boto3.client("codebuild").list_build_batches_for_project`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_build_batches_for_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_build_batches_for_project)
+[CodeBuild.Client.list_build_batches_for_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_build_batches_for_project)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Returns
 Type annotations for `boto3.client("codebuild").list_builds` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_builds)
+[CodeBuild.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_builds)
 
 Arguments:
 
@@ -549,7 +549,7 @@ Type annotations for `boto3.client("codebuild").list_builds_for_project`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_builds_for_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_builds_for_project)
+[CodeBuild.Client.list_builds_for_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_builds_for_project)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Type annotations for
 `boto3.client("codebuild").list_curated_environment_images` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_curated_environment_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_curated_environment_images)
+[CodeBuild.Client.list_curated_environment_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_curated_environment_images)
 
 Returns
 [ListCuratedEnvironmentImagesOutputTypeDef](./type_defs.md#listcuratedenvironmentimagesoutputtypedef).
@@ -576,7 +576,7 @@ Returns
 Type annotations for `boto3.client("codebuild").list_projects` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_projects)
+[CodeBuild.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_projects)
 
 Arguments:
 
@@ -591,7 +591,7 @@ Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 Type annotations for `boto3.client("codebuild").list_report_groups` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_report_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_report_groups)
+[CodeBuild.Client.list_report_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_report_groups)
 
 Arguments:
 
@@ -609,7 +609,7 @@ Returns
 Type annotations for `boto3.client("codebuild").list_reports` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_reports)
+[CodeBuild.Client.list_reports](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_reports)
 
 Arguments:
 
@@ -626,7 +626,7 @@ Type annotations for `boto3.client("codebuild").list_reports_for_report_group`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_reports_for_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_reports_for_report_group)
+[CodeBuild.Client.list_reports_for_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_reports_for_report_group)
 
 Arguments:
 
@@ -644,7 +644,7 @@ Returns
 Type annotations for `boto3.client("codebuild").list_shared_projects` method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_shared_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_shared_projects)
+[CodeBuild.Client.list_shared_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_shared_projects)
 
 Arguments:
 
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("codebuild").list_shared_report_groups`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_shared_report_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_shared_report_groups)
+[CodeBuild.Client.list_shared_report_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_shared_report_groups)
 
 Arguments:
 
@@ -682,7 +682,7 @@ Type annotations for `boto3.client("codebuild").list_source_credentials`
 method.
 
 Boto3 documentation:
-[CodeBuild.Client.list_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.list_source_credentials)
+[CodeBuild.Client.list_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.list_source_credentials)
 
 Returns
 [ListSourceCredentialsOutputTypeDef](./type_defs.md#listsourcecredentialsoutputtypedef).
@@ -692,7 +692,7 @@ Returns
 Type annotations for `boto3.client("codebuild").put_resource_policy` method.
 
 Boto3 documentation:
-[CodeBuild.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.put_resource_policy)
+[CodeBuild.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.put_resource_policy)
 
 Arguments:
 
@@ -707,7 +707,7 @@ Returns
 Type annotations for `boto3.client("codebuild").retry_build` method.
 
 Boto3 documentation:
-[CodeBuild.Client.retry_build](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.retry_build)
+[CodeBuild.Client.retry_build](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.retry_build)
 
 Arguments:
 
@@ -721,7 +721,7 @@ Returns [RetryBuildOutputTypeDef](./type_defs.md#retrybuildoutputtypedef).
 Type annotations for `boto3.client("codebuild").retry_build_batch` method.
 
 Boto3 documentation:
-[CodeBuild.Client.retry_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.retry_build_batch)
+[CodeBuild.Client.retry_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.retry_build_batch)
 
 Arguments:
 
@@ -737,7 +737,7 @@ Returns
 Type annotations for `boto3.client("codebuild").start_build` method.
 
 Boto3 documentation:
-[CodeBuild.Client.start_build](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.start_build)
+[CodeBuild.Client.start_build](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.start_build)
 
 Arguments:
 
@@ -790,7 +790,7 @@ Returns [StartBuildOutputTypeDef](./type_defs.md#startbuildoutputtypedef).
 Type annotations for `boto3.client("codebuild").start_build_batch` method.
 
 Boto3 documentation:
-[CodeBuild.Client.start_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.start_build_batch)
+[CodeBuild.Client.start_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.start_build_batch)
 
 Arguments:
 
@@ -844,7 +844,7 @@ Returns
 Type annotations for `boto3.client("codebuild").stop_build` method.
 
 Boto3 documentation:
-[CodeBuild.Client.stop_build](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.stop_build)
+[CodeBuild.Client.stop_build](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.stop_build)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Returns [StopBuildOutputTypeDef](./type_defs.md#stopbuildoutputtypedef).
 Type annotations for `boto3.client("codebuild").stop_build_batch` method.
 
 Boto3 documentation:
-[CodeBuild.Client.stop_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.stop_build_batch)
+[CodeBuild.Client.stop_build_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.stop_build_batch)
 
 Arguments:
 
@@ -871,7 +871,7 @@ Returns
 Type annotations for `boto3.client("codebuild").update_project` method.
 
 Boto3 documentation:
-[CodeBuild.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.update_project)
+[CodeBuild.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.update_project)
 
 Arguments:
 
@@ -912,7 +912,7 @@ Returns
 Type annotations for `boto3.client("codebuild").update_report_group` method.
 
 Boto3 documentation:
-[CodeBuild.Client.update_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.update_report_group)
+[CodeBuild.Client.update_report_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.update_report_group)
 
 Arguments:
 
@@ -929,7 +929,7 @@ Returns
 Type annotations for `boto3.client("codebuild").update_webhook` method.
 
 Boto3 documentation:
-[CodeBuild.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codebuild.html#CodeBuild.Client.update_webhook)
+[CodeBuild.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codebuild.html#CodeBuild.Client.update_webhook)
 
 Arguments:
 

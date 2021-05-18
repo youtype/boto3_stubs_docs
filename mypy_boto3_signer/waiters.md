@@ -3,7 +3,7 @@
 > [Index](..) > [Signer](.) > Waiters
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/signer.html#Signer)
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
@@ -25,7 +25,7 @@ def get_successful_signing_job_waiter() -> SuccessfulSigningJobWaiter:
 ```
 
 Boto3 documentation:
-[Signer.Waiter.successful_signing_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/signer.html#Signer.Waiter.successful_signing_job)
+[Signer.Waiter.successful_signing_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Waiter.successful_signing_job)
 
 Arguments for `SuccessfulSigningJobWaiter.wait` method:
 

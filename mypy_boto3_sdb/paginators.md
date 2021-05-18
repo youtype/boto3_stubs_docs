@@ -3,7 +3,7 @@
 > [Index](..) > [SimpleDB](.) > Paginators
 
 Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sdb.html#SimpleDB)
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
 [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
@@ -25,7 +25,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
 ```
 
 Boto3 documentation:
-[SimpleDB.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
+[SimpleDB.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
 
 Arguments for `ListDomainsPaginator.paginate` method:
 
@@ -49,7 +49,7 @@ def get_select_paginator() -> SelectPaginator:
 ```
 
 Boto3 documentation:
-[SimpleDB.Paginator.Select](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sdb.html#SimpleDB.Paginator.Select)
+[SimpleDB.Paginator.Select](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sdb.html#SimpleDB.Paginator.Select)
 
 Arguments for `SelectPaginator.paginate` method:
 

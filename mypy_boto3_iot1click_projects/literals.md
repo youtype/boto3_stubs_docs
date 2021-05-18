@@ -3,7 +3,7 @@
 > [Index](..) > [IoT1ClickProjects](.) > Literals
 
 Auto-generated documentation for
-[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot1click-projects.html#IoT1ClickProjects)
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module
 [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 

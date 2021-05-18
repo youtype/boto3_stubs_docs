@@ -3,7 +3,7 @@
 > [Index](..) > [PinpointSMSVoice](.) > PinpointSMSVoiceClient
 
 Auto-generated documentation for
-[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
 type annotations stubs module
 [mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 
@@ -35,7 +35,7 @@ def get_pinpoint-sms-voice_client() -> PinpointSMSVoiceClient:
 ```
 
 Boto3 documentation:
-[PinpointSMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client)
+[PinpointSMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 Type annotations for `boto3.client("pinpoint-sms-voice").can_paginate` method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.can_paginate)
+[PinpointSMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.can_paginate)
 
 Arguments:
 
@@ -80,7 +80,7 @@ Type annotations for
 `boto3.client("pinpoint-sms-voice").create_configuration_set` method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set)
+[PinpointSMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set)
 
 Arguments:
 
@@ -95,7 +95,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
+[PinpointSMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Type annotations for
 `boto3.client("pinpoint-sms-voice").delete_configuration_set` method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set)
+[PinpointSMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set)
 
 Arguments:
 
@@ -127,7 +127,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination)
+[PinpointSMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Type annotations for
 `boto3.client("pinpoint-sms-voice").generate_presigned_url` method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.generate_presigned_url)
+[PinpointSMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.generate_presigned_url)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations)
+[PinpointSMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("pinpoint-sms-voice").send_voice_message`
 method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
+[PinpointSMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[PinpointSMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
+[PinpointSMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
 
 Arguments:
 

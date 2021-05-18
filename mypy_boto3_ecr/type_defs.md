@@ -3,7 +3,7 @@
 > [Index](..) > [ECR](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr.html#ECR)
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr.html#ECR)
 type annotations stubs module
 [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Batch](.) > Paginators
 
 Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/batch.html#Batch)
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/batch.html#Batch)
 type annotations stubs module
 [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
@@ -28,7 +28,7 @@ def get_describe_compute_environments_paginator() -> DescribeComputeEnvironments
 ```
 
 Boto3 documentation:
-[Batch.Paginator.DescribeComputeEnvironments](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/batch.html#Batch.Paginator.DescribeComputeEnvironments)
+[Batch.Paginator.DescribeComputeEnvironments](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/batch.html#Batch.Paginator.DescribeComputeEnvironments)
 
 Arguments for `DescribeComputeEnvironmentsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_describe_job_definitions_paginator() -> DescribeJobDefinitionsPaginator:
 ```
 
 Boto3 documentation:
-[Batch.Paginator.DescribeJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/batch.html#Batch.Paginator.DescribeJobDefinitions)
+[Batch.Paginator.DescribeJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/batch.html#Batch.Paginator.DescribeJobDefinitions)
 
 Arguments for `DescribeJobDefinitionsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_describe_job_queues_paginator() -> DescribeJobQueuesPaginator:
 ```
 
 Boto3 documentation:
-[Batch.Paginator.DescribeJobQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/batch.html#Batch.Paginator.DescribeJobQueues)
+[Batch.Paginator.DescribeJobQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/batch.html#Batch.Paginator.DescribeJobQueues)
 
 Arguments for `DescribeJobQueuesPaginator.paginate` method:
 
@@ -107,7 +107,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[Batch.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/batch.html#Batch.Paginator.ListJobs)
+[Batch.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/batch.html#Batch.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 

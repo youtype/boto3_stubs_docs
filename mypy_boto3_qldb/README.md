@@ -3,7 +3,7 @@
 > [Index](..) > QLDB
 
 Auto-generated documentation for
-[QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/qldb.html#QLDB)
+[QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/qldb.html#QLDB)
 type annotations stubs module
 [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Appflow](.) > Literals
 
 Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/appflow.html#Appflow)
+[Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appflow.html#Appflow)
 type annotations stubs module
 [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 

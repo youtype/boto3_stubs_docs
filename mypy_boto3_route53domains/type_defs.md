@@ -3,7 +3,7 @@
 > [Index](..) > [Route53Domains](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53domains.html#Route53Domains)
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
 [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 

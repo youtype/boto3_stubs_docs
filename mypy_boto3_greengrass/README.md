@@ -3,7 +3,7 @@
 > [Index](..) > Greengrass
 
 Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/greengrass.html#Greengrass)
+[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
 [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 

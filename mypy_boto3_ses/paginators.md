@@ -3,7 +3,7 @@
 > [Index](..) > [SES](.) > Paginators
 
 Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ses.html#SES)
+[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ses.html#SES)
 type annotations stubs module
 [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
@@ -29,7 +29,7 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
 ```
 
 Boto3 documentation:
-[SES.Paginator.ListConfigurationSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
+[SES.Paginator.ListConfigurationSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
 
 Arguments for `ListConfigurationSetsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_custom_verification_email_templates_paginator() -> ListCustomVerifi
 ```
 
 Boto3 documentation:
-[SES.Paginator.ListCustomVerificationEmailTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
+[SES.Paginator.ListCustomVerificationEmailTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
 
 Arguments for `ListCustomVerificationEmailTemplatesPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_list_identities_paginator() -> ListIdentitiesPaginator:
 ```
 
 Boto3 documentation:
-[SES.Paginator.ListIdentities](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ses.html#SES.Paginator.ListIdentities)
+[SES.Paginator.ListIdentities](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ses.html#SES.Paginator.ListIdentities)
 
 Arguments for `ListIdentitiesPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_receipt_rule_sets_paginator() -> ListReceiptRuleSetsPaginator:
 ```
 
 Boto3 documentation:
-[SES.Paginator.ListReceiptRuleSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
+[SES.Paginator.ListReceiptRuleSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
 
 Arguments for `ListReceiptRuleSetsPaginator.paginate` method:
 
@@ -128,7 +128,7 @@ def get_list_templates_paginator() -> ListTemplatesPaginator:
 ```
 
 Boto3 documentation:
-[SES.Paginator.ListTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ses.html#SES.Paginator.ListTemplates)
+[SES.Paginator.ListTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ses.html#SES.Paginator.ListTemplates)
 
 Arguments for `ListTemplatesPaginator.paginate` method:
 

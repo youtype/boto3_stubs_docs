@@ -3,7 +3,7 @@
 > [Index](..) > [DataSync](.) > DataSyncClient
 
 Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync)
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync)
 type annotations stubs module
 [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
@@ -64,7 +64,7 @@ def get_datasync_client() -> DataSyncClient:
 ```
 
 Boto3 documentation:
-[DataSync.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client)
+[DataSync.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 Type annotations for `boto3.client("datasync").can_paginate` method.
 
 Boto3 documentation:
-[DataSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.can_paginate)
+[DataSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.can_paginate)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Returns `bool`.
 Type annotations for `boto3.client("datasync").cancel_task_execution` method.
 
 Boto3 documentation:
-[DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
+[DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").create_agent` method.
 
 Boto3 documentation:
-[DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_agent)
+[DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_agent)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns
 Type annotations for `boto3.client("datasync").create_location_efs` method.
 
 Boto3 documentation:
-[DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_location_efs)
+[DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_location_efs)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("datasync").create_location_fsx_windows`
 method.
 
 Boto3 documentation:
-[DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
+[DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Returns
 Type annotations for `boto3.client("datasync").create_location_nfs` method.
 
 Boto3 documentation:
-[DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_location_nfs)
+[DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_location_nfs)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("datasync").create_location_object_storage`
 method.
 
 Boto3 documentation:
-[DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
+[DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Returns
 Type annotations for `boto3.client("datasync").create_location_s3` method.
 
 Boto3 documentation:
-[DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_location_s3)
+[DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_location_s3)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns
 Type annotations for `boto3.client("datasync").create_location_smb` method.
 
 Boto3 documentation:
-[DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_location_smb)
+[DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_location_smb)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Returns
 Type annotations for `boto3.client("datasync").create_task` method.
 
 Boto3 documentation:
-[DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.create_task)
+[DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.create_task)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
 Type annotations for `boto3.client("datasync").delete_agent` method.
 
 Boto3 documentation:
-[DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.delete_agent)
+[DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.delete_agent)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").delete_location` method.
 
 Boto3 documentation:
-[DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.delete_location)
+[DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.delete_location)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").delete_task` method.
 
 Boto3 documentation:
-[DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.delete_task)
+[DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.delete_task)
 
 Arguments:
 
@@ -318,7 +318,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").describe_agent` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_agent)
+[DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_agent)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Returns
 Type annotations for `boto3.client("datasync").describe_location_efs` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_location_efs)
+[DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_location_efs)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("datasync").describe_location_fsx_windows`
 method.
 
 Boto3 documentation:
-[DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
+[DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns
 Type annotations for `boto3.client("datasync").describe_location_nfs` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
+[DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Type annotations for
 `boto3.client("datasync").describe_location_object_storage` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
+[DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns
 Type annotations for `boto3.client("datasync").describe_location_s3` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_location_s3)
+[DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_location_s3)
 
 Arguments:
 
@@ -404,7 +404,7 @@ Returns
 Type annotations for `boto3.client("datasync").describe_location_smb` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_location_smb)
+[DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_location_smb)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Returns
 Type annotations for `boto3.client("datasync").describe_task` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_task)
+[DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_task)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Returns
 Type annotations for `boto3.client("datasync").describe_task_execution` method.
 
 Boto3 documentation:
-[DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.describe_task_execution)
+[DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.describe_task_execution)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Returns
 Type annotations for `boto3.client("datasync").generate_presigned_url` method.
 
 Boto3 documentation:
-[DataSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.generate_presigned_url)
+[DataSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.generate_presigned_url)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Returns `str`.
 Type annotations for `boto3.client("datasync").list_agents` method.
 
 Boto3 documentation:
-[DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.list_agents)
+[DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.list_agents)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Returns [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef).
 Type annotations for `boto3.client("datasync").list_locations` method.
 
 Boto3 documentation:
-[DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.list_locations)
+[DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.list_locations)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Returns
 Type annotations for `boto3.client("datasync").list_tags_for_resource` method.
 
 Boto3 documentation:
-[DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
+[DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Returns
 Type annotations for `boto3.client("datasync").list_task_executions` method.
 
 Boto3 documentation:
-[DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.list_task_executions)
+[DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.list_task_executions)
 
 Arguments:
 
@@ -525,7 +525,7 @@ Returns
 Type annotations for `boto3.client("datasync").list_tasks` method.
 
 Boto3 documentation:
-[DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.list_tasks)
+[DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.list_tasks)
 
 Arguments:
 
@@ -540,7 +540,7 @@ Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 Type annotations for `boto3.client("datasync").start_task_execution` method.
 
 Boto3 documentation:
-[DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.start_task_execution)
+[DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.start_task_execution)
 
 Arguments:
 
@@ -556,7 +556,7 @@ Returns
 Type annotations for `boto3.client("datasync").tag_resource` method.
 
 Boto3 documentation:
-[DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.tag_resource)
+[DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.tag_resource)
 
 Arguments:
 
@@ -571,7 +571,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").untag_resource` method.
 
 Boto3 documentation:
-[DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.untag_resource)
+[DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.untag_resource)
 
 Arguments:
 
@@ -585,7 +585,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").update_agent` method.
 
 Boto3 documentation:
-[DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.update_agent)
+[DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.update_agent)
 
 Arguments:
 
@@ -599,7 +599,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").update_location_nfs` method.
 
 Boto3 documentation:
-[DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.update_location_nfs)
+[DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.update_location_nfs)
 
 Arguments:
 
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("datasync").update_location_object_storage`
 method.
 
 Boto3 documentation:
-[DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
+[DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
 
 Arguments:
 
@@ -637,7 +637,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").update_location_smb` method.
 
 Boto3 documentation:
-[DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.update_location_smb)
+[DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.update_location_smb)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").update_task` method.
 
 Boto3 documentation:
-[DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.update_task)
+[DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.update_task)
 
 Arguments:
 
@@ -675,7 +675,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("datasync").update_task_execution` method.
 
 Boto3 documentation:
-[DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/datasync.html#DataSync.Client.update_task_execution)
+[DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/datasync.html#DataSync.Client.update_task_execution)
 
 Arguments:
 

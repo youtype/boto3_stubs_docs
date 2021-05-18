@@ -3,7 +3,7 @@
 > [Index](..) > [IoTJobsDataPlane](.) > IoTJobsDataPlaneClient
 
 Auto-generated documentation for
-[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module
 [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
@@ -32,7 +32,7 @@ def get_iot-jobs-data_client() -> IoTJobsDataPlaneClient:
 ```
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
+[IoTJobsDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
 
 ## Exceptions
 
@@ -64,7 +64,7 @@ Exceptions:
 Type annotations for `boto3.client("iot-jobs-data").can_paginate` method.
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate)
+[IoTJobsDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate)
 
 Arguments:
 
@@ -78,7 +78,7 @@ Type annotations for `boto3.client("iot-jobs-data").describe_job_execution`
 method.
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
+[IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Type annotations for `boto3.client("iot-jobs-data").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url)
+[IoTJobsDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("iot-jobs-data").get_pending_job_executions`
 method.
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
+[IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Type annotations for
 `boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
+[IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("iot-jobs-data").update_job_execution`
 method.
 
 Boto3 documentation:
-[IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
+[IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [SNS](.) > SNSClient
 
 Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS)
+[SNS](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS)
 type annotations stubs module
 [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
 
@@ -62,7 +62,7 @@ def get_sns_client() -> SNSClient:
 ```
 
 Boto3 documentation:
-[SNS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client)
+[SNS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client)
 
 ## Exceptions
 
@@ -110,7 +110,7 @@ Exceptions:
 Type annotations for `boto3.client("sns").add_permission` method.
 
 Boto3 documentation:
-[SNS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.add_permission)
+[SNS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.add_permission)
 
 Arguments:
 
@@ -124,7 +124,7 @@ Arguments:
 Type annotations for `boto3.client("sns").can_paginate` method.
 
 Boto3 documentation:
-[SNS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.can_paginate)
+[SNS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.can_paginate)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("sns").check_if_phone_number_is_opted_out`
 method.
 
 Boto3 documentation:
-[SNS.Client.check_if_phone_number_is_opted_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
+[SNS.Client.check_if_phone_number_is_opted_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns
 Type annotations for `boto3.client("sns").confirm_subscription` method.
 
 Boto3 documentation:
-[SNS.Client.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.confirm_subscription)
+[SNS.Client.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.confirm_subscription)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns
 Type annotations for `boto3.client("sns").create_platform_application` method.
 
 Boto3 documentation:
-[SNS.Client.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.create_platform_application)
+[SNS.Client.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.create_platform_application)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("sns").create_platform_endpoint` method.
 
 Boto3 documentation:
-[SNS.Client.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.create_platform_endpoint)
+[SNS.Client.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.create_platform_endpoint)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns
 Type annotations for `boto3.client("sns").create_topic` method.
 
 Boto3 documentation:
-[SNS.Client.create_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.create_topic)
+[SNS.Client.create_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.create_topic)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns
 Type annotations for `boto3.client("sns").delete_endpoint` method.
 
 Boto3 documentation:
-[SNS.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.delete_endpoint)
+[SNS.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.delete_endpoint)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Arguments:
 Type annotations for `boto3.client("sns").delete_platform_application` method.
 
 Boto3 documentation:
-[SNS.Client.delete_platform_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.delete_platform_application)
+[SNS.Client.delete_platform_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.delete_platform_application)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Arguments:
 Type annotations for `boto3.client("sns").delete_topic` method.
 
 Boto3 documentation:
-[SNS.Client.delete_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.delete_topic)
+[SNS.Client.delete_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.delete_topic)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Arguments:
 Type annotations for `boto3.client("sns").generate_presigned_url` method.
 
 Boto3 documentation:
-[SNS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.generate_presigned_url)
+[SNS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Returns `str`.
 Type annotations for `boto3.client("sns").get_endpoint_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.get_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
+[SNS.Client.get_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("sns").get_platform_application_attributes`
 method.
 
 Boto3 documentation:
-[SNS.Client.get_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
+[SNS.Client.get_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("sns").get_sms_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.get_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.get_sms_attributes)
+[SNS.Client.get_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.get_sms_attributes)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Returns
 Type annotations for `boto3.client("sns").get_subscription_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.get_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.get_subscription_attributes)
+[SNS.Client.get_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.get_subscription_attributes)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Returns
 Type annotations for `boto3.client("sns").get_topic_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.get_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.get_topic_attributes)
+[SNS.Client.get_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.get_topic_attributes)
 
 Arguments:
 
@@ -338,7 +338,7 @@ Type annotations for
 `boto3.client("sns").list_endpoints_by_platform_application` method.
 
 Boto3 documentation:
-[SNS.Client.list_endpoints_by_platform_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
+[SNS.Client.list_endpoints_by_platform_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
 
 Arguments:
 
@@ -353,7 +353,7 @@ Returns
 Type annotations for `boto3.client("sns").list_phone_numbers_opted_out` method.
 
 Boto3 documentation:
-[SNS.Client.list_phone_numbers_opted_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
+[SNS.Client.list_phone_numbers_opted_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns
 Type annotations for `boto3.client("sns").list_platform_applications` method.
 
 Boto3 documentation:
-[SNS.Client.list_platform_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_platform_applications)
+[SNS.Client.list_platform_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_platform_applications)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Returns
 Type annotations for `boto3.client("sns").list_subscriptions` method.
 
 Boto3 documentation:
-[SNS.Client.list_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_subscriptions)
+[SNS.Client.list_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_subscriptions)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Returns
 Type annotations for `boto3.client("sns").list_subscriptions_by_topic` method.
 
 Boto3 documentation:
-[SNS.Client.list_subscriptions_by_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
+[SNS.Client.list_subscriptions_by_topic](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Returns
 Type annotations for `boto3.client("sns").list_tags_for_resource` method.
 
 Boto3 documentation:
-[SNS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_tags_for_resource)
+[SNS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -424,7 +424,7 @@ Returns
 Type annotations for `boto3.client("sns").list_topics` method.
 
 Boto3 documentation:
-[SNS.Client.list_topics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.list_topics)
+[SNS.Client.list_topics](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.list_topics)
 
 Arguments:
 
@@ -437,7 +437,7 @@ Returns [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef).
 Type annotations for `boto3.client("sns").opt_in_phone_number` method.
 
 Boto3 documentation:
-[SNS.Client.opt_in_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.opt_in_phone_number)
+[SNS.Client.opt_in_phone_number](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.opt_in_phone_number)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sns").publish` method.
 
 Boto3 documentation:
-[SNS.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.publish)
+[SNS.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.publish)
 
 Arguments:
 
@@ -472,7 +472,7 @@ Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 Type annotations for `boto3.client("sns").remove_permission` method.
 
 Boto3 documentation:
-[SNS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.remove_permission)
+[SNS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.remove_permission)
 
 Arguments:
 
@@ -484,7 +484,7 @@ Arguments:
 Type annotations for `boto3.client("sns").set_endpoint_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.set_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
+[SNS.Client.set_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("sns").set_platform_application_attributes`
 method.
 
 Boto3 documentation:
-[SNS.Client.set_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
+[SNS.Client.set_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Arguments:
 Type annotations for `boto3.client("sns").set_sms_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.set_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.set_sms_attributes)
+[SNS.Client.set_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.set_sms_attributes)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sns").set_subscription_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.set_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.set_subscription_attributes)
+[SNS.Client.set_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.set_subscription_attributes)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Arguments:
 Type annotations for `boto3.client("sns").set_topic_attributes` method.
 
 Boto3 documentation:
-[SNS.Client.set_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.set_topic_attributes)
+[SNS.Client.set_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.set_topic_attributes)
 
 Arguments:
 
@@ -548,7 +548,7 @@ Arguments:
 Type annotations for `boto3.client("sns").subscribe` method.
 
 Boto3 documentation:
-[SNS.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.subscribe)
+[SNS.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.subscribe)
 
 Arguments:
 
@@ -565,7 +565,7 @@ Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
 Type annotations for `boto3.client("sns").tag_resource` method.
 
 Boto3 documentation:
-[SNS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.tag_resource)
+[SNS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.tag_resource)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sns").unsubscribe` method.
 
 Boto3 documentation:
-[SNS.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.unsubscribe)
+[SNS.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.unsubscribe)
 
 Arguments:
 
@@ -590,7 +590,7 @@ Arguments:
 Type annotations for `boto3.client("sns").untag_resource` method.
 
 Boto3 documentation:
-[SNS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sns.html#SNS.Client.untag_resource)
+[SNS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sns.html#SNS.Client.untag_resource)
 
 Arguments:
 

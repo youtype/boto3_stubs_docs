@@ -3,7 +3,7 @@
 > [Index](..) > Health
 
 Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/health.html#Health)
+[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/health.html#Health)
 type annotations stubs module
 [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 

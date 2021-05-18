@@ -3,7 +3,7 @@
 > [Index](..) > [Shield](.) > Literals
 
 Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/shield.html#Shield)
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/shield.html#Shield)
 type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 

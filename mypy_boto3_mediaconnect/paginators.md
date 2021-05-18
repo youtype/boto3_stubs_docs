@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConnect](.) > Paginators
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
@@ -28,7 +28,7 @@ def get_list_entitlements_paginator() -> ListEntitlementsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConnect.Paginator.ListEntitlements](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect.Paginator.ListEntitlements)
+[MediaConnect.Paginator.ListEntitlements](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Paginator.ListEntitlements)
 
 Arguments for `ListEntitlementsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_flows_paginator() -> ListFlowsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConnect.Paginator.ListFlows](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect.Paginator.ListFlows)
+[MediaConnect.Paginator.ListFlows](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Paginator.ListFlows)
 
 Arguments for `ListFlowsPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConnect.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect.Paginator.ListOfferings)
+[MediaConnect.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Paginator.ListOfferings)
 
 Arguments for `ListOfferingsPaginator.paginate` method:
 
@@ -103,7 +103,7 @@ def get_list_reservations_paginator() -> ListReservationsPaginator:
 ```
 
 Boto3 documentation:
-[MediaConnect.Paginator.ListReservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mediaconnect.html#MediaConnect.Paginator.ListReservations)
+[MediaConnect.Paginator.ListReservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Paginator.ListReservations)
 
 Arguments for `ListReservationsPaginator.paginate` method:
 

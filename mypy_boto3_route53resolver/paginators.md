@@ -3,7 +3,7 @@
 > [Index](..) > [Route53Resolver](.) > Paginators
 
 Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver)
+[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
 [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
@@ -38,7 +38,7 @@ def get_list_firewall_configs_paginator() -> ListFirewallConfigsPaginator:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallConfigs)
+[Route53Resolver.Paginator.ListFirewallConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallConfigs)
 
 Arguments for `ListFirewallConfigsPaginator.paginate` method:
 
@@ -63,7 +63,7 @@ def get_list_firewall_domain_lists_paginator() -> ListFirewallDomainListsPaginat
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallDomainLists](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomainLists)
+[Route53Resolver.Paginator.ListFirewallDomainLists](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomainLists)
 
 Arguments for `ListFirewallDomainListsPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_list_firewall_domains_paginator() -> ListFirewallDomainsPaginator:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomains)
+[Route53Resolver.Paginator.ListFirewallDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomains)
 
 Arguments for `ListFirewallDomainsPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_list_firewall_rule_group_associations_paginator() -> ListFirewallRuleGro
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallRuleGroupAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroupAssociations)
+[Route53Resolver.Paginator.ListFirewallRuleGroupAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroupAssociations)
 
 Arguments for `ListFirewallRuleGroupAssociationsPaginator.paginate` method:
 
@@ -144,7 +144,7 @@ def get_list_firewall_rule_groups_paginator() -> ListFirewallRuleGroupsPaginator
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroups)
+[Route53Resolver.Paginator.ListFirewallRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroups)
 
 Arguments for `ListFirewallRuleGroupsPaginator.paginate` method:
 
@@ -169,7 +169,7 @@ def get_list_firewall_rules_paginator() -> ListFirewallRulesPaginator:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRules)
+[Route53Resolver.Paginator.ListFirewallRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRules)
 
 Arguments for `ListFirewallRulesPaginator.paginate` method:
 
@@ -197,7 +197,7 @@ def get_list_resolver_dnssec_configs_paginator() -> ListResolverDnssecConfigsPag
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverDnssecConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverDnssecConfigs)
+[Route53Resolver.Paginator.ListResolverDnssecConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverDnssecConfigs)
 
 Arguments for `ListResolverDnssecConfigsPaginator.paginate` method:
 
@@ -223,7 +223,7 @@ def get_list_resolver_endpoint_ip_addresses_paginator() -> ListResolverEndpointI
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverEndpointIpAddresses](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpointIpAddresses)
+[Route53Resolver.Paginator.ListResolverEndpointIpAddresses](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpointIpAddresses)
 
 Arguments for `ListResolverEndpointIpAddressesPaginator.paginate` method:
 
@@ -249,7 +249,7 @@ def get_list_resolver_endpoints_paginator() -> ListResolverEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpoints)
+[Route53Resolver.Paginator.ListResolverEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpoints)
 
 Arguments for `ListResolverEndpointsPaginator.paginate` method:
 
@@ -275,7 +275,7 @@ def get_list_resolver_query_log_config_associations_paginator() -> ListResolverQ
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations)
+[Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations)
 
 Arguments for `ListResolverQueryLogConfigAssociationsPaginator.paginate`
 method:
@@ -304,7 +304,7 @@ def get_list_resolver_query_log_configs_paginator() -> ListResolverQueryLogConfi
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverQueryLogConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigs)
+[Route53Resolver.Paginator.ListResolverQueryLogConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigs)
 
 Arguments for `ListResolverQueryLogConfigsPaginator.paginate` method:
 
@@ -332,7 +332,7 @@ def get_list_resolver_rule_associations_paginator() -> ListResolverRuleAssociati
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverRuleAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRuleAssociations)
+[Route53Resolver.Paginator.ListResolverRuleAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRuleAssociations)
 
 Arguments for `ListResolverRuleAssociationsPaginator.paginate` method:
 
@@ -358,7 +358,7 @@ def get_list_resolver_rules_paginator() -> ListResolverRulesPaginator:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRules)
+[Route53Resolver.Paginator.ListResolverRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRules)
 
 Arguments for `ListResolverRulesPaginator.paginate` method:
 
@@ -384,7 +384,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[Route53Resolver.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/route53resolver.html#Route53Resolver.Paginator.ListTagsForResource)
+[Route53Resolver.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/route53resolver.html#Route53Resolver.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 

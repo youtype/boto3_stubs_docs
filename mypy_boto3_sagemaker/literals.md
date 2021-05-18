@@ -3,7 +3,7 @@
 > [Index](..) > [SageMaker](.) > Literals
 
 Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/sagemaker.html#SageMaker)
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
 [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 

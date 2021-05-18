@@ -3,7 +3,7 @@
 > [Index](..) > IoT
 
 Auto-generated documentation for
-[IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/iot.html#IoT)
+[IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iot.html#IoT)
 type annotations stubs module
 [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 

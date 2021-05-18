@@ -3,7 +3,7 @@
 > [Index](..) > [DataExchange](.) > Paginators
 
 Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dataexchange.html#DataExchange)
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
 [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
@@ -28,7 +28,7 @@ def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
 ```
 
 Boto3 documentation:
-[DataExchange.Paginator.ListDataSetRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
+[DataExchange.Paginator.ListDataSetRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
 
 Arguments for `ListDataSetRevisionsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_data_sets_paginator() -> ListDataSetsPaginator:
 ```
 
 Boto3 documentation:
-[DataExchange.Paginator.ListDataSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
+[DataExchange.Paginator.ListDataSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
 
 Arguments for `ListDataSetsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[DataExchange.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
+[DataExchange.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 
@@ -106,7 +106,7 @@ def get_list_revision_assets_paginator() -> ListRevisionAssetsPaginator:
 ```
 
 Boto3 documentation:
-[DataExchange.Paginator.ListRevisionAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
+[DataExchange.Paginator.ListRevisionAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
 
 Arguments for `ListRevisionAssetsPaginator.paginate` method:
 

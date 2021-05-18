@@ -3,7 +3,7 @@
 > [Index](..) > [DeviceFarm](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/devicefarm.html#DeviceFarm)
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
 [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 

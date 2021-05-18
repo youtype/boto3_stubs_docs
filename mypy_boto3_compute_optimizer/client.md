@@ -3,7 +3,7 @@
 > [Index](..) > [ComputeOptimizer](.) > ComputeOptimizerClient
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -14,7 +14,9 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [describe_recommendation_export_jobs](#describe_recommendation_export_jobs)
     - [export_auto_scaling_group_recommendations](#export_auto_scaling_group_recommendations)
+    - [export_ebs_volume_recommendations](#export_ebs_volume_recommendations)
     - [export_ec2_instance_recommendations](#export_ec2_instance_recommendations)
+    - [export_lambda_function_recommendations](#export_lambda_function_recommendations)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_auto_scaling_group_recommendations](#get_auto_scaling_group_recommendations)
     - [get_ebs_volume_recommendations](#get_ebs_volume_recommendations)
@@ -39,7 +41,7 @@ def get_compute-optimizer_client() -> ComputeOptimizerClient:
 ```
 
 Boto3 documentation:
-[ComputeOptimizer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
+[ComputeOptimizer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
 
 ## Exceptions
 
@@ -73,7 +75,7 @@ Exceptions:
 Type annotations for `boto3.client("compute-optimizer").can_paginate` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.can_paginate)
+[ComputeOptimizer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.can_paginate)
 
 Arguments:
 
@@ -87,7 +89,7 @@ Type annotations for
 `boto3.client("compute-optimizer").describe_recommendation_export_jobs` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.describe_recommendation_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs)
+[ComputeOptimizer.Client.describe_recommendation_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs)
 
 Arguments:
 
@@ -106,7 +108,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.export_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations)
+[ComputeOptimizer.Client.export_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations)
 
 Arguments:
 
@@ -124,13 +126,37 @@ Arguments:
 Returns
 [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
 
+### export_ebs_volume_recommendations
+
+Type annotations for
+`boto3.client("compute-optimizer").export_ebs_volume_recommendations` method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.export_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ebs_volume_recommendations)
+
+Arguments:
+
+- `s3DestinationConfig`:
+  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
+  *(required)*
+- `accountIds`: `List`\[`str`\]
+- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `fieldsToExport`:
+  `List`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
+- `fileFormat`: `Literal['Csv']` (see
+  [FileFormatType](./literals.md#fileformattype))
+- `includeMemberAccounts`: `bool`
+
+Returns
+[ExportEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponsetypedef).
+
 ### export_ec2_instance_recommendations
 
 Type annotations for
 `boto3.client("compute-optimizer").export_ec2_instance_recommendations` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.export_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations)
+[ComputeOptimizer.Client.export_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations)
 
 Arguments:
 
@@ -148,13 +174,39 @@ Arguments:
 Returns
 [ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
+### export_lambda_function_recommendations
+
+Type annotations for
+`boto3.client("compute-optimizer").export_lambda_function_recommendations`
+method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.export_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_lambda_function_recommendations)
+
+Arguments:
+
+- `s3DestinationConfig`:
+  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
+  *(required)*
+- `accountIds`: `List`\[`str`\]
+- `filters`:
+  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+- `fieldsToExport`:
+  `List`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
+- `fileFormat`: `Literal['Csv']` (see
+  [FileFormatType](./literals.md#fileformattype))
+- `includeMemberAccounts`: `bool`
+
+Returns
+[ExportLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponsetypedef).
+
 ### generate_presigned_url
 
 Type annotations for `boto3.client("compute-optimizer").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.generate_presigned_url)
+[ComputeOptimizer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.generate_presigned_url)
 
 Arguments:
 
@@ -172,7 +224,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations)
+[ComputeOptimizer.Client.get_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations)
 
 Arguments:
 
@@ -191,7 +243,7 @@ Type annotations for
 `boto3.client("compute-optimizer").get_ebs_volume_recommendations` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations)
+[ComputeOptimizer.Client.get_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations)
 
 Arguments:
 
@@ -210,7 +262,7 @@ Type annotations for
 `boto3.client("compute-optimizer").get_ec2_instance_recommendations` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations)
+[ComputeOptimizer.Client.get_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations)
 
 Arguments:
 
@@ -230,7 +282,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics)
+[ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics)
 
 Arguments:
 
@@ -249,7 +301,7 @@ Type annotations for `boto3.client("compute-optimizer").get_enrollment_status`
 method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status)
+[ComputeOptimizer.Client.get_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status)
 
 Returns
 [GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
@@ -260,7 +312,7 @@ Type annotations for
 `boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations)
+[ComputeOptimizer.Client.get_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations)
 
 Arguments:
 
@@ -280,7 +332,7 @@ Type annotations for
 `boto3.client("compute-optimizer").get_recommendation_summaries` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.get_recommendation_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries)
+[ComputeOptimizer.Client.get_recommendation_summaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries)
 
 Arguments:
 
@@ -297,7 +349,7 @@ Type annotations for
 `boto3.client("compute-optimizer").update_enrollment_status` method.
 
 Boto3 documentation:
-[ComputeOptimizer.Client.update_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status)
+[ComputeOptimizer.Client.update_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status)
 
 Arguments:
 

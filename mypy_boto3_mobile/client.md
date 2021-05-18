@@ -3,7 +3,7 @@
 > [Index](..) > [Mobile](.) > MobileClient
 
 Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile)
+[Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile)
 type annotations stubs module
 [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
@@ -38,7 +38,7 @@ def get_mobile_client() -> MobileClient:
 ```
 
 Boto3 documentation:
-[Mobile.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client)
+[Mobile.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client)
 
 ## Exceptions
 
@@ -71,7 +71,7 @@ Exceptions:
 Type annotations for `boto3.client("mobile").can_paginate` method.
 
 Boto3 documentation:
-[Mobile.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.can_paginate)
+[Mobile.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.can_paginate)
 
 Arguments:
 
@@ -84,7 +84,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mobile").create_project` method.
 
 Boto3 documentation:
-[Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.create_project)
+[Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.create_project)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Returns
 Type annotations for `boto3.client("mobile").delete_project` method.
 
 Boto3 documentation:
-[Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.delete_project)
+[Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.delete_project)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Returns
 Type annotations for `boto3.client("mobile").describe_bundle` method.
 
 Boto3 documentation:
-[Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.describe_bundle)
+[Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.describe_bundle)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns
 Type annotations for `boto3.client("mobile").describe_project` method.
 
 Boto3 documentation:
-[Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.describe_project)
+[Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.describe_project)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns
 Type annotations for `boto3.client("mobile").export_bundle` method.
 
 Boto3 documentation:
-[Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.export_bundle)
+[Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.export_bundle)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef).
 Type annotations for `boto3.client("mobile").export_project` method.
 
 Boto3 documentation:
-[Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.export_project)
+[Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.export_project)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns
 Type annotations for `boto3.client("mobile").generate_presigned_url` method.
 
 Boto3 documentation:
-[Mobile.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.generate_presigned_url)
+[Mobile.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.generate_presigned_url)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns `str`.
 Type annotations for `boto3.client("mobile").list_bundles` method.
 
 Boto3 documentation:
-[Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.list_bundles)
+[Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.list_bundles)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef).
 Type annotations for `boto3.client("mobile").list_projects` method.
 
 Boto3 documentation:
-[Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.list_projects)
+[Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.list_projects)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 Type annotations for `boto3.client("mobile").update_project` method.
 
 Boto3 documentation:
-[Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/mobile.html#Mobile.Client.update_project)
+[Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mobile.html#Mobile.Client.update_project)
 
 Arguments:
 

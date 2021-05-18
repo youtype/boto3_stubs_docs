@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStarNotifications](.) > Paginators
 
 Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codestar-notifications.html#CodeStarNotifications)
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
 [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
@@ -27,7 +27,7 @@ def get_list_event_types_paginator() -> ListEventTypesPaginator:
 ```
 
 Boto3 documentation:
-[CodeStarNotifications.Paginator.ListEventTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListEventTypes)
+[CodeStarNotifications.Paginator.ListEventTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListEventTypes)
 
 Arguments for `ListEventTypesPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_notification_rules_paginator() -> ListNotificationRulesPaginator:
 ```
 
 Boto3 documentation:
-[CodeStarNotifications.Paginator.ListNotificationRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListNotificationRules)
+[CodeStarNotifications.Paginator.ListNotificationRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListNotificationRules)
 
 Arguments for `ListNotificationRulesPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_targets_paginator() -> ListTargetsPaginator:
 ```
 
 Boto3 documentation:
-[CodeStarNotifications.Paginator.ListTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListTargets)
+[CodeStarNotifications.Paginator.ListTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListTargets)
 
 Arguments for `ListTargetsPaginator.paginate` method:
 

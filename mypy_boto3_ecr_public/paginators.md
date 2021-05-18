@@ -3,7 +3,7 @@
 > [Index](..) > [ECRPublic](.) > Paginators
 
 Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic)
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
 [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
@@ -28,7 +28,7 @@ def get_describe_image_tags_paginator() -> DescribeImageTagsPaginator:
 ```
 
 Boto3 documentation:
-[ECRPublic.Paginator.DescribeImageTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImageTags)
+[ECRPublic.Paginator.DescribeImageTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImageTags)
 
 Arguments for `DescribeImageTagsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
 ```
 
 Boto3 documentation:
-[ECRPublic.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImages)
+[ECRPublic.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImages)
 
 Arguments for `DescribeImagesPaginator.paginate` method:
 
@@ -84,7 +84,7 @@ def get_describe_registries_paginator() -> DescribeRegistriesPaginator:
 ```
 
 Boto3 documentation:
-[ECRPublic.Paginator.DescribeRegistries](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRegistries)
+[ECRPublic.Paginator.DescribeRegistries](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRegistries)
 
 Arguments for `DescribeRegistriesPaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
 ```
 
 Boto3 documentation:
-[ECRPublic.Paginator.DescribeRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRepositories)
+[ECRPublic.Paginator.DescribeRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRepositories)
 
 Arguments for `DescribeRepositoriesPaginator.paginate` method:
 

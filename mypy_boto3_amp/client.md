@@ -3,7 +3,7 @@
 > [Index](..) > [PrometheusService](.) > PrometheusServiceClient
 
 Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService)
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService)
 type annotations stubs module
 [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
@@ -34,7 +34,7 @@ def get_amp_client() -> PrometheusServiceClient:
 ```
 
 Boto3 documentation:
-[PrometheusService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client)
+[PrometheusService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 Type annotations for `boto3.client("amp").can_paginate` method.
 
 Boto3 documentation:
-[PrometheusService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.can_paginate)
+[PrometheusService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.can_paginate)
 
 Arguments:
 
@@ -79,7 +79,7 @@ Returns `bool`.
 Type annotations for `boto3.client("amp").create_workspace` method.
 
 Boto3 documentation:
-[PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.create_workspace)
+[PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.create_workspace)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns
 Type annotations for `boto3.client("amp").delete_workspace` method.
 
 Boto3 documentation:
-[PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.delete_workspace)
+[PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.delete_workspace)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Arguments:
 Type annotations for `boto3.client("amp").describe_workspace` method.
 
 Boto3 documentation:
-[PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.describe_workspace)
+[PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.describe_workspace)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns
 Type annotations for `boto3.client("amp").generate_presigned_url` method.
 
 Boto3 documentation:
-[PrometheusService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.generate_presigned_url)
+[PrometheusService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns `str`.
 Type annotations for `boto3.client("amp").list_workspaces` method.
 
 Boto3 documentation:
-[PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.list_workspaces)
+[PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.list_workspaces)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns
 Type annotations for `boto3.client("amp").update_workspace_alias` method.
 
 Boto3 documentation:
-[PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
+[PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
 
 Arguments:
 

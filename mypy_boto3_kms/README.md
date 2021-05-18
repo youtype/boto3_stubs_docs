@@ -3,7 +3,7 @@
 > [Index](..) > KMS
 
 Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kms.html#KMS)
+[KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kms.html#KMS)
 type annotations stubs module
 [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 

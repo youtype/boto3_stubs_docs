@@ -3,7 +3,7 @@
 > [Index](..) > [Kinesis](.) > Literals
 
 Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/kinesis.html#Kinesis)
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 

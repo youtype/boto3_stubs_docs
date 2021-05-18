@@ -3,7 +3,7 @@
 > [Index](..) > Outposts
 
 Auto-generated documentation for
-[Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/outposts.html#Outposts)
+[Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/outposts.html#Outposts)
 type annotations stubs module
 [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 

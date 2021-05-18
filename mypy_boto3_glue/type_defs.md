@@ -3,7 +3,7 @@
 > [Index](..) > [Glue](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.74/reference/services/glue.html#Glue)
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/glue.html#Glue)
 type annotations stubs module
 [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
