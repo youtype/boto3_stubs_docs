@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisAnalyticsV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
@@ -30,6 +30,9 @@ type annotations stubs module
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
   - [ApplicationVersionSummaryTypeDef](#applicationversionsummarytypedef)
   - [CSVMappingParametersTypeDef](#csvmappingparameterstypedef)
+  - [CatalogConfigurationDescriptionTypeDef](#catalogconfigurationdescriptiontypedef)
+  - [CatalogConfigurationTypeDef](#catalogconfigurationtypedef)
+  - [CatalogConfigurationUpdateTypeDef](#catalogconfigurationupdatetypedef)
   - [CheckpointConfigurationDescriptionTypeDef](#checkpointconfigurationdescriptiontypedef)
   - [CheckpointConfigurationTypeDef](#checkpointconfigurationtypedef)
   - [CheckpointConfigurationUpdateTypeDef](#checkpointconfigurationupdatetypedef)
@@ -41,11 +44,16 @@ type annotations stubs module
   - [CodeContentUpdateTypeDef](#codecontentupdatetypedef)
   - [CreateApplicationPresignedUrlResponseTypeDef](#createapplicationpresignedurlresponsetypedef)
   - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [CustomArtifactConfigurationDescriptionTypeDef](#customartifactconfigurationdescriptiontypedef)
+  - [CustomArtifactConfigurationTypeDef](#customartifactconfigurationtypedef)
   - [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](#deleteapplicationcloudwatchloggingoptionresponsetypedef)
   - [DeleteApplicationInputProcessingConfigurationResponseTypeDef](#deleteapplicationinputprocessingconfigurationresponsetypedef)
   - [DeleteApplicationOutputResponseTypeDef](#deleteapplicationoutputresponsetypedef)
   - [DeleteApplicationReferenceDataSourceResponseTypeDef](#deleteapplicationreferencedatasourceresponsetypedef)
   - [DeleteApplicationVpcConfigurationResponseTypeDef](#deleteapplicationvpcconfigurationresponsetypedef)
+  - [DeployAsApplicationConfigurationDescriptionTypeDef](#deployasapplicationconfigurationdescriptiontypedef)
+  - [DeployAsApplicationConfigurationTypeDef](#deployasapplicationconfigurationtypedef)
+  - [DeployAsApplicationConfigurationUpdateTypeDef](#deployasapplicationconfigurationupdatetypedef)
   - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
   - [DescribeApplicationSnapshotResponseTypeDef](#describeapplicationsnapshotresponsetypedef)
   - [DescribeApplicationVersionResponseTypeDef](#describeapplicationversionresponsetypedef)
@@ -58,6 +66,9 @@ type annotations stubs module
   - [FlinkApplicationConfigurationTypeDef](#flinkapplicationconfigurationtypedef)
   - [FlinkApplicationConfigurationUpdateTypeDef](#flinkapplicationconfigurationupdatetypedef)
   - [FlinkRunConfigurationTypeDef](#flinkrunconfigurationtypedef)
+  - [GlueDataCatalogConfigurationDescriptionTypeDef](#gluedatacatalogconfigurationdescriptiontypedef)
+  - [GlueDataCatalogConfigurationTypeDef](#gluedatacatalogconfigurationtypedef)
+  - [GlueDataCatalogConfigurationUpdateTypeDef](#gluedatacatalogconfigurationupdatetypedef)
   - [InputDescriptionTypeDef](#inputdescriptiontypedef)
   - [InputLambdaProcessorDescriptionTypeDef](#inputlambdaprocessordescriptiontypedef)
   - [InputLambdaProcessorTypeDef](#inputlambdaprocessortypedef)
@@ -92,6 +103,7 @@ type annotations stubs module
   - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MappingParametersTypeDef](#mappingparameterstypedef)
+  - [MavenReferenceTypeDef](#mavenreferencetypedef)
   - [MonitoringConfigurationDescriptionTypeDef](#monitoringconfigurationdescriptiontypedef)
   - [MonitoringConfigurationTypeDef](#monitoringconfigurationtypedef)
   - [MonitoringConfigurationUpdateTypeDef](#monitoringconfigurationupdatetypedef)
@@ -115,6 +127,9 @@ type annotations stubs module
   - [RunConfigurationUpdateTypeDef](#runconfigurationupdatetypedef)
   - [S3ApplicationCodeLocationDescriptionTypeDef](#s3applicationcodelocationdescriptiontypedef)
   - [S3ConfigurationTypeDef](#s3configurationtypedef)
+  - [S3ContentBaseLocationDescriptionTypeDef](#s3contentbaselocationdescriptiontypedef)
+  - [S3ContentBaseLocationTypeDef](#s3contentbaselocationtypedef)
+  - [S3ContentBaseLocationUpdateTypeDef](#s3contentbaselocationupdatetypedef)
   - [S3ContentLocationTypeDef](#s3contentlocationtypedef)
   - [S3ContentLocationUpdateTypeDef](#s3contentlocationupdatetypedef)
   - [S3ReferenceDataSourceDescriptionTypeDef](#s3referencedatasourcedescriptiontypedef)
@@ -132,6 +147,12 @@ type annotations stubs module
   - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
   - [VpcConfigurationUpdateTypeDef](#vpcconfigurationupdatetypedef)
+  - [ZeppelinApplicationConfigurationDescriptionTypeDef](#zeppelinapplicationconfigurationdescriptiontypedef)
+  - [ZeppelinApplicationConfigurationTypeDef](#zeppelinapplicationconfigurationtypedef)
+  - [ZeppelinApplicationConfigurationUpdateTypeDef](#zeppelinapplicationconfigurationupdatetypedef)
+  - [ZeppelinMonitoringConfigurationDescriptionTypeDef](#zeppelinmonitoringconfigurationdescriptiontypedef)
+  - [ZeppelinMonitoringConfigurationTypeDef](#zeppelinmonitoringconfigurationtypedef)
+  - [ZeppelinMonitoringConfigurationUpdateTypeDef](#zeppelinmonitoringconfigurationupdatetypedef)
 
 ## AddApplicationCloudWatchLoggingOptionResponseTypeDef
 
@@ -276,17 +297,14 @@ Optional fields:
   [ApplicationSnapshotConfigurationDescriptionTypeDef](./type_defs.md#applicationsnapshotconfigurationdescriptiontypedef)
 - `VpcConfigurationDescriptions`:
   `List`\[[VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)\]
+- `ZeppelinApplicationConfigurationDescription`:
+  [ZeppelinApplicationConfigurationDescriptionTypeDef](./type_defs.md#zeppelinapplicationconfigurationdescriptiontypedef)
 
 ## ApplicationConfigurationTypeDef
 
 ```python
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationTypeDef
 ```
-
-Required fields:
-
-- `ApplicationCodeConfiguration`:
-  [ApplicationCodeConfigurationTypeDef](./type_defs.md#applicationcodeconfigurationtypedef)
 
 Optional fields:
 
@@ -296,10 +314,14 @@ Optional fields:
   [FlinkApplicationConfigurationTypeDef](./type_defs.md#flinkapplicationconfigurationtypedef)
 - `EnvironmentProperties`:
   [EnvironmentPropertiesTypeDef](./type_defs.md#environmentpropertiestypedef)
+- `ApplicationCodeConfiguration`:
+  [ApplicationCodeConfigurationTypeDef](./type_defs.md#applicationcodeconfigurationtypedef)
 - `ApplicationSnapshotConfiguration`:
   [ApplicationSnapshotConfigurationTypeDef](./type_defs.md#applicationsnapshotconfigurationtypedef)
 - `VpcConfigurations`:
   `List`\[[VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)\]
+- `ZeppelinApplicationConfiguration`:
+  [ZeppelinApplicationConfigurationTypeDef](./type_defs.md#zeppelinapplicationconfigurationtypedef)
 
 ## ApplicationConfigurationUpdateTypeDef
 
@@ -321,6 +343,8 @@ Optional fields:
   [ApplicationSnapshotConfigurationUpdateTypeDef](./type_defs.md#applicationsnapshotconfigurationupdatetypedef)
 - `VpcConfigurationUpdates`:
   `List`\[[VpcConfigurationUpdateTypeDef](./type_defs.md#vpcconfigurationupdatetypedef)\]
+- `ZeppelinApplicationConfigurationUpdate`:
+  [ZeppelinApplicationConfigurationUpdateTypeDef](./type_defs.md#zeppelinapplicationconfigurationupdatetypedef)
 
 ## ApplicationDetailTypeDef
 
@@ -354,6 +378,7 @@ Optional fields:
 - `ApplicationVersionRolledBackFrom`: `int`
 - `ConditionalToken`: `str`
 - `ApplicationVersionRolledBackTo`: `int`
+- `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
 
 ## ApplicationMaintenanceConfigurationDescriptionTypeDef
 
@@ -437,6 +462,10 @@ Required fields:
 - `RuntimeEnvironment`:
   [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
 
+Optional fields:
+
+- `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
+
 ## ApplicationVersionSummaryTypeDef
 
 ```python
@@ -459,6 +488,39 @@ Required fields:
 
 - `RecordRowDelimiter`: `str`
 - `RecordColumnDelimiter`: `str`
+
+## CatalogConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import CatalogConfigurationDescriptionTypeDef
+```
+
+Required fields:
+
+- `GlueDataCatalogConfigurationDescription`:
+  [GlueDataCatalogConfigurationDescriptionTypeDef](./type_defs.md#gluedatacatalogconfigurationdescriptiontypedef)
+
+## CatalogConfigurationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import CatalogConfigurationTypeDef
+```
+
+Required fields:
+
+- `GlueDataCatalogConfiguration`:
+  [GlueDataCatalogConfigurationTypeDef](./type_defs.md#gluedatacatalogconfigurationtypedef)
+
+## CatalogConfigurationUpdateTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import CatalogConfigurationUpdateTypeDef
+```
+
+Required fields:
+
+- `GlueDataCatalogConfigurationUpdate`:
+  [GlueDataCatalogConfigurationUpdateTypeDef](./type_defs.md#gluedatacatalogconfigurationupdatetypedef)
 
 ## CheckpointConfigurationDescriptionTypeDef
 
@@ -605,6 +667,37 @@ Required fields:
 - `ApplicationDetail`:
   [ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef)
 
+## CustomArtifactConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import CustomArtifactConfigurationDescriptionTypeDef
+```
+
+Optional fields:
+
+- `ArtifactType`: [ArtifactTypeType](./literals.md#artifacttypetype)
+- `S3ContentLocationDescription`:
+  [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
+- `MavenReferenceDescription`:
+  [MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef)
+
+## CustomArtifactConfigurationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import CustomArtifactConfigurationTypeDef
+```
+
+Required fields:
+
+- `ArtifactType`: [ArtifactTypeType](./literals.md#artifacttypetype)
+
+Optional fields:
+
+- `S3ContentLocation`:
+  [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
+- `MavenReference`:
+  [MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef)
+
 ## DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
 
 ```python
@@ -661,6 +754,39 @@ Optional fields:
 
 - `ApplicationARN`: `str`
 - `ApplicationVersionId`: `int`
+
+## DeployAsApplicationConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationDescriptionTypeDef
+```
+
+Required fields:
+
+- `S3ContentLocationDescription`:
+  [S3ContentBaseLocationDescriptionTypeDef](./type_defs.md#s3contentbaselocationdescriptiontypedef)
+
+## DeployAsApplicationConfigurationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationTypeDef
+```
+
+Required fields:
+
+- `S3ContentLocation`:
+  [S3ContentBaseLocationTypeDef](./type_defs.md#s3contentbaselocationtypedef)
+
+## DeployAsApplicationConfigurationUpdateTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationUpdateTypeDef
+```
+
+Required fields:
+
+- `S3ContentLocationUpdate`:
+  [S3ContentBaseLocationUpdateTypeDef](./type_defs.md#s3contentbaselocationupdatetypedef)
 
 ## DescribeApplicationResponseTypeDef
 
@@ -807,6 +933,36 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkRunConfigurationTypeDef
 Optional fields:
 
 - `AllowNonRestoredState`: `bool`
+
+## GlueDataCatalogConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationDescriptionTypeDef
+```
+
+Required fields:
+
+- `DatabaseARN`: `str`
+
+## GlueDataCatalogConfigurationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationTypeDef
+```
+
+Required fields:
+
+- `DatabaseARN`: `str`
+
+## GlueDataCatalogConfigurationUpdateTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationUpdateTypeDef
+```
+
+Optional fields:
+
+- `DatabaseARNUpdate`: `str`
 
 ## InputDescriptionTypeDef
 
@@ -1237,6 +1393,18 @@ Optional fields:
 - `CSVMappingParameters`:
   [CSVMappingParametersTypeDef](./type_defs.md#csvmappingparameterstypedef)
 
+## MavenReferenceTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import MavenReferenceTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `ArtifactId`: `str`
+- `Version`: `str`
+
 ## MonitoringConfigurationDescriptionTypeDef
 
 ```python
@@ -1582,6 +1750,48 @@ Required fields:
 - `BucketARN`: `str`
 - `FileKey`: `str`
 
+## S3ContentBaseLocationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationDescriptionTypeDef
+```
+
+Required fields:
+
+- `BucketARN`: `str`
+
+Optional fields:
+
+- `BasePath`: `str`
+
+## S3ContentBaseLocationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationTypeDef
+```
+
+Required fields:
+
+- `BucketARN`: `str`
+
+Optional fields:
+
+- `BasePath`: `str`
+
+## S3ContentBaseLocationUpdateTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationUpdateTypeDef
+```
+
+Required fields:
+
+- `BucketARNUpdate`: `str`
+
+Optional fields:
+
+- `BasePathUpdate`: `str`
+
 ## S3ContentLocationTypeDef
 
 ```python
@@ -1808,3 +2018,87 @@ Optional fields:
 
 - `SubnetIdUpdates`: `List`\[`str`\]
 - `SecurityGroupIdUpdates`: `List`\[`str`\]
+
+## ZeppelinApplicationConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinApplicationConfigurationDescriptionTypeDef
+```
+
+Required fields:
+
+- `MonitoringConfigurationDescription`:
+  [ZeppelinMonitoringConfigurationDescriptionTypeDef](./type_defs.md#zeppelinmonitoringconfigurationdescriptiontypedef)
+
+Optional fields:
+
+- `CatalogConfigurationDescription`:
+  [CatalogConfigurationDescriptionTypeDef](./type_defs.md#catalogconfigurationdescriptiontypedef)
+- `DeployAsApplicationConfigurationDescription`:
+  [DeployAsApplicationConfigurationDescriptionTypeDef](./type_defs.md#deployasapplicationconfigurationdescriptiontypedef)
+- `CustomArtifactsConfigurationDescription`:
+  `List`\[[CustomArtifactConfigurationDescriptionTypeDef](./type_defs.md#customartifactconfigurationdescriptiontypedef)\]
+
+## ZeppelinApplicationConfigurationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinApplicationConfigurationTypeDef
+```
+
+Optional fields:
+
+- `MonitoringConfiguration`:
+  [ZeppelinMonitoringConfigurationTypeDef](./type_defs.md#zeppelinmonitoringconfigurationtypedef)
+- `CatalogConfiguration`:
+  [CatalogConfigurationTypeDef](./type_defs.md#catalogconfigurationtypedef)
+- `DeployAsApplicationConfiguration`:
+  [DeployAsApplicationConfigurationTypeDef](./type_defs.md#deployasapplicationconfigurationtypedef)
+- `CustomArtifactsConfiguration`:
+  `List`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
+
+## ZeppelinApplicationConfigurationUpdateTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinApplicationConfigurationUpdateTypeDef
+```
+
+Optional fields:
+
+- `MonitoringConfigurationUpdate`:
+  [ZeppelinMonitoringConfigurationUpdateTypeDef](./type_defs.md#zeppelinmonitoringconfigurationupdatetypedef)
+- `CatalogConfigurationUpdate`:
+  [CatalogConfigurationUpdateTypeDef](./type_defs.md#catalogconfigurationupdatetypedef)
+- `DeployAsApplicationConfigurationUpdate`:
+  [DeployAsApplicationConfigurationUpdateTypeDef](./type_defs.md#deployasapplicationconfigurationupdatetypedef)
+- `CustomArtifactsConfigurationUpdate`:
+  `List`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
+
+## ZeppelinMonitoringConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinMonitoringConfigurationDescriptionTypeDef
+```
+
+Optional fields:
+
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+## ZeppelinMonitoringConfigurationTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinMonitoringConfigurationTypeDef
+```
+
+Required fields:
+
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+## ZeppelinMonitoringConfigurationUpdateTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinMonitoringConfigurationUpdateTypeDef
+```
+
+Required fields:
+
+- `LogLevelUpdate`: [LogLevelType](./literals.md#logleveltype)

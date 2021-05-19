@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDB](.) > Paginators
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -28,7 +28,7 @@ def get_list_backups_paginator() -> ListBackupsPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.ListBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
+[DynamoDB.Paginator.ListBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
 
 Arguments for `ListBackupsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
+[DynamoDB.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
 
 Arguments for `ListTablesPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.ListTagsOfResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
+[DynamoDB.Paginator.ListTagsOfResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
 
 Arguments for `ListTagsOfResourcePaginator.paginate` method:
 
@@ -106,7 +106,7 @@ def get_query_paginator() -> QueryPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
+[DynamoDB.Paginator.Query](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
 
 Arguments for `QueryPaginator.paginate` method:
 
@@ -152,7 +152,7 @@ def get_scan_paginator() -> ScanPaginator:
 ```
 
 Boto3 documentation:
-[DynamoDB.Paginator.Scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
+[DynamoDB.Paginator.Scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
 
 Arguments for `ScanPaginator.paginate` method:
 

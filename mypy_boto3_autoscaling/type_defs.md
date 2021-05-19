@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScaling](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling)
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
@@ -21,6 +21,7 @@ type annotations stubs module
   - [BatchPutScheduledUpdateGroupActionAnswerTypeDef](#batchputscheduledupdategroupactionanswertypedef)
   - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
   - [CancelInstanceRefreshAnswerTypeDef](#cancelinstancerefreshanswertypedef)
+  - [CapacityForecastTypeDef](#capacityforecasttypedef)
   - [CustomizedMetricSpecificationTypeDef](#customizedmetricspecificationtypedef)
   - [DescribeAccountLimitsAnswerTypeDef](#describeaccountlimitsanswertypedef)
   - [DescribeAdjustmentTypesAnswerTypeDef](#describeadjustmenttypesanswertypedef)
@@ -41,6 +42,7 @@ type annotations stubs module
   - [ExitStandbyAnswerTypeDef](#exitstandbyanswertypedef)
   - [FailedScheduledUpdateGroupActionRequestTypeDef](#failedscheduledupdategroupactionrequesttypedef)
   - [FilterTypeDef](#filtertypedef)
+  - [GetPredictiveScalingForecastAnswerTypeDef](#getpredictivescalingforecastanswertypedef)
   - [InstanceMetadataOptionsTypeDef](#instancemetadataoptionstypedef)
   - [InstanceMonitoringTypeDef](#instancemonitoringtypedef)
   - [InstanceRefreshLivePoolProgressTypeDef](#instancerefreshlivepoolprogresstypedef)
@@ -58,6 +60,7 @@ type annotations stubs module
   - [LifecycleHookTypeDef](#lifecyclehooktypedef)
   - [LoadBalancerStateTypeDef](#loadbalancerstatetypedef)
   - [LoadBalancerTargetGroupStateTypeDef](#loadbalancertargetgroupstatetypedef)
+  - [LoadForecastTypeDef](#loadforecasttypedef)
   - [MetricCollectionTypeTypeDef](#metriccollectiontypetypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
   - [MetricGranularityTypeTypeDef](#metricgranularitytypetypedef)
@@ -67,6 +70,11 @@ type annotations stubs module
   - [PoliciesTypeTypeDef](#policiestypetypedef)
   - [PolicyARNTypeTypeDef](#policyarntypetypedef)
   - [PredefinedMetricSpecificationTypeDef](#predefinedmetricspecificationtypedef)
+  - [PredictiveScalingConfigurationTypeDef](#predictivescalingconfigurationtypedef)
+  - [PredictiveScalingMetricSpecificationTypeDef](#predictivescalingmetricspecificationtypedef)
+  - [PredictiveScalingPredefinedLoadMetricTypeDef](#predictivescalingpredefinedloadmetrictypedef)
+  - [PredictiveScalingPredefinedMetricPairTypeDef](#predictivescalingpredefinedmetricpairtypedef)
+  - [PredictiveScalingPredefinedScalingMetricTypeDef](#predictivescalingpredefinedscalingmetrictypedef)
   - [ProcessTypeTypeDef](#processtypetypedef)
   - [ProcessesTypeTypeDef](#processestypetypedef)
   - [RefreshPreferencesTypeDef](#refreshpreferencestypedef)
@@ -178,6 +186,7 @@ Optional fields:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `MixedInstancesPolicy`:
   [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
+- `PredictedCapacity`: `int`
 - `LoadBalancerNames`: `List`\[`str`\]
 - `TargetGroupARNs`: `List`\[`str`\]
 - `HealthCheckGracePeriod`: `int`
@@ -297,6 +306,17 @@ from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshAnswerTypeDef
 Optional fields:
 
 - `InstanceRefreshId`: `str`
+
+## CapacityForecastTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import CapacityForecastTypeDef
+```
+
+Required fields:
+
+- `Timestamps`: `List`\[`datetime`\]
+- `Values`: `List`\[`float`\]
 
 ## CustomizedMetricSpecificationTypeDef
 
@@ -539,6 +559,20 @@ Optional fields:
 
 - `Name`: `str`
 - `Values`: `List`\[`str`\]
+
+## GetPredictiveScalingForecastAnswerTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastAnswerTypeDef
+```
+
+Required fields:
+
+- `LoadForecast`:
+  `List`\[[LoadForecastTypeDef](./type_defs.md#loadforecasttypedef)\]
+- `CapacityForecast`:
+  [CapacityForecastTypeDef](./type_defs.md#capacityforecasttypedef)
+- `UpdateTime`: `datetime`
 
 ## InstanceMetadataOptionsTypeDef
 
@@ -803,6 +837,19 @@ Optional fields:
 - `LoadBalancerTargetGroupARN`: `str`
 - `State`: `str`
 
+## LoadForecastTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import LoadForecastTypeDef
+```
+
+Required fields:
+
+- `Timestamps`: `List`\[`datetime`\]
+- `Values`: `List`\[`float`\]
+- `MetricSpecification`:
+  [PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef)
+
 ## MetricCollectionTypeTypeDef
 
 ```python
@@ -908,6 +955,89 @@ Optional fields:
 
 - `ResourceLabel`: `str`
 
+## PredictiveScalingConfigurationTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingConfigurationTypeDef
+```
+
+Required fields:
+
+- `MetricSpecifications`:
+  `List`\[[PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef)\]
+
+Optional fields:
+
+- `Mode`: [PredictiveScalingModeType](./literals.md#predictivescalingmodetype)
+- `SchedulingBufferTime`: `int`
+- `MaxCapacityBreachBehavior`:
+  [PredictiveScalingMaxCapacityBreachBehaviorType](./literals.md#predictivescalingmaxcapacitybreachbehaviortype)
+- `MaxCapacityBuffer`: `int`
+
+## PredictiveScalingMetricSpecificationTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingMetricSpecificationTypeDef
+```
+
+Required fields:
+
+- `TargetValue`: `float`
+
+Optional fields:
+
+- `PredefinedMetricPairSpecification`:
+  [PredictiveScalingPredefinedMetricPairTypeDef](./type_defs.md#predictivescalingpredefinedmetricpairtypedef)
+- `PredefinedScalingMetricSpecification`:
+  [PredictiveScalingPredefinedScalingMetricTypeDef](./type_defs.md#predictivescalingpredefinedscalingmetrictypedef)
+- `PredefinedLoadMetricSpecification`:
+  [PredictiveScalingPredefinedLoadMetricTypeDef](./type_defs.md#predictivescalingpredefinedloadmetrictypedef)
+
+## PredictiveScalingPredefinedLoadMetricTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingPredefinedLoadMetricTypeDef
+```
+
+Required fields:
+
+- `PredefinedMetricType`:
+  [PredefinedLoadMetricTypeType](./literals.md#predefinedloadmetrictypetype)
+
+Optional fields:
+
+- `ResourceLabel`: `str`
+
+## PredictiveScalingPredefinedMetricPairTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingPredefinedMetricPairTypeDef
+```
+
+Required fields:
+
+- `PredefinedMetricType`:
+  [PredefinedMetricPairTypeType](./literals.md#predefinedmetricpairtypetype)
+
+Optional fields:
+
+- `ResourceLabel`: `str`
+
+## PredictiveScalingPredefinedScalingMetricTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import PredictiveScalingPredefinedScalingMetricTypeDef
+```
+
+Required fields:
+
+- `PredefinedMetricType`:
+  [PredefinedScalingMetricTypeType](./literals.md#predefinedscalingmetrictypetype)
+
+Optional fields:
+
+- `ResourceLabel`: `str`
+
 ## ProcessTypeTypeDef
 
 ```python
@@ -967,6 +1097,8 @@ Optional fields:
 - `TargetTrackingConfiguration`:
   [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
 - `Enabled`: `bool`
+- `PredictiveScalingConfiguration`:
+  [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
 
 ## ScheduledActionsTypeTypeDef
 

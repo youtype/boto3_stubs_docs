@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDB](.) > DynamoDBServiceResource
 
 Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB)
+[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
 [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
@@ -37,7 +37,7 @@ def get_dynamodb_resource() -> DynamoDBServiceResource:
 ```
 
 Boto3 documentation:
-[DynamoDB.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource)
+[DynamoDB.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource)
 
 ## Attributes
 
@@ -61,7 +61,7 @@ def get_collection() -> ServiceResourceTablesCollection:
 Provides access to [Table](#table) resource.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.tables)
+[DynamoDB.ServiceResource.tables](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.tables)
 
 ## Methods
 
@@ -70,7 +70,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("dynamodb").Table` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.Table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
+[DynamoDB.ServiceResource.Table](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
 
 Arguments:
 
@@ -83,7 +83,7 @@ Returns [Table](#table).
 Type annotations for `boto3.resource("dynamodb").batch_get_item` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
+[DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").batch_write_item` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
+[DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns
 Type annotations for `boto3.resource("dynamodb").create_table` method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
+[DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Type annotations for `boto3.resource("dynamodb").get_available_subresources`
 method.
 
 Boto3 documentation:
-[DynamoDB.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
+[DynamoDB.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -170,7 +170,7 @@ def get_resource() -> Table:
 ```
 
 Boto3 documentation:
-[DynamoDB.Table](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
+[DynamoDB.Table](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
 
 ### Table attributes
 
@@ -204,7 +204,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("dynamodb").batch_writer` method.
 
 Boto3 documentation:
-[DynamoDB.Table.batch_writer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
+[DynamoDB.Table.batch_writer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns `BatchWriter`.
 Type annotations for `boto3.resource("dynamodb").delete` method.
 
 Boto3 documentation:
-[DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.delete)
+[DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.delete)
 
 Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
@@ -226,7 +226,7 @@ Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").delete_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
+[DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Type annotations for `boto3.resource("dynamodb").get_available_subresources`
 method.
 
 Boto3 documentation:
-[DynamoDB.Table.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
+[DynamoDB.Table.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -267,7 +267,7 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("dynamodb").get_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.get_item)
+[DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.get_item)
 
 Arguments:
 
@@ -289,14 +289,14 @@ Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").load` method.
 
 Boto3 documentation:
-[DynamoDB.Table.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.load)
+[DynamoDB.Table.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.load)
 
 #### Table.put_item method
 
 Type annotations for `boto3.resource("dynamodb").put_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.put_item)
+[DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.put_item)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").query` method.
 
 Boto3 documentation:
-[DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.query)
+[DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.query)
 
 Arguments:
 
@@ -365,14 +365,14 @@ Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").reload` method.
 
 Boto3 documentation:
-[DynamoDB.Table.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.reload)
+[DynamoDB.Table.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.reload)
 
 #### Table.scan method
 
 Type annotations for `boto3.resource("dynamodb").scan` method.
 
 Boto3 documentation:
-[DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.scan)
+[DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.scan)
 
 Arguments:
 
@@ -408,7 +408,7 @@ Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").update` method.
 
 Boto3 documentation:
-[DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.update)
+[DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.update)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Returns [Table](#table).
 Type annotations for `boto3.resource("dynamodb").update_item` method.
 
 Boto3 documentation:
-[DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.update_item)
+[DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.update_item)
 
 Arguments:
 
@@ -467,11 +467,11 @@ Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 Type annotations for `boto3.resource("dynamodb").wait_until_exists` method.
 
 Boto3 documentation:
-[DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
+[DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
 
 #### Table.wait_until_not_exists method
 
 Type annotations for `boto3.resource("dynamodb").wait_until_not_exists` method.
 
 Boto3 documentation:
-[DynamoDB.Table.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dynamodb.html#DynamoDB.Table.wait_until_not_exists)
+[DynamoDB.Table.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB.Table.wait_until_not_exists)

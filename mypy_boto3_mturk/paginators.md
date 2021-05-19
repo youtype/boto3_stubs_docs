@@ -3,7 +3,7 @@
 > [Index](..) > [MTurk](.) > Paginators
 
 Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk)
+[MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk)
 type annotations stubs module
 [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
@@ -33,7 +33,7 @@ def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListAssignmentsForHIT](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
+[MTurk.Paginator.ListAssignmentsForHIT](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
 
 Arguments for `ListAssignmentsForHITPaginator.paginate` method:
 
@@ -61,7 +61,7 @@ def get_list_bonus_payments_paginator() -> ListBonusPaymentsPaginator:
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListBonusPayments](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
+[MTurk.Paginator.ListBonusPayments](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
 
 Arguments for `ListBonusPaymentsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_hits_paginator() -> ListHITsPaginator:
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListHITs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListHITs)
+[MTurk.Paginator.ListHITs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListHITs)
 
 Arguments for `ListHITsPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_list_hits_for_qualification_type_paginator() -> ListHITsForQualification
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListHITsForQualificationType](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
+[MTurk.Paginator.ListHITsForQualificationType](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
 
 Arguments for `ListHITsForQualificationTypePaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_list_qualification_requests_paginator() -> ListQualificationRequestsPagi
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListQualificationRequests](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
+[MTurk.Paginator.ListQualificationRequests](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
 
 Arguments for `ListQualificationRequestsPaginator.paginate` method:
 
@@ -164,7 +164,7 @@ def get_list_qualification_types_paginator() -> ListQualificationTypesPaginator:
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListQualificationTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
+[MTurk.Paginator.ListQualificationTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
 
 Arguments for `ListQualificationTypesPaginator.paginate` method:
 
@@ -192,7 +192,7 @@ def get_list_reviewable_hits_paginator() -> ListReviewableHITsPaginator:
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListReviewableHITs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
+[MTurk.Paginator.ListReviewableHITs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
 
 Arguments for `ListReviewableHITsPaginator.paginate` method:
 
@@ -219,7 +219,7 @@ def get_list_worker_blocks_paginator() -> ListWorkerBlocksPaginator:
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListWorkerBlocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
+[MTurk.Paginator.ListWorkerBlocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
 
 Arguments for `ListWorkerBlocksPaginator.paginate` method:
 
@@ -244,7 +244,7 @@ def get_list_workers_with_qualification_type_paginator() -> ListWorkersWithQuali
 ```
 
 Boto3 documentation:
-[MTurk.Paginator.ListWorkersWithQualificationType](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
+[MTurk.Paginator.ListWorkersWithQualificationType](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
 
 Arguments for `ListWorkersWithQualificationTypePaginator.paginate` method:
 

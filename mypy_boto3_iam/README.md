@@ -3,7 +3,7 @@
 > [Index](..) > IAM
 
 Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iam.html#IAM)
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM)
 type annotations stubs module
 [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
@@ -326,6 +326,7 @@ from mypy_boto3_iam.paginators import GetAccountAuthorizationDetailsPaginator, .
 - [ListServerCertificatesPaginator](./paginators.md#listservercertificatespaginator)
 - [ListSigningCertificatesPaginator](./paginators.md#listsigningcertificatespaginator)
 - [ListUserPoliciesPaginator](./paginators.md#listuserpoliciespaginator)
+- [ListUserTagsPaginator](./paginators.md#listusertagspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 - [ListVirtualMFADevicesPaginator](./paginators.md#listvirtualmfadevicespaginator)
 - [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
@@ -384,6 +385,7 @@ from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityTypeType, ...
 - [ListServerCertificatesPaginatorName](./literals.md#listservercertificatespaginatorname)
 - [ListSigningCertificatesPaginatorName](./literals.md#listsigningcertificatespaginatorname)
 - [ListUserPoliciesPaginatorName](./literals.md#listuserpoliciespaginatorname)
+- [ListUserTagsPaginatorName](./literals.md#listusertagspaginatorname)
 - [ListUsersPaginatorName](./literals.md#listuserspaginatorname)
 - [ListVirtualMFADevicesPaginatorName](./literals.md#listvirtualmfadevicespaginatorname)
 - [PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype)

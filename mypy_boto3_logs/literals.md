@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > Literals
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 

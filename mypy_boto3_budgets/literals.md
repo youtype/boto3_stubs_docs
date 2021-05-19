@@ -3,7 +3,7 @@
 > [Index](..) > [Budgets](.) > Literals
 
 Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/budgets.html#Budgets)
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/budgets.html#Budgets)
 type annotations stubs module
 [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 

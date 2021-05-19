@@ -3,7 +3,7 @@
 > [Index](..) > [DirectoryService](.) > Paginators
 
 Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService)
+[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService)
 type annotations stubs module
 [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
@@ -33,7 +33,7 @@ def get_describe_directories_paginator() -> DescribeDirectoriesPaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.DescribeDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.DescribeDirectories)
+[DirectoryService.Paginator.DescribeDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.DescribeDirectories)
 
 Arguments for `DescribeDirectoriesPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_describe_domain_controllers_paginator() -> DescribeDomainControllersPagi
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.DescribeDomainControllers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.DescribeDomainControllers)
+[DirectoryService.Paginator.DescribeDomainControllers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.DescribeDomainControllers)
 
 Arguments for `DescribeDomainControllersPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_describe_shared_directories_paginator() -> DescribeSharedDirectoriesPagi
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.DescribeSharedDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.DescribeSharedDirectories)
+[DirectoryService.Paginator.DescribeSharedDirectories](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.DescribeSharedDirectories)
 
 Arguments for `DescribeSharedDirectoriesPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.DescribeSnapshots)
+[DirectoryService.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.DescribeSnapshots)
 
 Arguments for `DescribeSnapshotsPaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_describe_trusts_paginator() -> DescribeTrustsPaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.DescribeTrusts](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.DescribeTrusts)
+[DirectoryService.Paginator.DescribeTrusts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.DescribeTrusts)
 
 Arguments for `DescribeTrustsPaginator.paginate` method:
 
@@ -164,7 +164,7 @@ def get_list_ip_routes_paginator() -> ListIpRoutesPaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.ListIpRoutes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.ListIpRoutes)
+[DirectoryService.Paginator.ListIpRoutes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.ListIpRoutes)
 
 Arguments for `ListIpRoutesPaginator.paginate` method:
 
@@ -190,7 +190,7 @@ def get_list_log_subscriptions_paginator() -> ListLogSubscriptionsPaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.ListLogSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.ListLogSubscriptions)
+[DirectoryService.Paginator.ListLogSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.ListLogSubscriptions)
 
 Arguments for `ListLogSubscriptionsPaginator.paginate` method:
 
@@ -216,7 +216,7 @@ def get_list_schema_extensions_paginator() -> ListSchemaExtensionsPaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.ListSchemaExtensions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.ListSchemaExtensions)
+[DirectoryService.Paginator.ListSchemaExtensions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.ListSchemaExtensions)
 
 Arguments for `ListSchemaExtensionsPaginator.paginate` method:
 
@@ -242,7 +242,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[DirectoryService.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ds.html#DirectoryService.Paginator.ListTagsForResource)
+[DirectoryService.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 

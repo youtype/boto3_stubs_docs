@@ -3,7 +3,7 @@
 > [Index](..) > SavingsPlans
 
 Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/savingsplans.html#SavingsPlans)
+[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
 [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 

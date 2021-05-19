@@ -4,7 +4,7 @@
 > MarketplaceCommerceAnalyticsClient
 
 Auto-generated documentation for
-[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module
 [mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
@@ -31,7 +31,7 @@ def get_marketplacecommerceanalytics_client() -> MarketplaceCommerceAnalyticsCli
 ```
 
 Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
+[MarketplaceCommerceAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
 
 ## Exceptions
 
@@ -58,7 +58,7 @@ Type annotations for
 `boto3.client("marketplacecommerceanalytics").can_paginate` method.
 
 Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.can_paginate)
+[MarketplaceCommerceAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.can_paginate)
 
 Arguments:
 
@@ -72,7 +72,7 @@ Type annotations for
 `boto3.client("marketplacecommerceanalytics").generate_data_set` method.
 
 Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.generate_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
+[MarketplaceCommerceAnalytics.Client.generate_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
 
 Arguments:
 
@@ -93,7 +93,7 @@ Type annotations for
 `boto3.client("marketplacecommerceanalytics").generate_presigned_url` method.
 
 Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_presigned_url)
+[MarketplaceCommerceAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_presigned_url)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.start_support_data_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
+[MarketplaceCommerceAnalytics.Client.start_support_data_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
 
 Arguments:
 

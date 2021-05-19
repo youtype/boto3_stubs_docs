@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticBeanstalk](.) > ElasticBeanstalkClient
 
 Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
@@ -77,7 +77,7 @@ def get_elasticbeanstalk_client() -> ElasticBeanstalkClient:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
+[ElasticBeanstalk.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
 
 ## Exceptions
 
@@ -122,7 +122,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").abort_environment_update` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.abort_environment_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update)
+[ElasticBeanstalk.Client.abort_environment_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").apply_environment_managed_action` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.apply_environment_managed_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
+[ElasticBeanstalk.Client.apply_environment_managed_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
 
 Arguments:
 
@@ -153,7 +153,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.associate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role)
+[ElasticBeanstalk.Client.associate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Arguments:
 Type annotations for `boto3.client("elasticbeanstalk").can_paginate` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate)
+[ElasticBeanstalk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Type annotations for `boto3.client("elasticbeanstalk").check_dns_availability`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.check_dns_availability](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability)
+[ElasticBeanstalk.Client.check_dns_availability](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Type annotations for `boto3.client("elasticbeanstalk").compose_environments`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.compose_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
+[ElasticBeanstalk.Client.compose_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("elasticbeanstalk").create_application`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
+[ElasticBeanstalk.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").create_application_version` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
+[ElasticBeanstalk.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").create_configuration_template` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.create_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
+[ElasticBeanstalk.Client.create_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("elasticbeanstalk").create_environment`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
+[ElasticBeanstalk.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Type annotations for `boto3.client("elasticbeanstalk").create_platform_version`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.create_platform_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
+[ElasticBeanstalk.Client.create_platform_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("elasticbeanstalk").create_storage_location`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.create_storage_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location)
+[ElasticBeanstalk.Client.create_storage_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location)
 
 Returns
 [CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef).
@@ -343,7 +343,7 @@ Type annotations for `boto3.client("elasticbeanstalk").delete_application`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application)
+[ElasticBeanstalk.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").delete_application_version` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.delete_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
+[ElasticBeanstalk.Client.delete_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").delete_configuration_template` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.delete_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template)
+[ElasticBeanstalk.Client.delete_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").delete_environment_configuration` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.delete_environment_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration)
+[ElasticBeanstalk.Client.delete_environment_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("elasticbeanstalk").delete_platform_version`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.delete_platform_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version)
+[ElasticBeanstalk.Client.delete_platform_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_account_attributes` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes)
+[ElasticBeanstalk.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes)
 
 Returns
 [DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
@@ -422,7 +422,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_application_versions` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_application_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
+[ElasticBeanstalk.Client.describe_application_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("elasticbeanstalk").describe_applications`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications)
+[ElasticBeanstalk.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications)
 
 Arguments:
 
@@ -455,7 +455,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_configuration_options` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
+[ElasticBeanstalk.Client.describe_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_configuration_settings` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
+[ElasticBeanstalk.Client.describe_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_environment_health` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
+[ElasticBeanstalk.Client.describe_environment_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
 
 Arguments:
 
@@ -512,7 +512,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_managed_action_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
+[ElasticBeanstalk.Client.describe_environment_managed_action_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
 
 Arguments:
 
@@ -530,7 +530,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_environment_managed_actions` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_managed_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
+[ElasticBeanstalk.Client.describe_environment_managed_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
 
 Arguments:
 
@@ -547,7 +547,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_environment_resources` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources)
+[ElasticBeanstalk.Client.describe_environment_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources)
 
 Arguments:
 
@@ -563,7 +563,7 @@ Type annotations for `boto3.client("elasticbeanstalk").describe_environments`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
+[ElasticBeanstalk.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
 
 Arguments:
 
@@ -584,7 +584,7 @@ Returns
 Type annotations for `boto3.client("elasticbeanstalk").describe_events` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
+[ElasticBeanstalk.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
 
 Arguments:
 
@@ -610,7 +610,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_instances_health` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_instances_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
+[ElasticBeanstalk.Client.describe_instances_health](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
 
 Arguments:
 
@@ -629,7 +629,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").describe_platform_version` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.describe_platform_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version)
+[ElasticBeanstalk.Client.describe_platform_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version)
 
 Arguments:
 
@@ -645,7 +645,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.disassociate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role)
+[ElasticBeanstalk.Client.disassociate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("elasticbeanstalk").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url)
+[ElasticBeanstalk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").list_available_solution_stacks` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.list_available_solution_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks)
+[ElasticBeanstalk.Client.list_available_solution_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks)
 
 Returns
 [ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef).
@@ -685,7 +685,7 @@ Type annotations for `boto3.client("elasticbeanstalk").list_platform_branches`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.list_platform_branches](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
+[ElasticBeanstalk.Client.list_platform_branches](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Type annotations for `boto3.client("elasticbeanstalk").list_platform_versions`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.list_platform_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
+[ElasticBeanstalk.Client.list_platform_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
 
 Arguments:
 
@@ -721,7 +721,7 @@ Type annotations for `boto3.client("elasticbeanstalk").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource)
+[ElasticBeanstalk.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -736,7 +736,7 @@ Type annotations for `boto3.client("elasticbeanstalk").rebuild_environment`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.rebuild_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment)
+[ElasticBeanstalk.Client.rebuild_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment)
 
 Arguments:
 
@@ -749,7 +749,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").request_environment_info` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.request_environment_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
+[ElasticBeanstalk.Client.request_environment_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
 
 Arguments:
 
@@ -764,7 +764,7 @@ Type annotations for `boto3.client("elasticbeanstalk").restart_app_server`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.restart_app_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server)
+[ElasticBeanstalk.Client.restart_app_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").retrieve_environment_info` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.retrieve_environment_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
+[ElasticBeanstalk.Client.retrieve_environment_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
 
 Arguments:
 
@@ -795,7 +795,7 @@ Type annotations for `boto3.client("elasticbeanstalk").swap_environment_cnames`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.swap_environment_cnames](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
+[ElasticBeanstalk.Client.swap_environment_cnames](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
 
 Arguments:
 
@@ -810,7 +810,7 @@ Type annotations for `boto3.client("elasticbeanstalk").terminate_environment`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.terminate_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
+[ElasticBeanstalk.Client.terminate_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
 
 Arguments:
 
@@ -828,7 +828,7 @@ Type annotations for `boto3.client("elasticbeanstalk").update_application`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application)
+[ElasticBeanstalk.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application)
 
 Arguments:
 
@@ -845,7 +845,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.update_application_resource_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle)
+[ElasticBeanstalk.Client.update_application_resource_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle)
 
 Arguments:
 
@@ -863,7 +863,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").update_application_version` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.update_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
+[ElasticBeanstalk.Client.update_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
 
 Arguments:
 
@@ -880,7 +880,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").update_configuration_template` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.update_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
+[ElasticBeanstalk.Client.update_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
 
 Arguments:
 
@@ -901,7 +901,7 @@ Type annotations for `boto3.client("elasticbeanstalk").update_environment`
 method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
+[ElasticBeanstalk.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
 
 Arguments:
 
@@ -929,7 +929,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").update_tags_for_resource` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.update_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
+[ElasticBeanstalk.Client.update_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
 
 Arguments:
 
@@ -943,7 +943,7 @@ Type annotations for
 `boto3.client("elasticbeanstalk").validate_configuration_settings` method.
 
 Boto3 documentation:
-[ElasticBeanstalk.Client.validate_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
+[ElasticBeanstalk.Client.validate_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
 
 Arguments:
 

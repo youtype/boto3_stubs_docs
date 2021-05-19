@@ -3,7 +3,7 @@
 > [Index](..) > [Athena](.) > AthenaClient
 
 Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena)
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena)
 type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
@@ -63,7 +63,7 @@ def get_athena_client() -> AthenaClient:
 ```
 
 Boto3 documentation:
-[Athena.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client)
+[Athena.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client)
 
 ## Exceptions
 
@@ -93,7 +93,7 @@ Exceptions:
 Type annotations for `boto3.client("athena").batch_get_named_query` method.
 
 Boto3 documentation:
-[Athena.Client.batch_get_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.batch_get_named_query)
+[Athena.Client.batch_get_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.batch_get_named_query)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Returns
 Type annotations for `boto3.client("athena").batch_get_query_execution` method.
 
 Boto3 documentation:
-[Athena.Client.batch_get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.batch_get_query_execution)
+[Athena.Client.batch_get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.batch_get_query_execution)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Returns
 Type annotations for `boto3.client("athena").can_paginate` method.
 
 Boto3 documentation:
-[Athena.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.can_paginate)
+[Athena.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.can_paginate)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns `bool`.
 Type annotations for `boto3.client("athena").create_data_catalog` method.
 
 Boto3 documentation:
-[Athena.Client.create_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.create_data_catalog)
+[Athena.Client.create_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.create_data_catalog)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").create_named_query` method.
 
 Boto3 documentation:
-[Athena.Client.create_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.create_named_query)
+[Athena.Client.create_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.create_named_query)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns
 Type annotations for `boto3.client("athena").create_prepared_statement` method.
 
 Boto3 documentation:
-[Athena.Client.create_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.create_prepared_statement)
+[Athena.Client.create_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.create_prepared_statement)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").create_work_group` method.
 
 Boto3 documentation:
-[Athena.Client.create_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.create_work_group)
+[Athena.Client.create_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.create_work_group)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").delete_data_catalog` method.
 
 Boto3 documentation:
-[Athena.Client.delete_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.delete_data_catalog)
+[Athena.Client.delete_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.delete_data_catalog)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").delete_named_query` method.
 
 Boto3 documentation:
-[Athena.Client.delete_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.delete_named_query)
+[Athena.Client.delete_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.delete_named_query)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").delete_prepared_statement` method.
 
 Boto3 documentation:
-[Athena.Client.delete_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.delete_prepared_statement)
+[Athena.Client.delete_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.delete_prepared_statement)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").delete_work_group` method.
 
 Boto3 documentation:
-[Athena.Client.delete_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.delete_work_group)
+[Athena.Client.delete_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.delete_work_group)
 
 Arguments:
 
@@ -257,7 +257,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").generate_presigned_url` method.
 
 Boto3 documentation:
-[Athena.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.generate_presigned_url)
+[Athena.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.generate_presigned_url)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns `str`.
 Type annotations for `boto3.client("athena").get_data_catalog` method.
 
 Boto3 documentation:
-[Athena.Client.get_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_data_catalog)
+[Athena.Client.get_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_data_catalog)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("athena").get_database` method.
 
 Boto3 documentation:
-[Athena.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_database)
+[Athena.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_database)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Returns [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef).
 Type annotations for `boto3.client("athena").get_named_query` method.
 
 Boto3 documentation:
-[Athena.Client.get_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_named_query)
+[Athena.Client.get_named_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_named_query)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("athena").get_prepared_statement` method.
 
 Boto3 documentation:
-[Athena.Client.get_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_prepared_statement)
+[Athena.Client.get_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_prepared_statement)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns
 Type annotations for `boto3.client("athena").get_query_execution` method.
 
 Boto3 documentation:
-[Athena.Client.get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_query_execution)
+[Athena.Client.get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_query_execution)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Returns
 Type annotations for `boto3.client("athena").get_query_results` method.
 
 Boto3 documentation:
-[Athena.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_query_results)
+[Athena.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_query_results)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Returns
 Type annotations for `boto3.client("athena").get_table_metadata` method.
 
 Boto3 documentation:
-[Athena.Client.get_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_table_metadata)
+[Athena.Client.get_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_table_metadata)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Returns
 Type annotations for `boto3.client("athena").get_work_group` method.
 
 Boto3 documentation:
-[Athena.Client.get_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.get_work_group)
+[Athena.Client.get_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.get_work_group)
 
 Arguments:
 
@@ -389,7 +389,7 @@ Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
 Type annotations for `boto3.client("athena").list_data_catalogs` method.
 
 Boto3 documentation:
-[Athena.Client.list_data_catalogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_data_catalogs)
+[Athena.Client.list_data_catalogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_data_catalogs)
 
 Arguments:
 
@@ -404,7 +404,7 @@ Returns
 Type annotations for `boto3.client("athena").list_databases` method.
 
 Boto3 documentation:
-[Athena.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_databases)
+[Athena.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_databases)
 
 Arguments:
 
@@ -420,7 +420,7 @@ Returns
 Type annotations for `boto3.client("athena").list_engine_versions` method.
 
 Boto3 documentation:
-[Athena.Client.list_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_engine_versions)
+[Athena.Client.list_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_engine_versions)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Returns
 Type annotations for `boto3.client("athena").list_named_queries` method.
 
 Boto3 documentation:
-[Athena.Client.list_named_queries](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_named_queries)
+[Athena.Client.list_named_queries](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_named_queries)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Returns
 Type annotations for `boto3.client("athena").list_prepared_statements` method.
 
 Boto3 documentation:
-[Athena.Client.list_prepared_statements](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_prepared_statements)
+[Athena.Client.list_prepared_statements](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_prepared_statements)
 
 Arguments:
 
@@ -467,7 +467,7 @@ Returns
 Type annotations for `boto3.client("athena").list_query_executions` method.
 
 Boto3 documentation:
-[Athena.Client.list_query_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_query_executions)
+[Athena.Client.list_query_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_query_executions)
 
 Arguments:
 
@@ -483,7 +483,7 @@ Returns
 Type annotations for `boto3.client("athena").list_table_metadata` method.
 
 Boto3 documentation:
-[Athena.Client.list_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_table_metadata)
+[Athena.Client.list_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_table_metadata)
 
 Arguments:
 
@@ -501,7 +501,7 @@ Returns
 Type annotations for `boto3.client("athena").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Athena.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_tags_for_resource)
+[Athena.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -517,7 +517,7 @@ Returns
 Type annotations for `boto3.client("athena").list_work_groups` method.
 
 Boto3 documentation:
-[Athena.Client.list_work_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.list_work_groups)
+[Athena.Client.list_work_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.list_work_groups)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Returns
 Type annotations for `boto3.client("athena").start_query_execution` method.
 
 Boto3 documentation:
-[Athena.Client.start_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.start_query_execution)
+[Athena.Client.start_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.start_query_execution)
 
 Arguments:
 
@@ -552,7 +552,7 @@ Returns
 Type annotations for `boto3.client("athena").stop_query_execution` method.
 
 Boto3 documentation:
-[Athena.Client.stop_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.stop_query_execution)
+[Athena.Client.stop_query_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.stop_query_execution)
 
 Arguments:
 
@@ -565,7 +565,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").tag_resource` method.
 
 Boto3 documentation:
-[Athena.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.tag_resource)
+[Athena.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.tag_resource)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").untag_resource` method.
 
 Boto3 documentation:
-[Athena.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.untag_resource)
+[Athena.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.untag_resource)
 
 Arguments:
 
@@ -593,7 +593,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").update_data_catalog` method.
 
 Boto3 documentation:
-[Athena.Client.update_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.update_data_catalog)
+[Athena.Client.update_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.update_data_catalog)
 
 Arguments:
 
@@ -609,7 +609,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").update_prepared_statement` method.
 
 Boto3 documentation:
-[Athena.Client.update_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.update_prepared_statement)
+[Athena.Client.update_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.update_prepared_statement)
 
 Arguments:
 
@@ -625,7 +625,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("athena").update_work_group` method.
 
 Boto3 documentation:
-[Athena.Client.update_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/athena.html#Athena.Client.update_work_group)
+[Athena.Client.update_work_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena.Client.update_work_group)
 
 Arguments:
 

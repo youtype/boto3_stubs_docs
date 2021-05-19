@@ -3,7 +3,7 @@
 > [Index](..) > [WorkMail](.) > Paginators
 
 Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail)
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail)
 type annotations stubs module
 [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
@@ -31,7 +31,7 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListAliases)
+[WorkMail.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListAliases)
 
 Arguments for `ListAliasesPaginator.paginate` method:
 
@@ -58,7 +58,7 @@ def get_list_group_members_paginator() -> ListGroupMembersPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListGroupMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListGroupMembers)
+[WorkMail.Paginator.ListGroupMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListGroupMembers)
 
 Arguments for `ListGroupMembersPaginator.paginate` method:
 
@@ -84,7 +84,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListGroups)
+[WorkMail.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListGroups)
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
@@ -110,7 +110,7 @@ def get_list_mailbox_permissions_paginator() -> ListMailboxPermissionsPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListMailboxPermissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListMailboxPermissions)
+[WorkMail.Paginator.ListMailboxPermissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListMailboxPermissions)
 
 Arguments for `ListMailboxPermissionsPaginator.paginate` method:
 
@@ -137,7 +137,7 @@ def get_list_organizations_paginator() -> ListOrganizationsPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListOrganizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListOrganizations)
+[WorkMail.Paginator.ListOrganizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListOrganizations)
 
 Arguments for `ListOrganizationsPaginator.paginate` method:
 
@@ -162,7 +162,7 @@ def get_list_resource_delegates_paginator() -> ListResourceDelegatesPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListResourceDelegates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListResourceDelegates)
+[WorkMail.Paginator.ListResourceDelegates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListResourceDelegates)
 
 Arguments for `ListResourceDelegatesPaginator.paginate` method:
 
@@ -189,7 +189,7 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListResources)
+[WorkMail.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListResources)
 
 Arguments for `ListResourcesPaginator.paginate` method:
 
@@ -214,7 +214,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
 ```
 
 Boto3 documentation:
-[WorkMail.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail.Paginator.ListUsers)
+[WorkMail.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Paginator.ListUsers)
 
 Arguments for `ListUsersPaginator.paginate` method:
 

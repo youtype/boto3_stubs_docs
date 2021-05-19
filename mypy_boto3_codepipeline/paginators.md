@@ -3,7 +3,7 @@
 > [Index](..) > [CodePipeline](.) > Paginators
 
 Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline)
+[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
 [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
@@ -30,7 +30,7 @@ def get_list_action_executions_paginator() -> ListActionExecutionsPaginator:
 ```
 
 Boto3 documentation:
-[CodePipeline.Paginator.ListActionExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionExecutions)
+[CodePipeline.Paginator.ListActionExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionExecutions)
 
 Arguments for `ListActionExecutionsPaginator.paginate` method:
 
@@ -58,7 +58,7 @@ def get_list_action_types_paginator() -> ListActionTypesPaginator:
 ```
 
 Boto3 documentation:
-[CodePipeline.Paginator.ListActionTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionTypes)
+[CodePipeline.Paginator.ListActionTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionTypes)
 
 Arguments for `ListActionTypesPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
 ```
 
 Boto3 documentation:
-[CodePipeline.Paginator.ListPipelineExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelineExecutions)
+[CodePipeline.Paginator.ListPipelineExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelineExecutions)
 
 Arguments for `ListPipelineExecutionsPaginator.paginate` method:
 
@@ -111,7 +111,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
 ```
 
 Boto3 documentation:
-[CodePipeline.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelines)
+[CodePipeline.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelines)
 
 Arguments for `ListPipelinesPaginator.paginate` method:
 
@@ -136,7 +136,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[CodePipeline.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline.Paginator.ListTagsForResource)
+[CodePipeline.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 
@@ -162,7 +162,7 @@ def get_list_webhooks_paginator() -> ListWebhooksPaginator:
 ```
 
 Boto3 documentation:
-[CodePipeline.Paginator.ListWebhooks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codepipeline.html#CodePipeline.Paginator.ListWebhooks)
+[CodePipeline.Paginator.ListWebhooks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline.Paginator.ListWebhooks)
 
 Arguments for `ListWebhooksPaginator.paginate` method:
 

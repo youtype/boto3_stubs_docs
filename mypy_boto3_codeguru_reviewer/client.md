@@ -3,7 +3,7 @@
 > [Index](..) > [CodeGuruReviewer](.) > CodeGuruReviewerClient
 
 Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
@@ -43,7 +43,7 @@ def get_codeguru-reviewer_client() -> CodeGuruReviewerClient:
 ```
 
 Boto3 documentation:
-[CodeGuruReviewer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client)
+[CodeGuruReviewer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client)
 
 ## Exceptions
 
@@ -76,7 +76,7 @@ Type annotations for `boto3.client("codeguru-reviewer").associate_repository`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.associate_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
+[CodeGuruReviewer.Client.associate_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns
 Type annotations for `boto3.client("codeguru-reviewer").can_paginate` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.can_paginate)
+[CodeGuruReviewer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.can_paginate)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Type annotations for `boto3.client("codeguru-reviewer").create_code_review`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.create_code_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
+[CodeGuruReviewer.Client.create_code_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
 
 Arguments:
 
@@ -127,7 +127,7 @@ Type annotations for `boto3.client("codeguru-reviewer").describe_code_review`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.describe_code_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
+[CodeGuruReviewer.Client.describe_code_review](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Type annotations for
 `boto3.client("codeguru-reviewer").describe_recommendation_feedback` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.describe_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
+[CodeGuruReviewer.Client.describe_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Type annotations for
 `boto3.client("codeguru-reviewer").describe_repository_association` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.describe_repository_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
+[CodeGuruReviewer.Client.describe_repository_association](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Type annotations for
 `boto3.client("codeguru-reviewer").disassociate_repository` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.disassociate_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
+[CodeGuruReviewer.Client.disassociate_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("codeguru-reviewer").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.generate_presigned_url)
+[CodeGuruReviewer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.generate_presigned_url)
 
 Arguments:
 
@@ -206,7 +206,7 @@ Type annotations for `boto3.client("codeguru-reviewer").list_code_reviews`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.list_code_reviews](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
+[CodeGuruReviewer.Client.list_code_reviews](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
 
 Arguments:
 
@@ -226,7 +226,7 @@ Type annotations for
 `boto3.client("codeguru-reviewer").list_recommendation_feedback` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.list_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
+[CodeGuruReviewer.Client.list_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("codeguru-reviewer").list_recommendations`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
+[CodeGuruReviewer.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Type annotations for
 `boto3.client("codeguru-reviewer").list_repository_associations` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.list_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
+[CodeGuruReviewer.Client.list_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("codeguru-reviewer").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
+[CodeGuruReviewer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Type annotations for
 `boto3.client("codeguru-reviewer").put_recommendation_feedback` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.put_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
+[CodeGuruReviewer.Client.put_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codeguru-reviewer").tag_resource` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
+[CodeGuruReviewer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codeguru-reviewer").untag_resource` method.
 
 Boto3 documentation:
-[CodeGuruReviewer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
+[CodeGuruReviewer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
 
 Arguments:
 

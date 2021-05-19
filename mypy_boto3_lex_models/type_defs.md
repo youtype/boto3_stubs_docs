@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelBuildingService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/lex-models.html#LexModelBuildingService)
+[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
 [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 

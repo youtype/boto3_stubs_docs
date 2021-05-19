@@ -3,7 +3,7 @@
 > [Index](..) > [Translate](.) > Paginators
 
 Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/translate.html#Translate)
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/translate.html#Translate)
 type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
@@ -25,7 +25,7 @@ def get_list_terminologies_paginator() -> ListTerminologiesPaginator:
 ```
 
 Boto3 documentation:
-[Translate.Paginator.ListTerminologies](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/translate.html#Translate.Paginator.ListTerminologies)
+[Translate.Paginator.ListTerminologies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/translate.html#Translate.Paginator.ListTerminologies)
 
 Arguments for `ListTerminologiesPaginator.paginate` method:
 

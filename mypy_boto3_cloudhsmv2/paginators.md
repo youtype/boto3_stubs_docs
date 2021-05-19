@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSMV2](.) > Paginators
 
 Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudhsmv2.html#CloudHSMV2)
+[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
 [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
@@ -27,7 +27,7 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
 ```
 
 Boto3 documentation:
-[CloudHSMV2.Paginator.DescribeBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
+[CloudHSMV2.Paginator.DescribeBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
 
 Arguments for `DescribeBackupsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
 ```
 
 Boto3 documentation:
-[CloudHSMV2.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
+[CloudHSMV2.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
 
 Arguments for `DescribeClustersPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
 ```
 
 Boto3 documentation:
-[CloudHSMV2.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
+[CloudHSMV2.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
 
 Arguments for `ListTagsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [S3Control](.) > Literals
 
 Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/s3control.html#S3Control)
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/s3control.html#S3Control)
 type annotations stubs module
 [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ConfigService](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/config.html#ConfigService)
+[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/config.html#ConfigService)
 type annotations stubs module
 [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 

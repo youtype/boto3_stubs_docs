@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScaling](.) > Literals
 
 Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling)
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
@@ -24,6 +24,11 @@ type annotations stubs module
   - [LifecycleStateType](#lifecyclestatetype)
   - [MetricStatisticType](#metricstatistictype)
   - [MetricTypeType](#metrictypetype)
+  - [PredefinedLoadMetricTypeType](#predefinedloadmetrictypetype)
+  - [PredefinedMetricPairTypeType](#predefinedmetricpairtypetype)
+  - [PredefinedScalingMetricTypeType](#predefinedscalingmetrictypetype)
+  - [PredictiveScalingMaxCapacityBreachBehaviorType](#predictivescalingmaxcapacitybreachbehaviortype)
+  - [PredictiveScalingModeType](#predictivescalingmodetype)
   - [RefreshStrategyType](#refreshstrategytype)
   - [ScalingActivityStatusCodeType](#scalingactivitystatuscodetype)
   - [WarmPoolStateType](#warmpoolstatetype)
@@ -223,6 +228,67 @@ Values:
 - `ASGAverageCPUUtilization`
 - `ASGAverageNetworkIn`
 - `ASGAverageNetworkOut`
+
+## PredefinedLoadMetricTypeType
+
+```python
+from mypy_boto3_autoscaling.literals import PredefinedLoadMetricTypeType
+```
+
+Values:
+
+- `ALBTargetGroupRequestCount`
+- `ASGTotalCPUUtilization`
+- `ASGTotalNetworkIn`
+- `ASGTotalNetworkOut`
+
+## PredefinedMetricPairTypeType
+
+```python
+from mypy_boto3_autoscaling.literals import PredefinedMetricPairTypeType
+```
+
+Values:
+
+- `ALBRequestCount`
+- `ASGCPUUtilization`
+- `ASGNetworkIn`
+- `ASGNetworkOut`
+
+## PredefinedScalingMetricTypeType
+
+```python
+from mypy_boto3_autoscaling.literals import PredefinedScalingMetricTypeType
+```
+
+Values:
+
+- `ALBRequestCountPerTarget`
+- `ASGAverageCPUUtilization`
+- `ASGAverageNetworkIn`
+- `ASGAverageNetworkOut`
+
+## PredictiveScalingMaxCapacityBreachBehaviorType
+
+```python
+from mypy_boto3_autoscaling.literals import PredictiveScalingMaxCapacityBreachBehaviorType
+```
+
+Values:
+
+- `HonorMaxCapacity`
+- `IncreaseMaxCapacity`
+
+## PredictiveScalingModeType
+
+```python
+from mypy_boto3_autoscaling.literals import PredictiveScalingModeType
+```
+
+Values:
+
+- `ForecastAndScale`
+- `ForecastOnly`
 
 ## RefreshStrategyType
 

@@ -3,7 +3,7 @@
 > [Index](..) > AutoScaling
 
 Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling)
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
@@ -81,6 +81,7 @@ from mypy_boto3_autoscaling.client import AutoScalingClient
 - [exit_standby](./client.md#exit_standby)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
+- [get_predictive_scaling_forecast](./client.md#get_predictive_scaling_forecast)
 - [put_lifecycle_hook](./client.md#put_lifecycle_hook)
 - [put_notification_configuration](./client.md#put_notification_configuration)
 - [put_scaling_policy](./client.md#put_scaling_policy)
@@ -159,6 +160,11 @@ from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorNa
 - [LifecycleStateType](./literals.md#lifecyclestatetype)
 - [MetricStatisticType](./literals.md#metricstatistictype)
 - [MetricTypeType](./literals.md#metrictypetype)
+- [PredefinedLoadMetricTypeType](./literals.md#predefinedloadmetrictypetype)
+- [PredefinedMetricPairTypeType](./literals.md#predefinedmetricpairtypetype)
+- [PredefinedScalingMetricTypeType](./literals.md#predefinedscalingmetrictypetype)
+- [PredictiveScalingMaxCapacityBreachBehaviorType](./literals.md#predictivescalingmaxcapacitybreachbehaviortype)
+- [PredictiveScalingModeType](./literals.md#predictivescalingmodetype)
 - [RefreshStrategyType](./literals.md#refreshstrategytype)
 - [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
 - [WarmPoolStateType](./literals.md#warmpoolstatetype)
@@ -188,6 +194,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef)
 - [BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)
 - [CancelInstanceRefreshAnswerTypeDef](./type_defs.md#cancelinstancerefreshanswertypedef)
+- [CapacityForecastTypeDef](./type_defs.md#capacityforecasttypedef)
 - [CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef)
 - [DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef)
 - [DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef)
@@ -208,6 +215,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef)
 - [FailedScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#failedscheduledupdategroupactionrequesttypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
+- [GetPredictiveScalingForecastAnswerTypeDef](./type_defs.md#getpredictivescalingforecastanswertypedef)
 - [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - [InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)
 - [InstanceRefreshLivePoolProgressTypeDef](./type_defs.md#instancerefreshlivepoolprogresstypedef)
@@ -225,6 +233,7 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [LifecycleHookTypeDef](./type_defs.md#lifecyclehooktypedef)
 - [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
 - [LoadBalancerTargetGroupStateTypeDef](./type_defs.md#loadbalancertargetgroupstatetypedef)
+- [LoadForecastTypeDef](./type_defs.md#loadforecasttypedef)
 - [MetricCollectionTypeTypeDef](./type_defs.md#metriccollectiontypetypedef)
 - [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
 - [MetricGranularityTypeTypeDef](./type_defs.md#metricgranularitytypetypedef)
@@ -234,6 +243,11 @@ from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef, ...
 - [PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef)
 - [PolicyARNTypeTypeDef](./type_defs.md#policyarntypetypedef)
 - [PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef)
+- [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
+- [PredictiveScalingMetricSpecificationTypeDef](./type_defs.md#predictivescalingmetricspecificationtypedef)
+- [PredictiveScalingPredefinedLoadMetricTypeDef](./type_defs.md#predictivescalingpredefinedloadmetrictypedef)
+- [PredictiveScalingPredefinedMetricPairTypeDef](./type_defs.md#predictivescalingpredefinedmetricpairtypedef)
+- [PredictiveScalingPredefinedScalingMetricTypeDef](./type_defs.md#predictivescalingpredefinedscalingmetrictypedef)
 - [ProcessTypeTypeDef](./type_defs.md#processtypetypedef)
 - [ProcessesTypeTypeDef](./type_defs.md#processestypetypedef)
 - [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)

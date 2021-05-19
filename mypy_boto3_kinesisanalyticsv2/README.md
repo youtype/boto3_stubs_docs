@@ -3,7 +3,7 @@
 > [Index](..) > KinesisAnalyticsV2
 
 Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
@@ -107,11 +107,13 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreTypeType, ...
+from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType, ...
 ```
 
+- [ApplicationModeType](./literals.md#applicationmodetype)
 - [ApplicationRestoreTypeType](./literals.md#applicationrestoretypetype)
 - [ApplicationStatusType](./literals.md#applicationstatustype)
+- [ArtifactTypeType](./literals.md#artifacttypetype)
 - [CodeContentTypeType](./literals.md#codecontenttypetype)
 - [ConfigurationTypeType](./literals.md#configurationtypetype)
 - [InputStartingPositionType](./literals.md#inputstartingpositiontype)
@@ -157,6 +159,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)
 - [ApplicationVersionSummaryTypeDef](./type_defs.md#applicationversionsummarytypedef)
 - [CSVMappingParametersTypeDef](./type_defs.md#csvmappingparameterstypedef)
+- [CatalogConfigurationDescriptionTypeDef](./type_defs.md#catalogconfigurationdescriptiontypedef)
+- [CatalogConfigurationTypeDef](./type_defs.md#catalogconfigurationtypedef)
+- [CatalogConfigurationUpdateTypeDef](./type_defs.md#catalogconfigurationupdatetypedef)
 - [CheckpointConfigurationDescriptionTypeDef](./type_defs.md#checkpointconfigurationdescriptiontypedef)
 - [CheckpointConfigurationTypeDef](./type_defs.md#checkpointconfigurationtypedef)
 - [CheckpointConfigurationUpdateTypeDef](./type_defs.md#checkpointconfigurationupdatetypedef)
@@ -168,11 +173,16 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [CodeContentUpdateTypeDef](./type_defs.md#codecontentupdatetypedef)
 - [CreateApplicationPresignedUrlResponseTypeDef](./type_defs.md#createapplicationpresignedurlresponsetypedef)
 - [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef)
+- [CustomArtifactConfigurationDescriptionTypeDef](./type_defs.md#customartifactconfigurationdescriptiontypedef)
+- [CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)
 - [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionresponsetypedef)
 - [DeleteApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationresponsetypedef)
 - [DeleteApplicationOutputResponseTypeDef](./type_defs.md#deleteapplicationoutputresponsetypedef)
 - [DeleteApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#deleteapplicationreferencedatasourceresponsetypedef)
 - [DeleteApplicationVpcConfigurationResponseTypeDef](./type_defs.md#deleteapplicationvpcconfigurationresponsetypedef)
+- [DeployAsApplicationConfigurationDescriptionTypeDef](./type_defs.md#deployasapplicationconfigurationdescriptiontypedef)
+- [DeployAsApplicationConfigurationTypeDef](./type_defs.md#deployasapplicationconfigurationtypedef)
+- [DeployAsApplicationConfigurationUpdateTypeDef](./type_defs.md#deployasapplicationconfigurationupdatetypedef)
 - [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef)
 - [DescribeApplicationSnapshotResponseTypeDef](./type_defs.md#describeapplicationsnapshotresponsetypedef)
 - [DescribeApplicationVersionResponseTypeDef](./type_defs.md#describeapplicationversionresponsetypedef)
@@ -185,6 +195,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [FlinkApplicationConfigurationTypeDef](./type_defs.md#flinkapplicationconfigurationtypedef)
 - [FlinkApplicationConfigurationUpdateTypeDef](./type_defs.md#flinkapplicationconfigurationupdatetypedef)
 - [FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef)
+- [GlueDataCatalogConfigurationDescriptionTypeDef](./type_defs.md#gluedatacatalogconfigurationdescriptiontypedef)
+- [GlueDataCatalogConfigurationTypeDef](./type_defs.md#gluedatacatalogconfigurationtypedef)
+- [GlueDataCatalogConfigurationUpdateTypeDef](./type_defs.md#gluedatacatalogconfigurationupdatetypedef)
 - [InputDescriptionTypeDef](./type_defs.md#inputdescriptiontypedef)
 - [InputLambdaProcessorDescriptionTypeDef](./type_defs.md#inputlambdaprocessordescriptiontypedef)
 - [InputLambdaProcessorTypeDef](./type_defs.md#inputlambdaprocessortypedef)
@@ -219,6 +232,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MappingParametersTypeDef](./type_defs.md#mappingparameterstypedef)
+- [MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef)
 - [MonitoringConfigurationDescriptionTypeDef](./type_defs.md#monitoringconfigurationdescriptiontypedef)
 - [MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef)
 - [MonitoringConfigurationUpdateTypeDef](./type_defs.md#monitoringconfigurationupdatetypedef)
@@ -242,6 +256,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [RunConfigurationUpdateTypeDef](./type_defs.md#runconfigurationupdatetypedef)
 - [S3ApplicationCodeLocationDescriptionTypeDef](./type_defs.md#s3applicationcodelocationdescriptiontypedef)
 - [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
+- [S3ContentBaseLocationDescriptionTypeDef](./type_defs.md#s3contentbaselocationdescriptiontypedef)
+- [S3ContentBaseLocationTypeDef](./type_defs.md#s3contentbaselocationtypedef)
+- [S3ContentBaseLocationUpdateTypeDef](./type_defs.md#s3contentbaselocationupdatetypedef)
 - [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
 - [S3ContentLocationUpdateTypeDef](./type_defs.md#s3contentlocationupdatetypedef)
 - [S3ReferenceDataSourceDescriptionTypeDef](./type_defs.md#s3referencedatasourcedescriptiontypedef)
@@ -259,3 +276,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - [VpcConfigurationUpdateTypeDef](./type_defs.md#vpcconfigurationupdatetypedef)
+- [ZeppelinApplicationConfigurationDescriptionTypeDef](./type_defs.md#zeppelinapplicationconfigurationdescriptiontypedef)
+- [ZeppelinApplicationConfigurationTypeDef](./type_defs.md#zeppelinapplicationconfigurationtypedef)
+- [ZeppelinApplicationConfigurationUpdateTypeDef](./type_defs.md#zeppelinapplicationconfigurationupdatetypedef)
+- [ZeppelinMonitoringConfigurationDescriptionTypeDef](./type_defs.md#zeppelinmonitoringconfigurationdescriptiontypedef)
+- [ZeppelinMonitoringConfigurationTypeDef](./type_defs.md#zeppelinmonitoringconfigurationtypedef)
+- [ZeppelinMonitoringConfigurationUpdateTypeDef](./type_defs.md#zeppelinmonitoringconfigurationupdatetypedef)

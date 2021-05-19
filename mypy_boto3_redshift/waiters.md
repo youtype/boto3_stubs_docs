@@ -3,7 +3,7 @@
 > [Index](..) > [Redshift](.) > Waiters
 
 Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/redshift.html#Redshift)
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift.html#Redshift)
 type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
@@ -28,7 +28,7 @@ def get_cluster_available_waiter() -> ClusterAvailableWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.cluster_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/redshift.html#Redshift.Waiter.cluster_available)
+[Redshift.Waiter.cluster_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift.html#Redshift.Waiter.cluster_available)
 
 Arguments for `ClusterAvailableWaiter.wait` method:
 
@@ -53,7 +53,7 @@ def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/redshift.html#Redshift.Waiter.cluster_deleted)
+[Redshift.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift.html#Redshift.Waiter.cluster_deleted)
 
 Arguments for `ClusterDeletedWaiter.wait` method:
 
@@ -78,7 +78,7 @@ def get_cluster_restored_waiter() -> ClusterRestoredWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.cluster_restored](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/redshift.html#Redshift.Waiter.cluster_restored)
+[Redshift.Waiter.cluster_restored](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift.html#Redshift.Waiter.cluster_restored)
 
 Arguments for `ClusterRestoredWaiter.wait` method:
 
@@ -104,7 +104,7 @@ def get_snapshot_available_waiter() -> SnapshotAvailableWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/redshift.html#Redshift.Waiter.snapshot_available)
+[Redshift.Waiter.snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift.html#Redshift.Waiter.snapshot_available)
 
 Arguments for `SnapshotAvailableWaiter.wait` method:
 

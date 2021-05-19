@@ -3,7 +3,7 @@
 > [Index](..) > [DataExchange](.) > DataExchangeClient
 
 Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange)
+[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
 [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
@@ -51,7 +51,7 @@ def get_dataexchange_client() -> DataExchangeClient:
 ```
 
 Boto3 documentation:
-[DataExchange.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client)
+[DataExchange.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client)
 
 ## Exceptions
 
@@ -83,7 +83,7 @@ Exceptions:
 Type annotations for `boto3.client("dataexchange").can_paginate` method.
 
 Boto3 documentation:
-[DataExchange.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.can_paginate)
+[DataExchange.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.can_paginate)
 
 Arguments:
 
@@ -96,7 +96,7 @@ Returns `bool`.
 Type annotations for `boto3.client("dataexchange").cancel_job` method.
 
 Boto3 documentation:
-[DataExchange.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
+[DataExchange.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Arguments:
 Type annotations for `boto3.client("dataexchange").create_data_set` method.
 
 Boto3 documentation:
-[DataExchange.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
+[DataExchange.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").create_job` method.
 
 Boto3 documentation:
-[DataExchange.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.create_job)
+[DataExchange.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.create_job)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 Type annotations for `boto3.client("dataexchange").create_revision` method.
 
 Boto3 documentation:
-[DataExchange.Client.create_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.create_revision)
+[DataExchange.Client.create_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.create_revision)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").delete_asset` method.
 
 Boto3 documentation:
-[DataExchange.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
+[DataExchange.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Arguments:
 Type annotations for `boto3.client("dataexchange").delete_data_set` method.
 
 Boto3 documentation:
-[DataExchange.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
+[DataExchange.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Arguments:
 Type annotations for `boto3.client("dataexchange").delete_revision` method.
 
 Boto3 documentation:
-[DataExchange.Client.delete_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
+[DataExchange.Client.delete_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("dataexchange").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[DataExchange.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url)
+[DataExchange.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Returns `str`.
 Type annotations for `boto3.client("dataexchange").get_asset` method.
 
 Boto3 documentation:
-[DataExchange.Client.get_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.get_asset)
+[DataExchange.Client.get_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.get_asset)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Returns [GetAssetResponseTypeDef](./type_defs.md#getassetresponsetypedef).
 Type annotations for `boto3.client("dataexchange").get_data_set` method.
 
 Boto3 documentation:
-[DataExchange.Client.get_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
+[DataExchange.Client.get_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
 Type annotations for `boto3.client("dataexchange").get_job` method.
 
 Boto3 documentation:
-[DataExchange.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.get_job)
+[DataExchange.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.get_job)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 Type annotations for `boto3.client("dataexchange").get_revision` method.
 
 Boto3 documentation:
-[DataExchange.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.get_revision)
+[DataExchange.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.get_revision)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Type annotations for `boto3.client("dataexchange").list_data_set_revisions`
 method.
 
 Boto3 documentation:
-[DataExchange.Client.list_data_set_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
+[DataExchange.Client.list_data_set_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").list_data_sets` method.
 
 Boto3 documentation:
-[DataExchange.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
+[DataExchange.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").list_jobs` method.
 
 Boto3 documentation:
-[DataExchange.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
+[DataExchange.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("dataexchange").list_revision_assets`
 method.
 
 Boto3 documentation:
-[DataExchange.Client.list_revision_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
+[DataExchange.Client.list_revision_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Type annotations for `boto3.client("dataexchange").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[DataExchange.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
+[DataExchange.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").start_job` method.
 
 Boto3 documentation:
-[DataExchange.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.start_job)
+[DataExchange.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.start_job)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("dataexchange").tag_resource` method.
 
 Boto3 documentation:
-[DataExchange.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
+[DataExchange.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Arguments:
 Type annotations for `boto3.client("dataexchange").untag_resource` method.
 
 Boto3 documentation:
-[DataExchange.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
+[DataExchange.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Arguments:
 Type annotations for `boto3.client("dataexchange").update_asset` method.
 
 Boto3 documentation:
-[DataExchange.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.update_asset)
+[DataExchange.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.update_asset)
 
 Arguments:
 
@@ -401,7 +401,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").update_data_set` method.
 
 Boto3 documentation:
-[DataExchange.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
+[DataExchange.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
 
 Arguments:
 
@@ -417,7 +417,7 @@ Returns
 Type annotations for `boto3.client("dataexchange").update_revision` method.
 
 Boto3 documentation:
-[DataExchange.Client.update_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/dataexchange.html#DataExchange.Client.update_revision)
+[DataExchange.Client.update_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange.Client.update_revision)
 
 Arguments:
 

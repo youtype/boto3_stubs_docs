@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStarNotifications](.) > Literals
 
 Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codestar-notifications.html#CodeStarNotifications)
+[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
 [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 

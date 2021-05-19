@@ -3,7 +3,7 @@
 > [Index](..) > [Pinpoint](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pinpoint.html#Pinpoint)
+[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
 [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 

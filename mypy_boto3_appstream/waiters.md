@@ -3,7 +3,7 @@
 > [Index](..) > [AppStream](.) > Waiters
 
 Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appstream.html#AppStream)
+[AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appstream.html#AppStream)
 type annotations stubs module
 [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
@@ -25,7 +25,7 @@ def get_fleet_started_waiter() -> FleetStartedWaiter:
 ```
 
 Boto3 documentation:
-[AppStream.Waiter.fleet_started](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appstream.html#AppStream.Waiter.fleet_started)
+[AppStream.Waiter.fleet_started](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appstream.html#AppStream.Waiter.fleet_started)
 
 Arguments for `FleetStartedWaiter.wait` method:
 
@@ -47,7 +47,7 @@ def get_fleet_stopped_waiter() -> FleetStoppedWaiter:
 ```
 
 Boto3 documentation:
-[AppStream.Waiter.fleet_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appstream.html#AppStream.Waiter.fleet_stopped)
+[AppStream.Waiter.fleet_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appstream.html#AppStream.Waiter.fleet_stopped)
 
 Arguments for `FleetStoppedWaiter.wait` method:
 

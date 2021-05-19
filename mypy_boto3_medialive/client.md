@@ -3,7 +3,7 @@
 > [Index](..) > [MediaLive](.) > MediaLiveClient
 
 Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive)
+[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive)
 type annotations stubs module
 [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
@@ -86,7 +86,7 @@ def get_medialive_client() -> MediaLiveClient:
 ```
 
 Boto3 documentation:
-[MediaLive.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client)
+[MediaLive.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client)
 
 ## Exceptions
 
@@ -121,7 +121,7 @@ Type annotations for `boto3.client("medialive").accept_input_device_transfer`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.accept_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
+[MediaLive.Client.accept_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("medialive").batch_delete` method.
 
 Boto3 documentation:
-[MediaLive.Client.batch_delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.batch_delete)
+[MediaLive.Client.batch_delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.batch_delete)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns
 Type annotations for `boto3.client("medialive").batch_start` method.
 
 Boto3 documentation:
-[MediaLive.Client.batch_start](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.batch_start)
+[MediaLive.Client.batch_start](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.batch_start)
 
 Arguments:
 
@@ -165,7 +165,7 @@ Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 Type annotations for `boto3.client("medialive").batch_stop` method.
 
 Boto3 documentation:
-[MediaLive.Client.batch_stop](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.batch_stop)
+[MediaLive.Client.batch_stop](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.batch_stop)
 
 Arguments:
 
@@ -179,7 +179,7 @@ Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
 Type annotations for `boto3.client("medialive").batch_update_schedule` method.
 
 Boto3 documentation:
-[MediaLive.Client.batch_update_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
+[MediaLive.Client.batch_update_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns
 Type annotations for `boto3.client("medialive").can_paginate` method.
 
 Boto3 documentation:
-[MediaLive.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.can_paginate)
+[MediaLive.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.can_paginate)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("medialive").cancel_input_device_transfer`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.cancel_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
+[MediaLive.Client.cancel_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
 
 Arguments:
 
@@ -224,7 +224,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("medialive").create_channel` method.
 
 Boto3 documentation:
-[MediaLive.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_channel)
+[MediaLive.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_channel)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Returns
 Type annotations for `boto3.client("medialive").create_input` method.
 
 Boto3 documentation:
-[MediaLive.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_input)
+[MediaLive.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_input)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("medialive").create_input_security_group`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.create_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
+[MediaLive.Client.create_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Returns
 Type annotations for `boto3.client("medialive").create_multiplex` method.
 
 Boto3 documentation:
-[MediaLive.Client.create_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_multiplex)
+[MediaLive.Client.create_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_multiplex)
 
 Arguments:
 
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("medialive").create_multiplex_program`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.create_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
+[MediaLive.Client.create_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
 
 Arguments:
 
@@ -340,7 +340,7 @@ Returns
 Type annotations for `boto3.client("medialive").create_partner_input` method.
 
 Boto3 documentation:
-[MediaLive.Client.create_partner_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_partner_input)
+[MediaLive.Client.create_partner_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_partner_input)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Returns
 Type annotations for `boto3.client("medialive").create_tags` method.
 
 Boto3 documentation:
-[MediaLive.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.create_tags)
+[MediaLive.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.create_tags)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Arguments:
 Type annotations for `boto3.client("medialive").delete_channel` method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_channel)
+[MediaLive.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_channel)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns
 Type annotations for `boto3.client("medialive").delete_input` method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_input)
+[MediaLive.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_input)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("medialive").delete_input_security_group`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
+[MediaLive.Client.delete_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("medialive").delete_multiplex` method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
+[MediaLive.Client.delete_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
 
 Arguments:
 
@@ -424,7 +424,7 @@ Type annotations for `boto3.client("medialive").delete_multiplex_program`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
+[MediaLive.Client.delete_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
 
 Arguments:
 
@@ -439,7 +439,7 @@ Returns
 Type annotations for `boto3.client("medialive").delete_reservation` method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_reservation)
+[MediaLive.Client.delete_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_reservation)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Returns
 Type annotations for `boto3.client("medialive").delete_schedule` method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_schedule)
+[MediaLive.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_schedule)
 
 Arguments:
 
@@ -466,7 +466,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("medialive").delete_tags` method.
 
 Boto3 documentation:
-[MediaLive.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.delete_tags)
+[MediaLive.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.delete_tags)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Arguments:
 Type annotations for `boto3.client("medialive").describe_channel` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_channel)
+[MediaLive.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_channel)
 
 Arguments:
 
@@ -492,7 +492,7 @@ Returns
 Type annotations for `boto3.client("medialive").describe_input` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_input)
+[MediaLive.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_input)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Returns
 Type annotations for `boto3.client("medialive").describe_input_device` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_input_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_input_device)
+[MediaLive.Client.describe_input_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_input_device)
 
 Arguments:
 
@@ -521,7 +521,7 @@ Type annotations for
 `boto3.client("medialive").describe_input_device_thumbnail` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_input_device_thumbnail](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
+[MediaLive.Client.describe_input_device_thumbnail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Type annotations for `boto3.client("medialive").describe_input_security_group`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
+[MediaLive.Client.describe_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
 
 Arguments:
 
@@ -552,7 +552,7 @@ Returns
 Type annotations for `boto3.client("medialive").describe_multiplex` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
+[MediaLive.Client.describe_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("medialive").describe_multiplex_program`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
+[MediaLive.Client.describe_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
 
 Arguments:
 
@@ -582,7 +582,7 @@ Returns
 Type annotations for `boto3.client("medialive").describe_offering` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_offering)
+[MediaLive.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_offering)
 
 Arguments:
 
@@ -596,7 +596,7 @@ Returns
 Type annotations for `boto3.client("medialive").describe_reservation` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_reservation)
+[MediaLive.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_reservation)
 
 Arguments:
 
@@ -610,7 +610,7 @@ Returns
 Type annotations for `boto3.client("medialive").describe_schedule` method.
 
 Boto3 documentation:
-[MediaLive.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.describe_schedule)
+[MediaLive.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.describe_schedule)
 
 Arguments:
 
@@ -626,7 +626,7 @@ Returns
 Type annotations for `boto3.client("medialive").generate_presigned_url` method.
 
 Boto3 documentation:
-[MediaLive.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.generate_presigned_url)
+[MediaLive.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.generate_presigned_url)
 
 Arguments:
 
@@ -642,7 +642,7 @@ Returns `str`.
 Type annotations for `boto3.client("medialive").list_channels` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_channels)
+[MediaLive.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_channels)
 
 Arguments:
 
@@ -658,7 +658,7 @@ Type annotations for `boto3.client("medialive").list_input_device_transfers`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.list_input_device_transfers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
+[MediaLive.Client.list_input_device_transfers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Returns
 Type annotations for `boto3.client("medialive").list_input_devices` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_input_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_input_devices)
+[MediaLive.Client.list_input_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_input_devices)
 
 Arguments:
 
@@ -690,7 +690,7 @@ Type annotations for `boto3.client("medialive").list_input_security_groups`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.list_input_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
+[MediaLive.Client.list_input_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
 
 Arguments:
 
@@ -705,7 +705,7 @@ Returns
 Type annotations for `boto3.client("medialive").list_inputs` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_inputs)
+[MediaLive.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_inputs)
 
 Arguments:
 
@@ -720,7 +720,7 @@ Type annotations for `boto3.client("medialive").list_multiplex_programs`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.list_multiplex_programs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
+[MediaLive.Client.list_multiplex_programs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
 
 Arguments:
 
@@ -736,7 +736,7 @@ Returns
 Type annotations for `boto3.client("medialive").list_multiplexes` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_multiplexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
+[MediaLive.Client.list_multiplexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
 
 Arguments:
 
@@ -751,7 +751,7 @@ Returns
 Type annotations for `boto3.client("medialive").list_offerings` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_offerings)
+[MediaLive.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_offerings)
 
 Arguments:
 
@@ -776,7 +776,7 @@ Returns
 Type annotations for `boto3.client("medialive").list_reservations` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_reservations)
+[MediaLive.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_reservations)
 
 Arguments:
 
@@ -799,7 +799,7 @@ Returns
 Type annotations for `boto3.client("medialive").list_tags_for_resource` method.
 
 Boto3 documentation:
-[MediaLive.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
+[MediaLive.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Returns
 Type annotations for `boto3.client("medialive").purchase_offering` method.
 
 Boto3 documentation:
-[MediaLive.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.purchase_offering)
+[MediaLive.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.purchase_offering)
 
 Arguments:
 
@@ -833,7 +833,7 @@ Type annotations for `boto3.client("medialive").reject_input_device_transfer`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.reject_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
+[MediaLive.Client.reject_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
 
 Arguments:
 
@@ -846,7 +846,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("medialive").start_channel` method.
 
 Boto3 documentation:
-[MediaLive.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.start_channel)
+[MediaLive.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.start_channel)
 
 Arguments:
 
@@ -860,7 +860,7 @@ Returns
 Type annotations for `boto3.client("medialive").start_multiplex` method.
 
 Boto3 documentation:
-[MediaLive.Client.start_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.start_multiplex)
+[MediaLive.Client.start_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.start_multiplex)
 
 Arguments:
 
@@ -874,7 +874,7 @@ Returns
 Type annotations for `boto3.client("medialive").stop_channel` method.
 
 Boto3 documentation:
-[MediaLive.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.stop_channel)
+[MediaLive.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.stop_channel)
 
 Arguments:
 
@@ -888,7 +888,7 @@ Returns
 Type annotations for `boto3.client("medialive").stop_multiplex` method.
 
 Boto3 documentation:
-[MediaLive.Client.stop_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
+[MediaLive.Client.stop_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
 
 Arguments:
 
@@ -902,7 +902,7 @@ Returns
 Type annotations for `boto3.client("medialive").transfer_input_device` method.
 
 Boto3 documentation:
-[MediaLive.Client.transfer_input_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
+[MediaLive.Client.transfer_input_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
 
 Arguments:
 
@@ -918,7 +918,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("medialive").update_channel` method.
 
 Boto3 documentation:
-[MediaLive.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_channel)
+[MediaLive.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_channel)
 
 Arguments:
 
@@ -945,7 +945,7 @@ Returns
 Type annotations for `boto3.client("medialive").update_channel_class` method.
 
 Boto3 documentation:
-[MediaLive.Client.update_channel_class](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_channel_class)
+[MediaLive.Client.update_channel_class](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_channel_class)
 
 Arguments:
 
@@ -963,7 +963,7 @@ Returns
 Type annotations for `boto3.client("medialive").update_input` method.
 
 Boto3 documentation:
-[MediaLive.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_input)
+[MediaLive.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_input)
 
 Arguments:
 
@@ -988,7 +988,7 @@ Returns
 Type annotations for `boto3.client("medialive").update_input_device` method.
 
 Boto3 documentation:
-[MediaLive.Client.update_input_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_input_device)
+[MediaLive.Client.update_input_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_input_device)
 
 Arguments:
 
@@ -1008,7 +1008,7 @@ Type annotations for `boto3.client("medialive").update_input_security_group`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.update_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
+[MediaLive.Client.update_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
 
 Arguments:
 
@@ -1025,7 +1025,7 @@ Returns
 Type annotations for `boto3.client("medialive").update_multiplex` method.
 
 Boto3 documentation:
-[MediaLive.Client.update_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_multiplex)
+[MediaLive.Client.update_multiplex](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_multiplex)
 
 Arguments:
 
@@ -1043,7 +1043,7 @@ Type annotations for `boto3.client("medialive").update_multiplex_program`
 method.
 
 Boto3 documentation:
-[MediaLive.Client.update_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
+[MediaLive.Client.update_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
 
 Arguments:
 
@@ -1060,7 +1060,7 @@ Returns
 Type annotations for `boto3.client("medialive").update_reservation` method.
 
 Boto3 documentation:
-[MediaLive.Client.update_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive.Client.update_reservation)
+[MediaLive.Client.update_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive.Client.update_reservation)
 
 Arguments:
 

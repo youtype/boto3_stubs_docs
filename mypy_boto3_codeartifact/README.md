@@ -3,7 +3,7 @@
 > [Index](..) > CodeArtifact
 
 Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/codeartifact.html#CodeArtifact)
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
 [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 

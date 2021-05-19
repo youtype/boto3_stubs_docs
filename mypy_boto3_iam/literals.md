@@ -3,7 +3,7 @@
 > [Index](..) > [IAM](.) > Literals
 
 Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/iam.html#IAM)
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM)
 type annotations stubs module
 [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
@@ -35,6 +35,7 @@ type annotations stubs module
   - [ListServerCertificatesPaginatorName](#listservercertificatespaginatorname)
   - [ListSigningCertificatesPaginatorName](#listsigningcertificatespaginatorname)
   - [ListUserPoliciesPaginatorName](#listuserpoliciespaginatorname)
+  - [ListUserTagsPaginatorName](#listusertagspaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
   - [ListVirtualMFADevicesPaginatorName](#listvirtualmfadevicespaginatorname)
   - [PermissionsBoundaryAttachmentTypeType](#permissionsboundaryattachmenttypetype)
@@ -347,6 +348,16 @@ from mypy_boto3_iam.literals import ListUserPoliciesPaginatorName
 Values:
 
 - `list_user_policies`
+
+## ListUserTagsPaginatorName
+
+```python
+from mypy_boto3_iam.literals import ListUserTagsPaginatorName
+```
+
+Values:
+
+- `list_user_tags`
 
 ## ListUsersPaginatorName
 

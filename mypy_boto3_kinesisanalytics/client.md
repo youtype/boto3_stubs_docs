@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisAnalytics](.) > KinesisAnalyticsClient
 
 Auto-generated documentation for
-[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics)
+[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
 [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
@@ -48,7 +48,7 @@ def get_kinesisanalytics_client() -> KinesisAnalyticsClient:
 ```
 
 Boto3 documentation:
-[KinesisAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
+[KinesisAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
 
 ## Exceptions
 
@@ -87,7 +87,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.add_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_cloud_watch_logging_option)
+[KinesisAnalytics.Client.add_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_cloud_watch_logging_option)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Type annotations for `boto3.client("kinesisanalytics").add_application_input`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.add_application_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input)
+[KinesisAnalytics.Client.add_application_input](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.add_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input_processing_configuration)
+[KinesisAnalytics.Client.add_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input_processing_configuration)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("kinesisanalytics").add_application_output`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.add_application_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_output)
+[KinesisAnalytics.Client.add_application_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_output)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.add_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_reference_data_source)
+[KinesisAnalytics.Client.add_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_reference_data_source)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisanalytics").can_paginate` method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.can_paginate)
+[KinesisAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.can_paginate)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("kinesisanalytics").create_application`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.create_application)
+[KinesisAnalytics.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.create_application)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("kinesisanalytics").delete_application`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application)
+[KinesisAnalytics.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_cloud_watch_logging_option)
+[KinesisAnalytics.Client.delete_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_cloud_watch_logging_option)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_input_processing_configuration)
+[KinesisAnalytics.Client.delete_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_input_processing_configuration)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Type annotations for
 `boto3.client("kinesisanalytics").delete_application_output` method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_output)
+[KinesisAnalytics.Client.delete_application_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_output)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_reference_data_source)
+[KinesisAnalytics.Client.delete_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_reference_data_source)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("kinesisanalytics").describe_application`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application)
+[KinesisAnalytics.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("kinesisanalytics").discover_input_schema`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.discover_input_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.discover_input_schema)
+[KinesisAnalytics.Client.discover_input_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.discover_input_schema)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("kinesisanalytics").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.generate_presigned_url)
+[KinesisAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.generate_presigned_url)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("kinesisanalytics").list_applications`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications)
+[KinesisAnalytics.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("kinesisanalytics").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource)
+[KinesisAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("kinesisanalytics").start_application`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application)
+[KinesisAnalytics.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("kinesisanalytics").stop_application`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application)
+[KinesisAnalytics.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application)
 
 Arguments:
 
@@ -408,7 +408,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisanalytics").tag_resource` method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource)
+[KinesisAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisanalytics").untag_resource` method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource)
+[KinesisAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource)
 
 Arguments:
 
@@ -437,7 +437,7 @@ Type annotations for `boto3.client("kinesisanalytics").update_application`
 method.
 
 Boto3 documentation:
-[KinesisAnalytics.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.update_application)
+[KinesisAnalytics.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.update_application)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ECS](.) > Waiters
 
 Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecs.html#ECS)
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS)
 type annotations stubs module
 [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
@@ -27,7 +27,7 @@ def get_services_inactive_waiter() -> ServicesInactiveWaiter:
 ```
 
 Boto3 documentation:
-[ECS.Waiter.services_inactive](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecs.html#ECS.Waiter.services_inactive)
+[ECS.Waiter.services_inactive](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS.Waiter.services_inactive)
 
 Arguments for `ServicesInactiveWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_services_stable_waiter() -> ServicesStableWaiter:
 ```
 
 Boto3 documentation:
-[ECS.Waiter.services_stable](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecs.html#ECS.Waiter.services_stable)
+[ECS.Waiter.services_stable](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS.Waiter.services_stable)
 
 Arguments for `ServicesStableWaiter.wait` method:
 
@@ -75,7 +75,7 @@ def get_tasks_running_waiter() -> TasksRunningWaiter:
 ```
 
 Boto3 documentation:
-[ECS.Waiter.tasks_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecs.html#ECS.Waiter.tasks_running)
+[ECS.Waiter.tasks_running](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS.Waiter.tasks_running)
 
 Arguments for `TasksRunningWaiter.wait` method:
 
@@ -99,7 +99,7 @@ def get_tasks_stopped_waiter() -> TasksStoppedWaiter:
 ```
 
 Boto3 documentation:
-[ECS.Waiter.tasks_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/ecs.html#ECS.Waiter.tasks_stopped)
+[ECS.Waiter.tasks_stopped](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS.Waiter.tasks_stopped)
 
 Arguments for `TasksStoppedWaiter.wait` method:
 

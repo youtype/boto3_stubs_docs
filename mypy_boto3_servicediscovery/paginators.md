@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceDiscovery](.) > Paginators
 
 Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicediscovery.html#ServiceDiscovery)
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
 [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
@@ -28,7 +28,7 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
 ```
 
 Boto3 documentation:
-[ServiceDiscovery.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListInstances)
+[ServiceDiscovery.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListInstances)
 
 Arguments for `ListInstancesPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
 ```
 
 Boto3 documentation:
-[ServiceDiscovery.Paginator.ListNamespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListNamespaces)
+[ServiceDiscovery.Paginator.ListNamespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListNamespaces)
 
 Arguments for `ListNamespacesPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
 ```
 
 Boto3 documentation:
-[ServiceDiscovery.Paginator.ListOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListOperations)
+[ServiceDiscovery.Paginator.ListOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListOperations)
 
 Arguments for `ListOperationsPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_list_services_paginator() -> ListServicesPaginator:
 ```
 
 Boto3 documentation:
-[ServiceDiscovery.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListServices)
+[ServiceDiscovery.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListServices)
 
 Arguments for `ListServicesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConnect](.) > MediaConnectClient
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
@@ -60,7 +60,7 @@ def get_mediaconnect_client() -> MediaConnectClient:
 ```
 
 Boto3 documentation:
-[MediaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client)
+[MediaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client)
 
 ## Exceptions
 
@@ -95,7 +95,7 @@ Type annotations for `boto3.client("mediaconnect").add_flow_media_streams`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.add_flow_media_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
+[MediaConnect.Client.add_flow_media_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
 
 Arguments:
 
@@ -112,7 +112,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").add_flow_outputs` method.
 
 Boto3 documentation:
-[MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
+[MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
 
 Boto3 documentation:
-[MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
+[MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
+[MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
 
 Arguments:
 
@@ -164,7 +164,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").can_paginate` method.
 
 Boto3 documentation:
-[MediaConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate)
+[MediaConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediaconnect").create_flow` method.
 
 Boto3 documentation:
-[MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
+[MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
 
 Arguments:
 
@@ -204,7 +204,7 @@ Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 Type annotations for `boto3.client("mediaconnect").delete_flow` method.
 
 Boto3 documentation:
-[MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
+[MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef).
 Type annotations for `boto3.client("mediaconnect").describe_flow` method.
 
 Boto3 documentation:
-[MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
+[MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").describe_offering` method.
 
 Boto3 documentation:
-[MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
+[MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Type annotations for `boto3.client("mediaconnect").describe_reservation`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
+[MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
 
 Arguments:
 
@@ -261,7 +261,7 @@ Type annotations for `boto3.client("mediaconnect").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url)
+[MediaConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Type annotations for `boto3.client("mediaconnect").grant_flow_entitlements`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
+[MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").list_entitlements` method.
 
 Boto3 documentation:
-[MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
+[MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").list_flows` method.
 
 Boto3 documentation:
-[MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
+[MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 Type annotations for `boto3.client("mediaconnect").list_offerings` method.
 
 Boto3 documentation:
-[MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
+[MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").list_reservations` method.
 
 Boto3 documentation:
-[MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
+[MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
 
 Arguments:
 
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("mediaconnect").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
+[MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -369,7 +369,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").purchase_offering` method.
 
 Boto3 documentation:
-[MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
+[MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
 
 Arguments:
 
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("mediaconnect").remove_flow_media_stream`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.remove_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
+[MediaConnect.Client.remove_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
 
 Arguments:
 
@@ -401,7 +401,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").remove_flow_output` method.
 
 Boto3 documentation:
-[MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
+[MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").remove_flow_source` method.
 
 Boto3 documentation:
-[MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
+[MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("mediaconnect").remove_flow_vpc_interface`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
+[MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("mediaconnect").revoke_flow_entitlement`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
+[MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").start_flow` method.
 
 Boto3 documentation:
-[MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
+[MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
 Type annotations for `boto3.client("mediaconnect").stop_flow` method.
 
 Boto3 documentation:
-[MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
+[MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
 
 Arguments:
 
@@ -489,7 +489,7 @@ Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 Type annotations for `boto3.client("mediaconnect").tag_resource` method.
 
 Boto3 documentation:
-[MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
+[MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
 
 Arguments:
 
@@ -501,7 +501,7 @@ Arguments:
 Type annotations for `boto3.client("mediaconnect").untag_resource` method.
 
 Boto3 documentation:
-[MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
+[MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
 
 Arguments:
 
@@ -513,7 +513,7 @@ Arguments:
 Type annotations for `boto3.client("mediaconnect").update_flow` method.
 
 Boto3 documentation:
-[MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
+[MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
 
 Arguments:
 
@@ -529,7 +529,7 @@ Type annotations for `boto3.client("mediaconnect").update_flow_entitlement`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
+[MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
 
 Arguments:
 
@@ -551,7 +551,7 @@ Type annotations for `boto3.client("mediaconnect").update_flow_media_stream`
 method.
 
 Boto3 documentation:
-[MediaConnect.Client.update_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
+[MediaConnect.Client.update_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
 
 Arguments:
 
@@ -572,7 +572,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").update_flow_output` method.
 
 Boto3 documentation:
-[MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
+[MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Returns
 Type annotations for `boto3.client("mediaconnect").update_flow_source` method.
 
 Boto3 documentation:
-[MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
+[MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
 
 Arguments:
 

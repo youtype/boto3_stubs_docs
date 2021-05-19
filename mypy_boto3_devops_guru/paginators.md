@@ -3,7 +3,7 @@
 > [Index](..) > [DevopsGuru](.) > Paginators
 
 Auto-generated documentation for
-[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru)
+[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
@@ -33,7 +33,7 @@ def get_describe_resource_collection_health_paginator() -> DescribeResourceColle
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.DescribeResourceCollectionHealth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.DescribeResourceCollectionHealth)
+[DevopsGuru.Paginator.DescribeResourceCollectionHealth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.DescribeResourceCollectionHealth)
 
 Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
 
@@ -61,7 +61,7 @@ def get_get_cost_estimation_paginator() -> GetCostEstimationPaginator:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.GetCostEstimation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.GetCostEstimation)
+[DevopsGuru.Paginator.GetCostEstimation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.GetCostEstimation)
 
 Arguments for `GetCostEstimationPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_get_resource_collection_paginator() -> GetResourceCollectionPaginator:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.GetResourceCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.GetResourceCollection)
+[DevopsGuru.Paginator.GetResourceCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.GetResourceCollection)
 
 Arguments for `GetResourceCollectionPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_list_anomalies_for_insight_paginator() -> ListAnomaliesForInsightPaginat
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.ListAnomaliesForInsight](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.ListAnomaliesForInsight)
+[DevopsGuru.Paginator.ListAnomaliesForInsight](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.ListAnomaliesForInsight)
 
 Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
 
@@ -142,7 +142,7 @@ def get_list_events_paginator() -> ListEventsPaginator:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.ListEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.ListEvents)
+[DevopsGuru.Paginator.ListEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.ListEvents)
 
 Arguments for `ListEventsPaginator.paginate` method:
 
@@ -170,7 +170,7 @@ def get_list_insights_paginator() -> ListInsightsPaginator:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.ListInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.ListInsights)
+[DevopsGuru.Paginator.ListInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.ListInsights)
 
 Arguments for `ListInsightsPaginator.paginate` method:
 
@@ -198,7 +198,7 @@ def get_list_notification_channels_paginator() -> ListNotificationChannelsPagina
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.ListNotificationChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.ListNotificationChannels)
+[DevopsGuru.Paginator.ListNotificationChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.ListNotificationChannels)
 
 Arguments for `ListNotificationChannelsPaginator.paginate` method:
 
@@ -223,7 +223,7 @@ def get_list_recommendations_paginator() -> ListRecommendationsPaginator:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.ListRecommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.ListRecommendations)
+[DevopsGuru.Paginator.ListRecommendations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.ListRecommendations)
 
 Arguments for `ListRecommendationsPaginator.paginate` method:
 
@@ -250,7 +250,7 @@ def get_search_insights_paginator() -> SearchInsightsPaginator:
 ```
 
 Boto3 documentation:
-[DevopsGuru.Paginator.SearchInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/devops-guru.html#DevopsGuru.Paginator.SearchInsights)
+[DevopsGuru.Paginator.SearchInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru.Paginator.SearchInsights)
 
 Arguments for `SearchInsightsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [AmplifyBackend](.) > AmplifyBackendClient
 
 Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend)
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
 [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
@@ -53,7 +53,7 @@ def get_amplifybackend_client() -> AmplifyBackendClient:
 ```
 
 Boto3 documentation:
-[AmplifyBackend.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client)
+[AmplifyBackend.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client)
 
 ## Exceptions
 
@@ -82,7 +82,7 @@ Exceptions:
 Type annotations for `boto3.client("amplifybackend").can_paginate` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate)
+[AmplifyBackend.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate)
 
 Arguments:
 
@@ -95,7 +95,7 @@ Returns `bool`.
 Type annotations for `boto3.client("amplifybackend").clone_backend` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.clone_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
+[AmplifyBackend.Client.clone_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").create_backend` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.create_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
+[AmplifyBackend.Client.create_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
 
 Arguments:
 
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("amplifybackend").create_backend_api`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.create_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
+[AmplifyBackend.Client.create_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("amplifybackend").create_backend_auth`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.create_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
+[AmplifyBackend.Client.create_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("amplifybackend").create_backend_config`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.create_backend_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
+[AmplifyBackend.Client.create_backend_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").create_token` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
+[AmplifyBackend.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").delete_backend` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.delete_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
+[AmplifyBackend.Client.delete_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("amplifybackend").delete_backend_api`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.delete_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
+[AmplifyBackend.Client.delete_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Type annotations for `boto3.client("amplifybackend").delete_backend_auth`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.delete_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
+[AmplifyBackend.Client.delete_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").delete_token` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
+[AmplifyBackend.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Type annotations for
 `boto3.client("amplifybackend").generate_backend_api_models` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.generate_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
+[AmplifyBackend.Client.generate_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("amplifybackend").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url)
+[AmplifyBackend.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Returns `str`.
 Type annotations for `boto3.client("amplifybackend").get_backend` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.get_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
+[AmplifyBackend.Client.get_backend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns [GetBackendResponseTypeDef](./type_defs.md#getbackendresponsetypedef).
 Type annotations for `boto3.client("amplifybackend").get_backend_api` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.get_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
+[AmplifyBackend.Client.get_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
 
 Arguments:
 
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("amplifybackend").get_backend_api_models`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.get_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
+[AmplifyBackend.Client.get_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").get_backend_auth` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.get_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
+[AmplifyBackend.Client.get_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").get_backend_job` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.get_backend_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
+[AmplifyBackend.Client.get_backend_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("amplifybackend").get_token` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.get_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
+[AmplifyBackend.Client.get_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns [GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef).
 Type annotations for `boto3.client("amplifybackend").list_backend_jobs` method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.list_backend_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
+[AmplifyBackend.Client.list_backend_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("amplifybackend").remove_all_backends`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.remove_all_backends](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
+[AmplifyBackend.Client.remove_all_backends](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
 
 Arguments:
 
@@ -431,7 +431,7 @@ Type annotations for `boto3.client("amplifybackend").remove_backend_config`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.remove_backend_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
+[AmplifyBackend.Client.remove_backend_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("amplifybackend").update_backend_api`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.update_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
+[AmplifyBackend.Client.update_backend_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("amplifybackend").update_backend_auth`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.update_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
+[AmplifyBackend.Client.update_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("amplifybackend").update_backend_config`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.update_backend_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
+[AmplifyBackend.Client.update_backend_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Type annotations for `boto3.client("amplifybackend").update_backend_job`
 method.
 
 Boto3 documentation:
-[AmplifyBackend.Client.update_backend_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
+[AmplifyBackend.Client.update_backend_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
 
 Arguments:
 

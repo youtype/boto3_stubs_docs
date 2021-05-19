@@ -3,7 +3,7 @@
 > [Index](..) > [PI](.) > Literals
 
 Auto-generated documentation for
-[PI](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/pi.html#PI)
+[PI](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pi.html#PI)
 type annotations stubs module
 [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 

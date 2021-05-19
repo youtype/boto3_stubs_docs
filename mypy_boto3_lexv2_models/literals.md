@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > Literals
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 

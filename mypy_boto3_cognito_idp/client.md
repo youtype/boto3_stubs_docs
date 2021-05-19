@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentityProvider](.) > CognitoIdentityProviderClient
 
 Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider)
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
 [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
@@ -129,7 +129,7 @@ def get_cognito-idp_client() -> CognitoIdentityProviderClient:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client)
+[CognitoIdentityProvider.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client)
 
 ## Exceptions
 
@@ -192,7 +192,7 @@ Type annotations for `boto3.client("cognito-idp").add_custom_attributes`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.add_custom_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.add_custom_attributes)
+[CognitoIdentityProvider.Client.add_custom_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.add_custom_attributes)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("cognito-idp").admin_add_user_to_group`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_add_user_to_group)
+[CognitoIdentityProvider.Client.admin_add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_add_user_to_group)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("cognito-idp").admin_confirm_sign_up`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_confirm_sign_up)
+[CognitoIdentityProvider.Client.admin_confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_confirm_sign_up)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").admin_create_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_create_user)
+[CognitoIdentityProvider.Client.admin_create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_create_user)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").admin_delete_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user)
+[CognitoIdentityProvider.Client.admin_delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user)
 
 Arguments:
 
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("cognito-idp").admin_delete_user_attributes`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user_attributes)
+[CognitoIdentityProvider.Client.admin_delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user_attributes)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Type annotations for
 `boto3.client("cognito-idp").admin_disable_provider_for_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_disable_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_provider_for_user)
+[CognitoIdentityProvider.Client.admin_disable_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_provider_for_user)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").admin_disable_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_disable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
+[CognitoIdentityProvider.Client.admin_disable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").admin_enable_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_enable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_enable_user)
+[CognitoIdentityProvider.Client.admin_enable_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_enable_user)
 
 Arguments:
 
@@ -336,7 +336,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").admin_forget_device` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_forget_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_forget_device)
+[CognitoIdentityProvider.Client.admin_forget_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_forget_device)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Arguments:
 Type annotations for `boto3.client("cognito-idp").admin_get_device` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_device)
+[CognitoIdentityProvider.Client.admin_get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_device)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").admin_get_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_user)
+[CognitoIdentityProvider.Client.admin_get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_user)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").admin_initiate_auth` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_initiate_auth)
+[CognitoIdentityProvider.Client.admin_initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_initiate_auth)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("cognito-idp").admin_link_provider_for_user`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_link_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_link_provider_for_user)
+[CognitoIdentityProvider.Client.admin_link_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_link_provider_for_user)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").admin_list_devices` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_devices)
+[CognitoIdentityProvider.Client.admin_list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_devices)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("cognito-idp").admin_list_groups_for_user`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_groups_for_user)
+[CognitoIdentityProvider.Client.admin_list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_groups_for_user)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("cognito-idp").admin_list_user_auth_events`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_list_user_auth_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_user_auth_events)
+[CognitoIdentityProvider.Client.admin_list_user_auth_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_user_auth_events)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("cognito-idp").admin_remove_user_from_group`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_remove_user_from_group)
+[CognitoIdentityProvider.Client.admin_remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_remove_user_from_group)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Type annotations for `boto3.client("cognito-idp").admin_reset_user_password`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_reset_user_password)
+[CognitoIdentityProvider.Client.admin_reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_reset_user_password)
 
 Arguments:
 
@@ -506,7 +506,7 @@ Type annotations for
 `boto3.client("cognito-idp").admin_respond_to_auth_challenge` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_respond_to_auth_challenge)
+[CognitoIdentityProvider.Client.admin_respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_respond_to_auth_challenge)
 
 Arguments:
 
@@ -531,7 +531,7 @@ Type annotations for
 `boto3.client("cognito-idp").admin_set_user_mfa_preference` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_mfa_preference)
+[CognitoIdentityProvider.Client.admin_set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_mfa_preference)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Type annotations for `boto3.client("cognito-idp").admin_set_user_password`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_set_user_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_password)
+[CognitoIdentityProvider.Client.admin_set_user_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_password)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("cognito-idp").admin_set_user_settings`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_settings)
+[CognitoIdentityProvider.Client.admin_set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_settings)
 
 Arguments:
 
@@ -585,7 +585,7 @@ Type annotations for
 `boto3.client("cognito-idp").admin_update_auth_event_feedback` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_auth_event_feedback)
+[CognitoIdentityProvider.Client.admin_update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_auth_event_feedback)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Type annotations for `boto3.client("cognito-idp").admin_update_device_status`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_update_device_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_device_status)
+[CognitoIdentityProvider.Client.admin_update_device_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_device_status)
 
 Arguments:
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("cognito-idp").admin_update_user_attributes`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_user_attributes)
+[CognitoIdentityProvider.Client.admin_update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_user_attributes)
 
 Arguments:
 
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("cognito-idp").admin_user_global_sign_out`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_user_global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_user_global_sign_out)
+[CognitoIdentityProvider.Client.admin_user_global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_user_global_sign_out)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Type annotations for `boto3.client("cognito-idp").associate_software_token`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.associate_software_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
+[CognitoIdentityProvider.Client.associate_software_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
 
 Arguments:
 
@@ -670,7 +670,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").can_paginate` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.can_paginate)
+[CognitoIdentityProvider.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.can_paginate)
 
 Arguments:
 
@@ -683,7 +683,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cognito-idp").change_password` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.change_password)
+[CognitoIdentityProvider.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.change_password)
 
 Arguments:
 
@@ -698,7 +698,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").confirm_device` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.confirm_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_device)
+[CognitoIdentityProvider.Client.confirm_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_device)
 
 Arguments:
 
@@ -717,7 +717,7 @@ Type annotations for `boto3.client("cognito-idp").confirm_forgot_password`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.confirm_forgot_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_forgot_password)
+[CognitoIdentityProvider.Client.confirm_forgot_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_forgot_password)
 
 Arguments:
 
@@ -739,7 +739,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").confirm_sign_up` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_sign_up)
+[CognitoIdentityProvider.Client.confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_sign_up)
 
 Arguments:
 
@@ -761,7 +761,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").create_group` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_group)
+[CognitoIdentityProvider.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_group)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Type annotations for `boto3.client("cognito-idp").create_identity_provider`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_identity_provider)
+[CognitoIdentityProvider.Client.create_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_identity_provider)
 
 Arguments:
 
@@ -802,7 +802,7 @@ Type annotations for `boto3.client("cognito-idp").create_resource_server`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_resource_server)
+[CognitoIdentityProvider.Client.create_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_resource_server)
 
 Arguments:
 
@@ -821,7 +821,7 @@ Type annotations for `boto3.client("cognito-idp").create_user_import_job`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_import_job)
+[CognitoIdentityProvider.Client.create_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_import_job)
 
 Arguments:
 
@@ -837,7 +837,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").create_user_pool` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool)
+[CognitoIdentityProvider.Client.create_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool)
 
 Arguments:
 
@@ -886,7 +886,7 @@ Type annotations for `boto3.client("cognito-idp").create_user_pool_client`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_client)
+[CognitoIdentityProvider.Client.create_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_client)
 
 Arguments:
 
@@ -924,7 +924,7 @@ Type annotations for `boto3.client("cognito-idp").create_user_pool_domain`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_domain)
+[CognitoIdentityProvider.Client.create_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_domain)
 
 Arguments:
 
@@ -941,7 +941,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").delete_group` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_group)
+[CognitoIdentityProvider.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_group)
 
 Arguments:
 
@@ -954,7 +954,7 @@ Type annotations for `boto3.client("cognito-idp").delete_identity_provider`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_identity_provider)
+[CognitoIdentityProvider.Client.delete_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_identity_provider)
 
 Arguments:
 
@@ -967,7 +967,7 @@ Type annotations for `boto3.client("cognito-idp").delete_resource_server`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_resource_server)
+[CognitoIdentityProvider.Client.delete_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_resource_server)
 
 Arguments:
 
@@ -979,7 +979,7 @@ Arguments:
 Type annotations for `boto3.client("cognito-idp").delete_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user)
+[CognitoIdentityProvider.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user)
 
 Arguments:
 
@@ -991,7 +991,7 @@ Type annotations for `boto3.client("cognito-idp").delete_user_attributes`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_attributes)
+[CognitoIdentityProvider.Client.delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_attributes)
 
 Arguments:
 
@@ -1005,7 +1005,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").delete_user_pool` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool)
+[CognitoIdentityProvider.Client.delete_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool)
 
 Arguments:
 
@@ -1017,7 +1017,7 @@ Type annotations for `boto3.client("cognito-idp").delete_user_pool_client`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_client)
+[CognitoIdentityProvider.Client.delete_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_client)
 
 Arguments:
 
@@ -1030,7 +1030,7 @@ Type annotations for `boto3.client("cognito-idp").delete_user_pool_domain`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_domain)
+[CognitoIdentityProvider.Client.delete_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_domain)
 
 Arguments:
 
@@ -1045,7 +1045,7 @@ Type annotations for `boto3.client("cognito-idp").describe_identity_provider`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_identity_provider)
+[CognitoIdentityProvider.Client.describe_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_identity_provider)
 
 Arguments:
 
@@ -1061,7 +1061,7 @@ Type annotations for `boto3.client("cognito-idp").describe_resource_server`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_resource_server)
+[CognitoIdentityProvider.Client.describe_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_resource_server)
 
 Arguments:
 
@@ -1077,7 +1077,7 @@ Type annotations for `boto3.client("cognito-idp").describe_risk_configuration`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_risk_configuration)
+[CognitoIdentityProvider.Client.describe_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_risk_configuration)
 
 Arguments:
 
@@ -1093,7 +1093,7 @@ Type annotations for `boto3.client("cognito-idp").describe_user_import_job`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_import_job)
+[CognitoIdentityProvider.Client.describe_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_import_job)
 
 Arguments:
 
@@ -1108,7 +1108,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").describe_user_pool` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool)
+[CognitoIdentityProvider.Client.describe_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool)
 
 Arguments:
 
@@ -1123,7 +1123,7 @@ Type annotations for `boto3.client("cognito-idp").describe_user_pool_client`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_client)
+[CognitoIdentityProvider.Client.describe_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_client)
 
 Arguments:
 
@@ -1139,7 +1139,7 @@ Type annotations for `boto3.client("cognito-idp").describe_user_pool_domain`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_domain)
+[CognitoIdentityProvider.Client.describe_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_domain)
 
 Arguments:
 
@@ -1153,7 +1153,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").forget_device` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.forget_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forget_device)
+[CognitoIdentityProvider.Client.forget_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forget_device)
 
 Arguments:
 
@@ -1165,7 +1165,7 @@ Arguments:
 Type annotations for `boto3.client("cognito-idp").forgot_password` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.forgot_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forgot_password)
+[CognitoIdentityProvider.Client.forgot_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forgot_password)
 
 Arguments:
 
@@ -1187,7 +1187,7 @@ Type annotations for `boto3.client("cognito-idp").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.generate_presigned_url)
+[CognitoIdentityProvider.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1203,7 +1203,7 @@ Returns `str`.
 Type annotations for `boto3.client("cognito-idp").get_csv_header` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_csv_header](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_csv_header)
+[CognitoIdentityProvider.Client.get_csv_header](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_csv_header)
 
 Arguments:
 
@@ -1217,7 +1217,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").get_device` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_device)
+[CognitoIdentityProvider.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_device)
 
 Arguments:
 
@@ -1231,7 +1231,7 @@ Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 Type annotations for `boto3.client("cognito-idp").get_group` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_group)
+[CognitoIdentityProvider.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_group)
 
 Arguments:
 
@@ -1246,7 +1246,7 @@ Type annotations for
 `boto3.client("cognito-idp").get_identity_provider_by_identifier` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_identity_provider_by_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_identity_provider_by_identifier)
+[CognitoIdentityProvider.Client.get_identity_provider_by_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_identity_provider_by_identifier)
 
 Arguments:
 
@@ -1262,7 +1262,7 @@ Type annotations for `boto3.client("cognito-idp").get_signing_certificate`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_signing_certificate)
+[CognitoIdentityProvider.Client.get_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_signing_certificate)
 
 Arguments:
 
@@ -1276,7 +1276,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").get_ui_customization` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_ui_customization)
+[CognitoIdentityProvider.Client.get_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_ui_customization)
 
 Arguments:
 
@@ -1291,7 +1291,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").get_user` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user)
+[CognitoIdentityProvider.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user)
 
 Arguments:
 
@@ -1305,7 +1305,7 @@ Type annotations for
 `boto3.client("cognito-idp").get_user_attribute_verification_code` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_user_attribute_verification_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_attribute_verification_code)
+[CognitoIdentityProvider.Client.get_user_attribute_verification_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_attribute_verification_code)
 
 Arguments:
 
@@ -1322,7 +1322,7 @@ Type annotations for `boto3.client("cognito-idp").get_user_pool_mfa_config`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.get_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_pool_mfa_config)
+[CognitoIdentityProvider.Client.get_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_pool_mfa_config)
 
 Arguments:
 
@@ -1336,7 +1336,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").global_sign_out` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.global_sign_out)
+[CognitoIdentityProvider.Client.global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.global_sign_out)
 
 Arguments:
 
@@ -1349,7 +1349,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").initiate_auth` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.initiate_auth)
+[CognitoIdentityProvider.Client.initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.initiate_auth)
 
 Arguments:
 
@@ -1370,7 +1370,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").list_devices` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_devices)
+[CognitoIdentityProvider.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_devices)
 
 Arguments:
 
@@ -1386,7 +1386,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").list_groups` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_groups)
+[CognitoIdentityProvider.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_groups)
 
 Arguments:
 
@@ -1402,7 +1402,7 @@ Type annotations for `boto3.client("cognito-idp").list_identity_providers`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_identity_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_identity_providers)
+[CognitoIdentityProvider.Client.list_identity_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_identity_providers)
 
 Arguments:
 
@@ -1419,7 +1419,7 @@ Type annotations for `boto3.client("cognito-idp").list_resource_servers`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_resource_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_resource_servers)
+[CognitoIdentityProvider.Client.list_resource_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_resource_servers)
 
 Arguments:
 
@@ -1436,7 +1436,7 @@ Type annotations for `boto3.client("cognito-idp").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_tags_for_resource)
+[CognitoIdentityProvider.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1451,7 +1451,7 @@ Type annotations for `boto3.client("cognito-idp").list_user_import_jobs`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_user_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_import_jobs)
+[CognitoIdentityProvider.Client.list_user_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_import_jobs)
 
 Arguments:
 
@@ -1468,7 +1468,7 @@ Type annotations for `boto3.client("cognito-idp").list_user_pool_clients`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_user_pool_clients](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pool_clients)
+[CognitoIdentityProvider.Client.list_user_pool_clients](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pool_clients)
 
 Arguments:
 
@@ -1484,7 +1484,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").list_user_pools` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_user_pools](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pools)
+[CognitoIdentityProvider.Client.list_user_pools](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pools)
 
 Arguments:
 
@@ -1499,7 +1499,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").list_users` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users)
+[CognitoIdentityProvider.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users)
 
 Arguments:
 
@@ -1516,7 +1516,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 Type annotations for `boto3.client("cognito-idp").list_users_in_group` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.list_users_in_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users_in_group)
+[CognitoIdentityProvider.Client.list_users_in_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users_in_group)
 
 Arguments:
 
@@ -1534,7 +1534,7 @@ Type annotations for `boto3.client("cognito-idp").resend_confirmation_code`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.resend_confirmation_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.resend_confirmation_code)
+[CognitoIdentityProvider.Client.resend_confirmation_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.resend_confirmation_code)
 
 Arguments:
 
@@ -1556,7 +1556,7 @@ Type annotations for `boto3.client("cognito-idp").respond_to_auth_challenge`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.respond_to_auth_challenge)
+[CognitoIdentityProvider.Client.respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.respond_to_auth_challenge)
 
 Arguments:
 
@@ -1580,7 +1580,7 @@ Type annotations for `boto3.client("cognito-idp").set_risk_configuration`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.set_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_risk_configuration)
+[CognitoIdentityProvider.Client.set_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_risk_configuration)
 
 Arguments:
 
@@ -1601,7 +1601,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").set_ui_customization` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.set_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_ui_customization)
+[CognitoIdentityProvider.Client.set_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_ui_customization)
 
 Arguments:
 
@@ -1619,7 +1619,7 @@ Type annotations for `boto3.client("cognito-idp").set_user_mfa_preference`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_mfa_preference)
+[CognitoIdentityProvider.Client.set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_mfa_preference)
 
 Arguments:
 
@@ -1637,7 +1637,7 @@ Type annotations for `boto3.client("cognito-idp").set_user_pool_mfa_config`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.set_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_pool_mfa_config)
+[CognitoIdentityProvider.Client.set_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_pool_mfa_config)
 
 Arguments:
 
@@ -1656,7 +1656,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").set_user_settings` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_settings)
+[CognitoIdentityProvider.Client.set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_settings)
 
 Arguments:
 
@@ -1672,7 +1672,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").sign_up` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.sign_up](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.sign_up)
+[CognitoIdentityProvider.Client.sign_up](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.sign_up)
 
 Arguments:
 
@@ -1698,7 +1698,7 @@ Type annotations for `boto3.client("cognito-idp").start_user_import_job`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.start_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.start_user_import_job)
+[CognitoIdentityProvider.Client.start_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.start_user_import_job)
 
 Arguments:
 
@@ -1713,7 +1713,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").stop_user_import_job` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.stop_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.stop_user_import_job)
+[CognitoIdentityProvider.Client.stop_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.stop_user_import_job)
 
 Arguments:
 
@@ -1728,7 +1728,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").tag_resource` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.tag_resource)
+[CognitoIdentityProvider.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.tag_resource)
 
 Arguments:
 
@@ -1742,7 +1742,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").untag_resource` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.untag_resource)
+[CognitoIdentityProvider.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.untag_resource)
 
 Arguments:
 
@@ -1757,7 +1757,7 @@ Type annotations for `boto3.client("cognito-idp").update_auth_event_feedback`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_auth_event_feedback)
+[CognitoIdentityProvider.Client.update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_auth_event_feedback)
 
 Arguments:
 
@@ -1775,7 +1775,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").update_device_status` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_device_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_device_status)
+[CognitoIdentityProvider.Client.update_device_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_device_status)
 
 Arguments:
 
@@ -1791,7 +1791,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-idp").update_group` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_group)
+[CognitoIdentityProvider.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_group)
 
 Arguments:
 
@@ -1810,7 +1810,7 @@ Type annotations for `boto3.client("cognito-idp").update_identity_provider`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_identity_provider)
+[CognitoIdentityProvider.Client.update_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_identity_provider)
 
 Arguments:
 
@@ -1829,7 +1829,7 @@ Type annotations for `boto3.client("cognito-idp").update_resource_server`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_resource_server)
+[CognitoIdentityProvider.Client.update_resource_server](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_resource_server)
 
 Arguments:
 
@@ -1848,7 +1848,7 @@ Type annotations for `boto3.client("cognito-idp").update_user_attributes`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_attributes)
+[CognitoIdentityProvider.Client.update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_attributes)
 
 Arguments:
 
@@ -1866,7 +1866,7 @@ Returns
 Type annotations for `boto3.client("cognito-idp").update_user_pool` method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool)
+[CognitoIdentityProvider.Client.update_user_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool)
 
 Arguments:
 
@@ -1906,7 +1906,7 @@ Type annotations for `boto3.client("cognito-idp").update_user_pool_client`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_client)
+[CognitoIdentityProvider.Client.update_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_client)
 
 Arguments:
 
@@ -1944,7 +1944,7 @@ Type annotations for `boto3.client("cognito-idp").update_user_pool_domain`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_domain)
+[CognitoIdentityProvider.Client.update_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_domain)
 
 Arguments:
 
@@ -1963,7 +1963,7 @@ Type annotations for `boto3.client("cognito-idp").verify_software_token`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.verify_software_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_software_token)
+[CognitoIdentityProvider.Client.verify_software_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_software_token)
 
 Arguments:
 
@@ -1981,7 +1981,7 @@ Type annotations for `boto3.client("cognito-idp").verify_user_attribute`
 method.
 
 Boto3 documentation:
-[CognitoIdentityProvider.Client.verify_user_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_user_attribute)
+[CognitoIdentityProvider.Client.verify_user_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_user_attribute)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [PersonalizeEvents](.) > PersonalizeEventsClient
 
 Auto-generated documentation for
-[PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents)
+[PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module
 [mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
@@ -31,7 +31,7 @@ def get_personalize-events_client() -> PersonalizeEventsClient:
 ```
 
 Boto3 documentation:
-[PersonalizeEvents.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents.Client)
+[PersonalizeEvents.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents.Client)
 
 ## Exceptions
 
@@ -59,7 +59,7 @@ Exceptions:
 Type annotations for `boto3.client("personalize-events").can_paginate` method.
 
 Boto3 documentation:
-[PersonalizeEvents.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents.Client.can_paginate)
+[PersonalizeEvents.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents.Client.can_paginate)
 
 Arguments:
 
@@ -73,7 +73,7 @@ Type annotations for
 `boto3.client("personalize-events").generate_presigned_url` method.
 
 Boto3 documentation:
-[PersonalizeEvents.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents.Client.generate_presigned_url)
+[PersonalizeEvents.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents.Client.generate_presigned_url)
 
 Arguments:
 
@@ -89,7 +89,7 @@ Returns `str`.
 Type annotations for `boto3.client("personalize-events").put_events` method.
 
 Boto3 documentation:
-[PersonalizeEvents.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events)
+[PersonalizeEvents.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Arguments:
 Type annotations for `boto3.client("personalize-events").put_items` method.
 
 Boto3 documentation:
-[PersonalizeEvents.Client.put_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items)
+[PersonalizeEvents.Client.put_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Arguments:
 Type annotations for `boto3.client("personalize-events").put_users` method.
 
 Boto3 documentation:
-[PersonalizeEvents.Client.put_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users)
+[PersonalizeEvents.Client.put_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users)
 
 Arguments:
 

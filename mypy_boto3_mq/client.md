@@ -3,7 +3,7 @@
 > [Index](..) > [MQ](.) > MQClient
 
 Auto-generated documentation for
-[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ)
+[MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ)
 type annotations stubs module
 [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
@@ -51,7 +51,7 @@ def get_mq_client() -> MQClient:
 ```
 
 Boto3 documentation:
-[MQ.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client)
+[MQ.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client)
 
 ## Exceptions
 
@@ -82,7 +82,7 @@ Exceptions:
 Type annotations for `boto3.client("mq").can_paginate` method.
 
 Boto3 documentation:
-[MQ.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.can_paginate)
+[MQ.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.can_paginate)
 
 Arguments:
 
@@ -95,7 +95,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mq").create_broker` method.
 
 Boto3 documentation:
-[MQ.Client.create_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.create_broker)
+[MQ.Client.create_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.create_broker)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns
 Type annotations for `boto3.client("mq").create_configuration` method.
 
 Boto3 documentation:
-[MQ.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.create_configuration)
+[MQ.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.create_configuration)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns
 Type annotations for `boto3.client("mq").create_tags` method.
 
 Boto3 documentation:
-[MQ.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.create_tags)
+[MQ.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.create_tags)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Arguments:
 Type annotations for `boto3.client("mq").create_user` method.
 
 Boto3 documentation:
-[MQ.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.create_user)
+[MQ.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.create_user)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mq").delete_broker` method.
 
 Boto3 documentation:
-[MQ.Client.delete_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.delete_broker)
+[MQ.Client.delete_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.delete_broker)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Returns
 Type annotations for `boto3.client("mq").delete_tags` method.
 
 Boto3 documentation:
-[MQ.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.delete_tags)
+[MQ.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.delete_tags)
 
 Arguments:
 
@@ -206,7 +206,7 @@ Arguments:
 Type annotations for `boto3.client("mq").delete_user` method.
 
 Boto3 documentation:
-[MQ.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.delete_user)
+[MQ.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.delete_user)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mq").describe_broker` method.
 
 Boto3 documentation:
-[MQ.Client.describe_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.describe_broker)
+[MQ.Client.describe_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.describe_broker)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Returns
 Type annotations for `boto3.client("mq").describe_broker_engine_types` method.
 
 Boto3 documentation:
-[MQ.Client.describe_broker_engine_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
+[MQ.Client.describe_broker_engine_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Type annotations for `boto3.client("mq").describe_broker_instance_options`
 method.
 
 Boto3 documentation:
-[MQ.Client.describe_broker_instance_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
+[MQ.Client.describe_broker_instance_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Returns
 Type annotations for `boto3.client("mq").describe_configuration` method.
 
 Boto3 documentation:
-[MQ.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.describe_configuration)
+[MQ.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.describe_configuration)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("mq").describe_configuration_revision`
 method.
 
 Boto3 documentation:
-[MQ.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.describe_configuration_revision)
+[MQ.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.describe_configuration_revision)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Returns
 Type annotations for `boto3.client("mq").describe_user` method.
 
 Boto3 documentation:
-[MQ.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.describe_user)
+[MQ.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.describe_user)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Returns
 Type annotations for `boto3.client("mq").generate_presigned_url` method.
 
 Boto3 documentation:
-[MQ.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.generate_presigned_url)
+[MQ.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.generate_presigned_url)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns `str`.
 Type annotations for `boto3.client("mq").list_brokers` method.
 
 Boto3 documentation:
-[MQ.Client.list_brokers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.list_brokers)
+[MQ.Client.list_brokers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.list_brokers)
 
 Arguments:
 
@@ -345,7 +345,7 @@ Returns
 Type annotations for `boto3.client("mq").list_configuration_revisions` method.
 
 Boto3 documentation:
-[MQ.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.list_configuration_revisions)
+[MQ.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.list_configuration_revisions)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns
 Type annotations for `boto3.client("mq").list_configurations` method.
 
 Boto3 documentation:
-[MQ.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.list_configurations)
+[MQ.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.list_configurations)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Returns
 Type annotations for `boto3.client("mq").list_tags` method.
 
 Boto3 documentation:
-[MQ.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.list_tags)
+[MQ.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.list_tags)
 
 Arguments:
 
@@ -389,7 +389,7 @@ Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 Type annotations for `boto3.client("mq").list_users` method.
 
 Boto3 documentation:
-[MQ.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.list_users)
+[MQ.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.list_users)
 
 Arguments:
 
@@ -404,7 +404,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 Type annotations for `boto3.client("mq").reboot_broker` method.
 
 Boto3 documentation:
-[MQ.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.reboot_broker)
+[MQ.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.reboot_broker)
 
 Arguments:
 
@@ -417,7 +417,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mq").update_broker` method.
 
 Boto3 documentation:
-[MQ.Client.update_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.update_broker)
+[MQ.Client.update_broker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.update_broker)
 
 Arguments:
 
@@ -442,7 +442,7 @@ Returns
 Type annotations for `boto3.client("mq").update_configuration` method.
 
 Boto3 documentation:
-[MQ.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.update_configuration)
+[MQ.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.update_configuration)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns
 Type annotations for `boto3.client("mq").update_user` method.
 
 Boto3 documentation:
-[MQ.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mq.html#MQ.Client.update_user)
+[MQ.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ.Client.update_user)
 
 Arguments:
 

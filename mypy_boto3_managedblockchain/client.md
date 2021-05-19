@@ -3,7 +3,7 @@
 > [Index](..) > [ManagedBlockchain](.) > ManagedBlockchainClient
 
 Auto-generated documentation for
-[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain)
+[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
 [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
@@ -51,7 +51,7 @@ def get_managedblockchain_client() -> ManagedBlockchainClient:
 ```
 
 Boto3 documentation:
-[ManagedBlockchain.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client)
+[ManagedBlockchain.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("managedblockchain").can_paginate` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.can_paginate)
+[ManagedBlockchain.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.can_paginate)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Returns `bool`.
 Type annotations for `boto3.client("managedblockchain").create_member` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member)
+[ManagedBlockchain.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Returns [CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef).
 Type annotations for `boto3.client("managedblockchain").create_network` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.create_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network)
+[ManagedBlockchain.Client.create_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns
 Type annotations for `boto3.client("managedblockchain").create_node` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.create_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node)
+[ManagedBlockchain.Client.create_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Type annotations for `boto3.client("managedblockchain").create_proposal`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.create_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal)
+[ManagedBlockchain.Client.create_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("managedblockchain").delete_member` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member)
+[ManagedBlockchain.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("managedblockchain").delete_node` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.delete_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
+[ManagedBlockchain.Client.delete_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("managedblockchain").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.generate_presigned_url)
+[ManagedBlockchain.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.generate_presigned_url)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns `str`.
 Type annotations for `boto3.client("managedblockchain").get_member` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member)
+[ManagedBlockchain.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns [GetMemberOutputTypeDef](./type_defs.md#getmemberoutputtypedef).
 Type annotations for `boto3.client("managedblockchain").get_network` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.get_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network)
+[ManagedBlockchain.Client.get_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns [GetNetworkOutputTypeDef](./type_defs.md#getnetworkoutputtypedef).
 Type annotations for `boto3.client("managedblockchain").get_node` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.get_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node)
+[ManagedBlockchain.Client.get_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Returns [GetNodeOutputTypeDef](./type_defs.md#getnodeoutputtypedef).
 Type annotations for `boto3.client("managedblockchain").get_proposal` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.get_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal)
+[ManagedBlockchain.Client.get_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("managedblockchain").list_invitations`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
+[ManagedBlockchain.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Returns
 Type annotations for `boto3.client("managedblockchain").list_members` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members)
+[ManagedBlockchain.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns [ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef).
 Type annotations for `boto3.client("managedblockchain").list_networks` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_networks](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
+[ManagedBlockchain.Client.list_networks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
 
 Arguments:
 
@@ -336,7 +336,7 @@ Returns [ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef).
 Type annotations for `boto3.client("managedblockchain").list_nodes` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes)
+[ManagedBlockchain.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes)
 
 Arguments:
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("managedblockchain").list_proposal_votes`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_proposal_votes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes)
+[ManagedBlockchain.Client.list_proposal_votes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes)
 
 Arguments:
 
@@ -371,7 +371,7 @@ Returns
 Type annotations for `boto3.client("managedblockchain").list_proposals` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_proposals](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals)
+[ManagedBlockchain.Client.list_proposals](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals)
 
 Arguments:
 
@@ -388,7 +388,7 @@ Type annotations for `boto3.client("managedblockchain").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource)
+[ManagedBlockchain.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("managedblockchain").reject_invitation`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation)
+[ManagedBlockchain.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("managedblockchain").tag_resource` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource)
+[ManagedBlockchain.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("managedblockchain").untag_resource` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource)
+[ManagedBlockchain.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource)
 
 Arguments:
 
@@ -444,7 +444,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("managedblockchain").update_member` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.update_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member)
+[ManagedBlockchain.Client.update_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("managedblockchain").update_node` method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.update_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node)
+[ManagedBlockchain.Client.update_node](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("managedblockchain").vote_on_proposal`
 method.
 
 Boto3 documentation:
-[ManagedBlockchain.Client.vote_on_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal)
+[ManagedBlockchain.Client.vote_on_proposal](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal)
 
 Arguments:
 

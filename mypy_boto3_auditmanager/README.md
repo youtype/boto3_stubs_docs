@@ -3,7 +3,7 @@
 > [Index](..) > AuditManager
 
 Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/auditmanager.html#AuditManager)
+[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
 [mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 

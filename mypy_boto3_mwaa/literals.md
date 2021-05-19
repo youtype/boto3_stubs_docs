@@ -3,7 +3,7 @@
 > [Index](..) > [MWAA](.) > Literals
 
 Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/mwaa.html#MWAA)
+[MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mwaa.html#MWAA)
 type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 

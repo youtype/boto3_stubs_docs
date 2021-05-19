@@ -3,7 +3,7 @@
 > [Index](..) > [AugmentedAIRuntime](.) > AugmentedAIRuntimeClient
 
 Auto-generated documentation for
-[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
@@ -34,7 +34,7 @@ def get_sagemaker-a2i-runtime_client() -> AugmentedAIRuntimeClient:
 ```
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
+[AugmentedAIRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime").can_paginate`
 method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate)
+[AugmentedAIRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate)
 
 Arguments:
 
@@ -80,7 +80,7 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime").delete_human_loop`
 method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
+[AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Type annotations for
 `boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
+[AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Type annotations for
 `boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url)
+[AugmentedAIRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime").list_human_loops`
 method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
+[AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
 
 Arguments:
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime").start_human_loop`
 method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
+[AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime").stop_human_loop`
 method.
 
 Boto3 documentation:
-[AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
+[AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > SFN
 
 Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/stepfunctions.html#SFN)
+[SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
 [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [AppIntegrationsService](.) > AppIntegrationsServiceClient
 
 Auto-generated documentation for
-[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService)
+[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
 [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
@@ -37,7 +37,7 @@ def get_appintegrations_client() -> AppIntegrationsServiceClient:
 ```
 
 Boto3 documentation:
-[AppIntegrationsService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client)
+[AppIntegrationsService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 Type annotations for `boto3.client("appintegrations").can_paginate` method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate)
+[AppIntegrationsService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate)
 
 Arguments:
 
@@ -83,7 +83,7 @@ Type annotations for `boto3.client("appintegrations").create_event_integration`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
+[AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Type annotations for `boto3.client("appintegrations").delete_event_integration`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
+[AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("appintegrations").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url)
+[AppIntegrationsService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("appintegrations").get_event_integration`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
+[AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Type annotations for
 `boto3.client("appintegrations").list_event_integration_associations` method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
+[AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("appintegrations").list_event_integrations`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
+[AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Type annotations for `boto3.client("appintegrations").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
+[AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns
 Type annotations for `boto3.client("appintegrations").tag_resource` method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
+[AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appintegrations").untag_resource` method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
+[AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
 
 Arguments:
 
@@ -226,7 +226,7 @@ Type annotations for `boto3.client("appintegrations").update_event_integration`
 method.
 
 Boto3 documentation:
-[AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
+[AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
 
 Arguments:
 

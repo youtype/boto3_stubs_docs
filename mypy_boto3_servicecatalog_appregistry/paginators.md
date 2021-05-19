@@ -3,7 +3,7 @@
 > [Index](..) > [AppRegistry](.) > Paginators
 
 Auto-generated documentation for
-[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicecatalog-appregistry.html#AppRegistry)
+[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
 [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
@@ -28,7 +28,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
 ```
 
 Boto3 documentation:
-[AppRegistry.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
+[AppRegistry.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
 
 Arguments for `ListApplicationsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_associated_attribute_groups_paginator() -> ListAssociatedAttributeG
 ```
 
 Boto3 documentation:
-[AppRegistry.Paginator.ListAssociatedAttributeGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
+[AppRegistry.Paginator.ListAssociatedAttributeGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
 
 Arguments for `ListAssociatedAttributeGroupsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_associated_resources_paginator() -> ListAssociatedResourcesPaginato
 ```
 
 Boto3 documentation:
-[AppRegistry.Paginator.ListAssociatedResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
+[AppRegistry.Paginator.ListAssociatedResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
 
 Arguments for `ListAssociatedResourcesPaginator.paginate` method:
 
@@ -105,7 +105,7 @@ def get_list_attribute_groups_paginator() -> ListAttributeGroupsPaginator:
 ```
 
 Boto3 documentation:
-[AppRegistry.Paginator.ListAttributeGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
+[AppRegistry.Paginator.ListAttributeGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
 
 Arguments for `ListAttributeGroupsPaginator.paginate` method:
 

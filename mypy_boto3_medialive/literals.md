@@ -3,7 +3,7 @@
 > [Index](..) > [MediaLive](.) > Literals
 
 Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/medialive.html#MediaLive)
+[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive)
 type annotations stubs module
 [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 

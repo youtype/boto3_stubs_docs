@@ -3,7 +3,7 @@
 > [Index](..) > ElasticBeanstalk
 
 Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [TimestreamQuery](.) > Literals
 
 Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/timestream-query.html#TimestreamQuery)
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 

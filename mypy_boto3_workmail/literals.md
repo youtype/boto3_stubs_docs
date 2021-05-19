@@ -3,7 +3,7 @@
 > [Index](..) > [WorkMail](.) > Literals
 
 Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/workmail.html#WorkMail)
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail)
 type annotations stubs module
 [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 

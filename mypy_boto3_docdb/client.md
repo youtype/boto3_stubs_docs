@@ -3,7 +3,7 @@
 > [Index](..) > [DocDB](.) > DocDBClient
 
 Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB)
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB)
 type annotations stubs module
 [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
@@ -78,7 +78,7 @@ def get_docdb_client() -> DocDBClient:
 ```
 
 Boto3 documentation:
-[DocDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client)
+[DocDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client)
 
 ## Exceptions
 
@@ -157,7 +157,7 @@ Type annotations for
 `boto3.client("docdb").add_source_identifier_to_subscription` method.
 
 Boto3 documentation:
-[DocDB.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription)
+[DocDB.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Returns
 Type annotations for `boto3.client("docdb").add_tags_to_resource` method.
 
 Boto3 documentation:
-[DocDB.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.add_tags_to_resource)
+[DocDB.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.add_tags_to_resource)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("docdb").apply_pending_maintenance_action`
 method.
 
 Boto3 documentation:
-[DocDB.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.apply_pending_maintenance_action)
+[DocDB.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.apply_pending_maintenance_action)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns
 Type annotations for `boto3.client("docdb").can_paginate` method.
 
 Boto3 documentation:
-[DocDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.can_paginate)
+[DocDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.can_paginate)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("docdb").copy_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[DocDB.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.copy_db_cluster_parameter_group)
+[DocDB.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.copy_db_cluster_parameter_group)
 
 Arguments:
 
@@ -232,7 +232,7 @@ Returns
 Type annotations for `boto3.client("docdb").copy_db_cluster_snapshot` method.
 
 Boto3 documentation:
-[DocDB.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.copy_db_cluster_snapshot)
+[DocDB.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.copy_db_cluster_snapshot)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Returns
 Type annotations for `boto3.client("docdb").create_db_cluster` method.
 
 Boto3 documentation:
-[DocDB.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.create_db_cluster)
+[DocDB.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.create_db_cluster)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("docdb").create_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[DocDB.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.create_db_cluster_parameter_group)
+[DocDB.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.create_db_cluster_parameter_group)
 
 Arguments:
 
@@ -303,7 +303,7 @@ Returns
 Type annotations for `boto3.client("docdb").create_db_cluster_snapshot` method.
 
 Boto3 documentation:
-[DocDB.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.create_db_cluster_snapshot)
+[DocDB.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.create_db_cluster_snapshot)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns
 Type annotations for `boto3.client("docdb").create_db_instance` method.
 
 Boto3 documentation:
-[DocDB.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.create_db_instance)
+[DocDB.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.create_db_instance)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Returns
 Type annotations for `boto3.client("docdb").create_db_subnet_group` method.
 
 Boto3 documentation:
-[DocDB.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.create_db_subnet_group)
+[DocDB.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.create_db_subnet_group)
 
 Arguments:
 
@@ -358,7 +358,7 @@ Returns
 Type annotations for `boto3.client("docdb").create_event_subscription` method.
 
 Boto3 documentation:
-[DocDB.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.create_event_subscription)
+[DocDB.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.create_event_subscription)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Returns
 Type annotations for `boto3.client("docdb").delete_db_cluster` method.
 
 Boto3 documentation:
-[DocDB.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.delete_db_cluster)
+[DocDB.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.delete_db_cluster)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("docdb").delete_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[DocDB.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group)
+[DocDB.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Arguments:
 Type annotations for `boto3.client("docdb").delete_db_cluster_snapshot` method.
 
 Boto3 documentation:
-[DocDB.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot)
+[DocDB.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot)
 
 Arguments:
 
@@ -420,7 +420,7 @@ Returns
 Type annotations for `boto3.client("docdb").delete_db_instance` method.
 
 Boto3 documentation:
-[DocDB.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.delete_db_instance)
+[DocDB.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.delete_db_instance)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Returns
 Type annotations for `boto3.client("docdb").delete_db_subnet_group` method.
 
 Boto3 documentation:
-[DocDB.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group)
+[DocDB.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group)
 
 Arguments:
 
@@ -445,7 +445,7 @@ Arguments:
 Type annotations for `boto3.client("docdb").delete_event_subscription` method.
 
 Boto3 documentation:
-[DocDB.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.delete_event_subscription)
+[DocDB.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.delete_event_subscription)
 
 Arguments:
 
@@ -459,7 +459,7 @@ Returns
 Type annotations for `boto3.client("docdb").describe_certificates` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_certificates)
+[DocDB.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_certificates)
 
 Arguments:
 
@@ -476,7 +476,7 @@ Type annotations for
 `boto3.client("docdb").describe_db_cluster_parameter_groups` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameter_groups)
+[DocDB.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameter_groups)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("docdb").describe_db_cluster_parameters`
 method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameters)
+[DocDB.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameters)
 
 Arguments:
 
@@ -513,7 +513,7 @@ Type annotations for
 `boto3.client("docdb").describe_db_cluster_snapshot_attributes` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes)
+[DocDB.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes)
 
 Arguments:
 
@@ -528,7 +528,7 @@ Type annotations for `boto3.client("docdb").describe_db_cluster_snapshots`
 method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshots)
+[DocDB.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshots)
 
 Arguments:
 
@@ -549,7 +549,7 @@ Returns
 Type annotations for `boto3.client("docdb").describe_db_clusters` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_clusters)
+[DocDB.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_clusters)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("docdb").describe_db_engine_versions`
 method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_engine_versions)
+[DocDB.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_engine_versions)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Returns
 Type annotations for `boto3.client("docdb").describe_db_instances` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_instances)
+[DocDB.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_instances)
 
 Arguments:
 
@@ -604,7 +604,7 @@ Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
 Type annotations for `boto3.client("docdb").describe_db_subnet_groups` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_db_subnet_groups)
+[DocDB.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_db_subnet_groups)
 
 Arguments:
 
@@ -622,7 +622,7 @@ Type annotations for
 `boto3.client("docdb").describe_engine_default_cluster_parameters` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_engine_default_cluster_parameters)
+[DocDB.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_engine_default_cluster_parameters)
 
 Arguments:
 
@@ -639,7 +639,7 @@ Returns
 Type annotations for `boto3.client("docdb").describe_event_categories` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_event_categories)
+[DocDB.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_event_categories)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Type annotations for `boto3.client("docdb").describe_event_subscriptions`
 method.
 
 Boto3 documentation:
-[DocDB.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_event_subscriptions)
+[DocDB.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_event_subscriptions)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Returns
 Type annotations for `boto3.client("docdb").describe_events` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_events)
+[DocDB.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_events)
 
 Arguments:
 
@@ -694,7 +694,7 @@ Type annotations for
 `boto3.client("docdb").describe_orderable_db_instance_options` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_orderable_db_instance_options)
+[DocDB.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_orderable_db_instance_options)
 
 Arguments:
 
@@ -716,7 +716,7 @@ Type annotations for
 `boto3.client("docdb").describe_pending_maintenance_actions` method.
 
 Boto3 documentation:
-[DocDB.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.describe_pending_maintenance_actions)
+[DocDB.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.describe_pending_maintenance_actions)
 
 Arguments:
 
@@ -733,7 +733,7 @@ Returns
 Type annotations for `boto3.client("docdb").failover_db_cluster` method.
 
 Boto3 documentation:
-[DocDB.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.failover_db_cluster)
+[DocDB.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.failover_db_cluster)
 
 Arguments:
 
@@ -748,7 +748,7 @@ Returns
 Type annotations for `boto3.client("docdb").generate_presigned_url` method.
 
 Boto3 documentation:
-[DocDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.generate_presigned_url)
+[DocDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.generate_presigned_url)
 
 Arguments:
 
@@ -764,7 +764,7 @@ Returns `str`.
 Type annotations for `boto3.client("docdb").list_tags_for_resource` method.
 
 Boto3 documentation:
-[DocDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.list_tags_for_resource)
+[DocDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -778,7 +778,7 @@ Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 Type annotations for `boto3.client("docdb").modify_db_cluster` method.
 
 Boto3 documentation:
-[DocDB.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.modify_db_cluster)
+[DocDB.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.modify_db_cluster)
 
 Arguments:
 
@@ -806,7 +806,7 @@ Type annotations for `boto3.client("docdb").modify_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[DocDB.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group)
+[DocDB.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group)
 
 Arguments:
 
@@ -823,7 +823,7 @@ Type annotations for
 `boto3.client("docdb").modify_db_cluster_snapshot_attribute` method.
 
 Boto3 documentation:
-[DocDB.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.modify_db_cluster_snapshot_attribute)
+[DocDB.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.modify_db_cluster_snapshot_attribute)
 
 Arguments:
 
@@ -840,7 +840,7 @@ Returns
 Type annotations for `boto3.client("docdb").modify_db_instance` method.
 
 Boto3 documentation:
-[DocDB.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.modify_db_instance)
+[DocDB.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.modify_db_instance)
 
 Arguments:
 
@@ -861,7 +861,7 @@ Returns
 Type annotations for `boto3.client("docdb").modify_db_subnet_group` method.
 
 Boto3 documentation:
-[DocDB.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.modify_db_subnet_group)
+[DocDB.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.modify_db_subnet_group)
 
 Arguments:
 
@@ -877,7 +877,7 @@ Returns
 Type annotations for `boto3.client("docdb").modify_event_subscription` method.
 
 Boto3 documentation:
-[DocDB.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.modify_event_subscription)
+[DocDB.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.modify_event_subscription)
 
 Arguments:
 
@@ -895,7 +895,7 @@ Returns
 Type annotations for `boto3.client("docdb").reboot_db_instance` method.
 
 Boto3 documentation:
-[DocDB.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.reboot_db_instance)
+[DocDB.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.reboot_db_instance)
 
 Arguments:
 
@@ -911,7 +911,7 @@ Type annotations for
 `boto3.client("docdb").remove_source_identifier_from_subscription` method.
 
 Boto3 documentation:
-[DocDB.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription)
+[DocDB.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription)
 
 Arguments:
 
@@ -926,7 +926,7 @@ Returns
 Type annotations for `boto3.client("docdb").remove_tags_from_resource` method.
 
 Boto3 documentation:
-[DocDB.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource)
+[DocDB.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource)
 
 Arguments:
 
@@ -939,7 +939,7 @@ Type annotations for `boto3.client("docdb").reset_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
-[DocDB.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.reset_db_cluster_parameter_group)
+[DocDB.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.reset_db_cluster_parameter_group)
 
 Arguments:
 
@@ -956,7 +956,7 @@ Type annotations for `boto3.client("docdb").restore_db_cluster_from_snapshot`
 method.
 
 Boto3 documentation:
-[DocDB.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.restore_db_cluster_from_snapshot)
+[DocDB.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.restore_db_cluster_from_snapshot)
 
 Arguments:
 
@@ -982,7 +982,7 @@ Type annotations for
 `boto3.client("docdb").restore_db_cluster_to_point_in_time` method.
 
 Boto3 documentation:
-[DocDB.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.restore_db_cluster_to_point_in_time)
+[DocDB.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.restore_db_cluster_to_point_in_time)
 
 Arguments:
 
@@ -1006,7 +1006,7 @@ Returns
 Type annotations for `boto3.client("docdb").start_db_cluster` method.
 
 Boto3 documentation:
-[DocDB.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.start_db_cluster)
+[DocDB.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.start_db_cluster)
 
 Arguments:
 
@@ -1020,7 +1020,7 @@ Returns
 Type annotations for `boto3.client("docdb").stop_db_cluster` method.
 
 Boto3 documentation:
-[DocDB.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/docdb.html#DocDB.Client.stop_db_cluster)
+[DocDB.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Client.stop_db_cluster)
 
 Arguments:
 

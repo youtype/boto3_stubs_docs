@@ -3,7 +3,7 @@
 > [Index](..) > [SecretsManager](.) > Literals
 
 Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/secretsmanager.html#SecretsManager)
+[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
 [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Signer](.) > SignerClient
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer)
+[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
@@ -47,7 +47,7 @@ def get_signer_client() -> SignerClient:
 ```
 
 Boto3 documentation:
-[Signer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client)
+[Signer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client)
 
 ## Exceptions
 
@@ -82,7 +82,7 @@ Exceptions:
 Type annotations for `boto3.client("signer").add_profile_permission` method.
 
 Boto3 documentation:
-[Signer.Client.add_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.add_profile_permission)
+[Signer.Client.add_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.add_profile_permission)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Returns
 Type annotations for `boto3.client("signer").can_paginate` method.
 
 Boto3 documentation:
-[Signer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.can_paginate)
+[Signer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.can_paginate)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns `bool`.
 Type annotations for `boto3.client("signer").cancel_signing_profile` method.
 
 Boto3 documentation:
-[Signer.Client.cancel_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.cancel_signing_profile)
+[Signer.Client.cancel_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.cancel_signing_profile)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Arguments:
 Type annotations for `boto3.client("signer").describe_signing_job` method.
 
 Boto3 documentation:
-[Signer.Client.describe_signing_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.describe_signing_job)
+[Signer.Client.describe_signing_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.describe_signing_job)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns
 Type annotations for `boto3.client("signer").generate_presigned_url` method.
 
 Boto3 documentation:
-[Signer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.generate_presigned_url)
+[Signer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.generate_presigned_url)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Returns `str`.
 Type annotations for `boto3.client("signer").get_signing_platform` method.
 
 Boto3 documentation:
-[Signer.Client.get_signing_platform](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.get_signing_platform)
+[Signer.Client.get_signing_platform](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.get_signing_platform)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns
 Type annotations for `boto3.client("signer").get_signing_profile` method.
 
 Boto3 documentation:
-[Signer.Client.get_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.get_signing_profile)
+[Signer.Client.get_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.get_signing_profile)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("signer").list_profile_permissions` method.
 
 Boto3 documentation:
-[Signer.Client.list_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.list_profile_permissions)
+[Signer.Client.list_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.list_profile_permissions)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("signer").list_signing_jobs` method.
 
 Boto3 documentation:
-[Signer.Client.list_signing_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.list_signing_jobs)
+[Signer.Client.list_signing_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.list_signing_jobs)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns
 Type annotations for `boto3.client("signer").list_signing_platforms` method.
 
 Boto3 documentation:
-[Signer.Client.list_signing_platforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.list_signing_platforms)
+[Signer.Client.list_signing_platforms](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.list_signing_platforms)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Returns
 Type annotations for `boto3.client("signer").list_signing_profiles` method.
 
 Boto3 documentation:
-[Signer.Client.list_signing_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.list_signing_profiles)
+[Signer.Client.list_signing_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.list_signing_profiles)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns
 Type annotations for `boto3.client("signer").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Signer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.list_tags_for_resource)
+[Signer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns
 Type annotations for `boto3.client("signer").put_signing_profile` method.
 
 Boto3 documentation:
-[Signer.Client.put_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.put_signing_profile)
+[Signer.Client.put_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.put_signing_profile)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("signer").remove_profile_permission` method.
 
 Boto3 documentation:
-[Signer.Client.remove_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.remove_profile_permission)
+[Signer.Client.remove_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.remove_profile_permission)
 
 Arguments:
 
@@ -311,7 +311,7 @@ Returns
 Type annotations for `boto3.client("signer").revoke_signature` method.
 
 Boto3 documentation:
-[Signer.Client.revoke_signature](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.revoke_signature)
+[Signer.Client.revoke_signature](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.revoke_signature)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Arguments:
 Type annotations for `boto3.client("signer").revoke_signing_profile` method.
 
 Boto3 documentation:
-[Signer.Client.revoke_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.revoke_signing_profile)
+[Signer.Client.revoke_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.revoke_signing_profile)
 
 Arguments:
 
@@ -338,7 +338,7 @@ Arguments:
 Type annotations for `boto3.client("signer").start_signing_job` method.
 
 Boto3 documentation:
-[Signer.Client.start_signing_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.start_signing_job)
+[Signer.Client.start_signing_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.start_signing_job)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Returns
 Type annotations for `boto3.client("signer").tag_resource` method.
 
 Boto3 documentation:
-[Signer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.tag_resource)
+[Signer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.tag_resource)
 
 Arguments:
 
@@ -371,7 +371,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("signer").untag_resource` method.
 
 Boto3 documentation:
-[Signer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/signer.html#Signer.Client.untag_resource)
+[Signer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer.Client.untag_resource)
 
 Arguments:
 

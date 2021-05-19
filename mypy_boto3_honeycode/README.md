@@ -3,7 +3,7 @@
 > [Index](..) > Honeycode
 
 Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/honeycode.html#Honeycode)
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
 [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 

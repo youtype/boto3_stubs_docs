@@ -3,7 +3,7 @@
 > [Index](..) > [Organizations](.) > Paginators
 
 Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations)
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations)
 type annotations stubs module
 [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
@@ -40,7 +40,7 @@ def get_list_aws_service_access_for_organization_paginator() -> ListAWSServiceAc
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListAWSServiceAccessForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
+[Organizations.Paginator.ListAWSServiceAccessForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
 
 Arguments for `ListAWSServiceAccessForOrganizationPaginator.paginate` method:
 
@@ -65,7 +65,7 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
+[Organizations.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
 
 Arguments for `ListAccountsPaginator.paginate` method:
 
@@ -90,7 +90,7 @@ def get_list_accounts_for_parent_paginator() -> ListAccountsForParentPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListAccountsForParent](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
+[Organizations.Paginator.ListAccountsForParent](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
 
 Arguments for `ListAccountsForParentPaginator.paginate` method:
 
@@ -116,7 +116,7 @@ def get_list_children_paginator() -> ListChildrenPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListChildren](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListChildren)
+[Organizations.Paginator.ListChildren](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListChildren)
 
 Arguments for `ListChildrenPaginator.paginate` method:
 
@@ -143,7 +143,7 @@ def get_list_create_account_status_paginator() -> ListCreateAccountStatusPaginat
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListCreateAccountStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
+[Organizations.Paginator.ListCreateAccountStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
 
 Arguments for `ListCreateAccountStatusPaginator.paginate` method:
 
@@ -170,7 +170,7 @@ def get_list_delegated_administrators_paginator() -> ListDelegatedAdministrators
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListDelegatedAdministrators](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
+[Organizations.Paginator.ListDelegatedAdministrators](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
 
 Arguments for `ListDelegatedAdministratorsPaginator.paginate` method:
 
@@ -196,7 +196,7 @@ def get_list_delegated_services_for_account_paginator() -> ListDelegatedServices
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListDelegatedServicesForAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
+[Organizations.Paginator.ListDelegatedServicesForAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
 
 Arguments for `ListDelegatedServicesForAccountPaginator.paginate` method:
 
@@ -222,7 +222,7 @@ def get_list_handshakes_for_account_paginator() -> ListHandshakesForAccountPagin
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListHandshakesForAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
+[Organizations.Paginator.ListHandshakesForAccount](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
 
 Arguments for `ListHandshakesForAccountPaginator.paginate` method:
 
@@ -248,7 +248,7 @@ def get_list_handshakes_for_organization_paginator() -> ListHandshakesForOrganiz
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListHandshakesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
+[Organizations.Paginator.ListHandshakesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
 
 Arguments for `ListHandshakesForOrganizationPaginator.paginate` method:
 
@@ -274,7 +274,7 @@ def get_list_organizational_units_for_parent_paginator() -> ListOrganizationalUn
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListOrganizationalUnitsForParent](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
+[Organizations.Paginator.ListOrganizationalUnitsForParent](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
 
 Arguments for `ListOrganizationalUnitsForParentPaginator.paginate` method:
 
@@ -300,7 +300,7 @@ def get_list_parents_paginator() -> ListParentsPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListParents](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListParents)
+[Organizations.Paginator.ListParents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListParents)
 
 Arguments for `ListParentsPaginator.paginate` method:
 
@@ -326,7 +326,7 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
+[Organizations.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
 
 Arguments for `ListPoliciesPaginator.paginate` method:
 
@@ -352,7 +352,7 @@ def get_list_policies_for_target_paginator() -> ListPoliciesForTargetPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListPoliciesForTarget](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
+[Organizations.Paginator.ListPoliciesForTarget](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
 
 Arguments for `ListPoliciesForTargetPaginator.paginate` method:
 
@@ -379,7 +379,7 @@ def get_list_roots_paginator() -> ListRootsPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListRoots](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListRoots)
+[Organizations.Paginator.ListRoots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListRoots)
 
 Arguments for `ListRootsPaginator.paginate` method:
 
@@ -404,7 +404,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
+[Organizations.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 
@@ -430,7 +430,7 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
 ```
 
 Boto3 documentation:
-[Organizations.Paginator.ListTargetsForPolicy](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
+[Organizations.Paginator.ListTargetsForPolicy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
 
 Arguments for `ListTargetsForPolicyPaginator.paginate` method:
 

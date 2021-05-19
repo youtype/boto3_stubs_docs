@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticBeanstalk](.) > Waiters
 
 Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
 [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
@@ -27,7 +27,7 @@ def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_exists)
+[ElasticBeanstalk.Waiter.environment_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_exists)
 
 Arguments for `EnvironmentExistsWaiter.wait` method:
 
@@ -56,7 +56,7 @@ def get_environment_terminated_waiter() -> EnvironmentTerminatedWaiter:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_terminated](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_terminated)
+[ElasticBeanstalk.Waiter.environment_terminated](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_terminated)
 
 Arguments for `EnvironmentTerminatedWaiter.wait` method:
 
@@ -85,7 +85,7 @@ def get_environment_updated_waiter() -> EnvironmentUpdatedWaiter:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_updated](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_updated)
+[ElasticBeanstalk.Waiter.environment_updated](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_updated)
 
 Arguments for `EnvironmentUpdatedWaiter.wait` method:
 

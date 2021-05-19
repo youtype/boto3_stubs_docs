@@ -3,7 +3,7 @@
 > [Index](..) > [Rekognition](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
@@ -1250,6 +1250,7 @@ Optional fields:
   [EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)
 - `ManifestSummary`:
   [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
+- `KmsKeyId`: `str`
 
 ## ProtectiveEquipmentBodyPartTypeDef
 

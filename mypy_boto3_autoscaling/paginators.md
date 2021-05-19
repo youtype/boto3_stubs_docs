@@ -3,7 +3,7 @@
 > [Index](..) > [AutoScaling](.) > Paginators
 
 Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling)
+[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
@@ -34,7 +34,7 @@ def get_describe_auto_scaling_groups_paginator() -> DescribeAutoScalingGroupsPag
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeAutoScalingGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingGroups)
+[AutoScaling.Paginator.DescribeAutoScalingGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingGroups)
 
 Arguments for `DescribeAutoScalingGroupsPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_describe_auto_scaling_instances_paginator() -> DescribeAutoScalingInstan
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeAutoScalingInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingInstances)
+[AutoScaling.Paginator.DescribeAutoScalingInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingInstances)
 
 Arguments for `DescribeAutoScalingInstancesPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_describe_launch_configurations_paginator() -> DescribeLaunchConfiguratio
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeLaunchConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLaunchConfigurations)
+[AutoScaling.Paginator.DescribeLaunchConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLaunchConfigurations)
 
 Arguments for `DescribeLaunchConfigurationsPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_describe_load_balancer_target_groups_paginator() -> DescribeLoadBalancer
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeLoadBalancerTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancerTargetGroups)
+[AutoScaling.Paginator.DescribeLoadBalancerTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancerTargetGroups)
 
 Arguments for `DescribeLoadBalancerTargetGroupsPaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancers)
+[AutoScaling.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancers)
 
 Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
@@ -164,7 +164,7 @@ def get_describe_notification_configurations_paginator() -> DescribeNotification
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeNotificationConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeNotificationConfigurations)
+[AutoScaling.Paginator.DescribeNotificationConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeNotificationConfigurations)
 
 Arguments for `DescribeNotificationConfigurationsPaginator.paginate` method:
 
@@ -190,7 +190,7 @@ def get_describe_policies_paginator() -> DescribePoliciesPaginator:
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribePolicies)
+[AutoScaling.Paginator.DescribePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribePolicies)
 
 Arguments for `DescribePoliciesPaginator.paginate` method:
 
@@ -218,7 +218,7 @@ def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPagi
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeScalingActivities](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScalingActivities)
+[AutoScaling.Paginator.DescribeScalingActivities](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScalingActivities)
 
 Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 
@@ -246,7 +246,7 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScheduledActions)
+[AutoScaling.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScheduledActions)
 
 Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
@@ -275,7 +275,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
 ```
 
 Boto3 documentation:
-[AutoScaling.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeTags)
+[AutoScaling.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeTags)
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 

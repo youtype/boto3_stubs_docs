@@ -3,7 +3,7 @@
 > [Index](..) > [Schemas](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/schemas.html#Schemas)
+[Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/schemas.html#Schemas)
 type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 

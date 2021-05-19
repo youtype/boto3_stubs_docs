@@ -3,7 +3,7 @@
 > [Index](..) > [LicenseManager](.) > Literals
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.75/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
