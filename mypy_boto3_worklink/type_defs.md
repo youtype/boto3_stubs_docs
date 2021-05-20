@@ -3,7 +3,7 @@
 > [Index](..) > [WorkLink](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/worklink.html#WorkLink)
+[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/worklink.html#WorkLink)
 type annotations stubs module
 [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 

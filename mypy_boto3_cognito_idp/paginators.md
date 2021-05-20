@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentityProvider](.) > Paginators
 
 Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider)
+[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module
 [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
@@ -33,7 +33,7 @@ def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginato
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.AdminListGroupsForUser](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
+[CognitoIdentityProvider.Paginator.AdminListGroupsForUser](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
 
 Arguments for `AdminListGroupsForUserPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_admin_list_user_auth_events_paginator() -> AdminListUserAuthEventsPagina
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.AdminListUserAuthEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
+[CognitoIdentityProvider.Paginator.AdminListUserAuthEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
 
 Arguments for `AdminListUserAuthEventsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
+[CognitoIdentityProvider.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
@@ -113,7 +113,7 @@ def get_list_identity_providers_paginator() -> ListIdentityProvidersPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListIdentityProviders](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
+[CognitoIdentityProvider.Paginator.ListIdentityProviders](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
 
 Arguments for `ListIdentityProvidersPaginator.paginate` method:
 
@@ -139,7 +139,7 @@ def get_list_resource_servers_paginator() -> ListResourceServersPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListResourceServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
+[CognitoIdentityProvider.Paginator.ListResourceServers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
 
 Arguments for `ListResourceServersPaginator.paginate` method:
 
@@ -165,7 +165,7 @@ def get_list_user_pool_clients_paginator() -> ListUserPoolClientsPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUserPoolClients](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
+[CognitoIdentityProvider.Paginator.ListUserPoolClients](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
 
 Arguments for `ListUserPoolClientsPaginator.paginate` method:
 
@@ -191,7 +191,7 @@ def get_list_user_pools_paginator() -> ListUserPoolsPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUserPools](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
+[CognitoIdentityProvider.Paginator.ListUserPools](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
 
 Arguments for `ListUserPoolsPaginator.paginate` method:
 
@@ -215,7 +215,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
+[CognitoIdentityProvider.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
 
 Arguments for `ListUsersPaginator.paginate` method:
 
@@ -243,7 +243,7 @@ def get_list_users_in_group_paginator() -> ListUsersInGroupPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUsersInGroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
+[CognitoIdentityProvider.Paginator.ListUsersInGroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
 
 Arguments for `ListUsersInGroupPaginator.paginate` method:
 

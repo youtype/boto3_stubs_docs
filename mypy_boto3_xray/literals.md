@@ -3,7 +3,7 @@
 > [Index](..) > [XRay](.) > Literals
 
 Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay)
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay)
 type annotations stubs module
 [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 

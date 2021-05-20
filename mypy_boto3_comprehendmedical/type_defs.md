@@ -3,7 +3,7 @@
 > [Index](..) > [ComprehendMedical](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/comprehendmedical.html#ComprehendMedical)
+[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
 [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutforVision](.) > Paginators
 
 Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutvision.html#LookoutforVision)
+[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
 [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
@@ -27,7 +27,7 @@ def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
 ```
 
 Boto3 documentation:
-[LookoutforVision.Paginator.ListDatasetEntries](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
+[LookoutforVision.Paginator.ListDatasetEntries](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
 
 Arguments for `ListDatasetEntriesPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_list_models_paginator() -> ListModelsPaginator:
 ```
 
 Boto3 documentation:
-[LookoutforVision.Paginator.ListModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
+[LookoutforVision.Paginator.ListModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
 
 Arguments for `ListModelsPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
 ```
 
 Boto3 documentation:
-[LookoutforVision.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
+[LookoutforVision.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
 
 Arguments for `ListProjectsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > QuickSight
 
 Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/quicksight.html#QuickSight)
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
 [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
@@ -235,6 +235,7 @@ from mypy_boto3_quicksight.literals import AnalysisErrorTypeType, ...
 - [NamespaceErrorTypeType](./literals.md#namespaceerrortypetype)
 - [NamespaceStatusType](./literals.md#namespacestatustype)
 - [ResourceStatusType](./literals.md#resourcestatustype)
+- [RowLevelPermissionFormatVersionType](./literals.md#rowlevelpermissionformatversiontype)
 - [RowLevelPermissionPolicyType](./literals.md#rowlevelpermissionpolicytype)
 - [SearchAnalysesPaginatorName](./literals.md#searchanalysespaginatorname)
 - [SearchDashboardsPaginatorName](./literals.md#searchdashboardspaginatorname)

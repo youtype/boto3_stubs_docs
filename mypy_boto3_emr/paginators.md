@@ -3,7 +3,7 @@
 > [Index](..) > [EMR](.) > Paginators
 
 Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR)
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR)
 type annotations stubs module
 [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
@@ -34,7 +34,7 @@ def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListBootstrapActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
+[EMR.Paginator.ListBootstrapActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
 
 Arguments for `ListBootstrapActionsPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListClusters)
+[EMR.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListClusters)
 
 Arguments for `ListClustersPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_instance_fleets_paginator() -> ListInstanceFleetsPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListInstanceFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
+[EMR.Paginator.ListInstanceFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
 
 Arguments for `ListInstanceFleetsPaginator.paginate` method:
 
@@ -113,7 +113,7 @@ def get_list_instance_groups_paginator() -> ListInstanceGroupsPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListInstanceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
+[EMR.Paginator.ListInstanceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
 
 Arguments for `ListInstanceGroupsPaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListInstances)
+[EMR.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListInstances)
 
 Arguments for `ListInstancesPaginator.paginate` method:
 
@@ -172,7 +172,7 @@ def get_list_notebook_executions_paginator() -> ListNotebookExecutionsPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListNotebookExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
+[EMR.Paginator.ListNotebookExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
 
 Arguments for `ListNotebookExecutionsPaginator.paginate` method:
 
@@ -202,7 +202,7 @@ def get_list_security_configurations_paginator() -> ListSecurityConfigurationsPa
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListSecurityConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
+[EMR.Paginator.ListSecurityConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
 
 Arguments for `ListSecurityConfigurationsPaginator.paginate` method:
 
@@ -226,7 +226,7 @@ def get_list_steps_paginator() -> ListStepsPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListSteps](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListSteps)
+[EMR.Paginator.ListSteps](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListSteps)
 
 Arguments for `ListStepsPaginator.paginate` method:
 
@@ -254,7 +254,7 @@ def get_list_studio_session_mappings_paginator() -> ListStudioSessionMappingsPag
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListStudioSessionMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
+[EMR.Paginator.ListStudioSessionMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
 
 Arguments for `ListStudioSessionMappingsPaginator.paginate` method:
 
@@ -280,7 +280,7 @@ def get_list_studios_paginator() -> ListStudiosPaginator:
 ```
 
 Boto3 documentation:
-[EMR.Paginator.ListStudios](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR.Paginator.ListStudios)
+[EMR.Paginator.ListStudios](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR.Paginator.ListStudios)
 
 Arguments for `ListStudiosPaginator.paginate` method:
 

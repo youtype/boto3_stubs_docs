@@ -3,7 +3,7 @@
 > [Index](..) > LexRuntimeV2
 
 Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2)
+[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
 [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 

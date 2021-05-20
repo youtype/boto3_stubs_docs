@@ -3,7 +3,7 @@
 > [Index](..) > [Textract](.) > TextractClient
 
 Auto-generated documentation for
-[Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract)
+[Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract)
 type annotations stubs module
 [mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
 
@@ -34,7 +34,7 @@ def get_textract_client() -> TextractClient:
 ```
 
 Boto3 documentation:
-[Textract.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client)
+[Textract.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client)
 
 ## Exceptions
 
@@ -73,7 +73,7 @@ Exceptions:
 Type annotations for `boto3.client("textract").analyze_document` method.
 
 Boto3 documentation:
-[Textract.Client.analyze_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.analyze_document)
+[Textract.Client.analyze_document](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.analyze_document)
 
 Arguments:
 
@@ -91,7 +91,7 @@ Returns
 Type annotations for `boto3.client("textract").can_paginate` method.
 
 Boto3 documentation:
-[Textract.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.can_paginate)
+[Textract.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.can_paginate)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Returns `bool`.
 Type annotations for `boto3.client("textract").detect_document_text` method.
 
 Boto3 documentation:
-[Textract.Client.detect_document_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.detect_document_text)
+[Textract.Client.detect_document_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.detect_document_text)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Returns
 Type annotations for `boto3.client("textract").generate_presigned_url` method.
 
 Boto3 documentation:
-[Textract.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.generate_presigned_url)
+[Textract.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.generate_presigned_url)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns `str`.
 Type annotations for `boto3.client("textract").get_document_analysis` method.
 
 Boto3 documentation:
-[Textract.Client.get_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.get_document_analysis)
+[Textract.Client.get_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.get_document_analysis)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("textract").get_document_text_detection`
 method.
 
 Boto3 documentation:
-[Textract.Client.get_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.get_document_text_detection)
+[Textract.Client.get_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.get_document_text_detection)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns
 Type annotations for `boto3.client("textract").start_document_analysis` method.
 
 Boto3 documentation:
-[Textract.Client.start_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.start_document_analysis)
+[Textract.Client.start_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.start_document_analysis)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Type annotations for `boto3.client("textract").start_document_text_detection`
 method.
 
 Boto3 documentation:
-[Textract.Client.start_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract.Client.start_document_text_detection)
+[Textract.Client.start_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract.Client.start_document_text_detection)
 
 Arguments:
 

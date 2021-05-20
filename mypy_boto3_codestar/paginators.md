@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStar](.) > Paginators
 
 Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar.html#CodeStar)
+[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar.html#CodeStar)
 type annotations stubs module
 [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
@@ -27,7 +27,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
 ```
 
 Boto3 documentation:
-[CodeStar.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
+[CodeStar.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
 
 Arguments for `ListProjectsPaginator.paginate` method:
 
@@ -52,7 +52,7 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
 ```
 
 Boto3 documentation:
-[CodeStar.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar.html#CodeStar.Paginator.ListResources)
+[CodeStar.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar.html#CodeStar.Paginator.ListResources)
 
 Arguments for `ListResourcesPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_list_team_members_paginator() -> ListTeamMembersPaginator:
 ```
 
 Boto3 documentation:
-[CodeStar.Paginator.ListTeamMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
+[CodeStar.Paginator.ListTeamMembers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
 
 Arguments for `ListTeamMembersPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
 ```
 
 Boto3 documentation:
-[CodeStar.Paginator.ListUserProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
+[CodeStar.Paginator.ListUserProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
 
 Arguments for `ListUserProfilesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > LexModelsV2
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -39,6 +39,8 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [create_bot_version](./client.md#create_bot_version)
 - [create_export](./client.md#create_export)
 - [create_intent](./client.md#create_intent)
+- [create_resource_policy](./client.md#create_resource_policy)
+- [create_resource_policy_statement](./client.md#create_resource_policy_statement)
 - [create_slot](./client.md#create_slot)
 - [create_slot_type](./client.md#create_slot_type)
 - [create_upload_url](./client.md#create_upload_url)
@@ -49,6 +51,8 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [delete_export](./client.md#delete_export)
 - [delete_import](./client.md#delete_import)
 - [delete_intent](./client.md#delete_intent)
+- [delete_resource_policy](./client.md#delete_resource_policy)
+- [delete_resource_policy_statement](./client.md#delete_resource_policy_statement)
 - [delete_slot](./client.md#delete_slot)
 - [delete_slot_type](./client.md#delete_slot_type)
 - [describe_bot](./client.md#describe_bot)
@@ -58,6 +62,7 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [describe_export](./client.md#describe_export)
 - [describe_import](./client.md#describe_import)
 - [describe_intent](./client.md#describe_intent)
+- [describe_resource_policy](./client.md#describe_resource_policy)
 - [describe_slot](./client.md#describe_slot)
 - [describe_slot_type](./client.md#describe_slot_type)
 - [generate_presigned_url](./client.md#generate_presigned_url)
@@ -81,6 +86,7 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [update_bot_locale](./client.md#update_bot_locale)
 - [update_export](./client.md#update_export)
 - [update_intent](./client.md#update_intent)
+- [update_resource_policy](./client.md#update_resource_policy)
 - [update_slot](./client.md#update_slot)
 - [update_slot_type](./client.md#update_slot_type)
 
@@ -119,6 +125,7 @@ from mypy_boto3_lexv2_models.literals import BotAliasStatusType, ...
 - [BotVersionSortAttributeType](./literals.md#botversionsortattributetype)
 - [BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype)
 - [BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype)
+- [EffectType](./literals.md#effecttype)
 - [ExportFilterNameType](./literals.md#exportfilternametype)
 - [ExportFilterOperatorType](./literals.md#exportfilteroperatortype)
 - [ExportSortAttributeType](./literals.md#exportsortattributetype)
@@ -188,6 +195,8 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef)
 - [CreateExportResponseTypeDef](./type_defs.md#createexportresponsetypedef)
 - [CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef)
+- [CreateResourcePolicyResponseTypeDef](./type_defs.md#createresourcepolicyresponsetypedef)
+- [CreateResourcePolicyStatementResponseTypeDef](./type_defs.md#createresourcepolicystatementresponsetypedef)
 - [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef)
 - [CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef)
 - [CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef)
@@ -199,6 +208,8 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef)
 - [DeleteExportResponseTypeDef](./type_defs.md#deleteexportresponsetypedef)
 - [DeleteImportResponseTypeDef](./type_defs.md#deleteimportresponsetypedef)
+- [DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef)
+- [DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef)
 - [DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef)
 - [DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef)
 - [DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef)
@@ -206,6 +217,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef)
 - [DescribeImportResponseTypeDef](./type_defs.md#describeimportresponsetypedef)
 - [DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef)
+- [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef)
 - [DescribeSlotResponseTypeDef](./type_defs.md#describeslotresponsetypedef)
 - [DescribeSlotTypeResponseTypeDef](./type_defs.md#describeslottyperesponsetypedef)
 - [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
@@ -244,6 +256,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 - [OutputContextTypeDef](./type_defs.md#outputcontexttypedef)
 - [PlainTextMessageTypeDef](./type_defs.md#plaintextmessagetypedef)
+- [PrincipalTypeDef](./type_defs.md#principaltypedef)
 - [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
 - [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
 - [S3BucketLogDestinationTypeDef](./type_defs.md#s3bucketlogdestinationtypedef)
@@ -273,6 +286,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef)
 - [UpdateExportResponseTypeDef](./type_defs.md#updateexportresponsetypedef)
 - [UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef)
+- [UpdateResourcePolicyResponseTypeDef](./type_defs.md#updateresourcepolicyresponsetypedef)
 - [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef)
 - [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef)
 - [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)

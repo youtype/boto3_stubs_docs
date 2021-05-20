@@ -3,7 +3,7 @@
 > [Index](..) > WAF
 
 Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/waf.html#WAF)
+[WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/waf.html#WAF)
 type annotations stubs module
 [mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [OpsWorks](.) > Paginators
 
 Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/opsworks.html#OpsWorks)
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
 [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
@@ -25,7 +25,7 @@ def get_describe_ecs_clusters_paginator() -> DescribeEcsClustersPaginator:
 ```
 
 Boto3 documentation:
-[OpsWorks.Paginator.DescribeEcsClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/opsworks.html#OpsWorks.Paginator.DescribeEcsClusters)
+[OpsWorks.Paginator.DescribeEcsClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Paginator.DescribeEcsClusters)
 
 Arguments for `DescribeEcsClustersPaginator.paginate` method:
 

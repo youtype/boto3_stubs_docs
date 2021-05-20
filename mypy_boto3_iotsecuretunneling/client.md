@@ -3,7 +3,7 @@
 > [Index](..) > [IoTSecureTunneling](.) > IoTSecureTunnelingClient
 
 Auto-generated documentation for
-[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
 [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
@@ -35,7 +35,7 @@ def get_iotsecuretunneling_client() -> IoTSecureTunnelingClient:
 ```
 
 Boto3 documentation:
-[IoTSecureTunneling.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
+[IoTSecureTunneling.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("iotsecuretunneling").can_paginate` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.can_paginate)
+[IoTSecureTunneling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Returns `bool`.
 Type annotations for `boto3.client("iotsecuretunneling").close_tunnel` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.close_tunnel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel)
+[IoTSecureTunneling.Client.close_tunnel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Type annotations for `boto3.client("iotsecuretunneling").describe_tunnel`
 method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.describe_tunnel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel)
+[IoTSecureTunneling.Client.describe_tunnel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Type annotations for
 `boto3.client("iotsecuretunneling").generate_presigned_url` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.generate_presigned_url)
+[IoTSecureTunneling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.generate_presigned_url)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for
 `boto3.client("iotsecuretunneling").list_tags_for_resource` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource)
+[IoTSecureTunneling.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns
 Type annotations for `boto3.client("iotsecuretunneling").list_tunnels` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.list_tunnels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
+[IoTSecureTunneling.Client.list_tunnels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns
 Type annotations for `boto3.client("iotsecuretunneling").open_tunnel` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.open_tunnel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
+[IoTSecureTunneling.Client.open_tunnel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef).
 Type annotations for `boto3.client("iotsecuretunneling").tag_resource` method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource)
+[IoTSecureTunneling.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("iotsecuretunneling").untag_resource`
 method.
 
 Boto3 documentation:
-[IoTSecureTunneling.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource)
+[IoTSecureTunneling.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource)
 
 Arguments:
 

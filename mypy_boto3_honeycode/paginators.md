@@ -3,7 +3,7 @@
 > [Index](..) > [Honeycode](.) > Paginators
 
 Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode)
+[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
 [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
@@ -28,7 +28,7 @@ def get_list_table_columns_paginator() -> ListTableColumnsPaginator:
 ```
 
 Boto3 documentation:
-[Honeycode.Paginator.ListTableColumns](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
+[Honeycode.Paginator.ListTableColumns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
 
 Arguments for `ListTableColumnsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_table_rows_paginator() -> ListTableRowsPaginator:
 ```
 
 Boto3 documentation:
-[Honeycode.Paginator.ListTableRows](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
+[Honeycode.Paginator.ListTableRows](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
 
 Arguments for `ListTableRowsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
 ```
 
 Boto3 documentation:
-[Honeycode.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
+[Honeycode.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
 
 Arguments for `ListTablesPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_query_table_rows_paginator() -> QueryTableRowsPaginator:
 ```
 
 Boto3 documentation:
-[Honeycode.Paginator.QueryTableRows](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
+[Honeycode.Paginator.QueryTableRows](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
 
 Arguments for `QueryTableRowsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [SQS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sqs.html#SQS)
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sqs.html#SQS)
 type annotations stubs module
 [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 

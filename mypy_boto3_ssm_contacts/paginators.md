@@ -3,7 +3,7 @@
 > [Index](..) > [SSMContacts](.) > Paginators
 
 Auto-generated documentation for
-[SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts)
+[SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts)
 type annotations stubs module
 [mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
@@ -30,7 +30,7 @@ def get_list_contact_channels_paginator() -> ListContactChannelsPaginator:
 ```
 
 Boto3 documentation:
-[SSMContacts.Paginator.ListContactChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListContactChannels)
+[SSMContacts.Paginator.ListContactChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListContactChannels)
 
 Arguments for `ListContactChannelsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_contacts_paginator() -> ListContactsPaginator:
 ```
 
 Boto3 documentation:
-[SSMContacts.Paginator.ListContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListContacts)
+[SSMContacts.Paginator.ListContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListContacts)
 
 Arguments for `ListContactsPaginator.paginate` method:
 
@@ -83,7 +83,7 @@ def get_list_engagements_paginator() -> ListEngagementsPaginator:
 ```
 
 Boto3 documentation:
-[SSMContacts.Paginator.ListEngagements](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListEngagements)
+[SSMContacts.Paginator.ListEngagements](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListEngagements)
 
 Arguments for `ListEngagementsPaginator.paginate` method:
 
@@ -110,7 +110,7 @@ def get_list_page_receipts_paginator() -> ListPageReceiptsPaginator:
 ```
 
 Boto3 documentation:
-[SSMContacts.Paginator.ListPageReceipts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListPageReceipts)
+[SSMContacts.Paginator.ListPageReceipts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListPageReceipts)
 
 Arguments for `ListPageReceiptsPaginator.paginate` method:
 
@@ -136,7 +136,7 @@ def get_list_pages_by_contact_paginator() -> ListPagesByContactPaginator:
 ```
 
 Boto3 documentation:
-[SSMContacts.Paginator.ListPagesByContact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListPagesByContact)
+[SSMContacts.Paginator.ListPagesByContact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListPagesByContact)
 
 Arguments for `ListPagesByContactPaginator.paginate` method:
 
@@ -162,7 +162,7 @@ def get_list_pages_by_engagement_paginator() -> ListPagesByEngagementPaginator:
 ```
 
 Boto3 documentation:
-[SSMContacts.Paginator.ListPagesByEngagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListPagesByEngagement)
+[SSMContacts.Paginator.ListPagesByEngagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Paginator.ListPagesByEngagement)
 
 Arguments for `ListPagesByEngagementPaginator.paginate` method:
 

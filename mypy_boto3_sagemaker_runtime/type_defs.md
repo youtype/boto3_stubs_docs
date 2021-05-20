@@ -3,7 +3,7 @@
 > [Index](..) > [SageMakerRuntime](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 

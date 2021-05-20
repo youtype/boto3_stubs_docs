@@ -3,7 +3,7 @@
 > [Index](..) > [WorkMail](.) > WorkMailClient
 
 Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail)
+[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail)
 type annotations stubs module
 [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
@@ -83,7 +83,7 @@ def get_workmail_client() -> WorkMailClient:
 ```
 
 Boto3 documentation:
-[WorkMail.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client)
+[WorkMail.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client)
 
 ## Exceptions
 
@@ -129,7 +129,7 @@ Type annotations for `boto3.client("workmail").associate_delegate_to_resource`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.associate_delegate_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
+[WorkMail.Client.associate_delegate_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
 
 Arguments:
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("workmail").associate_member_to_group`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.associate_member_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
+[WorkMail.Client.associate_member_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").can_paginate` method.
 
 Boto3 documentation:
-[WorkMail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.can_paginate)
+[WorkMail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.can_paginate)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Type annotations for `boto3.client("workmail").cancel_mailbox_export_job`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.cancel_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
+[WorkMail.Client.cancel_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").create_alias` method.
 
 Boto3 documentation:
-[WorkMail.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.create_alias)
+[WorkMail.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.create_alias)
 
 Arguments:
 
@@ -204,7 +204,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").create_group` method.
 
 Boto3 documentation:
-[WorkMail.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.create_group)
+[WorkMail.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.create_group)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Type annotations for
 `boto3.client("workmail").create_mobile_device_access_rule` method.
 
 Boto3 documentation:
-[WorkMail.Client.create_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
+[WorkMail.Client.create_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("workmail").create_organization` method.
 
 Boto3 documentation:
-[WorkMail.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.create_organization)
+[WorkMail.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.create_organization)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Returns
 Type annotations for `boto3.client("workmail").create_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.create_resource)
+[WorkMail.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.create_resource)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Returns
 Type annotations for `boto3.client("workmail").create_user` method.
 
 Boto3 documentation:
-[WorkMail.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.create_user)
+[WorkMail.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.create_user)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("workmail").delete_access_control_rule`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule)
+[WorkMail.Client.delete_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").delete_alias` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_alias)
+[WorkMail.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_alias)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").delete_group` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_group)
+[WorkMail.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_group)
 
 Arguments:
 
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("workmail").delete_mailbox_permissions`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
+[WorkMail.Client.delete_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Type annotations for
 `boto3.client("workmail").delete_mobile_device_access_rule` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
+[WorkMail.Client.delete_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
 
 Arguments:
 
@@ -374,7 +374,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").delete_organization` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_organization)
+[WorkMail.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_organization)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns
 Type annotations for `boto3.client("workmail").delete_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_resource)
+[WorkMail.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_resource)
 
 Arguments:
 
@@ -404,7 +404,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").delete_retention_policy` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_retention_policy)
+[WorkMail.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_retention_policy)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").delete_user` method.
 
 Boto3 documentation:
-[WorkMail.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.delete_user)
+[WorkMail.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.delete_user)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("workmail").deregister_from_work_mail`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.deregister_from_work_mail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
+[WorkMail.Client.deregister_from_work_mail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").describe_group` method.
 
 Boto3 documentation:
-[WorkMail.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.describe_group)
+[WorkMail.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.describe_group)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Type annotations for `boto3.client("workmail").describe_mailbox_export_job`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.describe_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job)
+[WorkMail.Client.describe_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns
 Type annotations for `boto3.client("workmail").describe_organization` method.
 
 Boto3 documentation:
-[WorkMail.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.describe_organization)
+[WorkMail.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.describe_organization)
 
 Arguments:
 
@@ -492,7 +492,7 @@ Returns
 Type annotations for `boto3.client("workmail").describe_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.describe_resource)
+[WorkMail.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.describe_resource)
 
 Arguments:
 
@@ -507,7 +507,7 @@ Returns
 Type annotations for `boto3.client("workmail").describe_user` method.
 
 Boto3 documentation:
-[WorkMail.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.describe_user)
+[WorkMail.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.describe_user)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Type annotations for
 `boto3.client("workmail").disassociate_delegate_from_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.disassociate_delegate_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
+[WorkMail.Client.disassociate_delegate_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
 
 Arguments:
 
@@ -539,7 +539,7 @@ Type annotations for `boto3.client("workmail").disassociate_member_from_group`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.disassociate_member_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
+[WorkMail.Client.disassociate_member_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").generate_presigned_url` method.
 
 Boto3 documentation:
-[WorkMail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.generate_presigned_url)
+[WorkMail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.generate_presigned_url)
 
 Arguments:
 
@@ -571,7 +571,7 @@ Type annotations for `boto3.client("workmail").get_access_control_effect`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.get_access_control_effect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
+[WorkMail.Client.get_access_control_effect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
 
 Arguments:
 
@@ -589,7 +589,7 @@ Type annotations for `boto3.client("workmail").get_default_retention_policy`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.get_default_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy)
+[WorkMail.Client.get_default_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Returns
 Type annotations for `boto3.client("workmail").get_mailbox_details` method.
 
 Boto3 documentation:
-[WorkMail.Client.get_mailbox_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.get_mailbox_details)
+[WorkMail.Client.get_mailbox_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.get_mailbox_details)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("workmail").get_mobile_device_access_effect`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.get_mobile_device_access_effect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
+[WorkMail.Client.get_mobile_device_access_effect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Type annotations for `boto3.client("workmail").list_access_control_rules`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.list_access_control_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_access_control_rules)
+[WorkMail.Client.list_access_control_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_access_control_rules)
 
 Arguments:
 
@@ -652,7 +652,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_aliases` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_aliases)
+[WorkMail.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_aliases)
 
 Arguments:
 
@@ -669,7 +669,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_group_members` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_group_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_group_members)
+[WorkMail.Client.list_group_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_group_members)
 
 Arguments:
 
@@ -686,7 +686,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_groups` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_groups)
+[WorkMail.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_groups)
 
 Arguments:
 
@@ -702,7 +702,7 @@ Type annotations for `boto3.client("workmail").list_mailbox_export_jobs`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.list_mailbox_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
+[WorkMail.Client.list_mailbox_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
 
 Arguments:
 
@@ -719,7 +719,7 @@ Type annotations for `boto3.client("workmail").list_mailbox_permissions`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.list_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
+[WorkMail.Client.list_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
 
 Arguments:
 
@@ -737,7 +737,7 @@ Type annotations for `boto3.client("workmail").list_mobile_device_access_rules`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.list_mobile_device_access_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
+[WorkMail.Client.list_mobile_device_access_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
 
 Arguments:
 
@@ -751,7 +751,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_organizations` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_organizations)
+[WorkMail.Client.list_organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_organizations)
 
 Arguments:
 
@@ -766,7 +766,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_resource_delegates` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_resource_delegates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
+[WorkMail.Client.list_resource_delegates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
 
 Arguments:
 
@@ -783,7 +783,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_resources` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_resources)
+[WorkMail.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_resources)
 
 Arguments:
 
@@ -799,7 +799,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_tags_for_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
+[WorkMail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Returns
 Type annotations for `boto3.client("workmail").list_users` method.
 
 Boto3 documentation:
-[WorkMail.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.list_users)
+[WorkMail.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.list_users)
 
 Arguments:
 
@@ -828,7 +828,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 Type annotations for `boto3.client("workmail").put_access_control_rule` method.
 
 Boto3 documentation:
-[WorkMail.Client.put_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
+[WorkMail.Client.put_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
 
 Arguments:
 
@@ -852,7 +852,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").put_mailbox_permissions` method.
 
 Boto3 documentation:
-[WorkMail.Client.put_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
+[WorkMail.Client.put_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
 
 Arguments:
 
@@ -869,7 +869,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").put_retention_policy` method.
 
 Boto3 documentation:
-[WorkMail.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
+[WorkMail.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
 
 Arguments:
 
@@ -888,7 +888,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").register_to_work_mail` method.
 
 Boto3 documentation:
-[WorkMail.Client.register_to_work_mail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
+[WorkMail.Client.register_to_work_mail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
 
 Arguments:
 
@@ -903,7 +903,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").reset_password` method.
 
 Boto3 documentation:
-[WorkMail.Client.reset_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.reset_password)
+[WorkMail.Client.reset_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.reset_password)
 
 Arguments:
 
@@ -919,7 +919,7 @@ Type annotations for `boto3.client("workmail").start_mailbox_export_job`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.start_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
+[WorkMail.Client.start_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
 
 Arguments:
 
@@ -940,7 +940,7 @@ Returns
 Type annotations for `boto3.client("workmail").tag_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.tag_resource)
+[WorkMail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.tag_resource)
 
 Arguments:
 
@@ -954,7 +954,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").untag_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.untag_resource)
+[WorkMail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.untag_resource)
 
 Arguments:
 
@@ -968,7 +968,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").update_mailbox_quota` method.
 
 Boto3 documentation:
-[WorkMail.Client.update_mailbox_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
+[WorkMail.Client.update_mailbox_quota](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
 
 Arguments:
 
@@ -984,7 +984,7 @@ Type annotations for
 `boto3.client("workmail").update_mobile_device_access_rule` method.
 
 Boto3 documentation:
-[WorkMail.Client.update_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
+[WorkMail.Client.update_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
 
 Arguments:
 
@@ -1012,7 +1012,7 @@ Type annotations for `boto3.client("workmail").update_primary_email_address`
 method.
 
 Boto3 documentation:
-[WorkMail.Client.update_primary_email_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
+[WorkMail.Client.update_primary_email_address](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
 
 Arguments:
 
@@ -1027,7 +1027,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("workmail").update_resource` method.
 
 Boto3 documentation:
-[WorkMail.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail.Client.update_resource)
+[WorkMail.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail.Client.update_resource)
 
 Arguments:
 

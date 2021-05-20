@@ -3,7 +3,7 @@
 > [Index](..) > [Route53](.) > Waiters
 
 Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/route53.html#Route53)
+[Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/route53.html#Route53)
 type annotations stubs module
 [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
 
@@ -25,7 +25,7 @@ def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter
 ```
 
 Boto3 documentation:
-[Route53.Waiter.resource_record_sets_changed](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/route53.html#Route53.Waiter.resource_record_sets_changed)
+[Route53.Waiter.resource_record_sets_changed](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/route53.html#Route53.Waiter.resource_record_sets_changed)
 
 Arguments for `ResourceRecordSetsChangedWaiter.wait` method:
 

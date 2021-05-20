@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFormation](.) > CloudFormationClient
 
 Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation)
+[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
 [mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
@@ -85,7 +85,7 @@ def get_cloudformation_client() -> CloudFormationClient:
 ```
 
 Boto3 documentation:
-[CloudFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client)
+[CloudFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client)
 
 ## Exceptions
 
@@ -130,7 +130,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudformation").can_paginate` method.
 
 Boto3 documentation:
-[CloudFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.can_paginate)
+[CloudFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.can_paginate)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Type annotations for `boto3.client("cloudformation").cancel_update_stack`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.cancel_update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
+[CloudFormation.Client.cancel_update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
 
 Arguments:
 
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("cloudformation").continue_update_rollback`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
+[CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudformation").create_change_set` method.
 
 Boto3 documentation:
-[CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
+[CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").create_stack` method.
 
 Boto3 documentation:
-[CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
+[CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("cloudformation").create_stack_instances`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
+[CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").create_stack_set` method.
 
 Boto3 documentation:
-[CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
+[CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").delete_change_set` method.
 
 Boto3 documentation:
-[CloudFormation.Client.delete_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
+[CloudFormation.Client.delete_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudformation").delete_stack` method.
 
 Boto3 documentation:
-[CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
+[CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("cloudformation").delete_stack_instances`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
+[CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").delete_stack_set` method.
 
 Boto3 documentation:
-[CloudFormation.Client.delete_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
+[CloudFormation.Client.delete_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
 
 Arguments:
 
@@ -353,7 +353,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudformation").deregister_type` method.
 
 Boto3 documentation:
-[CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
+[CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("cloudformation").describe_account_limits`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
+[CloudFormation.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
 
 Arguments:
 
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("cloudformation").describe_change_set`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
+[CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
 
 Arguments:
 
@@ -402,7 +402,7 @@ Type annotations for
 `boto3.client("cloudformation").describe_stack_drift_detection_status` method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_drift_detection_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
+[CloudFormation.Client.describe_stack_drift_detection_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
 
 Arguments:
 
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("cloudformation").describe_stack_events`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
+[CloudFormation.Client.describe_stack_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("cloudformation").describe_stack_instance`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
+[CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Type annotations for `boto3.client("cloudformation").describe_stack_resource`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
+[CloudFormation.Client.describe_stack_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
 
 Arguments:
 
@@ -467,7 +467,7 @@ Type annotations for
 `boto3.client("cloudformation").describe_stack_resource_drifts` method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
+[CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
 
 Arguments:
 
@@ -486,7 +486,7 @@ Type annotations for `boto3.client("cloudformation").describe_stack_resources`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
+[CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("cloudformation").describe_stack_set`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
+[CloudFormation.Client.describe_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Type annotations for
 `boto3.client("cloudformation").describe_stack_set_operation` method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
+[CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").describe_stacks` method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
+[CloudFormation.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").describe_type` method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
+[CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Type annotations for
 `boto3.client("cloudformation").describe_type_registration` method.
 
 Boto3 documentation:
-[CloudFormation.Client.describe_type_registration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
+[CloudFormation.Client.describe_type_registration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
 
 Arguments:
 
@@ -582,7 +582,7 @@ Type annotations for `boto3.client("cloudformation").detect_stack_drift`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.detect_stack_drift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
+[CloudFormation.Client.detect_stack_drift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
 
 Arguments:
 
@@ -598,7 +598,7 @@ Type annotations for
 `boto3.client("cloudformation").detect_stack_resource_drift` method.
 
 Boto3 documentation:
-[CloudFormation.Client.detect_stack_resource_drift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
+[CloudFormation.Client.detect_stack_resource_drift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
 
 Arguments:
 
@@ -614,7 +614,7 @@ Type annotations for `boto3.client("cloudformation").detect_stack_set_drift`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
+[CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Type annotations for `boto3.client("cloudformation").estimate_template_cost`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
+[CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
 
 Arguments:
 
@@ -650,7 +650,7 @@ Type annotations for `boto3.client("cloudformation").execute_change_set`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
+[CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
 
 Arguments:
 
@@ -666,7 +666,7 @@ Type annotations for `boto3.client("cloudformation").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url)
+[CloudFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url)
 
 Arguments:
 
@@ -682,7 +682,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudformation").get_stack_policy` method.
 
 Boto3 documentation:
-[CloudFormation.Client.get_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
+[CloudFormation.Client.get_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
 
 Arguments:
 
@@ -696,7 +696,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").get_template` method.
 
 Boto3 documentation:
-[CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.get_template)
+[CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.get_template)
 
 Arguments:
 
@@ -712,7 +712,7 @@ Type annotations for `boto3.client("cloudformation").get_template_summary`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
+[CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
 
 Arguments:
 
@@ -730,7 +730,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").list_change_sets` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
+[CloudFormation.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
 
 Arguments:
 
@@ -745,7 +745,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").list_exports` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
+[CloudFormation.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
 
 Arguments:
 
@@ -758,7 +758,7 @@ Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 Type annotations for `boto3.client("cloudformation").list_imports` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
+[CloudFormation.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
 
 Arguments:
 
@@ -773,7 +773,7 @@ Type annotations for `boto3.client("cloudformation").list_stack_instances`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
+[CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
 
 Arguments:
 
@@ -795,7 +795,7 @@ Type annotations for `boto3.client("cloudformation").list_stack_resources`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
+[CloudFormation.Client.list_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
 
 Arguments:
 
@@ -811,7 +811,7 @@ Type annotations for
 `boto3.client("cloudformation").list_stack_set_operation_results` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
+[CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
 
 Arguments:
 
@@ -830,7 +830,7 @@ Type annotations for `boto3.client("cloudformation").list_stack_set_operations`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
+[CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
 
 Arguments:
 
@@ -847,7 +847,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").list_stack_sets` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
+[CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
 
 Arguments:
 
@@ -864,7 +864,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").list_stacks` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
+[CloudFormation.Client.list_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
 
 Arguments:
 
@@ -880,7 +880,7 @@ Type annotations for `boto3.client("cloudformation").list_type_registrations`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
+[CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
 
 Arguments:
 
@@ -901,7 +901,7 @@ Type annotations for `boto3.client("cloudformation").list_type_versions`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
+[CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
 
 Arguments:
 
@@ -921,7 +921,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").list_types` method.
 
 Boto3 documentation:
-[CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.list_types)
+[CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.list_types)
 
 Arguments:
 
@@ -942,7 +942,7 @@ Type annotations for `boto3.client("cloudformation").record_handler_progress`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
+[CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
 
 Arguments:
 
@@ -963,7 +963,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudformation").register_type` method.
 
 Boto3 documentation:
-[CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.register_type)
+[CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.register_type)
 
 Arguments:
 
@@ -981,7 +981,7 @@ Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 Type annotations for `boto3.client("cloudformation").set_stack_policy` method.
 
 Boto3 documentation:
-[CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
+[CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
 
 Arguments:
 
@@ -995,7 +995,7 @@ Type annotations for `boto3.client("cloudformation").set_type_default_version`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
+[CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
 
 Arguments:
 
@@ -1011,7 +1011,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudformation").signal_resource` method.
 
 Boto3 documentation:
-[CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
+[CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
 
 Arguments:
 
@@ -1027,7 +1027,7 @@ Type annotations for `boto3.client("cloudformation").stop_stack_set_operation`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
+[CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
 
 Arguments:
 
@@ -1042,7 +1042,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cloudformation").update_stack` method.
 
 Boto3 documentation:
-[CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
+[CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
 
 Arguments:
 
@@ -1072,7 +1072,7 @@ Type annotations for `boto3.client("cloudformation").update_stack_instances`
 method.
 
 Boto3 documentation:
-[CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
+[CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
 
 Arguments:
 
@@ -1096,7 +1096,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").update_stack_set` method.
 
 Boto3 documentation:
-[CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
+[CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
 
 Arguments:
 
@@ -1131,7 +1131,7 @@ Type annotations for
 `boto3.client("cloudformation").update_termination_protection` method.
 
 Boto3 documentation:
-[CloudFormation.Client.update_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
+[CloudFormation.Client.update_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
 
 Arguments:
 
@@ -1146,7 +1146,7 @@ Returns
 Type annotations for `boto3.client("cloudformation").validate_template` method.
 
 Boto3 documentation:
-[CloudFormation.Client.validate_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
+[CloudFormation.Client.validate_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
 
 Arguments:
 

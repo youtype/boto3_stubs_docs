@@ -3,7 +3,7 @@
 > [Index](..) > [APIGateway](.) > Paginators
 
 Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway)
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
 [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
@@ -42,7 +42,7 @@ def get_get_api_keys_paginator() -> GetApiKeysPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetApiKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetApiKeys)
+[APIGateway.Paginator.GetApiKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetApiKeys)
 
 Arguments for `GetApiKeysPaginator.paginate` method:
 
@@ -70,7 +70,7 @@ def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetAuthorizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetAuthorizers)
+[APIGateway.Paginator.GetAuthorizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetAuthorizers)
 
 Arguments for `GetAuthorizersPaginator.paginate` method:
 
@@ -96,7 +96,7 @@ def get_get_base_path_mappings_paginator() -> GetBasePathMappingsPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetBasePathMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetBasePathMappings)
+[APIGateway.Paginator.GetBasePathMappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetBasePathMappings)
 
 Arguments for `GetBasePathMappingsPaginator.paginate` method:
 
@@ -122,7 +122,7 @@ def get_get_client_certificates_paginator() -> GetClientCertificatesPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetClientCertificates)
+[APIGateway.Paginator.GetClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetClientCertificates)
 
 Arguments for `GetClientCertificatesPaginator.paginate` method:
 
@@ -147,7 +147,7 @@ def get_get_deployments_paginator() -> GetDeploymentsPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetDeployments)
+[APIGateway.Paginator.GetDeployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetDeployments)
 
 Arguments for `GetDeploymentsPaginator.paginate` method:
 
@@ -173,7 +173,7 @@ def get_get_documentation_parts_paginator() -> GetDocumentationPartsPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetDocumentationParts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationParts)
+[APIGateway.Paginator.GetDocumentationParts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationParts)
 
 Arguments for `GetDocumentationPartsPaginator.paginate` method:
 
@@ -204,7 +204,7 @@ def get_get_documentation_versions_paginator() -> GetDocumentationVersionsPagina
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetDocumentationVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationVersions)
+[APIGateway.Paginator.GetDocumentationVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetDocumentationVersions)
 
 Arguments for `GetDocumentationVersionsPaginator.paginate` method:
 
@@ -230,7 +230,7 @@ def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetDomainNames](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetDomainNames)
+[APIGateway.Paginator.GetDomainNames](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetDomainNames)
 
 Arguments for `GetDomainNamesPaginator.paginate` method:
 
@@ -255,7 +255,7 @@ def get_get_gateway_responses_paginator() -> GetGatewayResponsesPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetGatewayResponses](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetGatewayResponses)
+[APIGateway.Paginator.GetGatewayResponses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetGatewayResponses)
 
 Arguments for `GetGatewayResponsesPaginator.paginate` method:
 
@@ -280,7 +280,7 @@ def get_get_models_paginator() -> GetModelsPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetModels)
+[APIGateway.Paginator.GetModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetModels)
 
 Arguments for `GetModelsPaginator.paginate` method:
 
@@ -306,7 +306,7 @@ def get_get_request_validators_paginator() -> GetRequestValidatorsPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetRequestValidators](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetRequestValidators)
+[APIGateway.Paginator.GetRequestValidators](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetRequestValidators)
 
 Arguments for `GetRequestValidatorsPaginator.paginate` method:
 
@@ -332,7 +332,7 @@ def get_get_resources_paginator() -> GetResourcesPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetResources)
+[APIGateway.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetResources)
 
 Arguments for `GetResourcesPaginator.paginate` method:
 
@@ -359,7 +359,7 @@ def get_get_rest_apis_paginator() -> GetRestApisPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetRestApis](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetRestApis)
+[APIGateway.Paginator.GetRestApis](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetRestApis)
 
 Arguments for `GetRestApisPaginator.paginate` method:
 
@@ -384,7 +384,7 @@ def get_get_sdk_types_paginator() -> GetSdkTypesPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetSdkTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetSdkTypes)
+[APIGateway.Paginator.GetSdkTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetSdkTypes)
 
 Arguments for `GetSdkTypesPaginator.paginate` method:
 
@@ -408,7 +408,7 @@ def get_get_usage_paginator() -> GetUsagePaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetUsage](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetUsage)
+[APIGateway.Paginator.GetUsage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetUsage)
 
 Arguments for `GetUsagePaginator.paginate` method:
 
@@ -437,7 +437,7 @@ def get_get_usage_plan_keys_paginator() -> GetUsagePlanKeysPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetUsagePlanKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlanKeys)
+[APIGateway.Paginator.GetUsagePlanKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlanKeys)
 
 Arguments for `GetUsagePlanKeysPaginator.paginate` method:
 
@@ -464,7 +464,7 @@ def get_get_usage_plans_paginator() -> GetUsagePlansPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetUsagePlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlans)
+[APIGateway.Paginator.GetUsagePlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetUsagePlans)
 
 Arguments for `GetUsagePlansPaginator.paginate` method:
 
@@ -490,7 +490,7 @@ def get_get_vpc_links_paginator() -> GetVpcLinksPaginator:
 ```
 
 Boto3 documentation:
-[APIGateway.Paginator.GetVpcLinks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway.Paginator.GetVpcLinks)
+[APIGateway.Paginator.GetVpcLinks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway.Paginator.GetVpcLinks)
 
 Arguments for `GetVpcLinksPaginator.paginate` method:
 

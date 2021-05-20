@@ -3,7 +3,7 @@
 > [Index](..) > [AppMesh](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appmesh.html#AppMesh)
+[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
 [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 

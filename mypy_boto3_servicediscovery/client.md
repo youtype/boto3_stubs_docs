@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceDiscovery](.) > ServiceDiscoveryClient
 
 Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery)
+[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
 [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
@@ -52,7 +52,7 @@ def get_servicediscovery_client() -> ServiceDiscoveryClient:
 ```
 
 Boto3 documentation:
-[ServiceDiscovery.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client)
+[ServiceDiscovery.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 Type annotations for `boto3.client("servicediscovery").can_paginate` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate)
+[ServiceDiscovery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Type annotations for `boto3.client("servicediscovery").create_http_namespace`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.create_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
+[ServiceDiscovery.Client.create_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Type annotations for
 `boto3.client("servicediscovery").create_private_dns_namespace` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.create_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
+[ServiceDiscovery.Client.create_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Type annotations for
 `boto3.client("servicediscovery").create_public_dns_namespace` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.create_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
+[ServiceDiscovery.Client.create_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").create_service` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
+[ServiceDiscovery.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("servicediscovery").delete_namespace`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
+[ServiceDiscovery.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").delete_service` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
+[ServiceDiscovery.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("servicediscovery").deregister_instance`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
+[ServiceDiscovery.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Type annotations for `boto3.client("servicediscovery").discover_instances`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.discover_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
+[ServiceDiscovery.Client.discover_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("servicediscovery").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url)
+[ServiceDiscovery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Returns `str`.
 Type annotations for `boto3.client("servicediscovery").get_instance` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
+[ServiceDiscovery.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Type annotations for
 `boto3.client("servicediscovery").get_instances_health_status` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.get_instances_health_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
+[ServiceDiscovery.Client.get_instances_health_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").get_namespace` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.get_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
+[ServiceDiscovery.Client.get_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").get_operation` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
+[ServiceDiscovery.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").get_service` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
+[ServiceDiscovery.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
 
 Arguments:
 
@@ -340,7 +340,7 @@ Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
 Type annotations for `boto3.client("servicediscovery").list_instances` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
+[ServiceDiscovery.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").list_namespaces` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
+[ServiceDiscovery.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").list_operations` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
+[ServiceDiscovery.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").list_services` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
+[ServiceDiscovery.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
 
 Arguments:
 
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("servicediscovery").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
+[ServiceDiscovery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -423,7 +423,7 @@ Type annotations for `boto3.client("servicediscovery").register_instance`
 method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
+[ServiceDiscovery.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
 
 Arguments:
 
@@ -440,7 +440,7 @@ Returns
 Type annotations for `boto3.client("servicediscovery").tag_resource` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
+[ServiceDiscovery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
 
 Arguments:
 
@@ -454,7 +454,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("servicediscovery").untag_resource` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
+[ServiceDiscovery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Type annotations for
 `boto3.client("servicediscovery").update_instance_custom_health_status` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.update_instance_custom_health_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
+[ServiceDiscovery.Client.update_instance_custom_health_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
 
 Arguments:
 
@@ -483,7 +483,7 @@ Arguments:
 Type annotations for `boto3.client("servicediscovery").update_service` method.
 
 Boto3 documentation:
-[ServiceDiscovery.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
+[ServiceDiscovery.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
 
 Arguments:
 

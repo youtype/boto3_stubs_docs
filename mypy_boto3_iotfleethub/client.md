@@ -3,7 +3,7 @@
 > [Index](..) > [IoTFleetHub](.) > IoTFleetHubClient
 
 Auto-generated documentation for
-[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub)
+[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
 [mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
@@ -37,7 +37,7 @@ def get_iotfleethub_client() -> IoTFleetHubClient:
 ```
 
 Boto3 documentation:
-[IoTFleetHub.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client)
+[IoTFleetHub.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 Type annotations for `boto3.client("iotfleethub").can_paginate` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.can_paginate)
+[IoTFleetHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Returns `bool`.
 Type annotations for `boto3.client("iotfleethub").create_application` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application)
+[IoTFleetHub.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Returns
 Type annotations for `boto3.client("iotfleethub").delete_application` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application)
+[IoTFleetHub.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotfleethub").describe_application` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application)
+[IoTFleetHub.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("iotfleethub").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.generate_presigned_url)
+[IoTFleetHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.generate_presigned_url)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns `str`.
 Type annotations for `boto3.client("iotfleethub").list_applications` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications)
+[IoTFleetHub.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Type annotations for `boto3.client("iotfleethub").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource)
+[IoTFleetHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns
 Type annotations for `boto3.client("iotfleethub").tag_resource` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource)
+[IoTFleetHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource)
 
 Arguments:
 
@@ -187,7 +187,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotfleethub").untag_resource` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource)
+[IoTFleetHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iotfleethub").update_application` method.
 
 Boto3 documentation:
-[IoTFleetHub.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application)
+[IoTFleetHub.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application)
 
 Arguments:
 

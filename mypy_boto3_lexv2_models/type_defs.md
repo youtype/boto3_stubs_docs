@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -42,6 +42,8 @@ type annotations stubs module
   - [CreateBotVersionResponseTypeDef](#createbotversionresponsetypedef)
   - [CreateExportResponseTypeDef](#createexportresponsetypedef)
   - [CreateIntentResponseTypeDef](#createintentresponsetypedef)
+  - [CreateResourcePolicyResponseTypeDef](#createresourcepolicyresponsetypedef)
+  - [CreateResourcePolicyStatementResponseTypeDef](#createresourcepolicystatementresponsetypedef)
   - [CreateSlotResponseTypeDef](#createslotresponsetypedef)
   - [CreateSlotTypeResponseTypeDef](#createslottyperesponsetypedef)
   - [CreateUploadUrlResponseTypeDef](#createuploadurlresponsetypedef)
@@ -53,6 +55,8 @@ type annotations stubs module
   - [DeleteBotVersionResponseTypeDef](#deletebotversionresponsetypedef)
   - [DeleteExportResponseTypeDef](#deleteexportresponsetypedef)
   - [DeleteImportResponseTypeDef](#deleteimportresponsetypedef)
+  - [DeleteResourcePolicyResponseTypeDef](#deleteresourcepolicyresponsetypedef)
+  - [DeleteResourcePolicyStatementResponseTypeDef](#deleteresourcepolicystatementresponsetypedef)
   - [DescribeBotAliasResponseTypeDef](#describebotaliasresponsetypedef)
   - [DescribeBotLocaleResponseTypeDef](#describebotlocaleresponsetypedef)
   - [DescribeBotResponseTypeDef](#describebotresponsetypedef)
@@ -60,6 +64,7 @@ type annotations stubs module
   - [DescribeExportResponseTypeDef](#describeexportresponsetypedef)
   - [DescribeImportResponseTypeDef](#describeimportresponsetypedef)
   - [DescribeIntentResponseTypeDef](#describeintentresponsetypedef)
+  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
   - [DescribeSlotResponseTypeDef](#describeslotresponsetypedef)
   - [DescribeSlotTypeResponseTypeDef](#describeslottyperesponsetypedef)
   - [DialogCodeHookSettingsTypeDef](#dialogcodehooksettingstypedef)
@@ -98,6 +103,7 @@ type annotations stubs module
   - [ObfuscationSettingTypeDef](#obfuscationsettingtypedef)
   - [OutputContextTypeDef](#outputcontexttypedef)
   - [PlainTextMessageTypeDef](#plaintextmessagetypedef)
+  - [PrincipalTypeDef](#principaltypedef)
   - [PromptSpecificationTypeDef](#promptspecificationtypedef)
   - [ResponseSpecificationTypeDef](#responsespecificationtypedef)
   - [S3BucketLogDestinationTypeDef](#s3bucketlogdestinationtypedef)
@@ -127,6 +133,7 @@ type annotations stubs module
   - [UpdateBotResponseTypeDef](#updatebotresponsetypedef)
   - [UpdateExportResponseTypeDef](#updateexportresponsetypedef)
   - [UpdateIntentResponseTypeDef](#updateintentresponsetypedef)
+  - [UpdateResourcePolicyResponseTypeDef](#updateresourcepolicyresponsetypedef)
   - [UpdateSlotResponseTypeDef](#updateslotresponsetypedef)
   - [UpdateSlotTypeResponseTypeDef](#updateslottyperesponsetypedef)
   - [VoiceSettingsTypeDef](#voicesettingstypedef)
@@ -615,6 +622,28 @@ Optional fields:
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
 
+## CreateResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyResponseTypeDef
+```
+
+Optional fields:
+
+- `resourceArn`: `str`
+- `revisionId`: `str`
+
+## CreateResourcePolicyStatementResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementResponseTypeDef
+```
+
+Optional fields:
+
+- `resourceArn`: `str`
+- `revisionId`: `str`
+
 ## CreateSlotResponseTypeDef
 
 ```python
@@ -758,6 +787,28 @@ Optional fields:
 
 - `importId`: `str`
 - `importStatus`: [ImportStatusType](./literals.md#importstatustype)
+
+## DeleteResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyResponseTypeDef
+```
+
+Optional fields:
+
+- `resourceArn`: `str`
+- `revisionId`: `str`
+
+## DeleteResourcePolicyStatementResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementResponseTypeDef
+```
+
+Optional fields:
+
+- `resourceArn`: `str`
+- `revisionId`: `str`
 
 ## DescribeBotAliasResponseTypeDef
 
@@ -919,6 +970,18 @@ Optional fields:
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+
+## DescribeResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyResponseTypeDef
+```
+
+Optional fields:
+
+- `resourceArn`: `str`
+- `policy`: `str`
+- `revisionId`: `str`
 
 ## DescribeSlotResponseTypeDef
 
@@ -1439,6 +1502,17 @@ Required fields:
 
 - `value`: `str`
 
+## PrincipalTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import PrincipalTypeDef
+```
+
+Optional fields:
+
+- `service`: `str`
+- `arn`: `str`
+
 ## PromptSpecificationTypeDef
 
 ```python
@@ -1864,6 +1938,17 @@ Optional fields:
 - `localeId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+
+## UpdateResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyResponseTypeDef
+```
+
+Optional fields:
+
+- `resourceArn`: `str`
+- `revisionId`: `str`
 
 ## UpdateSlotResponseTypeDef
 

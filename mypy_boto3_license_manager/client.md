@@ -3,7 +3,7 @@
 > [Index](..) > [LicenseManager](.) > LicenseManagerClient
 
 Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager)
+[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
@@ -74,7 +74,7 @@ def get_license-manager_client() -> LicenseManagerClient:
 ```
 
 Boto3 documentation:
-[LicenseManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client)
+[LicenseManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client)
 
 ## Exceptions
 
@@ -116,7 +116,7 @@ Exceptions:
 Type annotations for `boto3.client("license-manager").accept_grant` method.
 
 Boto3 documentation:
-[LicenseManager.Client.accept_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
+[LicenseManager.Client.accept_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
 
 Arguments:
 
@@ -130,7 +130,7 @@ Returns
 Type annotations for `boto3.client("license-manager").can_paginate` method.
 
 Boto3 documentation:
-[LicenseManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.can_paginate)
+[LicenseManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.can_paginate)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Returns `bool`.
 Type annotations for `boto3.client("license-manager").check_in_license` method.
 
 Boto3 documentation:
-[LicenseManager.Client.check_in_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
+[LicenseManager.Client.check_in_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("license-manager").checkout_borrow_license`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.checkout_borrow_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
+[LicenseManager.Client.checkout_borrow_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns
 Type annotations for `boto3.client("license-manager").checkout_license` method.
 
 Boto3 documentation:
-[LicenseManager.Client.checkout_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
+[LicenseManager.Client.checkout_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("license-manager").create_grant` method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_grant)
+[LicenseManager.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_grant)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("license-manager").create_grant_version`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_grant_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
+[LicenseManager.Client.create_grant_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns
 Type annotations for `boto3.client("license-manager").create_license` method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_license)
+[LicenseManager.Client.create_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_license)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Type annotations for
 `boto3.client("license-manager").create_license_configuration` method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
+[LicenseManager.Client.create_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_license_manager_report_generator)
+[LicenseManager.Client.create_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_license_manager_report_generator)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Type annotations for `boto3.client("license-manager").create_license_version`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_license_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
+[LicenseManager.Client.create_license_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
 
 Arguments:
 
@@ -358,7 +358,7 @@ Returns
 Type annotations for `boto3.client("license-manager").create_token` method.
 
 Boto3 documentation:
-[LicenseManager.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.create_token)
+[LicenseManager.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.create_token)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Returns
 Type annotations for `boto3.client("license-manager").delete_grant` method.
 
 Boto3 documentation:
-[LicenseManager.Client.delete_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
+[LicenseManager.Client.delete_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns
 Type annotations for `boto3.client("license-manager").delete_license` method.
 
 Boto3 documentation:
-[LicenseManager.Client.delete_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.delete_license)
+[LicenseManager.Client.delete_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.delete_license)
 
 Arguments:
 
@@ -407,7 +407,7 @@ Type annotations for
 `boto3.client("license-manager").delete_license_configuration` method.
 
 Boto3 documentation:
-[LicenseManager.Client.delete_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
+[LicenseManager.Client.delete_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.delete_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.delete_license_manager_report_generator)
+[LicenseManager.Client.delete_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.delete_license_manager_report_generator)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("license-manager").delete_token` method.
 
 Boto3 documentation:
-[LicenseManager.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.delete_token)
+[LicenseManager.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.delete_token)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Type annotations for
 `boto3.client("license-manager").extend_license_consumption` method.
 
 Boto3 documentation:
-[LicenseManager.Client.extend_license_consumption](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
+[LicenseManager.Client.extend_license_consumption](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("license-manager").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url)
+[LicenseManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Returns `str`.
 Type annotations for `boto3.client("license-manager").get_access_token` method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_access_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
+[LicenseManager.Client.get_access_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
 
 Arguments:
 
@@ -496,7 +496,7 @@ Returns
 Type annotations for `boto3.client("license-manager").get_grant` method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_grant)
+[LicenseManager.Client.get_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_grant)
 
 Arguments:
 
@@ -510,7 +510,7 @@ Returns [GetGrantResponseTypeDef](./type_defs.md#getgrantresponsetypedef).
 Type annotations for `boto3.client("license-manager").get_license` method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_license)
+[LicenseManager.Client.get_license](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_license)
 
 Arguments:
 
@@ -525,7 +525,7 @@ Type annotations for
 `boto3.client("license-manager").get_license_configuration` method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
+[LicenseManager.Client.get_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
 
 Arguments:
 
@@ -540,7 +540,7 @@ Type annotations for
 `boto3.client("license-manager").get_license_manager_report_generator` method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_license_manager_report_generator)
+[LicenseManager.Client.get_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_license_manager_report_generator)
 
 Arguments:
 
@@ -555,7 +555,7 @@ Type annotations for `boto3.client("license-manager").get_license_usage`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_license_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
+[LicenseManager.Client.get_license_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
 
 Arguments:
 
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("license-manager").get_service_settings`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.get_service_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
+[LicenseManager.Client.get_service_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
 
 Returns
 [GetServiceSettingsResponseTypeDef](./type_defs.md#getservicesettingsresponsetypedef).
@@ -582,7 +582,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_associations_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
+[LicenseManager.Client.list_associations_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
 
 Arguments:
 
@@ -599,7 +599,7 @@ Type annotations for `boto3.client("license-manager").list_distributed_grants`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_distributed_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
+[LicenseManager.Client.list_distributed_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
 
 Arguments:
 
@@ -618,7 +618,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_failures_for_license_configuration_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
+[LicenseManager.Client.list_failures_for_license_configuration_operations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
 
 Arguments:
 
@@ -635,7 +635,7 @@ Type annotations for
 `boto3.client("license-manager").list_license_configurations` method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_license_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
+[LicenseManager.Client.list_license_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
 
 Arguments:
 
@@ -654,7 +654,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_license_manager_report_generators](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_license_manager_report_generators)
+[LicenseManager.Client.list_license_manager_report_generators](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_license_manager_report_generators)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
+[LicenseManager.Client.list_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
 
 Arguments:
 
@@ -689,7 +689,7 @@ Type annotations for `boto3.client("license-manager").list_license_versions`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_license_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
+[LicenseManager.Client.list_license_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
 
 Arguments:
 
@@ -705,7 +705,7 @@ Returns
 Type annotations for `boto3.client("license-manager").list_licenses` method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_licenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
+[LicenseManager.Client.list_licenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
 
 Arguments:
 
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("license-manager").list_received_grants`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_received_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
+[LicenseManager.Client.list_received_grants](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
 
 Arguments:
 
@@ -741,7 +741,7 @@ Type annotations for `boto3.client("license-manager").list_received_licenses`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_received_licenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
+[LicenseManager.Client.list_received_licenses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
 
 Arguments:
 
@@ -759,7 +759,7 @@ Type annotations for `boto3.client("license-manager").list_resource_inventory`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_resource_inventory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
+[LicenseManager.Client.list_resource_inventory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Type annotations for `boto3.client("license-manager").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
+[LicenseManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Returns
 Type annotations for `boto3.client("license-manager").list_tokens` method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_tokens](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
+[LicenseManager.Client.list_tokens](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
 
 Arguments:
 
@@ -808,7 +808,7 @@ Type annotations for
 `boto3.client("license-manager").list_usage_for_license_configuration` method.
 
 Boto3 documentation:
-[LicenseManager.Client.list_usage_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
+[LicenseManager.Client.list_usage_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
 
 Arguments:
 
@@ -825,7 +825,7 @@ Returns
 Type annotations for `boto3.client("license-manager").reject_grant` method.
 
 Boto3 documentation:
-[LicenseManager.Client.reject_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
+[LicenseManager.Client.reject_grant](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
 
 Arguments:
 
@@ -839,7 +839,7 @@ Returns
 Type annotations for `boto3.client("license-manager").tag_resource` method.
 
 Boto3 documentation:
-[LicenseManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
+[LicenseManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
 
 Arguments:
 
@@ -853,7 +853,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("license-manager").untag_resource` method.
 
 Boto3 documentation:
-[LicenseManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
+[LicenseManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
 
 Arguments:
 
@@ -868,7 +868,7 @@ Type annotations for
 `boto3.client("license-manager").update_license_configuration` method.
 
 Boto3 documentation:
-[LicenseManager.Client.update_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
+[LicenseManager.Client.update_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
 
 Arguments:
 
@@ -893,7 +893,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.update_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.update_license_manager_report_generator)
+[LicenseManager.Client.update_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.update_license_manager_report_generator)
 
 Arguments:
 
@@ -916,7 +916,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.update_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
+[LicenseManager.Client.update_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
 
 Arguments:
 
@@ -934,7 +934,7 @@ Type annotations for `boto3.client("license-manager").update_service_settings`
 method.
 
 Boto3 documentation:
-[LicenseManager.Client.update_service_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
+[LicenseManager.Client.update_service_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
 
 Arguments:
 

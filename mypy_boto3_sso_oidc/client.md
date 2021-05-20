@@ -3,7 +3,7 @@
 > [Index](..) > [SSOOIDC](.) > SSOOIDCClient
 
 Auto-generated documentation for
-[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC)
+[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module
 [mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
@@ -31,7 +31,7 @@ def get_sso-oidc_client() -> SSOOIDCClient:
 ```
 
 Boto3 documentation:
-[SSOOIDC.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC.Client)
+[SSOOIDC.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 Type annotations for `boto3.client("sso-oidc").can_paginate` method.
 
 Boto3 documentation:
-[SSOOIDC.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC.Client.can_paginate)
+[SSOOIDC.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC.Client.can_paginate)
 
 Arguments:
 
@@ -81,7 +81,7 @@ Returns `bool`.
 Type annotations for `boto3.client("sso-oidc").create_token` method.
 
 Boto3 documentation:
-[SSOOIDC.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
+[SSOOIDC.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
 
 Arguments:
 
@@ -102,7 +102,7 @@ Returns
 Type annotations for `boto3.client("sso-oidc").generate_presigned_url` method.
 
 Boto3 documentation:
-[SSOOIDC.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC.Client.generate_presigned_url)
+[SSOOIDC.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC.Client.generate_presigned_url)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Returns `str`.
 Type annotations for `boto3.client("sso-oidc").register_client` method.
 
 Boto3 documentation:
-[SSOOIDC.Client.register_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
+[SSOOIDC.Client.register_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("sso-oidc").start_device_authorization`
 method.
 
 Boto3 documentation:
-[SSOOIDC.Client.start_device_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
+[SSOOIDC.Client.start_device_authorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
 
 Arguments:
 

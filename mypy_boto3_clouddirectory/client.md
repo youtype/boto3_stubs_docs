@@ -3,7 +3,7 @@
 > [Index](..) > [CloudDirectory](.) > CloudDirectoryClient
 
 Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory)
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
 [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
@@ -95,7 +95,7 @@ def get_clouddirectory_client() -> CloudDirectoryClient:
 ```
 
 Boto3 documentation:
-[CloudDirectory.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client)
+[CloudDirectory.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client)
 
 ## Exceptions
 
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("clouddirectory").add_facet_to_object`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.add_facet_to_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object)
+[CloudDirectory.Client.add_facet_to_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").apply_schema` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.apply_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema)
+[CloudDirectory.Client.apply_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema)
 
 Arguments:
 
@@ -190,7 +190,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").attach_object` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.attach_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object)
+[CloudDirectory.Client.attach_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").attach_policy` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy)
+[CloudDirectory.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy)
 
 Arguments:
 
@@ -226,7 +226,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").attach_to_index` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.attach_to_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index)
+[CloudDirectory.Client.attach_to_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").attach_typed_link` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.attach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link)
+[CloudDirectory.Client.attach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").batch_read` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.batch_read](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read)
+[CloudDirectory.Client.batch_read](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Returns [BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef).
 Type annotations for `boto3.client("clouddirectory").batch_write` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.batch_write](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write)
+[CloudDirectory.Client.batch_write](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write)
 
 Arguments:
 
@@ -302,7 +302,7 @@ Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
 Type annotations for `boto3.client("clouddirectory").can_paginate` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.can_paginate)
+[CloudDirectory.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.can_paginate)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns `bool`.
 Type annotations for `boto3.client("clouddirectory").create_directory` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory)
+[CloudDirectory.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").create_facet` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.create_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet)
+[CloudDirectory.Client.create_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").create_index` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.create_index)
+[CloudDirectory.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.create_index)
 
 Arguments:
 
@@ -369,7 +369,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").create_object` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.create_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.create_object)
+[CloudDirectory.Client.create_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.create_object)
 
 Arguments:
 
@@ -391,7 +391,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").create_schema` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema)
+[CloudDirectory.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("clouddirectory").create_typed_link_facet`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.create_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet)
+[CloudDirectory.Client.create_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").delete_directory` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory)
+[CloudDirectory.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").delete_facet` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.delete_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet)
+[CloudDirectory.Client.delete_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").delete_object` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object)
+[CloudDirectory.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").delete_schema` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema)
+[CloudDirectory.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("clouddirectory").delete_typed_link_facet`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.delete_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet)
+[CloudDirectory.Client.delete_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").detach_from_index` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.detach_from_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index)
+[CloudDirectory.Client.detach_from_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index)
 
 Arguments:
 
@@ -511,7 +511,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").detach_object` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.detach_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object)
+[CloudDirectory.Client.detach_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object)
 
 Arguments:
 
@@ -528,7 +528,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").detach_policy` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy)
+[CloudDirectory.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy)
 
 Arguments:
 
@@ -545,7 +545,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").detach_typed_link` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.detach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link)
+[CloudDirectory.Client.detach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Arguments:
 Type annotations for `boto3.client("clouddirectory").disable_directory` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.disable_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory)
+[CloudDirectory.Client.disable_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory)
 
 Arguments:
 
@@ -573,7 +573,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").enable_directory` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.enable_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory)
+[CloudDirectory.Client.enable_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Type annotations for `boto3.client("clouddirectory").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.generate_presigned_url)
+[CloudDirectory.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.generate_presigned_url)
 
 Arguments:
 
@@ -605,7 +605,7 @@ Type annotations for
 `boto3.client("clouddirectory").get_applied_schema_version` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_applied_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version)
+[CloudDirectory.Client.get_applied_schema_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").get_directory` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory)
+[CloudDirectory.Client.get_directory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").get_facet` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet)
+[CloudDirectory.Client.get_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet)
 
 Arguments:
 
@@ -648,7 +648,7 @@ Type annotations for `boto3.client("clouddirectory").get_link_attributes`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes)
+[CloudDirectory.Client.get_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes)
 
 Arguments:
 
@@ -669,7 +669,7 @@ Type annotations for `boto3.client("clouddirectory").get_object_attributes`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes)
+[CloudDirectory.Client.get_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes)
 
 Arguments:
 
@@ -691,7 +691,7 @@ Type annotations for `boto3.client("clouddirectory").get_object_information`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_object_information](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information)
+[CloudDirectory.Client.get_object_information](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information)
 
 Arguments:
 
@@ -710,7 +710,7 @@ Type annotations for `boto3.client("clouddirectory").get_schema_as_json`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_schema_as_json](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json)
+[CloudDirectory.Client.get_schema_as_json](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json)
 
 Arguments:
 
@@ -725,7 +725,7 @@ Type annotations for
 `boto3.client("clouddirectory").get_typed_link_facet_information` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.get_typed_link_facet_information](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information)
+[CloudDirectory.Client.get_typed_link_facet_information](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information)
 
 Arguments:
 
@@ -741,7 +741,7 @@ Type annotations for `boto3.client("clouddirectory").list_applied_schema_arns`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_applied_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns)
+[CloudDirectory.Client.list_applied_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns)
 
 Arguments:
 
@@ -759,7 +759,7 @@ Type annotations for `boto3.client("clouddirectory").list_attached_indices`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_attached_indices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices)
+[CloudDirectory.Client.list_attached_indices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Type annotations for
 `boto3.client("clouddirectory").list_development_schema_arns` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_development_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns)
+[CloudDirectory.Client.list_development_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns)
 
 Arguments:
 
@@ -795,7 +795,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").list_directories` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_directories](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories)
+[CloudDirectory.Client.list_directories](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories)
 
 Arguments:
 
@@ -812,7 +812,7 @@ Type annotations for `boto3.client("clouddirectory").list_facet_attributes`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes)
+[CloudDirectory.Client.list_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes)
 
 Arguments:
 
@@ -829,7 +829,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").list_facet_names` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_facet_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names)
+[CloudDirectory.Client.list_facet_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names)
 
 Arguments:
 
@@ -846,7 +846,7 @@ Type annotations for `boto3.client("clouddirectory").list_incoming_typed_links`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_incoming_typed_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links)
+[CloudDirectory.Client.list_incoming_typed_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links)
 
 Arguments:
 
@@ -870,7 +870,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").list_index` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_index)
+[CloudDirectory.Client.list_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_index)
 
 Arguments:
 
@@ -892,7 +892,7 @@ Type annotations for `boto3.client("clouddirectory").list_managed_schema_arns`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_managed_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns)
+[CloudDirectory.Client.list_managed_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns)
 
 Arguments:
 
@@ -909,7 +909,7 @@ Type annotations for `boto3.client("clouddirectory").list_object_attributes`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes)
+[CloudDirectory.Client.list_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes)
 
 Arguments:
 
@@ -931,7 +931,7 @@ Type annotations for `boto3.client("clouddirectory").list_object_children`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_object_children](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children)
+[CloudDirectory.Client.list_object_children](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children)
 
 Arguments:
 
@@ -952,7 +952,7 @@ Type annotations for `boto3.client("clouddirectory").list_object_parent_paths`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_object_parent_paths](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths)
+[CloudDirectory.Client.list_object_parent_paths](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths)
 
 Arguments:
 
@@ -971,7 +971,7 @@ Type annotations for `boto3.client("clouddirectory").list_object_parents`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_object_parents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents)
+[CloudDirectory.Client.list_object_parents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents)
 
 Arguments:
 
@@ -993,7 +993,7 @@ Type annotations for `boto3.client("clouddirectory").list_object_policies`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_object_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies)
+[CloudDirectory.Client.list_object_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies)
 
 Arguments:
 
@@ -1014,7 +1014,7 @@ Type annotations for `boto3.client("clouddirectory").list_outgoing_typed_links`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_outgoing_typed_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links)
+[CloudDirectory.Client.list_outgoing_typed_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links)
 
 Arguments:
 
@@ -1039,7 +1039,7 @@ Type annotations for `boto3.client("clouddirectory").list_policy_attachments`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_policy_attachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments)
+[CloudDirectory.Client.list_policy_attachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments)
 
 Arguments:
 
@@ -1060,7 +1060,7 @@ Type annotations for
 `boto3.client("clouddirectory").list_published_schema_arns` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_published_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns)
+[CloudDirectory.Client.list_published_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns)
 
 Arguments:
 
@@ -1077,7 +1077,7 @@ Type annotations for `boto3.client("clouddirectory").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource)
+[CloudDirectory.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1094,7 +1094,7 @@ Type annotations for
 `boto3.client("clouddirectory").list_typed_link_facet_attributes` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_typed_link_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes)
+[CloudDirectory.Client.list_typed_link_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes)
 
 Arguments:
 
@@ -1112,7 +1112,7 @@ Type annotations for
 `boto3.client("clouddirectory").list_typed_link_facet_names` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.list_typed_link_facet_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names)
+[CloudDirectory.Client.list_typed_link_facet_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names)
 
 Arguments:
 
@@ -1128,7 +1128,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").lookup_policy` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.lookup_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy)
+[CloudDirectory.Client.lookup_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy)
 
 Arguments:
 
@@ -1146,7 +1146,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").publish_schema` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.publish_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema)
+[CloudDirectory.Client.publish_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema)
 
 Arguments:
 
@@ -1164,7 +1164,7 @@ Type annotations for `boto3.client("clouddirectory").put_schema_from_json`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.put_schema_from_json](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json)
+[CloudDirectory.Client.put_schema_from_json](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json)
 
 Arguments:
 
@@ -1180,7 +1180,7 @@ Type annotations for `boto3.client("clouddirectory").remove_facet_from_object`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.remove_facet_from_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object)
+[CloudDirectory.Client.remove_facet_from_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object)
 
 Arguments:
 
@@ -1197,7 +1197,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").tag_resource` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource)
+[CloudDirectory.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource)
 
 Arguments:
 
@@ -1211,7 +1211,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").untag_resource` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource)
+[CloudDirectory.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource)
 
 Arguments:
 
@@ -1225,7 +1225,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("clouddirectory").update_facet` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.update_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet)
+[CloudDirectory.Client.update_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet)
 
 Arguments:
 
@@ -1243,7 +1243,7 @@ Type annotations for `boto3.client("clouddirectory").update_link_attributes`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.update_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes)
+[CloudDirectory.Client.update_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes)
 
 Arguments:
 
@@ -1263,7 +1263,7 @@ Type annotations for `boto3.client("clouddirectory").update_object_attributes`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.update_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes)
+[CloudDirectory.Client.update_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes)
 
 Arguments:
 
@@ -1282,7 +1282,7 @@ Returns
 Type annotations for `boto3.client("clouddirectory").update_schema` method.
 
 Boto3 documentation:
-[CloudDirectory.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema)
+[CloudDirectory.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema)
 
 Arguments:
 
@@ -1298,7 +1298,7 @@ Type annotations for `boto3.client("clouddirectory").update_typed_link_facet`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.update_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet)
+[CloudDirectory.Client.update_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet)
 
 Arguments:
 
@@ -1317,7 +1317,7 @@ Type annotations for `boto3.client("clouddirectory").upgrade_applied_schema`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.upgrade_applied_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema)
+[CloudDirectory.Client.upgrade_applied_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema)
 
 Arguments:
 
@@ -1334,7 +1334,7 @@ Type annotations for `boto3.client("clouddirectory").upgrade_published_schema`
 method.
 
 Boto3 documentation:
-[CloudDirectory.Client.upgrade_published_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema)
+[CloudDirectory.Client.upgrade_published_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema)
 
 Arguments:
 

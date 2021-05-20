@@ -3,7 +3,7 @@
 > [Index](..) > [MediaStoreData](.) > Paginators
 
 Auto-generated documentation for
-[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediastore-data.html#MediaStoreData)
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
 [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
@@ -25,7 +25,7 @@ def get_list_items_paginator() -> ListItemsPaginator:
 ```
 
 Boto3 documentation:
-[MediaStoreData.Paginator.ListItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediastore-data.html#MediaStoreData.Paginator.ListItems)
+[MediaStoreData.Paginator.ListItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Paginator.ListItems)
 
 Arguments for `ListItemsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [EKS](.) > EKSClient
 
 Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS)
+[EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS)
 type annotations stubs module
 [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
@@ -62,7 +62,7 @@ def get_eks_client() -> EKSClient:
 ```
 
 Boto3 documentation:
-[EKS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client)
+[EKS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client)
 
 ## Exceptions
 
@@ -98,7 +98,7 @@ Exceptions:
 Type annotations for `boto3.client("eks").associate_encryption_config` method.
 
 Boto3 documentation:
-[EKS.Client.associate_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.associate_encryption_config)
+[EKS.Client.associate_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.associate_encryption_config)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Type annotations for `boto3.client("eks").associate_identity_provider_config`
 method.
 
 Boto3 documentation:
-[EKS.Client.associate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.associate_identity_provider_config)
+[EKS.Client.associate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.associate_identity_provider_config)
 
 Arguments:
 
@@ -136,7 +136,7 @@ Returns
 Type annotations for `boto3.client("eks").can_paginate` method.
 
 Boto3 documentation:
-[EKS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.can_paginate)
+[EKS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.can_paginate)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Returns `bool`.
 Type annotations for `boto3.client("eks").create_addon` method.
 
 Boto3 documentation:
-[EKS.Client.create_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.create_addon)
+[EKS.Client.create_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.create_addon)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns
 Type annotations for `boto3.client("eks").create_cluster` method.
 
 Boto3 documentation:
-[EKS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.create_cluster)
+[EKS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.create_cluster)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Returns
 Type annotations for `boto3.client("eks").create_fargate_profile` method.
 
 Boto3 documentation:
-[EKS.Client.create_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.create_fargate_profile)
+[EKS.Client.create_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.create_fargate_profile)
 
 Arguments:
 
@@ -217,7 +217,7 @@ Returns
 Type annotations for `boto3.client("eks").create_nodegroup` method.
 
 Boto3 documentation:
-[EKS.Client.create_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.create_nodegroup)
+[EKS.Client.create_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.create_nodegroup)
 
 Arguments:
 
@@ -250,7 +250,7 @@ Returns
 Type annotations for `boto3.client("eks").delete_addon` method.
 
 Boto3 documentation:
-[EKS.Client.delete_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.delete_addon)
+[EKS.Client.delete_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.delete_addon)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns
 Type annotations for `boto3.client("eks").delete_cluster` method.
 
 Boto3 documentation:
-[EKS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.delete_cluster)
+[EKS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.delete_cluster)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns
 Type annotations for `boto3.client("eks").delete_fargate_profile` method.
 
 Boto3 documentation:
-[EKS.Client.delete_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.delete_fargate_profile)
+[EKS.Client.delete_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.delete_fargate_profile)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Returns
 Type annotations for `boto3.client("eks").delete_nodegroup` method.
 
 Boto3 documentation:
-[EKS.Client.delete_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.delete_nodegroup)
+[EKS.Client.delete_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.delete_nodegroup)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Returns
 Type annotations for `boto3.client("eks").describe_addon` method.
 
 Boto3 documentation:
-[EKS.Client.describe_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_addon)
+[EKS.Client.describe_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_addon)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Returns
 Type annotations for `boto3.client("eks").describe_addon_versions` method.
 
 Boto3 documentation:
-[EKS.Client.describe_addon_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_addon_versions)
+[EKS.Client.describe_addon_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_addon_versions)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Returns
 Type annotations for `boto3.client("eks").describe_cluster` method.
 
 Boto3 documentation:
-[EKS.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_cluster)
+[EKS.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_cluster)
 
 Arguments:
 
@@ -355,7 +355,7 @@ Returns
 Type annotations for `boto3.client("eks").describe_fargate_profile` method.
 
 Boto3 documentation:
-[EKS.Client.describe_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_fargate_profile)
+[EKS.Client.describe_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_fargate_profile)
 
 Arguments:
 
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("eks").describe_identity_provider_config`
 method.
 
 Boto3 documentation:
-[EKS.Client.describe_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_identity_provider_config)
+[EKS.Client.describe_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_identity_provider_config)
 
 Arguments:
 
@@ -388,7 +388,7 @@ Returns
 Type annotations for `boto3.client("eks").describe_nodegroup` method.
 
 Boto3 documentation:
-[EKS.Client.describe_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_nodegroup)
+[EKS.Client.describe_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_nodegroup)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Returns
 Type annotations for `boto3.client("eks").describe_update` method.
 
 Boto3 documentation:
-[EKS.Client.describe_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.describe_update)
+[EKS.Client.describe_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.describe_update)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Type annotations for
 `boto3.client("eks").disassociate_identity_provider_config` method.
 
 Boto3 documentation:
-[EKS.Client.disassociate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config)
+[EKS.Client.disassociate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config)
 
 Arguments:
 
@@ -439,7 +439,7 @@ Returns
 Type annotations for `boto3.client("eks").generate_presigned_url` method.
 
 Boto3 documentation:
-[EKS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.generate_presigned_url)
+[EKS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -455,7 +455,7 @@ Returns `str`.
 Type annotations for `boto3.client("eks").list_addons` method.
 
 Boto3 documentation:
-[EKS.Client.list_addons](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_addons)
+[EKS.Client.list_addons](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_addons)
 
 Arguments:
 
@@ -470,7 +470,7 @@ Returns [ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef).
 Type annotations for `boto3.client("eks").list_clusters` method.
 
 Boto3 documentation:
-[EKS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_clusters)
+[EKS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_clusters)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns
 Type annotations for `boto3.client("eks").list_fargate_profiles` method.
 
 Boto3 documentation:
-[EKS.Client.list_fargate_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_fargate_profiles)
+[EKS.Client.list_fargate_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_fargate_profiles)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Type annotations for `boto3.client("eks").list_identity_provider_configs`
 method.
 
 Boto3 documentation:
-[EKS.Client.list_identity_provider_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_identity_provider_configs)
+[EKS.Client.list_identity_provider_configs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_identity_provider_configs)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Returns
 Type annotations for `boto3.client("eks").list_nodegroups` method.
 
 Boto3 documentation:
-[EKS.Client.list_nodegroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_nodegroups)
+[EKS.Client.list_nodegroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_nodegroups)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Returns
 Type annotations for `boto3.client("eks").list_tags_for_resource` method.
 
 Boto3 documentation:
-[EKS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_tags_for_resource)
+[EKS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -548,7 +548,7 @@ Returns
 Type annotations for `boto3.client("eks").list_updates` method.
 
 Boto3 documentation:
-[EKS.Client.list_updates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.list_updates)
+[EKS.Client.list_updates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.list_updates)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Returns
 Type annotations for `boto3.client("eks").tag_resource` method.
 
 Boto3 documentation:
-[EKS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.tag_resource)
+[EKS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.tag_resource)
 
 Arguments:
 
@@ -580,7 +580,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("eks").untag_resource` method.
 
 Boto3 documentation:
-[EKS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.untag_resource)
+[EKS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.untag_resource)
 
 Arguments:
 
@@ -594,7 +594,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("eks").update_addon` method.
 
 Boto3 documentation:
-[EKS.Client.update_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.update_addon)
+[EKS.Client.update_addon](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.update_addon)
 
 Arguments:
 
@@ -614,7 +614,7 @@ Returns
 Type annotations for `boto3.client("eks").update_cluster_config` method.
 
 Boto3 documentation:
-[EKS.Client.update_cluster_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.update_cluster_config)
+[EKS.Client.update_cluster_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.update_cluster_config)
 
 Arguments:
 
@@ -632,7 +632,7 @@ Returns
 Type annotations for `boto3.client("eks").update_cluster_version` method.
 
 Boto3 documentation:
-[EKS.Client.update_cluster_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.update_cluster_version)
+[EKS.Client.update_cluster_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.update_cluster_version)
 
 Arguments:
 
@@ -648,7 +648,7 @@ Returns
 Type annotations for `boto3.client("eks").update_nodegroup_config` method.
 
 Boto3 documentation:
-[EKS.Client.update_nodegroup_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.update_nodegroup_config)
+[EKS.Client.update_nodegroup_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.update_nodegroup_config)
 
 Arguments:
 
@@ -670,7 +670,7 @@ Returns
 Type annotations for `boto3.client("eks").update_nodegroup_version` method.
 
 Boto3 documentation:
-[EKS.Client.update_nodegroup_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS.Client.update_nodegroup_version)
+[EKS.Client.update_nodegroup_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS.Client.update_nodegroup_version)
 
 Arguments:
 

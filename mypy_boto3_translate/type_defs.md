@@ -3,7 +3,7 @@
 > [Index](..) > [Translate](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/translate.html#Translate)
+[Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/translate.html#Translate)
 type annotations stubs module
 [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticsearchService](.) > ElasticsearchServiceClient
 
 Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService)
+[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
@@ -69,7 +69,7 @@ def get_es_client() -> ElasticsearchServiceClient:
 ```
 
 Boto3 documentation:
-[ElasticsearchService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client)
+[ElasticsearchService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client)
 
 ## Exceptions
 
@@ -106,7 +106,7 @@ Type annotations for
 `boto3.client("es").accept_inbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection)
+[ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns
 Type annotations for `boto3.client("es").add_tags` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.add_tags)
+[ElasticsearchService.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.add_tags)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Arguments:
 Type annotations for `boto3.client("es").associate_package` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.associate_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.associate_package)
+[ElasticsearchService.Client.associate_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.associate_package)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Returns
 Type annotations for `boto3.client("es").can_paginate` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.can_paginate)
+[ElasticsearchService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.can_paginate)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Type annotations for
 `boto3.client("es").cancel_elasticsearch_service_software_update` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.cancel_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update)
+[ElasticsearchService.Client.cancel_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns
 Type annotations for `boto3.client("es").create_elasticsearch_domain` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.create_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain)
+[ElasticsearchService.Client.create_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Type annotations for
 `boto3.client("es").create_outbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.create_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection)
+[ElasticsearchService.Client.create_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Returns
 Type annotations for `boto3.client("es").create_package` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.create_package)
+[ElasticsearchService.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.create_package)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Returns
 Type annotations for `boto3.client("es").delete_elasticsearch_domain` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.delete_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain)
+[ElasticsearchService.Client.delete_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("es").delete_elasticsearch_service_role`
 method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.delete_elasticsearch_service_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role)
+[ElasticsearchService.Client.delete_elasticsearch_service_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role)
 
 ### delete_inbound_cross_cluster_search_connection
 
@@ -276,7 +276,7 @@ Type annotations for
 `boto3.client("es").delete_inbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection)
+[ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Type annotations for
 `boto3.client("es").delete_outbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection)
+[ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns
 Type annotations for `boto3.client("es").delete_package` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.delete_package)
+[ElasticsearchService.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.delete_package)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns
 Type annotations for `boto3.client("es").describe_domain_auto_tunes` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_domain_auto_tunes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes)
+[ElasticsearchService.Client.describe_domain_auto_tunes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Returns
 Type annotations for `boto3.client("es").describe_elasticsearch_domain` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain)
+[ElasticsearchService.Client.describe_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("es").describe_elasticsearch_domain_config`
 method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config)
+[ElasticsearchService.Client.describe_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("es").describe_elasticsearch_domains`
 method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains)
+[ElasticsearchService.Client.describe_elasticsearch_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Type annotations for
 `boto3.client("es").describe_elasticsearch_instance_type_limits` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_instance_type_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits)
+[ElasticsearchService.Client.describe_elasticsearch_instance_type_limits](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Type annotations for
 `boto3.client("es").describe_inbound_cross_cluster_search_connections` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections)
+[ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Type annotations for
 `boto3.client("es").describe_outbound_cross_cluster_search_connections` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections)
+[ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections)
 
 Arguments:
 
@@ -432,7 +432,7 @@ Returns
 Type annotations for `boto3.client("es").describe_packages` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_packages)
+[ElasticsearchService.Client.describe_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_packages)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Type annotations for
 `boto3.client("es").describe_reserved_elasticsearch_instance_offerings` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings)
+[ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings)
 
 Arguments:
 
@@ -467,7 +467,7 @@ Type annotations for
 `boto3.client("es").describe_reserved_elasticsearch_instances` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.describe_reserved_elasticsearch_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances)
+[ElasticsearchService.Client.describe_reserved_elasticsearch_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances)
 
 Arguments:
 
@@ -483,7 +483,7 @@ Returns
 Type annotations for `boto3.client("es").dissociate_package` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.dissociate_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.dissociate_package)
+[ElasticsearchService.Client.dissociate_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.dissociate_package)
 
 Arguments:
 
@@ -498,7 +498,7 @@ Returns
 Type annotations for `boto3.client("es").generate_presigned_url` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.generate_presigned_url)
+[ElasticsearchService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("es").get_compatible_elasticsearch_versions`
 method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.get_compatible_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions)
+[ElasticsearchService.Client.get_compatible_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions)
 
 Arguments:
 
@@ -529,7 +529,7 @@ Returns
 Type annotations for `boto3.client("es").get_package_version_history` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.get_package_version_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.get_package_version_history)
+[ElasticsearchService.Client.get_package_version_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.get_package_version_history)
 
 Arguments:
 
@@ -545,7 +545,7 @@ Returns
 Type annotations for `boto3.client("es").get_upgrade_history` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.get_upgrade_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history)
+[ElasticsearchService.Client.get_upgrade_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history)
 
 Arguments:
 
@@ -561,7 +561,7 @@ Returns
 Type annotations for `boto3.client("es").get_upgrade_status` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.get_upgrade_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status)
+[ElasticsearchService.Client.get_upgrade_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Returns
 Type annotations for `boto3.client("es").list_domain_names` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
+[ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
 
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
@@ -585,7 +585,7 @@ Returns
 Type annotations for `boto3.client("es").list_domains_for_package` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.list_domains_for_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package)
+[ElasticsearchService.Client.list_domains_for_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Type annotations for `boto3.client("es").list_elasticsearch_instance_types`
 method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.list_elasticsearch_instance_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types)
+[ElasticsearchService.Client.list_elasticsearch_instance_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Returns
 Type annotations for `boto3.client("es").list_elasticsearch_versions` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.list_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions)
+[ElasticsearchService.Client.list_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions)
 
 Arguments:
 
@@ -634,7 +634,7 @@ Returns
 Type annotations for `boto3.client("es").list_packages_for_domain` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.list_packages_for_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain)
+[ElasticsearchService.Client.list_packages_for_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain)
 
 Arguments:
 
@@ -650,7 +650,7 @@ Returns
 Type annotations for `boto3.client("es").list_tags` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.list_tags)
+[ElasticsearchService.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.list_tags)
 
 Arguments:
 
@@ -664,7 +664,7 @@ Type annotations for
 `boto3.client("es").purchase_reserved_elasticsearch_instance_offering` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering)
+[ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering)
 
 Arguments:
 
@@ -681,7 +681,7 @@ Type annotations for
 `boto3.client("es").reject_inbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection)
+[ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection)
 
 Arguments:
 
@@ -695,7 +695,7 @@ Returns
 Type annotations for `boto3.client("es").remove_tags` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.remove_tags)
+[ElasticsearchService.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.remove_tags)
 
 Arguments:
 
@@ -708,7 +708,7 @@ Type annotations for
 `boto3.client("es").start_elasticsearch_service_software_update` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.start_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update)
+[ElasticsearchService.Client.start_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update)
 
 Arguments:
 
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("es").update_elasticsearch_domain_config`
 method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.update_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config)
+[ElasticsearchService.Client.update_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config)
 
 Arguments:
 
@@ -759,7 +759,7 @@ Returns
 Type annotations for `boto3.client("es").update_package` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.update_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.update_package)
+[ElasticsearchService.Client.update_package](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.update_package)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Returns
 Type annotations for `boto3.client("es").upgrade_elasticsearch_domain` method.
 
 Boto3 documentation:
-[ElasticsearchService.Client.upgrade_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain)
+[ElasticsearchService.Client.upgrade_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain)
 
 Arguments:
 

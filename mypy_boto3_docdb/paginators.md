@@ -3,7 +3,7 @@
 > [Index](..) > [DocDB](.) > Paginators
 
 Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB)
+[DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB)
 type annotations stubs module
 [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
@@ -36,7 +36,7 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeCertificates)
+[DocDB.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeCertificates)
 
 Arguments for `DescribeCertificatesPaginator.paginate` method:
 
@@ -63,7 +63,7 @@ def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterPar
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameterGroups)
+[DocDB.Paginator.DescribeDBClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameterGroups)
 
 Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
 
@@ -90,7 +90,7 @@ def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParameter
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameters)
+[DocDB.Paginator.DescribeDBClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameters)
 
 Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
 
@@ -118,7 +118,7 @@ def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsP
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterSnapshots)
+[DocDB.Paginator.DescribeDBClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterSnapshots)
 
 Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
 
@@ -149,7 +149,7 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusters)
+[DocDB.Paginator.DescribeDBClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusters)
 
 Arguments for `DescribeDBClustersPaginator.paginate` method:
 
@@ -176,7 +176,7 @@ def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPagin
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBEngineVersions)
+[DocDB.Paginator.DescribeDBEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBEngineVersions)
 
 Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
 
@@ -208,7 +208,7 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBInstances)
+[DocDB.Paginator.DescribeDBInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBInstances)
 
 Arguments for `DescribeDBInstancesPaginator.paginate` method:
 
@@ -235,7 +235,7 @@ def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeDBSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeDBSubnetGroups)
+[DocDB.Paginator.DescribeDBSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeDBSubnetGroups)
 
 Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
 
@@ -262,7 +262,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeEventSubscriptions)
+[DocDB.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeEventSubscriptions)
 
 Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 
@@ -288,7 +288,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeEvents)
+[DocDB.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeEvents)
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
@@ -320,7 +320,7 @@ def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableD
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribeOrderableDBInstanceOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribeOrderableDBInstanceOptions)
+[DocDB.Paginator.DescribeOrderableDBInstanceOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribeOrderableDBInstanceOptions)
 
 Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
 
@@ -351,7 +351,7 @@ def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaint
 ```
 
 Boto3 documentation:
-[DocDB.Paginator.DescribePendingMaintenanceActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB.Paginator.DescribePendingMaintenanceActions)
+[DocDB.Paginator.DescribePendingMaintenanceActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB.Paginator.DescribePendingMaintenanceActions)
 
 Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
 

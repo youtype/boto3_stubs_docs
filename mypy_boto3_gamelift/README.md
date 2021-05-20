@@ -3,7 +3,7 @@
 > [Index](..) > GameLift
 
 Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/gamelift.html#GameLift)
+[GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/gamelift.html#GameLift)
 type annotations stubs module
 [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 

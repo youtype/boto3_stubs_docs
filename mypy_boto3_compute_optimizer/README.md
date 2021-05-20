@@ -3,7 +3,7 @@
 > [Index](..) > ComputeOptimizer
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 

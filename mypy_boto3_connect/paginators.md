@@ -3,7 +3,7 @@
 > [Index](..) > [Connect](.) > Paginators
 
 Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect)
+[Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect)
 type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
@@ -46,7 +46,7 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.GetMetricData](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.GetMetricData)
+[Connect.Paginator.GetMetricData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.GetMetricData)
 
 Arguments for `GetMetricDataPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_approved_origins_paginator() -> ListApprovedOriginsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListApprovedOrigins](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListApprovedOrigins)
+[Connect.Paginator.ListApprovedOrigins](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListApprovedOrigins)
 
 Arguments for `ListApprovedOriginsPaginator.paginate` method:
 
@@ -105,7 +105,7 @@ def get_list_contact_flows_paginator() -> ListContactFlowsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListContactFlows](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListContactFlows)
+[Connect.Paginator.ListContactFlows](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListContactFlows)
 
 Arguments for `ListContactFlowsPaginator.paginate` method:
 
@@ -133,7 +133,7 @@ def get_list_hours_of_operations_paginator() -> ListHoursOfOperationsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListHoursOfOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListHoursOfOperations)
+[Connect.Paginator.ListHoursOfOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListHoursOfOperations)
 
 Arguments for `ListHoursOfOperationsPaginator.paginate` method:
 
@@ -159,7 +159,7 @@ def get_list_instance_attributes_paginator() -> ListInstanceAttributesPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListInstanceAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListInstanceAttributes)
+[Connect.Paginator.ListInstanceAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListInstanceAttributes)
 
 Arguments for `ListInstanceAttributesPaginator.paginate` method:
 
@@ -185,7 +185,7 @@ def get_list_instance_storage_configs_paginator() -> ListInstanceStorageConfigsP
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListInstanceStorageConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListInstanceStorageConfigs)
+[Connect.Paginator.ListInstanceStorageConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListInstanceStorageConfigs)
 
 Arguments for `ListInstanceStorageConfigsPaginator.paginate` method:
 
@@ -213,7 +213,7 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListInstances)
+[Connect.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListInstances)
 
 Arguments for `ListInstancesPaginator.paginate` method:
 
@@ -238,7 +238,7 @@ def get_list_integration_associations_paginator() -> ListIntegrationAssociations
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListIntegrationAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListIntegrationAssociations)
+[Connect.Paginator.ListIntegrationAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListIntegrationAssociations)
 
 Arguments for `ListIntegrationAssociationsPaginator.paginate` method:
 
@@ -264,7 +264,7 @@ def get_list_lambda_functions_paginator() -> ListLambdaFunctionsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListLambdaFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListLambdaFunctions)
+[Connect.Paginator.ListLambdaFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListLambdaFunctions)
 
 Arguments for `ListLambdaFunctionsPaginator.paginate` method:
 
@@ -289,7 +289,7 @@ def get_list_lex_bots_paginator() -> ListLexBotsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListLexBots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListLexBots)
+[Connect.Paginator.ListLexBots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListLexBots)
 
 Arguments for `ListLexBotsPaginator.paginate` method:
 
@@ -315,7 +315,7 @@ def get_list_phone_numbers_paginator() -> ListPhoneNumbersPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListPhoneNumbers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListPhoneNumbers)
+[Connect.Paginator.ListPhoneNumbers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListPhoneNumbers)
 
 Arguments for `ListPhoneNumbersPaginator.paginate` method:
 
@@ -344,7 +344,7 @@ def get_list_prompts_paginator() -> ListPromptsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListPrompts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListPrompts)
+[Connect.Paginator.ListPrompts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListPrompts)
 
 Arguments for `ListPromptsPaginator.paginate` method:
 
@@ -370,7 +370,7 @@ def get_list_queue_quick_connects_paginator() -> ListQueueQuickConnectsPaginator
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListQueueQuickConnects](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListQueueQuickConnects)
+[Connect.Paginator.ListQueueQuickConnects](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListQueueQuickConnects)
 
 Arguments for `ListQueueQuickConnectsPaginator.paginate` method:
 
@@ -396,7 +396,7 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListQueues)
+[Connect.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListQueues)
 
 Arguments for `ListQueuesPaginator.paginate` method:
 
@@ -423,7 +423,7 @@ def get_list_quick_connects_paginator() -> ListQuickConnectsPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListQuickConnects](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListQuickConnects)
+[Connect.Paginator.ListQuickConnects](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListQuickConnects)
 
 Arguments for `ListQuickConnectsPaginator.paginate` method:
 
@@ -451,7 +451,7 @@ def get_list_routing_profile_queues_paginator() -> ListRoutingProfileQueuesPagin
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListRoutingProfileQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListRoutingProfileQueues)
+[Connect.Paginator.ListRoutingProfileQueues](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListRoutingProfileQueues)
 
 Arguments for `ListRoutingProfileQueuesPaginator.paginate` method:
 
@@ -478,7 +478,7 @@ def get_list_routing_profiles_paginator() -> ListRoutingProfilesPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListRoutingProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListRoutingProfiles)
+[Connect.Paginator.ListRoutingProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListRoutingProfiles)
 
 Arguments for `ListRoutingProfilesPaginator.paginate` method:
 
@@ -504,7 +504,7 @@ def get_list_security_keys_paginator() -> ListSecurityKeysPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListSecurityKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListSecurityKeys)
+[Connect.Paginator.ListSecurityKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListSecurityKeys)
 
 Arguments for `ListSecurityKeysPaginator.paginate` method:
 
@@ -530,7 +530,7 @@ def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListSecurityProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListSecurityProfiles)
+[Connect.Paginator.ListSecurityProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListSecurityProfiles)
 
 Arguments for `ListSecurityProfilesPaginator.paginate` method:
 
@@ -555,7 +555,7 @@ def get_list_use_cases_paginator() -> ListUseCasesPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListUseCases](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListUseCases)
+[Connect.Paginator.ListUseCases](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListUseCases)
 
 Arguments for `ListUseCasesPaginator.paginate` method:
 
@@ -582,7 +582,7 @@ def get_list_user_hierarchy_groups_paginator() -> ListUserHierarchyGroupsPaginat
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListUserHierarchyGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListUserHierarchyGroups)
+[Connect.Paginator.ListUserHierarchyGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListUserHierarchyGroups)
 
 Arguments for `ListUserHierarchyGroupsPaginator.paginate` method:
 
@@ -607,7 +607,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
 ```
 
 Boto3 documentation:
-[Connect.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect.Paginator.ListUsers)
+[Connect.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect.Paginator.ListUsers)
 
 Arguments for `ListUsersPaginator.paginate` method:
 

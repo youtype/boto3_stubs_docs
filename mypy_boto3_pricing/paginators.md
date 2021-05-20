@@ -3,7 +3,7 @@
 > [Index](..) > [Pricing](.) > Paginators
 
 Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pricing.html#Pricing)
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing)
 type annotations stubs module
 [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
@@ -27,7 +27,7 @@ def get_describe_services_paginator() -> DescribeServicesPaginator:
 ```
 
 Boto3 documentation:
-[Pricing.Paginator.DescribeServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pricing.html#Pricing.Paginator.DescribeServices)
+[Pricing.Paginator.DescribeServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Paginator.DescribeServices)
 
 Arguments for `DescribeServicesPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_get_attribute_values_paginator() -> GetAttributeValuesPaginator:
 ```
 
 Boto3 documentation:
-[Pricing.Paginator.GetAttributeValues](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pricing.html#Pricing.Paginator.GetAttributeValues)
+[Pricing.Paginator.GetAttributeValues](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Paginator.GetAttributeValues)
 
 Arguments for `GetAttributeValuesPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_get_products_paginator() -> GetProductsPaginator:
 ```
 
 Boto3 documentation:
-[Pricing.Paginator.GetProducts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pricing.html#Pricing.Paginator.GetProducts)
+[Pricing.Paginator.GetProducts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Paginator.GetProducts)
 
 Arguments for `GetProductsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > Personalize
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -80,6 +80,7 @@ from mypy_boto3_personalize.client import PersonalizeClient
 - [list_schemas](./client.md#list_schemas)
 - [list_solution_versions](./client.md#list_solution_versions)
 - [list_solutions](./client.md#list_solutions)
+- [stop_solution_version_creation](./client.md#stop_solution_version_creation)
 - [update_campaign](./client.md#update_campaign)
 
 ### Exceptions

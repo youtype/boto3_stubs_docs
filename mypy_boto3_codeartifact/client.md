@@ -3,7 +3,7 @@
 > [Index](..) > [CodeArtifact](.) > CodeArtifactClient
 
 Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact)
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
 [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
@@ -63,7 +63,7 @@ def get_codeartifact_client() -> CodeArtifactClient:
 ```
 
 Boto3 documentation:
-[CodeArtifact.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client)
+[CodeArtifact.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Type annotations for
 `boto3.client("codeartifact").associate_external_connection` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.associate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
+[CodeArtifact.Client.associate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").can_paginate` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate)
+[CodeArtifact.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate)
 
 Arguments:
 
@@ -127,7 +127,7 @@ Type annotations for `boto3.client("codeartifact").copy_package_versions`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.copy_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
+[CodeArtifact.Client.copy_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").create_domain` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
+[CodeArtifact.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 Type annotations for `boto3.client("codeartifact").create_repository` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
+[CodeArtifact.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").delete_domain` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
+[CodeArtifact.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Type annotations for
 `boto3.client("codeartifact").delete_domain_permissions_policy` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.delete_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
+[CodeArtifact.Client.delete_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("codeartifact").delete_package_versions`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.delete_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
+[CodeArtifact.Client.delete_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
 
 Arguments:
 
@@ -240,7 +240,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").delete_repository` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
+[CodeArtifact.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
 
 Arguments:
 
@@ -257,7 +257,7 @@ Type annotations for
 `boto3.client("codeartifact").delete_repository_permissions_policy` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.delete_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
+[CodeArtifact.Client.delete_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").describe_domain` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
+[CodeArtifact.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
 
 Arguments:
 
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("codeartifact").describe_package_version`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
+[CodeArtifact.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").describe_repository` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.describe_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
+[CodeArtifact.Client.describe_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Type annotations for
 `boto3.client("codeartifact").disassociate_external_connection` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.disassociate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
+[CodeArtifact.Client.disassociate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
 
 Arguments:
 
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("codeartifact").dispose_package_versions`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.dispose_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
+[CodeArtifact.Client.dispose_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
 
 Arguments:
 
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("codeartifact").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url)
+[CodeArtifact.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url)
 
 Arguments:
 
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("codeartifact").get_authorization_token`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
+[CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Type annotations for
 `boto3.client("codeartifact").get_domain_permissions_policy` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.get_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
+[CodeArtifact.Client.get_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("codeartifact").get_package_version_asset`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.get_package_version_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
+[CodeArtifact.Client.get_package_version_asset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
 
 Arguments:
 
@@ -442,7 +442,7 @@ Type annotations for `boto3.client("codeartifact").get_package_version_readme`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.get_package_version_readme](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
+[CodeArtifact.Client.get_package_version_readme](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Type annotations for `boto3.client("codeartifact").get_repository_endpoint`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.get_repository_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
+[CodeArtifact.Client.get_repository_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Type annotations for
 `boto3.client("codeartifact").get_repository_permissions_policy` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.get_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
+[CodeArtifact.Client.get_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").list_domains` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
+[CodeArtifact.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
 
 Arguments:
 
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("codeartifact").list_package_version_assets`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_package_version_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
+[CodeArtifact.Client.list_package_version_assets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Type annotations for
 `boto3.client("codeartifact").list_package_version_dependencies` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_package_version_dependencies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
+[CodeArtifact.Client.list_package_version_dependencies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
 
 Arguments:
 
@@ -557,7 +557,7 @@ Type annotations for `boto3.client("codeartifact").list_package_versions`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
+[CodeArtifact.Client.list_package_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
 
 Arguments:
 
@@ -581,7 +581,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").list_packages` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
+[CodeArtifact.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
 
 Arguments:
 
@@ -601,7 +601,7 @@ Returns [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef).
 Type annotations for `boto3.client("codeartifact").list_repositories` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
+[CodeArtifact.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
 
 Arguments:
 
@@ -618,7 +618,7 @@ Type annotations for `boto3.client("codeartifact").list_repositories_in_domain`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_repositories_in_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
+[CodeArtifact.Client.list_repositories_in_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Type annotations for `boto3.client("codeartifact").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CodeArtifact.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
+[CodeArtifact.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -653,7 +653,7 @@ Type annotations for
 `boto3.client("codeartifact").put_domain_permissions_policy` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.put_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
+[CodeArtifact.Client.put_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
 
 Arguments:
 
@@ -671,7 +671,7 @@ Type annotations for
 `boto3.client("codeartifact").put_repository_permissions_policy` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.put_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
+[CodeArtifact.Client.put_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
 
 Arguments:
 
@@ -689,7 +689,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").tag_resource` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
+[CodeArtifact.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
 
 Arguments:
 
@@ -703,7 +703,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("codeartifact").untag_resource` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
+[CodeArtifact.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
 
 Arguments:
 
@@ -718,7 +718,7 @@ Type annotations for
 `boto3.client("codeartifact").update_package_versions_status` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.update_package_versions_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
+[CodeArtifact.Client.update_package_versions_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
 
 Arguments:
 
@@ -744,7 +744,7 @@ Returns
 Type annotations for `boto3.client("codeartifact").update_repository` method.
 
 Boto3 documentation:
-[CodeArtifact.Client.update_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
+[CodeArtifact.Client.update_repository](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
 
 Arguments:
 

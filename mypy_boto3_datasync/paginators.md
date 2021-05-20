@@ -3,7 +3,7 @@
 > [Index](..) > [DataSync](.) > Paginators
 
 Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync)
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync)
 type annotations stubs module
 [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
@@ -28,7 +28,7 @@ def get_list_agents_paginator() -> ListAgentsPaginator:
 ```
 
 Boto3 documentation:
-[DataSync.Paginator.ListAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync.Paginator.ListAgents)
+[DataSync.Paginator.ListAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync.Paginator.ListAgents)
 
 Arguments for `ListAgentsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_locations_paginator() -> ListLocationsPaginator:
 ```
 
 Boto3 documentation:
-[DataSync.Paginator.ListLocations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync.Paginator.ListLocations)
+[DataSync.Paginator.ListLocations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync.Paginator.ListLocations)
 
 Arguments for `ListLocationsPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[DataSync.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
+[DataSync.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 
@@ -106,7 +106,7 @@ def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
 ```
 
 Boto3 documentation:
-[DataSync.Paginator.ListTaskExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
+[DataSync.Paginator.ListTaskExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
 
 Arguments for `ListTaskExecutionsPaginator.paginate` method:
 
@@ -131,7 +131,7 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
 ```
 
 Boto3 documentation:
-[DataSync.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync.Paginator.ListTasks)
+[DataSync.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync.Paginator.ListTasks)
 
 Arguments for `ListTasksPaginator.paginate` method:
 

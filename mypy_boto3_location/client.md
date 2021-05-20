@@ -3,7 +3,7 @@
 > [Index](..) > [LocationService](.) > LocationServiceClient
 
 Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService)
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService)
 type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
@@ -64,7 +64,7 @@ def get_location_client() -> LocationServiceClient:
 ```
 
 Boto3 documentation:
-[LocationService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client)
+[LocationService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Type annotations for `boto3.client("location").associate_tracker_consumer`
 method.
 
 Boto3 documentation:
-[LocationService.Client.associate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.associate_tracker_consumer)
+[LocationService.Client.associate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.associate_tracker_consumer)
 
 Arguments:
 
@@ -110,7 +110,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("location").batch_delete_geofence` method.
 
 Boto3 documentation:
-[LocationService.Client.batch_delete_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.batch_delete_geofence)
+[LocationService.Client.batch_delete_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.batch_delete_geofence)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Type annotations for `boto3.client("location").batch_evaluate_geofences`
 method.
 
 Boto3 documentation:
-[LocationService.Client.batch_evaluate_geofences](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.batch_evaluate_geofences)
+[LocationService.Client.batch_evaluate_geofences](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.batch_evaluate_geofences)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Type annotations for `boto3.client("location").batch_get_device_position`
 method.
 
 Boto3 documentation:
-[LocationService.Client.batch_get_device_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.batch_get_device_position)
+[LocationService.Client.batch_get_device_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.batch_get_device_position)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns
 Type annotations for `boto3.client("location").batch_put_geofence` method.
 
 Boto3 documentation:
-[LocationService.Client.batch_put_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.batch_put_geofence)
+[LocationService.Client.batch_put_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.batch_put_geofence)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Type annotations for `boto3.client("location").batch_update_device_position`
 method.
 
 Boto3 documentation:
-[LocationService.Client.batch_update_device_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.batch_update_device_position)
+[LocationService.Client.batch_update_device_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.batch_update_device_position)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Returns
 Type annotations for `boto3.client("location").can_paginate` method.
 
 Boto3 documentation:
-[LocationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.can_paginate)
+[LocationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.can_paginate)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("location").create_geofence_collection`
 method.
 
 Boto3 documentation:
-[LocationService.Client.create_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.create_geofence_collection)
+[LocationService.Client.create_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.create_geofence_collection)
 
 Arguments:
 
@@ -225,7 +225,7 @@ Returns
 Type annotations for `boto3.client("location").create_map` method.
 
 Boto3 documentation:
-[LocationService.Client.create_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.create_map)
+[LocationService.Client.create_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.create_map)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
 Type annotations for `boto3.client("location").create_place_index` method.
 
 Boto3 documentation:
-[LocationService.Client.create_place_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.create_place_index)
+[LocationService.Client.create_place_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.create_place_index)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns
 Type annotations for `boto3.client("location").create_tracker` method.
 
 Boto3 documentation:
-[LocationService.Client.create_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.create_tracker)
+[LocationService.Client.create_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.create_tracker)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("location").delete_geofence_collection`
 method.
 
 Boto3 documentation:
-[LocationService.Client.delete_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.delete_geofence_collection)
+[LocationService.Client.delete_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.delete_geofence_collection)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("location").delete_map` method.
 
 Boto3 documentation:
-[LocationService.Client.delete_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.delete_map)
+[LocationService.Client.delete_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.delete_map)
 
 Arguments:
 
@@ -306,7 +306,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("location").delete_place_index` method.
 
 Boto3 documentation:
-[LocationService.Client.delete_place_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.delete_place_index)
+[LocationService.Client.delete_place_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.delete_place_index)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("location").delete_tracker` method.
 
 Boto3 documentation:
-[LocationService.Client.delete_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.delete_tracker)
+[LocationService.Client.delete_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.delete_tracker)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Type annotations for `boto3.client("location").describe_geofence_collection`
 method.
 
 Boto3 documentation:
-[LocationService.Client.describe_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.describe_geofence_collection)
+[LocationService.Client.describe_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.describe_geofence_collection)
 
 Arguments:
 
@@ -347,7 +347,7 @@ Returns
 Type annotations for `boto3.client("location").describe_map` method.
 
 Boto3 documentation:
-[LocationService.Client.describe_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.describe_map)
+[LocationService.Client.describe_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.describe_map)
 
 Arguments:
 
@@ -361,7 +361,7 @@ Returns
 Type annotations for `boto3.client("location").describe_place_index` method.
 
 Boto3 documentation:
-[LocationService.Client.describe_place_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.describe_place_index)
+[LocationService.Client.describe_place_index](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.describe_place_index)
 
 Arguments:
 
@@ -375,7 +375,7 @@ Returns
 Type annotations for `boto3.client("location").describe_tracker` method.
 
 Boto3 documentation:
-[LocationService.Client.describe_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.describe_tracker)
+[LocationService.Client.describe_tracker](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.describe_tracker)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("location").disassociate_tracker_consumer`
 method.
 
 Boto3 documentation:
-[LocationService.Client.disassociate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer)
+[LocationService.Client.disassociate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer)
 
 Arguments:
 
@@ -404,7 +404,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("location").generate_presigned_url` method.
 
 Boto3 documentation:
-[LocationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.generate_presigned_url)
+[LocationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -420,7 +420,7 @@ Returns `str`.
 Type annotations for `boto3.client("location").get_device_position` method.
 
 Boto3 documentation:
-[LocationService.Client.get_device_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_device_position)
+[LocationService.Client.get_device_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_device_position)
 
 Arguments:
 
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("location").get_device_position_history`
 method.
 
 Boto3 documentation:
-[LocationService.Client.get_device_position_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_device_position_history)
+[LocationService.Client.get_device_position_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_device_position_history)
 
 Arguments:
 
@@ -454,7 +454,7 @@ Returns
 Type annotations for `boto3.client("location").get_geofence` method.
 
 Boto3 documentation:
-[LocationService.Client.get_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_geofence)
+[LocationService.Client.get_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_geofence)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Returns
 Type annotations for `boto3.client("location").get_map_glyphs` method.
 
 Boto3 documentation:
-[LocationService.Client.get_map_glyphs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_map_glyphs)
+[LocationService.Client.get_map_glyphs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_map_glyphs)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns
 Type annotations for `boto3.client("location").get_map_sprites` method.
 
 Boto3 documentation:
-[LocationService.Client.get_map_sprites](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_map_sprites)
+[LocationService.Client.get_map_sprites](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_map_sprites)
 
 Arguments:
 
@@ -501,7 +501,7 @@ Type annotations for `boto3.client("location").get_map_style_descriptor`
 method.
 
 Boto3 documentation:
-[LocationService.Client.get_map_style_descriptor](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_map_style_descriptor)
+[LocationService.Client.get_map_style_descriptor](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_map_style_descriptor)
 
 Arguments:
 
@@ -515,7 +515,7 @@ Returns
 Type annotations for `boto3.client("location").get_map_tile` method.
 
 Boto3 documentation:
-[LocationService.Client.get_map_tile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.get_map_tile)
+[LocationService.Client.get_map_tile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.get_map_tile)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Type annotations for `boto3.client("location").list_geofence_collections`
 method.
 
 Boto3 documentation:
-[LocationService.Client.list_geofence_collections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.list_geofence_collections)
+[LocationService.Client.list_geofence_collections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.list_geofence_collections)
 
 Arguments:
 
@@ -547,7 +547,7 @@ Returns
 Type annotations for `boto3.client("location").list_geofences` method.
 
 Boto3 documentation:
-[LocationService.Client.list_geofences](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.list_geofences)
+[LocationService.Client.list_geofences](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.list_geofences)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Returns
 Type annotations for `boto3.client("location").list_maps` method.
 
 Boto3 documentation:
-[LocationService.Client.list_maps](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.list_maps)
+[LocationService.Client.list_maps](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.list_maps)
 
 Arguments:
 
@@ -576,7 +576,7 @@ Returns [ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef).
 Type annotations for `boto3.client("location").list_place_indexes` method.
 
 Boto3 documentation:
-[LocationService.Client.list_place_indexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.list_place_indexes)
+[LocationService.Client.list_place_indexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.list_place_indexes)
 
 Arguments:
 
@@ -591,7 +591,7 @@ Returns
 Type annotations for `boto3.client("location").list_tracker_consumers` method.
 
 Boto3 documentation:
-[LocationService.Client.list_tracker_consumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.list_tracker_consumers)
+[LocationService.Client.list_tracker_consumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.list_tracker_consumers)
 
 Arguments:
 
@@ -607,7 +607,7 @@ Returns
 Type annotations for `boto3.client("location").list_trackers` method.
 
 Boto3 documentation:
-[LocationService.Client.list_trackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.list_trackers)
+[LocationService.Client.list_trackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.list_trackers)
 
 Arguments:
 
@@ -622,7 +622,7 @@ Returns
 Type annotations for `boto3.client("location").put_geofence` method.
 
 Boto3 documentation:
-[LocationService.Client.put_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.put_geofence)
+[LocationService.Client.put_geofence](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.put_geofence)
 
 Arguments:
 
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("location").search_place_index_for_position`
 method.
 
 Boto3 documentation:
-[LocationService.Client.search_place_index_for_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.search_place_index_for_position)
+[LocationService.Client.search_place_index_for_position](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.search_place_index_for_position)
 
 Arguments:
 
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("location").search_place_index_for_text`
 method.
 
 Boto3 documentation:
-[LocationService.Client.search_place_index_for_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Client.search_place_index_for_text)
+[LocationService.Client.search_place_index_for_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Client.search_place_index_for_text)
 
 Arguments:
 

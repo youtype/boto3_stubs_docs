@@ -3,7 +3,7 @@
 > [Index](..) > MarketplaceEntitlementService
 
 Auto-generated documentation for
-[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module
 [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 

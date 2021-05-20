@@ -3,7 +3,7 @@
 > [Index](..) > [SagemakerEdgeManager](.) > SagemakerEdgeManagerClient
 
 Auto-generated documentation for
-[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
+[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
 type annotations stubs module
 [mypy_boto3_sagemaker_edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
@@ -30,7 +30,7 @@ def get_sagemaker-edge_client() -> SagemakerEdgeManagerClient:
 ```
 
 Boto3 documentation:
-[SagemakerEdgeManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client)
+[SagemakerEdgeManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client)
 
 ## Exceptions
 
@@ -56,7 +56,7 @@ Exceptions:
 Type annotations for `boto3.client("sagemaker-edge").can_paginate` method.
 
 Boto3 documentation:
-[SagemakerEdgeManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.can_paginate)
+[SagemakerEdgeManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.can_paginate)
 
 Arguments:
 
@@ -70,7 +70,7 @@ Type annotations for `boto3.client("sagemaker-edge").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SagemakerEdgeManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.generate_presigned_url)
+[SagemakerEdgeManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.generate_presigned_url)
 
 Arguments:
 
@@ -87,7 +87,7 @@ Type annotations for `boto3.client("sagemaker-edge").get_device_registration`
 method.
 
 Boto3 documentation:
-[SagemakerEdgeManager.Client.get_device_registration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration)
+[SagemakerEdgeManager.Client.get_device_registration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration)
 
 Arguments:
 
@@ -102,7 +102,7 @@ Returns
 Type annotations for `boto3.client("sagemaker-edge").send_heartbeat` method.
 
 Boto3 documentation:
-[SagemakerEdgeManager.Client.send_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat)
+[SagemakerEdgeManager.Client.send_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat)
 
 Arguments:
 

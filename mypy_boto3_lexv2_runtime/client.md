@@ -3,7 +3,7 @@
 > [Index](..) > [LexRuntimeV2](.) > LexRuntimeV2Client
 
 Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2)
+[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
 [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
@@ -33,7 +33,7 @@ def get_lexv2-runtime_client() -> LexRuntimeV2Client:
 ```
 
 Boto3 documentation:
-[LexRuntimeV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client)
+[LexRuntimeV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 Type annotations for `boto3.client("lexv2-runtime").can_paginate` method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.can_paginate)
+[LexRuntimeV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.can_paginate)
 
 Arguments:
 
@@ -79,7 +79,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lexv2-runtime").delete_session` method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
+[LexRuntimeV2.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Type annotations for `boto3.client("lexv2-runtime").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.generate_presigned_url)
+[LexRuntimeV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -113,7 +113,7 @@ Returns `str`.
 Type annotations for `boto3.client("lexv2-runtime").get_session` method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
+[LexRuntimeV2.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 Type annotations for `boto3.client("lexv2-runtime").put_session` method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
+[LexRuntimeV2.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
 Type annotations for `boto3.client("lexv2-runtime").recognize_text` method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.recognize_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
+[LexRuntimeV2.Client.recognize_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("lexv2-runtime").recognize_utterance`
 method.
 
 Boto3 documentation:
-[LexRuntimeV2.Client.recognize_utterance](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
+[LexRuntimeV2.Client.recognize_utterance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
 
 Arguments:
 

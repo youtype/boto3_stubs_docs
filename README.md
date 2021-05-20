@@ -21,1078 +21,1078 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 ## Services type annotations
 
 - [mypy-boto3-accessanalyzer](./mypy_boto3_accessanalyzer) for
-  [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/accessanalyzer.html#AccessAnalyzer)
+  [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/accessanalyzer.html#AccessAnalyzer)
   service
 
 - [mypy-boto3-acm](./mypy_boto3_acm) for
-  [ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/acm.html#ACM)
+  [ACM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm.html#ACM)
   service
 
 - [mypy-boto3-acm-pca](./mypy_boto3_acm_pca) for
-  [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/acm-pca.html#ACMPCA)
+  [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm-pca.html#ACMPCA)
   service
 
 - [mypy-boto3-alexaforbusiness](./mypy_boto3_alexaforbusiness) for
-  [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/alexaforbusiness.html#AlexaForBusiness)
+  [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness)
   service
 
 - [mypy-boto3-amp](./mypy_boto3_amp) for
-  [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amp.html#PrometheusService)
+  [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/amp.html#PrometheusService)
   service
 
 - [mypy-boto3-amplify](./mypy_boto3_amplify) for
-  [Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplify.html#Amplify)
+  [Amplify](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/amplify.html#Amplify)
   service
 
 - [mypy-boto3-amplifybackend](./mypy_boto3_amplifybackend) for
-  [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/amplifybackend.html#AmplifyBackend)
+  [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/amplifybackend.html#AmplifyBackend)
   service
 
 - [mypy-boto3-apigateway](./mypy_boto3_apigateway) for
-  [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigateway.html#APIGateway)
+  [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway)
   service
 
 - [mypy-boto3-apigatewaymanagementapi](./mypy_boto3_apigatewaymanagementapi)
   for
-  [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
+  [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
   service
 
 - [mypy-boto3-apigatewayv2](./mypy_boto3_apigatewayv2) for
-  [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/apigatewayv2.html#ApiGatewayV2)
+  [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2)
   service
 
 - [mypy-boto3-appconfig](./mypy_boto3_appconfig) for
-  [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appconfig.html#AppConfig)
+  [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appconfig.html#AppConfig)
   service
 
 - [mypy-boto3-appflow](./mypy_boto3_appflow) for
-  [Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appflow.html#Appflow)
+  [Appflow](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appflow.html#Appflow)
   service
 
 - [mypy-boto3-appintegrations](./mypy_boto3_appintegrations) for
-  [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appintegrations.html#AppIntegrationsService)
+  [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appintegrations.html#AppIntegrationsService)
   service
 
 - [mypy-boto3-application-autoscaling](./mypy_boto3_application_autoscaling)
   for
-  [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+  [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/application-autoscaling.html#ApplicationAutoScaling)
   service
 
 - [mypy-boto3-application-insights](./mypy_boto3_application_insights) for
-  [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/application-insights.html#ApplicationInsights)
+  [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/application-insights.html#ApplicationInsights)
   service
 
 - [mypy-boto3-appmesh](./mypy_boto3_appmesh) for
-  [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appmesh.html#AppMesh)
+  [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appmesh.html#AppMesh)
   service
 
 - [mypy-boto3-appstream](./mypy_boto3_appstream) for
-  [AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appstream.html#AppStream)
+  [AppStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appstream.html#AppStream)
   service
 
 - [mypy-boto3-appsync](./mypy_boto3_appsync) for
-  [AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/appsync.html#AppSync)
+  [AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appsync.html#AppSync)
   service
 
 - [mypy-boto3-athena](./mypy_boto3_athena) for
-  [Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/athena.html#Athena)
+  [Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/athena.html#Athena)
   service
 
 - [mypy-boto3-auditmanager](./mypy_boto3_auditmanager) for
-  [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/auditmanager.html#AuditManager)
+  [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/auditmanager.html#AuditManager)
   service
 
 - [mypy-boto3-autoscaling](./mypy_boto3_autoscaling) for
-  [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling.html#AutoScaling)
+  [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/autoscaling.html#AutoScaling)
   service
 
 - [mypy-boto3-autoscaling-plans](./mypy_boto3_autoscaling_plans) for
-  [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/autoscaling-plans.html#AutoScalingPlans)
+  [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/autoscaling-plans.html#AutoScalingPlans)
   service
 
 - [mypy-boto3-backup](./mypy_boto3_backup) for
-  [Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/backup.html#Backup)
+  [Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/backup.html#Backup)
   service
 
 - [mypy-boto3-batch](./mypy_boto3_batch) for
-  [Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/batch.html#Batch)
+  [Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch)
   service
 
 - [mypy-boto3-braket](./mypy_boto3_braket) for
-  [Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/braket.html#Braket)
+  [Braket](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/braket.html#Braket)
   service
 
 - [mypy-boto3-budgets](./mypy_boto3_budgets) for
-  [Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/budgets.html#Budgets)
+  [Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/budgets.html#Budgets)
   service
 
 - [mypy-boto3-ce](./mypy_boto3_ce) for
-  [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ce.html#CostExplorer)
+  [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ce.html#CostExplorer)
   service
 
 - [mypy-boto3-chime](./mypy_boto3_chime) for
-  [Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/chime.html#Chime)
+  [Chime](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/chime.html#Chime)
   service
 
 - [mypy-boto3-cloud9](./mypy_boto3_cloud9) for
-  [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloud9.html#Cloud9)
+  [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloud9.html#Cloud9)
   service
 
 - [mypy-boto3-clouddirectory](./mypy_boto3_clouddirectory) for
-  [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/clouddirectory.html#CloudDirectory)
+  [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory)
   service
 
 - [mypy-boto3-cloudformation](./mypy_boto3_cloudformation) for
-  [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudformation.html#CloudFormation)
+  [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudformation.html#CloudFormation)
   service
 
 - [mypy-boto3-cloudfront](./mypy_boto3_cloudfront) for
-  [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudfront.html#CloudFront)
+  [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudfront.html#CloudFront)
   service
 
 - [mypy-boto3-cloudhsm](./mypy_boto3_cloudhsm) for
-  [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudhsm.html#CloudHSM)
+  [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudhsm.html#CloudHSM)
   service
 
 - [mypy-boto3-cloudhsmv2](./mypy_boto3_cloudhsmv2) for
-  [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudhsmv2.html#CloudHSMV2)
+  [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudhsmv2.html#CloudHSMV2)
   service
 
 - [mypy-boto3-cloudsearch](./mypy_boto3_cloudsearch) for
-  [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudsearch.html#CloudSearch)
+  [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudsearch.html#CloudSearch)
   service
 
 - [mypy-boto3-cloudsearchdomain](./mypy_boto3_cloudsearchdomain) for
-  [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudsearchdomain.html#CloudSearchDomain)
+  [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudsearchdomain.html#CloudSearchDomain)
   service
 
 - [mypy-boto3-cloudtrail](./mypy_boto3_cloudtrail) for
-  [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudtrail.html#CloudTrail)
+  [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudtrail.html#CloudTrail)
   service
 
 - [mypy-boto3-cloudwatch](./mypy_boto3_cloudwatch) for
-  [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cloudwatch.html#CloudWatch)
+  [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch)
   service
 
 - [mypy-boto3-codeartifact](./mypy_boto3_codeartifact) for
-  [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeartifact.html#CodeArtifact)
+  [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeartifact.html#CodeArtifact)
   service
 
 - [mypy-boto3-codebuild](./mypy_boto3_codebuild) for
-  [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codebuild.html#CodeBuild)
+  [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codebuild.html#CodeBuild)
   service
 
 - [mypy-boto3-codecommit](./mypy_boto3_codecommit) for
-  [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codecommit.html#CodeCommit)
+  [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit)
   service
 
 - [mypy-boto3-codedeploy](./mypy_boto3_codedeploy) for
-  [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codedeploy.html#CodeDeploy)
+  [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codedeploy.html#CodeDeploy)
   service
 
 - [mypy-boto3-codeguru-reviewer](./mypy_boto3_codeguru_reviewer) for
-  [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+  [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
   service
 
 - [mypy-boto3-codeguruprofiler](./mypy_boto3_codeguruprofiler) for
-  [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+  [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codeguruprofiler.html#CodeGuruProfiler)
   service
 
 - [mypy-boto3-codepipeline](./mypy_boto3_codepipeline) for
-  [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codepipeline.html#CodePipeline)
+  [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codepipeline.html#CodePipeline)
   service
 
 - [mypy-boto3-codestar](./mypy_boto3_codestar) for
-  [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar.html#CodeStar)
+  [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar.html#CodeStar)
   service
 
 - [mypy-boto3-codestar-connections](./mypy_boto3_codestar_connections) for
-  [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar-connections.html#CodeStarconnections)
+  [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar-connections.html#CodeStarconnections)
   service
 
 - [mypy-boto3-codestar-notifications](./mypy_boto3_codestar_notifications) for
-  [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codestar-notifications.html#CodeStarNotifications)
+  [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codestar-notifications.html#CodeStarNotifications)
   service
 
 - [mypy-boto3-cognito-identity](./mypy_boto3_cognito_identity) for
-  [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-identity.html#CognitoIdentity)
+  [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity)
   service
 
 - [mypy-boto3-cognito-idp](./mypy_boto3_cognito_idp) for
-  [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-idp.html#CognitoIdentityProvider)
+  [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-idp.html#CognitoIdentityProvider)
   service
 
 - [mypy-boto3-cognito-sync](./mypy_boto3_cognito_sync) for
-  [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-sync.html#CognitoSync)
+  [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync)
   service
 
 - [mypy-boto3-comprehend](./mypy_boto3_comprehend) for
-  [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/comprehend.html#Comprehend)
+  [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/comprehend.html#Comprehend)
   service
 
 - [mypy-boto3-comprehendmedical](./mypy_boto3_comprehendmedical) for
-  [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/comprehendmedical.html#ComprehendMedical)
+  [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/comprehendmedical.html#ComprehendMedical)
   service
 
 - [mypy-boto3-compute-optimizer](./mypy_boto3_compute_optimizer) for
-  [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/compute-optimizer.html#ComputeOptimizer)
+  [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/compute-optimizer.html#ComputeOptimizer)
   service
 
 - [mypy-boto3-config](./mypy_boto3_config) for
-  [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/config.html#ConfigService)
+  [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/config.html#ConfigService)
   service
 
 - [mypy-boto3-connect](./mypy_boto3_connect) for
-  [Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect.html#Connect)
+  [Connect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect.html#Connect)
   service
 
 - [mypy-boto3-connect-contact-lens](./mypy_boto3_connect_contact_lens) for
-  [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connect-contact-lens.html#ConnectContactLens)
+  [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connect-contact-lens.html#ConnectContactLens)
   service
 
 - [mypy-boto3-connectparticipant](./mypy_boto3_connectparticipant) for
-  [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/connectparticipant.html#ConnectParticipant)
+  [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/connectparticipant.html#ConnectParticipant)
   service
 
 - [mypy-boto3-cur](./mypy_boto3_cur) for
-  [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cur.html#CostandUsageReportService)
+  [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService)
   service
 
 - [mypy-boto3-customer-profiles](./mypy_boto3_customer_profiles) for
-  [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/customer-profiles.html#CustomerProfiles)
+  [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/customer-profiles.html#CustomerProfiles)
   service
 
 - [mypy-boto3-databrew](./mypy_boto3_databrew) for
-  [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/databrew.html#GlueDataBrew)
+  [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/databrew.html#GlueDataBrew)
   service
 
 - [mypy-boto3-dataexchange](./mypy_boto3_dataexchange) for
-  [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dataexchange.html#DataExchange)
+  [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/dataexchange.html#DataExchange)
   service
 
 - [mypy-boto3-datapipeline](./mypy_boto3_datapipeline) for
-  [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datapipeline.html#DataPipeline)
+  [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datapipeline.html#DataPipeline)
   service
 
 - [mypy-boto3-datasync](./mypy_boto3_datasync) for
-  [DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/datasync.html#DataSync)
+  [DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync)
   service
 
 - [mypy-boto3-dax](./mypy_boto3_dax) for
-  [DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dax.html#DAX)
+  [DAX](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/dax.html#DAX)
   service
 
 - [mypy-boto3-detective](./mypy_boto3_detective) for
-  [Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/detective.html#Detective)
+  [Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective)
   service
 
 - [mypy-boto3-devicefarm](./mypy_boto3_devicefarm) for
-  [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devicefarm.html#DeviceFarm)
+  [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/devicefarm.html#DeviceFarm)
   service
 
 - [mypy-boto3-devops-guru](./mypy_boto3_devops_guru) for
-  [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/devops-guru.html#DevopsGuru)
+  [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/devops-guru.html#DevopsGuru)
   service
 
 - [mypy-boto3-directconnect](./mypy_boto3_directconnect) for
-  [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/directconnect.html#DirectConnect)
+  [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/directconnect.html#DirectConnect)
   service
 
 - [mypy-boto3-discovery](./mypy_boto3_discovery) for
-  [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/discovery.html#ApplicationDiscoveryService)
+  [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/discovery.html#ApplicationDiscoveryService)
   service
 
 - [mypy-boto3-dlm](./mypy_boto3_dlm) for
-  [DLM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dlm.html#DLM)
+  [DLM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/dlm.html#DLM)
   service
 
 - [mypy-boto3-dms](./mypy_boto3_dms) for
-  [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dms.html#DatabaseMigrationService)
+  [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/dms.html#DatabaseMigrationService)
   service
 
 - [mypy-boto3-docdb](./mypy_boto3_docdb) for
-  [DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/docdb.html#DocDB)
+  [DocDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/docdb.html#DocDB)
   service
 
 - [mypy-boto3-ds](./mypy_boto3_ds) for
-  [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ds.html#DirectoryService)
+  [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ds.html#DirectoryService)
   service
 
 - [mypy-boto3-dynamodb](./mypy_boto3_dynamodb) for
-  [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodb.html#DynamoDB)
+  [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/dynamodb.html#DynamoDB)
   service
 
 - [mypy-boto3-dynamodbstreams](./mypy_boto3_dynamodbstreams) for
-  [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/dynamodbstreams.html#DynamoDBStreams)
+  [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/dynamodbstreams.html#DynamoDBStreams)
   service
 
 - [mypy-boto3-ebs](./mypy_boto3_ebs) for
-  [EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ebs.html#EBS)
+  [EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS)
   service
 
 - [mypy-boto3-ec2](./mypy_boto3_ec2) for
-  [EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ec2.html#EC2)
+  [EC2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ec2.html#EC2)
   service
 
 - [mypy-boto3-ec2-instance-connect](./mypy_boto3_ec2_instance_connect) for
-  [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
+  [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
   service
 
 - [mypy-boto3-ecr](./mypy_boto3_ecr) for
-  [ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecr.html#ECR)
+  [ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR)
   service
 
 - [mypy-boto3-ecr-public](./mypy_boto3_ecr_public) for
-  [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecr-public.html#ECRPublic)
+  [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr-public.html#ECRPublic)
   service
 
 - [mypy-boto3-ecs](./mypy_boto3_ecs) for
-  [ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS)
+  [ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecs.html#ECS)
   service
 
 - [mypy-boto3-efs](./mypy_boto3_efs) for
-  [EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/efs.html#EFS)
+  [EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/efs.html#EFS)
   service
 
 - [mypy-boto3-eks](./mypy_boto3_eks) for
-  [EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/eks.html#EKS)
+  [EKS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/eks.html#EKS)
   service
 
 - [mypy-boto3-elastic-inference](./mypy_boto3_elastic_inference) for
-  [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elastic-inference.html#ElasticInference)
+  [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastic-inference.html#ElasticInference)
   service
 
 - [mypy-boto3-elasticache](./mypy_boto3_elasticache) for
-  [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticache.html#ElastiCache)
+  [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache)
   service
 
 - [mypy-boto3-elasticbeanstalk](./mypy_boto3_elasticbeanstalk) for
-  [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+  [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
   service
 
 - [mypy-boto3-elastictranscoder](./mypy_boto3_elastictranscoder) for
-  [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elastictranscoder.html#ElasticTranscoder)
+  [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder)
   service
 
 - [mypy-boto3-elb](./mypy_boto3_elb) for
-  [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elb.html#ElasticLoadBalancing)
+  [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elb.html#ElasticLoadBalancing)
   service
 
 - [mypy-boto3-elbv2](./mypy_boto3_elbv2) for
-  [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/elbv2.html#ElasticLoadBalancingv2)
+  [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2)
   service
 
 - [mypy-boto3-emr](./mypy_boto3_emr) for
-  [EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr.html#EMR)
+  [EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr.html#EMR)
   service
 
 - [mypy-boto3-emr-containers](./mypy_boto3_emr_containers) for
-  [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/emr-containers.html#EMRContainers)
+  [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/emr-containers.html#EMRContainers)
   service
 
 - [mypy-boto3-es](./mypy_boto3_es) for
-  [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/es.html#ElasticsearchService)
+  [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/es.html#ElasticsearchService)
   service
 
 - [mypy-boto3-events](./mypy_boto3_events) for
-  [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/events.html#EventBridge)
+  [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge)
   service
 
 - [mypy-boto3-finspace](./mypy_boto3_finspace) for
-  [finspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/finspace.html#finspace)
+  [finspace](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/finspace.html#finspace)
   service
 
 - [mypy-boto3-finspace-data](./mypy_boto3_finspace_data) for
-  [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/finspace-data.html#FinSpaceData)
+  [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/finspace-data.html#FinSpaceData)
   service
 
 - [mypy-boto3-firehose](./mypy_boto3_firehose) for
-  [Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/firehose.html#Firehose)
+  [Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/firehose.html#Firehose)
   service
 
 - [mypy-boto3-fis](./mypy_boto3_fis) for
-  [FIS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fis.html#FIS)
+  [FIS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS)
   service
 
 - [mypy-boto3-fms](./mypy_boto3_fms) for
-  [FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fms.html#FMS)
+  [FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fms.html#FMS)
   service
 
 - [mypy-boto3-forecast](./mypy_boto3_forecast) for
-  [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/forecast.html#ForecastService)
+  [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/forecast.html#ForecastService)
   service
 
 - [mypy-boto3-forecastquery](./mypy_boto3_forecastquery) for
-  [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/forecastquery.html#ForecastQueryService)
+  [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/forecastquery.html#ForecastQueryService)
   service
 
 - [mypy-boto3-frauddetector](./mypy_boto3_frauddetector) for
-  [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/frauddetector.html#FraudDetector)
+  [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/frauddetector.html#FraudDetector)
   service
 
 - [mypy-boto3-fsx](./mypy_boto3_fsx) for
-  [FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fsx.html#FSx)
+  [FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fsx.html#FSx)
   service
 
 - [mypy-boto3-gamelift](./mypy_boto3_gamelift) for
-  [GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/gamelift.html#GameLift)
+  [GameLift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/gamelift.html#GameLift)
   service
 
 - [mypy-boto3-glacier](./mypy_boto3_glacier) for
-  [Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/glacier.html#Glacier)
+  [Glacier](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/glacier.html#Glacier)
   service
 
 - [mypy-boto3-globalaccelerator](./mypy_boto3_globalaccelerator) for
-  [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/globalaccelerator.html#GlobalAccelerator)
+  [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator)
   service
 
 - [mypy-boto3-glue](./mypy_boto3_glue) for
-  [Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/glue.html#Glue)
+  [Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/glue.html#Glue)
   service
 
 - [mypy-boto3-greengrass](./mypy_boto3_greengrass) for
-  [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/greengrass.html#Greengrass)
+  [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrass.html#Greengrass)
   service
 
 - [mypy-boto3-greengrassv2](./mypy_boto3_greengrassv2) for
-  [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/greengrassv2.html#GreengrassV2)
+  [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2)
   service
 
 - [mypy-boto3-groundstation](./mypy_boto3_groundstation) for
-  [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/groundstation.html#GroundStation)
+  [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/groundstation.html#GroundStation)
   service
 
 - [mypy-boto3-guardduty](./mypy_boto3_guardduty) for
-  [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/guardduty.html#GuardDuty)
+  [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/guardduty.html#GuardDuty)
   service
 
 - [mypy-boto3-health](./mypy_boto3_health) for
-  [Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/health.html#Health)
+  [Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health)
   service
 
 - [mypy-boto3-healthlake](./mypy_boto3_healthlake) for
-  [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/healthlake.html#HealthLake)
+  [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/healthlake.html#HealthLake)
   service
 
 - [mypy-boto3-honeycode](./mypy_boto3_honeycode) for
-  [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/honeycode.html#Honeycode)
+  [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/honeycode.html#Honeycode)
   service
 
 - [mypy-boto3-iam](./mypy_boto3_iam) for
-  [IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM)
+  [IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM)
   service
 
 - [mypy-boto3-identitystore](./mypy_boto3_identitystore) for
-  [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/identitystore.html#IdentityStore)
+  [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore)
   service
 
 - [mypy-boto3-imagebuilder](./mypy_boto3_imagebuilder) for
-  [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/imagebuilder.html#Imagebuilder)
+  [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/imagebuilder.html#Imagebuilder)
   service
 
 - [mypy-boto3-importexport](./mypy_boto3_importexport) for
-  [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/importexport.html#ImportExport)
+  [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/importexport.html#ImportExport)
   service
 
 - [mypy-boto3-inspector](./mypy_boto3_inspector) for
-  [Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector)
+  [Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector)
   service
 
 - [mypy-boto3-iot](./mypy_boto3_iot) for
-  [IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot.html#IoT)
+  [IoT](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot.html#IoT)
   service
 
 - [mypy-boto3-iot-data](./mypy_boto3_iot_data) for
-  [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot-data.html#IoTDataPlane)
+  [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot-data.html#IoTDataPlane)
   service
 
 - [mypy-boto3-iot-jobs-data](./mypy_boto3_iot_jobs_data) for
-  [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+  [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
   service
 
 - [mypy-boto3-iot1click-devices](./mypy_boto3_iot1click_devices) for
-  [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+  [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
   service
 
 - [mypy-boto3-iot1click-projects](./mypy_boto3_iot1click_projects) for
-  [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-projects.html#IoT1ClickProjects)
+  [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-projects.html#IoT1ClickProjects)
   service
 
 - [mypy-boto3-iotanalytics](./mypy_boto3_iotanalytics) for
-  [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotanalytics.html#IoTAnalytics)
+  [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotanalytics.html#IoTAnalytics)
   service
 
 - [mypy-boto3-iotdeviceadvisor](./mypy_boto3_iotdeviceadvisor) for
-  [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+  [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
   service
 
 - [mypy-boto3-iotevents](./mypy_boto3_iotevents) for
-  [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotevents.html#IoTEvents)
+  [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotevents.html#IoTEvents)
   service
 
 - [mypy-boto3-iotevents-data](./mypy_boto3_iotevents_data) for
-  [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotevents-data.html#IoTEventsData)
+  [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotevents-data.html#IoTEventsData)
   service
 
 - [mypy-boto3-iotfleethub](./mypy_boto3_iotfleethub) for
-  [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotfleethub.html#IoTFleetHub)
+  [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub)
   service
 
 - [mypy-boto3-iotsecuretunneling](./mypy_boto3_iotsecuretunneling) for
-  [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+  [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
   service
 
 - [mypy-boto3-iotsitewise](./mypy_boto3_iotsitewise) for
-  [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotsitewise.html#IoTSiteWise)
+  [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise)
   service
 
 - [mypy-boto3-iotthingsgraph](./mypy_boto3_iotthingsgraph) for
-  [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotthingsgraph.html#IoTThingsGraph)
+  [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotthingsgraph.html#IoTThingsGraph)
   service
 
 - [mypy-boto3-iotwireless](./mypy_boto3_iotwireless) for
-  [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotwireless.html#IoTWireless)
+  [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotwireless.html#IoTWireless)
   service
 
 - [mypy-boto3-ivs](./mypy_boto3_ivs) for
-  [IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS)
+  [IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS)
   service
 
 - [mypy-boto3-kafka](./mypy_boto3_kafka) for
-  [Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kafka.html#Kafka)
+  [Kafka](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kafka.html#Kafka)
   service
 
 - [mypy-boto3-kendra](./mypy_boto3_kendra) for
-  [Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kendra.html#Kendra)
+  [Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kendra.html#Kendra)
   service
 
 - [mypy-boto3-kinesis](./mypy_boto3_kinesis) for
-  [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesis.html#Kinesis)
+  [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis.html#Kinesis)
   service
 
 - [mypy-boto3-kinesis-video-archived-media](./mypy_boto3_kinesis_video_archived_media)
   for
-  [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+  [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
   service
 
 - [mypy-boto3-kinesis-video-media](./mypy_boto3_kinesis_video_media) for
-  [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesis-video-media.html#KinesisVideoMedia)
+  [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-media.html#KinesisVideoMedia)
   service
 
 - [mypy-boto3-kinesis-video-signaling](./mypy_boto3_kinesis_video_signaling)
   for
-  [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+  [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
   service
 
 - [mypy-boto3-kinesisanalytics](./mypy_boto3_kinesisanalytics) for
-  [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalytics.html#KinesisAnalytics)
+  [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisanalytics.html#KinesisAnalytics)
   service
 
 - [mypy-boto3-kinesisanalyticsv2](./mypy_boto3_kinesisanalyticsv2) for
-  [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+  [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
   service
 
 - [mypy-boto3-kinesisvideo](./mypy_boto3_kinesisvideo) for
-  [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo)
+  [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo)
   service
 
 - [mypy-boto3-kms](./mypy_boto3_kms) for
-  [KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kms.html#KMS)
+  [KMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kms.html#KMS)
   service
 
 - [mypy-boto3-lakeformation](./mypy_boto3_lakeformation) for
-  [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lakeformation.html#LakeFormation)
+  [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lakeformation.html#LakeFormation)
   service
 
 - [mypy-boto3-lambda](./mypy_boto3_lambda) for
-  [Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lambda.html#Lambda)
+  [Lambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lambda.html#Lambda)
   service
 
 - [mypy-boto3-lex-models](./mypy_boto3_lex_models) for
-  [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lex-models.html#LexModelBuildingService)
+  [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lex-models.html#LexModelBuildingService)
   service
 
 - [mypy-boto3-lex-runtime](./mypy_boto3_lex_runtime) for
-  [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lex-runtime.html#LexRuntimeService)
+  [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lex-runtime.html#LexRuntimeService)
   service
 
 - [mypy-boto3-lexv2-models](./mypy_boto3_lexv2_models) for
-  [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2)
+  [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2)
   service
 
 - [mypy-boto3-lexv2-runtime](./mypy_boto3_lexv2_runtime) for
-  [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-runtime.html#LexRuntimeV2)
+  [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-runtime.html#LexRuntimeV2)
   service
 
 - [mypy-boto3-license-manager](./mypy_boto3_license_manager) for
-  [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/license-manager.html#LicenseManager)
+  [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/license-manager.html#LicenseManager)
   service
 
 - [mypy-boto3-lightsail](./mypy_boto3_lightsail) for
-  [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lightsail.html#Lightsail)
+  [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lightsail.html#Lightsail)
   service
 
 - [mypy-boto3-location](./mypy_boto3_location) for
-  [LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService)
+  [LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService)
   service
 
 - [mypy-boto3-logs](./mypy_boto3_logs) for
-  [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/logs.html#CloudWatchLogs)
+  [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/logs.html#CloudWatchLogs)
   service
 
 - [mypy-boto3-lookoutequipment](./mypy_boto3_lookoutequipment) for
-  [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutequipment.html#LookoutEquipment)
+  [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutequipment.html#LookoutEquipment)
   service
 
 - [mypy-boto3-lookoutmetrics](./mypy_boto3_lookoutmetrics) for
-  [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutmetrics.html#LookoutMetrics)
+  [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutmetrics.html#LookoutMetrics)
   service
 
 - [mypy-boto3-lookoutvision](./mypy_boto3_lookoutvision) for
-  [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutvision.html#LookoutforVision)
+  [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutvision.html#LookoutforVision)
   service
 
 - [mypy-boto3-machinelearning](./mypy_boto3_machinelearning) for
-  [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/machinelearning.html#MachineLearning)
+  [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/machinelearning.html#MachineLearning)
   service
 
 - [mypy-boto3-macie](./mypy_boto3_macie) for
-  [Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie.html#Macie)
+  [Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie.html#Macie)
   service
 
 - [mypy-boto3-macie2](./mypy_boto3_macie2) for
-  [Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2)
+  [Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2)
   service
 
 - [mypy-boto3-managedblockchain](./mypy_boto3_managedblockchain) for
-  [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/managedblockchain.html#ManagedBlockchain)
+  [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/managedblockchain.html#ManagedBlockchain)
   service
 
 - [mypy-boto3-marketplace-catalog](./mypy_boto3_marketplace_catalog) for
-  [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+  [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/marketplace-catalog.html#MarketplaceCatalog)
   service
 
 - [mypy-boto3-marketplace-entitlement](./mypy_boto3_marketplace_entitlement)
   for
-  [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+  [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
   service
 
 - [mypy-boto3-marketplacecommerceanalytics](./mypy_boto3_marketplacecommerceanalytics)
   for
-  [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+  [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
   service
 
 - [mypy-boto3-mediaconnect](./mypy_boto3_mediaconnect) for
-  [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect)
+  [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediaconnect.html#MediaConnect)
   service
 
 - [mypy-boto3-mediaconvert](./mypy_boto3_mediaconvert) for
-  [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconvert.html#MediaConvert)
+  [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediaconvert.html#MediaConvert)
   service
 
 - [mypy-boto3-medialive](./mypy_boto3_medialive) for
-  [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/medialive.html#MediaLive)
+  [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/medialive.html#MediaLive)
   service
 
 - [mypy-boto3-mediapackage](./mypy_boto3_mediapackage) for
-  [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediapackage.html#MediaPackage)
+  [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage.html#MediaPackage)
   service
 
 - [mypy-boto3-mediapackage-vod](./mypy_boto3_mediapackage_vod) for
-  [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediapackage-vod.html#MediaPackageVod)
+  [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage-vod.html#MediaPackageVod)
   service
 
 - [mypy-boto3-mediastore](./mypy_boto3_mediastore) for
-  [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediastore.html#MediaStore)
+  [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore.html#MediaStore)
   service
 
 - [mypy-boto3-mediastore-data](./mypy_boto3_mediastore_data) for
-  [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediastore-data.html#MediaStoreData)
+  [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData)
   service
 
 - [mypy-boto3-mediatailor](./mypy_boto3_mediatailor) for
-  [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediatailor.html#MediaTailor)
+  [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediatailor.html#MediaTailor)
   service
 
 - [mypy-boto3-meteringmarketplace](./mypy_boto3_meteringmarketplace) for
-  [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/meteringmarketplace.html#MarketplaceMetering)
+  [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/meteringmarketplace.html#MarketplaceMetering)
   service
 
 - [mypy-boto3-mgh](./mypy_boto3_mgh) for
-  [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mgh.html#MigrationHub)
+  [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mgh.html#MigrationHub)
   service
 
 - [mypy-boto3-mgn](./mypy_boto3_mgn) for
-  [mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mgn.html#mgn)
+  [mgn](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mgn.html#mgn)
   service
 
 - [mypy-boto3-migrationhub-config](./mypy_boto3_migrationhub_config) for
-  [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/migrationhub-config.html#MigrationHubConfig)
+  [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/migrationhub-config.html#MigrationHubConfig)
   service
 
 - [mypy-boto3-mobile](./mypy_boto3_mobile) for
-  [Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mobile.html#Mobile)
+  [Mobile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mobile.html#Mobile)
   service
 
 - [mypy-boto3-mq](./mypy_boto3_mq) for
-  [MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mq.html#MQ)
+  [MQ](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mq.html#MQ)
   service
 
 - [mypy-boto3-mturk](./mypy_boto3_mturk) for
-  [MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mturk.html#MTurk)
+  [MTurk](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mturk.html#MTurk)
   service
 
 - [mypy-boto3-mwaa](./mypy_boto3_mwaa) for
-  [MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mwaa.html#MWAA)
+  [MWAA](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mwaa.html#MWAA)
   service
 
 - [mypy-boto3-neptune](./mypy_boto3_neptune) for
-  [Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/neptune.html#Neptune)
+  [Neptune](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/neptune.html#Neptune)
   service
 
 - [mypy-boto3-network-firewall](./mypy_boto3_network_firewall) for
-  [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/network-firewall.html#NetworkFirewall)
+  [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/network-firewall.html#NetworkFirewall)
   service
 
 - [mypy-boto3-networkmanager](./mypy_boto3_networkmanager) for
-  [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager)
+  [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager)
   service
 
 - [mypy-boto3-nimble](./mypy_boto3_nimble) for
-  [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/nimble.html#NimbleStudio)
+  [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/nimble.html#NimbleStudio)
   service
 
 - [mypy-boto3-opsworks](./mypy_boto3_opsworks) for
-  [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/opsworks.html#OpsWorks)
+  [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks)
   service
 
 - [mypy-boto3-opsworkscm](./mypy_boto3_opsworkscm) for
-  [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/opsworkscm.html#OpsWorksCM)
+  [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworkscm.html#OpsWorksCM)
   service
 
 - [mypy-boto3-organizations](./mypy_boto3_organizations) for
-  [Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/organizations.html#Organizations)
+  [Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/organizations.html#Organizations)
   service
 
 - [mypy-boto3-outposts](./mypy_boto3_outposts) for
-  [Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/outposts.html#Outposts)
+  [Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/outposts.html#Outposts)
   service
 
 - [mypy-boto3-personalize](./mypy_boto3_personalize) for
-  [Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize.html#Personalize)
+  [Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize)
   service
 
 - [mypy-boto3-personalize-events](./mypy_boto3_personalize_events) for
-  [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-events.html#PersonalizeEvents)
+  [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize-events.html#PersonalizeEvents)
   service
 
 - [mypy-boto3-personalize-runtime](./mypy_boto3_personalize_runtime) for
-  [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/personalize-runtime.html#PersonalizeRuntime)
+  [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize-runtime.html#PersonalizeRuntime)
   service
 
 - [mypy-boto3-pi](./mypy_boto3_pi) for
-  [PI](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pi.html#PI)
+  [PI](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pi.html#PI)
   service
 
 - [mypy-boto3-pinpoint](./mypy_boto3_pinpoint) for
-  [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pinpoint.html#Pinpoint)
+  [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pinpoint.html#Pinpoint)
   service
 
 - [mypy-boto3-pinpoint-email](./mypy_boto3_pinpoint_email) for
-  [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pinpoint-email.html#PinpointEmail)
+  [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pinpoint-email.html#PinpointEmail)
   service
 
 - [mypy-boto3-pinpoint-sms-voice](./mypy_boto3_pinpoint_sms_voice) for
-  [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
+  [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
   service
 
 - [mypy-boto3-polly](./mypy_boto3_polly) for
-  [Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/polly.html#Polly)
+  [Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/polly.html#Polly)
   service
 
 - [mypy-boto3-pricing](./mypy_boto3_pricing) for
-  [Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/pricing.html#Pricing)
+  [Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing)
   service
 
 - [mypy-boto3-qldb](./mypy_boto3_qldb) for
-  [QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/qldb.html#QLDB)
+  [QLDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/qldb.html#QLDB)
   service
 
 - [mypy-boto3-qldb-session](./mypy_boto3_qldb_session) for
-  [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/qldb-session.html#QLDBSession)
+  [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/qldb-session.html#QLDBSession)
   service
 
 - [mypy-boto3-quicksight](./mypy_boto3_quicksight) for
-  [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/quicksight.html#QuickSight)
+  [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight)
   service
 
 - [mypy-boto3-ram](./mypy_boto3_ram) for
-  [RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ram.html#RAM)
+  [RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ram.html#RAM)
   service
 
 - [mypy-boto3-rds](./mypy_boto3_rds) for
-  [RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/rds.html#RDS)
+  [RDS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/rds.html#RDS)
   service
 
 - [mypy-boto3-rds-data](./mypy_boto3_rds_data) for
-  [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/rds-data.html#RDSDataService)
+  [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/rds-data.html#RDSDataService)
   service
 
 - [mypy-boto3-redshift](./mypy_boto3_redshift) for
-  [Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift.html#Redshift)
+  [Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift)
   service
 
 - [mypy-boto3-redshift-data](./mypy_boto3_redshift_data) for
-  [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/redshift-data.html#RedshiftDataAPIService)
+  [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift-data.html#RedshiftDataAPIService)
   service
 
 - [mypy-boto3-rekognition](./mypy_boto3_rekognition) for
-  [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/rekognition.html#Rekognition)
+  [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/rekognition.html#Rekognition)
   service
 
 - [mypy-boto3-resource-groups](./mypy_boto3_resource_groups) for
-  [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/resource-groups.html#ResourceGroups)
+  [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resource-groups.html#ResourceGroups)
   service
 
 - [mypy-boto3-resourcegroupstaggingapi](./mypy_boto3_resourcegroupstaggingapi)
   for
-  [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+  [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
   service
 
 - [mypy-boto3-robomaker](./mypy_boto3_robomaker) for
-  [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/robomaker.html#RoboMaker)
+  [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker)
   service
 
 - [mypy-boto3-route53](./mypy_boto3_route53) for
-  [Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/route53.html#Route53)
+  [Route53](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/route53.html#Route53)
   service
 
 - [mypy-boto3-route53domains](./mypy_boto3_route53domains) for
-  [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/route53domains.html#Route53Domains)
+  [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/route53domains.html#Route53Domains)
   service
 
 - [mypy-boto3-route53resolver](./mypy_boto3_route53resolver) for
-  [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/route53resolver.html#Route53Resolver)
+  [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/route53resolver.html#Route53Resolver)
   service
 
 - [mypy-boto3-s3](./mypy_boto3_s3) for
-  [S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/s3.html#S3)
+  [S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/s3.html#S3)
   service
 
 - [mypy-boto3-s3control](./mypy_boto3_s3control) for
-  [S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/s3control.html#S3Control)
+  [S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/s3control.html#S3Control)
   service
 
 - [mypy-boto3-s3outposts](./mypy_boto3_s3outposts) for
-  [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/s3outposts.html#S3Outposts)
+  [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/s3outposts.html#S3Outposts)
   service
 
 - [mypy-boto3-sagemaker](./mypy_boto3_sagemaker) for
-  [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker.html#SageMaker)
+  [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker.html#SageMaker)
   service
 
 - [mypy-boto3-sagemaker-a2i-runtime](./mypy_boto3_sagemaker_a2i_runtime) for
-  [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+  [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
   service
 
 - [mypy-boto3-sagemaker-edge](./mypy_boto3_sagemaker_edge) for
-  [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
+  [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
   service
 
 - [mypy-boto3-sagemaker-featurestore-runtime](./mypy_boto3_sagemaker_featurestore_runtime)
   for
-  [SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
+  [SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
   service
 
 - [mypy-boto3-sagemaker-runtime](./mypy_boto3_sagemaker_runtime) for
-  [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+  [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sagemaker-runtime.html#SageMakerRuntime)
   service
 
 - [mypy-boto3-savingsplans](./mypy_boto3_savingsplans) for
-  [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/savingsplans.html#SavingsPlans)
+  [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/savingsplans.html#SavingsPlans)
   service
 
 - [mypy-boto3-schemas](./mypy_boto3_schemas) for
-  [Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/schemas.html#Schemas)
+  [Schemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/schemas.html#Schemas)
   service
 
 - [mypy-boto3-sdb](./mypy_boto3_sdb) for
-  [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sdb.html#SimpleDB)
+  [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB)
   service
 
 - [mypy-boto3-secretsmanager](./mypy_boto3_secretsmanager) for
-  [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/secretsmanager.html#SecretsManager)
+  [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/secretsmanager.html#SecretsManager)
   service
 
 - [mypy-boto3-securityhub](./mypy_boto3_securityhub) for
-  [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/securityhub.html#SecurityHub)
+  [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/securityhub.html#SecurityHub)
   service
 
 - [mypy-boto3-serverlessrepo](./mypy_boto3_serverlessrepo) for
-  [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+  [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
   service
 
 - [mypy-boto3-service-quotas](./mypy_boto3_service_quotas) for
-  [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/service-quotas.html#ServiceQuotas)
+  [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas)
   service
 
 - [mypy-boto3-servicecatalog](./mypy_boto3_servicecatalog) for
-  [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog.html#ServiceCatalog)
+  [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicecatalog.html#ServiceCatalog)
   service
 
 - [mypy-boto3-servicecatalog-appregistry](./mypy_boto3_servicecatalog_appregistry)
   for
-  [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicecatalog-appregistry.html#AppRegistry)
+  [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicecatalog-appregistry.html#AppRegistry)
   service
 
 - [mypy-boto3-servicediscovery](./mypy_boto3_servicediscovery) for
-  [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/servicediscovery.html#ServiceDiscovery)
+  [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/servicediscovery.html#ServiceDiscovery)
   service
 
 - [mypy-boto3-ses](./mypy_boto3_ses) for
-  [SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ses.html#SES)
+  [SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ses.html#SES)
   service
 
 - [mypy-boto3-sesv2](./mypy_boto3_sesv2) for
-  [SESV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sesv2.html#SESV2)
+  [SESV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sesv2.html#SESV2)
   service
 
 - [mypy-boto3-shield](./mypy_boto3_shield) for
-  [Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/shield.html#Shield)
+  [Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/shield.html#Shield)
   service
 
 - [mypy-boto3-signer](./mypy_boto3_signer) for
-  [Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/signer.html#Signer)
+  [Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/signer.html#Signer)
   service
 
 - [mypy-boto3-sms](./mypy_boto3_sms) for
-  [SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sms.html#SMS)
+  [SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS)
   service
 
 - [mypy-boto3-sms-voice](./mypy_boto3_sms_voice) for
-  [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sms-voice.html#SMSVoice)
+  [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms-voice.html#SMSVoice)
   service
 
 - [mypy-boto3-snowball](./mypy_boto3_snowball) for
-  [Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/snowball.html#Snowball)
+  [Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/snowball.html#Snowball)
   service
 
 - [mypy-boto3-sns](./mypy_boto3_sns) for
-  [SNS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sns.html#SNS)
+  [SNS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sns.html#SNS)
   service
 
 - [mypy-boto3-sqs](./mypy_boto3_sqs) for
-  [SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sqs.html#SQS)
+  [SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sqs.html#SQS)
   service
 
 - [mypy-boto3-ssm](./mypy_boto3_ssm) for
-  [SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm.html#SSM)
+  [SSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm.html#SSM)
   service
 
 - [mypy-boto3-ssm-contacts](./mypy_boto3_ssm_contacts) for
-  [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts)
+  [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts)
   service
 
 - [mypy-boto3-ssm-incidents](./mypy_boto3_ssm_incidents) for
-  [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-incidents.html#SSMIncidents)
+  [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-incidents.html#SSMIncidents)
   service
 
 - [mypy-boto3-sso](./mypy_boto3_sso) for
-  [SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso.html#SSO)
+  [SSO](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso.html#SSO)
   service
 
 - [mypy-boto3-sso-admin](./mypy_boto3_sso_admin) for
-  [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-admin.html#SSOAdmin)
+  [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-admin.html#SSOAdmin)
   service
 
 - [mypy-boto3-sso-oidc](./mypy_boto3_sso_oidc) for
-  [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sso-oidc.html#SSOOIDC)
+  [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sso-oidc.html#SSOOIDC)
   service
 
 - [mypy-boto3-stepfunctions](./mypy_boto3_stepfunctions) for
-  [SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/stepfunctions.html#SFN)
+  [SFN](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/stepfunctions.html#SFN)
   service
 
 - [mypy-boto3-storagegateway](./mypy_boto3_storagegateway) for
-  [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/storagegateway.html#StorageGateway)
+  [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/storagegateway.html#StorageGateway)
   service
 
 - [mypy-boto3-sts](./mypy_boto3_sts) for
-  [STS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/sts.html#STS)
+  [STS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sts.html#STS)
   service
 
 - [mypy-boto3-support](./mypy_boto3_support) for
-  [Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/support.html#Support)
+  [Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/support.html#Support)
   service
 
 - [mypy-boto3-swf](./mypy_boto3_swf) for
-  [SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/swf.html#SWF)
+  [SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/swf.html#SWF)
   service
 
 - [mypy-boto3-synthetics](./mypy_boto3_synthetics) for
-  [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/synthetics.html#Synthetics)
+  [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/synthetics.html#Synthetics)
   service
 
 - [mypy-boto3-textract](./mypy_boto3_textract) for
-  [Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/textract.html#Textract)
+  [Textract](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/textract.html#Textract)
   service
 
 - [mypy-boto3-timestream-query](./mypy_boto3_timestream_query) for
-  [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/timestream-query.html#TimestreamQuery)
+  [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/timestream-query.html#TimestreamQuery)
   service
 
 - [mypy-boto3-timestream-write](./mypy_boto3_timestream_write) for
-  [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/timestream-write.html#TimestreamWrite)
+  [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/timestream-write.html#TimestreamWrite)
   service
 
 - [mypy-boto3-transcribe](./mypy_boto3_transcribe) for
-  [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/transcribe.html#TranscribeService)
+  [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/transcribe.html#TranscribeService)
   service
 
 - [mypy-boto3-transfer](./mypy_boto3_transfer) for
-  [Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/transfer.html#Transfer)
+  [Transfer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/transfer.html#Transfer)
   service
 
 - [mypy-boto3-translate](./mypy_boto3_translate) for
-  [Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/translate.html#Translate)
+  [Translate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/translate.html#Translate)
   service
 
 - [mypy-boto3-waf](./mypy_boto3_waf) for
-  [WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/waf.html#WAF)
+  [WAF](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/waf.html#WAF)
   service
 
 - [mypy-boto3-waf-regional](./mypy_boto3_waf_regional) for
-  [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/waf-regional.html#WAFRegional)
+  [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/waf-regional.html#WAFRegional)
   service
 
 - [mypy-boto3-wafv2](./mypy_boto3_wafv2) for
-  [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/wafv2.html#WAFV2)
+  [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/wafv2.html#WAFV2)
   service
 
 - [mypy-boto3-wellarchitected](./mypy_boto3_wellarchitected) for
-  [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/wellarchitected.html#WellArchitected)
+  [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/wellarchitected.html#WellArchitected)
   service
 
 - [mypy-boto3-workdocs](./mypy_boto3_workdocs) for
-  [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workdocs.html#WorkDocs)
+  [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workdocs.html#WorkDocs)
   service
 
 - [mypy-boto3-worklink](./mypy_boto3_worklink) for
-  [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/worklink.html#WorkLink)
+  [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/worklink.html#WorkLink)
   service
 
 - [mypy-boto3-workmail](./mypy_boto3_workmail) for
-  [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmail.html#WorkMail)
+  [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmail.html#WorkMail)
   service
 
 - [mypy-boto3-workmailmessageflow](./mypy_boto3_workmailmessageflow) for
-  [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+  [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
   service
 
 - [mypy-boto3-workspaces](./mypy_boto3_workspaces) for
-  [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/workspaces.html#WorkSpaces)
+  [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workspaces.html#WorkSpaces)
   service
 
 - [mypy-boto3-xray](./mypy_boto3_xray) for
-  [XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay)
+  [XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay)
   service

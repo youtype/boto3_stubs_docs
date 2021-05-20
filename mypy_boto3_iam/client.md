@@ -3,7 +3,7 @@
 > [Index](..) > [IAM](.) > IAMClient
 
 Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM)
+[IAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM)
 type annotations stubs module
 [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
@@ -188,7 +188,7 @@ def get_iam_client() -> IAMClient:
 ```
 
 Boto3 documentation:
-[IAM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client)
+[IAM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client)
 
 ## Exceptions
 
@@ -241,7 +241,7 @@ Type annotations for
 `boto3.client("iam").add_client_id_to_open_id_connect_provider` method.
 
 Boto3 documentation:
-[IAM.Client.add_client_id_to_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
+[IAM.Client.add_client_id_to_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Arguments:
 Type annotations for `boto3.client("iam").add_role_to_instance_profile` method.
 
 Boto3 documentation:
-[IAM.Client.add_role_to_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
+[IAM.Client.add_role_to_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Arguments:
 Type annotations for `boto3.client("iam").add_user_to_group` method.
 
 Boto3 documentation:
-[IAM.Client.add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.add_user_to_group)
+[IAM.Client.add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.add_user_to_group)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Arguments:
 Type annotations for `boto3.client("iam").attach_group_policy` method.
 
 Boto3 documentation:
-[IAM.Client.attach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.attach_group_policy)
+[IAM.Client.attach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.attach_group_policy)
 
 Arguments:
 
@@ -289,7 +289,7 @@ Arguments:
 Type annotations for `boto3.client("iam").attach_role_policy` method.
 
 Boto3 documentation:
-[IAM.Client.attach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.attach_role_policy)
+[IAM.Client.attach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.attach_role_policy)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Arguments:
 Type annotations for `boto3.client("iam").attach_user_policy` method.
 
 Boto3 documentation:
-[IAM.Client.attach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.attach_user_policy)
+[IAM.Client.attach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.attach_user_policy)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Arguments:
 Type annotations for `boto3.client("iam").can_paginate` method.
 
 Boto3 documentation:
-[IAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.can_paginate)
+[IAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.can_paginate)
 
 Arguments:
 
@@ -326,7 +326,7 @@ Returns `bool`.
 Type annotations for `boto3.client("iam").change_password` method.
 
 Boto3 documentation:
-[IAM.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.change_password)
+[IAM.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.change_password)
 
 Arguments:
 
@@ -338,7 +338,7 @@ Arguments:
 Type annotations for `boto3.client("iam").create_access_key` method.
 
 Boto3 documentation:
-[IAM.Client.create_access_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_access_key)
+[IAM.Client.create_access_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_access_key)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
 Boto3 documentation:
-[IAM.Client.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_account_alias)
+[IAM.Client.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_account_alias)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Arguments:
 Type annotations for `boto3.client("iam").create_group` method.
 
 Boto3 documentation:
-[IAM.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_group)
+[IAM.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_group)
 
 Arguments:
 
@@ -378,7 +378,7 @@ Returns
 Type annotations for `boto3.client("iam").create_instance_profile` method.
 
 Boto3 documentation:
-[IAM.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_instance_profile)
+[IAM.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_instance_profile)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns
 Type annotations for `boto3.client("iam").create_login_profile` method.
 
 Boto3 documentation:
-[IAM.Client.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_login_profile)
+[IAM.Client.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_login_profile)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("iam").create_open_id_connect_provider`
 method.
 
 Boto3 documentation:
-[IAM.Client.create_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
+[IAM.Client.create_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
 
 Arguments:
 
@@ -428,7 +428,7 @@ Returns
 Type annotations for `boto3.client("iam").create_policy` method.
 
 Boto3 documentation:
-[IAM.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_policy)
+[IAM.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_policy)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Returns
 Type annotations for `boto3.client("iam").create_policy_version` method.
 
 Boto3 documentation:
-[IAM.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_policy_version)
+[IAM.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_policy_version)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Returns
 Type annotations for `boto3.client("iam").create_role` method.
 
 Boto3 documentation:
-[IAM.Client.create_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_role)
+[IAM.Client.create_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_role)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Returns [CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef).
 Type annotations for `boto3.client("iam").create_saml_provider` method.
 
 Boto3 documentation:
-[IAM.Client.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_saml_provider)
+[IAM.Client.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_saml_provider)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Returns
 Type annotations for `boto3.client("iam").create_service_linked_role` method.
 
 Boto3 documentation:
-[IAM.Client.create_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_service_linked_role)
+[IAM.Client.create_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_service_linked_role)
 
 Arguments:
 
@@ -514,7 +514,7 @@ Type annotations for `boto3.client("iam").create_service_specific_credential`
 method.
 
 Boto3 documentation:
-[IAM.Client.create_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_service_specific_credential)
+[IAM.Client.create_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_service_specific_credential)
 
 Arguments:
 
@@ -529,7 +529,7 @@ Returns
 Type annotations for `boto3.client("iam").create_user` method.
 
 Boto3 documentation:
-[IAM.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_user)
+[IAM.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_user)
 
 Arguments:
 
@@ -545,7 +545,7 @@ Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
+[IAM.Client.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
 
 Arguments:
 
@@ -561,7 +561,7 @@ Returns
 Type annotations for `boto3.client("iam").deactivate_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.deactivate_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
+[IAM.Client.deactivate_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
 
 Arguments:
 
@@ -573,7 +573,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_access_key` method.
 
 Boto3 documentation:
-[IAM.Client.delete_access_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_access_key)
+[IAM.Client.delete_access_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_access_key)
 
 Arguments:
 
@@ -585,7 +585,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
 Boto3 documentation:
-[IAM.Client.delete_account_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_account_alias)
+[IAM.Client.delete_account_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_account_alias)
 
 Arguments:
 
@@ -597,14 +597,14 @@ Type annotations for `boto3.client("iam").delete_account_password_policy`
 method.
 
 Boto3 documentation:
-[IAM.Client.delete_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_account_password_policy)
+[IAM.Client.delete_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_account_password_policy)
 
 ### delete_group
 
 Type annotations for `boto3.client("iam").delete_group` method.
 
 Boto3 documentation:
-[IAM.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_group)
+[IAM.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_group)
 
 Arguments:
 
@@ -615,7 +615,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_group_policy` method.
 
 Boto3 documentation:
-[IAM.Client.delete_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_group_policy)
+[IAM.Client.delete_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_group_policy)
 
 Arguments:
 
@@ -627,7 +627,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_instance_profile` method.
 
 Boto3 documentation:
-[IAM.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_instance_profile)
+[IAM.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_instance_profile)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
 Boto3 documentation:
-[IAM.Client.delete_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_login_profile)
+[IAM.Client.delete_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_login_profile)
 
 Arguments:
 
@@ -650,7 +650,7 @@ Type annotations for `boto3.client("iam").delete_open_id_connect_provider`
 method.
 
 Boto3 documentation:
-[IAM.Client.delete_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
+[IAM.Client.delete_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
 
 Arguments:
 
@@ -661,7 +661,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_policy` method.
 
 Boto3 documentation:
-[IAM.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_policy)
+[IAM.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_policy)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_policy_version` method.
 
 Boto3 documentation:
-[IAM.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_policy_version)
+[IAM.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_policy_version)
 
 Arguments:
 
@@ -684,7 +684,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_role` method.
 
 Boto3 documentation:
-[IAM.Client.delete_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_role)
+[IAM.Client.delete_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_role)
 
 Arguments:
 
@@ -696,7 +696,7 @@ Type annotations for `boto3.client("iam").delete_role_permissions_boundary`
 method.
 
 Boto3 documentation:
-[IAM.Client.delete_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
+[IAM.Client.delete_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
 
 Arguments:
 
@@ -707,7 +707,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_role_policy` method.
 
 Boto3 documentation:
-[IAM.Client.delete_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_role_policy)
+[IAM.Client.delete_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_role_policy)
 
 Arguments:
 
@@ -719,7 +719,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_saml_provider` method.
 
 Boto3 documentation:
-[IAM.Client.delete_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_saml_provider)
+[IAM.Client.delete_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_saml_provider)
 
 Arguments:
 
@@ -730,7 +730,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_server_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.delete_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_server_certificate)
+[IAM.Client.delete_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_server_certificate)
 
 Arguments:
 
@@ -741,7 +741,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_service_linked_role` method.
 
 Boto3 documentation:
-[IAM.Client.delete_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_service_linked_role)
+[IAM.Client.delete_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_service_linked_role)
 
 Arguments:
 
@@ -756,7 +756,7 @@ Type annotations for `boto3.client("iam").delete_service_specific_credential`
 method.
 
 Boto3 documentation:
-[IAM.Client.delete_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
+[IAM.Client.delete_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
 
 Arguments:
 
@@ -768,7 +768,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_signing_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.delete_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_signing_certificate)
+[IAM.Client.delete_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_signing_certificate)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_ssh_public_key` method.
 
 Boto3 documentation:
-[IAM.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
+[IAM.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
 
 Arguments:
 
@@ -792,7 +792,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_user` method.
 
 Boto3 documentation:
-[IAM.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_user)
+[IAM.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_user)
 
 Arguments:
 
@@ -804,7 +804,7 @@ Type annotations for `boto3.client("iam").delete_user_permissions_boundary`
 method.
 
 Boto3 documentation:
-[IAM.Client.delete_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
+[IAM.Client.delete_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
 
 Arguments:
 
@@ -815,7 +815,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_user_policy` method.
 
 Boto3 documentation:
-[IAM.Client.delete_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_user_policy)
+[IAM.Client.delete_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_user_policy)
 
 Arguments:
 
@@ -827,7 +827,7 @@ Arguments:
 Type annotations for `boto3.client("iam").delete_virtual_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.delete_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
+[IAM.Client.delete_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
 
 Arguments:
 
@@ -838,7 +838,7 @@ Arguments:
 Type annotations for `boto3.client("iam").detach_group_policy` method.
 
 Boto3 documentation:
-[IAM.Client.detach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.detach_group_policy)
+[IAM.Client.detach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.detach_group_policy)
 
 Arguments:
 
@@ -850,7 +850,7 @@ Arguments:
 Type annotations for `boto3.client("iam").detach_role_policy` method.
 
 Boto3 documentation:
-[IAM.Client.detach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.detach_role_policy)
+[IAM.Client.detach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.detach_role_policy)
 
 Arguments:
 
@@ -862,7 +862,7 @@ Arguments:
 Type annotations for `boto3.client("iam").detach_user_policy` method.
 
 Boto3 documentation:
-[IAM.Client.detach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.detach_user_policy)
+[IAM.Client.detach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.detach_user_policy)
 
 Arguments:
 
@@ -874,7 +874,7 @@ Arguments:
 Type annotations for `boto3.client("iam").enable_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.enable_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.enable_mfa_device)
+[IAM.Client.enable_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.enable_mfa_device)
 
 Arguments:
 
@@ -888,7 +888,7 @@ Arguments:
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
 Boto3 documentation:
-[IAM.Client.generate_credential_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.generate_credential_report)
+[IAM.Client.generate_credential_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.generate_credential_report)
 
 Returns
 [GenerateCredentialReportResponseTypeDef](./type_defs.md#generatecredentialreportresponsetypedef).
@@ -899,7 +899,7 @@ Type annotations for `boto3.client("iam").generate_organizations_access_report`
 method.
 
 Boto3 documentation:
-[IAM.Client.generate_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
+[IAM.Client.generate_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
 
 Arguments:
 
@@ -914,7 +914,7 @@ Returns
 Type annotations for `boto3.client("iam").generate_presigned_url` method.
 
 Boto3 documentation:
-[IAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.generate_presigned_url)
+[IAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.generate_presigned_url)
 
 Arguments:
 
@@ -931,7 +931,7 @@ Type annotations for
 `boto3.client("iam").generate_service_last_accessed_details` method.
 
 Boto3 documentation:
-[IAM.Client.generate_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
+[IAM.Client.generate_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
 
 Arguments:
 
@@ -947,7 +947,7 @@ Returns
 Type annotations for `boto3.client("iam").get_access_key_last_used` method.
 
 Boto3 documentation:
-[IAM.Client.get_access_key_last_used](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_access_key_last_used)
+[IAM.Client.get_access_key_last_used](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_access_key_last_used)
 
 Arguments:
 
@@ -962,7 +962,7 @@ Type annotations for `boto3.client("iam").get_account_authorization_details`
 method.
 
 Boto3 documentation:
-[IAM.Client.get_account_authorization_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_account_authorization_details)
+[IAM.Client.get_account_authorization_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_account_authorization_details)
 
 Arguments:
 
@@ -978,7 +978,7 @@ Returns
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
 Boto3 documentation:
-[IAM.Client.get_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_account_password_policy)
+[IAM.Client.get_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_account_password_policy)
 
 Returns
 [GetAccountPasswordPolicyResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponsetypedef).
@@ -988,7 +988,7 @@ Returns
 Type annotations for `boto3.client("iam").get_account_summary` method.
 
 Boto3 documentation:
-[IAM.Client.get_account_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_account_summary)
+[IAM.Client.get_account_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_account_summary)
 
 Returns
 [GetAccountSummaryResponseTypeDef](./type_defs.md#getaccountsummaryresponsetypedef).
@@ -999,7 +999,7 @@ Type annotations for `boto3.client("iam").get_context_keys_for_custom_policy`
 method.
 
 Boto3 documentation:
-[IAM.Client.get_context_keys_for_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
+[IAM.Client.get_context_keys_for_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
 
 Arguments:
 
@@ -1014,7 +1014,7 @@ Type annotations for
 `boto3.client("iam").get_context_keys_for_principal_policy` method.
 
 Boto3 documentation:
-[IAM.Client.get_context_keys_for_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
+[IAM.Client.get_context_keys_for_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
 
 Arguments:
 
@@ -1029,7 +1029,7 @@ Returns
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
 Boto3 documentation:
-[IAM.Client.get_credential_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_credential_report)
+[IAM.Client.get_credential_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_credential_report)
 
 Returns
 [GetCredentialReportResponseTypeDef](./type_defs.md#getcredentialreportresponsetypedef).
@@ -1039,7 +1039,7 @@ Returns
 Type annotations for `boto3.client("iam").get_group` method.
 
 Boto3 documentation:
-[IAM.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_group)
+[IAM.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_group)
 
 Arguments:
 
@@ -1054,7 +1054,7 @@ Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
 Type annotations for `boto3.client("iam").get_group_policy` method.
 
 Boto3 documentation:
-[IAM.Client.get_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_group_policy)
+[IAM.Client.get_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_group_policy)
 
 Arguments:
 
@@ -1069,7 +1069,7 @@ Returns
 Type annotations for `boto3.client("iam").get_instance_profile` method.
 
 Boto3 documentation:
-[IAM.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_instance_profile)
+[IAM.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_instance_profile)
 
 Arguments:
 
@@ -1083,7 +1083,7 @@ Returns
 Type annotations for `boto3.client("iam").get_login_profile` method.
 
 Boto3 documentation:
-[IAM.Client.get_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_login_profile)
+[IAM.Client.get_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_login_profile)
 
 Arguments:
 
@@ -1097,7 +1097,7 @@ Returns
 Type annotations for `boto3.client("iam").get_open_id_connect_provider` method.
 
 Boto3 documentation:
-[IAM.Client.get_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
+[IAM.Client.get_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
 
 Arguments:
 
@@ -1112,7 +1112,7 @@ Type annotations for `boto3.client("iam").get_organizations_access_report`
 method.
 
 Boto3 documentation:
-[IAM.Client.get_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_organizations_access_report)
+[IAM.Client.get_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_organizations_access_report)
 
 Arguments:
 
@@ -1129,7 +1129,7 @@ Returns
 Type annotations for `boto3.client("iam").get_policy` method.
 
 Boto3 documentation:
-[IAM.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_policy)
+[IAM.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_policy)
 
 Arguments:
 
@@ -1142,7 +1142,7 @@ Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 Type annotations for `boto3.client("iam").get_policy_version` method.
 
 Boto3 documentation:
-[IAM.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_policy_version)
+[IAM.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_policy_version)
 
 Arguments:
 
@@ -1157,7 +1157,7 @@ Returns
 Type annotations for `boto3.client("iam").get_role` method.
 
 Boto3 documentation:
-[IAM.Client.get_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_role)
+[IAM.Client.get_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_role)
 
 Arguments:
 
@@ -1170,7 +1170,7 @@ Returns [GetRoleResponseTypeDef](./type_defs.md#getroleresponsetypedef).
 Type annotations for `boto3.client("iam").get_role_policy` method.
 
 Boto3 documentation:
-[IAM.Client.get_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_role_policy)
+[IAM.Client.get_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_role_policy)
 
 Arguments:
 
@@ -1185,7 +1185,7 @@ Returns
 Type annotations for `boto3.client("iam").get_saml_provider` method.
 
 Boto3 documentation:
-[IAM.Client.get_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_saml_provider)
+[IAM.Client.get_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_saml_provider)
 
 Arguments:
 
@@ -1199,7 +1199,7 @@ Returns
 Type annotations for `boto3.client("iam").get_server_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.get_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_server_certificate)
+[IAM.Client.get_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_server_certificate)
 
 Arguments:
 
@@ -1214,7 +1214,7 @@ Type annotations for `boto3.client("iam").get_service_last_accessed_details`
 method.
 
 Boto3 documentation:
-[IAM.Client.get_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
+[IAM.Client.get_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
 
 Arguments:
 
@@ -1231,7 +1231,7 @@ Type annotations for
 `boto3.client("iam").get_service_last_accessed_details_with_entities` method.
 
 Boto3 documentation:
-[IAM.Client.get_service_last_accessed_details_with_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
+[IAM.Client.get_service_last_accessed_details_with_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
 
 Arguments:
 
@@ -1249,7 +1249,7 @@ Type annotations for
 `boto3.client("iam").get_service_linked_role_deletion_status` method.
 
 Boto3 documentation:
-[IAM.Client.get_service_linked_role_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
+[IAM.Client.get_service_linked_role_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
 
 Arguments:
 
@@ -1263,7 +1263,7 @@ Returns
 Type annotations for `boto3.client("iam").get_ssh_public_key` method.
 
 Boto3 documentation:
-[IAM.Client.get_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_ssh_public_key)
+[IAM.Client.get_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_ssh_public_key)
 
 Arguments:
 
@@ -1279,7 +1279,7 @@ Returns
 Type annotations for `boto3.client("iam").get_user` method.
 
 Boto3 documentation:
-[IAM.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_user)
+[IAM.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_user)
 
 Arguments:
 
@@ -1292,7 +1292,7 @@ Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 Type annotations for `boto3.client("iam").get_user_policy` method.
 
 Boto3 documentation:
-[IAM.Client.get_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.get_user_policy)
+[IAM.Client.get_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.get_user_policy)
 
 Arguments:
 
@@ -1307,7 +1307,7 @@ Returns
 Type annotations for `boto3.client("iam").list_access_keys` method.
 
 Boto3 documentation:
-[IAM.Client.list_access_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_access_keys)
+[IAM.Client.list_access_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_access_keys)
 
 Arguments:
 
@@ -1323,7 +1323,7 @@ Returns
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
 Boto3 documentation:
-[IAM.Client.list_account_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_account_aliases)
+[IAM.Client.list_account_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_account_aliases)
 
 Arguments:
 
@@ -1338,7 +1338,7 @@ Returns
 Type annotations for `boto3.client("iam").list_attached_group_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_attached_group_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_attached_group_policies)
+[IAM.Client.list_attached_group_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_attached_group_policies)
 
 Arguments:
 
@@ -1355,7 +1355,7 @@ Returns
 Type annotations for `boto3.client("iam").list_attached_role_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_attached_role_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_attached_role_policies)
+[IAM.Client.list_attached_role_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_attached_role_policies)
 
 Arguments:
 
@@ -1372,7 +1372,7 @@ Returns
 Type annotations for `boto3.client("iam").list_attached_user_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_attached_user_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_attached_user_policies)
+[IAM.Client.list_attached_user_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_attached_user_policies)
 
 Arguments:
 
@@ -1389,7 +1389,7 @@ Returns
 Type annotations for `boto3.client("iam").list_entities_for_policy` method.
 
 Boto3 documentation:
-[IAM.Client.list_entities_for_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_entities_for_policy)
+[IAM.Client.list_entities_for_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_entities_for_policy)
 
 Arguments:
 
@@ -1408,7 +1408,7 @@ Returns
 Type annotations for `boto3.client("iam").list_group_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_group_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_group_policies)
+[IAM.Client.list_group_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_group_policies)
 
 Arguments:
 
@@ -1424,7 +1424,7 @@ Returns
 Type annotations for `boto3.client("iam").list_groups` method.
 
 Boto3 documentation:
-[IAM.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_groups)
+[IAM.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_groups)
 
 Arguments:
 
@@ -1439,7 +1439,7 @@ Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 Type annotations for `boto3.client("iam").list_groups_for_user` method.
 
 Boto3 documentation:
-[IAM.Client.list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_groups_for_user)
+[IAM.Client.list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_groups_for_user)
 
 Arguments:
 
@@ -1455,7 +1455,7 @@ Returns
 Type annotations for `boto3.client("iam").list_instance_profile_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_instance_profile_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
+[IAM.Client.list_instance_profile_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
 
 Arguments:
 
@@ -1471,7 +1471,7 @@ Returns
 Type annotations for `boto3.client("iam").list_instance_profiles` method.
 
 Boto3 documentation:
-[IAM.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_instance_profiles)
+[IAM.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_instance_profiles)
 
 Arguments:
 
@@ -1488,7 +1488,7 @@ Type annotations for `boto3.client("iam").list_instance_profiles_for_role`
 method.
 
 Boto3 documentation:
-[IAM.Client.list_instance_profiles_for_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
+[IAM.Client.list_instance_profiles_for_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
 
 Arguments:
 
@@ -1504,7 +1504,7 @@ Returns
 Type annotations for `boto3.client("iam").list_mfa_device_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_mfa_device_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
+[IAM.Client.list_mfa_device_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
 
 Arguments:
 
@@ -1520,7 +1520,7 @@ Returns
 Type annotations for `boto3.client("iam").list_mfa_devices` method.
 
 Boto3 documentation:
-[IAM.Client.list_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_mfa_devices)
+[IAM.Client.list_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_mfa_devices)
 
 Arguments:
 
@@ -1537,7 +1537,7 @@ Type annotations for `boto3.client("iam").list_open_id_connect_provider_tags`
 method.
 
 Boto3 documentation:
-[IAM.Client.list_open_id_connect_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
+[IAM.Client.list_open_id_connect_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
 
 Arguments:
 
@@ -1554,7 +1554,7 @@ Type annotations for `boto3.client("iam").list_open_id_connect_providers`
 method.
 
 Boto3 documentation:
-[IAM.Client.list_open_id_connect_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
+[IAM.Client.list_open_id_connect_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
 
 Returns
 [ListOpenIDConnectProvidersResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponsetypedef).
@@ -1564,7 +1564,7 @@ Returns
 Type annotations for `boto3.client("iam").list_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_policies)
+[IAM.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_policies)
 
 Arguments:
 
@@ -1584,7 +1584,7 @@ Type annotations for
 `boto3.client("iam").list_policies_granting_service_access` method.
 
 Boto3 documentation:
-[IAM.Client.list_policies_granting_service_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
+[IAM.Client.list_policies_granting_service_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
 
 Arguments:
 
@@ -1600,7 +1600,7 @@ Returns
 Type annotations for `boto3.client("iam").list_policy_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_policy_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_policy_tags)
+[IAM.Client.list_policy_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_policy_tags)
 
 Arguments:
 
@@ -1616,7 +1616,7 @@ Returns
 Type annotations for `boto3.client("iam").list_policy_versions` method.
 
 Boto3 documentation:
-[IAM.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_policy_versions)
+[IAM.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_policy_versions)
 
 Arguments:
 
@@ -1632,7 +1632,7 @@ Returns
 Type annotations for `boto3.client("iam").list_role_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_role_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_role_policies)
+[IAM.Client.list_role_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_role_policies)
 
 Arguments:
 
@@ -1648,7 +1648,7 @@ Returns
 Type annotations for `boto3.client("iam").list_role_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_role_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_role_tags)
+[IAM.Client.list_role_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_role_tags)
 
 Arguments:
 
@@ -1664,7 +1664,7 @@ Returns
 Type annotations for `boto3.client("iam").list_roles` method.
 
 Boto3 documentation:
-[IAM.Client.list_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_roles)
+[IAM.Client.list_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_roles)
 
 Arguments:
 
@@ -1679,7 +1679,7 @@ Returns [ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef).
 Type annotations for `boto3.client("iam").list_saml_provider_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_saml_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
+[IAM.Client.list_saml_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
 
 Arguments:
 
@@ -1695,7 +1695,7 @@ Returns
 Type annotations for `boto3.client("iam").list_saml_providers` method.
 
 Boto3 documentation:
-[IAM.Client.list_saml_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_saml_providers)
+[IAM.Client.list_saml_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_saml_providers)
 
 Returns
 [ListSAMLProvidersResponseTypeDef](./type_defs.md#listsamlprovidersresponsetypedef).
@@ -1705,7 +1705,7 @@ Returns
 Type annotations for `boto3.client("iam").list_server_certificate_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_server_certificate_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
+[IAM.Client.list_server_certificate_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
 
 Arguments:
 
@@ -1721,7 +1721,7 @@ Returns
 Type annotations for `boto3.client("iam").list_server_certificates` method.
 
 Boto3 documentation:
-[IAM.Client.list_server_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_server_certificates)
+[IAM.Client.list_server_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_server_certificates)
 
 Arguments:
 
@@ -1738,7 +1738,7 @@ Type annotations for `boto3.client("iam").list_service_specific_credentials`
 method.
 
 Boto3 documentation:
-[IAM.Client.list_service_specific_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
+[IAM.Client.list_service_specific_credentials](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
 
 Arguments:
 
@@ -1753,7 +1753,7 @@ Returns
 Type annotations for `boto3.client("iam").list_signing_certificates` method.
 
 Boto3 documentation:
-[IAM.Client.list_signing_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_signing_certificates)
+[IAM.Client.list_signing_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_signing_certificates)
 
 Arguments:
 
@@ -1769,7 +1769,7 @@ Returns
 Type annotations for `boto3.client("iam").list_ssh_public_keys` method.
 
 Boto3 documentation:
-[IAM.Client.list_ssh_public_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
+[IAM.Client.list_ssh_public_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
 
 Arguments:
 
@@ -1785,7 +1785,7 @@ Returns
 Type annotations for `boto3.client("iam").list_user_policies` method.
 
 Boto3 documentation:
-[IAM.Client.list_user_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_user_policies)
+[IAM.Client.list_user_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_user_policies)
 
 Arguments:
 
@@ -1801,7 +1801,7 @@ Returns
 Type annotations for `boto3.client("iam").list_user_tags` method.
 
 Boto3 documentation:
-[IAM.Client.list_user_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_user_tags)
+[IAM.Client.list_user_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_user_tags)
 
 Arguments:
 
@@ -1817,7 +1817,7 @@ Returns
 Type annotations for `boto3.client("iam").list_users` method.
 
 Boto3 documentation:
-[IAM.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_users)
+[IAM.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_users)
 
 Arguments:
 
@@ -1832,7 +1832,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
 Boto3 documentation:
-[IAM.Client.list_virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
+[IAM.Client.list_virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
 
 Arguments:
 
@@ -1849,7 +1849,7 @@ Returns
 Type annotations for `boto3.client("iam").put_group_policy` method.
 
 Boto3 documentation:
-[IAM.Client.put_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.put_group_policy)
+[IAM.Client.put_group_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.put_group_policy)
 
 Arguments:
 
@@ -1863,7 +1863,7 @@ Type annotations for `boto3.client("iam").put_role_permissions_boundary`
 method.
 
 Boto3 documentation:
-[IAM.Client.put_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
+[IAM.Client.put_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
 
 Arguments:
 
@@ -1875,7 +1875,7 @@ Arguments:
 Type annotations for `boto3.client("iam").put_role_policy` method.
 
 Boto3 documentation:
-[IAM.Client.put_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.put_role_policy)
+[IAM.Client.put_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.put_role_policy)
 
 Arguments:
 
@@ -1889,7 +1889,7 @@ Type annotations for `boto3.client("iam").put_user_permissions_boundary`
 method.
 
 Boto3 documentation:
-[IAM.Client.put_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
+[IAM.Client.put_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
 
 Arguments:
 
@@ -1901,7 +1901,7 @@ Arguments:
 Type annotations for `boto3.client("iam").put_user_policy` method.
 
 Boto3 documentation:
-[IAM.Client.put_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.put_user_policy)
+[IAM.Client.put_user_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.put_user_policy)
 
 Arguments:
 
@@ -1915,7 +1915,7 @@ Type annotations for
 `boto3.client("iam").remove_client_id_from_open_id_connect_provider` method.
 
 Boto3 documentation:
-[IAM.Client.remove_client_id_from_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
+[IAM.Client.remove_client_id_from_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
 
 Arguments:
 
@@ -1928,7 +1928,7 @@ Type annotations for `boto3.client("iam").remove_role_from_instance_profile`
 method.
 
 Boto3 documentation:
-[IAM.Client.remove_role_from_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
+[IAM.Client.remove_role_from_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
 
 Arguments:
 
@@ -1940,7 +1940,7 @@ Arguments:
 Type annotations for `boto3.client("iam").remove_user_from_group` method.
 
 Boto3 documentation:
-[IAM.Client.remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.remove_user_from_group)
+[IAM.Client.remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.remove_user_from_group)
 
 Arguments:
 
@@ -1953,7 +1953,7 @@ Type annotations for `boto3.client("iam").reset_service_specific_credential`
 method.
 
 Boto3 documentation:
-[IAM.Client.reset_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
+[IAM.Client.reset_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
 
 Arguments:
 
@@ -1968,7 +1968,7 @@ Returns
 Type annotations for `boto3.client("iam").resync_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.resync_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.resync_mfa_device)
+[IAM.Client.resync_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.resync_mfa_device)
 
 Arguments:
 
@@ -1982,7 +1982,7 @@ Arguments:
 Type annotations for `boto3.client("iam").set_default_policy_version` method.
 
 Boto3 documentation:
-[IAM.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.set_default_policy_version)
+[IAM.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.set_default_policy_version)
 
 Arguments:
 
@@ -1995,7 +1995,7 @@ Type annotations for
 `boto3.client("iam").set_security_token_service_preferences` method.
 
 Boto3 documentation:
-[IAM.Client.set_security_token_service_preferences](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
+[IAM.Client.set_security_token_service_preferences](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
 
 Arguments:
 
@@ -2008,7 +2008,7 @@ Arguments:
 Type annotations for `boto3.client("iam").simulate_custom_policy` method.
 
 Boto3 documentation:
-[IAM.Client.simulate_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.simulate_custom_policy)
+[IAM.Client.simulate_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.simulate_custom_policy)
 
 Arguments:
 
@@ -2033,7 +2033,7 @@ Returns
 Type annotations for `boto3.client("iam").simulate_principal_policy` method.
 
 Boto3 documentation:
-[IAM.Client.simulate_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.simulate_principal_policy)
+[IAM.Client.simulate_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.simulate_principal_policy)
 
 Arguments:
 
@@ -2059,7 +2059,7 @@ Returns
 Type annotations for `boto3.client("iam").tag_instance_profile` method.
 
 Boto3 documentation:
-[IAM.Client.tag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_instance_profile)
+[IAM.Client.tag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_instance_profile)
 
 Arguments:
 
@@ -2071,7 +2071,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.tag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_mfa_device)
+[IAM.Client.tag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_mfa_device)
 
 Arguments:
 
@@ -2083,7 +2083,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_open_id_connect_provider` method.
 
 Boto3 documentation:
-[IAM.Client.tag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
+[IAM.Client.tag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
 
 Arguments:
 
@@ -2095,7 +2095,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_policy` method.
 
 Boto3 documentation:
-[IAM.Client.tag_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_policy)
+[IAM.Client.tag_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_policy)
 
 Arguments:
 
@@ -2107,7 +2107,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_role` method.
 
 Boto3 documentation:
-[IAM.Client.tag_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_role)
+[IAM.Client.tag_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_role)
 
 Arguments:
 
@@ -2119,7 +2119,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_saml_provider` method.
 
 Boto3 documentation:
-[IAM.Client.tag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_saml_provider)
+[IAM.Client.tag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_saml_provider)
 
 Arguments:
 
@@ -2131,7 +2131,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_server_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.tag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_server_certificate)
+[IAM.Client.tag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_server_certificate)
 
 Arguments:
 
@@ -2143,7 +2143,7 @@ Arguments:
 Type annotations for `boto3.client("iam").tag_user` method.
 
 Boto3 documentation:
-[IAM.Client.tag_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.tag_user)
+[IAM.Client.tag_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.tag_user)
 
 Arguments:
 
@@ -2155,7 +2155,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_instance_profile` method.
 
 Boto3 documentation:
-[IAM.Client.untag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_instance_profile)
+[IAM.Client.untag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_instance_profile)
 
 Arguments:
 
@@ -2167,7 +2167,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_mfa_device` method.
 
 Boto3 documentation:
-[IAM.Client.untag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_mfa_device)
+[IAM.Client.untag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_mfa_device)
 
 Arguments:
 
@@ -2180,7 +2180,7 @@ Type annotations for `boto3.client("iam").untag_open_id_connect_provider`
 method.
 
 Boto3 documentation:
-[IAM.Client.untag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
+[IAM.Client.untag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
 
 Arguments:
 
@@ -2192,7 +2192,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_policy` method.
 
 Boto3 documentation:
-[IAM.Client.untag_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_policy)
+[IAM.Client.untag_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_policy)
 
 Arguments:
 
@@ -2204,7 +2204,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_role` method.
 
 Boto3 documentation:
-[IAM.Client.untag_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_role)
+[IAM.Client.untag_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_role)
 
 Arguments:
 
@@ -2216,7 +2216,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_saml_provider` method.
 
 Boto3 documentation:
-[IAM.Client.untag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_saml_provider)
+[IAM.Client.untag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_saml_provider)
 
 Arguments:
 
@@ -2228,7 +2228,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_server_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.untag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_server_certificate)
+[IAM.Client.untag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_server_certificate)
 
 Arguments:
 
@@ -2240,7 +2240,7 @@ Arguments:
 Type annotations for `boto3.client("iam").untag_user` method.
 
 Boto3 documentation:
-[IAM.Client.untag_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.untag_user)
+[IAM.Client.untag_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.untag_user)
 
 Arguments:
 
@@ -2252,7 +2252,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_access_key` method.
 
 Boto3 documentation:
-[IAM.Client.update_access_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_access_key)
+[IAM.Client.update_access_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_access_key)
 
 Arguments:
 
@@ -2266,7 +2266,7 @@ Type annotations for `boto3.client("iam").update_account_password_policy`
 method.
 
 Boto3 documentation:
-[IAM.Client.update_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_account_password_policy)
+[IAM.Client.update_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_account_password_policy)
 
 Arguments:
 
@@ -2285,7 +2285,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_assume_role_policy` method.
 
 Boto3 documentation:
-[IAM.Client.update_assume_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_assume_role_policy)
+[IAM.Client.update_assume_role_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_assume_role_policy)
 
 Arguments:
 
@@ -2297,7 +2297,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_group` method.
 
 Boto3 documentation:
-[IAM.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_group)
+[IAM.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_group)
 
 Arguments:
 
@@ -2310,7 +2310,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_login_profile` method.
 
 Boto3 documentation:
-[IAM.Client.update_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_login_profile)
+[IAM.Client.update_login_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_login_profile)
 
 Arguments:
 
@@ -2324,7 +2324,7 @@ Type annotations for
 `boto3.client("iam").update_open_id_connect_provider_thumbprint` method.
 
 Boto3 documentation:
-[IAM.Client.update_open_id_connect_provider_thumbprint](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
+[IAM.Client.update_open_id_connect_provider_thumbprint](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
 
 Arguments:
 
@@ -2336,7 +2336,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_role` method.
 
 Boto3 documentation:
-[IAM.Client.update_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_role)
+[IAM.Client.update_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_role)
 
 Arguments:
 
@@ -2351,7 +2351,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iam").update_role_description` method.
 
 Boto3 documentation:
-[IAM.Client.update_role_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_role_description)
+[IAM.Client.update_role_description](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_role_description)
 
 Arguments:
 
@@ -2366,7 +2366,7 @@ Returns
 Type annotations for `boto3.client("iam").update_saml_provider` method.
 
 Boto3 documentation:
-[IAM.Client.update_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_saml_provider)
+[IAM.Client.update_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_saml_provider)
 
 Arguments:
 
@@ -2381,7 +2381,7 @@ Returns
 Type annotations for `boto3.client("iam").update_server_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.update_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_server_certificate)
+[IAM.Client.update_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_server_certificate)
 
 Arguments:
 
@@ -2395,7 +2395,7 @@ Type annotations for `boto3.client("iam").update_service_specific_credential`
 method.
 
 Boto3 documentation:
-[IAM.Client.update_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_service_specific_credential)
+[IAM.Client.update_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_service_specific_credential)
 
 Arguments:
 
@@ -2408,7 +2408,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_signing_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.update_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_signing_certificate)
+[IAM.Client.update_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_signing_certificate)
 
 Arguments:
 
@@ -2421,7 +2421,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_ssh_public_key` method.
 
 Boto3 documentation:
-[IAM.Client.update_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_ssh_public_key)
+[IAM.Client.update_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_ssh_public_key)
 
 Arguments:
 
@@ -2434,7 +2434,7 @@ Arguments:
 Type annotations for `boto3.client("iam").update_user` method.
 
 Boto3 documentation:
-[IAM.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.update_user)
+[IAM.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.update_user)
 
 Arguments:
 
@@ -2447,7 +2447,7 @@ Arguments:
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.upload_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.upload_server_certificate)
+[IAM.Client.upload_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.upload_server_certificate)
 
 Arguments:
 
@@ -2466,7 +2466,7 @@ Returns
 Type annotations for `boto3.client("iam").upload_signing_certificate` method.
 
 Boto3 documentation:
-[IAM.Client.upload_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.upload_signing_certificate)
+[IAM.Client.upload_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.upload_signing_certificate)
 
 Arguments:
 
@@ -2481,7 +2481,7 @@ Returns
 Type annotations for `boto3.client("iam").upload_ssh_public_key` method.
 
 Boto3 documentation:
-[IAM.Client.upload_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
+[IAM.Client.upload_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
 
 Arguments:
 

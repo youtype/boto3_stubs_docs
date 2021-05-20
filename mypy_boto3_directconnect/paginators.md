@@ -3,7 +3,7 @@
 > [Index](..) > [DirectConnect](.) > Paginators
 
 Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/directconnect.html#DirectConnect)
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
 [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
@@ -27,7 +27,7 @@ def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDire
 ```
 
 Boto3 documentation:
-[DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
+[DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
 
 Arguments for `DescribeDirectConnectGatewayAssociationsPaginator.paginate`
 method:
@@ -57,7 +57,7 @@ def get_describe_direct_connect_gateway_attachments_paginator() -> DescribeDirec
 ```
 
 Boto3 documentation:
-[DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
+[DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
 
 Arguments for `DescribeDirectConnectGatewayAttachmentsPaginator.paginate`
 method:
@@ -85,7 +85,7 @@ def get_describe_direct_connect_gateways_paginator() -> DescribeDirectConnectGat
 ```
 
 Boto3 documentation:
-[DirectConnect.Paginator.DescribeDirectConnectGateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
+[DirectConnect.Paginator.DescribeDirectConnectGateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
 
 Arguments for `DescribeDirectConnectGatewaysPaginator.paginate` method:
 

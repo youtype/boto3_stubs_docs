@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisVideo](.) > KinesisVideoClient
 
 Auto-generated documentation for
-[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo)
+[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
 [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
@@ -48,7 +48,7 @@ def get_kinesisvideo_client() -> KinesisVideoClient:
 ```
 
 Boto3 documentation:
-[KinesisVideo.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client)
+[KinesisVideo.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("kinesisvideo").can_paginate` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.can_paginate)
+[KinesisVideo.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.can_paginate)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Type annotations for `boto3.client("kinesisvideo").create_signaling_channel`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.create_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel)
+[KinesisVideo.Client.create_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Returns
 Type annotations for `boto3.client("kinesisvideo").create_stream` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream)
+[KinesisVideo.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("kinesisvideo").delete_signaling_channel`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.delete_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel)
+[KinesisVideo.Client.delete_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisvideo").delete_stream` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream)
+[KinesisVideo.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("kinesisvideo").describe_signaling_channel`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.describe_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel)
+[KinesisVideo.Client.describe_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns
 Type annotations for `boto3.client("kinesisvideo").describe_stream` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream)
+[KinesisVideo.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("kinesisvideo").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.generate_presigned_url)
+[KinesisVideo.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.generate_presigned_url)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns `str`.
 Type annotations for `boto3.client("kinesisvideo").get_data_endpoint` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.get_data_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint)
+[KinesisVideo.Client.get_data_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Type annotations for
 `boto3.client("kinesisvideo").get_signaling_channel_endpoint` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.get_signaling_channel_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint)
+[KinesisVideo.Client.get_signaling_channel_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Type annotations for `boto3.client("kinesisvideo").list_signaling_channels`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.list_signaling_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels)
+[KinesisVideo.Client.list_signaling_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns
 Type annotations for `boto3.client("kinesisvideo").list_streams` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams)
+[KinesisVideo.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Type annotations for `boto3.client("kinesisvideo").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource)
+[KinesisVideo.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("kinesisvideo").list_tags_for_stream`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream)
+[KinesisVideo.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Returns
 Type annotations for `boto3.client("kinesisvideo").tag_resource` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource)
+[KinesisVideo.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisvideo").tag_stream` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.tag_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream)
+[KinesisVideo.Client.tag_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream)
 
 Arguments:
 
@@ -343,7 +343,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisvideo").untag_resource` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource)
+[KinesisVideo.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisvideo").untag_stream` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.untag_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream)
+[KinesisVideo.Client.untag_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("kinesisvideo").update_data_retention`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.update_data_retention](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention)
+[KinesisVideo.Client.update_data_retention](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("kinesisvideo").update_signaling_channel`
 method.
 
 Boto3 documentation:
-[KinesisVideo.Client.update_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel)
+[KinesisVideo.Client.update_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("kinesisvideo").update_stream` method.
 
 Boto3 documentation:
-[KinesisVideo.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream)
+[KinesisVideo.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream)
 
 Arguments:
 

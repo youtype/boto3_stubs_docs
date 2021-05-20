@@ -3,7 +3,7 @@
 > [Index](..) > [IoTAnalytics](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iotanalytics.html#IoTAnalytics)
+[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
 [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 

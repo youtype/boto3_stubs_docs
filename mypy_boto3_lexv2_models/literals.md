@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > Literals
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -20,6 +20,7 @@ type annotations stubs module
   - [BotVersionSortAttributeType](#botversionsortattributetype)
   - [BuiltInIntentSortAttributeType](#builtinintentsortattributetype)
   - [BuiltInSlotTypeSortAttributeType](#builtinslottypesortattributetype)
+  - [EffectType](#effecttype)
   - [ExportFilterNameType](#exportfilternametype)
   - [ExportFilterOperatorType](#exportfilteroperatortype)
   - [ExportSortAttributeType](#exportsortattributetype)
@@ -181,6 +182,17 @@ from mypy_boto3_lexv2_models.literals import BuiltInSlotTypeSortAttributeType
 Values:
 
 - `SlotTypeSignature`
+
+## EffectType
+
+```python
+from mypy_boto3_lexv2_models.literals import EffectType
+```
+
+Values:
+
+- `Allow`
+- `Deny`
 
 ## ExportFilterNameType
 

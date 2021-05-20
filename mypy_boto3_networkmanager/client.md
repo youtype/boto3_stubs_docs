@@ -3,7 +3,7 @@
 > [Index](..) > [NetworkManager](.) > NetworkManagerClient
 
 Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager)
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
 [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
@@ -64,7 +64,7 @@ def get_networkmanager_client() -> NetworkManagerClient:
 ```
 
 Boto3 documentation:
-[NetworkManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client)
+[NetworkManager.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client)
 
 ## Exceptions
 
@@ -97,7 +97,7 @@ Type annotations for
 `boto3.client("networkmanager").associate_customer_gateway` method.
 
 Boto3 documentation:
-[NetworkManager.Client.associate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
+[NetworkManager.Client.associate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").associate_link` method.
 
 Boto3 documentation:
-[NetworkManager.Client.associate_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
+[NetworkManager.Client.associate_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Type annotations for
 `boto3.client("networkmanager").associate_transit_gateway_connect_peer` method.
 
 Boto3 documentation:
-[NetworkManager.Client.associate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
+[NetworkManager.Client.associate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").can_paginate` method.
 
 Boto3 documentation:
-[NetworkManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.can_paginate)
+[NetworkManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.can_paginate)
 
 Arguments:
 
@@ -161,7 +161,7 @@ Returns `bool`.
 Type annotations for `boto3.client("networkmanager").create_connection` method.
 
 Boto3 documentation:
-[NetworkManager.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
+[NetworkManager.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").create_device` method.
 
 Boto3 documentation:
-[NetworkManager.Client.create_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.create_device)
+[NetworkManager.Client.create_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.create_device)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("networkmanager").create_global_network`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.create_global_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
+[NetworkManager.Client.create_global_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").create_link` method.
 
 Boto3 documentation:
-[NetworkManager.Client.create_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.create_link)
+[NetworkManager.Client.create_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.create_link)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Returns [CreateLinkResponseTypeDef](./type_defs.md#createlinkresponsetypedef).
 Type annotations for `boto3.client("networkmanager").create_site` method.
 
 Boto3 documentation:
-[NetworkManager.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.create_site)
+[NetworkManager.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.create_site)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Returns [CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef).
 Type annotations for `boto3.client("networkmanager").delete_connection` method.
 
 Boto3 documentation:
-[NetworkManager.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
+[NetworkManager.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").delete_device` method.
 
 Boto3 documentation:
-[NetworkManager.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
+[NetworkManager.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("networkmanager").delete_global_network`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.delete_global_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
+[NetworkManager.Client.delete_global_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").delete_link` method.
 
 Boto3 documentation:
-[NetworkManager.Client.delete_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
+[NetworkManager.Client.delete_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Returns [DeleteLinkResponseTypeDef](./type_defs.md#deletelinkresponsetypedef).
 Type annotations for `boto3.client("networkmanager").delete_site` method.
 
 Boto3 documentation:
-[NetworkManager.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
+[NetworkManager.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Type annotations for
 `boto3.client("networkmanager").deregister_transit_gateway` method.
 
 Boto3 documentation:
-[NetworkManager.Client.deregister_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
+[NetworkManager.Client.deregister_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
 
 Arguments:
 
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("networkmanager").describe_global_networks`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.describe_global_networks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
+[NetworkManager.Client.describe_global_networks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Type annotations for
 `boto3.client("networkmanager").disassociate_customer_gateway` method.
 
 Boto3 documentation:
-[NetworkManager.Client.disassociate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
+[NetworkManager.Client.disassociate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
 
 Arguments:
 
@@ -377,7 +377,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").disassociate_link` method.
 
 Boto3 documentation:
-[NetworkManager.Client.disassociate_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
+[NetworkManager.Client.disassociate_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.disassociate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
+[NetworkManager.Client.disassociate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("networkmanager").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url)
+[NetworkManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url)
 
 Arguments:
 
@@ -427,7 +427,7 @@ Returns `str`.
 Type annotations for `boto3.client("networkmanager").get_connections` method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
+[NetworkManager.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Type annotations for
 `boto3.client("networkmanager").get_customer_gateway_associations` method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_customer_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
+[NetworkManager.Client.get_customer_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").get_devices` method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
+[NetworkManager.Client.get_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
 
 Arguments:
 
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("networkmanager").get_link_associations`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_link_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
+[NetworkManager.Client.get_link_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
 
 Arguments:
 
@@ -499,7 +499,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").get_links` method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_links)
+[NetworkManager.Client.get_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_links)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Returns [GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef).
 Type annotations for `boto3.client("networkmanager").get_sites` method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_sites](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
+[NetworkManager.Client.get_sites](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
 
 Arguments:
 
@@ -536,7 +536,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_transit_gateway_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
+[NetworkManager.Client.get_transit_gateway_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Type annotations for
 `boto3.client("networkmanager").get_transit_gateway_registrations` method.
 
 Boto3 documentation:
-[NetworkManager.Client.get_transit_gateway_registrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
+[NetworkManager.Client.get_transit_gateway_registrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
 
 Arguments:
 
@@ -572,7 +572,7 @@ Type annotations for `boto3.client("networkmanager").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
+[NetworkManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -587,7 +587,7 @@ Type annotations for `boto3.client("networkmanager").register_transit_gateway`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.register_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
+[NetworkManager.Client.register_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").tag_resource` method.
 
 Boto3 documentation:
-[NetworkManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
+[NetworkManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
 
 Arguments:
 
@@ -616,7 +616,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("networkmanager").untag_resource` method.
 
 Boto3 documentation:
-[NetworkManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
+[NetworkManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
 
 Arguments:
 
@@ -630,7 +630,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("networkmanager").update_connection` method.
 
 Boto3 documentation:
-[NetworkManager.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
+[NetworkManager.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
 
 Arguments:
 
@@ -648,7 +648,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").update_device` method.
 
 Boto3 documentation:
-[NetworkManager.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.update_device)
+[NetworkManager.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.update_device)
 
 Arguments:
 
@@ -672,7 +672,7 @@ Type annotations for `boto3.client("networkmanager").update_global_network`
 method.
 
 Boto3 documentation:
-[NetworkManager.Client.update_global_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
+[NetworkManager.Client.update_global_network](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
 
 Arguments:
 
@@ -687,7 +687,7 @@ Returns
 Type annotations for `boto3.client("networkmanager").update_link` method.
 
 Boto3 documentation:
-[NetworkManager.Client.update_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.update_link)
+[NetworkManager.Client.update_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.update_link)
 
 Arguments:
 
@@ -705,7 +705,7 @@ Returns [UpdateLinkResponseTypeDef](./type_defs.md#updatelinkresponsetypedef).
 Type annotations for `boto3.client("networkmanager").update_site` method.
 
 Boto3 documentation:
-[NetworkManager.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Client.update_site)
+[NetworkManager.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Client.update_site)
 
 Arguments:
 

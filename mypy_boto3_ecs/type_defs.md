@@ -3,7 +3,7 @@
 > [Index](..) > [ECS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ecs.html#ECS)
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecs.html#ECS)
 type annotations stubs module
 [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 

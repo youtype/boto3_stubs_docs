@@ -3,7 +3,7 @@
 > [Index](..) > [NetworkManager](.) > Paginators
 
 Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager)
+[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
 [mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
@@ -33,7 +33,7 @@ def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.DescribeGlobalNetworks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
+[NetworkManager.Paginator.DescribeGlobalNetworks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
 
 Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
 
@@ -59,7 +59,7 @@ def get_get_connections_paginator() -> GetConnectionsPaginator:
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
+[NetworkManager.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
 
 Arguments for `GetConnectionsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_get_customer_gateway_associations_paginator() -> GetCustomerGatewayAssoc
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetCustomerGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
+[NetworkManager.Paginator.GetCustomerGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
 
 Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_get_devices_paginator() -> GetDevicesPaginator:
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
+[NetworkManager.Paginator.GetDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
 
 Arguments for `GetDevicesPaginator.paginate` method:
 
@@ -142,7 +142,7 @@ def get_get_link_associations_paginator() -> GetLinkAssociationsPaginator:
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetLinkAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
+[NetworkManager.Paginator.GetLinkAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
 
 Arguments for `GetLinkAssociationsPaginator.paginate` method:
 
@@ -170,7 +170,7 @@ def get_get_links_paginator() -> GetLinksPaginator:
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetLinks](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
+[NetworkManager.Paginator.GetLinks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
 
 Arguments for `GetLinksPaginator.paginate` method:
 
@@ -200,7 +200,7 @@ def get_get_sites_paginator() -> GetSitesPaginator:
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetSites](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
+[NetworkManager.Paginator.GetSites](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
 
 Arguments for `GetSitesPaginator.paginate` method:
 
@@ -227,7 +227,7 @@ def get_get_transit_gateway_connect_peer_associations_paginator() -> GetTransitG
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
+[NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
 
 Arguments for `GetTransitGatewayConnectPeerAssociationsPaginator.paginate`
 method:
@@ -255,7 +255,7 @@ def get_get_transit_gateway_registrations_paginator() -> GetTransitGatewayRegist
 ```
 
 Boto3 documentation:
-[NetworkManager.Paginator.GetTransitGatewayRegistrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
+[NetworkManager.Paginator.GetTransitGatewayRegistrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
 
 Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Macie2](.) > Macie2Client
 
 Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2)
+[Macie2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2)
 type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
@@ -85,7 +85,7 @@ def get_macie2_client() -> Macie2Client:
 ```
 
 Boto3 documentation:
-[Macie2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client)
+[Macie2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client)
 
 ## Exceptions
 
@@ -117,7 +117,7 @@ Exceptions:
 Type annotations for `boto3.client("macie2").accept_invitation` method.
 
 Boto3 documentation:
-[Macie2.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.accept_invitation)
+[Macie2.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.accept_invitation)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("macie2").batch_get_custom_data_identifiers`
 method.
 
 Boto3 documentation:
-[Macie2.Client.batch_get_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers)
+[Macie2.Client.batch_get_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Returns
 Type annotations for `boto3.client("macie2").can_paginate` method.
 
 Boto3 documentation:
-[Macie2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.can_paginate)
+[Macie2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.can_paginate)
 
 Arguments:
 
@@ -160,7 +160,7 @@ Returns `bool`.
 Type annotations for `boto3.client("macie2").create_classification_job` method.
 
 Boto3 documentation:
-[Macie2.Client.create_classification_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.create_classification_job)
+[Macie2.Client.create_classification_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.create_classification_job)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("macie2").create_custom_data_identifier`
 method.
 
 Boto3 documentation:
-[Macie2.Client.create_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
+[Macie2.Client.create_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Returns
 Type annotations for `boto3.client("macie2").create_findings_filter` method.
 
 Boto3 documentation:
-[Macie2.Client.create_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.create_findings_filter)
+[Macie2.Client.create_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.create_findings_filter)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns
 Type annotations for `boto3.client("macie2").create_invitations` method.
 
 Boto3 documentation:
-[Macie2.Client.create_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.create_invitations)
+[Macie2.Client.create_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.create_invitations)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Returns
 Type annotations for `boto3.client("macie2").create_member` method.
 
 Boto3 documentation:
-[Macie2.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.create_member)
+[Macie2.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.create_member)
 
 Arguments:
 
@@ -261,7 +261,7 @@ Returns
 Type annotations for `boto3.client("macie2").create_sample_findings` method.
 
 Boto3 documentation:
-[Macie2.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.create_sample_findings)
+[Macie2.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.create_sample_findings)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").decline_invitations` method.
 
 Boto3 documentation:
-[Macie2.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.decline_invitations)
+[Macie2.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.decline_invitations)
 
 Arguments:
 
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("macie2").delete_custom_data_identifier`
 method.
 
 Boto3 documentation:
-[Macie2.Client.delete_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier)
+[Macie2.Client.delete_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier)
 
 Arguments:
 
@@ -302,7 +302,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").delete_findings_filter` method.
 
 Boto3 documentation:
-[Macie2.Client.delete_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.delete_findings_filter)
+[Macie2.Client.delete_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.delete_findings_filter)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").delete_invitations` method.
 
 Boto3 documentation:
-[Macie2.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.delete_invitations)
+[Macie2.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.delete_invitations)
 
 Arguments:
 
@@ -329,7 +329,7 @@ Returns
 Type annotations for `boto3.client("macie2").delete_member` method.
 
 Boto3 documentation:
-[Macie2.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.delete_member)
+[Macie2.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.delete_member)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").describe_buckets` method.
 
 Boto3 documentation:
-[Macie2.Client.describe_buckets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.describe_buckets)
+[Macie2.Client.describe_buckets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.describe_buckets)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("macie2").describe_classification_job`
 method.
 
 Boto3 documentation:
-[Macie2.Client.describe_classification_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.describe_classification_job)
+[Macie2.Client.describe_classification_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.describe_classification_job)
 
 Arguments:
 
@@ -377,7 +377,7 @@ Type annotations for
 `boto3.client("macie2").describe_organization_configuration` method.
 
 Boto3 documentation:
-[Macie2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
+[Macie2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
 
 Returns
 [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
@@ -387,7 +387,7 @@ Returns
 Type annotations for `boto3.client("macie2").disable_macie` method.
 
 Boto3 documentation:
-[Macie2.Client.disable_macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.disable_macie)
+[Macie2.Client.disable_macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.disable_macie)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -397,7 +397,7 @@ Type annotations for
 `boto3.client("macie2").disable_organization_admin_account` method.
 
 Boto3 documentation:
-[Macie2.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account)
+[Macie2.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Type annotations for
 `boto3.client("macie2").disassociate_from_administrator_account` method.
 
 Boto3 documentation:
-[Macie2.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account)
+[Macie2.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -421,7 +421,7 @@ Type annotations for `boto3.client("macie2").disassociate_from_master_account`
 method.
 
 Boto3 documentation:
-[Macie2.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account)
+[Macie2.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -430,7 +430,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").disassociate_member` method.
 
 Boto3 documentation:
-[Macie2.Client.disassociate_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.disassociate_member)
+[Macie2.Client.disassociate_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.disassociate_member)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").enable_macie` method.
 
 Boto3 documentation:
-[Macie2.Client.enable_macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.enable_macie)
+[Macie2.Client.enable_macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.enable_macie)
 
 Arguments:
 
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("macie2").enable_organization_admin_account`
 method.
 
 Boto3 documentation:
-[Macie2.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account)
+[Macie2.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").generate_presigned_url` method.
 
 Boto3 documentation:
-[Macie2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.generate_presigned_url)
+[Macie2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Returns `str`.
 Type annotations for `boto3.client("macie2").get_administrator_account` method.
 
 Boto3 documentation:
-[Macie2.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_administrator_account)
+[Macie2.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_administrator_account)
 
 Returns
 [GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
@@ -500,7 +500,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_bucket_statistics` method.
 
 Boto3 documentation:
-[Macie2.Client.get_bucket_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
+[Macie2.Client.get_bucket_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
 
 Arguments:
 
@@ -515,7 +515,7 @@ Type annotations for
 `boto3.client("macie2").get_classification_export_configuration` method.
 
 Boto3 documentation:
-[Macie2.Client.get_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
+[Macie2.Client.get_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
 
 Returns
 [GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef).
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("macie2").get_custom_data_identifier`
 method.
 
 Boto3 documentation:
-[Macie2.Client.get_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier)
+[Macie2.Client.get_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier)
 
 Arguments:
 
@@ -540,7 +540,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_finding_statistics` method.
 
 Boto3 documentation:
-[Macie2.Client.get_finding_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
+[Macie2.Client.get_finding_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_findings` method.
 
 Boto3 documentation:
-[Macie2.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_findings)
+[Macie2.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_findings)
 
 Arguments:
 
@@ -574,7 +574,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_findings_filter` method.
 
 Boto3 documentation:
-[Macie2.Client.get_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_findings_filter)
+[Macie2.Client.get_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_findings_filter)
 
 Arguments:
 
@@ -589,7 +589,7 @@ Type annotations for
 `boto3.client("macie2").get_findings_publication_configuration` method.
 
 Boto3 documentation:
-[Macie2.Client.get_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
+[Macie2.Client.get_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
 
 Returns
 [GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef).
@@ -599,7 +599,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_invitations_count` method.
 
 Boto3 documentation:
-[Macie2.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_invitations_count)
+[Macie2.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_invitations_count)
 
 Returns
 [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
@@ -609,7 +609,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_macie_session` method.
 
 Boto3 documentation:
-[Macie2.Client.get_macie_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_macie_session)
+[Macie2.Client.get_macie_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_macie_session)
 
 Returns
 [GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef).
@@ -619,7 +619,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_master_account` method.
 
 Boto3 documentation:
-[Macie2.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_master_account)
+[Macie2.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_master_account)
 
 Returns
 [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
@@ -629,7 +629,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_member` method.
 
 Boto3 documentation:
-[Macie2.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_member)
+[Macie2.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_member)
 
 Arguments:
 
@@ -642,7 +642,7 @@ Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
 Type annotations for `boto3.client("macie2").get_usage_statistics` method.
 
 Boto3 documentation:
-[Macie2.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
+[Macie2.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
 
 Arguments:
 
@@ -662,7 +662,7 @@ Returns
 Type annotations for `boto3.client("macie2").get_usage_totals` method.
 
 Boto3 documentation:
-[Macie2.Client.get_usage_totals](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.get_usage_totals)
+[Macie2.Client.get_usage_totals](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.get_usage_totals)
 
 Arguments:
 
@@ -676,7 +676,7 @@ Returns
 Type annotations for `boto3.client("macie2").list_classification_jobs` method.
 
 Boto3 documentation:
-[Macie2.Client.list_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
+[Macie2.Client.list_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
 
 Arguments:
 
@@ -696,7 +696,7 @@ Type annotations for `boto3.client("macie2").list_custom_data_identifiers`
 method.
 
 Boto3 documentation:
-[Macie2.Client.list_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers)
+[Macie2.Client.list_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers)
 
 Arguments:
 
@@ -711,7 +711,7 @@ Returns
 Type annotations for `boto3.client("macie2").list_findings` method.
 
 Boto3 documentation:
-[Macie2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_findings)
+[Macie2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_findings)
 
 Arguments:
 
@@ -729,7 +729,7 @@ Returns
 Type annotations for `boto3.client("macie2").list_findings_filters` method.
 
 Boto3 documentation:
-[Macie2.Client.list_findings_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_findings_filters)
+[Macie2.Client.list_findings_filters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_findings_filters)
 
 Arguments:
 
@@ -744,7 +744,7 @@ Returns
 Type annotations for `boto3.client("macie2").list_invitations` method.
 
 Boto3 documentation:
-[Macie2.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_invitations)
+[Macie2.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_invitations)
 
 Arguments:
 
@@ -759,7 +759,7 @@ Returns
 Type annotations for `boto3.client("macie2").list_members` method.
 
 Boto3 documentation:
-[Macie2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_members)
+[Macie2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_members)
 
 Arguments:
 
@@ -776,7 +776,7 @@ Type annotations for `boto3.client("macie2").list_organization_admin_accounts`
 method.
 
 Boto3 documentation:
-[Macie2.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts)
+[Macie2.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Returns
 Type annotations for `boto3.client("macie2").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Macie2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
+[Macie2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -806,7 +806,7 @@ Type annotations for
 `boto3.client("macie2").put_classification_export_configuration` method.
 
 Boto3 documentation:
-[Macie2.Client.put_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration)
+[Macie2.Client.put_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration)
 
 Arguments:
 
@@ -823,7 +823,7 @@ Type annotations for
 `boto3.client("macie2").put_findings_publication_configuration` method.
 
 Boto3 documentation:
-[Macie2.Client.put_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration)
+[Macie2.Client.put_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration)
 
 Arguments:
 
@@ -838,7 +838,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").search_resources` method.
 
 Boto3 documentation:
-[Macie2.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.search_resources)
+[Macie2.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.search_resources)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Returns
 Type annotations for `boto3.client("macie2").tag_resource` method.
 
 Boto3 documentation:
-[Macie2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.tag_resource)
+[Macie2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.tag_resource)
 
 Arguments:
 
@@ -872,7 +872,7 @@ Type annotations for `boto3.client("macie2").test_custom_data_identifier`
 method.
 
 Boto3 documentation:
-[Macie2.Client.test_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
+[Macie2.Client.test_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
 
 Arguments:
 
@@ -890,7 +890,7 @@ Returns
 Type annotations for `boto3.client("macie2").untag_resource` method.
 
 Boto3 documentation:
-[Macie2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.untag_resource)
+[Macie2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.untag_resource)
 
 Arguments:
 
@@ -904,7 +904,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").update_classification_job` method.
 
 Boto3 documentation:
-[Macie2.Client.update_classification_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.update_classification_job)
+[Macie2.Client.update_classification_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.update_classification_job)
 
 Arguments:
 
@@ -918,7 +918,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").update_findings_filter` method.
 
 Boto3 documentation:
-[Macie2.Client.update_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.update_findings_filter)
+[Macie2.Client.update_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.update_findings_filter)
 
 Arguments:
 
@@ -938,7 +938,7 @@ Returns
 Type annotations for `boto3.client("macie2").update_macie_session` method.
 
 Boto3 documentation:
-[Macie2.Client.update_macie_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.update_macie_session)
+[Macie2.Client.update_macie_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.update_macie_session)
 
 Arguments:
 
@@ -953,7 +953,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("macie2").update_member_session` method.
 
 Boto3 documentation:
-[Macie2.Client.update_member_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.update_member_session)
+[Macie2.Client.update_member_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.update_member_session)
 
 Arguments:
 
@@ -968,7 +968,7 @@ Type annotations for `boto3.client("macie2").update_organization_configuration`
 method.
 
 Boto3 documentation:
-[Macie2.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/macie2.html#Macie2.Client.update_organization_configuration)
+[Macie2.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie2.html#Macie2.Client.update_organization_configuration)
 
 Arguments:
 

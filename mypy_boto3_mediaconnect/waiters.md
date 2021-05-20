@@ -3,7 +3,7 @@
 > [Index](..) > [MediaConnect](.) > Waiters
 
 Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect)
+[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
 [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
@@ -26,7 +26,7 @@ def get_flow_active_waiter() -> FlowActiveWaiter:
 ```
 
 Boto3 documentation:
-[MediaConnect.Waiter.flow_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_active)
+[MediaConnect.Waiter.flow_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_active)
 
 Arguments for `FlowActiveWaiter.wait` method:
 
@@ -47,7 +47,7 @@ def get_flow_deleted_waiter() -> FlowDeletedWaiter:
 ```
 
 Boto3 documentation:
-[MediaConnect.Waiter.flow_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_deleted)
+[MediaConnect.Waiter.flow_deleted](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_deleted)
 
 Arguments for `FlowDeletedWaiter.wait` method:
 
@@ -68,7 +68,7 @@ def get_flow_standby_waiter() -> FlowStandbyWaiter:
 ```
 
 Boto3 documentation:
-[MediaConnect.Waiter.flow_standby](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_standby)
+[MediaConnect.Waiter.flow_standby](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_standby)
 
 Arguments for `FlowStandbyWaiter.wait` method:
 

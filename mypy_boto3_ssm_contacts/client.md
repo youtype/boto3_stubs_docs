@@ -3,7 +3,7 @@
 > [Index](..) > [SSMContacts](.) > SSMContactsClient
 
 Auto-generated documentation for
-[SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts)
+[SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts)
 type annotations stubs module
 [mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
@@ -56,7 +56,7 @@ def get_ssm-contacts_client() -> SSMContactsClient:
 ```
 
 Boto3 documentation:
-[SSMContacts.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client)
+[SSMContacts.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client)
 
 ## Exceptions
 
@@ -89,7 +89,7 @@ Exceptions:
 Type annotations for `boto3.client("ssm-contacts").accept_page` method.
 
 Boto3 documentation:
-[SSMContacts.Client.accept_page](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.accept_page)
+[SSMContacts.Client.accept_page](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.accept_page)
 
 Arguments:
 
@@ -107,7 +107,7 @@ Type annotations for `boto3.client("ssm-contacts").activate_contact_channel`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.activate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.activate_contact_channel)
+[SSMContacts.Client.activate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.activate_contact_channel)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").can_paginate` method.
 
 Boto3 documentation:
-[SSMContacts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.can_paginate)
+[SSMContacts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.can_paginate)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ssm-contacts").create_contact` method.
 
 Boto3 documentation:
-[SSMContacts.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact)
+[SSMContacts.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("ssm-contacts").create_contact_channel`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.create_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact_channel)
+[SSMContacts.Client.create_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact_channel)
 
 Arguments:
 
@@ -176,7 +176,7 @@ Type annotations for `boto3.client("ssm-contacts").deactivate_contact_channel`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.deactivate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.deactivate_contact_channel)
+[SSMContacts.Client.deactivate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.deactivate_contact_channel)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").delete_contact` method.
 
 Boto3 documentation:
-[SSMContacts.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact)
+[SSMContacts.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("ssm-contacts").delete_contact_channel`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.delete_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact_channel)
+[SSMContacts.Client.delete_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact_channel)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").describe_engagement` method.
 
 Boto3 documentation:
-[SSMContacts.Client.describe_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.describe_engagement)
+[SSMContacts.Client.describe_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.describe_engagement)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Returns
 Type annotations for `boto3.client("ssm-contacts").describe_page` method.
 
 Boto3 documentation:
-[SSMContacts.Client.describe_page](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.describe_page)
+[SSMContacts.Client.describe_page](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.describe_page)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("ssm-contacts").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.generate_presigned_url)
+[SSMContacts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.generate_presigned_url)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Returns `str`.
 Type annotations for `boto3.client("ssm-contacts").get_contact` method.
 
 Boto3 documentation:
-[SSMContacts.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact)
+[SSMContacts.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns [GetContactResultTypeDef](./type_defs.md#getcontactresulttypedef).
 Type annotations for `boto3.client("ssm-contacts").get_contact_channel` method.
 
 Boto3 documentation:
-[SSMContacts.Client.get_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_channel)
+[SSMContacts.Client.get_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_channel)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("ssm-contacts").get_contact_policy` method.
 
 Boto3 documentation:
-[SSMContacts.Client.get_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_policy)
+[SSMContacts.Client.get_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_policy)
 
 Arguments:
 
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("ssm-contacts").list_contact_channels`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_contact_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_contact_channels)
+[SSMContacts.Client.list_contact_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_contact_channels)
 
 Arguments:
 
@@ -318,7 +318,7 @@ Returns
 Type annotations for `boto3.client("ssm-contacts").list_contacts` method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_contacts)
+[SSMContacts.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_contacts)
 
 Arguments:
 
@@ -334,7 +334,7 @@ Returns [ListContactsResultTypeDef](./type_defs.md#listcontactsresulttypedef).
 Type annotations for `boto3.client("ssm-contacts").list_engagements` method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_engagements](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_engagements)
+[SSMContacts.Client.list_engagements](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_engagements)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns
 Type annotations for `boto3.client("ssm-contacts").list_page_receipts` method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_page_receipts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_page_receipts)
+[SSMContacts.Client.list_page_receipts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_page_receipts)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("ssm-contacts").list_pages_by_contact`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_pages_by_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_contact)
+[SSMContacts.Client.list_pages_by_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_contact)
 
 Arguments:
 
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("ssm-contacts").list_pages_by_engagement`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_pages_by_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_engagement)
+[SSMContacts.Client.list_pages_by_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_engagement)
 
 Arguments:
 
@@ -402,7 +402,7 @@ Type annotations for `boto3.client("ssm-contacts").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.list_tags_for_resource)
+[SSMContacts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns
 Type annotations for `boto3.client("ssm-contacts").put_contact_policy` method.
 
 Boto3 documentation:
-[SSMContacts.Client.put_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.put_contact_policy)
+[SSMContacts.Client.put_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.put_contact_policy)
 
 Arguments:
 
@@ -431,7 +431,7 @@ Type annotations for `boto3.client("ssm-contacts").send_activation_code`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.send_activation_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.send_activation_code)
+[SSMContacts.Client.send_activation_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.send_activation_code)
 
 Arguments:
 
@@ -444,7 +444,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").start_engagement` method.
 
 Boto3 documentation:
-[SSMContacts.Client.start_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.start_engagement)
+[SSMContacts.Client.start_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.start_engagement)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Returns
 Type annotations for `boto3.client("ssm-contacts").stop_engagement` method.
 
 Boto3 documentation:
-[SSMContacts.Client.stop_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.stop_engagement)
+[SSMContacts.Client.stop_engagement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.stop_engagement)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").tag_resource` method.
 
 Boto3 documentation:
-[SSMContacts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.tag_resource)
+[SSMContacts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.tag_resource)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").untag_resource` method.
 
 Boto3 documentation:
-[SSMContacts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.untag_resource)
+[SSMContacts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.untag_resource)
 
 Arguments:
 
@@ -507,7 +507,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ssm-contacts").update_contact` method.
 
 Boto3 documentation:
-[SSMContacts.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact)
+[SSMContacts.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("ssm-contacts").update_contact_channel`
 method.
 
 Boto3 documentation:
-[SSMContacts.Client.update_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact_channel)
+[SSMContacts.Client.update_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact_channel)
 
 Arguments:
 

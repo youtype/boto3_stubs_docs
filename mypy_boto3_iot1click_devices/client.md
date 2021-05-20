@@ -3,7 +3,7 @@
 > [Index](..) > [IoT1ClickDevicesService](.) > IoT1ClickDevicesServiceClient
 
 Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
 [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
@@ -42,7 +42,7 @@ def get_iot1click-devices_client() -> IoT1ClickDevicesServiceClient:
 ```
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
+[IoT1ClickDevicesService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
 
 ## Exceptions
 
@@ -74,7 +74,7 @@ Exceptions:
 Type annotations for `boto3.client("iot1click-devices").can_paginate` method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate)
+[IoT1ClickDevicesService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Type annotations for
 `boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
+[IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Type annotations for `boto3.client("iot1click-devices").describe_device`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
+[IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("iot1click-devices").finalize_device_claim`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
+[IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("iot1click-devices").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url)
+[IoT1ClickDevicesService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("iot1click-devices").get_device_methods`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
+[IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Type annotations for `boto3.client("iot1click-devices").initiate_device_claim`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
+[IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Type annotations for `boto3.client("iot1click-devices").invoke_device_method`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
+[IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("iot1click-devices").list_device_events`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
+[IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns
 Type annotations for `boto3.client("iot1click-devices").list_devices` method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
+[IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("iot1click-devices").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
+[IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns
 Type annotations for `boto3.client("iot1click-devices").tag_resource` method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
+[IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Arguments:
 Type annotations for `boto3.client("iot1click-devices").unclaim_device` method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
+[IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns
 Type annotations for `boto3.client("iot1click-devices").untag_resource` method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
+[IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
 
 Arguments:
 
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("iot1click-devices").update_device_state`
 method.
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
+[IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
 
 Arguments:
 

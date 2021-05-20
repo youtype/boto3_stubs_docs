@@ -3,7 +3,7 @@
 > [Index](..) > [LocationService](.) > Paginators
 
 Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService)
+[LocationService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService)
 type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
@@ -31,7 +31,7 @@ def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPagin
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.GetDevicePositionHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
+[LocationService.Paginator.GetDevicePositionHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
 
 Arguments for `GetDevicePositionHistoryPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_list_geofence_collections_paginator() -> ListGeofenceCollectionsPaginato
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.ListGeofenceCollections](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
+[LocationService.Paginator.ListGeofenceCollections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
 
 Arguments for `ListGeofenceCollectionsPaginator.paginate` method:
 
@@ -85,7 +85,7 @@ def get_list_geofences_paginator() -> ListGeofencesPaginator:
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.ListGeofences](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.ListGeofences)
+[LocationService.Paginator.ListGeofences](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.ListGeofences)
 
 Arguments for `ListGeofencesPaginator.paginate` method:
 
@@ -110,7 +110,7 @@ def get_list_maps_paginator() -> ListMapsPaginator:
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.ListMaps](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.ListMaps)
+[LocationService.Paginator.ListMaps](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.ListMaps)
 
 Arguments for `ListMapsPaginator.paginate` method:
 
@@ -135,7 +135,7 @@ def get_list_place_indexes_paginator() -> ListPlaceIndexesPaginator:
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.ListPlaceIndexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
+[LocationService.Paginator.ListPlaceIndexes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
 
 Arguments for `ListPlaceIndexesPaginator.paginate` method:
 
@@ -160,7 +160,7 @@ def get_list_tracker_consumers_paginator() -> ListTrackerConsumersPaginator:
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.ListTrackerConsumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
+[LocationService.Paginator.ListTrackerConsumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
 
 Arguments for `ListTrackerConsumersPaginator.paginate` method:
 
@@ -185,7 +185,7 @@ def get_list_trackers_paginator() -> ListTrackersPaginator:
 ```
 
 Boto3 documentation:
-[LocationService.Paginator.ListTrackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/location.html#LocationService.Paginator.ListTrackers)
+[LocationService.Paginator.ListTrackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/location.html#LocationService.Paginator.ListTrackers)
 
 Arguments for `ListTrackersPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Inspector](.) > Paginators
 
 Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector)
+[Inspector](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector)
 type annotations stubs module
 [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
@@ -33,7 +33,7 @@ def get_list_assessment_run_agents_paginator() -> ListAssessmentRunAgentsPaginat
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListAssessmentRunAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRunAgents)
+[Inspector.Paginator.ListAssessmentRunAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRunAgents)
 
 Arguments for `ListAssessmentRunAgentsPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_list_assessment_runs_paginator() -> ListAssessmentRunsPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListAssessmentRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRuns)
+[Inspector.Paginator.ListAssessmentRuns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRuns)
 
 Arguments for `ListAssessmentRunsPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_list_assessment_targets_paginator() -> ListAssessmentTargetsPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListAssessmentTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTargets)
+[Inspector.Paginator.ListAssessmentTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTargets)
 
 Arguments for `ListAssessmentTargetsPaginator.paginate` method:
 
@@ -115,7 +115,7 @@ def get_list_assessment_templates_paginator() -> ListAssessmentTemplatesPaginato
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListAssessmentTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTemplates)
+[Inspector.Paginator.ListAssessmentTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTemplates)
 
 Arguments for `ListAssessmentTemplatesPaginator.paginate` method:
 
@@ -143,7 +143,7 @@ def get_list_event_subscriptions_paginator() -> ListEventSubscriptionsPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListEventSubscriptions)
+[Inspector.Paginator.ListEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListEventSubscriptions)
 
 Arguments for `ListEventSubscriptionsPaginator.paginate` method:
 
@@ -169,7 +169,7 @@ def get_list_exclusions_paginator() -> ListExclusionsPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListExclusions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListExclusions)
+[Inspector.Paginator.ListExclusions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListExclusions)
 
 Arguments for `ListExclusionsPaginator.paginate` method:
 
@@ -195,7 +195,7 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListFindings)
+[Inspector.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListFindings)
 
 Arguments for `ListFindingsPaginator.paginate` method:
 
@@ -222,7 +222,7 @@ def get_list_rules_packages_paginator() -> ListRulesPackagesPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.ListRulesPackages](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.ListRulesPackages)
+[Inspector.Paginator.ListRulesPackages](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.ListRulesPackages)
 
 Arguments for `ListRulesPackagesPaginator.paginate` method:
 
@@ -247,7 +247,7 @@ def get_preview_agents_paginator() -> PreviewAgentsPaginator:
 ```
 
 Boto3 documentation:
-[Inspector.Paginator.PreviewAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/inspector.html#Inspector.Paginator.PreviewAgents)
+[Inspector.Paginator.PreviewAgents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/inspector.html#Inspector.Paginator.PreviewAgents)
 
 Arguments for `PreviewAgentsPaginator.paginate` method:
 

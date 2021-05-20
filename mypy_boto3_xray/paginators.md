@@ -3,7 +3,7 @@
 > [Index](..) > [XRay](.) > Paginators
 
 Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay)
+[XRay](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay)
 type annotations stubs module
 [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
@@ -31,7 +31,7 @@ def get_batch_get_traces_paginator() -> BatchGetTracesPaginator:
 ```
 
 Boto3 documentation:
-[XRay.Paginator.BatchGetTraces](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.BatchGetTraces)
+[XRay.Paginator.BatchGetTraces](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.BatchGetTraces)
 
 Arguments for `BatchGetTracesPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_get_groups_paginator() -> GetGroupsPaginator:
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetGroups)
+[XRay.Paginator.GetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetGroups)
 
 Arguments for `GetGroupsPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_get_sampling_rules_paginator() -> GetSamplingRulesPaginator:
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetSamplingRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetSamplingRules)
+[XRay.Paginator.GetSamplingRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetSamplingRules)
 
 Arguments for `GetSamplingRulesPaginator.paginate` method:
 
@@ -106,7 +106,7 @@ def get_get_sampling_statistic_summaries_paginator() -> GetSamplingStatisticSumm
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetSamplingStatisticSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetSamplingStatisticSummaries)
+[XRay.Paginator.GetSamplingStatisticSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetSamplingStatisticSummaries)
 
 Arguments for `GetSamplingStatisticSummariesPaginator.paginate` method:
 
@@ -130,7 +130,7 @@ def get_get_service_graph_paginator() -> GetServiceGraphPaginator:
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetServiceGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetServiceGraph)
+[XRay.Paginator.GetServiceGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetServiceGraph)
 
 Arguments for `GetServiceGraphPaginator.paginate` method:
 
@@ -159,7 +159,7 @@ def get_get_time_series_service_statistics_paginator() -> GetTimeSeriesServiceSt
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetTimeSeriesServiceStatistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetTimeSeriesServiceStatistics)
+[XRay.Paginator.GetTimeSeriesServiceStatistics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetTimeSeriesServiceStatistics)
 
 Arguments for `GetTimeSeriesServiceStatisticsPaginator.paginate` method:
 
@@ -190,7 +190,7 @@ def get_get_trace_graph_paginator() -> GetTraceGraphPaginator:
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetTraceGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetTraceGraph)
+[XRay.Paginator.GetTraceGraph](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetTraceGraph)
 
 Arguments for `GetTraceGraphPaginator.paginate` method:
 
@@ -216,7 +216,7 @@ def get_get_trace_summaries_paginator() -> GetTraceSummariesPaginator:
 ```
 
 Boto3 documentation:
-[XRay.Paginator.GetTraceSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/xray.html#XRay.Paginator.GetTraceSummaries)
+[XRay.Paginator.GetTraceSummaries](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/xray.html#XRay.Paginator.GetTraceSummaries)
 
 Arguments for `GetTraceSummariesPaginator.paginate` method:
 

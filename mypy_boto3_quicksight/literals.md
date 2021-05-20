@@ -3,7 +3,7 @@
 > [Index](..) > [QuickSight](.) > Literals
 
 Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/quicksight.html#QuickSight)
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
 [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
@@ -48,6 +48,7 @@ type annotations stubs module
   - [NamespaceErrorTypeType](#namespaceerrortypetype)
   - [NamespaceStatusType](#namespacestatustype)
   - [ResourceStatusType](#resourcestatustype)
+  - [RowLevelPermissionFormatVersionType](#rowlevelpermissionformatversiontype)
   - [RowLevelPermissionPolicyType](#rowlevelpermissionpolicytype)
   - [SearchAnalysesPaginatorName](#searchanalysespaginatorname)
   - [SearchDashboardsPaginatorName](#searchdashboardspaginatorname)
@@ -594,6 +595,17 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 - `UPDATE_SUCCESSFUL`
+
+## RowLevelPermissionFormatVersionType
+
+```python
+from mypy_boto3_quicksight.literals import RowLevelPermissionFormatVersionType
+```
+
+Values:
+
+- `VERSION_1`
+- `VERSION_2`
 
 ## RowLevelPermissionPolicyType
 

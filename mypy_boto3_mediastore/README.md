@@ -3,7 +3,7 @@
 > [Index](..) > MediaStore
 
 Auto-generated documentation for
-[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediastore.html#MediaStore)
+[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
 [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 

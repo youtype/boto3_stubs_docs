@@ -4,7 +4,7 @@
 > ServerlessApplicationRepositoryClient
 
 Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
 [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
@@ -44,7 +44,7 @@ def get_serverlessrepo_client() -> ServerlessApplicationRepositoryClient:
 ```
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
+[ServerlessApplicationRepository.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
 
 ## Exceptions
 
@@ -75,7 +75,7 @@ Exceptions:
 Type annotations for `boto3.client("serverlessrepo").can_paginate` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate)
+[ServerlessApplicationRepository.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate)
 
 Arguments:
 
@@ -89,7 +89,7 @@ Type annotations for `boto3.client("serverlessrepo").create_application`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
+[ServerlessApplicationRepository.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Type annotations for
 `boto3.client("serverlessrepo").create_application_version` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
+[ServerlessApplicationRepository.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for
 `boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_cloud_formation_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
+[ServerlessApplicationRepository.Client.create_cloud_formation_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Type annotations for
 `boto3.client("serverlessrepo").create_cloud_formation_template` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template)
+[ServerlessApplicationRepository.Client.create_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Type annotations for `boto3.client("serverlessrepo").delete_application`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application)
+[ServerlessApplicationRepository.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("serverlessrepo").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url)
+[ServerlessApplicationRepository.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Returns `str`.
 Type annotations for `boto3.client("serverlessrepo").get_application` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application)
+[ServerlessApplicationRepository.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("serverlessrepo").get_application_policy`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.get_application_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy)
+[ServerlessApplicationRepository.Client.get_application_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Type annotations for
 `boto3.client("serverlessrepo").get_cloud_formation_template` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.get_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template)
+[ServerlessApplicationRepository.Client.get_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Type annotations for
 `boto3.client("serverlessrepo").list_application_dependencies` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.list_application_dependencies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
+[ServerlessApplicationRepository.Client.list_application_dependencies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
 
 Arguments:
 
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("serverlessrepo").list_application_versions`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
+[ServerlessApplicationRepository.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns
 Type annotations for `boto3.client("serverlessrepo").list_applications` method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications)
+[ServerlessApplicationRepository.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications)
 
 Arguments:
 
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("serverlessrepo").put_application_policy`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.put_application_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy)
+[ServerlessApplicationRepository.Client.put_application_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy)
 
 Arguments:
 
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("serverlessrepo").unshare_application`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.unshare_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application)
+[ServerlessApplicationRepository.Client.unshare_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("serverlessrepo").update_application`
 method.
 
 Boto3 documentation:
-[ServerlessApplicationRepository.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
+[ServerlessApplicationRepository.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
 
 Arguments:
 

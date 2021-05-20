@@ -3,7 +3,7 @@
 > [Index](..) > [S3](.) > Literals
 
 Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/s3.html#S3)
+[S3](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/s3.html#S3)
 type annotations stubs module
 [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 

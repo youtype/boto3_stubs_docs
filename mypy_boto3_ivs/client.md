@@ -3,7 +3,7 @@
 > [Index](..) > [IVS](.) > IVSClient
 
 Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS)
+[IVS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS)
 type annotations stubs module
 [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
@@ -55,7 +55,7 @@ def get_ivs_client() -> IVSClient:
 ```
 
 Boto3 documentation:
-[IVS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client)
+[IVS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client)
 
 ## Exceptions
 
@@ -90,7 +90,7 @@ Exceptions:
 Type annotations for `boto3.client("ivs").batch_get_channel` method.
 
 Boto3 documentation:
-[IVS.Client.batch_get_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.batch_get_channel)
+[IVS.Client.batch_get_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.batch_get_channel)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Returns
 Type annotations for `boto3.client("ivs").batch_get_stream_key` method.
 
 Boto3 documentation:
-[IVS.Client.batch_get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
+[IVS.Client.batch_get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Returns
 Type annotations for `boto3.client("ivs").can_paginate` method.
 
 Boto3 documentation:
-[IVS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.can_paginate)
+[IVS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.can_paginate)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ivs").create_channel` method.
 
 Boto3 documentation:
-[IVS.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.create_channel)
+[IVS.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.create_channel)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("ivs").create_recording_configuration`
 method.
 
 Boto3 documentation:
-[IVS.Client.create_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.create_recording_configuration)
+[IVS.Client.create_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.create_recording_configuration)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns
 Type annotations for `boto3.client("ivs").create_stream_key` method.
 
 Boto3 documentation:
-[IVS.Client.create_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.create_stream_key)
+[IVS.Client.create_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.create_stream_key)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("ivs").delete_channel` method.
 
 Boto3 documentation:
-[IVS.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.delete_channel)
+[IVS.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.delete_channel)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Arguments:
 Type annotations for `boto3.client("ivs").delete_playback_key_pair` method.
 
 Boto3 documentation:
-[IVS.Client.delete_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
+[IVS.Client.delete_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("ivs").delete_recording_configuration`
 method.
 
 Boto3 documentation:
-[IVS.Client.delete_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
+[IVS.Client.delete_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Arguments:
 Type annotations for `boto3.client("ivs").delete_stream_key` method.
 
 Boto3 documentation:
-[IVS.Client.delete_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.delete_stream_key)
+[IVS.Client.delete_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.delete_stream_key)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Arguments:
 Type annotations for `boto3.client("ivs").generate_presigned_url` method.
 
 Boto3 documentation:
-[IVS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.generate_presigned_url)
+[IVS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns `str`.
 Type annotations for `boto3.client("ivs").get_channel` method.
 
 Boto3 documentation:
-[IVS.Client.get_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.get_channel)
+[IVS.Client.get_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.get_channel)
 
 Arguments:
 
@@ -260,7 +260,7 @@ Returns [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef).
 Type annotations for `boto3.client("ivs").get_playback_key_pair` method.
 
 Boto3 documentation:
-[IVS.Client.get_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
+[IVS.Client.get_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns
 Type annotations for `boto3.client("ivs").get_recording_configuration` method.
 
 Boto3 documentation:
-[IVS.Client.get_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.get_recording_configuration)
+[IVS.Client.get_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.get_recording_configuration)
 
 Arguments:
 
@@ -288,7 +288,7 @@ Returns
 Type annotations for `boto3.client("ivs").get_stream` method.
 
 Boto3 documentation:
-[IVS.Client.get_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.get_stream)
+[IVS.Client.get_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.get_stream)
 
 Arguments:
 
@@ -301,7 +301,7 @@ Returns [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef).
 Type annotations for `boto3.client("ivs").get_stream_key` method.
 
 Boto3 documentation:
-[IVS.Client.get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.get_stream_key)
+[IVS.Client.get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.get_stream_key)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("ivs").import_playback_key_pair` method.
 
 Boto3 documentation:
-[IVS.Client.import_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
+[IVS.Client.import_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Returns
 Type annotations for `boto3.client("ivs").list_channels` method.
 
 Boto3 documentation:
-[IVS.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.list_channels)
+[IVS.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.list_channels)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns
 Type annotations for `boto3.client("ivs").list_playback_key_pairs` method.
 
 Boto3 documentation:
-[IVS.Client.list_playback_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
+[IVS.Client.list_playback_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("ivs").list_recording_configurations`
 method.
 
 Boto3 documentation:
-[IVS.Client.list_recording_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.list_recording_configurations)
+[IVS.Client.list_recording_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.list_recording_configurations)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Returns
 Type annotations for `boto3.client("ivs").list_stream_keys` method.
 
 Boto3 documentation:
-[IVS.Client.list_stream_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.list_stream_keys)
+[IVS.Client.list_stream_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.list_stream_keys)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Returns
 Type annotations for `boto3.client("ivs").list_streams` method.
 
 Boto3 documentation:
-[IVS.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.list_streams)
+[IVS.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.list_streams)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Returns
 Type annotations for `boto3.client("ivs").list_tags_for_resource` method.
 
 Boto3 documentation:
-[IVS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
+[IVS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Returns
 Type annotations for `boto3.client("ivs").put_metadata` method.
 
 Boto3 documentation:
-[IVS.Client.put_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.put_metadata)
+[IVS.Client.put_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.put_metadata)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Arguments:
 Type annotations for `boto3.client("ivs").stop_stream` method.
 
 Boto3 documentation:
-[IVS.Client.stop_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.stop_stream)
+[IVS.Client.stop_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.stop_stream)
 
 Arguments:
 
@@ -451,7 +451,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ivs").tag_resource` method.
 
 Boto3 documentation:
-[IVS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.tag_resource)
+[IVS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.tag_resource)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ivs").untag_resource` method.
 
 Boto3 documentation:
-[IVS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.untag_resource)
+[IVS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.untag_resource)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ivs").update_channel` method.
 
 Boto3 documentation:
-[IVS.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/ivs.html#IVS.Client.update_channel)
+[IVS.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ivs.html#IVS.Client.update_channel)
 
 Arguments:
 

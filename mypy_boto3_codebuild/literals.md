@@ -3,7 +3,7 @@
 > [Index](..) > [CodeBuild](.) > Literals
 
 Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/codebuild.html#CodeBuild)
+[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
 [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 

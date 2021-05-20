@@ -3,7 +3,7 @@
 > [Index](..) > [LookoutMetrics](.) > Typed dictionaries
 
 Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lookoutmetrics.html#LookoutMetrics)
+[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
 [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 

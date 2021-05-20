@@ -3,7 +3,7 @@
 > [Index](..) > MediaPackageVod
 
 Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/mediapackage-vod.html#MediaPackageVod)
+[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
 [mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 

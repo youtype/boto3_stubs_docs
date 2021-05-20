@@ -3,7 +3,7 @@
 > [Index](..) > [LexModelsV2](.) > LexModelsV2Client
 
 Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2)
+[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
@@ -19,6 +19,8 @@ type annotations stubs module
     - [create_bot_version](#create_bot_version)
     - [create_export](#create_export)
     - [create_intent](#create_intent)
+    - [create_resource_policy](#create_resource_policy)
+    - [create_resource_policy_statement](#create_resource_policy_statement)
     - [create_slot](#create_slot)
     - [create_slot_type](#create_slot_type)
     - [create_upload_url](#create_upload_url)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [delete_export](#delete_export)
     - [delete_import](#delete_import)
     - [delete_intent](#delete_intent)
+    - [delete_resource_policy](#delete_resource_policy)
+    - [delete_resource_policy_statement](#delete_resource_policy_statement)
     - [delete_slot](#delete_slot)
     - [delete_slot_type](#delete_slot_type)
     - [describe_bot](#describe_bot)
@@ -38,6 +42,7 @@ type annotations stubs module
     - [describe_export](#describe_export)
     - [describe_import](#describe_import)
     - [describe_intent](#describe_intent)
+    - [describe_resource_policy](#describe_resource_policy)
     - [describe_slot](#describe_slot)
     - [describe_slot_type](#describe_slot_type)
     - [generate_presigned_url](#generate_presigned_url)
@@ -61,6 +66,7 @@ type annotations stubs module
     - [update_bot_locale](#update_bot_locale)
     - [update_export](#update_export)
     - [update_intent](#update_intent)
+    - [update_resource_policy](#update_resource_policy)
     - [update_slot](#update_slot)
     - [update_slot_type](#update_slot_type)
 
@@ -78,7 +84,7 @@ def get_lexv2-models_client() -> LexModelsV2Client:
 ```
 
 Boto3 documentation:
-[LexModelsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client)
+[LexModelsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client)
 
 ## Exceptions
 
@@ -110,7 +116,7 @@ Exceptions:
 Type annotations for `boto3.client("lexv2-models").build_bot_locale` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.build_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale)
+[LexModelsV2.Client.build_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale)
 
 Arguments:
 
@@ -126,7 +132,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").can_paginate` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate)
+[LexModelsV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate)
 
 Arguments:
 
@@ -139,7 +145,7 @@ Returns `bool`.
 Type annotations for `boto3.client("lexv2-models").create_bot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot)
+[LexModelsV2.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot)
 
 Arguments:
 
@@ -159,7 +165,7 @@ Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 Type annotations for `boto3.client("lexv2-models").create_bot_alias` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias)
+[LexModelsV2.Client.create_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias)
 
 Arguments:
 
@@ -183,7 +189,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").create_bot_locale` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale)
+[LexModelsV2.Client.create_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale)
 
 Arguments:
 
@@ -202,7 +208,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").create_bot_version` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version)
+[LexModelsV2.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version)
 
 Arguments:
 
@@ -220,7 +226,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").create_export` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_export)
+[LexModelsV2.Client.create_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_export)
 
 Arguments:
 
@@ -240,7 +246,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").create_intent` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent)
+[LexModelsV2.Client.create_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent)
 
 Arguments:
 
@@ -270,12 +276,50 @@ Arguments:
 Returns
 [CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef).
 
+### create_resource_policy
+
+Type annotations for `boto3.client("lexv2-models").create_resource_policy`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.create_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy)
+
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `policy`: `str` *(required)*
+
+Returns
+[CreateResourcePolicyResponseTypeDef](./type_defs.md#createresourcepolicyresponsetypedef).
+
+### create_resource_policy_statement
+
+Type annotations for
+`boto3.client("lexv2-models").create_resource_policy_statement` method.
+
+Boto3 documentation:
+[LexModelsV2.Client.create_resource_policy_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy_statement)
+
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `statementId`: `str` *(required)*
+- `effect`: [EffectType](./literals.md#effecttype) *(required)*
+- `principal`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+  *(required)*
+- `action`: `List`\[`str`\] *(required)*
+- `condition`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `expectedRevisionId`: `str`
+
+Returns
+[CreateResourcePolicyStatementResponseTypeDef](./type_defs.md#createresourcepolicystatementresponsetypedef).
+
 ### create_slot
 
 Type annotations for `boto3.client("lexv2-models").create_slot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot)
+[LexModelsV2.Client.create_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot)
 
 Arguments:
 
@@ -299,7 +343,7 @@ Returns [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef).
 Type annotations for `boto3.client("lexv2-models").create_slot_type` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type)
+[LexModelsV2.Client.create_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type)
 
 Arguments:
 
@@ -323,7 +367,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").create_upload_url` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.create_upload_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.create_upload_url)
+[LexModelsV2.Client.create_upload_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.create_upload_url)
 
 Returns
 [CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef).
@@ -333,7 +377,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").delete_bot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
+[LexModelsV2.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
 
 Arguments:
 
@@ -347,7 +391,7 @@ Returns [DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef).
 Type annotations for `boto3.client("lexv2-models").delete_bot_alias` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias)
+[LexModelsV2.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias)
 
 Arguments:
 
@@ -363,7 +407,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").delete_bot_locale` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale)
+[LexModelsV2.Client.delete_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale)
 
 Arguments:
 
@@ -379,7 +423,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").delete_bot_version` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version)
+[LexModelsV2.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version)
 
 Arguments:
 
@@ -395,7 +439,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").delete_export` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_export)
+[LexModelsV2.Client.delete_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_export)
 
 Arguments:
 
@@ -409,7 +453,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").delete_import` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_import)
+[LexModelsV2.Client.delete_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_import)
 
 Arguments:
 
@@ -423,7 +467,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").delete_intent` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent)
+[LexModelsV2.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent)
 
 Arguments:
 
@@ -432,12 +476,45 @@ Arguments:
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 
+### delete_resource_policy
+
+Type annotations for `boto3.client("lexv2-models").delete_resource_policy`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy)
+
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `expectedRevisionId`: `str`
+
+Returns
+[DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
+
+### delete_resource_policy_statement
+
+Type annotations for
+`boto3.client("lexv2-models").delete_resource_policy_statement` method.
+
+Boto3 documentation:
+[LexModelsV2.Client.delete_resource_policy_statement](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy_statement)
+
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `statementId`: `str` *(required)*
+- `expectedRevisionId`: `str`
+
+Returns
+[DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef).
+
 ### delete_slot
 
 Type annotations for `boto3.client("lexv2-models").delete_slot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot)
+[LexModelsV2.Client.delete_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot)
 
 Arguments:
 
@@ -452,7 +529,7 @@ Arguments:
 Type annotations for `boto3.client("lexv2-models").delete_slot_type` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type)
+[LexModelsV2.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type)
 
 Arguments:
 
@@ -467,7 +544,7 @@ Arguments:
 Type annotations for `boto3.client("lexv2-models").describe_bot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
+[LexModelsV2.Client.describe_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
 
 Arguments:
 
@@ -481,7 +558,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").describe_bot_alias` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
+[LexModelsV2.Client.describe_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
 
 Arguments:
 
@@ -496,7 +573,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").describe_bot_locale` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale)
+[LexModelsV2.Client.describe_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale)
 
 Arguments:
 
@@ -513,7 +590,7 @@ Type annotations for `boto3.client("lexv2-models").describe_bot_version`
 method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_bot_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
+[LexModelsV2.Client.describe_bot_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
 
 Arguments:
 
@@ -528,7 +605,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").describe_export` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_export)
+[LexModelsV2.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_export)
 
 Arguments:
 
@@ -542,7 +619,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").describe_import` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_import)
+[LexModelsV2.Client.describe_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_import)
 
 Arguments:
 
@@ -556,7 +633,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").describe_intent` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent)
+[LexModelsV2.Client.describe_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent)
 
 Arguments:
 
@@ -568,12 +645,27 @@ Arguments:
 Returns
 [DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef).
 
+### describe_resource_policy
+
+Type annotations for `boto3.client("lexv2-models").describe_resource_policy`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_resource_policy)
+
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
+
 ### describe_slot
 
 Type annotations for `boto3.client("lexv2-models").describe_slot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot)
+[LexModelsV2.Client.describe_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot)
 
 Arguments:
 
@@ -591,7 +683,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").describe_slot_type` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.describe_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type)
+[LexModelsV2.Client.describe_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type)
 
 Arguments:
 
@@ -609,7 +701,7 @@ Type annotations for `boto3.client("lexv2-models").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[LexModelsV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url)
+[LexModelsV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -625,7 +717,7 @@ Returns `str`.
 Type annotations for `boto3.client("lexv2-models").list_bot_aliases` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases)
+[LexModelsV2.Client.list_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases)
 
 Arguments:
 
@@ -641,7 +733,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_bot_locales` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_bot_locales](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales)
+[LexModelsV2.Client.list_bot_locales](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales)
 
 Arguments:
 
@@ -661,7 +753,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_bot_versions` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions)
+[LexModelsV2.Client.list_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions)
 
 Arguments:
 
@@ -678,7 +770,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_bots` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots)
+[LexModelsV2.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots)
 
 Arguments:
 
@@ -695,7 +787,7 @@ Type annotations for `boto3.client("lexv2-models").list_built_in_intents`
 method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_built_in_intents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents)
+[LexModelsV2.Client.list_built_in_intents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents)
 
 Arguments:
 
@@ -714,7 +806,7 @@ Type annotations for `boto3.client("lexv2-models").list_built_in_slot_types`
 method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_built_in_slot_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types)
+[LexModelsV2.Client.list_built_in_slot_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types)
 
 Arguments:
 
@@ -732,7 +824,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_exports` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_exports)
+[LexModelsV2.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_exports)
 
 Arguments:
 
@@ -752,7 +844,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_imports` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_imports)
+[LexModelsV2.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_imports)
 
 Arguments:
 
@@ -772,7 +864,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_intents` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_intents](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents)
+[LexModelsV2.Client.list_intents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents)
 
 Arguments:
 
@@ -793,7 +885,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_slot_types` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_slot_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types)
+[LexModelsV2.Client.list_slot_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types)
 
 Arguments:
 
@@ -814,7 +906,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").list_slots` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_slots](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots)
+[LexModelsV2.Client.list_slots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots)
 
 Arguments:
 
@@ -835,7 +927,7 @@ Type annotations for `boto3.client("lexv2-models").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[LexModelsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
+[LexModelsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -849,7 +941,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").start_import` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.start_import)
+[LexModelsV2.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.start_import)
 
 Arguments:
 
@@ -869,7 +961,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").tag_resource` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
+[LexModelsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
 
 Arguments:
 
@@ -883,7 +975,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lexv2-models").untag_resource` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
+[LexModelsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
 
 Arguments:
 
@@ -897,7 +989,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("lexv2-models").update_bot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot)
+[LexModelsV2.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot)
 
 Arguments:
 
@@ -916,7 +1008,7 @@ Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
 Type annotations for `boto3.client("lexv2-models").update_bot_alias` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias)
+[LexModelsV2.Client.update_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias)
 
 Arguments:
 
@@ -940,7 +1032,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").update_bot_locale` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale)
+[LexModelsV2.Client.update_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale)
 
 Arguments:
 
@@ -959,7 +1051,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").update_export` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_export)
+[LexModelsV2.Client.update_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_export)
 
 Arguments:
 
@@ -974,7 +1066,7 @@ Returns
 Type annotations for `boto3.client("lexv2-models").update_intent` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent)
+[LexModelsV2.Client.update_intent](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent)
 
 Arguments:
 
@@ -1007,12 +1099,29 @@ Arguments:
 Returns
 [UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef).
 
+### update_resource_policy
+
+Type annotations for `boto3.client("lexv2-models").update_resource_policy`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.update_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_resource_policy)
+
+Arguments:
+
+- `resourceArn`: `str` *(required)*
+- `policy`: `str` *(required)*
+- `expectedRevisionId`: `str`
+
+Returns
+[UpdateResourcePolicyResponseTypeDef](./type_defs.md#updateresourcepolicyresponsetypedef).
+
 ### update_slot
 
 Type annotations for `boto3.client("lexv2-models").update_slot` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot)
+[LexModelsV2.Client.update_slot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot)
 
 Arguments:
 
@@ -1037,7 +1146,7 @@ Returns [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef).
 Type annotations for `boto3.client("lexv2-models").update_slot_type` method.
 
 Boto3 documentation:
-[LexModelsV2.Client.update_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type)
+[LexModelsV2.Client.update_slot_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type)
 
 Arguments:
 

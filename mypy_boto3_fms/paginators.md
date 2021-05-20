@@ -3,7 +3,7 @@
 > [Index](..) > [FMS](.) > Paginators
 
 Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fms.html#FMS)
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fms.html#FMS)
 type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
@@ -27,7 +27,7 @@ def get_list_compliance_status_paginator() -> ListComplianceStatusPaginator:
 ```
 
 Boto3 documentation:
-[FMS.Paginator.ListComplianceStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
+[FMS.Paginator.ListComplianceStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
 
 Arguments for `ListComplianceStatusPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
 ```
 
 Boto3 documentation:
-[FMS.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
+[FMS.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
 
 Arguments for `ListMemberAccountsPaginator.paginate` method:
 
@@ -77,7 +77,7 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[FMS.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/fms.html#FMS.Paginator.ListPolicies)
+[FMS.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fms.html#FMS.Paginator.ListPolicies)
 
 Arguments for `ListPoliciesPaginator.paginate` method:
 

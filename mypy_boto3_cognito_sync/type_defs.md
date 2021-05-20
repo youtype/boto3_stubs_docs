@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoSync](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.76/reference/services/cognito-sync.html#CognitoSync)
+[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
 [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
