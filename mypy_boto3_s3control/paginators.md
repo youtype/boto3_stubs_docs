@@ -3,7 +3,7 @@
 > [Index](..) > [S3Control](.) > Paginators
 
 Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/s3control.html#S3Control)
+[S3Control](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3control.html#S3Control)
 type annotations stubs module
 [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
@@ -25,7 +25,7 @@ def get_list_access_points_for_object_lambda_paginator() -> ListAccessPointsForO
 ```
 
 Boto3 documentation:
-[S3Control.Paginator.ListAccessPointsForObjectLambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
+[S3Control.Paginator.ListAccessPointsForObjectLambda](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
 
 Arguments for `ListAccessPointsForObjectLambdaPaginator.paginate` method:
 

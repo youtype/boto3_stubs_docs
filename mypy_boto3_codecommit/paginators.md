@@ -3,7 +3,7 @@
 > [Index](..) > [CodeCommit](.) > Paginators
 
 Auto-generated documentation for
-[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit)
+[CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
 [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
@@ -31,7 +31,7 @@ def get_describe_pull_request_events_paginator() -> DescribePullRequestEventsPag
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.DescribePullRequestEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.DescribePullRequestEvents)
+[CodeCommit.Paginator.DescribePullRequestEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.DescribePullRequestEvents)
 
 Arguments for `DescribePullRequestEventsPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_get_comments_for_compared_commit_paginator() -> GetCommentsForComparedCo
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.GetCommentsForComparedCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForComparedCommit)
+[CodeCommit.Paginator.GetCommentsForComparedCommit](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForComparedCommit)
 
 Arguments for `GetCommentsForComparedCommitPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_get_comments_for_pull_request_paginator() -> GetCommentsForPullRequestPa
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.GetCommentsForPullRequest](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForPullRequest)
+[CodeCommit.Paginator.GetCommentsForPullRequest](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForPullRequest)
 
 Arguments for `GetCommentsForPullRequestPaginator.paginate` method:
 
@@ -117,7 +117,7 @@ def get_get_differences_paginator() -> GetDifferencesPaginator:
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.GetDifferences](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.GetDifferences)
+[CodeCommit.Paginator.GetDifferences](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.GetDifferences)
 
 Arguments for `GetDifferencesPaginator.paginate` method:
 
@@ -147,7 +147,7 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.ListBranches](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.ListBranches)
+[CodeCommit.Paginator.ListBranches](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.ListBranches)
 
 Arguments for `ListBranchesPaginator.paginate` method:
 
@@ -173,7 +173,7 @@ def get_list_pull_requests_paginator() -> ListPullRequestsPaginator:
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.ListPullRequests](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.ListPullRequests)
+[CodeCommit.Paginator.ListPullRequests](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.ListPullRequests)
 
 Arguments for `ListPullRequestsPaginator.paginate` method:
 
@@ -202,7 +202,7 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
 ```
 
 Boto3 documentation:
-[CodeCommit.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codecommit.html#CodeCommit.Paginator.ListRepositories)
+[CodeCommit.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codecommit.html#CodeCommit.Paginator.ListRepositories)
 
 Arguments for `ListRepositoriesPaginator.paginate` method:
 

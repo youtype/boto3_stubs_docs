@@ -3,7 +3,7 @@
 > [Index](..) > ECRPublic
 
 Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr-public.html#ECRPublic)
+[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
 [mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
 

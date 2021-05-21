@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticTranscoder](.) > ElasticTranscoderClient
 
 Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder)
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
 [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
@@ -47,7 +47,7 @@ def get_elastictranscoder_client() -> ElasticTranscoderClient:
 ```
 
 Boto3 documentation:
-[ElasticTranscoder.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
+[ElasticTranscoder.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
 
 ## Exceptions
 
@@ -79,7 +79,7 @@ Exceptions:
 Type annotations for `boto3.client("elastictranscoder").can_paginate` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate)
+[ElasticTranscoder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Returns `bool`.
 Type annotations for `boto3.client("elastictranscoder").cancel_job` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
+[ElasticTranscoder.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elastictranscoder").create_job` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
+[ElasticTranscoder.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
 
 Arguments:
 
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("elastictranscoder").create_pipeline`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
+[ElasticTranscoder.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
 
 Arguments:
 
@@ -151,7 +151,7 @@ Returns
 Type annotations for `boto3.client("elastictranscoder").create_preset` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
+[ElasticTranscoder.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("elastictranscoder").delete_pipeline`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
+[ElasticTranscoder.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("elastictranscoder").delete_preset` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
+[ElasticTranscoder.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("elastictranscoder").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url)
+[ElasticTranscoder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url)
 
 Arguments:
 
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("elastictranscoder").list_jobs_by_pipeline`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.list_jobs_by_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
+[ElasticTranscoder.Client.list_jobs_by_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
 
 Arguments:
 
@@ -232,7 +232,7 @@ Type annotations for `boto3.client("elastictranscoder").list_jobs_by_status`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.list_jobs_by_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
+[ElasticTranscoder.Client.list_jobs_by_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("elastictranscoder").list_pipelines` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
+[ElasticTranscoder.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("elastictranscoder").list_presets` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
+[ElasticTranscoder.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns
 Type annotations for `boto3.client("elastictranscoder").read_job` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.read_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
+[ElasticTranscoder.Client.read_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Returns [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef).
 Type annotations for `boto3.client("elastictranscoder").read_pipeline` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.read_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
+[ElasticTranscoder.Client.read_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns
 Type annotations for `boto3.client("elastictranscoder").read_preset` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.read_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
+[ElasticTranscoder.Client.read_preset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
 
 Arguments:
 
@@ -318,7 +318,7 @@ Returns [ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef).
 Type annotations for `boto3.client("elastictranscoder").test_role` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.test_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
+[ElasticTranscoder.Client.test_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("elastictranscoder").update_pipeline`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
+[ElasticTranscoder.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
 
 Arguments:
 
@@ -359,7 +359,7 @@ Type annotations for
 `boto3.client("elastictranscoder").update_pipeline_notifications` method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.update_pipeline_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
+[ElasticTranscoder.Client.update_pipeline_notifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("elastictranscoder").update_pipeline_status`
 method.
 
 Boto3 documentation:
-[ElasticTranscoder.Client.update_pipeline_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
+[ElasticTranscoder.Client.update_pipeline_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
 
 Arguments:
 

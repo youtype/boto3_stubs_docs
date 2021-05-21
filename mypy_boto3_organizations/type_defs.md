@@ -3,7 +3,7 @@
 > [Index](..) > [Organizations](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/organizations.html#Organizations)
+[Organizations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/organizations.html#Organizations)
 type annotations stubs module
 [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 

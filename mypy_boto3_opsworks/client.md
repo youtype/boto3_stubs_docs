@@ -3,7 +3,7 @@
 > [Index](..) > [OpsWorks](.) > OpsWorksClient
 
 Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks)
+[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
 [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
@@ -104,7 +104,7 @@ def get_opsworks_client() -> OpsWorksClient:
 ```
 
 Boto3 documentation:
-[OpsWorks.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client)
+[OpsWorks.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client)
 
 ## Exceptions
 
@@ -131,7 +131,7 @@ Exceptions:
 Type annotations for `boto3.client("opsworks").assign_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.assign_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.assign_instance)
+[OpsWorks.Client.assign_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.assign_instance)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").assign_volume` method.
 
 Boto3 documentation:
-[OpsWorks.Client.assign_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.assign_volume)
+[OpsWorks.Client.assign_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.assign_volume)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").associate_elastic_ip` method.
 
 Boto3 documentation:
-[OpsWorks.Client.associate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip)
+[OpsWorks.Client.associate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("opsworks").attach_elastic_load_balancer`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.attach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer)
+[OpsWorks.Client.attach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").can_paginate` method.
 
 Boto3 documentation:
-[OpsWorks.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.can_paginate)
+[OpsWorks.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.can_paginate)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns `bool`.
 Type annotations for `boto3.client("opsworks").clone_stack` method.
 
 Boto3 documentation:
-[OpsWorks.Client.clone_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.clone_stack)
+[OpsWorks.Client.clone_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.clone_stack)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Returns [CloneStackResultTypeDef](./type_defs.md#clonestackresulttypedef).
 Type annotations for `boto3.client("opsworks").create_app` method.
 
 Boto3 documentation:
-[OpsWorks.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.create_app)
+[OpsWorks.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.create_app)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Returns [CreateAppResultTypeDef](./type_defs.md#createappresulttypedef).
 Type annotations for `boto3.client("opsworks").create_deployment` method.
 
 Boto3 documentation:
-[OpsWorks.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.create_deployment)
+[OpsWorks.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.create_deployment)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Returns
 Type annotations for `boto3.client("opsworks").create_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.create_instance)
+[OpsWorks.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.create_instance)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Returns
 Type annotations for `boto3.client("opsworks").create_layer` method.
 
 Boto3 documentation:
-[OpsWorks.Client.create_layer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.create_layer)
+[OpsWorks.Client.create_layer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.create_layer)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns [CreateLayerResultTypeDef](./type_defs.md#createlayerresulttypedef).
 Type annotations for `boto3.client("opsworks").create_stack` method.
 
 Boto3 documentation:
-[OpsWorks.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.create_stack)
+[OpsWorks.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.create_stack)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 Type annotations for `boto3.client("opsworks").create_user_profile` method.
 
 Boto3 documentation:
-[OpsWorks.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.create_user_profile)
+[OpsWorks.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.create_user_profile)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Returns
 Type annotations for `boto3.client("opsworks").delete_app` method.
 
 Boto3 documentation:
-[OpsWorks.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.delete_app)
+[OpsWorks.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.delete_app)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").delete_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.delete_instance)
+[OpsWorks.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.delete_instance)
 
 Arguments:
 
@@ -424,7 +424,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").delete_layer` method.
 
 Boto3 documentation:
-[OpsWorks.Client.delete_layer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.delete_layer)
+[OpsWorks.Client.delete_layer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.delete_layer)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").delete_stack` method.
 
 Boto3 documentation:
-[OpsWorks.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.delete_stack)
+[OpsWorks.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.delete_stack)
 
 Arguments:
 
@@ -446,7 +446,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").delete_user_profile` method.
 
 Boto3 documentation:
-[OpsWorks.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile)
+[OpsWorks.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").deregister_ecs_cluster` method.
 
 Boto3 documentation:
-[OpsWorks.Client.deregister_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster)
+[OpsWorks.Client.deregister_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster)
 
 Arguments:
 
@@ -468,7 +468,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").deregister_elastic_ip` method.
 
 Boto3 documentation:
-[OpsWorks.Client.deregister_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip)
+[OpsWorks.Client.deregister_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").deregister_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.deregister_instance)
+[OpsWorks.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.deregister_instance)
 
 Arguments:
 
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("opsworks").deregister_rds_db_instance`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.deregister_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance)
+[OpsWorks.Client.deregister_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").deregister_volume` method.
 
 Boto3 documentation:
-[OpsWorks.Client.deregister_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.deregister_volume)
+[OpsWorks.Client.deregister_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.deregister_volume)
 
 Arguments:
 
@@ -513,7 +513,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").describe_agent_versions` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_agent_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions)
+[OpsWorks.Client.describe_agent_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions)
 
 Arguments:
 
@@ -529,7 +529,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_apps` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_apps)
+[OpsWorks.Client.describe_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_apps)
 
 Arguments:
 
@@ -543,7 +543,7 @@ Returns [DescribeAppsResultTypeDef](./type_defs.md#describeappsresulttypedef).
 Type annotations for `boto3.client("opsworks").describe_commands` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_commands](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_commands)
+[OpsWorks.Client.describe_commands](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_commands)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_deployments` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_deployments)
+[OpsWorks.Client.describe_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_deployments)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_ecs_clusters` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_ecs_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters)
+[OpsWorks.Client.describe_ecs_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters)
 
 Arguments:
 
@@ -592,7 +592,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_elastic_ips` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_elastic_ips](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips)
+[OpsWorks.Client.describe_elastic_ips](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips)
 
 Arguments:
 
@@ -609,7 +609,7 @@ Type annotations for `boto3.client("opsworks").describe_elastic_load_balancers`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_elastic_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers)
+[OpsWorks.Client.describe_elastic_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers)
 
 Arguments:
 
@@ -624,7 +624,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_instances` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_instances)
+[OpsWorks.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_instances)
 
 Arguments:
 
@@ -640,7 +640,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_layers` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_layers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_layers)
+[OpsWorks.Client.describe_layers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_layers)
 
 Arguments:
 
@@ -656,7 +656,7 @@ Type annotations for
 `boto3.client("opsworks").describe_load_based_auto_scaling` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling)
+[OpsWorks.Client.describe_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling)
 
 Arguments:
 
@@ -671,7 +671,7 @@ Type annotations for `boto3.client("opsworks").describe_my_user_profile`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile)
+[OpsWorks.Client.describe_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile)
 
 Returns
 [DescribeMyUserProfileResultTypeDef](./type_defs.md#describemyuserprofileresulttypedef).
@@ -682,7 +682,7 @@ Type annotations for `boto3.client("opsworks").describe_operating_systems`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_operating_systems](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems)
+[OpsWorks.Client.describe_operating_systems](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems)
 
 Returns
 [DescribeOperatingSystemsResponseTypeDef](./type_defs.md#describeoperatingsystemsresponsetypedef).
@@ -692,7 +692,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_permissions` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_permissions)
+[OpsWorks.Client.describe_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_permissions)
 
 Arguments:
 
@@ -707,7 +707,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_raid_arrays` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_raid_arrays](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays)
+[OpsWorks.Client.describe_raid_arrays](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays)
 
 Arguments:
 
@@ -724,7 +724,7 @@ Type annotations for `boto3.client("opsworks").describe_rds_db_instances`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_rds_db_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances)
+[OpsWorks.Client.describe_rds_db_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances)
 
 Arguments:
 
@@ -739,7 +739,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_service_errors` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_service_errors](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors)
+[OpsWorks.Client.describe_service_errors](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors)
 
 Arguments:
 
@@ -756,7 +756,7 @@ Type annotations for
 `boto3.client("opsworks").describe_stack_provisioning_parameters` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_stack_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters)
+[OpsWorks.Client.describe_stack_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters)
 
 Arguments:
 
@@ -770,7 +770,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_stack_summary` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_stack_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary)
+[OpsWorks.Client.describe_stack_summary](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary)
 
 Arguments:
 
@@ -784,7 +784,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_stacks` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_stacks)
+[OpsWorks.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_stacks)
 
 Arguments:
 
@@ -799,7 +799,7 @@ Type annotations for
 `boto3.client("opsworks").describe_time_based_auto_scaling` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling)
+[OpsWorks.Client.describe_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_user_profiles` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles)
+[OpsWorks.Client.describe_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles)
 
 Arguments:
 
@@ -827,7 +827,7 @@ Returns
 Type annotations for `boto3.client("opsworks").describe_volumes` method.
 
 Boto3 documentation:
-[OpsWorks.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.describe_volumes)
+[OpsWorks.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.describe_volumes)
 
 Arguments:
 
@@ -845,7 +845,7 @@ Type annotations for `boto3.client("opsworks").detach_elastic_load_balancer`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.detach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer)
+[OpsWorks.Client.detach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").disassociate_elastic_ip` method.
 
 Boto3 documentation:
-[OpsWorks.Client.disassociate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip)
+[OpsWorks.Client.disassociate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip)
 
 Arguments:
 
@@ -868,7 +868,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").generate_presigned_url` method.
 
 Boto3 documentation:
-[OpsWorks.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.generate_presigned_url)
+[OpsWorks.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.generate_presigned_url)
 
 Arguments:
 
@@ -884,7 +884,7 @@ Returns `str`.
 Type annotations for `boto3.client("opsworks").get_hostname_suggestion` method.
 
 Boto3 documentation:
-[OpsWorks.Client.get_hostname_suggestion](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion)
+[OpsWorks.Client.get_hostname_suggestion](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion)
 
 Arguments:
 
@@ -898,7 +898,7 @@ Returns
 Type annotations for `boto3.client("opsworks").grant_access` method.
 
 Boto3 documentation:
-[OpsWorks.Client.grant_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.grant_access)
+[OpsWorks.Client.grant_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.grant_access)
 
 Arguments:
 
@@ -912,7 +912,7 @@ Returns [GrantAccessResultTypeDef](./type_defs.md#grantaccessresulttypedef).
 Type annotations for `boto3.client("opsworks").list_tags` method.
 
 Boto3 documentation:
-[OpsWorks.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.list_tags)
+[OpsWorks.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.list_tags)
 
 Arguments:
 
@@ -927,7 +927,7 @@ Returns [ListTagsResultTypeDef](./type_defs.md#listtagsresulttypedef).
 Type annotations for `boto3.client("opsworks").reboot_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.reboot_instance)
+[OpsWorks.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.reboot_instance)
 
 Arguments:
 
@@ -938,7 +938,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").register_ecs_cluster` method.
 
 Boto3 documentation:
-[OpsWorks.Client.register_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster)
+[OpsWorks.Client.register_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster)
 
 Arguments:
 
@@ -953,7 +953,7 @@ Returns
 Type annotations for `boto3.client("opsworks").register_elastic_ip` method.
 
 Boto3 documentation:
-[OpsWorks.Client.register_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip)
+[OpsWorks.Client.register_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip)
 
 Arguments:
 
@@ -968,7 +968,7 @@ Returns
 Type annotations for `boto3.client("opsworks").register_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.register_instance)
+[OpsWorks.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.register_instance)
 
 Arguments:
 
@@ -990,7 +990,7 @@ Type annotations for `boto3.client("opsworks").register_rds_db_instance`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.register_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance)
+[OpsWorks.Client.register_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance)
 
 Arguments:
 
@@ -1004,7 +1004,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").register_volume` method.
 
 Boto3 documentation:
-[OpsWorks.Client.register_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.register_volume)
+[OpsWorks.Client.register_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.register_volume)
 
 Arguments:
 
@@ -1020,7 +1020,7 @@ Type annotations for `boto3.client("opsworks").set_load_based_auto_scaling`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.set_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling)
+[OpsWorks.Client.set_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling)
 
 Arguments:
 
@@ -1036,7 +1036,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").set_permission` method.
 
 Boto3 documentation:
-[OpsWorks.Client.set_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.set_permission)
+[OpsWorks.Client.set_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.set_permission)
 
 Arguments:
 
@@ -1052,7 +1052,7 @@ Type annotations for `boto3.client("opsworks").set_time_based_auto_scaling`
 method.
 
 Boto3 documentation:
-[OpsWorks.Client.set_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling)
+[OpsWorks.Client.set_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling)
 
 Arguments:
 
@@ -1065,7 +1065,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").start_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.start_instance)
+[OpsWorks.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.start_instance)
 
 Arguments:
 
@@ -1076,7 +1076,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").start_stack` method.
 
 Boto3 documentation:
-[OpsWorks.Client.start_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.start_stack)
+[OpsWorks.Client.start_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.start_stack)
 
 Arguments:
 
@@ -1087,7 +1087,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").stop_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.stop_instance)
+[OpsWorks.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.stop_instance)
 
 Arguments:
 
@@ -1099,7 +1099,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").stop_stack` method.
 
 Boto3 documentation:
-[OpsWorks.Client.stop_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.stop_stack)
+[OpsWorks.Client.stop_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.stop_stack)
 
 Arguments:
 
@@ -1110,7 +1110,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").tag_resource` method.
 
 Boto3 documentation:
-[OpsWorks.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.tag_resource)
+[OpsWorks.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.tag_resource)
 
 Arguments:
 
@@ -1122,7 +1122,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").unassign_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.unassign_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.unassign_instance)
+[OpsWorks.Client.unassign_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.unassign_instance)
 
 Arguments:
 
@@ -1133,7 +1133,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").unassign_volume` method.
 
 Boto3 documentation:
-[OpsWorks.Client.unassign_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.unassign_volume)
+[OpsWorks.Client.unassign_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.unassign_volume)
 
 Arguments:
 
@@ -1144,7 +1144,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").untag_resource` method.
 
 Boto3 documentation:
-[OpsWorks.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.untag_resource)
+[OpsWorks.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.untag_resource)
 
 Arguments:
 
@@ -1156,7 +1156,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_app` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_app)
+[OpsWorks.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_app)
 
 Arguments:
 
@@ -1181,7 +1181,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_elastic_ip` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip)
+[OpsWorks.Client.update_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip)
 
 Arguments:
 
@@ -1193,7 +1193,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_instance)
+[OpsWorks.Client.update_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_instance)
 
 Arguments:
 
@@ -1215,7 +1215,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_layer` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_layer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_layer)
+[OpsWorks.Client.update_layer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_layer)
 
 Arguments:
 
@@ -1247,7 +1247,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_my_user_profile` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile)
+[OpsWorks.Client.update_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile)
 
 Arguments:
 
@@ -1258,7 +1258,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_rds_db_instance` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance)
+[OpsWorks.Client.update_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance)
 
 Arguments:
 
@@ -1271,7 +1271,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_stack` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_stack)
+[OpsWorks.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_stack)
 
 Arguments:
 
@@ -1303,7 +1303,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_user_profile` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_user_profile)
+[OpsWorks.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_user_profile)
 
 Arguments:
 
@@ -1317,7 +1317,7 @@ Arguments:
 Type annotations for `boto3.client("opsworks").update_volume` method.
 
 Boto3 documentation:
-[OpsWorks.Client.update_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworks.html#OpsWorks.Client.update_volume)
+[OpsWorks.Client.update_volume](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworks.html#OpsWorks.Client.update_volume)
 
 Arguments:
 

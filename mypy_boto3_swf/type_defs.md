@@ -3,7 +3,7 @@
 > [Index](..) > [SWF](.) > Typed dictionaries
 
 Auto-generated documentation for
-[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/swf.html#SWF)
+[SWF](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/swf.html#SWF)
 type annotations stubs module
 [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 

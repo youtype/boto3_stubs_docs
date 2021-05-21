@@ -3,7 +3,7 @@
 > [Index](..) > [KinesisVideoMedia](.) > KinesisVideoMediaClient
 
 Auto-generated documentation for
-[KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-media.html#KinesisVideoMedia)
+[KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis-video-media.html#KinesisVideoMedia)
 type annotations stubs module
 [mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
@@ -29,7 +29,7 @@ def get_kinesis-video-media_client() -> KinesisVideoMediaClient:
 ```
 
 Boto3 documentation:
-[KinesisVideoMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
+[KinesisVideoMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
 
 ## Exceptions
 
@@ -60,7 +60,7 @@ Exceptions:
 Type annotations for `boto3.client("kinesis-video-media").can_paginate` method.
 
 Boto3 documentation:
-[KinesisVideoMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate)
+[KinesisVideoMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate)
 
 Arguments:
 
@@ -74,7 +74,7 @@ Type annotations for
 `boto3.client("kinesis-video-media").generate_presigned_url` method.
 
 Boto3 documentation:
-[KinesisVideoMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url)
+[KinesisVideoMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns `str`.
 Type annotations for `boto3.client("kinesis-video-media").get_media` method.
 
 Boto3 documentation:
-[KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
+[KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
 
 Arguments:
 

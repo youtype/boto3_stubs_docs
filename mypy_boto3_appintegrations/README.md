@@ -3,7 +3,7 @@
 > [Index](..) > AppIntegrationsService
 
 Auto-generated documentation for
-[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/appintegrations.html#AppIntegrationsService)
+[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
 [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 

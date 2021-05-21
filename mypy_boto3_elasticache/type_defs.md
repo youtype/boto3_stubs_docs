@@ -3,7 +3,7 @@
 > [Index](..) > [ElastiCache](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache)
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
 [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 

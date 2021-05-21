@@ -3,7 +3,7 @@
 > [Index](..) > [ApiGatewayV2](.) > ApiGatewayV2Client
 
 Auto-generated documentation for
-[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2)
+[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
 [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
@@ -101,7 +101,7 @@ def get_apigatewayv2_client() -> ApiGatewayV2Client:
 ```
 
 Boto3 documentation:
-[ApiGatewayV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client)
+[ApiGatewayV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client)
 
 ## Exceptions
 
@@ -131,7 +131,7 @@ Exceptions:
 Type annotations for `boto3.client("apigatewayv2").can_paginate` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.can_paginate)
+[ApiGatewayV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.can_paginate)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns `bool`.
 Type annotations for `boto3.client("apigatewayv2").create_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api)
+[ApiGatewayV2.Client.create_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Returns [CreateApiResponseTypeDef](./type_defs.md#createapiresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").create_api_mapping` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api_mapping)
+[ApiGatewayV2.Client.create_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api_mapping)
 
 Arguments:
 
@@ -187,7 +187,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_authorizer` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_authorizer)
+[ApiGatewayV2.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_authorizer)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_deployment` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_deployment)
+[ApiGatewayV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_deployment)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_domain_name` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_domain_name)
+[ApiGatewayV2.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_domain_name)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_integration` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration)
+[ApiGatewayV2.Client.create_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("apigatewayv2").create_integration_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration_response)
+[ApiGatewayV2.Client.create_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration_response)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_model` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_model)
+[ApiGatewayV2.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_model)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_route` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route)
+[ApiGatewayV2.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("apigatewayv2").create_route_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route_response)
+[ApiGatewayV2.Client.create_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route_response)
 
 Arguments:
 
@@ -369,7 +369,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_stage` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_stage)
+[ApiGatewayV2.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_stage)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").create_vpc_link` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_vpc_link)
+[ApiGatewayV2.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_vpc_link)
 
 Arguments:
 
@@ -414,7 +414,7 @@ Type annotations for `boto3.client("apigatewayv2").delete_access_log_settings`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_access_log_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_access_log_settings)
+[ApiGatewayV2.Client.delete_access_log_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_access_log_settings)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_api)
+[ApiGatewayV2.Client.delete_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_api)
 
 Arguments:
 
@@ -437,7 +437,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_api_mapping` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_api_mapping)
+[ApiGatewayV2.Client.delete_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_api_mapping)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_authorizer` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_authorizer)
+[ApiGatewayV2.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_authorizer)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("apigatewayv2").delete_cors_configuration`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_cors_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_cors_configuration)
+[ApiGatewayV2.Client.delete_cors_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_cors_configuration)
 
 Arguments:
 
@@ -473,7 +473,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_deployment` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_deployment)
+[ApiGatewayV2.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_deployment)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_domain_name` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_domain_name)
+[ApiGatewayV2.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_domain_name)
 
 Arguments:
 
@@ -496,7 +496,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_integration` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration)
+[ApiGatewayV2.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Type annotations for `boto3.client("apigatewayv2").delete_integration_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration_response)
+[ApiGatewayV2.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration_response)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_model` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_model)
+[ApiGatewayV2.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_model)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_route` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route)
+[ApiGatewayV2.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route)
 
 Arguments:
 
@@ -547,7 +547,7 @@ Type annotations for
 `boto3.client("apigatewayv2").delete_route_request_parameter` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_route_request_parameter](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_request_parameter)
+[ApiGatewayV2.Client.delete_route_request_parameter](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_request_parameter)
 
 Arguments:
 
@@ -561,7 +561,7 @@ Type annotations for `boto3.client("apigatewayv2").delete_route_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_response)
+[ApiGatewayV2.Client.delete_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_response)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("apigatewayv2").delete_route_settings`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_route_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_settings)
+[ApiGatewayV2.Client.delete_route_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_settings)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_stage` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_stage)
+[ApiGatewayV2.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_stage)
 
 Arguments:
 
@@ -600,7 +600,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").delete_vpc_link` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_vpc_link)
+[ApiGatewayV2.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_vpc_link)
 
 Arguments:
 
@@ -613,7 +613,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("apigatewayv2").export_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.export_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.export_api)
+[ApiGatewayV2.Client.export_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.export_api)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Type annotations for `boto3.client("apigatewayv2").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.generate_presigned_url)
+[ApiGatewayV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -649,7 +649,7 @@ Returns `str`.
 Type annotations for `boto3.client("apigatewayv2").get_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api)
+[ApiGatewayV2.Client.get_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api)
 
 Arguments:
 
@@ -662,7 +662,7 @@ Returns [GetApiResponseTypeDef](./type_defs.md#getapiresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_api_mapping` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mapping)
+[ApiGatewayV2.Client.get_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mapping)
 
 Arguments:
 
@@ -677,7 +677,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_api_mappings` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_api_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mappings)
+[ApiGatewayV2.Client.get_api_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mappings)
 
 Arguments:
 
@@ -693,7 +693,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_apis` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_apis](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_apis)
+[ApiGatewayV2.Client.get_apis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_apis)
 
 Arguments:
 
@@ -707,7 +707,7 @@ Returns [GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_authorizer` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizer)
+[ApiGatewayV2.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizer)
 
 Arguments:
 
@@ -722,7 +722,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_authorizers` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizers)
+[ApiGatewayV2.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizers)
 
 Arguments:
 
@@ -738,7 +738,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_deployment` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployment)
+[ApiGatewayV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployment)
 
 Arguments:
 
@@ -753,7 +753,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_deployments` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployments)
+[ApiGatewayV2.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployments)
 
 Arguments:
 
@@ -769,7 +769,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_domain_name` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_domain_name)
+[ApiGatewayV2.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_domain_name)
 
 Arguments:
 
@@ -783,7 +783,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_domain_names` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_domain_names)
+[ApiGatewayV2.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_domain_names)
 
 Arguments:
 
@@ -798,7 +798,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_integration` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration)
+[ApiGatewayV2.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration)
 
 Arguments:
 
@@ -814,7 +814,7 @@ Type annotations for `boto3.client("apigatewayv2").get_integration_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_response)
+[ApiGatewayV2.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_response)
 
 Arguments:
 
@@ -831,7 +831,7 @@ Type annotations for `boto3.client("apigatewayv2").get_integration_responses`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_integration_responses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_responses)
+[ApiGatewayV2.Client.get_integration_responses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_responses)
 
 Arguments:
 
@@ -848,7 +848,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_integrations` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_integrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integrations)
+[ApiGatewayV2.Client.get_integrations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integrations)
 
 Arguments:
 
@@ -864,7 +864,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_model` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model)
+[ApiGatewayV2.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model)
 
 Arguments:
 
@@ -878,7 +878,7 @@ Returns [GetModelResponseTypeDef](./type_defs.md#getmodelresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_model_template` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model_template)
+[ApiGatewayV2.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model_template)
 
 Arguments:
 
@@ -893,7 +893,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_models` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_models)
+[ApiGatewayV2.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_models)
 
 Arguments:
 
@@ -908,7 +908,7 @@ Returns [GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_route` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route)
+[ApiGatewayV2.Client.get_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route)
 
 Arguments:
 
@@ -922,7 +922,7 @@ Returns [GetRouteResultTypeDef](./type_defs.md#getrouteresulttypedef).
 Type annotations for `boto3.client("apigatewayv2").get_route_response` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_response)
+[ApiGatewayV2.Client.get_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_response)
 
 Arguments:
 
@@ -938,7 +938,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_route_responses` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_route_responses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_responses)
+[ApiGatewayV2.Client.get_route_responses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_responses)
 
 Arguments:
 
@@ -955,7 +955,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").get_routes` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_routes)
+[ApiGatewayV2.Client.get_routes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_routes)
 
 Arguments:
 
@@ -970,7 +970,7 @@ Returns [GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_stage` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stage)
+[ApiGatewayV2.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stage)
 
 Arguments:
 
@@ -984,7 +984,7 @@ Returns [GetStageResponseTypeDef](./type_defs.md#getstageresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_stages` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stages)
+[ApiGatewayV2.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stages)
 
 Arguments:
 
@@ -999,7 +999,7 @@ Returns [GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_tags` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_tags)
+[ApiGatewayV2.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_tags)
 
 Arguments:
 
@@ -1012,7 +1012,7 @@ Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_vpc_link` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_vpc_link)
+[ApiGatewayV2.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_vpc_link)
 
 Arguments:
 
@@ -1025,7 +1025,7 @@ Returns [GetVpcLinkResponseTypeDef](./type_defs.md#getvpclinkresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").get_vpc_links` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_vpc_links)
+[ApiGatewayV2.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_vpc_links)
 
 Arguments:
 
@@ -1040,7 +1040,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").import_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.import_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.import_api)
+[ApiGatewayV2.Client.import_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.import_api)
 
 Arguments:
 
@@ -1055,7 +1055,7 @@ Returns [ImportApiResponseTypeDef](./type_defs.md#importapiresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").reimport_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.reimport_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reimport_api)
+[ApiGatewayV2.Client.reimport_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reimport_api)
 
 Arguments:
 
@@ -1073,7 +1073,7 @@ Type annotations for `boto3.client("apigatewayv2").reset_authorizers_cache`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.reset_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reset_authorizers_cache)
+[ApiGatewayV2.Client.reset_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reset_authorizers_cache)
 
 Arguments:
 
@@ -1085,7 +1085,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").tag_resource` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.tag_resource)
+[ApiGatewayV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.tag_resource)
 
 Arguments:
 
@@ -1099,7 +1099,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("apigatewayv2").untag_resource` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.untag_resource)
+[ApiGatewayV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.untag_resource)
 
 Arguments:
 
@@ -1111,7 +1111,7 @@ Arguments:
 Type annotations for `boto3.client("apigatewayv2").update_api` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api)
+[ApiGatewayV2.Client.update_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api)
 
 Arguments:
 
@@ -1135,7 +1135,7 @@ Returns [UpdateApiResponseTypeDef](./type_defs.md#updateapiresponsetypedef).
 Type annotations for `boto3.client("apigatewayv2").update_api_mapping` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api_mapping)
+[ApiGatewayV2.Client.update_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api_mapping)
 
 Arguments:
 
@@ -1153,7 +1153,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_authorizer` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_authorizer)
+[ApiGatewayV2.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_authorizer)
 
 Arguments:
 
@@ -1179,7 +1179,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_deployment` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_deployment)
+[ApiGatewayV2.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_deployment)
 
 Arguments:
 
@@ -1195,7 +1195,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_domain_name` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_domain_name)
+[ApiGatewayV2.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_domain_name)
 
 Arguments:
 
@@ -1213,7 +1213,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_integration` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration)
+[ApiGatewayV2.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration)
 
 Arguments:
 
@@ -1248,7 +1248,7 @@ Type annotations for `boto3.client("apigatewayv2").update_integration_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration_response)
+[ApiGatewayV2.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration_response)
 
 Arguments:
 
@@ -1270,7 +1270,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_model` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_model)
+[ApiGatewayV2.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_model)
 
 Arguments:
 
@@ -1289,7 +1289,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_route` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route)
+[ApiGatewayV2.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route)
 
 Arguments:
 
@@ -1317,7 +1317,7 @@ Type annotations for `boto3.client("apigatewayv2").update_route_response`
 method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route_response)
+[ApiGatewayV2.Client.update_route_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route_response)
 
 Arguments:
 
@@ -1338,7 +1338,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_stage` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_stage)
+[ApiGatewayV2.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_stage)
 
 Arguments:
 
@@ -1364,7 +1364,7 @@ Returns
 Type annotations for `boto3.client("apigatewayv2").update_vpc_link` method.
 
 Boto3 documentation:
-[ApiGatewayV2.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_vpc_link)
+[ApiGatewayV2.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_vpc_link)
 
 Arguments:
 

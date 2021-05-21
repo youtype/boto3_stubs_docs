@@ -3,7 +3,7 @@
 > [Index](..) > [OpsWorksCM](.) > Typed dictionaries
 
 Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworkscm.html#OpsWorksCM)
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
 [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
@@ -23,6 +23,7 @@ type annotations stubs module
   - [ExportServerEngineAttributeResponseTypeDef](#exportserverengineattributeresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [RestoreServerResponseTypeDef](#restoreserverresponsetypedef)
   - [ServerEventTypeDef](#servereventtypedef)
   - [ServerTypeDef](#servertypedef)
   - [StartMaintenanceResponseTypeDef](#startmaintenanceresponsetypedef)
@@ -219,6 +220,16 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## RestoreServerResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import RestoreServerResponseTypeDef
+```
+
+Optional fields:
+
+- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
 
 ## ServerEventTypeDef
 

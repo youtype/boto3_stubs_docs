@@ -3,7 +3,7 @@
 > [Index](..) > [Personalize](.) > Paginators
 
 Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize)
+[Personalize](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize)
 type annotations stubs module
 [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
@@ -36,7 +36,7 @@ def get_list_batch_inference_jobs_paginator() -> ListBatchInferenceJobsPaginator
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListBatchInferenceJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListBatchInferenceJobs)
+[Personalize.Paginator.ListBatchInferenceJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListBatchInferenceJobs)
 
 Arguments for `ListBatchInferenceJobsPaginator.paginate` method:
 
@@ -62,7 +62,7 @@ def get_list_campaigns_paginator() -> ListCampaignsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListCampaigns](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListCampaigns)
+[Personalize.Paginator.ListCampaigns](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListCampaigns)
 
 Arguments for `ListCampaignsPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_list_dataset_export_jobs_paginator() -> ListDatasetExportJobsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListDatasetExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListDatasetExportJobs)
+[Personalize.Paginator.ListDatasetExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListDatasetExportJobs)
 
 Arguments for `ListDatasetExportJobsPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListDatasetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListDatasetGroups)
+[Personalize.Paginator.ListDatasetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListDatasetGroups)
 
 Arguments for `ListDatasetGroupsPaginator.paginate` method:
 
@@ -139,7 +139,7 @@ def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListDatasetImportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListDatasetImportJobs)
+[Personalize.Paginator.ListDatasetImportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListDatasetImportJobs)
 
 Arguments for `ListDatasetImportJobsPaginator.paginate` method:
 
@@ -165,7 +165,7 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListDatasets)
+[Personalize.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListDatasets)
 
 Arguments for `ListDatasetsPaginator.paginate` method:
 
@@ -191,7 +191,7 @@ def get_list_event_trackers_paginator() -> ListEventTrackersPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListEventTrackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListEventTrackers)
+[Personalize.Paginator.ListEventTrackers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListEventTrackers)
 
 Arguments for `ListEventTrackersPaginator.paginate` method:
 
@@ -217,7 +217,7 @@ def get_list_filters_paginator() -> ListFiltersPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListFilters)
+[Personalize.Paginator.ListFilters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListFilters)
 
 Arguments for `ListFiltersPaginator.paginate` method:
 
@@ -243,7 +243,7 @@ def get_list_recipes_paginator() -> ListRecipesPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListRecipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListRecipes)
+[Personalize.Paginator.ListRecipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListRecipes)
 
 Arguments for `ListRecipesPaginator.paginate` method:
 
@@ -270,7 +270,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListSchemas)
+[Personalize.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListSchemas)
 
 Arguments for `ListSchemasPaginator.paginate` method:
 
@@ -295,7 +295,7 @@ def get_list_solution_versions_paginator() -> ListSolutionVersionsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListSolutionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListSolutionVersions)
+[Personalize.Paginator.ListSolutionVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListSolutionVersions)
 
 Arguments for `ListSolutionVersionsPaginator.paginate` method:
 
@@ -321,7 +321,7 @@ def get_list_solutions_paginator() -> ListSolutionsPaginator:
 ```
 
 Boto3 documentation:
-[Personalize.Paginator.ListSolutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/personalize.html#Personalize.Paginator.ListSolutions)
+[Personalize.Paginator.ListSolutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/personalize.html#Personalize.Paginator.ListSolutions)
 
 Arguments for `ListSolutionsPaginator.paginate` method:
 

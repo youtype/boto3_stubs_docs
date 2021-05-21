@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentity](.) > CognitoIdentityClient
 
 Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity)
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
 [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
@@ -52,7 +52,7 @@ def get_cognito-identity_client() -> CognitoIdentityClient:
 ```
 
 Boto3 documentation:
-[CognitoIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client)
+[CognitoIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client)
 
 ## Exceptions
 
@@ -88,7 +88,7 @@ Exceptions:
 Type annotations for `boto3.client("cognito-identity").can_paginate` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate)
+[CognitoIdentity.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate)
 
 Arguments:
 
@@ -102,7 +102,7 @@ Type annotations for `boto3.client("cognito-identity").create_identity_pool`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.create_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
+[CognitoIdentity.Client.create_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Type annotations for `boto3.client("cognito-identity").delete_identities`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.delete_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
+[CognitoIdentity.Client.delete_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("cognito-identity").delete_identity_pool`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.delete_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
+[CognitoIdentity.Client.delete_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("cognito-identity").describe_identity`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.describe_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
+[CognitoIdentity.Client.describe_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("cognito-identity").describe_identity_pool`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.describe_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
+[CognitoIdentity.Client.describe_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
 
 Arguments:
 
@@ -181,7 +181,7 @@ Type annotations for `boto3.client("cognito-identity").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url)
+[CognitoIdentity.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Type annotations for
 `boto3.client("cognito-identity").get_credentials_for_identity` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.get_credentials_for_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
+[CognitoIdentity.Client.get_credentials_for_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("cognito-identity").get_id` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.get_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
+[CognitoIdentity.Client.get_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
 
 Arguments:
 
@@ -230,7 +230,7 @@ Type annotations for `boto3.client("cognito-identity").get_identity_pool_roles`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.get_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
+[CognitoIdentity.Client.get_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("cognito-identity").get_open_id_token`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.get_open_id_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
+[CognitoIdentity.Client.get_open_id_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.get_open_id_token_for_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
+[CognitoIdentity.Client.get_open_id_token_for_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Type annotations for
 `boto3.client("cognito-identity").get_principal_tag_attribute_map` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.get_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
+[CognitoIdentity.Client.get_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
 
 Arguments:
 
@@ -296,7 +296,7 @@ Returns
 Type annotations for `boto3.client("cognito-identity").list_identities` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
+[CognitoIdentity.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
 
 Arguments:
 
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("cognito-identity").list_identity_pools`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.list_identity_pools](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
+[CognitoIdentity.Client.list_identity_pools](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("cognito-identity").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
+[CognitoIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -345,7 +345,7 @@ Type annotations for
 `boto3.client("cognito-identity").lookup_developer_identity` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.lookup_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
+[CognitoIdentity.Client.lookup_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
 
 Arguments:
 
@@ -364,7 +364,7 @@ Type annotations for
 `boto3.client("cognito-identity").merge_developer_identities` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.merge_developer_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
+[CognitoIdentity.Client.merge_developer_identities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("cognito-identity").set_identity_pool_roles`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.set_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
+[CognitoIdentity.Client.set_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Type annotations for
 `boto3.client("cognito-identity").set_principal_tag_attribute_map` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.set_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
+[CognitoIdentity.Client.set_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
 
 Arguments:
 
@@ -414,7 +414,7 @@ Returns
 Type annotations for `boto3.client("cognito-identity").tag_resource` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
+[CognitoIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
 
 Arguments:
 
@@ -429,7 +429,7 @@ Type annotations for
 `boto3.client("cognito-identity").unlink_developer_identity` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.unlink_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
+[CognitoIdentity.Client.unlink_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Arguments:
 Type annotations for `boto3.client("cognito-identity").unlink_identity` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.unlink_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
+[CognitoIdentity.Client.unlink_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
 
 Arguments:
 
@@ -456,7 +456,7 @@ Arguments:
 Type annotations for `boto3.client("cognito-identity").untag_resource` method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
+[CognitoIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
 
 Arguments:
 
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("cognito-identity").update_identity_pool`
 method.
 
 Boto3 documentation:
-[CognitoIdentity.Client.update_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
+[CognitoIdentity.Client.update_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > CloudDirectory
 
 Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/clouddirectory.html#CloudDirectory)
+[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module
 [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 

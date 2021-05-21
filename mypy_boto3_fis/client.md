@@ -3,7 +3,7 @@
 > [Index](..) > [FIS](.) > FISClient
 
 Auto-generated documentation for
-[FIS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS)
+[FIS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS)
 type annotations stubs module
 [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
@@ -42,7 +42,7 @@ def get_fis_client() -> FISClient:
 ```
 
 Boto3 documentation:
-[FIS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client)
+[FIS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client)
 
 ## Exceptions
 
@@ -71,7 +71,7 @@ Exceptions:
 Type annotations for `boto3.client("fis").can_paginate` method.
 
 Boto3 documentation:
-[FIS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.can_paginate)
+[FIS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.can_paginate)
 
 Arguments:
 
@@ -84,7 +84,7 @@ Returns `bool`.
 Type annotations for `boto3.client("fis").create_experiment_template` method.
 
 Boto3 documentation:
-[FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.create_experiment_template)
+[FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.create_experiment_template)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Returns
 Type annotations for `boto3.client("fis").delete_experiment_template` method.
 
 Boto3 documentation:
-[FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.delete_experiment_template)
+[FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.delete_experiment_template)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Returns
 Type annotations for `boto3.client("fis").generate_presigned_url` method.
 
 Boto3 documentation:
-[FIS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.generate_presigned_url)
+[FIS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns `str`.
 Type annotations for `boto3.client("fis").get_action` method.
 
 Boto3 documentation:
-[FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.get_action)
+[FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.get_action)
 
 Arguments:
 
@@ -152,7 +152,7 @@ Returns [GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef).
 Type annotations for `boto3.client("fis").get_experiment` method.
 
 Boto3 documentation:
-[FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.get_experiment)
+[FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.get_experiment)
 
 Arguments:
 
@@ -166,7 +166,7 @@ Returns
 Type annotations for `boto3.client("fis").get_experiment_template` method.
 
 Boto3 documentation:
-[FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.get_experiment_template)
+[FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.get_experiment_template)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns
 Type annotations for `boto3.client("fis").list_actions` method.
 
 Boto3 documentation:
-[FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.list_actions)
+[FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.list_actions)
 
 Arguments:
 
@@ -195,7 +195,7 @@ Returns
 Type annotations for `boto3.client("fis").list_experiment_templates` method.
 
 Boto3 documentation:
-[FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.list_experiment_templates)
+[FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.list_experiment_templates)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Returns
 Type annotations for `boto3.client("fis").list_experiments` method.
 
 Boto3 documentation:
-[FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.list_experiments)
+[FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.list_experiments)
 
 Arguments:
 
@@ -225,7 +225,7 @@ Returns
 Type annotations for `boto3.client("fis").list_tags_for_resource` method.
 
 Boto3 documentation:
-[FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.list_tags_for_resource)
+[FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -239,7 +239,7 @@ Returns
 Type annotations for `boto3.client("fis").start_experiment` method.
 
 Boto3 documentation:
-[FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.start_experiment)
+[FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.start_experiment)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Returns
 Type annotations for `boto3.client("fis").stop_experiment` method.
 
 Boto3 documentation:
-[FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.stop_experiment)
+[FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.stop_experiment)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Returns
 Type annotations for `boto3.client("fis").tag_resource` method.
 
 Boto3 documentation:
-[FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.tag_resource)
+[FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.tag_resource)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("fis").untag_resource` method.
 
 Boto3 documentation:
-[FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.untag_resource)
+[FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.untag_resource)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("fis").update_experiment_template` method.
 
 Boto3 documentation:
-[FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fis.html#FIS.Client.update_experiment_template)
+[FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fis.html#FIS.Client.update_experiment_template)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > FMS
 
 Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fms.html#FMS)
+[FMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fms.html#FMS)
 type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 

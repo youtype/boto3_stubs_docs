@@ -3,7 +3,7 @@
 > [Index](..) > [IdentityStore](.) > IdentityStoreClient
 
 Auto-generated documentation for
-[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore)
+[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module
 [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
@@ -32,7 +32,7 @@ def get_identitystore_client() -> IdentityStoreClient:
 ```
 
 Boto3 documentation:
-[IdentityStore.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client)
+[IdentityStore.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("identitystore").can_paginate` method.
 
 Boto3 documentation:
-[IdentityStore.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client.can_paginate)
+[IdentityStore.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Returns `bool`.
 Type annotations for `boto3.client("identitystore").describe_group` method.
 
 Boto3 documentation:
-[IdentityStore.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client.describe_group)
+[IdentityStore.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client.describe_group)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns
 Type annotations for `boto3.client("identitystore").describe_user` method.
 
 Boto3 documentation:
-[IdentityStore.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client.describe_user)
+[IdentityStore.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client.describe_user)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Type annotations for `boto3.client("identitystore").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[IdentityStore.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client.generate_presigned_url)
+[IdentityStore.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client.generate_presigned_url)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns `str`.
 Type annotations for `boto3.client("identitystore").list_groups` method.
 
 Boto3 documentation:
-[IdentityStore.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client.list_groups)
+[IdentityStore.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client.list_groups)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 Type annotations for `boto3.client("identitystore").list_users` method.
 
 Boto3 documentation:
-[IdentityStore.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/identitystore.html#IdentityStore.Client.list_users)
+[IdentityStore.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/identitystore.html#IdentityStore.Client.list_users)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticLoadBalancingv2](.) > Paginators
 
 Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2)
+[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
 [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
@@ -31,7 +31,7 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
+[ElasticLoadBalancingv2.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
 
 Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_describe_listener_certificates_paginator() -> DescribeListenerCertificat
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
+[ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
 
 Arguments for `DescribeListenerCertificatesPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_describe_listeners_paginator() -> DescribeListenersPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeListeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
+[ElasticLoadBalancingv2.Paginator.DescribeListeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
 
 Arguments for `DescribeListenersPaginator.paginate` method:
 
@@ -109,7 +109,7 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
+[ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
 
 Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
@@ -135,7 +135,7 @@ def get_describe_rules_paginator() -> DescribeRulesPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
+[ElasticLoadBalancingv2.Paginator.DescribeRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
 
 Arguments for `DescribeRulesPaginator.paginate` method:
 
@@ -162,7 +162,7 @@ def get_describe_ssl_policies_paginator() -> DescribeSSLPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
+[ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
 
 Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
 
@@ -188,7 +188,7 @@ def get_describe_target_groups_paginator() -> DescribeTargetGroupsPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
+[ElasticLoadBalancingv2.Paginator.DescribeTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
 
 Arguments for `DescribeTargetGroupsPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Batch](.) > BatchClient
 
 Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch)
+[Batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch)
 type annotations stubs module
 [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
@@ -48,7 +48,7 @@ def get_batch_client() -> BatchClient:
 ```
 
 Boto3 documentation:
-[Batch.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client)
+[Batch.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client)
 
 ## Exceptions
 
@@ -75,7 +75,7 @@ Exceptions:
 Type annotations for `boto3.client("batch").can_paginate` method.
 
 Boto3 documentation:
-[Batch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.can_paginate)
+[Batch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.can_paginate)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Returns `bool`.
 Type annotations for `boto3.client("batch").cancel_job` method.
 
 Boto3 documentation:
-[Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.cancel_job)
+[Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.cancel_job)
 
 Arguments:
 
@@ -102,7 +102,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("batch").create_compute_environment` method.
 
 Boto3 documentation:
-[Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.create_compute_environment)
+[Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.create_compute_environment)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns
 Type annotations for `boto3.client("batch").create_job_queue` method.
 
 Boto3 documentation:
-[Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.create_job_queue)
+[Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.create_job_queue)
 
 Arguments:
 
@@ -142,7 +142,7 @@ Returns
 Type annotations for `boto3.client("batch").delete_compute_environment` method.
 
 Boto3 documentation:
-[Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.delete_compute_environment)
+[Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.delete_compute_environment)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("batch").delete_job_queue` method.
 
 Boto3 documentation:
-[Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.delete_job_queue)
+[Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.delete_job_queue)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("batch").deregister_job_definition` method.
 
 Boto3 documentation:
-[Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.deregister_job_definition)
+[Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.deregister_job_definition)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("batch").describe_compute_environments`
 method.
 
 Boto3 documentation:
-[Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.describe_compute_environments)
+[Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.describe_compute_environments)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Returns
 Type annotations for `boto3.client("batch").describe_job_definitions` method.
 
 Boto3 documentation:
-[Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.describe_job_definitions)
+[Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.describe_job_definitions)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns
 Type annotations for `boto3.client("batch").describe_job_queues` method.
 
 Boto3 documentation:
-[Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.describe_job_queues)
+[Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.describe_job_queues)
 
 Arguments:
 
@@ -232,7 +232,7 @@ Returns
 Type annotations for `boto3.client("batch").describe_jobs` method.
 
 Boto3 documentation:
-[Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.describe_jobs)
+[Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.describe_jobs)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Returns
 Type annotations for `boto3.client("batch").generate_presigned_url` method.
 
 Boto3 documentation:
-[Batch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.generate_presigned_url)
+[Batch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.generate_presigned_url)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns `str`.
 Type annotations for `boto3.client("batch").list_jobs` method.
 
 Boto3 documentation:
-[Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.list_jobs)
+[Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.list_jobs)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.list_tags_for_resource)
+[Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Returns
 Type annotations for `boto3.client("batch").register_job_definition` method.
 
 Boto3 documentation:
-[Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.register_job_definition)
+[Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.register_job_definition)
 
 Arguments:
 
@@ -321,7 +321,7 @@ Returns
 Type annotations for `boto3.client("batch").submit_job` method.
 
 Boto3 documentation:
-[Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.submit_job)
+[Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.submit_job)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
 Type annotations for `boto3.client("batch").tag_resource` method.
 
 Boto3 documentation:
-[Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.tag_resource)
+[Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.tag_resource)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("batch").terminate_job` method.
 
 Boto3 documentation:
-[Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.terminate_job)
+[Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.terminate_job)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("batch").untag_resource` method.
 
 Boto3 documentation:
-[Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.untag_resource)
+[Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.untag_resource)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("batch").update_compute_environment` method.
 
 Boto3 documentation:
-[Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.update_compute_environment)
+[Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.update_compute_environment)
 
 Arguments:
 
@@ -408,7 +408,7 @@ Returns
 Type annotations for `boto3.client("batch").update_job_queue` method.
 
 Boto3 documentation:
-[Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/batch.html#Batch.Client.update_job_queue)
+[Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/batch.html#Batch.Client.update_job_queue)
 
 Arguments:
 

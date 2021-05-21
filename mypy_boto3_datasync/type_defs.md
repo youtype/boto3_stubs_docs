@@ -3,7 +3,7 @@
 > [Index](..) > [DataSync](.) > Typed dictionaries
 
 Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/datasync.html#DataSync)
+[DataSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/datasync.html#DataSync)
 type annotations stubs module
 [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 

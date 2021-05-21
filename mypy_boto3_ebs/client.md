@@ -3,7 +3,7 @@
 > [Index](..) > [EBS](.) > EBSClient
 
 Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS)
+[EBS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS)
 type annotations stubs module
 [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
@@ -34,7 +34,7 @@ def get_ebs_client() -> EBSClient:
 ```
 
 Boto3 documentation:
-[EBS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client)
+[EBS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client)
 
 ## Exceptions
 
@@ -67,7 +67,7 @@ Exceptions:
 Type annotations for `boto3.client("ebs").can_paginate` method.
 
 Boto3 documentation:
-[EBS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.can_paginate)
+[EBS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.can_paginate)
 
 Arguments:
 
@@ -80,7 +80,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ebs").complete_snapshot` method.
 
 Boto3 documentation:
-[EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.complete_snapshot)
+[EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.complete_snapshot)
 
 Arguments:
 
@@ -100,7 +100,7 @@ Returns
 Type annotations for `boto3.client("ebs").generate_presigned_url` method.
 
 Boto3 documentation:
-[EBS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.generate_presigned_url)
+[EBS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -116,7 +116,7 @@ Returns `str`.
 Type annotations for `boto3.client("ebs").get_snapshot_block` method.
 
 Boto3 documentation:
-[EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.get_snapshot_block)
+[EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.get_snapshot_block)
 
 Arguments:
 
@@ -132,7 +132,7 @@ Returns
 Type annotations for `boto3.client("ebs").list_changed_blocks` method.
 
 Boto3 documentation:
-[EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.list_changed_blocks)
+[EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.list_changed_blocks)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Returns
 Type annotations for `boto3.client("ebs").list_snapshot_blocks` method.
 
 Boto3 documentation:
-[EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
+[EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns
 Type annotations for `boto3.client("ebs").put_snapshot_block` method.
 
 Boto3 documentation:
-[EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.put_snapshot_block)
+[EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.put_snapshot_block)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Returns
 Type annotations for `boto3.client("ebs").start_snapshot` method.
 
 Boto3 documentation:
-[EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ebs.html#EBS.Client.start_snapshot)
+[EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ebs.html#EBS.Client.start_snapshot)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Support](.) > Paginators
 
 Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/support.html#Support)
+[Support](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/support.html#Support)
 type annotations stubs module
 [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
@@ -25,7 +25,7 @@ def get_describe_cases_paginator() -> DescribeCasesPaginator:
 ```
 
 Boto3 documentation:
-[Support.Paginator.DescribeCases](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/support.html#Support.Paginator.DescribeCases)
+[Support.Paginator.DescribeCases](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/support.html#Support.Paginator.DescribeCases)
 
 Arguments for `DescribeCasesPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_describe_communications_paginator() -> DescribeCommunicationsPaginator:
 ```
 
 Boto3 documentation:
-[Support.Paginator.DescribeCommunications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/support.html#Support.Paginator.DescribeCommunications)
+[Support.Paginator.DescribeCommunications](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/support.html#Support.Paginator.DescribeCommunications)
 
 Arguments for `DescribeCommunicationsPaginator.paginate` method:
 

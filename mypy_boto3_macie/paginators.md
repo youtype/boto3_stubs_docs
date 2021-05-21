@@ -3,7 +3,7 @@
 > [Index](..) > [Macie](.) > Paginators
 
 Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie.html#Macie)
+[Macie](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/macie.html#Macie)
 type annotations stubs module
 [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
@@ -26,7 +26,7 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
 ```
 
 Boto3 documentation:
-[Macie.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie.html#Macie.Paginator.ListMemberAccounts)
+[Macie.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/macie.html#Macie.Paginator.ListMemberAccounts)
 
 Arguments for `ListMemberAccountsPaginator.paginate` method:
 
@@ -51,7 +51,7 @@ def get_list_s3_resources_paginator() -> ListS3ResourcesPaginator:
 ```
 
 Boto3 documentation:
-[Macie.Paginator.ListS3Resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/macie.html#Macie.Paginator.ListS3Resources)
+[Macie.Paginator.ListS3Resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/macie.html#Macie.Paginator.ListS3Resources)
 
 Arguments for `ListS3ResourcesPaginator.paginate` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFront](.) > Paginators
 
 Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudfront.html#CloudFront)
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
 [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
@@ -28,7 +28,7 @@ def get_list_cloud_front_origin_access_identities_paginator() -> ListCloudFrontO
 ```
 
 Boto3 documentation:
-[CloudFront.Paginator.ListCloudFrontOriginAccessIdentities](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudfront.html#CloudFront.Paginator.ListCloudFrontOriginAccessIdentities)
+[CloudFront.Paginator.ListCloudFrontOriginAccessIdentities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Paginator.ListCloudFrontOriginAccessIdentities)
 
 Arguments for `ListCloudFrontOriginAccessIdentitiesPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_distributions_paginator() -> ListDistributionsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFront.Paginator.ListDistributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudfront.html#CloudFront.Paginator.ListDistributions)
+[CloudFront.Paginator.ListDistributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Paginator.ListDistributions)
 
 Arguments for `ListDistributionsPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_list_invalidations_paginator() -> ListInvalidationsPaginator:
 ```
 
 Boto3 documentation:
-[CloudFront.Paginator.ListInvalidations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudfront.html#CloudFront.Paginator.ListInvalidations)
+[CloudFront.Paginator.ListInvalidations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Paginator.ListInvalidations)
 
 Arguments for `ListInvalidationsPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_streaming_distributions_paginator() -> ListStreamingDistributionsPa
 ```
 
 Boto3 documentation:
-[CloudFront.Paginator.ListStreamingDistributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudfront.html#CloudFront.Paginator.ListStreamingDistributions)
+[CloudFront.Paginator.ListStreamingDistributions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Paginator.ListStreamingDistributions)
 
 Arguments for `ListStreamingDistributionsPaginator.paginate` method:
 

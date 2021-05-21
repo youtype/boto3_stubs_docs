@@ -3,7 +3,7 @@
 > [Index](..) > [GlobalAccelerator](.) > GlobalAcceleratorClient
 
 Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator)
+[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
 [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
@@ -76,7 +76,7 @@ def get_globalaccelerator_client() -> GlobalAcceleratorClient:
 ```
 
 Boto3 documentation:
-[GlobalAccelerator.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
+[GlobalAccelerator.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
 
 ## Exceptions
 
@@ -120,7 +120,7 @@ Type annotations for
 `boto3.client("globalaccelerator").add_custom_routing_endpoints` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.add_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
+[GlobalAccelerator.Client.add_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("globalaccelerator").advertise_byoip_cidr`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.advertise_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
+[GlobalAccelerator.Client.advertise_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
 
 Arguments:
 
@@ -153,7 +153,7 @@ Type annotations for
 `boto3.client("globalaccelerator").allow_custom_routing_traffic` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.allow_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
+[GlobalAccelerator.Client.allow_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Arguments:
 Type annotations for `boto3.client("globalaccelerator").can_paginate` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.can_paginate)
+[GlobalAccelerator.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.can_paginate)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("globalaccelerator").create_accelerator`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.create_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
+[GlobalAccelerator.Client.create_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
 
 Arguments:
 
@@ -203,7 +203,7 @@ Type annotations for
 `boto3.client("globalaccelerator").create_custom_routing_accelerator` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.create_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
+[GlobalAccelerator.Client.create_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
 
 Arguments:
 
@@ -225,7 +225,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.create_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
+[GlobalAccelerator.Client.create_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
 
 Arguments:
 
@@ -245,7 +245,7 @@ Type annotations for
 `boto3.client("globalaccelerator").create_custom_routing_listener` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.create_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
+[GlobalAccelerator.Client.create_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Type annotations for `boto3.client("globalaccelerator").create_endpoint_group`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.create_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
+[GlobalAccelerator.Client.create_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
 
 Arguments:
 
@@ -291,7 +291,7 @@ Type annotations for `boto3.client("globalaccelerator").create_listener`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
+[GlobalAccelerator.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
 
 Arguments:
 
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("globalaccelerator").delete_accelerator`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.delete_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
+[GlobalAccelerator.Client.delete_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Type annotations for
 `boto3.client("globalaccelerator").delete_custom_routing_accelerator` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.delete_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
+[GlobalAccelerator.Client.delete_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
 
 Arguments:
 
@@ -336,7 +336,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.delete_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
+[GlobalAccelerator.Client.delete_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Type annotations for
 `boto3.client("globalaccelerator").delete_custom_routing_listener` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.delete_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
+[GlobalAccelerator.Client.delete_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("globalaccelerator").delete_endpoint_group`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.delete_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
+[GlobalAccelerator.Client.delete_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Type annotations for `boto3.client("globalaccelerator").delete_listener`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
+[GlobalAccelerator.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Type annotations for
 `boto3.client("globalaccelerator").deny_custom_routing_traffic` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.deny_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
+[GlobalAccelerator.Client.deny_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("globalaccelerator").deprovision_byoip_cidr`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.deprovision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
+[GlobalAccelerator.Client.deprovision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
 
 Arguments:
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("globalaccelerator").describe_accelerator`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
+[GlobalAccelerator.Client.describe_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
 
 Arguments:
 
@@ -430,7 +430,7 @@ Type annotations for
 `boto3.client("globalaccelerator").describe_accelerator_attributes` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
+[GlobalAccelerator.Client.describe_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
 
 Arguments:
 
@@ -445,7 +445,7 @@ Type annotations for
 `boto3.client("globalaccelerator").describe_custom_routing_accelerator` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
+[GlobalAccelerator.Client.describe_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
 
 Arguments:
 
@@ -461,7 +461,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
+[GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
 
 Arguments:
 
@@ -477,7 +477,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
+[GlobalAccelerator.Client.describe_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
 
 Arguments:
 
@@ -492,7 +492,7 @@ Type annotations for
 `boto3.client("globalaccelerator").describe_custom_routing_listener` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
+[GlobalAccelerator.Client.describe_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
 
 Arguments:
 
@@ -507,7 +507,7 @@ Type annotations for
 `boto3.client("globalaccelerator").describe_endpoint_group` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
+[GlobalAccelerator.Client.describe_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Type annotations for `boto3.client("globalaccelerator").describe_listener`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.describe_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
+[GlobalAccelerator.Client.describe_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
 
 Arguments:
 
@@ -537,7 +537,7 @@ Type annotations for `boto3.client("globalaccelerator").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.generate_presigned_url)
+[GlobalAccelerator.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.generate_presigned_url)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("globalaccelerator").list_accelerators`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_accelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
+[GlobalAccelerator.Client.list_accelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
 
 Arguments:
 
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("globalaccelerator").list_byoip_cidrs`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
+[GlobalAccelerator.Client.list_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
 
 Arguments:
 
@@ -586,7 +586,7 @@ Type annotations for
 `boto3.client("globalaccelerator").list_custom_routing_accelerators` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_accelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
+[GlobalAccelerator.Client.list_custom_routing_accelerators](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Type annotations for
 `boto3.client("globalaccelerator").list_custom_routing_endpoint_groups` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
+[GlobalAccelerator.Client.list_custom_routing_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
 
 Arguments:
 
@@ -619,7 +619,7 @@ Type annotations for
 `boto3.client("globalaccelerator").list_custom_routing_listeners` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_listeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
+[GlobalAccelerator.Client.list_custom_routing_listeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
 
 Arguments:
 
@@ -636,7 +636,7 @@ Type annotations for
 `boto3.client("globalaccelerator").list_custom_routing_port_mappings` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_port_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
+[GlobalAccelerator.Client.list_custom_routing_port_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
+[GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
 
 Arguments:
 
@@ -673,7 +673,7 @@ Type annotations for `boto3.client("globalaccelerator").list_endpoint_groups`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
+[GlobalAccelerator.Client.list_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
 
 Arguments:
 
@@ -689,7 +689,7 @@ Returns
 Type annotations for `boto3.client("globalaccelerator").list_listeners` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_listeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
+[GlobalAccelerator.Client.list_listeners](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
 
 Arguments:
 
@@ -706,7 +706,7 @@ Type annotations for `boto3.client("globalaccelerator").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
+[GlobalAccelerator.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -721,7 +721,7 @@ Type annotations for `boto3.client("globalaccelerator").provision_byoip_cidr`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
+[GlobalAccelerator.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
 
 Arguments:
 
@@ -739,7 +739,7 @@ Type annotations for
 `boto3.client("globalaccelerator").remove_custom_routing_endpoints` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.remove_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
+[GlobalAccelerator.Client.remove_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
 
 Arguments:
 
@@ -751,7 +751,7 @@ Arguments:
 Type annotations for `boto3.client("globalaccelerator").tag_resource` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
+[GlobalAccelerator.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
 
 Arguments:
 
@@ -765,7 +765,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("globalaccelerator").untag_resource` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
+[GlobalAccelerator.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
 
 Arguments:
 
@@ -780,7 +780,7 @@ Type annotations for `boto3.client("globalaccelerator").update_accelerator`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
+[GlobalAccelerator.Client.update_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
 
 Arguments:
 
@@ -799,7 +799,7 @@ Type annotations for
 `boto3.client("globalaccelerator").update_accelerator_attributes` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
+[GlobalAccelerator.Client.update_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
 
 Arguments:
 
@@ -817,7 +817,7 @@ Type annotations for
 `boto3.client("globalaccelerator").update_custom_routing_accelerator` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
+[GlobalAccelerator.Client.update_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
 
 Arguments:
 
@@ -837,7 +837,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
+[GlobalAccelerator.Client.update_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
 
 Arguments:
 
@@ -855,7 +855,7 @@ Type annotations for
 `boto3.client("globalaccelerator").update_custom_routing_listener` method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
+[GlobalAccelerator.Client.update_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
 
 Arguments:
 
@@ -872,7 +872,7 @@ Type annotations for `boto3.client("globalaccelerator").update_endpoint_group`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
+[GlobalAccelerator.Client.update_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
 
 Arguments:
 
@@ -898,7 +898,7 @@ Type annotations for `boto3.client("globalaccelerator").update_listener`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.update_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
+[GlobalAccelerator.Client.update_listener](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
 
 Arguments:
 
@@ -916,7 +916,7 @@ Type annotations for `boto3.client("globalaccelerator").withdraw_byoip_cidr`
 method.
 
 Boto3 documentation:
-[GlobalAccelerator.Client.withdraw_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
+[GlobalAccelerator.Client.withdraw_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
 
 Arguments:
 

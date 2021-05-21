@@ -3,7 +3,7 @@
 > [Index](..) > PrometheusService
 
 Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/amp.html#PrometheusService)
+[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/amp.html#PrometheusService)
 type annotations stubs module
 [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 

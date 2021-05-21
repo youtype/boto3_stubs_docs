@@ -3,7 +3,7 @@
 > [Index](..) > [ACMPCA](.) > Literals
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 

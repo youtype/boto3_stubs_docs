@@ -3,7 +3,7 @@
 > [Index](..) > [QuickSight](.) > Paginators
 
 Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight)
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
 [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
@@ -38,7 +38,7 @@ def get_list_analyses_paginator() -> ListAnalysesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListAnalyses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListAnalyses)
+[QuickSight.Paginator.ListAnalyses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListAnalyses)
 
 Arguments for `ListAnalysesPaginator.paginate` method:
 
@@ -64,7 +64,7 @@ def get_list_dashboard_versions_paginator() -> ListDashboardVersionsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListDashboardVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListDashboardVersions)
+[QuickSight.Paginator.ListDashboardVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListDashboardVersions)
 
 Arguments for `ListDashboardVersionsPaginator.paginate` method:
 
@@ -91,7 +91,7 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListDashboards)
+[QuickSight.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListDashboards)
 
 Arguments for `ListDashboardsPaginator.paginate` method:
 
@@ -117,7 +117,7 @@ def get_list_data_sets_paginator() -> ListDataSetsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListDataSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListDataSets)
+[QuickSight.Paginator.ListDataSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListDataSets)
 
 Arguments for `ListDataSetsPaginator.paginate` method:
 
@@ -143,7 +143,7 @@ def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListDataSources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListDataSources)
+[QuickSight.Paginator.ListDataSources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListDataSources)
 
 Arguments for `ListDataSourcesPaginator.paginate` method:
 
@@ -169,7 +169,7 @@ def get_list_ingestions_paginator() -> ListIngestionsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListIngestions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListIngestions)
+[QuickSight.Paginator.ListIngestions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListIngestions)
 
 Arguments for `ListIngestionsPaginator.paginate` method:
 
@@ -196,7 +196,7 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListNamespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListNamespaces)
+[QuickSight.Paginator.ListNamespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListNamespaces)
 
 Arguments for `ListNamespacesPaginator.paginate` method:
 
@@ -222,7 +222,7 @@ def get_list_template_aliases_paginator() -> ListTemplateAliasesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListTemplateAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateAliases)
+[QuickSight.Paginator.ListTemplateAliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateAliases)
 
 Arguments for `ListTemplateAliasesPaginator.paginate` method:
 
@@ -249,7 +249,7 @@ def get_list_template_versions_paginator() -> ListTemplateVersionsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateVersions)
+[QuickSight.Paginator.ListTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateVersions)
 
 Arguments for `ListTemplateVersionsPaginator.paginate` method:
 
@@ -276,7 +276,7 @@ def get_list_templates_paginator() -> ListTemplatesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListTemplates)
+[QuickSight.Paginator.ListTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListTemplates)
 
 Arguments for `ListTemplatesPaginator.paginate` method:
 
@@ -302,7 +302,7 @@ def get_list_theme_versions_paginator() -> ListThemeVersionsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListThemeVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListThemeVersions)
+[QuickSight.Paginator.ListThemeVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListThemeVersions)
 
 Arguments for `ListThemeVersionsPaginator.paginate` method:
 
@@ -328,7 +328,7 @@ def get_list_themes_paginator() -> ListThemesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.ListThemes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.ListThemes)
+[QuickSight.Paginator.ListThemes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.ListThemes)
 
 Arguments for `ListThemesPaginator.paginate` method:
 
@@ -355,7 +355,7 @@ def get_search_analyses_paginator() -> SearchAnalysesPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.SearchAnalyses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.SearchAnalyses)
+[QuickSight.Paginator.SearchAnalyses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.SearchAnalyses)
 
 Arguments for `SearchAnalysesPaginator.paginate` method:
 
@@ -384,7 +384,7 @@ def get_search_dashboards_paginator() -> SearchDashboardsPaginator:
 ```
 
 Boto3 documentation:
-[QuickSight.Paginator.SearchDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/quicksight.html#QuickSight.Paginator.SearchDashboards)
+[QuickSight.Paginator.SearchDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Paginator.SearchDashboards)
 
 Arguments for `SearchDashboardsPaginator.paginate` method:
 

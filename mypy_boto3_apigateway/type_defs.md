@@ -3,7 +3,7 @@
 > [Index](..) > [APIGateway](.) > Typed dictionaries
 
 Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/apigateway.html#APIGateway)
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
 [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 

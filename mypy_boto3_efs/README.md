@@ -3,7 +3,7 @@
 > [Index](..) > EFS
 
 Auto-generated documentation for
-[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/efs.html#EFS)
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/efs.html#EFS)
 type annotations stubs module
 [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
@@ -42,6 +42,7 @@ from mypy_boto3_efs.client import EFSClient
 - [delete_mount_target](./client.md#delete_mount_target)
 - [delete_tags](./client.md#delete_tags)
 - [describe_access_points](./client.md#describe_access_points)
+- [describe_account_preferences](./client.md#describe_account_preferences)
 - [describe_backup_policy](./client.md#describe_backup_policy)
 - [describe_file_system_policy](./client.md#describe_file_system_policy)
 - [describe_file_systems](./client.md#describe_file_systems)
@@ -53,6 +54,7 @@ from mypy_boto3_efs.client import EFSClient
 - [get_paginator](./client.md#get_paginator)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [modify_mount_target_security_groups](./client.md#modify_mount_target_security_groups)
+- [put_account_preferences](./client.md#put_account_preferences)
 - [put_backup_policy](./client.md#put_backup_policy)
 - [put_file_system_policy](./client.md#put_file_system_policy)
 - [put_lifecycle_configuration](./client.md#put_lifecycle_configuration)
@@ -124,6 +126,8 @@ from mypy_boto3_efs.literals import DescribeFileSystemsPaginatorName, ...
 - [DescribeTagsPaginatorName](./literals.md#describetagspaginatorname)
 - [LifeCycleStateType](./literals.md#lifecyclestatetype)
 - [PerformanceModeType](./literals.md#performancemodetype)
+- [ResourceIdTypeType](./literals.md#resourceidtypetype)
+- [ResourceType](./literals.md#resourcetype)
 - [StatusType](./literals.md#statustype)
 - [ThroughputModeType](./literals.md#throughputmodetype)
 - [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
@@ -144,6 +148,7 @@ from mypy_boto3_efs.type_defs import AccessPointDescriptionTypeDef, ...
 - [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
 - [CreationInfoTypeDef](./type_defs.md#creationinfotypedef)
 - [DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef)
+- [DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef)
 - [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)
 - [DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef)
 - [DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef)
@@ -157,5 +162,7 @@ from mypy_boto3_efs.type_defs import AccessPointDescriptionTypeDef, ...
 - [MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PosixUserTypeDef](./type_defs.md#posixusertypedef)
+- [PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef)
+- [ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef)
 - [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)

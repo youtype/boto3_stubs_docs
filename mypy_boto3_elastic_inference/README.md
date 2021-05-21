@@ -3,7 +3,7 @@
 > [Index](..) > ElasticInference
 
 Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elastic-inference.html#ElasticInference)
+[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
 [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 

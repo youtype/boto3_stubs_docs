@@ -3,7 +3,7 @@
 > [Index](..) > [AmplifyBackend](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/amplifybackend.html#AmplifyBackend)
+[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
 [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ACMPCA](.) > Waiters
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
@@ -27,7 +27,7 @@ def get_audit_report_created_waiter() -> AuditReportCreatedWaiter:
 ```
 
 Boto3 documentation:
-[ACMPCA.Waiter.audit_report_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm-pca.html#ACMPCA.Waiter.audit_report_created)
+[ACMPCA.Waiter.audit_report_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Waiter.audit_report_created)
 
 Arguments for `AuditReportCreatedWaiter.wait` method:
 
@@ -50,7 +50,7 @@ def get_certificate_authority_csr_created_waiter() -> CertificateAuthorityCSRCre
 ```
 
 Boto3 documentation:
-[ACMPCA.Waiter.certificate_authority_csr_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_authority_csr_created)
+[ACMPCA.Waiter.certificate_authority_csr_created](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_authority_csr_created)
 
 Arguments for `CertificateAuthorityCSRCreatedWaiter.wait` method:
 
@@ -72,7 +72,7 @@ def get_certificate_issued_waiter() -> CertificateIssuedWaiter:
 ```
 
 Boto3 documentation:
-[ACMPCA.Waiter.certificate_issued](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_issued)
+[ACMPCA.Waiter.certificate_issued](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_issued)
 
 Arguments for `CertificateIssuedWaiter.wait` method:
 

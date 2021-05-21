@@ -3,7 +3,7 @@
 > [Index](..) > [EFS](.) > Typed dictionaries
 
 Auto-generated documentation for
-[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/efs.html#EFS)
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/efs.html#EFS)
 type annotations stubs module
 [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
@@ -13,6 +13,7 @@ type annotations stubs module
   - [BackupPolicyTypeDef](#backuppolicytypedef)
   - [CreationInfoTypeDef](#creationinfotypedef)
   - [DescribeAccessPointsResponseTypeDef](#describeaccesspointsresponsetypedef)
+  - [DescribeAccountPreferencesResponseTypeDef](#describeaccountpreferencesresponsetypedef)
   - [DescribeFileSystemsResponseTypeDef](#describefilesystemsresponsetypedef)
   - [DescribeMountTargetSecurityGroupsResponseTypeDef](#describemounttargetsecuritygroupsresponsetypedef)
   - [DescribeMountTargetsResponseTypeDef](#describemounttargetsresponsetypedef)
@@ -26,6 +27,8 @@ type annotations stubs module
   - [MountTargetDescriptionTypeDef](#mounttargetdescriptiontypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PosixUserTypeDef](#posixusertypedef)
+  - [PutAccountPreferencesResponseTypeDef](#putaccountpreferencesresponsetypedef)
+  - [ResourceIdPreferenceTypeDef](#resourceidpreferencetypedef)
   - [RootDirectoryTypeDef](#rootdirectorytypedef)
   - [TagTypeDef](#tagtypedef)
 
@@ -90,6 +93,18 @@ Optional fields:
 
 - `AccessPoints`:
   `List`\[[AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef)\]
+- `NextToken`: `str`
+
+## DescribeAccountPreferencesResponseTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import DescribeAccountPreferencesResponseTypeDef
+```
+
+Optional fields:
+
+- `ResourceIdPreference`:
+  [ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef)
 - `NextToken`: `str`
 
 ## DescribeFileSystemsResponseTypeDef
@@ -280,6 +295,28 @@ Required fields:
 Optional fields:
 
 - `SecondaryGids`: `List`\[`int`\]
+
+## PutAccountPreferencesResponseTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import PutAccountPreferencesResponseTypeDef
+```
+
+Optional fields:
+
+- `ResourceIdPreference`:
+  [ResourceIdPreferenceTypeDef](./type_defs.md#resourceidpreferencetypedef)
+
+## ResourceIdPreferenceTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import ResourceIdPreferenceTypeDef
+```
+
+Optional fields:
+
+- `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
+- `Resources`: `List`\[[ResourceType](./literals.md#resourcetype)\]
 
 ## RootDirectoryTypeDef
 

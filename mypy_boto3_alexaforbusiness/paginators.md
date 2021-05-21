@@ -3,7 +3,7 @@
 > [Index](..) > [AlexaForBusiness](.) > Paginators
 
 Auto-generated documentation for
-[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness)
+[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
 [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
@@ -37,7 +37,7 @@ def get_list_business_report_schedules_paginator() -> ListBusinessReportSchedule
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListBusinessReportSchedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListBusinessReportSchedules)
+[AlexaForBusiness.Paginator.ListBusinessReportSchedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListBusinessReportSchedules)
 
 Arguments for `ListBusinessReportSchedulesPaginator.paginate` method:
 
@@ -62,7 +62,7 @@ def get_list_conference_providers_paginator() -> ListConferenceProvidersPaginato
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListConferenceProviders](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListConferenceProviders)
+[AlexaForBusiness.Paginator.ListConferenceProviders](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListConferenceProviders)
 
 Arguments for `ListConferenceProvidersPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListDeviceEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListDeviceEvents)
+[AlexaForBusiness.Paginator.ListDeviceEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListDeviceEvents)
 
 Arguments for `ListDeviceEventsPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_list_skills_paginator() -> ListSkillsPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListSkills](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkills)
+[AlexaForBusiness.Paginator.ListSkills](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkills)
 
 Arguments for `ListSkillsPaginator.paginate` method:
 
@@ -143,7 +143,7 @@ def get_list_skills_store_categories_paginator() -> ListSkillsStoreCategoriesPag
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListSkillsStoreCategories](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreCategories)
+[AlexaForBusiness.Paginator.ListSkillsStoreCategories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreCategories)
 
 Arguments for `ListSkillsStoreCategoriesPaginator.paginate` method:
 
@@ -168,7 +168,7 @@ def get_list_skills_store_skills_by_category_paginator() -> ListSkillsStoreSkill
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory)
+[AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory)
 
 Arguments for `ListSkillsStoreSkillsByCategoryPaginator.paginate` method:
 
@@ -194,7 +194,7 @@ def get_list_smart_home_appliances_paginator() -> ListSmartHomeAppliancesPaginat
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListSmartHomeAppliances](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSmartHomeAppliances)
+[AlexaForBusiness.Paginator.ListSmartHomeAppliances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSmartHomeAppliances)
 
 Arguments for `ListSmartHomeAppliancesPaginator.paginate` method:
 
@@ -220,7 +220,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListTags)
+[AlexaForBusiness.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListTags)
 
 Arguments for `ListTagsPaginator.paginate` method:
 
@@ -246,7 +246,7 @@ def get_search_devices_paginator() -> SearchDevicesPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchDevices)
+[AlexaForBusiness.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchDevices)
 
 Arguments for `SearchDevicesPaginator.paginate` method:
 
@@ -273,7 +273,7 @@ def get_search_profiles_paginator() -> SearchProfilesPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.SearchProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchProfiles)
+[AlexaForBusiness.Paginator.SearchProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchProfiles)
 
 Arguments for `SearchProfilesPaginator.paginate` method:
 
@@ -300,7 +300,7 @@ def get_search_rooms_paginator() -> SearchRoomsPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.SearchRooms](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchRooms)
+[AlexaForBusiness.Paginator.SearchRooms](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchRooms)
 
 Arguments for `SearchRoomsPaginator.paginate` method:
 
@@ -327,7 +327,7 @@ def get_search_skill_groups_paginator() -> SearchSkillGroupsPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.SearchSkillGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchSkillGroups)
+[AlexaForBusiness.Paginator.SearchSkillGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchSkillGroups)
 
 Arguments for `SearchSkillGroupsPaginator.paginate` method:
 
@@ -354,7 +354,7 @@ def get_search_users_paginator() -> SearchUsersPaginator:
 ```
 
 Boto3 documentation:
-[AlexaForBusiness.Paginator.SearchUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchUsers)
+[AlexaForBusiness.Paginator.SearchUsers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchUsers)
 
 Arguments for `SearchUsersPaginator.paginate` method:
 

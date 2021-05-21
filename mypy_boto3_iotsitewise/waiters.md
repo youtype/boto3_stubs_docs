@@ -3,7 +3,7 @@
 > [Index](..) > [IoTSiteWise](.) > Waiters
 
 Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise)
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
 [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
@@ -29,7 +29,7 @@ def get_asset_active_waiter() -> AssetActiveWaiter:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Waiter.asset_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_active)
+[IoTSiteWise.Waiter.asset_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_active)
 
 Arguments for `AssetActiveWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_asset_model_active_waiter() -> AssetModelActiveWaiter:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Waiter.asset_model_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_model_active)
+[IoTSiteWise.Waiter.asset_model_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_model_active)
 
 Arguments for `AssetModelActiveWaiter.wait` method:
 
@@ -73,7 +73,7 @@ def get_asset_model_not_exists_waiter() -> AssetModelNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Waiter.asset_model_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_model_not_exists)
+[IoTSiteWise.Waiter.asset_model_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_model_not_exists)
 
 Arguments for `AssetModelNotExistsWaiter.wait` method:
 
@@ -95,7 +95,7 @@ def get_asset_not_exists_waiter() -> AssetNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Waiter.asset_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_not_exists)
+[IoTSiteWise.Waiter.asset_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Waiter.asset_not_exists)
 
 Arguments for `AssetNotExistsWaiter.wait` method:
 
@@ -116,7 +116,7 @@ def get_portal_active_waiter() -> PortalActiveWaiter:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Waiter.portal_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise.Waiter.portal_active)
+[IoTSiteWise.Waiter.portal_active](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Waiter.portal_active)
 
 Arguments for `PortalActiveWaiter.wait` method:
 
@@ -138,7 +138,7 @@ def get_portal_not_exists_waiter() -> PortalNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Waiter.portal_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotsitewise.html#IoTSiteWise.Waiter.portal_not_exists)
+[IoTSiteWise.Waiter.portal_not_exists](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Waiter.portal_not_exists)
 
 Arguments for `PortalNotExistsWaiter.wait` method:
 

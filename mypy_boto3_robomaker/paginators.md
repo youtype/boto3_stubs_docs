@@ -3,7 +3,7 @@
 > [Index](..) > [RoboMaker](.) > Paginators
 
 Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker)
+[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
 [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
@@ -35,7 +35,7 @@ def get_list_deployment_jobs_paginator() -> ListDeploymentJobsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListDeploymentJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListDeploymentJobs)
+[RoboMaker.Paginator.ListDeploymentJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListDeploymentJobs)
 
 Arguments for `ListDeploymentJobsPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListFleets)
+[RoboMaker.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListFleets)
 
 Arguments for `ListFleetsPaginator.paginate` method:
 
@@ -86,7 +86,7 @@ def get_list_robot_applications_paginator() -> ListRobotApplicationsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListRobotApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListRobotApplications)
+[RoboMaker.Paginator.ListRobotApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListRobotApplications)
 
 Arguments for `ListRobotApplicationsPaginator.paginate` method:
 
@@ -112,7 +112,7 @@ def get_list_robots_paginator() -> ListRobotsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListRobots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListRobots)
+[RoboMaker.Paginator.ListRobots](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListRobots)
 
 Arguments for `ListRobotsPaginator.paginate` method:
 
@@ -138,7 +138,7 @@ def get_list_simulation_applications_paginator() -> ListSimulationApplicationsPa
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListSimulationApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationApplications)
+[RoboMaker.Paginator.ListSimulationApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationApplications)
 
 Arguments for `ListSimulationApplicationsPaginator.paginate` method:
 
@@ -165,7 +165,7 @@ def get_list_simulation_job_batches_paginator() -> ListSimulationJobBatchesPagin
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListSimulationJobBatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobBatches)
+[RoboMaker.Paginator.ListSimulationJobBatches](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobBatches)
 
 Arguments for `ListSimulationJobBatchesPaginator.paginate` method:
 
@@ -191,7 +191,7 @@ def get_list_simulation_jobs_paginator() -> ListSimulationJobsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListSimulationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobs)
+[RoboMaker.Paginator.ListSimulationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobs)
 
 Arguments for `ListSimulationJobsPaginator.paginate` method:
 
@@ -217,7 +217,7 @@ def get_list_world_export_jobs_paginator() -> ListWorldExportJobsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListWorldExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldExportJobs)
+[RoboMaker.Paginator.ListWorldExportJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldExportJobs)
 
 Arguments for `ListWorldExportJobsPaginator.paginate` method:
 
@@ -243,7 +243,7 @@ def get_list_world_generation_jobs_paginator() -> ListWorldGenerationJobsPaginat
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListWorldGenerationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldGenerationJobs)
+[RoboMaker.Paginator.ListWorldGenerationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldGenerationJobs)
 
 Arguments for `ListWorldGenerationJobsPaginator.paginate` method:
 
@@ -269,7 +269,7 @@ def get_list_world_templates_paginator() -> ListWorldTemplatesPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListWorldTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldTemplates)
+[RoboMaker.Paginator.ListWorldTemplates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldTemplates)
 
 Arguments for `ListWorldTemplatesPaginator.paginate` method:
 
@@ -293,7 +293,7 @@ def get_list_worlds_paginator() -> ListWorldsPaginator:
 ```
 
 Boto3 documentation:
-[RoboMaker.Paginator.ListWorlds](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/robomaker.html#RoboMaker.Paginator.ListWorlds)
+[RoboMaker.Paginator.ListWorlds](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/robomaker.html#RoboMaker.Paginator.ListWorlds)
 
 Arguments for `ListWorldsPaginator.paginate` method:
 

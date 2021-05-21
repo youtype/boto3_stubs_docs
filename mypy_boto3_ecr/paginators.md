@@ -3,7 +3,7 @@
 > [Index](..) > [ECR](.) > Paginators
 
 Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR)
+[ECR](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr.html#ECR)
 type annotations stubs module
 [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
@@ -29,7 +29,7 @@ def get_describe_image_scan_findings_paginator() -> DescribeImageScanFindingsPag
 ```
 
 Boto3 documentation:
-[ECR.Paginator.DescribeImageScanFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
+[ECR.Paginator.DescribeImageScanFindings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
 
 Arguments for `DescribeImageScanFindingsPaginator.paginate` method:
 
@@ -57,7 +57,7 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
 ```
 
 Boto3 documentation:
-[ECR.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR.Paginator.DescribeImages)
+[ECR.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr.html#ECR.Paginator.DescribeImages)
 
 Arguments for `DescribeImagesPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
 ```
 
 Boto3 documentation:
-[ECR.Paginator.DescribeRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
+[ECR.Paginator.DescribeRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
 
 Arguments for `DescribeRepositoriesPaginator.paginate` method:
 
@@ -115,7 +115,7 @@ def get_get_lifecycle_policy_preview_paginator() -> GetLifecyclePolicyPreviewPag
 ```
 
 Boto3 documentation:
-[ECR.Paginator.GetLifecyclePolicyPreview](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
+[ECR.Paginator.GetLifecyclePolicyPreview](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
 
 Arguments for `GetLifecyclePolicyPreviewPaginator.paginate` method:
 
@@ -145,7 +145,7 @@ def get_list_images_paginator() -> ListImagesPaginator:
 ```
 
 Boto3 documentation:
-[ECR.Paginator.ListImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ecr.html#ECR.Paginator.ListImages)
+[ECR.Paginator.ListImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecr.html#ECR.Paginator.ListImages)
 
 Arguments for `ListImagesPaginator.paginate` method:
 

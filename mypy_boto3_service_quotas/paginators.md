@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceQuotas](.) > Paginators
 
 Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas)
+[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
@@ -30,7 +30,7 @@ def get_list_aws_default_service_quotas_paginator() -> ListAWSDefaultServiceQuot
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas)
+[ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas)
 
 Arguments for `ListAWSDefaultServiceQuotasPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_requested_service_quota_change_history_paginator() -> ListRequested
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory)
+[ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory)
 
 Arguments for `ListRequestedServiceQuotaChangeHistoryPaginator.paginate`
 method:
@@ -84,7 +84,7 @@ def get_list_requested_service_quota_change_history_by_quota_paginator() -> List
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota)
+[ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota)
 
 Arguments for `ListRequestedServiceQuotaChangeHistoryByQuotaPaginator.paginate`
 method:
@@ -113,7 +113,7 @@ def get_list_service_quota_increase_requests_in_template_paginator() -> ListServ
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate)
+[ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate)
 
 Arguments for `ListServiceQuotaIncreaseRequestsInTemplatePaginator.paginate`
 method:
@@ -141,7 +141,7 @@ def get_list_service_quotas_paginator() -> ListServiceQuotasPaginator:
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Paginator.ListServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotas)
+[ServiceQuotas.Paginator.ListServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotas)
 
 Arguments for `ListServiceQuotasPaginator.paginate` method:
 
@@ -167,7 +167,7 @@ def get_list_services_paginator() -> ListServicesPaginator:
 ```
 
 Boto3 documentation:
-[ServiceQuotas.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServices)
+[ServiceQuotas.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServices)
 
 Arguments for `ListServicesPaginator.paginate` method:
 

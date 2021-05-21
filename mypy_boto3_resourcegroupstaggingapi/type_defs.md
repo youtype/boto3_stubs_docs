@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
 [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 

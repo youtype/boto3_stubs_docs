@@ -3,7 +3,7 @@
 > [Index](..) > [IoT1ClickDevicesService](.) > Paginators
 
 Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
 [mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
@@ -26,7 +26,7 @@ def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
 ```
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Paginator.ListDeviceEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
+[IoT1ClickDevicesService.Paginator.ListDeviceEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
 
 Arguments for `ListDeviceEventsPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
 ```
 
 Boto3 documentation:
-[IoT1ClickDevicesService.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
+[IoT1ClickDevicesService.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
 
 Arguments for `ListDevicesPaginator.paginate` method:
 

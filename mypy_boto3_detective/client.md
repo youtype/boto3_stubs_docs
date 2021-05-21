@@ -3,7 +3,7 @@
 > [Index](..) > [Detective](.) > DetectiveClient
 
 Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective)
+[Detective](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective)
 type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
@@ -43,7 +43,7 @@ def get_detective_client() -> DetectiveClient:
 ```
 
 Boto3 documentation:
-[Detective.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client)
+[Detective.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client)
 
 ## Exceptions
 
@@ -73,7 +73,7 @@ Exceptions:
 Type annotations for `boto3.client("detective").accept_invitation` method.
 
 Boto3 documentation:
-[Detective.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.accept_invitation)
+[Detective.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.accept_invitation)
 
 Arguments:
 
@@ -84,7 +84,7 @@ Arguments:
 Type annotations for `boto3.client("detective").can_paginate` method.
 
 Boto3 documentation:
-[Detective.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.can_paginate)
+[Detective.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.can_paginate)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Returns `bool`.
 Type annotations for `boto3.client("detective").create_graph` method.
 
 Boto3 documentation:
-[Detective.Client.create_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.create_graph)
+[Detective.Client.create_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.create_graph)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Returns
 Type annotations for `boto3.client("detective").create_members` method.
 
 Boto3 documentation:
-[Detective.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.create_members)
+[Detective.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.create_members)
 
 Arguments:
 
@@ -129,7 +129,7 @@ Returns
 Type annotations for `boto3.client("detective").delete_graph` method.
 
 Boto3 documentation:
-[Detective.Client.delete_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.delete_graph)
+[Detective.Client.delete_graph](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.delete_graph)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Arguments:
 Type annotations for `boto3.client("detective").delete_members` method.
 
 Boto3 documentation:
-[Detective.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.delete_members)
+[Detective.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.delete_members)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("detective").disassociate_membership`
 method.
 
 Boto3 documentation:
-[Detective.Client.disassociate_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.disassociate_membership)
+[Detective.Client.disassociate_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.disassociate_membership)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Arguments:
 Type annotations for `boto3.client("detective").generate_presigned_url` method.
 
 Boto3 documentation:
-[Detective.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.generate_presigned_url)
+[Detective.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.generate_presigned_url)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns `str`.
 Type annotations for `boto3.client("detective").get_members` method.
 
 Boto3 documentation:
-[Detective.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.get_members)
+[Detective.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.get_members)
 
 Arguments:
 
@@ -197,7 +197,7 @@ Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 Type annotations for `boto3.client("detective").list_graphs` method.
 
 Boto3 documentation:
-[Detective.Client.list_graphs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.list_graphs)
+[Detective.Client.list_graphs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.list_graphs)
 
 Arguments:
 
@@ -211,7 +211,7 @@ Returns [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef).
 Type annotations for `boto3.client("detective").list_invitations` method.
 
 Boto3 documentation:
-[Detective.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.list_invitations)
+[Detective.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.list_invitations)
 
 Arguments:
 
@@ -226,7 +226,7 @@ Returns
 Type annotations for `boto3.client("detective").list_members` method.
 
 Boto3 documentation:
-[Detective.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.list_members)
+[Detective.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.list_members)
 
 Arguments:
 
@@ -242,7 +242,7 @@ Returns
 Type annotations for `boto3.client("detective").list_tags_for_resource` method.
 
 Boto3 documentation:
-[Detective.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.list_tags_for_resource)
+[Detective.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns
 Type annotations for `boto3.client("detective").reject_invitation` method.
 
 Boto3 documentation:
-[Detective.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.reject_invitation)
+[Detective.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.reject_invitation)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("detective").start_monitoring_member`
 method.
 
 Boto3 documentation:
-[Detective.Client.start_monitoring_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.start_monitoring_member)
+[Detective.Client.start_monitoring_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.start_monitoring_member)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Arguments:
 Type annotations for `boto3.client("detective").tag_resource` method.
 
 Boto3 documentation:
-[Detective.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.tag_resource)
+[Detective.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.tag_resource)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("detective").untag_resource` method.
 
 Boto3 documentation:
-[Detective.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/detective.html#Detective.Client.untag_resource)
+[Detective.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/detective.html#Detective.Client.untag_resource)
 
 Arguments:
 

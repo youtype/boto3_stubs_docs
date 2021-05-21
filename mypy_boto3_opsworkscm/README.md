@@ -3,7 +3,7 @@
 > [Index](..) > OpsWorksCM
 
 Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/opsworkscm.html#OpsWorksCM)
+[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
 [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
@@ -145,6 +145,7 @@ from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef, ...
 - [ExportServerEngineAttributeResponseTypeDef](./type_defs.md#exportserverengineattributeresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [RestoreServerResponseTypeDef](./type_defs.md#restoreserverresponsetypedef)
 - [ServerEventTypeDef](./type_defs.md#servereventtypedef)
 - [ServerTypeDef](./type_defs.md#servertypedef)
 - [StartMaintenanceResponseTypeDef](./type_defs.md#startmaintenanceresponsetypedef)

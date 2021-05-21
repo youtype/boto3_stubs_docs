@@ -3,7 +3,7 @@
 > [Index](..) > [MediaPackage](.) > Paginators
 
 Auto-generated documentation for
-[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage.html#MediaPackage)
+[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
 [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
@@ -27,7 +27,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
 ```
 
 Boto3 documentation:
-[MediaPackage.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage.html#MediaPackage.Paginator.ListChannels)
+[MediaPackage.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediapackage.html#MediaPackage.Paginator.ListChannels)
 
 Arguments for `ListChannelsPaginator.paginate` method:
 
@@ -52,7 +52,7 @@ def get_list_harvest_jobs_paginator() -> ListHarvestJobsPaginator:
 ```
 
 Boto3 documentation:
-[MediaPackage.Paginator.ListHarvestJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage.html#MediaPackage.Paginator.ListHarvestJobs)
+[MediaPackage.Paginator.ListHarvestJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediapackage.html#MediaPackage.Paginator.ListHarvestJobs)
 
 Arguments for `ListHarvestJobsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_origin_endpoints_paginator() -> ListOriginEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[MediaPackage.Paginator.ListOriginEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediapackage.html#MediaPackage.Paginator.ListOriginEndpoints)
+[MediaPackage.Paginator.ListOriginEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediapackage.html#MediaPackage.Paginator.ListOriginEndpoints)
 
 Arguments for `ListOriginEndpointsPaginator.paginate` method:
 

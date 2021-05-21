@@ -3,7 +3,7 @@
 > [Index](..) > [SMS](.) > SMSClient
 
 Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS)
+[SMS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS)
 type annotations stubs module
 [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
@@ -64,7 +64,7 @@ def get_sms_client() -> SMSClient:
 ```
 
 Boto3 documentation:
-[SMS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client)
+[SMS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client)
 
 ## Exceptions
 
@@ -101,7 +101,7 @@ Exceptions:
 Type annotations for `boto3.client("sms").can_paginate` method.
 
 Boto3 documentation:
-[SMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.can_paginate)
+[SMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.can_paginate)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns `bool`.
 Type annotations for `boto3.client("sms").create_app` method.
 
 Boto3 documentation:
-[SMS.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.create_app)
+[SMS.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.create_app)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 Type annotations for `boto3.client("sms").create_replication_job` method.
 
 Boto3 documentation:
-[SMS.Client.create_replication_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.create_replication_job)
+[SMS.Client.create_replication_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.create_replication_job)
 
 Arguments:
 
@@ -156,7 +156,7 @@ Returns
 Type annotations for `boto3.client("sms").delete_app` method.
 
 Boto3 documentation:
-[SMS.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.delete_app)
+[SMS.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.delete_app)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("sms").delete_app_launch_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.delete_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
+[SMS.Client.delete_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("sms").delete_app_replication_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.delete_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
+[SMS.Client.delete_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("sms").delete_app_validation_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.delete_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
+[SMS.Client.delete_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
 
 Arguments:
 
@@ -213,7 +213,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").delete_replication_job` method.
 
 Boto3 documentation:
-[SMS.Client.delete_replication_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.delete_replication_job)
+[SMS.Client.delete_replication_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.delete_replication_job)
 
 Arguments:
 
@@ -226,7 +226,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").delete_server_catalog` method.
 
 Boto3 documentation:
-[SMS.Client.delete_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.delete_server_catalog)
+[SMS.Client.delete_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.delete_server_catalog)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -235,7 +235,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").disassociate_connector` method.
 
 Boto3 documentation:
-[SMS.Client.disassociate_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.disassociate_connector)
+[SMS.Client.disassociate_connector](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.disassociate_connector)
 
 Arguments:
 
@@ -248,7 +248,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").generate_change_set` method.
 
 Boto3 documentation:
-[SMS.Client.generate_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.generate_change_set)
+[SMS.Client.generate_change_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.generate_change_set)
 
 Arguments:
 
@@ -263,7 +263,7 @@ Returns
 Type annotations for `boto3.client("sms").generate_presigned_url` method.
 
 Boto3 documentation:
-[SMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.generate_presigned_url)
+[SMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns `str`.
 Type annotations for `boto3.client("sms").generate_template` method.
 
 Boto3 documentation:
-[SMS.Client.generate_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.generate_template)
+[SMS.Client.generate_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.generate_template)
 
 Arguments:
 
@@ -294,7 +294,7 @@ Returns
 Type annotations for `boto3.client("sms").get_app` method.
 
 Boto3 documentation:
-[SMS.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_app)
+[SMS.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_app)
 
 Arguments:
 
@@ -307,7 +307,7 @@ Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
 Type annotations for `boto3.client("sms").get_app_launch_configuration` method.
 
 Boto3 documentation:
-[SMS.Client.get_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
+[SMS.Client.get_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("sms").get_app_replication_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.get_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
+[SMS.Client.get_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("sms").get_app_validation_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.get_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
+[SMS.Client.get_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Returns
 Type annotations for `boto3.client("sms").get_app_validation_output` method.
 
 Boto3 documentation:
-[SMS.Client.get_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_app_validation_output)
+[SMS.Client.get_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_app_validation_output)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Returns
 Type annotations for `boto3.client("sms").get_connectors` method.
 
 Boto3 documentation:
-[SMS.Client.get_connectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_connectors)
+[SMS.Client.get_connectors](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_connectors)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Returns
 Type annotations for `boto3.client("sms").get_replication_jobs` method.
 
 Boto3 documentation:
-[SMS.Client.get_replication_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_replication_jobs)
+[SMS.Client.get_replication_jobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_replication_jobs)
 
 Arguments:
 
@@ -396,7 +396,7 @@ Returns
 Type annotations for `boto3.client("sms").get_replication_runs` method.
 
 Boto3 documentation:
-[SMS.Client.get_replication_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_replication_runs)
+[SMS.Client.get_replication_runs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_replication_runs)
 
 Arguments:
 
@@ -412,7 +412,7 @@ Returns
 Type annotations for `boto3.client("sms").get_servers` method.
 
 Boto3 documentation:
-[SMS.Client.get_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.get_servers)
+[SMS.Client.get_servers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.get_servers)
 
 Arguments:
 
@@ -428,7 +428,7 @@ Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
 Type annotations for `boto3.client("sms").import_app_catalog` method.
 
 Boto3 documentation:
-[SMS.Client.import_app_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.import_app_catalog)
+[SMS.Client.import_app_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.import_app_catalog)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").import_server_catalog` method.
 
 Boto3 documentation:
-[SMS.Client.import_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.import_server_catalog)
+[SMS.Client.import_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.import_server_catalog)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -450,7 +450,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").launch_app` method.
 
 Boto3 documentation:
-[SMS.Client.launch_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.launch_app)
+[SMS.Client.launch_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.launch_app)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").list_apps` method.
 
 Boto3 documentation:
-[SMS.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.list_apps)
+[SMS.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.list_apps)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 Type annotations for `boto3.client("sms").notify_app_validation_output` method.
 
 Boto3 documentation:
-[SMS.Client.notify_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.notify_app_validation_output)
+[SMS.Client.notify_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.notify_app_validation_output)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").put_app_launch_configuration` method.
 
 Boto3 documentation:
-[SMS.Client.put_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
+[SMS.Client.put_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
 
 Arguments:
 
@@ -511,7 +511,7 @@ Type annotations for `boto3.client("sms").put_app_replication_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.put_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
+[SMS.Client.put_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
 
 Arguments:
 
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("sms").put_app_validation_configuration`
 method.
 
 Boto3 documentation:
-[SMS.Client.put_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
+[SMS.Client.put_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
 
 Arguments:
 
@@ -544,7 +544,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").start_app_replication` method.
 
 Boto3 documentation:
-[SMS.Client.start_app_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.start_app_replication)
+[SMS.Client.start_app_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.start_app_replication)
 
 Arguments:
 
@@ -558,7 +558,7 @@ Type annotations for `boto3.client("sms").start_on_demand_app_replication`
 method.
 
 Boto3 documentation:
-[SMS.Client.start_on_demand_app_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
+[SMS.Client.start_on_demand_app_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
 
 Arguments:
 
@@ -573,7 +573,7 @@ Type annotations for `boto3.client("sms").start_on_demand_replication_run`
 method.
 
 Boto3 documentation:
-[SMS.Client.start_on_demand_replication_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
+[SMS.Client.start_on_demand_replication_run](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
 
 Arguments:
 
@@ -588,7 +588,7 @@ Returns
 Type annotations for `boto3.client("sms").stop_app_replication` method.
 
 Boto3 documentation:
-[SMS.Client.stop_app_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.stop_app_replication)
+[SMS.Client.stop_app_replication](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.stop_app_replication)
 
 Arguments:
 
@@ -601,7 +601,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").terminate_app` method.
 
 Boto3 documentation:
-[SMS.Client.terminate_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.terminate_app)
+[SMS.Client.terminate_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.terminate_app)
 
 Arguments:
 
@@ -614,7 +614,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("sms").update_app` method.
 
 Boto3 documentation:
-[SMS.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.update_app)
+[SMS.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.update_app)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
 Type annotations for `boto3.client("sms").update_replication_job` method.
 
 Boto3 documentation:
-[SMS.Client.update_replication_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sms.html#SMS.Client.update_replication_job)
+[SMS.Client.update_replication_job](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms.html#SMS.Client.update_replication_job)
 
 Arguments:
 

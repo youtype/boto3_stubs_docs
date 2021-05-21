@@ -3,7 +3,7 @@
 > [Index](..) > [Pricing](.) > PricingClient
 
 Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing)
+[Pricing](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing)
 type annotations stubs module
 [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
@@ -32,7 +32,7 @@ def get_pricing_client() -> PricingClient:
 ```
 
 Boto3 documentation:
-[Pricing.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Client)
+[Pricing.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("pricing").can_paginate` method.
 
 Boto3 documentation:
-[Pricing.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Client.can_paginate)
+[Pricing.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Returns `bool`.
 Type annotations for `boto3.client("pricing").describe_services` method.
 
 Boto3 documentation:
-[Pricing.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Client.describe_services)
+[Pricing.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing.Client.describe_services)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Returns
 Type annotations for `boto3.client("pricing").generate_presigned_url` method.
 
 Boto3 documentation:
-[Pricing.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Client.generate_presigned_url)
+[Pricing.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing.Client.generate_presigned_url)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns `str`.
 Type annotations for `boto3.client("pricing").get_attribute_values` method.
 
 Boto3 documentation:
-[Pricing.Client.get_attribute_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Client.get_attribute_values)
+[Pricing.Client.get_attribute_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing.Client.get_attribute_values)
 
 Arguments:
 
@@ -125,7 +125,7 @@ Returns
 Type annotations for `boto3.client("pricing").get_products` method.
 
 Boto3 documentation:
-[Pricing.Client.get_products](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/pricing.html#Pricing.Client.get_products)
+[Pricing.Client.get_products](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/pricing.html#Pricing.Client.get_products)
 
 Arguments:
 

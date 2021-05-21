@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroups](.) > Literals
 
 Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resource-groups.html#ResourceGroups)
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 

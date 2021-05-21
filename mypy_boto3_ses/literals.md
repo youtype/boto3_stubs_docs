@@ -3,7 +3,7 @@
 > [Index](..) > [SES](.) > Literals
 
 Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/ses.html#SES)
+[SES](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ses.html#SES)
 type annotations stubs module
 [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 

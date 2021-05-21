@@ -3,7 +3,7 @@
 > [Index](..) > [EventBridge](.) > Paginators
 
 Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge)
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge)
 type annotations stubs module
 [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
@@ -27,7 +27,7 @@ def get_list_rule_names_by_target_paginator() -> ListRuleNamesByTargetPaginator:
 ```
 
 Boto3 documentation:
-[EventBridge.Paginator.ListRuleNamesByTarget](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
+[EventBridge.Paginator.ListRuleNamesByTarget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
 
 Arguments for `ListRuleNamesByTargetPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_rules_paginator() -> ListRulesPaginator:
 ```
 
 Boto3 documentation:
-[EventBridge.Paginator.ListRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Paginator.ListRules)
+[EventBridge.Paginator.ListRules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Paginator.ListRules)
 
 Arguments for `ListRulesPaginator.paginate` method:
 
@@ -80,7 +80,7 @@ def get_list_targets_by_rule_paginator() -> ListTargetsByRulePaginator:
 ```
 
 Boto3 documentation:
-[EventBridge.Paginator.ListTargetsByRule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
+[EventBridge.Paginator.ListTargetsByRule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
 
 Arguments for `ListTargetsByRulePaginator.paginate` method:
 

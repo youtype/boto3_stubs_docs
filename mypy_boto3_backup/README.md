@@ -3,7 +3,7 @@
 > [Index](..) > Backup
 
 Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/backup.html#Backup)
+[Backup](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/backup.html#Backup)
 type annotations stubs module
 [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 

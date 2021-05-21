@@ -3,7 +3,7 @@
 > [Index](..) > [Redshift](.) > Paginators
 
 Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift)
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift)
 type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
@@ -51,7 +51,7 @@ def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsP
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterDbRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
+[Redshift.Paginator.DescribeClusterDbRevisions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
 
 Arguments for `DescribeClusterDbRevisionsPaginator.paginate` method:
 
@@ -77,7 +77,7 @@ def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParamete
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
+[Redshift.Paginator.DescribeClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
 
 Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
 
@@ -105,7 +105,7 @@ def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPagi
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
+[Redshift.Paginator.DescribeClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
 
 Arguments for `DescribeClusterParametersPaginator.paginate` method:
 
@@ -132,7 +132,7 @@ def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityG
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
+[Redshift.Paginator.DescribeClusterSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
 
 Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
 
@@ -160,7 +160,7 @@ def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPagina
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
+[Redshift.Paginator.DescribeClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
 
 Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
 
@@ -196,7 +196,7 @@ def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroup
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
+[Redshift.Paginator.DescribeClusterSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
 
 Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
 
@@ -224,7 +224,7 @@ def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterTracks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
+[Redshift.Paginator.DescribeClusterTracks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
 
 Arguments for `DescribeClusterTracksPaginator.paginate` method:
 
@@ -250,7 +250,7 @@ def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginato
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusterVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
+[Redshift.Paginator.DescribeClusterVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
 
 Arguments for `DescribeClusterVersionsPaginator.paginate` method:
 
@@ -277,7 +277,7 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
+[Redshift.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
 
 Arguments for `DescribeClustersPaginator.paginate` method:
 
@@ -305,7 +305,7 @@ def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultCluste
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
+[Redshift.Paginator.DescribeDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
 
 Arguments for `DescribeDefaultClusterParametersPaginator.paginate` method:
 
@@ -331,7 +331,7 @@ def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeEndpointAccess](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
+[Redshift.Paginator.DescribeEndpointAccess](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
 
 Arguments for `DescribeEndpointAccessPaginator.paginate` method:
 
@@ -360,7 +360,7 @@ def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthoriza
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeEndpointAuthorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
+[Redshift.Paginator.DescribeEndpointAuthorization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
 
 Arguments for `DescribeEndpointAuthorizationPaginator.paginate` method:
 
@@ -388,7 +388,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
+[Redshift.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
 
 Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 
@@ -416,7 +416,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
+[Redshift.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
@@ -446,7 +446,7 @@ def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertifi
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeHsmClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
+[Redshift.Paginator.DescribeHsmClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
 
 Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
 
@@ -474,7 +474,7 @@ def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPagi
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeHsmConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
+[Redshift.Paginator.DescribeHsmConfigurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
 
 Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
 
@@ -502,7 +502,7 @@ def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigura
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeNodeConfigurationOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
+[Redshift.Paginator.DescribeNodeConfigurationOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
 
 Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
 
@@ -533,7 +533,7 @@ def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClust
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeOrderableClusterOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
+[Redshift.Paginator.DescribeOrderableClusterOptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
 
 Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
 
@@ -560,7 +560,7 @@ def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOffe
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeReservedNodeOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
+[Redshift.Paginator.DescribeReservedNodeOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
 
 Arguments for `DescribeReservedNodeOfferingsPaginator.paginate` method:
 
@@ -586,7 +586,7 @@ def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeReservedNodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
+[Redshift.Paginator.DescribeReservedNodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
 
 Arguments for `DescribeReservedNodesPaginator.paginate` method:
 
@@ -612,7 +612,7 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
+[Redshift.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
 
 Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
@@ -645,7 +645,7 @@ def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsP
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeSnapshotCopyGrants](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
+[Redshift.Paginator.DescribeSnapshotCopyGrants](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
 
 Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
 
@@ -673,7 +673,7 @@ def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPagi
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeSnapshotSchedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
+[Redshift.Paginator.DescribeSnapshotSchedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
 
 Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
 
@@ -702,7 +702,7 @@ def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusP
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeTableRestoreStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
+[Redshift.Paginator.DescribeTableRestoreStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
 
 Arguments for `DescribeTableRestoreStatusPaginator.paginate` method:
 
@@ -728,7 +728,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
+[Redshift.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
@@ -757,7 +757,7 @@ def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.DescribeUsageLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
+[Redshift.Paginator.DescribeUsageLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
 
 Arguments for `DescribeUsageLimitsPaginator.paginate` method:
 
@@ -788,7 +788,7 @@ def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExcha
 ```
 
 Boto3 documentation:
-[Redshift.Paginator.GetReservedNodeExchangeOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
+[Redshift.Paginator.GetReservedNodeExchangeOfferings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
 
 Arguments for `GetReservedNodeExchangeOfferingsPaginator.paginate` method:
 

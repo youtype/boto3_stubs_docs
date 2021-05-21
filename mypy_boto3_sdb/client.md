@@ -3,7 +3,7 @@
 > [Index](..) > [SimpleDB](.) > SimpleDBClient
 
 Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB)
+[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
 [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
@@ -39,7 +39,7 @@ def get_sdb_client() -> SimpleDBClient:
 ```
 
 Boto3 documentation:
-[SimpleDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client)
+[SimpleDB.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 Type annotations for `boto3.client("sdb").batch_delete_attributes` method.
 
 Boto3 documentation:
-[SimpleDB.Client.batch_delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
+[SimpleDB.Client.batch_delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
 
 Arguments:
 
@@ -95,7 +95,7 @@ Arguments:
 Type annotations for `boto3.client("sdb").batch_put_attributes` method.
 
 Boto3 documentation:
-[SimpleDB.Client.batch_put_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
+[SimpleDB.Client.batch_put_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Arguments:
 Type annotations for `boto3.client("sdb").can_paginate` method.
 
 Boto3 documentation:
-[SimpleDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.can_paginate)
+[SimpleDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.can_paginate)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns `bool`.
 Type annotations for `boto3.client("sdb").create_domain` method.
 
 Boto3 documentation:
-[SimpleDB.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.create_domain)
+[SimpleDB.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.create_domain)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Arguments:
 Type annotations for `boto3.client("sdb").delete_attributes` method.
 
 Boto3 documentation:
-[SimpleDB.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
+[SimpleDB.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
 
 Arguments:
 
@@ -147,7 +147,7 @@ Arguments:
 Type annotations for `boto3.client("sdb").delete_domain` method.
 
 Boto3 documentation:
-[SimpleDB.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.delete_domain)
+[SimpleDB.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.delete_domain)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Arguments:
 Type annotations for `boto3.client("sdb").domain_metadata` method.
 
 Boto3 documentation:
-[SimpleDB.Client.domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
+[SimpleDB.Client.domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Returns
 Type annotations for `boto3.client("sdb").generate_presigned_url` method.
 
 Boto3 documentation:
-[SimpleDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url)
+[SimpleDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url)
 
 Arguments:
 
@@ -188,7 +188,7 @@ Returns `str`.
 Type annotations for `boto3.client("sdb").get_attributes` method.
 
 Boto3 documentation:
-[SimpleDB.Client.get_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.get_attributes)
+[SimpleDB.Client.get_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.get_attributes)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("sdb").list_domains` method.
 
 Boto3 documentation:
-[SimpleDB.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.list_domains)
+[SimpleDB.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.list_domains)
 
 Arguments:
 
@@ -219,7 +219,7 @@ Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
 Type annotations for `boto3.client("sdb").put_attributes` method.
 
 Boto3 documentation:
-[SimpleDB.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.put_attributes)
+[SimpleDB.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.put_attributes)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Arguments:
 Type annotations for `boto3.client("sdb").select` method.
 
 Boto3 documentation:
-[SimpleDB.Client.select](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/sdb.html#SimpleDB.Client.select)
+[SimpleDB.Client.select](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sdb.html#SimpleDB.Client.select)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [WorkDocs](.) > Typed dictionaries
 
 Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/workdocs.html#WorkDocs)
+[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 

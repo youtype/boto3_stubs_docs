@@ -3,7 +3,7 @@
 > [Index](..) > [CloudSearch](.) > Literals
 
 Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudsearch.html#CloudSearch)
+[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
 [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [MediaStoreData](.) > MediaStoreDataClient
 
 Auto-generated documentation for
-[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData)
+[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
 [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
@@ -34,7 +34,7 @@ def get_mediastore-data_client() -> MediaStoreDataClient:
 ```
 
 Boto3 documentation:
-[MediaStoreData.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client)
+[MediaStoreData.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client)
 
 ## Exceptions
 
@@ -63,7 +63,7 @@ Exceptions:
 Type annotations for `boto3.client("mediastore-data").can_paginate` method.
 
 Boto3 documentation:
-[MediaStoreData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.can_paginate)
+[MediaStoreData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.can_paginate)
 
 Arguments:
 
@@ -76,7 +76,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediastore-data").delete_object` method.
 
 Boto3 documentation:
-[MediaStoreData.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
+[MediaStoreData.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
 
 Arguments:
 
@@ -89,7 +89,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediastore-data").describe_object` method.
 
 Boto3 documentation:
-[MediaStoreData.Client.describe_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
+[MediaStoreData.Client.describe_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Type annotations for `boto3.client("mediastore-data").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaStoreData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.generate_presigned_url)
+[MediaStoreData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.generate_presigned_url)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns `str`.
 Type annotations for `boto3.client("mediastore-data").get_object` method.
 
 Boto3 documentation:
-[MediaStoreData.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
+[MediaStoreData.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
 
 Arguments:
 
@@ -134,7 +134,7 @@ Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
 Type annotations for `boto3.client("mediastore-data").list_items` method.
 
 Boto3 documentation:
-[MediaStoreData.Client.list_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
+[MediaStoreData.Client.list_items](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
 
 Arguments:
 
@@ -149,7 +149,7 @@ Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
 Type annotations for `boto3.client("mediastore-data").put_object` method.
 
 Boto3 documentation:
-[MediaStoreData.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
+[MediaStoreData.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
 
 Arguments:
 

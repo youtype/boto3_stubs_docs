@@ -3,7 +3,7 @@
 > [Index](..) > [ElastiCache](.) > ElastiCacheClient
 
 Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache)
+[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
 [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
@@ -95,7 +95,7 @@ def get_elasticache_client() -> ElastiCacheClient:
 ```
 
 Boto3 documentation:
-[ElastiCache.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client)
+[ElastiCache.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client)
 
 ## Exceptions
 
@@ -187,7 +187,7 @@ Exceptions:
 Type annotations for `boto3.client("elasticache").add_tags_to_resource` method.
 
 Boto3 documentation:
-[ElastiCache.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.add_tags_to_resource)
+[ElastiCache.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.add_tags_to_resource)
 
 Arguments:
 
@@ -202,7 +202,7 @@ Type annotations for
 `boto3.client("elasticache").authorize_cache_security_group_ingress` method.
 
 Boto3 documentation:
-[ElastiCache.Client.authorize_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.authorize_cache_security_group_ingress)
+[ElastiCache.Client.authorize_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.authorize_cache_security_group_ingress)
 
 Arguments:
 
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("elasticache").batch_apply_update_action`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.batch_apply_update_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.batch_apply_update_action)
+[ElastiCache.Client.batch_apply_update_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.batch_apply_update_action)
 
 Arguments:
 
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("elasticache").batch_stop_update_action`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.batch_stop_update_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.batch_stop_update_action)
+[ElastiCache.Client.batch_stop_update_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.batch_stop_update_action)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Returns
 Type annotations for `boto3.client("elasticache").can_paginate` method.
 
 Boto3 documentation:
-[ElastiCache.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.can_paginate)
+[ElastiCache.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.can_paginate)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns `bool`.
 Type annotations for `boto3.client("elasticache").complete_migration` method.
 
 Boto3 documentation:
-[ElastiCache.Client.complete_migration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.complete_migration)
+[ElastiCache.Client.complete_migration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.complete_migration)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Returns
 Type annotations for `boto3.client("elasticache").copy_snapshot` method.
 
 Boto3 documentation:
-[ElastiCache.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.copy_snapshot)
+[ElastiCache.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.copy_snapshot)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 Type annotations for `boto3.client("elasticache").create_cache_cluster` method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_cache_cluster)
+[ElastiCache.Client.create_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_cache_cluster)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("elasticache").create_cache_parameter_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_cache_parameter_group)
+[ElastiCache.Client.create_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_cache_parameter_group)
 
 Arguments:
 
@@ -357,7 +357,7 @@ Type annotations for `boto3.client("elasticache").create_cache_security_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_cache_security_group)
+[ElastiCache.Client.create_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_cache_security_group)
 
 Arguments:
 
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("elasticache").create_cache_subnet_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_cache_subnet_group)
+[ElastiCache.Client.create_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_cache_subnet_group)
 
 Arguments:
 
@@ -392,7 +392,7 @@ Type annotations for
 `boto3.client("elasticache").create_global_replication_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_global_replication_group)
+[ElastiCache.Client.create_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_global_replication_group)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Type annotations for `boto3.client("elasticache").create_replication_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_replication_group)
+[ElastiCache.Client.create_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_replication_group)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Returns
 Type annotations for `boto3.client("elasticache").create_snapshot` method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_snapshot)
+[ElastiCache.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_snapshot)
 
 Arguments:
 
@@ -475,7 +475,7 @@ Returns
 Type annotations for `boto3.client("elasticache").create_user` method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_user)
+[ElastiCache.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_user)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Returns [UserTypeDef](./type_defs.md#usertypedef).
 Type annotations for `boto3.client("elasticache").create_user_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.create_user_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.create_user_group)
+[ElastiCache.Client.create_user_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.create_user_group)
 
 Arguments:
 
@@ -512,7 +512,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.decrease_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.decrease_node_groups_in_global_replication_group)
+[ElastiCache.Client.decrease_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.decrease_node_groups_in_global_replication_group)
 
 Arguments:
 
@@ -531,7 +531,7 @@ Type annotations for `boto3.client("elasticache").decrease_replica_count`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.decrease_replica_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.decrease_replica_count)
+[ElastiCache.Client.decrease_replica_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.decrease_replica_count)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Returns
 Type annotations for `boto3.client("elasticache").delete_cache_cluster` method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_cache_cluster)
+[ElastiCache.Client.delete_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_cache_cluster)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("elasticache").delete_cache_parameter_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_cache_parameter_group)
+[ElastiCache.Client.delete_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_cache_parameter_group)
 
 Arguments:
 
@@ -578,7 +578,7 @@ Type annotations for `boto3.client("elasticache").delete_cache_security_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_cache_security_group)
+[ElastiCache.Client.delete_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_cache_security_group)
 
 Arguments:
 
@@ -590,7 +590,7 @@ Type annotations for `boto3.client("elasticache").delete_cache_subnet_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_cache_subnet_group)
+[ElastiCache.Client.delete_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_cache_subnet_group)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Type annotations for
 `boto3.client("elasticache").delete_global_replication_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_global_replication_group)
+[ElastiCache.Client.delete_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_global_replication_group)
 
 Arguments:
 
@@ -618,7 +618,7 @@ Type annotations for `boto3.client("elasticache").delete_replication_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_replication_group)
+[ElastiCache.Client.delete_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_replication_group)
 
 Arguments:
 
@@ -634,7 +634,7 @@ Returns
 Type annotations for `boto3.client("elasticache").delete_snapshot` method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_snapshot)
+[ElastiCache.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_snapshot)
 
 Arguments:
 
@@ -648,7 +648,7 @@ Returns
 Type annotations for `boto3.client("elasticache").delete_user` method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_user)
+[ElastiCache.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_user)
 
 Arguments:
 
@@ -661,7 +661,7 @@ Returns [UserTypeDef](./type_defs.md#usertypedef).
 Type annotations for `boto3.client("elasticache").delete_user_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.delete_user_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.delete_user_group)
+[ElastiCache.Client.delete_user_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.delete_user_group)
 
 Arguments:
 
@@ -675,7 +675,7 @@ Type annotations for `boto3.client("elasticache").describe_cache_clusters`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_cache_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_cache_clusters)
+[ElastiCache.Client.describe_cache_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_cache_clusters)
 
 Arguments:
 
@@ -694,7 +694,7 @@ Type annotations for
 `boto3.client("elasticache").describe_cache_engine_versions` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_cache_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_cache_engine_versions)
+[ElastiCache.Client.describe_cache_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_cache_engine_versions)
 
 Arguments:
 
@@ -714,7 +714,7 @@ Type annotations for
 `boto3.client("elasticache").describe_cache_parameter_groups` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_cache_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameter_groups)
+[ElastiCache.Client.describe_cache_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameter_groups)
 
 Arguments:
 
@@ -731,7 +731,7 @@ Type annotations for `boto3.client("elasticache").describe_cache_parameters`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_cache_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameters)
+[ElastiCache.Client.describe_cache_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameters)
 
 Arguments:
 
@@ -749,7 +749,7 @@ Type annotations for
 `boto3.client("elasticache").describe_cache_security_groups` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_cache_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_cache_security_groups)
+[ElastiCache.Client.describe_cache_security_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_cache_security_groups)
 
 Arguments:
 
@@ -766,7 +766,7 @@ Type annotations for `boto3.client("elasticache").describe_cache_subnet_groups`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_cache_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_cache_subnet_groups)
+[ElastiCache.Client.describe_cache_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_cache_subnet_groups)
 
 Arguments:
 
@@ -783,7 +783,7 @@ Type annotations for
 `boto3.client("elasticache").describe_engine_default_parameters` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_engine_default_parameters)
+[ElastiCache.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_engine_default_parameters)
 
 Arguments:
 
@@ -799,7 +799,7 @@ Returns
 Type annotations for `boto3.client("elasticache").describe_events` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_events)
+[ElastiCache.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_events)
 
 Arguments:
 
@@ -819,7 +819,7 @@ Type annotations for
 `boto3.client("elasticache").describe_global_replication_groups` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_global_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_global_replication_groups)
+[ElastiCache.Client.describe_global_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_global_replication_groups)
 
 Arguments:
 
@@ -837,7 +837,7 @@ Type annotations for `boto3.client("elasticache").describe_replication_groups`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_replication_groups)
+[ElastiCache.Client.describe_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_replication_groups)
 
 Arguments:
 
@@ -854,7 +854,7 @@ Type annotations for
 `boto3.client("elasticache").describe_reserved_cache_nodes` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_reserved_cache_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes)
+[ElastiCache.Client.describe_reserved_cache_nodes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes)
 
 Arguments:
 
@@ -876,7 +876,7 @@ Type annotations for
 `boto3.client("elasticache").describe_reserved_cache_nodes_offerings` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_reserved_cache_nodes_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes_offerings)
+[ElastiCache.Client.describe_reserved_cache_nodes_offerings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes_offerings)
 
 Arguments:
 
@@ -897,7 +897,7 @@ Type annotations for `boto3.client("elasticache").describe_service_updates`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_service_updates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_service_updates)
+[ElastiCache.Client.describe_service_updates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_service_updates)
 
 Arguments:
 
@@ -915,7 +915,7 @@ Returns
 Type annotations for `boto3.client("elasticache").describe_snapshots` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_snapshots)
+[ElastiCache.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_snapshots)
 
 Arguments:
 
@@ -936,7 +936,7 @@ Type annotations for `boto3.client("elasticache").describe_update_actions`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_update_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_update_actions)
+[ElastiCache.Client.describe_update_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_update_actions)
 
 Arguments:
 
@@ -962,7 +962,7 @@ Returns
 Type annotations for `boto3.client("elasticache").describe_user_groups` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_user_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_user_groups)
+[ElastiCache.Client.describe_user_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_user_groups)
 
 Arguments:
 
@@ -978,7 +978,7 @@ Returns
 Type annotations for `boto3.client("elasticache").describe_users` method.
 
 Boto3 documentation:
-[ElastiCache.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.describe_users)
+[ElastiCache.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.describe_users)
 
 Arguments:
 
@@ -997,7 +997,7 @@ Type annotations for
 `boto3.client("elasticache").disassociate_global_replication_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.disassociate_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.disassociate_global_replication_group)
+[ElastiCache.Client.disassociate_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.disassociate_global_replication_group)
 
 Arguments:
 
@@ -1014,7 +1014,7 @@ Type annotations for
 `boto3.client("elasticache").failover_global_replication_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.failover_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.failover_global_replication_group)
+[ElastiCache.Client.failover_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.failover_global_replication_group)
 
 Arguments:
 
@@ -1031,7 +1031,7 @@ Type annotations for `boto3.client("elasticache").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.generate_presigned_url)
+[ElastiCache.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1049,7 +1049,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.increase_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.increase_node_groups_in_global_replication_group)
+[ElastiCache.Client.increase_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.increase_node_groups_in_global_replication_group)
 
 Arguments:
 
@@ -1068,7 +1068,7 @@ Type annotations for `boto3.client("elasticache").increase_replica_count`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.increase_replica_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.increase_replica_count)
+[ElastiCache.Client.increase_replica_count](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.increase_replica_count)
 
 Arguments:
 
@@ -1087,7 +1087,7 @@ Type annotations for
 `boto3.client("elasticache").list_allowed_node_type_modifications` method.
 
 Boto3 documentation:
-[ElastiCache.Client.list_allowed_node_type_modifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.list_allowed_node_type_modifications)
+[ElastiCache.Client.list_allowed_node_type_modifications](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.list_allowed_node_type_modifications)
 
 Arguments:
 
@@ -1103,7 +1103,7 @@ Type annotations for `boto3.client("elasticache").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.list_tags_for_resource)
+[ElastiCache.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1116,7 +1116,7 @@ Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 Type annotations for `boto3.client("elasticache").modify_cache_cluster` method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_cache_cluster)
+[ElastiCache.Client.modify_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_cache_cluster)
 
 Arguments:
 
@@ -1152,7 +1152,7 @@ Type annotations for `boto3.client("elasticache").modify_cache_parameter_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_cache_parameter_group)
+[ElastiCache.Client.modify_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_cache_parameter_group)
 
 Arguments:
 
@@ -1170,7 +1170,7 @@ Type annotations for `boto3.client("elasticache").modify_cache_subnet_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_cache_subnet_group)
+[ElastiCache.Client.modify_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_cache_subnet_group)
 
 Arguments:
 
@@ -1187,7 +1187,7 @@ Type annotations for
 `boto3.client("elasticache").modify_global_replication_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_global_replication_group)
+[ElastiCache.Client.modify_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_global_replication_group)
 
 Arguments:
 
@@ -1208,7 +1208,7 @@ Type annotations for `boto3.client("elasticache").modify_replication_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group)
+[ElastiCache.Client.modify_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group)
 
 Arguments:
 
@@ -1250,7 +1250,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_replication_group_shard_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group_shard_configuration)
+[ElastiCache.Client.modify_replication_group_shard_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group_shard_configuration)
 
 Arguments:
 
@@ -1270,7 +1270,7 @@ Returns
 Type annotations for `boto3.client("elasticache").modify_user` method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_user)
+[ElastiCache.Client.modify_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_user)
 
 Arguments:
 
@@ -1287,7 +1287,7 @@ Returns [UserTypeDef](./type_defs.md#usertypedef).
 Type annotations for `boto3.client("elasticache").modify_user_group` method.
 
 Boto3 documentation:
-[ElastiCache.Client.modify_user_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.modify_user_group)
+[ElastiCache.Client.modify_user_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.modify_user_group)
 
 Arguments:
 
@@ -1303,7 +1303,7 @@ Type annotations for
 `boto3.client("elasticache").purchase_reserved_cache_nodes_offering` method.
 
 Boto3 documentation:
-[ElastiCache.Client.purchase_reserved_cache_nodes_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.purchase_reserved_cache_nodes_offering)
+[ElastiCache.Client.purchase_reserved_cache_nodes_offering](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.purchase_reserved_cache_nodes_offering)
 
 Arguments:
 
@@ -1322,7 +1322,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.rebalance_slots_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.rebalance_slots_in_global_replication_group)
+[ElastiCache.Client.rebalance_slots_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.rebalance_slots_in_global_replication_group)
 
 Arguments:
 
@@ -1337,7 +1337,7 @@ Returns
 Type annotations for `boto3.client("elasticache").reboot_cache_cluster` method.
 
 Boto3 documentation:
-[ElastiCache.Client.reboot_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.reboot_cache_cluster)
+[ElastiCache.Client.reboot_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.reboot_cache_cluster)
 
 Arguments:
 
@@ -1353,7 +1353,7 @@ Type annotations for `boto3.client("elasticache").remove_tags_from_resource`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.remove_tags_from_resource)
+[ElastiCache.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.remove_tags_from_resource)
 
 Arguments:
 
@@ -1368,7 +1368,7 @@ Type annotations for `boto3.client("elasticache").reset_cache_parameter_group`
 method.
 
 Boto3 documentation:
-[ElastiCache.Client.reset_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.reset_cache_parameter_group)
+[ElastiCache.Client.reset_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.reset_cache_parameter_group)
 
 Arguments:
 
@@ -1386,7 +1386,7 @@ Type annotations for
 `boto3.client("elasticache").revoke_cache_security_group_ingress` method.
 
 Boto3 documentation:
-[ElastiCache.Client.revoke_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.revoke_cache_security_group_ingress)
+[ElastiCache.Client.revoke_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.revoke_cache_security_group_ingress)
 
 Arguments:
 
@@ -1402,7 +1402,7 @@ Returns
 Type annotations for `boto3.client("elasticache").start_migration` method.
 
 Boto3 documentation:
-[ElastiCache.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.start_migration)
+[ElastiCache.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.start_migration)
 
 Arguments:
 
@@ -1419,7 +1419,7 @@ Returns
 Type annotations for `boto3.client("elasticache").test_failover` method.
 
 Boto3 documentation:
-[ElastiCache.Client.test_failover](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/elasticache.html#ElastiCache.Client.test_failover)
+[ElastiCache.Client.test_failover](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elasticache.html#ElastiCache.Client.test_failover)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [DeviceFarm](.) > Literals
 
 Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/devicefarm.html#DeviceFarm)
+[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
 [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 

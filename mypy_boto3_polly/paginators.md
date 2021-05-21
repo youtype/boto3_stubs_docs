@@ -3,7 +3,7 @@
 > [Index](..) > [Polly](.) > Paginators
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
@@ -26,7 +26,7 @@ def get_describe_voices_paginator() -> DescribeVoicesPaginator:
 ```
 
 Boto3 documentation:
-[Polly.Paginator.DescribeVoices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/polly.html#Polly.Paginator.DescribeVoices)
+[Polly.Paginator.DescribeVoices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/polly.html#Polly.Paginator.DescribeVoices)
 
 Arguments for `DescribeVoicesPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_lexicons_paginator() -> ListLexiconsPaginator:
 ```
 
 Boto3 documentation:
-[Polly.Paginator.ListLexicons](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/polly.html#Polly.Paginator.ListLexicons)
+[Polly.Paginator.ListLexicons](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/polly.html#Polly.Paginator.ListLexicons)
 
 Arguments for `ListLexiconsPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_list_speech_synthesis_tasks_paginator() -> ListSpeechSynthesisTasksPagin
 ```
 
 Boto3 documentation:
-[Polly.Paginator.ListSpeechSynthesisTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/polly.html#Polly.Paginator.ListSpeechSynthesisTasks)
+[Polly.Paginator.ListSpeechSynthesisTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/polly.html#Polly.Paginator.ListSpeechSynthesisTasks)
 
 Arguments for `ListSpeechSynthesisTasksPaginator.paginate` method:
 

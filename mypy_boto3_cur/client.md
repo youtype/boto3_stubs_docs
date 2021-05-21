@@ -4,7 +4,7 @@
 > CostandUsageReportServiceClient
 
 Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService)
+[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
@@ -34,7 +34,7 @@ def get_cur_client() -> CostandUsageReportServiceClient:
 ```
 
 Boto3 documentation:
-[CostandUsageReportService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client)
+[CostandUsageReportService.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client)
 
 ## Exceptions
 
@@ -63,7 +63,7 @@ Exceptions:
 Type annotations for `boto3.client("cur").can_paginate` method.
 
 Boto3 documentation:
-[CostandUsageReportService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client.can_paginate)
+[CostandUsageReportService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client.can_paginate)
 
 Arguments:
 
@@ -76,7 +76,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cur").delete_report_definition` method.
 
 Boto3 documentation:
-[CostandUsageReportService.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
+[CostandUsageReportService.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns
 Type annotations for `boto3.client("cur").describe_report_definitions` method.
 
 Boto3 documentation:
-[CostandUsageReportService.Client.describe_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
+[CostandUsageReportService.Client.describe_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Returns
 Type annotations for `boto3.client("cur").generate_presigned_url` method.
 
 Boto3 documentation:
-[CostandUsageReportService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url)
+[CostandUsageReportService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Returns `str`.
 Type annotations for `boto3.client("cur").modify_report_definition` method.
 
 Boto3 documentation:
-[CostandUsageReportService.Client.modify_report_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
+[CostandUsageReportService.Client.modify_report_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
 
 Arguments:
 
@@ -137,7 +137,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cur").put_report_definition` method.
 
 Boto3 documentation:
-[CostandUsageReportService.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
+[CostandUsageReportService.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
 
 Arguments:
 

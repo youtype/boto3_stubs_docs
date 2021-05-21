@@ -3,7 +3,7 @@
 > [Index](..) > [EventBridge](.) > EventBridgeClient
 
 Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge)
+[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge)
 type annotations stubs module
 [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
@@ -80,7 +80,7 @@ def get_events_client() -> EventBridgeClient:
 ```
 
 Boto3 documentation:
-[EventBridge.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client)
+[EventBridge.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client)
 
 ## Exceptions
 
@@ -116,7 +116,7 @@ Exceptions:
 Type annotations for `boto3.client("events").activate_event_source` method.
 
 Boto3 documentation:
-[EventBridge.Client.activate_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.activate_event_source)
+[EventBridge.Client.activate_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.activate_event_source)
 
 Arguments:
 
@@ -127,7 +127,7 @@ Arguments:
 Type annotations for `boto3.client("events").can_paginate` method.
 
 Boto3 documentation:
-[EventBridge.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.can_paginate)
+[EventBridge.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.can_paginate)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Returns `bool`.
 Type annotations for `boto3.client("events").cancel_replay` method.
 
 Boto3 documentation:
-[EventBridge.Client.cancel_replay](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.cancel_replay)
+[EventBridge.Client.cancel_replay](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.cancel_replay)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("events").create_api_destination` method.
 
 Boto3 documentation:
-[EventBridge.Client.create_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.create_api_destination)
+[EventBridge.Client.create_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.create_api_destination)
 
 Arguments:
 
@@ -175,7 +175,7 @@ Returns
 Type annotations for `boto3.client("events").create_archive` method.
 
 Boto3 documentation:
-[EventBridge.Client.create_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.create_archive)
+[EventBridge.Client.create_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.create_archive)
 
 Arguments:
 
@@ -193,7 +193,7 @@ Returns
 Type annotations for `boto3.client("events").create_connection` method.
 
 Boto3 documentation:
-[EventBridge.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.create_connection)
+[EventBridge.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.create_connection)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("events").create_event_bus` method.
 
 Boto3 documentation:
-[EventBridge.Client.create_event_bus](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.create_event_bus)
+[EventBridge.Client.create_event_bus](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.create_event_bus)
 
 Arguments:
 
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("events").create_partner_event_source`
 method.
 
 Boto3 documentation:
-[EventBridge.Client.create_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.create_partner_event_source)
+[EventBridge.Client.create_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.create_partner_event_source)
 
 Arguments:
 
@@ -246,7 +246,7 @@ Returns
 Type annotations for `boto3.client("events").deactivate_event_source` method.
 
 Boto3 documentation:
-[EventBridge.Client.deactivate_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.deactivate_event_source)
+[EventBridge.Client.deactivate_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.deactivate_event_source)
 
 Arguments:
 
@@ -257,7 +257,7 @@ Arguments:
 Type annotations for `boto3.client("events").deauthorize_connection` method.
 
 Boto3 documentation:
-[EventBridge.Client.deauthorize_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.deauthorize_connection)
+[EventBridge.Client.deauthorize_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.deauthorize_connection)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Returns
 Type annotations for `boto3.client("events").delete_api_destination` method.
 
 Boto3 documentation:
-[EventBridge.Client.delete_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.delete_api_destination)
+[EventBridge.Client.delete_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.delete_api_destination)
 
 Arguments:
 
@@ -284,7 +284,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("events").delete_archive` method.
 
 Boto3 documentation:
-[EventBridge.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.delete_archive)
+[EventBridge.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.delete_archive)
 
 Arguments:
 
@@ -297,7 +297,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("events").delete_connection` method.
 
 Boto3 documentation:
-[EventBridge.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.delete_connection)
+[EventBridge.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.delete_connection)
 
 Arguments:
 
@@ -311,7 +311,7 @@ Returns
 Type annotations for `boto3.client("events").delete_event_bus` method.
 
 Boto3 documentation:
-[EventBridge.Client.delete_event_bus](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.delete_event_bus)
+[EventBridge.Client.delete_event_bus](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.delete_event_bus)
 
 Arguments:
 
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("events").delete_partner_event_source`
 method.
 
 Boto3 documentation:
-[EventBridge.Client.delete_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
+[EventBridge.Client.delete_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Arguments:
 Type annotations for `boto3.client("events").delete_rule` method.
 
 Boto3 documentation:
-[EventBridge.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.delete_rule)
+[EventBridge.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.delete_rule)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Arguments:
 Type annotations for `boto3.client("events").describe_api_destination` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_api_destination)
+[EventBridge.Client.describe_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_api_destination)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Returns
 Type annotations for `boto3.client("events").describe_archive` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_archive)
+[EventBridge.Client.describe_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_archive)
 
 Arguments:
 
@@ -376,7 +376,7 @@ Returns
 Type annotations for `boto3.client("events").describe_connection` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_connection)
+[EventBridge.Client.describe_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_connection)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Returns
 Type annotations for `boto3.client("events").describe_event_bus` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_event_bus](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_event_bus)
+[EventBridge.Client.describe_event_bus](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_event_bus)
 
 Arguments:
 
@@ -404,7 +404,7 @@ Returns
 Type annotations for `boto3.client("events").describe_event_source` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_event_source)
+[EventBridge.Client.describe_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_event_source)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("events").describe_partner_event_source`
 method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
+[EventBridge.Client.describe_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Returns
 Type annotations for `boto3.client("events").describe_replay` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_replay](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_replay)
+[EventBridge.Client.describe_replay](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_replay)
 
 Arguments:
 
@@ -447,7 +447,7 @@ Returns
 Type annotations for `boto3.client("events").describe_rule` method.
 
 Boto3 documentation:
-[EventBridge.Client.describe_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.describe_rule)
+[EventBridge.Client.describe_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.describe_rule)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Returns
 Type annotations for `boto3.client("events").disable_rule` method.
 
 Boto3 documentation:
-[EventBridge.Client.disable_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.disable_rule)
+[EventBridge.Client.disable_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.disable_rule)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Arguments:
 Type annotations for `boto3.client("events").enable_rule` method.
 
 Boto3 documentation:
-[EventBridge.Client.enable_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.enable_rule)
+[EventBridge.Client.enable_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.enable_rule)
 
 Arguments:
 
@@ -486,7 +486,7 @@ Arguments:
 Type annotations for `boto3.client("events").generate_presigned_url` method.
 
 Boto3 documentation:
-[EventBridge.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.generate_presigned_url)
+[EventBridge.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.generate_presigned_url)
 
 Arguments:
 
@@ -502,7 +502,7 @@ Returns `str`.
 Type annotations for `boto3.client("events").list_api_destinations` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_api_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_api_destinations)
+[EventBridge.Client.list_api_destinations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_api_destinations)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Returns
 Type annotations for `boto3.client("events").list_archives` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_archives](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_archives)
+[EventBridge.Client.list_archives](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_archives)
 
 Arguments:
 
@@ -537,7 +537,7 @@ Returns
 Type annotations for `boto3.client("events").list_connections` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_connections)
+[EventBridge.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_connections)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Returns
 Type annotations for `boto3.client("events").list_event_buses` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_event_buses](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_event_buses)
+[EventBridge.Client.list_event_buses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_event_buses)
 
 Arguments:
 
@@ -570,7 +570,7 @@ Returns
 Type annotations for `boto3.client("events").list_event_sources` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_event_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_event_sources)
+[EventBridge.Client.list_event_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_event_sources)
 
 Arguments:
 
@@ -587,7 +587,7 @@ Type annotations for
 `boto3.client("events").list_partner_event_source_accounts` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_partner_event_source_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts)
+[EventBridge.Client.list_partner_event_source_accounts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts)
 
 Arguments:
 
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("events").list_partner_event_sources`
 method.
 
 Boto3 documentation:
-[EventBridge.Client.list_partner_event_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_partner_event_sources)
+[EventBridge.Client.list_partner_event_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_partner_event_sources)
 
 Arguments:
 
@@ -620,7 +620,7 @@ Returns
 Type annotations for `boto3.client("events").list_replays` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_replays](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_replays)
+[EventBridge.Client.list_replays](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_replays)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Returns
 Type annotations for `boto3.client("events").list_rule_names_by_target` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_rule_names_by_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_rule_names_by_target)
+[EventBridge.Client.list_rule_names_by_target](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_rule_names_by_target)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Returns
 Type annotations for `boto3.client("events").list_rules` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_rules)
+[EventBridge.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_rules)
 
 Arguments:
 
@@ -671,7 +671,7 @@ Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 Type annotations for `boto3.client("events").list_tags_for_resource` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
+[EventBridge.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -685,7 +685,7 @@ Returns
 Type annotations for `boto3.client("events").list_targets_by_rule` method.
 
 Boto3 documentation:
-[EventBridge.Client.list_targets_by_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.list_targets_by_rule)
+[EventBridge.Client.list_targets_by_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.list_targets_by_rule)
 
 Arguments:
 
@@ -702,7 +702,7 @@ Returns
 Type annotations for `boto3.client("events").put_events` method.
 
 Boto3 documentation:
-[EventBridge.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.put_events)
+[EventBridge.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.put_events)
 
 Arguments:
 
@@ -717,7 +717,7 @@ Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
 Type annotations for `boto3.client("events").put_partner_events` method.
 
 Boto3 documentation:
-[EventBridge.Client.put_partner_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.put_partner_events)
+[EventBridge.Client.put_partner_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.put_partner_events)
 
 Arguments:
 
@@ -733,7 +733,7 @@ Returns
 Type annotations for `boto3.client("events").put_permission` method.
 
 Boto3 documentation:
-[EventBridge.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.put_permission)
+[EventBridge.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.put_permission)
 
 Arguments:
 
@@ -749,7 +749,7 @@ Arguments:
 Type annotations for `boto3.client("events").put_rule` method.
 
 Boto3 documentation:
-[EventBridge.Client.put_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.put_rule)
+[EventBridge.Client.put_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.put_rule)
 
 Arguments:
 
@@ -769,7 +769,7 @@ Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
 Type annotations for `boto3.client("events").put_targets` method.
 
 Boto3 documentation:
-[EventBridge.Client.put_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.put_targets)
+[EventBridge.Client.put_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.put_targets)
 
 Arguments:
 
@@ -785,7 +785,7 @@ Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 Type annotations for `boto3.client("events").remove_permission` method.
 
 Boto3 documentation:
-[EventBridge.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.remove_permission)
+[EventBridge.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.remove_permission)
 
 Arguments:
 
@@ -798,7 +798,7 @@ Arguments:
 Type annotations for `boto3.client("events").remove_targets` method.
 
 Boto3 documentation:
-[EventBridge.Client.remove_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.remove_targets)
+[EventBridge.Client.remove_targets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.remove_targets)
 
 Arguments:
 
@@ -815,7 +815,7 @@ Returns
 Type annotations for `boto3.client("events").start_replay` method.
 
 Boto3 documentation:
-[EventBridge.Client.start_replay](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.start_replay)
+[EventBridge.Client.start_replay](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.start_replay)
 
 Arguments:
 
@@ -836,7 +836,7 @@ Returns
 Type annotations for `boto3.client("events").tag_resource` method.
 
 Boto3 documentation:
-[EventBridge.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.tag_resource)
+[EventBridge.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.tag_resource)
 
 Arguments:
 
@@ -850,7 +850,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("events").test_event_pattern` method.
 
 Boto3 documentation:
-[EventBridge.Client.test_event_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.test_event_pattern)
+[EventBridge.Client.test_event_pattern](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.test_event_pattern)
 
 Arguments:
 
@@ -865,7 +865,7 @@ Returns
 Type annotations for `boto3.client("events").untag_resource` method.
 
 Boto3 documentation:
-[EventBridge.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.untag_resource)
+[EventBridge.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.untag_resource)
 
 Arguments:
 
@@ -879,7 +879,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("events").update_api_destination` method.
 
 Boto3 documentation:
-[EventBridge.Client.update_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.update_api_destination)
+[EventBridge.Client.update_api_destination](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.update_api_destination)
 
 Arguments:
 
@@ -899,7 +899,7 @@ Returns
 Type annotations for `boto3.client("events").update_archive` method.
 
 Boto3 documentation:
-[EventBridge.Client.update_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.update_archive)
+[EventBridge.Client.update_archive](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.update_archive)
 
 Arguments:
 
@@ -916,7 +916,7 @@ Returns
 Type annotations for `boto3.client("events").update_connection` method.
 
 Boto3 documentation:
-[EventBridge.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/events.html#EventBridge.Client.update_connection)
+[EventBridge.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/events.html#EventBridge.Client.update_connection)
 
 Arguments:
 

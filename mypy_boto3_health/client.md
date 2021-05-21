@@ -3,7 +3,7 @@
 > [Index](..) > [Health](.) > HealthClient
 
 Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health)
+[Health](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health)
 type annotations stubs module
 [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
 
@@ -42,7 +42,7 @@ def get_health_client() -> HealthClient:
 ```
 
 Boto3 documentation:
-[Health.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client)
+[Health.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client)
 
 ## Exceptions
 
@@ -70,7 +70,7 @@ Exceptions:
 Type annotations for `boto3.client("health").can_paginate` method.
 
 Boto3 documentation:
-[Health.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.can_paginate)
+[Health.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.can_paginate)
 
 Arguments:
 
@@ -84,7 +84,7 @@ Type annotations for
 `boto3.client("health").describe_affected_accounts_for_organization` method.
 
 Boto3 documentation:
-[Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
+[Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Type annotations for `boto3.client("health").describe_affected_entities`
 method.
 
 Boto3 documentation:
-[Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_affected_entities)
+[Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_affected_entities)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Type annotations for
 `boto3.client("health").describe_affected_entities_for_organization` method.
 
 Boto3 documentation:
-[Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
+[Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("health").describe_entity_aggregates`
 method.
 
 Boto3 documentation:
-[Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_entity_aggregates)
+[Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_entity_aggregates)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("health").describe_event_aggregates` method.
 
 Boto3 documentation:
-[Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_event_aggregates)
+[Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_event_aggregates)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Returns
 Type annotations for `boto3.client("health").describe_event_details` method.
 
 Boto3 documentation:
-[Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_event_details)
+[Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_event_details)
 
 Arguments:
 
@@ -189,7 +189,7 @@ Type annotations for
 `boto3.client("health").describe_event_details_for_organization` method.
 
 Boto3 documentation:
-[Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_event_details_for_organization)
+[Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_event_details_for_organization)
 
 Arguments:
 
@@ -206,7 +206,7 @@ Returns
 Type annotations for `boto3.client("health").describe_event_types` method.
 
 Boto3 documentation:
-[Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_event_types)
+[Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_event_types)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns
 Type annotations for `boto3.client("health").describe_events` method.
 
 Boto3 documentation:
-[Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_events)
+[Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_events)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Type annotations for `boto3.client("health").describe_events_for_organization`
 method.
 
 Boto3 documentation:
-[Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_events_for_organization)
+[Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_events_for_organization)
 
 Arguments:
 
@@ -261,7 +261,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
+[Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
 
 Returns
 [DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
@@ -272,7 +272,7 @@ Type annotations for
 `boto3.client("health").disable_health_service_access_for_organization` method.
 
 Boto3 documentation:
-[Health.Client.disable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
+[Health.Client.disable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
 
 ### enable_health_service_access_for_organization
 
@@ -280,14 +280,14 @@ Type annotations for
 `boto3.client("health").enable_health_service_access_for_organization` method.
 
 Boto3 documentation:
-[Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
+[Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
 
 ### generate_presigned_url
 
 Type annotations for `boto3.client("health").generate_presigned_url` method.
 
 Boto3 documentation:
-[Health.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/health.html#Health.Client.generate_presigned_url)
+[Health.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/health.html#Health.Client.generate_presigned_url)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatch](.) > Paginators
 
 Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch)
+[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
 [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
@@ -29,7 +29,7 @@ def get_describe_alarm_history_paginator() -> DescribeAlarmHistoryPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatch.Paginator.DescribeAlarmHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarmHistory)
+[CloudWatch.Paginator.DescribeAlarmHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarmHistory)
 
 Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_describe_alarms_paginator() -> DescribeAlarmsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatch.Paginator.DescribeAlarms](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarms)
+[CloudWatch.Paginator.DescribeAlarms](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarms)
 
 Arguments for `DescribeAlarmsPaginator.paginate` method:
 
@@ -92,7 +92,7 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatch.Paginator.GetMetricData](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch.Paginator.GetMetricData)
+[CloudWatch.Paginator.GetMetricData](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudwatch.html#CloudWatch.Paginator.GetMetricData)
 
 Arguments for `GetMetricDataPaginator.paginate` method:
 
@@ -124,7 +124,7 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatch.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch.Paginator.ListDashboards)
+[CloudWatch.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudwatch.html#CloudWatch.Paginator.ListDashboards)
 
 Arguments for `ListDashboardsPaginator.paginate` method:
 
@@ -150,7 +150,7 @@ def get_list_metrics_paginator() -> ListMetricsPaginator:
 ```
 
 Boto3 documentation:
-[CloudWatch.Paginator.ListMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cloudwatch.html#CloudWatch.Paginator.ListMetrics)
+[CloudWatch.Paginator.ListMetrics](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudwatch.html#CloudWatch.Paginator.ListMetrics)
 
 Arguments for `ListMetricsPaginator.paginate` method:
 

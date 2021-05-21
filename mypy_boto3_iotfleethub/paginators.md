@@ -3,7 +3,7 @@
 > [Index](..) > [IoTFleetHub](.) > Paginators
 
 Auto-generated documentation for
-[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub)
+[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
 [mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
@@ -25,7 +25,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
 ```
 
 Boto3 documentation:
-[IoTFleetHub.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/iotfleethub.html#IoTFleetHub.Paginator.ListApplications)
+[IoTFleetHub.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotfleethub.html#IoTFleetHub.Paginator.ListApplications)
 
 Arguments for `ListApplicationsPaginator.paginate` method:
 

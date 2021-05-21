@@ -3,7 +3,7 @@
 > [Index](..) > [ResourceGroups](.) > Paginators
 
 Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resource-groups.html#ResourceGroups)
+[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
 [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
@@ -27,7 +27,7 @@ def get_list_group_resources_paginator() -> ListGroupResourcesPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroups.Paginator.ListGroupResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroupResources)
+[ResourceGroups.Paginator.ListGroupResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroupResources)
 
 Arguments for `ListGroupResourcesPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroups.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroups)
+[ResourceGroups.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroups)
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_search_resources_paginator() -> SearchResourcesPaginator:
 ```
 
 Boto3 documentation:
-[ResourceGroups.Paginator.SearchResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/resource-groups.html#ResourceGroups.Paginator.SearchResources)
+[ResourceGroups.Paginator.SearchResources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/resource-groups.html#ResourceGroups.Paginator.SearchResources)
 
 Arguments for `SearchResourcesPaginator.paginate` method:
 

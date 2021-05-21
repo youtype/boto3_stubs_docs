@@ -3,7 +3,7 @@
 > [Index](..) > [MarketplaceMetering](.) > Typed dictionaries
 
 Auto-generated documentation for
-[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/meteringmarketplace.html#MarketplaceMetering)
+[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
 [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 

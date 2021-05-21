@@ -3,7 +3,7 @@
 > [Index](..) > [CodeDeploy](.) > Waiters
 
 Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codedeploy.html#CodeDeploy)
+[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
 [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
@@ -25,7 +25,7 @@ def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/codedeploy.html#CodeDeploy.Waiter.deployment_successful)
+[CodeDeploy.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codedeploy.html#CodeDeploy.Waiter.deployment_successful)
 
 Arguments for `DeploymentSuccessfulWaiter.wait` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoSync](.) > CognitoSyncClient
 
 Auto-generated documentation for
-[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync)
+[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
 [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
@@ -45,7 +45,7 @@ def get_cognito-sync_client() -> CognitoSyncClient:
 ```
 
 Boto3 documentation:
-[CognitoSync.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client)
+[CognitoSync.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client)
 
 ## Exceptions
 
@@ -83,7 +83,7 @@ Exceptions:
 Type annotations for `boto3.client("cognito-sync").bulk_publish` method.
 
 Boto3 documentation:
-[CognitoSync.Client.bulk_publish](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish)
+[CognitoSync.Client.bulk_publish](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish)
 
 Arguments:
 
@@ -97,7 +97,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").can_paginate` method.
 
 Boto3 documentation:
-[CognitoSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.can_paginate)
+[CognitoSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.can_paginate)
 
 Arguments:
 
@@ -110,7 +110,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cognito-sync").delete_dataset` method.
 
 Boto3 documentation:
-[CognitoSync.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset)
+[CognitoSync.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").describe_dataset` method.
 
 Boto3 documentation:
-[CognitoSync.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset)
+[CognitoSync.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset)
 
 Arguments:
 
@@ -143,7 +143,7 @@ Type annotations for
 `boto3.client("cognito-sync").describe_identity_pool_usage` method.
 
 Boto3 documentation:
-[CognitoSync.Client.describe_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage)
+[CognitoSync.Client.describe_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage)
 
 Arguments:
 
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("cognito-sync").describe_identity_usage`
 method.
 
 Boto3 documentation:
-[CognitoSync.Client.describe_identity_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage)
+[CognitoSync.Client.describe_identity_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage)
 
 Arguments:
 
@@ -174,7 +174,7 @@ Type annotations for `boto3.client("cognito-sync").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[CognitoSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.generate_presigned_url)
+[CognitoSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.generate_presigned_url)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("cognito-sync").get_bulk_publish_details`
 method.
 
 Boto3 documentation:
-[CognitoSync.Client.get_bulk_publish_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details)
+[CognitoSync.Client.get_bulk_publish_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details)
 
 Arguments:
 
@@ -205,7 +205,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").get_cognito_events` method.
 
 Boto3 documentation:
-[CognitoSync.Client.get_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events)
+[CognitoSync.Client.get_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Type annotations for
 `boto3.client("cognito-sync").get_identity_pool_configuration` method.
 
 Boto3 documentation:
-[CognitoSync.Client.get_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration)
+[CognitoSync.Client.get_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration)
 
 Arguments:
 
@@ -234,7 +234,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").list_datasets` method.
 
 Boto3 documentation:
-[CognitoSync.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets)
+[CognitoSync.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("cognito-sync").list_identity_pool_usage`
 method.
 
 Boto3 documentation:
-[CognitoSync.Client.list_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage)
+[CognitoSync.Client.list_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage)
 
 Arguments:
 
@@ -267,7 +267,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").list_records` method.
 
 Boto3 documentation:
-[CognitoSync.Client.list_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.list_records)
+[CognitoSync.Client.list_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.list_records)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").register_device` method.
 
 Boto3 documentation:
-[CognitoSync.Client.register_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.register_device)
+[CognitoSync.Client.register_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.register_device)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("cognito-sync").set_cognito_events` method.
 
 Boto3 documentation:
-[CognitoSync.Client.set_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events)
+[CognitoSync.Client.set_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events)
 
 Arguments:
 
@@ -317,7 +317,7 @@ Type annotations for
 `boto3.client("cognito-sync").set_identity_pool_configuration` method.
 
 Boto3 documentation:
-[CognitoSync.Client.set_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration)
+[CognitoSync.Client.set_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration)
 
 Arguments:
 
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("cognito-sync").subscribe_to_dataset`
 method.
 
 Boto3 documentation:
-[CognitoSync.Client.subscribe_to_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset)
+[CognitoSync.Client.subscribe_to_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("cognito-sync").unsubscribe_from_dataset`
 method.
 
 Boto3 documentation:
-[CognitoSync.Client.unsubscribe_from_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset)
+[CognitoSync.Client.unsubscribe_from_dataset](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset)
 
 Arguments:
 
@@ -368,7 +368,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("cognito-sync").update_records` method.
 
 Boto3 documentation:
-[CognitoSync.Client.update_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-sync.html#CognitoSync.Client.update_records)
+[CognitoSync.Client.update_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-sync.html#CognitoSync.Client.update_records)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [GreengrassV2](.) > GreengrassV2Client
 
 Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2)
+[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
@@ -49,7 +49,7 @@ def get_greengrassv2_client() -> GreengrassV2Client:
 ```
 
 Boto3 documentation:
-[GreengrassV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client)
+[GreengrassV2.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 Type annotations for `boto3.client("greengrassv2").can_paginate` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.can_paginate)
+[GreengrassV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.can_paginate)
 
 Arguments:
 
@@ -94,7 +94,7 @@ Returns `bool`.
 Type annotations for `boto3.client("greengrassv2").cancel_deployment` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.cancel_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
+[GreengrassV2.Client.cancel_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
 
 Arguments:
 
@@ -109,7 +109,7 @@ Type annotations for `boto3.client("greengrassv2").create_component_version`
 method.
 
 Boto3 documentation:
-[GreengrassV2.Client.create_component_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
+[GreengrassV2.Client.create_component_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
 
 Arguments:
 
@@ -126,7 +126,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").create_deployment` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
+[GreengrassV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").delete_component` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
+[GreengrassV2.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Arguments:
 Type annotations for `boto3.client("greengrassv2").delete_core_device` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.delete_core_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
+[GreengrassV2.Client.delete_core_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
 
 Arguments:
 
@@ -170,7 +170,7 @@ Arguments:
 Type annotations for `boto3.client("greengrassv2").describe_component` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
+[GreengrassV2.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("greengrassv2").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[GreengrassV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.generate_presigned_url)
+[GreengrassV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.generate_presigned_url)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Returns `str`.
 Type annotations for `boto3.client("greengrassv2").get_component` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
+[GreengrassV2.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Type annotations for
 `boto3.client("greengrassv2").get_component_version_artifact` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.get_component_version_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
+[GreengrassV2.Client.get_component_version_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").get_core_device` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.get_core_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
+[GreengrassV2.Client.get_core_device](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").get_deployment` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
+[GreengrassV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("greengrassv2").list_component_versions`
 method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_component_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
+[GreengrassV2.Client.list_component_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").list_components` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
+[GreengrassV2.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").list_core_devices` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_core_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
+[GreengrassV2.Client.list_core_devices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").list_deployments` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
+[GreengrassV2.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("greengrassv2").list_effective_deployments`
 method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_effective_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
+[GreengrassV2.Client.list_effective_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
 
 Arguments:
 
@@ -348,7 +348,7 @@ Type annotations for `boto3.client("greengrassv2").list_installed_components`
 method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_installed_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
+[GreengrassV2.Client.list_installed_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
 
 Arguments:
 
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("greengrassv2").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[GreengrassV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
+[GreengrassV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -380,7 +380,7 @@ Type annotations for
 `boto3.client("greengrassv2").resolve_component_candidates` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.resolve_component_candidates](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
+[GreengrassV2.Client.resolve_component_candidates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("greengrassv2").tag_resource` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
+[GreengrassV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
 
 Arguments:
 
@@ -413,7 +413,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("greengrassv2").untag_resource` method.
 
 Boto3 documentation:
-[GreengrassV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
+[GreengrassV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
 
 Arguments:
 

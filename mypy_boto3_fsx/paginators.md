@@ -3,7 +3,7 @@
 > [Index](..) > [FSx](.) > Paginators
 
 Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fsx.html#FSx)
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fsx.html#FSx)
 type annotations stubs module
 [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
@@ -26,7 +26,7 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
 ```
 
 Boto3 documentation:
-[FSx.Paginator.DescribeBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fsx.html#FSx.Paginator.DescribeBackups)
+[FSx.Paginator.DescribeBackups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fsx.html#FSx.Paginator.DescribeBackups)
 
 Arguments for `DescribeBackupsPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_describe_file_systems_paginator() -> DescribeFileSystemsPaginator:
 ```
 
 Boto3 documentation:
-[FSx.Paginator.DescribeFileSystems](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fsx.html#FSx.Paginator.DescribeFileSystems)
+[FSx.Paginator.DescribeFileSystems](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fsx.html#FSx.Paginator.DescribeFileSystems)
 
 Arguments for `DescribeFileSystemsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
 ```
 
 Boto3 documentation:
-[FSx.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/fsx.html#FSx.Paginator.ListTagsForResource)
+[FSx.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fsx.html#FSx.Paginator.ListTagsForResource)
 
 Arguments for `ListTagsForResourcePaginator.paginate` method:
 

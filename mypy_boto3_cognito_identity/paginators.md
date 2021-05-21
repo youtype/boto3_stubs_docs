@@ -3,7 +3,7 @@
 > [Index](..) > [CognitoIdentity](.) > Paginators
 
 Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity)
+[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
 [mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
@@ -25,7 +25,7 @@ def get_list_identity_pools_paginator() -> ListIdentityPoolsPaginator:
 ```
 
 Boto3 documentation:
-[CognitoIdentity.Paginator.ListIdentityPools](https://boto3.amazonaws.com/v1/documentation/api/1.17.77/reference/services/cognito-identity.html#CognitoIdentity.Paginator.ListIdentityPools)
+[CognitoIdentity.Paginator.ListIdentityPools](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cognito-identity.html#CognitoIdentity.Paginator.ListIdentityPools)
 
 Arguments for `ListIdentityPoolsPaginator.paginate` method:
 
